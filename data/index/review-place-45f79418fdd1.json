@@ -638,6 +638,33 @@
       ],
       "created": "2026-09-22",
       "degree": 1,
+      "id": "bastille",
+      "kind": "place",
+      "names": [
+        "Bastille",
+        "Bastilha"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
       "id": "bay-of-gibraltar",
       "kind": "place",
       "names": [
@@ -1607,6 +1634,34 @@
         }
       ],
       "created": "2026-09-22",
+      "degree": 2,
+      "id": "champ-de-mars",
+      "kind": "place",
+      "names": [
+        "Champ de Mars",
+        "Campo de Marte",
+        "Campo de Marte (Paris)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
       "degree": 1,
       "id": "chapinero",
       "kind": "place",
@@ -1620,6 +1675,34 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "chateau-de-saint-cloud",
+      "kind": "place",
+      "names": [
+        "Château de Saint-Cloud",
+        "Castelo de Saint-Cloud",
+        "Palácio de Saint-Cloud"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -7020,7 +7103,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 11,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -7285,6 +7368,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "place-de-la-concorde",
+      "kind": "place",
+      "names": [
+        "place de la Concorde",
+        "Praça da Concórdia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -7697,6 +7807,33 @@
       "names": [
         "Prague Castle",
         "Castelo de Praga"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "prison-de-l-abbaye",
+      "kind": "place",
+      "names": [
+        "Prison de l'Abbaye",
+        "Prisão da Abadia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -8430,6 +8567,32 @@
       "names": [
         "Saint-Quentin",
         "Saint-Quentin, Aisne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "salle-du-jeu-de-paume",
+      "kind": "place",
+      "names": [
+        "Salle du Jeu de Paume"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10046,6 +10209,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "tuileries-palace",
+      "kind": "place",
+      "names": [
+        "Tuileries Palace",
+        "Palácio das Tulherias"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10386,6 +10576,34 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "versailles-yvelines",
+      "kind": "place",
+      "names": [
+        "Versailles",
+        "Versalhes",
+        "Versailles, Yvelines"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -11020,6 +11238,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "bastille",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "bay-of-gibraltar",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -11062,7 +11286,19 @@
       "rule": "summary-imported"
     },
     {
+      "id": "champ-de-mars",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "chapinero",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "chateau-de-saint-cloud",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -11212,6 +11448,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "place-de-la-concorde",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "pleasant-peak",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -11225,6 +11467,12 @@
     },
     {
       "id": "prague-castle",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "prison-de-l-abbaye",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -11255,6 +11503,12 @@
     },
     {
       "id": "saint-quentin",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "salle-du-jeu-de-paume",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -11320,6 +11574,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "tuileries-palace",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "uraba-choco",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -11327,6 +11587,12 @@
     },
     {
       "id": "velestino",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "versailles-yvelines",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

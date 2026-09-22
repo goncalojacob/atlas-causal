@@ -7010,6 +7010,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "execution-of-louis-xvi",
+      "id": "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "insurrection-of-31-may-2-june-1793",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-22",
@@ -7565,6 +7594,35 @@
       "revised": null,
       "status": "active",
       "to": "slovak-hungarian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "flight-to-varennes",
+      "id": "flight-to-varennes--champ-de-mars-massacre--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "champ-de-mars-massacre",
       "type": "precondition-of"
     },
     {
@@ -14208,6 +14266,35 @@
       "status": "active",
       "to": "dayton-agreement",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "storming-of-the-bastille",
+      "id": "storming-of-the-bastille--french-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "french-revolution",
+      "type": "caused"
     },
     {
       "authors": [

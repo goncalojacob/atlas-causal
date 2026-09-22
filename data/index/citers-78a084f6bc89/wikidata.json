@@ -1502,9 +1502,27 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to",
+      "kind": "edge",
+      "locator": "Q15784403"
+    },
+    {
+      "dissent": false,
       "id": "first-matabele-war--second-matabele-war--precondition-of",
       "kind": "edge",
       "locator": "Q233657 and Q857982"
+    },
+    {
+      "dissent": false,
+      "id": "flight-to-varennes--champ-de-mars-massacre--precondition-of",
+      "kind": "edge",
+      "locator": "Q1089686"
+    },
+    {
+      "dissent": false,
+      "id": "storming-of-the-bastille--french-revolution--caused",
+      "kind": "edge",
+      "locator": "Q6539"
     },
     {
       "dissent": false,
@@ -1517,6 +1535,12 @@
       "id": "world-war-i--turkish-war-of-independence--reacted-to",
       "kind": "edge",
       "locator": "Q361, P1542 (has effect) Q211274"
+    },
+    {
+      "dissent": false,
+      "id": "13-vendemiaire",
+      "kind": "event",
+      "locator": "Q720498"
     },
     {
       "dissent": false,
@@ -2234,6 +2258,12 @@
     },
     {
       "dissent": false,
+      "id": "atlantic-revolutions",
+      "kind": "event",
+      "locator": "Q3108868"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-cerro-montezuma",
       "kind": "event",
       "locator": "Q105883497"
@@ -2774,6 +2804,12 @@
     },
     {
       "dissent": false,
+      "id": "champ-de-mars-massacre",
+      "kind": "event",
+      "locator": "Q1089686"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -2795,6 +2831,12 @@
       "id": "cienfuegos-uprising",
       "kind": "event",
       "locator": "Q141016338"
+    },
+    {
+      "dissent": false,
+      "id": "civil-constitution-of-the-clergy",
+      "kind": "event",
+      "locator": "Q206979"
     },
     {
       "dissent": false,
@@ -2849,6 +2891,18 @@
       "id": "corynthia-expedition",
       "kind": "event",
       "locator": "Q5853324"
+    },
+    {
+      "dissent": false,
+      "id": "coup-of-18-brumaire",
+      "kind": "event",
+      "locator": "Q620965"
+    },
+    {
+      "dissent": false,
+      "id": "coup-of-18-fructidor",
+      "kind": "event",
+      "locator": "Q248033"
     },
     {
       "dissent": false,
@@ -3014,6 +3068,12 @@
     },
     {
       "dissent": false,
+      "id": "estates-general-of-1789",
+      "kind": "event",
+      "locator": "Q1463941"
+    },
+    {
+      "dissent": false,
       "id": "estonian-war-of-independence",
       "kind": "event",
       "locator": "Q1127302"
@@ -3038,6 +3098,12 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-louis-xvi",
+      "kind": "event",
+      "locator": "Q3062714"
+    },
+    {
+      "dissent": false,
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "Q1356047"
@@ -3047,6 +3113,12 @@
       "id": "falklands-war",
       "kind": "event",
       "locator": "Q48249"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-maximilien-robespierre",
+      "kind": "event",
+      "locator": "Q12989672"
     },
     {
       "dissent": false,
@@ -3065,6 +3137,12 @@
       "id": "february-revolution",
       "kind": "event",
       "locator": "Q101534"
+    },
+    {
+      "dissent": false,
+      "id": "fete-de-la-federation",
+      "kind": "event",
+      "locator": "Q143866"
     },
     {
       "dissent": false,
@@ -3152,6 +3230,12 @@
     },
     {
       "dissent": false,
+      "id": "flight-to-varennes",
+      "kind": "event",
+      "locator": "Q1192894"
+    },
+    {
+      "dissent": false,
       "id": "foibe-massacres",
       "kind": "event",
       "locator": "Q1294142"
@@ -3179,6 +3263,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "Q2935421"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution",
+      "kind": "event",
+      "locator": "Q6534"
     },
     {
       "dissent": false,
@@ -3419,6 +3509,18 @@
       "id": "insurgency-in-kosovo",
       "kind": "event",
       "locator": "Q18126038"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-10-august-1792",
+      "kind": "event",
+      "locator": "Q1154330"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-31-may-2-june-1793",
+      "kind": "event",
+      "locator": "Q15784403"
     },
     {
       "dissent": false,
@@ -4046,6 +4148,12 @@
     },
     {
       "dissent": false,
+      "id": "reign-of-terror",
+      "kind": "event",
+      "locator": "Q193547"
+    },
+    {
+      "dissent": false,
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "Q108137226"
@@ -4244,6 +4352,12 @@
     },
     {
       "dissent": false,
+      "id": "september-massacres",
+      "kind": "event",
+      "locator": "Q862586"
+    },
+    {
+      "dissent": false,
       "id": "sevastopol-uprising",
       "kind": "event",
       "locator": "Q4411939"
@@ -4424,6 +4538,12 @@
     },
     {
       "dissent": false,
+      "id": "storming-of-the-bastille",
+      "kind": "event",
+      "locator": "Q6539"
+    },
+    {
+      "dissent": false,
       "id": "suez-crisis",
       "kind": "event",
       "locator": "Q49101"
@@ -4451,6 +4571,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "Q811250"
+    },
+    {
+      "dissent": false,
+      "id": "tennis-court-oath",
+      "kind": "event",
+      "locator": "Q60022"
     },
     {
       "dissent": false,
@@ -4841,6 +4967,12 @@
       "id": "winter-war",
       "kind": "event",
       "locator": "Q134949"
+    },
+    {
+      "dissent": false,
+      "id": "women-s-march-on-versailles",
+      "kind": "event",
+      "locator": "Q1151917"
     },
     {
       "dissent": false,

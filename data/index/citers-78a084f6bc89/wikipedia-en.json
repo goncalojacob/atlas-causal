@@ -2330,6 +2330,12 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to",
+      "kind": "edge",
+      "locator": "\"Insurrection of 31 May – 2 June 1793\", revision 1370623840, § lead"
+    },
+    {
+      "dissent": false,
       "id": "falklands-war--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Falklands War\", revision 1375590484, § lead"
@@ -2477,6 +2483,12 @@
       "id": "first-vienna-award--slovak-hungarian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Slovak–Hungarian War\", revision 1370747590, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "flight-to-varennes--champ-de-mars-massacre--precondition-of",
+      "kind": "edge",
+      "locator": "\"Champ de Mars massacre\", revision 1370703702, § lead"
     },
     {
       "dissent": false,
@@ -4040,6 +4052,12 @@
     },
     {
       "dissent": false,
+      "id": "storming-of-the-bastille--french-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Storming of the Bastille\", revision 1374060912, § lead"
+    },
+    {
+      "dissent": false,
       "id": "strangford-treaty-1810--aberdeen-act-1845--precondition-of",
       "kind": "edge",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -5450,6 +5468,12 @@
     },
     {
       "dissent": false,
+      "id": "13-vendemiaire",
+      "kind": "event",
+      "locator": "\"13 Vendémiaire\", revision 1370277976"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -6152,6 +6176,12 @@
     },
     {
       "dissent": false,
+      "id": "atlantic-revolutions",
+      "kind": "event",
+      "locator": "\"Age of Revolution\", revision 1374214786"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
@@ -6590,6 +6620,12 @@
     },
     {
       "dissent": false,
+      "id": "champ-de-mars-massacre",
+      "kind": "event",
+      "locator": "\"Champ de Mars massacre\", revision 1370703702"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
@@ -6611,6 +6647,12 @@
       "id": "cienfuegos-uprising",
       "kind": "event",
       "locator": "\"Cienfuegos uprising\", revision 1369026587"
+    },
+    {
+      "dissent": false,
+      "id": "civil-constitution-of-the-clergy",
+      "kind": "event",
+      "locator": "\"Civil Constitution of the Clergy\", revision 1370659862"
     },
     {
       "dissent": false,
@@ -6671,6 +6713,18 @@
       "id": "corynthia-expedition",
       "kind": "event",
       "locator": "\"Corynthia expedition\", revision 1375958195"
+    },
+    {
+      "dissent": false,
+      "id": "coup-of-18-brumaire",
+      "kind": "event",
+      "locator": "\"Coup of 18 Brumaire\", revision 1368421302"
+    },
+    {
+      "dissent": false,
+      "id": "coup-of-18-fructidor",
+      "kind": "event",
+      "locator": "\"Coup of 18 Fructidor\", revision 1370613793"
     },
     {
       "dissent": false,
@@ -6824,6 +6878,12 @@
     },
     {
       "dissent": false,
+      "id": "estates-general-of-1789",
+      "kind": "event",
+      "locator": "\"Estates General of 1789\", revision 1375588196"
+    },
+    {
+      "dissent": false,
       "id": "estonian-war-of-independence",
       "kind": "event",
       "locator": "\"Estonian War of Independence\", revision 1370918612"
@@ -6848,6 +6908,12 @@
     },
     {
       "dissent": false,
+      "id": "execution-of-louis-xvi",
+      "kind": "event",
+      "locator": "\"Execution of Louis XVI\", revision 1373172133"
+    },
+    {
+      "dissent": false,
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "\"Murder of the Romanov family\", revision 1374973698"
@@ -6857,6 +6923,12 @@
       "id": "falklands-war",
       "kind": "event",
       "locator": "\"Falklands War\", revision 1375590484"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-maximilien-robespierre",
+      "kind": "event",
+      "locator": "\"Fall of Maximilien Robespierre\", revision 1370782731"
     },
     {
       "dissent": false,
@@ -6875,6 +6947,12 @@
       "id": "february-revolution",
       "kind": "event",
       "locator": "\"February Revolution\", revision 1370618162"
+    },
+    {
+      "dissent": false,
+      "id": "fete-de-la-federation",
+      "kind": "event",
+      "locator": "\"Fête de la Fédération\", revision 1369393792"
     },
     {
       "dissent": false,
@@ -6956,6 +7034,12 @@
     },
     {
       "dissent": false,
+      "id": "flight-to-varennes",
+      "kind": "event",
+      "locator": "\"Flight to Varennes\", revision 1366319196"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "\"Fourth Geneva Convention\", revision 1375615781"
@@ -6971,6 +7055,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "\"French conquest of Morocco\", revision 1374837625"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution",
+      "kind": "event",
+      "locator": "\"French Revolution\", revision 1375966584"
     },
     {
       "dissent": false,
@@ -7229,6 +7319,18 @@
       "id": "insurgency-in-kosovo",
       "kind": "event",
       "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1370623741"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-10-august-1792",
+      "kind": "event",
+      "locator": "\"Insurrection of 10 August 1792\", revision 1373130455"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-31-may-2-june-1793",
+      "kind": "event",
+      "locator": "\"Insurrection of 31 May – 2 June 1793\", revision 1370623840"
     },
     {
       "dissent": false,
@@ -7784,6 +7886,12 @@
     },
     {
       "dissent": false,
+      "id": "reign-of-terror",
+      "kind": "event",
+      "locator": "\"Reign of Terror\", revision 1375254240"
+    },
+    {
+      "dissent": false,
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "\"Republican insurgency in Afghanistan\", revision 1375985393"
@@ -7970,6 +8078,12 @@
     },
     {
       "dissent": false,
+      "id": "september-massacres",
+      "kind": "event",
+      "locator": "\"September Massacres\", revision 1375967754"
+    },
+    {
+      "dissent": false,
       "id": "shaba-ii",
       "kind": "event",
       "locator": "\"Shaba II\", revision 1370737989"
@@ -8132,6 +8246,12 @@
     },
     {
       "dissent": false,
+      "id": "storming-of-the-bastille",
+      "kind": "event",
+      "locator": "\"Storming of the Bastille\", revision 1374060912"
+    },
+    {
+      "dissent": false,
       "id": "strangford-treaty-1810",
       "kind": "event",
       "locator": "\"Strangford Treaty\", revision 1329682227"
@@ -8165,6 +8285,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "\"Tambov Rebellion\", revision 1370749600"
+    },
+    {
+      "dissent": false,
+      "id": "tennis-court-oath",
+      "kind": "event",
+      "locator": "\"Tennis Court Oath\", revision 1373042533"
     },
     {
       "dissent": false,
@@ -8747,6 +8873,12 @@
       "id": "winter-war",
       "kind": "event",
       "locator": "\"Winter War\", revision 1373170950"
+    },
+    {
+      "dissent": false,
+      "id": "women-s-march-on-versailles",
+      "kind": "event",
+      "locator": "\"Women's March on Versailles\", revision 1372203142"
     },
     {
       "dissent": false,

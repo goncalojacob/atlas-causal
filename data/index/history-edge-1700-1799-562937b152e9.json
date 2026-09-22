@@ -2,12 +2,39 @@
   "from": 1700,
   "kind": "edge",
   "records": {
+    "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "flight-to-varennes--champ-de-mars-massacre--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "storming-of-the-bastille--french-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

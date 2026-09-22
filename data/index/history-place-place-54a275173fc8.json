@@ -291,6 +291,15 @@
         }
       ]
     },
+    "bastille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "bay-of-gibraltar": {
       "from": "git",
       "versions": [
@@ -785,7 +794,25 @@
         }
       ]
     },
+    "champ-de-mars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "chapinero": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "chateau-de-saint-cloud": {
       "from": "git",
       "versions": [
         {
@@ -3684,6 +3711,15 @@
         }
       ]
     },
+    "place-de-la-concorde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "pleasant-peak": {
       "from": "git",
       "versions": [
@@ -3893,6 +3929,15 @@
       ]
     },
     "prague-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "prison-de-l-abbaye": {
       "from": "git",
       "versions": [
         {
@@ -4258,6 +4303,15 @@
       ]
     },
     "saint-quentin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "salle-du-jeu-de-paume": {
       "from": "git",
       "versions": [
         {
@@ -5056,6 +5110,15 @@
         }
       ]
     },
+    "tuileries-palace": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "tunisia-q948": {
       "from": "git",
       "versions": [
@@ -5220,6 +5283,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "versailles-yvelines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]
