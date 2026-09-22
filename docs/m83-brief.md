@@ -43,3 +43,32 @@ into `main`; ignore `docs/drafts/`.
 Every fix above has its test and holds; first paint measured before and
 after against M81's numbers; `STATUS.md` section naming each finding by its
 review number; `M83 done`.
+
+## Amendments after review
+
+**A1 (22 September). The owner on M81, with a screenshot
+(`docs/screens/owner-2026-09-22-graph-ww2.png`): "It's better but still a
+bit weird."** World War II opened after M81: the parts are spread 1939 to
+1945 across the width, which was the ask, and four things still read as
+weird. Fix them here, before part B's list, because the owner is looking at
+this picture:
+
+1. **A row of hollow, unnamed circles along the top edge.** They are the
+   lens's ring — the one-hop neighbours outside the lens — laid out with no
+   stack position, so they sit at y = 0 in a line, and the same hollow
+   circles cap every year column. A ring node is placed at its own date
+   and a y of its own like any node, drawn faint, and never in a row at the
+   edge; if it has no date inside the axis it is not drawn.
+2. **Every part snaps to a year column.** Inside a six-year lens the events
+   carry day precision (`when.date`), and the axis should use it: x from the
+   date, not the year, so the parts spread along the axis instead of
+   stacking in seven columns.
+3. **The vertical order is arbitrary and the edges fan across the picture**
+   — Greco-Italian War and the Armistice at the bottom left sending long
+   lines to the 20 July plot and Potsdam at the top right. Order the nodes
+   within the lens by the barycentre of their neighbours (a layered
+   ordering) so that a chain reads left to right without crossing the
+   field, and draw a lens's edges with the same rule M77 gave a walk: the
+   chosen chain in ink, the rest faint.
+4. **The LINKS key covers the bottom-left of the picture** on the desktop
+   too. It collapses to a button everywhere, or moves under the picture.
