@@ -14928,6 +14928,65 @@ is about.
      date was invented, no record was signed, no value on an imported record
      was changed, and nothing was merged into `main`.
 
+### Batch 28 — thirteen more, all filed, and where the vein stops paying A5
+
+Thirteen taken, thirteen created, **thirteen filed**, **four edges** and a
+fifth written and deleted. Three lanes named for placeless rows. Corpus 542 to
+**555**, main **252 and unchanged for the third batch running**, largest
+component 476 to **480**, components 38 to **47**.
+
+### Deviations
+
+1042. **A month-only date reads as the first of that month, so a record dated
+     to the month cannot be the consequence of anything later in it.**
+     `zanzibar-revolution --caused--> massacre-of-arabs-during-the-zanzibar-revolution`
+     is the massacre's own article — the violence was committed "during and
+     following the Zanzibar Revolution… by Black African militiamen under the
+     Afro-Shirazi Party and Umma Party" — and rule 4 refused it because the
+     massacre carries `1964-01` and the revolution `1964-01-12`. Deviations
+     1037 and 1039 are intervals that read short; **this is a date that reads
+     coarse, and it is the same problem in a third form.** Three edges this
+     fire could not be written at all because of the dates.
+1043. **The `part of` vein files reliably and edges about half the time, and
+     the half it does not is growing.** Across batches 26 to 28 the largest
+     component gained 18 and the *number* of components gained 17. The rule
+     pays A6 every time — main has not moved in three batches — and pays A5
+     only where an article argues rather than describing. **The next fire
+     should weigh batch 22's rule against this one** (deviation 1026: read an
+     umbrella's own article for the record it names and the atlas does not
+     hold), which moved the largest component by three for a single import.
+1044. **A filing and an edge are different claims, and `the-holocaust-in-romania`
+     is where a source says so itself.** Its article calls the Romanian
+     killings "historically part of The Holocaust" and in the same sentence
+     "mostly independent from the similar acts committed by Nazi Germany".
+     The record is filed under `the-holocaust` and carries no edge from it:
+     the filing says the first and the absence says the second. **An edge
+     written there would have been this atlas contradicting the source the
+     record rests on**, which is the one thing the brief's own §1 forbids
+     outright.
+1045. **The Wikipedia lead cache can hold another article under an item's id.**
+     `tools/import/cache/wikipedia/Q2139988.en.json` is the Eritrean *War of
+     Independence* article, not the Eritrean *Civil Wars* one: the summary
+     endpoint follows a redirect and the cache records what came back. Nothing
+     was cited from it, and the record's own `wikipedia.en` is right. **A lead
+     in that cache is not a safe source for a record's own article without
+     checking the title that came back**, which is a trap every future batch
+     that quotes a lead is one careless citation away from.
+1046. **A red check was read and not assumed, twice, and the head is green.**
+     Two intermediate commits of this fire went red on the runner —
+     `tests/lens-browser.test.mjs` ("graph drew `the-amazon-rubber-boom`, which
+     the walk does not touch") on the **claim commit**, whose only change was
+     one line of `STATUS.md` and whose parent had just gone green, and
+     `tests/timeline-browser.test.mjs` (`scrollHeight` 195 against an `svg`
+     height of 180) after batch 26. Neither reproduces here: both suites were
+     run three times over, alone and serially, and passed 29 of 29 each time,
+     and **the check on the head of this fire's work is green**. A failure on
+     a diff that cannot change its input is not that diff's, and the honest
+     reading is that the browser suite is not yet deterministic on a
+     four-core runner. Deviation 1009's "the browser deadline is the usual
+     cause" is not being invoked: the failures were read first, as deviation
+     1020 requires.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and

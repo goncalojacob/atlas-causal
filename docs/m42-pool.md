@@ -1471,3 +1471,92 @@ import.
 - **The Horn of Africa (7) and Sudan (5) are still fragments**, unchanged since
   batch 22.
 
+## Batch 28 — thirteen more, all filed, and the components that grew faster than the chain
+
+*22 September, the third batch of the same fire. The same vein and the same
+rule; the measurement matters because it is where the vein's marginal value on
+A5 starts to fall.*
+
+| | |
+| --- | --- |
+| taken | 13 |
+| created | **13** |
+| filed | **13** |
+| edges written | **4**, and a fifth written and deleted |
+| lanes named for a placeless row | 3 — `Q937265`, `Q4411939`, `Q2745406` |
+| corpus | 542 → **555** active |
+| **main** | **252, unchanged** |
+| largest connected component | 476 → **480** |
+| components | 38 → **47** |
+| the sweep pool, world sections | 1,066 → **1,053** open rows |
+
+**The four edges**: `2020-malian-coup-d-etat --precondition-of-->
+2021-malian-coup-d-etat` (the second coup was made by the man the first put in
+place); `russian-revolution-of-1905 --caused--> sveaborg-rebellion` (the
+mutiny's own article calls it "part of the aftermath" of the revolution, which
+is the only one of this run's six 1905 records to earn more than a filing);
+`french-conquest-of-morocco --caused--> zaian-war` (Lyautey's push eastwards is
+what the Zaians were opposing); `angolan-civil-war --enabled--> shaba-ii` (the
+same sentence shape as batch 27's edge to Shaba I, and the same border
+crossed).
+
+**Nine records earned no edge, and the components count is what that costs.**
+Thirty-eight to forty-seven, against four on the largest. A colonial punitive
+expedition, a provincial mutiny and a massacre inside a revolution are written
+about as things that happened inside something else, and **containment is what
+`parent` carries**. Two of the nine are worth naming:
+
+- **`the-holocaust-in-romania` earned none on purpose.** Its article says the
+  Romanian killings were "historically part of The Holocaust" and at the same
+  time "mostly independent from the similar acts committed by Nazi Germany".
+  An edge from `the-holocaust` would contradict the source the record rests on.
+- **The Zanzibar edge was written and deleted, and for a new reason.** The
+  massacre's article says the violence happened "during and following the
+  Zanzibar Revolution"; the record is dated `1964-01` and the revolution
+  `1964-01-12`, and **a month-only date reads as the first of that month**, so
+  rule 4 puts the consequence eleven days before its cause. Deviations 1037 and
+  1039 were about intervals that are too short; this one is about a date that
+  is too coarse, and it is the same lesson in a third form.
+
+**One cache defect found.** `tools/import/cache/wikipedia/Q2139988.en.json` is
+the Eritrean *War of Independence* article, not the Eritrean *Civil Wars* one:
+the summary endpoint follows a redirect and the cache records what came back
+under the item's id. Nothing was cited from it. The record carries its own
+`wikipedia.en` title and is correct; **the cache is not a safe source of a
+record's own article without checking the title that came back.**
+
+## Where the run stands after batch 28, for the fire that picks it up
+
+*22 September, 05:00, after a fire that landed three batches on `m42`.*
+
+| | |
+| --- | --- |
+| corpus | **555 active**, from 520 at the start of the fire |
+| **main** | **252**, from 251 |
+| largest connected component | **480**, from 462 |
+| components | **47**, from 30 |
+| imported this fire | 35 records, **34 filed** |
+| edges written | 19 |
+| the sweep pool, world sections | **1,053** open rows |
+| the `part of` vein | **22 of the clean rows untaken** |
+
+**Read this before taking another batch of the vein.** Across the three
+batches the largest component gained 18 and the component *count* gained 17:
+the rule buys A6 every time and A5 about half the time, and the half it does
+not buy is growing. **The next fire should weigh batch 22's rule against this
+one** — read an umbrella's own article for the record it names and the atlas
+does not hold — because that is the rule that moved the largest component by
+three for one import.
+
+**What is still open, in the order a fire should weigh it:**
+
+- **A connection-first batch**, on batch 22's rule, before more of the vein.
+- **The dates.** Three edges this fire could not be written at all, on two
+  intervals that read short and one date that reads coarse, and nine imported
+  intervals now disagree with their own summaries. A person's afternoon on
+  `when` would buy more of A5 than another batch would.
+- **Twenty-two clean rows of the vein**, still arriving filed.
+- **The Arab Spring's asian half** — `2011-bahraini-uprising`,
+  `2011-yemeni-revolution` — cannot be filed while the wave is an africa-lane
+  period. The owner's to decide.
+- **The Horn of Africa and Sudan fragments**, unchanged since batch 22.

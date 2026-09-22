@@ -674,3 +674,39 @@ active, and every child's dates fall inside its parent's.
 
 **Nothing here was given an actor or a place to make it filable.** That is the
 whole of A1 and it is why the table above has eleven rows rather than none.
+
+## 11. M42 batch 28 — thirteen more bare records, all thirteen filed
+
+*22 September, the third batch of the same fire. The measurement is in
+`docs/m42-pool.md` → "Batch 28". A1's clause again, and for the same reason:
+**all thirteen name neither an actor nor a place**, because their items give
+neither and nothing was invented to cover it.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `2021-malian-coup-d-etat` | `mali-war` | not an umbrella |
+| `bambatha-rebellion` | `scramble-for-africa` | africa, and the record is africa |
+| `benin-expedition-of-1897` | `scramble-for-africa` | africa, and the record is africa |
+| `herero-wars` | `scramble-for-africa` | africa, and the record is africa |
+| `wadai-war` | `scramble-for-africa` | africa, and the record is africa |
+| `the-holocaust-in-romania` | `the-holocaust` | not an umbrella |
+| `1920-georgian-coup-attempt` | `russian-civil-war` | not an umbrella |
+| `sveaborg-rebellion` | `russian-revolution-of-1905` | not an umbrella |
+| `sevastopol-uprising` | `russian-revolution-of-1905` | not an umbrella |
+| `zaian-war` | `french-conquest-of-morocco` | not an umbrella |
+| `shaba-ii` | `angolan-civil-war` | not an umbrella |
+| `massacre-of-arabs-during-the-zanzibar-revolution` | `zanzibar-revolution` | not an umbrella |
+| `eritrean-civil-wars` | `eritrean-war-of-independence` | not an umbrella |
+
+**Four go under `scramble-for-africa`**, which is an A6 umbrella and takes the
+lane test; all four are africa-lane records and the period runs 1885 to 1914,
+which contains each of them. The other nine go under ordinary wars, a genocide
+and two revolutions, where deviation 1034's reading applies.
+
+**`the-holocaust-in-romania` is the one worth reading twice.** Its own article
+says the Romanian killings were "historically part of The Holocaust" and at the
+same time "mostly independent from the similar acts committed by Nazi Germany,
+Romania being the only ally of the Third Reich that carried out a genocidal
+campaign without the intervention of Heinrich Himmler's SS." **The filing says
+the first and the absence of an edge says the second**, which is the clearest
+case this run has found of `parent` and an edge being two different claims.

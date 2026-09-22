@@ -4060,3 +4060,74 @@ containment, which `parent` already carries. **Five components were added
 rather than five edges invented**, which is deviation 1031's warning read in
 the other direction: the vein files reliably and edges only where a source
 argues.
+
+## 2aa. Batch 28 — four edges, and the nine the articles would not argue for
+
+*22 September, the third batch of the same fire. Thirteen rows, thirteen
+filings, four edges and a fifth deleted. The measurement is in
+`docs/m42-pool.md` → "Batch 28".*
+
+#### `2020-malian-coup-d-etat --precondition-of--> 2021-malian-coup-d-etat`
+
+The 2021 coup's article, revision 1370424554: "Assimi Goïta, the head of the
+junta that led the 2020 Malian coup d'état, announced that N'daw and Ouane were
+stripped of their powers… It is the country's third coup d'état in ten years,
+following the 2012 and 2020 military takeovers, with the latter having happened
+only nine months earlier." The transitional government the first coup created
+is what the second deposed. `precondition-of`, because the article does not
+say the first brought the second about.
+
+#### `russian-revolution-of-1905 --caused--> sveaborg-rebellion`
+
+The rebellion's article, revision 1370749115: "The mutiny was part of the
+aftermath of the Russian Revolution of 1905, which by summer 1906 had
+effectively been suppressed in most other regions of the Russian Empire."
+**The only one of this run's six 1905 records to earn an edge**, and it earned
+it on the word "aftermath": every other 1905 article this run read says only
+that the thing was part of the revolution, which is what `parent` carries.
+
+#### `french-conquest-of-morocco --caused--> zaian-war`
+
+The war's article, revision 1370751428: it was fought "during the French
+conquest of Morocco. Morocco had become a French protectorate in 1912, and
+Resident-General Louis-Hubert Lyautey sought to extend French influence
+eastwards through the Middle Atlas mountains towards French Algeria. This was
+opposed by the Zaians." The conquest is what was being opposed, which is more
+than the war happening inside it.
+
+#### `angolan-civil-war --enabled--> shaba-ii`
+
+Shaba II's article, revision 1370737989: "The conflict broke out on 11 May 1978
+after 6,500 rebels from the Congolese National Liberation Front (FNLC), a
+Katangese separatist militia, crossed the border from Angola into Zaire in an
+attempt to achieve the province's secession." The same border and the same
+militia as batch 27's edge to Shaba I, and the same type for the same reason:
+the secession they wanted was their own.
+
+### The one deleted, the one refused on principle, and the seven that had nothing
+
+**`zanzibar-revolution --caused--> massacre-of-arabs-during-the-zanzibar-revolution`
+was written and deleted.** The massacre's article (revision 1374125732) says the
+violence was committed "during and following the Zanzibar Revolution… by Black
+African militiamen under the Afro-Shirazi Party and Umma Party", which is the
+revolution's own militia and more than containment. The record is dated
+`1964-01` and the revolution `1964-01-12`, and **a month-only date reads as the
+first of that month**, so rule 4 puts the consequence eleven days before its
+cause. Deviations 1037 and 1039 were intervals that read short; this is a date
+that reads coarse, and it is the third form of one problem.
+
+**`the-holocaust-in-romania` earned none on purpose, and it is the clearest
+case this run has found of a filing and an edge being different claims.** Its
+article (revision 1375965594) says the Romanian killings were "historically part
+of The Holocaust" and in the same sentence "mostly independent from the similar
+acts committed by Nazi Germany, Romania being the only ally of the Third Reich
+that carried out a genocidal campaign without the intervention of Heinrich
+Himmler's SS." **The filing says the first; the absence of an edge says the
+second.** Writing one anyway would have been this atlas contradicting the
+source it rests on.
+
+**Seven had nothing to argue with.** `bambatha-rebellion` names the Union of
+South Africa of 1910, which this atlas does not hold; `benin-expedition-of-1897`,
+`herero-wars`, `wadai-war`, `1920-georgian-coup-attempt`, `sevastopol-uprising`
+(no English article at all) and `eritrean-civil-wars` say only what they were
+and where. Nothing was written to keep them.
