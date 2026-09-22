@@ -21,6 +21,7 @@ import { createState, defaultState, formatState, parseState } from '../src/state
 import { edgeCardHtml } from '../src/panel/edge.js';
 import { distanceToSegment } from '../src/graph-view/graph-view.js';
 import { workingSet } from '../src/emphasis.js';
+import { viewCountText } from '../src/window-control.js';
 import { esc } from '../src/util/esc.js';
 import { bounds } from '../src/util/dates.js';
 import { PRECISIONS, PRECISION_IDS, PRECISION_LABEL, isCoarse } from '../src/vocab.js';
@@ -199,5 +200,32 @@ test('a place\'s precision is in the core, where the first frame can read it', a
   // And the atlas a reader has before any shard lands reads it off a place.
   for (const place of atlas.places.values()) {
     assert.ok(PRECISION_IDS.includes(place.where.precision), `${place.id}: ${place.where.precision}`);
+  }
+});
+
+// ── 3. the masthead count ──────────────────────────────────────────────────
+
+test('the masthead says what it counts: main events at rest, events under a lens', () => {
+  // The owner, 22 September: *"I still only see 252 events"*, over a masthead
+  // reading "252 of 252 events in view" — where 252 was the resting picture of
+  // 581 and the line said so twice and never once said which.
+  assert.equal(viewCountText({ shown: 252, whole: 581, resting: true }), '252 main events of 581 in view');
+  assert.equal(viewCountText({ shown: 17, whole: 581, resting: false }), '17 of 581 events in view');
+  // One event reads as one event either way.
+  assert.equal(viewCountText({ shown: 1, whole: 1, resting: true }), '1 main event of 1 in view');
+  assert.equal(viewCountText({ shown: 1, whole: 581, resting: false }), '1 of 581 events in view');
+});
+
+test('the whole the count is against is the active corpus, and the shown is the picture', () => {
+  // Both numbers computed twice, by two routes, so that neither is a constant
+  // typed into a test: the whole is what `activeEvents` says, and the picture
+  // is what `workingSet` hands the three views.
+  for (const which of [atlas, fixtures]) {
+    const resting = workingSet(which, state()).shown;
+    assert.ok(resting.size > 0);
+    assert.ok(resting.size <= which.activeEvents.length,
+      'the resting picture is larger than the corpus it is drawn from');
+    // Every event in the resting picture is an active event of this atlas.
+    for (const id of resting) assert.equal(which.events.get(id)?.status, 'active');
   }
 });

@@ -303,3 +303,74 @@ test('the card says how precisely a record is placed, in words', { skip }, async
     assert.match(place, /a region/);
   });
 });
+
+// ── 3. the masthead count ──────────────────────────────────────────────────
+
+// The masthead's own sentence, and the two numbers in it read back out.
+const COUNT = `
+  const el = document.querySelector('.window-count');
+  if (!el) return null;
+  const text = el.textContent.trim();
+  if (!text) return { text, hidden: true };
+  const numbers = text.match(/\\d+/g) || [];
+  return {
+    text,
+    hidden: Boolean(document.querySelector('.window-view').hidden),
+    shown: Number(numbers[0]),
+    whole: Number(numbers[1]),
+    main: /\\bmain\\b/.test(text),
+  };`;
+
+// A pan, so the map is looking at part of the world and the count is drawn at
+// all — that line has been about a gesture the reader made since M60, and is
+// nothing until they make one.
+const SOMEWHERE = 'bbox=-60,-40,60,60';
+
+test('the masthead counts main events of the corpus at rest, and events of it under a lens', { skip }, async () => {
+  await desk(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(`?${WHOLE}&${SOMEWHERE}`),
+      'return Boolean(document.querySelector(".window-count")) && document.querySelector(".window-count").textContent.trim() !== "";');
+
+    const rest = await page.eval(COUNT);
+    assert.ok(rest, 'the masthead has no count');
+    assert.ok(rest.main, `at rest the count does not say what it counts: ${rest.text}`);
+    assert.match(rest.text, /main events? of \d+ in view/);
+
+    // The whole is the active corpus, computed in the page out of the atlas
+    // rather than typed here, and the picture is smaller than it: what is part
+    // of something else is inside it and drawn when the reader opens it (M65).
+    assert.ok(rest.shown > 0);
+    assert.ok(rest.whole >= rest.shown, `${rest.shown} shown of ${rest.whole}`);
+
+    // Under a lens the word "main" goes: what a lens kept is not a set of main
+    // events and must not be called one. The whole stays the corpus.
+    await open(page, url(`?${WHOLE}&${SOMEWHERE}&focus=event:fixture-event-f`),
+      'return Boolean(document.querySelector(".window-count")) && document.querySelector(".window-count").textContent.trim() !== "";');
+    const lens = await page.eval(COUNT);
+    assert.ok(!lens.main, `under a lens the count still says "main": ${lens.text}`);
+    assert.match(lens.text, /^\d+ of \d+ events? in view$/);
+    assert.equal(lens.whole, rest.whole, 'the whole changed when a lens was applied');
+    assert.ok(lens.shown <= rest.whole);
+  });
+});
+
+test('the pin and the standing line are what they were', { skip }, async () => {
+  await desk(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(`?${WHOLE}&${SOMEWHERE}`),
+      'return Boolean(document.querySelector(".window-count")) && document.querySelector(".window-count").textContent.trim() !== "";');
+    // The standing line is said whether or not the map is looking at part of
+    // the world, and it counts what a person has read — never a filter.
+    assert.match(
+      await page.eval('return (document.querySelector(".window-read") || {}).textContent || "";'),
+      /\d+ of \d+/,
+    );
+    // And the pin gives the world back, which is the one thing on that row
+    // that is a control.
+    await page.eval('document.querySelector(".window-view .pin").click(); return true;');
+    await waitFor(page, 'return new URLSearchParams(location.search).get("bbox") === null;', 'the world back');
+    assert.ok(await page.eval('return document.querySelector(".window-view").hidden;'),
+      'the count is still drawn with the whole world in view');
+  });
+});
