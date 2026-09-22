@@ -62,6 +62,17 @@ import { readCount, readCountText } from './standing.js';
 // "1 of 581 events" is a sentence about the 581.
 const plural = (n) => (n === 1 ? 'event' : 'events');
 
+// And what a *main* event is, said once, where the word first appears (M82,
+// A3). The reviewer: *"the count line assumes the reader knows what a main
+// event is"*. It is a sentence about the picture and not about history, so it
+// is the control's own title rather than a line of the atlas's text; the
+// intro card says the same thing in its own words under "How to read it", for
+// the reader who opens that instead.
+//
+// No escaping: it is written here, in the interface's own words, and nothing
+// in it came out of `data/`.
+export const MAIN_EVENT_HINT = 'A main event is one that is not part of any larger event. Open a war or a regime and what happened inside it appears.';
+
 export function viewCountText({ shown, whole, resting }) {
   return resting
     ? `${shown} main ${plural(shown)} of ${whole} in view`
@@ -75,7 +86,7 @@ export function createWindowControl(group, { atlas, state }) {
   // interface's own words and one number this file computes.
   group.innerHTML = `
     <p class="window-view" hidden>
-      <span class="window-count"></span>
+      <span class="window-count" title="${MAIN_EVENT_HINT}"></span>
       <button type="button" class="pin" title="Draw every event again, wherever the map is looking">show the world</button>
     </p>
     <p class="window-standing">

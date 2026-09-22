@@ -48,8 +48,8 @@ test('the card quotes the records and claims nothing of its own', () => {
   assert.match(html, new RegExp(`${atlas.actors.size} actors`));
   assert.match(html, new RegExp(`${atlas.sources.size} sources`));
   // And there is a walkthrough that is about the interface.
-  assert.match(html, /Follow the consequences/);
-  assert.match(html, /Other branches/);
+  assert.match(html, /How to read it/);
+  assert.match(html, /what this event led to/);
 });
 
 test('the card is escaped like every other thing built out of a record', () => {
@@ -74,11 +74,11 @@ test('a dataset with no narratives and no weights still opens on something', asy
   const fixtures = await atlasOf(FIXTURE_DATA);
   const html = introHtml({ ...fixtures, activeNarratives: [] });
   assert.doesNotMatch(html, /Start here/);
-  assert.match(html, /Follow the consequences/, 'the walkthrough stands on its own');
+  assert.match(html, /How to read it/, 'the walkthrough stands on its own');
   const bare = introHtml({
     activeEvents: [], activeNarratives: [], edges: new Map(), actors: new Map(), sources: new Map(),
   });
-  assert.match(bare, /Follow the consequences/);
+  assert.match(bare, /How to read it/);
   assert.doesNotMatch(bare, /What most of it hangs on/, 'nothing is offered that is not there');
 });
 
