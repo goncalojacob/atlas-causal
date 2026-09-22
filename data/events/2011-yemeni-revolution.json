@@ -14,23 +14,23 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts"
     ]
   },
-  "wikidata": "Q210005",
-  "sitelinks": {
-    "count": 39,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q210005",
   "wikipedia": {
     "en": "Yemeni revolution",
     "pt": "Revolução Iemenita"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -49,5 +49,6 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-spring",
   "actors": []
 }

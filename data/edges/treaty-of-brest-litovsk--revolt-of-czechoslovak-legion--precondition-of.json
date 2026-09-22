@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "treaty-of-brest-litovsk--revolt-of-czechoslovak-legion--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945, § lead"
+    }
+  ],
+  "from": "treaty-of-brest-litovsk",
+  "to": "revolt-of-czechoslovak-legion",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The revolt’s article gives the treaty as what stood behind the quarrel: the revolt “was a reaction to a threat initiated by the Bolsheviks partly as a consequence of the Treaty of Brest-Litovsk.” A legion raised to fight Germany was stranded in a Russia that had just left that war, and the word the article itself uses is “partly”, so the type is `precondition-of` and the confidence is `probable`.",
+  "dispute": null
+}

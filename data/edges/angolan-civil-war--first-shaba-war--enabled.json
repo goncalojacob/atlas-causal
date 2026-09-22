@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angolan-civil-war--first-shaba-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shaba I\", revision 1373218991, § lead"
+    }
+  ],
+  "from": "angolan-civil-war",
+  "to": "first-shaba-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article says where the invaders came from and what they had been: “The conflict began when the Front for the National Liberation of the Congo (FNLC), a group of about 2,000 Katangan Congolese soldiers who were veterans of the Congo Crisis, the Angolan War of Independence, and the Angolan Civil War, crossed the border into Shaba from Angola.” Angola was the ground they were on and the war was where they learned the trade; it is not what made them invade Zaire, so the type is `enabled` and not `caused`.",
+  "dispute": null
+}

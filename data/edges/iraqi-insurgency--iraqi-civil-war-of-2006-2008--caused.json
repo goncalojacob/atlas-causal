@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iraqi-insurgency--iraqi-civil-war-of-2006-2008--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iraqi civil war (2006–2008)\", revision 1373449147, § lead"
+    }
+  ],
+  "from": "iraqi-insurgency",
+  "to": "iraqi-civil-war-of-2006-2008",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The civil war’s article names the insurgency as the thing that became it, and the day it did: “In February 2006, the insurgency against the coalition and government escalated into a sectarian civil war after the bombing of Al-Askari Shrine, considered a holy site in Twelver Shi’ism.” One conflict escalating into another is what `caused` is for here. The confidence is `probable` and not `consensus` because the only citation is an encyclopedia article, which is rule 22.",
+  "dispute": null
+}

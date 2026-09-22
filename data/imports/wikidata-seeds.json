@@ -892,7 +892,18 @@
     "Q714706",
     "Q1208479",
     "Q2092939",
-    "Q2090475"
+    "Q2090475",
+    "Q242864",
+    "Q7318712",
+    "Q4126381",
+    "Q4156944",
+    "Q766868",
+    "Q118514",
+    "Q28492393",
+    "Q1632838",
+    "Q17183365",
+    "Q3290619",
+    "Q4789489"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1043,7 +1054,9 @@
     "Q714706": "europe",
     "Q1208479": "asia",
     "Q2092939": "africa",
-    "Q2090475": "africa"
+    "Q2090475": "africa",
+    "Q118514": "europe",
+    "Q4126381": "europe"
   },
   "queries": [
     {
@@ -4085,6 +4098,18 @@
       "kind": "event",
       "label": "civil resistance",
       "note": "Added in M42 batch 22 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the Arab Spring’s own origin event — the Tunisian revolution, which every other record of that wave points back to — carries it and the table did not. No category: a campaign of civil resistance is not one of the twelve kinds of event, and most of them are not revolutions in the end."
+    },
+    "Q511866": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "mutiny",
+      "note": "Added in M42 batch 26 from a lookup against Wikidata, which this run could reach: the label and the description — “method of revolt” — are the service’s own. The class is here because two rows of the batch carry it and the table did not: the Potemkin mutiny of 1905 and the Junker mutiny of 1917. The category is revolution, and it is the one case in data/categories.json that needs no argument: that category’s own description names a mutiny in its list."
+    },
+    "Q217901": {
+      "kind": "event",
+      "category": "treaty",
+      "label": "capitulation",
+      "note": "Added in M42 batch 26 from the same lookup; Wikidata glosses it “form of surrender”. Carried by the Argentine surrender in the Falklands War. The category follows Q107706 armistice, already in this table as treaty: an instrument signed by both belligerents that stops the fighting is the nearest of the twelve, and a surrender is not itself organised armed force."
     }
   },
   "reconcile": true

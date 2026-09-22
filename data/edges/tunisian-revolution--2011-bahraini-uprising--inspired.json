@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "tunisian-revolution--2011-bahraini-uprising--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
+    }
+  ],
+  "from": "tunisian-revolution",
+  "to": "2011-bahraini-uprising",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The uprising’s own article names where it came from in its second sentence: “The protests were inspired by the unrest of the 2011 Arab Spring and protests in Tunisia and Egypt and escalated to daily clashes after the Bahraini government repressed the revolt with the support of the Gulf Cooperation Council’s Peninsula Shield Force.” Tunisia is the first of the two it names, and the Arab Spring’s own lead — quoted on the three edges batch 22 wrote — says the wave began there. The type is `inspired` and not `caused` for the same reason as those three: an example spreading is not a Tunisian event bringing about a Bahraini one, and no article this batch read says it was.",
+  "dispute": null
+}
