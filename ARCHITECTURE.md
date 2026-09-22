@@ -1020,7 +1020,7 @@ atlas-causal/
 │       ├── manifest.json         ● the index's generation, counts, hashed file names, lanes and regionBoxes (one [minLon,minLat,maxLon,maxLat] per lane, since I1), roles in use, categories in use with a count each (which the layer control's rows are built from, so a toggle exists only where there is something to hide), the two vocabularies (rolesAllowed, categoriesAllowed), officesByEvent and tenuresByOffice, land epochs, presence shards, explanation shards, attribute shards, history shards, the palette's file name, and since M36a the `base` block — the base map's source and version, the grid, and per layer its `geometry` ("polygon"|"line"|"point"), its `world` file or null, its `minZoom` in `k` and its cells with a `bytes` each, so M37 decides what to fetch without a HEAD request; absent where a dataset has no data/geo/base/; never cached
 │       ├── presences-<hash>.json ● every presence {id,actor,dependencyOf,dependencyKind,when,geometry.key,capital,confidence,status} — half the whole-corpus projection on the real data, and nothing reads it until the territory layer draws, so it is fetched there and not at first paint (I1). Absent, with its manifest key, where a dataset has no presences
 │       ├── core-<hash>.json      ● the graph and what a mark, a bar and a lane are drawn from: every record's id and status, an event's year bounds, place, lane, weight, subtreeWeight, parent and its actors' **ids**, an edge's [from,to,type,confidence,status], an actor's type and years, a place's point, the two ids a relation, an office and a tenure join and their years, and the merges list. Loaded whole by every page but sources.html since I4b, which is when the whole-corpus file stopped being written
-│       ├── attributes-<key>-<hash>.json ● what a card, a label or a strip reads and the core drops: title, `when` verbatim, revised, citesCount, wikidata, wikipedia, scope, an office's category, an actor line's role and note, names, a place's label and precision, a relation's and a tenure's note, an office's title, a narrative's summary, authors, window and step refs. One file per century plus `place` (a place has no year) and `null`, filed by attributePeriod() and fetched for the window
+│       ├── attributes-<key>-<hash>.json ● what a card, a label or a strip reads and the core drops: title, `when` verbatim, revised, citesCount, wikidata, wikipedia, scope, an office's category, an actor line's role and note, names, a place's label, a relation's and a tenure's note, an office's title, a narrative's summary, authors, window and step refs. One file per century plus `place` (a place has no year) and `null`, filed by attributePeriod() and fetched for the window
 │       ├── search-<hash>.json    ● what the search box scans, folded at build time: per active record {id,kind,label,detail,terms,variants,weight,when,status} and, for an event, `lead` — the folded first sentence of its summary, matched below every name; fetched beside the core and never waited for
 │       ├── explanations-<from>-<to>-<hash>.json  ● the links' arguments, a century a file, keyed by edge id: fetched in bulk by whatever reads a *path* and never to draw anything
 │       ├── citers-<hash>/<source-id>.json  ● the records that cite that one source, with locator and dissent; one file, fetched when a reader opens the source
@@ -1071,7 +1071,7 @@ atlas-causal/
 │   ├── timeline.js               ● the lanes lanes.js gives, or packed unlabelled rows, as many as the pane holds; the window as a band with two handles; bars stack; one layer per kind of element, kept from render to render
 │   ├── timeline-scale.js         ● the scale is injected: linear inside two centuries, bucketed by century past that, with the ticks and the label thinning following it
 │   ├── panel/panel.js            ● the shell: the container, the clicks, the load token, what every card shares
-│   ├── panel/event.js  source.js  place.js  actor.js  office.js  cluster.js   ● one card each
+│   ├── panel/event.js  edge.js  source.js  place.js  actor.js  office.js  cluster.js   ● one card each
 │   ├── large.js                  ● pure: which events are large, and which parents get a bracket rather than a band
 │   ├── panel/horizon.js          ● the "what did this lead to by year X?" section of the event card
 │   ├── sources/main.js  bibliography.js   ● the bibliography page: bootstrap, and the list as markup
@@ -1330,9 +1330,12 @@ and leaves the tree byte for byte as it was.
 ```
 
 WGS84 always; the projection lives in one file. `precision` is `point |
-city | region`. It is the shape of a point wherever one appears — a place's
-coordinates, an actor's seat, a presence's capital. Later an additive
-`within: <presence-id>` may join it; the shape itself never changes.
+city | region | country`, the fourth added in M80 for a coordinate that is a
+state's own point and nothing finer; a region and a country name an area and
+the map draws them wider and fainter than a city (`src/vocab.js`, `PRECISIONS`).
+It is the shape of a point wherever one appears — a place's coordinates, an
+actor's seat, a presence's capital. Later an additive `within: <presence-id>`
+may join it; the shape itself never changes.
 
 ### Place ● — somewhere events happen
 
@@ -2264,16 +2267,18 @@ The line is drawn once, as two column lists beside `SPINE_COLUMNS` in
 it: per kind, the core's columns and the shard's are the spine's between them,
 with nothing invented and nothing dropped. Four columns are in **both**, because
 they are split inside — the core takes a date's astronomical bounds, the point
-of a place and which actor a line names; the shard takes the record's own
-numbering (`when` verbatim, with its day, its calendar and its BCE years), the
-label and the precision, and the role and the note.
+of a place with how precisely it is placed, and which actor a line names; the
+shard takes the record's own numbering (`when` verbatim, with its day, its
+calendar and its BCE years), the label, and the role and the note. `precision`
+moved into the core in M80: how a mark is *drawn* is decided on the frame the
+map first paints, and a shard arrives with its century.
 
 | In the core | In the shard |
 |---|---|
 | every record's `id` and `status`, and the `merges` list | `revised`, `wikidata`, `wikipedia` |
 | an event's year bounds, `place`, `region`, `weight`, `subtreeWeight`, `parent`, `category`, and its actors' **ids** | its `title`, `when` verbatim, `citesCount`, `scope`, and each actor line's `role` and `note` |
 | an edge's `from`, `to`, `type`, `confidence`, `status` | its `revised` |
-| an actor's type and years; a place's point and lane | their `name`, `names`, `citesCount`; a place's `label` and `precision` |
+| an actor's type and years; a place's point, `precision` and lane | their `name`, `names`, `citesCount`; a place's `label` |
 | the two ids a relation, an office and a tenure join, and their years | their `note`, `title`, `category`, `startedBy`, and `when` verbatim |
 | — | a narrative's `summary`, `authors`, `window` and step refs |
 
