@@ -272,14 +272,22 @@ test('a coarse place is drawn wider and fainter than a city, and says so on the 
       assert.ok(mark.dash && mark.dash !== 'none', `${mark.id} has no dashed ring`);
     }
 
-    // Both of the coarse precisions, and each drawn the same way: a region and
-    // a country are areas, and the map says the same thing about both.
-    const which = await page.eval(`return [...document.querySelectorAll('#map svg.map circle.mark[data-id]')]
-      .map((el) => el.getAttribute('data-id'));`);
-    assert.ok(which.includes('fixture-event-c'), 'the region-placed event was not drawn');
-    assert.ok(which.includes('fixture-event-g'), 'the country-placed event was not drawn');
-    for (const id of ['fixture-event-c', 'fixture-event-g']) {
-      assert.ok(marks.find((m) => m.id === id)?.coarse, `${id} is not drawn coarse`);
+    // Both of the coarse precisions, each asked for by name — a region and a
+    // country are areas and the map says the same thing about both.
+    //
+    // Opened rather than looked for in the world view: the selected event
+    // keeps its own mark wherever it is (layers/events.js), where an event
+    // merely *in* the picture may be inside a stack at this zoom and a stack
+    // carries no id. Which is a fact about grouping and not about precision,
+    // and a test that waited for the grouping to fall a particular way would
+    // be pinning the layout.
+    for (const [id, what] of [['fixture-event-c', 'region'], ['fixture-event-a2', 'country']]) {
+      await open(page, url(`?${WHOLE}&selected=${id}`),
+        `return Boolean(document.querySelector('#map svg.map circle.mark[data-id="${id}"]'));`);
+      const drawn = await page.eval(`const el = document.querySelector('#map svg.map circle.mark[data-id="${id}"]');
+        return { coarse: el.classList.contains('coarse'), r: Number(el.getAttribute('r')) };`);
+      assert.ok(drawn.coarse, `the ${what}-placed event is not drawn coarse`);
+      assert.ok(drawn.r > widestFine, `the ${what}-placed event is not drawn wider than a city's mark`);
     }
   });
 });
@@ -289,7 +297,7 @@ test('the card says how precisely a record is placed, in words', { skip }, async
     await seenIntro(page);
     // The event whose place is a country: its card says what the coordinate
     // means rather than printing the vocabulary's own slug.
-    await open(page, url(`?${WHOLE}&selected=fixture-event-g`),
+    await open(page, url(`?${WHOLE}&selected=fixture-event-a2`),
       'return document.querySelectorAll(".panel .card-section").length > 0;');
     const said = await page.eval('return (document.querySelector(".panel .event-head .where") || {}).textContent || "";');
     assert.doesNotMatch(said, /\(country\)/, 'the card printed the vocabulary\'s slug');

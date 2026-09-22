@@ -251,7 +251,7 @@
   ],
   "files": {
     "citers": "index/citers-edbc2d09467f",
-    "core": "index/core-8f4078bd4f2b.json",
+    "core": "index/core-61294d5ea6f5.json",
     "grounds": "index/grounds-7905b603a65a.json",
     "presences": "index/presences-acbe704f1f89.json",
     "review": "index/review-91c7a6ac40ca.json",
@@ -380,7 +380,7 @@
       "to": 1199
     },
     {
-      "file": "index/history-place-place-2f407ac7deab.json",
+      "file": "index/history-place-place-efa2d83e1b03.json",
       "from": null,
       "key": "place",
       "kind": "place",

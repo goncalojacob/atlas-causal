@@ -667,6 +667,45 @@ export const SHOTS = Object.freeze([
   { name: 'm79-umbrella-second', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-u',
     width: 1440, height: 900,
     what: 'the second umbrella opened: the same event, which names this one second' },
+  // M80. The owner, 22 September: *"In the graph I should be able to select a
+  // connection the same way I select an event, so I can check its sources,
+  // description, etc."* So the shot is the link chosen — madder over the
+  // picture, framed on its two ends — with its own card open beside it: the
+  // type, both ends, the confidence and what it means, the argument and the
+  // two sources it rests on.
+  //
+  // On the repository's own corpus, because the point of the card is that it
+  // shows a *real* argument; and on a link whose two ends are both **main**
+  // events, so that the frame has two nodes to put on the screen — at rest the
+  // graph draws what is part of nothing else (M65), and a link into an event
+  // that lives inside an umbrella has one end the arrangement does not hold.
+  // A `consensus` one, so the confidence line reads as the strongest of the
+  // three rather than as a caveat nobody would have to think about.
+  { name: 'm80-edge-chosen', query: '?view=graph&edge=carnation-revolution-1974--east-timor-invasion-1975--enabled',
+    width: 1440, height: 900,
+    what: 'a connection chosen on the graph, framed on its two ends, with the link\'s own card: its type, its two ends, its confidence and what it rests on' },
+  // And the other half: how precisely an event is placed, drawn. A region and
+  // a country are areas — the coordinate a place record carries for a state is
+  // the state's own point — and their marks are half again as wide as a city's
+  // and drawn with a dashed lighter ring over a fill that lets the ground
+  // through, so that nobody reads one as a pin dropped at an address.
+  //
+  // On the fixtures, and it has to be: `country` is the precision M42's
+  // amendment A9 will give the imported events, and no record under `data/`
+  // carries one yet — this milestone writes none and rewrites none. The
+  // synthetic corpus has one of each beside three cities, which is exactly the
+  // comparison, and the page says in its own corner that the records are
+  // synthetic.
+  //
+  // The box is east of the 30 west the geometry is cut at (`map/projection.js`,
+  // SEAM): a `?bbox=` that crosses the seam does not open the map on it, which
+  // is why the two places compared here are the two east of it rather than any
+  // other pair. That is the map's own behaviour and older than this milestone;
+  // it is written down here because the next person to move this shot would
+  // otherwise find the picture silently back at the whole world.
+  { name: 'm80-marks-by-precision', query: '?fixtures=1&from=1200&to=2025&bbox=-29.5,31,-16.5,45',
+    width: 1440, height: 900, scale: 2,
+    what: 'a country mark beside a city mark: wider and fainter, never a pin at a capital' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -1616,7 +1616,17 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
   padding-left: 1.25rem; text-indent: -1.25rem;
 }
 .panel .citation:first-child { border-top: 0; }
-.panel .citation .identifiers { color: var(--ink-soft); font-size: var(--text-sm); display: block; text-indent: 0; font-family: var(--font-ui); }
+/* `overflow-wrap` because a catalogue's search URL is one unbroken word a
+   hundred and forty characters long, and an unbreakable word wider than the
+   column does not wrap — it runs off the right of the panel and takes the
+   citation's own text with it. Only ever seen on a card whose sources section
+   is open, which was nothing that opened by itself until the link's card did
+   (M80). Anywhere, not break-word: these are URLs and there is no word in one
+   to keep whole. */
+.panel .citation .identifiers {
+  color: var(--ink-soft); font-size: var(--text-sm); display: block; text-indent: 0;
+  font-family: var(--font-ui); overflow-wrap: anywhere;
+}
 .panel .citation.missing, .panel .unsafe-url { color: var(--madder); }
 .panel code { font-size: 0.85em; background: var(--ground); padding: 0 0.25rem; border-radius: 2px; }
 
