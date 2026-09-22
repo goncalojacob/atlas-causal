@@ -101,6 +101,59 @@ function domainOf(dataExtent) {
   return [dataExtent.min - span * DOMAIN_PADDING - 1, dataExtent.max + span * DOMAIN_PADDING + 1];
 }
 
+// The years a set of events actually stands on: the min of every event's own
+// start, which is the year `layoutGraph` places a node at, and the max of the
+// same. **Not the max of the intervals** — an event that ran for forty years
+// has one node and it is at the year it began, so a domain stretched to the
+// end of it would be width nobody stands in.
+//
+// It is what a lens's axis is built from (M81). With a lens on, the arrangement
+// is not the corpus and laying it out over the corpus's extent puts every event
+// of a six-year war inside a sliver of the width; over its own extent they
+// spread across it in the order they happened. Null for a set with no year in
+// it at all, and then the caller's own extent stands.
+export function timeSpan(events) {
+  let min = Infinity;
+  let max = -Infinity;
+  for (const event of events) {
+    const year = extent(event.when).min;
+    if (!Number.isFinite(year)) continue;
+    if (year < min) min = year;
+    if (year > max) max = year;
+  }
+  return Number.isFinite(min) ? { min, max } : null;
+}
+
+// And what a lens is actually laid out over (M81): the extent of the events the
+// lens itself names, and the events to count the centuries of — the two travel
+// together, because the counts are what decide whether the scale buckets and a
+// table of one set laid over the domain of another is a bucketing of centuries
+// that are not there. Null at rest, and then the corpus's own extent stands.
+//
+// Two cases, and the second is not a special one but the same rule read
+// honestly. **A lens of one date has no extent of its own.** Most lenses are
+// one event chosen, whose own half is that event alone: an axis of a single
+// year is a domain a year wide, and the ring — which is why the reader can see
+// what the event answers to at all — would be flung tens of widths off the
+// picture and culled. So what stands then is the extent of everything drawn,
+// which is what the ring is, and it is the narrowest axis that holds the whole
+// of the answer.
+//
+// Where the lens *does* have an extent — a war with its parts inside it, a
+// narrative's walk — that extent is the axis, and the ring is drawn where its
+// own dates put it, off the width where its own dates are off the width. The
+// margin `domainOf` adds is the margin: four per cent and a year, which on a
+// six-year war is the difference between the parts taking seven tenths of the
+// drawing and taking all of it with two of them on the edge.
+export function timeAxis(events, lens) {
+  if (!lens) return null;
+  const own = events.filter((event) => lens.has(event.id));
+  const span = own.length ? timeSpan(own) : null;
+  if (span && span.max > span.min) return { extent: span, events: own };
+  const all = timeSpan(events);
+  return all ? { extent: all, events } : null;
+}
+
 // Do two segments cross? Proper intersection only: edges that merely share
 // an endpoint are the graph doing its job, not a crossing.
 //
@@ -395,12 +448,25 @@ export function layoutGraph({
 // `alone` is the set of ids that must keep a node of their own — the
 // selection, the walked chain, and everything else the reader is currently
 // working with. cluster.js keeps that promise; this file only passes it on.
-export function stackLayout(layout, { k = 1, alone = null, distance = STACK_DISTANCE } = {}) {
+//
+// `stretch` is how much wider than the arrangement time is being drawn
+// (stretch.js, M81), and it is applied **here** rather than at the drawing,
+// because what it changes is not only where a mark goes but which marks there
+// are: two nodes a year apart drawn four times further apart come off one mark
+// at a quarter of the zoom. So what this returns is in the picture's own
+// coordinates — x already stretched — and the view draws and hit-tests in them.
+// The nodes it is made of are untouched: `layout` is the arrangement, and the
+// arrangement never moves (arrangement.js).
+export function stackLayout(layout, {
+  k = 1, alone = null, distance = STACK_DISTANCE, stretch = 1,
+} = {}) {
   const byLane = new Map();
   for (const node of layout.nodes) {
     const lane = node.lane ?? '';
     if (!byLane.has(lane)) byLane.set(lane, []);
-    byLane.get(lane).push({ id: node.id, x: node.x, y: node.y, weight: node.weight, node });
+    byLane.get(lane).push({
+      id: node.id, x: node.x * stretch, y: node.y, weight: node.weight, node,
+    });
   }
 
   const stacks = [];
@@ -459,5 +525,7 @@ export function stackLayout(layout, { k = 1, alone = null, distance = STACK_DIST
     return { ...merged, x1: from.x, y1: from.y, x2: to.x, y2: to.y };
   });
 
-  return { k, nodes: stacks, edges, stackOf };
+  return {
+    k, stretch, nodes: stacks, edges, stackOf,
+  };
 }

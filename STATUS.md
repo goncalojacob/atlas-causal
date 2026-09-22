@@ -16449,6 +16449,201 @@ band and the walk framing are where M74, M75 and M76 left them.
       `origin/m0` is merged in — a merge and never a rebase, which the protocol
       forbids.
 
+## M81 — the graph stretches time when it zooms
+
+Lane A, on the branch `m81`. The owner, 22 September, with a screenshot of
+World War II opened on the graph — twenty-seven children in one vertical
+column, labels three deep on either side:
+
+> *"On the graph it should expand more horizontally when I zoom in, otherwise
+> it looks weird and hard to see."*
+
+### Why it looked like that
+
+The graph's horizontal axis is time, laid out once over the whole extent of the
+corpus. A lens on a six-year war therefore put every one of its parts inside
+six years of six hundred — a hundredth of the width — and the barycentre did
+the only thing left to it and spread them down the field. The camera then
+zoomed **uniformly**, so a column zoomed in was a bigger column, and M77's
+labels, which are whole or nothing and go on a nearby free line when they do
+not fit, stacked three deep beside it.
+
+Two different things were wrong, and both are fixed.
+
+### 1. A lens has its own time axis
+
+With a lens on, the arrangement is no longer laid out over the corpus's extent
+but over **the extent of the events the lens itself names**. World War II
+opened is then 1939 to 1945 across the whole width, its parts in seven columns
+in the order they happened, every one of them named in full.
+
+`arrangementOf` says what the lens names — `view.kept`, the lens's own half and
+not its ring — and `timeAxis` in `layout.js` turns that into the domain. The
+counts travel with the extent, because they are what decide whether the scale
+buckets by century and a table of one set laid over the domain of another is a
+bucketing of centuries that are not there. At rest nothing has been asked and
+the domain is the corpus's, exactly as before: the graph and the timeline still
+share a scale and not merely an extent.
+
+**The ring is drawn where its own dates put it.** A lens's ring reaches further
+than the lens does — World War II's reaches 1893 and 1992 — and stretching the
+axis to hold it would give the question back the sliver it was asked to get out
+of. So the ring beyond the lens's own years is off the width, the arrows into
+the picture from off its edges are drawn as they always were, and the camera
+already knew what to do about it: M74 offers the whole picture first and the
+lens's own half as the fallback, and a ring this wide leaves it the fallback.
+
+**A lens of one date is the exception, and it is the same rule read honestly.**
+Most lenses are one event chosen, whose own half is that event alone: an axis a
+year wide has no room to be an axis, and the ring — the reason a reader can see
+what the event answers to at all — would be flung tens of widths off the
+picture and culled. What stands then is the extent of everything drawn, which
+is the narrowest axis that holds the whole of the answer.
+
+### 2. Zooming stretches time
+
+The camera has a fourth number. `k` is the zoom, and it is still what every
+mark and every label divides its size by; `s` is the **stretch**, how much
+wider than the arrangement time is drawn. What the reader sees magnified is
+`k · s` across and `k` down, and one wheel notch multiplies the first by the
+square of what it multiplies the second by. Zooming into 1943 shows 1943 wide
+rather than 1943 large.
+
+**The stretch is not in the SVG's transform.** That stays the uniform
+`scale(k)`, because a transform scaled unevenly draws a mark as an ellipse and
+sets a label in a condensed face. It is in the picture's own coordinates,
+applied by `stackLayout`, which is the right place for it on its own merits: it
+decides not only where a mark goes but which marks there are, since two nodes a
+year apart drawn four times further apart come off one mark at a quarter of the
+zoom. The arrangement itself never moves — that is what lets a reader zoom, pan
+and find the picture they had.
+
+**It says nothing about time that the axis did not say already.** Every x is
+multiplied by one number, so the order is the order and the ratios are the
+ratios: two events a year apart are still half as far apart as two events two
+years apart. What changes is how much of the drawing's width a year is worth,
+which is the same thing zooming has always changed.
+
+### The cap, and why four is the honest one
+
+`STRETCH_CAP = 4`. The run was asked to say what cap is honest, and this is the
+argument.
+
+What the stretch buys is room between two nodes that **time itself** separates,
+and it buys nearly all of that in the first two doublings: the twenty-seven
+children of a six-year war need one, a dozen events inside a single decade need
+two. A third doubling buys almost nothing, because what is still merged at four
+times is what falls in the same year — and no stretch whatever parts two nodes
+standing on one x.
+
+The cost, meanwhile, is real and grows with every doubling. At four times,
+crossing the drawing takes four screens sideways for every one down, so a
+reader comparing two events pans instead of looking; and an edge's slope, which
+is read loosely as how far apart in time its two ends are, is flattened by the
+same factor. Four is where the two curves cross, and it is `FIT_ZOOM` twice
+over — the camera's own fit will go to two in each direction and the reader's
+wheel may take time that far again and no further.
+
+### 3. The frame fits the two directions separately
+
+`frameFor` measures the wanted set against the rectangle on screen twice: the
+height decides `k`, capped at `FIT_ZOOM` as it has been since deviation 54, and
+the width left over after that is spent on the stretch, capped at
+`STRETCH_CAP`. A lens that is tall and narrow — which is exactly what a war
+with its parts inside it was — is framed by its height and then widened to the
+pane, instead of being framed by its height with four fifths of the pane left
+blank. A set already as wide as the pane asks for no stretch and is given none.
+
+Worth saying plainly, because it is the measurement rather than the design:
+**World War II is fixed by the axis and not by the stretch.** With its own
+years across the width the lens already fills the pane, so the opening frame
+comes out at `s = 1` and `k ≈ 1.55`, and what the stretch then does is answer
+the second half of the sentence — the reader turns the wheel and the seven
+columns move apart faster than the marks grow.
+
+### What was left alone
+
+Marks and labels keep their size on screen at every stretch (M61) and a name is
+still whole or waits for the pointer (M77) — both asserted on a real page,
+either side of a notch. Panning moves through time across and through stacks
+down, as it did. The lens, the walk framing, the category switches, confidence
+and the chosen link (M80) are untouched, and `emphasis.js`, the map and the
+timeline were not opened. No record was written and no historical claim made;
+`data/` is byte for byte what it was. No new hex value, token or type size.
+
+### Deviations
+
+1153. **The stretch is in the picture's coordinates and not in the SVG's
+      transform, which the brief's wording allows and its own test forbids.**
+      "The wheel and the pinch scale the horizontal axis" reads as a
+      `scale(kx, ky)` on the viewport, and that is the one implementation test
+      3 rules out: a circle under an uneven scale is an ellipse and a typeface
+      under one is condensed. So the viewport keeps `scale(k)` and `stackLayout`
+      multiplies every x by `s`. The consolation is that this is where it
+      belonged anyway — the stretch decides which marks there are as well as
+      where they are.
+1154. **A lens whose own events fall on one date is laid out over everything it
+      draws, which the brief does not provide for.** "The lens's own extent"
+      is the rule, and on the overwhelming majority of lenses — one event
+      chosen — that extent is a single year. Laid out over it, the whole ring
+      landed thousands of units off the picture and I6's cull took it: five
+      browser tests said so, among them *the selected event and its chain are
+      never inside a stack* and *choosing an event narrows all three views*,
+      which count what the lens draws and found two marks of eighteen. The rule
+      as written is kept wherever the lens has an extent; where it has none,
+      the extent of everything drawn stands, which is the narrowest axis that
+      holds the answer.
+1155. **The domain is the lens's own events and not everything the lens draws.**
+      The two readings of "the lens's own extent" differ by the ring, and the
+      ring is why: World War II's reaches 1893 and 1992, so a domain that held
+      it would have given the parts six years of ninety-nine — better than six
+      of six hundred and still not a picture the owner asked for. The ring goes
+      off the width and the frame's own fallback, which is older than this
+      milestone, is what catches it.
+1156. **`FIT_ZOOM` did not become the cap on the stretch; it became the cap on
+      the height and the stretch was given a cap of its own.** The brief says
+      it becomes the cap on the horizontal stretch, and one number cannot be
+      both: `FIT_ZOOM` is a magnification against the arrangement and the
+      stretch is a multiplier *of* that magnification, so `FIT_ZOOM` on the
+      stretch would have meant the width fitted at two and the height also at
+      two, which is the same uniform camera in a longer sentence. Two numbers,
+      and `STRETCH_CAP` is `FIT_ZOOM` squared, which is the brief's intent
+      arrived at the other way round.
+1157. **`s` is a free part of the transform and not a pure function of `k`.**
+      It has to be: "fits the time extent to the width and the stacks to the
+      height, separately" is two independent numbers, and a stretch derived
+      from the zoom could not be one of them. The wheel therefore accumulates,
+      and two routes to one zoom can leave two different stretches between the
+      ends — though never at the ends, because both clamp and both come home.
+      A pan has been path-dependent since the graph had one; a camera is
+      allowed to be.
+1158. **The stacking is keyed on the stretch unbucketed, where the zoom is
+      bucketed.** What the zoom decides is a threshold, `D / k`, so what
+      matters is the ratio between two zooms and sixteen buckets to the octave
+      lose nothing. What the stretch decides is where a mark *is*: a bucket of
+      it would jump the picture sideways by four per cent at every boundary the
+      wheel crossed. It costs nothing — a notch leaves the zoom's bucket too,
+      and a pan moves neither number.
+1159. **A stack of one is drawn on the stack's own point and not on the node's,
+      which is a one-line change that would have been invisible.** They were
+      the same number until this milestone: a cluster's mark is drawn on its
+      representative, and a cluster of one *is* its representative. Now
+      `stackLayout` returns the picture's coordinates, with time stretched, and
+      `representative` is the arrangement's node, which never moves. The ring on
+      a parent's mark read the same wrong number.
+1160. **The axis is redrawn on a stretch, from `render` and not from `adopt`.**
+      The bands and the ticks were drawn once per arrangement, and a tick is a
+      year that has to stand under the marks of that year. `adopt` runs before
+      the camera has said what the stretch is, so the redraw is a comparison in
+      `render` against the stretch the axis was last drawn at.
+1161. **`docs/screens/frame.html` gained a second way of driving the wheel.**
+      `zoom` double-clicks back to the world view and then wheels until it
+      reaches a scale, which is right for photographing the graph *at* a
+      magnification and wrong for this milestone: what M81 is a picture of is
+      what one notch does to the camera the lens was already given, and the
+      double click throws that frame away before the gesture. `notches=<n>` is
+      the same wheel event counted, with nothing before it.
+
 ## M42 — the world at scale (in progress, branch `m42`)
 
 Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the
@@ -18458,3 +18653,5 @@ M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
 M80 started 2026-09-22T11:11:07Z by scheduled (branch m80)
 M80 done
+M81 started 2026-09-22T12:29:49Z by scheduled (branch m81)
+M81 done
