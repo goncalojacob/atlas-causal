@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "1982-lebanon-war--sabra-and-shatila-massacre--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sabra and Shatila massacre\", revision 1375981084, lead and § Massacre"
+    }
+  ],
+  "from": "1982-lebanon-war",
+  "to": "sabra-and-shatila-massacre",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The massacre’s own lead has the killing done “by the Lebanese Forces, one of the main Christian militias in Lebanon, with the support of the Israel Defense Forces (IDF)”, and its § Massacre has the militiamen assembling “at Beirut International Airport, then occupied by Israel” and moving on the camps “in IDF-supplied jeeps, some bearing weapons provided by Israel, following Israeli guidance on how to enter it”. `enabled` and not `caused`: the invasion is what put the IDF around those camps and the militia inside them; whose hands did the killing is what the record says and not what this edge claims.",
+  "dispute": null
+}

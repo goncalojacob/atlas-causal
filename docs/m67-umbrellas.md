@@ -775,3 +775,34 @@ not, which is exactly the kind of row the filter refused.
 
 **Nothing here was given an actor or a place to make it filable**, and the
 nine that earned no edge kept none.
+
+## 14. M42 batch 33 — eight more bare records, all eight filed
+
+*22 September, the second batch of the fire that began at 08:06. The
+measurement is in `docs/m42-pool.md` → "Batch 33". A1's clause a fourth time
+and for the same reason as the third: **all eight name neither an actor nor a
+place**, because the items give neither.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `battles-of-khalkhin-gol` | `soviet-japanese-border-conflicts` | not an A6 umbrella |
+| `prelude-to-the-russian-invasion-of-ukraine` | `russo-ukrainian-war` | not an A6 umbrella |
+| `battle-of-caporetto` | `world-war-i` | not an A6 umbrella |
+| `third-battle-of-ypres` | `world-war-i` | not an A6 umbrella |
+| `tet-offensive` | `vietnam-war` | not an A6 umbrella |
+| `sabra-and-shatila-massacre` | `lebanese-civil-war` | not an A6 umbrella |
+| `third-battle-of-kharkov` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-greece` | `world-war-ii` | not an A6 umbrella |
+
+**None of the eight goes under a period** and every one carries a lane derived
+from its own point, as batch 32's twelve did. What this batch adds to the rule
+is a **day-precision span**: where the child and the parent both give a full
+date, the child's own day must fall inside the parent's, and that refuses 34
+rows the year-level test had let through — among them the **July Crisis**,
+which Wikidata files under the First World War and which begins on 23 July
+1914, five days before the war this atlas dates from 28 July. Batch 32's
+twelve were re-checked against the tighter test after it was written and all
+twelve hold.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+five that earned no edge kept none.

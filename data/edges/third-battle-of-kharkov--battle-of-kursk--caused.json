@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-kharkov--battle-of-kursk--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Kharkov\", revision 1370750346, § Aftermath"
+    }
+  ],
+  "from": "third-battle-of-kharkov",
+  "to": "battle-of-kursk",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Kharkov’s own Aftermath puts the next battle on the end of it: “Following the German success at Kharkov, Hitler was presented with two options. The first, known as the ‘backhand method’ was to wait for the inevitable renewal of the Soviet offensive … The second, or the ‘forehand method’, encompassed a major German offensive by Army Groups South and Center against the protruding Kursk salient. Hitler favoured the ‘forehand method’, which led to the Battle of Kursk.” `caused`: the counterattack left the salient and the choice of what to do about it, and the article says in its own voice which choice led where.",
+  "dispute": null
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-ypres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q426227",
+  "wikipedia": {
+    "en": "Battle of Passchendaele",
+    "pt": "Terceira Batalha de Ypres"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q426227"
+    }
+  ],
+  "title": "Third Battle of Ypres",
+  "summary": "Wikidata item Q426227, imported by tools/import/wikidata.mjs. The item's own description reads \"Battle in the first world war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1917,
+    "end": 1917,
+    "date": "1917-07-31",
+    "endDate": "1917-11-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-i",
+  "category": "war",
+  "actors": []
+}

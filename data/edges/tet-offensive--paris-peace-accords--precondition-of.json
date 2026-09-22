@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "tet-offensive--paris-peace-accords--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tet Offensive\", revision 1376040932, lead"
+    }
+  ],
+  "from": "tet-offensive",
+  "to": "paris-peace-accords",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The offensive’s own lead reads the defeat forwards: “The offensive was a military defeat for North Vietnam … However, it had far-reaching consequences on the views of the Vietnam War held by the American public … American public support for the war declined as a result of the Tet casualties and the escalation of draft calls. Subsequently, the Johnson administration sought negotiations to end the war.” `precondition-of`: the table the accords were signed at in 1973 is the one the article says Tet sent the United States to, and five years of talks stand between the two, which is why this is a precondition and not a cause.",
+  "dispute": null
+}
