@@ -281,15 +281,6 @@
         }
       ]
     },
-    "italian-peninsula": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
-        }
-      ]
-    },
     "lajes": {
       "from": "git",
       "versions": [

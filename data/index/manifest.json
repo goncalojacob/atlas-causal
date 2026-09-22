@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-ae2f7449f4a3.json",
+      "file": "index/attributes-place-c2cb09524ae3.json",
       "from": null,
       "key": "place",
       "to": null
@@ -1020,7 +1020,7 @@
     "events": 829,
     "narratives": 2,
     "offices": 11,
-    "places": 53,
+    "places": 52,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1066,24 +1066,24 @@
   ],
   "files": {
     "citers": "index/citers-9ab00aaa9e36",
-    "core": "index/core-185cfb52453d.json",
-    "grounds": "index/grounds-859b3c49a6d2.json",
+    "core": "index/core-4767968093f5.json",
+    "grounds": "index/grounds-ac4cb346658f.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-4118ec29bd8b.json",
-    "search": "index/search-76eb54fc1f1e.json",
+    "review": "index/review-8bc1e1951261.json",
+    "search": "index/search-b73e8737fcb8.json",
     "sources": "index/sources-2b20e4fd6893.json",
-    "territories": "index/territories-cd9723c6b2f6.json"
+    "territories": "index/territories-49c41a0ddc00.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-3b8152f89740.json",
+      "file": "index/history-event-1400-1499-4b2c8534eb89.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-4ca88bb573c2.json",
+      "file": "index/history-event-1500-1599-3a4d8ff76313.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
@@ -1237,7 +1237,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-abcdf1d38b6c.json",
+      "file": "index/history-place-place-4b9926642d13.json",
       "from": null,
       "key": "place",
       "kind": "place",

@@ -44,8 +44,8 @@
     "start": 1494,
     "end": 1559
   },
-  "place": "italian-peninsula",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

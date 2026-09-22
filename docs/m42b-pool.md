@@ -114,9 +114,9 @@ added by hand except the four refusals below, each for a stated reason.
 
 | the record | sitelinks | filed under | placed at | the edge it earned |
 | --- | --- | --- | --- | --- |
-| `italian-wars` | 50 | — (the umbrella) | `italian-peninsula` | none |
+| `italian-wars` | 50 | — (the umbrella) | placeless (see deviation 1201) | none |
 | `italian-war-of-1521-1526` | 31 | `italian-wars` | placeless (P276 is a country) | none |
-| `war-of-the-league-of-cambrai` | 30 | `italian-wars` | `italian-peninsula` | none |
+| `war-of-the-league-of-cambrai` | 30 | `italian-wars` | placeless (see deviation 1201) | none |
 | `italian-war-of-1551-1559` | 23 | `italian-wars` | placeless (P276 is a country) | none |
 | `italian-wars-of-1499-1504` | 19 | `italian-wars` | placeless (P276 is a country) | none |
 | `battle-of-st-quentin` | 17 | **`italian-war-of-1551-1559`** | `saint-quentin` | none |
@@ -125,9 +125,10 @@ added by hand except the four refusals below, each for a stated reason.
 | `cretan-revolt-of-1897-1898` | — | **refused, see below** | `crete` | it `--caused-->` the war |
 | `battle-of-velestino` | — | `greco-turkish-war-of-1897` | `velestino` | none |
 
-Six place records came with them, each from the `P276` the event's own item
-names: `italian-peninsula`, `provence` and `crete` at `region` precision,
-`saint-quentin`, `domokos` and `velestino` at `city`. The precision is read
+Five place records came with them, each from the `P276` the event's own item
+names: `provence` and `crete` at `region` precision, `saint-quentin`,
+`domokos` and `velestino` at `city`. A sixth, `italian-peninsula`, was
+written and then withdrawn — deviation 1201. The precision is read
 off the class Wikidata gives the item — town and commune are settlements,
 peninsula and region are not — and the import's own `point` was replaced by
 it, which is what A9 asks for and what the import does not yet write.
@@ -191,8 +192,8 @@ what moved the component.
 | **largest connected component** | **502** | **503** |
 | components | 59 | 68 |
 | events with no edge at all | 42 | 51 |
-| imported | — | 10 events, 6 places, 0 actors |
-| refused | — | 5 items and 2 filings |
+| imported | — | 10 events, 5 places, 0 actors |
+| refused | — | 6 items and 2 filings |
 | API calls | — | 31 for the two imports, 5 SPARQL, 3 article reads |
 
 | century | europe | africa | asia | americas | oceania | no lane | all |
@@ -223,6 +224,26 @@ The revolt is the second and it is not a trade at all: it is a record whose
 sources refuse to make it part of anything this atlas holds, so it stands on
 the resting picture with an edge and no parent. That is the honest outcome and
 it is what `degree-zero` and the main count are for.
+
+**Deviation 1201. `italian-peninsula` was written as a place and withdrawn
+before the fire ended.** A9's rule gave it: the Italian Wars' item names the
+Italian Peninsula in `P276` and it carries a point, so a `region` place was
+written and two records pointed at it. The map then wrote *"Italian
+Peninsula"* across Rome — `tests/map-browser.test.mjs` caught it twice, on the
+run's own check and here, and it is a real defect and not a flake: a label
+placed at 42°N 14°E is a name written over the middle of Italy.
+
+The fix is in the data and not in the placer, because this run may not touch
+the display. **A point that stands for a whole country-sized region is the
+case A9 itself holds back**: *"until `M80 done` is on `origin/m0`, an event
+whose only located thing is its country stays placeless"*, and M80 is the
+milestone that adds the `country` precision and the mark that draws a thing
+that large. A peninsula the size of Italy is that case in everything but the
+word, so the record was deleted, `Q145694` taken back out of the seeds and the
+import's `done` list, and `italian-wars` and `war-of-the-league-of-cambrai`
+left placeless in the `europe` lane as the import first wrote them. `provence`
+and `crete` are the size of a province and an island and stay. **Five places,
+not six; five of the ten events placed, not seven.**
 
 **The batch grew the component by one and left nine records with no edge.**
 That is the vein's known cost, measured again: the Italian Wars' phases are

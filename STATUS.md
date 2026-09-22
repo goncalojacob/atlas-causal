@@ -17977,11 +17977,11 @@ century lacked and six of its wars file under it; `battle-of-st-quentin` went
 to the nearer parent, `italian-war-of-1551-1559`, because its own lead calls
 it an engagement of that war and A8 says a parent reachable through another
 is not a second one. `battle-of-domokos` and `battle-of-velestino` file under
-the Greco-Turkish war the atlas already held. **Seven of the ten were placed**
+the Greco-Turkish war the atlas already held. **Five of the ten were placed**
 from the `P276` their items name, at the precision the location's own class
-gives — `italian-peninsula`, `provence` and `crete` as `region`,
-`saint-quentin`, `domokos` and `velestino` as `city`; the other three name
-only a country and stay placeless until `M80 done` is on `origin/m0`.
+gives — `provence` and `crete` as `region`, `saint-quentin`, `domokos` and
+`velestino` as `city`; the others name only a country, or a region as large as
+one, and stay placeless until `M80 done` is on `origin/m0`.
 **One edge**, `cretan-revolt-of-1897-1898 --caused--> greco-turkish-war-of-1897`,
 `probable`, from the two articles at named revisions.
 
@@ -17997,7 +17997,7 @@ is an Africa record's business and so M42's).
 connected component 503, 68 components, 51 events with no edge at all.**
 `node tools/validate.mjs --index`: **0 errors, 273 warnings**. **1,709 pure
 and 234 browser, 1,943 in all, 0 failed and 0 skipped**, the browser suites
-one at a time as the check runs them. Deviation **1200**.
+one at a time as the check runs them. Deviations **1200** and **1201**.
 
 1200. **The main count rose by two and A6 says a batch that does that has to
       say why.** The two are different cases. `italian-wars` is an umbrella a
@@ -18013,6 +18013,19 @@ one at a time as the check runs them. Deviation **1200**.
       leads argue no causation between them, the same finding M42's batch 34
       wrote down about the Vietnam War — and nothing was invented to connect
       them.
+1201. **A place whose point stands for a whole country-sized region is the
+      case A9 holds back, and one was written before that was seen.**
+      `italian-peninsula` came from the Italian Wars' own `P276`, and the map
+      then wrote its name across Rome — `tests/map-browser.test.mjs` caught
+      it on the run's own check and again on the branch's, so a real defect
+      and not a flake. A9 already says an event whose only located thing is
+      its country stays placeless until `M80 done`, and M80 is what adds the
+      `country` precision and the mark that draws a thing that large; a
+      peninsula the size of Italy is that case in everything but the word.
+      The record was deleted, `Q145694` taken back out of the seeds and the
+      import's `done` list, and the two events left placeless in the `europe`
+      lane as the import first wrote them. The fix is in the data because
+      this run may not touch the placer.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

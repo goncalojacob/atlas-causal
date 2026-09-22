@@ -964,7 +964,6 @@
     "Q2888423",
     "Q930925",
     "Q61675345",
-    "Q145694",
     "Q182744",
     "Q101081",
     "Q34374",
@@ -4214,11 +4213,6 @@
     "Q484170": {
       "kind": "place",
       "label": "commune of France",
-      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
-    },
-    "Q34763": {
-      "kind": "place",
-      "label": "peninsula",
       "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
     },
     "Q82794": {
