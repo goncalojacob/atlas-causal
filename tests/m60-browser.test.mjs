@@ -34,11 +34,13 @@ const SHOWN = `return {
   view: new URLSearchParams(location.search).get('view'),
 };`;
 
-// The window as the reader can read it: the two ends of the control, and the
-// two the URL carries.
+// The window as the reader can read it. It was the two ends of the masthead's
+// control until M76 removed them — the owner, 21 September: *"Picking up the
+// dates exactly is unnecessary"* — so it is now what the link carries, which
+// is what these tests were ever really asking about: the window survives a
+// change of view, and a reload opens on it. The picture that says it is the
+// band, and `tests/m76-browser.test.mjs` is where the band is driven.
 const WINDOW = `return {
-  from: document.querySelector('#window-control [data-window="from"]').value,
-  to: document.querySelector('#window-control [data-window="to"]').value,
   urlFrom: new URLSearchParams(location.search).get('from'),
   urlTo: new URLSearchParams(location.search).get('to'),
 };`;
@@ -60,8 +62,9 @@ const PANE = (selector) => `
   };`;
 
 // 1. Choosing Timeline gives the timeline the pane, with its lanes and its
-//    clusters as they are today.
-test('choosing Timeline gives it the whole pane, with the lanes and the stacks it always drew', { skip }, async () => {
+//    bars as they are today. It said *and its clusters* until M77, when the
+//    stacks and their `+n` badges went and every bar took its title instead.
+test('choosing Timeline gives it the whole pane, with the lanes and the titles it always drew', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
     await open(page, url('?view=timeline'), LANES_READY);
@@ -71,12 +74,14 @@ test('choosing Timeline gives it the whole pane, with the lanes and the stacks i
         lanes: svg.querySelectorAll('rect.lane').length,
         bars: svg.querySelectorAll('rect.bar[data-id]').length,
         stacks: svg.querySelectorAll('rect.bar.stack').length,
+        badges: svg.querySelectorAll('text.cluster-count').length,
         handles: svg.querySelectorAll('[data-window]').length,
         ticks: svg.querySelectorAll('text.tick-label').length,
       };`);
     assert.ok(drawing.lanes > 0, 'the lanes');
     assert.ok(drawing.bars > 0, 'the bars');
-    assert.ok(drawing.stacks > 0, `the clusters, drawn as one bar with a count (${drawing.stacks})`);
+    assert.equal(drawing.stacks, 0, 'and no stack: every bar is its own bar since M77');
+    assert.equal(drawing.badges, 0, 'and no +n');
     assert.equal(drawing.handles, 3, 'the band and its two handles');
     assert.ok(drawing.ticks > 0, 'and the axis');
 
@@ -122,32 +127,29 @@ test('the three views switch, the view is in the URL, and the window does not mo
   });
 });
 
-// 3. The masthead control sets `from` and `to`, and a reload restores them.
-test('the masthead control sets the window, and a reload opens on it again', { skip }, async () => {
+// 3. A link sets `from` and `to`, a reload restores them, and the pictures are
+//     drawn on them. The half of this that used to type into the masthead's
+//     two fields went with the fields (M76); sweeping the band is M76's own
+//     test, and this is still the rule underneath both — the window is state
+//     and not a preference.
+test('a link sets the window, a reload opens on it again, and the timeline draws it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
-    await open(page, url(''), MAP_READY);
-    const type = (kind, year) => `
-      const input = document.querySelector('#window-control [data-window="${kind}"]');
-      input.value = '${year}';
-      input.dispatchEvent(new Event('change', { bubbles: true }));
-      return true;`;
-    await page.eval(type('from', 1700));
-    await page.eval(type('to', 1800));
-    await waitFor(page, 'return /to=1800/.test(location.search);', 'the window in the URL');
-    assert.deepEqual(await page.eval(WINDOW), {
-      from: '1700', to: '1800', urlFrom: '1700', urlTo: '1800',
-    });
-
-    // The same link again, from cold: what the control wrote is what the atlas
-    // opens on, which is the whole of why the window is state and not a
-    // preference.
     await open(page, url('?from=1700&to=1800'), MAP_READY);
-    assert.deepEqual(await page.eval(WINDOW), {
-      from: '1700', to: '1800', urlFrom: '1700', urlTo: '1800',
-    });
+    assert.deepEqual(await page.eval(WINDOW), { urlFrom: '1700', urlTo: '1800' });
+
+    // The same link again, from cold: what it carries is what the atlas opens
+    // on, which is the whole of why the window is state.
+    await open(page, url('?from=1700&to=1800'), MAP_READY);
+    assert.deepEqual(await page.eval(WINDOW), { urlFrom: '1700', urlTo: '1800' });
+    // And the band on the map is at those years, so the control a reader
+    // actually has says what the link says.
+    assert.equal(
+      await page.eval(`return document.querySelector('#map-band-strip [data-window="band"]').getAttribute('aria-valuetext');`),
+      '1700 to 1800',
+    );
     // And it is the window the pictures are drawn on: the band the timeline
-    // draws is at the years the control says.
+    // draws is at the same years.
     await page.eval('document.querySelector(\'[data-view="timeline"]\').click(); return true;');
     await waitFor(page, LANES_READY, 'the lanes');
     const band = await page.eval(`const el = document.querySelector('.timeline-area [data-window="band"]');
@@ -216,35 +218,10 @@ test('the count of what the map is looking at is in the masthead, on every view'
   });
 });
 
-// 6. The density hint beside the control: a column per century of the data,
-//    with the window's own centuries marked, drawn from the palette that
-//    exists (m60-brief §2). It is the one thing the strip did that a pair of
-//    years cannot say — where history is dense — kept in the masthead so a
-//    reader sees it without leaving the map.
-test('a density hint stands beside the control and marks the window’s centuries', { skip }, async () => {
-  await withBrowser(async (page, url) => {
-    await seenIntro(page);
-    await open(page, url('?from=1900&to=1999'), MAP_READY);
-    const READ = `const svg = document.querySelector('#window-control .window-density');
-      const columns = [...svg.querySelectorAll('rect.density-column')];
-      return {
-        columns: columns.length,
-        inside: columns.filter((c) => c.classList.contains('in')).length,
-        heights: columns.map((c) => Number(c.getAttribute('height'))),
-      };`;
-    const narrow = await page.eval(READ);
-    assert.ok(narrow.columns > 1, `a column per century (${narrow.columns})`);
-    assert.ok(narrow.inside > 0 && narrow.inside < narrow.columns,
-      `the window's own centuries are marked and the others are not (${narrow.inside} of ${narrow.columns})`);
-
-    // The columns stay on the whole extent of the data whatever the window is,
-    // which is the timeline's own rule and the reason it is there: a hint that
-    // rescaled itself would say the corpus had changed when the band moved.
-    await page.eval(`const input = document.querySelector('#window-control [data-window="from"]');
-      input.value = '1950'; input.dispatchEvent(new Event('change', { bubbles: true })); return true;`);
-    await waitFor(page, 'return /from=1950/.test(location.search);', 'the narrower window');
-    const narrower = await page.eval(READ);
-    assert.equal(narrower.columns, narrow.columns, 'the same columns');
-    assert.deepEqual(narrower.heights, narrow.heights, 'at the same heights');
-  });
-});
+// 6. The density hint that stood beside the control was removed by M76, with
+//     the two fields and for the same sentence: the band over the map draws
+//     the profile now, over the selection and at its own scale, and two
+//     profiles on one row — one of which never narrows — is the fault M76's
+//     first section is about. Nothing replaces this test here;
+//     `tests/m76.test.mjs` asserts the hint is gone and `tests/m76-browser`
+//     asserts what the band draws instead.

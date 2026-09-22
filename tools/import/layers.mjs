@@ -206,6 +206,11 @@ export function pointOf(read, { decimals, carry = [] }) {
 export function featureOf(read, geometry) {
   const properties = { z: read.z };
   if (read.id !== undefined) properties.id = read.id;
+  // M45b's band, which travels for the reason `kind` travels: which of the
+  // five heights a polygon is between decides how it is drawn, and a
+  // stylesheet cannot work it out from a shape. Written on all five including
+  // the lowest, because 0 is a band and not an absence.
+  if (read.band !== undefined) properties.band = read.band;
   if (read.kind !== undefined) properties.kind = read.kind;
   if (read.name !== undefined) properties.name = read.name;
   if (read.nameEn !== undefined) properties.nameEn = read.nameEn;

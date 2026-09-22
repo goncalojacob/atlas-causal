@@ -13,6 +13,66 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-22, after **M79** (`docs/m79-brief.md`, on the branch `m79`, lane A):
+**an event may be part of several umbrellas.** The owner, 22 September, shown
+the list of umbrellas: *"Can't we have many umbrellas for the same event? For
+example, the angola independence is both under the Portuguese third republic
+and african decolonization."* So `parent` in `schema/v1/event.json` now admits
+**a list of ids** beside one id and null, and **one parent is a list of one**.
+**`parentsOf(event)` in `src/parts.js` is the one place any of the three
+shapes is read** — absent or null, one id, a list — and the validator, the
+index, the three views, the card, the form and `tools/m42-pool.mjs` all come
+through it. **Not one record under `data/` was rewritten**, and that was the
+decision and not an omission: every one of the 329 events that carries a
+`parent` is valid as it stands, the helper reads it, and churning them into
+lists of one would have said nothing a reader could see while making every one
+of them look edited on a day nobody edited it. New
+filings write a list when there is more than one. **Rule 24 applies per
+parent**: each resolves to an active event, the cycle walk is depth-first over
+*every* path of `part of` — a cycle that closes through a second parent is a
+cycle — the same parent twice or itself is an error, and `child-outside-parent`
+warns once per parent and names which. **Opening an umbrella shows every event
+that has it *among* its parents**, on the map, the graph and the timeline:
+`childrenOf` is built from every parent, `isMain` is "part of nothing the atlas
+is drawing", `lens.js`'s `parentsOf` keeps *all* of a lens's parents dimmed,
+the ring is drawn for a parent whose only child names it second, and the card
+says "part of" each umbrella in the record's own order. The band, the
+categories and the lens are unchanged. The index carries the record's own
+spelling (the spine's `idOrIds`), so no committed row changed and the built
+index is byte-identical. No record, no historical claim, no filing — M42's
+amendment A8 is lane B's and waits on this line. No new hex value, token or
+type size. `validate --index`: **11,189 records, 5 regions, 0 errors**.
+**1,941 tests, 0 skipped.** Deviations 1136 to 1142.
+
+2026-09-21, after **M70** (`docs/m70-brief.md`, on the branch `m70`, lane A):
+**dead code out, standing in.** Two things the owner decided on 21 September.
+(1) **The graph's semantic collapse is gone.** M30c's fold drew a parent's
+parts inside it while the reader was zoomed out; M65 made it unreachable and
+left the code standing with its own tests green on a rule nothing followed.
+`src/graph-view/collapse.js`, `tests/collapse.test.mjs`, `COLLAPSE_ZOOM`, the
+`node.collapsed` class, its stylesheet rule and the `+N` badge are all gone.
+**Where it used to fold, the graph now draws the parent alone with its ring**,
+and the parts when the reader opens it — which is what M65's resting rule
+already did and what the fold had stopped being able to say.
+(2) **A reader can see what has been read.** `src/standing.js` holds one
+predicate, `hasBeenRead`, and everything reads it: **on the card**, one line in
+the head of the event, actor, place, office, narrative and source cards —
+*Unread: no person has checked this record*, or *Read by <name> (<date>)* —
+written when the record's own file lands and empty until then; **in the
+masthead**, `N of N read` beside the count M60 put there, over the very same
+array. The index carries a `reviewed` column on the event, derived by that same
+function at build time, so the bar and the card are one answer twice. Today it
+reads **0 of 10,638** everywhere, because nobody has signed anything.
+**Nothing changes what is drawn**: a draft is still drawn, and a test asserts
+that `emphasis.js`, `lens.js`, `lanes.js`, `cluster.js`, `large.js` and
+`parts.js` never read standing. **First paint: the same 94 files, eleven more
+bytes** — the column's name in the core's `columns` list, and not one byte of
+row, because every row's slot is null and the trailing trim takes it away — and
+**189 ms to the first mark against 187** (medians of twenty loads each, spreads
+165–234 and 167–243), the same within the noise. No record, no historical
+claim, no new hex value, token or type size. 1,820 tests, 0 skipped.
+Deviations 921 to 931.
+
 2026-09-21, after **M69** (`docs/m69-brief.md`, on the branch `m69`, lane B):
 **four things the backlog had carried for weeks, measured before they were
 touched.** (1) The **973 records with no standing** — every one written by the
@@ -13649,6 +13709,2533 @@ dissent it found.
      The run added citations, locators and confidence values, and the only
      prose it wrote is a `review.note` about a record's own staleness and the
      two documents under `docs/`.
+## M70 — dead code out, standing in
+
+Lane A's second milestone, on its own branch `m70`. Two things the owner
+decided on 21 September, neither of them large and both of them about telling
+the truth: one piece of behaviour that had stopped happening and still had
+code, and one fact about the whole corpus that the interface had never said
+out loud.
+
+### 1. The fold is gone, and the ring is what is left
+
+M30b-2 gave the graph a **semantic level of detail** beside M25's geometric
+one: below a zoom, an event's parts were drawn *inside* it, with a `+N` badge
+beside a filled mark and the links between the folded parts dropped. M30c then
+gave a parent a **look** as well — the ring outside its mark, on all three
+views, at every zoom — precisely because the fold was a behaviour that stopped
+above its threshold and said nothing when it did.
+
+M65 took the behaviour away without taking the code away. At rest no view
+draws an event that is part of another, so there is nothing in the picture to
+fold; inside a lens — which a selection now is — M25's never-hide rule holds
+everything the reader is working with out of any fold. `collapseLayout`
+returned its argument unchanged on every path a reader could reach, and
+deviation 883 said so at the time. **The owner: "Remove it."**
+
+Removed: `src/graph-view/collapse.js` (128 lines), `tests/collapse.test.mjs`
+(nine tests that held a live rule to a dead behaviour), `COLLAPSE_ZOOM` in
+`layout.js`, the call in `graph-view.js`, the `collapsed` class it wrote, the
+`+N` badge and `data-collapsed` attribute it drew, and the stylesheet rule
+that dressed the mark. `stackLayout` now runs on the layout itself.
+
+**What the graph does where it used to fold.** It draws the parent alone,
+ringed. The sentence the fold was making — *there is more inside this one* —
+is made twice over by what M65 and M30c already built: the resting rule says
+it by keeping the parts out of the picture until the reader opens the parent,
+and the ring says it on the mark, at every zoom and on the map and the
+timeline too. Opening the parent puts its parts beside it as their own nodes,
+which is where they were going anyway.
+
+Two tests in `tests/graph-browser.test.mjs` were about the fold and are now
+about what is there: `foldedTwice` — the helper that counted the events a
+parent swallowed inside a stack that then swallowed the parent, eight of 250
+on this corpus and a defect the arithmetic had to name — is gone with it, and
+the promise is the plain one again: **every event the picture is of is a mark
+on the page or a unit in a badge, and there is no third place for one to be.**
+
+`subtreeWeight` is the one thing the fold used that survives it. It is still
+derived by the validator and still a core column, and nothing draws with it
+now. It costs nothing where it is absent, which is every leaf; taking it out
+is a change to `data/index/` and belongs to whichever milestone next wants the
+column for something (deviation 928).
+
+### 2. What has been read, said on the card and in the masthead
+
+**10,311 of 10,638 records are `draft` and 11,061 of 11,061 citations have
+never been opened against the source.** The atlas draws all of it, by the
+owner's decision of 2 September, and that decision is right: a draft is a
+record nobody has read, not a record that is wrong. What was missing is that a
+**reader** could not tell. The validator has counted it down from the command
+line since H9; a card said what a record claims and nothing about who, if
+anyone, had checked the claim. **The owner: "Add a standing marker, that's a
+good idea."**
+
+**One predicate.** `src/standing.js` is a leaf module beside `origin.js`, and
+`hasBeenRead` is the whole of the answer: a record's `review.status` where the
+record's own file is in hand, and the `reviewed` column where it is a row of
+`data/index/`. The column is written by calling that same function at build
+time, so the two readings are one function twice and cannot drift; the
+agreement is asserted record by record over the repository and the fixtures,
+and the positive case — a signature travelling from a record through the
+topology, the core row, the count and the sentence — is asserted in memory,
+because nothing on disk is signed.
+
+**On the card**, one line under the head of the event, actor, place, office,
+narrative and source cards: *Unread: no person has checked this record*, or
+*Read by Ana Sousa (2026-09-03).* It is written into an empty slot when the
+record's own file lands, and the slot says nothing until then — a card that
+said "unread" while it was still loading would be making a claim it had not
+checked, which is the one thing this marker exists not to do. The source card
+is the exception and says it at once: a source's whole record is in the
+sources index, `review` block and all.
+
+**In the masthead**, `N of N read`, beside the "N of N events in view" count,
+and over the very same array that count is taken from. It is said whether or
+not the map is looking at part of the world, where the count beside it is not:
+"12 of 40 in view" is about a gesture the reader made and is nothing until
+they make it; "0 of 242 read" is about the corpus and is true from the first
+frame.
+
+**A citation that has not been checked already said so** — `panel.js` has
+drawn `unchecked` beside every unverified citation since the review
+dashboard — so that half of the brief was already built and nothing was added
+for it.
+
+**It is honesty and not a filter, and that is asserted rather than promised.**
+A draft is drawn exactly as a signed record is, no colour is spent on the
+difference, and a test reads `emphasis.js`, `lens.js`, `lanes.js`,
+`cluster.js`, `large.js` and `parts.js` and fails if any of them imports
+`standing.js` or names `hasBeenRead`. The three files the brief forbids
+touching were not touched.
+
+### What first paint costs
+
+**The same 94 files and eleven more bytes.** The `reviewed` column is last in
+the event's core row and absent on every record nobody has signed, which today
+is all of them, so the trailing trim takes it away and no row grows: the core
+is **169,817 bytes against 169,806**, and the eleven are `,"reviewed"` in the
+file's own `columns` list. The masthead's count is one pass over the array the
+count beside it already builds.
+
+Measured at 1440×900 against `origin/m0`, twenty loads each, time from
+navigation to the first mark recorded inside the page on the frame it appears:
+**189 ms against 187**, spreads 165–234 and 167–243. That is the same within
+the noise of the measurement, which is what "not slower" honestly means here.
+
+### The pictures
+
+`docs/screens/m70-card-standing.png` is the card the atlas has been
+photographed with since M19, with the line under the head and `0 of 17 read`
+in the masthead; `docs/screens/m70-graph-parent.png` is the Estado Novo — 25
+parts, the most of any event in the corpus — open on the graph, its parts
+beside it as their own nodes, every parent ringed and nothing folded into
+anything.
+
+### Deviations
+
+921. **`src/panel/event.js` and `src/panel/panel.js` had no branch reaching
+     `collapse.js`.** The brief names them among the files the fold reached
+     into. `panel.js`'s only occurrences of the word are about a pane
+     collapsing and a card's collapsible sections, and `event.js`'s are about
+     a parent's parts as a list and as a lens — neither is the fold. The live
+     reach was `graph-view.js` (the import, the call and the badge) and
+     `layout.js` (`COLLAPSE_ZOOM`); `parts.js` carried a sentence about it and
+     now carries the sentence that is true. Nothing was removed from the two
+     panel files, because there was nothing in them to remove.
+
+922. **The stylesheet rule and the `.node.collapsed` class went too**, which
+     the brief does not name. A CSS rule for a class no drawing can produce is
+     the next reader's false lead, and "dead code out" is the milestone.
+
+923. **The structural test arrived one commit after the removal**, not with
+     it. Deviation 717's rule is that the commit teaching the tests belongs
+     with the change or before it; `tests/graph-browser.test.mjs` did go with
+     it, and `tests/m70.test.mjs` — which holds both halves of this milestone
+     in one file — went with the second commit. A test asserting that a file
+     is deleted cannot be written before it is.
+
+924. **A fixture was signed and then unsigned.** `fixture-event-a` was given a
+     `review.status: reviewed` and a signature so that a browser test could
+     photograph a card naming its reviewer. It was taken back out: a signature
+     on a synthetic record is a claim four tools then rightly refuse to touch
+     — `migrate.js`'s migration 4 will not take a signature back, and the
+     roles and categories migrations stand off a reviewed record — and five
+     suites would have had to be taught about a signature that existed only to
+     be looked at. The positive case is asserted in memory instead, over the
+     fixtures' own records, with nothing on disk changed. The two commits are
+     left in the branch's history rather than rewritten, and the fixture
+     index's history shard for the 1200s carries a new hash because of them.
+
+925. **A `reviewed` column was added to the core and to the spine**, which is
+     a change to `data/index/` in a display-lane milestone. There is no other
+     way for the masthead to count 573 events without fetching 573 files, and
+     an attribute shard arrives with its century — the count would be wrong
+     for a moment and then right, which is a count saying something it has not
+     checked. It is the argument the glyph run made for `category` and
+     deviation 581 recorded. It costs eleven bytes today (see above).
+
+926. **The topology carries the bit, and the rest of `review` stays out.**
+     `buildTopology` is a projection and copied no `review` block at all, so
+     the first version of this wrote `false` into the index for every record
+     however it was signed — and the agreement test could not catch it,
+     because nought of the repository is signed and false agreed with false.
+     `standingOf` now puts `reviewed: true` on an event whose record is
+     signed, and nothing else: the flags, the note, the claim and the
+     per-citation ticks are the reviewer's and are read from the record's own
+     file by the page that wants them.
+
+927. **A record with no `review` block at all says the same words a draft
+     says.** 285 records claim no standing — `isDraft` says no and
+     `isReviewed` says no — and to a reader that is not a third kind of thing:
+     nobody has signed it, so nobody has read it. The distinction is the
+     validator's (`unread`, H9 item 7) and the review queue's, and it stays
+     there.
+
+928. **`subtreeWeight` is now derived, carried and drawn by nothing.** The
+     fold was its only reader. It is left in place with the comment saying so,
+     because removing a core column is a change to every `data/index/` file
+     and this milestone had one of those already.
+
+929. **The standing line is on the cards and not on the entry pages.** The
+     brief says "every record's card". `entry/<id>.html` is prerendered and
+     the same line there would rebuild every entry page; it is a small,
+     obvious follow-up and not this run's.
+
+930. **Only the two `m70-*` pictures were taken.** `tools/screens.mjs --only`
+     was used for each, so no other screenshot was rewritten, as the brief
+     asks. The consequence is that **every picture taken before today shows a
+     masthead without the read count**, which is now one line out of date in
+     all of them; whichever milestone next re-takes the set will bring them
+     up.
+
+931. **`tests/rules.test.mjs`, `tests/spine.test.mjs` and `CLAUDE.md` were
+     changed.** The first counted the `unread` warning against every active
+     fixture record and now counts it against the ones with no standing and
+     names them by id, which is what it meant to ask; the second's oracle and
+     its trim test learned the new column; `CLAUDE.md`'s layout tree lost
+     `collapse.js` and gained `standing.js`, because `tests/site.test.mjs`
+     fails on a module under `src/` the tree does not name.
+
+
+## M71 — a reader writes a narrative in the atlas
+
+Lane A's third milestone, on its own branch `m71`.
+
+The owner, on the suggestion that readers should be able to write narratives
+inside the atlas and submit them: **"Yes that is a feature I want."** And the
+thesis the whole project rests on, 18 September: *"if everything is connected
+people can then easily write narratives."*
+
+Everything a narrative needs was already here. The record kind has existed
+since M30a; M48 made reading one a mode of the atlas, with `narratives.html`
+prerendered beside it; the validator has had rule 20 for as long; and the
+contribution pipeline — issue, `accepted` label, `contribution.yml`, pull
+request — has been able to write a narrative to `data/narratives/` since H6a.
+**What did not exist was the front end.** A reader who had just walked from
+Luanda in 1961 to the 25th of November 1975 had no way to say so except by
+writing JSON by hand.
+
+### 1. The composer
+
+**A fourth column of the layout, opened by `write` in the masthead.** A column
+and not an overlay, and that is the one design decision this milestone had to
+make for itself: while the composer is open the reader goes on clicking events
+on the picture, so a panel that covered the picture would be asking them to
+click what it was hiding. The view gives up the width, the card keeps its own,
+closing gives it all back — and on a phone, where there is no second column to
+be a fourth of, it comes down from under the masthead and takes the top half,
+leaving the map below it for exactly the same reason.
+
+**The steps are picked, not typed.** A click on an event — the click M65 made
+a lens — appends it to the walk, in the order clicked. There is no field to
+type a reference into at all: `pickStep` takes the atlas's own `has(ref)` and
+refuses everything that is not an event this atlas holds, so *the composer
+offers nothing it cannot cite*. The same event twice running is refused where
+the reader makes it rather than reported later by rule 20; the same event
+further on is allowed, because a walk that comes back to where it started is
+an argument and not a mistake.
+
+Because picking is the selection, **the walk follows the lens**: after the
+first step the three pictures narrow to that event and what it reaches, and
+the second step is picked out of the first's consequences. That is not a side
+effect to be worked around — it is the atlas's thesis happening in one
+gesture, and the browser test is written along it.
+
+**The window is the span of the steps.** `windowOf` is `extent()` over the
+events picked, in historians' years, shown beside the heading of the walk and
+never typed. A reader who has picked 1961 and 1974 has already said which
+years the narrative is about, and a third field to disagree with them would
+only be a way of getting it wrong. The composer has no year input of any kind,
+and a test asserts that.
+
+Steps carry the reader's own paragraph, move with Alt+↑/↓ or the arrows on
+their row, and come out again. The title, the summary, the reader's name and
+at least one source are asked once.
+
+### 2. Checked here by the rules that will check it there
+
+The verdict under the form is **`validate()` from `src/validate/core.js`** —
+the function `node tools/validate.mjs` runs — reached through
+`validateBundle`, which is what `contribute.html` has run on every keystroke
+since M4. Imported, never copied: two answers to *is this a valid narrative*
+would be one answer too many. A failing walk is reported in the sentence the
+command line would use, rule number and JSON path and all, and the submit
+control is disabled until there is nothing left.
+
+There is **no new record builder**, either. `buildRecord('narrative', …)` in
+`src/contribute/bundle.js` already turns plain field values into the record
+the Action writes to disk, and `src/compose/narrative.js` hands it the draft
+and adds exactly one key: `review: { status: 'draft' }`, because nobody has
+read this. `tools/bundle-to-files.mjs` writes that standing again on the way
+in, with `contributed` and the issue number beside it, so the record in the
+issue and the record on the branch say the same thing about how far it has
+been read — and a contributed narrative lands in `review.html`'s queue like
+every other unread record.
+
+Unlike the two writer pages, the composer **does not wait for the attribute
+shards**. `contribute.html` and `review.html` hold the whole corpus because
+their rules read every title and every alias; what the rules ask of the
+topology on behalf of a narrative is whether the id is taken (rule 2), whether
+each step names a record (rule 3), whether it is still active (rule 11),
+whether it cites (rule 6) and the shape of the walk (rule 20) — all of which
+the core answers. So the verdict is available the moment the sixteen schema
+files land.
+
+### 3. What the page sends, which is nothing
+
+**Submitting opens a prefilled GitHub new-issue URL**, in the reader's own
+browser and under their own account: `template=contribution.yml`, the title as
+the title, the record as the body inside the bundle envelope the pipeline
+already reads. Above the prefill cap the template opens empty and the record
+is on the clipboard instead, which is `submit.js`'s existing rule and not a
+second one.
+
+**No token, no secret, no API call and no request of any kind.** The browser
+test counts every `fetch`, every `XMLHttpRequest.open` and every
+`navigator.sendBeacon` from before the page's first script runs, and asserts
+that the number is the same after the submit as before it. The page says so
+too, under the button, along with the fact that a GitHub account is needed and
+what the maintainer does next.
+
+**The draft is kept between visits** in `localStorage`, on its own key beside
+`atlas-causal.panes` and `atlas-causal.band`, read and written inside
+try/catch the way `panes.js` does it — a browser with storage off still
+composes, it just forgets. It is plain data with no atlas in it, it is in no
+link, and **submitting ends it**: the argument has left the browser and is an
+issue with a number, and a composer that opened tomorrow on the narrative
+already sent would invite the reader to send it twice.
+
+### What first paint costs, and what the composer costs when opened
+
+**At first paint: no new request, and 6,291 more bytes of source.**
+`index.html` gains the `write` button (+924 B), `src/main.js` the listener that
+imports the composer when it is pressed (+1,367 B), `src/style.css` the
+column's own block and its phone rule (+4,000 B). Nothing of
+`src/compose/` is fetched before the button is pressed, and a test asserts
+that by reading the page's own resource timings.
+
+Measured at 1440 × 900 against `origin/m0`, twenty loads each, the time from
+navigation to the first mark recorded **inside the page on the frame it
+appears**: **235 ms against 253**, means 246 and 258, spreads 220–301 and
+226–305. The same within the noise of the measurement, which is what "not
+slower" honestly means here; the difference is the wrong way round from what
+the extra bytes would predict, which is how much noise there is.
+
+**When it is opened: 23 files and 206,789 bytes, and 72 ms from the press to
+the first verdict.** Seven modules, 149,291 B — `compose/composer.js` and
+`compose/narrative.js`, then `contribute/bundle.js` and `contribute/reorder.js`
+and `validate/core.js`, `validate/schema.js` and `validate/schemas.js` — and
+the sixteen schema files, 57,498 B. `validate/rules.js` is not among them: the
+atlas already carries it. That is the price of the validator in the browser,
+and it is paid by the reader who asked for it and by nobody else.
+
+### The pictures
+
+Two, and the line between them is this project's own rule about what may be
+written here.
+
+`docs/screens/m71-composer.png` is the composer beside the **real** map, with
+three events of the colonial war picked by clicking them and the window 1961
+to 1974 computed from them — and **the paragraphs deliberately unwritten**,
+because a paragraph in this repository arguing that one thing led to another
+would be a historical claim nobody made. What it shows is the walk, the
+computed window and the form waiting, which is the composer as a reader meets
+it.
+
+`docs/screens/m71-composer-valid.png` is the same composer over the
+**fixtures**, where every word is synthetic and the masthead says so: the
+prose written, a source cited, and the validator's own verdict under it —
+*This is a record the validator accepts* — with the submit control live. The
+whole of it working, with nothing asserted about the world.
+
+`compose=` in `docs/screens/frame.html` is the frame asking for a control that
+is not in the URL, exactly as `band=`, `zoom=` and `open=` already do.
+
+### Tests
+
+`tests/compose.test.mjs` (15) and `tests/compose-browser.test.mjs` (6), both
+written before the behaviour they judge (deviations 711 and 717), and **no
+test pins a count**. The first asserts that a composed record passes the
+**rules themselves**, run — not a golden file — and that a thin one fails them
+by rule 20 and rule 6; that the steps are the events picked in order and that
+nothing else can become one; that the window is the span of the steps and
+follows them as steps come and go; that the link is a GitHub new-issue URL
+carrying the record and that building it asks nothing of the network; and that
+a draft survives being put away, does not survive being submitted, and
+survives storage that refuses to work at all.
+
+The second is the same claims through a real browser and the ones only a
+browser can make: that `src/compose/` is absent from the page's resource
+timings until the button is pressed; that three clicks on three marks are
+three steps; that the last event clicked is still the chosen one, so picking a
+step does not take the reader's way of reading the atlas away from them; that
+a draft naming a record this atlas has not got is reported by rule 3 rather
+than quietly dropped or quietly kept; and that the submit sends nothing.
+
+**1,646 pure and 205 browser, 1,851 in all, 0 failed and 0 skipped**, run the
+way the check runs them since M63 — the browser set four times over, three of
+them green and one with a single failure whose name the pipe did not keep
+(deviation 945).
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**, clean over the repository and over the fixtures. **10,326 records
+nobody has read yet; 11,077 of 11,077 citations not yet checked.** **No
+narrative was written and nothing under `data/` changed at all** — the walk in
+the tests is assembled in memory out of `tests/fixtures/data/`, and the walk in
+the pictures is a draft in a browser's storage. **No new record type,
+confidence value, hex value, token or type size**: the stylesheet's new block
+is built from `--ink-soft`, `--ink`, `--line`, `--paper`, `--cobalt`,
+`--font`, `--font-ui`, `--text-sm`, `--text-xs`, `--text-md`, `--text-lg` and
+the space scale, and no value. No new runtime dependency. Two screenshots
+under `docs/screens/m71-*.png`, each taken with `--only`, so **every other
+picture is untouched**. Nothing pushed to `m0` or `main`; `docs/drafts/`
+ignored. Deviations **932 to 945**.
+
+### What the owner still has to do
+
+**Set the `CONTRIBUTION_PAT` secret.** A fine-grained personal access token
+with *Contents: read and write* and *Pull requests: read and write* on this
+repository, stored as the repository secret `CONTRIBUTION_PAT`, its expiry
+noted in `CONTRIBUTING.md`. This run cannot create it and did not try. **The
+composer works without it**: a reader can pick, write, be told the record is
+valid and open the issue today. Only the last step of the pipeline — the
+`accepted` label opening a pull request — waits on it, and
+`contribution.yml`'s first step already fails with the instructions when it is
+missing.
+
+### Deviations
+
+932. **The composer is a fourth column and not an overlay, and the brief does
+     not say which.** It says the reader picks events by clicking them, which
+     decides it: a panel over the picture would hide what it is asking to be
+     clicked. `.layout.composing` is two lines of `grid-template`, and the
+     phone rule is three more; the column collapses with the panel's own
+     `panel-empty` rule rather than fighting it.
+
+933. **The composer asks for a source, which the brief's "asked once" list
+     does not name.** Rule 6 — `every narrative cites at least one source` —
+     is not optional, so a composer that did not ask could not produce the one
+     thing the brief does require: a record the validator accepts. It is a
+     `<select>` over `atlas.sources`, which the page already holds, so there
+     is nothing to fetch and nothing to type.
+
+934. **And for the reader's name**, for the same kind of reason: `authors[]`
+     is required and `name` is `minLength: 1`. It is attribution and not
+     identity — the Action takes the GitHub handle from the issue opener and
+     the field says so.
+
+935. **There is no new record builder.** The brief's step 3 asks for "the
+     record builder (pure), then the composer"; `buildRecord('narrative', …)`
+     in `src/contribute/bundle.js` already is that builder, byte for byte the
+     one the Action's own round trip is asserted against in
+     `tests/bundle.test.mjs`. A second would be a second answer to what a
+     valid narrative looks like and the two would drift. What
+     `src/compose/narrative.js` adds is the **draft** — what has been picked
+     and written so far — and the three translations out of it.
+
+936. **Picking is the selection, so the walk follows the lens.** M65 made
+     choosing an event narrow all three pictures to it and its one hop; the
+     composer reads that same `selected` rather than asking for a second
+     click. The consequence is that after the first step the reader is picking
+     out of the first step's consequences, which is the atlas's own thesis
+     happening in one gesture — and it is why the browser test walks
+     `fixture-event-b → d → t` and not three marks chosen at random.
+
+937. **The verdict runs on the core alone and waits for no attribute shard.**
+     The two writer pages hold the whole corpus, and `attributes.js` says in
+     as many words that they must; a narrative's rules read ids, kinds,
+     statuses and intervals and no titles, so this page does not. Stated here
+     because the next milestone to put the validator on a third page will want
+     to know which of the two it is.
+
+938. **`review: { status: 'draft' }` is the only standing the composer
+     writes.** Not `flags`, not `note`, not `signedBy` — those are the
+     Action's and the reviewer's. It is written because it is true and because
+     M70 made a reader able to see it.
+
+939. **`m0` was red when this branch was cut, and the fix is in this branch.**
+     `tests/fixtures/data/index/` carried a stale history shard for the 1200s:
+     M70's two commits on `fixture-event-a` (deviation 924) landed after the
+     fixture index was last built, and `build-index` and `validate-cli` have
+     failed on `origin/m0` ever since — run 994 on `f24fa476`. One command,
+     `node tools/build-index.mjs --data tests/fixtures/data`, and it is
+     deviation 711's rule again: commit the records, rebuild, commit the
+     index. Nothing else on the branch depends on it.
+
+940. **A second press while the module is still on the wire builds nothing.**
+     `main.js` holds the in-flight `import()` rather than only the composer it
+     produces; without it, two quick presses made two composers over one
+     element, both subscribed to the state and only one of them on the page.
+     Found while driving the screenshots, which press the button until the
+     column appears.
+
+941. **Neither picture carries a sentence about the world.** The brief asks
+     for the composer with three steps; the shot on the real corpus therefore
+     shows three real events picked with their paragraphs **not written**, and
+     the shot with the prose in it is over the fixtures, whose every word is
+     synthetic and whose masthead says so. `fill=1` in
+     `docs/screens/frame.html` writes that synthetic prose and belongs with
+     `fixtures=1` and nowhere else; the file says so beside it.
+
+942. **`docs/screens/frame.html` gained `compose=` and `fill=`**, the fourth
+     and fifth things the frame asks for that the URL does not carry (M68's
+     `open=`, deviation 913, was the third). Whether the composer is open is a
+     preference and the draft inside it is in localStorage, so a picture of it
+     cannot be asked for by link alone.
+
+943. **`CONTRIBUTING.md` gained a section and `CLAUDE.md` two lines.** The
+     first because a contributor reading the flow would otherwise not know the
+     composer exists; the second because `tests/site.test.mjs` fails on a
+     module under `src/` the layout tree does not name.
+
+944. **One stylesheet rule needed `.composer.contrib` rather than
+     `.composer`.** The composer wears the contribution form's class so that
+     the fields, the step rows, the move arrows and the verdict are dressed by
+     the block that already exists rather than by a second copy of it — and
+     `.contrib .citation-row select { flex: 1 }` is later in the file and of
+     equal specificity, so the citation `<select>` came out a third of the
+     column wide with the author's name truncated. Noticed in the picture,
+     which is what the pictures are for.
+
+945. **A browser suite failed once here and once on the check, and its name
+     was not captured either time.** Locally, one of four full serial passes
+     read `pass 204, fail 1` through a pipe that kept only the summary; the
+     three passes either side, one of them grepping for `not ok` and finding
+     none, were green, as was every run of `tests/compose-browser.test.mjs`
+     alone. On the check, run 1005 on `94def83c` reported the same
+     `205 tests, 204 pass, 1 fail` in the browser pass, and run 1009 on
+     `ba7607f9` — a superset of the same tree — was green. The log the name is
+     in could not be read from this sandbox: the job-logs endpoint refuses
+     (deviation 729) and the blob URL the MCP server hands back is refused by
+     the egress proxy. Deviation 920 records the same signature on M68.
+     Written down rather than explained, because "flake" is not a root cause:
+     roughly one browser test in a thousand is failing somewhere in the serial
+     pass, and the next run that catches it with its output kept has a name to
+     give whoever reads it.
+
+
+## M73 — a reader can see how sure the atlas is
+
+The owner, 21 September: *"First I think each link should have sources
+associated with it, then I think the confidence visibility thing makes
+sense."* M72 was the first half. This is the second, lane A's fourth
+milestone, on the branch `m73` (`docs/run-protocol.md`, amendment of 21
+September).
+
+Every edge has carried `confidence` since the first slice and the card has
+always said it in words. **Nothing drawn said it.** On the graph a line's
+dash and its weight say what *type* of claim it is — `caused` unbroken,
+`enabled` long-dashed, and three more — so a contested link and an
+established one were the same line. The walk the map draws said less still.
+
+### The dimension confidence took: how solidly the line is inked
+
+Type owns the dash pattern and the weight. That left one thing in the palette
+that exists, and it is the one the brief names: opacity. It is spent as
+**`stroke-opacity` and `fill-opacity`**, and not as the `opacity` the dimmed
+state uses, because `opacity` is already the emphasis states' — `faded` is
+0.16, `lens-near` 0.22, the horizon's two bands 0.72 and 0.45 — and two rules
+writing one property would have the reader's own picture erase the atlas's
+confidence in it, or the other way about. A different property multiplies
+with that one instead, which is the reading wanted: **a disputed link outside
+the window is outside the window *and* doubtful.**
+
+**Three levels, not two**, which is the brief's own first preference:
+
+| | inked at | of the 362 active edges |
+| --- | --- | --- |
+| `consensus` | **1** | 68 |
+| `probable` | **0.7** | 275 |
+| `disputed` | **0.34** | 19 |
+
+A third of the ink against a full line is not a subtlety; the nineteen are
+the ghost lines in the picture, which is what the brief asks of `disputed`
+before anything else. The 0.3 between the other two is the same step again
+and is what tells the 68 the atlas is sure of from the 275 it is not. No new
+hex value, token or type size: the three rules declare nothing, name no
+colour, and the numbers are bare opacities of the kind `.faded`, `.node.faded`
+and the horizon's bands already are.
+
+### Where it comes from, and why the two pictures cannot disagree
+
+`src/confidence.js` is the one module. It hands back a **class and never a
+number** — the stylesheet keeps deciding how a line is inked, as it already
+does for the five types and for the weight of a merged line — and both
+drawings read it: `src/graph-view/graph-view.js` for the graph's edges and
+their arrowheads, `src/map/layers/events.js` for the walk and the
+consequence lines. `CONFIDENCE_ORDER` moved there out of `src/graph.js` and
+`src/validate/rules.js`, which now re-export it, so the vocabulary and what
+it looks like are one file.
+
+The stylesheet's three rules are written **without a view in front of them** —
+`.edge.confidence-disputed`, not `.graph .edge.confidence-disputed` — which
+no other edge rule in `src/style.css` is. That is the milestone stated as
+CSS: one rule, both pictures, nothing for them to differ about.
+
+A line carrying several links is inked as the **least sure of them**, which
+is the rule `cluster.js` already states for `disputed` — a bundle one of
+whose links historians argue about is a bundle the reader must not read as
+settled — asked of all three levels instead of one. `cluster.js` was not
+touched; the fold is `leastSure()` over the members it already returns.
+
+### What was there before was taking the type's dimension
+
+The gap was half-filled, and the half that was there was in the wrong place.
+`.graph .edge.disputed` set `stroke-dasharray: 5 4` and `.map .edge.disputed`
+the same, so a disputed edge was dashed **whatever its type** — and the
+corpus's disputed `caused` edges, which is most of them, were drawn as the
+key's `enabled`. The dash is the type's again. Nothing drawn had ever said
+anything at all about `probable`, which is 275 of the 362.
+
+### The legend
+
+One row, in the graph's own key and in `about.html`'s copy of it: three
+segments of one type, surest first, under the words **how sure: consensus,
+probable, disputed**. Drawn with the very classes the edges are drawn with,
+which is the rule the type key already keeps — a key built out of a second
+copy of the styling is a key that can come to be wrong.
+
+### What first paint costs
+
+**One more module on the wire and 5,101 bytes of JavaScript**, measured
+through the browser's own `performance.getEntriesByType('resource')` on
+`?from=1400&to=1600`, before and after:
+
+| | before | after |
+| --- | --- | --- |
+| JavaScript files | 83 | **84** |
+| JavaScript bytes | 1,110,709 | **1,115,810** (+0.46%) |
+| stylesheet bytes | 132,941 | **134,465** |
+| first contentful paint | 68 ms | **68 ms** |
+
+`src/confidence.js` is 3,696 bytes of which most is its comment. The request
+count and the total transferred vary by a handful between runs — which
+geometry shards have landed when the measurement is taken — so the number
+worth writing down is the deterministic one, and it is the JavaScript. **No
+new fetch of data, and no new work per line drawn**: `confidenceClass(edge)`
+is a lookup in a frozen three-element list where `edge.confidence ===
+'disputed'` used to be, and the merged line's fold is the `some()` it
+replaced.
+
+### Checks
+
+`node tools/validate.mjs --index`: **10,653 records, 5 regions, 0 errors, 238
+warnings**, clean over the repository and over the fixtures, and byte-identical
+to a fresh build. **Nothing under `data/` changed at all** — no record, no
+historical claim, and no new confidence value; the fixtures already held one
+edge of each of the three, which is why the tests needed nothing written for
+them. `node --test`: **1,652 pure and 210 browser, 1,862 in all, 0 failed and
+0 skipped**, the browser suites one at a time as the check runs them (M63).
+`lanes.js`, `cluster.js` and `emphasis.js` are untouched. **No new hex value,
+token or type size, and no new runtime dependency.** Two screenshots under
+`docs/screens/m73-*.png`, both taken with `--only`, so **every other picture
+is untouched**. Nothing pushed to `m0` or `main`; `docs/drafts/` ignored.
+Deviations **946 to 949** and **973 to 975**.
+
+### Deviations
+
+946. **The gap the brief describes was half-filled, and the half that was
+     there was spending the type's own dimension.** A disputed edge already
+     carried a class on both views and the stylesheet already dashed it —
+     `stroke-dasharray: 5 4`, over whatever the type had asked for. So this
+     milestone is not only "say it": it is **move it off the dash**, where it
+     was quietly making a `caused` link read as an `enabled` one, and add the
+     level nothing drawn had ever said anything about. The old rules are gone
+     rather than kept beside the new ones.
+
+947. **`stroke-opacity`, and not the `opacity` the brief names.** "The opacity
+     the dimmed state already uses" is `opacity`, and writing confidence into
+     the same property would have made the two fight: with `.faded` at 0.16
+     after it in the file, a confidence rule either loses the reader's window
+     or takes it. `stroke-opacity` and `fill-opacity` are the same dimension
+     said in a property that **multiplies** with `opacity` rather than
+     replacing it, so a faded disputed line is both at once. It is still the
+     opacity the brief offered; it is not the same declaration.
+
+948. **Three levels, and the brief's escape hatch was not used.** The brief
+     allows two — `disputed` against the rest — if three cannot be told apart
+     with what exists. They can: 1, 0.7 and 0.34 are three steps of about 0.3
+     on one line colour, which both the pure test and the browser test hold
+     to a floor of 0.2, and `probable` is 275 of the 362 active edges, so
+     folding it into `consensus` would have drawn three quarters of the atlas
+     as settled.
+
+949. **The three rules are written with no view in front of them**, which no
+     other rule in `src/style.css` that touches an edge is. Every neighbour is
+     `.graph .edge…` or `.map .edge…`. This is deliberate and is the
+     milestone's own sentence in CSS — one rule, both pictures — but it is a
+     break with how the file is otherwise written and is written down as one.
+
+973. **Lane A's deviation numbers ran into lane B's block at 950.** The
+     protocol has lane A numbering on from the last in `STATUS.md` and lane B
+     from 950 upward; lane A stood at 945 and lane B has reached 972, so four
+     numbers were left. The four above are 946 to 949 and the rest continue
+     **on from the largest in the file**, which is what the protocol says to
+     do when the lanes rejoin and is the only reading that cannot collide.
+
+974. **`about.html` and `CLAUDE.md` were edited, and the brief names neither.**
+     The brief asks for one line in the graph's legend. `about.html` carries
+     that key a second time, for the reason the key is built from the drawing
+     classes at all, and it said in two places that a disputed link is dashed;
+     leaving it would have been a page explaining a rule the atlas no longer
+     follows. `CLAUDE.md`'s layout tree gained the module's line, which
+     `tests/site.test.mjs` requires of every file under `src/`.
+
+975. **The graph screenshot is 1,400 px tall and the map one is boxed.** Both
+     are the same state — the war in Angola open, its five consequences drawn
+     — and at 1440 x 900 with the territories on, neither showed what it is
+     of: the fan of lines ran off the bottom of the graph pane, and on the map
+     five thin lines sat under eight hues of wash. The graph is given the
+     height the fan needs and the map is boxed to Africa and the Indian Ocean
+     with `layers=land,events`, through the very link the control writes.
+
+
+## M45b — the elevation bands
+
+The owner, 16 September: *"relief would help you understand how borders and
+territories move around geographical features."* M45a made the ground the base
+map already had legible — seventeen `FEATURECLA` classes into four families, a
+peak drawn at its height — and said what it could not do: there is no
+elevation model in Natural Earth's vectors, so nothing on the map said how
+high anything was. **This is the half that costs bytes.** Lane A's fifth
+milestone, on the branch `m45b`.
+
+The owner authorised the backlog on 20 September, which is the gate §2 put on
+this run (brief, amendment A2): M45b was to wait for the owner to have looked
+at M45a's two screenshots, and the word stands in for the look.
+
+### The source, and the one thing it does not say
+
+`vendor/elevation/etopo5-10min.i2`, committed by the owner's assistant on
+20 September: ETOPO5 averaged 2 × 2 to 10 arc-minutes, 2160 columns × 1080
+rows of int16 little-endian metres, no header, 4,665,600 bytes raw and 3.3 MB
+gzipped, well inside the 8 MB §2.1 allows a vendored grid. **The run does not
+download it and cannot**: it is read through `tools/import/source.mjs`, the
+sha256 of the decompressed bytes is checked against `vendor/SHA256SUMS`, and a
+test asserts that neither `tools/import/elevation.mjs` nor
+`tools/import/naturalearth.mjs` contains a `fetch` at all.
+
+What the file does not say in so many words is **which point a value is at**,
+and it is a half cell — 1/24°, about 4.6 km — either way: the centre of the
+2 × 2 block that was averaged, or the node the block starts at.
+`vendor/README.md` settles it without meaning to. It records the ground the
+grid was checked against before it was committed, and **node registration
+reproduces four of those spot checks exactly** — the Everest region 5,276 m,
+the Tibetan plateau 5,143 m, the Mariana Trench at 11° N 142° E −6,792 m, the
+mid-Pacific at 0°, 180° −5,228 m — where the half-cell reading gives 5,982 m
+for the first of them. So the value at (row, column) is the height at latitude
+90 − row/6 and longitude column/6, and `tests/m45b.test.mjs` holds it there
+against those very numbers.
+
+### Five bands, frozen before a tint was chosen
+
+**0–200 m, 200–500, 500–1000, 1000–2000, above 2000**, and below sea level is
+not a band — the Dead Sea and the Qattara depression are `physical` features
+and M45a draws them as hollows. They are `BAND_EDGES` in
+`tools/import/elevation.mjs`, they are carried into
+`manifest.base.layers[relief].bands` so that what the tints mean is readable
+off the manifest, and a test asserts all five from there.
+
+They are cut by **marching squares** over the grid, linearly interpolated at
+each crossing — which is what keeps a 10-arc-minute shore from being a
+staircase — with the field padded on four sides so that every contour closes
+into a ring rather than an open line somebody has to walk a boundary to shut.
+Two of those paddings are not decoration: a column at **exactly ±180°**, which
+is the same meridian carrying the same values, because the map's seam is 30° W
+and the antimeridian is in the middle of the picture, where a sixth of a degree
+of nothing would be a gap through the Bering Strait; and a row at **−90°**
+carrying the southernmost row down to the pole, because the grid stops at
+89.833° S and Antarctica does not.
+
+A crossing is named by the edge it lies on and not by its coordinates, so the
+two squares that share an edge agree about it to the bit and a ring closes
+without a tolerance.
+
+**A band is its own edge's rings plus the next edge's, drawn even-odd.** The
+ground above the next edge is inside both sets, so a renderer counting
+crossings leaves it unfilled — which is a hole, and a band with a hole in it
+is exactly the ground between two heights. The map already draws every
+base-map polygon with `fill-rule: evenodd`, for the island inside a lake, so
+nothing had to be added for it.
+
+### The layer
+
+`relief` is a base layer like the other six and almost nothing about it is
+special-cased: a row in `LAYERS` and a property table in
+`tools/import/features.mjs`, a cap in `CAPS`, a row in the layer control built
+from the manifest, a member of `?layers=`, `minZoom`, a far file and
+twenty-four cells on the same 6 × 4 grid, the same `--budget` reporting.
+
+Four things are its own.
+
+**It draws under everything else the map draws.** `map.js`'s `GROUND` list,
+which M45a made for the physical regions, is an order and not a flag now:
+`['relief', 'physical']`. Under the coastline, under the rivers, under the
+territories, under the marks. The land token beneath it is the paper this map
+is drawn on and not a layer — it is what a band is a tint *of* — so this is as
+far under as there is.
+
+**It is clipped into its cells, and it is fill with no stroke.** Every other
+polygon layer here arrives whole in each cell its bbox touches, because a
+clipped ring's cut edge would be a hairline along a cell border: a shore, or a
+mountain range, that does not exist. A band is one feature for the whole
+world, so whole features would put every band in every cell; it is clipped
+instead, and **nothing is stroked**, so there is no cut edge to draw. The edge
+a reader sees is the edge between two tints, which is the edge that matters.
+
+**It is ground and not a lens** (brief, A3). M65 made choosing an event a lens
+of one that hides the rest of the picture; the base layers are drawn from
+`state.layers` and know nothing of it, so the bands stay whatever is chosen. A
+browser test holds it.
+
+**It is off until a reader asks for it.** `DEFAULT_LAYERS` in `src/state.js` is
+`LAYERS` without `relief` — a second list beside the first, so that the default
+still writes no `?layers=` at all and `?layers=land,territories,relief,…` is
+what a reader gets when they switch the bands on.
+
+### The budget
+
+| layer | level | tolerance | bytes | cap |
+| --- | --- | --- | --- | --- |
+| relief | far | 0.4° | 365.7 KB | 400.0 KB |
+| relief | near | 0.005° | 4,714.8 KB | 5,600.0 KB |
+
+**The bands come to 4.96 MB of their own 6 MB ceiling** — 374,523 bytes for
+the far file and 4,827,962 for the twenty-four cells, 5,202,485 in all. The
+base map is **5.94 MB of its 8 MB** and is to the byte what it was before this
+run: the seven layers M36 and M37 wrote are unchanged, which `git status`
+said and a second run of the import says again. `du -sh data/geo` is **20M**;
+measured exactly, `data/geo/` is **19.30 MB of its 24 MB ceiling**, up from
+14.34 MB.
+
+**Nothing was coarsened at the near level.** It fits at 0.005°, which is the
+first rung of the ladder and finer than the grid itself, so every point the
+contouring produced is in the cells: the ridge under a frontier is the ridge
+the grid has, and no tolerance was spent to make it fit.
+
+**The far level was.** It is the whole world at k = 1, where a sixth of a
+degree is 0.44 of an SVG unit, and it took two things to fit 400 KB. The
+tolerance stepped to **0.4°**, which is the very tolerance the far coastline is
+drawn at. And it needed a **ring floor of its own** — `farMinArea: 0.2` square
+degrees, about 0.45° on a side and 1.2 units at k = 1 — because the far-level
+*feature* floor every other layer uses can never drop anything here: the bands
+are five features for the whole world, and what decides the bytes is the
+number of **rings**, which is four points and about thirty bytes of brackets
+each at any tolerance at all. What that drops, per band:
+
+| band | rings in the grid | kept at the far level | kept at the near level |
+| --- | --- | --- | --- |
+| 0–200 m | 2,191 | 404 | 2,055 |
+| 200–500 | 3,011 | 548 | 2,940 |
+| 500–1000 | 2,963 | 503 | 2,903 |
+| 1000–2000 | 1,930 | 291 | 1,869 |
+| above 2000 | 594 | 83 | 577 |
+
+So the world view has the shape of the continents' relief and not its
+freckles, and everything dropped comes back as soon as a cell lands. The near
+level's 4,714.8 KB is roughly 1,231 / 1,419 / 1,167 / 687 / 210 KB across the
+five bands: the middle bands cost most, because a band's rings are its own
+edge's and the next one's and the middle ones are long.
+
+**First paint costs nothing at all.** `relief` is off by default, so a first
+visit makes no request for it, at any zoom — a browser test asserts that for a
+`?layers=` list without it. Switched on, its far file goes out behind the same
+`defer` every other far file does — a frame, then a task — so
+`tests/spine-pages.test.mjs`, which holds every `geo/base/` request against the
+first contentful paint and needed no new list because it was always written
+over the whole directory, still passes.
+
+### What the palette could and could not express
+
+Five tints, one token at five opacities: `--ink-soft`, neutral, so it competes
+with none of the eight territory hues, with cobalt or with madder. No new hex
+value, no new token, no new type size. They are spaced to be **equal steps in
+OKLab over the land token** — 0.030 apart, against the ~0.02 at which a large
+flat field stops being tellable from its neighbour — so over bare ground all
+five can be told apart and a reader can count them.
+
+**0.33 on the top band is where the ramp stops, and the number is not taste.**
+It is the largest opacity at which every promise this atlas already made still
+holds over the band: a mark at 5.08:1, its label at 8.34:1 and the walked
+chain at 3.45:1 bare, and 4.43:1, 7.26:1 and 3.00:1 with the worst of the
+eight territory hues washed over it at 0.62. A darker ramp takes the chain
+under the 3:1 a line has to have. `tests/contrast.test.mjs` fixes it there.
+
+And here is what it cannot do, which is the honest half. **A territory wash is
+0.62 of a hue, so only 38 % of the ramp survives under one**: the 0.030 steps
+become 0.013, well under the 0.02 threshold, and under a territory a reader
+sees the trend and the top band rather than five countable steps. It is not a
+tint that can be fixed. Pushing the darkest to 0.62 — far past where the
+walked chain fails — would still only reach 0.021 under a wash. So the brief's
+escape hatch, "if five bands cannot be told apart, use fewer and say so", is
+not taken: five *can* be told apart, which is what the bands are for and what
+the bare-ground picture shows; what they cannot do is be counted through a
+frontier's own colour, and that is said here rather than answered by throwing
+two bands away.
+
+### The two places, and whether a border sits on a ridge
+
+`docs/screens/m45b-relief-iberia.png` and `docs/screens/m45b-relief-andes.png`,
+both **with the territories on**, which is the whole question, and
+`docs/screens/m45b-relief-world.png` for the planet. The comparison pair is
+already on disk and is not repeated: `m45a-ground-iberia` and
+`m45a-ground-andes` are these very two boxes with these very two `?layers=`
+lists and `relief` left out.
+
+Two more were taken beside them, for what the three above leave open.
+**`docs/screens/m45b-relief-alps.png`** is the case where the ridge is *wide*:
+France, Switzerland, Austria and Italy meet on the top band with the Po valley
+two bands below, and there the border on the ridge needs no looking for — where
+in the Andes shot, at 48° across, it has to be hunted through the wash. And
+**`docs/screens/m45b-relief-bare-andes.png`** is the same box with the
+territories off, which is M45a's own measure asked again: the cordillera is the
+top band the length of the continent, the Altiplano a broad mass of it, the
+Amazon basin the lowest. It is there because it is the proof that the mottling
+above is the wash and not the data, and a set that showed only the zooms where
+the milestone works would be the assertion §2.4 refused. A point-in-polygon
+check against the far file agrees with the picture: 70° W 33° S is band 4, the
+Amazon at 60° W 3° S band 0, Lisbon band 0, and the Southern Ocean and the
+mid-Atlantic in no band at all.
+
+**Iberia**: the Meseta stands out of the coastal lowland as a whole step, the
+Guadalquivir and the Ebro run through the lowest band as visible corridors, and
+the Cantabrian range and the Pyrenees are two bands higher along the top of the
+picture. The Portuguese frontier reads as what it is: **rivers in the middle —
+the Minho and the Douro cross the low bands — and high ground at the ends.**
+
+**The Andes**: the top band runs two thousand miles down the western edge of
+the continent and the Chilean–Argentine border runs down it. That is the
+milestone's own question answered: the border is on the ridge, and the ridge is
+drawn.
+
+What the pictures also show is the limit written above. Under the territory
+hues the ramp is a mottling rather than a ladder; the ground is legible as
+shape and not as five countable heights. At the world view the bands are quiet,
+which is what they should be at the scale the atlas opens at.
+
+### Deviations
+
+976. **The grid's registration is a reading the brief does not state, and it
+     had to be chosen.** "2160 columns × 1080 rows, row 0 at 90° N, column 0
+     at 0° E" does not say whether a value is at a node or at the centre of
+     the 2 × 2 block it averages, and the two differ by 4.6 km. Node
+     registration was taken because it reproduces `vendor/README.md`'s own
+     spot checks and the other reading does not. The test asserts the four
+     numbers from that file rather than the rule, so a future grid that
+     disagrees fails on the ground and not on a convention.
+
+977. **A band is drawn even-odd rather than nested, which costs about twice
+     the rings.** A band's geometry is its own edge's rings *and* the next
+     edge's, each as a single-ring polygon; the higher ground is a hole
+     because a renderer counting crossings makes it one. The alternative —
+     nesting each ring inside the outer ring it belongs to — needs a
+     point-in-polygon pass over half a million points to work out which ring
+     is inside which, and it draws the same picture. Both fit the ceiling, so
+     the cheaper one to be right about was taken.
+
+978. **`relief` is `clip: true`, which no other polygon layer here is, and
+     therefore fill with no stroke.** M36's rule is that a cell holds whole
+     polygons because a clipped ring's cut edge would be stroked along a cell
+     border. That rule is about the stroke. A band is one feature for the
+     world, so whole features would be the whole world in every cell; it is
+     clipped, and nothing is stroked, so the rule's reason does not arise.
+     The edge a reader sees is the edge between two tints.
+
+979. **`relief` is off by default, and `src/state.js` grew a second list.**
+     The brief says a base layer like any other and does not say which way it
+     starts. Off, for two reasons: it is 5 MB of ground that a first visit
+     should not spend, and it is the only layer that fills across open land,
+     so a map that opened with it on would be a relief map with a history
+     drawn on it rather than the other way round. That needs `DEFAULT_LAYERS`
+     beside `LAYERS` — `LAYERS` is still what a `?layers=` token may name and
+     the order the list is assembled in; `DEFAULT_LAYERS` is what the default
+     compares against, so the resting link stays empty and `relief` appears in
+     the link the moment it is switched on.
+
+980. **The grid's hash refuses under `--check` and warns without it, where the
+     brief says the run stops either way — and `--check` joined the documented
+     command line.** One rule for all eight sources rather than a special case
+     for the eighth: the fixtures this import is tested on are files with the
+     right names and deliberately the wrong contents, and a source that
+     stopped the run on a hash could never be exercised on one. What the brief
+     is actually protecting is the committed bands, and they are protected by
+     the stronger thing — `CLAUDE.md`'s command line for this import is now
+     `--check --budget`, and this run used it. A **missing** grid is still a
+     stop either way.
+
+981. **The far level needed a ring floor of its own, which no other layer
+     has.** `FAR_FLOORS` drops whole features and there are five features
+     here, so it could not bite; `farMinArea` on the layer row is the
+     coastline's `FAR_MIN_AREA` argument (deviation 605) for a layer whose
+     features are not one ring each. Without it the far level is 846.8 KB at
+     the coarsest tolerance the ladder has, over a 400 KB cap it could never
+     reach by simplifying.
+
+982. **"Underneath everything, including the coastline" is the position above
+     the land fill, and there is no lower one.** `.land` is an opaque fill of
+     the land token; a layer under it is a layer nobody sees. So the bands are
+     the first thing drawn above it, under the near coastline, the rivers, the
+     lakes, the physical regions, the territories and the marks. The far
+     coastline's stroke is `.land`'s own and is therefore under the bands —
+     at 0.065 of a pale token over a 0.6-wide cobalt line it still reads, and
+     as soon as the near coastline covers the view that stroke is `.land`'s no
+     longer and is drawn over them.
+
+983. **The 0 m contour is a 10-arc-minute coastline and does not meet Natural
+     Earth's.** The lowest band's seaward edge is the grid's own shore, which
+     can stand up to about 0.17° — some 19 km — outside the 10 m coast the map
+     draws, so at a peninsular zoom the lowest tint shows as a faint halo in
+     the water. It is the price of the resolution the 6 MB ceiling allows and
+     not a fault in the contouring, and there is no cheap fix: clipping the
+     bands to the far coastline would cut them against a 0.4°-simplified shore
+     and be wrong further inland. It is the lightest of the five tints, and it
+     is written down here rather than left for a reader to notice.
+
+984. **Five bands, and the brief's escape hatch was not used — but the reason
+     it exists is real and is reported.** Over bare ground the five are 0.030
+     apart in OKLab and countable. Under a territory wash at 0.62 they are
+     0.013 apart and are not. No opacity fixes that: at 0.62 on the top band,
+     which is far past where the walked chain drops under 3:1, the step under
+     a wash is still only 0.021. Fewer bands would lose the bare-ground
+     picture to buy nothing, so five stayed and the limit is in the section
+     above.
+
+985. **Five screenshots and not the brief's two, and they are named
+     `m45b-relief-*`.** §2's done-conditions name `m45-relief-iberia.png` and
+     `m45-relief-alps.png`; every milestone since names its pictures after
+     itself, M45a's own four included (`m45a-ground-*`), so the brief's names
+     are from before the run was split in two.
+     The set grew for three separate reasons and each is a picture that says
+     something the others do not. The **world** is there because the bands had
+     to be shown to be *quiet* at the scale the atlas opens at. The **Alps** is
+     there because Iberia's frontier follows rivers and the Andes are a single
+     narrow spine: the Alps are the case where the ridge is wide, and they are
+     the one picture in which the milestone's question is answered without
+     having to be looked for. And the **Andes with the territories off** is
+     there because the answer at that zoom is otherwise unflattering — it is
+     the proof that the mottling under the hues is the wash and not the data.
+     What is *not* repeated is the pair M45a already holds:
+     `m45a-ground-iberia` and `m45a-ground-andes` are these very boxes with
+     these very `?layers=` lists and `relief` absent, so the bands-off
+     comparison is on disk already and a duplicate under a new name would be
+     two more pictures saying what two already say.
+
+986. **The fixture elevation grid is written at run time and is not
+     committed.** The format has no header, so a grid is the full 2160 × 1080
+     int16 whatever is in it, and four and a half megabytes of synthetic
+     ground does not belong in the repository. `tests/import-naturalearth.test.mjs`
+     makes one — a stepped cone at 20° N, 30° W with a step for every band —
+     into a temporary directory and removes it after.
+
+987. **`CLAUDE.md` and `ARCHITECTURE.md` were edited, and the brief names only
+     the second.** `ARCHITECTURE.md` is a done-condition. `CLAUDE.md` gained
+     the new module's line, which `tests/site.test.mjs` requires of every file
+     under `tools/`, the `--check` in the documented command line (deviation
+     980), and the layer counts that were six and are seven.
+
+988. **Two runs built M45b at once, on one branch, with no channel between
+     them.** A persistent session and a scheduled fire both claimed `m45b` and
+     both worked it — nine commits in fifty minutes between the two. Nothing
+     was lost: the protocol's "read what is pushed and continue" held, every
+     rejected push was answered by taking the other side's work and keeping
+     only what this side had that it did not, and one commit is an explicit
+     merge that says so. But it was paid for: three of the four tests the
+     seventh layer broke were fixed twice, three screenshots were taken twice,
+     and two `## M45b` sections were written of which one was thrown away —
+     the fuller one was kept and the other run's paragraphs on the two extra
+     pictures were grafted into it. The collision was found by a rejected push
+     and not before it, because the two containers cannot see each other.
+     **The claim line needs to say which runner holds a lane, not only that it
+     is held** — `M45b started <instant> by scheduled` is true of both of them.
+
+989. **`tests/m45b-browser.test.mjs` grew a fifth test the brief's list does
+     not have.** §Tests names six and the row in the layer control is not
+     among them, but §2.3's done-condition is "a member of `LAYERS`, a row in
+     the layer control, `?layers=relief`" and the row was the one clause of
+     the four with nothing asserting it. It cannot be tested on `?fixtures=1`
+     — the fixture dataset has no bands, so its manifest has no `relief`
+     layer and its control rightly has no row, which is what
+     `map-browser.test.mjs`'s list of seven switches says — so it is asserted
+     on the real dataset beside the other four.
+
+
+## M74 — the graph frames the walk it is asked to show
+
+Found by M42 (deviation 986 of lane B, which numbers from 950) and paid for
+here. Lane A's sixth milestone, on the branch `m74` (`docs/run-protocol.md`,
+amendment of 21 September).
+
+Reading a narrative is a lens (M48): the three views draw the walk, dim its
+neighbours and hide the rest (M65). On the map and the timeline that held. **On
+the graph it did not.** The graph opens zoomed in to a rectangle and draws only
+what falls inside it — I6's cull, which is what stopped it building 24,310
+elements for a picture two thirds of which is off the screen — and where the
+layout puts a walk is a fact about the arrangement, not about the reader's
+choice. M42's new edges moved the arrangement and the colonial-war narrative
+lost most of its steps; its fire measured that in a `before` worktree and
+excepted the graph from `tests/lens-browser.test.mjs` rather than loosen the
+rule, and said so. **That exception is gone.**
+
+### The rule: at rest the window, with a lens the lens
+
+One function decides where the camera starts, and it asks one question.
+
+**At rest it is the window and nothing else**, exactly as it has been since
+deviation 54: a reader arriving on a narrow band should not have to hunt for
+it, so the first drawing zooms to the band, capped at `FIT_ZOOM`, and a window
+that is more than `FIT_SHARE` of the data is not zoomed to at all. Nothing
+about that changed — not the cap, not the share, not the centring. The atlas
+opens on 1900–1999, which is a fifth of its extent, so the resting graph opens
+at ×2 on that band, as it did.
+
+**With a lens on it is the lens.** `src/graph-view/frame.js` is the whole of
+the arithmetic and is pure: the bounds of a set of nodes, and the transform
+that puts those bounds inside the rectangle the reader can see. The view hands
+it the lens **widest first** — everything the lens draws, then the focus alone
+— and the rule is one sentence: *the widest set that fits is the one framed,
+and the narrowest is the fallback.* So an event chosen with a small ring is
+framed with its ring; the colonial-war walk, whose thirty-seven events will not
+fit, is framed on its twelve steps; and where even the focus is larger than the
+pane the zoom is clamped to `MIN_ZOOM` — as far out as the graph goes and no
+further, which is the frame saying nothing about what is outside it rather than
+pretending to contain it. The cap is `FIT_ZOOM` again, so opening on a walk and
+opening on a narrow band go as far in as each other: a lens of one event does
+not throw the reader to the bottom of the well.
+
+The room left around the frame is `SELECTED_RADIUS + RING_GAP + RING_WIDTH`,
+which is the widest a mark is drawn with its ring and that ring's stroke. It is
+in the SVG's own units because that is what a mark measures in at any zoom —
+the radius is divided by `k` and the viewport multiplies by it — so a node
+framed at the very edge of the rectangle would be a node half off the screen.
+**No new hex value, token or type size**, and no new number: every constant in
+the frame is one the view already had.
+
+**No change to the layout.** `layout.js` decides where a node goes; this
+decides where the camera starts, and `lanes.js`, `cluster.js` and `emphasis.js`
+were not touched. **The URL carries no camera.** A link to a narrative opens on
+its walk because the walk is the lens, not because a zoom was written into it,
+and a reader's own pan and zoom stay out of the URL as they always have.
+
+When the lens changes, or when an arrangement of the same lens changes — a
+narrative's step moving the band under its own walk — the camera frames again.
+When the lens goes away the camera goes back to the window. A pan, a zoom, a
+click inside the lens: nothing.
+
+### What first paint costs
+
+**Nothing measurable, and by construction nothing at all at rest.** The frame
+runs only when a lens is on; with none, the function reads a cached working set,
+compares one string and calls the same `fitToWindow` the view has always called.
+
+Measured anyway, in a `before` worktree at the claim commit, as three rounds of
+nine loads of `?view=graph` on this machine, reading the page's own clock at the
+moment the first mark is in the document:
+
+| | round 1 | round 2 | round 3 (order reversed) |
+| --- | --- | --- | --- |
+| before | 283 ms | 295 ms | 302 ms |
+| after | 290 ms | 303 ms | 301 ms |
+
+The gap in the first two rounds is the order — `before` ran first in both — and
+it closes when the order is reversed. The spread within a single round is
+268–394 ms. The two are indistinguishable.
+
+### Two things the framing found
+
+**The graph kept what may never be swallowed by a stack under the state
+object.** Two of the things a lens is built from arrive *after* the state does:
+a narrative's steps come with their century, an actor's ground with its own
+file, and `lensView` knows to answer again when they land. This cache did not.
+The answer computed before the walk existed stood for the rest of the session,
+so **eighteen of the walk's thirty-seven events were inside stacks that M25's
+rule says may never hold one** — and a step inside a stack is not drawn at all,
+which no amount of framing would have fixed. It is keyed on the working set
+now, which `workingSet` replaces exactly when the answer changes.
+
+**And a frame can go stale.** The rectangle it is computed against is measured
+once and kept — asking the browser for it inside a wheel notch is a forced
+layout of the whole picture — and the first drawing of a view lands before the
+pane has settled, because the masthead wraps and the panel takes its remembered
+width. A walk framed to a pane thirty pixels taller than the one it ends in
+loses its outermost steps off the bottom: **the lens test passed in an 800 × 600
+window and would have failed in a 1440 × 900 one.** What was measured is part of
+the frame's key now, so the observer that throws the measurement away is acted
+on, and `tests/m74-browser.test.mjs` asserts it at two sizes.
+
+### The pictures
+
+`docs/screens/m74-graph-walk.png` is the owner's twelve-step argument about how
+the colonial war ended the regime, on the view that was losing it: every step
+on the screen, and nothing in the query saying where the camera is — `?narrative=`
+is the whole of the state. `docs/screens/m74-graph-rest.png` is the same view
+with nothing asked of it, on the window `m60-graph` and `m65-graph-rest` were
+taken at, and is the picture this milestone promises not to have touched. The
+walk is a narrow column because the graph's x is a scale over the whole corpus
+and the walk is fifteen years of it; that is the room the layout gives it, and
+the alternative — the zoom it used to open at — is the one that cut it in half.
+
+### What was run
+
+`tests/m74.test.mjs` (6) and `tests/m74-browser.test.mjs` (3), written before
+the behaviour they judge, and the graph's exception removed from
+`tests/lens-browser.test.mjs` first so that the suite was red for the right
+reason. No test pins a count and none pins a pixel. `node --test`: **1,674 pure
+and 218 browser, 1,892 in all, 0 failed and 0 skipped**, the browser suites one
+at a time as the check runs them. `node tools/validate.mjs --index`: **10,653
+records, 5 regions, 0 errors, 238 warnings**, byte-identical to a fresh build —
+nothing under `data/` changed at all, so no record was touched and no historical
+claim written.
+
+### Deviations
+
+990. **A cache this milestone does not name had to be fixed before its first
+     test could pass.** The brief is about where the camera starts, and a step
+     inside a stack is not on the screen wherever the camera is: eighteen of
+     the walk's thirty-seven events were in stacks because the graph's `alone`
+     set was keyed on the state object and a narrative's steps arrive after
+     the state does. It is three lines in `graph-view.js`, it touches neither
+     `cluster.js` nor `emphasis.js`, and without it "reading a narrative draws
+     every step of the walk on the graph" could not hold. Written up above
+     rather than left as a silent fix, because it is a defect of its own and
+     older than M42.
+
+991. **The frame's key carries the rectangle it was measured against, which the
+     brief does not ask for and the milestone does not work without.** Keying
+     on the pane's size read live off the element was tried first and is not
+     enough: the size is live and the measurement is cached, so a redraw
+     between the resize and the observer's own callback framed against a stale
+     rectangle under a fresh key and the next callback found nothing to do.
+
+992. **`tests/m74-browser.test.mjs` has a third test the brief's list does not
+     name.** §4 names three and they are all here; the third file-level test is
+     the pane that changes size, and it is there because the case above passed
+     at one window size and failed at another. One size is not a test of a
+     frame.
+
+993. **Leaving a lens puts the camera back on the window, which is a change the
+     brief does not name.** The camera follows the question: a lens arriving
+     frames it, and a lens leaving gives back the picture the window asks for.
+     The alternative — leaving the camera wherever the lens had put it — would
+     hand the reader the whole atlas seen through a rectangle cut for something
+     they have just closed. `leaving the narrative gives the atlas back` holds
+     either way; this is the reading that makes its name true.
+
+994. **The screenshots were taken with `--only`, twice, and no other picture
+     was rewritten.** The brief asks for every other picture to be restored
+     after the run; taking two by name restores nothing because nothing else is
+     written. `git status` after the run listed the two new files and no
+     modified png.
+
+995. **The tests were committed before the behaviour and the two were pushed
+     together — and the check went red anyway, on neither of them.** Deviations
+     711 and 717 ask for the tests to come first and the protocol asks for
+     green at every commit, so the red half was never pushed on its own. Run
+     1060 failed all the same: `tests/site.test.mjs` holds `CLAUDE.md`'s layout
+     tree to the modules under `src/`, and a milestone that adds a module has
+     to name it there in the same push. The full suite was run locally before
+     that push and would have said so; what was run was the pure suites, and
+     the one failure in 1,674 was read after the push rather than before it.
+     **A new file is a `CLAUDE.md` edit**, and the cheapest guard is
+     `node --test tests/site.test.mjs` before the first push of any run that
+     adds one.
+
+996. **The check is blind to the size of the pane, and that is why the run's
+     own defect nearly shipped.** Run 1060 passed all 217 browser tests on the
+     commit whose frame was measured against a stale rectangle: the runner's
+     window is not the 1440 × 900 one the fault appears in. It was found here
+     by taking the screenshot and looking at it, and the test that now catches
+     it asserts the walk at two pane sizes. A picture is worth taking before a
+     milestone is called done, and not only after.
+
+
+
+## M75 — the band is not hidden
+
+The owner, 21 September, after M60 moved the window to the masthead and M64
+put the band back behind a button:
+
+> **"still don't like the way years are selected when looking at the map,
+> should be more intuitive"**
+
+and, asked what shape the fix should take:
+
+> **"The dates two-handled band should not be hidden."**
+
+That settled two things, and both were the owner's call. **It is the band** —
+two handles, a range — and not a single-year scrubber, so `window-band.js` is
+the control and nothing was rebuilt. And **it is not hidden**: the `dates`
+button is gone, and on the map the strip is present from first paint, on every
+visit, with no mode to enter and nothing to remember.
+
+### What a first visit to the map looks like now
+
+The masthead, and under it the strip: the two years on their own row, the
+shade between them with a handle at each end, and the profile of where the
+events are along the bottom. Then the map, which still has the whole pane.
+Nothing was pressed to get there and nothing was read out of storage;
+`docs/screens/m75-map.png` is a link with `?from=1900&to=1999` and nothing
+else in it.
+
+A reader can now do three things they could not do on M60's map and could only
+do on M64's after finding a button: read what window they are looking at
+without moving their eyes to the masthead, take hold of either end, and sweep
+— with the map answering while the pointer is still down.
+
+### What was removed
+
+| | M64 | M75 |
+| --- | --- | --- |
+| the `dates` button | in the map's top-left corner | gone |
+| `aria-expanded`, `aria-controls` | on the button | gone: it is never closed |
+| `.map-band-toggle` in `style.css` | four rules | gone |
+| `BAND_KEY`, `readBandOpen`, `writeBandOpen` | `panes.js` | gone |
+| `atlas-causal.band` in localStorage | written on every toggle | never read again |
+| `band=open` in `docs/screens/frame.html` | wrote that key for a shot | gone |
+| the band at first paint | a `<button>` | the strip |
+
+A value an M64 reader's browser still holds is **read into nothing**, which is
+deviation 848's rule and the same paragraph `panes.js` already carried for the
+`timeline` height M60 left behind: a preference with nowhere to apply is not an
+error and not something to clean up in somebody else's browser.
+
+`map-band.js` no longer imports `panes.js` at all, which is the structural
+version of the same sentence and what `tests/m75.test.mjs` asserts: there is no
+preference to read, so there is nothing to read it from.
+
+### What was kept, exactly as it was
+
+`src/window-band.js` is **untouched**. The shade, the two handles, the year
+each stands on, and every gesture that moves them — a handle dragged, the
+ground slid, the wheel, the arrow keys, the double-click that snaps to a decade
+— are the same code the timeline view draws from. The brief's "nothing is
+rebuilt" is asserted the way M64 asserted it: `aria-valuetext` occurs in one
+module under `src/`, neither drawing contains the string `window-handle`, and
+neither binds a `wheel` or a `pointermove` of its own. That test is still
+`tests/m64.test.mjs`'s and there is no second copy of it.
+
+And the strip is still an **overlay** — `position: absolute` inside
+`.map-area` — and not a row of the grid. M60's gain is kept and is now
+asserted *with the band present*, which is the stronger form of the same
+property: M64 could only measure the pane with the band away.
+
+### What first paint costs, against M64's numbers
+
+M64 deferred the band's cost to the first click. M75 pays it when the map is
+built, which is the honest price of the owner's sentence. Median of nine cold
+loads of `?from=1900&to=1999` at 1440 × 900, cache cleared between them, on
+this machine and this instrument, before and after the change:
+
+| | M64 (band closed) | M75 (band on it) |
+| --- | ---: | ---: |
+| first contentful paint | 60 ms (40–80) | 56 ms (44–72) |
+| load event | 186 ms (158–361) | 190 ms (182–203) |
+| requests to that frame | 96 (94–99) | 96 (95–98) |
+| JavaScript files | 85 | 85 |
+| JavaScript bytes | 1,127,687 | **1,125,953** |
+| all bytes | 2,972,654 | 2,970,210 |
+| marks on that frame | 6 | 6 |
+| the band from nothing to drawn | 1.8 ms | 1.8 ms |
+
+**No new file and no new request.** `map-band.js` was already fetched at first
+paint under M64 — the button was built eagerly and only what was below it was
+deferred — so removing the toggle, its two strings and the two functions in
+`panes.js` makes the page **1,734 bytes smaller**, which is the one number here
+that is deterministic rather than a median.
+
+The work M64 measured at **3.4 ms on the first open** is what is now done at
+first paint: the century counts, the scale, the four layers and the first
+drawing. Measured here the same way on both versions — built into a scratch
+container over the same atlas, and on M64 opened as well — it is **1.8 ms
+median either side**, 5.2 ms and 3.0 ms on the very first build of a session.
+It is a different machine from the one M64's table was measured on and the
+number is smaller; what matters is that it is the *same* number before and
+after, because it is the same work.
+
+First contentful paint and the load event moved by less than their own spreads
+and neither is a claim. The band is built after the core has landed, which is
+long after the first paint, so there was no mechanism by which it could have
+moved the first number and it did not.
+
+### The masthead's density hint stays
+
+The brief allowed it to go "if the strip's profile makes it redundant beside
+it — measure whether a reader loses anything, and say". It is not redundant,
+and the measurement is a test rather than an opinion
+(`tests/m75.test.mjs`, "the hint is over the corpus and the profile over what
+is shown"):
+
+* **They are drawn over different sets.** The hint is
+  `centuryCounts(atlas.activeEvents)` — the corpus. The profile is
+  `bandEvents`, which is `emphasis.js`'s `shown`. Choosing an event changes
+  the profile and does not change the hint, which is exactly right for both:
+  one says where this picture is, the other says where the atlas is.
+* **They answer different questions about the window.** The hint marks which
+  centuries the window covers and leaves the rest drawn and unmarked, so a
+  reader on a ten-year window can still see the five centuries they are not
+  looking at. The profile is a scale, not an index.
+* **The hint is on every view and the strip is on one.** The owner said *"when
+  looking at the map"*, so the graph has no strip; a reader there who lost the
+  hint would have no picture of where the corpus is at all.
+
+So a reader would lose an answer and not a repetition. It stays, and the two
+are still drawn at `columnHeight`'s one absolute logarithmic scale, so they
+cannot disagree about which century is the busy one.
+
+### The phone keeps the same forty-four units
+
+The brief allowed a slimmer strip under 720 px and asked for it to be said
+either way. It is the same 44, and `docs/screens/m75-map-phone.png` is why.
+
+At 390 × 844 the view is 575 px tall — the screen less the masthead and less
+the 44 px the layout keeps clear for the sheet's peeking grip — so the strip is
+**under a thirteenth of the view** and the map is not crowded by it. Against
+that, 44 px is what a touch target is: `--touch` is 40 and `--sheet-grip` is
+44, and the two handles are now something a thumb has to find and hold rather
+than something a pointer clicks. A slimmer band on the one device where the
+gesture is hardest would have made the control worse in order to make a
+picture that is not short of room slightly taller. So nothing changes below
+720 px except that the band is there, which is the whole instruction.
+
+### Tests
+
+`tests/m75.test.mjs` (13) and `tests/m75-browser.test.mjs` (6), both written
+before the behaviour they judge and pushed before it. **No test pins a count or
+a pixel**: the first visit is asserted as *the strip is in the document with no
+button anywhere*, the pane as *the layout's own content height*, the strip as
+*less than a third of the pane* and *less than a quarter of the phone's*, and
+the drag as *the picture changed while the pointer was still down*.
+
+`tests/m64-browser.test.mjs` is gone: four of its six tests were about a button
+that no longer exists, and the two that were not — the drag, and the map's band
+and the timeline's agreeing about one window — are in `tests/m75-browser.test.mjs`.
+`tests/m64.test.mjs` keeps everything M75 did not remove, which is all of it
+but the two tests about the stored preference.
+
+### Deviations
+
+997. **The two M64 shot definitions were removed and their pictures kept.**
+     `m64-map-closed` photographed a toggle that is gone and `m64-map-open`
+     asked for it with `band=open`, which now writes nothing. Re-pointing
+     either at the new picture would have left a sentence in `screens.mjs`
+     describing something else, and deleting the PNGs would have thrown away
+     the only record of what M64 looked like. So the definitions went, the
+     files stayed, and the comment where they were says both things.
+
+998. **`tests/m64-browser.test.mjs` was deleted rather than trimmed.** Four of
+     its six tests are about the button, and a file whose head comment is
+     about a toggle and whose body is two tests about something else is worse
+     than a file that is not there. The two that survive are in
+     `tests/m75-browser.test.mjs`, the drag one unchanged but for the press it
+     no longer needs.
+
+999. **The two structural tests M75 would have duplicated were left in
+     `tests/m64.test.mjs` and not copied.** One band, built in one module,
+     with one set of gestures, is M64's own assertion; this milestone did not
+     touch what it is about, and this repository's discipline is one answer in
+     one place. `tests/m75.test.mjs` says so where the copies would have been.
+
+1000. **The masthead's density hint stays**, against the brief's permission to
+      remove it. Measured rather than judged, and the measurement is above and
+      in a test: two different sets, two different questions, and one of them
+      on views the strip is not on.
+
+1001. **The strip is the same 44 units on a phone**, against the brief's
+      permission to make it slimmer. The measurement is above: it is under a
+      thirteenth of the view at 390 × 844, and 44 is what a touch target is on
+      the one device where the handles are dragged with a thumb.
+
+1002. **The pane property is measured against the layout's *content* box.**
+      On a phone `.layout` keeps `--sheet-grip` clear at the bottom for the
+      panel's peeking grip, so its border box is 44 px taller than the row the
+      view is laid into. Comparing the two directly would have failed on a
+      phone for a reason that has nothing to do with the band — it did, once,
+      while the test was being written — and would have been the wrong thing
+      to assert. The desktop numbers are unchanged by the correction.
+
+1003. **`createMapBand` returns a `destroy` nothing in the atlas calls.** The
+      band is built with the map and lives as long as the page, so there is no
+      caller. It is there because the drawing subscribes to the state and
+      installs a `ResizeObserver`, and something that does that owes a way to
+      stop: the measurement above builds seven bands into a scratch container
+      and would otherwise have left seven subscriptions on the page it was
+      measuring.
+
+1004. **The first-paint table is a fresh before/after on one machine and not a
+      comparison with M64's own numbers.** M64's table was measured elsewhere
+      and its absolute values do not transfer — its first contentful paint was
+      36 ms where this machine's is 56. What transfers is the question, so
+      both columns were measured here, with the same instrument, in the same
+      session, on the commit before and the commit after.
+
+## M76 — the band follows the selection, the fields go, the graph shows every date
+
+Three instructions from the owner on 21 September, after seeing M75 published.
+Lane A, on the branch `m76`.
+
+### Which of section 1's candidates it was: the first, and a fourth beside it
+
+The brief's first instruction is *"if for example I select portugal, the map
+timeline I use to pick the dates should show only those events"*, and it asks
+this run to find out on the real page why the band does not look narrowed
+rather than to argue from the code. Measured at 1280 × 900, headless, on the
+commit that claimed the milestone:
+
+| | columns | tallest column | x span of the ink | events behind it |
+|---|---|---|---|---|
+| nothing selected | 134 | 6 px | 14 → 1252 of 1280 | 229 |
+| `?actor=portugal` | 25 | 5 px | 466 → 684 of 852 | 33 |
+| `?actor=kingdom-of-portugal` | 19 | 4 px | 10 → 454 of 852 | 20 |
+
+**Candidate 3 is ruled out.** Selecting Portugal *is* a lens: the set behind
+the band goes from 229 events to 33, and the band redraws. The picture is
+narrowed in the data.
+
+**Candidate 1 is the cause.** The strip is 44 units deep and the profile is
+drawn at `density.js`'s absolute scale, whose whole range is 3 to 9 px and
+which saturates at 64 events in one 2-px column — a count no column of this
+corpus comes near. So the world draws a tallest column of 6 px and Portugal
+draws one of 5: **one pixel between the atlas and one country.** Both read as
+the same faint dusting along the bottom edge, and the only thing that changes
+is which x positions carry a 3-px tick. The narrowing was real and was spent
+on a pixel.
+
+**And a fourth the brief did not list, found while ruling out the third.** The
+band was drawn over `bandEvents` — `emphasis.js`'s `shown` — and `shown` is
+the lens *plus its one-hop ring*. Portugal names 9 events; the band drew 33.
+Twenty-four of them are the Boer War, Franz Ferdinand, the Sayfo, the Armenian
+genocide, the Easter Rising: the neighbourhood, correctly in the picture the
+map draws, and not what the owner pointed at. Three quarters of the ink under
+a band that says "Portugal" was not Portugal's.
+
+**Candidate 2 is real and is section 2's.** The masthead's hint keeps 7 columns
+of the corpus on the same row as the years and never narrows — 7 before the
+selection and 7 after it, on every one of the three ways in.
+
+### What section 1 changed
+
+Two things, and the fourth candidate is why there are two.
+
+1. **The profile is over the selection's own events.** A new pure half,
+   `profileEvents` in `window-band.js`: with a lens on, the lens's own events
+   — `lensView`'s `kept`, which is what the foci name and not the ring around
+   it — and with no lens, `bandEvents` exactly as before. Narrowed by the
+   categories still on, because it is intersected with `bandEvents` rather
+   than read straight off the lens. `bandEvents` itself is untouched, so the
+   masthead's count in view and the standing line still count what the views
+   draw; `emphasis.js`'s `shown` contract is untouched, as the brief requires.
+   `lensView` gained one key, `kept`, which `focusParts` already handed it.
+2. **The profile is drawn at its own set's scale.** `densityPath` takes a
+   `saturatesAt`, and `bandProfile` takes `own: true` and computes it from the
+   busiest column of the set it is given. The map's band asks for it, with the
+   strip's own body — 28 units, `STRIP.height - STRIP.marker` — as the cap, so
+   the busiest column reaches the top of the band and the year labels are
+   still clear above it. The timeline's per-lane stubs keep the absolute scale
+   they have always had: they are rows being compared with each other, and the
+   map's band is one row over one set.
+
+### What a first visit with Portugal selected looks like now
+
+`docs/screens/m76-map-portugal.png`. The band over the map carries twenty-five
+columns in one stretch of the scale, the tallest of them reaching the top of
+the band's body; everywhere else the strip is empty. Nine of Portugal's own
+events are what those columns are, where the same picture on M75 drew
+thirty-three — the nine and the twenty-four of the ring — as a flat 3-to-5-pixel
+dusting the reader could not tell from the world's.
+
+The map beside it is unchanged, and that is on purpose: the ring is still
+drawn, the territories are still there, the card still lists everything inside
+the outline. What narrowed is the thing the owner pointed at.
+
+### What was removed from the masthead
+
+The two `<input type="number">` ends of the window, their labels, and the
+density hint between them. `windowPatch` went with them — it was the clamp for
+a typed pair of years and nothing types one now — and so did
+`densityColumns`, `DENSITY` and `tests/window-control.test.mjs`, which was
+those two functions and nothing else. `windowOf` keeps the clamp itself and
+`tests/m64.test.mjs` keeps its assertions.
+
+What is left in `#window-control` is two lines of text: **"N of N events in
+view"** with the pin that gives the world back, and the standing line. Neither
+was ever a control.
+
+Removing the hint reverses M75's deviation 1000, which kept it against the
+brief's permission on a measurement: two questions, two sets, and one of them
+on views the strip is not on. The measurement was right and is why it goes
+rather than in spite of it. The owner's next sentence was that the band does
+not look narrowed, and a corpus-wide profile on the same row as the years —
+seven columns before the click and seven after it — is one of the three
+candidates the M76 brief lists for exactly that. On the timeline the hint
+duplicated a view that has its own band and its own per-lane density strip, and
+on the graph it now describes a window the picture ignores.
+
+### What the timeline does for the window
+
+Nothing changed there. The timeline's own two-handled band is how the window is
+set on that view and has been since M60 made the timeline a view of its own: it
+is the same `window-band.js` the map's strip is built from, with the same
+shade, the same two handles, the same drag, wheel, arrow keys and
+double-click-to-a-decade. `tests/m75-browser.test.mjs` still holds the two
+bands to one window, now from a link rather than from a keystroke.
+
+On the map the band is the control. On the graph there is none, because the
+graph no longer draws the window — a reader who wants a period there zooms and
+pans (M61). `?from=` and `?to=` are unchanged on all three: a link still opens
+on its window.
+
+### What the graph draws now, and where its camera rests
+
+`docs/screens/m76-graph.png`, taken on `?from=1900&to=1999&view=graph` — the
+same narrow window `m74-graph-rest` was taken on, which is the point.
+
+Three rules went, and the arrangement with them:
+
+* **the shaded band is gone.** `layer-window` is not built, `.graph
+  .window-band` is not a rule in the stylesheet any more;
+* **nothing is drawn faded for falling outside a window.** Every `.graph
+  .faded` rule went with the class: the node, the stack, the cluster count, the
+  ring and the edge. A mark's title no longer ends *"— outside the window"*.
+  The map and the timeline still fade, and their rules are theirs;
+* **the arrangement is every event of `shown`.** From H4b until now it was the
+  window and one period either side, so an event a century away was not faded
+  but absent. On that link the graph laid out 32 nodes under M75 and lays out
+  **87** under M76 — the whole resting picture, from the Atlantic slave trade
+  to the legislative election of 2024, on a link whose window is one century.
+
+The lanes go with it: `arrangementOf` passes no window to `lanesFor`, because
+which lane an event is drawn in is weighted inside a window and the band would
+otherwise be silently reordering a picture that no longer obeys it. And the
+band leaves the arrangement's key, so moving it lays out nothing again — the
+promise panning, zooming, selecting and walking already made, now kept for the
+band too.
+
+The camera is one rule where there were two. **It fits what is drawn**: the
+whole of `shown` at rest, and the lens when there is one (M74), offered widest
+first and clamped between `MIN_ZOOM` and `FIT_ZOOM` as M74 left it. The window
+fit of deviation 54 — *a reader arriving on a narrow band should not have to
+hunt for it* — is gone, because a camera that opened on the band would be the
+window deciding the picture by the back door. `FIT_SHARE`, which was the share
+of the data a window had to be under before the graph zoomed at all, has no
+caller and is gone.
+
+### What first paint costs, against M75's numbers
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache off, one
+browser, one instrument, on this machine: `origin/m0` (M75, in a worktree) and
+this branch's head, measured in the same session.
+
+| | M75 | M76 |
+| --- | ---: | ---: |
+| first contentful paint | 32 ms (32–80) | 32 ms (32–60) |
+| load event | 206 ms (192–256) | 184 ms (174–228) |
+| requests to that frame | 116 (116–117) | 116 (116–117) |
+| JavaScript files | 85 | 85 |
+| JavaScript bytes | 1,126,173 | **1,122,903** |
+| all bytes | 6,248,616 | 6,244,014 |
+| marks on that frame | 15 | 15 |
+
+**No new file and no new request**, and the page is **3,270 bytes smaller** —
+the one deterministic number here: the two fields, the hint's markup and its
+drawing loop, `windowPatch`, `densityColumns` and the dead CSS, less what the
+new comments and `profileEvents` add back. First contentful paint and the load
+event both moved by less than their own spreads and neither is a claim; the
+band is built after the core has landed, long after the first paint, so there
+is no mechanism by which section 1 could have moved either.
+
+The absolute numbers do not compare with M75's own table (96 requests, 2.97 MB)
+because lane B's M42 has landed on `m0` since. Both columns here were measured
+on this machine, in one session, with the same instrument.
+
+**What section 3 costs is on the graph and not at first paint.** Time from
+navigation start to the graph's first node, median of seven cold loads of
+`?view=graph&from=1900&to=1910`:
+
+| | M75 | M76 |
+| --- | ---: | ---: |
+| to the first node | 297 ms (289–362) | 305 ms (280–338) |
+| nodes laid out | 32 | 87 |
+
+Nearly three times the picture for eight milliseconds inside the spread, which
+is the honest price of the owner's sentence. What H4b was buying is bought
+instead by `shown` — since M65 the main events at rest, not the corpus — and by
+I6's cull, which puts in the DOM only what falls inside the rectangle on
+screen.
+
+### Tests
+
+`tests/m76.test.mjs` (14) and `tests/m76-browser.test.mjs` (8), both written
+before the behaviour they judge. No test pins a count or a pixel: what is
+asserted is the profile over the selection's own events, the tallest column at
+the band's body or at the tick and never between them, no field in the
+document, an event outside the window drawn as one inside it, and the resting
+camera with every drawn node on the screen.
+
+Changed first, as the brief requires:
+
+* `tests/m74-browser.test.mjs` — *at rest the graph opens on the window* became
+  *at rest the graph opens on everything it draws, whatever the window says*:
+  two windows, one camera, no band, every node on the screen;
+* `tests/arrangement.test.mjs` — the three tests about the band and its margin
+  now say the opposite, which is the milestone;
+* `tests/m64.test.mjs` — the three files no longer ask **one function**; they
+  ask one *module*, and the map's band asks it the narrower question. Its
+  `windowPatch` test went with the fields;
+* `tests/m75.test.mjs` — the two tests about the hint and the one about the
+  fields were removed rather than re-pointed, and the comment where they were
+  says why;
+* `tests/m60-browser.test.mjs`, `tests/m75-browser.test.mjs`,
+  `tests/panel-browser.test.mjs` — everything that read the window *out of* a
+  field now reads it out of the band or the link;
+* `tests/window-control.test.mjs` — deleted.
+
+169 suites: 1,687 assertions pure, 225 in a browser, 0 failing, 0 skipped.
+`node tools/validate.mjs --index`: 10,653 records, 0 errors, 238 warnings —
+the same counts as on `origin/m0`, since this milestone writes no record.
+
+### Deviations
+
+**Lane A numbers from 1100 from this milestone.** M75's ran 999–1004 and lane
+B's M42 runs from 950 and had reached 1005: the two blocks overlap. The overlap
+is recorded, not rewritten (m76-brief §4).
+
+1100. **The band's profile is drawn at its own scale always, and not only
+      under a selection.** The brief's first candidate says *"the profile over
+      a selection is drawn at the selection's own scale"*. Two scales on one
+      control would mean the band's shape changed meaning when a reader
+      clicked, and it would leave the first thing anybody sees — the resting
+      band — the 3-to-6-pixel dusting that is the whole diagnosis. So it is one
+      rule: a profile is drawn at the scale of the set it is over. `density.js`
+      keeps the absolute scale as its default, because the timeline's per-lane
+      stubs are rows compared with each other and that is what makes them
+      comparable; the map's band is one row over one set and has nothing to
+      compare itself with.
+
+1101. **The profile is over the lens's own events and not over `shown`, which
+      the brief did not list as a candidate.** Ruling out candidate 3 found it:
+      selecting Portugal *is* a lens, and `shown` is the lens **plus its
+      one-hop ring** — nine events named, thirty-three drawn. The ring is
+      right in the picture and wrong under a band that says "Portugal". So the
+      band asks `lensView` for `kept` and the pictures keep the ring.
+      `emphasis.js`'s `shown` contract is untouched, as §4 requires, and
+      `bandEvents` is untouched too, so the masthead's count and the standing
+      line still count what the views draw.
+
+1102. **A walked chain's far end is in the picture and not in the profile.**
+      An implicit lens keeps what the reader has just clicked — the open event,
+      both ends of every walked step, an open horizon (`keptRegardless`) — and
+      those are in `shown` but not in `kept`. The brief's sentence is *"every
+      column of the band is Portugal's events and nothing else"*, and a step
+      walked out of an event is the reader's walk rather than the selection's
+      events. The map and the graph draw the chain as they always did.
+
+1103. **A profile whose busiest column holds one event is still the row of
+      ticks it was**, where the brief's test 2 says the profile "reaches full
+      height for its busiest century". Thirteen of `kingdom-of-portugal`'s
+      events fall one to a column at any width this band is drawn at; drawing
+      them all at the band's full height would be the picture claiming a heap
+      where there is a single record. The test says the property that is
+      actually true and is the one the diagnosis is about: the tallest column
+      is the band's body or the tick, and never the middling four-to-six
+      pixels the absolute scale produced.
+
+1104. **The masthead's density hint was removed everywhere and not only on the
+      map**, where §2 says "the masthead's density hint on the map". The
+      masthead is one bar across three views and a hint that appeared on two of
+      them would be a per-view masthead — a new thing to build and a new thing
+      to explain. It had nothing left to do on either: the timeline draws its
+      own band and its own density, and the graph ignores the window since §3.
+
+1105. **`arrangementKey` lost its `margin` parameter rather than keeping it
+      unused.** Nothing passes one now and a parameter that is always null is a
+      reader's question with no answer. The two callers are this file and
+      `tests/arrangement.test.mjs`, both changed in the same commit.
+
+1106. **The graph's lanes are chosen with no window at all.** `lanesFor` takes
+      one to weight which actors get a lane and which band an event lands in
+      (lanes.js, untouched). A graph that draws every date and still ordered
+      its lanes by a window would have the band silently rearranging a picture
+      that does not obey it — and would put the band back in the arrangement's
+      key through the side door, which is the thing §3 removes. The timeline
+      still passes its own.
+
+1107. **Three shot definitions were removed and their pictures kept**:
+      `m74-graph-rest`, `m75-map` and `m75-map-phone`. All three photograph
+      rules this milestone replaced. Re-pointing one would have left a sentence
+      in `screens.mjs` describing something else and deleting the PNGs would
+      have thrown away the only record of what M74 and M75 looked like — which
+      is deviation 997's own reasoning, three milestones later.
+
+1108. **The first-paint table is a fresh before/after on this machine and not a
+      comparison with the numbers in M75's own table.** Lane B's M42 has landed
+      on `m0` since M75 was measured, so the corpus behind both columns here is
+      larger than the corpus behind M75's; what transfers is the question, so
+      both columns were measured here, in one session, on `origin/m0` in a
+      worktree and on this branch's head.
+
+## M77 — the graph read as the walk, the timeline titled, grouping gone
+
+Three instructions from the owner on 21 September, each with a screenshot.
+Lane A, on the branch `m77`.
+
+### Section 1's measurement, before anything was changed
+
+What is actually on the graph with a narrative open. Headless Chromium at
+1440 × 900, on the commit that claimed the milestone, both narratives the
+atlas holds. A label is *truncated* when the text drawn ends in an ellipsis;
+a node is *the walk's* when it carries `of-narrative`; an edge is *the walk's*
+when its two ends are the two events of one of the narrative's own edge steps.
+
+| | `who-was-buying` | `how-the-colonial-war-ended-the-regime` |
+|---|---:|---:|
+| nodes drawn | 41 | 37 |
+| of them the walk's | 28 | 12 |
+| of them the one-hop ring | 13 | 25 |
+| labels drawn | 14 | 14 |
+| of them truncated | **8** | 1 |
+| of them naming a node outside the walk | 3 | **8** |
+| walk nodes carrying a label at all | 11 of 28 | 6 of 12 |
+| walk nodes named in full | **4 of 28** | 6 of 12 |
+| edges drawn | 61 | 43 |
+| of them the walk's own steps | 20 | 11 |
+| of them not the walk's | **41** | **32** |
+| edge types drawn at once | 5 | 5 |
+| ink opacities drawn at once | 3 | 3 |
+
+And the note: `The map is looking at part of the world…` is drawn over the
+picture whenever `?bbox=` is in the state, which is after any pan or zoom of
+the map — which is how the owner's screenshot has it.
+
+**The diagnosis is not "too many labels". It is that the labels are not the
+walk's.** On `how-the-colonial-war-ended-the-regime` eight of the fourteen
+names on the page belong to events the reader did not ask about, and half the
+walk's own steps have no name at all. On `who-was-buying` four of the
+twenty-eight steps are named in full. The picture the owner called clouded is
+two thirds ink that is not the argument — 41 of 61 edges and 32 of 43 — with
+the argument itself unreadable underneath it.
+
+The cause is that nothing in the drawing knows what a lens is. Labels are
+ordered by weight and cut to the room beside them (`label-fit.js`, M61), which
+is the right rule for a picture of everything and the wrong one for a picture
+of one argument: the ring's heaviest events outrank the walk's lightest steps
+and take the room. The five edge types and three confidences are drawn the
+same whether an edge is a step of the walk or a neighbour of one.
+
+### What section 1 changed, and why that
+
+**The direction the owner gave is "fewer things always visible", and the
+measurement says what to take away.** It is not the number of labels — there
+were fourteen on a page of forty-one marks — it is that they were the wrong
+fourteen and half of them were not names. So three rules, in one place each.
+
+1. **A name is drawn whole or it is not drawn at all** (`src/graph-view/labels.js`,
+   new). The cut of M61 is gone from the drawing; what is left of M61 is its
+   arithmetic (`label-fit.js`: how wide a name is at this zoom, where the text
+   starts, the slice of the picture a label took at the world view). A name
+   that does not fit waits for the pointer, which is where the mark's own
+   `<title>` has always carried the whole of it — and now also a drawn label,
+   in a layer of its own over the picture, written while the pointer is on the
+   mark and rubbed out when it moves off. It is outside `render` and in no
+   render key: it is the reader's finger and not a fact about the picture.
+2. **With a lens on, the lens is what is named.** The candidates are
+   `workingSet`'s `lensFocus` — for a narrative, the walk — in the narrator's
+   own order, so the first step has first pick of the room. The ring is not
+   named at all. At rest nothing has been asked and the rule is the one it was:
+   the heaviest marks on screen, every one of them past `LABEL_ALL_ZOOM`.
+3. **With a lens on, the lens's own links are the ones in ink.** A line both of
+   whose ends are in the focus set is drawn as it was; every other line carries
+   `lens-near`, the class the ring's marks already carry, and is drawn at 0.16.
+   At rest no line is faint, because nothing has been asked.
+
+**What made rule 1 affordable is that a label may be written on a nearby free
+line, with a hairline tying it back to its mark.** This is the "or the layout
+makes room for it" of the brief, and the measurement is why it is that and not
+something else: 22 of the 28 steps of `who-was-buying` sit on **one line** of
+the layout (y = 266 of a field running 26 to 506), with the whole field free
+above and below. The room was already there; nothing reached it. A label is
+offered its own line first, then one above, then one below, out to eighteen
+lines inside a lens and two at rest — at rest a name three lines from its mark
+would be an anchor nobody could tie, and there is no walk for it to belong to.
+
+Two things were tried and rejected on the picture. **Writing a clipped label on
+the other side of its mark**: the graph's labels are packed against their
+neighbours, so the left is never free and the result was full names drawn over
+full names (worse than the cut). **Leaving the leaders out**: at 0.45 opacity
+and 0.75 px they were invisible in the screenshot, and a name a hundred units
+from its mark with nothing joining them is a name belonging to nothing.
+
+### The same measurement after
+
+Same instrument, same two narratives, same 1440 × 900.
+
+| | `who-was-buying` | `how-the-colonial-war-ended-the-regime` |
+|---|---:|---:|
+| nodes drawn | 41 (41) | 37 (37) |
+| labels drawn | 28 (14) | 12 (14) |
+| of them truncated | **0** (8) | **0** (1) |
+| of them naming a node outside the walk | **0** (3) | **0** (8) |
+| walk nodes carrying a label | **28 of 28** (11 of 28) | **12 of 12** (6 of 12) |
+| walk nodes named in full | **28 of 28** (4 of 28) | **12 of 12** (6 of 12) |
+| labels tied back by a leader | 22 | 0 |
+| lines drawn faint | **41 of 61** (0) | **28 of 43** (0) |
+| the note about the map's viewport | gone | gone |
+
+(M76's numbers in brackets.) Nothing was removed from the picture: the same
+marks and the same lines are drawn. What changed is which of them are read.
+
+`docs/screens/m77-graph-before.png` and `docs/screens/m77-graph.png` are the
+two pictures. Before: `The Atlantic…`, `Dutch B…`, `The Ab…`, `The Revolu…`,
+four full names out of twenty-eight, a paragraph of note across the top and
+sixty-one lines in five patterns and three inks. After: the twenty-eight steps
+of the argument, each one named, the twenty-one links between them in ink and
+the forty other lines behind them.
+
+### The graph at rest and with an event chosen
+
+The same rules, and the brief asks that they read well there too. At rest there
+is no lens, so rule 2 is the old one and rules 1 and 3 are the change: the
+heaviest marks on screen are still what is named, and what does not fit is not
+drawn rather than cut. That is **fewer labels at rest** and it is the point.
+With an event chosen (M65) the choice *is* a lens of one, so the event and its
+parts are what is named and their links are what is in ink — which is the
+picture the owner asked M65 for, read through the names.
+
+### Section 2: what the resting timeline looks like now
+
+`docs/screens/m77-timeline-before.png` and `docs/screens/m77-timeline.png`.
+
+**Every bar carries its title.** There is no stacking on the timeline any more
+— no `clusterPoints`, no `rect.bar.stack`, no `+n` — and the packing reserves
+the room a title needs beside its bar (`packRows`'s new `extra`), so two bars
+that do not overlap can never have two titles that do. The rows are as many as
+that takes: at the whole extent the repository's corpus asks for about
+seventy-five of them, the pane holds thirty-four at the 22 px floor, and the
+pane scrolls. A row never shrinks below that floor: a title at 14 px in a 14 px
+row has its ascenders in the row above, and the brief's rule is that a title
+never disappears to make room.
+
+Two things follow from that and are worth writing down. The scale now stops
+short of the right edge — 96 px, or seven per cent of the drawing where that is
+less — because the last century's events were being named into the pane's edge;
+a long title still runs to it, as a long label on the map does. And the rows no
+longer come down when the pane is short — `lanesThatFit` is gone — so
+`laneHeightFor` is the whole of the rule and it only ever *grows* a row into
+room going spare, as far as `LANE_MAX`.
+
+**A click on an umbrella opens it.** It needed no new mechanism: choosing an
+event has been a lens on it and its parts since M65, and the bar has been a
+click target since H4c. `docs/screens/m77-timeline-opened.png` is the Estado
+Novo opened — the regime's bar and the twenty-five events inside it, each with
+its own title, and nothing else. A click on the empty ground puts it down
+again, which is the one click back the brief asks for.
+
+At phone width the titles run to the edge of a 390 px drawing: there is not
+room for a bar, a scale and a name in 390 px, and the honest answer is that a
+reader on a phone reads the beginnings of the titles and narrows the window.
+`docs/screens/m77-timeline-phone.png`. That is a limit and not a regression —
+before this milestone there were no titles at all there.
+
+### Section 3: what grouping's removal took out
+
+`src/grouping.js` is gone. It was two things and only one of them was the
+grouping, so the file was split rather than deleted: the lens chips — one chip
+per focus with its own ×, "all of these" and "show everything" — are
+`src/lens-chips.js` now and are unchanged.
+
+What went with the picker: the `<select>` of four groupings and its panel of
+lanes to tick and reorder; the `group` and `lanes` state, and every line in
+`state.js` that parsed or wrote them; `GROUPS` in `vocab.js`; `lanesFor`,
+`availableLanes`, `laneExplain`, `LANE_CAP` and `OTHER_ID` in `lanes.js`;
+`bracketsIn` in `large.js` and the bracket the timeline drew with it;
+`lanesThatFit` in `timeline.js`; the "Drawn in the … lane" paragraph on the
+event card (`drawnHtml`) and the `lanes(s)` helper in `panel.js` that fed it;
+and twenty-two rules of `style.css`.
+
+What is left in `lanes.js` is the packing and `barBox` — which is what `none`,
+the default and what the atlas always opened on, always used. **The graph has
+no bands at all now**: `arrangementOf` passes an empty lane list, which is the
+one it always passed at rest, so `layoutGraph` draws one unnamed field.
+
+A `?group=actor&lanes=salazar,pide` in a link shared before today opens the
+atlas on the default rows, writes neither parameter back and raises no error —
+deviation 848's rule for every parameter this atlas has retired.
+
+### What first paint costs, against M76's numbers
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, cache off, one
+browser, one instrument, in one session: `origin/m0` (M76) in a worktree and
+this branch's head.
+
+| | M76 | M77 |
+| --- | ---: | ---: |
+| first contentful paint | 40 ms (36–88) | 40 ms (32–80) |
+| load event | 197 ms (189–252) | 206 ms (190–259) |
+| requests to that frame | 115 (115–116) | 116 (116–117) |
+| JavaScript files | 85 | **86** |
+| JavaScript bytes | 1,122,903 | **1,114,928** |
+| all bytes | 6,244,014 | **6,234,747** |
+| marks on that frame | 15 | 15 |
+
+**One more file and 7,975 fewer bytes.** The file is `graph-view/labels.js`;
+`grouping.js` became `lens-chips.js` and is a rename, so the net is one. The
+bytes are the grouping picker, its panel, the lane machinery and the dead CSS,
+less what the placer and the new comments add back. First contentful paint is
+the same number and the load event moved 9 ms inside a 60 ms spread; neither is
+a claim, and neither the placer nor the timeline's rows is reached before the
+core has landed, long after the first paint.
+
+### Tests
+
+`tests/m77.test.mjs` (11) and `tests/m77-browser.test.mjs` (6), both written
+before the behaviour they judge. The brief's seven, in order: every walk node
+named in full and no label cut (browser 1); nothing outside the walk named
+until the pointer is on it, and named while it is (browser 2); no note about
+the map's viewport, with the legend and Export still there (browser 3); every
+bar titled and no `+N` anywhere (browser 4); a bar with children narrowing to
+it and its children, each titled, and one click back (browser 5); no grouping
+control in the document and `?group=actor` opening the atlas with the default
+rows and no error (browser 6). The seventh — no test pins a count or a pixel —
+is a property of all seventeen: what is asserted is a name against its own
+record's name, a rectangle against its neighbour's, a class, a count of zero,
+and *more* or *fewer* rather than *n*.
+
+Changed first, as the brief requires:
+
+* `tests/state.test.mjs` — the three tests about `?group=` and `?lanes=`
+  became one about a retired parameter being read into nothing;
+* `tests/lanes.test.mjs` — fourteen tests about the named lanes removed, the
+  packing's own kept whole;
+* `tests/large.test.mjs` — the four bracket tests removed;
+* `tests/arrangement.test.mjs`, `tests/graph-layout.test.mjs`,
+  `tests/layout-worker.test.mjs` — the two that used `lanesFor` to build lanes
+  for `layoutGraph` build them by hand now, in four lines each;
+* `tests/timeline-rows.test.mjs` — rewritten: the row *count* is not a question
+  any more, and what is left is that a row grows into spare room as far as the
+  cap and never shrinks below the height a title needs;
+* `tests/timeline-browser.test.mjs` — the named-grouping test and the bracket
+  test removed; the relayout test moved to the fixtures, where the rows still
+  have room to grow; the glyph threshold read on the fixtures rather than under
+  a grouping; *on a short pane the floor holds and the pane scrolls* became the
+  ordinary case rather than the reader's-own-lane-list case;
+* `tests/m60-browser.test.mjs` — *with the lanes and the stacks it always drew*
+  became *and no stack, and no +n*;
+* `tests/graph-browser.test.mjs` — *grouping into bands crowds the picture*
+  removed; the merged-line test asks for the same window with no grouping;
+* `tests/phone-browser.test.mjs`, `tests/registry.test.mjs`,
+  `tests/render-key.test.mjs`, `tests/site.test.mjs` (through `CLAUDE.md`) —
+  the names and the vocabulary.
+
+171 suites: 1,680 assertions pure, 228 in a browser, 0 failing, 0 skipped.
+`node tools/validate.mjs --index`: 10,653 records, 0 errors, 238 warnings — the
+same counts as on `origin/m0`, since this milestone writes no record.
+
+### Deviations
+
+1109. **A graph label is never cut, at rest as well as inside a lens.** §1's
+      bullet is under the narrative heading and could have been read as a rule
+      for a lens alone. Two rules for one picture would mean a name that was
+      `The Ab…` at rest and whole under a lens, and the reader would have to
+      know which picture they were in to know whether a label was a name. It is
+      one rule, and at rest it means *fewer labels*, which is the sentence the
+      whole section is built on.
+
+1110. **A label may be written on a line other than its mark's, with a leader.**
+      The brief offers "the layout makes room for it (M61's rule) or it waits
+      for hover". Neither alone gets to §5's test 1: M61's rule is about size
+      on screen and makes no room, and hover for 24 of 28 steps is a walk the
+      reader cannot read. The room is in the layout — 22 of 28 marks on one
+      line with the field free above and below — and this is what reaches it.
+      The leader is a hairline in `--cobalt-soft` at 0.6 opacity; no new token
+      and no new value.
+
+1111. **The lens's labels are not capped by M61's `SLICE`.** The slice is the
+      share of the picture a label was allowed at the world view, and it is what
+      keeps a fifty-character title out of a picture of everything. Inside a
+      lens the reader has asked about these events by name; a walk whose steps
+      have long names is a walk with long names, and test 1 asks for all of them
+      in full. At rest the cap stands exactly as M61 left it.
+
+1112. **An edge is "the lens's" when both its ends are in the focus set, not
+      when it is a step of the narrative.** §1 says *its edges are the ones
+      drawn in ink*. Twenty-five of `who-was-buying`'s twenty-eight steps are
+      edges and the walk's events carry twenty-one links between them; inking
+      the twenty-five and greying the other four would be the picture claiming
+      that a link between two steps of the argument is not part of it. One rule
+      for every lens, and the narrative is the case it was written for.
+
+1113. **`src/grouping.js` was split rather than deleted.** §3 says the file
+      goes. Its back half is the lens chips, which are not the grouping and
+      which §4 leaves untouched — the chips are how a reader sees a lens is on
+      at all. They are `src/lens-chips.js` now, unchanged line for line, and
+      the container is `#lens-chips`.
+
+1114. **The event card's "Drawn in the … lane" paragraph went too.** §3 names
+      `main.js` and `lens.js` as the files that lose their imports and does not
+      mention the card. The paragraph stated which lane an event was drawn in
+      and by what rule; with one arrangement of unnamed rows there is no choice
+      to explain, and the sentence it printed for the default was *"Drawn in a
+      packed row: with no grouping the timeline fits the bars where they go"*,
+      which is now a description of the only thing that can happen.
+
+1115. **`bracketsIn` and the bracket went with the named lanes.** They were
+      drawn only where a parent's parts shared a *named* lane, which is now
+      never. What says an event has parts is the ring around its bar, on all
+      three views (`parts.js`), which is what M30c made it for.
+
+1116. **`packRows` keeps its `maxRows` and nothing passes one.** The timeline
+      is explicitly uncapped now. The parameter is kept because a caller with a
+      ceiling is a caller this pure function should still answer, and because
+      the branch is the one place the pending heap's own top is read — the
+      alternative was deleting a tested branch to remove a parameter.
+
+1117. **`?group=` was removed from a shot definition rather than the shot.**
+      `glyphs-map` was taken on `?fixtures=1&group=region&…`; the picture is of
+      the twelve symbols and not of the lanes, so the parameter went and the
+      shot was taken again.
+
+1118. **The screenshots were taken with `--only` and no other picture was
+      rewritten.** §6 asks for every other picture `tools/screens.mjs` rewrites
+      to be restored; taking only the six this milestone adds or changes is the
+      same end with nothing to restore, and it is what `--only` is for.
+
+1119. **The graph's phone shot is a lens on an actor and not the narrative.**
+      Opening a narrative opens its card, and on a phone an open card is a sheet
+      over the whole view (`phone.js`) — the picture would have been of the
+      sheet. A lens on one actor is the same rules at work with nothing open.
+
+1120. **The timeline redraws a frame after a resize rather than inside the
+      observer's callback.** The drawing is regularly taller than its pane now,
+      so the first drawing brings a scrollbar, the scrollbar changes the pane's
+      width, and a render inside the callback is the loop Chromium reports as
+      *ResizeObserver loop completed with undelivered notifications*. It always
+      settled in one turn and the picture was right either way; what it left was
+      a console error on an ordinary visit.
+
+1121. **The timeline's rings are drawn through a pool of their own.** They
+      shared the bars', and a bar leaving the packed rows for the layer of what
+      the reader is holding shifted every element after it by two — so a pooled
+      element that had been a bar came back as a ring and lost the `<title>` a
+      ring does not have: seventy-three titles removed and remade on a click
+      that changes one bar. Found by the churn assertion of
+      `tests/timeline-browser.test.mjs`, which M77's own labels made fail.
+
+1122. **The timeline's scale stops 96 px short of the right edge, or seven per
+      cent of the drawing where that is less.** It stopped 12 px short, which is
+      enough to keep the last year's bar off the edge and not enough for the
+      name beside it. Not the width of a title, which would be a sixth of the
+      drawing spent on air: the room a short one needs, with a long one still
+      running to the edge as every label on the map does. The share under it is
+      the phone: 96 px of a 390 px pane is a third of what is left after the
+      left gutter, and a flat 96 took the window band — the one control on that
+      view — from 44 px to 38, under the forty a thumb needs. Found by
+      `tests/phone-browser.test.mjs`, *the whole extent is legible on a phone*,
+      which is exactly what that assertion is there for.
+
+## M78 — the browser suite honest under load, round two
+
+The check went red seven times on 21 September on trees that were green
+elsewhere, every time a browser test and never a wrong value that survived a
+second look. Lane A, on the branch `m78`. The measurement is
+`docs/m78-flakes.md`; this is what it found and what was done about it.
+
+### Before: three of five red, here
+
+Five browser passes on the claimed commit, the way the check runs that pass
+(`--test-concurrency=1` over the 29 browser files), nothing changed between
+them:
+
+| pass | wall | result |
+| --- | --- | --- |
+| 1 | 249 s | **red** — `m77-browser` 95, `the pointer names it (still loading)` |
+| 2 | 248 s | green |
+| 3 | 246 s | green |
+| 4 | 245 s | **red** — `timeline-browser` 214, `295 !== 280` |
+| 5 | 244 s | **red** — `m77-browser` 95, the same |
+
+**Three of five, on two tests the brief had not named.** The runner, on the
+same commit, was green twice (runs 1150 and 1152) — the seven reds were on
+earlier trees.
+
+### The number that decided what could be changed
+
+Before any wait was touched, `until` — the poll every wait in the suite is
+written over — was instrumented to print how many of its 200 polls each wait
+actually used, and one whole browser pass was run under it. **366 waits, and
+the worst honest one used six.** 282 of them answered on the first poll.
+
+So no bound was raised. `tests/browser.mjs` keeps its 200 × 50 ms,
+`--test-timeout` and the two-pass arrangement are untouched, and the brief's
+question about the M63-era 12 s waits is answered: they are not running out of
+time here, they are ending too early or asking the wrong question.
+
+### The eleven tests, and what each waits for now
+
+A title arrives with its century and not with the picture (`src/attributes.js`):
+a bar, a mark and a node are drawn unlabelled and labelled when their shard
+lands, and until then the control says `still loading`. **A count of labels is
+therefore the same number on either side of a shard landing** — which is what
+six of these tests were waiting on.
+
+| test | the proxy | what it waits for now |
+| --- | --- | --- |
+| `m77-browser` 94 | the walk's marks unchanged 50 ms apart | every step carries its name and has it drawn |
+| `m77-browser` 95 | a label exists | every mark on the page carries its own name |
+| `m77-browser` 97 | the label count unchanged 50 ms apart | no bar whose title is not drawn as a label |
+| `m77-browser` 98 | the bar count unchanged after the click | fewer bars than the resting picture, and all named |
+| `timeline-browser` 214 | the svg's height is not the tall one | the height moved **and** the pane holds exactly the drawing |
+| `timeline-browser` 216 | the label count unchanged 50 ms apart | no bar left waiting for its name |
+| `timeline-browser` 217 | a rect in the bands layer | the band's label carrying text |
+| `timeline-browser` 212, 213, 215, 224, 225, 226 | `READY`, a lane existing | the pane holds exactly the drawing (`fitOf`) |
+| `m74-browser` 79 | the transform is not the one read a moment ago | the pane changed, the camera moved, and every step is inside it |
+| `graph-labels-browser` 32 | a label exists | every mark named, so the longest is the same mark every run |
+| `map-browser` 126 | the rivers group emptying | the `?layers=` the click writes a frame later |
+
+Each has its own commit, saying what the proxy was and what replaced it. Two
+of them — `m77-browser` 94 and 98 — had not dropped yet and are the same wait
+as the two that had. `map-browser` 126 was found by the first re-measurement,
+which is a re-measurement doing its job.
+
+**No test's assertion changed.** `until` was added to `tests/browser.mjs`
+beside `waitFor` for exactly that reason: it is the same poll without the
+assertion on the end, so a wait that *is* the test's own assertion can be
+waited for and then asserted, and a real defect is reported as *every bar
+carries its title: [three ids]* rather than as a timeout that threw the ids
+away. `named(selector)` is the one predicate for a name, over `LOADING_LABEL`
+rather than over a count.
+
+### Two defects in the atlas, which are the only display changes here
+
+**The graph drew marks it could never name.** Since M76 the graph is not
+windowed — the owner asked for a picture that always shows all dates — and
+`onScreenShards` in `main.js` still pinned the shards the *band* covers. The
+rest are fetched unpinned, the cap of four evicts the oldest, and a record
+carried only by an evicted shard is stripped of its title. On
+`?view=graph&from=1900&to=1999`, three marks of eighty-seven were drawn and
+still read `still loading` ten seconds after all twelve shards had landed —
+the same three every round, and in files the page had fetched. It is also what
+made `graph-labels-browser` 32 pick a different mark run to run. What the graph
+draws is now pinned while the graph is the view; the map and the timeline are
+untouched, because there the band still decides what is drawn. Its test is in
+`spine-pages.test.mjs` and fails on the commit before the fix.
+
+**The timeline stopped laying itself out.** Make the window short and tall
+again and the rows could stay at the short pane's height for ever, the pane
+scrolling a drawing three times smaller than itself. The ResizeObserver kept a
+string of the pane's size and skipped the render when it had not moved — but
+read that size *live, a frame after the observation*, so an observation was
+thrown away whenever the pane came back to the remembered size in between. The
+atlas draws the timeline from more than one place (`remeasure` in `main.js`),
+so the pane could be observed at 295, drawn at 295 by that other path, and be
+back at 795 by the time the frame ran. `render` already asks the right
+question — its key carries the pane's size and is set by whoever last drew —
+so the guard was redundant as well as wrong, and a frame later,
+unconditionally, is both the loop protection M77 added and the whole of the
+guard. Reproduced at 3 of 90 rounds with a fresh browser each round, 0 of 60
+after. Its test is `timeline-browser` 215, which is what caught it.
+
+### What was left alone
+
+`spine-pages` 186 and `compose-browser` 1, the two the brief named that are
+not races: both of their waits are already their assertions and both answered
+on the first poll here. Their shape is `withBrowser`'s own thirty-second
+deadline for an evaluation the page never answers, which M42 wrote down the
+same afternoon as its deviation 1009; it was reproduced here once at six times
+the check's own load. That deadline is a candidate for its own measurement and
+raising it is not this milestone's to do.
+
+Nothing was skipped, deleted or marked `todo`. The browser pass was 228 tests
+and 0 skipped before and is 229 and 0 after — the one added is the first
+defect's.
+
+### After: five of five, on both machines
+
+| pass | wall | result |
+| --- | --- | --- |
+| 1 | 248 s | green, 229 of 229, 0 skipped |
+| 2 | 250 s | green, 229 of 229, 0 skipped |
+| 3 | 251 s | green, 229 of 229, 0 skipped |
+| 4 | 248 s | green, 229 of 229, 0 skipped |
+| 5 | 249 s | green, 229 of 229, 0 skipped |
+
+And five `workflow_dispatch` runs of `validate.yml` on `m78`, on the same
+tree: runs 1164, 1165, 1166, 1167 and 1168, all five green, on the head
+`7fc97ed6`. The two `push` runs on that head are green beside them and are
+not counted in the five.
+
+### Deviations
+
+1123. **The sandbox reproduced it, at three of five, and on two tests the brief
+      had not named.** The brief's table is seven reds on the runner across
+      five tests; the five passes taken here before anything was changed were
+      red three times, on `m77-browser` 95 and `timeline-browser` 214, neither
+      of which is in that table. M63's lesson holds: a rate taken on the
+      machine you can instrument is worth more than a list of what went red
+      where you cannot, and the table is where to start looking rather than the
+      list of what to fix.
+1124. **Every wait in the suite was measured before any of them was changed.**
+      `until` was instrumented to print how many of its 200 polls each wait
+      used, and one whole browser pass run under it: 366 waits, 282 answering
+      on the first poll, and **the worst honest one using six**. That number is
+      what ruled out the obvious wrong fix. A longer bound would have bought
+      nothing here, and it is also what says the M63-era 12 s waits are not
+      short of time — they are ending early or asking the wrong question.
+1125. **`until` is `waitFor` without the assertion on the end.** A wait that is
+      a *precondition* should fail with `timed out waiting for …`, because a
+      page that never becomes what the test is about has nothing else to say.
+      A wait that is the test's **own assertion** should not: `timed out
+      waiting for the bars to be named` throws away the ids the assertion was
+      about to print. So the two are separate and the choice is the test's,
+      and eight of the changed tests take the second.
+1126. **One predicate for a name, over the loading label and not over a count.**
+      `named(selector)` in `tests/browser.mjs`: every element the selector
+      reaches carries a title that is not `LOADING_LABEL`. It imports the
+      constant from `src/attributes.js` rather than repeating the string, so a
+      test cannot disagree with the interface about what "not named yet" looks
+      like.
+1127. **A count of labels is the same number on either side of a shard
+      landing.** This is the whole of six of the eleven races, and it is worth
+      saying as a rule rather than as six incidents: a wait of the shape *the
+      count has not moved in 50 ms* is satisfied from the moment the picture is
+      drawn until the moment the last century lands, and says nothing about
+      names at all. Measured: the walk is drawn at 397 ms with 26 of its 28
+      steps still loading, and the last name lands at 639 ms.
+1128. **One resize lays a drawing out twice, and the first is measured against
+      a pane that is already gone.** A MutationObserver over the timeline's
+      `height`: `280` against a pane already at `295`, then `295`, two to four
+      milliseconds later, in all three rounds. Any wait of the shape *the
+      number changed* ends on the first of those. What tells them apart is the
+      drawing's own consistency with its pane, which is `fits`'s first
+      assertion, so that is the wait.
+1129. **The graph's camera moves twice at the opening size, after the picture
+      is drawn.** 417 ms and 421 ms in one round, 395 and 399 in another: the
+      arrangement lands and the frame is taken again. A `before` read between
+      them is not what the page is holding, so *the transform is not `before`*
+      is satisfied without a resize having been taken up at all. The reframe
+      has no signal of its own in the DOM, so what is waited for is the three
+      things that are observable and are what the test asserts: the pane is not
+      the one measured, the camera has moved, and every step is inside it.
+1130. **`READY` is not settled.** A lane existing is as true of the first
+      layout as of the last, and the timeline is laid out twice on an ordinary
+      visit with nothing resized — the masthead wraps and a scrollbar comes and
+      goes. One run in six read `a 1400 px window: 1295 !== 1276` on a page
+      nobody had touched. Every reading of `FIT` that feeds `fits` now goes
+      through `fitOf`, which waits for the drawing to be the pane's and then
+      reads.
+1131. **The graph drew marks it could never name, and that is M76's.** Since
+      M76 the graph is not windowed and `onScreenShards` still pinned the
+      band's centuries; the rest are fetched unpinned, the cap of four evicts
+      the oldest, and a record carried only by an evicted shard is stripped of
+      its title. Three marks of eighty-seven on
+      `?view=graph&from=1900&to=1999`, the same three every round, still
+      reading `still loading` ten seconds after all twelve shards had landed.
+      A picture the atlas has the names for and will not say. **A display
+      change, and one of the two this milestone makes.**
+1132. **The timeline's ResizeObserver could throw an observation away for
+      good.** It kept a string of the pane's size and skipped the render when
+      it had not moved, reading that size *live, a frame after the
+      observation*. The atlas draws the timeline from more than one place, so
+      the pane could be observed at 295, drawn at 295 by `remeasure`, and be
+      back at 795 by the time the frame ran — and the rows then stayed at the
+      short pane's height for ever. `render` already carries the pane's size in
+      its own key and is set by whoever last drew, so the guard was redundant
+      as well as wrong. **The second display change, and the last.**
+1133. **A browser reused between rounds hid it; a fresh browser each round
+      found it.** 1132 survived 105 attempts — idle, under load, at the test's
+      own interleaving, and eight full runs of the file — because every one of
+      those loops drove one browser through many rounds. The suite opens a new
+      one per test. Thirty rounds with a fresh browser each found it once, and
+      the recorded observer decisions made the cause plain in one reading. A
+      reproduction that does not match how the thing is actually used is not a
+      reproduction.
+1134. **`spine-pages` 186 and `compose-browser` 1 are a deadline and not a
+      race, and were left alone.** Both of their waits are already their
+      assertions and both answered on the first poll here. Their shape is
+      `withBrowser`'s own thirty-second bound on an evaluation the page never
+      answers — M42's deviation 1009, written the same afternoon — and it was
+      reproduced here once at six times the check's own load. Saying so is
+      worth more than changing a bound this milestone has no measurement for.
+1135. **The re-measurement found a twelfth test, and that is the point of a
+      re-measurement.** The first five after-passes were four of five, on
+      `map-browser` 126 reading `?layers=` in the click rather than on the
+      frame the address bar is written on. Two tests higher up that same file
+      already wait for the link and say why. The rate is not the deliverable on
+      its own: a rate that is not five of five is a test that has not been
+      found yet.
+
+## M79 — an event may be part of several umbrellas
+
+Lane A, on the branch `m79`. The owner, 22 September, shown the list of
+umbrellas: *"Can't we have many umbrellas for the same event? For example, the
+angola independence is both under the Portuguese third republic and african
+decolonization."*
+
+### The record: three shapes, one reading
+
+`parent` admits **a list of ids** as well as one id or null. One parent is a
+list of one, and the three spellings are one answer:
+
+| in the file | what it means |
+| --- | --- |
+| absent, or `null` | part of nothing; the event is main |
+| `"estado-novo-1933-1974"` | part of that one, which is what every record in `data/` says today |
+| `["third-republic", "decolonisation-of-africa"]` | part of both, in the order the writer put them in |
+
+**`parentsOf(event)` in `src/parts.js` reads all three and everything reads
+through it.** It keeps the writer's order — the card prints "part of" in it —
+and deduplicates nothing, because the same parent twice is rule 24's error and
+a helper that folded it would take the rule's evidence away. `src/parts.js` is
+now being part of something in both directions: `parentsOf` up, `isParent`
+down.
+
+### What was decided about the records already here, and why
+
+**None of them is rewritten.** All 329 events under `data/` that carry a
+`parent` spell one id, every one of them is valid as it stands, and the helper
+reads it as a list of one. Rewriting them into `["id"]` would have touched 329
+files, moved every one of their `revised` dates and their history shards, and
+said nothing a reader could see — churn that makes a record look edited on a
+day nobody edited it. The index is the same decision
+one layer down: the spine's `parent` column became `idOrIds`, which writes the
+record's **own** spelling, so an event with one parent is one integer as it
+always was and only an event with two costs an array. The built index is
+byte-identical to the one on `m0`.
+
+### Rule 24, per parent
+
+What the rule always said, once for each parent: the parent is an event, an
+active event's parent is active, and no path of `part of` closes on itself.
+The cycle walk is **depth-first over every parent** and no longer a climb up
+the first — a cycle that closes through a second parent is a cycle, and a walk
+that followed only the first id would never meet it. Two things only a list
+can be wrong about are errors: **the same parent twice**, which says nothing
+the one entry did not, and an event **listing itself**. The warning
+`child-outside-parent` fires **once per parent and names which**: an event may
+sit squarely inside its regime and reach outside the movement it also belongs
+to, and one warning on a record with three parents would leave the reader
+guessing which.
+
+### The display: either umbrella opens on it
+
+The resting picture is unchanged in meaning — a main event is one that is part
+of nothing the atlas is drawing, and one active umbrella out of three is
+enough to take it out. What changed is that **both ends of "part of" are
+plural**:
+
+* `childrenOf` in `src/data.js` is built from every parent, so opening an
+  umbrella shows every event that has it *among* its parents, on the map, the
+  graph and the timeline alike;
+* `parentsOf` in `src/lens.js` climbs every parent, so a lens keeps **all** of
+  its events' umbrellas in the picture, dimmed — a reader who walked down into
+  an event can click back out by whichever umbrella they came in through;
+* the **ring** (`src/parts.js` → `isParent`, over `childrenOf`) is drawn for a
+  parent whose only child names it *second*;
+* the **card** (`src/panel/event.js`) says "part of" each umbrella, one line
+  each, in the record's own order;
+* `src/attributes.js` pins the shard of each umbrella, `arrangement.js`'s "top
+  level only" leaves out an event with *any* parent, `src/validate/core.js`'s
+  `subtreeWeights` credits every ancestor once, `src/references.js` carries a
+  second row so a rename rewrites a list as well as an id,
+  `src/contribute/bundle.js` shows the first umbrella in its one select and
+  `applyValues` keeps a list the form did not ask about, and
+  `tools/m42-pool.mjs` counts main events the same way.
+
+The window band's profile, the categories and the lens are otherwise
+untouched.
+
+### The fixtures and the pictures
+
+`fixture-event-u` is a second umbrella whose **only** child is
+`fixture-event-h`, which names it second; `fixture-event-t` still spells its
+one parent as a string. `tests/m79-browser.test.mjs` opens each umbrella on
+all three views and asks for the child, opens the child and asks for both
+umbrellas, and reads the card's two "Part of" lines in order.
+`docs/screens/m79-umbrella-first.png` and `m79-umbrella-second.png` are the
+same event opened from either parent; no other picture was rewritten.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,189 records, 5 regions, 0 errors, 263
+warnings** — unchanged, and nothing under `data/` was touched. `node --test`:
+**1,707 pure and 234 browser, 1,941 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them. No new runtime
+dependency, no build step, no new hex value, token or type size. No record, no
+historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
+1142**.
+
+1136. **One helper named `parentsOf` and a second already called that.**
+      `src/lens.js` exports `parentsOf(topology, set)` — what a *set* of
+      events is part of, all the way up — and the brief asks for
+      `parentsOf(event)`, which is a different question about one record.
+      Both names are right for what they answer and the brief names both, so
+      the leaf one lives in `src/parts.js` and `lens.js` imports it as
+      `partOf`. Two exports of one name in one codebase is how two readings of
+      one field come back.
+1137. **The topology carries the record's own spelling rather than a
+      normalised list.** Normalising a string to `["id"]` in `partsOf` would
+      have made every reader safe without a helper — and would have rewritten
+      every committed index row, put an array where a test reads an id, and
+      left `data/` and `data/index/` disagreeing about the shape of the same
+      field. Carrying the spelling and reading it in one place is the smaller
+      surface, and it is what makes "no record is rewritten" true of the index
+      as well as of `data/`.
+1138. **A new spine type and not an overloaded one.** `id` could have been
+      taught to encode an array, and every other `id` column would then have
+      accepted one silently. `idOrIds` is one line in the encoder, one in the
+      decoder and a row in the table that says which field may be plural.
+1139. **`references.js` gets a second row for one field, and that is the
+      table working.** `['parent']` and `['parent', ITEM]` both stand for
+      `parent`; `rewriteAt` leaves a value alone where the path does not fit
+      it, so each row rewrites the shape it is about and neither touches the
+      other. `tests/registry.test.mjs` is what said the second row was missing,
+      by name, before anything was drawn.
+1140. **The form's one select must not be the thing that drops an umbrella.**
+      `contribute.html` and the review editor ask "Part of" once, and adding a
+      second control is a feature nobody asked for. So `valuesFromRecord` shows
+      the first umbrella and `applyValues` keeps the whole list where the
+      reviewer left the select as they found it; a reviewer who picks something
+      else has answered the question and their one id is written. A round trip
+      through the review dashboard loses nothing either way.
+1141. **The fixture corpus gains one record, not four, and the second umbrella
+      earns a fourth intended warning.** `fixture-event-u` hangs on nothing but
+      the child that names it — being part of something is a display fact and
+      never an argument, so it adds no degree — and `degree-zero` on it is the
+      same warning `fixture-event-h` has always carried. Giving it an edge to
+      silence the warning would have moved the graph fixtures every
+      consequence test is written against. Deviation 711's order was followed:
+      the records committed, then the index rebuilt, then the index committed.
+1142. **`timeline-browser` 217 was red on `m0` before this branch existed, and
+      the claim commit is the proof.** Run 1237, on `70313d9a` — an `m0` tree
+      with one line appended to `STATUS.md` and nothing else — failed on that
+      one assertion, `969 to 958`, and a checkout of `origin/m0` in the sandbox
+      failed on it twice at `969 to 957`. `Math.abs(after - before) < 10` on a
+      drawing of 969 elements: M42's filing pass had landed
+      more rings in the bars layer, which is the paragraph written directly
+      above the assertion. It is a share of the drawing now (two per cent, or
+      ten, whichever is larger), as the two bounds above it already are. An
+      absolute bound raised by one per milestone is a bound that means nothing,
+      which is deviation 716's own argument arriving where it was going.
 
 ## M42 — the world at scale (in progress, branch `m42`)
 
@@ -15623,6 +18210,25 @@ M68 started 2026-09-20T23:36:22Z by scheduled
 M68 done
 M72 started 2026-09-21T00:15:10Z by scheduled
 M72 done
+M70 started 2026-09-21T00:14:57Z by scheduled
+M70 done
+M71 started 2026-09-21T00:59:44Z by scheduled
+M71 done
+M73 started 2026-09-21T01:51:43Z by scheduled
+M73 done
+M45b started 2026-09-21T02:16:47Z by scheduled
+M45b done
+M45 done
+M74 started 2026-09-21T06:28:33Z by scheduled
+M74 done
+M75 started 2026-09-21T10:18:34Z by scheduled (branch m75)
+M75 done
+M76 started 2026-09-21T13:05:03Z by scheduled (branch m76)
+M76 done
+M77 started 2026-09-21T13:52:34Z by scheduled (branch m77)
+M77 done
+M78 started 2026-09-21T15:36:12Z by scheduled (branch m78)
+M78 done
 M42 started 2026-09-21T00:49:27Z by scheduled
 M42 started 2026-09-21T04:06:37Z by scheduled
 M42 started 2026-09-21T07:12:12Z by scheduled
@@ -15636,3 +18242,5 @@ M42 started 2026-09-22T02:06:27Z by scheduled
 M42 started 2026-09-22T05:07:06Z by scheduled
 M42 started 2026-09-22T08:06:56Z by scheduled
 M42 started 2026-09-22T10:33:11Z by scheduled
+M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
+M79 done

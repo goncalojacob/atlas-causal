@@ -10,8 +10,11 @@
 // you were choosing; a number field can do neither, because you must already
 // know the year you want.
 //
-// So M64 brings the band back over the map, on demand (`map-band.js`), and
-// this file is why there is still one band and not two. Two bands that can
+// So M64 brought the band back over the map behind a button, and M75 took the
+// button away — the owner, 21 September: *"The dates two-handled band should
+// not be hidden"* — so it is simply on the map (`map-band.js`). Neither run
+// changed a line below this comment, which is the point: this file is why
+// there is still one band and not two. Two bands that can
 // disagree about the same window would be a worse fault than the one being
 // fixed, so the shade, the handles, their labels and every gesture that moves
 // them live here, and the timeline and the map's strip both draw from it.
@@ -24,8 +27,9 @@
 
 import { fromAstronomical, formatYear } from './util/dates.js';
 import { resolveWindow, zoomWindow, decadeOf } from './util/window.js';
-import { densityPath } from './density.js';
+import { densityPath, busiestColumn } from './density.js';
 import { workingSet } from './emphasis.js';
+import { lensView } from './lens.js';
 import { barBox } from './lanes.js';
 
 // How wide a handle is, in the units of whatever drawing it is put into: wide
@@ -54,6 +58,32 @@ export function bandEvents(atlas, state) {
   return atlas.activeEvents.filter((event) => shown.has(event.id));
 }
 
+// **Which events the band draws a profile of**, which since M76 is not the
+// same question.
+//
+// The owner, 21 September: *"If for example I select portugal, the map
+// timeline I use to pick the dates should show only those events."* `shown` is
+// the lens **and its one-hop ring** — and the ring is right, because a
+// neighbourhood drawn with nothing around it would be an atlas in which
+// nothing else happened. But it is not what the sentence points at: on this
+// corpus Portugal names nine events and `shown` is thirty-three, so three
+// quarters of the ink under a band saying "Portugal" was the Boer War, Franz
+// Ferdinand and the Armenian genocide.
+//
+// So the profile is over the lens's **own** half — `kept`, what the foci name,
+// which for a chosen event is that event and its parts (M65) — and the picture
+// keeps the ring it always had. Intersected with `bandEvents` rather than read
+// straight off the lens, so a category switched off narrows the profile with
+// everything else.
+//
+// With no lens there is no selection to follow and this is `bandEvents`, to
+// the record: the resting picture, exactly as M75 drew it.
+export function profileEvents(atlas, state) {
+  const shown = bandEvents(atlas, state);
+  const own = lensView(atlas, state)?.kept ?? null;
+  return own ? shown.filter((event) => own.has(event.id)) : shown;
+}
+
 // **What a window a gesture asks for is allowed to be**: never off the scale it
 // is drawn on, and its ends never crossed — written backwards is two ends the
 // wrong way round and not garbage to drop. Astronomical years in, because that
@@ -72,17 +102,29 @@ export function windowOf(from, to, extent) {
 }
 
 // **Where the events are, under the band.** One column per column of the
-// drawing, its height saying how many fall there — `density.js`'s own answer,
-// at `density.js`'s own absolute scale, which is what the timeline's stubs and
-// the masthead's hint are drawn at. A picture with a scale of its own could say
-// a different century was the busy one, and no two pictures of one corpus may
-// disagree about that.
+// drawing, its height saying how many fall there — `density.js`'s own answer.
+//
+// At `density.js`'s absolute scale by default, which is what the timeline's
+// per-lane stubs are drawn at: those are rows compared with each other, and a
+// scale relative to each row would say one far event and a thousand of them
+// were the same thing.
+//
+// `own` is for the caller that is **one row over one set**, which is the map's
+// band: there is no second row to disagree with, and the absolute scale cost
+// it the whole picture — 3 to 9 px of range inside a 44-unit strip, so the
+// world drew a tallest column of 6 and one country drew 5 (M76, and the
+// diagnosis in `STATUS.md`). With `own` the busiest column of the set in hand
+// reaches `max` and the rest are drawn against it, so the band has a shape
+// again and the shape follows the selection.
 //
 // `barBox` is asked for the x, so a column stands where the bar would: the
 // profile and the lanes are the same events at the same places.
-export function bandProfile(events, scale, { floor, openEnd, ...rest } = {}) {
+export function bandProfile(events, scale, {
+  floor, openEnd, own = false, ...rest
+} = {}) {
   const xs = events.map((event) => barBox(event, scale, { openEnd }).x);
-  return densityPath(xs, { floor, ...rest });
+  const scaled = own ? { ...rest, saturatesAt: busiestColumn(xs, { unit: rest.unit }) } : rest;
+  return densityPath(xs, { floor, ...scaled });
 }
 
 // --- the drawing ------------------------------------------------------------

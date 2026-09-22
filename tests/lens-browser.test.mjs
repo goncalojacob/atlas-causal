@@ -66,6 +66,20 @@ const REQUESTS = 'return performance.getEntriesByType("resource").map((e) => e.n
 const NEAR = (selector) => `return [...document.querySelectorAll('${selector}')]
   .filter((el) => el.classList.contains('lens-near')).map((el) => el.dataset.id).filter(Boolean);`;
 
+// And which of them the reader can actually see: the mark's own box against
+// the box of the picture it is drawn in, as M61 asserted the labels. Drawn and
+// on screen were two questions on the graph and one on the other two views —
+// the graph opens zoomed in to a rectangle and draws what falls inside it
+// (I6's cull) — and M74 is where the answer became the same for all three.
+const ON_SCREEN = (selector) => `return [...document.querySelectorAll('${selector}')]
+  .filter((el) => {
+    const pane = el.ownerSVGElement.getBoundingClientRect();
+    const box = el.getBoundingClientRect();
+    return box.left >= pane.left && box.right <= pane.right
+      && box.top >= pane.top && box.bottom <= pane.bottom;
+  })
+  .map((el) => el.dataset.id).filter(Boolean);`;
+
 const VIEWS = {
   map: { selector: '#map svg .mark[data-id]', url: '' },
   graph: { selector: '#graph svg.graph circle.node[data-id]', url: '&view=graph' },
@@ -365,39 +379,25 @@ test('reading a narrative draws the walk, its neighbours dimmed, and nothing els
       // The whole walk, which the lens holds out of every stack, so it is
       // waited for rather than read once: a shard landing redraws the view.
       //
-      // The graph is excepted, and not because of the lens: it opens zoomed in
-      // and draws only what is inside the rectangle on screen, which is
-      // deviation 714's opening zoom and costs it half of any walk this long.
-      // What it is held to is the same rule as the other two — nothing outside
-      // the lens, and the steps it does draw drawn in full.
-      //
-      // **M42 took the rest of them** (deviation 986). This walk's dimmed ring
-      // holds the events its steps are *part of*, and the Estado Novo, whose
-      // span opens in 1933, entered that ring the moment M42 wrote the edge
-      // that joins the regime to the colonial war. The arrangement is of the
-      // band and of whatever the reader is holding beyond it, so a 1960–1976
-      // walk now arranges a picture that reaches back to 1933 and packs
-      // accordingly: measured here, the graph drew 15 nodes and 4 steps at rest
-      // before those edges and 7 nodes and **no step at all** after, at the
-      // opening zoom and at the world view alike. That is a packing fault and
-      // the display lane's to fix; it is not the lens, and this test is about
-      // the lens. So the assertion the packing owns is gone from the graph and
-      // the two the lens owns stay, on all three views: nothing outside the
-      // lens, and no neighbour drawn as a step.
+      // The graph was excepted here until M74, and not because of the lens: it
+      // opens zoomed in and draws only what is inside the rectangle on screen,
+      // which is the opening zoom of deviation 714 and cost it half of any walk
+      // this long. It frames the walk now, so all three views answer this the
+      // same way and there is no exception left to make.
       const wanted = [...view.set].filter((id) => !(name === 'map' && view.placeless.has(id)));
-      if (name !== 'graph') {
-        await waitFor(
-          page,
-          `return ${JSON.stringify(wanted)}.every((id) => document.querySelector('${selector}[data-id="' + id + '"]'));`,
-          `${name} to draw every step of the walk`,
-        );
-      }
+      await waitFor(
+        page,
+        `return ${JSON.stringify(wanted)}.every((id) => document.querySelector('${selector}[data-id="' + id + '"]'));`,
+        `${name} to draw every step of the walk`,
+      );
+      // Drawn is not the same as seen, and the whole of M74 is the difference:
+      // a step in the document but outside the pane is a step the reader
+      // cannot read. Asserted from the boxes themselves, on every view.
+      const visible = await page.eval(ON_SCREEN(selector));
+      for (const id of wanted) assert.ok(visible.includes(id), `${name} drew ${id} off the screen`);
 
       const drawn = await page.eval(DRAWN(selector));
-      assert.ok(drawn.length > 0, `${name} drew nothing at all`);
-      if (name !== 'graph') {
-        assert.ok(drawn.some((id) => view.set.has(id)), `${name} drew no step of the walk at all`);
-      }
+      assert.ok(drawn.some((id) => view.set.has(id)), `${name} drew no step of the walk at all`);
       for (const id of drawn) assert.ok(view.shown.has(id), `${name} drew ${id}, which the walk does not touch`);
 
       const dimmed = await page.eval(NEAR(selector));

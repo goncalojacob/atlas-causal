@@ -23,11 +23,12 @@
 
 import { svg, svgTitle } from '../util/dom.js';
 import { formatInterval, formatYear } from '../util/dates.js';
-import { overlaps, resolveWindow, centuryCounts } from '../util/window.js';
+import { centuryCounts } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { convergence } from '../graph.js';
 import { EDGE_TYPE_IDS } from '../vocab.js';
+import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
 import { workingSet, heldSet } from '../emphasis.js';
@@ -36,9 +37,12 @@ import { zoomBucket } from '../cluster.js';
 import { onScreen } from '../map/layers/events.js';
 import { arrangementOf, holdingKey } from './arrangement.js';
 import { layoutGraph, stackLayout, MIN_ZOOM, MAX_ZOOM } from './layout.js';
-import { collapseLayout } from './collapse.js';
 import { createLayoutRunner } from './layout-runner.js';
-import { LABEL_SIZE, fitLabel, shorten } from './label-fit.js';
+import { frameFor } from './frame.js';
+import { LABEL_SIZE, shorten } from './label-fit.js';
+import {
+  naming, placeLabels, placeOne, labelBoxAt, movedAway, ROWS_AWAY, LENS_ROWS_AWAY,
+} from './labels.js';
 import { exportButton } from '../share.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
@@ -84,10 +88,18 @@ const mergedWidth = (count) => MERGED_BASE + Math.log2(count) * MERGED_STEP;
 // One notch of the wheel, for the click that opens a stack no zoom quite
 // parts: never less than this much further in.
 const CLUSTER_ZOOM_STEP = 1.2;
-// As far as the first drawing will zoom to a narrow window on its own, and
-// the share of the data a window has to be under before it zooms at all.
+// As far as the first drawing will zoom in on its own. It was the cap on the
+// zoom to a narrow window (deviation 54); M74 gave the same cap to a frame of
+// a lens, and M76 left it the only one there is — the graph no longer opens on
+// the window at all, so a frame of the picture and a frame of a walk go as far
+// in as each other and no further.
 const FIT_ZOOM = 2;
-const FIT_SHARE = 0.6;
+// The room a frame leaves around what it frames: the widest a mark is drawn,
+// its ring and the ring's own stroke. In the SVG's units, which is what a mark
+// measures in at any zoom — the radius is divided by k and the viewport
+// multiplies by it — so a node framed at the very edge of the rectangle would
+// be a node half off the screen (frame.js).
+const FRAME_PAD = SELECTED_RADIUS + RING_GAP + RING_WIDTH;
 // How many arrangements and how many stackings are kept. Small on purpose:
 // what these are for is the reader who narrows the band and widens it again,
 // or zooms in and back out, and finds the picture already there. Holding
@@ -128,8 +140,8 @@ function textNode(text, attrs) {
 // argument the data does not make.
 function radiusFor(weight, weights) {
   if (weights.max === weights.min) return MIN_RADIUS;
-  // Clamped, because a collapsed parent carries the weight of its whole
-  // subtree and the range was measured over the events (collapse.js): the
+  // Clamped, because a node may carry a weight the range was not measured
+  // over — `subtreeWeight` on a parent the index derived one for: the
   // heaviest mark is the heaviest size and not a larger one.
   const t = Math.min(1, Math.max(0, (weight - weights.min) / (weights.max - weights.min)));
   return MIN_RADIUS + t * (MAX_RADIUS - MIN_RADIUS);
@@ -140,20 +152,28 @@ function classes(...list) {
 }
 
 // The key to the five line patterns, in the corner of the view that uses
-// them. Drawn with the very same classes the edges are drawn with, so the
-// key cannot come to disagree with the picture; about.html carries the same
-// six lines for the same reason. Outside the SVG, so panning and zooming
-// leave it where it is.
+// them, and — since M73 — to the ink that says how sure the atlas is of one.
+// Drawn with the very same classes the edges are drawn with, so the key
+// cannot come to disagree with the picture; about.html carries the same rows
+// for the same reason. Outside the SVG, so panning and zooming leave it
+// where it is.
 export function edgeKey() {
   const box = document.createElement('div');
   box.className = 'graph-key';
   const line = (type, extra = '') => `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
       <line class="edge type-${type} ${extra}" x1="1" y1="6" x2="50" y2="6"/>
       <polygon class="edge-head type-${type}" points="60,6 50,3 50,9"/></svg>`;
+  // The three confidences as three segments of one type, surest first: the
+  // dash is the type's and stays the type's, so what the reader is being
+  // shown here is the ink alone, which is the one thing this row is about.
+  const sureness = `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
+      ${CONFIDENCE_ORDER.map((confidence, i) => `<line class="edge type-caused ${CONFIDENCE_CLASS[confidence]}"
+        x1="${i * 21 + 1}" y1="6" x2="${i * 21 + 19}" y2="6"/>`).join('')}
+    </svg>`;
   box.innerHTML = `<h2>Links</h2><dl class="edge-key">
     ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
-    <dt>${line('caused', 'disputed')}</dt><dd>any type, disputed</dd>
+    <dt>${sureness}</dt><dd>how sure: ${CONFIDENCE_ORDER.join(', ')}</dd>
   </dl>`;
   return box;
 }
@@ -191,23 +211,35 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // map, never stacks the reachable set: the horizon is the answer this
   // picture exists to draw, and a band inside a stack is a band the reader
   // cannot read off.
+  //
+  // Kept by the working set it is made of and **not by the state**, which is
+  // what it was keyed on until M74. Two of the things a lens is built from
+  // arrive after the state does — a narrative's steps come with their century,
+  // an actor's ground with its own file (lens.js, `stamp`) — and `workingSet`
+  // answers again when they land, on the very same state object. This cache
+  // did not: the answer computed before the walk existed stood for the rest of
+  // the session, so eighteen events of a twelve-step lens were swallowed by
+  // stacks that M25's rule says may never hold one. `workingSet` replaces the
+  // object exactly when the answer changes, so the object is the key.
   let aloneFor = null;
   let aloneIs = null;
   const alonesOf = (s) => {
-    if (s !== aloneFor) {
-      aloneFor = s;
-      aloneIs = heldSet(workingOf(s), { lens: true, reachable: true });
+    const working = workingOf(s);
+    if (working !== aloneFor) {
+      aloneFor = working;
+      aloneIs = heldSet(working, { lens: true, reachable: true });
     }
     return aloneIs;
   };
 
   const viewport = svg('g', { class: 'viewport' });
   const bandsGroup = svg('g', { class: 'layer layer-bands' });
-  const windowGroup = svg('g', { class: 'layer layer-window' });
   const edgesGroup = svg('g', { class: 'layer layer-edges' });
   const nodesGroup = svg('g', { class: 'layer layer-nodes' });
   const labelsGroup = svg('g', { class: 'layer layer-labels' });
-  viewport.append(bandsGroup, windowGroup, edgesGroup, nodesGroup, labelsGroup);
+  // Over every other layer: the one name the pointer is asking for.
+  const hoverGroup = svg('g', { class: 'layer layer-hover' });
+  viewport.append(bandsGroup, edgesGroup, nodesGroup, labelsGroup, hoverGroup);
   const root = svg('svg', {
     class: 'graph',
     role: 'img',
@@ -227,18 +259,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // the last picture stays on screen, and a stacking of it must not be filed
   // under the key of a layout it was not made from.
   let laidFor = null;
-  let fitted = false;
   const runner = createLayoutRunner({ records: { events: atlas.events, edges: atlas.edges } });
 
-  // Pan e zoom, como o mapa os tem. Não estão no estado: o URL carrega o que
-  // o leitor está a ver, não até onde deslocou a vista.
+  // Pan and zoom, as the map has them. Not in the state: the URL carries what
+  // the reader is looking at, not how far they have pushed the view about.
   //
-  // Declarados aqui, acima do primeiro `arrange()`, e não junto aos gestos que
-  // os usam: o primeiro `adopt()` chama `fitToWindow()`, que atribui
-  // `transform` e chama `applyTransform`. Numa janela estreita — um passo de
-  // narrativa, ou um `?from=&to=&view=graph` partilhado — `fitToWindow` não
-  // sai mais cedo e morria com `Cannot access 'transform' before
-  // initialization`, deixando o painel do grafo escondido.
+  // Declared here, above the first `arrange()`, rather than beside the
+  // gestures that use them. It was `adopt()` calling the window fit that
+  // needed that — on a narrow window, a narrative's step or a shared
+  // `?from=&to=&view=graph`, the fit did not return early and died with
+  // `Cannot access 'transform' before initialization`, leaving the graph's
+  // pane blank. Where the camera is put moved into `render` in M74, the window
+  // fit itself went in M76, and the declaration stays where it is because
+  // every gesture below still reads it.
   let transform = { x: 0, y: 0, k: 1 };
   // Whether the zoom in force was chosen to part a stack, in which case the
   // stacking is done at exactly it rather than at the bucket below it: the
@@ -308,12 +341,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     waiting.hidden = true;
     root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
     drawFrame();
-    // The first picture there has ever been is the one the window is fitted
-    // to, whether it was made here or arrived from the runner's thread.
-    if (!fitted) {
-      fitted = true;
-      fitToWindow();
-    }
+    // Where the camera is put is decided in `render`, on the drawing that
+    // follows this one: it needs the rectangle the reader can see, and asking
+    // for that here would be asking the browser to lay out a picture that has
+    // not been drawn yet.
   }
 
   function arrange(s) {
@@ -439,7 +470,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     dragged = false;
   });
   root.addEventListener('pointermove', (e) => {
-    if (!drag) return;
+    // Not dragging: the pointer is asking what a mark is called. Since M77 a
+    // mark whose name did not fit carries no label at all, so this is how the
+    // reader gets it back — and it is one element written and rubbed out, not
+    // a redraw (`hoverLabel` returns at once when the mark has not changed).
+    if (!drag) {
+      if (stacked) hoverLabel(nearestStack(e));
+      return;
+    }
     const [x, y] = toSvg(e);
     const dx = x - drag.start[0];
     const dy = y - drag.start[1];
@@ -475,18 +513,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     render(state.get());
   });
 
-  // Which mark a click means is decided by distance, not by which circle
+  // Which mark a pointer means is decided by distance, not by which circle
   // happens to be on top. Two adjacent years are about eight units apart
   // here, and a mark or its stroke covering a neighbour's centre would have
   // made that neighbour unreachable at rest — the nearest centre inside the
-  // reach is always the one the reader aimed at.
-  root.addEventListener('click', (e) => {
-    // A drag that ends over a node must not select it; the flag is cleared
-    // here, once this click has been judged, so the next clean one selects.
-    if (dragged) {
-      dragged = false;
-      return;
-    }
+  // reach is always the one the reader aimed at. One answer for the click and
+  // for the hover, so the mark that is named is the mark that would open.
+  function nearestStack(e) {
     const [x, y] = toGraph(e);
     const reach = HIT_RADIUS / transform.k;
     let best = null;
@@ -498,7 +531,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         distance = d;
       }
     }
-    if (!best || distance > reach) return;
+    return best && distance <= reach ? best : null;
+  }
+
+  root.addEventListener('pointerleave', () => hoverLabel(null));
+
+  root.addEventListener('click', (e) => {
+    // A drag that ends over a node must not select it; the flag is cleared
+    // here, once this click has been judged, so the next clean one selects.
+    if (dragged) {
+      dragged = false;
+      return;
+    }
+    const best = nearestStack(e);
+    if (!best) return;
     if (best.count === 1) {
       select(best.representative.id);
       return;
@@ -539,19 +585,18 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // way (health review B, finding 10).
   const select = (id) => walkOrSelect(state, atlas, id);
 
-  // The map's viewport narrows the timeline, and this view has no viewport of
-  // its own to be narrowed by: the graph is arranged by year and by band, and
-  // nothing in it is anywhere. Rather than filter it by a box that means
-  // nothing here, or leave the reader wondering why the lanes below are
-  // shorter than the picture above, it says so.
-  const note = document.createElement('p');
-  note.className = 'graph-note';
-  note.hidden = true;
-  note.textContent = 'The map is looking at part of the world. The graph has no viewport of its own, so it draws every event; the lanes below are narrowed to what the map can see.';
+  // There was a note here, a paragraph wide across the top of the picture,
+  // saying that the map is looking at part of the world and the graph has no
+  // viewport of its own. It went in M77. It was drawn whenever `?bbox=` was in
+  // the state — which is after any pan or zoom of the map, so most visits —
+  // and it answered a question about the lanes that used to run under the map
+  // and have been a view of their own since M60. The owner, 21 September,
+  // pointing at it in a screenshot of a narrative: it is not what the reader
+  // asked about. What the map is looking at is said in the masthead, where the
+  // count of events in view has been since M60.
 
   container.append(root);
   container.append(waiting);
-  container.append(note);
   container.append(exportButton(root, 'graph'));
   container.append(edgeKey());
 
@@ -572,6 +617,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // And there is no picture at all until the first arrangement lands, which
     // it does on this turn at every size this atlas has held (layout-runner).
     if (!laid) return;
+    // Then where the camera stands, which is not one of the reader's gestures.
+    // The rectangle on the screen is what a frame is computed against and does
+    // not move with the camera, so it is measured first and the rectangle in
+    // the graph's own coordinates read off it afterwards, under the transform
+    // this may have just changed.
+    frameCamera(s, visibleBox());
     const box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k, shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
@@ -585,12 +636,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // own to hand: the fixture-free tests that call `draw` through `render`
   // always pass one.
   function draw(s, box = view()) {
-    note.hidden = !s.bbox;
-    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
-    // One period either side of the band is as far out as the graph draws,
-    // and since H4b as far out as it lays anything out: beyond it a node is
-    // not faded, it is not there, and the timeline is where the reader sees
-    // that the dataset carries on (window.js, arrangement.js).
+    // **The window is not this picture's business** (M76). The owner, 21
+    // September: *"I think the graph can always show all dates, then one can
+    // zoom in and out and pan to look at different times."* So there is no
+    // band shaded across the drawing, nothing is drawn faded for falling
+    // outside one, and the arrangement is every event of `shown` whatever the
+    // band says (arrangement.js). The window is still state — the map and the
+    // timeline read it — and this view simply does not ask.
     // What the reader is working with, from the one place that decides it
     // (emphasis.js): the same sets the map and the timeline draw, so a fourth
     // picture is a fourth reader of that function and not a fourth copy.
@@ -616,7 +668,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // The same lens the arrangement was built from; what it kept is drawn
     // one event to a node — the focus set in full, and the direct causes and
     // consequences around it faintly (lens.js).
-    const lens = working.lens;
+    // What the lens itself names, or null at rest: since M77 it is what says
+    // which lines are in ink and which marks are labelled.
+    const lensFocus = working.lensFocus;
     const lensNear = working.lensNear;
     const actorIds = working.actor;
     // The whole of an open narrative's walk: where it is going, not only
@@ -626,7 +680,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // far out it is. Empty unless the reader chose a year (horizon.js).
     const reachable = working.reachable;
 
-    const inWindow = new Map(laid.nodes.map((n) => [n.id, overlaps(n.event.when, timeWindow)]));
     const k = transform.k;
 
     // Everything the reader is currently working with keeps a node of its
@@ -647,11 +700,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // arrangement, how far in, and what may not be swallowed. A wheel notch
     // that returns to a zoom already seen redraws rather than re-clusters.
     //
-    // Two levels of detail, in this order: the semantic one first — an event's
-    // parts drawn inside it while the reader is zoomed out (collapse.js) — and
-    // M25's geometric one on the node set that comes out of it. Both are
-    // filed under the same key, because both depend on exactly these three
-    // things and on nothing else.
+    // One level of detail, M25's geometric one. There were two until M70: a
+    // *semantic* fold drew an event's parts inside it while the reader was
+    // zoomed out, and M65 left it dead — at rest there are no parts in the
+    // picture to fold, and inside a lens M25's never-hide rule holds
+    // everything the lens kept out of any fold. What it said, *there is more
+    // inside this one*, the resting rule says by hiding the parts and the
+    // ring (M30c) says on the mark.
     //
     // And the zoom it is filed under is the bucket below the one the picture
     // is drawn at, as the map's grouping has been since H4a: what decides a
@@ -666,13 +721,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const groupAt = exactZoom ? k : zoomBucket(k);
     const stackKey = `${laidFor}|${groupAt}|${holdingKey(s)}`;
     stacked = stackings.get(stackKey)
-      ?? stackings.set(stackKey, stackLayout(collapseLayout(laid, { k: groupAt, alone }), { k: groupAt, alone }));
-    // A stack is in the window if any event under it is, and in the horizon
-    // at the band of its nearest member: the same rule the map's stacks
-    // follow. Both are only ever asked of a stack of one in practice, since
-    // the horizon's own events are held out above, but the picture should
-    // not depend on that staying true.
-    const stackInWindow = (stack) => stack.members.some((m) => inWindow.get(m.id));
+      ?? stackings.set(stackKey, stackLayout(laid, { k: groupAt, alone }));
     // What is worth putting in the DOM. The map has drawn only the marks
     // inside its viewport since H4a; the graph drew every stack of the whole
     // arrangement at every notch, and at 20,000 events that is 24,310
@@ -696,23 +745,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         : radiusFor(stack.representative.weight, weights) + (stack.count > 1 ? STACK_BONUS : 0),
     ]));
 
-    // The window is a shaded band across the whole graph, and what falls
-    // outside it fades rather than leaving: the web is always all there.
-    windowGroup.replaceChildren();
-    if (timeWindow) {
-      const x0 = laid.scale.x(timeWindow.from);
-      const x1 = laid.scale.x(timeWindow.to);
-      windowGroup.appendChild(svg('rect', {
-        x: Math.min(x0, x1), y: laid.bands[0]?.y0 ?? 0,
-        width: Math.max(1, Math.abs(x1 - x0)), height: laid.height - (laid.bands[0]?.y0 ?? 0),
-        class: 'window-band',
-      }));
-    }
-
     // One line per pair of marks. A line carrying several links is drawn in
     // the commonest of their types, heavier for how many it carries, and
-    // dashed as disputed if any single one of them is — a bundle the reader
-    // must not read as settled (cluster.js).
+    // inked as the least sure of them — a bundle one of whose links
+    // historians argue about is a bundle the reader must not read as settled
+    // (cluster.js, and confidence.js for all three levels of it).
     const stackByKey = new Map(stacked.nodes.map((stack) => [stack.key, stack]));
     edgesGroup.replaceChildren();
     for (const line of stacked.edges) {
@@ -722,11 +759,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // never enters (index2 review, finding 11's amendment).
       if (!drawable(stackByKey.get(line.from)) && !drawable(stackByKey.get(line.to))) continue;
       const any = (ids) => line.members.some((m) => ids.has(m.id));
-      const faded = !stackInWindow(stackByKey.get(line.from)) || !stackInWindow(stackByKey.get(line.to));
+      // **With a lens on, the lens's own links are the ones in ink** (M77).
+      // A line between two events the lens merely reaches is drawn faintly,
+      // with the very class the ring's marks already carry — the owner, 21
+      // September: *"It looks clouded."* Two thirds of the lines on the page
+      // with a narrative open are not the walk (STATUS.md, the measurement),
+      // and they were drawn in the same five patterns and three inks as the
+      // argument running under them. At rest there is no lens and no line is
+      // faint: nothing has been asked, so nothing is the answer.
+      const ofLens = lensFocus === null
+        || line.members.every((m) => lensFocus.has(m.from) && lensFocus.has(m.to));
       const marks = classes(
         `type-${line.type}`,
-        line.disputed ? 'disputed' : '',
-        faded ? 'faded' : '',
+        bundleClass(line.members),
+        ofLens ? '' : 'lens-near',
         any(chainEdgeIds) ? 'chain' : '',
         any(consequenceIds) ? 'consequence' : '',
         any(convergingEdges) ? 'converging' : '',
@@ -774,7 +820,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const node = stack.representative;
       const radius = radiusOf.get(stack.key);
       if (stack.count > 1) {
-        const faded = !stackInWindow(stack);
         const nearest = Math.min(...stack.members.map((m) => reachable.get(m.id) ?? Infinity));
         const hidden = stack.count - 1;
         const span = stack.years.min === stack.years.max
@@ -782,7 +827,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
           : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
         nodesGroup.appendChild(svg('circle', {
           cx: stack.x, cy: stack.y, r: radius / k,
-          class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable', faded ? 'faded' : '',
+          class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable',
             stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
             Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
           'data-stack': stack.key,
@@ -790,22 +835,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         nodesGroup.appendChild(textNode(`+${hidden}`, {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
-          class: classes('cluster-count', faded ? 'faded' : ''),
+          class: 'cluster-count',
           'font-size': BADGE_SIZE / k,
         }));
         continue;
       }
-      const faded = !inWindow.get(node.id);
       const isSelected = node.id === s.selected;
-      // An event with its parts drawn inside it. It is still one record and
-      // still opens its own card — the card is where the parts are listed —
-      // so it keeps its `data-id`; what it gains is a count of what is folded
-      // into it and a ring saying there is something to zoom into.
-      const collapsed = node.collapsed ?? null;
       const cls = classes(
         'node',
-        collapsed ? 'collapsed' : '',
-        faded ? 'faded' : '',
         lensNear.has(node.id) ? 'lens-near' : '',
         reachable.has(node.id) ? `in-horizon ${horizonBand(reachable.get(node.id))}` : '',
         narrativeIds && narrativeIds.has(node.id) ? 'of-narrative' : '',
@@ -814,113 +851,191 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         pathIds.has(node.id) ? 'on-path' : '',
         isSelected ? 'selected' : '',
       );
-      const parts = collapsed
-        ? ` — ${collapsed.count} part${collapsed.count === 1 ? '' : 's'} drawn inside it, weight ${collapsed.weight}; zoom in to part them`
-        : '';
       // The node is drawn out of the core; what it is called arrives with its
       // century, and until then it is a node with no name (attributes.js).
       const name = labelOf(atlas, node.event);
       const title = name === null ? LOADING_LABEL
-        : `${name} — ${formatInterval(node.event.when)}${parts}${faded ? ' — outside the window' : ''}`;
+        : `${name} — ${formatInterval(node.event.when)}`;
       const mark = svg('circle', {
         cx: node.x, cy: node.y, r: radius / k, class: cls, 'data-id': node.id,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
-      // An event with parts carries the ring at every zoom, whether or not
-      // the parts are folded into it: the collapse is a behaviour and the ring
-      // is the look, and a reader zoomed past the threshold was being told
-      // nothing at all (m30c-brief, §1). The badge sits on top of it while the
-      // parts are inside. Not a control — no `data-id` — so a click still
-      // lands on the node and opens the one record.
+      // An event with parts carries the ring at every zoom (m30c-brief, §1),
+      // and since M70 it is the whole of what says *there is more inside this
+      // one* on the graph: the fold that used to draw a count beside it is
+      // gone, and the parts are in the picture when the reader opens the
+      // event and out of it when they do not. Not a control — no `data-id` —
+      // so a click still lands on the node and opens the one record.
       if (isParent(atlas, node.event)) {
         nodesGroup.appendChild(svg('circle', {
           cx: node.x, cy: node.y, r: (radius + RING_GAP) / k, class: ringClasses(cls, 'node'),
           'stroke-width': RING_WIDTH / k,
         }));
       }
-      if (collapsed) {
-        nodesGroup.appendChild(textNode(`+${collapsed.count}`, {
-          x: node.x + (radius + 2) / k,
-          y: node.y - (radius + 1) / k,
-          class: classes('cluster-count', faded ? 'faded' : ''),
-          'font-size': BADGE_SIZE / k,
-          'data-collapsed': node.id,
-        }));
-      }
       if (isSelected) selectedMark = mark;
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);
 
-    drawLabels(s, k, box);
+    drawLabels(s, k, box, working);
   }
 
-  // Zoomed out, only the heaviest marks on screen are named, as on the map. A
-  // stack is named after its representative — the heaviest event under it,
-  // which is the one worth showing (cluster.js) — and weighs what its
-  // members weigh together, so a thicket of small events can outrank a
-  // single large one and say what it is. Zoomed in, every mark on screen is
-  // named.
+  // Which marks are named, and where each name goes: `labels.js`, purely.
+  // What this function does is ask it and build the text.
   //
-  // What each of those names is cut to is the room it has, and not a constant
-  // (label-fit.js): the heaviest label is placed first and keeps the room it
-  // wants, and the next one is cut to what is left of its own line of text.
-  // So a label is never drawn over its neighbour — where it used to be moved
-  // to the other side of its mark and then drawn over one anyway, it is now
-  // cut to fit, on whichever side shows more of the name — and where the room
-  // is there, which zooming in is what makes, the whole name is drawn.
+  // **A name is drawn whole or it is not drawn at all** (M77). It used to be
+  // cut to the room beside its mark, and eight of the fourteen names on the
+  // page with a narrative open were `The Ab…`, `The Rev…`, `Dutch B…` — ink
+  // where a name should be. A name that does not fit waits for the reader's
+  // pointer, which is what the mark's title has always carried.
   //
-  // A mark whose line is full on both sides keeps its title and loses its
-  // label, at every zoom. Five letters and an ellipsis is not a name, and a
-  // name drawn across another is two names nobody can read.
-  function drawLabels(s, k, box) {
+  // **With a lens on, the lens is what is named.** A lens is a question the
+  // reader asked and the ring around it is context: the walk of an open
+  // narrative is named in the narrator's own order, first step first, so the
+  // room a crowded picture has goes to the argument rather than to whichever
+  // neighbour happens to weigh most. At rest nothing has been asked and the
+  // rule is the one it was — the heaviest marks on screen, every one of them
+  // once the reader has zoomed past `LABEL_ALL_ZOOM`.
+  function drawLabels(s, k, box, working) {
     labelsGroup.replaceChildren();
     const all = k >= LABEL_ALL_ZOOM;
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
-    const candidates = [...onScreen].sort(
-      (a, b) => b.weight - a.weight || (a.key < b.key ? -1 : a.key > b.key ? 1 : 0),
-    );
-    // Which marks a label has to leave room to write from: every one that is
-    // going to be named, which below the gate is the heaviest of them and at
-    // or above it is all of them.
-    const naming = all ? candidates : candidates.slice(0, LABEL_LIMIT);
-    const placed = [];
-    for (const node of candidates) {
-      if (!all && placed.length >= LABEL_LIMIT) break;
+    const focus = working.lensFocus;
+    const order = working.narrative ? [...working.narrative] : null;
+    const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all })
+      .map((node) => ({ node, name: labelOf(atlas, node.representative.event) }))
       // No name yet is no label, and the next node still gets its own.
-      const name = labelOf(atlas, node.representative.event);
-      if (name === null) continue;
-      const fitted = fitLabel(name, node, { k, gap: LABEL_GAP, box, placed, named: naming });
-      if (!fitted) continue;
-      placed.push(fitted.rect);
-      labelsGroup.appendChild(textNode(fitted.text, {
-        x: fitted.rect.x, y: node.y + (LABEL_SIZE * 0.35) / k,
+      .filter((c) => c.name !== null);
+    // The lens is not capped by M61's slice: the reader has asked about these
+    // events, and a walk whose steps have long names is a walk with long
+    // names. At rest the cap stands, and is what keeps a fifty-character title
+    // out of a picture of everything until somebody zooms in for it.
+    const placed = placeLabels(candidates, {
+      k,
+      gap: LABEL_GAP,
+      view: box,
+      capped: focus === null,
+      rows: focus === null ? ROWS_AWAY : LENS_ROWS_AWAY,
+    });
+    named = new Set(placed.map((p) => p.node.key));
+    for (const { node, text, rect } of placed) {
+      // A label that had to be written on another line is tied back to its
+      // mark by a hairline. It is what buys the room: 22 of a 28-step walk sit
+      // on one line of the layout with the whole field free above and below,
+      // and a name on a line of its own with a leader under it is legible
+      // where a name cut to six letters is not. Nothing at all when the label
+      // is where it has always been, which is every label at rest.
+      if (movedAway(node, rect, k)) {
+        labelsGroup.appendChild(svg('line', {
+          x1: node.x + (rect.right ? 1 : -1) * (MAX_RADIUS / k),
+          y1: node.y,
+          x2: rect.x - (rect.right ? 1 : -1) * (1 / k),
+          y2: rect.y,
+          class: 'label-leader',
+        }));
+      }
+      labelsGroup.appendChild(textNode(text, {
+        x: rect.x, y: rect.y + (LABEL_SIZE * 0.35) / k,
         class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
-        'text-anchor': fitted.right ? 'start' : 'end',
+        'text-anchor': rect.right ? 'start' : 'end',
         'font-size': LABEL_SIZE / k,
       }));
     }
   }
 
-  // The reader arriving on a narrow window should not have to hunt for it,
-  // so the first drawing zooms to it. Capped: a window of two years filling
-  // the width would push the outer bands off the screen, and the bands are
-  // what the view is read against (STATUS.md, deviation 54).
+  // --- the name under the pointer -------------------------------------------
   //
-  // A declaration rather than a const, because `adopt` calls it on the first
-  // arrangement, and that may be an arrangement that arrives from elsewhere
-  // long after this line has been read.
-  function fitToWindow() {
-    const timeWindow = resolveWindow(state.get(), atlas.extent, atlas.opens);
-    if (!timeWindow || !laid) return;
-    const x0 = laid.scale.x(timeWindow.from);
-    const x1 = laid.scale.x(timeWindow.to);
-    const span = Math.max(1, Math.abs(x1 - x0));
-    const whole = Math.abs(laid.scale.x(atlas.extent.max) - laid.scale.x(atlas.extent.min));
-    // A window that is most of the data is not worth zooming to: the right
-    // first view of the whole graph is the whole graph.
-    if (span > whole * FIT_SHARE) return;
-    const k = Math.min(FIT_ZOOM, laid.width / span);
-    transform = { k, x: laid.width / 2 - ((x0 + x1) / 2) * k, y: laid.height / 2 - (laid.height / 2) * k };
+  // What is not always visible has to be findable, or taking it away is just
+  // taking it away. A mark with no drawn label is named while the pointer is
+  // on it: one label, in a layer of its own over everything, whole, and gone
+  // when the pointer moves off. It is drawn outside `render` and is in no
+  // render key — it is not a fact about the picture, it is the reader's finger.
+  let named = new Set();
+  let hovering = null;
+  function hoverLabel(stack) {
+    if (stack?.key === hovering) return;
+    hovering = stack?.key ?? null;
+    hoverGroup.replaceChildren();
+    if (!stack || named.has(stack.key)) return;
+    const name = labelOf(atlas, stack.representative.event);
+    if (name === null) return;
+    const k = transform.k;
+    const found = placeOne(name, stack, { k, gap: LABEL_GAP, view: view(), capped: false })
+      // Nowhere clear to write it is still written: the reader is pointing at
+      // this mark and at no other, so there is nothing for it to be confused
+      // with. Its halo is what keeps it readable over whatever is under it.
+      ?? { text: name, right: true, rect: labelBoxAt(stack, name, true, { k, gap: LABEL_GAP }) };
+    hoverGroup.appendChild(textNode(found.text, {
+      x: found.rect.x, y: found.rect.y + (LABEL_SIZE * 0.35) / k,
+      class: 'node-label hovered',
+      'text-anchor': found.right ? 'start' : 'end',
+      'font-size': LABEL_SIZE / k,
+    }));
+  }
+
+  // --- where the camera starts ----------------------------------------------
+  //
+  // Not a gesture and not in the URL: a link carries the picture its sender
+  // saw, and the reader's own pan and zoom are theirs to keep. One rule now,
+  // where there were two.
+  //
+  // **The camera fits what is drawn.** At rest that is the whole of `shown`,
+  // and with a lens on it is the lens (M74). Until M76 the resting camera was
+  // the *window's* — the first drawing zoomed to a narrow band so that a
+  // reader arriving on one did not have to hunt for it (deviation 54). The
+  // owner, 21 September: *"I think the graph can always show all dates, then
+  // one can zoom in and out and pan to look at different times."* A camera
+  // that opened on the band would be the window deciding the picture by the
+  // back door, so it opens on the picture and the reader pans.
+  //
+  // The graph draws what falls inside the rectangle on screen and nothing else
+  // (I6's cull), so the opening rectangle decides what a reader sees — and
+  // where the layout happens to put a walk is a fact about the arrangement,
+  // not about the question. Two thirds of the owner's twelve-step argument
+  // about the colonial war fell outside that rectangle and were not in the
+  // picture at all, while the map and the timeline, which have no camera, went
+  // on drawing every step. The frame is offered a lens widest first —
+  // everything it draws, then the focus alone — so an event chosen with a
+  // small ring is framed with its ring and one whose ring is wider than the
+  // pane is framed on the event (frame.js). At rest there is one set to offer
+  // and it is everything.
+  //
+  // The key is the arrangement's own, which already carries the lens as it is
+  // *applied* and not as it is written (arrangement.js): a new question, or a
+  // new arrangement of the same one, frames again, and a pan, a zoom or a
+  // click inside the lens does not. Since M76 the band is not in that key at
+  // all, so moving it re-fits nothing — which is the same promise the old
+  // resting case made by collapsing its key to one string, kept now for the
+  // whole of the view rather than for half of it.
+  //
+  // **The rectangle itself is in that key**, and it has to be: a frame is a
+  // set of nodes put inside a rectangle, and one measured against a rectangle
+  // that no longer exists is not a frame of anything. The first drawing of a
+  // view lands before the pane has settled — the masthead wraps, the panel
+  // takes its remembered width — and a walk framed to a pane 30 px taller than
+  // the one it ends in loses its outermost steps off the bottom. The observer
+  // at the end of this file throws the measurement away when the pane changes
+  // size; keying on what was measured, rather than on the size read live off
+  // the element, is what makes the next drawing act on it.
+  let framedFor = null;
+  function frameCamera(s, seen) {
+    const working = workingOf(s);
+    const key = `${arrangedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
+    if (key === framedFor) return;
+    framedFor = key;
+    // Widest first, and at rest there is only the widest: everything drawn.
+    // `MIN_ZOOM` is the floor, so a picture too large for the pane is drawn as
+    // far out as the graph goes and the reader pans for the rest — which is
+    // what the owner's sentence asks for.
+    const wanted = working.lens
+      ? [working.shown, working.lensFocus].filter(Boolean)
+      : [working.shown];
+    const at = frameFor(laid.nodes, wanted, seen, {
+      min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
+    });
+    // A set the arrangement holds no node of leaves the camera alone: there is
+    // nothing to frame, and a frame of nothing would be a number invented.
+    if (!at) return;
+    transform = at;
     exactZoom = false;
     applyTransform();
   }

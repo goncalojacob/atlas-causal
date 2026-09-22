@@ -126,6 +126,10 @@ export function projectV1(topology) {
       ...(e.category === undefined ? {} : { category: e.category }),
       weight: e.weight,
       ...(e.subtreeWeight === undefined ? {} : { subtreeWeight: e.subtreeWeight }),
+      // And `reviewed` where a person has signed the record (M70), absent
+      // otherwise — which is every event of the repository today and all but
+      // one of the fixtures'.
+      ...(e.reviewed === undefined ? {} : { reviewed: e.reviewed }),
       actors: e.actors ?? [],
       citesCount: citesCount('event', e.id),
     })),
@@ -377,12 +381,15 @@ for (const [label, dir] of [['the fixtures', FIXTURE_DATA], ['the repository', D
     }
   });
 
-  // What the trim is for: `parent`, `scope` and `subtreeWeight` are the last
-  // slots of an event and cost nothing on an event that carries none.
+  // What the trim is for: `parent`, `scope`, `subtreeWeight` and — since M70 —
+  // `reviewed` are the last slots of an event and cost nothing on an event
+  // that carries none. `reviewed` is last of all because it is the emptiest:
+  // nought of the corpus's events are signed today, so every row's slot is
+  // null and every row is trimmed past it.
   test(`a row stops where its values stop, over ${label}`, async () => {
     const spine = buildSpine(await topologyOf(dir));
     const columns = spine.columns.event;
-    assert.deepEqual(columns.slice(-3), ['parent', 'scope', 'subtreeWeight']);
+    assert.deepEqual(columns.slice(-4), ['parent', 'scope', 'subtreeWeight', 'reviewed']);
     assert.ok(spine.events.some((row) => row.length < columns.length), 'no row was trimmed at all');
     for (const row of spine.events) {
       assert.ok(row.length <= columns.length, 'a row longer than its columns');

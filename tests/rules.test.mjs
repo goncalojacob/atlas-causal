@@ -18,26 +18,38 @@ async function run(mutate = () => {}) {
 const rulesHit = (result, rule) => result.errors.filter((e) => e.rule === rule);
 const messages = (result) => result.errors.map((e) => `${e.rule} ${e.id}${e.path}: ${e.message}`).join('\n');
 
-test('the fixture dataset passes with exactly the three intended warnings', async () => {
+test('the fixture dataset passes with exactly the four intended warnings', async () => {
   const r = await run();
   assert.equal(r.errors.length, 0, messages(r));
   assert.deepEqual(
     r.warnings.filter((w) => w.rule !== 'unread').map((w) => `${w.rule}:${w.id}`).sort(),
     // fixture-place-m is where the tombstoned event happened: no active event
     // stands there any more, and that is exactly what place-unused says.
-    ['degree-zero:fixture-event-h', 'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
+    //
+    // `fixture-event-u` is M79's second umbrella and it hangs on nothing but
+    // the child that names it: being part of something is a display fact and
+    // never an argument (CLAUDE.md), so it adds no degree, and the warning is
+    // the same one `fixture-event-h` has always carried for the same reason.
+    ['degree-zero:fixture-event-h', 'degree-zero:fixture-event-u',
+      'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
   );
 });
 
 // R10: a record with neither `review.status` nor a signature is in no queue
-// and on no dashboard, and until this warning existed nothing said so. The
-// fixture corpus is exactly such a corpus — nobody has read a synthetic
-// record — so it is what the warning is counted on.
+// and on no dashboard, and until this warning existed nothing said so. Counted
+// against the records the fixtures leave without a standing — which since M70
+// is all of them but two, because the standing marker needed a signed record
+// and a draft to be seen at all (tests/m70-browser.test.mjs).
 test('a record with neither a status nor a signature is reported as unread', async () => {
   const r = await run();
   const unread = r.warnings.filter((w) => w.rule === 'unread');
-  const active = (await fixtures()).records.filter((x) => x.status === 'active');
-  assert.equal(unread.length, active.length, 'one per active record, and none for a tombstone');
+  const standingless = (await fixtures()).records
+    .filter((x) => x.status === 'active' && x.review?.status === undefined && !(x.review?.signedBy?.length > 0));
+  assert.equal(unread.length, standingless.length, 'one per active record with no standing, and none for a tombstone');
+  assert.deepEqual(
+    unread.map((w) => w.id).sort(), standingless.map((x) => x.id).sort(),
+    'and it is those records and not some others of the same number',
+  );
   for (const w of unread) assert.match(w.message, /neither review\.status nor a signature/);
 
   // A draft is accounted for, and so is a record somebody has signed.

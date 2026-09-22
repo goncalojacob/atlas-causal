@@ -17,6 +17,7 @@ import {
   DEPRECATED_RELATION_TYPES, WRITABLE_RELATION_TYPE_IDS,
 } from '../vocab.js';
 import { kindsWhere, licensesOf } from '../kinds.js';
+import { parentsOf } from '../parts.js';
 import { IMPORTED_LICENSES } from '../licensing.js';
 import { IMPORT_LICENCE_ORIGINS, REVIEW_STATUS, mayRelicense, originTool } from '../origin.js';
 
@@ -33,7 +34,11 @@ function span(when) {
 }
 
 export const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-export const CONFIDENCE_ORDER = Object.freeze(['consensus', 'probable', 'disputed']);
+// Re-exported rather than declared: how sure the atlas is is one closed
+// vocabulary and `../confidence.js` is where it lives, beside what each of
+// the three is drawn as. The validator's callers have always asked this file
+// for it, and they still can.
+export { CONFIDENCE_ORDER } from '../confidence.js';
 export const ACTOR_TYPES = Object.freeze(['person', 'polity', 'institution', 'people']);
 // What a record's `status` may be, in the order `schema/common/provenance.json`
 // writes it. Named here beside the other two lists the schemas close, because
@@ -1173,44 +1178,76 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
   // ancestors, convergence and the horizon stay edge-only and `?chain=` stays
   // a list of edge ids (owner, 5 September; plan decision 4).
   //
-  // One parent, so the events form a forest. What this rule holds is the
-  // three things that shape says: the parent is an event, an active event's
-  // parent is active, and no chain of parents closes on itself. Resolution is
-  // here rather than in rule 3 because the cycle check has to walk the chain
-  // anyway and a rule that reads a reference twice is a rule that can
-  // disagree with itself.
+  // **Several parents since M79**, so the events form a directed acyclic graph
+  // and no longer a forest: Angolan independence is inside the Third Republic
+  // and inside the decolonisation of Africa, and neither is the one true
+  // umbrella (owner, 22 September). The rule is **applied per parent** and
+  // says what it always said, once for each: the parent is an event, an active
+  // event's parent is active, and no path of `part of` closes on itself.
+  // Resolution is here rather than in rule 3 because the cycle check has to
+  // walk the parents anyway and a rule that reads a reference twice is a rule
+  // that can disagree with itself.
   //
-  // A child dated outside its parent is a *warning* (below), for the reason
-  // `actor-outside-when` is one: the two intervals come from two records and
-  // either may be the one that is wrong.
-  const parentOf = (event) => {
-    const id = typeof event?.parent === 'string' ? event.parent : null;
-    return id === null ? null : lookup(id, 'event');
-  };
+  // Two things only a list can be wrong about, and both are errors rather than
+  // warnings because neither is a disagreement between records: **the same
+  // parent twice** says nothing the one entry did not, and an event **listing
+  // itself** is the one-hop cycle spelled out.
+  //
+  // A child dated outside *any one* of its parents is a *warning* (below),
+  // naming which, for the reason `actor-outside-when` is one: the two
+  // intervals come from two records and either may be the one that is wrong.
+  // Inside one umbrella and outside another is an ordinary thing to be.
   for (const r of own) {
-    if (r.kind !== 'event' || typeof r.parent !== 'string') continue;
-    const parent = parentOf(r);
-    if (!parent) {
-      error(24, r, '/parent', `"${r.parent}" is not an event record`);
-      continue;
-    }
-    if (r.status === 'active' && parent.status !== 'active') {
-      error(24, r, '/parent', `an active event cannot be part of the ${parent.status} event "${parent.id}"`);
-    }
-    // Up the chain from this record. `seen` stops the walk on a cycle that
-    // does not pass through the record under validation — the atlas cannot
-    // hold one, since every commit passes this rule, but a bundle can propose
-    // one and the walk must still end.
-    const seen = new Set([r.id]);
-    const walked = [r.id];
-    for (let at = parent; at; at = parentOf(at)) {
-      walked.push(at.id);
-      if (at.id === r.id) {
-        error(24, r, '/parent', `an event cannot be part of itself: ${[...new Set(walked)].join(' → ')}`);
-        break;
+    if (r.kind !== 'event') continue;
+    const ids = parentsOf(r);
+    if (ids.length === 0) continue;
+    // `/parent` where the record spells one id, `/parent/2` where it spells a
+    // list: the path is where a person would look in the file they wrote.
+    const listed = Array.isArray(r.parent);
+    const at = (i) => (listed ? `/parent/${i}` : '/parent');
+    const already = new Set();
+    for (const [i, id] of ids.entries()) {
+      if (already.has(id)) {
+        error(24, r, at(i), `"${id}" is listed as a parent more than once: an event is part of something once or not at all`);
+        continue;
       }
-      if (seen.has(at.id)) break;
-      seen.add(at.id);
+      already.add(id);
+      if (id === r.id) continue;   // the cycle walk below says this, with the path
+      const parent = lookup(id, 'event');
+      if (!parent) {
+        error(24, r, at(i), `"${id}" is not an event record`);
+        continue;
+      }
+      if (r.status === 'active' && parent.status !== 'active') {
+        error(24, r, at(i), `an active event cannot be part of the ${parent.status} event "${parent.id}"`);
+      }
+    }
+    // Up from this record, depth-first over **every** path of `part of`: a
+    // cycle that closes through a second parent is a cycle, and a walk that
+    // followed only the first id would never meet it.
+    //
+    // `seen` stops the walk on a cycle that does not pass through the record
+    // under validation — the atlas cannot hold one, since every commit passes
+    // this rule, but a bundle can propose one and the walk must still end. It
+    // is shared across the whole search rather than per branch: whether this
+    // record is reachable from a node does not depend on how the node was
+    // reached, so visiting it once is enough and the search stays linear.
+    const seen = new Set([r.id]);
+    let cycle = null;
+    const climb = (record, trail) => {
+      for (const id of parentsOf(record)) {
+        if (id === r.id) { cycle = [...trail, id]; return; }
+        if (seen.has(id)) continue;
+        seen.add(id);
+        const next = lookup(id, 'event');
+        if (!next) continue;
+        climb(next, [...trail, id]);
+        if (cycle) return;
+      }
+    };
+    climb(r, [r.id]);
+    if (cycle) {
+      error(24, r, '/parent', `an event cannot be part of itself: ${cycle.join(' → ')}`);
     }
   }
 
@@ -1506,12 +1543,19 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     // "inside" means inside at both ends — a battle in 1916 is not part of a
     // war that ended in 1914, and neither is a war that outlasts the century
     // it is said to be part of.
-    if (r.kind === 'event' && typeof r.parent === 'string') {
-      const parent = parentOf(r);
+    //
+    // **Once per parent since M79, and the warning names which**: an event may
+    // sit squarely inside its regime and reach outside the movement it also
+    // belongs to, and a reader given one warning for a record with three
+    // parents would have to guess which of the three it was about.
+    if (r.kind === 'event') {
       const child = span(r.when);
-      const whole = parent ? span(parent.when) : null;
-      if (child && whole && (child.from < whole.from || child.to > whole.to)) {
-        warning('child-outside-parent', r, `the event is part of "${parent.id}" and is not dated inside it`);
+      for (const id of new Set(parentsOf(r))) {
+        const parent = lookup(id, 'event');
+        const whole = parent ? span(parent.when) : null;
+        if (child && whole && (child.from < whole.from || child.to > whole.to)) {
+          warning('child-outside-parent', r, `the event is part of "${parent.id}" and is not dated inside it`);
+        }
       }
     }
   }

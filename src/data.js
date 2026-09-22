@@ -21,6 +21,7 @@
 import { buildAdjacency } from './graph.js';
 import { byActor, decodeGrounds } from './grounds.js';
 import { narrativeEventIds } from './narrative.js';
+import { parentsOf } from './parts.js';
 import { extent as intervalExtent } from './util/dates.js';
 import { centuryCounts, opensOn } from './util/window.js';
 import { attributePeriod, attributeShardKey, attributeSpan, periodOfEdge, periodsTouched } from './explanations.js';
@@ -431,14 +432,20 @@ export function createAtlas({
   // one, in the order they happened. `parent` is a display fact and never an
   // argument (CLAUDE.md), so this is deliberately not in the adjacency —
   // consequences, ancestors, convergence and the horizon never see it.
+  //
+  // Built from **every** parent since M79, not the first: an event filed under
+  // two umbrellas is inside both, and opening either has to find it. This is
+  // the one place that inversion happens, so the map, the timeline, the graph,
+  // the ring and the card cannot come to disagree about who is inside what.
   const childrenOf = new Map();
   function fillChildrenOf() {
     childrenOf.clear();
     for (const event of activeEvents) {
-      const parent = typeof event.parent === 'string' ? event.parent : null;
-      if (!parent || !events.has(parent)) continue;
-      if (!childrenOf.has(parent)) childrenOf.set(parent, []);
-      childrenOf.get(parent).push(event.id);
+      for (const parent of new Set(parentsOf(event))) {
+        if (!events.has(parent)) continue;
+        if (!childrenOf.has(parent)) childrenOf.set(parent, []);
+        childrenOf.get(parent).push(event.id);
+      }
     }
     for (const list of childrenOf.values()) {
       list.sort((a, b) => intervalExtent(events.get(a).when).min - intervalExtent(events.get(b).when).min

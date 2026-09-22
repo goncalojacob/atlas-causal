@@ -80,7 +80,10 @@ export const SHOTS = Object.freeze([
   // Lisbon, so a shot of the repository's own data would show one symbol on
   // one mark. The fixtures carry three categories on three points apart, and
   // the page says in its own corner that they are synthetic.
-  { name: 'glyphs-map', query: '?fixtures=1&group=region&from=1195&to=1305', width: 1280, height: 820, scale: 2,
+  //
+  // The link said `group=region` until M77, when the grouping was removed and
+  // the parameter became one an old link carries and nothing reads.
+  { name: 'glyphs-map', query: '?fixtures=1&from=1195&to=1305', width: 1280, height: 820, scale: 2,
     what: 'the symbols over the marks and at the left of a bar, on the fixtures' },
   // M37. The base map at both of its levels, and `?bbox=` does the zooming
   // because the state is the URL and there is nothing here to click. The
@@ -364,27 +367,14 @@ export const SHOTS = Object.freeze([
     width: 1440, height: 900,
     what: 'the timeline with the same event chosen: the same few bars the other two views draw' },
 
-  // M64: the toggle closed and open, on the same window as M60, M61 and M65,
-  // so that five runs' pictures of the map go side by side and what differs
-  // between the last two is only the control.
-  //
-  // The first is the point of the milestone as much as the second: **closed it
-  // costs nothing**, the map is the whole pane M60 gave it, and all that is on
-  // it is one button in the corner. The second is the band over the map, with
-  // the profile under it saying where the events are — `density.js`'s own
-  // columns over what the atlas is currently showing (M65).
-  //
-  // `band=open` is the frame's, not the atlas's: the window is URL state and
-  // the toggle is not, so a shot of the band open cannot be asked for by link
-  // alone (docs/screens/frame.html).
-  { name: 'm64-map-closed', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1900&to=1999',
-    width: 1440, height: 900,
-    what: 'a first visit: the whole pane, and the toggle in the corner costing nothing' },
-  { name: 'm64-map-open', page: 'docs/screens/frame.html',
-    query: '?w=1440&h=900&from=1900&to=1999&band=open',
-    width: 1440, height: 900,
-    what: 'the band open over the map: two handles to sweep, and where the events are under them' },
+  // M64 had two shots here, the toggle closed and the band open, and neither
+  // can be taken any more: there is no toggle to photograph closed and no
+  // `band=open` to ask with, because M75 put the band on the map on every
+  // visit. A shot definition that would now produce a different picture from
+  // the sentence beside it is worse than no definition, so the two are gone
+  // and `docs/screens/m64-map-closed.png` and `m64-map-open.png` stay where
+  // they are: they are the record of what M64 looked like, which is the one
+  // thing a picture of a removed control is still good for.
 
   // M66, the two the owner handed over.
   //
@@ -428,6 +418,255 @@ export const SHOTS = Object.freeze([
       + '&layers=land,territories,events:death,events:disaster,events:revolution,events:treaty,events:war',
     width: 1440, height: 900,
     what: 'the elections switched off from the lanes: the picture narrowed and the switch saying so' },
+  // M70. The standing marker, on the card the atlas has been photographed with
+  // since M19 (`m19-event-card`), so the two can be laid side by side: the one
+  // line under the head saying nobody has read this record, and `0 of N read`
+  // in the masthead beside the window. Nothing else about the picture changes,
+  // which is the point — the marker is honesty and not a filter.
+  { name: 'm70-card-standing', query: '?selected=carnation-revolution-1974', width: 1440, height: 900,
+    what: 'a card saying in one line that nobody has read the record, and the masthead counting it' },
+  // And the graph where the fold used to fire. Below the zoom the semantic
+  // collapse worked at, a parent's parts were drawn inside it with a `+N`
+  // beside the mark; since M65 there were no parts in the picture to fold and
+  // since M70 there is no fold. The ring is what says there is more inside
+  // this one, and the Estado Novo — 25 parts, the most of any event in the
+  // corpus — is where a reader can see it saying so alone.
+  { name: 'm70-graph-parent', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph&selected=estado-novo-1933-1974',
+    width: 1440, height: 900,
+    what: 'a parent and its parts side by side: rings, no badge, and nothing folded into anything' },
+
+  // M71. The composer, open beside the picture it is composed out of, with
+  // three steps in it. `compose=` is the frame's, for the reason `band` and
+  // `open` are: whether the composer is open is a preference and the draft
+  // inside it lives in localStorage, so neither is in the URL the atlas keeps.
+  //
+  // Two pictures, and the split between them is the project's own rule about
+  // what may be written here. The first is on the **real corpus** — three
+  // events of the colonial war picked by clicking them, the window 1961 to
+  // 1975 computed from them, and the paragraphs **not written**, because a
+  // paragraph in this file arguing that one thing led to another would be a
+  // historical claim nobody made. What it shows is the walk, the computed
+  // window and the verdict saying what is still missing, which is the
+  // composer as a reader meets it.
+  //
+  // The second is on the **fixtures**, where every word is synthetic and says
+  // so: the same composer with the prose written, a source cited and the
+  // verdict green — the whole of it working, with nothing asserted about the
+  // world.
+  { name: 'm71-composer', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1955&to=1980'
+      + '&compose=angola-war-begins-1961,portugal-e-o-futuro-1974,carnation-revolution-1974',
+    width: 1440, height: 900,
+    what: 'the composer beside the map, three events picked by clicking them, the window computed from them' },
+  { name: 'm71-composer-valid', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1500&fixtures=1&fill=1'
+      + '&compose=fixture-event-b,fixture-event-d,fixture-event-t',
+    width: 1440, height: 1500,
+    what: 'the same composer over the synthetic corpus, written and cited, the validator’s own rules saying yes' },
+
+  // M73. How sure the atlas is, on the line itself. The same state twice,
+  // because the milestone is that the two pictures cannot disagree about it:
+  // the war in Angola, whose five consequences happen to be one of every
+  // confidence the atlas has — `caused` to Lisbon twice, which historians
+  // agree about; `inspired` to Guinea and Mozambique, which is probable; and
+  // `enabled` to Goa, which is disputed and is the faintest line in both.
+  //
+  // Nothing about the state says "confidence". It is the ordinary picture of
+  // an event's consequences, which is the point: a reader who opens an event
+  // is already being told which of the lines in front of them the atlas is
+  // not sure of.
+  { name: 'm73-map', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1955&to=1980&selected=angola-war-begins-1961&bbox=-25,-25,90,55&layers=land,events',
+    width: 1440, height: 900,
+    what: 'the consequences of one event on the map: a disputed line to Goa beside two consensus lines to Lisbon' },
+  { name: 'm73-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1400&from=1955&to=1980&view=graph&selected=angola-war-begins-1961',
+    width: 1440, height: 1400,
+    what: 'the same five links on the graph, inked alike, with the key saying what the difference means' },
+  // M45b: the elevation bands, and the question the whole of M45 exists to
+  // answer — *can a border be seen to sit on a ridge?* M45a made the ground
+  // the base map already had legible; these are the half that costs bytes.
+  //
+  // **With the territories on**, as §2.4 asks, because the point is not that
+  // the bands are pretty but that a frontier stays legible over them and that
+  // a reader can see what the frontier is following. `relief` is named in the
+  // `?layers=` list because it is the one layer off by default (deviation
+  // 979), and a list is "these and nothing else".
+  //
+  // Two places, and they argue the two halves of it. **Iberia** is a frontier
+  // that follows rivers in its middle and a range at either end — the Minho
+  // and the Douro through the low bands, and the Serra da Estrela and the
+  // Cantabrian and Central ranges standing out of them. **The Andes** is the
+  // clearest case there is: two thousand miles of border between Chile and
+  // Argentina drawn along the highest band on the continent, with the Amazon
+  // basin's lowland beside it for the contrast.
+  //
+  // The events are off in both, as they were in M45a's four: at this scale a
+  // mark is a mark on a border, and what these are of is the ground.
+  { name: 'm45b-relief-iberia', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-10.5,35.8,-0.5,44.2&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'Portugal and Spain over five bands: the border on the Minho and the Douro in the lowest, the ranges between them two bands higher' },
+  { name: 'm45b-relief-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the Andes as the top band down the spine of the continent, with Chile and Argentina divided along it' },
+  // There is no pair of "without the bands" shots here, and there does not need
+  // to be: `m45a-ground-iberia` and `m45a-ground-andes` are these very two
+  // boxes with these very two `?layers=` lists and `relief` left out of them,
+  // so the comparison is already on disk and is one picture and not three.
+  // The world, once, for the shape of the planet and to show that the bands
+  // are quiet at the scale the atlas opens at.
+  { name: 'm45b-relief-world', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the whole world in five bands under the colonial borders' },
+  // Two more, and each answers something the three above leave open.
+  //
+  // **The Alps**, because Iberia's frontier follows rivers and the Andes are a
+  // single narrow spine: the Alps are the case where the ridge is *wide*, and
+  // four countries meet on the top band with the Po valley flat below it. It
+  // is the picture in which the milestone's question — can a border be seen to
+  // sit on a ridge? — is answered yes without having to be looked for.
+  //
+  // **The Andes with the territories off**, which is M45a's own measure asked
+  // again (`m45a-ground-bare-andes`) and is here because the answer is not
+  // flattering. The bands are right and they read: the cordillera is the top
+  // band the length of the continent, the Amazon basin the lowest, Patagonia
+  // between. Eight territory hues at 0.62 on top of that leave the broad bands
+  // — the Meseta, the Alps — and very little of a narrow one at 48° across.
+  // A set that showed only the two zooms where it works would be the assertion
+  // §2.4 refused; this is the screenshot that proves the limit as well as the
+  // promise, and STATUS.md says what it means.
+  { name: 'm45b-relief-alps', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=3.5,42.8,17.5,49.2&layers=land,territories,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'a border on a wide ridge: France, Switzerland, Austria and Italy meeting on the top band, the Po valley two bands below it' },
+  { name: 'm45b-relief-bare-andes', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1911&to=1911&bbox=-82,-56,-34,13&layers=land,relief,rivers,lakes,physical,mountains,cities',
+    width: 1440, height: 900,
+    what: 'the same continent with the territories off: the cordillera in five bands, which is what the eight hues are drawn over' },
+
+  // M74. The two halves of one rule, and the pair is the milestone: the graph
+  // opens on the window when nobody has asked it anything, and on the lens
+  // when somebody has.
+  //
+  // The walk is the owner's own twelve-step argument about how the colonial
+  // war ended the regime — the narrative `m48-narrative` photographs on the
+  // map, here on the view that was losing it. Nothing in the query says where
+  // the camera is: `?narrative=` is the whole of the state, and the frame
+  // follows from the walk being the lens.
+  { name: 'm74-graph-walk', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&narrative=how-the-colonial-war-ended-the-regime',
+    width: 1440, height: 900,
+    what: 'the colonial-war walk framed on the graph: twelve steps, every one of them on the screen' },
+  // M74's second picture, `m74-graph-rest`, and M75's two, `m75-map` and
+  // `m75-map-phone`, were definitions here until M76 and their files are still
+  // in `docs/screens/`. All three photograph rules this milestone replaced —
+  // the graph opening on the window, and the band's profile at the corpus's
+  // absolute scale beside two number fields — so re-pointing a definition at
+  // the new picture would leave a sentence describing something else, and
+  // deleting the PNGs would throw away the only record of what M74 and M75
+  // looked like. The definitions went, the files stayed, and the four below
+  // are what the same views show now. (Deviation 997's rule, applied again.)
+
+  // M76. Three instructions from the owner on 21 September, one picture each
+  // and a phone.
+  //
+  // The first: *"If for example I select portugal, the map timeline I use to
+  // pick the dates should show only those events."* Nothing in the query but
+  // the actor — no window, no view — because the band following the selection
+  // is the whole of what is being photographed.
+  { name: 'm76-map-portugal', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&actor=portugal',
+    width: 1440, height: 900,
+    what: 'Portugal selected: every column of the band is Portugal\u2019s own events, drawn at Portugal\u2019s own scale' },
+  // The same map with nothing chosen, on the window M60, M61, M64, M65 and M75
+  // photographed, so the run's pictures of the map go side by side. What is
+  // different from `m75-map` is the whole of this milestone: a profile with a
+  // shape in it, and a masthead with no year to type into.
+  { name: 'm76-map', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'a first visit to the map: the band with a shape, and no field left in the masthead to type a year into' },
+  // And on a phone, where the fields were the hardest thing in the masthead to
+  // use and the band is the easiest.
+  { name: 'm76-map-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&from=1900&to=1999',
+    width: 500, height: 844,
+    what: 'the same in a 390 x 844 viewport: the band is the control and there is nothing to type into' },
+  // The third: *"I think the graph can always show all dates, then one can
+  // zoom in and out and pan to look at different times."* The same narrow
+  // window `m74-graph-rest` was taken on, which is the point — the window is
+  // still in the link and the graph no longer obeys it.
+  { name: 'm76-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph on a window of one century: every date drawn in full, no shaded band, the camera fitting all of it' },
+
+  // M77. The three things the owner asked for on 21 September, each in the
+  // state its own screenshot was taken in.
+  //
+  // The graph under a narrative — `who-was-buying`, twenty-eight steps, the
+  // longest walk the atlas holds and the one the owner's picture was of. What
+  // this is of is the answer to *"it looks clouded and there are too many
+  // labels on top that don't really need to be always visible"*: the walk
+  // named in full and in reading order, the neighbourhood faint and unnamed,
+  // and no note across the top.
+  { name: 'm77-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&narrative=who-was-buying',
+    width: 1440, height: 900,
+    what: 'the graph reading a narrative: every step named in full, the neighbourhood faint and unnamed' },
+  // The graph at phone width, under a lens the reader asked for rather than a
+  // narrative being read: opening a narrative opens its card, and on a phone
+  // an open card is a sheet over the whole view (phone.js) — the picture would
+  // have been of the sheet. A lens on one actor is the same rule at work with
+  // nothing open, which is what a picture of the graph needs.
+  { name: 'm77-graph-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=actor:salazar',
+    width: 500, height: 844,
+    what: 'a lens on one actor in a 390 x 844 viewport: fewer names, still whole ones' },
+  // The timeline at rest, on the whole extent: every bar carrying its title,
+  // no `+n` anywhere, and the rows as many as the titles need.
+  { name: 'm77-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline',
+    width: 1440, height: 900,
+    what: 'the resting timeline: every bar titled, no +n badge, the rows as many as the titles need' },
+  { name: 'm77-timeline-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=timeline',
+    width: 500, height: 844,
+    what: 'the same in a 390 x 844 viewport' },
+  // And a parent opened, which is the second half of the owner's sentence:
+  // *"when you click on it it can show you everything that happened during
+  // that time."* The Estado Novo, whose twenty-five parts are the regime's own
+  // events.
+  { name: 'm77-timeline-opened', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline&selected=estado-novo-1933-1974',
+    width: 1440, height: 900,
+    what: 'an umbrella opened on the timeline: it and what happened during it, each titled' },
+  // M79. An event may be part of several umbrellas (the owner, 22 September:
+  // Angolan independence is inside the Third Republic and inside the
+  // decolonisation of Africa), and the thing to show is that **either one
+  // opens on it**.
+  //
+  // On the fixtures, and it has to be: no record under `data/` names two
+  // parents — this milestone writes none and rewrites none — so the synthetic
+  // corpus is the only place the picture exists. `fixture-event-h` is part of
+  // F and of U and names them in that order; U is the *second* of the two, so
+  // the pair of shots is the whole argument, and the page says in its own
+  // corner that the records are synthetic.
+  //
+  // The timeline, because a bar carries its title and the two pictures can be
+  // read side by side without a legend. No frame: something is open in both,
+  // and the introduction only covers a view opened with nothing open
+  // (deviation 709).
+  { name: 'm79-umbrella-first', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-f',
+    width: 1440, height: 900,
+    what: 'the first umbrella opened: it, and the event inside it that names it first' },
+  { name: 'm79-umbrella-second', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-u',
+    width: 1440, height: 900,
+    what: 'the second umbrella opened: the same event, which names this one second' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

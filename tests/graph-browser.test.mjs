@@ -80,77 +80,17 @@ const count = (text, re) => (text.match(re) ?? []).length;
 // the order they are read in here: every pattern below looks past them.
 const marks = (graph) => count(graph, /<circle[^>]*class="node[ "]/g);
 const stacks = (graph) => count(graph, /<circle[^>]*class="node stack[ "]/g);
-// A parent with its parts drawn inside it. There were none on this corpus
-// until M47 wrote the first `parent` into `data/`, and both kinds of node
-// carry a `cluster-count`.
-const collapsed = (graph) => count(graph, /<circle[^>]*class="node collapsed[ "]/g);
 const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+(\d+)</g)].map((m) => Number(m[1]));
 
-// The events the picture has folded out of sight twice over, and which
-// therefore appear in no badge at all.
-//
-// The two levels of detail compose: the semantic collapse folds a part into
-// its parent and the geometric stacking then runs on the nodes that are left,
-// so a collapsed parent can itself land in a stack. A stack's badge counts
-// the **nodes** under it and not the events inside those nodes, so an event
-// folded twice is counted by neither. It is eight of 250 today, it was
-// nought of 250 until M47 wrote the first parents, and it is a defect in the
-// graph rather than in the data (STATUS.md, deviation 714): M47 was not the
-// run to change what the graph draws, so the arithmetic below says what the
-// picture actually accounts for and names what it does not.
-//
-// An event is folded twice when **the node it was folded into** is drawn
-// nowhere — a drawn node carries `data-id`, and a stack carries `data-stack`
-// and no id at all.
-//
-// Which node that is, is not "the highest ancestor" and never was: a parent
-// swallows its parts only when it is allowed to, and `collapseLayout` blocks
-// every ancestor of anything the reader is holding (collapse.js, M25's
-// never-hide rule). This read as the highest ancestor until M62, because the
-// corpus had no parent that was ever blocked; M62 wrote five umbrellas and
-// the Colonial War is an ancestor of half the carnation revolution's chain,
-// so with a selection its parts are their own nodes and counting them as
-// folded counted them twice. Two things say a parent kept its parts apart,
-// and both are on the page: it is drawn and not drawn `collapsed`, or one of
-// its parts has a mark of its own. Where nothing is held — the picture these
-// tests count most often — no parent is blocked, every chain walks to its
-// top, and this is the old reading exactly.
-//
-// **Over what the picture is of, and not over the corpus, since M65.** At rest
-// no view draws an event that is part of another, so a part is not folded into
-// anything — it is not in the picture at all, and counting it as folded would
-// count 46 events the drawing never had. `drawable` is `emphasis.js`'s own
-// answer for the state the URL describes.
-async function foldedTwice(graph, drawable) {
-  const corpus = await corpusOf(path.join(ROOT, 'data'));
-  const events = new Map(corpus.events
-    .filter((e) => e.status === 'active' && drawable.has(e.id))
-    .map((e) => [e.id, e]));
-  const drawn = new Set([...graph.matchAll(/<circle[^>]*data-id="([^"]+)"/g)].map((m) => m[1]));
-  const classOf = new Map([...graph.matchAll(/<circle\b([^>]*)>/g)]
-    .map((m) => [/data-id="([^"]*)"/.exec(m[1])?.[1], /class="([^"]*)"/.exec(m[1])?.[1]])
-    .filter(([id]) => id !== undefined));
-  const partsDrawn = new Set();
-  for (const event of events.values()) if (typeof event.parent === 'string' && drawn.has(event.id)) partsDrawn.add(event.parent);
-  const keptApart = (id) => {
-    const cls = classOf.get(id);
-    return (cls !== undefined && !/\bcollapsed\b/.test(cls)) || partsDrawn.has(id);
-  };
-  let folded = 0;
-  for (const event of events.values()) {
-    if (typeof event.parent !== 'string') continue;
-    let node = event;
-    const seen = new Set([node.id]);
-    for (;;) {
-      const up = typeof node.parent === 'string' ? events.get(node.parent) : null;
-      if (!up || seen.has(up.id) || keptApart(up.id)) break;
-      node = up;
-      seen.add(up.id);
-    }
-    if (node !== event && !drawn.has(node.id)) folded += 1;
-  }
-  return folded;
-}
+// **Nothing is folded out of sight twice over any more.** There were two
+// levels of detail until M70: the semantic fold put a part inside its parent
+// and the geometric stacking then ran on what was left, so an event could be
+// swallowed by a parent that a stack then swallowed — counted by neither
+// badge, eight of 250 on this corpus, and a defect in the graph rather than
+// in the data (STATUS.md, deviation 714). M65 left that fold dead and M70
+// removed it, so the arithmetic below is the plain promise again: every event
+// the picture is of is a mark on the page or a unit in a badge, and there is
+// no third place for one to be.
 
 // **`degree=0` on every URL that counts the whole corpus.** Since M48 the graph
 // draws what organises other events — at least two active links, by default —
@@ -195,38 +135,20 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   const drawn = marks(graph);
   const hidden = badges(graph);
   assert.ok(drawn < events, `${drawn} marks for ${events} events`);
-  assert.equal(stacks(graph) + collapsed(graph), hidden.length, 'a stack and a parent with its parts inside each carry a badge, and nothing else does');
+  assert.equal(stacks(graph), hidden.length, 'a stack carries a badge and nothing else does');
   assert.ok(hidden.length > 0, 'and there are stacks to carry one');
   // The promise the badges make: nothing has been dropped from the picture,
-  // only folded into it — and what is folded into a parent that a stack then
-  // swallowed is in neither badge, which is the graph's defect and not the
-  // drawing losing a record.
-  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
+  // only merged into it.
+  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0), events);
   for (const n of hidden) assert.ok(n >= 1, 'a badge never says +0');
 });
 
-test('grouping into bands crowds the picture, and more of it merges', { skip }, async () => {
-  const drawable = drawableOf();
-  const events = drawable.size;
-  const [plain, banded] = await withServer(async (url) => [
-    graphOf(await dumpDom(chrome, url(`?view=graph&${WHOLE}`))),
-    graphOf(await dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`))),
-  ]);
-  // "More of it merges" counted as **fewer marks on the page**, which is what
-  // merging means, and not as more stack nodes, which was what this line
-  // asserted until M50. The two came apart on this corpus and at every window
-  // tried: 1890–2026 draws 144 marks in 28 stacks without bands and 62 marks
-  // in 14 with them, and the whole extent of 1492–2026 draws 164 in 66 against
-  // 118 in 66. Banding folds more events into each stack rather than making
-  // more stacks, so the stack count is the wrong instrument — it can fall while
-  // the merging rises, and at high density it saturates and stops moving at
-  // all. The claim in the test's name is unchanged and is now measured by the
-  // thing it is about.
-  assert.ok(marks(banded) < marks(plain), `${marks(banded)} marks in bands, ${marks(plain)} without`);
-  for (const graph of [plain, banded]) {
-    assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
-  }
-});
+// *Grouping into bands crowds the picture, and more of it merges* stood here.
+// It went in M77 with the grouping itself: there are no bands on the graph any
+// more, `?group=region` is read into nothing, and the two pictures the test
+// compared are one picture. What it was about — that merging drops nothing,
+// only folds it — is the test above, which counts marks and badges against the
+// corpus with no grouping to ask for.
 
 test('a merged line carries its count and its type; a single one is unchanged', { skip }, async () => {
   // The picture is the whole extent with no degree floor, as the test above
@@ -235,11 +157,13 @@ test('a merged line carries its count and its type; a single one is unchanged', 
   // a fact about how crowded the corpus happens to be there, and M67 made the
   // banded default window less crowded on purpose — it filed thirteen events
   // under parents, and the resting picture is the main events only (M65). At
-  // the default window `group=region` went from merging lines to merging none
-  // while `?view=graph` still merged two, which is the milestone working, not
-  // the drawing breaking. Asking for everything is the same lesson the test
-  // above learned in M50: count the thing the claim is about.
-  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&group=region&${WHOLE}`)));
+  // the default window the banded picture went from merging lines to merging
+  // none while `?view=graph` still merged two, which was the milestone working
+  // and not the drawing breaking. Asking for everything is the same lesson the
+  // test above learned in M50: count the thing the claim is about. (The bands
+  // themselves went in M77; the window is still the whole extent, for the
+  // reason above.)
+  const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const merged = [...graph.matchAll(/<line[^>]*class="edge ([^"]*merged[^"]*)"[^>]*style="--merged-width: ([\d.]+)"/g)];
   assert.ok(merged.length > 0, 'the banded picture merges some lines');
@@ -269,7 +193,7 @@ test('the selected event and its chain are never inside a stack', { skip }, asyn
   // leaves fewer stacks than the same picture with nothing selected.
   const plain = graphOf(await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`))));
   assert.ok(stacks(graph) < stacks(plain), `${stacks(graph)} stacks with a selection, ${stacks(plain)} without`);
-  assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0) + await foldedTwice(graph, drawable), events);
+  assert.equal(marks(graph) + badges(graph).reduce((a, b) => a + b, 0), events);
 });
 
 // R7: o grafo aberto numa janela estreita. `fitToWindow` só atribui
@@ -300,41 +224,37 @@ test('a narrative step opens the graph without throwing', { skip }, async () => 
   });
 });
 
-// --- the semantic level of detail ------------------------------------------
+// --- a parent and its parts ------------------------------------------------
 //
-// M30b-2, A7: below `COLLAPSE_ZOOM` an event's parts are drawn inside it, and
-// at or above it they are drawn one node each. No event in `data/` is inside
-// another yet, so this is on the fixtures, where `fixture-event-f` holds two.
+// No event in `data/` is inside another at rest, so this is on the fixtures,
+// where `fixture-event-f` holds two.
 const NODE = (id) => `return Boolean(document.querySelector('svg.graph circle.node[data-id="${id}"]'));`;
 
-// The collapse itself is the core's: `parent` and `subtreeWeight` are core
-// columns (spine.js, `CORE_BY_KIND`), so the ring, the badge and the weight
-// are right on the first frame. What waits is the *name*, which arrives with
-// the century (I4a) and puts the graph's node titles back on when it lands.
-// So this waits for the title rather than for a duration — the assertions
-// below are about the drawing, not about how fast a shard is fetched (R3).
+// What a parent is drawn as is the core's: `parent` is a core column
+// (spine.js, `CORE_BY_KIND`), so the ring and the weight are right on the
+// first frame. What waits is the *name*, which arrives with the century (I4a)
+// and puts the graph's node titles back on when it lands. So this waits for
+// the title rather than for a duration — the assertions below are about the
+// drawing, not about how fast a shard is fetched (R3).
 const TITLED = (id) => `
   const el = document.querySelector('svg.graph circle.node[data-id="${id}"]');
   const title = el && el.querySelector('title');
   return Boolean(title) && title.textContent !== ${JSON.stringify(LOADING_LABEL)};`;
 
-// **M65 supersedes the semantic collapse in the two tests below.** The graph
-// used to draw a parent's parts inside it while the reader was zoomed out;
-// since M65 no view draws a part at rest at all, and a reader who opens the
-// parent is holding its parts, which M25's never-hide rule keeps out of any
-// fold. So the collapse no longer fires in either picture: what it said —
-// *there is more inside this one* — the resting rule says by hiding the parts,
-// and the ring (M30c) still says it on the mark. `collapseLayout` is unchanged
-// and `tests/collapse.test.mjs` still holds it to its own rule.
+// **The semantic fold is gone since M70, and these tests say what is left.**
+// The graph used to draw a parent's parts inside it while the reader was
+// zoomed out; M65 made that unreachable — no view draws a part at rest, and a
+// reader who opens the parent is holding its parts, which M25's never-hide
+// rule keeps out of any fold — and M70 removed the code. What it said,
+// *there is more inside this one*, the resting rule says by hiding the parts
+// and the ring (M30c) says on the mark.
 //
 // `from=1200&to=2025` in the three tests below, and it is not decoration.
 // Since M43b the atlas opens on the century that holds most of the corpus
 // (util/window.js, `opensOn`), and a window that is a small share of the data
-// is a window the graph zooms to on arrival — to `FIT_ZOOM`, which is
-// `COLLAPSE_ZOOM` (graph-view.js, `fitToWindow`). So the fixtures' default
-// view is now *above* the threshold these tests are about, and naming the
-// whole extent is how a reader asks for the zoomed-out picture the collapse
-// belongs to. Nothing else about them changes.
+// is a window the graph zooms to on arrival — to `FIT_ZOOM` (graph-view.js,
+// `fitToWindow`). Naming the whole extent is how a reader asks for the
+// zoomed-out picture these tests are about.
 test('at rest a parent keeps its parts out of the graph, and choosing it draws them beside it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
@@ -348,7 +268,6 @@ test('at rest a parent keeps its parts out of the graph, and choosing it draws t
         title: el ? el.querySelector('title').textContent : null,
       };`);
     assert.ok(resting.classes, 'the parent itself is drawn at rest');
-    assert.doesNotMatch(resting.classes, /\bcollapsed\b/, 'and holds nothing inside it, because there is nothing to hold');
     for (const id of ['fixture-event-t', 'fixture-event-h']) {
       assert.equal(await page.eval(NODE(id)), false, `${id} is part of F and is not drawn at rest`);
     }
@@ -361,18 +280,25 @@ test('at rest a parent keeps its parts out of the graph, and choosing it draws t
     const parent = await page.eval(`
       const el = document.querySelector('svg.graph circle.node[data-id="fixture-event-f"]');
       return el ? el.getAttribute('class') : null;`);
-    assert.doesNotMatch(parent ?? '', /\bcollapsed\b/, 'and the parent is a node like any other');
+    assert.match(parent ?? '', /\bnode\b/, 'and the parent is a node like any other');
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   });
 });
 
-// M30c, §1: the collapse above is a *behaviour* — it happens below
-// `COLLAPSE_ZOOM` and stops above it — and the ring is the *look*, which the
-// parent keeps at every zoom. Before this the reader who had zoomed in far
-// enough to see the parts was told nothing about the event holding them.
-const RING = `
+// M30c, §1: the fold was a *behaviour* — it happened below a zoom and stopped
+// above it — and the ring is the *look*, which the parent keeps at every zoom.
+// Before M30c the reader who had zoomed in far enough to see the parts was
+// told nothing about the event holding them; since M70 the ring is all there
+// is, which is why this test is now the whole of what says so.
+//
+// Two parents on the fixtures since M79: `fixture-event-f`, and
+// `fixture-event-u`, whose only child is `fixture-event-h` and names it
+// *second*. A ring around U is the whole of what says that a second umbrella
+// over one event is an umbrella — the ring reads `childrenOf`, which is built
+// from every parent and not the first (src/data.js).
+const RING_AROUND = (id) => `
   const svg = document.querySelector('svg.graph');
-  const node = svg.querySelector('circle.node[data-id="fixture-event-f"]');
+  const node = svg.querySelector('circle.node[data-id="${id}"]');
   if (!node) return { node: null };
   const near = (a, b) => Math.abs(Number(a) - Number(b)) < 0.001;
   const ring = [...svg.querySelectorAll('circle.ring')].find((el) => (
@@ -403,10 +329,17 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
-    const held = await page.eval(RING);
-    assert.doesNotMatch(held.node.classes, /\bcollapsed\b/, 'nothing is folded into it: its parts are not in the picture');
-    assert.equal(held.rings, 1, 'one ring, for the one parent on the fixtures');
+    const held = await page.eval(RING_AROUND('fixture-event-f'));
+    assert.equal(held.rings, 2, 'one ring for each of the two parents on the fixtures');
     assert.ok(held.ring, 'and the parent has it');
+
+    // The second umbrella, whose only child names it second (M79). Nothing on
+    // this view knows the order a record spells its parents in, and a ring
+    // here is how that is said.
+    const second = await page.eval(RING_AROUND('fixture-event-u'));
+    assert.ok(second.node, 'the second umbrella is drawn at rest, being part of nothing');
+    assert.ok(second.ring, 'and it is ringed, because an event names it among its parents');
+    assert.ok(second.ring.r > second.node.r, `outside it: ${second.ring.r} around ${second.node.r}`);
     assert.ok(held.ring.sibling, 'beside the node, in the same layer');
     assert.ok(held.ring.r > held.node.r, `outside it: ${held.ring.r} around ${held.node.r}`);
     assert.equal(held.ring.fill, 'none', 'an outline and not a disc');
@@ -427,8 +360,7 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
         clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
       }));
       return true;`);
-    const parted = await page.eval(RING);
-    assert.doesNotMatch(parted.node.classes, /\bcollapsed\b/, 'nothing is folded into it now');
+    const parted = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(parted.ring, 'and it is still ringed');
     assert.ok(parted.ring.r > parted.node.r);
     // The stroke is divided by the zoom, so the ring is as thin on the screen

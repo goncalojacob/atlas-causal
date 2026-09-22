@@ -34,7 +34,7 @@ import { shortestPaths, pathTo, pathCost, subgraph } from './graph.js';
 //
 // The lens is deliberately not among them. `?focus=` says which events exist
 // for the views, not where an argument begins, and a walk is not an opening
-// and not a lens — the same reason `LAYERS`, `GROUPS` and `OPENINGS` gain no
+// and not a lens — the same reason `LAYERS` and `OPENINGS` gain no
 // member for it.
 export function walkStarts(atlas, state = {}) {
   const starts = [];

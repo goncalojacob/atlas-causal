@@ -260,10 +260,15 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // It is paint order and neither a token nor a control: `manifest.base` does
   // not change, the list of layers does not change, and every layer is still
   // the row the control already had.
-  const GROUND = Object.freeze(['physical']);
-  for (const { group } of [...baseLayers].sort(
-    (a, b) => (GROUND.includes(a.id) ? 0 : 1) - (GROUND.includes(b.id) ? 0 : 1),
-  )) {
+  // **And the bands go under the ground.** M45b puts relief at the bottom of
+  // everything the map draws: it is the only layer with a fill across open
+  // land, so a desert's wash, a lake, a river and a coastline all have to pass
+  // over it or they are not there. The land token underneath is the paper this
+  // map is drawn on and not a layer — it is what a band is a tint *of* — so
+  // "underneath everything" is this position and there is no lower one.
+  const GROUND = Object.freeze(['relief', 'physical']);
+  const under = (id) => (GROUND.includes(id) ? GROUND.indexOf(id) : GROUND.length);
+  for (const { group } of [...baseLayers].sort((a, b) => under(a.id) - under(b.id))) {
     baseGroup.appendChild(group);
   }
 

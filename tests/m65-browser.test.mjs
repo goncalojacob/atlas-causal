@@ -19,6 +19,7 @@ import { withBrowser, open, waitFor, skip } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { workingSet } from '../src/emphasis.js';
 import { isMain } from '../src/lens.js';
+import { parentsOf } from '../src/parts.js';
 import { defaultState } from '../src/state.js';
 
 const dataDir = path.join(ROOT, 'data');
@@ -106,7 +107,9 @@ test('choosing an event narrows all three views to it, its parts, its parent and
       for (const id of ids) assert.ok(shown.has(id), `${name} drew ${id}, which the choice hides`);
       // And the event and what it is part of are both in the picture: a
       // reader who walked down into a regime can see the regime.
-      for (const id of [child.id, child.parent]) {
+      // Every umbrella since M79, not the first: what a lens keeps is all of
+      // what its own events are part of.
+      for (const id of [child.id, ...parentsOf(child)]) {
         if (name === 'map' && unplaced.has(id)) continue;
         assert.ok(ids.includes(id), `${name} left out ${id}`);
       }

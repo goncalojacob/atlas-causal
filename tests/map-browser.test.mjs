@@ -7,10 +7,13 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, until, seenIntro, skip,
+} from './browser.mjs';
 import { cellsFor } from '../src/map/grid.js';
 import { parseBbox } from '../src/state.js';
 import { fixtures } from './helpers.mjs';
+import { parentsOf } from '../src/parts.js';
 
 // Wide and short, so the map area is far wider than 960 × 540's ratio and
 // the picture spills well outside the nominal box on both sides.
@@ -209,8 +212,12 @@ const all = await fixtures();
 // view draws the main events alone — an event that is part of another is drawn
 // when a reader opens the one it belongs to — so a bar for a part is not a bar
 // the lanes owe anybody.
+// Through `parentsOf` since M79: an event may name several umbrellas and
+// spells them as a list, so a test that read `typeof r.parent === 'string'`
+// would call such a record main and then wait for a bar the atlas is right
+// not to draw.
 const PARTED = new Set(all.records
-  .filter((r) => r.kind === 'event' && r.status === 'active' && typeof r.parent === 'string')
+  .filter((r) => r.kind === 'event' && r.status === 'active' && parentsOf(r).length > 0)
   .map((r) => r.id));
 const MAIN = (r) => r.kind === 'event' && r.status === 'active' && !PARTED.has(r.id);
 const ACTIVE = all.records
@@ -1130,7 +1137,11 @@ test('the base map is drawn under the territories and over the coastlines', { sk
     // The physical regions have a tint since M45a and they are the only base
     // layer that fills open land, so drawn where the manifest names them, after
     // the lakes, a desert's wash would pass over the Nile.
-    assert.deepEqual(seen.groups, ['physical', 'coast', 'rivers', 'lakes', 'mountains', 'cities']);
+    // M45b put a second layer under that exception and above it: the elevation
+    // bands are the ground the ground is on, and the only layer allowed a fill
+    // across open land, so everything — the coastline included — passes over
+    // them.
+    assert.deepEqual(seen.groups, ['relief', 'physical', 'coast', 'rivers', 'lakes', 'mountains', 'cities']);
     // A river is not a control.
     assert.equal(seen.pointerEvents, 'none');
   });
@@ -1391,7 +1402,15 @@ test('turning rivers off empties its group and asks for nothing, and back on dra
     await waitFor(page, 'return document.querySelector("#map .layer-base-rivers").children.length === 0;',
       'the rivers to go');
     assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'an off layer asks for nothing');
-    // And what the reader did is in the link, as everything else is.
+    // And what the reader did is in the link, as everything else is — on the
+    // next animation frame and not in the click (state.js), which the two
+    // category tests above already wait for and this one did not. The wait was
+    // the drawing emptying, which happens in the click; one browser pass in
+    // five read `the link says so: null` (M78, docs/m78-flakes.md).
+    await until(page, `return (() => {
+      const written = new URLSearchParams(location.search).get('layers');
+      return written !== null && !written.split(',').includes('rivers');
+    })();`);
     const layers = await page.eval('return new URLSearchParams(location.search).get("layers");');
     assert.ok(layers && !layers.split(',').includes('rivers'), `the link says so: ${layers}`);
     assert.ok(layers.split(',').includes('lakes'), 'and the other four are still on');
@@ -1408,7 +1427,9 @@ test('turning rivers off empties its group and asks for nothing, and back on dra
     assert.equal(await page.eval(BASE_REQUEST_COUNT), before, 'and they are drawn from cache');
     assert.equal(await page.eval('return document.querySelector("#map .layer-base-rivers").children.length;'), drawn,
       'the same picture as before it was switched off');
-    // Everything on again is the default, and the default writes no link.
+    // Everything on again is the default, and the default writes no link — on
+    // a frame, as above, so it is waited for and then asserted.
+    await until(page, "return new URLSearchParams(location.search).get('layers') === null;");
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("layers");'), null,
       'back to the default, and the link says nothing');
   });

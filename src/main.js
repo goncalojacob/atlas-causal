@@ -10,12 +10,13 @@ import { createGraphView } from './graph-view/graph-view.js';
 import { createTimeline } from './timeline.js';
 import { createPanel } from './panel/panel.js';
 import { createSearchBox } from './search-box.js';
-import { createGrouping } from './grouping.js';
+import { createLensChips } from './lens-chips.js';
 import { createPanes } from './panes.js';
 import { createPhone } from './phone.js';
 import { createIntro } from './intro.js';
 import { createReadingMode, openingState } from './narrative-mode.js';
 import { activeFoci, parseFocus, lensSet } from './lens.js';
+import { workingSet } from './emphasis.js';
 import { resolveWindow } from './util/window.js';
 import { bindNarrativeKeys } from './panel/narrative.js';
 import { esc } from './util/esc.js';
@@ -157,7 +158,7 @@ try {
     Promise.allSettled([atlas.loadGrounds(), atlas.loadTerritories()]).then(() => {
       remeasure({ force: true });
       panel.refresh({ force: true });
-      grouping.render(state.get());
+      lensChips.render(state.get());
     });
   };
 
@@ -201,7 +202,7 @@ try {
   createIntro(document.getElementById('intro'), {
     atlas, state, toggle: document.getElementById('intro-button'),
   });
-  const grouping = createGrouping(document.getElementById('grouping'), { atlas, state });
+  const lensChips = createLensChips(document.getElementById('lens-chips'), { atlas, state });
   bindNarrativeKeys(document, { atlas, state });
 
   // The graph and the timeline take the map's slot behind the toggle. Each is
@@ -233,13 +234,37 @@ try {
   // view — the band is still there, on the timeline, and the two write the
   // same two fields of the state.
   createWindowControl(document.getElementById('window-control'), { atlas, state });
-  // And the same window as a band over the map, behind a toggle in its corner
-  // (M64). The two write the same `from` and `to`: typing is for when the reader
-  // knows the year, the band for when they do not and want to sweep for it with
-  // the map answering as they go. Closed on a first visit, so what this line
-  // costs at first paint is one `<button>` — the strip, its scale and its
-  // subscription are built the first time somebody opens it (map-band.js).
+  // And the same window as a band over the map — on it, from first paint, on
+  // every visit since M75: the owner, 21 September, *"The dates two-handled
+  // band should not be hidden."* The two write the same `from` and `to`: typing
+  // is for when the reader knows the year, the band for when they do not and
+  // want to sweep for it with the map answering as they go. There is nothing to
+  // press and nothing remembered, so this line costs its drawing here rather
+  // than on a click that may never come (map-band.js).
   createMapBand(mapArea, { atlas, state });
+
+  // The composer (M71), which is the one control on this page whose module is
+  // not loaded with the page. Everything else in this file is a few kilobytes
+  // beside the index; the composer brings the schema validator, the rules and
+  // the contribution form's record builder with it, which is the whole of what
+  // "first paint must not get slower" is about here. A reader who never writes
+  // a narrative pays for the `<button>` in the masthead and nothing else.
+  const composeButton = document.getElementById('compose-button');
+  let composer = null;
+  // The import is started once and held: a second press while the module is
+  // still on the wire would otherwise build a second composer over the first,
+  // both subscribed to the state and only one of them on the page.
+  let composerLoading = null;
+  composeButton?.addEventListener('click', () => {
+    if (composer) { composer.toggle(); return; }
+    composerLoading ??= import('./compose/composer.js').then(({ createComposer }) => {
+      composer = createComposer(layout, {
+        atlas, state, toggle: composeButton, onLayout: () => remeasure({ force: true }),
+      });
+      composer.open();
+    });
+  });
+
   const showView = (view) => {
     const graphOn = view === 'graph';
     const timelineOn = view === 'timeline';
@@ -253,7 +278,7 @@ try {
       graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
     }
     if (timelineOn && !timeline) {
-      timeline = createTimeline(timelineArea, { atlas, state, onCluster: showCluster });
+      timeline = createTimeline(timelineArea, { atlas, state });
     }
     // The layer switches belong to the map: the graph has no coastlines and
     // the timeline no territories. And the degree floor belongs to the graph,
@@ -294,7 +319,12 @@ try {
   // (render-key.js), so this asks and then tells the views to look again.
   // The three pictures, the card, and the header's chips: a lens chip names a
   // record too, and it is drawn in the masthead rather than by the panel.
-  const shardLanded = () => { remeasure(); panel.refresh(); grouping.render(state.get()); };
+  const shardLanded = () => {
+    remeasure(); panel.refresh(); lensChips.render(state.get());
+    // And the composer's step list, where a step is named by the record's
+    // title once its century is in and by its id until then (attributes.js).
+    composer?.refresh();
+  };
   const askFor = (shards) => {
     for (const shard of shards) atlas.loadAttributes(shard).then(shardLanded, () => {});
   };
@@ -311,6 +341,22 @@ try {
   let releaseWindow = null;
   const onScreenShards = (s) => {
     const wanted = [...atlas.attributeShardsIn(resolveWindow(s, atlas.extent, atlas.opens))];
+    // **The graph is not windowed since M76**, and the pinning was still the
+    // band's. The owner asked for a picture that always shows all dates, so the
+    // graph draws every century while `attributeShardsIn` pinned the two or
+    // three the band covers; the rest are fetched unpinned, the cap of four
+    // evicts the oldest of them, and every record carried only by an evicted
+    // shard is stripped of its title (data.js, `evictIfOver`). The graph then
+    // holds marks it has drawn and can never name — measured on
+    // `?view=graph&from=1900&to=1999` as three of eighty-seven, the same three
+    // every round, still reading "still loading" ten seconds later (M78,
+    // docs/m78-flakes.md). What a view draws is what is on screen, so the
+    // shards of what the graph draws are pinned while it is the view.
+    if (s.view === 'graph') {
+      for (const shard of atlas.attributeShardsOf(workingSet(atlas, s).shown)) {
+        if (!wanted.some((w) => w.key === shard.key)) wanted.push(shard);
+      }
+    }
     const lens = lensSet(atlas, s);
     if (lens) {
       for (const shard of atlas.attributeShardsOf(lens)) {

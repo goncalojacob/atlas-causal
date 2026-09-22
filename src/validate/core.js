@@ -10,6 +10,7 @@ import {
   buildUniverse, checkRules, normalizeRole,
 } from './rules.js';
 import { KINDS } from '../kinds.js';
+import { parentsOf } from '../parts.js';
 import { EDGE_TYPE_IDS, EVENT_SCOPES, OFFICE_CATEGORY_IDS, RELATION_TYPE_IDS, edgeId } from '../vocab.js';
 // The column table, the encoder and the decoder, in one leaf module because
 // `data.js` reads the same table backwards and cannot import this file.
@@ -20,6 +21,11 @@ import {
 // shards of I5 (docs/index2-plan.md, A8).
 import { attributePeriod, attributeShardKey, attributeSpan, periodOf, periodsTouched, PERIOD } from '../explanations.js';
 import { astronomicalBounds } from '../util/dates.js';
+// "Has a person read this record", asked of the record's own `review` block.
+// The index carries the answer rather than the block, and it is imported
+// rather than rewritten here so that the builder and the two readers of the
+// standing marker are one function (M70).
+import { hasBeenRead } from '../standing.js';
 // The number the *reader* refuses an unknown value of, which is why it lives
 // there and is imported here rather than written out twice (data.js).
 import { INDEX_GENERATION } from '../data.js';
@@ -158,10 +164,11 @@ export function eventWeights(events, edges) {
 }
 
 // How much the whole of an event carries: its own `weight` plus every
-// descendant's, through `parent`, transitively. It is what the graph draws a
-// collapsed parent at when the children are folded into it (plan decision 4),
-// and it is derived exactly as `weight` is — nobody can make a node bigger
-// except by giving it more edges, more actors or more parts.
+// descendant's, through `parent`, transitively. It was what the graph drew a
+// folded parent at (plan decision 4); the fold went in M70 and the column is
+// carried and drawn by nothing at present. It is derived exactly as `weight`
+// is — nobody can make a node bigger except by giving it more edges, more
+// actors or more parts.
 //
 // `weight` itself is untouched: the two are different questions and a reader
 // zoomed in on a battle should see the battle's own size.
@@ -170,19 +177,29 @@ export function eventWeights(events, edges) {
 // a cycle is rule 24's error and never reaches a committed index; this is
 // what stops the walk from being an infinite loop while the validator is
 // still deciding to reject it (amendment A11).
+//
+// Since M79 the walk up is over **every** parent and not the first, and an
+// ancestor reachable by two paths is still credited once: `seen` is per child,
+// so an event inside both a regime and a movement that are themselves inside
+// one century adds its weight to that century once.
 export function subtreeWeights(events, weights) {
   const parents = new Map();
   for (const event of events) {
-    if (typeof event.parent === 'string' && event.parent !== event.id) parents.set(event.id, event.parent);
+    const ids = parentsOf(event).filter((id) => id !== event.id);
+    if (ids.length > 0) parents.set(event.id, ids);
   }
   const sums = new Map(events.map((e) => [e.id, weights.get(e.id) ?? 0]));
   if (parents.size === 0) return sums;
   for (const [child, first] of parents) {
     const own = weights.get(child) ?? 0;
     const seen = new Set([child]);
-    for (let at = first; at !== undefined && sums.has(at) && !seen.has(at); at = parents.get(at)) {
+    const climbing = [...first];
+    while (climbing.length > 0) {
+      const at = climbing.pop();
+      if (seen.has(at) || !sums.has(at)) continue;
       seen.add(at);
       sums.set(at, sums.get(at) + own);
+      for (const above of parents.get(at) ?? []) climbing.push(above);
     }
   }
   return sums;
@@ -357,7 +374,11 @@ function versionOf(record) {
 // parses whole (health review of 6 September, R5).
 function partsOf(record) {
   const out = {};
-  if (typeof record.parent === 'string') out.parent = record.parent;
+  // The record's own spelling, carried across as it stands: `parentsOf()` is
+  // what reads it and it reads all three shapes, so normalising a string to a
+  // list of one here would rewrite every committed index row to say what the
+  // helper already says (M79).
+  if (typeof record.parent === 'string' || Array.isArray(record.parent)) out.parent = record.parent;
   if (typeof record.scope === 'string') out.scope = record.scope;
   if (typeof record.category === 'string') out.category = record.category;
   return out;
@@ -374,6 +395,16 @@ function identityOf(record) {
   if (typeof record.wikidata === 'string') out.wikidata = record.wikidata;
   if (isObject(record.wikipedia)) out.wikipedia = record.wikipedia;
   return out;
+}
+
+// Whether a person has read and signed this record (M70). The whole `review`
+// block stays out — the flags, the note, the claim and the per-citation ticks
+// are the reviewer's and are read from the record's own file — and what the
+// topology carries is the one bit the masthead counts. `true` or absent, so
+// that nothing is written on the records nobody has signed, which today is
+// every one of them.
+function standingOf(record) {
+  return hasBeenRead(record) ? { reviewed: true } : {};
 }
 
 // Where a record sits and which lane that puts it in: the override on the
@@ -449,6 +480,7 @@ export function buildTopology(records, regions, { deriveRegion, roles, categorie
         regionMethod,
         ...partsOf(r),
         ...identityOf(r),
+        ...standingOf(r),
         status: r.status,
         supersededBy: r.supersededBy ?? null,
         aliases: r.aliases ?? [],
@@ -668,6 +700,12 @@ function slotReader(citesCount) {
   return (kind, name, record) => {
     switch (name) {
       case 'citesCount': return citesCount(kind, record.id);
+      // The index's copy of "has a person read this", so the masthead can
+      // count it without fetching 573 files. The topology already carries the
+      // bit (`standingOf`) and this is `true` or nothing: a slot written
+      // `false` on every unread record would be 10,311 falses saying what the
+      // absence already says (M70).
+      case 'reviewed': return record.reviewed === true ? true : undefined;
       case 'geometry': return record.geometry ?? null;
       case 'wikidata': return typeof record.wikidata === 'string' ? record.wikidata : undefined;
       case 'wikipedia': return isObject(record.wikipedia) ? record.wikipedia : undefined;

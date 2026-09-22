@@ -57,11 +57,24 @@ const dragWindowTo = (kind, fraction) => `
 // And the other way to the same two fields, which is the one a reader on the
 // map has since M60: the two ends in the masthead (window-control.js). One
 // state change rather than twenty, and no band anywhere near it.
+// Moves one end of the window. It typed into the masthead's number field until
+// M76 removed it — the owner, 21 September: *"Picking up the dates exactly is
+// unnecessary"* — and these tests are about **the list following the window**
+// and never about which control moved it (see each one's own comment), so it
+// writes the address the band would have written and lets the store read it
+// back, exactly as a popstate does. Sweeping the band itself is
+// `tests/m76-browser.test.mjs`, where the control is what is being judged.
 const setWindowTo = (kind, year) => `
-  const input = document.querySelector('#window-control [data-window="${kind}"]');
-  input.value = '${year}';
-  input.dispatchEvent(new Event('change', { bubbles: true }));
+  const at = new URLSearchParams(location.search);
+  at.set('${kind}', '${year}');
+  history.replaceState(null, '', '?' + at.toString());
+  window.dispatchEvent(new PopStateEvent('popstate'));
   return true;`;
+
+// The band on the map carrying a year, which is how a test waits for the
+// masthead and the pictures to have caught up with the link.
+const bandEndAt = (kind, year) => `return document.querySelector('#map-band-strip .window-handle.${kind}')
+  ?.getAttribute('aria-valuenow') === '${year}';`;
 
 // Waits until the attribute shards have stopped arriving: two readings of the
 // page's own resource timeline the same, a beat apart. The count is a property
@@ -418,8 +431,7 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     const whole = await opensOn();
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     await open(page, url(`?place=lisbon&from=${atlas.extent.min}&to=${atlas.extent.max}`));
-    await waitFor(page, `return document.querySelector('#window-control [data-window="to"]').value === '${atlas.extent.max}';`,
-      'the control to carry the window');
+    await waitFor(page, bandEndAt('to', atlas.extent.max), 'the band to carry the window');
     // The shards land after the card does and each arrival draws it again
     // (main.js), so the marker below goes on after they have stopped: what
     // this test is about is the window, not the corpus arriving.
@@ -460,8 +472,7 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
   await withBrowser(async (page, url) => {
     const atlas = await atlasOf(path.join(ROOT, 'data'));
     await open(page, url(`?actor=brazil&from=${atlas.extent.min}&to=${atlas.extent.max}`));
-    await waitFor(page, `return document.querySelector('#window-control [data-window="to"]').value === '${atlas.extent.max}';`,
-      'the control to carry the window');
+    await waitFor(page, bandEndAt('to', atlas.extent.max), 'the band to carry the window');
     // The ground is two files, fetched when a lens on an actor asks (M48, M54)
     // and landing as one arrival, which the card and the chips are drawn again
     // for (main.js). Waited for, never timed — and waited for at the *chip*,
@@ -520,7 +531,7 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     const narrowed = await page.eval(`return {
       from: Number(new URLSearchParams(location.search).get('from')),
       view: new URLSearchParams(location.search).get('view'),
-      whole: Number(document.querySelector('#window-control [data-window="from"]').min),
+      whole: Number(document.querySelector('#map-band-strip .window-handle.from').getAttribute('aria-valuemin')),
     };`);
     assert.ok(narrowed.from > narrowed.whole, `the band was narrowed: from=${narrowed.from}`);
     assert.equal(narrowed.view, 'graph');
@@ -528,11 +539,11 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
     await page.eval('history.back(); return true;');
     await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', 'the event again');
 
-    const after = await page.eval(`const end = document.querySelector('#window-control [data-window="from"]');
+    const after = await page.eval(`const end = document.querySelector('#map-band-strip .window-handle.from');
     return {
       url: Object.fromEntries(new URLSearchParams(location.search)),
-      from: Number(end.value),
-      whole: Number(end.min),
+      from: Number(end.getAttribute('aria-valuenow')),
+      whole: Number(end.getAttribute('aria-valuemin')),
       graphShown: !document.getElementById('graph').hidden,
       pressed: document.querySelector('[data-view="map"]').getAttribute('aria-pressed'),
     };`);

@@ -15,6 +15,7 @@ import { OFFICE_CATEGORY_IDS as OFFICE_CATEGORIES, EVENT_SCOPES } from '../vocab
 import { CONTAINER_KINDS } from '../citation.js';
 import { KIND, CONTRIBUTED_KINDS, listsOf } from '../kinds.js';
 import { articleTitles } from '../wikipedia.js';
+import { parentsOf } from '../parts.js';
 
 export const CONFIDENCE = Object.freeze(['consensus', 'probable', 'disputed']);
 export const SOURCE_TYPES = Object.freeze(['book', 'chapter', 'article', 'thesis', 'primary', 'dataset', 'web']);
@@ -696,7 +697,10 @@ export function valuesFromRecord(kind, record) {
       endDate: when.endDate ?? '',
       place: r.place ?? '',
       region: r.region ?? '',
-      parent: r.parent ?? '',
+      // One select for a field that may name several umbrellas (M79): the
+      // first is what it shows, and `applyValues` keeps the rest where the
+      // reviewer has not answered the question themselves.
+      parent: parentsOf(r)[0] ?? '',
       scope: r.scope ?? '',
       category: r.category ?? '',
       actors: (Array.isArray(r.actors) ? r.actors : []).map((a) => ({ actor: a?.actor ?? '', role: a?.role ?? '', note: a?.note ?? '' })),
@@ -929,6 +933,16 @@ export function applyValues(kind, record, values) {
   if (!Object.hasOwn(built, 'body') && record?.body === null) built.body = null;
   if (kind === 'source' && !Object.hasOwn(built, 'container') && record?.container === null) {
     built.container = null;
+  }
+  // The form asks "Part of" once and a record may answer it several times
+  // (M79). A reviewer who has left the select where it was — still naming the
+  // first umbrella on the record — keeps the whole list; one who picked
+  // something else has answered the question, and their one id is what is
+  // written. An editor with one select must never be the thing that quietly
+  // drops an umbrella somebody filed.
+  if (kind === 'event' && Array.isArray(record?.parent) && record.parent.length > 1
+    && built.parent === record.parent[0]) {
+    built.parent = record.parent;
   }
   return orderLike(built, record ?? {});
 }

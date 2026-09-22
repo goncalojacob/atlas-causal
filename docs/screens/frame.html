@@ -41,16 +41,12 @@
     // one screenshot has never been anywhere. Written on this page, which is
     // the frame's own origin, so the frame reads it back.
     try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch { /* storage off */ }
-    // And whether the band M64 opens over the map is open. It is a preference
-    // and not state — a link is the picture its sender saw, not the controls
-    // they had open (src/map-band.js) — so a shot of the band cannot be asked
-    // for by link alone either. `band=open` writes the same key the toggle
-    // writes, on this page's origin, and is not passed on to the atlas.
-    const band = params.get('band');
+    // M64 needed a `band` parameter here, because whether the band over the map
+    // was open was a preference and a shot of it could not be asked for by link
+    // alone. M75 removed the button — the band is on the map on every visit —
+    // so there is nothing to write and the parameter is dropped rather than
+    // left writing a key nobody reads (src/map-band.js).
     params.delete('band');
-    try {
-      localStorage.setItem('atlas-causal.band', band === 'open' ? 'open' : 'closed');
-    } catch { /* storage off */ }
     // How far into the graph the picture is taken, and over which mark. The
     // zoom is not in the URL — the atlas keeps what the reader is *looking at*
     // there and not how far they have wheeled into it (graph-view.js) — so a
@@ -74,6 +70,38 @@
     // reader would make. Not passed on to the atlas (M68).
     const openId = params.get('open');
     params.delete('open');
+    // And the composer (M71), for the same reason again: whether it is open is
+    // a preference and the draft inside it lives in localStorage, so neither
+    // is in the URL the atlas keeps and neither can be asked for by link.
+    // `compose=<id>,<id>,…` writes a draft with those events as its steps, on
+    // this page's origin, and presses the button afterwards.
+    //
+    // **The steps carry no prose unless `fill=1` is given**, and the prose it
+    // then writes is the synthetic paragraph below — this file makes no
+    // historical claim, so `fill=1` belongs with `fixtures=1` and nowhere
+    // else. A picture of the composer with three real events picked and the
+    // paragraphs not yet written is an honest picture of the composer; a
+    // picture of it with an argument in it that nobody made would not be.
+    const compose = params.get('compose');
+    const fill = params.get('fill') === '1';
+    params.delete('compose');
+    params.delete('fill');
+    if (compose) {
+      const refs = compose.split(',').map((s) => s.trim()).filter(Boolean);
+      const synthetic = (n) => `Step ${n} of a synthetic walk. Nothing here is history: it is `
+        + 'the fixture corpus, and this paragraph exists so that the picture shows what a '
+        + 'written step looks like.';
+      try {
+        localStorage.setItem('atlas-causal.compose', JSON.stringify({
+          title: fill ? 'A synthetic walk' : '',
+          summary: fill ? 'Nothing in this narrative is history. It is composed out of the fixture '
+            + 'records so that the composer can be photographed with a walk in it.' : '',
+          author: fill ? 'A Reader' : '',
+          citations: fill ? [{ source: 'fixture-source-1', locator: '' }] : [],
+          steps: refs.map((ref, i) => ({ ref, text: fill ? synthetic(i + 1) : '' })),
+        }));
+      } catch { /* storage off */ }
+    }
     const frame = document.getElementById('viewport');
     frame.width = width;
     frame.height = height;
@@ -94,6 +122,27 @@
         details.open = true;
       };
       setTimeout(reveal, 50);
+    }
+
+    if (compose) {
+      // The button is in the masthead from the first frame; the composer's own
+      // module is fetched when it is pressed, so this waits for the column
+      // rather than for the load event.
+      // The button is in the masthead from the first frame, but its listener is
+      // wired only once the atlas has loaded, and the composer's own module is
+      // fetched when it is pressed. So this waits for a picture to be drawn —
+      // which is the atlas up — and then presses, and keeps looking until the
+      // column is there.
+      let asked = 0;
+      const press = () => {
+        const doc = frame.contentDocument;
+        if (doc?.querySelector('#composer .composer-steps')) return;
+        const button = doc?.getElementById('compose-button');
+        const drawn = doc?.querySelector('.map .mark, #timeline rect.bar, .graph .node');
+        if (button && drawn) button.click();
+        if ((asked += 1) < 400) setTimeout(press, 250);
+      };
+      setTimeout(press, 50);
     }
 
     if (Number.isFinite(zoom) && zoom > 0) {

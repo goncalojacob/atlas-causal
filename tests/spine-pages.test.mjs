@@ -14,7 +14,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, until, named as allNamed, skip,
+} from './browser.mjs';
+import { LOADING_LABEL } from '../src/attributes.js';
 import { ROOT } from './helpers.mjs';
 
 // How many attribute shards this build has, read off the manifest on disk
@@ -33,6 +36,9 @@ const ATLAS_READY = 'return document.querySelectorAll(".map .mark, .timeline .ba
 // And what says the lanes have been drawn, for the tests that are about them:
 // since M60 the timeline is a view of its own and a link asks for it (main.js).
 const BARS_READY = 'return document.querySelectorAll(".timeline .bar").length > 0;';
+// And what says the graph has drawn its nodes: the third view, built the first
+// time it is asked for, as the timeline is.
+const GRAPH_READY = 'return document.querySelectorAll("svg.graph circle.node[data-id]").length > 0;';
 
 // query, what says the page has finished loading its data, which graph file
 // the page reads and how many times it asks for it. One for every page that
@@ -147,6 +153,21 @@ for (const [query, ready, graph, times] of PAGES) {
       // cell there is, and the near level is not asked for until NEAR_ZOOM
       // (map.js). A page with no map asks for none of it either way.
       assert.deepEqual(base.cells, [], `${query} fetched a base map cell at the world view`);
+      // M45b's bands are the one base layer that is **off by default**, so on
+      // a page nobody has asked for them they cost nothing at all — not a
+      // cell, and not the far file either, which every other layer the world
+      // view reaches does fetch behind the `defer`. 5 MB of ground the reader
+      // did not ask for is the whole reason `LAYERS` and `DEFAULT_LAYERS` are
+      // two lists (deviation 979), and this is where that is worth a byte
+      // count rather than an intention: relief is why first paint did not get
+      // slower in a milestone that put five megabytes into `data/geo/`.
+      //
+      // Named rather than left to the `geo/base/` assertions above, which are
+      // about *when* a request happened: this one is about there being none.
+      const relief = await page.eval(`
+        return performance.getEntriesByType('resource')
+          .map((e) => e.name).filter((n) => n.includes('geo/base/relief'));`);
+      assert.deepEqual(relief, [], `${query} fetched the elevation bands, which nobody switched on`);
     });
   });
 }
@@ -232,6 +253,37 @@ test('the atlas draws its bars before the last century lands, and names them whe
       if (bar.id) assert.ok(!bar.title.startsWith(bar.id), `${bar.id} is labelled with its own id`);
       assert.equal(bar.label === '' , false, 'a control nobody can name');
     }
+  });
+});
+
+// And the same promise on the view that is not windowed. Since M76 the graph
+// draws every date whatever the band says (owner, 21 September), while the
+// shards held on screen were still the band's: the rest were fetched unpinned,
+// the cap of four evicted the oldest of them, and every record carried only by
+// an evicted shard lost its title. Three marks of eighty-seven on the URL below
+// were drawn and never named — the same three every round, ten seconds after
+// the last shard had landed — which is a reader looking at a picture the atlas
+// has the names for and will not say (M78, docs/m78-flakes.md).
+//
+// A band narrow enough to pin two centuries and a graph that draws six is the
+// whole of the case, so the window here is deliberate and not decoration.
+test('the graph names every mark it draws, however narrow the band', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?view=graph&from=1900&to=1999'), GRAPH_READY);
+    const every = await shardCount();
+    await waitFor(page, `return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length >= ${every};`, 'every attribute shard');
+    // The assertion, waited for as itself: `until`, so a mark that never gets
+    // its name is reported below with its id and not as a timeout.
+    await until(page, allNamed('svg.graph circle.node[data-id]'));
+
+    const marks = await page.eval(`return [...document.querySelectorAll('svg.graph circle.node[data-id]')].map((m) => ({
+      id: m.getAttribute('data-id'),
+      title: m.querySelector('title')?.textContent ?? '',
+    }));`);
+    assert.ok(marks.length > 10, `${marks.length} marks on the graph`);
+    const unnamed = marks.filter((m) => m.title === '' || m.title.startsWith(LOADING_LABEL));
+    assert.deepEqual(unnamed.map((m) => m.id), [],
+      'a mark the graph drew and the atlas will not name');
   });
 });
 

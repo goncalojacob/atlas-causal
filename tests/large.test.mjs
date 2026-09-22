@@ -4,8 +4,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { largeEvent, largeEventsIn, bracketsIn } from '../src/large.js';
-import { lanesFor } from '../src/lanes.js';
+import { largeEvent, largeEventsIn } from '../src/large.js';
 import { atlasOf, FIXTURE_DATA } from './helpers.mjs';
 
 const event = (id, { region = 'europe', scope = undefined, parent = null, year = 1900 } = {}) => ({
@@ -69,54 +68,17 @@ test('largeEventsIn answers about what a view is drawing, in that order', () => 
   assert.deepEqual(largeEventsIn(shown.filter((e) => e.id !== 'flu'), atlas), []);
 });
 
-// --- the bracket ----------------------------------------------------------
+// --- the bracket -----------------------------------------------------------
+//
+// Four tests stood here, about the thin rule a parent got over its parts when
+// they shared a named lane. Named lanes went with the grouping in M77 and
+// `bracketsIn` went with them: the rows are packed, and what says an event has
+// parts is the ring around its bar on all three views (parts.js).
 
-const REGIONS = [
-  { id: 'europe', label: 'Europe', order: 1 },
-  { id: 'africa', label: 'Africa', order: 2 },
-];
-const laneList = (events) => lanesFor('region', { activeEvents: events, regions: REGIONS });
-
-test('a parent whose parts share a lane gets a bracket over them', () => {
-  const events = [event('war'), event('one', { parent: 'war', year: 1901 }), event('two', { parent: 'war', year: 1902 })];
-  const atlas = atlasOfEvents(events);
-  const brackets = bracketsIn(events, laneList(events), atlas);
-  assert.equal(brackets.length, 1);
-  assert.equal(brackets[0].event.id, 'war');
-  assert.equal(brackets[0].lane.id, 'europe');
-  assert.deepEqual(brackets[0].parts.map((p) => p.id), ['one', 'two']);
-});
-
-test('a parent that is large gets the band and never a bracket as well', () => {
-  const crossing = [event('war'), event('one', { parent: 'war' }), event('two', { parent: 'war', region: 'africa' })];
-  assert.deepEqual(bracketsIn(crossing, laneList(crossing), atlasOfEvents(crossing)), []);
-
-  // And one that is large only because a person wrote `scope`: its parts are
-  // in one lane, and it still gets the band rather than two marks saying one
-  // thing.
-  const written = [event('war', { scope: 'regional' }), event('one', { parent: 'war' }), event('two', { parent: 'war' })];
-  assert.deepEqual(bracketsIn(written, laneList(written), atlasOfEvents(written)), []);
-});
-
-test('no lanes, no bracket, and no bracket over a part the view is not drawing', () => {
-  const events = [event('war'), event('one', { parent: 'war' }), event('two', { parent: 'war' })];
-  const atlas = atlasOfEvents(events);
-  // With no grouping the rows are packed and there is no vertical room.
-  assert.deepEqual(bracketsIn(events, [], atlas), []);
-  // A parent whose parts are all outside the picture brackets nothing.
-  const alone = events.filter((e) => e.id === 'war');
-  assert.deepEqual(bracketsIn(alone, laneList(events), atlas), []);
-  // One part drawn is one part to span.
-  const half = events.filter((e) => e.id !== 'two');
-  assert.deepEqual(bracketsIn(half, laneList(events), atlas).map((b) => b.parts.length), [1]);
-});
-
-test('on the fixtures the one parent there is is large, and gets no bracket', async () => {
+test('on the fixtures the one parent there is is large, and is drawn as a band', async () => {
   const atlas = await atlasOf(FIXTURE_DATA);
   const parent = atlas.events.get('fixture-event-f');
   // Written `scope: regional`, and its two parts are in two lanes: large twice
   // over, which is the case the band exists for.
   assert.deepEqual(largeEvent(atlas, parent), { scope: 'regional', reason: 'scope', region: 'fixture-lane-3' });
-  const lanes = lanesFor('region', atlas, null, null, []);
-  assert.deepEqual(bracketsIn(atlas.activeEvents, lanes, atlas), []);
 });

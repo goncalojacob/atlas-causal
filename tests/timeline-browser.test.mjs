@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, until, skip } from './browser.mjs';
 import { ROW_LIMITS } from '../src/timeline.js';
 import { GLYPH_BOX } from '../src/map/glyphs.js';
 
@@ -48,6 +48,56 @@ const FIT = `
     windowHeight: innerHeight,
   };`;
 
+// No bar is waiting for its name: every bar whose title is a name has that name
+// drawn as a label. A bar whose century has not landed carries the interface
+// saying it is still loading, which is in no label, so it counts as unnamed
+// here. The wait a test about what the drawing *does next* owes itself, since
+// a shard landing is a hundred and fifty labels drawn (M78).
+const BARS_NAMED = `
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!svg) return false;
+  const bars = [...svg.querySelectorAll('rect.bar[data-id], .layer-held rect[data-id]')];
+  if (bars.length < 1) return false;
+  const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
+  return bars.every((b) => {
+    const t = b.querySelector('title');
+    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    return !name || drawn.has(name);
+  });`;
+
+// The rows have been laid out for the pane they are in *now*, and the height
+// they were laid out at is what the caller says. `fits`'s own first assertion
+// — the pane holds the drawing and nothing else — said as a predicate: a
+// layout measured against a pane that has since changed fails it, which is
+// what tells the settled drawing from the one the observer wrote on its way
+// there.
+const LAID_OUT_FOR_ITS_PANE = (height) => `
+  const svg = document.querySelector('#timeline svg.timeline');
+  const pane = document.querySelector('.timeline-area');
+  if (!svg || !pane) return false;
+  const drawn = Number(svg.getAttribute('height'));
+  return drawn ${height} && pane.scrollHeight === drawn;`;
+
+// The drawing, read once it is the drawing of the pane it is in. `READY` is a
+// lane existing, which is as true of the first layout as of the settled one:
+// the masthead wraps and a scrollbar comes and goes, so the timeline is laid
+// out twice on an ordinary visit and `fits`'s own first assertion — the pane
+// holds the drawing and nothing else — is false in between. Measured on a page
+// nobody had resized: one run in six read `a 1400 px window: 1295 !== 1276`
+// (M78, docs/m78-flakes.md). So the wait is that assertion, and `fits` still
+// makes it: a drawing that never settles is reported by the assertion, with
+// both numbers, and not as a timeout.
+const SETTLED = `
+  const pane = document.querySelector('.timeline-area');
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!pane || !svg) return false;
+  return pane.scrollHeight === Number(svg.getAttribute('height'));`;
+
+const fitOf = async (page) => {
+  await until(page, SETTLED);
+  return page.eval(FIT);
+};
+
 // The same assertions wherever the pane's height comes from.
 function fits(fit, where) {
   assert.equal(fit.scrollHeight, fit.svgHeight, `${where}: the pane holds the drawing and nothing else`);
@@ -64,7 +114,7 @@ function fits(fit, where) {
 test('at a window 500 px tall every lane is inside the timeline pane', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on()), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     assert.equal(fit.windowHeight, 500);
     assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
     fits(fit, 'a 500 px window');
@@ -75,99 +125,72 @@ test('when the rows have the room they take it, and the pane does not scroll', {
   await withBrowser(async (page, url) => {
     // Eleven fixture events pack into a handful of rows, which fit.
     await open(page, url(on('fixtures=1')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'the fixtures at 500 px');
     assert.equal(fit.svgHeight, fit.paneHeight, 'the drawing is exactly the pane');
     assert.ok(fit.lowestBar <= fit.paneHeight, 'so the bottom row is on screen without scrolling');
   }, { device: { width: 1280, height: 500, deviceScaleFactor: 1 } });
 });
 
-// The same rule for a named grouping, against a lane's own floor: a lane keeps
-// room for its label, so it is squeezed less far than a packed row and a short
-// pane holds fewer of them. "Other" is a lane like any other and counts
-// against the room (timeline.js, `fits`; i6-brief §2).
-test('a named grouping takes the lanes its pane holds, and drops one rather than overflow', { skip }, async () => {
-  const at = async (height) => {
-    let fit = null;
-    await withBrowser(async (page, url) => {
-      await open(page, url(on('group=actor')), READY);
-      fit = await page.eval(FIT);
-    }, { device: { width: 1280, height, deviceScaleFactor: 1 } });
-    return fit;
-  };
-
-  const tall = await at(900);
-  fits(tall, 'the actor lanes in a 900 px window');
-  assert.ok(tall.lanes > 2, `the atlas drew several lanes (${tall.lanes})`);
-  assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');
-  assert.equal(tall.scrollHeight, tall.paneHeight, 'so nothing scrolls');
-
-  // Short enough that the lanes really do not all fit. Since M60 the timeline
-  // has the whole pane rather than a strip of it, so what used to be a short
-  // window for this rule — 460 px, with 30 % of it the timeline's — is now
-  // tall enough to hold every lane there is.
-  const short = await at(300);
-  fits(short, 'the actor lanes in a 300 px window');
-  assert.equal(short.svgHeight, short.paneHeight, 'still exactly the pane');
-  assert.equal(short.scrollHeight, short.paneHeight, 'and still nothing scrolls');
-  assert.ok(short.lanes < tall.lanes, `fewer lanes in a shorter pane (${short.lanes} of ${tall.lanes})`);
-  assert.ok(short.lanes >= 1, 'and never none');
-  // Never below the floor a lane with a label needs, which is the whole
-  // reason the count comes down instead.
-  assert.ok(short.laneHeight >= 22, `no lane below the floor (${short.laneHeight})`);
-});
+// *A named grouping takes the lanes its pane holds* stood here, about a lane
+// keeping room for its own label and being squeezed less far than a packed
+// row. The named lanes went with the grouping in M77 and there is one kind of
+// row left.
 
 // Failing from the world merge of 8 September 2026 until I6: with the world's
 // events the rows overflowed the pane at the 14 px floor, so a shorter window
 // could not change the svg's height — both were the same overflowing drawing.
-// The row cap comes from the pane now (timeline.js, `fits`), so a shorter
-// window is fewer rows.
-test('the lanes are laid out again when the window changes height', { skip }, async () => {
+//
+// **Turned round in M77.** The row *count* no longer comes from the pane at
+// all: every bar carries its title, the rows are as many as that takes, and a
+// short pane scrolls. What the pane still decides is how tall a row is, and
+// that is what this asks — on the fixtures, which are few enough that the rows
+// have room to grow into and the drawing is the pane.
+test('the rows are laid out again when the window changes height', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(on()), READY);
-    const tall = await page.eval(FIT);
+    await open(page, url(on('fixtures=1')), READY);
+    const tall = await fitOf(page);
     fits(tall, 'a 900 px window');
+    assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');
 
-    // Short enough to hold fewer rows than the ceiling: since M60 the lanes
-    // have the whole pane instead of a strip of it, and a 460 px window still
-    // holds twenty packed rows at their floor.
     await page.send('Emulation.setDeviceMetricsOverride', {
-      mobile: false, width: 1280, height: 300, deviceScaleFactor: 1,
+      mobile: false, width: 1280, height: 400, deviceScaleFactor: 1,
     });
-    await waitFor(page, 'return innerHeight === 300;', 'the window to be short');
+    await waitFor(page, 'return innerHeight === 400;', 'the window to be short');
     await waitFor(
       page,
       `return document.querySelector('.timeline-area').clientHeight !== ${tall.paneHeight};`,
       'the pane to be re-measured',
     );
-    // The observer answers a change of height, not only of width.
-    await waitFor(
-      page,
-      `return Number(document.querySelector('#timeline svg.timeline').getAttribute('height')) !== ${tall.svgHeight};`,
-      'the lanes to be laid out again',
-    );
+    // The observer answers a change of height, not only of width — and it
+    // answers twice. Measured here (docs/m78-flakes.md): one resize lays the
+    // rows out at 280 against a pane that is already 295, and again at 295
+    // two milliseconds later. The wait was "the height is not the tall one",
+    // which the first of those satisfies, and `fits` then read a drawing laid
+    // out for a pane the timeline is no longer in: `295 !== 280`, one browser
+    // pass in five here.
+    //
+    // What it waits for now is the first thing `fits` asserts — the pane holds
+    // the drawing and nothing else — beside the height having moved at all. An
+    // intermediate layout fails that conjunction by construction, because the
+    // pane it was measured against is gone.
+    await until(page, LAID_OUT_FOR_ITS_PANE(`!== ${tall.svgHeight}`));
 
-    const short = await page.eval(FIT);
+    const short = await fitOf(page);
     fits(short, 'after the window was made short');
-    // Fewer rows, not thinner ones: past the floor a row stops shrinking and
-    // the count comes down instead, which is what keeps the drawing inside
-    // the pane (timeline.js, `fits`; index2 plan, D10).
-    assert.ok(short.lanes < tall.lanes, `fewer rows in a shorter pane (${short.lanes} of ${tall.lanes})`);
-    assert.ok(short.laneHeight >= 14, `and none of them below the floor (${short.laneHeight})`);
+    assert.equal(short.lanes, tall.lanes, 'the same rows: the count is what the titles need');
+    assert.ok(short.laneHeight < tall.laneHeight,
+      `shorter rows in a shorter pane (${short.laneHeight} of ${tall.laneHeight})`);
     assert.equal(short.svgHeight, short.paneHeight, 'the drawing is exactly the pane');
 
     // And back again: nothing is one-way.
     await page.send('Emulation.setDeviceMetricsOverride', {
       mobile: false, width: 1280, height: 900, deviceScaleFactor: 1,
     });
-    await waitFor(
-      page,
-      `return Number(document.querySelector('#timeline svg.timeline').getAttribute('height')) === ${tall.svgHeight};`,
-      'the lanes to come back',
-    );
-    const back = await page.eval(FIT);
+    await until(page, LAID_OUT_FOR_ITS_PANE(`=== ${tall.svgHeight}`));
+    const back = await fitOf(page);
     fits(back, 'back at 900 px');
-    assert.equal(back.lanes, tall.lanes, 'and the rows the taller pane had are back');
+    assert.equal(back.laneHeight, tall.laneHeight, 'and the height the taller pane gave is back');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
@@ -180,12 +203,12 @@ test('the lanes are laid out again when the window changes height', { skip }, as
 test('the pane is the drawing, with a box in force as without one', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on()), READY);
-    fits(await page.eval(FIT), 'with no box');
+    fits(await fitOf(page), 'with no box');
     assert.equal(await page.eval('return document.querySelectorAll(".timeline-area p").length;'), 0,
       'nothing above the lanes but the lanes');
 
     await open(page, url(on('bbox=-10,36,-6,43')), READY);
-    const fit = await page.eval(FIT);
+    const fit = await fitOf(page);
     fits(fit, 'with a box');
     assert.equal(fit.scrollHeight, fit.svgHeight, 'the pane holds the drawing and nothing else');
     assert.ok(fit.lowestBar <= fit.svgHeight);
@@ -219,6 +242,18 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     // should be. What this test is about is the other case, which is still the
     // common one: a state change over a picture that is not narrowing.
     await open(page, url(on('selected=carnation-revolution-1974&focus=none')), READY);
+    // And after the titles have landed. Every bar carries one since M77 and a
+    // title arrives with its century (attributes.js): an observer installed
+    // before the shard lands watches the shard arrive, which is a hundred and
+    // fifty labels drawn and is not the click this test is about.
+    // The proxy was the count of labels being the same on two polls 50 ms
+    // apart, which is the same number on either side of a shard landing and is
+    // stable for the whole of the gap between the bars being drawn and the last
+    // century arriving. An observer installed inside that gap watches the
+    // shards arrive, which is the hundred and fifty labels this test would then
+    // count as a rebuild. What it waits for is what it needs: no bar whose
+    // title is not drawn as a label, so there is no label left to come.
+    await until(page, BARS_NAMED);
     // Every element the timeline has drawn, watched for children coming and
     // going. `subtree` so the layers themselves are covered.
     // Elements only, and **not `<title>`**, which is the clause M42 had to
@@ -283,7 +318,16 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     assert.ok(before > 100, `the atlas drew something (${before} elements)`);
     assert.ok(churn.removed < handful, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
     assert.ok(churn.added < handful, `nor built again (${churn.added} of ${before} elements added)`);
-    assert.ok(Math.abs(after - before) < 10, `and it is the same drawing (${before} to ${after})`);
+    // A share of the drawing, for the reason the bound above it is one. The
+    // absolute ten was written when `data/` held five rings; every event filed
+    // under an umbrella makes another, M42's filing pass makes them by the
+    // dozen, and a ring in the bars layer moves `reuse()`'s positional take —
+    // which is the paragraph above, and is not the drawing being rebuilt. The
+    // property this line is about is that the picture is the *same size*
+    // afterwards, and that is a proportion and not a number (M79, and red on
+    // `m0` before this branch existed).
+    const same = Math.max(10, Math.round(before * 0.02));
+    assert.ok(Math.abs(after - before) < same, `and it is the same drawing (${before} to ${after})`);
 
     // And the layers are still the only children of the <svg>: nothing was
     // appended to the root behind their backs.
@@ -315,6 +359,14 @@ test('a large event is a band the height of the drawing, under the bars and with
     // same year in that lane and are drawn as one stack otherwise.
     await open(page, url(on('fixtures=1&group=region&selected=fixture-event-f')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline .layer-bands rect").length > 0;', 'the band');
+    // And the band's own label, which is the event's name and arrives with its
+    // century (attributes.js). The wait above is "a band rect exists", which is
+    // true of a band drawn before the fixtures' titles are in: one run in
+    // twenty-four read `and says which event it is: '' !== 'Fixture event F'`.
+    // So it waits for the thing the assertion below reads.
+    await until(page, `
+      const label = document.querySelector('#timeline .layer-bandLabels text.large-band-label');
+      return Boolean(label && label.textContent);`);
 
     const band = await page.eval(`
       const svg = document.querySelector('#timeline svg.timeline');
@@ -351,24 +403,18 @@ test('a large event is a band the height of the drawing, under the bars and with
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
 
-test('no bracket where the parts cross lanes, and none at all with no grouping', { skip }, async () => {
-  await withBrowser(async (page, url) => {
-    const brackets = 'return document.querySelectorAll("#timeline .layer-brackets line").length;';
-    await open(page, url(on('fixtures=1&group=region')), READY);
-    assert.equal(await page.eval(brackets), 0, 'the fixtures\' one parent is a large event, and has the band');
-    await open(page, url(on('fixtures=1')), READY);
-    assert.equal(await page.eval(brackets), 0, 'and with no grouping there are no lanes to draw one on');
-  }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
-});
+// *No bracket where the parts cross lanes* stood here. The bracket went with
+// the named lanes in M77; the ring below is what says a parent is one, on all
+// three views and at every size.
 
 // --- a parent looks like one, wherever the bracket is not --------------------
 //
-// M30c, §1: the bracket of A9 is drawn only where the parts share a lane and
-// the lanes are named, so under `group: none` — the default — and over a
-// parent whose parts cross lanes, nothing said a parent was one. The ring is
-// what a reader sees where the bracket is not, and it is drawn under every
-// grouping. `fixture-event-f` is the one parent either corpus carries; its
-// parts fall in two lanes, so it never has a bracket at all.
+// M30c, §1: the bracket of A9 was drawn only where the parts shared a named
+// lane, so under the default — which since M77 is the only arrangement there
+// is — nothing said a parent was one. The ring is what says it, on every view
+// and at every size. `fixture-event-f` is one of the two parents the fixture
+// corpus carries; the other is `fixture-event-u`, whose only child is
+// `fixture-event-h` and names it *second* (M79).
 const RING_AROUND = (id) => `
   const svg = document.querySelector('#timeline svg.timeline');
   const bar = svg.querySelector('rect[data-id="${id}"]');
@@ -398,14 +444,14 @@ const RING_AROUND = (id) => `
     },
   };`;
 
-test('a parent\'s bar is ringed under no grouping and under the region lanes', { skip }, async () => {
+test('a parent\'s bar is ringed in the packed rows and when it is held', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    // With no grouping at all, where there is no vertical room for a bracket
-    // and the card's "Part of" line used to be the only word on it.
+    // In the packed rows, where the card's "Part of" line used to be the only
+    // word on it.
     await open(page, url(on('fixtures=1')), READY);
     const packed = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(packed.bar, 'the parent has a bar of its own in the packed rows');
-    assert.equal(packed.rings, 1, 'one ring, for the one parent on the fixtures');
+    assert.equal(packed.rings, 2, 'one ring for each of the two parents on the fixtures');
     assert.ok(packed.ring, 'and it is around that bar');
     assert.equal(packed.ring.y, packed.bar.y - 2, 'two pixels outside it on every side');
     assert.equal(packed.ring.width, packed.bar.width + 4);
@@ -416,7 +462,16 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     assert.equal(packed.ring.title, null, 'nor does it offer a tooltip of its own');
     assert.equal(packed.ring.events, 'none', 'the bar under it takes every click');
     assert.ok(packed.ring.stroke > 0 && packed.ring.stroke < 1, `thinner than the bar: ${packed.ring.stroke}`);
-    assert.equal(packed.layer, 'layer layer-bars', 'drawn through the bars\' own pool');
+    assert.equal(packed.layer, 'layer layer-rings', 'drawn through a pool of its own (M77)');
+
+    // The second umbrella, whose only child names it second (M79): the ring
+    // reads `childrenOf`, which is built from every parent and not the first,
+    // so an event's second umbrella is as much a parent as its first.
+    const second = await page.eval(RING_AROUND('fixture-event-u'));
+    assert.ok(second.bar, 'the second umbrella has a bar of its own at rest');
+    assert.ok(second.ring, 'and a ring around it');
+    assert.equal(second.ring.y, second.bar.y - 2);
+    assert.equal(second.ring.fill, 'none');
 
     // A leaf is drawn exactly as it was — read here, in the resting picture,
     // because since M65 the choice below narrows the bars to what it reaches
@@ -425,14 +480,12 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
     assert.ok(leaf.bar, 'the leaf has a bar');
     assert.equal(leaf.ring, null, 'and nothing around it');
 
-    // And in the region lanes, where this parent's parts cross lanes and it is
-    // drawn as a band rather than a bracket. Selected, because that is the
-    // only way to be sure of a bar of its own there (the band test above), and
-    // it exercises the layer the reader's own records are drawn in.
-    await open(page, url(on('fixtures=1&group=region&selected=fixture-event-f')), READY);
+    // And when the reader is holding it, which is the layer their own records
+    // are drawn in — above their neighbours, ring and all.
+    await open(page, url(on('fixtures=1&selected=fixture-event-f')), READY);
     const banded = await page.eval(RING_AROUND('fixture-event-f'));
-    assert.ok(banded.ring, 'the ring is drawn under a grouping too');
-    assert.equal(banded.layer, 'layer layer-held', 'in the layer its bar is in');
+    assert.ok(banded.ring, 'the ring is drawn on what the reader is holding too');
+    assert.equal(banded.layer, 'layer layer-heldRings', 'in the layer that sits with its bar');
     assert.match(banded.ring.classes, /\bselected\b/, 'and it carries the emphasis its bar carries');
     assert.doesNotMatch(banded.ring.classes, /\bbar\b/, 'a ring is an outline, not a record');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
@@ -446,13 +499,14 @@ test('a parent\'s bar is ringed under no grouping and under the region lanes', {
 // smudge and a smudge says something false about how much the atlas knows
 // (glyphs-brief, §3). The fixtures' `fixture-event-f` runs 1260–1300 and is
 // the wide bar; the categorised instants are the narrow ones.
-// Under a named grouping, where a lane is 34 px and a bar 18. Under the
-// default grouping a packed row is 22 px and a bar 8, which is below the
-// threshold on every bar there is — measured on the repository's own data as
-// well as on the fixtures, and recorded as deviation 585.
+// On the fixtures, whose eleven events pack into a handful of rows and leave
+// the pane room to grow them to their cap. On the repository's own corpus the
+// titles ask for more rows than any pane holds, every row is at its 22 px
+// floor and the bar inside it is 8 px — below the threshold on every bar there
+// is, which is deviation 585 read through M77's rows.
 test('a bar wide enough carries its category, and one below the threshold does not', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url(on('fixtures=1&group=region')), READY);
+    await open(page, url(on('fixtures=1')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the bars');
     const seen = await page.eval(`
       const at = (id) => {
@@ -520,20 +574,16 @@ test('a bar wide enough carries its category, and one below the threshold does n
       assert.ok(bar.width >= 10 && bar.height >= 10, `${bar.id} is ${bar.width} x ${bar.height}`);
     }
 
-    // Under the default grouping the bar is what is left of the packed row
-    // once the air round it is taken off, so the threshold is a question about
-    // the pane. Squeezed — a row at its floor — the bar is under the symbol
-    // and none is drawn, which is what a packed row looked like everywhere
-    // before M66 let the rows take the room a tall pane has going spare. The
-    // rule is the same one either way: the symbol follows the bar's size.
+    // The bar is what is left of the row once the air round it is taken off,
+    // so the threshold is a question about the row's height. At the floor —
+    // which since M77 is where the repository's own corpus always is, because
+    // the titles ask for more rows than the pane holds — the bar is under the
+    // symbol and none is drawn. The rule is the same one either way: the
+    // symbol follows the bar's size.
     const PACKED = `return {
       heights: [...new Set([...document.querySelectorAll('#timeline rect.bar[data-id]')].map((b) => Number(b.getAttribute('height'))))],
       glyphs: [...document.querySelectorAll('#timeline use.glyph')].length,
     };`;
-    await page.send('Emulation.setDeviceMetricsOverride', {
-      mobile: false, width: 1280, height: 250, deviceScaleFactor: 1,
-    });
-    await waitFor(page, 'return innerHeight === 250;', 'the window to be short');
     await open(page, url(on('from=1900&to=1999')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
     const squeezed = await page.eval(PACKED);
@@ -542,14 +592,10 @@ test('a bar wide enough carries its category, and one below the threshold does n
     }
     assert.equal(squeezed.glyphs, 0, 'so none is drawn');
 
-    // And with the room to grow, the packed rows clear it and the same rule
-    // puts a symbol on every bar that is also wide enough, and on no other.
-    await page.send('Emulation.setDeviceMetricsOverride', {
-      mobile: false, width: 1280, height: 900, deviceScaleFactor: 1,
-    });
-    await waitFor(page, 'return innerHeight === 900;', 'the window to be tall again');
-    await open(page, url(on('from=1900&to=1999')), READY);
-    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows again');
+    // And with the room to grow, the rows clear it and the same rule puts a
+    // symbol on every bar that is also wide enough, and on no other.
+    await open(page, url(on('fixtures=1')), READY);
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the fixtures\' rows');
     const roomy = await page.eval(PACKED);
     for (const height of roomy.heights) {
       assert.ok(height > Math.max(...squeezed.heights), `a row with room leaves more of it to the bar (${height})`);
@@ -760,8 +806,12 @@ test('past the margin the corpus is a density strip, and it covers the compresse
 test('on a tall pane the rows take the room, and nothing is left under the bottom one', { skip }, async () => {
   const { ROW_HEIGHT, LANE_MAX } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
-    await open(page, url(on('from=1900&to=1999')), READY);
-    const fit = await page.eval(FIT);
+    // On the fixtures, which pack into a handful of rows and leave room to
+    // grow into. Since M77 the repository's own corpus never does: every bar
+    // carries its title, that takes more rows than a pane holds, and the rows
+    // are at their floor with the pane scrolling — which is the test below.
+    await open(page, url(on('fixtures=1')), READY);
+    const fit = await fitOf(page);
     fits(fit, 'a 900 px window');
     assert.ok(fit.lanes > 1 && fit.bars > 0, `the atlas drew something (${fit.lanes} lanes, ${fit.bars} bars)`);
     // The rows are taller than the height they would have settled for, which
@@ -769,11 +819,16 @@ test('on a tall pane the rows take the room, and nothing is left under the botto
     assert.ok(fit.laneHeight > ROW_HEIGHT,
       `a row takes more than the strip's height (${fit.laneHeight} of ${ROW_HEIGHT})`);
     assert.ok(fit.laneHeight <= LANE_MAX, `and never more than the cap (${fit.laneHeight})`);
-    // And the drawing reaches the bottom of the pane: the last lane is a lane
-    // like the others and not the leftover strip it used to be. A pixel of
-    // slack for the rounding the drawing's own height is made of.
-    assert.ok(fit.lastLane <= fit.laneHeight + 1,
-      `no band of empty ground under the bottom row (${fit.lastLane} against ${fit.laneHeight})`);
+    // And nothing is left under the bottom row that a row could have had: the
+    // last lane is a lane like the others and not the leftover strip it used
+    // to be. Unless the cap is what stopped the rows, which is the case this
+    // pane and these eleven events are in — room going spare above the cap is
+    // room a row may not have, or a tall window would draw stripes. The same
+    // disjunction the pure rule is held to (tests/timeline-rows.test.mjs).
+    if (fit.laneHeight < LANE_MAX) {
+      assert.ok(fit.lastLane <= fit.laneHeight + 1,
+        `no band of empty ground under the bottom row (${fit.lastLane} against ${fit.laneHeight})`);
+    }
   }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
 });
 
@@ -784,28 +839,33 @@ test('on a tall pane the rows take the room, and nothing is left under the botto
 test('on a very tall pane the rows stop at their cap', { skip }, async () => {
   const { LANE_MAX } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
-    await open(page, url(on('from=1900&to=1999')), READY);
-    const fit = await page.eval(FIT);
+    await open(page, url(on('fixtures=1')), READY);
+    const fit = await fitOf(page);
     fits(fit, 'a 1400 px window');
     assert.equal(fit.laneHeight, LANE_MAX, `the rows are at the cap (${fit.laneHeight})`);
   }, { device: { width: 1440, height: 1400, deviceScaleFactor: 1 } });
 });
 
-// And the other end, which M66 leaves exactly as I6 wrote it: a pane with less
-// room than the rows need squeezes them to their floor and no further, and
-// then the drawing is taller than its pane and the pane scrolls. The reader's
-// own lane list is the one thing the row count does not come down for —
-// somebody who names four actors has said they want four lanes — so it is what
-// this asks with, on the fixtures, whose actors are four and always the same.
-test('on a short pane the floor still holds and the pane scrolls', { skip }, async () => {
-  const { MIN_LANE_HEIGHT } = ROW_LIMITS;
+// And the other end, which is the ordinary case on the repository's own corpus
+// since M77: every bar carries its title, the packing needs more rows than the
+// pane holds, and rather than squeeze a row below the height a title is
+// legible in — or pack the overflow away behind a count, which is what the
+// owner asked to have removed — the drawing is taller than its pane and the
+// pane scrolls. No count is pinned: what is asserted is the floor, the
+// overflow and the scroll.
+test('when the titles need more rows than the pane holds, the floor holds and the pane scrolls', { skip }, async () => {
+  const { ROW_HEIGHT } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
-    await open(page, url(on('fixtures=1&group=actor&lanes=fixture-actor-one,fixture-actor-two,fixture-polity-three,fixture-polity-four')), READY);
-    const fit = await page.eval(FIT);
-    assert.ok(fit.lanes >= 4, `the reader's lanes are all drawn (${fit.lanes})`);
-    assert.equal(fit.laneHeight, MIN_LANE_HEIGHT, `squeezed to the floor and no further (${fit.laneHeight})`);
+    await open(page, url(on('from=1900&to=1999')), READY);
+    // How many rows the titles need is the whole question here, so the wait is
+    // that they are all in — not that one label has been drawn, which is true
+    // while the rest of the centuries are still arriving and the rows are still
+    // being counted.
+    await until(page, BARS_NAMED);
+    const fit = await fitOf(page);
+    assert.equal(fit.laneHeight, ROW_HEIGHT, `at the floor and no further (${fit.laneHeight})`);
     assert.ok(fit.svgHeight > fit.paneHeight,
       `the drawing is taller than the pane (${fit.svgHeight} of ${fit.paneHeight})`);
     assert.equal(fit.scrollHeight, fit.svgHeight, 'so the pane scrolls it rather than cutting it off');
-  }, { device: { width: 1280, height: 250, deviceScaleFactor: 1 } });
+  }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });

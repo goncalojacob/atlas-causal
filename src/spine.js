@@ -50,6 +50,10 @@ const LIST = 'list';   // the key is there and its value is []
 //
 //   raw       the value verbatim, whatever JSON it is
 //   id        an index into the file's `ids` table
+//   idOrIds   one index, or a list of them where the field admits a list. The
+//             record's own spelling is what is written: an event with one
+//             parent is one integer as it always was, and only the events
+//             filed under two umbrellas cost an array (M79)
 //   vocab     an index into one of the file's `vocab` lists
 //   list      a JSON array verbatim; an empty one is not written
 //   lines     a list of sub-rows, each read through the column list in `lines`
@@ -95,9 +99,18 @@ const KIND_COLUMNS = {
     col('actors', 'lines', { lines: ACTOR_LINE, absent: LIST }),
     col('category', 'vocab', { vocab: 'category', absent: OMIT }),
     col('wikipedia', 'raw', { absent: OMIT }),
-    col('parent', 'id', { absent: OMIT }),
+    col('parent', 'idOrIds', { absent: OMIT }),
     col('scope', 'vocab', { vocab: 'scope', absent: OMIT }),
     col('subtreeWeight', 'raw', { absent: OMIT }),
+    // Whether a person has read and signed this record (M70). Derived, like
+    // `citesCount`: `standing.js`'s own answer, written here so the masthead's
+    // count and the card's line are one function and not two.
+    //
+    // Last, and `true` or nothing: nought of 573 events are signed today, so
+    // on the real data every row's slot is null and the trailing trim takes it
+    // away — the column costs nothing at first paint until somebody starts
+    // signing, and then it costs one `true` per record they have read.
+    col('reviewed', 'raw', { absent: OMIT }),
   ],
   // The one kind whose row was already a row: `[from, to, type, confidence,
   // status, revised]` since H3a, and the first six slots are still those six in
@@ -283,8 +296,15 @@ const CORE_BY_KIND = {
     // deviation 581). One small integer per categorised event, absent on the
     // 246 of 421 that have none.
     col('category', 'vocab', { vocab: 'category', absent: OMIT }),
-    col('parent', 'id', { absent: OMIT }),
+    col('parent', 'idOrIds', { absent: OMIT }),
     col('subtreeWeight', 'raw', { absent: OMIT }),
+    // In the core and not in a shard, for the reason `category` is: the
+    // masthead counts what is in view on the frame the reader moves the map,
+    // and an attribute column arrives with its century — the count would be
+    // wrong for a moment and then right, which is a count saying something it
+    // has not checked. It is null on every event nobody has signed, so the
+    // trim carries it for nothing (M70).
+    col('reviewed', 'raw', { absent: OMIT }),
   ],
   // The tuple, less the one slot a card reads: `revised` is what a record's
   // file is asked for with, and `record()` waits for the shard that carries it
@@ -525,6 +545,7 @@ export function encodeSpineFile({ schema, kinds, listOf, vocabBase = {}, read, t
     if (value === null || value === undefined) return null;
     switch (c.type) {
       case 'id': return intern(value);
+      case 'idOrIds': return Array.isArray(value) ? value.map(intern) : intern(value);
       case 'vocab': return internVocab(c.vocab, value);
       case 'list': return value.length === 0 ? null : value;
       case 'geometry': return value.key ?? null;
@@ -592,6 +613,7 @@ export function decodeSpineFile(file, kinds, table = SPINE_COLUMNS) {
     if (value === null || value === undefined) return c.absent === LIST ? [] : null;
     switch (c.type) {
       case 'id': return idOf(value);
+      case 'idOrIds': return Array.isArray(value) ? value.map(idOf) : idOf(value);
       case 'vocab': return wordOf(c.vocab, value);
       case 'years': return yearsFrom(c, value);
       case 'pick': return Object.fromEntries(c.keys

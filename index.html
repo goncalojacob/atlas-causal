@@ -36,13 +36,16 @@
            the layer switches and the graph filters are — one file decides what
            a control writes into the URL. -->
       <div class="window-control" id="window-control" role="group" aria-label="The window of time"></div>
-      <!-- Only on a phone, where the grouping picker and the three layer
+      <!-- Only on a phone, where the lens chips and the three layer
            switches will not fit beside the search: one button in front of
            both. The stylesheet shows it and hides them; nothing moves in the
            DOM, so every module still finds the control it wired. -->
       <button type="button" id="options-button" class="options-button" aria-expanded="false"
               aria-controls="masthead-tools">Options</button>
-      <div class="grouping" id="grouping" role="group" aria-label="Grouping and lens"></div>
+      <!-- Which records the lens is on, one chip each. Filled by
+           src/lens-chips.js. It was the back half of the grouping picker,
+           which M77 removed at the owner's word. -->
+      <div class="lens-chips-bar" id="lens-chips" role="group" aria-label="The lens"></div>
       <!-- The kinds of event that are drawn, on every view (M68). They used to
            be inside the layer control, which is the map's legend and is hidden
            on the graph and the timeline, so a filter that narrows all three
@@ -68,6 +71,13 @@
     <nav class="masthead-links" aria-label="Elsewhere">
       <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
       <a class="bar-link" href="narratives.html">narratives</a>
+      <!-- The composer (M71). A button and nothing else until it is pressed:
+           src/compose/composer.js is imported the first time somebody opens
+           it, so a reader who never writes a narrative pays for this one
+           element (src/main.js). -->
+      <button type="button" id="compose-button" class="bar-link compose-button"
+              aria-controls="composer" aria-expanded="false"
+              title="Write a narrative: pick events by clicking them, say why each step follows">write</button>
       <a class="bar-link" href="sources.html">sources</a>
       <a class="bar-link" href="about.html">about</a>
       <!-- Brings the introduction back. Small, last, and never in the way:
@@ -106,6 +116,11 @@
       </button>
       <aside id="panel" class="panel" aria-live="polite"></aside>
     </div>
+    <!-- A column of its own and not an overlay, because the reader goes on
+         clicking events on the picture while they write: covering a third of
+         the map with the thing that asks you to click the map would be the
+         fault M64 was written to avoid. Empty until the composer is opened. -->
+    <section id="composer" class="composer" aria-label="Write a narrative" hidden></section>
   </main>
   <script type="module" src="src/main.js"></script>
 </body>

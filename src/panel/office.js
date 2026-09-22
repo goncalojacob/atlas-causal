@@ -16,6 +16,10 @@ import { formatInterval, formatYear, fromAstronomical, extent as intervalExtent 
 import { OFFICE_CATEGORY_LABEL } from '../vocab.js';
 import { clusterPoints } from '../cluster.js';
 import { sectionHtml, openSection } from './sections.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 // The section key of the holders, so panel.js and the tests name it once.
 export const HOLDERS_SECTION = 'holders';
@@ -76,6 +80,7 @@ export function officeCardHtml(ctx, office, { state = null, remembered = null } 
         ${office.when ? ` · <span class="when">${esc(formatInterval(office.when))}</span>` : ''}
         <button type="button" class="link small" data-action="clear-office">close</button>
       </p>
+      ${standingSlot()}
       <div class="head-links">${ctx.wikipediaHtml(office)}${ctx.discussLink('office', office.id)}</div>
     </header>
     <section class="summary" data-slot="office-summary"></section>
@@ -96,6 +101,7 @@ export function renderOfficeCard(ctx, {
       if (!ctx.isCurrent(mine)) return;
       const slot = container.querySelector('[data-slot="office-summary"]');
       if (slot && rec.summary) slot.innerHTML = `<p>${esc(rec.summary)}</p>`;
+      fillStanding(container, rec);
     },
     () => {},
   );

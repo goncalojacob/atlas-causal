@@ -9,7 +9,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { arrangementKey, arrangementOf } from '../src/graph-view/arrangement.js';
-import { lanesFor } from '../src/lanes.js';
 import { buildAdjacency } from '../src/graph.js';
 import { defaultState } from '../src/state.js';
 
@@ -59,28 +58,32 @@ const ATLAS = {
 // tests of its own at the foot of the file, over an atlas that has some.
 const state = (patch) => ({ ...defaultState(), degree: 0, ...patch });
 
-// The reader's own lane list, so the six automatic lanes cannot reorder
-// themselves and hide what is being tested behind a change of the ids.
-const NAMED = { group: 'actor', lanes: ['alfa', 'beta'] };
+// There is no grouping since M77 and therefore no named lanes: every
+// arrangement is one unnamed field, which is what `none` — the default the
+// atlas always opened on — always gave. `NAMED` was the reader's own lane
+// list and is now nothing at all; the tests that used it are about the band
+// and the key, and neither needed a lane to be about it.
+const NAMED = {};
 
-test('the same lanes in the same order can still hold different events', () => {
-  const whole = state({ ...NAMED });
-  const late = state({ ...NAMED, from: 1905 });
+// Two lanes, by hand. `arrangementKey` still reads a lane's membership and
+// this is the shape it reads, so the rule can be held to directly even though
+// nothing builds it one any more.
+const laneOfIds = (id, ids) => ({ id, label: id, other: false, members: new Set(ids), count: ids.length });
 
-  const a = arrangementOf(ATLAS, whole);
-  const b = arrangementOf(ATLAS, late);
+// M76 turned this one round: it used to assert that moving the band moved an
+// event between lanes — the lane weight was counted inside the window — and
+// that the key saw it. The owner, 21 September: *"I think the graph can always
+// show all dates."* M77 took the last of it away, because there are no lanes
+// on the graph at all now. What is left to assert is what the band still must
+// not do: change the picture.
+test('moving the band moves no lane, no event and no key', () => {
+  const whole = arrangementOf(ATLAS, state({ ...NAMED }));
+  const late = arrangementOf(ATLAS, state({ ...NAMED, from: 1905 }));
 
-  // The premise: the lanes are the same two, in the same order, both times.
-  assert.deepEqual(a.lanes.map((l) => l.id), ['alfa', 'beta']);
-  assert.deepEqual(b.lanes.map((l) => l.id), ['alfa', 'beta']);
-
-  // And the event both actors are in changes bands, because Alfa is the
-  // heavier of the two over the whole span and the lighter after 1905.
-  const laneOf = (arrangement, id) => arrangement.lanes.find((l) => l.members.has(id))?.id;
-  assert.equal(laneOf(a, 'shared'), 'alfa');
-  assert.equal(laneOf(b, 'shared'), 'beta');
-
-  assert.notEqual(a.key, b.key, 'so the arrangement has to be laid out again');
+  assert.deepEqual(whole.lanes, [], 'one unnamed field, on every band');
+  assert.deepEqual(late.lanes, []);
+  assert.deepEqual(whole.events.map((e) => e.id), late.events.map((e) => e.id));
+  assert.equal(whole.key, late.key, 'so there is nothing to lay out again');
 });
 
 // Review finding 14 was a key made of `state.focus` while the lens applied was
@@ -132,8 +135,8 @@ test('choosing a different event is a different picture, and the key says so', (
 // The key is a function of the arrangement it is given, so it can be held to
 // the two rules directly and not only through the atlas above.
 test('the key reads membership rather than the lane ids, and the applied lens', () => {
-  const s = state({ group: 'actor', lanes: ['alfa', 'beta'] });
-  const lanes = lanesFor('actor', ATLAS, { from: 1900, to: 1960 }, null, ['alfa', 'beta']);
+  const s = state({});
+  const lanes = [laneOfIds('alfa', ['early-0', 'shared']), laneOfIds('beta', ['late-0'])];
   const moved = lanes.map((lane) => ({ ...lane, members: new Set(lane.members) }));
   moved[0].members.delete('shared');
   moved[1].members.add('shared');
@@ -148,50 +151,51 @@ test('the key reads membership rather than the lane ids, and the applied lens', 
   );
 });
 
-// --- the window is what is laid out (H4b) -------------------------------
+// --- the window is not what is laid out (M76) -----------------------------
 //
-// Until H4b the whole corpus was laid out and the window only decided which
-// of the coordinates were drawn, which meant paying for thirty thousand
-// events to look at a decade. The band and one period either side is now the
-// arrangement itself, and the band is therefore part of its key.
+// H4b made the arrangement the band and one period either side, because laying
+// out thirty thousand events to look at a decade was the cost the window was
+// meant to save. M76 takes the window out of this picture altogether — the
+// owner, 21 September: *"I think the graph can always show all dates, then one
+// can zoom in and out and pan to look at different times"* — and what H4b was
+// buying is bought instead by `shown`, which since M65 is the main events at
+// rest, and by I6's cull, which puts only what is on screen into the DOM.
 
-test('the arrangement is the band and one period either side, and no more', () => {
-  // The whole extent: everything, as before.
-  assert.equal(arrangementOf(ATLAS, state({})).events.length, EVENTS.length);
-  // A band ending in 1900 reaches 1950 with the margin, and stops there.
+test('the arrangement is everything drawn, whatever the band says', () => {
+  const whole = arrangementOf(ATLAS, state({}));
+  assert.equal(whole.events.length, EVENTS.length, 'everything, as before');
+  // A band ending in 1900 used to stop the arrangement at 1950 with the
+  // margin. It stops nothing now.
   const narrow = arrangementOf(ATLAS, state({ to: 1900 }));
-  assert.deepEqual(
-    narrow.events.map((e) => e.id).sort(),
-    ['early-0', 'early-1', 'early-2', 'early-3', 'early-4', 'late-0', 'shared'],
-  );
-  assert.notEqual(narrow.key, arrangementOf(ATLAS, state({})).key, 'moving the band moves the nodes');
+  assert.deepEqual(narrow.events.map((e) => e.id).sort(), whole.events.map((e) => e.id).sort(),
+    'a narrow band lays out what a wide one does');
+  assert.equal(narrow.key, whole.key, 'and moving the band moves no node');
 });
 
-test('what the reader is holding beyond the margin is laid out anyway', () => {
+test('nothing is beyond the arrangement, so holding something cannot add it', () => {
   const narrow = state({ to: 1900, selected: 'late-3' });
   const dropped = arrangementOf(ATLAS, narrow);
-  assert.ok(!dropped.events.some((e) => e.id === 'late-3'), 'nothing is holding it yet');
+  assert.ok(dropped.events.some((e) => e.id === 'late-3'),
+    'an event a century past the band is in the picture without anybody holding it');
   const held = arrangementOf(ATLAS, narrow, new Set(['late-3']));
-  assert.ok(held.events.some((e) => e.id === 'late-3'), 'a chain that ran off the band is still a chain');
-  assert.notEqual(held.key, dropped.key);
+  assert.deepEqual(held.events.map((e) => e.id).sort(), dropped.events.map((e) => e.id).sort());
+  assert.equal(held.key, dropped.key, 'and holding it changes nothing about the picture');
 });
 
-// The holding only enters the key when something held is outside the band.
-// Otherwise selecting an event would move every node in the picture, which
-// is what the test above about panning and walking says it must not.
-test('holding something inside the band is not part of the key', () => {
-  // The same choice either way, because since M65 a different choice is a
-  // different set of events and the key must notice that (above); what is
-  // asserted here is that what is *held* inside the band is not in the key.
+// The holding never enters the key now: it entered it only when something held
+// fell outside the band, and nothing falls outside a picture that has no band.
+// What is asserted is the rule that outlived it — selecting is a lens since
+// M65, so two different choices are two different pictures for that reason and
+// not for this one.
+test('what is held is not part of the key, at any band', () => {
   const a = arrangementOf(ATLAS, state({ selected: 'early-0' }), new Set(['early-0']));
   const b = arrangementOf(ATLAS, state({ selected: 'early-0', actor: 'beta' }), new Set(['early-0', 'late-0']));
   assert.equal(a.key, b.key);
 
-  // And when it is outside, two different holdings are two different keys.
   const narrow = { to: 1900 };
   const one = arrangementOf(ATLAS, state({ ...narrow, selected: 'late-3' }), new Set(['late-3']));
   const two = arrangementOf(ATLAS, state({ ...narrow, selected: 'late-2' }), new Set(['late-2']));
-  assert.notEqual(one.key, two.key);
+  assert.notEqual(one.key, two.key, 'because they are two lenses, not because of the band');
 });
 
 // ─── what the graph draws (M48 §3) ─────────────────────────────────────────

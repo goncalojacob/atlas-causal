@@ -140,7 +140,7 @@ test('the search is full width and the toggles are behind one Options button', {
       button: getComputedStyle(document.getElementById("options-button")).display,
       buttonHeight: Math.round(document.getElementById("options-button").getBoundingClientRect().height),
       layers: getComputedStyle(document.querySelector(".bar .layers")).display,
-      grouping: getComputedStyle(document.querySelector(".bar .grouping")).display,
+      chips: getComputedStyle(document.querySelector(".bar .lens-chips-bar")).display,
       views: Math.round(document.querySelector('[data-view="map"]').getBoundingClientRect().height),
     };`);
     assert.ok(before.search > 300, `the search takes the line, got ${before.search}`);
@@ -148,18 +148,18 @@ test('the search is full width and the toggles are behind one Options button', {
     assert.ok(before.buttonHeight >= 40, `Options is a hit target, got ${before.buttonHeight}`);
     assert.ok(before.views >= 40, `Map/Graph are hit targets, got ${before.views}`);
     assert.equal(before.layers, 'none', 'the layer switches are folded away');
-    assert.equal(before.grouping, 'none', 'and so is the grouping');
+    assert.equal(before.chips, 'none', 'and so are the lens chips');
 
     await page.eval('document.getElementById("options-button").click(); return true;');
     const after = await page.eval(`return {
       expanded: document.getElementById("options-button").getAttribute("aria-expanded"),
       layers: getComputedStyle(document.querySelector(".bar .layers")).display,
-      grouping: getComputedStyle(document.querySelector(".bar .grouping")).display,
+      chips: getComputedStyle(document.querySelector(".bar .lens-chips-bar")).display,
       box: Math.round(document.querySelector(".bar .layers label").getBoundingClientRect().height),
     };`);
     assert.equal(after.expanded, 'true');
     assert.notEqual(after.layers, 'none', 'and they come back on the button');
-    assert.notEqual(after.grouping, 'none');
+    assert.notEqual(after.chips, 'none');
     assert.ok(after.box >= 40, `a layer switch is a hit target, got ${after.box}`);
   });
 });

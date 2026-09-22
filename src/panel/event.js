@@ -13,12 +13,16 @@ import { esc } from '../util/esc.js';
 import { consequences, antecedents, convergence, convergenceByDepth } from '../graph.js';
 import { chainEdges as walkedEdges, walkProvenance } from '../chain.js';
 import { formatInterval, formatYear, defaultCalendar } from '../util/dates.js';
-import { laneExplain } from '../lanes.js';
 import { horizonHtml } from './horizon.js';
 import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
+import { parentsOf } from '../parts.js';
 import { sectionHtml, openSection } from './sections.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
+// How far this record has been read, in one line (M70). The slot goes in the
+// card's head and is filled when the record's own file lands, because the core
+// row a card is built from carries no signature.
+import { standingSlot, fillStanding } from '../standing.js';
 
 // What a card calls each edge type, from the one list of them (vocab.js).
 export const TYPE_LABEL = EDGE_TYPE_LABEL;
@@ -176,17 +180,26 @@ function branchesHtml(ctx, list, selectedId) {
   </details>`).join('');
 }
 
-// The event this one is inside, where it names one. `parent` is a display
-// fact and never an argument (CLAUDE.md): it is not in the adjacency, so
-// nothing on this card below the head is different for it, and the reader is
-// told what the event is part of rather than shown a link that changes what
+// The event or events this one is inside, where it names any. `parent` is a
+// display fact and never an argument (CLAUDE.md): it is not in the adjacency,
+// so nothing on this card below the head is different for it, and the reader
+// is told what the event is part of rather than shown a link that changes what
 // follows from what.
+//
+// **Each of them since M79**, in the record's own order and on a line of its
+// own: Angolan independence is part of the Third Republic and part of the
+// decolonisation of Africa, and a card that named only the first would be
+// choosing between two things the writer put side by side. An umbrella the
+// atlas does not hold is left out and not apologised for, exactly as one
+// missing parent was.
 function partOfEventHtml(ctx, event) {
-  const parent = typeof event.parent === 'string' ? ctx.atlas.events.get(event.parent) ?? null : null;
-  if (!parent) return '';
-  return `<p class="part-of-event">Part of
+  const parents = parentsOf(event)
+    .map((id) => ctx.atlas.events.get(id) ?? null)
+    .filter((record) => record !== null);
+  if (parents.length === 0) return '';
+  return parents.map((parent) => `<p class="part-of-event">Part of
     <button type="button" class="link" data-action="select" data-id="${esc(parent.id)}">${esc(parent.title)}</button>
-    <span class="when">${esc(formatInterval(parent.when))}</span></p>`;
+    <span class="when">${esc(formatInterval(parent.when))}</span></p>`).join('');
 }
 
 // A large event is drawn unlike every other event — a band across the whole
@@ -259,27 +272,11 @@ function whereHtml(ctx, event) {
   return ` · <span class="where">${name} <span class="muted">(${esc(where.precision)})</span></span>`;
 }
 
-// Where this event is drawn, and by what rule. An event is in exactly one
-// lane and the rule that picked it is mechanical, so it can be stated: a
-// rule the reader cannot see is a rule they cannot check.
-//
-// Which lane that is depends on the window — the heaviest of an event's
-// actors is counted inside the band (lanes.js) — so this is one of the two
-// bits of the event card the band moves. It carries a slot of its own
-// because panel.js writes it back into a card it is deliberately not
-// rebuilding (B12, A3).
-export function drawnHtml(ctx, event, state) {
-  const lanes = ctx.lanes(state);
-  const { lane, reason, others } = laneExplain(event, lanes, state.group, ctx.atlas);
-  if (!lane) {
-    return `<p class="drawn muted" data-slot="drawn">Drawn in a packed row: with no grouping the timeline fits the bars
-      where they go and the graph has no bands.</p>`;
-  }
-  const also = others.length
-    ? ` Also involves ${others.map((o) => esc(o.label)).join(', ')}.`
-    : '';
-  return `<p class="drawn muted" data-slot="drawn">Drawn in the <strong>${esc(lane.label)}</strong> lane${reason ? ` (${esc(reason)})` : ''}.${also}</p>`;
-}
+// There was a paragraph here saying which lane the event is drawn in and by
+// what rule — "Drawn in the Salazar lane (heaviest of its actors)". It went
+// with the grouping in M77: there is one arrangement of the rows now, the
+// rows have no names, and a sentence explaining a choice the reader can no
+// longer make is a sentence about nothing.
 
 // Exported for the tests: there is no DOM in node --test, and the card is
 // the string, as the actor's and the source's are. `remembered` is the
@@ -408,8 +405,8 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       ${partOfEventHtml(ctx, event)}
       ${subtreeLensHtml(ctx, event)}
       ${actorChipsHtml(ctx, event, highlightedActor?.id ?? null)}
-      ${drawnHtml(ctx, event, state)}
       ${largeEventHtml(ctx, event)}
+      ${standingSlot()}
       <div class="head-links">${ctx.entryLink('event', event.id)}${ctx.wikipediaHtml(event)}${ctx.discussLink('event', event.id)}</div>
     </header>
     <section class="summary" data-slot="summary"><p class="muted">Loading…</p></section>
@@ -427,6 +424,11 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      // Who has read this, from the record's own `review` block — the same
+      // fields the validator counts and the masthead's count is built from
+      // (standing.js). It waits for the file, like the summary, because the
+      // core row a card is built from carries no signature.
+      fillStanding(container, rec);
       // No sub-heading: the section's own header already says "Sources".
       container.querySelector('[data-slot="sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
