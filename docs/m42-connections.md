@@ -3982,3 +3982,81 @@ mutinied against their officers."* Every one of those sentences is
 containment, which `parent` already carries, and **being somebody's child is
 not an edge** — brief §1's bar, and the reason three components were added
 rather than three edges invented.
+
+## 2z. Batch 27 — six edges, and the five records the sources would not give one
+
+*22 September, the second batch of the same fire and the same vein. Eleven
+rows, eleven filings, six edges. The measurement is in `docs/m42-pool.md` →
+"Batch 27".*
+
+#### `1982-lebanon-war --caused--> south-lebanon-conflict`
+
+The conflict's own article, at revision 1370747846: it "took place in
+Israeli-occupied southern Lebanon from 1982 or 1985 until Israel's withdrawal
+in 2000… Israel officially names the conflict the Security Zone in Lebanon
+Campaign and deems it to have begun on 30 September 1982, after the end of its
+'Operation Peace for Galilee'." The occupation the 1982 war left behind is
+what the fifteen years of fighting were over.
+
+#### `south-lebanon-conflict --caused--> operation-grapes-of-wrath`
+
+The operation's article, revision 1372784188, gives the aim and the tally it
+answered: "a seventeen-day campaign of the Israel Defense Forces (IDF) against
+Hezbollah in 1996 which attempted to end the Iran-backed group's rocket attacks
+on northern Israeli civilian centres… Prior to the operation, Hezbollah had
+launched 151 rockets from Lebanon into Israel."
+
+#### `armenian-genocide --reacted-to--> battle-of-musa-dagh`
+#### `armenian-genocide --reacted-to--> urfa-resistance`
+
+Musa Dagh's article (revision 1370628972): "In 1915, it was the location of a
+successful Armenian resistance to the Armenian genocide." Urfa's (revision
+1370748893): the resistance "was an effort by some Ottoman Armenians in Urfa to
+defend themselves against the Armenian genocide launched by the Ottoman
+Empire. The resistance was quelled following German intervention." Both are
+`reacted-to` and written in this atlas's direction for the type — the thing
+reacted to first. The second sentence of the Urfa lead is why neither is
+`enabled`: they changed nothing about the thing they answered.
+
+#### `world-war-i --precondition-of--> chilembwe-uprising`
+
+The uprising's article, revision 1375916516: the rebels "were motivated by
+grievances against the British colonial system, which included forced labour,
+racial discrimination and new demands imposed on the African population
+following the outbreak of World War I." The war is one grievance of three the
+article names, so `precondition-of` and not `caused`.
+
+#### `dayton-agreement --precondition-of--> insurgency-in-kosovo`
+
+The insurgency's article, revision 1370623741: "The Insurgency in Kosovo began
+in 1995, following the Dayton Agreement that ended the Bosnian War. In 1996,
+the Kosovo Liberation Army (KLA) began attacking Serbian governmental buildings
+and police stations."
+
+### The two an imported date refused, and the four the sources never offered
+
+**`war-in-darfur --caused--> darfur-genocide` was written and deleted.** The
+war's own article (revision 1375318567) says the government "responded to
+attacks by carrying out a campaign of ethnic cleansing against Darfur's
+non-Arabs", and that campaign is exactly what the genocide record is. Wikidata
+dates the genocide 23 February 2003 and the war 26 February 2003, so rule 4
+refused the edge for three days. **An imported date can be precise enough to
+refuse an argument without being right enough to.**
+
+**`insurgency-in-kosovo --caused--> kosovo-war` could not be written either.**
+The insurgency's own lead ends "This insurgency would lead to the more intense
+Kosovo War in February 1998", and the record carries a single day — 28 February
+1998 — for something its title dates from 1995, while the Kosovo war here begins
+that same February.
+
+**Four records earned nothing because their articles claim nothing.**
+`war-over-water` is "a series of confrontations between Israel and its Arab
+neighbors from November 1964 to May 1967 over control of water sources";
+`kaocen-revolt` is a single sentence about a Tuareg rising in northern Niger;
+`war-of-the-camps` is "a subconflict within the 1984–1990 phase of the Lebanese
+Civil War"; `1963-south-vietnamese-coup` names the Buddhist crisis and the Viet
+Cong threat, and this atlas holds neither. Each of those sentences is
+containment, which `parent` already carries. **Five components were added
+rather than five edges invented**, which is deviation 1031's warning read in
+the other direction: the vein files reliably and edges only where a source
+argues.

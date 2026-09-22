@@ -1365,3 +1365,109 @@ ended a main event up.
 - **The Horn of Africa (7) and Sudan (5) are still fragments**, unchanged since
   batch 22, and what they want is a paragraph deeper into an article than the
   summary endpoint returns.
+
+## Batch 27 — the same vein, all eleven filed, and the five that earned no edge
+
+*22 September, the second batch of the same fire. Batch 26 ended a main event
+up, so the brief's own instruction applied: **file before importing.** The
+`part of` pass was re-run over the corpus first and returned no new filing —
+its seven answers are refusals already on the record — so this batch holds the
+count where batch 26 left it rather than lowering it, by taking only rows that
+arrive filed.*
+
+| | |
+| --- | --- |
+| taken | 11, all from the 57 clean rows of batch 26's scan |
+| created | **11** |
+| filed | **11** |
+| edges written | **6** |
+| lanes named for a placeless row | 1 — `Q2904516` |
+| corpus | 531 → **542** active |
+| **main** | **252, unchanged** |
+| largest connected component | 470 → **476** |
+| components | 33 → **38** |
+| the sweep pool, world sections | 1,077 → **1,066** open rows |
+| API calls | 20 for the import, 3 article leads |
+
+**Six edges, and the five records that earned none are the finding.**
+
+| the record | filed under | the edge it earned |
+| --- | --- | --- |
+| `south-lebanon-conflict` | `arab-israeli-conflict` | `1982-lebanon-war --caused-->` it |
+| `operation-grapes-of-wrath` | `arab-israeli-conflict` | `south-lebanon-conflict --caused-->` it |
+| `battle-of-musa-dagh` | `armenian-genocide` | `armenian-genocide --reacted-to-->` it |
+| `urfa-resistance` | `armenian-genocide` | `armenian-genocide --reacted-to-->` it |
+| `chilembwe-uprising` | `world-war-i` | `world-war-i --precondition-of-->` it |
+| `insurgency-in-kosovo` | `yugoslav-wars` | `dayton-agreement --precondition-of-->` it |
+| `war-over-water` | `arab-israeli-conflict` | none |
+| `1963-south-vietnamese-coup` | `vietnam-war` | none |
+| `kaocen-revolt` | `world-war-i` | none |
+| `war-of-the-camps` | `lebanese-civil-war` | none |
+| `darfur-genocide` | `war-in-darfur` | none, and it is the interesting one |
+
+**Four of the five earned nothing because their articles say only that they
+happened inside something else.** The War over Water is "a series of
+confrontations between Israel and its Arab neighbors from November 1964 to May
+1967 over control of water sources"; the Kaocen revolt is one sentence about a
+Tuareg rising in northern Niger; the War of the Camps is "a subconflict within
+the 1984–1990 phase of the Lebanese Civil War"; and the 1963 South Vietnamese
+coup names the Buddhist crisis and the Viet Cong threat, neither of which this
+atlas holds. **Containment is what `parent` carries and being somebody's child
+is not an edge** — brief §1's bar, and five components were added rather than
+five edges invented.
+
+**`darfur-genocide` is refused by three days.** The war's own article, at
+revision 1375318567, says the war "began in February 2003 when the Sudan
+Liberation Movement (SLM) and the Justice and Equality Movement (JEM) rebel
+groups began fighting against the government of Sudan… The government responded
+to attacks by carrying out a campaign of ethnic cleansing against Darfur's
+non-Arabs." That campaign is this record. But Wikidata dates the genocide
+**23 February 2003** and the war **26 February 2003**, so the edge the source
+states runs backwards over the dates the atlas holds and rule 4 refused it.
+The same shape as the Czechoslovak Legion's in batch 26, and at three days
+rather than two years: **an imported date is precise enough to refuse an
+argument and not necessarily right enough to.**
+
+**`insurgency-in-kosovo` lost the other half of its own article the same way.**
+Its lead says "This insurgency would lead to the more intense Kosovo War in
+February 1998", and Wikidata gives the insurgency a single day — 28 February
+1998 — for something its own title dates from 1995, while the Kosovo war here
+begins that February. The edge that survives is the one to `dayton-agreement`,
+which the same lead states and which runs forward.
+
+## Where the run stands after batch 27, for the fire that picks it up
+
+*22 September, 04:00, after a fire that landed two batches on `m42`.*
+
+| | |
+| --- | --- |
+| corpus | **542 active**, from 520 at the start of the fire |
+| **main** | **252**, from 251 |
+| largest connected component | **476**, from 462 |
+| components | 38, from 30 |
+| imported this fire | 22 records, **21 filed** |
+| edges written | 15 |
+| the sweep pool, world sections | **1,066** open rows |
+| the `part of` vein | **35 of 57 clean rows untaken** |
+
+**The scan first, then file, then import.** Re-running the `part of` scan over
+the whole pool is eight SPARQL calls and it is what found 83 rows where the
+700-row scan found 57; it should be re-run after each batch, because a record
+imported today is a parent tomorrow. Then the corpus pass (two calls), then the
+import.
+
+**What is still open, in the order a fire should weigh it:**
+
+- **Thirty-five clean rows of the vein**, three or four batches at this size,
+  and every one of them arrives filed.
+- **The dates are now the binding constraint, not the pool.** Eight imported
+  intervals read shorter than their own record's summary and **two edges this
+  fire could not be written at all** because of it — the Czechoslovak Legion's
+  and Darfur's. A person's afternoon spent on `when` would buy more of A5 than
+  another batch would.
+- **The Arab Spring's asian half** — `2011-bahraini-uprising`,
+  `2011-yemeni-revolution` — cannot be filed while the wave is an africa-lane
+  period. That is the owner's to decide.
+- **The Horn of Africa (7) and Sudan (5) are still fragments**, unchanged since
+  batch 22.
+

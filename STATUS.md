@@ -14884,6 +14884,50 @@ files before it imports**, which is what amendment A6 says to do here.
      `junker-mutiny`'s lane, from asia to europe, which is where the timeline
      draws it and not what happened.
 
+### Batch 27 — the same vein, all eleven filed, and the dates as the binding constraint
+
+Batch 26 ended a main event up, so the brief's own instruction applied: **file
+before importing.** The `part of` pass was re-run over the corpus first and
+returned no new filing — its seven answers are refusals already on the record
+— so this batch holds the count instead of lowering it, by taking only rows
+that arrive filed. Eleven taken, eleven created, **eleven filed**, **six
+edges**. Corpus 531 to **542**, main **252 and unchanged**, largest component
+470 to **476**, components 33 to **38**.
+
+Three are filed under an A6 umbrella (`arab-israeli-conflict`, whose lane they
+all share) and eight under an ordinary war or genocide, which deviation 1034
+is about.
+
+### Deviations
+
+1039. **An imported date can be precise enough to refuse an argument without
+     being right enough to.** `war-in-darfur --caused--> darfur-genocide` is
+     the war's own article in one sentence — the government "responded to
+     attacks by carrying out a campaign of ethnic cleansing against Darfur's
+     non-Arabs" — and rule 4 refused it because Wikidata dates the genocide
+     **23 February 2003** and the war **26 February 2003**. Three days, on two
+     records neither of which anybody has read. The same shape as deviation
+     1037's two years on the Czechoslovak Legion, and the pair of them makes
+     the point that eight short intervals had only implied: **the dates, not
+     the pool, are now what limits A5.** `insurgency-in-kosovo` lost the other
+     half of its own lead the same way. Not repaired here, for the reason
+     deviation 1022 gives, and it is the clearest afternoon's work a person
+     could do on this corpus.
+1040. **A vein that files reliably does not edge reliably, and five of eleven
+     is what that looks like.** Every one of this batch's eleven rows arrived
+     filed and only six earned an edge: four of the five articles say nothing
+     but that the thing happened inside something else, which is what `parent`
+     already carries, and the fifth is deviation 1039's three days. **Nothing
+     was written to keep a record** — brief §1's bar — so the components count
+     went 33 to 38 and says so. Deviation 1031 asked a batch to prefer a row
+     whose parent is an ordinary event; this batch did, and the limit turns
+     out to be the article's own ambition and not the parent's kind.
+1041. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. No
+     date was invented, no record was signed, no value on an imported record
+     was changed, and nothing was merged into `main`.
+
 1019. **Reinstating an M44b-era record can put an unread record on no
      dashboard.** `2021-myanmar-coup-d-etat`'s `review` block carried flags
      and **no `status`**, which is invisible while a record is retracted and

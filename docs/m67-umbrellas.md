@@ -640,3 +640,37 @@ Yemeni revolution and the Bahraini uprising out of the wave they belong to.
 The record is not left stranded: it carries two edges, from
 `tunisian-revolution` and from `2011-egyptian-revolution`, both quoting the
 sentence of its own article that names them.
+
+## 10. M42 batch 27 — eleven more bare records, all eleven filed
+
+*22 September, the second batch of the same fire. The measurement and the
+refusals are in `docs/m42-pool.md` → "Batch 27"; what belongs here is A1's
+clause again, because **every one of the eleven is bare for the same reason as
+batch 26's eleven**: the Wikidata import writes an actor line only where the
+item gives a participant and a place only where it gives a coordinate, and none
+of these items gives either.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `south-lebanon-conflict` | `arab-israeli-conflict` | asia, and the record is asia |
+| `operation-grapes-of-wrath` | `arab-israeli-conflict` | asia, and the record is asia |
+| `war-over-water` | `arab-israeli-conflict` | asia, and the record is asia |
+| `battle-of-musa-dagh` | `armenian-genocide` | not an umbrella |
+| `urfa-resistance` | `armenian-genocide` | not an umbrella |
+| `1963-south-vietnamese-coup` | `vietnam-war` | not an umbrella |
+| `kaocen-revolt` | `world-war-i` | not an umbrella |
+| `chilembwe-uprising` | `world-war-i` | not an umbrella |
+| `darfur-genocide` | `war-in-darfur` | not an umbrella |
+| `war-of-the-camps` | `lebanese-civil-war` | not an umbrella |
+| `insurgency-in-kosovo` | `yugoslav-wars` | not an umbrella |
+
+**Three are filed under an A6 umbrella and eight under an ordinary event**, and
+the distinction is deviation 1034's: `arab-israeli-conflict` carries the
+`m42-umbrella` flag, so `tests/m42-filing.test.mjs` holds its three children to
+its lane and all three are in it; the other eight parents are wars and a
+genocide, which are not periods, and the lane rule has nothing to say about
+them. Every filing is the item's own `part of`, every parent is unfiled and
+active, and every child's dates fall inside its parent's.
+
+**Nothing here was given an actor or a place to make it filable.** That is the
+whole of A1 and it is why the table above has eleven rows rather than none.
