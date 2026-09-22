@@ -426,3 +426,21 @@ What needs a person stays listed (C6's page-less book citations, C8–C13).
 The measurement scripts the reviewer left are under the assistant's
 scratchpad and are quoted in part C; reproduce the numbers before and after
 each pass with your own.
+
+**A13 (22 September). The curation fire re-examines the relations, not
+only the records.** The owner: *"Why don't I see on the backlog any
+recurrent review of all current events and the relationships between
+them?"* A11(a) had the curation fire add an edge only where an article's
+lead states one in so many words. From the next curation fire, **every
+curation fire also runs a relations pass over every active event**: for
+each event, its cited article (lead and body, at the cached or a named
+revision) is read for any other event the atlas holds — by title, by
+Wikidata item, by the import's identity tools — and where the article
+states that one caused, enabled, preceded or reacted to the other, the edge
+is written with M72's sources and locator under A5's standard; where an
+edge already exists and the article contradicts its type or direction, the
+edge gets the `disputed` confidence and a note, never a silent change. The
+pass reports edges added by type, edges disputed, and the largest connected
+component before and after, under the day's `## Curation <date>` section.
+This is the standing review of the graph the owner asked for; the daily
+snapshot publishes it.
