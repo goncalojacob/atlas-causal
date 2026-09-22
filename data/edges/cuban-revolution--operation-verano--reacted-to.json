@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "cuban-revolution--operation-verano--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Verano\", revision 1371154085, § lead"
+    }
+  ],
+  "from": "cuban-revolution",
+  "to": "operation-verano",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Verano’s lead says what the offensive was for: it was “the summer offensive in 1958 by the Batista government” and “was designed to crush Fidel Castro’s revolutionary army, which had been growing in strength in the area of the Sierra Maestra mountains since their arrival in Cuba on board the Granma yacht in December 1956”. `reacted-to` runs from the revolution to the offensive because that is the direction the sentence states: the government moved in answer to a rebel army that had been growing for eighteen months, and the offensive is the answer and not the cause. `probable`, on one Wikipedia lead; rule 22 would refuse `consensus` on it in any case.",
+  "dispute": null
+}

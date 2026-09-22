@@ -40,14 +40,14 @@ export function clusterHtml(ctx, cluster) {
   const onGraph = cluster.on === 'graph';
   const onMap = !onTimeline && !onGraph;
   // On the map a stack is a place — a record of its own, so the heading names
-  // it and opens its card; on the timeline it is a stretch of one lane, and
-  // saying "here" of a lane means the lane's own name. In the graph "here" is
-  // a stretch of time inside one band, so the band names it where there is
-  // one and nothing does where the reader has switched grouping off.
+  // it and opens its card. On the timeline and the graph it is a stretch of
+  // time in an unnamed row, and there is nothing to call it: the grouping that
+  // gave a lane a name went in M77 and the field it was read from in M83 (B11,
+  // B12), so what "here" means on those two views is said by the hint below.
   const place = onMap ? ctx.atlas.placeOf(cluster.representative.event) : null;
   const label = onMap
     ? ctx.atlas.pointOf(cluster.representative.event)?.label ?? null
-    : cluster.lane?.label || null;
+    : null;
   const where = place
     ? `<span class="count"><button type="button" class="link" data-action="place" data-id="${esc(place.id)}">${esc(place.name)}</button></span>`
     : label ? `<span class="count">${esc(label)}</span>` : '';

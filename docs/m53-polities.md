@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 352 of 642 |
+| **after M42** | 36 of 36 | 352 of 678 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -297,8 +297,12 @@ underneath it.
 why it moves without a new row being added: M42 is one milestone and the row is
 its own. Batch 10 takes it to 306 of 393, batch 11 to 306 of 405, batch 12 to 306 of 411, batch 13 to 306 of 423, batch 14 to 306 of 435, batch 15 to 306 of 445, batch 16 to 306 of 451 and batch 17 to **306 of 474**. **M42b's batches move the same row**, because
 A11 partitioned one milestone into two lanes and not into two measurements:
-its batch 1 takes the denominator to 592 and its batch 2 to 614, and both
-leave the numerator where it was. The numerator has not moved since
+its batch 1 takes the denominator to 592, its batch 2 to 614, its batch 3 to
+643 and its batch 4 to 658, and every one of them leaves the numerator where
+it was. The merge of `m0` into `m42` on 22 September brings the two lanes'
+records together on one branch, which is what takes the denominator to **678**
+without any batch of either lane having run: the count is of the corpus and not
+of a branch. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
 line, and M67 A1 settled that an event with no actor and no place is not a

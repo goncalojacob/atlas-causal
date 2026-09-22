@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q47505031",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "2018 Colombia police stations attacks"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q47505031"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2018 Colombia police stations attacks\", revision 1340424568"
+    }
+  ],
+  "title": "Atentado a la estación de policía de Barranquilla",
+  "summary": "The English Wikipedia article \"2018 Colombia police stations attacks\", at revision 1340424568, opens: \"The 2018 Colombia police stations attacks occurred on 27 and 28 January 2018 and claimed eight lives. In the 27 January attacks, two hand grenades were thrown at police stations in Barranquilla and Soledad. Five officers died in the attacks initially and 48 people were wounded. The injured included some civilians. On January 28, two policemen died after an attack on a police station in Santa Rosa del Sur, bringing the death toll to seven.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q47505031, imported by tools/import/wikidata.mjs. The item's own description reads \"terrorist incident in Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": 2018
+  },
+  "place": "bolivar-department",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colombian-conflict-2018-present"
+}

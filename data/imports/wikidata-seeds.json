@@ -4320,6 +4320,77 @@
       "category": "war",
       "label": "landing operation",
       "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
+    },
+    "Q105370834": {
+      "kind": "event",
+      "label": "war phase",
+      "category": "war",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q20893947": {
+      "kind": "event",
+      "label": "suicide car bombing",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q1456892": {
+      "kind": "event",
+      "label": "peace process",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q2555896": {
+      "kind": "place",
+      "label": "municipality of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q215655": {
+      "kind": "place",
+      "label": "department of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q63209072": {
+      "kind": "place",
+      "label": "city of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q15701038": {
+      "kind": "place",
+      "label": "subregion of Antioquia Department",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q165": {
+      "kind": "place",
+      "label": "sea",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q4022": {
+      "kind": "place",
+      "label": "river",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q3257686": {
+      "kind": "place",
+      "label": "locality",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q2717573": {
+      "kind": "event",
+      "label": "extra-judicial killing",
+      "note": "Added in M42b batch 4, from the class one item of the Cuban Revolution's vein names — the Humboldt 7 massacre. The label and the description are the item's own, read over the network: \"intentional and unlawful killings of individuals by state actors without judicial process\". It takes no category, as the sibling class massacre (Q3199915) takes none: which of the twelve kinds a killing by the state is, is a judgement the table has not made for a massacre either."
+    },
+    "Q558330": {
+      "kind": "place",
+      "label": "municipality of Cuba",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
+    },
+    "Q115291": {
+      "kind": "place",
+      "label": "province of Cuba",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
+    },
+    "Q46831": {
+      "kind": "place",
+      "label": "mountain range",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     }
   },
   "reconcile": true

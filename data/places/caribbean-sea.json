@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "caribbean-sea",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1247",
+  "sitelinks": {
+    "count": 180,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Caribbean Sea",
+    "pt": "Mar do Caribe"
+  },
+  "sources": [],
+  "names": [
+    "Caribbean Sea",
+    "Mar das Caraíbas",
+    "Mar do Caribe"
+  ],
+  "where": {
+    "lon": -75,
+    "lat": 15,
+    "precision": "region",
+    "label": "Caribbean Sea"
+  },
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (from Q96, the country the item names): its own point reaches no lane polygon.",
+  "summary": "Wikidata item Q1247, imported by tools/import/wikidata.mjs. The item's own description reads \"a marginal tropical sea of the Atlantic Ocean, located east of Central America, south of the Greater Antilles and north of South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

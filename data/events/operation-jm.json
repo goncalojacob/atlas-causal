@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "operation-jm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7097182",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Operation JM"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7097182"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation JM\", revision 1370633416"
+    }
+  ],
+  "title": "Operation JM",
+  "summary": "The English Wikipedia article \"Operation JM\", at revision 1370633416, opens: \"Operation JM was a military operation by the Military of Colombia Joint Task Force OMEGA intended to capture or kill the leaders of the Revolutionary Armed Forces of Colombia guerrilla (FARC), as part of the Plan Patriota. The operations began in April 2004 and after some 30 operations concluded without the main objective being accomplished in December 2006. However, the Colombian military achieved numerous military advances in a region that had been dominated by the guerrillas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7097182, imported by tools/import/wikidata.mjs. The item's own description reads \"2004 military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2004,
+    "end": 2006,
+    "date": "2004-04",
+    "endDate": "2006-12"
+  },
+  "place": "colombia-q739",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "colombian-conflict"
+}

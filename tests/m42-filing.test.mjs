@@ -33,7 +33,7 @@ const UMBRELLA_FLAG = 'm42-umbrella';
 // the reason tests/m67.test.mjs gives at the same place: the argument for a
 // filing is written by whichever run made it, and asking one file to hold all
 // of them would stop a later run filing anything at all.
-const ARGUED_IN = ['docs/m42-pool.md', 'docs/m42-connections.md', 'docs/m67-umbrellas.md'];
+const ARGUED_IN = ['docs/m42-pool.md', 'docs/m42b-pool.md', 'docs/m42-connections.md', 'docs/m67-umbrellas.md'];
 const doc = (await Promise.all(ARGUED_IN.map(async (f) => {
   const at = path.join(ROOT, f);
   return existsSync(at) ? readFile(at, 'utf8') : '';

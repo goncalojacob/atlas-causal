@@ -42,6 +42,7 @@ import { bandEvents } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
 import { readCount, readCountText } from './standing.js';
 import { showingReview } from './demo.js';
+import { arrangementOf } from './graph-view/arrangement.js';
 
 // The one sentence the count is (M80), pure so that what it says can be held
 // to without a browser.
@@ -152,6 +153,22 @@ export function createWindowControl(group, { atlas, state }) {
     // says which (`viewCountText`). `lensFocus` is `emphasis.js`'s own answer
     // to "is a lens on", so the line and the picture cannot disagree.
     const resting = working.lensFocus === null;
+    // **And which picture it is a count of** (M83, B3). It was `bandEvents`
+    // narrowed by `s.bbox` whatever the view was, and the graph reads no `bbox`
+    // at all (M76/M77) while applying a degree floor no other view applies. So
+    // on `?view=graph` with a box left over from the map the line said "N main
+    // events of 581 in view" about a rectangle of the *map*, while the graph
+    // drew every main event organising two links and no box — two numbers about
+    // two different pictures in one line, which is the fault M80 was written to
+    // end. On the graph the count is therefore the arrangement's own, asked of
+    // the same function the view asks (`arrangementOf`); on the map and the
+    // timeline the box still decides, because there it is the picture.
+    if (s.view === 'graph') {
+      const events = arrangementOf(atlas, s, heldSet(working, { lens: true, reachable: true }), working.shown).events;
+      return {
+        events, shown: events.length, whole, resting,
+      };
+    }
     // Only while the map is looking at part of the world: with no box every
     // event of the picture is in view, and the intersection would be a pass
     // over the places for an answer that is already in hand.
@@ -167,18 +184,30 @@ export function createWindowControl(group, { atlas, state }) {
     };
   };
 
-  function render(s) {
+  // `options` is taken and not read: this control keeps no key — every render
+  // recomputes the sentence from the state and the atlas — so being forced is
+  // being rendered. It is in the signature because `main.js` forces the four
+  // drawings that read `workingSet` with one call, and a control that threw
+  // away the argument would be a control nobody could force (M83, B2).
+  function render(s, options = {}) { // eslint-disable-line no-unused-vars
     if (!atlas.extent) return;
-    // Still resolved, and since M82 read again: the note beside the count is
-    // about the events *of the window* — which is what the map's corner said
-    // before it moved here — and `bandEvents` is the picture and not the
-    // window. A state with no window at all is a state this control has
-    // nothing to say about, exactly as before.
+    // Resolved and read: the note beside the count is about the events *of the
+    // window* — which is what the map's corner said before it moved here — and
+    // `bandEvents` is the picture and not the window. A state with no window at
+    // all is a state this control has nothing to say about.
     const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
     if (!timeWindow) return;
-    view.hidden = !s.bbox;
+    // **The sentence is said with no box too** (M83, B3). It was shown only
+    // once the reader had moved the map, so at first paint nobody was told that
+    // the picture is 245 of 581 — which is the very sentence M80 wrote it for,
+    // and the one the owner's *"I still only see 252 events"* was asking for.
+    // The pin is the part that needs a box: *show the world* has nothing to
+    // give back when the map is looking at all of it, and the graph has no box
+    // to pin at all.
     const n = countInView(s);
-    if (s.bbox) count.textContent = viewCountText(n);
+    view.hidden = false;
+    pin.hidden = !s.bbox || s.view === 'graph';
+    count.textContent = viewCountText(n);
     // **How much of what is on screen a person has actually read** (M70).
     // Beside the count above and counted over the very same events, from the
     // `reviewed` column the index carries — which is `standing.js`'s own

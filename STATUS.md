@@ -18997,6 +18997,155 @@ title (A6) and its axis still runs to 2040 with nothing there.
       Nothing else under `docs/screens/` was rewritten, which `git status`
       confirms rather than a promise.
 
+**M42b batch 3 — the Colombian conflict's vein, 22 September.** The third
+fire on `m42b`. It began by merging `origin/m0` and `origin/m42`, which is how
+the branch reads what the other lane holds and how M42's A12 passes reach it;
+the corpus it then found was **622 active and 242 main**, not the 614 and 247
+batch 2 left. Taken from the **`americas` lane**, from the largest vein batch 2
+left open: the inverse `part of` sweep on `Q169072` returns **43 items**, two of
+them already here. **Twenty-one events arrived**, 1980 to 2025, every one filed
+and every one placed. `docs/m42b-pool.md` → "Batch 3".
+
+**Two of the twenty-one are umbrellas of their own** — `Q76763052`, the
+1974–1990 phase, and `Q118152947`, the 2018–present one — both periods
+Wikipedia names, both carrying `m42-umbrella`, a lane and **no place**, because
+a period has no point. Both are filed under `colombian-conflict`, which is a
+war and not a period, so A6's "do not nest periods more than one deep" is not
+touched. **The first reading of A8 here was wrong and the suite caught it**:
+the eight events inside a phase were written with both the phase and the
+conflict as parents, and `tests/m42-filing.test.mjs` refuses a parent already
+reachable through another. Deviation **1203**.
+
+**Fourteen place records**, each from the first located thing its event's item
+names that carries a `P625` — `P276` for all but three — with `precision` read
+off the item's own class: eight `city`, six `region`, and `colombia-q739`,
+already here at `country`, for the two the item locates no closer. **Sixteen of
+the twenty-one carry the cached English lead at a named revision** in place of
+the import's placeholder (A12 C1); the other five have no English article and
+keep it. **Two edges**, both into records the atlas already held.
+
+**Nineteen items and one edge were refused.** Sixteen are real actions of this
+war that Wikidata gives no `P580` and no `P585` — the taking of Miraflores, Las
+Delicias, Casa Verde, Operation Anorí and eleven more — and this run does not
+supply a date the source does not carry; `Q155801` FARC and `Q8034813` the
+Workers Revolutionary Party are actors and this is an events batch;
+`Q105799250` and `Q79227232` are topics and not things that happened; and an
+edge from the 2019 Bogotá bombing to the 2017 Centro Andino bombing, which the
+2019 lead names only as a comparison.
+
+**Eleven classes were added** to the seeds file, each read off Wikidata: siege
+and war phase as `war`, suicide car bombing and peace process with no category;
+and seven place classes — municipality and department of Colombia, city of
+Colombia, subregion, sea, river and locality.
+
+**Corpus after the fire: 643 active, 242 main — unchanged — 401 filed, 649
+edges, largest connected component 508, 111 components, 91 events with no edge
+at all.** The `americas` lane goes from 104 active to **125**, level with Asia
+and ahead of Africa. `node tools/validate.mjs --index`: **0 errors, 313
+warnings**. **1,737 pure and 246 browser, 1,983 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them;
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 643**,
+which is the one test a records batch always moves, and
+`tests/m42-filing.test.mjs` now reads `docs/m42b-pool.md` beside
+`docs/m42-pool.md` so that the clause about a filing nobody argued in writing
+can see this branch's arguments at all.
+
+**M42b batch 4 — the Cuban Revolution's vein, 22 September.** The fourth fire
+on `m42b`. It began by merging `origin/m0` and `origin/m42` again, which is why
+the corpus it found reads **643 active and 242 main** and why Europe's 15th,
+16th and 19th centuries stand higher than batch 3's table shows — that came
+across, none of it is this batch. Taken from the **`americas` lane**, from the
+vein batch 3's note ranked first. `docs/m42b-pool.md` → "Batch 4".
+
+**A7 first, in its own commit.** `cuban-revolution` was dated at 1959 alone,
+the day Havana fell, so every action of its own fighting fell outside it and
+rule 24 would have refused the filing. The English article, **at revision
+1373305240, the revision the record already cited**, states `26 July 1953 –
+1 January 1959` in its infobox and names the Moncada assault in its lead. The
+record now runs 1953 to 1959 with both days, carries `a7-widened` and a note
+saying what moved from what. Then the vein: the inverse `part of` sweep on
+`Q11264` returns **16 items and the atlas held none of them**; **fifteen
+arrived**, every one inside the widened span and every one filed under
+`cuban-revolution` and nothing above it.
+
+**Ten place records**, each from the first located thing its event's item names
+that carries a `P625`, with `precision` read off that item's own class: eight
+`city`, two `region`. Four events reuse `santiago-de-cuba` and `havana`, which
+were already here. **One place was named from the item's own Spanish label** —
+`Q16145269` carries no English or Portuguese one, so the import wrote a place
+called `Q16145269`; its own field reads `Alegría de Pío` and that is the
+record, with `title-not-english` kept and a note saying where the name came
+from. **One event is placeless**: `haitian-embassy-in-cuba-massacre` names an
+embassy with no `P625`, no `P131`, and a `P17` that is a historical period
+rather than ground, so the chain runs out and nothing was invented;
+`docs/m67-umbrellas.md` carries the A1 clause for it, since it names no actor
+either.
+
+**Twelve of the fifteen carry the cached English lead at a named revision** in
+place of the import's placeholder (A12 C1); three have no English article.
+**No actors**: the two items with `P710` name `Q218452` and `Q14905932`, and
+the atlas holds neither — its `cuba` is `Q241`. **Six edges**, each `probable`
+on the leads that support it and two of them into records already here. Four
+of the six moved the component by **one**, because the vein hangs off its
+parent and a parent is not adjacency; the two added after that measurement —
+the revolution to Operation Verano, Alegría de Pío to La Plata — carried Verano
+and Santa Clara in with them.
+
+**One item and one vein were refused.** `Q4693758`, land reform in Cuba, has no
+`P580`, `P582` or `P585` and a class the table does not hold. The **Landing of
+the Granma**, which three of this batch's leads name and which would join the
+island of three this fire leaves, was not reached at all: deviation **1205**.
+**Four classes were added** to the seeds file, each read off Wikidata:
+extra-judicial killing with no category, and three place classes — municipality
+of Cuba, province of Cuba, mountain range.
+
+**Corpus after the fire: 658 active, 242 main — unchanged — 416 filed, 655
+edges, largest connected component 511, 120 components, 98 events with no edge
+at all.** The `americas` lane goes from 125 active to **140**, ahead of Asia;
+south against north within it is 118 to 17, with 5 placeless. Europe before
+1900 is 23 active and 14 main. `node tools/validate.mjs --index`: **0 errors,
+457 warnings**. **1,748 pure and 254 browser, 2,002 in all, 0 failed and 0
+skipped**, the browser suites one at a time as the check runs them.
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 658**.
+
+1204. **The claim window's ninety minutes was read twice, and it is the second
+      reading that claimed.** At the gate this branch's last push was **89.4
+      minutes** old — inside the protocol's ninety — so the rule said stop.
+      The fire did not claim on that reading and did not claim against it
+      either: it did STEP 2's reading first, which every fire owes whatever it
+      goes on to do, and read the clock again before writing the claim line, by
+      which time the push was 90.1 minutes old and the claim itself two hours.
+      Written down because the rule is mechanical and a run that had rounded
+      89.4 down to "near enough" would have been wrong in exactly the case the
+      rule exists for. **The order is the answer**: read first, claim second,
+      and never round the number.
+
+1205. **The Wikidata Query Service rate-limited this fire mid-batch, and a
+      record the vein wants is missing because of it.** After the inverse
+      `part of` sweep and the entity reads, the query service began answering
+      429 — *"aggressively rate-limiting to 1 req / min - this rule was created
+      during active wdqs outage"* — and the English Wikipedia API answered 429
+      as well. The **Landing of the Granma** is what went unlooked-up: the
+      hinge that the leads of Alegría de Pío, La Plata and the Santiago
+      uprising all point at, and the one item that would join this batch's
+      island of three to the component. It is not refused on its merits and it
+      is first on the next fire's list. **A 429 is not a reason to guess a
+      QID**: nothing was imported from a title this run could not resolve.
+
+1203. **"Every umbrella that fits" is not every container in the chain.** A8
+      reads *"a filing writes every umbrella whose span and subject fit, not
+      the first"*, and the first pass here took it literally: an event of 1985
+      was written as part of both the 1974–1990 phase and the conflict the
+      phase is inside. `tests/m42-filing.test.mjs` fails that — *"no parent of
+      an event is reachable through another of its parents"* — and the suite is
+      right. A8's list is for umbrellas that reach a record by different
+      routes, which is the owner's own example: Angolan independence under the
+      Portuguese Third Republic **and** under the decolonisation of Africa,
+      neither inside the other. For a chain of containers the narrowest one
+      holds and everything above it is already said by the tree. Eight records
+      were narrowed, one of them `assassination-of-miguel-uribe-turbay`, which
+      was here before this batch and moves from the conflict to the phase.
+
 1077. **The two passes A12 named and the curation fire did not run were the
       two that are code.** The fire of 13:07Z did the four that are data —
       summaries, places, participants, polity descriptions — and A7's three
@@ -19118,6 +19267,357 @@ title (A6) and its axis still runs to 2040 with nothing there.
       `data/imports/wikidata-state.json` and the import re-run, which created
       them. A fire that adds a class and does not do this will find the item
       silently missing from the batch it was added for.
+## M83 — the graph under a lens, the display bugs, and the first paint
+
+Lane A, on the branch `m83`. `docs/m83-brief.md` and, before its list, the
+owner's own amendment A1 on M81 with two screenshots —
+`docs/screens/owner-2026-09-22-graph-ww2.png` and `-graph-column.png`, World
+War II opened on the graph: *"It's better but still a bit weird."* Then part B
+of `docs/review-2026-09-22.md`, nineteen findings about the display code, and
+part A's finding 13, the first paint. Nothing under `data/` changed and the
+committed index is byte-identical to a fresh build.
+
+The pictures: `docs/screens/m83-graph-war.png` (desktop), `-key.png` (the same
+with the key pressed open) and `-phone.png` (390 × 844). No other picture under
+`docs/screens/` was rewritten, which `git status` says rather than this
+paragraph.
+
+### A1 — the owner's four, and what each was
+
+**1. The row of hollow, unnamed circles along the top edge.** Not what the
+brief supposed, and the brief's remedy is right anyway. They are not ring nodes
+at y = 0: `resolveColumn` shared a band out *evenly* — the gap between two
+nodes of one column was `(1 − 2 × EDGE) / (n − 1)` wherever that was the
+smaller of its two terms, which is every column of four or more — so such a
+column spanned the whole field whatever its nodes wanted, its first node
+exactly on the top line and its last exactly on the bottom. Seven year columns
+of four or more gave seven circles capping the picture and seven along the
+floor. Measured on the corpus of 22 September: six of the war's nodes on the
+bottom line.
+
+What the brief asks for is done too and is a second thing: a node the lens
+merely *reaches* is now kept only where the lens's own axis holds its date
+(`onTheAxis`, arrangement.js). Since M81 a lens is laid out on the extent of
+the events it names, so a cause of 1893 and a consequence of 1947 have nowhere
+on a 1939–1945 axis to stand; fifteen of the war's twenty-four neighbours were
+off the width. What the lens itself names is never dropped — the axis is built
+from it — and neither is anything the reader is holding.
+
+**2. Every part snapped to a year column.** `startPoint` (util/dates.js) is
+where an interval begins on an axis: its start year, and the day inside that
+year where the record gives one. The schema calls `date` display-only and this
+is a display and nothing else — no comparison, sort, overlap or rule reads it,
+and everything that asks *which year* still asks `extent`. A column of the
+layout is now a column of the drawing — the nodes within a stack distance in
+x — and the sweep walks those slots rather than the calendar's years. The seven
+vertical lines the owner read as links are gone with the columns that made
+them: they were `enabled` edges between events of one year, drawn on one
+vertical, and the year ticks that remain are the axis and never were dashed.
+
+The day arrives with its century's attribute shard, so `shardsArrived` joins
+the arrangement key **inside a lens only**. At rest M76's promise is the
+stronger one — moving the band moves no node, and moving the band is what
+fetches a century — and a day is sub-pixel on an axis of centuries.
+
+**3. The vertical order was arbitrary and the edges fanned across the field.**
+`resolveColumn` keeps the wanted positions now and presses apart only where two
+of them are nearer than the room a mark needs, then slides the run back to the
+middle of what its nodes wanted so the two passes leave no downward bias
+(measured: six nodes on the bottom line before, none after). The naive seed is
+packed around the middle for the same reason — it was dealt out over the field,
+and the sweeps only ever press apart, so that opening spread was where a great
+many nodes stayed. `COLUMN_GAP` is `STACK_DISTANCE`, because a column exists so
+that nodes near enough in x to be drawn on each other are not, and that is the
+same number asked the other way round.
+
+The second half of A1-3 — *draw a lens's edges as M77 draws a walk's* — is
+M77's rule read of every lens, and it holds: with the war opened, every one of
+the ring's lines is fainter than every one of the lens's
+(`tests/m83-browser.test.mjs`).
+
+**4. The LINKS key covered the bottom-left on the desktop too.** M82 folded it
+on a phone alone. A legend standing on the thing it is a legend to is the same
+fault at either width, so the fold is every width's: one button, `KEY`, and the
+key opens behind it. The same box carries the map's and the timeline's keys
+(M82, A7), so those fold with it.
+
+### Part B, by the review's own numbers
+
+**B1 — the map drawn while hidden is drawn again when it comes back.** The
+three views subscribe to the store inside their own constructors, before
+`main.js`'s subscription that hides and shows the panes, so on `view: 'map'`
+the map renders while its pane is hidden: `visibleBox()` answers the nominal
+960 × 540 and the render key is stamped with a rectangle nobody is looking at.
+The observer that would have caught it found the size unchanged, because it
+deliberately did not forget the size the pane had before — the comment saying
+that made coming back a change had it the wrong way round. Both halves of the
+review's fix. **The symptom does not reproduce in a headless 1440 × 900 pane**
+— the marks and the labels come out the same either way — so the test holds the
+property: the map a reader comes back to draws what the map they arrived on
+drew.
+
+**B2 — the band's profile and the masthead's counts follow the late files.**
+`main.js` dropped both controls' `render` on the floor and left them subscribed
+to the store alone, while forcing the three views, the panel and the chips for
+exactly the reason both needed it. Kept now, reached by `remeasure`, and the
+band's key carries the shard count every view's key already carried. The test
+opens a narrative by link and compares the profile drawn on arrival with the
+profile the same page draws once something else has made it render; it fails on
+the tree without the fix.
+
+**B3 — the masthead count is view-aware, and said with no box.** It was
+`bandEvents` narrowed by `s.bbox` whatever the view was, and the graph reads no
+box at all while applying a degree floor no other view applies: two numbers
+about two different pictures in one line. On the graph it is the arrangement's
+own now. And the sentence is said from first paint — it was shown only once the
+reader had moved the map, so nobody was told the picture is a fraction of the
+corpus, which is what M80 wrote it for. The pin is the part that needs a box.
+
+**B4 — an umbrella opened outside the window shows its children on all three
+views.** The map's `kept` and the timeline's `held` were `heldSet` without
+`lens: true`, so the lens's own children were held by nothing and the promise
+M65/M79 make was kept on the graph alone.
+
+**B5 — a graph node is reachable from the keyboard.** A node and a stack carry
+`tabindex`, `role` and an `aria-label`; the keydown reaches all three kinds of
+control; the focused mark is remembered by its record's id across the
+`replaceChildren`, as the lines have been since M80.
+
+**B6 — choosing a link while reading a narrative.** `edge` joins `LEAVES`.
+Choosing a link is the reader doing something else, as choosing an event
+already was; the card opens and the address says which link it is.
+
+**B7 — a chosen link is drawn on the map, with both its ends.** A third line
+class beside `consequence` and `chain`, in the madder a chosen line already
+carries on the graph; `keptRegardless` keeps both ends in the picture, and the
+working set holds them, so neither a cluster nor a box takes one away.
+
+**B8 — a click on the graph's ground puts the selection down**, as it does on
+the sea and on the timeline's empty ground.
+
+**B9 — the camera frames the layout that is on screen.** The frame holds the
+layout it was computed from and not only a key that cannot see it — unless the
+reader has moved the camera, in which case where they are looking is a question
+they answered with their own hand. The corpus is under the six-hundred
+threshold, so the test holds the invariant the fault broke: with a lens on, no
+mark the graph drew stands off the pane.
+
+**B10 — "top level only" goes.** 0 events over this corpus, computed: M65 made
+the resting picture the top level everywhere. The switch, the state field and
+the two lines in `organises` are gone, and `?tops=1` in an old link is read into
+nothing (deviation 848's rule).
+
+**B11 — the timeline's 120 px gutter goes back to the drawing.** It was the
+room a lane's name needed and M77 took the names away six milestones ago: 31 %
+of a 390 px phone's drawing spent on nothing, at a time when the right gutter
+had been cut to 7 % for exactly this reason. The `laneLabels` layer, the label
+branch, its stylesheet rules and the `label`/`other` fields of a lane go with
+it.
+
+**B12 — the dead branches and the stale comments.** The three `shown`-is-null
+guards, the band machinery in `drawFrame` (`arrangementOf` has returned no lanes
+since M77, so `band.hidden` was always true), the band a graph cluster carried,
+and the three comments naming `grouping.js`, an incomplete state field list, and
+`lanes` as a field of the state.
+
+**B13, B14** are left. Both are structural — `assemble` returning the edge sets
+the three views re-derive, and the source-grepping tests — and neither changes
+what is drawn; they are the two findings in part B that ask for a shape rather
+than a fix.
+
+**B15 — a request that failed is asked again.** `askedFor` and `askedGrounds`
+are put back on a rejection, so one dropped request no longer leaves a lens
+empty for the session.
+
+**B16 — a slug where a name goes.** The panel's event links, its Back and
+Forward labels, the map's corner line and the regional wash's tooltip go through
+`labelOf`. (The fifth place, the intro card, was M82's.)
+
+**B17 — `?focus=` resolves a former id**, as `?actor=` and `?selected=` always
+have.
+
+**B18 is left, deliberately.** `?walk=` is reserved and parsed so it survives a
+state write; `STATUS.md` already records that the URL grammar of a generated
+walk is **M35's** to decide, and dropping the parameter would be this run
+deciding it instead. **M35 owes it.**
+
+**B19 — the band's two keyboard gaps.** The pressed handle takes the focus (the
+`preventDefault` that stops a press selecting text also suppressed it, so *the
+arrow keys nudge* held only after a Tab), and Home and End are the data's two
+ends.
+
+### A13 — what first paint costs, against M82's numbers
+
+Median of nine cold loads of `?from=1900&to=1999` at 1440 × 900, a fresh browser
+profile per load so the cache is cold, one machine, one session: `origin/m0`
+(M82) in a worktree and this branch's head.
+
+| | M82 | M83 |
+| --- | ---: | ---: |
+| first contentful paint | 68 ms (56–76) | 76 ms (64–92) |
+| load event | 277 ms (252–292) | 257 ms (225–303) |
+| requests to that frame | 104 (103–106) | 105 (102–107) |
+| JavaScript files | 90 | 90 |
+| JavaScript bytes | 1,224,561 | **1,261,297** |
+| all bytes | 3,371,069 | **2,829,139** |
+| marks on that frame | 21 | 21 |
+| dependent round trips before the core | **4** | **2** |
+
+**541,930 fewer bytes, and two round trips instead of four.** The bytes are the
+search shard, which is 899 KB on disk and was fetched on every visit for a
+reader who may never type; it is asked for when the box is first touched, and
+until it lands the box answers out of the atlas, which is the same fallback a
+failed fetch has always had. The round trips are the manifest, then the core,
+the sources, the coastlines and the palette together instead of one after
+another: only the manifest has to come first, because it is what names the
+others.
+
+**Neither clock moves, and neither is a claim.** On localhost there is no
+latency to save, so what three fewer dependent fetches buy cannot be measured
+here at all — the honest measurement of a round trip is the count. First
+contentful paint moved 8 ms inside a 36 ms spread and the load event 20 ms
+inside a 78 ms one; on GitHub Pages at about 200 ms a hop the two removed trips
+are some 400 ms before the first mark.
+
+The third part of A13 is machinery that does not turn on yet. A century is the
+filing unit for the attribute shards and a corpus is not spread evenly over the
+centuries: 1900–1999 is 268 KB of 863 KB of attribute data on this corpus, 31 %
+of it in one file, against 143 KB for the next largest, and the review projects
+it at about 1 MB by three thousand events. Past **`SHARD_CAP`, 512 KB**, the
+build files that century as its ten decades. The cap is twice the largest shard
+the corpus has today — so nothing splits now and the index is byte-identical —
+and half the size the review projects, so 1900–1999 splits at roughly twice the
+present corpus and well before it is a megabyte. Nothing in the loader had to
+change: the periods come from the manifest at both ends. One thing did — the
+shard a record is said to *begin in* was its own century, which a century the
+build has cut up no longer is; it is the first of the shards the record's span
+touches now.
+
+### What is left, and what the picture still is
+
+The graph under a lens uses about half the pane's height:
+`resolveColumn` puts a node near its neighbours and a node with no neighbours
+stays in the middle, so the arrangement is compact, and `frameFor`'s `k` is the
+width's fit with the height's room left over. M81 spent the leftover *width* on
+a stretch; there is no equivalent for height and this run did not invent one.
+It is calm rather than wrong, and it is the next thing to look at if the owner
+finds the picture thin.
+
+Labels still land over a line here and there — `coversAMark` keeps a name off a
+*mark* and says nothing about an edge — and the resting picture was not part of
+A1 and was not touched.
+
+### Tests
+
+**1,759 pure and 268 in a browser, 2,027 in all, 0 failing, 0 skipped**, against
+1,738 and 261 at `M82 done`. `tests/m83.test.mjs` (17) holds A1-1 to A1-3, B17
+and the shard cap; `tests/m83-browser.test.mjs` (10) holds A1-3's ink, A1-4, B1,
+B2, B3, B5, B6, B7, B8, B9 and B19. Every one of them was written before the
+behaviour it judges, and none pins a count or a pixel: each assertion is a
+property, or a comparison between two things the same page drew.
+
+Seven tests of earlier milestones changed, each because this run changed the
+behaviour they described, and each now says the new rule in the old one's
+words: `m81` (the ring no longer reaches past the lens's axis; the stretch is
+measured mark for mark rather than end to end), `m82-browser` and `m60-browser`
+and `m80-browser` (the key's button, the count with no box, the pin), `m76`
+(the band's years read through the band's own scale), `graph-browser` (the
+merged-line claim moved to the arrangement, where it is a claim about the
+arrangement), `lanes` and `timeline-browser` (a lane has no label, the scale
+starts at the drawing). Two were found flaky by the change and fixed at the
+cause rather than the symptom — see deviations 1174 and 1175.
+
+### Deviations
+
+1170. **The row of circles is not the ring at y = 0.** The brief's A1-1 names
+      the lens's ring, laid out with no stack position, and the picture is a
+      column of four or more spread evenly from one edge of the field to the
+      other — a fault of `resolveColumn` and not of the ring. Both were fixed,
+      because the brief's rule about the ring is right on its own terms and the
+      ring reaching off the axis is a real thing a reader sees; but the row the
+      owner photographed is the column, and the section above says so rather
+      than repeating the brief's diagnosis.
+1171. **A1-2 and A1-3 are one commit.** The brief says each of A1's four is its
+      own commit with its test. The binning by drawing column and the
+      minimum-gap resolution are one change to `layoutGraph`: with the binning
+      and the old resolution nothing stacks at all, which the crowded fixtures
+      of `graph-layout.test.mjs` catch, so the first of the two commits would
+      have been a commit whose tests fail. The protocol's "validator and tests
+      green at every commit" decided it.
+1172. **`when.date` is read by the layout, and the schema calls it
+      display-only.** `schema/common/interval.json` says *"date and calendar
+      are display-only; only the integer years drive logic"*, and A1-2 is the
+      owner asking for the day to decide where a mark is drawn. A drawing is a
+      display: `startPoint` is read by the graph's x and by nothing else, no
+      comparison, sort, overlap or rule touches it, and `extent` is still what
+      every question about *which year* is asked of. Said here because the
+      sentence in the schema is the one somebody will read next.
+1173. **`shardsArrived` is in the arrangement key inside a lens and not at
+      rest.** The day comes with its century, so a layout of years would
+      otherwise stand for as long as the question does — for ever, for a reader
+      who arrives on a link with a war already open. At rest the same key would
+      re-lay-out the whole picture whenever the band pulled a new century,
+      which is M76's promise broken by the back door; and at rest a day is
+      sub-pixel. So the key carries it where it buys something and not where it
+      costs one.
+1174. **B3 made the masthead reflow with the window, and the fix is a row of
+      its own.** The count is said from first paint now, and it and the note
+      beside it grow and shrink with the window; as one more item in a wrapping
+      row it decided where everything after it wrapped, so the masthead changed
+      height, so the pane changed height, so the graph's camera re-fitted —
+      the window moving the graph's picture, which is the one thing M76
+      promised it would not. `#window-control` is a row of its own now and
+      keeps its line when its text is empty. Found by `m76-browser`, which had
+      been passing.
+1175. **B11 exposed a feedback loop between the row count and the scrollbar.**
+      The timeline's rows are as many as the titles need and the titles need
+      more rows the narrower the drawing is, so a drawing one row too tall for
+      its pane raised a scrollbar, the scrollbar took a dozen pixels of width,
+      and the narrower drawing needed another row. `scrollbar-gutter: stable`
+      keeps the room whether the bar is shown or not. The loop was always
+      there; giving the 120 px back is what brought the packing near the
+      boundary where it shows.
+1176. **B9's re-fit threw away a camera the reader had moved.** A layout
+      changing under the camera — a century landing, a thread answering — looked
+      exactly like a layout the frame had not seen. `cameraMoved` is the
+      difference: the re-fit is offered to a camera the frame itself put there
+      and never to one the reader wheeled or dragged into place. Found by
+      `graph-browser`'s ring test, which started failing two runs in three.
+1177. **The camera is filed under the arrangement's *question*.** Its key was
+      the whole arrangement key, which since A1-2 carries the shard count, so a
+      century landing made the camera think the reader had just arrived and
+      frame the chosen link's two ends — a click on a line moved the picture
+      out from under the gesture. `arrangementOf` returns `question` beside
+      `key`: the same string without the shards.
+1178. **B16 reaches four places and not the panel's `?.title ?? id` alone.**
+      The review names `panel.js` 455, 458–462 and 357 and `map.js` 624 and
+      834; the first of those is inside `openingLabel`, whose every branch fell
+      back to an id. All of them go through the record's own name or the
+      interface's "still loading", which is one rule and not five.
+1179. **`m76-browser` read the band's years through a line between its two
+      handles.** The corpus is long and lopsided, so the band's scale buckets by
+      century and is not a line at all; with the fuller profile B2 gives it, the
+      approximation put a column of the 1500s in the 1700s. It is read through
+      the band's own scale now, rebuilt from the atlas's numbers and the strip's
+      own width — which is the very thing the comment there said it was avoiding
+      by not inventing a scale.
+1180. **`docs/screens/frame.html` gained `key=1`.** Whether the key is open is
+      a press and not a link, so a picture of the whole key could not be asked
+      for by URL. Same licence as `zoom`, `at`, `notches`, `open`, `compose` and
+      `intro`, and not passed on to the atlas. It presses the key that is on
+      screen, since the map, the timeline and the graph each carry one and two
+      of the three are behind a `hidden` pane.
+1181. **B13, B14 and B18 are left, and the section above says why for each.**
+      B13 and B14 ask for a shape rather than a fix and change nothing drawn;
+      B18's parameter is M35's to decide, which `STATUS.md` already records.
+1182. **A13's third part is machinery with the cap set above today's corpus.**
+      The brief asks for a threshold this run measures and states. Measured, the
+      largest attribute shard is 268 KB; a cap that split it today would cut the
+      one century the atlas opens on into ten files for no fewer bytes and nine
+      more requests, because the opening window *is* that century. The cap is
+      512 KB, the split is written and tested against a topology built to reach
+      it, and the index is byte-identical — which is the honest form of "past a
+      threshold".
 
 1087. **An item's English label is not always English, and the `enwiki`
       sitelink is the check.** `Q131323`, which the Battle of Misrata names as
@@ -19494,4 +19994,8 @@ M42 started 2026-09-22T16:06:45Z by scheduled
 M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
 M82 done
 M42 started 2026-09-22T18:13:05Z by scheduled
+M42b started 2026-09-22T16:12:56Z by scheduled
+M42b started 2026-09-22T18:14:03Z by scheduled
+M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
+M83 done
 M42 started 2026-09-22T21:07:15Z by scheduled

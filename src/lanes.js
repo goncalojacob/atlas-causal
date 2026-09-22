@@ -24,8 +24,12 @@ const byId = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 // One lane. `members` is a Set of event ids rather than the records: the
 // views hold the records already, and a Set is what "is this event in this
 // lane" wants to be.
-function lane(id, label, { other = false } = {}) {
-  return { id, label, other, members: new Set(), count: 0 };
+// A lane is an id and its members, and nothing else since M83 (B11). It carried
+// a `label` and an `other` flag until then, from the grouping M77 removed: every
+// lane `rowLanes` makes is an unlabelled row, so the two fields were written
+// empty and read by a branch in `timeline.js` that could never be taken.
+function lane(id) {
+  return { id, members: new Set(), count: 0 };
 }
 
 // Which lane an event is drawn in. Membership is the Set, so this is a scan
@@ -263,11 +267,11 @@ export function packRows(events, scale, width, {
   return { rows: assigned, count: Math.max(ends.length, 1) };
 }
 
-// The packing as lanes, so the timeline draws one grouping and not two: an
-// unlabelled row is a lane with no name.
+// The packing as lanes, so the timeline draws one grouping and not two: a row
+// is a lane, and since M77 there is no other kind.
 export function rowLanes(events, scale, width, options = {}) {
   const { rows, count } = packRows(events, scale, width, options);
-  const lanes = Array.from({ length: count }, (_, i) => lane(`row-${i}`, ''));
+  const lanes = Array.from({ length: count }, (_, i) => lane(`row-${i}`));
   for (const [id, index] of rows) lanes[index].members.add(id);
   return lanes;
 }

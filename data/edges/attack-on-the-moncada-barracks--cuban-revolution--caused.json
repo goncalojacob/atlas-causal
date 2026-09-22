@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moncada Barracks\", revision 1370861034, § lead"
+    }
+  ],
+  "from": "attack-on-the-moncada-barracks",
+  "to": "cuban-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article on the barracks says it in one sentence: the attack of 26 July 1953 “is widely accepted as the beginning of the Cuban Revolution”, and the date became the name of the movement that “eventually toppled the dictatorship of Fulgencio Batista on 1 January 1959”. The atlas already types a war’s opening action as `caused` — Operation Rosary and the Falklands War — and this is the same shape: the first armed act of a revolution, and the one the article names as its start. It stays `probable`, because a single encyclopaedia lead calling an attack the accepted beginning of a revolution is a report of where the consensus sits and not a work arguing it; rule 22 would refuse `consensus` on a Wikipedia citation in any case.",
+  "dispute": null
+}

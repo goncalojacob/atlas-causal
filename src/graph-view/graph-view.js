@@ -42,7 +42,7 @@ import {
 import { createLayoutRunner } from './layout-runner.js';
 import { frameFor } from './frame.js';
 import { STRETCH_CAP, stretchStep } from './stretch.js';
-import { LABEL_SIZE, shorten } from './label-fit.js';
+import { LABEL_SIZE } from './label-fit.js';
 import {
   naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
@@ -71,8 +71,6 @@ const HEAD_WIDTH = 4.5;
 // widest node and its outline. In units of the screen, like every other size
 // here, and divided by the zoom where it is used.
 const LABEL_GAP = MAX_RADIUS + 3;
-// What fits in the left gutter a band label is written in.
-const BAND_LABEL_CHARS = 12;
 // Every node on screen is offered its name at every zoom since M82 (A1), so
 // there is no zoom at which naming begins and no cap on how many are offered.
 // `LABEL_LIMIT` is what `naming` falls back to for a caller that asks for a
@@ -207,13 +205,14 @@ export function edgeKey() {
       ${CONFIDENCE_ORDER.map((confidence, i) => `<line class="edge type-caused ${CONFIDENCE_CLASS[confidence]}"
         x1="${i * 21 + 1}" y1="6" x2="${i * 21 + 19}" y2="6"/>`).join('')}
     </svg>`;
-  // **One line on a phone** (M82, A1). At 390 px the key covered half the
-  // picture — `m77-graph-phone.png`, `m81-graph-war-phone.png` — which is a
-  // legend hiding the thing it is a legend to. The button is shown by the
-  // phone's own media query and hidden everywhere else, so a desktop has no
-  // control to press and the key it always had; the class the button toggles is
-  // what the stylesheet folds. The key is not in the SVG, so nothing here moves
-  // a mark.
+  // **One line, on every width** (M82 A1, and M83 A1-4). At 390 px the key
+  // covered half the picture — `m77-graph-phone.png`, `m81-graph-war-phone.png`
+  // — and M82 folded it there. The owner, 22 September, looking at World War II
+  // opened on a 1440 px screen: the key is over the bottom-left corner of the
+  // drawing there too. A legend standing on the thing it is a legend to is the
+  // same fault at either width, so there is one behaviour now and the button is
+  // it. The class it toggles is what the stylesheet opens. The key is not in
+  // the SVG, so nothing here moves a mark.
   box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
     <div id="graph-key-body" class="graph-key-body"><h2>Links</h2><dl class="edge-key">
     ${EDGE_TYPE_IDS
@@ -243,6 +242,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   let stacked = null;
   let weights = { min: 0, max: 0 };
   let arrangedFor = null;
+  // And the same arrangement's *question* — its key without the attribute-shard
+  // count — which is what the camera is filed under (M83, and `frameCamera`).
+  let askedFor = null;
   // Both of the expensive answers are kept by their key rather than only for
   // as long as the key holds still: a reader who widens the band and narrows
   // it again, or zooms out and back in, gets the picture they had.
@@ -337,6 +339,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // same flag for the same reason since H4a (map.js, `exactZoom`; cluster.js,
   // `zoomBucket`). Cleared by every other way the zoom can move.
   let exactZoom = false;
+  // Whether the reader has moved the camera since the frame last set it. A
+  // frame is only ever offered when the question changes or the coordinates do
+  // (`frameCamera`), and a reader who has panned or wheeled into the picture
+  // has answered the question of where to look: their own camera stands until
+  // they ask another one. Cleared by the frame itself.
+  let cameraMoved = false;
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -346,22 +354,16 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // is, because the axis is the one thing on the picture that says what the
   // stretch has done to it: the ticks are years and they have to stand under
   // the marks of those years.
+  //
+  // **There are no bands** (M83, B12). There was a rect and a cut-down label
+  // per band here, from the grouping: `arrangementOf` has returned `lanes: []`
+  // since M77, so `layoutGraph` makes one unnamed field, `band.hidden` is
+  // always true and the loop drew nothing. What is left is the axis, which is
+  // the whole of the frame the reader keeps their bearings by.
   let axisAt = null;
   function drawFrame() {
     axisAt = transform.s;
     bandsGroup.replaceChildren();
-    for (const band of laid.bands) {
-      if (band.hidden) continue;
-      bandsGroup.appendChild(svg('rect', {
-        x: 0, y: band.y0, width: laid.width * transform.s, height: band.y1 - band.y0,
-        class: classes('band', band.even ? 'even' : 'odd'),
-      }));
-      // A band is a lane now, and an actor's name is longer than a region's:
-      // the label is cut to the gutter and the whole of it is in the title.
-      const label = textNode(shorten(band.label, BAND_LABEL_CHARS), { x: 8, y: band.y0 + 15, class: 'band-label' });
-      label.appendChild(svgTitle(band.label));
-      bandsGroup.appendChild(label);
-    }
     for (const tick of laid.scale.ticks(10)) {
       const x = laid.scale.x(tick.value) * transform.s;
       bandsGroup.appendChild(svg('line', { x1: x, y1: laid.bands[0]?.y0 ?? 0, x2: x, y2: laid.height, class: 'tick' }));
@@ -425,8 +427,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
 
   function arrange(s) {
     const {
-      events, lanes, key, lens,
+      events, lanes, key, lens, question,
     } = arrangementOf(atlas, s, alonesOf(s), workingOf(s).shown);
+    askedFor = question;
     if (key === arrangedFor) return false;
     arrangedFor = key;
     const cached = arrangements.get(key);
@@ -533,6 +536,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     transform = {
       ...transform, k, x: laid.width / 2 - point.x * k, y: laid.height / 2 - point.y * k,
     };
+    cameraMoved = true;
     applyTransform();
     render(state.get());
   };
@@ -571,6 +575,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       capture('setPointerCapture', drag.pointerId);
     }
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
+    cameraMoved = true;
     applyTransform();
   });
   root.addEventListener('pointerup', () => {
@@ -597,6 +602,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       k, s, x: x - (x - transform.x) * across, y: y - (y - transform.y) * down,
     };
     exactZoom = false;
+    cameraMoved = true;
     applyTransform();
     render(state.get());
   }, { passive: false });
@@ -676,7 +682,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // the events are what the picture is of — and the lines underneath them
       // when no node is near enough to have been meant.
       const line = nearestLine(e);
-      if (line) chooseEdge(line.members[0].id);
+      if (line) {
+        chooseEdge(line.members[0].id);
+        return;
+      }
+      // **And the empty ground puts the selection down** (M83, B8). A click on
+      // the sea, and a click on the empty ground of the timeline, have cleared
+      // the selection and the chain since M65, which is how the lens of one is
+      // put down and the resting picture comes back. On the graph the same
+      // click did nothing at all — and this is the view where opening an
+      // umbrella narrows the picture most (M81 stretches the axis to the lens),
+      // and was the one view with no gesture back. The owner's own question 1:
+      // *"is the way back obvious?"*
+      const s = state.get();
+      if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
       return;
     }
     if (best.count === 1) {
@@ -689,12 +708,28 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // A line is a control, so it answers Enter and Space, exactly as a mark on
   // the map has since M63. It is a `<line>` and not a `<button>`, so neither
   // key is free.
+  //
+  // **And so is a mark** (M83, B5). M63 made every mark on the map reachable by
+  // Tab and openable by Enter; M80 gave the graph's single-link lines the same;
+  // the graph's own nodes and stacks were never given it, so a keyboard reader
+  // could open a connection on this picture and neither of its two ends, nor
+  // any event at all. A node opens the record, a stack opens its list — which
+  // is what a click on each already does.
   root.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
-    const el = e.target.closest?.('[data-edge]');
+    const el = e.target.closest?.('[data-edge], [data-id], [data-stack]');
     if (!el) return;
     e.preventDefault();
-    chooseEdge(el.getAttribute('data-edge'));
+    if (el.hasAttribute('data-edge')) {
+      chooseEdge(el.getAttribute('data-edge'));
+      return;
+    }
+    if (el.hasAttribute('data-id')) {
+      select(el.getAttribute('data-id'));
+      return;
+    }
+    const stack = stacked?.nodes.find((n) => n.key === el.getAttribute('data-stack'));
+    if (stack) openStack(stack);
   });
 
   // A stack of nodes drawn as one, clicked. The members go to the panel
@@ -711,7 +746,6 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         coincident: stack.coincident,
         representative: { id: stack.representative.id, event: stack.representative.event },
         members: stack.members.map((m) => ({ id: m.id, event: m.event })),
-        lane: laid.bands.find((b) => b.id === stack.lane) ?? null,
         years: stack.years,
       });
     }
@@ -730,22 +764,27 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // way (health review B, finding 10).
   const select = (id) => walkOrSelect(state, atlas, id);
 
-  // Which link the keyboard is on, and putting it back after a redraw. By the
-  // link's own id and not by the element: the elements are all replaced.
-  const focusedEdgeId = () => {
+  // Which control the keyboard is on, and putting it back after a redraw. By
+  // the record's own id and not by the element: the elements are all replaced.
+  // One pair for the lines and the marks alike (M83, B5), because the question
+  // and the answer are the same for both — which attribute names it, and which
+  // group is about to be rebuilt.
+  const focusedIn = (attribute) => {
     const active = root.ownerDocument?.activeElement;
-    return active && root.contains(active) && active.hasAttribute?.('data-edge')
-      ? active.getAttribute('data-edge') : null;
+    return active && root.contains(active) && active.hasAttribute?.(attribute)
+      ? active.getAttribute(attribute) : null;
   };
-  const restoreEdgeFocus = (id) => {
+  const restoreFocus = (group, attribute, id) => {
     if (id === null) return;
-    for (const el of edgesGroup.querySelectorAll('[data-edge]')) {
-      if (el.getAttribute('data-edge') === id) {
+    for (const el of group.querySelectorAll(`[${attribute}]`)) {
+      if (el.getAttribute(attribute) === id) {
         el.focus?.({ preventScroll: true });
         return;
       }
     }
   };
+  const focusedEdgeId = () => focusedIn('data-edge');
+  const restoreEdgeFocus = (id) => restoreFocus(edgesGroup, 'data-edge', id);
 
   // And choosing a line, which is the other thing this view can be asked. It
   // sets one field and clears none: a link is read, not walked, so the window,
@@ -1019,6 +1058,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     }
     restoreEdgeFocus(focusedEdge);
 
+    // The same as the lines above: every mark is drawn again on every render,
+    // so a mark opened from the keyboard would take the focus back to the
+    // document with it.
+    const focusedNode = focusedIn('data-id');
+    const focusedStack = focusedIn('data-stack');
     nodesGroup.replaceChildren();
     let selectedMark = null;
     for (const stack of stacked.nodes) {
@@ -1031,13 +1075,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         const span = stack.years.min === stack.years.max
           ? formatYear(stack.years.min)
           : `${formatYear(stack.years.min)}–${formatYear(stack.years.max)}`;
+        const stackTitle = `${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`;
         nodesGroup.appendChild(svg('circle', {
-          cx: stack.x, cy: stack.y, r: radius / k,
+          cx: stack.x,
+          cy: stack.y,
+          r: radius / k,
           class: classes('node', 'stack', stack.coincident ? 'coincident' : 'splittable',
             stack.members.every((m) => lensNear.has(m.id)) ? 'lens-near' : '',
             Number.isFinite(nearest) ? `in-horizon ${horizonBand(nearest)}` : ''),
           'data-stack': stack.key,
-        }, [svgTitle(`${labelOf(atlas, node.event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here, ${span}`)]));
+          tabindex: '0',
+          role: 'button',
+          'aria-label': stackTitle,
+        }, [svgTitle(stackTitle)]));
         nodesGroup.appendChild(textNode(`+${hidden}`, {
           x: stack.x + (radius + 2) / k,
           y: stack.y - (radius + 1) / k,
@@ -1067,8 +1117,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // not any more: `stackLayout` returns the picture's coordinates, with
       // time stretched, and `representative` is the arrangement's node, which
       // never moves.
+      // A control, as a mark on the map has been since M63 (M83, B5): it takes
+      // the focus, says what it is, and answers Enter and Space. The label is
+      // the title already computed above, so there is one sentence about this
+      // mark and not two.
       const mark = svg('circle', {
-        cx: stack.x, cy: stack.y, r: radius / k, class: cls, 'data-id': node.id,
+        cx: stack.x,
+        cy: stack.y,
+        r: radius / k,
+        class: cls,
+        'data-id': node.id,
+        tabindex: '0',
+        role: 'button',
+        'aria-label': title,
       }, [svgTitle(title)]);
       nodesGroup.appendChild(mark);
       // An event with parts carries the ring at every zoom (m30c-brief, §1),
@@ -1086,6 +1147,8 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       if (isSelected) selectedMark = mark;
     }
     if (selectedMark) nodesGroup.appendChild(selectedMark);
+    restoreFocus(nodesGroup, 'data-id', focusedNode);
+    restoreFocus(nodesGroup, 'data-stack', focusedStack);
 
     drawLabels(s, k, box, working);
   }
@@ -1239,11 +1302,37 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // at the end of this file throws the measurement away when the pane changes
   // size; keying on what was measured, rather than on the size read live off
   // the element, is what makes the next drawing act on it.
+  //
+  // **And the layout the frame was computed from** (M83, B9). The key above is
+  // about the question and the rectangle, and neither of them says *which
+  // coordinates*. Above six hundred events an arrangement is sent to a thread:
+  // `arrange` files the new key, returns true on the strength of the old
+  // `laid`, and `render` goes on and frames the *old* nodes against the new
+  // question — and when the Worker answers, `adopt` swaps in the new layout,
+  // forces a render, and this function finds the key unchanged and returns. The
+  // new arrangement was then drawn at whatever camera the stale fit had left:
+  // clearing a lens back to a resting picture of six hundred main events framed
+  // a handful of the lens's nodes and never the whole. Holding the layout
+  // itself, rather than a key that cannot see it, is what makes the frame
+  // belong to the picture; it is also what re-fits a lens whose nodes moved
+  // when its century landed (A1-2).
+  //
+  // **Unless the reader has moved the camera.** Where they are looking is a
+  // question they answered with their own hand, and a layout that changed under
+  // it — a century landing, a thread answering — is not a reason to take it
+  // back. So the re-fit is offered to a camera the frame itself put there and
+  // never to one the reader wheeled or dragged into place.
   let framedFor = null;
+  let framedLayout = null;
   function frameCamera(s, seen) {
     const working = workingOf(s);
-    const key = `${arrangedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
-    if (key === framedFor) return;
+    // **The question and not the whole arrangement key** (M83). The key carries
+    // the attribute-shard count since A1-2, because a century landing carries
+    // the days the nodes stand on; the camera must not move for that. What
+    // frames again is a new question — a lens set or cleared, a filter, a
+    // category — which is `question` (arrangement.js).
+    const key = `${askedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
+    if (key === framedFor && (framedLayout === laid || cameraMoved)) return;
     // Whether this is the first camera this arrangement has been given, which
     // is the whole of what the chosen link may decide (M80). A reader who
     // *arrives* on `?edge=` has not seen the picture yet and the two ends are
@@ -1252,8 +1341,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // from under the gesture that chose it. So the ends frame the drawing they
     // open and never one already on screen — which is also why the link is not
     // in the key above: a click changes nothing this function decides.
-    const arriving = framedFor === null || !framedFor.startsWith(`${arrangedFor}|`);
+    const arriving = framedFor === null || !framedFor.startsWith(`${askedFor}|`);
     framedFor = key;
+    framedLayout = laid;
+    cameraMoved = false;
     // And what that frame is: the link's own two ends and nothing else. The
     // card names them, and a camera that left one of them off the screen would
     // be the picture disagreeing with the card. It is the only set offered,

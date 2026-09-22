@@ -19,7 +19,7 @@
 
 // A value flattened to a string, for a state that is two dozen scalars and
 // three short arrays. Deep enough for what `state.js` carries and nothing
-// more: `bbox` is four numbers, `chain` a list of ids, `lanes` a list of ids.
+// more: `bbox` is four numbers and `chain` a list of ids.
 function flat(value) {
   if (Array.isArray(value)) return value.map(flat).join(',');
   if (value === null || value === undefined) return '';
