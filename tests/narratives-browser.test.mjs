@@ -39,13 +39,16 @@ test('the page lists each narrative in the dataset, under the centuries it cross
     assert.ok(colonial, 'the colonial war narrative is on the page');
     assert.equal(colonial.href, 'index.html?narrative=how-the-colonial-war-ended-the-regime&step=0');
     // Narrator, period covered, number of steps — the card's own line.
-    assert.match(colonial.meta, /Claude \(assistant draft, unreviewed\) · 1961–1975 · 12 steps/);
+    // The page is prerendered by the build, which runs with the review flag
+    // off, so an account is published under the atlas's own byline (M82, A2).
+    // The record still names its authors and `?review=1` still prints them.
+    assert.match(colonial.meta, /Atlas causal · 1961–1975 · 12 steps/);
     assert.match(colonial.summary, /^A walk from the first shots/);
 
     const buying = page1.cards.filter((c) => c.title === 'Who was buying');
     assert.equal(buying.length, 6, 'a card under each century it crosses');
     assert.equal(buying[0].href, 'index.html?narrative=who-was-buying&step=0');
-    assert.match(buying[0].meta, /Claude \(assistant draft, unreviewed\) · 1530–2023 · 28 steps/);
+    assert.match(buying[0].meta, /Atlas causal · 1530–2023 · 28 steps/);
 
     assert.equal(page1.wider, true, 'nothing sticks out sideways');
 

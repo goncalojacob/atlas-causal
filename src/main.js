@@ -199,7 +199,7 @@ try {
   // "follow the consequences" actually means here. Shown on a first visit
   // with nothing open, and brought back by the "?" in the masthead
   // (intro.js; health review A, finding 17).
-  createIntro(document.getElementById('intro'), {
+  const intro = createIntro(document.getElementById('intro'), {
     atlas, state, toggle: document.getElementById('intro-button'),
   });
   const lensChips = createLensChips(document.getElementById('lens-chips'), { atlas, state });
@@ -321,6 +321,11 @@ try {
   // record too, and it is drawn in the masthead rather than by the panel.
   const shardLanded = () => {
     remeasure(); panel.refresh(); lensChips.render(state.get());
+    // And the card over the view on a first visit, which quotes the titles of
+    // the narratives and the events it offers: until the century carrying one
+    // has landed there is no title, and a slug where a name goes on the front
+    // page is what M82 is about (intro.js, A3).
+    intro.refresh();
     // And the composer's step list, where a step is named by the record's
     // title once its century is in and by its id until then (attributes.js).
     composer?.refresh();

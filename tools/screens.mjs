@@ -736,6 +736,54 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=graph&focus=event:world-war-ii&notches=1',
     width: 500, height: 844,
     what: 'and one notch of the wheel on a phone' },
+
+  // M82 — the first screen. Six pictures of what a funder's first minute
+  // trips on, from the review of 22 September (part A). Each is taken twice:
+  // the `-before` files are the same six states on the tree as it stood at
+  // `M81 done`, so the pair can be laid side by side and the fix read off
+  // them. The run takes the `-before` half with the working tree checked out
+  // at that commit and this half after, which is why the two are one entry
+  // apiece here and not twelve.
+  //
+  // **The first screen itself** (A3, A2, A5): the sentence under the title,
+  // the masthead with no "0 of N read" in it, the corner of the map with no
+  // paragraph about the events it cannot draw, and the count line carrying
+  // that number instead.
+  { name: 'm82-first-screen', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'a first visit: one sentence saying what the atlas is, no review vocabulary, no box on the map' },
+  // The intro card, which is what the "?" opens and what a first visit sees
+  // over the picture: the same sentence, and five steps with no walk, lens,
+  // focus or chip in them.
+  { name: 'm82-intro', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=1400&intro=1',
+    width: 1440, height: 1400,
+    what: 'the intro card in the reader\'s words: what the atlas is, and what a click does' },
+  // **The graph at rest** (A1): the main events and no second filter, every
+  // mark offered its whole name, and the axis built from what is drawn.
+  { name: 'm82-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph',
+    width: 1440, height: 900,
+    what: 'the resting graph: main events only, named' },
+  // **The timeline's axis** (A6): four rows above the lanes, a line apart,
+  // with the umbrella names whole and no year written twice.
+  { name: 'm82-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline&from=1900&to=1999',
+    width: 1440, height: 900,
+    what: 'the timeline\'s headings: one axis, umbrella names whole and on rows of their own' },
+  // **The link\'s card** (A11), headed by what the link is, and (A7) the key
+  // the map now carries.
+  { name: 'm82-map-key', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&from=1960&to=1980&bbox=-25,-25,60,55',
+    width: 1440, height: 900,
+    what: 'the map with a key to its marks, and the count line saying how many have no place' },
+  // **And a phone** (A9): the picture over half the screen, the four links
+  // behind Options, the sentence still under the title.
+  { name: 'm82-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&from=1900&to=1999',
+    width: 500, height: 844,
+    what: 'a 390 x 844 phone: the picture over half the screen, the links behind Options' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

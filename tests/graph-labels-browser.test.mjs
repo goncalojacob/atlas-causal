@@ -167,11 +167,16 @@ test('at the world view a label is no longer than it was, and none is drawn over
 
     const labels = await page.eval(LABELS);
     assert.ok(labels.length > 0, 'the world view names something');
+    // **M61's slice no longer binds at the world view** (M82, A1). It was the
+    // width the old constant cut took at k = 1, and it was M61's answer to a
+    // label *cut* to the room — which M77 replaced with "whole or not at all".
+    // What was left of it was a rule that a long name is not drawn at all,
+    // however much room there is beside its mark; on the resting picture that
+    // silenced fourteen more marks of the hundred and sixty-nine. What binds
+    // is what has bound since M77: a name is written where the whole of it
+    // fits and nowhere else.
     for (const label of labels) {
-      // The cut that was there before this milestone was a constant, and at
-      // the world view it is still what binds: the picture is no busier than
-      // it was.
-      assert.ok(label.text.length <= LABEL_CHARS, `${label.text} is no longer than the cut it replaces`);
+      assert.doesNotMatch(label.text, /\u2026/, `${label.text} is whole and not cut`);
     }
     assert.deepEqual(overlapping(labels), [], 'and no two of them touch');
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');

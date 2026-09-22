@@ -12,6 +12,7 @@
 // can be copied, and they work before any script has run.
 
 import { esc, safeUrl } from '../util/esc.js';
+import { showingReview } from '../demo.js';
 import { formatInterval } from '../util/dates.js';
 import { renderBody, tocHtml } from '../markdown.js';
 import { identifiers, containerText } from '../citation.js';
@@ -204,11 +205,20 @@ function metaHtml(atlas, links, kind, record, topologyEntry) {
   return `<p class="meta">${parts.join(' · ')}</p>`;
 }
 
+// **Does this record have a full entry at all?** One question, asked in one
+// place (M82, A10): the build prerenders a page under `entry/` on this answer
+// (tools/lib/prerender.mjs) and a card offers the link on this answer
+// (panel/panel.js), so the link and the page cannot come to disagree. A body
+// that is absent, null, not a string or blank is no entry.
+export function hasEntry(record) {
+  return typeof record?.body === 'string' && record.body.trim() !== '';
+}
+
 // The entry itself, or the notice that stands in for one. A record with no
 // entry written is the common case for a long time yet, and the page says so
 // plainly and asks for the entry rather than looking broken.
 function bodyHtml(atlas, links, record) {
-  if (typeof record.body !== 'string' || record.body.trim() === '') {
+  if (!hasEntry(record)) {
     return {
       html: `<section class="entry-body empty">
         <h2>The full entry</h2>
@@ -271,7 +281,7 @@ export function entryHtml(atlas, {
       ${metaHtml(atlas, links, kind, record, topologyEntry)}
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
       <p class="entry-back"><a href="${esc(links.atlas(kind, record.id))}">Open this on the map and the timeline →</a></p>
-      <p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>
+      ${showingReview() ? `<p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>` : ''}
       ${wikipediaHtml(record, languages)}
     </header>
     ${record.summary ? `<section class="entry-summary"><p>${esc(record.summary)}</p></section>` : ''}

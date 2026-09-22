@@ -486,6 +486,21 @@ export function isImplicitLens(state) {
 // every walked step, and where the open event leads directly. Read straight
 // from the atlas and the state, so that `lens.js` and `emphasis.js` cannot
 // come to disagree about what is drawn.
+// **The one name for going back, everywhere** (M82, A7/A8).
+//
+// The reviewer counted four ways out of a lens on one screen: the chip's ×,
+// the button "show everything", the card's "stop focusing on this", and — in a
+// narrative — "leave". Four names for one act, three of them in the project's
+// own word for the machinery rather than in a word a reader arrives with. The
+// act is always the same: give me every event back. So it is said once, here,
+// and every control that performs it says it.
+//
+// It is the label and not the act: what each control writes into `?focus=`
+// still differs, because dropping one chip of three is not the same write as
+// clearing the lens (`withoutFocus` against `FOCUS_NONE`), and leaving a
+// narrative is a different parameter again.
+export const BACK_LABEL = 'Back to all events';
+
 export function keptRegardless(atlas, state) {
   const ids = new Set();
   if (state?.selected && atlas.events?.get(state.selected)?.status === 'active') {

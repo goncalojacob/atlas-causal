@@ -15,7 +15,7 @@ import { articleFor } from '../wikipedia.js';
 import { windowAt, resolveWindow } from '../util/window.js';
 import { OPENINGS, hasOpening } from '../state.js';
 import {
-  formatFocus, lensLabels, withFocus, withoutFocus, FOCUS_NONE,
+  formatFocus, lensLabels, withFocus, withoutFocus, FOCUS_NONE, BACK_LABEL,
 } from '../lens.js';
 import { shortestPaths, pathTo } from '../graph.js';
 import { chainEdges } from '../chain.js';
@@ -30,11 +30,12 @@ import { clusterHtml } from './cluster.js';
 import { horizonHtml } from './horizon.js';
 import { partOfHtml, renderNarrativeCard } from './narrative.js';
 import { readingNarrative } from '../narrative.js';
-import { createLinks, ENTRY_KINDS } from '../entry/entry.js';
+import { createLinks, hasEntry, ENTRY_KINDS } from '../entry/entry.js';
 import { discussUrl, recordUrl, editUrl } from '../share.js';
 import { toggleSection, readOpenSection, sectionBodyHtml } from './sections.js';
 import { categoryLabels } from '../categories.js';
 import { EDGE_TYPE_LABEL } from '../vocab.js';
+import { showingReview } from '../demo.js';
 
 // What the reader asked their browser for, in order. Read once: the cards
 // use it to choose which Wikipedia edition to offer, and a list that changed
@@ -324,10 +325,17 @@ export function createPanel(container, {
       const ids = identifiers(src).map(({ label, href }) => (href
         ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
         : `<span class="unsafe-url">${esc(label)}</span>`));
+      // Whether somebody has opened the book is review apparatus, and off the
+      // demo it is not what a citation is for (M82, A2; demo.js). The flag on,
+      // it is exactly what it was: `verified` where a reviewer signed the
+      // citation and `unchecked` where nobody has. The record is untouched
+      // either way — `review.citations` is a flag and not a gate, and the
+      // validator counts it from the command line as it always has.
       const verified = flags[c.source]?.verified;
-      const mark = verified
-        ? `<span class="badge verified" title="${esc(`checked against the source by ${verified.by ?? 'a reviewer'}, ${verified.on ?? ''}`.trim())}">verified</span>`
-        : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
+      const mark = !showingReview() ? ''
+        : verified
+          ? `<span class="badge verified" title="${esc(`checked against the source by ${verified.by ?? 'a reviewer'}, ${verified.on ?? ''}`.trim())}">verified</span>`
+          : '<span class="unchecked" title="nobody has yet opened the source to check this citation">unchecked</span>';
       return `<li class="citation">
         <span class="creators">${esc((src.creators ?? []).join(', '))}</span>${src.year ? ` (${esc(src.year)})` : ''}.
         <button type="button" class="link cite" data-action="source" data-id="${esc(src.id)}"><em>${esc(src.title)}</em></button>.
@@ -387,14 +395,18 @@ export function createPanel(container, {
     const focus = formatFocus(kind, id);
     const s = state.get();
     const attrs = `data-kind="${esc(kind)}" data-id="${esc(id)}"`;
+    // One name for going back, wherever the way back is offered (M82, A8):
+    // the chip in the masthead, the card of a record that is in focus, and the
+    // step of a narrative being read all said it differently, and none of them
+    // in a word a reader arrives with (lens.js, `BACK_LABEL`).
     if (only) {
       return currentFocus(s) === focus
-        ? `<button type="button" class="link small lens-control on" data-action="unfocus-only" ${attrs}>stop focusing on this step</button>`
+        ? `<button type="button" class="link small lens-control on" data-action="unfocus-only" ${attrs}>${esc(BACK_LABEL)}</button>`
         : `<button type="button" class="link small lens-control" data-action="focus-only" ${attrs}>Focus on this</button>`;
     }
     const on = currentFocus(s).split(',').includes(focus);
     if (on) {
-      return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>stop focusing on this</button>`;
+      return `<button type="button" class="link small lens-control on" data-action="unfocus" ${attrs}>${esc(BACK_LABEL)}</button>`;
     }
     return `<button type="button" class="link small lens-control" data-action="focus" ${attrs}>Focus on this</button>`;
   }
@@ -411,14 +423,37 @@ export function createPanel(container, {
       <span class="muted">${esc(article.title)} · ${esc(article.lang)}</span></p>`;
   }
 
-  // The way out of the card and onto a page of its own. Offered on every
-  // record that can have an entry, written or not: a card that only linked to
-  // entries that exist would hide from the reader that the long form is a
-  // thing this atlas has, and the page itself is where the invitation to
-  // write one belongs.
+  // The way out of the card and onto a page of its own — **and only where
+  // there is one** (M82, A10).
+  //
+  // It was offered on every record that can have an entry, written or not, on
+  // the argument that a card which only linked to entries that exist would
+  // hide from the reader that the long form is a thing this atlas has. No
+  // record in `data/` carries a body: 0 of 819 events, so nothing was
+  // prerendered under `entry/`, so every one of those links was an invitation
+  // to a page that says "Nobody has written the long entry for this record
+  // yet". A way out that leads to a wall on every record is not a way out.
+  //
+  // Whether the record has a body is on the record's own file, which arrives
+  // after the card is built (the core row carries no text), so this is the
+  // same discipline the summary and the standing line follow: a slot, and the
+  // link written into it when the answer is known. Nothing at all until then,
+  // because a link offered and withdrawn is worse than one that arrives.
   function entryLink(kind, id) {
     if (!ENTRY_KINDS.includes(kind)) return '';
-    return `<p class="entry-link"><a href="${esc(links.entry(kind, id))}">Read the full entry →</a></p>`;
+    return `<p class="entry-link" data-slot="entry-link" data-kind="${esc(kind)}" data-id="${esc(id)}"></p>`;
+  }
+
+  // And what goes in it, when the record lands. `hasEntry` is one question
+  // asked in one place: a body that is absent, null or blank is no entry, and
+  // `tools/build-index.mjs` prerenders a page under `entry/` on exactly that
+  // answer (lib/prerender.mjs), so the link and the page cannot disagree.
+  function fillEntryLink(container, kind, record) {
+    const slot = container?.querySelector?.('[data-slot="entry-link"]');
+    if (!slot) return;
+    if (!hasEntry(record)) { slot.remove(); return; }
+    slot.removeAttribute('data-slot');
+    slot.innerHTML = `<a href="${esc(links.entry(kind, record.id))}">Read the full entry →</a>`;
   }
 
   // On every card, and on the cards of every kind: a record here is an
@@ -431,6 +466,13 @@ export function createPanel(container, {
   // which is the correction a reader can actually write (health review B,
   // finding 26). The first leaves this site, the second does not.
   function discussLink(kind, id) {
+    // **Both doors are shut on the demo** (M82, A2). "Discuss this record"
+    // opens a GitHub issue and "Edit this record" opens the contribution form;
+    // the owner's standing orders defer contribution until there is funding,
+    // so on the published site they are two invitations into a process that is
+    // not open. `?review=1` has them back, unchanged, and `contribute.html`
+    // and the issue templates are untouched (demo.js).
+    if (!showingReview()) return '';
     const page = typeof location === 'object'
       ? `${location.origin && location.origin !== 'null' ? location.origin : ''}${location.pathname}`
       : '';
@@ -486,6 +528,7 @@ export function createPanel(container, {
     edgeTextHtml,
     wikipediaHtml,
     entryLink,
+    fillEntryLink,
     discussLink,
     historyHtml,
     partOfHtml: (id, options) => partOfHtml(ctx, id, options),

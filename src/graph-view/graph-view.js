@@ -44,7 +44,7 @@ import { frameFor } from './frame.js';
 import { STRETCH_CAP, stretchStep } from './stretch.js';
 import { LABEL_SIZE, shorten } from './label-fit.js';
 import {
-  naming, placeLabels, placeOne, labelBoxAt, movedAway, ROWS_AWAY, LENS_ROWS_AWAY,
+  naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
 import { exportButton } from '../share.js';
 
@@ -73,9 +73,10 @@ const HEAD_WIDTH = 4.5;
 const LABEL_GAP = MAX_RADIUS + 3;
 // What fits in the left gutter a band label is written in.
 const BAND_LABEL_CHARS = 12;
-// Below this zoom only the heaviest nodes on screen are named; at or above
-// it every node on screen is, which at sixty events is all of them.
-const LABEL_ALL_ZOOM = 2;
+// Every node on screen is offered its name at every zoom since M82 (A1), so
+// there is no zoom at which naming begins and no cap on how many are offered.
+// `LABEL_LIMIT` is what `naming` falls back to for a caller that asks for a
+// capped list, and nothing here asks for one.
 const LABEL_LIMIT = 14;
 const BADGE_SIZE = 10;
 // How far outside the rectangle on screen a mark is still worth putting in
@@ -206,11 +207,24 @@ export function edgeKey() {
       ${CONFIDENCE_ORDER.map((confidence, i) => `<line class="edge type-caused ${CONFIDENCE_CLASS[confidence]}"
         x1="${i * 21 + 1}" y1="6" x2="${i * 21 + 19}" y2="6"/>`).join('')}
     </svg>`;
-  box.innerHTML = `<h2>Links</h2><dl class="edge-key">
+  // **One line on a phone** (M82, A1). At 390 px the key covered half the
+  // picture — `m77-graph-phone.png`, `m81-graph-war-phone.png` — which is a
+  // legend hiding the thing it is a legend to. The button is shown by the
+  // phone's own media query and hidden everywhere else, so a desktop has no
+  // control to press and the key it always had; the class the button toggles is
+  // what the stylesheet folds. The key is not in the SVG, so nothing here moves
+  // a mark.
+  box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
+    <div id="graph-key-body" class="graph-key-body"><h2>Links</h2><dl class="edge-key">
     ${EDGE_TYPE_IDS
       .map((type) => `<dt>${line(type)}</dt><dd>${type}</dd>`).join('')}
     <dt>${sureness}</dt><dd>how sure: ${CONFIDENCE_ORDER.join(', ')}</dd>
-  </dl>`;
+  </dl></div>`;
+  const toggle = box.querySelector('.graph-key-toggle');
+  toggle.addEventListener('click', () => {
+    const open = box.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
   return box;
 }
 
@@ -1089,29 +1103,41 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // reader asked and the ring around it is context: the walk of an open
   // narrative is named in the narrator's own order, first step first, so the
   // room a crowded picture has goes to the argument rather than to whichever
-  // neighbour happens to weigh most. At rest nothing has been asked and the
-  // rule is the one it was — the heaviest marks on screen, every one of them
-  // once the reader has zoomed past `LABEL_ALL_ZOOM`.
+  // neighbour happens to weigh most.
+  //
+  // **And at rest, M77's rule reaches the resting picture too** (M82, A1). It
+  // did not: at rest fourteen marks were offered a name, each capped to M61's
+  // slice of the width and allowed two lines either side of its own — so the
+  // reviewer's first screen of the graph was "some two hundred unlabelled
+  // circles" with a dozen names among them. There is no reason for the
+  // difference. The resting picture is a set somebody is looking at exactly as
+  // a lens is; the field above and below a mark is as free in one as in the
+  // other; and the rule that makes a crowded picture legible — *whole or not at
+  // all, on a nearby free line, and the pointer for what is left* — is the same
+  // rule. So every mark on screen is offered its name, uncapped, with the
+  // room a lens has. What still cannot be written whole is what the hover
+  // label is for, and that is unchanged.
+  //
+  // The order is unchanged too: heaviest first at rest, so a picture that
+  // cannot hold every name holds the names that carry the most of the atlas.
   function drawLabels(s, k, box, working) {
     labelsGroup.replaceChildren();
-    const all = k >= LABEL_ALL_ZOOM;
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
     const focus = working.lensFocus;
     const order = working.narrative ? [...working.narrative] : null;
-    const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all })
+    const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all: true })
       .map((node) => ({ node, name: labelOf(atlas, node.representative.event) }))
       // No name yet is no label, and the next node still gets its own.
       .filter((c) => c.name !== null);
-    // The lens is not capped by M61's slice: the reader has asked about these
-    // events, and a walk whose steps have long names is a walk with long
-    // names. At rest the cap stands, and is what keeps a fifty-character title
-    // out of a picture of everything until somebody zooms in for it.
+    // Neither picture is capped by M61's slice any more: a name is written
+    // whole or not at all, and a cap on how wide "whole" may be is a second
+    // answer to a question `placeOne` has already answered honestly.
     const placed = placeLabels(candidates, {
       k,
       gap: LABEL_GAP,
       view: box,
-      capped: focus === null,
-      rows: focus === null ? ROWS_AWAY : LENS_ROWS_AWAY,
+      capped: false,
+      rows: LENS_ROWS_AWAY,
     });
     named = new Set(placed.map((p) => p.node.key));
     for (const { node, text, rect } of placed) {

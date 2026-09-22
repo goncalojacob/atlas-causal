@@ -25,7 +25,10 @@ const FORM_DRAWN = 'return document.querySelectorAll(".add-row button").length >
 
 test('"Edit this record" on a card opens the form on that record', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('index.html?selected=carnation-revolution-1974'));
+    // `review=1` because the two contribution doors are off the demo since
+    // M82 (A2, demo.js); the form itself is untouched and this is the link
+    // a maintainer follows.
+    await open(page, url('index.html?review=1&selected=carnation-revolution-1974'));
     const href = await page.eval('return document.querySelector(".panel .discuss .edit-record")?.getAttribute("href") ?? null;');
     assert.equal(href, 'contribute.html?correction=1&edit=event%2Fcarnation-revolution-1974');
 

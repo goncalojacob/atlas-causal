@@ -567,7 +567,7 @@ test('Back comes back to the picture, and the URL says so', { skip }, async () =
 // for. Driven, because the whole point is what `location` says at the time.
 test('the discuss link carries the record\'s address and nothing the reader did', { skip }, async () => {
   await withBrowser(async (page, url) => {
-    await open(page, url('?selected=carnation-revolution-1974&bbox=-10,36,-6,43&from=1900&to=1980&horizon=2000'));
+    await open(page, url('?review=1&selected=carnation-revolution-1974&bbox=-10,36,-6,43&from=1900&to=1980&horizon=2000'));
     // Walk a step, so there is a chain to leak.
     await page.eval('document.querySelector(\'[data-action="follow"]\').click(); return true;');
     await waitFor(page, 'return new URLSearchParams(location.search).has("chain");', 'a walked chain');
@@ -733,7 +733,7 @@ test('the colony a state succeeded is named on its card, and opens', { skip }, a
 // did not carry the lens, so nothing redrew it. Clicking "Focus on this" put
 // a chip in the header, wrote the focus into the URL, and left the button
 // still offering to add the focus it had just added.
-test('“Focus on this” becomes “stop focusing on this” without leaving the card', { skip }, async () => {
+test('“Focus on this” becomes the one way back without leaving the card', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
     // **`focus=none`**, which is the reader turning the implicit lens off
@@ -755,7 +755,7 @@ test('“Focus on this” becomes “stop focusing on this” without leaving th
     await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 1;', 'the header chip');
     await waitFor(
       page,
-      'return document.querySelector(".panel .lens-control")?.textContent === "stop focusing on this";',
+      'return document.querySelector(".panel .lens-control")?.textContent === "Back to all events";',
       'the control to say what it does now',
     );
     assert.equal(
