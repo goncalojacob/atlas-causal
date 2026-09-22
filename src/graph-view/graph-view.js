@@ -27,7 +27,7 @@ import { centuryCounts } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
 import { convergence } from '../graph.js';
-import { EDGE_TYPE_IDS } from '../vocab.js';
+import { EDGE_TYPE_IDS, EDGE_TYPE_LABEL } from '../vocab.js';
 import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
 import { chainEdges as walkedEdges, walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
@@ -51,6 +51,12 @@ const MIN_RADIUS = 4;
 const MAX_RADIUS = 6.5;
 // How far from a node's centre a click still means that node.
 const HIT_RADIUS = 8;
+// And how far from a line a click still means that line (M80). Smaller than
+// the node's reach, and asked only after the nodes have said no: a line runs
+// into the mark at either end of it, so a click near a node would otherwise be
+// ambiguous everywhere the picture is dense. Points are in the graph's own
+// coordinates, so this is divided by the zoom exactly as the node's is.
+const EDGE_HIT_RADIUS = 5;
 const SELECTED_RADIUS = 7.5;
 // A stack is a little larger than the node it is drawn on, and CSS gives it a
 // heavier ring: the reader has to be able to tell one mark from many at a
@@ -149,6 +155,32 @@ function radiusFor(weight, weights) {
 
 function classes(...list) {
   return list.filter(Boolean).join(' ');
+}
+
+// What a line is called, to the pointer and to a screen reader: the two ends
+// with the type between them, which is the only name a link has — it has no
+// title of its own, being an argument and not a thing. A name that has not
+// arrived yet reads as the interface saying so, exactly as a mark's does
+// (attributes.js); it is never the id, which is a slug shown where a name
+// goes.
+function edgeName(atlas, edge) {
+  const named = (id) => labelOf(atlas, atlas.events.get(id)) ?? LOADING_LABEL;
+  return `${named(edge.from)} — ${EDGE_TYPE_LABEL[edge.type] ?? edge.type} → ${named(edge.to)}`;
+}
+
+// How far a point is from a segment, in whatever units both are written in.
+// Pure arithmetic and the only geometry this file does: it is what decides
+// which line a click means (M80), the way `nearestStack` decides which mark
+// one means. The projection onto the segment is clamped to its two ends, so a
+// click well past the arrowhead is measured to the arrowhead and not to the
+// infinite line the segment lies on.
+export function distanceToSegment(px, py, x1, y1, x2, y2) {
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const length = dx * dx + dy * dy;
+  if (length === 0) return Math.hypot(px - x1, py - y1);
+  const t = Math.min(1, Math.max(0, ((px - x1) * dx + (py - y1) * dy) / length));
+  return Math.hypot(px - (x1 + t * dx), py - (y1 + t * dy));
 }
 
 // The key to the five line patterns, in the corner of the view that uses
@@ -534,6 +566,36 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     return best && distance <= reach ? best : null;
   }
 
+  // And which *line* a pointer means, asked only once every node has said no
+  // (M80). The same idiom as `nearestStack` and for the same reason: a line is
+  // a stroke a pixel or two wide, and hit-testing the element would make
+  // choosing one a test of the reader's aim. Distance from the point to the
+  // segment, nearest wins, ties by key so the answer is the same on every
+  // machine.
+  //
+  // **Only a line that stands for one link.** A line drawn between two stacks
+  // may carry several links (cluster.js, `mergeEdges`), and those members are
+  // collinear by construction — there is nothing in the picture that could say
+  // which of them the reader aimed at. Zooming in parts the stacks and the
+  // line becomes one link, which is the same answer the map gives for a
+  // cluster of marks.
+  function nearestLine(e) {
+    if (!stacked) return null;
+    const [x, y] = toGraph(e);
+    const reach = EDGE_HIT_RADIUS / transform.k;
+    let best = null;
+    let distance = Infinity;
+    for (const line of stacked.edges) {
+      if (line.members.length !== 1) continue;
+      const d = distanceToSegment(x, y, line.x1, line.y1, line.x2, line.y2);
+      if (d < distance || (d === distance && best && line.key < best.key)) {
+        best = line;
+        distance = d;
+      }
+    }
+    return best && distance <= reach ? best : null;
+  }
+
   root.addEventListener('pointerleave', () => hoverLabel(null));
 
   root.addEventListener('click', (e) => {
@@ -544,12 +606,31 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       return;
     }
     const best = nearestStack(e);
-    if (!best) return;
+    if (!best) {
+      // The owner, 22 September: *"In the graph I should be able to select a
+      // connection the same way I select an event."* A node first and always —
+      // the events are what the picture is of — and the lines underneath them
+      // when no node is near enough to have been meant.
+      const line = nearestLine(e);
+      if (line) chooseEdge(line.members[0].id);
+      return;
+    }
     if (best.count === 1) {
       select(best.representative.id);
       return;
     }
     openStack(best);
+  });
+
+  // A line is a control, so it answers Enter and Space, exactly as a mark on
+  // the map has since M63. It is a `<line>` and not a `<button>`, so neither
+  // key is free.
+  root.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const el = e.target.closest?.('[data-edge]');
+    if (!el) return;
+    e.preventDefault();
+    chooseEdge(el.getAttribute('data-edge'));
   });
 
   // A stack of nodes drawn as one, clicked. The members go to the panel
@@ -584,6 +665,31 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // chain.js now, so the map and the timeline answer the same click the same
   // way (health review B, finding 10).
   const select = (id) => walkOrSelect(state, atlas, id);
+
+  // Which link the keyboard is on, and putting it back after a redraw. By the
+  // link's own id and not by the element: the elements are all replaced.
+  const focusedEdgeId = () => {
+    const active = root.ownerDocument?.activeElement;
+    return active && root.contains(active) && active.hasAttribute?.('data-edge')
+      ? active.getAttribute('data-edge') : null;
+  };
+  const restoreEdgeFocus = (id) => {
+    if (id === null) return;
+    for (const el of edgesGroup.querySelectorAll('[data-edge]')) {
+      if (el.getAttribute('data-edge') === id) {
+        el.focus?.({ preventScroll: true });
+        return;
+      }
+    }
+  };
+
+  // And choosing a line, which is the other thing this view can be asked. It
+  // sets one field and clears none: a link is read, not walked, so the window,
+  // the chain, the lens and the selection are all exactly where the reader
+  // left them and the picture does not narrow (M80).
+  const chooseEdge = (id) => {
+    if (id) state.set({ edge: id });
+  };
 
   // There was a note here, a paragraph wide across the top of the picture,
   // saying that the map is looking at part of the world and the graph has no
@@ -751,6 +857,12 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // historians argue about is a bundle the reader must not read as settled
     // (cluster.js, and confidence.js for all three levels of it).
     const stackByKey = new Map(stacked.nodes.map((stack) => [stack.key, stack]));
+    // Every line is drawn again on every render, so a line activated from the
+    // keyboard would take the focus back to the document with it. What was
+    // focused is remembered by the link it names and given back once the new
+    // lines exist — the map's marks have done exactly this since M63
+    // (map/layers/events.js, `focusedKey`).
+    const focusedEdge = focusedEdgeId();
     edgesGroup.replaceChildren();
     for (const line of stacked.edges) {
       // A line is drawn when either of its ends is: an arrow into the view
@@ -769,6 +881,11 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // faint: nothing has been asked, so nothing is the answer.
       const ofLens = lensFocus === null
         || line.members.every((m) => lensFocus.has(m.from) && lensFocus.has(m.to));
+      // The one the reader has chosen, drawn as chosen (M80): madder over the
+      // picture, which is what the walked chain is drawn in and what the
+      // selected mark is filled with — the accent means *this is the one you
+      // are holding*, and a link being read is one of those.
+      const chosen = s.edge !== null && line.members.some((m) => m.id === s.edge);
       const marks = classes(
         `type-${line.type}`,
         bundleClass(line.members),
@@ -777,6 +894,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         any(consequenceIds) ? 'consequence' : '',
         any(convergingEdges) ? 'converging' : '',
         line.count > 1 ? 'merged' : '',
+        chosen ? 'chosen' : '',
       );
       const cls = classes('edge', marks);
       // The line stops short of the mark it points at, so the arrowhead is
@@ -791,13 +909,25 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // stroke-width, so the stylesheet keeps deciding how a line is drawn
       // and this only says how many it carries.
       const weight = line.count > 1 ? { style: `--merged-width: ${mergedWidth(line.count).toFixed(2)}` } : {};
-      const title = line.count > 1
-        ? svgTitle(`${line.count} links, mostly ${line.type}${line.disputed ? ', one of them disputed' : ''}`)
-        : null;
+      // A line that stands for one link is a control: it carries the link's
+      // id, takes the focus and answers Enter (M80, and M63 for the marks it
+      // follows). A line carrying several is not — there is no way to say
+      // which of them the reader means, so it keeps the title it had and
+      // parting the stacks is what makes it one link.
+      const one = line.members.length === 1 ? line.members[0] : null;
+      const name = one ? edgeName(atlas, one) : null;
+      const title = one
+        ? svgTitle(name)
+        : svgTitle(`${line.count} links, mostly ${line.type}${line.disputed ? ', one of them disputed' : ''}`);
+      const control = one
+        ? { 'data-edge': one.id, tabindex: '0', role: 'button', 'aria-label': name }
+        : {};
       edgesGroup.appendChild(svg(
         'line',
-        { x1: line.x1, y1: line.y1, x2: tipX, y2: tipY, class: cls, ...weight },
-        title ? [title] : [],
+        {
+          x1: line.x1, y1: line.y1, x2: tipX, y2: tipY, class: cls, ...weight, ...control,
+        },
+        [title],
       ));
       // The arrowhead is drawn rather than a marker, so it carries the same
       // classes as its line and fades, dashes and reddens with it.
@@ -812,6 +942,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         class: classes('edge-head', marks),
       }));
     }
+    restoreEdgeFocus(focusedEdge);
 
     nodesGroup.replaceChildren();
     let selectedMark = null;
@@ -1021,14 +1152,31 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const working = workingOf(s);
     const key = `${arrangedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
     if (key === framedFor) return;
+    // Whether this is the first camera this arrangement has been given, which
+    // is the whole of what the chosen link may decide (M80). A reader who
+    // *arrives* on `?edge=` has not seen the picture yet and the two ends are
+    // what they came for; a reader who **clicks** a line is looking straight
+    // at it, and a camera that jumped on the click would move the picture out
+    // from under the gesture that chose it. So the ends frame the drawing they
+    // open and never one already on screen — which is also why the link is not
+    // in the key above: a click changes nothing this function decides.
+    const arriving = framedFor === null || !framedFor.startsWith(`${arrangedFor}|`);
     framedFor = key;
+    // And what that frame is: the link's own two ends and nothing else. The
+    // card names them, and a camera that left one of them off the screen would
+    // be the picture disagreeing with the card. It is the only set offered,
+    // because the widest that fits wins and the whole picture fits at the
+    // floor — the rule that makes a lens frame the lens.
+    const ends = arriving && s.edge ? atlas.edges.get(s.edge) : null;
     // Widest first, and at rest there is only the widest: everything drawn.
     // `MIN_ZOOM` is the floor, so a picture too large for the pane is drawn as
     // far out as the graph goes and the reader pans for the rest — which is
     // what the owner's sentence asks for.
-    const wanted = working.lens
-      ? [working.shown, working.lensFocus].filter(Boolean)
-      : [working.shown];
+    const wanted = ends
+      ? [new Set([ends.from, ends.to])]
+      : working.lens
+        ? [working.shown, working.lensFocus].filter(Boolean)
+        : [working.shown];
     const at = frameFor(laid.nodes, wanted, seen, {
       min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
     });

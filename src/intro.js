@@ -22,6 +22,7 @@
 
 import { esc } from './util/esc.js';
 import { formatInterval } from './util/dates.js';
+import { hasOpening } from './state.js';
 
 // Per reader, per browser, like the open section and the pane sizes: it says
 // nothing about what the atlas is showing, so it stays out of the URL.
@@ -55,9 +56,14 @@ export function markSeen(storage) {
 // Nothing open and nothing asked for: a first visit to the atlas itself,
 // rather than a link to a record inside it. A window, a lens or a view in the
 // URL is a picture somebody chose, and covering it would be taking it away.
+// Whether a record is open is asked of `state.js` and no longer written out
+// here (M80). It was a list of five of the openings, and the two it did not
+// name were covered by this card on arrival: an office, and — the moment a
+// link became a record that can be opened — `?edge=`, whose whole purpose is
+// to be a link to an argument inside the atlas. A list of the openings kept
+// beside the openings is a list that goes stale the next time one is added.
 export function opensOnNothing(state) {
-  return !state.selected && !state.source && !state.place && !state.actor
-    && !state.narrative && !state.focus && !state.chain?.length
+  return !hasOpening(state) && !state.focus && !state.chain?.length
     && state.from === null && state.to === null && !state.bbox;
 }
 

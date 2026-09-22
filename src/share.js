@@ -61,10 +61,12 @@ export function parseEdit(text) {
   return pattern.test(id) ? { kind, id } : null;
 }
 
-// Which state field opens a record of each kind. An edge has no card of its
-// own — it is walked, not opened — so it has no address here.
+// Which state field opens a record of each kind. An edge had none until M80 —
+// it was walked, not opened — and has one now: a link is a small
+// historiographical argument, and a correction issue about one has to be able
+// to say where it was read.
 export const OPENING_OF = Object.freeze({
-  event: 'selected', source: 'source', place: 'place', actor: 'actor', office: 'office', narrative: 'narrative',
+  event: 'selected', edge: 'edge', source: 'source', place: 'place', actor: 'actor', office: 'office', narrative: 'narrative',
 });
 
 // The record's own address on the atlas: the page, and the one parameter that

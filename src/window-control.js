@@ -42,6 +42,32 @@ import { bandEvents } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
 import { readCount, readCountText } from './standing.js';
 
+// The one sentence the count is (M80), pure so that what it says can be held
+// to without a browser.
+//
+// It reads two different ways because it counts two different things. **At
+// rest** the picture is the main events — those that are part of nothing else,
+// which is what a view draws when nothing has been asked (M65) — and the whole
+// is the active corpus, so "252 main events of 581 in view" says both what is
+// drawn and why it is fewer than the reader expected. **Under a lens** the
+// picture is whatever the lens kept, which is not a set of main events and
+// must not be called one: "17 of 581 events in view".
+//
+// Why it matters that it says which. The line read "252 of 252 events in view"
+// and the owner read it as the atlas having 252 events. It had 581, and the
+// number was right twice over — right about the picture and right about the
+// picture again — which is the one way a true sentence can still mislead.
+// The noun agrees with the number it belongs to, and the two readings put it
+// in different places: "1 main event of 581" is a sentence about the one, and
+// "1 of 581 events" is a sentence about the 581.
+const plural = (n) => (n === 1 ? 'event' : 'events');
+
+export function viewCountText({ shown, whole, resting }) {
+  return resting
+    ? `${shown} main ${plural(shown)} of ${whole} in view`
+    : `${shown} of ${whole} ${plural(whole)} in view`;
+}
+
 export function createWindowControl(group, { atlas, state }) {
   if (!group) return { render: () => {} };
 
@@ -82,13 +108,32 @@ export function createWindowControl(group, { atlas, state }) {
     // (window-band.js): a count said against one picture of the corpus and a
     // band drawn over another would be two answers to one question.
     const inLens = bandEvents(atlas, s);
+    // **What the count is *of*** (M80). The owner, 22 September: *"I still
+    // only see 252 events"*, over a masthead reading "252 of 252 events in
+    // view" — where 252 was the resting picture of 581 and the line said the
+    // same number twice and never once said which of the two it was. The whole
+    // is the active corpus now, which is the number the reader is comparing
+    // against in their head; the shown is the picture, as it always was.
+    const whole = atlas.activeEvents.length;
+    // At rest the picture is the **main events** — what is part of nothing
+    // else, drawn when the reader opens what it is inside (M65) — and under a
+    // lens it is whatever the lens kept. Two different things, so the sentence
+    // says which (`viewCountText`). `lensFocus` is `emphasis.js`'s own answer
+    // to "is a lens on", so the line and the picture cannot disagree.
+    const resting = working.lensFocus === null;
     // Only while the map is looking at part of the world: with no box every
     // event of the picture is in view, and the intersection would be a pass
     // over the places for an answer that is already in hand.
-    if (!s.bbox) return { events: inLens, shown: inLens.length, whole: inLens.length };
+    if (!s.bbox) {
+      return {
+        events: inLens, shown: inLens.length, whole, resting,
+      };
+    }
     const held = heldSet(working, { reachable: true });
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
-    return { events: shown, shown: shown.length, whole: inLens.length };
+    return {
+      events: shown, shown: shown.length, whole, resting,
+    };
   };
 
   function render(s) {
@@ -99,9 +144,7 @@ export function createWindowControl(group, { atlas, state }) {
     if (!resolveWindow(s, atlas.extent, atlas.opens)) return;
     view.hidden = !s.bbox;
     const n = countInView(s);
-    if (s.bbox) {
-      count.textContent = `${n.shown} of ${n.whole} ${n.whole === 1 ? 'event' : 'events'} in view`;
-    }
+    if (s.bbox) count.textContent = viewCountText(n);
     // **How much of what is on screen a person has actually read** (M70).
     // Beside the count above and counted over the very same events, from the
     // `reviewed` column the index carries — which is `standing.js`'s own

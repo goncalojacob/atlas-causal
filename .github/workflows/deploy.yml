@@ -52,8 +52,12 @@ jobs:
         run: |
           set -u
           status=0
-          node --test $(node tools/suites.mjs --pure) || status=1
-          node --test --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
+          # --test-timeout as validate.yml has it (deviation 445): without it a
+          # hung browser test sat in this step for forty minutes on 22
+          # September with the site unpublished behind it, where the check
+          # would have gone red in two.
+          node --test --test-timeout=120000 $(node tools/suites.mjs --pure) || status=1
+          node --test --test-timeout=120000 --test-concurrency=1 $(node tools/suites.mjs --browser) || status=1
           exit $status
       # The palette before the index: the manifest names the palette file, so
       # building them the other way round would write a manifest for a file

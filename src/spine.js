@@ -318,7 +318,13 @@ const CORE_BY_KIND = {
     col('id', 'id', { absent: OMIT }),
   ],
   actor: [...ENVELOPE, years('when', 'when'), col('actorType', 'vocab', { vocab: 'actorType', absent: OMIT })],
-  place: [...ENVELOPE, pick('where', ['lon', 'lat']), col('region', 'vocab', { vocab: 'region' })],
+  // `precision` is in the core with the coordinates and not in the shard with
+  // the label (M80), for the reason `category` is above: how a mark is *drawn*
+  // is decided on the frame the map first paints, and an attribute column
+  // arrives with its century. A mark that was a city's and became a region's a
+  // moment later would be the map correcting itself in front of the reader.
+  // One short word per place, on 47 of them.
+  place: [...ENVELOPE, pick('where', ['lon', 'lat', 'precision']), col('region', 'vocab', { vocab: 'region' })],
   relation: [...ENVELOPE, years('when', 'when'), col('from', 'id', { absent: OMIT }), col('to', 'id', { absent: OMIT })],
   office: [...ENVELOPE, years('when', 'when'), col('of', 'id', { absent: OMIT })],
   tenure: [...ENVELOPE, years('when', 'when'), col('person', 'id', { absent: OMIT }), col('office', 'id', { absent: OMIT })],
@@ -366,7 +372,9 @@ const ATTRIBUTES_BY_KIND = {
     col('revised', 'raw'),
     col('names', 'list', { absent: LIST }),
     col('wikidata', 'raw', { absent: OMIT }),
-    pick('where', ['precision', 'label']),
+    // The label alone: `precision` moved into the core in M80, where the mark
+    // that reads it is drawn.
+    pick('where', ['label']),
     col('citesCount', 'raw', { absent: OMIT }),
     col('wikipedia', 'raw', { absent: OMIT }),
   ],
