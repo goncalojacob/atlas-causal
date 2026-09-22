@@ -968,7 +968,29 @@
     "Q101081",
     "Q34374",
     "Q1235572",
-    "Q7918899"
+    "Q7918899",
+    "Q1968528",
+    "Q2992361",
+    "Q4345906",
+    "Q2294274",
+    "Q3269922",
+    "Q3284956",
+    "Q1979826",
+    "Q4872265",
+    "Q537052",
+    "Q4872339",
+    "Q2641750",
+    "Q6921638",
+    "Q2984901",
+    "Q3610236",
+    "Q4930640",
+    "Q7535905",
+    "Q4871802",
+    "Q4872617",
+    "Q4871801",
+    "Q4582489",
+    "Q4872743",
+    "Q7097204"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1132,7 +1154,29 @@
     "Q5858325": "americas",
     "Q273348": "europe",
     "Q636365": "europe",
-    "Q2524228": "europe"
+    "Q2524228": "europe",
+    "Q1968528": "americas",
+    "Q2992361": "americas",
+    "Q4345906": "americas",
+    "Q2294274": "americas",
+    "Q3269922": "americas",
+    "Q3284956": "americas",
+    "Q1979826": "americas",
+    "Q4872265": "americas",
+    "Q537052": "americas",
+    "Q4872339": "americas",
+    "Q2641750": "americas",
+    "Q6921638": "americas",
+    "Q2984901": "americas",
+    "Q3610236": "americas",
+    "Q4930640": "americas",
+    "Q7535905": "americas",
+    "Q4871802": "americas",
+    "Q4872617": "americas",
+    "Q4871801": "americas",
+    "Q4582489": "americas",
+    "Q4872743": "americas",
+    "Q7097204": "americas"
   },
   "queries": [
     {
@@ -4219,6 +4263,48 @@
       "kind": "place",
       "label": "region",
       "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
+    },
+    "Q645883": {
+      "kind": "event",
+      "category": "war",
+      "label": "military operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q1546073": {
+      "kind": "event",
+      "category": "war",
+      "label": "covert operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q476807": {
+      "kind": "event",
+      "category": "war",
+      "label": "military raid",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q650711": {
+      "kind": "event",
+      "category": "war",
+      "label": "combat",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q997267": {
+      "kind": "event",
+      "category": "war",
+      "label": "skirmish",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q1303061": {
+      "kind": "event",
+      "category": "war",
+      "label": "friendly fire",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q744913": {
+      "kind": "event",
+      "category": "disaster",
+      "label": "aviation accident",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
     }
   },
   "reconcile": true
