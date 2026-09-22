@@ -95,9 +95,13 @@ test('the link\'s card carries its type, both ends, the confidence and what it m
   const html = edgeCardHtml(context(atlas), { edge: anEdge, state: state() });
   const from = atlas.events.get(anEdge.from);
   const to = atlas.events.get(anEdge.to);
-  // The type in the card's own words (M28's vocabulary), never the raw id
-  // where one has a word of its own.
-  assert.match(html, /<h2>(caused|enabled|reacted to|precondition of|inspired)<\/h2>/);
+  // **The heading is the link and not its type** (M82, A11): this event, the
+  // type between them, that event. The type is still in the card's own words
+  // (M28's vocabulary) and never the raw id where one has a word of its own.
+  assert.match(html, /<h2 class="link-ends">/);
+  assert.match(html, /<span class="arrow">(caused|enabled|reacted to|precondition of|inspired) →<\/span>/);
+  assert.doesNotMatch(html, /<h2>(caused|enabled|reacted to|precondition of|inspired)<\/h2>/,
+    'the type alone is not a heading for a record that is between two things');
   // Both ends, each the plain event control every other list uses.
   assert.match(html, new RegExp(`data-action="select" data-id="${esc(from.id)}"`));
   assert.match(html, new RegExp(`data-action="select" data-id="${esc(to.id)}"`));

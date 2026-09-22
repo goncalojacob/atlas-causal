@@ -351,8 +351,15 @@ input, select, textarea { accent-color: var(--cobalt); }
    (M70). The soft ink the interface uses for what it says about itself, and
    no colour of its own — a picture that coloured the unread would be a filter
    in everything but name, and nothing about standing changes what is drawn. */
-.bar .window-standing { display: flex; align-items: baseline; margin: 0; }
+.bar .window-standing { display: flex; align-items: baseline; gap: var(--space-2); margin: 0; }
 .bar .window-read { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
+/* And beside it, how many of the events in the window the map has no point for
+   (M82, A5). It was a full sentence in a box on the map, on every visit; it is
+   a fact about the window, so it is said where the window's other fact is, in
+   the same soft ink and with no colour of its own — the events it counts are
+   drawn exactly as the rest are, on the two pictures that can draw them. */
+.bar .window-unplaced { color: var(--ink-soft); font-size: var(--text-xs); font-family: var(--font-ui); }
+.bar .window-unplaced:empty { display: none; }
 
 /* The lens chips in the header. The grouping picker stood here until M77,
    with a panel of lanes to tick and reorder; it and its rules are gone. */
@@ -697,6 +704,31 @@ body:not(.phone) .layout.panel-empty.composing {
     position: static; border: 0; padding: 0; background: none;
   }
 
+  /* **The picture gets the screen** (M82, A9). The reviewer, on a 390 px
+     phone: *"title, tagline, search, three view buttons, Options, four links
+     and '?' take the top 40 %; the map is a 180 px strip."*
+
+     The four ways off this page go behind the button that already holds the
+     rest of the masthead on a phone. They are not controls of the picture and
+     nobody reaches for `about` before they have looked at anything; that row
+     was 55 px of the 260 the masthead took.
+
+     **The sentence under the title stays.** It is the other half of this
+     milestone (A3): the one line that says what the atlas is, on the first
+     screen, before anything is clicked — and a phone is the first screen a
+     funder is likeliest to see it on. Hiding it here would be fixing one
+     finding by undoing another.
+
+     The "?" stays out of the drawer too, because it is the way to everything
+     the card says, and a reader who cannot find the explanation has nothing
+     to press Options *for*.
+
+     Nothing moves in the DOM, so every module still finds the control it
+     wired — the same bargain the drawer has made since M31. */
+  .masthead-links { flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+  .masthead-links > :not(.intro-button) { display: none; }
+  .masthead-tools.options-open ~ .masthead-links > :not([hidden]) { display: inline-block; }
+
   /* Forty pixels, everywhere a thumb has to land on a control of its own.
      Not on a link inside a sentence — a citation's title, a crumb of the
      breadcrumb — which is set in the line it belongs to and would break the
@@ -710,6 +742,19 @@ body:not(.phone) .layout.panel-empty.composing {
   /* The summary is the collapsed group's one target, so it is a target: a
      20 px line with thirteen rows behind it is a thumb's worth of guesswork. */
   .bar .layers summary, .bar .categories-control summary { display: flex; align-items: center; }
+  /* The graph's key, folded to one button (M82, A1). It covered half the
+     picture at 390 px — `m77-graph-phone.png` — which is a legend hiding the
+     thing it is a legend to. Pressing it is a gesture, so the box takes the
+     pointer back; on a desktop it has none and neither does the button. */
+  .graph-key { pointer-events: auto; max-width: calc(100% - var(--space-3) * 2); }
+  .graph-key .graph-key-toggle {
+    display: flex; align-items: center; min-height: var(--touch);
+    border: 0; padding: 0; background: none; cursor: pointer;
+    font-family: var(--font-ui); font-size: var(--label); font-weight: 600;
+    text-transform: uppercase; letter-spacing: var(--tracking-label); color: var(--ink-soft);
+  }
+  .graph-key:not(.open) .graph-key-body { display: none; }
+
   .bar .views button { padding-inline: var(--space-4); }
   .panel .chips .chip { display: inline-flex; align-items: center; }
   .panel .section-toggle { padding-block: var(--space-3); }
@@ -1195,6 +1240,33 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 }
 .graph-key .edge-key { margin: 0; gap: 0.15rem var(--space-2); }
 .graph-key svg.key-line { width: 46px; }
+/* The key folds to one button on a phone and nowhere else (M82, A1): on a
+   desktop there is room for all of it and nothing to press. The phone's own
+   rule is in the one media query above, which is earlier in the file, so this
+   is written on the element and not on the box — a class less, so the phone's
+   `.graph-key .graph-key-toggle` outweighs it wherever it applies and there is
+   no second media query to keep in step with the first. */
+button.graph-key-toggle { display: none; }
+/* The same box on the map and the timeline (M82, A7). Every row is drawn with
+   the classes that picture uses — `.map .mark`, `.timeline .bar` — so the key
+   is the picture's own ink and not a drawing of it; what is written here is
+   only how big the little drawing is. */
+.view-key svg.key-shape { width: 24px; height: 12px; overflow: visible; }
+.view-key .edge-key dt { display: flex; align-items: center; }
+/* The ink of a row, which is the ink of the thing it stands for. The
+   declarations below are the same declarations and the same tokens as the
+   map's and the timeline's above; what they cannot share is the selector,
+   because `.map .mark` is how a test asks whether the map has drawn a mark
+   yet. A browser test holds a row and a real mark to the same computed stroke
+   and fill, so the two cannot drift apart unnoticed. */
+.view-key .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; }
+.view-key .mark.coarse { stroke: var(--cobalt-soft); stroke-dasharray: 3 2; fill-opacity: 0.35; }
+.view-key .mark.cluster { fill: var(--paper); stroke: var(--cobalt); stroke-width: 2.5; }
+.view-key .cluster-count { fill: var(--cobalt); font-family: var(--font-ui); font-weight: 600; }
+.view-key .bar { fill: var(--cobalt-faint); stroke: var(--cobalt); stroke-width: 1; }
+.view-key .bar.instant { fill: var(--cobalt-soft); }
+.view-key .bar.ongoing { stroke-dasharray: 3 3; }
+.view-key .ring { fill: none; stroke: var(--cobalt); }
 
 /* The picture as a file. Bottom right in both views, opposite the graph's
    key, and quiet: it is a way out, not a thing to do. */
@@ -1420,13 +1492,18 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel .edge-card-head h2 {
   font-size: var(--text-xl); margin-top: 0; padding-top: 0; border-top: 0; line-height: var(--leading-tight);
 }
-/* The link's card (M80). Its heading is the type — "enabled" — because that is
-   what kind of claim the record makes, and the two events it runs between are
-   the line under it, in the order the record writes them. No new size and no
-   new colour: the ends are the same event control every list uses and the
-   confidence is the same badge. */
+/* The link's card (M80, and its heading since M82, A11). The heading *is* the
+   link — this event, the type, that event, in the order the record writes them
+   — because a card headed "enabled" says nothing about which two things it is
+   between, which is the one thing a link's card is about. No new size and no
+   new colour: the ends are the same event control every list uses, the type is
+   the interface's own soft ink, and the confidence is the same badge, on the
+   line below. */
 .panel .link-ends { margin: var(--space-1) 0 var(--space-2); display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
-.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); }
+.panel .link-ends .arrow { color: var(--ink-soft); font-size: var(--text-sm); font-family: var(--font-ui); }
+/* A heading made of the two ends is set at the heading's size; the buttons
+   inside it are the plain event control and take it from their parent. */
+.panel h2.link-ends .link { font-size: inherit; line-height: inherit; }
 .panel .confidence-hint { color: var(--ink-soft); }
 .panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
 .panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }

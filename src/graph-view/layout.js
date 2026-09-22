@@ -145,9 +145,24 @@ export function timeSpan(events) {
 // margin `domainOf` adds is the margin: four per cent and a year, which on a
 // six-year war is the difference between the parts taking seven tenths of the
 // drawing and taking all of it with two of them on the edge.
+//
+// **And at rest it is the same rule** (M82, A1). Until this milestone it
+// answered `null` with no lens on and the caller fell back to the corpus's own
+// extent and the corpus's own century counts — which is an axis built from 582
+// events to lay out the 245 the picture holds. The reviewer's sentence is that
+// the resting graph is a tangle stacked at 1900–2000; part of that is an axis
+// describing a set that is not what is drawn. The rule the lens has had since
+// M81 is that the axis is the extent of what the picture is *of*, and there is
+// nothing about a lens in it: at rest the picture is the resting set, so the
+// axis is the resting set's.
+//
+// Measured on the corpus of 22 September, the difference is small — the 20th
+// century holds most of the main events as it holds most of the corpus, so its
+// share of the width moves by about a point. It is the honest axis either way:
+// what it can no longer do is describe a century by the events the reader is
+// not being shown.
 export function timeAxis(events, lens) {
-  if (!lens) return null;
-  const own = events.filter((event) => lens.has(event.id));
+  const own = lens ? events.filter((event) => lens.has(event.id)) : events;
   const span = own.length ? timeSpan(own) : null;
   if (span && span.max > span.min) return { extent: span, events: own };
   const all = timeSpan(events);

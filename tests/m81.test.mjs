@@ -65,6 +65,13 @@ function laidOut(state) {
 
 const childrenOfWar = () => atlas.activeEvents.filter((e) => parentsOf(e).includes(WAR));
 
+// The events the graph lays out with nothing asked — the same call `laidOut`
+// makes, so the axis asserted against it is the axis that was built.
+function restingEvents() {
+  const state = at({});
+  return arrangementOf(atlas, state, null, workingSet(atlas, state).shown).events;
+}
+
 // How much of the drawn width a set of nodes takes, as a fraction of the axis
 // the layout gave itself. Read off the layout's own scale and never off a
 // number written here: the gutters, the padding and the domain are all the
@@ -106,28 +113,34 @@ test('with the war opened its children spread across the width, in the order the
   }
 });
 
-test('at rest the same nodes sit within the corpus’s own axis', () => {
+test('at rest the same nodes sit within the axis of what is drawn', () => {
   const resting = laidOut(at({}));
   const drawn = new Map(resting.nodes.map((n) => [n.id, n]));
   // The war itself is a main event and is in the resting picture; its parts are
   // not, which is M65's rule and not this milestone's.
   assert.ok(drawn.has(WAR), 'the war is drawn at rest');
-  // The axis is the corpus's, so six years are six years of it: the war and
-  // whatever else falls in its own decade are a sliver of the width, which is
-  // exactly the picture the owner was complaining about and is the right one
-  // when nothing has been asked.
+  // Six years are still six years of the axis: the war and whatever else falls
+  // in its own decade are a sliver of the width, which is exactly the picture
+  // the owner was complaining about and is the right one when nothing has been
+  // asked.
   const decade = new Set(resting.nodes
     .filter((n) => Math.abs(n.year - drawn.get(WAR).year) <= 5).map((n) => n.id));
   assert.ok(
     spreadOf(resting, decade) < 0.5,
     'a decade of the corpus is less than half the resting width',
   );
+  // **And the domain is the resting picture's own since M82** (A1). It was the
+  // corpus's from H4b until then, which is an axis built from 582 events to lay
+  // out the 245 the picture holds; M81's own rule — the axis is the extent of
+  // what the picture is *of* — has nothing about a lens in it, and at rest the
+  // picture is the resting set.
+  const events = restingEvents();
   assert.deepEqual(
     resting.scale.domain.map((d) => Math.round(d * 1000)),
     layoutGraph({
-      events: [], edges: [], lanes: [], extent: atlas.extent, counts: centuryCounts(atlas.activeEvents),
+      events: [], edges: [], lanes: [], extent: timeSpan(events), counts: centuryCounts(events),
     }).scale.domain.map((d) => Math.round(d * 1000)),
-    'and the resting domain is the corpus’s own, as it was before M81',
+    'the resting domain is the drawn set’s own, as a lens’s is its own',
   );
 });
 

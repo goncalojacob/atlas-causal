@@ -816,7 +816,9 @@ test('a walk id that names nothing in this session leaves the selection alone', 
 // is meant to open on the picture the person who sent it was looking at.
 test('the graph’s filters travel in the URL, and the default writes nothing', () => {
   assert.equal(formatState({ ...defaultState() }), '', 'the default is an empty link');
-  assert.equal(formatState({ ...defaultState(), degree: 0 }), '?degree=0');
+  // Zero is the default since M82 (A1) — rest means rest — so a floor the
+  // reader has raised is what writes a parameter.
+  assert.equal(formatState({ ...defaultState(), degree: 2 }), '?degree=2');
   assert.equal(formatState({ ...defaultState(), degree: 3, tops: true }), '?degree=3&tops=1');
   assert.equal(parseState('?degree=0').degree, 0);
   assert.equal(parseState('?degree=3').degree, 3);

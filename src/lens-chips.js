@@ -12,7 +12,7 @@
 
 import { html } from './util/dom.js';
 import { esc } from './util/esc.js';
-import { lensLabels, withoutFocus, FOCUS_NONE } from './lens.js';
+import { lensLabels, withoutFocus, FOCUS_NONE, BACK_LABEL } from './lens.js';
 
 const LENS_KIND = Object.freeze({
   actor: 'actor', place: 'place', source: 'source', event: 'event', region: 'region', narrative: 'narrative',
@@ -37,13 +37,13 @@ export function createLensChips(container, { atlas, state }) {
         <span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
         <span class="lens-name">${esc(name)}</span>
         <button type="button" class="lens-drop" data-action="unfocus" data-focus="${esc(lens.focus)}"
-          aria-label="${esc(`Stop focusing on ${name}`)}" title="${esc(`Stop focusing on ${name}`)}">×</button>
+          aria-label="${esc(`Remove ${name}`)}" title="${esc(`Remove ${name}`)}">×</button>
       </span>`;
       }).join('')}
       ${foci.length > 1 ? `<button type="button" class="link small lens-all" data-action="focus-all"
         aria-pressed="${s.focusAll ? 'true' : 'false'}"
         title="Events that every focus keeps, rather than events any of them keeps">all of these</button>` : ''}
-      <button type="button" class="link small" data-action="clear-focus">show everything</button>`;
+      <button type="button" class="link small" data-action="clear-focus">${esc(BACK_LABEL)}</button>`;
   }
 
   // The chips' own buttons. "Show everything" writes `none` rather than

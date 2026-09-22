@@ -11,6 +11,7 @@ import {
   periodOf, centuryOf, centuriesOf, centuryLabel, formatPeriod, groupByCentury, narrativesHtml,
 } from '../src/narratives/list.js';
 import { buildIndex } from '../tools/build-index.mjs';
+import { setReview, ATLAS_BYLINE } from '../src/demo.js';
 import { expandSpine } from '../src/data.js';
 import { FIXTURE_DATA, ROOT, corpusOf } from './helpers.mjs';
 
@@ -89,7 +90,13 @@ test('the fixture narrative crosses two centuries and is listed under both', asy
   assert.match(markup, /The 13th century/);
   assert.match(markup, /1200–1280/);
   assert.match(markup, /4 steps/);
-  assert.match(markup, /Fixture Author/);
+  // The published page signs an account as the atlas's own (M82, A2); the
+  // record's own authors are what `?review=1` shows, and the same markup
+  // carries them.
+  assert.match(markup, new RegExp(ATLAS_BYLINE));
+  setReview(true);
+  assert.match(narrativesHtml(topology.narratives, records), /Fixture Author/);
+  setReview(null);
   // The card opens the account at its first step, which is what the page is
   // for; step 0 is step one, as the URL has counted since M12.
   assert.match(markup, /index\.html\?narrative=fixture-narrative-one&amp;step=0/);
@@ -150,7 +157,14 @@ test('every narrative in data/ is listed, with its narrator and its years', asyn
   assert.match(markup, /1530–2023/);
   assert.match(markup, /12 steps/);
   assert.match(markup, /28 steps/);
-  assert.match(markup, /Claude \(assistant draft, unreviewed\)/, 'the narrator, unhidden');
+  assert.match(markup, new RegExp(ATLAS_BYLINE), 'the narrator, as the atlas publishes it');
+  setReview(true);
+  assert.match(
+    narrativesHtml(topology.narratives, records),
+    /Claude \(assistant draft, unreviewed\)/,
+    'and the record\u2019s own signature, unhidden, for a maintainer',
+  );
+  setReview(null);
 });
 
 test('order, escaping and the empty case', () => {
@@ -178,6 +192,10 @@ test('order, escaping and the empty case', () => {
 
   assert.match(narrativesHtml([], records), /No narrative has been written yet/);
   assert.match(narrativesHtml([gone], records), /No narrative has been written yet/);
-  // An unsigned account says so rather than showing an empty line.
+  // An unsigned account says so rather than showing an empty line — to a
+  // maintainer. The published page carries the atlas's own byline whatever the
+  // record says (M82, A2).
+  setReview(true);
   assert.match(narrativesHtml([{ ...two, authors: [] }], records), /unsigned/);
+  setReview(null);
 });

@@ -40,7 +40,18 @@
     // first visit with nothing open (src/intro.js), and a browser started for
     // one screenshot has never been anywhere. Written on this page, which is
     // the frame's own origin, so the frame reads it back.
-    try { localStorage.setItem('atlas-causal.intro', 'seen'); } catch { /* storage off */ }
+    //
+    // `intro=1` is the other half of that, for M82: the card is what a first
+    // visit sees and what the "?" brings back, and it is rewritten in the
+    // reader's words (A3), so there has to be a way to photograph it. Not
+    // passed on to the atlas — whether the card has been seen is per reader
+    // and per browser, and it has never been in the URL (src/intro.js).
+    const intro = params.get('intro') === '1';
+    params.delete('intro');
+    try {
+      if (intro) localStorage.removeItem('atlas-causal.intro');
+      else localStorage.setItem('atlas-causal.intro', 'seen');
+    } catch { /* storage off */ }
     // M64 needed a `band` parameter here, because whether the band over the map
     // was open was a preference and a shot of it could not be asked for by link
     // alone. M75 removed the button — the band is on the map on every visit —

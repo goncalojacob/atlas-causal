@@ -22,6 +22,15 @@
 // confidence and both titles are on screen at once. Everything under it is
 // the record's own text and arrives with the file, exactly as an event's
 // summary and citations do.
+//
+// **And the head is the link, not the link's type** (M82, A11). It was a `<h2>`
+// reading "enabled", with the two ends on the line under it — so the card of
+// the one record in this atlas that is *between* two things was titled with the
+// one word that says nothing about which two. The reviewer, on
+// `m80-edge-chosen.png`: *"the card is headed 'enabled'"*. The heading is now
+// what the link is — this event, the type, that event — which is also how
+// `openingLabel` has named an edge in the breadcrumb since M80, and the
+// confidence stands on the line below where the type used to repeat itself.
 
 import { esc } from '../util/esc.js';
 import { formatInterval } from '../util/dates.js';
@@ -88,10 +97,9 @@ export function edgeCardHtml(ctx, { edge, state, remembered = null }) {
     ${notices.join('')}
     <header class="edge-card-head">
       ${ctx.historyHtml()}
-      <h2>${esc(EDGE_TYPE_LABEL[edge.type] ?? edge.type)}</h2>
-      <p class="link-ends">${endHtml(ctx, edge.from, 'from')}
+      <h2 class="link-ends">${endHtml(ctx, edge.from, 'from')}
         <span class="arrow">${esc(EDGE_TYPE_LABEL[edge.type] ?? edge.type)} →</span>
-        ${endHtml(ctx, edge.to, 'to')}</p>
+        ${endHtml(ctx, edge.to, 'to')}</h2>
       <p class="meta">${badge(edge.confidence)}
         <span class="confidence-hint">${esc(CONFIDENCE_HINT[edge.confidence] ?? '')}</span></p>
       ${standingSlot()}

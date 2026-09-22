@@ -27,6 +27,7 @@
 
 import { isReviewed } from './origin.js';
 import { esc } from './util/esc.js';
+import { showingReview } from './demo.js';
 
 // Somebody has read this record and signed it. Everything else — `draft`, and
 // the 285 records that claim no standing at all — is unread, and says so in
@@ -80,6 +81,14 @@ export function standingText(record) {
 // and the face a citation's own `unchecked` mark uses, and standing is not
 // emphasis — a draft is drawn exactly as a signed record is.
 export function standingHtml(record) {
+  // **Off the demo, behind one flag** (M82, A2). The published site is a demo
+  // to show the platform, and a card that opens by saying nobody has checked
+  // this record is the first thing a funder reads on every record they open.
+  // Nothing about the record changes and nothing here is a filter, which is
+  // what this file has always been about: the answer is the same answer, the
+  // validator still counts it, and `review.html` — and `?review=1` here —
+  // still say it in these very words (demo.js).
+  if (!showingReview()) return '';
   const read = hasBeenRead(record);
   return `<p class="standing ${read ? 'read' : 'unread'}" data-slot="standing">${esc(standingText(record))}</p>`;
 }
@@ -89,6 +98,7 @@ export function standingHtml(record) {
 // was still loading would be making a claim it had not checked, which is the
 // one thing this marker exists not to do.
 export function standingSlot() {
+  if (!showingReview()) return '';
   return '<p class="standing" data-slot="standing"></p>';
 }
 
@@ -97,6 +107,7 @@ export function standingSlot() {
 // is given, so a card reaches for one module rather than for a member of an
 // object every card's tests would then have to know about.
 export function fillStanding(container, record) {
+  if (!showingReview()) return;
   const slot = container?.querySelector?.('[data-slot="standing"]');
   if (slot) slot.outerHTML = standingHtml(record);
 }

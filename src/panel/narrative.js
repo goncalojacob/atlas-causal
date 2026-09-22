@@ -12,15 +12,18 @@ import { formatInterval } from '../util/dates.js';
 import { narrativeSteps, readingNarrative, clampStep } from '../narrative.js';
 import { TYPE_LABEL, badge } from './event.js';
 import { RELATION_LABEL } from '../vocab.js';
+// One name for going back, wherever it is offered (M82, A8).
+import { BACK_LABEL } from '../lens.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
+// Who an account is published under (M82, A2). The names are the record's own
+// where the review apparatus is on and the atlas's own byline where it is not;
+// nothing under `data/` changes either way (demo.js).
+import { bylineOf } from '../demo.js';
 
-function authorsLine(narrative) {
-  const names = (narrative.authors ?? []).map((a) => a.name).filter(Boolean);
-  return names.length ? esc(names.join(', ')) : 'unsigned';
-}
+const authorsLine = (narrative) => esc(bylineOf(narrative));
 
 // The narratives a record is part of, wherever a record is shown. Empty when
 // none passes through it, so nothing is said about a record that no one has
@@ -130,7 +133,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
 
   container.innerHTML = `
     <p class="notice narrative">Reading a narrative: the three views hold the walk, with what it touches dimmed around it, and follow the step.
-      <button type="button" class="link small" data-action="leave-narrative">leave</button></p>
+      <button type="button" class="link small" data-action="leave-narrative">${esc(BACK_LABEL)}</button></p>
     <header class="narrative-head">
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
