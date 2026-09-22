@@ -706,6 +706,36 @@ export const SHOTS = Object.freeze([
   { name: 'm80-marks-by-precision', query: '?fixtures=1&from=1200&to=2025&bbox=-29.5,31,-16.5,45',
     width: 1440, height: 900, scale: 2,
     what: 'a country mark beside a city mark: wider and fainter, never a pin at a capital' },
+
+  // M81. The picture the owner sent on 22 September and what it looks like
+  // now: World War II opened on the graph, whose twenty-seven parts stood in
+  // one vertical column because the axis was the corpus's and six years are a
+  // hundredth of it. The lens has an axis of its own here, so they stand in
+  // date order across the pane.
+  //
+  // Through `frame.html` and not the atlas directly, because the second of
+  // each pair is the picture after **one turn of the wheel** and the zoom is
+  // not in the URL — the atlas keeps what the reader is looking at there and
+  // not how far they have wheeled into it (graph-view.js). `notches=1` is that
+  // one gesture, over the middle of the pane and with no double click before
+  // it: what is photographed is what the notch did to the camera the lens was
+  // already given, which is the whole of the milestone.
+  { name: 'm81-graph-war', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii',
+    width: 1440, height: 900,
+    what: 'World War II opened on the graph: its parts in date order across the width, on the lens\'s own time axis' },
+  { name: 'm81-graph-war-notch', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii&notches=1',
+    width: 1440, height: 900,
+    what: 'the same after one notch of the wheel: time wider by more than the picture is larger' },
+  { name: 'm81-graph-war-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=event:world-war-ii',
+    width: 500, height: 844,
+    what: 'the same lens in a 390 x 844 viewport, where the width is the scarce thing' },
+  { name: 'm81-graph-war-phone-notch', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=event:world-war-ii&notches=1',
+    width: 500, height: 844,
+    what: 'and one notch of the wheel on a phone' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
