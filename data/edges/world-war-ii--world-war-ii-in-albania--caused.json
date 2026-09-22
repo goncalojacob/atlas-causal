@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--world-war-ii-in-albania--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"World War II in Albania\", revision 1371940966, § lead"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "world-war-ii-in-albania",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article is about the war in one country and says how it arrived there: “In Albania, World War II began with its invasion by Italy in April 1939. Fascist Italy set up Albania as its protectorate or puppet state. The resistance was largely carried out by Communist groups against the Italian and then German occupation in Albania.” The occupation and the resistance to it are what the war was in Albania. **The record’s own interval is Wikidata’s, 1942–1944, and the article dates the war there from April 1939** — the sixth record of this run whose imported interval is shorter than its own summary, and left visible rather than repaired.",
+  "dispute": null
+}

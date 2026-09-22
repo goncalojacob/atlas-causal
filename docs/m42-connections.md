@@ -3822,3 +3822,43 @@ seeds file — and `Q4499410` ("The Holocaust in Ukraine") for want of a date.
 The first three are a one-line fix in `data/imports/wikidata-seeds.json` for a
 later fire, which is exactly how `franco-thai-war` landed in this batch after
 being refused in batch 23.
+
+## 2x. Batch 25 — the three the lane refused, and a pair that is honestly a fragment
+
+*22 September, the fifth batch of the same fire and the smallest. Three of its
+five rows are the ones batch 24's tool refused for want of a lane, landed by
+the one line deviation 1029 describes; the other two are a pair of wars in
+Dahomey that the scramble for Africa was waiting for.*
+
+| the record | filed under | the edge it earned |
+| --- | --- | --- |
+| `world-war-ii-in-albania` | `world-war-ii` | `world-war-ii --caused--> world-war-ii-in-albania` |
+| `1940-1944-insurgency-in-chechnya` | `world-war-ii` | `world-war-ii --enabled--> 1940-1944-insurgency-in-chechnya` |
+| `georgian-ossetian-conflict-1918-1920` | `russian-civil-war` | `february-revolution --enabled--> georgian-ossetian-conflict-1918-1920` |
+| `first-franco-dahomean-war` | `scramble-for-africa` | `first-franco-dahomean-war --precondition-of--> second-franco-dahomean-war` |
+| `second-franco-dahomean-war` | `scramble-for-africa` | the same edge, from the other end |
+
+**Two of the three edges are `enabled` and the reason is the same both times**:
+the rising in Chechnya began in 1940 and the land question in South Ossetia is
+older than 1917, so what the war and the revolution gave each was an opening
+and not a cause. The articles say as much — *"peaked in 1942 during the German
+invasion of North Caucasus"*, *"during the 1917 February Revolution the
+Bolsheviks found the Ossetians very receptive to the idea of class conflict"* —
+and the type is written to what they say.
+
+**The Dahomean pair is a fragment and it is said out loud.** Both wars are
+filed under `scramble-for-africa`, which is an A6 umbrella and takes no edge,
+and the only edge either earned runs between them. That is batch 17's finding
+again — *"a tombstone is a note of what is missing, and its record lands where
+the tombstone was"* — in the filing rule's version: a row whose parent is an
+**umbrella** arrives filed and still lands outside the chain. The pair is
+honestly edged, the component count rose by one, and what would join them to
+the atlas is a record of the French conquest of West Africa that nothing here
+holds.
+
+**The sixth short interval turned up in the same batch.**
+`world-war-ii-in-albania` carries Wikidata's 1942–1944 while its own article
+dates the war there from April 1939, and `1940-1944-insurgency-in-chechnya`
+carries a single day in December 1944 for a revolt its own title dates
+1940–1944. Both are filed inside the war either way and both are left visible,
+for the reason deviation 1022 gives.

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671, § 1917–1918"
+    }
+  ],
+  "from": "february-revolution",
+  "to": "georgian-ossetian-conflict-1918-1920",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The conflict’s own account of 1917 makes the revolution the opening: “During the rule of the Russian Empire in the Tiflis gubernia most Ossetians in what is today South Ossetia worked as peasants on Georgian-owned farms. As such, during the 1917 February Revolution the Bolsheviks found the Ossetians very receptive to the idea of class conflict as it would also be an ethnic conflict against their Georgian landlords. The first revolt was an unorganized attempt towards returning ‘land to the peasants’.” The land question and the ethnic one are older than 1917, which is what `enabled` says and `caused` would not.",
+  "dispute": null
+}
