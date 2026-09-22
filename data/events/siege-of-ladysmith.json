@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-ladysmith",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2543997",
+  "wikipedia": {
+    "en": "Siege of Ladysmith",
+    "pt": "Cerco de Ladysmith"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2543997"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ladysmith\", revision 1370742736"
+    }
+  ],
+  "title": "Siege of Ladysmith",
+  "summary": "The English Wikipedia article \"Siege of Ladysmith\", at revision 1370742736, opens: \"The siege of Ladysmith was a protracted engagement in the Second Boer War, taking place between 2 November 1899 and 28 February 1900 at Ladysmith, Natal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2543997, imported by tools/import/wikidata.mjs. The item's own description reads \"1899-1900 siege of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1900,
+    "date": "1899-11-02",
+    "endDate": "1900-02-28"
+  },
+  "place": "ladysmith",
+  "region": null,
+  "regionNote": null,
+  "parent": "second-boer-war",
+  "category": "war",
+  "actors": []
+}

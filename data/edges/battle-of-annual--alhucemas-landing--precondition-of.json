@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-annual--alhucemas-landing--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Alhucemas landing\", revision 1370427911, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    }
+  ],
+  "from": "battle-of-annual",
+  "to": "alhucemas-landing",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The landing's article opens its § Background with the defeat: \"After the Battle of Annual in July 1921, the Spanish army was unable to regain control of the central Rif region. It undertook a containment policy aimed at preventing the expansion of the rebel zone… In parallel, the Minister of War ordered the creation of an inquiry commission\" — out of which came the agreements that included \"the plan for a Spanish landing on the Alhucemas bay\". The article also says the target was not new: \"All Spanish land operations, included the Disaster of Annual in 1921, were aimed at the occupation of Alhucemas\". `precondition-of` is therefore the exact claim — Annual is the situation the landing was planned out of, not its cause — and the landing is what \"would put an end to the Rif War\" the two records share as their parent. `probable` (rule 22).",
+  "dispute": null
+}

@@ -4506,3 +4506,66 @@ pretends otherwise.
 which is the far end of an edge and the near end of none — were each read for
 one and refused it, with the reasons in `docs/m42-pool.md` under batch 35.
 Nothing was written to keep them.
+
+## 2ag. Batch 36 — five edges, four of them inside one week of one war
+
+*22 September, the second batch of the same fire. Batch 34 concluded that the
+phases of one war are chronological to each other and not causal; this batch
+took five rows of the Second Boer War and four of its five edges run between
+them. Both are true, and what separates them is whether the articles argue the
+commanders' decisions.*
+
+**`siege-of-ladysmith --reacted-to--> battle-of-spion-kop`.** Spion Kop's own
+lead, revision 1374078287, says what the battle was for: it was fought *"during
+the campaign by the British to relieve the besieged city Ladysmith during the
+initial months of the Second Boer War"*, on a hilltop *"about 38 km (24 mi)
+west-southwest of Ladysmith"*. The edge says the battle answered the siege and
+nothing more.
+
+**`siege-of-ladysmith --reacted-to--> second-battle-of-colenso`.** The same
+claim six weeks earlier, from Colenso's § Background at revision 1370736054:
+Buller *"assumed command of his largest detachment and proposed to lead it to
+the relief of a besieged British force in Ladysmith, in Natal"*, and the Boers
+*"had retired north of the Tugela River at Colenso and dug in there, blocking
+the road and railway line to Ladysmith"*.
+
+**`battle-of-stormberg --reacted-to--> second-battle-of-colenso`** and
+**`battle-of-magersfontein --reacted-to--> second-battle-of-colenso`.** One
+sentence of the same section carries both, and it names both battles: *"On
+hearing that Gatacre and Methuen had been defeated at the battles of Stormberg
+and Magersfontein, Buller felt he needed to relieve Ladysmith as soon as
+possible and resume overall command of the forces in South Africa"* — and, the
+paragraph goes on, *"He decided to make a frontal assault at Colenso"* rather
+than the flank march at Potgieter's Drift he had intended. What is claimed is
+that the two defeats are why Colenso was fought the way it was fought, not that
+either caused the battle, which is why the type is `reacted-to`. Both are
+written rather than one standing for the pair, because the atlas holds both —
+`battle-of-magersfontein` having arrived in batch 35 an hour earlier.
+
+**`battle-of-annual --precondition-of--> alhucemas-landing`.** The landing's
+§ Background at revision 1370427911 opens with the defeat — *"After the Battle
+of Annual in July 1921, the Spanish army was unable to regain control of the
+central Rif region. It undertook a containment policy… In parallel, the
+Minister of War ordered the creation of an inquiry commission"* — and runs from
+there to the agreements that included *"the plan for a Spanish landing on the
+Alhucemas bay"*. It also says the target was older than the defeat: *"All
+Spanish land operations, included the Disaster of Annual in 1921, were aimed at
+the occupation of Alhucemas"*. `precondition-of` is the exact claim: Annual is
+the situation the landing was planned out of, not its cause.
+
+**All five are `probable`** (rule 22), and all five edges together moved the
+largest connected component by nothing, because every one of them runs between
+records these two batches created. `docs/m42-pool.md` under batch 36 says why
+and what would move it.
+
+**The refusal worth more than the five.** The Battle of Mogadishu's § Legacy
+says that *"many commentators identif[y] the Battle of Mogadishu's graphic
+consequences as the key reason behind the US's decision to not intervene in
+later conflicts such as the Rwandan genocide of 1994"*, and this atlas holds
+`1994-genocide-against-tutsi`. No edge was written, because what the article
+argues is about the **response** and not about the event: Mogadishu is offered
+as a reason the United States stayed out, not as anything standing behind the
+genocide. `battle-of-stormberg`, `battle-of-waterberg`,
+`battle-of-misrata-2011`, `ogossagou-massacre`, `battle-of-algiers-1956-1957`
+and `battle-of-paardeberg` earned nothing further and nothing was written to
+keep them.
