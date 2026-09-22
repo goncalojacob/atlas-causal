@@ -38,7 +38,7 @@ test('every mark on the map is a control with a name, and Enter opens it', { ski
   await desk(async (page, url) => {
     await open(page, url('?fixtures=1'), READY);
 
-    const marks = await page.eval(`return [...document.querySelectorAll('#map circle.mark')].map((el) => ({
+    const marks = await page.eval(`return [...document.querySelectorAll('#map > svg.map circle.mark')].map((el) => ({
       id: el.getAttribute('data-id'),
       cluster: el.getAttribute('data-cluster'),
       tabindex: el.getAttribute('tabindex'),

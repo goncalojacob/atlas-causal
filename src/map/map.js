@@ -6,6 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg, svgTitle } from '../util/dom.js';
+import { mapKey } from '../view-key.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
@@ -523,6 +524,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   container.append(root);
   container.append(territoriesNote);
   container.append(corner);
+  // The key to the marks (M82, A7). Built here and never drawn again: what a
+  // row stands for is a class and not a state, so it is the same box on every
+  // frame. Outside the SVG, as the graph's is, so panning and zooming leave it
+  // where it is.
+  container.append(mapKey());
   container.append(exportButton(root, 'map'));
 
   // --- when the map is drawn again ----------------------------------------
@@ -622,14 +628,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     regionsLayer.render(large
       .filter((l) => l.scope === 'regional' && l.region)
       .map((l) => ({ region: l.region, title: l.event.title })));
-    // And the events of this window the map has no point for at all. The same
-    // three filters the marks obey — active, kept by the lens, overlapping the
-    // window — and not the viewport's box: they are nowhere, so they are no
-    // more outside the box than in it.
-    drawCorner(
-      large.filter((l) => l.scope === 'worldwide'),
-      drawingEvents ? inWindow.filter((e) => !atlas.pointOf(e)).length : 0,
-    );
+    drawCorner(large.filter((l) => l.scope === 'worldwide'));
     const result = events.render({
       events: drawn,
       window: timeWindow,
@@ -824,25 +823,28 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     });
   }
 
-  // The two lines of the corner. Rewritten only when they change, because the
-  // map redraws on every pan and this is markup rather than an attribute.
-  // Everything from `data/` goes through `esc()`: a title is untrusted input
-  // here as everywhere else.
-  function drawCorner(worldwide, unplaced) {
-    const lines = [];
-    if (worldwide.length > 0) {
+  // The corner, which is one line and not two since M82 (A5). It named the
+  // worldwide events of the window and then said, in a full sentence and on
+  // every visit, that N events of the window have no place and are on the
+  // timeline — 96 of them at the time the reviewer looked, 60 of 93 on another
+  // picture. It is true and it is not news, and a permanent paragraph of it in
+  // the corner of the map reads as an apology. The count is said in the
+  // masthead beside the one that says what is in view (`window-control.js`),
+  // where the other thing that is true of the whole window is said.
+  //
+  // What stays here is what *is* about the picture: an event that spans the
+  // whole map is named in the corner because the map has nowhere else to draw
+  // it. Rewritten only when it changes, because the map redraws on every pan
+  // and this is markup rather than an attribute. Everything from `data/` goes
+  // through `esc()`: a title is untrusted input here as everywhere else.
+  function drawCorner(worldwide) {
+    const html = worldwide.length === 0 ? '' : (() => {
       const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(event.title)}</button>`).join(', ');
-      lines.push(`<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
-        ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`);
-    }
-    if (unplaced > 0) {
-      lines.push(unplaced === 1
-        ? '<p class="map-unplaced">1 event in this window has no place; it is on the timeline.</p>'
-        : `<p class="map-unplaced">${unplaced} events in this window have no place; they are on the timeline.</p>`);
-    }
-    const html = lines.join('');
+      return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
+        ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`;
+    })();
     if (corner.innerHTML !== html) corner.innerHTML = html;
-    corner.hidden = lines.length === 0;
+    corner.hidden = html === '';
   }
 
   // A pane that changes size shows a different part of the world at the same

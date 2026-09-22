@@ -36,11 +36,12 @@
 // **`?from=` and `?to=` are unchanged.** A link still opens on its window;
 // what is gone is a way of typing one, not the window.
 
-import { resolveWindow } from './util/window.js';
+import { resolveWindow, overlaps } from './util/window.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { bandEvents } from './window-band.js';
 import { eventsInView } from './util/viewport.js';
 import { readCount, readCountText } from './standing.js';
+import { showingReview } from './demo.js';
 
 // The one sentence the count is (M80), pure so that what it says can be held
 // to without a browser.
@@ -62,6 +63,34 @@ import { readCount, readCountText } from './standing.js';
 // "1 of 581 events" is a sentence about the 581.
 const plural = (n) => (n === 1 ? 'event' : 'events');
 
+// And what a *main* event is, said once, where the word first appears (M82,
+// A3). The reviewer: *"the count line assumes the reader knows what a main
+// event is"*. It is a sentence about the picture and not about history, so it
+// is the control's own title rather than a line of the atlas's text; the
+// intro card says the same thing in its own words under "How to read it", for
+// the reader who opens that instead.
+//
+// No escaping: it is written here, in the interface's own words, and nothing
+// in it came out of `data/`.
+export const MAIN_EVENT_HINT = 'A main event is one that is not part of any larger event. Open a war or a regime and what happened inside it appears.';
+
+// And the one note beside it (M82, A5): how many of the events in the window
+// the map has no point for at all. It sat on the map as a permanent paragraph
+// in the bottom-left corner — *"96 events in this window have no place; they
+// are on the timeline."* — on every visit, which reads as an apology for the
+// dataset rather than as something about the picture. It is a fact about the
+// window, so it is said where the other fact about the window is said, in as
+// few words as it takes.
+//
+// Nothing at all when every event of the window is on the map, which is the
+// answer A9's place pass is working towards.
+export function unplacedText(unplaced) {
+  if (!(unplaced > 0)) return '';
+  return unplaced === 1
+    ? '1 event in this window has no place on the map'
+    : `${unplaced} events in this window have no place on the map`;
+}
+
 export function viewCountText({ shown, whole, resting }) {
   return resting
     ? `${shown} main ${plural(shown)} of ${whole} in view`
@@ -75,16 +104,18 @@ export function createWindowControl(group, { atlas, state }) {
   // interface's own words and one number this file computes.
   group.innerHTML = `
     <p class="window-view" hidden>
-      <span class="window-count"></span>
+      <span class="window-count" title="${MAIN_EVENT_HINT}"></span>
       <button type="button" class="pin" title="Draw every event again, wherever the map is looking">show the world</button>
     </p>
     <p class="window-standing">
+      <span class="window-unplaced" title="An event with no place record has no point on the map. It is drawn on the timeline and in the graph, and it is in every count here."></span>
       <span class="window-read" title="How many of the events in view a person has read and signed. Nothing here changes what is drawn: a draft is drawn exactly as a signed record is."></span>
     </p>`;
 
   const view = group.querySelector('.window-view');
   const count = group.querySelector('.window-count');
   const read = group.querySelector('.window-read');
+  const unplaced = group.querySelector('.window-unplaced');
   const pin = group.querySelector('.pin');
 
   // The pin says something about the lanes and the marks, not about the map:
@@ -138,10 +169,13 @@ export function createWindowControl(group, { atlas, state }) {
 
   function render(s) {
     if (!atlas.extent) return;
-    // Still resolved, and still here: nothing is drawn from it any more, but a
-    // state with no window at all is a state this control has nothing to say
-    // about, exactly as before.
-    if (!resolveWindow(s, atlas.extent, atlas.opens)) return;
+    // Still resolved, and since M82 read again: the note beside the count is
+    // about the events *of the window* — which is what the map's corner said
+    // before it moved here — and `bandEvents` is the picture and not the
+    // window. A state with no window at all is a state this control has
+    // nothing to say about, exactly as before.
+    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
+    if (!timeWindow) return;
     view.hidden = !s.bbox;
     const n = countInView(s);
     if (s.bbox) count.textContent = viewCountText(n);
@@ -156,7 +190,22 @@ export function createWindowControl(group, { atlas, state }) {
     // reader made and is nothing until they make it, and "0 of 242 read" is
     // about the corpus and is true from the first frame. It is honesty and
     // never a filter — nothing here decides what is drawn.
-    read.textContent = readCountText(readCount(n.events));
+    // **Off the demo, behind one flag** (M82, A2). "0 of 245 read" is true,
+    // and it is the second thing a funder reads on the first screen of a demo
+    // whose review process the owner has deferred until there is funding. The
+    // count is the same count and `?review=1` still prints it; what is gone is
+    // the atlas announcing the state of its own queue to somebody who has not
+    // asked (demo.js).
+    read.textContent = showingReview() ? readCountText(readCount(n.events)) : '';
+    // **And how many of them the map has no point for** (M82, A5). Counted over
+    // the very same events the line above counts — active, kept by the lens,
+    // overlapping the window — which is what the map's own corner counted
+    // before this moved, so the number is the number it was. `pointOf` resolves
+    // an event to the coordinates of the place it names (M9); an event that
+    // names none is nowhere on the map and everywhere else.
+    unplaced.textContent = unplacedText(
+      n.events.filter((e) => overlaps(e.when, timeWindow) && !atlas.pointOf(e)).length,
+    );
   }
 
   state.subscribe(render);

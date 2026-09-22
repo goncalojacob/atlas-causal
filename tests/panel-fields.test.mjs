@@ -131,9 +131,14 @@ test('a child says what it is part of, and a parent lists its parts in order', (
 // the card is where that is said. "Focus only on this" went in M30c §2b and
 // the line stayed: it is about what a focus keeps, not about which button
 // writes it.
-test('a parent says in one line what focusing on it would keep', () => {
+test('a parent says in one line what opening it shows', () => {
   const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
-  assert.match(parent, /<p class="subtree-lens muted">Focusing on this keeps it and the 2\s*events inside it/);
+  // **What it does, not how the software does it** (M82, A8). The line used to
+  // say "Focusing on this keeps it and the 2 events inside it; with no other
+  // focus on, every other event leaves all three views", which is a sentence
+  // about a state model.
+  assert.match(parent, /<p class="subtree-lens muted">Showing this and the 2\s*events inside it\./);
+  assert.doesNotMatch(parent, /leaves all three views/);
   // And no fourth control was added to say it.
   assert.doesNotMatch(parent, /Show only this/);
 

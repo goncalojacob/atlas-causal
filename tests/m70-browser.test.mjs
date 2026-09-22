@@ -49,7 +49,7 @@ test('a card says in one line that nobody has read the record', { skip }, async 
     // is drawn from carries no signature — so the slot is there and empty, and
     // the line is written when the file lands. A card that said "unread" while
     // it was still loading would be making a claim it had not checked.
-    await open(page, url('?fixtures=1&from=1100&to=2100&selected=fixture-event-a'));
+    await open(page, url('?review=1&fixtures=1&from=1100&to=2100&selected=fixture-event-a'));
     const empty = await page.eval(STANDING);
     assert.ok(empty !== null, 'the slot is in the head from the first frame');
     await waitFor(page, FILLED, "the record's own file");
@@ -61,7 +61,7 @@ test('a card says in one line that nobody has read the record', { skip }, async 
 
     // A second record, one click away: the line is about the record and not
     // about the page.
-    await open(page, url('?fixtures=1&from=1100&to=2100&selected=fixture-event-b'));
+    await open(page, url('?review=1&fixtures=1&from=1100&to=2100&selected=fixture-event-b'));
     await waitFor(page, FILLED, "the second record's own file");
     assert.match((await page.eval(STANDING)).text, /[Uu]nread/);
 
@@ -77,7 +77,7 @@ test('the masthead says how much of the picture has been read', { skip }, async 
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
-    await open(page, url('?fixtures=1&from=1100&to=2100'), MARKS);
+    await open(page, url('?review=1&fixtures=1&from=1100&to=2100'), MARKS);
     await waitFor(page, `
       const el = document.querySelector('#window-control .window-read');
       return Boolean(el) && el.textContent.trim() !== '';`, 'the standing line in the masthead');

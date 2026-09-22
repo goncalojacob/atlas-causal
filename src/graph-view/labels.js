@@ -41,17 +41,19 @@ import {
 // lines are two lines and not a thicket.
 export const LINE = 1.5;
 export const lineHeight = (k) => (LABEL_SIZE * LINE) / k;
-// How far from its own line a label may be written.
+// How far from its own line a label may be written: as far as the picture
+// goes. The events on screen are what the reader is looking at and every one
+// of them is to be named, and what makes that legible is the leader the
+// drawing puts under a label that had to move (graph-view.js). The walk of a
+// narrative is 22 of 28 marks on one line of the layout — measured, STATUS.md
+// — with the whole field free above and below it, so the room is there and
+// this is what reaches it.
 //
-// Two answers, because there are two pictures. **At rest**, two lines: the
-// reader has asked nothing, the names are there to give a picture of
-// everything a few anchors, and a name three lines off its mark would be an
-// anchor nobody could tie. **Inside a lens**, as far as the picture goes: the
-// events are the answer to a question and every one of them is to be named,
-// and what makes that legible is the leader the drawing puts under a label
-// that had to move (graph-view.js). The walk of a narrative is 22 of 28 marks
-// on one line of the layout — measured, STATUS.md — with the whole field free
-// above and below it, so the room is there and this is what reaches it.
+// It was two answers until M82: two lines at rest and eighteen inside a lens,
+// on the argument that the resting picture wanted "a few anchors" rather than
+// every name. What that bought was the reviewer's first screen of the graph —
+// two hundred unlabelled circles and a dozen names. The field above a mark is
+// as free at rest as it is under a lens, so there is one answer now (A1).
 export const ROWS_AWAY = 2;
 export const LENS_ROWS_AWAY = 18;
 
