@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q117571"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Romani Holocaust\", revision 1374733157"
     }
   ],
   "title": "Porajmos",
-  "summary": "Wikidata item Q117571, imported by tools/import/wikidata.mjs. The item's own description reads \"mass murder against Roma people in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Romani Holocaust\", at revision 1374733157, opens: \"The Romani Holocaust, also known as the Porajmos, was the genocide of European Roma and Sinti people during World War II. Beginning in 1933, Nazi Germany systematically persecuted the European Roma, Sinti and other peoples through forcible internment and compulsory sterilization. German authorities summarily and arbitrarily subjected Romani people to incarceration, forced labor, deportation and mass murder in concentration and extermination camps.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q117571, imported by tools/import/wikidata.mjs. The item's own description reads \"mass murder against Roma people in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1939,
     "end": 1945

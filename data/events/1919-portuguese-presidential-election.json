@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q21872497"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1919 Portuguese presidential election\", revision 1273401624"
     }
   ],
   "title": "1919 Portuguese presidential election",
-  "summary": "Wikidata item Q21872497, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1919 Portuguese presidential election\", at revision 1273401624, opens: \"Presidential elections were held in Portugal on 6 December 1919. Following Portugal's 1911 constitution, the Congress of the Republic must elect the president in Lisbon instead of the Portuguese people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21872497, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1919,
     "end": 1919,

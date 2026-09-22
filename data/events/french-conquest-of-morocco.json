@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q2935421"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French conquest of Morocco\", revision 1374837625"
     }
   ],
   "title": "French conquest of Morocco",
-  "summary": "Wikidata item Q2935421, imported by tools/import/wikidata.mjs. The item's own description reads \"Franco-Moroccan conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"French conquest of Morocco\", at revision 1374837625, opens: \"The French conquest of Morocco began with the French Republic occupying the city of Oujda on 29 March 1907. The French launched campaigns against the Sultanate of Morocco which culminated in the signing of the Treaty of Fes and establishment of the French Protectorate in Morocco on 30 March 1912. France later concluded, on 27 November, the Treaty of Madrid with the Kingdom of Spain which established the Spanish protectorate in Morocco.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2935421, imported by tools/import/wikidata.mjs. The item's own description reads \"Franco-Moroccan conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1907,
     "end": 1937

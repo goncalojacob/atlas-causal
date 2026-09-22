@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q179275 names 19 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 16 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q179275"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurgency in Khyber Pakhtunkhwa\", revision 1376090391"
     }
   ],
   "title": "insurgency in Khyber Pakhtunkhwa",
-  "summary": "Wikidata item Q179275, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict involving Pakistan and armed militant groups\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Insurgency in Khyber Pakhtunkhwa\", at revision 1376090391, opens: \"Since 2004, an insurgency has been fought in the Pakistani province of Khyber Pakhtunkhwa by Islamist militant groups such as the Tehrik-i-Taliban Pakistan (TTP), Jundallah, Lashkar-e-Islam (LeI), the Tehreek-e-Nafaz-e-Shariat-e-Mohammadi (TNSM), Al-Qaeda, and their Central Asian allies such as the Islamic State – Khorasan Province (ISKP), Islamic Movement of Uzbekistan, East Turkistan Movement, Jamaat-ul-Ahrar, Ittihad-ul-Mujahideen Pakistan, and elements of organised crime. Before being transformed into an insurgency in 2017, the conflict was a war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q179275, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict involving Pakistan and armed militant groups\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2004,
     "end": null,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "status": "draft",
     "note": "Wikidata Q122100 names 3 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
@@ -40,10 +45,14 @@
     {
       "source": "wikidata",
       "locator": "Q122100"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Continuation War\", revision 1376075240"
     }
   ],
   "title": "Continuation War",
-  "summary": "Wikidata item Q122100, imported by tools/import/wikidata.mjs. The item's own description reads \"1941–1944 Finnish war against USSR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Continuation War\", at revision 1376075240, opens: \"The Continuation War, also known as the Second Soviet–Finnish War, was a conflict fought by Finland and Nazi Germany against the Soviet Union during World War II. It began with a Finnish declaration of war on 25 June 1941 and ended on 19 September 1944 with the Moscow Armistice. The Soviet Union and Finland had previously fought the Winter War from 1939 to 1940, which ended with the Soviet failure to conquer Finland and the Moscow Peace Treaty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122100, imported by tools/import/wikidata.mjs. The item's own description reads \"1941–1944 Finnish war against USSR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1941,
     "end": 1944,

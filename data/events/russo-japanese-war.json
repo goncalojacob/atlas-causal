@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q159950"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Japanese War\", revision 1375992361"
     }
   ],
   "title": "Russo-Japanese War",
-  "summary": "Wikidata item Q159950, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Russian and Japanese empires from 1904 to 1905\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Russo-Japanese War\", at revision 1375992361, opens: \"The Russo-Japanese War was fought between the Russian Empire and the Empire of Japan over rival imperial ambitions in Manchuria and the Korean Empire. The major land battles of the war were fought on the Liaodong Peninsula and near Mukden in Southern Manchuria, with naval battles taking place in the Yellow Sea and the Sea of Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q159950, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Russian and Japanese empires from 1904 to 1905\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1904,
     "end": 1905,

@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q1137957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1948 Czechoslovak coup d'état\", revision 1371034127"
     }
   ],
   "title": "1948 Czechoslovak coup d'état",
-  "summary": "Wikidata item Q1137957, imported by tools/import/wikidata.mjs. The item's own description reads \"1948 coup in Czechoslovakia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1948 Czechoslovak coup d'état\", at revision 1371034127, opens: \"In late February 1948, the Communist Party of Czechoslovakia (KSČ), with Soviet backing, assumed undisputed control over the government of Czechoslovakia through a coup d'état. It marked the beginning of four decades of the party's rule in the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1137957, imported by tools/import/wikidata.mjs. The item's own description reads \"1948 coup in Czechoslovakia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1948,
     "end": 1948,

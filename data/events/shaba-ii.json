@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q2745406 names 8 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 3 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q2745406"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shaba II\", revision 1370737989"
     }
   ],
   "title": "Shaba II",
-  "summary": "Wikidata item Q2745406, imported by tools/import/wikidata.mjs. The item's own description reads \"historical military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Shaba II\", at revision 1370737989, opens: \"Shaba II was a brief conflict fought in the Zairean province of Shaba in 1978. The conflict broke out on 11 May 1978 after 6,500 rebels from the Congolese National Liberation Front (FNLC), a Katangese separatist militia, crossed the border from Angola into Zaire in an attempt to achieve the province's secession from the Zairian regime of Mobutu Sese Seko. The FNLC captured the important mining town of Kolwezi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2745406, imported by tools/import/wikidata.mjs. The item's own description reads \"historical military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1978,
     "end": 1978,

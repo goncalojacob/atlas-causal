@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q123998092"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Arabs during the Zanzibar Revolution\", revision 1374125732"
     }
   ],
   "title": "Massacre of Arabs during the Zanzibar Revolution",
-  "summary": "Wikidata item Q123998092, imported by tools/import/wikidata.mjs. The item's own description reads \"1964 genocide of the Arab community in Zanzibar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Massacre of Arabs during the Zanzibar Revolution\", at revision 1374125732, opens: \"In January 1964, during and following the Zanzibar Revolution, Arab residents of Zanzibar were victims of targeted violence committed by the island’s majority Black African population. Arabs were mass murdered, raped, tortured and deported from the island by Black African militiamen under the Afro-Shirazi Party and Umma Party. The exact death toll is unknown, although scholarly sources generally estimate the number of Arabs killed to be at least several thousand, a significant fraction of the total Arab population.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123998092, imported by tools/import/wikidata.mjs. The item's own description reads \"1964 genocide of the Arab community in Zanzibar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1964,
     "end": 1964,

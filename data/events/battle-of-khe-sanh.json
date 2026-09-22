@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q247253 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q247253"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Khe Sanh\", revision 1375065823"
     }
   ],
   "title": "Battle of Khe Sanh",
-  "summary": "Wikidata item Q247253, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Vietnam War in 1968\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Khe Sanh\", at revision 1375065823, opens: \"The Battle of Khe Sanh was conducted in the Khe Sanh area of northwestern Quảng Trị Province, Republic of Vietnam, during the Vietnam War. The main US forces defending Khe Sanh Combat Base (KSCB) were two regiments of the United States Marine Corps supported by elements from the United States Army, the United States Air Force (USAF) and the Royal Australian Air Force (RAAF), as well as a small number of Army of the Republic of Vietnam (ARVN) troops. These were pitted against two to three divisional-size elements of the North Vietnamese People's Army of Vietnam (PAVN).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q247253, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Vietnam War in 1968\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1968,
     "end": 1968,

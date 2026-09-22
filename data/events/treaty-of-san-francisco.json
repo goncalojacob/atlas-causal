@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q392541"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of San Francisco\", revision 1376098111"
     }
   ],
   "title": "Treaty of San Francisco",
-  "summary": "Wikidata item Q392541, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty between Japan and the Allied Powers of World War II, officially ending the American-led Allied Occupation of Japan.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of San Francisco\", at revision 1376098111, opens: \"The Treaty of San Francisco, also called the Treaty of Peace with Japan, re-established peaceful relations between Japan and the Allies on behalf of the United Nations by ending the legal state of war, military occupation and providing for redress for hostile actions up to and including World War II. It was signed by 49 nations on September 8, 1951, in San Francisco, United States, at the War Memorial Opera House. Italy and China were not invited, the latter due to disagreements on whether the Republic of China or the People's Republic of China represented the Chinese people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q392541, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty between Japan and the Allied Powers of World War II, officially ending the American-led Allied Occupation of Japan.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1951,
     "end": 1951,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q208694"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Indian War\", revision 1374100162"
     }
   ],
   "title": "Sino-Indian War",
-  "summary": "Wikidata item Q208694, imported by tools/import/wikidata.mjs. The item's own description reads \"1962 war between India and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Sino-Indian War\", at revision 1374100162, opens: \"The Sino-Indian War, also known as the China–India War or the Indo-China War, was an armed conflict between China and India that took place from October to November 1962. It was a military escalation of the Sino-Indian border dispute. The fighting was concentrated in two locations along the India-China border, the North-East Frontier Agency (NESA), and the Aksai Chin region, which were roughly 1,000 km (620 mi) apart.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q208694, imported by tools/import/wikidata.mjs. The item's own description reads \"1962 war between India and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1962,
     "end": 1962,

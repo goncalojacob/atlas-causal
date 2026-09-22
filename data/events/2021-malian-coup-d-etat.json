@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q106975429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2021 Malian coup d'état\", revision 1370424554"
     }
   ],
   "title": "2021 Malian coup d'état",
-  "summary": "Wikidata item Q106975429, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of Mali's government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2021 Malian coup d'état\", at revision 1370424554, opens: \"On the night of 24 May 2021, the Malian Army led by Vice President Assimi Goïta captured President Bah N'daw, Prime Minister Moctar Ouane and Minister of Defence Souleymane Doucouré. Assimi Goïta, the head of the junta that led the 2020 Malian coup d'état, announced that N'daw and Ouane were stripped of their powers and that new elections would be held in 2022. It is the country's third coup d'état in ten years, following the 2012 and 2020 military takeovers, with the latter having happened only nine months earlier.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106975429, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of Mali's government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2021,
     "end": 2021,

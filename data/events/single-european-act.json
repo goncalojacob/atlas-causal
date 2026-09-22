@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q622649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Single European Act\", revision 1324525488"
     }
   ],
   "title": "Single European Act",
-  "summary": "Wikidata item Q622649, imported by tools/import/wikidata.mjs. The item's own description reads \"the first major revision of the 1957 Treaty of Rome\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Single European Act\", at revision 1324525488, opens: \"The Single European Act (SEA) was the first major revision of the 1957 Treaty of Rome. The Act set the European Community an objective of establishing a single market by 31 December 1992, and a forerunner of the European Union's Common Foreign and Security Policy (CFSP) it helped codify European Political Co-operation. The amending treaty was signed at Luxembourg City on 17 February 1986 and at The Hague on 28 February 1986.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q622649, imported by tools/import/wikidata.mjs. The item's own description reads \"the first major revision of the 1957 Treaty of Rome\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1986,
     "end": 1986,

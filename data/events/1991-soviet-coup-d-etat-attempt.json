@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q221382"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1991 Soviet coup attempt\", revision 1373365313"
     }
   ],
   "title": "1991 Soviet coup d'état attempt",
-  "summary": "Wikidata item Q221382, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted coup d'état in the USSR against Mikhail Gorbachev's government in August 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1991 Soviet coup attempt\", at revision 1373365313, opens: \"In August 1991, hardliners of the Communist Party of the Soviet Union (CPSU) attempted to forcibly seize control of the country from Mikhail Gorbachev, who was Soviet president and General Secretary of the CPSU at the time. The coup leaders consisted of top military and civilian officials, including Vice President Gennady Yanayev, who together formed the State Committee on the State of Emergency. Opposed to Gorbachev's reform program, they were angry at the loss of control over Eastern European states and fearful of the New Union Treaty, which was on the verge of being signed by the Soviet Union (USSR).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q221382, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted coup d'état in the USSR against Mikhail Gorbachev's government in August 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": 1991,

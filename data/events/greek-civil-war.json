@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q188972"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greek Civil War\", revision 1374372236"
     }
   ],
   "title": "Greek Civil War",
-  "summary": "Wikidata item Q188972, imported by tools/import/wikidata.mjs. The item's own description reads \"1946–1949 civil war in Greece\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Greek Civil War\", at revision 1374372236, opens: \"The Greek Civil War took place from 1946 to 1949. The conflict, which erupted shortly after the end of World War II, consisted of a Communist-led uprising against the established government of the Kingdom of Greece. The rebels declared a people's republic, the Provisional Democratic Government of Greece, which was governed by the Communist Party of Greece (KKE) and its military branch, the Democratic Army of Greece (DSE).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q188972, imported by tools/import/wikidata.mjs. The item's own description reads \"1946–1949 civil war in Greece\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1946,
     "end": 1949,

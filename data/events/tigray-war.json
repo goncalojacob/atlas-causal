@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q101231200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tigray war\", revision 1374637577"
     }
   ],
   "title": "Tigray war",
-  "summary": "Wikidata item Q101231200, imported by tools/import/wikidata.mjs. The item's own description reads \"civil conflict that began in November 2020 in the Tigray Region of Ethiopia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Tigray war\", at revision 1374637577, opens: \"The Tigray war, also referred to in some academic and policy sources as the northern Ethiopia conflict, was an armed conflict that lasted from 3 November 2020 to 3 November 2022. It was a civil war primarily fought in the Tigray Region of Ethiopia between forces allied with the Ethiopian federal government and Eritrea on one side, and the Tigray People's Liberation Front (TPLF) on the other.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q101231200, imported by tools/import/wikidata.mjs. The item's own description reads \"civil conflict that began in November 2020 in the Tigray Region of Ethiopia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2020,
     "end": 2022,

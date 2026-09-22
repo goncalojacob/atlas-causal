@@ -25,7 +25,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -44,13 +45,17 @@
     {
       "source": "wikidata",
       "locator": "Q60433"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention Relating to the Status of Refugees\", revision 1371612673"
     }
   ],
   "title": "Convention Relating to the Status of Refugees",
   "names": [
     "Convenção das Nações Unidas relativa ao Estatuto dos Refugiados"
   ],
-  "summary": "Wikidata item Q60433, imported by tools/import/wikidata.mjs. The item's own description reads \"1951 United Nations treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Convention Relating to the Status of Refugees\", at revision 1371612673, opens: \"The Convention Relating to the Status of Refugees, also known as the 1951 Refugee Convention or the Geneva Convention of 28 July 1951, is a United Nations multilateral treaty originally designed to establish the legal status of displaced persons in post-World War II Europe. The convention defines the criteria for refugee status and outlines specific rights for individuals after they have been lawfully granted asylum by a host state.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60433, imported by tools/import/wikidata.mjs. The item's own description reads \"1951 United Nations treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1951,
     "end": 1951,

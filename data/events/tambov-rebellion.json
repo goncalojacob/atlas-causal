@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q811250"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tambov Rebellion\", revision 1370749600"
     }
   ],
   "title": "Tambov Rebellion",
-  "summary": "Wikidata item Q811250, imported by tools/import/wikidata.mjs. The item's own description reads \"Russian peasant revolt (1920-1921)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Tambov Rebellion\", at revision 1370749600, opens: \"The Tambov Rebellion of 1920–1922 was one of the largest and best-organized peasant rebellions challenging the Bolshevik government during the Russian Civil War. The uprising took place in the territories of the modern Tambov Oblast and part of the Voronezh Oblast, less than 500 kilometres (300 mi) southeast of Moscow.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q811250, imported by tools/import/wikidata.mjs. The item's own description reads \"Russian peasant revolt (1920-1921)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1921,
     "end": 1921,

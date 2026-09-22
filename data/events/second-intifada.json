@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q49106"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Intifada\", revision 1372798030"
     }
   ],
   "title": "Second Intifada",
-  "summary": "Wikidata item Q49106, imported by tools/import/wikidata.mjs. The item's own description reads \"2000–2005 Palestinian uprising against Israeli occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Second Intifada\", at revision 1372798030, opens: \"The Second Intifada, also known as the Al-Aqsa Intifada, was a major uprising by Palestinians against Israel and its occupation from 2000. Initially sparked by civilian protests in Jerusalem and areas within Israel proper, the uprising escalated into a prolonged period of heightened violence in Israel, the West Bank and the Gaza Strip. This violence, which included shootings, suicide bombings, and military operations, continued until the Sharm el-Sheikh Summit of 2005, which ended hostilities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49106, imported by tools/import/wikidata.mjs. The item's own description reads \"2000–2005 Palestinian uprising against Israeli occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2000,
     "end": 2005,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q1332160 names 4 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q1332160"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indonesian National Revolution\", revision 1376144484"
     }
   ],
   "title": "Indonesian National Revolution",
-  "summary": "Wikidata item Q1332160, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict and diplomatic struggle between Indonesia and the Dutch Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Indonesian National Revolution\", at revision 1376144484, opens: \"The Indonesian National Revolution, also known as the Indonesian War of Independence, was an armed conflict and diplomatic struggle between the Republic of Indonesia and the Dutch Empire and an internal social revolution during postwar and postcolonial Indonesia. It took place between Indonesia's declaration of independence in 1945 and the Netherlands' transfer of sovereignty over the Dutch East Indies to the Republic of the United States of Indonesia at the end of 1949.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1332160, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict and diplomatic struggle between Indonesia and the Dutch Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1945,
     "end": 1949,

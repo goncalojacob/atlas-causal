@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q13605743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2013 Egyptian coup d'état\", revision 1369875339"
     }
   ],
   "title": "2013 Egyptian coup d'état",
-  "summary": "Wikidata item Q13605743, imported by tools/import/wikidata.mjs. The item's own description reads \"Military coup overthrowing Mohamed Morsi\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2013 Egyptian coup d'état\", at revision 1369875339, opens: \"On July 3, 2013, then-President of Egypt Mohamed Morsi was overthrown by a coup d'etat led by Egyptian army chief General Abdel Fattah el-Sisi, who led a coalition to remove Morsi from power and suspend the Egyptian constitution of 2012. The move came after an ultimatum that the government \"resolve its differences\" with protesters during widespread national protests. Morsi and Muslim Brotherhood leaders, were placed under house arrest and Chief Justice of the Supreme Constitutional Court Adly Mansour was declared interim president of Egypt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13605743, imported by tools/import/wikidata.mjs. The item's own description reads \"Military coup overthrowing Mohamed Morsi\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2013,
     "end": 2013,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q2418422"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panic of 1893\", revision 1374530409"
     }
   ],
   "title": "Panic of 1893",
-  "summary": "Wikidata item Q2418422, imported by tools/import/wikidata.mjs. The item's own description reads \"financial crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Panic of 1893\", at revision 1374530409, opens: \"The Panic of 1893 was an economic depression in the United States. It began in February 1893 and officially ended eight months later. The Panic of 1896 followed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2418422, imported by tools/import/wikidata.mjs. The item's own description reads \"financial crisis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1893,
     "end": 1893

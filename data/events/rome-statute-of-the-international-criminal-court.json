@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q838958"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rome Statute\", revision 1363920501"
     }
   ],
   "title": "Rome Statute of the International Criminal Court",
-  "summary": "Wikidata item Q838958, imported by tools/import/wikidata.mjs. The item's own description reads \"1998 international treaty establishing the International Criminal Court\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Rome Statute\", at revision 1363920501, opens: \"The Rome Statute of the International Criminal Court is the treaty that established the International Criminal Court (ICC). It was adopted at a diplomatic conference in Rome, Italy on 17 July 1998 and entered into force on 1 July 2002. As of January 2025, 125 states are party to the statute.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q838958, imported by tools/import/wikidata.mjs. The item's own description reads \"1998 international treaty establishing the International Criminal Court\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1998,
     "end": 1998,

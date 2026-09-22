@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q193689"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Easter Rising\", revision 1375867431"
     }
   ],
   "title": "Easter Rising",
-  "summary": "Wikidata item Q193689, imported by tools/import/wikidata.mjs. The item's own description reads \"armed insurrection in Ireland during Easter Week, 1916\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Easter Rising\", at revision 1375867431, opens: \"The Easter Rising, also known as the Easter Rebellion, was an armed insurrection in Ireland during Easter Week in April 1916. The Rising was launched by Irish republicans against British rule in Ireland with the aim of establishing an independent Irish Republic while the United Kingdom was fighting the First World War. It was the most significant uprising in Ireland since the rebellion of 1798 and the first armed conflict of the Irish revolutionary period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q193689, imported by tools/import/wikidata.mjs. The item's own description reads \"armed insurrection in Ireland during Easter Week, 1916\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1916,
     "end": 1916,

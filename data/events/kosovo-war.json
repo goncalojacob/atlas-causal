@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "status": "draft",
     "note": "Wikidata Q190029 names 18 participants (P710) and the atlas holds an actor for 16 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
@@ -40,10 +45,14 @@
     {
       "source": "wikidata",
       "locator": "Q190029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kosovo War\", revision 1376074929"
     }
   ],
   "title": "Kosovo War",
-  "summary": "Wikidata item Q190029, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Kosovo (1998–1999)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Kosovo War\", at revision 1376074929, opens: \"The Kosovo War was an armed conflict in Kosovo that lasted from 28 February 1998 until 11 June 1999. It was fought between the forces of the Federal Republic of Yugoslavia (FRY), which controlled Kosovo before the war, and the Kosovo Albanian separatist militia known as the Kosovo Liberation Army (KLA). The conflict ended when the North Atlantic Treaty Organization (NATO) intervened by beginning air strikes in March 1999 which resulted in Yugoslav forces withdrawing from Kosovo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q190029, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Kosovo (1998–1999)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1998,
     "end": 1999,

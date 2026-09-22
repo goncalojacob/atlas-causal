@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q865344"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Genocide Convention\", revision 1371861623"
     }
   ],
   "title": "Genocide Convention",
-  "summary": "Wikidata item Q865344, imported by tools/import/wikidata.mjs. The item's own description reads \"1948 United Nations resolution which legally defined genocide\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Genocide Convention\", at revision 1371861623, opens: \"The Convention on the Prevention and Punishment of the Crime of Genocide (CPPCG), or the Genocide Convention, is an international treaty that criminalizes genocide and obligates state parties to pursue the enforcement of its prohibition. It was the first legal instrument to codify genocide as a crime and the first human rights treaty unanimously adopted by the United Nations General Assembly on 9 December 1948, during the third session of the United Nations General Assembly. The Convention entered into force on 12 January 1951 and has 153 state parties as of February 2025.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q865344, imported by tools/import/wikidata.mjs. The item's own description reads \"1948 United Nations resolution which legally defined genocide\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1948,
     "end": 1948,

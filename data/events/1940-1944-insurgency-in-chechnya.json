@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q714706"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204"
     }
   ],
   "title": "1940–1944 insurgency in Chechnya",
-  "summary": "Wikidata item Q714706, imported by tools/import/wikidata.mjs. The item's own description reads \"Vainakh revolt against the Soviet authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1940–1944 insurgency in Chechnya\", at revision 1370279204, opens: \"The 1940–1944 insurgency in Chechnya was an autonomous revolt against the Soviet authorities in the Chechen-Ingush Autonomous Soviet Socialist Republic. Beginning in early 1940 under Hasan Israilov, it peaked in 1942 during the German invasion of North Caucasus and ended in the beginning of 1944 with the wholesale concentration and deportation of the Vainakh peoples from their native lands as well as from the locations across the USSR, resulting in the death of at least 144,000 civilians. However, scattered resistance in the mountains continued for years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q714706, imported by tools/import/wikidata.mjs. The item's own description reads \"Vainakh revolt against the Soviet authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1944,
     "end": 1944,

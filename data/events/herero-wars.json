@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q16512674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Herero uprising\", revision 1370622706"
     }
   ],
   "title": "Herero Wars",
-  "summary": "Wikidata item Q16512674, imported by tools/import/wikidata.mjs. The item's own description reads \"series of German colonial wars in South West Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Herero uprising\", at revision 1370622706, opens: \"The Herero and Nama War is the collective term for a series of interlinked, anti-colonial armed struggles by native peoples in German South West Africa, mainly the Herero and Nama people, against the German Empire. The overall conflict took place between 1904 and 1908, and included the Herero uprising and the Second Nama Rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16512674, imported by tools/import/wikidata.mjs. The item's own description reads \"series of German colonial wars in South West Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1904,
     "end": 1908

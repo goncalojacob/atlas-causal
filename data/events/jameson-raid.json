@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q916340"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jameson Raid\", revision 1370624782"
     }
   ],
   "title": "Jameson Raid",
-  "summary": "Wikidata item Q916340, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 raid on Transvaal Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Jameson Raid\", at revision 1370624782, opens: \"The Jameson Raid was a botched raid against the South African Republic carried out by British colonial administrator Leander Starr Jameson, under the employment of Cecil Rhodes. It involved 500 British South Africa Company police and was launched from Rhodesia over the New Year weekend of 1895–96. Paul Kruger, for whom Rhodes had great personal hatred, was president of the South African Republic at the time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q916340, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 raid on Transvaal Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1895,
     "end": 1896,

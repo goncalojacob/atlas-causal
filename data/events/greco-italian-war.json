@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q223604"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greco-Italian War\", revision 1370621958"
     }
   ],
   "title": "Greco-Italian War",
-  "summary": "Wikidata item Q223604, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between Italy and Greece, which lasted from 28 October 1940 to 23 April 1941\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Greco-Italian War\", at revision 1370621958, opens: \"The Greco-Italian War, also called the Italo-Greek War, took place between Italy and Greece from 28 October 1940 to 23 April 1941. This conflict began the Balkans campaign of World War II between the Axis powers and the Allies, and eventually turned into the Battle of Greece with British and German involvement. On 10 June 1940, Italy declared war on France and the United Kingdom.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q223604, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between Italy and Greece, which lasted from 28 October 1940 to 23 April 1941\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1940,
     "end": 1941,

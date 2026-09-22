@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q1069736 names 3 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q1069736"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Croat–Bosniak War\", revision 1373788616"
     }
   ],
   "title": "Croat–Bosniak War",
-  "summary": "Wikidata item Q1069736, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict (1992–1994) between the Republic of Bosnia and Herzegovina and the Croatian Republic of Herzeg-Bosnia (supported by Croatia)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Croat–Bosniak War\", at revision 1373788616, opens: \"The Croat–Bosniak War or Croat–Muslim War was a conflict between the Bosniak-dominated Republic of Bosnia and Herzegovina and the Croatian Republic of Herzeg-Bosnia, supported by Croatia, that lasted from 18 October 1992 to 23 February 1994. It is often referred to as a \"war within a war\" because it was part of the larger Bosnian War. In the beginning, the Army of the Republic of Bosnia and Herzegovina (ARBiH) and the Croatian Defence Council (HVO) fought together in an alliance against the Yugoslav People's Army (JNA) and the Army of Republika Srpska (VRS).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1069736, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict (1992–1994) between the Republic of Bosnia and Herzegovina and the Croatian Republic of Herzeg-Bosnia (supported by Croatia)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1992,
     "end": 1994,

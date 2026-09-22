@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q1542222"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1958 Lebanon crisis\", revision 1370279391"
     }
   ],
   "title": "1958 Lebanon crisis",
-  "summary": "Wikidata item Q1542222, imported by tools/import/wikidata.mjs. The item's own description reads \"Lebanese political crisis accompanied by military intervention in Lebanon by the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1958 Lebanon crisis\", at revision 1370279391, opens: \"The 1958 Lebanon crisis was a political crisis in Lebanon caused by political and religious tensions in the country that included an American military intervention, which lasted for around three months until President Camille Chamoun, who had requested the assistance, completed his term as president of Lebanon. American and Lebanese government forces occupied the Port of Beirut and Beirut International Airport. With the crisis over, the United States withdrew.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1542222, imported by tools/import/wikidata.mjs. The item's own description reads \"Lebanese political crisis accompanied by military intervention in Lebanon by the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1958,
     "end": 1958,

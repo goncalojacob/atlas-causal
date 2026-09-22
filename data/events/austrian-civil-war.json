@@ -9,16 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q306123"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austrian Civil War\", revision 1375005540"
     }
   ],
   "title": "Austrian Civil War",
-  "summary": "Wikidata item Q306123, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Austrian Civil War\", at revision 1375005540, opens: \"The Austrian Civil War of 12–15 February 1934, also known as the February Uprising or the February Fights, was a series of clashes in the First Austrian Republic between the forces of the authoritarian right-wing government of Engelbert Dollfuss and the Republican Protection League, the banned paramilitary arm of the Social Democratic Workers' Party of Austria. The fighting started when League members fired on the Austrian police who were attempting to enter the Social Democrats' party headquarters in Linz to search for weapons. It spread from there to Vienna and other industrial centres in eastern and central Austria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q306123, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1934,
     "end": 1934,

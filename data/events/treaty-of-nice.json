@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q208688"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Nice\", revision 1345303290"
     }
   ],
   "title": "Treaty of Nice",
-  "summary": "Wikidata item Q208688, imported by tools/import/wikidata.mjs. The item's own description reads \"EU treaty of 2001\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of Nice\", at revision 1345303290, opens: \"The Treaty of Nice reformed the institutional structure of the European Union to withstand eastward expansion, a task which was originally intended to have been done by the Amsterdam Treaty, but failed to be addressed at the time. It was signed by European leaders on 26 February 2001 and came into force on 1 February 2003.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q208688, imported by tools/import/wikidata.mjs. The item's own description reads \"EU treaty of 2001\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2001,
     "end": 2001,

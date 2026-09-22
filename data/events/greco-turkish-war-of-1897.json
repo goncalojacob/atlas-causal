@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q657055"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greco-Turkish War (1897)\", revision 1374612994"
     }
   ],
   "title": "Greco-Turkish War of 1897",
-  "summary": "Wikidata item Q657055, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 war between the Kingdom of Greece and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Greco-Turkish War (1897)\", at revision 1374612994, opens: \"The Greco-Turkish War of 1897 or the Ottoman-Greek War of 1897 was fought between the Kingdom of Greece and the Ottoman Empire. Its immediate cause involved the status of the Ottoman province of Crete, whose Greek-majority population had long desired union with Greece. Despite the Ottoman victory on the field, an autonomous Cretan State under Ottoman suzerainty was established the following year, with Prince George of Greece and Denmark as its first High Commissioner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q657055, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 war between the Kingdom of Greece and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1897,
     "end": 1897,

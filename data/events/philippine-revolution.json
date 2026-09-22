@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q422082"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine Revolution\", revision 1375892184"
     }
   ],
   "title": "Philippine Revolution",
-  "summary": "Wikidata item Q422082, imported by tools/import/wikidata.mjs. The item's own description reads \"1896–1898 conflict against Spanish colonial authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Philippine Revolution\", at revision 1375892184, opens: \"The Philippine Revolution was a war of independence waged by the revolutionary organization Katipunan against the Spanish Empire from 1896 to 1898. It was the culmination of the 333-year colonial rule of Spain in the archipelago. The Philippines was one of the last major colonies of the Spanish Empire, which had already suffered a massive decline in the 1820s.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q422082, imported by tools/import/wikidata.mjs. The item's own description reads \"1896–1898 conflict against Spanish colonial authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1896,
     "end": 1898

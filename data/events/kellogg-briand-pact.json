@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q205073"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kellogg–Briand Pact\", revision 1373604906"
     }
   ],
   "title": "Kellogg-Briand pact",
-  "summary": "Wikidata item Q205073, imported by tools/import/wikidata.mjs. The item's own description reads \"1928 international agreement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Kellogg–Briand Pact\", at revision 1373604906, opens: \"The Kellogg–Briand Pact or Pact of Paris is a 1928 international agreement on peace in which signatory states promised not to use war to resolve \"disputes or conflicts of whatever nature or of whatever origin they may be, which may arise among them\". The pact was signed by Germany, France, and the United States on 27 August 1928, and by most other states soon after. Sponsored by France and the US, the Pact is named after its authors, United States Secretary of State Frank B.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q205073, imported by tools/import/wikidata.mjs. The item's own description reads \"1928 international agreement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1928,
     "end": 1928,

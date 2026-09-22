@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q862099"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1993 Russian constitutional crisis\", revision 1373045976"
     }
   ],
   "title": "1993 Russian constitutional crisis",
-  "summary": "Wikidata item Q862099, imported by tools/import/wikidata.mjs. The item's own description reads \"political unrest in Russia in September and October 1993\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1993 Russian constitutional crisis\", at revision 1373045976, opens: \"In September and October 1993, a constitutional crisis arose in the Russian Federation from a conflict between the then Russian president Boris Yeltsin and the country's parliament. Yeltsin performed a self-coup, dissolving parliament and instituting a presidential rule by decree system. The crisis ended with Yeltsin using military force to attack Moscow's House of Soviets and arrest the lawmakers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q862099, imported by tools/import/wikidata.mjs. The item's own description reads \"political unrest in Russia in September and October 1993\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1993,
     "end": 1993,

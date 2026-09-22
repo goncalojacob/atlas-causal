@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m42-umbrella",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q1519107"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Afghan conflict\", revision 1370427137"
     }
   ],
   "title": "Afghan Conflict",
-  "summary": "Wikidata item Q1519107, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflicts in Afghanistan since 1978\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Afghan conflict\", at revision 1370427137, opens: \"The Afghan conflict is the series of events that have kept Afghanistan in a near-continuous state of armed conflict since the 1970s. Early instability followed the collapse of the Kingdom of Afghanistan in the largely non-violent 1973 coup d'état, which deposed Afghan monarch Mohammad Zahir Shah in absentia, ending his 40-year-long reign. With the concurrent establishment of the Republic of Afghanistan, headed by Mohammad Daoud Khan, the country's relatively peaceful and stable period in modern history came to an end.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1519107, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflicts in Afghanistan since 1978\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1978,
     "end": null,

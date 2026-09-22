@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q842380"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sudanese Civil War\", revision 1375675485"
     }
   ],
   "title": "Second Sudanese Civil War",
-  "summary": "Wikidata item Q842380, imported by tools/import/wikidata.mjs. The item's own description reads \"1983–2005 war for South Sudanese independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Second Sudanese Civil War\", at revision 1375675485, opens: \"The Second Sudanese Civil War was a conflict from 1983 to 2005 between the central Sudanese government and the Sudan People's Liberation Army. It was largely a continuation of the First Sudanese Civil War of 1955 to 1972. Although it originated in southern Sudan, the civil war spread to the Nuba Mountains and the Blue Nile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q842380, imported by tools/import/wikidata.mjs. The item's own description reads \"1983–2005 war for South Sudanese independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1983,
     "end": 2005,

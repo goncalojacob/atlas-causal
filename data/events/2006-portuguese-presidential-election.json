@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q2715397"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Portuguese presidential election\", revision 1374338206"
     }
   ],
   "title": "2006 Portuguese presidential election",
-  "summary": "Wikidata item Q2715397, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2006 Portuguese presidential election\", at revision 1374338206, opens: \"A presidential election was held in Portugal on 22 January 2006 to elect a successor to the incumbent President Jorge Sampaio, who was barred from running for a third consecutive term by the Constitution of Portugal. The result was a narrow first-round victory for former prime minister and candidate supported by the Social Democratic Party (PSD), Aníbal Cavaco Silva, who obtained 50.54 percent of the votes, just over the majority required to avoid a runoff election.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2715397, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2006,
     "end": 2006,

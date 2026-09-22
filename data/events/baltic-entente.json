@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q167759"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Baltic Entente\", revision 1363789006"
     }
   ],
   "title": "Baltic Entente",
-  "summary": "Wikidata item Q167759, imported by tools/import/wikidata.mjs. The item's own description reads \"Baltic 1934-1940 cooperation organization\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Baltic Entente\", at revision 1363789006, opens: \"The Baltic Entente was based on Treaty of Good-Understanding and Co-operation signed between Lithuania, Latvia, and Estonia on 12 September 1934 in Geneva. The main objective of the agreement was joint action in foreign policy. It also included commitments to support one another politically and to give diplomatic support in international communication.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q167759, imported by tools/import/wikidata.mjs. The item's own description reads \"Baltic 1934-1940 cooperation organization\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1934,
     "end": 1934,

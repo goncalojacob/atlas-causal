@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -20,7 +24,8 @@
       "imported-facts",
       "m44b-retracted",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q105180889"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2021 Myanmar coup d'état\", revision 1370424594"
     }
   ],
   "title": "2021 Myanmar coup d'état",
-  "summary": "Wikidata item Q105180889, imported by tools/import/wikidata.mjs. The item's own description reads \"2021 military overthrow of the Myanmar's officially elected government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2021 Myanmar coup d'état\", at revision 1370424594, opens: \"A coup d'état in Myanmar began on the morning of 1 February 2021, when democratically elected members of the country's ruling party, the National League for Democracy (NLD), were deposed by the Tatmadaw, Myanmar's military, which then vested power in a military junta. Acting President of Myanmar Myint Swe proclaimed a year-long state of emergency and declared power had been transferred to Commander-in-Chief of Defence Services Senior General Min Aung Hlaing. It declared the results of the November 2020 general election invalid and stated its intent to hold a new election at the end of the state of emergency.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105180889, imported by tools/import/wikidata.mjs. The item's own description reads \"2021 military overthrow of the Myanmar's officially elected government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2021,
     "end": 2021,

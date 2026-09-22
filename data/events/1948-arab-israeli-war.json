@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q49092"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1948 Arab–Israeli War\", revision 1375001749"
     }
   ],
   "title": "1948 Arab–Israeli War",
-  "summary": "Wikidata item Q49092, imported by tools/import/wikidata.mjs. The item's own description reads \"second and final stage of the 1947–1949 Palestine war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1948 Arab–Israeli War\", at revision 1375001749, opens: \"The 1948 Arab–Israeli War, also known as the First Arab–Israeli War, followed the civil war in Mandatory Palestine as the second and final stage of the 1948 Palestine war. The civil war became a war of separate states with the Israeli Declaration of Independence on 14 May 1948, the end of the British Mandate for Palestine at midnight, and the entry of a military coalition of Arab states into the territory of Mandatory Palestine the following morning. The war formally ended with the 1949 Armistice Agreements which established the Green Line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49092, imported by tools/import/wikidata.mjs. The item's own description reads \"second and final stage of the 1947–1949 Palestine war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1948,
     "end": 1949,

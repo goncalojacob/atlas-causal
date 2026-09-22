@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q82664"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iran–Iraq War\", revision 1375407163"
     }
   ],
   "title": "Iran–Iraq War",
-  "summary": "Wikidata item Q82664, imported by tools/import/wikidata.mjs. The item's own description reads \"1980-1988 war between Iran and Iraq\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Iran–Iraq War\", at revision 1375407163, opens: \"The Iran–Iraq War, also called the First Imposed War, Eight-Year War, or Sacred Defense by Iran, began with the Iraqi invasion of Iran in September 1980. After eight years of conflict, both countries accepted a ceasefire deal brokered by the United Nations, which became effective in August 1988. The war caused around 500,000 deaths, making it the deadliest conventional war ever fought between regular armies of developing countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q82664, imported by tools/import/wikidata.mjs. The item's own description reads \"1980-1988 war between Iran and Iraq\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1980,
     "end": 1988,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q696848 names 8 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 6 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q696848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Iraqi War\", revision 1372842948"
     }
   ],
   "title": "Anglo-Iraqi War",
-  "summary": "Wikidata item Q696848, imported by tools/import/wikidata.mjs. The item's own description reads \"British-led Allied military campaign against Iraq under Rashid Ali during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Anglo-Iraqi War\", at revision 1372842948, opens: \"The Anglo-Iraqi War was a British-led Allied military campaign during the Second World War against the Kingdom of Iraq, then ruled by Rashid Ali al-Gaylani who had seized power in the 1941 Iraqi coup d'état with assistance from Germany and Italy. The campaign resulted in the downfall of Gaylani's government, the re-occupation of Iraq by the British, and the return to power of the Regent of Iraq, Prince 'Abd al-Ilah, a British ally.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q696848, imported by tools/import/wikidata.mjs. The item's own description reads \"British-led Allied military campaign against Iraq under Rashid Ali during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1941,
     "end": 1941,

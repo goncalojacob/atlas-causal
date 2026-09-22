@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q665554"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japanese Instrument of Surrender\", revision 1371613000"
     }
   ],
   "title": "Japanese Instrument of Surrender",
-  "summary": "Wikidata item Q665554, imported by tools/import/wikidata.mjs. The item's own description reads \"1945 agreement ending hostilities in WWII\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Japanese Instrument of Surrender\", at revision 1371613000, opens: \"The Japanese Instrument of Surrender was the printed agreement that formalized the surrender of Japan, marking the end of hostilities in World War II. It was signed by representatives from Japan and from the Allied nations: the United States, China, the United Kingdom, the Soviet Union, Australia, Canada, France, the Netherlands, and New Zealand. The signing took place on the deck of USS Missouri in Tokyo Bay just after 09:00 Japan Standard Time (JST) and took effect at 09:25 JST on 2 September 1945.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q665554, imported by tools/import/wikidata.mjs. The item's own description reads \"1945 agreement ending hostilities in WWII\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1945,
     "end": 1945,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -21,7 +25,8 @@
       "m44b-retracted",
       "standing-backfilled",
       "imported-by-wikidata",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -40,10 +45,14 @@
     {
       "source": "wikidata",
       "locator": "Q243620"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Somali Civil War\", revision 1368927093"
     }
   ],
   "title": "Somali Civil War",
-  "summary": "Wikidata item Q243620, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war taking place in Somalia since 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Somali Civil War\", at revision 1368927093, opens: \"The Somali Civil War is an ongoing civil war that is taking place in Somalia. It grew out of resistance to the military junta led by Siad Barre during the 1980s. From 1988 to 1990, the Somali Armed Forces began engaging in combat against various armed rebel groups, including the Somali Salvation Democratic Front in the northeast, the Somali National Movement in the Somaliland War of Independence in the northwest, and the United Somali Congress in the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q243620, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war taking place in Somalia since 1991\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": null,

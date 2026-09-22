@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q1780431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
     }
   ],
   "title": "1952 Egyptian revolution",
-  "summary": "Wikidata item Q1780431, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of King Farouk\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Egyptian revolution of 1952\", at revision 1374209538, opens: \"On 23 July 1952, a coup began in Egypt with the toppling of King Farouk in a coup d'état by the Free Officers Movement, a group of army officers led by Mohamed Naguib and Gamal Abdel Nasser. It ushered in a wave of revolutionary politics in the Arab world, contributing to the escalation of decolonization and the development of Third World solidarity during the Cold War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1780431, imported by tools/import/wikidata.mjs. The item's own description reads \"military overthrow of King Farouk\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1952,
     "end": 1952,

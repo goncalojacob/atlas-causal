@@ -24,7 +24,8 @@
       "imported-facts",
       "imported-names",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -43,6 +44,10 @@
     {
       "source": "wikidata",
       "locator": "Q134949"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Winter War\", revision 1373170950"
     }
   ],
   "title": "Winter War",
@@ -56,7 +61,7 @@
     "Guerra do Inverno",
     "Guerra Soviético-Finlandesa"
   ],
-  "summary": "Wikidata item Q134949, imported by tools/import/wikidata.mjs. The item's own description reads \"1939–1940 war between the Soviet Union and Finland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Winter War\", at revision 1373170950, opens: \"The Winter War was a war between the Soviet Union and Finland. It began with a Soviet invasion of Finland on 30 November 1939, three months after the outbreak of World War II, and ended three and a half months later with the Moscow Peace Treaty on 13 March 1940. Despite superior military strength, especially in tanks and aircraft, the Soviet Union suffered severe losses and initially made little headway.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134949, imported by tools/import/wikidata.mjs. The item's own description reads \"1939–1940 war between the Soviet Union and Finland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1939,
     "end": 1940,

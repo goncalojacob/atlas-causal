@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q318250 names 8 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q318250"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ogaden War\", revision 1373903527"
     }
   ],
   "title": "Ogaden War",
-  "summary": "Wikidata item Q318250, imported by tools/import/wikidata.mjs. The item's own description reads \"1977-78 Somali military offensive over the disputed Ogaden region of Ethiopia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Ogaden War\", at revision 1373903527, opens: \"The Ogaden War, also known as the Ethio-Somali War, was a military conflict between Somalia and Ethiopia fought from July 1977 to March 1978 over control of the sovereignty of the Ogaden region. Somalia launched an invasion in support of the Western Somali Liberation Front (WSLF) insurgency, triggering a broader inter-state war. The intervention drew the disapproval of the Soviet Union, which subsequently withdrew its support for Somalia and backed Ethiopia instead.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q318250, imported by tools/import/wikidata.mjs. The item's own description reads \"1977-78 Somali military offensive over the disputed Ogaden region of Ethiopia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1977,
     "end": 1978,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q713917"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japan–Korea Treaty of 1907\", revision 1369056589"
     }
   ],
   "title": "Japan–Korea Treaty of 1907",
-  "summary": "Wikidata item Q713917, imported by tools/import/wikidata.mjs. The item's own description reads \"1907 unequal treaty between the Empire of Japan and the Korean Empire regarding the surrender of military and judicial power under the Japanese control\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Japan–Korea Treaty of 1907\", at revision 1369056589, opens: \"The Japan–Korea Treaty of 1907(Korean: 한일신협약) was made between the Empire of Japan and the Korean Empire in 1907. Negotiations were concluded on July 24, 1907.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q713917, imported by tools/import/wikidata.mjs. The item's own description reads \"1907 unequal treaty between the Empire of Japan and the Korean Empire regarding the surrender of military and judicial power under the Japanese control\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1907,
     "end": 1907,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +41,14 @@
     {
       "source": "wikidata",
       "locator": "Q161391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Georgian uprising on Texel\", revision 1375503259"
     }
   ],
   "title": "Georgian uprising on Texel",
-  "summary": "Wikidata item Q161391, imported by tools/import/wikidata.mjs. The item's own description reads \"insurgency\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Georgian uprising on Texel\", at revision 1375503259, opens: \"The Georgian uprising on Texel was an insurrection by the 882nd Infantry Battalion Königin Tamara of the Georgian Legion of the German Army stationed on the German-occupied Dutch island of Texel. The battalion was made up of 800 Georgians and 400 Germans, with mainly German officers. It was one of the last battles in the European theatre.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q161391, imported by tools/import/wikidata.mjs. The item's own description reads \"insurgency\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1945,
     "end": 1945,

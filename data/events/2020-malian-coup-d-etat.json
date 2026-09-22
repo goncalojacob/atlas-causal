@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q98457371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2020 Malian coup d'état\", revision 1370424404"
     }
   ],
   "title": "2020 Malian coup d'état",
-  "summary": "Wikidata item Q98457371, imported by tools/import/wikidata.mjs. The item's own description reads \"Malí golpe de estado 2020\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2020 Malian coup d'état\", at revision 1370424404, opens: \"On 18 August 2020, elements of the Malian Armed Forces began a mutiny, and subsequently undertook a coup d'état. Soldiers on pick-up trucks stormed the Soundiata military base in the town of Kati, where gunfire was exchanged before weapons were distributed from the armory and senior officers arrested. Tanks and armoured vehicles were seen on the town's streets, as well as military trucks heading for the capital, Bamako.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q98457371, imported by tools/import/wikidata.mjs. The item's own description reads \"Malí golpe de estado 2020\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2020,
     "end": 2020,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q2139988"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean Civil Wars\", revision 1374058781"
     }
   ],
   "title": "Eritrean Civil Wars",
-  "summary": "Wikidata item Q2139988, imported by tools/import/wikidata.mjs. The item's own description reads \"1972–1974 and 1980–1981 conflicts in Eritrea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Eritrean Civil Wars\", at revision 1374058781, opens: \"The Eritrean War of Independence was an armed conflict and insurgency aimed at achieving self-determination and independence for Eritrea from Ethiopian rule. Starting in 1961, Eritrean insurgents engaged in guerrilla warfare to liberate Eritrea Province from the rule of the Ethiopian Empire under Haile Selassie and later the Derg under Mengistu Haile Mariam. Their efforts ultimately succeeded in 1991 with the fall of the Derg regime.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2139988, imported by tools/import/wikidata.mjs. The item's own description reads \"1972–1974 and 1980–1981 conflicts in Eritrea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1974,
     "end": 1974,

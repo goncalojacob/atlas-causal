@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q482402 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q482402"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gulf of Tonkin incident\", revision 1375232287"
     }
   ],
   "title": "Gulf of Tonkin incident",
-  "summary": "Wikidata item Q482402, imported by tools/import/wikidata.mjs. The item's own description reads \"1964 naval confrontation between North Vietnam and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Gulf of Tonkin incident\", at revision 1375232287, opens: \"The Gulf of Tonkin incident refers to a naval confrontation in the Gulf of Tonkin off the coast of North Vietnam, which led to the United States engaging more directly in the Vietnam War. On 2 August 1964 there was a clash between a destroyer of the United States Navy that was collecting signals intelligence close to North Vietnamese waters, and three North Vietnamese naval vessels. On the night of 4 August, two US destroyers reported they were attacked by North Vietnamese vessels and that they were returning fire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q482402, imported by tools/import/wikidata.mjs. The item's own description reads \"1964 naval confrontation between North Vietnam and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1964,
     "end": 1964,

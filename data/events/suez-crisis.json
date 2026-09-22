@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -20,7 +24,8 @@
       "imported-facts",
       "m42-interval-corrected",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q49101"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suez Crisis\", revision 1374851403"
     }
   ],
   "title": "Suez Crisis",
-  "summary": "Wikidata item Q49101, imported by tools/import/wikidata.mjs. The item's own description reads \"1956 invasion of Egypt by Israel, the United Kingdom, and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Suez Crisis\", at revision 1374851403, opens: \"The Suez Crisis, also known as the second Arab–Israeli war, the Tripartite Aggression in the Arab world and the Sinai War in Israel, was a British–French–Israeli invasion of Egypt in 1956. Israel invaded on 29 October, with the primary objective of re-opening the Straits of Tiran and the Gulf of Aqaba as the recent tightening of the eight-year-long Egyptian blockade further prevented Israeli passage. After issuing a joint ultimatum for a ceasefire, the United Kingdom and France joined the Israelis on 31 October, seeking to depose Egyptian president Gamal Abdel Nasser and regain control of the Suez Canal, which Nasser had nationalised earlier in the year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49101, imported by tools/import/wikidata.mjs. The item's own description reads \"1956 invasion of Egypt by Israel, the United Kingdom, and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1956,
     "end": 1956,

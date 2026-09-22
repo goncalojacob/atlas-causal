@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q695285 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q695285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow Peace Treaty\", revision 1355516673"
     }
   ],
   "title": "Moscow Peace Treaty",
-  "summary": "Wikidata item Q695285, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty signed by Finland and the Soviet Union on 12 March 1940\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Moscow Peace Treaty\", at revision 1355516673, opens: \"The Moscow Peace Treaty was signed by Finland and the Soviet Union on 12 March 1940, and the ratifications were exchanged on 21 March. It marked the end of the 105-day Winter War, upon which Finland ceded border areas to the Soviet Union. The treaty was signed by Vyacheslav Molotov, Andrei Zhdanov and Aleksandr Vasilevsky for the Soviet Union, and Risto Ryti, Juho Kusti Paasikivi, Rudolf Walden and Väinö Voionmaa for Finland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695285, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty signed by Finland and the Soviet Union on 12 March 1940\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1940,
     "end": 1940,

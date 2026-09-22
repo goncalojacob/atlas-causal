@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q696802"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paris Peace Accords\", revision 1376128374"
     }
   ],
   "title": "Paris Peace Accords",
-  "summary": "Wikidata item Q696802, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty between United States, South Vietnam and North Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Paris Peace Accords\", at revision 1376128374, opens: \"The Paris Peace Accords, officially the Agreement on ending the war and restoring peace in Viet-Nam, was a peace agreement signed on 27 January 1973 to establish peace in Vietnam and end the Vietnam War. It included a main treaty and accompanying annexes. The agreement was registered by the United States of America on May 13, 1974, with the United Nations Secretariat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q696802, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty between United States, South Vietnam and North Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1973,
     "end": 1973,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q160161"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Warsaw Ghetto Uprising\", revision 1373044103"
     }
   ],
   "title": "Warsaw Ghetto Uprising",
-  "summary": "Wikidata item Q160161, imported by tools/import/wikidata.mjs. The item's own description reads \"Jewish insurgency against Nazi Germany in German-occupied Poland during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Warsaw Ghetto Uprising\", at revision 1373044103, opens: \"The Warsaw Ghetto Uprising was an uprising by the Jewish resistance in the Warsaw Ghetto in German-occupied Poland during World War II to oppose Nazi Germany's final effort to transport the remaining ghetto population to the gas chambers of the Majdanek and Treblinka extermination camps in 1943. It was the largest single revolt by Jews against the Nazis during World War II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q160161, imported by tools/import/wikidata.mjs. The item's own description reads \"Jewish insurgency against Nazi Germany in German-occupied Poland during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1943,
     "end": 1943,

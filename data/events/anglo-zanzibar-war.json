@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -21,7 +25,8 @@
       "m40-retracted",
       "standing-backfilled",
       "imported-by-wikidata",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -40,10 +45,14 @@
     {
       "source": "wikidata",
       "locator": "Q170850"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Zanzibar War\", revision 1374406907"
     }
   ],
   "title": "Anglo-Zanzibar War",
-  "summary": "Wikidata item Q170850, imported by tools/import/wikidata.mjs. The item's own description reads \"colonial war by the United Kingdom in East-Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Anglo-Zanzibar War\", at revision 1374406907, opens: \"The Anglo-Zanzibar War was a military conflict fought between the United Kingdom and the Sultanate of Zanzibar on 27 August 1896. The conflict lasted between 38 and 45 minutes, marking it as the shortest recorded war in history. The immediate cause of the war was the suspicious death of the pro-British Sultan Hamad bin Thuwaini on 25 August 1896 and the subsequent succession of Sultan Khalid bin Barghash.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q170850, imported by tools/import/wikidata.mjs. The item's own description reads \"colonial war by the United Kingdom in East-Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1896,
     "end": 1896,

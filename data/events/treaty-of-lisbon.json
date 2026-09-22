@@ -9,15 +9,20 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q52843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lisbon\", revision 1366118806"
     }
   ],
   "title": "Treaty of Lisbon",
-  "summary": "Wikidata item Q52843, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty modifying the constitutional basis of the European Union, signed by all the States of the Union in Lisbon on 2007\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of Lisbon\", at revision 1366118806, opens: \"The Treaty of Lisbon is a European agreement that amends the two treaties which form the constitutional basis of the European Union (EU). The Treaty of Lisbon, which was signed by all EU member states on 13 December 2007, entered into force on 1 December 2009. It amends the Maastricht Treaty (1992), known in updated form as the Treaty on European Union (2007) or TEU, as well as the Treaty of Rome (1957), known in updated form as the Treaty on the Functioning of the European Union (2007) or TFEU.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q52843, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty modifying the constitutional basis of the European Union, signed by all the States of the Union in Lisbon on 2007\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2007,
     "end": 2007,

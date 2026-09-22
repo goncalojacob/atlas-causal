@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -19,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q1072042 names 11 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 10 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +44,14 @@
     {
       "source": "wikidata",
       "locator": "Q1072042"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Somalia (2006–2009)\", revision 1375639759"
     }
   ],
   "title": "War in Somalia",
-  "summary": "Wikidata item Q1072042, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between millitants and TFG during War on Terror (2006–2009)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"War in Somalia (2006–2009)\", at revision 1375639759, opens: \"The Ethiopian invasion of Somalia, also known as the Ethiopian occupation of Somalia was an armed conflict lasting from mid-2006 to early 2009. It began when Ethiopian military forces, supported by the United States, invaded Somalia to depose the Islamic Courts Union (ICU) and install the Transitional Federal Government (TFG). The conflict evolved into a military occupation and a rapidly escalating anti-Ethiopian insurgency.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1072042, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between millitants and TFG during War on Terror (2006–2009)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2006,
     "end": 2009,

@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q157873"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Kharkov\", revision 1370750346"
     }
   ],
   "title": "Third Battle of Kharkov",
-  "summary": "Wikidata item Q157873, imported by tools/import/wikidata.mjs. The item's own description reads \"1943 series of battles on the Eastern Front of World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Third Battle of Kharkov\", at revision 1370750346, opens: \"The Third Battle of Kharkov was a series of battles on the Eastern Front of World War II, undertaken by Nazi Germany's Army Group South against the Soviet Red Army, around the city of Kharkov from 19 February to 15 March 1943. Known to the German side as the Donets Campaign and in the Soviet Union as the Donbass and Kharkov operations, the German counterstrike led to the recapture of the cities of Kharkov and Belgorod.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q157873, imported by tools/import/wikidata.mjs. The item's own description reads \"1943 series of battles on the Eastern Front of World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1943,
     "end": 1943,

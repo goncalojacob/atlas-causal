@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -18,7 +22,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q233657"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Chimurenga\", revision 1370619280"
     }
   ],
   "title": "Second Matabele War",
-  "summary": "Wikidata item Q233657, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought between 1896 and 1897 in the area then known as Rhodesia, now Zimbabwe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"First Chimurenga\", at revision 1370619280, opens: \"The First Chimurenga, also known as the Second Matabele War, was fought between 1896 and 1897 in the region that later became Southern Rhodesia. The conflict was initially between the British South Africa Company (BSAC) and the Matabele people, later expanding to include the Shona people in the rest of Southern Rhodesia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233657, imported by tools/import/wikidata.mjs. The item's own description reads \"war fought between 1896 and 1897 in the area then known as Rhodesia, now Zimbabwe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1896,
     "end": 1897,
