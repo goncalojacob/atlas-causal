@@ -16174,6 +16174,55 @@ umbrellas, and reads the card's two "Part of" lines in order.
 `docs/screens/m79-umbrella-first.png` and `m79-umbrella-second.png` are the
 same event opened from either parent; no other picture was rewritten.
 
+### Amendment A1: the twelve elements, named
+
+The amendment asked which of two things `timeline-browser` 217's last bound
+was reading, and the answer was taken off the real page at
+`?view=timeline&selected=carnation-revolution-1974&focus=none`, on the merged
+data, with a MutationObserver and a census of the drawing on either side of
+the click. On the corpus as it stands the click gives back **thirteen**
+elements (1,032 to 1,019; the amendment saw twelve of 969, which is the same
+reading on a slightly smaller atlas), and they are:
+
+| what leaves | how many |
+| --- | --- |
+| bars: five out, three in | −2 |
+| their `<title>` elements | −2 |
+| bar labels: five out, one in | −4 |
+| packing rows (`rect.lane`) no longer needed | −5 |
+
+The five bars that leave are **`spinola-resigns-1974`,
+`alvor-agreement-1975`, `constituent-assembly-election-1975`,
+`nationalisations-1975` and `fiftieth-anniversary-25-april-2024`** — every one
+of them filed under `third-portuguese-republic-since-1974`, and therefore *not*
+main events and not in the resting picture. They were on screen only because
+the reader was holding the revolution they hang from. The three that arrive —
+`the-first-columbian-voyage-1492`, `treaty-of-tordesillas-1494` and
+`portuguese-landfall-in-brazil-1500` — are what the newly chosen event holds,
+drawn faded because they fall outside the band. With two fewer bars the
+packing needs five fewer rows, and the labels that went are the five that named
+the five bars that went.
+
+**So it is the first of the amendment's two cases and not the second**: the
+click is a selection changing what the reader is holding, which is M65's own
+rule, and the count only looks like a leak because M42's filing pass put most
+of what a selection reaches *under an umbrella*, where the resting picture does
+not draw it. The thing that would have been a display defect of M77 under
+volume was measured for and is not there: **no bar that stayed lost its label,
+and no ring was dropped** — every label that went belongs to a bar that went.
+The bound therefore becomes the same share of the drawing as the two above it,
+with that reason written where the assertion is, and the test is otherwise
+untouched.
+
+One thing was seen while measuring and is **not M79's and not fixed here**:
+`the-first-columbian-voyage-1492` and `treaty-of-tordesillas-1494` arrive
+labelled *still loading* and stay that way, although
+`attributes-1400-1499-*.json` is fetched at first paint and carries both
+titles. It reproduces on `origin/m0` on a cold load with no click at all, so it
+is the attribute fill not reaching a record that is held from outside the band,
+and it belongs to whoever takes that up — widening this milestone into it would
+have been a second change under one brief.
+
 ### Checks
 
 `node tools/validate.mjs --index`: **11,189 records, 5 regions, 0 errors, 263
@@ -16229,13 +16278,22 @@ historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
       the claim commit is the proof.** Run 1237, on `70313d9a` — an `m0` tree
       with one line appended to `STATUS.md` and nothing else — failed on that
       one assertion, `969 to 958`, and a checkout of `origin/m0` in the sandbox
-      failed on it twice at `969 to 957`. `Math.abs(after - before) < 10` on a
-      drawing of 969 elements: M42's filing pass had landed
-      more rings in the bars layer, which is the paragraph written directly
-      above the assertion. It is a share of the drawing now (two per cent, or
-      ten, whichever is larger), as the two bounds above it already are. An
-      absolute bound raised by one per milestone is a bound that means nothing,
-      which is deviation 716's own argument arriving where it was going.
+      failed on it twice at `969 to 957`. `Math.abs(after - before) < 10` read
+      12 of 969 when the amendment was written and 13 of 1,032 when the
+      elements were finally named, on `m0`'s own head and on this branch alike.
+      **What they are is the section above**: five events out, three in, four
+      labels, two titles and five rows — the picture answering to a different
+      selection, which is what M65 says a selection is. So the bound is a share
+      of the drawing now (two per cent, or ten, whichever is larger), as the two
+      bounds above it already are. An absolute bound raised by one per
+      milestone is a bound that means nothing, which is deviation 716's own
+      argument arriving where it was going. The reading this entry carried
+      first — *M42's filing pass had landed more rings in the bars layer* — is
+      what the two churn bounds above this one are about, and it was wrong
+      about this one: **no ring came or went in the count**. It was written off
+      the churn list without the census beside it, which is the thing the
+      amendment asked for by name, and the corrected sentence is the one the
+      test now carries.
 
 ## M42 — the world at scale (in progress, branch `m42`)
 

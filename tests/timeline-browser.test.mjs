@@ -318,13 +318,24 @@ test('a state change updates the bars in place and does not rebuild them', { ski
     assert.ok(before > 100, `the atlas drew something (${before} elements)`);
     assert.ok(churn.removed < handful, `the drawing was not rebuilt (${churn.removed} of ${before} elements removed)`);
     assert.ok(churn.added < handful, `nor built again (${churn.added} of ${before} elements added)`);
-    // A share of the drawing, for the reason the bound above it is one. The
-    // absolute ten was written when `data/` held five rings; every event filed
-    // under an umbrella makes another, M42's filing pass makes them by the
-    // dozen, and a ring in the bars layer moves `reuse()`'s positional take —
-    // which is the paragraph above, and is not the drawing being rebuilt. The
-    // property this line is about is that the picture is the *same size*
-    // afterwards, and that is a proportion and not a number (M79, and red on
+    // A share of the drawing, for the reason the bound above it is one, and
+    // the thirteen elements the click gives back on the corpus of M79 were
+    // counted on the real page before this number was written. They are:
+    // **the five events the old selection was holding leaving the picture**
+    // — Spínola's resignation, the Alvor Agreement, the Constituent Assembly
+    // election, the nationalisations and the fiftieth anniversary, every one
+    // of them filed under `third-portuguese-republic-since-1974` and so
+    // outside the resting picture, drawn only because the reader was holding
+    // the revolution they hang from — **less the three the new selection
+    // brings** (the first Columbian voyage, Tordesillas, the landfall in
+    // Brazil), **with the two net titles and the four net labels that go with
+    // them, and the five packing rows that are then empty**. Not one bar that
+    // stayed lost its label and no ring was dropped, which is the thing a
+    // reader would have missed: the drawing did what M65 says a selection
+    // does, over a corpus where an umbrella now holds most of the events a
+    // selection reaches. A count that is somebody's held set is not a
+    // constant, and an absolute bound raised by one per milestone is a bound
+    // that means nothing, so it is a proportion (M79 amendment A1; red on
     // `m0` before this branch existed).
     const same = Math.max(10, Math.round(before * 0.02));
     assert.ok(Math.abs(after - before) < same, `and it is the same drawing (${before} to ${after})`);
