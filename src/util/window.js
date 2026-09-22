@@ -7,24 +7,20 @@
 // loaded atlas knows, so resolving happens here — at the edge of a view —
 // and never in the state.
 
-import { extent, toAstronomical, fromAstronomical } from './dates.js';
+import { extent, toAstronomical } from './dates.js';
 
 // state + the data's own extent → { from, to } in astronomical years, or
 // null when there is no data to bound it with.
 //
-// `opens` is the atlas's own opening window (`opensOn` below, computed in
-// data.js beside the extent), and it answers **only the URL that names
-// neither end**. Over 1890–2025 there is none and the whole extent is the
-// answer, as it always was; over 1415–2025 there is one, because the whole
-// extent is six centuries at once and no reader starts there.
-//
-// Only when both ends are null, and deliberately: `?from=1500` alone still
-// runs to the end of the data. One named bound is a reader saying where to
-// start and leaving the other to the corpus, and answering it with a century
-// somewhere else would be answering a question nobody asked.
-export function resolveWindow(state, dataExtent, opens = null) {
+// **A URL that names neither end is the whole of the data** (M85, A4). It was
+// the densest century between M43b and M85: `opensOn` below picked it, and the
+// resting map was 1900–1999 with nothing of 1492–1899 drawn at all — "Portugal
+// in the 20th century", where the atlas is about the world since 1492. M65 is
+// what makes the whole span cheap: at rest a view draws the **main events**
+// alone, so six centuries at once is twenty marks and not six thousand, and
+// the reader narrows from there rather than being narrowed for.
+export function resolveWindow(state, dataExtent) {
   if (!dataExtent) return null;
-  if (opens && state.from === null && state.to === null) return { from: opens.from, to: opens.to };
   const from = state.from === null ? dataExtent.min : toAstronomical(state.from);
   const to = state.to === null ? dataExtent.max : toAstronomical(state.to);
   return from <= to ? { from, to } : { from: to, to: from };
@@ -88,14 +84,10 @@ export function horizonIsOpen(state) {
 // the order of the years is the same in both numberings, and only arithmetic
 // needs the astronomical one.
 //
-// `opens` for the same reason `resolveWindow` takes it, and it has to be the
-// same answer: this is asked to know whether choosing a record needs the band
-// moved (search-box.js), and a question about the drawn window answered from
-// the written one would leave the reader's own choice faded outside it.
-export function containsYear(state, year, opens = null) {
-  if (opens && state.from === null && state.to === null) {
-    return year >= fromAstronomical(opens.from) && year <= fromAstronomical(opens.to);
-  }
+// It took an `opens` argument until M85, so that a question about the drawn
+// window was not answered from the written one. The two are the same answer
+// again now that nothing narrows a resting window.
+export function containsYear(state, year) {
   return (state.from === null || year >= state.from) && (state.to === null || year <= state.to);
 }
 
@@ -115,23 +107,24 @@ export function decadeOf(astronomicalYear) {
   return { from: start, to: start + 9 };
 }
 
-// ─── Centuries: how the corpus is spread, and where the atlas opens ─────────
+// ─── Centuries: how the corpus is spread ───────────────────────────────────
 //
-// M43b. Until now the extent was the whole of what the timeline needed to
-// know about time: the lanes were drawn on it linearly and the atlas opened
-// on the whole of it. Over 1890–2025 that is right — a hundred and thirty-five
-// years is one picture — and over 1415–2025 it is not: an even scale over six
-// centuries gives the years nobody wrote about the same width as the years
-// everybody did, and an opening window as wide as the data is a window that
-// shows the reader every event at once and none of them legibly.
+// M43b. Until then the extent was the whole of what the timeline needed to
+// know about time: the lanes were drawn on it linearly. Over 1890–2025 that is
+// right — a hundred and thirty-five years is one picture — and over 1415–2025
+// it is not: an even scale over six centuries gives the years nobody wrote
+// about the same width as the years everybody did.
 //
-// So two questions are asked of the corpus here, and both are answered by the
-// same count: how many events each century holds. The timeline's scale asks it
-// to know whether to bucket (timeline-scale.js); the atlas asks it once at
-// load to know which century to open on (data.js, `opens`). Both are facts
-// about the data and neither is state, which is why neither is ever written
-// into the URL — an empty URL stays an empty URL, and what it opens on is the
-// corpus's answer rather than a pair of years frozen into a link.
+// So one question is asked of the corpus here: how many events each century
+// holds. The timeline's scale asks it to know whether to bucket
+// (timeline-scale.js). It is a fact about the data and not state, which is why
+// it is never written into the URL.
+//
+// M43b asked it a second time as well, to choose the century the atlas opened
+// on. That is gone (M85, A4, and `resolveWindow` above): at rest the window is
+// the whole span, because M65 made the resting picture the main events and the
+// whole span is what the atlas is about. `crowded` stays and has one reader
+// left — the scale, which still has six centuries to draw on one axis.
 
 export const CENTURY = 100;
 
@@ -183,40 +176,29 @@ export function crowded(counts, dataExtent) {
   return most > CROWDING * (total / (span / CENTURY));
 }
 
-// The window a reader with no `?from=` and no `?to=` arrives on: the century
-// that holds most of the corpus, clipped to the data's own ends. Null while
-// the corpus is not crowded — then the whole extent is still the opening, as
-// it has been since the window existed.
+// How fast a wheel answers, everywhere a wheel is answered: the exponent one
+// notch of `deltaY` is multiplied by before `Math.exp`.
 //
-// The ends are astronomical, like the extent; the caller writes them into the
-// state in historians' numbering, which is what the URL carries.
-export function opensOn(counts, dataExtent) {
-  if (!crowded(counts, dataExtent)) return null;
-  let best = null;
-  // The earliest century where two hold the same number, so the answer does
-  // not depend on the order a Map happened to be filled in.
-  for (const [century, n] of counts) {
-    if (best === null || n > best.n || (n === best.n && century < best.century)) best = { century, n };
-  }
-  if (best === null) return null;
-  return {
-    from: Math.max(dataExtent.min, best.century),
-    to: Math.min(dataExtent.max, best.century + CENTURY - 1),
-  };
-}
+// **One export and three readers** (M85, B13). It was written out three times
+// — here, in `map.js` and in `graph-view.js` — each with a comment saying it
+// was the map's own factor "so both pictures answer a wheel at the same rate",
+// which is a rule three copies of a number cannot keep. The band's own rule
+// (`tests/m64.test.mjs`) is now held by the two pictures importing this rather
+// than by the absence of a string in their source.
+export const WHEEL_FACTOR = 0.0015;
 
 // The wheel over the timeline. Narrowing and widening the band around the
 // year under the cursor, in astronomical years, with the cursor's year
 // keeping its place inside the band — so the reader zooms onto what the
 // pointer is over and not onto the middle.
 //
-// `deltaY` is the browser's own, and the factor is the map's, so a wheel
-// answers at the same rate in both pictures. The result is the two ends, not
-// yet clamped to the data: what the extent allows is the caller's, which is
-// the same clamp every other move of the band goes through.
+// `deltaY` is the browser's own, and the factor is the shared one above, so a
+// wheel answers at the same rate in all three pictures. The result is the two
+// ends, not yet clamped to the data: what the extent allows is the caller's,
+// which is the same clamp every other move of the band goes through.
 export function zoomWindow(window, year, deltaY, { whole = Infinity } = {}) {
   const span = Math.max(window.to - window.from, 1);
-  let wanted = Math.round(span * Math.exp(deltaY * 0.0015));
+  let wanted = Math.round(span * Math.exp(deltaY * WHEEL_FACTOR));
   // A one-year band multiplied by 1.15 rounds back to one year, and the
   // wheel would do nothing at the narrow end for ever.
   if (wanted === span) wanted = span + (deltaY > 0 ? 1 : -1);

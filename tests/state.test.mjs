@@ -6,7 +6,7 @@ import {
 } from '../src/state.js';
 import {
   resolveWindow, overlaps, windowAt, containsYear, decadeOf, zoomWindow,
-  centuryOf, centuryCounts, crowded, opensOn,
+  centuryOf, centuryCounts, crowded,
 } from '../src/util/window.js';
 
 test('parse and format round trip', () => {
@@ -253,40 +253,27 @@ test('the threshold is a corpus that is both long and lopsided', () => {
   assert.equal(crowded(new Map(), DEEP_EXTENT), false);
 });
 
-test('the atlas opens on the century holding most of the corpus, or on nothing', () => {
-  assert.equal(opensOn(MODERN, MODERN_EXTENT), null, 'under the threshold there is no opening window');
-  assert.deepEqual(opensOn(DEEP, DEEP_EXTENT), { from: 1900, to: 1999 });
-  // Clipped to the data at both ends: a corpus that stops in 1950 does not
-  // open on a window running to 1999.
-  assert.deepEqual(opensOn(DEEP, { min: 1415, max: 1950 }), { from: 1900, to: 1950 });
-  // The earliest of two equal centuries, so the answer does not depend on the
-  // order the Map happened to be filled in.
-  const tied = new Map([[1900, 50], [1400, 50], [1300, 1], [1500, 1], [1600, 1], [1700, 1], [1800, 1], [2000, 1]]);
-  assert.deepEqual(opensOn(tied, { min: 1300, max: 2099 }), { from: 1400, to: 1499 });
-});
+// M85 (A4) took the opening century away: `opensOn` is gone and an empty URL
+// is the whole span again, because M65 made the resting picture the main
+// events and six centuries of those is one picture. What is left of M43b is
+// `crowded`, which the timeline's scale still asks (timeline-scale.js).
 
-test('the opening window answers the URL that names neither end, and no other', () => {
-  const opens = opensOn(DEEP, DEEP_EXTENT);
-  assert.deepEqual(resolveWindow(defaultState(), DEEP_EXTENT, opens), { from: 1900, to: 1999 });
+test('the window an empty URL is, is the whole of the data', () => {
+  assert.deepEqual(resolveWindow(defaultState(), DEEP_EXTENT), { from: 1415, to: 2025 });
   // One named bound is a reader saying where to start and leaving the other to
-  // the corpus: the opening century has nothing to do with it.
-  assert.deepEqual(resolveWindow({ from: 1415, to: null }, DEEP_EXTENT, opens), { from: 1415, to: 2025 });
-  assert.deepEqual(resolveWindow({ from: null, to: 1580 }, DEEP_EXTENT, opens), { from: 1415, to: 1580 });
+  // the corpus.
+  assert.deepEqual(resolveWindow({ from: 1415, to: null }, DEEP_EXTENT), { from: 1415, to: 2025 });
+  assert.deepEqual(resolveWindow({ from: null, to: 1580 }, DEEP_EXTENT), { from: 1415, to: 1580 });
   // And the founding period is the founding period.
-  assert.deepEqual(resolveWindow({ from: 1415, to: 1580 }, DEEP_EXTENT, opens), { from: 1415, to: 1580 });
-  // No opening window at all: the whole extent, as it always was.
-  assert.deepEqual(resolveWindow(defaultState(), DEEP_EXTENT, null), { from: 1415, to: 2025 });
+  assert.deepEqual(resolveWindow({ from: 1415, to: 1580 }, DEEP_EXTENT), { from: 1415, to: 1580 });
 });
 
 test('whether a year is already in the window is asked of the window that is drawn', () => {
-  const opens = opensOn(DEEP, DEEP_EXTENT);
-  assert.equal(containsYear(defaultState(), 1415, null), true, 'with no opening window, every year');
-  assert.equal(containsYear(defaultState(), 1415, opens), false, 'and with one, only that century');
-  assert.equal(containsYear(defaultState(), 1950, opens), true);
-  // A written bound is the reader's own and the opening window never overrides
-  // it.
-  assert.equal(containsYear({ from: 1415, to: 1580 }, 1500, opens), true);
-  assert.equal(containsYear({ from: 1415, to: 1580 }, 1950, opens), false);
+  assert.equal(containsYear(defaultState(), 1415), true, 'with no bound written, every year');
+  assert.equal(containsYear(defaultState(), 1950), true);
+  // A written bound is the reader's own.
+  assert.equal(containsYear({ from: 1415, to: 1580 }, 1500), true);
+  assert.equal(containsYear({ from: 1415, to: 1580 }, 1950), false);
 });
 
 test('an interval is in the window when it overlaps it at all', () => {

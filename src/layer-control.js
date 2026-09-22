@@ -38,6 +38,23 @@ const LAYER_ROWS = [
   { id: 'events', label: 'events' },
 ];
 
+// **What the legend draws, as a value it is handed rather than a thing it
+// works out** (M85, B14). The rule "the categories are not here" was held by a
+// test grepping this file for `glyphId`, which a rename would pass and a
+// comment would fail. It is held by this instead: the rows are the two fixed
+// ones and whichever of the manifest's base layers `LAYERS` knows, and there
+// is no argument by which a category could become one.
+//
+// `coast` is in the manifest's list because it is drawn and has no switch
+// because it does not turn off (deviation 523); `land` is a member with no row
+// so that an old `?layers=` still reads.
+export function legendRows(baseLayers = []) {
+  return {
+    rows: LAYER_ROWS,
+    base: baseLayers.map((layer) => layer.id).filter((id) => LAYERS.includes(id)),
+  };
+}
+
 export function createLayerControl(group, { atlas, state }) {
   if (!group) return;
   // The categories **in use**, from the manifest — not read to draw a switch
@@ -47,10 +64,8 @@ export function createLayerControl(group, { atlas, state }) {
   // use would write a list that could never mean "all of them" again.
   const all = categoriesShown(atlas.manifest).map((c) => c.id);
   // As camadas do mapa de base, do manifesto e pela ordem do manifesto — a
-  // mesma ordem por que são desenhadas (map.js). Só as que `LAYERS` conhece:
-  // `coast` está na lista do manifesto porque é desenhada, e não tem ficha
-  // porque não se desliga.
-  const base = (atlas.baseLayers ?? []).map((layer) => layer.id).filter((id) => LAYERS.includes(id));
+  // mesma ordem por que são desenhadas (map.js), por `legendRows` acima.
+  const { rows, base } = legendRows(atlas.baseLayers ?? []);
 
   const row = ({ id, label }) => `<label><input type="checkbox" data-layer="${esc(id)}" checked> ${esc(label)}</label>`;
   // O rótulo de uma camada de base é o seu id, e a amostra ao lado dele é o que
@@ -59,7 +74,7 @@ export function createLayerControl(group, { atlas, state }) {
   // delas se escreve duas vezes.
   const baseRow = (id) => `<label><input type="checkbox" data-layer="${esc(id)}" checked>`
     + `<span class="swatch swatch-${esc(id)}" aria-hidden="true"></span> ${esc(id)}</label>`;
-  group.innerHTML = LAYER_ROWS.map(row).join('')
+  group.innerHTML = rows.map(row).join('')
     // O mapa de base, fechado e no fim: são as camadas de baixo, e a ordem do
     // controlo é a ordem em que a página é desenhada. Vazio — um manifesto sem
     // `base` — não desenha `<details>` nenhum: nada se desenha que não tenha

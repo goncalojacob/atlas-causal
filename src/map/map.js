@@ -11,11 +11,11 @@ import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './proje
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
 import { createRegionsLayer } from './layers/regions.js';
-import { createPresencesLayer } from './layers/presences.js';
-import { chainEdges, walkOrSelect } from '../chain.js';
+import { bordersNote, createPresencesLayer } from './layers/presences.js';
+import { walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
-import { resolveWindow, withMargin, overlaps } from '../util/window.js';
+import { resolveWindow, withMargin, overlaps, WHEEL_FACTOR } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
 import { largeEventsIn } from '../large.js';
 import { isParent } from '../parts.js';
@@ -483,7 +483,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   root.addEventListener('wheel', (e) => {
     e.preventDefault();
     const [x, y] = toSvg(e);
-    const factor = Math.exp(-e.deltaY * 0.0015);
+    const factor = Math.exp(-e.deltaY * WHEEL_FACTOR);
     const k = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, transform.k * factor));
     const ratio = k / transform.k;
     transform = { k, x: x - (x - transform.x) * ratio, y: y - (y - transform.y) * ratio };
@@ -523,12 +523,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
 
   container.append(root);
   container.append(territoriesNote);
-  container.append(corner);
-  // The key to the marks (M82, A7). Built here and never drawn again: what a
-  // row stands for is a class and not a state, so it is the same box on every
+  // The bottom-left corner of the map, as one column (M85, §4). The corner and
+  // the key are both anchored there and both were absolutely positioned, which
+  // was invisible while the corner was usually empty and is not now that it
+  // carries the borders line: the key's button sat over the first words of it.
+  // One stack, the key at the bottom where it has always been and the corner
+  // above it.
+  //
+  // The key to the marks is M82's (A7). Built here and never drawn again: what
+  // a row stands for is a class and not a state, so it is the same box on every
   // frame. Outside the SVG, as the graph's is, so panning and zooming leave it
   // where it is.
-  container.append(mapKey());
+  const bottomLeft = document.createElement('div');
+  bottomLeft.className = 'map-corner-stack';
+  bottomLeft.append(corner);
+  bottomLeft.append(mapKey());
+  container.append(bottomLeft);
   container.append(exportButton(root, 'map'));
 
   // --- when the map is drawn again ----------------------------------------
@@ -576,7 +586,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     regionsGroup.style.display = drawingEvents ? '' : 'none';
     // Events by overlap with the window, territories by its far end: a
     // border is a state of affairs at a moment, an event is an interval.
-    const timeWindow = resolveWindow(s, atlas.extent, atlas.opens);
+    const timeWindow = resolveWindow(s, atlas.extent);
     // And one period either side of it, which is as far out as the map draws
     // at all. Inside the margin and outside the band a mark is faded; past
     // the margin there is no mark, and the timeline is where the reader sees
@@ -597,16 +607,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const shown = working.shown;
     const kept = (id) => shown.has(id);
 
-    // The two lists of *edges*, which are lines and not marks: the ids of
-    // their ends are in the working set, the edge objects are needed here.
-    const walked = chainEdges(atlas, s.chain)
-      .filter((e) => kept(e.from) && kept(e.to));
-    const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
-      .filter((e) => kept(e.from) && kept(e.to));
+    // The two lists of *edges*, which are lines and not marks, and the path as
+    // one set — all three from `emphasis.js` since M85 (B13). They were
+    // composed here, and identically in `timeline.js` and `graph-view.js`, out
+    // of what that function had already computed and thrown away.
+    const walked = working.walkedEdges;
+    const consequenceEdges = working.consequenceEdges;
     const chosenEdge = s.edge ? (atlas.edges.get(s.edge) ?? null) : null;
-    // A selected event is on the path it is the head of, which is what makes
-    // its mark madder rather than merely ringed.
-    const pathIds = new Set([...working.path, ...working.selected]);
+    const pathIds = working.pathIds;
     // Through resolve(), so a former id in the URL highlights the same
     // actor the panel is showing.
     const actor = s.actor ? atlas.resolve(s.actor) : null;
@@ -634,7 +642,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // The name or nothing, never the slug (M83, B16): the wash's tooltip is
       // read, and a title arrives with its century (attributes.js).
       .map((l) => ({ region: l.region, title: labelOf(atlas, l.event) ?? LOADING_LABEL })));
-    drawCorner(large.filter((l) => l.scope === 'worldwide'));
+    drawCorner(large.filter((l) => l.scope === 'worldwide'), s, timeWindow);
     const result = events.render({
       events: drawn,
       window: timeWindow,
@@ -711,7 +719,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     //
     // Não entra na chave do render porque já lá está: a janela é um dos seus
     // campos, e uma banda que se mexe redesenha o mapa de qualquer maneira.
-    const year = resolveWindow(s, atlas.extent, atlas.opens)?.to ?? null;
+    const year = resolveWindow(s, atlas.extent)?.to ?? null;
     // Como uma cidade chega ao registo de lugar que é. A correspondência é
     // dados e não código: a `id` vem escrita na própria feature, posta lá pelo
     // importador a partir do `wikidata` ou de uma linha que uma pessoa
@@ -856,12 +864,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // it. Rewritten only when it changes, because the map redraws on every pan
   // and this is markup rather than an attribute. Everything from `data/` goes
   // through `esc()`: a title is untrusted input here as everywhere else.
-  function drawCorner(worldwide) {
-    const html = worldwide.length === 0 ? '' : (() => {
-      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
-      return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
+  // And, since M85 (A15), which year's borders are under the marks. That line
+  // was on the timeline's band, on a view that draws no borders at all: it was
+  // written when the lanes ran under the map and outlived the arrangement it
+  // was a note about by six milestones. Here it is beside the picture it is
+  // about, and only while the territories are being drawn.
+  function drawCorner(worldwide, s, timeWindow) {
+    const borders = s.layers.includes('territories')
+      ? bordersNote(atlas, timeWindow?.to ?? null) : null;
+    const html = [
+      worldwide.length === 0 ? '' : (() => {
+        const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
+        return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
         ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`;
-    })();
+      })(),
+      borders === null ? '' : `<p class="map-borders">${esc(borders)}</p>`,
+    ].filter(Boolean).join('');
     if (corner.innerHTML !== html) corner.innerHTML = html;
     corner.hidden = html === '';
   }

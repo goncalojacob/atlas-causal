@@ -84,28 +84,44 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     // and on the timeline's own view since M60.
     await open(page, url('?fixtures=1&group=region&view=timeline'),
       'return document.querySelectorAll("#timeline [data-bar]").length > 0;');
+    // **Every century first.** Since M77 the rows are packed so that no two
+    // titles overlap, and a title arrives with its century (attributes.js), so
+    // a shard landing repacks the lanes — a bar that was in `row-0` is in
+    // `row-1` on the next frame. Reading the lanes on one frame and their
+    // order on another was a race the test happened to win while the atlas
+    // opened on one century (M85, A4) and loses now that it opens on all of
+    // them. Waiting is how the fact is read where it holds; the assertions are
+    // unchanged.
+    await waitFor(page, `return document.querySelectorAll('#timeline rect.bar[data-id]').length > 0
+      && [...document.querySelectorAll('#timeline .layer-barLabels text')].length > 0;`, 'the titles');
 
-    const lanes = await page.eval(`const out = {};
+    // Both in one evaluation, off one frame, for the same reason.
+    const seen = await page.eval(`const out = {};
       for (const el of document.querySelectorAll('#timeline [data-bar]')) {
         const lane = el.getAttribute('data-lane');
         out[lane] = out[lane] ?? [];
-        out[lane].push(el.getAttribute('tabindex'));
+        out[lane].push(el);
       }
-      return out;`);
-    const names = Object.keys(lanes);
+      const lanes = {};
+      for (const lane of Object.keys(out)) {
+        out[lane].sort((a, b) => Number(a.getAttribute('x')) - Number(b.getAttribute('x')));
+        lanes[lane] = out[lane].map((el) => ({
+          tabindex: el.getAttribute('tabindex'),
+          key: el.getAttribute('data-id') ?? 'cluster:' + el.getAttribute('data-cluster'),
+        }));
+      }
+      return lanes;`);
+    const names = Object.keys(seen);
     assert.ok(names.length > 1, `more than one lane has bars (${names.join(', ')})`);
     for (const lane of names) {
-      const reachable = lanes[lane].filter((t) => t === '0');
-      assert.equal(reachable.length, 1, `lane ${lane} is one tab stop, not ${lanes[lane].length}`);
+      const reachable = seen[lane].filter((bar) => bar.tabindex === '0');
+      assert.equal(reachable.length, 1, `lane ${lane} is one tab stop, not ${seen[lane].length}`);
     }
 
     // Along the lane with the arrows, in the order the bars are drawn in.
-    const busiest = names.map((lane) => ({ lane, n: lanes[lane].length })).sort((a, b) => b.n - a.n)[0];
+    const busiest = names.map((lane) => ({ lane, n: seen[lane].length })).sort((a, b) => b.n - a.n)[0];
     assert.ok(busiest.n > 1, 'a lane with somewhere to walk to');
-    const order = await page.eval(`return [...document.querySelectorAll('#timeline [data-bar]')]
-      .filter((el) => el.getAttribute('data-lane') === ${JSON.stringify(busiest.lane)})
-      .sort((a, b) => Number(a.getAttribute('x')) - Number(b.getAttribute('x')))
-      .map((el) => el.getAttribute('data-id') ?? 'cluster:' + el.getAttribute('data-cluster'));`);
+    const order = seen[busiest.lane].map((bar) => bar.key);
 
     await page.eval(`document.querySelector('#timeline [data-bar][tabindex="0"][data-lane=' + JSON.stringify(${JSON.stringify(busiest.lane)}) + ']').focus(); return true;`);
     assert.equal((await page.eval(FOCUSED)).lane, busiest.lane);

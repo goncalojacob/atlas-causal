@@ -4070,3 +4070,84 @@ and the lane protocol forbids rebasing — so it is cherry-picked, and no-ops wh
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. No record, no historical claim. `docs/drafts/`
 ignored. Deviations **1183 to 1191**.
+
+## M85 — the first review's remainder
+
+Lane A, on `m85`. `docs/m85-brief.md` over the Fable review of 22 September:
+part A's findings 4, 12, 14, 15, 16 and 17 and part B's 13 and 14, the ones
+M82, M83 and M84 did not take, plus one test the day's landings showed to be
+brittle. **All nine sections done, none refused.** No record, no historical
+claim, nothing under `data/` but the generated index.
+
+### The first picture is the whole span (A4)
+
+`opensOn()` opened a crowded corpus on its densest century, so the resting map
+was 1900–1999: nothing of 1492–1899, three marks in Africa, three in Asia,
+none in Russia or Central Asia, and one mark at Lisbon carrying "+46". The
+owner's goal is the whole world; the first screen said "Portugal in the 20th
+century".
+
+What made that right in M43b is what M65 removed: six centuries at once is
+illegible for six thousand marks and not for the **main events**, which is
+what a view draws at rest. The picture is now 242 main events of 668 active
+over 1492–2026, and it is one map — `docs/screens/m85-first-screen.png`.
+
+`opensOn` is gone with the `opens` argument that carried it through eleven
+call sites. `crowded` and `centuryCounts` stay: the timeline's scale still
+asks them whether to bucket its axis. A stack says `46 more` and not `+46`,
+in the words its own title uses and composed with it, once, in `cluster.js`.
+
+### The controls, the front page and the public pages
+
+- **the graph's filter** said "draws [two links or more ▾]"; each option is a
+  sentence now — "Show events with at least 2 connections". Kept rather than
+  dropped on the measurement: of 242 main events the floor keeps 232 at one,
+  154 at two, 82 at three, and nothing at its default of zero (M82);
+- **the intro's claim** — "Every link carries a written explanation and its
+  sources" — is counted at build time and carried in the manifest, because the
+  browser can see neither an edge's argument nor its sources. 658 of 658 on
+  this corpus, so the sentence stands; it says "N of the M" the moment it does
+  not, and nothing at all where it has not been told;
+- **"borders as of 1999"** left the timeline, which draws no borders, for the
+  map's own corner; **"Export this view"** says "Export as SVG";
+- **`about.html`** was 40,000 characters of design essay opening on
+  "thirty-seven of the records … happened in Lisbon". It is 6,090 characters
+  against a stated bound of 8,000 — what it is, who makes it and what has been
+  read, the three confidence levels, the licences, what is coming — in
+  sentences the repository already says of itself, and none about history. The
+  essay is `essay.html`, `<main>` byte for byte, linked from the foot;
+- **the bibliography** counts "Works cited" (63 sources, 3,393 citations)
+  apart from "Base maps and borders" (2, 9,301), which a reader used to see
+  as one list dominated by two map datasets. Which are which is asked of
+  `origin.tool` through `IMPORT_LICENCE_ORIGINS`, not of a list of ids.
+
+### Two structural clean-ups, and one test
+
+`assemble` returns `pathIds`, `walkedEdges`, `consequenceEdges` and
+`convergingEdges`, which the three views each rebuilt; the convergence query
+ran twice per state and runs once. `WHEEL_FACTOR` is the one copy of the rate
+a wheel answers at. `shown` is unchanged.
+
+Three tests held conventions by regex over file text and are now the
+boundaries they stood for: `legendRows` is what the legend draws,
+`WINDOW_CONTROL_HTML` is what the window control renders, and the wheel's rate
+is one export imported by every picture that answers a wheel — including the
+graph's, which the scan it replaces never looked at.
+
+The band-drag test's answer is **neither** of the two the brief offers, and
+`STATUS.md` says why: the test cannot wait for "every shard the panel can
+redraw for", because the views' shards are evicted and re-fetched as the
+window moves and that set has no last member. A card's own shards are pinned
+while it is on screen, so each lands once; `refresh` now asks whether one of
+*those* arrived. `tests/m85-browser.test.mjs` fails on the old `refresh`.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,616 records, 5 regions, 0 errors, 463
+warnings**, and no record written. `node --test`: **1,789 pure and 279
+browser, 2,068 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. `docs/drafts/` ignored. Deviations **1192 to
+1202**.

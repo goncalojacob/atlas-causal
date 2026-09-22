@@ -51,7 +51,8 @@ every pull request.
 | | |
 |---|---|
 | `index.html` | the atlas |
-| `about.html` | what it is, how to read confidence and a disputed edge, the licences |
+| `about.html` | one screen: what it is, who makes it, how to read confidence, the licences |
+| `essay.html` | how the atlas is drawn, at length; linked from the foot of `about.html` |
 | `contribute.html` | the contribution form; not linked from the atlas while contributions are closed |
 
 ## The documents

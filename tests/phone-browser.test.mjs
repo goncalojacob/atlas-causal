@@ -429,11 +429,14 @@ test('the whole extent is legible on a phone, and the band is a thumb wide', { s
           Math.round(seen.ticks[i].x - seen.ticks[i - 1].x)} px apart`);
     }
     // The band is still something a thumb can find, and both its handles are
-    // drawn: the opening window is one century of several and would be a
-    // hairline on a linear scale over the same corpus.
+    // drawn.
     assert.equal(seen.handles, 2);
     assert.ok(seen.bandWidth >= 40, `the band is a hit target (${Math.round(seen.bandWidth)} px)`);
+    // And it opens on the whole span since M85 (A4), on a phone as on a desk:
+    // the resting picture is the main events (M65), which is what makes six
+    // centuries at 390 px a drawing rather than a smear.
     const [from, to] = seen.valuetext.split(' to ').map(Number);
-    assert.ok(to - from < (seen.max - seen.min) / 2, 'and it opens on part of the data, not all of it');
+    assert.equal(from, seen.min, 'the band opens at the first year of the data');
+    assert.equal(to, seen.max, 'and closes at the last');
   });
 });

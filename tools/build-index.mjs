@@ -16,6 +16,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   buildAttributeShards, buildCore, buildPresenceIndex, buildSpine, buildTopology, byId, categoriesInUse,
+  linkCounts,
   citerFiles, rolesInUse,
 } from '../src/validate/core.js';
 import { checkRules } from '../src/validate/rules.js';
@@ -355,6 +356,21 @@ export async function buildIndex(dataDir = DEFAULT_DATA, prepared = {}) {
       narratives: topology.narratives.length,
       regions: topology.regions.length,
     },
+    // What the front page is allowed to say about the links (M85, A14). The
+    // intro card asserted "Every link carries a written explanation and its
+    // sources", which is a fact about the data and was written as prose; the
+    // browser cannot check it, because an edge's `explanation` is in an
+    // explanation shard and its `sources` are in no index file at all. So it
+    // is counted here, where every record is in hand, and the card says
+    // "N of the M links" wherever N is not M.
+    //
+    // The same two questions the schema asks of an edge — a non-empty
+    // argument, and at least one source — over the active edges alone: a
+    // retracted edge is not a link the atlas is offering anybody.
+    //
+    // Off the records and not the topology, which drops `explanation`, for the
+    // reason the explanation shards above are read from them.
+    links: linkCounts(records.filter((r) => r.kind === 'edge')),
     files: {
       citers: `index/${citersDir}`,
       search: `index/${searchName}`,

@@ -101,13 +101,52 @@ export function heaviest(atlas, limit = HEAVIEST) {
 // anybody here decided on.
 export const WHAT_IT_IS = 'The history of the world since 1492 as a graph: every event linked to what caused it and what it led to, with sources.';
 
+// How many of the atlas's links carry a written argument and at least one
+// source, and how many there are (M85, A14). The card asserted that *every*
+// one of them does, in prose, on the front page — a claim about the data
+// nothing checked and the browser cannot: an edge's `explanation` is in an
+// explanation shard and its `sources` are in no index file at all.
+//
+// So the build counts it (`validate/core.js`, `linkCounts`) and the manifest
+// carries the answer. Where the whole corpus is in hand — the two writer
+// pages, the fixtures, a test — the records answer for themselves and the
+// manifest is not needed; the count is the same question either way.
+export function explainedLinks(atlas) {
+  const counted = atlas.manifest?.links;
+  if (counted && Number.isInteger(counted.active) && Number.isInteger(counted.explained)) {
+    return { total: counted.active, explained: counted.explained };
+  }
+  // No manifest: the records themselves, where a caller has them. An atlas
+  // built from the core alone has neither — the core carries an edge's five
+  // slots and nothing of its argument — and then the answer is **null** and
+  // the card says nothing rather than guessing. A front page that reported
+  // "0 of the 658" because it had not been told is worse than one that is
+  // quiet about it.
+  const active = [...atlas.edges.values()].filter((e) => e.status === 'active');
+  if (!active.some((e) => typeof e.explanation === 'string')) return null;
+  const explained = active.filter((e) => typeof e.explanation === 'string'
+    && e.explanation.trim() !== '' && (e.sources ?? []).length > 0).length;
+  return { total: active.length, explained };
+}
+
+// And the sentence it becomes. "Every link" only where it is every link: a
+// front page that rounds its own gaps away is the one thing this project
+// cannot afford to do.
+export function linksSentence(counted) {
+  if (counted === null) return '';
+  const { total, explained } = counted;
+  if (total > 0 && explained === total) return 'Every link carries a written explanation and its sources.';
+  return `${explained} of the ${total} links carry a written explanation and their sources.`;
+}
+
 // The card, as a string, so `node --test` can hold it to quoting and to
 // claiming nothing.
 export function introHtml(atlas) {
   const narratives = atlas.activeNarratives ?? [];
   const first = narratives[0] ?? null;
   const events = heaviest(atlas);
-  const links = [...atlas.edges.values()].filter((e) => e.status === 'active').length;
+  const counted = explainedLinks(atlas);
+  const links = counted?.total ?? [...atlas.edges.values()].filter((e) => e.status === 'active').length;
 
   return `<div class="intro-card" role="dialog" aria-modal="false" aria-labelledby="intro-title">
     <button type="button" class="intro-close" data-intro="close" aria-label="Close">×</button>
@@ -115,7 +154,7 @@ export function introHtml(atlas) {
     <p class="intro-lead">${esc(WHAT_IT_IS)}</p>
     <p class="muted">${esc(atlas.activeEvents.length)} events · ${esc(links)} links ·
       ${esc(atlas.actors.size)} actors · ${esc(atlas.sources.size)} sources.
-      Every link carries a written explanation and its sources.</p>
+      ${esc(linksSentence(counted))}</p>
 
     ${first ? `<section class="intro-start">
       <h3>Start here</h3>

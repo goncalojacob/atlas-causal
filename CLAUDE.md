@@ -125,7 +125,8 @@ schema/common/             interval, place, provenance (the envelope), confidenc
 schema/v1/                 event, edge, source, actor, place, relation, narrative, presence, region, bundle; import-map, import-places, import-seeds, import-state and wikipedia-lead are tool-side
 index.html                 the atlas; no build step, plain ES modules
 contribute.html            the contribution form; not linked from the atlas while contributions are closed
-about.html                 what it is, how to read confidence and a dispute, the licences
+about.html                 one screen: what it is, who makes it, how to read confidence, the licences
+essay.html                 how the atlas is drawn, at length — the page about.html was until M85; linked from its foot
 sources.html               the bibliography, written into the file by the build from the sources index
 narratives.html            every narrative as a card, grouped by the centuries it crosses; written into the file by the build
 review.html                the review queue; a maintainer's page, unlinked, and the only one that can write
