@@ -16969,6 +16969,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "world-war-i",
+      "id": "world-war-i--paris-peace-conference--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-conference",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -17047,6 +17076,35 @@
       "status": "active",
       "to": "treaty-of-neuilly-sur-seine",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "world-war-i",
+      "id": "world-war-i--turkish-war-of-independence--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "turkish-war-of-independence",
+      "type": "reacted-to"
     },
     {
       "authors": [

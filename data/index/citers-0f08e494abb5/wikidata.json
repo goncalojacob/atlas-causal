@@ -2,15 +2,141 @@
   "citations": [
     {
       "dissent": false,
+      "id": "afghanistan",
+      "kind": "actor",
+      "locator": "Q889, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "albania",
+      "kind": "actor",
+      "locator": "Q222, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "algeria",
+      "kind": "actor",
+      "locator": "Q262, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "angola",
+      "kind": "actor",
+      "locator": "Q916, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "argentina",
+      "kind": "actor",
+      "locator": "Q414, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "armenia",
+      "kind": "actor",
+      "locator": "Q399, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "australia",
+      "kind": "actor",
+      "locator": "Q408, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "austria",
+      "kind": "actor",
+      "locator": "Q40, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "azerbaijan",
+      "kind": "actor",
+      "locator": "Q227, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "bahamas",
+      "kind": "actor",
+      "locator": "Q778, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "bahrain",
+      "kind": "actor",
+      "locator": "Q398, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh",
+      "kind": "actor",
+      "locator": "Q902, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "barbados",
+      "kind": "actor",
+      "locator": "Q244, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
       "id": "basutoland",
       "kind": "actor",
       "locator": "Q2340665, P576 1966"
     },
     {
       "dissent": false,
+      "id": "belarus-byelorussia",
+      "kind": "actor",
+      "locator": "Q184, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "belgium",
+      "kind": "actor",
+      "locator": "Q31, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "belize",
+      "kind": "actor",
+      "locator": "Q242, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "benin",
+      "kind": "actor",
+      "locator": "Q962, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "bhutan",
+      "kind": "actor",
+      "locator": "Q917, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
       "id": "bokhara-khanate",
       "kind": "actor",
       "locator": "Q746558, P576 1920-10-07"
+    },
+    {
+      "dissent": false,
+      "id": "bolivia",
+      "kind": "actor",
+      "locator": "Q750, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "bosnia-herzegovina",
+      "kind": "actor",
+      "locator": "Q225, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "botswana",
+      "kind": "actor",
+      "locator": "Q963, P2046 (area) and P1082 (population, 2023)"
     },
     {
       "dissent": false,
@@ -34,7 +160,19 @@
       "dissent": false,
       "id": "brazil",
       "kind": "actor",
+      "locator": "Q155, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "brazil",
+      "kind": "actor",
       "locator": "Q217230, P576 1889-11-15 (the Empire of Brazil’s dissolution, taken as this record’s start)"
+    },
+    {
+      "dissent": false,
+      "id": "brunei",
+      "kind": "actor",
+      "locator": "Q921, P2046 (area) and P1082 (population, 2023)"
     },
     {
       "dissent": false,
@@ -44,9 +182,51 @@
     },
     {
       "dissent": false,
+      "id": "bulgaria",
+      "kind": "actor",
+      "locator": "Q219, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
       "id": "bunyoro",
       "kind": "actor",
       "locator": "Q889897, P576 1899"
+    },
+    {
+      "dissent": false,
+      "id": "burkina-faso-upper-volta",
+      "kind": "actor",
+      "locator": "Q965, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "burundi",
+      "kind": "actor",
+      "locator": "Q967, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "cambodia-kampuchea",
+      "kind": "actor",
+      "locator": "Q424, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "cameroon",
+      "kind": "actor",
+      "locator": "Q1009, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "canada",
+      "kind": "actor",
+      "locator": "Q16, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "cape-verde",
+      "kind": "actor",
+      "locator": "Q1011, P2046 (area) and P1082 (population, 2020)"
     },
     {
       "dissent": false,
@@ -62,6 +242,78 @@
     },
     {
       "dissent": false,
+      "id": "central-african-republic",
+      "kind": "actor",
+      "locator": "Q929, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "chad",
+      "kind": "actor",
+      "locator": "Q657, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "chile",
+      "kind": "actor",
+      "locator": "Q298, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "china",
+      "kind": "actor",
+      "locator": "Q148, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "colombia",
+      "kind": "actor",
+      "locator": "Q739, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "comoros",
+      "kind": "actor",
+      "locator": "Q970, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "costa-rica",
+      "kind": "actor",
+      "locator": "Q800, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "cote-d-ivoire",
+      "kind": "actor",
+      "locator": "Q1008, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "croatia",
+      "kind": "actor",
+      "locator": "Q224, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "cuba",
+      "kind": "actor",
+      "locator": "Q241, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "cyprus",
+      "kind": "actor",
+      "locator": "Q229, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "czech-republic",
+      "kind": "actor",
+      "locator": "Q213, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
       "id": "democratic-leftwing-republican-party",
       "kind": "actor",
       "locator": "Q3366682"
@@ -74,9 +326,51 @@
     },
     {
       "dissent": false,
+      "id": "denmark",
+      "kind": "actor",
+      "locator": "Q35, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
+      "id": "djibouti",
+      "kind": "actor",
+      "locator": "Q977, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "dominican-republic",
+      "kind": "actor",
+      "locator": "Q786, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "east-timor",
+      "kind": "actor",
+      "locator": "Q574, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
       "id": "ecologist-party-the-greens",
       "kind": "actor",
       "locator": "Q978086"
+    },
+    {
+      "dissent": false,
+      "id": "ecuador",
+      "kind": "actor",
+      "locator": "Q736, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "egypt",
+      "kind": "actor",
+      "locator": "Q79, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "el-salvador",
+      "kind": "actor",
+      "locator": "Q792, P2046 (area) and P1082 (population, 2024)"
     },
     {
       "dissent": false,
@@ -98,9 +392,81 @@
     },
     {
       "dissent": false,
+      "id": "equatorial-guinea",
+      "kind": "actor",
+      "locator": "Q983, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "eritrea",
+      "kind": "actor",
+      "locator": "Q986, P2046 (area) and P1082 (population, 2019)"
+    },
+    {
+      "dissent": false,
+      "id": "estonia",
+      "kind": "actor",
+      "locator": "Q191, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopia",
+      "kind": "actor",
+      "locator": "Q115, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "european-union",
+      "kind": "actor",
+      "locator": "Q458, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
       "id": "evolutionist-party",
       "kind": "actor",
       "locator": "Q1720273"
+    },
+    {
+      "dissent": false,
+      "id": "fiji",
+      "kind": "actor",
+      "locator": "Q712, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "finland",
+      "kind": "actor",
+      "locator": "Q33, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "france",
+      "kind": "actor",
+      "locator": "Q142, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "french-polynesia",
+      "kind": "actor",
+      "locator": "Q30971, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "gabon",
+      "kind": "actor",
+      "locator": "Q1000, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "gambia",
+      "kind": "actor",
+      "locator": "Q1005, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "georgia",
+      "kind": "actor",
+      "locator": "Q230, P2046 (area) and P1082 (population, 2024)"
     },
     {
       "dissent": false,
@@ -118,7 +484,79 @@
       "dissent": false,
       "id": "german-federal-republic",
       "kind": "actor",
+      "locator": "Q183, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "german-federal-republic",
+      "kind": "actor",
       "locator": "Q713750, P571 1949-05-23"
+    },
+    {
+      "dissent": false,
+      "id": "ghana",
+      "kind": "actor",
+      "locator": "Q117, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "greece",
+      "kind": "actor",
+      "locator": "Q41, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "guadeloupe",
+      "kind": "actor",
+      "locator": "Q17012, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "guatemala",
+      "kind": "actor",
+      "locator": "Q774, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "guinea",
+      "kind": "actor",
+      "locator": "Q1006, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "guinea-bissau",
+      "kind": "actor",
+      "locator": "Q1007, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "guyana",
+      "kind": "actor",
+      "locator": "Q734, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "haiti",
+      "kind": "actor",
+      "locator": "Q790, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "honduras",
+      "kind": "actor",
+      "locator": "Q783, P2046 (area) and P1082 (population, 2013)"
+    },
+    {
+      "dissent": false,
+      "id": "hungary",
+      "kind": "actor",
+      "locator": "Q28, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "iceland",
+      "kind": "actor",
+      "locator": "Q189, P2046 (area) and P1082 (population, 2019)"
     },
     {
       "dissent": false,
@@ -134,9 +572,75 @@
     },
     {
       "dissent": false,
+      "id": "indonesia",
+      "kind": "actor",
+      "locator": "Q252, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
       "id": "iran-persia",
       "kind": "actor",
       "locator": "Q63158027, P571 1789 and P576 1925"
+    },
+    {
+      "dissent": false,
+      "id": "iran-persia",
+      "kind": "actor",
+      "locator": "Q794, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "iraq",
+      "kind": "actor",
+      "locator": "Q796, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "ireland",
+      "kind": "actor",
+      "locator": "Q27, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "israel",
+      "kind": "actor",
+      "locator": "Q801, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "italy-sardinia",
+      "kind": "actor",
+      "locator": "Q38, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "jamaica",
+      "kind": "actor",
+      "locator": "Q766, P2046 (area) and P1082 (population, 2011)"
+    },
+    {
+      "dissent": false,
+      "id": "japan",
+      "kind": "actor",
+      "locator": "Q17, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "jordan",
+      "kind": "actor",
+      "locator": "Q810, P2046 (area) and P1082 (population, 2019)"
+    },
+    {
+      "dissent": false,
+      "id": "kazakhstan",
+      "kind": "actor",
+      "locator": "Q232, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "kenya",
+      "kind": "actor",
+      "locator": "Q114, P2046 (area) and P1082 (population, 2017)"
     },
     {
       "dissent": false,
@@ -164,6 +668,60 @@
     },
     {
       "dissent": false,
+      "id": "korea-people-s-republic-of",
+      "kind": "actor",
+      "locator": "Q423, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "korea-republic-of",
+      "kind": "actor",
+      "locator": "Q884, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "kosovo",
+      "kind": "actor",
+      "locator": "Q1246, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "kuwait",
+      "kind": "actor",
+      "locator": "Q817, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
+      "id": "kyrgyz-republic",
+      "kind": "actor",
+      "locator": "Q813, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "laos",
+      "kind": "actor",
+      "locator": "Q819, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "latvia",
+      "kind": "actor",
+      "locator": "Q211, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "lebanon",
+      "kind": "actor",
+      "locator": "Q822, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "lesotho",
+      "kind": "actor",
+      "locator": "Q1013, P2046 (area) and P1082 (population, 2016)"
+    },
+    {
+      "dissent": false,
       "id": "liberal-initiative",
       "kind": "actor",
       "locator": "Q46122950"
@@ -173,6 +731,132 @@
       "id": "liberal-regenerator-party",
       "kind": "actor",
       "locator": "Q75660"
+    },
+    {
+      "dissent": false,
+      "id": "liberia",
+      "kind": "actor",
+      "locator": "Q1014, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "libya",
+      "kind": "actor",
+      "locator": "Q1016, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "lithuania",
+      "kind": "actor",
+      "locator": "Q37, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "luxembourg",
+      "kind": "actor",
+      "locator": "Q32, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "macedonia-fyrom-north-macedonia",
+      "kind": "actor",
+      "locator": "Q221, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "malawi",
+      "kind": "actor",
+      "locator": "Q1020, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "malaysia",
+      "kind": "actor",
+      "locator": "Q833, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "maldives",
+      "kind": "actor",
+      "locator": "Q826, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "mali",
+      "kind": "actor",
+      "locator": "Q912, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "malta",
+      "kind": "actor",
+      "locator": "Q233, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "martinique",
+      "kind": "actor",
+      "locator": "Q17054, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "mauritania",
+      "kind": "actor",
+      "locator": "Q1025, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "mauritius",
+      "kind": "actor",
+      "locator": "Q1027, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "mexico",
+      "kind": "actor",
+      "locator": "Q96, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "moldova",
+      "kind": "actor",
+      "locator": "Q217, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "mongolia",
+      "kind": "actor",
+      "locator": "Q711, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "montenegro",
+      "kind": "actor",
+      "locator": "Q236, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "morocco",
+      "kind": "actor",
+      "locator": "Q1028, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "mozambique",
+      "kind": "actor",
+      "locator": "Q1029, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-burma",
+      "kind": "actor",
+      "locator": "Q836, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "namibia",
+      "kind": "actor",
+      "locator": "Q1030, P2046 (area) and P1082 (population, 2017)"
     },
     {
       "dissent": false,
@@ -206,6 +890,60 @@
     },
     {
       "dissent": false,
+      "id": "nepal",
+      "kind": "actor",
+      "locator": "Q837, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "netherlands",
+      "kind": "actor",
+      "locator": "Q55, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "new-caledonia-and-dependencies",
+      "kind": "actor",
+      "locator": "Q33788, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "new-zealand",
+      "kind": "actor",
+      "locator": "Q664, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "nicaragua",
+      "kind": "actor",
+      "locator": "Q811, P2046 (area) and P1082 (population, 2005)"
+    },
+    {
+      "dissent": false,
+      "id": "niger",
+      "kind": "actor",
+      "locator": "Q1032, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "nigeria",
+      "kind": "actor",
+      "locator": "Q1033, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "norway",
+      "kind": "actor",
+      "locator": "Q20, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "oman",
+      "kind": "actor",
+      "locator": "Q842, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-empire",
       "kind": "actor",
       "locator": "Q12560, P576 1922-11-17"
@@ -215,6 +953,30 @@
       "id": "oyo",
       "kind": "actor",
       "locator": "Q849623, P576 1905"
+    },
+    {
+      "dissent": false,
+      "id": "pakistan",
+      "kind": "actor",
+      "locator": "Q843, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "panama",
+      "kind": "actor",
+      "locator": "Q804, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "papua-new-guinea",
+      "kind": "actor",
+      "locator": "Q691, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
+      "id": "paraguay",
+      "kind": "actor",
+      "locator": "Q733, P2046 (area) and P1082 (population, 2017)"
     },
     {
       "dissent": false,
@@ -242,6 +1004,30 @@
     },
     {
       "dissent": false,
+      "id": "peru",
+      "kind": "actor",
+      "locator": "Q419, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "philippines",
+      "kind": "actor",
+      "locator": "Q928, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "poland",
+      "kind": "actor",
+      "locator": "Q36, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "portugal",
+      "kind": "actor",
+      "locator": "Q45, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-democratic-movement",
       "kind": "actor",
       "locator": "Q613464"
@@ -260,6 +1046,18 @@
     },
     {
       "dissent": false,
+      "id": "puerto-rico",
+      "kind": "actor",
+      "locator": "Q1183, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
+      "id": "qatar",
+      "kind": "actor",
+      "locator": "Q846, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
       "id": "reconstitution-party",
       "kind": "actor",
       "locator": "Q2054732"
@@ -272,15 +1070,33 @@
     },
     {
       "dissent": false,
+      "id": "republic-of-india",
+      "kind": "actor",
+      "locator": "Q668, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
       "id": "republican-liberal-party",
       "kind": "actor",
       "locator": "Q2054660"
     },
     {
       "dissent": false,
+      "id": "reunion",
+      "kind": "actor",
+      "locator": "Q17070, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
       "id": "revolutionary-socialist-party",
       "kind": "actor",
       "locator": "Q2054807"
+    },
+    {
+      "dissent": false,
+      "id": "rumania",
+      "kind": "actor",
+      "locator": "Q218, P2046 (area) and P1082 (population, 2022)"
     },
     {
       "dissent": false,
@@ -293,6 +1109,12 @@
       "id": "russian-empire",
       "kind": "actor",
       "locator": "Q34266, P576 1917-09-01"
+    },
+    {
+      "dissent": false,
+      "id": "russian-federation",
+      "kind": "actor",
+      "locator": "Q159, P2046 (area) and P1082 (population, 2025)"
     },
     {
       "dissent": false,
@@ -320,6 +1142,12 @@
     },
     {
       "dissent": false,
+      "id": "rwanda",
+      "kind": "actor",
+      "locator": "Q1037, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue",
       "kind": "actor",
       "locator": "Q861551, P571 1626"
@@ -332,9 +1160,75 @@
     },
     {
       "dissent": false,
+      "id": "saudi-arabia",
+      "kind": "actor",
+      "locator": "Q851, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "senegal",
+      "kind": "actor",
+      "locator": "Q1041, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "serbia",
+      "kind": "actor",
+      "locator": "Q403, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "sierra-leone",
+      "kind": "actor",
+      "locator": "Q1044, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "singapore",
+      "kind": "actor",
+      "locator": "Q334, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "slovakia",
+      "kind": "actor",
+      "locator": "Q214, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "slovenia",
+      "kind": "actor",
+      "locator": "Q215, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
       "id": "sokoto-caliphate",
       "kind": "actor",
       "locator": "Q600524, P576 1903"
+    },
+    {
+      "dissent": false,
+      "id": "solomon-islands",
+      "kind": "actor",
+      "locator": "Q685, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "somalia",
+      "kind": "actor",
+      "locator": "Q1045, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "south-africa",
+      "kind": "actor",
+      "locator": "Q258, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "south-sudan",
+      "kind": "actor",
+      "locator": "Q958, P2046 (area) and P1082 (population, 2017)"
     },
     {
       "dissent": false,
@@ -350,6 +1244,24 @@
     },
     {
       "dissent": false,
+      "id": "spain",
+      "kind": "actor",
+      "locator": "Q29, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "sri-lanka-ceylon",
+      "kind": "actor",
+      "locator": "Q854, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "sudan",
+      "kind": "actor",
+      "locator": "Q1049, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
       "id": "sultanate-of-damagaram",
       "kind": "actor",
       "locator": "Q4154364, P576 1899"
@@ -362,9 +1274,117 @@
     },
     {
       "dissent": false,
+      "id": "surinam",
+      "kind": "actor",
+      "locator": "Q730, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "swaziland-eswatini",
+      "kind": "actor",
+      "locator": "Q1050, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "sweden",
+      "kind": "actor",
+      "locator": "Q34, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "switzerland",
+      "kind": "actor",
+      "locator": "Q39, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "dissent": false,
+      "id": "syria",
+      "kind": "actor",
+      "locator": "Q858, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
+      "id": "taiwan",
+      "kind": "actor",
+      "locator": "Q865, P2046 (area) and P1082 (population, 2026)"
+    },
+    {
+      "dissent": false,
+      "id": "tajikistan",
+      "kind": "actor",
+      "locator": "Q863, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "tanzania-tanganyika",
+      "kind": "actor",
+      "locator": "Q924, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "thailand",
+      "kind": "actor",
+      "locator": "Q869, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "togo",
+      "kind": "actor",
+      "locator": "Q945, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "trinidad-and-tobago",
+      "kind": "actor",
+      "locator": "Q754, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "tunisia",
+      "kind": "actor",
+      "locator": "Q948, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
       "id": "turkey-ottoman-empire",
       "kind": "actor",
       "locator": "Q12560, P576 1922-11-17"
+    },
+    {
+      "dissent": false,
+      "id": "turkey-ottoman-empire",
+      "kind": "actor",
+      "locator": "Q43, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "turkmenistan",
+      "kind": "actor",
+      "locator": "Q874, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "uganda",
+      "kind": "actor",
+      "locator": "Q1036, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "ukraine",
+      "kind": "actor",
+      "locator": "Q212, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "united-arab-emirates",
+      "kind": "actor",
+      "locator": "Q878, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom",
+      "kind": "actor",
+      "locator": "Q145, P2046 (area) and P1082 (population, 2021)"
     },
     {
       "dissent": false,
@@ -374,9 +1394,33 @@
     },
     {
       "dissent": false,
+      "id": "united-states-of-america",
+      "kind": "actor",
+      "locator": "Q30, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "dissent": false,
       "id": "university-of-porto",
       "kind": "actor",
       "locator": "Q1422903"
+    },
+    {
+      "dissent": false,
+      "id": "uruguay",
+      "kind": "actor",
+      "locator": "Q77, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "uzbekistan",
+      "kind": "actor",
+      "locator": "Q265, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "dissent": false,
+      "id": "venezuela",
+      "kind": "actor",
+      "locator": "Q717, P2046 (area) and P1082 (population, 2024)"
     },
     {
       "dissent": false,
@@ -422,6 +1466,24 @@
     },
     {
       "dissent": false,
+      "id": "yemen-arab-republic-of-yemen",
+      "kind": "actor",
+      "locator": "Q805, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "zambia",
+      "kind": "actor",
+      "locator": "Q953, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
+      "id": "zimbabwe-rhodesia",
+      "kind": "actor",
+      "locator": "Q954, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "dissent": false,
       "id": "zululand",
       "kind": "actor",
       "locator": "Q729768, P576 1897"
@@ -431,6 +1493,18 @@
       "id": "first-matabele-war--second-matabele-war--precondition-of",
       "kind": "edge",
       "locator": "Q233657 and Q857982"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--paris-peace-conference--caused",
+      "kind": "edge",
+      "locator": "Q361, P1542 (has effect) Q199820"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--turkish-war-of-independence--reacted-to",
+      "kind": "edge",
+      "locator": "Q361, P1542 (has effect) Q211274"
     },
     {
       "dissent": false,

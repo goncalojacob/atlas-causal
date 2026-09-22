@@ -5127,6 +5127,15 @@
         }
       ]
     },
+    "world-war-i--paris-peace-conference--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "world-war-i--polish-ukrainian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -5158,6 +5167,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-i--turkish-war-of-independence--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

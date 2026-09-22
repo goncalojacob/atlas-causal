@@ -83,6 +83,17 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -154,6 +165,17 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -358,6 +380,17 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },

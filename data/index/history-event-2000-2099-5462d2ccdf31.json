@@ -76,6 +76,22 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -121,6 +137,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -197,6 +220,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -335,6 +365,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -399,6 +436,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -452,6 +496,21 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -570,6 +629,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -610,6 +676,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -782,6 +864,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -822,6 +911,22 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -837,6 +942,22 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -913,6 +1034,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -989,6 +1117,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -998,6 +1133,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1019,6 +1170,36 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1059,6 +1240,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1068,6 +1265,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1118,6 +1331,22 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1306,6 +1535,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1315,6 +1551,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1810,6 +2062,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1881,6 +2149,22 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1906,6 +2190,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2007,6 +2307,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2115,6 +2431,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2160,6 +2483,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2178,6 +2508,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2223,6 +2569,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2409,6 +2762,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2497,6 +2857,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2604,6 +2971,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2807,6 +3181,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2824,6 +3214,22 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -2979,6 +3385,13 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -2987,6 +3400,22 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -3071,6 +3500,13 @@
             "category"
           ],
           "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3109,6 +3545,13 @@
             "parent"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3188,6 +3631,22 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3263,6 +3722,22 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3272,6 +3747,20 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "actors",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3354,6 +3843,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3427,6 +3923,13 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3460,6 +3963,13 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3487,6 +3997,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3518,6 +4035,29 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "actors",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3675,6 +4215,29 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "actors",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3702,6 +4265,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3710,6 +4280,35 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -3720,6 +4319,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4034,6 +4649,22 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4075,6 +4706,21 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4084,6 +4730,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4259,6 +4921,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4344,6 +5022,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4437,6 +5122,22 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4446,6 +5147,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4480,6 +5197,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4505,6 +5238,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4538,6 +5287,13 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4571,6 +5327,13 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4586,6 +5349,22 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4636,6 +5415,22 @@
             "status"
           ],
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4782,6 +5577,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4807,6 +5618,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4877,6 +5704,15 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4894,6 +5730,21 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -4903,6 +5754,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5001,6 +5861,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5010,6 +5886,22 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5037,6 +5929,13 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5079,6 +5978,20 @@
             "actors"
           ],
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5118,6 +6031,22 @@
             "parent"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5143,6 +6072,22 @@
             "status"
           ],
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5151,6 +6096,22 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -5161,6 +6122,29 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "actors",
+            "review"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },

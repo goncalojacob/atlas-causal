@@ -761,10 +761,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 10,
@@ -779,11 +785,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -1458,13 +1465,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "albania",
       "kind": "actor",
       "names": [
@@ -1476,11 +1489,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -1488,10 +1502,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -1506,11 +1526,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -2366,13 +2387,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 4,
       "id": "angola",
       "kind": "actor",
       "names": [
@@ -2384,11 +2411,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -3428,10 +3456,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 6,
@@ -3446,11 +3480,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -3579,10 +3614,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -3597,11 +3638,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -4280,13 +4322,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 7,
       "id": "australia",
       "kind": "actor",
       "names": [
@@ -4298,11 +4346,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -4339,13 +4388,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "austria",
       "kind": "actor",
       "names": [
@@ -4357,11 +4412,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -4950,10 +5006,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -4968,11 +5030,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -5125,10 +5188,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -5143,11 +5212,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -5243,10 +5313,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -5261,11 +5337,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -5483,10 +5560,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -5501,11 +5584,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -5658,10 +5742,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -5676,11 +5766,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -6303,10 +6394,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -6321,11 +6418,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -6333,13 +6431,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 8,
       "id": "belgium",
       "kind": "actor",
       "names": [
@@ -6351,11 +6455,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -6363,10 +6468,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -6381,11 +6492,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -6512,10 +6624,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -6530,11 +6648,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -6752,10 +6871,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -6770,11 +6895,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -7547,13 +7673,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 7,
       "id": "bolivia",
       "kind": "actor",
       "names": [
@@ -7565,11 +7697,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -7754,10 +7887,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -7772,11 +7911,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -7844,10 +7984,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -7862,11 +8008,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -7964,11 +8111,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 29,
@@ -7983,12 +8135,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: this record began 1886, which is where CShapes begins and not where a republic was proclaimed. Its start is now 1889, the dissolution Wikidata states for the Empire of Brazil on Q217230, P576 1889-11-15 — the same instant, taken from the record either side rather than invented here. The CShapes period that ran 1886-01-01 to 1903-11-16 is cut at that date: the first part is the Empire’s ground and the second is this record’s. See docs/m53-polities.md §2.",
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -8354,10 +8507,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -8372,11 +8531,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -8738,10 +8898,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 11,
@@ -8756,11 +8922,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -8887,10 +9054,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -8905,11 +9078,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -9005,13 +9179,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 3,
       "id": "burundi",
       "kind": "actor",
       "names": [
@@ -9023,11 +9203,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -9503,10 +9684,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -9521,11 +9708,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -9563,10 +9751,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -9581,11 +9775,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -9623,13 +9818,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 8,
       "id": "canada",
       "kind": "actor",
       "names": [
@@ -9641,11 +9842,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -9831,10 +10033,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -9849,11 +10057,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -10481,10 +10690,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -10499,11 +10714,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -10720,13 +10936,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "chad",
       "kind": "actor",
       "names": [
@@ -10738,11 +10960,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -11884,10 +12107,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 6,
@@ -11902,11 +12131,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -12059,13 +12289,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 20,
+      "degree": 22,
       "id": "china",
       "kind": "actor",
       "names": [
@@ -12077,11 +12313,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -13220,10 +13457,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 5,
@@ -13238,11 +13481,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -13337,10 +13581,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -13355,11 +13605,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -13927,10 +14178,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -13945,11 +14202,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -13986,10 +14244,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -14004,11 +14268,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -14383,13 +14648,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 4,
       "id": "croatia",
       "kind": "actor",
       "names": [
@@ -14401,11 +14672,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -14442,13 +14714,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 8,
       "id": "cuba",
       "kind": "actor",
       "names": [
@@ -14460,11 +14738,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -14734,10 +15013,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -14752,11 +15037,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -14852,10 +15138,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -14870,11 +15162,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -15652,13 +15945,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 6,
       "id": "denmark",
       "kind": "actor",
       "names": [
@@ -15670,11 +15969,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -16148,10 +16448,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -16166,11 +16472,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -16358,10 +16665,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -16376,11 +16689,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -16801,10 +17115,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -16819,11 +17139,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -17045,10 +17366,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -17063,11 +17390,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -17227,13 +17555,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 7,
+      "degree": 9,
       "id": "egypt",
       "kind": "actor",
       "names": [
@@ -17245,11 +17579,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -17317,10 +17652,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -17335,11 +17676,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18050,10 +18392,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -18068,11 +18416,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18139,13 +18488,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "eritrea",
       "kind": "actor",
       "names": [
@@ -18157,11 +18512,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18344,13 +18700,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "estonia",
       "kind": "actor",
       "names": [
@@ -18362,11 +18724,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18374,13 +18737,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 20,
+      "degree": 23,
       "id": "ethiopia",
       "kind": "actor",
       "names": [
@@ -18392,11 +18761,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18513,7 +18883,9 @@
       ],
       "cites": [
         "telo-2007-historia-contemporanea",
-        "costa-pinto-teixeira-2019-political-institutions"
+        "costa-pinto-teixeira-2019-political-institutions",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-05",
       "degree": 5,
@@ -18531,12 +18903,13 @@
       "review": {
         "flags": [
           "date",
-          "claim"
+          "claim",
+          "polity-description"
         ],
         "note": "The Maastricht dates were written from memory. Recording the Union as a polity rather than an institution is the drafter's decision: it is argued in the summary, and it is also what lets the succession from the Community validate, since rule 19 requires both ends of a succession to be the same kind of actor.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18884,10 +19257,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -18902,11 +19281,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -18945,13 +19325,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 5,
       "id": "finland",
       "kind": "actor",
       "names": [
@@ -18963,11 +19349,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -19239,13 +19626,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 37,
+      "degree": 42,
       "id": "france",
       "kind": "actor",
       "names": [
@@ -19257,11 +19650,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -19426,10 +19820,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -19444,11 +19844,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -19668,10 +20069,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -19686,11 +20093,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -19816,10 +20224,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -19834,11 +20248,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -20285,10 +20700,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -20303,11 +20724,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -20407,14 +20829,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 7,
       "id": "german-federal-republic",
       "kind": "actor",
       "names": [
@@ -20425,12 +20852,13 @@
       },
       "review": {
         "flags": [
-          "m55-germany"
+          "m55-germany",
+          "polity-description"
         ],
         "note": "M55: this record began in 1945, where CShapes begins drawing entity 260 — the German surrender, not a founding. It now begins 1949-05-23, which is Wikidata’s P571 on Q713750 (West Germany) and also the preferred P571 on Q183 (Germany); the citation is to Q713750, whose item covers exactly the state this record’s first CShapes periods draw. Its 1945–1949 period is flagged m55-gap: what held that ground was the Allied occupation, and the atlas has no record for it.",
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -20498,10 +20926,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -20516,11 +20950,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -21288,10 +21723,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 11,
@@ -21306,11 +21747,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -21554,10 +21996,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 5,
@@ -21572,11 +22020,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -21990,10 +22439,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -22008,11 +22463,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -22165,10 +22621,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -22183,11 +22645,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -22195,10 +22658,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -22213,11 +22682,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -22981,10 +23451,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -22999,11 +23475,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -23330,10 +23807,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -23348,11 +23831,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -24413,10 +24897,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -24431,11 +24921,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -24997,10 +25488,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -25015,11 +25512,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -25261,13 +25759,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "iceland",
       "kind": "actor",
       "names": [
@@ -25279,11 +25783,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -25771,10 +26276,12 @@
       ],
       "cites": [
         "macqueen-1997-decolonization",
-        "telo-2007-historia-contemporanea"
+        "telo-2007-historia-contemporanea",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 9,
+      "degree": 10,
       "id": "indonesia",
       "kind": "actor",
       "names": [
@@ -25786,9 +26293,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "polity-description"
+        ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -26203,11 +26713,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -26222,12 +26737,13 @@
       },
       "review": {
         "flags": [
-          "m51-split"
+          "m51-split",
+          "polity-description"
         ],
         "note": "M51: split from persia, which held this ground until Wikidata's P576 1925 on Q63158027. Entity 630's single period ran 1886 to 2019 and is divided at that year: iran-persia-1886 now belongs to persia and ends there, and iran-persia-1925 carries the same outline on. names[0] drops \"(Persia)\", which this record no longer covers.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -26235,10 +26751,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 5,
@@ -26253,11 +26775,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -26295,10 +26818,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -26313,11 +26842,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -26586,13 +27116,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 10,
+      "degree": 16,
       "id": "israel",
       "kind": "actor",
       "names": [
@@ -26604,11 +27140,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -26677,13 +27214,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 16,
+      "degree": 17,
       "id": "italy-sardinia",
       "kind": "actor",
       "names": [
@@ -26695,11 +27238,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -27002,10 +27546,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -27020,11 +27570,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -27237,10 +27788,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 10,
@@ -27255,11 +27812,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -27761,13 +28319,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 4,
       "id": "jordan",
       "kind": "actor",
       "names": [
@@ -27779,11 +28343,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -30563,10 +31128,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -30581,11 +31152,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -30738,10 +31310,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -30756,11 +31334,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -32753,10 +33332,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -32771,11 +33356,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -32783,13 +33369,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "korea-republic-of",
       "kind": "actor",
       "names": [
@@ -32801,11 +33393,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -32871,10 +33464,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -32889,11 +33488,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -33802,10 +34402,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -33820,11 +34426,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34123,10 +34730,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -34141,11 +34754,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34357,10 +34971,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -34375,11 +34995,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34562,13 +35183,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "latvia",
       "kind": "actor",
       "names": [
@@ -34580,11 +35207,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34626,13 +35254,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 5,
       "id": "lebanon",
       "kind": "actor",
       "names": [
@@ -34644,11 +35278,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34804,10 +35439,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -34822,11 +35463,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -34997,10 +35639,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -35015,11 +35663,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -35027,10 +35676,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -35045,11 +35700,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -35290,13 +35946,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 6,
       "id": "lithuania",
       "kind": "actor",
       "names": [
@@ -35308,11 +35970,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -35941,13 +36604,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 11,
+      "degree": 12,
       "id": "luxembourg",
       "kind": "actor",
       "names": [
@@ -35959,11 +36628,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -36000,10 +36670,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -36018,11 +36694,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -36642,10 +37319,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -36660,11 +37343,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -36733,10 +37417,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -36751,11 +37441,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -36822,10 +37513,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -36840,11 +37537,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -36911,10 +37609,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -36929,11 +37633,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -37029,10 +37734,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -37047,11 +37758,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -38058,10 +38770,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -38076,11 +38794,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -38755,10 +39474,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -38773,11 +39498,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -38815,10 +39541,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -38833,11 +39565,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -40127,10 +40860,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -40145,11 +40884,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -41409,10 +42149,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -41427,11 +42173,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -41526,10 +42273,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -41544,11 +42297,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -41643,10 +42397,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 9,
@@ -41661,11 +42421,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -41878,13 +42639,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 19,
+      "degree": 20,
       "id": "morocco",
       "kind": "actor",
       "names": [
@@ -41896,11 +42663,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -42174,10 +42942,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -42192,11 +42966,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -42967,10 +43742,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -42985,11 +43766,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -43549,13 +44331,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "namibia",
       "kind": "actor",
       "names": [
@@ -43567,11 +44355,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -44251,7 +45040,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "nato",
       "kind": "actor",
       "names": [
@@ -44772,10 +45561,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 8,
@@ -44790,11 +45585,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -44860,13 +45656,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 8,
+      "degree": 9,
       "id": "netherlands",
       "kind": "actor",
       "names": [
@@ -44878,11 +45680,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -45011,10 +45814,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -45029,11 +45838,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -45190,13 +46000,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 4,
       "id": "new-zealand",
       "kind": "actor",
       "names": [
@@ -45208,11 +46024,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -46444,10 +47261,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -46462,11 +47285,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -46503,10 +47327,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -46521,11 +47351,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -46563,10 +47394,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -46581,11 +47418,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -47650,13 +48488,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 2,
       "id": "norway",
       "kind": "actor",
       "names": [
@@ -47668,11 +48512,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -49290,10 +50135,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 12,
@@ -49308,11 +50159,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -50472,13 +51324,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 7,
+      "degree": 10,
       "id": "pakistan",
       "kind": "actor",
       "names": [
@@ -50490,11 +51348,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -50796,13 +51655,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 2,
       "id": "panama",
       "kind": "actor",
       "names": [
@@ -50814,11 +51679,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -51059,10 +51925,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -51077,11 +51949,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -51179,10 +52052,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -51197,11 +52076,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -52535,10 +53415,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 6,
@@ -52553,11 +53439,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -52652,10 +53539,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -52670,11 +53563,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -53506,13 +54400,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 10,
+      "degree": 12,
       "id": "poland",
       "kind": "actor",
       "names": [
@@ -53524,11 +54424,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -53973,13 +54874,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 37,
+      "degree": 38,
       "id": "portugal",
       "kind": "actor",
       "names": [
@@ -53991,11 +54898,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -54462,10 +55370,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -54480,11 +55394,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -54933,10 +55848,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -54951,11 +55872,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -56096,10 +57018,12 @@
       ],
       "cites": [
         "macqueen-1997-decolonization",
-        "costa-pinto-2003-contemporary-portugal"
+        "costa-pinto-2003-contemporary-portugal",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 6,
+      "degree": 9,
       "id": "republic-of-india",
       "kind": "actor",
       "names": [
@@ -56111,9 +57035,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "polity-description"
+        ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -56276,10 +57203,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -56294,11 +57227,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -56522,11 +57456,17 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 13,
@@ -56540,12 +57480,13 @@
       },
       "review": {
         "flags": [
-          "m59-joined"
+          "m59-joined",
+          "polity-description"
         ],
         "note": "M59: joined with romania, the same polity — Rumania is Romania in the older English spelling. The outlines either side of the 1885/1886 seam share 92.77% of the smaller and 58.19% of the union (docs/m59-singletons.md), and that seam is where Historical Basemaps stops and CShapes 2.0 starts, not a date. The interval is now the 1885 record's own start (1878) and the 1886 record's own end (open); neither was authored here.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -56673,10 +57614,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -56690,12 +57637,13 @@
       },
       "review": {
         "flags": [
-          "m52-open"
+          "m52-open",
+          "polity-description"
         ],
         "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4.",
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -56765,13 +57713,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 3,
       "id": "rwanda",
       "kind": "actor",
       "names": [
@@ -56783,11 +57737,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -58297,10 +59252,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -58315,11 +59276,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -59291,10 +60253,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -59309,11 +60277,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -59410,10 +60379,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 10,
@@ -59428,11 +60403,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -60429,10 +61405,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -60447,11 +61429,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -60693,10 +61676,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -60711,11 +61700,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61188,10 +62178,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -61206,11 +62202,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61218,10 +62215,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -61236,11 +62239,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61425,10 +62429,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -61443,11 +62453,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61485,13 +62496,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 2,
       "id": "somalia",
       "kind": "actor",
       "names": [
@@ -61503,11 +62520,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61631,10 +62649,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -61649,11 +62673,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61722,10 +62747,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -61740,11 +62771,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -61960,13 +62992,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 14,
+      "degree": 16,
       "id": "spain",
       "kind": "actor",
       "names": [
@@ -61978,11 +63016,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -62198,10 +63237,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -62216,11 +63261,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -62577,13 +63623,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 3,
+      "degree": 4,
       "id": "sudan",
       "kind": "actor",
       "names": [
@@ -62595,11 +63647,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -62935,10 +63988,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -62953,11 +64012,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63199,10 +64259,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -63217,11 +64283,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63259,10 +64326,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -63277,11 +64350,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63407,10 +64481,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 6,
@@ -63425,11 +64505,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63495,13 +64576,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 8,
       "id": "syria",
       "kind": "actor",
       "names": [
@@ -63513,11 +64600,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63816,10 +64904,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -63834,11 +64928,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -63907,10 +65002,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -63925,11 +65026,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -64343,10 +65445,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -64361,11 +65469,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -65429,13 +66538,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 5,
+      "degree": 7,
       "id": "thailand",
       "kind": "actor",
       "names": [
@@ -65447,11 +66562,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -66332,10 +67448,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -66350,11 +67472,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -67004,10 +68127,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -67022,11 +68151,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -67764,10 +68894,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -67782,11 +68918,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -67940,14 +69077,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 4,
+      "degree": 5,
       "id": "turkey-ottoman-empire",
       "kind": "actor",
       "names": [
@@ -67959,12 +69101,13 @@
       },
       "review": {
         "flags": [
-          "m51-split"
+          "m51-split",
+          "polity-description"
         ],
         "note": "M51: split from ottoman-empire, which held this ground until Wikidata's P576 1922-11-17 on Q12560. This record begins there and keeps entity 640's last period; the eight before it moved to ottoman-empire, each to whoever held it when it began, because CShapes draws no boundary on that day. names[0] drops \"(Ottoman Empire)\", which this record no longer covers.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -67972,10 +69115,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -67990,11 +69139,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -68379,13 +69529,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 4,
       "id": "uganda",
       "kind": "actor",
       "names": [
@@ -68397,11 +69553,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -68468,10 +69625,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 6,
@@ -68486,11 +69649,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -68916,7 +70080,7 @@
         "macqueen-1997-decolonization"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 4,
       "id": "unita",
       "kind": "actor",
       "names": [
@@ -68942,10 +70106,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -68960,11 +70130,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -69002,13 +70173,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 20,
+      "degree": 29,
       "id": "united-kingdom",
       "kind": "actor",
       "names": [
@@ -69020,11 +70197,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -69181,13 +70359,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 32,
+      "degree": 46,
       "id": "united-states-of-america",
       "kind": "actor",
       "names": [
@@ -69199,11 +70383,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -69362,10 +70547,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -69380,11 +70571,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -69537,10 +70729,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 1,
@@ -69555,11 +70753,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -69682,10 +70881,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -69700,11 +70905,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -75952,10 +77158,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 4,
@@ -75970,11 +77182,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -77348,10 +78561,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -77366,11 +78585,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
@@ -77584,13 +78804,19 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "zimbabwe-rhodesia",
       "kind": "actor",
       "names": [
@@ -77602,11 +78828,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active"
     },
     {
