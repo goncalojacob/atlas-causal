@@ -21,6 +21,7 @@ import { RELATION_LABEL, RELATION_ORDER } from '../panel/actor.js';
 import { kindsWhere, byKind } from '../kinds.js';
 import { attributionHtml, attributionSource } from '../licensing.js';
 import { editUrl } from '../share.js';
+import { PRECISION_LABEL } from '../vocab.js';
 
 // The kinds with a page. Anything else — an edge, a narrative, a source — is
 // read inside the atlas, and the page says so rather than pretending.
@@ -194,7 +195,11 @@ function metaHtml(atlas, links, kind, record, topologyEntry) {
     if (record.where?.label) parts.push(`<span class="where">${esc(record.where.label)}</span>`);
   }
   if (kind === 'place' && record.where) {
-    parts.push(`<span class="where">${esc(record.where.label)} <span class="muted">(${esc(record.where.precision)})</span></span>`);
+    // How precisely it is placed, in words, as the card says it (M80): a bare
+    // "(country)" reads as the name of a country and not as a statement about
+    // the coordinate. A word the vocabulary does not know is left out.
+    const said = PRECISION_LABEL[record.where.precision] ?? null;
+    parts.push(`<span class="where">${esc(record.where.label)}${said ? ` <span class="muted">(${esc(said)})</span>` : ''}</span>`);
   }
   return `<p class="meta">${parts.join(' · ')}</p>`;
 }

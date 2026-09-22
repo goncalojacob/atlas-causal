@@ -912,6 +912,17 @@ body:not(.phone) .layout.panel-empty.composing {
    carry emphasis. */
 .map .mark { fill: var(--paper); stroke: var(--cobalt); stroke-width: 1.5; vector-effect: non-scaling-stroke; cursor: pointer; }
 .map .mark:hover { fill: var(--cobalt-faint); }
+/* An event placed no more precisely than a region or a state (M80). The width
+   is the layer's — half again a city's — and this is the other half of it: a
+   dashed, lighter ring over a fill that lets the ground through, so that the
+   mark reads as *somewhere in here* rather than as a pin dropped on a capital.
+   Nothing new is spent on it: the same cobalt, the same stroke, at a lower
+   opacity, which is how the atlas has said "less sure" since M73. Before the
+   emphasis rules below, so a coarse mark that is selected or walked is drawn
+   in madder like any other and keeps only its width. */
+.map .mark.coarse {
+  stroke: var(--cobalt-soft); stroke-dasharray: 3 2; fill-opacity: 0.35;
+}
 /* The events of the selected actor. Cobalt and heavier, never madder:
    the accent belongs to the path being followed, and the two emphases
    must not be confused with one another. */

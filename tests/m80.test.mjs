@@ -23,7 +23,8 @@ import { distanceToSegment } from '../src/graph-view/graph-view.js';
 import { workingSet } from '../src/emphasis.js';
 import { esc } from '../src/util/esc.js';
 import { bounds } from '../src/util/dates.js';
-import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
+import { PRECISIONS, PRECISION_IDS, PRECISION_LABEL, isCoarse } from '../src/vocab.js';
+import { atlasOf, FIXTURE_DATA, ROOT, schemas } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 const fixtures = await atlasOf(FIXTURE_DATA);
@@ -153,4 +154,50 @@ test('which line a click means is decided by distance to the segment, and the en
   // A segment of no length is a point, and the distance to it is the distance
   // to that point rather than a division by zero.
   assert.equal(distanceToSegment(3, 4, 0, 0, 0, 0), 5);
+});
+
+// ── 2. marks by precision ──────────────────────────────────────────────────
+
+test('`country` joins the precisions, in the vocabulary and in the schema', async () => {
+  assert.deepEqual([...PRECISION_IDS], ['point', 'city', 'region', 'country']);
+  // Each has a word a card can print: a slug shown where a phrase goes is the
+  // atlas presenting a derived string as what it knows.
+  for (const id of PRECISION_IDS) {
+    assert.equal(typeof PRECISION_LABEL[id], 'string');
+    assert.ok(PRECISION_LABEL[id].length > 0, id);
+    assert.notEqual(PRECISION_LABEL[id], id);
+  }
+  // The schema's enum is the one remaining copy — a JSON Schema cannot import
+  // JavaScript — and it is held to this list, as every other closed
+  // vocabulary is (tests/registry.test.mjs).
+  const enumerated = (await schemas())['common/place.json'].properties.precision.enum;
+  assert.deepEqual([...enumerated].sort(), [...PRECISION_IDS].sort());
+});
+
+test('a region and a country are the coarse two, and a point and a city are not', () => {
+  assert.deepEqual(PRECISIONS.filter((p) => p.coarse).map((p) => p.id), ['region', 'country']);
+  assert.equal(isCoarse('region'), true);
+  assert.equal(isCoarse('country'), true);
+  assert.equal(isCoarse('city'), false);
+  assert.equal(isCoarse('point'), false);
+  // A record from somewhere the validator has not been is not coarse: a mark
+  // wider than its neighbours is a claim, and an unknown word makes none.
+  assert.equal(isCoarse(undefined), false);
+  assert.equal(isCoarse('exactish'), false);
+});
+
+test('a place\'s precision is in the core, where the first frame can read it', async () => {
+  // Not in the attribute shard with its label. A mark's *shape* is drawn on
+  // the frame the map first paints, and an attribute column arrives with its
+  // century: a mark that was a city and became a country a moment later would
+  // be the map correcting itself in front of the reader, which is the fault
+  // `category` was moved into the core to stop (glyphs-brief, §1).
+  const { CORE_COLUMNS, ATTRIBUTE_COLUMNS } = await import('../src/spine.js');
+  const keysOf = (table) => table.place.columns.find((c) => c.name === 'where')?.keys ?? [];
+  assert.ok(keysOf(CORE_COLUMNS).includes('precision'), 'the core does not carry a place\'s precision');
+  assert.ok(!keysOf(ATTRIBUTE_COLUMNS).includes('precision'), 'the shard carries it too');
+  // And the atlas a reader has before any shard lands reads it off a place.
+  for (const place of atlas.places.values()) {
+    assert.ok(PRECISION_IDS.includes(place.where.precision), `${place.id}: ${place.where.precision}`);
+  }
 });

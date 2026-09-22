@@ -18,7 +18,7 @@ import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
 import { parentsOf } from '../parts.js';
 import { sectionHtml, openSection } from './sections.js';
-import { EDGE_TYPE_LABEL } from '../vocab.js';
+import { EDGE_TYPE_LABEL, PRECISION_LABEL } from '../vocab.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
@@ -284,7 +284,13 @@ function whereHtml(ctx, event) {
   const name = place
     ? `<button type="button" class="link" data-action="place" data-id="${esc(place.id)}">${esc(place.name)}</button>`
     : esc(where.label);
-  return ` · <span class="where">${name} <span class="muted">(${esc(where.precision)})</span></span>`;
+  // How precisely it is placed, in words (M80). It used to be the raw value —
+  // "(region)", and now it could be "(country)", which reads as the name of a
+  // country and not as a statement about the coordinate. A word the vocabulary
+  // does not know is left out rather than printed: a slug where a phrase goes
+  // is the atlas presenting a derived string as what it knows.
+  const said = PRECISION_LABEL[where.precision] ?? null;
+  return ` · <span class="where">${name}${said ? ` <span class="muted">(${esc(said)})</span>` : ''}</span>`;
 }
 
 // There was a paragraph here saying which lane the event is drawn in and by

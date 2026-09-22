@@ -231,3 +231,75 @@ test('a connection listed on an event\'s card opens the link\'s card', { skip },
     assert.ok(await page.eval('return Boolean(document.querySelector(".panel .edge-card-head"));'));
   });
 });
+
+// ── 2. marks by precision ──────────────────────────────────────────────────
+
+// Every mark on the map, with the radius the layer gave it and whether it is
+// drawn as coarse. The radius is read off the attribute rather than measured:
+// it is divided by the zoom where it is written, so what comes back is
+// comparable between two marks on the same page and is not a pixel.
+const MARKS = `return [...document.querySelectorAll('#map svg.map circle.mark[data-id]')].map((el) => ({
+  id: el.getAttribute('data-id'),
+  r: Number(el.getAttribute('r')),
+  coarse: el.classList.contains('coarse'),
+  dash: getComputedStyle(el).strokeDasharray,
+  fillOpacity: Number(getComputedStyle(el).fillOpacity),
+}));`;
+
+test('a coarse place is drawn wider and fainter than a city, and says so on the card', { skip }, async () => {
+  await desk(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(`?${WHOLE}`), 'return document.querySelectorAll("#map svg.map circle.mark[data-id]").length > 0;');
+
+    const marks = await page.eval(MARKS);
+    assert.ok(marks.length > 0, 'the map drew no marks');
+    const coarse = marks.filter((m) => m.coarse);
+    const fine = marks.filter((m) => !m.coarse);
+    assert.ok(coarse.length > 0, 'the fixture corpus drew no region or country mark');
+    assert.ok(fine.length > 0, 'the fixture corpus drew no city mark');
+
+    // Wider. Every coarse mark against every fine one drawn on the same page
+    // at the same zoom, so the comparison is between two radii and not against
+    // a number written into this file.
+    const widestFine = Math.max(...fine.map((m) => m.r));
+    for (const mark of coarse) {
+      assert.ok(mark.r > widestFine, `${mark.id} is not drawn wider than a city's mark`);
+    }
+    // And fainter: a dashed, lighter ring over a fill that lets the ground
+    // through, so nobody reads it as a pin dropped at an address.
+    for (const mark of coarse) {
+      assert.ok(mark.fillOpacity < 1, `${mark.id} is drawn as solid as a city's mark`);
+      assert.ok(mark.dash && mark.dash !== 'none', `${mark.id} has no dashed ring`);
+    }
+
+    // Both of the coarse precisions, and each drawn the same way: a region and
+    // a country are areas, and the map says the same thing about both.
+    const which = await page.eval(`return [...document.querySelectorAll('#map svg.map circle.mark[data-id]')]
+      .map((el) => el.getAttribute('data-id'));`);
+    assert.ok(which.includes('fixture-event-c'), 'the region-placed event was not drawn');
+    assert.ok(which.includes('fixture-event-g'), 'the country-placed event was not drawn');
+    for (const id of ['fixture-event-c', 'fixture-event-g']) {
+      assert.ok(marks.find((m) => m.id === id)?.coarse, `${id} is not drawn coarse`);
+    }
+  });
+});
+
+test('the card says how precisely a record is placed, in words', { skip }, async () => {
+  await desk(async (page, url) => {
+    await seenIntro(page);
+    // The event whose place is a country: its card says what the coordinate
+    // means rather than printing the vocabulary's own slug.
+    await open(page, url(`?${WHOLE}&selected=fixture-event-g`),
+      'return document.querySelectorAll(".panel .card-section").length > 0;');
+    const said = await page.eval('return (document.querySelector(".panel .event-head .where") || {}).textContent || "";');
+    assert.doesNotMatch(said, /\(country\)/, 'the card printed the vocabulary\'s slug');
+    assert.match(said, /state's own point/, 'the card does not say what the coordinate is');
+
+    // And the place's own card, which is where the point itself is read.
+    await open(page, url(`?${WHOLE}&place=fixture-place-c`),
+      'return Boolean(document.querySelector(".panel .place-head"));');
+    const place = await page.eval('return (document.querySelector(".panel .place-head .where") || {}).textContent || "";');
+    assert.doesNotMatch(place, /\(region\)/);
+    assert.match(place, /a region/);
+  });
+});
