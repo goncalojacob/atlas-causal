@@ -3195,3 +3195,23 @@ flagged**, which is A7's own sentence.
 - **Three titles still argue with their spans, and now a fourth**:
   `battle-of-algiers-1956-1957`. All four are a person's, as the seven polity
   descriptions and the Gaza cluster's 48 rows are.
+
+### The check, and deviation 1082 arriving a second time
+
+**Red on the first attempt, green on the re-run, and the failure was not a
+record.** `tests/compose-browser.test.mjs:103` failed at `browser.mjs:236` with
+*"headless Chromium opened a debugging port, saying: … Failed to connect to the
+bus"* — the browser dying **before the test body ran** — and the suite then hit
+its 120-second timeout, which is the second of the two counts. That is
+deviation 1082's signature exactly, named this morning on the previous fire's
+merge commit, and it is the one case the run protocol allows a re-run for: a
+job that died at the launch rather than inside a test. The same suite had
+passed twice in this sandbox on the same tree, 254 of 254.
+
+**One re-run, spent.** Attempt 2 was green. The same failure took two tests off
+the `m0` pull request's run at 18:58 on a commit whose push run had already
+passed, which is the clearest evidence available that it is the runner and not
+the corpus: one tree, two runs, two answers.
+
+**Green on the head**: 1,748 pure tests and 254 browser tests, 0 failed, 0
+skipped, and `node tools/validate.mjs --index` at 0 errors and 408 warnings.
