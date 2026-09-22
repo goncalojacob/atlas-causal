@@ -202,7 +202,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -210,7 +213,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1918 Portuguese presidential election"
     },
@@ -236,7 +239,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -244,7 +250,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1919 Portuguese presidential election"
     },
@@ -301,7 +307,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -311,7 +320,7 @@
         "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1921 Portuguese legislative election"
     },
@@ -336,7 +345,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -344,7 +356,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1923 Portuguese presidential election"
     },
@@ -374,7 +386,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -384,7 +399,7 @@
         "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1925 Portuguese legislative election"
     },
@@ -410,7 +425,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -418,7 +436,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1925 Portuguese presidential election"
     },
@@ -448,7 +466,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "ditadura-nacional-1926-1933",
+      "parent": [
+        "ditadura-nacional-1926-1933",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -456,7 +477,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1928 Portuguese presidential election"
     },
@@ -749,6 +770,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "imported-facts",
@@ -758,7 +780,7 @@
         "note": "Retracted in M21 both as outside the atlas — this is French Guinea, Conakry and not Bissau — and for having only one edge. The second reason is gone under the rule of 4 September 2026, and the first was never quite right: the atlas already keeps the referendum of 1958 for the same Portuguese reason. The other four Conakry records the import caught stay retracted, having no edge at all.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1957 Guinean Territorial Assembly election"
     },
@@ -1062,6 +1084,10 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": [
+        "third-portuguese-republic-since-1974",
+        "decolonisation-of-africa"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -1069,7 +1095,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1975 São Toméan legislative election"
     },
@@ -3186,6 +3212,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "imported-facts",
@@ -3193,7 +3220,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-05",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Algerian War"
     },
@@ -3390,10 +3417,14 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": [
+        "third-portuguese-republic-since-1974",
+        "decolonisation-of-africa"
+      ],
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Independence of Angola"
     },
@@ -6133,6 +6164,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "decolonisation-of-africa",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Decolonisation of Africa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
@@ -8465,6 +8525,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "imported-facts",
@@ -8472,7 +8533,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "1958 Guinean constitutional referendum"
     },
@@ -8799,7 +8860,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "estado-novo-1933-1974",
+      "parent": [
+        "estado-novo-1933-1974",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -8807,7 +8871,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The Iberian Pact"
     },
@@ -8978,13 +9042,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Independence of Morocco"
     },
@@ -9942,7 +10007,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-civil-war",
+      "parent": [
+        "russian-civil-war",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -9950,7 +10018,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-21",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Kronstadt rebellion"
     },
@@ -10147,7 +10215,10 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "estado-novo-1933-1974",
+      "parent": [
+        "estado-novo-1933-1974",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "date"
@@ -10155,7 +10226,7 @@
         "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Foundation of the Portuguese Legion"
     },
@@ -10952,7 +11023,10 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "date"
@@ -10960,7 +11034,7 @@
         "note": "Written from memory, and STATUS.md lists it among the dates it is least sure of. Check the day, the month and the interval against a source before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The Monarchy of the North"
     },
@@ -11308,7 +11382,10 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "estado-novo-1933-1974",
+      "parent": [
+        "estado-novo-1933-1974",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "date"
@@ -11316,7 +11393,7 @@
         "note": "The year is 1934 and the run is sure of it; the day and the instrument are not written here because this run could not point at them in a source it has read. Check the Diário do Governo and set when.date before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The ban on the National Syndicalists"
     },
@@ -11393,14 +11470,17 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Noite Sangrenta"
     },
@@ -12143,7 +12223,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-civil-war",
+      "parent": [
+        "russian-civil-war",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -12151,7 +12234,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Polish–Soviet War"
     },
@@ -12257,11 +12340,14 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "estado-novo-1933-1974",
+      "parent": [
+        "estado-novo-1933-1974",
+        "interwar-period"
+      ],
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Portugal supports the Nationalists in the Spanish Civil War"
     },
@@ -12311,6 +12397,7 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "m62-umbrella",
@@ -12318,7 +12405,7 @@
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The Portuguese Colonial War"
     },
@@ -12669,14 +12756,17 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-civil-war",
+      "parent": [
+        "russian-civil-war",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Revolt of Czechoslovak Legion"
     },
@@ -13185,11 +13275,14 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "ditadura-nacional-1926-1933",
+      "parent": [
+        "ditadura-nacional-1926-1933",
+        "interwar-period"
+      ],
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Salazar becomes Minister of Finance"
     },
@@ -13210,11 +13303,14 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "ditadura-nacional-1926-1933",
+      "parent": [
+        "ditadura-nacional-1926-1933",
+        "interwar-period"
+      ],
       "review": {
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Salazar becomes President of the Council"
     },
@@ -13843,14 +13939,17 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "first-portuguese-republic-1910-1926",
+      "parent": [
+        "first-portuguese-republic-1910-1926",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Assassination of Sidónio Pais"
     },
@@ -14665,14 +14764,17 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-civil-war",
+      "parent": [
+        "russian-civil-war",
+        "interwar-period"
+      ],
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Tambov Rebellion"
     },
@@ -15438,6 +15540,7 @@
       ],
       "category": "war",
       "cites": [
+        "wikipedia-en",
         "wikidata"
       ],
       "created": "2026-09-21",
@@ -15451,9 +15554,10 @@
         "flags": [
           "imported-facts"
         ],
+        "note": "A7: the interval was 1998–1998 for a thirty-year conflict — the imported item's, which dates only the end — and is now the one the cited article states at revision 1376046499: \"about 30 years from the late 1960s to 1998\". \"The late 1960s\" is not a year, so the start is written as the range it names, 1967–1969, rather than as a year nobody wrote down; the end is 1998, which the article gives, with no day, because it gives none for the period itself. Nothing else on this record was touched.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "The Troubles"
     },
@@ -17787,13 +17891,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "imported-facts"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Zanzibar Revolution"
     }
@@ -17904,6 +18009,12 @@
     },
     {
       "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

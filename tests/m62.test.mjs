@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { astronomicalBounds } from '../src/util/dates.js';
+import { parentsOf } from '../src/parts.js';
 
 // M62 writes the umbrella events the atlas never had: the Estado Novo, the
 // First Republic, the Ditadura Nacional, the Colonial War and the Brazilian
@@ -55,7 +56,10 @@ const sourceById = new Map(sources.map((s) => [s.id, s]));
 
 const active = events.filter((e) => e.status === 'active');
 const umbrellas = active.filter((e) => (e.review?.flags ?? []).includes(UMBRELLA_FLAG));
-const childrenOf = (id) => active.filter((e) => e.parent === id);
+// Through `parentsOf` since M79 made `parent` a list: an event may be part of
+// several umbrellas, and comparing the field to an id stops seeing every child
+// filed as a list — which does not fail, it passes by finding nothing.
+const childrenOf = (id) => active.filter((e) => parentsOf(e).includes(id));
 const actorsOf = (e) => new Set((e.actors ?? []).map((a) => a.actor));
 // The rule's own reading of an interval, imported rather than re-derived, so
 // that this suite cannot disagree with the warning it is guarding.
@@ -135,31 +139,33 @@ test("every child's actors or place put it inside its umbrella", () => {
 
 test('an umbrella holds a forest: one parent, active, no cycle', () => {
   for (const e of active) {
-    if (typeof e.parent !== 'string') continue;
-    const parent = byId.get(e.parent);
-    assert.ok(parent, `${e.id}'s parent "${e.parent}" is not an event record`);
-    assert.equal(parent.kind, 'event', `${e.id}'s parent is a ${parent.kind}`);
-    assert.equal(parent.status, 'active', `${e.id} is active and its parent "${parent.id}" is not`);
-    const walked = [e.id];
-    const seen = new Set(walked);
-    for (let at = parent; at; at = typeof at.parent === 'string' ? byId.get(at.parent) : null) {
-      assert.ok(!seen.has(at.id), `an event cannot be part of itself: ${[...walked, at.id].join(' → ')}`);
-      seen.add(at.id);
-      walked.push(at.id);
+    for (const id of parentsOf(e)) {
+      const parent = byId.get(id);
+      assert.ok(parent, `${e.id}'s parent "${id}" is not an event record`);
+      assert.equal(parent.kind, 'event', `${e.id}'s parent is a ${parent.kind}`);
+      assert.equal(parent.status, 'active', `${e.id} is active and its parent "${parent.id}" is not`);
+      // Every path up, not one: with a list of parents the walk is a search,
+      // and a cycle through the second parent is a cycle just the same.
+      const walk = (at, trail) => {
+        assert.ok(!trail.includes(at), `an event cannot be part of itself: ${[...trail, at].join(' → ')}`);
+        for (const up of parentsOf(byId.get(at) ?? {})) walk(up, [...trail, at]);
+      };
+      walk(parent.id, [e.id]);
     }
   }
 });
 
 test('no child is dated outside its parent', () => {
   for (const e of active) {
-    if (typeof e.parent !== 'string') continue;
-    const parent = byId.get(e.parent);
-    const child = span(e.when);
-    const whole = span(parent.when);
-    assert.ok(
-      child.from >= whole.from && child.to <= whole.to,
-      `${e.id} is part of "${parent.id}" and is not dated inside it`,
-    );
+    for (const id of parentsOf(e)) {
+      const parent = byId.get(id);
+      const child = span(e.when);
+      const whole = span(parent.when);
+      assert.ok(
+        child.from >= whole.from && child.to <= whole.to,
+        `${e.id} is part of "${parent.id}" and is not dated inside it`,
+      );
+    }
   }
 });
 
@@ -188,7 +194,7 @@ test('no umbrella is empty', () => {
 });
 
 test('the events filed outnumber the umbrellas holding them', () => {
-  const filed = active.filter((e) => typeof e.parent === 'string' && umbrellas.some((u) => u.id === e.parent));
+  const filed = active.filter((e) => parentsOf(e).some((id) => umbrellas.some((u) => u.id === id)));
   assert.ok(
     filed.length > umbrellas.length,
     `${filed.length} events under ${umbrellas.length} umbrellas does not lower the top-level count`,

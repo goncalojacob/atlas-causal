@@ -806,3 +806,34 @@ twelve hold.
 
 **Nothing here was given an actor or a place to make it filable**, and the
 five that earned no edge kept none.
+
+## 15. M42, A8 — the one bare record this pass wrote, and why it is an umbrella
+
+*22 September, the fire after `M79 done` reached `origin/m0`. The measurement
+is in `docs/m42-pool.md` → "Second parents (A8)". A1's clause a fifth time,
+for one record and for a different reason than the four before it.*
+
+`decolonisation-of-africa` **names neither an actor nor a place**, and this
+time not because an item gave neither: **a period has neither to give.** A
+continent has no point, so there is no place record to reach for; and the
+actor of the decolonisation of Africa is every colonial power and every
+independence movement in it, which is a list an umbrella has no business
+asserting. `interwar-period`, `scramble-for-africa`, `arab-spring`,
+`indochina-wars` and `afghan-conflict` are bare for exactly the same reason
+and were accounted for the same way.
+
+What it carries instead is **a lane written on purpose** — Africa is the
+period's own subject, not a derivation from a point it does not have — and a
+span with a citation behind it: *"Decolonisation of Africa"*, revision
+1372152864, *"between the mid-1950s to 1976"*. The pool file argues the eight
+events filed under it, one line each.
+
+**The subject test moved with it**, and that is the entry worth keeping here:
+a filing is inside the umbrella's lane **or** names an actor the umbrella
+itself names. M67's own judgement 2 is untouched by that — sharing an actor
+with an umbrella is still being a party to it and not being part of it, and
+the re-read refused all 38 candidates that had nothing but a shared actor
+behind them. What the clause admits is the narrow case the owner asked for:
+`angola-independence-1975` names `third-portuguese-republic`, which is the
+polity `third-portuguese-republic-since-1974` is *about*, and it is drawn in
+the Africa lane because that is where it happened.

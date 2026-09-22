@@ -17924,6 +17924,24 @@ against the tighter test and all twelve hold.
      has no Pearl Harbor to point at**; Caporetto and Third Ypres name no held
      record but their own war. The next batch should be taken **by war rather
      than by ranking**, so that its rows can be argued against each other.
+1069. **The browser suites are the branch's flakiest thing and the flake has a
+     shape: a ten-second patience budget against a corpus that grows every
+     batch.** Two runs went red this fire. The **claim commit**, which changes
+     one line of `STATUS.md` and no data, failed
+     `tests/lens-browser.test.mjs` on an assertion; the **batch 33 commit**
+     failed `tests/spine-pages.test.mjs:195` — *"the atlas draws its bars
+     before the last century lands, and names them when it has"* — with
+     `timed out waiting for every bar named` after 11.7 s. Both passed on the
+     next attempt with the tree unchanged, and the second test runs in **1.1 s
+     here against a cap of 200 tries × 50 ms = 10 s**. So it is the runner and
+     not the records, and the re-run is the one the rules allow.
+     **It is still worth writing down**, because the budget is fixed and the
+     corpus is not: `waitFor` is a wall-clock timer inside a test whose own
+     comment says it asserts *"on the elements and the text and never on a
+     wall-clock duration"*, and every batch of this milestone moves that test
+     closer to its cap. **Raising `tries` is not weakening an assertion**, and
+     a fire that sees this red a third time should say so to the owner rather
+     than re-run again.
 1068. **A class may be added with no category, and one was.** `Q5791104`
      *international crisis* is not one of the twelve kinds of
      `data/categories.json`, and the table's own rule is that a class with no
@@ -18223,5 +18241,6 @@ M42 started 2026-09-21T23:06:51Z by scheduled
 M42 started 2026-09-22T02:06:27Z by scheduled
 M42 started 2026-09-22T05:07:06Z by scheduled
 M42 started 2026-09-22T08:06:56Z by scheduled
+M42 started 2026-09-22T10:33:11Z by scheduled
 M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
 M79 done
