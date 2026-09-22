@@ -2282,3 +2282,64 @@ period named after a region and for nothing else.**
   them: the inverse `part of` vein, 626 rows, taken by war rather than by
   ranking.
 - **The Gaza cluster and Sudan's five** are unchanged and still the owner's.
+
+## A7 — the three intervals, one widened and two refused by an argument
+
+*22 September, the same fire. The owner, asked in one sentence whether a run
+may widen an imported interval from the record's own cited article, answered
+**"I agree."** The three intervals two earlier fires assigned to a person were
+read. **One was widened. Two were refused, and not by a judgement about
+history — by rule 4.***
+
+### `the-troubles`, widened
+
+**1998–1998 → 1967–1969 to 1998.** The record carried the item's end date and
+nothing else, which made a thirty-year conflict a point event. The article it
+now cites — *"The Troubles"*, **revision 1376046499** — says *"about 30 years
+from the late 1960s to 1998 ... usually deemed to have ended with the Good
+Friday Agreement of 1998"*.
+
+"The late 1960s" is not a year, and this is the second time in one fire that a
+source has declined to give one. It is written the same way
+`decolonisation-of-africa` is written: the range the phrase names, 1967–1969,
+rather than a year nobody wrote down. The end is 1998 with no day, because the
+article gives the period no day of its own. The record cited only Wikidata
+before and now cites the article, quoted, at its revision; the note says what
+moved from what. Nothing else on the record was touched, and the summary is
+still the import's own.
+
+Both edges on it still point the right way: `anglo-irish-treaty` (1921) is a
+precondition of a conflict now beginning in 1967 rather than 1998, which is
+the arrow it always should have had, and the Troubles still precede the Good
+Friday Agreement they caused.
+
+### `chinese-civil-war` and `turkish-war-of-independence`, refused
+
+**Both articles state a span, and writing it breaks an edge.**
+
+`chinese-civil-war` would go 1946–1950 → **1927–1949**, from *"Chinese Civil
+War"*, revision 1375954779: *"Armed conflict continued intermittently from 1
+August 1927 until Communist victory ... on 7 December 1949."* It was written,
+and the validator refused it: **rule 4, arrow of time** —
+`second-sino-japanese-war--chinese-civil-war--precondition-of`. The Japanese
+war begins in 1937 and cannot be a precondition of a war that begins in 1927.
+
+`turkish-war-of-independence` would go 1922–1923 → 1919, and collides the same
+way with `treaty-of-sevres--turkish-war-of-independence--caused`: Sèvres is
+signed in August 1920 and cannot cause a war that began the year before.
+
+**This is not a date problem and A7 does not reach it.** Each record's own
+note already asked the question underneath: *is this record the whole war, or
+the phase the item dated?* The atlas has answered it once already, in an edge
+— `precondition-of` and `caused` are arguments somebody wrote, and both of
+them read these records as the later phase. Widening the span would not
+correct a date; it would silently redefine what the record is about and
+falsify an argument already in the graph. A7 authorises reading a span from a
+cited article, not re-deciding a record's subject, so **both stay as they are
+and stay flagged**, and their notes still say what a reviewer has to settle.
+
+**The finding worth carrying forward**: rule 4 is a check on identity and not
+only on chronology. Where an imported record's interval is narrower than its
+article, the edges already attached to it are evidence about which reading the
+atlas has committed to, and they should be read before the interval is
+touched.
