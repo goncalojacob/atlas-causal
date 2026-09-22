@@ -20,6 +20,8 @@ import { sectionHtml, openSection } from './sections.js';
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
+// The cross in the card's top right, the same on every card (M84).
+import { closeControlHtml } from './close.js';
 
 // The section key of the holders, so panel.js and the tests name it once.
 export const HOLDERS_SECTION = 'holders';
@@ -72,13 +74,13 @@ export function officeCardHtml(ctx, office, { state = null, remembered = null } 
   return `<section class="card office-card">
     ${office.status !== 'active' ? `<p class="notice status">This office is <strong>${esc(office.status)}</strong>.</p>` : ''}
     <header class="office-head">
+      ${closeControlHtml()}
       ${ctx.historyHtml()}
       <h2>${esc(office.title ?? office.id)}</h2>
       <p class="meta">
         ${belongs}
         · <span class="office-category">${esc(category)}</span>
         ${office.when ? ` · <span class="when">${esc(formatInterval(office.when))}</span>` : ''}
-        <button type="button" class="link small" data-action="clear-office">close</button>
       </p>
       ${standingSlot()}
       <div class="head-links">${ctx.wikipediaHtml(office)}${ctx.discussLink('office', office.id)}</div>

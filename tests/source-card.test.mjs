@@ -72,7 +72,7 @@ test('every kind of citer becomes a way back into the atlas', async () => {
   assert.match(html, /data-action="follow-edge" data-edge="/, 'an edge citer walks its own step');
   const withActor = [...atlas.sources.values()].find((s) => rowsOf(s).some((c) => c.kind === 'actor'));
   assert.match(sourceCardHtml(ctx, withActor), /data-action="actor" data-id="/);
-  assert.match(html, /data-action="clear-source"/, 'and the card can be closed');
+  assert.match(html, /data-action="close-card"/, 'and the card can be closed');
 });
 
 test('a dissenting citation is marked as one on the card', async () => {

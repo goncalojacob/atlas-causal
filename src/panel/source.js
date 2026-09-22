@@ -23,6 +23,8 @@ import { standingHtml } from '../standing.js';
 import { formatInterval } from '../util/dates.js';
 import { citationText, identifiers, groupCiters } from '../citation.js';
 import { TYPE_LABEL } from './event.js';
+// The cross in the card's top right, the same on every card (M84).
+import { closeControlHtml } from './close.js';
 
 const TYPE_HINT = Object.freeze({
   book: 'book',
@@ -144,12 +146,12 @@ export function sourceCardHtml(ctx, source, citations = ctx.atlas?.citersOf?.(so
   return `
     ${source.status !== 'active' ? `<p class="notice status">This source is <strong>${esc(source.status)}</strong>.</p>` : ''}
     <header class="source-head">
+      ${closeControlHtml()}
       <h2>${esc(source.title)}</h2>
       <p class="meta">
         ${creators ? `<span class="creators">${esc(creators)}</span>` : '<span class="muted">no creator recorded</span>'}
         ${source.year ? ` · <span class="when">${esc(source.year)}</span>` : ''}
         · <span class="source-type">${esc(TYPE_HINT[source.type] ?? source.type)}</span>
-        <button type="button" class="link small" data-action="clear-source">close</button>
         ${ctx.lensControl('source', source.id)}
       </p>
       ${source.publisher ? `<p class="muted">${esc(source.publisher)}</p>` : ''}
