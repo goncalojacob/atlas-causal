@@ -19108,6 +19108,76 @@ south against north within it is 118 to 17, with 5 placeless. Europe before
 skipped**, the browser suites one at a time as the check runs them.
 `docs/m53-polities.md` §4.1's "after M42" row was retaken to **351 of 658**.
 
+**M42b batch 5 — the Thirty Years' War, 22 September.** The fifth fire on
+`m42b`. It began by merging `origin/m0` (through **M83**) and `origin/m42`
+(through its batch 36) again, so the corpus it found reads **678 active and
+242 main**, and none of that growth is this batch's. Taken from **the cell
+that trails most in this partition and in the whole atlas**: Europe's 17th
+century, which held **one** active event — `royal-african-company`, dated 1660
+— and no umbrella of any kind. `docs/m42b-pool.md` → "Batch 5".
+
+**The Landing of the Granma, which batch 4's note ranked first, is not an
+event item** — deviation **1206**. The English article of that title is the
+sitelink of `Q372672`, whose label is *Granma*, whose description is *yacht*,
+which carries no date and no `part of`, and which is not among the sixteen
+items `part of` the Cuban Revolution. Nothing was imported on it and nothing
+has to be undone; the recommendation is what is corrected.
+
+**Twenty events, one umbrella and nineteen filed under it.** The inverse
+`part of` sweep on `Q2487` returned **171 items and the atlas held none of
+them**; the top twenty by sitelinks that are Europe were taken, `siege-of-
+pilsen` filing under `bohemian-revolt` rather than the war because that is the
+narrower container (deviation 1203's rule). **All twenty carry the cached
+English lead at a named revision** in place of the import's placeholder, with
+the `wikipedia-en` citation and the `summary-from-lead` flag.
+
+**Eleven new places and one reused.** Each from the located item **nearest the
+event's own `P625`** — arithmetic over coordinates Wikidata already publishes,
+which matters once, at Lützen, where `P276` names Leipzig 17 km away and
+`P131` names the town 1 km away. Precision off each item's own class: ten
+`city`, `prague-castle` at `point`, `smolensk-voivodeship` at `region`.
+`battle-of-prague-1648` takes the `prague` the atlas already held. **Five are
+placeless because the only located thing named for them is a country or
+larger** — deviation 1201's case — and `docs/m42b-pool.md` argues each by name,
+which is the register `tests/m67.test.mjs` reads.
+
+**Two edges and a stated reason for there not being more.** `bohemian-revolt
+--caused--> thirty-years-war` and `bohemian-revolt --enabled-->
+siege-of-pilsen`, both `probable` on the lead that states them. Eighteen of
+the twenty arrived with no edge at all and **the largest connected component
+did not move**: the war's own lead calls the Eighty Years' War, the Mantuan
+succession, the Torstenson War and the Portuguese Restoration War its
+*"related conflicts"*, and *related* is not one of the five edge types. The
+third fire to find it in its own vein, and it is a fact about how leads are
+written.
+
+**Refused**: `Q1501724` the Portuguese Restoration War, 1640–1688 and so forty
+years past the umbrella (the best row left in the vein, and it costs a main
+event); `Q1340672` Hakkapeliitta, a kind of cavalry; `Q1615804` the Hessian
+War, whose span contains the umbrella; and **`sweden` as an actor of the war**,
+because the record of that name is dated 1886 to now — naming it a belligerent
+of 1648 is the fault `tests/m56.test.mjs` exists to catch. M67 A1 settles that
+an event with no actor is not a defect.
+
+**Deviation 1207**: four items refused for want of a lane were re-asked by
+adding them to the seeds file's `lanes` table **and removing them from the
+tool's own `done` list**, which is not the ordinary path and should not have
+to be. **Deviation 1208**: the Edict of Restitution's `end` was set to 6 March
+1629, the day its own cited article gives for the proclamation, against the
+`end-unstated` flag the import wrote — `end: null` reads as *still going* and
+dated the edict outside its parent.
+
+**Corpus after the fire: 698 active, 243 main, 455 filed, 665 edges, largest
+connected component 513, 150 components, 124 events with no edge at all.**
+**The main count rose by one**, the umbrella, and A6 asks why: the century had
+nothing to hang anything from, so twenty records arrived and the resting
+timeline gained one bar. Europe's 17th century goes from **1 / 1 to 21 / 2**;
+Europe before 1900 from 23 to **43 active, 15 main**; the `americas` lane is
+untouched at 140 active and 59 main. `node tools/validate.mjs --index`: **0
+errors, 496 warnings**. **1,764 pure and 268 browser, 2,032 in all, 0 failed
+and 0 skipped**, the browser suites one at a time as the check runs them.
+`docs/m53-polities.md` §4.1's "after M42" row was retaken to **352 of 698**.
+
 1204. **The claim window's ninety minutes was read twice, and it is the second
       reading that claimed.** At the gate this branch's last push was **89.4
       minutes** old — inside the protocol's ninety — so the rule said stop.
