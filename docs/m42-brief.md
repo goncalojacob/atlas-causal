@@ -320,3 +320,20 @@ place too, at that precision. The pass reports how many events gained a
 place at each precision and how many are still placeless and why, in
 `docs/m42-pool.md` under `## Places (A9)`. Nothing invented: a point comes
 from `P625` or the event stays placeless.
+
+**A10 (22 September). The world, not Europe.** The owner: *"the platform has
+mostly events related to Europe. We want the whole world, Africa, Asia,
+South America."* The filing pass measured it: before A6, main events by lane
+were **Europe 190, Asia 73, Africa 44, the Americas 63**, and the active
+corpus leans the same way. From the next fire **every batch is taken from
+the lanes that trail**, in this order of need — Africa, South America (the
+`americas` lane south of the Rio Grande, said as such in the batch note),
+Asia — until each of the three holds at least as many active events as
+Europe held on 22 September (whatever `docs/m42-pool.md` measures Europe at
+that morning). Europe takes a batch only when it is the lane a chain
+crosses into. The candidates sweep (A2) is re-ranked by lane before by
+sitelinks; the seeds file gains the regional periods A6 asks for where a
+lane has none (Latin America's, Asia's), each from its Wikipedia article.
+**Every batch note reports the active and main count per lane**, and
+`docs/m42-pool.md` keeps a running table. Umbrellas (A6), places (A9) and
+second parents (A8) apply to each batch as before.
