@@ -184,6 +184,15 @@
         }
       ]
     },
+    "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2020-malian-coup-d-etat--2021-malian-coup-d-etat--precondition-of": {
       "from": "git",
       "versions": [

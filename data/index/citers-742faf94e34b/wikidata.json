@@ -980,6 +980,12 @@
     },
     {
       "dissent": false,
+      "id": "allied-invasion-of-sicily",
+      "kind": "event",
+      "locator": "Q217981"
+    },
+    {
+      "dissent": false,
       "id": "amsterdam-treaty",
       "kind": "event",
       "locator": "Q193739"
@@ -1142,9 +1148,51 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-britain",
+      "kind": "event",
+      "locator": "Q154720"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dunkirk",
+      "kind": "event",
+      "locator": "Q208529"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jutland",
+      "kind": "event",
+      "locator": "Q156554"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kursk",
+      "kind": "event",
+      "locator": "Q130861"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "Q19831524"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tannenberg",
+      "kind": "event",
+      "locator": "Q153858"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tsushima",
+      "kind": "event",
+      "locator": "Q208127"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-verdun",
+      "kind": "event",
+      "locator": "Q130847"
     },
     {
       "dissent": false,
@@ -2018,6 +2066,12 @@
     },
     {
       "dissent": false,
+      "id": "marco-polo-bridge-incident",
+      "kind": "event",
+      "locator": "Q219230"
+    },
+    {
+      "dissent": false,
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "locator": "Q123998092"
@@ -2087,6 +2141,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255"
+    },
+    {
+      "dissent": false,
+      "id": "my-lai-massacre",
+      "kind": "event",
+      "locator": "Q183421"
     },
     {
       "dissent": false,
@@ -2516,6 +2576,12 @@
     },
     {
       "dissent": false,
+      "id": "soviet-invasion-of-poland",
+      "kind": "event",
+      "locator": "Q2305266"
+    },
+    {
+      "dissent": false,
       "id": "soviet-japanese-border-conflicts",
       "kind": "event",
       "locator": "Q696389"
@@ -2855,6 +2921,12 @@
       "id": "war-in-darfur",
       "kind": "event",
       "locator": "Q190758"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-donbas",
+      "kind": "event",
+      "locator": "Q16335075"
     },
     {
       "dissent": false,

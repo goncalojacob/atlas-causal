@@ -4093,6 +4093,15 @@
         }
       ]
     },
+    "allied-invasion-of-sicily": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "almograve-environmental-disaster": {
       "from": "git",
       "versions": [
@@ -5153,7 +5162,52 @@
         }
       ]
     },
+    "battle-of-britain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-dunkirk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-jutland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-kursk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "battle-of-musa-dagh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-tannenberg": {
       "from": "git",
       "versions": [
         {
@@ -5222,6 +5276,24 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "battle-of-tsushima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-verdun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -9266,6 +9338,15 @@
         }
       ]
     },
+    "marco-polo-bridge-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "massacre-of-arabs-during-the-zanzibar-revolution": {
       "from": "git",
       "versions": [
@@ -9805,6 +9886,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "my-lai-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -12116,6 +12206,15 @@
             "parent"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "soviet-invasion-of-poland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

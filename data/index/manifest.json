@@ -49,13 +49,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-067710c04e97.json",
+      "file": "index/attributes-1900-1999-d132c605e994.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-e7c0aa338f07.json",
+      "file": "index/attributes-2000-2099-cd51c95dcd02.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -813,7 +813,7 @@
       "id": "treaty"
     },
     {
-      "count": 73,
+      "count": 83,
       "id": "war"
     }
   ],
@@ -881,8 +881,8 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 632,
-    "events": 798,
+    "edges": 635,
+    "events": 810,
     "narratives": 2,
     "offices": 11,
     "places": 47,
@@ -919,24 +919,24 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-2e8a3ff14016.json",
+      "file": "index/explanations-1900-1999-2037be725a70.json",
       "from": 1900,
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-f6ccb960363d.json",
+      "file": "index/explanations-2000-2099-91622501ac76.json",
       "from": 2000,
       "to": 2099
     }
   ],
   "files": {
-    "citers": "index/citers-9548a2abe6b1",
-    "core": "index/core-b22fd63560ea.json",
+    "citers": "index/citers-742faf94e34b",
+    "core": "index/core-fa1cc58246c3.json",
     "grounds": "index/grounds-702990134c57.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-bf17526e2629.json",
-    "search": "index/search-a3208076d7b0.json",
-    "sources": "index/sources-f62b076900e5.json",
+    "review": "index/review-ba72b3d1226a.json",
+    "search": "index/search-1c6e1b376652.json",
+    "sources": "index/sources-125365a77afa.json",
     "territories": "index/territories-674e67b40263.json"
   },
   "historyShards": [
@@ -976,14 +976,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-785ca0cb43c0.json",
+      "file": "index/history-event-1900-1999-f69ebdf26780.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-ced32ebc44f3.json",
+      "file": "index/history-event-2000-2099-28599e7de8f9.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
@@ -1025,14 +1025,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-c86951aeb9b3.json",
+      "file": "index/history-edge-1900-1999-be1b762449e1.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-154a120aba1f.json",
+      "file": "index/history-edge-2000-2099-0a43f280d4dc.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",

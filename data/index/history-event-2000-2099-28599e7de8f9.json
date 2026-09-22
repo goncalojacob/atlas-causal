@@ -5137,6 +5137,15 @@
         }
       ]
     },
+    "war-in-donbas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "war-in-somalia": {
       "from": "git",
       "versions": [

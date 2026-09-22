@@ -386,6 +386,12 @@
     },
     {
       "dissent": false,
+      "id": "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled",
+      "kind": "edge",
+      "locator": "\"War in Donbas\", revision 1370749630, lead and § Protests in the Donbas"
+    },
+    {
+      "dissent": false,
       "id": "2020-malian-coup-d-etat--2021-malian-coup-d-etat--precondition-of",
       "kind": "edge",
       "locator": "\"2021 Malian coup d'état\", revision 1370424554, § lead"
@@ -599,6 +605,12 @@
       "id": "baring-crisis--panic-of-1893--precondition-of",
       "kind": "edge",
       "locator": "\"Panic of 1893\", revision 1374530409, § Causes"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, § Aftermath"
     },
     {
       "dissent": false,
@@ -1889,6 +1901,12 @@
       "id": "molotov-ribbentrop-pact--katyn-massacre--enabled",
       "kind": "edge",
       "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
+    },
+    {
+      "dissent": false,
+      "id": "molotov-ribbentrop-pact--soviet-invasion-of-poland--enabled",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Poland\", revision 1375354648, lead"
     },
     {
       "dissent": false,

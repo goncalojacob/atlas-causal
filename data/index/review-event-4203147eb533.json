@@ -2551,7 +2551,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "2014-pro-russian-unrest-in-ukraine",
       "kind": "event",
       "origin": {
@@ -3196,6 +3196,34 @@
       "revised": "2026-09-05",
       "status": "active",
       "title": "Algerian War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "allied-invasion-of-sicily",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Allied invasion of Sicily"
     },
     {
       "authors": [
@@ -4122,6 +4150,118 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "id": "battle-of-britain",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Britain"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-dunkirk",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dunkirk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-jutland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-i",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jutland"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-kursk",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kursk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
       "degree": 1,
       "id": "battle-of-musa-dagh",
       "kind": "event",
@@ -4138,6 +4278,34 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Musa Dagh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-tannenberg",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-i",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tannenberg"
     },
     {
       "authors": [
@@ -4167,6 +4335,63 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Battle of the Lys"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "battle-of-tsushima",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tsushima"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "battle-of-verdun",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-i",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Verdun"
     },
     {
       "authors": [
@@ -10452,6 +10677,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "marco-polo-bridge-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Marco Polo Bridge incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -10579,7 +10832,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "origin": {
@@ -10896,6 +11149,33 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Munich agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "my-lai-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "My Lai Massacre"
     },
     {
       "authors": [
@@ -13879,6 +14159,35 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "soviet-invasion-of-poland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Soviet invasion of Poland"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-21",
       "degree": 1,
       "id": "soviet-japanese-border-conflicts",
@@ -15640,7 +15949,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-portsmouth",
       "kind": "event",
       "origin": {
@@ -16616,6 +16925,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "war-in-donbas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-ukrainian-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War in Donbas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata"
@@ -17256,6 +17593,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "allied-invasion-of-sicily",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "arab-israeli-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -17281,6 +17624,42 @@
     },
     {
       "id": "bambatha-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-britain",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dunkirk",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-jutland",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-kursk",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tannenberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-verdun",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -17334,7 +17713,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "marco-polo-bridge-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "my-lai-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

@@ -2106,6 +2106,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "from": "2014-pro-russian-unrest-in-ukraine",
+      "id": "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-in-donbas",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
       "from": "2020-malian-coup-d-etat",
       "id": "2020-malian-coup-d-etat--2021-malian-coup-d-etat--precondition-of",
       "kind": "edge",
@@ -3319,6 +3347,34 @@
       "status": "active",
       "to": "coup-28-may-1926",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "battle-of-tsushima",
+      "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-portsmouth",
+      "type": "caused"
     },
     {
       "authors": [
@@ -9718,6 +9774,34 @@
       "revised": null,
       "status": "active",
       "to": "katyn-massacre",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "molotov-ribbentrop-pact",
+      "id": "molotov-ribbentrop-pact--soviet-invasion-of-poland--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-invasion-of-poland",
       "type": "enabled"
     },
     {

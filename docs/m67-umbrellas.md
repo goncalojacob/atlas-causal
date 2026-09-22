@@ -737,3 +737,41 @@ about where anything happened.
 
 **Nothing here was given an actor or a place to make it filable**, and the
 records that earned no edge kept none.
+
+## 13. M42 batch 32 — twelve more bare records, all twelve filed
+
+*22 September, the fire that began at 08:06. The measurement is in
+`docs/m42-pool.md` → "Batch 32". A1's clause a third time and for the same
+reason: **all twelve name neither an actor nor a place**, because the items
+give neither and nothing was invented to cover it. A battle's belligerents
+are two armies and its ground is a front rather than a town, and an actor
+line or a place written to make one filable would be this assistant's claim
+and not the item's.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `battle-of-britain` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-kursk` | `world-war-ii` | not an A6 umbrella |
+| `allied-invasion-of-sicily` | `world-war-ii` | not an A6 umbrella |
+| `soviet-invasion-of-poland` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-dunkirk` | `world-war-ii` | not an A6 umbrella |
+| `battle-of-verdun` | `world-war-i` | not an A6 umbrella |
+| `battle-of-jutland` | `world-war-i` | not an A6 umbrella |
+| `battle-of-tannenberg` | `world-war-i` | not an A6 umbrella |
+| `war-in-donbas` | `russo-ukrainian-war` | not an A6 umbrella |
+| `my-lai-massacre` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-tsushima` | `russo-japanese-war` | not an A6 umbrella |
+| `marco-polo-bridge-incident` | `second-sino-japanese-war` | not an A6 umbrella |
+
+**None of the twelve goes under a period**, so the lane column has no work to
+do in this batch either: every parent is a war this atlas already held and
+that Wikidata's own `P361` named as the whole. **Every one of the twelve
+carries a lane derived from its own point** and not one written into
+`data/imports/wikidata-seeds.json` → `lanes`, which is the difference from
+batch 31: the vein was filtered on the lane before it was ticked, so a row
+whose coordinate does not reach the lane of the record it files under was
+never taken. `world-war-ii` is a europe-lane record and the Pacific War is
+not, which is exactly the kind of row the filter refused.
+
+**Nothing here was given an actor or a place to make it filable**, and the
+nine that earned no edge kept none.

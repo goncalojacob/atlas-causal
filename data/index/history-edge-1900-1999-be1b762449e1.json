@@ -1123,6 +1123,15 @@
         }
       ]
     },
+    "battle-of-tsushima--treaty-of-portsmouth--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "belovezh-accords--dissolution-of-the-soviet-union--caused": {
       "from": "git",
       "versions": [
@@ -3191,6 +3200,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "molotov-ribbentrop-pact--soviet-invasion-of-poland--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
