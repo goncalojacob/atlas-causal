@@ -121,8 +121,9 @@ test('A3: the intro card names what it offers, and says what the atlas is', { sk
   }, { device: DESK });
 });
 
-// And the key, which covered half the picture at 390 px.
-test('A1: the graph\'s key is one button on a phone and the whole key on a desktop', { skip }, async () => {
+// And the key, which covered half the picture at 390 px — and, M83 (A1-4)
+// found, the bottom-left corner of it at 1440 px too. One button on either.
+test('A1: the graph\'s key is one button, and the key opens behind it', { skip }, async () => {
   const KEY = `
     const box = document.querySelector('#graph .graph-key');
     if (!box) return null;
@@ -141,8 +142,10 @@ test('A1: the graph\'s key is one button on a phone and the whole key on a deskt
     await open(page, url('?view=graph'), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
     const desk = await page.eval(KEY);
-    assert.equal(desk.button, false, 'a desktop has nothing to press');
-    assert.equal(desk.body, true, 'and the whole key');
+    assert.equal(desk.button, true, 'a desktop has the button too (M83, A1-4)');
+    assert.equal(desk.body, false, 'and the key folded behind it');
+    await page.eval(press);
+    assert.equal((await page.eval(KEY)).body, true, 'pressing it opens the key');
   }, { device: DESK });
 
   await withBrowser(async (page, url) => {

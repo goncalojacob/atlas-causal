@@ -399,11 +399,17 @@ test('a window holding a regional event fetches the polygons, and one that does 
 test('the search box answers off the search shard', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url('index.html'), ATLAS_READY);
-    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
+    // **The shard is asked for when the box is touched** (M83, A13): 762 KB on
+    // every visit for a reader who may never type is the largest single thing
+    // the page fetches. So the wait for it comes after the typing, not before;
+    // until it lands the box answers out of the atlas, which is the same
+    // fallback a failed fetch has always had.
     await page.eval(`const input = document.querySelector('#search input[type="search"]');
+      input.focus();
       input.value = 'lisb';
       input.dispatchEvent(new Event('input'));
       return true;`);
+    await waitFor(page, 'return performance.getEntriesByType("resource").some((e) => e.name.includes("/index/search-"));', 'the search shard');
     await waitFor(page, 'return document.querySelectorAll("#search [role=\\"option\\"]").length > 0;', 'search results');
     const labels = await page.eval('return [...document.querySelectorAll("#search .search-label")].map((e) => e.textContent);');
     assert.ok(labels.some((l) => /Lisb/i.test(l)), labels.join(' · '));

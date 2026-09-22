@@ -432,10 +432,26 @@ export function ringOf(atlas, set) {
 // common answer opened an empty atlas (health review of 6 September, R8). A
 // focus the reader typed themselves still draws nothing and says so, which is
 // what `?focus=` is for; this is only about the lens nobody asked for.
+// **A focus the reader typed is resolved like every other address** (M83, B17).
+// After `tools/migrate/ids.mjs` renames a record, `?actor=old` and
+// `?selected=old` still open — the aliases are walked by `atlas.resolve` — and
+// `?focus=actor:old` kept an empty lens, which is a blank atlas that says so,
+// with the chip naming the old slug. A link shared before a rename lost its
+// lens silently. Resolved once here, where the explicit list is read, so
+// `eventsOfFocus` is asked about the record the atlas holds now; a focus naming
+// something the atlas has never had is unchanged and still draws nothing.
+function resolveFoci(atlas, foci) {
+  return foci.map((focus) => {
+    const found = atlas?.resolve?.(focus.id) ?? null;
+    return found && found.kind === focus.kind && found.id !== focus.id
+      ? { ...focus, id: found.id } : focus;
+  });
+}
+
 export function activeFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
-  if (explicit.length) return explicit;
+  if (explicit.length) return resolveFoci(atlas, explicit);
   const narrative = readingNarrative(atlas, state);
   if (narrative) {
     const focus = { kind: 'narrative', id: narrative.id };
@@ -516,6 +532,18 @@ export function keptRegardless(atlas, state) {
     ids.add(edge.from);
     ids.add(edge.to);
   }
+  // **And both ends of the link the reader has open** (M83, B7). `?edge=` is an
+  // address like any other, and arriving on one whose two events are parts of
+  // an umbrella opened a card about two events no view drew: at rest the
+  // picture is the main events, nothing kept the ends, and the graph's camera
+  // looked for two nodes it could not find and stayed where it was. A link is
+  // not a lens and narrows nothing (M80); what it does is keep its own two ends
+  // in the picture, exactly as the selected event keeps its consequences.
+  const chosen = state?.edge ? atlas.edges?.get(state.edge) : null;
+  if (chosen && chosen.status === 'active') {
+    ids.add(chosen.from);
+    ids.add(chosen.to);
+  }
   // And, since M65, what the open horizon says the selected event led to.
   // "Where the open event leads directly" was enough while a selection was an
   // emphasis over the whole atlas; now that it is a filter of one hop, an
@@ -543,7 +571,7 @@ export function keptRegardless(atlas, state) {
 // better than switching off did, because every step of it is in the focus set
 // by construction and nothing can hide one.
 //
-// Answered once per state and not once per caller. `panel.js`, `grouping.js`,
+// Answered once per state and not once per caller. `panel.js`,
 // `arrangement.js`, `search-box.js` and `emphasis.js` all ask, several times
 // each per render, and the ring is a walk of the graph. The store hands every
 // subscriber the same state object and replaces it only in `set`, so that

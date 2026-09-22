@@ -784,6 +784,27 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&from=1900&to=1999',
     width: 500, height: 844,
     what: 'a 390 x 844 phone: the picture over half the screen, the links behind Options' },
+
+  // M83 — the graph under a lens, which is the picture the owner sent back
+  // twice. A1's four, in one shot each where a shot can say them: the ring
+  // inside the axis or not drawn at all, a node on its own date rather than in
+  // a year column, a column resolved around its barycentres rather than spread
+  // from one edge of the field to the other, and the key folded behind one
+  // button.
+  { name: 'm83-graph-war', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii',
+    width: 1440, height: 900,
+    what: 'World War II opened on the graph: its parts on their own dates, no row of marks at the edge of the field, and the key folded into one button' },
+  // The same with the key pressed open, which is what it covers and why it
+  // folds.
+  { name: 'm83-graph-war-key', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph&selected=world-war-ii&key=1',
+    width: 1440, height: 900,
+    what: 'and the key opened over the bottom-left of the same picture' },
+  { name: 'm83-graph-war-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph&focus=event:world-war-ii',
+    width: 500, height: 844,
+    what: 'the same lens in a 390 x 844 viewport' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

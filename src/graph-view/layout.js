@@ -29,7 +29,7 @@
 // included. That is why the layout can promise never to be worse than
 // doing nothing.
 
-import { extent } from '../util/dates.js';
+import { extent, startPoint } from '../util/dates.js';
 import { createTimelineScale } from '../timeline-scale.js';
 import { laneOf } from '../lanes.js';
 import { clusterPoints, mergeEdges } from '../cluster.js';
@@ -64,9 +64,6 @@ const SWEEPS = 6;
 // machine was busy would draw a different picture on a slower one, and this
 // file's first promise is that the same records give the same picture.
 const PATIENCE = 2;
-// The furthest apart two nodes of one column are placed, as a fraction of
-// the band's usable height. A column of two should not span the whole band.
-const MAX_GAP = 0.3;
 // How close to the edge of a band a node may be pushed.
 const EDGE = 0.06;
 
@@ -83,6 +80,17 @@ export const MAX_ZOOM = 8;
 // a mark on that one. Below it two nodes cannot both be aimed at, which is
 // the honest moment to stop drawing them as two.
 export const STACK_DISTANCE = 13;
+// The least room the layout leaves between two nodes of one column, in the same
+// units — and it is the same number, because it is the same question asked the
+// other way round. A column exists so that nodes near enough in x to be drawn
+// on each other are not drawn on each other; `STACK_DISTANCE` is this file's
+// own answer to how near that is; so the room a column makes is exactly it. Any
+// less and the pair is below the merge threshold and would have been one mark
+// anyway; any more is height spent on nothing. Two nodes in *neighbouring*
+// columns can still be nearer than this, which is what leaves the clusterer its
+// work — a crowded picture is still answered by a stack and its `+N` badge and
+// not by a field of marks pressed apart (M83, A1-3).
+const COLUMN_GAP = STACK_DISTANCE;
 // There was a second level of detail here until M70 — a *semantic* one, below
 // whose zoom an event's parts were drawn inside it. M65 left it dead and the
 // owner removed it: the resting rule keeps a part out of the picture until
@@ -187,23 +195,57 @@ export function crosses(a, b) {
 }
 
 // Places the nodes of one column so that they do not sit on each other,
-// as near as possible to where the barycentre wants them. Ties break by id,
-// then by weight, so the order never depends on the order of the input.
-function resolveColumn(ids, positions, weights) {
+// **as near as possible to where the barycentre wants them** — which until M83
+// it did not do. Ties break by id, then by weight, so the order never depends
+// on the order of the input.
+//
+// What it did was share the band out evenly: the gap between two nodes was
+// `(1 - 2 × EDGE) / (n - 1)` wherever that was the smaller of the two terms,
+// which is every column of four or more. So every such column spanned the whole
+// field whatever its nodes wanted, the first of them stood exactly on the top
+// line and the last exactly on the bottom — and that is the row of circles
+// capping every year column in the owner's screenshot, and half of why the
+// edges fanned from the bottom left to the top right (A1-1, A1-3).
+//
+// Now the wanted positions are kept and only pressed apart where two of them
+// are nearer than `gap`: down the column, then back up it, which also brings a
+// run that was pushed past the bottom back inside the band. The pass cannot
+// overflow, because `gap` is never more than the room the column has
+// (`(1 - 2 × EDGE) / (n - 1)`), so the first node is never pushed above the top
+// line and there is no third pass to write.
+//
+// A layered ordering is what this makes of the sweep above it: each layer is
+// settled against the one to its left and stays where its neighbours are,
+// instead of being dealt out over the height by rank.
+function resolveColumn(ids, positions, weights, gap) {
   const order = [...ids].sort(
     (a, b) => positions.get(a) - positions.get(b) || byId(a, b) || weights.get(a) - weights.get(b),
   );
   const n = order.length;
+  const lo = EDGE;
+  const hi = 1 - EDGE;
+  const clamp = (p) => Math.min(hi, Math.max(lo, p ?? 0.5));
   const out = new Map();
   if (n === 1) {
-    out.set(order[0], Math.min(1 - EDGE, Math.max(EDGE, positions.get(order[0]))));
+    out.set(order[0], clamp(positions.get(order[0])));
     return out;
   }
-  const gap = Math.min(MAX_GAP, (1 - 2 * EDGE) / (n - 1));
-  const span = gap * (n - 1);
-  const mean = order.reduce((sum, id) => sum + positions.get(id), 0) / n;
-  const centre = Math.min(1 - EDGE - span / 2, Math.max(EDGE + span / 2, mean));
-  order.forEach((id, i) => out.set(id, centre + (i - (n - 1) / 2) * gap));
+  const step = Math.min(gap, (hi - lo) / (n - 1));
+  const wanted = order.map((id) => clamp(positions.get(id)));
+  const placed = [...wanted];
+  for (let i = 1; i < n; i += 1) placed[i] = Math.max(placed[i], placed[i - 1] + step);
+  placed[n - 1] = Math.min(placed[n - 1], hi);
+  for (let i = n - 2; i >= 0; i -= 1) placed[i] = Math.min(placed[i], placed[i + 1] - step);
+  // The two passes push down and then pull up only as far as the bottom line
+  // makes them, which leaves every column that had to be pressed apart sitting
+  // low in the field — six of the war's nodes on the bottom line, measured, and
+  // the same fault the even spread had at the top. Sliding the finished run
+  // back to the middle of what its nodes wanted takes the bias out; the shift is
+  // bounded by the band, and the bound always holds zero because the run is
+  // never longer than the room it was given.
+  const mean = (list) => list.reduce((sum, p) => sum + p, 0) / n;
+  const shift = Math.max(lo - placed[0], Math.min(hi - placed[n - 1], mean(wanted) - mean(placed)));
+  order.forEach((id, i) => out.set(id, placed[i] + shift));
   return out;
 }
 
@@ -235,6 +277,15 @@ export function layoutGraph({
       y1: AXIS_HEIGHT + (i + 1) * bandHeight,
       even: i % 2 === 0,
     }));
+  // The highest and lowest line a node of this band may be placed on. The
+  // layout's own arithmetic said out loud, so that what reads the finished
+  // drawing — a test, a camera — can ask whether a mark was pinned to the edge
+  // of the field rather than working `EDGE` and the padding out again (M83).
+  for (const band of bands) {
+    const usableHeight = band.y1 - band.y0 - 2 * pad;
+    band.top = band.y0 + pad + EDGE * usableHeight;
+    band.bottom = band.y0 + pad + (1 - EDGE) * usableHeight;
+  }
   const height = bands[bands.length - 1].y1;
   // Kept beside the scale as well as inside it: a function does not survive a
   // structured clone, and the Worker's reply has to carry enough to build the
@@ -259,10 +310,23 @@ export function layoutGraph({
   for (const event of list) {
     const band = (lanes.length === 0 ? bands[0] : bandOf.get(laneOf(event, lanes)?.id)) ?? fallback;
     if (!band) continue;
+    // Two numbers and they are not the same one (M83, A1-2). `year` is what the
+    // picture *says* — a stack's span, a tie broken chronologically — and is the
+    // integer it always was. `at` is where the mark stands on the axis, which is
+    // the day inside that year wherever the record gives one, so the parts of a
+    // six-year war spread along the width instead of stacking in seven columns.
     const year = extent(event.when).min;
-    const node = { id: event.id, event, band, year, x: scale.x(year), weight: event.weight ?? 0, y: 0 };
+    const at = startPoint(event.when);
+    const node = {
+      id: event.id, event, band, year, at, x: scale.x(at), weight: event.weight ?? 0, y: 0,
+    };
     nodes.set(node.id, node);
-    const key = `${band.id}|${year}`;
+    // And a column is a column of the *drawing* and no longer of the calendar:
+    // the nodes near enough in x that one would be drawn over another, which is
+    // the only reason a column exists. `STACK_DISTANCE` is this file's own
+    // answer to "near enough to be one mark", so it is the width of a column
+    // too, and there is no second number to keep in step with it.
+    const key = `${band.id}|${Math.round(node.x / STACK_DISTANCE)}`;
     if (!columns.has(key)) columns.set(key, []);
     columns.get(key).push(node.id);
   }
@@ -287,18 +351,28 @@ export function layoutGraph({
   for (const l of after.values()) l.sort(byId);
 
   const columnKeys = [...columns.keys()].sort(byId);
-  const columnsByYear = new Map();
+  // The layers the sweep walks, in the order they are drawn in: one per slot of
+  // the drawing, however many bands share it. The slot and not the year, since
+  // M83 — a layered ordering settles each layer against the one before it, and
+  // what "before" means here is what the reader sees to the left.
+  const columnsBySlot = new Map();
   for (const key of columnKeys) {
-    const year = nodes.get(columns.get(key)[0]).year;
-    if (!columnsByYear.has(year)) columnsByYear.set(year, []);
-    columnsByYear.get(year).push(key);
+    const slot = Number(key.slice(key.lastIndexOf('|') + 1));
+    if (!columnsBySlot.has(slot)) columnsBySlot.set(slot, []);
+    columnsBySlot.get(slot).push(key);
   }
-  const years = [...columnsByYear.keys()].sort((a, b) => a - b);
+  const slots = [...columnsBySlot.keys()].sort((a, b) => a - b);
+
+  // The least room between two nodes of one column, as a fraction of the band
+  // they are in: `COLUMN_GAP` is in the drawing's own units and a band's usable
+  // height is what a position of 0 to 1 is measured over.
+  const usable = bandHeight - 2 * pad;
+  const gap = usable > 0 ? Math.min(1, COLUMN_GAP / usable) : 1;
 
   const place = (positions) => {
     const out = new Map();
     for (const key of columnKeys) {
-      for (const [id, p] of resolveColumn(columns.get(key), positions, weights)) out.set(id, p);
+      for (const [id, p] of resolveColumn(columns.get(key), positions, weights, gap)) out.set(id, p);
     }
     return out;
   };
@@ -374,10 +448,20 @@ export function layoutGraph({
 
   // The naive order — by id inside each column, nothing moved — is the
   // arrangement every sweep has to beat.
+  //
+  // **Packed around the middle of the field and not dealt out over it** (M83).
+  // It was `(i + 0.5) / n`, which put a column of two a third of the field
+  // apart before anything had asked for it; the sweeps below only ever press
+  // nodes apart, never together, so that opening spread was where a great many
+  // of them stayed — and two marks a third of a field apart are two marks the
+  // clusterer will not merge however near in time they are. The seed is now the
+  // same minimum room the sweeps keep, centred, so what moves a node from the
+  // middle is a neighbour and nothing else.
   let positions = new Map();
   for (const key of columnKeys) {
     const ids = [...columns.get(key)].sort(byId);
-    ids.forEach((id, i) => positions.set(id, (i + 0.5) / ids.length));
+    const step = Math.min(gap, (1 - 2 * EDGE) / Math.max(1, ids.length - 1));
+    ids.forEach((id, i) => positions.set(id, 0.5 + (i - (ids.length - 1) / 2) * step));
   }
   positions = place(positions);
   let best = positions;
@@ -396,15 +480,15 @@ export function layoutGraph({
     const forward = sweep % 2 === 0;
     const near = forward ? before : after;
     const next = new Map(positions);
-    for (const year of forward ? years : [...years].reverse()) {
-      for (const key of columnsByYear.get(year)) {
+    for (const slot of forward ? slots : [...slots].reverse()) {
+      for (const key of columnsBySlot.get(slot)) {
         const wanted = new Map(next);
         for (const id of columns.get(key)) {
           const list = near.get(id);
           if (list.length === 0) continue;
           wanted.set(id, list.reduce((sum, other) => sum + (next.get(other) ?? 0.5), 0) / list.length);
         }
-        for (const [id, p] of resolveColumn(columns.get(key), wanted, weights)) next.set(id, p);
+        for (const [id, p] of resolveColumn(columns.get(key), wanted, weights, gap)) next.set(id, p);
       }
     }
     positions = next;

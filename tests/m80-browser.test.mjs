@@ -385,7 +385,12 @@ test('the pin and the standing line are what they were', { skip }, async () => {
     // that is a control.
     await page.eval('document.querySelector(".window-view .pin").click(); return true;');
     await waitFor(page, 'return new URLSearchParams(location.search).get("bbox") === null;', 'the world back');
-    assert.ok(await page.eval('return document.querySelector(".window-view").hidden;'),
-      'the count is still drawn with the whole world in view');
+    // **What goes with the box is the pin, not the sentence** (M83, B3): the
+    // count says what the picture is from first paint, and *show the world* has
+    // nothing to give back once the map is looking at all of it.
+    assert.equal(await page.eval('return document.querySelector(".window-view").hidden;'), false,
+      'the count still says what the picture is');
+    assert.ok(await page.eval('return document.querySelector(".window-view .pin").hidden;'),
+      'and there is nothing left to press');
   });
 });

@@ -739,13 +739,14 @@ test('the band opens on a century, and drags from the first year of the data to 
     const [wideFrom, wideTo] = whole.valuetext.split(' to ').map(Number);
     assert.equal(wideFrom, whole.min, 'the near end is the first year of the data');
     assert.equal(wideTo, whole.max, 'and the far end is the last');
-    // The band now covers the drawing, less the lane labels' gutter and the
-    // margin the scale leaves around the data at each end (timeline.js,
-    // PADDING): dragged to both ends it is nearly the whole axis.
-    const axis = whole.width - 120;
-    assert.ok(whole.bandWidth > axis * 0.8,
-      `the band covers the axis (${Math.round(whole.bandWidth)} of ${Math.round(axis)})`);
-    assert.ok(whole.bandX >= 120, `and starts at the lanes, not over their labels (${whole.bandX})`);
+    // The band now covers the drawing, less the margin the scale leaves around
+    // the data at each end (timeline.js, PADDING): dragged to both ends it is
+    // nearly the whole axis. The left gutter it used to stop short of was 120 px
+    // of room for a lane's name, and M83 (B11) gave it back to the drawing —
+    // M77 took the names away and the gutter outlived them by six milestones.
+    assert.ok(whole.bandWidth > whole.width * 0.8,
+      `the band covers the axis (${Math.round(whole.bandWidth)} of ${Math.round(whole.width)})`);
+    assert.ok(whole.bandX >= 0, `and starts at the drawing (${whole.bandX})`);
   }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
 });
 

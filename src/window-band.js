@@ -230,6 +230,15 @@ export function bindWindowGestures(root, {
     };
     dragged = false;
     try { root.setPointerCapture(e.pointerId); } catch { /* no such pointer any more */ }
+    // **And the thing pressed takes the focus** (M83, B19). `preventDefault`
+    // below is what keeps a press from selecting text and from becoming a
+    // scroll, and it also suppresses the focus a click would otherwise give a
+    // `tabindex="0"` element — so the title's promise that *the arrow keys
+    // nudge* held only after a Tab, and a reader who had just dragged a handle
+    // with the mouse could not then nudge it with a key. `preventScroll`,
+    // because the band is the one control on the map pane and scrolling to it
+    // would move the picture under the gesture.
+    handle?.focus?.({ preventScroll: true });
     e.preventDefault();
   });
 
@@ -273,15 +282,35 @@ export function bindWindowGestures(root, {
 
   // Arrow keys nudge the focused handle; shift makes it a decade. The band
   // itself moves whole under the same keys.
+  //
+  // **And Home and End are the data's two ends** (M83, B19). The panel's pane
+  // handle and the timeline's bars answer them and this did not, so the one
+  // control that is a slider was the one a keyboard could not take to either
+  // end of its range. On a handle it moves that end; on the band it slides the
+  // whole window to the far end without changing its span, which is what
+  // dragging the ground to the edge does.
   root.addEventListener('keydown', (e) => {
     const el = e.target.closest?.('[data-window]');
     if (!el || !atlas.extent) return;
+    const kind = el.getAttribute('data-window');
+    const window = currentWindow();
+    const ends = { Home: atlas.extent.min, End: atlas.extent.max };
+    if (e.key in ends) {
+      e.preventDefault();
+      const end = ends[e.key];
+      if (kind === 'from') setWindow({ from: end, to: window.to });
+      else if (kind === 'to') setWindow({ from: window.from, to: end });
+      else {
+        const span = window.to - window.from;
+        const from = e.key === 'Home' ? atlas.extent.min : atlas.extent.max - span;
+        setWindow({ from, to: from + span });
+      }
+      return;
+    }
     const step = e.shiftKey ? 10 : 1;
     const delta = e.key === 'ArrowLeft' ? -step : e.key === 'ArrowRight' ? step : 0;
     if (!delta) return;
     e.preventDefault();
-    const window = currentWindow();
-    const kind = el.getAttribute('data-window');
     if (kind === 'from') setWindow({ from: window.from + delta, to: window.to });
     else if (kind === 'to') setWindow({ from: window.from, to: window.to + delta });
     else {
