@@ -1387,6 +1387,10 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 }
 .map-corner p { margin: 0; }
 .map-corner p + p { margin-top: var(--space-1); }
+/* Which year's borders are under the marks (M85, A15). Italic and softer than
+   the line above it: it is a note about the drawing rather than about a
+   record, which is how the band said it on the timeline. No new token. */
+.map-borders { font-style: italic; }
 
 /* --- the band over the map (M64) -------------------------------------- */
 

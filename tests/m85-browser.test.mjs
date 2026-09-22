@@ -119,3 +119,45 @@ test('nothing on the graph’s control says “links or more”', { skip }, asyn
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 4. two labels (A15) ───────────────────────────────────────────────────
+
+test('“borders as of” is on the map and never in the timeline’s masthead', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+
+    await open(page, url(''), MAP_READY);
+    await waitFor(page, 'return Boolean(document.querySelector("#map .map-corner .map-borders"));',
+      'the borders line on the map');
+    const onMap = await page.eval('return document.querySelector("#map .map-corner .map-borders").textContent;');
+    assert.match(onMap, /borders/, `the map says "${onMap}"`);
+
+    await open(page, url('?view=timeline'), LANES_READY);
+    const timeline = await page.eval(`
+      return {
+        pane: document.querySelector('#timeline').textContent,
+        borders: document.querySelectorAll('#timeline .window-marker').length,
+      };`);
+    assert.equal(timeline.borders, 0, 'the timeline draws no borders line');
+    assert.ok(!timeline.pane.includes('borders as of'), 'and says nothing about borders');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+test('the export button on both pictures says what the file is', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    for (const [view, ready] of [['', MAP_READY], ['?view=graph', GRAPH_READY]]) {
+      await open(page, url(view), ready);
+      const seen = await page.eval(`
+        const button = document.querySelector('.view-export');
+        return button ? { text: button.textContent.trim(), title: button.title } : null;`);
+      assert.ok(seen, `${view || 'the map'} carries the control`);
+      assert.equal(seen.text, 'Export as SVG', 'it names the file it hands over');
+      assert.match(seen.title, /SVG file/, 'and its title still says the rest');
+    }
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});

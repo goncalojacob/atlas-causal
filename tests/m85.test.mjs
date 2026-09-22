@@ -13,6 +13,7 @@
 
 import { test } from 'node:test';
 import path from 'node:path';
+import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
 
 import { defaultState, DEGREE_CHOICES, DEGREE_DEFAULT } from '../src/state.js';
@@ -23,12 +24,14 @@ import { stackTitle, stackBadge } from '../src/cluster.js';
 import { degreeLabel } from '../src/graph-filters.js';
 import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
 import { esc } from '../src/util/esc.js';
+import { bordersNote } from '../src/map/layers/presences.js';
 import { degreeOf } from '../src/graph-view/arrangement.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 const fixtures = await atlasOf(FIXTURE_DATA);
 const CORPORA = [['data/', atlas], ['the fixtures', fixtures]];
+const read = (file) => fs.readFile(path.join(ROOT, file), 'utf8');
 
 // ─── 1. the first picture is the whole span (A4) ───────────────────────────
 //
@@ -139,4 +142,34 @@ test('and an atlas that has not been told says nothing rather than zero', () => 
   const blind = { edges: new Map([['e', { id: 'e', status: 'active' }]]), manifest: {} };
   assert.equal(explainedLinks(blind), null);
   assert.equal(linksSentence(null), '');
+});
+
+// ─── 4. two labels (A15) ───────────────────────────────────────────────────
+
+test('the borders line is the map’s, and it says the year the layer draws', () => {
+  const coverage = atlas.presenceCoverage;
+  assert.ok(coverage, 'the atlas has territories to say something about');
+  // Inside the coverage, and past each end of it: the three sentences, with
+  // the years read off the corpus rather than written here.
+  const inside = Math.round((coverage.from + coverage.to) / 2);
+  assert.match(bordersNote(atlas, inside), /^borders as of /);
+  assert.match(bordersNote(atlas, coverage.to + 1), /the latest the source covers$/);
+  assert.match(bordersNote(atlas, coverage.from - 1), /^no borders before /);
+  // And nothing to say where there are no territories at all.
+  assert.equal(bordersNote({ presenceCoverage: null, territoryYear: (y) => y }, inside), null);
+  assert.equal(bordersNote(atlas, null), null);
+});
+
+test('and the timeline, which draws no borders, no longer writes one', async () => {
+  const timeline = await read('src/timeline.js');
+  assert.ok(!timeline.includes('borders as of'),
+    'the timeline says nothing about borders it does not draw');
+  const map = await read('src/map/map.js');
+  assert.match(map, /bordersNote/, 'the line is printed beside the picture it is about');
+});
+
+test('the export button says what the file is', async () => {
+  const share = await read('src/share.js');
+  assert.match(share, /textContent = 'Export as SVG'/, 'the button names the file');
+  assert.match(share, /button\.title = 'The picture on screen, as an SVG file'/, 'and its title stays');
 });

@@ -11,7 +11,7 @@ import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './proje
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
 import { createRegionsLayer } from './layers/regions.js';
-import { createPresencesLayer } from './layers/presences.js';
+import { bordersNote, createPresencesLayer } from './layers/presences.js';
 import { chainEdges, walkOrSelect } from '../chain.js';
 import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
@@ -634,7 +634,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // The name or nothing, never the slug (M83, B16): the wash's tooltip is
       // read, and a title arrives with its century (attributes.js).
       .map((l) => ({ region: l.region, title: labelOf(atlas, l.event) ?? LOADING_LABEL })));
-    drawCorner(large.filter((l) => l.scope === 'worldwide'));
+    drawCorner(large.filter((l) => l.scope === 'worldwide'), s, timeWindow);
     const result = events.render({
       events: drawn,
       window: timeWindow,
@@ -856,12 +856,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // it. Rewritten only when it changes, because the map redraws on every pan
   // and this is markup rather than an attribute. Everything from `data/` goes
   // through `esc()`: a title is untrusted input here as everywhere else.
-  function drawCorner(worldwide) {
-    const html = worldwide.length === 0 ? '' : (() => {
-      const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
-      return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
+  // And, since M85 (A15), which year's borders are under the marks. That line
+  // was on the timeline's band, on a view that draws no borders at all: it was
+  // written when the lanes ran under the map and outlived the arrangement it
+  // was a note about by six milestones. Here it is beside the picture it is
+  // about, and only while the territories are being drawn.
+  function drawCorner(worldwide, s, timeWindow) {
+    const borders = s.layers.includes('territories')
+      ? bordersNote(atlas, timeWindow?.to ?? null) : null;
+    const html = [
+      worldwide.length === 0 ? '' : (() => {
+        const named = worldwide.map(({ event }) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(labelOf(atlas, event) ?? LOADING_LABEL)}</button>`).join(', ');
+        return `<p class="map-worldwide">${worldwide.length} ${worldwide.length === 1 ? 'event' : 'events'} in this window
         ${worldwide.length === 1 ? 'spans' : 'span'} the whole map: ${named}</p>`;
-    })();
+      })(),
+      borders === null ? '' : `<p class="map-borders">${esc(borders)}</p>`,
+    ].filter(Boolean).join('');
     if (corner.innerHTML !== html) corner.innerHTML = html;
     corner.hidden = html === '';
   }

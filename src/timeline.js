@@ -41,7 +41,6 @@
 import { svg, reuse } from './util/dom.js';
 import { timelineKey } from './view-key.js';
 import { createTimelineScale } from './timeline-scale.js';
-import { fromAstronomical, formatYear } from './util/dates.js';
 import {
   resolveWindow, overlaps, withMargin, centuryCounts,
 } from './util/window.js';
@@ -115,10 +114,10 @@ const rightGutter = (paneWidth) => Math.min(RIGHT_GUTTER, Math.round(paneWidth *
 // and this file adds none — it is the room that size needs, the same reckoning
 // `graph-view/labels.js` makes about a line of its own labels.
 const LABEL_LINE = 14;
-// The borders line, top right: a note about the whole drawing.
-const MARKER_Y = 12;
-// Where the window band begins, which is under the borders line and over
-// everything else. The band's two years stand just above it.
+// Where the window band begins, over everything else. The band's two years
+// stand just above it. The row above them carried the borders line until M85
+// took it to the map (A15); the height is unchanged, because it is the room
+// the two years and the umbrella names below them are laid out against.
 const MARKER_HEIGHT = 32;
 const BAND_YEAR_Y = MARKER_HEIGHT - 6;
 // The umbrella names, on as many rows as it takes for two of them not to
@@ -816,10 +815,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       });
     }
 
-    if (window) {
-      bandHandles(into.handles, into.handleLabels, window, bandBox());
-      territoryMarker(into.handleLabels, window, s);
-    }
+    if (window) bandHandles(into.handles, into.handleLabels, window, bandBox());
 
     for (const layer of Object.values(into)) layer.done();
     applyRoving();
@@ -833,28 +829,11 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     scale, extent: atlas.extent, top: MARKER_HEIGHT, height: height - MARKER_HEIGHT, labelY: BAND_YEAR_Y,
   });
 
-  // The two handles, and the one line the far end says about the borders the
-  // map is drawing — which is a different year from `to` whenever the window
-  // runs past where the outlines stop. The handles are shared; the line about
-  // the borders is the timeline's own, because it is a note about what the map
-  // beside it is showing and there is no map beside the strip.
-  function territoryMarker(labels, { to }, s) {
-    if (s.layers.includes('territories') && atlas.presenceCoverage) {
-      const shown = atlas.territoryYear(to);
-      // On its own line, at the right edge rather than beside the handle:
-      // it is a note about the whole map, not about that year, and beside
-      // the handle it collided with the handle's own label.
-      labels.take('text', {
-        x: width - 8, y: MARKER_Y, class: 'window-marker', 'text-anchor': 'end',
-      }, {
-        text: to > atlas.presenceCoverage.to
-          ? `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`
-          : to < atlas.presenceCoverage.from
-            ? `no borders before ${formatYear(fromAstronomical(atlas.presenceCoverage.from))} in this source`
-            : `borders as of ${formatYear(fromAstronomical(shown))}`,
-      });
-    }
-  }
+  // The line the far end used to say about the borders the map is drawing went
+  // to the map in M85 (A15). It was written when the lanes ran under the map
+  // and was a note about "the map beside it"; since M60 the timeline is a view
+  // of its own, and it draws no borders at all. `presences.js` composes the
+  // sentence and `map.js` prints it.
 
   // Both dimensions are worth redrawing for now: the width decides what the
   // packing can fit in a row, and the height decides how tall a lane is. The
