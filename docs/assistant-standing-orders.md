@@ -96,9 +96,17 @@ precision, the count wording) → M81 (the graph stretches time) → **a
 review run with fresh eyes** over the code and the live site, producing a
 numbered findings file (`docs/review-2026-09-22.md`, done 22 September) →
 M82 (the first screen) → M83 (the graph under a lens, the review's display
-bugs, first paint) → **M84 (the owner's feedback document,
-`docs/feedback-2026-09-22.md`: a cross closes a card; the ring in a
-distinct colour)** → a second review mid-week → its fixes.
+bugs, first paint; landed 22 September evening, PR #21) → **M84 (the
+owner's feedback document, `docs/feedback-2026-09-22.md`: a cross closes a
+card; the ring in a distinct colour; running on `m84` from 20:15Z)** → a
+second review mid-week → its fixes.
+
+**Two lessons from 22 September's landings**, for every brief from here:
+a test of a display property over the live corpus derives its expectation
+from the corpus it runs on and never assumes the corpus of the day happens
+to exhibit it (M83's merged-lines test was true at 581 events and false at
+668); and the landing script's every `$(... | grep ...)` assignment carries
+`|| true`, because an empty match stopped it silently under `set -e`.
 
 **Reviews and coordination are always on Fable.** The owner, 22 September:
 *"for the code reviews and coordination always use Fable, even if changes
