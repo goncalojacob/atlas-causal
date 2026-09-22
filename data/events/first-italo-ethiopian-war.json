@@ -9,45 +9,55 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q989115",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q989115",
   "wikipedia": {
     "en": "First Italo-Ethiopian War",
     "pt": "Primeira Guerra Ítalo-Etíope"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q989115"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Italo-Ethiopian War\", revision 1370619360"
     }
   ],
   "title": "First Italo-Ethiopian War",
-  "summary": "Wikidata item Q989115, imported by tools/import/wikidata.mjs. The item's own description reads \"1895-1896 war between the Ethiopian Empire and the Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"First Italo-Ethiopian War\", at revision 1370619360, opens: \"The First Italo-Ethiopian War, also referred to as the First Italo-Abyssinian War, or simply known as the Abyssinian War in Italy, was fought between Italy and Ethiopia from 1895 to 1896. It originated from the disputed Treaty of Wuchale, which the Italians claimed turned Ethiopia into an Italian protectorate, while the Ethiopians claimed that the treaty simply ensured peace between the two powers. Full-scale war broke out in 1895, with Italian troops from Italian Eritrea achieving initial successes against Tigrayan warlords at Coatit, Senafe and Debra Ailà, until they were reinforced by a large Ethiopian army led by Emperor Menelik II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q989115, imported by tools/import/wikidata.mjs. The item's own description reads \"1895-1896 war between the Ethiopian Empire and the Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1894,
     "end": 1896,
     "date": "1894-12-15",
     "endDate": "1896-10-23"
   },
-  "place": null,
+  "place": "eritrea-q986",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "scramble-for-africa",

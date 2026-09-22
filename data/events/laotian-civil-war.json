@@ -9,15 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -36,19 +43,23 @@
     {
       "source": "wikidata",
       "locator": "Q877450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Laotian Civil War\", revision 1370626595"
     }
   ],
   "title": "Laotian Civil War",
-  "summary": "Wikidata item Q877450, imported by tools/import/wikidata.mjs. The item's own description reads \"1959–1975 civil war in Laos\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Laotian Civil War\", at revision 1370626595, opens: \"The Laotian Civil War was waged between the Communist Pathet Lao and the Royal Lao Government from 23 May 1959 to 2 December 1975. The Kingdom of Laos was a covert theater during the Vietnam War with both sides receiving heavy external support in a proxy war between the global Cold War superpowers. The fighting also involved the North Vietnamese, South Vietnamese, American and Thai armies, both directly and through irregular proxies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q877450, imported by tools/import/wikidata.mjs. The item's own description reads \"1959–1975 civil war in Laos\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1959,
     "end": 1975,
     "date": "1959-05-23",
     "endDate": "1975-12-02"
   },
-  "place": null,
+  "place": "kingdom-of-laos",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "indochina-wars",
+  "parent": "vietnam-war",
   "actors": []
 }

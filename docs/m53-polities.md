@@ -252,7 +252,8 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 308 of 582 |
+| **after M42** | 36 of 36 | 308 of 590 |
+| **after M42** | 36 of 36 | 351 of 590 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -272,6 +273,26 @@ figure moves by nineteen in both columns and **the fifty that name nobody are
 still the same fifty**. The two rules — alive at the start, and overlapping —
 still give the same number, 254, so the sentence above about which rule was
 counted by is still true of this row as well.
+
+**The second "after M42" row is the curation fire of 22 September re-taking
+the count — M42 has no done condition, so it writes a row each time it moves
+the figure — and it is the first row where the two rules part.** This is the
+entry that parts them. The curation fire of 22 September gave 44
+actorless events the participants their Wikidata item names (P710), and one of
+those lines is `croatian-war-of-independence` naming `croatia`. The war runs
+**1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
+war *overlaps* the polity without the polity being alive in the year the war
+started. Counted by the rule this table states — alive at the start — the
+figure is **351**; counted by overlap it is **352**.
+
+Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
+recognition date and not the date a state began fighting for itself, and
+Wikidata is right that Croatia was a party to the war. The difference is the
+same one M56 was about, and the entry joins the list that milestone keeps
+(`LATER` in `tests/m56.test.mjs`). The column above is still counted the way
+its sentence says; it is the corpus that has stopped agreeing with itself, and
+this paragraph is the run saying so rather than the reading being changed
+underneath it.
 
 **The "after M42" row is retaken at every batch of that milestone**, which is
 why it moves without a new row being added: M42 is one milestone and the row is

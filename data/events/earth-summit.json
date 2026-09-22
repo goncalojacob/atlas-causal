@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q751149",
-  "sitelinks": {
-    "count": 44,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q751149",
   "wikipedia": {
     "en": "Earth Summit",
     "pt": "Conferência das Nações Unidas sobre Meio Ambiente e Desenvolvimento"
+  },
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1992-06-03",
     "endDate": "1992-06-14"
   },
-  "place": null,
+  "place": "rio-de-janeiro-q8678",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

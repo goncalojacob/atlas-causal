@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q130847"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Verdun\", revision 1376156165"
     }
   ],
   "title": "Battle of Verdun",
-  "summary": "Wikidata item Q130847, imported by tools/import/wikidata.mjs. The item's own description reads \"1916 battle on the Western Front during the First World War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Verdun\", at revision 1376156165, opens: \"The Battle of Verdun was fought from 21 February to 18 December 1916 on the Western Front in France. The battle was the longest of the First World War and took place on the hills north of Verdun. The German 5th Army attacked the defences of the Fortified Region of Verdun and those of the French Second Army on the right (east) bank of the Meuse.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130847, imported by tools/import/wikidata.mjs. The item's own description reads \"1916 battle on the Western Front during the First World War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1916,
     "end": 1916,
     "date": "1916-02-21",
     "endDate": "1916-12-18"
   },
-  "place": null,
+  "place": "verdun",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-i",

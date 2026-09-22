@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "irish-free-state",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q31747",
+  "wikipedia": {
+    "en": "Irish Free State"
+  },
+  "sources": [],
+  "names": [
+    "Irish Free State",
+    "Saorstát Éireann"
+  ],
+  "where": {
+    "lon": -6.25972,
+    "lat": 53.34778,
+    "precision": "country",
+    "label": "Irish Free State"
+  },
+  "region": null,
+  "summary": null
+}

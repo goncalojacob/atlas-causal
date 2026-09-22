@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q408",
+  "wikipedia": {
+    "en": "Australia"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 900"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q408, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Australia\", revision 1376032612"
     }
   ],
   "actorType": "polity",
   "names": [
     "Australia"
   ],
-  "summary": "Entity 900 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1901 to where the dataset stops, in 2019. Its last capital in the dataset is Canberra. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 7,692,024 km² and about 27.6 million people (2025), from Wikidata's Q408 (P2046, P1082). The English Wikipedia article \"Australia\", at revision 1376032612, opens: \"Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands. It has a land area of 7,688,287 km2 (2,968,464 sq mi), making it the sixth-largest country in the world, and is the world's flattest and driest inhabited continent. It is a megadiverse country, and its size gives it a wide variety of landscapes and climates, including deserts in the interior and tropical rainforests along the coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 900 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1901 to where the dataset stops, in 2019. Its last capital in the dataset is Canberra. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1901,
     "end": null

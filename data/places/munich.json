@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "munich",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q1726",
+  "wikipedia": {
+    "en": "Munich"
+  },
+  "sources": [],
+  "names": [
+    "Munich",
+    "Muenchen",
+    "Monachium",
+    "Münich",
+    "Munich, Germany"
+  ],
+  "where": {
+    "lon": 11.575,
+    "lat": 48.1375,
+    "precision": "city",
+    "label": "Munich"
+  },
+  "region": null,
+  "summary": null
+}

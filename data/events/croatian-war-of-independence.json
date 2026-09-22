@@ -13,15 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
       "dates-corrected-m44c",
       "wants-exact-dates",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "participants-from-p710"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q68969 names 7 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 6 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -47,10 +50,16 @@
     "start": 1991,
     "end": 1995
   },
-  "place": null,
+  "place": "croatia-q224",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "yugoslav-wars",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "croatia",
+      "role": "belligerent",
+      "note": "Wikidata Q68969, P710 (participant), Q224"
+    }
+  ]
 }

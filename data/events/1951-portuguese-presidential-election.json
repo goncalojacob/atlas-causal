@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place"
     ]
   },
-  "wikidata": "Q18166749",
-  "sitelinks": {
-    "count": 6,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q18166749",
   "wikipedia": {
     "en": "1951 Portuguese presidential election",
     "pt": "Eleições presidenciais portuguesas de 1951"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -50,7 +51,7 @@
     "end": 1951,
     "date": "1951-07-22"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "estado-novo-1933-1974",
   "category": "election",

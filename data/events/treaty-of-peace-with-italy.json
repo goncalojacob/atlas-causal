@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,16 +41,20 @@
     {
       "source": "wikidata",
       "locator": "Q2314717"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris between Italy and the Allied Powers\", revision 1373123064"
     }
   ],
   "title": "Treaty of Peace with Italy",
-  "summary": "Wikidata item Q2314717, imported by tools/import/wikidata.mjs. The item's own description reads \"1947 treaty between Italy and the Allies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of Paris between Italy and the Allied Powers\", at revision 1373123064, opens: \"The Treaty of Paris between Italy and the Allied Powers was signed on 10 February 1947, formally ending World War II hostilities between the parties. It came into general effect on 15 September 1947.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2314717, imported by tools/import/wikidata.mjs. The item's own description reads \"1947 treaty between Italy and the Allies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1947,
     "end": 1947,
     "date": "1947-02-10"
   },
-  "place": null,
+  "place": "paris",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "paris-peace-treaties",

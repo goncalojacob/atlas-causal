@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q819",
+  "wikipedia": {
+    "en": "Laos"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 812"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q819, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Laos\", revision 1375844012"
     }
   ],
   "actorType": "polity",
   "names": [
     "Laos"
   ],
-  "summary": "Entity 812 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1954 to where the dataset stops, in 2019. Its last capital in the dataset is Vientiane. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1954-05-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 236,800 km² and about 6.9 million people (2017), from Wikidata's Q819 (P2046, P1082). The English Wikipedia article \"Laos\", at revision 1375844012, opens: \"Laos, officially the Lao People's Democratic Republic (LPDR), is a country in Mainland Southeast Asia, and the only landlocked country in Southeast Asia. It is bordered by Myanmar and China to the northwest, Vietnam to the east, Cambodia to the southeast, and Thailand to the west and southwest. Laos has a population of more than 7.5 million, and its capital and most populous city is Vientiane.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 812 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1954 to where the dataset stops, in 2019. Its last capital in the dataset is Vientiane. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1954-05-01. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1954,
     "end": null

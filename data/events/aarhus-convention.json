@@ -9,38 +9,47 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q301336",
-  "sitelinks": {
-    "count": 38,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q301336",
   "wikipedia": {
     "en": "Aarhus Convention",
     "pt": "Convenção Aarhus"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q301336"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aarhus Convention\", revision 1367239958"
     }
   ],
   "title": "Aarhus Convention",
-  "summary": "Wikidata item Q301336, imported by tools/import/wikidata.mjs. The item's own description reads \"UNECE Convention on Access to Information\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Aarhus Convention\", at revision 1367239958, opens: \"The UNECE Convention on Access to Information, Public Participation in Decision-making and Access to Justice in Environmental Matters, usually known as the Aarhus Convention, was signed on 25 June 1998 in the Danish city of Aarhus. It entered into force on 30 October 2001. In April 2023, it had 49 parties—48 states and the European Union.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q301336, imported by tools/import/wikidata.mjs. The item's own description reads \"UNECE Convention on Access to Information\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1998,
     "end": 1998,

@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q8669",
-  "sitelinks": {
-    "count": 110,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q8669",
   "wikipedia": {
     "en": "Arab–Israeli conflict",
     "pt": "Conflito árabe-israelense"
+  },
+  "sitelinks": {
+    "count": 110,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q8669"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab–Israeli conflict\", revision 1375600856"
     }
   ],
   "title": "Arab–Israeli conflict",
-  "summary": "Wikidata item Q8669, imported by tools/import/wikidata.mjs. The item's own description reads \"geopolitical conflict in the Middle East and North Africa between Israel and its Arab neighbours\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Arab–Israeli conflict\", at revision 1375600856, opens: \"Since the declaration of Israel's establishment in 1948, conflict has existed between Israel and the surrounding Arab countries, rooted in the Israeli–Palestinian conflict. Zionists viewed the region of Palestine as the Jewish ancestral homeland and sought to establish a Jewish state or homeland there through colonization, while Arabs generally opposed Zionism, envisioning Palestine as Arab Palestinian land and an essential part of the Arab world.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8669, imported by tools/import/wikidata.mjs. The item's own description reads \"geopolitical conflict in the Middle East and North Africa between Israel and its Arab neighbours\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1948,
     "end": null,
     "date": "1948-05-15"
   },
-  "place": null,
+  "place": "middle-east",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

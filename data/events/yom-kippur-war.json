@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q49100",
-  "sitelinks": {
-    "count": 88,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q49100",
   "wikipedia": {
     "en": "Yom Kippur War",
     "pt": "Guerra do Yom Kippur"
+  },
+  "sitelinks": {
+    "count": 88,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -63,7 +64,7 @@
     "date": "1973-10-06",
     "endDate": "1973-10-26"
   },
-  "place": null,
+  "place": "near-east",
   "region": "africa",
   "actors": [
     {

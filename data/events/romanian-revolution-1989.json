@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -37,17 +43,21 @@
     {
       "source": "wikidata",
       "locator": "Q204213"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Romanian revolution\", revision 1374643337"
     }
   ],
   "title": "Romanian Revolution (1989)",
-  "summary": "Wikidata item Q204213, imported by tools/import/wikidata.mjs. The item's own description reads \"1989 popular uprising in Romania against the regime of Nicolae Ceaușescu\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Romanian revolution\", at revision 1374643337, opens: \"The Romanian revolution was a period of violent civil unrest in the Socialist Republic of Romania during December 1989 as a part of the revolutions of 1989 that occurred in several countries around the world, primarily within the Eastern Bloc. The Romanian revolution started in the city of Timișoara and soon spread throughout the country, ultimately culminating in the drumhead trial and execution of longtime Romanian Communist Party (PCR) General Secretary Nicolae Ceaușescu and his wife Elena, and the end of 42 years of Communist rule in Romania. It was also the last removal of a Marxist–Leninist government in a Warsaw Pact country during the events of 1989, and the only one that violently overthrew a country's leadership and executed its leader; according to estimates, over one thousand people died and thousands more were injured.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q204213, imported by tools/import/wikidata.mjs. The item's own description reads \"1989 popular uprising in Romania against the regime of Nicolae Ceaușescu\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1989,
     "end": 1989,
     "date": "1989-12-25",
     "endDate": "1989-12-27"
   },
-  "place": null,
+  "place": "arad",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "revolutions-of-1989",

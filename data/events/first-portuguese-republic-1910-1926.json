@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "m62-umbrella",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q167360",
-  "sitelinks": {
-    "count": 35,
-    "on": "2026-09-18"
+  "origin": {
+    "tool": "assistant"
   },
+  "wikidata": "Q167360",
   "wikipedia": {
     "en": "First Portuguese Republic",
     "pt": "Primeira República Portuguesa"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-18"
   },
   "sources": [
     {
@@ -56,7 +57,7 @@
     "endDate": "1926-05-28",
     "calendar": "gregorian"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Portugal’s.",
   "actors": [

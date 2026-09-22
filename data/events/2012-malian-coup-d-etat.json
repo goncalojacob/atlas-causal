@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q875912"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863"
     }
   ],
   "title": "2012 Malian coup d'état",
-  "summary": "Wikidata item Q875912, imported by tools/import/wikidata.mjs. The item's own description reads \"coup d'état against the Tuareg rebellion of 2012\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2012 Malian coup d'état\", at revision 1370102863, opens: \"The 2012 Malian coup d'état began on 21 March that year, when mutinying Malian soldiers, displeased with the management of the Tuareg rebellion, attacked several locations in the capital Bamako, including the presidential palace, state television, and military barracks. The soldiers, who said they had formed the National Committee for the Restoration of Democracy and State, declared the following day that they had overthrown the government of Amadou Toumani Touré, forcing him into hiding. The coup was followed by \"unanimous\" international condemnation, harsh sanctions by Mali's neighbors, and the swift loss of northern Mali to Tuareg forces, leading Reuters to describe the coup as \"a spectacular own-goal\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q875912, imported by tools/import/wikidata.mjs. The item's own description reads \"coup d'état against the Tuareg rebellion of 2012\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2012,
     "end": 2012,
     "date": "2012-04-08",
     "endDate": "2012-04-08"
   },
-  "place": null,
+  "place": "mali-q912",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "mali-war",

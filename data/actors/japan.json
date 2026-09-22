@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q17",
+  "wikipedia": {
+    "en": "Japan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 740"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q17, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japan\", revision 1375885791"
     }
   ],
   "actorType": "polity",
   "names": [
     "Japan"
   ],
-  "summary": "Entity 740 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Tokyo. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 377,972 km² and about 123.8 million people (2024), from Wikidata's Q17 (P2046, P1082). The English Wikipedia article \"Japan\", at revision 1375885791, opens: \"Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland, it is bordered to the west by the Sea of Japan, the Sea of Okhotsk in the north, and the East China Sea in the south. The Japanese archipelago consists of four major islands alongside over 14,000 smaller islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 740 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Tokyo. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

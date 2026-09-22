@@ -9,45 +9,57 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead",
+      "filed-from-p361"
     ]
   },
-  "wikidata": "Q5167679",
-  "sitelinks": {
-    "count": 85,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q5167679",
   "wikipedia": {
     "en": "Dissolution of the Soviet Union",
     "pt": "Dissolução da União Soviética"
+  },
+  "sitelinks": {
+    "count": 85,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q5167679"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of the Soviet Union\", revision 1376065642"
     }
   ],
   "title": "dissolution of the Soviet Union",
-  "summary": "Wikidata item Q5167679, imported by tools/import/wikidata.mjs. The item's own description reads \"process leading to the late-1991 breakup of the USSR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Dissolution of the Soviet Union\", at revision 1376065642, opens: \"The Soviet Union was formally dissolved and ceased to exist as a sovereign state and subject of international law on December 26, 1991. It also brought an end to the Soviet Union's federal government and to Soviet leader Mikhail Gorbachev's efforts to reform the Soviet political and economic system in an attempt to stop a period of political and economic stagnation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5167679, imported by tools/import/wikidata.mjs. The item's own description reads \"process leading to the late-1991 breakup of the USSR\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": 1991,
     "date": "1991-12-26"
   },
-  "place": null,
+  "place": "soviet-union-q15180",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "revolutions-of-1989",
   "category": "other",
   "actors": []
 }

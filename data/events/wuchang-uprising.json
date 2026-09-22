@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q339291"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wuchang Uprising\", revision 1371641231"
     }
   ],
   "title": "Wuchang Uprising",
-  "summary": "Wikidata item Q339291, imported by tools/import/wikidata.mjs. The item's own description reads \"armed rebellion in 10 October 1911 against the Qing dynasty that marked the start of the Xinhai Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Wuchang Uprising\", at revision 1371641231, opens: \"The Wuchang Uprising was an armed rebellion against the ruling Qing dynasty that took place in Wuchang in the Chinese province of Hubei on 10 October 1911, beginning the 1911 Revolution that successfully overthrew China's last imperial dynasty, the Qing dynasty. It was led by elements of the New Army, influenced by revolutionary ideas from Tongmenghui. The uprising and the eventual revolution led to the downfall of the Qing dynasty after almost three centuries of imperial rule, and the establishment of the Republic of China (ROC).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q339291, imported by tools/import/wikidata.mjs. The item's own description reads \"armed rebellion in 10 October 1911 against the Qing dynasty that marked the start of the Xinhai Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1911,
     "end": 1911,
     "date": "1911-10-10",
     "endDate": "1911-12-01"
   },
-  "place": null,
+  "place": "wuchang-district",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "xinhai-revolution",

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q916",
+  "wikipedia": {
+    "en": "Angola"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 540"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q916, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angola\", revision 1374403420"
     }
   ],
   "actorType": "polity",
   "names": [
     "Angola"
   ],
-  "summary": "Entity 540 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Luanda. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-11-11. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,246,700 km² and about 36.7 million people (2023), from Wikidata's Q916 (P2046, P1082). The English Wikipedia article \"Angola\", at revision 1374403420, opens: \"Angola, officially the Republic of Angola, is a country on the western coast of Southern Africa. It is the second-largest Portuguese-speaking (Lusophone) country after Brazil in both total area and population and is the seventh-largest country in Africa. It is bordered by Namibia to the south, the Democratic Republic of the Congo to the north, Zambia to the east, and the Atlantic Ocean to the west.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 540 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Luanda. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-11-11. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1975,
     "end": null

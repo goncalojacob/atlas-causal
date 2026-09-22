@@ -17,26 +17,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-18",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m62-umbrella"
+      "m62-umbrella",
+      "a9-place"
     ]
   },
-  "wikidata": "Q362",
-  "sitelinks": {
-    "count": 241,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q362",
   "wikipedia": {
     "en": "World War II",
     "pt": "Segunda Guerra Mundial"
+  },
+  "sitelinks": {
+    "count": 241,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -68,7 +69,7 @@
     "date": "1939-09-01",
     "endDate": "1945-09-02"
   },
-  "place": null,
+  "place": "russia",
   "region": "europe",
   "actors": [
     {

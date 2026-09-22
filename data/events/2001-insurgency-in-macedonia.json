@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q817137"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2001 insurgency in Macedonia\", revision 1375673043"
     }
   ],
   "title": "2001 insurgency in Macedonia",
-  "summary": "Wikidata item Q817137, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict during the Yugoslav Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"2001 insurgency in Macedonia\", at revision 1375673043, opens: \"An armed conflict began in the Republic of Macedonia in 2001 when the ethnic Albanian National Liberation Army (NLA) insurgent group, formed from veterans of the Kosovo War and insurgency in the Preševo Valley, attacked Macedonian security forces at the end of January 2001, and ended with the Ohrid Agreement, signed on 13 August of that same year. There were also claims that the NLA ultimately wished to see Albanian-majority areas secede from the country, though high-ranking members of the group have denied this. The conflict lasted throughout most of the year, although overall casualties remained limited to several dozen individuals on either side, according to sources from both sides of the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q817137, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict during the Yugoslav Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2001,
     "end": 2001,
     "endDate": "2001-08-13"
   },
-  "place": null,
+  "place": "polog",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "yugoslav-wars",

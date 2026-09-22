@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q37643",
-  "sitelinks": {
-    "count": 107,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q37643",
   "wikipedia": {
     "en": "Gulf War",
     "pt": "Guerra do Golfo"
+  },
+  "sitelinks": {
+    "count": 107,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "1990-08-02",
     "endDate": "1991-02-28"
   },
-  "place": null,
+  "place": "kuwait-q817",
   "region": "asia",
   "actors": [
     {

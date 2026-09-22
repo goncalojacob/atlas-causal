@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q810",
+  "wikipedia": {
+    "en": "Jordan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 663"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q810, P2046 (area) and P1082 (population, 2019)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jordan\", revision 1371375161"
     }
   ],
   "actorType": "polity",
   "names": [
     "Jordan"
   ],
-  "summary": "Entity 663 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1946 to where the dataset stops, in 2019. Its last capital in the dataset is Amman. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1946-05-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 89,341 km² and about 10.4 million people (2019), from Wikidata's Q810 (P2046, P1082). The English Wikipedia article \"Jordan\", at revision 1371375161, opens: \"Jordan, officially the Hashemite Kingdom of Jordan, is a country in the Southern Levant region of West Asia. Jordan is bordered by Syria to the north, Iraq to the east, Saudi Arabia to the south, and both Israel and Palestine to the west. The Jordan River, flowing into the Dead Sea, is located along the country's western border within the Jordan Rift Valley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 663 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1946 to where the dataset stops, in 2019. Its last capital in the dataset is Amman. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1946-05-25. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1946,
     "end": null

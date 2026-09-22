@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q117",
+  "wikipedia": {
+    "en": "Ghana"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 452"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q117, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ghana\", revision 1374407921"
     }
   ],
   "actorType": "polity",
   "names": [
     "Ghana"
   ],
-  "summary": "Entity 452 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1957 to where the dataset stops, in 2019. Its last capital in the dataset is Accra. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1957-03-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 238,535 km² and about 32.8 million people (2021), from Wikidata's Q117 (P2046, P1082). The English Wikipedia article \"Ghana\", at revision 1374407921, opens: \"Ghana, officially the Republic of Ghana, is a country in West Africa. It is situated with the Gulf of Guinea and the Atlantic Ocean to the south, and shares borders with Ivory Coast to the west, Burkina Faso to the north, and Togo to the east. Ghana covers an area of 239,567 km2 (92,497 sq mi), spanning various ecologies, from coastal savannas to tropical rainforests.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 452 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1957 to where the dataset stops, in 2019. Its last capital in the dataset is Accra. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1957-03-06. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1957,
     "end": null

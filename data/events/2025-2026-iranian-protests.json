@@ -17,28 +17,29 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
       "date",
-      "facts-thin"
+      "facts-thin",
+      "a9-place"
     ],
     "note": "A very recent event, drafted from a single cached lead and no other source. Both the interval and the casualty figures should be checked against reporting before this record is signed."
   },
-  "wikidata": "Q137612545",
-  "sitelinks": {
-    "count": 61,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q137612545",
   "wikipedia": {
     "en": "2025–2026 Iranian protests",
     "pt": "Protestos no Irã (2025–2026)"
+  },
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -62,7 +63,7 @@
     "date": "2025-12-28",
     "endDate": "2026-02-28"
   },
-  "place": null,
+  "place": "iran",
   "region": "asia",
   "actors": [
     {

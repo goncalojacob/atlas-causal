@@ -9,6 +9,10 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
@@ -17,7 +21,9 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,16 +41,20 @@
     {
       "source": "wikidata",
       "locator": "Q118514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945"
     }
   ],
   "title": "Revolt of Czechoslovak Legion",
-  "summary": "Wikidata item Q118514, imported by tools/import/wikidata.mjs. The item's own description reads \"armed actions in Russia, 1918\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Revolt of the Czechoslovak Legion\", at revision 1370706945, opens: \"The revolt of the Czechoslovak Legion comprised the armed actions of the Czechoslovak Legion in the Russian Civil War against Bolshevik authorities, beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920. The revolt, occurring in Volga, Ural, and Siberia regions along the Trans-Siberian Railway, was a reaction to a threat initiated by the Bolsheviks partly as a consequence of the Treaty of Brest-Litovsk. One major secondary consequence of victories by the Legion over the Bolsheviks was to catalyze anti-Bolshevik activity in Siberia, particularly of the Committee of Members of the Constituent Assembly, and to provide a major boost for the anti-Bolshevik or White forces, likely protracting the Russian Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118514, imported by tools/import/wikidata.mjs. The item's own description reads \"armed actions in Russia, 1918\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1920,
     "end": 1920,
     "date": "1920-09"
   },
-  "place": null,
+  "place": "ural",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": [

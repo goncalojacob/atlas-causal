@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q495558",
-  "sitelinks": {
-    "count": 30,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q495558",
   "wikipedia": {
     "en": "Japan–Korea Treaty of 1910",
     "pt": "Tratado de Anexação Japão-Coreia"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q495558"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japan–Korea Treaty of 1910\", revision 1369552717"
     }
   ],
   "title": "Japan–Korea Treaty of 1910",
-  "summary": "Wikidata item Q495558, imported by tools/import/wikidata.mjs. The item's own description reads \"1910 formal annexation of the Korean Empire by the Empire of Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Japan–Korea Treaty of 1910\", at revision 1369552717, opens: \"The Japan–Korea Treaty of 1910, also known as the Japan–Korea Annexation Treaty (Korean: 한일병합조약), was made by representatives of the Empire of Japan and the Korean Empire on 22 August 1910. In this treaty, Japan formally annexed Korea following the Japan–Korea Treaty of 1905 and the Japan–Korea Treaty of 1907.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q495558, imported by tools/import/wikidata.mjs. The item's own description reads \"1910 formal annexation of the Korean Empire by the Empire of Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1910,
     "end": 1910,
     "date": "1910-08-22"
   },
-  "place": null,
+  "place": "empire-of-japan",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",

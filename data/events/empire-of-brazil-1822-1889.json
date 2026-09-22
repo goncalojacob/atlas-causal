@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-20",
-  "revised": null,
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "m67-umbrella",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q217230",
-  "sitelinks": {
-    "count": 68,
-    "on": "2026-09-20"
+  "origin": {
+    "tool": "assistant"
   },
+  "wikidata": "Q217230",
   "wikipedia": {
     "en": "Empire of Brazil",
     "pt": "Império do Brasil"
+  },
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-09-20"
   },
   "sources": [
     {
@@ -56,7 +57,7 @@
     "endDate": "1889-11-15",
     "calendar": "gregorian"
   },
-  "place": null,
+  "place": "empire-of-brazil-q217230",
   "region": "americas",
   "regionNote": "A state has no single point on the map, so the lane is given rather than derived.",
   "actors": [

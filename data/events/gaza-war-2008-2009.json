@@ -9,17 +9,25 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "Wikidata Q170682 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
   "origin": {
     "tool": "wikidata"
@@ -37,20 +45,30 @@
     {
       "source": "wikidata",
       "locator": "Q170682"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza War (2008–2009)\", revision 1370620825"
     }
   ],
   "title": "Gaza War (2008–2009)",
-  "summary": "Wikidata item Q170682, imported by tools/import/wikidata.mjs. The item's own description reads \"December 2008–January 2009 armed conflict in the Gaza Strip\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Gaza War (2008–2009)\", at revision 1370620825, opens: \"The Gaza War, also known as the First Gaza War, Operation Cast Lead, or the Gaza Massacre, and referred to as the Battle of al-Furqan by Hamas, was a three-week armed conflict between Gaza Strip Palestinian paramilitary groups and the Israel Defense Forces (IDF) that began on 27 December 2008 and ended on 18 January 2009 with a unilateral ceasefire. The conflict resulted in 1,166–1,417 Palestinian and 13 Israeli deaths. Over 46,000 homes were destroyed in Gaza, making more than 100,000 people homeless.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q170682, imported by tools/import/wikidata.mjs. The item's own description reads \"December 2008–January 2009 armed conflict in the Gaza Strip\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2008,
     "end": 2009,
     "date": "2008-12-27",
     "endDate": "2009-01-18"
   },
-  "place": null,
+  "place": "gaza-strip",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q170682, P710 (participant), Q801"
+    }
+  ]
 }

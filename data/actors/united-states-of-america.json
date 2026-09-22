@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q30",
+  "wikipedia": {
+    "en": "United States"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 2"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q30, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States\", revision 1376059500"
     }
   ],
   "actorType": "polity",
   "names": [
     "United States of America"
   ],
-  "summary": "Entity 2 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Washington. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 9,826,675 km² and about 340.1 million people (2024), from Wikidata's Q30 (P2046, P1082). The English Wikipedia article \"United States\", at revision 1376059500, opens: \"The United States of America (USA), also known as the United States (U.S.) or America, is a country primarily located in North America. It is a federal republic consisting of 50 states and a federal capital district, Washington, D.C. The 48 contiguous states border Canada to the north and Mexico to the south, with the semi-exclave of Alaska in the northwest and the archipelago of Hawaii in the Pacific Ocean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 2 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Washington. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

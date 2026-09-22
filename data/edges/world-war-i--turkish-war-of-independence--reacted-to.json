@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "world-war-i--turkish-war-of-independence--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Turkish War of Independence\", revision 1375988522, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q361, P1542 (has effect) Q211274"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "turkish-war-of-independence",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The war of independence's own lead names what it was waged against: \"The Turkish War of Independence was a series of military campaigns and a revolution waged by the Turkish National Movement, after the Ottoman Empire was occupied and partitioned following its defeat in World War I.\" The occupation and the partition are the defeat's terms, and the campaigns answer them, so this is `reacted-to` and not `caused`: the lead states what the movement rose against, not that the war produced it.",
+  "dispute": null
+}

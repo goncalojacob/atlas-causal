@@ -9,44 +9,54 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q1000658",
-  "sitelinks": {
-    "count": 45,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1000658",
   "wikipedia": {
     "en": "Budapest Memorandum",
     "pt": "Memorando de Budapeste sobre Garantias de Segurança"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1000658"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Budapest Memorandum\", revision 1372126297"
     }
   ],
   "title": "Budapest Memorandum",
-  "summary": "Wikidata item Q1000658, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty of Ukraine, the United States, Russia, and the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Budapest Memorandum\", at revision 1372126297, opens: \"The Budapest Memorandum on Security Assurances comprises four substantially identical political agreements signed at the Conference on Security and Co-operation in Europe (CSCE) in Budapest, Hungary, on 5 December 1994, to provide security assurances by its signatories relating to the accession of Belarus, Kazakhstan, and Ukraine to the Treaty on the Non-Proliferation of Nuclear Weapons (NPT). The four memoranda were originally signed by four nuclear powers: Ukraine, Russia, the United States, and the United Kingdom. France and China gave individual assurances in separate documents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1000658, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty of Ukraine, the United States, Russia, and the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1994,
     "end": 1994,
     "date": "1994-12-05"
   },
-  "place": null,
+  "place": "budapest",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

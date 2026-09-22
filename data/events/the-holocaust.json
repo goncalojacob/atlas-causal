@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q2763",
-  "sitelinks": {
-    "count": 173,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2763",
   "wikipedia": {
     "en": "The Holocaust",
     "pt": "Holocausto"
+  },
+  "sitelinks": {
+    "count": 173,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -57,7 +58,7 @@
     "start": 1933,
     "end": 1945
   },
-  "place": null,
+  "place": "nazi-germany-q7318",
   "region": "europe",
   "actors": [
     {

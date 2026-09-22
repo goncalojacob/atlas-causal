@@ -9,45 +9,55 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
-  "wikidata": "Q15353665",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q15353665",
   "wikipedia": {
     "en": "South Sudanese Civil War",
     "pt": "Guerra Civil Sul-Sudanesa"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q15353665"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Sudanese Civil War\", revision 1374713494"
     }
   ],
   "title": "South Sudanese Civil War",
-  "summary": "Wikidata item Q15353665, imported by tools/import/wikidata.mjs. The item's own description reads \"South Sudanese civil war/conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"South Sudanese Civil War\", at revision 1374713494, opens: \"The South Sudanese Civil War was a multi-sided civil war in South Sudan fought from 2013 to 2018 between government and opposition forces. The civil war caused rampant human rights abuses, including forced displacement, ethnic massacres, and killings of journalists by various parties. Since the war's end, South Sudan has been governed by a coalition formed by leaders of the former warring factions, Salva Kiir Mayardit and Riek Machar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15353665, imported by tools/import/wikidata.mjs. The item's own description reads \"South Sudanese civil war/conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2013,
     "end": 2020,
     "date": "2013-12-15",
     "endDate": "2020-02-22"
   },
-  "place": null,
+  "place": "south-sudan-q958",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

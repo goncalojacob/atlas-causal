@@ -9,37 +9,46 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q176930",
-  "sitelinks": {
-    "count": 33,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q176930",
   "wikipedia": {
     "en": "Declaration by United Nations",
     "pt": "Declaração das Nações Unidas"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q176930"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Declaration by United Nations\", revision 1376063232"
     }
   ],
   "title": "Declaration by United Nations",
-  "summary": "Wikidata item Q176930, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Declaration by United Nations\", at revision 1376063232, opens: \"The Declaration by United Nations was the main treaty that formalized the Allies of World War II and was signed by 47 national governments between 1942 and 1945. On 1 January 1942, during the Arcadia Conference in Washington D.C., the Allied \"Big Four\"—the United States, the United Kingdom, the Soviet Union, and China—signed a short document which later came to be known as the United Nations Declaration, and the day after the representatives of 22 other nations added their signatures.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q176930, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1942,
     "end": 1942,

@@ -9,15 +9,20 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -37,10 +42,14 @@
     {
       "source": "wikidata",
       "locator": "Q152195"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Comintern Pact\", revision 1371954457"
     }
   ],
   "title": "Anti-Comintern Pact",
-  "summary": "Wikidata item Q152195, imported by tools/import/wikidata.mjs. The item's own description reads \"pact between Nazi Germany and Japan prior to World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Anti-Comintern Pact\", at revision 1371954457, opens: \"The Anti-Comintern Pact, officially the Agreement against the Communist International, was an anti-communist pact concluded between Nazi Germany and the Empire of Japan on 25 November 1936 and directed against the Communist International (Comintern). It was signed by the German ambassador-at-large Joachim von Ribbentrop and the Japanese ambassador to Germany Kintomo Mushanokōji. Italy joined in 1937, but it was legally recognized as an original signatory by the terms of its entry.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152195, imported by tools/import/wikidata.mjs. The item's own description reads \"pact between Nazi Germany and Japan prior to World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1936,
     "end": 1936,

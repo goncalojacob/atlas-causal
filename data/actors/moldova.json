@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q217",
+  "wikipedia": {
+    "en": "Moldova"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 359"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q217, P2046 (area) and P1082 (population, 2024)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moldova\", revision 1375825555"
     }
   ],
   "actorType": "polity",
   "names": [
     "Moldova"
   ],
-  "summary": "Entity 359 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Chisinau. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 33,844 km² and about 2.4 million people (2024), from Wikidata's Q217 (P2046, P1082). The English Wikipedia article \"Moldova\", at revision 1375825555, opens: \"Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe, with an area of 33,843 km2 (13,067 sq mi) and a population of 2.38 million. Moldova is bordered by Romania to the west and Ukraine to the north, east, and south. The unrecognised breakaway state of Transnistria lies across the Dniester river on the country's eastern border with Ukraine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 359 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Chisinau. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1991,
     "end": null

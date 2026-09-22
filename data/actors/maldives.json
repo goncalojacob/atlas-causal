@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q826",
+  "wikipedia": {
+    "en": "Maldives"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 781"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q826, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maldives\", revision 1376131596"
     }
   ],
   "actorType": "polity",
   "names": [
     "Maldives"
   ],
-  "summary": "Entity 781 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1965 to where the dataset stops, in 2019. Its last capital in the dataset is Male. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1965-05-26. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 298 km² and about 436,330 people (2017), from Wikidata's Q826 (P2046, P1082). The English Wikipedia article \"Maldives\", at revision 1376131596, opens: \"The Maldives, officially the Republic of Maldives, and historically known as the Maldive Islands, is an archipelagic country in South Asia, located in the Indian Ocean, near the southeastern boundary of the Arabian Sea. The Maldives is located southwest of India and Sri Lanka, about 750 kilometres from the Asian continent's mainland. The Maldives' chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the north to Addu Atoll in the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 781 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1965 to where the dataset stops, in 2019. Its last capital in the dataset is Male. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1965-05-26. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1965,
     "end": null

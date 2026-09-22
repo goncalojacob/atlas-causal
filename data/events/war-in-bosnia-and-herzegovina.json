@@ -9,47 +9,70 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ],
+    "note": "Wikidata Q181533 names 8 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 6 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q181533",
-  "sitelinks": {
-    "count": 72,
-    "on": "2026-09-21"
-  },
   "wikipedia": {
     "en": "Bosnian War",
     "pt": "Guerra da Bósnia"
+  },
+  "sitelinks": {
+    "count": 72,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q181533"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bosnian War\", revision 1375967053"
     }
   ],
   "title": "War in Bosnia and Herzegovina",
-  "summary": "Wikidata item Q181533, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–1995 armed conflict in Bosnia and Herzegovina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Bosnian War\", at revision 1375967053, opens: \"The Bosnian War was an armed conflict that took place in Bosnia and Herzegovina, from 1992 until 1995. Following several earlier violent incidents, the war is commonly seen as having started on 6 April 1992 when the newly independent Republic of Bosnia and Herzegovina was internationally recognized. It ended on 21 November 1995 when the Dayton Accords were initialed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q181533, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–1995 armed conflict in Bosnia and Herzegovina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1992,
     "end": 1995,
     "date": "1992-04-06",
     "endDate": "1995-12-14"
   },
-  "place": null,
+  "place": "republic-of-bosnia-and-herzegovina",
   "region": "europe",
-  "parent": "yugoslav-wars",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "yugoslav-wars",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "croatia",
+      "role": "belligerent",
+      "note": "Wikidata Q181533, P710 (participant), Q224"
+    },
+    {
+      "actor": "nato",
+      "role": "belligerent",
+      "note": "Wikidata Q181533, P710 (participant), Q7184"
+    }
+  ]
 }

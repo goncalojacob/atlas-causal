@@ -9,43 +9,53 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q382861",
-  "sitelinks": {
-    "count": 64,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q382861",
   "wikipedia": {
     "en": "Revolutions of 1989",
     "pt": "Revoluções de 1989"
+  },
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q382861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1989\", revision 1375849372"
     }
   ],
   "title": "Revolutions of 1989",
-  "summary": "Wikidata item Q382861, imported by tools/import/wikidata.mjs. The item's own description reads \"series of protests during 1989 overthrowing communist governments in Eastern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Revolutions of 1989\", at revision 1375849372, opens: \"The revolutions of 1989, also known as the Fall of Communism, or Autumn of Nations, were a wave of liberal democratic movements that resulted in the collapse of most Marxist–Leninist governments in the Eastern Bloc and other parts of the world. The revolutions of 1989 were a key factor in the dissolution of the Soviet Union—one of the two superpowers—and abandonment of communist regimes in many parts of the world, some of which were violently overthrown. These events drastically altered the world's balance of power, marking the end of the Cold War and beginning of the post–Cold War era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q382861, imported by tools/import/wikidata.mjs. The item's own description reads \"series of protests during 1989 overthrowing communist governments in Eastern Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1989,
     "end": 1992,
     "endDate": "1992-04-27"
   },
-  "place": null,
+  "place": "people-s-republic-of-bulgaria",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",

@@ -9,42 +9,52 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q3544276",
-  "sitelinks": {
-    "count": 7,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3544276",
   "wikipedia": {
     "en": "Baring crisis",
     "pt": "Pânico de 1890"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q3544276"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Baring crisis\", revision 1370190462"
     }
   ],
   "title": "Baring crisis",
-  "summary": "Wikidata item Q3544276, imported by tools/import/wikidata.mjs. The item's own description reads \"international recession in 1890\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Baring crisis\", at revision 1370190462, opens: \"The Baring crisis or the Panic of 1890 was an acute recession in the United States. Although less serious than other panics of the era, it is the 19th century’s most famous sovereign debt crisis, and the 17th largest decline in U.S. stock market history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3544276, imported by tools/import/wikidata.mjs. The item's own description reads \"international recession in 1890\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1890,
     "end": 1890
   },
-  "place": null,
+  "place": "argentina-q414",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

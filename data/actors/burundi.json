@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q967",
+  "wikipedia": {
+    "en": "Burundi"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 516"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q967, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burundi\", revision 1375745056"
     }
   ],
   "actorType": "polity",
   "names": [
     "Burundi"
   ],
-  "summary": "Entity 516 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Bujumbura. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 27,834 km² and about 13.7 million people (2023), from Wikidata's Q967 (P2046, P1082). The English Wikipedia article \"Burundi\", at revision 1375745056, opens: \"Burundi, officially the Republic of Burundi, is a landlocked country in East Africa. It is located in the Great Rift Valley at the junction between the African Great Lakes region and southeastern Africa, with a population of over 14 million people. It is bordered by Rwanda to the north, Tanzania to the east and southeast, and the Democratic Republic of the Congo to the west; Lake Tanganyika lies along its southwestern border.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 516 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Bujumbura. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1962,
     "end": null

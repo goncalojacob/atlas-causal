@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,16 +42,20 @@
     {
       "source": "wikidata",
       "locator": "Q134734156"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Miguel Uribe Turbay\", revision 1345275508"
     }
   ],
   "title": "assassination of Miguel Uribe Turbay",
-  "summary": "Wikidata item Q134734156, imported by tools/import/wikidata.mjs. The item's own description reads \"2025 murder in Bogotá, Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Assassination of Miguel Uribe Turbay\", at revision 1345275508, opens: \"On 7 June 2025, Miguel Uribe Turbay, a senator and pre-candidate in the 2026 Colombian presidential election, was shot during a rally at El Golfito Park in the neighbourhood of Modelia, part of the locality of Fontibón, in Bogotá, Colombia. He was hospitalised in critical condition and died two months later from his injuries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134734156, imported by tools/import/wikidata.mjs. The item's own description reads \"2025 murder in Bogotá, Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2025,
     "end": 2025,
     "date": "2025-06-07"
   },
-  "place": null,
+  "place": "fontibon",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "colombian-conflict",

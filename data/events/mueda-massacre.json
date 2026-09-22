@@ -17,26 +17,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-18",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "m22-reinstated"
+      "m22-reinstated",
+      "a9-place"
     ],
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q10327164",
+  "wikipedia": {
+    "pt": "Massacre de Mueda"
+  },
   "sitelinks": {
     "count": 3,
     "on": "2026-09-04"
-  },
-  "wikipedia": {
-    "pt": "Massacre de Mueda"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "end": 1960,
     "date": "1960-06-16"
   },
-  "place": null,
+  "place": "mozambique-q1029",
   "region": "africa",
   "parent": "estado-novo-1933-1974",
   "actors": [

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q30971",
+  "wikipedia": {
+    "en": "French Polynesia"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 960"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q30971, P2046 (area) and P1082 (population, 2022)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Polynesia\", revision 1375442546"
     }
   ],
   "actorType": "polity",
   "names": [
     "French Polynesia"
   ],
-  "summary": "Entity 960 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1903 to where the dataset stops, in 2019. Its last capital in the dataset is Pape'ete. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 4,167 km² and about 278,786 people (2022), from Wikidata's Q30971 (P2046, P1082). The English Wikipedia article \"French Polynesia\", at revision 1375442546, opens: \"French Polynesia is an overseas collectivity of France and its sole overseas country; it is classified as a non-self-governing territory by the United Nations. It comprises 121 geographically dispersed islands and atolls stretching over more than 2,000 kilometres (1,200 mi) in the South Pacific Ocean. French Polynesia is associated with the European Union as an overseas country and territory (OCT).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 960 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1903 to where the dataset stops, in 2019. Its last capital in the dataset is Pape'ete. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1903,
     "end": null

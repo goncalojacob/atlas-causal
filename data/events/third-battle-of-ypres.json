@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q426227"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Passchendaele\", revision 1375345710"
     }
   ],
   "title": "Third Battle of Ypres",
-  "summary": "Wikidata item Q426227, imported by tools/import/wikidata.mjs. The item's own description reads \"Battle in the first world war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Passchendaele\", at revision 1375345710, opens: \"The Third Battle of Ypres, also known as the Battle of Passchendaele, was a campaign of the First World War, fought by the Allies against the German Empire. The battle took place on the Western Front, from July to November 1917, for control of the ridges south and east of the Belgian city of Ypres in West Flanders, as part of a strategy decided by the Entente at conferences in November 1916 and May 1917. Passchendaele lies on the last ridge east of Ypres, 5 mi (8 km) from Roulers, a junction of the Bruges-(Brugge)-to-Kortrijk railway.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q426227, imported by tools/import/wikidata.mjs. The item's own description reads \"Battle in the first world war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1917,
     "end": 1917,
     "date": "1917-07-31",
     "endDate": "1917-11-10"
   },
-  "place": null,
+  "place": "passendale",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-i",

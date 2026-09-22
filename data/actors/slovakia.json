@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q214",
+  "wikipedia": {
+    "en": "Slovakia"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 317"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q214, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slovakia\", revision 1376151276"
     }
   ],
   "actorType": "polity",
   "names": [
     "Slovakia"
   ],
-  "summary": "Entity 317 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1993 to where the dataset stops, in 2019. Its last capital in the dataset is Bratislava. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 49,034 km² and about 5.4 million people (2025), from Wikidata's Q214 (P2046, P1082). The English Wikipedia article \"Slovakia\", at revision 1376151276, opens: \"Slovakia, officially the Slovak Republic, is a landlocked country in Central Europe. It is bordered by Poland to the north, Ukraine to the east, Hungary to the south, Austria to the west, and the Czech Republic to the northwest. Slovakia's mostly mountainous territory spans about 49,000 km2 (19,000 sq mi), hosting a population exceeding 5.4 million.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 317 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1993 to where the dataset stops, in 2019. Its last capital in the dataset is Bratislava. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1993,
     "end": null

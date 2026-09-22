@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "polity-description"
+    ]
+  },
   "origin": {
     "tool": "assistant"
-  },
-  "review": {
-    "status": "draft"
   },
   "wikidata": "Q252",
   "wikipedia": {
@@ -37,6 +40,14 @@
     {
       "source": "telo-2007-historia-contemporanea",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q252, P2046 (area) and P1082 (population, 2021)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indonesia\", revision 1375980831"
     }
   ],
   "actorType": "polity",
@@ -45,7 +56,7 @@
     "Republic of Indonesia",
     "República da Indonésia"
   ],
-  "summary": "The Republic of Indonesia, independent from the Netherlands after 1945, invaded Portuguese Timor in December 1975, months after Portugal's administration collapsed there, and annexed it the following year. It occupied the territory until 1999, when it accepted a United Nations ballot on autonomy; the vote went against it, and its withdrawal was preceded by militia violence that destroyed much of the territory. Only a handful of states recognised the annexation, and Portugal never did. It is in the atlas as the actor that took the last territory Portugal had failed to decolonise.",
+  "summary": "Approximately 1,904,570 km² and about 275.4 million people (2021), from Wikidata's Q252 (P2046, P1082). The English Wikipedia article \"Indonesia\", at revision 1375980831, opens: \"Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, between the Indian and Pacific oceans. Comprising between 13,000 and 17,000 islands, including Sumatra, Java, Sulawesi, and parts of Borneo and New Guinea, it is the world's largest archipelagic state and the 14th-largest country by area. Indonesia has extensive tropical forests and marine ecosystems that support one of the world's highest levels of biodiversity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. The Republic of Indonesia, independent from the Netherlands after 1945, invaded Portuguese Timor in December 1975, months after Portugal's administration collapsed there, and annexed it the following year. It occupied the territory until 1999, when it accepted a United Nations ballot on autonomy; the vote went against it, and its withdrawal was preceded by militia violence that destroyed much of the territory. Only a handful of states recognised the annexation, and Portugal never did. It is in the atlas as the actor that took the last territory Portugal had failed to decolonise.",
   "when": {
     "start": 1945,
     "end": null

@@ -9,16 +9,22 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,17 +43,21 @@
     {
       "source": "wikidata",
       "locator": "Q1122110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tajikistani Civil War\", revision 1370749545"
     }
   ],
   "title": "Tajikistani Civil War",
-  "summary": "Wikidata item Q1122110, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–1997 civil war in Tajikistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Tajikistani Civil War\", at revision 1370749545, opens: \"The Tajikistani Civil War was an armed conflict in Tajikistan that began in May 1992 and ended in June 1997. Regional groups from the Garm and Gorno-Badakhshan regions of Tajikistan rose up against the newly formed government of President Rahmon Nabiyev, which was dominated by people from the Khujand and Kulob regions. The rebel groups were led by a combination of liberal democratic reformers and Islamists, who would later organize under the banner of the United Tajik Opposition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1122110, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–1997 civil war in Tajikistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1992,
     "end": 1997,
     "date": "1992-05-05",
     "endDate": "1997-06-27"
   },
-  "place": null,
+  "place": "tajikistan-q863",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

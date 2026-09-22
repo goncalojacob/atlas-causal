@@ -837,3 +837,38 @@ behind them. What the clause admits is the narrow case the owner asked for:
 `angola-independence-1975` names `third-portuguese-republic`, which is the
 polity `third-portuguese-republic-since-1974` is *about*, and it is drawn in
 the Africa lane because that is where it happened.
+
+## 16. M42 batch 34 — eight bare records of one war, all eight filed
+
+*22 September, the third batch of the fire that began at 10:33. The
+measurement is in `docs/m42-pool.md` → "Batch 34". A1's clause a sixth time
+and for the fourth time for the same reason: **all eight name neither an actor
+nor a place**, because the items give neither.*
+
+| the record | filed under | the umbrella's lane, where it is one |
+| --- | --- | --- |
+| `fall-of-saigon` | `vietnam-war` | not an A6 umbrella |
+| `gulf-of-tonkin-incident` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-khe-sanh` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-ia-drang` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-hue` | `tet-offensive` | not an A6 umbrella |
+| `battle-of-hamburger-hill` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-ap-bac` | `vietnam-war` | not an A6 umbrella |
+| `battle-of-long-tan` | `vietnam-war` | not an A6 umbrella |
+
+Every one of the eight carries a lane derived from its own point, as batches
+32, 33 and this one's predecessors did; none goes under a period.
+
+**One of them went to a nearer parent than the query offered**, which is the
+entry this batch adds. Wikidata files `battle-of-hue` under the war; the atlas
+holds `tet-offensive`, whose span contains the battle at the day, and the
+battle's own lead calls it *"a major battle in the Tết Offensive"*. **Where the
+vein's queried subject is not the nearest parent the atlas holds, the nearest
+one wins** — a record filed two levels too high is drawn in the right picture
+and says the wrong thing about what it was part of.
+
+**And `vietnam-war` itself was filed**, under `indochina-wars`, which already
+held `first-indochina-war` and `sino-vietnamese-war`. It is not a bare record
+and it is noted here because it is where this batch's fall in the main count
+came from: the eight arrived filed and cost nothing, and the war they hang from
+stopped being main.

@@ -9,47 +9,57 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m44b-retracted",
       "standing-backfilled",
-      "imported-by-wikidata"
+      "imported-by-wikidata",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q426722",
-  "sitelinks": {
-    "count": 35,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q426722",
   "wikipedia": {
     "en": "Rwandan Civil War",
     "pt": "Guerra Civil de Ruanda"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q426722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan Civil War\", revision 1371242033"
     }
   ],
   "title": "Rwandan Civil War",
-  "summary": "Wikidata item Q426722, imported by tools/import/wikidata.mjs. The item's own description reads \"1990–1994 conflict in Rwanda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Rwandan Civil War\", at revision 1371242033, opens: \"The Rwandan Civil War was a large-scale civil war in Rwanda which was fought between the Rwandan Armed Forces, representing the incumbent Third Rwandese Republic, and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994. The war arose from the long-running dispute between the Hutu and Tutsi groups within the Rwandan population. The Rwandan Revolution, which broke out in 1959, had replaced the Tutsi monarchy with a Hutu-led republic, forcing more than 336,000 Tutsis to seek refuge in neighbouring countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q426722, imported by tools/import/wikidata.mjs. The item's own description reads \"1990–1994 conflict in Rwanda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1990,
     "end": 1993,
     "date": "1990-10-01",
     "endDate": "1993-08-04"
   },
-  "place": null,
+  "place": "rwanda-q1037",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

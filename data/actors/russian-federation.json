@@ -11,32 +11,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "m52-open"
+      "m52-open",
+      "polity-description"
     ],
     "note": "M52: this record was named \"Russia (Soviet Union)\" and was one record for three polities. It now carries the post-Soviet period alone, from 1991-12-21, which is where CShapes’ own first post-Soviet period begins and is not a founding. Its inception is an open question: Q159’s preferred P571 is 1263, and its other values are 880, 1125 and 1991-12-25 — one day before the Soviet Union’s dissolution. See docs/m52-russia.md §2.4."
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q159",
+  "wikipedia": {
+    "en": "Russia"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 365"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q159, P2046 (area) and P1082 (population, 2025)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russia\", revision 1375974488"
     }
   ],
   "actorType": "polity",
   "names": [
     "Russia"
   ],
-  "summary": "Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 365 twenty-four periods of territorial validity under one label, \"Russia (Soviet Union)\", which covers three polities; M52 gave the first three to `russian-empire` and the next nineteen to `soviet-union`, and this record holds the last two, from 1991-12-21. Its last capital in the dataset is Moscow. It begins on that day because that is where CShapes’ own first post-Soviet period begins, and not because any source here says a state was founded then: what this record’s inception is stays an open question, and docs/m52-russia.md says what a person has to decide.",
+  "summary": "Approximately 17,075,400 km² and about 146.1 million people (2025), from Wikidata's Q159 (P2046, P1082). The English Wikipedia article \"Russia\", at revision 1375974488, opens: \"Russia, or the Russian Federation, is a country in Eastern Europe and North Asia. It is the largest country in the world, spanning eleven time zones and sharing land borders with fourteen countries. With a population of over 140 million, Russia is the most populous country in Europe and the ninth-most populous in the world.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 365 twenty-four periods of territorial validity under one label, \"Russia (Soviet Union)\", which covers three polities; M52 gave the first three to `russian-empire` and the next nineteen to `soviet-union`, and this record holds the last two, from 1991-12-21. Its last capital in the dataset is Moscow. It begins on that day because that is where CShapes’ own first post-Soviet period begins, and not because any source here says a state was founded then: what this record’s inception is stays an open question, and docs/m52-russia.md says what a person has to decide.",
   "when": {
     "start": 1991,
     "end": null

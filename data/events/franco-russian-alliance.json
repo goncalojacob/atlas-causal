@@ -9,37 +9,46 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q243799",
-  "sitelinks": {
-    "count": 30,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q243799",
   "wikipedia": {
     "en": "Franco-Russian Alliance",
     "pt": "Aliança Franco-Russa"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-21"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q243799"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Russian Alliance\", revision 1375457134"
     }
   ],
   "title": "Franco-Russian Alliance",
-  "summary": "Wikidata item Q243799, imported by tools/import/wikidata.mjs. The item's own description reads \"military alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Franco-Russian Alliance\", at revision 1375457134, opens: \"The Franco-Russian Alliance, also known as the Dual Entente or Russo-French Rapprochement, was an alliance formed by the agreements of 1891–94; it lasted until 1917. The strengthening of the German Empire, the creation of the Triple Alliance of 1882, and the exacerbation of Franco-German and Russo-German tensions at the end of the 1880s led to a common foreign policy and mutual strategic military interests between France and Russia. The development of financial ties between the two countries created the economic prerequisites for the Russo-French Alliance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q243799, imported by tools/import/wikidata.mjs. The item's own description reads \"military alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1894,
     "end": 1894,

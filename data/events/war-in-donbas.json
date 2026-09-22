@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,17 +42,21 @@
     {
       "source": "wikidata",
       "locator": "Q16335075"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War in Donbas\", revision 1370749630"
     }
   ],
   "title": "War in Donbas",
-  "summary": "Wikidata item Q16335075, imported by tools/import/wikidata.mjs. The item's own description reads \"2014–2022 war between Ukraine and Russia in the Donbas region of Ukraine\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"War in Donbas\", at revision 1370749630, opens: \"The war in Donbas, also called the Donbas war, was a phase of the Russo-Ukrainian war in the eastern Donbas region of Ukraine. The war began in April 2014, when Russian-backed paramilitaries began an uprising against the Ukrainian government, seized territory and declared independent states. Ukraine's military launched an operation against them, but failed to fully retake the territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16335075, imported by tools/import/wikidata.mjs. The item's own description reads \"2014–2022 war between Ukraine and Russia in the Donbas region of Ukraine\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2014,
     "end": 2022,
     "date": "2014-04-12",
     "endDate": "2022-02-24"
   },
-  "place": null,
+  "place": "donbas",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russo-ukrainian-war",

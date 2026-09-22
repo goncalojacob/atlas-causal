@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,15 +41,19 @@
     {
       "source": "wikidata",
       "locator": "Q8064768"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zaian War\", revision 1370751428"
     }
   ],
   "title": "Zaian War",
-  "summary": "Wikidata item Q8064768, imported by tools/import/wikidata.mjs. The item's own description reads \"war between France and the Zaian confederation of Berber tribes in Morocco between 1914 and 1921\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Zaian War\", at revision 1370751428, opens: \"The Zaian War was fought between France and the Zaian Confederation of Berber tribes in Morocco between 1914 and 1921 during the French conquest of Morocco. Morocco had become a French protectorate in 1912, and Resident-General Louis-Hubert Lyautey sought to extend French influence eastwards through the Middle Atlas mountains towards French Algeria. This was opposed by the Zaians, led by Mouha ou Hammou Zayani.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8064768, imported by tools/import/wikidata.mjs. The item's own description reads \"war between France and the Zaian confederation of Berber tribes in Morocco between 1914 and 1921\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1914,
     "end": 1921
   },
-  "place": null,
+  "place": "french-protectorate-in-morocco",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "french-conquest-of-morocco",

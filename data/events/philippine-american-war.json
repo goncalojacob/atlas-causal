@@ -17,34 +17,39 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q214456",
-  "sitelinks": {
-    "count": 56,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q214456",
   "wikipedia": {
     "en": "Philippine–American War",
     "pt": "Guerra Filipino-Americana"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q214456"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippine–American War\", revision 1372638665"
     }
   ],
   "title": "Philippine–American War",
-  "summary": "Wikidata item Q214456, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between the First Philippine Republic and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Philippine–American War\", at revision 1372638665, opens: \"The Philippine–American War, known alternatively as the Filipino–American War, Philippine Insurrection, or Tagalog Insurgency, emerged in early 1899 following the United States' annexation of the former Spanish colony of the Philippine Islands under the terms of the December 1898 Treaty of Paris following the Spanish–American War. Philippine nationalists had proclaimed independence in June 1898 and constituted the First Philippine Republic in January 1899. The United States did not recognize either event as legitimate, and tensions escalated until fighting commenced on February 4, 1899, in the Battle of Manila.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q214456, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between the First Philippine Republic and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1899,
     "end": 1902,

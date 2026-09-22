@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-05",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q170314",
-  "sitelinks": {
-    "count": 84,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q170314",
   "wikipedia": {
     "en": "Second Sino-Japanese War",
     "pt": "Segunda Guerra Sino-Japonesa"
+  },
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "1937-07-07",
     "endDate": "1945-09-09"
   },
-  "place": null,
+  "place": "china-q29520",
   "region": "asia",
   "actors": [
     {

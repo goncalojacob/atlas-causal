@@ -17,40 +17,46 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q114065797",
-  "sitelinks": {
-    "count": 51,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q114065797",
   "wikipedia": {
     "en": "Mahsa Amini protests",
     "pt": "Protestos contra a morte de Mahsa Amini"
+  },
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q114065797"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mahsa Amini protests\", revision 1375202189"
     }
   ],
   "title": "Mahsa Amini protests",
-  "summary": "Wikidata item Q114065797, imported by tools/import/wikidata.mjs. The item's own description reads \"Iranian protest movement in 2022–2023\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Mahsa Amini protests\", at revision 1375202189, opens: \"Civil unrest and protests against the government of the Islamic Republic of Iran associated with the death in police custody of Mahsa Amini began on 16 September 2022 and carried on into 2023, but by spring 2023, the protests had largely subsided, ultimately leaving the political leadership unchanged and firmly entrenched in power. The protests were described as \"unlike any the country had seen before\", the \"biggest challenge\" to the government, and \"most widespread revolt\" since the Islamic Revolution in 1979.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q114065797, imported by tools/import/wikidata.mjs. The item's own description reads \"Iranian protest movement in 2022–2023\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2022,
     "end": 2023,
     "endDate": "2023-09"
   },
-  "place": null,
+  "place": "tehran",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": [

@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q227",
+  "wikipedia": {
+    "en": "Azerbaijan"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 373"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q227, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Azerbaijan\", revision 1375575338"
     }
   ],
   "actorType": "polity",
   "names": [
     "Azerbaijan"
   ],
-  "summary": "Entity 373 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Baku. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 86,600 km² and about 10.2 million people (2023), from Wikidata's Q227 (P2046, P1082). The English Wikipedia article \"Azerbaijan\", at revision 1375575338, opens: \"Azerbaijan, officially the Republic of Azerbaijan, is a landlocked country at the boundary of Western Asia and Eastern Europe. It is a part of the South Caucasus region and is bounded by the Caspian Sea to the east, Russia's republic of Dagestan to the north, Georgia to the northwest, Turkey and Armenia to the west, and Iran to the south. Baku is the capital and largest city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 373 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Baku. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1991,
     "end": null

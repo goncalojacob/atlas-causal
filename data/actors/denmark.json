@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q35",
+  "wikipedia": {
+    "en": "Denmark"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 390"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q35, P2046 (area) and P1082 (population, 2020)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Denmark\", revision 1375287844"
     }
   ],
   "actorType": "polity",
   "names": [
     "Denmark"
   ],
-  "summary": "Entity 390 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Copenhagen. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 42,925 km² and about 5.8 million people (2020), from Wikidata's Q35 (P2046, P1082). The English Wikipedia article \"Denmark\", at revision 1375287844, opens: \"Denmark is a Nordic country in Northern Europe. It is the metropole and most populous constituent of the Kingdom of Denmark, also known as the Danish Realm, a constitutionally unitary state that includes the autonomous territories of the Faroe Islands and Greenland in the north Atlantic Ocean. Metropolitan Denmark, also called \"continental Denmark\" or \"Denmark proper\", consists of the northern Jutland peninsula and an archipelago of 406 islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 390 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Copenhagen. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

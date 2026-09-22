@@ -9,15 +9,21 @@
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,15 +41,19 @@
     {
       "source": "wikidata",
       "locator": "Q7318712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution in the Kingdom of Poland\", revision 1370706988"
     }
   ],
   "title": "Revolution in the Kingdom of Poland",
-  "summary": "Wikidata item Q7318712, imported by tools/import/wikidata.mjs. The item's own description reads \"20th-century insurrection in Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Revolution in the Kingdom of Poland\", at revision 1370706988, opens: \"A major part of the Russian Revolution of 1905 took place in the Russian Partition of Poland and lasted until 1907. It was the largest wave of strikes and widest emancipatory movement that Poland had ever seen until the 1970s and the 1980s. One of the major events of that period was the insurrection in Łódź in June 1905.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7318712, imported by tools/import/wikidata.mjs. The item's own description reads \"20th-century insurrection in Poland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1905,
     "end": 1907
   },
-  "place": null,
+  "place": "russian-empire-q34266",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-revolution-of-1905",

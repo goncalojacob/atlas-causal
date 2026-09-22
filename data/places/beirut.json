@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "beirut",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q3820",
+  "wikipedia": {
+    "en": "Beirut"
+  },
+  "sources": [],
+  "names": [
+    "Beirut",
+    "Beyrout"
+  ],
+  "where": {
+    "lon": 35.51306,
+    "lat": 33.88694,
+    "precision": "city",
+    "label": "Beirut"
+  },
+  "region": null,
+  "summary": null
+}

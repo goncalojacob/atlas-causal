@@ -9,32 +9,49 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
-  "origin": {
-    "tool": "cshapes"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
+  },
+  "origin": {
+    "tool": "cshapes"
+  },
+  "wikidata": "Q1007",
+  "wikipedia": {
+    "en": "Guinea-Bissau"
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 404"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1007, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Guinea-Bissau\", revision 1375908034"
     }
   ],
   "actorType": "polity",
   "names": [
     "Guinea-Bissau"
   ],
-  "summary": "Entity 404 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1974 to where the dataset stops, in 2019. Its last capital in the dataset is Bissau. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1974-09-10. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 36,125 km² and about 1.9 million people (2017), from Wikidata's Q1007 (P2046, P1082). The English Wikipedia article \"Guinea-Bissau\", at revision 1375908034, opens: \"Guinea-Bissau, officially the Republic of Guinea-Bissau, is a country in West Africa that covers 36,125 square kilometres (13,948 sq mi) with an estimated population of 2,080,000. It borders Senegal to its north and Guinea to its southeast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 404 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1974 to where the dataset stops, in 2019. Its last capital in the dataset is Bissau. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1974-09-10. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1974,
     "end": null
