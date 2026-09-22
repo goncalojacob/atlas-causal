@@ -75,6 +75,15 @@
         }
       ]
     },
+    "2011-egyptian-revolution--2011-bahraini-uprising--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2011-egyptian-revolution--2011-yemeni-revolution--inspired": {
       "from": "git",
       "versions": [
@@ -547,6 +556,15 @@
         }
       ]
     },
+    "iraqi-insurgency--iraqi-civil-war-of-2006-2008--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "legislative-election-2015--geringonca-2015--enabled": {
       "from": "git",
       "versions": [
@@ -948,6 +966,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "tunisian-revolution--2011-bahraini-uprising--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

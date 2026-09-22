@@ -1712,6 +1712,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "2011-egyptian-revolution",
+      "id": "2011-egyptian-revolution--2011-bahraini-uprising--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-bahraini-uprising",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "2011-egyptian-revolution",
       "id": "2011-egyptian-revolution--2011-yemeni-revolution--inspired",
@@ -2676,6 +2704,34 @@
       "status": "active",
       "to": "first-congo-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "angolan-civil-war",
+      "id": "angolan-civil-war--first-shaba-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-shaba-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -6087,6 +6143,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "from": "falklands-war",
+      "id": "falklands-war--argentine-surrender-in-the-falklands-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "argentine-surrender-in-the-falklands-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
       "from": "february-revolution",
       "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
       "kind": "edge",
@@ -8129,6 +8213,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "iraqi-insurgency",
+      "id": "iraqi-insurgency--iraqi-civil-war-of-2006-2008--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iraqi-civil-war-of-2006-2008",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "jameson-raid",
       "id": "jameson-raid--second-boer-war--precondition-of",
@@ -9388,6 +9500,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "moscow-uprising-of-1905",
+      "id": "moscow-uprising-of-1905--october-revolution--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "october-revolution",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "telo-2007-historia-contemporanea"
       ],
@@ -9738,6 +9878,34 @@
       "status": "active",
       "to": "finnish-civil-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "october-revolution",
+      "id": "october-revolution--junker-mutiny--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "junker-mutiny",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -11857,6 +12025,34 @@
       "status": "active",
       "to": "treaty-of-windsor",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "second-guangzhou-uprising",
+      "id": "second-guangzhou-uprising--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "xinhai-revolution",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -14320,6 +14516,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-22",
+      "from": "treaty-of-brest-litovsk",
+      "id": "treaty-of-brest-litovsk--revolt-of-czechoslovak-legion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "revolt-of-czechoslovak-legion",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "treaty-of-lausanne",
       "id": "treaty-of-lausanne--montreux-convention--precondition-of",
@@ -15042,6 +15266,34 @@
       "status": "active",
       "to": "legislative-election-2015",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "from": "tunisian-revolution",
+      "id": "tunisian-revolution--2011-bahraini-uprising--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2011-bahraini-uprising",
+      "type": "inspired"
     },
     {
       "authors": [

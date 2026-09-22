@@ -4397,6 +4397,15 @@
         }
       ]
     },
+    "argentine-surrender-in-the-falklands-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "armenian-genocide": {
       "from": "git",
       "versions": [
@@ -7352,6 +7361,15 @@
         }
       ]
     },
+    "first-shaba-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "first-sudanese-civil-war": {
       "from": "git",
       "versions": [
@@ -8392,6 +8410,15 @@
         }
       ]
     },
+    "junker-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "kapp-putsch": {
       "from": "git",
       "versions": [
@@ -9396,6 +9423,15 @@
         }
       ]
     },
+    "moscow-uprising-of-1905": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "mozambique-war-begins-1964": {
       "from": "git",
       "versions": [
@@ -9898,6 +9934,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "odz-insurrection": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -10408,6 +10453,15 @@
         }
       ]
     },
+    "potemkin-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "potsdam-conference": {
       "from": "git",
       "versions": [
@@ -10750,6 +10804,24 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "revolt-of-czechoslovak-legion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "revolution-in-the-kingdom-of-poland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -11514,6 +11586,15 @@
             "status"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-guangzhou-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

@@ -908,6 +908,15 @@
         }
       ]
     },
+    "angolan-civil-war--first-shaba-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "anschluss--austrian-state-treaty--precondition-of": {
       "from": "git",
       "versions": [
@@ -2240,6 +2249,15 @@
         }
       ]
     },
+    "falklands-war--argentine-surrender-in-the-falklands-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "february-revolution--georgian-ossetian-conflict-1918-1920--enabled": {
       "from": "git",
       "versions": [
@@ -3118,6 +3136,15 @@
         }
       ]
     },
+    "moscow-uprising-of-1905--october-revolution--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "mozambique-war-begins-1964--1977-mozambican-general-election--enabled": {
       "from": "git",
       "versions": [
@@ -3295,6 +3322,15 @@
             "sources"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "october-revolution--junker-mutiny--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3954,6 +3990,15 @@
         }
       ]
     },
+    "second-guangzhou-uprising--xinhai-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "second-sino-japanese-war--chinese-civil-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -4331,6 +4376,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-brest-litovsk--revolt-of-czechoslovak-legion--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

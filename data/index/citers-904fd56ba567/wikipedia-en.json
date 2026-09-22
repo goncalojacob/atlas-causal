@@ -326,6 +326,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-egyptian-revolution--2011-bahraini-uprising--inspired",
+      "kind": "edge",
+      "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
+    },
+    {
+      "dissent": false,
       "id": "2011-egyptian-revolution--2011-yemeni-revolution--inspired",
       "kind": "edge",
       "locator": "\"Yemeni revolution\", revision 1375746838, § lead and § 2011"
@@ -461,6 +467,12 @@
       "id": "angolan-civil-war--first-congo-war--precondition-of",
       "kind": "edge",
       "locator": "\"First Congo War\", revision 1374918500, § Angola"
+    },
+    {
+      "dissent": false,
+      "id": "angolan-civil-war--first-shaba-war--enabled",
+      "kind": "edge",
+      "locator": "\"Shaba I\", revision 1373218991, § lead"
     },
     {
       "dissent": false,
@@ -1028,6 +1040,12 @@
     },
     {
       "dissent": false,
+      "id": "falklands-war--argentine-surrender-in-the-falklands-war--caused",
+      "kind": "edge",
+      "locator": "\"Falklands War\", revision 1375590484, § lead"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
       "kind": "edge",
       "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671, § 1917–1918"
@@ -1526,6 +1544,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-insurgency--iraqi-civil-war-of-2006-2008--caused",
+      "kind": "edge",
+      "locator": "\"Iraqi civil war (2006–2008)\", revision 1373449147, § lead"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Jameson Raid\", revision 1370624782, § lead"
@@ -1820,6 +1844,12 @@
     },
     {
       "dissent": false,
+      "id": "moscow-uprising-of-1905--october-revolution--enabled",
+      "kind": "edge",
+      "locator": "\"Moscow uprising of 1905\", revision 1370628753, § lead"
+    },
+    {
+      "dissent": false,
       "id": "munich-agreement--first-vienna-award--caused",
       "kind": "edge",
       "locator": "\"First Vienna Award\", revision 1373350087, § lead"
@@ -1853,6 +1883,12 @@
       "id": "october-revolution--finnish-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Finnish Civil War\", revision 1370618272"
+    },
+    {
+      "dissent": false,
+      "id": "october-revolution--junker-mutiny--reacted-to",
+      "kind": "edge",
+      "locator": "\"Junker mutiny\", revision 1375165370, § lead"
     },
     {
       "dissent": false,
@@ -2363,6 +2399,12 @@
       "id": "second-boer-war--treaty-of-windsor--caused",
       "kind": "edge",
       "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-guangzhou-uprising--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"1911 Revolution\", revision 1375425258, § lead"
     },
     {
       "dissent": false,
@@ -3206,6 +3248,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-brest-litovsk--revolt-of-czechoslovak-legion--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945, § lead"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-lausanne--montreux-convention--precondition-of",
       "kind": "edge",
       "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200, § Background"
@@ -3383,6 +3431,12 @@
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons--treaty-on-the-prohibition-of-nuclear-weapons--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty on the Prohibition of Nuclear Weapons\", revision 1363091604, § Concept and § Overview of provisions"
+    },
+    {
+      "dissent": false,
+      "id": "tunisian-revolution--2011-bahraini-uprising--inspired",
+      "kind": "edge",
+      "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
     },
     {
       "dissent": false,

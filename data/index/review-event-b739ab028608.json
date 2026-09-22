@@ -2159,8 +2159,35 @@
       "cites": [
         "wikidata"
       ],
+      "created": "2026-09-22",
+      "degree": 2,
+      "id": "2011-bahraini-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2011 Bahraini uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 5,
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -2296,6 +2323,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-spring",
       "review": {
         "flags": [
           "imported-facts"
@@ -3271,7 +3299,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "angolan-civil-war",
       "kind": "event",
       "origin": {
@@ -3431,6 +3459,35 @@
       "revised": null,
       "status": "active",
       "title": "Arab Spring"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "argentine-surrender-in-the-falklands-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "falklands-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Argentine surrender in the Falklands War"
     },
     {
       "authors": [
@@ -6370,7 +6427,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "falklands-war",
       "kind": "event",
       "origin": {
@@ -6730,6 +6787,35 @@
       "revised": null,
       "status": "active",
       "title": "The First Portuguese Republic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "first-shaba-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Shaba War"
     },
     {
       "authors": [
@@ -8559,8 +8645,36 @@
       "cites": [
         "wikidata"
       ],
-      "created": "2026-09-21",
+      "created": "2026-09-22",
       "degree": 1,
+      "id": "iraqi-civil-war-of-2006-2008",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "iraq-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Iraqi Civil War of 2006–2008"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
       "id": "iraqi-insurgency",
       "kind": "event",
       "origin": {
@@ -8723,6 +8837,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Japanese Instrument of Surrender"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "junker-mutiny",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "october-revolution",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Junker mutiny"
     },
     {
       "authors": [
@@ -10104,6 +10247,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "moscow-uprising-of-1905",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Moscow Uprising of 1905"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10419,7 +10590,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 6,
+      "degree": 8,
       "id": "october-revolution",
       "kind": "event",
       "origin": {
@@ -10435,6 +10606,33 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "October Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "odz-insurrection",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Łódź insurrection"
     },
     {
       "authors": [
@@ -11279,6 +11477,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "potemkin-mutiny",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Potemkin Mutiny"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11479,6 +11705,61 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "The revolt of 14 May restores the Democrats"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "revolt-of-czechoslovak-legion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Revolt of Czechoslovak Legion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "id": "revolution-in-the-kingdom-of-poland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russian-revolution-of-1905",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Revolution in the Kingdom of Poland"
     },
     {
       "authors": [
@@ -12282,6 +12563,34 @@
       "revised": null,
       "status": "active",
       "title": "Second Franco-Dahomean War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "second-guangzhou-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "xinhai-revolution",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Guangzhou Uprising"
     },
     {
       "authors": [
@@ -14204,7 +14513,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "treaty-of-brest-litovsk",
       "kind": "event",
       "origin": {
@@ -15163,7 +15472,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "tunisian-revolution",
       "kind": "event",
       "origin": {
@@ -15946,7 +16255,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "xinhai-revolution",
       "kind": "event",
       "origin": {
@@ -16128,6 +16437,24 @@
     },
     {
       "id": "nova-republica-brazil-since-1985",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "odz-insurrection",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "potemkin-mutiny",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

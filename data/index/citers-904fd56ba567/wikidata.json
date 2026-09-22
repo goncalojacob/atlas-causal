@@ -788,6 +788,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-bahraini-uprising",
+      "kind": "event",
+      "locator": "Q242864"
+    },
+    {
+      "dissent": false,
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "locator": "Q29198"
@@ -1007,6 +1013,12 @@
       "id": "arab-spring",
       "kind": "event",
       "locator": "Q33761"
+    },
+    {
+      "dissent": false,
+      "id": "argentine-surrender-in-the-falklands-war",
+      "kind": "event",
+      "locator": "Q4789489"
     },
     {
       "dissent": false,
@@ -1442,6 +1454,12 @@
     },
     {
       "dissent": false,
+      "id": "first-shaba-war",
+      "kind": "event",
+      "locator": "Q3290619"
+    },
+    {
+      "dissent": false,
       "id": "first-sino-japanese-war",
       "kind": "event",
       "locator": "Q178687"
@@ -1712,6 +1730,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-civil-war-of-2006-2008",
+      "kind": "event",
+      "locator": "Q17183365"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "Q926905"
@@ -1745,6 +1769,12 @@
       "id": "japanese-instrument-of-surrender",
       "kind": "event",
       "locator": "Q665554"
+    },
+    {
+      "dissent": false,
+      "id": "junker-mutiny",
+      "kind": "event",
+      "locator": "Q28492393"
     },
     {
       "dissent": false,
@@ -1928,6 +1958,12 @@
     },
     {
       "dissent": false,
+      "id": "moscow-uprising-of-1905",
+      "kind": "event",
+      "locator": "Q4156944"
+    },
+    {
+      "dissent": false,
       "id": "mueda-massacre",
       "kind": "event",
       "locator": null
@@ -1955,6 +1991,12 @@
       "id": "october-revolution",
       "kind": "event",
       "locator": "Q42976"
+    },
+    {
+      "dissent": false,
+      "id": "odz-insurrection",
+      "kind": "event",
+      "locator": "Q766868"
     },
     {
       "dissent": false,
@@ -2072,6 +2114,12 @@
     },
     {
       "dissent": false,
+      "id": "potemkin-mutiny",
+      "kind": "event",
+      "locator": "Q4126381"
+    },
+    {
+      "dissent": false,
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
@@ -2087,6 +2135,18 @@
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "Q108137226"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-czechoslovak-legion",
+      "kind": "event",
+      "locator": "Q118514"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-in-the-kingdom-of-poland",
+      "kind": "event",
+      "locator": "Q7318712"
     },
     {
       "dissent": false,
@@ -2207,6 +2267,12 @@
       "id": "second-franco-dahomean-war",
       "kind": "event",
       "locator": "Q2090475"
+    },
+    {
+      "dissent": false,
+      "id": "second-guangzhou-uprising",
+      "kind": "event",
+      "locator": "Q1632838"
     },
     {
       "dissent": false,

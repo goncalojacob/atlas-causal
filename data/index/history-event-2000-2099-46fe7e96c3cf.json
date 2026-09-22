@@ -816,6 +816,15 @@
         }
       ]
     },
+    "2011-bahraini-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2011-egyptian-revolution": {
       "from": "git",
       "versions": [
@@ -997,6 +1006,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-21"
         }
       ]
@@ -3636,6 +3651,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "iraqi-civil-war-of-2006-2008": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
