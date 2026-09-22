@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-mantuan-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1527665",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "War of the Mantuan Succession",
+    "pt": "Guerra da Sucessão de Mântua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1527665"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Mantuan Succession\", revision 1374838991"
+    }
+  ],
+  "title": "War of the Mantuan Succession",
+  "summary": "The English Wikipedia article \"War of the Mantuan Succession\", at revision 1374838991, opens: \"The War of the Mantuan Succession, 1628 to 1631, was caused by the death in December 1627 of Vincenzo II, last Gonzaga ruler of Mantua and Montferrat. This led to a proxy war between the French-backed Duke of Nevers and the Duke of Guastalla, supported by Spain. It is considered a related conflict of the 1618 to 1648 Thirty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1527665, imported by tools/import/wikidata.mjs. The item's own description reads \"war in Northern Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1628,
+    "end": 1631
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

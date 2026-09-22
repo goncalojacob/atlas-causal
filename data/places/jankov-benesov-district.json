@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jankov-benesov-district",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1682828",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Jankov (Benešov District)",
+    "pt": "Jankov (Boêmia Central)"
+  },
+  "sources": [],
+  "names": [
+    "Jankov",
+    "Jankov (Benešov District)",
+    "Jankov (Boêmia Central)"
+  ],
+  "where": {
+    "lon": 14.730787763268,
+    "lat": 49.653005756667,
+    "precision": "city",
+    "label": "Jankov (Benešov District)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q1682828, imported by tools/import/wikidata.mjs. The item's own description reads \"village in Benešov District of Central Bohemian region\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

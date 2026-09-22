@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "thirty-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2487",
+  "sitelinks": {
+    "count": 124,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Thirty Years' War",
+    "pt": "Guerra dos Trinta Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376022805"
+    }
+  ],
+  "title": "Thirty Years' War",
+  "summary": "The English Wikipedia article \"Thirty Years' War\", at revision 1376022805, opens: \"The Thirty Years' War, fought primarily in Central Europe between 1618 and 1648, was one of the most destructive conflicts in European history. An estimated 4.5 to 8 million soldiers and civilians died from the effects of battle, famine, or disease, with parts of Germany reporting population declines of more than 50%. Related conflicts include the Eighty Years' War, the War of the Mantuan Succession, the Franco-Spanish War, the Torstenson War, the Dutch–Portuguese War, and the Portuguese Restoration War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2487, imported by tools/import/wikidata.mjs. The item's own description reads \"war principally fought in Central Europe from 1618 to 1648\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1618,
+    "end": 1648
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

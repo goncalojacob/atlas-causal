@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-breitenfeld-1642",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1754785",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Breitenfeld (1642)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1754785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Breitenfeld (1642)\", revision 1370108147"
+    }
+  ],
+  "title": "Battle of Breitenfeld (1642)",
+  "summary": "The English Wikipedia article \"Battle of Breitenfeld (1642)\", at revision 1370108147, opens: \"The Second Battle of Breitenfeld, also known as the First Battle of Leipzig, took place during the Thirty Years' War on 2 November 1642 at Breitenfeld, north-east of Leipzig in Germany. A Swedish Army commanded by Lennart Torstensson defeated an Imperial Army under Archduke Leopold Wilhelm of Austria and his deputy Ottavio Piccolomini.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1754785, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Thirty Years' War in 1642\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1642,
+    "end": 1642,
+    "date": "1642-10-23"
+  },
+  "place": "breitenfeld-leipzig",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bohemian-revolt--siege-of-pilsen--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pilsen\", revision 1370744459, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q944855"
+    }
+  ],
+  "from": "bohemian-revolt",
+  "to": "siege-of-pilsen",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The siege’s own article puts the two in that order and names the army: “The Siege of Pilsen, 19 September to 21 November 1618, was the first significant action of the Thirty Years’ War. Following the Bohemian Revolt, a Bohemian army under Ernst von Mansfeld captured Plzeň.” The army that took the city is the revolt’s own, which is why this is `enabled` rather than `caused`: the article says the revolt put that force in the field, not that it decided the siege. `probable`, on one lead, and rule 22 refuses `consensus` on a Wikipedia citation.",
+  "dispute": null
+}
