@@ -6,7 +6,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { bibliographyHtml } from '../src/sources/bibliography.js';
+import {
+  bibliographyHtml, isBaseMapSource, BASE_MAP_HEADING, WORKS_HEADING,
+} from '../src/sources/bibliography.js';
 import { loadSources } from '../src/data.js';
 import { ROOT } from './helpers.mjs';
 
@@ -23,8 +25,19 @@ test('the bibliography lists every source in the repository index, with its coun
     assert.ok(html.includes(`>${source.citationCount} citation`), `${source.id}: no count for ${source.citationCount}`);
   }
   assert.equal((html.match(/class="bib-entry/g) ?? []).length, sources.length);
-  const total = sources.reduce((n, s) => n + s.citationCount, 0);
-  assert.match(html, new RegExp(`carrying ${total} citations`));
+  // Two groups since M85 (A17): the works, and the base maps under a heading
+  // of their own. Every source is in exactly one of them and the two counts
+  // add back up to the whole, which is what the page promises.
+  const maps = sources.filter(isBaseMapSource);
+  const works = sources.filter((source) => !isBaseMapSource(source));
+  assert.equal(maps.length + works.length, sources.length);
+  const cites = (list) => list.reduce((n, source) => n + source.citationCount, 0);
+  for (const list of [works, maps]) {
+    if (list.length === 0) continue;
+    assert.match(html, new RegExp(`carrying ${cites(list)} citations`));
+  }
+  assert.equal(cites(works) + cites(maps), sources.reduce((n, s) => n + s.citationCount, 0));
+  assert.ok(html.includes(WORKS_HEADING) && html.includes(BASE_MAP_HEADING));
 });
 
 test('the list is ordered by creator and says what is not cited', () => {
@@ -34,6 +47,8 @@ test('the list is ordered by creator and says what is not cited', () => {
     { id: 'orphan', creators: ['Nobody'], year: 1900, title: 'Cited by nothing', type: 'book', status: 'active', citationCount: 0 },
   ]);
   assert.ok(html.indexOf('?source=maxwell') < html.indexOf('?source=telo'));
+  // No `origin` on any of the three, so none is a base map and the works are
+  // the whole list.
   assert.match(html, /3 sources,\s+2 of them cited/);
   assert.match(html, />0 citations</);
   assert.match(html, />1 citation</, 'one citation is not "1 citations"');

@@ -2066,6 +2066,9 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 
 /* The bibliography on sources.html. A hanging indent, because that is what a
    bibliography looks like and the eye finds the author by it. */
+/* Two groups since M85 (A17): the works, and the base maps under a heading of
+   their own. No new token — the spacing is the page's own scale. */
+.bib-group + .bib-group { margin-top: var(--space-6); }
 .bib-summary { color: var(--ink-soft); font-size: var(--text-sm); }
 .bib-list { list-style: none; padding: 0; margin: var(--space-4) 0 0; }
 .bib-entry {

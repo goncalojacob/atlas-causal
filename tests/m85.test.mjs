@@ -25,6 +25,9 @@ import { degreeLabel } from '../src/graph-filters.js';
 import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
 import { esc } from '../src/util/esc.js';
 import { bordersNote } from '../src/map/layers/presences.js';
+import {
+  bibliographyHtml, isBaseMapSource, BASE_MAP_HEADING, WORKS_HEADING,
+} from '../src/sources/bibliography.js';
 import { degreeOf } from '../src/graph-view/arrangement.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
@@ -215,4 +218,33 @@ test('and the essay still holds the page it was, section for section', async () 
   for (const name of ['The five edge types', 'What the colours mean, and what they do not']) {
     assert.ok(inEssay.has(name), `the essay still explains "${name}"`);
   }
+});
+
+// ─── 6. the bibliography groups the base maps (A17) ────────────────────────
+
+test('the bibliography counts the works apart from the base maps', () => {
+  const sources = [...atlas.sources.values()];
+  const html = bibliographyHtml(sources);
+  assert.ok(html.includes(`<h3>${WORKS_HEADING}</h3>`), 'the works have a heading');
+  assert.ok(html.includes(`<h3>${BASE_MAP_HEADING}</h3>`), 'and the base maps one of their own');
+
+  const maps = sources.filter(isBaseMapSource);
+  const works = sources.filter((source) => !isBaseMapSource(source));
+  assert.ok(maps.length > 0, 'the atlas draws its borders from somebody');
+  // The two add up to the whole, which is the only arithmetic here: what
+  // either group *is* belongs to the corpus and moves with the next import.
+  assert.equal(maps.length + works.length, sources.length);
+  const citations = (list) => list.reduce((n, source) => n + (source.citationCount ?? 0), 0);
+  assert.equal(citations(maps) + citations(works), citations(sources));
+  for (const list of [maps, works]) {
+    assert.ok(html.includes(`${list.length} source${list.length === 1 ? '' : 's'},`),
+      'each heading carries its own count');
+    assert.ok(html.includes(`carrying ${citations(list)} citation`),
+      'and its own share of the citations');
+  }
+  // Which sources are base maps is asked of `origin.tool` — the two territory
+  // imports — and not of a list of ids, so Wikidata is a dataset that stays
+  // with the works.
+  assert.ok(!maps.some((source) => source.id === 'wikidata'),
+    'Wikidata is where identifiers come from, not where a border is drawn');
 });
