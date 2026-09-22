@@ -18,6 +18,37 @@
 //
 // Pure: the atlas and an event in, an answer out. Nothing here knows the DOM.
 
+// What an event is part of, whatever shape its record spells it in. The owner,
+// 22 September: *"Can't we have many umbrellas for the same event? For example,
+// the angola independence is both under the Portuguese third republic and
+// african decolonization."* So `parent` admits a list of ids as well as one id
+// or null, and **one parent is a list of one**.
+//
+// Three spellings and one answer (M79):
+//
+//   absent or null  → `[]`, and the event is main
+//   `"war"`         → `["war"]`, which is what every record in `data/` says
+//                     today and what nothing rewrites: churn on eight hundred
+//                     files would say nothing a reader could see
+//   `["war", "..."]` → itself, in the order the writer put it in
+//
+// Order is the record's own and is never sorted here: the card says "part of"
+// each parent in that order, and a writer who put the regime before the
+// continent meant that.
+//
+// Nothing is deduplicated and nothing is dropped but a slot that is not a
+// string: the same parent twice is rule 24's error and the rule has to be able
+// to see it. This is the one place any of the three shapes is read — the
+// validator, the index, the three views, the card, the form and `m42-pool` all
+// come through here, because two readings of one field are how a ring and a
+// card come to disagree about what an event is inside.
+export function parentsOf(event) {
+  const parent = event?.parent;
+  if (typeof parent === 'string') return [parent];
+  if (Array.isArray(parent)) return parent.filter((id) => typeof id === 'string');
+  return [];
+}
+
 // A retracted or merged event is never a parent for this purpose. Its parts
 // may well still be active and still name it, but a record the atlas has
 // withdrawn is not something to send a reader inside.

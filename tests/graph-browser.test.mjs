@@ -290,9 +290,15 @@ test('at rest a parent keeps its parts out of the graph, and choosing it draws t
 // Before M30c the reader who had zoomed in far enough to see the parts was
 // told nothing about the event holding them; since M70 the ring is all there
 // is, which is why this test is now the whole of what says so.
-const RING = `
+//
+// Two parents on the fixtures since M79: `fixture-event-f`, and
+// `fixture-event-u`, whose only child is `fixture-event-h` and names it
+// *second*. A ring around U is the whole of what says that a second umbrella
+// over one event is an umbrella — the ring reads `childrenOf`, which is built
+// from every parent and not the first (src/data.js).
+const RING_AROUND = (id) => `
   const svg = document.querySelector('svg.graph');
-  const node = svg.querySelector('circle.node[data-id="fixture-event-f"]');
+  const node = svg.querySelector('circle.node[data-id="${id}"]');
   if (!node) return { node: null };
   const near = (a, b) => Math.abs(Number(a) - Number(b)) < 0.001;
   const ring = [...svg.querySelectorAll('circle.ring')].find((el) => (
@@ -323,9 +329,17 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     await open(page, url(`?fixtures=1&view=graph&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, TITLED('fixture-event-f'), "the parent's century to land");
 
-    const held = await page.eval(RING);
-    assert.equal(held.rings, 1, 'one ring, for the one parent on the fixtures');
+    const held = await page.eval(RING_AROUND('fixture-event-f'));
+    assert.equal(held.rings, 2, 'one ring for each of the two parents on the fixtures');
     assert.ok(held.ring, 'and the parent has it');
+
+    // The second umbrella, whose only child names it second (M79). Nothing on
+    // this view knows the order a record spells its parents in, and a ring
+    // here is how that is said.
+    const second = await page.eval(RING_AROUND('fixture-event-u'));
+    assert.ok(second.node, 'the second umbrella is drawn at rest, being part of nothing');
+    assert.ok(second.ring, 'and it is ringed, because an event names it among its parents');
+    assert.ok(second.ring.r > second.node.r, `outside it: ${second.ring.r} around ${second.node.r}`);
     assert.ok(held.ring.sibling, 'beside the node, in the same layer');
     assert.ok(held.ring.r > held.node.r, `outside it: ${held.ring.r} around ${held.node.r}`);
     assert.equal(held.ring.fill, 'none', 'an outline and not a disc');
@@ -346,7 +360,7 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
         clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
       }));
       return true;`);
-    const parted = await page.eval(RING);
+    const parted = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(parted.ring, 'and it is still ringed');
     assert.ok(parted.ring.r > parted.node.r);
     // The stroke is divided by the zoom, so the ring is as thin on the screen

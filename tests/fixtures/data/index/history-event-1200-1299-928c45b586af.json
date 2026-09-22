@@ -225,6 +225,12 @@
             "parent"
           ],
           "on": "2026-01-01"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-01-01"
         }
       ]
     },
@@ -285,6 +291,15 @@
             "actors",
             "parent"
           ],
+          "on": "2026-01-01"
+        }
+      ]
+    },
+    "fixture-event-u": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-01-01"
         }
       ]

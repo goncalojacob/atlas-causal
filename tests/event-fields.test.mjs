@@ -19,6 +19,7 @@ import { createRegionDeriver } from '../src/util/geo.js';
 import { readCategories, readRoles } from '../tools/lib/read.mjs';
 import { fixtures, schemas, ROOT } from './helpers.mjs';
 import { expandSpine } from '../src/data.js';
+import { parentsOf } from '../src/parts.js';
 
 // The fixtures deliberately carry neither data/roles.json nor
 // data/categories.json, which is what makes them the "absent means no check"
@@ -51,7 +52,10 @@ test('the fixtures carry a parent with two children, and nothing complains', asy
   const fx = await fixtures();
   const parent = event(fx, 'fixture-event-f');
   assert.ok(parent, 'the fixture parent');
-  const children = fx.records.filter((x) => x.kind === 'event' && x.parent === 'fixture-event-f');
+  // Through the helper since M79: `fixture-event-h` is part of F and of U at
+  // once and spells its umbrellas as a list, so a filter on `x.parent === id`
+  // would now find one of the two children and call it all of them.
+  const children = fx.records.filter((x) => x.kind === 'event' && parentsOf(x).includes('fixture-event-f'));
   assert.deepEqual(children.map((c) => c.id).sort(), ['fixture-event-h', 'fixture-event-t']);
   assert.equal(parent.scope, 'regional');
   assert.equal(parent.category, 'war');
@@ -92,8 +96,13 @@ test('a child dated outside its parent is a warning and not an error', async () 
   const r = await run((fx) => { event(fx, 'fixture-event-h').when = { start: 1900, end: 1900 }; });
   assert.equal(errorsOf(r, 24).length, 0, messages(r));
   const warned = warningsOf(r, 'child-outside-parent');
-  assert.equal(warned.length, 1);
-  assert.equal(warned[0].id, 'fixture-event-h');
+  // One per umbrella since M79, and H is filed under two: moving it to 1900
+  // puts it outside both, and each warning names the parent it is about.
+  assert.deepEqual(warned.map((w) => w.id), ['fixture-event-h', 'fixture-event-h']);
+  assert.deepEqual(
+    warned.map((w) => /"([^"]+)"/.exec(w.message)?.[1]).sort(),
+    ['fixture-event-f', 'fixture-event-u'],
+  );
 });
 
 test('a parent never enters the adjacency: rules 4 and 5 do not see it', async () => {
@@ -271,7 +280,7 @@ test('the three fields reach the topology and the spine, and only where a record
   assert.equal(parent.category, 'war');
   assert.equal(Object.hasOwn(parent, 'parent'), false);
   const child = topology.events.find((e) => e.id === 'fixture-event-h');
-  assert.equal(child.parent, 'fixture-event-f');
+  assert.deepEqual(child.parent, ['fixture-event-f', 'fixture-event-u'], 'the record\'s own spelling');
   for (const key of ['scope', 'category']) assert.equal(Object.hasOwn(child, key), false, key);
   const spine = expandSpine(buildSpine(topology));
   // `fixture-event-b`, which carries none of the four. A was the plain record

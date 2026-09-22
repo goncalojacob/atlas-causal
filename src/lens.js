@@ -42,6 +42,7 @@ import { FOCUS, FOCUS_KINDS, FOCUS_NONE } from './vocab.js';
 import { subgraph } from './graph.js';
 import { horizonSet } from './horizon.js';
 import { narrativeEventIds, readingNarrative } from './narrative.js';
+import { parentsOf as partOf } from './parts.js';
 import { bounds } from './util/dates.js';
 import { horizonIsOpen, overlaps } from './util/window.js';
 
@@ -61,15 +62,21 @@ export { FOCUS_KINDS, FOCUS_NONE };
 // the corpus from the first paint rather than a fifth of the marks vanishing
 // when a century lands.
 //
+// **Several umbrellas since M79, and the meaning is unchanged**: an event is
+// main when it is part of *nothing* the atlas is drawing. One active parent
+// out of three is enough to take it out of the resting picture, because it is
+// drawn inside that one.
+//
 // This is not a lens. A lens is a question the reader asked and it removes
 // what the question does not reach; the resting picture is what the atlas
 // draws when nobody has asked anything, and `lensView` still answers null for
 // it. The two meet in `emphasis.js`, which is the one place a view is told
 // what it may draw.
 export function isMain(topology, event) {
-  const parent = typeof event?.parent === 'string' ? event.parent : null;
-  if (!parent) return true;
-  return (topology.events?.get(parent)?.status ?? null) !== 'active';
+  for (const parent of partOf(event)) {
+    if ((topology.events?.get(parent)?.status ?? null) === 'active') return false;
+  }
+  return true;
 }
 
 // The resting picture itself: the main events, plus whatever the reader is
@@ -96,17 +103,24 @@ export function restingSet(topology, state = null) {
 // `eventsOfFocus` walks `childrenOf`: being part of something is a display
 // fact and not an argument. A visited set, because rule 24 refuses a cycle and
 // a lens draws whatever is in the file.
+//
+// **All of them since M79, not the first**: an event inside both a regime and
+// a continent's decolonisation is shown inside both, dimmed, and a walk that
+// took only the first id would drop the umbrella the reader came in through
+// half the time. The climb is breadth-first over every parent of every record
+// it reaches, which is the same rule one level up.
 export function parentsOf(topology, set) {
   const parents = new Set();
-  for (const id of set) {
-    let at = topology.events?.get(id) ?? null;
-    while (at) {
-      const parent = typeof at.parent === 'string' ? at.parent : null;
-      if (!parent || parents.has(parent) || set.has(parent)) break;
+  const climbing = [...set];
+  while (climbing.length > 0) {
+    const at = topology.events?.get(climbing.pop()) ?? null;
+    if (!at) continue;
+    for (const parent of partOf(at)) {
+      if (parents.has(parent) || set.has(parent)) continue;
       const record = topology.events?.get(parent) ?? null;
-      if (!record || record.status !== 'active') break;
+      if (!record || record.status !== 'active') continue;
       parents.add(parent);
-      at = record;
+      climbing.push(parent);
     }
   }
   return parents;

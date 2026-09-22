@@ -18,14 +18,20 @@ async function run(mutate = () => {}) {
 const rulesHit = (result, rule) => result.errors.filter((e) => e.rule === rule);
 const messages = (result) => result.errors.map((e) => `${e.rule} ${e.id}${e.path}: ${e.message}`).join('\n');
 
-test('the fixture dataset passes with exactly the three intended warnings', async () => {
+test('the fixture dataset passes with exactly the four intended warnings', async () => {
   const r = await run();
   assert.equal(r.errors.length, 0, messages(r));
   assert.deepEqual(
     r.warnings.filter((w) => w.rule !== 'unread').map((w) => `${w.rule}:${w.id}`).sort(),
     // fixture-place-m is where the tombstoned event happened: no active event
     // stands there any more, and that is exactly what place-unused says.
-    ['degree-zero:fixture-event-h', 'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
+    //
+    // `fixture-event-u` is M79's second umbrella and it hangs on nothing but
+    // the child that names it: being part of something is a display fact and
+    // never an argument (CLAUDE.md), so it adds no degree, and the warning is
+    // the same one `fixture-event-h` has always carried for the same reason.
+    ['degree-zero:fixture-event-h', 'degree-zero:fixture-event-u',
+      'no-citers:fixture-source-4', 'place-unused:fixture-place-m'],
   );
 });
 

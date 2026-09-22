@@ -10,6 +10,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
+import { parentsOf } from '../src/parts.js';
 
 const root = new URL('..', import.meta.url).pathname;
 
@@ -124,12 +125,9 @@ function reachTable(active, adj, pt, max = 8) {
 export function measure(events, edges) {
   const byId = new Map(events.map((e) => [e.id, e]));
   // isMain of src/lens.js, read here off the records: an event is main when it
-  // is part of no *active* event.
-  const isMain = (e) => {
-    const parent = typeof e.parent === 'string' ? e.parent : null;
-    if (!parent) return true;
-    return (byId.get(parent)?.status ?? null) !== 'active';
-  };
+  // is part of no *active* event — of none of them, since M79 lets a record
+  // name several (`parentsOf`, src/parts.js).
+  const isMain = (e) => !parentsOf(e).some((id) => (byId.get(id)?.status ?? null) === 'active');
   const g = components(events, edges);
   const main = g.active.filter(isMain);
   const activeEdges = edges.filter((e) => e.status === 'active');

@@ -645,6 +645,28 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&view=timeline&selected=estado-novo-1933-1974',
     width: 1440, height: 900,
     what: 'an umbrella opened on the timeline: it and what happened during it, each titled' },
+  // M79. An event may be part of several umbrellas (the owner, 22 September:
+  // Angolan independence is inside the Third Republic and inside the
+  // decolonisation of Africa), and the thing to show is that **either one
+  // opens on it**.
+  //
+  // On the fixtures, and it has to be: no record under `data/` names two
+  // parents — this milestone writes none and rewrites none — so the synthetic
+  // corpus is the only place the picture exists. `fixture-event-h` is part of
+  // F and of U and names them in that order; U is the *second* of the two, so
+  // the pair of shots is the whole argument, and the page says in its own
+  // corner that the records are synthetic.
+  //
+  // The timeline, because a bar carries its title and the two pictures can be
+  // read side by side without a legend. No frame: something is open in both,
+  // and the introduction only covers a view opened with nothing open
+  // (deviation 709).
+  { name: 'm79-umbrella-first', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-f',
+    width: 1440, height: 900,
+    what: 'the first umbrella opened: it, and the event inside it that names it first' },
+  { name: 'm79-umbrella-second', query: '?fixtures=1&view=timeline&from=1250&to=1310&selected=fixture-event-u',
+    width: 1440, height: 900,
+    what: 'the second umbrella opened: the same event, which names this one second' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

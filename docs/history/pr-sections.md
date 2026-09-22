@@ -3514,3 +3514,69 @@ both machines**: five browser passes here at 248–251 s, and five
 `workflow_dispatch` runs of `validate.yml` on `m78` — 1164 to 1168 — all
 green on the same head. No new runtime dependency, no build step, no new hex
 value, token or type size. `docs/drafts/` ignored. Deviations **1123 to 1135**.
+
+## M79 — an event may be part of several umbrellas
+
+The owner, 22 September, shown the list of umbrellas: *"Can't we have many
+umbrellas for the same event? For example, the angola independence is both
+under the Portuguese third republic and african decolonization."*
+
+### The record
+
+`parent` in `schema/v1/event.json` admits **a list of ids** beside one id and
+null. One parent is a list of one, and **`parentsOf(event)` in `src/parts.js`
+is the one place any of the three shapes is read** — absent or null, one id, a
+list — with the validator, the index, the three views, the card, the form and
+`tools/m42-pool.mjs` all coming through it. It keeps the writer's order, since
+the card prints "part of" in it, and deduplicates nothing, since the same
+parent twice is an error the rule has to be able to see.
+
+**Not one record under `data/` was rewritten, and that is the decision.** All
+329 events that carry a `parent` spell one id and every one of them is valid as
+it stands. Rewriting them into `["id"]` would have touched 329 files, moved
+their `revised` dates and their history shards, and said nothing a reader could
+see. The index is the same decision one layer down: the spine's `parent` column
+became `idOrIds` and writes the record's own spelling, so an event with one
+parent is one integer as it always was and the built index is byte-identical.
+
+### Rule 24, per parent
+
+What it always said, once for each: the parent is an event, an active event's
+parent is active, and no path of `part of` closes on itself — the cycle walk is
+**depth-first over every parent** now, because a cycle that closes through a
+second parent is a cycle. The same parent twice, or itself, is an error.
+`child-outside-parent` fires once per parent and **names which**: an event may
+sit inside its regime and reach outside the movement it also belongs to.
+
+### The display
+
+Opening an umbrella shows every event that has it *among* its parents, on all
+three views: `childrenOf` is built from every parent; `isMain` is "part of
+nothing the atlas is drawing"; `lens.js`'s `parentsOf` keeps all of a lens's
+umbrellas dimmed; the ring is drawn for a parent whose only child names it
+second; the card says "part of" each, in the record's own order. Also through
+the helper: `attributes.js`, `arrangement.js`'s "top level only",
+`subtreeWeights` (every ancestor credited once), `references.js` (a second row,
+so a rename rewrites a list as well as an id), the contribution bundle — whose
+one select keeps a list it did not ask about rather than dropping it — and
+`m42-pool`. The band, the categories and the lens are unchanged.
+
+### The fixtures and the pictures
+
+`fixture-event-u` is a second umbrella whose **only** child is
+`fixture-event-h`, which names it second; `fixture-event-t` still spells its
+one parent as a string. `tests/m79-browser.test.mjs` opens each umbrella on all
+three views and asks for the child, opens the child and asks for both
+umbrellas, and reads the card's two lines in order.
+`docs/screens/m79-umbrella-first.png` and `m79-umbrella-second.png` are the
+same event opened from either parent; no other picture was rewritten.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,189 records, 5 regions, 0 errors, 263
+warnings** — unchanged, and nothing under `data/` was touched. `node --test`:
+**1,707 pure and 234 browser, 1,941 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them. No new runtime dependency,
+no build step, no new hex value, token or type size. No record, no historical
+claim, no filing — M42's amendment A8 is lane B's and waits on this milestone's
+done line. `docs/drafts/` ignored. Deviations **1136 to 1142**.

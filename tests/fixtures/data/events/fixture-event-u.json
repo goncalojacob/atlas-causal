@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "fixture-event-h",
+  "id": "fixture-event-u",
   "kind": "event",
   "status": "active",
   "supersededBy": null,
@@ -20,17 +20,13 @@
       "locator": null
     }
   ],
-  "title": "Fixture event H",
-  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened.",
+  "title": "Fixture event U",
+  "summary": "Synthetic record used by the test suite. It is not history and describes nothing that happened. The second umbrella over fixture event H, which is part of this and of fixture event F at once (M79).",
   "when": {
-    "start": 1290,
-    "end": 1290
+    "start": 1270,
+    "end": 1295
   },
-  "place": "fixture-place-h",
-  "region": null,
-  "parent": [
-    "fixture-event-f",
-    "fixture-event-u"
-  ],
+  "place": null,
+  "region": "fixture-lane-2",
   "actors": []
 }

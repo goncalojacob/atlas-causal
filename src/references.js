@@ -61,7 +61,13 @@ const ENVELOPE_REFERENCES = Object.freeze([
 const KIND_REFERENCES = Object.freeze({
   event: Object.freeze([
     Object.freeze({ at: Object.freeze(['place']), to: 'place' }),
+    // Two rows for one field, because `parent` is one id or a list of them
+    // since M79 and each row rewrites the shape it is about: `rewriteAt`
+    // leaves a value alone where the path does not fit it, so a record
+    // spelling one parent is untouched by the second row and a record
+    // spelling three is untouched by the first.
     Object.freeze({ at: Object.freeze(['parent']), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['parent', ITEM]), to: 'event' }),
     Object.freeze({ at: Object.freeze(['actors', ITEM, 'actor']), to: 'actor' }),
   ]),
   edge: Object.freeze([

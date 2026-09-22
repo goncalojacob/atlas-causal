@@ -18,6 +18,8 @@
 // Pure and free of the DOM: it reads the joins `createAtlas` already built and
 // nothing else.
 
+import { parentsOf } from './parts.js';
+
 // The ids a card for `kind`/`id` prints something out of a shard about. The
 // record itself always, and then whatever its own lists reach: an event's
 // actors, its place, its parts, the events one link away and the accounts that
@@ -41,7 +43,7 @@ export function recordsOnScreen(atlas, kind, id) {
     const event = atlas.events.get(id);
     if (!event) return ids;
     note(event.place);
-    note(event.parent);
+    noteAll(parentsOf(event));   // every umbrella since M79: the card names each
     noteAll((event.actors ?? []).map((a) => a.actor));
     noteAll(atlas.childrenOf.get(id));
     // One link out and one link in: the card names the event at the far end of

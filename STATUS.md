@@ -13,6 +13,37 @@ hundred lines again, cut it the same way.
 
 ## Last updated
 
+2026-09-22, after **M79** (`docs/m79-brief.md`, on the branch `m79`, lane A):
+**an event may be part of several umbrellas.** The owner, 22 September, shown
+the list of umbrellas: *"Can't we have many umbrellas for the same event? For
+example, the angola independence is both under the Portuguese third republic
+and african decolonization."* So `parent` in `schema/v1/event.json` now admits
+**a list of ids** beside one id and null, and **one parent is a list of one**.
+**`parentsOf(event)` in `src/parts.js` is the one place any of the three
+shapes is read** — absent or null, one id, a list — and the validator, the
+index, the three views, the card, the form and `tools/m42-pool.mjs` all come
+through it. **Not one record under `data/` was rewritten**, and that was the
+decision and not an omission: every one of the 329 events that carries a
+`parent` is valid as it stands, the helper reads it, and churning them into
+lists of one would have said nothing a reader could see while making every one
+of them look edited on a day nobody edited it. New
+filings write a list when there is more than one. **Rule 24 applies per
+parent**: each resolves to an active event, the cycle walk is depth-first over
+*every* path of `part of` — a cycle that closes through a second parent is a
+cycle — the same parent twice or itself is an error, and `child-outside-parent`
+warns once per parent and names which. **Opening an umbrella shows every event
+that has it *among* its parents**, on the map, the graph and the timeline:
+`childrenOf` is built from every parent, `isMain` is "part of nothing the atlas
+is drawing", `lens.js`'s `parentsOf` keeps *all* of a lens's parents dimmed,
+the ring is drawn for a parent whose only child names it second, and the card
+says "part of" each umbrella in the record's own order. The band, the
+categories and the lens are unchanged. The index carries the record's own
+spelling (the spine's `idOrIds`), so no committed row changed and the built
+index is byte-identical. No record, no historical claim, no filing — M42's
+amendment A8 is lane B's and waits on this line. No new hex value, token or
+type size. `validate --index`: **11,189 records, 5 regions, 0 errors**.
+**1,941 tests, 0 skipped.** Deviations 1136 to 1142.
+
 2026-09-21, after **M70** (`docs/m70-brief.md`, on the branch `m70`, lane A):
 **dead code out, standing in.** Two things the owner decided on 21 September.
 (1) **The graph's semantic collapse is gone.** M30c's fold drew a parent's
@@ -16053,6 +16084,159 @@ not counted in the five.
       its own: a rate that is not five of five is a test that has not been
       found yet.
 
+## M79 — an event may be part of several umbrellas
+
+Lane A, on the branch `m79`. The owner, 22 September, shown the list of
+umbrellas: *"Can't we have many umbrellas for the same event? For example, the
+angola independence is both under the Portuguese third republic and african
+decolonization."*
+
+### The record: three shapes, one reading
+
+`parent` admits **a list of ids** as well as one id or null. One parent is a
+list of one, and the three spellings are one answer:
+
+| in the file | what it means |
+| --- | --- |
+| absent, or `null` | part of nothing; the event is main |
+| `"estado-novo-1933-1974"` | part of that one, which is what every record in `data/` says today |
+| `["third-republic", "decolonisation-of-africa"]` | part of both, in the order the writer put them in |
+
+**`parentsOf(event)` in `src/parts.js` reads all three and everything reads
+through it.** It keeps the writer's order — the card prints "part of" in it —
+and deduplicates nothing, because the same parent twice is rule 24's error and
+a helper that folded it would take the rule's evidence away. `src/parts.js` is
+now being part of something in both directions: `parentsOf` up, `isParent`
+down.
+
+### What was decided about the records already here, and why
+
+**None of them is rewritten.** All 329 events under `data/` that carry a
+`parent` spell one id, every one of them is valid as it stands, and the helper
+reads it as a list of one. Rewriting them into `["id"]` would have touched 329
+files, moved every one of their `revised` dates and their history shards, and
+said nothing a reader could see — churn that makes a record look edited on a
+day nobody edited it. The index is the same decision
+one layer down: the spine's `parent` column became `idOrIds`, which writes the
+record's **own** spelling, so an event with one parent is one integer as it
+always was and only an event with two costs an array. The built index is
+byte-identical to the one on `m0`.
+
+### Rule 24, per parent
+
+What the rule always said, once for each parent: the parent is an event, an
+active event's parent is active, and no path of `part of` closes on itself.
+The cycle walk is **depth-first over every parent** and no longer a climb up
+the first — a cycle that closes through a second parent is a cycle, and a walk
+that followed only the first id would never meet it. Two things only a list
+can be wrong about are errors: **the same parent twice**, which says nothing
+the one entry did not, and an event **listing itself**. The warning
+`child-outside-parent` fires **once per parent and names which**: an event may
+sit squarely inside its regime and reach outside the movement it also belongs
+to, and one warning on a record with three parents would leave the reader
+guessing which.
+
+### The display: either umbrella opens on it
+
+The resting picture is unchanged in meaning — a main event is one that is part
+of nothing the atlas is drawing, and one active umbrella out of three is
+enough to take it out. What changed is that **both ends of "part of" are
+plural**:
+
+* `childrenOf` in `src/data.js` is built from every parent, so opening an
+  umbrella shows every event that has it *among* its parents, on the map, the
+  graph and the timeline alike;
+* `parentsOf` in `src/lens.js` climbs every parent, so a lens keeps **all** of
+  its events' umbrellas in the picture, dimmed — a reader who walked down into
+  an event can click back out by whichever umbrella they came in through;
+* the **ring** (`src/parts.js` → `isParent`, over `childrenOf`) is drawn for a
+  parent whose only child names it *second*;
+* the **card** (`src/panel/event.js`) says "part of" each umbrella, one line
+  each, in the record's own order;
+* `src/attributes.js` pins the shard of each umbrella, `arrangement.js`'s "top
+  level only" leaves out an event with *any* parent, `src/validate/core.js`'s
+  `subtreeWeights` credits every ancestor once, `src/references.js` carries a
+  second row so a rename rewrites a list as well as an id,
+  `src/contribute/bundle.js` shows the first umbrella in its one select and
+  `applyValues` keeps a list the form did not ask about, and
+  `tools/m42-pool.mjs` counts main events the same way.
+
+The window band's profile, the categories and the lens are otherwise
+untouched.
+
+### The fixtures and the pictures
+
+`fixture-event-u` is a second umbrella whose **only** child is
+`fixture-event-h`, which names it second; `fixture-event-t` still spells its
+one parent as a string. `tests/m79-browser.test.mjs` opens each umbrella on
+all three views and asks for the child, opens the child and asks for both
+umbrellas, and reads the card's two "Part of" lines in order.
+`docs/screens/m79-umbrella-first.png` and `m79-umbrella-second.png` are the
+same event opened from either parent; no other picture was rewritten.
+
+### Checks
+
+`node tools/validate.mjs --index`: **11,189 records, 5 regions, 0 errors, 263
+warnings** — unchanged, and nothing under `data/` was touched. `node --test`:
+**1,707 pure and 234 browser, 1,941 in all, 0 failed and 0 skipped**, the
+browser suites one at a time as the check runs them. No new runtime
+dependency, no build step, no new hex value, token or type size. No record, no
+historical claim, no filing. `docs/drafts/` ignored. Deviations **1136 to
+1142**.
+
+1136. **One helper named `parentsOf` and a second already called that.**
+      `src/lens.js` exports `parentsOf(topology, set)` — what a *set* of
+      events is part of, all the way up — and the brief asks for
+      `parentsOf(event)`, which is a different question about one record.
+      Both names are right for what they answer and the brief names both, so
+      the leaf one lives in `src/parts.js` and `lens.js` imports it as
+      `partOf`. Two exports of one name in one codebase is how two readings of
+      one field come back.
+1137. **The topology carries the record's own spelling rather than a
+      normalised list.** Normalising a string to `["id"]` in `partsOf` would
+      have made every reader safe without a helper — and would have rewritten
+      every committed index row, put an array where a test reads an id, and
+      left `data/` and `data/index/` disagreeing about the shape of the same
+      field. Carrying the spelling and reading it in one place is the smaller
+      surface, and it is what makes "no record is rewritten" true of the index
+      as well as of `data/`.
+1138. **A new spine type and not an overloaded one.** `id` could have been
+      taught to encode an array, and every other `id` column would then have
+      accepted one silently. `idOrIds` is one line in the encoder, one in the
+      decoder and a row in the table that says which field may be plural.
+1139. **`references.js` gets a second row for one field, and that is the
+      table working.** `['parent']` and `['parent', ITEM]` both stand for
+      `parent`; `rewriteAt` leaves a value alone where the path does not fit
+      it, so each row rewrites the shape it is about and neither touches the
+      other. `tests/registry.test.mjs` is what said the second row was missing,
+      by name, before anything was drawn.
+1140. **The form's one select must not be the thing that drops an umbrella.**
+      `contribute.html` and the review editor ask "Part of" once, and adding a
+      second control is a feature nobody asked for. So `valuesFromRecord` shows
+      the first umbrella and `applyValues` keeps the whole list where the
+      reviewer left the select as they found it; a reviewer who picks something
+      else has answered the question and their one id is written. A round trip
+      through the review dashboard loses nothing either way.
+1141. **The fixture corpus gains one record, not four, and the second umbrella
+      earns a fourth intended warning.** `fixture-event-u` hangs on nothing but
+      the child that names it — being part of something is a display fact and
+      never an argument, so it adds no degree — and `degree-zero` on it is the
+      same warning `fixture-event-h` has always carried. Giving it an edge to
+      silence the warning would have moved the graph fixtures every
+      consequence test is written against. Deviation 711's order was followed:
+      the records committed, then the index rebuilt, then the index committed.
+1142. **`timeline-browser` 217 was red on `m0` before this branch existed, and
+      the claim commit is the proof.** Run 1237, on `70313d9a` — an `m0` tree
+      with one line appended to `STATUS.md` and nothing else — failed on that
+      one assertion, `969 to 958`, and a checkout of `origin/m0` in the sandbox
+      failed on it twice at `969 to 957`. `Math.abs(after - before) < 10` on a
+      drawing of 969 elements: M42's filing pass had landed
+      more rings in the bars layer, which is the paragraph written directly
+      above the assertion. It is a share of the drawing now (two per cent, or
+      ten, whichever is larger), as the two bounds above it already are. An
+      absolute bound raised by one per milestone is a bound that means nothing,
+      which is deviation 716's own argument arriving where it was going.
+
 ## M42 — the world at scale (in progress, branch `m42`)
 
 Lane B. `docs/m42-pool.md` is the measurement amendment A1 asks for and the
@@ -18039,3 +18223,5 @@ M42 started 2026-09-21T23:06:51Z by scheduled
 M42 started 2026-09-22T02:06:27Z by scheduled
 M42 started 2026-09-22T05:07:06Z by scheduled
 M42 started 2026-09-22T08:06:56Z by scheduled
+M79 started 2026-09-22T09:04:50Z by scheduled (branch m79)
+M79 done

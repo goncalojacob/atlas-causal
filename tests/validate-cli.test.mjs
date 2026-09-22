@@ -27,7 +27,7 @@ test('validate.mjs passes on the fixtures and prints the warnings', () => {
   assert.equal(r.status, 0, r.err);
   assert.match(r.out, /warning \[degree-zero\] events\/fixture-event-h\.json/);
   // The summary counts what is on disk, and the warnings are the unread
-  // records plus the three intended ones (tests/rules.test.mjs). Read out of
+  // records plus the four intended ones (tests/rules.test.mjs). Read out of
   // the output rather than written down: every one of these numbers moved when
   // M43b stretched the fixtures to 2025, and what the test is about is that the
   // tool counts the corpus it was pointed at.
@@ -44,7 +44,7 @@ test('validate.mjs passes on the fixtures and prints the warnings', () => {
   // are: the fixtures gain a field the day a schema does.
   const unwritten = (r.out.match(/warning \[unwritten-field\] /g) ?? []).length;
   assert.ok(unwritten > 0, 'the fixtures set no review and no origin, and the check says so');
-  assert.equal(Number(summary[3]), Number(more[1]) + 20 + 3 + unwritten, 'the unread records, the three intended warnings and the unwritten fields');
+  assert.equal(Number(summary[3]), Number(more[1]) + 20 + 4 + unwritten, 'the unread records, the four intended warnings and the unwritten fields');
   assert.equal((r.out.match(/warning \[unread\] /g) ?? []).length, 20);
 });
 

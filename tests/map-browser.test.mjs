@@ -13,6 +13,7 @@ import {
 import { cellsFor } from '../src/map/grid.js';
 import { parseBbox } from '../src/state.js';
 import { fixtures } from './helpers.mjs';
+import { parentsOf } from '../src/parts.js';
 
 // Wide and short, so the map area is far wider than 960 × 540's ratio and
 // the picture spills well outside the nominal box on both sides.
@@ -211,8 +212,12 @@ const all = await fixtures();
 // view draws the main events alone — an event that is part of another is drawn
 // when a reader opens the one it belongs to — so a bar for a part is not a bar
 // the lanes owe anybody.
+// Through `parentsOf` since M79: an event may name several umbrellas and
+// spells them as a list, so a test that read `typeof r.parent === 'string'`
+// would call such a record main and then wait for a bar the atlas is right
+// not to draw.
 const PARTED = new Set(all.records
-  .filter((r) => r.kind === 'event' && r.status === 'active' && typeof r.parent === 'string')
+  .filter((r) => r.kind === 'event' && r.status === 'active' && parentsOf(r).length > 0)
   .map((r) => r.id));
 const MAIN = (r) => r.kind === 'event' && r.status === 'active' && !PARTED.has(r.id);
 const ACTIVE = all.records
