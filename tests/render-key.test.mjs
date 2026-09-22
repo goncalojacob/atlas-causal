@@ -38,11 +38,11 @@ test('changing any one field changes the key', () => {
     from: 1900, to: 1950, view: 'graph', focus: 'actor:x', focusAll: true,
     selected: 'e', edge: 'a--b--caused', source: 's', place: 'p', actor: 'a', office: 'o', chain: ['c'], horizon: 1970,
     layers: ['events'], narrative: 'n', step: 3, walk: 'w', bbox: [0, 1, 2, 3],
-    // What the graph draws (M48 §3). The map and the timeline do not read
-    // them, and they are in the key all the same, for the reason this whole
-    // test exists: a field a view does not obviously read still changes the
-    // key, because the alternative is a picture that is quietly out of date.
-    degree: 2, tops: true,
+    // What the graph draws (M48 §3). The map and the timeline do not read it,
+    // and it is in the key all the same, for the reason this whole test
+    // exists: a field a view does not obviously read still changes the key,
+    // because the alternative is a picture that is quietly out of date.
+    degree: 2,
   };
   for (const [name, value] of Object.entries(changed)) {
     assert.notEqual(stateKey({ ...base, [name]: value }), stateKey(base), name);

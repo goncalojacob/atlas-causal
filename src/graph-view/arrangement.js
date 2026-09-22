@@ -11,7 +11,6 @@
 // of that promise and `node --test` has no DOM to build a view in.
 
 import { formatFoci, lensView } from '../lens.js';
-import { parentsOf } from '../parts.js';
 import { shardsArrived } from '../render-key.js';
 import { timeAxis } from './layout.js';
 import { extent } from '../util/dates.js';
@@ -92,9 +91,9 @@ export function holdingKey(state) {
 // render-key.js), read by the caller and passed in — this file has no atlas.
 export function arrangementKey(state, events, lanes, lens, holding = '', foci = null, shards = 0) {
   const focus = lens === null ? '' : (foci ?? state.focus ?? '');
-  // What the graph draws, when it is the graph deciding: inside a lens the two
-  // filters are off and two states that differ only in them are one picture.
-  const filters = lens === null ? `${state.degree ?? 0}:${state.tops ? 1 : 0}` : '';
+  // What the graph draws, when it is the graph deciding: inside a lens the
+  // filter is off and two states that differ only in it are one picture.
+  const filters = lens === null ? `${state.degree ?? 0}` : '';
   // The layer list, whole and as it stands: since the glyph run a category
   // toggle removes events here as the lens does, and two arrangements of two
   // different sets of categories would otherwise key the same and the second
@@ -121,28 +120,30 @@ export function degreeOf(atlas, id) {
 // **What the graph draws, which is not everything** (M48 §3). 103 of the 250
 // active events have one edge or none and eight carry seven or more; a picture
 // of all of them is eight nodes a reader can read and two hundred they cannot.
-// Two filters, and they are not alternatives: at least `degree` active links,
-// and — for the hierarchy M42 brings — no parent.
+// One filter: at least `degree` active links.
 //
-// Three rules hold them honest:
+// There were two until M83 (B10). "Top level only" was the other, and M65 took
+// its lever: this is applied to `shown`, which at rest is the resting picture —
+// the events that are part of nothing the atlas is drawing — so a second filter
+// for "has no parent at all" differed from it only for an event whose sole
+// parents are retracted or missing, and over the corpus of 22 September that is
+// no event at all. It was off inside a lens by rule. What is left is the floor.
 //
-//   * **neither applies inside a lens.** A reader who has focused has already
+// Three rules hold it honest:
+//
+//   * **it does not apply inside a lens.** A reader who has focused has already
 //     said what they want to see, and a focus that then hid half its own
 //     answer would be the atlas arguing with them;
-//   * **neither may take away what the reader is holding.** The selected
+//   * **it may not take away what the reader is holding.** The selected
 //     event, the walked chain, an open actor's events, an open narrative's
 //     walk — `held` is `emphasis.js`'s own answer, so walking to a hidden
 //     event brings it into the picture, which is what makes this a filter
 //     and not a deletion;
-//   * **neither is on any other view.** The map and the timeline draw the
-//     whole corpus as they did: an event the graph does not organise is still
-//     an event that happened somewhere on a day.
+//   * **it is on no other view.** The map and the timeline draw the whole
+//     corpus as they did: an event the graph does not organise is still an
+//     event that happened somewhere on a day.
 export function organises(atlas, event, state, held = null) {
   if (held?.has(event.id)) return true;
-  // "Top level only" is "part of nothing", and since M79 an event may be part
-  // of several things: one umbrella is as much a reason to leave it out as
-  // three (`parentsOf`, src/parts.js).
-  if (state.tops && parentsOf(event).length > 0) return false;
   return degreeOf(atlas, event.id) >= (state.degree ?? 0);
 }
 
