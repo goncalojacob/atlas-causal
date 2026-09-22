@@ -54,6 +54,13 @@ const NON_TEXT = [
   ['--cobalt', '--paper', 3, 'the outline of every mark, every control'],
   ['--cobalt', '--land', 3, 'a mark over land'],
   ['--madder', '--paper', 3, 'the walked chain'],
+  // The ring around whatever the reader has open, since M84. It is a mark's
+  // whole outline on the map and the graph and a bar's on the timeline, so it
+  // is held to what any other mark's outline is held to, on both grounds the
+  // pictures give it.
+  ['--terr-5-line', '--paper', 3, 'the ring around the event that is open'],
+  ['--terr-5-line', '--land', 3, 'the same over land'],
+  ['--terr-5-line', '--terr-5-tint', 3, "a ring bar's outline over its own fill, on the timeline"],
 ];
 
 test('every pair of text and ground clears WCAG AA', () => {
