@@ -376,3 +376,53 @@ event, whichever lane wrote it.
 *No ceiling.* The owner: *"no ceiling."* This milestone has no done
 condition until the owner writes one; the assistant lands a snapshot of
 `m42` and `m42b` into `m0` every day.
+
+**A12 (22 September). What the review measured, settled from the sources
+already on disk.** `docs/review-2026-09-22.md`, part C, over 582 active
+events. In this order, each as its own pass with its section in the pool
+file and its counts before and after, **before any further import**:
+
+1. *C1 — summaries.* 316 active events show the import's placeholder as
+   their summary and 313 of them have the English Wikipedia lead cached at
+   a named revision under `tools/import/cache/wikipedia/`. Write the cached
+   lead as the summary with a `wikipedia-en` citation at that revision and
+   the `summary-drafted` flag, the shape 126 records already have. Add the
+   validator warning `summary-imported` for any placeholder left. No
+   network needed.
+2. *C2 and A9 — places.* 221 placeless events carry "derived from its own
+   point": the item had `P625` and the import used it for the lane and
+   wrote no place. **A9's pass reads the item's own `P625` first**, then
+   `P276`, `P131`, `P17`; `placeRecord()` writes `precision` from the item's
+   class (`city` for a settlement, `region` for anything larger that is not
+   a state, `point` for a battlefield or site, `country` once `M80 done` is
+   on `origin/m0` — it is), never a hard-coded `point`.
+3. *C3, C4, A7 — intervals.* `intervalFor()` prefers `P580` (start time)
+   over `P585` (point in time) for `from`, and a missing `P582` becomes the
+   flag `end-unstated`, never `end: null` asserted as ongoing. Then the A7
+   pass driven by the reviewer's comparison: every record whose span
+   disagrees with the year range in its cached lead's title or first
+   sentence (29 found, 17 real: `cambodian-vietnamese-war`, `rif-war`,
+   `wadai-war`, `german-revolution-of-1918-1919`, `insurgency-in-kosovo`,
+   `great-depression`, `indochina-wars`, `la-violencia`,
+   `south-sudanese-civil-war`, `tambov-rebellion`, `2011-bahraini-uprising`
+   and the rest the measurement lists) is widened from the article at its
+   revision, with the note. Keep a `span-vs-article-title` warning.
+4. *C5 — actors.* The import reads `P710` (participant) and drops it: one
+   rule maps a participant that the atlas holds as an actor to the event's
+   `actors` with the role the vocabulary has for it; the pass applies it to
+   the 274 active events naming no actor.
+5. *C7 — titles.* `titleFor()` keeps the article's disambiguator; the three
+   "Afghan Civil War" and two "Treaty of London" are retitled from their
+   articles.
+6. *C6 and A11 — the polities' descriptions.* Only 6 of 2,519 polities carry
+   a Wikidata item, so A11's description pass cannot run as written. **The
+   first curation fire reconciles the polities that active events name**
+   (81) to their Wikidata items through the import's own identity tools,
+   then writes their descriptions (area `P2046`, population `P1082`, the
+   lead's context, each cited); the other polities wait until an event
+   names them.
+
+What needs a person stays listed (C6's page-less book citations, C8–C13).
+The measurement scripts the reviewer left are under the assistant's
+scratchpad and are quoted in part C; reproduce the numbers before and after
+each pass with your own.
