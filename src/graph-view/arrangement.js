@@ -12,6 +12,7 @@
 
 import { formatFoci, lensView } from '../lens.js';
 import { parentsOf } from '../parts.js';
+import { shardsArrived } from '../render-key.js';
 import { timeAxis } from './layout.js';
 import { extent } from '../util/dates.js';
 
@@ -68,7 +69,16 @@ export function holdingKey(state) {
 // different times."* So the graph lays out every event it draws, whatever the
 // window says, and moving the band moves no node at all — which is what
 // panning, zooming, selecting and walking already promised.
-export function arrangementKey(state, events, lanes, lens, holding = '', foci = null) {
+//
+// **And the attribute shards** (M83, A1-2). Since this milestone a node stands
+// at the day inside its year where the record gives one, and a `when` with its
+// day in it is an attribute: it arrives with its century, after the picture. So
+// an arrangement laid out before the shard landed is an arrangement of years,
+// and the key has to say which it is or the layout of years stands for ever.
+// It is the same integer every view's render key already carries
+// (`shardsArrived`, render-key.js), read by the caller and passed in — this
+// file has no atlas.
+export function arrangementKey(state, events, lanes, lens, holding = '', foci = null, shards = 0) {
   const focus = lens === null ? '' : (foci ?? state.focus ?? '');
   // What the graph draws, when it is the graph deciding: inside a lens the two
   // filters are off and two states that differ only in them are one picture.
@@ -86,7 +96,7 @@ export function arrangementKey(state, events, lanes, lens, holding = '', foci = 
   // With no grouping there are no lanes and nothing to be a member of; the
   // set of events is then the whole of the arrangement.
   const membership = lanes.length === 0 ? '' : events.map((e) => at.get(e.id) ?? -1).join(',');
-  return `${focus}|${filters}|${layers}|${lanes.map((l) => l.id).join(',')}|${membership}|${holding}`;
+  return `${focus}|${filters}|${layers}|${lanes.map((l) => l.id).join(',')}|${membership}|${holding}|${shards}`;
 }
 
 // How many active links an event has, both directions counted: the adjacency
@@ -208,6 +218,6 @@ export function arrangementOf(atlas, state, held = null, shown = undefined) {
     // the answer has to be the one this arrangement was built from: the domain
     // and the set of events are one picture.
     lens: view ? view.kept : null,
-    key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null),
+    key: arrangementKey(state, events, lanes, lens, '', view ? formatFoci(view.foci) : null, shardsArrived(atlas)),
   };
 }

@@ -34,6 +34,7 @@ import { workingSet } from '../src/emphasis.js';
 import { lensView } from '../src/lens.js';
 import { defaultState } from '../src/state.js';
 import { centuryCounts } from '../src/util/window.js';
+import { extent, startPoint } from '../src/util/dates.js';
 import { parentsOf } from '../src/parts.js';
 import { atlasOf, ROOT } from './helpers.mjs';
 
@@ -106,4 +107,93 @@ test('A1-1: nothing is taken from the resting picture, which has no lens to be o
   const { events } = arrangementOf(atlas, at({}), null, workingSet(atlas, at({})).shown);
   assert.equal(resting.layout.nodes.length, events.length,
     'every event the arrangement holds has a node at rest');
+});
+
+// --- A1-2: the axis is the date, not the year ------------------------------
+
+test('A1-2: startPoint reads the day inside the year the record gives one for', () => {
+  assert.equal(startPoint({ start: 1940, end: 1940 }), 1940, 'no date is the year itself');
+  const early = startPoint({ start: 1940, end: 1940, date: '1940-01-01' });
+  const late = startPoint({ start: 1940, end: 1940, date: '1940-12-31' });
+  assert.ok(early < late, 'January stands before December');
+  assert.ok(early >= 1940 && late < 1941, 'and both stand inside their own year');
+});
+
+test('A1-2: a date the year does not agree with is not read', () => {
+  // `date` is the record's own display of its start; where it names another
+  // year it is not the point this node stands at and the year stands instead.
+  assert.equal(startPoint({ start: 1940, end: 1945, date: '1939-09-01' }), 1940);
+});
+
+test('A1-2: the war\'s parts do not stack in one column per year', () => {
+  const { layout } = laidOut(war());
+  const years = new Set(layout.nodes.map((n) => n.year));
+  const columns = new Set(layout.nodes.map((n) => Math.round(n.x * 100)));
+  assert.ok(years.size > 1, 'the war runs over several years');
+  assert.ok(columns.size > years.size,
+    `the parts stand on more positions (${columns.size}) than there are years (${years.size})`);
+});
+
+test('A1-2: two events of one year that happened on different days stand apart', () => {
+  const { layout } = laidOut(war());
+  const byYear = new Map();
+  for (const node of layout.nodes) {
+    if (!byYear.has(node.year)) byYear.set(node.year, []);
+    byYear.get(node.year).push(node);
+  }
+  // The year with the most parts in it, which is the column the owner
+  // photographed (`docs/screens/owner-2026-09-22-graph-column.png`).
+  const [, crowd] = [...byYear].sort((a, b) => b[1].length - a[1].length)[0];
+  assert.ok(crowd.length > 2, 'there is a crowded year to look at');
+  const dated = crowd.filter((n) => startPoint(n.event.when) !== extent(n.event.when).min);
+  assert.ok(dated.length > 1, 'and more than one of them carries a day');
+  assert.ok(new Set(dated.map((n) => n.x)).size > 1,
+    'events of the same year with different days do not share an x');
+});
+
+// --- A1-3: the vertical order is the barycentre, not the whole field --------
+
+test('A1-3: no row of marks is pinned to the edge of the field', () => {
+  const { layout } = laidOut(war());
+  const band = layout.bands[0];
+  // The extreme lines a node may be placed on, as the layout itself reports
+  // them. A column spread evenly over the field put its first node on the top
+  // line and its last on the bottom one whatever they wanted, so every column
+  // of four or more left one mark on each — which is the row of hollow circles
+  // the owner photographed. One node happening to want the edge is a node; a
+  // row of them is the fault.
+  const ys = layout.nodes.map((n) => n.y);
+  const onTop = ys.filter((y) => Math.abs(y - band.top) < 0.5).length;
+  const onBottom = ys.filter((y) => Math.abs(y - band.bottom) < 0.5).length;
+  assert.ok(onTop <= 1, `at most one node stands on the top line, not ${onTop}`);
+  assert.ok(onBottom <= 1, `at most one node stands on the bottom line, not ${onBottom}`);
+});
+
+test('A1-3: a node with one neighbour is drawn near it, not flung to the edge', () => {
+  const { layout } = laidOut(war());
+  const byId = new Map(layout.nodes.map((n) => [n.id, n]));
+  const band = layout.bands[0];
+  const height = band.y1 - band.y0;
+  const spans = [];
+  for (const line of layout.edges) {
+    const from = byId.get(line.from);
+    const to = byId.get(line.to);
+    if (from && to) spans.push(Math.abs(from.y - to.y));
+  }
+  assert.ok(spans.length > 3, 'there are links to measure');
+  const median = spans.sort((a, b) => a - b)[Math.floor(spans.length / 2)];
+  assert.ok(median < height / 2,
+    `the middling link crosses less than half the field (${median.toFixed(1)} of ${height})`);
+});
+
+test('A1-3: the arrangement is still the same every time it is asked for', () => {
+  const one = laidOut(war()).layout;
+  const other = laidOut(war()).layout;
+  assert.deepEqual(one.nodes.map((n) => [n.id, n.x, n.y]), other.nodes.map((n) => [n.id, n.x, n.y]));
+});
+
+test('A1-3: and it is still never worse than doing nothing', () => {
+  const { layout } = laidOut(war());
+  assert.ok(layout.crossings <= layout.naiveCrossings,
+    `${layout.crossings} crossings against the naive ${layout.naiveCrossings}`);
 });

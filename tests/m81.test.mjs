@@ -257,10 +257,25 @@ test('stretching the picture moves the marks and parts what time separates', () 
     return Math.max(...xs) - Math.min(...xs);
   };
   assert.ok(spanOf(wide) > spanOf(tight), 'the drawn picture is wider');
-  assert.ok(
-    Math.abs(spanOf(wide) / spanOf(tight) - STRETCH_CAP) < 1e-9,
-    'by exactly the stretch, so the scale is the same scale and the order the same order',
-  );
+  // **By exactly the stretch, mark for mark.** Measured on the ends of the
+  // picture until M83, which is the same claim only while the marks at either
+  // end are single: a stacking that swallows the leftmost node into a stack
+  // standing to the right of it shortens the tight span and the ratio comes out
+  // over the cap. Which nodes merge is the clusterer's business and this test is
+  // not about it, so what is compared is every mark that is one node in both
+  // pictures — the scale is the same scale exactly when each of those is.
+  const aloneIn = (stacked) => new Map(stacked.nodes.filter((n) => n.count === 1)
+    .map((n) => [n.representative.id, n.x]));
+  const here = aloneIn(tight);
+  const there = aloneIn(wide);
+  const both = [...here.keys()].filter((id) => there.has(id));
+  assert.ok(both.length > 3, 'there are marks in both pictures to compare');
+  for (const id of both) {
+    assert.ok(
+      Math.abs(there.get(id) / here.get(id) - STRETCH_CAP) < 1e-9,
+      `${id} is drawn exactly ${STRETCH_CAP} times further along`,
+    );
+  }
   assert.ok(wide.nodes.length >= tight.nodes.length, 'and no mark was swallowed by widening the picture');
   assert.equal(wide.stretch, STRETCH_CAP, 'a stacking says what it was stretched by');
 
