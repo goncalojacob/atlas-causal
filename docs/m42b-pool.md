@@ -288,7 +288,7 @@ umbrella holds them in the picture; nothing was invented to connect them.
   first, at the same price batch 1 paid, so weigh them after the Americas.
 - **The place pass (A9) is open across the whole atlas**, and M42 has not run
   it either — there is no `## Places (A9)` section on `m42`. Batch 1 placed
-  its own seven and wrote six place records; 435 placeless events remain, and
+  its own five and wrote five place records; 430 placeless events remain, and
   most of them need `M80 done` before their country can be a place.
 - **`M80 done` is not on `origin/m0`**, so a country is not yet a place and
   three of batch 1's records are placeless for that reason alone. `M79 done`
