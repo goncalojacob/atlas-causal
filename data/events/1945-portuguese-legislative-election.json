@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-18",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q7232758",
-  "sitelinks": {
-    "count": 4,
-    "on": "2026-09-04"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q7232758",
   "wikipedia": {
     "en": "1945 Portuguese legislative election",
     "pt": "Eleições legislativas portuguesas de 1945"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-04"
   },
   "sources": [
     {
@@ -67,7 +68,7 @@
     "date": "1945-11-18",
     "calendar": "gregorian"
   },
-  "place": null,
+  "place": "portugal-q45",
   "region": "europe",
   "parent": "estado-novo-1933-1974",
   "category": "election",

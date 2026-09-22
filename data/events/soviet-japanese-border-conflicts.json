@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q696389",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q696389",
   "wikipedia": {
     "en": "Soviet–Japanese border conflicts",
     "pt": "Conflitos fronteiriços Soviético-Japoneses"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1932-03-01",
     "endDate": "1939-09-16"
   },
-  "place": null,
+  "place": "japan-q17",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

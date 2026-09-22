@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ]
   },
-  "wikidata": "Q2418422",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2418422",
   "wikipedia": {
     "en": "Panic of 1893",
     "pt": "Pânico de 1893"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "start": 1893,
     "end": 1893
   },
-  "place": null,
+  "place": "united-states-q30",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q179275",
-  "sitelinks": {
-    "count": 39,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q179275",
   "wikipedia": {
     "en": "Insurgency in Khyber Pakhtunkhwa",
     "pt": "Guerra no Noroeste do Paquistão"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "end": null,
     "date": "2004-03-16"
   },
-  "place": null,
+  "place": "federally-administered-tribal-areas",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

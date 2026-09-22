@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q635533",
-  "sitelinks": {
-    "count": 44,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q635533",
   "wikipedia": {
     "en": "Cambodian–Vietnamese War",
     "pt": "Guerra do Camboja (1979–1989)"
+  },
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1989-09-26",
     "endDate": "1991-10-23"
   },
-  "place": null,
+  "place": "cambodia-q424",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

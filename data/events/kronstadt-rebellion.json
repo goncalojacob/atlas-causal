@@ -17,7 +17,8 @@
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
@@ -46,7 +47,7 @@
     "end": 1921,
     "endDate": "1921-03-18"
   },
-  "place": null,
+  "place": "kronstadt",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": [

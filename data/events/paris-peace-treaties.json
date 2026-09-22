@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q322943",
-  "sitelinks": {
-    "count": 43,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q322943",
   "wikipedia": {
     "en": "Paris Peace Treaties, 1947",
     "pt": "Tratado de Paris (1947)"
+  },
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "end": 1947,
     "date": "1947-02-10"
   },
-  "place": null,
+  "place": "paris",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

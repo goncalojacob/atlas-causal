@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q1566342",
-  "sitelinks": {
-    "count": 25,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1566342",
   "wikipedia": {
     "en": "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict",
     "pt": "Convenção para a Proteção dos Bens Culturais em Caso de Conflito Armado"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -44,7 +45,7 @@
     "start": 1954,
     "end": 1954
   },
-  "place": null,
+  "place": "the-hague",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

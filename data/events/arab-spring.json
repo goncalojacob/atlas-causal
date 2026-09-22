@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-umbrella"
+      "m42-umbrella",
+      "a9-place"
     ]
   },
   "origin": {
@@ -47,7 +48,7 @@
     "date": "2010-12-17",
     "endDate": "2012-12"
   },
-  "place": null,
+  "place": "arab-world",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

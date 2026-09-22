@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q495558",
-  "sitelinks": {
-    "count": 30,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q495558",
   "wikipedia": {
     "en": "Japan–Korea Treaty of 1910",
     "pt": "Tratado de Anexação Japão-Coreia"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "end": 1910,
     "date": "1910-08-22"
   },
-  "place": null,
+  "place": "empire-of-japan",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",

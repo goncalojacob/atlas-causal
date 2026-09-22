@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q461891",
-  "sitelinks": {
-    "count": 41,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q461891",
   "wikipedia": {
     "en": "Svalbard Treaty",
     "pt": "Tratado de Svalbard"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "end": 1920,
     "date": "1920-02-09"
   },
-  "place": null,
+  "place": "paris",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "interwar-period",

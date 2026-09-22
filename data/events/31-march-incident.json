@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q2073490",
-  "sitelinks": {
-    "count": 16,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2073490",
   "wikipedia": {
     "en": "31 March incident",
     "pt": "Incidente de 31 de março"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1909-04-13",
     "endDate": "1909-04-24"
   },
-  "place": null,
+  "place": "ottoman-empire-q12560",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

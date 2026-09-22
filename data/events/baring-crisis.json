@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q3544276",
-  "sitelinks": {
-    "count": 7,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q3544276",
   "wikipedia": {
     "en": "Baring crisis",
     "pt": "Pânico de 1890"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -44,7 +45,7 @@
     "start": 1890,
     "end": 1890
   },
-  "place": null,
+  "place": "argentina-q414",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

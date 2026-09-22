@@ -13,27 +13,28 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m40-retracted",
       "standing-backfilled",
-      "imported-by-wikidata"
+      "imported-by-wikidata",
+      "a9-place"
     ]
   },
-  "wikidata": "Q131297",
-  "sitelinks": {
-    "count": 81,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q131297",
   "wikipedia": {
     "en": "Rwandan genocide",
     "pt": "Genocídio em Ruanda"
+  },
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -48,7 +49,7 @@
     "end": 1994,
     "endDate": "1994-07-04"
   },
-  "place": null,
+  "place": "rwanda-q1037",
   "region": "africa",
   "actors": []
 }

@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q1775286",
-  "sitelinks": {
-    "count": 46,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1775286",
   "wikipedia": {
     "en": "Deportation of the Crimean Tatars",
     "pt": "Deportação dos tártaros da Crimeia"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1944-05-18",
     "endDate": "1944-05-20"
   },
-  "place": null,
+  "place": "crimea",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

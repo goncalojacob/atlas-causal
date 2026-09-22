@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "rio-de-janeiro-q8678",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q8678",
+  "wikipedia": {
+    "en": "Rio de Janeiro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8678, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Rio de Janeiro",
+    "Rio de Janeiro city",
+    "Río de Janeiro City",
+    "City of Río de Janeiro"
+  ],
+  "where": {
+    "lon": -43.20556,
+    "lat": -22.91111,
+    "precision": "city",
+    "label": "Rio de Janeiro"
+  },
+  "region": null,
+  "summary": null
+}

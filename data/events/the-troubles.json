@@ -14,24 +14,25 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
   "revised": "2026-09-22",
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ],
     "note": "A7: the interval was 1998–1998 for a thirty-year conflict — the imported item's, which dates only the end — and is now the one the cited article states at revision 1376046499: \"about 30 years from the late 1960s to 1998\". \"The late 1960s\" is not a year, so the start is written as the range it names, 1967–1969, rather than as a year nobody wrote down; the end is 1998, which the article gives, with no day, because it gives none for the period itself. Nothing else on this record was touched."
   },
-  "wikidata": "Q815436",
-  "sitelinks": {
-    "count": 59,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q815436",
   "wikipedia": {
     "en": "The Troubles",
     "pt": "Conflitos na Irlanda do Norte"
+  },
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -52,7 +53,7 @@
     },
     "end": 1998
   },
-  "place": null,
+  "place": "northern-ireland",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
       "dates-corrected-m44c",
       "wants-exact-dates",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
@@ -47,7 +48,7 @@
     "start": 1991,
     "end": 1995
   },
-  "place": null,
+  "place": "croatia-q224",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "yugoslav-wars",

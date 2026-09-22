@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "saint-petersburg",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q656",
+  "wikipedia": {
+    "en": "Saint Petersburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q656, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Saint Petersburg",
+    "Petersburg",
+    "Sankt-Peterburg",
+    "St Petersburg",
+    "St.Petersburg"
+  ],
+  "where": {
+    "lon": 30.31667,
+    "lat": 59.95,
+    "precision": "city",
+    "label": "Saint Petersburg"
+  },
+  "region": null,
+  "summary": null
+}

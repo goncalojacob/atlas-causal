@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q13605743",
-  "sitelinks": {
-    "count": 36,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q13605743",
   "wikipedia": {
     "en": "2013 Egyptian coup d'état",
     "pt": "Golpe de Estado no Egito em 2013"
+  },
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "end": 2013,
     "date": "2013-07-03"
   },
-  "place": null,
+  "place": "port-said",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",

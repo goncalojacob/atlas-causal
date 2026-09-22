@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
   "origin": {
@@ -45,7 +46,7 @@
     "end": 1917,
     "date": "1917-11-11"
   },
-  "place": null,
+  "place": "saint-petersburg",
   "region": "europe",
   "regionNote": "Lane corrected in M42 batch 26: the import derived asia from the item’s country point, but the item’s own description says Petrograd and the parent record is in the europe lane. Only the lane was touched; no date was changed.",
   "parent": "october-revolution",

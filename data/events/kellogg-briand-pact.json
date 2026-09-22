@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m67-lined"
+      "m67-lined",
+      "a9-place"
     ]
   },
-  "wikidata": "Q205073",
-  "sitelinks": {
-    "count": 49,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q205073",
   "wikipedia": {
     "en": "Kellogg–Briand Pact",
     "pt": "Pacto Kellogg-Briand"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -50,7 +51,7 @@
     "end": 1928,
     "date": "1928-08-27"
   },
-  "place": null,
+  "place": "paris",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "interwar-period",

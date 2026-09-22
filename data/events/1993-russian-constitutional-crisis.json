@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q862099",
-  "sitelinks": {
-    "count": 39,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q862099",
   "wikipedia": {
     "en": "1993 Russian constitutional crisis",
     "pt": "Crise constitucional russa de 1993"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "end": 1993,
     "endDate": "1993-10-04"
   },
-  "place": null,
+  "place": "moscow",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",

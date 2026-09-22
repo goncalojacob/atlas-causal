@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q278960",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q278960",
   "wikipedia": {
     "en": "Partial Nuclear Test Ban Treaty",
     "pt": "Tratado de Interdição Parcial de Ensaios Nucleares"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,7 +46,7 @@
     "end": 1963,
     "date": "1963-08-05"
   },
-  "place": null,
+  "place": "moscow",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",

@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q482402",
-  "sitelinks": {
-    "count": 37,
-    "on": "2026-09-22"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q482402",
   "wikipedia": {
     "en": "Gulf of Tonkin incident",
     "pt": "Incidente do Golfo de Tonquim"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-22"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "date": "1964-08-02",
     "endDate": "1964-08-04"
   },
-  "place": null,
+  "place": "gulf-of-tonkin",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "vietnam-war",

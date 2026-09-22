@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-interval-corrected"
+      "m42-interval-corrected",
+      "a9-place"
     ]
   },
   "origin": {
@@ -47,7 +48,7 @@
     "date": "1956-10-29",
     "endDate": "1956-11-07"
   },
-  "place": null,
+  "place": "sinai-peninsula",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",

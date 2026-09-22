@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
@@ -47,7 +48,7 @@
     "date": "2001-10-07",
     "endDate": "2021-08-30"
   },
-  "place": null,
+  "place": "afghanistan-q889",
   "region": "asia",
   "parent": "afghan-conflict",
   "actors": []

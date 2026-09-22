@@ -13,24 +13,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
-  "wikidata": "Q2862267",
-  "sitelinks": {
-    "count": 25,
-    "on": "2026-09-21"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2862267",
   "wikipedia": {
     "en": "Korean Armistice Agreement",
     "pt": "Acordo de Armistício Coreano"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-21"
   },
   "sources": [
     {
@@ -45,10 +46,10 @@
     "end": 1953,
     "date": "1953-07-27"
   },
-  "place": null,
+  "place": "panmunjom",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "korean-war",
   "category": "treaty",
-  "actors": [],
-  "parent": "korean-war"
+  "actors": []
 }

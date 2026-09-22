@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jordan-q810",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q810",
+  "wikipedia": {
+    "en": "Jordan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q810, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Jordan",
+    "Hashemite Kingdom of Jordan",
+    "Kingdom of Jordan",
+    "Yarden",
+    "Giordania"
+  ],
+  "where": {
+    "lon": 36.5,
+    "lat": 31.2,
+    "precision": "country",
+    "label": "Jordan"
+  },
+  "region": null,
+  "summary": null
+}

@@ -13,27 +13,28 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m44b-retracted",
       "standing-backfilled",
-      "imported-by-wikidata"
+      "imported-by-wikidata",
+      "a9-place"
     ]
   },
-  "wikidata": "Q243620",
-  "sitelinks": {
-    "count": 50,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q243620",
   "wikipedia": {
     "en": "Somali Civil War",
     "pt": "Guerra Civil da Somália"
+  },
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -48,7 +49,7 @@
     "end": null,
     "date": "1991-01-26"
   },
-  "place": null,
+  "place": "somalia-q1045",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

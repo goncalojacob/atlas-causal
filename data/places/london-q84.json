@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "london-q84",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q84",
+  "wikipedia": {
+    "en": "London"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q84, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "London",
+    "London, UK",
+    "London, United Kingdom",
+    "London, England",
+    "London UK"
+  ],
+  "where": {
+    "lon": -0.1275,
+    "lat": 51.50722,
+    "precision": "city",
+    "label": "London"
+  },
+  "region": null,
+  "summary": null
+}

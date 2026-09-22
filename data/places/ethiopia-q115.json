@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ethiopia-q115",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q115",
+  "wikipedia": {
+    "en": "Ethiopia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Ethiopia",
+    "Federal Democratic Republic of Ethiopia",
+    "et"
+  ],
+  "where": {
+    "lon": 40,
+    "lat": 9,
+    "precision": "country",
+    "label": "Ethiopia"
+  },
+  "region": null,
+  "summary": null
+}

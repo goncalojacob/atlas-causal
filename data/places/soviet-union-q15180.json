@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "soviet-union-q15180",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q15180",
+  "wikipedia": {
+    "en": "Soviet Union"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15180, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Soviet Union",
+    "Union of Soviet Socialist Republics",
+    "USSR",
+    "U.S.S.R.",
+    "the Soviet Union"
+  ],
+  "where": {
+    "lon": 90,
+    "lat": 65,
+    "precision": "country",
+    "label": "Soviet Union"
+  },
+  "region": null,
+  "summary": null
+}

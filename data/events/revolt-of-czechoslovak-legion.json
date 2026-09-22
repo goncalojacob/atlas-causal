@@ -17,7 +17,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
   "origin": {
@@ -44,7 +45,7 @@
     "end": 1920,
     "date": "1920-09"
   },
-  "place": null,
+  "place": "ural",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": [

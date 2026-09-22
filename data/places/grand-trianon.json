@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "grand-trianon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q8049",
+  "wikipedia": {
+    "en": "Grand Trianon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8049, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Grand Trianon",
+    "Le Grand Trianon",
+    "Trianon"
+  ],
+  "where": {
+    "lon": 2.10472,
+    "lat": 48.81472,
+    "precision": "region",
+    "label": "Grand Trianon"
+  },
+  "region": null,
+  "summary": null
+}

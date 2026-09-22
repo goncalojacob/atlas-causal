@@ -13,23 +13,24 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q471261",
+  "wikipedia": {
+    "en": "Louvre Accord"
+  },
   "sitelinks": {
     "count": 15,
     "on": "2026-09-21"
-  },
-  "wikipedia": {
-    "en": "Louvre Accord"
   },
   "sources": [
     {
@@ -44,7 +45,7 @@
     "end": 1987,
     "date": "1987-02-22"
   },
-  "place": null,
+  "place": "louvre-museum",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

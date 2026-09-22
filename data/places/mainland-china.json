@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mainland-china",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q19188",
+  "wikipedia": {
+    "en": "Mainland China"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19188, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "mainland China",
+    "Chinese mainland",
+    "the mainland of China",
+    "China's mainland",
+    "Mainland side"
+  ],
+  "where": {
+    "lon": 106,
+    "lat": 36,
+    "precision": "region",
+    "label": "mainland China"
+  },
+  "region": null,
+  "summary": null
+}

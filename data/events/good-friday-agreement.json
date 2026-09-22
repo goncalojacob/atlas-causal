@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q208958",
-  "sitelinks": {
-    "count": 51,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q208958",
   "wikipedia": {
     "en": "Good Friday Agreement",
     "pt": "Acordo de Belfast"
+  },
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "end": 1998,
     "date": "1998-04-10"
   },
-  "place": null,
+  "place": "united-kingdom-q145",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

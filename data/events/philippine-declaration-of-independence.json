@@ -13,23 +13,24 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q69772",
+  "wikipedia": {
+    "en": "Philippine Declaration of Independence"
+  },
   "sitelinks": {
     "count": 17,
     "on": "2026-09-21"
-  },
-  "wikipedia": {
-    "en": "Philippine Declaration of Independence"
   },
   "sources": [
     {
@@ -44,7 +45,7 @@
     "end": 1898,
     "date": "1898-06-12"
   },
-  "place": null,
+  "place": "philippines-q928",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "founding",

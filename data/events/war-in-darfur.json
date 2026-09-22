@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ]
   },
-  "wikidata": "Q190758",
-  "sitelinks": {
-    "count": 56,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q190758",
   "wikipedia": {
     "en": "War in Darfur",
     "pt": "Conflito de Darfur"
+  },
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -47,7 +48,7 @@
     "date": "2003-02-26",
     "endDate": "2020-08-31"
   },
-  "place": null,
+  "place": "darfur-q46733",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

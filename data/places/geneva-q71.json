@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "geneva-q71",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q71",
+  "wikipedia": {
+    "en": "Geneva"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q71, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Geneva",
+    "Geneva GE",
+    "Genf"
+  ],
+  "where": {
+    "lon": 6.15,
+    "lat": 46.2,
+    "precision": "city",
+    "label": "Geneva"
+  },
+  "region": null,
+  "summary": null
+}

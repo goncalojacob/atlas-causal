@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-17",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q119860532",
-  "sitelinks": {
-    "count": 65,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q119860532",
   "wikipedia": {
     "en": "Wagner Group rebellion",
     "pt": "Rebelião do Grupo Wagner"
+  },
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -59,7 +60,7 @@
     "date": "2023-06",
     "endDate": "2023-06-24"
   },
-  "place": null,
+  "place": "european-russia",
   "region": "europe",
   "actors": [
     {

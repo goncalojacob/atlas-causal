@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q15353665",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q15353665",
   "wikipedia": {
     "en": "South Sudanese Civil War",
     "pt": "Guerra Civil Sul-Sudanesa"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -47,7 +48,7 @@
     "date": "2013-12-15",
     "endDate": "2020-02-22"
   },
-  "place": null,
+  "place": "south-sudan-q958",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

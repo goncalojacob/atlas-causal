@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q1000658",
-  "sitelinks": {
-    "count": 45,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1000658",
   "wikipedia": {
     "en": "Budapest Memorandum",
     "pt": "Memorando de Budapeste sobre Garantias de Segurança"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "end": 1994,
     "date": "1994-12-05"
   },
-  "place": null,
+  "place": "budapest",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
@@ -46,7 +47,7 @@
     "end": 1982,
     "endDate": "1982-06-14"
   },
-  "place": null,
+  "place": "falkland-islands",
   "region": "americas",
   "actors": []
 }

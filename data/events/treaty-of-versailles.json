@@ -17,25 +17,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-21",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-drafted"
+      "summary-drafted",
+      "a9-place"
     ]
   },
-  "wikidata": "Q8736",
-  "sitelinks": {
-    "count": 122,
-    "on": "2026-09-05"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q8736",
   "wikipedia": {
     "en": "Treaty of Versailles",
     "pt": "Tratado de Versalhes (1919)"
+  },
+  "sitelinks": {
+    "count": 122,
+    "on": "2026-09-05"
   },
   "sources": [
     {
@@ -58,7 +59,7 @@
     "end": 1919,
     "date": "1919-06-28"
   },
-  "place": null,
+  "place": "hall-of-mirrors",
   "region": "europe",
   "parent": "interwar-period",
   "actors": [

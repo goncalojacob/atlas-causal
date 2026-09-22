@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "budapest",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q1781",
+  "wikipedia": {
+    "en": "Budapest"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1781, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "Budapest",
+    "Buda Pest",
+    "Buda-Pest",
+    "Budapešť",
+    "Budapesta"
+  ],
+  "where": {
+    "lon": 19.04083,
+    "lat": 47.49833,
+    "precision": "city",
+    "label": "Budapest"
+  },
+  "region": null,
+  "summary": null
+}

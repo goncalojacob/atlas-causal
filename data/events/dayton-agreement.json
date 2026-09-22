@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-22",
   "review": {
     "flags": [
       "imported-facts",
-      "m42-reinstated"
+      "m42-reinstated",
+      "a9-place"
     ],
     "status": "draft"
   },
-  "wikidata": "Q190315",
-  "sitelinks": {
-    "count": 52,
-    "on": "2026-09-15"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q190315",
   "wikipedia": {
     "en": "Dayton Agreement",
     "pt": "Acordo de Dayton"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-15"
   },
   "sources": [
     {
@@ -46,7 +47,7 @@
     "end": 1995,
     "date": "1995-12-14"
   },
-  "place": null,
+  "place": "wright-patterson-air-force-base",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "actors": []

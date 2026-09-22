@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "the-hague",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q36600",
+  "wikipedia": {
+    "en": "The Hague"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q36600, P625 (coordinate location)"
+    }
+  ],
+  "names": [
+    "The Hague",
+    "Den Haag"
+  ],
+  "where": {
+    "lon": 4.31,
+    "lat": 52.08,
+    "precision": "city",
+    "label": "The Hague"
+  },
+  "region": null,
+  "summary": null
+}
