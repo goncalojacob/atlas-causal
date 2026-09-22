@@ -306,3 +306,42 @@ test('B6: a link chosen inside a narrative opens its card and writes ?edge=', { 
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// --- B9: the camera frames the layout that is on screen ---------------------
+//
+// Above six hundred events the arrangement is sent to a thread, and the frame
+// was keyed on the arrangement alone: the old coordinates were framed against
+// the new question, and the new coordinates arrived to find the key unchanged.
+// The corpus is under that threshold today, so what is asserted here is the
+// invariant the fault broke and not the path that broke it — with a lens on,
+// every one of the lens's own marks is inside the pane, whatever moved the
+// coordinates after the camera first looked at them.
+test('B9: with a lens on, every mark of the lens is inside the pane', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(WAR), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    // Every name landed means every century the picture holds has landed,
+    // which is the last thing that can move a node under the camera.
+    await waitFor(page, `
+      const marks = [...document.querySelectorAll('svg.graph .layer-nodes circle[data-id]')];
+      if (marks.length === 0) return false;
+      return marks.every((el) => {
+        const title = el.querySelector('title');
+        return Boolean(title) && !/^Loading/.test(title.textContent);
+      });`, 'every mark to be named');
+
+    const outside = await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      const pane = svg.getBoundingClientRect();
+      return [...svg.querySelectorAll('.layer-nodes circle[data-id]')]
+        .filter((el) => {
+          const b = el.getBoundingClientRect();
+          return b.left < pane.left || b.right > pane.right || b.top < pane.top || b.bottom > pane.bottom;
+        })
+        .map((el) => el.getAttribute('data-id'));`);
+    assert.deepEqual(outside, [], 'no mark the graph drew stands off the pane');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

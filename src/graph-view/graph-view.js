@@ -1289,7 +1289,22 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // at the end of this file throws the measurement away when the pane changes
   // size; keying on what was measured, rather than on the size read live off
   // the element, is what makes the next drawing act on it.
+  //
+  // **And the layout the frame was computed from** (M83, B9). The key above is
+  // about the question and the rectangle, and neither of them says *which
+  // coordinates*. Above six hundred events an arrangement is sent to a thread:
+  // `arrange` files the new key, returns true on the strength of the old
+  // `laid`, and `render` goes on and frames the *old* nodes against the new
+  // question — and when the Worker answers, `adopt` swaps in the new layout,
+  // forces a render, and this function finds the key unchanged and returns. The
+  // new arrangement was then drawn at whatever camera the stale fit had left:
+  // clearing a lens back to a resting picture of six hundred main events framed
+  // a handful of the lens's nodes and never the whole. Holding the layout
+  // itself, rather than a key that cannot see it, is what makes the frame
+  // belong to the picture; it is also what re-fits a lens whose nodes moved
+  // when its century landed (A1-2).
   let framedFor = null;
+  let framedLayout = null;
   function frameCamera(s, seen) {
     const working = workingOf(s);
     // **The question and not the whole arrangement key** (M83). The key carries
@@ -1298,7 +1313,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // frames again is a new question — a lens set or cleared, a filter, a
     // category — which is `question` (arrangement.js).
     const key = `${askedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
-    if (key === framedFor) return;
+    if (key === framedFor && framedLayout === laid) return;
     // Whether this is the first camera this arrangement has been given, which
     // is the whole of what the chosen link may decide (M80). A reader who
     // *arrives* on `?edge=` has not seen the picture yet and the two ends are
@@ -1309,6 +1324,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // in the key above: a click changes nothing this function decides.
     const arriving = framedFor === null || !framedFor.startsWith(`${askedFor}|`);
     framedFor = key;
+    framedLayout = laid;
     // And what that frame is: the link's own two ends and nothing else. The
     // card names them, and a camera that left one of them off the screen would
     // be the picture disagreeing with the card. It is the only set offered,
