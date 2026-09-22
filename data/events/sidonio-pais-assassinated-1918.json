@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-18",
+  "revised": "2026-09-22",
   "origin": {
     "tool": "assistant"
   },
@@ -52,7 +52,10 @@
   },
   "place": "lisbon",
   "region": null,
-  "parent": "first-portuguese-republic-1910-1926",
+  "parent": [
+    "first-portuguese-republic-1910-1926",
+    "interwar-period"
+  ],
   "actors": [
     {
       "actor": "sidonio-pais",

@@ -2134,3 +2134,151 @@ spread over six wars.
 - **The decolonisation of Africa**, still one word from the owner.
 - **The Gaza cluster**, now 48 rows rather than six, and still theirs.
 - **Sudan's five**, unchanged.
+
+## Second parents (A8)
+
+*22 September, the first fire after `M79 done` reached `origin/m0`. The owner:
+**"Can't we have many umbrellas for the same event? For example, the angola
+independence is both under the Portuguese third republic and african
+decolonization."** M79 made `parent` a list; A8 makes a filing write every
+umbrella that fits rather than the first, asks for the decolonisation of Africa
+by name, and asks that the already-filed events be re-read once for a second
+parent they were denied. This is that pass.*
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 581 active | **582 active** |
+| **main** | 252 | **245** |
+| filed | 329 | **337** |
+| events with more than one parent | 0 | **22** |
+| largest connected component | 502 | **502** |
+| components | 58 | 59 |
+
+**The main count fell by seven and no edge was written**, which is what an
+umbrella is: eight main events became children, one umbrella arrived and is
+itself main, and the component count rose by exactly that one record, because
+a `parent` is a display fact and takes no edge (`tests/m42-filing.test.mjs`
+asserts that no edge runs to one).
+
+### 1. The decolonisation of Africa, written at last
+
+`decolonisation-of-africa`, **Q1146918**, span **1954–1956 to 1976**, from
+*"Decolonisation of Africa"*, **revision 1372152864**: *"a series of political
+developments in Africa between the mid-1950s to 1976, during the Cold War."*
+
+Two earlier fires refused this record and were right to, under the rule they
+had: the article's end is a year and its start is not, and reading "mid-1950s"
+as 1955 would have been the assistant supplying a date the source declines to
+give. **What changed is not the reading but the shape.** A bound in
+`schema/common/interval.json` is *"either an exact year or a `{min, max}`
+range"*, and "mid-1950s" is a range — 1954 to 1956 — which the record can
+state without choosing a year inside it. `span()` in `src/validate/rules.js`
+reads a parent's start at `min`, so containment is tested against the early
+end of the range, which is the generous reading a period deserves and is why
+the Algerian War of November 1954 is inside it.
+
+**Eight events are filed under it, all eight of them main before this pass:**
+
+| | why |
+| --- | --- |
+| `algerian-war` | named in the article's own list of major events |
+| `zanzibar-revolution` | named in the article's own list |
+| `portuguese-colonial-war-1961-1974` | the wars of independence in Angola, Mozambique and Guinea; the article names the Angolan one |
+| `independence-of-morocco` | the French protectorate ends, 1956 |
+| `1957-guinean-territorial-assembly-election` | the *loi-cadre* machinery of French decolonisation |
+| `guinean-constitutional-referendum-1958` | the vote by which Guinea left the Community |
+| `angola-independence-1975` | **the owner's own example** |
+| `1975-sao-tomean-legislative-election` | the same shape, three months earlier |
+
+**The last two are the pass's point.** Each is now part of
+`third-portuguese-republic-since-1974` *and* of `decolonisation-of-africa` —
+the regime that withdrew and the continental period it withdrew into — and
+neither reaches the other. Before this fire `angola-independence-1975` was
+part of neither.
+
+The Third Republic is in the Europe lane and Angola's independence is in the
+Africa lane, so the suite's lane test refused this filing until it was
+corrected. It was the test that was wrong: M62's rule reads *"its `actors` or
+its place put it inside the regime"* and A6 says *"a region **or polity**"*,
+and the lane-only reading held only while every child of a polity umbrella
+happened to sit in that polity's own lane. The subject test now is the lane
+**or** an actor the umbrella itself names, which is a property and still names
+no record.
+
+**Fourteen African events inside the span were refused.** Seven because the
+period is not their subject: `suez-crisis`, `war-of-attrition` and
+`yom-kippur-war` belong to the Arab–Israeli conflict and not to the end of
+colonial rule; `first-sudanese-civil-war` is a civil war inside an already
+independent Sudan; `ifni-war` is Morocco against Spain and the article does
+not name it; `mueda-massacre` is arguable and already sits under the Estado
+Novo; `eritrean-civil-wars` hangs from `eritrean-war-of-independence`, which
+runs to 1991 and is outside the span. Seven more because they are inside the
+period already through their own parent —
+`massacre-of-arabs-during-the-zanzibar-revolution`, and
+`angola-war-begins-1961`, `guinea-war-begins-1963`,
+`mozambique-war-begins-1964`, `wiriyamu-massacre-1972`,
+`cabral-assassinated-1973` and `guinea-bissau-declares-independence-1973`
+under the colonial war. **A second parent earns its place by reaching
+somewhere the first does not**, and the suite now refuses a parent that is
+already an ancestor through another parent.
+
+### 2. The re-read, and what it found
+
+The 329 filed events were measured against all 57 umbrellas: span, then no
+ancestor already covering it, then a subject. **Twenty gained a second
+parent** — all twenty the same shape, a regime or a war already named and the
+period it also sits in:
+
+`1918-portuguese-presidential-election`, `1919-portuguese-presidential-election`,
+`1921-portuguese-legislative-election`, `1923-portuguese-presidential-election`,
+`1925-portuguese-legislative-election`, `1925-portuguese-presidential-election`
+and `1928-portuguese-presidential-election` (the First Republic and the
+Ditadura Nacional, and `interwar-period`); `monarchy-of-the-north-1919`,
+`noite-sangrenta-1921` and `sidonio-pais-assassinated-1918`;
+`salazar-finance-minister-1928`, `salazar-president-of-council-1932`,
+`national-syndicalists-banned-1934`, `legiao-portuguesa-founded-1936`,
+`portugal-backs-franco-1936` and `iberian-pact` (the Estado Novo, and the
+period); `kronstadt-rebellion`, `tambov-rebellion`, `polish-soviet-war` and
+`revolt-of-czechoslovak-legion` (the Russian Civil War, and the period).
+
+**The mechanical measure offered 248 filed events with at least one candidate
+and almost all of it was noise**, which is the finding worth carrying forward.
+Two filters did the work.
+
+**Sharing an actor is being a party, not being part** — M67's own rule, and it
+killed all 38 candidates the actor test produced on its own. `arab-revolt`
+and `armenian-genocide` both name the Ottoman Empire; `spanish-civil-war` and
+`the-holocaust` both name Nazi Germany; `winter-war` follows from
+`molotov-ribbentrop-pact` and is not inside it. Four of the 38 were refused by
+M67's rule 1 instead — a period does not contain the act that created or
+destroyed it — which is why `coup-28-may-1926` is not filed under the republic
+it ended or the dictatorship it began, `constitution-1933` not under the
+Estado Novo it founded, and `1985-brazilian-presidential-election` not under
+the Nova República it opened.
+
+**A year is not a date.** Five candidates sat inside `interwar-period` by year
+and outside it by day, against the period's own `1918-11-11` and `1939-09-11`:
+`armistice-of-mudros` (30 October 1918), `battle-of-the-lys-1918` (April
+1918), `finnish-civil-war` (January to May 1918),
+`german-soviet-treaty-of-friendship-cooperation-and-demarcation` (28 September
+1939) and `soviet-invasion-of-poland` (17 September 1939). `span()` compares
+years and would have let all five through with no warning; the dates the
+records carry are what refused them.
+
+Four more were refused on subject: `1991-portuguese-legislative-election` and
+`belovezh-accords` are not part of `revolutions-of-1989`, and
+`2012-malian-coup-d-etat` and `2012-tuareg-rebellion` matched `arab-spring`
+only because that umbrella's lane is Africa — its subject is the Arab
+uprisings and Mali is not one of them. **A lane is the subject test for a
+period named after a region and for nothing else.**
+
+### 3. Where that leaves the run
+
+- **A8's pass is done.** The decolonisation umbrella exists, the re-read has
+  run once, and 22 events now carry more than one parent.
+- **A7's three intervals are next** and are still flagged:
+  `chinese-civil-war`, `turkish-war-of-independence` and `the-troubles`.
+- **Then the batches**, as §"Where the run stands after batch 33" orders
+  them: the inverse `part of` vein, 626 rows, taken by war rather than by
+  ranking.
+- **The Gaza cluster and Sudan's five** are unchanged and still the owner's.

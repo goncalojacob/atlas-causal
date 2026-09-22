@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-18",
+  "revised": "2026-09-22",
   "origin": {
     "tool": "wikidata"
   },
@@ -69,7 +69,10 @@
   },
   "place": null,
   "region": "europe",
-  "parent": "ditadura-nacional-1926-1933",
+  "parent": [
+    "ditadura-nacional-1926-1933",
+    "interwar-period"
+  ],
   "category": "election",
   "actors": [
     {

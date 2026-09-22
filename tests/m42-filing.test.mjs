@@ -102,7 +102,11 @@ test('the filing pass created at least one umbrella', () => {
 
 test('every umbrella this pass created has a span and cites it', () => {
   for (const u of umbrellas) {
-    assert.equal(typeof u.when?.start, 'number', `${u.id} is an umbrella with no start year`);
+    // Readable rather than a plain number: a bound may be `{ min, max }`, and
+    // a period whose article dates its start as "the mid-1950s" has nowhere
+    // else honest to put that. What the clause is for is that the umbrella has
+    // a span at all and says whose it is.
+    assert.doesNotThrow(() => span(u.when), `${u.id} is an umbrella with no readable span`);
     const cited = (u.sources ?? []).map((c) => c?.source).filter((id) => typeof id === 'string');
     assert.ok(cited.length > 0, `${u.id} is an umbrella and cites nothing for its span`);
     for (const id of cited) {
