@@ -19075,6 +19075,50 @@ title (A6) and its axis still runs to 2040 with nothing there.
       **The check on the branch head is green**, with both suites passing on
       the tree the merge commit's run was red on.
 
+1083. **A9's letter and the corpus disagree about what a place record is, and
+      batch 35 followed the corpus.** A12 (2) says A9's pass reads *"the item's
+      own `P625` first"*, and every row of the inverse vein has one — the lane
+      test is built on it. Used as the place, it writes a place record called
+      *Battle of Adwa*, which is not a place but an event with a coordinate.
+      The pass of 22 September that placed 433 events never did this: it
+      created **112 `region`, 98 `country` and 58 `city` places and not one
+      `point`**, all from the located item a `P276`, `P131` or `P17` names. So
+      batch 35 read `P276` for the identity and took `precision` off that
+      item's own class, and `point` appears once — `magersfontein`, which
+      Wikidata knows as the battlefield museum and which is a site and not a
+      town. The rule A12 states and the rule the data follows are different
+      rules; a fire that changes `placeRecord()` to the letter will start
+      naming places after battles.
+
+1084. **A coarse precision is the honest answer to a place a record does not
+      have, not a reason to leave it placeless.** `abushiri-revolt` happened
+      along the coast of what is now Tanzania; the only located item its
+      Wikidata claims reach is German East Africa, whose own centroid sits a
+      thousand kilometres inland in Burundi. The temptation is to refuse the
+      place and keep the record on a lane alone. `country` says exactly what is
+      known — *in German East Africa, the point not established* — and
+      `src/vocab.js` already draws a coarse mark wider and fainter for that
+      reason. A mark a reader can see, drawn as an area, beats a record the map
+      cannot draw at all.
+
+1085. **A class that names how a thing was done is not a class of event.**
+      `Q914841` *frontier justice*, which Wikidata glosses *"extrajudicial
+      punishment that is motivated by the nonexistence of law and order"*, is
+      one of the two classes the killing of Gaddafi carries, and it was refused
+      where `Q4` *death* was added. This is batch 33's refusal of `Q19833559`
+      *preparation* in different clothes and the test is the same one: does the
+      class name a thing that happened, or a property of one? An import that
+      answers the second question builds a vocabulary of adverbs.
+
+1086. **Re-opening a refused item is how a class decision is applied, and it
+      costs nothing.** Three of batch 35's ten were refused on classes the
+      table did not have; the import marks a refused item `done` all the same,
+      so adding the classes alone would have left them refused for ever. The
+      three ids were removed from `runs.import.done` in
+      `data/imports/wikidata-state.json` and the import re-run, which created
+      them. A fire that adds a class and does not do this will find the item
+      silently missing from the batch it was added for.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

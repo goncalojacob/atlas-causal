@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-tripoli-2011",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q609013",
+  "wikipedia": {
+    "en": "Battle of Tripoli (2011)",
+    "pt": "Segunda batalha de Trípoli"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q609013"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796"
+    }
+  ],
+  "title": "Battle of Tripoli (2011)",
+  "summary": "The English Wikipedia article \"Battle of Tripoli (2011)\", at revision 1374512796, opens: \"The Battle of Tripoli, sometimes referred to as the Fall of Tripoli, was a military confrontation in Tripoli, Libya, between loyalists of Muammar Gaddafi, the longtime leader of Libya, and the National Transitional Council, which was attempting to overthrow Gaddafi and take control of the capital. The battle began on 20 August 2011, six months after the First Libyan Civil War started, with an uprising within the city; rebel forces outside the city planned an offensive to link up with elements within Tripoli, and eventually take control of the nation's capital.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q609013, imported by tools/import/wikidata.mjs. The item's own description reads \"2011 battle of the Libyan Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-08-20",
+    "endDate": "2011-08-28"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

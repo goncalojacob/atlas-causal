@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "sirte",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q162413",
+  "wikipedia": {
+    "en": "Sirte"
+  },
+  "sources": [],
+  "names": [
+    "Sirte",
+    "Sirt"
+  ],
+  "where": {
+    "lon": 16.6,
+    "lat": 31.2,
+    "precision": "city",
+    "label": "Sirte"
+  },
+  "region": null,
+  "summary": null
+}
