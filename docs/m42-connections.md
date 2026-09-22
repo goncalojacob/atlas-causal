@@ -4267,3 +4267,95 @@ precedent was used to justify is mass killing. It joins the Colombian pair.
 the full-text method finds four or five times as many candidate pairs as the
 lead did, and most of what it adds is an instrument, a comparison, a See also
 list or a namesake. The reading is the work; the fetch only makes it possible.
+
+## 2ac. Batch 30 — the method run out, three edges and eleven refusals
+
+*22 September, the second batch of the same fire and the same method: the full
+article rather than the lead. Twenty-two more fragment articles read, three
+edges, nothing imported. The measurement is in `docs/m42-pool.md` → "Batch
+30".*
+
+#### `1948-arab-israeli-war --precondition-of--> war-over-water`
+
+The confrontations' article, revision 1370750282, opens its history with the
+war: "Following the 1948 Arab–Israeli War, the 1949 Armistice Agreements
+created three demilitarized zones on the Israel-Syria border. The southernmost,
+and also the largest, stretched from the south-eastern part of the Sea of
+Galilee eastwards to the Yarmuk River … The issue of water sharing from the
+Jordan–Yarmuk system turned out to be a major problem between Israel, Syria
+and Jordan." The armistice drew the ground the water was fought over.
+`precondition-of`: the source makes the war the origin of the line, not of the
+fight.
+
+#### `1982-lebanon-war --precondition-of--> war-of-the-camps`
+
+The siege's Background, revision 1373013393, runs from the invasion to the
+siege without branching: the 1982 invasion "succeeded in driving thousands of
+Palestinian fighters … out of Southern Lebanon and West Beirut"; "Arafat's
+Fatah forces quietly returned to Lebanon over the next two years, ensconcing
+themselves in the many refugee camps in Beirut and the South"; "As more
+Palestinians regrouped in the South, Assad's anxiety grew … This time, Assad
+recruited the more powerful Shia Amal Movement militia headed by Nabih Berri
+to dislodge Arafat's loyalists." **Every step of that is the source's and the
+compression into one link is this atlas's**, which is what `precondition-of`
+and `probable` are for here.
+
+#### `first-sudanese-civil-war --precondition-of--> darfur-genocide`
+
+Revision 1373825853, § Background: "After Sudan gained independence from the
+United Kingdom in 1956, various conflicts broke out across the country,
+including the First Sudanese Civil War … These conflicts, combined with
+limited state investment in western regions such as Darfur, increased the
+feelings of marginalization within some local communities." The article gives
+environmental change first place among the causes and this second; the edge
+takes the second and claims no more for it than the article does. It takes
+`darfur-genocide` off the list of events with no edge at all and joins it to
+Sudan's five, which is still a fragment.
+
+### The eleven refusals
+
+- **`indochina-wars` and `world-war-ii`.** The umbrella's lead does say "During
+  the aftermath of World War II and the Cold War, the Indochina wars … were a
+  series of wars", and the mechanism it gives — the Japanese surrender of 15
+  August 1945, the August Revolution, the fall of the Empire of Vietnam — is
+  real. **But the mechanism attaches to `first-indochina-war`, which this
+  atlas already holds and which is already on the main chain.** An edge to the
+  umbrella instead would be this run choosing the more impressive endpoint.
+- **`afghan-conflict` and anything.** Its article's lead names four records
+  this atlas holds and **every one of them is its own child**
+  (`saur-revolution`, `soviet-afghan-war`, `war-in-afghanistan-2001-2021`,
+  and the two civil wars). The act it says the conflict began with — the 1973
+  coup that deposed Zahir Shah — this atlas does not hold.
+- **`arab-israeli-conflict` and `world-war-i`.** The lead roots the conflict in
+  the dissolution of the Ottoman Empire after the First World War and the
+  Mandate that followed. It is true and it is three steps, and the atlas
+  already reaches all three through the umbrella's own children. **An edge
+  from a world war to a conflict umbrella is the shape the brief's §1 warns
+  about** — "a `precondition-of` from every twentieth-century war to the Cold
+  War would clear any queue and say nothing true" — and this run wrote two
+  edges from a world war today already.
+- **`treaty-of-lhasa` and `british-russian-convention`.** The Anglo-Russian
+  Convention appears in the Convention of Lhasa's See also list and nowhere
+  else. **Batch 22 refused this pair from the other side**, reading the
+  convention's own lead; the two refusals agree.
+- **`kaocen-revolt` and `world-war-i`.** Also a See also list ("Military
+  operations in North Africa during World War I"). The lead gives the Sanusiya
+  declaration of jihad from Kufra in October 1914 as what Kaocen rallied to,
+  and this atlas does not hold it.
+- **`sino-soviet-border-conflict` and `cultural-revolution`.** The article
+  argues it twice — "Tensions at first built slowly, but the Cultural
+  Revolution made them rise much faster" — and the two are already one
+  component, so nothing was written that was not there.
+- **`south-sudanese-civil-war` and `covid-19-pandemic`**, **`interwar-period`
+  and `world-war-i`**, **`baring-crisis`, `louvre-accord`, `aarhus-convention`,
+  `hay-bunau-varilla-treaty`, `thousand-days-war` and anything at all.** The
+  pandemic appears in South Sudan as one of three compounding pressures on a
+  famine; the interwar period's article names the two wars *definitionally*,
+  as the dates it runs between, which is a definition and not an argument; and
+  the last five have articles of two to eleven thousand characters that name
+  no other record here.
+
+**Three edges from twenty-two articles, against four from thirty-two in batch
+29.** The method's yield is falling as the easy fragments go, and what is left
+is mostly umbrellas — which is the finding of the batch and is in
+`docs/m42-pool.md`.

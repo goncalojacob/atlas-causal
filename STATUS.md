@@ -15068,6 +15068,54 @@ measured in `docs/m42-pool.md` → "Batch 29".
      record was created, no date was invented, no record was signed, no value
      on an imported record was changed, and nothing was merged into `main`.
 
+### Batch 30 — three more edges, and what the components count is counting
+
+The full-article method continued over twenty-two more fragment articles.
+**Three edges, nothing imported**, so main is **252 and unchanged for the
+fifth batch running**. Largest component 493 to **495**, components 43 to
+**40**, events with no edge at all 27 to **24**. Argued in
+`docs/m42-connections.md` → "2ac", measured in `docs/m42-pool.md` → "Batch
+30".
+
+### Deviations
+
+1051. **Seven of the twenty-four singleton components are umbrellas, and they
+     are components of one by construction.** `third-portuguese-republic-since-1974`
+     (72 children), `interwar-period` (30), `arab-israeli-conflict` (10),
+     `nova-republica-brazil-since-1985` (8), `afghan-conflict` (6),
+     `arab-spring` (3) and `indochina-wars` (3) carry **132 events between
+     them** and the component count reads them as seven stranded records.
+     `parent` is a display fact and never an argument, and `tools/m42-pool.mjs`
+     is right not to borrow connectedness from the filing — but it follows
+     that **A6's umbrellas arrive as components of one and mostly stay
+     there**, and that part of the rise in the component count across batches
+     26 to 28 was the filing working rather than the corpus fragmenting.
+     **The largest component is the number A5 actually asks for**; the count
+     is a mixed measure and the table in `docs/m42-pool.md` → "Batch 30" is
+     what it should be read with.
+1052. **An umbrella's article names its own children, which is why an edge to
+     an umbrella is usually the wrong endpoint.** `afghan-conflict`'s lead
+     names four records this atlas holds and every one is its child;
+     `indochina-wars` gives a real mechanism — the Japanese surrender of 15
+     August 1945 and the August Revolution — and **that mechanism attaches to
+     `first-indochina-war`, which is already on the main chain.** Writing the
+     edge to the umbrella instead would have been this run choosing the more
+     impressive endpoint over the one the source argues for.
+1053. **Two edges from a world war in one fire is the limit, and the third was
+     refused for being the shape the brief warns about.**
+     `arab-israeli-conflict`'s lead does root the conflict in the dissolution
+     of the Ottoman Empire after the First World War, and it is three steps,
+     and the atlas already reaches all three through the umbrella's own
+     children. The brief's §1 — "a `precondition-of` from every twentieth-
+     century war to the Cold War would clear any queue and say nothing true" —
+     is about exactly this, and the count of how many such edges a batch has
+     already written is part of reading the next one.
+1054. **No historical claim was written.** Every edge explanation is a
+     paraphrase of a sentence the cited article carries at the cited revision,
+     and every citation names the article, the revision and the section. No
+     record was created, no date was invented, no record was signed, no value
+     on an imported record was changed, and nothing was merged into `main`.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

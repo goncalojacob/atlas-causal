@@ -1643,3 +1643,91 @@ read.
   2000-05-25, which is its end before its beginning. A person's afternoon.
 - **Twenty-two clean rows of the `part of` vein**, still arriving filed.
 - **The Arab Spring's asian half** and **the Horn's dates**, unchanged.
+
+## Batch 30 — the same method, the yield falling, and what the components count is actually counting
+
+*22 September, the second batch of the same fire. Twenty-two more fragment
+articles read whole, three edges, nothing imported.*
+
+| | |
+| --- | --- |
+| imported | **0** |
+| edges written | **3** |
+| corpus | 555 → **555** active |
+| **main** | **252, unchanged** — the fifth batch running |
+| largest connected component | 493 → **495** |
+| components | 43 → **40** |
+| events with no edge at all | 27 → **24** |
+| articles read for it | 22 |
+| refused | 11 |
+
+**The three are argued in `docs/m42-connections.md` → "2ac":**
+`1948-arab-israeli-war --precondition-of--> war-over-water`,
+`1982-lebanon-war --precondition-of--> war-of-the-camps`, and
+`first-sudanese-civil-war --precondition-of--> darfur-genocide`, which takes
+the last Sudanese singleton off the no-edge list.
+
+**The yield is falling and that is the batch's first finding.** Batch 29 read
+32 articles and wrote 4; batch 30 read 22 and wrote 3, and the eleven
+refusals are increasingly of one kind — the article names a record this atlas
+holds and that record is the umbrella's own child, or the mechanism it gives
+attaches to a record already on the main chain. The full-article method has
+now been run over every fragment of two or more and over most of the
+singletons. **It is close to spent, and what it leaves behind is not random.**
+
+### What is left, counted honestly: seven of the 24 singletons are umbrellas
+
+| umbrella | children | why it is a component of one |
+| --- | --- | --- |
+| `third-portuguese-republic-since-1974` | 72 | a period; nothing causes a period |
+| `interwar-period` | 30 | defined by the two wars it runs between |
+| `arab-israeli-conflict` | 10 | its origin is three steps back and reached through its own children |
+| `nova-republica-brazil-since-1985` | 8 | a period |
+| `afghan-conflict` | 6 | every record its lead names is its own child |
+| `arab-spring` | 3 | the wave's origin is `tunisian-revolution`, which is its child |
+| `indochina-wars` | 3 | the mechanism attaches to `first-indochina-war`, its child |
+
+**132 events hang under seven records that the component count reads as seven
+stranded ones.** `parent` is a display fact and never an argument
+(`CLAUDE.md`), and `tools/m42-pool.mjs` is right not to borrow connectedness
+from the filing — but it follows that **A6's umbrellas arrive as components of
+one and mostly stay there**, and that the rise in the component count across
+batches 26 to 28 was partly the filing working rather than the corpus
+fragmenting. The number to watch for "chains throughout the globe and time" is
+the **largest component**, which is 495 of 555 and has risen by 15 this fire;
+the component *count* is a mixed measure and should be read with this table
+beside it.
+
+**The seventeen singletons that are not umbrellas** are a different problem
+and a smaller one: five 1905 records whose articles argue nothing (batches 27
+and 28), four colonial punitive expeditions likewise, two Portuguese
+presidential elections, the Zanzibar massacre a coarse date refuses (deviation
+1042), `the-holocaust-in-romania` whose own article forbids the edge
+(deviation 1044), and `iberian-blackout-2025`, `1963-south-vietnamese-coup`
+and `eritrean-civil-wars`.
+
+## Where the run stands after batch 30, for the fire that picks it up
+
+*22 September, 07:00.*
+
+| | |
+| --- | --- |
+| corpus | **555 active** |
+| **main** | **252** |
+| largest connected component | **495** |
+| components | **40**, of which 7 are umbrellas by construction |
+| events with no edge at all | **24** |
+| the sweep pool, world sections | **1,053** open rows |
+| the `part of` vein | **22 of the clean rows untaken** |
+
+**What is still open, in the order a fire should weigh it:**
+
+- **Volume again.** Two batches of this fire wrote no record. The brief's own
+  "Done when" asks for an order of magnitude more active events than 250 and
+  the corpus is 555; the `part of` vein still has 22 clean rows that arrive
+  filed and therefore cost A6 nothing.
+- **Sudan's five**, which want an import chosen for them and not another read
+  (deviation 1049). Both of its largest articles have now been read whole.
+- **The dates**, unchanged since batch 28 and still the clearest afternoon's
+  work a person could do here.
+- **The Arab Spring's asian half**, unchanged, and the owner's to decide.
