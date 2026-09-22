@@ -1451,6 +1451,8 @@ claims two deviations and no more.
 
 *22 September, after batch 6.*
 
+*The check is **green** on this branch's head, `835afd04`, run 1461.*
+
 | | |
 | --- | --- |
 | corpus | **722 active** |
