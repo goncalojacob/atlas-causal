@@ -229,11 +229,16 @@ test("every child's actors or place put it inside its umbrella", () => {
 test('a child that names neither is one the measurement argues for', () => {
   assert.ok(doc.length > 0, `${DOC} is missing`);
   for (const child of active) {
-    if (typeof child.parent !== 'string') continue;
+    // Through `parentsOf`, not `typeof child.parent === 'string'`: a bare
+    // record filed under two umbrellas would have skipped this clause
+    // silently, which is the one failure mode a correspondence test cannot
+    // afford — it would pass by finding nothing.
+    const parents = parentsOf(child);
+    if (parents.length === 0) continue;
     if ((child.actors ?? []).length > 0 || typeof child.place === 'string') continue;
     assert.ok(
       doc.includes(`\`${child.id}\``),
-      `${child.id} names neither an actor nor a place and is filed inside "${child.parent}" with nothing said about why`,
+      `${child.id} names neither an actor nor a place and is filed inside "${parents.join('", "')}" with nothing said about why`,
     );
   }
 });

@@ -17980,7 +17980,7 @@ largest component 502 → **503**.
 **Corpus after the fire: 590 active, 244 main, 346 filed, 640 edges, largest
 connected component 503, 65 components.** `node tools/validate.mjs --index`:
 **0 errors, 269 warnings**. **1,709 pure tests, 0 skipped.** Deviations 1070
-to 1075.
+to 1076.
 
 1070. **A bound the source gives as a phrase is a range and not a guess.**
      Two earlier fires refused `decolonisation-of-africa` because its article
@@ -18048,6 +18048,25 @@ to 1075.
      went under `tet-offensive` and not under the war — and the subject of
      such a query may itself be unfiled, which is how `vietnam-war` came to be
      part of `indochina-wars` and the main count came down.
+1076. **The check went red on the A7 commit and it was not load.** One browser
+     test of 234: `tests/timeline-browser.test.mjs:230`, *"a state change
+     updates the bars in place and does not rebuild them"* — *"and it is the
+     same drawing (950 to 930)"* against a bound of 19. It **reproduced here
+     every time**, and a worktree at the merge commit passed, so it was
+     bisected to A8's filings rather than assumed. The census says what moved:
+     **seven bars of 1974–1975 left and three of 1492–1500 arrived** — two of
+     the seven being `angola-independence-1975` and
+     `1975-sao-tomean-legislative-election`, filed by that pass. **Nothing
+     was rebuilt**: the churn assertions, which are what the test is named
+     for, passed at 20 removed against a bound of 47. Since M65 both pictures
+     are **lens sets**, and the sizes of two lens sets are a fact about the
+     records; M42 files main events away by the dozen every batch, so a share
+     tuned to today's corpus is a bound with a date on it. Raised to five per
+     cent, the order the churn bound already uses, with the measurement in
+     the comment. **A rebuild replaces the whole drawing and not a twentieth
+     of it**, so the test still refuses what it exists to refuse — and a fire
+     that sees this red again should put it to the owner rather than nudge
+     the share a third time.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
