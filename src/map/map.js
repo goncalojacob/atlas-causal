@@ -600,6 +600,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       .filter((e) => kept(e.from) && kept(e.to));
     const consequenceEdges = (s.selected ? (atlas.adjacency.out.get(s.selected) ?? []) : [])
       .filter((e) => kept(e.from) && kept(e.to));
+    const chosenEdge = s.edge ? (atlas.edges.get(s.edge) ?? null) : null;
     // A selected event is on the path it is the head of, which is what makes
     // its mark madder rather than merely ringed.
     const pathIds = new Set([...working.path, ...working.selected]);
@@ -647,9 +648,22 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // Everything the reader is holding keeps a mark of its own; the wider
       // set is what is drawn at all, in the window or out of it.
       alone: heldSet(working),
-      kept: heldSet(working, { reachable: true }),
+      // **The lens's own events too** (M83, B4). `kept` is what the map draws
+      // whatever the window says, and without `lens: true` it held the
+      // selection, the walk, the consequences, the actor's and the narrative's
+      // events — never the lens's own children. So a reader who opened the
+      // Thirty Years' War while the atlas was on its busiest century got one
+      // faded mark for the war and none of its parts, and the promise M65/M79
+      // make — that opening an umbrella narrows all three views to it and its
+      // children — was kept on the graph alone. They are drawn where they fall,
+      // faded outside the band exactly as the selected event already is.
+      kept: heldSet(working, { lens: true, reachable: true }),
       chainEdges: walked,
       consequenceEdges,
+      // The one link the reader has open, drawn as a line of its own (M83, B7).
+      // Both its ends are kept in the picture by `keptRegardless` (lens.js), so
+      // a link arrived at by address has two marks to run between.
+      chosenEdge: chosenEdge && kept(chosenEdge.from) && kept(chosenEdge.to) ? chosenEdge : null,
       eventById: atlas.events,
       k: transform.k,
       view: box,

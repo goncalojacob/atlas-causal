@@ -1030,6 +1030,11 @@ body:not(.phone) .layout.panel-empty.composing {
 .map .spread-leg { stroke: var(--cobalt-soft); stroke-width: 0.8; vector-effect: non-scaling-stroke; }
 .map .edge { stroke: var(--cobalt-soft); stroke-width: 1.2; vector-effect: non-scaling-stroke; fill: none; }
 .map .edge.chain { stroke: var(--madder); stroke-width: 2; }
+/* The one link the reader has open (M83, B7): the same madder the graph draws
+   a chosen line in and the walked chain is drawn in everywhere — the accent
+   means *this is the one you are holding*, and a link being read is one of
+   those. It is drawn over the other two, so the tokens are the chain's. */
+.map .edge.chosen { stroke: var(--madder); stroke-width: 2; }
 
 /* Outside the window, but still drawn because the reader is working with it:
    the walked path, the selected event, an actor's events. Greyed, not

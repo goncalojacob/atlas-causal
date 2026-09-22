@@ -345,3 +345,104 @@ test('B9: with a lens on, every mark of the lens is inside the pane', { skip }, 
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });
+
+// --- B4, B7, B8 ------------------------------------------------------------
+
+test('B4: an umbrella opened outside the window shows its children on all three views', { skip }, async () => {
+  // A window nowhere near the war, so nothing of it overlaps the band: what
+  // keeps its parts in the picture can only be the lens.
+  const AWAY = '?from=1500&to=1520&selected=world-war-ii';
+  const PARTS = `
+    const ids = [...document.querySelectorAll('.panel .card-section')];
+    return true;`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(AWAY), ready);
+    await waitFor(page, 'return document.querySelectorAll("svg.map .mark[data-id]").length > 1;',
+      'more than the war itself on the map');
+    const onMap = await page.eval(`return [...document.querySelectorAll('svg.map .mark[data-id]')]
+      .map((el) => el.getAttribute('data-id'));`);
+    assert.ok(onMap.length > 1, `the map draws the war's parts, not only the war: ${onMap.length}`);
+
+    await page.eval('document.querySelector(\'[data-view="timeline"]\').click(); return true;');
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 1;',
+      'more than one bar on the timeline');
+    const onTimeline = await page.eval(`return [...document.querySelectorAll('#timeline rect.bar[data-id]')]
+      .map((el) => el.getAttribute('data-id'));`);
+    assert.ok(onTimeline.length > 1, `the timeline draws bars for the parts: ${onTimeline.length}`);
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+test('B7: a link arrived at by address is drawn on the map, with both its ends', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // A link between two parts of the war, which at rest is in no picture: the
+    // resting set is the main events and both ends are inside an umbrella.
+    await open(page, url('?view=graph'), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+    const edge = await page.eval(`
+      const el = document.querySelector('svg.graph line.edge[data-edge]');
+      return el ? el.getAttribute('data-edge') : null;`);
+    assert.ok(edge, 'the graph drew a line standing for one link');
+
+    await open(page, url(`?edge=${encodeURIComponent(edge)}`), ready);
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .edge-card-head"));', 'the link\'s card');
+    await waitFor(page, 'return Boolean(document.querySelector("svg.map line.edge.chosen"));',
+      'the chosen link drawn on the map');
+    const ends = edge.split('--');
+    for (const id of [ends[0], ends[1]]) {
+      await waitFor(
+        page,
+        `return Boolean(document.querySelector('svg.map .mark[data-id=${JSON.stringify(id)}]'));`,
+        `${id}, an end of the link the card names, on the map`,
+      );
+    }
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});
+
+test('B8: a click on the graph\'s empty ground puts the selection down', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(WAR), ready);
+    await waitFor(page, NODES, 'the graph to draw its nodes');
+
+    // A point of the picture with no mark and no line anywhere near it: the
+    // corner furthest from anything the page drew.
+    const empty = await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      const pane = svg.getBoundingClientRect();
+      const things = [...svg.querySelectorAll('.layer-nodes circle, line.edge')]
+        .map((el) => el.getBoundingClientRect());
+      const far = (x, y) => Math.min(...things.map((b) =>
+        Math.hypot(x - (b.left + b.width / 2), y - (b.top + b.height / 2))));
+      let best = null;
+      for (let gx = 1; gx < 20; gx += 1) {
+        for (let gy = 1; gy < 20; gy += 1) {
+          const x = pane.left + (pane.width * gx) / 20;
+          const y = pane.top + (pane.height * gy) / 20;
+          const d = far(x, y);
+          if (!best || d > best.d) best = { x, y, d };
+        }
+      }
+      return best;`);
+    assert.ok(empty && empty.d > 30, 'the picture has ground with nothing on it');
+
+    await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      for (const type of ['pointerdown', 'pointerup', 'click']) {
+        svg.dispatchEvent(new MouseEvent(type, {
+          bubbles: true, cancelable: true, clientX: ${Math.round(empty.x)}, clientY: ${Math.round(empty.y)},
+        }));
+      }
+      return true;`);
+    await waitFor(page, "return new URLSearchParams(location.search).get('selected') === null;",
+      'the selection to be put down');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

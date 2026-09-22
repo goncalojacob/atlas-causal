@@ -516,6 +516,18 @@ export function keptRegardless(atlas, state) {
     ids.add(edge.from);
     ids.add(edge.to);
   }
+  // **And both ends of the link the reader has open** (M83, B7). `?edge=` is an
+  // address like any other, and arriving on one whose two events are parts of
+  // an umbrella opened a card about two events no view drew: at rest the
+  // picture is the main events, nothing kept the ends, and the graph's camera
+  // looked for two nodes it could not find and stayed where it was. A link is
+  // not a lens and narrows nothing (M80); what it does is keep its own two ends
+  // in the picture, exactly as the selected event keeps its consequences.
+  const chosen = state?.edge ? atlas.edges?.get(state.edge) : null;
+  if (chosen && chosen.status === 'active') {
+    ids.add(chosen.from);
+    ids.add(chosen.to);
+  }
   // And, since M65, what the open horizon says the selected event led to.
   // "Where the open event leads directly" was enough while a selection was an
   // emphasis over the whole atlas; now that it is a filter of one hop, an

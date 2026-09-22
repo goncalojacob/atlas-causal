@@ -604,7 +604,13 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // click, while `panel/horizon.js` said it was lit on all three views
     // (health review of 6 September, R11) — invisible on a 135-year corpus,
     // and wrong at 1415→.
-    const held = heldSet(working, { reachable: true });
+    // **And `{ lens: true }`, since M83 (B4).** Without it the lens's own
+    // children were held by nothing: a reader who opened the Thirty Years' War
+    // while the atlas was on its busiest century got one faded bar for the war
+    // and a row of two-pixel ticks for its parts. The promise M65/M79 make is
+    // that opening an umbrella narrows all three views to it and its children,
+    // and the graph was the only one keeping it.
+    const held = heldSet(working, { lens: true, reachable: true });
     const shown = eventsInView(inLens, s.bbox, atlas.places, { keep: held, regions: atlas.regionBoxes });
     // The margin's two halves. What the reader is holding is a bar wherever
     // it falls, as it is exempt from the box: a walk whose next step was a

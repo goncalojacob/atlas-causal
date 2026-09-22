@@ -681,7 +681,20 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // the events are what the picture is of — and the lines underneath them
       // when no node is near enough to have been meant.
       const line = nearestLine(e);
-      if (line) chooseEdge(line.members[0].id);
+      if (line) {
+        chooseEdge(line.members[0].id);
+        return;
+      }
+      // **And the empty ground puts the selection down** (M83, B8). A click on
+      // the sea, and a click on the empty ground of the timeline, have cleared
+      // the selection and the chain since M65, which is how the lens of one is
+      // put down and the resting picture comes back. On the graph the same
+      // click did nothing at all — and this is the view where opening an
+      // umbrella narrows the picture most (M81 stretches the axis to the lens),
+      // and was the one view with no gesture back. The owner's own question 1:
+      // *"is the way back obvious?"*
+      const s = state.get();
+      if (s.selected || s.chain.length) state.set({ selected: null, chain: [] });
       return;
     }
     if (best.count === 1) {
