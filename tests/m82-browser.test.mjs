@@ -114,3 +114,60 @@ test('A1: the graph\'s key is one button on a phone and the whole key on a deskt
     assert.equal(opened.body, true, 'pressing it opens the key');
   }, { device: PHONE });
 });
+
+// 5 — A6. The timeline's headings collide and its axis is drawn twice.
+//
+// Two properties, read off the boxes the browser actually laid out: **no two
+// of the four kinds of heading above the lanes touch**, and **no year is
+// written twice** — the band's two years and the axis's ticks are one axis
+// now, not two rows of the same numbers.
+test('A6: nothing above the timeline\'s lanes is drawn over anything else', { skip }, async () => {
+  const HEADINGS = `
+    const svg = document.querySelector('#timeline svg.timeline');
+    const box = (el, kind) => {
+      const b = el.getBoundingClientRect();
+      return { kind, text: el.textContent, x0: b.left, x1: b.right, y0: b.top, y1: b.bottom };
+    };
+    return [
+      ...[...svg.querySelectorAll('.layer-tickLabels text')].map((el) => box(el, 'tick')),
+      ...[...svg.querySelectorAll('.layer-handleLabels text.window-year')].map((el) => box(el, 'band year')),
+      ...[...svg.querySelectorAll('.layer-handleLabels text.window-marker')].map((el) => box(el, 'borders')),
+      ...[...svg.querySelectorAll('.layer-bandLabels text.large-band-label')].map((el) => box(el, 'umbrella')),
+    ];`;
+
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // A window with more than one umbrella in it, which is the case the
+    // reviewer photographed: "World War I" and "The Estado Novo" on one row.
+    await open(page, url('?view=timeline&from=1900&to=1999'), ready);
+    await waitFor(page, BARS, 'the timeline to draw its bars');
+    await waitFor(page, "return document.querySelectorAll('#timeline .layer-tickLabels text').length > 0;",
+      'the axis to be drawn');
+
+    const headings = await page.eval(HEADINGS);
+    assert.ok(headings.length > 2, 'there are headings above the lanes to compare');
+
+    const overlaps = (a, b) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
+    const touching = [];
+    for (let i = 0; i < headings.length; i += 1) {
+      for (let j = i + 1; j < headings.length; j += 1) {
+        if (overlaps(headings[i], headings[j])) {
+          touching.push(`${headings[i].kind} "${headings[i].text}" over ${headings[j].kind} "${headings[j].text}"`);
+        }
+      }
+    }
+    assert.deepEqual(touching, [], touching.join('; '));
+
+    // And no name above the lanes is cut: whole or not written, as M77 has it
+    // for a bar's title.
+    for (const heading of headings) {
+      assert.doesNotMatch(heading.text, /…/, `${heading.kind} "${heading.text}" is cut`);
+    }
+
+    // One axis: no year is written twice above the lanes.
+    const years = headings.filter((h) => h.kind === 'tick' || h.kind === 'band year').map((h) => h.text);
+    assert.deepEqual([...new Set(years)].length, years.length, `a year is written twice: ${years.join(' ')}`);
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

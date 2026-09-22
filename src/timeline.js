@@ -88,12 +88,45 @@ const LABEL_WIDTH = 120;
 const RIGHT_GUTTER = 96;
 const RIGHT_GUTTER_SHARE = 0.07;
 const rightGutter = (paneWidth) => Math.min(RIGHT_GUTTER, Math.round(paneWidth * RIGHT_GUTTER_SHARE));
-// Room above the lanes for three lines that must not sit on top of one
-// another: what the map's borders are dated to, then the two years the
-// window's handles are at, then the axis's own ticks. They used to share one
-// line, and a window as wide as the data drew "1911" over "1911 of 1911".
+// Room above the lanes for the lines that must not sit on top of one another,
+// each on a row of its own and the rows spelled out (M82, A6).
+//
+// There were three and they were four: what the map's borders are dated to,
+// the two years the window's handles are at, the names of the umbrella events
+// the window holds, and the axis's own ticks. Three rows were declared and the
+// umbrella names were squeezed in ten pixels under the band's years, which at
+// this type size is two lines of text in the room for one — the reviewer's
+// *"the umbrella names overprint each other"* and *"a second row of years runs
+// under the first"* are the same fault seen twice.
+//
+// So the rows are named, they are a line apart, and the axis is as tall as the
+// rows it holds. `LABEL_LINE` is not a type size — the axis is set at the one
+// size `.timeline .tick-label` and `.large-band-label` give it in style.css,
+// and this file adds none — it is the room that size needs, the same reckoning
+// `graph-view/labels.js` makes about a line of its own labels.
+const LABEL_LINE = 14;
+// The borders line, top right: a note about the whole drawing.
+const MARKER_Y = 12;
+// Where the window band begins, which is under the borders line and over
+// everything else. The band's two years stand just above it.
 const MARKER_HEIGHT = 32;
-const AXIS_HEIGHT = MARKER_HEIGHT + 26;
+const BAND_YEAR_Y = MARKER_HEIGHT - 6;
+// The umbrella names, on as many rows as it takes for two of them not to
+// overlap — and never more than this many, because the rows are room taken
+// from the lanes. A name that fits on none of them is not drawn, which is
+// M77's rule for a bar's title said about a band's name.
+const UMBRELLA_Y = BAND_YEAR_Y + LABEL_LINE;
+const UMBRELLA_ROWS = 2;
+// And the axis's own ticks, last, against the lanes they measure.
+const TICK_LABEL_Y = UMBRELLA_Y + UMBRELLA_ROWS * LABEL_LINE;
+const AXIS_HEIGHT = TICK_LABEL_Y + 10;
+// How near a tick label may come to one of the band's two years before the two
+// read as one number twice (A6). Room and not a type size: a four-digit year
+// at 11 px is about 24 px of ink, and a third of that again is the air that
+// keeps two of them apart — the same reckoning `timeline-scale.js` makes about
+// two tick labels. The band's year wins, because it is the one the reader is
+// holding.
+const YEAR_CLEAR = 34;
 // How tall a row may grow. M60 gave the timeline the whole pane; its rows were
 // still sized for the strip it used to be, so twenty of them at 22 px left a
 // band of empty ground under the bottom one — 304 px of the 795 a 900 px
@@ -644,24 +677,47 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // stays: the band is not a control, and an event a reader could no longer
     // open or reach with the keyboard would be an event the timeline had
     // hidden.
+    //
+    // **A name is written whole or it is not written** (M82, A6, and M77's own
+    // rule about a bar's title). It was cut at twenty-eight characters and laid
+    // on one line whatever else was there, so "World War I" and "The Estado
+    // Novo" were drawn over each other on the owner's own screenshot. Now each
+    // takes the first of `UMBRELLA_ROWS` rows where the whole of it has room,
+    // and a name that fits on none of them is not drawn: the event still has
+    // its bar, with its own title under the pointer, which is the same answer
+    // the graph gives for a mark it could not name (graph-view/labels.js).
     if (window) {
+      const rows = Array.from({ length: UMBRELLA_ROWS }, () => []);
       for (const { event } of largeEventsIn(near.filter((e) => overlaps(e.when, window)), atlas)) {
         const box = barBox(event, scale, { openEnd: domain[1] });
         into.bands.take('rect', {
           x: box.x, y: AXIS_HEIGHT, width: box.width, height: Math.max(0, height - AXIS_HEIGHT),
           class: 'large-band', 'aria-hidden': 'true',
         });
-        const name = labelOf(atlas, event) ?? '';
+        const name = labelOf(atlas, event);
+        if (!name) continue;
+        const x = box.x + 4;
+        const end = x + labelRoom(name);
+        const row = rows.findIndex((taken) => taken.every((other) => end <= other.x || other.end <= x));
+        if (row < 0) continue;
+        rows[row].push({ x, end });
         into.bandLabels.take('text', {
-          x: box.x + 4, y: AXIS_HEIGHT - 22, class: 'large-band-label',
-        }, { text: name.length > 28 ? `${name.slice(0, 27).trimEnd()}…` : name });
+          x, y: UMBRELLA_Y + row * LABEL_LINE, class: 'large-band-label',
+        }, { text: name });
       }
     }
 
+    // The axis, once. A tick that lands under one of the band's two years is
+    // left unlabelled: the year is already written there, in the reader's own
+    // hand, and the same number twice on two rows is what read as two axes
+    // (A6). The tick itself stays — it is the measure, and the measure has no
+    // gaps.
+    const bandYears = window ? [scale.x(window.from), scale.x(window.to)] : [];
     for (const tick of scale.ticks(Math.max(4, Math.floor((width - LABEL_WIDTH) / 90)))) {
       const x = scale.x(tick.value);
       into.ticks.take('line', { x1: x, y1: AXIS_HEIGHT - 6, x2: x, y2: height, class: 'tick' });
-      into.tickLabels.take('text', { x, y: AXIS_HEIGHT - 10, class: 'tick-label', 'text-anchor': 'middle' }, { text: tick.label });
+      if (bandYears.some((at) => Math.abs(at - x) < YEAR_CLEAR)) continue;
+      into.tickLabels.take('text', { x, y: TICK_LABEL_Y, class: 'tick-label', 'text-anchor': 'middle' }, { text: tick.label });
     }
 
     // The band under the bars, its handles over them: the shading must not
@@ -758,7 +814,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // marker row. What it is drawn like is `window-band.js`'s and is the same on
   // the strip over the map.
   const bandBox = () => ({
-    scale, extent: atlas.extent, top: MARKER_HEIGHT, height: height - MARKER_HEIGHT, labelY: MARKER_HEIGHT - 6,
+    scale, extent: atlas.extent, top: MARKER_HEIGHT, height: height - MARKER_HEIGHT, labelY: BAND_YEAR_Y,
   });
 
   // The two handles, and the one line the far end says about the borders the
@@ -773,7 +829,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       // it is a note about the whole map, not about that year, and beside
       // the handle it collided with the handle's own label.
       labels.take('text', {
-        x: width - 8, y: 12, class: 'window-marker', 'text-anchor': 'end',
+        x: width - 8, y: MARKER_Y, class: 'window-marker', 'text-anchor': 'end',
       }, {
         text: to > atlas.presenceCoverage.to
           ? `borders as of ${formatYear(fromAstronomical(shown))}, the latest the source covers`
