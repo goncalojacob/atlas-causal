@@ -18762,6 +18762,34 @@ which is the one test a records batch always moves. Deviation **1202**.
       next import of an item of this shape writes the disambiguated name and
       the disambiguated id at once and no sixth record needs this.
 
+1081. **`git fetch --unshallow` changes the index, and a merge commit is where
+      that bill arrives.** Deviation 887 tells a fire to unshallow, and
+      `tools/lib/history.mjs` refuses a shallow clone outright — every record
+      then reads as written once and never touched. So the first rebuild after
+      an unshallow writes **real** history shards where the branch carried
+      fallback ones, and the merge commit went red on **rule 16** with seven
+      shards missing and seven stale. Nothing was wrong with the records. The
+      cause is the order: the index was built before the merge commit existed,
+      so its shards were the history of the commit before it, while the check
+      rebuilds after. **798 is not only about records versus index, it is about
+      the commit**: build the index after the commit whose history it has to
+      describe, and a merge is a commit like any other. A rebuild at the branch
+      head afterwards produced **no diff at all**, which is what says the head
+      is right and the merge commit alone was not.
+
+1082. **A browser that never opened is not the patience flake of 1069 and
+      should not be re-run as one.** The same red run failed
+      `tests/compose-browser.test.mjs:103` at `browser.mjs:236` —
+      *"headless Chromium opened a debugging port, saying: Failed to connect to
+      the bus"* — which is the browser dying before the test body ran, not an
+      assertion missing a deadline. 1069's flake is a `waitFor` budget against
+      a growing corpus and it fails *inside* a test; this one fails at the
+      launch. Both are runner conditions and both allow the one re-run, but
+      only the first is evidence about the corpus, and a fire that reads them
+      as the same thing will keep looking for records that did not cause it.
+      **The check on the branch head is green**, with both suites passing on
+      the tree the merge commit's run was red on.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

@@ -2786,3 +2786,28 @@ A12 stood in front of the batches and two of its passes had not run.*
 - **Three titles still argue with their spans** and are a person's, as the
   177 polity descriptions and the Gaza cluster's 48 rows are.
 
+### The check, and the two reds that were not this fire's records
+
+The **merge commit went red** and the branch head is **green** on the same
+work. Both failures are worth naming, because neither is about a record.
+
+**Rule 16, seven history shards missing and seven stale.** Deviation 887 has a
+fire unshallow its clone, and `tools/lib/history.mjs` refuses a shallow one
+outright — over a shallow clone every record reads as written once and never
+touched. So the first rebuild after an unshallow writes real shards where the
+branch carried fallback ones. What made it red was the *order*: the index was
+built before the merge commit existed, so its shards describe the commit
+before it. **798 is about the commit and not only about records versus
+index** — build the index after the commit whose history it has to describe,
+and a merge is a commit like any other. A rebuild at the branch head produced
+no diff, which is what says the head was already right.
+
+**`tests/compose-browser.test.mjs`, the browser never opened.** Not deviation
+1069's flake: that one is a `waitFor` budget against a growing corpus and
+fails inside a test, and this fails at the launch — *"Failed to connect to the
+bus"* at `browser.mjs:236`, before the test body ran. Both are runner
+conditions; only the first is evidence about the corpus.
+
+**Green on the head**: 1,742 pure tests and 246 browser tests, 0 failed, 0
+skipped, and `node tools/validate.mjs --index` at 0 errors and 398 warnings.
+
