@@ -3059,7 +3059,7 @@
       ]
     },
     "naivasha": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4104,7 +4104,7 @@
       ]
     },
     "sahel": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
