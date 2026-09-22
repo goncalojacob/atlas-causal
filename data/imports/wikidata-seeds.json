@@ -933,7 +933,19 @@
     "Q5783195",
     "Q39086159",
     "Q5858325",
-    "Q134734156"
+    "Q134734156",
+    "Q154720",
+    "Q130861",
+    "Q16335075",
+    "Q130847",
+    "Q183421",
+    "Q156554",
+    "Q217981",
+    "Q2305266",
+    "Q208127",
+    "Q153858",
+    "Q208529",
+    "Q219230"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4148,6 +4160,24 @@
       "category": "treaty",
       "label": "capitulation",
       "note": "Added in M42 batch 26 from the same lookup; Wikidata glosses it “form of surrender”. Carried by the Argentine surrender in the Falklands War. The category follows Q107706 armistice, already in this table as treaty: an instrument signed by both belligerents that stops the fighting is the nearest of the twelve, and a surrender is not itself organised armed force."
+    },
+    "Q830494": {
+      "kind": "event",
+      "category": "war",
+      "label": "dogfight",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q154720, the Battle of Britain, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q1261499": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval battle",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q156554, the Battle of Jutland, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q876274": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval warfare",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q208127, the Battle of Tsushima, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
     }
   },
   "reconcile": true
