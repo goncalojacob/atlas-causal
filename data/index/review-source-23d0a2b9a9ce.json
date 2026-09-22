@@ -1,0 +1,1667 @@
+{
+  "kind": "source",
+  "records": [
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "ar-2024-fiftieth-anniversary",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Solemn session for the fiftieth anniversary of 25 April",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "ar-2025-confidence-vote",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rejection of the motion of confidence tabled by the XXIV Constitutional Government",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "doi": null,
+      "id": "banco-de-portugal-2014-bes-resolution",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "burgwyn-1997-italian-foreign-policy",
+      "isbn": "9780275948771",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian Foreign Policy in the Interwar Period 1918–1940",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "caulfield-1995-easter-rebellion",
+      "isbn": "157098042X",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Easter Rebellion, Dublin 1916",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "doi": null,
+      "id": "cne-legislative-2015",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2015-10-04",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 6,
+      "doi": null,
+      "id": "cne-legislative-2019",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2019-10-06",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "doi": null,
+      "id": "cne-legislative-2022",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2022-01-30",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 9,
+      "doi": null,
+      "id": "cne-legislative-2024",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2024-03-10",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "cne-legislative-2025",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, legislative election of 2025-05-18",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 5,
+      "doi": null,
+      "id": "cne-presidential-2016",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, presidential election of 2016-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "cne-presidential-2021",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Official results, presidential election of 2021-01-24",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "cohen-2007-global-monetary-governance",
+      "isbn": "9780203962589",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Global Monetary Governance",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 82,
+      "doi": null,
+      "id": "costa-pinto-2003-contemporary-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Contemporary Portugal: Politics, Society and Culture",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 87,
+      "doi": null,
+      "id": "costa-pinto-teixeira-2019-political-institutions",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Political Institutions and Democracy in Portugal: Assessing the Impact of the Eurocrisis",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "craton-1982-testing-the-chains",
+      "isbn": "9780801412523",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Testing the Chains",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 1126,
+      "doi": "10.1177/00220027211013563",
+      "id": "cshapes-2-0",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "cshapes"
+      },
+      "review": {
+        "flags": [
+          "standing-backfilled",
+          "imported-by-cshapes"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-20",
+      "status": "active",
+      "title": "Mapping the International System, 1886-2019: The CShapes 2.0 Dataset",
+      "type": "dataset"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "cti-2017-2018-fires",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Reports on the forest fires of June and October 2017",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 4,
+      "doi": null,
+      "id": "dre-2020-state-of-emergency",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Declaration and renewals of the state of emergency, March to May 2020",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "dre-government-appointments-2015-2024",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Appointment of the XXI and XXIV Constitutional Governments",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "eakin-1998-brazil-once-and-future-country",
+      "isbn": "9780312214456",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Brazil: The Once and Future Country",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "fausto-1999-concise-history-of-brazil",
+      "isbn": "9780521565264",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Concise History of Brazil",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "ferreira-gomes-2014-1964",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": "10.1017/S0022216X00005095",
+      "id": "fifer-1970-empire-builders",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Empire Builders: A History of the Bolivian Rubber Boom and the Rise of the House of Suarez",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "fromkin-2009-peace-to-end-all-peace",
+      "isbn": "9780805088090",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "gaunt-2006-massacres-resistance-protectors",
+      "isbn": "9781593333010",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia During World War I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "gberie-2005-dirty-war-west-africa",
+      "isbn": "9780253218551",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Dirty War in West Africa: The RUF and the Destruction of Sierra Leone",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "gellately-2007-lenin-stalin-hitler",
+      "isbn": "1400040051",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Lenin, Stalin, and Hitler: The Age of Social Catastrophe",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "goldstein-1999-croatia-a-history",
+      "isbn": "9781850655251",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Croatia: A History",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "doi": null,
+      "id": "hall-2000-balkan-wars",
+      "isbn": "0415229464",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Balkan Wars, 1912–1913: Prelude to the First World War",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        }
+      ],
+      "created": "2026-09-16",
+      "degree": 8175,
+      "doi": null,
+      "id": "historical-basemaps",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "basemaps"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Historical Basemaps: historical boundaries of world countries and cultural regions",
+      "type": "dataset"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 2,
+      "doi": null,
+      "id": "holy-see-2023-world-youth-day",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "World Youth Day, Lisbon 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 16,
+      "doi": null,
+      "id": "imf-2016-portugal-ex-post-evaluation",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portugal: Ex Post Evaluation of Exceptional Access under the 2011 Extended Arrangement",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "isaacs-hardy-1988-pawns-of-war",
+      "isbn": "0939526247",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pawns of War: Cambodia and Laos",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": "10.2105/AJPH.2019.305557",
+      "id": "jester-uyeki-jernigan-2020-fifty-years-h3n2",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fifty Years of Influenza A(H3N2) Following the Pandemic of 1968",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "kaplan-1990-soldiers-of-god",
+      "isbn": "9780395521328",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Soldiers of God: With Islamic Warriors in Afghanistan and Pakistan",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "leech-2009-beyond-bogota",
+      "isbn": "9780807061480",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Beyond Bogota: Diary of a Drug War Journalist",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 68,
+      "doi": null,
+      "id": "macqueen-1997-decolonization",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 59,
+      "doi": null,
+      "id": "maxwell-1995-making-of-portuguese-democracy",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Making of Portuguese Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 60,
+      "doi": null,
+      "id": "meneses-2004-portugal-1914-1926",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portugal 1914–1926: From the First World War to Military Dictatorship",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 18,
+      "doi": null,
+      "id": "meneses-2009-salazar",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Salazar: A Political Biography",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "metcalf-metcalf-2006-concise-history-of-modern-india",
+      "isbn": "9780521863629",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Concise History of Modern India",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": "10.24193/csq.48.4",
+      "id": "miroiu-alecu-2024-mali-conflict",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mali: Conflict, Social Order and the Crime-Terror Nexus",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
+      "isbn": "0807847216",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Rise and Fall of Weimar Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "parker-1977-papel-dos-estados-unidos",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1964: O Papel dos Estados Unidos no Golpe de 31 de Março",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 3,
+      "doi": null,
+      "id": "pgr-2023-operation-influencer",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Communiqué on the searches of 7 November 2023",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 136,
+      "doi": null,
+      "id": "ramos-2009-historia-de-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "História de Portugal",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 28,
+      "doi": null,
+      "id": "reis-2013-portuguese-slump",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Portuguese Slump and Crash and the Euro Crisis. Brookings Papers on Economic Activity, Spring 2013",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "degree": 1,
+      "doi": null,
+      "id": "ren-2025-blackout",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The supply interruption of 28 April 2025",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "ricklefs-1991-history-of-modern-indonesia",
+      "isbn": "1349227005",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A History of Modern Indonesia Since c. 1300",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 98,
+      "doi": null,
+      "id": "rosas-1994-estado-novo",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 5,
+      "doi": null,
+      "id": "rosas-2012-salazar-e-o-poder",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Salazar e o Poder: A Arte de Saber Durar",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "schnabel-1972-policy-and-direction",
+      "isbn": "9780160359552",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Policy and Direction: The First Year",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "seibert-2005-comrades-clients-and-cousins",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Comrades, Clients and Cousins: Colonialism, Socialism and Democratization in São Tomé and Príncipe",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "sturm-2011-weimarer-republik",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Weimarer Republik",
+      "type": "article"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "tauber-2014-arab-movements-world-war-i",
+      "isbn": "9781135199784",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Arab Movements in World War I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 189,
+      "doi": null,
+      "id": "telo-2007-historia-contemporanea",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "trout-1969-moroccos-saharan-frontiers",
+      "isbn": "9782600044950",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m42-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Morocco's Saharan Frontiers",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-03",
+      "doi": null,
+      "id": "uefa-2016-final",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Match report, final of the 2016 European Championship",
+      "type": "primary"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 2,
+      "doi": null,
+      "id": "upton-1980-vallankumous-suomessa",
+      "isbn": "9512620227",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Vallankumous Suomessa 1917–1918, I",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-21",
+      "degree": 1,
+      "doi": null,
+      "id": "watson-1970-brief-history-of-barbados",
+      "isbn": "9781870518543",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A Brief History of Barbados",
+      "type": "chapter"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-02",
+      "degree": 74,
+      "doi": null,
+      "id": "wheeler-1978-republican-portugal",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Republican Portugal: A Political History, 1910–1926",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 835,
+      "doi": null,
+      "id": "wikidata",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikidata",
+      "type": "dataset"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 1480,
+      "doi": null,
+      "id": "wikipedia-en",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikipedia, English edition",
+      "type": "web"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-04",
+      "degree": 157,
+      "doi": null,
+      "id": "wikipedia-pt",
+      "isbn": null,
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wikipedia, Portuguese edition",
+      "type": "web"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "uefa-2016-final",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
+    }
+  ]
+}

@@ -4569,3 +4569,74 @@ genocide. `battle-of-stormberg`, `battle-of-waterberg`,
 `battle-of-misrata-2011`, `ogossagou-massacre`, `battle-of-algiers-1956-1957`
 and `battle-of-paardeberg` earned nothing further and nothing was written to
 keep them.
+
+## Batch 37 — eight edges from the joins vein
+
+*22 September, 21:07Z. The vein is the eight Wikidata properties that are
+already a causal claim rather than `P361`; `docs/m42-pool.md` under batch 37
+says why that changes the yield. Every edge below was read from the article the
+record cites, at the revision named, and every one is `probable` (rule 22).*
+
+**`suez-crisis --precondition-of--> six-day-war`.** The Six-Day War's
+§ Background at revision 1375500255 says the 1956 crisis *"ultimately result[ed]
+in the reopening of the Straits of Tiran to Israel and the deployment of the
+United Nations Emergency Force (UNEF) along the Egypt–Israel border"*, and that
+Israel held to its *"post-1956 position that another Egyptian closure of the
+Straits of Tiran to Israeli shipping would be a definite casus belli"*. In May
+1967 Nasser closed them again and *"ordered the immediate withdrawal of all UNEF
+personnel"*. `precondition-of` is the exact claim: the crisis built the
+arrangement whose undoing the article gives as the war's occasion.
+
+**`six-day-war --precondition-of--> war-of-attrition`.** The same article's
+§ Aftermath carries one sentence under the heading *War of Attrition*: *"After
+the war, Egypt initiated clashes along the Suez Canal in what became known as
+the War of Attrition."* The canal is the line the June war drew.
+
+**`angolan-war-of-independence --precondition-of--> angolan-civil-war`.** The
+war of independence's § Alvor Agreement at revision 1370428662 says the accord
+*"ended the war for independence while marking the transition to civil war"*,
+and that *"the coalition government established by the Alvor Agreement soon fell
+as nationalist factions, doubting one another's commitment to the peace process,
+tried to take control of the colony by force"*. The three movements that fought
+Portugal are the parties of the war that followed.
+
+**`war-in-somalia --precondition-of--> somali-civil-war-2009-present`.** The
+lead of *Somali Civil War (2009–present)* at revision 1374631534 says that
+*"during the insurgency that followed the 2006 Ethiopian invasion of Somalia,
+al-Shabaab rose to prominence and made major territorial gains"*, that the
+Transitional Federal Government *"was on the verge of collapse"* weeks before
+the occupation ended, and that the Ethiopian withdrawal of early 2009 and Sharif
+Ahmed's election marked *"a new phase of the civil war"*.
+
+**`second-sudanese-civil-war --caused--> comprehensive-peace-agreement`** and
+**`comprehensive-peace-agreement --precondition-of-->
+2011-south-sudanese-independence-referendum`.** The agreement's lead at revision
+1372495468 carries both in three sentences: it was *"an accord signed on 9
+January 2005, by the Sudan People's Liberation Movement (SPLM) and the
+Government of Sudan"*, it *"was meant to end the Second Sudanese Civil War"*,
+and it *"also set a timetable for a Southern Sudanese independence referendum"*.
+The vote of January 2011 is the one the accord scheduled.
+
+**`marco-polo-bridge-incident --caused--> second-sino-japanese-war`.** The
+incident's lead at revision 1370745067 says fighting *"broke out while the
+Japanese complaint was still under negotiation"* on the night of 7 July 1937,
+and that the incident *"is generally regarded as the start of the Second
+Sino-Japanese War"*. Both ends were already here and an isolated record joined
+the largest component with nothing imported.
+
+**`operation-serval --precondition-of--> operation-barkhane`.** Barkhane's
+§ Background at revision 1370630875 says that *"following the end of Operation
+Serval, France recognised the need to provide stability in the wider Sahel
+region"*, that Barkhane *"was launched in order to assure the Sahel nations'
+security"*, and that *"the operation is the successor of Operation Serval, the
+French military mission in Mali, and Operation Epervier, the mission in Chad"*.
+
+**The refusal worth the most.** Wikidata says (`P1542`) that the Battles of
+Khalkhin Gol have as their effect the Molotov–Ribbentrop pact, which would have
+joined an isolated record to the largest component for nothing. The article at
+revision 1371868221 says it the other way round — the pact *"deprived the
+[Kwantung] Army of the basis of its war policy against the USSR"* — and of the
+battle says only that its defeat, with Chinese resistance and the pact,
+*"moved the Imperial General Staff in Tokyo away from the policy of the North
+Strike Group"*. **A property is a claim and the article is the check**, which is
+amendment A13's rule applied a fire before A13's own.

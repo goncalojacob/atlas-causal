@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Somali Civil War (2009–present)\", revision 1374631534, § lead"
+    }
+  ],
+  "from": "war-in-somalia",
+  "to": "somali-civil-war-2009-present",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the 2009-onward phase of the Somali civil war says that al-Shabaab rose to prominence and made major territorial gains during the insurgency that followed the 2006 Ethiopian invasion, that the Transitional Federal Government was on the verge of collapse weeks before the occupation ended, and that the Ethiopian withdrawal of early 2009 and Sharif Ahmed's election marked a new phase of the war.",
+  "dispute": null
+}

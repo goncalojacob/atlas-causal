@@ -19961,6 +19961,67 @@ passes against that same tree (8 of 8).
       own fill weight, so a mark says both things at once instead of one of
       them.
 
+**M42 batch 37 — the joins, and the count amendment A3 asks for.** Five records
+imported, **five filed and none main**, so the main count comes out of the batch
+where it went in: **242**, with the corpus 678 → 683 and the filed count
+436 → 441. Eight edges, of which two run between records the atlas already held
+and needed no import at all. The **largest connected component 513 → 517**, the
+first four-node move of the milestone, and 131 components against 132.
+Per lane, active: Europe 314, Asia 125 → 126, **Africa 99 → 103**, the
+Americas 140; main unmoved in every one. The vein is new and it is why: the
+eight Wikidata properties that are already a causal claim, in place of `P361`.
+`docs/m42-pool.md` § "Batch 37" is the account and § "Where the run stands
+after batch 37" is what the next fire picks up.
+
+1206. **A refusal recorded as `done` is a refusal the state cannot retry.**
+      `Q49077`, the Six-Day War, had been walked by an earlier Wikidata import
+      and refused — at the time this atlas had no `middle-east` place record
+      for the item's `P276` and no lane reachable from it. `advance()` in
+      `tools/import/wikidata.mjs` writes **every** item of a batch into the
+      run's `done` list, whether it was created or refused, so the item could
+      not be offered again without editing `data/imports/wikidata-state.json`
+      by hand, which is what M42 batch 37 did. Deviation 1086 named this shape
+      for a class decision; this is the place half of it, and the general form
+      is that **the state records that an item was walked and not what
+      happened to it**. A refusal is a verdict about the atlas on the day it
+      was taken, and the atlas changes.
+
+1207. **A country is not a location, and the import's lane falls back to the
+      country.** Operation Barkhane is a French operation fought across Mali,
+      Burkina Faso, Chad, Mauritania and Niger: its `P276` is the Sahel and
+      its `P17` is France. With no place record for the Sahel yet, the import
+      walked `P276, P131, P17` looking for a point and the first one it could
+      reach was France's, so it wrote **`region: europe`** on an operation in
+      the Sahel. The order is right for a *place* and wrong for a *lane*: an
+      operation's country is **who sent it**, not where it happened. The fix
+      here was to write the place record A9's own rule asks for; the general
+      fix is that a lane derived from `P17` alone should say so or refuse.
+
+1208. **The vein decides the yield, not the reading.** Batches 32 to 36 of M42
+      read articles carefully and moved the largest connected component by two
+      across five batches. Batch 37 read no harder and moved it by four from
+      five records, because it asked Wikidata for the eight properties that
+      are *already* a causal claim — `P828`, `P1542`, `P1478`, `P1536`,
+      `P155`, `P156`, `P1479`, `P1534` — instead of for `P361`, the parts of
+      things. A part hangs from a parent and a parent takes no edge, so **the
+      parts vein files and the joins vein connects**. A run that wants chains
+      should know which question it is asking before it spends the reading.
+
+1209. **Deviation 798's order is "records, *then* rebuild", and the rebuild has
+      to come after the commit and not merely after the edit.**
+      `tools/lib/history.mjs` reads each record's versions out of the
+      repository's own commits, so `data/index/history-<kind>-<key>-<hash>.json`
+      depends on the **commit graph** and not only on the working tree. An index
+      built while the new records are still untracked carries history shards the
+      checked-out tree does not produce, and rule 16 in CI is what says so —
+      locally `--index` passes, because the same stale graph builds the same
+      stale shards. It took M42's check red twice in one fire: once on the `m0`
+      merge, whose index was rebuilt before the merge commit existed, and once
+      on batch 37, whose index was rebuilt before the records were committed.
+      **The order that converges is: commit the records, rebuild, commit the
+      index** — and it converges in one step, because the index commit touches
+      no record file and so changes no history.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -20266,11 +20327,7 @@ M42 started 2026-09-22T16:06:45Z by scheduled
 M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
 M82 done
 M42 started 2026-09-22T18:13:05Z by scheduled
-M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
-M82 done
-M42 started 2026-09-22T16:06:45Z by scheduled
 M42b started 2026-09-22T16:12:56Z by scheduled
-M42 started 2026-09-22T18:13:05Z by scheduled
 M42b started 2026-09-22T18:14:03Z by scheduled
 M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
 M83 done
@@ -20278,3 +20335,4 @@ M42b started 2026-09-22T20:17:13Z by scheduled
 M42b started 2026-09-22T22:46:14Z by scheduled
 M84 started 2026-09-22T20:15:57Z by scheduled (branch m84)
 M84 done
+M42 started 2026-09-22T21:07:15Z by scheduled

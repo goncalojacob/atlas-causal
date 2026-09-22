@@ -1013,7 +1013,11 @@
     "Q4065",
     "Q43453",
     "Q165271",
-    "Q2833"
+    "Q2833",
+    "Q1780216",
+    "Q1052332",
+    "Q1424647",
+    "Q17354007"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -3573,7 +3577,8 @@
     "Q8465": {
       "kind": "event",
       "label": "civil war",
-      "note": "Added in M40a from the import report, where 9 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M40a from the import report, where 9 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with. Given the category `war` in M42 batch 37, where the first record of the class arrived without one: A civil war is organised armed force, and the category's own description names a war, a campaign and a battle without asking who the parties are; the class was added in M40a with no category.",
+      "category": "war"
     },
     "Q10931": {
       "kind": "event",
@@ -3734,7 +3739,8 @@
     "Q625298": {
       "kind": "event",
       "label": "peace treaty",
-      "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. The label is what the candidate list called those items. Given the category `treaty` in M42 batch 37: data/categories.json describes that category as \"an agreement between polities: a treaty, a pact, an accession, a concordat\", which is a peace treaty exactly.",
+      "category": "treaty"
     },
     "Q806824": {
       "kind": "event",
@@ -3772,7 +3778,8 @@
     "Q1006311": {
       "kind": "event",
       "label": "war of national liberation",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. The label is what the candidate list called those items. Given the category `war` in M42 batch 37, where the first record of the class arrived without one: a war of national liberation is organised armed force between polities, which is how data/categories.json describes the war category.",
+      "category": "war"
     },
     "Q1020018": {
       "kind": "event",
@@ -4350,6 +4357,12 @@
       "category": "death",
       "label": "death",
       "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “permanent cessation of vital functions”. Carried by Q431888, the killing of Muammar Gaddafi, whose other class Q914841 *frontier justice* was refused in the same batch as no kind of event — it names how a punishment was delivered, not a thing that happened. The category is `death`, which data/categories.json describes as a person's death “whether by illness, accident, execution or assassination”, so the class and the category are the same statement."
+    },
+    "Q646740": {
+      "kind": "event",
+      "category": "war",
+      "label": "landing operation",
+      "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
     },
     "Q105370834": {
       "kind": "event",
