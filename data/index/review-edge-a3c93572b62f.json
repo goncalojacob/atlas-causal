@@ -7645,6 +7645,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "from": "fall-of-kabul-2021",
+      "id": "fall-of-kabul-2021--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republican-insurgency-in-afghanistan",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "from": "february-revolution",
       "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
       "kind": "edge",
@@ -12388,6 +12416,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "operation-badr-1973",
+      "id": "operation-badr-1973--yom-kippur-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "yom-kippur-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-18",
       "from": "operation-car-wash-2014",
       "id": "operation-car-wash-2014--lula-returns-to-the-presidency-2023--precondition-of",
@@ -12522,6 +12578,34 @@
       "status": "active",
       "to": "closure-of-the-suez-canal-1956-1957",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "operation-odyssey-dawn",
+      "id": "operation-odyssey-dawn--operation-unified-protector--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-unified-protector",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -19580,6 +19664,34 @@
       "revised": null,
       "status": "active",
       "to": "south-sudanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "war-in-somalia",
+      "id": "war-in-somalia--operation-linda-nchi--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-linda-nchi",
       "type": "precondition-of"
     },
     {

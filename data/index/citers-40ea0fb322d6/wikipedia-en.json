@@ -2462,6 +2462,12 @@
     },
     {
       "dissent": false,
+      "id": "fall-of-kabul-2021--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "locator": "\"Fall of Kabul (2021)\", revision 1372101001"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
       "kind": "edge",
       "locator": "\"Murder of the Romanov family\", revision 1374973698, lead"
@@ -3554,6 +3560,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-badr-1973--yom-kippur-war--caused",
+      "kind": "edge",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810"
+    },
+    {
+      "dissent": false,
       "id": "operation-car-wash-2014--lula-returns-to-the-presidency-2023--precondition-of",
       "kind": "edge",
       "locator": "\"2022 Brazilian general election\", revision 1375252300"
@@ -3587,6 +3599,12 @@
       "id": "operation-musketeer-1956--closure-of-the-suez-canal-1956-1957--caused",
       "kind": "edge",
       "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
+    },
+    {
+      "dissent": false,
+      "id": "operation-odyssey-dawn--operation-unified-protector--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Unified Protector\", revision 1370700566"
     },
     {
       "dissent": false,
@@ -5528,6 +5546,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-somalia--operation-linda-nchi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Linda Nchi\", revision 1375942642"
+    },
+    {
+      "dissent": false,
       "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
       "kind": "edge",
       "locator": "\"Somali Civil War (2009–present)\", revision 1374631534, § lead"
@@ -6518,6 +6542,12 @@
     },
     {
       "dissent": false,
+      "id": "2022-somali-ministry-of-education-bombings",
+      "kind": "event",
+      "locator": "\"2022 Somali Ministry of Education bombings\", revision 1365703414"
+    },
+    {
+      "dissent": false,
       "id": "2023-brazilian-congress-attack",
       "kind": "event",
       "locator": "\"8 January Brasília attacks\", revision 1372449713"
@@ -6947,6 +6977,12 @@
       "id": "battle-of-ica",
       "kind": "event",
       "locator": "\"Battle of Ica\", revision 1370443527"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-inchon",
+      "kind": "event",
+      "locator": "\"Battle of Inchon\", revision 1370266029"
     },
     {
       "dissent": false,
@@ -7715,6 +7751,12 @@
       "id": "falklands-war",
       "kind": "event",
       "locator": "\"Falklands War\", revision 1375590484"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-kabul-2021",
+      "kind": "event",
+      "locator": "\"Fall of Kabul (2021)\", revision 1372101001"
     },
     {
       "dissent": false,
@@ -8624,6 +8666,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-badr-1973",
+      "kind": "event",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810"
+    },
+    {
+      "dissent": false,
       "id": "operation-barkhane",
       "kind": "event",
       "locator": "\"Operation Barkhane\", revision 1370630875"
@@ -8684,6 +8732,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-linda-nchi",
+      "kind": "event",
+      "locator": "\"Operation Linda Nchi\", revision 1375942642"
+    },
+    {
+      "dissent": false,
       "id": "operation-musketeer-1956",
       "kind": "event",
       "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
@@ -8723,6 +8777,12 @@
       "id": "operation-turquoise",
       "kind": "event",
       "locator": "\"Opération Turquoise\", revision 1357895302"
+    },
+    {
+      "dissent": false,
+      "id": "operation-unified-protector",
+      "kind": "event",
+      "locator": "\"Operation Unified Protector\", revision 1370700566"
     },
     {
       "dissent": false,

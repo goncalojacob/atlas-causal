@@ -6700,6 +6700,15 @@
         }
       ]
     },
+    "battle-of-inchon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-jutland": {
       "from": "git",
       "versions": [
@@ -14465,6 +14474,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-badr-1973": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-23"
         }
       ]

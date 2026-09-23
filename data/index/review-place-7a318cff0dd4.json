@@ -3976,6 +3976,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "incheon",
+      "kind": "place",
+      "names": [
+        "Incheon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4496,7 +4522,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "kabul",
       "kind": "place",
       "names": [
@@ -5442,7 +5468,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "libya-q1016",
       "kind": "place",
       "names": [
@@ -6276,7 +6302,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "mogadishu",
       "kind": "place",
       "names": [
@@ -9844,7 +9870,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "sinai-peninsula",
       "kind": "place",
       "names": [
@@ -9958,7 +9984,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "somalia-q1045",
       "kind": "place",
       "names": [
@@ -12067,6 +12093,12 @@
     },
     {
       "id": "guaviare-department",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "incheon",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

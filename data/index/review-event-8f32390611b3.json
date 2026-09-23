@@ -3412,6 +3412,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "2022-somali-ministry-of-education-bombings",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war-2009-present",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `somali-civil-war-2009-present` from `P361`: 29 October 2022 is inside the phase the war record opens at 2009-01-31 and leaves open. The place is `mogadishu`, the item's own `P276`, whose point its own `P625` repeats. No `P710`, so no actor line. No edge: the article relates the bombings to the 2017 ones only as \"the deadliest attack in Somalia since\" them, and the offensive it says they answered is no record here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2022 Somali Ministry of Education bombings"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6107,6 +6138,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ica"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-inchon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `korean-war` from `P361`: 15 to 19 September 1950 is inside the war's 1950-06-25 to 1953-07-27, and the war names `united-states-of-america`, which the item's `P710` names too. The place is `incheon`, written from `Q20934`, its own `P276`. No edge: what the article says the battle led to — Seoul, the Pusan breakout — this atlas does not hold, and it states no relation to the war or the armistice.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Inchon"
     },
     {
       "authors": [
@@ -11373,6 +11436,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Falklands War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "fall-of-kabul-2021",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-in-afghanistan-2001-2021",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `war-in-afghanistan-2001-2021` from `P361`: 15 August 2021 is inside the war's 2001-10-07 to 2021-08-30, and the article calls it \"the final action of the War in Afghanistan\". The item's other `P361`, `Q107461898`, is no record here. The place is `kabul`, its own `P276`, whose point its own `P625` repeats. Its one `P710` is the Taliban, which this atlas holds as no actor.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fall of Kabul (2021)"
     },
     {
       "authors": [
@@ -17485,6 +17581,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "operation-badr-1973",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "yom-kippur-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `yom-kippur-war` from `P361`: 6 to 8 October 1973 is inside the war's 1973-10-06 to 1973-10-26, and the war record names `egypt` and `israel`, which is what the operation was. The place is `sinai-peninsula`, the item's own `P276`. No `P710`, so no actor line.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Badr (1973)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "operation-barkhane",
@@ -17787,6 +17916,40 @@
       ],
       "created": "2026-09-23",
       "degree": 1,
+      "id": "operation-linda-nchi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war-2009-present",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `somali-civil-war-2009-present` from `P361`: the invasion opens on 2011-10-16, inside the phase the war record opens at 2009-01-31. The item states no `P582`, so A12 (3) writes `end: null` with `end-unstated`; the parent's end is null too, so the child is inside it at both ends rather than outside it as `Q152060` is against a war that closes. The place is `somalia-q1045`, the item's own `P276`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Linda Nchi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
       "id": "operation-musketeer-1956",
       "kind": "event",
       "origin": {
@@ -17819,7 +17982,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-odyssey-dawn",
       "kind": "event",
       "origin": {
@@ -18032,6 +18195,39 @@
       "revised": null,
       "status": "active",
       "title": "Opération Turquoise"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "operation-unified-protector",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "2011-military-intervention-in-libya",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `2011-military-intervention-in-libya` from `P361`: 23 March to 31 October 2011 is inside the intervention's own span, and it is the NATO half of it. The place is `libya-q1016`: the item names two `P276`, Libya and the Mediterranean Sea, and only the first is a place this atlas holds — and Libya is also its single `P17`. No `P710`, so no actor line.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Unified Protector"
     },
     {
       "authors": [
@@ -19330,7 +19526,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "origin": {
@@ -25375,7 +25571,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "war-in-somalia",
       "kind": "event",
       "origin": {
@@ -25997,7 +26193,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "yom-kippur-war",
       "kind": "event",
       "origin": {
@@ -26224,6 +26420,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "2022-somali-ministry-of-education-bombings",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "abushiri-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -26417,6 +26619,12 @@
     },
     {
       "id": "battle-of-ica",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-inchon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
