@@ -6002,3 +6002,23 @@ rows name their participants in prose and not in a property.
   would have to be *the parent's place*, which is a guess about where a thing
   happened and not a read of it.
 
+### The check, green on the head, and the one test batch 45 turned red
+
+**Run 1560 on `acccea5f` is green on its first and only attempt**: validate
+clean, the whole suite passing, and the index step skipped because the push is
+not a pull request. Runs 1558 and 1559 were **cancelled rather than red**, each
+superseded by the next push of this fire.
+
+Locally, the suites the way the check runs them since M63: **1,789 pure tests
+and 279 browser tests, 0 failed and 0 skipped.** No browser test flaked on this
+fire, which is the first fire in three where that is true.
+
+**One pure test went red on this batch and it was the right one to go red.**
+`tests/m53.test.mjs` holds `docs/m53-polities.md` §4.1 to the corpus, and the
+`after M42` row read *374 of 778*; the six imports take the denominator to 784
+and leave the numerator at 374, because **not one of the six items carries a
+`P710`**. The row is retaken and the paragraph under it says so. That test is
+doing exactly what it was written for: the gap between a corpus that is
+imported and one that is written widens by the size of every batch, and the
+number is in a file rather than in a batch note nobody reads.
+
