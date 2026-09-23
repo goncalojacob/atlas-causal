@@ -19973,6 +19973,32 @@ and A13's relations pass, still never run.
       any more" was written into `docs/m42-pool.md` and then taken out again
       in the same fire. A count of what is wrong has to ask where the wrong
       thing is, not whether its words appear.
+1222. **The one red test on this branch is a `?fixtures=1` test and the same
+      commit is both green and red on `m0`.** `tests/graph-browser.test.mjs`
+      → *"a parent keeps its ring at rest and at every zoom"* failed on batch
+      39's `m0` merge commit, on `parted.ring.stroke < held.ring.stroke` with
+      0.7686 against 0.5831. It draws the synthetic graph and reads no record
+      under `data/`, so no import can reach it; `e0845d53` on `m0` passed its
+      pull-request run and failed its push run; and it passes here, run alone,
+      twice. The assertion measures a stroke width after a synthetic wheel
+      event, which can be read before the zoom it is about has settled. It is
+      lane A's code and not this run's data, and this fire did not touch it.
+1223. **A test that asks whether a label lands *on* a mark is asking about the
+      corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
+      → *"a label over a line and a label over a mark ..."* took its mark case
+      from a label box strictly overlapping a `circle.node`. A name is written
+      beside the mark it names with a leader back to it (M77), so a label is
+      only ever over some *other* event's mark, and whether one is depends on
+      how the barycentre pass packed that century. Batch 39's three records
+      took the twentieth century's world view from three such labels to none,
+      with **1.59 px** between the nearest pair — which is not the question
+      going away, it is the halo being the only thing between the letters and
+      the mark. The candidate is now read to the same four pixels the
+      measurement's own clip already reaches, and every assertion under it is
+      unchanged. Zooming in was tried first and is not the answer: at k = 3
+      the picture names five things and at k = 8 two, and the nearest label
+      and mark are 7 px apart. Line 140 of the same file records the same
+      shape of breakage from an earlier M42 batch and the same kind of fix.
 
 ## M84 — the owner's feedback document
 
@@ -20993,4 +21019,5 @@ M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done
 M42 started 2026-09-23T02:06:09Z by scheduled
 M42b started 2026-09-23T03:47:07Z by scheduled
+M42 started 2026-09-23T04:11:26Z by scheduled
 M42b started 2026-09-23T05:53:13Z by scheduled

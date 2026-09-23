@@ -2036,6 +2036,12 @@
     },
     {
       "dissent": false,
+      "id": "congo-crisis--angolan-war-of-independence--enabled",
+      "kind": "edge",
+      "locator": "\"Congo Crisis\", revision 1373847824, \"International importance\""
+    },
+    {
+      "dissent": false,
       "id": "constitution-1911--1918-portuguese-presidential-election--enabled",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
@@ -3542,6 +3548,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-turquoise--1994-genocide-against-tutsi--reacted-to",
+      "kind": "edge",
+      "locator": "\"Opération Turquoise\", revision 1357895302, \"Background\" and \"Implementation\""
+    },
+    {
+      "dissent": false,
       "id": "operation-verano--battle-of-santa-clara--enabled",
       "kind": "edge",
       "locator": "\"Battle of Santa Clara\", revision 1370588555, § lead"
@@ -4409,6 +4421,12 @@
       "id": "suez-crisis--1958-lebanon-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"1958 Lebanon crisis\", revision 1370279391, § Situation in Lebanon"
+    },
+    {
+      "dissent": false,
+      "id": "suez-crisis--closure-of-the-suez-canal-1956-1957--caused",
+      "kind": "edge",
+      "locator": "\"Closure of the Suez Canal (1956–1957)\", revision 1357662864, lead"
     },
     {
       "dissent": false,
@@ -7268,6 +7286,12 @@
     },
     {
       "dissent": false,
+      "id": "closure-of-the-suez-canal-1956-1957",
+      "kind": "event",
+      "locator": "\"Closure of the Suez Canal (1956–1957)\", revision 1357662864"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "\"Colombian conflict\", revision 1376040409"
@@ -7307,6 +7331,12 @@
       "id": "comprehensive-peace-agreement",
       "kind": "event",
       "locator": "\"Comprehensive Peace Agreement\", revision 1372495468"
+    },
+    {
+      "dissent": false,
+      "id": "congo-crisis",
+      "kind": "event",
+      "locator": "\"Congo Crisis\", revision 1373847824"
     },
     {
       "dissent": false,
@@ -8531,6 +8561,12 @@
       "id": "operation-serval",
       "kind": "event",
       "locator": "\"Operation Serval\", revision 1370699409"
+    },
+    {
+      "dissent": false,
+      "id": "operation-turquoise",
+      "kind": "event",
+      "locator": "\"Opération Turquoise\", revision 1357895302"
     },
     {
       "dissent": false,

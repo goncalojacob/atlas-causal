@@ -2010,12 +2010,13 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "1994-genocide-against-tutsi",
       "kind": "event",
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "rwandan-civil-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -2027,7 +2028,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "1994 Genocide against Tutsi"
     },
@@ -4186,7 +4187,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "angolan-war-of-independence",
       "kind": "event",
       "origin": {
@@ -4568,6 +4569,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "rwandan-civil-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -4579,7 +4581,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Arusha Accords"
     },
@@ -8687,6 +8689,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "closure-of-the-suez-canal-1956-1957",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Closure of the Suez Canal (1956–1957)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -8908,6 +8939,39 @@
       "revised": null,
       "status": "active",
       "title": "Comprehensive Peace Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "congo-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Congo Crisis"
     },
     {
       "authors": [
@@ -17518,6 +17582,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "operation-turquoise",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Opération Turquoise"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -19375,9 +19469,10 @@
           "a9-place",
           "summary-from-lead"
         ],
+        "note": "A7, 23 September: the interval was 1990-10-01 to 1993-08-04, the day of the Arusha Accords, and the accords did not end the war. The article this record already cites — \"Rwandan Civil War\", revision 1371242033 — opens: \"was fought between the Rwandan Armed Forces ... and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994\". The end moves to 1994-07-18 and nothing else on the record is touched. Read at its own cited revision, so no new source was added.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Rwandan Civil War"
     },
@@ -21724,7 +21819,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 5,
       "id": "suez-crisis",
       "kind": "event",
       "origin": {

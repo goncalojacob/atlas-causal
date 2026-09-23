@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "congo-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966."
+  },
+  "wikidata": "Q1773926",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Congo Crisis",
+    "pt": "Crise do Congo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1773926"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congo Crisis\", revision 1373847824"
+    }
+  ],
+  "title": "Congo Crisis",
+  "summary": "The English Wikipedia article \"Congo Crisis\", at revision 1373847824, opens: \"The Congo Crisis (French: Crise congolaise) was a period of political upheaval and conflict between 1960 and 1965 in the Republic of the Congo (today the Democratic Republic of the Congo). The crisis began almost immediately after the Congo became independent from Belgium and ended, unofficially, with the entire country under the rule of Joseph-Désiré Mobutu. Constituting a series of civil wars, the Congo Crisis was also a proxy conflict in the Cold War, in which the Soviet Union and the United States supported opposing factions. Around 100,000 people are believed to have been killed during the crisis.\" Wikidata item Q1773926, whose own description reads \"1960–1965 war fought in the Congo\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1960,
+    "end": 1965
+  },
+  "place": "republic-of-the-congo-leopoldville",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "decolonisation-of-africa"
+}

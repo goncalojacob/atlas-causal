@@ -3828,7 +3828,8 @@
     "Q350604": {
       "kind": "event",
       "label": "civil war / rebellion",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with. Given the category `war` in M42 batch 39, where the first record of the class arrived without one: the class is civil war and rebellion, and the category's own description names a war, a campaign and a battle without asking who the parties are.",
+      "category": "war"
     },
     "Q365680": {
       "kind": "event",

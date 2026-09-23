@@ -4009,3 +4009,316 @@ correct from the cited article.
   Word order is not direction. If A13's second half is to find anything, it
   needs the sentence parsed for which of the two names is the subject of the
   causal verb, and that is a different tool.
+
+## Batch 39 — the joins that were waiting for headroom, and the interval that gave it
+
+*23 September, the fire that picked the run up at 04:11Z, after merging `m0`
+into `m42` (M42b's snapshot of 02:53Z had landed there). Today already carries
+a `## Curation 2026-09-23` section, so this is **not** the curation fire; A12
+is spent; the batches are what stands in front of the run. A10's order of need
+is unchanged and **Africa still trails hardest at 103 active against Europe's
+353**.*
+
+**The stand after batch 37 named this batch and then mis-stated its price.**
+*"Five real joins are waiting for an umbrella — the French conquest of Algeria,
+the Arab Winter, the 1970s energy crisis, Opération Turquoise and the closure
+of the Suez Canal — because A6 refuses a main event and no period this atlas
+holds spans them."* That is the right list and the wrong diagnosis. **A6 is a
+count, not a parent**: it says the main count must not rise, and a batch that
+files two standing main events under a record they were always part of has
+bought itself two main slots with no umbrella written at all. This batch does
+exactly that, and spends the two slots on two of the five.
+
+### The interval, which is A7's and fixes a real error
+
+`rwandan-civil-war` carried **1990-10-01 to 1993-08-04**, the day of the
+Arusha Accords. The accords did not end the war: they were signed in the
+middle of it, the peace collapsed with Habyarimana's aircraft on 6 April 1994,
+and the RPF took the country in July. The article the record **already cites**
+— *"Rwandan Civil War"*, **revision 1371242033**, the very revision on the
+record — opens: *"was fought between the Rwandan Armed Forces ... and the
+rebel Rwandan Patriotic Front (RPF) **from 1 October 1990 to 18 July 1994**"*.
+
+**1993-08-04 → 1994-07-18.** No source was added, because the source was
+already there and nobody had read it to the end of its first sentence. The
+note says what moved from what. This is A7's plainest case: not a judgement
+about history, a record disagreeing with the article printed on it.
+
+**Rule 4 was the thing to check before touching it**, on the finding the A7
+pass of 22 September left: the edges already on a record are evidence about
+which reading the atlas committed to. Both of this record's edges
+(`rwandan-civil-war--arusha-accords--caused`,
+`rwandan-civil-war--1994-genocide-against-tutsi--precondition-of`) run *out* of
+it and start at 1990, so widening the end moves nothing under them. The
+validator agrees: 0 errors.
+
+### The two filings the widened interval unlocks, and the headroom they buy
+
+| filed | under | why |
+| --- | --- | --- |
+| `arusha-accords` | `rwandan-civil-war` | the negotiated pause inside the war. The war's article at revision 1371242033 says the negotiations *"were successfully concluded with the signing of the Arusha Accords in August 1993"*. The same shape as batch 38's `taif-agreement` under `lebanese-civil-war`: a settlement is part of the war it settles |
+| `1994-genocide-against-tutsi` | `rwandan-civil-war` | the genocide runs from 6 April to 4 July 1994 and the war now runs to 18 July. Wikipedia's own infobox on the genocide files it the same way |
+
+Neither filing was possible on 22 September, because both fell outside a war
+that stopped in 1993. **Main 243 → 241.**
+
+### The three imported, into that headroom, each with the edge it came for
+
+| the record | sitelinks | filed under | placed at | the edge it came for |
+| --- | --- | --- | --- | --- |
+| `congo-crisis` | 46 | `decolonisation-of-africa` | `republic-of-the-congo-leopoldville` | it `--enabled-->` `angolan-war-of-independence` |
+| `operation-turquoise` | 11 | — (main) | `rwanda-q1037` | it `--reacted-to-->` `1994-genocide-against-tutsi` |
+| `closure-of-the-suez-canal-1956-1957` | 4 | — (main) | `suez-canal` | `suez-crisis --caused-->` it |
+
+**Main 241 → 243, which is where the batch found it.** A6 holds exactly, and
+it holds without a period being invented to make it hold.
+
+**`congo-crisis` is the one worth reading twice, and it is not one of the
+five.** It came out of the umbrella's own article: the lead of *"Decolonisation
+of Africa"* at revision 1372152864 names *"the Mau Mau rebellion, the Algerian
+War, the **Congo Crisis**, the Angolan War of Independence, the Zanzibar
+Revolution, and the events leading to the Nigerian Civil War"* as the major
+events of the period, and of those six the atlas held three. The Congo Crisis
+is the one of the missing three whose span (1960–1965) falls inside the
+umbrella's (mid-1950s–1976), so it arrives **filed** and costs no main slot at
+all. Its edge is the atlas's own subject: the crisis article says, under
+*"International importance"*, that *"the turmoil of the Congo Crisis
+destabilised Central Africa and **helped to ignite the Portuguese Colonial
+War**, especially the war of independence in neighbouring Angola"*, and that
+the UPA, whose men had lived as exiles in the Congo, *"launched the Baixa de
+Cassanje revolt in 1961, igniting the conflict in Angola"*. **"Helped to
+ignite" is `enabled` and not `caused`**, which is batch 38's rule about the
+weaker type, and the edge is written to `angolan-war-of-independence` and not
+to `portuguese-colonial-war-1961-1974`, because the colonial war is an
+umbrella and an umbrella is a display fact and not an argument.
+
+**`operation-turquoise` is written `reacted-to` against a Wikidata property
+that says `has cause`.** The item states P828 → Q131297, the genocide. The
+article agrees on the fact and not on the word: its *"Background"* runs from
+the assassination of 6 April *"sparking the Rwandan genocide against the
+Tutsi"* through UNAMIR's collapse to the French announcement of a safe zone on
+19 June and Resolution 929 on 22 June, and its lead disputes what the operation
+was for. An operation mounted in answer to a killing is `reacted-to` in this
+atlas's five types; the weaker of the two the sources allow is the one written.
+
+**`closure-of-the-suez-canal-1956-1957` needed no reading at all.** Its
+article's first sentence is the edge: *"The closure of the Suez Canal from
+November 1956 to April 1957 was caused by the Second Arab–Israeli war, also
+known as the Suez Crisis, in 1956."* Wikidata says the same on the item
+(P828 → Q49101).
+
+### Two places written (A9), one of them a precision the four do not fit
+
+`republic-of-the-congo-leopoldville` (**Q618399**, `country`) is the crisis's
+own `P276` — the item carries no `P625`, so A9's corrected order walks to the
+location, and the location is a former country with a point of its own at
+Léopoldville. It is **not** the held `zaire` (Q6500954) and not
+`democratic-republic-of-the-congo` (Q974): A9 reuses a place record *with that
+item*, and neither is that item.
+
+`suez-canal` (**Q899**, `region`) is the harder one. The canal is 193 km of
+ground and none of the four precisions is for a line: `point` would draw a
+waterway as a pin and `country` would draw it as Egypt. `region` is the least
+wrong of the four, and it is coarse, which is what `PRECISIONS` means by an
+area rather than a point on the ground. **A fifth precision is not this run's
+to add**, and a reviewer should be told that this record is a compromise and
+not a reading.
+
+### The class that arrived without a category, again
+
+`Q350604` *civil war / rebellion* was added in M40a from an import report, in
+a sandbox with no network, and left without a category; `congo-crisis` is the
+first record of the class to arrive here. It is given **`war`**, on batch 37's
+own argument: the category's description names a war, a campaign and a battle
+without asking who the parties are. `data/imports/wikidata-seeds.json` is
+where that lives, because which class becomes what here is data and not code.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 749 active | **752 active** |
+| **main** | 243 | **243, unchanged** — down two by filing, up two by import |
+| filed | 506 | **509** |
+| active edges | 738 | **741** |
+| largest connected component | 529 | **532** |
+| components | 180 | **180** |
+| events with no edge at all | 151 | **151** |
+| events with no place | — | unchanged; all three arrived placed |
+| places written | — | **2** (`republic-of-the-congo-leopoldville`, `suez-canal`) |
+| classes given a category | — | **1** (`Q350604`) |
+| API calls | — | 2 SPARQL, 3 Wikidata reads (7 items), 5 article reads |
+
+**Per lane (A10).** Active: Europe 353, Asia 130, **Africa 103 → 106**, the
+Americas 163. Main: Europe 87, Asia 67, **Africa 31 → 31**, the Americas 58.
+Europe and the Americas moved only because `m0` was merged in at the head of
+this fire and M42b's snapshot of 02:53Z came with it; this batch touched
+neither lane.
+
+**A5's number moved by three**, and for the reason batch 37's did: all three
+new records hang off events already inside the largest component
+(`angolan-war-of-independence`, `1994-genocide-against-tutsi`, `suez-crisis`).
+Nothing merged, because nothing in this vein reaches an island.
+
+### What the vein returned and what it refused
+
+The Africa half of the joins vein was re-asked whole — the six directional
+causal properties over the **96** active `africa`-lane events that carry a
+Wikidata id, both directions through SPARQL, **30 rows**. Four held-to-held
+pairs came back and **all four already carry an edge** in the direction the
+source states (`arusha-accords`/`rwandan-civil-war`,
+`2011-south-sudanese-independence-referendum`/`comprehensive-peace-agreement`,
+`1994-genocide-against-tutsi`/`rwandan-civil-war`, and
+`scramble-for-africa`/`world-war-i`, which is an umbrella pair and refused
+anyway). **Seventeen items the atlas does not hold**, of which two were taken
+and the rest refused for reasons batch 37 already wrote down: five are
+international-reaction or consequence articles (*the response is not the
+event*), one is an organisation, two are `exile` and `looting` as classes
+rather than events, and `Q4574284` the 1970s energy crisis still carries no
+place of any kind.
+
+**The same vein asked of the three standing African islands returned three
+rows and no join.** The Sudan cluster of seven, the six Boer War battles and
+the Liberia–Sierra Leone three were each asked the six properties: the only
+rows that came back were an international-response article, an
+already-held pair and an empty item. **The islands are not joinable by
+Wikidata's causal properties and a later fire should stop asking.** What the
+Boer island wants is one edge out of a battle, and what the Sudan island wants
+is a record chosen by a person reading the articles — batch 37 said so and it
+is still true.
+
+### Two records the umbrella's own article names and this batch could not take
+
+**`Q476855` the Mau Mau rebellion** (41 sitelinks, 1952–1960) and **`Q2444955`
+the Rhodesian Bush War** (35, 1964–1979) are both `P361 part of` the
+decolonisation of Africa on Wikidata and both are named in the umbrella's lead.
+Neither fits inside the umbrella's span — the rebellion opens two years before
+it and the bush war closes three years after it — so each would arrive **main**,
+and neither carries a causal property to anything held. A7 was asked whether
+the umbrella's own article would widen it and the answer is no: *"a series of
+political developments in Africa between the mid-1950s to 1976"*, at revision
+1372152864, is the span the record already has. **They are the two largest
+Africa-lane gaps the atlas knows about by name**, and taking them needs either
+an edge read out of their articles or two more filings to pay for them.
+
+### `nigerian-civil-war` is a tombstone whose condition is now half met
+
+The retraction of 15 September calls itself *"the retraction most worth
+undoing"* and names what blocks it: Portugal was Biafra's lifeline, the airlift
+flew out of São Tomé, *"and it cannot be written because its Portuguese end is
+not a record"*. That is still true — the atlas holds no event of Portugal's
+Biafra policy and none of the São Tomé airlift — so the tombstone stays. It is
+written down here because the same is **not** true of `syrian-civil-war`, whose
+retraction of 5 September says *"it would need the Arab Spring, or the refugee
+crisis, as a record"* and the Arab Spring **is** a record now. That tombstone's
+stated condition is met and a later fire should look at it; it is Asia's lane,
+which M42 also owns.
+
+### The check, red on the merge commit and not on this batch
+
+**`tests/graph-browser.test.mjs` → *"a parent keeps its ring at rest and at
+every zoom"* failed on the `m0` merge commit of 04:12Z**, one test in 279, on
+`assert.ok(parted.ring.stroke < held.ring.stroke)` with *0.7685724975196452
+against 0.5831308855537262*. It was read rather than assumed:
+
+- It is a **`?fixtures=1` test**. It draws the synthetic graph of
+  `tests/fixtures/data/` and touches no record under `data/`, so no import,
+  filing or interval on this branch can reach it.
+- **The same commit is green and red on `m0`**: `e0845d53`'s pull-request run
+  (1489) passed and its push run (1488) failed. That is the base branch, not
+  this one.
+- **It passes here, twice, run alone**: all eleven of that suite, 0 failures.
+
+The assertion measures a stroke width after a synthetic wheel event, which is
+the shape of a test that can be read before the zoom it is about has settled.
+It belongs to lane A's code and not to this run's data, and this fire did not
+touch it. **Deviation 1222.**
+
+**A second failure was this batch's and is fixed** (deviation 1223).
+`tests/graph-halo-browser.test.mjs` → *"a label over a line and a label over a
+mark both keep paper between the letters and it"* passes at the merge commit
+and fails at this batch's head, here and on the runner both. Its mark case took
+a label box **strictly overlapping** a `circle.node`, and a name is written
+*beside* the mark it names with a leader back to it (M77), so a label is only
+ever over some other event's mark — a coincidence of how the barycentre pass
+packed the century. Three records took the twentieth century's world view from
+three such labels to none, at **1.59 px** between the nearest pair, which is
+not the question going away but the halo being the only thing between the
+letters and the mark. The candidate is now read to the four pixels the
+measurement's own clip already reaches, and every assertion under it is
+unchanged. Zooming in was tried first and is not the answer: at k = 3 the
+picture names five things and at k = 8 two, and the nearest label and mark are
+7 px apart.
+
+**A third failure is the runner's.** `tests/map-browser.test.mjs` → *"where an
+event and a city want the same box, the event has it"* is about Lisbon at zoom
+8 and passes here, in the same tree, in the suite the runner failed it in.
+
+The pure suites — 151 files, **1,789 tests, 0
+failures, 0 skipped** — were run whole after the index rebuild and are green,
+and **the check is green on the head** (`7c254d73`, run 1499).
+
+## Where the run stands after batch 39, for the fire that picks it up
+
+*23 September, 04:11Z onward. An import fire, one batch, and `m0` merged in at
+its head — M42b's snapshot of 02:53Z landed there, which is why Europe and the
+Americas moved without this branch touching them.*
+
+| | |
+| --- | --- |
+| corpus | **752 active** |
+| **main** | **243**, unmoved through seven batches and two curation fires |
+| filed | 509 |
+| largest connected component | **532** |
+| components | **180** |
+| events with no edge at all | **151** |
+| events with no place | **48** over the merged corpus |
+| events naming no actor | **383** over the merged corpus |
+| active events opening on the import's placeholder | **21** |
+| the Africa joins vein, items not held | **15 open rows**, all refused above |
+| the `part of` vein, Africa | 139 rows open |
+| the sweep pool, world sections | 1,046 open rows |
+| per lane, active | Europe 353, **Asia 130**, **Africa 106**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. A13's own note from
+  the fire of 02:06Z stands: re-run the relations pass **over the new records
+  only**, because reading the same 687 articles again returns the same 267
+  rows. Batch 39's three are the new records on this branch; M42b's are on
+  theirs.
+- **A6 is a count and not a parent, and that is the finding of this batch.**
+  Batch 37 read *"each would arrive main, and A6 says the main count must not
+  rise"* as *"each is waiting for the umbrella that would hold it"*. It is not.
+  A batch that files two standing main events under something they were always
+  part of buys two slots, and a filing that corrects a record is cheaper and
+  more honest than a period invented to hold one. **Three of the five joins
+  batch 37 refused are still open** — the French conquest of Algeria, the Arab
+  Winter, the 1970s energy crisis — and two of them want main slots and not
+  umbrellas. The third wants a place: `Q4574284` carries no `P625`, no `P276`,
+  no `P131` and no `P17`.
+- **Where the next slots are.** The same question asked of the corpus: which
+  standing main events are part of a record the atlas already holds and are
+  dated inside it? This batch found two by widening one interval. A pass over
+  all 243 main events against every held parent, with A7 applied where the
+  article and the record disagree, is the cheapest volume of headroom in the
+  run and nobody has taken it.
+- **The two largest named Africa gaps are `Q476855` the Mau Mau rebellion and
+  `Q2444955` the Rhodesian Bush War.** Both are named in the decolonisation
+  umbrella's own lead, neither fits its span, neither carries a causal property
+  to anything held. Taking them needs an edge read out of their articles — the
+  Bush War's is the one to read, because ZANLA's bases after 1975 are
+  Mozambique's and Mozambique is Portugal's — and two main slots.
+- **`syrian-civil-war`'s tombstone states a condition that is now met.** The
+  retraction of 5 September says *"it would need the Arab Spring, or the refugee
+  crisis, as a record"*; `arab-spring` has been a record since the A6 filing
+  pass. It is 116 sitelinks, it is Asia's lane, which M42 owns, and it is the
+  largest single record the atlas has decided twice about. A fire that takes it
+  should say which of the two conditions it is answering and give it the edges
+  the retraction says it was missing.
+- **The three African islands are not joinable by Wikidata's causal
+  properties**, and this batch asked them directly rather than inferring it.
+  The Sudan seven, the Boer six and the Liberia–Sierra Leone three returned
+  three rows between them and no join. A later fire should read articles or
+  leave them; asking the properties again is spent.
+- **Africa is 106 against Europe's 353** and A10's order does not change.
