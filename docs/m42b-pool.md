@@ -2940,6 +2940,26 @@ can act on are now the Americas' 16th, 17th and 18th, at nine each.**
 
 ### Deviations
 
+**1235. A fire has no wall clock unless it reads one, and this fire judged a
+healthy check dead by counting its own polling rounds.** Run 1533 entered the
+Tests step at 12:59:14. The fire polled it, waited, polled again, and each
+round felt like time passing; by the sixth it had written "over an hour" into
+a deviation and a report, and cancelled the run by pushing that deviation. The
+clock said **13:10**. The step had been running **eight minutes** against a
+local twelve, and the replacement run — the same tree, the same suites —
+finished in nine minutes and forty seconds, green. **Nothing was wrong with
+the check.** What the fire spent: a healthy run cancelled, the protocol's one
+permitted re-run burned on a fault that did not exist, a false paragraph
+committed to a repository whose whole premise is that its records are honest,
+and a push notification telling an owner on holiday that GitHub Actions was
+stalled and worth investigating. **The rule is one line: before calling
+anything slow, stuck or late, run `date`.** Elapsed time is read, never felt,
+and a job's own `started_at` subtracted from a real clock is the only measure
+of it a fire has. The corollary is narrower and worth as much: **an
+in-progress job's log returns 404, so a fire cannot see inside a running
+check** — which means the only honest thing to say about one is how long it
+has actually been running.
+
 **1234. `git add -A data/index` is not the index, because the build writes
 pages outside it.** `tools/build-index.mjs` has written `sources.html` and
 `narratives.html` since H8, and the batch's three edges added sixteen citations
@@ -3029,16 +3049,13 @@ century.**
   for one and refused what it found. **The Peace of Cateau-Cambrésis of 1559 is
   the named door** — the article reports historians reading it as the beginning
   of Spanish hegemony in Italy — and it is not in the corpus.
-- **The check on this batch's head hung, and the next fire must read run 1534
-  and not assume.** `validate.yml` run **1533**, on `6955689c`, passed "Validate
-  records" in three seconds and then sat in the Tests step for over an hour;
-  every earlier run on this branch finishes in about ten minutes, and the same
-  suites run here in twelve — 1,791 pure and 279 browser, all passing. An
-  in-progress job's log cannot be fetched (404), so there is nothing to read
-  until it concludes. The fire pushed this note, which cancels 1533 and starts a
-  fresh run on the same tree: **that is the one re-run the protocol allows, spent
-  on a hang and not on a failure**, and a second hang is a real fault and not
-  load. Deviation **1235**.
+- **The check is green and nothing ever hung; the paragraph that stood here
+  said otherwise and was wrong.** `validate.yml` run **1534**, on `974de6d2`,
+  is **success**: the validator in two seconds and the Tests step in nine
+  minutes and forty seconds. Run **1533** before it, on `6955689c`, was doing
+  exactly the same thing and was **cancelled by this fire's own push** eight
+  minutes into that step. Deviation **1235** is the reason, and it is the
+  fire's and not the runner's.
 
 - **Deviation 1230 is still open and cost this fire two records' places again.**
   The import reaches for `P276` before `P17` and fetches only the `P17`
