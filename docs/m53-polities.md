@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 378 of 829 |
+| **after M42** | 36 of 36 | 378 of 834 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -314,7 +314,10 @@ events of which not one item carries a `P710`, takes it to **378 of 817**; M42b'
 Brazil whose items name three participants between them and not one of which this atlas holds as an
 actor, takes it to **378 of 822**; and the merge of `origin/m42`'s batch 46 — the
 seven remaining events of the Libyan civil war's eastern front, of which again
-not one item carries a `P710` — takes it to **378 of 829**: the count is of the corpus
+not one item carries a `P710` — takes it to **378 of 829**; and M42b's batch 15,
+five engagements of the Spanish conquest of the Aztec Empire of which one item
+names three participants and this atlas holds none of them, takes it to
+**378 of 834**: the count is of the corpus
 and not of a branch. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor

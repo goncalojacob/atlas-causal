@@ -1,42 +1,42 @@
 {
- "schema": 1,
- "id": "battle-of-cempoala--la-noche-triste--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"La Noche Triste\", revision 1370626402, § Cortés heads off Spanish punitive expedition"
+  "schema": 1,
+  "id": "battle-of-cempoala--la-noche-triste--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Battle of Cempoala\", revision 1370436634, § Aftermath"
-  }
- ],
- "from": "battle-of-cempoala",
- "to": "la-noche-triste",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "Beating Narváez is what let Cortés go back to Tenochtitlan with an army large enough to hold it, and it is that return the night flight ends. The La Noche Triste article's § Cortés heads off Spanish punitive expedition: \"Cortés marched to the coast, where he defeated the Cuban expedition led by Pánfilo de Narváez sent to capture him. When Cortés told the defeated soldiers about the riches of Tenochtitlan, they agreed to join him. Reinforced by Narvaez's men, Cortés headed back to Tenochtitlan.\" The Battle of Cempoala article's own § Aftermath reads the outcome the same way: \"Velázquez, instead of eliminating Cortés as he had planned, essentially replenished and reinforced the army of his nemesis.\" `precondition-of`: the reinforced army is what was in the city to be driven out of it, and neither article makes the battle the cause of the flight. Probable: Wikipedia alone, at two revisions.",
- "dispute": null
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"La Noche Triste\", revision 1370626402, § Cortés heads off Spanish punitive expedition"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cempoala\", revision 1370436634, § Aftermath"
+    }
+  ],
+  "from": "battle-of-cempoala",
+  "to": "la-noche-triste",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Beating Narváez is what let Cortés go back to Tenochtitlan with an army large enough to hold it, and it is that return the night flight ends. The La Noche Triste article's § Cortés heads off Spanish punitive expedition: \"Cortés marched to the coast, where he defeated the Cuban expedition led by Pánfilo de Narváez sent to capture him. When Cortés told the defeated soldiers about the riches of Tenochtitlan, they agreed to join him. Reinforced by Narvaez's men, Cortés headed back to Tenochtitlan.\" The Battle of Cempoala article's own § Aftermath reads the outcome the same way: \"Velázquez, instead of eliminating Cortés as he had planned, essentially replenished and reinforced the army of his nemesis.\" `precondition-of`: the reinforced army is what was in the city to be driven out of it, and neither article makes the battle the cause of the flight. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
 }

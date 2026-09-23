@@ -1,59 +1,59 @@
 {
- "schema": 1,
- "id": "massacre-in-the-great-temple-of-tenochtitlan",
- "kind": "event",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Wikidata import (tools/import/wikidata.mjs)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "origin": {
-  "tool": "wikidata"
- },
- "review": {
-  "status": "draft",
-  "flags": [
-   "imported-facts",
-   "summary-from-lead",
-   "a9-place"
+  "schema": 1,
+  "id": "massacre-in-the-great-temple-of-tenochtitlan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
   ],
-  "note": "Place read from the item's own P625 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The item's point, -99.131388888/19.435, is this atlas's `tenochtitlan` to eight decimals, and its P276 is the Templo Mayor, which stood in that city: the mechanical rule and the named place give the same ground."
- },
- "wikidata": "Q1131442",
- "sitelinks": {
-  "count": 12,
-  "on": "2026-09-23"
- },
- "wikipedia": {
-  "en": "Massacre in the Great Temple of Tenochtitlan",
-  "pt": "Massacre do Templo Maior"
- },
- "sources": [
-  {
-   "source": "wikidata",
-   "locator": "Q1131442"
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
-  }
- ],
- "title": "Massacre in the Great Temple of Tenochtitlan",
- "summary": "The English Wikipedia article \"Massacre in the Great Temple of Tenochtitlan\", at revision 1375661366, opens: \"The Massacre in the Great Temple, also called the Toxcatl Massacre, or the Alvarado Massacre, was an event on 22 May 1520, in the Mexica, also known as the Aztec, capital of Tenochtitlan during the Spanish conquest of the Aztec Empire, in which the celebration of the Feast of Toxcatl ended in a massacre of Mexica elites.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1131442, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
- "when": {
-  "start": 1520,
-  "end": 1520,
-  "date": "1520-05-22"
- },
- "place": "tenochtitlan",
- "region": null,
- "actors": [],
- "parent": "spanish-conquest-of-the-aztec-empire"
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P625 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The item's point, -99.131388888/19.435, is this atlas's `tenochtitlan` to eight decimals, and its P276 is the Templo Mayor, which stood in that city: the mechanical rule and the named place give the same ground."
+  },
+  "wikidata": "Q1131442",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Massacre in the Great Temple of Tenochtitlan",
+    "pt": "Massacre do Templo Maior"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1131442"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
+    }
+  ],
+  "title": "Massacre in the Great Temple of Tenochtitlan",
+  "summary": "The English Wikipedia article \"Massacre in the Great Temple of Tenochtitlan\", at revision 1375661366, opens: \"The Massacre in the Great Temple, also called the Toxcatl Massacre, or the Alvarado Massacre, was an event on 22 May 1520, in the Mexica, also known as the Aztec, capital of Tenochtitlan during the Spanish conquest of the Aztec Empire, in which the celebration of the Feast of Toxcatl ended in a massacre of Mexica elites.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1131442, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1520,
+    "end": 1520,
+    "date": "1520-05-22"
+  },
+  "place": "tenochtitlan",
+  "region": null,
+  "actors": [],
+  "parent": "spanish-conquest-of-the-aztec-empire"
 }

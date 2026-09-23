@@ -3722,94 +3722,338 @@ the first battle's `P276` and was referenced by nothing once that battle took
 its town. `place-unused` is a warning and the fire would have passed carrying it.
 **A batch's own leftovers are its own to remove.**
 
+## Batch 15 — the Spanish conquest of the Aztec Empire, and the Americas' sixteenth century
+
+*23 September, the sixteenth fire. The cell is **the Americas' sixteenth
+century**, which the fifteenth fire left as the thinnest in this partition, and
+the vein is the one batch 8 opened there.*
+
+### Before the batch
+
+The fire opened by merging `origin/m42`'s batch 46 — seven events of the Libyan
+civil war's eastern front, none of them this lane's — and re-taking
+`docs/m53-polities.md` §4.1 at **378 of 829**. The merge is also where this
+fire lost half a tool and had to put it back: see deviation 1246.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 829 active | **834 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| largest connected component | 585 | **591** |
+| components | 195 | 194 |
+| events with no edge at all | 160 | 159 |
+| the `americas` lane | 187 active, 55 main | **192 active, 55 main** |
+| the Americas' 16th century | 11 active, 5 main | **16 active, 5 main** |
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 12 / 1 | — | — | **16 / 5** | — | — | 28 / 6 |
+| 17th c. | 21 / 2 | — | — | 14 / 6 | — | — | 35 / 8 |
+| 18th c. | 24 / 3 | — | — | 11 / 2 | — | — | 35 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 103 / 45 | 86 / 30 | — | — | 503 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **367 / 89** | **139 / 31** | **136 / 67** | **192 / 55** | **—** | **—** | **834 / 242** |
+
+*Active / main, over the topology the validator builds. No active event carries
+no start year.*
+
+**South and Central America against North America**, the order the brief sets:
+152 against 19 by the latitude of each event's place, splitting at the Rio
+Grande's mouth. All five of this batch are south of that line — Tenochtitlan is
+at 19.4°N — so the order is kept and is nowhere near being spent.
+
+### How the five were found
+
+One SPARQL query, and it is the cheapest thing this run has done: every item
+whose `P361` is one of the three conquest umbrellas the atlas already holds —
+`Q828435` the Aztec conquest, `Q636771` the Inca, `Q2993582` Guatemala — that
+also has an English article. **Sixteen items came back, two of them records
+this atlas already has.** Five were taken here; the other nine are listed under
+"Where the run stands" for the fire after this one.
+
+### What was imported
+
+| record | item | date | class | lane | century |
+| --- | --- | --- | --- | --- | --- |
+| `massacre-in-the-great-temple-of-tenochtitlan` | `Q1131442` | 1520-05-22 | `Q3199915` massacre | americas | 16th |
+| `battle-of-cempoala` | `Q97610233` | 1520-05-27 | `Q178561` battle | americas | 16th |
+| `la-noche-triste` | `Q1308854` | 1520-06-30 – 1520-07-01 | `Q178561` battle | americas | 16th |
+| `battle-of-otumba` | `Q2888038` | 1520-07-07 | `Q178561` battle | americas | 16th |
+| `battle-of-colhuacatonco` | `Q112811996` | 1521-06-30 | `Q178561` battle | americas | 16th |
+
+**Five put to `--import`, five created, none refused and none ambiguous**, in
+twenty-five calls. **No class was added**: all three were already in the table.
+Every one carries the **cached English lead as its summary**, at the revision
+the cache names — *Massacre in the Great Temple of Tenochtitlan* at 1375661366,
+*Battle of Cempoala* at 1370436634, *La Noche Triste* at 1370626402, *Battle of
+Otumba* at 1370271351, *Battle of Colhuacatonco* at 1370437482 — with the
+`wikipedia-en` citation and the `summary-from-lead` flag beside it. **No record
+of this batch shows the import's placeholder alone.**
+
+**`massacre-in-the-great-temple-of-tenochtitlan` carries no category**, and that
+is a decision and not an omission. `Q3199915` *massacre* is in the class table
+with no category, and none of the twelve of `data/categories.json` is one a run
+should quietly give it: `war` is "a war, a campaign, a battle or a siege:
+organised armed force between polities", and every account this batch read says
+the Mexica at the feast were unarmed. Which category a massacre is belongs in
+`data/categories.json` or in the class table, where somebody can argue with it.
+
+### Filing (A3, A6, A8), and the main count
+
+**All five fell inside an umbrella the atlas already held, so the main count did
+not rise and nothing had to be paid for.**
+
+Four are inside `spanish-conquest-of-the-aztec-empire` (1519-02 – 1521-08-13)
+and file there. The fifth, `battle-of-colhuacatonco` of 30 June 1521, is also
+inside `fall-of-tenochtitlan` (1521-05-26 – 1521-08-13), which is itself a child
+of that war — so under deviation 1244 it names **the narrower one alone**: the
+siege reaches the war, and saying both would say nothing the tree does not
+already say. `tests/m42-filing.test.mjs` was run before the records were
+written this time, not after, and passed on the first reading.
+
+### Places (A9, as A12 corrects it)
+
+The import reuses a place record and never creates one, so all five were
+attached by hand. **Two place records were written and three events point at a
+record the atlas already had.**
+
+| event | place | item | point | precision |
+| --- | --- | --- | --- | --- |
+| `massacre-in-the-great-temple-of-tenochtitlan` | `tenochtitlan` | (existing, `Q13695`) | -99.13138889, 19.435 | point |
+| `battle-of-cempoala` | `cempoala` (written) | `Q1053364` | -96.40411111, 19.44708333 | city |
+| `la-noche-triste` | `tenochtitlan` | (existing) | | point |
+| `battle-of-otumba` | `otompan` (written) | `Q1650771` | -98.75, 19.7 | city |
+| `battle-of-colhuacatonco` | `tenochtitlan` | (existing) | | point |
+
+**Five events gained a place and none stayed placeless.** The two new records
+take their point, their names and their article from the item itself; the
+precision is the item's own reading of what it is — `Q1053364` is the Totonac
+city the Cempoala article calls "the city of Cempoala", `Q1650771` is an
+*altepetl* Wikidata describes as a human settlement — and `city` is what the
+vocabulary calls that.
+
+**Three of the five needed a reading, and all three are on the record.**
+
+- `massacre-in-the-great-temple-of-tenochtitlan` carries its own `P625`,
+  -99.131388888/19.435, which A12 (2) reads first — and it is `tenochtitlan`'s
+  own point to eight decimals. Its `P276` is the Templo Mayor, which stood in
+  that city. The mechanical rule and the named place give the same ground.
+- **`la-noche-triste`'s own `P625` is wrong and was refused.** It reads
+  -109.23457/30.66411, which is in Sonora, some 1,400 km from the Valley of
+  Mexico, in a state no account of the night places it in. A12 (2) puts the
+  item's own point first; it does not ask a run to put an event where nothing
+  says it happened. The cited article at revision 1370626402 says the Spanish
+  "were driven out of the Mexica capital, Tenochtitlan", and that city is a
+  record this atlas already holds, so the event points at it. **No coordinate
+  was invented**: the point is `tenochtitlan`'s own. This is deviation 1247.
+- `battle-of-colhuacatonco`'s own `P625`, -99.13528/19.44339, is 1.1 km from
+  `tenochtitlan` and inside the same city — its article calls Colhuacatonco the
+  neighbourhood most of the fighting happened in. A place is written once
+  however many events happen there, so the event points at the city rather than
+  at a district record nothing else in the atlas would ever use.
+
+### The actors (A12), and `docs/m53-polities.md`
+
+`P710` was read on all five items and answered once: `Q97610233` names
+`Q5589753`, `Q126236` and `Q898658` — conquistadors, the Totonac people and the
+Governorate of Cuba. **This atlas holds none of the three**, under those items
+or any others, and naming the nearest thing would be naming the wrong thing. So
+**all five carry `actors: []`**, which M67 A1 settled is not a defect. §4.1 was
+re-taken at **378 of 834**: the denominator moves by five and the numerator by
+nothing.
+
+### The edges (A5, M72)
+
+**Six, all `probable`, and every one of them quotes two articles at named
+revisions — twelve locators across six edges.**
+
+| edge | type | sources |
+| --- | --- | --- |
+| `spanish-conquest-of-the-aztec-empire` → `battle-of-cempoala` | `precondition-of` | *Battle of Cempoala* 1370436634 § Background, *Battle of Otumba* 1370271351 § Background |
+| `battle-of-cempoala` → `la-noche-triste` | `precondition-of` | *La Noche Triste* 1370626402 § Cortés heads off Spanish punitive expedition, *Battle of Cempoala* 1370436634 § Aftermath |
+| `massacre-in-the-great-temple-of-tenochtitlan` → `la-noche-triste` | `caused` | *Fall of Tenochtitlan* 1371683304 § Aztec revolt, *Massacre in the Great Temple of Tenochtitlan* 1375661366 |
+| `la-noche-triste` → `battle-of-otumba` | `precondition-of` | *Battle of Otumba* 1370271351 § Background, *Fall of Tenochtitlan* 1371683304 § Battle of Otumba |
+| `battle-of-otumba` → `fall-of-tenochtitlan` | `enabled` | *Battle of Otumba* 1370271351, *Fall of Tenochtitlan* 1371683304 § Aztecs regroup |
+| `fall-of-tenochtitlan` → `battle-of-colhuacatonco` | `caused` | *Battle of Colhuacatonco* 1370437482, *Fall of Tenochtitlan* 1371683304 |
+
+**No `consensus` was written.** The Colhuacatonco article carries a bibliography
+of works Wikipedia itself cites, which is what A2 allows — and the edge stays
+`probable` because those works are named there and were not read here, which is
+the line A2 draws and the one batches 13 and 14 drew before it.
+
+**The one edge this batch wanted and could not write is the one rule 4
+refuses.** Both the Cempoala and the Massacre articles say the massacre
+happened because Cortés had left the city to deal with Narváez: "Before he
+departed, he entrusted one of his captains, Pedro de Alvarado, with governing
+both the Spanish and Mexica. During his absence..." But what preceded the
+massacre is the **departure**, and the record this atlas holds is the
+**battle**, fought on 27 May — five days *after* the massacre of 22 May. Rule 4
+refuses an edge whose `from` starts after its `to`, and it is right to: the
+atlas does not hold the march, only its end. This is deviation 1240's shape for
+the third time, and it was met before the explanation was written rather than
+after.
+
+**One claim was read and left alone.** The Cempoala article's § Smallpox
+outbreak states that Narváez's soldiers carried smallpox into Cortés's force
+and thence to Tenochtitlan, and that "the subsequent pandemic killed millions of
+Native Americans". The atlas holds two depopulation records —
+`indigenous-depopulation-of-the-greater-antilles` and
+`indigenous-depopulation-of-coastal-brazil` — and **neither is Mexico**. An edge
+from Cempoala to either would be this run deciding that one pandemic is another,
+which is not reading an article.
+
+### Why the largest component moved, which A5 asks a batch to say
+
+**It moved by six, which is one more than the batch imported, and the sixth was
+already here.** `spanish-conquest-of-the-aztec-empire` is in the largest
+component — `spanish-colonization-of-the-americas` → it, `enabled` — and the
+first edge of this batch reaches back into it. The other five then chain
+forward: Cempoala to La Noche Triste to Otumba to `fall-of-tenochtitlan`, which
+had been **a component of one** since it was written, and on to Colhuacatonco.
+585 → **591**, components 195 → 194, no-edge events 160 → 159.
+
+**This is batch 14's lesson applied deliberately rather than noticed
+afterwards.** That batch found that a batch joins the largest component when it
+attaches to a record already in it; this one looked for that record *before*
+choosing what to import, and the umbrella the five file under turned out to be
+it. **Filing and joining are still different things** — `parent` is not
+adjacency, and it was the edge and not the filing that moved the number — but a
+batch that files under an umbrella in the largest component has its join within
+reach by construction.
+
+### The check
+
+Committed in the order 798 asks: the records, then the index rebuilt over the
+record commit, then this page, then the cached leads.
+**`node tools/validate.mjs --index` is clean: 0 errors, 499 warnings** — one
+fewer than before the batch, because two events that had been placeless are not
+any more.
+
+### Deviations
+
+**1246. Taking one side of a conflicted file keeps that side's fix and drops
+the other's.** The merge of `origin/m42` conflicted in
+`tools/import/wikidata.mjs`, where both branches had independently written
+M42's A12 (2) — a place's precision off its class. `origin/m42`'s version was
+the fuller one and was taken whole, with `git checkout --theirs`, which is the
+right call for that change and the wrong one for the file: this branch's own
+deviation 1243, the `Special:EntityData` fallback on a `maxlag` refusal, lived
+twenty-five lines below it and went with the rest. **The fire then died twice on
+a `maxlag`** before the loss was noticed — the third fault in a row to be found
+by the network rather than by reading. `--theirs` on a file is a decision about
+every change in it, not about the conflicted hunk: **a file taken wholesale has
+to be read for what the other side put in it elsewhere**, and `git log` on that
+branch's commits to it is the cheap way. The fix and its test were re-applied
+over `origin/m42`'s version and are 74339645's, unchanged.
+
+**1247. An item's own `P625` can be wrong, and A12's order is a preference and
+not an instruction to place an event where nothing says it happened.**
+`Q1308854`, *La Noche Triste*, carries -109.23457/30.66411 — Sonora, 1,400 km
+from the Valley of Mexico, in a state no account of the night mentions. A12 (2)
+corrected `placeRecord()` to read the item's own point first, and every batch
+since has; read mechanically here it would have put the Spanish flight from
+Tenochtitlan on the wrong side of Mexico. **The reading that overturns a point
+is the same one batch 14 used to overturn a `P276`**: the record's own cited
+article at a named revision, which says the Spanish "were driven out of the
+Mexica capital, Tenochtitlan" — a place record this atlas already holds, so
+nothing was invented and no coordinate was typed. **A point a run cannot square
+with the article it is citing is a refusal, and the refusal goes on the
+record**, in `review.note`, where a reviewer can disagree with it.
+
+**1242, a second time, and the pool's own paragraph says so.** This fire
+resolved the merge, **built the index, and only then committed** — all of it in
+one commit — and went to seven rule 16 errors on the history shards, exactly as
+the fifteenth fire did. The order is **resolve, commit, build, commit**, and
+`tools/lib/history.mjs` reading the repository's own commits is the whole
+reason. A second commit repaired it. The paragraph at the head of "Where the run
+stands" has said this since the fifteenth fire; reading it is apparently not the
+same as doing it, so it is repeated here with the fire that paid for it named.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after the fifteenth fire and its fourteenth batch.*
+*23 September, after the sixteenth fire and its fifteenth batch.*
 
 | | |
 | --- | --- |
-| corpus | **822 active** |
+| corpus | **834 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **578** |
-| components | 195 |
-| events with no edge at all | 160 |
+| **largest connected component** | **591** |
+| components | 194 |
+| events with no edge at all | 159 |
 | Europe before 1900 | 76 active, 18 main |
-| the `americas` lane | **187 active, 55 main** |
-| the thinnest cells left, in this partition | the Americas' 16th (9 active, 3 main), 18th (11, 2) and 15th (6, 5) |
-| the cell this batch moved | the Americas' 17th, 9 → 14 active and 6 main unchanged |
+| the `americas` lane | **192 active, 55 main** |
+| the thinnest cells left, in this partition | the Americas' 18th (11 active, 2 main), the Americas' 15th (4, 3), Europe's 16th (12, 1) |
+| the cell this batch moved | the Americas' 16th, 11 → 16 active and 5 main unchanged |
 
-**The order of a fire on this branch, which deviation 1242 settles.** Resolve
-the merge and **commit it**; only then `node tools/build-index.mjs`; then commit
-the index as its own commit. Building before the merge commit exists costs seven
-rule 16 errors on the history shards every time, and five fires running have now
-paid some version of it. The same order is 798's for a batch: records committed,
-then rebuild, then commit the index.
+**The order of a fire on this branch, which deviation 1242 settles and two
+fires running have now broken.** Resolve the merge and **commit it**; only then
+`node tools/build-index.mjs`; then commit the index as its own commit. Building
+before the merge commit exists costs seven rule 16 errors on the history shards
+every time. The same order is 798's for a batch: records committed, then
+rebuild, then commit the index.
 
-**Try the network first, and probe more than one endpoint.** On this fire
-`Special:EntityData` and the SPARQL endpoint answered 200 throughout;
-`api.php` answered `maxlag` — *"Waiting for wdqs1012: 94.1 seconds lagged"* —
-for about four minutes and then served normally. **A `maxlag` is not the
-thirteenth fire's kind of fire**: it lifts. `fetchEntities` now falls back to
-`Special:EntityData` on it as it already did on a 429 (deviation 1243), so an
-import should no longer die of one. A hand-written `curl` at `api.php` will
-still 429 — the import's own user-agent and one-second delay are what get
-through, so probe with the tool and not by hand.
+**Read `git log origin/m42 -- <file>` before taking a conflicted file whole.**
+Deviation 1246: `--theirs` on `tools/import/wikidata.mjs` cost this branch its
+own `maxlag` fallback and two dead import attempts. The fix is back; the habit
+is what the next fire needs.
 
-**The Americas' seventeenth century is no longer the thinnest cell.** It went
-9 → 14 active with its six mains untouched, and `dutch-portuguese-war` now has
-eight children. **What is left in that tree, and it is the end of the war:**
-`Q4677306` *Action of 23 March 1654* and `Q4677341` *Action of 2 May 1654*, both
-with English articles, both American, both inside the war's 1601–1661 and
-**outside** `dutch-brazil-1630-1654`, which ends 1654-01-26 — so they file under
-the war itself and cost no main event. They are the naval half of the surrender
-of Recife the fourteenth fire went looking for and did not find: **no item in
-`P361`'s list is the capitulation itself**, and `Recapture of Recife (1652-54)`
-is a red link in the Second Battle of Guararapes article, so there is nothing to
-import for it. `Q19019163` *Dutch invasions of Brazil* (1624–1654) is in the
-same list and is an **umbrella**, which would cost a main event unless the same
-batch files two or three records under it — and its span holds
-`capture-of-bahia`, `recapture-of-bahia` and all five of batch 14, so it would
-be paid for on arrival. A fire that takes it should check first that it does not
-sit between the war and Dutch Brazil in a way deviation 1244 refuses.
+**The network answered, and `maxlag` was standing.** `Special:EntityData` and
+the SPARQL endpoint served throughout; `api.php` at Wikidata answered `maxlag`
+— *"Waiting for wdqs1011: 148.7 seconds lagged"* — through the whole fire and
+never lifted, so the import ran entirely on the fallback, one call per item, and
+finished in twenty-five calls. **A hand-written `curl` at `en.wikipedia.org`'s
+`api.php` is refused outright** — *"You are making too many requests to the
+API"* — and the import's own user-agent with a two-second delay between titles
+gets through where a bare one does not. The article text this batch's edges
+quote was fetched that way.
 
-**The thinnest cell is now the Americas' sixteenth**, 9 active and 3 main. The
-Spanish conquest vein batch 8 opened is where it was last worked.
+**Nine items are left in the vein this batch opened, and the query that found
+them costs one call.** Every item whose `P361` is one of `Q828435` (the Aztec
+conquest), `Q636771` (the Inca) or `Q2993582` (Guatemala) and that has an
+English article. Sixteen came back; two are already records here; five are this
+batch. **The nine, with where each files:**
 
-**How to make the component move, which batch 14 answered.** Import *under* a
-record that is already in the largest component and write the edge backwards
-into it: `capture-of-bahia` and `dutch-brazil-1630-1654` were in it, so two of
-the five joined on arrival and the component rose 576 → 578. Batches 12 and 13
-imported trees whose articles named nothing the atlas held and the component did
-not move at all. **The rule is about where a batch attaches, not how large it
-is.**
+| item | title | date | files under | century |
+| --- | --- | --- | --- | --- |
+| `Q3636661` | Battle of Vilcaconga | 1533-11-18 | `spanish-conquest-of-the-inca-empire` | 16th |
+| `Q1612814` | Battle of Cusco | 1533-11-24 | `spanish-conquest-of-the-inca-empire` | 16th |
+| `Q3636517` | Battle of Maraycalla | 1534-05 | `spanish-conquest-of-the-inca-empire` | 16th |
+| `Q2338569` | Battle of Ollantaytambo | 1537-01 | `siege-of-cusco`, which is the narrower | 16th |
+| `Q1612597` | Battle of Chupas | 1542-09-16 | `spanish-conquest-of-the-inca-empire` | 16th |
+| `Q3119074` | Spanish conquest of the Kingdom of Q'umarkaj | 1524 | `spanish-conquest-of-guatemala` | 16th |
+| `Q1615387` | Battle of Punta Quemada | 1525 | **not** the Inca conquest — it is outside 1532–1572; `spanish-colonization-of-the-americas` holds it | 16th |
+| `Q3636591` | Battle of Puná | 1531-04 | the same: outside the Inca conquest, inside the colonization | 16th |
+| `Q7573336` | Spanish conquest of Petén | 1618–1697 | `spanish-conquest-of-guatemala` | 17th |
 
-- **The Italian Wars tree is still twelve active events in components of one and
-  two, joined to nothing.** `parent` is not adjacency, so filing will never join
-  it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the named
-  door** — the article reports historians reading it as the beginning of Spanish
-  hegemony in Italy — and it is still not in the corpus.
-- **The French Wars of Religion are free to whoever brings their children.**
-  `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
-  importable. It arrives main and nothing in the corpus falls inside it, so it
-  costs one main event unless the same batch imports two or three of its
-  engagements.
-- **The Eighty Years' War (`Q164432`, 1568–1648) still has no payment.** Batch
-  13 settled that `dutch-portuguese-war` cannot be filed under it — 1601–1661
-  against 1568–1648 is a `child-outside-parent` the corpus holds at zero in four
-  assertions — and the relation belongs in an edge, which
-  `dutch-portuguese-war`'s own article supports: it calls that war the thing
-  this one is an extension of.
-- **The Americas before 1800 are still a set of small components**, and batch 14
-  made two more of them. The join that would move the component furthest is an
-  edge from a Spanish American record of the seventeenth or eighteenth century
-  into the wars of independence of the nineteenth, and no article read in
-  batches 11 to 14 states one. **A fire that wants it should read the
-  nineteenth-century articles for what they say about the century before them.**
-- **A filing pass without the network will find nothing.** The thirteenth fire
-  ran the measurement: 43 of this partition's main events fall inside some
-  umbrella's span and lane, and every one fails the subject test or M67's rule 1.
-  Do not spend a fire on it again; the shortage is umbrellas, and umbrellas need
-  the network.
+**Seven of those nine are the Americas' sixteenth century again and none of them
+costs a main event**, because every one falls inside an umbrella already here.
+`spanish-conquest-of-the-inca-empire` is in the largest component, as the Aztec
+conquest is, so a batch of them can join it the same way this one did — and
+`battle-of-cajamarca` and `siege-of-cusco` are both **components of one** today
+and would be carried in with it, as `fall-of-tenochtitlan` was.
+
+**The two dates to check before importing `Q1615387` and `Q3636591`.** Both are
+`P361` of the Inca conquest on Wikidata and both are dated *before* its 1532
+start, so filing them there is a `child-outside-parent`. The reading this run
+would take is that the atlas's `spanish-conquest-of-the-inca-empire` follows the
+article's 1532–1572 and the two engagements belong to the voyages that preceded
+it — but that is a reading, and the umbrella that certainly holds them is
+`spanish-colonization-of-the-americas`, 1493–1898.
+
+**The other veins named by the fifteenth fire are unchanged and still open.**
+`Q4677306` and `Q4677341`, the two 1654 actions that end the Dutch–Portuguese
+War in Brazil, file under the war itself and cost no main event.
+`Q19019163` *Dutch invasions of Brazil* (1624–1654) is an umbrella whose span
+already holds seven records here, so it is paid for on arrival — a fire that
+takes it should check first that it does not sit between the war and Dutch
+Brazil in the way deviation 1244 refuses. The Italian Wars tree is still twelve
+active events joined to nothing, and the **Peace of Cateau-Cambrésis of 1559 is
+still the named door**. The French Wars of Religion (`Q673175`) are still free
+to whoever brings their children.
 
 **The two questions for the owner are unchanged and both still block a
 century.**
@@ -3824,7 +4068,6 @@ century.**
 2. **May a run take a period umbrella from an item whose class is a polity,
    where the article is plainly a period article?** Colonial Brazil (`Q2088324`)
    is the case and it is worth seven main events. `Q377350`, the **Iberian
-   Union**, is a second case of the same shape — and batch 14 met it again as a
-   `P710` participant it could not use. The class table is an editorial decision
-   and the whole point of it living in `data/`, so the run will not decide
-   either.
+   Union**, is a second case of the same shape. The class table is an editorial
+   decision and the whole point of it living in `data/`, so the run will not
+   decide either.

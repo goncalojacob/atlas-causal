@@ -1,42 +1,42 @@
 {
- "schema": 1,
- "id": "la-noche-triste--battle-of-otumba--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Battle of Otumba\", revision 1370271351, § Background"
+  "schema": 1,
+  "id": "la-noche-triste--battle-of-otumba--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Battle of Otumba"
-  }
- ],
- "from": "la-noche-triste",
- "to": "battle-of-otumba",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "Otumba was fought by the army that had just got out of the city, on the road it got out along. The Battle of Otumba article's § Background: \"Cortés then started a retreat to Tlaxcala, during which his force was harassed by Aztec skirmishers, and the Aztec leadership resolved to eliminate them as they withdrew\", and its § Battle opens \"After being beleaguered on the causeway leading out of the city, the surviving Spanish forces arrived at the plain of Otumba.\" The Fall of Tenochtitlan article says the same: \"Before reaching Tlaxcala, the scanty Spanish forces arrived at the plain of Otumba Valley (Otompan), where they were met by a vast Aztec army intent on their destruction. The Aztecs intended to cut short the Spanish retreat from Tenochtitlan and annihilate them.\" `precondition-of`: the flight is what put the two armies on that plain, and no article says the flight caused the battle to be fought. Probable: Wikipedia alone, at two revisions.",
- "dispute": null
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Otumba\", revision 1370271351, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Battle of Otumba"
+    }
+  ],
+  "from": "la-noche-triste",
+  "to": "battle-of-otumba",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Otumba was fought by the army that had just got out of the city, on the road it got out along. The Battle of Otumba article's § Background: \"Cortés then started a retreat to Tlaxcala, during which his force was harassed by Aztec skirmishers, and the Aztec leadership resolved to eliminate them as they withdrew\", and its § Battle opens \"After being beleaguered on the causeway leading out of the city, the surviving Spanish forces arrived at the plain of Otumba.\" The Fall of Tenochtitlan article says the same: \"Before reaching Tlaxcala, the scanty Spanish forces arrived at the plain of Otumba Valley (Otompan), where they were met by a vast Aztec army intent on their destruction. The Aztecs intended to cut short the Spanish retreat from Tenochtitlan and annihilate them.\" `precondition-of`: the flight is what put the two armies on that plain, and no article says the flight caused the battle to be fought. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
 }

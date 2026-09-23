@@ -1,42 +1,42 @@
 {
- "schema": 1,
- "id": "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Aztec revolt"
+  "schema": 1,
+  "id": "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
-  }
- ],
- "from": "massacre-in-the-great-temple-of-tenochtitlan",
- "to": "la-noche-triste",
- "type": "caused",
- "confidence": "probable",
- "explanation": "Both articles make the massacre the reason the city rose, and the rising is what the Spanish fled. The Fall of Tenochtitlan article, § Aztec revolt: \"The massacre had the result of resolutely turning all the Aztecs against the Spanish and completely undermining Moctezuma's authority.\" The massacre's own article closes its lead with the consequence: \"When Cortés and his men returned, the Mexica drove the Spaniards out of the city on the so-called the Sad Night (La Noche Triste), losing most of their men in battle or as prisoners who were then sacrificed.\" The La Noche Triste article states the intervening step — \"In retaliation, the Aztecs laid siege to the Spanish compound\" — which is the siege the flight broke out of. `caused` rather than `precondition-of`: the articles use causal language for it and name no other reason for the revolt. Probable: Wikipedia alone, at two revisions.",
- "dispute": null
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Aztec revolt"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
+    }
+  ],
+  "from": "massacre-in-the-great-temple-of-tenochtitlan",
+  "to": "la-noche-triste",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both articles make the massacre the reason the city rose, and the rising is what the Spanish fled. The Fall of Tenochtitlan article, § Aztec revolt: \"The massacre had the result of resolutely turning all the Aztecs against the Spanish and completely undermining Moctezuma's authority.\" The massacre's own article closes its lead with the consequence: \"When Cortés and his men returned, the Mexica drove the Spaniards out of the city on the so-called the Sad Night (La Noche Triste), losing most of their men in battle or as prisoners who were then sacrificed.\" The La Noche Triste article states the intervening step — \"In retaliation, the Aztecs laid siege to the Spanish compound\" — which is the siege the flight broke out of. `caused` rather than `precondition-of`: the articles use causal language for it and name no other reason for the revolt. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
 }
