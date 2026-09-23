@@ -2204,6 +2204,12 @@
     },
     {
       "dissent": false,
+      "id": "american-revolutionary-war",
+      "kind": "event",
+      "locator": "Q40949"
+    },
+    {
+      "dissent": false,
       "id": "amsterdam-treaty",
       "kind": "event",
       "locator": "Q193739"
@@ -5060,6 +5066,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris-1783",
+      "kind": "event",
+      "locator": "Q217450"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-paris-1898",
       "kind": "event",
       "locator": "Q847137"
@@ -5189,6 +5201,12 @@
       "id": "united-nations-operation-in-somalia-ii",
       "kind": "event",
       "locator": "Q1778229"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q127912"
     },
     {
       "dissent": false,

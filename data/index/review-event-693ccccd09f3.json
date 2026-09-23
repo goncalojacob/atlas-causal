@@ -3936,6 +3936,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
+      "id": "american-revolutionary-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "atlantic-revolutions",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Place corrected by the run that imported it. The import reused `caribbean-sea`, the only P276 location of Q40949 this atlas already held; the item lists Eastern United States (Q1189650) first, and the article this record cites opens \"The conflict was fought in North America, the Caribbean, and the Atlantic Ocean\" at revision 1376266742. The first of those is what the record now points at, as a new place record `eastern-united-states` carrying Q1189650's own P625.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "American Revolutionary War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -12170,7 +12202,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "french-revolution",
       "kind": "event",
       "origin": {
@@ -13742,6 +13774,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "inconfidencia-mineira",
       "kind": "event",
       "origin": {
@@ -23957,6 +23990,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "treaty-of-paris-1783",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Paris (1783)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -24837,6 +24901,38 @@
       "revised": null,
       "status": "active",
       "title": "United Nations Operation in Somalia II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "united-states-declaration-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Placed by the run that imported it, under A9's order: Q127912 names Independence Hall (Q390028) as its location (P276) and that building carries its own P625, which is what a place record is written from here rather than the bare coordinate on the event's own item.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "United States Declaration of Independence"
     },
     {
       "authors": [
@@ -26827,12 +26923,6 @@
     },
     {
       "id": "iberian-blackout-2025",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "inconfidencia-mineira",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

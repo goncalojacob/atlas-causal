@@ -75,7 +75,7 @@
       ]
     },
     "algeria-q262": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1270,6 +1270,15 @@
         }
       ]
     },
+    "eastern-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "egypt-q79": {
       "from": "git",
       "versions": [
@@ -1926,6 +1935,15 @@
         }
       ]
     },
+    "independence-hall": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "indonesia-q252": {
       "from": "git",
       "versions": [
@@ -2044,7 +2062,7 @@
       ]
     },
     "ituri-province-q24909562": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4236,7 +4254,7 @@
       ]
     },
     "rhodesia-q217169": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

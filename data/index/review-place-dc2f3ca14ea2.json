@@ -2699,6 +2699,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "eastern-united-states",
+      "kind": "place",
+      "names": [
+        "Eastern United States",
+        "Eastern U.S."
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "egypt-q79",
@@ -3950,6 +3978,34 @@
       "names": [
         "Iberian Peninsula",
         "Iberia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "independence-hall",
+      "kind": "place",
+      "names": [
+        "Independence Hall",
+        "Pennsylvania State House"
       ],
       "origin": {
         "tool": "assistant"
@@ -7547,7 +7603,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 11,
+      "degree": 12,
       "id": "paris",
       "kind": "place",
       "names": [

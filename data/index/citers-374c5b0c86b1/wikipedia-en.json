@@ -1580,6 +1580,24 @@
     },
     {
       "dissent": false,
+      "id": "american-revolutionary-war--french-revolution--inspired",
+      "kind": "edge",
+      "locator": "\"French Revolution\", revision 1375966584, \"Causes\""
+    },
+    {
+      "dissent": false,
+      "id": "american-revolutionary-war--inconfidencia-mineira--inspired",
+      "kind": "edge",
+      "locator": "\"Inconfidência Mineira\", revision 1366234128, lead"
+    },
+    {
+      "dissent": false,
+      "id": "american-revolutionary-war--treaty-of-paris-1783--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Paris (1783)\", revision 1376240014, lead"
+    },
+    {
+      "dissent": false,
       "id": "amsterdam-treaty--euro-adoption-1999--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Amsterdam\", revision 1352365700"
@@ -5450,6 +5468,12 @@
     },
     {
       "dissent": false,
+      "id": "united-states-declaration-of-independence--treaty-of-paris-1783--precondition-of",
+      "kind": "edge",
+      "locator": "\"United States Declaration of Independence\", revision 1375522610, lead; \"Treaty of Paris (1783)\", revision 1376240014, lead"
+    },
+    {
+      "dissent": false,
       "id": "vienna-convention-for-the-protection-of-the-ozone-layer--montreal-protocol--precondition-of",
       "kind": "edge",
       "locator": "\"Montreal Protocol\", revision 1375917408, § History"
@@ -6611,6 +6635,12 @@
       "id": "allied-invasion-of-sicily",
       "kind": "event",
       "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    },
+    {
+      "dissent": false,
+      "id": "american-revolutionary-war",
+      "kind": "event",
+      "locator": "\"American Revolutionary War\", revision 1376266742"
     },
     {
       "dissent": false,
@@ -9788,6 +9818,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris-1783",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1783)\", revision 1376240014"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-paris-1898",
       "kind": "event",
       "locator": "\"Treaty of Paris (1898)\", revision 1375676698"
@@ -9923,6 +9959,12 @@
       "id": "united-nations-operation-in-somalia-ii",
       "kind": "event",
       "locator": "\"United Nations Operation in Somalia II\", revision 1373633997"
+    },
+    {
+      "dissent": false,
+      "id": "united-states-declaration-of-independence",
+      "kind": "event",
+      "locator": "\"United States Declaration of Independence\", revision 1375522610"
     },
     {
       "dissent": false,
