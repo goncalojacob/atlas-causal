@@ -21082,6 +21082,72 @@ half a fix. Run 1552 on `724baac6` is **success**.
 `docs/m42b-pool.md` → "The thirteenth fire" carries all of it
 with the counts per lane and per century.
 
+**M42b batch 13 — the War of Jenkins' Ear, and the Americas' eighteenth
+century, 23 September.** The fourteenth fire on the branch took the vein the
+thirteenth left mapped and unclaimed: **the Americas' eighteenth century, nine
+active events and one main**, the thinnest cell in this partition. The network
+was intermittent rather than closed — `Special:EntityData` and the SPARQL
+endpoint answered 200 while `api.php` and the REST summaries answered 429 and
+then 200 on a retry — so the import's own backoff carried every call, and
+deviation 1237's probe cost one minute and told the fire which kind of fire it
+was. **Five items, five created, none refused**: **`war-of-jenkins-ear`**
+(`Q54434`, 1739–1748), **`battle-of-cartagena-de-indias`** (`Q2366970`, 1741),
+**`treaty-of-madrid-13-january-1750`** (`Q1422396`),
+**`first-treaty-of-san-ildefonso`** (`Q580765`, 1777) and
+**`war-of-the-austrian-succession`** (`Q32929`, 1740–1748). The fifth is not in
+the thirteenth fire's map: it is what `P361` on the War of Jenkins' Ear said
+when the fire read the item, and it leaves the branch a European 18th-century
+umbrella it did not have. Three were filed on arrival and two stayed main, so
+**two payments** held the count: `the-end-of-the-amazon-rubber-monopoly` →
+`the-amazon-rubber-boom` (both cite *Amazon rubber cycle* at revision
+1373636077 and the boom's own span ends in the year the event is named for) and
+`cuban-war-of-independence-1895-1898` → `spanish-colonization-of-the-americas`
+(the filing `the-cuban-sugar-boom` already has). The main count is **242**
+before and after. Active 806 → **811**, filed 564 → 569, active edges 783 →
+**787**, events with no edge 160 → 159, components 193 → 194. The Americas'
+eighteenth century is 9 → **11 active, 1 → 2 main**; Europe's is 21 → 24 active
+at 2 → 3 main; the americas lane is 180 → 182 active at **55** main and the
+europe lane 364 → 367 at 89. Every record carries the cached English lead as
+its summary at a named revision with the `summary-from-lead` flag and the
+`wikipedia-en` citation; **no record of this batch shows the import's
+placeholder**, and no class was added. Three places were written by hand from
+the item each event's `P276` names — `cartagena-de-indias` and `madrid` as
+`city`, the `royal-palace-of-la-granja-de-san-ildefonso` as `point`, the
+precision off the class as A12 (2) asks — and `war-of-jenkins-ear` stays
+placeless, because its item names six locations and no coordinate.
+
+**One filing was written and the corpus refused it, which is deviation 1239.**
+`P361` on `Q54434` and the article's infobox `part_of` both say the War of
+Jenkins' Ear is part of the War of the Austrian Succession, but it runs
+1739–1748 against the wider war's 1740–1748, so the child begins a year before
+its parent. `child-outside-parent` is a **warning** in the validator and the
+fire treated it as one to accept and explain; `tests/m62.test.mjs` and
+`tests/m67.test.mjs` hold the corpus at **zero** of them and four assertions
+failed. The filing came off, `war-of-jenkins-ear` is main, and what `P361`
+asserts is carried by the **edge** instead — which is where an argument belongs,
+because `parent` is a display fact. The same `P361` sweep over all 41 main
+events of this partition that carry a Wikidata id found two more pointing at a
+record this atlas holds, `berlin-conference` → `scramble-for-africa` and
+`cretan-revolt-of-1897-1898` → `greco-turkish-war-of-1897`, and **both are
+refused by the same dates**. **Three edges, all `probable`, each with two
+locators**: `treaty-of-madrid-13-january-1750` → `guarani-war` (`caused`, both
+articles say it from their own ends), the same treaty →
+`first-treaty-of-san-ildefonso` (`precondition-of`, "the terms … were
+re-established in the First Treaty of San Ildefonso in 1777") and
+`war-of-jenkins-ear` → `war-of-the-austrian-succession` (`enabled`). A fourth
+was drafted and **refused by rule 4** — the arrow of time: the Cartagena battle
+of 1741 cannot start after a war dated from December 1740 — and the argument
+moved one record up the tree to where the dates allow it, which is deviation
+**1240**: check the two `when.start`s before writing the explanation, not after.
+**The largest connected component did not move**, and A5 asks why: the two
+treaty edges run to `guarani-war`, which had no edge at all and is now a
+component of three, and the Jenkins vein is a second component of three — the
+two articles between them link to exactly one record this atlas holds, and that
+is an umbrella and a parent question, not an edge. `docs/m53-polities.md` §4.1
+is re-taken at **377 of 806** over the merged corpus and at **378 of 811** after
+the batch, and `docs/m42b-pool.md` → "Batch 13" carries all of it with the
+counts per lane and per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

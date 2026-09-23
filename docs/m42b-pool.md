@@ -3196,44 +3196,342 @@ asked for is a rule about the prompt's own order**: the deviations a branch
 carries have to be read before STEP 1's merge, because the merge is the first
 thing a fire on this branch does.
 
+## Batch 13 — the War of Jenkins' Ear, and the Americas' eighteenth century
+
+*23 September. The fourteenth fire on the branch, and its thirteenth batch.*
+It took what the thirteenth fire left mapped and unclaimed: **the Americas'
+eighteenth century, nine active events and one main**, the thinnest cell in
+this partition. The vein is the one the previous fire named — the Treaty of
+Madrid of 1750, the War of Jenkins' Ear and the First Treaty of San Ildefonso
+of 1777 — with one record added to it that the fire could not have planned for,
+because it is the umbrella `P361` on the War of Jenkins' Ear points at.
+
+**The network was intermittent and not closed.** The probe deviation 1237 asks
+for found `Special:EntityData` and the SPARQL endpoint answering 200 while
+`api.php` and the REST summaries answered 429, and the same REST call answered
+200 on its third attempt: the import's own backoff (429 and 503 are retryable,
+`backoffMs`) carried every call through. **Deviation 1237's rule held and cost
+one minute**: a fire that probes knows in its first minutes which kind of fire
+it is, and this one was not the thirteenth's.
+
+### Before the batch
+
+The fire merged `origin/m42` (its batch 44) into this branch first, which is
+where 806 active and a largest component of 569 come from; `docs/m53-polities.md`
+§4.1 was re-taken over the merged corpus at **377 of 806**, and 378 by the
+overlap rule.
+
+| | before | after |
+| --- | --- | --- |
+| active | 806 | **811** |
+| **main** | **242** | **242** |
+| filed | 564 | 569 |
+| active edges | 783 | **787** |
+| **largest connected component** | **569** | **569** |
+| components | 193 | 194 |
+| events with no edge | 160 | 159 |
+
+**The main count did not rise, and it was paid for twice.** Five records
+arrived; three were filed on arrival and two stayed main —
+`war-of-the-austrian-succession`, which is an umbrella, and
+`war-of-jenkins-ear`, whose filing the corpus refused (below) — so the filing
+had to find two events already here that belonged under one:
+
+- `the-end-of-the-amazon-rubber-monopoly` → `the-amazon-rubber-boom`. Both
+  records cite the same article, *Amazon rubber cycle* at revision 1373636077,
+  and the boom's own span ends in **1912**, which is the year of the event
+  named for its end: the railway "finished in 1912 arrived too late; the price
+  fell". An event named for the end of a cycle belongs under the record that is
+  the cycle, and this is the plainest filing in the partition.
+- `cuban-war-of-independence-1895-1898` → `spanish-colonization-of-the-americas`.
+  Its own summary calls it "the last of three wars Cuba fought against Spain,
+  after the Ten Years' War of 1868–78 and the Little War of 1879–80", and Cuba
+  was Spanish until 1898, which is the year the umbrella ends at
+  (`endDate` 1898-07-13). It is the same filing `the-cuban-sugar-boom` already
+  has and the same reading that put `rebellion-of-tupac-amaru-ii` and
+  `revolt-of-the-comuneros-new-granada` under that umbrella in batch 9: a
+  revolt against Spanish rule inside Spanish America, in the span.
+
+### What was imported
+
+| record | item | span | lane | century |
+| --- | --- | --- | --- | --- |
+| `war-of-jenkins-ear` | `Q54434` | 1739–1748 | americas | 18th |
+| `battle-of-cartagena-de-indias` | `Q2366970` | 1741 | americas | 18th |
+| `treaty-of-madrid-13-january-1750` | `Q1422396` | 1750 | europe | 18th |
+| `first-treaty-of-san-ildefonso` | `Q580765` | 1777 | europe | 18th |
+| `war-of-the-austrian-succession` | `Q32929` | 1740–1748 | europe | 18th |
+
+**Five items put to `tools/import/wikidata.mjs --import`, five created, none
+refused and none ambiguous**, in twenty-four calls over two runs. Every one
+carries the **cached English lead as its summary**, at the revision the cache
+names, with the `wikipedia-en` citation and the `summary-from-lead` flag:
+*War of Jenkins' Ear* at 1372109682, *Battle of Cartagena de Indias* at
+1375974450, *Treaty of Madrid (13 January 1750)* at 1367898537, *First Treaty
+of San Ildefonso* at 1372949821, *War of the Austrian Succession* at
+1375907167. **No record of this batch shows the import's placeholder alone.**
+
+**No class was added.** All five carry classes the table already holds — `Q198`
+*war*, `Q1261499` *naval battle*, `Q188055` *siege* and `Q131569` *treaty*.
+`Q580765` carries a second class, `Q4157074`, which the table does not hold;
+`classify()` ignores an unknown class where a known one agrees, so nothing was
+decided about it and nothing was added to the table for it.
+
+### The fifth record, and why the batch grew by one
+
+The vein the thirteenth fire mapped had three records in it. The fourth,
+`battle-of-cartagena-de-indias`, is the engagement the War of Jenkins' Ear is
+remembered for and it arrives filed under it, which is batch 12's pattern and
+costs no main event. **The fifth is what `P361` on the War of Jenkins' Ear
+names.** `P361` on `Q54434` is `Q32929`, and the article's own infobox says
+`part_of = [[War of the Austrian Succession]]`, so the umbrella the item points
+at was one record away — and it is a European 18th-century umbrella the branch
+will want again: that cell held twenty-one active events and two main before
+this batch, and both of those mains are umbrellas of another kind
+(`atlantic-revolutions`, `the-british-industrial-revolution`).
+
+**The lead disagrees with the infobox and the batch says so.** The War of
+Jenkins' Ear article's first paragraph reads "It is considered a *related
+conflict* of the 1740 to 1748 War of the Austrian Succession", and the wider
+war's own lead lists it under "Related conflicts" too, while `P361` and the
+infobox `part_of` say it is part of it. In the end the dates decided it and
+neither reading was used as a filing (below); the disagreement is recorded here
+so that a reviewer meets it rather than a conclusion.
+
+### The filing the corpus refused, and what carries it instead
+
+`war-of-jenkins-ear` runs **1739–1748** and `war-of-the-austrian-succession`
+runs **1740–1748**, so the child would begin a year before its parent. The fire
+filed it there, on `P361` and the infobox, wrote the batch note for it, and
+then ran the tests. Rule 24's `child-outside-parent` is a warning, but `tests/m62.test.mjs` and `tests/m67.test.mjs` hold the whole
+corpus at **zero** of them, in four assertions between them — *"no child is
+dated outside its parent"* and *"the validator reports no rule 24 error and no
+child outside its parent"*. The four failed, which is the corpus saying no.
+
+**The filing came off and `war-of-jenkins-ear` is main.** What `P361` and the
+infobox assert is carried by the **edge** instead, `war-of-jenkins-ear` →
+`war-of-the-austrian-succession` `enabled`, which is where an argument belongs:
+`parent` is a display fact, and the display cannot say a war is inside a war
+that began a year after it. The second payment above is what that cost.
+
+### Filing (A3, A6, A8), and the main count
+
+| child | umbrella | why it fits, and where the article says so |
+| --- | --- | --- |
+| `battle-of-cartagena-de-indias` | `war-of-jenkins-ear` (1739–1748) | its own lead: the battle "took place during the 1739 to 1748 War of Jenkins' Ear"; and `P361` on `Q2366970` is `Q54434` |
+| `treaty-of-madrid-13-january-1750` | `spanish-colonization-of-the-americas` (1493–1898) | its own lead: the treaty "established detailed territorial boundaries between Portuguese Brazil and the Spanish colonial territories to the south and west" |
+| `first-treaty-of-san-ildefonso` | the same | its own lead: it "fixed borders between the colonial possessions in South America held by Spain and Portugal, primarily in the Río de la Plata region" |
+| `the-end-of-the-amazon-rubber-monopoly` | `the-amazon-rubber-boom` (1879–1912) | the first payment above |
+| `cuban-war-of-independence-1895-1898` | `spanish-colonization-of-the-americas` | the second payment above |
+
+**`war-of-jenkins-ear` was not filed**, and the section above says why: the
+evidence for its umbrella is good and the dates refuse it.
+
+No record took a second parent under A8: each of the three fits one umbrella and
+the two treaties fit it for the same reason, which is one umbrella and not two.
+
+**Two of the three are filed under an umbrella in another lane**, which is the
+shape `treaty-of-paris-1783` has had since it was written: the treaties were
+signed in Spain and are drawn in the `europe` lane, and what they are part of
+is a process in the Americas. A lane is where a thing happened; an umbrella is
+what it is part of.
+
+### Places (A9, as A12 corrects it)
+
+The import reuses a place record and never creates one, so three were written
+by hand from the item each event's `P276` names, with the point and the names
+the item itself carries:
+
+| event | place written | item | point | precision |
+| --- | --- | --- | --- | --- |
+| `battle-of-cartagena-de-indias` | `cartagena-de-indias` | `Q657461` | -75.52528, 10.42361 | city |
+| `treaty-of-madrid-13-january-1750` | `madrid` | `Q2807` | -3.70333, 40.41694 | city |
+| `first-treaty-of-san-ildefonso` | `royal-palace-of-la-granja-de-san-ildefonso` | `Q1540732` | -4.00458, 40.8975 | point |
+
+The palace is the one `point` of the three: `Q1540732`'s classes are a museum
+and two kinds of building, none of them a settlement, and A12 (2) takes the
+precision from the class. `Q657461` is a municipality and a district of
+Colombia and `Q2807` a municipality of Spain, so both are `city`. Each place
+carries the `a9-place` flag and a `review.note` saying who wrote it and why,
+so a reader is not told the import did it.
+
+**`war-of-the-austrian-succession` took the place record this atlas already
+held for `Q46`** — `europe` — which is what the import does when a `P276` item
+is already a place here. **`war-of-jenkins-ear` is placeless and stays so**: its
+item names six locations and no coordinate, and the import derived its lane
+from their points. A war fought across New Granada, the Caribbean, Georgia and
+the Pacific has no narrower point that is not a choice, and the run does not
+make that choice for it.
+
+### The actors (A12), and `docs/m53-polities.md`
+
+`P710` was read on all five items and answered once. `Q580765` names `Q45670`,
+the Kingdom of Portugal, which this atlas holds, so `first-treaty-of-san-ildefonso`
+names `kingdom-of-portugal` as a `signatory`. Everything else the five items
+name is not a record here, and naming the nearest thing would be naming the
+wrong thing: `Q3399982` is the Kingdom of Spain of 1700–1873 and `spain` begins
+in 1886; `Q161885` is the Kingdom of Great Britain, and the atlas's
+`united-kingdom-of-great-britain-and-ireland` begins in 1801; `Q80702` and
+`Q200464`, the Spanish and Portuguese empires, and `Q6037274`, Mosquitia, are
+not records here at all. `docs/m53-polities.md` §4.1 was re-taken at **377 of
+806** over the merged corpus before the batch, and at **378 of 811** after it:
+the batch's one actor line is on a 1777 record naming a polity alive from 1139
+to 1910, so it counts by both of the rules §4.1 states.
+
+### The edges (A5, M72)
+
+Three, all `probable`, each quoting two articles at named revisions:
+
+| edge | type | sources |
+| --- | --- | --- |
+| `treaty-of-madrid-13-january-1750` → `guarani-war` | `caused` | *Treaty of Madrid (13 January 1750)* 1367898537, *Guaraní War* 1370622079 |
+| `treaty-of-madrid-13-january-1750` → `first-treaty-of-san-ildefonso` | `precondition-of` | the same treaty article, *First Treaty of San Ildefonso* 1372949821 |
+| `war-of-jenkins-ear` → `war-of-the-austrian-succession` | `enabled` | *Battle of Cartagena de Indias* 1375974450, *War of the Austrian Succession* 1375907167 |
+
+Every one carries **two locators**. **No `consensus` was written**, and the
+third edge is the one where it was nearly earned: the Battle of Cartagena de
+Indias article attributes its reading of the aftermath to Reed Browning, *The
+War of the Austrian Succession* (1993), pp. 58–66, which is a work Wikipedia
+itself cites and so is exactly what A2 allows. It stays `probable` because the
+work is **named** in the article and was not read here, which is the line A2
+draws.
+
+**A fourth edge was written and refused by the validator, and the refusal was
+right.** `battle-of-cartagena-de-indias` → `war-of-the-austrian-succession`
+`enabled` is the argument the Cartagena article makes in so many words — the
+news of the defeat reached Europe in June 1741 and George II withdrew Britain's
+guarantee of the Pragmatic Sanction — but the wider war is dated from the
+Prussian invasion of Silesia in **December 1740**, six months earlier, and
+**rule 4 refuses an edge whose `from` starts after its `to`**: *"arrow of time:
+`battle-of-cartagena-de-indias` cannot start after
+`war-of-the-austrian-succession`"*. The argument was moved onto
+`war-of-jenkins-ear`, which begins in 1739 and can hold it, and the explanation
+says why the type is `enabled` and not `caused` in the same sentence the
+article's own dates force.
+
+### Why the largest component did not move, which A5 asks a batch to say
+
+**It did not move, and the reason is where the batch attached.** The two treaty
+edges run to `guarani-war`, which was one of the 160 active events with no edge
+at all: it was a component of one and is now a component of three, which lifts
+the events-with-no-edge figure by one and the largest component by nothing. The
+Jenkins vein is a second component of three, joined to the corpus by nothing —
+`war-of-jenkins-ear`'s and the Cartagena battle's articles link to exactly one
+record this atlas holds between them, `spanish-colonization-of-the-americas`,
+and that is an umbrella and a parent question, not an edge.
+
+**This is batch 12's finding again, in another tree, and it is a fact about the
+corpus and not about the batch.** The Americas before 1800 are a set of small components: what
+joins them to the largest component is a record in the nineteenth century that
+neither the eighteenth-century articles nor the corpus has yet. The
+`atlantic-revolutions` umbrella is where that join will come from, and the
+record that makes it is an edge from a Spanish American record of this century
+into the wars of independence — `first-treaty-of-san-ildefonso` to the
+`argentine-war-of-independence` by way of the Banda Oriental is the shape of
+it, and no article read in this batch states it.
+
+### Deviations
+
+**1239. `P361` names an umbrella; only the dates decide whether it can be a
+parent, and the corpus is held at zero exceptions.** `war-of-the-austrian-succession`
+is not in the thirteenth fire's map — it is what `P361` on the War of Jenkins'
+Ear said when the fire read the item — and the fire imported it, filed the war
+under it and wrote the batch note before running the tests. `child-outside-parent`
+is a **warning** in the validator and the fire treated it as one to be accepted
+and explained; `tests/m62.test.mjs` and `tests/m67.test.mjs` hold the corpus at
+**zero** of them and four assertions failed. **The rule: a filing is checked
+against both `when.start`s before it is written, and a warning the tests hold
+at zero is not a warning a batch may accept.** Reading `P361` on every item is
+still right and found a real umbrella; what it does not do is settle the
+parent. The same sweep over all 41 of this partition's main events that carry a
+Wikidata id found exactly two more `P361`s pointing at a record this atlas
+holds — `berlin-conference` → `scramble-for-africa` and
+`cretan-revolt-of-1897-1898` → `greco-turkish-war-of-1897` — and **both are
+refused by the same dates**, 1884 against 1885 and 1898 against 1897. A fire
+looking for a payment should not look there again.
+
+**1240. Rule 4 is a date check and an argument check at once, and a batch
+should meet it before it writes the edge.** The Cartagena aftermath is the
+best-sourced causal claim in this batch and it cannot be written as an edge
+from that battle, because the war it is about started six months earlier. The
+fire wrote the edge, the validator refused it, and the argument moved one
+record up the tree to where the dates allow it. **The rule: check the two
+`when.start`s before drafting an explanation, not after** — the explanation is
+the expensive half and it had to be rewritten around the record it could
+attach to.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after the thirteenth fire, which imported nothing.*
+*23 September, after the fourteenth fire and its thirteenth batch.*
 
 | | |
 | --- | --- |
-| corpus | **800 active** |
+| corpus | **811 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **565** |
-| components | 191 |
-| events with no edge at all | 158 |
-| Europe before 1900 | 73 active, 17 main |
-| the `americas` lane | **180 active, 56 main** |
-| the thinnest cells left, in this partition | the Americas' 16th (9), 17th (9) and 18th (9) |
+| **largest connected component** | **569** |
+| components | 194 |
+| events with no edge at all | 159 |
+| Europe before 1900 | 76 active, 18 main |
+| the `americas` lane | **182 active, 55 main** |
+| the thinnest cells left, in this partition | the Americas' 17th (9), 16th (11) and 18th (11) |
+| the two cells this batch moved | the Americas' 18th, 9 → 11 active and 1 → 2 main; Europe's 18th, 21 → 24 active and 2 → 3 main |
 
 **Try the network first, and read this list before STEP 1's merge** (deviation
-1236). Twenty probes a minute apart were all 429 on the thirteenth fire,
-across every Wikimedia endpoint; one probe tells the next fire which kind of
-fire it is.
+1236). On this fire `Special:EntityData` and the SPARQL endpoint answered 200
+while `api.php` and the REST summaries answered 429 and then 200 on a retry, so
+**a 429 on one endpoint is not the thirteenth fire's kind of fire**: probe two
+or three endpoints before concluding anything, and let the import's own backoff
+carry the calls.
 
-**If the network answers, take the Americas' eighteenth century.** Nine active
-events and **one main**, which is the emptiest umbrella shelf in the partition,
-and the thirteenth fire left a batch mapped out and unclaimed:
+**If the network answers, take the Americas' seventeenth century.** Nine active
+events and **six main**, which is now the thinnest cell in the partition and
+the one with the worst main-to-active ratio anywhere in it: six of its nine
+events are umbrellas or umbrella-shaped records standing alone
+(`dutch-portuguese-war`, `english-settlement-of-barbados-1627`,
+`saint-domingue-and-the-french-sugar-colony`,
+`the-atlantic-slave-trade-to-the-caribbean`, `the-brazilian-gold-cycle`,
+`the-caribbean-sugar-revolution`). **What that cell needs is children, not
+umbrellas**: anything imported under one of those six arrives filed and costs
+no main event, and five of the six have no child at all.
 
-- **The Treaty of Madrid of 1750.** `guarani-war`'s own cached lead, already on
-  disk, says that war *"was a result of the 1750 Treaty of Madrid"* — an edge
-  A5 takes on sight, with the locator the summary already carries. Files under
-  `spanish-colonization-of-the-americas` (1493–1898, `americas`), so it costs
-  no main event.
-- **The War of Jenkins' Ear**, with **Cartagena de Indias (1741)** filed under
-  it, which pays for it in the same batch — batch 12's pattern.
-- **The Treaty of San Ildefonso of 1777**, the same shelf and the same filing.
-
-**Deviations 1230 and 1231 are closed**, so the next batch does not have to
-re-point a record whose `P276` town the import could not see, and a refusal it
-leaves behind will be offered again rather than buried in `done`. What is left
-of 1231 is only history: refusals filed as done before 23 September cannot be
-told from completions and stay there.
+- **The Dutch–Portuguese War is the cell's own tree and it is half built.**
+  `dutch-portuguese-war` runs 1601–1661 in the `americas` lane and already has
+  three children — `capture-of-bahia`, `dutch-brazil-1630-1654` and
+  `recapture-of-bahia`. What it does not have is the end of the war: the
+  **Battles of Guararapes** (1648–1649) and the **surrender of Recife** (1654)
+  are items with articles, inside its span, and would arrive filed.
+- **The Eighty Years' War is still the edge between the Americas' seventeenth
+  century and Europe's**, and the thirteenth fire's open question about it is
+  now answered: **no**. `dutch-portuguese-war` runs 1601–1661 and `Q164432` runs
+  1568–1648, so filing the one under the other is a `child-outside-parent`, and
+  batch 13 met exactly that on a smaller case and found the corpus holds it at
+  zero in four test assertions. **A fire that wants `Q164432` must find another
+  payment for it and must not file `dutch-portuguese-war` under it.** The
+  relation belongs in an edge, which `dutch-portuguese-war`'s own article
+  supports: it calls that war the thing this one is an extension of.
+- **The French Wars of Religion are free to whoever brings their children.**
+  `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
+  importable today — the fire probed it and the item answered. It arrives main
+  and nothing in the corpus falls inside it, so it costs one main event unless
+  the same batch imports two or three of its engagements.
+- **The Italian Wars tree is twelve active events in components of one and
+  two, joined to nothing.** `parent` is not adjacency, so filing will never
+  join it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the
+  named door** — the article reports historians reading it as the beginning of
+  Spanish hegemony in Italy — and it is not in the corpus.
+- **The Americas before 1800 are a set of small components and batch 13 made
+  two more of them.** The join that would move the largest connected component
+  is an edge from a Spanish American record of the seventeenth or eighteenth
+  century into the wars of independence of the nineteenth, and no article read
+  in batches 11, 12 or 13 states one. **A fire that wants the component to move
+  should read the nineteenth-century articles for what they say about the
+  century before them**, rather than reading the eighteenth century's for what
+  came after.
+- **A filing pass without the network will find nothing.** The thirteenth fire
+  ran the measurement: 43 of this partition's main events fall inside some
+  umbrella's span and lane, and every one of them fails the subject test or
+  M67's rule 1. Do not spend a fire on it again; the shortage is umbrellas, and
+  umbrellas need the network.
 
 **The two questions for the owner are unchanged and both still block a
 century.**
@@ -3247,37 +3545,7 @@ century.**
    sitting against the wall.
 2. **May a run take a period umbrella from an item whose class is a polity,
    where the article is plainly a period article?** Colonial Brazil
-   (`Q2088324`) is the case and **it is worth seven main events now, not
-   four**: the thirteenth fire counted the Brazilian colonial records waiting
-   for a Portuguese umbrella. `Q377350`, the **Iberian Union**, is a second
-   case of the same shape. The class table is an editorial decision and the
-   whole point of it living in `data/`, so the run will not decide either.
-
-**What the next fire should weigh, in order:**
-
-- **The Americas' 18th century first** (one main of nine), then the 16th and
-  17th, tied at nine active.
-- **The French Wars of Religion are free to whoever brings their children.**
-  `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
-  importable today. It arrives main and nothing in the corpus falls inside it,
-  so it costs one main event — unless the same batch imports two or three of
-  its engagements, which arrive filed and cost nothing.
-- **The Eighty Years' War is still the edge between the Americas' seventeenth
-  century and Europe's.** `Q164432`, 1568-05-23 to 1648-01-30, classes
-  `Q6107280` *revolt* and `Q8465` *civil war*, both in the table.
-  `dutch-portuguese-war`'s own article calls that war the thing it is an
-  extension of. It arrives main and needs a filing to pay for it; and
-  **`dutch-portuguese-war` itself runs 1601–1661 and would be dated outside
-  it**, which is rule 24's warning and not an error, so the fire that takes
-  this should decide deliberately whether to accept the warning or find another
-  payment.
-- **The Italian Wars tree is twelve active events in components of one and
-  two, joined to nothing.** `parent` is not adjacency, so filing will never
-  join it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the
-  named door** — the article reports historians reading it as the beginning of
-  Spanish hegemony in Italy — and it is not in the corpus.
-- **A filing pass without the network will find nothing.** The thirteenth fire
-  ran the measurement: 43 of this partition's 73 main events fall inside some
-  umbrella's span and lane, and every one of them fails the subject test or
-  M67's rule 1. Do not spend a fire on it again; the shortage is umbrellas, and
-  umbrellas need the network.
+   (`Q2088324`) is the case and it is worth seven main events. `Q377350`, the
+   **Iberian Union**, is a second case of the same shape. The class table is an
+   editorial decision and the whole point of it living in `data/`, so the run
+   will not decide either.
