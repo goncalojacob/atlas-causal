@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yalu-river-1904",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2273445",
+  "wikipedia": {
+    "en": "Battle of the Yalu River (1904)"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2273445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766"
+    }
+  ],
+  "title": "Battle of the Yalu River (1904)",
+  "summary": "The English Wikipedia article \"Battle of the Yalu River (1904)\", at revision 1370602766, opens: \"The Battle of the Yalu River lasted from April 30 to May 1, 1904 and was the first major land battle during the Russo-Japanese War. It was fought near Wiju on the lower reaches of the Yalu River, on the border between Korea and China. Also known as the Yalu River Crossing Operation.\" Wikidata item Q2273445, whose own description reads \"battle in 1904\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-04-30",
+    "endDate": "1904-05-01"
+  },
+  "place": "yalu-river",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

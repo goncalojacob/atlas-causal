@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yalu-river-1904--battle-of-nanshan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nanshan\", revision 1370451314, § Background"
+    }
+  ],
+  "from": "battle-of-the-yalu-river-1904",
+  "to": "battle-of-nanshan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Nanshan's article opens its § Background on the Yalu: \"After the Japanese victory at the [Battle of the] Yalu River, the Japanese Second Army commanded by General Yasukata Oku landed on Pitzewo (modern day Pikou), on the Liaodong Peninsula, some 70 miles northeast from Port Arthur.\" `precondition-of`: the first land victory is what put the Second Army ashore behind Port Arthur, which is where Nanshan was fought. The article claims a sequence and a landing, not a motive, so the type claims no more than that. Probable: Wikipedia alone.",
+  "dispute": null
+}

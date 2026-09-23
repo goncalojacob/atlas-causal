@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--battle-of-mukden--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "battle-of-mukden",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Mukden's § Background makes the claim: \"Though the capture of Port Arthur by General Maresuke Nogi freed up their 3rd Army, which then advanced north to reinforce the Japanese lines near Mukden in preparation for an attack, the manpower reserves of the Japanese army had been drained by February 1905. With the arrival of General Nogi's 3rd Army, Japan's entire fighting strength was concentrated at the vicinity of Mukden.\" `enabled`: the fall of the fortress released the army that made the concentration possible, which the article states as the reason the attack could be prepared at all. Probable: Wikipedia alone.",
+  "dispute": null
+}

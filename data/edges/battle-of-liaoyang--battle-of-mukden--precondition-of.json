@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-liaoyang--battle-of-mukden--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    }
+  ],
+  "from": "battle-of-liaoyang",
+  "to": "battle-of-mukden",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Mukden's § Background opens on Liaoyang and on the ground the retreat from it settled: \"Following the Battle of Liaoyang (25 August – 4 September 1904), Russian forces retreated to the river Sha Ho south of Mukden and regrouped. The Japanese had expected Liaoyang to be the decisive battle of the war, after which peace terms would be negotiated. However, in part due to the diversion of much manpower and most of the heavy artillery to the simultaneously ongoing Siege of Port Arthur, the Japanese had failed to take advantage of their victory at Liaoyang, allowing the Russians to retreat in good order.\" `precondition-of`: the incomplete victory at Liaoyang is what left both armies facing each other north of it, which is where Mukden was fought. Probable: Wikipedia alone.",
+  "dispute": null
+}

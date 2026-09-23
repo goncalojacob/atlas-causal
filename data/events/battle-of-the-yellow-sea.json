@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yellow-sea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q702377",
+  "wikipedia": {
+    "en": "Battle of the Yellow Sea",
+    "pt": "Batalha do Mar Amarelo"
+  },
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q702377"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941"
+    }
+  ],
+  "title": "Battle of the Yellow Sea",
+  "summary": "The English Wikipedia article \"Battle of the Yellow Sea\", at revision 1375165941, opens: \"The Battle of the Yellow Sea was a naval battle of the Russo-Japanese War, fought on 10 August 1904. In the Russian Navy, it was referred to as the Battle of 10 August. The battle foiled an attempt by the Russian fleet at Lüshunkou to break out and form up with the Vladivostok squadron, forcing them to return to port. Four days later, the Battle off Ulsan similarly ended the Vladivostok group's sortie, forcing both fleets to remain at anchor.\" Wikidata item Q702377, whose own description reads \"1904 major naval battle of the Russo-Japanese War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-08-10"
+  },
+  "place": "yellow-sea",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

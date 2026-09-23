@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "battle-of-the-yellow-sea",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Two articles put the sortie inside the siege. The Yellow Sea's § Background: \"In July and early August, as the Imperial Japanese Army laid siege to Port Arthur, relations between Vitgeft and the Russian Viceroy Yevgeni Alekseyev soured. Alekseyev, a former admiral, favored an aggressive sortie so as to enable the First Pacific Squadron to link up with the Vladivostok Squadron to create a naval force powerful enough to challenge the Japanese fleet.\" Tsushima's § Background dates the order: \"By May, the Japanese had landed forces on the Liaodong Peninsula and in August began the siege of the naval station. On 9 August, Admiral Wilgelm Vitgeft, commander of the 1st Pacific Squadron, was ordered to sortie his fleet to Vladivostok.\" `precondition-of` and not `caused`: what the articles state is that the army's siege is why staying at anchor stopped being an option, and the order that followed is the Tsar's, not the siege's. Probable: Wikipedia alone.",
+  "dispute": null
+}

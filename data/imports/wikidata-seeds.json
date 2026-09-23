@@ -1122,7 +1122,21 @@
     "Q775224",
     "Q117564",
     "Q202991",
-    "Q244230"
+    "Q244230",
+    "Q623329",
+    "Q55498",
+    "Q4218510",
+    "Q326917",
+    "Q37960",
+    "Q75203",
+    "Q11720",
+    "Q1363925",
+    "Q2273445",
+    "Q2409298",
+    "Q210800",
+    "Q702377",
+    "Q2440191",
+    "Q384091"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4812,6 +4826,24 @@
       "kind": "event",
       "label": "mass shooting",
       "note": "Added in M42 batch 45 for Q97701895, the 2020 Darfur attacks. The label and the description — 'incident in which an active shooter shoots multiple people with a firearm' — are read from the item itself over the network. No category: the twelve of data/categories.json have no kind for a mass shooting as a class, and 'war' would be read off this event's parent rather than off the class, which is not what the table is for. Fifty event classes already carry no category."
+    },
+    "Q34763": {
+      "kind": "place",
+      "precision": "region",
+      "label": "peninsula",
+      "note": "Added in M42 batch 47, the Russo-Japanese War read as a chain, from the class Q4218510 (the Kwantung Peninsula) and Q326917 (the Liaodong Peninsula) both name and nothing else does. The label and the description — \"landform surrounded more than half but not entirely by water\" — are read from the item itself over the network. `region` because a peninsula is ground and not a point on it, and larger than a settlement without being a state: src/vocab.js calls that coarse and the map draws it wider and fainter, which is the honest drawing of a battle sited only by the peninsula it was fought on."
+    },
+    "Q7930989": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city or town",
+      "note": "Added in M42 batch 47 from one of the two classes Q623329, Lüshunkou, names. The label and the description — \"type of human settlement\" — are read from the item itself over the network. A settlement is a `city`, which is the reading A12 (2) already states."
+    },
+    "Q1065118": {
+      "kind": "place",
+      "precision": "city",
+      "label": "district of China",
+      "note": "Added in M42 batch 47 from the other class Q623329, Lüshunkou, names. The label and the description — \"administrative division of the People's Republic of China\" — are read from the item itself over the network. `city` and not `region` because a district of China sits below a prefecture-level city and is settlement-scale, which is what Lüshunkou is; it agrees with Q7930989 on the same item, so `classify()` reads one precision and not a disagreement."
     }
   },
   "reconcile": true
