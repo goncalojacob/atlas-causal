@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "railway-protection-movement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "lane-from-p17"
+    ]
+  },
+  "wikidata": "Q5368776",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Railway Protection Movement"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5368776"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Railway Protection Movement\", revision 1361142110"
+    }
+  ],
+  "title": "Railway Protection Movement",
+  "summary": "The English Wikipedia article \"Railway Protection Movement\", at revision 1361142110, opens: \"The Railway Protection Movement, also known as the Railway Rights Protection Movement, was a political protest movement that erupted in 1911 in late Qing China against the Qing government's plan to nationalize local railway development projects and transfer control to foreign banks. The movement, centered in Sichuan province, expressed mass discontent with Qing rule, galvanized anti-Qing groups and contributed to the outbreak of the 1911 Revolution.\" Wikidata item Q5368776, which dates it from 17 June 1911 (P580) to 28 December 1911 (P582). That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-06-17",
+    "endDate": "1911-12-28"
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "category": null,
+  "actors": [],
+  "parent": "xinhai-revolution"
+}

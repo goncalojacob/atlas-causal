@@ -4640,3 +4640,67 @@ battle says only that its defeat, with Chinese resistance and the pact,
 *"moved the Imperial General Staff in Tokyo away from the policy of the North
 Strike Group"*. **A property is a claim and the article is the check**, which is
 amendment A13's rule applied a fire before A13's own.
+
+## Batch 38 — the joins vein asked of the Asia lane
+
+The same six directional properties batch 37 asked of Africa (`P828`, `P1542`,
+`P1478`, `P1536`, `P1479`, `P1534`), asked now of the **120 active `asia`-lane
+events that carry a Wikidata id**: 93 rows, of which **9 are held-to-held** and
+**81 name an item the atlas does not have**.
+
+**`israeli-declaration-of-independence --caused--> 1948-arab-israeli-war`.** The
+declaration's lead at revision 1372097190 places it *"at the end of the civil
+war phase and beginning of the Arab–Israeli War of the 1948 Palestine war"* and
+says the state it declared *"would come into effect on termination of the
+British Mandate at midnight that day"*. Wikidata states the same link in the
+same direction (`Q49092`, `P828`).
+
+**`lebanese-civil-war --caused--> taif-agreement`.** The agreement's lead at
+revision 1369818876 says it *"was reached to provide the basis for the ending of
+the civil war and the return to political normalcy in Lebanon"* and *"was
+designed to end the 15 year-long Lebanese Civil War"*.
+
+**`taif-agreement` is filed inside `lebanese-civil-war` and names neither an
+actor nor a place**, so the filing is argued here, which is where M67's weaker
+test asks for it. The record is placeless because its item carries no `P625`,
+no `P276`, no `P131` and no `P17` at all, and A9 writes a place from a
+coordinate or writes none; what puts it inside the war is not a point but the
+article's own sentence — the accord is the war's settlement, signed on 22
+October 1989 and ratified on 5 November, inside a war this atlas dates
+1975–1990. Its lane is written on the record with a note saying the same thing:
+the accord was *"negotiated in Taif, Saudi Arabia"* and ends a war drawn in the
+`asia` lane.
+
+**`2006-hezbollah-cross-border-raid --caused--> 2006-lebanon-war`.** The raid's
+lead at revision 1370102562 says that after the ambush *"Israel refused and
+launched a large-scale ground and air campaign across Lebanon in response to
+the Hezbollah raid. This marked the start of the 2006 Lebanon War."* The raid is
+also filed as part of that war, which is Wikidata's own `P361` and a display
+fact; the edge is the separate claim that the campaign answered it.
+
+**`railway-protection-movement --enabled--> wuchang-uprising`.** The movement's
+lead at revision 1361142110 says *"the mobilization of imperial troops from
+neighboring Hubei Province to suppress the Railway Protection Movement created
+the opportunity for revolutionaries in Wuhan to launch the Wuchang Uprising"*.
+**`enabled` and not `caused`**, because that is the sentence's own shape: what
+the movement produced was the opening — a garrison sent out of Wuhan — and not
+the decision to rise. Wikidata records it as the uprising's cause (`Q339291`,
+`P828`); the atlas reads it at the weaker of the two types the sources allow.
+
+### The two held-to-held pairs the articles refused
+
+Batch 37's rule — **a property is a claim and the article is the check** — cost
+this batch both of the free edges the vein offered, which is the first time it
+has refused more than it wrote.
+
+- **`lebanese-civil-war` and `sabra-and-shatila-massacre`** (`P1542`, has
+  effect). The massacre's lead at revision 1375981084 says nothing of the kind:
+  it gives the 1982 Israeli invasion, the PLO withdrawal, the withdrawal of the
+  multinational force and Bashir Gemayel's assassination as the circumstances,
+  and never says the civil war caused the killings. What the article describes
+  is a massacre **inside** the war, which is containment and not an argument.
+- **`second-guangzhou-uprising` and `wuchang-uprising`** (`P1542`, has effect).
+  The uprising's lead at revision 1370737006 says only that it *"was a failed
+  uprising that took place in China"*, led by Huang Xing against the Qing in
+  Canton. It does not connect the two, and an edge written on the property alone
+  would be this atlas asserting what neither article says.
