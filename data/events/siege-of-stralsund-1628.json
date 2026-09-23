@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-stralsund-1628",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2612839",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Siege of Stralsund (1628)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2612839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
+    }
+  ],
+  "title": "Siege of Stralsund (1628)",
+  "summary": "The English Wikipedia article \"Siege of Stralsund (1628)\", at revision 1371910129, opens: \"The Siege of Stralsund, 13 May to 4 August 1628, took place during the Thirty Years' War when an Imperial Army under Albrecht von Wallenstein attempted to capture the key Baltic Sea port of Stralsund. Then an independent city and part of the Hanseatic League, Stralsund was initially reinforced by small numbers of Scots mercenaries in Danish service, before Gustavus Adolphus of Sweden sent a larger force under Alexander Leslie.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2612839, imported by tools/import/wikidata.mjs. The item's own description reads \"Unsuccessful siege (1628) on Stralsund by Albrecht von Wallenstein's Imperial Army during the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1628,
+    "end": 1628,
+    "date": "1628-05",
+    "endDate": "1628-08"
+  },
+  "place": "stralsund",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

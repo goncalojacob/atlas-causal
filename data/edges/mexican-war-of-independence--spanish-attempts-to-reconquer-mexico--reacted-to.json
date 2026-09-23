@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mexican-war-of-independence--spanish-attempts-to-reconquer-mexico--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284, lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7573442 P361 (part of) Q1123201"
+    }
+  ],
+  "from": "mexican-war-of-independence",
+  "to": "spanish-attempts-to-reconquer-mexico",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The English article on the attempts says they \"were efforts by the Spanish government to regain possession of its former colony of New Spain, resulting in episodes of war comprised in clashes between the newly born Mexican nation and Spain\", and dates the first of them to 1821, the year the war ended. The campaigns exist because the war was lost: the reconquest is the answer and the war is what it answered, which is the direction this edge runs. Probable, for the reason every edge drawn from these two sources is.",
+  "dispute": null
+}

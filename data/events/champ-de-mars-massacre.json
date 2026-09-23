@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "champ-de-mars-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1089686",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Champ de Mars massacre",
+    "pt": "Massacre do Campo de Marte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1089686"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Champ de Mars massacre\", revision 1370703702"
+    }
+  ],
+  "title": "Champ de Mars massacre",
+  "summary": "The English Wikipedia article \"Champ de Mars massacre\", at revision 1370703702, opens: \"The Champ de Mars massacre took place on 17 July 1791 in Paris at the Champ de Mars against a crowd of republican protesters amid the French Revolution. Two days before, the National Constituent Assembly issued a decree that King Louis XVI would retain his throne under a constitutional monarchy. This decision came after Louis and his family had unsuccessfully tried to flee France in the Flight to Varennes the month before. Later that day, leaders of the republicans in France rallied against this decision.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1089686, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-07-17"
+  },
+  "place": "champ-de-mars",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "french-revolution"
+}

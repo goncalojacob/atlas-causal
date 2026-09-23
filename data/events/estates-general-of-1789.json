@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "estates-general-of-1789",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1463941",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Estates General of 1789"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1463941"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estates General of 1789\", revision 1375588196"
+    }
+  ],
+  "title": "Estates General of 1789",
+  "summary": "The English Wikipedia article \"Estates General of 1789\", at revision 1375588196, opens: \"The Estates General of 1789 was a general assembly representing the French estates of the realm: the clergy, the nobility, and the commoners. Summoned by King Louis XVI, it opened on 5 May 1789 at Versailles, marking the first such meeting since 1614. The assembly was a desperate attempt to resolve a catastrophic fiscal crisis. Previous attempts at structural reform, including a universal land tax, had been blocked by the Assembly of Notables and the Parlements. These bodies claimed that only the Estates General possessed the authority to approve new taxes. The Estates General ultimately failed due to a fundamental deadlock over voting procedures. The First and Second Estates sought to vote by estate to preserve their tax exemptions and political dominance. Conversely, the Third Estate demanded voting by head to reflect their numerical majority. This procedural dispute paralyzed the body for six weeks, preventing any progress on the financial crisis. The failure became definitive when the Third Estate broke away to declare itself the National Assembly on 17 June 1789.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1463941, imported by tools/import/wikidata.mjs. The item's own description reads \"general assembly representing the French estates of the realm: the clergy (First Estate), the nobility (Second Estate), and the commoners (Third Estate). Summoned by King Louis XVI\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-01-24",
+    "endDate": "1789-06-20"
+  },
+  "place": "versailles-yvelines",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": [],
+  "parent": "french-revolution"
+}

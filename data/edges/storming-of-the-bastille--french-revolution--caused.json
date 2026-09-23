@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "storming-of-the-bastille--french-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Storming of the Bastille\", revision 1374060912, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q6539"
+    }
+  ],
+  "from": "storming-of-the-bastille",
+  "to": "french-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article ends its lead with the claim outright: the fall of the Bastille “was the flashpoint of the French Revolution”. The same lead is careful about what the fortress actually was — a prison holding seven inmates and already scheduled for demolition — and rests the claim on what it stood for rather than on what was taken: “at the time, the Bastille represented royal authority in the centre of Paris”. That is an argument about a symbol becoming an act, which is what `caused` says here, and it is the same shape this atlas already gives a war’s opening action: the Bohemian revolt and the Thirty Years’ War, the Moncada attack and the Cuban Revolution. It stays `probable`: an encyclopaedia lead reporting where the consensus sits is not a work arguing it, and rule 22 refuses `consensus` on a Wikipedia citation in any case. The storming is also filed as part of the revolution, and that is a separate statement — `parent` does not enter the adjacency, so the argument has to be made as an edge or not at all.",
+  "dispute": null
+}

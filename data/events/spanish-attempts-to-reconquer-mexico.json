@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spanish-attempts-to-reconquer-mexico",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7573442",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Spanish attempts to reconquer Mexico"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7573442"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284"
+    }
+  ],
+  "title": "Spanish attempts to reconquer Mexico",
+  "summary": "The English Wikipedia article \"Spanish attempts to reconquer Mexico\", at revision 1370748284, opens: \"Spanish attempts to reconquer Mexico were efforts by the Spanish government to regain possession of its former colony of New Spain, resulting in episodes of war comprised in clashes between the newly born Mexican nation and Spain. The designation mainly covers two periods: the first attempts occurred from 1821 to 1825 and involved the defense of Mexico's territorial waters, while the second period had two stages, including the Mexican expansion plan to take the Spanish-held island of Cuba between 1826 and 1828 and the 1829 expedition of Spanish General Isidro Barradas, which landed on Mexican soil with the object of reconquering Mexican territory. Although the Spanish never regained control of the country, they damaged the fledgling Mexican economy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7573442, imported by tools/import/wikidata.mjs. The item's own description reads \"1821–1829 military campaigns\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1829,
+    "date": "1821-10-26",
+    "endDate": "1829-09-11"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

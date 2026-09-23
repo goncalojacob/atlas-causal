@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lutter",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q629302",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Lutter",
+    "pt": "Batalha de Lutter am Barenberge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q629302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lutter\", revision 1370448305"
+    }
+  ],
+  "title": "Battle of Lutter",
+  "summary": "The English Wikipedia article \"Battle of Lutter\", at revision 1370448305, opens: \"The Battle of Lutter took place on 27 August 1626 during the Thirty Years' War, south of Salzgitter, in Lower Saxony. A combined Danish-German force led by Christian IV of Denmark was defeated by Johann Tserclaes, Count of Tilly, commanding an army of the Catholic League loyal to Emperor Ferdinand II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q629302, imported by tools/import/wikidata.mjs. The item's own description reads \"1626 battle of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1626,
+    "end": 1626,
+    "date": "1626-08-27"
+  },
+  "place": "lutter-am-barenberge",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

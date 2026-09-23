@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-tucuman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2890270",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Tucumán"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890270"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tucumán\", revision 1370275835"
+    }
+  ],
+  "title": "Battle of Tucumán",
+  "summary": "The English Wikipedia article \"Battle of Tucumán\", at revision 1370275835, opens: \"The Battle of Tucumán was fought on 24 and 25 September 1812 near the Argentine city of San Miguel de Tucumán, during the Argentine War of Independence. The Army of the North, commanded by General Manuel Belgrano, defeated the royalist troops commanded by General Pío de Tristán, who had a two-to-one advantage in numbers, halting the royalist advance on Argentina's northwest. Together with the Battle of Salta, on 20 February 1813, the victory at Tucumán allowed the Argentine troops to reaffirm the borders under their control.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890270, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 engagement of the Argentine War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-09-25"
+  },
+  "place": "san-miguel-de-tucuman",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "argentine-war-of-independence"
+}

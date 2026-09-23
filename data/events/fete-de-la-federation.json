@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fete-de-la-federation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q143866",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Fête de la Fédération",
+    "pt": "Festa da Federação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q143866"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fête de la Fédération\", revision 1369393792"
+    }
+  ],
+  "title": "Fête de la Fédération",
+  "summary": "The English Wikipedia article \"Fête de la Fédération\", at revision 1369393792, opens: \"The Fête de la Fédération was a massive holiday festival held throughout France in 1790 in honour of the French Revolution, celebrating the Revolution itself, as well as national unity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q143866, imported by tools/import/wikidata.mjs. The item's own description reads \"1790 national holiday festival in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-07-14"
+  },
+  "place": "champ-de-mars",
+  "region": null,
+  "regionNote": null,
+  "category": "culture",
+  "actors": [],
+  "parent": "french-revolution"
+}

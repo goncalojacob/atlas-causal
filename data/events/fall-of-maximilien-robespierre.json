@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fall-of-maximilien-robespierre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12989672",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Fall of Maximilien Robespierre",
+    "pt": "9 Termidor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12989672"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Maximilien Robespierre\", revision 1370782731"
+    }
+  ],
+  "title": "Fall of Maximilien Robespierre",
+  "summary": "The English Wikipedia article \"Fall of Maximilien Robespierre\", at revision 1370782731, opens: \"During the French Revolution, Maximilien Robespierre addressed the National Convention on 26 July 1794, was arrested the next day, and executed the day after, on 28 July. In his speech on 26 July, Robespierre spoke of the existence of internal enemies, conspirators, and calumniators, within the Convention and the governing Committees. He refused to name them, which alarmed the deputies who feared Robespierre was preparing another purge of the Convention, similar to previous ones during the Reign of Terror.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12989672, imported by tools/import/wikidata.mjs. The item's own description reads \"arrest and execution of Robespierre during the French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-07-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "french-revolution"
+}

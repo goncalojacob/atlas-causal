@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-pilsen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q944855",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Siege of Pilsen",
+    "pt": "Batalha de Pilsen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q944855"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pilsen\", revision 1370744459"
+    }
+  ],
+  "title": "Siege of Pilsen",
+  "summary": "The English Wikipedia article \"Siege of Pilsen\", at revision 1370744459, opens: \"The Siege of Pilsen, 19 September to 21 November 1618, was the first significant action of the Thirty Years' War. Following the Bohemian Revolt, a Bohemian army under Ernst von Mansfeld captured Plzeň.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q944855, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Bohemian Revolt, 1618\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1618,
+    "end": 1618,
+    "date": "1618-09-19",
+    "endDate": "1618-11-21"
+  },
+  "place": "plzen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "bohemian-revolt"
+}

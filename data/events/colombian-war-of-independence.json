@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "colombian-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3063789",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Colombian War of Independence",
+    "pt": "Independência da Colômbia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3063789"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colombian War of Independence\", revision 1375635940"
+    }
+  ],
+  "title": "Colombian War of Independence",
+  "summary": "The English Wikipedia article \"Colombian War of Independence\", at revision 1375635940, opens: \"The Colombian War of Independence is traditionally held as having begun on July 20, 1810 when a government junta, a political governing board mostly headed by local colonists, was created in Santa Fe de Bogotá, the capital of the Spanish colonial Viceroyalty of New Granada. This junta overthrew the reigning viceroy of New Granada and established an autonomous government that claimed sovereignty over all of the Viceroyalty of New Granada.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3063789, imported by tools/import/wikidata.mjs. The item's own description reads \"1810-1825 Colombian revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1825,
+    "date": "1810-07-20",
+    "endDate": "1825-04-02"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

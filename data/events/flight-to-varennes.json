@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "flight-to-varennes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1192894",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Flight to Varennes",
+    "pt": "Fuga de Varennes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1192894"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Flight to Varennes\", revision 1366319196"
+    }
+  ],
+  "title": "Flight to Varennes",
+  "summary": "The English Wikipedia article \"Flight to Varennes\", at revision 1366319196, opens: \"The Flight to Varennes during the night of 20–21 June 1791 was a significant event in the French Revolution in which the French royal family—comprising Louis XVI, Marie Antoinette, the Dauphin Louis Charles, Marie-Thérèse, Madame Royale, and Madame Élisabeth—unsuccessfully attempted to leave Paris for Montmédy, along with loyal members of their retinue. The King hoped to regain his freedom there, with the protection of royalist troops, as the Revolution was intensifying and the threat to the royal family's safety grew. They reached the small town of Varennes-en-Argonne, where they were stopped and arrested after being recognised at their earlier stop in Sainte-Menehould.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1192894, imported by tools/import/wikidata.mjs. The item's own description reads \"attempted escape by Louis XVI of France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-06"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": [],
+  "parent": "french-revolution"
+}
