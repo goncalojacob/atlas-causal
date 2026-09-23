@@ -2948,6 +2948,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bahia",
+      "kind": "event",
+      "locator": "Q3704801"
+    },
+    {
+      "dissent": false,
       "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
       "kind": "event",
       "locator": "Q107525926"
@@ -3185,6 +3191,12 @@
       "id": "donghak-peasant-revolution",
       "kind": "event",
       "locator": "Q701045"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-portuguese-war",
+      "kind": "event",
+      "locator": "Q377269"
     },
     {
       "dissent": false,
@@ -4442,6 +4454,12 @@
     },
     {
       "dissent": false,
+      "id": "recapture-of-bahia",
+      "kind": "event",
+      "locator": "Q3286392"
+    },
+    {
+      "dissent": false,
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "Q193547"
@@ -5273,6 +5291,12 @@
       "id": "vietnam-war",
       "kind": "event",
       "locator": "Q8740"
+    },
+    {
+      "dissent": false,
+      "id": "voyages-of-christopher-columbus",
+      "kind": "event",
+      "locator": "Q18578423"
     },
     {
       "dissent": false,

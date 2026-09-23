@@ -1970,6 +1970,30 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bahia--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-bahia--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "locator": "\"Dutch Brazil\", revision 1375595876"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
+      "kind": "edge",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
+      "kind": "edge",
+      "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
       "kind": "edge",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
@@ -2309,6 +2333,18 @@
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
       "kind": "edge",
       "locator": "\"Sugar plantations in the Caribbean\", revision 1358072696"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-portuguese-war--dutch-brazil-1630-1654--enabled",
+      "kind": "edge",
+      "locator": "\"Dutch Brazil\", revision 1375595876"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-portuguese-war--dutch-brazil-1630-1654--enabled",
+      "kind": "edge",
+      "locator": "\"Dutch–Portuguese War\", revision 1374150566"
     },
     {
       "dissent": false,
@@ -5534,6 +5570,18 @@
     },
     {
       "dissent": false,
+      "id": "voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled",
+      "kind": "edge",
+      "locator": "\"Spanish colonization of the Americas\", revision 1376245871"
+    },
+    {
+      "dissent": false,
+      "id": "voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled",
+      "kind": "edge",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1376021649"
+    },
+    {
+      "dissent": false,
       "id": "wall-street-crash-of-1929--great-depression--caused",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
@@ -7382,6 +7430,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bahia",
+      "kind": "event",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "\"Catatumbo campaign\", revision 1370610401"
@@ -7631,6 +7685,12 @@
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-portuguese-war",
+      "kind": "event",
+      "locator": "\"Dutch–Portuguese War\", revision 1374150566"
     },
     {
       "dissent": false,
@@ -8984,6 +9044,12 @@
     },
     {
       "dissent": false,
+      "id": "recapture-of-bahia",
+      "kind": "event",
+      "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "\"Reign of Terror\", revision 1375254240"
@@ -10067,6 +10133,12 @@
       "id": "vietnam-war",
       "kind": "event",
       "locator": "\"Vietnam War\", revision 1373025356"
+    },
+    {
+      "dissent": false,
+      "id": "voyages-of-christopher-columbus",
+      "kind": "event",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1376021649"
     },
     {
       "dissent": false,

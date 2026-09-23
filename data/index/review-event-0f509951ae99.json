@@ -8393,6 +8393,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "capture-of-bahia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Place written by the run that imported it, under A9 as A12 corrects it: the item carries no P625 of its own, its P276 is Salvador (Q36947), and this atlas already holds that city as `salvador` with the point Q36947 gives. The import had reached past P276 to the first P17 — the Netherlands on Q3704801 — and filed the engagement in the European lane; the lane is now derived from Salvador, which is where the article says it happened.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Bahia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -10244,7 +10275,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 5,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "names": [
@@ -10256,6 +10287,7 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "dutch-portuguese-war",
       "review": {
         "flags": [
           "m50-chain"
@@ -10265,6 +10297,36 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "Dutch Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "dutch-portuguese-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dutch–Portuguese War"
     },
     {
       "authors": [
@@ -19207,6 +19269,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "recapture-of-bahia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Place written by the run that imported it, under A9 as A12 corrects it: the item carries no P625 of its own, its P276 is Salvador (Q36947), and this atlas already holds that city as `salvador` with the point Q36947 gives. The import had reached past P276 to the first P17 — the Netherlands on Q3704801 — and filed the engagement in the European lane; the lane is now derived from Salvador, which is where the article says it happened.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Recapture of Bahia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "reign-of-terror",
       "kind": "event",
@@ -22034,7 +22127,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "spanish-colonization-of-the-americas",
       "kind": "event",
       "origin": {
@@ -23212,6 +23305,7 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "voyages-of-christopher-columbus",
       "review": {
         "flags": [
           "m50-chain"
@@ -25356,6 +25450,35 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Vietnam War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "voyages-of-christopher-columbus",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Voyages of Christopher Columbus"
     },
     {
       "authors": [

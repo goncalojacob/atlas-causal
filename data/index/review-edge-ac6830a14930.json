@@ -4571,6 +4571,64 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "capture-of-bahia",
+      "id": "capture-of-bahia--dutch-brazil-1630-1654--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dutch-brazil-1630-1654",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "capture-of-bahia",
+      "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "recapture-of-bahia",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "telo-2007-historia-contemporanea"
       ],
@@ -6737,6 +6795,35 @@
       "status": "active",
       "to": "the-caribbean-sugar-revolution",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "dutch-portuguese-war",
+      "id": "dutch-portuguese-war--dutch-brazil-1630-1654--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "dutch-brazil-1630-1654",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -19587,6 +19674,35 @@
       "status": "active",
       "to": "sino-vietnamese-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "voyages-of-christopher-columbus",
+      "id": "voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-colonization-of-the-americas",
+      "type": "enabled"
     },
     {
       "authors": [
