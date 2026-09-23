@@ -20510,6 +20510,23 @@ independence, and **no edge was written from it**: none of the five types says
 Cortes of Cádiz, which the same article calls *"a more direct cause"*, and it
 is the first thing the next fire should import.
 
+**The check is red on this branch's head and this batch did not cause it.**
+Run 1474 failed twice on `d8bbdbac`, on **two different** fixture-only browser
+assertions — `graph-browser.test.mjs:379` (a ring's stroke after a wheel
+notch) on the first attempt and `keyboard-browser.test.mjs:81` (the focus walk)
+on the re-run. `git diff --name-only cdddf186 HEAD -- tests/ src/` is **empty**:
+`origin/m42` carried the identical `src/` and `tests/` through a green run at
+00:16Z tonight. Locally the whole suite is green — 2,068 tests, 0 skipped — and
+`graph-browser.test.mjs` was green three further times after the red check.
+A regression fails the same test twice; this did not. The browser pass ran 462s
+against 380s earlier on the same workflow, and `--test-concurrency=1` is
+already in place, so the last lever `docs/m63-load.md` prescribes is spent.
+**The proposed patch is one line in each test: wait on the state the assertion
+is about before reading it, rather than reading on the line after the event is
+dispatched.** Those are lane A's files and a records fire does not rewrite them
+on its own; `docs/m42b-pool.md` → "The check is red on this branch's head"
+carries the whole diagnosis for whoever takes it.
+
 Per lane and per century, after the batch: europe 353/87, africa 103/31, asia
 130/67, **americas 163/58**, 749 active and 243 main in all. The Americas' 19th
 century went from 15 active to **38**; the thinnest cells left are the

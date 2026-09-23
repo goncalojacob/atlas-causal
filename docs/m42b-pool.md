@@ -1763,6 +1763,56 @@ city* as places. Four lanes were named in `lanes`, all `americas`: `Q1123201`,
 `Q8934`, `Q775606` and `Q7134668`, which between them carry no located thing
 at all.
 
+### The check is red on this branch's head, and what that is
+
+**Run 1474, both attempts, on `d8bbdbac`.** Attempt 1 failed
+`graph-browser.test.mjs:379` — *"a parent keeps its ring at rest and at every
+zoom"*, `0.7685724975196452 against 0.5831308855537262`, the assertion that a
+ring's stroke is thinner after a wheel notch than before it. Attempt 2 failed
+**a different test**, `keyboard-browser.test.mjs:81` — *"the lanes are one tab
+stop each, and the arrows walk along a lane"*, on the focused id. **Attempt 2
+did not reproduce attempt 1's failure and attempt 1 did not reproduce attempt
+2's.**
+
+**Everything that fails is byte-identical to a green head.**
+`git diff --name-only cdddf186 HEAD -- tests/ src/` is **empty**: `origin/m42`
+carried the same `src/` and the same `tests/` — M85's changes to
+`graph-browser.test.mjs` included — through a **green** run 1468 at 00:16Z
+tonight. Both failing tests run on `?fixtures=1`, against
+`tests/fixtures/data/`, which this batch does not touch. Locally the browser
+pass is green 279 of 279, and `graph-browser.test.mjs` alone was run three
+more times after the red check and was green all three.
+
+**So this is not a regression in what the batch wrote, and the run is not
+calling it a flake either.** A regression fails the same test twice; this
+failed two different timing-sensitive assertions on two attempts of one
+commit. That is the signature `docs/m63-load.md` is about, and the mitigation
+that document prescribes — the browser suites run one at a time,
+`--test-concurrency=1` — **is already in the workflow and is the last lever it
+has**. The browser pass took **462s** on attempt 1 against the 380s of run
+1471 earlier tonight on the same workflow: the runner is slower, or the work
+is heavier, or both.
+
+**What the run thinks is actually happening, said plainly so a person can
+disagree with it.** Both failing assertions read the page **immediately after
+dispatching an event**, with a wait for a node to exist but none for the
+drawing to have settled — `graph-browser.test.mjs` reads `RING_AROUND` on the
+line after the `WheelEvent` goes out, and the keyboard suite reads the focused
+id after its keys. On a fast machine the redraw has happened; on a slow one it
+has not. **The proposed patch is one line in each: wait on the state the
+assertion is about — the drawing's `k` having changed, the focus having
+moved — before reading it**, the way `waitFor` is used everywhere else in
+those files.
+
+**This run did not make that change, and the reason is the protocol and not
+timidity.** Those are lane A's files, the fix is a test change with no record
+in it, and a records fire rewriting another lane's browser tests on its own is
+exactly the widening the brief forbids. **It is written here, in `STATUS.md`
+and in the fire's notification, for the assistant or a lane-A fire to take.**
+The records themselves are clean: `node tools/validate.mjs --index` reports
+**0 errors**, and the full local suite is **2,068 tests, 2,068 passing, 0
+skipped**.
+
 ## Where the run stands, for the fire that picks it up
 
 *23 September, after batch 7.*
