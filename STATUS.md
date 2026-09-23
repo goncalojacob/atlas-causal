@@ -20092,6 +20092,26 @@ and A13's relations pass, still never run.
       the title and not only the key**, and the cheaper standing fix is to
       keep reconciling: an atlas whose hand-written records all carry their
       item cannot be told the same event twice.
+1236. **A vein read only at its head is reported as exhausted.** Batch 43
+      measured the inverse `part of` vein at 600 Africa rows that fit their
+      parent's span, and then wrote that "Africa's top rows are refused by
+      rules the run already has" and took the lane that trails second
+      instead. The measurement was right and the conclusion was drawn from
+      the first seven rows of a ranking 600 long: the eighth, `Q114926903`,
+      files with no rule the run lacks, and batch 44 took four such rows out
+      of the same list an hour later. **A lane is exhausted when the rows
+      that file run out, not when the rows above twenty sitelinks do**, and a
+      batch note that names its blockers owes the count of rows below them.
+1237. **`placeRecord()` writes `precision: "point"` whatever the item's class
+      says, and three consecutive batches have corrected it by hand.** A12 (2)
+      states the rule — `city` for a settlement, `region` for anything larger
+      that is not a state, `point` for a battlefield or site, `country` since
+      `M80 done` — and the class table `data/imports/wikidata-seeds.json`
+      already carries the class of every place the import creates. `karameh`
+      in batch 42, `dien-bien-phu` in batch 43 and `incheon` in batch 44 were
+      each written `point` and each edited to `city` afterwards. It is a lookup
+      and a default, and until it is written every place this import creates
+      is drawn at the wrong precision until somebody notices.
 
 ## M84 — the owner's feedback document
 

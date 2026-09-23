@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-badr-1973--yom-kippur-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810"
+    }
+  ],
+  "from": "operation-badr-1973",
+  "to": "yom-kippur-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's lead says it in one clause: Operation Badr \"was an Egyptian military offensive and operation across the Suez Canal that destroyed the Bar-Lev Line ... on 6 October 1973. It was launched in conjunction with a Syrian military offensive against the Israeli-occupied Golan Heights, triggering the Yom Kippur War.\" The crossing is the war's opening act and the article names it as the thing that set the war off, so the edge runs from the operation to the war. This runs from a child to the parent it is filed under, which is not a contradiction: `parent` is a display fact and never enters the adjacency, and the atlas carries seventy-seven such links already. The atlas also holds `war-of-attrition --precondition-of--> yom-kippur-war` and `six-day-war --precondition-of--> yom-kippur-war`; those are what the war grew out of and this is what began it. Probable: Wikipedia alone.",
+  "dispute": null
+}
