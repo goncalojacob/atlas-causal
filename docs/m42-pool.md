@@ -5480,12 +5480,16 @@ the top**, and a fire that reads past the first seven rows finds work.
 
 | the record | sitelinks | lane | filed under | placed at | the edge it came for |
 | --- | --- | --- | --- | --- | --- |
-| `2022-somali-ministry-of-education-bombings` | 19 | africa | `somali-civil-war-2009-present` | `mogadishu` | **none**, and §*The two the articles would not connect* is why |
+| `2022-somali-ministry-of-education-bombings` | 18 | africa | `somali-civil-war-2009-present` | `mogadishu` | **none**, and §*The two the articles would not connect* is why |
 | `operation-badr-1973` | 18 | africa | `yom-kippur-war` | `sinai-peninsula` | it `--caused-->` `yom-kippur-war` |
-| `operation-unified-protector` | 14 | africa | `2011-military-intervention-in-libya` | `libya-q1016` | `operation-odyssey-dawn --precondition-of-->` it |
+| `operation-unified-protector` | 13 | africa | `2011-military-intervention-in-libya` | `libya-q1016` | `operation-odyssey-dawn --precondition-of-->` it |
 | `operation-linda-nchi` | 14 | africa | `somali-civil-war-2009-present` | `somalia-q1045` | `war-in-somalia --precondition-of-->` it |
-| `fall-of-kabul-2021` | 51 | asia | `war-in-afghanistan-2001-2021` | `kabul` | it `--caused-->` `republican-insurgency-in-afghanistan` |
-| `battle-of-inchon` | 34 | asia | `korean-war` | `incheon` (new) | **none**, same section |
+| `fall-of-kabul-2021` | 50 | asia | `war-in-afghanistan-2001-2021` | `kabul` | it `--caused-->` `republican-insurgency-in-afghanistan` |
+| `battle-of-inchon` | 33 | asia | `korean-war` | `incheon` (new) | **none**, same section |
+
+*The sitelinks column is the record's own `sitelinks.count`, which counts
+language editions. The vein ranks by `wikibase:sitelinks`, which counts every
+site, so four of these six read one higher there: 19, 14, 51 and 34.*
 
 **Main 243 → 243**, filed 529 → 535: all six went under an umbrella that was
 already drawn, and no slot was spent to keep the count where it was.
@@ -5499,8 +5503,9 @@ Placeless events do not move: 50 before and 50 after, and this is the first
 batch of the run where every single import is placed.
 
 **One place record is new: `incheon`**, written by the import from `Q20934`,
-which is the battle's `P276` and whose own `P625` is the battle's own coordinate
-to within four kilometres — 37.4639/126.6486 against 37.4761/126.6028. That is
+which is the battle's `P276` and whose own `P625` falls 4.3 km from the
+battle's own coordinate — 37.4639/126.6486 against 37.4761/126.6028, which is
+the width of the city and not a disagreement. That is
 the fourth time A9's first step and its second have agreed (`jadotville-q18780`
 in batch 41, `karameh` in batch 42, `dien-bien-phu` in batch 43), and the place
 is written for the city and not for the battle.
