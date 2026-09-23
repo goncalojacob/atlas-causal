@@ -14,16 +14,20 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
   "revised": null,
-  "origin": {
-    "tool": "assistant",
-    "run": "m53"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "m53-polities"
     ],
     "note": "M53: written on Wikidata’s Q45670 — P571 1139-07-25, P576 1910-10-05 — because the atlas held no Portugal before 1886 and twelve chain events named nobody for want of one. It overlaps `portugal` (1886–) and ends where `first-portuguese-republic` (1910–) begins; no relation is written to either, because whether these are the same record under two regimes or two records is the M49 question and is a person’s. It holds no ground."
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m53"
+  },
+  "wikidata": "Q45670",
+  "wikipedia": {
+    "en": "Kingdom of Portugal"
   },
   "sources": [
     {

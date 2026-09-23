@@ -25,6 +25,7 @@ import {
 } from '../tools/import/wikidata.mjs';
 import { schemas, ROOT } from './helpers.mjs';
 import { isDraft } from '../src/origin.js';
+import { PRECISIONS } from '../src/vocab.js';
 
 const FIXTURES = path.join(ROOT, 'tests', 'fixtures', 'wikidata');
 const load = async (name) => JSON.parse(await readFile(path.join(FIXTURES, name), 'utf8'));
@@ -269,6 +270,26 @@ test('a stated span beats a point in time at both ends (A12, deviation 1015)', a
     { start: 1974, end: 1974, date: '1974-04-25' });
 });
 
+// Deviation 1222: Q1421412, the Spanish Constitution of 1812, carries no P580,
+// no P582 and no P585, and the import refused it twice — but it carries P577,
+// a publication date, which for a constitution, a treaty text or a decree is
+// the day the thing came into the world. Reading it last, behind the span and
+// behind the point in time, dates a document the atlas could not hold before
+// and moves no interval that was already answered.
+test('a publication date dates a document nothing else dates (deviation 1222)', async () => {
+  const charter = (await read('Q9000015')).times;
+  assert.deepEqual(intervalFor('event', charter), { start: 1812, end: 1812 });
+  // Its own end, so nothing is left unstated and no flag is owed.
+  assert.equal(endUnstated('event', charter), false);
+  // It is read last: an item that states a span or a point in time is untouched.
+  assert.deepEqual(intervalFor('event', (await read('Q9000012')).times),
+    { start: 1956, end: 1956, date: '1956-10-29', endDate: '1956-11-07' });
+  assert.deepEqual(intervalFor('event', (await read('Q9000001')).times),
+    { start: 1974, end: 1974, date: '1974-04-25' });
+  // And an item with no date of any kind is still a refusal.
+  assert.equal(intervalFor('event', (await read('Q9000007')).times), null);
+});
+
 // A12 (3), the other half: an item that states a start and no P582 says
 // nothing about an end, and `end: null` in this atlas means "as far as the
 // data goes" rather than "still going on". The record carries the difference
@@ -472,6 +493,29 @@ test('a lane comes from the point, then from the country, then not at all', asyn
   assert.match(laneNote(viaCountry), /reaches no lane polygon/);
   assert.match(laneNote(viaCountry, { placeless: true }), /points at no place record/);
   assert.match(viaCountry.how, /Q9000006/);
+});
+
+// A12 (2), the half that never reached the tool: `placeRecord()` wrote
+// `precision: 'point'` for everything, so a department, a captaincy and a
+// historical region — areas, which PRECISIONS calls coarse and the map draws
+// wider and fainter — all arrived as points on the ground. Which precision a
+// class carries is the same editorial decision as which kind it is, so it
+// lives beside it in the class table rather than in a branch here.
+test('a place takes its precision from the class table (A12)', async () => {
+  const table = {
+    Q9100003: { kind: 'place' },
+    Q9100007: { kind: 'place', precision: 'region' },
+  };
+  assert.equal(classify({ classes: ['Q9100003'] }, table).precision, null,
+    'a class that says nothing about precision says nothing');
+  assert.equal(classify({ classes: ['Q9100007'] }, table).precision, 'region');
+  const item = await read('Q9000003');
+  const point = placeRecord(item, { id: 'northfield', created: '2026-09-04' });
+  assert.equal(point.where.precision, 'point', 'and the default is the point it always was');
+  const area = placeRecord(item, { id: 'northfield-region', created: '2026-09-04', precision: 'region' });
+  assert.equal(area.where.precision, 'region');
+  assert.ok(PRECISIONS.find((p) => p.id === 'region').coarse,
+    'which is one of the two the map draws as an area');
 });
 
 // --- the records ------------------------------------------------------------

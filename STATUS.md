@@ -20699,6 +20699,63 @@ record begins in 1492. **The edge was deleted rather than the date moved.**
 Deviations **1218 to 1221**, and `docs/m42b-pool.md` → "Batch 8" carries all of
 it with the counts per lane and per century.
 
+**M42b batch 9 — the Spanish American eighteenth century, and the wars of
+independence connected, 23 September.** The ninth fire on the branch, which
+took the two things the eighth fire's note left in the order it left them.
+**First**, `spanish-american-wars-of-independence` carried no edge at all and
+was a component of one: the eighth fire found the sentences and could not use
+them, because the record they run through — the Cortes of Cádiz — is an actor
+and an edge runs between events (deviation 1219), and the record that would
+carry them — the Spanish Constitution of 1812 — has no date on its Wikidata
+item that the import would read (deviation 1220). **Both are settled, and in
+the tool rather than by hand**: `Q1421412` carries `P577`, a publication date,
+1812, and `intervalFor()` now reads a publication date **last**, behind the
+span and behind the point in time, so nothing already answered moves
+(deviation 1222). The route to the component is the **Peninsular War**, which
+the wars' own article names in its first paragraph and which is Europe before
+1900 and so this partition's: the wars were "triggered by Napoleon's invasion
+of the Iberian Peninsula", the constitution "emerged as a response to the
+French occupation", the war is one of the seven conflicts the Napoleonic Wars
+are made of, and those "originated in political forces arising from the French
+Revolution", which was already in the component. **The largest connected
+component goes from 536 to 542** and the wars of independence are in it.
+
+**Second, the Americas' eighteenth century, which was the thinnest cell in this
+partition at three active events and is now seven**: the Rebellion of Túpac
+Amaru II, the Revolt of the Comuneros of New Granada, the Guaraní War and the
+Inconfidência Mineira, with the Spanish Constitution of 1812, the Peninsular
+War and the Napoleonic Wars beside them in Europe. **Seven events and five
+places**, every one draft and flagged, **none of them placeless**. Six of the
+seven were filed on arrival and the seventh is an umbrella, so two events
+already here — the transfer of the Portuguese court and the independence of
+Brazil — were filed under `atlantic-revolutions`, which the wars' article puts
+beside Spanish America's in the same paragraph: **the main count goes from 243
+to 242**. Six edges, each quoting its article at a named revision; two of them
+quote a sentence that hedges itself and quote it whole, and take
+`precondition-of`, the weakest type it supports, rather than `caused`.
+
+**Two fixes in the import that belong to both branches.** `placeRecord()` wrote
+`precision: 'point'` for every place any import has ever made, which A12 (2)
+had corrected in a pass's own script and never in the tool; a place class of
+`data/imports/wikidata-seeds.json` may now carry `precision`, the schema
+declares the four, and three classes carry `region` today (deviation 1223). And
+the import wrote a **second actor for a polity the atlas already held** — the
+Viceroyalty of the Río de la Plata, whose Historical Basemaps record is dated
+1783–1814 from the snapshots and whose item is dated 1776–1810 — because the
+names match and the dates do not; the duplicate was deleted and the item
+written onto the record that was there, and the same was done for
+`kingdom-of-portugal`, closing the `aztec-empire` and `inca-empire` failure for
+two more polities (deviation 1224). **Every record this branch has written now
+carries the cached Wikipedia lead as its summary**, at the revision the cache
+names, batch 8's eleven included.
+
+**`Q2734662`, the Bourbon Reforms, was refused**: its only class is *form of
+government* and it carries no date of any kind, and it is what both risings of
+1780–1781 were against by their own first paragraphs. `docs/m53-polities.md`
+§4.1 is re-taken at **371 of 768**. Deviations **1222 to 1225**, and
+`docs/m42b-pool.md` → "Batch 9" carries all of it with the counts per lane and
+per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

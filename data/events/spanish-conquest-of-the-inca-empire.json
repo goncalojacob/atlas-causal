@@ -14,32 +14,37 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q636771",
-  "sitelinks": {
-    "count": 33,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q636771",
   "wikipedia": {
     "en": "Spanish conquest of the Inca Empire",
     "pt": "Queda do Império Inca"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q636771"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of the Inca Empire\", revision 1375586932"
     }
   ],
   "title": "Spanish conquest of the Inca Empire",
-  "summary": "Wikidata item Q636771, imported by tools/import/wikidata.mjs. The item's own description reads \"1532 period of Spanish conquest in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Spanish conquest of the Inca Empire\", at revision 1375586932, opens: \"The Spanish conquest of the Inca Empire, also known as the Conquest of Peru, was one of the most important campaigns in the Spanish colonization of the Americas. After years of preliminary exploration and military skirmishes, 168 Spanish soldiers under conquistador Francisco Pizarro, along with his brothers in arms and their Indian auxiliaries, captured the last Sapa Inca, Atahualpa, at the Battle of Cajamarca in 1532. It was the first step in a long campaign that took decades of fighting but ended in Spanish victory in 1572 and colonization of the region as the Viceroyalty of Peru.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q636771, imported by tools/import/wikidata.mjs. The item's own description reads \"1532 period of Spanish conquest in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1532,
     "end": 1572,
@@ -48,7 +53,7 @@
   "place": null,
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "spanish-colonization-of-the-americas",
   "category": "war",
-  "actors": [],
-  "parent": "spanish-colonization-of-the-americas"
+  "actors": []
 }

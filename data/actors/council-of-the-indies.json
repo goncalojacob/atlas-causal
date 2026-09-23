@@ -14,28 +14,33 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q1127285",
-  "sitelinks": {
-    "count": 18,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1127285",
   "wikipedia": {
     "en": "Council of the Indies",
     "pt": "Conselho das Índias"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1127285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Council of the Indies\", revision 1365243108"
     }
   ],
   "actorType": "institution",
@@ -43,7 +48,7 @@
     "Council of the Indies",
     "Conselho das Índias"
   ],
-  "summary": "Wikidata item Q1127285, imported by tools/import/wikidata.mjs. The item's own description reads \"administrative organ of the Spanish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Council of the Indies\", at revision 1365243108, opens: \"The Council of the Indies, officially the Royal and Supreme Council of the Indies, was the most important administrative organ of the Spanish Empire for the Americas and those territories it governed, such as the Spanish East Indies. The Spanish Crown asserted absolute power over the Indies, and the Council of the Indies was the administrative and advisory body to the Crown in respect of those overseas realms. It was established in 1524 by Charles V to administer \"the Indies\", Spain's name for its territories.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1127285, imported by tools/import/wikidata.mjs. The item's own description reads \"administrative organ of the Spanish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1511,
     "end": 1834

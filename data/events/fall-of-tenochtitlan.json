@@ -14,32 +14,37 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q593267",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q593267",
   "wikipedia": {
     "en": "Fall of Tenochtitlan",
     "pt": "Cerco de Tenochtitlán"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q593267"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304"
     }
   ],
   "title": "Fall of Tenochtitlan",
-  "summary": "Wikidata item Q593267, imported by tools/import/wikidata.mjs. The item's own description reads \"investment, capture and fall of Tenochtitlan by the Spanish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Fall of Tenochtitlan\", at revision 1371683304, opens: \"The fall of Tenochtitlan, the capital of the Mexica, was an important event in the Spanish conquest of the Mexica. It occurred in 1521 following extensive negotiations between local factions and Spanish conquistador Hernán Cortés. He was aided by La Malinche, his interpreter and companion, and by thousands of indigenous allies, especially Tlaxcaltec warriors.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q593267, imported by tools/import/wikidata.mjs. The item's own description reads \"investment, capture and fall of Tenochtitlan by the Spanish Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1521,
     "end": 1521,
@@ -49,7 +54,7 @@
   "place": "tenochtitlan",
   "region": null,
   "regionNote": null,
+  "parent": "spanish-conquest-of-the-aztec-empire",
   "category": "war",
-  "actors": [],
-  "parent": "spanish-conquest-of-the-aztec-empire"
+  "actors": []
 }

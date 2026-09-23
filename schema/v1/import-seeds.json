@@ -88,7 +88,17 @@
             "type": "string",
             "enum": ["person", "polity", "institution", "people"]
           },
-          "category": {
+          "precision": {
+    "description": "How coarsely a place of this class is drawn: one of the four of src/vocab.js. Meaningful only where kind is place. A class that leaves it out is a point on the ground, which is what every imported place was until M42b batch 9 — a department, a captaincy or a historical region is an area and PRECISIONS calls those coarse, so the map draws them wider and fainter. The decision is editorial, like the kind and the category beside it, and belongs in a file somebody can argue with.",
+    "type": "string",
+    "enum": [
+     "point",
+     "city",
+     "region",
+     "country"
+    ]
+   },
+   "category": {
             "description": "Which category of data/categories.json an item of this class becomes. Meaningful only where kind is event, and checked against that file by tools/validate.mjs — a category spelled wrong here would be written onto every record the class creates. A class with none is a class whose mapping nobody has decided: the import writes no category for it rather than guessing one (plan decision 13, amendment A17).",
             "type": "string",
             "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",

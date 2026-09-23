@@ -14,32 +14,37 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q1229264",
-  "sitelinks": {
-    "count": 17,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1229264",
   "wikipedia": {
     "en": "Valladolid debate",
     "pt": "Controvérsia de Valladolid"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q1229264"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Valladolid debate\", revision 1372190197"
     }
   ],
   "title": "Valladolid debate",
-  "summary": "Wikidata item Q1229264, imported by tools/import/wikidata.mjs. The item's own description reads \"moral debate in Spain between 1550–1551 to discuss the rights and treatment of a colonized people by colonizers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Valladolid debate\", at revision 1372190197, opens: \"The Valladolid debate was the first public debate in European history to discuss the morality, rights and treatment of Indigenous people by European colonizers. Held in the Colegio de San Gregorio, in the Spanish city of Valladolid, it was an intellectual and theological debate about the moral legitimacy of the conquest of the Americas, its justification for the conversion to Catholicism, and more specifically about the relations between the European settlers and the natives of the New World. It consisted of a number of opposing views about the way natives were to be integrated into Spanish society, their conversion to Catholicism, and their rights.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1229264, imported by tools/import/wikidata.mjs. The item's own description reads \"moral debate in Spain between 1550–1551 to discuss the rights and treatment of a colonized people by colonizers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1550,
     "end": 1551,
@@ -49,6 +54,6 @@
   "place": "valladolid",
   "region": null,
   "regionNote": null,
-  "actors": [],
-  "parent": "spanish-colonization-of-the-americas"
+  "parent": "spanish-colonization-of-the-americas",
+  "actors": []
 }

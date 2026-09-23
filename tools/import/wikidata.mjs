@@ -100,6 +100,7 @@ export const PROPERTIES = Object.freeze({
   start: 'P580',
   end: 'P582',
   pointInTime: 'P585',
+  published: 'P577',
   inception: 'P571',
   dissolved: 'P576',
   born: 'P569',
@@ -394,6 +395,7 @@ export function readEntity(entity) {
       start: claimTimes(entity, PROPERTIES.start),
       end: claimTimes(entity, PROPERTIES.end),
       pointInTime: claimTimes(entity, PROPERTIES.pointInTime),
+      published: claimTimes(entity, PROPERTIES.published),
       inception: claimTimes(entity, PROPERTIES.inception),
       dissolved: claimTimes(entity, PROPERTIES.dissolved),
       born: claimTimes(entity, PROPERTIES.born),
@@ -435,6 +437,15 @@ export function classify(read, classes = {}) {
     const categories = [...new Set(known.map(([, e]) => e.category).filter(Boolean))];
     return { kind, actorType: null, category: categories.length === 1 ? categories[0] : null, via: known.map(([q]) => q) };
   }
+  if (kind === 'place') {
+    // A12 (2): how coarsely a place is drawn is the class's decision too, and
+    // one class saying `region` while another says nothing is not a
+    // disagreement — it is the one that knows. Classes that name two different
+    // precisions leave it unset and the record is a point, which is what every
+    // imported place was before this.
+    const precisions = [...new Set(known.map(([, e]) => e.precision).filter(Boolean))];
+    return { kind, actorType: null, precision: precisions.length === 1 ? precisions[0] : null, via: known.map(([q]) => q) };
+  }
   if (kind !== 'actor') return { kind, actorType: null, via: known.map(([q]) => q) };
   const types = [...new Set(known.map(([, e]) => e.actorType).filter(Boolean))];
   if (types.length !== 1) {
@@ -466,7 +477,12 @@ function pickTimes(kind, times) {
   }
   const span = first(times.start) ?? first(times.inception);
   if (span) return { from: span, to: first(times.end) ?? first(times.dissolved), stated: true };
-  const point = first(times.pointInTime);
+  // Deviation 1222: a document — a constitution, a treaty text, a decree —
+  // is often dated on Wikidata by P577 alone, and the import refused every one
+  // of them. A publication date is the day the thing came into the world, so it
+  // is read as a point in time, but last: an item that states a span or a P585
+  // has already answered and this never moves that answer.
+  const point = first(times.pointInTime) ?? first(times.published);
   return { from: point, to: point };
 }
 
@@ -685,7 +701,7 @@ function envelope(id, kind, created, fields, { flags = [] } = {}) {
   };
 }
 
-export function placeRecord(read, { id, created, region = null, regionNote = null }) {
+export function placeRecord(read, { id, created, region = null, regionNote = null, precision = 'point' }) {
   const { title: label, english } = titleFor(read);
   return envelope(id, 'place', created, {
     ...identityOf(read, created),
@@ -700,7 +716,7 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     // record already, in `wikidata`.
     sources: [],
     names: namesFor(read),
-    where: { lon: read.point.lon, lat: read.point.lat, precision: 'point', label },
+    where: { lon: read.point.lon, lat: read.point.lat, precision, label },
     region,
     regionNote: region ? regionNote : null,
     summary: importedSummary(read),
@@ -1143,7 +1159,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'no lane can be reached from its point or from the country it names; the index could not place it');
         continue;
       }
-      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane) });
+      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane), precision: classified.precision ?? 'point' });
       written.push(await writeRecord(dataDir, 'places', record));
       taken.add(id);
       byItem.set(`place:${qid}`, id);

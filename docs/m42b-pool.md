@@ -2037,62 +2037,315 @@ off a record inside the depopulation's span — the conquests all start later
 still — or to re-read the depopulation record's own start, which is not this
 run's to do because that record is not the import's.
 
+## Batch 9 — the Spanish American eighteenth century, and the connection of the wars of independence
+
+*23 September, the ninth fire. Seven events, five places, five edges, one
+source, three fixes in the import itself.* The eighth fire left two things for
+this one, in this order: **`spanish-american-wars-of-independence` carried no
+edge at all and was a component of one**, the highest-value unconnected record
+in the partition, and **the Americas' eighteenth century was the thinnest cell
+here**, at three active events. This fire took both, and the first decided the
+shape of the second.
+
+### The three fixes in the tool, which are the eighth fire's refusals
+
+**Deviation 1220 is settled, and it was settled in the import rather than by
+hand.** `Q1421412`, the Spanish Constitution of 1812, carries no `P580`, no
+`P582` and no `P585` — but it carries **`P577`, a publication date**, 1812 at
+year precision, which for a constitution, a treaty text or a decree is the day
+the thing came into the world. `intervalFor()` now reads it, **last**, behind
+the span and behind the point in time, so nothing that was already answered
+moves; `tests/import-wikidata.test.mjs` holds the order with a fixture item
+(`Q9000015`) whose only date is a publication. The record exists, dated 1812,
+and neither of deviation 1220's two costly options — writing a record from an
+article, or editing Wikidata — was taken.
+
+**A12 (2)'s other half had never reached the tool.** `placeRecord()` wrote
+`precision: 'point'` for every place it ever made, so a department, a captaincy
+and a historical region all arrived as points on the ground. Which precision a
+class carries is the same editorial decision as which kind it is, so it now
+lives **beside it in the class table** — `precision` on a place class of
+`data/imports/wikidata-seeds.json`, declared in `schema/v1/import-seeds.json`
+and read by `classify()` — and the default is still the point it always was.
+Three places this fire had already written as points were deleted, their
+cursor cleared and the items re-imported as `region`.
+
+**A fourth actor for a polity the atlas already held was refused.** The import
+wrote `viceroyalty-of-the-rio-de-la-plata-q210551` beside the
+`viceroyalty-of-the-rio-de-la-plata` the Historical Basemaps import had left
+(1783–1814, no Wikidata item): the names match exactly and the dates do not —
+1776–1810 against 1783–1814 — so the tool refused the match and suffixed a
+second record. **The duplicate was deleted and `Q210551` written onto the
+record that was already there**, which is the additive rule of
+`tools/import/identity.mjs` and is what stops the next sweep doing it again.
+The same was done for `kingdom-of-portugal`, which now carries `Q45670`: that
+is the `aztec-empire` and `inca-empire` failure the eighth fire warned about,
+closed for two more polities.
+
+### What was imported
+
+| record | item | span | lane |
+| --- | --- | --- | --- |
+| `spanish-constitution-of-1812` | `Q1421412` | 1812 | europe |
+| `rebellion-of-tupac-amaru-ii` | `Q1806552` | 1780–1783 | americas |
+| `revolt-of-the-comuneros-new-granada` | `Q2095753` | 1781 | americas |
+| `guarani-war` | `Q2427419` | 1754–1756 | americas |
+| `inconfidencia-mineira` | `Q2558843` | 1789 | americas |
+| `peninsular-war` | `Q152499` | 1808–1814 | europe |
+| `napoleonic-wars` | `Q78994` | 1803–1815 | europe |
+
+Five places: `santander-department` (`Q235166`), `misiones-orientales`
+(`Q2628446`) and `minas-gerais-captaincy` (`Q9696269`), each `region` under the
+new rule; `peru-q419` and `spain-q29`, written as the 22 September pass wrote
+`colombia-q739` and `argentina-q414`, because A9's order reaches the country
+when nothing finer is on the item. `peninsular-war` and `napoleonic-wars` found
+their places in the atlas already (`iberian-peninsula`, `europe`). **No event
+of this batch is placeless.**
+
+**Every record carries the cached lead as its summary, at the revision the
+cache names**, with the `wikipedia-en` citation and the `summary-from-lead`
+flag — and so do the eleven of batch 8, which had arrived with the
+placeholder. The `summary-imported` warning falls by seventeen.
+
+### Two classes added, and one refusal
+
+`Q20203507` *viceroyalty of the Spanish Empire* → actor, polity; `Q1620908`
+*historical region* and `Q7468093` *captaincy of Brazil* → place, `region`.
+Each label read from the class item itself over the network.
+
+**`Q2734662`, the Bourbon Reforms, was refused and is worth the sentence.** Its
+only `P31` is `Q1307214`, *form of government* — "Wikidata metaclass for
+government in terms of organisational model or type" — which is not an event of
+this atlas, and the item carries **no date of any kind**. The reforms are what
+both risings of 1780–1781 were against, by their own articles' first
+paragraphs, and the atlas cannot hold them from this item. A fire that wants
+the Bourbon Reforms has to take them from the article, which is deviation
+1220's problem again and does not have deviation 1220's answer.
+
+### The edges, and the wars of independence connected
+
+Six edges, every one of them to a record the atlas already held:
+
+| from | to | type | why |
+| --- | --- | --- | --- |
+| `peninsular-war` | `spanish-american-wars-of-independence` | caused | "both conflicts were **triggered** by Napoleon's invasion of the Iberian Peninsula" |
+| `peninsular-war` | `spanish-constitution-of-1812` | reacted-to | the constitution "emerged as a **response to the French occupation**" |
+| `peninsular-war` | `independence-of-brazil-1822` | caused | the same sentence, the Brazilian half of it |
+| `french-revolution` | `napoleonic-wars` | enabled | the wars "**originated in political forces arising from** the French Revolution" |
+| `rebellion-of-tupac-amaru-ii` | `spanish-american-wars-of-independence` | precondition-of | "important elements of the **political background** in which the wars took place" |
+| `revolt-of-the-comuneros-new-granada` | `spanish-american-wars-of-independence` | precondition-of | the same paragraph, which names both risings in one sentence |
+
+**`spanish-american-wars-of-independence` is in the largest component**, which
+is what this fire was for. The route is the one the eighth fire could not take:
+not the Cortes of Cádiz, which is an actor and can carry no edge (deviation
+1219), but the **Peninsular War**, which the wars' own article names in its
+first paragraph and which is Europe before 1900 and therefore this partition's
+to import. The constitution hangs off the same war, and the war off the
+Napoleonic Wars, and those off the French Revolution, which was already in the
+component. The largest component goes from **536 to 542**.
+
+**The two `precondition-of` edges quote a sentence that hedges itself**, and
+they quote it whole rather than choosing the half that suits: "The loss of high
+offices to peninsulars and the eighteenth-century revolts in Spanish South
+America were some of the direct causes of the wars of independence, which took
+place decades later, but they have been considered important elements of the
+political background in which the wars took place." `precondition-of` is the
+weakest type that sentence supports; `caused` is not written from a sentence
+whose second clause takes back its first.
+
+**One second source, and the reason there is only one.** The paragraph those
+two edges come from cites Lynch, Rodríguez and Kinsbruner. Only Kinsbruner is
+given in full anywhere in the article — *Independence in Spanish America: Civil
+Wars, Revolutions, and Underdevelopment*, University of New Mexico Press, 1994,
+ISBN 978-0-8263-2177-0 — so that is the source record this fire wrote
+(`m72-second-source`), cited with the page range the article's own reference
+gives. The other two appear only in short form, and inventing a publisher and a
+year to complete them would be inventing bibliography. **The confidence stays
+`probable`**: A2 allows `consensus` through a work Wikipedia itself cites, and
+this run cited that work without reading it, which is not the same thing.
+
+### What earned no edge
+
+`guarani-war` and `inconfidencia-mineira` are components of one. Both leads name
+a cause and neither cause is a record here: the Guaraní War "was a result of the
+1750 Treaty of Madrid", and the Inconfidência's "external inspiration was the
+independence of thirteen British colonies in North America following the
+American Revolutionary War". **The Treaty of Madrid (1750) has no article this
+fire could resolve** — `Treaty_of_Madrid_(1750)` answers with the disambiguation
+page `Q256055` — and the American Revolutionary War (`Q40949`, resolved and not
+imported) is North America, which A10's order puts behind South and Central
+America while those trail. Both are the next fire's, and the American
+Revolutionary War would connect the Inconfidência, the Atlantic Revolutions and
+the North American cell in one record.
+
+`peninsular-war` → `transfer-of-the-portuguese-court-to-brazil-1807` is the
+edge the article's own sentence offers and rule 4 refuses: the flight is dated
+1807 and the war record 1808, because Wikidata dates the Peninsular War from
+the Dos de Mayo and the invasion of Portugal was the year before. The edge to
+`independence-of-brazil-1822` carries the same sentence instead and says so.
+
+### Filing (A6, A8), and the main count
+
+The main count was **243** before this fire and is **242** after it. Seven
+events arrived; six were filed on arrival, and the seventh — `napoleonic-wars`
+— is an umbrella and stayed main, so filing had to find two events already here
+that belonged under one:
+
+- `guarani-war` → `spanish-colonization-of-the-americas`
+- `rebellion-of-tupac-amaru-ii` → `spanish-colonization-of-the-americas` **+**
+  `atlantic-revolutions` (A8, two parents)
+- `revolt-of-the-comuneros-new-granada` → the same two
+- `inconfidencia-mineira` → `atlantic-revolutions`
+- `spanish-constitution-of-1812` → `atlantic-revolutions`
+- `peninsular-war` → `napoleonic-wars`, which its own lead lists among the
+  seven conflicts the Napoleonic Wars are made of
+- `transfer-of-the-portuguese-court-to-brazil-1807` → `atlantic-revolutions`
+- `independence-of-brazil-1822` → `atlantic-revolutions`, which the wars'
+  article puts beside Spanish America's in the same paragraph
+
+### The actors, and `docs/m53-polities.md`
+
+`P710` was read on every item and answered once: `Q2427419` names `Q45670`, the
+Kingdom of Portugal, which this atlas holds, so `guarani-war` names
+`kingdom-of-portugal` as a `belligerent`. `Q3399982`, the Kingdom of Spain of
+1700–1873, and `Q46429`, the Guaraní people, are not records here — `spain`
+begins in 1886 and the three Guaraní records are 1492–1499 snapshots — and
+naming either would be naming the wrong thing. The other six items name no
+participant at all. §4.1 of `docs/m53-polities.md` is re-taken at **371 of
+768**, and the paragraph about the two counting rules with it.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 761 active | **768 active** |
+| **main** | 243 | **242 — one lower** |
+| filed | 518 | 526 |
+| active edges | 746 | 752 |
+| **largest connected component** | **536** | **542** |
+| components | 185 | 186 |
+| events with no edge at all | 156 | 157 |
+| placeless active events | 53 | **53 — none of this batch is one** |
+| imported | — | 7 events, 5 places, 0 actors kept |
+| refused | — | 1 item, 1 edge, 1 duplicate actor |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 3 / 2 | — | — | 5 / 5 | 8 / 7 |
+| 16th c. | 8 / 1 | — | — | 9 / 3 | 17 / 4 |
+| 17th c. | 21 / 2 | — | — | 6 / 6 | 27 / 8 |
+| 18th c. | 20 / 2 | — | — | **7 / 1** | 27 / 3 |
+| 19th c. | **15 / 10** | 19 / 1 | 7 / 7 | 38 / 9 | 79 / 27 |
+| 20th c. | 239 / 64 | 61 / 23 | 100 / 45 | 89 / 31 | 489 / 163 |
+| 21st c. | 52 / 7 | 26 / 7 | 23 / 15 | 20 / 1 | 121 / 30 |
+
+*active / main, from `data/index/`. The lanes in whole: europe 358 / 88, africa
+106 / 31, asia 130 / 67, americas 174 / 56, oceania 0.*
+
+### Deviations
+
+**1222. A publication date now dates a document, and it is read last.**
+`Q1421412` was refused twice by two fires for having no `P580`, `P582` or
+`P585`, and it carries `P577` — 1812, the year the Constitution of Cádiz was
+published. `PROPERTIES.published` is `P577`, `readEntity` reads it and
+`pickTimes` takes it **after** the point in time, so an item that states a span
+or a `P585` is untouched and only an item that says nothing else is affected.
+The test holds all three cases and the refusal of an item with no date at all.
+**This fixes both branches** and M42 gets it by merge.
+
+**1223. `placeRecord()` wrote `point` for everything, and the precision is the
+class's to say.** A12 (2) asked for `city`, `region`, `country` and `point` by
+the item's class and the pass that wrote the 410 places of 22 September did it
+in a script of its own; the tool itself never learned it, so every place any
+import wrote after that was a point. A place class of the seeds file may now
+carry `precision`, the schema declares the four, `classify()` returns it and
+`placeRecord()` defaults to `point`. Three classes carry one today — a
+department of Colombia, a historical region, a captaincy of Brazil — all
+`region`. **This fixes both branches too.**
+
+**1224. The import writes a second actor where a name matches and the dates do
+not.** `viceroyalty-of-the-rio-de-la-plata` is the case: Historical Basemaps
+dates it 1783–1814 from the snapshots it was drawn in and Wikidata dates it
+1776–1810 from its inception and dissolution, and `datesMatch` is right to
+refuse a match on that. But the suffixed record it writes instead —
+`…-q210551` — is a second polity for one polity, which is worse than either
+date. **This fire deleted it and filled the identity gap on the record that was
+there**, and did the same for `kingdom-of-portugal`. The general fix is not
+written: a name that folds exactly, an `actorType` that agrees and spans that
+overlap is not the same test as `datesMatch`, and changing what the import
+considers a match is a decision about every import there will ever be, not a
+batch's to take quietly. A fire that takes it should say so on both branches.
+
+**1225. `Q1421412` was cleared from the import cursor, and that is the only way
+a fixed refusal can be re-read.** `data/imports/wikidata-state.json` records
+what the import has *processed*, not what it imported, so an item refused for a
+reason since fixed is never looked at again. Removing the one line is the
+smallest correction; a tool that told the two apart would be better and is
+nobody's yet.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 8.*
+*23 September, after batch 9.*
 
 | | |
 | --- | --- |
-| corpus | **758 active** |
-| **main** | **243** — the count the next batch must not raise |
-| **largest connected component** | **533** |
-| components | 185 |
-| events with no edge at all | 156 |
-| Europe before 1900 | 64 active, 16 main |
-| the `americas` lane | **170 active, 58 main** |
-| the thinnest cells left | the Americas' 18th (3) and 15th (3), Europe's 15th (3) |
+| corpus | **768 active** |
+| **main** | **242** — the count the next batch must not raise |
+| **largest connected component** | **542** |
+| components | 186 |
+| events with no edge at all | 157 |
+| Europe before 1900 | 67 active, 17 main |
+| the `americas` lane | **174 active, 56 main** |
+| the thinnest cells left | Europe's 15th (3), the Americas' 15th (5) and 17th (6) |
 
 **What the next fire should weigh, in order:**
 
-- **The Americas' 18th century is now the thinnest cell in this partition**, at
-  three active events, and batch 7's note named its vein: the Túpac Amaru and
-  Comunero risings, which reach forward into the wars of independence batch 7
-  imported. Europe's 15th century is level with it at three and has no umbrella;
-  the Hundred Years' War ends in 1453, inside it.
-- **`spanish-american-wars-of-independence` carries no edge at all and is a
-  component of one.** Batch 7 imported twenty-three records around it and the
-  record itself is unreachable from the rest of the atlas. The sentences that
-  would connect it are read and quoted in deviations 1219 and 1220 above, at
-  revision 1375550213, and both run through the Cortes of Cádiz, which this
-  atlas now holds as an **actor**, and through the Spanish Constitution of 1812,
-  which Wikidata gives **no date at all**. Deviation 1220 sets out the two ways
-  to settle it and says why this fire chose neither. **This is the single
-  highest-value unconnected record in the partition** and it is worth a fire's
-  first decision rather than its last.
-- **Four of this batch's records name neither an actor nor a place**, and the
-  reason is deviation 1213, still unfixed: their items' `P276` and `P17` name
-  polities — the Aztec Empire, the Inca Empire, Guatemala, the Spanish Empire —
-  and a polity is an actor in this atlas on some records and a place on others.
-  A fire that fixes 1213 in the tool fixes it for both branches and should say
-  so on both.
-- **`aztec-empire` and `inca-empire` carry no Wikidata item**, so the import
-  cannot match them and a later sweep of `Q2608489` or `Q28573` will write a
-  second actor for the same polity. This fire named `inca-empire` on two events
-  by hand for exactly that reason. A fire with `--reconcile` should close it,
-  together with the `santiago-de-cuba` and `havana` gap batch 7 reported, which
-  is unchanged.
-- **`battle-of-guayabos` still carries the import's placeholder summary**,
-  unchanged from batch 7: it has no English article and A12's C1 is
-  English-only by construction.
-- **`great-depression` and `la-violencia` are still A12's, not this branch's.**
-  Unchanged since batch 3.
-- **The rate limit is better than batch 5 and 7 found it.** `Special:EntityData`,
-  `api.php` and `query.wikidata.org` all answered through this fire, with
-  intermittent empty bodies that a retry with a short backoff cleared every
-  time — the helper this fire used retried four times with 3, 6 and 9 second
-  waits and never exhausted them. **Two full article bodies were read**, through
-  `index.php?action=raw&oldid=<rev>`, which returns the wikitext at the exact
-  revision a record cites and cost one request each; that endpoint answered
-  both times where batch 7 found `page/html` and `api.php` returning 429. **It
-  is the cheapest way to check a sentence a record will cite** and the next fire
-  should prefer it.
+- **The American Revolutionary War is the one record that would pay for
+  itself three times over.** `Q40949`, resolved by this fire and not imported.
+  It is what the Inconfidência Mineira's own lead names as its external
+  inspiration — the Inconfidência is a component of one for want of it — it is
+  one of the Atlantic Revolutions by that umbrella's own article, and it is the
+  first record of the North American half of the `americas` lane, which is
+  nearly empty. A10 puts South and Central America ahead of North America
+  *while those trail*, and after this fire the Americas' 18th century holds
+  seven: the next fire should read that clause again and, if it takes the war,
+  say in the note that it did.
+- **Europe's fifteenth century is now the thinnest cell in this partition**, at
+  three active events — the Italian Wars, one of their campaigns and the Treaty
+  of Tordesillas — and it has no umbrella. The Hundred Years' War ends in 1453,
+  inside it, and the fall of Constantinople is 1453 too; neither is here, and
+  the second is Asia's lane by its place and M42's by the partition.
+- **The Bourbon Reforms are the hole both eighteenth-century risings point
+  at.** Both articles name them as the grievance in their first paragraph and
+  `Q2734662` cannot be imported: its only class is *form of government* and it
+  carries no date. It is the clearest case yet for a path that creates a record
+  from an article at a named revision rather than from an item, which deviation
+  1220 set out and this fire did not need.
+- **The Treaty of Madrid (1750) has no resolvable article title.**
+  `Treaty_of_Madrid_(1750)` answers with the disambiguation page `Q256055`
+  through the REST summary endpoint. It is what the Guaraní War was a result
+  of, by that war's own lead. A fire with a working `wbsearchentities` — this
+  one found `api.php` answering 429 to every search — should settle it in one
+  request.
+- **`aztec-empire` and `inca-empire` still carry no Wikidata item.** Unchanged
+  since batch 8, and the reason is now written up as deviation 1224: this fire
+  hit the same failure from the other side, where the atlas's record *and* the
+  item both exist and the dates disagree, and closed it by hand for
+  `viceroyalty-of-the-rio-de-la-plata` and `kingdom-of-portugal`. The general
+  fix is a change to what the import calls a match and belongs to a fire that
+  will say so on both branches.
+- **`battle-of-guayabos` still carries the import's placeholder summary**: no
+  English article, and A12's C1 is English-only by construction. Unchanged
+  since batch 7. Every other record this branch has written now carries its
+  cached lead.
+- **`great-depression` and `la-violencia` are still A12's, not this
+  branch's.** Unchanged since batch 3.
+- **The rate limit moved against searching and not against reading.**
+  `Special:EntityData` answered every time; `index.php?action=raw&oldid=<rev>`
+  answered every time and is still the cheapest way to check a sentence a
+  record will cite — this fire read two full articles that way, for four of its
+  six edges. The REST summary endpoint answered with retries of 3, 6 and 9
+  seconds. **`api.php?action=wbsearchentities` answered 429 to everything**, so
+  every item of this batch was found by taking the article title to the REST
+  summary endpoint and reading `wikibase_item` off it. The next fire should
+  start there rather than spending a round on the search API.

@@ -1098,7 +1098,18 @@
     "Q13695",
     "Q205119",
     "Q5582862",
-    "Q8356"
+    "Q8356",
+    "Q1806552",
+    "Q2095753",
+    "Q2427419",
+    "Q2558843",
+    "Q210551",
+    "Q2734662",
+    "Q235166",
+    "Q2628446",
+    "Q9696269",
+    "Q152499",
+    "Q78994"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1315,7 +1326,18 @@
     "Q13695": "americas",
     "Q205119": "americas",
     "Q5582862": "americas",
-    "Q8356": "europe"
+    "Q8356": "europe",
+    "Q1806552": "americas",
+    "Q2095753": "americas",
+    "Q2427419": "americas",
+    "Q2558843": "americas",
+    "Q210551": "americas",
+    "Q2734662": "europe",
+    "Q235166": "americas",
+    "Q2628446": "americas",
+    "Q9696269": "americas",
+    "Q152499": "europe",
+    "Q78994": "europe"
   },
   "queries": [
     {
@@ -4496,6 +4518,7 @@
     },
     "Q215655": {
       "kind": "place",
+      "precision": "region",
       "label": "department of Colombia",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
@@ -4750,6 +4773,24 @@
       "kind": "event",
       "label": "disputation",
       "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A formalized method of debate; the Valladolid debate is an instance of one. No category: a debate is none of the twelve, and `other` is for a kind the atlas has too few of to name, not for one nobody looked at."
+    },
+    "Q1620908": {
+      "kind": "place",
+      "precision": "region",
+      "label": "historical region",
+      "note": "Added in M42b batch 9, for the Misiones Orientales the Guaraní War was fought over. The label and the description are read from the class item itself over the network: Wikidata glosses it \u201cgeographic or cultural region which existed in the past, that may or may not exist anymore\u201d. A region that no longer exists is still somewhere events happened, which is what a place is here; `precision` says how coarsely it is drawn."
+    },
+    "Q7468093": {
+      "kind": "place",
+      "precision": "region",
+      "label": "captaincy of Brazil",
+      "note": "Added in M42b batch 9, for the Minas Gerais Captaincy the Inconfid\u00eancia Mineira happened in. Read from the class item itself: \u201cadministrative divisions and hereditary fiefs of Portugal in the colony of Terra de Santa Cruz\u201d. A captaincy is ground under an administration and the atlas holds it as a place, the way it holds a department of Colombia (Q215655); what the Portuguese crown did there are the events."
+    },
+    "Q20203507": {
+      "kind": "actor",
+      "actorType": "polity",
+      "label": "viceroyalty of the Spanish Empire",
+      "note": "Added in M42b batch 9, the Spanish American eighteenth century. The label is read from the class item itself over the network, which this sandbox has; the item subclasses Q43229, organization. A viceroyalty governed ground under a viceroy and is a polity in this atlas the way a colony and a kingdom are, not an event: what it did are the events."
     },
     "Q7755": {
       "kind": "event",

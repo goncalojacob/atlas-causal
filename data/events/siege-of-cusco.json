@@ -14,32 +14,37 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
-  "wikidata": "Q2398589",
-  "sitelinks": {
-    "count": 12,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q2398589",
   "wikipedia": {
     "en": "Siege of Cusco",
     "pt": "Cerco de Cusco"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q2398589"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cusco\", revision 1370740508"
     }
   ],
   "title": "Siege of Cusco",
-  "summary": "Wikidata item Q2398589, imported by tools/import/wikidata.mjs. The item's own description reads \"1536–1537 siege in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Siege of Cusco\", at revision 1370740508, opens: \"The 10-month siege of Cusco by the Incan army under the command of Sapa Inca Manco Inca Yupanqui started on 6 May 1536 and ended in March 1537. The city was held by a garrison of Spanish conquistadors and Indian auxiliaries led by Hernando Pizarro. The Incans hoped to restore their empire (1438–1533) with this action, but it was ultimately unsuccessful.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2398589, imported by tools/import/wikidata.mjs. The item's own description reads \"1536–1537 siege in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1536,
     "end": 1537,
@@ -49,6 +54,7 @@
   "place": "cusco",
   "region": null,
   "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
   "category": "war",
   "actors": [
     {
@@ -56,6 +62,5 @@
       "role": "belligerent",
       "note": "Wikidata names the Inca Empire (Q28573) a participant of the siege; this atlas already holds that polity."
     }
-  ],
-  "parent": "spanish-conquest-of-the-inca-empire"
+  ]
 }

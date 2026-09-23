@@ -174,6 +174,18 @@
       },
       "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Civil War (1989–1992)" }, "ptwiki": { "site": "ptwiki", "title": "Guerra Civil de Northfield (1989–1992)" } }
     },
+    "Q9000015": {
+      "type": "item",
+      "id": "Q9000015",
+      "labels": { "en": { "language": "en", "value": "Northfield Charter" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented charter whose item dates itself by its publication and by nothing else" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P577": [{ "mainsnak": { "snaktype": "value", "property": "P577", "datavalue": { "type": "time", "value": { "time": "+1812-00-00T00:00:00Z", "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Charter" } }
+    },
     "Q9000008": { "id": "Q9000008", "missing": "" }
   },
   "success": 1

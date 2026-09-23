@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rebellion-of-tupac-amaru-ii--spanish-american-wars-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213, \"Background\""
+    },
+    {
+      "source": "kinsbruner-1994-independence-in-spanish-america",
+      "locator": "12–14, 17–32"
+    }
+  ],
+  "from": "rebellion-of-tupac-amaru-ii",
+  "to": "spanish-american-wars-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The wars' article, under \"Background\", names this rising among the revolts the Bourbon reforms provoked: **\"In other areas, the changes in the crown's economic and administrative policies led to tensions with locals, which at times erupted into open revolts, such as the Revolt of the Comuneros in New Granada and the Rebellion of Túpac Amaru II in Peru.\"** The next paragraph is what this edge is drawn from and it is equivocal, so it is quoted whole: **\"The loss of high offices to peninsulars and the eighteenth-century revolts in Spanish South America were some of the direct causes of the wars of independence, which took place decades later, but they have been considered important elements of the political background in which the wars took place.\"** `precondition-of` is the weakest type that sentence supports, and `caused` is not written from a sentence that hedges itself in its own second clause. The paragraph cites Lynch, Rodríguez and Kinsbruner; the one the article gives in full is cited here beside it, and it is cited and not read, which is why the confidence stays probable.",
+  "dispute": null
+}
