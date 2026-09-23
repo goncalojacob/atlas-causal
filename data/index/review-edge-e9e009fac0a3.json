@@ -385,6 +385,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "1948-arab-israeli-war",
+      "id": "1948-arab-israeli-war--war-of-the-camps--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-of-the-camps",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "1948-arab-israeli-war",
       "id": "1948-arab-israeli-war--war-over-water--precondition-of",
@@ -1594,6 +1623,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "1994-genocide-against-tutsi",
+      "id": "1994-genocide-against-tutsi--second-congo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-congo-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "1995-portuguese-legislative-election",
       "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
@@ -2132,6 +2190,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "2012-tuareg-rebellion",
+      "id": "2012-tuareg-rebellion--operation-barkhane--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-barkhane",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions"
       ],
       "created": "2026-09-04",
@@ -2467,6 +2554,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "31-march-incident",
+      "id": "31-march-incident--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "armenian-genocide",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "degree": 1,
       "from": "aberdeen-act-1845",
@@ -2598,6 +2714,35 @@
       "revised": null,
       "status": "active",
       "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "algerian-war",
+      "id": "algerian-war--suez-crisis--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "suez-crisis",
       "type": "precondition-of"
     },
     {
@@ -3136,6 +3281,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "arab-israeli-conflict",
+      "id": "arab-israeli-conflict--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "lebanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "arab-revolt",
+      "id": "arab-revolt--arab-israeli-conflict--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "arab-israeli-conflict",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "arab-revolt",
       "id": "arab-revolt--treaty-of-sevres--precondition-of",
@@ -3238,6 +3441,35 @@
       "status": "active",
       "to": "franco-thai-war",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "armistice-of-mudros",
+      "id": "armistice-of-mudros--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-lausanne",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -3516,6 +3748,35 @@
       "revised": null,
       "status": "active",
       "to": "alhucemas-landing",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-magersfontein",
+      "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-paardeberg",
       "type": "precondition-of"
     },
     {
@@ -3851,6 +4112,64 @@
       "revised": null,
       "status": "active",
       "to": "lebanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "black-september",
+      "id": "black-september--south-lebanon-conflict--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "south-lebanon-conflict",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "boxer-rebellion",
+      "id": "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-japanese-border-conflicts",
       "type": "precondition-of"
     },
     {
@@ -4424,6 +4743,35 @@
       "status": "active",
       "to": "un-admission-1955",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "chinese-civil-war",
+      "id": "chinese-civil-war--first-indochina-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-indochina-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -5928,6 +6276,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "dayton-agreement",
+      "id": "dayton-agreement--kosovo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kosovo-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "declaration-by-united-nations",
       "id": "declaration-by-united-nations--charter-of-the-united-nations--precondition-of",
@@ -6926,6 +7303,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "euromaidan",
+      "id": "euromaidan--2014-pro-russian-unrest-in-ukraine--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2014-pro-russian-unrest-in-ukraine",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "euromaidan",
       "id": "euromaidan--russo-ukrainian-war--caused",
@@ -7011,6 +7417,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "february-revolution",
+      "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "execution-of-the-romanov-family",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "february-revolution",
+      "id": "february-revolution--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "finnish-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "february-revolution",
       "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
@@ -7056,6 +7520,93 @@
       "status": "active",
       "to": "october-revolution",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "february-revolution",
+      "id": "february-revolution--russian-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "russian-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "february-revolution",
+      "id": "february-revolution--treaty-of-brest-litovsk--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-brest-litovsk",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "first-balkan-war",
+      "id": "first-balkan-war--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "armenian-genocide",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7452,6 +8003,35 @@
       "revised": null,
       "status": "active",
       "to": "russo-japanese-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "first-sino-japanese-war",
+      "id": "first-sino-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-japanese-border-conflicts",
       "type": "precondition-of"
     },
     {
@@ -8100,6 +8680,93 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "great-depression",
+      "id": "great-depression--anschluss--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anschluss",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "great-depression",
+      "id": "great-depression--anti-comintern-pact--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anti-comintern-pact",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "great-depression",
+      "id": "great-depression--austrian-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "austrian-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "great-depression",
       "id": "great-depression--bretton-woods-system--precondition-of",
@@ -8148,6 +8815,35 @@
       "status": "active",
       "to": "salazar-president-of-council-1932",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "great-depression",
+      "id": "great-depression--siamese-revolution-of-1932--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siamese-revolution-of-1932",
+      "type": "caused"
     },
     {
       "authors": [
@@ -9138,6 +9834,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "iranian-revolution",
+      "id": "iranian-revolution--soviet-afghan-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-afghan-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "iranian-revolution",
       "id": "iranian-revolution--twelve-day-war--precondition-of",
@@ -9971,6 +10696,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "libyan-civil-war",
+      "id": "libyan-civil-war--2012-malian-coup-d-etat--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2012-malian-coup-d-etat",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "libyan-civil-war",
       "id": "libyan-civil-war--2012-tuareg-rebellion--enabled",
@@ -10585,6 +11339,35 @@
       "revised": null,
       "status": "active",
       "to": "continuation-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "moscow-peace-treaty",
+      "id": "moscow-peace-treaty--paris-peace-treaties--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "paris-peace-treaties",
       "type": "precondition-of"
     },
     {
@@ -11212,6 +11995,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "operation-jaque",
+      "id": "operation-jaque--colombian-peace-process--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "colombian-peace-process",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "operation-rosary",
       "id": "operation-rosary--falklands-war--caused",
@@ -11546,6 +12358,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "peace-of-riga",
+      "id": "peace-of-riga--soviet-invasion-of-poland--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "soviet-invasion-of-poland",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "cti-2017-2018-fires"
       ],
       "created": "2026-09-03",
@@ -11762,6 +12603,35 @@
       "revised": null,
       "status": "active",
       "to": "cuban-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "polish-soviet-war",
+      "id": "polish-soviet-war--kronstadt-rebellion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kronstadt-rebellion",
       "type": "precondition-of"
     },
     {
@@ -12595,6 +13465,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "revolutions-of-1989",
+      "id": "revolutions-of-1989--yugoslav-wars--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "yugoslav-wars",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "rose-revolution",
       "id": "rose-revolution--orange-revolution--inspired",
@@ -12905,6 +13804,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--constitutionalization-attempts-in-iran--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "constitutionalization-attempts-in-iran",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--odz-insurrection--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "odz-insurrection",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "russo-japanese-war",
       "id": "russo-japanese-war--russian-revolution-of-1905--caused",
@@ -12922,6 +13879,35 @@
       "status": "active",
       "to": "russian-revolution-of-1905",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--second-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-sino-japanese-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -13034,6 +14020,35 @@
       "status": "active",
       "to": "arusha-accords",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "rwandan-civil-war",
+      "id": "rwandan-civil-war--second-congo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-congo-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -13235,6 +14250,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "schengen-agreement",
+      "id": "schengen-agreement--amsterdam-treaty--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "amsterdam-treaty",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-teixeira-2019-political-institutions",
         "wikipedia-en"
@@ -13326,6 +14370,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "second-boer-war",
+      "id": "second-boer-war--bambatha-rebellion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bambatha-rebellion",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "second-boer-war",
       "id": "second-boer-war--entente-cordiale--precondition-of",
@@ -13372,6 +14445,35 @@
       "revised": null,
       "status": "active",
       "to": "treaty-of-windsor",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "second-guangzhou-uprising",
+      "id": "second-guangzhou-uprising--wuchang-uprising--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "wuchang-uprising",
       "type": "caused"
     },
     {
@@ -13456,6 +14558,35 @@
       "revised": null,
       "status": "active",
       "to": "gaza-war-2008-2009",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "second-italo-ethiopian-war",
+      "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ogaden-war",
       "type": "precondition-of"
     },
     {
@@ -13828,6 +14959,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "six-day-war",
+      "id": "six-day-war--bangladesh-liberation-war--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bangladesh-liberation-war",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "six-day-war",
+      "id": "six-day-war--gaza-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "gaza-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "six-day-war",
       "id": "six-day-war--war-of-attrition--precondition-of",
@@ -13844,6 +15033,35 @@
       "revised": null,
       "status": "active",
       "to": "war-of-attrition",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "six-day-war",
+      "id": "six-day-war--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "yom-kippur-war",
       "type": "precondition-of"
     },
     {
@@ -13942,6 +15160,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "south-lebanon-conflict",
+      "id": "south-lebanon-conflict--2006-lebanon-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2006-lebanon-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "south-lebanon-conflict",
       "id": "south-lebanon-conflict--operation-grapes-of-wrath--caused",
@@ -13987,6 +15234,64 @@
       "status": "active",
       "to": "afghan-civil-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "soviet-afghan-war",
+      "id": "soviet-afghan-war--afghan-civil-war-q1980081--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "afghan-civil-war-q1980081",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "soviet-afghan-war",
+      "id": "soviet-afghan-war--battle-of-mogadishu-1993--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-mogadishu-1993",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -16144,6 +17449,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "treaty-of-brest-litovsk",
+      "id": "treaty-of-brest-litovsk--treaty-of-rapallo--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-rapallo",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "treaty-of-lausanne",
       "id": "treaty-of-lausanne--montreux-convention--precondition-of",
@@ -16248,6 +17582,35 @@
       "revised": null,
       "status": "active",
       "to": "second-balkan-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "treaty-of-london-q584617",
+      "id": "treaty-of-london-q584617--treaty-of-bucharest--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-bucharest",
       "type": "precondition-of"
     },
     {
@@ -16447,6 +17810,35 @@
       "revised": null,
       "status": "active",
       "to": "single-european-act",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "treaty-of-sevres",
+      "id": "treaty-of-sevres--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-lausanne",
       "type": "precondition-of"
     },
     {
@@ -17435,6 +18827,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "war-in-darfur",
+      "id": "war-in-darfur--south-sudanese-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "south-sudanese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "war-in-somalia",
       "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
@@ -17564,6 +18985,35 @@
       "status": "active",
       "to": "moscow-peace-treaty",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "world-war-i",
+      "id": "world-war-i--arab-israeli-conflict--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "arab-israeli-conflict",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -17976,6 +19426,64 @@
       "status": "active",
       "to": "sayfo",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "world-war-i",
+      "id": "world-war-i--second-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-sino-japanese-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "world-war-i",
+      "id": "world-war-i--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-lausanne",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -18835,6 +20343,64 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "xinhai-revolution",
+      "id": "xinhai-revolution--chinese-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "chinese-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "xinhai-revolution",
+      "id": "xinhai-revolution--sino-indian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sino-indian-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "telo-2007-historia-contemporanea",
         "wikipedia-en"
       ],
@@ -18894,6 +20460,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--arab-revolt--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "arab-revolt",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "young-turk-revolution-of-1908",
       "id": "young-turk-revolution-of-1908--armenian-genocide--precondition-of",
@@ -18939,6 +20534,35 @@
       "status": "active",
       "to": "bulgarian-declaration-of-independence",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "young-turk-revolution-of-1908",
+      "id": "young-turk-revolution-of-1908--first-balkan-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-balkan-war",
+      "type": "precondition-of"
     },
     {
       "authors": [

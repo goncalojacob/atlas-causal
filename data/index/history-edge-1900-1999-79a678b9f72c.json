@@ -164,6 +164,15 @@
         }
       ]
     },
+    "1948-arab-israeli-war--war-of-the-camps--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "1948-arab-israeli-war--war-over-water--precondition-of": {
       "from": "git",
       "versions": [
@@ -648,6 +657,15 @@
         }
       ]
     },
+    "1994-genocide-against-tutsi--second-congo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of": {
       "from": "git",
       "versions": [
@@ -753,6 +771,15 @@
         }
       ]
     },
+    "31-march-incident--armenian-genocide--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "afghan-civil-war--afghan-civil-war-q1980081--precondition-of": {
       "from": "git",
       "versions": [
@@ -793,6 +820,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "algerian-war--suez-crisis--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -1016,6 +1052,24 @@
         }
       ]
     },
+    "arab-israeli-conflict--lebanese-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "arab-revolt--arab-israeli-conflict--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "arab-revolt--treaty-of-sevres--precondition-of": {
       "from": "git",
       "versions": [
@@ -1049,6 +1103,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "armistice-of-mudros--treaty-of-lausanne--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -1210,6 +1273,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "black-september--south-lebanon-conflict--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -1479,6 +1551,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "chinese-civil-war--first-indochina-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -2038,6 +2119,15 @@
         }
       ]
     },
+    "dayton-agreement--kosovo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "declaration-by-united-nations--charter-of-the-united-nations--precondition-of": {
       "from": "git",
       "versions": [
@@ -2438,6 +2528,24 @@
         }
       ]
     },
+    "february-revolution--execution-of-the-romanov-family--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "february-revolution--finnish-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "february-revolution--georgian-ossetian-conflict-1918-1920--enabled": {
       "from": "git",
       "versions": [
@@ -2460,6 +2568,33 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "february-revolution--russian-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "february-revolution--treaty-of-brest-litovsk--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "first-balkan-war--armenian-genocide--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -2689,6 +2824,33 @@
         }
       ]
     },
+    "great-depression--anschluss--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "great-depression--anti-comintern-pact--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "great-depression--austrian-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "great-depression--bretton-woods-system--precondition-of": {
       "from": "git",
       "versions": [
@@ -2711,6 +2873,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "great-depression--siamese-revolution-of-1932--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -3016,6 +3187,15 @@
         {
           "first": true,
           "on": "2026-09-15"
+        }
+      ]
+    },
+    "iranian-revolution--soviet-afghan-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -3397,6 +3577,15 @@
         }
       ]
     },
+    "moscow-peace-treaty--paris-peace-treaties--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "moscow-uprising-of-1905--october-revolution--enabled": {
       "from": "git",
       "versions": [
@@ -3749,6 +3938,15 @@
         }
       ]
     },
+    "peace-of-riga--soviet-invasion-of-poland--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "petrobras-1953--operation-car-wash-2014--precondition-of": {
       "from": "git",
       "versions": [
@@ -3798,6 +3996,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "polish-soviet-war--kronstadt-rebellion--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4085,6 +4292,15 @@
         }
       ]
     },
+    "revolutions-of-1989--yugoslav-wars--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "russian-civil-war--execution-of-the-romanov-family--caused": {
       "from": "git",
       "versions": [
@@ -4171,12 +4387,39 @@
         }
       ]
     },
+    "russo-japanese-war--constitutionalization-attempts-in-iran--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "russo-japanese-war--odz-insurrection--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "russo-japanese-war--russian-revolution-of-1905--caused": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "russo-japanese-war--second-sino-japanese-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4204,6 +4447,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "rwandan-civil-war--second-congo-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4282,6 +4534,15 @@
         }
       ]
     },
+    "schengen-agreement--amsterdam-treaty--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "schengen-agreement--schengen-in-force-1995--precondition-of": {
       "from": "git",
       "versions": [
@@ -4323,12 +4584,30 @@
         }
       ]
     },
+    "second-guangzhou-uprising--wuchang-uprising--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "second-guangzhou-uprising--xinhai-revolution--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "second-italo-ethiopian-war--ogaden-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4452,6 +4731,24 @@
         }
       ]
     },
+    "six-day-war--bangladesh-liberation-war--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "six-day-war--gaza-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "six-day-war--war-of-attrition--precondition-of": {
       "from": "git",
       "versions": [
@@ -4461,12 +4758,30 @@
         }
       ]
     },
+    "six-day-war--yom-kippur-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "somali-civil-war--war-in-somalia--caused": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "south-lebanon-conflict--2006-lebanon-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4485,6 +4800,24 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "soviet-afghan-war--afghan-civil-war-q1980081--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "soviet-afghan-war--battle-of-mogadishu-1993--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4784,6 +5117,15 @@
         }
       ]
     },
+    "treaty-of-brest-litovsk--treaty-of-rapallo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "treaty-of-lausanne--montreux-convention--precondition-of": {
       "from": "git",
       "versions": [
@@ -4825,6 +5167,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-london-q584617--treaty-of-bucharest--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4884,6 +5235,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-sevres--treaty-of-lausanne--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -5172,6 +5532,15 @@
         }
       ]
     },
+    "world-war-i--arab-israeli-conflict--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "world-war-i--arab-revolt--enabled": {
       "from": "git",
       "versions": [
@@ -5347,6 +5716,24 @@
             "sources"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-i--second-sino-japanese-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "world-war-i--treaty-of-lausanne--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -5635,6 +6022,24 @@
         }
       ]
     },
+    "xinhai-revolution--chinese-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "xinhai-revolution--sino-indian-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "yom-kippur-war--imf-agreement-1978--precondition-of": {
       "from": "git",
       "versions": [
@@ -5660,6 +6065,15 @@
         }
       ]
     },
+    "young-turk-revolution-of-1908--arab-revolt--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "young-turk-revolution-of-1908--armenian-genocide--precondition-of": {
       "from": "git",
       "versions": [
@@ -5682,6 +6096,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "young-turk-revolution-of-1908--first-balkan-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },

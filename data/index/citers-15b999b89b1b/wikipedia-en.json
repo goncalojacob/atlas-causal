@@ -1202,6 +1202,12 @@
     },
     {
       "dissent": false,
+      "id": "1948-arab-israeli-war--war-of-the-camps--precondition-of",
+      "kind": "edge",
+      "locator": "\"War of the Camps\", revision 1373013393, § Background"
+    },
+    {
+      "dissent": false,
       "id": "1948-arab-israeli-war--war-over-water--precondition-of",
       "kind": "edge",
       "locator": "\"War over Water (Jordan River)\", revision 1370750282, § History"
@@ -1412,6 +1418,12 @@
     },
     {
       "dissent": false,
+      "id": "1994-genocide-against-tutsi--second-congo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan genocide\", revision 1376069741, § Refugee crisis, insurgency, and two Congo Wars"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election--1996-portuguese-presidential-election--precondition-of",
       "kind": "edge",
       "locator": "\"1996 Portuguese presidential election\", revision 1371811573, § lead"
@@ -1460,6 +1472,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-tuareg-rebellion--operation-barkhane--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Barkhane\", revision 1370630875, § Background"
+    },
+    {
+      "dissent": false,
       "id": "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled",
       "kind": "edge",
       "locator": "\"War in Donbas\", revision 1370749630, lead and § Protests in the Donbas"
@@ -1496,6 +1514,12 @@
     },
     {
       "dissent": false,
+      "id": "31-march-incident--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "locator": "\"31 March incident\", revision 1370103767, lead"
+    },
+    {
+      "dissent": false,
       "id": "aberdeen-act-1845--eusebio-de-queiros-law-1850--caused",
       "kind": "edge",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -1529,6 +1553,12 @@
       "id": "algerian-war--angola-war-begins-1961--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war--suez-crisis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Algerian War\", revision 1374452636, § After the Philippeville massacre"
     },
     {
       "dissent": false,
@@ -1628,6 +1658,18 @@
     },
     {
       "dissent": false,
+      "id": "arab-israeli-conflict--lebanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, lead"
+    },
+    {
+      "dissent": false,
+      "id": "arab-revolt--arab-israeli-conflict--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arab–Israeli conflict\", revision 1375600856, § National movements"
+    },
+    {
+      "dissent": false,
       "id": "arab-revolt--treaty-of-sevres--precondition-of",
       "kind": "edge",
       "locator": "\"Arab Revolt\", revision 1370428832"
@@ -1655,6 +1697,12 @@
       "id": "armistice-of-22-june-1940--franco-thai-war--enabled",
       "kind": "edge",
       "locator": "\"Franco-Thai War\", revision 1375769371, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "armistice-of-mudros--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "locator": "\"Armistice of Mudros\", revision 1369160266, lead"
     },
     {
       "dissent": false,
@@ -1727,6 +1775,12 @@
       "id": "battle-of-annual--alhucemas-landing--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
     },
     {
       "dissent": false,
@@ -1814,6 +1868,18 @@
     },
     {
       "dissent": false,
+      "id": "black-september--south-lebanon-conflict--precondition-of",
+      "kind": "edge",
+      "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846, § Emerging conflict between Israel and Palestinian militants"
+    },
+    {
+      "dissent": false,
+      "id": "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"1911 Revolution\", revision 1373070054"
@@ -1883,6 +1949,12 @@
       "id": "charter-of-the-united-nations--un-admission-1955--precondition-of",
       "kind": "edge",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war--first-indochina-war--enabled",
+      "kind": "edge",
+      "locator": "\"First Indochina War\", revision 1375260221, § China"
     },
     {
       "dissent": false,
@@ -2120,6 +2192,12 @@
     },
     {
       "dissent": false,
+      "id": "dayton-agreement--kosovo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Kosovo War\", revision 1376074929, lead"
+    },
+    {
+      "dissent": false,
       "id": "declaration-by-united-nations--charter-of-the-united-nations--precondition-of",
       "kind": "edge",
       "locator": "\"Declaration by United Nations\", revision 1369044189, § lead"
@@ -2300,6 +2378,12 @@
     },
     {
       "dissent": false,
+      "id": "euromaidan--2014-pro-russian-unrest-in-ukraine--reacted-to",
+      "kind": "edge",
+      "locator": "\"2014 pro-Russian unrest in Ukraine\", revision 1374474822, lead"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan--russo-ukrainian-war--caused",
       "kind": "edge",
       "locator": "\"Euromaidan\", revision 1372581234"
@@ -2330,6 +2414,18 @@
     },
     {
       "dissent": false,
+      "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
+      "kind": "edge",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, lead"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution--finnish-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Finnish Civil War\", revision 1375858302, § Build-up"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution--georgian-ossetian-conflict-1918-1920--enabled",
       "kind": "edge",
       "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671, § 1917–1918"
@@ -2345,6 +2441,24 @@
       "id": "february-revolution--october-revolution--enabled",
       "kind": "edge",
       "locator": "\"October Revolution\", revision 1370630358"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution--russian-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"February Revolution\", revision 1375859749, lead"
+    },
+    {
+      "dissent": false,
+      "id": "february-revolution--treaty-of-brest-litovsk--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Brest-Litovsk\", revision 1376225466, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "first-balkan-war--armenian-genocide--precondition-of",
+      "kind": "edge",
+      "locator": "\"Armenian genocide\", revision 1375054558, § Balkan Wars"
     },
     {
       "dissent": false,
@@ -2453,6 +2567,12 @@
       "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "first-sino-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
     },
     {
       "dissent": false,
@@ -2612,6 +2732,24 @@
     },
     {
       "dissent": false,
+      "id": "great-depression--anschluss--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anschluss\", revision 1374499407, § Nazi Germany, Fascist Italy, and Austria"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--anti-comintern-pact--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anti-Comintern Pact\", revision 1371954457, § Racial Equality Proposal of 1919, Washington Naval Conference of 1922"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--austrian-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Austrian Civil War\", revision 1375005540, § July Revolt and suspension of Parliament"
+    },
+    {
+      "dissent": false,
       "id": "great-depression--bretton-woods-system--precondition-of",
       "kind": "edge",
       "locator": "\"Bretton Woods system\", revision 1374837351"
@@ -2627,6 +2765,12 @@
       "id": "great-depression--salazar-president-of-council-1932--enabled",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--siamese-revolution-of-1932--caused",
+      "kind": "edge",
+      "locator": "\"Great Depression\", revision 1374942454, § Thailand"
     },
     {
       "dissent": false,
@@ -2864,6 +3008,12 @@
     },
     {
       "dissent": false,
+      "id": "iranian-revolution--soviet-afghan-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, § Soviet deployment, 1979"
+    },
+    {
+      "dissent": false,
       "id": "iranian-revolution--twelve-day-war--precondition-of",
       "kind": "edge",
       "locator": "\"Twelve-Day War\", revision 1375310571, § Background"
@@ -3050,6 +3200,12 @@
     },
     {
       "dissent": false,
+      "id": "libyan-civil-war--2012-malian-coup-d-etat--enabled",
+      "kind": "edge",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § Background"
+    },
+    {
+      "dissent": false,
       "id": "libyan-civil-war--2012-tuareg-rebellion--enabled",
       "kind": "edge",
       "locator": "\"Tuareg rebellion (2012)\", revision 1370751541, § lead"
@@ -3200,6 +3356,12 @@
     },
     {
       "dissent": false,
+      "id": "moscow-peace-treaty--paris-peace-treaties--precondition-of",
+      "kind": "edge",
+      "locator": "\"Paris Peace Treaties, 1947\", revision 1369078996, § Finland"
+    },
+    {
+      "dissent": false,
       "id": "moscow-uprising-of-1905--october-revolution--enabled",
       "kind": "edge",
       "locator": "\"Moscow uprising of 1905\", revision 1370628753, § lead"
@@ -3305,6 +3467,12 @@
       "id": "operation-car-wash-2014--the-impeachment-of-dilma-rousseff-2016--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Car Wash\", revision 1371266803"
+    },
+    {
+      "dissent": false,
+      "id": "operation-jaque--colombian-peace-process--precondition-of",
+      "kind": "edge",
+      "locator": "\"Colombian peace process\", revision 1375561117, § Background"
     },
     {
       "dissent": false,
@@ -3422,6 +3590,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-riga--soviet-invasion-of-poland--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Riga\", revision 1368931640, § Further consequences"
+    },
+    {
+      "dissent": false,
       "id": "petrobras-1953--operation-car-wash-2014--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Car Wash\", revision 1371266803"
@@ -3467,6 +3641,12 @@
       "id": "platt-amendment-1901--cuban-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Platt Amendment\", revision 1361644701"
+    },
+    {
+      "dissent": false,
+      "id": "polish-soviet-war--kronstadt-rebellion--precondition-of",
+      "kind": "edge",
+      "locator": "\"Polish–Soviet War\", revision 1370704570, § Russia"
     },
     {
       "dissent": false,
@@ -3638,6 +3818,12 @@
     },
     {
       "dissent": false,
+      "id": "revolutions-of-1989--yugoslav-wars--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolutions of 1989\", revision 1375849372, lead"
+    },
+    {
+      "dissent": false,
       "id": "rose-revolution--orange-revolution--inspired",
       "kind": "edge",
       "locator": "\"Orange Revolution\", revision 1374383386, § U.S. involvement in the revolution"
@@ -3734,9 +3920,27 @@
     },
     {
       "dissent": false,
+      "id": "russo-japanese-war--constitutionalization-attempts-in-iran--precondition-of",
+      "kind": "edge",
+      "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965, § Aftermath of the Tobacco Règie and economic downturn"
+    },
+    {
+      "dissent": false,
+      "id": "russo-japanese-war--odz-insurrection--precondition-of",
+      "kind": "edge",
+      "locator": "\"Łódź insurrection\", revision 1370751757, § Background"
+    },
+    {
+      "dissent": false,
       "id": "russo-japanese-war--russian-revolution-of-1905--caused",
       "kind": "edge",
       "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "russo-japanese-war--second-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russo-Japanese War\", revision 1375992361, § Military results"
     },
     {
       "dissent": false,
@@ -3767,6 +3971,12 @@
       "id": "rwandan-civil-war--arusha-accords--caused",
       "kind": "edge",
       "locator": "\"Rwandan genocide\", revision 1375989507, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-civil-war--second-congo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan Civil War\", revision 1371242033, § Refugee crisis, insurgency, and Congo wars"
     },
     {
       "dissent": false,
@@ -3806,6 +4016,12 @@
     },
     {
       "dissent": false,
+      "id": "schengen-agreement--amsterdam-treaty--precondition-of",
+      "kind": "edge",
+      "locator": "\"Schengen Agreement\", revision 1370029483, § History"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
       "kind": "edge",
       "locator": "\"Schengen Agreement\", revision 1370029483"
@@ -3824,6 +4040,12 @@
     },
     {
       "dissent": false,
+      "id": "second-boer-war--bambatha-rebellion--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bambatha Rebellion\", revision 1372396539, § Rebellion"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war--entente-cordiale--precondition-of",
       "kind": "edge",
       "locator": "\"Entente Cordiale\", revision 1370844455, § Background"
@@ -3833,6 +4055,12 @@
       "id": "second-boer-war--treaty-of-windsor--caused",
       "kind": "edge",
       "locator": "\"Second Boer War\", revision 1372994797"
+    },
+    {
+      "dissent": false,
+      "id": "second-guangzhou-uprising--wuchang-uprising--caused",
+      "kind": "edge",
+      "locator": "\"Second Guangzhou Uprising\", revision 1370737006, § Legacy"
     },
     {
       "dissent": false,
@@ -3851,6 +4079,12 @@
       "id": "second-intifada--gaza-war-2008-2009--precondition-of",
       "kind": "edge",
       "locator": "\"Gaza War (2008–2009)\", revision 1370620825, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Ogaden War\", revision 1373903527, § Second Italo-Ethiopian War and World War II"
     },
     {
       "dissent": false,
@@ -3938,9 +4172,27 @@
     },
     {
       "dissent": false,
+      "id": "six-day-war--bangladesh-liberation-war--inspired",
+      "kind": "edge",
+      "locator": "\"Bangladesh Liberation War\", revision 1375044402, § Indian involvement"
+    },
+    {
+      "dissent": false,
+      "id": "six-day-war--gaza-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Gaza war\", revision 1376206831, § Background"
+    },
+    {
+      "dissent": false,
       "id": "six-day-war--war-of-attrition--precondition-of",
       "kind": "edge",
       "locator": "\"Six-Day War\", revision 1375500255, § Aftermath — War of Attrition"
+    },
+    {
+      "dissent": false,
+      "id": "six-day-war--yom-kippur-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Yom Kippur War\", revision 1375181066, § Response in Israel"
     },
     {
       "dissent": false,
@@ -3974,6 +4226,12 @@
     },
     {
       "dissent": false,
+      "id": "south-lebanon-conflict--2006-lebanon-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "south-lebanon-conflict--operation-grapes-of-wrath--caused",
       "kind": "edge",
       "locator": "\"Operation Grapes of Wrath\", revision 1372784188, § lead"
@@ -3983,6 +4241,18 @@
       "id": "soviet-afghan-war--afghan-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193, § lead and § Background (1978–1989)"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--afghan-civil-war-q1980081--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, lead"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-afghan-war--battle-of-mogadishu-1993--inspired",
+      "kind": "edge",
+      "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Somali National Alliance and Irregular forces"
     },
     {
       "dissent": false,
@@ -4742,6 +5012,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-brest-litovsk--treaty-of-rapallo--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Rapallo (1922)\", revision 1362703017, § Background"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-lausanne--montreux-convention--precondition-of",
       "kind": "edge",
       "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200, § Background"
@@ -4763,6 +5039,12 @@
       "id": "treaty-of-london-q584617--second-balkan-war--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of London (1913)\", revision 1359713953, § Terms"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-london-q584617--treaty-of-bucharest--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572, lead"
     },
     {
       "dissent": false,
@@ -4817,6 +5099,12 @@
       "id": "treaty-of-rome--single-european-act--precondition-of",
       "kind": "edge",
       "locator": "\"Single European Act\", revision 1324525488, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-sevres--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Sèvres\", revision 1369307123, § Subsequent treaties"
     },
     {
       "dissent": false,
@@ -5072,6 +5360,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-darfur--south-sudanese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"South Sudanese Civil War\", revision 1374713494, § Rebel infighting and splits among ruling Dinka (2016–2017)"
+    },
+    {
+      "dissent": false,
       "id": "war-in-somalia--somali-civil-war-2009-present--precondition-of",
       "kind": "edge",
       "locator": "\"Somali Civil War (2009–present)\", revision 1374631534, § lead"
@@ -5105,6 +5399,12 @@
       "id": "winter-war--moscow-peace-treaty--caused",
       "kind": "edge",
       "locator": "\"Moscow Peace Treaty\", revision 1355516673, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--arab-israeli-conflict--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arab–Israeli conflict\", revision 1375600856, lead"
     },
     {
       "dissent": false,
@@ -5201,6 +5501,18 @@
       "id": "world-war-i--sayfo--enabled",
       "kind": "edge",
       "locator": "\"Sayfo\", revision 1370631734"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--second-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Sino-Japanese War\", revision 1375531758, § Japanese expansion"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--treaty-of-lausanne--precondition-of",
+      "kind": "edge",
+      "locator": "\"World War I\", revision 1376154299, § National identities"
     },
     {
       "dissent": false,
@@ -5414,6 +5726,18 @@
     },
     {
       "dissent": false,
+      "id": "xinhai-revolution--chinese-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chinese Civil War\", revision 1375954779, § First United Front"
+    },
+    {
+      "dissent": false,
+      "id": "xinhai-revolution--sino-indian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Sino-Indian War\", revision 1374100162, § Aksai Chin"
+    },
+    {
+      "dissent": false,
       "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Yom Kippur War\", revision 1373227342"
@@ -5423,6 +5747,12 @@
       "id": "young-turk-revolution-of-1908--31-march-incident--reacted-to",
       "kind": "edge",
       "locator": "\"31 March incident\", revision 1370103767, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--arab-revolt--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arab Revolt\", revision 1370428832, § Sharif Hussein of Mecca"
     },
     {
       "dissent": false,
@@ -5441,6 +5771,12 @@
       "id": "young-turk-revolution-of-1908--bulgarian-declaration-of-independence--enabled",
       "kind": "edge",
       "locator": "\"Bulgarian Declaration of Independence\", revision 1375171159, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "young-turk-revolution-of-1908--first-balkan-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Balkan War\", revision 1373171791, § Forces in Balkans"
     },
     {
       "dissent": false,

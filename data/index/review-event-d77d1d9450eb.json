@@ -607,7 +607,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 5,
+      "degree": 6,
       "id": "1948-arab-israeli-war",
       "kind": "event",
       "origin": {
@@ -1976,7 +1976,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "1994-genocide-against-tutsi",
       "kind": "event",
       "origin": {
@@ -2417,7 +2417,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "2006-lebanon-war",
       "kind": "event",
       "origin": {
@@ -2818,7 +2818,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "2012-malian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -2854,7 +2854,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2012-tuareg-rebellion",
       "kind": "event",
       "origin": {
@@ -2963,7 +2963,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2014-pro-russian-unrest-in-ukraine",
       "kind": "event",
       "origin": {
@@ -3469,7 +3469,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "31-march-incident",
       "kind": "event",
       "origin": {
@@ -3672,7 +3672,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "afghan-civil-war-q1980081",
       "kind": "event",
       "origin": {
@@ -3743,7 +3743,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "algerian-war",
       "kind": "event",
       "origin": {
@@ -3877,7 +3877,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "amsterdam-treaty",
       "kind": "event",
       "origin": {
@@ -4177,7 +4177,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "anschluss",
       "kind": "event",
       "origin": {
@@ -4211,7 +4211,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "anti-comintern-pact",
       "kind": "event",
       "origin": {
@@ -4247,6 +4247,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "degree": 3,
       "id": "arab-israeli-conflict",
       "kind": "event",
       "origin": {
@@ -4279,7 +4280,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 4,
       "id": "arab-revolt",
       "kind": "event",
       "origin": {
@@ -4379,7 +4380,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 6,
       "id": "armenian-genocide",
       "kind": "event",
       "origin": {
@@ -4450,7 +4451,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "armistice-of-mudros",
       "kind": "event",
       "origin": {
@@ -4727,7 +4728,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "austrian-civil-war",
       "kind": "event",
       "origin": {
@@ -4896,6 +4897,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "bambatha-rebellion",
       "kind": "event",
       "origin": {
@@ -4931,7 +4933,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "origin": {
@@ -5229,12 +5231,13 @@
         "flags": [
           "imported-facts",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
-        "note": "Wikidata Q280468 names 3 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
+        "note": "Wikidata Q280468 names 3 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing. A9's place pass of 2026-09-23 gave this event the place ap-bac, from the item's own P625.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Ap Bac"
     },
@@ -5389,11 +5392,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Goose Green"
     },
@@ -5778,7 +5782,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "origin": {
@@ -5851,7 +5855,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "origin": {
@@ -5892,11 +5896,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Mount Harriet"
     },
@@ -5920,11 +5925,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Mount Longdon"
     },
@@ -5949,11 +5955,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Mount Tumbledown"
     },
@@ -6010,6 +6017,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-paardeberg",
       "kind": "event",
       "origin": {
@@ -6049,11 +6057,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of San Carlos"
     },
@@ -6113,11 +6122,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Seal Cove"
     },
@@ -6380,11 +6390,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Two Sisters"
     },
@@ -6507,11 +6518,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Wireless Ridge"
     },
@@ -6794,7 +6806,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "black-september",
       "kind": "event",
       "origin": {
@@ -6833,11 +6845,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Bluff Cove Air Attacks"
     },
@@ -6922,7 +6935,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "boxer-rebellion",
       "kind": "event",
       "origin": {
@@ -7617,7 +7630,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 4,
       "id": "chinese-civil-war",
       "kind": "event",
       "origin": {
@@ -7728,11 +7741,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m42-umbrella"
+          "m42-umbrella",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place colombia-q739, from P17, Q739.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Colombian conflict (2018–present)"
     },
@@ -7756,11 +7771,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m42-umbrella"
+          "m42-umbrella",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place colombia-q739, from P17, Q739.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Colombian Conflict between 1974-1990"
     },
@@ -7781,7 +7798,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "colombian-peace-process",
       "kind": "event",
       "origin": {
@@ -8048,7 +8065,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "constitutionalization-attempts-in-iran",
       "kind": "event",
       "origin": {
@@ -8691,7 +8708,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "dayton-agreement",
       "kind": "event",
       "origin": {
@@ -9653,7 +9670,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "euromaidan",
       "kind": "event",
       "origin": {
@@ -9756,7 +9773,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "origin": {
@@ -9956,7 +9973,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 8,
       "id": "february-revolution",
       "kind": "event",
       "origin": {
@@ -10020,7 +10037,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "finnish-civil-war",
       "kind": "event",
       "origin": {
@@ -10058,7 +10075,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 6,
       "id": "first-balkan-war",
       "kind": "event",
       "names": [
@@ -10202,7 +10219,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "first-indochina-war",
       "kind": "event",
       "origin": {
@@ -10387,11 +10404,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place shaba, from the item's own P625.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "First Shaba War"
     },
@@ -10412,7 +10431,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "first-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -10753,7 +10772,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "gaza-war",
       "kind": "event",
       "origin": {
@@ -11247,7 +11266,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 7,
       "id": "great-depression",
       "kind": "event",
       "origin": {
@@ -11592,11 +11611,13 @@
       "parent": "cuban-revolution",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place cuba-q14905932, from P17, Q14905932.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Haitian Embassy in Cuba massacre"
     },
@@ -12653,7 +12674,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 7,
+      "degree": 8,
       "id": "iranian-revolution",
       "kind": "event",
       "origin": {
@@ -12863,11 +12884,13 @@
       "parent": "italian-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Italian War of 1521–1526"
     },
@@ -12919,11 +12942,13 @@
       "parent": "italian-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Italian War of 1551–1559"
     },
@@ -12945,11 +12970,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place italian-peninsula-q145694, from P276, Q145694.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Italian Wars"
     },
@@ -12972,11 +12999,13 @@
       "parent": "italian-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Italian Wars of 1499–1504"
     },
@@ -13523,7 +13552,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "kosovo-war",
       "kind": "event",
       "origin": {
@@ -13561,7 +13590,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "kronstadt-rebellion",
       "kind": "event",
       "origin": {
@@ -13787,7 +13816,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "lebanese-civil-war",
       "kind": "event",
       "origin": {
@@ -14080,7 +14109,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "libyan-civil-war",
       "kind": "event",
       "origin": {
@@ -14854,7 +14883,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "moscow-peace-treaty",
       "kind": "event",
       "origin": {
@@ -14929,11 +14958,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Mount Kent Skirmish"
     },
@@ -15374,6 +15404,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "odz-insurrection",
       "kind": "event",
       "origin": {
@@ -15409,7 +15440,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "ogaden-war",
       "kind": "event",
       "origin": {
@@ -15505,7 +15536,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-barkhane",
       "kind": "event",
       "origin": {
@@ -15544,11 +15575,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Black Buck"
     },
@@ -15668,6 +15700,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "operation-jaque",
       "kind": "event",
       "origin": {
@@ -15769,11 +15802,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Paraquet"
     },
@@ -16133,7 +16167,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "paris-peace-treaties",
       "kind": "event",
       "origin": {
@@ -16236,7 +16270,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "peace-of-riga",
       "kind": "event",
       "origin": {
@@ -16502,7 +16536,7 @@
         "wikidata"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "polish-soviet-war",
       "kind": "event",
       "origin": {
@@ -17249,7 +17283,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "revolutions-of-1989",
       "kind": "event",
       "origin": {
@@ -17451,7 +17485,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "russian-civil-war",
       "kind": "event",
       "origin": {
@@ -17556,7 +17590,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 7,
       "id": "russo-japanese-war",
       "kind": "event",
       "origin": {
@@ -17626,7 +17660,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "rwandan-civil-war",
       "kind": "event",
       "origin": {
@@ -17916,7 +17950,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "schengen-agreement",
       "kind": "event",
       "origin": {
@@ -18094,7 +18128,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "second-boer-war",
       "kind": "event",
       "origin": {
@@ -18130,7 +18164,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 3,
       "id": "second-congo-war",
       "kind": "event",
       "origin": {
@@ -18205,7 +18239,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "second-guangzhou-uprising",
       "kind": "event",
       "origin": {
@@ -18277,7 +18311,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "second-italo-ethiopian-war",
       "kind": "event",
       "origin": {
@@ -18382,7 +18416,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 5,
       "id": "second-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -18517,7 +18551,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "origin": {
@@ -18791,11 +18825,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Sinking of ARA General Belgrano"
     },
@@ -18816,7 +18851,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "sino-indian-war",
       "kind": "event",
       "origin": {
@@ -18921,7 +18956,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 5,
       "id": "six-day-war",
       "kind": "event",
       "origin": {
@@ -18932,11 +18967,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Six-Day War"
     },
@@ -18988,11 +19024,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "participants-from-p710"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Skirmish at Top Malo House"
     },
@@ -19236,7 +19273,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 4,
       "id": "south-lebanon-conflict",
       "kind": "event",
       "origin": {
@@ -19273,7 +19310,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "south-sudanese-civil-war",
       "kind": "event",
       "origin": {
@@ -19309,7 +19346,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 5,
+      "degree": 8,
       "id": "soviet-afghan-war",
       "kind": "event",
       "origin": {
@@ -19346,7 +19383,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "soviet-invasion-of-poland",
       "kind": "event",
       "origin": {
@@ -19379,7 +19416,7 @@
         "wikidata"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 3,
       "id": "soviet-japanese-border-conflicts",
       "kind": "event",
       "origin": {
@@ -19614,7 +19651,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "suez-crisis",
       "kind": "event",
       "origin": {
@@ -20944,7 +20981,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 6,
       "id": "treaty-of-brest-litovsk",
       "kind": "event",
       "origin": {
@@ -20979,7 +21016,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-bucharest",
       "kind": "event",
       "origin": {
@@ -21053,7 +21090,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 6,
       "id": "treaty-of-lausanne",
       "kind": "event",
       "origin": {
@@ -21194,7 +21231,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "treaty-of-london-q584617",
       "kind": "event",
       "origin": {
@@ -21475,7 +21512,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "treaty-of-rapallo",
       "kind": "event",
       "origin": {
@@ -21583,7 +21620,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "treaty-of-sevres",
       "kind": "event",
       "origin": {
@@ -22169,11 +22206,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "participants-from-p710"
         ],
+        "note": "Wikidata Q136090852 names 7 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "United States military campaign against cartels"
     },
@@ -22531,7 +22570,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "war-in-darfur",
       "kind": "event",
       "origin": {
@@ -22666,7 +22705,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "war-of-the-camps",
       "kind": "event",
       "origin": {
@@ -22704,11 +22743,13 @@
       "parent": "italian-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a9-place"
         ],
+        "note": "A9's place pass of 2026-09-23 gave this event the place italian-peninsula-q145694, from P276, Q145694.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "War of the League of Cambrai"
     },
@@ -22946,7 +22987,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 19,
+      "degree": 22,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -23083,7 +23124,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "wuchang-uprising",
       "kind": "event",
       "origin": {
@@ -23118,7 +23159,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 5,
       "id": "xinhai-revolution",
       "kind": "event",
       "origin": {
@@ -23155,7 +23196,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "yom-kippur-war",
       "kind": "event",
       "origin": {
@@ -23190,7 +23231,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 6,
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "origin": {
@@ -23224,7 +23265,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "yugoslav-wars",
       "kind": "event",
       "origin": {
@@ -23432,12 +23473,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "arab-israeli-conflict",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "arab-revolt",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -23481,12 +23516,6 @@
     },
     {
       "id": "bala-hissar-uprising",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "bambatha-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -23628,12 +23657,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "battle-of-paardeberg",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "battle-of-san-carlos",
@@ -24164,12 +24187,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "odz-insurrection",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "ogossagou-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24198,12 +24215,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "operation-jaque",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "operation-jm",

@@ -379,6 +379,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "ap-bac",
+      "kind": "place",
+      "names": [
+        "Ap Bac",
+        "Ấp Bắc"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q280468, the Battle of Ap Bac, read on 2026-09-23; the hamlet itself has no item this pass could reach.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "arab-world",
@@ -1805,7 +1834,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 7,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -1954,6 +1983,35 @@
         "HR",
         "HRV",
         "CRO"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "cuba-q14905932",
+      "kind": "place",
+      "names": [
+        "Cuba",
+        "Republic of Cuba",
+        "República de Cuba"
       ],
       "origin": {
         "tool": "assistant"
@@ -3751,6 +3809,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "italian-peninsula-q145694",
+      "kind": "place",
+      "names": [
+        "Italian Peninsula",
+        "Apennine Peninsula"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "italian-protectorate-of-albania",
@@ -3761,6 +3847,35 @@
         "Kingdom of Albania",
         "Mbretëria Shqiptare",
         "Italian occupation of Albania"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
+      "id": "italy-q38",
+      "kind": "place",
+      "names": [
+        "Italy",
+        "Italian Republic",
+        "Repubblica Italiana"
       ],
       "origin": {
         "tool": "assistant"
@@ -8635,6 +8750,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "shaba",
+      "kind": "place",
+      "names": [
+        "Shaba",
+        "Katanga"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q3290619, the First Shaba War, read on 2026-09-23; it is the war's own coordinate and stands for the province it is named for, not for a town.",
         "status": "draft"
       },
       "revised": null,

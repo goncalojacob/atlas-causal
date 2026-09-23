@@ -177,6 +177,15 @@
         }
       ]
     },
+    "2012-tuareg-rebellion--operation-barkhane--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled": {
       "from": "git",
       "versions": [
@@ -457,6 +466,15 @@
         }
       ]
     },
+    "euromaidan--2014-pro-russian-unrest-in-ukraine--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "euromaidan--russo-ukrainian-war--caused": {
       "from": "git",
       "versions": [
@@ -715,6 +733,15 @@
         }
       ]
     },
+    "libyan-civil-war--2012-malian-coup-d-etat--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "libyan-civil-war--2012-tuareg-rebellion--enabled": {
       "from": "git",
       "versions": [
@@ -800,6 +827,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-jaque--colombian-peace-process--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -1083,6 +1119,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "war-in-darfur--south-sudanese-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
