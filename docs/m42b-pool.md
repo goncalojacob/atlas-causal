@@ -3029,6 +3029,17 @@ century.**
   for one and refused what it found. **The Peace of Cateau-Cambrésis of 1559 is
   the named door** — the article reports historians reading it as the beginning
   of Spanish hegemony in Italy — and it is not in the corpus.
+- **The check on this batch's head hung, and the next fire must read run 1534
+  and not assume.** `validate.yml` run **1533**, on `6955689c`, passed "Validate
+  records" in three seconds and then sat in the Tests step for over an hour;
+  every earlier run on this branch finishes in about ten minutes, and the same
+  suites run here in twelve — 1,791 pure and 279 browser, all passing. An
+  in-progress job's log cannot be fetched (404), so there is nothing to read
+  until it concludes. The fire pushed this note, which cancels 1533 and starts a
+  fresh run on the same tree: **that is the one re-run the protocol allows, spent
+  on a hang and not on a failure**, and a second hang is a real fault and not
+  load. Deviation **1235**.
+
 - **Deviation 1230 is still open and cost this fire two records' places again.**
   The import reaches for `P276` before `P17` and fetches only the `P17`
   countries, so a battle whose location is a town comes out placeless and is
