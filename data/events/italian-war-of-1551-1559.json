@@ -13,12 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one."
   },
   "origin": {
     "tool": "wikidata"
@@ -44,7 +46,7 @@
     "start": 1551,
     "end": 1559
   },
-  "place": null,
+  "place": "italy-q38",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "italian-wars",

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ap-bac",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q280468, the Battle of Ap Bac, read on 2026-09-23; the hamlet itself has no item this pass could reach."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [],
+  "names": [
+    "Ap Bac",
+    "Ấp Bắc"
+  ],
+  "where": {
+    "lon": 106.195,
+    "lat": 10.438333333333,
+    "precision": "point",
+    "label": "Ap Bac"
+  },
+  "region": null,
+  "summary": null
+}
