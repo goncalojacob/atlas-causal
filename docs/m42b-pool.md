@@ -3436,10 +3436,18 @@ Run **1557** on the merge commit `bf0d6cb8` is **red**, on eleven rule 16
 errors and nothing else: `data/index/` is not what `build-index.mjs` produces,
 five history shards missing and five stale. That is **deviation 1232 met a
 fourth time** and it is written up below. All 279 browser tests passed in the
-same run and the validator's only complaint was the index. Run **1561** is the
-head, `0ceb70e9`, whose index was rebuilt with the merge already committed;
-`node tools/validate.mjs --index` is clean here (0 errors, 493 warnings) and
-the full pure suite is **1794 of 1794, 0 skipped**.
+same run and the validator's only complaint was the index. Run **1562** on `ef86ee8a` is
+**success** — the batch's own commits rebuilt the index with the merge already
+committed. (Run 1561 on `0ceb70e9` was cancelled by that push, not red.)
+Locally: `node tools/validate.mjs --index` clean, 0 errors and 493 warnings;
+**1794 pure tests and 279 browser tests, 0 failed and 0 skipped**, the browser
+half run one suite at a time the way the check runs it, and no flake on this
+fire. The four pure tests that went red during the batch are the
+`child-outside-parent` assertions of `tests/m62.test.mjs` and
+`tests/m67.test.mjs`, which is what they are for, and one byte-identity test in
+`tests/bundle.test.mjs`: a record edited through a plain `json.dump` came back
+with `"parent": null` written out, where the canonical save omits the key. Both
+were fixed in the fire.
 
 ### Deviations
 

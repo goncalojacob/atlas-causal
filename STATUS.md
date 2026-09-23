@@ -21158,9 +21158,11 @@ STEP 1's merge. **A fire cannot obey 1236 from inside a prompt that puts the
 merge in STEP 1 and the reading in STEP 2**, which is deviation **1241**, so
 the rule that does work without a prompt change is written in the pool file's
 stand: rebuild and commit the index as its own commit immediately after the
-merge commit. The batch's own two commits are in that order and the branch head
-is clean — `validate --index` 0 errors, 493 warnings, and the pure suite 1794
-of 1794 with 0 skipped. `docs/m42b-pool.md` → "Batch 13" carries all of it with
+merge commit. The batch's own two commits are in that order and **run 1562
+on `ef86ee8a` is success**; run 1561 was cancelled by that push, not red.
+Locally: `validate --index` 0 errors and 493 warnings, **1794 pure tests and
+279 browser tests, 0 failed and 0 skipped**, with no browser flake on this
+fire. `docs/m42b-pool.md` → "Batch 13" carries all of it with
 the counts per lane and per century.
 
 ## Milestones landed
