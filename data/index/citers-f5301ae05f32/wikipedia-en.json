@@ -2828,6 +2828,12 @@
     },
     {
       "dissent": false,
+      "id": "guinea-bissau-war-of-independence--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "locator": "\"Guinea-Bissau War of Independence\", revision 1372113350, \"Carnation Revolution and independence\""
+    },
+    {
+      "dissent": false,
       "id": "gulf-of-tonkin-incident--battle-of-ia-drang--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ia Drang\", revision 1370265925, lead"
@@ -2915,6 +2921,12 @@
       "id": "hereditary-captaincies-of-brazil-1534--the-atlantic-slave-trade-to-brazil--precondition-of",
       "kind": "edge",
       "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "herero-wars--herero-and-nama-genocide--caused",
+      "kind": "edge",
+      "locator": "\"Herero and Nama genocide\", revision 1373679661, lead"
     },
     {
       "dissent": false,
@@ -3413,6 +3425,12 @@
       "id": "moscow-uprising-of-1905--october-revolution--enabled",
       "kind": "edge",
       "locator": "\"Moscow uprising of 1905\", revision 1370628753, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "mozambican-war-of-independence--carnation-revolution-1974--caused",
+      "kind": "edge",
+      "locator": "\"Mozambican War of Independence\", revision 1374663244, lead and \"Aftermath\""
     },
     {
       "dissent": false,
@@ -4217,6 +4235,12 @@
       "id": "sierra-leone-civil-war--second-liberian-civil-war--reacted-to",
       "kind": "edge",
       "locator": "\"Second Liberian Civil War\", revision 1373880319, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "simba-rebellion--first-congo-war--enabled",
+      "kind": "edge",
+      "locator": "\"Simba rebellion\", revision 1375684063, \"Legacy\""
     },
     {
       "dissent": false,
@@ -7874,6 +7898,12 @@
     },
     {
       "dissent": false,
+      "id": "guinea-bissau-war-of-independence",
+      "kind": "event",
+      "locator": "\"Guinea-Bissau War of Independence\", revision 1372113350"
+    },
+    {
+      "dissent": false,
       "id": "guinean-constitutional-referendum-1958",
       "kind": "event",
       "locator": "\"1958 Guinean constitutional referendum\", revision 1368429741"
@@ -7937,6 +7967,12 @@
       "id": "hereditary-captaincies-of-brazil-1534",
       "kind": "event",
       "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "herero-and-nama-genocide",
+      "kind": "event",
+      "locator": "\"Herero and Nama genocide\", revision 1373679661"
     },
     {
       "dissent": false,
@@ -8435,6 +8471,12 @@
       "id": "mountain-war",
       "kind": "event",
       "locator": "\"Mountain War (Lebanon)\", revision 1371504591"
+    },
+    {
+      "dissent": false,
+      "id": "mozambican-war-of-independence",
+      "kind": "event",
+      "locator": "\"Mozambican War of Independence\", revision 1374663244"
     },
     {
       "dissent": false,
@@ -9020,6 +9062,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-jadotville",
+      "kind": "event",
+      "locator": "\"Siege of Jadotville\", revision 1370742055"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ladysmith",
       "kind": "event",
       "locator": "\"Siege of Ladysmith\", revision 1370742736"
@@ -9053,6 +9101,18 @@
       "id": "sierra-leone-civil-war",
       "kind": "event",
       "locator": "\"Sierra Leone Civil War\", revision 1375466974"
+    },
+    {
+      "dissent": false,
+      "id": "simba-rebellion",
+      "kind": "event",
+      "locator": "\"Simba rebellion\", revision 1375684063"
+    },
+    {
+      "dissent": false,
+      "id": "simba-rebellion",
+      "kind": "event",
+      "locator": "\"Simba rebellion\", revision 1375684063: \"a regional uprising which took place in the Democratic Republic of the Congo between 1963 and 1965\""
     },
     {
       "dissent": false,
