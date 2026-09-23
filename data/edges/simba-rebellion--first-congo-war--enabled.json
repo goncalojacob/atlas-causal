@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "simba-rebellion--first-congo-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Simba rebellion\", revision 1375684063, \"Legacy\""
+    }
+  ],
+  "from": "simba-rebellion",
+  "to": "first-congo-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article says the rebellion left the east of the country with rivalries that outlasted it: the fighting \"was further fuelled by the Banyamulenge exploiting their victory over the rebels by expanding their holdings in South Kivu after the rebellion\", and \"the local ethnic rivalries would have a major impact on the First and Second Congo War\". It adds that \"some of the Simba holdouts continued to be active until the First Congo War in 1996/97 when Kabila became President of the Congo\" and that \"ex-Simbas played a major role in Kabila's government\". Rivalries, holdings and surviving fighters are conditions a later war was fought with and not an act that started it, so the weaker of the two types the source allows is the one written. Probable.",
+  "dispute": null
+}

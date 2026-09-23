@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mozambican-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A6 and A8: `P361` names Q609836, the Portuguese Colonial War, which this atlas closes on 1974-04-25, the Carnation Revolution's day, while this war ran to the ceasefire of 8 September 1974. A child dated outside its parent is a warning, and A7 cannot widen the parent: the article printed on that record dates the war 1961 to 1974. Filed instead under `decolonisation-of-africa`, by A6's two halves — inside its span and in its lane. The argument is in docs/m42-pool.md, batch 41."
+  },
+  "wikidata": "Q2002270",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Mozambican War of Independence",
+    "pt": "Guerra da Independência de Moçambique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2002270"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mozambican War of Independence\", revision 1374663244"
+    }
+  ],
+  "title": "Mozambican War of Independence",
+  "summary": "The English Wikipedia article \"Mozambican War of Independence\", at revision 1374663244, opens: \"The Mozambican War of Independence was an armed conflict between the guerrilla forces of the Mozambique Liberation Front (FRELIMO) and Portugal. The war officially started on 25 September 1964, and ended with a ceasefire on 8 September 1974, resulting in a negotiated independence in 1975.\" Wikidata item Q2002270, whose own description reads \"armed conflict (1964–1974)\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1964,
+    "end": 1974,
+    "date": "1964-09-25",
+    "endDate": "1974-09-08",
+    "calendar": "gregorian"
+  },
+  "place": "portuguese-mozambique-q889394",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "decolonisation-of-africa"
+}

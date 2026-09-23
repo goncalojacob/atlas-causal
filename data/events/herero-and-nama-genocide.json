@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "herero-and-nama-genocide",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "No category: the item's class is Q41397, genocide, and the class table of data/imports/wikidata-seeds.json gives that class no category. The two genocides this atlas already holds, `the-holocaust` and `armenian-genocide`, carry none either, so the gap is the corpus's and not this record's, and deciding it is an edit to that table rather than to this file. The place is reused from `herero-wars`, which the item's `P276` also names."
+  },
+  "wikidata": "Q312492",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Herero and Nama genocide",
+    "pt": "Genocídio dos hererós e namaquas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q312492"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Herero and Nama genocide\", revision 1373679661"
+    }
+  ],
+  "title": "Herero and Nama genocide",
+  "summary": "The English Wikipedia article \"Herero and Nama genocide\", at revision 1373679661, opens: \"The Herero and Nama genocide, or the Namibian genocide, was the extermination of the Herero and the Nama people in German South West Africa (now Namibia) perpetrated by the German Empire between 1904 and 1908. Around 40,000 to 80,000 Hereros (80 percent of their pre-war population) and 10,000 Nama (half of their pre-war population) died.\" Wikidata item Q312492, whose own description reads \"1904–1908 genocide committed by the German colonial administration in Africa\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1908
+  },
+  "place": "german-south-west-africa",
+  "region": null,
+  "actors": [],
+  "parent": "herero-wars"
+}

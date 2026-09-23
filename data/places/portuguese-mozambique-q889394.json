@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "portuguese-mozambique-q889394",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "A9's second step: Q2002270, the Mozambican War of Independence, carries no coordinate of its own and its `P276` is this colony. The point is the item's own, which is Lourenço Marques, the capital the colonial administration sat in — the colony has no centre of its own to give, and `precision: country` is what says so."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q889394",
+  "wikipedia": {
+    "en": "Portuguese Mozambique",
+    "pt": "Província Ultramarina de Moçambique"
+  },
+  "sources": [],
+  "names": [
+    "Portuguese Mozambique",
+    "Portuguese East Africa",
+    "África Oriental Portuguesa",
+    "Província Ultramarina de Moçambique"
+  ],
+  "where": {
+    "lon": 32.576389,
+    "lat": -25.915278,
+    "precision": "country",
+    "label": "Portuguese Mozambique"
+  },
+  "region": null,
+  "summary": null
+}

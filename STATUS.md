@@ -19983,6 +19983,20 @@ and A13's relations pass, still never run.
       twice. The assertion measures a stroke width after a synthetic wheel
       event, which can be read before the zoom it is about has settled. It is
       lane A's code and not this run's data, and this fire did not touch it.
+1224. **The inverse `part of` vein was filtered against the *active* corpus,
+      and rule 21 does not care about status.** Batch 41 wrote
+      `maji-maji-rebellion` out of a row the query called unheld, and the
+      validator refused it: Q705553 is already the item of `majimaji-war`,
+      **retracted** in M44b class A for having no neighbour here to touch.
+      The record was deleted rather than argued with, and reinstating it was
+      refused on M44b's own terms — this batch found it nothing to touch
+      either, because the one held record its article names, `abushiri-revolt`,
+      it names only as a *precursor*, and a precursor is a periodisation and
+      not a mechanism, which is what all five edge types assert. **The check
+      before writing is `git grep -l '"Q<id>"' data/events`**, over every
+      event and not the active ones; it is cheaper than a record the validator
+      throws out. The 679 "unheld" Africa rows this fire measured are therefore
+      an upper bound and nobody has taken the true one.
 1223. **A test that asks whether a label lands *on* a mark is asking about the
       corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
       → *"a label over a line and a label over a mark ..."* took its mark case
@@ -21131,4 +21145,5 @@ M42 started 2026-09-23T04:11:26Z by scheduled
 M42b started 2026-09-23T05:53:13Z by scheduled
 M42b started 2026-09-23T07:59:07Z by scheduled
 M42 started 2026-09-23T06:41:50Z by scheduled
+M42 started 2026-09-23T08:38:24Z by scheduled
 M42b started 2026-09-23T10:02:11Z by scheduled

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "simba-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "a7-widened"
+    ],
+    "note": "A7: the item gives 1964–1964 — `P580` January 1964, `P582` November 1964 — with a `P585` of November 1965 contradicting both. The cited article's first sentence, at revision 1375684063, says \"between 1963 and 1965\", and that is the span written here. No exact dates are kept: the article gives years, and a day nobody wrote down is not this run's to invent. No category: the class is Q124734, which the class table leaves without one."
+  },
+  "wikidata": "Q2656683",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Simba rebellion",
+    "pt": "Rebelião Simba"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2656683"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Simba rebellion\", revision 1375684063: \"a regional uprising which took place in the Democratic Republic of the Congo between 1963 and 1965\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Simba rebellion\", revision 1375684063"
+    }
+  ],
+  "title": "Simba rebellion",
+  "summary": "The English Wikipedia article \"Simba rebellion\", at revision 1375684063, opens: \"The Simba rebellion, also known as the Orientale revolt, was a regional uprising which took place in the Democratic Republic of the Congo between 1963 and 1965 in the wider context of the Congo Crisis and the Cold War. The rebellion, located in the east of the country, was led by the followers of Patrice Lumumba, who had been ousted from power in 1960 by Joseph Kasa-Vubu and Joseph-Désiré Mobutu and subsequently killed in January 1961 in Katanga.\" Wikidata item Q2656683, whose own description reads \"1964 rebellion in Congo-Kinshasa\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1963,
+    "end": 1965
+  },
+  "place": "democratic-republic-of-the-congo",
+  "region": null,
+  "actors": [],
+  "parent": "congo-crisis"
+}

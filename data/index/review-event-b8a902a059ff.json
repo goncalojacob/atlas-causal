@@ -8433,7 +8433,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 17,
+      "degree": 19,
       "id": "carnation-revolution-1974",
       "kind": "event",
       "origin": {
@@ -11624,7 +11624,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "first-congo-war",
       "kind": "event",
       "origin": {
@@ -12992,6 +12992,40 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "guinea-bissau-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "The same refusal as its Mozambican sibling: `P361` names Q609836, the Portuguese Colonial War, and this war ends on 10 September 1974, four and a half months after this atlas closes that record at the Carnation Revolution. Filed under `decolonisation-of-africa`, whose span and lane it is inside. The atlas already holds this war's first day as `guinea-war-begins-1963` and its declaration as `guinea-bissau-declares-independence-1973`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Guinea-Bissau War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -13398,6 +13432,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "herero-and-nama-genocide",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "herero-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "No category: the item's class is Q41397, genocide, and the class table of data/imports/wikidata-seeds.json gives that class no category. The two genocides this atlas already holds, `the-holocaust` and `armenian-genocide`, carry none either, so the gap is the corpus's and not this record's, and deciding it is an edit to that table rather than to this file. The place is reused from `herero-wars`, which the item's `P276` also names.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Herero and Nama genocide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -13409,6 +13476,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "herero-wars",
       "kind": "event",
       "origin": {
@@ -16762,6 +16830,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Mountain War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "mozambican-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A6 and A8: `P361` names Q609836, the Portuguese Colonial War, which this atlas closes on 1974-04-25, the Carnation Revolution's day, while this war ran to the ceasefire of 8 September 1974. A child dated outside its parent is a warning, and A7 cannot widen the parent: the article printed on that record dates the war 1961 to 1974. Filed instead under `decolonisation-of-africa`, by A6's two halves — inside its span and in its lane. The argument is in docs/m42-pool.md, batch 41.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mozambican War of Independence"
     },
     {
       "authors": [
@@ -20818,6 +20920,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "siege-of-jadotville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "The first of the Congo Crisis's parts this atlas holds; the crisis had no children at all before this batch. No edge: the article's only sentence joining it to anything here is \"a major battle during the Congo Crisis\", which is what `parent` already says, and the one other held record it names, `algerian-war`, it names only as where the mercenaries facing the relief column had served.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Jadotville"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -21018,6 +21153,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Sierra Leone Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "simba-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "a7-widened"
+        ],
+        "note": "A7: the item gives 1964–1964 — `P580` January 1964, `P582` November 1964 — with a `P585` of November 1965 contradicting both. The cited article's first sentence, at revision 1375684063, says \"between 1963 and 1965\", and that is the span written here. No exact dates are kept: the article gives years, and a day nobody wrote down is not this run's to invent. No category: the class is Q124734, which the class table leaves without one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Simba rebellion"
     },
     {
       "authors": [
@@ -26904,12 +27073,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "herero-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "honduras-and-la-negra-farms-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27175,6 +27338,12 @@
     },
     {
       "id": "siege-of-cusco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-jadotville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

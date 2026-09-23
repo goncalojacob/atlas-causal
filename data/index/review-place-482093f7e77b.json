@@ -2390,7 +2390,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "democratic-republic-of-the-congo",
       "kind": "place",
       "names": [
@@ -3515,7 +3515,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "german-south-west-africa",
       "kind": "place",
       "names": [
@@ -3733,6 +3733,37 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "guinea-bissau-q1007",
+      "kind": "place",
+      "names": [
+        "Guinea-Bissau",
+        "Guiné-Bissau",
+        "Republic of Guinea-Bissau",
+        "Portuguese Guinea"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "A9's second step: Q2609193, the Guinea-Bissau War of Independence, carries no coordinate of its own and its `P276` is the country. The war was fought in Portuguese Guinea, which is the same ground under the name it had then; the record is filed under the item the source names and lists the colonial name among its own.",
         "status": "draft"
       },
       "revised": null,
@@ -4299,6 +4330,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "jadotville-q18780",
+      "kind": "place",
+      "names": [
+        "Likasi",
+        "Jadotville"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "A9's first step and its second agree here, which is why this record carries an item at all. Q2404547 gives its own `P625` as -10.983333, 26.733333 and its `P276` as Q18780, Likasi — whose own `P625` is the same pair to six places. The point is therefore the town's and not only the battle's, so it is filed under the town's item. The label is the name the town had in 1961; `names` carries both.",
         "status": "draft"
       },
       "revised": null,
@@ -8233,6 +8293,37 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "portuguese-mozambique-q889394",
+      "kind": "place",
+      "names": [
+        "Portuguese Mozambique",
+        "Portuguese East Africa",
+        "África Oriental Portuguesa",
+        "Província Ultramarina de Moçambique"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "A9's second step: Q2002270, the Mozambican War of Independence, carries no coordinate of its own and its `P276` is this colony. The point is the item's own, which is Lourenço Marques, the capital the colonial administration sat in — the colony has no centre of its own to give, and `precision: country` is what says so.",
         "status": "draft"
       },
       "revised": null,
