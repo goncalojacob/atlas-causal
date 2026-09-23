@@ -7464,6 +7464,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-tabocas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The point and the names are the located item's own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tabocas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -8814,12 +8846,45 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 1,
+      "id": "campaign-of-porto-calvo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The point and the names are the located item's own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Campaign of Porto Calvo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
       "id": "capture-of-bahia",
       "kind": "event",
       "origin": {
@@ -9487,6 +9552,40 @@
       "revised": null,
       "status": "active",
       "title": "Congo Crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "conquest-of-paraiba",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "date",
+          "a9-place"
+        ],
+        "note": "The item dates the conquest 25 November to 25 December 1634 and the record keeps those days. The cached English lead at revision 1370612312 opens “the attempts by Dutch forces in 1630 to seize control of Paraíba”, four years earlier. A7 lets a run widen a span from the cited article and this run did not: that sentence is about what led to the conquest, not when it ran. A reviewer decides which the record should carry.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Conquest of Paraíba"
     },
     {
       "authors": [
@@ -10695,7 +10794,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 6,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "names": [
@@ -12154,6 +12253,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "First Battle of Brega"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "first-battle-of-guararapes",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "The item carries no P625 and its P276 is Q40942, the state of Pernambuco, which would put a battle on a whole province. The place is the town instead, from the record’s own cited article: revision 1370618669 gives the location as “Morro dos Guararapes (present-day Jaboatão dos Guararapes, Pernambuco, Brazil)”, and the Second Battle’s item puts its own P625 on that town’s point. No coordinate was invented.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Guararapes"
     },
     {
       "authors": [
@@ -21357,6 +21489,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "second-battle-of-guararapes",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The point and the names are the located item's own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Guararapes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -27979,6 +28144,12 @@
     },
     {
       "id": "battle-of-suipacha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tabocas",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

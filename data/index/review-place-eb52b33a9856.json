@@ -4456,6 +4456,36 @@
         }
       ],
       "created": "2026-09-23",
+      "degree": 2,
+      "id": "jaboatao-dos-guararapes",
+      "kind": "place",
+      "names": [
+        "Jaboatão dos Guararapes",
+        "Jaboatao dos Guararapes",
+        "Jaboatao"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
       "degree": 1,
       "id": "jadotville-q18780",
       "kind": "place",
@@ -7859,6 +7889,37 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "paraiba",
+      "kind": "place",
+      "names": [
+        "Paraíba",
+        "Paraiba",
+        "Paraiba State",
+        "Estado da Paraíba"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 12,
       "id": "paris",
@@ -8403,6 +8464,34 @@
         "flags": [
           "wikidata-assigned-by-assistant"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "porto-calvo",
+      "kind": "place",
+      "names": [
+        "Porto Calvo"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,
@@ -11860,6 +11949,35 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "vitoria-de-santo-antao",
+      "kind": "place",
+      "names": [
+        "Vitória de Santo Antão",
+        "Vitória do Santo Antão"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,

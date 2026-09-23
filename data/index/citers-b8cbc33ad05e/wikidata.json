@@ -2816,6 +2816,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tabocas",
+      "kind": "event",
+      "locator": "Q4872481"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
@@ -3026,6 +3032,12 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-porto-calvo",
+      "kind": "event",
+      "locator": "Q121754881"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-bahia",
       "kind": "event",
       "locator": "Q3704801"
@@ -3131,6 +3143,12 @@
       "id": "congo-crisis",
       "kind": "event",
       "locator": "Q1773926"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-paraiba",
+      "kind": "event",
+      "locator": "Q121494180"
     },
     {
       "dissent": false,
@@ -3461,6 +3479,12 @@
       "id": "first-battle-of-brega",
       "kind": "event",
       "locator": "Q989081"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-guararapes",
+      "kind": "event",
+      "locator": "Q5452519"
     },
     {
       "dissent": false,
@@ -4781,6 +4805,12 @@
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "Q868249"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-guararapes",
+      "kind": "event",
+      "locator": "Q3504102"
     },
     {
       "dissent": false,

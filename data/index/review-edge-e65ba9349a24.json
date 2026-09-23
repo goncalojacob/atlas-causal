@@ -4800,6 +4800,34 @@
       ],
       "created": "2026-09-23",
       "from": "capture-of-bahia",
+      "id": "capture-of-bahia--campaign-of-porto-calvo--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "campaign-of-porto-calvo",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "capture-of-bahia",
       "id": "capture-of-bahia--dutch-brazil-1630-1654--precondition-of",
       "kind": "edge",
       "origin": {
@@ -7002,6 +7030,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "dutch-brazil-1630-1654",
+      "id": "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "conquest-of-paraiba",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "dutch-brazil-1630-1654",
       "id": "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused",
@@ -8287,6 +8343,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-ras-lanuf",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "first-battle-of-guararapes",
+      "id": "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-guararapes",
       "type": "precondition-of"
     },
     {
