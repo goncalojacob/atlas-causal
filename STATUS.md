@@ -20056,6 +20056,42 @@ and A13's relations pass, still never run.
       the picture names five things and at k = 8 two, and the nearest label
       and mark are 7 px apart. Line 140 of the same file records the same
       shape of breakage from an earlier M42 batch and the same kind of fix.
+1233. **`slug()` drops a letter that carries its stroke inside the codepoint.**
+      The function normalises NFD and strips combining marks, which folds `ệ`
+      to `e` and `ủ` to `u` — and `Đ` is U+0110, a letter with a stroke and no
+      decomposition at all, so it is not folded to `d` but removed. Batch 43's
+      place for Điện Biên Phủ was therefore written as `ien-bien-phu-city` and
+      corrected by hand to `dien-bien-phu` before anything outside the run
+      referenced it. The fix is a small table of the letters NFD cannot reach
+      (Đ/đ, Ł/ł, Ø/ø, Æ, Þ), applied before the strip; nothing here has needed
+      it until an id came out of Vietnamese.
+1234. **An item listed twice in the seeds file becomes two records, and
+      `idFor` hides it by disambiguating the second.** `Q1922071` was already
+      in `data/imports/wikidata-seeds.json`'s `items`, refused by an earlier
+      fire for want of a lane and sitting in the state file's `done`; batch 43
+      added it a second time rather than checking, cleared the `done` entry the
+      way deviation 1225 did, and the import wrote
+      `india-pakistan-war-of-1971` **and**
+      `india-pakistan-war-of-1971-q1922071` in one run. The second is `idFor`
+      answering a taken id, which is the right behaviour for two different
+      items with one name and the wrong one for the same item twice. The
+      duplicate and the extra entry were removed. **The tool should refuse an
+      item it has already created a record for in the same run**, which is one
+      `Set` in the loop and not a rule anybody has to remember.
+1235. **A record that holds an event without the item is invisible to the
+      inverse `part of` vein.** The vein's "unheld" filter is every record's
+      `wikidata` key, over both branches — deviation 1224's own correction —
+      and `Q626191`, the Indian annexation of Goa, came back unheld although
+      this atlas has carried `goa-annexed-1961` since 2 September: a record
+      written from two books, naming three actors and carrying an edge, and
+      never given an identifier. Batch 43 created `indian-annexation-of-goa`
+      from the item, found the duplicate by reading the corpus for the title,
+      deleted it, and wrote the item on to the record that was already here —
+      by hand, which is the M20 route, because the import can only enrich a
+      record that already carries the item. **The check before an import is
+      the title and not only the key**, and the cheaper standing fix is to
+      keep reconciling: an atlas whose hand-written records all carry their
+      item cannot be told the same event twice.
 
 ## M84 — the owner's feedback document
 
