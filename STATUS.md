@@ -20112,8 +20112,32 @@ and A13's relations pass, still never run.
       each written `point` and each edited to `city` afterwards. It is a lookup
       and a default, and until it is written every place this import creates
       is drawn at the wrong precision until somebody notices.
-
-## M84 — the owner's feedback document
+      **Closed.** Batch 46 wrote it — `classify()` returns a precision the way
+      it returns a category, and all forty place classes of the table name one —
+      and batch 47 is the proof: seven new place records, seven correct
+      precisions, no hand-correction. Nine corrections over five batches was
+      the price of not writing it sooner.
+1238. **`claimTimes()` reads a Wikidata time's `time` and ignores its
+      `calendarmodel`, so an item dated Old Style imports days labelled
+      Gregorian.** `Q384091`, the Battle of Mukden, states `P580` 6 February
+      and `P582` 25 February 1905 with `calendarmodel` `Q1985786`, the
+      proleptic Julian calendar — the reckoning the Russian army used — and
+      the article's own first sentence gives the same span as 19 February to
+      10 March. `schema/common/interval.json` defaults a 1905 record to
+      Gregorian, so the two are thirteen days apart and nothing said so.
+      Batch 47 wrote `when.calendar: "julian"` on the record by hand, which is
+      the field the schema already has, and left the item's days untouched.
+      This is deviation 1237's shape exactly: the answer is on the item, the
+      atlas has somewhere to put it, and the alternative is one correction per
+      record for as long as the run touches Russian, Ottoman or Balkan dates
+      before 1918 — which both lanes M42 owns are full of.
+1239. **`claimTimes()` filters a statement on `snaktype` and not on rank, so a
+      `deprecated` value can be read where a `normal` one exists.** `Q384091`
+      carries two `P582`, 25 February at `normal` and 26 February at
+      `deprecated`, and the normal one happened to come first in the document
+      order the API returned. Nothing in the tool says it always will. Rank is
+      the editors' own statement about which value to believe, and an import
+      that reads past it is reading something the item asked it not to.
 
 Lane A, on the branch `m84`. `docs/m84-brief.md` over
 `docs/feedback-2026-09-22.md`, left before a week away with the note *"Não
