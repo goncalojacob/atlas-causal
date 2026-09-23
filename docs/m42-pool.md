@@ -3727,6 +3727,8 @@ its Wikidata item, what is missing; import nothing.*
 | events with no edge at all | 105 | **100** |
 | events with no place | 32 | **22** |
 | events naming no actor | 334 | **318** |
+| events opening on the import's placeholder summary | 87 | **20** |
+| validator warnings | 465 | **393** |
 
 **Per lane (A10), unchanged in every cell** because nothing was imported:
 active Europe 314, Asia 130, Africa 103, Americas 140; main Europe 85, Asia
@@ -3939,7 +3941,8 @@ same change.
 Each summary quotes the lead at a named revision, cites `wikipedia-en` at that
 revision, carries `summary-from-lead`, and keeps the import's own sentence
 behind it — the shape 330 records already have. The `summary-imported` warning
-count falls from 460 to 393 across the fire.
+count falls by 67, and the validator's total from 465 at the fire's start to
+393: five of the difference are the places and 67 the summaries.
 
 The five summaries that are *short but written* — `cavaco-absolute-majority-1987`,
 `fiftieth-anniversary-25-april-2024`, `montenegro-government-2024`,
