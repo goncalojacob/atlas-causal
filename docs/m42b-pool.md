@@ -1692,6 +1692,24 @@ not a second reading of the record, it is the same reading written twice.
 | events with no edge at all | 135 | 158 |
 | place records | — | +5 |
 
+### Deviation 1217 — the index must be rebuilt *after* the records are committed
+
+**The check went red on this branch's merge commit and the reason is an
+ordering nobody had written down.** `tools/lib/history.mjs` reads each
+record's versions out of the commits that touched its file. An index built
+while the records are still uncommitted is therefore **one version short for
+every record in that commit**, and rule 16 — `data/index/` is byte-identical
+to a fresh build — fails on the runner, which checks the tree out at
+`fetch-depth: 0` and sees the commit the local build could not.
+
+Run 1471 failed on exactly this: seven history shards missing or stale, all of
+them for records the `origin/m42` merge had touched. Deviation **798** already
+says *records first, rebuild, then commit the index*; what it does not say, and
+what this fire learned the expensive way, is that **the rebuild goes after the
+records' own `git commit` and not before it**. A rebuild that follows the
+records into a commit of its own is correct, because a commit that touches only
+`data/index/` changes no record's history.
+
 ### Per lane and per century (A10), after this batch
 
 | century | europe | africa | asia | americas | all |

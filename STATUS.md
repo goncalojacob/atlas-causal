@@ -20485,6 +20485,15 @@ answers. Deviation 1215: the import walks places before events only within a
 25-item slice, so the batch had to be run three times, the places on their own
 in the middle; nothing of the first two runs is on the branch.
 
+**Deviation 1217**: the check went red on this branch's merge commit, and the
+reason is an ordering nobody had written down. `tools/lib/history.mjs` reads a
+record's versions out of the commits that touched its file, so an index built
+while the records are still uncommitted is **one version short for every record
+in that commit** and rule 16 fails on the runner, which sees the commit the
+local build could not. Deviation 798 already says *records first, rebuild, then
+commit the index*; what it does not say is that **the rebuild goes after the
+records' own commit and not before it**.
+
 **Deviation 1216**: A8 says "every umbrella whose span and subject fit", and
 the rule that actually holds is "every *nearest* umbrella" — four battles had
 `spanish-american-wars-of-independence` listed beside their national war and
