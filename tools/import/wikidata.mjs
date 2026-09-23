@@ -924,17 +924,37 @@ export async function writeState(dataDir, state) {
 export function nextBatch(state, mode, wanted, size = BATCH) {
   const run = state.runs?.[mode] ?? { updated: null, pending: [], done: [] };
   const done = new Set(run.done ?? []);
-  const pending = (run.pending ?? []).length ? run.pending.filter((id) => !done.has(id)) : wanted.filter((id) => !done.has(id));
-  return { batch: pending.slice(0, size), pending, done: [...done] };
+  // A refusal is not a completion (deviation 1231): it was written into `done`
+  // beside the finished items, so adding the class or the lane that would have
+  // answered it changed nothing, because the cursor had already passed. It is
+  // carried apart and offered again, ahead of the untried, so that editing
+  // data/imports/wikidata-seeds.json is enough to answer one.
+  const refused = [...new Set(run.refused ?? [])].filter((id) => !done.has(id));
+  const held = new Set(refused);
+  const untried = ((run.pending ?? []).length ? run.pending : wanted)
+    .filter((id) => !done.has(id) && !held.has(id));
+  const asked = new Set(wanted);
+  const pending = [...refused.filter((id) => asked.has(id)), ...untried];
+  return { batch: pending.slice(0, size), pending, done: [...done], refused };
 }
 
-export function advance(state, mode, { batch, pending, done, today }) {
+export function advance(state, mode, { batch, pending, done, today, refused = [] }) {
+  const again = new Set(refused);
   const remaining = pending.filter((id) => !batch.includes(id));
+  const settled = batch.filter((id) => !again.has(id));
+  // What this run did not look at stays as it was; what it looked at is either
+  // settled or refused again, and never both.
+  const before = (state.runs?.[mode]?.refused ?? []).filter((id) => !batch.includes(id));
   return {
     ...state,
     runs: {
       ...state.runs,
-      [mode]: { updated: today, pending: remaining, done: [...done, ...batch] },
+      [mode]: {
+        updated: today,
+        pending: remaining,
+        done: [...done, ...settled],
+        refused: [...new Set([...before, ...again])],
+      },
     },
   };
 }
@@ -1052,6 +1072,15 @@ function enrich(record, read, today) {
   return { record: named.record, added: merged.added, names: named.added ? named.record.names : null };
 }
 
+// An item Wikidata does not have is the one refusal no edit to this
+// repository can answer, so it is settled rather than carried: everything
+// else names something under data/ that a person can change — a class the
+// table has no row for, a lane the seeds file does not give — and is offered
+// again next run (deviation 1231).
+export const NO_SUCH_ITEM = 'no such item; the seeds file names something Wikidata does not have';
+
+export const stillAskable = (refused) => refused.filter((r) => r.why !== NO_SUCH_ITEM).map((r) => r.qid);
+
 function refuse(report, qid, why) {
   report.refused.push({ qid, why });
 }
@@ -1117,7 +1146,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   for (const qid of batch) {
     const entity = entities[qid];
     if (isMissing(entity)) {
-      refuse(report, qid, 'no such item; the seeds file names something Wikidata does not have');
+      refuse(report, qid, NO_SUCH_ITEM);
       continue;
     }
     const read = readEntity(entity);
@@ -1239,7 +1268,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'import', { batch, pending, done, today });
+  const next = advance(state, 'import', { batch, pending, done, today, refused: stillAskable(report.refused) });
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }

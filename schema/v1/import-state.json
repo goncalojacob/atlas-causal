@@ -36,6 +36,11 @@
             "description": "What this walk has already dealt with, so a resumed run neither refetches it nor rewrites it.",
             "type": "array",
             "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+          },
+          "refused": {
+            "description": "What this walk could not do anything with and offers again next run, ahead of the untried. A refusal is not a completion (deviation 1231): it names something under data/ that a person can change — a class the table has no row for, a lane the seeds file does not give — and writing it into `done` meant that making the change answered nothing, because the cursor had passed. Absent in a file written before this existed, which reads as empty.",
+            "type": "array",
+            "items": { "type": "string", "minLength": 1, "maxLength": 200 }
           }
         }
       }

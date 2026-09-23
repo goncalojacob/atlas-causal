@@ -561,7 +561,7 @@ test('the cursor walks in batches and a resumed run does not redo the finished p
   const first = nextBatch(emptyState(), 'import', wanted, 2);
   assert.deepEqual(first.batch, ['Q1', 'Q2']);
   const after = advance(emptyState(), 'import', { ...first, today: '2026-09-04' });
-  assert.deepEqual(after.runs.import, { updated: '2026-09-04', pending: ['Q3', 'Q4', 'Q5'], done: ['Q1', 'Q2'] });
+  assert.deepEqual(after.runs.import, { updated: '2026-09-04', pending: ['Q3', 'Q4', 'Q5'], done: ['Q1', 'Q2'], refused: [] });
 
   const second = nextBatch(after, 'import', wanted, 2);
   assert.deepEqual(second.batch, ['Q3', 'Q4']);
@@ -573,6 +573,41 @@ test('the cursor walks in batches and a resumed run does not redo the finished p
   // Two modes keep two places.
   assert.deepEqual(Object.keys(advance(after, 'reconcile', { batch: ['x'], pending: ['x'], done: [], today: '2026-09-04' }).runs).sort(), ['import', 'reconcile']);
   assert.equal(BATCH, 25);
+});
+
+// Deviation 1231. A refusal was written into `done` beside the completions,
+// so the thing that would answer it — a class added to the table, a lane
+// added to the seeds file — changed nothing, because the cursor had passed.
+// A refusal is not a completion: it is carried apart and re-offered, and the
+// state file says which ones they are so a person can see what keeps failing.
+test('a refusal is not a completion: it is carried apart and offered again', () => {
+  const wanted = ['Q1', 'Q2', 'Q3'];
+  const first = nextBatch(emptyState(), 'import', wanted, 2);
+  assert.deepEqual(first.batch, ['Q1', 'Q2']);
+  const after = advance(emptyState(), 'import', { ...first, today: '2026-09-04', refused: ['Q2'] });
+  assert.deepEqual(after.runs.import.done, ['Q1'], 'only what was settled');
+  assert.deepEqual(after.runs.import.refused, ['Q2']);
+
+  // The next run offers the refusal first: whoever edited the seeds file to
+  // answer it should not have to wait for the rest of the walk.
+  const second = nextBatch(after, 'import', wanted, 2);
+  assert.deepEqual(second.batch, ['Q2', 'Q3']);
+
+  // Answered, it leaves the list and joins the others.
+  const end = advance(after, 'import', { ...second, today: '2026-09-05', refused: [] });
+  assert.deepEqual(end.runs.import.done, ['Q1', 'Q2', 'Q3']);
+  assert.deepEqual(end.runs.import.refused, []);
+  assert.deepEqual(nextBatch(end, 'import', wanted, 2).batch, [], 'and then the walk is finished');
+
+  // Refused again, it stays where it was and nothing is lost.
+  const stuck = advance(after, 'import', { ...second, today: '2026-09-05', refused: ['Q2'] });
+  assert.deepEqual(stuck.runs.import.done, ['Q1', 'Q3']);
+  assert.deepEqual(stuck.runs.import.refused, ['Q2']);
+
+  // A state file written before this existed has no `refused` key and still
+  // walks: the absent list is an empty one.
+  const old = { schema: 1, kind: 'import-state', source: 'wikidata', runs: { import: { updated: '2026-09-01', pending: ['Q3'], done: ['Q1', 'Q2'] } } };
+  assert.deepEqual(nextBatch(old, 'import', wanted, 2).batch, ['Q3']);
 });
 
 // --- on disk ----------------------------------------------------------------
@@ -633,13 +668,22 @@ test('--import creates what it can, refuses the rest, and leaves a cursor', asyn
   const state = await readJson(path.join(dir, 'imports', 'wikidata-state.json'));
   assert.equal(state.kind, 'import-state');
   assert.deepEqual(state.runs.import.pending, []);
-  assert.equal(state.runs.import.done.length, 7);
+  // Five settled and two carried (deviation 1231): the unclassified item and
+  // the undated one each name something under data/ that a person can change,
+  // so they are not "done". Q9000008 is missing from Wikidata, which no edit
+  // here can answer, so it is settled with the rest.
+  assert.deepEqual(state.runs.import.done.sort(),
+    ['Q9000001', 'Q9000002', 'Q9000003', 'Q9000005', 'Q9000008']);
+  assert.deepEqual(state.runs.import.refused.sort(), ['Q9000004', 'Q9000007']);
 
-  // Run it again: the cursor says everything is done, so nothing is fetched.
+  // Run it again: the walk is finished, so the only thing left to ask about
+  // is the pair somebody could still answer, and it is asked about again.
   const { fetcher: second } = await fixtureFetcher();
   const again = await runImportMode(dir, { fetcher: second, today: '2026-09-05', cacheDir, deriveRegion });
-  assert.deepEqual(again.report.batch, []);
-  assert.equal(second.calls, 0);
+  assert.deepEqual(again.report.batch, ['Q9000004', 'Q9000007']);
+  assert.deepEqual(again.report.created, [], 'and nothing has changed, so both are refused again');
+  assert.deepEqual((await readJson(path.join(dir, 'imports', 'wikidata-state.json'))).runs.import.refused.sort(),
+    ['Q9000004', 'Q9000007']);
 });
 
 // bundle.test.mjs holds this over data/, but only after a record is already
@@ -789,7 +833,8 @@ test('--import stops at the batch size and the next run continues', async () => 
   const second = await runImportMode(dir, { fetcher: next, today: '2026-09-04', batchSize: 2, cacheDir, deriveRegion });
   assert.deepEqual(second.report.batch, ['Q9000003', 'Q9000004']);
   const state = await readJson(path.join(dir, 'imports', 'wikidata-state.json'));
-  assert.deepEqual(state.runs.import.done, ['Q9000001', 'Q9000002', 'Q9000003', 'Q9000004']);
+  assert.deepEqual(state.runs.import.done, ['Q9000001', 'Q9000002', 'Q9000003']);
+  assert.deepEqual(state.runs.import.refused, ['Q9000004'], 'the class table has no row for it, so it is asked about again');
 });
 
 test('--import enriches a record that already carries the item, and writes nothing else', async () => {
