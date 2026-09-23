@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-cusco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q2398589",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Siege of Cusco",
+    "pt": "Cerco de Cusco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2398589"
+    }
+  ],
+  "title": "Siege of Cusco",
+  "summary": "Wikidata item Q2398589, imported by tools/import/wikidata.mjs. The item's own description reads \"1536–1537 siege in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1536,
+    "end": 1537,
+    "date": "1536-05-06",
+    "endDate": "1537-04-18"
+  },
+  "place": "cusco",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [
+    {
+      "actor": "inca-empire",
+      "role": "belligerent",
+      "note": "Wikidata names the Inca Empire (Q28573) a participant of the siege; this atlas already holds that polity."
+    }
+  ],
+  "parent": "spanish-conquest-of-the-inca-empire"
+}

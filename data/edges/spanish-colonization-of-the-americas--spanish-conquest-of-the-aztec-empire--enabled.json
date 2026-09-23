@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "spanish-colonization-of-the-americas--spanish-conquest-of-the-aztec-empire--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § The conquest of Mexico"
+    }
+  ],
+  "from": "spanish-colonization-of-the-americas",
+  "to": "spanish-conquest-of-the-aztec-empire",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The expedition that became the conquest of Mexico set out from a colony that was already there, and the article says so in its own words: **\"A well-connected settler in Cuba, Hernán Cortés received authorization in 1519 by the governor of Cuba to form an expedition of exploration-only to this far western region.\"** Twenty-six years of settlement in the Caribbean — the article gives the Spanish over two decades of exploring the islands and the mainland coast before this — are what put a governor in Havana with expeditions to license and a settler with the standing to lead one. The conquest is also filed as part of the colonization, which is a different statement: this link claims the licence and the base it came from, not that the colonization made the conquest inevitable.",
+  "dispute": null
+}

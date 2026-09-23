@@ -1080,7 +1080,25 @@
     "Q736",
     "Q750",
     "Q77",
-    "Q96"
+    "Q96",
+    "Q1047607",
+    "Q828435",
+    "Q593267",
+    "Q636771",
+    "Q1425362",
+    "Q2398589",
+    "Q2993582",
+    "Q1121487",
+    "Q1229264",
+    "Q1421412",
+    "Q1135591",
+    "Q1127285",
+    "Q975837",
+    "Q27230923",
+    "Q13695",
+    "Q205119",
+    "Q5582862",
+    "Q8356"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1279,7 +1297,25 @@
     "Q1123201": "americas",
     "Q8934": "americas",
     "Q775606": "americas",
-    "Q7134668": "americas"
+    "Q7134668": "americas",
+    "Q1047607": "americas",
+    "Q828435": "americas",
+    "Q593267": "americas",
+    "Q636771": "americas",
+    "Q1425362": "americas",
+    "Q2398589": "americas",
+    "Q2993582": "americas",
+    "Q1121487": "americas",
+    "Q1229264": "americas",
+    "Q975837": "americas",
+    "Q27230923": "americas",
+    "Q1421412": "europe",
+    "Q1135591": "europe",
+    "Q1127285": "europe",
+    "Q13695": "americas",
+    "Q205119": "americas",
+    "Q5582862": "americas",
+    "Q8356": "europe"
   },
   "queries": [
     {
@@ -4686,6 +4722,74 @@
       "kind": "place",
       "label": "million city",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city with a population of more than 1,000,000”."
+    },
+    "Q1361229": {
+      "kind": "event",
+      "category": "war",
+      "label": "conquest",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata's own gloss is \"military subjugation of an enemy by force of arms\", which is data/categories.json's `war` — \"a war, a campaign, a battle or a siege: organised armed force between polities\" — in other words."
+    },
+    "Q1377300": {
+      "kind": "event",
+      "label": "first wave of European colonization",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata glosses it \"aspect of history\", which is a period and not a kind of event this atlas has a category for, so it names no category: it stands beside Q1361229 on the conquest of the Aztec Empire and must agree with it about the kind."
+    },
+    "Q815962": {
+      "kind": "event",
+      "label": "colonization",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Establishment and development of settlements by people or animals\" is a process over a span, which is what Q11514315 already makes an event; it carries no category because none of the twelve is what a colonization is."
+    },
+    "Q49371": {
+      "kind": "event",
+      "category": "law",
+      "label": "legislation",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Product of enrolling, enacting, or promulgating law by a legislature\" is data/categories.json's `law` — \"a constitution, a statute, a decree or a court ruling\"."
+    },
+    "Q1123131": {
+      "kind": "event",
+      "label": "disputation",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A formalized method of debate; the Valladolid debate is an instance of one. No category: a debate is none of the twelve, and `other` is for a kind the atlas has too few of to name, not for one nobody looked at."
+    },
+    "Q7755": {
+      "kind": "event",
+      "category": "law",
+      "label": "constitution",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. The same reading as Q49371: a constitution is named in data/categories.json's own description of `law`."
+    },
+    "Q11204": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "legislature",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"A kind of deliberative assembly with the power to pass, amend, and repeal laws\" is a body and not something that happens, so the Cortes of Cádiz enters this atlas as an actor; the event that carries its consequence is the constitution it adopted."
+    },
+    "Q2993893": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "royal council",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. One of the four classes of the Council of the Indies; all four are bodies, which is what keeps the item from being refused for classes that disagree."
+    },
+    "Q895526": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "governing body",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
+    },
+    "Q2994416": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "consejo",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
+    },
+    "Q41487": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "court",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A judicial institution with the authority to resolve legal disputes: a body, like the three above it."
+    },
+    "Q2074737": {
+      "kind": "place",
+      "label": "municipality of Spain",
+      "note": "Added in M42b batch 8. The label and the description are read from the class item itself over the network; Q15284 municipality and Q2555896 municipality of Colombia are the precedent for a municipality being a place of this atlas."
     }
   },
   "reconcile": true

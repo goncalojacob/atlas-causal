@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "valladolid-debate",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q1229264",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Valladolid debate",
+    "pt": "Controvérsia de Valladolid"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1229264"
+    }
+  ],
+  "title": "Valladolid debate",
+  "summary": "Wikidata item Q1229264, imported by tools/import/wikidata.mjs. The item's own description reads \"moral debate in Spain between 1550–1551 to discuss the rights and treatment of a colonized people by colonizers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1550,
+    "end": 1551,
+    "date": "1550-08-15",
+    "endDate": "1551-05-04"
+  },
+  "place": "valladolid",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}
