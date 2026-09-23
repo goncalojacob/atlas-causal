@@ -2982,26 +2982,218 @@ next fire should read before it merges, not after**: the merge is the first
 thing a fire on this branch does and the index is rebuilt before anything has
 been committed, which is the order that produces the fault every time.
 
+## The thirteenth fire — two tool faults paid off, and no batch, 23 September
+
+**Wikimedia refused every request this fire made, for the whole of it**, so
+there was no batch. What the fire did instead is the two open deviations that
+`docs/m42-brief.md` and this file both say belong to "one fire that imports
+nothing": **1230**, which had cost three batches a hand repair each, and
+**1231**, which had cost one. Both are fixed, both with their test first, and
+every batch after this one is cheaper for it.
+
+### Before anything: the merge, and the measurement
+
+`origin/m42`'s batch 43 (the Asia lane) was merged in, `data/index/` dropped
+and rebuilt rather than merged, and `docs/m53-polities.md` §4.1 re-taken over
+the merged corpus at **376 of 800**, and 377 by the overlap rule. A zero-byte
+`geneva-conference` left at the repository root by a shell expansion on `m42`
+was removed here.
+
+| | after the merge |
+| --- | --- |
+| active | **800** |
+| **main** | **242** — unchanged, and no import could raise it |
+| filed | 558 |
+| active edges | 779 |
+| **largest connected component** | **565** |
+| components | 191 |
+| events with no edge | 158 |
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | 364 | 88 |
+| americas | 180 | 56 |
+| asia | 134 | 67 |
+| africa | 122 | 31 |
+
+| cell | active | main |
+| --- | --- | --- |
+| americas, 15th | 6 | 5 |
+| **americas, 16th** | **9** | 3 |
+| **americas, 17th** | **9** | 6 |
+| **americas, 18th** | **9** | 1 |
+| americas, 19th | 38 | 9 |
+| americas, 20th | 89 | 31 |
+| americas, 21st | 20 | 1 |
+| europe, 15th | 4 | 2 |
+| europe, 16th | 12 | 1 |
+| europe, 17th | 21 | 2 |
+| europe, 18th | 21 | 2 |
+| europe, 19th | 15 | 10 |
+
+Europe before 1900 is **73 active, 17 main**, unchanged: batch 43 was Asia's.
+The three thinnest cells in this partition are still the Americas' 16th, 17th
+and 18th at nine each, and the 18th still has one main event of nine.
+
+### What the network did, measured rather than felt
+
+Deviation 1235 says to read a clock before calling anything late, so this fire
+read one. **Fourteen probes over fourteen minutes, one a minute, every one of
+them 429**, and not only on the endpoint the tool uses: `api.php`
+(`wbsearchentities` and `wbgetentities`), `Special:EntityData`, the REST
+summary endpoint on `en.wikipedia.org`, `api.wikimedia.org` and the Wikibase
+REST API on `www.wikidata.org` all refused alike, with the body *"You are
+making too many requests to the API."* The agent proxy reported no relay
+failures and `bundleCoversEveryHost` true, so this is Wikimedia refusing the
+sandbox's egress and not a fault here. `m42`'s twelfth fire of the day had
+pushed 93 minutes earlier, which is the likeliest reason the shared address is
+in the penalty box; nothing this branch can do about it either way.
+
+**A batch was ready and is not written down as done.** The Americas'
+eighteenth century was the cell to take — the Treaty of Madrid of 1750, which
+`guarani-war`'s own cached lead says that war "was a result of" and which is
+therefore an edge A5 would take on sight; the War of Jenkins' Ear and
+Cartagena de Indias under it. None of it was imported, so none of it is
+claimed. The next fire should try the network first and take that cell if it
+answers.
+
+### The filing pass, tried without the network and honestly refused
+
+A6 asks a fire to file before it imports, and filing needs no network — the
+span and the lane are already in the records. So the fire measured it: of the
+**73 main events in this partition**, **43 fall inside the span and the lane of
+some umbrella the atlas already holds**. Every one of them fails M62's *other*
+half, the subject, and filing them would have been false:
+`the-brazilian-gold-cycle` is not part of the **Spanish** colonization of the
+Americas, `black-monday` is not part of the Colombian conflict, and
+`petrobras-1953` is not part of the Cuban Revolution. Four more —
+`proclamation-of-the-brazilian-republic-1889` under `empire-of-brazil-1822-1889`,
+`1964-brazilian-coup-detat`, `operation-brother-sam-1964` and
+`the-base-reforms-rally-1964` under `brazilian-military-dictatorship-1964-1985`
+— fit span, lane *and* subject and are still refused, by M67's rule 1: a period
+named for a form of government does not contain the act that created or
+destroyed it.
+
+**Nothing was filed, and that is the right answer rather than a shortfall.**
+The umbrella this partition actually wants is a Portuguese one, and batch 12
+already established that it cannot be had: *Colonial Brazil* (`Q2088324`) is
+classed a polity, and *Portuguese colonization of the Americas* (`Q2724951`)
+would pass the class table and carries no date at all. Seven Brazilian main
+events are waiting on it.
+
+### Deviation 1230, fixed
+
+A9 reads the location first, then the administrative territory, then the
+country — but `runImportMode` only ever fetched the last two, so `pointOf()`
+could not answer for the town an event names by `P276` and the first point with
+an answer was the country's. That is how a Brazilian engagement came out in the
+European lane in batch 11 and how two battles came out placeless in batch 12.
+
+The fix is one statement: all three properties are collected, not the last two.
+A second fault in the same line went with it — the extra items were fetched in
+**one call sliced at the batch size**, so past that cap they were silently not
+there to read, which is the same gap one step further out; they are fetched in
+chunks now.
+
+The test came first (711, 717) and reproduces the deviation rather than
+describing it. `Q9000016` is a new fixture: an event whose town is at (5,5) and
+whose state is at (-140,-60), two lanes apart, with the town outside the batch.
+Before the fix the record was written in the state's lane; the test asserted
+`testland` and got `farland`, which is deviation 1230 in one line.
+
+### Deviation 1231, fixed
+
+`Q377269` was refused for want of a lane and written into
+`wikidata-state.json` → `runs.import.done` all the same, so adding
+`"Q377269": "americas"` to the seeds' `lanes` map changed nothing and the qid
+had to be taken out of `done` by hand. A refusal is not a completion.
+
+Each run of `--import` now carries what it refused in a **`refused` list of its
+own**, and the next run offers those **first**, ahead of the untried, so that
+editing the class table or the lanes map is enough to answer one. The state
+file's schema gains the list as an optional property, so a file written before
+this reads as having none.
+
+**One refusal is settled rather than carried**: an item Wikidata does not have
+cannot be answered by any edit to this repository, so it goes to `done` with
+the completions instead of being asked about forever. Everything else names
+something under `data/` that a person can change.
+
+**The fix is forward-only and the file cannot say otherwise.** Refusals written
+into `done` before today are indistinguishable there from completions, so the
+ones already buried stay buried; only `Q377269` was ever dug out, by hand, and
+this is what stops the next one needing that.
+
+### Counts after this fire
+
+Unchanged from the table above in every column — **800 active, 242 main, 558
+filed, 779 active edges, largest component 565** — because the fire wrote no
+record. The two commits that are not the merge touch
+`tools/import/wikidata.mjs`, `tests/import-wikidata.test.mjs`,
+`tests/fixtures/wikidata/entities.json` and `schema/v1/import-state.json` and
+nothing under `data/`.
+
+### Deviations
+
+**1237. A fire that cannot reach the network should find that out in its first
+minutes and spend itself on the backlog, not on waiting.** This one probed
+once a minute for fourteen minutes while doing the tool work in between, which
+is the right shape: the probe is one call and costs nothing, and the two
+deviations it paid off had each been waiting three batches for "a fire that
+imports nothing". **The rule: probe once before STEP 3, and if it is 429, treat
+the fire as that fire.** The backlog at the head of "Where the run stands" is
+what it works from, in the order written there.
+
+**1236. Deviation 1232 was broken again, by the fire that had it in front of
+it.** 1233 says the cure is three commits and not two — resolve and commit the
+merge, rebuild, commit the index — and 1233 also says *"1232 is a rule the next
+fire should read before it merges, not after"*. This fire read the pool file
+**after** merging, because STEP 1 of the standing prompt puts the merge before
+STEP 2's reading, and so committed the merge and its index together for the
+third fire running. It was caught and repaired inside the fire: five history
+shards and the manifest moved, exactly the size 1233 measured. **The rule 1233
+asked for is a rule about the prompt's own order**: the deviations a branch
+carries have to be read before STEP 1's merge, because the merge is the first
+thing a fire on this branch does.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 12.*
+*23 September, after the thirteenth fire, which imported nothing.*
 
 | | |
 | --- | --- |
-| corpus | **795 active** |
+| corpus | **800 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **560** |
+| **largest connected component** | **565** |
 | components | 191 |
 | events with no edge at all | 158 |
 | Europe before 1900 | 73 active, 17 main |
 | the `americas` lane | **180 active, 56 main** |
 | the thinnest cells left, in this partition | the Americas' 16th (9), 17th (9) and 18th (9) |
 
-**Europe's sixteenth century is no longer the thinnest cell**: batch 12 took it
-from eight active to twelve without moving the main count, by importing the
-phases and engagements the `italian-wars` umbrella was already missing. **The
-three thinnest cells this branch can act on are now all in the Americas**, at
-nine active each, and the next fire should take one of them.
+**Try the network first, and read this list before STEP 1's merge** (deviation
+1236). Fourteen probes a minute apart were all 429 on the thirteenth fire,
+across every Wikimedia endpoint; one probe tells the next fire which kind of
+fire it is.
+
+**If the network answers, take the Americas' eighteenth century.** Nine active
+events and **one main**, which is the emptiest umbrella shelf in the partition,
+and the thirteenth fire left a batch mapped out and unclaimed:
+
+- **The Treaty of Madrid of 1750.** `guarani-war`'s own cached lead, already on
+  disk, says that war *"was a result of the 1750 Treaty of Madrid"* — an edge
+  A5 takes on sight, with the locator the summary already carries. Files under
+  `spanish-colonization-of-the-americas` (1493–1898, `americas`), so it costs
+  no main event.
+- **The War of Jenkins' Ear**, with **Cartagena de Indias (1741)** filed under
+  it, which pays for it in the same batch — batch 12's pattern.
+- **The Treaty of San Ildefonso of 1777**, the same shelf and the same filing.
+
+**Deviations 1230 and 1231 are closed**, so the next batch does not have to
+re-point a record whose `P276` town the import could not see, and a refusal it
+leaves behind will be offered again rather than buried in `done`. What is left
+of 1231 is only history: refusals filed as done before 23 September cannot be
+told from completions and stay there.
 
 **The two questions for the owner are unchanged and both still block a
 century.**
@@ -3011,57 +3203,41 @@ century.**
    `atlas.extent.min` and two tests hold it there, so nothing on this branch
    can fill Europe's fifteenth century or anything earlier. A one-line answer
    unblocks four records already known to import cleanly (`Q212976`, `Q12551`,
-   `Q127751`, `Q1552718`). Batch 12 put `italian-war-of-1494-1495` into that
-   cell, which is the fourth record now sitting against the wall.
+   `Q127751`, `Q1552718`), and `italian-war-of-1494-1495` is the fifth record
+   sitting against the wall.
 2. **May a run take a period umbrella from an item whose class is a polity,
    where the article is plainly a period article?** Colonial Brazil
-   (`Q2088324`) is the case and it is worth four main events on its own. Batch
-   12 met a second case of the same shape in `Q377350`, the **Iberian Union**,
-   whose classes are an actor's and an event's at once and whose dates
-   (`P571` 1580-09-12, `P576` 1640-12-01) the import already reads. The class
-   table is an editorial decision and the whole point of it living in `data/`,
-   so the run will not decide either.
+   (`Q2088324`) is the case and **it is worth seven main events now, not
+   four**: the thirteenth fire counted the Brazilian colonial records waiting
+   for a Portuguese umbrella. `Q377350`, the **Iberian Union**, is a second
+   case of the same shape. The class table is an editorial decision and the
+   whole point of it living in `data/`, so the run will not decide either.
 
 **What the next fire should weigh, in order:**
 
-- **The Americas' sixteenth, seventeenth and eighteenth centuries are tied at
-  nine active each**, and the eighteenth is the one with almost no umbrella:
-  one main of nine. It is the cell the Seven Years' War, the Bourbon reforms
-  and the Túpac Amaru rebellion all belong to.
+- **The Americas' 18th century first** (one main of nine), then the 16th and
+  17th, tied at nine active.
 - **The French Wars of Religion are free to whoever brings their children.**
   `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
   importable today. It arrives main and nothing in the corpus falls inside it,
   so it costs one main event — unless the same batch imports two or three of
-  its engagements, which arrive filed and cost nothing. That is batch 12's
-  pattern run forwards instead of backwards.
+  its engagements, which arrive filed and cost nothing.
 - **The Eighty Years' War is still the edge between the Americas' seventeenth
-  century and Europe's**, and batch 12 established it is importable:
-  `Q164432`, 1568-05-23 to 1648-01-30, classes `Q6107280` *revolt* and
-  `Q8465` *civil war*, both in the table. `dutch-portuguese-war`'s own article
-  calls that war the thing it is an extension of. It arrives main and needs a
-  filing to pay for it; **`dutch-portuguese-war` itself runs 1601–1661 and
-  would be dated outside it**, which is rule 24's warning and not an error, so
-  the fire that takes this should decide deliberately whether to accept the
-  warning or find another payment.
+  century and Europe's.** `Q164432`, 1568-05-23 to 1648-01-30, classes
+  `Q6107280` *revolt* and `Q8465` *civil war*, both in the table.
+  `dutch-portuguese-war`'s own article calls that war the thing it is an
+  extension of. It arrives main and needs a filing to pay for it; and
+  **`dutch-portuguese-war` itself runs 1601–1661 and would be dated outside
+  it**, which is rule 24's warning and not an error, so the fire that takes
+  this should decide deliberately whether to accept the warning or find another
+  payment.
 - **The Italian Wars tree is twelve active events in components of one and
   two, joined to nothing.** `parent` is not adjacency, so filing will never
-  join it; only an edge will. Batch 12 read the *Italian Wars* article through
-  for one and refused what it found. **The Peace of Cateau-Cambrésis of 1559 is
-  the named door** — the article reports historians reading it as the beginning
-  of Spanish hegemony in Italy — and it is not in the corpus.
-- **The check is green and nothing ever hung; the paragraph that stood here
-  said otherwise and was wrong.** `validate.yml` run **1534**, on `974de6d2`,
-  is **success**: the validator in two seconds and the Tests step in nine
-  minutes and forty seconds. Run **1533** before it, on `6955689c`, was doing
-  exactly the same thing and was **cancelled by this fire's own push** eight
-  minutes into that step. Deviation **1235** is the reason, and it is the
-  fire's and not the runner's.
-
-- **Deviation 1230 is still open and cost this fire two records' places again.**
-  The import reaches for `P276` before `P17` and fetches only the `P17`
-  countries, so a battle whose location is a town comes out placeless and is
-  repaired by hand afterwards. Three batches have now paid for it. The fix is
-  in `runImportMode` and would take one fire that imports nothing.
-- **Deviation 1232 is a rule about the order of a fire's first two commits and
-  this fire broke it too** (deviation 1233). Resolve and commit the merge,
-  *then* rebuild, *then* commit the index. Read it before merging.
+  join it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the
+  named door** — the article reports historians reading it as the beginning of
+  Spanish hegemony in Italy — and it is not in the corpus.
+- **A filing pass without the network will find nothing.** The thirteenth fire
+  ran the measurement: 43 of this partition's 73 main events fall inside some
+  umbrella's span and lane, and every one of them fails the subject test or
+  M67's rule 1. Do not spend a fire on it again; the shortage is umbrellas, and
+  umbrellas need the network.

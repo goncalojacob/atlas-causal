@@ -21004,6 +21004,49 @@ being `main` only. `docs/m53-polities.md` §4.1 is re-taken at **373 of 795** ov
 corpus, 374 by the overlap rule, and `docs/m42b-pool.md` → "Batch 12" carries
 all of it with the counts per lane and per century.
 
+**M42b — the thirteenth fire imported nothing, and paid off two tool faults
+instead, 23 September.** **Wikimedia refused every request this fire made**:
+fourteen probes a minute apart, all 429, and not only on the endpoint the tool
+uses — `api.php`, `Special:EntityData`, the REST summary endpoint,
+`api.wikimedia.org` and the Wikibase REST API alike, with the body *"You are
+making too many requests to the API."* Deviation 1235 says to read a clock
+rather than feel one, so the fire read one and reported what it measured. The
+agent proxy showed no relay failures, so this is Wikimedia refusing the
+sandbox's shared egress and not a fault here. **No batch, and nothing claimed
+that was not done.**
+
+What the fire did instead is the two deviations that both briefs say belong to
+"one fire that imports nothing", each with its test first (711, 717).
+**1230**: A9 reads the location first, then the administrative territory, then
+the country, but `runImportMode` only ever fetched the last two, so `pointOf()`
+could not answer for the town an event names by `P276` and the first point with
+an answer was the country's — which put a Brazilian engagement in the European
+lane in batch 11 and left both of batch 12's battles placeless. All three
+properties are collected now, and the extra items are fetched in chunks rather
+than in one call sliced at the batch size, which was the same gap one step
+further out. `Q9000016` is a new fixture reproducing it: a town at (5,5), the
+state it is in at (-140,-60), the town outside the batch. **1231**: a refusal
+was written into `wikidata-state.json` → `done` beside the completions, so
+adding the class or the lane that would have answered it changed nothing;
+each run now carries a `refused` list of its own and the next run offers those
+first, with an item Wikidata does not have settled rather than asked about
+forever. The fix is forward-only — refusals already buried in `done` cannot be
+told from completions.
+
+The merge of `origin/m42`'s batch 43 took the corpus to **800 active**, main
+unchanged at **242**, 558 filed, 779 active edges, largest component **565**,
+158 events with no edge; the americas lane is 180 active at 56 main and Europe
+before 1900 is 73 at 17, both unmoved, since batch 43 was Asia's.
+`docs/m53-polities.md` §4.1 is re-taken at **376 of 800**, 377 by the overlap
+rule. A filing pass was measured and honestly refused: 43 of this partition's
+73 main events fall inside some umbrella's span and lane and every one fails
+M62's subject test or M67's rule 1, so nothing was filed. Two deviations,
+**1236** (1232 broken a third time, because STEP 1 merges before STEP 2 reads
+the deviations — caught and repaired inside the fire) and **1237** (a fire that
+cannot reach the network should find out in its first minutes and spend itself
+on the backlog). `docs/m42b-pool.md` → "The thirteenth fire" carries all of it
+with the counts per lane and per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
