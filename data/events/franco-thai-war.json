@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q780845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Thai War\", revision 1376212860"
     }
   ],
   "title": "Franco-Thai War",
-  "summary": "Wikidata item Q780845, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Thailand and Vichy France (1940-1941)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Franco-Thai War\", at revision 1376212860, opens: \"The Franco-Thai War (October 1940 – 28 January 1941, Thai: กรณีพิพาทอินโดจีน, romanized: Karani Phiphat Indochin; French: Guerre franco-thaïlandaise) was fought between Thailand and Vichy France over certain areas of French Indochina. Negotiations shortly before World War II had shown that the French government was willing to alter the boundaries between Thailand and French Indochina, but only slightly. Following the Fall of France in 1940, Major-General Plaek Phibunsongkhram (popularly known as \"Phibun\"), the prime minister of Thailand, decided that France's defeat strengthened the Thais' negotiating position to regain the vassal state territories that were ceded to France during King Chulalongkorn's reign. The German and Italian military occupation of Metropolitan France rendered France's hold on French Indochina and its other overseas territories tenuous. The colonial administration was cut off from outside help and supplies. After the invasion of French Indochina in September 1940, Japan forced the French to allow them to set up military bases. The seemingly subservient behavior of the French lulled the Phibun regime into believing that France would not seriously resist a military confrontation by Thailand.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q780845, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Thailand and Vichy France (1940-1941)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1940,
     "end": 1941,

@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q76986"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Belovezha Accords\", revision 1373420915"
     }
   ],
   "title": "Belovezh Accords",
-  "summary": "Wikidata item Q76986, imported by tools/import/wikidata.mjs. The item's own description reads \"agreement that declared dissolution of the USSR by its founder states (denunciation of 1922 Treaty on the Creation of the USSR) and established the CIS\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Belovezha Accords\", at revision 1373420915, opens: \"The Agreement on the creation of the Commonwealth of Independent States (officially), or unofficially the Minsk Agreement and best known as the Belovezha Accords, is the agreement declaring that the Soviet Union (USSR) had effectively ceased to exist and establishing the Commonwealth of Independent States (CIS) in its place as an organization created by the same Union Republics. The documentation was signed at the state dacha near Viskuli in Belovezhskaya Pushcha, Belarus on 8 December 1991, by leaders of three of the four republics which had signed the 1922 Treaty on the Creation of the USSR:Belarusian Parliament chairman Stanislav Shushkevich and Prime Minister of Belarus Vyacheslav Kebich\nRussian president Boris Yeltsin and First Deputy Prime Minister of the RSFSR/Russian Federation Gennady Burbulis\nUkrainian president Leonid Kravchuk and Ukrainian prime minister Vitold Fokin\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q76986, imported by tools/import/wikidata.mjs. The item's own description reads \"agreement that declared dissolution of the USSR by its founder states (denunciation of 1922 Treaty on the Creation of the USSR) and established the CIS\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1991,
     "end": 1991,

@@ -4704,3 +4704,83 @@ has refused more than it wrote.
   uprising that took place in China"*, led by Huang Xing against the Qing in
   Canton. It does not connect the two, and an edge written on the property alone
   would be this atlas asserting what neither article says.
+
+## The curation fire of 23 September — A13's relations pass, 56 edges
+
+*The first run of the pass amendment A13 added: every active event's cited
+article, read whole at its current revision, for any other event the atlas
+holds. 539 articles, 267 pairs where a causal cue shares a sentence with
+another event's name, 56 edges.* `docs/m42-pool.md` → `## Curation
+2026-09-23` carries the counts, the refusals and the method; this file
+carries the edges.
+
+**The locator on every one of them is the article, the revision and the
+section**, and the explanation quotes the sentence, so a reviewer goes to the
+paragraph rather than to the article. That is the same standard batches 29
+to 38 wrote to, at the scale A13 asks for.
+
+### The pair batch 38 refused, and why this is not a reversal
+
+Above, under "The two held-to-held pairs the articles refused", this file says
+of **`second-guangzhou-uprising` and `wuchang-uprising`** that *"the
+uprising's lead at revision 1370737006 says only that it was a failed uprising
+that took place in China"*. That is true of the lead, and the lead is all the
+cache under `tools/import/cache/wikipedia/` holds — its longest file is 4,947
+characters and its median is 415.
+
+The whole article, **at that same revision 1370737006**, § Legacy, says:
+
+> They were commemorated as the "72 martyrs." Some historians believe that the
+> uprising was a direct cause of the Wuchang Uprising, which eventually led to
+> the 1911 Revolution and the founding of the Republic of China.
+
+So `second-guangzhou-uprising --caused--> wuchang-uprising` is written, at
+`probable`, with *"Some historians believe"* kept in the explanation rather
+than dropped. **Batch 38 was right about its evidence; this pass has more of
+it**, and the difference between them is not a newer revision and not a
+better judgement — it is the same revision read whole instead of read to the
+end of its first paragraph.
+
+### The five the arrow of time refused
+
+Rule 4 is the second reader here, and what it caught is worth more than four
+of the five edges it cost.
+
+- **`treaty-of-brest-litovsk` and `russian-civil-war`.** The civil war's
+  article says the treaty's signature *"resulted in direct Allied intervention
+  in Russia and the arming of military forces opposed to the Bolshevik
+  government"*. The treaty is March 1918 and the war begins November 1917: what
+  the article describes is a cause operating **inside** the war, which is the
+  same shape as the Sabra and Shatila refusal above and not an edge between
+  these two records.
+- **`revolutions-of-1989` and `ethiopian-civil-war`.** The 1989 article's
+  § Africa makes the withdrawal of Soviet and Cuban assistance what the Derg
+  was finally beaten without — the war's **end**, and the war began in 1974.
+- **`february-revolution` and `basmachi-movement`.** The movement's record
+  begins in 1916.
+- **`insurgency-in-kosovo` and `kosovo-war`**, and **`operation-sutton` and
+  `battle-of-san-carlos`.** Both refused on days rather than on years, and
+  **both are record dates that are wrong**: the insurgency is dated 1998-02-28
+  against its own lead's *"began in 1995"*, and Operation Sutton — which **is**
+  the San Carlos landing of 21 May 1982 — is dated 1982-05-23 against a battle
+  dated 1982-05-21. Correcting those two from the cited article writes two
+  edges that are already argued.
+
+### The eight the umbrella rule refused
+
+Batch 31a's rule stands and this file records what it now costs. Three of the
+eight are the plainest links the corpus has:
+
+- **`world-war-i` and `world-war-ii`**, from the Second World War's own lead:
+  *"The causes of World War II included unresolved tensions in the aftermath of
+  World War I and the rise of fascism in Europe and militarism in Japan."*
+- **`world-war-ii` and `decolonisation-of-africa`**, from the decolonisation
+  article's § External causes: *"Italy, a colonial power, lost its African
+  empire … as a result of World War II."*
+- **`scramble-for-africa` and `world-war-i`**, from the Scramble's § Aftermath:
+  *"The tensions between the imperial powers led to a succession of crises,
+  which exploded in August 1914, when previous rivalries and alliances created
+  a domino situation that drew the major European nations into World War I."*
+
+Each is refused because one end carries an umbrella flag. The arguments are
+kept here because the records, not the edges, are what would have to change.

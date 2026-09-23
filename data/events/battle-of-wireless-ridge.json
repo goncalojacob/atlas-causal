@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q4872743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wireless Ridge\", revision 1373880954"
     }
   ],
   "title": "Battle of Wireless Ridge",
-  "summary": "Wikidata item Q4872743, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 engagement of the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Wireless Ridge\", at revision 1373880954, opens: \"The Battle of Wireless Ridge was an engagement of the Falklands War which took place on the night from 13 to 14 June 1982, between British and Argentine forces during the advance towards the Argentine-occupied capital of the Falkland Islands, Port Stanley. Wireless Ridge was one of seven strategic hills within five miles of Stanley at 51°40′14″S 57°55′55″W that had to be taken in order for the Island's capital to be approached. The attack was successful, and the entire Argentine force on the Islands surrendered later that day. The British force consisted of 2nd Battalion, The Parachute Regiment (2 Para), a troop of the Blues & Royals, with two FV101 Scorpion and two FV107 Scimitar light tanks, as well as artillery support from two batteries of 29 Commando Regiment Royal Artillery and naval gunfire support provided by HMS Ambuscade's 4.5-in gun. The Argentine force consisted of the 7th Infantry Regiment as well as detachments from other units. The first Argentine unit to arrive in the sector was the 10th Brigade Headquarters Company commanded by Major José Rodolfo Banetta that took up residence inside the Moody Brook Barracks.The British destroyer HMS Glasgow targeted the Moody Brook area on 10 May, firing 222 shells at army bivouacs, anti-aircraft guns and the former Royal Marine Barracks.The new Argentine occupants had to finally evacuate the area on 11 June when British Harriers struck the building, killing three Argentine soldiers (Privates Mario Gustavo Rodríguez, Carlos Gustavo Mosto and Ignacio María Indino) and wounding their company commander. At first, the 7th Regiment on Wireless Ridge was relatively comfortable, shooting sheep and roasting them on old bed frames the soldiers had found nearby. The soldiers of the supporting 10th Armoured Cavalry Reconnaissance Squadron, according to Private Sergio Díaz, also had a fairly comfortable time at first, enjoying a huge barbecue and cans of beers while commemorating Argentine Army Cavalry Day on 23 April. Private Guillermo Vélez from the 7th Regiment's Headquarters & Support Company maintains that he personally shot and killed 50 sheep during his time on Wireless Ridge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872743, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 engagement of the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

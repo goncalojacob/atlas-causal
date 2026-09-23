@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q3966451"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Benin Expedition of 1897\", revision 1374491835"
     }
   ],
   "title": "Benin Expedition of 1897",
-  "summary": "Wikidata item Q3966451, imported by tools/import/wikidata.mjs. The item's own description reads \"British invasion of the Kingdom of Benin in 1897\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Benin Expedition of 1897\", at revision 1374491835, opens: \"The Benin Expedition of 1897 was the conquest of the Kingdom of Benin by British forces that led to the annexation of Benin into colonial Nigeria. In late December 1896, a party of 250 people led by James Phillips of the Niger Coast Protectorate set off to Benin City with the stated purpose of discussing trade relations with their leader, Ovonramwen, but Phillips did not wait for his approval before crossing into Benin. The party was attacked by Benin forces on 4 January with almost everyone killed or captured. In response, the British invaded Benin on 9 February with 1,200 men under the command Sir Harry Rawson. Rawson's troops captured Benin City with minimal losses, while an unknown number of Benin people were killed. African porters who had been captured in the January attack and enslaved were freed. The expedition resulted in the looting of cultural artefacts, including the Benin Bronzes, the exile of Ovonramwen, and the annexation of Benin into the Niger Coast Protectorate. The Benin Bronzes, which are currently mostly held by the British Museum, are subject to an ongoing movement to repatriate them and have become a symbol of an incomplete decolonisation of Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3966451, imported by tools/import/wikidata.mjs. The item's own description reads \"British invasion of the Kingdom of Benin in 1897\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1897,
     "end": 1897,

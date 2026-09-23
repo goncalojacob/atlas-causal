@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q7535905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Skirmish at Many Branch Point\", revision 1370747412"
     }
   ],
   "title": "Skirmish at Many Branch Point",
-  "summary": "Wikidata item Q7535905, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 skirmish during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Skirmish at Many Branch Point\", at revision 1370747412, opens: \"On 10 June 1982, in the closing days of the Falklands War, Many Branch Point, a ridge near Port Howard in West Falkland, was the site of a minor skirmish between the Argentine and British Armed Forces. The engagement ended with the death of the SAS patrol commander, Captain Gavin Hamilton. The action was the only ground engagement of the British and Argentine forces on West Falkland during the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7535905, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 skirmish during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "note": "A9's place pass of 2026-09-23 gave this event the place italian-peninsula-q145694, from P276, Q145694."
   },
@@ -38,10 +39,14 @@
     {
       "source": "wikidata",
       "locator": "Q636365"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857"
     }
   ],
   "title": "War of the League of Cambrai",
-  "summary": "Wikidata item Q636365, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in the Italian Wars of 1494–1559\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"War of the League of Cambrai\", at revision 1375133857, opens: \"The War of the League of Cambrai, also known by its second stage as the War of the Holy League, was fought from December 1508 to December 1516, as part of the wider Italian Wars of 1494–1559. The main participants of the war, who fought for its entire duration, were France, the Holy Roman Empire, the Papal States, and the Republic of Venice; they were joined at various times by nearly every significant power in Western Europe, including Spain, England, the Duchy of Milan, the Republic of Florence, the Duchy of Ferrara, and the Swiss.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q636365, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in the Italian Wars of 1494–1559\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1508,
     "end": 1516,

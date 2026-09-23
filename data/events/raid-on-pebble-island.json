@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q1979826"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pebble Island raid\", revision 1370703799"
     }
   ],
   "title": "Raid on Pebble Island",
-  "summary": "Wikidata item Q1979826, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 military raid during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Pebble Island raid\", at revision 1370703799, opens: \"The raid on Pebble Island was a raid by British Special Forces on Pebble Island's airfield during the Falklands War. The raid on Pebble Island took place on the night of 14–15 May 1982. Pebble Island is one of the smaller Falkland Islands, lying north of West Falkland. The site was being used as a forward operating base for T-34 Mentor and Pucara aircraft by the Argentine Air Force; British Special Air Service (SAS) operatives were tasked with destroying the aircraft on the ground, in an operation that echoed back to some of the unit's first missions during the North African Campaign of World War II. SAS elements, then embarked on HMS Hermes, were tasked with eliminating the airfield, with naval support from the Type 22 frigate HMS Broadsword as Hermes defensive escort and the County-class destroyer HMS Glamorgan to provide naval gunfire support with its Mark 6 4.5 inch guns.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1979826, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 military raid during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

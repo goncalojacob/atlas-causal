@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q4872617"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Two Sisters\", revision 1372847051"
     }
   ],
   "title": "Battle of Two Sisters",
-  "summary": "Wikidata item Q4872617, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 engagement of the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Two Sisters\", at revision 1372847051, opens: \"The Battle of Two Sisters was an engagement of the Falklands War during the British advance towards the capital, Port Stanley. It took place from 11 to 12 June 1982 and was one of three battles in a Brigade-size operation all on the same night, the other two being the Battle of Mount Longdon and the Battle of Mount Harriet. Fought mainly between an assaulting British force consisting of Royal Marines of 45 Commando and an Argentine Company drawn from 4th Infantry Regiment.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872617, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 engagement of the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

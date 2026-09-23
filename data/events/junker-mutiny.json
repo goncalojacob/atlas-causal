@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q28492393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Junker mutiny\", revision 1375165370"
     }
   ],
   "title": "Junker mutiny",
-  "summary": "Wikidata item Q28492393, imported by tools/import/wikidata.mjs. The item's own description reads \"Petrograd military school cadet resistance against Bolsheviks in 1917\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Junker mutiny\", at revision 1375165370, opens: \"The Junker mutiny (Russian: Юнкерский мятеж) was a Russian counterrevolutionary mutiny of military school cadets in Petrograd against the Bolsheviks in October 1917. On October 29 (November 11 (N.S.)) of 1917, students of junker schools in Petrograd rose up against the Bolsheviks under the leadership of the Committee for Salvation of Motherland and Revolution (Комитет спасения родины и революции), organised by the Right Esers. The goal of the mutiny was to support the Kerensky-Krasnov uprising (October 26–31, 1917). The rebellious students wanted to seize the city telephone exchange, Peter and Paul Fortress, Smolny and arrest the Soviet government together with the Bolshevik leaders. On October 29, the Red Guard patrol detained one of the leaders of the Junker mutiny, an Eser named Aleksandr Arnoldovich Bruderer, who had a plan of the mutiny with him. Former Commander-in-Chief of the Petrograd military okrug, Colonel Georgi Polkovnikov, pronounced himself as commander of the so-called \"Salvation Army\" (войска спасения) and ordered his garrison not to execute orders issued by the Petrograd Military Revolutionary Committee (PMRC), arrest its commissars, and send representatives from all military units to Nikolayevskoye School of Engineers (a.k.a. Engineer's Fortress), the headquarters of the mutiny leaders. The junkers of the Nikolayevskoye School of Engineers seized the Mikhailovsky Manege, stole a number of armored cars, captured the city telephone exchange, cut off power in Smolny, seized Hotel Astoria, and began to disarm the Red Guards and revolutionary soldiers. The students of Vladimirskoye Military School disarmed the school guards and arrested some of the PMRC commissars. At 8:30 a.m. on October 29, the leaders of the Junker mutiny sent out telegrams all over Petrograd, announcing the success of the rebellion and calling out for the arrest of all the PMRC commissars and the concentration of participating military units at the Nikolayevskoye School of Engineers. The revolutionary garrison of Petrograd, however, refused to support the mutiny. PMRC issued an appeal to the citizens of Petrograd and announced the state of siege. By 11 a.m. of October 29, the Red Guards and revolutionary soldiers had regained control over the telephone exchange and surrounded the Engineer's Fortress. Most of the junkers fled, but those who remained would be disarmed by 5 p.m. and sent to the Peter and Paul Fortress. The junkers opened fire on the 56th regiment of Kremlin guards that were sympathetic to the Bolsheviks and had agreed to surrender to the junkers in exchange for their freedom. However, all of them were shot with up to 300 people killed. The Vladimir military school was subjected to severe artillery shelling by the Bolshevik troops. Hundreds of junkers were killed or injured in the fighting. After the surrender of the schools dozens of junkers were shot at the walls of the Peter and Paul Fortress according to the testimony of Countess Lilli Nostitz. Conversely, 238 Red Guards had been killed in the service of the Soviet regime were buried. However, some Bolshevik commanders such as Vladimir Antonov-Ovseenko protected his prisoners and spared them from an enraged population in Petrograd.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28492393, imported by tools/import/wikidata.mjs. The item's own description reads \"Petrograd military school cadet resistance against Bolsheviks in 1917\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1917,
     "end": 1917,

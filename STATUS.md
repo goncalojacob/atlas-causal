@@ -19875,6 +19875,28 @@ and A13's relations pass, still never run.
       reading, and that a real second half needs the sentence parsed for which
       name is the subject of the causal verb — a different tool, and not one to
       fake with positions.
+1220. **The endpoint that returns a preview is not the endpoint that returns
+      the article, and this fire paid for that twice.** A13 read 539 articles
+      whole and wrote 56 edges the cached leads could not have argued; the
+      summary pass then refused 49 records for a lead under two sentences and
+      found that **40 of those 49 have a lead of two sentences or more in the
+      article itself**. The cache under `tools/import/cache/wikipedia/` holds
+      the REST summary extract — longest file 4,947 characters, median 415 —
+      and every pass that has read "the lead" since M42 began has read an
+      abbreviation of one. Nothing in the cache is wrong; it is the wrong
+      thing to read for this question, and a fire that wants a lead should
+      fetch `action=query&prop=extracts&explaintext` and cut at the first
+      heading.
+1221. **A measurement of one's own work is worth taking twice, and the first
+      take here said the opposite of the truth.** This fire's first pass over
+      the summaries matched the placeholder's *words* anywhere in the field
+      and reported that **no** active event still carried one. 330 records
+      carry the import's sentence **behind** a lead written in front of it,
+      which is the correct shape, and 87 records **opened** on it, which is
+      the defect. The claim "no active event carries the import's placeholder
+      any more" was written into `docs/m42-pool.md` and then taken out again
+      in the same fire. A count of what is wrong has to ask where the wrong
+      thing is, not whether its words appear.
 
 ## M84 — the owner's feedback document
 

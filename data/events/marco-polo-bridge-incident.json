@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q219230"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067"
     }
   ],
   "title": "Marco Polo Bridge incident",
-  "summary": "Wikidata item Q219230, imported by tools/import/wikidata.mjs. The item's own description reads \"1937 initial battle of the Second Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Marco Polo Bridge incident\", at revision 1370745067, opens: \"The Marco Polo Bridge incident, also known as the Lugou Bridge incident or the July 7 incident, was a three-day battle that began on 7 July 1937 in the district of Beijing between the 29th Army of the National Revolutionary Army of the Republic of China and the Imperial Japanese Army. Since the Japanese invasion of Manchuria in 1931, there had been many small incidents along the rail line connecting Beijing with the port of Tianjin, but all had subsided. On the night of 7 July, Japanese garrison troops at Lugouqiao held an unusual manoeuvre; and, alleging that a Japanese soldier was missing, demanded entry into the City of Wanping to conduct a search. Fighting broke out while the Japanese complaint was still under negotiation. However, the missing Japanese soldier had already returned to his lines. The Marco Polo Bridge incident is generally regarded as the start of the Second Sino-Japanese War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q219230, imported by tools/import/wikidata.mjs. The item's own description reads \"1937 initial battle of the Second Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1937,
     "end": 1937,

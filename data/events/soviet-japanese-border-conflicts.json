@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q696389"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653"
     }
   ],
   "title": "Soviet–Japanese border conflicts",
-  "summary": "Wikidata item Q696389, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in the 1930s between the Soviets, Mongolians, and Japanese\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Soviet–Japanese border conflicts\", at revision 1375520653, opens: \"The Soviet–Japanese border conflicts were a series of minor and major conflicts fought between the Soviet Union (led by Joseph Stalin), Mongolia (led by Khorloogiin Choibalsan) and Japan (led by Hirohito) in Northeast Asia from 1932 to 1939. The Japanese expansion in Northeast China created a common border between Japanese-occupied Manchuria and the Soviet Far East. This led to growing tensions with the Soviet Union, with both sides often engaging in border violations and accusing the other of doing so. The Soviets and Japanese, including their respective client states of Mongolia and Manchukuo, fought in a series of escalating small border skirmishes and punitive expeditions from 1935 until Soviet-Mongolian victory over the Japanese in the 1939 Battles of Khalkhin Gol, which resolved the dispute and returned the borders to status quo ante bellum. The Soviet–Japanese border conflicts heavily contributed to the signing of the Soviet–Japanese Neutrality Pact in 1941.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q696389, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in the 1930s between the Soviets, Mongolians, and Japanese\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1932,
     "end": 1939,

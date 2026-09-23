@@ -3841,7 +3841,8 @@ Deviation 1212 recorded that the joins vein offered `second-guangzhou-uprising
 --> wuchang-uprising` on `P1542` and that **the article refused it**:
 `docs/m42-connections.md` says the uprising's lead *"at revision 1370737006
 says only that it was a failed uprising that took place in China"*. That
-reading was of the lead, because the lead is what the cache holds. The whole
+reading was of the lead, because the lead is what the cache holds. **The
+revision is the same one**: what changed is that the whole article was read. The whole
 article's § Legacy says: *"Some historians believe that the uprising was a
 direct cause of the Wuchang Uprising, which eventually led to the 1911
 Revolution and the founding of the Republic of China."* The edge is written,
@@ -3910,18 +3911,52 @@ determines no role at all.** That is the closed vocabulary answering, not a
 gap: `data/roles.json` is a file somebody can argue with, and until somebody
 does, an event of a revolution has no role to give its participants.
 
-### Summaries and intervals
+### Summaries — and the measurement that was wrong before it was right
 
-**Nothing to do on either, and both are measured rather than assumed.** No
-active event carries the import's placeholder any more, and the five whose
-summary is under two sentences — `cavaco-absolute-majority-1987`,
+**The first measurement this fire took of the summaries was wrong, and the
+correction is the finding.** A regex over the *words* of the import's
+placeholder said no active event still carried one, because 330 records carry
+the placeholder **behind** a lead that was written in front of it — which is
+the shape the 22 September fire left and is correct. The question is whether a
+summary *opens* on the placeholder, and **87 did**.
+
+| | |
+| --- | --- |
+| **written from the cached lead** | **27** |
+| **written from the article's own lead section** | **40** |
+| left: the article's lead really is under two sentences | **9** |
+| left: no English article at all | **11** |
+
+**The second row is the same lesson A13 learned, arriving twice in one fire.**
+The cache under `tools/import/cache/wikipedia/` holds the REST *summary*
+endpoint's extract, which is an abbreviation of the lead and not the lead: 49
+records were refused on the cache for having a lead under two sentences, and
+**40 of those 49 have a lead of two sentences or more in the article itself**.
+Reading the endpoint that returns the article instead of the endpoint that
+returns a preview is worth 40 summaries here and 56 edges above, and it is the
+same change.
+
+Each summary quotes the lead at a named revision, cites `wikipedia-en` at that
+revision, carries `summary-from-lead`, and keeps the import's own sentence
+behind it — the shape 330 records already have. The `summary-imported` warning
+count falls from 460 to 393 across the fire.
+
+The five summaries that are *short but written* — `cavaco-absolute-majority-1987`,
 `fiftieth-anniversary-25-april-2024`, `montenegro-government-2024`,
-`santa-maria-hijacking-1961`, `soares-elected-president-1986` — are the
-assistant-drafted Portuguese records, written by a person's hand in one
-sentence each and carrying no Wikidata item for a lead to be read from. A7
-found no record whose cited article states a wider span than the record
-carries, except the two the arrow of time turned up above, which are the
-opposite problem.
+`santa-maria-hijacking-1961`, `soares-elected-president-1986` — are a
+different thing and are left alone: they are the assistant-drafted Portuguese
+records, one full sentence each by a person's hand, with no Wikidata item for
+a lead to be read from.
+
+### Intervals
+
+**Nothing written, and A7 measured rather than assumed.** No record's cited
+article states a wider span than the record carries. What the fire did find is
+the opposite problem, and it found it by failing on it: `insurgency-in-kosovo`
+is dated 1998-02-28 against a lead that dates it from 1995, and
+`operation-sutton` is dated 1982-05-23 for a landing of 21 May 1982. Both were
+caught by rule 4 refusing an edge, not by a span check, and both are A7's to
+correct from the cited article.
 
 ## Where the run stands after the curation fire of 23 September, for the fire that picks it up
 
@@ -3937,6 +3972,7 @@ opposite problem.
 | events with no edge at all | **100** |
 | events with no place | **22**, all refused for want of a coordinate |
 | events naming no actor | **318**, of which 197 have no role their category gives |
+| active events opening on the import's placeholder | **20**: 11 have no English article and 9 have a lead of one sentence |
 | the `part of` vein, Africa | 139 rows open |
 | the sweep pool, world sections | 1,046 open rows |
 | per lane, active | Europe 314, **Asia 130**, **Africa 103**, Americas 140 |

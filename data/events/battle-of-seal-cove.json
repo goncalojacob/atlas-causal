@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q4872339"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Seal Cove\", revision 1373061421"
     }
   ],
   "title": "Battle of Seal Cove",
-  "summary": "Wikidata item Q4872339, imported by tools/import/wikidata.mjs. The item's own description reads \"minor naval action west of Lively Island during the 1982 Falklands war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Seal Cove\", at revision 1373061421, opens: \"The Battle of Seal Cove was a minor naval action fought west of Lively Island, during the 1982 Falklands War. On the evening of 22 May 1982, while supporting Operation Sutton off San Carlos Bay, the British frigates HMS Brilliant and HMS Yarmouth received orders to stop and seize the Argentine Navy armed coastal supply boat ARA Monsunen, which was carrying fuel, ammunition and provisions for the Argentine troops in Stanley. Under heavy shelling, the coaster managed to avoid capture by grounding on a nearby inlet. Monsunen eventually broke free and was towed to Goose Green by the armed coster ARA Forrest, which completed the supply mission.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872339, imported by tools/import/wikidata.mjs. The item's own description reads \"minor naval action west of Lively Island during the 1982 Falklands war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

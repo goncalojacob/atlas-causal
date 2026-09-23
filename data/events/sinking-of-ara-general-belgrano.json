@@ -18,7 +18,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q3284956"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sinking of ARA General Belgrano\", revision 1370747049"
     }
   ],
   "title": "Sinking of ARA General Belgrano",
-  "summary": "Wikidata item Q3284956, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 sinking of Cruiser ARA General Belgrano (C-4)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Sinking of ARA General Belgrano\", at revision 1370747049, opens: \"The Argentine cruiser ARA General Belgrano was sunk on May 2, 1982, by the British nuclear submarine HMS Conqueror during the Falklands War. The sinking led to the death of 323 Argentine sailors, almost half of all Argentine casualties during the conflict, and sparked controversy, as the attack occurred outside the exclusion zone established by the British government around the islands. In the UK, some commentators have suggested that the action may have been motivated by political considerations, such as undermining peace talks or bolstering Prime Minister Margaret Thatcher's popularity among the British public. In Argentina, some critics have characterized the sinking of the cruiser as a contentious act, with some even suggesting it could constitute a war crime, though this interpretation is debated and has not been legally substantiated. Some analyses argue that, from a military perspective, the sinking contributed to British naval superiority, which may have influenced the outcome of the conflict. However, this perspective remains part of broader debates about the strategic and ethical implications of the event.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3284956, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 sinking of Cruiser ARA General Belgrano (C-4)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q930925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cretan Revolt (1897–1898)\", revision 1370613860"
     }
   ],
   "title": "Cretan Revolt of 1897–1898",
-  "summary": "Wikidata item Q930925, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Cretan Revolt (1897–1898)\", at revision 1370613860, opens: \"The Cretan Revolt of 1897–1898 was a successful insurrection by the Greek Orthodox population of Crete against the rule of the Ottoman Empire after decades of rising tensions. The Greek insurrectionists received supplies and armed support first from the Kingdom of Greece; then later from the Great Powers: the United Kingdom, France, Italy and Russia. The conflict ended in 1898 with Cretan-allied victory and Ottoman retreat when the Great Powers cut their funding and proposed a resolution which stipulated that the Island of Crete become an autonomous state under the nominal sovereignty of the Ottoman Empire, with the Prince George of Greece as governor, The Ottoman Empire recognize the sovereignty of the Kingdom of Greece and the Kingdom of Greece recognize the sovereignty of the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q930925, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1897,
     "end": 1898,

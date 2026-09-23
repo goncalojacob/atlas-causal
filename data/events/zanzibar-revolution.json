@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q75844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zanzibar Revolution\", revision 1375266442"
     }
   ],
   "title": "Zanzibar Revolution",
-  "summary": "Wikidata item Q75844, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in Zanzibar in 1964\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Zanzibar Revolution\", at revision 1375266442, opens: \"The Zanzibar Revolution (Swahili: Mapinduzi ya Zanzibar; Arabic: ثورة زنجبار, romanized: Thawrat Zanjibār) began on 12 January 1964 and led to the overthrow of the Sultan of Zanzibar Jamshid bin Abdullah and his mainly Arab government by the island's majority Black African population. Zanzibar was an ethnically diverse state consisting of a number of islands off the east coast of Tanganyika. Formally separated from German East Africa in 1890, it had become fully independent in 1963, with responsibility for its own defense and foreign affairs, as a result of Britain giving up its protectorate over it. In a series of parliamentary elections preceding this change, the Arab minority succeeded in retaining the hold on power it had inherited from Zanzibar's former history as an overseas territory of Oman. Frustrated by the lack of parliamentary representation compared to its share of votes in the July 1963 election, the African Afro-Shirazi Party (ASP), led by John Okello, mobilised around 600–800 men on the main island of Unguja on the morning of 12 January 1964. Having overrun the country's police force and appropriated their weaponry, the insurgents proceeded to Zanzibar Town, where they overthrew the Sultan and his government. The insurgents conducted a massacre of Arabs, looting Arab and South Asian–owned properties and businesses, and raping or murdering Arab and Indian civilians on the island. The death toll is disputed, with estimates ranging from several hundred to 20,000. An estimated 10,000 people escaped from the island, with many fleeing to the UK. Around a quarter of Zanzibar's Arabs were killed in the massacres. The moderate ASP leader Abeid Karume became the country's new president and head of state. The new government's apparent communist ties concerned Western governments. As Zanzibar lay within the British sphere of influence, the British government drew up a number of intervention plans. However, the feared communist government never materialised. Because British and American citizens were successfully evacuated, the UK did not intervene in the island's unrest. The Eastern Bloc powers of East Germany and the Soviet Union, along with the anti-Soviet People's Republic of China, immediately recognised the new government and sent advisors. Karume succeeded in negotiating a merger of Zanzibar with Tanganyika to form the new nation of Tanzania. Contemporary media assessed this merger as an attempt to prevent communist subversion of Zanzibar. The revolution ended more than 250 years of Arab dominance in Zanzibar. It is commemorated on the island each year with anniversary celebrations and a public holiday. The toll of victims in the massacres is generally not recognized.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q75844, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in Zanzibar in 1964\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1964,
     "end": 1964,

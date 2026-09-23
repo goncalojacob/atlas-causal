@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q4345906"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of South Georgia\", revision 1375909832"
     }
   ],
   "title": "Invasion of South Georgia",
-  "summary": "Wikidata item Q4345906, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Invasion of South Georgia\", at revision 1375909832, opens: \"The invasion of South Georgia, also known as the Battle of Grytviken or Operation Georgias, took place on 3 April 1982, when Argentine Navy forces seized control of the east coast of South Georgia after overpowering a small group of Royal Marines at Grytviken. Though outnumbered, the Royal Marines shot down a helicopter and hit the Argentine corvette ARA Guerrico several times before being forced to surrender. It was one of the first episodes of the Falklands War, immediately succeeding the invasion on the Falkland Islands the day before.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4345906, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,
