@@ -21145,8 +21145,23 @@ component of three, and the Jenkins vein is a second component of three — the
 two articles between them link to exactly one record this atlas holds, and that
 is an umbrella and a parent question, not an edge. `docs/m53-polities.md` §4.1
 is re-taken at **377 of 806** over the merged corpus and at **378 of 811** after
-the batch, and `docs/m42b-pool.md` → "Batch 13" carries all of it with the
-counts per lane and per century.
+the batch.
+
+**The check went red on the merge commit and it is deviation 1232 a fourth
+time.** Run **1557** on `bf0d6cb8` failed on **eleven rule 16 errors and
+nothing else** — five history shards missing, five stale, the manifest
+differing — with all 279 browser tests passing in the same run: the merge
+brought in records and its rebuilt index went into the same commit, and the
+history shards are built out of the commits that touched each file. 1233 said
+the cure is three commits; 1236 said the deviations have to be read before
+STEP 1's merge. **A fire cannot obey 1236 from inside a prompt that puts the
+merge in STEP 1 and the reading in STEP 2**, which is deviation **1241**, so
+the rule that does work without a prompt change is written in the pool file's
+stand: rebuild and commit the index as its own commit immediately after the
+merge commit. The batch's own two commits are in that order and the branch head
+is clean — `validate --index` 0 errors, 493 warnings, and the pure suite 1794
+of 1794 with 0 skipped. `docs/m42b-pool.md` → "Batch 13" carries all of it with
+the counts per lane and per century.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

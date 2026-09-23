@@ -3430,6 +3430,17 @@ into the wars of independence — `first-treaty-of-san-ildefonso` to the
 `argentine-war-of-independence` by way of the Banda Oriental is the shape of
 it, and no article read in this batch states it.
 
+### The check
+
+Run **1557** on the merge commit `bf0d6cb8` is **red**, on eleven rule 16
+errors and nothing else: `data/index/` is not what `build-index.mjs` produces,
+five history shards missing and five stale. That is **deviation 1232 met a
+fourth time** and it is written up below. All 279 browser tests passed in the
+same run and the validator's only complaint was the index. Run **1561** is the
+head, `0ceb70e9`, whose index was rebuilt with the merge already committed;
+`node tools/validate.mjs --index` is clean here (0 errors, 493 warnings) and
+the full pure suite is **1794 of 1794, 0 skipped**.
+
 ### Deviations
 
 **1239. `P361` names an umbrella; only the dates decide whether it can be a
@@ -3449,6 +3460,25 @@ holds — `berlin-conference` → `scramble-for-africa` and
 `cretan-revolt-of-1897-1898` → `greco-turkish-war-of-1897` — and **both are
 refused by the same dates**, 1884 against 1885 and 1898 against 1897. A fire
 looking for a payment should not look there again.
+
+**1241. Deviation 1232 was broken a fourth time, by the fire that had 1236 in
+front of it.** 1233 says the cure is three commits and not two — resolve and
+commit the merge, rebuild, commit the index — and 1236 says the deviations a
+branch carries have to be read *before* STEP 1's merge, because the merge is
+the first thing a fire on this branch does. This fire read them after, for the
+same reason the thirteenth did: **the standing prompt puts the merge in STEP 1
+and the reading in STEP 2**, and a fire that follows its prompt in order cannot
+obey 1236. The merge commit `bf0d6cb8` carried its own rebuilt index and run
+**1557** went red on **eleven rule 16 errors** — five history shards missing,
+five stale, the manifest differing — with all 279 browser tests passing in the
+same run. **The branch head is clean**, because the batch's own two commits are
+in the right order and its index was rebuilt with the merge already committed.
+**The rule 1236 asked for is a change to the prompt and nothing a fire can do
+from inside it**: until STEP 1 says "read `docs/m42b-pool.md`'s deviations, then
+merge", every fire that merges will break 1232 once and repair it in the same
+fire. What a fire *can* do, and this one did not, is **rebuild and commit the
+index as a second commit immediately after the merge commit** — which costs one
+commit and no thought — rather than staging both together with `git add -A`.
 
 **1240. Rule 4 is a date check and an argument check at once, and a batch
 should meet it before it writes the edge.** The Cartagena aftermath is the
@@ -3476,8 +3506,11 @@ attach to.
 | the thinnest cells left, in this partition | the Americas' 17th (9), 16th (11) and 18th (11) |
 | the two cells this batch moved | the Americas' 18th, 9 → 11 active and 1 → 2 main; Europe's 18th, 21 → 24 active and 2 → 3 main |
 
-**Try the network first, and read this list before STEP 1's merge** (deviation
-1236). On this fire `Special:EntityData` and the SPARQL endpoint answered 200
+**Read this list before STEP 1's merge, and if you cannot — because the prompt
+puts the merge first — then rebuild and commit the index as its own commit
+immediately after the merge commit** (deviations 1232, 1236, 1241). Four fires
+running have now put a merge and its rebuilt index in one commit and gone red
+on rule 16 for it. **Try the network first.** On this fire `Special:EntityData` and the SPARQL endpoint answered 200
 while `api.php` and the REST summaries answered 429 and then 200 on a retry, so
 **a 429 on one endpoint is not the thirteenth fire's kind of fire**: probe two
 or three endpoints before concluding anything, and let the import's own backoff
