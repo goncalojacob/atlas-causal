@@ -20026,6 +20026,20 @@ and A13's relations pass, still never run.
       `Q555833` is out of the seeds file's `items` and out of the state file's
       `done` so that a fire with a rule finds it, and its `lanes` entry is left
       because it is true. Bahrain, Yemen, Syria and Oman are the same row.
+1227. **The index is a function of the commits, so it is built *after* the
+      records are committed and never before.** `tools/lib/history.mjs` reads
+      each record's versions off the commits that touched its file, so an index
+      built on a dirty tree carries history shards a fresh build will not
+      reproduce: this batch built it first, committed records and index in that
+      order, and `validate --index` then found **eleven rule 16 errors, six of
+      them history shards** on a tree that had validated clean minutes before.
+      Rebuilding on top of the records' own commit made the branch head
+      byte-identical to a fresh build. **This is M42b's deviation 1232 met from
+      the other direction** — that fire put both in one commit, this one put
+      the index in the earlier of two — and the rule they share is the one
+      worth writing once: *records, commit, build, commit*. The check is the
+      only thing that catches it, because the validator on the working tree
+      agrees with a stale index until the commit exists.
 1223. **A test that asks whether a label lands *on* a mark is asking about the
       corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
       → *"a label over a line and a label over a mark ..."* took its mark case
