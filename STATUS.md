@@ -19764,6 +19764,118 @@ cause rather than the symptom — see deviations 1174 and 1175.
       until somebody re-measures**, which is deviation 1078 arriving in a
       second place. A row that says "N" should be a row a fire re-took, and a
       fire that copies one forward should say it copied it.
+
+**M42 batch 37 — the joins, and the count amendment A3 asks for.** Five records
+imported, **five filed and none main**, so the main count comes out of the batch
+where it went in: **242**, with the corpus 678 → 683 and the filed count
+436 → 441. Eight edges, of which two run between records the atlas already held
+and needed no import at all. The **largest connected component 513 → 517**, the
+first four-node move of the milestone, and 131 components against 132.
+Per lane, active: Europe 314, Asia 125 → 126, **Africa 99 → 103**, the
+Americas 140; main unmoved in every one. The vein is new and it is why: the
+eight Wikidata properties that are already a causal claim, in place of `P361`.
+`docs/m42-pool.md` § "Batch 37" is the account and § "Where the run stands
+after batch 37" is what the next fire picks up.
+
+**M42 batch 38 — the same vein asked of Asia, and the count A3 asks for.** Four
+records imported, **four filed and none main**, so the main count comes out
+where it went in: **242**, unmoved through five batches, with the corpus
+683 → 687 and the filed count 441 → 445. Four edges, every one of them carried
+in by a new record: the **two** held-to-held pairs the vein offered with no edge
+were both refused by their own articles, which is the first time batch 37's
+check has cost more than it gave. The **largest connected component 517 → 521**,
+131 components unchanged. Per lane, active: Europe 314, **Asia 126 → 130**,
+Africa 103, the Americas 140; main unmoved in every one. One place written
+(`palestine-q23792`) and one record left placeless because its item carries no
+coordinate anywhere. A10's regional period for Asia was looked for and **cannot
+be written**: the article gives no start (deviation 1210). `docs/m42-pool.md`
+§ "Batch 38" is the account, `docs/m42-connections.md` § "Batch 38" is the
+argument for each edge, and § "Where the run stands after batch 38" is what the
+next fire picks up — which, after 02:00Z on 23 September, is the curation fire
+and A13's relations pass, still never run.
+
+1206. **A refusal recorded as `done` is a refusal the state cannot retry.**
+      `Q49077`, the Six-Day War, had been walked by an earlier Wikidata import
+      and refused — at the time this atlas had no `middle-east` place record
+      for the item's `P276` and no lane reachable from it. `advance()` in
+      `tools/import/wikidata.mjs` writes **every** item of a batch into the
+      run's `done` list, whether it was created or refused, so the item could
+      not be offered again without editing `data/imports/wikidata-state.json`
+      by hand, which is what M42 batch 37 did. Deviation 1086 named this shape
+      for a class decision; this is the place half of it, and the general form
+      is that **the state records that an item was walked and not what
+      happened to it**. A refusal is a verdict about the atlas on the day it
+      was taken, and the atlas changes.
+
+1207. **A country is not a location, and the import's lane falls back to the
+      country.** Operation Barkhane is a French operation fought across Mali,
+      Burkina Faso, Chad, Mauritania and Niger: its `P276` is the Sahel and
+      its `P17` is France. With no place record for the Sahel yet, the import
+      walked `P276, P131, P17` looking for a point and the first one it could
+      reach was France's, so it wrote **`region: europe`** on an operation in
+      the Sahel. The order is right for a *place* and wrong for a *lane*: an
+      operation's country is **who sent it**, not where it happened. The fix
+      here was to write the place record A9's own rule asks for; the general
+      fix is that a lane derived from `P17` alone should say so or refuse.
+
+1208. **The vein decides the yield, not the reading.** Batches 32 to 36 of M42
+      read articles carefully and moved the largest connected component by two
+      across five batches. Batch 37 read no harder and moved it by four from
+      five records, because it asked Wikidata for the eight properties that
+      are *already* a causal claim — `P828`, `P1542`, `P1478`, `P1536`,
+      `P155`, `P156`, `P1479`, `P1534` — instead of for `P361`, the parts of
+      things. A part hangs from a parent and a parent takes no edge, so **the
+      parts vein files and the joins vein connects**. A run that wants chains
+      should know which question it is asking before it spends the reading.
+
+1209. **Deviation 798's order is "records, *then* rebuild", and the rebuild has
+      to come after the commit and not merely after the edit.**
+      `tools/lib/history.mjs` reads each record's versions out of the
+      repository's own commits, so `data/index/history-<kind>-<key>-<hash>.json`
+      depends on the **commit graph** and not only on the working tree. An index
+      built while the new records are still untracked carries history shards the
+      checked-out tree does not produce, and rule 16 in CI is what says so —
+      locally `--index` passes, because the same stale graph builds the same
+      stale shards. It took M42's check red twice in one fire: once on the `m0`
+      merge, whose index was rebuilt before the merge commit existed, and once
+      on batch 37, whose index was rebuilt before the records were committed.
+      **The order that converges is: commit the records, rebuild, commit the
+      index** — and it converges in one step, because the index commit touches
+      no record file and so changes no history.
+1210. **A period Wikipedia names can still have no span, and then A6 refuses
+      it.** A10 asks the seeds file for *"the regional periods A6 asks for where
+      a lane has none (Latin America's, Asia's)"*, and the decolonisation of
+      Asia is the obvious one: an article, a region, 130 active events waiting
+      under it. Its lead at revision 1375271318 gives an end — *"concluding with
+      the independence of the Democratic Republic of Timor-Leste from Indonesia
+      in 2002"* — and no start, and `Q5249554` carries no `P580`, no `P582` and
+      no `P585`. **Refused**, because opening it would mean a year nobody wrote
+      down. `decolonisation-of-africa` had the same gap and its article closed
+      it with *"the mid-1950s"*, which the record carries as the range
+      1954–1956; this one says nothing at all. Every A6 refusal until now was
+      for want of an article; this is the first for want of a span.
+1211. **The Arab Spring is an umbrella in one lane and its members are in
+      two.** `2011-yemeni-revolution` is main, is dated 2011–2012, and the
+      umbrella is dated 2010–2012: the span fits exactly and the filing would
+      have cost nothing. `tests/m42-filing.test.mjs` refuses it, because
+      `arab-spring` carries `region: africa` and no actors while the Yemeni
+      revolution is drawn in `asia`, and the test's subject clause asks for the
+      umbrella's own lane or a shared actor. **The Arab world is not a lane of
+      this atlas** — it is split between `africa` and `asia` — so the umbrella
+      can only carry the half that shares its row. The test is right and the
+      lanes are the thing that would have to change; neither is a batch's to
+      settle.
+1212. **The article refused more than it wrote, for the first time.** Batch 37
+      established that *a property is a claim and the article is the check*, and
+      it cost that batch one edge out of six. Asked of the Asia lane, the same
+      check refused **both** of the held-to-held pairs the vein offered with no
+      edge — the Lebanese civil war into the Sabra and Shatila massacre, and the
+      second Guangzhou uprising into the Wuchang uprising — because neither
+      article says what `P1542` says. Those were the two cheapest edges
+      available, needing no import at all. **A13's pass should be budgeted for
+      the reading and not for the rows**: 41 pairs are waiting for it and this
+      is the rate at which they will survive.
+
 ## M84 — the owner's feedback document
 
 Lane A, on the branch `m84`. `docs/m84-brief.md` over
@@ -20644,9 +20756,10 @@ M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
 M83 done
 M42b started 2026-09-22T20:17:13Z by scheduled
 M42b started 2026-09-22T22:46:14Z by scheduled
+M42 started 2026-09-22T21:07:15Z by scheduled
+M42 started 2026-09-22T23:42:00Z by scheduled
 M84 started 2026-09-22T20:15:57Z by scheduled (branch m84)
 M84 done
-M42 started 2026-09-22T21:07:15Z by scheduled
 M42b started 2026-09-23T01:12:42Z by scheduled
 M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done

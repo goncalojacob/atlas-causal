@@ -1849,6 +1849,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "2006-hezbollah-cross-border-raid",
+      "id": "2006-hezbollah-cross-border-raid--2006-lebanon-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2006-lebanon-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "imf-2016-portugal-ex-post-evaluation"
       ],
@@ -9307,6 +9336,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "israeli-declaration-of-independence",
+      "id": "israeli-declaration-of-independence--1948-arab-israeli-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1948-arab-israeli-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-21",
@@ -9777,6 +9835,35 @@
       "status": "active",
       "to": "2006-lebanon-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "lebanese-civil-war",
+      "id": "lebanese-civil-war--taif-agreement--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "taif-agreement",
+      "type": "caused"
     },
     {
       "authors": [
@@ -12251,6 +12338,35 @@
       "status": "active",
       "to": "the-base-reforms-rally-1964",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-22",
+      "from": "railway-protection-movement",
+      "id": "railway-protection-movement--wuchang-uprising--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "wuchang-uprising",
+      "type": "enabled"
     },
     {
       "authors": [

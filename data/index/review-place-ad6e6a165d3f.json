@@ -4924,7 +4924,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "lebanon-q822",
       "kind": "place",
       "names": [
@@ -7020,6 +7020,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "palestine-q23792",
+      "kind": "place",
+      "names": [
+        "Palestine"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "panaji",
@@ -7941,7 +7968,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [

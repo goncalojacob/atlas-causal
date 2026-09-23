@@ -1424,6 +1424,12 @@
     },
     {
       "dissent": false,
+      "id": "2006-hezbollah-cross-border-raid--2006-lebanon-war--caused",
+      "kind": "edge",
+      "locator": "\"2006 Hezbollah cross-border raid\", revision 1370102562, lead"
+    },
+    {
+      "dissent": false,
       "id": "2011-egyptian-revolution--2011-bahraini-uprising--inspired",
       "kind": "edge",
       "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
@@ -2900,6 +2906,12 @@
     },
     {
       "dissent": false,
+      "id": "israeli-declaration-of-independence--1948-arab-israeli-war--caused",
+      "kind": "edge",
+      "locator": "\"Israeli Declaration of Independence\", revision 1372097190, lead"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Jameson Raid\", revision 1370624782, § lead"
@@ -3041,6 +3053,12 @@
       "id": "lebanese-civil-war--2006-lebanon-war--precondition-of",
       "kind": "edge",
       "locator": "\"Lebanese Civil War\", revision 1370626682"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--taif-agreement--caused",
+      "kind": "edge",
+      "locator": "\"Taif Agreement\", revision 1369818876, lead"
     },
     {
       "dissent": false,
@@ -3593,6 +3611,12 @@
       "id": "profit-remittance-law-1962--the-base-reforms-rally-1964--precondition-of",
       "kind": "edge",
       "locator": "\"João Goulart\", revision 1366723860"
+    },
+    {
+      "dissent": false,
+      "id": "railway-protection-movement--wuchang-uprising--enabled",
+      "kind": "edge",
+      "locator": "\"Railway Protection Movement\", revision 1361142110, lead"
     },
     {
       "dissent": false,
@@ -5834,6 +5858,12 @@
     },
     {
       "dissent": false,
+      "id": "2006-hezbollah-cross-border-raid",
+      "kind": "event",
+      "locator": "\"2006 Hezbollah cross-border raid\", revision 1370102562"
+    },
+    {
+      "dissent": false,
       "id": "2006-lebanon-war",
       "kind": "event",
       "locator": "\"2006 Lebanon War\", revision 1373390187"
@@ -7376,6 +7406,12 @@
     },
     {
       "dissent": false,
+      "id": "israeli-declaration-of-independence",
+      "kind": "event",
+      "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid",
       "kind": "event",
       "locator": "\"Jameson Raid\", revision 1370624782"
@@ -7886,6 +7922,12 @@
     },
     {
       "dissent": false,
+      "id": "railway-protection-movement",
+      "kind": "event",
+      "locator": "\"Railway Protection Movement\", revision 1361142110"
+    },
+    {
+      "dissent": false,
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "\"Reign of Terror\", revision 1375254240"
@@ -8273,6 +8315,12 @@
       "id": "sveaborg-rebellion",
       "kind": "event",
       "locator": "\"Sveaborg rebellion\", revision 1370749115"
+    },
+    {
+      "dissent": false,
+      "id": "taif-agreement",
+      "kind": "event",
+      "locator": "\"Taif Agreement\", revision 1369818876"
     },
     {
       "dissent": false,

@@ -3488,3 +3488,223 @@ stale graph builds the same stale shards on both sides of the comparison.
 word "commit" in it**: records, *then* rebuild, *then* the index. It converges
 in one further step, because the index commit touches no record file and so
 changes no history. Deviation 1209.
+
+## Batch 38 — the joins vein asked of the other lane M42 owns
+
+*22 September, the fire that picked the run up at 23:42Z, after merging `m0`
+into `m42` (M84 and M85 landed there while this branch was working). The pool
+file already carries a `## Curation 2026-09-22` section, so this is not the
+curation fire; A12 is spent; the batches are what stands in front of the run.*
+
+**The last stand named the vein and the lane in one sentence each.** *"The joins
+vein beats the parts vein and the numbers say so"* — +4 on the largest component
+from five records, against +0 from ten. And A10's order of need is Africa,
+South America, Asia, of which M42 owns Africa and Asia. Batch 37 asked the six
+directional causal properties of the 92 `africa`-lane events with a Wikidata id
+and left the Africa half of the vein worked out. **This batch asked the same six
+of the 120 `asia`-lane events**: `P828` has cause, `P1542` has effect, `P1478`
+has immediate cause, `P1536` immediate cause of, `P1479` contributing factor,
+`P1534` end cause. `P155`/`P156` stay out, for batch 34's reason — *follows* is
+chronology and this atlas has no type for it.
+
+**93 rows: 9 held-to-held and 81 items the atlas does not hold.**
+
+### The four imported, all filed, three placed, each with the edge it came for
+
+| the record | sitelinks | filed under | placed at | the edge it came for |
+| --- | --- | --- | --- | --- |
+| `israeli-declaration-of-independence` | 54 | `arab-israeli-conflict` | `palestine-q23792` | it `--caused-->` `1948-arab-israeli-war` |
+| `taif-agreement` | 24 | `lebanese-civil-war` | — (no coordinate anywhere on the item) | `lebanese-civil-war --caused-->` it |
+| `2006-hezbollah-cross-border-raid` | 12 | `2006-lebanon-war` | `lebanon-q822` | it `--caused-->` `2006-lebanon-war` |
+| `railway-protection-movement` | 10 | `xinhai-revolution` | `qing-dynasty` | it `--enabled-->` `wuchang-uprising` |
+
+Each sits between two things the atlas already held, which is what a join is,
+and `docs/m42-connections.md` carries the sentence of the cited article that
+each edge stands on. **The Railway Protection Movement is the one worth reading
+twice**: its article says the troops sent to suppress it *"created the
+opportunity"* for the Wuchang Uprising, which is `enabled` and not `caused` in
+this atlas's own five types, and Wikidata says `has cause`. The weaker of the
+two types the sources allow is the one written.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 683 active | **687 active** |
+| **main** | 242 | **242, unchanged** |
+| filed | 441 | **445** |
+| active edges | 671 | **675** |
+| largest connected component | 517 | **521** |
+| components | 131 | **131** |
+| events with no edge at all | 105 | **105** |
+| events with no place | 31 | **32** (the Taif Agreement, refused for want of a coordinate) |
+| places written | — | **1** (`palestine-q23792`) |
+| API calls | — | 1 SPARQL, 12 Wikidata reads, 4 article reads |
+
+**Per lane (A10).** Active: Europe 314, **Asia 126 → 130**, Africa 103, the
+Americas 140. Main: Europe 85, Asia 67, Africa 31, the Americas 59 — every one
+unchanged, because all four arrived filed.
+
+**A5's number moved by four again**, and for the same reason batch 37's did: all
+four new records hang off events already inside the largest component
+(`1948-arab-israeli-war`, `lebanese-civil-war`, `2006-lebanon-war`,
+`wuchang-uprising`). Nothing merged, because nothing in this vein reaches an
+island — see below.
+
+### The first batch where the article refused more than it wrote
+
+Both held-to-held pairs that carried no edge were **refused by their own
+articles**, which is batch 37's rule (*a property is a claim and the article is
+the check*) costing this batch the two cheapest edges on the table.
+
+- **`lebanese-civil-war` / `sabra-and-shatila-massacre`** (`P1542`). The
+  massacre's lead at revision 1375981084 gives the 1982 Israeli invasion, the
+  PLO withdrawal, the multinational force's departure and Bashir Gemayel's
+  assassination as the circumstances and never says the civil war caused the
+  killings. A massacre **inside** a war is containment, not an argument.
+- **`second-guangzhou-uprising` / `wuchang-uprising`** (`P1542`). The lead at
+  revision 1370737006 says only that it *"was a failed uprising that took place
+  in China"*. It does not connect the two.
+
+The other seven held-to-held rows are four pairs already settled:
+`marco-polo-bridge-incident`/`second-sino-japanese-war` and
+`2021-myanmar-coup-d-etat`/`myanmar-civil-war` and
+`turkish-war-of-independence`/`treaty-of-lausanne` already carry the edge in
+Wikidata's own direction; `saur-revolution`/`afghan-conflict` runs onto an
+`m42-umbrella` and `tests/m42-filing.test.mjs` refuses it;
+`battles-of-khalkhin-gol`/`molotov-ribbentrop-pact` is batch 37's refusal.
+
+### Asia's regional period does not exist in the source, and A10 asks for it
+
+A10 says *"the seeds file gains the regional periods A6 asks for where a lane
+has none (Latin America's, Asia's)"*. **The decolonisation of Asia is the
+obvious one and it cannot be written.** Wikipedia has the article, and its lead
+at revision 1375271318 gives an end — *"concluding with the independence of the
+Democratic Republic of Timor-Leste from Indonesia in 2002"* — and **no start at
+all**. Its item `Q5249554` carries seven sitelinks, `P31` *process*, `P30`
+Asia, and no `P580`, `P582` or `P585`. A6 asks for *"a span"* and the standing
+exception forbids an invented date, so the period a lane of 130 events wants
+would have to be opened with a year nobody wrote down. **Refused, and it is the
+first umbrella A6 has refused for want of a span rather than for want of an
+article.** `decolonisation-of-africa` had the same problem at its start and the
+article solved it there by saying *"the mid-1950s"*, which the record carries as
+the range 1954–1956; here the article says nothing.
+
+### The Arab Spring is an umbrella in one lane and its members are in two
+
+`2011-yemeni-revolution` is main, is dated 2011–2012, and the Arab Spring
+umbrella is dated 2010–2012 — the span fits exactly, and a filing would have
+taken Asia's main count down by one for nothing but a line. **The filing test
+refuses it**, and rightly: `arab-spring` carries `region: africa` and
+`actors: []`, `2011-yemeni-revolution` is drawn in the `asia` lane, and
+`tests/m42-filing.test.mjs`'s subject clause asks for the umbrella's own lane or
+a shared actor. **The Arab world is not a lane of this atlas**; it is split
+between `africa` (Tunisia, Egypt, Libya) and `asia` (Yemen, Bahrain, Syria), and
+the umbrella can only carry the half that shares its row. That is a records
+question with a display answer behind it and neither is this batch's to settle.
+
+### Sixty-nine of the 81 items are not events at all
+
+The vein's Asia half is much noisier than its Africa half, and it is worth
+saying what the noise is made of, because it is the argument for asking a
+different question next:
+
+- **Abstractions and conditions**, 21 rows: *political repression*, *political
+  violence*, *authoritarianism*, *theocracy*, *inflation*, *corruption in Iran*,
+  *human rights*, *fossil fuel*, *neoconservatism*, *Zionism*, *sex
+  segregation*, *status quo ante bellum*, *lodgement*, *two-nation theory*. The
+  2025–2026 Iranian protests alone carry ten of these as `P828`.
+- **Things that are not events**: five countries (*Cambodia*, *Laos*, *Russia*,
+  *Bangladesh*, *Gaza City*), three armed forces and two viruses (*SARS-CoV-2*,
+  *H3N2*, *H2N2*).
+- **Articles about a response rather than an event**, 20 rows, almost all of
+  them the Gaza war's: *international reactions to*, *media coverage of*,
+  *misinformation in*, *war crimes in*, *casualties of*, *impacts of*. Batches
+  36 and 37 refused this shape twice; **the response is not the event**.
+- **Parts of things already here**: *Operation Gibraltar*, *Operation Grand
+  Slam*, *Operation Desert Hawk*, *Operation Rising Lion*, *Operation True
+  Promise III*, the *2025 United States strikes on Iranian nuclear sites*. The
+  parts vein, which batch 36 measured at +0.
+
+**Four were refused for reasons worth keeping**, because each is a real join
+waiting for something:
+
+- **`Q10806` September 11 attacks** is the cause of *two* events held here — the
+  war in Afghanistan and the Iraq war, the only item in either lane's vein to
+  stand behind two — and it is **the Americas lane, which A11(b) gives to
+  M42b**. Left for that lane; `origin/m42b` does not hold it yet.
+- **`Q114051466` death of Jina Mahsa Amini** (46 sitelinks) is the immediate
+  cause of `mahsa-amini-protests` and would arrive **main**: it is the cause of
+  the protests and so cannot be filed inside them, and no umbrella this atlas
+  holds spans Iran in 2022. A6 says the main count must not rise.
+- **`Q31187690` proclamation of the Republic of Turkey** (9) is the effect of
+  the war of independence and cannot be filed under it — M67's rule 1, that a
+  period does not contain the act that created it, reading the same way round.
+- **`Q1433190` Iraq disarmament crisis** (7) runs 1991–2003 and the Iraq war
+  record begins in 2003, so no parent holds it either.
+
+**`Q12592663` dissolution of the military of the Korean Empire** was refused for
+a different reason and it is the cleanest one: **one sitelink and no English
+article at all**, so there is nothing to cite under A2's standard.
+
+### Two new review flags, both saying what a record's own fields could not
+
+`no-place-no-coordinate` on `taif-agreement`, and `lane-from-p17` on
+`railway-protection-movement` — the second is deviation 1207's own request, that
+*"a lane derived from `P17` alone should say so or refuse"*, written as a flag
+rather than left in prose. The Railway Protection Movement's country is where it
+happened (Sichuan, in Qing China) and not who sent it, which is the case 1207
+said the rule gets right.
+
+## Where the run stands after batch 38, for the fire that picks it up
+
+*22–23 September, 23:42Z onward. An import fire, one batch, the Asia half of
+batch 37's vein.*
+
+| | |
+| --- | --- |
+| corpus | **687 active** |
+| **main** | **242**, unmoved through five batches |
+| filed | 445 |
+| largest connected component | **521** |
+| components | **131** |
+| events with no edge at all | **105** |
+| events with no place | **32** |
+| the joins vein, Africa, items not held | 24 open rows |
+| the joins vein, Asia, items not held | **81 rows, of which 69 are not events**; the four that are, refused above |
+| the joins vein, whole corpus, held-to-held with no edge | 41 inside one component, 1 that would merge — **A13's pass, and it has still never run** |
+| the `part of` vein, Africa | 139 rows open |
+| the sweep pool, world sections | 1,046 open rows |
+| per lane, active | Europe 314, **Asia 130**, **Africa 103**, Americas 140 |
+| per lane, main | Europe 85, Asia 67, Africa 31, Americas 59 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 23 September is the curation fire and it owes
+  A13's relations pass**, which has never run: the 22 September curation section
+  predates the amendment. Batches 37 and 38 are two rehearsals of it over one
+  vein each, and between them they say what the pass will find — **41
+  held-to-held pairs carry a causal property on Wikidata and no edge here**, one
+  of which would merge two components, and **the article refuses roughly as many
+  as it confirms**. Batch 38 wrote four edges and refused two on exactly that
+  test. The pass should budget for the reading and not for the rows.
+- **The joins vein is now worked out in both of M42's lanes** and its second
+  asking yielded four records against batch 37's five, from 93 rows against 54.
+  Asia's rows are mostly abstractions and response-articles; a third asking of
+  the same six properties will not pay. **The veins left are the `part of` one
+  over Africa (139 rows) and the sweep pool (1,046)**, and batch 36 measured the
+  first at +0 on the component.
+- **Two umbrellas are still the cheapest unlock and one of them cannot be
+  written.** Batch 37 named five African and Middle Eastern joins waiting for a
+  period; this batch went looking for Asia's and found that the source has no
+  span for it. What a fire can still try is a **Middle Eastern** period with a
+  span in its article — the Arab Winter is the obvious candidate and is itself
+  one of the five waiting joins — and an African one for the nineteenth century,
+  where `scramble-for-africa` begins in 1885 and the French conquest of Algeria
+  begins in 1830.
+- **The Sudan cluster of seven is still the biggest joinable island** and
+  nothing in either lane's vein reaches it.
+- **Fifty-two of the 140 event classes carry no category**, unchanged: this
+  batch decided none, because `captivity`, `aspect of history` and *political
+  movement* are not kinds of event and guessing at them is what the class table
+  exists to stop.
+- **Africa is 103 against Europe's 314 and Asia is 130**, so A10's order of need
+  does not change.

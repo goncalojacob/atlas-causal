@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "taif-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "no-place-no-coordinate"
+    ]
+  },
+  "wikidata": "Q321936",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Taif Agreement",
+    "pt": "Acordo de Taife"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q321936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taif Agreement\", revision 1369818876"
+    }
+  ],
+  "title": "Taif Agreement",
+  "summary": "The English Wikipedia article \"Taif Agreement\", at revision 1369818876, opens: \"The 1989 Taif Agreement, officially known as the National Reconciliation Accord, was reached to provide the basis for the ending of the civil war and the return to political normalcy in Lebanon. Negotiated in Taif, Saudi Arabia, it was designed to end the 15 year-long Lebanese Civil War, and reassert the Lebanese government's authority in southern Lebanon. It was signed on 22 October 1989 and ratified by the Lebanese parliament on 5 November 1989.\" Wikidata item Q321936, whose own description reads \"1989 agreement intended to end the Lebanese civil war\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-10-22"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "The item carries no P625, no P276, no P131 and no P17, so A9 leaves the record placeless. The lane is the one the cited article names for it: the accord was \"negotiated in Taif, Saudi Arabia\" and ends a war this atlas draws in the asia lane.",
+  "category": "treaty",
+  "actors": [],
+  "parent": "lebanese-civil-war"
+}
