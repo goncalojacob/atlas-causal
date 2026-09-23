@@ -1131,7 +1131,13 @@
     "Q1429256",
     "Q15542964",
     "Q63468",
-    "Q330"
+    "Q330",
+    "Q604897",
+    "Q36027",
+    "Q107802",
+    "Q626191",
+    "Q2915155",
+    "Q878102"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1366,7 +1372,9 @@
     "Q217450": "europe",
     "Q377269": "americas",
     "Q203824": "africa",
-    "Q555833": "asia"
+    "Q555833": "asia",
+    "Q1922071": "asia",
+    "Q626191": "asia"
   },
   "queries": [
     {
@@ -3895,6 +3903,11 @@
     "Q486972": {
       "kind": "place",
       "label": "human settlement"
+    },
+    "Q3249005": {
+      "kind": "place",
+      "label": "city of Vietnam",
+      "note": "Added in M42 batch 43 for Q36027, \u0110i\u1ec7n Bi\u00ean Ph\u1ee7, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
     },
     "Q625298": {
       "kind": "event",

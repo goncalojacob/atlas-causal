@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "dien-bien-phu",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ],
+    "note": "Written by the import from Q36027, the Battle of Điện Biên Phủ's `P276`, whose own `P625` is the battle's coordinate to two places — the shape `karameh` took in batch 42. Two corrections by hand: the id, because `slug()` strips combining marks and `Đ` is U+0110 and decomposes into nothing, so the tool wrote `ien-bien-phu-city` (deviation 1233); and the precision, from the import's hard-coded `point` to `city`, which is A12 (2)'s rule read off the class Q3249005."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q36027",
+  "wikipedia": {
+    "en": "Điện Biên Phủ (city)",
+    "pt": "Dien Bien Phu"
+  },
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-23"
+  },
+  "sources": [],
+  "names": [
+    "Điện Biên Phủ",
+    "Dien Bien Phu",
+    "Điện Biên Phủ (city)"
+  ],
+  "where": {
+    "lon": 103.015958,
+    "lat": 21.392377,
+    "precision": "city",
+    "label": "Điện Biên Phủ (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q36027, imported by tools/import/wikidata.mjs. The item's own description reads \"city in Điện Biên, Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

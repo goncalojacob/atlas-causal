@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-dien-bien-phu--geneva-conference--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
+    }
+  ],
+  "from": "battle-of-dien-bien-phu",
+  "to": "geneva-conference",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's lead: \"the defeat at Điện Biên Phủ brought a profound psychological shock to France. It led to a gradual withdrawal of French forces from all of Indochina (with the exception of Laos). This was agreed in the 1954 Geneva Accords signed ten weeks after the battle.\" What the battle caused is the settlement and not the meeting: the same article calls the negotiations \"previously planned\" and says they \"had begun in April\", and its §Aftermath adds that the conference \"opened on 8 May 1954, the day after the surrender of the garrison\". The edge runs to the conference because the conference is where the withdrawal was written down and this atlas holds no separate record for the Accords. It already carries `first-indochina-war --caused--> geneva-conference`; this is the same claim at the grain of the battle the article calls decisive. Probable: Wikipedia alone.",
+  "dispute": null
+}

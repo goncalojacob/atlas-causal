@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "2003-invasion-of-iraq",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "participants-from-p710"
+    ],
+    "note": "Filed under `iraq-war` from `P361`: 20 March to 1 May 2003 is inside the war's span and the article's first sentence calls the invasion \"the first stage of the Iraq War\". Five of the item's thirteen `P710` participants are actors this atlas holds and are written as `belligerent` (A12 (4)); four of them are the coalition members the lead names — \"mainly American, British, Australian, and Polish troops\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q107802",
+  "wikipedia": {
+    "en": "2003 invasion of Iraq",
+    "pt": "Invasão do Iraque em 2003"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q107802"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2003 invasion of Iraq\", revision 1372133822"
+    }
+  ],
+  "title": "2003 invasion of Iraq",
+  "summary": "The English Wikipedia article \"2003 invasion of Iraq\", at revision 1372133822, opens: \"The 2003 invasion of Iraq was the first stage of the Iraq War. The invasion began on 20 March 2003 and lasted just over one month, including 26 days of major combat operations. The invasion was conducted by a United States–led coalition of mainly American, British, Australian, and Polish troops.\" Wikidata item Q107802, whose own description reads \"2003 military invasion led by the United States\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2003,
+    "end": 2003,
+    "date": "2003-03-20",
+    "endDate": "2003-05-01"
+  },
+  "place": "iraq-q796",
+  "region": null,
+  "regionNote": null,
+  "parent": "iraq-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "led the coalition"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "australia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "poland",
+      "role": "belligerent"
+    },
+    {
+      "actor": "iraq",
+      "role": "belligerent",
+      "note": "invaded"
+    }
+  ]
+}

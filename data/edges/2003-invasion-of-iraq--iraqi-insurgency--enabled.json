@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2003-invasion-of-iraq--iraqi-insurgency--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2003 invasion of Iraq\", revision 1372133822"
+    }
+  ],
+  "from": "2003-invasion-of-iraq",
+  "to": "iraqi-insurgency",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article, of what the invasion left behind: \"More serious for the post-war state of Iraq was the looting of cached weaponry and ordnance which fueled the subsequent insurgency. As many as 250,000 tons of explosives were unaccounted for by October 2004.\" `enabled` and not `caused`: what the article puts on the invasion is the means — the unguarded depots — and not the motive. The same article makes the same kind of claim about the force level, which \"proved to be short-sighted ... due to the requirement for a much larger force to combat the irregular Iraqi forces in the Iraqi insurgency\". Probable: Wikipedia alone.",
+  "dispute": null
+}
