@@ -11675,7 +11675,7 @@
       ]
     },
     "israeli-declaration-of-independence": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -15029,10 +15029,16 @@
       ]
     },
     "railway-protection-movement": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "category"
+          ],
           "on": "2026-09-22"
         }
       ]
@@ -17260,7 +17266,7 @@
       ]
     },
     "taif-agreement": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

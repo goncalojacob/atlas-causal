@@ -2516,6 +2516,18 @@
     },
     {
       "dissent": false,
+      "id": "french-revolution--haitian-revolution-1791-1804--inspired",
+      "kind": "edge",
+      "locator": "\"Haitian Revolution\", revision 1376092092, § Effects of the French Revolution"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution--haitian-revolution-1791-1804--inspired",
+      "kind": "edge",
+      "locator": "\"Haitian Revolution\", revision 1376092092, § Lasting change"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
       "kind": "edge",
       "locator": "\"Bucha massacre\", revision 1370596341"
@@ -3167,6 +3179,12 @@
       "id": "marco-polo-bridge-incident--second-sino-japanese-war--caused",
       "kind": "edge",
       "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "mexican-war-of-independence--spanish-attempts-to-reconquer-mexico--reacted-to",
+      "kind": "edge",
+      "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284, lead"
     },
     {
       "dissent": false,
@@ -6164,6 +6182,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-war-of-independence",
+      "kind": "event",
+      "locator": "\"Argentine War of Independence\", revision 1375018429"
+    },
+    {
+      "dissent": false,
       "id": "armenian-genocide",
       "kind": "event",
       "locator": "\"Armenian genocide\", revision 1367030542"
@@ -6308,6 +6332,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ayacucho",
+      "kind": "event",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "\"Battle of Breitenfeld (1631)\", revision 1370108143"
@@ -6323,6 +6353,18 @@
       "id": "battle-of-britain",
       "kind": "event",
       "locator": "\"Battle of Britain\", revision 1371887266"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-buceo",
+      "kind": "event",
+      "locator": "\"Battle of Buceo\", revision 1366243583"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chacabuco",
+      "kind": "event",
+      "locator": "\"Battle of Chacabuco\", revision 1373197409"
     },
     {
       "dissent": false,
@@ -6368,9 +6410,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ica",
+      "kind": "event",
+      "locator": "\"Battle of Ica\", revision 1370443527"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "\"Battle of Jankau\", revision 1370444085"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-junin",
+      "kind": "event",
+      "locator": "\"Battle of Junín\", revision 1370266471"
     },
     {
       "dissent": false,
@@ -6395,6 +6449,12 @@
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "\"Battle of La Plata (1957)\", revision 1370446805"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-piedras-1811",
+      "kind": "event",
+      "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
     },
     {
       "dissent": false,
@@ -6470,6 +6530,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rancagua",
+      "kind": "event",
+      "locator": "\"Battle of Rancagua\", revision 1371210959"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "\"Battle of Santa Clara\", revision 1370588555"
@@ -6485,6 +6551,12 @@
       "id": "battle-of-stormberg",
       "kind": "event",
       "locator": "\"Battle of Stormberg\", revision 1370589985"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-suipacha",
+      "kind": "event",
+      "locator": "\"Battle of Suipacha\", revision 1370274854"
     },
     {
       "dissent": false,
@@ -6512,9 +6584,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tucuman",
+      "kind": "event",
+      "locator": "\"Battle of Tucumán\", revision 1370275835"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "\"Battle of Verdun\", revision 1376156165"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-viluma",
+      "kind": "event",
+      "locator": "\"Battle of Viluma\", revision 1374737190"
     },
     {
       "dissent": false,
@@ -6563,6 +6647,12 @@
       "id": "bohemian-revolt",
       "kind": "event",
       "locator": "\"Bohemian Revolt\", revision 1372461973"
+    },
+    {
+      "dissent": false,
+      "id": "bolivian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Bolivian War of Independence\", revision 1372904906"
     },
     {
       "dissent": false,
@@ -6662,6 +6752,12 @@
     },
     {
       "dissent": false,
+      "id": "chilean-war-of-independence",
+      "kind": "event",
+      "locator": "\"Chilean War of Independence\", revision 1371212438"
+    },
+    {
+      "dissent": false,
       "id": "chilembwe-uprising",
       "kind": "event",
       "locator": "\"Chilembwe uprising\", revision 1375916516"
@@ -6695,6 +6791,12 @@
       "id": "colombian-peace-process",
       "kind": "event",
       "locator": "\"Colombian peace process\", revision 1375561117"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Colombian War of Independence\", revision 1375635940"
     },
     {
       "dissent": false,
@@ -6782,6 +6884,12 @@
     },
     {
       "dissent": false,
+      "id": "crossing-of-the-andes",
+      "kind": "event",
+      "locator": "\"Crossing of the Andes\", revision 1374600996"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "\"Cuban Revolution\", revision 1373305240, infobox: \"26 July 1953 – 1 January 1959\""
@@ -6863,6 +6971,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "dissent": false,
+      "id": "ecuadorian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Ecuadorian War of Independence\", revision 1376099764"
     },
     {
       "dissent": false,
@@ -7616,6 +7730,12 @@
     },
     {
       "dissent": false,
+      "id": "mexican-war-of-independence",
+      "kind": "event",
+      "locator": "\"Mexican War of Independence\", revision 1371682352"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
@@ -7778,6 +7898,12 @@
     },
     {
       "dissent": false,
+      "id": "paraguay-campaign",
+      "kind": "event",
+      "locator": "\"Paraguay campaign\", revision 1374608769"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-accords",
       "kind": "event",
       "locator": "\"Paris Peace Accords\", revision 1376128374"
@@ -7817,6 +7943,12 @@
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "\"Treaty of Riga\", revision 1368931640"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Peruvian War of Independence\", revision 1375180136"
     },
     {
       "dissent": false,
@@ -8267,6 +8399,18 @@
       "id": "spanish-american-war-1898",
       "kind": "event",
       "locator": "\"Spanish–American War\", revision 1374740923"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-american-wars-of-independence",
+      "kind": "event",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-attempts-to-reconquer-mexico",
+      "kind": "event",
+      "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284"
     },
     {
       "dissent": false,
@@ -8837,6 +8981,12 @@
       "id": "us-air-bases-in-the-brazilian-northeast-1942",
       "kind": "event",
       "locator": "\"Getúlio Vargas\", revision 1373660809"
+    },
+    {
+      "dissent": false,
+      "id": "venezuelan-war-of-independence",
+      "kind": "event",
+      "locator": "\"Venezuelan War of Independence\", revision 1376108556"
     },
     {
       "dissent": false,

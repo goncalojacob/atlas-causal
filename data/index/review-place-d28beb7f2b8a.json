@@ -439,7 +439,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -483,6 +483,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "ayacucho",
+      "kind": "place",
+      "names": [
+        "Ayacucho",
+        "Aiacucho"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -1745,7 +1772,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -1867,6 +1894,34 @@
       "names": [
         "Cienfuegos",
         "Cenfogos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "cochabamba-department",
+      "kind": "place",
+      "names": [
+        "Cochabamba Department",
+        "Departamento de Cochabamba",
+        "Cochabamba (departamento)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2214,6 +2269,64 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "department-of-ica",
+      "kind": "place",
+      "names": [
+        "Ica Department",
+        "Ica",
+        "Department of Ica",
+        "Ica (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "department-of-junin",
+      "kind": "place",
+      "names": [
+        "Junín Department",
+        "Junín",
+        "Department of Junín",
+        "Junim (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -5955,6 +6068,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "montevideo",
+      "kind": "place",
+      "names": [
+        "Montevideo",
+        "Montevidéu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8023,6 +8163,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "rancagua",
+      "kind": "place",
+      "names": [
+        "Rancagua"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8776,6 +8942,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "san-miguel-de-tucuman",
+      "kind": "place",
+      "names": [
+        "San Miguel de Tucumán",
+        "São Miguel de Tucumã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8870,6 +9063,33 @@
         "Santa Clara",
         "Santa Clara, Cuba",
         "Santa Clara (Villa Clara)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "santiago",
+      "kind": "place",
+      "names": [
+        "Santiago",
+        "Santiago (Chile)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11253,6 +11473,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "ayacucho",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "baracoa",
       "kind": "place",
       "message": "place is referenced by no event",
@@ -11343,6 +11569,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "cochabamba-department",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "crete",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -11350,6 +11582,18 @@
     },
     {
       "id": "cundinamarca-department",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "department-of-ica",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "department-of-junin",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -11428,6 +11672,12 @@
     },
     {
       "id": "mitu",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "montevideo",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -11523,6 +11773,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "rancagua",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
@@ -11553,6 +11809,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "san-miguel-de-tucuman",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "san-vicente-del-caguan",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -11560,6 +11822,12 @@
     },
     {
       "id": "santa-clara-cuba",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "santiago",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

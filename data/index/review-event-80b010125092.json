@@ -4397,6 +4397,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "argentine-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "A7: the interval ended 1816, which is Wikidata P582 for Q617409 and the year independence was declared. The English article \"Argentine War of Independence\", at revision 1375018429, opens \"The Argentine War of Independence was a set of military events from 1810 to 1825\", so the end is widened to 1825 from the article the record cites. The start is unchanged.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Argentine War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5309,6 +5341,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "id": "battle-of-ayacucho",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ayacucho"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
@@ -5405,6 +5468,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-buceo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Buceo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -5424,6 +5518,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Caporetto"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-chacabuco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "argentine-war-of-independence",
+        "chilean-war-of-independence"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chacabuco"
     },
     {
       "authors": [
@@ -5591,6 +5719,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-guayabos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Guayabos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5743,6 +5899,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "id": "battle-of-ica",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ica"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-jankau",
       "kind": "event",
@@ -5761,6 +5948,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Jankau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-junin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Junín"
     },
     {
       "authors": [
@@ -5906,6 +6124,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of La Plata (1957)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-las-piedras-1811",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Las Piedras (1811)"
     },
     {
       "authors": [
@@ -6406,6 +6654,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-rancagua",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rancagua"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -6596,6 +6875,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-suipacha",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "bolivian-war-of-independence",
+        "argentine-war-of-independence"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Suipacha"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6767,6 +7079,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-tucuman",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "argentine-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tucumán"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-22",
@@ -6848,6 +7191,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Verdun"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-viluma",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Viluma"
     },
     {
       "authors": [
@@ -7269,6 +7643,36 @@
       "revised": null,
       "status": "active",
       "title": "Bohemian Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "bolivian-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bolivian War of Independence"
     },
     {
       "authors": [
@@ -8030,6 +8434,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "chilean-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The interval read 1827 with no end, which is Wikidata P580 for Q1072889 taken alone. The same item’s own English description, which this record cites and its summary quotes, reads “1812-1827 war between patriots and royalists”, and this atlas holds battles of this war at 1814 and 1817. The English article, revision 1371212438, states no years in its lead, so A7 does not reach it; the span is settled from the cited item against itself. A reviewer should read the article’s infobox.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chilean War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -8290,6 +8727,35 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Colombian peace process"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "colombian-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Colombian War of Independence"
     },
     {
       "authors": [
@@ -9092,6 +9558,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "crossing-of-the-andes",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Crossing of the Andes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9722,6 +10218,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Eastern Front"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "ecuadorian-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ecuadorian War of Independence"
     },
     {
       "authors": [
@@ -11414,7 +11940,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "french-revolution",
       "kind": "event",
       "origin": {
@@ -12379,7 +12905,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 4,
       "id": "haitian-revolution-1791-1804",
       "kind": "event",
       "names": [
@@ -15476,6 +16002,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "mexican-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "lane-overridden"
+        ],
+        "note": "A7: the interval was 1800-09-16 to 1821-09-27, which is what Wikidata P580 states for Q68750. The English article \"Mexican War of Independence\", at revision 1371682352, opens \"The Mexican War of Independence (Spanish: Guerra de Independencia de Mexico, 16 September 1810 - 27 September 1821)\", and its infobox gives the same range, so the start is corrected to 1810-09-16 from the article the record cites. The end is unchanged.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mexican War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16881,6 +17440,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "paraguay-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Paraguay campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -17144,6 +17733,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "The Pedrógão Grande fires"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "peruvian-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peruvian War of Independence"
     },
     {
       "authors": [
@@ -20447,6 +21065,67 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "spanish-american-wars-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "atlantic-revolutions",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish American wars of independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "spanish-attempts-to-reconquer-mexico",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish attempts to reconquer Mexico"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -23415,6 +24094,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "venezuelan-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Venezuelan War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -24660,6 +25369,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "argentine-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "assassination-of-miguel-uribe-turbay",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24720,6 +25435,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ayacucho",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24738,6 +25459,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-buceo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-caporetto",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24748,6 +25475,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-chacabuco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "battle-of-domokos",
@@ -24786,6 +25519,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-guayabos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-guayabos",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-guisa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24804,7 +25549,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ica",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-jankau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-junin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -24817,6 +25574,12 @@
     },
     {
       "id": "battle-of-khe-sanh",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -24906,6 +25669,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-rancagua",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-san-carlos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24940,6 +25709,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-suipacha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "battle-of-tannenberg",
@@ -24949,6 +25724,12 @@
     },
     {
       "id": "battle-of-the-downs",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tucuman",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -24979,6 +25760,12 @@
     },
     {
       "id": "battle-of-verdun",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-viluma",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -25044,6 +25831,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "bolivian-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -25066,6 +25859,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "chilean-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "cienfuegos-uprising",
@@ -25104,6 +25903,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "colombian-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "corynthia-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -25134,6 +25939,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "crossing-of-the-andes",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -25144,6 +25955,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "ecuadorian-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "edict-of-restitution",
@@ -25572,7 +26389,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "paraguay-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "peace-of-prague-1635",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "peruvian-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -25752,6 +26581,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "spanish-american-wars-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "tennis-court-oath",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -25795,6 +26630,12 @@
     },
     {
       "id": "united-states-military-campaign-against-cartels",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "venezuelan-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

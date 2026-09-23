@@ -312,6 +312,15 @@
         }
       ]
     },
+    "argentine-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "baring-crisis": {
       "from": "git",
       "versions": [
@@ -352,12 +361,75 @@
         }
       ]
     },
+    "battle-of-ayacucho": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-buceo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-chacabuco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-domokos": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-guayabos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-ica": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-junin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-las-piedras-1811": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -376,6 +448,15 @@
         }
       ]
     },
+    "battle-of-rancagua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-stormberg": {
       "from": "git",
       "versions": [
@@ -391,12 +472,39 @@
         }
       ]
     },
+    "battle-of-suipacha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-tucuman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-velestino": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-viluma": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -458,6 +566,15 @@
         }
       ]
     },
+    "bolivian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "boxer-rebellion": {
       "from": "git",
       "versions": [
@@ -504,12 +621,39 @@
         }
       ]
     },
+    "chilean-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "colombian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "cretan-revolt-of-1897-1898": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "crossing-of-the-andes": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -556,6 +700,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "ecuadorian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -888,6 +1041,15 @@
         }
       ]
     },
+    "mexican-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "panic-of-1893": {
       "from": "git",
       "versions": [
@@ -923,6 +1085,24 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "paraguay-campaign": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "peruvian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -1282,6 +1462,24 @@
         }
       ]
     },
+    "spanish-american-wars-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-attempts-to-reconquer-mexico": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "strangford-treaty-1810": {
       "from": "git",
       "versions": [
@@ -1495,6 +1693,15 @@
             "review"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "venezuelan-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     }

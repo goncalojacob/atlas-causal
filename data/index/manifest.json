@@ -37,13 +37,13 @@
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-4b8a80ca09ca.json",
+      "file": "index/attributes-1700-1799-28c2afd7a803.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-469aa5a77b40.json",
+      "file": "index/attributes-1800-1899-9858ef865219.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-4c219541beb1.json",
+      "file": "index/attributes-place-6bb5165af677.json",
       "from": null,
       "key": "place",
       "to": null
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 180,
+      "count": 201,
       "id": "war"
     }
   ],
@@ -1024,11 +1024,11 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 680,
-    "events": 963,
+    "edges": 682,
+    "events": 986,
     "narratives": 2,
     "offices": 11,
-    "places": 398,
+    "places": 406,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1052,12 +1052,12 @@
       "to": 1699
     },
     {
-      "file": "index/explanations-1700-1799-66456d53f1ca.json",
+      "file": "index/explanations-1700-1799-5f445b53b09e.json",
       "from": 1700,
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-85c2b1b3d4eb.json",
+      "file": "index/explanations-1800-1899-755c4b7ef907.json",
       "from": 1800,
       "to": 1899
     },
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-80d6160202f3",
-    "core": "index/core-132a067b8389.json",
-    "grounds": "index/grounds-0ee2cf0bb710.json",
+    "citers": "index/citers-51160510a438",
+    "core": "index/core-07f89ae1a877.json",
+    "grounds": "index/grounds-829ffd0fc8f3.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-752dbeab5c9f.json",
-    "search": "index/search-c3717506880e.json",
-    "sources": "index/sources-7588e8f65544.json",
-    "territories": "index/territories-1731e78c85f5.json"
+    "review": "index/review-87e4f6669190.json",
+    "search": "index/search-5812d40d42e2.json",
+    "sources": "index/sources-14bcdc90a942.json",
+    "territories": "index/territories-6e8e63a0722e.json"
   },
   "historyShards": [
     {
@@ -1112,21 +1112,21 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-23525cb54865.json",
+      "file": "index/history-event-1800-1899-aa3ff9fdc9c7.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-520f49286221.json",
+      "file": "index/history-event-1900-1999-477478e58799.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-aba2eb1c75df.json",
+      "file": "index/history-event-2000-2099-809b729d496f.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
@@ -1154,28 +1154,28 @@
       "to": 1699
     },
     {
-      "file": "index/history-edge-1700-1799-562937b152e9.json",
+      "file": "index/history-edge-1700-1799-92bcfbc3d41d.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "edge",
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-ff802b2d52f9.json",
+      "file": "index/history-edge-1800-1899-bd5f2be600e2.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-42925df96298.json",
+      "file": "index/history-edge-1900-1999-555547e8fd11.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-e5e6cf6b14b2.json",
+      "file": "index/history-edge-2000-2099-7aea317081e2.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",
@@ -1224,7 +1224,7 @@
       "to": 1799
     },
     {
-      "file": "index/history-actor-1800-1899-a275dfd0e820.json",
+      "file": "index/history-actor-1800-1899-e8a2537ffe15.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "actor",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-a44439ca189e.json",
+      "file": "index/history-place-place-f62a92227254.json",
       "from": null,
       "key": "place",
       "kind": "place",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 680,
-    "explained": 680
+    "active": 682,
+    "explained": 682
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

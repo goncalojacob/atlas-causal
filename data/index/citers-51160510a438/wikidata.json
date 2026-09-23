@@ -1538,6 +1538,12 @@
     },
     {
       "dissent": false,
+      "id": "mexican-war-of-independence--spanish-attempts-to-reconquer-mexico--reacted-to",
+      "kind": "edge",
+      "locator": "Q7573442 P361 (part of) Q1123201"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement--wuchang-uprising--enabled",
       "kind": "edge",
       "locator": "Q339291 P828 (has cause) Q5368776"
@@ -2246,6 +2252,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-war-of-independence",
+      "kind": "event",
+      "locator": "Q617409"
+    },
+    {
+      "dissent": false,
       "id": "armenian-genocide",
       "kind": "event",
       "locator": "Q80034"
@@ -2396,6 +2408,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ayacucho",
+      "kind": "event",
+      "locator": "Q934157"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "Q205379"
@@ -2414,9 +2432,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-buceo",
+      "kind": "event",
+      "locator": "Q2890940"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-caporetto",
       "kind": "event",
       "locator": "Q242644"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chacabuco",
+      "kind": "event",
+      "locator": "Q1425658"
     },
     {
       "dissent": false,
@@ -2450,6 +2480,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-guayabos",
+      "kind": "event",
+      "locator": "Q775606"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-guisa",
       "kind": "event",
       "locator": "Q107261337"
@@ -2474,9 +2510,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ica",
+      "kind": "event",
+      "locator": "Q5722537"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "Q1415925"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-junin",
+      "kind": "event",
+      "locator": "Q1508820"
     },
     {
       "dissent": false,
@@ -2501,6 +2549,12 @@
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "Q118445706"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-piedras-1811",
+      "kind": "event",
+      "locator": "Q2889112"
     },
     {
       "dissent": false,
@@ -2594,6 +2648,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rancagua",
+      "kind": "event",
+      "locator": "Q1310755"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "Q4872265"
@@ -2630,6 +2690,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-suipacha",
+      "kind": "event",
+      "locator": "Q2890073"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
@@ -2654,6 +2720,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tucuman",
+      "kind": "event",
+      "locator": "Q2890270"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
@@ -2669,6 +2741,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "Q130847"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-viluma",
+      "kind": "event",
+      "locator": "Q2890016"
     },
     {
       "dissent": false,
@@ -2741,6 +2819,12 @@
       "id": "bohemian-revolt",
       "kind": "event",
       "locator": "Q1785022"
+    },
+    {
+      "dissent": false,
+      "id": "bolivian-war-of-independence",
+      "kind": "event",
+      "locator": "Q68475"
     },
     {
       "dissent": false,
@@ -2846,6 +2930,12 @@
     },
     {
       "dissent": false,
+      "id": "chilean-war-of-independence",
+      "kind": "event",
+      "locator": "Q1072889"
+    },
+    {
+      "dissent": false,
       "id": "chilembwe-uprising",
       "kind": "event",
       "locator": "Q16056284"
@@ -2891,6 +2981,12 @@
       "id": "colombian-peace-process",
       "kind": "event",
       "locator": "Q5858325"
+    },
+    {
+      "dissent": false,
+      "id": "colombian-war-of-independence",
+      "kind": "event",
+      "locator": "Q3063789"
     },
     {
       "dissent": false,
@@ -2972,6 +3068,12 @@
     },
     {
       "dissent": false,
+      "id": "crossing-of-the-andes",
+      "kind": "event",
+      "locator": "Q968126"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
@@ -3047,6 +3149,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "Q189266"
+    },
+    {
+      "dissent": false,
+      "id": "ecuadorian-war-of-independence",
+      "kind": "event",
+      "locator": "Q5334383"
     },
     {
       "dissent": false,
@@ -3860,6 +3968,12 @@
     },
     {
       "dissent": false,
+      "id": "mexican-war-of-independence",
+      "kind": "event",
+      "locator": "Q68750"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "Q130796"
@@ -4058,6 +4172,12 @@
     },
     {
       "dissent": false,
+      "id": "paraguay-campaign",
+      "kind": "event",
+      "locator": "Q7134668"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-accords",
       "kind": "event",
       "locator": "Q696802"
@@ -4097,6 +4217,12 @@
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "Q1076469"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-war-of-independence",
+      "kind": "event",
+      "locator": "Q68478"
     },
     {
       "dissent": false,
@@ -4562,6 +4688,18 @@
     },
     {
       "dissent": false,
+      "id": "spanish-american-wars-of-independence",
+      "kind": "event",
+      "locator": "Q1123201"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-attempts-to-reconquer-mexico",
+      "kind": "event",
+      "locator": "Q7573442"
+    },
+    {
+      "dissent": false,
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "Q10859"
@@ -4901,6 +5039,12 @@
       "id": "urfa-resistance",
       "kind": "event",
       "locator": "Q4477441"
+    },
+    {
+      "dissent": false,
+      "id": "venezuelan-war-of-independence",
+      "kind": "event",
+      "locator": "Q8934"
     },
     {
       "dissent": false,

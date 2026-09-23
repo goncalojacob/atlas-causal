@@ -828,6 +828,12 @@
             "wikipedia"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -1962,6 +1968,12 @@
             "summary",
             "wikidata",
             "wikipedia"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
           ],
           "on": "2026-09-22"
         }
@@ -4232,6 +4244,12 @@
             "summary",
             "wikidata",
             "wikipedia"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
           ],
           "on": "2026-09-22"
         }
@@ -7300,6 +7318,12 @@
             "wikipedia"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -7330,6 +7354,12 @@
             "summary",
             "wikidata",
             "wikipedia"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
           ],
           "on": "2026-09-22"
         }
