@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import { withBrowser, open, waitFor, named, skip } from './browser.mjs';
 
 const DESK = { width: 1280, height: 900, deviceScaleFactor: 1 };
 const desk = (fn) => withBrowser(fn, { device: DESK });
@@ -92,8 +92,19 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     // opened on one century (M85, A4) and loses now that it opens on all of
     // them. Waiting is how the fact is read where it holds; the assertions are
     // unchanged.
-    await waitFor(page, `return document.querySelectorAll('#timeline rect.bar[data-id]').length > 0
-      && [...document.querySelectorAll('#timeline .layer-barLabels text')].length > 0;`, 'the titles');
+    //
+    // **The wait has to be `named()` and not a count of labels.** This waited
+    // for one label to exist, which the first century satisfies at once while
+    // every later one is still `still loading` — and M78 measured that exact
+    // wait and wrote `named()` to replace it (`docs/m78-flakes.md` §3: "a
+    // count of labels is the same number on either side of a shard landing").
+    // It stayed here because the test was green until the atlas began opening
+    // on every century, and then it went red on the runner twice running with
+    // `End` reaching `fixture-event-deep-1969` where the order read a frame
+    // earlier said `fixture-event-deep-2025`: the packing had moved under it.
+    // `named()` is true only when no bar is still loading, so every shard the
+    // drawn bars need has landed and the packing is the one the walk walks.
+    await waitFor(page, named('#timeline rect.bar[data-id]'), 'every bar to carry its own name');
 
     // Both in one evaluation, off one frame, for the same reason.
     const seen = await page.eval(`const out = {};
