@@ -1850,6 +1850,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cempoala--la-noche-triste--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Cempoala\", revision 1370436634, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cempoala--la-noche-triste--precondition-of",
+      "kind": "edge",
+      "locator": "\"La Noche Triste\", revision 1370626402, § Cortés heads off Spanish punitive expedition"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
@@ -1889,6 +1901,18 @@
       "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Otumba\", revision 1370271351"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
+      "kind": "edge",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Aztecs regroup"
     },
     {
       "dissent": false,
@@ -2627,6 +2651,18 @@
       "id": "fall-of-kabul-2021--republican-insurgency-in-afghanistan--caused",
       "kind": "edge",
       "locator": "\"Fall of Kabul (2021)\", revision 1372101001"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
+      "kind": "edge",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304"
     },
     {
       "dissent": false,
@@ -3482,6 +3518,18 @@
     },
     {
       "dissent": false,
+      "id": "la-noche-triste--battle-of-otumba--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Otumba\", revision 1370271351, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "la-noche-triste--battle-of-otumba--precondition-of",
+      "kind": "edge",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Battle of Otumba"
+    },
+    {
+      "dissent": false,
       "id": "la-violencia--colombian-conflict--precondition-of",
       "kind": "edge",
       "locator": "\"Colombian conflict\", revision 1375841708, § lead and § Background"
@@ -3641,6 +3689,18 @@
       "id": "marco-polo-bridge-incident--second-sino-japanese-war--caused",
       "kind": "edge",
       "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused",
+      "kind": "edge",
+      "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Aztec revolt"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused",
+      "kind": "edge",
+      "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
     },
     {
       "dissent": false,
@@ -4757,6 +4817,18 @@
       "id": "spanish-colonization-of-the-americas--treaty-of-tordesillas-1494--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § Background, on the division of the world"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-aztec-empire--battle-of-cempoala--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Cempoala\", revision 1370436634, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-aztec-empire--battle-of-cempoala--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Otumba\", revision 1370271351, § Background"
     },
     {
       "dissent": false,
@@ -7334,9 +7406,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cempoala",
+      "kind": "event",
+      "locator": "\"Battle of Cempoala\", revision 1370436634"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "\"Battle of Chacabuco\", revision 1373197409"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-colhuacatonco",
+      "kind": "event",
+      "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
     },
     {
       "dissent": false,
@@ -7535,6 +7619,12 @@
       "id": "battle-of-nordlingen-1634",
       "kind": "event",
       "locator": "\"Battle of Nördlingen (1634)\", revision 1373505403"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-otumba",
+      "kind": "event",
+      "locator": "\"Battle of Otumba\", revision 1370271351"
     },
     {
       "dissent": false,
@@ -8972,6 +9062,12 @@
     },
     {
       "dissent": false,
+      "id": "la-noche-triste",
+      "kind": "event",
+      "locator": "\"La Noche Triste\", revision 1370626402"
+    },
+    {
+      "dissent": false,
       "id": "la-violencia",
       "kind": "event",
       "locator": "\"La Violencia\", revision 1373312674"
@@ -9077,6 +9173,12 @@
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "locator": "\"Marco Polo Bridge incident\", revision 1370745067"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-in-the-great-temple-of-tenochtitlan",
+      "kind": "event",
+      "locator": "\"Massacre in the Great Temple of Tenochtitlan\", revision 1375661366"
     },
     {
       "dissent": false,

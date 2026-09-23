@@ -4013,6 +4013,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "from": "battle-of-cempoala",
+      "id": "battle-of-cempoala--la-noche-triste--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "la-noche-triste",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "from": "battle-of-dien-bien-phu",
       "id": "battle-of-dien-bien-phu--geneva-conference--caused",
       "kind": "edge",
@@ -4170,6 +4198,34 @@
       "status": "active",
       "to": "argentine-surrender-in-the-falklands-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-otumba",
+      "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fall-of-tenochtitlan",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -8153,6 +8209,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "from": "fall-of-tenochtitlan",
+      "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-colhuacatonco",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "from": "february-revolution",
       "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
       "kind": "edge",
@@ -11444,6 +11528,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "la-noche-triste",
+      "id": "la-noche-triste--battle-of-otumba--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-otumba",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "leech-2009-beyond-bogota"
       ],
@@ -12275,6 +12387,34 @@
       "revised": null,
       "status": "active",
       "to": "second-sino-japanese-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "massacre-in-the-great-temple-of-tenochtitlan",
+      "id": "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "la-noche-triste",
       "type": "caused"
     },
     {
@@ -17158,6 +17298,34 @@
       "status": "active",
       "to": "treaty-of-tordesillas-1494",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "spanish-conquest-of-the-aztec-empire",
+      "id": "spanish-conquest-of-the-aztec-empire--battle-of-cempoala--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-cempoala",
+      "type": "precondition-of"
     },
     {
       "authors": [

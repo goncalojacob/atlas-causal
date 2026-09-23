@@ -25,7 +25,7 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-7cc5010c8013.json",
+      "file": "index/attributes-1500-1599-b712478ff954.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-7244daa475b8.json",
+      "file": "index/attributes-place-5048c4d74366.json",
       "from": null,
       "key": "place",
       "to": null
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 260,
+      "count": 264,
       "id": "war"
     }
   ],
@@ -1024,11 +1024,11 @@
   ],
   "counts": {
     "actors": 2698,
-    "edges": 805,
-    "events": 1066,
+    "edges": 811,
+    "events": 1071,
     "narratives": 2,
     "offices": 11,
-    "places": 448,
+    "places": 450,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1042,7 +1042,7 @@
       "to": 1499
     },
     {
-      "file": "index/explanations-1500-1599-241c151a1fe1.json",
+      "file": "index/explanations-1500-1599-f1c046edc2b8.json",
       "from": 1500,
       "to": 1599
     },
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-1d01825de5f7",
-    "core": "index/core-4b13a5dabd3d.json",
-    "grounds": "index/grounds-b4f7f0ec6483.json",
+    "citers": "index/citers-6648ff040e5e",
+    "core": "index/core-514c007a6057.json",
+    "grounds": "index/grounds-4d3ffc9470f0.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-ceb60238f602.json",
-    "search": "index/search-041dcabdba06.json",
-    "sources": "index/sources-cb83f98a8f99.json",
-    "territories": "index/territories-225031e6ad2e.json"
+    "review": "index/review-a1b679205e19.json",
+    "search": "index/search-21c7e00b8477.json",
+    "sources": "index/sources-d422cb2ec2e3.json",
+    "territories": "index/territories-5ae641943819.json"
   },
   "historyShards": [
     {
@@ -1091,7 +1091,7 @@
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-31c0d7b71f6c.json",
+      "file": "index/history-event-1500-1599-9f0d8858d8bf.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
@@ -1140,7 +1140,7 @@
       "to": 1499
     },
     {
-      "file": "index/history-edge-1500-1599-cfa7943f47a6.json",
+      "file": "index/history-edge-1500-1599-49f44fc0dd36.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "edge",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-f9e74fb01f2d.json",
+      "file": "index/history-place-place-8bc5ae42b744.json",
       "from": null,
       "key": "place",
       "kind": "place",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 805,
-    "explained": 805
+    "active": 811,
+    "explained": 811
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

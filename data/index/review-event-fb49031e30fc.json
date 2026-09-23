@@ -5935,6 +5935,39 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
+      "id": "battle-of-cempoala",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-aztec-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one: the item carries no P625 of its own. The `cempoala` record written beside it takes Q1053364's own point and name.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cempoala"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "id": "battle-of-chacabuco",
       "kind": "event",
       "origin": {
@@ -5955,6 +5988,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chacabuco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-colhuacatonco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "fall-of-tenochtitlan",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "The item's own P625, -99.13528/19.44339, is 1.1 km from this atlas's `tenochtitlan` and inside the same city: the cited article, revision 1370437482, calls Colhuacatonco a neighbourhood of the city under siege. A place is written once however many events happen there, so the event points at the city rather than at a district record nothing else would use.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Colhuacatonco"
     },
     {
       "authors": [
@@ -7094,6 +7160,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Nördlingen (1634)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "battle-of-otumba",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-aztec-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The `otompan` record written beside it takes Q1650771's own point and names; the cited article, revision 1370271351, puts the battle 'on the plain of Temalcatitlán, near modern-day Otumba'.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Otumba"
     },
     {
       "authors": [
@@ -12057,6 +12156,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "fall-of-tenochtitlan",
       "kind": "event",
       "origin": {
@@ -16446,6 +16546,39 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
+      "id": "la-noche-triste",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-aztec-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "The item's own P625, -109.23457/30.66411, is in Sonora, some 1,400 km from the Valley of Mexico, and is refused rather than read: A12's order puts the item's own point first but does not ask a run to place an event where no account of it puts it. The cited article, revision 1370626402, says the Spanish 'were driven out of the Mexica capital, Tenochtitlan', and that city is a record this atlas already holds. No coordinate was invented; the point is `tenochtitlan`'s own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "La Noche Triste"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -17362,6 +17495,38 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Marco Polo Bridge incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "massacre-in-the-great-temple-of-tenochtitlan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-aztec-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P625 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The item's point, -99.131388888/19.435, is this atlas's `tenochtitlan` to eight decimals, and its P276 is the Templo Mayor, which stood in that city: the mechanical rule and the named place give the same ground.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacre in the Great Temple of Tenochtitlan"
     },
     {
       "authors": [
@@ -23467,7 +23632,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "spanish-conquest-of-the-aztec-empire",
       "kind": "event",
       "origin": {
@@ -28608,12 +28773,6 @@
     },
     {
       "id": "fall-of-maximilien-robespierre",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "fall-of-tenochtitlan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

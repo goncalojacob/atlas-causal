@@ -2540,9 +2540,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cempoala",
+      "kind": "event",
+      "locator": "Q97610233"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "Q1425658"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-colhuacatonco",
+      "kind": "event",
+      "locator": "Q112811996"
     },
     {
       "dissent": false,
@@ -2747,6 +2759,12 @@
       "id": "battle-of-nordlingen-1634",
       "kind": "event",
       "locator": "Q312212"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-otumba",
+      "kind": "event",
+      "locator": "Q2888038"
     },
     {
       "dissent": false,
@@ -4136,6 +4154,12 @@
     },
     {
       "dissent": false,
+      "id": "la-noche-triste",
+      "kind": "event",
+      "locator": "Q1308854"
+    },
+    {
+      "dissent": false,
       "id": "la-violencia",
       "kind": "event",
       "locator": "Q185407"
@@ -4223,6 +4247,12 @@
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "locator": "Q219230"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-in-the-great-temple-of-tenochtitlan",
+      "kind": "event",
+      "locator": "Q1131442"
     },
     {
       "dissent": false,
