@@ -1044,7 +1044,43 @@
     "Q234364",
     "Q217925",
     "Q189503",
-    "Q3108868"
+    "Q3108868",
+    "Q1123201",
+    "Q68750",
+    "Q934157",
+    "Q617409",
+    "Q68478",
+    "Q1425658",
+    "Q1072889",
+    "Q8934",
+    "Q1508820",
+    "Q3063789",
+    "Q68475",
+    "Q968126",
+    "Q1310755",
+    "Q2889112",
+    "Q5334383",
+    "Q2890016",
+    "Q2890073",
+    "Q2890270",
+    "Q7573442",
+    "Q2890940",
+    "Q5722537",
+    "Q775606",
+    "Q7134668",
+    "Q1335",
+    "Q207973",
+    "Q208186",
+    "Q233917",
+    "Q2887",
+    "Q44255",
+    "Q4582",
+    "Q504215",
+    "Q717",
+    "Q736",
+    "Q750",
+    "Q77",
+    "Q96"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1239,7 +1275,11 @@
     "Q1192894": "europe",
     "Q206979": "europe",
     "Q15784403": "europe",
-    "Q3108868": "europe"
+    "Q3108868": "europe",
+    "Q1123201": "americas",
+    "Q8934": "americas",
+    "Q775606": "americas",
+    "Q7134668": "americas"
   },
   "queries": [
     {
@@ -4605,6 +4645,47 @@
       "kind": "place",
       "label": "square",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “open public spaces in cities or towns … often located at the junction of two or more thoroughfares”. Carried by Q189503, the place de la Concorde, and Q217925, the Champ de Mars."
+    },
+    "Q1192114": {
+      "kind": "event",
+      "category": "war",
+      "label": "military maneuver",
+      "note": "Added in M42b batch 7, the Spanish American wars of independence, from the class the item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “organized movement of troops during a combat mission” and makes it a subclass of Q1799072, method; data/categories.json’s “war” is “a war, a campaign, a battle or a siege: organised armed force between polities”, which a troop movement during a combat mission is. Carried by Q968126, the Crossing of the Andes."
+    },
+    "Q861184": {
+      "kind": "place",
+      "label": "department of Peru",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first level administrative subdivision of Peru”."
+    },
+    "Q250050": {
+      "kind": "place",
+      "label": "department of Bolivia",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first-level administrative subdivision of Bolivia”."
+    },
+    "Q5770918": {
+      "kind": "place",
+      "label": "city of Argentina",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “administrative territorial entity of Argentina”."
+    },
+    "Q108178728": {
+      "kind": "place",
+      "label": "national capital",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “capital of a sovereign state”."
+    },
+    "Q51929311": {
+      "kind": "place",
+      "label": "largest city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city which has the greatest population in a country”."
+    },
+    "Q1422929": {
+      "kind": "place",
+      "label": "primate city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “disproportionately large city in its country or region”."
+    },
+    "Q1637706": {
+      "kind": "place",
+      "label": "million city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city with a population of more than 1,000,000”."
     }
   },
   "reconcile": true

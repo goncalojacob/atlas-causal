@@ -889,3 +889,57 @@ point for it. Nor does the item name a participant: `P710` is empty, and the
 import writes identity and never an actor line. It is filed where its date and
 its subject put it — 29 October 1956, inside the revolution's own span — and
 what it is missing is what the sources it was built from do not carry.
+
+## M42b batch 7 — the Spanish American wars of independence
+
+*23 September, on the branch `m42b`. The batch itself — what was swept,
+imported, placed and connected — is in `docs/m42b-pool.md` → "Batch 7". What
+belongs here is the thirteen records A1 exists for.*
+
+**Thirteen of the batch's twenty-three name neither an actor nor a place**,
+and the reason is one reason with three faces. The import writes identity and
+never an actor line, so `actors` is empty on every record it creates; A9's
+place chain is what decides the rest, and for these thirteen it runs out.
+
+**Five are wars whose only located thing is their modern country, and this
+atlas holds that country as an *actor* and not as a place.**
+`venezuelan-war-of-independence` (`P276` `Q717`), `bolivian-war-of-independence`
+(`Q750`), `ecuadorian-war-of-independence` (`P17` `Q736`),
+`spanish-attempts-to-reconquer-mexico` (`P17` `Q96`) and
+`paraguay-campaign` (no location at all): the import matched `Q717`, `Q750`,
+`Q736`, `Q77` and `Q96` to the actor records `venezuela`, `bolivia`,
+`ecuador`, `uruguay` and `mexico` and enriched their sitelinks, which is the
+additive rule working exactly as written — and left no place for the events to
+point at. Argentina, Chile and Colombia are the counter-case: earlier batches
+left `argentina-q414`, `chile-q298` and `colombia-q739` as place records
+beside the actors of the same name, so `argentine-war-of-independence`,
+`chilean-war-of-independence` and `colombian-war-of-independence` are placed
+and these five are not. **Deviation 1213** — it is one rule producing two
+answers for the same shape of fact, and a fire that means to close it should
+close it for the whole corpus rather than for one vein.
+
+**Four have a located thing that is a state or a supranational region, which
+is not a place of this atlas at all.** `mexican-war-of-independence` names
+`Q19464773`, a UN subregion whose own point is in Alberta, and `Q80702`, the
+Spanish Empire, whose point is Madrid (**deviation 1212**, and the reason that
+record carries a lane the run wrote over the import's);
+`peruvian-war-of-independence` names `Q211435`, the Viceroyalty of Peru;
+`spanish-american-wars-of-independence` names `Q653884`, Hispanic America,
+whose point is Mexico City — a point for half a hemisphere, which the run
+refused rather than draw a thirty-year war across two continents at one
+capital; `crossing-of-the-andes` names only `Q414`, Argentina, and is a march
+across a mountain range in any case.
+
+**Four carry no location Wikidata knows of.** `battle-of-guayabos`,
+`battle-of-las-piedras-1811`, `battle-of-suipacha` and
+`colombian-war-of-independence`: no `P276`, no `P131`, and either no `P17` or
+one that resolves to an actor. All four take the `americas` lane — three
+derived from a point, `battle-of-guayabos` and `paraguay-campaign` from the
+name in `data/imports/wikidata-seeds.json` — and the atlas does not take a
+place out of prose. `battle-of-guayabos` is the thinnest of them: it has no
+English article either, so it is the one record of this batch whose summary is
+still the import's placeholder.
+
+Every one of the thirteen is filed where its date and its subject put it,
+inside `spanish-american-wars-of-independence` or a national war inside it,
+and what each is missing is what the sources it was built from do not carry.

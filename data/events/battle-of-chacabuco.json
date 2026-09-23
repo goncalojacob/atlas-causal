@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-chacabuco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1425658",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Chacabuco",
+    "pt": "Batalha de Chacabuco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1425658"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chacabuco\", revision 1373197409"
+    }
+  ],
+  "title": "Battle of Chacabuco",
+  "summary": "The English Wikipedia article \"Battle of Chacabuco\", at revision 1373197409, opens: \"The Battle of Chacabuco, fought during the Chilean War of Independence, took place on February 12, 1817. The Army of the Andes, from the United Provinces of the Río de la Plata and led by Captain–General José de San Martín, defeated a Spanish force commanded by Rafael Maroto. This victory was a significant defeat for the Captaincy General of Chile, the royalist government established after the division of the Viceroyalty of Peru.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1425658, imported by tools/import/wikidata.mjs. The item's own description reads \"1817 battle of the Spanish American wars of independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1817,
+    "date": "1817-02-12"
+  },
+  "place": "santiago",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "argentine-war-of-independence",
+    "chilean-war-of-independence"
+  ]
+}

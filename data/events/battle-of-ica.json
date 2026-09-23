@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ica",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5722537",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Ica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ica\", revision 1370443527"
+    }
+  ],
+  "title": "Battle of Ica",
+  "summary": "The English Wikipedia article \"Battle of Ica\", at revision 1370443527, opens: \"The Battle of Ica or Disaster at Macacona was a battle during the Peruvian War of Independence, which occurred on 7 April 1822 at the Hacienda Macacona near Ica, between the Liberation Army of Peru under command of Peruvian General Domingo Tristán, and the Spanish Royal Army under Gen. Brigadier José de Canterac. The Patriot army was decisively routed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5722537, imported by tools/import/wikidata.mjs. The item's own description reads \"1822 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-04-07"
+  },
+  "place": "department-of-ica",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peruvian-war-of-independence"
+}

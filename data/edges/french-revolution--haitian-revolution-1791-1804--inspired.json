@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "french-revolution--haitian-revolution-1791-1804--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Revolution\", revision 1376092092, § Lasting change"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian Revolution\", revision 1376092092, § Effects of the French Revolution"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "haitian-revolution-1791-1804",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The English article states the link in its own words under \"Lasting change\": \"The Enlightenment ideals and the initiation of the French Revolution were enough to inspire the Haitian Revolution, which evolved into the most successful and comprehensive slave rebellion in history\", and in the sentence before it, \"The call for modification of society was influenced by the revolution in France, but once the hope for change found a place in the hearts of the Haitian people, there was no stopping the radical reformation that was occurring.\" The section \"Effects of the French Revolution\" carries the same claim in detail: the Declaration of the Rights of Man and of the Citizen \"declar[ed] all men free and equal\" and was \"ambiguous as to whether this equality applied to women, slaves, or citizens of the colonies, and thus influenced the desire for freedom and equality in Saint-Domingue.\" The type is `inspired` because that is the verb the article uses and the limit of what it asserts: the same section says \"The Revolution in Haiti did not wait on the Revolution in France\", which is the article refusing the stronger claim. Probable, because the warrant is Wikipedia and not a historian's argument; Wikidata carries no causal statement between Q6534 and Q689128 at all, so this edge has one author where the rest of this branch's have two.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-junin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1508820",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Junín",
+    "pt": "Batalha de Junín"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1508820"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Junín\", revision 1370266471"
+    }
+  ],
+  "title": "Battle of Junín",
+  "summary": "The English Wikipedia article \"Battle of Junín\", at revision 1370266471, opens: \"The Battle of Junín was a large cavalry engagement of the Peruvian War of Independence, fought in the highlands of the Junín Region on 6 August 1824. The preceding February the royalists had regained control of Lima, and having regrouped in Trujillo, Simón Bolívar in June led his rebel forces south to confront the Spanish under Field Marshal José de Canterac. The two armies met on the Plain of Junín in the Bombon Plateau, northwest of the Jauja Valley.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1508820, imported by tools/import/wikidata.mjs. The item's own description reads \"1825 battle during the Peruvian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1824,
+    "date": "1824-08-06"
+  },
+  "place": "department-of-junin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peruvian-war-of-independence"
+}

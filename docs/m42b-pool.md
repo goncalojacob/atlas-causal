@@ -1447,68 +1447,366 @@ would be the guess the table prevents.
 again, not new numbers; the sections above say so where they happen. Batch 6
 claims two deviations and no more.
 
+## Batch 7 — the Spanish American wars of independence, and the Americas' 19th century
+
+*23 September, the seventh fire. Taken from **the vein the sixth fire's note
+named**: `Q1123201`, the Spanish American wars of independence, 1808–1833, 45
+sitelinks, which Wikidata makes `part of` `Q3108868`, the Atlantic Revolutions
+umbrella batch 6 wrote. It files under an umbrella that already exists, so it
+costs no main event, and its own inverse `part of` vein is the Americas' 19th
+century — the cell the brief's ordering points at, at 15 active events against
+Europe's 12 and the lane's own 140.*
+
+**Two merges before anything was imported.** `origin/m0` (M85) and
+`origin/m42` (through its batch 38) were both ahead of this branch and both
+came across, `data/index/` dropped and rebuilt rather than merged. The merge is
+why this batch's *before* column reads 726 active and not batch 6's 722.
+
+### The Haitian edge, which the sixth fire could not write
+
+**The first thing this fire did, and the sixth fire's note said it should be.**
+`api.php` is still rate-limiting this sandbox, but the REST `page/html`
+endpoint answered, so the article's **body** was readable for the first time
+since batch 5. The warrant is there and it is explicit. Under *Lasting change*
+the article says: *"The Enlightenment ideals and the initiation of the French
+Revolution were enough to inspire the Haitian Revolution, which evolved into
+the most successful and comprehensive slave rebellion in history"*, and the
+sentence before it, *"The call for modification of society was influenced by
+the revolution in France"*; the section *Effects of the French Revolution*
+carries the same claim in detail, with the Declaration of the Rights of Man
+*"thus influenc[ing] the desire for freedom and equality in Saint-Domingue"*.
+
+So `french-revolution --inspired--> haitian-revolution-1791-1804` is written,
+`probable`, citing *"Haitian Revolution"* at revision **1376092092** with both
+sections as locators. The type is `inspired` because that is the article's own
+verb and the limit of what it asserts — the same section says *"The Revolution
+in Haiti did not wait on the Revolution in France"*, which is the article
+refusing the stronger claim.
+
+**It moved the component by two, not by twenty.** The sixth fire's note
+estimated twenty; the note was wrong about its own arithmetic, and it is worth
+writing down why. `parent` is a display fact and never enters the adjacency, so
+the eighteen episodes the French Revolution took as children in batch 6 are not
+attached to it by any edge. By edges, `french-revolution` sat in a component of
+**two**. The edge joined that two to the 521. **Deviation 1214**: a note that
+estimates a component move should count edges and not children, because those
+are the two different things the atlas is careful to keep apart everywhere else.
+
+**This edge has one author where the rest of this branch's have two.**
+Wikidata carries no causal statement between `Q6534` and `Q689128` at all — no
+`P828`, no `P1478`, no `P1542` — so the `wikidata` citation every other edge on
+this branch carries beside its `wikipedia-en` one has nothing to cite. M72's
+second-author column reads one for this edge and the record says so in its own
+explanation rather than in a footnote here.
+
+### What arrived
+
+Ranked by sitelinks, ties by item id, the same three tests the earlier batches
+use: an item enters only if it is `part of` something this atlas holds or is
+the umbrella the cell lacks, its span sits inside the parent's, and its lane is
+this partition's. The sweep on `Q1123201` returned **40 rows and this atlas
+held none of them**; twenty-three were taken, down to five sitelinks.
+
+| the record | sitelinks | filed under | placed at |
+| --- | --- | --- | --- |
+| `spanish-american-wars-of-independence` | 45 | `atlantic-revolutions` | placeless, see below |
+| `mexican-war-of-independence` | 54 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-ayacucho` | 32 | `peruvian-war-of-independence` | `ayacucho` |
+| `argentine-war-of-independence` | 30 | `spanish-american-wars-of-independence` | `argentina-q414` (already here) |
+| `peruvian-war-of-independence` | 25 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-chacabuco` | 21 | `argentine-war-of-independence`, `chilean-war-of-independence` | `santiago` |
+| `chilean-war-of-independence` | 20 | `spanish-american-wars-of-independence` | `chile-q298` (already here) |
+| `venezuelan-war-of-independence` | 20 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-junin` | 18 | `peruvian-war-of-independence` | `department-of-junin` |
+| `colombian-war-of-independence` | 18 | `spanish-american-wars-of-independence` | placeless, see below |
+| `bolivian-war-of-independence` | 18 | `spanish-american-wars-of-independence` | placeless, see below |
+| `crossing-of-the-andes` | 16 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-rancagua` | 13 | `spanish-american-wars-of-independence` | `rancagua` |
+| `battle-of-las-piedras-1811` | 11 | `spanish-american-wars-of-independence` | placeless, see below |
+| `ecuadorian-war-of-independence` | 10 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-viluma` | 8 | `spanish-american-wars-of-independence` | `cochabamba-department` |
+| `battle-of-suipacha` | 8 | `bolivian-war-of-independence`, `argentine-war-of-independence` | placeless, see below |
+| `battle-of-tucuman` | 8 | `argentine-war-of-independence` | `san-miguel-de-tucuman` |
+| `spanish-attempts-to-reconquer-mexico` | 7 | `spanish-american-wars-of-independence` | placeless, see below |
+| `battle-of-buceo` | 6 | `spanish-american-wars-of-independence` | `montevideo` |
+| `battle-of-ica` | 5 | `peruvian-war-of-independence` | `department-of-ica` |
+| `battle-of-guayabos` | 5 | `spanish-american-wars-of-independence` | placeless, see below |
+| `paraguay-campaign` | 5 | `spanish-american-wars-of-independence` | placeless, see below |
+
+**Twenty-three events, twenty-two summaries.** Every one but
+`battle-of-guayabos` has an English article, so every one but that carries the
+cached lead at a named revision in place of the import's placeholder, with the
+`wikipedia-en` citation beside it and the `summary-from-lead` flag.
+`battle-of-guayabos` has no English Wikipedia article at all — only a Spanish
+one — so it keeps the placeholder and the `summary-imported` warning A12's C1
+asks to be left standing rather than papered over.
+
+### Why the main count did not rise
+
+**243 before, 243 after.** One umbrella arrived and it cost nothing, because
+`Q1123201` is `part of` `Q3108868` and the Atlantic Revolutions were already
+here: `spanish-american-wars-of-independence` was filed the moment it was
+written. The other twenty-two were never main either — twelve under the wars
+umbrella, ten under a national war inside it. This is the second batch running
+where the period umbrella pays for itself, and the reason is the same: an
+umbrella that files under an umbrella is free.
+
+### The batch was imported three times, and the third time is the one on disk
+
+**Deviation 1215.** The import walks places before events *within a batch
+slice*, and the slice cap is 25. The first run put the twenty-three events in
+before any place item existed, so eight of them came out placeless that should
+not have been; the second run hit the same cap from the other side. The records
+were deleted, the cursor in `data/imports/wikidata-state.json` was rewound for
+exactly those items, the eight place items were imported on their own, and the
+events were written last. **Nothing of the first two runs is on this branch and
+nothing was pushed between them** — the batch that is here is the third. A fire
+that means to import a vein and its places together should import the places
+first and on purpose, not rely on the slice ordering.
+
+### Places (A9)
+
+**Eight placed, fifteen placeless; five new place records.**
+`montevideo` at `city`, `san-miguel-de-tucuman` at `city`, `ayacucho`,
+`rancagua`, `santiago` at `city`, and `department-of-junin`,
+`department-of-ica` and `cochabamba-department` as the first-level
+subdivisions they are. `argentina-q414` and `chile-q298` were reused.
+
+The corrected order — the item's own `P625` first, then `P276`, `P131`,
+`P17` — is what placed them, and `docs/m67-umbrellas.md` § "M42b batch 7"
+argues for each of the thirteen that name neither an actor nor a place, which
+is what M67 A1 asks. Two of those arguments are deviations and belong here too.
+
+**Deviation 1212 — a colonial empire's point is its metropole.**
+`mexican-war-of-independence` came out of the import in the **`europe` lane**.
+Its item carries no `P625`; its `P276` is `Q19464773`, a UN subregion whose own
+point is in Alberta; its `P17` is `Q80702`, the **Spanish Empire**, whose point
+is Madrid. `laneFor()`'s country fallback took that point and derived Europe,
+which is where an empire's capital is and not where its war was fought. The run
+wrote `region: "americas"` over it with a `regionNote` saying so. **Every
+record whose only located thing is the polity that ruled it is exposed to
+this**, which is most of a colonial corpus; the fix is in the tool and not in
+the records, and this fire did not make it.
+
+**Deviation 1213 — a country is a place on three records and an actor on five.**
+`Q717`, `Q750`, `Q736`, `Q77` and `Q96` matched the *actor* records
+`venezuela`, `bolivia`, `ecuador`, `uruguay` and `mexico`, so the import
+enriched their sitelinks and wrote no place; `Q414`, `Q298` and `Q739` are held
+as the place records `argentina-q414`, `chile-q298` and `colombia-q739` beside
+actors of the same name, so the wars that name those are placed. One rule, two
+answers, for the same shape of fact. None of the three place records carries a
+`precision` either, so M80's `country` precision is not on them.
+
+### The edges (A5, M72)
+
+**Two, and the batch says plainly that it wanted more.** The Haitian edge above,
+and one inside the vein:
+
+- `mexican-war-of-independence --reacted-to--> spanish-attempts-to-reconquer-mexico`
+  — the attempts' lead, revision 1370748284, calls them *"efforts by the
+  Spanish government to regain possession of its former colony of New Spain,
+  resulting in episodes of war comprised in clashes between the newly born
+  Mexican nation and Spain"*, and dates the first of them to 1821, the year the
+  war ended. `probable`, with the Wikidata `P361` beside it.
+
+**Nothing in the vein's twenty-three leads names an event this atlas already
+holds.** That was checked mechanically, every lead against every active title,
+and it returned nothing — the same finding batches 1, 3, 5 and 6 wrote down,
+and the same reason: the episodes of one war are chronological to each other
+and their leads argue no causation between them.
+
+**The one body read this fire could afford did not yield an edge either, and
+that is a finding worth keeping.** The Spanish American wars article, revision
+1375550213, says *"Events in Spanish America transpired in the wake of the
+successful Haitian Revolution and transition to independence in Brazil"* — and
+this atlas holds both `haitian-revolution-1791-1804` and
+`independence-of-brazil-1822`. **No edge was written from it.** "In the wake
+of" is sequence, the same paragraph names *"a more direct cause"* elsewhere
+(the Cortes of Cádiz, which the atlas does not hold), and the sentence about
+Brazil asserts a **common** trigger — Napoleon's invasion of the Iberian
+Peninsula — rather than a link between the two independences. None of the five
+edge types says "these two had the same cause", and inventing a reading that
+one of them does would be exactly the paraphrase batch 6 refused to write. The
+Cortes of Cádiz is the record that would join this vein to the 523, and it is
+the first thing the next fire should import.
+
+- `crossing-of-the-andes --enabled--> chilean-war-of-independence` **was
+  written and then removed**: settling the Chilean war's span to 1812–1827
+  (below) put the crossing after its start, and rule 4's arrow of time refuses
+  an edge whose `from` begins after its `to`. The claim is fine and the shape
+  is wrong; the crossing is inside that war, which is what the filing already
+  says.
+
+### Intervals (A7, A12 C3)
+
+Three were wrong and all three are settled, each from a source the record
+already cites and each with the note on the record saying what changed from
+what and why.
+
+- **`mexican-war-of-independence`, 1800 → 1810.** Wikidata's `P580` for
+  `Q68750` reads 1800-09-16, which is a decade early. The English article,
+  revision **1371682352**, opens *"The Mexican War of Independence (Spanish:
+  Guerra de Independencia de México, 16 September 1810 – 27 September 1821)"*
+  and its infobox gives the same range. A7 exactly: the start is corrected from
+  the article the record cites, the end is untouched.
+- **`argentine-war-of-independence`, end 1816 → 1825.** `P582` gave 1816, the
+  year independence was *declared*; the article, revision **1375018429**, opens
+  *"a set of military events from 1810 to 1825"*. A widening, which is what A7
+  is for.
+- **`chilean-war-of-independence`, 1827 with no end → 1812–1827.** This one is
+  not A7 and the record says so. `P580` alone gave 1827; the article's lead
+  states no years at all, so A7 does not reach it. But the **same item's own
+  English description**, which the record cites and its summary quotes, reads
+  *"1812–1827 war between patriots and royalists"*, and this atlas holds
+  battles of that war at 1814 and 1817. The span is settled from the cited item
+  against itself — both endpoints are the item's own — and a `review.note` asks
+  a reviewer for the article's infobox, which this fire could not fetch. It
+  mattered structurally: at 1827 with no end the war was not dated inside its
+  umbrella and could not hold `battle-of-chacabuco` as a second parent.
+
+### Second parents (A8), and the one rule they have to obey
+
+Four battles carry two parents and no battle carries three.
+`battle-of-chacabuco` is under the Argentine and the Chilean wars;
+`battle-of-suipacha` under the Bolivian and the Argentine; `battle-of-ayacucho`,
+`battle-of-junin` and `battle-of-ica` under the Peruvian war alone.
+
+**Every one of them first had `spanish-american-wars-of-independence` as well,
+and every one of them lost it.** `tests/m42-filing.test.mjs` holds that no
+parent of an event is reachable through another of its parents, and the wars
+umbrella is reachable through every national war. **Deviation 1216**: A8 says
+"every umbrella whose span and subject fit", and the filing rule that actually
+holds is "every *nearest* umbrella" — a grandparent listed beside a parent is
+not a second reading of the record, it is the same reading written twice.
+
+### Where the numbers went
+
+| | before | after |
+| --- | --- | --- |
+| active events | 726 | **749** |
+| **main** | **243** | **243** |
+| filed under a parent | 483 | 506 |
+| active edges | 680 | 682 |
+| **largest connected component** | 521 | **523** |
+| components | 165 | 186 |
+| events with no edge at all | 135 | 158 |
+| place records | — | +5 |
+
+### Per lane and per century (A10), after this batch
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 3 / 2 | — | — | 4 / 4 | 7 / 6 |
+| 16th c. | 6 / 1 | — | — | 3 / 3 | 9 / 4 |
+| 17th c. | 21 / 2 | — | — | 6 / 6 | 27 / 8 |
+| 18th c. | 20 / 2 | — | — | 3 / 2 | 23 / 4 |
+| 19th c. | 12 / 9 | 19 / 1 | 7 / 7 | **38 / 11** | 76 / 28 |
+| 20th c. | 238 / 63 | 57 / 22 | 100 / 45 | 89 / 31 | 484 / 161 |
+| 21st c. | 52 / 7 | 26 / 7 | 23 / 15 | 20 / 1 | 121 / 30 |
+| no century | 1 / 1 | 1 / 1 | — | — | 2 / 2 |
+| **all** | **353 / 87** | **103 / 31** | **130 / 67** | **163 / 58** | **749 / 243** |
+
+**The Americas' 19th century went from 15 active to 38** and is no longer the
+lane's thin cell; the Americas lane as a whole went from 140 to 163 and is
+still the smallest of the four. Europe before 1900 is untouched at 62 active.
+
+### What was refused, and why
+
+- **Seventeen of the forty rows the sweep returned**, all at four sitelinks or
+  fewer: `Q5778763` Battle of Tumusla, `Q10858446` Battle of Ibarra,
+  `Q2889067` Second Battle of La Puerta, `Q5722315` Battle of Cerro de Pasco,
+  `Q5722708` Battle of Moquegua, `Q5723065` Battle of Torata, `Q5742751`
+  Campaigns of the South, `Q115454857` Pronunciamiento of Riego, `Q10858436`
+  Battle of Chimbo, `Q10858449` Battle of Mocha, `Q3119146` war to the death,
+  `Q6123901` Second Siege of Callao, `Q52696693` Los Andes vs Prueba,
+  `Q55196779` British intervention in Spanish American independence,
+  `Q5722589` Batalla de La Florida, `Q5853567` Expulsion of Spaniards from
+  America and `Q5915146` Independence of Bolivia. Nothing is wrong with them;
+  the batch stopped where the sitelinks did, and they are the next fire's if it
+  wants the same vein deeper. `Q7806313`, a *timeline of* the Argentine war, is
+  an article about an article and is refused on its face.
+- **`Q653884` Hispanic America, `Q19464773` Northern America and Mexico,
+  `Q211435` the Viceroyalty of Peru and `Q80702` the Spanish Empire** were not
+  written as places, for the reasons under Places above: two are states and two
+  are regions whose points stand for half a hemisphere.
+- **`Q18` South America** was not written as a place either. It would have won
+  the A9 order on `argentine-war-of-independence` over the `Q414` the record
+  now has, which is a continent displacing a country.
+
+### The classes and lanes this batch decided
+
+Eight rows added to `data/imports/wikidata-seeds.json` → `classes`, every one
+with the gloss read off the class item over the network rather than guessed:
+`Q1192114` *military maneuver* as an event of category `war` (the Crossing of
+the Andes), and `Q861184` *department of Peru*, `Q250050` *department of
+Bolivia*, `Q5770918` *city of Argentina*, `Q108178728` *national capital*,
+`Q51929311` *largest city*, `Q1422929` *primate city* and `Q1637706` *million
+city* as places. Four lanes were named in `lanes`, all `americas`: `Q1123201`,
+`Q8934`, `Q775606` and `Q7134668`, which between them carry no located thing
+at all.
+
 ## Where the run stands, for the fire that picks it up
 
-*22 September, after batch 6.*
-
-*The check is **green** on this branch's head, `835afd04`, run 1461.*
+*23 September, after batch 7.*
 
 | | |
 | --- | --- |
-| corpus | **722 active** |
+| corpus | **749 active** |
 | **main** | **243** — the count the next batch must not raise |
-| **largest connected component** | **517** |
-| components | 165 |
-| events with no edge at all | 135 |
-| Europe before 1900 | 63 active, 17 main |
-| the `americas` lane | **140 active, 58 main** |
+| **largest connected component** | **523** |
+| components | 186 |
+| events with no edge at all | 158 |
+| Europe before 1900 | 62 active, 16 main |
+| the `americas` lane | **163 active, 58 main** |
 | the thinnest cells left | the Americas' 16th and 18th (3 each), Europe's 15th (3) |
 
 **What the next fire should weigh, in order:**
 
-- **The Haitian edge first, if the rate limit has lifted.** Batch 6 left
-  `french-revolution --> haitian-revolution-1791-1804` unwritten because the
-  only warrant it could reach was this atlas's own paraphrase: the article's
-  lead does not state the link and `api.php` and the REST `page/html`
-  endpoint answered 429 all fire. One sourced edge read off that article's
-  body joins a cluster of twenty to the 517, which is the largest single move
-  available anywhere in this partition. Try `page/html` before anything else
-  and give up on it quickly if it is still 429.
-- **`Q1123201`, the Spanish American wars of independence** (1808–1833, 45
-  sitelinks), is the best row left and it is free: Wikidata makes it `part of`
-  `Q3108868`, the Atlantic Revolutions umbrella batch 6 wrote, so it files
-  under an umbrella that already exists and **costs no main event**. Its own
-  inverse `part of` vein is the Americas' 19th century, which is the lane and
-  century the brief's ordering now points at.
-- **The Americas' 16th and 18th centuries are the thinnest cells left**, at
-  three active events each, and the 15th is at three too. The 18th has the
-  same answer the 19th does — the wars of independence reach back into it
-  through the Túpac Amaru and Comunero risings — and the 16th wants the
-  Spanish conquest, which is a vein nobody in either lane has touched.
-- **North America is still the thin half of the `americas` lane**: 17 active
-  against the south's 118, unchanged since batch 4. The brief's ordering has
-  been satisfied since batch 2, so a fire may take a North American vein
-  whenever the American centuries are the ones that trail — and they are.
-- **Europe's 15th and 16th centuries now trail Europe's 17th and 18th**, at 3
-  and 6 against 21 and 20. Batches 1, 5 and 6 have taken the 16th, 17th and
-  18th; the 15th has no umbrella and the Hundred Years' War ends in 1453,
-  which is inside it.
-- **`great-depression` and `la-violencia` are still A12's, not this
-  branch's.** Unchanged from batch 3's note.
-- **`santiago-de-cuba` and `havana` carry no Wikidata item**, and a later
-  sweep of `Q117040` or `Q1563` will write a second record for the same town.
-  A fire with `--reconcile` should close that gap.
-- **The four American centuries before 1800 still have no umbrella** except
-  the Atlantic Revolutions, which reaches back only to 1765. Batch 1's
-  finding stands: `Q2088324` Colonial Brazil carries no `P580` or `P582`, so
-  the tool refuses it.
-- **The sixteen undated Colombian actions** batch 3 left are still on the
-  table, and still for want of a date in Wikidata rather than a source.
-- **The Wikimedia action API is rate-limiting this sandbox harder than it was
-  at batch 5.** `Special:EntityData` and `query.wikidata.org/sparql` answered
-  normally throughout this fire; the REST `page/summary` endpoint answered for
-  the first thirty or so requests and then joined `api.php` and `page/html` in
-  429. The import's own lead fetching got all nineteen leads before that
-  happened, which is why this batch has nineteen summaries. **A fire should
-  spend its early requests on the leads it needs and its later ones on
-  nothing.**
+- **The Cortes of Cádiz, `Q753624`, is the edge this partition is missing.**
+  The Spanish American wars article, revision 1375550213, names it as *"a more
+  direct cause of the Spanish American Wars of Independence"* in so many words.
+  It is Europe before 1900, so it is squarely this partition's; it would join
+  the twenty-three of batch 7 to whatever it in turn connects to; and it is one
+  record and one edge. **Nothing else available is worth as much per request.**
+- **The Americas' 16th and 18th centuries are now the thinnest cells in the
+  atlas**, at three active events each, and the 15th is at four. The 16th wants
+  the Spanish conquest — Cortés, Pizarro, the fall of Tenochtitlan — which is a
+  vein nobody in either lane has touched and which has an obvious umbrella in
+  `Q2477522` the Spanish colonization of the Americas. The 18th has the Túpac
+  Amaru and Comunero risings, which reach forward into the vein batch 7 just
+  imported.
+- **Europe's 15th century is at three active events and has no umbrella.**
+  Batches 1, 5 and 6 took the 16th, 17th and 18th; the 15th is what is left,
+  and the Hundred Years' War ends in 1453, inside it.
+- **North America is still the thin half of the `americas` lane**, and batch 7
+  did not move it: **17 active with a place north of the Rio Grande's mouth
+  against 128 south of it**, with 18 in the lane and placeless — the two
+  Mexican records of batch 7 are among that eighteen, because A9's chain ran
+  out on both. The brief's ordering has been satisfied since batch 2, so a fire
+  may take a North American vein whenever the American centuries are the ones
+  that trail, and they are.
+- **Three tool findings are open and none of them is fixed.** Deviation 1212
+  (a colonial empire's point is its metropole, so a colonial war lands in the
+  ruler's lane), deviation 1213 (a country is a place record on three records
+  and an actor on five, so A9 places some wars and not others) and deviation
+  1215 (the import's slice cap puts events before places unless a fire imports
+  the places on their own first). The first two are in the tool and shared with
+  M42; a fire that fixes either should say so on both branches.
+- **`battle-of-guayabos` has no English article**, so it is this branch's one
+  record still carrying the import's placeholder summary. A fire that reads
+  Spanish could settle it; A12's C1 is English-only by construction.
+- **`great-depression` and `la-violencia` are still A12's, not this branch's.**
+  Unchanged from batch 3's note.
+- **`santiago-de-cuba` and `havana` carry no Wikidata item**, and a later sweep
+  of `Q117040` or `Q1563` will write a second record for the same town. A fire
+  with `--reconcile` should close that gap. Batch 7 added `santiago` (Chile)
+  beside them, which is a different town and a reminder of how near that
+  collision is.
+- **The rate limit is where batch 5 left it and no worse.**
+  `Special:EntityData` and `query.wikidata.org/sparql` answered normally
+  throughout this fire, and the REST `page/html` endpoint answered twice — the
+  Haitian Revolution and the Mexican War of Independence — before it and
+  `api.php` returned 429 for the rest of the fire. **Two body reads is what a
+  fire gets.** Spend them on the articles whose bodies carry an edge, and spend
+  the import's own lead fetching first: it got all thirty-one leads before
+  anything was refused.

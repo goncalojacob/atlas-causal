@@ -20445,6 +20445,69 @@ drawn whole before the markers go on it.
       umbrella names below them are laid out against it, and reclaiming twelve
       pixels is a change to the drawing that nothing asked for.
 
+**M42b batch 7 — the Spanish American wars of independence, 23 September.** The
+seventh fire on the branch, taken from the vein the sixth fire's note named:
+`Q1123201`, 1808–1833, which Wikidata makes `part of` the Atlantic Revolutions
+umbrella batch 6 wrote. **Twenty-three events and five places**, every one
+draft and flagged, filed as they were imported — one umbrella under an umbrella
+that already existed, twelve under it and ten under a national war inside it —
+so **the main count is unchanged at 243**, the third batch running where the
+period umbrella pays for itself.
+
+**The Haitian edge the sixth fire could not write is written.** The REST
+`page/html` endpoint answered for the first time since batch 5, and the article
+states the link in its own words under *Lasting change*: *"The Enlightenment
+ideals and the initiation of the French Revolution were enough to inspire the
+Haitian Revolution."* `french-revolution --inspired--> haitian-revolution-1791-1804`,
+`probable`, cited at revision 1376092092. It moved the component from 521 to
+**523** and not by twenty: the sixth fire's note counted the French Revolution's
+eighteen *children*, and `parent` never enters the adjacency, so by edges that
+record sat in a component of two (deviation 1214).
+
+**Three intervals were wrong and all three are settled**, each from a source
+the record already cites: `mexican-war-of-independence` corrected from 1800 to
+1810 off the article's own first sentence at revision 1371682352, which is A7
+exactly; `argentine-war-of-independence` widened from 1816 to 1825 off its
+lead; and `chilean-war-of-independence`, whose article states no years at all,
+settled at 1812–1827 from the cited Wikidata item's own description against its
+own `P580`, with a note asking a reviewer for the infobox this fire could not
+fetch.
+
+**Three tool findings are open and this fire fixed none of them.** Deviation
+1212: `laneFor()`'s country fallback reads a colonial empire's own point, which
+is its metropole, so `mexican-war-of-independence` came out in the **`europe`
+lane** and the run wrote `americas` over it — every record whose only located
+thing is the polity that ruled it is exposed to this. Deviation 1213: `Q717`,
+`Q750`, `Q736`, `Q77` and `Q96` are held as **actors**, so the import enriched
+them and wrote no place, while `Q414`, `Q298` and `Q739` are place records
+beside actors of the same name and their wars are placed — one rule, two
+answers. Deviation 1215: the import walks places before events only within a
+25-item slice, so the batch had to be run three times, the places on their own
+in the middle; nothing of the first two runs is on the branch.
+
+**Deviation 1216**: A8 says "every umbrella whose span and subject fit", and
+the rule that actually holds is "every *nearest* umbrella" — four battles had
+`spanish-american-wars-of-independence` listed beside their national war and
+lost it, because `tests/m42-filing.test.mjs` holds that no parent is reachable
+through another.
+
+**Nothing in the vein's twenty-three leads names an event this atlas already
+holds**, checked mechanically against every active title, so the vein is an
+island beside the 523 — the same finding batches 1, 3, 5 and 6 wrote down. The
+one body read this fire could still afford found *"in the wake of the
+successful Haitian Revolution"* and a **common** trigger shared with Brazil's
+independence, and **no edge was written from it**: none of the five types says
+"these two had the same cause". The record that would join the vein is the
+Cortes of Cádiz, which the same article calls *"a more direct cause"*, and it
+is the first thing the next fire should import.
+
+Per lane and per century, after the batch: europe 353/87, africa 103/31, asia
+130/67, **americas 163/58**, 749 active and 243 main in all. The Americas' 19th
+century went from 15 active to **38**; the thinnest cells left are the
+Americas' 16th and 18th at three each and Europe's 15th at four.
+`docs/m42b-pool.md` → "Batch 7" and `docs/m67-umbrellas.md` → "M42b batch 7"
+carry the whole of it.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

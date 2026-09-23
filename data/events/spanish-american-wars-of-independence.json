@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "spanish-american-wars-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1123201",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Spanish American wars of independence",
+    "pt": "Guerras de independência na América espanhola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1123201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213"
+    }
+  ],
+  "title": "Spanish American wars of independence",
+  "summary": "The English Wikipedia article \"Spanish American wars of independence\", at revision 1375550213, opens: \"The Spanish American wars of independence were a series of conflicts that took place across the Spanish Empire during the early 19th century. The struggles in both hemispheres began shortly after the outbreak of the Peninsular War forming part of the broader context of the Napoleonic Wars. The conflicts were fought between Royalists, who favoured rule from a unitary Spanish monarchy, and Patriots, who supported either autonomous constitutional monarchies or independent republics, separated from Spain and each other. These struggles ultimately led to the independence and secession of most of Spanish America from Spanish rule, which, beyond this conflict, resulted in a process of Balkanization in Hispanic America. If defined strictly in terms of military campaigns, the time period in question ranged from the 1809 Battle of Chacaltaya in present-day Bolivia, to the 1829 Battle of Tampico in Mexico.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1123201, imported by tools/import/wikidata.mjs. The item's own description reads \"1808–1833 armed conflicts in the Americas between Spain and independence movements\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1833,
+    "date": "1808-09-25",
+    "endDate": "1833-09-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "atlantic-revolutions"
+}

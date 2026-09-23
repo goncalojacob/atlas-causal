@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-rancagua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1310755",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Rancagua",
+    "pt": "Batalha de Rancagua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1310755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rancagua\", revision 1371210959"
+    }
+  ],
+  "title": "Battle of Rancagua",
+  "summary": "The English Wikipedia article \"Battle of Rancagua\", at revision 1371210959, opens: \"The Battle of Rancagua, also known in Chile as the Disaster of Rancagua, occurred on October 1, 1814, to October 2, 1814, when the Spanish Army under the command of Mariano Osorio defeated the Chilean forces led by Bernardo O’Higgins. This put an end to the Chilean Patria Vieja and it was the decisive step of the Spanish military Reconquest of Chile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1310755, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-10-02"
+  },
+  "place": "rancagua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}
