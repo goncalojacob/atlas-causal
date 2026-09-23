@@ -5551,8 +5551,11 @@ be isolated, so the reason is here rather than in a batch note nobody reads.
   relation to either.
 
 **Both are worth holding anyway** and the run is saying so rather than implying
-it: the atlas held four Korean records before this batch and one of them was a
-treaty, and it held no Somali record between 2017 and today. `components` goes
+it: the atlas held four Korean records before this batch and three of them are
+documents — the annexation treaties of 1907 and 1910 and the 1953 armistice —
+so `battle-of-inchon` is the first record of anything that happened inside the
+war; and the most
+recent Somali record it held was dated 2017. `components` goes
 184 → 186 and `noEdge` 154 → 156 for exactly these two, which is the honest
 price and is visible in the counts below.
 
