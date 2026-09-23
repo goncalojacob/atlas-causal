@@ -3038,7 +3038,7 @@ and 18th at nine each, and the 18th still has one main event of nine.
 ### What the network did, measured rather than felt
 
 Deviation 1235 says to read a clock before calling anything late, so this fire
-read one. **Fourteen probes over fourteen minutes, one a minute, every one of
+read one. **Twenty probes over twenty minutes, one a minute, every one of
 them 429**, and not only on the endpoint the tool uses: `api.php`
 (`wbsearchentities` and `wbgetentities`), `Special:EntityData`, the REST
 summary endpoint on `en.wikipedia.org`, `api.wikimedia.org` and the Wikibase
@@ -3172,7 +3172,7 @@ thing a fire on this branch does.
 | the thinnest cells left, in this partition | the Americas' 16th (9), 17th (9) and 18th (9) |
 
 **Try the network first, and read this list before STEP 1's merge** (deviation
-1236). Fourteen probes a minute apart were all 429 on the thirteenth fire,
+1236). Twenty probes a minute apart were all 429 on the thirteenth fire,
 across every Wikimedia endpoint; one probe tells the next fire which kind of
 fire it is.
 

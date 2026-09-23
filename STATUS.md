@@ -21006,7 +21006,7 @@ all of it with the counts per lane and per century.
 
 **M42b — the thirteenth fire imported nothing, and paid off two tool faults
 instead, 23 September.** **Wikimedia refused every request this fire made**:
-fourteen probes a minute apart, all 429, and not only on the endpoint the tool
+twenty probes a minute apart, all 429, and not only on the endpoint the tool
 uses — `api.php`, `Special:EntityData`, the REST summary endpoint,
 `api.wikimedia.org` and the Wikibase REST API alike, with the body *"You are
 making too many requests to the API."* Deviation 1235 says to read a clock
