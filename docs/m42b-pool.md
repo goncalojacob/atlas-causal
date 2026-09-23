@@ -4003,9 +4003,12 @@ is what the next fire needs.
 
 **The network answered, and `maxlag` was standing.** `Special:EntityData` and
 the SPARQL endpoint served throughout; `api.php` at Wikidata answered `maxlag`
-— *"Waiting for wdqs1011: 148.7 seconds lagged"* — through the whole fire and
-never lifted, so the import ran entirely on the fallback, one call per item, and
-finished in twenty-five calls. **A hand-written `curl` at `en.wikipedia.org`'s
+— *"Waiting for wdqs1011: 148.7 seconds lagged"*, then *"wdqs1014: 144.6"* —
+and killed two import attempts eight minutes apart. The third attempt, the
+first with the fallback back in the file, finished in twenty-five calls.
+**Whether the lag lifted in between or the fallback carried it, this run cannot
+say**, and it matters less than the two attempts it cost: the lag of the
+fifteenth fire lifted in two minutes and this one had not in eight. **A hand-written `curl` at `en.wikipedia.org`'s
 `api.php` is refused outright** — *"You are making too many requests to the
 API"* — and the import's own user-agent with a two-second delay between titles
 gets through where a bare one does not. The article text this batch's edges
