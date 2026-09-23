@@ -186,6 +186,45 @@
       },
       "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Charter" } }
     },
+    "Q9000016": {
+      "type": "item",
+      "id": "Q9000016",
+      "labels": { "en": { "language": "en", "value": "Southfield Skirmish" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented engagement whose only point is the town it names by P276, in a different lane from the country it names by P17" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
+        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1812-06-18T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
+        "P276": [{ "mainsnak": { "snaktype": "value", "property": "P276", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000017" } } }, "rank": "normal" }],
+        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000018" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Southfield Skirmish" } }
+    },
+    "Q9000017": {
+      "type": "item",
+      "id": "Q9000017",
+      "labels": { "en": { "language": "en", "value": "Southfield" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented town, named by an event's P276 and never in the same batch as it" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 5, "latitude": 5, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
+        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000018" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Southfield" } }
+    },
+    "Q9000018": {
+      "type": "item",
+      "id": "Q9000018",
+      "labels": { "en": { "language": "en", "value": "Republic of Farland" } },
+      "descriptions": { "en": { "language": "en", "value": "an invented state whose point is a long way from the town in it, used only to tell one lane from another" } },
+      "aliases": {},
+      "claims": {
+        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100004" } } }, "rank": "normal" }],
+        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": -140, "latitude": -60, "precision": 0.01, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
+      },
+      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Republic of Farland" } }
+    },
     "Q9000008": { "id": "Q9000008", "missing": "" }
   },
   "success": 1

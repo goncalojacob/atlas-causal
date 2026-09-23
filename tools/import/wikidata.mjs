@@ -1084,14 +1084,27 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   const entities = await fetchEntities(fetcher, batch);
   const written = [];
 
-  // The countries the batch names, fetched together, so a place whose own
-  // point reaches no lane can still be given one.
-  const countries = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
-    .flatMap((e) => claimIds(e, PROPERTIES.country).concat(claimIds(e, PROPERTIES.administrative))))]
+  // Everything the batch says it happened at or in, fetched together, so a
+  // record whose own point reaches no lane can still be given one. All three
+  // properties and not only the last two: A9 reads the location first, and
+  // until deviation 1230 only the country and the administrative territory
+  // were ever fetched, so `pointOf` could not answer for the town an event
+  // names by P276 and the first point it found was the country's — which put
+  // a Brazilian engagement in the European lane. An ordering is worth nothing
+  // over data that is not all there.
+  const located = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
+    .flatMap((e) => claimIds(e, PROPERTIES.location)
+      .concat(claimIds(e, PROPERTIES.administrative), claimIds(e, PROPERTIES.country))))]
     .filter((qid) => !Object.hasOwn(entities, qid));
-  const countryEntities = countries.length ? await fetchEntities(fetcher, countries.slice(0, batchSize)) : {};
+  // In chunks rather than one capped call: a batch names up to three located
+  // things per item, so a single slice at the batch size dropped the rest and
+  // left the same gap one step further out.
+  const locatedEntities = {};
+  for (let at = 0; at < located.length; at += batchSize) {
+    Object.assign(locatedEntities, await fetchEntities(fetcher, located.slice(at, at + batchSize)));
+  }
   const pointOf = (qid) => {
-    const entity = entities[qid] ?? countryEntities[qid];
+    const entity = entities[qid] ?? locatedEntities[qid];
     const point = entity ? claimPoint(entity) : null;
     return point ? { qid, point } : null;
   };

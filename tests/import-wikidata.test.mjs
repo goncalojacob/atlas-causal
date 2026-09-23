@@ -729,6 +729,55 @@ test('a lane in the seeds file does not override a lane a point reaches', async 
   assert.equal(place.region, null, 'a place is placed by its own coordinate and the table is not read for it');
 });
 
+// Deviation 1230, as a test. A9's order is location, then administrative
+// territory, then country — but the batch only ever fetched the last two, so
+// `pointOf` could not answer for the town an event names by P276 and the
+// first point it found was the country's. Q9000016 is that shape exactly: its
+// town is at (5,5) and the state it is in is at (-140,-60), which are two
+// different lanes, and the town is not in the batch. The lane a reader sees
+// has to be the town's.
+test('an event takes the lane of the location it names, not of the country it is in', async () => {
+  // Two lanes, so "the wrong one" is a thing this test can state rather than
+  // the absence of one: the square the rest of this file uses, and a far one.
+  const twoLanes = (where) => {
+    if (!where) return null;
+    if (where.lon >= 0 && where.lon <= 20 && where.lat >= 0 && where.lat <= 20) {
+      return { region: 'testland', method: 'inside', distance: 0 };
+    }
+    if (where.lon >= -160 && where.lon <= -120 && where.lat >= -80 && where.lat <= -40) {
+      return { region: 'farland', method: 'inside', distance: 0 };
+    }
+    return null;
+  };
+
+  const { dir, cacheDir } = await scratch({ items: ['Q9000016'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion: twoLanes });
+  assert.deepEqual(report.refused, []);
+  assert.deepEqual(report.created.map((c) => [c.qid, c.kind]), [['Q9000016', 'event']]);
+
+  const event = await readJson(path.join(dir, 'events', 'southfield-skirmish.json'));
+  assert.equal(event.region, 'testland', 'the town it names is in testland; the state it is in is not');
+  assert.equal(event.place, null, 'the atlas holds no place record for that town, so it is still placeless');
+  assert.deepEqual(createValidator(await schemas()).validate('v1/event.json', event), []);
+});
+
+// The same fault one step further out: the extra items a batch names were
+// fetched with a single call capped at the batch size, so past that cap they
+// were silently not there to read and every event after it fell through to
+// whatever came first. A batch of one event that names two located things,
+// fetched one at a time, still reaches the town.
+test('the located items a batch names are all fetched, however small the batch', async () => {
+  const twoLanes = (where) => (where && where.lon >= 0 && where.lon <= 20 && where.lat >= 0 && where.lat <= 20
+    ? { region: 'testland', method: 'inside', distance: 0 }
+    : null);
+  const { dir, cacheDir } = await scratch({ items: ['Q9000016'] });
+  const { fetcher } = await fixtureFetcher();
+  await runImportMode(dir, { fetcher, today: '2026-09-04', batchSize: 1, cacheDir, deriveRegion: twoLanes });
+  const event = await readJson(path.join(dir, 'events', 'southfield-skirmish.json'));
+  assert.equal(event.region, 'testland', 'the second located item is past a batch size of one and still read');
+});
+
 test('--import stops at the batch size and the next run continues', async () => {
   const { dir, cacheDir } = await scratch();
   const { fetcher } = await fixtureFetcher();
