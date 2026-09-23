@@ -5358,6 +5358,28 @@ joined a chain that was already in the largest component, and none of them was
 left isolated. That is the first batch of this run where that is true of all
 five.
 
+### Batch 43's check, on the head
+
+`validate.yml` run **1539** on `42ab03f9` is **green**: 1,789 pure tests and 279
+browser tests, 0 failed and 0 skipped, `validate --index` clean.
+
+**Run 1537, two commits earlier, was red on two tests and neither was a record
+of this batch.** The first was `tests/m53.test.mjs` → §4.1, which pins the
+numerator `docs/m53-polities.md` prints: this batch's nineteen `P710` actor
+lines moved it 370 → 373 and the document had to be re-taken with them, which
+is what batch 40 did at 368 → 369 and what every batch writing actor lines now
+owes that file. The second was `tests/keyboard-browser.test.mjs` → *"the lanes
+are one tab stop each, and the arrows walk along a lane"*, failing on `End`
+with `fixture-event-deep-1969` where it wanted `fixture-event-deep-2025`. **It
+draws `?fixtures=1` and reads no record under `data/`**, so no import can reach
+it, and it passed here three times — once in the suite and twice run alone. Its
+own comment names the race it is: since M77 a title arrives with its century and
+a shard landing repacks the lanes, so the order read on one frame is not the
+order `End` walks on another, and the `waitFor` in front of it waits for the
+first titles rather than for the last. **This is deviation 1222's shape again**
+— a fixtures test on this branch red once and green on re-run — and it is lane
+A's code, not this run's data.
+
 ## Where the run stands after batch 43, for the fire that picks it up
 
 *23 September, 12:52Z onward. An import fire, one batch, no merge needed —
