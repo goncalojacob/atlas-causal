@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -38,10 +39,14 @@
     {
       "source": "wikidata",
       "locator": "Q832273"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015"
     }
   ],
   "title": "Eritrean–Ethiopian War",
-  "summary": "Wikidata item Q832273, imported by tools/import/wikidata.mjs. The item's own description reads \"1998–2000 war between Ethiopia and Eritrea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Eritrean–Ethiopian War\", at revision 1372677015, opens: \"The Eritrean–Ethiopian War, also known as the Badme War, was a major armed conflict between Ethiopia and Eritrea that took place from May 6, 1998 to June 18, 2000. After Eritrea gained independence from Ethiopia in 1993, relations were initially friendly. However, disagreements about where the newly created international border should be caused relations to deteriorate significantly, eventually leading to full-scale war. The conflict was the biggest war in the world at the time, with over 500,000 troops partaking in the fighting on both sides. Eritrea and Ethiopia both invested heavily in armaments prior to the war, and reportedly suffered between 70,000 and 300,000 deaths combined throughout the conflict as a result, with a further 600,000 people displaced. The conflict ultimately led to minor border changes through final binding border delimitation overseen by the Permanent Court of Arbitration. In 2005, the Eritrea–Ethiopia Boundary Commission, a body established by the Algiers Agreement (2000), concluded that Badme, the disputed territory at the heart of the conflict, belongs to Eritrea. The war officially came to an end with the signing of the Algiers Agreement on 12 December 2000; however, the ensuing border conflict would continue on for nearly two decades. On 5 June 2018, the ruling coalition of Ethiopia, headed by Prime Minister Abiy Ahmed, agreed to fully implement the peace treaty signed with Eritrea in 2000, with peace declared by both parties in July 2018, twenty years after the initial confrontation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q832273, imported by tools/import/wikidata.mjs. The item's own description reads \"1998–2000 war between Ethiopia and Eritrea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2000,
     "end": 2000,

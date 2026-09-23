@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-downs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q675999",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of the Downs",
+    "pt": "Batalha das Dunas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q675999"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Downs\", revision 1370599272"
+    }
+  ],
+  "title": "Battle of the Downs",
+  "summary": "The English Wikipedia article \"Battle of the Downs\", at revision 1370599272, opens: \"The Battle of the Downs took place on 21 October 1639, during the Eighty Years' War. A Spanish fleet, commanded by Admiral Antonio de Oquendo, was decisively defeated by a Dutch force under Lieutenant-Admiral Maarten Tromp. Victory ended Spanish efforts to re-assert naval control over the English Channel and confirmed Dutch dominance of the sea lanes, while it is also alleged to be the first major action to feature line of battle tactics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q675999, imported by tools/import/wikidata.mjs. The item's own description reads \"1639 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1639,
+    "end": 1639,
+    "date": "1639-10-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

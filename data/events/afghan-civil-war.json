@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "filed-from-p361",
-      "title-from-article"
+      "title-from-article",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -46,7 +47,7 @@
     }
   ],
   "title": "Afghan Civil War (1989–1992)",
-  "summary": "Wikidata item Q2405009, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Afghanistan between 1989–1992\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Afghan Civil War (1989–1992)\", at revision 1371765193, opens: \"The Afghan Civil War of 1989–1992 (Pashto: له ۱۹۸۹ څخه تر ۱۹۹۲ پوري د افغانستان کورنۍ جګړه), also known as the First Afghan Civil War, took place between the Soviet withdrawal from Afghanistan on 15 February 1989 which ended the Soviet–Afghan War, and 27 April 1992, the day after the proclamation of the Peshawar Accords proclaiming a new interim Afghan government which was supposed to start serving on 28 April 1992. Mujahideen groups, some of them ostensibly united as part of the Afghan Interim Government proclaimed as their conviction that they were battling the hostile \"puppet regime\" of the Republic of Afghanistan in Kabul. In March 1989, the interim government and the Pakistani Inter-Services Intelligence (ISI) attacked the city of Jalalabad and were pushed back three months later in what is known as the Battle of Jalalabad. Hekmatyar's Hezbi Islami pulled their support for the interim government following the defeat. In March 1991, a mujahideen coalition quickly conquered the city of Khost. In March 1992, having lost the last remnants of Soviet support, President Mohammad Najibullah agreed to step aside and make way for a mujahideen coalition government. One mujahideen group, Hezb-e Islami Gulbuddin, refused to confer and discuss a coalition government under the Pakistani sponsored Peshawar Peace Accords and invaded Kabul with the help of Khalqist Generals. This triggered a civil war, starting on 25 April 1992, between initially three, but within weeks five or six mujahideen groups or armies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2405009, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Afghanistan between 1989–1992\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1989,
     "end": 1992,

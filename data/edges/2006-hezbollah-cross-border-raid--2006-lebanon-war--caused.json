@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "2006-hezbollah-cross-border-raid--2006-lebanon-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Hezbollah cross-border raid\", revision 1370102562, lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q49104 P1478 (has immediate cause) Q2026122"
+    }
+  ],
+  "from": "2006-hezbollah-cross-border-raid",
+  "to": "2006-lebanon-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the raid says that after Hezbollah ambushed the patrol and captured two soldiers, \"Israel refused and launched a large-scale ground and air campaign across Lebanon in response to the Hezbollah raid. This marked the start of the 2006 Lebanon War.\" Wikidata gives the raid as the war's immediate cause (Q49104, P1478). The raid is also filed as part of the war, which is Wikidata's own P361 and a display fact; the edge is the separate claim that the campaign was a response to it.",
+  "dispute": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-las-piedras-1811",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2889112",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Las Piedras (1811)",
+    "pt": "Batalha de Las Piedras (1811)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889112"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
+    }
+  ],
+  "title": "Battle of Las Piedras (1811)",
+  "summary": "The English Wikipedia article \"Battle of Las Piedras (1811)\", at revision 1370447269, opens: \"The Battle of Las Piedras was fought on May 18, 1811 as part of the Rio de la Plata war of independence. It was a resounding victory for the revolutionary forces, led by José Gervasio Artigas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889112, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle in the Uruguayan struggle for independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-05-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

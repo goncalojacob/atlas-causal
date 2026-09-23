@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mexican-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "lane-overridden"
+    ],
+    "note": "A7: the interval was 1800-09-16 to 1821-09-27, which is what Wikidata P580 states for Q68750. The English article \"Mexican War of Independence\", at revision 1371682352, opens \"The Mexican War of Independence (Spanish: Guerra de Independencia de Mexico, 16 September 1810 - 27 September 1821)\", and its infobox gives the same range, so the start is corrected to 1810-09-16 from the article the record cites. The end is unchanged."
+  },
+  "wikidata": "Q68750",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Mexican War of Independence",
+    "pt": "Guerra da Independência do México"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q68750"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mexican War of Independence\", revision 1371682352"
+    }
+  ],
+  "title": "Mexican War of Independence",
+  "summary": "The English Wikipedia article \"Mexican War of Independence\", at revision 1371682352, opens: \"The Mexican War of Independence was an armed conflict and political process resulting in Mexico's independence from the Spanish Empire. It was not a single, coherent event, but local and regional struggles that occurred within the same period, and can be considered a revolutionary civil war. It culminated with the drafting of the Declaration of Independence of the Mexican Empire in Mexico City on September 28, 1821, following the collapse of royal government and the military triumph of forces for independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q68750, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict which ended the rule of Spain in the territory of New Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1821,
+    "date": "1810-09-16",
+    "endDate": "1821-09-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the run over the import's: the import derived `europe` from P17 Q80702, the Spanish Empire, whose point is Madrid. The war was fought in Mexico, so the lane is where the event belongs.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

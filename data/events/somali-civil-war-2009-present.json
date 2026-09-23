@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "somali-civil-war-2009-present",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1052332",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Somali Civil War (2009–present)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1052332"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Somali Civil War (2009–present)\", revision 1374631534"
+    }
+  ],
+  "title": "Somali Civil War (2009–present)",
+  "summary": "The English Wikipedia article \"Somali Civil War (2009–present)\", at revision 1374631534, opens: \"The ongoing phase of the Somali Civil War began in 2009 and is concentrated in southern and central Somalia, primarily between the forces of the Federal Government of Somalia (FGS), assisted by African Union peacekeeping forces, and the Islamist militant group al-Shabaab, which pledged allegiance to al-Qaeda in 2012.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1052332, imported by tools/import/wikidata.mjs. The item's own description reads \"2009–present phase of the Somali Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": null,
+    "date": "2009-01-31"
+  },
+  "place": "somalia-q1045",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "somali-civil-war",
+  "category": "war"
+}

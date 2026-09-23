@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-sudanese-civil-war--comprehensive-peace-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Comprehensive Peace Agreement\", revision 1372495468, § lead"
+    }
+  ],
+  "from": "second-sudanese-civil-war",
+  "to": "comprehensive-peace-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Comprehensive Peace Agreement says it was an accord signed on 9 January 2005 by the Sudan People's Liberation Movement and the Government of Sudan, and that it was meant to end the Second Sudanese Civil War, develop democratic governance countrywide and share oil revenues.",
+  "dispute": null
+}

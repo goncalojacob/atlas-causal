@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "coup-of-18-fructidor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q248033",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Coup of 18 Fructidor",
+    "pt": "Golpe de 18 de Frutidor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q248033"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Coup of 18 Fructidor\", revision 1370613793"
+    }
+  ],
+  "title": "Coup of 18 Fructidor",
+  "summary": "The English Wikipedia article \"Coup of 18 Fructidor\", at revision 1370613793, opens: \"The Coup of 18 Fructidor, Year V, was a seizure of power in France by members of the Directory, then forming the government of the First French Republic, with support from the military. The coup was provoked by the results of elections held months earlier, which had given the majority of seats in the country's Corps législatif to royalist candidates, threatening a restoration of the monarchy and a return to the ancien régime. Three of the five members of the Directory, Paul Barras, Jean-François Rewbell and Louis Marie de La Révellière-Lépeaux, with support of foreign minister Charles Maurice de Talleyrand-Périgord, staged the coup d'état that annulled many of the previous election's results and ousted the monarchists from the legislature.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q248033, imported by tools/import/wikidata.mjs. The item's own description reads \"coup d'état\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-09-04"
+  },
+  "place": "tuileries-palace",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

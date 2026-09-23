@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 352 of 668 |
+| **after M42** | 36 of 36 | 368 of 749 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -282,7 +282,7 @@ those lines is `croatian-war-of-independence` naming `croatia`. The war runs
 **1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
 war *overlaps* the polity without the polity being alive in the year the war
 started. Counted by the rule this table states — alive at the start — the
-figure is **352**; counted by overlap it is **353**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds; the **gap** is still the one entry this paragraph is about.
+figure is **368**; counted by overlap it is **369**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, and both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name; the **gap** is still the one entry this paragraph is about.
 
 Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
 recognition date and not the date a state began fighting for itself, and
@@ -298,8 +298,14 @@ why it moves without a new row being added: M42 is one milestone and the row is
 its own. Batch 10 takes it to 306 of 393, batch 11 to 306 of 405, batch 12 to 306 of 411, batch 13 to 306 of 423, batch 14 to 306 of 435, batch 15 to 306 of 445, batch 16 to 306 of 451 and batch 17 to **306 of 474**. **M42b's batches move the same row**, because
 A11 partitioned one milestone into two lanes and not into two measurements:
 its batch 1 takes the denominator to 592, its batch 2 to 614, its batch 3 to
-643 and its batch 4 to 658, and every one of them leaves the numerator where
-it was. The numerator has not moved since
+643, its batch 4 to 658, its batch 5 to 673 and its batch 6 to **722** — the
+last of those with the two merges at the head of that fire inside it, which
+brought `origin/m42`’s own batches across — and every one of them leaves the
+numerator where it was. `origin/m42`'s own batches 37 and 38, nine imported
+joins between them and none of which names an actor, then arrive on this branch
+with the merge of 23 September, which is what takes the denominator to
+**726** without a batch of this lane having run — and M42b's own batch 7, twenty-three records of the Spanish American wars of independence and none of them naming an actor, takes it to **749**: the count is of the corpus
+and not of a branch. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
 line, and M67 A1 settled that an event with no actor and no place is not a

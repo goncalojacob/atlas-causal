@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q3269922"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Paraquet\", revision 1370694202"
     }
   ],
   "title": "Operation Paraquet",
-  "summary": "Wikidata item Q3269922, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 British military operation to recapture the Island of South Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Operation Paraquet\", at revision 1370694202, opens: \"Operation Paraquet was the code name for the British military operation to recapture the island of South Georgia from Argentine military control in April 1982 at the start of the Falklands War. The operation, a subsidiary of the main Operation Corporate—recapture of the Falkland Islands from Argentina—was successful, leading to the island being restored to British control on 25 April 1982. Officially named \"Operation Paraquet\", an alternative spelling of parakeet, it was known among British troops as \"Paraquat\", after the industrial weedkiller.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3269922, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 British military operation to recapture the Island of South Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,
@@ -50,5 +56,16 @@
   "regionNote": null,
   "parent": "falklands-war",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "argentina",
+      "role": "belligerent",
+      "note": "Wikidata Q3269922, P710 (participant), Q414"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q3269922, P710 (participant), Q145"
+    }
+  ]
 }

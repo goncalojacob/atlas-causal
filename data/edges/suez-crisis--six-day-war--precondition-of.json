@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "suez-crisis--six-day-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Six-Day War\", revision 1375500255, § Background"
+    }
+  ],
+  "from": "suez-crisis",
+  "to": "six-day-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Six-Day War says that the 1956 Suez Crisis ended in the reopening of the Straits of Tiran to Israeli shipping and the deployment of the United Nations Emergency Force along the Egypt–Israel border, and that Israel held to its post-1956 position that another Egyptian closure of the Straits would be a casus belli. In May 1967 Nasser closed the Straits again and ordered the immediate withdrawal of all UNEF personnel. The crisis is the arrangement whose undoing the article gives as the war's occasion.",
+  "dispute": null
+}

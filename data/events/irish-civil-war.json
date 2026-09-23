@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q748042"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish Civil War\", revision 1374338052"
     }
   ],
   "title": "Irish Civil War",
-  "summary": "Wikidata item Q748042, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict that followed the Irish War of Independence and accompanied the establishment of the Irish Free State\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Irish Civil War\", at revision 1374338052, opens: \"The Irish Civil War (Irish: Cogadh Cathartha na hÉireann; 28 June 1922 – 24 May 1923) was a conflict that followed the Irish War of Independence and accompanied the establishment of the Irish Free State, an entity independent from the United Kingdom but within the British Empire. The civil war was waged between the Provisional Government of Ireland and the Anti-Treaty IRA over the Anglo-Irish Treaty. The Provisional Government (which became the Free State in December 1922) supported the terms of the treaty, while the anti-Treaty opposition saw it as a betrayal of the Irish Republic proclaimed during the Easter Rising of 1916. Many of the combatants had fought together against the British in the Irish Republican Army during the War of Independence and had divided after that conflict ended and the treaty negotiations began. The Civil War was won by the pro-treaty National Army, who first secured Dublin by early July, then went on the offensive against the anti-Treaty strongholds of the south and west, especially the 'Munster Republic'. All urban centres had been captured by the National Army by late August. The guerrilla phase of the Irish Civil War lasted another 10 months, before the IRA leadership issued a \"dump arms\" order to all units, effectively ending the conflict. The National Army benefited from substantial quantities of weapons provided by the British government, particularly artillery and armoured cars. The conflict left Irish society divided and embittered for generations. Today, the three largest political parties in Ireland are direct descendants of the opposing sides in the war: Fine Gael, from the supporters of the pro-Treaty side; Fianna Fáil, the party formed from the bulk of the anti-Treaty republicans by Éamon de Valera; and Sinn Féin, comprising the minority of anti-Treaty republicans who refused to join any partitionist party.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q748042, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict that followed the Irish War of Independence and accompanied the establishment of the Irish Free State\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1922,
     "end": 1923,

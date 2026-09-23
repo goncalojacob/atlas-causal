@@ -355,3 +355,26 @@ with them.
 
 The two boundary acts, `republic-proclaimed-1910` and `coup-28-may-1926`, are
 where §4.1 left them, and so is every other refusal above.
+
+## M42 batch 37 — one filing into `portuguese-colonial-war-1961-1974`
+
+**`portuguese-colonial-war-1961-1974` gained `angolan-war-of-independence`**,
+which M42's joins vein imported on 22 September. The filing is the plainest this
+document holds: Wikidata's `P361` for the item (Q1780216) is Q609836, which is
+the record this umbrella already carries as its own identifier, and the two
+spans are the **same day at both ends** — 4 February 1961 to 25 April 1974. The
+subject property of §3 holds as well: the war of independence is one of the
+three theatres the umbrella is an umbrella over, and `angola-war-begins-1961`,
+already filed here, is its opening day.
+
+**A second parent was written and then taken off**, which is worth recording
+because amendment A8 asks a filing to write *every* umbrella that fits.
+`decolonisation-of-africa` fits on both tests — the span holds 1961–1974 and the
+subject is Africa — but the colonial war is **already** filed under it, so the
+period is reachable from the record through its first parent.
+`tests/m42-filing.test.mjs` refuses that ("no parent of an event is reachable
+through another of its parents") and the refusal is right: A8 is about an event
+that belongs to two arguments at once, as Angolan independence belongs to the
+Portuguese republic and to African decolonisation, and not about restating an
+ancestor the chain already reaches. **Every umbrella that fits means every
+umbrella that adds something.**

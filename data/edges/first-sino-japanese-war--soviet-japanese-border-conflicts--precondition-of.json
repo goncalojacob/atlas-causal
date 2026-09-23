@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "first-sino-japanese-war--soviet-japanese-border-conflicts--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
+    }
+  ],
+  "from": "first-sino-japanese-war",
+  "to": "soviet-japanese-border-conflicts",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same prelude names the war of 1894 beside it as the other half of that weakening. The article reads: \"In the aftermath of the First Sino-Japanese War and the Eight Power Intervention against the Boxer Rebellion in China, the Qing hold over Manchuria and Korea had weakened significantly, leading to both the Russian and Japanese Empires vying for control over the territories.\"",
+  "dispute": null
+}

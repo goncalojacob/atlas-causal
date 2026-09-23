@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-09-23",
   "origin": {
     "tool": "wikidata"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "wikidata": "Q126413",
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q126413"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German–Polish declaration of non-aggression\", revision 1363397316"
     }
   ],
   "title": "German–Polish declaration of non-aggression",
-  "summary": "Wikidata item Q126413, imported by tools/import/wikidata.mjs. The item's own description reads \"1934 peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"German–Polish declaration of non-aggression\", at revision 1363397316, opens: \"The German–Polish declaration of non-aggression, also known as the German–Polish non-aggression pact, was an agreement between Nazi Germany and the Second Polish Republic that was signed on 26 January 1934 in Berlin. Both countries pledged to resolve their problems by bilateral negotiations and to forgo armed conflict for a period of 10 years. The agreement effectively normalised relations between Poland and Germany, which had been strained by border disputes arising from the territorial settlement in the Treaty of Versailles. The declaration marked an end to an economically damaging customs war between the two countries that had taken place over the previous decade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126413, imported by tools/import/wikidata.mjs. The item's own description reads \"1934 peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1934,
     "end": 1939,

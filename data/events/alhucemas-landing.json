@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alhucemas-landing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3026815",
+  "wikipedia": {
+    "en": "Alhucemas landing",
+    "pt": "Desembarque de Alhucemas"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3026815"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Alhucemas landing\", revision 1370427911"
+    }
+  ],
+  "title": "Alhucemas landing",
+  "summary": "The English Wikipedia article \"Alhucemas landing\", at revision 1370427911, opens: \"The Alhucemas landing was a military amphibious landing which took place on 8 September 1925 at Alhucemas by the Spanish Army and Navy and by an allied French naval and aerial contingent, that would put an end to the Rif War. It is considered the first amphibious landing in history involving the use of tanks and massive seaborne air support. Alhucemas is seen as a precursor of the Allied amphibious landings in World War II, and the first successful combined operation of the 20th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3026815, imported by tools/import/wikidata.mjs. The item's own description reads \"1925 Franco-Spanish operation that ended the Rif War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1925,
+    "end": 1925,
+    "date": "1925-09-08"
+  },
+  "place": "al-hoceima",
+  "region": null,
+  "regionNote": null,
+  "parent": "rif-war",
+  "category": "war",
+  "actors": []
+}

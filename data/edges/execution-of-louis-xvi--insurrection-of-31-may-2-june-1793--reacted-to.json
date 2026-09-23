@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of 31 May – 2 June 1793\", revision 1370623840, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q15784403"
+    }
+  ],
+  "from": "execution-of-louis-xvi",
+  "to": "insurrection-of-31-may-2-june-1793",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The insurrection’s lead says what the deputies were attacked for: “Jean-Paul Marat led the attack on the representatives in the National Convention, who in January had voted against the execution of King Louis XVI and since then had paralyzed the convention.” The vote of January 1793 is the execution this atlas holds as a record, and the article gives it as the mark against the twenty-two Girondins the Commune demanded be brought before the Revolutionary Tribunal. So the later event is a reaction to the earlier one in the article’s own telling, which is what `reacted-to` says; the edge runs from the execution to the insurrection because that is the direction this atlas writes a reaction in. `probable`: the lead reports the grievance, it does not argue the causation, and rule 22 refuses `consensus` on a Wikipedia citation.",
+  "dispute": null
+}

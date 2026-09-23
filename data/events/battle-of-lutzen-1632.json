@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lutzen-1632",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q167259",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Lützen (1632)",
+    "pt": "Batalha de Lützen (1632)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q167259"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lützen (1632)\", revision 1374575907"
+    }
+  ],
+  "title": "Battle of Lützen (1632)",
+  "summary": "The English Wikipedia article \"Battle of Lützen (1632)\", at revision 1374575907, opens: \"The Battle of Lützen, fought on 16 November 1632, was one of the most important of the Thirty Years' War. A Swedish army under Gustavus Adolphus, supported by troops from Saxony and Hesse-Kassel, narrowly defeated an Imperial force under Albrecht von Wallenstein. Both sides suffered heavy casualties, with Gustavus himself among the dead.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q167259, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Thirty Years' War, 1632\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1632,
+    "end": 1632,
+    "date": "1632-11-16"
+  },
+  "place": "lutzen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

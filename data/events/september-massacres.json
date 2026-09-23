@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "september-massacres",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q862586",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "September Massacres",
+    "pt": "Massacres de Setembro de 1792"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q862586"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"September Massacres\", revision 1375967754"
+    }
+  ],
+  "title": "September Massacres",
+  "summary": "The English Wikipedia article \"September Massacres\", at revision 1375967754, opens: \"The September Massacres were a series of killings and summary executions of prisoners in Paris that occurred in 1792 from 2 September to 6 September during the French Revolution. Between 1,176 and 1,614 people were killed by sans-culottes, fédérés, and guardsmen, with the support of gendarmes responsible for guarding the tribunals and prisons, the Cordeliers, the Committee of Surveillance of the Commune, and the revolutionary sections of Paris.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q862586, imported by tools/import/wikidata.mjs. The item's own description reads \"Wave of killings in France in 2–7 Sept. 1792 during the French Revolution, in which half the prison population of Paris (that is, approximately 1200–1400 people) were summarily executed\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-09-02",
+    "endDate": "1792-09-07"
+  },
+  "place": "prison-de-l-abbaye",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": [],
+  "parent": "french-revolution"
+}

@@ -13,11 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "participants-from-p710",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q2984901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Skirmish at Top Malo House\", revision 1371031391"
     }
   ],
   "title": "Skirmish at Top Malo House",
-  "summary": "Wikidata item Q2984901, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 skirmish during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Skirmish at Top Malo House\", at revision 1371031391, opens: \"The Skirmish at Top Malo House took place on 31 May 1982 during the Falklands War between Argentine special forces from 602 Commando Company and the British Royal Marines of the Mountain and Arctic Warfare Cadre (M&AWC). Top Malo House was the only planned daylight action of the war, although it was intended to take place in darkness. The Argentine commandos were part of an attempt to establish a screen of observation posts. A section that occupied Top Malo House was sighted by a British observation post of the Mountain and Arctic Warfare Cadre that was screening the British breakout from the lodgement around San Carlos. The action at Top Malo House was one of a series of mishaps and misfortunes that afflicted the Argentine effort.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2984901, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 skirmish during the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,
@@ -49,5 +55,11 @@
   "regionNote": null,
   "parent": "falklands-war",
   "category": "war",
-  "actors": []
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent",
+      "note": "Wikidata Q2984901, P710 (participant), Q145"
+    }
+  ]
 }

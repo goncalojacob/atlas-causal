@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "railway-protection-movement--wuchang-uprising--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Railway Protection Movement\", revision 1361142110, lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q339291 P828 (has cause) Q5368776"
+    }
+  ],
+  "from": "railway-protection-movement",
+  "to": "wuchang-uprising",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The English article says that \"the mobilization of imperial troops from neighboring Hubei Province to suppress the Railway Protection Movement created the opportunity for revolutionaries in Wuhan to launch the Wuchang Uprising\". The type is enabled rather than caused because that is the sentence's own shape: what the movement produced was the opening - a garrison sent out of Wuhan - and not the decision to rise. Wikidata records the link as the uprising's cause (Q339291, P828), which this atlas reads at the weaker of the two types the sources allow.",
+  "dispute": null
+}

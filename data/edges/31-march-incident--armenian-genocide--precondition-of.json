@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "31-march-incident--armenian-genocide--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"31 March incident\", revision 1370103767, lead"
+    }
+  ],
+  "from": "31-march-incident",
+  "to": "armenian-genocide",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The incident’s own lead carries the claim and attributes it rather than asserting it, and the attribution is kept in the quote below rather than dropped. The article reads: \"Some scholars have argued that the deterioration of ethnic relations and erosion of public institutions during 1908–1909 precipitated the Armenian genocide.\"",
+  "dispute": null
+}

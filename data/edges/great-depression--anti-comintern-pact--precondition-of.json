@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "great-depression--anti-comintern-pact--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Comintern Pact\", revision 1371954457, § Racial Equality Proposal of 1919, Washington Naval Conference of 1922"
+    }
+  ],
+  "from": "great-depression",
+  "to": "anti-comintern-pact",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The pact’s article traces the Japanese sense of humiliation it was signed out of through the 1920s downturn and the Depression of 1929. The article reads: \"This perception of national humiliation was further accelerated by the economic downturn that Japan experienced in the 1920s, exemplified by the 1927 financial panic in Japan (Shōwa financial crisis), which had also caused political instability and the fall of the first cabinet of Reijirō Wakatsuki, and by the 1929 Great Depression.\"",
+  "dispute": null
+}

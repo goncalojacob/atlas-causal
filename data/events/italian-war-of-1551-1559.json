@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one."
   },
   "origin": {
     "tool": "wikidata"
@@ -36,15 +39,19 @@
     {
       "source": "wikidata",
       "locator": "Q2524228"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1551–1559\", revision 1370624572"
     }
   ],
   "title": "Italian War of 1551–1559",
-  "summary": "Wikidata item Q2524228, imported by tools/import/wikidata.mjs. The item's own description reads \"1550s war between France and the Holy Roman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Italian War of 1551–1559\", at revision 1370624572, opens: \"The Italian War of 1551–1559 began when Henry II of France declared war against Charles V, Holy Roman Emperor, with the intent of recapturing parts of Italy and ensuring French, rather than Habsburg, domination of European affairs. The war ended following the signing of the Treaty of Cateau-Cambrésis between the monarchs of Spain, England and France in 1559. Historians have emphasized the importance of gunpowder technology, new styles of fortification to resist cannon fire, and the increased professionalization of the soldiers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2524228, imported by tools/import/wikidata.mjs. The item's own description reads \"1550s war between France and the Holy Roman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1551,
     "end": 1559
   },
-  "place": null,
+  "place": "italy-q38",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "italian-wars",

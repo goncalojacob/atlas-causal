@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "department-of-ica",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q208186",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Department of Ica",
+    "pt": "Ica (região)"
+  },
+  "sources": [],
+  "names": [
+    "Ica Department",
+    "Ica",
+    "Department of Ica",
+    "Ica (região)"
+  ],
+  "where": {
+    "lon": -75.73,
+    "lat": -14.07,
+    "precision": "point",
+    "label": "Department of Ica"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q208186, imported by tools/import/wikidata.mjs. The item's own description reads \"department of Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

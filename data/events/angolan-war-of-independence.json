@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "angolan-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1780216",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Angolan War of Independence",
+    "pt": "Guerra de Independência de Angola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1780216"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angolan War of Independence\", revision 1370428662"
+    }
+  ],
+  "title": "Angolan War of Independence",
+  "summary": "The English Wikipedia article \"Angolan War of Independence\", at revision 1370428662, opens: \"The Angolan War of Independence, known as the Armed Struggle of National Liberation in Angola, was a war of independence fought by the Angolan nationalist forces of the MPLA, UNITA and FNLA against Portugal. It began as an uprising by Angolans against the Portuguese imposition of forced cultivation of only cotton as a commodity crop.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1780216, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in Angola between 1961 and 1975\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1961,
+    "end": 1974,
+    "date": "1961-02-04",
+    "endDate": "1974-04-25"
+  },
+  "place": "angola-q916",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "portuguese-colonial-war-1961-1974",
+  "category": "war"
+}
