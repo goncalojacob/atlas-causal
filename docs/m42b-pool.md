@@ -2584,12 +2584,12 @@ and in "Where the run stands" below, for the owner.
   stronger, not weaker.
 - **The rate limit is on searching and on reading quickly, not on reading.**
   `Special:EntityData` answered every time. The REST summary endpoint answered
-  every time **until eight requests in a row at one second apart**, when it
-  returned "You are making too many requests to the API"; an eight-second wait
-  cleared it and nothing after that was refused. `index.php?action=raw&oldid=`
+  every time until the **seventh of eight requests made one second apart**,
+  which returned "You are making too many requests to the API"; an eight-second
+  wait cleared it and nothing after that was refused. `index.php?action=raw&oldid=`
   answered every time and is still the cheapest way to check a sentence a
   record will cite — this fire read four full articles that way.
   `api.php?action=wbsearchentities` was **not tried**: batch 9 found it
   answering 429 to everything, and taking the article title to the REST summary
-  endpoint and reading `wikibase_item` off it worked for ten of ten items here,
-  in one request each.
+  endpoint and reading `wikibase_item` off it answered for **ten of ten items
+  here**, in one request each and one of them after that single retry.
