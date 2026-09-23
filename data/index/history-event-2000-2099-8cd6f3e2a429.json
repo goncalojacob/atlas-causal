@@ -240,7 +240,7 @@
       ]
     },
     "2003-invasion-of-iraq": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5304,7 +5304,7 @@
       ]
     },
     "operation-odyssey-dawn": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

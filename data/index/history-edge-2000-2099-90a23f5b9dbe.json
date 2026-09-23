@@ -35,7 +35,7 @@
       ]
     },
     "2003-invasion-of-iraq--iraqi-insurgency--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -779,7 +779,7 @@
       ]
     },
     "libyan-civil-war--operation-odyssey-dawn--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
