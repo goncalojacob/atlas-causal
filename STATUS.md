@@ -20960,7 +20960,11 @@ itself, rebuilt over the merge commit and pushed the difference: five history
 shards and the manifest. Deviation **1230** is still open and cost this batch
 the places of both its battles, repaired by hand from each town item's own
 `P625` — `pavia` (`Q6259`) and `melegnano` (`Q42932`), both written as `city`.
-`docs/m53-polities.md` §4.1 is re-taken at **373 of 790** over the merged
+A second, **1234**: `git add -A data/index` is not the
+index, because the build has written `sources.html` and `narratives.html` since
+H8 and the batch's edges moved the bibliography's citation counts; the page was
+left in the working tree and `validate --index` did not catch it, its page half
+being `main` only. `docs/m53-polities.md` §4.1 is re-taken at **373 of 795** over the merged
 corpus, 374 by the overlap rule, and `docs/m42b-pool.md` → "Batch 12" carries
 all of it with the counts per lane and per century.
 

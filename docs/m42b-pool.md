@@ -2940,6 +2940,17 @@ can act on are now the Americas' 16th, 17th and 18th, at nine each.**
 
 ### Deviations
 
+**1234. `git add -A data/index` is not the index, because the build writes
+pages outside it.** `tools/build-index.mjs` has written `sources.html` and
+`narratives.html` since H8, and the batch's three edges added sixteen citations
+to the bibliography's counts. The index commit staged `data/index` alone and
+left the rewritten page in the working tree, where the fire found it only
+because it checked `git status` afterwards. `validate --index` did not catch
+it: the page half of that check is `main` only, so a branch can carry a stale
+prerendered page and still come back clean. **The rule 798 states as "rebuild,
+then commit the index" is "commit everything the build wrote"** — the two pages
+included.
+
 **1233. A merge of a records branch and the index that describes it were one
 commit again, and the fire caught it after pushing.** Deviation 1232, written
 by batch 11 on this branch, says the cure is three commits and not two: resolve
