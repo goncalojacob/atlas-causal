@@ -1121,7 +1121,12 @@
     "Q377269",
     "Q3704801",
     "Q3286392",
-    "Q18578423"
+    "Q18578423",
+    "Q210714",
+    "Q770372",
+    "Q42033121",
+    "Q2592647",
+    "Q1930278"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1354,7 +1359,9 @@
     "Q40949": "americas",
     "Q127912": "americas",
     "Q217450": "europe",
-    "Q377269": "americas"
+    "Q377269": "americas",
+    "Q203824": "africa",
+    "Q555833": "asia"
   },
   "queries": [
     {
@@ -3811,8 +3818,8 @@
     },
     "Q124734": {
       "kind": "event",
-      "label": "rebellion / civil war",
-      "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "label": "rebellion",
+      "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. The label was the candidate list's own phrase, \"rebellion / civil war\"; it is read from Wikidata here in M42 batch 42 and is `rebellion` alone. No category even so: the class is what Q2656683, the Simba rebellion, carries, and that record is a rebellion its own article also calls a regional uprising inside a civil war, so choosing between `revolution` and `war` for every item of this class is an edit somebody should argue with."
     },
     "Q131569": {
       "kind": "event",
@@ -3861,8 +3868,8 @@
     },
     "Q273120": {
       "kind": "event",
-      "label": "civil war / rebellion",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "label": "protest",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. The label was the candidate list's own word for those items, because that sandbox had no network; it is read from Wikidata here in M42 batch 42, which is what batch 40 asked of the next fire to touch this table. Still no category: a protest that seizes nothing is not `revolution`, which data/categories.json describes as a seizure or a loss of power."
     },
     "Q350604": {
       "kind": "event",
@@ -4854,6 +4861,17 @@
       "kind": "event",
       "label": "expedition",
       "note": "Added in M42b batch 11. The label and the description — \"discovery or research trip to a remote or undeveloped region\" — are read from the class item itself over the network, which this sandbox has; the class is here because Q18578423, the voyages of Christopher Columbus, carries it and the table did not. No category: data/categories.json has none for an expedition, and `other` would say less than nothing."
+    },
+    "Q5919191": {
+      "kind": "event",
+      "category": "war",
+      "label": "military intervention",
+      "note": "Added in M42 batch 42 from the class Q210714, the 2011 military intervention in Libya, names. The label and the description — \"use of force by a State over foreign territory\" — are read from the item itself over the network. The category needs no argument: data/categories.json describes `war` as organised armed force between polities."
+    },
+    "Q18493502": {
+      "kind": "event",
+      "label": "suicide bombing",
+      "note": "Added in M42 batch 42 from the class Q42033121, the 14 October 2017 Mogadishu bombings, names. The label and the description — \"type of suicide attack\" — are read from the item itself. No category: data/categories.json has none a bombing belongs to, since `war` is armed force between polities and `disaster` is harm nobody chose, and a thirteenth category is an edit somebody should argue with and not a batch's side effect."
     }
   },
   "reconcile": true

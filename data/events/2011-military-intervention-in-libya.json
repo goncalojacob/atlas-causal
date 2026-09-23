@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "2011-military-intervention-in-libya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A6 and A8: `P361` names Q81545, the Libyan Civil War, which this atlas closes on 2011-10-23 while the intervention ran to NATO's mandate ending on 31 October — eight days outside its parent, and A7 cannot widen a parent dated from its own article. Filed instead under `arab-spring`, whose span (2010-12-17 to 2012-12) holds it and whose subject is the one the civil war is filed under. Place from A9's `P276` = Q1016, the `libya-q1016` record already here."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q210714",
+  "wikipedia": {
+    "en": "2011 military intervention in Libya",
+    "pt": "Intervenção militar na Líbia em 2011"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q210714"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2011 military intervention in Libya\", revision 1370780938"
+    }
+  ],
+  "title": "2011 military intervention in Libya",
+  "summary": "The English Wikipedia article \"2011 military intervention in Libya\", at revision 1370780938, opens: \"On 19 March 2011, a NATO-led coalition began a military intervention into the ongoing Libyan Civil War to implement United Nations Security Council Resolution 1973 (UNSCR 1973). The UN Security Council passed the resolution with ten votes in favour and five abstentions, with the stated intent to have \"an immediate ceasefire in Libya, including an end to the current attacks against civilians\".\" Wikidata item Q210714, whose own description reads \"2011 conflict\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-19",
+    "endDate": "2011-10-31"
+  },
+  "place": "libya-q1016",
+  "region": null,
+  "regionNote": null,
+  "parent": "arab-spring",
+  "category": "war",
+  "actors": []
+}
