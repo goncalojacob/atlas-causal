@@ -14,15 +14,15 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
   "revised": "2026-09-17",
-  "origin": {
-    "tool": "assistant",
-    "run": "m50"
-  },
   "review": {
     "status": "draft",
     "flags": [
       "m50-chain"
     ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m50"
   },
   "sources": [
     {
@@ -31,6 +31,9 @@
     }
   ],
   "title": "The first Columbian voyage",
+  "names": [
+    "Primer viaje de Colón"
+  ],
   "summary": "Three ships left Palos on the morning of 3 August 1492 under Christopher Columbus, sailing west for the Catholic Monarchs of Spain in search of a shorter route to the Orient, and made land on the morning of 12 October on an island of the Lucayan Archipelago that Columbus named San Salvador. He believed he was in the Indies. The people who met him were Taíno, the first peoples of the New World encountered by non-Norse Europeans; he noted the gold some of them wore and the scars others carried. Three more voyages followed to 1504.",
   "when": {
     "start": 1492,
@@ -38,15 +41,13 @@
     "date": "1492-10-12"
   },
   "place": "san-salvador-island",
+  "region": null,
+  "parent": "voyages-of-christopher-columbus",
   "actors": [
     {
       "actor": "castille",
       "role": "government",
       "note": "Columbus sailed west for the Catholic Monarchs of Spain"
     }
-  ],
-  "names": [
-    "Primer viaje de Colón"
-  ],
-  "region": null
+  ]
 }

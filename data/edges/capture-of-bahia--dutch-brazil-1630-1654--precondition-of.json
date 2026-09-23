@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-bahia--dutch-brazil-1630-1654--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1375595876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    }
+  ],
+  "from": "capture-of-bahia",
+  "to": "dutch-brazil-1630-1654",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1624 seizure of Salvador was the West India Company's first attempt on Brazil, and the colony of 1630 was the second one. The Dutch Brazil article, at revision 1375595876, puts both in the same design: \"As part of the Groot Desseyn plan, admiral Jacob Willekens led a GWC force to Salvador in December 1623, which was then the capital of Brazil and the center of a captaincy famous for its sugarcane\", and then, of the funds Piet Heyn took at Matanzas Bay in 1628, that they \"provided the GWC the funds for another attempt to conquer Brazil at Pernambuco\" — another attempt is an attempt after the first. The Capture of Bahia article names the same plan. `precondition-of` and not `caused`: the article makes the 1630 conquest the second try of one Company design, and does not say the first try brought the second about.",
+  "dispute": null
+}

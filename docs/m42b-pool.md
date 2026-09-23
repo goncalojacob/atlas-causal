@@ -2521,75 +2521,283 @@ import run is told not to take. Nothing is broken and nothing was changed; the
 question is written up in "Europe's fifteenth century cannot be filled" above
 and in "Where the run stands" below, for the owner.
 
+## Batch 11 — the Dutch–Portuguese War, and the Americas' seventeenth century
+
+*23 September. The eleventh fire on the branch.* It took the first thing batch
+10's note left: **the Americas' seventeenth century, six active events and six
+main, not one of them filed under anything**. It brought the umbrella that cell
+was missing, two engagements to go under it, and — because it costs a main
+event to take one and the count may not rise — the fifteenth century's umbrella
+as well, which pays for itself the same way.
+
+### Before the batch
+
+The fire began by merging `origin/m42` (its batch 41) into this branch, which
+is where 781 active and a largest component of 553 come from; `docs/m53-polities.md`
+§4.1 was re-taken over the merged corpus at **372 of 781**.
+
+| | before | after |
+| --- | --- | --- |
+| active | 781 | **785** |
+| **main** | **242** | **242** |
+| filed | 539 | 543 |
+| active edges | 764 | 768 |
+| **largest connected component** | **553** | **557** |
+| components | 187 | 187 |
+| events with no edge | 157 | 157 |
+
+**The main count did not rise.** Two umbrellas arrived main and two events that
+had been main were filed under them, which is the arithmetic A3 and A6 ask for.
+
+### What was imported
+
+| record | item | span | lane | century |
+| --- | --- | --- | --- | --- |
+| `dutch-portuguese-war` | `Q377269` | 1601–1661 | americas | 17th |
+| `capture-of-bahia` | `Q3704801` | 1624 | americas | 17th |
+| `recapture-of-bahia` | `Q3286392` | 1625 | americas | 17th |
+| `voyages-of-christopher-columbus` | `Q18578423` | 1492–1504 | americas | 15th |
+
+**Four items put to `tools/import/wikidata.mjs --import`, four created, one
+refused on the first pass and created on the second** (see "The lane named for
+one item"). Every one carries the **cached English lead as its summary**, at
+the revision the cache names, with the `wikipedia-en` citation and the
+`summary-from-lead` flag: `Dutch–Portuguese War` at 1374150566, `Capture of
+Bahia` at 1370608303, `Recapture of Bahia` at 1373231929, `Voyages of
+Christopher Columbus` at 1376021649. **No record of this batch shows the
+import's placeholder.**
+
+### One class added
+
+`Q2401485` *expedition* — "discovery or research trip to a remote or
+undeveloped region", read from the class item itself over the network — → event,
+**no category**: `data/categories.json` has none for an expedition and `other`
+would say less than nothing. It is here because `Q18578423` carries it and the
+table did not. The two war classes the Dutch–Portuguese War carries,
+`Q2659056` *colonial war* and `Q876274` *naval warfare*, were already in the
+table from M40a and M42 batch 32.
+
+### The lane named for one item
+
+`Q377269`'s only location is `Q97`, the Atlantic Ocean, which reaches no lane,
+so the import refused it: *"no place record for its location, no lane reachable
+from its point, and no lane named for it in the seeds file; a placeless event
+must carry a region"*. The seeds file's `lanes` map is keyed by the **event's
+own** item and exists for exactly this, so `"Q377269": "americas"` was written
+and the item re-run. **That is a lane and not a claim**: the war's own lead puts
+it in "the Americas, Africa, and the East Indies", in that order, and the
+American theatre is the whole of what this atlas holds of it. Its `regionNote`
+says the lane was named in the seeds file, so a reader is not told the point
+derived it.
+
+### Filing (A3, A6, A8), and the main count
+
+| child | umbrella | why it fits |
+| --- | --- | --- |
+| `dutch-brazil-1630-1654` (1630–1654) | `dutch-portuguese-war` (1601–1661) | inside the span; the colony is the war's American theatre |
+| `capture-of-bahia` (1624) | `dutch-portuguese-war` | inside the span and the subject |
+| `recapture-of-bahia` (1625) | `dutch-portuguese-war` | inside the span and the subject |
+| `the-first-columbian-voyage-1492` (1492) | `voyages-of-christopher-columbus` (1492–1504) | the first of the four |
+
+Nothing else in the corpus fits either span **and** subject: the fire measured
+the 1601–1661 window and found `english-settlement-of-barbados-1627` and the
+whole Thirty Years' War tree inside it, and neither is this war's. A8 allows a
+second umbrella and none of the four earned one.
+
+### Places
+
+`capture-of-bahia` and `recapture-of-bahia` both point at **`salvador`**, the
+place record this atlas already held, whose point is the one `Q36947` gives.
+The recapture had derived that lane from its own `P625`; **the capture had been
+filed in the European lane**, which is deviation 1230. Neither event needed a
+new place record and none was written.
+
+`dutch-portuguese-war` is **placeless with a named lane** — its only location is
+an ocean — and `voyages-of-christopher-columbus` took `caribbean-sea`, the place
+record the atlas already held for `Q1247`.
+
+### The edges (A5, M72)
+
+Four, all `probable`, each quoting the article it cites at a named revision:
+
+| edge | type | sources |
+| --- | --- | --- |
+| `capture-of-bahia` → `recapture-of-bahia` | `reacted-to` | *Capture of Bahia* 1370608303, *Recapture of Bahia* 1373231929 |
+| `capture-of-bahia` → `dutch-brazil-1630-1654` | `precondition-of` | *Dutch Brazil* 1375595876, *Capture of Bahia* 1370608303 |
+| `dutch-portuguese-war` → `dutch-brazil-1630-1654` | `enabled` | *Dutch–Portuguese War* 1374150566, *Dutch Brazil* 1375595876 |
+| `voyages-of-christopher-columbus` → `spanish-colonization-of-the-americas` | `enabled` | *Spanish colonization of the Americas* 1376245871, *Voyages of Christopher Columbus* 1376021649 |
+
+Every one carries **two locators**, and every one was written to reach what the
+atlas already had: all four new records are inside the largest component, which
+is why it moved by exactly the four events added. No `consensus` was written —
+A2 allows it only through a work Wikipedia itself cites, and none of these four
+articles was read that far.
+
+**The arrow of time is a rule and it caught one of these.** The first draft was
+`recapture-of-bahia → capture-of-bahia --reacted-to`, reading the type off the
+reactor; rule 4 refused it — *"arrow of time: `recapture-of-bahia` cannot start
+after `capture-of-bahia`"* — and the edge was rewritten with the earlier event
+as `from`. The type names the relation and `from` is always the earlier end.
+
+### What was refused, and it is three records worth naming
+
+**`Q2088324`, Colonial Brazil, refused by class, and it is the umbrella this
+partition most wants.** Its only `P31` is `Q133156`, *colony* — "territory
+under the political control of an overseas state" — which is a polity and not
+an event, and the class table is right to have no event row for it. The article
+is a period article: "the period from 1500 … until 1815". **Five main events of
+this branch would fall inside that span and subject** —
+`portuguese-landfall-in-brazil-1500`, `governorate-general-of-brazil-1549`,
+`the-brazilian-sugar-cycle`, `the-brazilian-gold-cycle` and
+`indigenous-depopulation-of-coastal-brazil` — so the umbrella is worth **four
+main events** to whoever can write it. `Q2724951`, *Portuguese colonization of
+the Americas*, is the same subject under a class that would pass
+(`Q13418847`, *historical event*) and **carries no date of any kind**, so it
+cannot be imported either. This is deviation 1220's case again, and the third
+time this branch has met it.
+
+**`Q10701282`, the Atlantic slave trade, refused by class.** Its only `P31` is
+`Q17524420`, *aspect of history* — "topic viewed from a historical point of
+view" — which is a metaclass over every "History of …" article there is.
+Adding it as an event would type the whole of that shelf as events of this
+atlas, and no batch should buy one umbrella at that price. It would have taken
+`the-atlantic-slave-trade-to-brazil` and
+`the-atlantic-slave-trade-to-the-caribbean`.
+
+**`Q7634956`, Sugar plantations in the Caribbean, carries no `P31` at all** and
+no date. It is already cited by `the-caribbean-sugar-revolution` as a source,
+which is the right place for it.
+
+### Counts after this fire
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | 359 | 88 |
+| **americas** | **180** | **56** |
+| asia | 130 | 67 |
+| africa | 116 | 31 |
+
+| cell | active before | active after | main before | main after |
+| --- | --- | --- | --- | --- |
+| americas, 15th | 5 | **6** | 5 | 5 |
+| americas, 16th | 9 | 9 | 3 | 3 |
+| **americas, 17th** | **6** | **9** | **6** | **6** |
+| americas, 18th | 9 | 9 | 1 | 1 |
+| americas, 19th | 38 | 38 | 9 | 9 |
+| americas, 20th | 89 | 89 | 31 | 31 |
+| americas, 21st | 20 | 20 | 1 | 1 |
+| europe, 15th | 3 | 3 | 2 | 2 |
+| europe, 16th | 8 | 8 | 1 | 1 |
+| europe, 17th | 21 | 21 | 2 | 2 |
+| europe, 18th | 21 | 21 | 2 | 2 |
+| europe, 19th | 15 | 15 | 10 | 10 |
+
+The Americas' seventeenth century is no longer the thinnest cell this branch
+can act on, and it is no longer a cell with no umbrella: six of its nine are
+main, against six of six before.
+
+### Deviations
+
+**1230. The import reads `P276` before `P17`, but it only ever fetches the
+`P17` countries, so a `P276` location it did not fetch falls through to the
+country.** `Q3704801`'s locations are `Q36947` (Salvador) by `P276` and then
+`Q55` (the Netherlands), `Q2088324`, `Q155` by `P17`. A9's order was respected
+— `read.location.concat(read.administrative, read.country)` puts Salvador
+first — but `pointOf(qid)` can only answer for an entity in `entities` or
+`countryEntities`, and Salvador is in neither, so the first thing with a point
+was the Netherlands and **a Brazilian engagement was filed in the European
+lane**. This is not deviation 1227 (an unranked `P276` with several values); it
+is the list being ordered correctly over data that is not all there. **The fix
+is to fetch the `P276` and `P131` items the way the countries are already
+fetched**, and it belongs in `runImportMode` and not in a batch. The record was
+re-pointed at `salvador`, which the atlas already held, with the reason in its
+`review.note`.
+
+**1231. A refusal is recorded as done, so fixing the cause of one does not
+retry it.** `Q377269` was refused for want of a lane and written into
+`data/imports/wikidata-state.json` → `runs.import.done` all the same; adding
+`"Q377269": "americas"` to the seeds' `lanes` map changed nothing, because the
+cursor had passed. The qid had to be taken out of `done` by hand before the
+re-run created the record. **A refusal is not a completion** — the tool should
+either keep refusals out of `done` or carry a `refused` list the next run
+re-offers, so that editing the seeds file is enough to answer one.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 10.*
+*23 September, after batch 11.*
 
 | | |
 | --- | --- |
-| corpus | **776 active** |
+| corpus | **785 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **550** |
-| components | 186 |
+| **largest connected component** | **557** |
+| components | 187 |
 | events with no edge at all | 157 |
 | Europe before 1900 | 68 active, 17 main |
-| the `americas` lane | **176 active, 56 main** |
-| the `americas` lane, north of 30°N | **19 active** against 138 south of it |
-| the thinnest cells left, in this partition | the Americas' 17th (6), Europe's 16th (8), the Americas' 16th (9) and 18th (9) |
+| the `americas` lane | **180 active, 56 main** |
+| the thinnest cells left, in this partition | Europe's 16th (8), the Americas' 16th (9), 17th (9) and 18th (9) |
 
-**One question for the owner, and it blocks a century:**
+**The one question for the owner still blocks a century**, unchanged from batch
+10: **does the atlas begin in 1492, or does its first sentence follow the
+corpus wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names
+`atlas.extent.min` and two tests hold it there, so nothing on this branch can
+fill Europe's fifteenth century or anything earlier. A one-line answer unblocks
+four records already known to import cleanly (`Q212976`, `Q12551`, `Q127751`,
+`Q1552718`).
 
-- **Does the atlas begin in 1492, or does its first sentence follow the corpus
-  wherever the corpus goes?** See "Europe's fifteenth century cannot be filled"
-  above. Nothing on this branch can fill Europe's fifteenth century — or any
-  earlier one — while `WHAT_IT_IS` names `atlas.extent.min` and that is 1492.
-  Four records for it were imported and backed out by this fire. **A one-line
-  answer unblocks four records that are already known to import cleanly**
-  (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and with them the Reconquista,
-  the Hussite Wars and everything else before Columbus.
+**A second question is now worth one line of the owner's time**, because the
+branch has met it three times: **may a run take a period umbrella from an item
+whose class is a polity, where the article is plainly a period article?**
+Colonial Brazil (`Q2088324`) is the case — an article that opens "the period
+from 1500 … until 1815", carrying the class *colony* — and it is worth four
+main events on its own. The run will not decide this itself: the class table is
+an editorial decision and the whole point of it living in `data/`.
 
 **What the next fire should weigh, in order:**
 
-- **The Americas' seventeenth century is the thinnest cell this branch can act
-  on**, at six active events and six main — every one of them a Caribbean or
-  Brazilian economic record (`dutch-brazil-1630-1654`,
-  `english-settlement-of-barbados-1627`, `the-caribbean-sugar-revolution` and
-  three like them), and **not one of them is filed under anything**. A cell
-  where active and main are the same number is a cell with no umbrella. The
-  Dutch–Portuguese War (1598–1663) is the one `dutch-brazil-1630-1654` would
-  fit inside; the other five span past 1663 or are English, so an umbrella that
-  takes more of them has to be found rather than assumed. Check its lane before
-  importing: most of that war was fought in Asia and Africa, which are M42's.
-- **The Americas' fifteenth century is five active and five main**, and it is
-  the same fault in a cell this branch *can* touch, because everything in it is
-  1492 or later: `spanish-colonization-of-the-americas` begins in 1493 and so
-  cannot take `the-first-columbian-voyage-1492` or
-  `indigenous-depopulation-of-the-greater-antilles`, both of which begin in
-  1492. An umbrella for the Columbian voyages themselves — the article the
-  first voyage already cites is *Voyages of Christopher Columbus* — would take
-  three of the five and cost one.
-- **The Seven Years' War is the hole the American Revolutionary War points at**,
-  the way the Bourbon Reforms were the hole the two risings of 1780–1781
-  pointed at. `Q33143` is importable — `P31` `Q198` (war), `P580` 1756-05-17,
-  `P582` 1763-02-15 — and this fire left it out for one reason: Europe's
-  eighteenth century has no umbrella it would fit inside, so it would arrive
-  main and raise the count the brief forbids raising. **A fire that wants it
-  should bring an eighteenth-century European umbrella with it**, or file an
-  existing main event to pay for it.
-- **The Alhambra Decree and the Capitulations of Santa Fe are both refusable
-  and both wanted**, and unlike the fifteenth century they are not blocked by
-  the floor — both are 1492. See "What was refused". With the Bourbon Reforms
-  and the Treaty of Madrid (1750), this branch has now met four records it can
-  name, can cite and cannot import. That is deviation 1220's case getting
-  stronger, not weaker.
-- **The rate limit is on searching and on reading quickly, not on reading.**
-  `Special:EntityData` answered every time. The REST summary endpoint answered
-  every time until the **seventh of eight requests made one second apart**,
-  which returned "You are making too many requests to the API"; an eight-second
-  wait cleared it and nothing after that was refused. `index.php?action=raw&oldid=`
-  answered every time and is still the cheapest way to check a sentence a
-  record will cite — this fire read four full articles that way.
-  `api.php?action=wbsearchentities` was **not tried**: batch 9 found it
-  answering 429 to everything, and taking the article title to the REST summary
-  endpoint and reading `wikibase_item` off it answered for **ten of ten items
-  here**, in one request each and one of them after that single retry.
+- **Europe's sixteenth century is now the thinnest cell this branch can act
+  on**, at eight active and one main. Unlike the Americas' seventeenth it is
+  not a cell without umbrellas: seven of the eight are filed, under
+  `italian-wars`, `italian-war-of-1551-1559` and
+  `spanish-colonization-of-the-americas`, none of which is itself in the cell.
+  The one main is `hereditary-captaincies-of-brazil-1534`, which is a Brazilian
+  record sitting in the European lane and worth a second look on its own
+  account. The cell is simply thin. The Dutch Revolt, the Wars of Religion and the
+  Iberian Union of 1580 are all in it and all are things this atlas's own
+  records reach for: `dutch-portuguese-war`'s article says the war "can be
+  thought of as an extension of the Eighty Years' War being fought in Europe at
+  the time between Spain and the Netherlands, as Portugal was in a dynastic
+  union with Spain", at revision 1374150566, and **this atlas holds neither the
+  Eighty Years' War nor the Iberian Union**. Either one would connect the
+  Americas' seventeenth century to Europe's, which is a component the branch
+  has not built yet.
+- **The Seven Years' War is still the hole the American Revolutionary War
+  points at**, unchanged from batch 10. `Q33143` is importable — `P31` `Q198`
+  (war), `P580` 1756-05-17, `P582` 1763-02-15 — and Europe's eighteenth century
+  still has no umbrella it would fit inside, so it arrives main. **A fire that
+  wants it should bring an eighteenth-century European umbrella with it**, or
+  file an existing main event to pay for it. This batch's arithmetic is the
+  pattern: two umbrellas in, two filings out, the count unmoved.
+- **Palmares is named, cited, dated and importable, and this fire left it
+  out.** `Q1542741`, 1605–1694, *Palmares (quilombo)*, revision 1373599736 —
+  "a quilombo, a community of escaped slaves and others, in colonial Brazil
+  that developed from 1605 until its suppression in 1694". It is the Americas'
+  seventeenth century and it is not a war or an economic record, which is
+  everything else in that cell. **Nothing in the corpus spans 1605–1694**, so
+  it would arrive main and raise the count: it needs Colonial Brazil, or a
+  filing to pay for it.
+- **The Groot Desseyn is the umbrella both Bahia engagements and Dutch Brazil
+  would take a second parent from**, under A8, if it has an item with a class
+  and a span. This fire did not look it up. `Dutch Brazil` at revision
+  1375595876 names it twice.
+- **The rate limit is on searching and on reading quickly, not on reading**, as
+  batch 10 found. `Special:EntityData` answered every one of eleven requests.
+  The REST summary endpoint answered seven of eleven first time and returned
+  "You are making too many requests to the API" for the other four; an
+  `until`-loop at twelve seconds cleared every one of them, and **a title that
+  does not exist comes back as `type: "Internal error"` rather than a 404**, so
+  a retry loop must not treat that as rate limiting (*Battles of Guararapes*
+  and *Capture of Olinda* are both spelt something else). `index.php?action=raw`
+  answered every time and is still the cheapest way to read a whole article:
+  this fire read *Dutch Brazil* and *Dutch–Portuguese War* that way and both
+  edges out of the Bahia pair came from them.

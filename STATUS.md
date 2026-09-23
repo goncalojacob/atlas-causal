@@ -20821,6 +20821,44 @@ hand) and **1229** (the first screen is a floor on the corpus).
 `docs/m42b-pool.md` → "Batch 10" carries all of it with the counts per lane and
 per century.
 
+**M42b batch 11 — the Dutch–Portuguese War, and the Americas' seventeenth
+century, 23 September.** The eleventh fire on the branch took what batch 10's
+note left first: the Americas' seventeenth century, six active events and six
+main, **not one of them filed under anything**. Four records imported from
+Wikidata and Wikipedia — `dutch-portuguese-war` (`Q377269`, 1601–1661),
+`capture-of-bahia` (`Q3704801`, 1624), `recapture-of-bahia` (`Q3286392`, 1625)
+and `voyages-of-christopher-columbus` (`Q18578423`, 1492–1504) — every one
+carrying its cached English lead at a named revision and **none showing the
+import's placeholder**. One class added, `Q2401485` *expedition*, with no
+category because `data/categories.json` has none for one. The corpus goes from
+781 active to **785**; **the main count is 242 before the batch and 242 after
+it**, because two umbrellas arrived main and two events that had been main —
+`dutch-brazil-1630-1654` and `the-first-columbian-voyage-1492` — were filed
+under them. Four edges, all `probable` and all carrying two locators; **the
+largest connected component goes from 553 to 557**, which is exactly the four
+records added, so nothing arrived stranded. Both Bahia engagements point at
+`salvador`, the place record the atlas already held, and no new place was
+written.
+
+**Three records this branch can name, can cite and cannot import**, which is
+deviation 1220's case for the third time. **Colonial Brazil (`Q2088324`) is the
+umbrella this partition most wants** — an article that opens "the period from
+1500 … until 1815", worth four main events, whose only class is `Q133156`
+*colony*, a polity and not an event; *Portuguese colonization of the Americas*
+(`Q2724951`) is the same subject under a class that would pass and carries no
+date at all. The **Atlantic slave trade** (`Q10701282`) is classed
+`Q17524420` *aspect of history*, a metaclass over every "History of …" article
+there is, and no batch should buy one umbrella at that price.
+
+Two deviations: **1230** (the import reads `P276` before `P17` but only ever
+fetches the `P17` countries, so a `P276` location it did not fetch falls
+through to the country — it filed a Brazilian engagement in the European lane)
+and **1231** (a refusal is written into `wikidata-state.json` → `done`, so
+fixing the cause of one does not retry it; `Q377269` had to be taken out by
+hand after its lane was named). `docs/m53-polities.md` §4.1 is re-taken at
+**372 of 781** over the merged corpus, and `docs/m42b-pool.md` → "Batch 11"
+carries all of it with the counts per lane and per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

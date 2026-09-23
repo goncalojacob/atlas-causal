@@ -1117,7 +1117,11 @@
     "Q133919",
     "Q40949",
     "Q127912",
-    "Q217450"
+    "Q217450",
+    "Q377269",
+    "Q3704801",
+    "Q3286392",
+    "Q18578423"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1349,7 +1353,8 @@
     "Q2444955": "africa",
     "Q40949": "americas",
     "Q127912": "americas",
-    "Q217450": "europe"
+    "Q217450": "europe",
+    "Q377269": "americas"
   },
   "queries": [
     {
@@ -4790,13 +4795,13 @@
       "kind": "place",
       "precision": "region",
       "label": "historical region",
-      "note": "Added in M42b batch 9, for the Misiones Orientales the Guaraní War was fought over. The label and the description are read from the class item itself over the network: Wikidata glosses it \u201cgeographic or cultural region which existed in the past, that may or may not exist anymore\u201d. A region that no longer exists is still somewhere events happened, which is what a place is here; `precision` says how coarsely it is drawn."
+      "note": "Added in M42b batch 9, for the Misiones Orientales the Guaraní War was fought over. The label and the description are read from the class item itself over the network: Wikidata glosses it “geographic or cultural region which existed in the past, that may or may not exist anymore”. A region that no longer exists is still somewhere events happened, which is what a place is here; `precision` says how coarsely it is drawn."
     },
     "Q7468093": {
       "kind": "place",
       "precision": "region",
       "label": "captaincy of Brazil",
-      "note": "Added in M42b batch 9, for the Minas Gerais Captaincy the Inconfid\u00eancia Mineira happened in. Read from the class item itself: \u201cadministrative divisions and hereditary fiefs of Portugal in the colony of Terra de Santa Cruz\u201d. A captaincy is ground under an administration and the atlas holds it as a place, the way it holds a department of Colombia (Q215655); what the Portuguese crown did there are the events."
+      "note": "Added in M42b batch 9, for the Minas Gerais Captaincy the Inconfidência Mineira happened in. Read from the class item itself: “administrative divisions and hereditary fiefs of Portugal in the colony of Terra de Santa Cruz”. A captaincy is ground under an administration and the atlas holds it as a place, the way it holds a department of Colombia (Q215655); what the Portuguese crown did there are the events."
     },
     "Q20203507": {
       "kind": "actor",
@@ -4844,6 +4849,11 @@
       "kind": "place",
       "label": "municipality of Spain",
       "note": "Added in M42b batch 8. The label and the description are read from the class item itself over the network; Q15284 municipality and Q2555896 municipality of Colombia are the precedent for a municipality being a place of this atlas."
+    },
+    "Q2401485": {
+      "kind": "event",
+      "label": "expedition",
+      "note": "Added in M42b batch 11. The label and the description — \"discovery or research trip to a remote or undeveloped region\" — are read from the class item itself over the network, which this sandbox has; the class is here because Q18578423, the voyages of Christopher Columbus, carries it and the table did not. No category: data/categories.json has none for an expedition, and `other` would say less than nothing."
     }
   },
   "reconcile": true
