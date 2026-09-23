@@ -19875,6 +19875,104 @@ and A13's relations pass, still never run.
       available, needing no import at all. **A13's pass should be budgeted for
       the reading and not for the rows**: 41 pairs are waiting for it and this
       is the rate at which they will survive.
+1213. **A name matched as a substring is not a name, and 45 of 312 rows were
+      that.** A13's first matcher asked `sentence.includes(name)`, which made
+      **"World War I" match inside "World War II"** and **"Iraq War" inside
+      "Iran–Iraq War"**, and made the Carnation Revolution's name `25 April`
+      match every article carrying that date. Every one of those 45 rows was a
+      false link between two records the atlas really holds, which is the worst
+      shape a false positive can take: it reads as a finding. A name now has to
+      stand on its own — no word character and no joining dash on either side —
+      and a name that is only a day and a month is not a name in prose at all.
+      Batch 29 named the *namesake* (a title match is not an identity); this is
+      its mechanical half, and it is the reason the pass's numbers are 267 and
+      not 312.
+1214. **Batch 31a's umbrella rule now costs eight readings a pass, three of
+      them the plainest links in the corpus.** No edge may touch either end of
+      a record carrying an umbrella flag, and seventeen records carry one. A13
+      argued `world-war-i --precondition-of--> world-war-ii` from the Second
+      World War's own lead, `world-war-ii --precondition-of-->
+      decolonisation-of-africa` from the decolonisation article's § External
+      causes, and `scramble-for-africa --precondition-of--> world-war-i` from
+      the Scramble's § Aftermath, and the rule refuses all three. The rule is
+      right as written — a period is a display fact — but the four records it
+      bites on (`world-war-ii`, `scramble-for-africa`,
+      `decolonisation-of-africa`, `indochina-wars`) are wars and processes
+      before they are periods. **The question batch 31a left is now four
+      records wide and is the cheapest thing that would grow the component**;
+      it is the owner's to settle and no fire's.
+1215. **The arrow of time refused five readings the articles support, and two
+      of those are record dates that are wrong.** Rule 4 is not an obstacle
+      here, it is the second reader: it caught that Brest-Litovsk (March 1918)
+      cannot be a precondition of a civil war beginning in November 1917, that
+      the revolutions of 1989 cannot enable a war beginning in 1974, and that
+      `insurgency-in-kosovo` at 1998-02-28 and `operation-sutton` at
+      1982-05-23 are both dated after things they plainly precede — Operation
+      Sutton **is** the San Carlos landing of 21 May. **A pass that reads
+      articles needs a validator that reads records**, and the two bad dates
+      are A7's to correct from the cited article.
+1216. **An attributed claim is not a dispute.** Two edges were written
+      `disputed` because the article said *"Some scholars have argued"* and
+      *"India contends"*. Rule 8 requires who disagrees and why **with the
+      dissenting citations**, and an article that attributes a claim names no
+      dissenter to cite. The atlas already has the word for a claim nobody has
+      settled and it is `probable`; both were rewritten as that, with the
+      attribution quoted word for word in the explanation rather than dropped.
+      Marking an unsettled claim `disputed` would have manufactured a
+      disagreement, which is the one thing `confidence` exists to stop.
+1217. **`second-guangzhou-uprising --caused--> wuchang-uprising` is written,
+      and deviation 1212 is not reversed.** Batch 38 refused the pair because
+      the uprising's lead *"says only that it was a failed uprising that took
+      place in China"*, and that reading was correct about the lead — which is
+      all the cache under `tools/import/cache/wikipedia/` holds (longest file
+      4,947 characters, median 415). The whole article's § Legacy says *"Some
+      historians believe that the uprising was a direct cause of the Wuchang
+      Uprising"*. **The endpoint is the finding**: A13's value is not a better
+      judgement than batch 38's, it is 539 articles read whole instead of 539
+      first paragraphs, and this pair is the proof that the difference pays.
+1218. **Where a Wikidata item names several locations, A9 takes the one the
+      record's own title names.** `P276` on the Italian War of 1551–1559 lists
+      France first and Italy third. A9 says *the first item that carries
+      `P625`*, and obeying it literally would have put a war called Italian at
+      the centre of France and called that a reading of the source. The rule
+      the pass follows is: the located thing the record's own title names, and
+      the first only where the title names none. Ten places were assigned and
+      one of them turned on this.
+1219. **A13's contradiction half found nothing, and the test that found
+      nothing is too blunt to keep.** The amendment asks for edges the article
+      contradicts. The pass looked for a causal cue sitting between the two
+      names with the atlas's *later* record written first, over all 539
+      articles, and got two hits — both sentences that **agree** with the edge
+      and were flagged only because the later record is named first (*"an
+      armistice that brought about a cessation of hostilities of the Korean
+      War"*; *"sparked by the overthrowing of the Russian Provisional
+      Government in the October Revolution"*). **Word order is not direction.**
+      So the honest report is that no article contradicts an edge on this
+      reading, and that a real second half needs the sentence parsed for which
+      name is the subject of the causal verb — a different tool, and not one to
+      fake with positions.
+1220. **The endpoint that returns a preview is not the endpoint that returns
+      the article, and this fire paid for that twice.** A13 read 539 articles
+      whole and wrote 56 edges the cached leads could not have argued; the
+      summary pass then refused 49 records for a lead under two sentences and
+      found that **40 of those 49 have a lead of two sentences or more in the
+      article itself**. The cache under `tools/import/cache/wikipedia/` holds
+      the REST summary extract — longest file 4,947 characters, median 415 —
+      and every pass that has read "the lead" since M42 began has read an
+      abbreviation of one. Nothing in the cache is wrong; it is the wrong
+      thing to read for this question, and a fire that wants a lead should
+      fetch `action=query&prop=extracts&explaintext` and cut at the first
+      heading.
+1221. **A measurement of one's own work is worth taking twice, and the first
+      take here said the opposite of the truth.** This fire's first pass over
+      the summaries matched the placeholder's *words* anywhere in the field
+      and reported that **no** active event still carried one. 330 records
+      carry the import's sentence **behind** a lead written in front of it,
+      which is the correct shape, and 87 records **opened** on it, which is
+      the defect. The claim "no active event carries the import's placeholder
+      any more" was written into `docs/m42-pool.md` and then taken out again
+      in the same fire. A count of what is wrong has to ask where the wrong
+      thing is, not whether its words appear.
 
 ## M84 — the owner's feedback document
 
@@ -20852,4 +20950,5 @@ M84 done
 M42b started 2026-09-23T01:12:42Z by scheduled
 M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done
+M42 started 2026-09-23T02:06:09Z by scheduled
 M42b started 2026-09-23T03:47:07Z by scheduled

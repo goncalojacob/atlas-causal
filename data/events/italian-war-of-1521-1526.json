@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38."
   },
   "origin": {
     "tool": "wikidata"
@@ -36,15 +39,19 @@
     {
       "source": "wikidata",
       "locator": "Q698281"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1521–1526\", revision 1370788853"
     }
   ],
   "title": "Italian War of 1521–1526",
-  "summary": "Wikidata item Q698281, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between France and the Habsburg empires of Charles V, Holy Roman Emperor and King of Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Italian War of 1521–1526\", at revision 1370788853, opens: \"The Italian War of 1521–1526, sometimes known as the Four Years' War, was a part of the Italian Wars. The war pitted Francis I of France and the Republic of Venice against the Holy Roman Emperor Charles V, Henry VIII of England, and the Papal States. It arose from animosity over the election of Charles as Emperor in 1519–1520 and from Pope Leo X's need to ally with Charles against Martin Luther.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q698281, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between France and the Habsburg empires of Charles V, Holy Roman Emperor and King of Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1521,
     "end": 1526
   },
-  "place": null,
+  "place": "italy-q38",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "italian-wars",

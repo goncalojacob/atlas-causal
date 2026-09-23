@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q2294274"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Algeciras\", revision 1374886849"
     }
   ],
   "title": "Operation Algeciras",
-  "summary": "Wikidata item Q2294274, imported by tools/import/wikidata.mjs. The item's own description reads \"Argentine plan to sabotage a British warship in Gibraltar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Operation Algeciras\", at revision 1374886849, opens: \"Operation Algeciras was a failed Argentine plan to sabotage a Royal Navy warship in Gibraltar during the Falklands War. The Argentine reasoning was that if the British military felt vulnerable in Europe, they would decide to keep some vessels in European waters rather than send them to the Falklands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2294274, imported by tools/import/wikidata.mjs. The item's own description reads \"Argentine plan to sabotage a British warship in Gibraltar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q193739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
     }
   ],
   "title": "Amsterdam Treaty",
-  "summary": "Wikidata item Q193739, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty of the European Union, revision of the Treaty of Maastricht\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Treaty of Amsterdam\", at revision 1352365700, opens: \"The Treaty of Amsterdam, officially the Treaty of Amsterdam amending the Treaty on European Union, the Treaties establishing the European Communities and certain related acts, was signed on 2 October 1997, and entered into force on 1 May 1999; it made substantial changes to the Maastricht Treaty, which had been signed in 1992. Under the Treaty of Amsterdam, member states agreed to transfer certain powers from national governments to the European Parliament across diverse areas, including legislating on immigration, adopting civil and criminal laws in areas of shared and exclusive competency, and enacting common foreign and security policy (CFSP), as well as implementing institutional changes for expansion as new member nations join the EU.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q193739, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty of the European Union, revision of the Treaty of Maastricht\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1997,
     "end": 1997,

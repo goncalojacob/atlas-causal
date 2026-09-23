@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "treaty-of-london-q584617--treaty-of-bucharest--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572, lead"
+    }
+  ],
+  "from": "treaty-of-london-q584617",
+  "to": "treaty-of-bucharest",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Bucharest amended London, and the 1913 treaty is the one it amended — the article says which by naming the war London ended. The article reads: \"The Treaty was concluded in the aftermath of the Second Balkan War and amended the previous Treaty of London, which ended the First Balkan War.\"",
+  "dispute": null
+}

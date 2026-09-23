@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "young-turk-revolution-of-1908--arab-revolt--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Revolt\", revision 1370428832, § Sharif Hussein of Mecca"
+    }
+  ],
+  "from": "young-turk-revolution-of-1908",
+  "to": "arab-revolt",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The revolt’s article makes the revolution the reason its leader held the office he raised it from: Hussein was made Emir of Mecca in its aftermath. The article reads: \"In 1908, in the aftermath of the Young Turk Revolution, he was appointed Emir of Mecca by the Ottoman sultan Abdul Hamid II.\"",
+  "dispute": null
+}

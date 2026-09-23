@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ],
     "status": "draft"
   },
@@ -38,10 +39,14 @@
     {
       "source": "wikidata",
       "locator": "Q193270"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lateran Treaty\", revision 1376059839"
     }
   ],
   "title": "Lateran Treaty",
-  "summary": "Wikidata item Q193270, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between the Holy See and Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Lateran Treaty\", at revision 1376059839, opens: \"The Lateran Treaty was one component of the Lateran Pacts of 1929, agreements between Italy under King Victor Emmanuel III and Duce Benito Mussolini and the Holy See under Pope Pius XI to settle the long-standing Roman question. The treaty recognised Vatican City as an independent state under the sovereignty of the Holy See. Italy also agreed to give the Catholic Church financial compensation for the loss of the Papal States. In 1948, the Lateran Treaty was recognized in the Constitution of Italy as regulating the relations between the Italian Republic and the Catholic Church. While the treaty was significantly revised in 1984, ending the status of Catholicism as the sole state religion of Italy, the Vatican remains a distinct sovereign entity to the present day. The treaty and associated pacts were named after the Lateran Palace, where they were signed on 11 February 1929. The Italian Parliament ratified them on 7 June 1929.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q193270, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between the Holy See and Kingdom of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1929,
     "end": 1985,

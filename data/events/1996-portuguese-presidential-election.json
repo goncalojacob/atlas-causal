@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q3066523"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1996 Portuguese presidential election\", revision 1371811573"
     }
   ],
   "title": "1996 Portuguese presidential election",
-  "summary": "Wikidata item Q3066523, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1996 Portuguese presidential election\", at revision 1371811573, opens: \"A presidential election was held in Portugal on 14 January 1996. Incumbent president Mário Soares was constitutionally barred from a third consecutive term. The Social Democrats were coming from a clear defeat in the 1995 Portuguese legislative election, and their former leader, Aníbal Cavaco Silva, who had left the office of Prime Minister after 10 years at the helm, ran against the Mayor of Lisbon, Jorge Sampaio. This was a rematch of the 1991 legislative election, where Cavaco Silva defeated Jorge Sampaio by a 51 to 29 percent margin. The other left-wing candidates, Jerónimo de Sousa and Alberto Matos, presented by the Portuguese Communist Party and the People's Democratic Union respectively, both withdrew from the race one week before the elections, announcing their support for Jorge Sampaio, in order to concentrate the left-wing vote and avoid a runoff. These parties had already supported Sampaio in a coalition that won the local elections in Lisbon. It would be the last time that People's Democratic Union presented a candidate, as two years later it merged with other small left-wing parties and formed the Left Bloc. Cavaco Silva was supported by the Social Democratic Party, failing to get the support of the People's Party, led by Manuel Monteiro. On election day, Sampaio won with nearly 54 percent of the votes and by a more than 400,000 vote margin over Cavaco Silva, which gathered just over 46 percent of the votes and, once more, the right-wing parties did not win the presidential election. Sampaio gained the majority of the votes in all the districts in the South of Portugal, including the Communist strongholds in Alentejo and Setúbal district. Cavaco won in the more conservative districts of the North (excluding Porto district, where Sampaio edged out Cavaco by a narrow 52 to 48 percent margin) and also in Leiria district, traditional strongholds of the right-wing parties. Voter turnout increased to 66% of registered voters compared to the previous presidential election, although it stood basically at the same level as the 1995 legislative election, held just three months earlier. Sampaio was sworn in as President on 9 March 1996. Aníbal Cavaco Silva would have to wait ten more years to be elected president in 2006.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3066523, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1996,
     "end": 1996,
