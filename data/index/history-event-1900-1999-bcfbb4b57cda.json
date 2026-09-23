@@ -6701,7 +6701,7 @@
       ]
     },
     "battle-of-inchon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -14479,7 +14479,7 @@
       ]
     },
     "operation-badr-1973": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -18176,6 +18176,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-18"
         }
       ]

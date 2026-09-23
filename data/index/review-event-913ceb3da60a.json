@@ -5777,6 +5777,37 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-cartagena-de-indias",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cartagena de Indias"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "id": "battle-of-chacabuco",
       "kind": "event",
       "origin": {
@@ -10186,6 +10217,7 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "spanish-colonization-of-the-americas",
       "review": {
         "flags": [
           "m50-chain"
@@ -12349,6 +12381,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "first-treaty-of-san-ildefonso",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Treaty of San Ildefonso"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -13337,6 +13400,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "guarani-war",
       "kind": "event",
       "origin": {
@@ -23942,6 +24006,7 @@
         "run": "m57",
         "tool": "assistant"
       },
+      "parent": "the-amazon-rubber-boom",
       "review": {
         "flags": [
           "m57-narrative"
@@ -24808,6 +24873,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Treaty of London (1913)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "treaty-of-madrid-13-january-1750",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Madrid (13 January 1750)"
     },
     {
       "authors": [
@@ -26477,6 +26573,66 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "war-of-jenkins-ear",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of Jenkins' Ear"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "war-of-the-austrian-succession",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Austrian Succession"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -27899,12 +28055,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "guarani-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "haitian-embassy-in-cuba-massacre",

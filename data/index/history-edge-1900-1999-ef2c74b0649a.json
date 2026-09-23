@@ -3907,10 +3907,16 @@
       ]
     },
     "operation-badr-1973--yom-kippur-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "explanation"
+          ],
           "on": "2026-09-23"
         }
       ]

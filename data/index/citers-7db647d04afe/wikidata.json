@@ -2510,6 +2510,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cartagena-de-indias",
+      "kind": "event",
+      "locator": "Q2366970"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "Q1425658"
@@ -3491,6 +3497,12 @@
       "id": "first-sudanese-civil-war",
       "kind": "event",
       "locator": "Q823730"
+    },
+    {
+      "dissent": false,
+      "id": "first-treaty-of-san-ildefonso",
+      "kind": "event",
+      "locator": "Q580765"
     },
     {
       "dissent": false,
@@ -5216,6 +5228,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-madrid-13-january-1750",
+      "kind": "event",
+      "locator": "Q1422396"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-neuilly-sur-seine",
       "kind": "event",
       "locator": "Q269267"
@@ -5471,6 +5489,18 @@
       "id": "war-of-attrition",
       "kind": "event",
       "locator": "Q322607"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-jenkins-ear",
+      "kind": "event",
+      "locator": "Q54434"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-austrian-succession",
+      "kind": "event",
+      "locator": "Q32929"
     },
     {
       "dissent": false,

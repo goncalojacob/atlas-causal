@@ -18932,6 +18932,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "treaty-of-madrid-13-january-1750",
+      "id": "treaty-of-madrid-13-january-1750--first-treaty-of-san-ildefonso--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-treaty-of-san-ildefonso",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "treaty-of-madrid-13-january-1750",
+      "id": "treaty-of-madrid-13-january-1750--guarani-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "guarani-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "treaty-of-nice",
       "id": "treaty-of-nice--treaty-establishing-a-constitution-for-europe--precondition-of",
@@ -20379,6 +20437,64 @@
       "status": "active",
       "to": "yom-kippur-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "war-of-jenkins-ear",
+      "id": "war-of-jenkins-ear--battle-of-cartagena-de-indias--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-cartagena-de-indias",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "war-of-jenkins-ear",
+      "id": "war-of-jenkins-ear--war-of-the-austrian-succession--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-of-the-austrian-succession",
+      "type": "enabled"
     },
     {
       "authors": [
