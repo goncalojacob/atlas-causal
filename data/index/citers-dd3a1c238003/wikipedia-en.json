@@ -1826,6 +1826,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-liaoyang--battle-of-mukden--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
@@ -1853,6 +1859,30 @@
       "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mukden--treaty-of-portsmouth--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mukden--treaty-of-portsmouth--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Port Arthur\", revision 1373678673, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nanshan--siege-of-port-arthur--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Nanshan\", revision 1370451314, § Background and § Results"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
     },
     {
       "dissent": false,
@@ -1889,6 +1919,18 @@
       "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yalu-river-1904--battle-of-liaoyang--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766, § Significance"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yalu-river-1904--battle-of-nanshan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Nanshan\", revision 1370451314, § Background"
     },
     {
       "dissent": false,
@@ -4397,6 +4439,30 @@
       "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-mukden--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-tsushima--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
     },
     {
       "dissent": false,
@@ -7172,6 +7238,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-liaoyang",
+      "kind": "event",
+      "locator": "\"Battle of Liaoyang\", revision 1370447606"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "\"Battle of Long Tan\", revision 1372094029"
@@ -7226,9 +7298,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mukden",
+      "kind": "event",
+      "locator": "\"Battle of Mukden\", revision 1375786749"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nanshan",
+      "kind": "event",
+      "locator": "\"Battle of Nanshan\", revision 1370451314"
     },
     {
       "dissent": false,
@@ -7241,6 +7325,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-arthur",
+      "kind": "event",
+      "locator": "\"Battle of Port Arthur\", revision 1376392782"
     },
     {
       "dissent": false,
@@ -7325,6 +7415,18 @@
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "\"Battle of the Downs\", revision 1370599272"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yalu-river-1904",
+      "kind": "event",
+      "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yellow-sea",
+      "kind": "event",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941"
     },
     {
       "dissent": false,
@@ -9437,6 +9539,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "\"Siege of Pilsen\", revision 1370744459"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur",
+      "kind": "event",
+      "locator": "\"Siege of Port Arthur\", revision 1373678673"
     },
     {
       "dissent": false,

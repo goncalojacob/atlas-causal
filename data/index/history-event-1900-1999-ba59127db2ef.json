@@ -6836,6 +6836,15 @@
         }
       ]
     },
+    "battle-of-liaoyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-long-tan": {
       "from": "git",
       "versions": [
@@ -6955,6 +6964,15 @@
         }
       ]
     },
+    "battle-of-mukden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-musa-dagh": {
       "from": "git",
       "versions": [
@@ -6980,6 +6998,15 @@
         }
       ]
     },
+    "battle-of-nanshan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-paardeberg": {
       "from": "git",
       "versions": [
@@ -6992,6 +7019,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-port-arthur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -7152,6 +7188,24 @@
             "review"
           ],
           "on": "2026-09-20"
+        }
+      ]
+    },
+    "battle-of-the-yalu-river-1904": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-the-yellow-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -17164,6 +17218,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-port-arthur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },

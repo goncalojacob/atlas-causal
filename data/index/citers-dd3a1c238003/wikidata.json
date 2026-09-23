@@ -2648,6 +2648,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-liaoyang",
+      "kind": "event",
+      "locator": "Q2440191"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "Q259526"
@@ -2702,9 +2708,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mukden",
+      "kind": "event",
+      "locator": "Q384091"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "Q19831524"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nanshan",
+      "kind": "event",
+      "locator": "Q2409298"
     },
     {
       "dissent": false,
@@ -2717,6 +2735,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "Q2237713"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-arthur",
+      "kind": "event",
+      "locator": "Q1363925"
     },
     {
       "dissent": false,
@@ -2801,6 +2825,18 @@
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "Q675999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yalu-river-1904",
+      "kind": "event",
+      "locator": "Q2273445"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yellow-sea",
+      "kind": "event",
+      "locator": "Q702377"
     },
     {
       "dissent": false,
@@ -4805,6 +4841,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur",
+      "kind": "event",
+      "locator": "Q210800"
     },
     {
       "dissent": false,

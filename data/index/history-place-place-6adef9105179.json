@@ -2529,6 +2529,15 @@
         }
       ]
     },
+    "kwantung-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "kyrgyzstan": {
       "from": "git",
       "versions": [
@@ -2665,6 +2674,24 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "liaodong-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "liaoyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -2841,6 +2868,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "lushunkou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -4782,6 +4818,15 @@
         }
       ]
     },
+    "shenyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "siam-q1081620": {
       "from": "git",
       "versions": [
@@ -5806,6 +5851,24 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yalu-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "yellow-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },

@@ -5257,6 +5257,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "kwantung-peninsula",
+      "kind": "place",
+      "names": [
+        "Kwantung Peninsula"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5544,6 +5570,60 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "liaodong-peninsula",
+      "kind": "place",
+      "names": [
+        "Liaodong Peninsula",
+        "Península de Liaodong",
+        "Península de Liautum"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "liaoyang",
+      "kind": "place",
+      "names": [
+        "Liaoyang"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5815,6 +5895,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "lushunkou",
+      "kind": "place",
+      "names": [
+        "Lüshunkou District",
+        "Lüshunkou"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -9892,6 +9999,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "shenyang",
+      "kind": "place",
+      "names": [
+        "Shenyang",
+        "Cheniangue"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11921,6 +12055,60 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "yalu-river",
+      "kind": "place",
+      "names": [
+        "Yalu River",
+        "Rio Yalu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "yellow-sea",
+      "kind": "place",
+      "names": [
+        "Yellow Sea",
+        "Mar Amarelo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12306,7 +12494,31 @@
       "rule": "summary-imported"
     },
     {
+      "id": "kwantung-peninsula",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "lens-pas-de-calais",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "liaodong-peninsula",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "liaoyang",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "lushunkou",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -12504,6 +12716,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "shenyang",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "sierra-maestra",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -12571,6 +12789,18 @@
     },
     {
       "id": "yaguajay-cuba",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "yalu-river",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "yellow-sea",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
