@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 369 of 757 |
+| **after M42** | 36 of 36 | 369 of 762 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -337,15 +337,18 @@ two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
 rewritten as each of that milestone's batches lands** — batch 40 of 23 September
-takes the denominator to 757 and the numerator to 369, and it is the first M42
-batch to move the numerator by an import rather than by an umbrella written
-here. `rhodesian-bush-war` arrived with `actors: []` like every other imported
+takes the denominator to 762 and leaves the numerator at 369. Batch 40 before
+it, of the same day, took the denominator to 757 and the numerator to 369, and
+it is the first M42 batch to move the numerator by an import rather than by an
+umbrella written here. `rhodesian-bush-war` arrived with `actors: []` like every other imported
 record and then took two actor lines from its item's own `P710` participants,
 which is what amendment A12 (4) asks of every batch: `south-africa` and
 `frelimo`, both already held, both `supporter`, each with the article's own
 phrase as the note. Batch 39 before it took the denominator to 752 and left the
 numerator at 368, because its three imports carried `actors: []` and nothing
-asked them for more. M42 adds active events
+asked them for more; batch 41 of 23 September is the same case again — its five
+imports carry `actors: []`, and the only one whose item names participants at
+all, the Maji Maji Rebellion, was refused by rule 21 before it could be asked. M42 adds active events
 and does not add actor lines: everything it reinstates or imports is a
 Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
 §2.1 and M67's amendment A1 already settled — **an event with no actor and no

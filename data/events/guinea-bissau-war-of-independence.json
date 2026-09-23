@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "The same refusal as its Mozambican sibling: `P361` names Q609836, the Portuguese Colonial War, and this war ends on 10 September 1974, four and a half months after this atlas closes that record at the Carnation Revolution. Filed under `decolonisation-of-africa`, whose span and lane it is inside. The atlas already holds this war's first day as `guinea-war-begins-1963` and its declaration as `guinea-bissau-declares-independence-1973`."
+  },
+  "wikidata": "Q2609193",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Guinea-Bissau War of Independence",
+    "pt": "Guerra de Independência da Guiné-Bissau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2609193"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Guinea-Bissau War of Independence\", revision 1372113350"
+    }
+  ],
+  "title": "Guinea-Bissau War of Independence",
+  "summary": "The English Wikipedia article \"Guinea-Bissau War of Independence\", at revision 1372113350, opens: \"The Guinea-Bissau War of Independence (Portuguese: Guerra de Independência da Guiné-Bissau), also known as the Bissau-Guinean War of Independence, was an armed independence conflict that took place in Portuguese Guinea from 1963 to 1974. It was fought between Portugal and the African Party for the Independence of Guinea and Cape Verde (Partido Africano da Independência da Guiné e Cabo Verde, PAIGC), an armed independence movement backed by the Soviet Union, China, Cuba, Algeria and Guinea. The war is commonly referred to as 'Portugal's Vietnam' because it was a protracted guerrilla war which had extremely high costs in men and material and which created significant internal political turmoil in Portugal.\" Wikidata item Q2609193, whose own description reads \"1963-1974 armed conflict in Portuguese Guinea\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1963,
+    "end": 1974,
+    "date": "1963-01-23",
+    "endDate": "1974-09-10",
+    "calendar": "gregorian"
+  },
+  "place": "guinea-bissau-q1007",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "decolonisation-of-africa"
+}

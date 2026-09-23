@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-q1007",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "A9's second step: Q2609193, the Guinea-Bissau War of Independence, carries no coordinate of its own and its `P276` is the country. The war was fought in Portuguese Guinea, which is the same ground under the name it had then; the record is filed under the item the source names and lists the colonial name among its own."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q1007",
+  "wikipedia": {
+    "en": "Guinea-Bissau",
+    "pt": "Guiné-Bissau"
+  },
+  "sources": [],
+  "names": [
+    "Guinea-Bissau",
+    "Guiné-Bissau",
+    "Republic of Guinea-Bissau",
+    "Portuguese Guinea"
+  ],
+  "where": {
+    "lon": -15,
+    "lat": 12,
+    "precision": "country",
+    "label": "Guinea-Bissau"
+  },
+  "region": null,
+  "summary": null
+}

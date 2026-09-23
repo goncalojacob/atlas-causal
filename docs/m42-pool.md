@@ -4615,3 +4615,265 @@ touches the class table should take both at once.**
   the note about the three African islands: asking Wikidata's causal properties
   of them again is spent.
 - **Africa is 111 against Europe's 353** and A10's order does not change.
+
+## Batch 41 — the two wars of independence the atlas was missing, and the parent that ends before its parts
+
+*23 September, the fire that picked the run up at 08:38Z. Today already carries
+a `## Curation 2026-09-23` section, so this is **not** the curation fire; A12 is
+spent; the batches are what stands in front of the run. A10's order is
+unchanged and **Africa still trails hardest, 111 active against Europe's 353**,
+so the lane is Africa and the vein is the inverse `part of` one the stand after
+batch 40 named — 1,408 rows clean on depth, span and lane, 326 of them under an
+Africa-lane parent, every one of which arrives **filed** and costs no main slot.
+
+### The five imported, all filed, and the two Portugal should have had first
+
+| the record | sitelinks | filed under | placed at | the edge it came for |
+| --- | --- | --- | --- | --- |
+| `mozambican-war-of-independence` | 36 | `decolonisation-of-africa` | `portuguese-mozambique-q889394` | it `--caused-->` `carnation-revolution-1974` |
+| `guinea-bissau-war-of-independence` | 30 | `decolonisation-of-africa` | `guinea-bissau-q1007` | it `--caused-->` `carnation-revolution-1974` |
+| `herero-and-nama-genocide` | 40 | `herero-wars` | `german-south-west-africa` | `herero-wars --caused-->` it |
+| `siege-of-jadotville` | 19 | `congo-crisis` | `jadotville-q18780` | **none**, and §*What earned no edge* is why |
+| `simba-rebellion` | 17 | `congo-crisis` | `democratic-republic-of-the-congo` | it `--enabled-->` `first-congo-war` |
+
+**Main 243 → 243, and nothing had to be filed to pay for it.** That is the
+whole argument for this vein: five records, four edges, no slot spent.
+
+**The two wars of independence are the batch's point and the atlas should have
+been embarrassed to be without them.** It held the Angolan War of Independence,
+it held the days the Mozambican and Guinean wars opened
+(`mozambique-war-begins-1964`, `guinea-war-begins-1963`), it held the
+declaration of 1973 and the assassination of Cabral — and it did not hold
+either of the two wars those days are days of. Both are Portugal's own subject,
+which is what this atlas is about, and both were sitting in the vein at 36 and
+30 sitelinks.
+
+### The parent that ends before its parts, which is a new shape of refusal
+
+Both wars carry `P361` = **Q609836, the Portuguese Colonial War**, and this
+atlas holds that record. Neither is filed under it. The reason is one date:
+
+| | |
+| --- | --- |
+| `portuguese-colonial-war-1961-1974` | 1961-02-04 → **1974-04-25** |
+| `mozambican-war-of-independence` | 1964-09-25 → **1974-09-08** |
+| `guinea-bissau-war-of-independence` | 1963-01-23 → **1974-09-10** |
+
+The atlas closes the colonial war on the day of the Carnation Revolution, and
+both wars ran past it — to the Lusaka ceasefire in September 1974 and to the
+grant of independence in the same month. A child dated outside its parent is
+the `child-outside-parent` warning, and **A7 cannot widen the parent**: the
+article printed on that record dates the war 1961 to 1974 and ends it at the
+revolution, so widening it would be this run writing a date no source gives.
+
+**This is not batch 40's refusal and it is worth naming as its own shape.**
+Batch 40's twelve span refusals were all *children too early or too long for a
+period*; this is a **parent that ends before its own parts do**, because the
+record is of the war Portugal fought and the wars are of the independences
+Portugal's colonies won, and those outlast the regime by a summer. The filing
+that does hold is A6's: `decolonisation-of-africa` (mid-1950s → 1976), inside
+whose span and inside whose africa lane both wars sit exactly. Both are filed
+there and both say so in their own `review.note`. The colonial war is where
+they belong the day somebody gives the run a rule for a parent shorter than its
+parts — the third such rule the run has asked the owner for, beside the
+narrowing rule batch 40 asked for on `interwar-period`.
+
+### What earned no edge, and the rule that refused it
+
+**`siege-of-jadotville` arrives isolated and the refusal is a small one.** The
+only sentence in its article joining it to anything this atlas holds is its
+first — *"a major battle during the Congo Crisis"* — which is what `parent`
+already says and is not an argument. The one other held record it names is
+`algerian-war`, and it names it only to say that the mercenaries who beat back
+the relief column were *"almost all veterans of the Algerian War"*. That is a
+fact about who the men were and not a claim that one war caused the other, and
+an edge written on a parenthesis would be the run reading a source it is meant
+to be quoting. It is filed and left isolated.
+
+**`maji-maji-rebellion` was written, validated, and deleted, and the reason is
+a rule the next fire needs.** Q705553 came out of the vein at 29 sitelinks under
+`scramble-for-africa`, with a span (1905-07 → 1907-08) inside that umbrella and
+a lane that is africa. It was written. **Rule 21 refused it**: the atlas already
+holds Q705553, as `majimaji-war`, **retracted** in M44b class A — *"the
+neighbour is missing… the atlas holds no record of Portuguese Mozambique before
+1960… so there is nothing here for it to touch"*. The vein query filtered its
+rows against the **active** corpus, and a retracted record still owns its item.
+
+> **For the fire that picks this up: filter the vein against every event, not
+> the active ones.** `git grep -l '"Q705553"' data/events` is the check, and it
+> is cheaper than writing a record the validator throws out.
+
+Reinstating it was considered and refused on M44b's own terms: the retraction
+says the record had nothing to touch, and this batch found it nothing to touch
+either. The one sentence in its article naming a held record is *"the Abushiri
+revolt of 1888–1889 and the Wahehe Rebellion of 1891–1898 are viewed by
+historians as precursors of the Maji Maji uprising"*, and `abushiri-revolt` is
+here — but **a precursor is a periodisation and not a mechanism**, and all five
+of this atlas's edge types assert a mechanism. `inspired` would say the rebels
+followed an example the article never says they followed. No edge, so no
+reinstatement.
+
+### The places (A9), and the one where both steps agree
+
+Three place records are new. Two come from A9's second step, `P276`, because
+neither war's item carries a coordinate: `portuguese-mozambique-q889394`, whose
+point is Lourenço Marques because a colony has no centre of its own to give,
+and `guinea-bissau-q1007`. The third is the one worth reading:
+**`jadotville-q18780` is the first place in the run where A9's first step and
+its second give the same answer.** Q2404547 carries its own `P625` at
+-10.983333, 26.733333 and its `P276` is Q18780, Likasi, **whose own `P625` is
+that same pair to six decimal places**. Batch 39's rule for a `P625` place —
+no `wikidata` key, because the coordinate is the event's and a place record
+claiming to be the battle would be the worse record — does not apply when the
+point demonstrably belongs to a town the source names. It is filed under the
+town's item, labelled with the name the town had in 1961 and carrying both
+names.
+
+`german-south-west-africa` and `democratic-republic-of-the-congo` are reused.
+
+### The categories the class table has no answer for
+
+`herero-and-nama-genocide` and `simba-rebellion` arrive **without a category**,
+and that is a reading of `data/imports/wikidata-seeds.json` rather than an
+oversight. Q41397, genocide, and Q124734, *"rebellion / civil war"*, both carry
+`kind: event` and no `category` in the class table. The two genocides this
+atlas already holds, `the-holocaust` and `armenian-genocide`, carry none
+either, so the gap is the corpus's. And Q124734's own label is the argument for
+leaving it alone: a rebellion is `revolution` and a civil war is `war`, the
+table declines to choose, and **choosing is an edit to that file somebody can
+argue with** — CLAUDE.md's own rule — and not a guess to be made inside a
+record. The three that do carry one take it from the table: Q1006311, war of
+national liberation, and Q188055, siege, both give `war`.
+
+### A7, once
+
+`simba-rebellion` is written **1963–1965** and the item says 1964. `P580` is
+January 1964, `P582` is November 1964, and a `P585` of November 1965
+contradicts both; the cited article's first sentence, at revision 1375684063,
+says the rebellion *"took place in the Democratic Republic of the Congo
+between 1963 and 1965"*. A7 widens from the record's own cited article at a
+named revision, and that is what is written. The three months are dropped
+rather than moved, as batch 39's widenings dropped theirs: the article gives
+years. The widened span is still inside `congo-crisis` (1960–1965).
+
+### The edges, and the type each article allows
+
+`mozambican-war-of-independence --caused--> carnation-revolution-1974`, at
+revision 1374663244: *"the military coup in Portugal was in part fueled by
+protests concerning the conduct of Portuguese troops in their treatment of some
+of the indigenous Mozambican populace"*, and *"the pressure of the
+international community in relation to the Portuguese Colonial War"* was among
+*"the primary causes of the outcome"*.
+
+`guinea-bissau-war-of-independence --caused--> carnation-revolution-1974`, at
+revision 1372113350, which says it outright: *"the war in Guinea-Bissau has
+been viewed as a factor which contributed to the coup and revolution: its
+status as 'the most intense, destructive, and materially pointless' of the
+three Portuguese wars in Africa rendered it an embarrassment"*. Both are
+`caused` and not `precondition-of`, because contributing to a coup is
+contributing to a cause; and `caused` is the type this atlas already carries
+from `angola-war-begins-1961` and `guinea-war-begins-1963` on to the same
+revolution, so the three wars now say one thing about 25 April in one voice.
+
+`herero-wars --caused--> herero-and-nama-genocide`, at revision 1373679661,
+which runs the sequence without a gap from Maharero's uprising through
+Waterberg to von Trotha's order. **The edge is written from the war and not
+from `battle-of-waterberg`, which the article names as the turn, because rule 4
+refuses that one**: the battle is 11 August 1904 and the genocide opens in 1904
+at the year's start, so the arrow of time will not take it. That is the third
+time in three batches that rule 4 has been the check on a *reading* rather than
+on a typo.
+
+`simba-rebellion --enabled--> first-congo-war`, at revision 1375684063:
+*"the local ethnic rivalries would have a major impact on the First and Second
+Congo War"*, after *"the Banyamulenge exploit[ed] their victory over the rebels
+by expanding their holdings in South Kivu"*; and *"some of the Simba holdouts
+continued to be active until the First Congo War in 1996/97"*, with
+*"ex-Simbas play[ing] a major role in Kabila's government"*. Rivalries,
+holdings and surviving fighters are what a later war was fought with, not an
+act that started it, so `enabled` and not `caused` — batch 38's rule and batch
+40's.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active | 757 | **762** |
+| **main** | **243** | **243** |
+| filed | 514 | 519 |
+| active edges | 745 | **749** |
+| largest connected component | 536 | **539** |
+| components | 181 | 182 |
+| events with no edge | 152 | 152 |
+| Africa, active | 111 | **116** |
+
+`components` rises by one and `noEdge` does not move, which is the batch read
+in one line: `siege-of-jadotville` arrives isolated and `herero-wars`, isolated
+until this morning, stops being.
+
+## Where the run stands after batch 41, for the fire that picks it up
+
+*23 September, 08:38Z onward. An import fire, one batch, no merge needed —
+`origin/m0` was already an ancestor of `m42` at claim time.*
+
+| | |
+| --- | --- |
+| corpus | **762 active** |
+| **main** | **243**, unmoved through nine batches and two curation fires |
+| filed | 519 |
+| largest connected component | **539** |
+| components | **182** |
+| events with no edge at all | **152** |
+| events with no place | **48** |
+| events naming no actor | **392** |
+| the `part of` vein, Africa, not held | **679 rows** over 104 Africa-lane parents |
+| per lane, active | Europe 353, **Asia 130**, **Africa 116**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. A13's standing note
+  holds: run the relations pass **over the new records only**, because reading
+  the same articles again returns the same rows. This batch's five and M42b's
+  are the new ones.
+- **Filter the vein against every event and not the active ones.** This batch
+  wrote `maji-maji-rebellion` and deleted it again because Q705553 is held by
+  a record M44b retracted, and rule 21 does not care about status. The inverse
+  vein returned 738 rows over the 104 Africa-lane parents this morning and 679
+  of them are unheld *by an active record*; the true figure is lower and
+  nobody has measured it.
+- **`Q657661`, the Mozambican Civil War, is still the cheapest edge in the
+  Africa lane and still costs a slot.** Batch 40 read its edge already — the
+  Rhodesian Bush War's own article, at revision 1373754851, under "Legacy":
+  *"as a result of Rhodesian aid and support for RENAMO, the Rhodesian Bush War
+  also helped influence the outbreak of the Mozambican Civil War"* — and it
+  runs out of the war and forward in time, so rule 4 has nothing to say about
+  it. Its `P361` is Q8683, the Cold War, which this atlas does not hold, and
+  `decolonisation-of-africa` closes in 1976 against a war that opens in 1977,
+  so it arrives **main**. **No slot is in hand**: the corpus `part of` pass is
+  spent in both directions (batch 40's proof), and this batch bought none.
+- **`1977-mozambican-general-election` is the slot to look at, and it wants an
+  argument this run has not got.** It is the only Africa-lane main event dated
+  inside the Mozambican Civil War's span, and filing an election under a civil
+  war is a claim about what the election was, not a date check. A fire that
+  reads both articles may find it; nothing here has.
+- **The rules the run has now asked the owner for, twice each, are two.**
+  Batch 40 asked for a rule for a record whose article would **narrow** it
+  (`interwar-period`, which the atlas ends 1939-09-11 and its own article ends
+  1 September 1939). This batch asks for a rule for a **parent that ends before
+  its parts** (`portuguese-colonial-war-1961-1974` against the Mozambican and
+  Guinea-Bissau wars of independence). Both are span questions A7 refuses in
+  the direction they point, and both would free filings.
+- **`Q210714`, the 2011 military intervention in Libya, is the largest unheld
+  Africa row at 43 sitelinks and it fails by eight days.** Its `P361` is
+  `libyan-civil-war`, which this atlas closes on 2011-10-23; the intervention
+  runs to 2011-10-31. Same shape as the two wars above and no umbrella of the
+  right span to catch it — `arab-spring` ends in 2012 and would hold it, and
+  the item does not name it.
+- **`Q152060` the Cabinda Conflict is still open and still needs its article
+  read**, for the reason the stand after batch 40 gives: `P580` 1975, no
+  `P582`, a parent that closes in 2002, and A12 (3) forbidding "ongoing".
+- **`Q3320778` the 1890 British Ultimatum** is unchanged: the row this atlas
+  most wants, refused on the lane.
+- **Africa is 116 against Europe's 353** and A10's order does not change.
