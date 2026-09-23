@@ -392,7 +392,7 @@
       ]
     },
     "benghazi": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4298,7 +4298,7 @@
       ]
     },
     "ras-lanuf": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6002,7 +6002,7 @@
       ]
     },
     "zawiya-libya": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
