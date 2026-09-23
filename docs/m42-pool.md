@@ -6226,3 +6226,36 @@ merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
   Two batches running have shown what that reading is worth: batch 45 got seven
   edges from six records, this one eight from seven, where batch 44's ranking
   got two from six. **Read a war, not a list.**
+
+### The check, green on the head, and the two browser flakes this fire met
+
+**Run 1575 on `9b80b5e7` is green on its first and only attempt**: validate
+clean, the whole suite passing, and the index step skipped because the push is
+not a pull request. Runs 1567, 1573 and 1574 were **cancelled rather than red**,
+each superseded by the next push of this fire, and 1571 was green.
+
+**Run 1565, on the claim commit, went red, and reading it was worth the
+minute it cost.** The commit changed one line of `STATUS.md`, so the diff
+cannot have caused it; the failure was `keyboard-browser` 39, the lane walk,
+with `End` landing on `fixture-event-deep-1969` where the order the test had
+read said `fixture-event-deep-2025`. That is the race the test's own comment is
+already about — a century's shard landing repacks the lanes — caught one step
+short: M85's A4 waited for *some* bar to have a title, which the first shard
+satisfies, and the atlas opens on all of them. The wait is now on the packing
+standing still, read twice over a frame, with the order checked against it once
+more after it is built. Four consecutive local runs of that suite green, and
+`docs/m78-flakes.md`'s `timeline-browser` 214 is the same shape.
+
+Locally, the suites the way the check runs them since M63: **1,791 pure tests
+and 279 browser tests, 0 failed and 0 skipped** on the run before the test
+change, and the same pure count after it.
+
+**One browser test flaked on the re-run of the whole suite after that change
+and this fire did not diagnose it**, which is worth writing down rather than
+rounding off: `graph-browser` 24, *"a parent keeps its ring at rest and at
+every zoom"*, failed once under the one-at-a-time full run and passed twice
+when its suite was run alone, and the assertion itself was not captured. It is
+not on the head — run 1575 is green with it — and it is not this batch's, which
+wrote no parent and no ring. **A fire that meets it again should keep the
+output**: a name and a summary line are not a diagnosis, and this run is not
+calling it load.
