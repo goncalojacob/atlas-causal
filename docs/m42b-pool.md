@@ -3932,6 +3932,16 @@ record commit, then this page, then the cached leads.
 **`node tools/validate.mjs --index` is clean: 0 errors, 499 warnings** — one
 fewer than before the batch, because two events that had been placeless are not
 any more.
+The tests were run the way M63's check runs them: **1792 pure and 279 browser,
+2071 in all, 0 failed and 0 skipped.**
+
+**Run 1596 on the head `9ea0a5b3` is green.** Two local failures were found
+before the check ever saw them and both were this batch's own: the thirteen
+records were first written with a one-space indent where the repository writes
+two, which `tests/bundle.test.mjs` holds every file in `data/` to, and
+`docs/m53-polities.md` §4.1 had not yet been re-taken. Runs 1588 to 1592 were
+**cancelled** rather than red, each superseded by the next push of this fire;
+nothing in this fire went red on any head.
 
 ### Deviations
 
