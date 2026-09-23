@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bin-jawad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q588059",
+  "wikipedia": {
+    "en": "Battle of Bin Jawad",
+    "pt": "Primeira Batalha de Ben Yauad"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q588059"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bin Jawad\", revision 1375769079"
+    }
+  ],
+  "title": "Battle of Bin Jawad",
+  "summary": "The English Wikipedia article \"Battle of Bin Jawad\", at revision 1375769079, opens: \"The Battle of Bin Jawad took place in early March 2011 during the Libyan Civil War between forces loyal to Libyan leader Muammar Gaddafi and anti-Gaddafi forces for control of the town of Bin Jawad.\" Wikidata item Q588059, whose own description reads \"2011 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-06",
+    "endDate": "2011-03-11"
+  },
+  "place": "bin-jawad",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

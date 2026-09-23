@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-brega",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q581087",
+  "wikipedia": {
+    "en": "Third Battle of Brega",
+    "pt": "Terceira Batalha de Brega"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q581087"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Brega\", revision 1370750314"
+    }
+  ],
+  "title": "Third Battle of Brega",
+  "summary": "The English Wikipedia article \"Third Battle of Brega\", at revision 1370750314, opens: \"The Third Battle of Brega was fought during the Libyan Civil War between government forces and anti-Gaddafi forces for control of the town of Brega and its surroundings.\" Wikidata item Q581087, whose own description reads \"2011 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-31",
+    "endDate": "2011-04-07"
+  },
+  "place": "brega",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

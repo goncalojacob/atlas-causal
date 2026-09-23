@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bin-jawad--second-battle-of-brega--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Brega\", revision 1370735973"
+    }
+  ],
+  "from": "battle-of-bin-jawad",
+  "to": "second-battle-of-brega",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Second Battle of Brega's article opens by saying what put the loyalists back outside Brega: \"However, after the Battle of Bin Jawad and the Battle of Ra's Lanuf, government troops retook all of the lost territory and were once again threatening Brega by mid-March.\" The battle this atlas dates 13 to 15 March is the one that threat became. `precondition-of`: the article states the sequence and the ground it left behind, not an intent. Probable: Wikipedia alone.",
+  "dispute": null
+}
