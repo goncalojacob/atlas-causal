@@ -4253,7 +4253,8 @@ event and a city want the same box, the event has it"* is about Lisbon at zoom
 8 and passes here, in the same tree, in the suite the runner failed it in.
 
 The pure suites — 151 files, **1,789 tests, 0
-failures, 0 skipped** — were run whole after the index rebuild and are green.
+failures, 0 skipped** — were run whole after the index rebuild and are green,
+and **the check is green on the head** (`7c254d73`, run 1499).
 
 ## Where the run stands after batch 39, for the fire that picks it up
 
