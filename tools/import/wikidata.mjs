@@ -997,8 +997,13 @@ export async function fetchEntities(fetcher, qids) {
     // The action API is the one endpoint this sandbox is rate-limited on, and
     // the refusal does not lift inside a run. Special:EntityData carries the
     // same entity and is not behind that limit, so a blocked batch becomes one
-    // call per item instead of the end of the import.
-    if (e?.name !== 'HttpError' || (e.status !== 429 && e.status !== 403)) throw e;
+    // call per item instead of the end of the import. `maxlag` is the same
+    // situation said differently — the action API refusing, and only it: it
+    // takes no `maxlag` parameter, so the lag does not reach it. The retries
+    // above have already been spent by the time this is read, so a lag that
+    // lifts is still waited out first.
+    const rateLimited = e?.name === 'HttpError' && (e.status === 429 || e.status === 403);
+    if (!rateLimited && e?.code !== 'maxlag') throw e;
     const entities = {};
     for (const qid of qids) {
       try {

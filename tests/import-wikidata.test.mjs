@@ -173,6 +173,35 @@ test('a batch the rate limiter refuses is asked again one item at a time', async
   assert.equal(isMissing(missing.Q9999999), true);
 });
 
+test('a batch the action API refuses for replication lag is asked again the same way', async () => {
+  // `maxlag` is a refusal of the action API and of nothing else: the API
+  // answers it with HTTP 200 and an error in the body, and it can stand for
+  // hours. Special:EntityData takes no `maxlag` and keeps answering through
+  // it, so the lag costs one call per item rather than the run.
+  const asked = [];
+  const all = JSON.parse(await readFile(path.join(FIXTURES, 'entities.json'), 'utf8'));
+  const fetcher = createFetcher({
+    delay: async () => {},
+    retries: 1,
+    fetchJson: async (url) => {
+      asked.push(url);
+      if (url.includes('wbgetentities')) {
+        return { error: { code: 'maxlag', info: 'Waiting for wdqs1014: 94.75 seconds lagged.' } };
+      }
+      const qid = /Special:EntityData\/(Q\d+)\.json$/.exec(url)?.[1];
+      if (!qid || !all[qid]) throw new HttpError(404, url);
+      return { entities: { [qid]: all[qid] } };
+    },
+  });
+
+  const entities = await fetchEntities(fetcher, ['Q9000001', 'Q9000002']);
+  // The batch is retried once for the lag — it does lift — and only then
+  // carried to the other endpoint, so nothing here shortens the backoff.
+  assert.equal(asked.filter((u) => u.includes('wbgetentities')).length, 2);
+  assert.equal(entities.Q9000001?.id, 'Q9000001');
+  assert.equal(entities.Q9000002?.id, 'Q9000002');
+});
+
 // --- reading an item -------------------------------------------------------
 
 test('an item is read down to the fields the import uses and no others', async () => {
