@@ -3668,11 +3668,16 @@ already in it.
 
 ### The check
 
-Committed on the head as three commits in the order 798 asks — the import fix
-and its test, then the records, then the index rebuilt over the record commit.
+Committed on the head in the order 798 asks — the import fix and its test, then
+the records, then the index rebuilt over the record commit, then this page, then
+the eight cached leads the five records cite.
 **`node tools/validate.mjs --index` is clean: 0 errors, 497 warnings.** The
 tests were run the way M63's check runs them: **1795 pure and 279 browser, 2074
 in all, 0 failed and 0 skipped.**
+
+**Run 1581 on the head `8b9b3287` is green, first and only attempt.** Runs 1577,
+1578 and 1580 were **cancelled** rather than red, each superseded by the next
+push of this fire; nothing in this fire went red on any head.
 
 ### Deviations
 
