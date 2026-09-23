@@ -1,0 +1,42 @@
+{
+ "schema": 1,
+ "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Otumba\", revision 1370271351"
+  },
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Fall of Tenochtitlan\", revision 1371683304, § Aztecs regroup"
+  }
+ ],
+ "from": "battle-of-otumba",
+ "to": "fall-of-tenochtitlan",
+ "type": "enabled",
+ "confidence": "probable",
+ "explanation": "Surviving Otumba is what left Cortés an army to come back with. The Battle of Otumba article's lead: \"The result of the battle was a successful defense for the Spanish, which allowed Cortés to reorganize his army, having suffered heavy casualties a few days before during his army's retreat from the Aztec capital Tenochtitlan, now known as La Noche Triste. A year later, by reinforcing his army with new men and supplies, and starting an alliance with the Tlaxcala Confederacy, Cortés found a way to reenter Tenochtitlan.\" The Fall of Tenochtitlan article credits the same thing: Cortés \"knew how to use the military initiative that he gained after the battle of Otumba.\" `enabled` and not `caused`: the articles make the battle what made the siege possible, not what brought it about — the year between them was spent on men, supplies and the Tlaxcalan alliance. Probable: Wikipedia alone, at two revisions.",
+ "dispute": null
+}

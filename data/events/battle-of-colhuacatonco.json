@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "id": "battle-of-colhuacatonco",
+ "kind": "event",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Wikidata import (tools/import/wikidata.mjs)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "origin": {
+  "tool": "wikidata"
+ },
+ "review": {
+  "status": "draft",
+  "flags": [
+   "imported-facts",
+   "summary-from-lead",
+   "a9-place"
+  ],
+  "note": "The item's own P625, -99.13528/19.44339, is 1.1 km from this atlas's `tenochtitlan` and inside the same city: the cited article, revision 1370437482, calls Colhuacatonco a neighbourhood of the city under siege. A place is written once however many events happen there, so the event points at the city rather than at a district record nothing else would use."
+ },
+ "wikidata": "Q112811996",
+ "sitelinks": {
+  "count": 2,
+  "on": "2026-09-23"
+ },
+ "wikipedia": {
+  "en": "Battle of Colhuacatonco"
+ },
+ "sources": [
+  {
+   "source": "wikidata",
+   "locator": "Q112811996"
+  },
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+  }
+ ],
+ "title": "Battle of Colhuacatonco",
+ "summary": "The English Wikipedia article \"Battle of Colhuacatonco\", at revision 1370437482, opens: \"The Battle of Colhuacatonco was fought on 30 June 1521 during the late stages of the Siege of Tenochtitlan between Spanish-Tlaxcalan forces and the Mexica Empire. It is regarded as the most important victory achieved by the Mexica during the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q112811996, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the Siege of Tenochtitlan in 1521\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+ "when": {
+  "start": 1521,
+  "end": 1521,
+  "date": "1521-06-30"
+ },
+ "place": "tenochtitlan",
+ "region": null,
+ "category": "war",
+ "actors": [],
+ "parent": "fall-of-tenochtitlan"
+}

@@ -1,0 +1,42 @@
+{
+ "schema": 1,
+ "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+  },
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Fall of Tenochtitlan\", revision 1371683304"
+  }
+ ],
+ "from": "fall-of-tenochtitlan",
+ "to": "battle-of-colhuacatonco",
+ "type": "caused",
+ "confidence": "probable",
+ "explanation": "The assault was launched because the siege was going nowhere. The Battle of Colhuacatonco article's lead: \"The battle was fought as a result of the Spanish soldiers growing dissatisfied with the lack of progress done during the siege thus far, as the Spanish-Tlaxcalan forces had failed to take any important amount of territory since the beginning of June. Captain Hernán Cortés of the Spanish decided to launch a massive assault onto the city to take the market of Tlatelolco.\" The Fall of Tenochtitlan article is this atlas's record of that siege, which it dates from 26 May to 13 August 1521. `caused`: the article says \"as a result of\" and names nothing else. It also says what this edge does not: \"the battle did not stop the city from falling to the Spanish Empire in August of the same year\", so nothing here runs the other way. Probable: Wikipedia alone, at two revisions.",
+ "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+ "schema": 1,
+ "id": "la-noche-triste",
+ "kind": "event",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Wikidata import (tools/import/wikidata.mjs)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "origin": {
+  "tool": "wikidata"
+ },
+ "review": {
+  "status": "draft",
+  "flags": [
+   "imported-facts",
+   "summary-from-lead",
+   "a9-place"
+  ],
+  "note": "The item's own P625, -109.23457/30.66411, is in Sonora, some 1,400 km from the Valley of Mexico, and is refused rather than read: A12's order puts the item's own point first but does not ask a run to place an event where no account of it puts it. The cited article, revision 1370626402, says the Spanish 'were driven out of the Mexica capital, Tenochtitlan', and that city is a record this atlas already holds. No coordinate was invented; the point is `tenochtitlan`'s own."
+ },
+ "wikidata": "Q1308854",
+ "sitelinks": {
+  "count": 29,
+  "on": "2026-09-23"
+ },
+ "wikipedia": {
+  "en": "La Noche Triste",
+  "pt": "Noite Triste"
+ },
+ "sources": [
+  {
+   "source": "wikidata",
+   "locator": "Q1308854"
+  },
+  {
+   "source": "wikipedia-en",
+   "locator": "\"La Noche Triste\", revision 1370626402"
+  }
+ ],
+ "title": "La Noche Triste",
+ "summary": "The English Wikipedia article \"La Noche Triste\", at revision 1370626402, opens: \"La Noche Triste, officially called in Mexico Victorious Night, was an important event during the Spanish conquest of the Aztec Empire, where Hernán Cortés and his army of Spanish conquistadors, including their native allies were driven out of the Mexica capital, Tenochtitlan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1308854, imported by tools/import/wikidata.mjs. The item's own description reads \"important event during the Spanish Conquest of Mexico, wherein Hernán Cortés, his invading army of Spanish conquistadors, and their native allies were driven out of the Aztec capital at Tenochtitlan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+ "when": {
+  "start": 1520,
+  "end": 1520,
+  "date": "1520-06-30",
+  "endDate": "1520-07-01"
+ },
+ "place": "tenochtitlan",
+ "region": null,
+ "category": "war",
+ "actors": [],
+ "parent": "spanish-conquest-of-the-aztec-empire"
+}

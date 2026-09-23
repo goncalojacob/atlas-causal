@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "id": "battle-of-otumba",
+ "kind": "event",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Wikidata import (tools/import/wikidata.mjs)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "origin": {
+  "tool": "wikidata"
+ },
+ "review": {
+  "status": "draft",
+  "flags": [
+   "imported-facts",
+   "summary-from-lead",
+   "a9-place"
+  ],
+  "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The `otompan` record written beside it takes Q1650771's own point and names; the cited article, revision 1370271351, puts the battle 'on the plain of Temalcatitlán, near modern-day Otumba'."
+ },
+ "wikidata": "Q2888038",
+ "sitelinks": {
+  "count": 14,
+  "on": "2026-09-23"
+ },
+ "wikipedia": {
+  "en": "Battle of Otumba",
+  "pt": "Batalha de Otumba"
+ },
+ "sources": [
+  {
+   "source": "wikidata",
+   "locator": "Q2888038"
+  },
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Otumba\", revision 1370271351"
+  }
+ ],
+ "title": "Battle of Otumba",
+ "summary": "The English Wikipedia article \"Battle of Otumba\", at revision 1370271351, opens: \"The Battle of Otumba was a major battle fought on 7 July 1520 between the Aztec Empire and its allies led by the Cihuacoatl Matlatzincátzin, and Spanish conquistadors under Hernán Cortés, alongside support from the Confederacy of Tlaxcala. The battle was fought on the plain of Temalcatitlán, near modern-day Otumba during the conquest of the Aztec Empire by Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888038, imported by tools/import/wikidata.mjs. The item's own description reads \"1520 battle during the Spanish conquest of the Aztecs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+ "when": {
+  "start": 1520,
+  "end": 1520,
+  "date": "1520-07-07"
+ },
+ "place": "otompan",
+ "region": null,
+ "category": "war",
+ "actors": [],
+ "parent": "spanish-conquest-of-the-aztec-empire"
+}
