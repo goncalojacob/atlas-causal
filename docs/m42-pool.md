@@ -5635,6 +5635,21 @@ Two classes were added, both from the items themselves over the network:
   guessed. `2022-somali-ministry-of-education-bombings` therefore imports
   uncategorised, which is the honest answer and not an omission.
 
+### Batch 44's check, on the head
+
+`validate.yml` run **1551** on `8106d69e` is **green**: the pure suites and
+**279 browser tests**, 0 failed and 0 skipped, `validate --index` clean. Runs
+1549 and 1550 were **cancelled rather than red** — each was superseded by the
+next push of this fire's own corrections, which is the workflow's concurrency
+group doing its job and not a failure.
+
+**One browser test failed once locally and passed on a re-run of the same
+suites, with nothing changed in between.** It is deviation 1222's shape for the
+third fire running — a `?fixtures=1` suite that reads no record under `data/`,
+so no import can reach it — and the check itself, which runs the browser suites
+one at a time on the runner, is green. Nothing was re-run on the runner; the
+green above is run 1551's first and only attempt.
+
 ### The counts
 
 | | before | after |
