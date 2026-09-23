@@ -21165,6 +21165,38 @@ Locally: `validate --index` 0 errors and 493 warnings, **1794 pure tests and
 fire. `docs/m42b-pool.md` → "Batch 13" carries all of it with
 the counts per lane and per century.
 
+**M42b batch 15 — the Spanish conquest of the Aztec Empire, and the Americas'
+sixteenth century, 23 September.** The sixteenth fire on the branch took the
+cell the fifteenth named as the thinnest in this partition — **the Americas'
+sixteenth century, eleven active events and five main** — and the vein batch 8
+opened there. One SPARQL query found it: every item whose `P361` is one of the
+three conquest umbrellas the atlas already holds, with an English article.
+**Sixteen came back, two of them records already here; five were imported and
+none refused**: **`massacre-in-the-great-temple-of-tenochtitlan`**
+(`Q1131442`, 22 May 1520), **`battle-of-cempoala`** (`Q97610233`, 27 May),
+**`la-noche-triste`** (`Q1308854`, 30 June – 1 July),
+**`battle-of-otumba`** (`Q2888038`, 7 July) and
+**`battle-of-colhuacatonco`** (`Q112811996`, 30 June 1521). **All five filed
+under an umbrella already here** — four under
+`spanish-conquest-of-the-aztec-empire`, and Colhuacatonco under
+`fall-of-tenochtitlan`, the siege it was fought inside, which is the narrower of
+the two it falls in and the only one deviation 1244 allows — **so the main count
+stayed at 242**. Every one carries the cached English lead as its summary at a
+named revision. **Two place records were written by hand**, `cempoala` and
+`otompan`, from the items their `P276` names; three events point at
+`tenochtitlan`, one of them because the item's own `P625` puts La Noche Triste
+in Sonora, 1,400 km from the Valley of Mexico (deviation 1247). **Six edges, all
+`probable`, each quoting two articles at named revisions**, and the first of
+them reaches back into `spanish-conquest-of-the-aztec-empire`, which was already
+in the largest component: **585 → 591**, with `fall-of-tenochtitlan` carried in
+from a component of one. The corpus is **834 active**, the `americas` lane 192,
+the cell 16 with its five mains untouched. `docs/m53-polities.md` §4.1 re-taken
+at **378 of 834**. **Deviation 1246** is what this fire paid for: taking
+`origin/m42`'s whole `tools/import/wikidata.mjs` at the merge kept its A12 (2)
+correction and dropped this branch's own `maxlag` fallback, and the import died
+twice on a lag before anyone noticed; the fix and its test were re-applied.
+`docs/m42b-pool.md` → "Batch 15" is the full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
