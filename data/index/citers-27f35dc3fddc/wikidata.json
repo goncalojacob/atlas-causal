@@ -2084,6 +2084,12 @@
     },
     {
       "dissent": false,
+      "id": "2020-darfur-attacks",
+      "kind": "event",
+      "locator": "Q97701895"
+    },
+    {
+      "dissent": false,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "locator": "Q98457371"
@@ -2714,6 +2720,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ras-lanuf",
+      "kind": "event",
+      "locator": "Q1089511"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "Q4872265"
@@ -2729,6 +2741,12 @@
       "id": "battle-of-seal-cove",
       "kind": "event",
       "locator": "Q4872339"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sirte-2011",
+      "kind": "event",
+      "locator": "Q2361214"
     },
     {
       "dissent": false,
@@ -3374,9 +3392,21 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-benghazi",
+      "kind": "event",
+      "locator": "Q371620"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-brega",
       "kind": "event",
       "locator": "Q989081"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-zawiya",
+      "kind": "event",
+      "locator": "Q923890"
     },
     {
       "dissent": false,
@@ -4613,6 +4643,12 @@
       "id": "second-balkan-war",
       "kind": "event",
       "locator": "Q184183"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-benghazi",
+      "kind": "event",
+      "locator": "Q942901"
     },
     {
       "dissent": false,

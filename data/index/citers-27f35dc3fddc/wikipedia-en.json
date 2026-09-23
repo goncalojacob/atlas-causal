@@ -1466,6 +1466,12 @@
     },
     {
       "dissent": false,
+      "id": "2011-military-intervention-in-libya--second-battle-of-benghazi--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Battle of Benghazi\", revision 1370735938, § France intervenes, loyalists retreat"
+    },
+    {
+      "dissent": false,
       "id": "2011-south-sudanese-independence-referendum--south-sudanese-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"South Sudanese Civil War\", revision 1374713494, § Previous rebellions"
@@ -1829,6 +1835,18 @@
       "id": "battle-of-mount-tumbledown--argentine-surrender-in-the-falklands-war--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tumbledown\", revision 1372389478, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sirte-2011--killing-of-muammar-gaddafi--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
     },
     {
       "dissent": false,
@@ -2537,6 +2555,30 @@
       "id": "first-balkan-war--treaty-of-london-q584617--caused",
       "kind": "edge",
       "locator": "\"Treaty of London (1913)\", revision 1359713953, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-benghazi--second-battle-of-benghazi--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Battle of Benghazi\", revision 1370618456, § End"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-benghazi--second-battle-of-benghazi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Benghazi\", revision 1370735938"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-brega--battle-of-ras-lanuf--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-brega--battle-of-ras-lanuf--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Battle of Brega\", revision 1372213042, § Battle and § Aftermath"
     },
     {
       "dissent": false,
@@ -3635,6 +3677,12 @@
       "id": "operation-turquoise--1994-genocide-against-tutsi--reacted-to",
       "kind": "edge",
       "locator": "\"Opération Turquoise\", revision 1357895302, \"Background\" and \"Implementation\""
+    },
+    {
+      "dissent": false,
+      "id": "operation-unified-protector--battle-of-tripoli-2011--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796, § Operation Mermaid Dawn plans and aims"
     },
     {
       "dissent": false,
@@ -5540,6 +5588,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-darfur--2020-darfur-attacks--precondition-of",
+      "kind": "edge",
+      "locator": "\"2020 Darfur attacks\", revision 1327431594, § Background and § Attacks"
+    },
+    {
+      "dissent": false,
       "id": "war-in-darfur--south-sudanese-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"South Sudanese Civil War\", revision 1374713494, § Rebel infighting and splits among ruling Dinka (2016–2017)"
@@ -6506,6 +6560,12 @@
     },
     {
       "dissent": false,
+      "id": "2020-darfur-attacks",
+      "kind": "event",
+      "locator": "\"2020 Darfur attacks\", revision 1327431594"
+    },
+    {
+      "dissent": false,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "locator": "\"2020 Malian coup d'état\", revision 1370424404"
@@ -7130,6 +7190,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ras-lanuf",
+      "kind": "event",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "\"Battle of San Carlos (1982)\", revision 1373226188"
@@ -7145,6 +7211,12 @@
       "id": "battle-of-seal-cove",
       "kind": "event",
       "locator": "\"Battle of Seal Cove\", revision 1373061421"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sirte-2011",
+      "kind": "event",
+      "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
     },
     {
       "dissent": false,
@@ -7802,9 +7874,21 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-benghazi",
+      "kind": "event",
+      "locator": "\"First Battle of Benghazi\", revision 1370618456"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-brega",
       "kind": "event",
       "locator": "\"First Battle of Brega\", revision 1372213042"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-zawiya",
+      "kind": "event",
+      "locator": "\"First Battle of Zawiya\", revision 1370619040"
     },
     {
       "dissent": false,
@@ -9143,6 +9227,12 @@
       "id": "second-balkan-war",
       "kind": "event",
       "locator": "\"Second Balkan War\", revision 1375897121"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-benghazi",
+      "kind": "event",
+      "locator": "\"Second Battle of Benghazi\", revision 1370735938"
     },
     {
       "dissent": false,

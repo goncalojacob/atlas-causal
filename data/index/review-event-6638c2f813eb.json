@@ -2801,7 +2801,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "2011-military-intervention-in-libya",
       "kind": "event",
       "origin": {
@@ -3183,6 +3183,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "2019 Bogotá car bombing"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "2020-darfur-attacks",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-in-darfur",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2020 Darfur attacks"
     },
     {
       "authors": [
@@ -6985,6 +7016,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "battle-of-ras-lanuf",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ras Lanuf"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-san-carlos",
       "kind": "event",
@@ -7070,6 +7133,38 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Seal Cove"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-sirte-2011",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sirte (2011)"
     },
     {
       "authors": [
@@ -7319,7 +7414,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "origin": {
@@ -11747,6 +11842,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "first-battle-of-benghazi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Benghazi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11759,6 +11886,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "first-battle-of-brega",
       "kind": "event",
       "origin": {
@@ -11777,6 +11905,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "First Battle of Brega"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "first-battle-of-zawiya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Zawiya"
     },
     {
       "authors": [
@@ -15411,7 +15570,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "killing-of-muammar-gaddafi",
       "kind": "event",
       "origin": {
@@ -18209,7 +18368,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-unified-protector",
       "kind": "event",
       "origin": {
@@ -20523,6 +20682,38 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Second Balkan War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
+      "id": "second-battle-of-benghazi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Benghazi"
     },
     {
       "authors": [
@@ -25500,7 +25691,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "war-in-darfur",
       "kind": "event",
       "origin": {
@@ -26996,7 +27187,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "first-battle-of-brega",
+      "id": "first-battle-of-zawiya",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

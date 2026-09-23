@@ -55,7 +55,7 @@
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-7361ecd0ef0c.json",
+      "file": "index/attributes-2000-2099-4563f7962ab1.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-07754256bc2f.json",
+      "file": "index/attributes-place-8cc1feba55e1.json",
       "from": null,
       "key": "place",
       "to": null
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 224,
+      "count": 229,
       "id": "war"
     }
   ],
@@ -1024,11 +1024,11 @@
   ],
   "counts": {
     "actors": 2696,
-    "edges": 761,
-    "events": 1015,
+    "edges": 768,
+    "events": 1021,
     "narratives": 2,
     "offices": 11,
-    "places": 422,
+    "places": 425,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1067,20 +1067,20 @@
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-7d5666df4587.json",
+      "file": "index/explanations-2000-2099-b7e95ab39cdb.json",
       "from": 2000,
       "to": 2099
     }
   ],
   "files": {
-    "citers": "index/citers-40ea0fb322d6",
-    "core": "index/core-92d888844239.json",
-    "grounds": "index/grounds-6571f8ba516f.json",
+    "citers": "index/citers-27f35dc3fddc",
+    "core": "index/core-6694bbb71c79.json",
+    "grounds": "index/grounds-82200f0865cc.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-d694ec3bf082.json",
-    "search": "index/search-6285f904dab7.json",
-    "sources": "index/sources-94bb74fa6c17.json",
-    "territories": "index/territories-11c5348732de.json"
+    "review": "index/review-c3cc0b0ebaf2.json",
+    "search": "index/search-6e1295bb10bb.json",
+    "sources": "index/sources-2ee88675ce7c.json",
+    "territories": "index/territories-d79177b664ba.json"
   },
   "historyShards": [
     {
@@ -1126,7 +1126,7 @@
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-d4f4a2f4e125.json",
+      "file": "index/history-event-2000-2099-d4f749335c2b.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
@@ -1175,7 +1175,7 @@
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-c668a52d9827.json",
+      "file": "index/history-edge-2000-2099-756363460bd4.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-64ca1ab9b172.json",
+      "file": "index/history-place-place-7fe6f547a5cd.json",
       "from": null,
       "key": "place",
       "kind": "place",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 761,
-    "explained": 761
+    "active": 768,
+    "explained": 768
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [
