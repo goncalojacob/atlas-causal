@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 373 of 790 |
+| **after M42** | 36 of 36 | 373 of 795 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -307,7 +307,9 @@ with the merge of 23 September, which is what takes the denominator to
 **726** without a batch of this lane having run — and M42b's own batch 7, twenty-three records of the Spanish American wars of independence and none of them naming an actor, takes it to **749**; M42b's own batches 8 to 11 and, at the head of the fire of
 23 September, the merge bringing `origin/m42`'s batches 39 to 42 across take it
 to **373 of 790**, the numerator moving by the actor lines those batches read off
-their items' own `P710` and not by anything written here: the count is of the corpus
+their items' own `P710` and not by anything written here; M42b's batch 12, five
+imports of the Italian Wars and not one of them naming an actor, takes it to
+**373 of 795**: the count is of the corpus
 and not of a branch. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
