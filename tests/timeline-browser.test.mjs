@@ -690,17 +690,17 @@ test('the whole extent is on the axis at 1440 px, a labelled column per century'
   }, { device: { width: 1440, height: 900, deviceScaleFactor: 1 } });
 });
 
-test('the band opens on a century, and drags from the first year of the data to the last', { skip }, async () => {
+test('the band opens on the whole span, and drags in and back out to the ends', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on('fixtures=1')), READY);
     const opened = await page.eval(EXTENT);
-    // Not the whole extent: the atlas opens on the century that holds most of
-    // the corpus (util/window.js, `opensOn`). Which century that is depends on
-    // the fixtures and is not pinned here; that it is *not* everything is the
-    // behaviour M43b changed.
+    // The whole extent since M85 (A4). M43b opened on the century holding most
+    // of the corpus, and the first picture of an atlas about the world since
+    // 1492 was one century of it; M65 made the resting picture the main events,
+    // which is what makes the whole span one picture again.
     const [from, to] = opened.valuetext.split(' to ').map(Number);
-    assert.ok(to - from < (opened.max - opened.min) / 2,
-      `the band opens on part of the data, not all of it (${opened.valuetext} of ${opened.min}–${opened.max})`);
+    assert.equal(from, opened.min, 'the band opens at the first year of the data');
+    assert.equal(to, opened.max, 'and closes at the last');
     assert.ok(opened.bandWidth > 40, `and it is wide enough to take hold of (${opened.bandWidth} px)`);
 
     // The two handles are where their years are, and the far one is to the
@@ -727,7 +727,17 @@ test('the band opens on a century, and drags from the first year of the data to 
     const svgBox = await page.eval(`
       const b = document.querySelector('#timeline svg.timeline').getBoundingClientRect();
       return { left: b.left, right: b.right };`);
-    // Well past each end: the band is clamped to the data and never leaves it.
+    // In first, so that the drag back out has somewhere to come from: the band
+    // now opens on everything, and a drag that started and ended at the ends
+    // would assert nothing about the gesture.
+    await page.eval(drag('to', Math.round((svgBox.left + svgBox.right) / 2)));
+    await waitFor(
+      page,
+      `return Number(document.querySelector('#timeline [data-window="band"]').getAttribute('aria-valuetext').split(' to ')[1]) < ${opened.max};`,
+      'the band to narrow',
+    );
+    // Then well past each end: the band is clamped to the data and never
+    // leaves it.
     await page.eval(drag('to', Math.round(svgBox.right + 400)));
     await page.eval(drag('from', Math.round(svgBox.left - 400)));
     await waitFor(
@@ -797,7 +807,15 @@ test('the wheel zooms on the year under the pointer, in the compressed part as i
 
 test('past the margin the corpus is a density strip, and it covers the compressed part', { skip }, async () => {
   await withBrowser(async (page, url) => {
+    // On a band that does *not* reach the whole corpus, which since M85 is no
+    // longer the resting window (A4): the strip is what says the rest of the
+    // data is still there, so a window narrower than the data is what it is
+    // about. The ends are derived from the corpus and never typed in — the
+    // first quarter of whatever the fixtures span.
     await open(page, url(on('fixtures=1')), READY);
+    const whole = await page.eval(EXTENT);
+    const quarter = Math.max(whole.min + 1, Math.round(whole.min + (whole.max - whole.min) / 4));
+    await open(page, url(on(`fixtures=1&from=${whole.min}&to=${quarter}`)), READY);
     const seen = await page.eval(EXTENT);
     // The events the band does not reach are still said to be there — that is
     // what the strip is for (density.js) — and on this corpus there are some.

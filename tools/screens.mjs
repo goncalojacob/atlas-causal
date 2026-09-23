@@ -847,6 +847,25 @@ export const SHOTS = Object.freeze([
     query: '?w=1440&h=900&selected=world-war-ii&key=1',
     width: 1440, height: 900,
     what: "the map's key opened over the same picture: the row that names the ring" },
+
+  // M85 — the first review's remainder. Two pictures, and the first is the
+  // milestone: the atlas as a reader who types nothing arrives at it.
+  //
+  // **No window at all in the query**, which is the whole of A4: the same
+  // shot was taken at `?from=1900&to=1999` for M82 because that was what the
+  // atlas opened on, and the resting window is the corpus's whole extent now
+  // (util/window.js, `resolveWindow`). What it has to show is 1492 onwards on
+  // one map, the main events over all of it, and no stack carrying a bare
+  // "+46".
+  { name: 'm85-first-screen', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900',
+    width: 1440, height: 900,
+    what: 'a first visit with nothing typed: the whole span since 1492, main events only' },
+  // And the about page, which was forty thousand characters of design essay
+  // and is one screen. On the page itself rather than in the frame, as
+  // `m19-about` is: what it is about is the reading measure and not a viewport.
+  { name: 'm85-about', page: 'about.html', query: '', width: 1100, height: 1000,
+    what: 'the about page as one screen: what it is, who makes it, confidence, licences, what is coming' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

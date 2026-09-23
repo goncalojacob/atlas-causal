@@ -98,12 +98,14 @@ numbered findings file (`docs/review-2026-09-22.md`, done 22 September) →
 M82 (the first screen) → M83 (the graph under a lens, the review's display
 bugs, first paint; landed 22 September evening, PR #21) → **M84 (the
 owner's feedback document, `docs/feedback-2026-09-22.md`: a cross closes a
-card; the ring in a distinct colour; landed 22 September, PR #22)** → **M85
-(`docs/m85-brief.md`: the first review's remainder — the first picture is
-the whole span, the controls' words, the intro's claim computed, the about
-page one screen, the bibliography grouped, `emphasis.js` assembling once,
-rules held by shape, the band-drag wait)** → a second review mid-week (24
-September) → its fixes.
+card; the ring in a distinct colour; landed 22 September, PR #22)** → M85
+(`docs/m85-brief.md`: the first review's remainder; landed 22 September
+night, PR #23, all nine sections done) → **a second Fable review on 24
+September** over the code, the live site and the records as they stand
+then (independent subagents, model fable; a numbered findings file
+`docs/review-2026-09-24.md` with a fix plan) → its fixes as M86 onward.
+Lane A is idle from M85's landing until that review; lane B keeps
+growing the corpus meanwhile, with a snapshot landed every day.
 
 **Two lessons from 22 September's landings**, for every brief from here:
 a test of a display property over the live corpus derives its expectation

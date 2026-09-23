@@ -34,7 +34,7 @@ import { workingSet } from '../src/emphasis.js';
 import { densityPath } from '../src/density.js';
 import { barBox } from '../src/lanes.js';
 import { createTimelineScale } from '../src/timeline-scale.js';
-import { resolveWindow, centuryCounts } from '../src/util/window.js';
+import { resolveWindow, centuryCounts, WHEEL_FACTOR, zoomWindow } from '../src/util/window.js';
 import { defaultState, parseState, formatState } from '../src/state.js';
 import { buildAdjacency } from '../src/graph.js';
 import { atlasOf, ROOT } from './helpers.mjs';
@@ -111,20 +111,32 @@ test('the band is built in exactly one module, and both drawings import it', asy
   }
 });
 
-test('the gestures are shared too: neither drawing binds a wheel or a drag of its own', async () => {
+test('the gestures are shared too, and a wheel answers at one rate everywhere', async () => {
   for (const file of ['src/timeline.js', 'src/map-band.js']) {
     const source = await read(file);
     assert.match(source, /bindWindowGestures/, `${file} asks for the shared gestures`);
-    assert.ok(!/addEventListener\('wheel'/.test(source),
-      `${file} answers the wheel through the shared gestures and not its own`);
-    assert.ok(!/addEventListener\('pointermove'/.test(source),
-      `${file} answers a drag through the shared gestures and not its own`);
   }
   // And the module they share answers all of them.
   const shared = await read('src/window-band.js');
   for (const gesture of ['pointerdown', 'pointermove', 'pointerup', 'wheel', 'keydown', 'dblclick']) {
     assert.match(shared, new RegExp(`addEventListener\\('${gesture}'`), `the band answers ${gesture}`);
   }
+
+  // **The rate a wheel answers at is held by one export and not by the absence
+  // of a string** (M85, B14). This asked that `timeline.js` and `map-band.js`
+  // contained no `addEventListener('wheel'` — brittle (a comment about the
+  // wheel failed it), and blind to the copy that mattered: `graph-view.js` has
+  // a wheel of its own with the same factor written out again, and nothing
+  // scanned it. `WHEEL_FACTOR` is now the one number, in `util/window.js`
+  // beside the band's own `zoomWindow`, and every picture that answers a wheel
+  // imports it.
+  for (const file of ['src/map/map.js', 'src/graph-view/graph-view.js']) {
+    assert.match(await read(file), /WHEEL_FACTOR/,
+      `${file} answers the wheel at the band's own rate`);
+  }
+  assert.equal(typeof WHEEL_FACTOR, 'number');
+  const narrower = zoomWindow({ from: 1900, to: 2000 }, 1950, -100);
+  assert.ok(narrower.to - narrower.from < 100, 'and the band itself zooms by it');
 });
 
 // ─── 2. one source for where the events are ────────────────────────────────

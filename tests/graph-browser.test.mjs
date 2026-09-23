@@ -80,7 +80,9 @@ const count = (text, re) => (text.match(re) ?? []).length;
 // the order they are read in here: every pattern below looks past them.
 const marks = (graph) => count(graph, /<circle[^>]*class="node[ "]/g);
 const stacks = (graph) => count(graph, /<circle[^>]*class="node stack[ "]/g);
-const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>\+(\d+)</g)].map((m) => Number(m[1]));
+// "46 more" since M85 (cluster.js, `stackBadge`): the badge says what the
+// stack's own title says, and never a bare "+46".
+const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>(\d+) more</g)].map((m) => Number(m[1]));
 
 // **Nothing is folded out of sight twice over any more.** There were two
 // levels of detail until M70: the semantic fold put a part inside its parent
@@ -113,7 +115,7 @@ const WHOLE = `degree=0&from=${Math.min(...YEARS)}&to=${Math.max(...YEARS)}`;
 
 // The window a reader who names neither bound actually arrives at.
 const ATLAS = await atlasOf(path.join(ROOT, 'data'));
-const WINDOW = resolveWindow(defaultState(), ATLAS.extent, ATLAS.opens);
+const WINDOW = resolveWindow(defaultState(), ATLAS.extent);
 
 // How many events the graph would draw one node each for: the number the marks
 // and the badges have to add back up to.
@@ -140,7 +142,7 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   // The promise the badges make: nothing has been dropped from the picture,
   // only merged into it.
   assert.equal(drawn + hidden.reduce((a, b) => a + b, 0), events);
-  for (const n of hidden) assert.ok(n >= 1, 'a badge never says +0');
+  for (const n of hidden) assert.ok(n >= 1, 'a badge never says nothing is hidden');
 });
 
 // *Grouping into bands crowds the picture, and more of it merges* stood here.

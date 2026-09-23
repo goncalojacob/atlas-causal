@@ -22,7 +22,8 @@ import { svg, svgTitle } from '../../util/dom.js';
 import { extent } from '../../util/dates.js';
 import { overlaps } from '../../util/window.js';
 import {
-  clusterPoints, spreadPositions, zoomBucket, SPREAD_RADIUS, SPREAD_GAP,
+  clusterPoints, spreadPositions, zoomBucket, stackTitle, stackBadge,
+  SPREAD_RADIUS, SPREAD_GAP,
 } from '../../cluster.js';
 import { horizonBand } from '../../horizon.js';
 import { LOADING_LABEL } from '../../attributes.js';
@@ -421,8 +422,7 @@ export function createEventsLayer(group, projection, {
           });
           continue;
         }
-        const hidden = cluster.count - 1;
-        const title = `${nameOf(event) ?? LOADING_LABEL} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
+        const title = stackTitle(nameOf(event) ?? LOADING_LABEL, cluster.count);
         // A stack is in the horizon when any event under it is, at the band
         // of its nearest member: forty marks in Lisbon are not pulled apart
         // to say so, but the stack does not hide that the answer is in there.
@@ -436,7 +436,9 @@ export function createEventsLayer(group, projection, {
           // say the lens kept something it did not.
           classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}${near && cluster.members.every((m) => near.has(m.id)) ? ' lens-near' : ''}${Number.isFinite(nearest) ? ` in-horizon ${horizonBand(nearest)}` : ''}`,
         });
-        group.appendChild(textNode(`+${hidden}`, {
+        // "46 more" and not "+46": the badge says what the title says, in the
+        // title's own words (M85, A4).
+        group.appendChild(textNode(stackBadge(cluster.count), {
           x: cluster.x + (MARK_RADIUS + 2) / k,
           y: cluster.y - (MARK_RADIUS + 1) / k,
           class: 'cluster-count',

@@ -156,7 +156,10 @@ export function exportButton(root, view, options = {}) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'view-export';
-  button.textContent = 'Export this view';
+  // What it hands over and not what it is a button on (M85, A15): "Export this
+  // view" named no object, and a reader could not tell whether it copied a link
+  // or downloaded a file. The title is unchanged and says the rest.
+  button.textContent = 'Export as SVG';
   button.title = 'The picture on screen, as an SVG file';
   button.addEventListener('click', () => {
     button.disabled = true;

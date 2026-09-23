@@ -62,15 +62,11 @@ try {
   // data goes", and each view resolves it against the atlas it was given. An
   // empty URL is therefore the whole span, and stays an empty URL.
   //
-  // M43b: *which* span an empty URL is, is the atlas's answer and no longer
-  // always the whole extent. Over 1890–2025 the whole extent is one picture;
-  // over 1415–2025 it is six centuries at once, every bar a few pixels wide
-  // and nothing in particular to read. So a corpus that is long and lopsided
-  // carries an opening window — the century that holds most of it — and
-  // `resolveWindow` hands it back for the two null bounds (util/window.js,
-  // `opensOn`). Nothing about the URL changes: the empty one stays empty, and
-  // it still means "as far as the data goes", which is now a question the data
-  // answers rather than one the extent answers alone.
+  // M43b made *which* span an empty URL is the atlas's own answer — the
+  // century holding most of a long, lopsided corpus — and M85 took it back
+  // (A4). The resting picture is the main events since M65, so six centuries
+  // at once is twenty marks and the whole world since 1492 is what a reader
+  // arrives on. An empty URL is the whole span again, and stays an empty URL.
   //
   // A link that names a narrative opens with the walk already derived, so no
   // view is ever built on a state the reading mode has not seen. Everything
@@ -407,7 +403,7 @@ try {
   // extent gets the picture and then the titles" means (i4-brief §1).
   let releaseWindow = null;
   const onScreenShards = (s) => {
-    const wanted = [...atlas.attributeShardsIn(resolveWindow(s, atlas.extent, atlas.opens))];
+    const wanted = [...atlas.attributeShardsIn(resolveWindow(s, atlas.extent))];
     // **The graph is not windowed since M76**, and the pinning was still the
     // band's. The owner asked for a picture that always shows all dates, so the
     // graph draws every century while `attributeShardsIn` pinned the two or

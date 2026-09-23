@@ -201,17 +201,16 @@ const TIMELINE = `return {
     .map((el) => el.getAttribute('data-id')).sort(),
 };`;
 
-// The active fixture events of the thirteenth century, which is what the
-// atlas opens on with no window in the URL: the corpus reaches 2025 since
-// M43b, and everything past the band's fifty-year margin is a tick in the
-// density strip rather than a bar (util/window.js, `opensOn`). Ten of these
-// have a place; fixture-event-f is the long process with none, in
-// fixture-lane-3, whose polygon covers 10 … 40 east.
+// The active fixture events, which since M85 is what the atlas opens on with
+// no window in the URL: the resting window is the corpus's whole extent again
+// (A4), so nothing falls past the band's fifty-year margin. fixture-event-f is
+// the long process with no place, in fixture-lane-3, whose polygon covers
+// 10 … 40 east.
 //
 // Read off the fixture records rather than written out, so that the next
 // person to add one does not have to find this list: what the test is about
-// is that *every* active event of the opening century has a bar, not that
-// there are eleven of them.
+// is that *every* active main event has a bar, not that there are eleven of
+// them.
 const all = await fixtures();
 // **The resting picture and not every active event, since M65.** At rest every
 // view draws the main events alone — an event that is part of another is drawn
@@ -226,7 +225,7 @@ const PARTED = new Set(all.records
   .map((r) => r.id));
 const MAIN = (r) => r.kind === 'event' && r.status === 'active' && !PARTED.has(r.id);
 const ACTIVE = all.records
-  .filter((r) => MAIN(r) && (r.when.start?.min ?? r.when.start) < 1300)
+  .filter(MAIN)
   .map((r) => r.id)
   .sort();
 // The two numbers the count in the masthead is between, and **which is
@@ -455,14 +454,16 @@ test('a click on a splittable cluster splits it, and the animation redraws once'
     // stack came apart. A cluster does not always vanish when it splits: the
     // members no zoom can part stay on it, under the same key, because the
     // key is the representative's id.
+    // "46 more" since M85, in the words the stack's own title uses
+    // (cluster.js, `stackBadge`), so the count is the digits in it.
     const badgeOf = (key) => `
       const el = document.querySelector('#map text.cluster-count[data-cluster="${key}"]');
-      return el ? Number(el.textContent.slice(1)) : 0;`;
+      return el ? Number((el.textContent.match(/\\d+/) ?? [0])[0]) : 0;`;
     const before = await page.eval(`
       const el = document.querySelector('#map circle.mark.cluster.splittable[data-cluster]');
       const key = el.getAttribute('data-cluster');
       const badge = document.querySelector('#map text.cluster-count[data-cluster="' + key + '"]');
-      return { key, hidden: badge ? Number(badge.textContent.slice(1)) : 0 };`);
+      return { key, hidden: badge ? Number((badge.textContent.match(/\\d+/) ?? [0])[0]) : 0 };`);
     assert.ok(before.hidden > 0, `the cluster says how many are under it (+${before.hidden})`);
     await page.eval(clickOn(`#map circle.mark.cluster.splittable[data-cluster="${before.key}"]`));
 
