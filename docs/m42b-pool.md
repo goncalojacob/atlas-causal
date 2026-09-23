@@ -3498,95 +3498,328 @@ record up the tree to where the dates allow it. **The rule: check the two
 the expensive half and it had to be rewritten around the record it could
 attach to.
 
+## Batch 14 — the Dutch–Portuguese War in Brazil, and the Americas' seventeenth century
+
+*23 September, the fifteenth fire.*
+
+### Before the batch
+
+The fire merged `origin/m42` (its batch 45) into this branch first, which is
+where 817 active and a largest component of 576 come from; `docs/m53-polities.md`
+§4.1 was re-taken over the merged corpus at **378 of 817**.
+
+| | before | after |
+| --- | --- | --- |
+| active | 817 | **822** |
+| **main** | **242** | **242** |
+| filed | 575 | 580 |
+| active edges | 794 | **797** |
+| **largest connected component** | **576** | **578** |
+| components | 193 | 195 |
+| events with no edge | 159 | 160 |
+
+Per lane, before and after: `europe` 367/89 unchanged, `asia` 136/67 unchanged,
+`africa` 132/31 unchanged, **`americas` 182 active and 55 main → 187 and 55**.
+Per century in this partition, only one cell moved: **the Americas' 17th, 9
+active and 6 main → 14 active and 6 main**. Europe before 1900 is 76 active and
+18 main, untouched.
+
+**The cell the batch took is the one the last fire named**, and for the reason
+it named: nine active events, six of them umbrellas or umbrella-shaped records
+standing alone, five of the six with no child at all. What that cell needed was
+children, and a child arrives filed and costs no main event.
+
+### What was imported
+
+`P361` on `Q377269`, the Dutch–Portuguese War, is a list of forty-three items.
+Most of them are M42's — Malacca, Mozambique, Hormuz, Elmina, Goa — and were
+left alone. **Five are in Brazil, inside the war's span, and not in the corpus:**
+
+| record | item | span | class | lane | century |
+| --- | --- | --- | --- | --- | --- |
+| `conquest-of-paraiba` | `Q121494180` | 1634-11-25 – 1634-12-25 | `Q1361229` conquest | americas | 17th |
+| `campaign-of-porto-calvo` | `Q121754881` | 1637 | `Q831663` military campaign | americas | 17th |
+| `battle-of-tabocas` | `Q4872481` | 1645-08-03 | `Q178561` battle | americas | 17th |
+| `first-battle-of-guararapes` | `Q5452519` | 1648-04-19 | `Q178561` battle | americas | 17th |
+| `second-battle-of-guararapes` | `Q3504102` | 1649-02-19 | `Q178561` battle | americas | 17th |
+
+**Five put to `--import`, five created, none refused and none ambiguous**, in
+thirteen calls. **No class was added**: all three classes were already in the
+table. Every one carries the **cached English lead as its summary**, at the
+revision the cache names, with the `wikipedia-en` citation and the
+`summary-from-lead` flag: *Conquest of Paraíba* at 1370612312, *Campaign of
+Porto Calvo* at 1373668892, *Battle of Tabocas* at 1370590318, *First Battle of
+Guararapes* at 1370618669, *Second Battle of Guararapes* at 1370736242. **No
+record of this batch shows the import's placeholder alone.**
+
+### Filing (A3, A6, A8), and the main count
+
+**All five fell inside `dutch-brazil-1630-1654` (1630–1654) and were filed there
+on arrival, so the main count did not rise and nothing had to be paid for it.**
+
+**A8 says every umbrella whose span and subject fit, and this batch learned what
+that does not mean.** All five are also inside `dutch-portuguese-war`
+(1601–1661), so the first filing named both — and
+`tests/m42-filing.test.mjs` refused it: *"battle-of-tabocas is part of
+`dutch-portuguese-war` and is inside it already through
+`dutch-brazil-1630-1654`"*. `dutch-brazil-1630-1654` is itself a child of the
+war, so naming the war as well says nothing the tree does not already say.
+**A8's "every umbrella that fits" is every umbrella not reachable through
+another**, and the corpus holds that at zero. The five carry the narrower one
+alone.
+
+### Places (A9, as A12 corrects it)
+
+The import reuses a place record and never creates one, so four were written by
+hand from the item each event's `P276` names, with the point and the names the
+item itself carries:
+
+| event | place written | item | point | precision |
+| --- | --- | --- | --- | --- |
+| `conquest-of-paraiba` | `paraiba` | `Q38088` | -36.81667, -7.15 | region |
+| `campaign-of-porto-calvo` | `porto-calvo` | `Q1772636` | -35.39778, -9.045 | city |
+| `battle-of-tabocas` | `vitoria-de-santo-antao` | `Q985685` | -35.3075, -8.12639 | city |
+| `second-battle-of-guararapes` | `jaboatao-dos-guararapes` | `Q271393` | -35.015, -8.11278 | city |
+| `first-battle-of-guararapes` | `jaboatao-dos-guararapes` | (the same record) | | city |
+
+The precision is the located item's class, as A12 (2) asks: `Q485258` is a
+state of Brazil, which is larger than a settlement and is not a state in the
+sense the vocabulary means, so Paraíba is `region`; `Q3184121`, municipality of
+Brazil, is `city`. **Five events gained a place and none stayed placeless.**
+
+**Two of the five needed a reading, and both are on the record.**
+`second-battle-of-guararapes` carries its own `P625`, which A12 (2) reads
+first — and that point, -35.015556/-8.112222, is `Q271393`'s own point to three
+decimals, so the mechanical rule and the named town give the same ground and the
+place is the town. `first-battle-of-guararapes` carries **no point at all**, and
+its `P276` is `Q40942`, the **state** of Pernambuco: read mechanically it would
+have put a battle on a whole province. **It takes the town instead, from its own
+cited article** — revision 1370618669 gives the location as *"Morro dos
+Guararapes (present-day Jaboatão dos Guararapes, Pernambuco, Brazil)"* — which
+is the standard A7 and A13 already use for a span and for an edge, and no
+coordinate was invented: the point is `Q271393`'s. The record says so in its
+`review.note` and carries `a9-place`.
+
+**A `pernambuco` place record was written and then deleted.** It was the strict
+reading of the first battle's `P276`, and once the battle took the town it was a
+place no event referenced — a `place-unused` warning and nothing else. A batch
+should not leave one behind.
+
+### The actors (A12), and `docs/m53-polities.md`
+
+`P710` was read on all five items and answered twice: `Q121494180` names
+`Q200464` (the Portuguese Empire) and `Q617066` (the Dutch West India Company),
+`Q121754881` names `Q377350` (the Iberian Union) and `Q617066` again. **This
+atlas holds none of the three.** `kingdom-of-portugal` is `Q45670` and a
+different item; the actor `dutch-brazil` runs 1650–1714, carries no Wikidata id
+and is not the Company. Naming the nearest thing would be naming the wrong
+thing, so **all five carry `actors: []`**, which M67 A1 settled is not a defect.
+§4.1 was re-taken at **378 of 822**: the denominator moves by five and the
+numerator by nothing.
+
+### The edges (A5, M72)
+
+Three, all `probable`, each quoting two articles at named revisions:
+
+| edge | type | sources |
+| --- | --- | --- |
+| `dutch-brazil-1630-1654` → `conquest-of-paraiba` | `precondition-of` | *Conquest of Paraíba* 1370612312 § Details, *Dutch Brazil* 1371124077 |
+| `capture-of-bahia` → `campaign-of-porto-calvo` | `enabled` | *Campaign of Porto Calvo* 1373668892 § Background, *Capture of Bahia* 1370608303 |
+| `first-battle-of-guararapes` → `second-battle-of-guararapes` | `precondition-of` | *Second Battle of Guararapes* 1370736242 § Background, *First Battle of Guararapes* 1370618669 |
+
+Every one carries **two locators**. **No `consensus` was written**, and the
+second edge is where it was nearly earned: the Porto Calvo article attributes
+the passage to Clemmy Manzo, *The Rough Guide to Brazil* (2014) and to Erik
+Odegard, *Patronage, Patrimonialism, and Governors' Careers in the Dutch
+Chartered Companies, 1630–1681* (2022), pp. 60–62 — works Wikipedia itself
+cites, which is exactly what A2 allows. It stays `probable` because the works
+are **named** in the article and were not read here, which is the line A2 draws
+and the line batch 13 drew on Reed Browning.
+
+**`battle-of-tabocas` arrives with no edge, and the sentence that would give it
+one cannot be written.** Its article says the battle "was the first major
+victory in the nine-year period of war that would lead to the retreat of the
+Dutch from Northeastern Brazil" — and the record this atlas holds for that
+retreat is the *end* of `dutch-brazil-1630-1654`, which **starts in 1630**,
+fifteen years before Tabocas. **Rule 4 refuses an edge whose `from` starts after
+its `to`**, and this is deviation 1240's case again, met before the explanation
+was written rather than after. Nothing else in the corpus is both after 1645 and
+named by that article. The one join that suggested itself — Tabocas to the First
+Battle of Guararapes, because the Tabocas article calls Tabocas the first
+victory of the insurrection and the Guararapes article says that battle "took
+place during the Insurrection of Pernambuco" — **is a claim neither article
+makes**, assembled from two of them, and the run did not write it.
+
+### Why the largest component moved, which A5 asks a batch to say
+
+**It moved by two, and the two are the two edges that reach backwards into the
+existing corpus.** `capture-of-bahia` and `dutch-brazil-1630-1654` are both in
+the largest component, so `conquest-of-paraiba` and `campaign-of-porto-calvo`
+joined it on arrival: 576 → **578**. The Guararapes pair is a **new component of
+two** and `battle-of-tabocas` a **component of one**, which is why the component
+count rises by two and the no-edge figure by one.
+
+**This is the first batch of this partition in four whose edges reached an
+existing record rather than only its own**, and the reason is worth keeping:
+batches 12 and 13 imported trees whose articles named nothing the atlas held,
+while this one imported *into* a tree the atlas already had four records of. A
+fire that wants the component to move should import under a record that is
+already in it.
+
+### The check
+
+Committed on the head as three commits in the order 798 asks — the import fix
+and its test, then the records, then the index rebuilt over the record commit.
+**`node tools/validate.mjs --index` is clean: 0 errors, 497 warnings.** The
+tests were run the way M63's check runs them: **1795 pure and 279 browser, 2074
+in all, 0 failed and 0 skipped.**
+
+### Deviations
+
+**1242. The index has to be rebuilt after the merge *commit exists*, not merely
+committed after it.** 1241 asked a fire to rebuild and commit the index as a
+second commit immediately after the merge commit, and this fire did exactly
+that — and still went to seven rule 16 errors, because it *built* the index
+while the merge was still uncommitted. `tools/lib/history.mjs` reads each
+record's versions out of the repository's own commits, so an index built before
+the commit that changes records exists is stale about the history shards the
+moment that commit lands: three missing, three stale, and the manifest differing.
+**The order is resolve, commit, then build, then commit** — `build-index.mjs`
+runs *after* `git commit`, never before it, and this is the same rule 798 states
+for a batch, which is why a batch has never broken it. A third commit repaired
+it here. Where 1233 says "three commits and not two" it should be read as three
+commits *in that order*, and the ordering is the whole of it.
+
+**1243. A `maxlag` refusal ended a run that `Special:EntityData` could have
+served.** The first import attempt of this fire died on
+*"Waiting for wdqs1012: 94.1 seconds lagged"*. `maxlag` is a refusal of the
+action API and of nothing else — the API answers it with HTTP 200 and an error
+in the body, and `Special:EntityData` takes no `maxlag` parameter at all — but
+`fetchEntities` fell back to that endpoint only on a 429 or a 403, so the lag
+was fatal where the rate limit was not. **The fallback now covers both**, after
+the four retries are spent, so a lag that lifts is still waited out. Written
+test-first. **The lag lifted by itself on the second attempt**, two minutes
+later, so this fire did not need the fix and the batch would have landed
+without it; the fires that lost a whole fire to the network would have.
+
+**1244. "Every umbrella whose span and subject fit" is every umbrella not
+reachable through another.** A8's wording reads as a list and the first filing
+of this batch wrote one: both `dutch-brazil-1630-1654` and the
+`dutch-portuguese-war` it is itself a child of. `tests/m42-filing.test.mjs`
+holds the corpus at zero of those and caught all five. **A filing that names two
+parents should check that neither reaches the other before it is written** — the
+test is cheap and ran in a second, and this cost one edit of five records only
+because the test was run after them and not before.
+
+**1245. A place written for a reading that is then overturned has to be
+deleted in the same batch.** `pernambuco` was written from the strict reading of
+the first battle's `P276` and was referenced by nothing once that battle took
+its town. `place-unused` is a warning and the fire would have passed carrying it.
+**A batch's own leftovers are its own to remove.**
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after the fourteenth fire and its thirteenth batch.*
+*23 September, after the fifteenth fire and its fourteenth batch.*
 
 | | |
 | --- | --- |
-| corpus | **811 active** |
+| corpus | **822 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **569** |
-| components | 194 |
-| events with no edge at all | 159 |
+| **largest connected component** | **578** |
+| components | 195 |
+| events with no edge at all | 160 |
 | Europe before 1900 | 76 active, 18 main |
-| the `americas` lane | **182 active, 55 main** |
-| the thinnest cells left, in this partition | the Americas' 17th (9), 16th (11) and 18th (11) |
-| the two cells this batch moved | the Americas' 18th, 9 → 11 active and 1 → 2 main; Europe's 18th, 21 → 24 active and 2 → 3 main |
+| the `americas` lane | **187 active, 55 main** |
+| the thinnest cells left, in this partition | the Americas' 16th (9 active, 3 main), 18th (11, 2) and 15th (6, 5) |
+| the cell this batch moved | the Americas' 17th, 9 → 14 active and 6 main unchanged |
 
-**Read this list before STEP 1's merge, and if you cannot — because the prompt
-puts the merge first — then rebuild and commit the index as its own commit
-immediately after the merge commit** (deviations 1232, 1236, 1241). Four fires
-running have now put a merge and its rebuilt index in one commit and gone red
-on rule 16 for it. **Try the network first.** On this fire `Special:EntityData` and the SPARQL endpoint answered 200
-while `api.php` and the REST summaries answered 429 and then 200 on a retry, so
-**a 429 on one endpoint is not the thirteenth fire's kind of fire**: probe two
-or three endpoints before concluding anything, and let the import's own backoff
-carry the calls.
+**The order of a fire on this branch, which deviation 1242 settles.** Resolve
+the merge and **commit it**; only then `node tools/build-index.mjs`; then commit
+the index as its own commit. Building before the merge commit exists costs seven
+rule 16 errors on the history shards every time, and five fires running have now
+paid some version of it. The same order is 798's for a batch: records committed,
+then rebuild, then commit the index.
 
-**If the network answers, take the Americas' seventeenth century.** Nine active
-events and **six main**, which is now the thinnest cell in the partition and
-the one with the worst main-to-active ratio anywhere in it: six of its nine
-events are umbrellas or umbrella-shaped records standing alone
-(`dutch-portuguese-war`, `english-settlement-of-barbados-1627`,
-`saint-domingue-and-the-french-sugar-colony`,
-`the-atlantic-slave-trade-to-the-caribbean`, `the-brazilian-gold-cycle`,
-`the-caribbean-sugar-revolution`). **What that cell needs is children, not
-umbrellas**: anything imported under one of those six arrives filed and costs
-no main event, and five of the six have no child at all.
+**Try the network first, and probe more than one endpoint.** On this fire
+`Special:EntityData` and the SPARQL endpoint answered 200 throughout;
+`api.php` answered `maxlag` — *"Waiting for wdqs1012: 94.1 seconds lagged"* —
+for about four minutes and then served normally. **A `maxlag` is not the
+thirteenth fire's kind of fire**: it lifts. `fetchEntities` now falls back to
+`Special:EntityData` on it as it already did on a 429 (deviation 1243), so an
+import should no longer die of one. A hand-written `curl` at `api.php` will
+still 429 — the import's own user-agent and one-second delay are what get
+through, so probe with the tool and not by hand.
 
-- **The Dutch–Portuguese War is the cell's own tree and it is half built.**
-  `dutch-portuguese-war` runs 1601–1661 in the `americas` lane and already has
-  three children — `capture-of-bahia`, `dutch-brazil-1630-1654` and
-  `recapture-of-bahia`. What it does not have is the end of the war: the
-  **Battles of Guararapes** (1648–1649) and the **surrender of Recife** (1654)
-  are items with articles, inside its span, and would arrive filed.
-- **The Eighty Years' War is still the edge between the Americas' seventeenth
-  century and Europe's**, and the thirteenth fire's open question about it is
-  now answered: **no**. `dutch-portuguese-war` runs 1601–1661 and `Q164432` runs
-  1568–1648, so filing the one under the other is a `child-outside-parent`, and
-  batch 13 met exactly that on a smaller case and found the corpus holds it at
-  zero in four test assertions. **A fire that wants `Q164432` must find another
-  payment for it and must not file `dutch-portuguese-war` under it.** The
-  relation belongs in an edge, which `dutch-portuguese-war`'s own article
-  supports: it calls that war the thing this one is an extension of.
+**The Americas' seventeenth century is no longer the thinnest cell.** It went
+9 → 14 active with its six mains untouched, and `dutch-portuguese-war` now has
+eight children. **What is left in that tree, and it is the end of the war:**
+`Q4677306` *Action of 23 March 1654* and `Q4677341` *Action of 2 May 1654*, both
+with English articles, both American, both inside the war's 1601–1661 and
+**outside** `dutch-brazil-1630-1654`, which ends 1654-01-26 — so they file under
+the war itself and cost no main event. They are the naval half of the surrender
+of Recife the fourteenth fire went looking for and did not find: **no item in
+`P361`'s list is the capitulation itself**, and `Recapture of Recife (1652-54)`
+is a red link in the Second Battle of Guararapes article, so there is nothing to
+import for it. `Q19019163` *Dutch invasions of Brazil* (1624–1654) is in the
+same list and is an **umbrella**, which would cost a main event unless the same
+batch files two or three records under it — and its span holds
+`capture-of-bahia`, `recapture-of-bahia` and all five of batch 14, so it would
+be paid for on arrival. A fire that takes it should check first that it does not
+sit between the war and Dutch Brazil in a way deviation 1244 refuses.
+
+**The thinnest cell is now the Americas' sixteenth**, 9 active and 3 main. The
+Spanish conquest vein batch 8 opened is where it was last worked.
+
+**How to make the component move, which batch 14 answered.** Import *under* a
+record that is already in the largest component and write the edge backwards
+into it: `capture-of-bahia` and `dutch-brazil-1630-1654` were in it, so two of
+the five joined on arrival and the component rose 576 → 578. Batches 12 and 13
+imported trees whose articles named nothing the atlas held and the component did
+not move at all. **The rule is about where a batch attaches, not how large it
+is.**
+
+- **The Italian Wars tree is still twelve active events in components of one and
+  two, joined to nothing.** `parent` is not adjacency, so filing will never join
+  it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the named
+  door** — the article reports historians reading it as the beginning of Spanish
+  hegemony in Italy — and it is still not in the corpus.
 - **The French Wars of Religion are free to whoever brings their children.**
   `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
-  importable today — the fire probed it and the item answered. It arrives main
-  and nothing in the corpus falls inside it, so it costs one main event unless
-  the same batch imports two or three of its engagements.
-- **The Italian Wars tree is twelve active events in components of one and
-  two, joined to nothing.** `parent` is not adjacency, so filing will never
-  join it; only an edge will. **The Peace of Cateau-Cambrésis of 1559 is the
-  named door** — the article reports historians reading it as the beginning of
-  Spanish hegemony in Italy — and it is not in the corpus.
-- **The Americas before 1800 are a set of small components and batch 13 made
-  two more of them.** The join that would move the largest connected component
-  is an edge from a Spanish American record of the seventeenth or eighteenth
-  century into the wars of independence of the nineteenth, and no article read
-  in batches 11, 12 or 13 states one. **A fire that wants the component to move
-  should read the nineteenth-century articles for what they say about the
-  century before them**, rather than reading the eighteenth century's for what
-  came after.
+  importable. It arrives main and nothing in the corpus falls inside it, so it
+  costs one main event unless the same batch imports two or three of its
+  engagements.
+- **The Eighty Years' War (`Q164432`, 1568–1648) still has no payment.** Batch
+  13 settled that `dutch-portuguese-war` cannot be filed under it — 1601–1661
+  against 1568–1648 is a `child-outside-parent` the corpus holds at zero in four
+  assertions — and the relation belongs in an edge, which
+  `dutch-portuguese-war`'s own article supports: it calls that war the thing
+  this one is an extension of.
+- **The Americas before 1800 are still a set of small components**, and batch 14
+  made two more of them. The join that would move the component furthest is an
+  edge from a Spanish American record of the seventeenth or eighteenth century
+  into the wars of independence of the nineteenth, and no article read in
+  batches 11 to 14 states one. **A fire that wants it should read the
+  nineteenth-century articles for what they say about the century before them.**
 - **A filing pass without the network will find nothing.** The thirteenth fire
   ran the measurement: 43 of this partition's main events fall inside some
-  umbrella's span and lane, and every one of them fails the subject test or
-  M67's rule 1. Do not spend a fire on it again; the shortage is umbrellas, and
-  umbrellas need the network.
+  umbrella's span and lane, and every one fails the subject test or M67's rule 1.
+  Do not spend a fire on it again; the shortage is umbrellas, and umbrellas need
+  the network.
 
 **The two questions for the owner are unchanged and both still block a
 century.**
 
 1. **Does the atlas begin in 1492, or does its first sentence follow the corpus
    wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names
-   `atlas.extent.min` and two tests hold it there, so nothing on this branch
-   can fill Europe's fifteenth century or anything earlier. A one-line answer
+   `atlas.extent.min` and two tests hold it there, so nothing on this branch can
+   fill Europe's fifteenth century or anything earlier. A one-line answer
    unblocks four records already known to import cleanly (`Q212976`, `Q12551`,
    `Q127751`, `Q1552718`), and `italian-war-of-1494-1495` is the fifth record
    sitting against the wall.
 2. **May a run take a period umbrella from an item whose class is a polity,
-   where the article is plainly a period article?** Colonial Brazil
-   (`Q2088324`) is the case and it is worth seven main events. `Q377350`, the
-   **Iberian Union**, is a second case of the same shape. The class table is an
-   editorial decision and the whole point of it living in `data/`, so the run
-   will not decide either.
+   where the article is plainly a period article?** Colonial Brazil (`Q2088324`)
+   is the case and it is worth seven main events. `Q377350`, the **Iberian
+   Union**, is a second case of the same shape — and batch 14 met it again as a
+   `P710` participant it could not use. The class table is an editorial decision
+   and the whole point of it living in `data/`, so the run will not decide
+   either.
