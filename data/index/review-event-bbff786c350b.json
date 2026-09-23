@@ -2627,6 +2627,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "2010-2012-algerian-protests",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-spring",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2010–2012 Algerian protests"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6401,7 +6432,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "origin": {
@@ -14512,6 +14543,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "ituri-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-congo-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ituri conflict"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -19020,6 +19083,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "id": "rhodesian-bush-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rhodesian Bush War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "degree": 1,
       "id": "rif-war",
@@ -19880,7 +19973,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "second-congo-war",
       "kind": "event",
       "origin": {
@@ -24098,7 +24191,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 5,
       "id": "tunisian-revolution",
       "kind": "event",
       "origin": {
@@ -24213,6 +24306,68 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "Portugal admitted to the United Nations"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "unified-task-force",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Unified Task Force"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "united-nations-operation-in-somalia-ii",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "United Nations Operation in Somalia II"
     },
     {
       "authors": [
@@ -25334,11 +25489,13 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "filed-from-p527"
         ],
         "status": "draft"
       },
@@ -26370,6 +26527,12 @@
     },
     {
       "id": "revolution-in-the-kingdom-of-poland",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "rhodesian-bush-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

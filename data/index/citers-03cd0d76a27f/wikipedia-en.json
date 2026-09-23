@@ -4112,6 +4112,12 @@
     },
     {
       "dissent": false,
+      "id": "second-congo-war--ituri-conflict--enabled",
+      "kind": "edge",
+      "locator": "\"Ituri conflict\", revision 1370624684, lead"
+    },
+    {
+      "dissent": false,
       "id": "second-guangzhou-uprising--wuchang-uprising--caused",
       "kind": "edge",
       "locator": "\"Second Guangzhou Uprising\", revision 1370737006, § Legacy"
@@ -5282,6 +5288,12 @@
     },
     {
       "dissent": false,
+      "id": "tunisian-revolution--2010-2012-algerian-protests--inspired",
+      "kind": "edge",
+      "locator": "\"2010–2012 Algerian protests\", revision 1373580732, lead and \"Self-immolations (starting 12 January)\""
+    },
+    {
+      "dissent": false,
       "id": "tunisian-revolution--2011-bahraini-uprising--inspired",
       "kind": "edge",
       "locator": "\"2011 Bahraini uprising\", revision 1374892677, § lead"
@@ -5339,6 +5351,18 @@
       "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
       "kind": "edge",
       "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "unified-task-force--united-nations-operation-in-somalia-ii--precondition-of",
+      "kind": "edge",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997, lead and \"Expansion of mandate\""
+    },
+    {
+      "dissent": false,
+      "id": "united-nations-operation-in-somalia-ii--battle-of-mogadishu-1993--precondition-of",
+      "kind": "edge",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997, lead and \"Operation Gothic Serpent\""
     },
     {
       "dissent": false,
@@ -6281,6 +6305,12 @@
       "id": "2009-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"2009 Portuguese legislative election\", revision 1369111843"
+    },
+    {
+      "dissent": false,
+      "id": "2010-2012-algerian-protests",
+      "kind": "event",
+      "locator": "\"2010–2012 Algerian protests\", revision 1373580732"
     },
     {
       "dissent": false,
@@ -8120,6 +8150,12 @@
     },
     {
       "dissent": false,
+      "id": "ituri-conflict",
+      "kind": "event",
+      "locator": "\"Ituri conflict\", revision 1370624684"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid",
       "kind": "event",
       "locator": "\"Jameson Raid\", revision 1370624782"
@@ -8777,6 +8813,12 @@
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "\"Revolutions of 1989\", revision 1375849372"
+    },
+    {
+      "dissent": false,
+      "id": "rhodesian-bush-war",
+      "kind": "event",
+      "locator": "\"Rhodesian Bush War\", revision 1373754851"
     },
     {
       "dissent": false,
@@ -9695,6 +9737,18 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "\"Twelve-Day War\", revision 1370751931"
+    },
+    {
+      "dissent": false,
+      "id": "unified-task-force",
+      "kind": "event",
+      "locator": "\"Unified Task Force\", revision 1375002456"
+    },
+    {
+      "dissent": false,
+      "id": "united-nations-operation-in-somalia-ii",
+      "kind": "event",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997"
     },
     {
       "dissent": false,

@@ -14688,6 +14688,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "from": "second-congo-war",
+      "id": "second-congo-war--ituri-conflict--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "ituri-conflict",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
       "from": "second-guangzhou-uprising",
       "id": "second-guangzhou-uprising--wuchang-uprising--caused",
       "kind": "edge",
@@ -18585,6 +18613,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "tunisian-revolution",
+      "id": "tunisian-revolution--2010-2012-algerian-protests--inspired",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2010-2012-algerian-protests",
+      "type": "inspired"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "tunisian-revolution",
       "id": "tunisian-revolution--2011-bahraini-uprising--inspired",
@@ -18766,6 +18822,62 @@
       "revised": null,
       "status": "active",
       "to": "angola-war-begins-1961",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "unified-task-force",
+      "id": "unified-task-force--united-nations-operation-in-somalia-ii--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "united-nations-operation-in-somalia-ii",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "united-nations-operation-in-somalia-ii",
+      "id": "united-nations-operation-in-somalia-ii--battle-of-mogadishu-1993--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-mogadishu-1993",
       "type": "precondition-of"
     },
     {
