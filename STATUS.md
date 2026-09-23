@@ -19997,6 +19997,35 @@ and A13's relations pass, still never run.
       event and not the active ones; it is cheaper than a record the validator
       throws out. The 679 "unheld" Africa rows this fire measured are therefore
       an upper bound and nobody has taken the true one.
+1225. **An item the import once refused stays refused, because the cursor does
+      not know why it was turned away.** `Q203824`, the Italo-Turkish War and
+      the largest row in the Africa vein at 61 language editions, was already
+      in `data/imports/wikidata-state.json`'s `done` list: an earlier run had
+      taken it, found no `P625`, no located `P276`, no `P131` and no `P17`, and
+      refused it for having no lane — and `advance()` writes every item of a
+      batch to `done` whether it became a record or not. Naming the lane in
+      `data/imports/wikidata-seeds.json` is the documented route (deviation
+      1029) and it does nothing on its own, because `nextBatch()` never offers
+      the item again. **This batch removed that one id from `done` by hand**
+      and the import then wrote the record. Nothing else in the state file was
+      touched. The state file is the tool's own cursor and editing it is a
+      deviation each time; the shape that would end it is a refusal list the
+      seeds file could answer — an item refused *for want of a lane* is not the
+      same as an item that has been imported, and today they are one list.
+1226. **The Arab Spring sits in two lanes and the filing rule can only name
+      one, which cost this batch a record.** `2011-2012-jordanian-protests` was
+      imported, placed at `jordan-q810`, widened to 2011–2012 from its
+      article's own title (A7), filed under `arab-spring` and given two
+      `inspired` edges — and `tests/m42-filing.test.mjs` refused it: the
+      umbrella's lane is africa, because its place `arab-world` has a point in
+      Africa, and Jordan is asia. The test states the run's own property and
+      the property is the one that is wrong here: A6 files an event whose place
+      is "in that region", and the region of the Arab Spring is a people, not a
+      continent. Every other child of that umbrella is African, so the
+      coincidence had held. **The record was deleted rather than argued with**,
+      `Q555833` is out of the seeds file's `items` and out of the state file's
+      `done` so that a fire with a rule finds it, and its `lanes` entry is left
+      because it is true. Bahrain, Yemen, Syria and Oman are the same row.
 1223. **A test that asks whether a label lands *on* a mark is asking about the
       corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
       → *"a label over a line and a label over a mark ..."* took its mark case

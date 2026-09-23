@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "operation-green-sea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "second-parent-a8",
+      "actors-from-p710"
+    ],
+    "note": "Two parents, which is A8: `P361` names the Guinea-Bissau war of independence, and the raid is also inside `portuguese-colonial-war-1961-1974`, which that war is not filed under because it outlasts it (batch 41). Neither is reachable from the other. Place from A9: the item's `P625` and its `P276` (Q3733, Conakry) agree. Actors from `P710` (A12 (4)). No edge: the article's Consequences are the Guinean purges, UNSC Resolution 290 and the Soviet patrol, none of them held here."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q770372",
+  "wikipedia": {
+    "en": "Operation Green Sea",
+    "pt": "Operação Mar Verde"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q770372"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Green Sea\", revision 1372115645"
+    }
+  ],
+  "title": "Operation Green Sea",
+  "summary": "The English Wikipedia article \"Operation Green Sea\", at revision 1372115645, opens: \"Operation Green Sea (Portuguese: Operação Mar Verde), also known as the Battle of Conakry, was an amphibious attack on Conakry, the capital of Guinea, by between 350 and 420 Portuguese soldiers and Portuguese-led Guinean fighters in November 1970. The goals of the operation included the overthrow of Ahmed Sékou Touré's government, capture of the leader of the African Party for the Independence of Guinea and Cape Verde (PAIGC), Amílcar Cabral, destruction of the naval and air assets of the PAIGC and its Guinean supporters, and the rescue of Portuguese POWs held in Conakry.\" Wikidata item Q770372, whose own description reads \"1970 military operation\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1970,
+    "end": 1970,
+    "date": "1970-11-22"
+  },
+  "place": "conakry",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "guinea-bissau-war-of-independence",
+    "portuguese-colonial-war-1961-1974"
+  ],
+  "category": "war",
+  "actors": [
+    {
+      "actor": "portugal",
+      "role": "invader",
+      "note": "The article: \"an amphibious attack on Conakry, the capital of Guinea, by between 350 and 420 Portuguese soldiers and Portuguese-led Guinean fighters in November 1970\"."
+    },
+    {
+      "actor": "guinea",
+      "role": "target",
+      "note": "The article: \"The goals of the operation included the overthrow of Ahmed Sékou Touré's government\"."
+    },
+    {
+      "actor": "paigc",
+      "role": "target",
+      "note": "The article: the goals included the \"capture of the leader of the … (PAIGC), Amílcar Cabral, destruction of the naval and air assets of the PAIGC and its Guinean supporters\"."
+    }
+  ]
+}

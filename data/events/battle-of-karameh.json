@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-karameh",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "Place from A9's first step and its second at once: the item's `P625` is 35.58, 31.95 and its `P276` is Q2592647, Karameh, whose own `P625` is the same pair — the shape `jadotville-q18780` took in batch 41 — so the place record is the town's and carries the town's item. Filed under `war-of-attrition` from `P361`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1930278",
+  "wikipedia": {
+    "en": "Battle of Karameh"
+  },
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1930278"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Karameh\", revision 1374545421"
+    }
+  ],
+  "title": "Battle of Karameh",
+  "summary": "The English Wikipedia article \"Battle of Karameh\", at revision 1374545421, opens: \"The Battle of Karameh was a 15-hour military engagement between Israel and the combined forces of Jordan and the Palestine Liberation Organization (PLO) in the Jordanian border town of Karameh during the War of Attrition on 21 March 1968. It was planned by Israel as one of two concurrent raids on PLO camps, one in Karameh along the Jordan River and the other in the distant village of Ghor es-Safi south of the Dead Sea.\" Wikidata item Q1930278, whose own description reads \"1968 battle between Israel and the PLO and Jordan\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1968,
+    "end": 1968,
+    "date": "1968-03-21"
+  },
+  "place": "karameh",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-attrition",
+  "category": "war",
+  "actors": []
+}

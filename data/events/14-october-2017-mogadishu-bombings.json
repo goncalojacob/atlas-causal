@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "14-october-2017-mogadishu-bombings",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "Place from A9's `P276` = Q2449, the `mogadishu` record already here; the item's own `P625` is that point to three places. No category: the class is Q18493502, suicide bombing, which the seeds file now carries with its Wikidata label and no category, because `data/categories.json` has none a bombing belongs to. No edge: the only other event the article names is the 2011 Mogadishu bombing, which this atlas does not hold; al-Shabaab is an actor, and the item gives no `P710`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q42033121",
+  "wikipedia": {
+    "en": "14 October 2017 Mogadishu bombings",
+    "pt": "Ataque em Mogadíscio em outubro de 2017"
+  },
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q42033121"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"14 October 2017 Mogadishu bombings\", revision 1357604022"
+    }
+  ],
+  "title": "14 October 2017 Mogadishu bombings",
+  "summary": "The English Wikipedia article \"14 October 2017 Mogadishu bombings\", at revision 1357604022, opens: \"On 14 October 2017, two truck bombings took place in Mogadishu, the capital of Somalia, killing at least 587 people and injuring 316 others. Almost all of the casualties were caused by one of the trucks which detonated when the driver, while attempting to escape from security officials, crashed through a barrier and exploded in the Hodan District, destroying a hotel.\" Wikidata item Q42033121, whose own description reads \"deadliest terrorist attack in the history of Somalia and Africa\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2017,
+    "end": 2017,
+    "date": "2017-10-14"
+  },
+  "place": "mogadishu",
+  "region": null,
+  "regionNote": null,
+  "parent": "somali-civil-war-2009-present",
+  "actors": []
+}
