@@ -435,6 +435,17 @@ export function classify(read, classes = {}) {
     const categories = [...new Set(known.map(([, e]) => e.category).filter(Boolean))];
     return { kind, actorType: null, category: categories.length === 1 ? categories[0] : null, via: known.map(([q]) => q) };
   }
+  if (kind === 'place') {
+    // How coarse a thing of this class is, off the same table (A12 (2)). A
+    // settlement is a `city`, a province or a range is a `region`, a fort or a
+    // building is a `point` — which is a reading of the class and not of the
+    // place, so it belongs beside `kind` and `category` rather than in code.
+    // Classes that disagree say nothing, as they do for a category, and a
+    // class the table gives no precision leaves the record where every place
+    // already on disk is.
+    const precisions = [...new Set(known.map(([, e]) => e.precision).filter(Boolean))];
+    return { kind, actorType: null, precision: precisions.length === 1 ? precisions[0] : null, via: known.map(([q]) => q) };
+  }
   if (kind !== 'actor') return { kind, actorType: null, via: known.map(([q]) => q) };
   const types = [...new Set(known.map(([, e]) => e.actorType).filter(Boolean))];
   if (types.length !== 1) {
@@ -685,7 +696,7 @@ function envelope(id, kind, created, fields, { flags = [] } = {}) {
   };
 }
 
-export function placeRecord(read, { id, created, region = null, regionNote = null }) {
+export function placeRecord(read, { id, created, region = null, regionNote = null, precision = null }) {
   const { title: label, english } = titleFor(read);
   return envelope(id, 'place', created, {
     ...identityOf(read, created),
@@ -700,7 +711,12 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     // record already, in `wikidata`.
     sources: [],
     names: namesFor(read),
-    where: { lon: read.point.lon, lat: read.point.lat, precision: 'point', label },
+    // How coarse the place is, off its class (A12 (2)): `city` for a
+    // settlement, `region` for anything larger that is not a state, `point`
+    // for a battlefield or a building. `point` is the fallback and not a
+    // reading — it is what every place written before the table said anything
+    // carries, so a class nobody has decided about changes nothing.
+    where: { lon: read.point.lon, lat: read.point.lat, precision: precision ?? 'point', label },
     region,
     regionNote: region ? regionNote : null,
     summary: importedSummary(read),
@@ -1143,7 +1159,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'no lane can be reached from its point or from the country it names; the index could not place it');
         continue;
       }
-      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane) });
+      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane), precision: classified.precision });
       written.push(await writeRecord(dataDir, 'places', record));
       taken.add(id);
       byItem.set(`place:${qid}`, id);
