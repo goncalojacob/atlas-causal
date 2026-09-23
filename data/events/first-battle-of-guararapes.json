@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-guararapes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "The item carries no P625 and its P276 is Q40942, the state of Pernambuco, which would put a battle on a whole province. The place is the town instead, from the record’s own cited article: revision 1370618669 gives the location as “Morro dos Guararapes (present-day Jaboatão dos Guararapes, Pernambuco, Brazil)”, and the Second Battle’s item puts its own P625 on that town’s point. No coordinate was invented."
+  },
+  "wikidata": "Q5452519",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "First Battle of Guararapes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5452519"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    }
+  ],
+  "title": "First Battle of Guararapes",
+  "summary": "The English Wikipedia article \"First Battle of Guararapes\", at revision 1370618669, opens: \"The First Battle of Guararapes took place during the Insurrection of Pernambuco, between Dutch and Portuguese forces in Pernambuco, in a dispute for the dominion of that part of the Portuguese colony of Brazil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5452519, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-04-19"
+  },
+  "place": "jaboatao-dos-guararapes",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-brazil-1630-1654"
+}
