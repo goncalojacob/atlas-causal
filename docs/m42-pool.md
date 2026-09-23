@@ -6259,3 +6259,357 @@ not on the head — run 1575 is green with it — and it is not this batch's, wh
 wrote no parent and no ring. **A fire that meets it again should keep the
 output**: a name and a summary line are not a diagnosis, and this run is not
 calling it load.
+
+## Batch 47 — the Russo-Japanese War read as a chain, and the item that dates itself Old Style
+
+*23 September, the fire that picked the run up at 22:33Z. Today already carries
+a `## Curation 2026-09-23` section, so this is **not** the curation fire; A12 is
+spent, and the batches are what stands in front of the run. A10's order of need
+turned over with batch 46: its seven Africa records took that lane to 139 and
+**Asia is now the lane that trails, 136 against Europe's 353** — so this batch
+is **seven Asia rows and no other lane**, and it is the third batch running to
+read one war in the order its own articles put it in rather than to take the top
+of a ranking.*
+
+### The vein, asked of the other lane M42 owns
+
+The inverse `part of` vein was run over the **134** Asia-lane active events that
+carry an item, against every record of any status on `m42` **and** on
+`origin/m42b`: **2,955 rows over 2,566 distinct items, 2,507 of them unheld over
+90 parents.** The Asia lane is not the Africa lane's size — where Africa's 125
+seeds gave 690 unheld rows, Asia's 134 give 2,507, because these are the wars
+English Wikipedia has written most about. `Q8740`, the Vietnam War, names 314 of
+them on its own; `Q122962941` the Gaza war 262, `Q124086054` the Gaza genocide
+231, `Q179975` the Chinese Civil War 175, `Q182865` the war in Afghanistan 174,
+`Q8663` the Korean War and `Q49106` the Second Intifada 137 each.
+
+**The vein was not read as that ranking, and the reason is the method batches 45
+and 46 arrived at.** `Q159950`, the Russo-Japanese War, has 74 unheld rows, and
+of them the atlas held exactly **two**: `battle-of-tsushima` and
+`treaty-of-portsmouth` — the last battle and the paper that closed the war, with
+nothing at all in front of either. That is the shape to look for: a war whose
+engagements the articles chain to each other in date order, ending in records
+already here for the chain to run into. Seven of the 74 are the campaign from
+the opening attack to the last land battle, and with them the war runs unbroken
+from Port Arthur in February 1904 to Portsmouth in September 1905.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-port-arthur` | 28 | 8 Feb 1904 | `lushunkou` (new) | `russo-japanese-war` |
+| `battle-of-the-yalu-river-1904` | 20 | 30 Apr – 1 May 1904 | `yalu-river` (new) | `russo-japanese-war` |
+| `battle-of-nanshan` | 16 | 24–26 May 1904 | `kwantung-peninsula` (new) | `russo-japanese-war` |
+| `siege-of-port-arthur` | 27 | 1 Aug 1904 – 2 Jan 1905 | `liaodong-peninsula` (new) | `russo-japanese-war` |
+| `battle-of-the-yellow-sea` | 28 | 10 Aug 1904 | `yellow-sea` (new) | `russo-japanese-war` |
+| `battle-of-liaoyang` | 22 | 25 Aug – 5 Sep 1904 | `liaoyang` (new) | `russo-japanese-war` |
+| `battle-of-mukden` | 29 | 6 Feb – 25 Feb 1905 (Old Style) | `shenyang` (new) | `russo-japanese-war` |
+
+All seven pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one of them inside `russo-japanese-war`'s
+8 February 1904 to 5 September 1905 at the day; and **lane**, every `P625` in
+Manchuria, Korea or the Yellow Sea. All seven filed, so **main stays at 243**,
+unmoved through sixteen batches and two curation fires.
+
+**An eighth was chosen and dropped before the run.** `Q1192118`, the Battle of
+Chemulpo Bay (19 sitelinks, 9 February 1904), names `Q125696445` — Jemulpo, the
+historical port — as its `P276`, and that item **carries no `P625` at all**. A9
+would have reached it and `placeRecord()` would have refused it, *"a place with
+no coordinate is a word, not a place"*, leaving the event placeless and in no
+lane. The row is not refused for good: it is one of the five shapes the stand
+below still names, and the battle is on the record's own coordinate whenever A9's
+first step is answered.
+
+### The nine edges, and the one the articles would not support
+
+Nine edges, all `probable`, every one quoted from an article at the revision in
+its own locator — which is the revision the sentence was read at and not
+necessarily the revision the record's lead was cached at. Seven chain the seven
+to each other; **two run into records that were already here**, which is A5's
+own standard:
+
+| from | type | to | where the article says it |
+| --- | --- | --- | --- |
+| `battle-of-port-arthur` | precondition-of | `battle-of-the-yellow-sea` | Yellow Sea § Background, rev 1375165941 |
+| `battle-of-the-yalu-river-1904` | precondition-of | `battle-of-nanshan` | Nanshan § Background, rev 1370451314 |
+| `battle-of-the-yalu-river-1904` | **enabled** | `battle-of-liaoyang` | Yalu § Significance, rev 1370602766 |
+| `battle-of-nanshan` | precondition-of | `siege-of-port-arthur` | Nanshan § Background and § Results, rev 1370451314 |
+| `siege-of-port-arthur` | precondition-of | `battle-of-the-yellow-sea` | Yellow Sea § Background, rev 1375165941; Tsushima § Background, rev 1375712462 |
+| `battle-of-liaoyang` | precondition-of | `battle-of-mukden` | Mukden § Background, rev 1375786749 |
+| `siege-of-port-arthur` | **enabled** | `battle-of-mukden` | Mukden § Background, rev 1375786749 |
+| `siege-of-port-arthur` | precondition-of | `battle-of-tsushima` | Tsushima § Background, rev 1375712462 |
+| `battle-of-mukden` | **enabled** | `treaty-of-portsmouth` | Mukden's first section, rev 1375786749; Siege § Aftermath, rev 1373678673 |
+
+**The three `enabled` are the only edges here that claim more than a sequence,
+and each article makes its claim itself.** The Yalu's § Significance: "With
+nothing preventing the Japanese from entering the poorly defended expanses of
+Manchuria, Kuroki and other generals involved in the campaign were ordered to
+launch a large offensive with a goal of crushing the massing Russian
+reinforcements at Liaoyang." Mukden's § Background, on the fortress that had
+just fallen: "Though the capture of Port Arthur by General Maresuke Nogi freed
+up their 3rd Army, which then advanced north to reinforce the Japanese lines
+near Mukden in preparation for an attack... With the arrival of General Nogi's
+3rd Army, Japan's entire fighting strength was concentrated at the vicinity of
+Mukden."
+
+**`battle-of-mukden --enabled--> treaty-of-portsmouth` is the converging branch
+this atlas exists to draw**, and it is why the type is `enabled` and not
+`caused`: the atlas already holds `battle-of-tsushima --caused--> treaty-of-portsmouth`,
+and both articles put Mukden *beside* Tsushima rather than in its place —
+Mukden's own first section says the victory, "coupled with their victory at sea
+in the Battle of Tsushima four months later, proved critical in ending the war in
+Japan's favour". Two branches into one endpoint, from two different reads, is
+the convergence query's whole subject.
+
+**A tenth edge was considered and not written.** The Siege of Port Arthur's
+§ Aftermath says "The capture of Port Arthur and the subsequent Japanese
+victories at the Battle of Mukden and Tsushima gave Japan a dominant military
+position, resulting in favorable arbitration by U.S. President Theodore
+Roosevelt in the Treaty of Portsmouth, which ended the war." That sentence would
+read as `siege-of-port-arthur --enabled--> treaty-of-portsmouth`, but it says
+"and the subsequent victories", which is the path this batch already writes —
+the siege into Mukden and Mukden into the treaty. An edge that only restates a
+path the same sentence describes adds a line to the picture and nothing to the
+argument, so it was left out rather than written for the count.
+
+### `placeRecord()`'s precision code earned itself back in one batch
+
+Seven place records, **every one of them correct as written and not one
+hand-corrected.** That is the code batch 46 landed after its own batch doing
+exactly what the stand said it would: the precisions come off the class table,
+`lushunkou`, `liaoyang` and `shenyang` as `city`, and `yalu-river`,
+`yellow-sea`, `kwantung-peninsula` and `liaodong-peninsula` as `region`. Nine
+hand-corrections over five batches, then zero in the first batch after the code.
+
+Three classes were added to `data/imports/wikidata-seeds.json` → `classes` for
+it, each read off the class item itself over the network and each with its own
+note: **`Q34763` peninsula** as `region` — a peninsula is ground and not a point
+on it, and larger than a settlement without being a state, which `src/vocab.js`
+calls coarse and the map draws wider and fainter; **`Q7930989` city or town**
+and **`Q1065118` district of China** as `city`, which are the two classes
+`Q623329` (Lüshunkou) names and which agree, so `classify()` reads one precision
+and not a disagreement. That is 43 place classes, and
+`tests/import-wikidata.test.mjs` holds every one of them to naming a precision
+the vocabulary has.
+
+**Four of the seven places are coarse and that is the honest drawing**, not a
+gap: a fleet action in the Yellow Sea and a siege sited by the peninsula it was
+fought on are not points on the ground, and `PRECISIONS` exists so the map can
+say so.
+
+### The two things the item got wrong, and what each cost
+
+**`Q384091` dates itself in the Julian calendar and nothing in the import reads
+that.** Both of Mukden's date statements carry `calendarmodel` `Q1985786`, the
+proleptic Julian calendar — the Old Style the Russian army reckoned in — so
+`P580` 6 February and `P582` 25 February 1905 are thirteen days behind the
+Gregorian dates the article gives in its first sentence, "(19 February – 10
+March 1905)". `claimTimes()` reads `time` and ignores `calendarmodel`, and
+`schema/common/interval.json` defaults a 1905 record to Gregorian, so the days
+landed here labelled as something they are not.
+
+What the batch did about it needs no rule and no code: **`when.calendar:
+"julian"`**, which is the field the schema already has for exactly this, with
+the item's own days left untouched and a `review.note` naming both readings.
+Only the integer years drive anything the atlas draws and both readings give
+1905, so nothing on the picture moves. **What a fire should not do is take the
+article's New Style dates under A7**: that is not a widening, it is the same
+span in another calendar, and writing it would have hidden the disagreement
+instead of recording it.
+
+**This is the code the stand asks for next, and it is smaller than the
+precision one was.** `claimTimes()` should read `calendarmodel` and write
+`when.calendar` from it, for the same reason `placeRecord()` should have read
+the class: the answer is on the item, the atlas has a field for it, and the
+alternative is a hand-correction per record for as long as the run touches
+Russian, Ottoman or Balkan dates before 1918 — which the Asia and Europe lanes
+are full of. A second, smaller finding rides with it: `claimTimes()` filters on
+`snaktype` and **not on rank**, so a `deprecated` statement can be read where a
+`normal` one exists. Mukden has both (`P582` 25 February normal, 26 February
+deprecated) and the normal one happened to come first; nothing says it always
+will.
+
+**`Q1363925`'s English label is vandalised and A12 (5) caught it without being
+asked.** The item's `labels.en` reads *"Battle of Port peturth"*; `titleFor()`
+prefers `titles.en`, the article title, so the record is `battle-of-port-arthur`
+titled "Battle of Port Arthur" and the label was never read. The rule was
+written for a disambiguator and it holds for a defacement too, which is worth
+one line: the article title is a page somebody watches and an item label is not.
+
+### A12 (4) asked again and got something, for the first time in four batches
+
+**`Q1363925` carries a `P710`** — `Q188712` the Empire of Japan and `Q34266` the
+Russian Empire — and this atlas holds an actor for each. Both are written to
+`battle-of-port-arthur` as `belligerent`, read as **`japan`** and
+**`russian-empire`**, which is how `russo-japanese-war` itself already reads the
+same two items: two records of one war disagreeing about which record Japan is
+would be worse than either choice. The other six items name no participant the
+atlas holds — `Q210800`'s only `P710` is `Q711238`, the Japanese 3rd Army, which
+is not a record here. So `noActor` rises by six and not seven, and
+`docs/m53-polities.md` §4.1 is retaken at **375 of 798**: the first batch in
+four to move that numerator.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 791 | **798** |
+| **main** | **243** | **243** |
+| filed | 548 | 555 |
+| active edges | 776 | **785** |
+| largest connected component | 565 | **572** |
+| components | 185 | **185** |
+| events with no edge at all | 156 | 156 |
+| events with no place | 50 | 50 |
+| events naming no actor | 416 | 422 |
+| per lane, active | Europe 353, **Asia 136**, Africa 139, Americas 163 | Europe 353, **Asia 143**, Africa 139, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 | unchanged |
+
+**Components did not move because every one of the seven joined the largest**,
+which is what reading a war in date order buys and what the two edges into
+`battle-of-tsushima` and `treaty-of-portsmouth` guaranteed before the batch was
+written: both were already in the 565, so the component grows by exactly the
+size of the batch and no island is created. `summary-imported` rises by seven,
+which is the seven new place records carrying the import's placeholder; A12 (1)
+is about events, and all seven events carry their article's lead at a revision.
+
+### The fire spent forty minutes refused by `maxlag`, and the reason is not ours
+
+**Eight runs of `node tools/import/wikidata.mjs --import` were refused, between
+one that went through and one that went through.** The first run of this fire
+carried the seven event items only, and it created all seven — which is how the
+run learned what the tool says in its own comment: *"An event points at a place
+record; creating one for it here would be creating a record nobody asked for, so
+an event whose location is not already a place of this atlas is placeless and
+takes a lane instead."* The seven places have to be asked for by item, in the
+same run, because `IMPORT_KINDS` puts places before events and the events then
+pick them up. So those seven records were **deleted and the state file restored**
+before anything was committed, the seven place items were added beside them, and
+the batch is one run of fourteen and not two runs of seven. The eight refusals
+are what sat between the two:
+
+```
+error: Waiting for wdqs1011: 154.68 seconds lagged.
+error: Waiting for wdqs1012: 149.07 seconds lagged.
+error: Waiting for wdqs1012: 148.35 seconds lagged.
+error: Waiting for wdqs1011: 148.72 seconds lagged.
+error: Waiting for wdqs1012: 151.03 seconds lagged.
+error: Waiting for wdqs1014: 142.30 seconds lagged.
+error: Waiting for wdqs1016: 166.38 seconds lagged.
+error: Waiting for wdqs1016: 168.15 seconds lagged.
+```
+
+The host in every line is a `wdqs*` — the **query service**, not the entity
+database this import reads. Asked directly, `meta=siteinfo&siprop=dbrepllag`
+answered `db1209, lag 0.0436` throughout: the database was current and the lag
+being reported was the SPARQL service's. The API counts it towards `maxlag` all
+the same, answers HTTP 200 with `error.code: maxlag`, and `MAXLAG` here is 5
+while `RETRIES` is 4 and `BACKOFF_MS` 2000 — which rides out a spike of seconds
+and cannot ride out one of 150. The lag cleared on its own after about forty
+minutes and the batch then ran once, whole, in eighteen calls.
+
+**This fire did not change `MAXLAG` and a fire that meets this should not
+either.** The comment above it says what it is — *"Neither is required of us;
+both are what a good guest does"* — so raising it reverses a politeness the
+owner decided on rather than fixing a bug, and that is the owner's to reverse.
+What the run may legitimately want is one of two small things, both also the
+owner's: a **`--maxlag <seconds>`** flag so a fire says out loud what it is
+asking for and the default stays 5, or `retries` and `backoffMs` exposed on the
+CLI the way `--budget` already is, so a patient run is a longer wait and not a
+different politeness. Until one exists, the answer the protocol already gives
+holds: **the fire is hourly and idempotent, so a refused import is a fire that
+did nothing, which is a success** — a shell loop that re-runs the whole command
+is all it takes, because the tool is additive and carries its own cursor.
+
+
+## Where the run stands after batch 47, for the fire that picks it up
+
+*23 September, 22:33Z onward. An import fire, one batch and no code change, no
+merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
+
+| | |
+| --- | --- |
+| corpus | **798 active** |
+| **main** | **243**, unmoved through sixteen batches and two curation fires |
+| filed | 555 |
+| largest connected component | **572** |
+| components | **185** |
+| events with no edge at all | **156** |
+| events with no place | **50** |
+| events naming no actor | **422** |
+| per lane, active | Europe 353, **Asia 143**, **Africa 139**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. The standing note is
+  unchanged through three batches now: run the relations pass **over the new
+  records only**, because reading the same articles again returns the same rows,
+  *and* read **outward** from the largest component into every component that is
+  not it — for each smaller component, the article of one record in the largest
+  that names it. This batch's seven are the new ones on this lane, and it leaves
+  **no new isolate**: `first-battle-of-zawiya`, which batch 45 knowingly left
+  alone, is still the one waiting.
+- **`claimTimes()` should read `calendarmodel`, and this is the same argument
+  `placeRecord()`'s precision was.** The answer is on the item, the atlas has
+  `when.calendar` for it, and the alternative is one hand-correction per record
+  for as long as the run touches Russian, Ottoman or Balkan dates before 1918 —
+  which both lanes M42 owns are full of. This batch paid it once, on
+  `battle-of-mukden`, thirteen days out. The code is a read of
+  `datavalue.value.calendarmodel` against `Q1985786` and a key written on `when`;
+  a test over the fixtures and one over a real item hold it. Rank rides with it:
+  `claimTimes()` filters on `snaktype` and not on rank, so a `deprecated`
+  statement can be read where a `normal` one exists. **Land it after a batch and
+  in its own commit**, which is the lesson batch 46 wrote and this fire obeyed.
+- **A `--maxlag` flag, or `retries` and `backoffMs` on the CLI, is the other
+  piece of code the run has now asked for once.** This fire lost forty minutes
+  to a query-service lag of 142 to 168 seconds that had nothing to do with the
+  database it reads; the section above says why it did not raise `MAXLAG` itself
+  and why that is the owner's to decide. A fire that meets the same wall should
+  do what this one did: re-run the whole command in a loop, because the tool is
+  additive and carries its own cursor, and say so rather than rounding it off.
+- **A9's first step has never been used and it now blocks six rows, not five.**
+  Batch 45's five Yom Kippur War rows are unchanged — `Q743358` Battle of
+  Latakia, `Q2072316` the Battle of the Chinese Farm, `Q1039366` the Ofira Air
+  Battle, `Q2705872` the Battle of Baltim, `Q2907870` Valley of Tears — and this
+  batch added `Q1192118`, the Battle of Chemulpo Bay (19 sitelinks), which is a
+  *different* refusal worth telling apart. The five carry a `P625` and name no
+  location at all. Chemulpo Bay **names a location** — `Q125696445`, Jemulpo, the
+  historical port — and that location has no coordinate, so A9 reaches step two,
+  `placeRecord()` refuses it, and the event is placeless anyway. **Both are
+  answered by the same sentence**: may the place pass fall back to the event
+  item's own `P625` — before step two where the located item has no point, and as
+  step one where there is no location — writing a place named from the event at
+  `precision: point`? A12 (2) names `point` *"for a battlefield or site"*, which
+  reads as yes; what has stopped a fire doing it unasked is that the place would
+  carry the battle's own name. The narrower compromise batch 45 named still
+  works for four of the five — reuse `sinai-peninsula`, whose point those
+  coordinates sit inside — and does nothing for Chemulpo Bay.
+- **Batch 40's narrowing rule still blocks three rows**, unchanged: `Q1535667`
+  Operation Artemis, `Q152060` the Cabinda Conflict and `Q107461898` the 2021
+  Taliban offensive all have a `P580`, no `P582`, and a parent that closes before
+  the run can say when they ended. *May a run write the end its record's own
+  cited article states, where the item states none and the record carries
+  `end-unstated`?* Yes unblocks three rows at once and costs one clause in A7.
+- **The Asia vein is 2,507 unheld rows over 90 parents and it is emphatically
+  not a ranking.** The top of it by count is `Q8740` the Vietnam War (314),
+  `Q122962941` the Gaza war (262), `Q124086054` the Gaza genocide (231),
+  `Q179975` the Chinese Civil War (175), `Q182865` the war in Afghanistan (174),
+  `Q8663` the Korean War and `Q49106` the Second Intifada (137 each). **Three
+  batches running now say read a war and not a list**, and this one is the
+  cleanest case yet for it: 74 rows under `Q159950` of which the atlas held the
+  last two and nothing before them, seven taken in date order, nine edges from
+  seven records and two of them into what was already here. The veins that read
+  the same way next are `Q159950`'s own remainder — the western campaign,
+  `Q920679` Shaho (17), `Q1358032` Sandepu (17), `Q702150` off Ulsan (15),
+  `Q4538445` the invasion of Sakhalin (14), `Q2619692` Te-li-Ssu (12) and the
+  rest of the **67 still unheld** under it, which would finish the war — then `Q8663` the Korean War, whose rows are
+  a chain in the same way (`Q484494` Osan, `Q492880` Taejon, `Q18016068` first
+  Seoul, `Q482979` the Pusan Perimeter, `Q646336` second Seoul, `Q493313` the
+  Ch'ongch'on, `Q277337` Chosin, `Q493922` third Seoul), and `Q159950`'s
+  neighbour `Q170314`, the Second Sino-Japanese War, at 92.
+- **The Yom Kippur War is still the largest single vein under one parent after
+  Mali's**, 44 unheld rows, and it is Africa and Asia both — which is the one
+  vein that answers A10 for either lane whichever is trailing when a fire opens.
+
