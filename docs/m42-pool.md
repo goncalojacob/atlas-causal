@@ -6613,3 +6613,76 @@ merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
   Mali's**, 44 unheld rows, and it is Africa and Asia both — which is the one
   vein that answers A10 for either lane whichever is trailing when a fire opens.
 
+
+### One more thing the corpus already knew about deviation 1238
+
+`kerensky-krasnov-uprising` — a record the Wikidata import created, filed in the
+Asia lane's neighbour — **already carries `when.calendar: "julian"`**, written by
+the curation fire of 23 September (`36b78f9d`, the 277-summary pass) with no note
+saying why. So this is the second record of the run to need the field and the
+first one to say so: the fire that wrote the first one fixed it silently and the
+cause was never recorded, which is exactly how a one-line lookup goes five
+batches unwritten. Both records are Russian dates before 1918 and both came in
+thirteen days out; the atlas now holds 111 events carrying an explicit calendar
+and two of them are `julian`.
+
+### The check went red on the head, and reading it was worth the minutes it cost
+
+**Run 1597 on `5ff9227b` failed on its first attempt, and not on anything this
+batch wrote.** `Validate records` passed, the 1,791 pure tests passed 1,791 of
+1,791, and then the browser pass came back 280 run, 278 passed, **1 failed and
+1 cancelled**. The one that failed is `compose-browser` 1, *"events clicked on
+the map become the steps, in the order they were clicked"*, and it failed inside
+`withBrowser` at `tests/browser.mjs:239` — the handshake, before any page
+content, so no assertion about a record was ever evaluated:
+
+```
+not ok 1 - events clicked on the map become the steps, in the order they were clicked
+  duration_ms: 60412.922814
+  failureType: 'testCodeFailure'
+  error: |-
+    headless Chromium opened a debugging port, saying: [4991:5012:...ERROR:dbus/bus.cc:405]
+    Failed to connect to the bus: Could not parse server address ...
+  code: 'ERR_ASSERTION'   expected: true   actual: ~   operator: '=='
+```
+
+`exited` is absent from that message, so **Chromium was alive and listed no page
+for the full sixty seconds** — which is the shape `tests/browser.mjs`'s own
+comment already describes, on this same first test of this same file, four times
+before: deviation 1009 at the thirty-second deadline, and three in one evening on
+22 September that took the deadline to sixty. The dbus lines are a headless
+runner's ordinary noise and appear in green runs too.
+
+**The `cancelled 1` is a consequence of the same sixty seconds and it is the
+thing four fires have not written down.** After test 1 burned 60,412 ms, tests 2
+to 6 all passed in 40,933 ms, and then the **file** went `not ok` with
+`test timed out after 120000ms`. `validate.yml` runs `--test-timeout=120000`,
+which bounds the file as well as each test: 60,412 + 40,933 is 101 s before
+teardown, so one slow handshake is now enough to put the file over. At the old
+thirty-second deadline the same file came in around 71 s. **The wait that was
+raised to stop this check going red is what now makes the file time out**, and a
+third raise would make it likelier rather than less. That is deviation 1240, with
+the shape of the fix — a browser launched once for the file, or the wait moved
+out of the first test's clock — and the note that raising `--test-timeout` is the
+owner's, because that step's comment says so.
+
+**Measured rather than assumed**, which is what the brief asks of a red check:
+the same six tests were run locally three times in a row, one at a time, at the
+check's own `--test-timeout`, and passed 6 of 6 each time in **5.8, 6.0 and 6.2
+seconds**. The file's own work is seconds; the sixty was all handshake. The whole
+suite had already been run locally the way the check runs it — 1,791 pure and 279
+browser, 0 failed and 0 skipped — before any of it was pushed.
+
+**The re-run was green on its first and only attempt**, which is the fifth time
+this shape has ended that way: 279 browser tests, **279 passed, 0 failed, 0
+cancelled, 0 skipped**, and the whole browser pass in 459,893 ms against the
+failed attempt's 607,433 ms — the difference is very nearly the sixty seconds
+plus the work the timeout cut off. Attempt 1 reported 280 browser tests and
+attempt 2 reports 279, and that one is the difference: the extra entry on
+attempt 1 *is* the file's own timeout, not a test. Runs 1593 and 1594 were
+**cancelled rather than red**, each superseded by the next push of this fire.
+
+That re-run is the one this fire was entitled to and it is spent. A fire that
+meets `compose-browser` 1 again should not spend another on it — it should read
+deviation 1240 and fix the arithmetic, because five instances is no longer a
+flake, it is a bound that is wrong.
