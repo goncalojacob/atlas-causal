@@ -5126,3 +5126,11 @@ record to a chain that was already in it.
   Africa lane and still costs a main slot.** Nothing in this batch bought one:
   the five imports all went under umbrellas that were already here.
 - **Africa is 120 against Europe's 353** and A10's order does not change.
+
+### Batch 42's check, on the head
+
+`validate.yml` run 1525 on `1932d745` is **green**: 1,789 pure tests and 279
+browser tests, 0 failed and 0 skipped, `validate --index` clean. Run 1523, on
+the batch's first index commit, went red on eleven rule 16 errors — six of them
+history shards — which is deviation 1227 and is fixed by rebuilding the index on
+top of the commit that writes the records.
