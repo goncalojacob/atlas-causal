@@ -6022,3 +6022,207 @@ doing exactly what it was written for: the gap between a corpus that is
 imported and one that is written widens by the size of every batch, and the
 number is in a file rather than in a batch note nobody reads.
 
+
+## Batch 46 — the Libyan eastern front to the end, and the code the stand asked for four times
+
+*23 September, the fire that picked the run up at 20:07Z. Today already carries
+a `## Curation 2026-09-23` section, so this is **not** the curation fire; A12 is
+spent, and the batches are what stands in front of the run. A10's order of need
+is unchanged and **Africa still trails hardest, 132 active against Europe's
+353**, Asia second at 136 — so this batch is **seven Africa rows and no other
+lane**, and it is the second batch running to read a single war's battles in
+the order the articles put them in rather than to take the top of a ranking.*
+
+### The vein, and the war read to its end
+
+The inverse `part of` vein was re-run over the **125** Africa-lane active
+events that carry an item — batch 45's 119 plus its own six — against every
+record of any status on `m42` **and** on `origin/m42b`: **774 rows over 771
+distinct items, 690 of them unheld.** Of the 690, **29 name `Q81545`, the
+Libyan Civil War**, whose front batch 45 took six of.
+
+**Seven of those 29 are what is left of the war's eastern front**, and with
+them the front runs unbroken from the first battle of Benghazi in February to
+Bani Walid in October. In date order, with what the atlas already held between
+them:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-bin-jawad` | 11 | 6–11 Mar | `bin-jawad` (new) | `libyan-civil-war` |
+| `second-battle-of-brega` | 10 | 13–15 Mar | `brega` | `libyan-civil-war` |
+| `battle-of-ajdabiya` | 9 | 15–26 Mar | `ajdabiya` (new) | `libyan-civil-war` |
+| `first-gulf-of-sidra-offensive` | 9 | 26–30 Mar | `sirte` | `libyan-civil-war` |
+| `third-battle-of-brega` | 10 | 31 Mar – 7 Apr | `brega` | `libyan-civil-war` |
+| `fourth-battle-of-brega` | 8 | 14–21 Jul | `brega` | `libyan-civil-war` |
+| `battle-of-bani-walid` | 9 | 8 Sep – 17 Oct | `bani-walid` (new) | `libyan-civil-war` |
+
+All seven pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one of them inside `libyan-civil-war`'s
+15 February to 23 October at the day; and **lane**, every `P625` in Libya. All
+seven filed, so **main stays at 243**, unmoved through fifteen batches and two
+curation fires.
+
+### The eight edges, and the ninth the validator refused
+
+Eight edges, all `probable`, every one quoted from the article the record cites
+at the revision in its locator. Six chain the seven to each other; two run into
+records that were already here, which is A5's own standard:
+
+| from | type | to | where the article says it |
+| --- | --- | --- | --- |
+| `battle-of-ras-lanuf` | precondition-of | `battle-of-bin-jawad` | Bin Jawad § Battle, rev 1375769079 |
+| `battle-of-bin-jawad` | precondition-of | `second-battle-of-brega` | Second Brega's lead, rev 1370735973 |
+| `battle-of-bin-jawad` | **enabled** | `second-battle-of-benghazi` | Bin Jawad § Aftermath, rev 1375769079 |
+| `second-battle-of-brega` | precondition-of | `battle-of-ajdabiya` | Ajdabiya's lead, rev 1374514977 |
+| `battle-of-ajdabiya` | precondition-of | `first-gulf-of-sidra-offensive` | the offensive's lead, rev 1374515970 |
+| `first-gulf-of-sidra-offensive` | precondition-of | `third-battle-of-brega` | Third Brega § Background, rev 1370750314 |
+| `fourth-battle-of-brega` | precondition-of | `battle-of-sirte-2011` | Fourth Brega § Rebel advance on Sirte, rev 1370619930 |
+| `battle-of-tripoli-2011` | precondition-of | `battle-of-bani-walid` | Bani Walid § Background, rev 1374518311 |
+
+**The one `enabled` is the only edge of this batch that claims more than a
+sequence, and the article makes the claim itself**: Bin Jawad's § Aftermath
+says the battle "marked the end of the rebel advance westward at the time, and
+opened the way for a government counter-offensive that took pro-Gaddafi forces
+as far as the gates of Benghazi". The gates of Benghazi on 19 March are
+`second-battle-of-benghazi`, which this atlas already held.
+
+**A ninth edge was written and the validator refused it, and the refusal is
+right.** `2011-military-intervention-in-libya --enabled--> battle-of-ajdabiya`
+breaks **rule 4**, the arrow of time: the intervention opens on 19 March and
+the battle opens on the 15th. The article's sentence — "On 26 March 2011,
+Libyan rebels, backed by extensive allied air raids, seized control of the
+frontline oil town of Ajdabiya" — is about the recapture, which falls *inside*
+the battle this atlas dates and not before it. An edge cannot say "during", so
+there is no edge to write, and the air campaign's part in the recapture is a
+fact the record's own summary carries and the graph does not. Rule 4 caught in
+one line what a reading of two dates should have caught first; a batch that
+reads a vein as a war has to read its own arrows the same way.
+
+### The places, and the ninth hand-correction that became code
+
+Three of the seven reuse `brega` and one reuses `sirte` — `Q162413`, which the
+offensive names as its `P276`, is the city and not the gulf, so the reuse is
+the import's and not a guess. Three place records are new, each written by the
+import from the event item's own `P276`: `bin-jawad` (`Q117564`), `ajdabiya`
+(`Q202991`) and `bani-walid` (`Q244230`).
+
+**Each arrived at `precision: point` and each was corrected to `city` by hand,
+which makes nine over five batches** — `karameh`, `dien-bien-phu`, `incheon`,
+`benghazi`, `ras-lanuf`, `zawiya-libya` and these three. So this fire wrote the
+code the stand has named four times. `placeRecord()` now takes the precision
+from the item's class, `classify()` returns it the way it returns a category —
+the one distinct value the known classes give, null where they disagree — and
+**all forty place classes of `data/imports/wikidata-seeds.json` now name one**,
+each read off what the class itself means: a settlement is a `city`, a
+province, a sea, a river or a mountain range a `region`, a castle, a prison, a
+palace or a square a `point`. A class the table gives no precision still writes
+`point`, which is what every place on disk carries, so nothing already imported
+changes meaning. Two tests, written before the change and failing on it, hold
+it: one over the fixtures and one over the real table.
+
+It landed as **its own commit after the batch**, not inside it, for the reason
+the stand gave for not doing it sooner: a batch that changes the importer
+mid-run stops being reproducible. The seven records above were written by the
+importer as it was.
+
+### A12 (4) asked again and got nothing again
+
+**Not one of the seven items carries a `P710`.** That is the second batch
+running, and the reason is the same as batch 45's: the Libyan rows name their
+participants in prose and not in a property. `noActor` rises by seven, to 416,
+and `docs/m53-polities.md` §4.1 is retaken at **374 of 791** with the numerator
+where it has stood since M67.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 784 | **791** |
+| **main** | **243** | **243** |
+| filed | 541 | 548 |
+| active edges | 768 | **776** |
+| largest connected component | 558 | **565** |
+| components | 185 | **185** |
+| events with no edge at all | 156 | 156 |
+| events with no place | 50 | 50 |
+| events naming no actor | 409 | 416 |
+| per lane, active | Europe 353, Asia 136, **Africa 132**, Americas 163 | Europe 353, Asia 136, **Africa 139**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 | unchanged |
+
+**Components did not move because every one of the seven joined the largest**,
+which is what reading a war in date order buys: the component grows by exactly
+the size of the batch, seven, and no island is created. The check on the head
+of this fire is recorded below.
+
+## Where the run stands after batch 46, for the fire that picks it up
+
+*23 September, 20:07Z onward. An import fire, one batch and one code change, no
+merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
+
+| | |
+| --- | --- |
+| corpus | **791 active** |
+| **main** | **243**, unmoved through fifteen batches and two curation fires |
+| filed | 548 |
+| largest connected component | **565** |
+| components | **185** |
+| events with no edge at all | **156** |
+| events with no place | **50** |
+| events naming no actor | **416** |
+| per lane, active | Europe 353, **Asia 136**, **Africa 139**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. The standing note is
+  unchanged and batch 45's addition to it still holds: run the relations pass
+  **over the new records only**, because reading the same articles again
+  returns the same rows, *and* read **outward** from the largest component into
+  every component that is not it — for each smaller component, the article of
+  one record in the largest that names it. This batch's seven are the new ones
+  on this lane, and it leaves **no new isolate**: `first-battle-of-zawiya`,
+  which batch 45 knowingly left alone, is still the one waiting.
+- **`placeRecord()`'s precision is done and the argument it was is closed.**
+  Nine hand-corrections over five batches is what it cost to get there; the
+  lesson worth keeping is the one the stand wrote and this fire obeyed — the
+  code lands *after* the batch, in its own commit, so the batch stays a
+  reproducible run of the importer as it was.
+- **The Libyan Civil War is finished as a chain and has 22 rows left as a
+  list.** What remains under `Q81545` is the western front and the small
+  engagements — `Q1042279` Tripoli protests and clashes (8), `Q277176` the
+  Nafusa Mountains campaign (8), `Q349968` the Zawiya skirmish (5), `Q2935404`
+  the Fezzan campaign (5) and eighteen more at four sitelinks or fewer. **The
+  Nafusa Mountains campaign is the one to weigh first and it carries a shape
+  worth naming**: it has a `P585` of 18 August 2011 and **no `P580` and no
+  `P582` at all**, so A12 (3) dates it as a one-day event on a campaign the
+  article runs from April to August. That is not batch 40's narrowing rule —
+  nothing is being narrowed — but it is its neighbour: *may a run widen a
+  `P585`-only interval from the record's own cited article?* **A7 already says
+  yes** for an interval the article widens, and nothing in it distinguishes a
+  point in time from a stated span, so a fire may take this one without a new
+  rule; it is named here only because no batch has yet done it and the first to
+  do it should say so.
+- **Batch 40's narrowing rule still blocks three rows.** `Q1535667` Operation
+  Artemis, `Q152060` the Cabinda Conflict and `Q107461898` the 2021 Taliban
+  offensive all have a `P580`, no `P582`, and a parent that closes before the
+  run can say when they ended. Unchanged: *may a run write the end its record's
+  own cited article states, where the item states none and the record carries
+  `end-unstated`?* Answering it yes unblocks three rows at once and costs one
+  clause in A7.
+- **A9's first step has never been used and five Yom Kippur War rows still wait
+  on it**, unchanged from batch 45's stand: `Q743358` Battle of Latakia (15),
+  `Q2072316` the Battle of the Chinese Farm (11), `Q1039366` the Ofira Air
+  Battle (11), `Q2705872` the Battle of Baltim (10), `Q2907870` Valley of Tears
+  (9). The compromise that needs no new rule is still the narrow one: **where an
+  existing place record's own outline or point already contains the event's
+  `P625`, reuse it** — `sinai-peninsula` holds four of those five coordinates.
+  The Yom Kippur War is now the **largest single vein under one parent after
+  Mali's**, 44 unheld rows, and it is Africa and Asia both.
+- **The Africa vein is 683 unheld rows over 125 parents and it is not a
+  ranking.** Below Libya the veins that read as one war in date order are
+  `mali-war` (78 rows), `yom-kippur-war` (44), `somali-civil-war-2009-present`
+  (42), `algerian-war` (41), `second-boer-war` (40) and `tigray-war` (40).
+  Two batches running have shown what that reading is worth: batch 45 got seven
+  edges from six records, this one eight from seven, where batch 44's ranking
+  got two from six. **Read a war, not a list.**
