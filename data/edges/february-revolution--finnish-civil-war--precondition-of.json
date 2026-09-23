@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "february-revolution--finnish-civil-war--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Finnish Civil War\", revision 1375858302, § Build-up"
+  }
+ ],
+ "from": "february-revolution",
+ "to": "finnish-civil-war",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The Finnish war’s build-up section makes the revolution the end of the war-economy boom Finland had been living on. The article reads: \"The February Revolution halted the Finnish economic boom caused by the Russian war-economy.\"",
+ "dispute": null
+}

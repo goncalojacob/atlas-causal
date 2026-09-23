@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Ogaden War\", revision 1373903527, § Second Italo-Ethiopian War and World War II"
+  }
+ ],
+ "from": "second-italo-ethiopian-war",
+ "to": "ogaden-war",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The Ogaden war’s article dates the single administration over the disputed ground — the thing the war was fought about — from the Italian conquest’s end. The article reads: \"Following the end of the Second Italo-Ethiopian War in 1937, and the outbreak of World War II, the Ogaden was united under a single administration with the British and Italian Somaliland's.\"",
+ "dispute": null
+}

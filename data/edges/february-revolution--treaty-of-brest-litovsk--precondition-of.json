@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "february-revolution--treaty-of-brest-litovsk--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Treaty of Brest-Litovsk\", revision 1376225466, § Background"
+  }
+ ],
+ "from": "february-revolution",
+ "to": "treaty-of-brest-litovsk",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The treaty’s background begins at the unrest that forced the abdication. The article reads: \"The large numbers of war casualties and persistent food shortages in the major urban centers brought about civil unrest, known as the February Revolution, that forced Tsar Nicholas II to abdicate.\"",
+ "dispute": null
+}

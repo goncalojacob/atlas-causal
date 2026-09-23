@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "great-depression--siamese-revolution-of-1932--caused",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Great Depression\", revision 1374942454, § Thailand"
+  }
+ ],
+ "from": "great-depression",
+ "to": "siamese-revolution-of-1932",
+ "type": "caused",
+ "confidence": "probable",
+ "explanation": "Both articles state it, and the revolution’s own is the plainer: the economic conditions the Depression caused triggered the revolution. The article reads: \"In Thailand, then known as the Kingdom of Siam, the Great Depression contributed to the end of the absolute monarchy of King Rama VII in the Siamese revolution of 1932.\"",
+ "dispute": null
+}

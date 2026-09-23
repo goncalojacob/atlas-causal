@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "six-day-war--yom-kippur-war--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Yom Kippur War\", revision 1375181066, § Response in Israel"
+  }
+ ],
+ "from": "six-day-war",
+ "to": "yom-kippur-war",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The 1973 war’s article makes the complacency of the 1967 victory the condition Israel was surprised in. The article reads: \"Following their victory in the Six-Day War, the Israeli military had become complacent.\"",
+ "dispute": null
+}

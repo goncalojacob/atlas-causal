@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "soviet-afghan-war--battle-of-mogadishu-1993--inspired",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Somali National Alliance and Irregular forces"
+  }
+ ],
+ "from": "soviet-afghan-war",
+ "to": "battle-of-mogadishu-1993",
+ "type": "inspired",
+ "confidence": "probable",
+ "explanation": "The battle’s article names the advice of Somali mujahedeen just back from Afghanistan among what the militia’s tactics were drawn from. The article reads: \"Many of the tactics Aidid, Giumale and other subordinate SNA commanders drew on were inspired by Chinese and Vietnamese books on guerrilla warfare and on advice from Somali mujahedeen veterans, who had just returned from the Soviet–Afghan War.Despite the substantial array of heavier weaponry in SNA stockpiles, none were used during the 3–4 October battle.\"",
+ "dispute": null
+}

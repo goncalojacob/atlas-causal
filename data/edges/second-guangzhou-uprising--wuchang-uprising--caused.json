@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "second-guangzhou-uprising--wuchang-uprising--caused",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Second Guangzhou Uprising\", revision 1370737006, § Legacy"
+  }
+ ],
+ "from": "second-guangzhou-uprising",
+ "to": "wuchang-uprising",
+ "type": "caused",
+ "confidence": "probable",
+ "explanation": "The uprising’s article carries the claim as some historians’, which is what keeps this probable rather than consensus. The article reads: \"They were commemorated as the \"72 martyrs.\" Some historians believe that the uprising was a direct cause of the Wuchang Uprising, which eventually led to the 1911 Revolution and the founding of the Republic of China.\"",
+ "dispute": null
+}

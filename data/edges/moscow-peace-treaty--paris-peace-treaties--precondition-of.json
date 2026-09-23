@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "moscow-peace-treaty--paris-peace-treaties--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Paris Peace Treaties, 1947\", revision 1369078996, § Finland"
+  }
+ ],
+ "from": "moscow-peace-treaty",
+ "to": "paris-peace-treaties",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The 1947 treaties extended the accessions the 1940 treaty had made, and the Paris article says so. The article reads: \"The Soviet Union's accessions of Finnish territory was based on the Moscow Armistice signed in Moscow on 19 September 1944 and resulted in an extension of the accessions in the Moscow Peace Treaty that ended the Winter War.\"",
+ "dispute": null
+}

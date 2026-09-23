@@ -1,0 +1,39 @@
+{
+ "schema": 1,
+ "id": "revolutions-of-1989--yugoslav-wars--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-23",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted",
+   "a13-relations-pass"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Revolutions of 1989\", revision 1375849372, lead"
+  }
+ ],
+ "from": "revolutions-of-1989",
+ "to": "yugoslav-wars",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The 1989 article carries the Yugoslav wars in its own aftermath. The article reads: \"Meanwhile, in certain countries the aftermath of these revolutions resulted in conflict and wars, including post-Soviet conflicts that remain, as well as large-scale wars, most notably the Yugoslav Wars which led to the Bosnian genocide.\"",
+ "dispute": null
+}
