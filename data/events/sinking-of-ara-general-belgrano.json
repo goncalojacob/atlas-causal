@@ -1,54 +1,66 @@
 {
-  "schema": 1,
-  "id": "sinking-of-ara-general-belgrano",
-  "kind": "event",
-  "status": "active",
-  "supersededBy": null,
-  "aliases": [],
-  "authors": [
-    {
-      "name": "Wikidata import (tools/import/wikidata.mjs)",
-      "github": null
-    }
-  ],
-  "license": "CC-BY-SA-4.0",
-  "created": "2026-09-22",
-  "revised": null,
-  "review": {
-    "status": "draft",
-    "flags": [
-      "imported-facts"
-    ]
+ "schema": 1,
+ "id": "sinking-of-ara-general-belgrano",
+ "kind": "event",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Wikidata import (tools/import/wikidata.mjs)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-09-22",
+ "revised": "2026-09-23",
+ "review": {
+  "status": "draft",
+  "flags": [
+   "imported-facts",
+   "participants-from-p710"
+  ]
+ },
+ "origin": {
+  "tool": "wikidata"
+ },
+ "wikidata": "Q3284956",
+ "wikipedia": {
+  "en": "Sinking of ARA General Belgrano",
+  "pt": "Afundamento do ARA General Belgrano"
+ },
+ "sitelinks": {
+  "count": 5,
+  "on": "2026-09-22"
+ },
+ "sources": [
+  {
+   "source": "wikidata",
+   "locator": "Q3284956"
+  }
+ ],
+ "title": "Sinking of ARA General Belgrano",
+ "summary": "Wikidata item Q3284956, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 sinking of Cruiser ARA General Belgrano (C-4)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+ "when": {
+  "start": 1982,
+  "end": 1982,
+  "date": "1982-05-02"
+ },
+ "place": "falkland-islands",
+ "region": null,
+ "regionNote": null,
+ "parent": "falklands-war",
+ "category": "war",
+ "actors": [
+  {
+   "actor": "argentina",
+   "role": "belligerent",
+   "note": "Wikidata Q3284956, P710 (participant), Q414"
   },
-  "origin": {
-    "tool": "wikidata"
-  },
-  "wikidata": "Q3284956",
-  "wikipedia": {
-    "en": "Sinking of ARA General Belgrano",
-    "pt": "Afundamento do ARA General Belgrano"
-  },
-  "sitelinks": {
-    "count": 5,
-    "on": "2026-09-22"
-  },
-  "sources": [
-    {
-      "source": "wikidata",
-      "locator": "Q3284956"
-    }
-  ],
-  "title": "Sinking of ARA General Belgrano",
-  "summary": "Wikidata item Q3284956, imported by tools/import/wikidata.mjs. The item's own description reads \"1982 sinking of Cruiser ARA General Belgrano (C-4)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
-  "when": {
-    "start": 1982,
-    "end": 1982,
-    "date": "1982-05-02"
-  },
-  "place": "falkland-islands",
-  "region": null,
-  "regionNote": null,
-  "parent": "falklands-war",
-  "category": "war",
-  "actors": []
+  {
+   "actor": "united-kingdom",
+   "role": "belligerent",
+   "note": "Wikidata Q3284956, P710 (participant), Q145"
+  }
+ ]
 }
