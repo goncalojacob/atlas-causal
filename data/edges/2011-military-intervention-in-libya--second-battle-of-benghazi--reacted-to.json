@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2011-military-intervention-in-libya--second-battle-of-benghazi--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Benghazi\", revision 1370735938, § France intervenes, loyalists retreat"
+    }
+  ],
+  "from": "2011-military-intervention-in-libya",
+  "to": "second-battle-of-benghazi",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article: \"The battle marked the start of a United Nations-mandated military intervention in the conflict, with fighter jets from the French Air Force attacking and destroying several pro-Gaddafi units, forcing them to retreat\", and, in § France intervenes: \"at 4:45 pm, coalition intervention began as a French fighter jet fired on and destroyed several loyalist armored vehicles ... Admiral Mullen of the United States announced on 20 March, that the international coalition had stopped the regime's progression on Benghazi.\" `reacted-to` is the only one of the five that fits: the first strikes were flown against the column entering Benghazi that morning, so the intervention answers this battle rather than causing it or standing as its condition. Probable: Wikipedia alone.",
+  "dispute": null
+}

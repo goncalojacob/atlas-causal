@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-sirte-2011--killing-of-muammar-gaddafi--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
+    }
+  ],
+  "from": "battle-of-sirte-2011",
+  "to": "killing-of-muammar-gaddafi",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's own lead: \"The Battle of Sirte was the final and most decisive battle of the First Libyan Civil War, beginning when the National Liberation Army attacked the last remnants of the Libyan army still loyal to Muammar Gaddafi in his hometown and designated capital of Sirte ... Both Gaddafi and his son, Mutassim, were wounded and captured, then tortured and killed in custody less than an hour later.\" `caused` and not `precondition-of`: the capture happened inside this battle and the killing followed it within the hour, which is the article stating one thing bringing about the other and not a condition standing ready. Probable: Wikipedia alone.",
+  "dispute": null
+}

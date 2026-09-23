@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-darfur--2020-darfur-attacks--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2020 Darfur attacks\", revision 1327431594, § Background and § Attacks"
+    }
+  ],
+  "from": "war-in-darfur",
+  "to": "2020-darfur-attacks",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article, § Background: \"Since 2003, a civil war has been taking place in Darfur, in the west of Sudan. During the violence, various ethnic groups were driven out of their land. Other people moved in and took over the land; in the 2010s, the original landowners returned and contested ownership.\" The lead has the government and UNAMID connecting the massacres to exactly those land conflicts, and § Attacks has the United Nations saying the same: \"after displacement in Darfur in the early 2000s, groups took over abandoned land. In recent years, persecuted groups have attempted to return to their land.\" `precondition-of` and not `caused`: what the war left behind is a dispute over who owns which field, and the article has officials connecting the killings to that dispute rather than to the war itself. Probable: Wikipedia alone, and the attribution in it is to officials rather than to historians.",
+  "dispute": null
+}
