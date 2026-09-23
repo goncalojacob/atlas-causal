@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-serval--operation-barkhane--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Barkhane\", revision 1370630875, § Background"
+    }
+  ],
+  "from": "operation-serval",
+  "to": "operation-barkhane",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on Operation Barkhane says that following the end of Operation Serval France recognised the need to provide stability in the wider Sahel region, that Barkhane was launched for that purpose, and that the operation is the successor of Operation Serval and of Operation Epervier in Chad.",
+  "dispute": null
+}

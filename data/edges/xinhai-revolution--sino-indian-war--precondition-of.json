@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "xinhai-revolution--sino-indian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Indian War\", revision 1374100162, § Aksai Chin"
+    }
+  ],
+  "from": "xinhai-revolution",
+  "to": "sino-indian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Aksai Chin section makes the revolution the shift in China after which the British held the Johnson Line without enforcing it — the line the war was fought over. The article reads: \"Following the Xinhai Revolution in 1911 which resulted in power shifts in China, the fall of Tzarist Russia in 1917 and the end of World War I in 1918, the British officially used the Johnson Line but had lost the urgency to enforce this boundary.\"",
+  "dispute": null
+}

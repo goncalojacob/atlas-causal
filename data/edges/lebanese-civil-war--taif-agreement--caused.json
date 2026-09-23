@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lebanese-civil-war--taif-agreement--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taif Agreement\", revision 1369818876, lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q208484 P1542 (has effect) Q321936"
+    }
+  ],
+  "from": "lebanese-civil-war",
+  "to": "taif-agreement",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the agreement says it \"was reached to provide the basis for the ending of the civil war and the return to political normalcy in Lebanon\" and that it \"was designed to end the 15 year-long Lebanese Civil War\". The accord exists because the war did: it is the war's settlement and not an independent negotiation, which is what Wikidata says as well (Q208484, P1542). Probable, for the reason every edge drawn from these two sources is.",
+  "dispute": null
+}

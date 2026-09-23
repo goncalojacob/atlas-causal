@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "participants-from-p710"
+      "participants-from-p710",
+      "summary-from-lead"
     ],
     "note": "Wikidata Q322607 names 7 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -39,10 +40,14 @@
     {
       "source": "wikidata",
       "locator": "Q322607"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of Attrition\", revision 1371500938"
     }
   ],
   "title": "War of Attrition",
-  "summary": "Wikidata item Q322607, imported by tools/import/wikidata.mjs. The item's own description reads \"1967–1970 war between Israel and Egypt, Syria and Jordan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"War of Attrition\", at revision 1371500938, opens: \"The War of Attrition (Arabic: حرب الاستنزاف, romanized: Ḥarb al-Istinzāf; Hebrew: מלחמת ההתשה, romanized: Milḥemet haHatashah) involved fighting between Israel and Egypt, Jordan, the Palestine Liberation Organisation (PLO) and their allies from 1967 to 1970. Following the 1967 Six-Day War, no serious diplomatic efforts were made to resolve the issues at the heart of the Arab–Israeli conflict. The 1967 Arab League summit formulated in September the \"three no's\" policy, barring peace, recognition, or negotiations with Israel. Egyptian President Gamal Abdel Nasser believed that only military initiative would compel Israel or the international community to facilitate a full Israeli withdrawal from Sinai, and hostilities soon resumed along the Suez Canal. These initially took the form of limited artillery duels and small-scale incursions into Sinai, but by 1969, the Egyptian Army judged itself prepared for larger-scale operations. On March 8, 1969, Nasser proclaimed the official launch of the War of Attrition, characterized by large-scale shelling along the Suez Canal, extensive aerial warfare and commando raids. Hostilities continued until August 1970 and ended with a ceasefire. The frontiers remained the same as when the war began, with no real commitment to serious peace negotiations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q322607, imported by tools/import/wikidata.mjs. The item's own description reads \"1967–1970 war between Israel and Egypt, Syria and Jordan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1967,
     "end": 1970,

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "angolan-war-of-independence--angolan-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angolan War of Independence\", revision 1370428662, § Alvor Agreement"
+    }
+  ],
+  "from": "angolan-war-of-independence",
+  "to": "angolan-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Angolan War of Independence says that the Alvor Agreement of January 1975 ended the war for independence while marking the transition to civil war, and that the coalition government it established soon fell as the nationalist factions, doubting one another's commitment, tried to take control of the colony by force. The three movements that fought Portugal are the parties of the war that followed.",
+  "dispute": null
+}

@@ -19619,6 +19619,285 @@ cause rather than the symptom — see deviations 1174 and 1175.
       it, and the index is byte-identical — which is the honest form of "past a
       threshold".
 
+1087. **An item's English label is not always English, and the `enwiki`
+      sitelink is the check.** `Q131323`, which the Battle of Misrata names as
+      its location, carries `البيضاء` as its `en` label while its sitelink says
+      *Misrata* and its English aliases say *Misurata*, *Misratah*, *Misuratah*.
+      A place written from `labels.en` alone would have put an Arabic name on
+      an English map, which CLAUDE.md's first rule about this atlas forbids. The
+      test batch 36 used is cheap and mechanical — **does the label contain a
+      Latin letter?** — and where it does not, the `enwiki` sitelink title is
+      the label and the original is kept in `names`. Nothing is guessed and no
+      name is dropped.
+
+1088. **A place id can collide with an actor id, and rule 2 is across kinds.**
+      `algiers` is already an actor record here, so the place written for the
+      Battle of Algiers is `algiers-q3561` — the qid suffix the corpus already
+      uses for `mali-q912`, `london-q84`, `darfur-q46733` and
+      `south-africa-q258`. The validator caught it as *"duplicate id among the
+      records under validation"* and as *"is not a place record"* in the same
+      run, which is the pair of errors this collision always produces. A pass
+      that writes place records from item labels should check every id against
+      **every kind**, not against `data/places/`.
+
+1089. **A modern administrative name on a nineteenth-century battle is the
+      price of A9's order, not a defect of it.** `battle-of-stormberg` sits in
+      `chris-hani-district-municipality`, an area created in 2000 and named
+      after a man killed in 1993; it is the only located item Wikidata offers
+      between the battlefield and the country. The alternative, the country,
+      is what `battle-of-spion-kop` and `battle-of-paardeberg` took for want of
+      any `P276` at all — and `south-africa-q258` is just as anachronistic for
+      1899 and coarser besides. The atlas's own answer already exists and is
+      unwritten: `historicalNames` on the place record, which the validator has
+      reported as an unwritten field since it was declared. Containment is
+      geometry and not a claim (`src/grounds.js`), so neither choice asserts
+      anything about 1899; what a reader sees on the map is a naming problem
+      and `historicalNames` is where it is solved.
+
+1090. **Batch 34's finding and batch 36's are both true, and the variable is
+      not the war.** Batch 34 took eight rows of the Vietnam War and wrote two
+      edges, concluding that "the phases of one war are chronological to each
+      other and not causal". Batch 36 took five rows of the Second Boer War and
+      four of its five edges run between them. The difference is in the
+      articles: Colenso's § Background states a decision *with its reason* —
+      *"On hearing that Gatacre and Methuen had been defeated at the battles of
+      Stormberg and Magersfontein, Buller felt he needed to relieve Ladysmith
+      as soon as possible"* — where Khe Sanh's and Hamburger Hill's describe
+      positions. **Read § Background for why the next thing was done**, not for
+      what happened next, and rows of one war connect.
+
+1091. **The absence of a type is not a licence to misuse one.** The Battle of
+      Mogadishu's § Legacy argues that the battle is why the United States did
+      *not* intervene in the Rwandan genocide, and this atlas holds
+      `1994-genocide-against-tutsi`. The five edge types have nothing for "is
+      why this other thing was not answered", and `precondition-of` would have
+      the atlas asserting that an American battle stands behind a Rwandan
+      genocide, which no source says. **The edge was refused and the reason
+      written down** rather than typed as the nearest thing available: a vein
+      that reaches for the nearest type when none fits is how a graph fills up
+      with claims nobody made.
+
+1092. **A count carried forward from the last stand is not a measurement.**
+      Three stands in a row said "events with no place: 23, all refused for
+      want of a coordinate", and the number was already wrong when the second
+      one copied it: measured at `eebd5bc6`, the head this fire picked up, 28
+      active events had no place. The five the figure was missing are M42b's
+      Italian Wars, which reached this branch through an earlier `m0` merge
+      and which that lane deliberately left placeless. Nothing was broken by
+      it, and that is the point — **a wrong count in a document is invisible
+      until somebody re-measures**, which is deviation 1078 arriving in a
+      second place. A row that says "N" should be a row a fire re-took, and a
+      fire that copies one forward should say it copied it.
+
+**M42 batch 37 — the joins, and the count amendment A3 asks for.** Five records
+imported, **five filed and none main**, so the main count comes out of the batch
+where it went in: **242**, with the corpus 678 → 683 and the filed count
+436 → 441. Eight edges, of which two run between records the atlas already held
+and needed no import at all. The **largest connected component 513 → 517**, the
+first four-node move of the milestone, and 131 components against 132.
+Per lane, active: Europe 314, Asia 125 → 126, **Africa 99 → 103**, the
+Americas 140; main unmoved in every one. The vein is new and it is why: the
+eight Wikidata properties that are already a causal claim, in place of `P361`.
+`docs/m42-pool.md` § "Batch 37" is the account and § "Where the run stands
+after batch 37" is what the next fire picks up.
+
+**M42 batch 38 — the same vein asked of Asia, and the count A3 asks for.** Four
+records imported, **four filed and none main**, so the main count comes out
+where it went in: **242**, unmoved through five batches, with the corpus
+683 → 687 and the filed count 441 → 445. Four edges, every one of them carried
+in by a new record: the **two** held-to-held pairs the vein offered with no edge
+were both refused by their own articles, which is the first time batch 37's
+check has cost more than it gave. The **largest connected component 517 → 521**,
+131 components unchanged. Per lane, active: Europe 314, **Asia 126 → 130**,
+Africa 103, the Americas 140; main unmoved in every one. One place written
+(`palestine-q23792`) and one record left placeless because its item carries no
+coordinate anywhere. A10's regional period for Asia was looked for and **cannot
+be written**: the article gives no start (deviation 1210). `docs/m42-pool.md`
+§ "Batch 38" is the account, `docs/m42-connections.md` § "Batch 38" is the
+argument for each edge, and § "Where the run stands after batch 38" is what the
+next fire picks up — which, after 02:00Z on 23 September, is the curation fire
+and A13's relations pass, still never run.
+
+1206. **A refusal recorded as `done` is a refusal the state cannot retry.**
+      `Q49077`, the Six-Day War, had been walked by an earlier Wikidata import
+      and refused — at the time this atlas had no `middle-east` place record
+      for the item's `P276` and no lane reachable from it. `advance()` in
+      `tools/import/wikidata.mjs` writes **every** item of a batch into the
+      run's `done` list, whether it was created or refused, so the item could
+      not be offered again without editing `data/imports/wikidata-state.json`
+      by hand, which is what M42 batch 37 did. Deviation 1086 named this shape
+      for a class decision; this is the place half of it, and the general form
+      is that **the state records that an item was walked and not what
+      happened to it**. A refusal is a verdict about the atlas on the day it
+      was taken, and the atlas changes.
+
+1207. **A country is not a location, and the import's lane falls back to the
+      country.** Operation Barkhane is a French operation fought across Mali,
+      Burkina Faso, Chad, Mauritania and Niger: its `P276` is the Sahel and
+      its `P17` is France. With no place record for the Sahel yet, the import
+      walked `P276, P131, P17` looking for a point and the first one it could
+      reach was France's, so it wrote **`region: europe`** on an operation in
+      the Sahel. The order is right for a *place* and wrong for a *lane*: an
+      operation's country is **who sent it**, not where it happened. The fix
+      here was to write the place record A9's own rule asks for; the general
+      fix is that a lane derived from `P17` alone should say so or refuse.
+
+1208. **The vein decides the yield, not the reading.** Batches 32 to 36 of M42
+      read articles carefully and moved the largest connected component by two
+      across five batches. Batch 37 read no harder and moved it by four from
+      five records, because it asked Wikidata for the eight properties that
+      are *already* a causal claim — `P828`, `P1542`, `P1478`, `P1536`,
+      `P155`, `P156`, `P1479`, `P1534` — instead of for `P361`, the parts of
+      things. A part hangs from a parent and a parent takes no edge, so **the
+      parts vein files and the joins vein connects**. A run that wants chains
+      should know which question it is asking before it spends the reading.
+
+1209. **Deviation 798's order is "records, *then* rebuild", and the rebuild has
+      to come after the commit and not merely after the edit.**
+      `tools/lib/history.mjs` reads each record's versions out of the
+      repository's own commits, so `data/index/history-<kind>-<key>-<hash>.json`
+      depends on the **commit graph** and not only on the working tree. An index
+      built while the new records are still untracked carries history shards the
+      checked-out tree does not produce, and rule 16 in CI is what says so —
+      locally `--index` passes, because the same stale graph builds the same
+      stale shards. It took M42's check red twice in one fire: once on the `m0`
+      merge, whose index was rebuilt before the merge commit existed, and once
+      on batch 37, whose index was rebuilt before the records were committed.
+      **The order that converges is: commit the records, rebuild, commit the
+      index** — and it converges in one step, because the index commit touches
+      no record file and so changes no history.
+1210. **A period Wikipedia names can still have no span, and then A6 refuses
+      it.** A10 asks the seeds file for *"the regional periods A6 asks for where
+      a lane has none (Latin America's, Asia's)"*, and the decolonisation of
+      Asia is the obvious one: an article, a region, 130 active events waiting
+      under it. Its lead at revision 1375271318 gives an end — *"concluding with
+      the independence of the Democratic Republic of Timor-Leste from Indonesia
+      in 2002"* — and no start, and `Q5249554` carries no `P580`, no `P582` and
+      no `P585`. **Refused**, because opening it would mean a year nobody wrote
+      down. `decolonisation-of-africa` had the same gap and its article closed
+      it with *"the mid-1950s"*, which the record carries as the range
+      1954–1956; this one says nothing at all. Every A6 refusal until now was
+      for want of an article; this is the first for want of a span.
+1211. **The Arab Spring is an umbrella in one lane and its members are in
+      two.** `2011-yemeni-revolution` is main, is dated 2011–2012, and the
+      umbrella is dated 2010–2012: the span fits exactly and the filing would
+      have cost nothing. `tests/m42-filing.test.mjs` refuses it, because
+      `arab-spring` carries `region: africa` and no actors while the Yemeni
+      revolution is drawn in `asia`, and the test's subject clause asks for the
+      umbrella's own lane or a shared actor. **The Arab world is not a lane of
+      this atlas** — it is split between `africa` and `asia` — so the umbrella
+      can only carry the half that shares its row. The test is right and the
+      lanes are the thing that would have to change; neither is a batch's to
+      settle.
+1212. **The article refused more than it wrote, for the first time.** Batch 37
+      established that *a property is a claim and the article is the check*, and
+      it cost that batch one edge out of six. Asked of the Asia lane, the same
+      check refused **both** of the held-to-held pairs the vein offered with no
+      edge — the Lebanese civil war into the Sabra and Shatila massacre, and the
+      second Guangzhou uprising into the Wuchang uprising — because neither
+      article says what `P1542` says. Those were the two cheapest edges
+      available, needing no import at all. **A13's pass should be budgeted for
+      the reading and not for the rows**: 41 pairs are waiting for it and this
+      is the rate at which they will survive.
+1213. **A name matched as a substring is not a name, and 45 of 312 rows were
+      that.** A13's first matcher asked `sentence.includes(name)`, which made
+      **"World War I" match inside "World War II"** and **"Iraq War" inside
+      "Iran–Iraq War"**, and made the Carnation Revolution's name `25 April`
+      match every article carrying that date. Every one of those 45 rows was a
+      false link between two records the atlas really holds, which is the worst
+      shape a false positive can take: it reads as a finding. A name now has to
+      stand on its own — no word character and no joining dash on either side —
+      and a name that is only a day and a month is not a name in prose at all.
+      Batch 29 named the *namesake* (a title match is not an identity); this is
+      its mechanical half, and it is the reason the pass's numbers are 267 and
+      not 312.
+1214. **Batch 31a's umbrella rule now costs eight readings a pass, three of
+      them the plainest links in the corpus.** No edge may touch either end of
+      a record carrying an umbrella flag, and seventeen records carry one. A13
+      argued `world-war-i --precondition-of--> world-war-ii` from the Second
+      World War's own lead, `world-war-ii --precondition-of-->
+      decolonisation-of-africa` from the decolonisation article's § External
+      causes, and `scramble-for-africa --precondition-of--> world-war-i` from
+      the Scramble's § Aftermath, and the rule refuses all three. The rule is
+      right as written — a period is a display fact — but the four records it
+      bites on (`world-war-ii`, `scramble-for-africa`,
+      `decolonisation-of-africa`, `indochina-wars`) are wars and processes
+      before they are periods. **The question batch 31a left is now four
+      records wide and is the cheapest thing that would grow the component**;
+      it is the owner's to settle and no fire's.
+1215. **The arrow of time refused five readings the articles support, and two
+      of those are record dates that are wrong.** Rule 4 is not an obstacle
+      here, it is the second reader: it caught that Brest-Litovsk (March 1918)
+      cannot be a precondition of a civil war beginning in November 1917, that
+      the revolutions of 1989 cannot enable a war beginning in 1974, and that
+      `insurgency-in-kosovo` at 1998-02-28 and `operation-sutton` at
+      1982-05-23 are both dated after things they plainly precede — Operation
+      Sutton **is** the San Carlos landing of 21 May. **A pass that reads
+      articles needs a validator that reads records**, and the two bad dates
+      are A7's to correct from the cited article.
+1216. **An attributed claim is not a dispute.** Two edges were written
+      `disputed` because the article said *"Some scholars have argued"* and
+      *"India contends"*. Rule 8 requires who disagrees and why **with the
+      dissenting citations**, and an article that attributes a claim names no
+      dissenter to cite. The atlas already has the word for a claim nobody has
+      settled and it is `probable`; both were rewritten as that, with the
+      attribution quoted word for word in the explanation rather than dropped.
+      Marking an unsettled claim `disputed` would have manufactured a
+      disagreement, which is the one thing `confidence` exists to stop.
+1217. **`second-guangzhou-uprising --caused--> wuchang-uprising` is written,
+      and deviation 1212 is not reversed.** Batch 38 refused the pair because
+      the uprising's lead *"says only that it was a failed uprising that took
+      place in China"*, and that reading was correct about the lead — which is
+      all the cache under `tools/import/cache/wikipedia/` holds (longest file
+      4,947 characters, median 415). The whole article's § Legacy says *"Some
+      historians believe that the uprising was a direct cause of the Wuchang
+      Uprising"*. **The endpoint is the finding**: A13's value is not a better
+      judgement than batch 38's, it is 539 articles read whole instead of 539
+      first paragraphs, and this pair is the proof that the difference pays.
+1218. **Where a Wikidata item names several locations, A9 takes the one the
+      record's own title names.** `P276` on the Italian War of 1551–1559 lists
+      France first and Italy third. A9 says *the first item that carries
+      `P625`*, and obeying it literally would have put a war called Italian at
+      the centre of France and called that a reading of the source. The rule
+      the pass follows is: the located thing the record's own title names, and
+      the first only where the title names none. Ten places were assigned and
+      one of them turned on this.
+1219. **A13's contradiction half found nothing, and the test that found
+      nothing is too blunt to keep.** The amendment asks for edges the article
+      contradicts. The pass looked for a causal cue sitting between the two
+      names with the atlas's *later* record written first, over all 539
+      articles, and got two hits — both sentences that **agree** with the edge
+      and were flagged only because the later record is named first (*"an
+      armistice that brought about a cessation of hostilities of the Korean
+      War"*; *"sparked by the overthrowing of the Russian Provisional
+      Government in the October Revolution"*). **Word order is not direction.**
+      So the honest report is that no article contradicts an edge on this
+      reading, and that a real second half needs the sentence parsed for which
+      name is the subject of the causal verb — a different tool, and not one to
+      fake with positions.
+1220. **The endpoint that returns a preview is not the endpoint that returns
+      the article, and this fire paid for that twice.** A13 read 539 articles
+      whole and wrote 56 edges the cached leads could not have argued; the
+      summary pass then refused 49 records for a lead under two sentences and
+      found that **40 of those 49 have a lead of two sentences or more in the
+      article itself**. The cache under `tools/import/cache/wikipedia/` holds
+      the REST summary extract — longest file 4,947 characters, median 415 —
+      and every pass that has read "the lead" since M42 began has read an
+      abbreviation of one. Nothing in the cache is wrong; it is the wrong
+      thing to read for this question, and a fire that wants a lead should
+      fetch `action=query&prop=extracts&explaintext` and cut at the first
+      heading.
+1221. **A measurement of one's own work is worth taking twice, and the first
+      take here said the opposite of the truth.** This fire's first pass over
+      the summaries matched the placeholder's *words* anywhere in the field
+      and reported that **no** active event still carried one. 330 records
+      carry the import's sentence **behind** a lead written in front of it,
+      which is the correct shape, and 87 records **opened** on it, which is
+      the defect. The claim "no active event carries the import's placeholder
+      any more" was written into `docs/m42-pool.md` and then taken out again
+      in the same fire. A count of what is wrong has to ask where the wrong
+      thing is, not whether its words appear.
+
 ## M84 — the owner's feedback document
 
 Lane A, on the branch `m84`. `docs/m84-brief.md` over
@@ -20361,15 +20640,14 @@ M42 started 2026-09-22T16:06:45Z by scheduled
 M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
 M82 done
 M42 started 2026-09-22T18:13:05Z by scheduled
-M82 started 2026-09-22T13:35:25Z by scheduled (branch m82)
-M82 done
-M42 started 2026-09-22T16:06:45Z by scheduled
 M42b started 2026-09-22T16:12:56Z by scheduled
-M42 started 2026-09-22T18:13:05Z by scheduled
 M42b started 2026-09-22T18:14:03Z by scheduled
 M83 started 2026-09-22T16:38:15Z by scheduled (branch m83)
 M83 done
+M42 started 2026-09-22T21:07:15Z by scheduled
+M42 started 2026-09-22T23:42:00Z by scheduled
 M84 started 2026-09-22T20:15:57Z by scheduled (branch m84)
 M84 done
 M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done
+M42 started 2026-09-23T02:06:09Z by scheduled

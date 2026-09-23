@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ogossagou-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q62389968",
+  "wikipedia": {
+    "en": "Ogossagou massacre",
+    "pt": "Massacre de Ogossagou"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q62389968"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ogossagou massacre\", revision 1354535837"
+    }
+  ],
+  "title": "Ogossagou massacre",
+  "summary": "The English Wikipedia article \"Ogossagou massacre\", at revision 1354535837, opens: \"On March 23, 2019, several attacks by gunmen killed a reported 160 Fulani herders in central Mali. The violence came in the aftermath of the Malian government cracking down on Islamic terror cells in the country. Two villages, Ogossagou and Welingara, were particularly affected.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q62389968, imported by tools/import/wikidata.mjs. The item's own description reads \"Attacks against Fulani herders in central Mali\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2019,
+    "end": 2019,
+    "date": "2019-03-23"
+  },
+  "place": "ogossagou",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "actors": []
+}

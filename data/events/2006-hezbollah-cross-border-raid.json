@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "2006-hezbollah-cross-border-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2026122",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "2006 Hezbollah cross-border raid",
+    "pt": "Raide transfronteiriço do Hezbollah em 2006"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2026122"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2006 Hezbollah cross-border raid\", revision 1370102562"
+    }
+  ],
+  "title": "2006 Hezbollah cross-border raid",
+  "summary": "The English Wikipedia article \"2006 Hezbollah cross-border raid\", at revision 1370102562, opens: \"Hezbollah militants carried out a cross-border raid on an Israeli military patrol on 12 July 2006. Using rockets fired on several Israeli towns as a diversion, Hezbollah militants crossed from Lebanon into Israel and ambushed two Israeli Army vehicles, killing three soldiers and capturing two other soldiers. Israel refused and launched a large-scale ground and air campaign across Lebanon in response to the Hezbollah raid. This marked the start of the 2006 Lebanon War.\" Wikidata item Q2026122, whose own description reads \"attack on Israeli troops at the Israel-Lebanon border\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2006,
+    "end": 2006,
+    "date": "2006-07-12"
+  },
+  "place": "lebanon-q822",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "2006-lebanon-war"
+}

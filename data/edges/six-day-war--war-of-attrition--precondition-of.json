@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "six-day-war--war-of-attrition--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Six-Day War\", revision 1375500255, § Aftermath — War of Attrition"
+    }
+  ],
+  "from": "six-day-war",
+  "to": "war-of-attrition",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Six-Day War says that Israel occupied the Sinai Peninsula up to the Suez Canal, and that after the war Egypt initiated clashes along that canal in what became known as the War of Attrition. The later war is fought over the line the earlier one drew.",
+  "dispute": null
+}

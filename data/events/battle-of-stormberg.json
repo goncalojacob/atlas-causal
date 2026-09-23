@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "battle-of-stormberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-22",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q431849",
+  "wikipedia": {
+    "en": "Battle of Stormberg"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-22"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q431849"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Stormberg\", revision 1370589985"
+    }
+  ],
+  "title": "Battle of Stormberg",
+  "summary": "The English Wikipedia article \"Battle of Stormberg\", at revision 1370589985, opens: \"The Battle of Stormberg was a British assault on Stormberg Junction on 10 December 1899 during the Second Boer War. At that time, the Boers had taken control of Molten and the heights around Stormberg Junction, as part of their invasion of Cape Colony. William Forbes Gatacre, the general in command of troops in the Cape Midlands, decided to dislodge the Boers from their position in order to secure the railway lines which supplied the larger March on Kimberley by Lord Methuen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q431849, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-12-10"
+  },
+  "place": "chris-hani-district-municipality",
+  "region": null,
+  "regionNote": null,
+  "parent": "second-boer-war",
+  "category": "war",
+  "actors": []
+}

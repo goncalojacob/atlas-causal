@@ -4506,3 +4506,281 @@ pretends otherwise.
 which is the far end of an edge and the near end of none — were each read for
 one and refused it, with the reasons in `docs/m42-pool.md` under batch 35.
 Nothing was written to keep them.
+
+## 2ag. Batch 36 — five edges, four of them inside one week of one war
+
+*22 September, the second batch of the same fire. Batch 34 concluded that the
+phases of one war are chronological to each other and not causal; this batch
+took five rows of the Second Boer War and four of its five edges run between
+them. Both are true, and what separates them is whether the articles argue the
+commanders' decisions.*
+
+**`siege-of-ladysmith --reacted-to--> battle-of-spion-kop`.** Spion Kop's own
+lead, revision 1374078287, says what the battle was for: it was fought *"during
+the campaign by the British to relieve the besieged city Ladysmith during the
+initial months of the Second Boer War"*, on a hilltop *"about 38 km (24 mi)
+west-southwest of Ladysmith"*. The edge says the battle answered the siege and
+nothing more.
+
+**`siege-of-ladysmith --reacted-to--> second-battle-of-colenso`.** The same
+claim six weeks earlier, from Colenso's § Background at revision 1370736054:
+Buller *"assumed command of his largest detachment and proposed to lead it to
+the relief of a besieged British force in Ladysmith, in Natal"*, and the Boers
+*"had retired north of the Tugela River at Colenso and dug in there, blocking
+the road and railway line to Ladysmith"*.
+
+**`battle-of-stormberg --reacted-to--> second-battle-of-colenso`** and
+**`battle-of-magersfontein --reacted-to--> second-battle-of-colenso`.** One
+sentence of the same section carries both, and it names both battles: *"On
+hearing that Gatacre and Methuen had been defeated at the battles of Stormberg
+and Magersfontein, Buller felt he needed to relieve Ladysmith as soon as
+possible and resume overall command of the forces in South Africa"* — and, the
+paragraph goes on, *"He decided to make a frontal assault at Colenso"* rather
+than the flank march at Potgieter's Drift he had intended. What is claimed is
+that the two defeats are why Colenso was fought the way it was fought, not that
+either caused the battle, which is why the type is `reacted-to`. Both are
+written rather than one standing for the pair, because the atlas holds both —
+`battle-of-magersfontein` having arrived in batch 35 an hour earlier.
+
+**`battle-of-annual --precondition-of--> alhucemas-landing`.** The landing's
+§ Background at revision 1370427911 opens with the defeat — *"After the Battle
+of Annual in July 1921, the Spanish army was unable to regain control of the
+central Rif region. It undertook a containment policy… In parallel, the
+Minister of War ordered the creation of an inquiry commission"* — and runs from
+there to the agreements that included *"the plan for a Spanish landing on the
+Alhucemas bay"*. It also says the target was older than the defeat: *"All
+Spanish land operations, included the Disaster of Annual in 1921, were aimed at
+the occupation of Alhucemas"*. `precondition-of` is the exact claim: Annual is
+the situation the landing was planned out of, not its cause.
+
+**All five are `probable`** (rule 22), and all five edges together moved the
+largest connected component by nothing, because every one of them runs between
+records these two batches created. `docs/m42-pool.md` under batch 36 says why
+and what would move it.
+
+**The refusal worth more than the five.** The Battle of Mogadishu's § Legacy
+says that *"many commentators identif[y] the Battle of Mogadishu's graphic
+consequences as the key reason behind the US's decision to not intervene in
+later conflicts such as the Rwandan genocide of 1994"*, and this atlas holds
+`1994-genocide-against-tutsi`. No edge was written, because what the article
+argues is about the **response** and not about the event: Mogadishu is offered
+as a reason the United States stayed out, not as anything standing behind the
+genocide. `battle-of-stormberg`, `battle-of-waterberg`,
+`battle-of-misrata-2011`, `ogossagou-massacre`, `battle-of-algiers-1956-1957`
+and `battle-of-paardeberg` earned nothing further and nothing was written to
+keep them.
+
+## Batch 37 — eight edges from the joins vein
+
+*22 September, 21:07Z. The vein is the eight Wikidata properties that are
+already a causal claim rather than `P361`; `docs/m42-pool.md` under batch 37
+says why that changes the yield. Every edge below was read from the article the
+record cites, at the revision named, and every one is `probable` (rule 22).*
+
+**`suez-crisis --precondition-of--> six-day-war`.** The Six-Day War's
+§ Background at revision 1375500255 says the 1956 crisis *"ultimately result[ed]
+in the reopening of the Straits of Tiran to Israel and the deployment of the
+United Nations Emergency Force (UNEF) along the Egypt–Israel border"*, and that
+Israel held to its *"post-1956 position that another Egyptian closure of the
+Straits of Tiran to Israeli shipping would be a definite casus belli"*. In May
+1967 Nasser closed them again and *"ordered the immediate withdrawal of all UNEF
+personnel"*. `precondition-of` is the exact claim: the crisis built the
+arrangement whose undoing the article gives as the war's occasion.
+
+**`six-day-war --precondition-of--> war-of-attrition`.** The same article's
+§ Aftermath carries one sentence under the heading *War of Attrition*: *"After
+the war, Egypt initiated clashes along the Suez Canal in what became known as
+the War of Attrition."* The canal is the line the June war drew.
+
+**`angolan-war-of-independence --precondition-of--> angolan-civil-war`.** The
+war of independence's § Alvor Agreement at revision 1370428662 says the accord
+*"ended the war for independence while marking the transition to civil war"*,
+and that *"the coalition government established by the Alvor Agreement soon fell
+as nationalist factions, doubting one another's commitment to the peace process,
+tried to take control of the colony by force"*. The three movements that fought
+Portugal are the parties of the war that followed.
+
+**`war-in-somalia --precondition-of--> somali-civil-war-2009-present`.** The
+lead of *Somali Civil War (2009–present)* at revision 1374631534 says that
+*"during the insurgency that followed the 2006 Ethiopian invasion of Somalia,
+al-Shabaab rose to prominence and made major territorial gains"*, that the
+Transitional Federal Government *"was on the verge of collapse"* weeks before
+the occupation ended, and that the Ethiopian withdrawal of early 2009 and Sharif
+Ahmed's election marked *"a new phase of the civil war"*.
+
+**`second-sudanese-civil-war --caused--> comprehensive-peace-agreement`** and
+**`comprehensive-peace-agreement --precondition-of-->
+2011-south-sudanese-independence-referendum`.** The agreement's lead at revision
+1372495468 carries both in three sentences: it was *"an accord signed on 9
+January 2005, by the Sudan People's Liberation Movement (SPLM) and the
+Government of Sudan"*, it *"was meant to end the Second Sudanese Civil War"*,
+and it *"also set a timetable for a Southern Sudanese independence referendum"*.
+The vote of January 2011 is the one the accord scheduled.
+
+**`marco-polo-bridge-incident --caused--> second-sino-japanese-war`.** The
+incident's lead at revision 1370745067 says fighting *"broke out while the
+Japanese complaint was still under negotiation"* on the night of 7 July 1937,
+and that the incident *"is generally regarded as the start of the Second
+Sino-Japanese War"*. Both ends were already here and an isolated record joined
+the largest component with nothing imported.
+
+**`operation-serval --precondition-of--> operation-barkhane`.** Barkhane's
+§ Background at revision 1370630875 says that *"following the end of Operation
+Serval, France recognised the need to provide stability in the wider Sahel
+region"*, that Barkhane *"was launched in order to assure the Sahel nations'
+security"*, and that *"the operation is the successor of Operation Serval, the
+French military mission in Mali, and Operation Epervier, the mission in Chad"*.
+
+**The refusal worth the most.** Wikidata says (`P1542`) that the Battles of
+Khalkhin Gol have as their effect the Molotov–Ribbentrop pact, which would have
+joined an isolated record to the largest component for nothing. The article at
+revision 1371868221 says it the other way round — the pact *"deprived the
+[Kwantung] Army of the basis of its war policy against the USSR"* — and of the
+battle says only that its defeat, with Chinese resistance and the pact,
+*"moved the Imperial General Staff in Tokyo away from the policy of the North
+Strike Group"*. **A property is a claim and the article is the check**, which is
+amendment A13's rule applied a fire before A13's own.
+
+## Batch 38 — the joins vein asked of the Asia lane
+
+The same six directional properties batch 37 asked of Africa (`P828`, `P1542`,
+`P1478`, `P1536`, `P1479`, `P1534`), asked now of the **120 active `asia`-lane
+events that carry a Wikidata id**: 93 rows, of which **9 are held-to-held** and
+**81 name an item the atlas does not have**.
+
+**`israeli-declaration-of-independence --caused--> 1948-arab-israeli-war`.** The
+declaration's lead at revision 1372097190 places it *"at the end of the civil
+war phase and beginning of the Arab–Israeli War of the 1948 Palestine war"* and
+says the state it declared *"would come into effect on termination of the
+British Mandate at midnight that day"*. Wikidata states the same link in the
+same direction (`Q49092`, `P828`).
+
+**`lebanese-civil-war --caused--> taif-agreement`.** The agreement's lead at
+revision 1369818876 says it *"was reached to provide the basis for the ending of
+the civil war and the return to political normalcy in Lebanon"* and *"was
+designed to end the 15 year-long Lebanese Civil War"*.
+
+**`taif-agreement` is filed inside `lebanese-civil-war` and names neither an
+actor nor a place**, so the filing is argued here, which is where M67's weaker
+test asks for it. The record is placeless because its item carries no `P625`,
+no `P276`, no `P131` and no `P17` at all, and A9 writes a place from a
+coordinate or writes none; what puts it inside the war is not a point but the
+article's own sentence — the accord is the war's settlement, signed on 22
+October 1989 and ratified on 5 November, inside a war this atlas dates
+1975–1990. Its lane is written on the record with a note saying the same thing:
+the accord was *"negotiated in Taif, Saudi Arabia"* and ends a war drawn in the
+`asia` lane.
+
+**`2006-hezbollah-cross-border-raid --caused--> 2006-lebanon-war`.** The raid's
+lead at revision 1370102562 says that after the ambush *"Israel refused and
+launched a large-scale ground and air campaign across Lebanon in response to
+the Hezbollah raid. This marked the start of the 2006 Lebanon War."* The raid is
+also filed as part of that war, which is Wikidata's own `P361` and a display
+fact; the edge is the separate claim that the campaign answered it.
+
+**`railway-protection-movement --enabled--> wuchang-uprising`.** The movement's
+lead at revision 1361142110 says *"the mobilization of imperial troops from
+neighboring Hubei Province to suppress the Railway Protection Movement created
+the opportunity for revolutionaries in Wuhan to launch the Wuchang Uprising"*.
+**`enabled` and not `caused`**, because that is the sentence's own shape: what
+the movement produced was the opening — a garrison sent out of Wuhan — and not
+the decision to rise. Wikidata records it as the uprising's cause (`Q339291`,
+`P828`); the atlas reads it at the weaker of the two types the sources allow.
+
+### The two held-to-held pairs the articles refused
+
+Batch 37's rule — **a property is a claim and the article is the check** — cost
+this batch both of the free edges the vein offered, which is the first time it
+has refused more than it wrote.
+
+- **`lebanese-civil-war` and `sabra-and-shatila-massacre`** (`P1542`, has
+  effect). The massacre's lead at revision 1375981084 says nothing of the kind:
+  it gives the 1982 Israeli invasion, the PLO withdrawal, the withdrawal of the
+  multinational force and Bashir Gemayel's assassination as the circumstances,
+  and never says the civil war caused the killings. What the article describes
+  is a massacre **inside** the war, which is containment and not an argument.
+- **`second-guangzhou-uprising` and `wuchang-uprising`** (`P1542`, has effect).
+  The uprising's lead at revision 1370737006 says only that it *"was a failed
+  uprising that took place in China"*, led by Huang Xing against the Qing in
+  Canton. It does not connect the two, and an edge written on the property alone
+  would be this atlas asserting what neither article says.
+
+## The curation fire of 23 September — A13's relations pass, 56 edges
+
+*The first run of the pass amendment A13 added: every active event's cited
+article, read whole at its current revision, for any other event the atlas
+holds. 539 articles, 267 pairs where a causal cue shares a sentence with
+another event's name, 56 edges.* `docs/m42-pool.md` → `## Curation
+2026-09-23` carries the counts, the refusals and the method; this file
+carries the edges.
+
+**The locator on every one of them is the article, the revision and the
+section**, and the explanation quotes the sentence, so a reviewer goes to the
+paragraph rather than to the article. That is the same standard batches 29
+to 38 wrote to, at the scale A13 asks for.
+
+### The pair batch 38 refused, and why this is not a reversal
+
+Above, under "The two held-to-held pairs the articles refused", this file says
+of **`second-guangzhou-uprising` and `wuchang-uprising`** that *"the
+uprising's lead at revision 1370737006 says only that it was a failed uprising
+that took place in China"*. That is true of the lead, and the lead is all the
+cache under `tools/import/cache/wikipedia/` holds — its longest file is 4,947
+characters and its median is 415.
+
+The whole article, **at that same revision 1370737006**, § Legacy, says:
+
+> They were commemorated as the "72 martyrs." Some historians believe that the
+> uprising was a direct cause of the Wuchang Uprising, which eventually led to
+> the 1911 Revolution and the founding of the Republic of China.
+
+So `second-guangzhou-uprising --caused--> wuchang-uprising` is written, at
+`probable`, with *"Some historians believe"* kept in the explanation rather
+than dropped. **Batch 38 was right about its evidence; this pass has more of
+it**, and the difference between them is not a newer revision and not a
+better judgement — it is the same revision read whole instead of read to the
+end of its first paragraph.
+
+### The five the arrow of time refused
+
+Rule 4 is the second reader here, and what it caught is worth more than four
+of the five edges it cost.
+
+- **`treaty-of-brest-litovsk` and `russian-civil-war`.** The civil war's
+  article says the treaty's signature *"resulted in direct Allied intervention
+  in Russia and the arming of military forces opposed to the Bolshevik
+  government"*. The treaty is March 1918 and the war begins November 1917: what
+  the article describes is a cause operating **inside** the war, which is the
+  same shape as the Sabra and Shatila refusal above and not an edge between
+  these two records.
+- **`revolutions-of-1989` and `ethiopian-civil-war`.** The 1989 article's
+  § Africa makes the withdrawal of Soviet and Cuban assistance what the Derg
+  was finally beaten without — the war's **end**, and the war began in 1974.
+- **`february-revolution` and `basmachi-movement`.** The movement's record
+  begins in 1916.
+- **`insurgency-in-kosovo` and `kosovo-war`**, and **`operation-sutton` and
+  `battle-of-san-carlos`.** Both refused on days rather than on years, and
+  **both are record dates that are wrong**: the insurgency is dated 1998-02-28
+  against its own lead's *"began in 1995"*, and Operation Sutton — which **is**
+  the San Carlos landing of 21 May 1982 — is dated 1982-05-23 against a battle
+  dated 1982-05-21. Correcting those two from the cited article writes two
+  edges that are already argued.
+
+### The eight the umbrella rule refused
+
+Batch 31a's rule stands and this file records what it now costs. Three of the
+eight are the plainest links the corpus has:
+
+- **`world-war-i` and `world-war-ii`**, from the Second World War's own lead:
+  *"The causes of World War II included unresolved tensions in the aftermath of
+  World War I and the rise of fascism in Europe and militarism in Japan."*
+- **`world-war-ii` and `decolonisation-of-africa`**, from the decolonisation
+  article's § External causes: *"Italy, a colonial power, lost its African
+  empire … as a result of World War II."*
+- **`scramble-for-africa` and `world-war-i`**, from the Scramble's § Aftermath:
+  *"The tensions between the imperial powers led to a succession of crises,
+  which exploded in August 1914, when previous rivalries and alliances created
+  a domino situation that drew the major European nations into World War I."*
+
+Each is refused because one end carries an umbrella flag. The arguments are
+kept here because the records, not the edges, are what would have to change.

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "marco-polo-bridge-incident--second-sino-japanese-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § lead"
+    }
+  ],
+  "from": "marco-polo-bridge-incident",
+  "to": "second-sino-japanese-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The English article on the Marco Polo Bridge incident says that fighting broke out on the night of 7 July 1937 between the 29th Army of the National Revolutionary Army and the Imperial Japanese Army while a Japanese complaint was still under negotiation, and that the incident is generally regarded as the start of the Second Sino-Japanese War.",
+  "dispute": null
+}

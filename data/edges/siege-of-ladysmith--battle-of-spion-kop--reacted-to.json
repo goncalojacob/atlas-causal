@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Spion Kop\", revision 1374078287, lead"
+    }
+  ],
+  "from": "siege-of-ladysmith",
+  "to": "battle-of-spion-kop",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Spion Kop's own lead says what the battle was for: it was fought \"during the campaign by the British to relieve the besieged city Ladysmith during the initial months of the Second Boer War\", on a hilltop \"about 38 km (24 mi) west-southwest of Ladysmith\". Read in this direction the edge says the battle answered the siege, which is the whole of the claim: the siege is the thing being relieved and Spion Kop is one of the attempts. `probable`, one Wikipedia article (rule 22).",
+  "dispute": null
+}

@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q239060"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arab Revolt\", revision 1370428832"
     }
   ],
   "title": "Arab Revolt",
-  "summary": "Wikidata item Q239060, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising against the ruling Ottoman Turks during World War I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Arab Revolt\", at revision 1370428832, opens: \"The Arab Revolt (Arabic: الثورة العربية al-Thawra al-'Arabiyya), also known as the Great Arab Revolt (الثورة العربية الكبرى al-Thawra al-'Arabiyya al-Kubrā), was an armed uprising by the Hashemite-led Arabs of the Hejaz against the Ottoman Empire amidst the Middle Eastern theatre of World War I. On the basis of the McMahon–Hussein Correspondence, exchanged between Henry McMahon of the United Kingdom and Hussein bin Ali of the Kingdom of Hejaz, the rebellion against the ruling Turks was officially initiated at Mecca on 10 June 1916. The primary goal of the Arab rebels was to establish an independent and unified Arab state stretching from Aleppo to Aden, which the British government had promised to recognize. The Sharifian Army, led by Hussein and the Hashemites with backing from the British military's Egyptian Expeditionary Force, successfully fought and expelled the Ottoman military presence from much of the Hejaz and Transjordan. By 1918, the rebels had captured Damascus and proclaimed the Arab Kingdom of Syria, a short-lived monarchy that was led by Hussein's son Faisal I. The Arab-majority Ottoman territories of the Middle East were broken up into a number of League of Nations mandates, jointly controlled by the British and the French. Amidst the partition of the Ottoman Empire, the defeated Ottomans' mainland in Anatolia came under a joint military occupation by the victorious Allies. This was gradually broken by the Turkish War of Independence, which established the present-day Republic of Turkey. Most Arabs in the Ottoman territories stayed loyal to the local Ottoman authorities, and did not join or support the revolt of Hussein bin Ali. Hussein bin Ali's Arab Revolt army did not play a decisive military role in the war. The liberation was led primarily by British and French forces, with the Arab Revolt forces playing a more limited supporting role.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q239060, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising against the ruling Ottoman Turks during World War I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1918,
     "end": 1918,

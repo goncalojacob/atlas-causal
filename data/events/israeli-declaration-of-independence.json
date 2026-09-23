@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "israeli-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q223732",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Israeli Declaration of Independence",
+    "pt": "Declaração de Independência do Estado de Israel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q223732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
+    }
+  ],
+  "title": "Israeli Declaration of Independence",
+  "summary": "The English Wikipedia article \"Israeli Declaration of Independence\", at revision 1372097190, opens: \"The Israeli Declaration of Independence, formally the Declaration of the Establishment of the State of Israel, was proclaimed at the Tel Aviv Museum on 14 May 1948, at the end of the civil war phase and beginning of the Arab-Israeli War of the 1948 Palestine war, by the Va'ad Leumi led by David Ben-Gurion. It declared the establishment of a Jewish state in Palestine, to be known as the State of Israel, which would come into effect on termination of the British Mandate at midnight that day.\" Wikidata item Q223732, whose own description reads \"1948 declaration of Israel's independence\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1948,
+    "end": 1948,
+    "date": "1948-05-14"
+  },
+  "place": "palestine-q23792",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": [],
+  "parent": "arab-israeli-conflict"
+}

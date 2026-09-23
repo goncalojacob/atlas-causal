@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "comprehensive-peace-agreement--2011-south-sudanese-independence-referendum--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Comprehensive Peace Agreement\", revision 1372495468, § lead"
+    }
+  ],
+  "from": "comprehensive-peace-agreement",
+  "to": "2011-south-sudanese-independence-referendum",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The English article on the Comprehensive Peace Agreement says that it set a timetable for a Southern Sudanese independence referendum. The vote of January 2011 is the one the accord scheduled.",
+  "dispute": null
+}

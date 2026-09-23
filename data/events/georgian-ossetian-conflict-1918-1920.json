@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q1208479"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671"
     }
   ],
   "title": "Georgian–Ossetian conflict (1918–1920)",
-  "summary": "Wikidata item Q1208479, imported by tools/import/wikidata.mjs. The item's own description reads \"1918–1920 uprisings in Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Georgian–Ossetian conflicts of 1918-1920\", at revision 1374257671, opens: \"The Georgian–Ossetian conflict of 1918–1920 were a series of uprisings, which took place in the Ossetian-inhabited areas of what is now South Ossetia, a breakaway republic in Georgia, against the Transcaucasian Democratic Federative Republic and then the Menshevik-dominated Democratic Republic of Georgia. During its brief tenure, the Menshevik government of Georgia came across significant problems with ethnic Ossetians who largely sympathized with the Bolsheviks and Soviet Russia. The reasons behind the conflict were complicated. An overdue land reform and agrarian disturbances in the poor Ossetian-populated areas intermingled with ethnic discord and the struggle for power in the Caucasus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1208479, imported by tools/import/wikidata.mjs. The item's own description reads \"1918–1920 uprisings in Georgia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1918,
     "end": 1920

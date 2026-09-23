@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q2452024"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1536–1538\", revision 1374565270"
     }
   ],
   "title": "Italian War of 1536–1538",
-  "summary": "Wikidata item Q2452024, imported by tools/import/wikidata.mjs. The item's own description reads \"Italian war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Italian War of 1536–1538\", at revision 1374565270, opens: \"The Italian war of 1536–1538 was a conflict between King Francis I of France and Charles V, Holy Roman Emperor and King of Spain. The objective was to achieve control over territories in Northern Italy, in particular the Duchy of Milan, which Charles had granted to his son Philip. The war saw French troops invading Northern Italy with the goal to capture Milan, and Imperial-Spanish troops invading France in retaliation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2452024, imported by tools/import/wikidata.mjs. The item's own description reads \"Italian war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1536,
     "end": 1538,

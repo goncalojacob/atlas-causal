@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -35,10 +36,14 @@
     {
       "source": "wikidata",
       "locator": "Q61675345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Velestino\", revision 1374721988"
     }
   ],
   "title": "Battle of Velestino",
-  "summary": "Wikidata item Q61675345, imported by tools/import/wikidata.mjs. The item's own description reads \"two battles between the Kingdom of Greece and the Ottoman Empire during the Greco-Ottoman War of 1897\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Battle of Velestino\", at revision 1374721988, opens: \"The Battle of Velestino (Greek: Μάχη του Βελεστίνου, Turkish: Velestin Muharebesi) comprised two separate engagements, which took place on 27 April [O.S. 15 April] 1897–30 April [O.S. 18 April] 1897 and 5 May [O.S. 23 April] 1897–6 May [O.S. 24 April] 1897, between the Greek and Ottoman armies at Velestino in Thessaly, as part of the Greco-Turkish War of 1897. The pass of Velestino controlled the road and railway lines linking the port city of Volos with the interior of the Thessalian plain. As the Greek army withdrew from Larissa to Farsala, a reinforced brigade under Colonel Konstantinos Smolenskis was sent to occupy the pass and cover Volos and the right of the new Greek position. At the same time, the Ottoman high command dispatched a mixed force of cavalry and infantry in the same direction to capture Volos. The first Greek detachments arrived in the area in the morning of 27 April, some hours ahead of the Ottomans, and occupied the heights around Velestino. As a result, a first clash developed in the same evening as the first Ottoman forces arrived in the area. The Ottomans were repelled and retreated to Kileler, while the bulk of Smolenskis' command arrived during the night and took up defensive positions on the next day, while the Ottomans remained inactive. The Ottoman forces resumed their attack on 29 April, chiefly through the arrival of Colonel Mahmud Muhtar as the representative of the Ottoman commander-in-chief Edhem Pasha. The Ottoman forces advanced up to the Greek positions planning to concentrate their attack on the Greek right, but in the event the advance of the Ottoman left under Naim Pasha was delayed, while on the Ottoman right, Mahmud Muhtar launched attacks on the Greek left. As a result, the Ottoman commanders altered their plans to focus on the Greek left, planning to outflank the Greek positions on the next day. However, both the outflanking manoeuvre as well as frontal infantry attacks and an attempt to penetrate the Greek lines with a massed cavalry charge failed on 30 April, both due to Greek resistance and poor coordination among the Ottoman units. As a result, the Ottomans broke off their attack and withdrew. Edhem Pasha retired the cavalry from the battle to recuperate, and replaced it with the 5th Infantry Division. The First Battle of Velestino was thus a Greek victory; the only major battlefield success for the Greek army during the war, which propelled Smolenskis to the status of a national hero. The Second Battle of Velestino began on 5 May, to coincide with the Battle of Farsala between the main body of the Ottoman army and the bulk of the Greek forces. Once again the Ottomans attempted to turn the Greek left flank, but the active Greek resistance thwarted them. On the next day, however, the Ottoman attack in the same area was more successful, as this time the Greeks were unable to bring in sufficient reinforcements to counter the outflanking manoeuvre. The Ottoman success forced the Greek left back, obliging Colonel Smolenskis to order a retreat. As the Ottomans did not exploit their success, the Greek forces were able to withdraw unmolested to Almyros, where they remained until the main Greek army was defeated at the Battle of Domokos.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q61675345, imported by tools/import/wikidata.mjs. The item's own description reads \"two battles between the Kingdom of Greece and the Ottoman Empire during the Greco-Ottoman War of 1897\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1897,
     "end": 1897,

@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q751149"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Earth Summit\", revision 1368901985"
     }
   ],
   "title": "Earth Summit",
-  "summary": "Wikidata item Q751149, imported by tools/import/wikidata.mjs. The item's own description reads \"international conference in Rio de Janeiro, Brazil in June 1992\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Earth Summit\", at revision 1368901985, opens: \"The United Nations Conference on Environment and Development (UNCED), also known as the Rio de Janeiro Conference or the Earth Summit (Portuguese: ECO92, Cúpula da Terra), was a major United Nations conference held in Rio de Janeiro from 3 to 14 June 1992. The Rio conference was attended by 108 heads of state and government, and helped establish and disseminate the concept of sustainable development. A key achievement of the 1992 conference was the establishment of the United Nations Framework Convention on Climate Change (UNFCCC) established in part as an international environmental treaty to combat \"dangerous human interference with the climate system\" and to stabilize greenhouse gas concentrations in the atmosphere. It was signed by 154 states at the United Nations Conference on Environment and Development (UNCED). By 2022, the UNFCCC had 198 parties. Its supreme decision-making body, the Conference of the Parties (COP) meets annually to assess progress in dealing with climate change. Since the creation of the UNFCC many related environmental conferences, climate-related forums, and ongoing scientific research initiatives in the fields of sustainability, climate, and environmental security have continued to develop these intersecting issues. Non-governmental organizations (NGOs) and educational institutions have been prominent participants. The Earth Summit played an influential role in diffusing several key principles of environmental treaties, such as the precautionary principle, common but differentiated responsibilities, and the polluter pays principle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q751149, imported by tools/import/wikidata.mjs. The item's own description reads \"international conference in Rio de Janeiro, Brazil in June 1992\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1992,
     "end": 1992,

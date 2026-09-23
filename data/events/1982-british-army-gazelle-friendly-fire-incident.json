@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -36,10 +37,14 @@
     {
       "source": "wikidata",
       "locator": "Q3610236"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1982 British Army Gazelle friendly fire incident\", revision 1370279804"
     }
   ],
   "title": "1982 British Army Gazelle friendly fire incident",
-  "summary": "Wikidata item Q3610236, imported by tools/import/wikidata.mjs. The item's own description reads \"accidental downing of a helicopter in the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"1982 British Army Gazelle friendly fire incident\", at revision 1370279804, opens: \"On 6 June 1982, during the Falklands War, the British Royal Navy Type 42 destroyer HMS Cardiff engaged and destroyed a British Army Westland Gazelle helicopter, serial number XX377, in a friendly fire incident, killing all four occupants. Cardiff, on the lookout for aircraft flying supplies to the Argentine forces occupying the Falkland Islands, misidentified the helicopter as an enemy Lockheed C-130 Hercules. The loss of the helicopter was initially blamed on enemy action, but a subsequent inquiry found a missile from the Cardiff to be the cause.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3610236, imported by tools/import/wikidata.mjs. The item's own description reads \"accidental downing of a helicopter in the Falklands War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1982,
     "end": 1982,

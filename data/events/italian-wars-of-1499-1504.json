@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38."
   },
   "origin": {
     "tool": "wikidata"
@@ -35,15 +38,19 @@
     {
       "source": "wikidata",
       "locator": "Q2087151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian Wars of 1499–1504\", revision 1372847284"
     }
   ],
   "title": "Italian Wars of 1499–1504",
-  "summary": "Wikidata item Q2087151, imported by tools/import/wikidata.mjs. The item's own description reads \"second and third Italian Wars (1499–1504)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Italian Wars of 1499–1504\", at revision 1372847284, opens: \"The Italian Wars of 1499–1504 are divided into two connected, but distinct, phases: the Second Italian War (1499–1501), sometimes known as Louis XII's Italian War, and the Third Italian War (1502–1504) or War over Naples. The first phase was fought for control of the Duchy of Milan by an alliance of Louis XII of France and the Republic of Venice against Ludovico Sforza, the second between Louis and Ferdinand II of Aragon for possession of the Kingdom of Naples.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2087151, imported by tools/import/wikidata.mjs. The item's own description reads \"second and third Italian Wars (1499–1504)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1499,
     "end": 1504
   },
-  "place": null,
+  "place": "italy-q38",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "italian-wars",

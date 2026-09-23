@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -37,10 +38,14 @@
     {
       "source": "wikidata",
       "locator": "Q154681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anschluss\", revision 1374499407"
     }
   ],
   "title": "Anschluss",
-  "summary": "Wikidata item Q154681, imported by tools/import/wikidata.mjs. The item's own description reads \"annexation of Austria into Nazi Germany on 12 March 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Anschluss\", at revision 1374499407, opens: \"The Anschluss (German: [ˈʔanʃlʊs] , or Anschluß, lit. 'joining' or 'connection'), also known as the Anschluß Österreichs (, English: Annexation of Austria), was the annexation of the Federal State of Austria into Nazi Germany on 12 March 1938. The idea of an Anschluss (a united Austria and Germany that would form a \"Greater Germany\") arose after the 1871 unification of Germany excluded Austria and the German Austrians from the Prussian-dominated German Empire. It gained support after the Austro-Hungarian Empire fell in 1918. The new Republic of German-Austria attempted to form a union with Germany, but the 1919 Treaty of Saint Germain and Treaty of Versailles forbade both the union and the continued use of the name \"German-Austria\" (Deutschösterreich); they also stripped Austria of some of its territories, such as the Sudetenland. This left Austria without most of the territories it had ruled for centuries amidst an economic crisis. By the 1920s, the Anschluss proposal had strong support in both Austria and Germany, particularly from many Austrian citizens of the political left and center. One vehement supporter was prominent Social Democrat leader Otto Bauer, who served as the Austrian foreign minister in 1918–1919. Support for unification with Germany came mainly from the belief that Austria, stripped of its imperial land, was not viable economically. Popular support for the unification faded with time, although it remained as a concept in the contemporary Austrian political discourse. On 30 January 1933, Nazi Party leader Adolf Hitler was appointed chancellor of Germany. From then on, desire for unification could be identified with the Nazi regime, for whom it was an integral part of the Nazi \"Heim ins Reich\" (\"back home to the realm\") concept, which sought to incorporate as many Volksdeutsche (ethnic Germans outside Germany) as possible into a \"Greater Germany\". Nazi Germany's agents cultivated pro-unification tendencies in Austria, and sought to undermine the Austrian government, which was controlled by the Fatherland Front, which opposed unification. During an attempted coup in July 1934, Austrian chancellor Engelbert Dollfuss was assassinated by Austrian Nazis. The defeat of the coup prompted many leading Austrian Nazis to go into exile in Germany, where they continued their efforts to unify the two countries. On 5 November 1937, Hitler informed his military aides that he would annex Austria and Czechoslovakia to the German Reich, and forced a meeting with Austrian chancellor Kurt Schuschnigg. Although Schuschnigg viewed Austria as a \"German State\", he fiercely opposed annexation into the Greater Germanic Reich. His commitment to Austrian sovereignty was pushed to the brink on February 12, 1938, during a tense meeting with Adolf Hitler at Berchtesgaden. Under the threat of military invasion, Schuschnigg accepted a devastating ultimatum: either appoint Arthur Seyss-Inquart, a prominent Austrian National Socialist, as Minister of the Interior and Security or face dire consequences. On the eve of 9 March 1938, Schuschnigg defiantly announced that there would be a referendum held on 13 March to decide between a possible union with Germany or the maintenance of Austria's sovereignty. Schuschnigg expected to win a clear majority to face the Nazi challenge, but on 11 March, Hitler, again under the threat of German occupation, issued a demand for cancellation of the referendum and Schuschnigg's immediate resignation. Bowing to pressure and unrest from both German and Austrian Nazi factions, Schuschnigg resigned, forcing Austrian president Wilhelm Miklas to reluctantly appoint Seyss-Inquart as Schuschnigg's successor. Within hours of taking office, Seyss-Inquart then \"invited\" Hitler and the German Army to cross the border to \"restore order\" in Austria on 12 March, unopposed by the Austrian military. A plebiscite was held on 10 April, resulting in 99.7% approval.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q154681, imported by tools/import/wikidata.mjs. The item's own description reads \"annexation of Austria into Nazi Germany on 12 March 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1938,
     "end": 1938,
