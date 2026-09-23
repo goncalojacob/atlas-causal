@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-in-somalia--operation-linda-nchi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Linda Nchi\", revision 1375942642"
+    }
+  ],
+  "from": "war-in-somalia",
+  "to": "operation-linda-nchi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's §Background puts the Kenyan invasion on ground the Ethiopian war left: \"During the Ethiopian invasion of Somalia aimed at toppling the Islamic Courts Union administration, Kenyan troops assisted the Ethiopians and allied Somali forces in capturing the retreating Somali Islamists. Al-Shabaab viewed the Kenyan government with hostility ever since.\" Its §Lead up and planning adds that \"After Ethiopian troops withdrew from Somalia in early 2009, Al-Shabaab came to control much of the south.\" So the earlier war is what made Kenya a target of al-Shabaab and what left al-Shabaab holding the ground Kenya invaded. `precondition-of` and not `caused`: the article gives the immediate trigger as a series of kidnappings on Kenyan territory in October 2011, which this atlas holds no record of, and says the intervention plan \"was discussed and decided in 2010\". Probable: Wikipedia alone.",
+  "dispute": null
+}

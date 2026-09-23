@@ -1137,7 +1137,14 @@
     "Q107802",
     "Q626191",
     "Q2915155",
-    "Q878102"
+    "Q878102",
+    "Q20934",
+    "Q114926903",
+    "Q2704666",
+    "Q3269455",
+    "Q923340",
+    "Q108102583",
+    "Q483039"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1374,7 +1381,14 @@
     "Q203824": "africa",
     "Q555833": "asia",
     "Q1922071": "asia",
-    "Q626191": "asia"
+    "Q626191": "asia",
+    "Q114926903": "africa",
+    "Q2704666": "africa",
+    "Q3269455": "africa",
+    "Q923340": "africa",
+    "Q108102583": "asia",
+    "Q483039": "asia",
+    "Q20934": "asia"
   },
   "queries": [
     {
@@ -3907,7 +3921,7 @@
     "Q3249005": {
       "kind": "place",
       "label": "city of Vietnam",
-      "note": "Added in M42 batch 43 for Q36027, \u0110i\u1ec7n Bi\u00ean Ph\u1ee7, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
+      "note": "Added in M42 batch 43 for Q36027, Điện Biên Phủ, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
     },
     "Q625298": {
       "kind": "event",
@@ -4890,6 +4904,16 @@
       "kind": "event",
       "label": "suicide bombing",
       "note": "Added in M42 batch 42 from the class Q42033121, the 14 October 2017 Mogadishu bombings, names. The label and the description — \"type of suicide attack\" — are read from the item itself. No category: data/categories.json has none a bombing belongs to, since `war` is armed force between polities and `disaster` is harm nobody chose, and a thirteenth category is an edit somebody should argue with and not a batch's side effect."
+    },
+    "Q25917154": {
+      "kind": "event",
+      "label": "truck bombing",
+      "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
+    },
+    "Q482821": {
+      "kind": "place",
+      "label": "metropolitan city of South Korea",
+      "note": "Added in M42 batch 44 from the class Q20934, Incheon, names. The label and the description — \"type of administrative subdivision in South Korea\" — are read from the item itself over the network rather than guessed."
     }
   },
   "reconcile": true

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "operation-badr-1973",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `yom-kippur-war` from `P361`: 6 to 8 October 1973 is inside the war's 1973-10-06 to 1973-10-26, and the war record names `egypt` and `israel`, which is what the operation was. The place is `sinai-peninsula`, the item's own `P276`. No `P710`, so no actor line."
+  },
+  "wikidata": "Q2704666",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Operation Badr (1973)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2704666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810"
+    }
+  ],
+  "title": "Operation Badr (1973)",
+  "summary": "The English Wikipedia article \"Operation Badr (1973)\", at revision 1370630810, opens: \"Operation Badr, also known as Plan Badr, was an Egyptian military offensive and operation across the Suez Canal that destroyed the Bar-Lev Line, a chain of Israeli fortifications along the frontline of the Israeli-occupied Sinai Peninsula, on 6 October 1973. It was launched in conjunction with a Syrian military offensive against the Israeli-occupied Golan Heights, triggering the Yom Kippur War.\" Wikidata item Q2704666, whose own description reads \"Arab military operation against Israel in 1973\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1973,
+    "end": 1973,
+    "date": "1973-10-06",
+    "endDate": "1973-10-08"
+  },
+  "place": "sinai-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "yom-kippur-war"
+}

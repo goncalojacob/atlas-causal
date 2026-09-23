@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "battle-of-inchon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `korean-war` from `P361`: 15 to 19 September 1950 is inside the war's 1950-06-25 to 1953-07-27, and the war names `united-states-of-america`, which the item's `P710` names too. The place is `incheon`, written from `Q20934`, its own `P276`. No edge: what the article says the battle led to — Seoul, the Pusan breakout — this atlas does not hold, and it states no relation to the war or the armistice."
+  },
+  "wikidata": "Q483039",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Inchon",
+    "pt": "Batalha de Inchon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q483039"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Inchon\", revision 1370266029"
+    }
+  ],
+  "title": "Battle of Inchon",
+  "summary": "The English Wikipedia article \"Battle of Inchon\", at revision 1370266029, opens: \"The Battle of Inchon, also called the Inchon landings, was an amphibious invasion and battle of the Korean War that resulted in a decisive victory and strategic reversal in favor of the United Nations Command. The operation involved some 75,000 troops and 261 naval vessels and led to the recapture of the South Korean capital of Seoul two weeks later.\" Wikidata item Q483039, whose own description reads \"1950 amphibious invasion during the Korean War in Incheon resulting in a victory and strategic reversal in favor of the UN Command\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-09-15",
+    "endDate": "1950-09-19"
+  },
+  "place": "incheon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ],
+  "parent": "korean-war"
+}
