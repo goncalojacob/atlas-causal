@@ -2648,6 +2648,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marignano",
+      "kind": "event",
+      "locator": "Q330"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "locator": "Q2270347"
@@ -2693,6 +2699,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "Q2237713"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pavia",
+      "kind": "event",
+      "locator": "Q63468"
     },
     {
       "dissent": false,
@@ -3836,6 +3848,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-war-of-1494-1495",
+      "kind": "event",
+      "locator": "Q1355145"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "locator": "Q698281"
@@ -3845,6 +3863,12 @@
       "id": "italian-war-of-1536-1538",
       "kind": "event",
       "locator": "Q2452024"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1542-1546",
+      "kind": "event",
+      "locator": "Q15542964"
     },
     {
       "dissent": false,
@@ -5393,6 +5417,12 @@
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "locator": "Q636365"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-league-of-cognac",
+      "kind": "event",
+      "locator": "Q1429256"
     },
     {
       "dissent": false,

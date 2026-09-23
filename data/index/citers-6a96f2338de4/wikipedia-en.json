@@ -1850,6 +1850,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pavia--war-of-the-league-of-cognac--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Pavia\", revision 1370271639"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pavia--war-of-the-league-of-cognac--reacted-to",
+      "kind": "edge",
+      "locator": "\"War of the League of Cognac\", revision 1370750083"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Stormberg\", revision 1370589985, lead"
@@ -3173,6 +3185,30 @@
       "id": "israeli-declaration-of-independence--1948-arab-israeli-war--caused",
       "kind": "edge",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190, lead"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
+      "kind": "edge",
+      "locator": "\"Italian War of 1494–1495\", revision 1372866209"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
+      "kind": "edge",
+      "locator": "\"Italian Wars of 1499–1504\", revision 1372847284"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of",
+      "kind": "edge",
+      "locator": "\"Italian War of 1542–1546\", revision 1370624570"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of",
+      "kind": "edge",
+      "locator": "\"Italian War of 1551–1559\", revision 1370624572"
     },
     {
       "dissent": false,
@@ -7154,6 +7190,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marignano",
+      "kind": "event",
+      "locator": "\"Battle of Marignano\", revision 1370449034"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "locator": "\"Battle of Misrata (2011)\", revision 1374514174"
@@ -7199,6 +7241,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pavia",
+      "kind": "event",
+      "locator": "\"Battle of Pavia\", revision 1370271639"
     },
     {
       "dissent": false,
@@ -8390,6 +8438,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-war-of-1494-1495",
+      "kind": "event",
+      "locator": "\"Italian War of 1494–1495\", revision 1372866209"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "locator": "\"Italian War of 1521–1526\", revision 1370788853"
@@ -8399,6 +8453,12 @@
       "id": "italian-war-of-1536-1538",
       "kind": "event",
       "locator": "\"Italian War of 1536–1538\", revision 1374565270"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1542-1546",
+      "kind": "event",
+      "locator": "\"Italian War of 1542–1546\", revision 1370624570"
     },
     {
       "dissent": false,
@@ -10253,6 +10313,12 @@
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "locator": "\"War of the League of Cambrai\", revision 1375133857"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-league-of-cognac",
+      "kind": "event",
+      "locator": "\"War of the League of Cognac\", revision 1370750083"
     },
     {
       "dissent": false,

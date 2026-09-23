@@ -6546,6 +6546,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "battle-of-marignano",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because deviation 1230 is not fixed: the import fetches only the P17 countries, so the P276 town it should reach first is not there to read and the engagement came out placeless with a lane derived from its own point. The point and the names are the town item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Marignano"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6812,6 +6843,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Paardeberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-pavia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because deviation 1230 is not fixed: the import fetches only the P17 countries, so the P276 town it should reach first is not there to read and the engagement came out placeless with a lane derived from its own point. The point and the names are the town item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pavia"
     },
     {
       "authors": [
@@ -14780,6 +14843,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "italian-war-of-1494-1495",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian War of 1494–1495"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "italian-war-of-1521-1526",
       "kind": "event",
@@ -14842,7 +14936,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "italian-war-of-1542-1546",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian War of 1542–1546"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "italian-war-of-1551-1559",
       "kind": "event",
       "origin": {
@@ -14904,6 +15030,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "italian-wars-of-1499-1504",
       "kind": "event",
       "origin": {
@@ -26049,6 +26176,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "war-of-the-league-of-cognac",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the League of Cognac"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
@@ -27026,6 +27184,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-marignano",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27434,19 +27598,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "italian-war-of-1551-1559",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "italian-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "italian-wars-of-1499-1504",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

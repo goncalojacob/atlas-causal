@@ -3985,6 +3985,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "battle-of-pavia",
+      "id": "battle-of-pavia--war-of-the-league-of-cognac--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-of-the-league-of-cognac",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "battle-of-stormberg",
       "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
@@ -10420,6 +10449,64 @@
       "status": "active",
       "to": "1948-arab-israeli-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "italian-war-of-1494-1495",
+      "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "italian-wars-of-1499-1504",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "italian-war-of-1542-1546",
+      "id": "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m42b",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "italian-war-of-1551-1559",
+      "type": "precondition-of"
     },
     {
       "authors": [
