@@ -1490,9 +1490,33 @@
     },
     {
       "dissent": false,
+      "id": "2006-hezbollah-cross-border-raid--2006-lebanon-war--caused",
+      "kind": "edge",
+      "locator": "Q49104 P1478 (has immediate cause) Q2026122"
+    },
+    {
+      "dissent": false,
       "id": "first-matabele-war--second-matabele-war--precondition-of",
       "kind": "edge",
       "locator": "Q233657 and Q857982"
+    },
+    {
+      "dissent": false,
+      "id": "israeli-declaration-of-independence--1948-arab-israeli-war--caused",
+      "kind": "edge",
+      "locator": "Q49092 P828 (has cause) Q223732"
+    },
+    {
+      "dissent": false,
+      "id": "lebanese-civil-war--taif-agreement--caused",
+      "kind": "edge",
+      "locator": "Q208484 P1542 (has effect) Q321936"
+    },
+    {
+      "dissent": false,
+      "id": "railway-protection-movement--wuchang-uprising--enabled",
+      "kind": "edge",
+      "locator": "Q339291 P828 (has cause) Q5368776"
     },
     {
       "dissent": false,
@@ -1871,6 +1895,12 @@
       "id": "2005-portuguese-legislative-election",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2006-hezbollah-cross-border-raid",
+      "kind": "event",
+      "locator": "Q2026122"
     },
     {
       "dissent": false,
@@ -3386,6 +3416,12 @@
     },
     {
       "dissent": false,
+      "id": "israeli-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q223732"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "locator": "Q698281"
@@ -3950,6 +3986,12 @@
     },
     {
       "dissent": false,
+      "id": "railway-protection-movement",
+      "kind": "event",
+      "locator": "Q5368776"
+    },
+    {
+      "dissent": false,
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "Q108137226"
@@ -4325,6 +4367,12 @@
       "id": "sveaborg-rebellion",
       "kind": "event",
       "locator": "Q2446816"
+    },
+    {
+      "dissent": false,
+      "id": "taif-agreement",
+      "kind": "event",
+      "locator": "Q321936"
     },
     {
       "dissent": false,

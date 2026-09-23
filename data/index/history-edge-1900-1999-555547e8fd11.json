@@ -3028,6 +3028,15 @@
         }
       ]
     },
+    "israeli-declaration-of-independence--1948-arab-israeli-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "japan-korea-treaty-of-1907--japan-korea-treaty-of-1910--precondition-of": {
       "from": "git",
       "versions": [
@@ -3181,6 +3190,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "lebanese-civil-war--taif-agreement--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },
@@ -3930,6 +3948,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "railway-protection-movement--wuchang-uprising--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         }
       ]
     },

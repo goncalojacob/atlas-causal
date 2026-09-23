@@ -11674,6 +11674,15 @@
         }
       ]
     },
+    "israeli-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "japan-korea-treaty-of-1907": {
       "from": "git",
       "versions": [
@@ -15019,6 +15028,15 @@
         }
       ]
     },
+    "railway-protection-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "ramsar-convention": {
       "from": "git",
       "versions": [
@@ -17237,6 +17255,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "taif-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-22"
         }
       ]

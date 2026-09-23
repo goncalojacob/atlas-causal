@@ -406,6 +406,15 @@
         }
       ]
     },
+    "2006-hezbollah-cross-border-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
     "2006-lebanon-war": {
       "from": "git",
       "versions": [

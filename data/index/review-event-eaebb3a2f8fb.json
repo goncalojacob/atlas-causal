@@ -607,7 +607,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "1948-arab-israeli-war",
       "kind": "event",
       "origin": {
@@ -2372,6 +2372,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": null,
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "2006-hezbollah-cross-border-raid",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "2006-lebanon-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2006 Hezbollah cross-border raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -2385,7 +2418,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "2006-lebanon-war",
       "kind": "event",
       "origin": {
@@ -12783,6 +12816,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "israeli-declaration-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Israeli Declaration of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -13723,7 +13788,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "lebanese-civil-war",
       "kind": "event",
       "origin": {
@@ -16949,6 +17014,39 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": null,
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "railway-protection-movement",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "xinhai-revolution",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "lane-from-p17"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Railway Protection Movement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
@@ -19609,6 +19707,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Sveaborg Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-22",
+      "degree": 1,
+      "id": "taif-agreement",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "lebanese-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "no-place-no-coordinate"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Taif Agreement"
     },
     {
       "authors": [
@@ -22955,7 +23085,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "wuchang-uprising",
       "kind": "event",
       "origin": {
