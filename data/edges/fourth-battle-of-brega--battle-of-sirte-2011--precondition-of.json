@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Battle of Brega\", revision 1370619930, § Rebel advance on Sirte"
+    }
+  ],
+  "from": "fourth-battle-of-brega",
+  "to": "battle-of-sirte-2011",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The fourth battle's article ends in a section called \"Rebel advance on Sirte\" and states where the front went: \"A spokesman for the National Liberation Army said on 22 August that Gaddafi's forces had finally retreated westward to Sirte and all of Brega was under the opposition's control\", and then \"rebel forces managed to capture village of El Agheila and were on their way to Ra's Lanuf. Ra's Lanuf fell to the opposition soon after and they were on the outskirts of the small town of Bin Jawad, just east of Gaddafi's home town of Sirte.\" The eastern front the battle unblocked is the one that reached Sirte on 15 September. `precondition-of`: it opened the road, and the article claims nothing more than that. Probable: Wikipedia alone.",
+  "dispute": null
+}

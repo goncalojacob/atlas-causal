@@ -104,6 +104,11 @@
             "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
             "maxLength": 120
           },
+          "precision": {
+            "description": "How coarse a place of this class is, as one of the four precisions of src/vocab.js. Meaningful only where kind is place, and the same kind of editorial decision as kind and category: a settlement is a city, a province or a mountain range is a region, a fort or a building is a point. A place class with none is written at point, which is what every place imported before this key existed carries (amendment A12 (2)).",
+            "type": "string",
+            "enum": ["point", "city", "region", "country"]
+          },
           "label": {
             "description": "What the source calls the class, copied in by the report so the file reads as something other than a list of numbers. Never used for matching.",
             "type": "string",

@@ -100,7 +100,6 @@ export const PROPERTIES = Object.freeze({
   start: 'P580',
   end: 'P582',
   pointInTime: 'P585',
-  published: 'P577',
   inception: 'P571',
   dissolved: 'P576',
   born: 'P569',
@@ -395,7 +394,6 @@ export function readEntity(entity) {
       start: claimTimes(entity, PROPERTIES.start),
       end: claimTimes(entity, PROPERTIES.end),
       pointInTime: claimTimes(entity, PROPERTIES.pointInTime),
-      published: claimTimes(entity, PROPERTIES.published),
       inception: claimTimes(entity, PROPERTIES.inception),
       dissolved: claimTimes(entity, PROPERTIES.dissolved),
       born: claimTimes(entity, PROPERTIES.born),
@@ -438,11 +436,13 @@ export function classify(read, classes = {}) {
     return { kind, actorType: null, category: categories.length === 1 ? categories[0] : null, via: known.map(([q]) => q) };
   }
   if (kind === 'place') {
-    // A12 (2): how coarsely a place is drawn is the class's decision too, and
-    // one class saying `region` while another says nothing is not a
-    // disagreement — it is the one that knows. Classes that name two different
-    // precisions leave it unset and the record is a point, which is what every
-    // imported place was before this.
+    // How coarse a thing of this class is, off the same table (A12 (2)). A
+    // settlement is a `city`, a province or a range is a `region`, a fort or a
+    // building is a `point` — which is a reading of the class and not of the
+    // place, so it belongs beside `kind` and `category` rather than in code.
+    // Classes that disagree say nothing, as they do for a category, and a
+    // class the table gives no precision leaves the record where every place
+    // already on disk is.
     const precisions = [...new Set(known.map(([, e]) => e.precision).filter(Boolean))];
     return { kind, actorType: null, precision: precisions.length === 1 ? precisions[0] : null, via: known.map(([q]) => q) };
   }
@@ -477,12 +477,7 @@ function pickTimes(kind, times) {
   }
   const span = first(times.start) ?? first(times.inception);
   if (span) return { from: span, to: first(times.end) ?? first(times.dissolved), stated: true };
-  // Deviation 1222: a document — a constitution, a treaty text, a decree —
-  // is often dated on Wikidata by P577 alone, and the import refused every one
-  // of them. A publication date is the day the thing came into the world, so it
-  // is read as a point in time, but last: an item that states a span or a P585
-  // has already answered and this never moves that answer.
-  const point = first(times.pointInTime) ?? first(times.published);
+  const point = first(times.pointInTime);
   return { from: point, to: point };
 }
 
@@ -701,7 +696,7 @@ function envelope(id, kind, created, fields, { flags = [] } = {}) {
   };
 }
 
-export function placeRecord(read, { id, created, region = null, regionNote = null, precision = 'point' }) {
+export function placeRecord(read, { id, created, region = null, regionNote = null, precision = null }) {
   const { title: label, english } = titleFor(read);
   return envelope(id, 'place', created, {
     ...identityOf(read, created),
@@ -716,7 +711,12 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     // record already, in `wikidata`.
     sources: [],
     names: namesFor(read),
-    where: { lon: read.point.lon, lat: read.point.lat, precision, label },
+    // How coarse the place is, off its class (A12 (2)): `city` for a
+    // settlement, `region` for anything larger that is not a state, `point`
+    // for a battlefield or a building. `point` is the fallback and not a
+    // reading — it is what every place written before the table said anything
+    // carries, so a class nobody has decided about changes nothing.
+    where: { lon: read.point.lon, lat: read.point.lat, precision: precision ?? 'point', label },
     region,
     regionNote: region ? regionNote : null,
     summary: importedSummary(read),
@@ -924,37 +924,17 @@ export async function writeState(dataDir, state) {
 export function nextBatch(state, mode, wanted, size = BATCH) {
   const run = state.runs?.[mode] ?? { updated: null, pending: [], done: [] };
   const done = new Set(run.done ?? []);
-  // A refusal is not a completion (deviation 1231): it was written into `done`
-  // beside the finished items, so adding the class or the lane that would have
-  // answered it changed nothing, because the cursor had already passed. It is
-  // carried apart and offered again, ahead of the untried, so that editing
-  // data/imports/wikidata-seeds.json is enough to answer one.
-  const refused = [...new Set(run.refused ?? [])].filter((id) => !done.has(id));
-  const held = new Set(refused);
-  const untried = ((run.pending ?? []).length ? run.pending : wanted)
-    .filter((id) => !done.has(id) && !held.has(id));
-  const asked = new Set(wanted);
-  const pending = [...refused.filter((id) => asked.has(id)), ...untried];
-  return { batch: pending.slice(0, size), pending, done: [...done], refused };
+  const pending = (run.pending ?? []).length ? run.pending.filter((id) => !done.has(id)) : wanted.filter((id) => !done.has(id));
+  return { batch: pending.slice(0, size), pending, done: [...done] };
 }
 
-export function advance(state, mode, { batch, pending, done, today, refused = [] }) {
-  const again = new Set(refused);
+export function advance(state, mode, { batch, pending, done, today }) {
   const remaining = pending.filter((id) => !batch.includes(id));
-  const settled = batch.filter((id) => !again.has(id));
-  // What this run did not look at stays as it was; what it looked at is either
-  // settled or refused again, and never both.
-  const before = (state.runs?.[mode]?.refused ?? []).filter((id) => !batch.includes(id));
   return {
     ...state,
     runs: {
       ...state.runs,
-      [mode]: {
-        updated: today,
-        pending: remaining,
-        done: [...done, ...settled],
-        refused: [...new Set([...before, ...again])],
-      },
+      [mode]: { updated: today, pending: remaining, done: [...done, ...batch] },
     },
   };
 }
@@ -997,13 +977,8 @@ export async function fetchEntities(fetcher, qids) {
     // The action API is the one endpoint this sandbox is rate-limited on, and
     // the refusal does not lift inside a run. Special:EntityData carries the
     // same entity and is not behind that limit, so a blocked batch becomes one
-    // call per item instead of the end of the import. `maxlag` is the same
-    // situation said differently — the action API refusing, and only it: it
-    // takes no `maxlag` parameter, so the lag does not reach it. The retries
-    // above have already been spent by the time this is read, so a lag that
-    // lifts is still waited out first.
-    const rateLimited = e?.name === 'HttpError' && (e.status === 429 || e.status === 403);
-    if (!rateLimited && e?.code !== 'maxlag') throw e;
+    // call per item instead of the end of the import.
+    if (e?.name !== 'HttpError' || (e.status !== 429 && e.status !== 403)) throw e;
     const entities = {};
     for (const qid of qids) {
       try {
@@ -1077,15 +1052,6 @@ function enrich(record, read, today) {
   return { record: named.record, added: merged.added, names: named.added ? named.record.names : null };
 }
 
-// An item Wikidata does not have is the one refusal no edit to this
-// repository can answer, so it is settled rather than carried: everything
-// else names something under data/ that a person can change — a class the
-// table has no row for, a lane the seeds file does not give — and is offered
-// again next run (deviation 1231).
-export const NO_SUCH_ITEM = 'no such item; the seeds file names something Wikidata does not have';
-
-export const stillAskable = (refused) => refused.filter((r) => r.why !== NO_SUCH_ITEM).map((r) => r.qid);
-
 function refuse(report, qid, why) {
   report.refused.push({ qid, why });
 }
@@ -1118,27 +1084,14 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   const entities = await fetchEntities(fetcher, batch);
   const written = [];
 
-  // Everything the batch says it happened at or in, fetched together, so a
-  // record whose own point reaches no lane can still be given one. All three
-  // properties and not only the last two: A9 reads the location first, and
-  // until deviation 1230 only the country and the administrative territory
-  // were ever fetched, so `pointOf` could not answer for the town an event
-  // names by P276 and the first point it found was the country's — which put
-  // a Brazilian engagement in the European lane. An ordering is worth nothing
-  // over data that is not all there.
-  const located = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
-    .flatMap((e) => claimIds(e, PROPERTIES.location)
-      .concat(claimIds(e, PROPERTIES.administrative), claimIds(e, PROPERTIES.country))))]
+  // The countries the batch names, fetched together, so a place whose own
+  // point reaches no lane can still be given one.
+  const countries = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
+    .flatMap((e) => claimIds(e, PROPERTIES.country).concat(claimIds(e, PROPERTIES.administrative))))]
     .filter((qid) => !Object.hasOwn(entities, qid));
-  // In chunks rather than one capped call: a batch names up to three located
-  // things per item, so a single slice at the batch size dropped the rest and
-  // left the same gap one step further out.
-  const locatedEntities = {};
-  for (let at = 0; at < located.length; at += batchSize) {
-    Object.assign(locatedEntities, await fetchEntities(fetcher, located.slice(at, at + batchSize)));
-  }
+  const countryEntities = countries.length ? await fetchEntities(fetcher, countries.slice(0, batchSize)) : {};
   const pointOf = (qid) => {
-    const entity = entities[qid] ?? locatedEntities[qid];
+    const entity = entities[qid] ?? countryEntities[qid];
     const point = entity ? claimPoint(entity) : null;
     return point ? { qid, point } : null;
   };
@@ -1151,7 +1104,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   for (const qid of batch) {
     const entity = entities[qid];
     if (isMissing(entity)) {
-      refuse(report, qid, NO_SUCH_ITEM);
+      refuse(report, qid, 'no such item; the seeds file names something Wikidata does not have');
       continue;
     }
     const read = readEntity(entity);
@@ -1206,7 +1159,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'no lane can be reached from its point or from the country it names; the index could not place it');
         continue;
       }
-      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane), precision: classified.precision ?? 'point' });
+      const record = placeRecord(read, { id, created: today, region: lane.region, regionNote: laneNote(lane), precision: classified.precision });
       written.push(await writeRecord(dataDir, 'places', record));
       taken.add(id);
       byItem.set(`place:${qid}`, id);
@@ -1273,7 +1226,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'import', { batch, pending, done, today, refused: stillAskable(report.refused) });
+  const next = advance(state, 'import', { batch, pending, done, today });
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }

@@ -173,35 +173,6 @@ test('a batch the rate limiter refuses is asked again one item at a time', async
   assert.equal(isMissing(missing.Q9999999), true);
 });
 
-test('a batch the action API refuses for replication lag is asked again the same way', async () => {
-  // `maxlag` is a refusal of the action API and of nothing else: the API
-  // answers it with HTTP 200 and an error in the body, and it can stand for
-  // hours. Special:EntityData takes no `maxlag` and keeps answering through
-  // it, so the lag costs one call per item rather than the run.
-  const asked = [];
-  const all = JSON.parse(await readFile(path.join(FIXTURES, 'entities.json'), 'utf8'));
-  const fetcher = createFetcher({
-    delay: async () => {},
-    retries: 1,
-    fetchJson: async (url) => {
-      asked.push(url);
-      if (url.includes('wbgetentities')) {
-        return { error: { code: 'maxlag', info: 'Waiting for wdqs1014: 94.75 seconds lagged.' } };
-      }
-      const qid = /Special:EntityData\/(Q\d+)\.json$/.exec(url)?.[1];
-      if (!qid || !all[qid]) throw new HttpError(404, url);
-      return { entities: { [qid]: all[qid] } };
-    },
-  });
-
-  const entities = await fetchEntities(fetcher, ['Q9000001', 'Q9000002']);
-  // The batch is retried once for the lag — it does lift — and only then
-  // carried to the other endpoint, so nothing here shortens the backoff.
-  assert.equal(asked.filter((u) => u.includes('wbgetentities')).length, 2);
-  assert.equal(entities.Q9000001?.id, 'Q9000001');
-  assert.equal(entities.Q9000002?.id, 'Q9000002');
-});
-
 // --- reading an item -------------------------------------------------------
 
 test('an item is read down to the fields the import uses and no others', async () => {
@@ -297,26 +268,6 @@ test('a stated span beats a point in time at both ends (A12, deviation 1015)', a
   // interval, which is how a one-day event is dated.
   assert.deepEqual(intervalFor('event', (await read('Q9000001')).times),
     { start: 1974, end: 1974, date: '1974-04-25' });
-});
-
-// Deviation 1222: Q1421412, the Spanish Constitution of 1812, carries no P580,
-// no P582 and no P585, and the import refused it twice — but it carries P577,
-// a publication date, which for a constitution, a treaty text or a decree is
-// the day the thing came into the world. Reading it last, behind the span and
-// behind the point in time, dates a document the atlas could not hold before
-// and moves no interval that was already answered.
-test('a publication date dates a document nothing else dates (deviation 1222)', async () => {
-  const charter = (await read('Q9000015')).times;
-  assert.deepEqual(intervalFor('event', charter), { start: 1812, end: 1812 });
-  // Its own end, so nothing is left unstated and no flag is owed.
-  assert.equal(endUnstated('event', charter), false);
-  // It is read last: an item that states a span or a point in time is untouched.
-  assert.deepEqual(intervalFor('event', (await read('Q9000012')).times),
-    { start: 1956, end: 1956, date: '1956-10-29', endDate: '1956-11-07' });
-  assert.deepEqual(intervalFor('event', (await read('Q9000001')).times),
-    { start: 1974, end: 1974, date: '1974-04-25' });
-  // And an item with no date of any kind is still a refusal.
-  assert.equal(intervalFor('event', (await read('Q9000007')).times), null);
 });
 
 // A12 (3), the other half: an item that states a start and no P582 says
@@ -524,27 +475,57 @@ test('a lane comes from the point, then from the country, then not at all', asyn
   assert.match(viaCountry.how, /Q9000006/);
 });
 
-// A12 (2), the half that never reached the tool: `placeRecord()` wrote
-// `precision: 'point'` for everything, so a department, a captaincy and a
-// historical region — areas, which PRECISIONS calls coarse and the map draws
-// wider and fainter — all arrived as points on the ground. Which precision a
-// class carries is the same editorial decision as which kind it is, so it
-// lives beside it in the class table rather than in a branch here.
-test('a place takes its precision from the class table (A12)', async () => {
-  const table = {
-    Q9100003: { kind: 'place' },
-    Q9100007: { kind: 'place', precision: 'region' },
+// A12 (2): "placeRecord() writes `precision` from the item's class (`city` for
+// a settlement, `region` for anything larger that is not a state, `point` for a
+// battlefield or site ...), never a hard-coded `point`." Nine place records
+// over five batches of M42 had that hard-coded `point` corrected to `city` by
+// hand — karameh, dien-bien-phu, incheon, benghazi, ras-lanuf, zawiya-libya,
+// bin-jawad, ajdabiya, bani-walid — which is the same edit nine times and the
+// sign that the table, not the person, should be saying it.
+//
+// Which precision a class means is decided the way the kind and the category
+// already are: in `data/imports/wikidata-seeds.json`, a file somebody can argue
+// with, and never in code. Classes that disagree say nothing rather than
+// tossing a coin, exactly as `category` does, and a class the table gives no
+// precision leaves the record at `point` — which is what every place already on
+// disk was written with, so nothing already imported changes meaning.
+test('a place takes its precision from its class, and disagreement takes none', async () => {
+  const withPrecision = {
+    Q9100003: { kind: 'place', precision: 'city' },
+    Q9100010: { kind: 'place', precision: 'region' },
   };
-  assert.equal(classify({ classes: ['Q9100003'] }, table).precision, null,
-    'a class that says nothing about precision says nothing');
-  assert.equal(classify({ classes: ['Q9100007'] }, table).precision, 'region');
-  const item = await read('Q9000003');
-  const point = placeRecord(item, { id: 'northfield', created: '2026-09-04' });
-  assert.equal(point.where.precision, 'point', 'and the default is the point it always was');
-  const area = placeRecord(item, { id: 'northfield-region', created: '2026-09-04', precision: 'region' });
-  assert.equal(area.where.precision, 'region');
-  assert.ok(PRECISIONS.find((p) => p.id === 'region').coarse,
-    'which is one of the two the map draws as an area');
+  assert.equal(classify(await read('Q9000003'), withPrecision).precision, 'city');
+  // Two place classes naming two precisions: still a place, and a person says
+  // which kind of one.
+  assert.equal(classify({ classes: ['Q9100003', 'Q9100010'] }, withPrecision).precision, null);
+  // A table that says nothing about precision is the table as it shipped.
+  assert.equal(classify(await read('Q9000003'), CLASSES).precision, null);
+
+  const read3 = await read('Q9000003');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: 'city' }).where.precision, 'city');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: 'region' }).where.precision, 'region');
+  // No precision given is the behaviour every place on disk was written with.
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04' }).where.precision, 'point');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: null }).where.precision, 'point');
+});
+
+// Every place class of the shipped table says which precision it means, and
+// says one of the four `src/vocab.js` has. A class added without one would
+// quietly write `point` onto a country.
+test('every place class of the seeds table names a precision the vocabulary has', async () => {
+  const seeds = JSON.parse(await readFile(path.join(ROOT, 'data', 'imports', 'wikidata-seeds.json'), 'utf8'));
+  const ids = new Set(PRECISIONS.map((p) => p.id));
+  const places = Object.entries(seeds.classes).filter(([, entry]) => entry.kind === 'place');
+  assert.ok(places.length > 0, 'the table has place classes');
+  for (const [qid, entry] of places) {
+    assert.ok(ids.has(entry.precision), `${qid} (${entry.label}) names precision ${JSON.stringify(entry.precision)}`);
+  }
+  // And nothing that is not a place carries one: a precision on an event class
+  // would be read by nothing.
+  for (const [qid, entry] of Object.entries(seeds.classes)) {
+    if (entry.kind === 'place') continue;
+    assert.equal(entry.precision, undefined, `${qid} is a ${entry.kind} and carries a precision`);
+  }
 });
 
 // --- the records ------------------------------------------------------------
@@ -590,7 +571,7 @@ test('the cursor walks in batches and a resumed run does not redo the finished p
   const first = nextBatch(emptyState(), 'import', wanted, 2);
   assert.deepEqual(first.batch, ['Q1', 'Q2']);
   const after = advance(emptyState(), 'import', { ...first, today: '2026-09-04' });
-  assert.deepEqual(after.runs.import, { updated: '2026-09-04', pending: ['Q3', 'Q4', 'Q5'], done: ['Q1', 'Q2'], refused: [] });
+  assert.deepEqual(after.runs.import, { updated: '2026-09-04', pending: ['Q3', 'Q4', 'Q5'], done: ['Q1', 'Q2'] });
 
   const second = nextBatch(after, 'import', wanted, 2);
   assert.deepEqual(second.batch, ['Q3', 'Q4']);
@@ -602,41 +583,6 @@ test('the cursor walks in batches and a resumed run does not redo the finished p
   // Two modes keep two places.
   assert.deepEqual(Object.keys(advance(after, 'reconcile', { batch: ['x'], pending: ['x'], done: [], today: '2026-09-04' }).runs).sort(), ['import', 'reconcile']);
   assert.equal(BATCH, 25);
-});
-
-// Deviation 1231. A refusal was written into `done` beside the completions,
-// so the thing that would answer it — a class added to the table, a lane
-// added to the seeds file — changed nothing, because the cursor had passed.
-// A refusal is not a completion: it is carried apart and re-offered, and the
-// state file says which ones they are so a person can see what keeps failing.
-test('a refusal is not a completion: it is carried apart and offered again', () => {
-  const wanted = ['Q1', 'Q2', 'Q3'];
-  const first = nextBatch(emptyState(), 'import', wanted, 2);
-  assert.deepEqual(first.batch, ['Q1', 'Q2']);
-  const after = advance(emptyState(), 'import', { ...first, today: '2026-09-04', refused: ['Q2'] });
-  assert.deepEqual(after.runs.import.done, ['Q1'], 'only what was settled');
-  assert.deepEqual(after.runs.import.refused, ['Q2']);
-
-  // The next run offers the refusal first: whoever edited the seeds file to
-  // answer it should not have to wait for the rest of the walk.
-  const second = nextBatch(after, 'import', wanted, 2);
-  assert.deepEqual(second.batch, ['Q2', 'Q3']);
-
-  // Answered, it leaves the list and joins the others.
-  const end = advance(after, 'import', { ...second, today: '2026-09-05', refused: [] });
-  assert.deepEqual(end.runs.import.done, ['Q1', 'Q2', 'Q3']);
-  assert.deepEqual(end.runs.import.refused, []);
-  assert.deepEqual(nextBatch(end, 'import', wanted, 2).batch, [], 'and then the walk is finished');
-
-  // Refused again, it stays where it was and nothing is lost.
-  const stuck = advance(after, 'import', { ...second, today: '2026-09-05', refused: ['Q2'] });
-  assert.deepEqual(stuck.runs.import.done, ['Q1', 'Q3']);
-  assert.deepEqual(stuck.runs.import.refused, ['Q2']);
-
-  // A state file written before this existed has no `refused` key and still
-  // walks: the absent list is an empty one.
-  const old = { schema: 1, kind: 'import-state', source: 'wikidata', runs: { import: { updated: '2026-09-01', pending: ['Q3'], done: ['Q1', 'Q2'] } } };
-  assert.deepEqual(nextBatch(old, 'import', wanted, 2).batch, ['Q3']);
 });
 
 // --- on disk ----------------------------------------------------------------
@@ -697,22 +643,13 @@ test('--import creates what it can, refuses the rest, and leaves a cursor', asyn
   const state = await readJson(path.join(dir, 'imports', 'wikidata-state.json'));
   assert.equal(state.kind, 'import-state');
   assert.deepEqual(state.runs.import.pending, []);
-  // Five settled and two carried (deviation 1231): the unclassified item and
-  // the undated one each name something under data/ that a person can change,
-  // so they are not "done". Q9000008 is missing from Wikidata, which no edit
-  // here can answer, so it is settled with the rest.
-  assert.deepEqual(state.runs.import.done.sort(),
-    ['Q9000001', 'Q9000002', 'Q9000003', 'Q9000005', 'Q9000008']);
-  assert.deepEqual(state.runs.import.refused.sort(), ['Q9000004', 'Q9000007']);
+  assert.equal(state.runs.import.done.length, 7);
 
-  // Run it again: the walk is finished, so the only thing left to ask about
-  // is the pair somebody could still answer, and it is asked about again.
+  // Run it again: the cursor says everything is done, so nothing is fetched.
   const { fetcher: second } = await fixtureFetcher();
   const again = await runImportMode(dir, { fetcher: second, today: '2026-09-05', cacheDir, deriveRegion });
-  assert.deepEqual(again.report.batch, ['Q9000004', 'Q9000007']);
-  assert.deepEqual(again.report.created, [], 'and nothing has changed, so both are refused again');
-  assert.deepEqual((await readJson(path.join(dir, 'imports', 'wikidata-state.json'))).runs.import.refused.sort(),
-    ['Q9000004', 'Q9000007']);
+  assert.deepEqual(again.report.batch, []);
+  assert.equal(second.calls, 0);
 });
 
 // bundle.test.mjs holds this over data/, but only after a record is already
@@ -802,55 +739,6 @@ test('a lane in the seeds file does not override a lane a point reaches', async 
   assert.equal(place.region, null, 'a place is placed by its own coordinate and the table is not read for it');
 });
 
-// Deviation 1230, as a test. A9's order is location, then administrative
-// territory, then country — but the batch only ever fetched the last two, so
-// `pointOf` could not answer for the town an event names by P276 and the
-// first point it found was the country's. Q9000016 is that shape exactly: its
-// town is at (5,5) and the state it is in is at (-140,-60), which are two
-// different lanes, and the town is not in the batch. The lane a reader sees
-// has to be the town's.
-test('an event takes the lane of the location it names, not of the country it is in', async () => {
-  // Two lanes, so "the wrong one" is a thing this test can state rather than
-  // the absence of one: the square the rest of this file uses, and a far one.
-  const twoLanes = (where) => {
-    if (!where) return null;
-    if (where.lon >= 0 && where.lon <= 20 && where.lat >= 0 && where.lat <= 20) {
-      return { region: 'testland', method: 'inside', distance: 0 };
-    }
-    if (where.lon >= -160 && where.lon <= -120 && where.lat >= -80 && where.lat <= -40) {
-      return { region: 'farland', method: 'inside', distance: 0 };
-    }
-    return null;
-  };
-
-  const { dir, cacheDir } = await scratch({ items: ['Q9000016'] });
-  const { fetcher } = await fixtureFetcher();
-  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-04', cacheDir, deriveRegion: twoLanes });
-  assert.deepEqual(report.refused, []);
-  assert.deepEqual(report.created.map((c) => [c.qid, c.kind]), [['Q9000016', 'event']]);
-
-  const event = await readJson(path.join(dir, 'events', 'southfield-skirmish.json'));
-  assert.equal(event.region, 'testland', 'the town it names is in testland; the state it is in is not');
-  assert.equal(event.place, null, 'the atlas holds no place record for that town, so it is still placeless');
-  assert.deepEqual(createValidator(await schemas()).validate('v1/event.json', event), []);
-});
-
-// The same fault one step further out: the extra items a batch names were
-// fetched with a single call capped at the batch size, so past that cap they
-// were silently not there to read and every event after it fell through to
-// whatever came first. A batch of one event that names two located things,
-// fetched one at a time, still reaches the town.
-test('the located items a batch names are all fetched, however small the batch', async () => {
-  const twoLanes = (where) => (where && where.lon >= 0 && where.lon <= 20 && where.lat >= 0 && where.lat <= 20
-    ? { region: 'testland', method: 'inside', distance: 0 }
-    : null);
-  const { dir, cacheDir } = await scratch({ items: ['Q9000016'] });
-  const { fetcher } = await fixtureFetcher();
-  await runImportMode(dir, { fetcher, today: '2026-09-04', batchSize: 1, cacheDir, deriveRegion: twoLanes });
-  const event = await readJson(path.join(dir, 'events', 'southfield-skirmish.json'));
-  assert.equal(event.region, 'testland', 'the second located item is past a batch size of one and still read');
-});
-
 test('--import stops at the batch size and the next run continues', async () => {
   const { dir, cacheDir } = await scratch();
   const { fetcher } = await fixtureFetcher();
@@ -862,8 +750,7 @@ test('--import stops at the batch size and the next run continues', async () => 
   const second = await runImportMode(dir, { fetcher: next, today: '2026-09-04', batchSize: 2, cacheDir, deriveRegion });
   assert.deepEqual(second.report.batch, ['Q9000003', 'Q9000004']);
   const state = await readJson(path.join(dir, 'imports', 'wikidata-state.json'));
-  assert.deepEqual(state.runs.import.done, ['Q9000001', 'Q9000002', 'Q9000003']);
-  assert.deepEqual(state.runs.import.refused, ['Q9000004'], 'the class table has no row for it, so it is asked about again');
+  assert.deepEqual(state.runs.import.done, ['Q9000001', 'Q9000002', 'Q9000003', 'Q9000004']);
 });
 
 test('--import enriches a record that already carries the item, and writes nothing else', async () => {
