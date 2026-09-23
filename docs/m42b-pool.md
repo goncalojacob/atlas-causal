@@ -3133,7 +3133,47 @@ record. The two commits that are not the merge touch
 `tests/fixtures/wikidata/entities.json` and `schema/v1/import-state.json` and
 nothing under `data/`.
 
+### The check, which went red twice on this head and is green
+
+`validate.yml` run **1548** on `f7a79472` was red, and so was its re-run
+(attempt 2), both times on the same assertion with the same two values:
+`keyboard-browser.test.mjs` 81, *"the lanes are one tab stop each, and the
+arrows walk along a lane"*, where `End` reached `fixture-event-deep-1969` and
+the order read a frame earlier said `fixture-event-deep-2025`. The validator
+passed in two seconds in both; only the Tests step failed, 278 of 279.
+
+**It is not this fire's data and it is not a flake.** The test draws
+`?fixtures=1` and reads `tests/fixtures/data/`, so nothing under `data/` can
+reach it, and this fire's diff is `tools/import/wikidata.mjs`, its tests and
+fixtures, `schema/v1/import-state.json` and two markdown files. It passed here
+alone three times and in **two full browser passes run exactly as the check
+runs them** — `node --test --test-concurrency=1 $(node tools/suites.mjs
+--browser)`, 279 tests, 0 failed — so the sandbox does not reproduce it, and a
+re-run on the runner does. `m42`'s batch 43 met the same failure with the same
+two ids on its run 1537 and called it lane A's.
+
+**The fix already existed in this repository and had not been ported here.**
+The test's own comment names the race — a title arrives with its century, so a
+shard landing repacks the rows — and `docs/m78-flakes.md` §3 measured that
+exact shape and wrote `named(selector)` for it: *"a count of labels is the same
+number on either side of a shard landing"*. The wait in front of this test
+asked only that **some** label exist, which the first century satisfies at
+once. `graph-labels-browser` and `m77-browser` already use `named()`; this
+test does now. **No assertion changed, nothing was skipped and nothing
+quarantined.** Run **1552** on `724baac6` is **success**.
+
 ### Deviations
+
+**1238. A wait that asks whether a label exists asks nothing, and M78 said so
+before this fire met it.** The cure was written in M78 and applied to the two
+tests that were failing then, and the ones that were green kept the wait that
+had been measured useless — so `keyboard-browser` 81 stayed on a count of
+labels until the atlas began opening on every century and the count stopped
+being a proxy for anything. **The rule: a browser test that reads a picture
+waits with `named()`, whether or not it is currently red.** A fix that is
+applied only where it is already hurting is a fix half made, and the half
+that is left comes back as a red check on somebody else's branch three
+milestones later.
 
 **1237. A fire that cannot reach the network should find that out in its first
 minutes and spend itself on the backlog, not on waiting.** This one probed

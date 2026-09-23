@@ -21044,7 +21044,22 @@ M62's subject test or M67's rule 1, so nothing was filed. Two deviations,
 **1236** (1232 broken a third time, because STEP 1 merges before STEP 2 reads
 the deviations — caught and repaired inside the fire) and **1237** (a fire that
 cannot reach the network should find out in its first minutes and spend itself
-on the backlog). `docs/m42b-pool.md` → "The thirteenth fire" carries all of it
+on the backlog).
+
+**The check went red twice on this head and is green.** Run 1548 on
+`f7a79472` and its re-run both failed on `keyboard-browser.test.mjs` 81 with
+the same two values — `End` reaching `fixture-event-deep-1969` where the order
+read a frame earlier said `fixture-event-deep-2025`. The test draws
+`?fixtures=1` and reads no record under `data/`, and it passed here alone three
+times and in two full browser passes run as the check runs them. The cause is
+the race its own comment names and `docs/m78-flakes.md` §3 measured — a title
+arrives with its century, a shard landing repacks the rows — and **the fix
+already existed and had not been ported here**: M78's `named()`, which
+`graph-labels-browser` and `m77-browser` already use and which is true only
+when no bar is still loading. No assertion changed, nothing was skipped.
+Deviation **1238** is that a fix applied only where it was already hurting is
+half a fix. Run 1552 on `724baac6` is **success**.
+`docs/m42b-pool.md` → "The thirteenth fire" carries all of it
 with the counts per lane and per century.
 
 ## Milestones landed
