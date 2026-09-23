@@ -60,6 +60,10 @@ const SHOT = 4;
 // Enough room round a label to hold the halo at any zoom, and the ground
 // beyond it.
 const PAD = 30;
+// How far past a label's own rectangle a mark still counts as behind it: the
+// four pixels the measurement's own clip reaches, and no further. A mark that
+// close is inside the shot this test reads, which is what makes it a case.
+const REACH = 4;
 
 const VIEW = '?view=graph&from=1900&to=1999';
 const DRAWN = 'return document.querySelector("svg.graph text.node-label") !== null;';
@@ -179,8 +183,23 @@ test('a label over a line and a label over a mark both keep paper between the le
 
     // What is behind each label, asked of the drawing rather than of the
     // pixels: an edge whose own path passes through the label's rectangle,
-    // and a mark whose circle does. Both are read in screen coordinates, so
-    // the zoom is already in them.
+    // and a mark whose circle is inside it or within the reach of the halo.
+    // Both are read in screen coordinates, so the zoom is already in them.
+    //
+    // **A mark strictly inside the box is a coincidence of the corpus and not
+    // a property of the drawing.** A name is written beside the mark it names,
+    // with a leader back to it (M77), so a label is only ever *over* some
+    // other event's mark, and whether one lands there depends on how the
+    // barycentre pass happened to pack that century. M42 batch 39 added three
+    // records to the twentieth and the world view went from three such labels
+    // to none, with **1.59 px** between the nearest pair — and 1.59 px is not
+    // a picture where the question has gone away, it is a picture where the
+    // halo is the only thing holding the letters off the mark. The clip this
+    // test measures already reaches four pixels past the box for exactly that
+    // reason, so the candidate is read to the same reach: a mark the halo is
+    // holding off, whether or not the rectangles overlap. The assertions
+    // underneath are the ones this test always made, and the same widening of
+    // *where a test looks* is what the halo's own zoom took at line 140.
     const behind = await page.eval(`
       const svg = document.querySelector('svg.graph');
       const inside = (r, p) => p.x >= r.left && p.x <= r.right && p.y >= r.top && p.y <= r.bottom;
@@ -205,7 +224,9 @@ test('a label over a line and a label over a mark both keep paper between the le
         for (const circle of svg.querySelectorAll('circle.node')) {
           const c = circle.getBoundingClientRect();
           if (c.width === 0) continue;
-          if (c.left <= r.right && r.left <= c.right && c.top <= r.bottom && r.top <= c.bottom) { mark = true; break; }
+          const dx = Math.max(c.left - r.right, r.left - c.right, 0);
+          const dy = Math.max(c.top - r.bottom, r.top - c.bottom, 0);
+          if (Math.hypot(dx, dy) <= ${REACH}) { mark = true; break; }
         }
         out.push({
           text: el.textContent, edge, mark,

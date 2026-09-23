@@ -19983,6 +19983,22 @@ and A13's relations pass, still never run.
       twice. The assertion measures a stroke width after a synthetic wheel
       event, which can be read before the zoom it is about has settled. It is
       lane A's code and not this run's data, and this fire did not touch it.
+1223. **A test that asks whether a label lands *on* a mark is asking about the
+      corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
+      → *"a label over a line and a label over a mark ..."* took its mark case
+      from a label box strictly overlapping a `circle.node`. A name is written
+      beside the mark it names with a leader back to it (M77), so a label is
+      only ever over some *other* event's mark, and whether one is depends on
+      how the barycentre pass packed that century. Batch 39's three records
+      took the twentieth century's world view from three such labels to none,
+      with **1.59 px** between the nearest pair — which is not the question
+      going away, it is the halo being the only thing between the letters and
+      the mark. The candidate is now read to the same four pixels the
+      measurement's own clip already reaches, and every assertion under it is
+      unchanged. Zooming in was tried first and is not the answer: at k = 3
+      the picture names five things and at k = 8 two, and the nearest label
+      and mark are 7 px apart. Line 140 of the same file records the same
+      shape of breakage from an earlier M42 batch and the same kind of fix.
 
 ## M84 — the owner's feedback document
 

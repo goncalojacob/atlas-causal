@@ -4230,7 +4230,29 @@ against 0.5831308855537262*. It was read rather than assumed:
 The assertion measures a stroke width after a synthetic wheel event, which is
 the shape of a test that can be read before the zoom it is about has settled.
 It belongs to lane A's code and not to this run's data, and this fire did not
-touch it. **Deviation 1222.** The pure suites — 151 files, **1,789 tests, 0
+touch it. **Deviation 1222.**
+
+**A second failure was this batch's and is fixed** (deviation 1223).
+`tests/graph-halo-browser.test.mjs` → *"a label over a line and a label over a
+mark both keep paper between the letters and it"* passes at the merge commit
+and fails at this batch's head, here and on the runner both. Its mark case took
+a label box **strictly overlapping** a `circle.node`, and a name is written
+*beside* the mark it names with a leader back to it (M77), so a label is only
+ever over some other event's mark — a coincidence of how the barycentre pass
+packed the century. Three records took the twentieth century's world view from
+three such labels to none, at **1.59 px** between the nearest pair, which is
+not the question going away but the halo being the only thing between the
+letters and the mark. The candidate is now read to the four pixels the
+measurement's own clip already reaches, and every assertion under it is
+unchanged. Zooming in was tried first and is not the answer: at k = 3 the
+picture names five things and at k = 8 two, and the nearest label and mark are
+7 px apart.
+
+**A third failure is the runner's.** `tests/map-browser.test.mjs` → *"where an
+event and a city want the same box, the event has it"* is about Lisbon at zoom
+8 and passes here, in the same tree, in the suite the runner failed it in.
+
+The pure suites — 151 files, **1,789 tests, 0
 failures, 0 skipped** — were run whole after the index rebuild and are green.
 
 ## Where the run stands after batch 39, for the fire that picks it up
