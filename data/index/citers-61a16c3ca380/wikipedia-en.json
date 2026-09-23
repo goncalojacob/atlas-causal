@@ -1772,6 +1772,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ajdabiya--first-gulf-of-sidra-offensive--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Gulf of Sidra offensive\", revision 1374515970"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
@@ -1793,6 +1799,18 @@
       "id": "battle-of-annual--alhucemas-landing--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bin-jawad--second-battle-of-benghazi--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bin-jawad--second-battle-of-brega--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Brega\", revision 1370735973"
     },
     {
       "dissent": false,
@@ -1838,6 +1856,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Brega\", revision 1370735973"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ras Lanuf\", revision 1372942414, § Aftermath"
@@ -1859,6 +1889,12 @@
       "id": "battle-of-stormberg--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011--battle-of-bani-walid--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Bani Walid\", revision 1374518311, § Background"
     },
     {
       "dissent": false,
@@ -2594,6 +2630,12 @@
     },
     {
       "dissent": false,
+      "id": "first-gulf-of-sidra-offensive--third-battle-of-brega--precondition-of",
+      "kind": "edge",
+      "locator": "\"Third Battle of Brega\", revision 1370750314, § Background"
+    },
+    {
+      "dissent": false,
       "id": "first-indochina-war--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -2693,6 +2735,12 @@
       "id": "flight-to-varennes--champ-de-mars-massacre--precondition-of",
       "kind": "edge",
       "locator": "\"Champ de Mars massacre\", revision 1370703702, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
+      "kind": "edge",
+      "locator": "\"Fourth Battle of Brega\", revision 1370619930, § Rebel advance on Sirte"
     },
     {
       "dissent": false,
@@ -4223,6 +4271,12 @@
       "id": "second-balkan-war--treaty-of-bucharest--caused",
       "kind": "edge",
       "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-brega--battle-of-ajdabiya--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ajdabiya\", revision 1374514977"
     },
     {
       "dissent": false,
@@ -6908,6 +6962,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ajdabiya",
+      "kind": "event",
+      "locator": "\"Battle of Ajdabiya\", revision 1374514977"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "\"Battle of Alegría de Pío\", revision 1370431604"
@@ -6935,6 +6995,18 @@
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "\"Battle of Ayacucho\", revision 1375770122"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bani-walid",
+      "kind": "event",
+      "locator": "\"Battle of Bani Walid\", revision 1374518311"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bin-jawad",
+      "kind": "event",
+      "locator": "\"Battle of Bin Jawad\", revision 1375769079"
     },
     {
       "dissent": false,
@@ -7898,6 +7970,12 @@
     },
     {
       "dissent": false,
+      "id": "first-gulf-of-sidra-offensive",
+      "kind": "event",
+      "locator": "\"First Gulf of Sidra offensive\", revision 1374515970"
+    },
+    {
+      "dissent": false,
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "\"First Indochina War\", revision 1373236226"
@@ -7961,6 +8039,12 @@
       "id": "foibe-massacres",
       "kind": "event",
       "locator": "\"Foibe massacres\", revision 1372732009"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-battle-of-brega",
+      "kind": "event",
+      "locator": "\"Fourth Battle of Brega\", revision 1370619930"
     },
     {
       "dissent": false,
@@ -9236,6 +9320,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-brega",
+      "kind": "event",
+      "locator": "\"Second Battle of Brega\", revision 1370735973"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "\"Second Battle of Colenso\", revision 1370736054"
@@ -9791,6 +9881,12 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "\"The Troubles\", revision 1376046499: \"about 30 years from the late 1960s to 1998 ... usually deemed to have ended with the Good Friday Agreement of 1998\""
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-brega",
+      "kind": "event",
+      "locator": "\"Third Battle of Brega\", revision 1370750314"
     },
     {
       "dissent": false,

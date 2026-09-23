@@ -3788,6 +3788,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "battle-of-ajdabiya",
+      "id": "battle-of-ajdabiya--first-gulf-of-sidra-offensive--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-gulf-of-sidra-offensive",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "battle-of-alegria-de-pio",
       "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
@@ -3832,6 +3860,62 @@
       "revised": null,
       "status": "active",
       "to": "alhucemas-landing",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-bin-jawad",
+      "id": "battle-of-bin-jawad--second-battle-of-benghazi--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-benghazi",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-bin-jawad",
+      "id": "battle-of-bin-jawad--second-battle-of-brega--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-brega",
       "type": "precondition-of"
     },
     {
@@ -4015,6 +4099,34 @@
       ],
       "created": "2026-09-23",
       "from": "battle-of-ras-lanuf",
+      "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-bin-jawad",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-ras-lanuf",
       "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
       "kind": "edge",
       "origin": {
@@ -4112,6 +4224,34 @@
       "revised": null,
       "status": "active",
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-tripoli-2011",
+      "id": "battle-of-tripoli-2011--battle-of-bani-walid--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-bani-walid",
       "type": "precondition-of"
     },
     {
@@ -8155,6 +8295,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "first-gulf-of-sidra-offensive",
+      "id": "first-gulf-of-sidra-offensive--third-battle-of-brega--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-battle-of-brega",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "first-indochina-war",
       "id": "first-indochina-war--algerian-war--precondition-of",
@@ -8540,6 +8708,34 @@
       "revised": null,
       "status": "active",
       "to": "champ-de-mars-massacre",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "fourth-battle-of-brega",
+      "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-sirte-2011",
       "type": "precondition-of"
     },
     {
@@ -15149,6 +15345,34 @@
       "status": "active",
       "to": "treaty-of-bucharest",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "second-battle-of-brega",
+      "id": "second-battle-of-brega--battle-of-ajdabiya--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-ajdabiya",
+      "type": "precondition-of"
     },
     {
       "authors": [

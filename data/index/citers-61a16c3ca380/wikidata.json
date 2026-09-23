@@ -2432,6 +2432,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ajdabiya",
+      "kind": "event",
+      "locator": "Q506595"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "Q5778565"
@@ -2459,6 +2465,18 @@
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "Q934157"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bani-walid",
+      "kind": "event",
+      "locator": "Q775224"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bin-jawad",
+      "kind": "event",
+      "locator": "Q588059"
     },
     {
       "dissent": false,
@@ -3422,6 +3440,12 @@
     },
     {
       "dissent": false,
+      "id": "first-gulf-of-sidra-offensive",
+      "kind": "event",
+      "locator": "Q846532"
+    },
+    {
+      "dissent": false,
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "Q748780"
@@ -3485,6 +3509,12 @@
       "id": "foibe-massacres",
       "kind": "event",
       "locator": "Q1294142"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-battle-of-brega",
+      "kind": "event",
+      "locator": "Q2632974"
     },
     {
       "dissent": false,
@@ -4652,6 +4682,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-brega",
+      "kind": "event",
+      "locator": "Q911471"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "Q868249"
@@ -4997,6 +5033,12 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "Q815436"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-brega",
+      "kind": "event",
+      "locator": "Q581087"
     },
     {
       "dissent": false,

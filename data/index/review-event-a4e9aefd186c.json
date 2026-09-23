@@ -5400,6 +5400,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "battle-of-ajdabiya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ajdabiya"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5571,6 +5603,70 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ayacucho"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-bani-walid",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bani Walid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 3,
+      "id": "battle-of-bin-jawad",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bin Jawad"
     },
     {
       "authors": [
@@ -7017,7 +7113,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-ras-lanuf",
       "kind": "event",
       "origin": {
@@ -7147,7 +7243,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "origin": {
@@ -7414,7 +7510,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "origin": {
@@ -12009,6 +12105,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "first-gulf-of-sidra-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Gulf of Sidra offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -12383,6 +12511,38 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Foibe massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "fourth-battle-of-brega",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fourth Battle of Brega"
     },
     {
       "authors": [
@@ -20696,7 +20856,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "second-battle-of-benghazi",
       "kind": "event",
       "origin": {
@@ -20714,6 +20874,38 @@
       "revised": null,
       "status": "active",
       "title": "Second Battle of Benghazi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 2,
+      "id": "second-battle-of-brega",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Brega"
     },
     {
       "authors": [
@@ -23625,6 +23817,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "The Troubles"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "third-battle-of-brega",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Third Battle of Brega"
     },
     {
       "authors": [
