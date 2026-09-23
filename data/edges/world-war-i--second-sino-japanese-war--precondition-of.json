@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "world-war-i--second-sino-japanese-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Second Sino-Japanese War\", revision 1375531758, § Japanese expansion"
-  }
- ],
- "from": "world-war-i",
- "to": "second-sino-japanese-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The war’s article begins the Japanese expansion it grew out of at Shandong, which Japan took from Germany’s sphere after 1918. The article reads: \"Following World War I, Japan acquired the German Empire's sphere of influence in Shandong province, leading to nationwide anti-Japanese protests and mass demonstrations in China.\"",
- "dispute": null
+  "schema": 1,
+  "id": "world-war-i--second-sino-japanese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Sino-Japanese War\", revision 1375531758, § Japanese expansion"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "second-sino-japanese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war’s article begins the Japanese expansion it grew out of at Shandong, which Japan took from Germany’s sphere after 1918. The article reads: \"Following World War I, Japan acquired the German Empire's sphere of influence in Shandong province, leading to nationwide anti-Japanese protests and mass demonstrations in China.\"",
+  "dispute": null
 }

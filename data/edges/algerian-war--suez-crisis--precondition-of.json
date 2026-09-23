@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "algerian-war--suez-crisis--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Algerian War\", revision 1374452636, § After the Philippeville massacre"
-  }
- ],
- "from": "algerian-war",
- "to": "suez-crisis",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The Algerian war’s article gives France’s reading of Nasser — that Cairo armed the FLN — as one of the things that put France into Suez. The article reads: \"This attitude was a factor in persuading France to participate in the November 1956 attempt to seize the Suez Canal during the Suez Crisis.\"",
- "dispute": null
+  "schema": 1,
+  "id": "algerian-war--suez-crisis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian War\", revision 1374452636, § After the Philippeville massacre"
+    }
+  ],
+  "from": "algerian-war",
+  "to": "suez-crisis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Algerian war’s article gives France’s reading of Nasser — that Cairo armed the FLN — as one of the things that put France into Suez. The article reads: \"This attitude was a factor in persuading France to participate in the November 1956 attempt to seize the Suez Canal during the Suez Crisis.\"",
+  "dispute": null
 }

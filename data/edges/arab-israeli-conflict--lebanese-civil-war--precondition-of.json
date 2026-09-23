@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "arab-israeli-conflict--lebanese-civil-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Lebanese Civil War\", revision 1375063016, lead"
-  }
- ],
- "from": "arab-israeli-conflict",
- "to": "lebanese-civil-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The Lebanese war’s lead names the Palestinian armed presence that followed the conflict among what it arose from. The article reads: \"The war arose from longstanding political and sectarian tensions within Lebanon's confessional system, compounded by demographic change, the presence of Palestinian armed groups following the Arab–Israeli conflict, and the influence of regional rivalries and the Cold War.\"",
- "dispute": null
+  "schema": 1,
+  "id": "arab-israeli-conflict--lebanese-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lebanese Civil War\", revision 1375063016, lead"
+    }
+  ],
+  "from": "arab-israeli-conflict",
+  "to": "lebanese-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Lebanese war’s lead names the Palestinian armed presence that followed the conflict among what it arose from. The article reads: \"The war arose from longstanding political and sectarian tensions within Lebanon's confessional system, compounded by demographic change, the presence of Palestinian armed groups following the Arab–Israeli conflict, and the influence of regional rivalries and the Cold War.\"",
+  "dispute": null
 }

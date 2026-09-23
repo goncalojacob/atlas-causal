@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "1994-genocide-against-tutsi--second-congo-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Rwandan genocide\", revision 1376069741, § Refugee crisis, insurgency, and two Congo Wars"
-  }
- ],
- "from": "1994-genocide-against-tutsi",
- "to": "second-congo-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The article files the two Congo wars under the genocide’s own consequences: the militias that fled into eastern Zaire are what Rwanda followed them for. The article reads: \"Rwanda fell out with the new Congolese government in 1998, and Kagame supported a fresh rebellion, leading to the Second Congo War, which would last up until 2003 and caused millions of deaths and massive damage.\"",
- "dispute": null
+  "schema": 1,
+  "id": "1994-genocide-against-tutsi--second-congo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan genocide\", revision 1376069741, § Refugee crisis, insurgency, and two Congo Wars"
+    }
+  ],
+  "from": "1994-genocide-against-tutsi",
+  "to": "second-congo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article files the two Congo wars under the genocide’s own consequences: the militias that fled into eastern Zaire are what Rwanda followed them for. The article reads: \"Rwanda fell out with the new Congolese government in 1998, and Kagame supported a fresh rebellion, leading to the Second Congo War, which would last up until 2003 and caused millions of deaths and massive damage.\"",
+  "dispute": null
 }

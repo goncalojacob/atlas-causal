@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "libyan-civil-war--2012-malian-coup-d-etat--enabled",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"2012 Malian coup d'état\", revision 1370102863, § Background"
-  }
- ],
- "from": "libyan-civil-war",
- "to": "2012-malian-coup-d-etat",
- "type": "enabled",
- "confidence": "probable",
- "explanation": "The coup’s own background makes the Libyan war the supply: the men and the weapons that made the Tuareg rebellion winnable came back from it, and the army’s failure against that rebellion is what the officers mutinied over. The article reads: \"The Tuareg rebels had been bolstered by an influx of battle-hardened, well-armed fighters returning from the Libyan Civil War, to which they had traveled to fight for Muammar Gaddafi, the Libyan leader who was deposed and killed.\"",
- "dispute": null
+  "schema": 1,
+  "id": "libyan-civil-war--2012-malian-coup-d-etat--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § Background"
+    }
+  ],
+  "from": "libyan-civil-war",
+  "to": "2012-malian-coup-d-etat",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The coup’s own background makes the Libyan war the supply: the men and the weapons that made the Tuareg rebellion winnable came back from it, and the army’s failure against that rebellion is what the officers mutinied over. The article reads: \"The Tuareg rebels had been bolstered by an influx of battle-hardened, well-armed fighters returning from the Libyan Civil War, to which they had traveled to fight for Muammar Gaddafi, the Libyan leader who was deposed and killed.\"",
+  "dispute": null
 }

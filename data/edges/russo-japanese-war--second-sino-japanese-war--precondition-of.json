@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "russo-japanese-war--second-sino-japanese-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Russo-Japanese War\", revision 1375992361, § Military results"
-  }
- ],
- "from": "russo-japanese-war",
- "to": "second-sino-japanese-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The 1905 war’s own § Military results follows the Kwantung Army from the ground it won there to Mukden and into the war of 1937. The article reads: \"Two decades after that, the Kwantung Army staged an incident that led to the invasion of Manchuria in the Mukden Incident; the Kwantung Army eventually came to be heavily involved in the state's politics and administration, leading to a series of localized conflicts with Chinese regional warlords that finally extended into the Second Sino-Japanese War in 1937.\"",
- "dispute": null
+  "schema": 1,
+  "id": "russo-japanese-war--second-sino-japanese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Japanese War\", revision 1375992361, § Military results"
+    }
+  ],
+  "from": "russo-japanese-war",
+  "to": "second-sino-japanese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1905 war’s own § Military results follows the Kwantung Army from the ground it won there to Mukden and into the war of 1937. The article reads: \"Two decades after that, the Kwantung Army staged an incident that led to the invasion of Manchuria in the Mukden Incident; the Kwantung Army eventually came to be heavily involved in the state's politics and administration, leading to a series of localized conflicts with Chinese regional warlords that finally extended into the Second Sino-Japanese War in 1937.\"",
+  "dispute": null
 }

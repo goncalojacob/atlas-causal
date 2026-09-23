@@ -1,93 +1,93 @@
 {
- "schema": 1,
- "id": "six-day-war",
- "kind": "event",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Wikidata import (tools/import/wikidata.mjs)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-22",
- "revised": "2026-09-23",
- "origin": {
-  "tool": "wikidata"
- },
- "review": {
-  "status": "draft",
-  "flags": [
-   "imported-facts",
-   "summary-from-lead",
-   "filed-from-p361",
-   "participants-from-p710"
-  ]
- },
- "wikidata": "Q49077",
- "sitelinks": {
-  "count": 102,
-  "on": "2026-09-22"
- },
- "wikipedia": {
-  "en": "Six-Day War",
-  "pt": "Guerra dos Seis Dias"
- },
- "sources": [
-  {
-   "source": "wikidata",
-   "locator": "Q49077"
+  "schema": 1,
+  "id": "six-day-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": "2026-09-23",
+  "origin": {
+    "tool": "wikidata"
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Six-Day War\", revision 1375500255"
-  }
- ],
- "title": "Six-Day War",
- "summary": "The English Wikipedia article \"Six-Day War\", at revision 1375500255, opens: \"The Six-Day War, or the 1967 Arab–Israeli war, was fought between Israel and a coalition of Arab states, primarily Egypt, Syria, and Jordan, in the context of the Arab–Israeli conflict. In the war, Israel captured and occupied the West Bank from Jordan, the Gaza Strip and the Sinai Peninsula from Egypt, and the Golan Heights from Syria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49077, imported by tools/import/wikidata.mjs. The item's own description reads \"1967 war between Israel and Egypt, Jordan, and Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
- "when": {
-  "start": 1967,
-  "end": 1967,
-  "date": "1967-06-05",
-  "endDate": "1967-06-10"
- },
- "place": "middle-east",
- "region": null,
- "regionNote": null,
- "category": "war",
- "actors": [
-  {
-   "actor": "israel",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q801"
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "participants-from-p710"
+    ]
   },
-  {
-   "actor": "egypt",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q79"
+  "wikidata": "Q49077",
+  "sitelinks": {
+    "count": 102,
+    "on": "2026-09-22"
   },
-  {
-   "actor": "syria",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q858"
+  "wikipedia": {
+    "en": "Six-Day War",
+    "pt": "Guerra dos Seis Dias"
   },
-  {
-   "actor": "jordan",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q810"
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Six-Day War\", revision 1375500255"
+    }
+  ],
+  "title": "Six-Day War",
+  "summary": "The English Wikipedia article \"Six-Day War\", at revision 1375500255, opens: \"The Six-Day War, or the 1967 Arab–Israeli war, was fought between Israel and a coalition of Arab states, primarily Egypt, Syria, and Jordan, in the context of the Arab–Israeli conflict. In the war, Israel captured and occupied the West Bank from Jordan, the Gaza Strip and the Sinai Peninsula from Egypt, and the Golan Heights from Syria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49077, imported by tools/import/wikidata.mjs. The item's own description reads \"1967 war between Israel and Egypt, Jordan, and Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1967,
+    "end": 1967,
+    "date": "1967-06-05",
+    "endDate": "1967-06-10"
   },
-  {
-   "actor": "iraq",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q796"
-  },
-  {
-   "actor": "lebanon",
-   "role": "belligerent",
-   "note": "Wikidata Q49077, P710 (participant), Q822"
-  }
- ],
- "parent": "arab-israeli-conflict"
+  "place": "middle-east",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [
+    {
+      "actor": "israel",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q801"
+    },
+    {
+      "actor": "egypt",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q79"
+    },
+    {
+      "actor": "syria",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q858"
+    },
+    {
+      "actor": "jordan",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q810"
+    },
+    {
+      "actor": "iraq",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q796"
+    },
+    {
+      "actor": "lebanon",
+      "role": "belligerent",
+      "note": "Wikidata Q49077, P710 (participant), Q822"
+    }
+  ],
+  "parent": "arab-israeli-conflict"
 }

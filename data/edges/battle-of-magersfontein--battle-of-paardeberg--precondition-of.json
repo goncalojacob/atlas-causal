@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
-  }
- ],
- "from": "battle-of-magersfontein",
- "to": "battle-of-paardeberg",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "Paardeberg’s own background is the standstill at Magersfontein: the casualties there are what the British advance had to be remade after. The article reads: \"Although the Boers had failed to prevent the British crossing the Modder River on 28 November, they had fought them to a standstill at the Battle of Magersfontein thirteen days later, inflicting heavy casualties.\"",
- "dispute": null
+  "schema": 1,
+  "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
+    }
+  ],
+  "from": "battle-of-magersfontein",
+  "to": "battle-of-paardeberg",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Paardeberg’s own background is the standstill at Magersfontein: the casualties there are what the British advance had to be remade after. The article reads: \"Although the Boers had failed to prevent the British crossing the Modder River on 28 November, they had fought them to a standstill at the Battle of Magersfontein thirteen days later, inflicting heavy casualties.\"",
+  "dispute": null
 }

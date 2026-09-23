@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "dayton-agreement--kosovo-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Kosovo War\", revision 1376074929, lead"
-  }
- ],
- "from": "dayton-agreement",
- "to": "kosovo-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The war’s lead dates the KLA’s first campaign from Kosovo being left out of Dayton and from what that showed about peaceful resistance. The article reads: \"The KLA initiated its first campaign in 1995, after Kosovo's case was left out of the Dayton Agreement and it had become clear that President Rugova's strategy of peaceful resistance had failed to bring Kosovo onto the international agenda.\"",
- "dispute": null
+  "schema": 1,
+  "id": "dayton-agreement--kosovo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kosovo War\", revision 1376074929, lead"
+    }
+  ],
+  "from": "dayton-agreement",
+  "to": "kosovo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war’s lead dates the KLA’s first campaign from Kosovo being left out of Dayton and from what that showed about peaceful resistance. The article reads: \"The KLA initiated its first campaign in 1995, after Kosovo's case was left out of the Dayton Agreement and it had become clear that President Rugova's strategy of peaceful resistance had failed to bring Kosovo onto the international agenda.\"",
+  "dispute": null
 }

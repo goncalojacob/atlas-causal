@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 352 of 687 |
+| **after M42** | 36 of 36 | 368 of 687 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -282,7 +282,7 @@ those lines is `croatian-war-of-independence` naming `croatia`. The war runs
 **1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
 war *overlaps* the polity without the polity being alive in the year the war
 started. Counted by the rule this table states — alive at the start — the
-figure is **352**; counted by overlap it is **353**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds; the **gap** is still the one entry this paragraph is about.
+figure is **368**; counted by overlap it is **369**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, and both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name; the **gap** is still the one entry this paragraph is about.
 
 Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
 recognition date and not the date a state began fighting for itself, and

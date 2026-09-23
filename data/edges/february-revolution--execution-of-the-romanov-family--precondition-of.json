@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Murder of the Romanov family\", revision 1374973698, lead"
-  }
- ],
- "from": "february-revolution",
- "to": "execution-of-the-romanov-family",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The execution’s own lead begins the family’s captivity at the revolution. The article reads: \"Following the February Revolution in 1917, the Romanovs and their servants had been imprisoned in the Alexander Palace before being moved to Tobolsk, Siberia, in the aftermath of the October Revolution.\"",
- "dispute": null
+  "schema": 1,
+  "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, lead"
+    }
+  ],
+  "from": "february-revolution",
+  "to": "execution-of-the-romanov-family",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The execution’s own lead begins the family’s captivity at the revolution. The article reads: \"Following the February Revolution in 1917, the Romanovs and their servants had been imprisoned in the Alexander Palace before being moved to Tobolsk, Siberia, in the aftermath of the October Revolution.\"",
+  "dispute": null
 }

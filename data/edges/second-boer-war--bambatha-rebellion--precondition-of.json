@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "second-boer-war--bambatha-rebellion--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Bambatha Rebellion\", revision 1372396539, § Rebellion"
-  }
- ],
- "from": "second-boer-war",
- "to": "bambatha-rebellion",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The rebellion’s article opens its own account on the labour shortage the Boer war left Natal with, which is what the poll tax answered. The article reads: \"In the years following the end of the Second Boer War in 1902, European employers in the British colony of Natal had difficulty recruiting Black farmers due to increased competition from gold mines in the Witwatersrand.\"",
- "dispute": null
+  "schema": 1,
+  "id": "second-boer-war--bambatha-rebellion--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bambatha Rebellion\", revision 1372396539, § Rebellion"
+    }
+  ],
+  "from": "second-boer-war",
+  "to": "bambatha-rebellion",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The rebellion’s article opens its own account on the labour shortage the Boer war left Natal with, which is what the poll tax answered. The article reads: \"In the years following the end of the Second Boer War in 1902, European employers in the British colony of Natal had difficulty recruiting Black farmers due to increased competition from gold mines in the Witwatersrand.\"",
+  "dispute": null
 }

@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "six-day-war--gaza-war--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Gaza war\", revision 1376206831, § Background"
-  }
- ],
- "from": "six-day-war",
- "to": "gaza-war",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "The Gaza war’s background begins at the occupation of the Palestinian territories that the 1967 war produced. The article reads: \"Following the 1967 Six-Day War, Israel occupied both Palestinian territories.\"",
- "dispute": null
+  "schema": 1,
+  "id": "six-day-war--gaza-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gaza war\", revision 1376206831, § Background"
+    }
+  ],
+  "from": "six-day-war",
+  "to": "gaza-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Gaza war’s background begins at the occupation of the Palestinian territories that the 1967 war produced. The article reads: \"Following the 1967 Six-Day War, Israel occupied both Palestinian territories.\"",
+  "dispute": null
 }

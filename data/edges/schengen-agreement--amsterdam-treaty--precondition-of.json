@@ -1,39 +1,39 @@
 {
- "schema": 1,
- "id": "schengen-agreement--amsterdam-treaty--precondition-of",
- "kind": "edge",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Claude (assistant draft, unreviewed)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-09-23",
- "revised": null,
- "review": {
-  "status": "draft",
-  "flags": [
-   "edge-drafted",
-   "a13-relations-pass"
-  ]
- },
- "origin": {
-  "tool": "assistant"
- },
- "sources": [
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Schengen Agreement\", revision 1370029483, § History"
-  }
- ],
- "from": "schengen-agreement",
- "to": "amsterdam-treaty",
- "type": "precondition-of",
- "confidence": "probable",
- "explanation": "Amsterdam is where the Schengen acquis was taken into Union law, and the agreement’s own history says the negotiations were the same ones. The article reads: \"It was during those negotiations, which led to the Amsterdam Treaty, that the incorporation of the Schengen acquis into the main body of European Union law was agreed along with opt-outs for Ireland and the United Kingdom (which subsequently withdrew from the EU in 2020), which were to remain outside of the Schengen Area.\"",
- "dispute": null
+  "schema": 1,
+  "id": "schengen-agreement--amsterdam-treaty--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schengen Agreement\", revision 1370029483, § History"
+    }
+  ],
+  "from": "schengen-agreement",
+  "to": "amsterdam-treaty",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Amsterdam is where the Schengen acquis was taken into Union law, and the agreement’s own history says the negotiations were the same ones. The article reads: \"It was during those negotiations, which led to the Amsterdam Treaty, that the incorporation of the Schengen acquis into the main body of European Union law was agreed along with opt-outs for Ireland and the United Kingdom (which subsequently withdrew from the EU in 2020), which were to remain outside of the Schengen Area.\"",
+  "dispute": null
 }
