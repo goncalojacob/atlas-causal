@@ -36,6 +36,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "14-october-2017-mogadishu-bombings",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war-2009-present",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "Place from A9's `P276` = Q2449, the `mogadishu` record already here; the item's own `P625` is that point to three places. No category: the class is Q18493502, suicide bombing, which the seeds file now carries with its Wikidata label and no category, because `data/categories.json` has none a bombing belongs to. No edge: the only other event the article names is the 2011 Mogadishu bombing, which this atlas does not hold; al-Shabaab is an actor, and the item gives no `P710`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "14 October 2017 Mogadishu bombings"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2721,6 +2753,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "2011 Egyptian revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "2011-military-intervention-in-libya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-spring",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A6 and A8: `P361` names Q81545, the Libyan Civil War, which this atlas closes on 2011-10-23 while the intervention ran to NATO's mandate ending on 31 October — eight days outside its parent, and A7 cannot widen a parent dated from its own article. Filed instead under `arab-spring`, whose span (2010-12-17 to 2012-12) holds it and whose subject is the one the civil war is filed under. Place from A9's `P276` = Q1016, the `libya-q1016` record already here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2011 military intervention in Libya"
     },
     {
       "authors": [
@@ -6077,6 +6143,40 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-karameh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-attrition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "Place from A9's first step and its second at once: the item's `P625` is 35.58, 31.95 and its `P276` is Q2592647, Karameh, whose own `P625` is the same pair — the shape `jadotville-q18780` took in batch 41 — so the place record is the town's and carries the town's item. Filed under `war-of-attrition` from `P361`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Karameh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7653,7 +7753,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "black-september",
       "kind": "event",
       "origin": {
@@ -11455,7 +11555,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 6,
+      "degree": 7,
       "id": "first-balkan-war",
       "kind": "event",
       "names": [
@@ -14620,6 +14720,40 @@
       ],
       "created": "2026-09-23",
       "degree": 1,
+      "id": "italo-turkish-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "lane-from-seeds",
+          "filed-from-p361"
+        ],
+        "note": "A9 reaches no point: no `P625`, and its `P276` is Q1529261, the Tripolitania vilayet, which carries none either; no `P131` and no `P17`. So it is placeless and the lane is named for the item in the seeds file — africa, the theatre the article's first sentence gives, from Tripoli to Fezzan. The Aegean half is in no lane: a war on two seas has no one point and no place record is better than a wrong one. Filed under `scramble-for-africa` from `P361`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italo-Turkish War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
       "id": "ituri-conflict",
       "kind": "event",
       "origin": {
@@ -15744,7 +15878,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "libyan-civil-war",
       "kind": "event",
       "origin": {
@@ -17394,6 +17528,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Operation Grapes of Wrath"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "id": "operation-green-sea",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "guinea-bissau-war-of-independence",
+        "portuguese-colonial-war-1961-1974"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "second-parent-a8",
+          "actors-from-p710"
+        ],
+        "note": "Two parents, which is A8: `P361` names the Guinea-Bissau war of independence, and the raid is also inside `portuguese-colonial-war-1961-1974`, which that war is not filed under because it outlasts it (batch 41). Neither is reachable from the other. Place from A9: the item's `P625` and its `P276` (Q3733, Conakry) agree. Actors from `P710` (A12 (4)). No edge: the article's Consequences are the Guinean purges, UNSC Resolution 290 and the Soviet patrol, none of them held here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Green Sea"
     },
     {
       "authors": [
@@ -25819,6 +25991,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "14-october-2017-mogadishu-bombings",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1920-georgian-coup-attempt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -26612,6 +26790,12 @@
     },
     {
       "id": "operation-black-buck",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "operation-green-sea",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

@@ -1778,6 +1778,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-karameh--black-september--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
@@ -3092,6 +3098,12 @@
     },
     {
       "dissent": false,
+      "id": "italo-turkish-war--first-balkan-war--enabled",
+      "kind": "edge",
+      "locator": "\"Italo-Turkish War\", revision 1370624672"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Jameson Raid\", revision 1370624782, § lead"
@@ -3251,6 +3263,12 @@
       "id": "lei-aurea-1888--proclamation-of-the-brazilian-republic-1889--caused",
       "kind": "edge",
       "locator": "\"Proclamation of the Republic (Brazil)\", revision 1370705081"
+    },
+    {
+      "dissent": false,
+      "id": "libyan-civil-war--2011-military-intervention-in-libya--reacted-to",
+      "kind": "edge",
+      "locator": "\"2011 military intervention in Libya\", revision 1370780938"
     },
     {
       "dissent": false,
@@ -5918,6 +5936,12 @@
     },
     {
       "dissent": false,
+      "id": "14-october-2017-mogadishu-bombings",
+      "kind": "event",
+      "locator": "\"14 October 2017 Mogadishu bombings\", revision 1357604022"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -6347,6 +6371,12 @@
       "id": "2011-egyptian-revolution",
       "kind": "event",
       "locator": "\"2011 Egyptian revolution\", revision 1374677056"
+    },
+    {
+      "dissent": false,
+      "id": "2011-military-intervention-in-libya",
+      "kind": "event",
+      "locator": "\"2011 military intervention in Libya\", revision 1370780938"
     },
     {
       "dissent": false,
@@ -6893,6 +6923,12 @@
       "id": "battle-of-jutland",
       "kind": "event",
       "locator": "\"Battle of Jutland\", revision 1375410943"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-karameh",
+      "kind": "event",
+      "locator": "\"Battle of Karameh\", revision 1374545421"
     },
     {
       "dissent": false,
@@ -8186,6 +8222,12 @@
     },
     {
       "dissent": false,
+      "id": "italo-turkish-war",
+      "kind": "event",
+      "locator": "\"Italo-Turkish War\", revision 1370624672"
+    },
+    {
+      "dissent": false,
       "id": "ituri-conflict",
       "kind": "event",
       "locator": "\"Ituri conflict\", revision 1370624684"
@@ -8567,6 +8609,12 @@
       "id": "operation-grapes-of-wrath",
       "kind": "event",
       "locator": "\"Operation Grapes of Wrath\", revision 1372784188"
+    },
+    {
+      "dissent": false,
+      "id": "operation-green-sea",
+      "kind": "event",
+      "locator": "\"Operation Green Sea\", revision 1372115645"
     },
     {
       "dissent": false,
