@@ -2742,82 +2742,287 @@ a merge commit included, has to exist before the index that describes it is
 built.** The cure for a merge is three commits and not two: resolve and
 commit the merge, rebuild, commit the index.
 
+## Batch 12 — the Italian Wars' missing phases, and Europe's sixteenth century
+
+*23 September. The twelfth fire on the branch.* It took the first thing batch
+11's note left: **Europe's sixteenth century, eight active events and one
+main**, the thinnest cell this branch can act on. It is a cell that already
+has its umbrella — `italian-wars`, 1494–1559, with five phases filed under it
+— so the cheapest honest growth here is not a new umbrella at all: it is the
+phases and engagements that umbrella is missing. **Every record this batch
+imported arrived filed**, so the main count did not move and no arithmetic was
+needed to hold it there.
+
+### Before the batch
+
+The fire began by merging `origin/m42` (its batches 39 to 42) into this branch,
+which is where 790 active and a largest component of 560 come from;
+`docs/m53-polities.md` §4.1 was re-taken over the merged corpus at **373 of
+790**, and 374 by the overlap rule.
+
+| | before | after |
+| --- | --- | --- |
+| active | 790 | **795** |
+| **main** | **242** | **242** |
+| filed | 548 | 553 |
+| active edges | 771 | 774 |
+| **largest connected component** | **560** | **560** |
+| components | 189 | 191 |
+| events with no edge | 159 | 158 |
+
+**The main count did not rise, and it did not have to be paid for.** Five
+records arrived and all five were filed on arrival, three under `italian-wars`
+and two under the phases their own leads name.
+
+### What was imported
+
+| record | item | span | lane | century |
+| --- | --- | --- | --- | --- |
+| `italian-war-of-1494-1495` | `Q1355145` | 1494–1495 | europe | 15th |
+| `battle-of-marignano` | `Q330` | 1515 | europe | 16th |
+| `battle-of-pavia` | `Q63468` | 1525 | europe | 16th |
+| `war-of-the-league-of-cognac` | `Q1429256` | 1526–1530 | europe | 16th |
+| `italian-war-of-1542-1546` | `Q15542964` | 1542–1546 | europe | 16th |
+
+**Five items put to `tools/import/wikidata.mjs --import`, five created, none
+refused and none ambiguous**, in eleven calls. Every one carries the **cached
+English lead as its summary**, at the revision the cache names, with the
+`wikipedia-en` citation and the `summary-from-lead` flag: *Italian War of
+1494–1495* at 1372866209, *Battle of Marignano* at 1370449034, *Battle of
+Pavia* at 1370271639, *War of the League of Cognac* at 1370750083, *Italian War
+of 1542–1546* at 1370624570. **No record of this batch shows the import's
+placeholder.**
+
+**No class was added.** All five carry classes the table already holds — `Q198`
+*war* and `Q178561` *battle*, both with the category `war`.
+
+### Filing (A3, A6, A8), and the main count
+
+| child | umbrella | why it fits, and where the article says so |
+| --- | --- | --- |
+| `italian-war-of-1494-1495` | `italian-wars` (1494–1559) | its own lead: "the opening phase of the Italian Wars" |
+| `war-of-the-league-of-cognac` | `italian-wars` | the article's short description, "Seventh phase of the Italian Wars (1526–1530)", and its infobox `part_of = the French–Habsburg rivalry and Italian Wars` |
+| `italian-war-of-1542-1546` | `italian-wars` | its own lead: "a conflict late in the Italian Wars"; and `P361` on `Q15542964` is `Q273348`, which is this atlas's `italian-wars` |
+| `battle-of-pavia` | `italian-war-of-1521-1526` (1521–1526) | its own lead: "the decisive engagement of the Italian War of 1521–1526" |
+| `battle-of-marignano` | `war-of-the-league-of-cambrai` (1508–1516) | its own lead: "the last major engagement of the War of the League of Cambrai"; and `P361` on `Q330` is `Q636365`, which is this atlas's record |
+
+Each battle is filed under its phase and not also under `italian-wars`, which
+is the shape `battle-of-st-quentin` has had since it was written: the
+grandparent is reached through the parent, and A8's second umbrella is for a
+record two umbrellas separately fit, not for a chain of three.
+
+**`P361` was read as evidence and never as the answer.** Two of the five carry
+it and it agrees with their leads; the other three do not carry it at all and
+were filed from what their articles say in words.
+
+### Places
+
+The three wars took **`italy-q38`**, the country place this atlas already held
+for `Q38`, which is what their items' own `P625` and `P17` both give: a war
+fought the length of a peninsula has no narrower point that is not a choice.
+
+**The two battles came out placeless with a lane derived from their own point,
+and that is deviation 1230 again** — the import reaches for `P276` before
+`P17` but only ever fetches the `P17` countries, so the town each battle names
+is not there to read. Both were pointed by hand at a place record written from
+the town item's own `P625` and names:
+
+| event | town | item | point | precision |
+| --- | --- | --- | --- | --- |
+| `battle-of-pavia` | `pavia` | `Q6259` | 9.155, 45.18528 | city |
+| `battle-of-marignano` | `melegnano` | `Q42932` | 9.32377, 45.35875 | city |
+
+Both towns are `Q747074`, *comune of Italy*, which is a settlement, so `city`
+and not `point`. The reason is in each record's `review.note`, on the two
+places and on the two events, so a reader is not told the import did it.
+
+### The edges (A5, M72)
+
+Three, all `probable`, each quoting two articles at named revisions:
+
+| edge | type | sources |
+| --- | --- | --- |
+| `battle-of-pavia` → `war-of-the-league-of-cognac` | `reacted-to` | *War of the League of Cognac* 1370750083, *Battle of Pavia* 1370271639 |
+| `italian-war-of-1494-1495` → `italian-wars-of-1499-1504` | `precondition-of` | *Italian Wars of 1499–1504* 1372847284, *Italian War of 1494–1495* 1372866209 |
+| `italian-war-of-1542-1546` → `italian-war-of-1551-1559` | `precondition-of` | *Italian War of 1542–1546* 1370624570, *Italian War of 1551–1559* 1370624572 |
+
+Every one carries **two locators**. No `consensus` was written: A2 allows it
+only through a work Wikipedia itself cites, and none of these articles was read
+that far.
+
+**Two of the three attach to records that had no edge at all** —
+`italian-wars-of-1499-1504` and `italian-war-of-1551-1559` — which is why the
+corpus grew by five and the events with no edge fell by one rather than rising
+by five.
+
+### Why the largest component did not move, which A5 asks a batch to say
+
+**The whole Italian Wars tree is a set of components of its own, and this batch
+did not join it to the 560.** `italian-wars` was a component of one before this
+fire and the five phases under it were components of one each, because `parent`
+is a display fact and never adjacency — that is the atlas's own rule and not a
+defect. The three edges this batch wrote joined six of those records into three
+components of two, which is why the component count rose by two while the
+largest stood still.
+
+**Joining that tree to the main body needs an edge no article this fire read
+states.** The fire looked: the *Italian Wars* article at 1372847284 reaches the
+Americas exactly once, in a paragraph about where the veterans went — "Many
+conquistadors, such as Hernán Cortés, had considered Italy before opting to
+serve in Spanish America … Experience in Italy was often considered a
+prerequisite for military employment" — and that is a claim about the careers
+of soldiers, not about one event bringing another about. **An edge written on
+it would be a record kept by writing something**, which is the one thing M42's
+brief says no batch may do. So the fire refused it and says so here.
+
+**What would join them is named and not invented**: the Peace of
+Cateau-Cambrésis of 1559 ends the Italian Wars and the article at 1372847284
+reports historians reading it as "the beginning of a Spanish hegemony in
+Italy"; the Eighty Years' War (`Q164432`, 1568-05-23 to 1648-01-30, classes
+`Q6107280` *revolt* and `Q8465` *civil war*, both in the table) is what the
+Dutch–Portuguese War's own article calls the thing that war is an extension of.
+Either is importable. **Both arrive main, and this branch's rule is that the
+main count may not rise**, so whichever fire takes one must bring the filing
+that pays for it.
+
+### What was refused
+
+**`Q377350`, the Iberian Union, refused by this fire and not by the tool.** It
+carries `P571` 1580-09-12 and `P576` 1640-12-01, which the import reads, but
+its classes are two kinds at once — `Q3024240` *historical country* is an actor
+of this atlas and `Q11514315` is an event — and `Q1102202` and `Q188800`
+(*personal union*) are in the table under neither. A dynastic union of crowns
+is a polity before it is an event, and which of the two it is here is an
+editorial decision of the kind `data/imports/wikidata-seeds.json` exists to
+hold. It is worth naming because the standing note asks for it: it is the third
+umbrella Europe's sixteenth century reaches for.
+
+**`Q673175`, the French Wars of Religion, 1562-04-02 to 1598-04-30, class
+`Q104212151` *series of wars*, importable and not imported.** Nothing in this
+corpus falls inside its span and subject, so it would arrive main with nothing
+to file under it and the count would rise. It is the cleanest umbrella Europe's
+sixteenth century is missing and **a fire that brings its children with it can
+have it for nothing**.
+
+**`Q15542964` carries a vandalised English label** — "Italian War of 1542–46 Un
+penesote" — and nothing of it reached the record. `titleFor()` prefers the
+article title over the label, so the record is titled *Italian War of
+1542–1546*, and `namesFor()` wrote no names at all. Worth recording because the
+next fire that reads a label straight will not be so lucky.
+
+### Counts after this fire
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | **364** | 88 |
+| americas | 180 | 56 |
+| asia | 131 | 67 |
+| africa | 120 | 31 |
+
+| cell | active before | active after | main before | main after |
+| --- | --- | --- | --- | --- |
+| americas, 15th | 6 | 6 | 5 | 5 |
+| americas, 16th | 9 | 9 | 3 | 3 |
+| americas, 17th | 9 | 9 | 6 | 6 |
+| americas, 18th | 9 | 9 | 1 | 1 |
+| americas, 19th | 38 | 38 | 9 | 9 |
+| americas, 20th | 89 | 89 | 31 | 31 |
+| americas, 21st | 20 | 20 | 1 | 1 |
+| europe, 15th | 3 | **4** | 2 | 2 |
+| **europe, 16th** | **8** | **12** | **1** | **1** |
+| europe, 17th | 21 | 21 | 2 | 2 |
+| europe, 18th | 21 | 21 | 2 | 2 |
+| europe, 19th | 15 | 15 | 10 | 10 |
+
+Europe's sixteenth century is half again as full as it was and still has one
+main event, which is the shape A6 asks for. **The thinnest cells this branch
+can act on are now the Americas' 16th, 17th and 18th, at nine each.**
+
+### Deviations
+
+**1233. A merge of a records branch and the index that describes it were one
+commit again, and the fire caught it after pushing.** Deviation 1232, written
+by batch 11 on this branch, says the cure is three commits and not two: resolve
+and commit the merge, rebuild, commit the index. This fire merged
+`origin/m42` and committed the rebuilt index with it, then rebuilt again over
+the merge commit and pushed the difference — five history shards and the
+manifest moved, which is the size of the error 1232 names. **1232 is a rule the
+next fire should read before it merges, not after**: the merge is the first
+thing a fire on this branch does and the index is rebuilt before anything has
+been committed, which is the order that produces the fault every time.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 11.*
+*23 September, after batch 12.*
 
 | | |
 | --- | --- |
-| corpus | **785 active** |
+| corpus | **795 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **557** |
-| components | 187 |
-| events with no edge at all | 157 |
-| Europe before 1900 | 68 active, 17 main |
+| **largest connected component** | **560** |
+| components | 191 |
+| events with no edge at all | 158 |
+| Europe before 1900 | 73 active, 17 main |
 | the `americas` lane | **180 active, 56 main** |
-| the thinnest cells left, in this partition | Europe's 16th (8), the Americas' 16th (9), 17th (9) and 18th (9) |
+| the thinnest cells left, in this partition | the Americas' 16th (9), 17th (9) and 18th (9) |
 
-**The one question for the owner still blocks a century**, unchanged from batch
-10: **does the atlas begin in 1492, or does its first sentence follow the
-corpus wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names
-`atlas.extent.min` and two tests hold it there, so nothing on this branch can
-fill Europe's fifteenth century or anything earlier. A one-line answer unblocks
-four records already known to import cleanly (`Q212976`, `Q12551`, `Q127751`,
-`Q1552718`).
+**Europe's sixteenth century is no longer the thinnest cell**: batch 12 took it
+from eight active to twelve without moving the main count, by importing the
+phases and engagements the `italian-wars` umbrella was already missing. **The
+three thinnest cells this branch can act on are now all in the Americas**, at
+nine active each, and the next fire should take one of them.
 
-**A second question is now worth one line of the owner's time**, because the
-branch has met it three times: **may a run take a period umbrella from an item
-whose class is a polity, where the article is plainly a period article?**
-Colonial Brazil (`Q2088324`) is the case — an article that opens "the period
-from 1500 … until 1815", carrying the class *colony* — and it is worth four
-main events on its own. The run will not decide this itself: the class table is
-an editorial decision and the whole point of it living in `data/`.
+**The two questions for the owner are unchanged and both still block a
+century.**
+
+1. **Does the atlas begin in 1492, or does its first sentence follow the corpus
+   wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names
+   `atlas.extent.min` and two tests hold it there, so nothing on this branch
+   can fill Europe's fifteenth century or anything earlier. A one-line answer
+   unblocks four records already known to import cleanly (`Q212976`, `Q12551`,
+   `Q127751`, `Q1552718`). Batch 12 put `italian-war-of-1494-1495` into that
+   cell, which is the fourth record now sitting against the wall.
+2. **May a run take a period umbrella from an item whose class is a polity,
+   where the article is plainly a period article?** Colonial Brazil
+   (`Q2088324`) is the case and it is worth four main events on its own. Batch
+   12 met a second case of the same shape in `Q377350`, the **Iberian Union**,
+   whose classes are an actor's and an event's at once and whose dates
+   (`P571` 1580-09-12, `P576` 1640-12-01) the import already reads. The class
+   table is an editorial decision and the whole point of it living in `data/`,
+   so the run will not decide either.
 
 **What the next fire should weigh, in order:**
 
-- **Europe's sixteenth century is now the thinnest cell this branch can act
-  on**, at eight active and one main. Unlike the Americas' seventeenth it is
-  not a cell without umbrellas: seven of the eight are filed, under
-  `italian-wars`, `italian-war-of-1551-1559` and
-  `spanish-colonization-of-the-americas`, none of which is itself in the cell.
-  The one main is `hereditary-captaincies-of-brazil-1534`, which is a Brazilian
-  record sitting in the European lane and worth a second look on its own
-  account. The cell is simply thin. The Dutch Revolt, the Wars of Religion and the
-  Iberian Union of 1580 are all in it and all are things this atlas's own
-  records reach for: `dutch-portuguese-war`'s article says the war "can be
-  thought of as an extension of the Eighty Years' War being fought in Europe at
-  the time between Spain and the Netherlands, as Portugal was in a dynastic
-  union with Spain", at revision 1374150566, and **this atlas holds neither the
-  Eighty Years' War nor the Iberian Union**. Either one would connect the
-  Americas' seventeenth century to Europe's, which is a component the branch
-  has not built yet.
-- **The Seven Years' War is still the hole the American Revolutionary War
-  points at**, unchanged from batch 10. `Q33143` is importable — `P31` `Q198`
-  (war), `P580` 1756-05-17, `P582` 1763-02-15 — and Europe's eighteenth century
-  still has no umbrella it would fit inside, so it arrives main. **A fire that
-  wants it should bring an eighteenth-century European umbrella with it**, or
-  file an existing main event to pay for it. This batch's arithmetic is the
-  pattern: two umbrellas in, two filings out, the count unmoved.
-- **Palmares is named, cited, dated and importable, and this fire left it
-  out.** `Q1542741`, 1605–1694, *Palmares (quilombo)*, revision 1373599736 —
-  "a quilombo, a community of escaped slaves and others, in colonial Brazil
-  that developed from 1605 until its suppression in 1694". It is the Americas'
-  seventeenth century and it is not a war or an economic record, which is
-  everything else in that cell. **Nothing in the corpus spans 1605–1694**, so
-  it would arrive main and raise the count: it needs Colonial Brazil, or a
-  filing to pay for it.
-- **The Groot Desseyn is the umbrella both Bahia engagements and Dutch Brazil
-  would take a second parent from**, under A8, if it has an item with a class
-  and a span. This fire did not look it up. `Dutch Brazil` at revision
-  1375595876 names it twice.
-- **The rate limit is on searching and on reading quickly, not on reading**, as
-  batch 10 found. `Special:EntityData` answered every one of eleven requests.
-  The REST summary endpoint answered seven of eleven first time and returned
-  "You are making too many requests to the API" for the other four; an
-  `until`-loop at twelve seconds cleared every one of them, and **a title that
-  does not exist comes back as `type: "Internal error"` rather than a 404**, so
-  a retry loop must not treat that as rate limiting (*Battles of Guararapes*
-  and *Capture of Olinda* are both spelt something else). `index.php?action=raw`
-  answered every time and is still the cheapest way to read a whole article:
-  this fire read *Dutch Brazil* and *Dutch–Portuguese War* that way and both
-  edges out of the Bahia pair came from them.
+- **The Americas' sixteenth, seventeenth and eighteenth centuries are tied at
+  nine active each**, and the eighteenth is the one with almost no umbrella:
+  one main of nine. It is the cell the Seven Years' War, the Bourbon reforms
+  and the Túpac Amaru rebellion all belong to.
+- **The French Wars of Religion are free to whoever brings their children.**
+  `Q673175`, 1562-04-02 to 1598-04-30, class `Q104212151` *series of wars*,
+  importable today. It arrives main and nothing in the corpus falls inside it,
+  so it costs one main event — unless the same batch imports two or three of
+  its engagements, which arrive filed and cost nothing. That is batch 12's
+  pattern run forwards instead of backwards.
+- **The Eighty Years' War is still the edge between the Americas' seventeenth
+  century and Europe's**, and batch 12 established it is importable:
+  `Q164432`, 1568-05-23 to 1648-01-30, classes `Q6107280` *revolt* and
+  `Q8465` *civil war*, both in the table. `dutch-portuguese-war`'s own article
+  calls that war the thing it is an extension of. It arrives main and needs a
+  filing to pay for it; **`dutch-portuguese-war` itself runs 1601–1661 and
+  would be dated outside it**, which is rule 24's warning and not an error, so
+  the fire that takes this should decide deliberately whether to accept the
+  warning or find another payment.
+- **The Italian Wars tree is twelve active events in components of one and
+  two, joined to nothing.** `parent` is not adjacency, so filing will never
+  join it; only an edge will. Batch 12 read the *Italian Wars* article through
+  for one and refused what it found. **The Peace of Cateau-Cambrésis of 1559 is
+  the named door** — the article reports historians reading it as the beginning
+  of Spanish hegemony in Italy — and it is not in the corpus.
+- **Deviation 1230 is still open and cost this fire two records' places again.**
+  The import reaches for `P276` before `P17` and fetches only the `P17`
+  countries, so a battle whose location is a town comes out placeless and is
+  repaired by hand afterwards. Three batches have now paid for it. The fix is
+  in `runImportMode` and would take one fire that imports nothing.
+- **Deviation 1232 is a rule about the order of a fire's first two commits and
+  this fire broke it too** (deviation 1233). Resolve and commit the merge,
+  *then* rebuild, *then* commit the index. Read it before merging.

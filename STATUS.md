@@ -20907,6 +20907,63 @@ the branch head is byte-identical to a fresh build). `docs/m53-polities.md` §4.
 **372 of 781** over the merged corpus, and `docs/m42b-pool.md` → "Batch 11"
 carries all of it with the counts per lane and per century.
 
+**M42b batch 12 — the Italian Wars' missing phases, and Europe's sixteenth
+century, 23 September.** The twelfth fire on the branch took the thinnest cell
+this partition could act on — **Europe's sixteenth century, eight active events
+and one main** — and filled it without touching the main count. The cell
+already had its umbrella, `italian-wars` (1494–1559) with five phases under it,
+so the fire imported the phases and engagements that umbrella was missing
+rather than a new umbrella: **`italian-war-of-1494-1495`** (`Q1355145`),
+**`battle-of-marignano`** (`Q330`, 1515), **`battle-of-pavia`** (`Q63468`,
+1525), **`war-of-the-league-of-cognac`** (`Q1429256`, 1526–1530) and
+**`italian-war-of-1542-1546`** (`Q15542964`). **Five items, five created, none
+refused, and every one of them filed on arrival** — three under `italian-wars`
+and two under the phase its own lead names — so the main count stayed at
+**242** and nothing had to be paid for it. Active 790 → **795**, filed 548 →
+553, active edges 771 → **774**, events with no edge 159 → **158**. Europe's
+sixteenth century is 8 → **12 active, still 1 main**; the europe lane is 359 →
+364 active at 88 main, and the americas lane is unmoved at 180 and 56. Every
+record carries the cached English lead as its summary at a named revision with
+the `summary-from-lead` flag and the `wikipedia-en` citation; **no record of
+this batch shows the import's placeholder**, and no class was added.
+
+**Three edges, all `probable`, each with two locators**: `battle-of-pavia`
+→ `war-of-the-league-of-cognac` (`reacted-to`, the Cognac article's own
+"Shocked by the defeat of the Kingdom of France … began to organize an
+alliance"), `italian-war-of-1494-1495` → `italian-wars-of-1499-1504`
+(`precondition-of`) and `italian-war-of-1542-1546` →
+`italian-war-of-1551-1559` (`precondition-of`). **The largest connected
+component did not move, and A5 asks a batch that grows the corpus and not the
+component to say why**: the whole Italian Wars tree — twelve active events
+after this batch — is components of one and two, because `parent` is a display
+fact and never adjacency, and joining it to the 560 needs an edge no article
+this fire read states. The *Italian Wars* article reaches the Americas exactly
+once, in a paragraph about where the veterans went, and **an edge written on
+that would be a record kept by writing something**, which M42's brief refuses;
+the fire refused it and named the door it did find, the Peace of
+Cateau-Cambrésis of 1559, which the corpus does not hold.
+
+**Two refusals worth naming.** `Q673175`, the **French Wars of Religion**
+(1562–1598, class `Q104212151` *series of wars*), is importable today and was
+left out because nothing in the corpus falls inside its span and subject: it
+would arrive main with nothing to file under it. `Q377350`, the **Iberian
+Union**, carries the dates the import reads (`P571` 1580-09-12, `P576`
+1640-12-01) but is classed as an actor and an event at once, which is the
+Colonial Brazil question of batch 11 met a second time and an editorial
+decision the run will not take.
+
+One deviation, **1233**: deviation 1232 — a merge that brings in records must
+be committed *before* the index that describes it is rebuilt — is a rule about
+the order of a fire's first two commits, and this fire broke it merging
+`origin/m42` (its batches 39 to 42) before reading it. The fire caught it
+itself, rebuilt over the merge commit and pushed the difference: five history
+shards and the manifest. Deviation **1230** is still open and cost this batch
+the places of both its battles, repaired by hand from each town item's own
+`P625` — `pavia` (`Q6259`) and `melegnano` (`Q42932`), both written as `city`.
+`docs/m53-polities.md` §4.1 is re-taken at **373 of 790** over the merged
+corpus, 374 by the overlap rule, and `docs/m42b-pool.md` → "Batch 12" carries
+all of it with the counts per lane and per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
