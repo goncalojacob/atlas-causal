@@ -20850,12 +20850,17 @@ date at all. The **Atlantic slave trade** (`Q10701282`) is classed
 `Q17524420` *aspect of history*, a metaclass over every "History of …" article
 there is, and no batch should buy one umbrella at that price.
 
-Two deviations: **1230** (the import reads `P276` before `P17` but only ever
+Three deviations: **1230** (the import reads `P276` before `P17` but only ever
 fetches the `P17` countries, so a `P276` location it did not fetch falls
-through to the country — it filed a Brazilian engagement in the European lane)
-and **1231** (a refusal is written into `wikidata-state.json` → `done`, so
+through to the country — it filed a Brazilian engagement in the European lane),
+**1231** (a refusal is written into `wikidata-state.json` → `done`, so
 fixing the cause of one does not retry it; `Q377269` had to be taken out by
-hand after its lane was named). `docs/m53-polities.md` §4.1 is re-taken at
+hand after its lane was named) and **1232** (a merge that brings in records
+has to be committed *before* the index is rebuilt, because the history shards
+are built out of the commits that touched each file — this fire's merge commit
+went red on seven rule 16 errors for exactly that, with all 279 browser tests
+passing in the same run; the batch's own commits were in the right order and
+the branch head is byte-identical to a fresh build). `docs/m53-polities.md` §4.1 is re-taken at
 **372 of 781** over the merged corpus, and `docs/m42b-pool.md` → "Batch 11"
 carries all of it with the counts per lane and per century.
 

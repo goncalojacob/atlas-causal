@@ -2722,6 +2722,26 @@ re-run created the record. **A refusal is not a completion** — the tool should
 either keep refusals out of `done` or carry a `refused` list the next run
 re-offers, so that editing the seeds file is enough to answer one.
 
+**1232. A merge that brings in records must be committed before the index is
+rebuilt, and this branch's merge commits have been doing it the other way
+round.** `tools/lib/history.mjs` builds each record's versions **out of the
+commits that touched its file**, so a history shard is a function of the
+repository's history and not only of `data/`. The fire's merge of
+`origin/m42` was resolved, the index rebuilt over the merged tree, and both
+committed together — at which point the shards had been built from a history
+that did not yet contain the merge commit, and the pushed tree said one thing
+while `node tools/build-index.mjs` on the runner said another. Run 1517 of
+`validate.yml` failed on seven rule 16 errors, six of them history shards
+(`history-event-1900-1999`, `history-edge-1900-1999`, `history-place-place`,
+stale and missing), with every one of the 279 browser tests passing in the
+same run. **The batch's own two commits were in the right order** — records
+first, then rebuild, then the index — which is deviation 798 saying this
+already, and the head of the branch is byte-identical to a fresh build. The
+rule is simply wider than 798 states it: **any commit that changes a record,
+a merge commit included, has to exist before the index that describes it is
+built.** The cure for a merge is three commits and not two: resolve and
+commit the merge, rebuild, commit the index.
+
 ## Where the run stands, for the fire that picks it up
 
 *23 September, after batch 11.*
