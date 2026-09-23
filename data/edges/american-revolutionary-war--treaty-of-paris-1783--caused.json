@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "american-revolutionary-war--treaty-of-paris-1783--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1783)\", revision 1376240014, lead"
+    }
+  ],
+  "from": "american-revolutionary-war",
+  "to": "treaty-of-paris-1783",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The treaty's own article opens by naming what it was: **\"The Treaty of Paris, signed by representatives of King George III of Great Britain and representatives of the United States on September 3, 1783, officially ended the War of American Independence and recognized the Thirteen Colonies … to be free, sovereign, and independent unified states.\"** The war's own article says the same from the other end — the victory at Yorktown **\"led King George III and the Kingdom of Great Britain to negotiate an end to the war\"** (revision 1376266742). A settlement that a war is negotiated into is caused by it, so the type is `caused`; `probable`, for the reason every edge drawn from this source is. The treaty is also *part of* the war here, which is a display fact and not an argument — `parent` does not enter the adjacency, so this edge is what puts the treaty in the graph at all.",
+  "dispute": null
+}

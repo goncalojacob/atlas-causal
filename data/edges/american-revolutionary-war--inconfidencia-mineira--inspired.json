@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "american-revolutionary-war--inconfidencia-mineira--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Inconfidência Mineira\", revision 1366234128, lead"
+    }
+  ],
+  "from": "american-revolutionary-war",
+  "to": "inconfidencia-mineira",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The Inconfidência's own article, which this atlas already cites for the record, opens by naming its cause in so many words: **\"It was the result of a confluence of external and internal causes. The external inspiration was the independence of thirteen British colonies in North America following the American Revolutionary War\"**. The article says inspiration and the atlas has a type for that, so `inspired` is the type and not `caused`: the sentence puts the internal causes beside the external one and does not rank them. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

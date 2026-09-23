@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "american-revolutionary-war--french-revolution--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolution\", revision 1375966584, \"Causes\""
+    }
+  ],
+  "from": "american-revolutionary-war",
+  "to": "french-revolution",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The French Revolution's own article, at the revision this atlas cites for that record, says: **\"At the same time, the American Revolution and the European revolts of the 1780s inspired public debate on issues such as patriotism, liberty, equality, and democracy.\"** The sentence names the American Revolution, the broader movement; this atlas holds its armed phase, which the war's own article calls **\"the final eight years of the broader American Revolution\"** (revision 1376266742). That identification is the one step this edge takes beyond the article, and it is why the type is `inspired` and the confidence `probable`: the sentence names an inspiration among others and asserts no more.",
+  "dispute": null
+}

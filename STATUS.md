@@ -20756,6 +20756,57 @@ government* and it carries no date of any kind, and it is what both risings of
 `docs/m42b-pool.md` → "Batch 9" carries all of it with the counts per lane and
 per century.
 
+**M42b batch 10 — North America enters the atlas, and the wall in front of the
+fifteenth century, 23 September.** The tenth fire on the branch took the first
+of the two things the ninth fire's note left, and found that the second cannot
+be taken at all without a decision that is the owner's.
+
+**A10 puts South and Central America ahead of North America only while those
+trail**, and they do not: measured by the latitude of each `americas` event's
+place, the lane holds **138 active events south of 30°N against 17 north of
+it**, and the seventeen are mostly treaties signed on American soil rather than
+North American history. The clause is spent, and the **American Revolutionary
+War** — the record batch 9 called the one that would pay for itself three times
+over — is the first event of North America's own history this atlas holds, with
+the **Declaration of Independence** and the **Treaty of Paris** beside it.
+Three events, two new places (`eastern-united-states`, `independence-hall`,
+each written from the item's own `P625`), **none placeless**, every one
+carrying its cached English lead at a named revision. **All three were filed on
+arrival, so the main count is 242 before the batch and 242 after it.** Four
+edges, all `probable`: two into records the atlas already held — the
+Inconfidência Mineira, which was a component of one until now, and the French
+Revolution — and two putting the batch's own records into the graph. **The
+largest connected component goes from 546 to 550** and the number of components
+falls from 187 to 186.
+
+**Europe's fifteenth century was imported and backed out, and the reason is on
+the first screen.** The Hundred Years' War, the Wars of the Roses, the Granada
+War and the late Middle Ages as their umbrella all imported cleanly; every one
+of them starts before 1492, and `src/intro.js` → `WHAT_IT_IS` — the sentence on
+the masthead, in the intro card and at the head of `about.html` — reads *"The
+history of the world **since 1492** as a graph"*, where **the year is
+`atlas.extent.min` and not a period anybody decided on**. `tests/m82.test.mjs`
+asserts it against the live corpus and `tests/m85.test.mjs` pins the literal in
+`about.html`. Importing any fifteenth-century European event makes that
+sentence false and can only be answered by editing two pages, a module and a
+test, which is the display change this run's brief forbids. **The four records
+were removed and their items taken back out of the seeds and the import cursor,
+so a later fire imports them rather than finding them marked done and absent.**
+
+**The question for the owner is one line: does the atlas begin in 1492, or does
+that sentence follow the corpus wherever it goes?** Either answer unblocks the
+century; neither is a run's to pick. Until it is answered, this branch's Europe
+is the 16th to 19th centuries, which is what M42b's brief calls it in its own
+words. Deviations **1226** (the import prefers a place record the atlas already
+holds over the place the item names first — it put the American Revolutionary
+War in the Caribbean Sea), **1227** (A9 orders the properties, not the values
+inside one — it put the Hundred Years' War in Spain), **1228** (the import
+still creates no place for an event, so both of this batch's were written by
+hand) and **1229** (the first screen is a floor on the corpus).
+`docs/m53-polities.md` §4.1 is re-taken at **372 of 776**, and
+`docs/m42b-pool.md` → "Batch 10" carries all of it with the counts per lane and
+per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

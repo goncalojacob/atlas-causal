@@ -2283,69 +2283,313 @@ reason since fixed is never looked at again. Removing the one line is the
 smallest correction; a tool that told the two apart would be better and is
 nobody's yet.
 
+## Batch 10 — North America enters the atlas, and the wall in front of the fifteenth century
+
+*23 September. The tenth fire on the branch.* It took the first thing batch 9's
+note left, and it found that the second cannot be taken at all without a
+decision that is the owner's.
+
+### A10's North America clause, read again and spent
+
+M42b's brief puts **South and Central America before North America until they
+hold as many active events as North America**. Measured on this branch's head
+before the batch, by the latitude of each `americas` event's place: **138
+active events south of 30°N against 17 north of it**, with nineteen placeless.
+The seventeen are almost all treaties signed on American soil — Bretton Woods,
+San Francisco, the UN Charter — and not North American history. **South and
+Central America hold eight times what North America holds, so the clause is
+spent and North America is open**, which is what batch 9's note asked this fire
+to say if it took the American Revolutionary War. It took it.
+
+### What was imported
+
+| record | item | span | lane | century |
+| --- | --- | --- | --- | --- |
+| `american-revolutionary-war` | `Q40949` | 1775–1783 | americas | 18th |
+| `united-states-declaration-of-independence` | `Q127912` | 1776 | americas | 18th |
+| `treaty-of-paris-1783` | `Q217450` | 1783 | europe | 18th |
+
+**Three items put to `tools/import/wikidata.mjs --import`, three created, none
+refused.** Every one carries the cached English lead as its summary, at the
+revision the cache names, with the `wikipedia-en` citation and the
+`summary-from-lead` flag; **no record of this batch shows the import's
+placeholder**. The American Revolutionary War is the first event of North
+America's own history this atlas holds.
+
+### Europe's fifteenth century cannot be filled, and the reason is on the first screen
+
+Batch 9's note called Europe's fifteenth century the thinnest cell in this
+partition and told this fire to take it. **This fire imported the Hundred
+Years' War, the Wars of the Roses, the Granada War and the late Middle Ages as
+their umbrella, and then backed all four out.** The reason is
+`src/intro.js` → `WHAT_IT_IS`:
+
+> The history of the world **since 1492** as a graph: every event linked to
+> what caused it and what it led to, with sources.
+
+That sentence is on the masthead of `index.html`, in the intro card and at the
+head of `about.html`, and **the year in it is not a period anybody decided on —
+it is `atlas.extent.min`, the corpus's own earliest year**, which
+`tests/m82.test.mjs` asserts against the live data; `tests/m85.test.mjs` pins
+the same literal in `about.html`. The oldest active event in this atlas today
+is `the-first-columbian-voyage-1492`, so the sentence is true.
+
+**Every European event of the fifteenth century starts before 1492**, by
+arithmetic: the Wars of the Roses in 1455, the Granada War in 1482, the Hundred
+Years' War in 1337. Importing any one of them moves `atlas.extent.min` and
+makes the sentence false, which turns two tests red and can only be answered by
+editing two HTML pages, a source module and a test. **This run's brief says no
+display change**, so the fire stopped rather than take that decision quietly.
+
+**It is not a fifteenth-century problem. It is a floor.** Europe before 1900 is
+this branch's partition with no lower bound written into it, and the corpus
+cannot go below 1492 while that sentence says 1492. The question for the owner
+is one line: *does the atlas begin in 1492, or does the sentence follow the
+corpus wherever it goes?* Either answer unblocks the century; neither is a
+run's to pick. Until it is answered **this branch's Europe is the 16th to 19th
+centuries**, which is what M42b's brief describes it as in its own words.
+
+The four records were written, validated, and removed; their items were taken
+back out of `data/imports/wikidata-seeds.json` and out of the import cursor in
+`data/imports/wikidata-state.json`, so **a later fire will import them again
+rather than find them marked done and absent**. Nothing of them is left under
+`data/`.
+
+### Places
+
+`treaty-of-paris-1783` found `paris` in the atlas already. The other two are
+new place records, written the way the 22 September pass wrote the country
+places — `origin.tool: assistant`, the `a9-place` flag, the point read off the
+item's own `P625` and nothing else:
+
+| place | item | precision | for |
+| --- | --- | --- | --- |
+| `eastern-united-states` | `Q1189650` | region | the American Revolutionary War |
+| `independence-hall` | `Q390028` | point | the Declaration of Independence |
+
+**No event of this batch is placeless**, and **the import placed one of the
+three wrongly**: it gave the American Revolutionary War `caribbean-sea`, the
+only one of `Q40949`'s five `P276` locations this atlas already held, though
+*Eastern United States* is the first the item names and carries a `P625`
+(deviation 1226). It was corrected from the article the record already cites —
+"The conflict was fought in North America, the Caribbean, and the Atlantic
+Ocean" — and the record says so in `review.note`.
+
+### Filing (A3, A6, A8), and the main count
+
+**The main count is 242 before the batch and 242 after it.** All three were
+filed on arrival and **not one of them is a new main event**:
+
+| record | filed under | why |
+| --- | --- | --- |
+| `american-revolutionary-war` | `atlantic-revolutions` | 1775–1783 inside 1765–1838, and the first revolution that umbrella is of |
+| `united-states-declaration-of-independence` | `american-revolutionary-war` | adopted in 1776, in the war's second year, by the Congress the war was fought under |
+| `treaty-of-paris-1783` | `american-revolutionary-war` | its own lead: it "officially ended the War of American Independence" |
+
+### The edges (A5, M72)
+
+Four, every one `probable` — rule 22 refuses `consensus` on a Wikipedia
+citation — and each quoting the article it cites at a named revision. **Two run
+into records the atlas already held**, which is what A5 asks of a batch, and
+two put this batch's own new records into the graph:
+
+| the edge | type | what the source says |
+| --- | --- | --- |
+| `american-revolutionary-war` → `inconfidencia-mineira` | `inspired` | the Inconfidência's own lead: "The external inspiration was the independence of thirteen British colonies in North America following the American Revolutionary War" |
+| `american-revolutionary-war` → `french-revolution` | `inspired` | the French Revolution's article: "the American Revolution and the European revolts of the 1780s inspired public debate on issues such as patriotism, liberty, equality, and democracy" |
+| `american-revolutionary-war` → `treaty-of-paris-1783` | `caused` | the treaty "officially ended the War of American Independence"; the war's article: Yorktown "led King George III and the Kingdom of Great Britain to negotiate an end to the war" |
+| `united-states-declaration-of-independence` → `treaty-of-paris-1783` | `precondition-of` | the Declaration "explains why the Thirteen Colonies regarded themselves as independent sovereign states"; the treaty "recognized the Thirteen Colonies … to be free, sovereign, and independent unified states" |
+
+**The French Revolution edge takes one step beyond its sentence and says so in
+the record.** The article names *the American Revolution*, the broader
+movement; this atlas holds its armed phase, which the war's own article calls
+"the final eight years of the broader American Revolution". That identification
+is why the edge is `probable` and not more.
+
+**The last edge takes the weakest type of the five.** Neither article says the
+treaty followed from the Declaration, so `precondition-of` is what the two
+sentences support and the explanation says so rather than reaching for `caused`.
+
+### The component (A5)
+
+**The largest connected component goes from 546 to 550, and the number of
+components falls from 187 to 186.** The American Revolutionary War joins
+through the Inconfidência Mineira and the French Revolution, both already in
+it; the Inconfidência was a component of one until this batch, which is the
+hole batch 9's note named; and the treaty and the Declaration join through the
+war. **All three new records are in the largest component**, and events with no
+edge at all fall from 158 to 157.
+
+### Actors
+
+**No actor line was written.** `Q40949` names nine `P710` participants and this
+atlas holds two of them, `united-states-of-america` and `spain` — and **both of
+those records begin in 1886**, because they are CShapes polities. Naming either
+on a war of 1775 would be a claim the records themselves refuse, so the three
+events of this batch carry `actors: []`, which M67's A1 says is not a defect.
+`Q127912` names one participant and `Q217450` five, and the atlas holds only
+that same 1886 United States. `docs/m53-polities.md` §4.1 is re-taken at
+**372 of 776**.
+
+### Counts after this fire
+
+| | before | after |
+| --- | --- | --- |
+| active events | 773 | **776** |
+| main events | 242 | **242** |
+| active edges | 756 | **760** |
+| largest component | 546 | **550** |
+| components | 187 | 186 |
+| events with no edge | 158 | 157 |
+
+**Per lane** (active / main): europe 359/88, americas 176/56, asia 130/67,
+africa 111/31, oceania 0/0.
+
+**Per century, in this partition** (active / main):
+
+| | 15th | 16th | 17th | 18th | 19th |
+| --- | --- | --- | --- | --- | --- |
+| europe | 3/2 | 8/1 | 21/2 | 21/2 | 15/10 |
+| americas | 5/5 | 9/3 | 6/6 | 9/1 | 38/9 |
+
+Europe before 1900 is **68 active, 17 main**; the `americas` lane is **176
+active, 56 main**.
+
+### What was refused
+
+**Nothing was refused by the import.** Four items this fire *wanted* and could
+not use:
+
+- **`Q212976`, `Q12551`, `Q127751`, `Q1552718`** — the late Middle Ages, the
+  Hundred Years' War, the Wars of the Roses and the Granada War. All four
+  imported cleanly and all four were backed out, for the reason in "Europe's
+  fifteenth century cannot be filled" above. This is not a data problem.
+- **`Q1061030`, the Alhambra Decree**, expelling the Jews from Spain in March
+  1492. It carries a class the seeds table knows (`Q2571972`, decree) and **no
+  date of any kind** — no `P580`, no `P585`, no `P577` — so there is nowhere on
+  the timeline to put it.
+- **`Q1728627`, the Capitulations of Santa Fe**, the contract for Columbus's
+  voyage signed on 17 April 1492 outside Granada. It carries **no `P31` at
+  all** and no date, so the tool has neither a kind nor a year.
+
+The last two are deviation 1220's shape again — a record the atlas can only
+take from an article and not from an item — and neither has deviation 1220's
+answer. Both are 1492 or later and so are not blocked by the floor.
+
+### Deviations
+
+**1226. The import prefers a place record the atlas already holds over the
+place the item names first.** `Q40949` lists five `P276` locations — Eastern
+United States, the North Atlantic, the Caribbean Sea, the Mediterranean, Europe
+— and four of them carry a `P625`. The import took the **Caribbean Sea**,
+because `caribbean-sea` was the only one of the five this atlas already had a
+place record for: `read.location.map((qid) => byItem.get('place:' + qid)).find(Boolean)`
+walks the item's list but can only answer with a record that exists, and A9's
+rule is about the item's order and not about what happens to be here. The
+record was re-pointed at a new `eastern-united-states`, the first location the
+item names. **The general fix is a change to what the import does when the
+first located thing has no record yet, which is the same decision as deviation
+1224's and belongs to a fire that will say so on both branches.**
+
+**1227. A9 orders the properties, not the values inside one of them.** Backed
+out with the fifteenth century, and worth keeping because it will come again:
+`Q12551` lists Spain, France and England as `P276`, in that order, and Spain
+carries a `P625`, so the import placed the Hundred Years' War in **Spain**.
+Nothing in A9 is wrong — it says `P625`, then `P276`, then `P131`, then `P17`,
+and says nothing about a `P276` with three values, because Wikidata's order
+inside a property is not a ranking. **Where a location property lists several,
+the run should take the one the record's own cited article names**; that is a
+reading of a source and not a judgement.
+
+**1228. The import still never creates a place for an event, so both of this
+batch's places were written by hand.** The tool's event branch says so in a
+comment — *"creating one for it here would be creating a record nobody asked
+for"* — and A9 is the owner asking for it. The branch's workaround has been to
+add the location item to the seeds with a place class so the place pass writes
+it first, and that does not work for a country: `Q142`'s first class is
+`Q3624078`, *sovereign state*, which the seeds table maps to an **actor**, so
+France would have come out a polity and not a place. The places of this batch
+were therefore written in the shape `spain-q29` and `peru-q419` already have.
+**This is the same hole on both branches** and the fix is in `runImportMode`,
+not in a batch.
+
+**1229. The atlas's own first screen is a floor on the corpus, and no run can
+raise it.** `WHAT_IT_IS` names `atlas.extent.min` and two tests hold it there.
+That is a good design — a sentence that cannot come apart from its data — and
+it means **the earliest year in `data/` is a display decision**, which an
+import run is told not to take. Nothing is broken and nothing was changed; the
+question is written up in "Europe's fifteenth century cannot be filled" above
+and in "Where the run stands" below, for the owner.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 9.*
+*23 September, after batch 10.*
 
 | | |
 | --- | --- |
-| corpus | **768 active** |
+| corpus | **776 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **542** |
+| **largest connected component** | **550** |
 | components | 186 |
 | events with no edge at all | 157 |
-| Europe before 1900 | 67 active, 17 main |
-| the `americas` lane | **174 active, 56 main** |
-| the thinnest cells left | Europe's 15th (3), the Americas' 15th (5) and 17th (6) |
+| Europe before 1900 | 68 active, 17 main |
+| the `americas` lane | **176 active, 56 main** |
+| the `americas` lane, north of 30°N | **19 active** against 138 south of it |
+| the thinnest cells left, in this partition | the Americas' 17th (6), Europe's 16th (8), the Americas' 16th (9) and 18th (9) |
+
+**One question for the owner, and it blocks a century:**
+
+- **Does the atlas begin in 1492, or does its first sentence follow the corpus
+  wherever the corpus goes?** See "Europe's fifteenth century cannot be filled"
+  above. Nothing on this branch can fill Europe's fifteenth century — or any
+  earlier one — while `WHAT_IT_IS` names `atlas.extent.min` and that is 1492.
+  Four records for it were imported and backed out by this fire. **A one-line
+  answer unblocks four records that are already known to import cleanly**
+  (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and with them the Reconquista,
+  the Hussite Wars and everything else before Columbus.
 
 **What the next fire should weigh, in order:**
 
-- **The American Revolutionary War is the one record that would pay for
-  itself three times over.** `Q40949`, resolved by this fire and not imported.
-  It is what the Inconfidência Mineira's own lead names as its external
-  inspiration — the Inconfidência is a component of one for want of it — it is
-  one of the Atlantic Revolutions by that umbrella's own article, and it is the
-  first record of the North American half of the `americas` lane, which is
-  nearly empty. A10 puts South and Central America ahead of North America
-  *while those trail*, and after this fire the Americas' 18th century holds
-  seven: the next fire should read that clause again and, if it takes the war,
-  say in the note that it did.
-- **Europe's fifteenth century is now the thinnest cell in this partition**, at
-  three active events — the Italian Wars, one of their campaigns and the Treaty
-  of Tordesillas — and it has no umbrella. The Hundred Years' War ends in 1453,
-  inside it, and the fall of Constantinople is 1453 too; neither is here, and
-  the second is Asia's lane by its place and M42's by the partition.
-- **The Bourbon Reforms are the hole both eighteenth-century risings point
-  at.** Both articles name them as the grievance in their first paragraph and
-  `Q2734662` cannot be imported: its only class is *form of government* and it
-  carries no date. It is the clearest case yet for a path that creates a record
-  from an article at a named revision rather than from an item, which deviation
-  1220 set out and this fire did not need.
-- **The Treaty of Madrid (1750) has no resolvable article title.**
-  `Treaty_of_Madrid_(1750)` answers with the disambiguation page `Q256055`
-  through the REST summary endpoint. It is what the Guaraní War was a result
-  of, by that war's own lead. A fire with a working `wbsearchentities` — this
-  one found `api.php` answering 429 to every search — should settle it in one
-  request.
-- **`aztec-empire` and `inca-empire` still carry no Wikidata item.** Unchanged
-  since batch 8, and the reason is now written up as deviation 1224: this fire
-  hit the same failure from the other side, where the atlas's record *and* the
-  item both exist and the dates disagree, and closed it by hand for
-  `viceroyalty-of-the-rio-de-la-plata` and `kingdom-of-portugal`. The general
-  fix is a change to what the import calls a match and belongs to a fire that
-  will say so on both branches.
-- **`battle-of-guayabos` still carries the import's placeholder summary**: no
-  English article, and A12's C1 is English-only by construction. Unchanged
-  since batch 7. Every other record this branch has written now carries its
-  cached lead.
-- **`great-depression` and `la-violencia` are still A12's, not this
-  branch's.** Unchanged since batch 3.
-- **The rate limit moved against searching and not against reading.**
-  `Special:EntityData` answered every time; `index.php?action=raw&oldid=<rev>`
+- **The Americas' seventeenth century is the thinnest cell this branch can act
+  on**, at six active events and six main — every one of them a Caribbean or
+  Brazilian economic record (`dutch-brazil-1630-1654`,
+  `english-settlement-of-barbados-1627`, `the-caribbean-sugar-revolution` and
+  three like them), and **not one of them is filed under anything**. A cell
+  where active and main are the same number is a cell with no umbrella. The
+  Dutch–Portuguese War (1598–1663) is the one `dutch-brazil-1630-1654` would
+  fit inside; the other five span past 1663 or are English, so an umbrella that
+  takes more of them has to be found rather than assumed. Check its lane before
+  importing: most of that war was fought in Asia and Africa, which are M42's.
+- **The Americas' fifteenth century is five active and five main**, and it is
+  the same fault in a cell this branch *can* touch, because everything in it is
+  1492 or later: `spanish-colonization-of-the-americas` begins in 1493 and so
+  cannot take `the-first-columbian-voyage-1492` or
+  `indigenous-depopulation-of-the-greater-antilles`, both of which begin in
+  1492. An umbrella for the Columbian voyages themselves — the article the
+  first voyage already cites is *Voyages of Christopher Columbus* — would take
+  three of the five and cost one.
+- **The Seven Years' War is the hole the American Revolutionary War points at**,
+  the way the Bourbon Reforms were the hole the two risings of 1780–1781
+  pointed at. `Q33143` is importable — `P31` `Q198` (war), `P580` 1756-05-17,
+  `P582` 1763-02-15 — and this fire left it out for one reason: Europe's
+  eighteenth century has no umbrella it would fit inside, so it would arrive
+  main and raise the count the brief forbids raising. **A fire that wants it
+  should bring an eighteenth-century European umbrella with it**, or file an
+  existing main event to pay for it.
+- **The Alhambra Decree and the Capitulations of Santa Fe are both refusable
+  and both wanted**, and unlike the fifteenth century they are not blocked by
+  the floor — both are 1492. See "What was refused". With the Bourbon Reforms
+  and the Treaty of Madrid (1750), this branch has now met four records it can
+  name, can cite and cannot import. That is deviation 1220's case getting
+  stronger, not weaker.
+- **The rate limit is on searching and on reading quickly, not on reading.**
+  `Special:EntityData` answered every time. The REST summary endpoint answered
+  every time **until eight requests in a row at one second apart**, when it
+  returned "You are making too many requests to the API"; an eight-second wait
+  cleared it and nothing after that was refused. `index.php?action=raw&oldid=`
   answered every time and is still the cheapest way to check a sentence a
-  record will cite — this fire read two full articles that way, for four of its
-  six edges. The REST summary endpoint answered with retries of 3, 6 and 9
-  seconds. **`api.php?action=wbsearchentities` answered 429 to everything**, so
-  every item of this batch was found by taking the article title to the REST
-  summary endpoint and reading `wikibase_item` off it. The next fire should
-  start there rather than spending a round on the search API.
+  record will cite — this fire read four full articles that way.
+  `api.php?action=wbsearchentities` was **not tried**: batch 9 found it
+  answering 429 to everything, and taking the article title to the REST summary
+  endpoint and reading `wikibase_item` off it worked for ten of ten items here,
+  in one request each.
