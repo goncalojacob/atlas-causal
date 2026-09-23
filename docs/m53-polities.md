@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 374 of 791 |
+| **after M42** | 36 of 36 | 375 of 798 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -282,7 +282,7 @@ those lines is `croatian-war-of-independence` naming `croatia`. The war runs
 **1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
 war *overlaps* the polity without the polity being alive in the year the war
 started. Counted by the rule this table states — alive at the start — the
-figure is **374**; counted by overlap it is **375**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name, and both rose by one again in batch 40, whose `P710` pass gave `rhodesian-bush-war` the two participants its item names and this atlas holds, by one again in batch 42, whose `P710` pass gave `operation-green-sea` the three its item names, and by three again in batch 43, whose `P710` pass gave `operation-odyssey-dawn` twelve participants, `2003-invasion-of-iraq` five and `india-pakistan-war-of-1971` two, and by one again in batch 44, whose `P710` pass gave `battle-of-inchon` the one participant its item names and this atlas holds; the **gap** is still the one entry this paragraph is about.
+figure is **375**; counted by overlap it is **376**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name, and both rose by one again in batch 40, whose `P710` pass gave `rhodesian-bush-war` the two participants its item names and this atlas holds, by one again in batch 42, whose `P710` pass gave `operation-green-sea` the three its item names, and by three again in batch 43, whose `P710` pass gave `operation-odyssey-dawn` twelve participants, `2003-invasion-of-iraq` five and `india-pakistan-war-of-1971` two, and by one again in batch 44, whose `P710` pass gave `battle-of-inchon` the one participant its item names and this atlas holds, and by one again in batch 47, whose `P710` pass gave `battle-of-port-arthur` the two its item names; the **gap** is still the one entry this paragraph is about.
 
 Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
 recognition date and not the date a state began fighting for itself, and
@@ -310,8 +310,15 @@ which not one item carries a `P710`, takes it to **784** and leaves the
 numerator at 374 again, and its batch 46 — the seven remaining events of the
 Libyan civil war's eastern front, of which again not one item carries a
 `P710` — takes it to **791** and leaves the numerator where it has been since
-M67. The numerator has not moved since
-M67 and will not move by importing: every record the Wikidata sweep creates
+M67. Its batch 47, the seven Russo-Japanese War records, is the first batch of
+this lane in four to **move the numerator**: it takes the denominator to
+**798** and the numerator to **375**, because `Q1363925`, the naval Battle of
+Port Arthur, names the Empire of Japan and the Russian Empire in its `P710`
+and this atlas holds an actor for each — read as `japan` and `russian-empire`,
+which is how `russo-japanese-war` itself already reads the same two items. The
+other six of that batch carry no `P710` the atlas holds. A batch can move this
+number and four in a row did not, which is what the sentence below is about:
+the numerator does not move **by importing** — every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
 line, and M67 A1 settled that an event with no actor and no place is not a
 defect. So the gap this row shows is the gap between a corpus that is imported
