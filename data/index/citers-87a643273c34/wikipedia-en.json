@@ -5912,6 +5912,12 @@
     },
     {
       "dissent": false,
+      "id": "1951-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1951 Portuguese presidential election\", revision 1273794926"
+    },
+    {
+      "dissent": false,
       "id": "1952-egyptian-revolution",
       "kind": "event",
       "locator": "\"Egyptian revolution of 1952\", revision 1374209538"
@@ -6044,6 +6050,12 @@
     },
     {
       "dissent": false,
+      "id": "1982-british-army-gazelle-friendly-fire-incident",
+      "kind": "event",
+      "locator": "\"1982 British Army Gazelle friendly fire incident\", revision 1370279804"
+    },
+    {
+      "dissent": false,
       "id": "1982-lebanon-war",
       "kind": "event",
       "locator": "\"1982 Lebanon War\", revision 1370279817"
@@ -6107,6 +6119,12 @@
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1995 Portuguese legislative election\", revision 1372483449"
+    },
+    {
+      "dissent": false,
+      "id": "1996-portuguese-presidential-election",
+      "kind": "event",
+      "locator": "\"1996 Portuguese presidential election\", revision 1371811573"
     },
     {
       "dissent": false,
@@ -6410,6 +6428,12 @@
     },
     {
       "dissent": false,
+      "id": "amsterdam-treaty",
+      "kind": "event",
+      "locator": "\"Treaty of Amsterdam\", revision 1352365700"
+    },
+    {
+      "dissent": false,
       "id": "andino-shopping-mall-attack",
       "kind": "event",
       "locator": "\"Centro Andino bombing\", revision 1360963226"
@@ -6446,6 +6470,12 @@
     },
     {
       "dissent": false,
+      "id": "anschluss",
+      "kind": "event",
+      "locator": "\"Anschluss\", revision 1374499407"
+    },
+    {
+      "dissent": false,
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "\"Anti-Comintern Pact\", revision 1371954457"
@@ -6455,6 +6485,12 @@
       "id": "arab-israeli-conflict",
       "kind": "event",
       "locator": "\"Arab–Israeli conflict\", revision 1375600856"
+    },
+    {
+      "dissent": false,
+      "id": "arab-revolt",
+      "kind": "event",
+      "locator": "\"Arab Revolt\", revision 1370428832"
     },
     {
       "dissent": false,
@@ -6608,9 +6644,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-caporetto",
+      "kind": "event",
+      "locator": "\"Battle of Caporetto\", revision 1370436282"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-domokos",
+      "kind": "event",
+      "locator": "\"Battle of Domokos\", revision 1370439153"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "\"Battle of Dunkirk\", revision 1374147037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-goose-green",
+      "kind": "event",
+      "locator": "\"Battle of Goose Green\", revision 1370110982"
     },
     {
       "dissent": false,
@@ -6692,6 +6746,24 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mount-harriet",
+      "kind": "event",
+      "locator": "\"Battle of Mount Harriet\", revision 1371845772"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-longdon",
+      "kind": "event",
+      "locator": "\"Battle of Mount Longdon\", revision 1375246718"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-tumbledown",
+      "kind": "event",
+      "locator": "\"Battle of Mount Tumbledown\", revision 1372389478"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
@@ -6704,15 +6776,33 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-san-carlos",
+      "kind": "event",
+      "locator": "\"Battle of San Carlos (1982)\", revision 1373226188"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "\"Battle of Santa Clara\", revision 1370588555"
     },
     {
       "dissent": false,
+      "id": "battle-of-seal-cove",
+      "kind": "event",
+      "locator": "\"Battle of Seal Cove\", revision 1373061421"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-spion-kop",
       "kind": "event",
       "locator": "\"Battle of Spion Kop\", revision 1374078287"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-st-quentin",
+      "kind": "event",
+      "locator": "\"Battle of St. Quentin (1557)\", revision 1370589845"
     },
     {
       "dissent": false,
@@ -6740,6 +6830,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-two-sisters",
+      "kind": "event",
+      "locator": "\"Battle of Two Sisters\", revision 1372847051"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-velestino",
+      "kind": "event",
+      "locator": "\"Battle of Velestino\", revision 1374721988"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "\"Battle of Verdun\", revision 1376156165"
@@ -6749,6 +6851,12 @@
       "id": "battle-of-waterberg",
       "kind": "event",
       "locator": "\"Battle of Waterberg\", revision 1374107433"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wireless-ridge",
+      "kind": "event",
+      "locator": "\"Battle of Wireless Ridge\", revision 1373880954"
     },
     {
       "dissent": false,
@@ -6767,6 +6875,18 @@
       "id": "beer-hall-putsch",
       "kind": "event",
       "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "dissent": false,
+      "id": "belovezh-accords",
+      "kind": "event",
+      "locator": "\"Belovezha Accords\", revision 1373420915"
+    },
+    {
+      "dissent": false,
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "locator": "\"Benin Expedition of 1897\", revision 1374491835"
     },
     {
       "dissent": false,
@@ -6968,6 +7088,12 @@
     },
     {
       "dissent": false,
+      "id": "cretan-revolt-of-1897-1898",
+      "kind": "event",
+      "locator": "\"Cretan Revolt (1897–1898)\", revision 1370613860"
+    },
+    {
+      "dissent": false,
       "id": "crisis-portugal",
       "kind": "event",
       "locator": "\"2010–2014 Portuguese financial crisis\", revision 1372626457"
@@ -6977,6 +7103,12 @@
       "id": "croat-bosniak-war",
       "kind": "event",
       "locator": "\"Croat–Bosniak War\", revision 1373788616"
+    },
+    {
+      "dissent": false,
+      "id": "croatian-war-of-independence",
+      "kind": "event",
+      "locator": "\"Croatian War of Independence\", revision 1370614151"
     },
     {
       "dissent": false,
@@ -7052,6 +7184,12 @@
     },
     {
       "dissent": false,
+      "id": "earth-summit",
+      "kind": "event",
+      "locator": "\"Earth Summit\", revision 1368901985"
+    },
+    {
+      "dissent": false,
       "id": "easter-rising",
       "kind": "event",
       "locator": "\"Easter Rising\", revision 1375867431"
@@ -7088,6 +7226,12 @@
     },
     {
       "dissent": false,
+      "id": "eritrean-ethiopian-war",
+      "kind": "event",
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015"
+    },
+    {
+      "dissent": false,
       "id": "eritrean-war-of-independence",
       "kind": "event",
       "locator": "\"Eritrean War of Independence\", revision 1374058781"
@@ -7103,6 +7247,12 @@
       "id": "estonian-war-of-independence",
       "kind": "event",
       "locator": "\"Estonian War of Independence\", revision 1370918612"
+    },
+    {
+      "dissent": false,
+      "id": "ethiopian-civil-war",
+      "kind": "event",
+      "locator": "\"Ethiopian Civil War\", revision 1375950588"
     },
     {
       "dissent": false,
@@ -7232,6 +7382,12 @@
     },
     {
       "dissent": false,
+      "id": "foibe-massacres",
+      "kind": "event",
+      "locator": "\"Foibe massacres\", revision 1372732009"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "\"Fourth Geneva Convention\", revision 1375615781"
@@ -7241,6 +7397,12 @@
       "id": "franco-russian-alliance",
       "kind": "event",
       "locator": "\"Franco-Russian Alliance\", revision 1375457134"
+    },
+    {
+      "dissent": false,
+      "id": "franco-thai-war",
+      "kind": "event",
+      "locator": "\"Franco-Thai War\", revision 1376212860"
     },
     {
       "dissent": false,
@@ -7286,9 +7448,21 @@
     },
     {
       "dissent": false,
+      "id": "georgian-ossetian-conflict-1918-1920",
+      "kind": "event",
+      "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671"
+    },
+    {
+      "dissent": false,
       "id": "georgian-uprising-on-texel",
       "kind": "event",
       "locator": "\"Georgian uprising on Texel\", revision 1375503259"
+    },
+    {
+      "dissent": false,
+      "id": "german-polish-declaration-of-non-aggression",
+      "kind": "event",
+      "locator": "\"German–Polish declaration of non-aggression\", revision 1363397316"
     },
     {
       "dissent": false,
@@ -7394,6 +7568,12 @@
     },
     {
       "dissent": false,
+      "id": "heligoland-zanzibar-treaty",
+      "kind": "event",
+      "locator": "\"Heligoland–Zanzibar Treaty\", revision 1372103388"
+    },
+    {
+      "dissent": false,
       "id": "hereditary-captaincies-of-brazil-1534",
       "kind": "event",
       "locator": "\"Captaincies of Brazil\", revision 1360950595"
@@ -7439,6 +7619,12 @@
       "id": "iberian-pact",
       "kind": "event",
       "locator": "\"Iberian Pact\", revision 1368371149"
+    },
+    {
+      "dissent": false,
+      "id": "ifni-war",
+      "kind": "event",
+      "locator": "\"Ifni War\", revision 1370623332"
     },
     {
       "dissent": false,
@@ -7520,6 +7706,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-south-georgia",
+      "kind": "event",
+      "locator": "\"Invasion of South Georgia\", revision 1375909832"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war",
       "kind": "event",
       "locator": "\"Iran–Iraq War\", revision 1375407163"
@@ -7550,9 +7742,45 @@
     },
     {
       "dissent": false,
+      "id": "irish-civil-war",
+      "kind": "event",
+      "locator": "\"Irish Civil War\", revision 1374338052"
+    },
+    {
+      "dissent": false,
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1521-1526",
+      "kind": "event",
+      "locator": "\"Italian War of 1521–1526\", revision 1370788853"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "locator": "\"Italian War of 1536–1538\", revision 1374565270"
+    },
+    {
+      "dissent": false,
+      "id": "italian-war-of-1551-1559",
+      "kind": "event",
+      "locator": "\"Italian War of 1551–1559\", revision 1370624572"
+    },
+    {
+      "dissent": false,
+      "id": "italian-wars",
+      "kind": "event",
+      "locator": "\"Italian Wars\", revision 1373567315"
+    },
+    {
+      "dissent": false,
+      "id": "italian-wars-of-1499-1504",
+      "kind": "event",
+      "locator": "\"Italian Wars of 1499–1504\", revision 1372847284"
     },
     {
       "dissent": false,
@@ -7577,6 +7805,12 @@
       "id": "japanese-instrument-of-surrender",
       "kind": "event",
       "locator": "\"Japanese Instrument of Surrender\", revision 1371613000"
+    },
+    {
+      "dissent": false,
+      "id": "junker-mutiny",
+      "kind": "event",
+      "locator": "\"Junker mutiny\", revision 1375165370"
     },
     {
       "dissent": false,
@@ -7652,6 +7886,12 @@
     },
     {
       "dissent": false,
+      "id": "la-violencia",
+      "kind": "event",
+      "locator": "\"La Violencia\", revision 1373312674"
+    },
+    {
+      "dissent": false,
       "id": "laotian-civil-war",
       "kind": "event",
       "locator": "\"Laotian Civil War\", revision 1370626595"
@@ -7661,6 +7901,12 @@
       "id": "lapland-war",
       "kind": "event",
       "locator": "\"Lapland War\", revision 1370626600"
+    },
+    {
+      "dissent": false,
+      "id": "lateran-treaty",
+      "kind": "event",
+      "locator": "\"Lateran Treaty\", revision 1376059839"
     },
     {
       "dissent": false,
@@ -7736,6 +7982,18 @@
     },
     {
       "dissent": false,
+      "id": "march-on-rome",
+      "kind": "event",
+      "locator": "\"March on Rome\", revision 1376212246"
+    },
+    {
+      "dissent": false,
+      "id": "marco-polo-bridge-incident",
+      "kind": "event",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067"
+    },
+    {
+      "dissent": false,
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "locator": "\"Massacre of Arabs during the Zanzibar Revolution\", revision 1374125732"
@@ -7787,6 +8045,12 @@
       "id": "moscow-uprising-of-1905",
       "kind": "event",
       "locator": "\"Moscow uprising of 1905\", revision 1370628753"
+    },
+    {
+      "dissent": false,
+      "id": "mount-kent-skirmish",
+      "kind": "event",
+      "locator": "\"Battle of Mount Kent\", revision 1370270010"
     },
     {
       "dissent": false,
@@ -7844,9 +8108,21 @@
     },
     {
       "dissent": false,
+      "id": "operation-algeciras",
+      "kind": "event",
+      "locator": "\"Operation Algeciras\", revision 1374886849"
+    },
+    {
+      "dissent": false,
       "id": "operation-barkhane",
       "kind": "event",
       "locator": "\"Operation Barkhane\", revision 1370630875"
+    },
+    {
+      "dissent": false,
+      "id": "operation-black-buck",
+      "kind": "event",
+      "locator": "\"Operation Black Buck\", revision 1374608915"
     },
     {
       "dissent": false,
@@ -7886,9 +8162,27 @@
     },
     {
       "dissent": false,
+      "id": "operation-keyhole",
+      "kind": "event",
+      "locator": "\"Operation Keyhole\", revision 1374609219"
+    },
+    {
+      "dissent": false,
+      "id": "operation-paraquet",
+      "kind": "event",
+      "locator": "\"Operation Paraquet\", revision 1370694202"
+    },
+    {
+      "dissent": false,
       "id": "operation-reinhard",
       "kind": "event",
       "locator": "\"Operation Reinhard\", revision 1367661549"
+    },
+    {
+      "dissent": false,
+      "id": "operation-rosary",
+      "kind": "event",
+      "locator": "\"1982 invasion of the Falkland Islands\", revision 1372863686"
     },
     {
       "dissent": false,
@@ -7994,6 +8288,18 @@
     },
     {
       "dissent": false,
+      "id": "polish-soviet-war",
+      "kind": "event",
+      "locator": "\"Polish–Soviet War\", revision 1370704570"
+    },
+    {
+      "dissent": false,
+      "id": "polish-ukrainian-war",
+      "kind": "event",
+      "locator": "\"Polish–Ukrainian War\", revision 1372213817"
+    },
+    {
+      "dissent": false,
       "id": "population-exchange-between-greece-and-turkey",
       "kind": "event",
       "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572"
@@ -8060,6 +8366,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-pebble-island",
+      "kind": "event",
+      "locator": "\"Pebble Island raid\", revision 1370703799"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement",
       "kind": "event",
       "locator": "\"Railway Protection Movement\", revision 1361142110"
@@ -8093,6 +8405,12 @@
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "\"Revolutions of 1989\", revision 1375849372"
+    },
+    {
+      "dissent": false,
+      "id": "rif-war",
+      "kind": "event",
+      "locator": "\"Rif War\", revision 1374340065"
     },
     {
       "dissent": false,
@@ -8156,6 +8474,12 @@
     },
     {
       "dissent": false,
+      "id": "sabra-and-shatila-massacre",
+      "kind": "event",
+      "locator": "\"Sabra and Shatila massacre\", revision 1375981084"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue-and-the-french-sugar-colony",
       "kind": "event",
       "locator": "\"Saint-Domingue\", revision 1375182685"
@@ -8174,6 +8498,12 @@
     },
     {
       "dissent": false,
+      "id": "sayfo",
+      "kind": "event",
+      "locator": "\"Sayfo\", revision 1370631734"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "\"Schengen Agreement\", revision 1370029483"
@@ -8183,6 +8513,12 @@
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "\"Scramble for Africa\", revision 1373841219"
+    },
+    {
+      "dissent": false,
+      "id": "second-balkan-war",
+      "kind": "event",
+      "locator": "\"Second Balkan War\", revision 1375897121"
     },
     {
       "dissent": false,
@@ -8294,6 +8630,12 @@
     },
     {
       "dissent": false,
+      "id": "sinking-of-ara-general-belgrano",
+      "kind": "event",
+      "locator": "\"Sinking of ARA General Belgrano\", revision 1370747049"
+    },
+    {
+      "dissent": false,
       "id": "sino-indian-war",
       "kind": "event",
       "locator": "\"Sino-Indian War\", revision 1374100162"
@@ -8315,6 +8657,18 @@
       "id": "six-day-war",
       "kind": "event",
       "locator": "\"Six-Day War\", revision 1375500255"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-at-many-branch-point",
+      "kind": "event",
+      "locator": "\"Skirmish at Many Branch Point\", revision 1370747412"
+    },
+    {
+      "dissent": false,
+      "id": "skirmish-at-top-malo-house",
+      "kind": "event",
+      "locator": "\"Skirmish at Top Malo House\", revision 1371031391"
     },
     {
       "dissent": false,
@@ -8369,6 +8723,12 @@
       "id": "soviet-invasion-of-poland",
       "kind": "event",
       "locator": "\"Soviet invasion of Poland\", revision 1375354648"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-japanese-border-conflicts",
+      "kind": "event",
+      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653"
     },
     {
       "dissent": false,
@@ -8792,6 +9152,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-petropolis",
+      "kind": "event",
+      "locator": "\"Treaty of Petrópolis\", revision 1370155152"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-portsmouth",
       "kind": "event",
       "locator": "\"Treaty of Portsmouth\", revision 1369694651"
@@ -8978,6 +9344,24 @@
     },
     {
       "dissent": false,
+      "id": "war-of-attrition",
+      "kind": "event",
+      "locator": "\"War of Attrition\", revision 1371500938"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "locator": "\"War of the Camps\", revision 1373013393"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-league-of-cambrai",
+      "kind": "event",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857"
+    },
+    {
+      "dissent": false,
       "id": "warsaw-ghetto-uprising",
       "kind": "event",
       "locator": "\"Warsaw Ghetto Uprising\", revision 1373044103"
@@ -9053,6 +9437,12 @@
       "id": "zaian-war",
       "kind": "event",
       "locator": "\"Zaian War\", revision 1370751428"
+    },
+    {
+      "dissent": false,
+      "id": "zanzibar-revolution",
+      "kind": "event",
+      "locator": "\"Zanzibar Revolution\", revision 1375266442"
     },
     {
       "dissent": false,

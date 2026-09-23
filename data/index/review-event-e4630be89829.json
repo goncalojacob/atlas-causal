@@ -715,7 +715,8 @@
       ],
       "category": "election",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-04",
       "id": "1951-portuguese-presidential-election",
@@ -728,11 +729,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "1951 Portuguese presidential election"
     },
@@ -1640,7 +1642,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "1982-british-army-gazelle-friendly-fire-incident",
@@ -1651,11 +1654,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "1982 British Army Gazelle friendly fire incident"
     },
@@ -2049,7 +2053,8 @@
       ],
       "category": "election",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-04",
       "degree": 1,
@@ -2063,11 +2068,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "1996 Portuguese presidential election"
     },
@@ -3616,11 +3622,12 @@
           "imported-facts",
           "a9-place",
           "filed-from-p361",
-          "title-from-article"
+          "title-from-article",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Afghan Civil War (1989–1992)"
     },
@@ -3683,11 +3690,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "title-from-article"
+          "title-from-article",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Afghan Civil War (1992–1996)"
     },
@@ -3874,7 +3882,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 4,
@@ -3887,11 +3896,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Amsterdam Treaty"
     },
@@ -4174,7 +4184,8 @@
       ],
       "category": "founding",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 4,
@@ -4187,11 +4198,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Anschluss"
     },
@@ -4277,7 +4289,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 4,
@@ -4291,11 +4304,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Arab Revolt"
     },
@@ -5287,7 +5301,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-caporetto",
@@ -5299,11 +5314,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Caporetto"
     },
@@ -5316,7 +5332,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-domokos",
@@ -5327,11 +5344,12 @@
       "parent": "greco-turkish-war-of-1897",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Domokos"
     },
@@ -5380,7 +5398,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -5393,7 +5412,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -5885,7 +5905,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-mount-harriet",
@@ -5897,7 +5918,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -5914,7 +5936,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-mount-longdon",
@@ -5926,7 +5949,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -5943,7 +5967,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -5956,7 +5981,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -6046,7 +6072,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-san-carlos",
@@ -6058,7 +6085,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -6111,7 +6139,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-seal-cove",
@@ -6123,7 +6152,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -6177,7 +6207,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-st-quentin",
@@ -6188,11 +6219,12 @@
       "parent": "italian-war-of-1551-1559",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of St. Quentin"
     },
@@ -6379,7 +6411,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-two-sisters",
@@ -6391,7 +6424,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -6408,7 +6442,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-velestino",
@@ -6419,11 +6454,12 @@
       "parent": "greco-turkish-war-of-1897",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Velestino"
     },
@@ -6507,7 +6543,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "battle-of-wireless-ridge",
@@ -6519,7 +6556,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -6642,7 +6680,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -6655,11 +6694,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Belovezh Accords"
     },
@@ -6671,7 +6711,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "benin-expedition-of-1897",
@@ -6683,11 +6724,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Benin Expedition of 1897"
     },
@@ -8423,7 +8465,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -8434,11 +8477,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Cretan Revolt of 1897–1898"
     },
@@ -8525,7 +8569,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 2,
@@ -8542,12 +8587,13 @@
           "wants-exact-dates",
           "m42-reinstated",
           "a9-place",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "note": "Wikidata Q68969 names 7 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 6 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Croatian War of Independence"
     },
@@ -9048,7 +9094,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -9060,11 +9107,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Earth Summit"
     },
@@ -9473,7 +9521,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -9486,11 +9535,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Eritrean–Ethiopian War"
     },
@@ -9607,7 +9657,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 4,
@@ -9619,11 +9670,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Ethiopian Civil War"
     },
@@ -10528,7 +10580,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -10541,11 +10594,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Foibe massacres"
     },
@@ -10627,7 +10681,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -10640,11 +10695,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Franco-Thai War"
     },
@@ -10909,7 +10965,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -10922,11 +10979,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Georgian–Ossetian conflict (1918–1920)"
     },
@@ -11003,7 +11061,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -11015,11 +11074,12 @@
       "parent": "interwar-period",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-21",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "German–Polish declaration of non-aggression"
     },
@@ -11768,7 +11828,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 4,
@@ -11779,11 +11840,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Heligoland–Zanzibar Treaty"
     },
@@ -12067,7 +12129,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -12082,11 +12145,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Ifni War"
     },
@@ -12600,7 +12664,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -12612,11 +12677,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Invasion of South Georgia"
     },
@@ -12810,7 +12876,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 2,
@@ -12824,11 +12891,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Irish Civil War"
     },
@@ -12873,7 +12941,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "italian-war-of-1521-1526",
@@ -12885,7 +12954,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
         "status": "draft"
@@ -12903,7 +12973,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "italian-war-of-1536-1538",
@@ -12914,11 +12985,12 @@
       "parent": "italian-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Italian War of 1536–1538"
     },
@@ -12931,7 +13003,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "italian-war-of-1551-1559",
@@ -12943,7 +13016,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one.",
         "status": "draft"
@@ -12960,7 +13034,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "italian-wars",
@@ -12971,7 +13046,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place italian-peninsula-q145694, from P276, Q145694.",
         "status": "draft"
@@ -12988,7 +13064,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "italian-wars-of-1499-1504",
@@ -13000,7 +13077,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
         "status": "draft"
@@ -13160,7 +13238,8 @@
       ],
       "category": "revolution",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -13173,11 +13252,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Junker mutiny"
     },
@@ -13621,7 +13701,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -13633,11 +13714,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "La Violencia"
     },
@@ -13750,7 +13832,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-05",
       "degree": 1,
@@ -13763,11 +13846,12 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Lateran Treaty"
     },
@@ -14477,7 +14561,8 @@
       ],
       "category": "revolution",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 3,
@@ -14491,11 +14576,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "March on Rome"
     },
@@ -14508,7 +14594,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -14521,11 +14608,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Marco Polo Bridge incident"
     },
@@ -14947,7 +15035,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "mount-kent-skirmish",
@@ -14959,7 +15048,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -15504,7 +15594,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "operation-algeciras",
@@ -15515,11 +15606,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Algeciras"
     },
@@ -15564,7 +15656,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "operation-black-buck",
@@ -15576,7 +15669,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -15762,7 +15856,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "operation-keyhole",
@@ -15773,11 +15868,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Keyhole"
     },
@@ -15790,7 +15886,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -15803,7 +15900,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -15855,7 +15953,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -15867,11 +15966,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Rosary"
     },
@@ -16533,7 +16633,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 3,
@@ -16550,11 +16651,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Polish–Soviet War"
     },
@@ -16567,7 +16669,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -16579,11 +16682,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Polish–Ukrainian War"
     },
@@ -17021,7 +17125,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "raid-on-pebble-island",
@@ -17032,11 +17137,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Raid on Pebble Island"
     },
@@ -17310,7 +17416,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -17322,11 +17429,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Rif War"
     },
@@ -17689,7 +17797,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -17702,11 +17811,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Sabra and Shatila massacre"
     },
@@ -17910,7 +18020,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 1,
@@ -17923,11 +18034,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Sayfo"
     },
@@ -18046,7 +18158,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 4,
@@ -18064,11 +18177,12 @@
           "imported-facts",
           "imported-names",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Second Balkan War"
     },
@@ -18814,7 +18928,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "sinking-of-ara-general-belgrano",
@@ -18826,7 +18941,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -18985,7 +19101,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "skirmish-at-many-branch-point",
@@ -18996,11 +19113,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Skirmish at Many Branch Point"
     },
@@ -19013,7 +19131,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "skirmish-at-top-malo-house",
@@ -19025,7 +19144,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
@@ -19413,7 +19533,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 3,
@@ -19425,11 +19546,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Soviet–Japanese border conflicts"
     },
@@ -21437,7 +21559,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -21450,12 +21573,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "note": "Wikidata Q1122547 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Treaty of Petrópolis"
     },
@@ -22671,7 +22795,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -22685,12 +22810,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "note": "Wikidata Q322607 names 7 participants (P710) and the atlas holds an actor for 5 of them, so this list is partial: 2 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "War of Attrition"
     },
@@ -22702,7 +22828,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 2,
@@ -22715,11 +22842,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "War of the Camps"
     },
@@ -22732,7 +22860,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "war-of-the-league-of-cambrai",
@@ -22744,7 +22873,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place italian-peninsula-q145694, from P276, Q145694.",
         "status": "draft"
@@ -23328,7 +23458,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -23341,11 +23472,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "Zanzibar Revolution"
     }
@@ -23357,12 +23489,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "1951-portuguese-presidential-election",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "1956-cuartel-domingo-goicuria-assault",
@@ -23401,18 +23527,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "1982-british-army-gazelle-friendly-fire-incident",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "1996-portuguese-presidential-election",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "1999-2002-farc-government-peace-process",
       "kind": "event",
       "message": "the title states 1999–2002 and the record is dated 1999",
@@ -23431,18 +23545,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "afghan-civil-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "afghan-civil-war-q1980081",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "afghan-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23455,28 +23557,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "amsterdam-treaty",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "andino-shopping-mall-attack",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "anschluss",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "arab-revolt",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "arab-spring",
@@ -23551,34 +23635,16 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-caporetto",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "battle-of-domokos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-domokos",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "battle-of-dunkirk",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-goose-green",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "battle-of-greece",
@@ -23635,28 +23701,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-mount-harriet",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "battle-of-mount-longdon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-mount-longdon",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "battle-of-mount-tumbledown",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "battle-of-san-carlos",
@@ -23665,25 +23713,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-san-carlos",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "battle-of-seal-cove",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-seal-cove",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "battle-of-st-quentin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -23691,8 +23721,8 @@
     {
       "id": "battle-of-st-quentin",
       "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "battle-of-tannenberg",
@@ -23707,22 +23737,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-two-sisters",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "battle-of-velestino",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-velestino",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "battle-of-verdun",
@@ -23743,12 +23761,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-wireless-ridge",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "battle-of-yaguajay",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23761,22 +23773,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "belovezh-accords",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "benin-expedition-of-1897",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "benin-expedition-of-1897",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "bluff-cove-air-attacks",
@@ -23851,28 +23851,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "cretan-revolt-of-1897-1898",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "croatian-war-of-independence",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "earth-summit",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "effacer-le-tableau",
@@ -23893,18 +23875,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "eritrean-ethiopian-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "ethiopian-civil-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "false-positives-in-colombia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23923,30 +23893,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "foibe-massacres",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "franco-thai-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "georgian-ossetian-conflict-1918-1920",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "german-polish-declaration-of-non-aggression",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "haitian-embassy-in-cuba-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -23954,12 +23900,6 @@
     },
     {
       "id": "haitian-embassy-in-cuba-massacre",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "heligoland-zanzibar-treaty",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -23989,12 +23929,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "ifni-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "independence-of-morocco",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -24019,28 +23953,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "invasion-of-south-georgia",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "irish-civil-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "italian-war-of-1521-1526",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "italian-war-of-1536-1538",
@@ -24049,22 +23965,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "italian-war-of-1536-1538",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "italian-war-of-1551-1559",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "italian-war-of-1551-1559",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "italian-wars",
@@ -24073,28 +23977,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "italian-wars",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "italian-wars-of-1499-1504",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "italian-wars-of-1499-1504",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "junker-mutiny",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "kaocen-revolt",
@@ -24109,12 +23995,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "la-violencia",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "las-palmas-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24122,24 +24002,6 @@
     },
     {
       "id": "las-palmas-massacre",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "lateran-treaty",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "march-on-rome",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "marco-polo-bridge-incident",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -24169,12 +24031,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "mount-kent-skirmish",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "my-lai-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24199,22 +24055,10 @@
       "rule": "degree-zero"
     },
     {
-      "id": "operation-algeciras",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "operation-black-buck",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "operation-black-buck",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "operation-jm",
@@ -24229,24 +24073,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "operation-keyhole",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "operation-paraquet",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "operation-rosary",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "operation-sutton",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -24257,18 +24083,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "polish-soviet-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "polish-ukrainian-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "potemkin-mutiny",
@@ -24295,46 +24109,16 @@
       "rule": "degree-zero"
     },
     {
-      "id": "raid-on-pebble-island",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     },
     {
-      "id": "rif-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "sabra-and-shatila-massacre",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "sayfo",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "second-balkan-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "sevastopol-uprising",
@@ -24367,25 +24151,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "sinking-of-ara-general-belgrano",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "skirmish-at-many-branch-point",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "skirmish-at-many-branch-point",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "skirmish-at-top-malo-house",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -24393,17 +24159,11 @@
     {
       "id": "skirmish-at-top-malo-house",
       "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "slovak-hungarian-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "soviet-japanese-border-conflicts",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -24433,12 +24193,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "treaty-of-petropolis",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "united-states-military-campaign-against-cartels",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -24457,37 +24211,13 @@
       "rule": "degree-zero"
     },
     {
-      "id": "war-of-attrition",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "war-of-the-camps",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
     },
     {
-      "id": "war-of-the-league-of-cambrai",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "war-over-water",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "zanzibar-revolution",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
