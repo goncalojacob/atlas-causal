@@ -20632,6 +20632,47 @@ Americas' 16th and 18th at three each and Europe's 15th at four.
 `docs/m42b-pool.md` → "Batch 7" and `docs/m67-umbrellas.md` → "M42b batch 7"
 carry the whole of it.
 
+**M42b batch 8 — the Spanish conquest, and the Americas' 16th century, 23
+September.** The eighth fire on the branch, taken from the cell the seventh
+fire's note named as one of the two thinnest in this partition: the Americas'
+16th century, which held five active events, all of them Portuguese Brazil or
+the Caribbean, and nothing at all of the Spanish conquest. **Nine events, four
+places and two actors**, every one draft and flagged, filed as they were
+imported — `spanish-colonization-of-the-americas` as the umbrella the century
+lacked, three conquests under it with the New Laws and the Valladolid debate,
+and three battles under the conquests they belong to. **Eight of the nine
+arrived with a parent**; the ninth is the umbrella, and `the-cuban-sugar-boom`,
+which was already here and is Spanish Cuba for the whole of its span, was filed
+under it to pay for it. **The main count is unchanged at 243.** The century
+goes from five active events to eleven.
+
+**Five edges, and the component from 529 to 533.** Each quotes the sentence of
+a cited article, at a named revision, that carries it: the first Columbian
+voyage enabled the colonization; the Treaty of Tordesillas is what the
+Caribbean settlement was answered with; the colonization enabled the conquest
+of Mexico, because the article says Cortés was "a well-connected settler in
+Cuba" who "received authorization in 1519 by the governor of Cuba"; and the two
+conquests are what the New Laws of 1542 reacted to, the article naming both in
+one sentence. That third edge is what joined the conquest vein to the rest of
+the atlas — without it the vein was an island of three and the component would
+have grown by one.
+
+**What this fire could not settle, and did not pretend to.** The seventh fire's
+note recommended `Q753624` as the Cortes of Cádiz and the edge this partition
+was missing; `Q753624` is a 1999 film. The Cortes is `Q1135591`, its only class
+is *legislature*, so it enters this atlas as an **actor** and cannot carry an
+edge; the event that would carry it, the Spanish Constitution of 1812
+(`Q1421412`), has **no date at all** on its Wikidata item and the import
+refuses it. The sentences are read and quoted at revision 1375550213 and
+`spanish-american-wars-of-independence` is still a component of one — the
+highest-value unconnected record in the partition, and the next fire's first
+decision rather than its last. One further edge, about indigenous
+depopulation, was written and then deleted: rule 4 refuses it, because the
+umbrella's article begins the colonization in 1493 and this atlas's depopulation
+record begins in 1492. **The edge was deleted rather than the date moved.**
+Deviations **1218 to 1221**, and `docs/m42b-pool.md` → "Batch 8" carries all of
+it with the counts per lane and per century.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

@@ -1813,68 +1813,286 @@ The records themselves are clean: `node tools/validate.mjs --index` reports
 **0 errors**, and the full local suite is **2,068 tests, 2,068 passing, 0
 skipped**.
 
+## Batch 8 — the Spanish conquest, and the Americas' 16th century
+
+*23 September, the eighth fire. Nine events, four places, two actors, five
+edges.* The seventh fire left the Americas' 16th century as one of the two
+thinnest cells in this partition — five active events, all of them Portuguese
+Brazil or the Caribbean — and named the vein nobody in either lane had touched:
+the Spanish conquest, with `Q1047607` the Spanish colonization of the Americas
+as its obvious umbrella. This fire took it.
+
+### What was imported
+
+Thirteen items were put to `tools/import/wikidata.mjs --import` in two rounds,
+the second for the places the first had nowhere to hang an event on (deviation
+1215, unfixed and worked around). Eleven records came back:
+
+| record | item | span | lane |
+| --- | --- | --- | --- |
+| `spanish-colonization-of-the-americas` | `Q1047607` | 1493–1898 | americas |
+| `spanish-conquest-of-the-aztec-empire` | `Q828435` | 1519–1521 | americas |
+| `fall-of-tenochtitlan` | `Q593267` | 1521 | americas |
+| `spanish-conquest-of-the-inca-empire` | `Q636771` | 1532–1572 | americas |
+| `battle-of-cajamarca` | `Q1425362` | 1532 | americas |
+| `siege-of-cusco` | `Q2398589` | 1536–1537 | americas |
+| `spanish-conquest-of-guatemala` | `Q2993582` | 1521–1697 | americas |
+| `new-laws` | `Q1121487` | 1542 | europe |
+| `valladolid-debate` | `Q1229264` | 1550–1551 | europe |
+| `cortes-of-cadiz` (actor) | `Q1135591` | 1810–1814 | — |
+| `council-of-the-indies` (actor) | `Q1127285` | 1524–1834 | — |
+
+Four places were written in the second round, each from the item's own point:
+`tenochtitlan` (`Q13695`), `cajamarca` (`Q205119`), `cusco` (`Q5582862`) and
+`valladolid` (`Q8356`).
+
+`new-laws` and `valladolid-debate` were seeded for the `americas` lane and the
+import put them in `europe` instead, off the items' own points — the laws were
+promulgated in Barcelona and the debate held in Valladolid. That is the import
+reading the record over the seed and it is right; both cells are this
+partition's, and Europe's 16th century was at six active events, which is the
+third-thinnest cell here.
+
+### What was refused
+
+- **`Q27230923`, the Spanish conquest of the Muisca** — "it has no P31 at all,
+  so nothing says what kind of thing it is". Nothing to decide about: the item
+  says nothing about itself.
+- **`Q975837`, the Spanish conquest of Yucatán** — no `P580`, `P582` or `P585`
+  on the item at all. An undated event has nowhere on the timeline and the
+  import is right to refuse it.
+- **`Q1421412`, the Spanish Constitution of 1812** — the same refusal, and the
+  costly one. See deviation 1220.
+
+### Filing (A6, A8), and the main count
+
+The main count was **243** before this fire and is **243** after it. Nine
+events arrived; eight were filed on arrival and the ninth is the umbrella:
+
+- under `spanish-colonization-of-the-americas`, whose article gives it
+  1493–1898: `spanish-conquest-of-the-aztec-empire` ("a pivotal event that took
+  place during the Spanish colonization of the Americas", its own lead at
+  revision 1375547407), `spanish-conquest-of-the-inca-empire` ("one of the most
+  important campaigns in the Spanish colonization of the Americas", revision
+  1375586932), `spanish-conquest-of-guatemala` ("in a protracted conflict
+  during the Spanish colonization of the Americas", revision 1371444057),
+  `new-laws` (issued "by Charles V, Holy Roman Emperor and regard the Spanish
+  colonization of the Americas", revision 1366305827) and `valladolid-debate`
+  ("an intellectual and theological debate about the moral legitimacy of the
+  conquest of the Americas", revision 1372190197). **Each of those five names
+  the umbrella in its own article's own words**, which is M62's subject test
+  met without an argument from this run.
+- under `spanish-conquest-of-the-aztec-empire`: `fall-of-tenochtitlan`, which
+  its lead calls "an important event in the Spanish conquest of the Mexica".
+- under `spanish-conquest-of-the-inca-empire`: `battle-of-cajamarca`, of which
+  the conquest's lead says the capture of Atahualpa there "was the first step
+  in a long campaign", and `siege-of-cusco`, the Inca attempt of 1536–37 to
+  take the city back, inside the conquest's span and its subject.
+- and one record that was already here: **`the-cuban-sugar-boom` (1791–1886)**
+  is now filed under `spanish-colonization-of-the-americas`. Cuba was Spanish
+  for the whole of that boom, the span is wholly inside the umbrella's, and the
+  record is the Spanish colonial economy in the Americas and nothing else.
+  That filing is what holds the main count at 243 rather than 244: the umbrella
+  is a new main event and this pays for it.
+
+**`spanish-conquest-of-guatemala`, `spanish-conquest-of-the-aztec-empire`,
+`spanish-conquest-of-the-inca-empire` and `new-laws` name neither an actor nor
+a place**, and this paragraph is the argument M67 asks for. Their items carry
+no `P625` the atlas can use and their `P276`/`P17` name polities and not
+places: the Aztec Empire (`Q2608489`), the Inca Empire (`Q28573`), Guatemala
+(`Q774`) and the Spanish Empire (`Q80702`). That is deviation 1213 exactly — a
+country is a place record on some records of this atlas and an actor on
+others — and it is unfixed. **`spanish-colonization-of-the-americas` is a main
+event that names neither**, for the same reason and one more: it is a period
+over two continents and four centuries, and there is no one point on the
+ground it happened at. Its lane is the `americas` off the seed.
+
+### The edges, and the component (A5, M72)
+
+The largest connected component of the causal graph was **529** before this
+fire and is **533** after it; components went from 180 to 185. Five edges, each
+quoting the sentence of a cited article, at a named revision, that carries it:
+
+| edge | type | from the article |
+| --- | --- | --- |
+| `the-first-columbian-voyage-1492` → `spanish-colonization-of-the-americas` | enabled | the colonization "began in 1493 … after the initial 1492 voyage of Genoese mariner Christopher Columbus under license from Queen Isabella I of Castile" |
+| `spanish-colonization-of-the-americas` → `treaty-of-tordesillas-1494` | reacted-to | "Once the Spanish settlement in the Caribbean occurred, Spain and Portugal formalized a division of the world between them in the 1494 Treaty of Tordesillas" |
+| `spanish-colonization-of-the-americas` → `spanish-conquest-of-the-aztec-empire` | enabled | "A well-connected settler in Cuba, Hernán Cortés received authorization in 1519 by the governor of Cuba to form an expedition" |
+| `spanish-conquest-of-the-aztec-empire` → `new-laws` | reacted-to | "following the Spanish conquest of the Aztec Empire and the Spanish conquest of Peru, more stringent laws … were promulgated, known as the New Laws (1542)" |
+| `spanish-conquest-of-the-inca-empire` → `new-laws` | reacted-to | the other half of the same sentence |
+
+All five are `probable` and all five carry a locator. Three of them reach
+records that were already here, which is what A5 asks of a batch; the third row
+is the one that matters most to the number, because without it the conquest
+vein was an island of three and the component would have grown by one alone.
+
+**Two participants were written (A12's C5).** `battle-of-cajamarca` and
+`siege-of-cusco` name `inca-empire` as a belligerent: Wikidata's `P710` names
+the Inca Empire (`Q28573`) a participant of both, and this atlas already holds
+that polity. The other participants their items name — the Crown of Castile
+(`Q766543`) and the rest — the atlas does not hold, and none was invented.
+
+### The class table
+
+Eleven decisions were added to `data/imports/wikidata-seeds.json` → `classes`,
+and **every label and gloss below was read off the class item itself over the
+network**, never guessed from the item's name:
+
+- events: `Q1361229` *conquest* (category `war`, because Wikidata's gloss
+  "military subjugation of an enemy by force of arms" is `data/categories.json`'s
+  own description of `war` in other words), `Q815962` *colonization* and
+  `Q1377300` *first wave of European colonization* (no category — a period is
+  none of the twelve, and they must agree with `Q1361229` about the kind or the
+  item is refused for classes that disagree), `Q49371` *legislation* and
+  `Q7755` *constitution* (category `law`, which `data/categories.json` describes
+  as "a constitution, a statute, a decree or a court ruling"), and `Q1123131`
+  *disputation* (no category: `other` is for a kind the atlas has too few of to
+  name, not for one nobody looked at).
+- a place: `Q2074737` *municipality of Spain*, on the precedent of `Q15284`
+  *municipality* and `Q2555896` *municipality of Colombia*.
+- actors, all `institution`: `Q11204` *legislature*, `Q2993893* *royal council*,
+  `Q895526` *governing body*, `Q2994416` *consejo* and `Q41487` *court*. All
+  four of the Council of the Indies' classes had to agree about the kind or the
+  item would have been refused.
+
+### Counts after this fire
+
+| | before | after |
+| --- | --- | --- |
+| active events | 749 | **758** |
+| main events | 243 | **243** |
+| largest connected component | 529 | **533** |
+| components | 180 | 185 |
+| events with no edge at all | 151 | 156 |
+| the `americas` lane | 163 active, 58 main | **170 active, 58 main** |
+| the `europe` lane | 353 active, 87 main | **355 active, 87 main** |
+
+Per century, the two lanes this partition owns:
+
+| century | americas | europe |
+| --- | --- | --- |
+| 1400s | 3 active, 3 main | 3 active, 2 main |
+| 1500s | **11 active, 5 main** (was 5) | **8 active, 1 main** (was 6) |
+| 1600s | 6 active, 6 main | 21 active, 2 main |
+| 1700s | 3 active, 1 main | 20 active, 2 main |
+| 1800s | 38 active, 11 main | 12 active, 9 main |
+| 1900s | 86 active, 31 main | 238 active, 63 main |
+| 2000s | 23 active, 1 main | 52 active, 7 main |
+
+### Deviations
+
+**1218. The seventh fire's pool note gave the wrong item for the Cortes of
+Cádiz, and the wrong item is a 1999 film.** The note recommended `Q753624` as
+"the edge this partition is missing" and "nothing else available is worth as
+much per request". `Q753624` is *Nobody Knows Anybody*, a 1999 film by Mateo
+Gil. The Cortes of Cádiz is **`Q1135591`**. Nothing was imported under the
+wrong id — the class check would have refused a film — but a fire that had
+trusted the note would have spent its budget on it. **A QID a note recommends
+is checked against its label before it is seeded**, which is what this fire did
+and what cost one request.
+
+**1219. The record the seventh fire wanted the edge from is an actor, not an
+event.** `Q1135591`'s only `P31` is `Q11204`, *legislature* — "a kind of
+deliberative assembly with the power to pass, amend, and repeal laws". A
+legislature is a body and not something that happens, so the Cortes of Cádiz
+entered this atlas as `cortes-of-cadiz`, an actor, **and an edge cannot run
+from it**: an edge runs between events. The sentence the seventh fire found is
+real and this fire read it at the revision the record cites — *"A more direct
+cause of the Spanish American Wars of Independence were the unique developments
+occurring within the Kingdom of Spain triggered by the Cortes of Cadiz"*,
+"Spanish American wars of independence", revision 1375550213, § Background —
+but the atlas has nowhere to put it as a link.
+
+**1220. The event that would carry it, the Spanish Constitution of 1812, has no
+date on its Wikidata item at all, and the import refuses it.** `Q1421412`
+carries no `P580`, no `P582` and no `P585`; its only `P31` is `Q7755`,
+*constitution*, which this fire added to the class table as an event of
+category `law`. The same article states the link for the constitution in so
+many words — *"In effect, the Spanish Constitution of 1812 adopted by the
+Cortes of Cádiz served as the basis for independence in New Spain and Central
+America"*, revision 1375550213 — so the edge is there to be written the moment
+the record exists. **What it needs is a date the atlas can stand behind.** A7
+widens an interval from the record's *own cited article*, and there is no
+record yet to widen; the constitution's own article states the promulgation of
+19 March 1812 in its first sentence, which is a reading of a source and not an
+invention, but the import has no path that creates a record from an article
+rather than from an item. **A fire that wants this edge has to decide which:
+write the record from the article at a named revision and say so, or widen
+Wikidata.** This run did neither rather than choose quietly.
+
+**1221. Rule 4 refuses the one edge about indigenous depopulation that the
+colonization article states.** The article says the indigenous population
+"plummeted by an estimated 80% in the first century" and that "arguably the
+most significant introduction was diseases brought to the Americas, which
+devastated indigenous populations in a series of epidemics" (revision
+1376245871). This atlas holds `indigenous-depopulation-of-the-greater-antilles`
+(1492–1550). The edge `spanish-colonization-of-the-americas` → that record was
+written and the validator refused it: *"arrow of time: cannot start after"* —
+the umbrella starts in **1493**, which is where its own article begins the
+colonization, and the depopulation record starts in **1492**. **The edge was
+deleted rather than the date moved.** The one year is real: the depopulation
+record dates itself from Columbus's landfall and the umbrella from the
+settlement of the year after. A fire that wants this link has either to hang it
+off a record inside the depopulation's span — the conquests all start later
+still — or to re-read the depopulation record's own start, which is not this
+run's to do because that record is not the import's.
+
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after batch 7.*
+*23 September, after batch 8.*
 
 | | |
 | --- | --- |
-| corpus | **749 active** |
+| corpus | **758 active** |
 | **main** | **243** — the count the next batch must not raise |
-| **largest connected component** | **523** |
-| components | 186 |
-| events with no edge at all | 158 |
-| Europe before 1900 | 62 active, 16 main |
-| the `americas` lane | **163 active, 58 main** |
-| the thinnest cells left | the Americas' 16th and 18th (3 each), Europe's 15th (3) |
+| **largest connected component** | **533** |
+| components | 185 |
+| events with no edge at all | 156 |
+| Europe before 1900 | 64 active, 16 main |
+| the `americas` lane | **170 active, 58 main** |
+| the thinnest cells left | the Americas' 18th (3) and 15th (3), Europe's 15th (3) |
 
 **What the next fire should weigh, in order:**
 
-- **The Cortes of Cádiz, `Q753624`, is the edge this partition is missing.**
-  The Spanish American wars article, revision 1375550213, names it as *"a more
-  direct cause of the Spanish American Wars of Independence"* in so many words.
-  It is Europe before 1900, so it is squarely this partition's; it would join
-  the twenty-three of batch 7 to whatever it in turn connects to; and it is one
-  record and one edge. **Nothing else available is worth as much per request.**
-- **The Americas' 16th and 18th centuries are now the thinnest cells in the
-  atlas**, at three active events each, and the 15th is at four. The 16th wants
-  the Spanish conquest — Cortés, Pizarro, the fall of Tenochtitlan — which is a
-  vein nobody in either lane has touched and which has an obvious umbrella in
-  `Q2477522` the Spanish colonization of the Americas. The 18th has the Túpac
-  Amaru and Comunero risings, which reach forward into the vein batch 7 just
-  imported.
-- **Europe's 15th century is at three active events and has no umbrella.**
-  Batches 1, 5 and 6 took the 16th, 17th and 18th; the 15th is what is left,
-  and the Hundred Years' War ends in 1453, inside it.
-- **North America is still the thin half of the `americas` lane**, and batch 7
-  did not move it: **17 active with a place north of the Rio Grande's mouth
-  against 128 south of it**, with 18 in the lane and placeless — the two
-  Mexican records of batch 7 are among that eighteen, because A9's chain ran
-  out on both. The brief's ordering has been satisfied since batch 2, so a fire
-  may take a North American vein whenever the American centuries are the ones
-  that trail, and they are.
-- **Three tool findings are open and none of them is fixed.** Deviation 1212
-  (a colonial empire's point is its metropole, so a colonial war lands in the
-  ruler's lane), deviation 1213 (a country is a place record on three records
-  and an actor on five, so A9 places some wars and not others) and deviation
-  1215 (the import's slice cap puts events before places unless a fire imports
-  the places on their own first). The first two are in the tool and shared with
-  M42; a fire that fixes either should say so on both branches.
-- **`battle-of-guayabos` has no English article**, so it is this branch's one
-  record still carrying the import's placeholder summary. A fire that reads
-  Spanish could settle it; A12's C1 is English-only by construction.
+- **The Americas' 18th century is now the thinnest cell in this partition**, at
+  three active events, and batch 7's note named its vein: the Túpac Amaru and
+  Comunero risings, which reach forward into the wars of independence batch 7
+  imported. Europe's 15th century is level with it at three and has no umbrella;
+  the Hundred Years' War ends in 1453, inside it.
+- **`spanish-american-wars-of-independence` carries no edge at all and is a
+  component of one.** Batch 7 imported twenty-three records around it and the
+  record itself is unreachable from the rest of the atlas. The sentences that
+  would connect it are read and quoted in deviations 1219 and 1220 above, at
+  revision 1375550213, and both run through the Cortes of Cádiz, which this
+  atlas now holds as an **actor**, and through the Spanish Constitution of 1812,
+  which Wikidata gives **no date at all**. Deviation 1220 sets out the two ways
+  to settle it and says why this fire chose neither. **This is the single
+  highest-value unconnected record in the partition** and it is worth a fire's
+  first decision rather than its last.
+- **Four of this batch's records name neither an actor nor a place**, and the
+  reason is deviation 1213, still unfixed: their items' `P276` and `P17` name
+  polities — the Aztec Empire, the Inca Empire, Guatemala, the Spanish Empire —
+  and a polity is an actor in this atlas on some records and a place on others.
+  A fire that fixes 1213 in the tool fixes it for both branches and should say
+  so on both.
+- **`aztec-empire` and `inca-empire` carry no Wikidata item**, so the import
+  cannot match them and a later sweep of `Q2608489` or `Q28573` will write a
+  second actor for the same polity. This fire named `inca-empire` on two events
+  by hand for exactly that reason. A fire with `--reconcile` should close it,
+  together with the `santiago-de-cuba` and `havana` gap batch 7 reported, which
+  is unchanged.
+- **`battle-of-guayabos` still carries the import's placeholder summary**,
+  unchanged from batch 7: it has no English article and A12's C1 is
+  English-only by construction.
 - **`great-depression` and `la-violencia` are still A12's, not this branch's.**
-  Unchanged from batch 3's note.
-- **`santiago-de-cuba` and `havana` carry no Wikidata item**, and a later sweep
-  of `Q117040` or `Q1563` will write a second record for the same town. A fire
-  with `--reconcile` should close that gap. Batch 7 added `santiago` (Chile)
-  beside them, which is a different town and a reminder of how near that
-  collision is.
-- **The rate limit is where batch 5 left it and no worse.**
-  `Special:EntityData` and `query.wikidata.org/sparql` answered normally
-  throughout this fire, and the REST `page/html` endpoint answered twice — the
-  Haitian Revolution and the Mexican War of Independence — before it and
-  `api.php` returned 429 for the rest of the fire. **Two body reads is what a
-  fire gets.** Spend them on the articles whose bodies carry an edge, and spend
-  the import's own lead fetching first: it got all thirty-one leads before
-  anything was refused.
+  Unchanged since batch 3.
+- **The rate limit is better than batch 5 and 7 found it.** `Special:EntityData`,
+  `api.php` and `query.wikidata.org` all answered through this fire, with
+  intermittent empty bodies that a retry with a short backoff cleared every
+  time — the helper this fire used retried four times with 3, 6 and 9 second
+  waits and never exhausted them. **Two full article bodies were read**, through
+  `index.php?action=raw&oldid=<rev>`, which returns the wikitext at the exact
+  revision a record cites and cost one request each; that endpoint answered
+  both times where batch 7 found `page/html` and `api.php` returning 429. **It
+  is the cheapest way to check a sentence a record will cite** and the next fire
+  should prefer it.
