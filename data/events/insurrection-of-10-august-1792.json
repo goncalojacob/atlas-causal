@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "insurrection-of-10-august-1792",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1154330",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Insurrection of 10 August 1792",
+    "pt": "Jornada de 10 de Agosto de 1792"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1154330"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of 10 August 1792\", revision 1373130455"
+    }
+  ],
+  "title": "Insurrection of 10 August 1792",
+  "summary": "The English Wikipedia article \"Insurrection of 10 August 1792\", at revision 1373130455, opens: \"The insurrection of 10 August 1792 was a defining event of the French Revolution, when armed revolutionaries in Paris, increasingly in conflict with the French monarchy, stormed the Tuileries Palace. The conflict led France to abolish the monarchy and establish a republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1154330, imported by tools/import/wikidata.mjs. The item's own description reads \"insurrection and its outcome in French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-08-10"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

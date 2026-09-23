@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "women-s-march-on-versailles",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1151917",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Women's March on Versailles",
+    "pt": "Marcha sobre Versalhes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1151917"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Women's March on Versailles\", revision 1372203142"
+    }
+  ],
+  "title": "Women's March on Versailles",
+  "summary": "The English Wikipedia article \"Women's March on Versailles\", at revision 1372203142, opens: \"The Women's March on Versailles, also known as the Black March, the October Days or simply the March on Versailles, was one of the earliest and most significant events of the French Revolution. The march began among women in the marketplaces of Paris who, on the morning of 5 October 1789, were rioting over the high price of bread. The unrest quickly became intertwined with the activities of revolutionaries seeking liberal political reforms and a constitutional monarchy for France. The market women and their allies ultimately grew into a crowd of thousands. Encouraged by revolutionary agitators, they ransacked the city armory for weapons and marched on the Palace of Versailles. The crowd besieged the palace and, in a dramatic and violent confrontation, they successfully pressed their demands upon King Louis XVI. The very next day, the crowd forced the king and his family to return with them to Paris. Over the next few weeks, most of the French assembly also relocated to the capital.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1151917, imported by tools/import/wikidata.mjs. The item's own description reads \"food riot and march by market-women during the French Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1789,
+    "date": "1789-10-05",
+    "endDate": "1789-10-06"
+  },
+  "place": "versailles-yvelines",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "french-revolution"
+}

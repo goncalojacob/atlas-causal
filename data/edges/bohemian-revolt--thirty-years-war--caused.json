@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bohemian-revolt--thirty-years-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bohemian Revolt\", revision 1372461973, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1785022"
+    }
+  ],
+  "from": "bohemian-revolt",
+  "to": "thirty-years-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The revolt’s own article states it in the first sentence: it was “an uprising of the Bohemian estates against the rule of the Habsburg dynasty that began the Thirty Years’ War”. The same lead says the defeat at White Mountain “expanded the scope of the Thirty Years’ War by drawing Denmark and Sweden into it”, so the article treats the revolt as the thing the war grew out of and not merely as its first episode. The atlas already types a war’s opening action this way — Operation Rosary and the Falklands War, the Moncada attack and the Cuban Revolution — and this is that shape. It stays `probable`: one encyclopaedia lead reporting where the consensus sits is not a work arguing it, and rule 22 would refuse `consensus` on a Wikipedia citation in any case. That the revolt is also filed as part of the war is a separate statement; `parent` does not enter the adjacency, so the argument has to be made as an edge or not at all.",
+  "dispute": null
+}

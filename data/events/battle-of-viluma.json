@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-viluma",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2890016",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Viluma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890016"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Viluma\", revision 1374737190"
+    }
+  ],
+  "title": "Battle of Viluma",
+  "summary": "The English Wikipedia article \"Battle of Viluma\", at revision 1374737190, opens: \"The Battle of Viluma, also known as Battle of Sipe-Sipe, was a major battle in the South American wars of independence in which the United Provinces of the Río de la Plata were decisively defeated in Upper Peru by the Royal Army of Viceroyalty of Peru. The battle took place on November 29, 1815 on a plain west of Cochabamba, and resulted in the loss of Upper Peru for Buenos Aires. The area was reannexed by the Spanish Viceroyalty of Peru.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890016, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle in Upper Peru, South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-11-28"
+  },
+  "place": "cochabamba-department",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "paraguay-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7134668",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Paraguay campaign",
+    "pt": "Campanha do Paraguai (expedição militar)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7134668"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paraguay campaign\", revision 1374608769"
+    }
+  ],
+  "title": "Paraguay campaign",
+  "summary": "The English Wikipedia article \"Paraguay campaign\", at revision 1374608769, opens: \"The Paraguay campaign (1810-1811) was a military expedition launched by Buenos Aires and commanded by Manuel Belgrano to ensure the adherence of the Intendency of Paraguay to the Primera Junta, which was established after the May Revolution. It is considered both a part of the independence of Argentina and Paraguay.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7134668, imported by tools/import/wikidata.mjs. The item's own description reads \"(1810–1811)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1811,
+    "date": "1810-09",
+    "endDate": "1811-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

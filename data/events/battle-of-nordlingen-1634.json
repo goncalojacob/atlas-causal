@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-nordlingen-1634",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q312212",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-22"
+  },
+  "wikipedia": {
+    "en": "Battle of Nördlingen (1634)",
+    "pt": "Batalha de Nördlingen (1634)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q312212"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nördlingen (1634)\", revision 1373505403"
+    }
+  ],
+  "title": "Battle of Nördlingen (1634)",
+  "summary": "The English Wikipedia article \"Battle of Nördlingen (1634)\", at revision 1373505403, opens: \"The Battle of Nördlingen, fought over two days from 5 to 6 September 1634, was a major battle of the Thirty Years' War. An Imperial–Spanish force led by the Cardinal-Infante Ferdinand and Ferdinand of Hungary inflicted a crushing defeat on the Swedish–German army led by Gustav Horn and Bernhard of Saxe-Weimar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q312212, imported by tools/import/wikidata.mjs. The item's own description reads \"1634 battle of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1634,
+    "date": "1634-09-05",
+    "endDate": "1634-09-06"
+  },
+  "place": "nordlingen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

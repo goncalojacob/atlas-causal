@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "flight-to-varennes--champ-de-mars-massacre--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-22",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Champ de Mars massacre\", revision 1370703702, § lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1089686"
+    }
+  ],
+  "from": "flight-to-varennes",
+  "to": "champ-de-mars-massacre",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The massacre’s own lead lays the sequence out in three sentences and in this order: “two days before, the National Constituent Assembly issued a decree that King Louis XVI would retain his throne under a constitutional monarchy. This decision came after Louis and his family had unsuccessfully tried to flee France in the Flight to Varennes the month before. Later that day, leaders of the republicans in France rallied against this decision.” The article therefore makes the flight the thing the decree answered and the decree the thing the crowd came out against; what it does not say is that the flight caused the killing, and the type is `precondition-of` rather than `caused` for exactly that reason — the decree stands between them and this atlas does not hold it as a record. `probable`, on one encyclopaedia lead.",
+  "dispute": null
+}
