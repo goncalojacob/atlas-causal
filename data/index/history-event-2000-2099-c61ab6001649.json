@@ -3,7 +3,7 @@
   "kind": "event",
   "records": {
     "14-october-2017-mogadishu-bombings": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1026,7 +1026,7 @@
       ]
     },
     "2011-military-intervention-in-libya": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
