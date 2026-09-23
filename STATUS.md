@@ -19973,6 +19973,16 @@ and A13's relations pass, still never run.
       any more" was written into `docs/m42-pool.md` and then taken out again
       in the same fire. A count of what is wrong has to ask where the wrong
       thing is, not whether its words appear.
+1222. **The one red test on this branch is a `?fixtures=1` test and the same
+      commit is both green and red on `m0`.** `tests/graph-browser.test.mjs`
+      → *"a parent keeps its ring at rest and at every zoom"* failed on batch
+      39's `m0` merge commit, on `parted.ring.stroke < held.ring.stroke` with
+      0.7686 against 0.5831. It draws the synthetic graph and reads no record
+      under `data/`, so no import can reach it; `e0845d53` on `m0` passed its
+      pull-request run and failed its push run; and it passes here, run alone,
+      twice. The assertion measures a stroke width after a synthetic wheel
+      event, which can be read before the zoom it is about has settled. It is
+      lane A's code and not this run's data, and this fire did not touch it.
 
 ## M84 — the owner's feedback document
 

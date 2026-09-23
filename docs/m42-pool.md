@@ -4211,3 +4211,91 @@ retraction of 5 September says *"it would need the Arab Spring, or the refugee
 crisis, as a record"* and the Arab Spring **is** a record now. That tombstone's
 stated condition is met and a later fire should look at it; it is Asia's lane,
 which M42 also owns.
+
+### The check, red on the merge commit and not on this batch
+
+**`tests/graph-browser.test.mjs` → *"a parent keeps its ring at rest and at
+every zoom"* failed on the `m0` merge commit of 04:12Z**, one test in 279, on
+`assert.ok(parted.ring.stroke < held.ring.stroke)` with *0.7685724975196452
+against 0.5831308855537262*. It was read rather than assumed:
+
+- It is a **`?fixtures=1` test**. It draws the synthetic graph of
+  `tests/fixtures/data/` and touches no record under `data/`, so no import,
+  filing or interval on this branch can reach it.
+- **The same commit is green and red on `m0`**: `e0845d53`'s pull-request run
+  (1489) passed and its push run (1488) failed. That is the base branch, not
+  this one.
+- **It passes here, twice, run alone**: all eleven of that suite, 0 failures.
+
+The assertion measures a stroke width after a synthetic wheel event, which is
+the shape of a test that can be read before the zoom it is about has settled.
+It belongs to lane A's code and not to this run's data, and this fire did not
+touch it. **Deviation 1222.** The pure suites — 151 files, **1,789 tests, 0
+failures, 0 skipped** — were run whole after the index rebuild and are green.
+
+## Where the run stands after batch 39, for the fire that picks it up
+
+*23 September, 04:11Z onward. An import fire, one batch, and `m0` merged in at
+its head — M42b's snapshot of 02:53Z landed there, which is why Europe and the
+Americas moved without this branch touching them.*
+
+| | |
+| --- | --- |
+| corpus | **752 active** |
+| **main** | **243**, unmoved through seven batches and two curation fires |
+| filed | 509 |
+| largest connected component | **532** |
+| components | **180** |
+| events with no edge at all | **151** |
+| events with no place | **48** over the merged corpus |
+| events naming no actor | **383** over the merged corpus |
+| active events opening on the import's placeholder | **21** |
+| the Africa joins vein, items not held | **15 open rows**, all refused above |
+| the `part of` vein, Africa | 139 rows open |
+| the sweep pool, world sections | 1,046 open rows |
+| per lane, active | Europe 353, **Asia 130**, **Africa 106**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. A13's own note from
+  the fire of 02:06Z stands: re-run the relations pass **over the new records
+  only**, because reading the same 687 articles again returns the same 267
+  rows. Batch 39's three are the new records on this branch; M42b's are on
+  theirs.
+- **A6 is a count and not a parent, and that is the finding of this batch.**
+  Batch 37 read *"each would arrive main, and A6 says the main count must not
+  rise"* as *"each is waiting for the umbrella that would hold it"*. It is not.
+  A batch that files two standing main events under something they were always
+  part of buys two slots, and a filing that corrects a record is cheaper and
+  more honest than a period invented to hold one. **Three of the five joins
+  batch 37 refused are still open** — the French conquest of Algeria, the Arab
+  Winter, the 1970s energy crisis — and two of them want main slots and not
+  umbrellas. The third wants a place: `Q4574284` carries no `P625`, no `P276`,
+  no `P131` and no `P17`.
+- **Where the next slots are.** The same question asked of the corpus: which
+  standing main events are part of a record the atlas already holds and are
+  dated inside it? This batch found two by widening one interval. A pass over
+  all 243 main events against every held parent, with A7 applied where the
+  article and the record disagree, is the cheapest volume of headroom in the
+  run and nobody has taken it.
+- **The two largest named Africa gaps are `Q476855` the Mau Mau rebellion and
+  `Q2444955` the Rhodesian Bush War.** Both are named in the decolonisation
+  umbrella's own lead, neither fits its span, neither carries a causal property
+  to anything held. Taking them needs an edge read out of their articles — the
+  Bush War's is the one to read, because ZANLA's bases after 1975 are
+  Mozambique's and Mozambique is Portugal's — and two main slots.
+- **`syrian-civil-war`'s tombstone states a condition that is now met.** The
+  retraction of 5 September says *"it would need the Arab Spring, or the refugee
+  crisis, as a record"*; `arab-spring` has been a record since the A6 filing
+  pass. It is 116 sitelinks, it is Asia's lane, which M42 owns, and it is the
+  largest single record the atlas has decided twice about. A fire that takes it
+  should say which of the two conditions it is answering and give it the edges
+  the retraction says it was missing.
+- **The three African islands are not joinable by Wikidata's causal
+  properties**, and this batch asked them directly rather than inferring it.
+  The Sudan seven, the Boer six and the Liberia–Sierra Leone three returned
+  three rows between them and no join. A later fire should read articles or
+  leave them; asking the properties again is spent.
+- **Africa is 106 against Europe's 353** and A10's order does not change.
