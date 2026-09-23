@@ -1544,6 +1544,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-turquoise--1994-genocide-against-tutsi--reacted-to",
+      "kind": "edge",
+      "locator": "Q1433226 P828 (has cause) Q131297"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement--wuchang-uprising--enabled",
       "kind": "edge",
       "locator": "Q339291 P828 (has cause) Q5368776"
@@ -1553,6 +1559,12 @@
       "id": "storming-of-the-bastille--french-revolution--caused",
       "kind": "edge",
       "locator": "Q6539"
+    },
+    {
+      "dissent": false,
+      "id": "suez-crisis--closure-of-the-suez-canal-1956-1957--caused",
+      "kind": "edge",
+      "locator": "Q113946324 P828 (has cause) Q49101"
     },
     {
       "dissent": false,
@@ -2960,6 +2972,12 @@
     },
     {
       "dissent": false,
+      "id": "closure-of-the-suez-canal-1956-1957",
+      "kind": "event",
+      "locator": "Q113946324"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "Q169072"
@@ -2993,6 +3011,12 @@
       "id": "comprehensive-peace-agreement",
       "kind": "event",
       "locator": "Q1424647"
+    },
+    {
+      "dissent": false,
+      "id": "congo-crisis",
+      "kind": "event",
+      "locator": "Q1773926"
     },
     {
       "dissent": false,
@@ -4145,6 +4169,12 @@
       "id": "operation-sutton",
       "kind": "event",
       "locator": "Q537052"
+    },
+    {
+      "dissent": false,
+      "id": "operation-turquoise",
+      "kind": "event",
+      "locator": "Q1433226"
     },
     {
       "dissent": false,

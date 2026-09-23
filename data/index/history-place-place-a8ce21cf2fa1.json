@@ -4163,6 +4163,15 @@
         }
       ]
     },
+    "republic-of-the-congo-leopoldville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "rif": {
       "from": "git",
       "versions": [
@@ -5009,6 +5018,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "suez-canal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
