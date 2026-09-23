@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "congo-crisis--angolan-war-of-independence--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congo Crisis\", revision 1373847824, \"International importance\""
+    }
+  ],
+  "from": "congo-crisis",
+  "to": "angolan-war-of-independence",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article on the crisis says, under \"International importance\", that \"the turmoil of the Congo Crisis destabilised Central Africa and helped to ignite the Portuguese Colonial War, especially the war of independence in neighbouring Angola. Angolan nationalists had long had close ties with the Congo where many had lived as exiles. The União dos Povos de Angola (UPA), an Angolan nationalist organisation which\" launched \"the Baixa de Cassanje revolt in 1961, igniting the conflict in Angola\". \"Helped to ignite\" is enabling and not causing, and the weaker of the two types the source allows is the one written. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

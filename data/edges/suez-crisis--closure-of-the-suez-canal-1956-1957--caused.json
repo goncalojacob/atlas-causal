@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "suez-crisis--closure-of-the-suez-canal-1956-1957--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Closure of the Suez Canal (1956–1957)\", revision 1357662864, lead"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q113946324 P828 (has cause) Q49101"
+    }
+  ],
+  "from": "suez-crisis",
+  "to": "closure-of-the-suez-canal-1956-1957",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article on the closure says so in its first sentence: \"The closure of the Suez Canal from November 1956 to April 1957 was caused by the Second Arab–Israeli war, also known as the Suez Crisis, in 1956.\" Wikidata states the same relation on the item (Q113946324, P828). Probable, for the reason every edge drawn from these two sources is.",
+  "dispute": null
+}

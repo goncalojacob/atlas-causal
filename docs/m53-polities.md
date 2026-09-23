@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 368 of 749 |
+| **after M42** | 36 of 36 | 368 of 752 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -336,7 +336,9 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands.** M42 adds active events
+rewritten as each of that milestone's batches lands** — batch 39 of 23 September
+takes the denominator to 752 and leaves the numerator at 368, because its three
+imports carry `actors: []` as every imported record does. M42 adds active events
 and does not add actor lines: everything it reinstates or imports is a
 Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
 §2.1 and M67's amendment A1 already settled — **an event with no actor and no

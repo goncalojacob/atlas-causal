@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "operation-turquoise--1994-genocide-against-tutsi--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Opération Turquoise\", revision 1357895302, \"Background\" and \"Implementation\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1433226 P828 (has cause) Q131297"
+    }
+  ],
+  "from": "operation-turquoise",
+  "to": "1994-genocide-against-tutsi",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article's \"Background\" opens on the assassination of 6 April 1994 \"sparking the Rwandan genocide against the Tutsi\", follows the collapse of UNAMIR's mandate through it, and then dates the operation to it: \"On 19 June, the French government made an announcement of their intentions to organize, establish, and maintain a \\\"safe zone\\\" in the south-west of Rwanda\", authorised as Resolution 929 on 22 June. The operation exists because the genocide did, which is what Wikidata says as well (Q1433226, P828). It is written as reacted-to rather than caused because the article gives the operation as an answer to the killing and disputes what it achieved, and the weaker type is the one the source carries.",
+  "dispute": null
+}

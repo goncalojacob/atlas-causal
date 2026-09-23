@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-23",
   "review": {
     "status": "draft",
     "flags": [
@@ -27,7 +27,8 @@
       "imported-by-wikidata",
       "a9-place",
       "summary-from-lead"
-    ]
+    ],
+    "note": "A7, 23 September: the interval was 1990-10-01 to 1993-08-04, the day of the Arusha Accords, and the accords did not end the war. The article this record already cites — \"Rwandan Civil War\", revision 1371242033 — opens: \"was fought between the Rwandan Armed Forces ... and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994\". The end moves to 1994-07-18 and nothing else on the record is touched. Read at its own cited revision, so no new source was added."
   },
   "origin": {
     "tool": "wikidata"
@@ -55,9 +56,9 @@
   "summary": "The English Wikipedia article \"Rwandan Civil War\", at revision 1371242033, opens: \"The Rwandan Civil War was a large-scale civil war in Rwanda which was fought between the Rwandan Armed Forces, representing the incumbent Third Rwandese Republic, and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994. The war arose from the long-running dispute between the Hutu and Tutsi groups within the Rwandan population. The Rwandan Revolution, which broke out in 1959, had replaced the Tutsi monarchy with a Hutu-led republic, forcing more than 336,000 Tutsis to seek refuge in neighbouring countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q426722, imported by tools/import/wikidata.mjs. The item's own description reads \"1990–1994 conflict in Rwanda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1990,
-    "end": 1993,
+    "end": 1994,
     "date": "1990-10-01",
-    "endDate": "1993-08-04"
+    "endDate": "1994-07-18"
   },
   "place": "rwanda-q1037",
   "region": "africa",
