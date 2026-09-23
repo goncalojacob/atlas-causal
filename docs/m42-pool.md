@@ -5746,3 +5746,279 @@ above and here carry 67.
   is a few lines and it is lane-B code, so a fire could write it; it is named
   here rather than done because a batch changing the importer mid-run is how a
   batch stops being reproducible.
+
+## Batch 45 — the Libyan civil war read as a chain, and the component it joined
+
+*23 September, the fire that picked the run up at 17:51Z. Today already carries
+a `## Curation 2026-09-23` section, so this is **not** the curation fire; A12 is
+spent, and the batches are what stands in front of the run. A10's order of need
+is unchanged and **Africa still trails hardest, 126 active against Europe's
+353**, Asia second at 136 — so this batch is **six Africa rows and no other
+lane**, and it is the first batch of the run to take a single war's own battles
+in the order the articles put them in.*
+
+### The vein, re-run whole, and the reading that changed
+
+The inverse `part of` vein was re-run over the 119 Africa-lane events that
+carry an item, against every record of any status on `m42` **and** on
+`origin/m42b`: **771 rows, 693 of them unheld.** Batch 44 read the list as a
+ranking and took the highest rows that fitted a rule; this batch read it as
+**a graph of one war** — of the 693, 32 name `Q81545`, the Libyan Civil War,
+which the atlas already holds along with its intervention, its Tripoli battle
+and the killing of Gaddafi. Six of those rows, read in date order, are a
+front moving west to east and back again.
+
+Two rows named in the stand after batch 44 were **not** taken, and the reason
+is the same for both: `Q1316065` Operation Ellamy and `Q921174` Opération
+Harmattan have **no `P625`, no `P276`, no `P131` and no `P17`**, so A9's four
+mechanical steps give them nothing and they would arrive placeless *and*
+laneless — which is to say they would not count in the Africa lane A10 sent
+this fire to fill. The row the stand put first, `Q97701895` the 2020 Darfur
+attacks, is here.
+
+**`Q1535667` Operation Artemis was imported and then deleted, before any
+commit.** The item has a `P580` and **no `P582`**, so A12 (3) writes
+`end: null` with `end-unstated`, `span()` reads that as infinity, and the
+operation falls outside `ituri-conflict`, which closes in 2003 — the same
+shape that blocks `Q152060` the Cabinda Conflict and `Q107461898` the 2021
+Taliban offensive. **That is now three rows on one rule**, and the rule is
+batch 40's, still open: *may a run write the end its record's own cited
+article states, where the item states none and the record carries
+`end-unstated`?* Filing it anyway would have raised the main count or written
+a child dated outside its parent; this fire did neither and took a row that
+files. Its class `Q699417` (EUFOR) was added to the class table with it and
+removed with it; `Q1535667` is out of `items` and out of the import state, so
+the row is importable again the moment the rule is answered.
+
+### The six imported, all filed, and the three places written
+
+| the record | sitelinks | lane | filed under | placed at | the edge it came for |
+| --- | --- | --- | --- | --- | --- |
+| `2020-darfur-attacks` | 14 | africa | `war-in-darfur` | `darfur-q46733` | `war-in-darfur --precondition-of-->` it |
+| `battle-of-sirte-2011` | 12 | africa | `libyan-civil-war` | `sirte` | it `--caused-->` `killing-of-muammar-gaddafi` |
+| `battle-of-ras-lanuf` | 12 | africa | `libyan-civil-war` | `ras-lanuf` (new) | `first-battle-of-brega --precondition-of-->` it, and it `--precondition-of-->` `second-battle-of-benghazi` |
+| `second-battle-of-benghazi` | 11 | africa | `libyan-civil-war` | `benghazi` (new) | `2011-military-intervention-in-libya --reacted-to-->` it |
+| `first-battle-of-benghazi` | 10 | africa | `libyan-civil-war` | `benghazi` (new) | it `--precondition-of-->` `second-battle-of-benghazi` |
+| `first-battle-of-zawiya` | 12 | africa | `libyan-civil-war` | `zawiya-libya` (new) | **none**, and §*The one the article would not connect* is why |
+
+**Main 243 → 243**, filed 535 → 541: every one of the six went under an
+umbrella the atlas already drew, and no slot was spent to keep the count where
+it was. **Every one of the six is placed**, which is the second batch in a row
+where that holds.
+
+Two classes were wanted and one was kept: **`Q21480300`, mass shooting**, for
+the Darfur attacks. It is added with `kind: event` and **no category**, and the
+note on it says why — the twelve of `data/categories.json` have no kind for a
+mass shooting *as a class*, and writing `war` there would be reading this one
+event's parent rather than the class. Fifty event classes in that table already
+carry no category, so this is the table's own shape and not an exception to it.
+
+### The places (A9), and the fourth batch to correct the same line by hand
+
+**Three place records are new** — `benghazi` (`Q40816`), `ras-lanuf`
+(`Q58462`) and `zawiya-libya` (`Q221503`) — each the `P276` of the battle that
+asked for it, each written by the import from the item, and each its own
+import call before the events so the events could reuse it rather than arrive
+placeless. `sirte` and `darfur-q46733` the atlas already held. Placeless events
+do not move: **50 before and 50 after**.
+
+**And for the fourth batch running, the precision was corrected by hand.** The
+import writes `where.precision: "point"`; all three of these are `Q515` or
+`Q486972` — a city and a human settlement — so all three are `city` under
+A12 (2)'s rule, read off the class. `karameh`, `dien-bien-phu`, `incheon` and
+now these three: **six records over four batches**. The line is named again in
+the stand below, and this fire did not write it, for the reason batch 44 gave.
+
+One label was corrected with them. `zawiya-libya`'s `where.label` came in as
+*"Zawiya, Libya"*, which is the article's title and its disambiguator — A12 (5)
+keeps that for an **event**'s title on purpose, but `where.label` is what the
+map draws under a mark, and the item's own English label is *"Zawiya"*, which
+the record's `names` already held first. That is a read of the item, not a
+rename.
+
+### The seven edges, and the component they joined
+
+**Seven edges, all `probable`, all from the articles the records cite**, at the
+revisions named in each locator. Six are the batch's own; the seventh is not,
+and it is the one that mattered most.
+
+| the edge | type | what the article states |
+| --- | --- | --- |
+| `battle-of-sirte-2011 → killing-of-muammar-gaddafi` | `caused` | the lead: Gaddafi and his son *"were wounded and captured, then tortured and killed in custody less than an hour later"* |
+| `first-battle-of-brega → battle-of-ras-lanuf` | `precondition-of` | Brega's own § Battle: *"The government force retreated to Ra's Lanuf ... after the battle"*; its § Aftermath: *"On 4 March, anti-Gaddafi fighters launched an attack against Ra's Lanuf"* |
+| `battle-of-ras-lanuf → second-battle-of-benghazi` | `precondition-of` | § Aftermath: *"After the battle the town was firmly in loyalist hands and government troops advanced further east taking the towns of Brega and Ajdabiya and reaching Benghazi"* |
+| `first-battle-of-benghazi → second-battle-of-benghazi` | `precondition-of` | February's § End has the compound taken and *"Gaddafi's troops evacuated"*; March's opening has the battle fought against *"anti-Gaddafi forces in Benghazi"* |
+| `2011-military-intervention-in-libya → second-battle-of-benghazi` | `reacted-to` | § France intervenes: *"at 4:45 pm, coalition intervention began as a French fighter jet fired on and destroyed several loyalist armored vehicles"*, and Mullen announcing the coalition *"had stopped the regime's progression on Benghazi"* |
+| `war-in-darfur → 2020-darfur-attacks` | `precondition-of` | § Background: the war drove groups off their land, *"in the 2010s, the original landowners returned and contested ownership"*, and the government and UNAMID connect the massacres to exactly that dispute |
+| `operation-unified-protector → battle-of-tripoli-2011` | `precondition-of` | § Operation Mermaid Dawn plans and aims: *"rebels drew up a list of over 120 targets for NATO to strike"*, with the loyalist command centres supplied to NATO by cells inside the city |
+
+**The seventh edge is between two records this batch did not import, and it is
+worth naming as a method.** After the six, `battle-of-sirte-2011` had joined
+`killing-of-muammar-gaddafi` and `battle-of-tripoli-2011` in a component of
+**three**, which was not the largest — the war's most consequential record was
+in a pocket of its own. One edge from the NATO operation the atlas already
+held, argued from Tripoli's own article, put all three into the main graph.
+**A5 says a batch writes its edges to what already exists; this is the first
+time the run has read an article to connect two records that were already
+here, because the batch's own arithmetic pointed at them.** That is A13's
+relations pass asked of a batch rather than of the curation fire, and it cost
+one fetch.
+
+Two of the seven are **not** repetitions of a single sentence and say so in
+their own explanation: `first-battle-of-benghazi → second-battle-of-benghazi`
+joins a statement in one article to a statement in another, and
+`war-in-darfur → 2020-darfur-attacks` rests on officials rather than on
+historians. `probable` is what that costs, and it is what every edge of this
+batch carries anyway.
+
+### The one the article would not connect
+
+**`first-battle-of-zawiya` carries no edge, and the article was read whole
+before that was written down.** At revision 1370619040 the only records this
+atlas holds that it names are comparisons and neighbours, not causes: *"Along
+with the Battle of Misrata, the First Battle of Zawiya was one of the
+bloodiest clashes of the Libyan Civil War"* — a ranking — and *"Zawia was the
+rebel city which was closest to Tripoli"* — a distance. Its § Aftermath runs
+on into the rebel capture of the city on 20 August, but that is the **Second**
+Battle of Zawiya, which the atlas does not hold, and it is the second battle
+and not this one that the Tripoli offensive advanced out of. Holding it anyway
+is the honest thing: it is the western front of a war whose eastern front the
+atlas now has in six records, and it is the bloodiest of them.
+
+`noEdge` is **156 before and 156 after**, which reads as no movement and is
+two movements: `first-battle-of-zawiya` arrives isolated, and
+`first-battle-of-brega`, which had no edge at all until this batch, stops
+being.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 778 | **784** |
+| **main** | **243** | **243** |
+| filed | 535 | 541 |
+| active edges | 761 | **768** |
+| largest connected component | 551 | **558** |
+| components | 186 | **185** |
+| events with no edge at all | 156 | 156 |
+| events with no place | 50 | 50 |
+| events naming no actor | 403 | 409 |
+| per lane, active | Europe 353, Asia 136, **Africa 126**, Americas 163 | Europe 353, Asia 136, **Africa 132**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 | unchanged |
+
+**A12 (4) asked of this batch and got nothing**: not one of the six items
+carries a `P710`, so the six name no actor and the count rises by six. That is
+the honest price of taking battles rather than treaties — the vein's Libyan
+rows name their participants in prose and not in a property.
+
+## Where the run stands after batch 45, for the fire that picks it up
+
+*23 September, 17:51Z onward. An import fire, one batch, no merge needed —
+`origin/m0` was already an ancestor of `m42` at claim time.*
+
+| | |
+| --- | --- |
+| corpus | **784 active** |
+| **main** | **243**, unmoved through fourteen batches and two curation fires |
+| filed | 541 |
+| largest connected component | **558** |
+| components | **185** |
+| events with no edge at all | **156** |
+| events with no place | **50** |
+| events naming no actor | **409** |
+| per lane, active | Europe 353, **Asia 136**, **Africa 132**, Americas 163 |
+| per lane, main | Europe 87, Asia 67, Africa 31, Americas 58 |
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next fire after 02:00Z on 24 September is the curation fire**, and it
+  owes A11(a) over every event and A13's relations pass. A13's standing note
+  holds — run the relations pass **over the new records only**, because reading
+  the same articles again returns the same rows — but this batch has found the
+  one exception worth writing into it: **the pass should also read outward from
+  a record the arithmetic points at.** Batch 44 left `battle-of-inchon` and
+  `2022-somali-ministry-of-education-bombings` isolated because *their own*
+  articles named nothing here; this batch connected a whole component of three
+  by reading somebody else's article about a record it had not imported. The
+  cheap version of that for the curation fire is: for every component that is
+  not the largest, read the article of **one** record in the largest that names
+  it. This batch's six and M42b's are the new ones, and
+  `first-battle-of-zawiya` is the one this batch knowingly left isolated.
+- **A9's first step has never once been used, and five Yom Kippur War rows are
+  waiting on it.** A12 (2) says the place pass *"reads the item's own `P625`
+  first"*, then `P276`, `P131`, `P17` — but no batch of this run has ever
+  written a place from step one, because `placeRecord()` is only ever called on
+  a *place* item and an event reaches a place only through its `P276`. So a
+  battle that carries its own coordinate and names no location is placeless,
+  and the vein has a shelf of them: `Q743358` Battle of Latakia (16),
+  `Q2072316` the Battle of the Chinese Farm (12), `Q1039366` the Ofira Air
+  Battle (11), `Q2705872` the Battle of Baltim (11), `Q2907870` Valley of Tears
+  (10) — every one of them inside `yom-kippur-war`'s span, every one of them
+  Africa or Asia, every one of them refused on the lane. **The question is one
+  sentence: may the place pass write a place record from the event item's own
+  `P625`, named from the event, at `precision: point`?** A12 (2) names
+  `point` *"for a battlefield or site"*, which reads as yes; what stops a fire
+  doing it unasked is that the place would carry the battle's own name, and a
+  place called "Battle of the Chinese Farm" is a record about an event. The
+  compromise a fire could take without a new rule is narrower and worth
+  naming: **where an existing place record's own outline or point already
+  contains the event's `P625`, reuse it** — `sinai-peninsula` holds four of
+  those five coordinates, and reusing a place the atlas already has is not
+  writing one.
+- **`placeRecord()` should write `where.precision` from the class table**, and
+  the case is no longer an argument: **six records over four consecutive
+  batches** have had the import's hard-coded `point` corrected to `city` by
+  hand — `karameh`, `dien-bien-phu`, `incheon`, `benghazi`, `ras-lanuf`,
+  `zawiya-libya`. A12 (2) already states the rule. It is a few lines and one
+  test, and it is the smallest piece of code this run has asked for four times.
+- **Batch 40's narrowing rule now blocks three rows and one of them was
+  imported and deleted to prove it.** `Q1535667` Operation Artemis, `Q152060`
+  the Cabinda Conflict and `Q107461898` the 2021 Taliban offensive all have a
+  `P580`, no `P582`, and a parent that closes before the run can say when they
+  ended. The question, unchanged and now cheap to answer: *may a run write the
+  end its record's own cited article states, where the item states none and the
+  record carries `end-unstated`?* Answering it yes unblocks three rows at once
+  and costs one clause in A7.
+- **The Africa vein is not thin and it is not a ranking.** 693 unheld rows over
+  the 119 Africa-lane events that carry an item. Of those, **32 name `Q81545`,
+  the Libyan Civil War**, and six of them are now here; `Q588059` the Battle of
+  Bin Jawad (11), `Q581087` the Third Battle of Brega (10) and `Q911471` the
+  Second Battle of Brega (10) are the rest of the same front and each has a
+  `P276` and dates inside the span, so each files and places without a rule the
+  run does not have. Reading a vein **as one war in date order** is what gave
+  this batch six edges out of six records instead of the yield batch 44 got,
+  and it is the method to repeat before the ranking is picked up again.
+- **The five rules of the stand after batch 43 are all still open**, unchanged:
+  the Arab Spring in two lanes (`Q555833`, `Q14746872`, `Q940675`, `Q947960`,
+  `Q1149627` and the rest of the `Q33761` rows); an umbrella whose own article
+  will not date its start (Mau Mau, the Mahdist War); batch 40's narrowing rule,
+  above; batch 41's parent that ends before its parts; and `Q3320778`, the 1890
+  British Ultimatum, refused on the lane.
+- **`Q1316065` Operation Ellamy and `Q921174` Opération Harmattan are refused
+  on the lane and should stop being offered.** They name no coordinate and no
+  place of any kind, so A9 gives them nothing and they would land in no lane —
+  the same refusal `Q709660` the Hoare–Laval Pact takes for a different reason.
+  A fire that wants them needs A9 to reach a fifth step, and the fifth step
+  would have to be *the parent's place*, which is a guess about where a thing
+  happened and not a read of it.
+
+### The check, green on the head, and the one test batch 45 turned red
+
+**Run 1560 on `acccea5f` is green on its first and only attempt**: validate
+clean, the whole suite passing, and the index step skipped because the push is
+not a pull request. Runs 1558 and 1559 were **cancelled rather than red**, each
+superseded by the next push of this fire.
+
+Locally, the suites the way the check runs them since M63: **1,789 pure tests
+and 279 browser tests, 0 failed and 0 skipped.** No browser test flaked on this
+fire, which is the first fire in three where that is true.
+
+**One pure test went red on this batch and it was the right one to go red.**
+`tests/m53.test.mjs` holds `docs/m53-polities.md` §4.1 to the corpus, and the
+`after M42` row read *374 of 778*; the six imports take the denominator to 784
+and leave the numerator at 374, because **not one of the six items carries a
+`P710`**. The row is retaken and the paragraph under it says so. That test is
+doing exactly what it was written for: the gap between a corpus that is
+imported and one that is written widens by the size of every batch, and the
+number is in a file rather than in a batch note nobody reads.
+

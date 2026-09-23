@@ -1149,7 +1149,16 @@
     "Q2366970",
     "Q1422396",
     "Q580765",
-    "Q32929"
+    "Q32929",
+    "Q40816",
+    "Q58462",
+    "Q97701895",
+    "Q2361214",
+    "Q1089511",
+    "Q942901",
+    "Q371620",
+    "Q221503",
+    "Q923890"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -4919,6 +4928,11 @@
       "kind": "place",
       "label": "metropolitan city of South Korea",
       "note": "Added in M42 batch 44 from the class Q20934, Incheon, names. The label and the description — \"type of administrative subdivision in South Korea\" — are read from the item itself over the network rather than guessed."
+    },
+    "Q21480300": {
+      "kind": "event",
+      "label": "mass shooting",
+      "note": "Added in M42 batch 45 for Q97701895, the 2020 Darfur attacks. The label and the description — 'incident in which an active shooter shoots multiple people with a firearm' — are read from the item itself over the network. No category: the twelve of data/categories.json have no kind for a mass shooting as a class, and 'war' would be read off this event's parent rather than off the class, which is not what the table is for. Fifty event classes already carry no category."
     }
   },
   "reconcile": true
