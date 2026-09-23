@@ -1430,6 +1430,12 @@
     },
     {
       "dissent": false,
+      "id": "2003-invasion-of-iraq--iraqi-insurgency--enabled",
+      "kind": "edge",
+      "locator": "\"2003 invasion of Iraq\", revision 1372133822"
+    },
+    {
+      "dissent": false,
       "id": "2005-portuguese-legislative-election--2009-portuguese-legislative-election--precondition-of",
       "kind": "edge",
       "locator": "\"2009 Portuguese legislative election\", revision 1373358204, § lead"
@@ -1736,6 +1742,12 @@
     },
     {
       "dissent": false,
+      "id": "bangladesh-liberation-war--india-pakistan-war-of-1971--caused",
+      "kind": "edge",
+      "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    },
+    {
+      "dissent": false,
       "id": "baring-crisis--panic-of-1893--precondition-of",
       "kind": "edge",
       "locator": "\"Panic of 1893\", revision 1374530409, § Causes"
@@ -1775,6 +1787,12 @@
       "id": "battle-of-annual--alhucemas-landing--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dien-bien-phu--geneva-conference--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
     },
     {
       "dissent": false,
@@ -3290,6 +3308,12 @@
     },
     {
       "dissent": false,
+      "id": "libyan-civil-war--operation-odyssey-dawn--reacted-to",
+      "kind": "edge",
+      "locator": "\"Operation Odyssey Dawn\", revision 1375561963"
+    },
+    {
+      "dissent": false,
       "id": "louvre-accord--black-monday--precondition-of",
       "kind": "edge",
       "locator": "\"Black Monday (1987)\", revision 1375770077, § Causes"
@@ -3557,6 +3581,12 @@
       "id": "operation-jaque--colombian-peace-process--precondition-of",
       "kind": "edge",
       "locator": "\"Colombian peace process\", revision 1375561117, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "operation-musketeer-1956--closure-of-the-suez-canal-1956-1957--caused",
+      "kind": "edge",
+      "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
     },
     {
       "dissent": false,
@@ -6314,6 +6344,12 @@
     },
     {
       "dissent": false,
+      "id": "2003-invasion-of-iraq",
+      "kind": "event",
+      "locator": "\"2003 invasion of Iraq\", revision 1372133822"
+    },
+    {
+      "dissent": false,
       "id": "2005-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"2005 Portuguese legislative election\", revision 1368665672"
@@ -6845,6 +6881,12 @@
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "\"Battle of Chacabuco\", revision 1373197409"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dien-bien-phu",
+      "kind": "event",
+      "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
     },
     {
       "dissent": false,
@@ -8066,6 +8108,12 @@
     },
     {
       "dissent": false,
+      "id": "india-pakistan-war-of-1971",
+      "kind": "event",
+      "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    },
+    {
+      "dissent": false,
       "id": "indigenous-depopulation-of-coastal-brazil",
       "kind": "event",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -8633,6 +8681,18 @@
       "id": "operation-keyhole",
       "kind": "event",
       "locator": "\"Operation Keyhole\", revision 1374609219"
+    },
+    {
+      "dissent": false,
+      "id": "operation-musketeer-1956",
+      "kind": "event",
+      "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
+    },
+    {
+      "dissent": false,
+      "id": "operation-odyssey-dawn",
+      "kind": "event",
+      "locator": "\"Operation Odyssey Dawn\", revision 1375561963"
     },
     {
       "dissent": false,

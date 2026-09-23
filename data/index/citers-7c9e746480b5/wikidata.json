@@ -1952,6 +1952,12 @@
     },
     {
       "dissent": false,
+      "id": "2003-invasion-of-iraq",
+      "kind": "event",
+      "locator": "Q107802"
+    },
+    {
+      "dissent": false,
       "id": "2005-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -2477,6 +2483,12 @@
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "Q1425658"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dien-bien-phu",
+      "kind": "event",
+      "locator": "Q604897"
     },
     {
       "dissent": false,
@@ -3674,6 +3686,12 @@
     },
     {
       "dissent": false,
+      "id": "india-pakistan-war-of-1971",
+      "kind": "event",
+      "locator": "Q1922071"
+    },
+    {
+      "dissent": false,
       "id": "indo-pakistani-war-of-1947-1948",
       "kind": "event",
       "locator": "Q652285"
@@ -4199,6 +4217,18 @@
       "id": "operation-keyhole",
       "kind": "event",
       "locator": "Q7097204"
+    },
+    {
+      "dissent": false,
+      "id": "operation-musketeer-1956",
+      "kind": "event",
+      "locator": "Q2915155"
+    },
+    {
+      "dissent": false,
+      "id": "operation-odyssey-dawn",
+      "kind": "event",
+      "locator": "Q878102"
     },
     {
       "dissent": false,

@@ -2403,6 +2403,40 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "2003-invasion-of-iraq",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "iraq-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "participants-from-p710"
+        ],
+        "note": "Filed under `iraq-war` from `P361`: 20 March to 1 May 2003 is inside the war's span and the article's first sentence calls the invasion \"the first stage of the Iraq War\". Five of the item's thirteen `P710` participants are actors this atlas holds and are written as `belligerent` (A12 (4)); four of them are the coalition members the lead names — \"mainly American, British, Australian, and Polish troops\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2003 invasion of Iraq"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5137,7 +5171,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "origin": {
@@ -5670,6 +5704,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chacabuco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "battle-of-dien-bien-phu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-indochina-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `first-indochina-war` from `P361`: 13 March to 7 May 1954 is inside the war's 1946-12-19 to 1954-08-01, and the article's own §Aftermath calls it \"the decisive battle of the First Indochina War\". A9's first step and its second agree on the place: the battle's own `P625` is 21.3869/103.0156 and Q36027, its `P276`, carries 21.3924/103.0160 — the same valley to two places — so the place record is written for the city and not for the battle. The item names no `P710`, so no actor line.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dien Bien Phu"
     },
     {
       "authors": [
@@ -8800,7 +8867,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "closure-of-the-suez-canal-1956-1957",
       "kind": "event",
       "origin": {
@@ -12391,7 +12458,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "geneva-conference",
       "kind": "event",
       "origin": {
@@ -12693,9 +12760,13 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "identity-by-hand"
+        ],
+        "note": "M42 batch 43. Q626191 came out of the inverse `part of` vein as an item nothing held; the run created `indian-annexation-of-goa` from it, found this record the same event, deleted the duplicate and wrote the identity here by hand — the M20 route (deviation 1235). The item's `P361` names the Portuguese Colonial War and this record is **not** filed under it: M62 §3 decided that an event whose author is another state, with the umbrella as its object, is not the umbrella's part.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-23",
       "status": "active",
       "title": "India annexes Goa, Daman and Diu"
     },
@@ -13873,6 +13944,41 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "india-pakistan-war-of-1971",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bangladesh-liberation-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "participants-from-p710",
+          "lane-from-seeds"
+        ],
+        "note": "Filed under `bangladesh-liberation-war` from `P361`: 3 to 16 December 1971 is inside the liberation war, whose name the article's first sentence gives as where the confrontation \"occurred\". Placeless: the item names six `P276` locations across two fronts and the title names none of them, so batch 39's rule leaves it a lane and no point — asia, named for the item in the seeds file. Both `P710` participants are held and written as `belligerent`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "India–Pakistan war of 1971"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -14464,7 +14570,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "iraqi-insurgency",
       "kind": "event",
       "origin": {
@@ -15878,7 +15984,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "libyan-civil-war",
       "kind": "event",
       "origin": {
@@ -17666,6 +17772,73 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Keyhole"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "operation-musketeer-1956",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "suez-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "Filed under `suez-crisis` from `P361`: the item gives no `P580` and no `P582`, only `P585` November 1956, which is inside the crisis's 1956-10-29 to 1956-11-07 — a point in time is its own end, so `end-unstated` does not apply (A12 (3)). The place is `suez-canal`, the item's own `P276` and a record this atlas already held. The item names no `P710`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Musketeer (1956)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "degree": 1,
+      "id": "operation-odyssey-dawn",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "2011-military-intervention-in-libya",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "participants-from-p710"
+        ],
+        "note": "Filed under `2011-military-intervention-in-libya` from `P361`: 19 to 31 March 2011 is inside the intervention, and the first sentence calls this \"the U.S. code name for the American role\" in it. The place is `libya-q1016`, the item's `P276` and a record already held. Twelve of the item's twenty-four `P710` participants are actors this atlas holds and are written as `belligerent` (A12 (4)); the rest are commands, ships and people.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Odyssey Dawn"
     },
     {
       "authors": [

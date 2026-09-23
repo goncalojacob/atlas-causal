@@ -1850,6 +1850,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "2003-invasion-of-iraq",
+      "id": "2003-invasion-of-iraq--iraqi-insurgency--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iraqi-insurgency",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "telo-2007-historia-contemporanea"
       ],
@@ -3618,6 +3646,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-23",
+      "from": "bangladesh-liberation-war",
+      "id": "bangladesh-liberation-war--india-pakistan-war-of-1971--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "india-pakistan-war-of-1971",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "baring-crisis",
       "id": "baring-crisis--panic-of-1893--precondition-of",
@@ -3749,6 +3805,34 @@
       "status": "active",
       "to": "alhucemas-landing",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "battle-of-dien-bien-phu",
+      "id": "battle-of-dien-bien-phu--geneva-conference--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "geneva-conference",
+      "type": "caused"
     },
     {
       "authors": [
@@ -11092,6 +11176,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "libyan-civil-war",
+      "id": "libyan-civil-war--operation-odyssey-dawn--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-odyssey-dawn",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "ramos-2009-historia-de-portugal",
         "wikipedia-pt"
       ],
@@ -12382,6 +12494,34 @@
       "status": "active",
       "to": "colombian-peace-process",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-23",
+      "from": "operation-musketeer-1956",
+      "id": "operation-musketeer-1956--closure-of-the-suez-canal-1956-1957--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "closure-of-the-suez-canal-1956-1957",
+      "type": "caused"
     },
     {
       "authors": [

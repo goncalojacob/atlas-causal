@@ -6485,6 +6485,15 @@
         }
       ]
     },
+    "battle-of-dien-bien-phu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "battle-of-dunkirk": {
       "from": "git",
       "versions": [
@@ -10835,6 +10844,15 @@
             "actors"
           ],
           "on": "2026-09-06"
+        },
+        {
+          "fields": [
+            "review",
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-23"
         }
       ]
     },
@@ -11704,6 +11722,15 @@
             "review"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "india-pakistan-war-of-1971": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
@@ -14522,6 +14549,15 @@
             "sources",
             "summary"
           ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-musketeer-1956": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-23"
         }
       ]

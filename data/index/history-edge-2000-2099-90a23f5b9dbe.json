@@ -34,6 +34,15 @@
         }
       ]
     },
+    "2003-invasion-of-iraq--iraqi-insurgency--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
     "2005-portuguese-legislative-election--2007-portuguese-abortion-referendum--caused": {
       "from": "git",
       "versions": [
@@ -766,6 +775,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "libyan-civil-war--operation-odyssey-dawn--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         }
       ]
     },
