@@ -4425,10 +4425,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 8,
@@ -4443,11 +4449,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10103,7 +10110,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 1,
@@ -10118,12 +10126,13 @@
       },
       "review": {
         "flags": [
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: written on Wikidata’s Q2039931 — P571 1607-01-01, P576 1898 — to carry the century between `cuba-spain` (to 1782) and `cuba-under-spain` (from 1886), which is where `the-cuban-sugar-boom` sits. It overlaps both and no relation is written to either: whether these are one record under three labels is the M49 question and is a person’s. It holds no ground.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -15236,10 +15245,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -15254,11 +15269,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -17956,7 +17972,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 12,
@@ -17971,12 +17988,13 @@
       },
       "review": {
         "flags": [
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: written on Wikidata’s Q217230 — P571 1822-09-07, P576 1889-11-15 — because the atlas had no Brazilian state between 1877 and 1886, both of which are dataset boundaries. `brazil` now begins at this record’s dissolution and the CShapes period of 1886 is cut at the same date. It holds no ground before 1886: Brazilian territory from 1815 to 1886 still sits on records whose own dates have ended, and docs/m53-polities.md §2.4 says what a person must decide about it.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -18736,7 +18754,9 @@
       ],
       "cites": [
         "rosas-1994-estado-novo",
-        "costa-pinto-2003-contemporary-portugal"
+        "costa-pinto-2003-contemporary-portugal",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 35,
@@ -18751,9 +18771,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "polity-description"
+        ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -19456,7 +19479,9 @@
       ],
       "cites": [
         "wheeler-1978-republican-portugal",
-        "ramos-2009-historia-de-portugal"
+        "ramos-2009-historia-de-portugal",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 22,
@@ -19470,9 +19495,12 @@
         "tool": "assistant"
       },
       "review": {
+        "flags": [
+          "polity-description"
+        ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -20857,12 +20885,17 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "cshapes-2-0",
         "historical-basemaps",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 8,
@@ -20877,12 +20910,13 @@
       "review": {
         "flags": [
           "m55-germany",
-          "m55-joined"
+          "m55-joined",
+          "polity-description"
         ],
         "note": "M55: this record was named \"Germany (Prussia)\" and was one record for three polities, 1886 to 1945. It is now the German Empire alone, on Wikidata’s Q43287 — P571 1871-01-01, P576 1918-11-09 — and the Weimar Republic and the Nazi state carry the rest. `germany` is merged into it: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both snapshots fall inside these dates. Its eighteen colonial dependencies all run 1886–1916 and are untouched.",
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -32201,7 +32235,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 15,
@@ -32216,12 +32251,13 @@
       },
       "review": {
         "flags": [
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: written on Wikidata’s Q45670 — P571 1139-07-25, P576 1910-10-05 — because the atlas held no Portugal before 1886 and twelve chain events named nobody for want of one. It overlaps `portugal` (1886–) and ends where `first-portuguese-republic` (1910–) begins; no relation is written to either, because whether these are the same record under two regimes or two records is the M49 question and is a person’s. It holds no ground.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -45331,7 +45367,8 @@
       ],
       "cites": [
         "wikidata",
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 11,
@@ -45346,12 +45383,13 @@
       },
       "review": {
         "flags": [
-          "m55-germany"
+          "m55-germany",
+          "polity-description"
         ],
         "note": "M55: written to carry the last of CShapes’ entity 255, which held three polities under one label. Its dates are Wikidata’s Q7318: P571 1933-03-15 and P576 1945-05-23. This is the record World War II and the Holocaust now name, in place of the chip reading \"Germany (Prussia)\" that the owner objected to on 17 September. Four years stand between its dissolution and the Federal Republic’s cited inception; the succession says so in its own note.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -50905,11 +50943,16 @@
         {
           "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "historical-basemaps",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 31,
@@ -50924,12 +50967,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m51-split"
+          "m51-split",
+          "polity-description"
         ],
         "note": "M51: this record and turkey-ottoman-empire stand on the same ground either side of the 1885/1886 seam (89.79% of the smaller, docs/m51-overlaps.md) but are two polities, so this is a succession and not a join. It ends 1922 because Wikidata states P576 1922-11-17 on Q12560. Nothing here is authored: the year is that claim and the 1400 is the import's own.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -57642,12 +57686,17 @@
         {
           "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "historical-basemaps",
         "cshapes-2-0",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 16,
@@ -57662,12 +57711,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m52-russia"
+          "m52-russia",
+          "polity-description"
         ],
         "note": "M52: this record and `soviet-union` are two of the three polities CShapes carried under gwcode 365. Its interval is now Wikidata’s Q34266 — P571 1721-10-22, P576 1917-09-01 — and it holds entity 365’s first three periods; the third runs to 1917-12-05 because CShapes draws no boundary on the day Wikidata gives, and cutting one there would invent a border. No succession is written to what follows: five years stand between this end and the Soviet Union’s start. See docs/m52-russia.md.",
         "status": "draft"
       },
-      "revised": "2026-09-16",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -57746,7 +57796,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 6,
@@ -57761,12 +57812,13 @@
       },
       "review": {
         "flags": [
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: written on Wikidata’s Q2184 — P571 1917-10-25, P576 1991-12-25 — to carry the three events M52 left naming `soviet-union` before its cited inception of 1922-12-30. It stands beside the Soviet Union rather than before it: the two intervals overlap by design, because this was a republic within that union, and no succession is written between them. It holds no territory; the nine CShapes periods of the 1917–1922 gap stay where M52 put them, flagged m52-gap.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -58287,7 +58339,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 2,
@@ -58302,12 +58355,13 @@
       },
       "review": {
         "flags": [
-          "m53-polities"
+          "m53-polities",
+          "polity-description"
         ],
         "note": "M53: written on Wikidata’s Q861551 — P571 1626, P576 1804-01-01 — so that `saint-domingue-and-the-french-sugar-colony` and `haitian-revolution-1791-1804` can name the polity they are about. Its dissolution is the same day `haiti` on Q790 gives for its own inception, but `haiti` in this atlas is the CShapes record beginning 1886, so no succession is written: that is the same 1886 question M49 left open. It holds no ground.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -59081,7 +59135,9 @@
       ],
       "cites": [
         "macqueen-1997-decolonization",
-        "telo-2007-historia-contemporanea"
+        "telo-2007-historia-contemporanea",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-04",
       "degree": 1,
@@ -59097,11 +59153,12 @@
       },
       "review": {
         "flags": [
-          "actor-drafted"
+          "actor-drafted",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -63026,7 +63083,8 @@
       ],
       "cites": [
         "wikidata",
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 28,
@@ -63040,12 +63098,13 @@
       },
       "review": {
         "flags": [
-          "m52-russia"
+          "m52-russia",
+          "polity-description"
         ],
         "note": "M52: written to carry the middle of CShapes’ gwcode 365, which held three polities under one label. Its dates are Wikidata’s Q15180: P571 1922-12-30, the normal-rank value — the 1923-07-06 inception, the constitution, is deprecated there — and P576 1991-12-26. Nine of its nineteen periods begin before 1922 and are flagged m52-gap: CShapes draws entity 365 continuously across those years and whose ground it was is open. See docs/m52-russia.md.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -66756,7 +66815,9 @@
       ],
       "cites": [
         "telo-2007-historia-contemporanea",
-        "costa-pinto-2003-contemporary-portugal"
+        "costa-pinto-2003-contemporary-portugal",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 38,
@@ -66771,11 +66832,12 @@
       },
       "review": {
         "flags": [
-          "wikidata-assigned-by-assistant"
+          "wikidata-assigned-by-assistant",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -70300,11 +70362,16 @@
         {
           "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
         "historical-basemaps",
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 4,
@@ -70319,12 +70386,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "m59-dissolved"
+          "m59-dissolved",
+          "polity-description"
         ],
         "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q174193 (United Kingdom of Great Britain and Ireland) gives P576 1927-04-12, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began.",
         "status": "draft"
       },
-      "revised": "2026-09-18",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -71250,10 +71318,16 @@
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "cites": [
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 2,
@@ -71268,11 +71342,12 @@
       "review": {
         "flags": [
           "standing-backfilled",
-          "imported-by-cshapes"
+          "imported-by-cshapes",
+          "polity-description"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -73878,7 +73953,8 @@
       ],
       "cites": [
         "wikidata",
-        "cshapes-2-0"
+        "cshapes-2-0",
+        "wikipedia-en"
       ],
       "created": "2026-09-17",
       "degree": 8,
@@ -73893,12 +73969,13 @@
       },
       "review": {
         "flags": [
-          "m55-germany"
+          "m55-germany",
+          "polity-description"
         ],
         "note": "M55: written to carry the middle of CShapes’ entity 255, which held three polities under one label. Its dates are Wikidata’s Q41304: P571 1918-11-09, the day Q43287 gives for the German Empire’s dissolution, and P576 1933, which that item gives to the year and not to the day. Its territory is entity 255’s second and third periods and the tail of the first, each cut at a cited date rather than redrawn.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {

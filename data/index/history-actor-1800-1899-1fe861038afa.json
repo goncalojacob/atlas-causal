@@ -410,6 +410,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2049,6 +2058,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2564,9 +2581,13 @@
         {
           "fields": [
             "aliases",
-            "id"
+            "authors",
+            "id",
+            "review",
+            "sources",
+            "summary"
           ],
-          "on": "2026-09-17"
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7213,6 +7234,15 @@
             "when"
           ],
           "on": "2026-09-18"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

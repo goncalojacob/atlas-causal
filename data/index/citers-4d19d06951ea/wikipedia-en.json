@@ -50,6 +50,12 @@
     },
     {
       "dissent": false,
+      "id": "austria-hungary",
+      "kind": "actor",
+      "locator": "\"Austria-Hungary\", revision 1375906665"
+    },
+    {
+      "dissent": false,
       "id": "azerbaijan",
       "kind": "actor",
       "locator": "\"Azerbaijan\", revision 1375575338"
@@ -182,6 +188,12 @@
     },
     {
       "dissent": false,
+      "id": "captaincy-general-of-cuba",
+      "kind": "actor",
+      "locator": "\"Captaincy General of Cuba\", revision 1368931206"
+    },
+    {
+      "dissent": false,
       "id": "central-african-republic",
       "kind": "actor",
       "locator": "\"Central African Republic\", revision 1374643087"
@@ -266,6 +278,12 @@
     },
     {
       "dissent": false,
+      "id": "czechoslovakia",
+      "kind": "actor",
+      "locator": "\"Czechoslovakia\", revision 1375111756"
+    },
+    {
+      "dissent": false,
       "id": "democratic-leftwing-republican-party",
       "kind": "actor",
       "locator": "\"Democratic Leftwing Republican Party\", revision 1254932259"
@@ -320,6 +338,12 @@
     },
     {
       "dissent": false,
+      "id": "empire-of-brazil",
+      "kind": "actor",
+      "locator": "\"Empire of Brazil\", revision 1374829984"
+    },
+    {
+      "dissent": false,
       "id": "equatorial-guinea",
       "kind": "actor",
       "locator": "\"Equatorial Guinea\", revision 1376142286"
@@ -329,6 +353,12 @@
       "id": "eritrea",
       "kind": "actor",
       "locator": "\"Eritrea\", revision 1375347735"
+    },
+    {
+      "dissent": false,
+      "id": "estado-novo",
+      "kind": "actor",
+      "locator": "\"Estado Novo (Portugal)\", revision 1375585347"
     },
     {
       "dissent": false,
@@ -368,6 +398,12 @@
     },
     {
       "dissent": false,
+      "id": "first-portuguese-republic",
+      "kind": "actor",
+      "locator": "\"First Portuguese Republic\", revision 1370244290"
+    },
+    {
+      "dissent": false,
       "id": "france",
       "kind": "actor",
       "locator": "\"France\", revision 1373166385"
@@ -395,6 +431,12 @@
       "id": "georgia",
       "kind": "actor",
       "locator": "\"Georgia (country)\", revision 1375637354"
+    },
+    {
+      "dissent": false,
+      "id": "german-empire",
+      "kind": "actor",
+      "locator": "\"German Empire\", revision 1376320372"
     },
     {
       "dissent": false,
@@ -539,6 +581,12 @@
       "id": "kenya",
       "kind": "actor",
       "locator": "\"Kenya\", revision 1374638842"
+    },
+    {
+      "dissent": false,
+      "id": "kingdom-of-portugal",
+      "kind": "actor",
+      "locator": "\"Kingdom of Portugal\", revision 1368546868"
     },
     {
       "dissent": false,
@@ -746,6 +794,12 @@
     },
     {
       "dissent": false,
+      "id": "nazi-germany",
+      "kind": "actor",
+      "locator": "\"Nazi Germany\", revision 1375566482"
+    },
+    {
+      "dissent": false,
       "id": "nepal",
       "kind": "actor",
       "locator": "\"Nepal\", revision 1375886893"
@@ -797,6 +851,12 @@
       "id": "oman",
       "kind": "actor",
       "locator": "\"Oman\", revision 1375819396"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-empire",
+      "kind": "actor",
+      "locator": "\"Ottoman Empire\", revision 1375893091"
     },
     {
       "dissent": false,
@@ -926,15 +986,39 @@
     },
     {
       "dissent": false,
+      "id": "russian-empire",
+      "kind": "actor",
+      "locator": "\"Russian Empire\", revision 1376138418"
+    },
+    {
+      "dissent": false,
       "id": "russian-federation",
       "kind": "actor",
       "locator": "\"Russia\", revision 1375974488"
     },
     {
       "dissent": false,
+      "id": "russian-sfsr",
+      "kind": "actor",
+      "locator": "\"Russian Soviet Federative Socialist Republic\", revision 1376091324"
+    },
+    {
+      "dissent": false,
       "id": "rwanda",
       "kind": "actor",
       "locator": "\"Rwanda\", revision 1373895007"
+    },
+    {
+      "dissent": false,
+      "id": "saint-domingue",
+      "kind": "actor",
+      "locator": "\"Saint-Domingue\", revision 1375182685"
+    },
+    {
+      "dissent": false,
+      "id": "sao-tome-and-principe",
+      "kind": "actor",
+      "locator": "\"São Tomé and Príncipe\", revision 1375996168"
     },
     {
       "dissent": false,
@@ -1001,6 +1085,12 @@
       "id": "south-sudan",
       "kind": "actor",
       "locator": "\"South Sudan\", revision 1375827896"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-union",
+      "kind": "actor",
+      "locator": "\"Soviet Union\", revision 1375523844"
     },
     {
       "dissent": false,
@@ -1076,6 +1166,12 @@
     },
     {
       "dissent": false,
+      "id": "third-portuguese-republic",
+      "kind": "actor",
+      "locator": "\"Third Portuguese Republic\", revision 1374733623"
+    },
+    {
+      "dissent": false,
       "id": "togo",
       "kind": "actor",
       "locator": "\"Togo\", revision 1376059890"
@@ -1130,6 +1226,12 @@
     },
     {
       "dissent": false,
+      "id": "united-kingdom-of-great-britain-and-ireland",
+      "kind": "actor",
+      "locator": "\"United Kingdom of Great Britain and Ireland\", revision 1374532628"
+    },
+    {
+      "dissent": false,
       "id": "united-states-of-america",
       "kind": "actor",
       "locator": "\"United States\", revision 1376059500"
@@ -1160,9 +1262,21 @@
     },
     {
       "dissent": false,
+      "id": "vietnam-republic-of",
+      "kind": "actor",
+      "locator": "\"South Vietnam\", revision 1376186839"
+    },
+    {
+      "dissent": false,
       "id": "wagner-group",
       "kind": "actor",
       "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic",
+      "kind": "actor",
+      "locator": "\"Weimar Republic\", revision 1375521003"
     },
     {
       "dissent": false,

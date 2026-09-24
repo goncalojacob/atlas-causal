@@ -15343,6 +15343,15 @@
             "when"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

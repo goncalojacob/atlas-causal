@@ -2896,6 +2896,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -15824,6 +15832,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

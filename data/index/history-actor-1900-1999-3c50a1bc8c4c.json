@@ -1793,6 +1793,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2187,6 +2196,14 @@
             "sitelinks"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2567,6 +2584,14 @@
             "sitelinks"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5120,6 +5145,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6424,6 +6457,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6511,6 +6552,14 @@
             "review"
           ],
           "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6962,6 +7011,14 @@
             "summary"
           ],
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7367,6 +7424,14 @@
             "sitelinks"
           ],
           "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7920,6 +7985,15 @@
             "review"
           ],
           "on": "2026-09-20"
+        },
+        {
+          "fields": [
+            "authors",
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7929,6 +8003,14 @@
         {
           "first": true,
           "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

@@ -50,6 +50,12 @@
     },
     {
       "dissent": false,
+      "id": "austria-hungary",
+      "kind": "actor",
+      "locator": "Q28513, P2046 (area) and P1082 (population, 1914)"
+    },
+    {
+      "dissent": false,
       "id": "azerbaijan",
       "kind": "actor",
       "locator": "Q227, P2046 (area) and P1082 (population, 2023)"
@@ -238,6 +244,12 @@
       "dissent": false,
       "id": "captaincy-general-of-cuba",
       "kind": "actor",
+      "locator": "Q2039931, P571 and P576"
+    },
+    {
+      "dissent": false,
+      "id": "captaincy-general-of-cuba",
+      "kind": "actor",
       "locator": "Q2039931, P576 1898"
     },
     {
@@ -326,6 +338,12 @@
     },
     {
       "dissent": false,
+      "id": "czechoslovakia",
+      "kind": "actor",
+      "locator": "Q33946, P2046 (area) and P1082 (population, 1992)"
+    },
+    {
+      "dissent": false,
       "id": "democratic-leftwing-republican-party",
       "kind": "actor",
       "locator": "Q3366682"
@@ -394,6 +412,12 @@
       "dissent": false,
       "id": "empire-of-brazil",
       "kind": "actor",
+      "locator": "Q217230, P571 and P576"
+    },
+    {
+      "dissent": false,
+      "id": "empire-of-brazil",
+      "kind": "actor",
       "locator": "Q217230, P576 1889-11-15"
     },
     {
@@ -413,6 +437,12 @@
       "id": "eritrea",
       "kind": "actor",
       "locator": "Q986, P2046 (area) and P1082 (population, 2019)"
+    },
+    {
+      "dissent": false,
+      "id": "estado-novo",
+      "kind": "actor",
+      "locator": "Q824489, P2046 (area)"
     },
     {
       "dissent": false,
@@ -452,6 +482,12 @@
     },
     {
       "dissent": false,
+      "id": "first-portuguese-republic",
+      "kind": "actor",
+      "locator": "Q167360, P2046 (area) and P1082 (population, 1911)"
+    },
+    {
+      "dissent": false,
       "id": "france",
       "kind": "actor",
       "locator": "Q142, P2046 (area) and P1082 (population, 2025)"
@@ -485,6 +521,12 @@
       "id": "german-empire",
       "kind": "actor",
       "locator": "Q43287, P571 1871-01-01"
+    },
+    {
+      "dissent": false,
+      "id": "german-empire",
+      "kind": "actor",
+      "locator": "Q43287, P571 and P576"
     },
     {
       "dissent": false,
@@ -659,6 +701,12 @@
       "id": "kingdom-of-hawaii",
       "kind": "actor",
       "locator": "Q156418, P576 1895-01-24"
+    },
+    {
+      "dissent": false,
+      "id": "kingdom-of-portugal",
+      "kind": "actor",
+      "locator": "Q45670, P1082 (population, 1910)"
     },
     {
       "dissent": false,
@@ -892,6 +940,12 @@
       "dissent": false,
       "id": "nazi-germany",
       "kind": "actor",
+      "locator": "Q7318, P2046 (area) and P1082 (population, 1940)"
+    },
+    {
+      "dissent": false,
+      "id": "nazi-germany",
+      "kind": "actor",
       "locator": "Q7318, P571 1933-03-15"
     },
     {
@@ -953,6 +1007,12 @@
       "id": "oman",
       "kind": "actor",
       "locator": "Q842, P2046 (area) and P1082 (population, 2018)"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-empire",
+      "kind": "actor",
+      "locator": "Q12560, P2046 (area) and P1082 (population, 1912)"
     },
     {
       "dissent": false,
@@ -1114,6 +1174,12 @@
       "dissent": false,
       "id": "russian-empire",
       "kind": "actor",
+      "locator": "Q34266, P2046 (area) and P1082 (population, 1916)"
+    },
+    {
+      "dissent": false,
+      "id": "russian-empire",
+      "kind": "actor",
       "locator": "Q34266, P571 1721-10-22"
     },
     {
@@ -1144,6 +1210,12 @@
       "dissent": false,
       "id": "russian-sfsr",
       "kind": "actor",
+      "locator": "Q2184, P2046 (area) and P1082 (population, 1990)"
+    },
+    {
+      "dissent": false,
+      "id": "russian-sfsr",
+      "kind": "actor",
       "locator": "Q2184, P571 1917-10-25"
     },
     {
@@ -1162,6 +1234,12 @@
       "dissent": false,
       "id": "saint-domingue",
       "kind": "actor",
+      "locator": "Q861551, P2046 (area)"
+    },
+    {
+      "dissent": false,
+      "id": "saint-domingue",
+      "kind": "actor",
       "locator": "Q861551, P571 1626"
     },
     {
@@ -1169,6 +1247,12 @@
       "id": "saint-domingue",
       "kind": "actor",
       "locator": "Q861551, P576 1804-01-01"
+    },
+    {
+      "dissent": false,
+      "id": "sao-tome-and-principe",
+      "kind": "actor",
+      "locator": "Q1039, P2046 (area) and P1082 (population, 2017)"
     },
     {
       "dissent": false,
@@ -1241,6 +1325,12 @@
       "id": "south-sudan",
       "kind": "actor",
       "locator": "Q958, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-union",
+      "kind": "actor",
+      "locator": "Q15180, P2046 (area) and P1082 (population, 1989)"
     },
     {
       "dissent": false,
@@ -1340,6 +1430,12 @@
     },
     {
       "dissent": false,
+      "id": "third-portuguese-republic",
+      "kind": "actor",
+      "locator": "Q1259200, P571 and P576"
+    },
+    {
+      "dissent": false,
       "id": "togo",
       "kind": "actor",
       "locator": "Q945, P2046 (area) and P1082 (population, 2017)"
@@ -1402,6 +1498,12 @@
       "dissent": false,
       "id": "united-kingdom-of-great-britain-and-ireland",
       "kind": "actor",
+      "locator": "Q174193, P2046 (area) and P1082 (population, 1921)"
+    },
+    {
+      "dissent": false,
+      "id": "united-kingdom-of-great-britain-and-ireland",
+      "kind": "actor",
       "locator": "Q174193, P576 1927-04-12"
     },
     {
@@ -1454,6 +1556,12 @@
     },
     {
       "dissent": false,
+      "id": "vietnam-republic-of",
+      "kind": "actor",
+      "locator": "Q180573, P2046 (area) and P1082 (population, 1974)"
+    },
+    {
+      "dissent": false,
       "id": "wadai-empire",
       "kind": "actor",
       "locator": "Q1132786, P576 1909"
@@ -1463,6 +1571,12 @@
       "id": "wassoulou-empire",
       "kind": "actor",
       "locator": "Q568712, P576 1898-09-29"
+    },
+    {
+      "dissent": false,
+      "id": "weimar-republic",
+      "kind": "actor",
+      "locator": "Q41304, P2046 (area) and P1082 (population, 1933)"
     },
     {
       "dissent": false,
