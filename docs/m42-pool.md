@@ -7300,3 +7300,77 @@ nowhere in their title or summary (review finding 1) pass the guard, because
 their place is in the right lane; `world-war-ii` at `russia` is the example
 the review gives. That is the owner's question — *may a multi-valued `P17`
 place an event at all* — and not this pass's.
+
+## A14 (3) — the evidence put on disk at the revision it is cited at
+
+*24 September, the 04:58Z fire. The only pass of this fire that leaves the
+sandbox: 1,014 revisions resolved to their items through `api.php`, 357 leads
+fetched through the REST summary endpoint.*
+
+The 24 September review, finding 5: *"the evidence the last two days cite is
+not on disk"* — the curation fires read whole articles live at the current
+revision, cited that revision, and never refreshed the cache, so 118
+citations named a revision `tools/import/cache/wikipedia/` did not hold and
+several hundred more named an article it had never seen. A citation whose
+revision only exists on Wikipedia's servers is checkable, but not by
+`review.html` offline, and not by the next fire, which re-fetches what the
+last one already read.
+
+**The endpoint.** `summaryUrl()` in `tools/import/wikidata.mjs` uses
+`/api/rest_v1/page/summary/{title}`; the same endpoint takes a revision as a
+second path segment, `/{title}/{revid}`, and answers with the same envelope —
+`extract` and `revision` — at that revision. So the text that lands is the
+same shape as the 1,069 leads already on disk, written by the same code path,
+and no second shape enters the cache. The action API is used for one thing
+only: which Wikidata item each cited revision belongs to, 50 revisions a call,
+because the cache is filed by item.
+
+**Two sweeps, because the first chose badly.** The first cached, per item, the
+best of the revisions it still had to fetch — and an article cited at two
+revisions, one of them already on disk, could lose the one on disk. The second
+counts every citation of every article first and caches the revision the most
+citations name, ties to the later, which is the fewest citations left pointing
+at text the cache does not hold.
+
+| | before | after |
+| --- | --- | --- |
+| article references in `wikipedia-en` citations on active records | 1,927 | 1,927 |
+| **cached at the revision cited** | 1,342 | **1,854** |
+| cached only at another cited revision of the same article | 578 | **72** |
+| the cache has never seen | 6 | **0** |
+| locators naming no article | 1 | 1 |
+
+**Counts.** 357 cache entries written (323 in the first sweep, 34 in the
+second), 0 refused, 0 revisions the API could not place. Nothing under `data/`
+changed, so the corpus, the index and the validator are exactly where A14(2)
+left them: **858 active, 242 main, 616 filed, 843 edges, largest component
+609, 0 errors, 496 warnings**.
+
+**Deviation 1410.** *The summary endpoint answers with `revision` as a string,
+and a pass that believes `Number.isInteger` refuses all 323 of its own
+fetches.* `fetchLeads()` has coerced it since the import was written —
+`Number.isInteger(body?.revision) ? body.revision : Number(body?.revision)` —
+and this pass reimplemented the check without the coercion, wrote nothing, and
+reported *"no extract at that revision"* 323 times for 323 good answers. A
+pass that writes nothing and blames the source is the failure mode worth
+naming: the first reading of that report was that the endpoint has no
+summaries at old revisions, which one `curl` disproved.
+
+**The 72 that are left are the cache's shape and not this pass's reach.** They
+are 59 articles that two or more records cite at different revisions — `Great
+Depression`, `World War I`, `Algerian War` and `Gaza war` at five each — and
+the cache holds one lead per item per language, so one of the revisions must
+lose. Which one it is is now the most-cited rather than the last written.
+Making it hold more is a change to `schema/v1/wikipedia-lead.json` and to how
+the file is named, which the review itself puts to the owner.
+
+**Six citations name a title the cache files under another name** and are
+*not* among the 72: the lead is on disk at exactly the revision cited, under
+the article's own title. `battle-of-musa-dagh` cites "Musa Dagh Resistance"
+and the article is "Musa Dagh"; `eritrean-civil-wars` cites "Eritrean Civil
+Wars" and the article is "Eritrean War of Independence"; likewise
+"Moncada Barracks", "Indo-Pakistani war of 1971" and "Revolution in the
+Kingdom of Poland (1905–1907)". A reviewer following the revision lands in the
+right place; a reader following the title does not. Correcting a locator is
+correcting what a record says it read, which is a reading and not a sweep, so
+this pass leaves them and names them.
