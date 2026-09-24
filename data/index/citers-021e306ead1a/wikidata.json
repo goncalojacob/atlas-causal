@@ -3266,6 +3266,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-timbuktu",
+      "kind": "event",
+      "locator": "Q8363015"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "locator": "Q609013"
@@ -4082,6 +4088,12 @@
     },
     {
       "dissent": false,
+      "id": "fourth-battle-of-gao",
+      "kind": "event",
+      "locator": "Q10766798"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "Q973748"
@@ -4103,6 +4115,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "Q2935421"
+    },
+    {
+      "dissent": false,
+      "id": "french-military-withdrawal-from-west-africa",
+      "kind": "event",
+      "locator": "Q131697486"
     },
     {
       "dissent": false,
@@ -4592,6 +4610,12 @@
     },
     {
       "dissent": false,
+      "id": "kidal-offensive",
+      "kind": "event",
+      "locator": "Q125550564"
+    },
+    {
+      "dissent": false,
       "id": "killing-of-muammar-gaddafi",
       "kind": "event",
       "locator": "Q431888"
@@ -4811,6 +4835,12 @@
       "id": "mountain-war",
       "kind": "event",
       "locator": "Q7784981"
+    },
+    {
+      "dissent": false,
+      "id": "moura-massacre",
+      "kind": "event",
+      "locator": "Q111480185"
     },
     {
       "dissent": false,
@@ -5384,6 +5414,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-timbuktu",
+      "kind": "event",
+      "locator": "Q9101600"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112"
@@ -5807,6 +5843,12 @@
       "id": "third-battle-of-brega",
       "kind": "event",
       "locator": "Q581087"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-gao",
+      "kind": "event",
+      "locator": "Q13403330"
     },
     {
       "dissent": false,

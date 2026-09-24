@@ -3239,7 +3239,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2020-malian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -3275,7 +3275,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 3,
       "id": "2021-malian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -9364,6 +9364,44 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-timbuktu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9's second step (P276 Q9427, Timbuktu); the item's own P625 is the town's own coordinate template, 16.7667N 3.0000W.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Timbuktu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 3,
       "id": "battle-of-tripoli-2011",
@@ -15000,6 +15038,45 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "fourth-battle-of-gao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Two cited sources disagree about one day and the wider bound is kept: the item's P582 is 23 February, the article at revision 1370619931 gives \"20–22 February 2013\" in its first sentence and its infobox. A7 licenses widening an interval from the cited article and not narrowing one. Place by A9's second step (P276 Q188904, Gao); the item's own P625 is the same point to the digit.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Fourth Battle of Gao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "treaty",
       "cites": [
         "wikidata",
@@ -15124,6 +15201,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "French conquest of Morocco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "french-military-withdrawal-from-west-africa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The item carries no P625 and six values under P276; A9's second step takes the first, Q912 Mali, which is the place mali-war itself stands on and the only one of the six in this record's own vein. The withdrawal is from six countries and the mark is on one of them — review finding 1's open question about a multi-valued location, recorded here rather than hidden. Filed under mali-war from the first of the item's three P361 values.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "French military withdrawal from West Africa (2022–2025)"
     },
     {
       "authors": [
@@ -18382,6 +18497,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "kidal-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9's second step (P276 Q338988, Kidal Region); the item's own P625 is 215 km south of the region's point, which is the size of the thing and not a disagreement about where the offensive was.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Kidal offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "death",
       "cites": [
         "wikidata",
@@ -20121,6 +20274,44 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Mountain War (Lebanon)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "moura-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9: the item's own P625 and its P276 (Q6925960, Mourrah) are the same point to the digit.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Moura massacre"
     },
     {
       "authors": [
@@ -24119,6 +24310,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "second-battle-of-timbuktu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Start moved from the item's P580, 20 March 2013, to 30 March: the cited article at revision 1370736664 gives \"between March 30 and April 1, 2013\" in its first sentence and \"30 March 2013 – 1 April 2013\" in its infobox, and 20 March is the date of the first battle, which this atlas holds separately as battle-of-timbuktu — the item's wider bound is the other record's date and not a wider reading of this one (deviation 1432). Place by A9's second step (P276 Q9427, Timbuktu).",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Second Battle of Timbuktu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "ramos-2009-historia-de-portugal",
         "meneses-2004-portugal-1914-1926",
@@ -27472,6 +27701,44 @@
       "revised": null,
       "status": "active",
       "title": "Third Battle of Brega"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "third-battle-of-gao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Interval widened under A7 from the cited article at revision 1370750328, whose first sentence and infobox both give \"9–11 February 2013\": the item's P580 is 10 February. Place by A9's second step (P276 Q188904, Gao); the item's own P625 is the same point to the digit.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Third Battle of Gao"
     },
     {
       "authors": [

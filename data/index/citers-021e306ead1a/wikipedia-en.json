@@ -1646,6 +1646,24 @@
     },
     {
       "dissent": false,
+      "id": "2020-malian-coup-d-etat--moura-massacre--precondition-of",
+      "kind": "edge",
+      "locator": "\"Moura massacre\", revision 1370628775, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "2021-malian-coup-d-etat--french-military-withdrawal-from-west-africa--caused",
+      "kind": "edge",
+      "locator": "\"French military withdrawal from West Africa (2022–2025)\", revision 1371499896, § Mali"
+    },
+    {
+      "dissent": false,
+      "id": "2021-malian-coup-d-etat--kidal-offensive--precondition-of",
+      "kind": "edge",
+      "locator": "\"Kidal offensive\", revision 1370625765, lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
       "kind": "edge",
       "locator": "\"Myanmar civil war (2021–present)\", revision 1375700231, § lead"
@@ -2363,6 +2381,12 @@
       "id": "battle-of-the-yellow-sea--battle-off-ulsan--reacted-to",
       "kind": "edge",
       "locator": "\"Battle off Ulsan\", revision 1370603310, § Sortie"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-timbuktu--second-battle-of-timbuktu--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Timbuktu\", revision 1370736664, § Background"
     },
     {
       "dissent": false,
@@ -6086,6 +6110,12 @@
     },
     {
       "dissent": false,
+      "id": "third-battle-of-gao--fourth-battle-of-gao--precondition-of",
+      "kind": "edge",
+      "locator": "\"Fourth Battle of Gao\", revision 1370619931, § February 20–22 attack"
+    },
+    {
+      "dissent": false,
       "id": "third-battle-of-kharkov--battle-of-kursk--caused",
       "kind": "edge",
       "locator": "\"Third Battle of Kharkov\", revision 1370750346, § Aftermath"
@@ -8648,6 +8678,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-timbuktu",
+      "kind": "event",
+      "locator": "\"Battle of Timbuktu\", revision 1370591090"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "locator": "\"Battle of Tripoli (2011)\", revision 1374512796"
@@ -9506,6 +9542,12 @@
     },
     {
       "dissent": false,
+      "id": "fourth-battle-of-gao",
+      "kind": "event",
+      "locator": "\"Fourth Battle of Gao\", revision 1370619931"
+    },
+    {
+      "dissent": false,
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "\"Fourth Geneva Convention\", revision 1375615781"
@@ -9527,6 +9569,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "\"French conquest of Morocco\", revision 1374837625"
+    },
+    {
+      "dissent": false,
+      "id": "french-military-withdrawal-from-west-africa",
+      "kind": "event",
+      "locator": "\"French military withdrawal from West Africa (2022–2025)\", revision 1371499896"
     },
     {
       "dissent": false,
@@ -10082,6 +10130,12 @@
     },
     {
       "dissent": false,
+      "id": "kidal-offensive",
+      "kind": "event",
+      "locator": "\"Kidal offensive\", revision 1370625765"
+    },
+    {
+      "dissent": false,
       "id": "killing-of-muammar-gaddafi",
       "kind": "event",
       "locator": "\"Killing of Muammar Gaddafi\", revision 1375974277"
@@ -10319,6 +10373,12 @@
       "id": "mountain-war",
       "kind": "event",
       "locator": "\"Mountain War (Lebanon)\", revision 1371504591"
+    },
+    {
+      "dissent": false,
+      "id": "moura-massacre",
+      "kind": "event",
+      "locator": "\"Moura massacre\", revision 1370628775"
     },
     {
       "dissent": false,
@@ -10955,6 +11015,12 @@
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "\"Second Battle of Seoul\", revision 1370736593"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-timbuktu",
+      "kind": "event",
+      "locator": "\"Second Battle of Timbuktu\", revision 1370736664"
     },
     {
       "dissent": false,
@@ -11621,6 +11687,12 @@
       "id": "third-battle-of-brega",
       "kind": "event",
       "locator": "\"Third Battle of Brega\", revision 1370750314"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-gao",
+      "kind": "event",
+      "locator": "\"Third Battle of Gao\", revision 1370750328"
     },
     {
       "dissent": false,
