@@ -4888,6 +4888,20 @@ file and not a judgement, so it costs nothing to do it outside — but a fire
 that runs `--import`, sees six placeholders and concludes the network failed
 will waste the batch. It did not fail; the second pass had not been made yet.
 
+**1258. A fire that pushes its prose in four commits cancels its own check four
+times, and ends with no conclusion on the commits it cares about.** This fire
+pushed the records (`4b7219be`), the index (`ce0f48f1`) and then three
+docs-only commits. The concurrency group cancels the run in flight whenever the
+next push lands, so runs **1676** and **1677** — the only two whose "Tests" step
+was judging the batch's own records and index — were both **cancelled** before
+they finished, by prose that changed no record. Each got as far as "Validate
+records" **green** and no further. **The prose belongs in the same commit as
+the records, or behind them**: write the batch note, the run-stands section and
+`docs/m53-polities.md` before committing, push records then index, and then
+stop pushing until the run concludes. A fire that learns something after the
+index commit — a test result, the check's own state — should hold it for one
+commit at the end, not three.
+
 ## Batch 20 — the War of Jenkins' Ear in Panama, Cuba and Venezuela, and the Americas' eighteenth century
 
 *24 September, the nineteenth fire's second batch. The cell is **the Americas'
