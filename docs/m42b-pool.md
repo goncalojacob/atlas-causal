@@ -5997,6 +5997,21 @@ prelude. A fire that wants the largest component to move should spend itself on
 Europe's eighteenth or nineteenth century instead, where the Atlantic and the
 continent are the same story and the atlas already holds both ends.
 
+**The check is green on the head of this fire.** Run **1720** on `4f63dda3`
+concluded **success**. Run **1717** on the `origin/m42` merge failed rule 16 on
+the manifest and six history shards and deviation 1273 is that failure; runs
+1718 and 1719 were cancelled by the pushes that followed them, which is
+deviation 1258's own pattern. Locally the fire finished at **2,114 tests passing
+with nothing failed and nothing skipped** — the 1,819 of the 153 pure suites and
+the 295 of the 38 browser suites, the browser set run alone, the two sets never
+at once. **The first pure run of this fire reported three failures and they were
+real, not load**: it was started before the index was rebuilt, so
+`validate-cli.test.mjs` was reading the index deviation 1273 describes; the run
+after the rebuild passed 1,819 of 1,819. `node tools/validate.mjs --index` is
+**clean at 0 errors and 445 warnings** on the pushed index. **The next fire
+should read this head's run before it does anything else**, and if it is red,
+read the failure: the check has been honest since M63 and it is not load.
+
 ### The veins, and which are open
 
 **Europe's seventeenth century (21, 2) and Europe's nineteenth (21, 10) are now
