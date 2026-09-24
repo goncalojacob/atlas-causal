@@ -6260,120 +6260,415 @@ advice and reading it is not enough**: the merge is committed with `data/index/`
 absent, and the rebuild is a commit of its own after it. The same holds for a batch,
 which is why 798 puts the records first.
 
-## Where the run stands, for the fire that picks it up
+## Batch 25 — the Peninsular War read as a chain, and Europe's nineteenth century
 
-*24 September, after the twenty-fourth fire and its batch 24.*
+*24 September, the twenty-fifth fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **934 active** |
-| **main** | **242** — the count the next batch must not raise |
+| corpus | **943 active** (934 on this branch, plus the nine `origin/m42` brought) |
+| **main** | **242** |
 | **largest connected component** | **632** |
-| the second component | **12** |
+| the second component | 12 |
 | components | 215 |
-| events with no edge at all | 167 |
-| Europe before 1900 | **114 active, 18 main** |
+| events with no edge at all | 166 |
+| Europe before 1900 | 114 active, 18 main |
+| the `americas` lane | 221 active, 55 main |
+| **Europe's nineteenth century** | **21 active, 10 main** — the thinnest cell of this partition that is not against the 1492 wall, and the one the twenty-fourth fire's "where the run stands" named |
+
+**One merge came first.** `origin/m0` was already an ancestor; `origin/m42` was five
+commits ahead with its batch 51, the Korean War, and was merged the way the brief
+says. It conflicted in 241 `data/index/` paths as rename/rename and in five other
+files: `STATUS.md`'s claim lines and the two `data/imports/` item lists were unioned,
+`sources.html` was left to the rebuild, and `docs/m53-polities.md` §4.1 was re-taken
+over the merged corpus (391 of 943 — the numerator `origin/m42`'s, the denominator
+the two lanes' events together). **Deviation 1278 was not repeated**: the merge was
+committed with `data/index/` absent and the rebuild is the commit after it.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 155 | 31 | 155 | 31 |
+| `americas` | 221 | 55 | 221 | 55 |
+| `asia` | 158 | 67 | 158 | 67 |
+| `europe` | 409 | 89 | **426** | 89 |
+| Europe before 1900 | 114 | 18 | **131** | 18 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 4 | 3 | 4 | 3 |
+| the Americas' 16th | 24 | 5 | 24 | 5 |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 23 | 2 | 23 | 2 |
+| the Americas' 19th | 38 | 8 | 38 | 8 |
+| the Americas' 20th | 86 | 30 | 86 | 30 |
+| the Americas' 21st | 23 | 1 | 23 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 24 | 3 | 24 | 3 |
+| **Europe's 19th** | **21** | **10** | **38** | **10** |
+
+South and central America against north, inside the `americas` lane: **187 to 18**,
+with sixteen of the lane's events still placeless — unmoved, because nothing of this
+batch is that lane's.
+
+**The main count is 242 before and 242 after.** All seventeen are filed under
+`peninsular-war`, which this atlas has held since before M42b as a main event inside
+`napoleonic-wars`; every one of the seventeen falls inside 1808–1814, so not one of
+them could raise it.
+
+### The vein, and why it was the one to take
+
+Europe's nineteenth century held twenty-one active events, **ten of them main** — the
+worst ratio of any cell in this partition — and half of what was there was the
+Napoleonic Wars and its coalition wars. `peninsular-war` (1808–1814) sits inside that
+and had **no children at all**.
+
+Wikidata's `P361` on `Q152499` returns **218 distinct items** and this atlas held
+**none of them**, on either branch. Nothing had to be worked out first: the umbrella
+is here, it is a main event, and every child of it falls inside its span. Roughly
+three quarters of the 218 carry an English article; the rest are stubs.
+
+**The other reason to take it over the Thirty Years' War vein the last fire opened**
+is the one that fire named itself: Europe's nineteenth century *is* where the largest
+component is reachable. `peninsular-war` already carries four edges — to the
+independence of Brazil, to the Spanish American wars of independence, to the Spanish
+Constitution of 1812 and to the War of the Fifth Coalition's own umbrella — so a
+child of it lands beside records that are already in the 632.
+
+Seventeen were taken, spread deliberately across every year of the war — 1808 (five),
+1809 (four), 1810 (two), 1811 (one), 1812 (four), 1813 (two), 1814 (one) — so that the
+century fills evenly and the next fire has somewhere to write edges in every phase.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `dos-de-mayo-uprising` | `Q181146` | 1808-05-02 | `peninsular-war` | `madrid` (reused) | Europe 19th |
+| `battle-of-bailen` | `Q1364346` | 1808-07-16 – 07-19 | `peninsular-war` | `bailen` (new) | Europe 19th |
+| `battle-of-rolica` | `Q324344` | 1808-08-17 | `peninsular-war` | `rolica` (new, by hand) | Europe 19th |
+| `battle-of-vimeiro` | `Q209359` | 1808-08-21 | `peninsular-war` | `vimeiro` (new) | Europe 19th |
+| `siege-of-zaragoza-1809` | `Q524251` | 1808-12-20 – 1809-02-20 | `peninsular-war` | `zaragoza` (new) | Europe 19th |
+| `battle-of-corunna` | `Q708088` | 1809-01-16 | `peninsular-war` | `a-coruna` (new) | Europe 19th |
+| `second-battle-of-porto` | `Q233405` | 1809-05-12 | `peninsular-war` | `porto` (reused) | Europe 19th |
+| `battle-of-talavera` | `Q169023` | 1809-07-27 – 07-28 | `peninsular-war` | `talavera-de-la-reina` (new) | Europe 19th |
+| `siege-of-cadiz` | `Q2633683` | 1810-02-05 – 1812-08-24 | `peninsular-war` | `cadiz` (new) | Europe 19th |
+| `battle-of-bussaco` | `Q389349` | 1810-09-27 | `peninsular-war` | `serra-do-bucaco` (new) | Europe 19th |
+| `battle-of-albuera` | `Q689471` | 1811-05-16 | `peninsular-war` | `la-albuera` (new) | Europe 19th |
+| `siege-of-ciudad-rodrigo-1812` | `Q567571` | 1812-01-07 – 01-20 | `peninsular-war` | `ciudad-rodrigo` (new) | Europe 19th |
+| `siege-of-badajoz-1812` | `Q815121` | 1812-03-16 – 04-06 | `peninsular-war` | `badajoz` (new) | Europe 19th |
+| `battle-of-salamanca` | `Q708580` | 1812-07-22 | `peninsular-war` | `arapiles-castile-and-leon` (new) | Europe 19th |
+| `battle-of-vitoria` | `Q276059` | 1813-06-21 | `peninsular-war` | `vitoria-gasteiz` (new) | Europe 19th |
+| `battle-of-the-pyrenees` | `Q2890693` | 1813-07-25 – 08-02 | `peninsular-war` | `pyrenees` (new) | Europe 19th |
+| `battle-of-tarbes` | `Q136669216` | 1814-03-20 | `peninsular-war` | `tarbes` (new) | Europe 19th |
+
+**Thirty-one records created, one enriched, none ambiguous, one refused**, over **one**
+`--import` run of 33 items and 139 calls, with 62 Wikipedia leads cached. Seventeen of
+the thirty-one are the events and fourteen are the places their `P276` names; `madrid`
+was already here and took the batch's one enrichment (`sitelinks`), and `porto` was
+already here and was reused.
+
+**One run and not two, which is deviation 1277 followed rather than paid for.** The
+last two batches ran the places after the events and wrote twenty-one `place` fields
+by hand between them. This one surveyed every item's `P276` before it ran anything and
+put both lists in `items` together, and the tool did the placing itself: **sixteen of
+the seventeen events carry a `place` the import wrote**, and not one carries the
+`a9-place` flag that a hand-written place gets.
+
+**The seventeenth is `battle-of-rolica` and it needed a decision.** `Q602858`, the
+freguesia of Roliça its `P276` names, **carries no `P625`**, so the import refused it —
+*"a place with no coordinate is a word, not a place"* — and the event came out
+placeless with a `europe` lane derived from its own point. A12(2)'s corrected rule is
+that **A9's pass reads the item's own `P625` first**, and the battle item has one, so
+`places/rolica.json` was written from it: `precision: point`, because A12(2) says a
+point is what a battlefield or a site gets and the coordinate is the battlefield near
+the village and not the village centre, with `wikidata: Q602858` and the whole of that
+reasoning in the record's `review.note`. It is the only hand-written place of the
+batch and it carries `a9-place`, as a hand-written place should.
+
+**Every summary is the cached lead at its revision and not the placeholder.** All
+seventeen carry the shape A12(1) asks for — the article named, the revision named, the
+lead quoted, the standing sentence after it — with the `summary-from-lead` flag and a
+`wikipedia-en` citation at that same revision, so A14(3) holds by construction: the
+revision each record cites is the revision its cached lead was read at.
+
+**The fourteen new places carry `summary: null`.** A14(6)'s pass on `origin/m42` turned
+505 place placeholders into `summary: null`, and a place this branch writes afterwards
+with the placeholder still on it would be fourteen records the pass has already been
+through. Deviation 1279.
+
+### Two class lines, both under deviation 1266's mirror rule
+
+| class | label, read off the class item | line |
+| --- | --- | --- |
+| `Q1131296` | freguesia of Portugal — *"third level of administrative subdivision of Portugal"* | `place`, `city` |
+| `Q2276925` | municipality of Galicia — *"administrative territorial entity of Galicia, Spain"* | `place`, `city` |
+
+Both mirror `Q2074737`, municipality of Spain, which batch 8 added, and `Q484170`,
+commune of France, which batch 1 added: a settlement with a seat and a point, which is
+what `PRECISIONS` calls a city. Vimeiro was refused for want of the first and A Coruña
+for want of the second — A Coruña carries `Q2276925` and no other class at all. 1266
+allows a line that mirrors one the table already holds, so no owner question is raised.
+
+### What was connected (A5)
+
+**Fourteen edges, all `probable`, all from a sentence of the article the record cites
+at the revision it cites, and none from a parent to its own child.**
+
+| edge | from the article |
+| --- | --- |
+| `dos-de-mayo-uprising --precondition-of--> battle-of-bailen` | Bailén, rev 1371963680 |
+| `battle-of-bailen --caused--> war-of-the-fifth-coalition` | Bailén, rev 1371963680 |
+| `battle-of-bailen --precondition-of--> siege-of-zaragoza-1809` | Zaragoza, rev 1370746579 |
+| `battle-of-bailen --precondition-of--> battle-of-corunna` | Corunna, rev 1370437705 |
+| `battle-of-rolica --precondition-of--> battle-of-vimeiro` | Vimeiro, rev 1370623683 |
+| `battle-of-vimeiro --precondition-of--> battle-of-corunna` | Corunna rev 1370437705 and Vimeiro rev 1370623683 |
+| `second-battle-of-porto --precondition-of--> battle-of-talavera` | Porto, rev 1370787422 |
+| `siege-of-cadiz --enabled--> spanish-constitution-of-1812` | Cádiz, rev 1370740530 |
+| `siege-of-cadiz --precondition-of--> battle-of-albuera` | Albuera, rev 1373550746 |
+| `battle-of-albuera --precondition-of--> siege-of-badajoz-1812` | Albuera, rev 1373550746 |
+| `siege-of-ciudad-rodrigo-1812 --enabled--> siege-of-badajoz-1812` | Ciudad Rodrigo, rev 1370740278 |
+| `siege-of-badajoz-1812 --enabled--> battle-of-salamanca` | Badajoz, rev 1370739148 |
+| `battle-of-salamanca --enabled--> battle-of-vitoria` | Salamanca, rev 1370273420 |
+| `battle-of-vitoria --caused--> battle-of-the-pyrenees` | the Pyrenees, rev 1370601915 |
+
+**Two of the fourteen are bridges and they are why the number moved.** The first is
+`battle-of-bailen --caused--> war-of-the-fifth-coalition`, which the Bailén article
+states in so many words: the defeat *"signalled to the armies of Europe that the
+French, long considered invincible, could be beaten—a fact that persuaded the Austrian
+Empire to initiate the War of the Fifth Coalition against Napoleon."* The second is
+`siege-of-cadiz --enabled--> spanish-constitution-of-1812`: the Cortes drew the
+constitution up inside the besieged city, which is where the siege had made the seat of
+Spanish government. **Both ends of both edges were already in the 632-event component,
+and a third edge — `siege-of-cadiz --precondition-of--> battle-of-albuera` — carried
+the batch's whole 1811–1813 chain in behind them.**
+
+### The number A5 asks about
+
+| | before | after |
+| --- | --- | --- |
+| **largest connected component** | **632** | **645** |
+| components | 215 | 218 |
+| active events with no edge at all | 166 | 168 |
+| the second component | 12 | 12 |
+
+**Thirteen of the seventeen joined the largest component.** The fourteenth edge run
+took three attempts to see: the first twelve edges moved the number by five, because
+the batch fell into four islands and only one of them touched the 632. Two further
+edges — Cádiz to Albuera and Vimeiro to Corunna — were found by reading the same
+articles again for the sentence that names something this atlas *already holds*, and
+they carried eight more events in. **That is the lesson of this batch and it is the
+cheap thing: a batch's edges should be measured against the component before the batch
+is called done, because an island of six is worth no more to a reader than an island
+of one.**
+
+### What was refused
+
+1. **`Q602858`, Roliça** — refused by the import for having no `P625`, and answered by
+   hand, as above.
+2. **Every `P710` list, all seventeen of them, under deviation 1404.** The seventeen
+   items name five distinct participants between them — `Q45670` the Kingdom of
+   Portugal, `Q174193` the United Kingdom of Great Britain and Ireland, `Q71084` the
+   First French Empire, `Q3399982` the Kingdom of Spain and `Q152115` — and this atlas
+   holds **one**: `Q45670`, on eleven of the seventeen. Every list is therefore partial
+   and 1404 withholds a partial list. `docs/m53-polities.md` §4.1's numerator does not
+   move and its denominator does.
+3. **The Dos de Mayo Uprising's own best edge, to A14.** The article's lead says the
+   rising's actions *"led to the Spanish people revolting against French occupation and
+   outbreak of the Peninsular War"* — and `peninsular-war` is the record's parent, so
+   A14's rule refuses it until the owner decides C8. The edge written instead runs to
+   Bailén and is weaker. **Deviation 1282.**
+4. **`battle-of-salamanca --caused--> siege-of-cadiz`, to rule 4.** The Cádiz article
+   makes the claim outright — *"In 1812, the Battle of Salamanca eventually forced the
+   French troops to retreat from Andalusia, for fear of being cut off by the Coalition
+   armies"* — and the siege was lifted a month after the battle. But the siege *starts*
+   in 1810 and rule 4 compares starts, so the edge is an error and was not written.
+   **Deviation 1284**, and it is the shape of every edge that points at the end of a
+   long event rather than at its beginning.
+5. **`battle-of-bussaco` and `battle-of-tarbes` have no edge at all.** Bussaco's
+   article joins it to the Lines of Torres Vedras, the 1810 French siege of Ciudad
+   Rodrigo and the Siege of Almeida, and this atlas holds none of the three — the 1812
+   siege of Ciudad Rodrigo it does hold is Wellington's and a different event, which is
+   the conflation a fire must not make. Tarbes *"paved the way for the Battle of
+   Toulouse (10 April 1814), the final major engagement of the Peninsular War"*, and
+   Toulouse is not here. Both are one import away.
+6. **The Wikipedia action API cut this fire off after eleven article bodies**, which is
+   deviation 1283 and cost the Dos de Mayo body; that record's edge was written from
+   the Bailén article instead.
+
+### One warning this batch adds, and why it stays
+
+`span-vs-article-title` on `siege-of-zaragoza-1809`: the article is titled *Siege of
+Zaragoza (1809)* and the record is dated 1808-12-20 to 1809-02-20. The dates are the
+item's own `P580` and `P582` and the article's body carries the same siege across the
+turn of the year; the title names the year it ended in. **The record is right and the
+warning is the title's**, so nothing was changed. A7 widens a record from its article;
+it does not narrow one to a title.
+
+### Deviations
+
+**1279. A place record written now carries `summary: null`, not the import's
+placeholder.** A14(6)'s pass on `origin/m42` turned 505 of them into `summary: null`,
+and this branch has been merged with it, so a place written afterwards with the
+placeholder on it is a record the pass has already been through — fourteen of them
+here. No flag is written: `a14-summary-nulled` records that the pass nulled a summary
+that had been published, and these were never published with one.
+
+**1280. Deviation 1277 works, and it is the cheapest thing in this file.** Surveying
+every item's `P276` before running anything and putting both lists in `items` together
+cost one SPARQL call and saved a second `--import` run, sixteen hand-written `place`
+fields and sixteen `a9-place` flags. One run, 33 items, 139 calls. **A fire should not
+run `--import` until it has that survey.**
+
+**1281. Two more class lines under 1266's mirror rule.** `Q1131296` freguesia of
+Portugal and `Q2276925` municipality of Galicia, both `city`, both mirroring
+`Q2074737` municipality of Spain, which batch 8 added on the same reasoning. The table
+now holds four national settlement classes and the fifth will cost one line.
+
+**1282. A14's no-parent-to-child rule is expensive in a war vein, and this is the
+measure of it.** Eleven of the seventeen articles state a consequence that runs to the
+Peninsular War itself, because that is what an article about a battle of a war says;
+every one of those eleven is refused. What is left is the sibling-to-sibling claim,
+which the leads mostly do not make and which had to be read out of the article bodies.
+**A vein of one war's children is a vein in which A14 removes the obvious edges and
+leaves the ones that cost a fetch each.** Worth knowing before choosing the next vein;
+it is not an argument against A14, which is the owner's to settle.
+
+**1283. The Wikipedia action API rate-limits this sandbox at roughly three calls in
+quick succession.** The fourth returns `You are making too many requests to the API.`
+as **plain text and not JSON**, so a script that parses the answer dies with a
+`JSONDecodeError` and looks like a bug in the script. Sleep six seconds between calls
+and retry three times; eleven bodies came through that way and the twelfth did not.
+The REST summary endpoint the import itself uses is not affected — 139 calls in one run
+went through without a pause.
+
+**1285. A browser test that names its examples goes stale the moment a batch writes
+more of the same thing.** `tests/map-browser.test.mjs` → *"a place this atlas names and
+Natural Earth has no city for is on the map, from the record"* listed seven Portuguese
+place records and asked whether any of the seven was labelled at the western-Europe
+view. This batch wrote fifteen more Iberian place records with no Natural Earth city,
+the label placer preferred them — **A Coruña was on the screen, and so were Nördlingen
+and Agnadello from earlier batches** — and the test failed although what it is about
+was true fifteen times over. The fix reads the set off the data instead of listing it:
+every active place the entries of `data/imports/naturalearth-places.json` do not match
+is one the map names from the record. **The same shape of staleness is in any test that
+hard-codes a record id**, and a records lane will keep meeting it.
+
+**1284. An edge that points at the end of a long event is rule 4, whatever the article
+says.** Rule 4 compares `from.start` with `to.start`, so a 1812 battle that ended a
+siege begun in 1810 cannot be written as an edge into that siege, even where the siege's
+own article states the claim. The only honest ways out are to divide the long record —
+which is somebody else's record and deviation 1269's question — or to leave the claim
+unwritten, which is what this batch did.
+
+## Where the run stands, for the fire that picks it up
+
+*24 September, after the twenty-fifth fire and its batch 25.*
+
+| | |
+| --- | --- |
+| corpus | **960 active** |
+| **main** | **242** — the count the next batch must not raise |
+| **largest connected component** | **645** |
+| the second component | **12** |
+| components | 218 |
+| events with no edge at all | 168 |
+| Europe before 1900 | **131 active, 18 main** |
 | the `americas` lane | **221 active, 55 main** |
 | south and central America against north, inside that lane | 187 to 18, with 16 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 19th (21, 10)**, the Americas' 17th (23, 6), the Americas' 18th (23, 2), **Europe's 18th (24, 3)**, the Americas' 16th (24, 5), Europe's 16th (29, 1), Europe's 17th (36, 2), the Americas' 19th (38, 8) |
-| the cell this fire moved | **Europe's 17th, 21 → 36**, its main count untouched at 2 |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)** and **the Americas' 18th (23, 2)**, the Americas' 16th (24, 5), Europe's 18th (24, 3), Europe's 16th (29, 1), Europe's 17th (36, 2), the Americas' 19th (38, 8), Europe's 19th (38, 10) |
+| the cell this fire moved | **Europe's 19th, 21 → 38**, its main count untouched at 10 |
 
-**This fire merged `origin/m42` and then took the cell the last one left thinnest.**
-`origin/m0` was already an ancestor; `origin/m42` was six commits ahead with its batch
-50. Europe's seventeenth century is no longer the thinnest cell of this partition —
-**Europe's nineteenth is, at 21 active and 10 main** — and the vein that filled the
-seventeenth has ten or more batches left in it.
+**This fire merged `origin/m42` and then took the cell the last one named.** Europe's
+nineteenth century is no longer the thinnest cell of this partition — **the Americas'
+seventeenth and eighteenth are, at 23 each** — and the largest component rose by
+thirteen, which is the biggest single move an M42b batch has made to it.
 
-**The vein is the Thirty Years' War's remaining children.** `P361` on `Q2487` returns
-**171 items**; this branch now holds thirty-four of them and **137 are unimported**.
-None of them can raise the main count, because `thirty-years-war` is here as a main
-event and every one of the 137 falls inside 1618–1648. Of the 137, roughly half carry
-an English article and a class the table already holds, which is the set a fire should
-take first; the rest are stubs with no article, whose summaries would be the item
-description alone. One SPARQL call for everything one `P361` hop under `Q2487`, with
-`P31` and the English sitelink beside it, returns the lot and sorts them.
+**The vein is far from spent.** `P361` on `Q152499` returns **218 items**; this branch
+now holds seventeen of them and **201 are unimported**. None of them can raise the main
+count, because `peninsular-war` is here as a main event inside `napoleonic-wars` and
+every one of the 201 falls inside 1808–1814. Roughly three quarters carry an English
+article and a class the table already holds — `battle`, `siege`, `rebellion` and
+`offensive` are all in it — which is the set a fire should take first; the rest are
+stubs whose summaries would be the item description alone. One SPARQL call for
+everything one `P361` hop under `Q152499`, with `P31`, `P625`, `P276` and the English
+sitelink beside it, returns the lot and sorts them, and **that same call is what makes
+deviation 1280 free**.
 
-**Two things inside that vein are worth more than a batch of imports.** The first is
-`Q1501724`, the **Portuguese Restoration War** (1640–1668), which is one `P361` hop
-under `Q2487` and is the only member of that hop whose other end the Atlantic side of
-this atlas already holds; it is the likeliest bridge from the Thirty Years' War
-islands to the 632-event component. The second is that **the war's phases are
-importable as umbrellas and each is filed under `thirty-years-war`**: `Q83364344` the
-Czecho-Palatinate phase, `Q3778625` the Danish phase, `Q7655000` the Swedish
-intervention and `Q56823171` the Franco-Swedish phase are all `Q105370834` and all
-sit inside 1618–1648, so writing them costs no main event and would give every child
-of this batch and the next a narrower umbrella than the war itself.
+**But A10's order says the Americas before Europe now.** Europe's nineteenth is no
+longer the thinnest cell, the Americas' seventeenth and eighteenth are, and the split
+inside the `americas` lane is still **187 south and central to 18 north**. A fire that
+takes Europe again should say why; a fire that takes the Americas' seventeenth or
+eighteenth is taking what the partition's own numbers ask for.
 
-**The number A5 asks about did not move and this cell cannot move it alone.** The
-Thirty Years' War is a set of islands beside the 632-event Atlantic component, and
-this batch made four of them (5, 5, 2, 2) out of records that had no edges at all.
-The two five-event islands are one refusal apart — refusal 3 of the batch note — and
-joining them is a question about what Lützen did to the Swedish position before
-Nördlingen, which needs a work the Nördlingen article does not cite.
+**Three things inside the Peninsular vein are worth more than a batch of imports.**
+The first is **`Q3153847`, the French invasions of Portugal**, one `P361` hop under the
+war and the umbrella two of this batch's records already point at in their own leads —
+Vimeiro "put an end to the first French invasion of Portugal" and Porto "ended the
+Second French invasion of Portugal" — so importing it would give both an edge A14
+permits and would cost one main event, which `peninsular-war` would then absorb. The
+second is **`Q1345027`, the Battle of Toulouse**, which `battle-of-tarbes` says it
+"paved the way for" and which is the war's last engagement: one record and the batch's
+one orphan is connected. The third is **the Lines of Torres Vedras**, which is what
+`battle-of-bussaco`, this batch's other orphan, retreats to in its own lead.
+
+**The cheapest edges left in this lane are in the records the atlas already holds.**
+The proof is in this batch's own arithmetic: twelve edges moved the component by five
+and two more moved it by eight, and the two were found by reading the same articles
+again for the sentence that names something already here. **A batch is not done when
+its edges are written; it is done when the component has been measured after them.**
 
 ### The veins, and which are open
-
-**Europe's nineteenth century (21, 10) is now the thinnest cell of this partition and
-has never been surveyed on this branch.** It is also where the largest component is
-reachable: the atlas holds the Napoleonic Wars, the Latin American independence wars
-and the Atlantic story in one component, and a European nineteenth-century import
-lands beside records that are already in it. **A fire that wants the 632 to grow
-should take it rather than the seventeenth.**
 
 **The Americas' seventeenth has three items left and each needs a decision, not a
 call.** `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of
 Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the
-South Atlantic campaign (lane unsettled).
+South Atlantic campaign (lane unsettled). **It is now the thinnest cell of this
+partition**, which makes those three decisions worth a fire on their own.
 
-**The War of Jenkins' Ear has nine items left and none of them is this lane's first
-choice.** Four are North American and four are at sea, which A10's order puts behind
-South and Central America while the split is 187 to 18; **`Q9172888`, the Battle of
-Combapata**, is still refused for want of a place record for `Q3312913`, and is still
-worth a fire.
+**The War of Jenkins' Ear has nine items left** — four North American, four at sea —
+and `Q9172888`, the **Battle of Combapata**, is still refused for want of a place
+record for `Q3312913`. The Americas' eighteenth is tied for thinnest, so A10's order no
+longer puts this behind anything except the north–south split, which four of the nine
+are on the wrong side of.
+
+**The Thirty Years' War vein the twenty-fourth fire opened is still open**: `P361` on
+`Q2487` returns 171 items, this branch holds thirty-four, and **137 are unimported**.
+`Q1501724`, the Portuguese Restoration War, is still the likeliest bridge from those
+islands to the main component, and the war's four phases (`Q83364344`, `Q3778625`,
+`Q7655000`, `Q56823171`) are still importable as umbrellas at no cost in main events.
 
 **The French Wars of Religion (`Q673175`) are still free to whoever brings their
 children, and still cost a main event.**
 
-**The Dutch–Portuguese War's children are a chronology with almost no argument drawn
-between its links**, and the cheapest edges left in that lane are in the records the
-atlas already holds rather than in the ones it has yet to import. A fire with a slow
-network should spend itself there. **This batch is the proof of that**: five of the
-ten records its edges touch were already here and had never been linked.
-
 ### The cheap things this partition keeps not doing
 
-**`--reconcile` has never been run on this branch, and batches 20, 22 and 24 all paid
-for it.** `havana`, `santiago-de-cuba` and `porto-calvo` are place records with the
-right coordinates written by hand because the import could not see them. Every place
-record written before the identity fields existed is in the state `havana` was.
-`tools/import/wikidata.mjs --reconcile` is additive by `tools/import/identity.mjs`'s
-rule — fill a gap, never change a value, never sign — and closing that gap once would
-make every later batch cheaper and safer.
+**`--reconcile` has never been run on this branch.** `havana`, `santiago-de-cuba` and
+`porto-calvo` are place records with the right coordinates written by hand because the
+import could not see them, and every place record written before the identity fields
+existed is in the same state. `tools/import/wikidata.mjs --reconcile` is additive by
+`tools/import/identity.mjs`'s rule — fill a gap, never change a value, never sign — and
+closing that gap once would make every later batch cheaper and safer. **This batch is
+the first evidence of what it would be worth**: `porto` and `madrid` were reused and
+enriched only because they already carried their items.
 
-**Deviation 1277 is the other half of that, and it is free.** An event's `P276` items
-belong in the *same* `--import` batch as the event, because the tool sorts places
-before events and links them itself. Two batches in a row have run the places
-afterwards and written twenty-one `place` fields by hand. A fire that surveys its
-items' `P276` before it runs anything, and puts both lists in `items` together, pays
-one run instead of two and no `a9-place` flag at all.
+**The thirteen polities, and now eighteen.** Every item of batches 17, 19, 20, 22, 23
+and 25 names two to eleven `P710` participants and the atlas holds one. This batch's
+five are `Q45670` the Kingdom of Portugal (held), `Q174193` the United Kingdom of Great
+Britain and Ireland, `Q71084` the First French Empire, `Q3399982` the Kingdom of Spain
+and `Q152115` — and the second, third and fourth are three of the most-named polities
+in the whole European corpus. **One `--import` run over those three would unlock the
+`P710` pass for nearly every European record before 1900 this branch holds**, and
+deviation 1404 would stop withholding. A fire that takes it should read `NC_ORIGINS` in
+`src/origin.js` first: an actor an import creates is licensed differently from one
+written here. Batch 23 proved the run works.
 
-**The thirteen polities, and the twelve of them batch 23 named.** Every item of
-batches 17, 19, 20, 22 and 23 named two to eleven `P710` participants and the atlas
-holds one. This batch's fifteen are the same story: `P710` on them names Sweden, the
-Holy Roman Empire, Denmark-Norway, the Electorate of Saxony, Bavaria and France, and
-the atlas holds none as an actor of the right dates. **One `--import` run over those
-items would give `actors` lines to nearly every record before 1800 this branch
-holds**, and `docs/m53-polities.md` §4.1's numerator has not moved in twenty-four
-batches. A fire that takes it should read `NC_ORIGINS` in `src/origin.js` first: an
-actor an import creates is licensed differently from one written here. Batch 23 proved
-the run works — one item in, one actor out, correctly typed and dated.
-
-**A class-table line for `Q3184121`, municipality of Brazil.** Three place records of
-this branch have been written for Brazilian municipalities and the table has no entry
-for the class, so each one's precision was decided outside it. Deviation 1266 settles
-whether a fire may add such a line: **it may, where the line mirrors one already in
-the table**, and `Q484170` commune of France is that line. Deviation 1274 of this fire
-is the same move made for `Q3558970`, village of Poland, and it cost one line.
+**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-five batches** and
+this is the reason.
 
 ### The two questions for the owner are unchanged and both still block a century
 
@@ -6396,15 +6691,23 @@ A third question, added by batch 23, is smaller than both:
 therefore refuses every edge the article's own sentences state** (deviation 1269).
 Dividing it at its campaigns would let Pavia reach it and would cost no main event. It
 is a division of somebody else's record and the run will not make it unasked.
+**Deviation 1284 of this batch is the same question in a second place**: `siege-of-cadiz`
+is one record covering 1810 to 1812, and the edge its own article states — Salamanca
+forced the French out of Andalusia and the siege was lifted — is rule 4 and cannot be
+written.
 
-A fourth is added by this batch and is the same shape. **Two records are filed under
+A fourth, added by batch 24, is unchanged. **Two records are filed under
 `thirty-years-war` although their own articles call them part of the Eighty Years' War
 and of the Polish-Swedish War of 1626-1629** — `siege-of-bergen-op-zoom-1622` and
-`battle-of-trzciana`. Wikidata's `P361` says the Thirty Years' War for both, the atlas
-holds neither of the other two wars, and leaving either parentless would raise the main
-count. Both carry the divergence in `review.note`. Importing `Q164432` the Eighty Years'
-War and `Q2985977` the Polish-Swedish War of 1626-1629 as umbrellas would settle it and
-would cost two main events, which is why the run did not.
+`battle-of-trzciana`. Both carry the divergence in `review.note`. Importing `Q164432`
+and `Q2985977` as umbrellas would settle it and would cost two main events.
+
+A fifth is added by this batch and is **A14's C8 itself**. Eleven of this batch's
+seventeen articles state a consequence that runs to the record's own parent, and every
+one was refused. In a vein that is one war's children, A14 removes the obvious edges
+and leaves only the ones that cost a fetch each (deviation 1282). The run does not
+argue with the rule; it reports what it costs, which the owner asked for when C8 was
+raised.
 
 **The check is green on the head of this fire.** Run **1730** on `2d0346cd` concluded
 **success**. Run **1729** on the `origin/m42` merge `54150eb6` **failed**, and the
