@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "the-persecution-of-the-jews-1933-1941",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a14-holocaust-divided"
+    ],
+    "note": "A14(6), brief §5: the first half of what was one record, the-holocaust, dated 1933–1945. The division and both spans are the cited article's at revision 1376446924, which dates the first measures to 1933, the violence of this period \"from 1933 to 1939\", and the beginning of the systematic murder to 1941, where this record ends and the other begins. The article also speaks of persecutions \"from 1933 to 1945\", so 1941 is the boundary between two things and not the end of persecution."
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1376446924, § Rise of Nazi Germany — Persecution of Jews"
+    }
+  ],
+  "title": "The persecution of the Jews, 1933–1941",
+  "summary": "The English Wikipedia article \"The Holocaust\", at revision 1376446924, § Rise of Nazi Germany — Persecution of Jews, states: \"In 1933, Jews were banned or restricted from several professions and the civil service.\" and \"Anti-Jewish violence, largely locally organized by members of Nazi Party institutions, took primarily non-lethal forms from 1933 to 1939.\" It records about 1,500 anti-Jewish laws, the Nuremberg Laws of 1935, the expropriation of Jewish businesses in 1938 and 1939, and Kristallnacht on 9–10 November 1938. That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. This record is one half of the-holocaust, divided under the owner's instruction of 16 September; the other half is the-extermination-of-the-jews-1941-1945.",
+  "when": {
+    "start": 1933,
+    "end": 1941
+  },
+  "place": "nazi-germany-q7318",
+  "region": "europe",
+  "parent": null,
+  "actors": [
+    {
+      "actor": "nazi-germany",
+      "role": "perpetrator"
+    }
+  ]
+}

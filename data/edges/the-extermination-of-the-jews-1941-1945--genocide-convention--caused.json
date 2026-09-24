@@ -1,10 +1,12 @@
 {
   "schema": 1,
-  "id": "the-holocaust--genocide-convention--caused",
+  "id": "the-extermination-of-the-jews-1941-1945--genocide-convention--caused",
   "kind": "edge",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "the-holocaust--genocide-convention--caused"
+  ],
   "authors": [
     {
       "name": "Claude (assistant draft, unreviewed)",
@@ -13,16 +15,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "a14-holocaust-divided"
     ],
     "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "origin": {
+    "tool": "assistant"
   },
   "sources": [
     {
@@ -34,7 +37,7 @@
       "locator": "\"Genocide Convention\", revision 1371861623"
     }
   ],
-  "from": "the-holocaust",
+  "from": "the-extermination-of-the-jews-1941-1945",
   "to": "genocide-convention",
   "type": "caused",
   "confidence": "probable",
