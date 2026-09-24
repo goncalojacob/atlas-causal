@@ -127,15 +127,19 @@ test('with Portugal selected every column of the band is Portugal’s, whichever
     // picture's as the selection's. It is the same discipline `named()` keeps
     // for a title that arrives with its century (docs/m78-flakes.md): read it
     // twice and believe it when it has not moved.
-    const settled = async () => {
-      let last = null;
-      for (let tries = 0; tries < 40; tries += 1) {
-        const now = await page.eval(`${PROFILE.slice(0, PROFILE.lastIndexOf('return'))}return d;`);
-        if (now && now === last) return;
-        last = now;
-        await new Promise((resolve) => { setTimeout(resolve, 100); });
-      }
-    };
+    // **And it fails rather than returning quietly** (M87 §5, review B8). It
+    // polled forty times and then returned whichever profile it had, so on a slow
+    // run the centuries below were read off a band that was still arriving and
+    // the failure spoke of centuries instead of time. The settle is across an
+    // animation frame inside the page, as §3's is.
+    const settled = () => waitFor(
+      page,
+      `const read = () => { ${PROFILE.slice(0, PROFILE.lastIndexOf('return'))}return d; };
+       const was = read();
+       return new Promise((resolve) => requestAnimationFrame(() => setTimeout(
+         () => resolve(Boolean(was) && was === read()), 0)));`,
+      "the band's profile to stop moving",
+    );
     const centuriesOfProfile = async () => {
       await settled();
       const profile = await page.eval(PROFILE);

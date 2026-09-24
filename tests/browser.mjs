@@ -434,6 +434,15 @@ export async function manifestOf({ fixtures = false } = {}) {
   return JSON.parse(await readFile(path.join(ROOT, root, 'index', 'manifest.json'), 'utf8'));
 }
 
+// Which manifest the page in front of us is reading: `?fixtures=1` is the
+// synthetic graph under tests/fixtures/data/ and everything else is the
+// repository's own. Asked of the page rather than passed in, so a call site does
+// not have to remember which corpus its own URL opened.
+export async function manifestFor(page) {
+  const fixtures = await page.eval('return new URLSearchParams(location.search).get("fixtures") === "1";');
+  return manifestOf({ fixtures: Boolean(fixtures) });
+}
+
 // Every attribute shard the manifest names, arrived. The three private copies
 // of this wait polled a resource count until it stopped moving and fell through
 // **silently** after 4 s, so on a slow run the assertions after them ran
@@ -444,8 +453,8 @@ export async function manifestOf({ fixtures = false } = {}) {
 // The page asks for all of them at first paint at the whole span and for the
 // window's at a narrower one, so a test that opens a window passes the shards it
 // expects rather than the whole manifest.
-export async function settledShards(page, manifest, { tries = 200, every = 50 } = {}) {
-  const wanted = (manifest?.attributeShards ?? []).length;
+export async function settledShards(page, manifest = null, { tries = 200, every = 50 } = {}) {
+  const wanted = ((manifest ?? await manifestFor(page)).attributeShards ?? []).length;
   if (wanted === 0) return;
   const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
   let arrived = 0;

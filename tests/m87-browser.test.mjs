@@ -95,3 +95,21 @@ test('§2: the resting timeline is no taller than its pane', { skip }, async () 
     }
   }, { device: DESK });
 });
+
+// §5 (B8). 154 browser tests open the live corpus, whose first paint grows with
+// it, and the three private "settled" loops each polled a resource count forty
+// times and then returned *whether or not anything had settled* — so on a slow
+// run the assertions after them ran against a page still arriving and failed
+// with a sentence about lanes or profiles rather than about time. The one wait
+// they share now fails, and says how far the page got. No browser is needed to
+// hold it to that: what is asserted is the sentence, and a page is two lines.
+test('§5: the shard wait fails saying how far the page got', async () => {
+  const page = { eval: async () => 3 };
+  await assert.rejects(
+    () => settledShards(page, { attributeShards: [1, 2, 3, 4, 5] }, { tries: 2, every: 1 }),
+    /\b3 of 5 attribute shards arrived$/,
+    'the failure names what arrived and what was wanted',
+  );
+  // And a manifest that shards nothing is nothing to wait for.
+  await settledShards({ eval: async () => 0 }, { attributeShards: [] }, { tries: 1, every: 1 });
+});
