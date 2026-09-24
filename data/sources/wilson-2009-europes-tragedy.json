@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "wilson-2009-europes-tragedy",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Peter H. Wilson"
+  ],
+  "title": "Europe's Tragedy: A History of the Thirty Years War",
+  "year": 2009,
+  "publisher": "Allen Lane",
+  "isbn": "9780713995923",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The English Wikipedia cites this work in both the Allen Lane 2009 printing and the Penguin 2010 printing, whose subtitle reads \"A New History of the Thirty Years War\"; the page numbers a citation here gives are the printing that citation names."
+}

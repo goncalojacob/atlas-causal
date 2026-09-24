@@ -21992,6 +21992,107 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b batch 23 — the War of the League of Cambrai's nine unimported children,
+and Europe's sixteenth century, 24 September.** The twenty-third fire merged
+`origin/m0` (eighteen commits, M87) and `origin/m42` (six, its batch 49) before
+importing anything; the first conflicted only in `STATUS.md`, the second in 236
+`data/index/` paths as rename/rename and in four prose files, and both were
+resolved as the protocol says. **The cell is Europe's sixteenth century**, at 19
+active and 1 main — the thinnest in this partition that is not against the 1492
+wall, named by the eighteenth fire and never taken in six fires — and the vein is
+the nine children of `war-of-the-league-of-cambrai` that fire listed, plus the
+Sack of Rome of 1527. **Ten items imported, ten created, none enriched, none
+ambiguous, one refused twice before a class line settled it**, over four
+`--import` runs and 33 calls: `battle-of-casaloldo`,
+`battle-of-the-citadel-of-vicenza`, `sack-of-brescia`, `battle-of-saint-mathieu`,
+`spanish-conquest-of-iberian-navarre`, `siege-of-crema-1514`,
+`battle-of-the-spurs`, `siege-of-dijon`, `battle-of-flodden` and
+`sack-of-rome-1527`. Nine are filed under `war-of-the-league-of-cambrai` or
+`war-of-the-league-of-cognac` and the tenth under `italian-wars`, because the
+Navarre conquest runs 1512–1529 and Cambrai ends in 1516; all three umbrellas are
+children of `italian-wars`, so **the main count does not move: 242 before and 242
+after**. **Eight place records were written and the import wrote all eight** —
+`casaloldo`, `vicenza`, `brescia`, `iroise-sea`, `crema-lombardy`,
+`enguinegatte`, `dijon` and `branxton-northumberland` — every precision from the
+item's own class and none hard-coded, with `rome` reused; **A14(2)'s lane guard
+passes on all nine**, eight inside a lane polygon and `iroise-sea` at 0.25° from
+one, so nothing was cleared. **All ten carry the cached English lead as their
+summary** at a named revision with the `summary-from-lead` flag, and deviation
+1260's check — the cached title against the record's own `wikipedia.en` — is
+clean on all ten for the first time since it was written. **Five edges**, each
+`probable`, each quoting the sentence that carries it, **none of them running
+from a parent to its own child (A14)**; one new source record,
+`dossena-2014-battaglia-di-ombriano`, from the Crema article's own
+`<ref name="dossena" />`, and the other four explanations say why the sentence
+they quote carries no footnote. **Five claims were read and not written**, the
+first of them the one the Navarre article states outright — Pavia *"sealed the
+division of Navarre"* — which rule 4 refuses because a seventeen-year record
+cannot take an edge from inside its own span. **The largest component does not
+move, 625 to 625, and the batch says why**: that component is the Atlantic and
+modern story, the Italian Wars are a second island, and this batch grew that
+island **from 8 to 12**, now the atlas's second largest. `P710` was read on all
+ten and refused on all ten: they name twelve polities between them and the atlas
+holds one, `kingdom-of-navarre`, which this batch's own place run created because
+the Navarre conquest's `P276` is a polity and not a place. `docs/m53-polities.md`
+§4.1 is re-taken at **383 of 911** — and the previous row, 384 of 901, was a
+miscount of the actor's own dates and is corrected with it. The corpus is **911
+active**, Europe before 1900 is **99**, the cell is **29 with its one main
+untouched**, and the `americas` lane is unchanged at 221. Deviations **1265** (a
+merge conflict in `sources.html` and `narratives.html` is resolved by checking
+one side out and rebuilding, never by deleting them, which `build-index.mjs`
+dies on) to **1273**, and **1232 recurred**: the `origin/m42` merge's index was
+built before the merge was committed, run 1717 failed rule 16 on the manifest and
+six history shards, and 1273 says the cure — **a merge commit is a commit that
+touches records**, so 1264's order holds for it too. `docs/m42b-pool.md` →
+"Batch 23" is the full account.
+
+**M42b batch 21 — the six other conflicts of the Napoleonic Wars, and Europe's
+nineteenth century, 24 September.** The twentieth fire merged `origin/m0` and
+`origin/m42` before importing anything; neither conflicted and the rebuilt index
+was byte-identical. **The cell is Europe's nineteenth century**, at 15 active and
+10 main — the thinnest in this partition, named by batch 20 and never taken —
+and the vein is the umbrella's own article: `napoleonic-wars` (1803–1815) was a
+main event with exactly one child, and its cached lead enumerates **seven**
+conflicts, of which the atlas held one, `peninsular-war`. **Six items imported,
+six created, none refused and none ambiguous**, in twenty-eight calls:
+`war-of-the-third-coalition`, `war-of-the-fourth-coalition`,
+`war-of-the-fifth-coalition`, `french-invasion-of-russia`,
+`war-of-the-sixth-coalition` and `war-of-the-seventh-coalition`, all filed under
+`napoleonic-wars`, all carrying `P361` `Q78994` on their own items and all
+inside 1803–1815, so **the main count does not move: 242 before and 242 after**.
+**No class was added and no place record was written** — all four locations the
+import reached for were already here with a `wikidata` field on them
+(`central-europe`, `poland-q36`, `france-q142`, `russian-empire-q34266`), the
+first batch of this branch that needed the place directory and found everything
+in it; A14(2)'s lane guard passes on all six, `russian-empire-q34266` included,
+which derives `europe` inside the polygon at distance 0. **Five carry the cached
+English lead as their summary** at a named revision with the `summary-from-lead`
+flag; **the sixth keeps the import's placeholder and the batch says why** —
+`Q2724511` has eleven sitelinks and none in English, and the English title *War
+of the Seventh Coalition* redirects to *Hundred Days*, a different item
+(`Q199955`), so quoting it would have been deviation 1252 again. **Six edges**,
+each `probable` and each quoting the sentence that carries it, **none of them
+running from a parent to its own child (A14)**: all six run between the seven
+children of the umbrella, and the umbrella takes no edge in either direction.
+One new source record, `riehn-1990-1812-napoleons-russian-campaign`, from the
+invasion article's own `{{sfn|Riehn|1990|p=26}}`, taking rule 9's count **202 →
+203**; the other five explanations say in their own words why the lead they
+quote carries no footnote to take a second author from. **The largest component
+moves 610 → 616** — `peninsular-war` is inside it, so the edge to the Fifth
+Coalition carries the whole new cluster in at one step, and **every one of the
+six earns an edge**, the second batch in a row where all of them do. `P710` was
+read and refused on all three items that carry one: the atlas holds an actor for
+one of the ten polities and people between them, so
+`docs/m53-polities.md` §4.1 is re-taken at **380 of 879** and `Q34266` and
+`Q71084` join the polity list, now thirteen. The corpus is **879 active**,
+Europe before 1900 is **89**, the cell is **21 with its ten main untouched**, and
+the `americas` lane is unchanged at 216. Deviations **1256** (on this branch the
+ninety-minute clause is the landing routine's, so 1249's last sentence decides)
+and **1257** (`--import` writes the record before it fetches the lead, so the
+placeholder is always what lands first and the lead summary is the fire's own
+second write); **1250 recurred**, a `reference` of 318 characters cut to 282.
+`docs/m42b-pool.md` → "Batch 21" is the full account.
+
 **M42b batches 19 and 20 — the Spanish conquest and the War of Jenkins' Ear, 24
 September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
 September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)
@@ -22646,10 +22747,16 @@ M86 started 2026-09-24T04:18:24Z by scheduled (branch m86)
 M86 done
 M42 started 2026-09-24T04:58:45Z by scheduled
 M42b started 2026-09-24T05:02:46Z by scheduled
-M42 started 2026-09-24T08:18:13Z by scheduled
 M87 started 2026-09-24T05:46:20Z by scheduled (branch m87)
 M87 done
+M42b started 2026-09-24T07:36:44Z by scheduled
+M42 started 2026-09-24T08:18:13Z by scheduled
+M42b started 2026-09-24T09:39:05Z by scheduled
 M42 started 2026-09-24T10:46:58Z by scheduled
+M42b started 2026-09-24T12:04:34Z by scheduled
+M42b started 2026-09-24T14:18:39Z by scheduled
 M42 started 2026-09-24T13:07:19Z by scheduled
 M42 started 2026-09-24T15:45:15Z by scheduled
+M42b started 2026-09-24T16:33:39Z by scheduled
+M42b started 2026-09-24T19:11:45Z by scheduled
 M42 started 2026-09-24T18:00:15Z by scheduled

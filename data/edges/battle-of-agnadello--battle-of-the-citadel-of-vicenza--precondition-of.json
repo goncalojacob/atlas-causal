@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-agnadello--battle-of-the-citadel-of-vicenza--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838, § The Battle"
+    }
+  ],
+  "from": "battle-of-agnadello",
+  "to": "battle-of-the-citadel-of-vicenza",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Vicenza article begins its account at Agnadello: \"In May 1509, after the crushing defeat suffered in the Battle of Agnadello, the Venetian army seemed destined to fall with the Republic of Venice.\" The citadel of Vicenza was imperial in November because Agnadello had taken Veneto away from Venice in May. `precondition-of`: the article gives Agnadello as the condition the year was fought under, and Padua as the turn that opened Vicenza. Probable: Wikipedia alone.",
+  "dispute": null
+}

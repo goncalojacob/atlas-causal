@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peace-of-prague-1635--battle-of-chemnitz--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chemnitz\", revision 1370108980, § Background"
+    }
+  ],
+  "from": "peace-of-prague-1635",
+  "to": "battle-of-chemnitz",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Chemnitz article begins its background with the same defection: \"The former Swedish ally Saxony defected in the Peace of Prague (1635) to Emperor Ferdinand II.\" The detachment Banér destroyed at Chemnitz was a combined Saxon and Imperial one, and the article gives the Peace as the reason Saxony was on that side. The paragraph carries no citation of its own, so Wikipedia is the only author named.",
+  "dispute": null
+}

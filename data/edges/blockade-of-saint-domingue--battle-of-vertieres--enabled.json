@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "blockade-of-saint-domingue--battle-of-vertieres--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vertières\", revision 1371955419, § Background"
+    }
+  ],
+  "from": "blockade-of-saint-domingue",
+  "to": "battle-of-vertieres",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The blockade article says what it did to the French position: \"In the north of the country, the French forces were isolated in the two large ports of Cap-Français and Môle-Saint-Nicolas and a few smaller settlements, all supplied by a French naval force based primarily at Cap-Français\", and later that \"by the end of the month, the garrison was starving\". The Vertières article describes Rochambeau \"at bay\" at Cap-Français with 5,000 troops. Enabled and not caused: the sea blockade left the last French army fixed and unsupplied where the battle was fought, and neither article says it won the battle. Probable: Wikipedia alone.",
+  "dispute": null
+}

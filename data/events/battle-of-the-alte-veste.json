@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-alte-veste",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2002331",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of the Alte Veste"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2002331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557"
+    }
+  ],
+  "title": "Battle of the Alte Veste",
+  "summary": "The English Wikipedia article \"Battle of the Alte Veste\", at revision 1370277557, opens: \"The Battle of the Alte Veste or Battle of Fürth was a significant battle of the Thirty Years' War in which Gustavus Adolphus' attacking forces were defeated by Wallenstein's entrenched troops. It was fought on 3 September 1632 between the Catholic forces of Holy Roman Emperor Ferdinand II and the Protestant forces of King Gustavus II Adolphus of Sweden during the period of Swedish intervention in the Thirty Years War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2002331, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the thrity years'war, 1632\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1632,
+    "end": 1632,
+    "date": "1632-09-09"
+  },
+  "place": "nuremberg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

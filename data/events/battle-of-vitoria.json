@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-vitoria",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q276059",
+  "wikipedia": {
+    "en": "Battle of Vitoria",
+    "pt": "Batalha de Vitória"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q276059"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vitoria\", revision 1370276545"
+    }
+  ],
+  "title": "Battle of Vitoria",
+  "summary": "The English Wikipedia article \"Battle of Vitoria\", at revision 1370276545, opens: \"At the Battle of Vitoria, a British, Portuguese and Spanish army under the Marquess of Wellington broke the French army under King Joseph Bonaparte and Marshal Jean-Baptiste Jourdan near Vitoria in Spain, eventually leading to victory in the Peninsular War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q276059, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle of the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-06-21"
+  },
+  "place": "vitoria-gasteiz",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

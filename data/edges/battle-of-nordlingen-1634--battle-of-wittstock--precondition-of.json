@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wittstock\", revision 1371435921, § Background"
+    }
+  ],
+  "from": "battle-of-nordlingen-1634",
+  "to": "battle-of-wittstock",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Wittstock article opens its background with Nördlingen: \"After the Swedish defeat at Nördlingen in 1634, many protestant princes of the Holy Roman Empire lost faith in their alliance with Sweden and reconciled with the emperor. In May 1635, the Elector of Saxony agreed to the Peace of Prague with Emperor Ferdinand II… In northern Germany, a corps of the Habsburg Imperial army and the Saxon army fought against the last significant Swedish forces.\" The Saxon army Banér and Leslie met at Wittstock is on the Imperial side because of what Nördlingen did to the alliance. The paragraph carries no citation of its own, so Wikipedia is the only author named.",
+  "dispute": null
+}

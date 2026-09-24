@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-spurs--siege-of-dijon--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dijon\", revision 1370740741, § Prelude"
+    }
+  ],
+  "from": "battle-of-the-spurs",
+  "to": "siege-of-dijon",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The same sentence of the Dijon article’s § Prelude names the second defeat: \"After the French defeats at Novara (6 June) and Guinegatte (16 August), Louis XII anticipated a counter-attack by the Imperial armies on France’s own soil.\" Guinegatte of 16 August 1513 is the Battle of the Spurs, which the article links under that name. `enabled`, for the reason the Novara edge gives. Probable: Wikipedia alone.",
+  "dispute": null
+}

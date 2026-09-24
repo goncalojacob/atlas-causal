@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "badajoz",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q15679",
+  "wikipedia": {
+    "en": "Badajoz",
+    "pt": "Badajoz"
+  },
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Badajoz"
+  ],
+  "where": {
+    "lon": -6.970609,
+    "lat": 38.87789,
+    "precision": "city",
+    "label": "Badajoz"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502, § Aftermath"
+    }
+  ],
+  "from": "war-of-the-sixth-coalition",
+  "to": "war-of-the-seventh-coalition",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Sixth Coalition article ends where the Seventh begins: \"The victors exiled Napoleon to the island of Elba, and restored the Bourbon monarchy in the person of Louis XVIII\", and, in its own lead, \"The Hundred Days began in 1815 when Napoleon escaped from his captivity on Elba and returned to power in France.\" `precondition-of`: the exile and the restoration are the settlement the war of 1815 was fought to undo, and the article says the later war began with an escape from the place the earlier one put him. Probable, and on the article alone at one revision: the Seventh Coalition's Wikidata item Q2724511 has no English article to read against this one, and the sentences quoted carry no footnote of their own, so there is no locator for a second author.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "napoleonic-wars--blockade-of-saint-domingue--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651, lead and § Background"
+    }
+  ],
+  "from": "napoleonic-wars",
+  "to": "blockade-of-saint-domingue",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The blockade's own lead calls it \"a naval campaign fought during the first months of the Napoleonic Wars in which a series of British Royal Navy squadrons blockaded the French-held ports of Cap-Français and Môle-Saint-Nicolas\", and its background dates the opening to the war: \"In the summer of 1803, when war broke out between the United Kingdom and the French Consulate\", and \"On 18 June 1803 two squadrons were sent to enact a blockade of the principal northern ports in French hands.\" Enabled and not caused: the renewed war is what let British squadrons attack French ports, not why those ports were worth attacking. Probable: Wikipedia alone.",
+  "dispute": null
+}

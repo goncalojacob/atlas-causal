@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pyrenees",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q12431",
+  "wikipedia": {
+    "en": "Pyrenees",
+    "pt": "Pirenéus"
+  },
+  "sitelinks": {
+    "count": 122,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Pyrenees",
+    "Pirenéus"
+  ],
+  "where": {
+    "lon": 0.6,
+    "lat": 42.7,
+    "precision": "region",
+    "label": "Pyrenees"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

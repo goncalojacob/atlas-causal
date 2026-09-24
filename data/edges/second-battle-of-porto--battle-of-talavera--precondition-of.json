@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-porto--battle-of-talavera--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Porto\", revision 1370787422, lead and § Aftermath"
+    }
+  ],
+  "from": "second-battle-of-porto",
+  "to": "battle-of-talavera",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Porto is what put the British army back in Spain: the article says the battle \"ended the Second French invasion of Portugal\" and that Soult \"entered Spain with a much diminished force, roughly half the size it had been before the Second Battle of Porto\"; its aftermath then reads \"The Spanish campaign in late 1809 started with the Battle of Talavera with the British army back in Spain.\" The article joins the two by the campaign rather than by a claim about cause, which is why this is a precondition. Probable: Wikipedia alone.",
+  "dispute": null
+}

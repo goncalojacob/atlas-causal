@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-rolica",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q324344",
+  "wikipedia": {
+    "en": "Battle of Roliça",
+    "pt": "Batalha da Roliça"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q324344"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Roliça\", revision 1373583318"
+    }
+  ],
+  "title": "Battle of Roliça",
+  "summary": "The English Wikipedia article \"Battle of Roliça\", at revision 1373583318, opens: \"At the Battle of Roliça, the first battle fought by the British army during the Peninsular War, an Anglo-Portuguese army under Sir Arthur Wellesley defeated an outnumbered Imperial French division under General of Division Henri François Delaborde, near the village of Roliça in Portugal. The French retired in good order.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q324344, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-08-17"
+  },
+  "place": "rolica",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

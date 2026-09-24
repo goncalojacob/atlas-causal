@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bailen--siege-of-zaragoza-1809--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Zaragoza (1809)\", revision 1370746579, § Background"
+    }
+  ],
+  "from": "battle-of-bailen",
+  "to": "siege-of-zaragoza-1809",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The siege article opens its background on the defeat: \"Further defeats – especially the surrender of Divisional-general Pierre Dupont de l'Étang at the Battle of Bailén – forced King Joseph Bonaparte to withdraw behind the Ebro river, abandoning most of Spain except a small corner in the north-east and a small area around Barcelona.\" The second siege is the counter-offensive Napoleon then led in person — \"Napoleon's plan was to attack in strength towards Burgos in between the armies of Blake and Castaños\" — so Bailén is what the campaign this siege belongs to was answering. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "guthrie-2003-the-later-thirty-years-war",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "William P. Guthrie"
+  ],
+  "title": "The later Thirty Years War: from the Battle of Wittstock to the Treaty of Westphalia",
+  "year": 2003,
+  "publisher": "Greenwood Publishing Group",
+  "isbn": "0313324085",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}

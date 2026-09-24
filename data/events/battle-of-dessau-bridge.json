@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-dessau-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q677121",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Dessau Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q677121"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dessau Bridge\", revision 1370109657"
+    }
+  ],
+  "title": "Battle of Dessau Bridge",
+  "summary": "The English Wikipedia article \"Battle of Dessau Bridge\", at revision 1370109657, opens: \"The Battle of Dessau Bridge was a significant battle of the Thirty Years' War between Danish Protestants and the Imperial German Catholic forces on the Elbe River outside Dessau, Germany on 25 April 1626.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q677121, imported by tools/import/wikidata.mjs. The item's own description reads \"1626 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1626,
+    "end": 1626,
+    "date": "1626-04-25"
+  },
+  "place": "dessau-ro-lau",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

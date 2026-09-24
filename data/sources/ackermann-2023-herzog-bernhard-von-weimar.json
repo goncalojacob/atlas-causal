@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ackermann-2023-herzog-bernhard-von-weimar",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Astrid Ackermann"
+  ],
+  "title": "Herzog Bernhard von Weimar: Militärunternehmer und politischer Stratege im Dreißigjährigen Krieg",
+  "year": 2023,
+  "publisher": "De Gruyter",
+  "isbn": "9783110701913",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": null
+}
