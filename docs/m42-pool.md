@@ -8351,3 +8351,295 @@ out of it.
 it and run 1711 on the records head was cancelled by the next push in the same
 concurrency group, which is the ordering rule 798 working rather than a fault.
 The re-run allowance is unspent: nothing was re-run.
+
+## Batch 50 — the Mali War read as a chain, and the vein whose endpoints were all held
+
+*24 September, the fire that picked the run up at 13:07Z. Today already carries
+a `## Curation 2026-09-24` section and **all six of A14's passes carry theirs**,
+so this is an import fire and every one of the six is skipped by its own rule.
+`origin/m0` was already an ancestor of `m42` at claim time, so no merge. A10's
+order of need is unchanged from batch 49's stand: **Africa trails at 147**
+against Asia's 149 and Europe's 378, so this batch is eight Africa rows and no
+other lane.*
+
+### The vein, chosen the way batch 49 said to choose one
+
+Batch 49's stand left two instructions and this batch is both of them carried
+out. The first: **pick the vein whose endpoints are already inside the largest
+component, not the vein with the most rows.** The second, from batch 48 and
+unchanged since: **the Africa vein is the one read incompletely, and `mali-war`
+sits in the largest component.**
+
+`Q2946372`, the Mali War, answers 103 rows under the inverse `part of` vein and
+the atlas held **seven** of them after A14 — the two Tuareg risings, the three
+coups, Serval, Barkhane and the Ogossagou massacre — and six of those seven are
+inside the 617. So the remaining rows hang on endpoints worth more than any
+other Africa vein's, and eight of them are the engagements the held chain was
+missing between the rising of January 2012 and the pursuit into the mountains
+in March 2013.
+
+Read through the query service (`query.wikidata.org/sparql`), which answered 200
+throughout. `en.wikipedia.org` answered **429 on almost every request for two
+hours** and `www.wikidata.org/w/api.php` on some — deviation 1425 is what that
+turned out to be and how it was got round.
+
+A11 (b)'s partition check was made before the import: none of the eight ids is
+on `origin/m42b`, whose `data/events/` holds 1,149 ids and none of Mali's beyond
+the three the two branches share through `m0`.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `siege-of-tessalit` | 2 | 17 Jan – 11 Mar 2012 | `tessalit` (new) | `mali-war` |
+| `battle-of-kidal-2012` | 4 | 26–30 Mar 2012 | `kidal` (new) | `mali-war` |
+| `battle-of-gao` | 6 | 26–28 Jun 2012 | `gao` (new) | `mali-war` |
+| `battle-of-konna` | 9 | 10–18 Jan 2013 | `konna` (new) | `mali-war` |
+| `battle-of-diabaly` | 6 | 14–21 Jan 2013 | `diabaly` (new) | `mali-war` |
+| `second-battle-of-gao` | 4 | 25–27 Jan 2013 | `gao` (reused) | `mali-war` |
+| `battle-of-ifoghas` | 5 | 18 Feb – 31 Mar 2013 | `adrar-des-ifoghas` (new) | `mali-war` |
+| `chadian-intervention-in-northern-mali` | 3 | Jan 2013 | `azawad` (reused) | `mali-war` |
+
+All eight pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one inside `mali-war`'s 16 January 2012 to its
+open end; and **lane**, every one in Mali or Azawad. All eight filed, so **main
+stays at 242**, unmoved through twenty-one batches, three curation fires and
+A14.
+
+**One class was added**, and it is the first in two batches: `Q1758856`, commune
+of Mali, whose own description reads "third-level administrative unit in Mali",
+as `place`/`city`. Five of the six located items the batch names carry it and
+nothing else, and `city` is the precision `Q484170`, commune of France, already
+carries for the same reason — the unit a town is. `Q178561` battle, `Q350604`
+armed conflict and `Q46831` mountain range were all in the table already.
+
+### The eight edges, and the component they moved
+
+Eight edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 50". **Seven run into or out of records
+that were already here** — the coup, the 2012 rising and Operation Serval — and
+the eighth chains the batch to itself.
+
+| from | type | to |
+| --- | --- | --- |
+| `2012-malian-coup-d-etat` | enabled | `battle-of-kidal-2012` |
+| `2012-tuareg-rebellion` | precondition-of | `battle-of-gao` |
+| `battle-of-konna` | caused | `operation-serval` |
+| `operation-serval` | reacted-to | `battle-of-diabaly` |
+| `battle-of-diabaly` | precondition-of | `second-battle-of-gao` |
+| `battle-of-konna` | precondition-of | `battle-of-ifoghas` |
+| `battle-of-diabaly` | precondition-of | `battle-of-ifoghas` |
+| `chadian-intervention-in-northern-mali` | enabled | `battle-of-ifoghas` |
+
+**The largest connected component goes from 617 to 624** — seven of the eight
+joined it, and the eighth, `siege-of-tessalit`, is a component of one, which is
+why the component count goes to 202 and the edgeless count to 159. That is the
+honest shape of this batch: the vein was chosen for its endpoints and seven of
+eight paid off, and the one that did not is the one whose article argues nothing
+about anything the atlas holds.
+
+**`battle-of-konna --caused--> operation-serval` is the edge the vein was worth
+reading for.** Konna is the battle the French intervention answered — the
+article says it in one sentence, *"the jihadist offensive in southern Mali
+provoked France's entry into the war"* — and Serval was already in the largest
+component with an edge into Barkhane. So the Mali chain now runs unbroken from
+the rising of January 2012, through the coup that opened the north, through the
+falling-out at Gao, into Konna, France, Diabaly, Gao again, the Adrar des
+Ifoghas and out through Barkhane to the coups of 2020 and 2021.
+
+### Two intervals widened under A7, and one of them is what let rule 4 pass
+
+Neither is a review flag being closed for its own sake; both are dates the
+record's own cited lead states and the record did not carry.
+
+- **`2012-malian-coup-d-etat`** carried `2012-04-08` for **both** bounds, which
+  is C3's `P585`-over-`P580` fault surviving A14. Its own cited article at
+  revision 1370102863 — the revision the cache holds — opens *"The 2012 Malian
+  coup d'état began on 21 March that year"*, so the start is `2012-03-21` and
+  the end is left where it was. **Without this the coup's edge into Kidal
+  (26 March) runs backwards and rule 4 refuses it**, which is the first time in
+  this run an A7 widening has been the thing that made an edge possible rather
+  than the thing that tidied one up. **Deviation 1428.**
+- **`battle-of-gao`** carried `2012-06-27` alone, the item's single `P585`. Its
+  article at revision 1370441289 says the battle was fought *"in Gao between 26
+  and 28 June 2012"*, so the span is those three days.
+
+### A9's places, and the one the two steps disagreed about
+
+Six place records are new and **not one was hand-corrected**; all six carry
+`summary: null`, which is what A14 (6) left every imported place at.
+
+- **`gao`** (`city`, `Q188904`), **`kidal`** (`Q650100`), **`konna`**
+  (`Q1764720`) and **`diabaly`** (`Q1764788`) are the four where A9's two steps
+  agree exactly: each battle's own `P625` is the town's own point, to three
+  decimals or better. `gao` serves two events.
+- **`tessalit`** (`city`, `Q1025926`) is the fifth, with a 1.5 km gap between
+  the siege's own point and the town's. The article explains the gap rather than
+  contradicting it — the besieged camp was Amachach, *"about fifteen kilometers
+  from Tessalit itself"* — and a second mark 1.5 km from the first would be the
+  `london-q84` fault A14 (6) has just finished undoing.
+- **`adrar-des-ifoghas`** (`region`, `Q366665`) is the sixth and the one
+  disagreement. `battle-of-ifoghas`'s `P276` is Tessalit, which the import would
+  have given it; its own `P625` is 1.2342E 19.8628N, 45 km south, in the massif
+  the article names — *"the Adrar Tigharghar, a mountain of the Adrar of
+  Ifoghas"*, the fighting *"mainly concentrated in the Ametettai Valley"*. **A9's
+  first step wins over a held answer at its second for the second time in the
+  run**, after batch 49's `te-li-ssu` (deviation 1421), and for the same reason:
+  the town is where the supply line ran and not where the battle was.
+- **`chadian-intervention-in-northern-mali` reuses `azawad`**, which the atlas
+  has held since batch 37: the item carries no `P625` of its own, and its `P276`
+  is `Q43937`, which is that record's item.
+
+### The one refusal, and the shape it is
+
+**`Q17149843`, the Azawad conflict, was imported and then deleted.** The item is
+its own thing on Wikidata — the MNLA's falling-out with the Islamists, dated
+27 June 2012 — but its English sitelink, "Azawad conflict", **redirects to
+"Tuareg rebellion (2012)"**, which is the article `2012-tuareg-rebellion`
+already cites, at the same revision. A record whose only English source is
+another record's article is a duplicate waiting to happen, so it was dropped
+from `data/imports/wikidata-seeds.json` and its file deleted before anything was
+committed. What the item is *about* is in the atlas anyway: `battle-of-gao` is
+the clash the item is dated by, and it arrived in this batch. **Deviation 1427.**
+
+The cached lead `tools/import/cache/wikipedia/Q17149843.en.json` was written by
+that first run and is left where it is: the cache is not data, it is never
+published, and no record points at the item.
+
+### The four deviations
+
+- **1425.** *Wikimedia's 429 from this sandbox carries `retry-after: 1`, so the
+  bucket is contended and not exhausted.* For two hours `en.wikipedia.org`
+  refused almost every request — the action API, the REST summary and the REST
+  HTML alike — and the first two fetch scripts, which backed off 20 and then 25
+  seconds between attempts, made almost no progress in twenty minutes. The
+  response headers say why: `retry-after: 1`, against a shared egress IP
+  (`x-client-ip: 160.79.106.129`) that other work is also spending. Retrying
+  **every two seconds** for up to ninety attempts got thirteen articles in a few
+  minutes. Two further readings worth keeping: `index.php?action=raw` is
+  throttled far more gently than `prop=extracts` or `api/rest_v1`, and pinning
+  it to `&oldid=<revid>` read from one light `prop=revisions` call gives the
+  exact revision the locator names rather than whatever is current.
+- **1426.** *The import writes an event's place from `P276` and never from the
+  event's own `P625`, so A9's first step is the fire's to run and not the
+  tool's.* The first run of this batch put the eight events on disk with
+  `place: null`, because `runImportMode` looks up `read.location` — the item's
+  `P276` — in the places it already knows, and creates a place only for an item
+  the seeds file names as a place. The fix was not to hand-edit eight records
+  but to **roll the import state back** (remove the eight qids from
+  `runs.import.done`), delete the eight files, add the six location items to
+  `data/imports/wikidata-seeds.json`, and run again: `KINDS` puts places before
+  events, so the second run created the six places and then pointed the eight
+  events at them, with nothing written by hand. A9's first step is then a
+  separate reading, and it changed exactly one answer (`adrar-des-ifoghas`).
+- **1427.** *An item that is its own record on Wikidata can share another
+  record's article.* `Q17149843`, the Azawad conflict, is distinct from
+  `Q1525846`, the 2012 Tuareg rebellion, and its English sitelink redirects to
+  the other's article — the same title, the same revision, 97,091 bytes of the
+  same text. Nothing in the import can see this: the sitelink is a title and the
+  redirect is resolved by the server. It was caught because two fetches came
+  back with the same `revid`. A record whose only English source is another
+  record's article is refused, and the refusal is a class the candidate sweep
+  cannot rank for.
+- **1428.** *An A7 widening can be the thing that makes an edge possible.* Every
+  widening this run has written so far has closed a `date` flag or answered a
+  review finding. This one was found the other way round: the coup's edge into
+  Kidal was written, rule 4 would have refused it for running backwards, and the
+  reason was that the record carried its own end date for both bounds. The
+  article the record already cites states the start in its first clause. The
+  brief's own words for A14 (1) — *never the date kept wrong* — read the same in
+  this direction.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 890 | **898** |
+| main | 242 | **242** |
+| filed | 648 | 656 |
+| active edges | 859 | **867** |
+| largest connected component | 617 | **624** |
+| components | 201 | **202** |
+| events with no edge at all | 158 | **159** |
+| events with no place | 50 | 50 |
+| validator | 0 errors, 426 warnings | **0 errors, 427 warnings** |
+| per lane, active | Europe 378, Americas 216, Asia 149, Africa 147 | Europe 378, Americas 216, Asia 149, **Africa 155** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 | unchanged |
+
+The one new warning is `degree-zero` on `siege-of-tessalit`.
+
+`docs/m53-polities.md` §4.1 is retaken at **383 of 898**, counted by overlap
+**384**: **not one of the eight items carries a `P710` at all**, so all eight
+arrived with `actors: []` and the `P710` pass had nothing to map. The
+denominator moves and the numerator does not.
+
+## Where the run stands after batch 50, for the fire that picks it up
+
+*24 September, 13:07Z onward. An import fire, one batch and no code change.*
+
+| | |
+| --- | --- |
+| corpus | **898 active** |
+| **main** | **242**, unmoved through twenty-one batches, three curation fires and A14 |
+| filed | 656 |
+| active edges | **867** |
+| largest connected component | **624** (+7) |
+| components | **202** (+1) |
+| events with no edge at all | **159** (+1): `siege-of-tessalit` |
+| events with no place | **50**, unmoved: all eight arrived placed |
+| validator | **0 errors, 427 warnings** |
+| per lane, active | Europe 378, Americas 216, **Asia 149**, **Africa 155** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again**: Africa is at 155 and **Asia
+trails at 149**, so the next import batch is Asia's unless a chain crosses out
+of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **The Asia vein to take is `Q8663` the Korean War or `Q170314` the Second
+  Sino-Japanese War**, at 92 rows each, both named by batch 49's stand and both
+  with endpoints inside the largest component. The method is now proved twice —
+  batch 49 on the Russo-Japanese War and this batch on the Mali War — and it is
+  the same one: pick the vein whose endpoints are already in the component, read
+  each row's article, and write the edge only where a sentence argues one.
+- **The Mali vein is not finished and is worth coming back to.** 103 rows
+  answered and fifteen are now held; what is left with dates and an English
+  article includes `Q8363015` the Battle of Timbuktu (March 2013),
+  `Q9101600` the second, `Q6337939` Operation Panther — which the Ifoghas
+  article names as the operation the battle was fought inside — `Q111480185` the
+  Moura massacre (2022) and `Q128007033` the Battle of Tinzaouaten (2024), which
+  would carry the chain from 2013 up to the present and into the two coups the
+  atlas already holds.
+- **`siege-of-tessalit` is the record this batch left edgeless**, and it is the
+  first thing the next Africa fire should try: the articles read here argue
+  nothing from it to anything held, and what would settle it is the coup's own
+  sources on what the army's defeats in February and March 2012 did to the
+  mutineers' patience.
+- **`Q21028650`, the Algiers Accords of 2015, is refused on its class and is a
+  question for a person**: its only `P31` is `Q321839`, agreement, whose own
+  description — "understanding, agreement between two or more contracting
+  persons, parties or entities" — covers a private contract as readily as a
+  peace treaty, and the run does not guess a class that broad. It is the peace
+  agreement the Mali chain ends at, so it is worth deciding.
+- **C8 is still the run's largest single question** and no batch writes a
+  parent-to-child edge; the 91 that exist stay. This batch wrote none: all eight
+  records are `mali-war`'s children and every edge runs between siblings or out
+  to a record that is not their parent.
+- **`should the europe lane hold Russian Asia?`** is still the owner's, from
+  batch 49 (deviation 1423).
+- **The five questions of the A14 stand are unchanged** and unanswered: which
+  record a lane guard clears, whether the cache may hold more than one revision,
+  whether a certain reconciliation may write `wikidata`, whether a § Background
+  mention is ever a `precondition-of`, and whether `parent` satisfies §1's bar.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`.
+- **`rhodesian-bush-war` is no longer the only active event with neither an edge
+  nor a parent** — `siege-of-tessalit` has a parent but no edge, and the two are
+  different faults.
+- **Deviation numbers: take the next above 1428.** This fire wrote **1425 to
+  1428**.
