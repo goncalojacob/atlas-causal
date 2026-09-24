@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. Bolivia and Paraguay fought over the Gran Chaco between 1932 and 1935 and this atlas holds nothing of South America before the Chilean coup of 1973. No edge to a Portuguese event can be argued and none to a world event here can either. A good record with nowhere to stand."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. South America is in the atlas now, 47 active events, which is the thing M44b said was missing. The article, at revision 1370610658, attributes the war to \"a long-standing territorial dispute and to the discovery of oil deposits on the eastern Andes range\" and to Standard Oil and Royal Dutch Shell; it names no event this atlas holds, and the Great Depression, which the atlas does hold, is not in its account of the origins. A good record still reaching nothing — but now for want of a Bolivian or Paraguayan neighbour rather than for want of Lisbon."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q223126",

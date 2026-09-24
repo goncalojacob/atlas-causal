@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant",
     "run": "m55"
@@ -21,7 +21,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m55-germany"
+      "m55-germany",
+      "polity-description"
     ],
     "note": "M55: written to carry the middle of CShapes’ entity 255, which held three polities under one label. Its dates are Wikidata’s Q41304: P571 1918-11-09, the day Q43287 gives for the German Empire’s dissolution, and P576 1933, which that item gives to the year and not to the day. Its territory is entity 255’s second and third periods and the tail of the first, each cut at a cited date rather than redrawn."
   },
@@ -37,13 +38,21 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 255"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q41304, P2046 (area) and P1082 (population, 1933)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Weimar Republic\", revision 1375521003"
     }
   ],
   "actorType": "polity",
   "names": [
     "Weimar Republic"
   ],
-  "summary": "A polity whose inception Wikidata states as 1918-11-09 on Q41304 and whose dissolution it states as 1933; the first is given to the day there and the second only to the year, and this record writes neither more precisely than the item does. Its inception is the same instant as the German Empire’s dissolution on Q43287, which is why a succession runs between them with no gap. Its name is its own and not CShapes’ label for entity 255, which reads \"Germany (Prussia)\" and covers three polities; its territory is that entity’s — the period that begins 1919-06-28, the tail of the one that begins 1886 after the Empire’s dissolution, and the head of the one that begins 1920-02-10, cut where Q7318 says the Nazi state begins.",
+  "summary": "Approximately 468,787 km² and about 66 million people (1933), from Wikidata's Q41304 (P2046, P1082). The English Wikipedia article \"Weimar Republic\", at revision 1375521003, opens: \"The Weimar Republic was a historical period of the German state from 9 November 1918 to 23 March 1933, during which it was a constitutional republic for the first time in history. The state was officially named the German Reich, but was more commonly referred to, and unofficially proclaimed itself, as the German Republic. The period's informal name is derived from the city of Weimar,\nwhere the republic's constituent assembly took place.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1918-11-09 on Q41304 and whose dissolution it states as 1933; the first is given to the day there and the second only to the year, and this record writes neither more precisely than the item does. Its inception is the same instant as the German Empire’s dissolution on Q43287, which is why a succession runs between them with no gap. Its name is its own and not CShapes’ label for entity 255, which reads \"Germany (Prussia)\" and covers three polities; its territory is that entity’s — the period that begins 1919-06-28, the tail of the one that begins 1886 after the Empire’s dissolution, and the head of the one that begins 1920-02-10, cut where Q7318 says the Nazi state begins.",
   "when": {
     "start": 1918,
     "end": 1933

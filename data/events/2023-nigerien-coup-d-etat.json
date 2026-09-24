@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. The Sahel coups of 2020 to 2023 are a sequence and this atlas holds one of them. Wired to nothing, it would stand alone; wired to the Nigerien or Malian coups it would need records that do not exist."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The Sahel coups are in the atlas now: 2020-malian-coup-d-etat and 2021-malian-coup-d-etat, both filed under mali-war. The Nigerien article, at revision 1372829328, says the coup \"came in the wake of recent coups in nearby countries, such as in Guinea, Mali, and Sudan in 2021, and two in Burkina Faso\" and that this has led to the region being called a \"coup belt\". That is the chronology class this same fire dropped nine A13 edges for: a sequence somebody has named, not a claim that one coup was a condition of the other. Writing it to keep the record is exactly what §1 forbids, so the record stays retracted and the sentence stays here for whoever reads it next."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q117100709",

@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "participants-from-p710",
-      "summary-from-lead"
+      "summary-from-lead",
+      "title-from-article"
     ],
     "note": "Wikidata Q2479435 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },
@@ -50,7 +51,7 @@
       "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846"
     }
   ],
-  "title": "South Lebanon conflict",
+  "title": "South Lebanon conflict (1985–2000)",
   "summary": "The English Wikipedia article \"South Lebanon conflict (1985–2000)\", at revision 1370747846, opens: \"The South Lebanon conflict was an armed conflict that took place in Israeli-occupied southern Lebanon from 1982 or 1985 until Israel's withdrawal in 2000. Hezbollah, along with other Shia Muslim and left-wing guerrillas, fought against Israel and its ally, the Catholic Christian-dominated South Lebanon Army (SLA). The SLA was supported militarily and logistically by the Israel Defense Forces (IDF) and operated under the jurisdiction of the Israeli-backed South Lebanon provisional administration, which succeeded the earlier Israeli-backed Free Lebanon State.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2479435, imported by tools/import/wikidata.mjs. The item's own description reads \"1985-2000 war between Israel and insurgents in South Lebanon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1985,

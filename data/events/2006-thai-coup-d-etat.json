@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. Thailand enters this atlas nowhere and the coup of 2006 has no argued relation to anything in it. It was ticked because set 3 of M44a’s rule needed a revolution and deviation 670 had struck the row above it; the tick rule was right to take it and this round has nothing to do with it."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Thailand is in the atlas now — siamese-revolution-of-1932 — and that is the only Thai record here. Seventy-four years separate them and no article states a link between them. Under the new bar this record still reaches nothing, and what would change that is the Thai political crisis of 2005 to 2014, which the atlas does not hold."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q860423",

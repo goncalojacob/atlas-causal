@@ -17,15 +17,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "filed-from-p361"
-    ]
+      "filed-from-p361",
+      "a7-widened"
+    ],
+    "note": "A7: the span was 1941-1943. The cited article's first sentence says, at the cached revision 1375965594, \"between 1940 and 1944\". So 1940-1944, with no days, because the article gives none."
   },
   "origin": {
     "tool": "wikidata"
@@ -46,20 +48,21 @@
     {
       "source": "wikipedia-en",
       "locator": "\"The Holocaust in Romania\", revision 1375965594"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust in Romania\", revision 1375965594: \"the genocide of Jews in the Kingdom of Romania and in Romanian-controlled territories of the Soviet Union between 1940 and 1944\""
     }
   ],
   "title": "The Holocaust in Romania",
   "summary": "The English Wikipedia article \"The Holocaust in Romania\", at revision 1375965594, opens: \"The Holocaust saw the genocide of Jews in the Kingdom of Romania and in Romanian-controlled territories of the Soviet Union between 1940 and 1944. While historically part of The Holocaust, these actions were mostly independent from the similar acts committed by Nazi Germany, Romania being the only ally of the Third Reich that carried out a genocidal campaign without the intervention of Heinrich Himmler's SS. Various numbers have been advanced by researchers for the lives lost in the genocide, with most estimates in the range of 250,000 to 380,000.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3376121, imported by tools/import/wikidata.mjs. The item's own description reads \"The Holocaust as it developed in Romania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1941,
-    "end": 1943
+    "start": 1940,
+    "end": 1944
   },
   "place": "romania-q218",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "the-holocaust",
-    "world-war-ii"
-  ],
+  "parent": "world-war-ii",
   "actors": []
 }

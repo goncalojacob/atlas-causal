@@ -1,0 +1,920 @@
+{
+  "from": null,
+  "kind": "source",
+  "records": {
+    "ar-2024-fiftieth-anniversary": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "ar-2025-confidence-vote": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "banco-de-portugal-2014-bes-resolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "burgwyn-1997-italian-foreign-policy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "caulfield-1995-easter-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "cne-legislative-2015": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-legislative-2019": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-legislative-2022": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-legislative-2024": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-legislative-2025": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-presidential-2016": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cne-presidential-2021": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "cohen-2007-global-monetary-governance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "costa-pinto-2003-contemporary-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "costa-pinto-teixeira-2019-political-institutions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "craton-1982-testing-the-chains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "cshapes-2-0": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin"
+          ],
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "cti-2017-2018-fires": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "dre-2020-state-of-emergency": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "dre-government-appointments-2015-2024": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "eakin-1998-brazil-once-and-future-country": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "fausto-1999-concise-history-of-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "ferreira-gomes-2014-1964": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "fifer-1970-empire-builders": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "container"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "fromkin-2009-peace-to-end-all-peace": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "gaunt-2006-massacres-resistance-protectors": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "gberie-2005-dirty-war-west-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "gellately-2007-lenin-stalin-hitler": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "goldstein-1999-croatia-a-history": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "hall-2000-balkan-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "hemming-1993-conquest-of-the-incas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "historical-basemaps": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "holy-see-2023-world-youth-day": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "imf-2016-portugal-ex-post-evaluation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "isaacs-hardy-1988-pawns-of-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "jester-uyeki-jernigan-2020-fifty-years-h3n2": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "kaplan-1990-soldiers-of-god": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "kinsbruner-1994-independence-in-spanish-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "leech-2009-beyond-bogota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "macqueen-1997-decolonization": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "mallett-shaw-2014-the-italian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "marley-2008-wars-of-the-americas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "maxwell-1995-making-of-portuguese-democracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "meneses-2004-portugal-1914-1926": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "meneses-2009-salazar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "metcalf-metcalf-2006-concise-history-of-modern-india": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "miroiu-alecu-2024-mali-conflict": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "mommsen-1996-rise-and-fall-of-weimar-democracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "norwich-1982-a-history-of-venice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "pares-1936-war-and-trade-in-the-west-indies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "parker-1977-papel-dos-estados-unidos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "pgr-2023-operation-influencer": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "prescott-conquest-of-peru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "ramos-2009-historia-de-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "reis-2013-portuguese-slump": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "ren-2025-blackout": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "ricklefs-1991-history-of-modern-indonesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "rosas-1994-estado-novo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "rosas-2012-salazar-e-o-poder": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "schnabel-1972-policy-and-direction": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "seibert-2005-comrades-clients-and-cousins": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "sturm-2011-weimarer-republik": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "tauber-2014-arab-movements-world-war-i": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "telo-2007-historia-contemporanea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "trout-1969-moroccos-saharan-frontiers": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "uefa-2016-final": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "upton-1980-vallankumous-suomessa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "walker-2014-the-tupac-amaru-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "watson-1970-brief-history-of-barbados": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "container"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "wheeler-1978-republican-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "wikidata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "wikipedia-en": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "wikipedia-pt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [
+            "origin",
+            "review"
+          ],
+          "on": "2026-09-04"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": null
+}

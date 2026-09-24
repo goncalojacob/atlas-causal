@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "actor-drafted"
+      "actor-drafted",
+      "polity-description"
     ]
   },
   "where": null,
@@ -32,6 +33,14 @@
     {
       "source": "telo-2007-historia-contemporanea",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1039, P2046 (area) and P1082 (population, 2017)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"São Tomé and Príncipe\", revision 1375996168"
     }
   ],
   "actorType": "polity",
@@ -40,7 +49,7 @@
     "São Tomé e Príncipe",
     "Democratic Republic of São Tomé and Príncipe"
   ],
-  "summary": "The two islands in the Gulf of Guinea were claimed for Portugal in the 1470s, worked as sugar and then as cocoa plantations, and became a state on 12 July 1975, the last of the African territories to leave. They are the smallest of the five and the one where the transfer of power was least contested: no war was fought there, and the single movement Lisbon recognised took the state from an assembly elected four days earlier.",
+  "summary": "Approximately 1,001 km² and about 204,327 people (2017), from Wikidata's Q1039 (P2046, P1082). The English Wikipedia article \"São Tomé and Príncipe\", at revision 1375996168, opens: \"São Tomé and Príncipe, officially the Democratic Republic of Sao Tome and Principe, is an island country in the Gulf of Guinea, off the western equatorial coast of Central Africa. It consists of two archipelagos around the two main islands of São Tomé and Príncipe, about 81 nautical miles apart and about 135 and 121 nautical miles off the northwestern coast of Gabon. With a population of 201,800, São Tomé and Príncipe is the second-smallest and second-least populous African sovereign state after Seychelles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. The two islands in the Gulf of Guinea were claimed for Portugal in the 1470s, worked as sugar and then as cocoa plantations, and became a state on 12 July 1975, the last of the African territories to leave. They are the smallest of the five and the one where the transfer of power was least contested: no war was fought there, and the single movement Lisbon recognised took the state from an assembly elected four days earlier.",
   "when": {
     "start": 1975,
     "end": null

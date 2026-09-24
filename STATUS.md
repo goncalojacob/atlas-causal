@@ -20270,6 +20270,97 @@ and A13's relations pass, still never run.
       — but a fire on `m42` that reads this should take the next free number
       **above 1400** rather than the next after `STATUS.md`'s last, and say so.
 
+## M42 — A14's six data passes, 24 September
+
+The second review (`docs/review-2026-09-24.md`, part C) measured the corpus
+after two curation fires and amendment **A14** turned its findings into six
+data passes, in force for both lanes before any further import. The 04:58Z
+fire of 24 September ran all six; each carries its own section and counts in
+`docs/m42-pool.md`, and nothing was imported.
+
+1. **The fifteen intervals**, widened or corrected from the first sentence of
+   their own cached leads, with the clause as a locator: eleven wider, four
+   narrower, eight precise dates dropped because the article gives the bound
+   none. No edge failed rule 4 after them.
+2. **The lane guard over the 566 `a9-place` events**: six places cleared, every
+   `region` kept. The Great Depression was in Kabul and the Japanese
+   Instrument of Surrender at the `uss-missouri`'s berth in Pearl Harbor.
+3. **The evidence put on disk**: 357 leads fetched at the revision their
+   citation names, through the REST summary endpoint's revision path.
+   1,342 of 1,927 article references were cached at the revision cited before;
+   1,854 after.
+4. **The A13 edges**: one retyped, one re-pointed, one relabelled, and nine of
+   the eleven "Following…" quotes dropped under one test — does the sentence
+   name both ends, or state the relation between them?
+5. **Nineteen of the thirty-four named polities described** — the Soviet Union,
+   the Ottoman Empire, Nazi Germany, the Estado Novo — and fifteen refused,
+   with their reason.
+6. **The seven cleanups**: 21 titles retitled from their articles, `london-q84`
+   merged into `london`, 94 place placeholders nulled, 18 open ends flagged,
+   the 15 M44b tombstones re-read and rewritten, and **the Holocaust divided at
+   1941** under the brief's §5.
+
+Corpus 858 → **859 active**, **main 242 and unmoved**, edges 843 → 834,
+largest component 609 → 608, validator 496 → **402 warnings and 0 errors**.
+Tests: 1,792 pure and 279 browser, all passing.
+
+1408. **The schema's limits are what a quoted locator is written to, not an
+      afterthought.** A locator is 200 characters and a review note 500. The
+      first draft of the interval pass quoted whole first sentences and wrote
+      nine `rule 1` errors before a byte of it was believed; it now checks both
+      lengths itself and refuses rather than writing, and quotes the clause
+      that states the span instead of the sentence around it. The same limit
+      decided a second thing: `chilean-war-of-independence` keeps its
+      465-character account of its own interval and **not** a bookkeeping line
+      about a cleared flag, because the two would not both fit and the account
+      is worth more.
+1409. **Two of the six places the lane guard cleared failed on the lane
+      polygon, not on the place, and the guard cannot tell the difference.**
+      `ipatiev-house` is exactly where the Romanovs were shot and Yekaterinburg
+      is east of the Urals, so the disagreement is between
+      `data/geo/regions.json`'s Europe–Asia boundary and the lane the event's
+      own point was given at import. `monastir-vilayet` is exactly where the
+      Ilinden uprising was and there the record's **own** lane is the wrong
+      half — `asia`, from the Ottoman point the import read. The guard is
+      mechanical and was run as A14(2) writes it, which leaves a Macedonian
+      uprising in the Asia lane with no place at all. **The owner's question is
+      one line: where the guard fires, which does it clear — the place, always,
+      or the one that disagrees with the record's title?**
+1410. **The REST summary endpoint answers with `revision` as a string, and a
+      pass that believes `Number.isInteger` refuses all 323 of its own
+      fetches.** `fetchLeads()` has coerced it since the import was written and
+      this pass reimplemented the check without the coercion, wrote nothing,
+      and reported *"no extract at that revision"* 323 times for 323 good
+      answers. The failure mode worth naming is not the typo: it is that the
+      first reading of that report was *the endpoint has no summaries at old
+      revisions*, which one `curl` disproved. **A pass that writes nothing and
+      blames the source is to be disbelieved before the source is.**
+1411. **`six-day-war--yom-kippur-war` is the drop most likely to have a better
+      sentence in the same article, and a sweep cannot find it.** Its quote —
+      *"Following their victory in the Six-Day War, the Israeli military had
+      become complacent"* — names the 1967 war and not the 1973 one, so the
+      test that dropped the other eight drops it too. The Yom Kippur War's
+      article argues the complacency at length and somewhere states the link.
+      Re-reading one article for one sentence is a reading and not a pass; the
+      record is on disk with its reason, so a person or a later curation fire
+      can restore it from a sentence that says it.
+1412. **Population for an ended polity is a snapshot of a year, and `P1082`
+      without a `P585` qualifier is unusable for one.** The description pass
+      takes the latest qualified value and omits the figure where there is
+      none, so the Soviet Union carries 293 million people (1989) and the
+      German Empire carries no population rather than a number with no year
+      against it. Five of the nineteen carry no area, four no population, two
+      neither.
+1413. **A merged place is the first record in the corpus for which the core
+      carries no `where`, and a test asked every place for its precision.**
+      `TOMBSTONE_KEYS` in `src/spine.js` is deliberate — a tombstone carries
+      what the card's head and meta line need and nothing else — and no place
+      had ever been merged, so `tests/m80.test.mjs`'s universal quantifier had
+      never met one. The loop now reads **active** places, which is what is
+      drawn on the map; the property it asserts is about marks, and a tombstone
+      has none. The test was narrowed before the records that made it fail were
+      pushed.
+
 ## M84 — the owner's feedback document
 
 Lane A, on the branch `m84`. `docs/m84-brief.md` over
@@ -21718,6 +21809,53 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b batches 19 and 20 — the Spanish conquest and the War of Jenkins' Ear, 24
+September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
+September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)
+before importing anything; each conflicted only in `STATUS.md` and both sides
+were kept. **Batch 19 took the Americas' sixteenth century**, at 16 active
+and 5 main, and opened the vein every fire since the eighth had listed and none
+had opened: **eight events of the Spanish conquest**, twelve
+items to the import and twelve created with none refused, in forty-seven calls —
+Vilcaconga, Cusco, Maraycalla, Ollantaytambo and Chupas under
+`spanish-conquest-of-the-inca-empire`, Q'umarkaj under
+`spanish-conquest-of-guatemala`, and Punta Quemada and Puná, both older than the
+conquest's own 1532 start, under `spanish-colonization-of-the-americas`. **Batch
+20 took the Americas' eighteenth**, at 17 and 2, with **six events of the War of
+Jenkins' Ear** fought in Panama, Cuba and Venezuela, all six filing under
+`war-of-jenkins-ear`, which goes from one child to seven. **The main count does
+not move across either batch: 242 before and 242 after.** Eight place records
+created by the import and four reused, every precision from the item's own
+class; three classes added — `Q839954` archaeological site, `Q2264924` port city
+and `Q39594` bay — each with its gloss read off the class item over the network.
+**Three intervals widened under A7** from each record's own cited article at a
+named revision, the invasion of Cuba's by four months. **Ten edges**, each
+quoting the sentence that carries it, **four with a second cited author** —
+Hemming's *Conquest of the Incas*, Prescott's *History of the Conquest of Peru*
+and Pares's *War and Trade in the West Indies*, all three cited and not read —
+and **not one runs from a parent to its own child**, which is A14. The largest
+component goes 609 → **611** and the corpus **858 → 872 active**; the `americas`
+lane is **216**, its 16th century 24 and its 18th 23, and South and Central
+America against North is 182 to 19. **Europe's nineteenth century, at 15 active
+and 10 main, is the thinnest cell in this partition and no fire has named it**:
+the run-stands "thinnest cells" line has listed Europe only to the eighteenth
+century since batch 12, and a cell nobody lists is a cell nobody takes. It is
+named from this fire on, and so is the rule the eighteen batch notes measure a
+century by, which this fire's own script disagreed with about the two records
+dated exactly 1500 (**deviation 1255**). `docs/m53-polities.md` §4.1 re-taken twice,
+in the same commit as each batch's records. **Three things were refused and all
+three are the run's own reading**: `Q7573336`, the Spanish conquest of Petén, is
+1618–1697 and belongs to the seventeenth century, not this cell; a Guilmartin
+chapter was written as a source record and **deleted** because the article gives
+it no page, ISBN or URL and rule 13 asks a chapter for one, so the Vilcaconga
+edge rests on Wikipedia alone (**deviation 1254**); and `battle-of-chupas` and
+the conquest of Q'umarkaj were left with no edge, because what their articles
+reach for — Las Salinas, Pizarro's assassination, Alvarado's Aztec allies — is
+either not a record here or not a claim the article makes. A hatnote nearly cost
+the batch a correct place: the Maraycalla article's `{{About}}` reads like
+Wikipedia disowning the item's `P276`, and its infobox says the opposite
+(**deviation 1253**). `docs/m42b-pool.md` → "Batch 19" and "Batch 20" are the
+full account.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
@@ -22061,3 +22199,5 @@ M42 started 2026-09-24T02:06:57Z by scheduled
 M42b started 2026-09-24T02:37:38Z by scheduled
 M86 started 2026-09-24T04:18:24Z by scheduled (branch m86)
 M86 done
+M42 started 2026-09-24T04:58:45Z by scheduled
+M42b started 2026-09-24T05:02:46Z by scheduled

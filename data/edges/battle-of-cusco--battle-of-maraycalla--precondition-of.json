@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-cusco--battle-of-maraycalla--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maraycalla\", revision 1370448960"
+    }
+  ],
+  "from": "battle-of-cusco",
+  "to": "battle-of-maraycalla",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Maraycalla article states the condition in its first sentence: the battle \"was fought in 1534 between Spanish conquistadors and renegade forces of the Inca Empire ... whose capital Cuzco had been taken by the Spaniards in November 1533. The Inca army was commanded by famous general Quizquiz.\" Quizquiz is the commander who withdrew from Cusco in November 1533, and Maraycalla is the Spanish pursuit of him. `precondition-of`: the loss of the capital is the state of affairs the 1534 battle is fought from, and the article claims no more than that. Probable: Wikipedia alone, and the article carries a {{refimprove}} tag of its own.",
+  "dispute": null
+}

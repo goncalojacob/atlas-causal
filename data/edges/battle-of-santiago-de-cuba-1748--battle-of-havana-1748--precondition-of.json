@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-santiago-de-cuba-1748--battle-of-havana-1748--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Havana (1748)\", revision 1370442712, § Background"
+    }
+  ],
+  "from": "battle-of-santiago-de-cuba-1748",
+  "to": "battle-of-havana-1748",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Havana article sets the cruise against the Santiago failure and links to it: \"In April 1747 Admiral Sir Charles Henry Knowles had become commander in chief on the Jamaica station but had failed to subdue Santiago de Cuba the following year. After having his ships had refitted at Port Royal Knowles sailed on a cruise in search of Spanish treasure convoys hoping to intercept the Spanish treasure fleet off Cuba.\" The refit is the one the Santiago article accounts for, where two ships of the line \"were put out of action by the batteries of Morro Castle and had to be towed to open sea\". `precondition-of` and nothing stronger: the article's \"but\" is an argument about what Knowles had to show for the station, not a claim that the failure brought the October action about. Probable, on Wikipedia alone at one revision.",
+  "dispute": null
+}

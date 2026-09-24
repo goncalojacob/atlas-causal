@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,8 @@
       "summary-drafted",
       "m22-reinstated",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "title-from-article"
     ],
     "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one."
   },
@@ -58,7 +59,7 @@
       "locator": "Q2518953"
     }
   ],
-  "title": "Treaty of Windsor",
+  "title": "Treaty of Windsor (1899)",
   "summary": "A secret Anglo-Portuguese declaration was signed in London on 14 October 1899 by Lord Salisbury and the Marquis of Soveral, and is called the Treaty of Windsor after the alliance of 1386 that it reaffirmed. Britain restated its guarantee of Portugal's colonies; Portugal undertook to close Lourenço Marques to arms and men bound for the Transvaal, days before the South African war began. It was signed a year after Britain and Germany had secretly agreed how they would divide those same colonies if Portugal defaulted on its debts, which is what makes the declaration a purchase as much as a guarantee. It is in the atlas as the last renewal of the alliance before the alliance was called on, in 1914.",
   "when": {
     "start": 1899,

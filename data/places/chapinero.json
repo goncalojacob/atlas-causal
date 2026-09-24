@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,7 +21,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "a14-summary-nulled"
     ]
   },
   "wikidata": "Q2647973",
@@ -44,5 +45,5 @@
   },
   "region": null,
   "regionNote": null,
-  "summary": "Wikidata item Q2647973, imported by tools/import/wikidata.mjs. The item's own description reads \"locality of the Capital District of Bogotá, Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+  "summary": null
 }

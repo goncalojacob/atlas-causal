@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -26,7 +26,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "end-unstated"
     ]
   },
   "wikidata": "Q66474138",

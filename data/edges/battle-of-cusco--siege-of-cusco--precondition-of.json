@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-cusco--siege-of-cusco--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cusco\", revision 1370740508, § Background"
+    },
+    {
+      "source": "hemming-1993-conquest-of-the-incas",
+      "locator": "p. 115"
+    }
+  ],
+  "from": "battle-of-cusco",
+  "to": "siege-of-cusco",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The siege article names this battle as the thing the siege was raised against: \"A Spanish expedition led by Francisco Pizarro had captured the Inca capital of Cusco on November 15, 1533 after defeating an Inca army headed by general Quisquis\", and from there its Background runs straight to Manco Inca's rebellion — the coronation the month after, Juan Pizarro's humiliations and imprisonment of Manco, and the flight of April 1536. The lead says what the siege was for: \"The Incans hoped to restore their empire (1438-1533) with this action.\" precondition-of: Spanish possession of Cusco is the state of affairs the siege set out to undo, and the article argues the rebellion from how the Spaniards held the city rather than from the battle itself. Probable, and with a second author: the capture is cited there to Hemming, The Conquest of the Incas, p. 115, the Macmillan 1993 edition the article bibliography names.",
+  "dispute": null
+}

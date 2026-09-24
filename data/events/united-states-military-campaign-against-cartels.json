@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-23",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -27,7 +27,8 @@
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "participants-from-p710"
+      "participants-from-p710",
+      "end-unstated"
     ],
     "note": "Wikidata Q136090852 names 7 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
   },

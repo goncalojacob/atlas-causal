@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "title-from-article"
     ]
   },
   "origin": {
@@ -52,7 +53,7 @@
       "locator": "Q199820"
     }
   ],
-  "title": "Paris Peace Conference",
+  "title": "Paris Peace Conference (1919–1920)",
   "summary": "From January 1919 the victors met in Paris to settle the war, and the settlement was made by four of them — Wilson, Lloyd George, Clemenceau and Orlando — with the defeated powers excluded from the deliberations and presented with the results. Five treaties came out of it, remaking Europe, the Ottoman lands, Africa and the Pacific, and the League of Nations was written into each. Portugal sat as a belligerent and took very little: a strip of northern Mozambique, a share of reparations that was never paid, and the confirmation of colonies it had feared losing since 1898.",
   "when": {
     "start": 1919,

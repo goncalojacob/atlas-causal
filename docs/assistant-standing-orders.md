@@ -102,15 +102,14 @@ card; the ring in a distinct colour; landed 22 September, PR #22)** → M85
 (`docs/m85-brief.md`: the first review's remainder; landed 22 September
 night, PR #23, all nine sections done) → the second Fable review, done
 24 September (`docs/review-2026-09-24.md`: part A reader, B display, C
-records, with a fix plan) → **M86 (`docs/m86-brief.md`: what a funder
-meets first — the provenance paragraph out of card bodies, names on the
-first map, the about page's paragraph, the timeline's right edge, the
-graph after a drag, a resize keeping the camera, the degree control under
-a lens, three card polish items, the resting pictures)** → M87 (what
-breaks at 3,000 events: first paint coalesced, the timeline's rows capped,
-the browser harness, the phone's picture, the validator's lead-sentence
-warning, the import tool's place reuse) → a third review before the owner
-returns. Lane B runs amendment A14 (the review's data passes) before any
+records, with a fix plan) → M86 (what a funder meets first; landed 24
+September morning, PR #26, all nine sections done) → **M87
+(`docs/m87-brief.md`: what breaks at 3,000 events — first paint coalesced,
+the timeline's rows capped, the lane-walk settle, one Chromium per file,
+waits that say what they waited for, the last source scan, `lensView`'s
+cache, three small ones, the phone's picture, the validator's
+lead-sentence warning, the import tool's place reuse, the refused-item
+log)** → a third review before the owner returns. Lane B runs amendment A14 (the review's data passes) before any
 further import.
 
 **Two lessons from 22 September's landings**, for every brief from here:

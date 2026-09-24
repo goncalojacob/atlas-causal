@@ -13,14 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-23",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the start was 1949, dated 6 December, which left the Bogotazo of April 1948 and the first year of the killing outside the record. The cited article's first sentence says, at the cached revision 1373312674, \"from 1948 to 1958\". So the start is 1948 and its day goes."
   },
   "origin": {
     "tool": "wikidata"
@@ -42,14 +44,17 @@
     {
       "source": "wikipedia-en",
       "locator": "\"La Violencia\", revision 1373312674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"La Violencia\", revision 1373312674: \"a ten-year wave of civil conflict and unrest in Colombia from 1948 to 1958\""
     }
   ],
   "title": "La Violencia",
   "summary": "The English Wikipedia article \"La Violencia\", at revision 1373312674, opens: \"La Violencia (Spanish pronunciation: [la βjoˈlensja], The Violence) was a ten-year wave of civil conflict and unrest in Colombia from 1948 to 1958, between the Colombian Conservative Party and the Colombian Liberal Party, mainly fought in the countryside. La Violencia is considered to have begun with the assassination on 9 April 1948 of Jorge Eliécer Gaitán, a Liberal Party presidential candidate and frontrunner for the 1949 November election. His murder provoked the Bogotazo rioting, which lasted ten hours and resulted in around 5,000 casualties. An alternative historiography proposes the Conservative Party's return to power following the election of 1946 to be the cause. Rural town police and political leaders encouraged Conservative-supporting peasants to seize the agricultural lands of Liberal-supporting peasants, which provoked peasant-to-peasant violence throughout Colombia. La Violencia is estimated to have killed at least 200,000 people, almost 1 in 50 Colombians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q185407, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Colombia between 1925 and 1960\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1949,
-    "end": 1958,
-    "date": "1949-12-06"
+    "start": 1948,
+    "end": 1958
   },
   "place": "andean-natural-region-of-colombia",
   "region": "americas",
