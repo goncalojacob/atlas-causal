@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-casaloldo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3636372",
+  "wikipedia": {
+    "en": "Battle of Casaloldo"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636372"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Casaloldo\", revision 1370436439"
+    }
+  ],
+  "title": "Battle of Casaloldo",
+  "summary": "The English Wikipedia article \"Battle of Casaloldo\", at revision 1370436439, opens: \"The Battle of Casaloldo was fought on 10 May 1509 at Casaloldo (Lombardy) between the armies of the Marquisate of Mantua and that of Republic of Venice, an episode of the War of the League of Cambrai.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636372, imported by tools/import/wikidata.mjs. The item's own description reads \"1509 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509,
+    "date": "1509-05-10"
+  },
+  "place": "casaloldo",
+  "region": null,
+  "parent": "war-of-the-league-of-cambrai",
+  "category": "war",
+  "actors": []
+}

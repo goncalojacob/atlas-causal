@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bailen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1364346",
+  "wikipedia": {
+    "en": "Battle of Bailén",
+    "pt": "Batalha de Bailén"
+  },
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1364346"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bailén\", revision 1371963680"
+    }
+  ],
+  "title": "Battle of Bailén",
+  "summary": "The English Wikipedia article \"Battle of Bailén\", at revision 1371963680, opens: \"The Battle of Bailén was fought in 1808 between the Spanish Army's Army of Andalusia, under General Francisco Javier Castaños and the French Imperial Army's 2nd Gironde Observational Corps under Divisional-General Pierre Dupont de l'Étang. The first open-field defeat of a Napoleonic army, the battle's heaviest fighting took place near Bailén, a village by the Guadalquivir river in the Jaén province of southern Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1364346, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-07-16",
+    "endDate": "1808-07-19"
+  },
+  "place": "bailen",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

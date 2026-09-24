@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "may-1958-crisis-in-france",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "Filed under algerian-war although its own lane is europe: the cited article calls it \"a political crisis in France during the turmoil of the Algerian War\" and carries the category \"1958 in the Algerian War\". The item states no P361 and the filing is the run's reading of that article, not the item's."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3002737",
+  "wikipedia": {
+    "en": "May 1958 crisis in France",
+    "pt": "Crise de maio de 1958"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3002737"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"May 1958 crisis in France\", revision 1373489110"
+    }
+  ],
+  "title": "May 1958 crisis in France",
+  "summary": "The English Wikipedia article \"May 1958 crisis in France\", at revision 1373489110, opens: \"The May 1958 crisis, also known as the Algiers putsch or the coup of 13 May, was a political crisis in France during the turmoil of the Algerian War (1954–1962) which led to the collapse of the Fourth Republic and its replacement by the Fifth Republic led by Charles de Gaulle who returned to power after a twelve-year absence. It started as a political uprising in Algiers on 13 May 1958 and then became a military coup d'état led by a coalition headed by Algiers deputy and reserve airborne officer Pierre Lagaillarde, Generals Raoul Salan, Edmond Jouhaud, Jean Gracieux and Jacques Massu, and by Admiral Philippe Auboyneau, commander of the Mediterranean fleet. The coup was supported by former Algerian Governor General Jacques Soustelle and his activist allies.\" Wikidata item Q3002737, whose own description reads \"insurrectionary context in France linked to government instability and the Algerian war leading to the return to power of General de Gaulle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1958,
+    "end": 1958,
+    "date": "1958-05-13",
+    "endDate": "1958-06-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "algerian-war",
+  "actors": []
+}

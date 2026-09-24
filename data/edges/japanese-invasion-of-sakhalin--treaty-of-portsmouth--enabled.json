@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
+    }
+  ],
+  "from": "japanese-invasion-of-sakhalin",
+  "to": "treaty-of-portsmouth",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The invasion's § Background says what the invasion was for: \"Roosevelt agreed with the Japanese assessment that the invasion and occupation of Sakhalin was now necessary, as only the threat of direct loss of Russian territory would bring Tsar Nicholas II to consider a negotiated settlement to the war.\" § Results names the treaty that followed: \"Per the terms of the Treaty of Portsmouth ending the Russo-Japanese War, the southern half of Sakhalin was ceded to Japan.\" `enabled` and not `caused`: the atlas already holds `battle-of-tsushima --caused--> treaty-of-portsmouth` and `battle-of-mukden --enabled--> treaty-of-portsmouth`, and this is a third branch into the same endpoint rather than a replacement for either. Probable: Wikipedia alone.",
+  "dispute": null
+}

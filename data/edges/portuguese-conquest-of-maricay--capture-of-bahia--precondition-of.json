@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-maricay--capture-of-bahia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Conquest of Maricay\", revision 1370704725, lead"
+    }
+  ],
+  "from": "portuguese-conquest-of-maricay",
+  "to": "capture-of-bahia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's own lead places it: \"The Portuguese Conquest of Maricay was a series of battles between the Portuguese Empire under the Iberian Union and the Dutch Republic, taking place in 1623 in the trading post of Maricay, now Gurupá. Taking place one year before the Capture of Bahia, the battle is one of the events leading to thirty years of war between the Portuguese and Dutch in Brazil.\" `precondition-of` and not `caused`: the article calls it one of the events leading to the war, which is a place in a sequence and not a cause of the particular invasion of Salvador. The atlas holds that invasion as `capture-of-bahia`, and this edge is the sequence the lead states and nothing beyond it. **No work is cited on that sentence**, so this edge has one source where M72 asks for two, and it stays `probable` for that reason as well as for the claim's own shape.",
+  "dispute": null
+}

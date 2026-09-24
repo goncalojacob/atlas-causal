@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-novara-1513--siege-of-dijon--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dijon\", revision 1370740741, § Prelude"
+    }
+  ],
+  "from": "battle-of-novara-1513",
+  "to": "siege-of-dijon",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Dijon article opens its § Prelude with the claim: \"After the French defeats at Novara (6 June) and Guinegatte (16 August), Louis XII anticipated a counter-attack by the Imperial armies on France’s own soil.\" Novara is the defeat that emptied Italy of the French army — la Trémoille was recalled from Italy to govern Dijon — and the invasion of Burgundy came three months later. `enabled` and not `caused`: the article says the defeat opened France to a counter-attack, not that it made this siege inevitable. Probable: Wikipedia alone, and the sentence carries no citation of its own.",
+  "dispute": null
+}

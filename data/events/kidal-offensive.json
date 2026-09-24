@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kidal-offensive",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9's second step (P276 Q338988, Kidal Region); the item's own P625 is 215 km south of the region's point, which is the size of the thing and not a disagreement about where the offensive was."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q125550564",
+  "wikipedia": {
+    "en": "Kidal offensive"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125550564"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kidal offensive\", revision 1370625765"
+    }
+  ],
+  "title": "Kidal offensive",
+  "summary": "The English Wikipedia article \"Kidal offensive\", at revision 1370625765, opens: \"The Kidal offensive was an offensive by the Malian government and Wagner Group mercenaries against the rebel coalition Permanent Strategic Framework for Peace, Security, and Development (CSP-PSD) with the aim of capturing the rebel-held region of Kidal.\" Wikidata item Q125550564, whose own description reads \"military action by the Malian government\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2023,
+    "end": 2023,
+    "date": "2023-10-02",
+    "endDate": "2023-12-20"
+  },
+  "place": "kidal-region",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

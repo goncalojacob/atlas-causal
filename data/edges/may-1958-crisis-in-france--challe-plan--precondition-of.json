@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "may-1958-crisis-in-france--challe-plan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Challe Plan\", revision 1370610721, § Background"
+    }
+  ],
+  "from": "may-1958-crisis-in-france",
+  "to": "challe-plan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Challe Plan article gives the offensive its own political origin. § Background: \"By 1958, the French Fourth Republic was in deep political crisis, primarily beset by concerns over the competence of French troops in Algeria and of the protection of the Pieds-noirs. Tensions finally culminated in the May 1958 crisis, which saw General Charles de Gaulle take power and establish the French Fifth Republic. De Gaulle began his presidency with the formulation of the Constantine Plan... The plan, however, was largely unsuccessful. In early 1959, De Gaulle resorted to a decisive military offensive to cripple Algerian nationalist forces and re-establish French control over all of Algeria.\" `precondition-of`: the crisis put in power the man whose decision the offensive was. Probable: Wikipedia alone.",
+  "dispute": null
+}

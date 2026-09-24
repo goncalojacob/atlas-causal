@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-mata-redonda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q106542703",
+  "wikipedia": {
+    "en": "Battle of Mata Redonda",
+    "pt": "Batalha de Mata Redonda"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106542703"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mata Redonda\", revision 1370449287"
+    }
+  ],
+  "title": "Battle of Mata Redonda",
+  "summary": "The English Wikipedia article \"Battle of Mata Redonda\", at revision 1370449287, opens: \"When the Portuguese sent a large armada of thirty ships, and a large number of soldiers to put an end to Dutch Brazil in 1636. It was stopped, and soundly defeated by an outnumbered Dutch force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106542703, imported by tools/import/wikidata.mjs. The item's own description reads \"1636 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1636,
+    "end": 1636,
+    "date": "1636-01-18"
+  },
+  "place": "porto-calvo",
+  "region": null,
+  "regionNote": null,
+  "parent": "dutch-brazil-1630-1654",
+  "category": "war",
+  "actors": []
+}

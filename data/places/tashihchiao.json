@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tashihchiao",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2409264, Battle of Tashihchiao, read on 2026-09-24, and the article at revision 1370590643 puts the town \"about 25 kilometres (16 mi) southwest of the city of Haicheng\", which this coordinate is. The item names no location A9's second step could read. The record carries no `wikidata` key: a place claiming to be the battle would be a worse record than one claiming nothing."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [],
+  "names": [
+    "Tashihchiao"
+  ],
+  "where": {
+    "lon": 122.5,
+    "lat": 40.6333,
+    "precision": "point",
+    "label": "Tashihchiao"
+  },
+  "region": null,
+  "summary": null
+}

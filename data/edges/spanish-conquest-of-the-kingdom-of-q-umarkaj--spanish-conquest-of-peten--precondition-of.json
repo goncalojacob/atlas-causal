@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj--spanish-conquest-of-peten--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Petén\", revision 1370748351, lead and § Conquest of the central lakes"
+    },
+    {
+      "source": "jones-1998-the-conquest-of-the-last-maya-kingdom",
+      "locator": "p. xix"
+    }
+  ],
+  "from": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
+  "to": "spanish-conquest-of-peten",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Petén article measures its own subject against the highland conquest: \"Nojpetén fell to a Spanish assault on 13 March 1697, more than 150 years after the conquest of the rest of the Yucatán Peninsula and more than 160 years after the conquest of the Guatemalan Highlands,\" citing Jones 1998 at p. xix, and its lead says that \"in the first half of the 16th century, Spain established neighbouring colonies in Yucatán to the north and Guatemala to the south. Spanish missionaries laid the groundwork for the extension of colonial administration in the extreme south of Petén from 1596 onwards.\" The colony of Guatemala that the fall of Q'umarkaj opened is what the seventeenth-century entries set out from — the article's own map of them is captioned \"Spanish entry routes to Petén during the 17th century\". `precondition-of` and not `caused`: the same article gives the delay's reasons as \"a combination of its geographical remoteness and inhospitality and the fierce reputation of its Maya inhabitants\", so the highland conquest is what made the approach possible and not what set it off. **The two are not the same size**: this edge's `from` is the fall of the K'iche' capital in 1524, which is the decisive event of the highland conquest the Petén article names and not the whole of it, and that is the whole of why this is `probable`.",
+  "dispute": null
+}

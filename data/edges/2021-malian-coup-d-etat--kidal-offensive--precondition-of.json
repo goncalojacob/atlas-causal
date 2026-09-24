@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2021-malian-coup-d-etat--kidal-offensive--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kidal offensive\", revision 1370625765, lead and § Background"
+    }
+  ],
+  "from": "2021-malian-coup-d-etat",
+  "to": "kidal-offensive",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The offensive's own lead makes the junta one of its two parties and dates that junta to the coup: \"The offensive was part of a renewed conflict between the Malian junta that took power in 2021 and former Tuareg rebel groups that had signed the Algiers Agreement in 2015.\" § Background works the same ground: the CSP-PSD formed in April 2021, \"just a month later\" Goïta's coup took power, and \"Goita and the CSP-PSD got off to a rocky start\". Precondition and not cause: the article says the coup made the two parties what they were, not that it ordered the convoy north. Probable: Wikipedia alone.",
+  "dispute": null
+}

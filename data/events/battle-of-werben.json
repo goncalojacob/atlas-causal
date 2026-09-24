@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-werben",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q653487",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Werben"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q653487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Werben\", revision 1370276785"
+    }
+  ],
+  "title": "Battle of Werben",
+  "summary": "The English Wikipedia article \"Battle of Werben\", at revision 1370276785, opens: \"The Battle of Werben took place during the Thirty Years' War on 7 August 1631 (N.S.), between the Swedish Empire and the Holy Roman Empire. The Swedes had 15,100 soldiers and were led by Gustavus Adolphus, while the Imperialists had 16,200 soldiers and were led by Field-Marshal Count Tilly. Tilly's troops attacked Gustavus' entrenchments in front of Werben (Elbe), but Swedish batteries and the cavalry under Wolf Heinrich von Baudissin forced them to retreat, at the cost of 6,000 Imperials and 200 Swedes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q653487, imported by tools/import/wikidata.mjs. The item's own description reads \"1631 battle of the thirty years war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631,
+    "date": "1631-07-22"
+  },
+  "place": "werben-elbe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

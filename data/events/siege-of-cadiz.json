@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-cadiz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2633683",
+  "wikipedia": {
+    "en": "Siege of Cádiz",
+    "pt": "Cerco de Cádis"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2633683"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cádiz\", revision 1370740530"
+    }
+  ],
+  "title": "Siege of Cádiz",
+  "summary": "The English Wikipedia article \"Siege of Cádiz\", at revision 1370740530, opens: \"The French army besieged the large Spanish naval base of Cádiz from 5 February 1810 to 24 August 1812 during the Peninsular War. Following the occupation of Seville, Cádiz became the Spanish seat of power, and was targeted by 70,000 French troops under the command of the Marshals Claude Victor and Jean-de-Dieu Soult for one of the most important sieges of the war. Defending the city were 2,000 Spanish troops who, as the siege progressed, received aid from 10,000 Spanish reinforcements as well as British and Portuguese troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2633683, imported by tools/import/wikidata.mjs. The item's own description reads \"1810–1812 siege during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1812,
+    "date": "1810-02-05",
+    "endDate": "1812-08-24"
+  },
+  "place": "cadiz",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

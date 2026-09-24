@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-seoul--battle-of-osan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Osan\", revision 1375327001, § Outbreak of war and § Infantry column"
+    }
+  ],
+  "from": "first-battle-of-seoul",
+  "to": "battle-of-osan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article puts the fall of Seoul before the road Osan was fought on: \"The North Koreans had captured South Korea's capital, Seoul, by June 28, which forced the government and its shattered army to retreat further south\", and the column Task Force Smith met was \"advancing from Seoul\". Osan was the rearguard sent to delay that advance, so the capture of the capital is what put the Korean People's Army where the first American engagement happened. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "french-military-withdrawal-from-west-africa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "The item carries no P625 and six values under P276; A9's second step takes the first, Q912 Mali, which is the place mali-war itself stands on and the only one of the six in this record's own vein. The withdrawal is from six countries and the mark is on one of them — review finding 1's open question about a multi-valued location, recorded here rather than hidden. Filed under mali-war from the first of the item's three P361 values."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q131697486",
+  "wikipedia": {
+    "en": "French military withdrawal from West Africa (2022–2025)",
+    "pt": "Retirada militar francesa da África Ocidental"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131697486"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French military withdrawal from West Africa (2022–2025)\", revision 1371499896"
+    }
+  ],
+  "title": "French military withdrawal from West Africa (2022–2025)",
+  "summary": "The English Wikipedia article \"French military withdrawal from West Africa (2022–2025)\", at revision 1371499896, opens: \"Beginning in 2022, France began to withdraw military troops from several West African nations following decades of military presence and interventions. Mali, Burkina Faso, Niger, and Chad unilaterally terminated their defense agreements, unlike the Central African Republic, Senegal, and the Ivory Coast, where French forces withdrew without a formal cancellation of the agreements.\" Wikidata item Q131697486, whose own description reads \"2022–present withdrawal\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2022,
+    "end": 2025,
+    "date": "2022-03-18",
+    "endDate": "2025-07-18"
+  },
+  "place": "mali-q912",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

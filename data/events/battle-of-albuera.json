@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-albuera",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q689471",
+  "wikipedia": {
+    "en": "Battle of Albuera",
+    "pt": "Batalha de Albuera"
+  },
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q689471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Albuera\", revision 1373550746"
+    }
+  ],
+  "title": "Battle of Albuera",
+  "summary": "The English Wikipedia article \"Battle of Albuera\", at revision 1373550746, opens: \"The Battle of Albuera was a battle during the Peninsular War. A mixed British, Spanish and Portuguese corps engaged elements of the French armée du Midi at the small Spanish village of Albuera, about 20 kilometres (12 mi) south of the frontier fortress-town of Badajoz, Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q689471, imported by tools/import/wikidata.mjs. The item's own description reads \"1811 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1811,
+    "date": "1811-05-16"
+  },
+  "place": "la-albuera",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

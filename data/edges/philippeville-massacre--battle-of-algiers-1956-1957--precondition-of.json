@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "philippeville-massacre--battle-of-algiers-1956-1957--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618, § Background"
+    }
+  ],
+  "from": "philippeville-massacre",
+  "to": "battle-of-algiers-1956-1957",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Battle of Algiers article tells its own run-up and puts Philippeville in it. Its § Background: \"In March 1955, Rabah Bitat, head of the FLN in Algiers, was arrested by the French. Abane Ramdane, recently freed from prison, was sent from Kabylia to take the political direction of the city in hand. In a short time, Ramdane managed to revive the FLN in Algiers. On 20 August 1955, violence broke out around Philippeville, drastically escalating the conflict.\" `precondition-of` and not `caused`: the article claims an escalation of the war and not that the massacre produced the battle in Algiers. Probable: Wikipedia alone.",
+  "dispute": null
+}

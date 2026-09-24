@@ -20270,6 +20270,45 @@ and A13's relations pass, still never run.
       — but a fire on `m42` that reads this should take the next free number
       **above 1400** rather than the next after `STATUS.md`'s last, and say so.
 
+## M42 batch 48 — the Algerian War read as a chain, 24 September
+
+The 08:18Z fire of 24 September was an **import fire**: today already carried a
+curation section and all six of A14's passes carried theirs. It merged
+`origin/m0` at the head of the run and then took one batch from the lane that
+trails, Africa at 139 against Europe's 375.
+
+**Ten events, six places and six edges, all from the Algerian War.** Seven are
+parts of the war in date order, from the Philippeville massacre of August 1955
+to the battle of Bab El Oued of April 1962; three are the endpoints the chain
+runs into — the May 1958 crisis, the Algiers putsch of 1961 and the Évian
+Accords. All ten are filed under `algerian-war`, so **main stays at 242**.
+Africa goes from 139 to 147 and Asia now trails at 143. Seven classes were
+added to `data/imports/wikidata-seeds.json`, each read off the class item
+itself; not one of the six place records was hand-corrected.
+
+**The largest connected component did not move, and that is the batch's
+finding.** `algerian-war` is in the 610 with five edges, and the one part of it
+the atlas already held — `battle-of-algiers-1956-1957` — was itself edgeless,
+so the batch made a five-node component and a three-node one beside the 610
+rather than joining it. The only edge that would join them is a parent-to-child
+edge, which **C8** forbids until the owner decides. Deviations 1418 and 1419.
+
+Three of the ten are singletons and say so: the articles for El Djorf, Palestro
+and Sakiet Sidi Youssef name no other event this atlas holds, and the one
+intermediate that would have joined Palestro to the Battle of Algiers — the
+executions of 19 June 1956 — has no Wikidata item to import. One further edge
+was refused on the fire's own A14(4) class, although it would have joined the
+batch's two components: the Battle of Algiers article says the paras' standing
+"would reach its zenith during the May 1958 crisis", which is continuity and
+not consequence.
+
+`docs/m53-polities.md` §4.1 is retaken at **382 of 883**: `Q142`, France, is
+the one `P710` participant of this batch the atlas holds, written to
+`challe-plan` as `belligerent` and to `evian-accords` as `signatory`.
+
+The validator is clean, the index is byte-identical to a fresh build, and the
+tests are **1,810 pure and 286 browser, all passing, 0 skipped**.
+
 ## M42 — A14's six data passes, 24 September
 
 The second review (`docs/review-2026-09-24.md`, part C) measured the corpus
@@ -20360,6 +20399,150 @@ Tests: 1,792 pure and 279 browser, all passing.
       drawn on the map; the property it asserts is about marks, and a tombstone
       has none. The test was narrowed before the records that made it fail were
       pushed.
+1414. **The rate limit and the lag are two different refusals and the fire
+      should tell them apart.** Batch 47 waited forty minutes on `maxlag`,
+      where the API answered HTTP 200 with `error.code: maxlag`. This fire
+      waited on HTTP **429** with `x-envoy-ratelimited: true` and
+      `retry-after: 40` from both `www.wikidata.org/w/api.php` and
+      `en.wikipedia.org/w/api.php`, while `query.wikidata.org/sparql` answered
+      200 the whole time. So the reconnaissance — the inverse `part of` vein
+      over the lane — was read through the query service and only the import
+      waited. A fire that meets a 429 should poll the cheapest request it has
+      rather than re-run `--import` into the wall.
+1415. **An item's English sitelink can be a redirect, and the lead cache is the
+      only place that shows it.** `Q76832368`'s `enwiki` title is "Milk Bar
+      Café bombing", which redirects to the biography "Zohra Drif";
+      `fetchLeads()` followed it and cached a lead about a person under that
+      title. The record keeps the import's placeholder summary and carries no
+      `wikipedia-en` citation, with a `review.note` saying why. Quoting a
+      redirect's target as the record's own article would have put a
+      paragraph about a lawyer's childhood on an event record, and nothing
+      but the cached `title` field distinguishes the two.
+1416. **`reacted-to` runs forwards in time, so "B answered A" is written
+      `A --reacted-to--> B`.** Rule 4 refused
+      `battle-of-bab-el-oued --reacted-to--> evian-accords` because the battle
+      is five days later than the accords. Every `reacted-to` in the corpus
+      already reads this way — `1964-brazilian-coup-detat --reacted-to-->
+      operation-brother-sam-1964` says the American movement answered the
+      Brazilian one — and the type's own label, "reacted to", reads the
+      opposite way round in the card. The edge's explanation now says in which
+      direction it is to be read, as the Brazilian one does.
+1417. **`docs/m42-pool.md` is not one of the files `tests/m67.test.mjs` reads,
+      so an M42 filing argued only there fails.** `ARGUED_IN` is
+      `docs/m67-umbrellas.md`, `docs/m42-connections.md` and
+      `docs/m42b-pool.md`. `may-1958-crisis-in-france` names neither an actor
+      nor a place — its item gives no `P710`, no `P276`, no `P131` and no own
+      `P625` — so its filing under `algerian-war` had to be argued in
+      `docs/m42-connections.md`, which is where M42's filings belong.
+1418. **Choosing a vein for an endpoint the atlas already holds is not enough;
+      the endpoint has to be connected.** `algerian-war` sits in the largest
+      component with five edges and the atlas held one of its parts,
+      `battle-of-algiers-1956-1957`, which is why the vein was chosen. That
+      part was itself **edgeless**, so ten records and six edges made two new
+      components and left the largest at 610. `tools/m42-pool.mjs` reports the
+      component sizes and not the degree of a named record, which is the
+      number a vein choice actually needs.
+1419. **C8 is what keeps a well-connected war apart from its own parts.** Every
+      record of this batch is a part of `algerian-war`, and the only edge that
+      would join the two new components to the 610 is a parent-to-child edge,
+      which the standing instruction forbids until the owner decides. The
+      Africa lane is mostly umbrella-and-parts in this shape, so every further
+      Africa batch will produce the same picture: a war the reader can reach
+      and its battles in islands beside it.
+1420. **The atlas's `reacted-to` runs forward in time, and four edges were
+      written backwards before rule 4 said so.** All four of this batch's
+      `reacted-to` edges were first written from the reaction to the thing
+      reacted to, on the sense of the English verb; rule 4 refused all four in
+      one run, by name and with both dates. `A --reacted-to--> B` says *B
+      answered A*, which is what `october-revolution --reacted-to-->
+      kerensky-krasnov-uprising` and batch 48's own `evian-accords
+      --reacted-to--> battle-of-bab-el-oued` already said, and what batch 48's
+      note in `docs/m42-connections.md` wrote down. Four files were deleted and
+      rewritten before anything was pushed. Nothing here needs fixing — the
+      validator ran before the commit and did exactly what it is for — but a
+      fire writing this type should read the direction off rule 4 and not off
+      the verb.
+1421. **A9's first step may be taken over a held answer at its second, and this
+      batch is the first time it was.** `battle-of-te-li-ssu`'s `P276` is the
+      Liaodong Peninsula, which the atlas holds and which `siege-of-port-arthur`
+      already stands on, so the import placed the event there on its own rule.
+      A12 (2)'s corrected order reads the item's own `P625` first, and the
+      article at revision 1370590724 locates the hamlet itself — *"some 80 mi
+      (130 km) north of Port Arthur"* — so the own point was written instead.
+      The peninsula is the ground and not the place on it. This is the narrow
+      version of the A14 stand's open question about A9's first step, answered
+      in one direction by one record; the general rule is still the owner's.
+1422. **An item's `P625` can be its parent battle's city rather than its own
+      site, and A9 has no test for it.** `Q1358032`, the Battle of Sandepu,
+      gives 41.7833, 123.4333 — **2.2 km** from the point the atlas already
+      draws Mukden at — while its own article says the battle was fought
+      *"within a group of villages about 36 miles (58 km) southwest of
+      Mukden"*. A place called Sandepu written at that coordinate would assert
+      what its only source denies, and a second mark 2 km from `shenyang` would
+      be the `london-q84` fault A14 (6) has just finished undoing. The event
+      reuses `shenyang` and its note says the villages were 58 km away. This is
+      a sixth shape A9's rule does not answer, beside the five the A14 stand
+      lists.
+1423. **The `europe` lane holds Russian Asia, and that is now a question and
+      not an oversight.** `sakhalin` derives to `europe` because the atlas's
+      five lane polygons put the whole of Russian ground there — as
+      `ipatiev-house`, `russia`, `soviet-union-q15180` and
+      `russian-empire-q34266` are already drawn, none of them with an override.
+      So the batch's seven Asian engagements are six in the Asia lane and one
+      in Europe's, and A10's per-lane count reads six. Nothing was overridden:
+      a single record contradicting four others at the same longitude would be
+      worse than a lane set that is coarse and consistent. **Should the europe
+      lane hold Russian Asia?** is the owner's, and every Russian event east of
+      the Urals waits on it.
+1424. **Reconnaissance through the query service, the import through the action
+      API, is now the shape that works.** Deviation 1414 told the two refusals
+      apart; this fire acted on it from the start. `query.wikidata.org/sparql`
+      answered 200 on the first call and gave the whole vein — 75 rows over
+      `P361`, with dates, coordinates, classes and sitelinks in one query —
+      while `www.wikidata.org/w/api.php` answered 429 twice before going
+      through. A fire that reads its vein through SPARQL and spends the action
+      API only on `--import` pays fifteen calls for a batch instead of waiting.
+
+## M42 batch 49 — the Russo-Japanese War finished as a chain, 24 September
+
+The 10:46Z fire of 24 September was an **import fire**: today already carried a
+curation section and all six of A14's passes carried theirs, so each was
+skipped by its own rule. It merged `origin/m0` at the head of the run (M86 and
+M87) and took one batch from the lane that trails, Asia at 143 against Europe's
+377.
+
+**Seven events, four places and nine edges, all from the Russo-Japanese War.**
+They are the engagements the chain batch 47 built was missing, in date order
+from Chemulpo Bay in February 1904 to the invasion of Sakhalin in July 1905.
+All seven are filed under `russo-japanese-war`, so **main stays at 242**, and
+Asia goes from 143 to 149. No class was added: battle, naval battle and
+invasion were all in the table already, which is the first batch that read no
+class item over the network at all.
+
+**The largest connected component goes from 610 to 617, and that is the
+batch's finding.** Batch 48's stand asked the next fire to pick its vein by
+what the endpoints are worth to the component rather than by how many rows it
+has; this batch hangs nine edges on nine endpoints that are all inside the 610,
+and all seven records joined it. `japanese-invasion-of-sakhalin --enabled-->
+treaty-of-portsmouth` is a third independently argued branch into that
+endpoint beside Tsushima's and Mukden's — the convergence query's own subject,
+now in the data.
+
+**A9's first step answered the row batch 47 refused.** `battle-of-chemulpo-bay`
+was chosen and dropped by that batch because its `P276` carries no coordinate;
+A12 (2)'s corrected order reads the item's own `P625` first, and it has one.
+Four place records are new and not one was hand-corrected. Two reuses are
+refusals with reasons: `battle-off-ulsan` takes `korea-strait`, which its own
+article names, and `battle-of-sandepu` takes `shenyang`, because the item's
+coordinate is Mukden's own while the article puts the villages 58 km away.
+
+`docs/m53-polities.md` §4.1 is retaken at **383 of 890**, counted by overlap
+**384**: `battle-of-chemulpo-bay` is the one row whose item names participants
+the atlas holds.
+
+The validator is clean, the index is byte-identical to a fresh build, and the
+tests are **1,819 pure and 295 browser, all passing, 0 skipped**. Deviations
+1420 to 1424. The full note is `docs/m42-pool.md` under "Batch 49".
 
 ## M84 — the owner's feedback document
 
@@ -21809,6 +21992,107 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b batch 23 — the War of the League of Cambrai's nine unimported children,
+and Europe's sixteenth century, 24 September.** The twenty-third fire merged
+`origin/m0` (eighteen commits, M87) and `origin/m42` (six, its batch 49) before
+importing anything; the first conflicted only in `STATUS.md`, the second in 236
+`data/index/` paths as rename/rename and in four prose files, and both were
+resolved as the protocol says. **The cell is Europe's sixteenth century**, at 19
+active and 1 main — the thinnest in this partition that is not against the 1492
+wall, named by the eighteenth fire and never taken in six fires — and the vein is
+the nine children of `war-of-the-league-of-cambrai` that fire listed, plus the
+Sack of Rome of 1527. **Ten items imported, ten created, none enriched, none
+ambiguous, one refused twice before a class line settled it**, over four
+`--import` runs and 33 calls: `battle-of-casaloldo`,
+`battle-of-the-citadel-of-vicenza`, `sack-of-brescia`, `battle-of-saint-mathieu`,
+`spanish-conquest-of-iberian-navarre`, `siege-of-crema-1514`,
+`battle-of-the-spurs`, `siege-of-dijon`, `battle-of-flodden` and
+`sack-of-rome-1527`. Nine are filed under `war-of-the-league-of-cambrai` or
+`war-of-the-league-of-cognac` and the tenth under `italian-wars`, because the
+Navarre conquest runs 1512–1529 and Cambrai ends in 1516; all three umbrellas are
+children of `italian-wars`, so **the main count does not move: 242 before and 242
+after**. **Eight place records were written and the import wrote all eight** —
+`casaloldo`, `vicenza`, `brescia`, `iroise-sea`, `crema-lombardy`,
+`enguinegatte`, `dijon` and `branxton-northumberland` — every precision from the
+item's own class and none hard-coded, with `rome` reused; **A14(2)'s lane guard
+passes on all nine**, eight inside a lane polygon and `iroise-sea` at 0.25° from
+one, so nothing was cleared. **All ten carry the cached English lead as their
+summary** at a named revision with the `summary-from-lead` flag, and deviation
+1260's check — the cached title against the record's own `wikipedia.en` — is
+clean on all ten for the first time since it was written. **Five edges**, each
+`probable`, each quoting the sentence that carries it, **none of them running
+from a parent to its own child (A14)**; one new source record,
+`dossena-2014-battaglia-di-ombriano`, from the Crema article's own
+`<ref name="dossena" />`, and the other four explanations say why the sentence
+they quote carries no footnote. **Five claims were read and not written**, the
+first of them the one the Navarre article states outright — Pavia *"sealed the
+division of Navarre"* — which rule 4 refuses because a seventeen-year record
+cannot take an edge from inside its own span. **The largest component does not
+move, 625 to 625, and the batch says why**: that component is the Atlantic and
+modern story, the Italian Wars are a second island, and this batch grew that
+island **from 8 to 12**, now the atlas's second largest. `P710` was read on all
+ten and refused on all ten: they name twelve polities between them and the atlas
+holds one, `kingdom-of-navarre`, which this batch's own place run created because
+the Navarre conquest's `P276` is a polity and not a place. `docs/m53-polities.md`
+§4.1 is re-taken at **383 of 911** — and the previous row, 384 of 901, was a
+miscount of the actor's own dates and is corrected with it. The corpus is **911
+active**, Europe before 1900 is **99**, the cell is **29 with its one main
+untouched**, and the `americas` lane is unchanged at 221. Deviations **1265** (a
+merge conflict in `sources.html` and `narratives.html` is resolved by checking
+one side out and rebuilding, never by deleting them, which `build-index.mjs`
+dies on) to **1273**, and **1232 recurred**: the `origin/m42` merge's index was
+built before the merge was committed, run 1717 failed rule 16 on the manifest and
+six history shards, and 1273 says the cure — **a merge commit is a commit that
+touches records**, so 1264's order holds for it too. `docs/m42b-pool.md` →
+"Batch 23" is the full account.
+
+**M42b batch 21 — the six other conflicts of the Napoleonic Wars, and Europe's
+nineteenth century, 24 September.** The twentieth fire merged `origin/m0` and
+`origin/m42` before importing anything; neither conflicted and the rebuilt index
+was byte-identical. **The cell is Europe's nineteenth century**, at 15 active and
+10 main — the thinnest in this partition, named by batch 20 and never taken —
+and the vein is the umbrella's own article: `napoleonic-wars` (1803–1815) was a
+main event with exactly one child, and its cached lead enumerates **seven**
+conflicts, of which the atlas held one, `peninsular-war`. **Six items imported,
+six created, none refused and none ambiguous**, in twenty-eight calls:
+`war-of-the-third-coalition`, `war-of-the-fourth-coalition`,
+`war-of-the-fifth-coalition`, `french-invasion-of-russia`,
+`war-of-the-sixth-coalition` and `war-of-the-seventh-coalition`, all filed under
+`napoleonic-wars`, all carrying `P361` `Q78994` on their own items and all
+inside 1803–1815, so **the main count does not move: 242 before and 242 after**.
+**No class was added and no place record was written** — all four locations the
+import reached for were already here with a `wikidata` field on them
+(`central-europe`, `poland-q36`, `france-q142`, `russian-empire-q34266`), the
+first batch of this branch that needed the place directory and found everything
+in it; A14(2)'s lane guard passes on all six, `russian-empire-q34266` included,
+which derives `europe` inside the polygon at distance 0. **Five carry the cached
+English lead as their summary** at a named revision with the `summary-from-lead`
+flag; **the sixth keeps the import's placeholder and the batch says why** —
+`Q2724511` has eleven sitelinks and none in English, and the English title *War
+of the Seventh Coalition* redirects to *Hundred Days*, a different item
+(`Q199955`), so quoting it would have been deviation 1252 again. **Six edges**,
+each `probable` and each quoting the sentence that carries it, **none of them
+running from a parent to its own child (A14)**: all six run between the seven
+children of the umbrella, and the umbrella takes no edge in either direction.
+One new source record, `riehn-1990-1812-napoleons-russian-campaign`, from the
+invasion article's own `{{sfn|Riehn|1990|p=26}}`, taking rule 9's count **202 →
+203**; the other five explanations say in their own words why the lead they
+quote carries no footnote to take a second author from. **The largest component
+moves 610 → 616** — `peninsular-war` is inside it, so the edge to the Fifth
+Coalition carries the whole new cluster in at one step, and **every one of the
+six earns an edge**, the second batch in a row where all of them do. `P710` was
+read and refused on all three items that carry one: the atlas holds an actor for
+one of the ten polities and people between them, so
+`docs/m53-polities.md` §4.1 is re-taken at **380 of 879** and `Q34266` and
+`Q71084` join the polity list, now thirteen. The corpus is **879 active**,
+Europe before 1900 is **89**, the cell is **21 with its ten main untouched**, and
+the `americas` lane is unchanged at 216. Deviations **1256** (on this branch the
+ninety-minute clause is the landing routine's, so 1249's last sentence decides)
+and **1257** (`--import` writes the record before it fetches the lead, so the
+placeholder is always what lands first and the lead summary is the fire's own
+second write); **1250 recurred**, a `reference` of 318 characters cut to 282.
+`docs/m42b-pool.md` → "Batch 21" is the full account.
+
 **M42b batches 19 and 20 — the Spanish conquest and the War of Jenkins' Ear, 24
 September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
 September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)
@@ -22465,3 +22749,14 @@ M42 started 2026-09-24T04:58:45Z by scheduled
 M42b started 2026-09-24T05:02:46Z by scheduled
 M87 started 2026-09-24T05:46:20Z by scheduled (branch m87)
 M87 done
+M42b started 2026-09-24T07:36:44Z by scheduled
+M42 started 2026-09-24T08:18:13Z by scheduled
+M42b started 2026-09-24T09:39:05Z by scheduled
+M42 started 2026-09-24T10:46:58Z by scheduled
+M42b started 2026-09-24T12:04:34Z by scheduled
+M42b started 2026-09-24T14:18:39Z by scheduled
+M42 started 2026-09-24T13:07:19Z by scheduled
+M42 started 2026-09-24T15:45:15Z by scheduled
+M42b started 2026-09-24T16:33:39Z by scheduled
+M42b started 2026-09-24T19:11:45Z by scheduled
+M42 started 2026-09-24T18:00:15Z by scheduled

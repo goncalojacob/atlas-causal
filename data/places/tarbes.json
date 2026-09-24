@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tarbes",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q184023",
+  "wikipedia": {
+    "en": "Tarbes",
+    "pt": "Tarbes"
+  },
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Tarbes"
+  ],
+  "where": {
+    "lon": 0.074444444444444,
+    "lat": 43.232777777778,
+    "precision": "city",
+    "label": "Tarbes"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

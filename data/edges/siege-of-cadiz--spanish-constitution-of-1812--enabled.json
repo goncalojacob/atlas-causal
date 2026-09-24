@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-cadiz--spanish-constitution-of-1812--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cádiz\", revision 1370740530, § Siege"
+    }
+  ],
+  "from": "siege-of-cadiz",
+  "to": "spanish-constitution-of-1812",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The constitution was drawn up inside the besieged city, by the assembly the siege had made the seat of Spanish government: \"Following the occupation of Seville, Cádiz became the Spanish seat of power\", and \"During the siege, which lasted two and a half years, the Cortes of Cádiz — which served as a parliamentary Regency after Ferdinand VII was deposed — drew up a new constitution to reduce the strength of the monarchy, which was eventually revoked by Fernando VII when he returned.\" The siege did not cause the text; it is why the Cortes sat where and as it did. Probable: Wikipedia alone.",
+  "dispute": null
+}

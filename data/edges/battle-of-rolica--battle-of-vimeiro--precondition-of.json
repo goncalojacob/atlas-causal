@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-rolica--battle-of-vimeiro--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vimeiro\", revision 1370623683, § Background and § Prelude"
+    }
+  ],
+  "from": "battle-of-rolica",
+  "to": "battle-of-vimeiro",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Vimeiro article makes the earlier battle the thing its own position came out of: \"The British intervention started with the Battle of Roliça\", and \"After Roliça, Wellesley had established a position near Vimeiro.\" Four days separate them and the same army fought both. Probable: Wikipedia alone.",
+  "dispute": null
+}

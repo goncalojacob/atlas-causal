@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-vitoria--battle-of-the-pyrenees--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Pyrenees\", revision 1370601915, lead and § Background"
+    }
+  ],
+  "from": "battle-of-vitoria",
+  "to": "battle-of-the-pyrenees",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The offensive was the answer to the defeat, and the article says so: \"After the decisive French defeat at the Battle of Vitoria, Marshal Soult consolidated the remnants of four armies into a single force of 80,000 troops.\" Its lead gives the order and the object — a \"large-scale offensive launched on 25 July 1813 by Marshal Jean-de-Dieu Soult from the Pyrénées region on Emperor Napoleon's order, in the hope of relieving French garrisons under siege at Pamplona and San Sebastián\" — both of which were besieged because of what Vitoria had lost. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-juterbog",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Wikidata's P361 on Q1584586 names the Thirty Years' War; the English article's own background opens 'Field Marshal Lennart Torstenson had unexpectedly marched into Jutland in September 1643 (see Torstenson War)' and the whole campaign it describes is that war, whose record the atlas holds (1643-1645) as a child of the Thirty Years' War. Filed at the narrower umbrella, whose span and subject both fit."
+  },
+  "wikidata": "Q1584586",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Jüterbog"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1584586"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jüterbog\", revision 1370444413"
+    }
+  ],
+  "title": "Battle of Jüterbog",
+  "summary": "The English Wikipedia article \"Battle of Jüterbog\", at revision 1370444413, opens: \"The Battle of Jüterbog was fought in Jüterbog on 3 December 1644 between Sweden and the Holy Roman Empire, resulting in a Swedish victory. The cavalry of the main Imperial army tried to break out of its blockade by the Swedish in Magdeburg but was caught and mostly shattered by the Swedes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1584586, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the thirty years' war, 1644\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-11-23"
+  },
+  "place": "juterbog",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "torstenson-war"
+}

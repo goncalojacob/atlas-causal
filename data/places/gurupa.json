@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "gurupa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event would have come out placeless. The point, the names and the precision's class are the item's own; nothing here is guessed."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q2011913",
+  "wikipedia": {
+    "en": "Gurupá",
+    "pt": "Gurupá"
+  },
+  "sources": [],
+  "names": [
+    "Gurupá"
+  ],
+  "where": {
+    "lon": -51.64,
+    "lat": -1.405,
+    "precision": "city",
+    "label": "Gurupá"
+  },
+  "region": null,
+  "summary": null
+}

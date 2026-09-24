@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-taejon--battle-of-the-pusan-perimeter--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Taejon\", revision 1370312872, lead and § Second North Korean attack"
+    }
+  ],
+  "from": "battle-of-taejon",
+  "to": "battle-of-the-pusan-perimeter",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article makes the argument twice and names the later battle: the division \"achieved a strategic victory by delaying the North Koreans, providing time for other U.S. divisions to establish a defensive perimeter around Pusan further south. The delay imposed at Taejon probably prevented a U.S. rout during the subsequent Battle of Pusan Perimeter.\" The order it quotes is explicit — Walker \"ordered General Dean to hold Taejon until the 20th so that the 1st Cavalry Division and 25th Infantry Division could establish defensive lines along the Naktong River, forming the Pusan Perimeter.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

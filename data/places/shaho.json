@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "shaho",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q920679, Battle of Shaho, read on 2026-09-24; the article at revision 1370589119 puts the fighting \"along a 37-mile (60 km) front centered at the Shaho River ... north of Liaoyang\". `region` for that reason, as `yalu-river` is. The item names no location A9's second step could read, and no `wikidata` key: a place claiming to be the battle would be the worse record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [],
+  "names": [
+    "Shaho"
+  ],
+  "where": {
+    "lon": 123.457,
+    "lat": 41.5986,
+    "precision": "region",
+    "label": "Shaho"
+  },
+  "region": null,
+  "summary": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-salamanca--battle-of-vitoria--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salamanca\", revision 1370273420, lead and § Aftermath"
+    }
+  ],
+  "from": "battle-of-salamanca",
+  "to": "battle-of-vitoria",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Salamanca is what broke the French hold on central Spain: \"As a consequence of Wellington's victory, his army was able to advance to and liberate Madrid for two months... The French were forced to abandon Andalusia permanently while the loss of Madrid irreparably damaged King Joseph's pro-French government.\" The Vitoria article opens its own background on it — \"In July 1812, after the Battle of Salamanca, the French had evacuated Madrid, which Wellington's army entered on 12 August 1812\" (revision 1370276545, § Background) — and the campaign that ended at Vitoria is the one Wellington spent that winter preparing. Probable: Wikipedia alone.",
+  "dispute": null
+}

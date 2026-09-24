@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "war-of-the-fourth-coalition--french-invasion-of-russia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French invasion of Russia\", revision 1375995823, § Background"
+    },
+    {
+      "source": "riehn-1990-1812-napoleons-russian-campaign",
+      "locator": "p. 26"
+    }
+  ],
+  "from": "war-of-the-fourth-coalition",
+  "to": "french-invasion-of-russia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The invasion's own article puts the settlement that ended the Fourth Coalition at the head of its background: \"In 1807, following a French triumph at Friedland, Napoleon and Alexander I of Russia signed the Treaty of Tilsit along the Neman River. These treaties progressively solidified Russia's alignment with France... The accord rendered Russia an ally of France, leading to their adoption of the Continental System, a blockade aimed at the United Kingdom. However, the treaty imposed significant economic strain on Russia, prompting Tsar Alexander to break away from the Continental blockade on 31 December 1810... This decision left Napoleon without his primary foreign policy tool against the United Kingdom.\" The article cites Riehn 1990 at p. 26 on that last sentence. `precondition-of` and not `caused`: Tilsit is what put Russia in the blockade, and the invasion's lead gives enforcing that blockade as its aim — the war of 1806–1807 made the obligation the invasion of 1812 was launched to enforce, which is a precondition and not a cause of it.",
+  "dispute": null
+}

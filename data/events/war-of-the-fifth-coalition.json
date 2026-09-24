@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "war-of-the-fifth-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q684324",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "War of the Fifth Coalition",
+    "pt": "Quinta Coligação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q684324"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
+    }
+  ],
+  "title": "War of the Fifth Coalition",
+  "summary": "The English Wikipedia article \"War of the Fifth Coalition\", at revision 1371442339, opens: \"The War of the Fifth Coalition was a European conflict in 1809 that was part of the Napoleonic Wars and the Coalition Wars. The main conflict took place in Central Europe between the Austrian Empire of Francis I and Napoleon's French Empire. The French were supported by their client states—the Kingdom of Italy, the Confederation of the Rhine and the Duchy of Warsaw. Austria was supported by the Fifth Coalition which included the United Kingdom, Portugal, Spain, and the Kingdoms of Sardinia and Sicily, although the latter two took no part in the fighting. By the start of 1809 much of the French army was committed to the Peninsular War against Britain, Spain and Portugal. After France withdrew 108,000 soldiers from Germany, Austria attacked France to seek the recovery of territories lost in the 1803–1806 War of the Third Coalition. The Austrians hoped Prussia would support them, having recently been defeated by France, but Prussia chose to remain neutral.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q684324, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 conflict during the Napoléonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-04-10",
+    "endDate": "1809-10-14"
+  },
+  "place": "central-europe",
+  "region": null,
+  "regionNote": null,
+  "parent": "napoleonic-wars",
+  "category": "war",
+  "actors": []
+}

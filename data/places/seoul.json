@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "seoul",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q8684 for batch 51: the capital three of the vein's rows name, and the place first-battle-of-seoul, second-battle-of-seoul and third-battle-of-seoul all stand on. The first two carry no P625 of their own, so A9's first step has nothing to say; the third's own point is 1.4 km from the city's."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q8684",
+  "wikipedia": {
+    "en": "Seoul",
+    "pt": "Seul"
+  },
+  "sitelinks": {
+    "count": 221,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Seoul",
+    "Seul"
+  ],
+  "where": {
+    "lon": 126.99,
+    "lat": 37.56,
+    "precision": "city",
+    "label": "Seoul"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

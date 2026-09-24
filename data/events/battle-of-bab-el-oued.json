@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bab-el-oued",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2888071",
+  "wikipedia": {
+    "en": "Battle of Bab El Oued"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888071"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bab El Oued\", revision 1370432852"
+    }
+  ],
+  "title": "Battle of Bab El Oued",
+  "summary": "The English Wikipedia article \"Battle of Bab El Oued\", at revision 1370432852, opens: \"The Battle of Bab el Oued was an armed confrontation which occurred during the latter stages of the Algerian War (1954–1962) between the French Army and the Organisation armée secrète (OAS) which opposed Algerian independence. It took place in Bab El Oued, then a working-class European quarter of Algiers, from 23 March to 6 April 1962.\" Wikidata item Q2888071, whose own description reads \"1962 battle of the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1962,
+    "end": 1962,
+    "date": "1962-03-23",
+    "endDate": "1962-04-06"
+  },
+  "place": "bab-el-oued",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "war",
+  "actors": []
+}

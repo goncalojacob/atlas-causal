@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "evian-accords--battle-of-bab-el-oued--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bab El Oued\", revision 1370432852, § Context — OAS uprising (19 March)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Évian Accords\", revision 1372137587, § Opposition to the Accords"
+    }
+  ],
+  "from": "evian-accords",
+  "to": "battle-of-bab-el-oued",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Read in this direction the edge says that the battle was the answer given to the accords, which is what both articles say. Bab El Oued’s § Context: \"The OAS was a far-right organization of hard-line European ‘Pied-Noirs’ living in (the then-French territory) Algeria who were opposed to the cease-fire announced by French president Charles de Gaulle on 19 March 1962 between French forces and the Front de libération nationale (FLN) forces fighting for Algerian Independence. The OAS decided to dig in at their stronghold of Bab El Oued (a traditionally European working-class area) to fight the Evian Agreements by force.\" The Évian article from the other end: \"One of the primary forces of opposition to the signing of the Evian Accords and the formation of an independent Algerian State was the Secret Army Organisation (OAS)... The group rejected the ceasefire, adopted a scorched earth policy to destroy the Algerian economy\". Five days separate the signature from the first shot. Probable: both citations are Wikipedia, which rule 22 does not let stand as consensus.",
+  "dispute": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-tarbes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q136669216",
+  "wikipedia": {
+    "en": "Battle of Tarbes"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136669216"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tarbes\", revision 1370590584"
+    }
+  ],
+  "title": "Battle of Tarbes",
+  "summary": "The English Wikipedia article \"Battle of Tarbes\", at revision 1370590584, opens: \"The Battle of Tarbes was a rearguard action fought on 20 March 1814 between the French Army of the South, commanded by Marshal Nicolas Jean-de-Dieu Soult, and the Allied forces under Field Marshal Arthur Wellesley, 1st Marquess of Wellington, during the final phase of the Peninsular War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q136669216, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03-20"
+  },
+  "place": "tarbes",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

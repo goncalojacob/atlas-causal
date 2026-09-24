@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region"
+    }
+  ],
+  "from": "chadian-intervention-in-northern-mali",
+  "to": "battle-of-ifoghas",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The battle was fought by two columns and one of them was Chad's: \"France was also seeking the help of Chad's President Idriss Déby. He agreed to deploy his army in the Adrar of Ifoghas. On February 3, the first Chadian soldiers arrived in Kidal.\" The article's own account of the fighting has the valley \"caught between two armored columns, one French to the west and another Chadian to the east\". The Chadian article says it from its side: on 22 February \"the Chadian army launched a joint military operation with the support of French war jets on an Islamists base said to be of 'significant importance' ... hidden in the mountains of the Adrar des Ifoghas\". Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-nordlingen-1634--siege-of-breisach--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ],
+    "note": "The Breisach article carries a {{failed verification span}} maintenance tag of August 2026 over the words \"independent army,\" inside the sentence quoted here. The tag is about that phrase and not about the defeat at Nördlingen or the 1637 offensive, and the quotation above leaves the tagged words out; a reviewer who reads Ackermann should say whether the whole sentence survives."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Breisach\", revision 1370739740, § Background"
+    },
+    {
+      "source": "ackermann-2023-herzog-bernhard-von-weimar",
+      "locator": "p. 215"
+    }
+  ],
+  "from": "battle-of-nordlingen-1634",
+  "to": "siege-of-breisach",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Breisach article traces the besieger's independent command to his defeat at Nördlingen: \"Bernard of Saxe-Weimar aspired to acquire his own territory in the Holy Roman Empire. After his defeat as Swedish commander at Nördlingen in 1634, he commanded… the former troops of the Protestant Heilbronn League. A treaty with France brought him reinforcements, pay and provisions. In 1637, he went onto the offensive against Breisach, a potential capital for his desired territory.\" The paragraph is cited to Ackermann (2023), p. 215, which is the second author named here.",
+  "dispute": null
+}
