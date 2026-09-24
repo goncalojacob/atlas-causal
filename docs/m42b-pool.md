@@ -4183,91 +4183,117 @@ of the XML.** The REST summary endpoint also answered; it is the lead only.
 
 ## Where the run stands, for the fire that picks it up
 
-*23 September, after the sixteenth fire and its fifteenth batch.*
+*24 September, after the seventeenth fire and its sixteenth batch.*
 
 | | |
 | --- | --- |
-| corpus | **834 active** |
+| corpus | **847 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **591** |
+| **largest connected component** | **604** |
 | components | 194 |
 | events with no edge at all | 159 |
 | Europe before 1900 | 76 active, 18 main |
-| the `americas` lane | **192 active, 55 main** |
-| the thinnest cells left, in this partition | the Americas' 18th (11 active, 2 main), the Americas' 15th (4, 3), Europe's 16th (12, 1) |
-| the cell this batch moved | the Americas' 16th, 11 → 16 active and 5 main unchanged |
+| the `americas` lane | **198 active, 55 main** |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3), Europe's 16th (12, 1), the Americas' 17th (14, 6) |
+| the cell this batch moved | the Americas' 18th, 11 → 17 active and 2 main unchanged |
 
-**The order of a fire on this branch, which deviation 1242 settles and two
-fires running have now broken.** Resolve the merge and **commit it**; only then
-`node tools/build-index.mjs`; then commit the index as its own commit. Building
-before the merge commit exists costs seven rule 16 errors on the history shards
-every time. The same order is 798's for a batch: records committed, then
-rebuild, then commit the index.
+**The order of a fire on this branch, which deviation 1242 settles.** Resolve
+the merge and **commit it**; only then `node tools/build-index.mjs`; then commit
+the index as its own commit. Building before the merge commit exists costs seven
+rule 16 errors on the history shards every time. The same order is 798's for a
+batch: records committed, then rebuild, then commit the index. **This fire kept
+it** and had no history-shard errors.
 
-**Read `git log origin/m42 -- <file>` before taking a conflicted file whole.**
-Deviation 1246: `--theirs` on `tools/import/wikidata.mjs` cost this branch its
-own `maxlag` fallback and two dead import attempts. The fix is back; the habit
-is what the next fire needs.
+**Read `git log origin/m42 -- <file>` before taking a conflicted file whole**
+(deviation 1246). This fire's merge of `origin/m42`'s batch 47 conflicted only
+in the generated index, the two import bookkeeping files and
+`docs/m53-polities.md`; `tools/import/wikidata.mjs` was untouched and its
+`maxlag` fallback is still in place.
 
-**The network answered, and `maxlag` was standing.** `Special:EntityData` and
-the SPARQL endpoint served throughout; `api.php` at Wikidata answered `maxlag`
-— *"Waiting for wdqs1011: 148.7 seconds lagged"*, then *"wdqs1014: 144.6"* —
-and killed two import attempts eight minutes apart. The third attempt, the
-first with the fallback back in the file, finished in twenty-five calls.
-**Whether the lag lifted in between or the fallback carried it, this run cannot
-say**, and it matters less than the two attempts it cost: the lag of the
-fifteenth fire lifted in two minutes and this one had not in eight. **A hand-written `curl` at `en.wikipedia.org`'s
-`api.php` is refused outright** — *"You are making too many requests to the
-API"* — and the import's own user-agent with a two-second delay between titles
-gets through where a bare one does not. The article text this batch's edges
-quote was fetched that way.
+**The network answered throughout and `maxlag` never stood.** `Special:EntityData`,
+the SPARQL endpoint and the import's own calls all served; the import finished
+in twenty-five calls on the first attempt. **`api.php` at `en.wikipedia.org` is
+refused whatever user-agent a hand-written `curl` carries** — see deviation 1247
+— and `Special:Export` is the way to an article's text and its revision id.
 
-**Nine items are left in the vein this batch opened, and the query that found
-them costs one call.** Every item whose `P361` is one of `Q828435` (the Aztec
-conquest), `Q636771` (the Inca) or `Q2993582` (Guatemala) and that has an
-English article. Sixteen came back; two are already records here; five are this
-batch. **The nine, with where each files:**
+### The vein this batch opened, and what is left in it
 
-| item | title | date | files under | century |
+**Sixteen items are left of the twenty-three the query returned, and the query
+costs one call.** Every item whose `P361` is one of `Q54434` (the War of
+Jenkins' Ear), `Q1806552` (the Rebellion of Túpac Amaru II), `Q2427419` (the
+Guaraní War) or `Q2095753` (the Revolt of the Comuneros) and that has an English
+article. One of the twenty-three is already a record here
+(`battle-of-cartagena-de-indias`) and six are this batch.
+
+**The one that is the Túpac Amaru rising and is not here:**
+
+| item | title | date | why it was refused | century |
 | --- | --- | --- | --- | --- |
-| `Q3636661` | Battle of Vilcaconga | 1533-11-18 | `spanish-conquest-of-the-inca-empire` | 16th |
-| `Q1612814` | Battle of Cusco | 1533-11-24 | `spanish-conquest-of-the-inca-empire` | 16th |
-| `Q3636517` | Battle of Maraycalla | 1534-05 | `spanish-conquest-of-the-inca-empire` | 16th |
-| `Q2338569` | Battle of Ollantaytambo | 1537-01 | `siege-of-cusco`, which is the narrower | 16th |
-| `Q1612597` | Battle of Chupas | 1542-09-16 | `spanish-conquest-of-the-inca-empire` | 16th |
-| `Q3119074` | Spanish conquest of the Kingdom of Q'umarkaj | 1524 | `spanish-conquest-of-guatemala` | 16th |
-| `Q1615387` | Battle of Punta Quemada | 1525 | **not** the Inca conquest — it is outside 1532–1572; `spanish-colonization-of-the-americas` holds it | 16th |
-| `Q3636591` | Battle of Puná | 1531-04 | the same: outside the Inca conquest, inside the colonization | 16th |
-| `Q7573336` | Spanish conquest of Petén | 1618–1697 | `spanish-conquest-of-guatemala` | 17th |
+| `Q9172888` | Battle of Combapata | 1781-04-05 | no `P625`, no `P17`, and its `P276` `Q3312913` is not a place record here, so the import refused a placeless event with no region | 18th |
 
-**Seven of those nine are the Americas' sixteenth century again and none of them
-costs a main event**, because every one falls inside an umbrella already here.
-`spanish-conquest-of-the-inca-empire` is in the largest component, as the Aztec
-conquest is, so a batch of them can join it the same way this one did — and
-`battle-of-cajamarca` and `siege-of-cusco` are both **components of one** today
-and would be carried in with it, as `fall-of-tenochtitlan` was.
+**It is worth a fire, because it is the engagement the rising turned on**: the
+article has Túpac Amaru II captured retreating from it. What it needs is a place
+record written by hand from `Q3312913` — the same pass this batch did five times
+— or a lane seeded for it in `data/imports/wikidata-seeds.json` → `lanes`. Not a
+change to the tool: the refusal is correct.
 
-**The two dates to check before importing `Q1615387` and `Q3636591`.** Both are
-`P361` of the Inca conquest on Wikidata and both are dated *before* its 1532
-start, so filing them there is a `child-outside-parent`. The reading this run
-would take is that the atlas's `spanish-conquest-of-the-inca-empire` follows the
-article's 1532–1572 and the two engagements belong to the voyages that preceded
-it — but that is a reading, and the umbrella that certainly holds them is
-`spanish-colonization-of-the-americas`, 1493–1898.
+**The fifteen of the War of Jenkins' Ear**, which file under `war-of-jenkins-ear`
+(1739–1748, main, already here) and would cost **no main event**:
 
-**The other veins named by the fifteenth fire are unchanged and still open.**
-`Q4677306` and `Q4677341`, the two 1654 actions that end the Dutch–Portuguese
+| item | title | date | where | century |
+| --- | --- | --- | --- | --- |
+| `Q3024756` | Battle of Porto Bello (1739) | 1739-11-22 | Panama, S/C | 18th |
+| `Q4677387` | Action of 8 April 1740 | 1740-04-08 | at sea | 18th |
+| `Q3486020` | Siege of St. Augustine (1740) | 1740-06-13 | Florida, **North** | 18th |
+| `Q7510020` | Battle of Bloody Mose | 1740-06-26 | Florida, **North** | 18th |
+| `Q22936135` | Attacks on Fuerteventura in 1740 | 1740-11-24 | Canaries, **not this lane** | 18th |
+| `Q4872309` | Invasion of Cuba (1741) | 1741-12-09 | Cuba, S/C | 18th |
+| `Q6059634` | Invasion of Georgia (1742) | 1742-07-01 | Georgia, **North** | 18th |
+| `Q2888163` | Battle of Bloody Marsh | 1742-07-07 | Georgia, **North** | 18th |
+| `Q4871513` | Battle of La Guaira | 1743-03-02 | Venezuela, S/C | 18th |
+| `Q4872124` | Battle of Puerto Cabello | 1743-04-16 | Venezuela, S/C | 18th |
+| `Q2713453` | Voyage of the Glorioso | 1747-07-25 | at sea | 18th |
+| `Q4677277` | Action of 18 March 1748 | 1748-03-18 | at sea | 18th |
+| `Q4872306` | Battle of Santiago de Cuba (1748) | 1748-04-09 | Cuba, S/C | 18th |
+| `Q1136414` | Battle of Havana (1748) | 1748-10-12 | Cuba, S/C | 18th |
+| `Q16838766` | Georgia Experiment | 1735-01-01 | Georgia, **North**, and *outside* the war's 1739 start | 18th |
+
+**Six of the fifteen are South and Central America and are the next batch's by
+the brief's own order**: Porto Bello, the invasion of Cuba, La Guaira, Puerto
+Cabello, Santiago de Cuba and Havana. The four at sea and the five North
+American ones wait behind them — the split is 158 to 19 and nowhere near spent.
+`Q16838766` is dated 1735 and `war-of-jenkins-ear` begins in 1739, so filing it
+there is a `child-outside-parent` and the tests hold that at zero: it wants
+`spanish-colonization-of-the-americas` or nothing.
+
+### The veins earlier fires named, and which are still open
+
+**The nine of the conquest vein are unchanged and still open** — the Americas'
+sixteenth century, every one inside an umbrella already here, so none costs a
+main event: `Q3636661` Vilcaconga, `Q1612814` Battle of Cusco, `Q3636517`
+Maraycalla, `Q2338569` Ollantaytambo, `Q1612597` Chupas, `Q3119074` Q'umarkaj,
+`Q1615387` Punta Quemada, `Q3636591` Puná, `Q7573336` Petén. The two dates to
+check before importing `Q1615387` and `Q3636591` are as the sixteenth fire left
+them: both are `P361` of the Inca conquest and both are dated before its 1532
+start, so `spanish-colonization-of-the-americas` is the umbrella that certainly
+holds them.
+
+**`Q4677306` and `Q4677341`**, the two 1654 actions that end the Dutch–Portuguese
 War in Brazil, file under the war itself and cost no main event.
-`Q19019163` *Dutch invasions of Brazil* (1624–1654) is an umbrella whose span
-already holds seven records here, so it is paid for on arrival — a fire that
-takes it should check first that it does not sit between the war and Dutch
-Brazil in the way deviation 1244 refuses. The Italian Wars tree is still twelve
-active events joined to nothing, and the **Peace of Cateau-Cambrésis of 1559 is
-still the named door**. The French Wars of Religion (`Q673175`) are still free
-to whoever brings their children.
+**`Q19019163`** *Dutch invasions of Brazil* (1624–1654) is an umbrella whose span
+already holds seven records here; a fire that takes it should check first that it
+does not sit between the war and Dutch Brazil in the way deviation 1244 refuses.
+**The Italian Wars tree is still twelve active events joined to nothing**, and
+the **Peace of Cateau-Cambrésis of 1559 is still the named door**. The French
+Wars of Religion (`Q673175`) are still free to whoever brings their children.
 
-**The two questions for the owner are unchanged and both still block a
-century.**
+**A lesson this fire paid for and the next can have free.** A part-to-umbrella
+edge is available only where the part is what *began* the umbrella: rule 4
+refuses it otherwise, because the umbrella is dated from before its parts. Three
+such edges were written and deleted here. What carries the same argument is the
+edge from the umbrella *forward* into the part.
+
+### The two questions for the owner are unchanged and both still block a century
 
 1. **Does the atlas begin in 1492, or does its first sentence follow the corpus
    wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names

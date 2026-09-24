@@ -21250,6 +21250,44 @@ correction and dropped this branch's own `maxlag` fallback, and the import died
 twice on a lag before anyone noticed; the fix and its test were re-applied.
 `docs/m42b-pool.md` → "Batch 15" is the full account.
 
+**M42b batch 16 — the Rebellion of Túpac Amaru II, and the Americas'
+eighteenth century, 24 September.** The seventeenth fire on this branch took
+the cell the sixteenth left thinnest in this partition — the Americas' 18th, 11
+active and 2 main — and opened a vein the atlas had never touched, the
+engagements of a rising it has held as one record since M53. One SPARQL query
+for every item whose `P361` is one of four umbrellas already here returned
+**twenty-three**; seven are the Túpac Amaru rising and **six were created, one
+refused**, in twenty-five calls. `battle-of-sangarara`, `battle-of-pillpinto`,
+`capture-of-ayaviri`, `battle-of-saylla`, `siege-of-cusco-1781` and
+`battle-of-pucacasa`, all filed under `rebellion-of-tupac-amaru-ii` and all
+inside its 1780–1783, so **the main count does not move: 242 before and 242
+after**. Five place records written by hand from each item's own `P276` under
+A9 — `sangarara` and `ayaviri` as `city`, `pillpinto-district`,
+`saylla-district` and `quispicanchi-province` as `region`, because a district
+and a province are areas and not points — and the sixth took `cusco`, which is
+the same item its `P276` gives. All six carry the **cached English lead as
+their summary** at a named revision, with the `wikipedia-en` citation and the
+`summary-from-lead` flag; none shows the import's placeholder. **Six edges**,
+each `probable` and each from what the article states in so many words, one of
+them running from a record the atlas already held into the batch, which is how
+all six reached the largest component: **598 → 604**, with no new component and
+the isolated count unmoved at 159. One new source record,
+`walker-2014-the-tupac-amaru-rebellion`, the work the English article itself
+cites — cited and not read. The corpus is **847 active**, the `americas` lane
+198, the cell 17 with its two mains untouched. `docs/m53-polities.md` §4.1
+re-taken at **379 of 847** — the numerator moved at the merge of `origin/m42`'s
+batch 47 and not by anything this lane wrote. **`Q9172888`, the Battle of
+Combapata, was refused** and is named for the next fire: it carries no `P625`,
+no `P17` and a `P276` the atlas has no place for, so the import would not write
+a placeless event with no region, and the refusal is correct. **Deviation 1247**
+is what this fire found: a hand-written `curl` at `en.wikipedia.org`'s `api.php`
+is refused whatever user-agent it carries, and `Special:Export` answers at once
+with the revision id and the wikitext whole — which is where M72's second author
+comes from, since the `<ref>` tags name the works the article cites. **Three
+edges were written and deleted**: a part may not point at its own umbrella where
+the umbrella is dated first, which rule 4 refused three times.
+`docs/m42b-pool.md` → "Batch 16" is the full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
