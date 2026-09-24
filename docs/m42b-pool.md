@@ -4638,8 +4638,11 @@ the records**, because its denominator is the active count and
 `success`; runs 1611, 1612, 1613 and 1618 were each cancelled by the concurrency
 group as the next push landed, so 1619 is the only one that reads this fire's
 tree. Locally: `node tools/validate.mjs --index` clean at 0 errors and 506
-warnings, and **2,071 tests pass with none failed and none skipped** — 1,792 pure
-and 279 in the eighteen browser suites, run the way the check runs them.
+warnings, and **2,071 tests pass with none failed and none skipped** — 1,792 in
+the 151 pure suites and 279 in the 36 browser suites, run the way the check runs
+them, one browser suite at a time. (`tools/suites.mjs` reports 36 and 151 today;
+`CLAUDE.md` still says eighteen and 129, which is a count from before M63's
+suites were added.)
 
 **For article text beyond the cached lead, `Special:Export` and nothing else**
 (deviation 1247). It answered eleven times in this fire with the revision id in
