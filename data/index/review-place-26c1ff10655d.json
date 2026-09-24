@@ -66,7 +66,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 5,
       "id": "afghanistan-q889",
       "kind": "place",
       "names": [
@@ -4710,7 +4710,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "ipatiev-house",
       "kind": "place",
       "names": [
@@ -7313,7 +7312,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "monastir-vilayet",
       "kind": "place",
       "names": [
@@ -7797,7 +7795,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "near-east",
       "kind": "place",
       "names": [
@@ -11360,7 +11357,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 3,
       "id": "sinai-peninsula",
       "kind": "place",
       "names": [
@@ -12808,7 +12805,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "uss-missouri",
       "kind": "place",
       "names": [
@@ -13935,6 +13931,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "ipatiev-house",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
       "id": "jankov-benesov-district",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14019,6 +14021,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "monastir-vilayet",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
       "id": "montevideo",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14041,6 +14049,12 @@
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "near-east",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
     },
     {
       "id": "neiva",
@@ -14245,6 +14259,12 @@
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "uss-missouri",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
     },
     {
       "id": "valladolid",

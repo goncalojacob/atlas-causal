@@ -680,12 +680,13 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a14-lane-guard"
         ],
+        "note": "A14(2): the place was sinai-peninsula, which the lane guard puts in Africa against this record's own Asia. The Sinai is where the Egyptian front ran, not where the war was; the place is cleared and the lane kept, as before A9.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "1948 Arab–Israeli War"
     },
@@ -12599,12 +12600,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a14-lane-guard"
         ],
+        "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "execution of the Romanov family"
     },
@@ -14487,10 +14489,10 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place",
-          "a7-widened"
+          "a7-widened",
+          "a14-lane-guard"
         ],
-        "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.",
+        "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.\n\nA14(2): the place was afghanistan-q889, first of the nine countries Q8698 names under P17, taken before the guard. A worldwide downturn drawn in Kabul is a wrong picture; cleared, the Americas lane kept.",
         "status": "draft"
       },
       "revised": "2026-09-24",
@@ -15434,12 +15436,13 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a14-lane-guard"
         ],
+        "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Ilinden–Preobrazhenie Uprising"
     },
@@ -16736,12 +16739,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a14-lane-guard"
         ],
+        "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Japanese Instrument of Surrender"
     },
@@ -28853,12 +28857,13 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place",
-          "filed-from-p527"
+          "filed-from-p527",
+          "a14-lane-guard"
         ],
+        "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Yom Kippur War"
     },
