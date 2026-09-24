@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "battle-of-gao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the record carried 2012-06-27 alone, which is the item's single P585. Its own cited article at revision 1370441289 says the battle was fought \"in Gao between 26 and 28 June 2012\", so the span is 26 to 28 June."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3181123",
+  "wikipedia": {
+    "en": "Battle of Gao"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3181123"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gao\", revision 1370441289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gao\", revision 1370441289, lead: \"between 26 and 28 June 2012\""
+    }
+  ],
+  "title": "Battle of Gao",
+  "summary": "The English Wikipedia article \"Battle of Gao\", at revision 1370441289, opens: \"The Battle of Gao was fought between the National Movement for the Liberation of Azawad (MNLA) and the Islamist Movement for Oneness and Jihad in West Africa (MOJWA), along with its ally Ansar Dine, in Gao between 26 and 28 June 2012.\" Wikidata item Q3181123, whose own description reads \"battle between MNLA and MOJWA in Gao, Mali\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-06-26",
+    "endDate": "2012-06-28"
+  },
+  "place": "gao",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

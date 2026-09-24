@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2012-tuareg-rebellion--battle-of-gao--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tuareg rebellion (2012)\", revision 1370751541, lead"
+    }
+  ],
+  "from": "2012-tuareg-rebellion",
+  "to": "battle-of-gao",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The rebellion's own article puts the Battle of Gao at the end of what the rebellion left unsettled: \"After the end of hostilities with the Malian Army, however, Tuareg nationalists and Islamists struggled to reconcile their conflicting visions for the intended new state. On 27 June, Islamists from the Movement for Oneness and Jihad in West Africa (MOJWA) clashed with the MNLA in the Battle of Gao\". The Gao article says the same from its own side: \"in early 2012 the MNLA and Islamist movements captured northern Mali. Tensions then started between the MNLA and Islamist movements over the use of sharia law within the territory.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

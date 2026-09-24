@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-konna--operation-serval--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Konna\", revision 1375363074, § Jihadist coalition advances in Sevare and Mopti and Operation Serval"
+    }
+  ],
+  "from": "battle-of-konna",
+  "to": "operation-serval",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article states the cause in one sentence: \"However, the jihadist offensive in southern Mali provoked France's entry into the war. On January 11, the French army launched Operation Serval.\" Konna is that offensive — the same article calls the battle \"among the first French engagements in their intervention in the Mali War\". Probable: Wikipedia alone.",
+  "dispute": null
+}

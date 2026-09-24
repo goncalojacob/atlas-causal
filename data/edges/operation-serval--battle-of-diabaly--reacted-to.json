@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-serval--battle-of-diabaly--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Diabaly\", revision 1370438795, § Background"
+    }
+  ],
+  "from": "operation-serval",
+  "to": "battle-of-diabaly",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Diabaly's § Background makes the battle an answer to the French air campaign: \"On 13 January, the French Air Force bombarded major Islamist towns throughout northern Mali. As a result of this hundreds of Islamists fled to the Mauritania border, where they launched a counterattack on the western town of Diabaly.\" The atlas's reacted-to runs forward in time: Diabaly answered Serval. Probable: Wikipedia alone.",
+  "dispute": null
+}

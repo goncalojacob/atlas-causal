@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2012-malian-coup-d-etat--battle-of-kidal-2012--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § Aftermath"
+    }
+  ],
+  "from": "2012-malian-coup-d-etat",
+  "to": "battle-of-kidal-2012",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The coup article makes the coup the reason the north fell: \"Inspired in part by the diversion caused by the military coup, Tuareg rebels in the country's north launched incursions deeper into Mali, seizing towns and bases formerly held by government forces\", and \"As military forces were engaged in consolidating their hold on the capital, the rebels were able to push southward with little opposition.\" Kidal is the first of the three capitals that went, four days later. Enabled and not caused: the rebels were already besieging Kidal, and what the coup gave them was an army looking the other way. Probable: Wikipedia alone.",
+  "dispute": null
+}

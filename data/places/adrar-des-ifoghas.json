@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "adrar-des-ifoghas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q366665 for batch 50. `region` off the item's own class, mountain range. It is battle-of-ifoghas's place by A9's first step over its second: the item's own P625 is in this massif and its P276 is Tessalit, 45 km north."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q366665",
+  "wikipedia": {
+    "en": "Adrar des Ifoghas",
+    "pt": "Adrar dos Ifogas"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Adrar des Ifoghas",
+    "Adrar dos Ifogas"
+  ],
+  "where": {
+    "lon": 1.75,
+    "lat": 19.116666666667,
+    "precision": "region",
+    "label": "Adrar des Ifoghas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
