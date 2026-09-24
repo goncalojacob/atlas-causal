@@ -8093,6 +8093,10 @@ Read through the query service (`query.wikidata.org/sparql`), which answered
 the import itself went through — deviation 1414's reading of the two refusals,
 applied.
 
+A11 (b)'s partition check was made before the import: none of the seven ids is
+on `origin/m42b` (`docs: the check is green on the head of this fire`,
+24 September 10:31Z), which is what a lane owes the other lane.
+
 In date order:
 
 | the record | sitelinks | dates | placed at | filed under |
@@ -8341,3 +8345,9 @@ out of it.
   a parent.**
 - **Deviation numbers: take the next above 1424.** This fire wrote **1420 to
   1424**.
+
+**The check is green on this fire's head.** Run 1713 of `validate.yml`, commit
+`cb1c9821`, conclusion `success`. Run 1712 on the index head was green before
+it and run 1711 on the records head was cancelled by the next push in the same
+concurrency group, which is the ordering rule 798 working rather than a fault.
+The re-run allowance is unspent: nothing was re-run.
