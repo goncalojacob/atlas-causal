@@ -4580,7 +4580,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 2,
@@ -4593,11 +4594,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Argentine surrender in the Falklands War"
     },
@@ -5842,6 +5844,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "origin": {
@@ -6561,11 +6564,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P17 = Q77, written as \"uruguay-q77\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Las Piedras (1811)"
     },
@@ -7522,11 +7527,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9's first step as A12 (2) corrects it: Q2890073's own P625, written as \"suipacha\" at `point` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Suipacha"
     },
@@ -7587,11 +7594,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9's first step as A12 (2) corrects it: Q675999's own P625, written as \"the-downs\" at `point` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of the Downs"
     },
@@ -8297,7 +8306,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "bluff-cove-air-attacks",
@@ -8309,11 +8319,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Bluff Cove Air Attacks"
     },
@@ -8340,11 +8351,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q686971, written as \"lands-of-the-bohemian-crown\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Bohemian Revolt"
     },
@@ -8370,11 +8383,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q750, written as \"bolivia-q750\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Bolivian War of Independence"
     },
@@ -8987,7 +9002,7 @@
         "telo-2007-historia-contemporanea"
       ],
       "created": "2026-09-02",
-      "degree": 19,
+      "degree": 20,
       "id": "carnation-revolution-1974",
       "kind": "event",
       "origin": {
@@ -9486,11 +9501,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P17 = Q739, the \"colombia-q739\" record already here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Colombian War of Independence"
     },
@@ -10340,6 +10357,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "crossing-of-the-andes",
       "kind": "event",
       "origin": {
@@ -10349,11 +10367,14 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened",
+          "a9-place"
         ],
+        "note": "Place from A9 P17 = Q414, the \"argentina-q414\" record already here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Crossing of the Andes"
     },
@@ -11017,11 +11038,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P17 = Q736, written as \"ecuador-q736\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Ecuadorian War of Independence"
     },
@@ -11047,12 +11070,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
-        "note": "M42b batch 5: the item gives P580 6 March 1629 and no P582, so the import wrote end: null with the end-unstated flag, which the atlas reads as still going and which put the edict outside the war it is part of. The record names a proclamation, and its cited article dates that act alone: \"proclaimed by Ferdinand II, Holy Roman Emperor in Vienna, on 6 March 1629\" (revision 1285679503). The end is that day. How long the edict stayed in force is another question this record does not answer.",
+        "note": "Place from A9 P17 = Q12548, written as \"holy-roman-empire-q12548\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Edict of Restitution"
     },
@@ -11278,7 +11302,8 @@
       ],
       "category": "treaty",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-15",
       "degree": 4,
@@ -11291,11 +11316,12 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Entente Cordiale"
     },
@@ -12245,7 +12271,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 4,
+      "degree": 5,
       "id": "first-congo-war",
       "kind": "event",
       "origin": {
@@ -12274,7 +12300,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -12287,11 +12314,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "First Franco-Dahomean War"
     },
@@ -12897,11 +12925,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q142, written as \"france-q142\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "French Revolution"
     },
@@ -12922,7 +12952,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "origin": {
@@ -14563,7 +14593,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "origin": {
@@ -15670,7 +15700,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "id": "kaocen-revolt",
@@ -15682,11 +15713,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Kaocen Revolt"
     },
@@ -18096,7 +18128,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-badr-1973",
       "kind": "event",
       "origin": {
@@ -18660,7 +18692,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -18672,11 +18705,12 @@
       "parent": "falklands-war",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Operation Sutton"
     },
@@ -18693,7 +18727,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-turquoise",
       "kind": "event",
       "origin": {
@@ -19069,7 +19103,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "partition-of-india",
       "kind": "event",
       "origin": {
@@ -19826,6 +19860,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "prelude-to-the-russian-invasion-of-ukraine",
       "kind": "event",
       "origin": {
@@ -19991,11 +20026,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q58296, written as \"french-first-republic\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Reign of Terror"
     },
@@ -20139,6 +20176,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "origin": {
@@ -20549,7 +20587,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 7,
+      "degree": 8,
       "id": "russo-japanese-war",
       "kind": "event",
       "origin": {
@@ -22330,7 +22368,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 2,
@@ -22342,11 +22381,12 @@
       "parent": "interwar-period",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-21",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Slovak–Hungarian War"
     },
@@ -22780,11 +22820,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P17 = Q96, written as \"mexico-q96\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Spanish attempts to reconquer Mexico"
     },
@@ -24200,11 +24242,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q27509, written as \"central-europe\" at `region` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Thirty Years' War"
     },
@@ -24299,11 +24343,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q35, written as \"denmark-q35\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Torstenson War"
     },
@@ -25874,11 +25920,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q717, written as \"venezuela-q717\" at `country` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Venezuelan War of Independence"
     },
@@ -25890,7 +25938,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-21",
       "degree": 1,
@@ -25902,11 +25951,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Vienna Convention for the Protection of the Ozone Layer"
     },
@@ -26247,7 +26297,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "war-of-attrition",
       "kind": "event",
       "origin": {
@@ -26353,11 +26403,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
+        "note": "Place from A9 P276 = Q4345530, written as \"northern-italy\" at `region` precision.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "War of the Mantuan Succession"
     },
@@ -26370,7 +26422,8 @@
       ],
       "category": "war",
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-22",
       "degree": 1,
@@ -26384,11 +26437,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "participants-from-p710"
+          "participants-from-p710",
+          "summary-from-lead"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "War over Water"
     },
@@ -26559,7 +26613,7 @@
         "macqueen-1997-decolonization"
       ],
       "created": "2026-09-02",
-      "degree": 1,
+      "degree": 2,
       "id": "wiriyamu-massacre-1972",
       "kind": "event",
       "origin": {
@@ -27098,12 +27152,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "argentine-surrender-in-the-falklands-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "argentine-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27195,12 +27243,6 @@
     },
     {
       "id": "battle-of-caporetto",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-chacabuco",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -27470,12 +27512,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "bluff-cove-air-attacks",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27572,12 +27608,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "crossing-of-the-andes",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27600,12 +27630,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "entente-cordiale",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "eritrean-civil-wars",
@@ -27642,12 +27666,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "first-franco-dahomean-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "haitian-embassy-in-cuba-massacre",
@@ -27746,12 +27764,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "kaocen-revolt",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "las-palmas-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27836,12 +27848,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "operation-sutton",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "palace-of-justice-siege",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27878,12 +27884,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "prelude-to-the-russian-invasion-of-ukraine",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "raid-on-pebble-island",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -27891,12 +27891,6 @@
     },
     {
       "id": "reign-of-terror",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -27974,12 +27968,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "slovak-hungarian-war",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "smolensk-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -28040,12 +28028,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "vienna-convention-for-the-protection-of-the-ozone-layer",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "wadai-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -28062,12 +28044,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "war-over-water",
-      "kind": "event",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "women-s-march-on-versailles",

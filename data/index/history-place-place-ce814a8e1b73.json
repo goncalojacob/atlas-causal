@@ -537,6 +537,15 @@
         }
       ]
     },
+    "bolivia-q750": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -816,6 +825,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "central-europe": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1146,6 +1164,15 @@
         }
       ]
     },
+    "denmark-q35": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "department-of-ica": {
       "from": "git",
       "versions": [
@@ -1294,6 +1321,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "ecuador-q736": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1569,6 +1605,15 @@
         }
       ]
     },
+    "france-q142": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "freiburg-im-breisgau": {
       "from": "git",
       "versions": [
@@ -1590,6 +1635,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "french-first-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1914,6 +1968,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "holy-roman-empire-q12548": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2578,6 +2641,15 @@
         }
       ]
     },
+    "lands-of-the-bohemian-crown": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "laos-q819": {
       "from": "git",
       "versions": [
@@ -3118,6 +3190,15 @@
         }
       ]
     },
+    "mexico-q96": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "middle-east": {
       "from": "git",
       "versions": [
@@ -3591,6 +3672,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "northern-italy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5201,6 +5291,15 @@
         }
       ]
     },
+    "suipacha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "suomenlinna": {
       "from": "git",
       "versions": [
@@ -5319,6 +5418,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "the-downs": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5548,6 +5656,15 @@
         }
       ]
     },
+    "uruguay-q77": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "uss-missouri": {
       "from": "git",
       "versions": [
@@ -5584,6 +5701,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "venezuela-q717": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

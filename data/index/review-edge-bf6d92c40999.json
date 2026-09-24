@@ -6722,6 +6722,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "crossing-of-the-andes",
+      "id": "crossing-of-the-andes--battle-of-chacabuco--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-chacabuco",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "macqueen-1997-decolonization",
         "wikipedia-en"
       ],
@@ -11605,11 +11634,12 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "a13-contradicted"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "to": "2011-military-intervention-in-libya",
       "type": "reacted-to"
@@ -13234,6 +13264,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "operation-turquoise",
+      "id": "operation-turquoise--first-congo-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-congo-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "operation-unified-protector",
       "id": "operation-unified-protector--battle-of-tripoli-2011--precondition-of",
@@ -13446,6 +13505,35 @@
       "revised": null,
       "status": "active",
       "to": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "partition-of-india",
+      "id": "partition-of-india--india-pakistan-war-of-1971--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "india-pakistan-war-of-1971",
       "type": "precondition-of"
     },
     {
@@ -14125,6 +14213,36 @@
       "revised": null,
       "status": "active",
       "to": "japanese-instrument-of-surrender",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-24",
+      "from": "prelude-to-the-russian-invasion-of-ukraine",
+      "id": "prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "full-scale-russo-ukrainian-war",
       "type": "precondition-of"
     },
     {
@@ -15004,6 +15122,35 @@
       "revised": null,
       "status": "active",
       "to": "odz-insurrection",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "russo-japanese-war",
+      "id": "russo-japanese-war--revolution-in-the-kingdom-of-poland--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "revolution-in-the-kingdom-of-poland",
       "type": "precondition-of"
     },
     {
@@ -16178,11 +16325,12 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "a13-contradicted"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "to": "second-liberian-civil-war",
       "type": "reacted-to"
@@ -20404,6 +20552,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "war-of-attrition",
+      "id": "war-of-attrition--operation-badr-1973--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-badr-1973",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "war-of-attrition",
       "id": "war-of-attrition--yom-kippur-war--precondition-of",
@@ -20505,6 +20682,35 @@
       "status": "active",
       "to": "moscow-peace-treaty",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "wiriyamu-massacre-1972",
+      "id": "wiriyamu-massacre-1972--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "carnation-revolution-1974",
+      "type": "precondition-of"
     },
     {
       "authors": [

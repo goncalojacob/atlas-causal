@@ -2288,6 +2288,12 @@
     },
     {
       "dissent": false,
+      "id": "crossing-of-the-andes--battle-of-chacabuco--caused",
+      "kind": "edge",
+      "locator": "\"Crossing of the Andes\", revision 1374600996, § Conclusion"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution--angola-independence-1975--precondition-of",
       "kind": "edge",
       "locator": "\"Cuban Revolution\", revision 1373305240"
@@ -3427,6 +3433,12 @@
       "locator": "\"2011 military intervention in Libya\", revision 1370780938"
     },
     {
+      "dissent": true,
+      "id": "libyan-civil-war--2011-military-intervention-in-libya--reacted-to",
+      "kind": "edge",
+      "locator": "\"2011 military intervention in Libya\", revision 1370780938, lead"
+    },
+    {
       "dissent": false,
       "id": "libyan-civil-war--2012-malian-coup-d-etat--enabled",
       "kind": "edge",
@@ -3770,6 +3782,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-turquoise--first-congo-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Opération Turquoise\", revision 1357895302, § Implementation"
+    },
+    {
+      "dissent": false,
       "id": "operation-unified-protector--battle-of-tripoli-2011--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tripoli (2011)\", revision 1374512796, § Operation Mermaid Dawn plans and aims"
@@ -3845,6 +3863,12 @@
       "id": "partial-nuclear-test-ban-treaty--treaty-on-the-non-proliferation-of-nuclear-weapons--precondition-of",
       "kind": "edge",
       "locator": "\"Partial Nuclear Test Ban Treaty\", revision 1375345300, § Effects"
+    },
+    {
+      "dissent": false,
+      "id": "partition-of-india--india-pakistan-war-of-1971--precondition-of",
+      "kind": "edge",
+      "locator": "\"Indo-Pakistani war of 1971\", revision 1371969450, § Background"
     },
     {
       "dissent": false,
@@ -3995,6 +4019,12 @@
       "id": "potsdam-declaration--japanese-instrument-of-surrender--precondition-of",
       "kind": "edge",
       "locator": "\"Japanese Instrument of Surrender\", revision 1371613000, § lead; and \"Potsdam Declaration\", revision 1371052620, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Prelude to the 2022 Russian invasion of Ukraine\", revision 1370705034, lead and the closing narrative"
     },
     {
       "dissent": false,
@@ -4205,6 +4235,12 @@
       "id": "russo-japanese-war--odz-insurrection--precondition-of",
       "kind": "edge",
       "locator": "\"Łódź insurrection\", revision 1370751757, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "russo-japanese-war--revolution-in-the-kingdom-of-poland--precondition-of",
+      "kind": "edge",
+      "locator": "\"Revolution in the Kingdom of Poland (1905–1907)\", revision 1370706988, § Background"
     },
     {
       "dissent": false,
@@ -4469,6 +4505,18 @@
       "id": "sierra-leone-civil-war--second-liberian-civil-war--reacted-to",
       "kind": "edge",
       "locator": "\"Second Liberian Civil War\", revision 1373880319, § Background"
+    },
+    {
+      "dissent": true,
+      "id": "sierra-leone-civil-war--second-liberian-civil-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Liberian Civil War\", revision 1373880319, lead and § Background"
+    },
+    {
+      "dissent": true,
+      "id": "sierra-leone-civil-war--second-liberian-civil-war--reacted-to",
+      "kind": "edge",
+      "locator": "\"Sierra Leone Civil War\", revision 1375466974, lead"
     },
     {
       "dissent": false,
@@ -5732,6 +5780,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-attrition--operation-badr-1973--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810, lead"
+    },
+    {
+      "dissent": false,
       "id": "war-of-attrition--yom-kippur-war--precondition-of",
       "kind": "edge",
       "locator": "\"War of Attrition\", revision 1371500938, § Egyptian front"
@@ -5759,6 +5813,12 @@
       "id": "winter-war--moscow-peace-treaty--caused",
       "kind": "edge",
       "locator": "\"Moscow Peace Treaty\", revision 1355516673, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "wiriyamu-massacre-1972--carnation-revolution-1974--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mozambican War of Independence\", revision 1374663244, § Portuguese counter-offensive (June 1970)"
     },
     {
       "dissent": false,
@@ -6902,6 +6962,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-surrender-in-the-falklands-war",
+      "kind": "event",
+      "locator": "\"Argentine surrender in the Falklands War\", revision 1290880119"
+    },
+    {
+      "dissent": false,
       "id": "argentine-war-of-independence",
       "kind": "event",
       "locator": "\"Argentine War of Independence\", revision 1375018429"
@@ -7532,6 +7598,12 @@
     },
     {
       "dissent": false,
+      "id": "bluff-cove-air-attacks",
+      "kind": "event",
+      "locator": "\"Bluff Cove air attacks\", revision 1370604761"
+    },
+    {
+      "dissent": false,
       "id": "bohemian-revolt",
       "kind": "event",
       "locator": "\"Bohemian Revolt\", revision 1372461973"
@@ -7922,6 +7994,12 @@
     },
     {
       "dissent": false,
+      "id": "entente-cordiale",
+      "kind": "event",
+      "locator": "\"Entente Cordiale\", revision 1370844455"
+    },
+    {
+      "dissent": false,
       "id": "eritrean-civil-wars",
       "kind": "event",
       "locator": "\"Eritrean Civil Wars\", revision 1374058781"
@@ -8069,6 +8147,12 @@
       "id": "first-congo-war",
       "kind": "event",
       "locator": "\"First Congo War\", revision 1374918500"
+    },
+    {
+      "dissent": false,
+      "id": "first-franco-dahomean-war",
+      "kind": "event",
+      "locator": "\"First Franco-Dahomean War\", revision 1370619311"
     },
     {
       "dissent": false,
@@ -8624,6 +8708,12 @@
     },
     {
       "dissent": false,
+      "id": "kaocen-revolt",
+      "kind": "event",
+      "locator": "\"Kaocen revolt\", revision 1370625448"
+    },
+    {
+      "dissent": false,
       "id": "kapp-putsch",
       "kind": "event",
       "locator": "\"Kapp Putsch\", revision 1373832870"
@@ -9041,6 +9131,12 @@
       "id": "operation-serval",
       "kind": "event",
       "locator": "\"Operation Serval\", revision 1370699409"
+    },
+    {
+      "dissent": false,
+      "id": "operation-sutton",
+      "kind": "event",
+      "locator": "\"Operation Sutton\", revision 1374609063"
     },
     {
       "dissent": false,
@@ -9629,6 +9725,12 @@
       "id": "slavery-abolition-act-1833",
       "kind": "event",
       "locator": "\"Slavery Abolition Act 1833\", revision 1366633951"
+    },
+    {
+      "dissent": false,
+      "id": "slovak-hungarian-war",
+      "kind": "event",
+      "locator": "\"Slovak–Hungarian War\", revision 1370747590"
     },
     {
       "dissent": false,
@@ -10304,6 +10406,12 @@
     },
     {
       "dissent": false,
+      "id": "vienna-convention-for-the-protection-of-the-ozone-layer",
+      "kind": "event",
+      "locator": "\"Vienna Convention for the Protection of the Ozone Layer\", revision 1368435500"
+    },
+    {
+      "dissent": false,
       "id": "vietnam-war",
       "kind": "event",
       "locator": "\"Vietnam War\", revision 1373025356"
@@ -10379,6 +10487,12 @@
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
       "locator": "\"War of the Mantuan Succession\", revision 1374838991"
+    },
+    {
+      "dissent": false,
+      "id": "war-over-water",
+      "kind": "event",
+      "locator": "\"War over Water (Jordan River)\", revision 1370750282"
     },
     {
       "dissent": false,

@@ -114,6 +114,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -168,6 +177,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

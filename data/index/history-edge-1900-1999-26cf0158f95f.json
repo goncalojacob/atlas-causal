@@ -4011,6 +4011,15 @@
         }
       ]
     },
+    "operation-turquoise--first-congo-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "operation-verano--battle-of-santa-clara--enabled": {
       "from": "git",
       "versions": [
@@ -4076,6 +4085,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "partition-of-india--india-pakistan-war-of-1971--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4564,6 +4582,15 @@
         }
       ]
     },
+    "russo-japanese-war--revolution-in-the-kingdom-of-poland--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "russo-japanese-war--russian-revolution-of-1905--caused": {
       "from": "git",
       "versions": [
@@ -4905,6 +4932,14 @@
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "confidence",
+            "dispute",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5727,6 +5762,15 @@
         }
       ]
     },
+    "war-of-attrition--operation-badr-1973--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "war-of-attrition--yom-kippur-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -5760,6 +5804,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "wiriyamu-massacre-1972--carnation-revolution-1974--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

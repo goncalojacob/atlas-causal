@@ -1550,6 +1550,12 @@
     },
     {
       "dissent": false,
+      "id": "prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of",
+      "kind": "edge",
+      "locator": "Q110116635 P156 (followed by) Q110999040"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement--wuchang-uprising--enabled",
       "kind": "edge",
       "locator": "Q339291 P828 (has cause) Q5368776"

@@ -524,7 +524,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -1185,6 +1185,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "bolivia-q750",
+      "kind": "place",
+      "names": [
+        "Bolivia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q750, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "bosnia-and-herzegovina",
@@ -1776,6 +1804,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "central-europe",
+      "kind": "place",
+      "names": [
+        "Central Europe",
+        "Europa Central"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q27509, whose P625 is this point. Precision `region` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-03",
       "degree": 1,
       "id": "central-portugal",
@@ -2137,7 +2194,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "colombia-q739",
       "kind": "place",
       "names": [
@@ -2475,6 +2532,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "denmark-q35",
+      "kind": "place",
+      "names": [
+        "Denmark",
+        "Dinamarca"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q35, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -2774,6 +2860,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "ecuador-q736",
+      "kind": "place",
+      "names": [
+        "Ecuador",
+        "Equador"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q736, whose P625 is this point. Precision `country` from the item's own class.",
         "status": "draft"
       },
       "revised": null,
@@ -3253,6 +3368,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "france-q142",
+      "kind": "place",
+      "names": [
+        "France",
+        "França"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q142, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -3299,6 +3443,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "french-first-republic",
+      "kind": "place",
+      "names": [
+        "French First Republic",
+        "Primeira República Francesa"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q58296, whose P625 is this point. Precision `country` from the item's own class.",
         "status": "draft"
       },
       "revised": null,
@@ -3992,6 +4165,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "holy-roman-empire-q12548",
+      "kind": "place",
+      "names": [
+        "Holy Roman Empire",
+        "Sacro Império Romano-Germânico"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q12548, whose P625 is this point. Precision `country` from the item's own class.",
         "status": "draft"
       },
       "revised": null,
@@ -5366,6 +5568,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "lands-of-the-bohemian-crown",
+      "kind": "place",
+      "names": [
+        "Lands of the Bohemian Crown",
+        "Terras da Coroa da Boêmia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q686971, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "laos-q819",
@@ -6430,6 +6661,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "mexico-q96",
+      "kind": "place",
+      "names": [
+        "Mexico"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q96, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 3,
       "id": "middle-east",
@@ -7417,6 +7676,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "northern-italy",
+      "kind": "place",
+      "names": [
+        "Northern Italy",
+        "Norte da Itália"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q4345530, whose P625 is this point. Precision `region` from the item's own class.",
         "status": "draft"
       },
       "revised": null,
@@ -10745,6 +11033,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "suipacha",
+      "kind": "place",
+      "names": [
+        "Suipacha"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2890073, Battle of Suipacha, read on 2026-09-24; Suipacha itself has no item this pass could reach. The record carries no `wikidata` key for that reason: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "suomenlinna",
@@ -10956,6 +11272,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "the-downs",
+      "kind": "place",
+      "names": [
+        "the Downs"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q675999, Battle of the Downs, read on 2026-09-24; the Downs itself has no item this pass could reach. The record carries no `wikidata` key for that reason: a place claiming to be the battle would be a worse record than one claiming nothing.",
         "status": "draft"
       },
       "revised": null,
@@ -11449,6 +11793,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "uruguay-q77",
+      "kind": "place",
+      "names": [
+        "Uruguay",
+        "Uruguai"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q77, whose P625 is this point. Precision `country` from the item's own class.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "uss-missouri",
@@ -11525,6 +11898,34 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "venezuela-q717",
+      "kind": "place",
+      "names": [
+        "Venezuela"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q717, whose P625 is this point. Precision `country` from the item's own class.",
         "status": "draft"
       },
       "revised": null,
