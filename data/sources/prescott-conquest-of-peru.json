@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "prescott-conquest-of-peru",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "William H. Prescott"
+  ],
+  "title": "History of the Conquest of Peru",
+  "year": 2006,
+  "publisher": "BiblioBazaar",
+  "isbn": "142640042X",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work \"Battle of Punta Quemada\" cites for its whole account, at revision 1370586796, in this edition at pp. 96-102; \"Battle of Puna\" cites the same work, Digireads.com 2011, pp. 142-143. A nineteenth-century history, reprinted. Cited and not read."
+}

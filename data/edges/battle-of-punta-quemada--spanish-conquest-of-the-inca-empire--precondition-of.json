@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-punta-quemada--spanish-conquest-of-the-inca-empire--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Punta Quemada\", revision 1370586796"
+    },
+    {
+      "source": "prescott-conquest-of-peru",
+      "locator": "pp. 96-102"
+    }
+  ],
+  "from": "battle-of-punta-quemada",
+  "to": "spanish-conquest-of-the-inca-empire",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Punta Quemada article claims the link in its lead: \"Though it marked the end of Francisco Pizarro's first tentative expedition along the Pacific coast, the battle also represented a crucial step to Spain's discovery and conquest of the Peru.\" `precondition-of` and not `caused`: a crucial step towards a conquest begun seven years later is a condition of it, and the article argues nothing stronger. Probable, and with a second author: Prescott's History of the Conquest of Peru is the work the article rests on throughout, at pp. 96-102 for this battle.",
+  "dispute": null
+}

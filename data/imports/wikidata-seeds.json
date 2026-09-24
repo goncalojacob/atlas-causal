@@ -1210,7 +1210,19 @@
     "Q122056040",
     "Q2890640",
     "Q932845",
-    "Q4677243"
+    "Q4677243",
+    "Q16473372",
+    "Q230602",
+    "Q2117213",
+    "Q916382",
+    "Q3636661",
+    "Q1612814",
+    "Q3636517",
+    "Q2338569",
+    "Q1612597",
+    "Q3119074",
+    "Q1615387",
+    "Q3636591"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1454,7 +1466,8 @@
     "Q923340": "africa",
     "Q108102583": "asia",
     "Q483039": "asia",
-    "Q20934": "asia"
+    "Q20934": "asia",
+    "Q3119074": "americas"
   },
   "queries": [
     {
@@ -5043,6 +5056,12 @@
       "precision": "city",
       "label": "district of China",
       "note": "Added in M42 batch 47 from the other class Q623329, Lüshunkou, names. The label and the description — \"administrative division of the People's Republic of China\" — are read from the item itself over the network. `city` and not `region` because a district of China sits below a prefecture-level city and is settlement-scale, which is what Lüshunkou is; it agrees with Q7930989 on the same item, so `classify()` reads one precision and not a disagreement."
+    },
+    "Q839954": {
+      "kind": "place",
+      "precision": "point",
+      "label": "archaeological site",
+      "note": "Added in M42b batch 19, the Spanish conquest vein of the Americas' 16th century. The label and the gloss are read from the class item itself over the network: Wikidata's own description is \"place (or group of physical sites) in which evidence of past activity is preserved\", which is A12 C2's \"point\" — the precision it names for a battlefield or a site — and not a settlement."
     }
   },
   "reconcile": true

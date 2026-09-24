@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ollantaytambo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2338569",
+  "wikipedia": {
+    "en": "Battle of Ollantaytambo"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2338569"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ollantaytambo\", revision 1376074803"
+    }
+  ],
+  "title": "Battle of Ollantaytambo",
+  "summary": "The English Wikipedia article \"Battle of Ollantaytambo\", at revision 1376074803, opens: \"The Battle of Ollantaytambo took place in January 1537, between the forces of Inca emperor Manco Inca and a Spanish expedition led by Hernando Pizarro during the Spanish conquest of Peru. A former ally of the Spaniards, Manco Inca rebelled in May 1536, and besieged a Spanish garrison in the city of Cusco. To end the stand-off, the besieged mounted a raid against the emperor's headquarters in the town of Ollantaytambo. The expedition, commanded by Hernando Pizarro, included 100 Spaniards and some 30,000 Indian auxiliaries against an Inca army of more than 20,000.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2338569, imported by tools/import/wikidata.mjs. The item's own description reads \"1537 battle in the Spanish conquest of the Inca Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1537,
+    "end": 1537,
+    "date": "1537-01"
+  },
+  "place": "ollantaytambo",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": []
+}
