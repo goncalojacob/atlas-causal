@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "philippeville-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6889422",
+  "wikipedia": {
+    "en": "Philippeville massacre",
+    "pt": "Batalha de Philippeville"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6889422"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Philippeville massacre\", revision 1371790989"
+    }
+  ],
+  "title": "Philippeville massacre",
+  "summary": "The English Wikipedia article \"Philippeville massacre\", at revision 1371790989, opens: \"The Philippeville massacre, also known as the Battle of Philippeville or the August Offensive, was a series of raids launched on 20 August 1955 on various cities and towns of the Constantine region by FLN insurgents and armed mobs during the Algerian War between France and the Algerian rebels. The raids, which mostly took the form of ethnic riots, resulted in the massacre of several dozens of European settlers, known as pieds-noirs. The massacres were then followed by reprisals by the French Army and pied-noir vigilantes, which resulted in the death of several thousand Muslim Algerians. The events of late August 1955 in the Constantinois region are considered to be a major turning point of the Algerian War.\" Wikidata item Q6889422, whose own description reads \"1955 attack in the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1955,
+    "end": 1955,
+    "date": "1955-08-20",
+    "endDate": "1955-08-25"
+  },
+  "place": "skikda",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "war",
+  "actors": []
+}

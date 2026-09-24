@@ -1238,7 +1238,23 @@
     "Q684324",
     "Q138107",
     "Q2724511",
-    "Q179250"
+    "Q179250",
+    "Q2292517",
+    "Q984575",
+    "Q2522066",
+    "Q958423",
+    "Q312019",
+    "Q6889422",
+    "Q5454129",
+    "Q3052126",
+    "Q76832368",
+    "Q2909612",
+    "Q137752577",
+    "Q2888071",
+    "Q273017",
+    "Q1471139",
+    "Q2605231",
+    "Q3002737"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5090,6 +5106,47 @@
       "precision": "region",
       "label": "bay",
       "note": "Added in M42b batch 20. Wikidata's own description, read off the class item, is 'body of water connected to an ocean or lake, formed by an indentation of the shoreline': an area of water and not a point on the ground, so the coarse precision PRECISIONS gives a region, as batch 18 gave the Bay of All Saints."
+    },
+    "Q2989398": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Algeria",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A commune is Algeria's third-level division and is a settlement, so it takes the precision a settlement takes."
+    },
+    "Q2983893": {
+      "kind": "place",
+      "precision": "city",
+      "label": "quarter",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A quarter is a subclass of human settlement and is smaller than one, never larger; Bab El Oued names it beside the commune and the two agree."
+    },
+    "Q41067667": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Tunisia",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of municipality, which is the same coarseness as a commune."
+    },
+    "Q678146": {
+      "kind": "event",
+      "category": "war",
+      "label": "bombardment",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military attack; the category is the one every military operation class here already carries."
+    },
+    "Q680838": {
+      "kind": "event",
+      "category": "war",
+      "label": "ambush",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, which Q645883 already reads as an event of category war."
+    },
+    "Q2001676": {
+      "kind": "event",
+      "category": "war",
+      "label": "offensive",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, as Q645883 is."
+    },
+    "Q3002772": {
+      "kind": "event",
+      "label": "political crisis",
+      "note": "Added in M42 batch 48 from the class the May 1958 crisis item names, read off the class item itself over the network: a subclass of crisis and of political event. No category, because none of the twelve of data/categories.json is a political crisis — a person sets it if one fits."
     }
   },
   "reconcile": true

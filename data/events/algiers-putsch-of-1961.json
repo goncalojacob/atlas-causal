@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "algiers-putsch-of-1961",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2605231",
+  "wikipedia": {
+    "en": "Algiers putsch of 1961",
+    "pt": "Putsch dos Generais"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2605231"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algiers putsch of 1961\", revision 1370427908"
+    }
+  ],
+  "title": "Algiers putsch of 1961",
+  "summary": "The English Wikipedia article \"Algiers putsch of 1961\", at revision 1370427908, opens: \"The Algiers putsch, also known as the putsch of the generals, was a failed coup d'état intended to force French President Charles de Gaulle not to abandon French Algeria, the resident European community and pro-French Algerians. Organised in French Algeria by retired French Army generals Maurice Challe, Edmond Jouhaud, André Zeller and Raoul Salan, it took place from the afternoon of 21 to 26 April 1961 in the midst of the Algerian War (1954–1962) and brought the nation to the brink of a civil war.\" Wikidata item Q2605231, whose own description reads \"1961 attempted coup in French Algeria during the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-04-21"
+  },
+  "place": "french-algeria",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "revolution",
+  "actors": []
+}

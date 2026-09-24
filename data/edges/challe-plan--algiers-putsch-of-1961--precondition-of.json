@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "challe-plan--algiers-putsch-of-1961--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Challe Plan\", revision 1370610721, § Aftermath"
+    }
+  ],
+  "from": "challe-plan",
+  "to": "algiers-putsch-of-1961",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Challe Plan article's § Aftermath carries the offensive into the revolt of the men who fought it. \"The Challe plan, despite military success, failed to achieve its ultimate goal and the FLN were not defeated. For political reasons, the offensive was halted by De Gaulle... The war, by this stage, had become an international embarrassment and a drain on France's economy. De Gaulle therefore put his efforts into seeking a political solution. The Colons and part of the army resisted this move, which nearly resulted in a civil war; Challe himself was one of the heads of the Algiers Putsch, along with Raoul Salan.\" `precondition-of`: the article makes the halted offensive and the political turn after it the setting of the putsch, and names the plan's own commander at its head; it does not say the plan caused the coup. Probable: Wikipedia alone.",
+  "dispute": null
+}

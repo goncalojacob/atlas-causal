@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "evian-accords",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "participants-from-p710"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1471139",
+  "wikipedia": {
+    "en": "Évian Accords",
+    "pt": "Acordos de Évian"
+  },
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1471139"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Évian Accords\", revision 1372137587"
+    }
+  ],
+  "title": "Évian Accords",
+  "summary": "The English Wikipedia article \"Évian Accords\", at revision 1372137587, opens: \"The Évian Accords were a set of declarations between the French Government and the Provisional Government of the Algerian Republic on 18 March 1962 in Évian-les-Bains which outlined the agreements for Algeria's Independence alongside cooperation with France. The Accords consisted of five chapters which detailed the guarantees and principals of this Independence. The Accords ended the Algerian War with a cease-fire that was declared on the 19th March 1962, and effectively formalised the status of Algeria as an independent nation.\" Wikidata item Q1471139, whose own description reads \"treaty signed by France and the Provisional Government of the Algerian Republic to end the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1962,
+    "end": 1962,
+    "date": "1962-03-18"
+  },
+  "place": "evian-les-bains",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "treaty",
+  "actors": [
+    {
+      "actor": "france",
+      "role": "signatory",
+      "note": "The item names Q142, France, as a participant (P710). The other it names, Q3100531, the Provisional Government of the Algerian Republic, is not a record here."
+    }
+  ]
+}

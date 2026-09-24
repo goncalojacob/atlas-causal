@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 380 of 879 |
+| **after M42** | 36 of 36 | 382 of 883 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -282,7 +282,7 @@ those lines is `croatian-war-of-independence` naming `croatia`. The war runs
 **1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
 war *overlaps* the polity without the polity being alive in the year the war
 started. Counted by the rule this table states — alive at the start — the
-figure is **380**; counted by overlap it is **381**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name, both rose by two in M42b batch 8, which gave `battle-of-cajamarca` and `siege-of-cusco` the `inca-empire` their items name as a participant and this atlas already held, both rose by one in M42b batch 9, which gave `guarani-war` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670) and this atlas has held since M53, both rose by one again in M42's batch 40, whose `P710` pass gave `rhodesian-bush-war` the two participants its item names and this atlas holds, and by one again in M42's batch 42, whose `P710` pass gave `operation-green-sea` the three its item names, by three again in M42's batch 43, whose `P710` pass gave `operation-odyssey-dawn` twelve participants, `2003-invasion-of-iraq` five and `india-pakistan-war-of-1971` two, by one again in M42's batch 44, whose `P710` pass gave `battle-of-inchon` the one participant its item names and this atlas holds, and by one again in M42b batch 13, which gave `first-treaty-of-san-ildefonso` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670), and both rose by one again in M42's batch 47, whose `P710` pass gave `battle-of-port-arthur` the two participants its item names — the Empire of Japan and the Russian Empire, read as `japan` and `russian-empire`, which is how `russo-japanese-war` itself already reads the same two items; the **gap** is still the one entry this paragraph is about, and `croatian-war-of-independence` is still the only event the two rules disagree about. **Both rose by one again on 24 September, when A14(6) divided `the-holocaust` into `the-persecution-of-the-jews-1933-1941` and `the-extermination-of-the-jews-1941-1945`: one record naming `nazi-germany` became two, and the active corpus rose by one with it.**
+figure is **382**; counted by overlap it is **383**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name, both rose by two in M42b batch 8, which gave `battle-of-cajamarca` and `siege-of-cusco` the `inca-empire` their items name as a participant and this atlas already held, both rose by one in M42b batch 9, which gave `guarani-war` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670) and this atlas has held since M53, both rose by one again in M42's batch 40, whose `P710` pass gave `rhodesian-bush-war` the two participants its item names and this atlas holds, and by one again in M42's batch 42, whose `P710` pass gave `operation-green-sea` the three its item names, by three again in M42's batch 43, whose `P710` pass gave `operation-odyssey-dawn` twelve participants, `2003-invasion-of-iraq` five and `india-pakistan-war-of-1971` two, by one again in M42's batch 44, whose `P710` pass gave `battle-of-inchon` the one participant its item names and this atlas holds, and by one again in M42b batch 13, which gave `first-treaty-of-san-ildefonso` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670), and both rose by one again in M42's batch 47, whose `P710` pass gave `battle-of-port-arthur` the two participants its item names — the Empire of Japan and the Russian Empire, read as `japan` and `russian-empire`, which is how `russo-japanese-war` itself already reads the same two items; the **gap** is still the one entry this paragraph is about, and `croatian-war-of-independence` is still the only event the two rules disagree about. **Both rose by one again on 24 September, when A14(6) divided `the-holocaust` into `the-persecution-of-the-jews-1933-1941` and `the-extermination-of-the-jews-1941-1945`: one record naming `nazi-germany` became two, and the active corpus rose by one with it.** **Both rose by two again in M42's batch 48, whose `P710` pass gave `challe-plan` and `evian-accords` the one participant their items name and this atlas holds — `Q142`, France, read as `france`; the other party each names, the ALN and the Provisional Government of the Algerian Republic, is not a record here. The active corpus rose by ten with the batch.**
 
 Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
 recognition date and not the date a state began fighting for itself, and
@@ -355,15 +355,7 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands** — M42b's batch 21 of 24 September takes the denominator to 879 and leaves the numerator at
-**380**: its six conflicts of the Napoleonic Wars arrived with `actors: []`, and
-three of the six name a `P710` at all — `Q249232` seven participants, of which
-the atlas holds one (`Q34` Sweden, as `sweden`), `Q179250` two, of which it
-holds neither (`Q34266` the Russian Empire, `Q71084` the First French Empire),
-and `Q605977` three people rather than polities. The rule takes `P710` only
-where the atlas holds every participant the item names, so none of the three
-qualified. `Q34266` and `Q71084` join the polity list of `docs/m42b-pool.md`,
-which stands at thirteen. M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
+rewritten as each of that milestone's batches lands** — M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
 **379** again, and for two reasons this time: two of its four items carry no
 `P710` at all (`Q932845` the siege of Salvador and `Q122056040` the action in
 the Bay of São Salvador), and the other two name `Q170072` the Dutch Republic,
