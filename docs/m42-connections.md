@@ -4850,3 +4850,59 @@ the Algerian War"* — the reading is the article's and not the item's, which
 states no `P361` at all, and the record's `review.note` says so. Without the
 filing it would have been the 243rd main event, which A6 forbids; with it, the
 one French record of an Africa batch sits where the source puts it.
+
+## Batch 49 — the Russo-Japanese War finished as a chain
+
+*24 September, the import fire that picked the run up at 10:46Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Asia** at the
+front, trailing at 143 against Europe's 377. The full note, the refusals and
+the counts are in `docs/m42-pool.md` under "Batch 49".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-chemulpo-bay` → `battle-of-the-yalu-river-1904` | `enabled` | *"After the success of the Imperial Japanese Navy at the Battle of Chemulp'o Bay on 9 February 1904, the way was clear for the Imperial Japanese Army to deploy the 2nd, the 12th, and the Guards Divisions of the Japanese 1st Army ... into Korea."* — "Battle of Yalu River", revision 1370602766, § Background |
+| `battle-of-nanshan` → `battle-of-te-li-ssu` | `reacted-to` | *"After the loss to the Japanese at the Battle of Nanshan, the Russian Viceroy Yevgeni Alekseyev came under extreme political pressure to make a military advance"*, and *"General Kuropatkin was reluctantly forced to mount an offensive from Liaoyang in the general direction of Port Arthur"* — "Battle of Te-li-Ssu", revision 1370590724, § Background |
+| `battle-of-te-li-ssu` → `battle-of-tashihchiao` | `precondition-of` | *"the 1st Siberian Army Corps under Lieutenant General Georg von Stackelberg (consisting of surviving forces from the disaster at Telissu, which had retreated north towards Liaoyang, but which had received new orders diverting them to Kaiping)"* — "Battle of Tashihchiao", revision 1370590643, § Preparations by the Russians |
+| `battle-of-tashihchiao` → `battle-of-liaoyang` | `precondition-of` | *"The town of Tashihchiao was of strategic importance ... Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden."* — same article and revision, first section |
+| `battle-of-the-yellow-sea` → `battle-off-ulsan` | `reacted-to` | *"A telegram from the First Pacific Squadron at Port Arthur reached Vladivostok on the afternoon of 11 August 1904, stating that Admiral Wilgelm Vitgeft had decided to attempt to break through the Japanese blockade, and therefore Vice Admiral Jessen was ordered to sortie the Vladivostok Cruiser Squadron to assist."* — "Battle off Ulsan", revision 1370603310, § Sortie |
+| `battle-of-liaoyang` → `battle-of-shaho` | `reacted-to` | *"After the Battle of Liaoyang the situation for General Alexei Kuropatkin ... became increasingly unfavorable ... Although he needed to reverse the tide of the war"* — "Battle of Shaho", revision 1370589119, § Background; and *"the Japanese had failed to take advantage of their victory at Liaoyang, allowing the Russians to retreat in good order and to soon launch a counterattack during the Battle of Shaho"* — "Battle of Mukden", revision 1375786749, § Background |
+| `battle-of-shaho` → `battle-of-sandepu` | `precondition-of` | *"the Japanese advance on Mukden was paused, as both sides dug in to prepare for the next confrontation at the Battle of Sandepu (Heikoutai)"* — "Battle of Shaho", revision 1370589119, § Aftermath |
+| `siege-of-port-arthur` → `battle-of-sandepu` | `reacted-to` | *"[Kuropatkin] was concerned about the impending arrival of the battle-hardened Japanese Third Army under General Nogi Maresuke to the front after the fall of Port Arthur on 2 January 1905"*, and *"Kuropatkin issued orders for the Second Manchurian Army to attack ... before Nogi's Third Army could arrive"* — "Battle of Sandepu", revision 1370588463, § Background and § The Battle of Sandepu |
+| `japanese-invasion-of-sakhalin` → `treaty-of-portsmouth` | `enabled` | *"Roosevelt agreed with the Japanese assessment that the invasion and occupation of Sakhalin was now necessary, as only the threat of direct loss of Russian territory would bring Tsar Nicholas II to consider a negotiated settlement to the war."* — "Japanese invasion of Sakhalin", revision 1371432298, § Background |
+
+All nine are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **All four `reacted-to` run from the earlier record to the later
+one**, which is rule 4's arrow of time and the reading batch 48 wrote down:
+the atlas's `reacted-to` says *the later record answered the earlier one*. All
+four were first written the other way round, on the sense of the English verb,
+and rule 4 refused all four in one run — which is the validator doing exactly
+what it is for, and is deviation 953.
+
+**`japanese-invasion-of-sakhalin --enabled--> treaty-of-portsmouth` is the
+third branch into that endpoint**, beside `battle-of-tsushima --caused-->` and
+batch 47's `battle-of-mukden --enabled-->`. The three are not a repetition:
+Tsushima destroyed the fleet, Mukden took the field, and the invasion is the
+one the article names as the thing that would bring the Tsar to the table —
+*"only the threat of direct loss of Russian territory"*. A convergence of three
+independently argued branches on one treaty is the query this atlas was built
+around, and it now exists in the data.
+
+**Two refusals, both chronology with no claim in it.** The Battle off Ulsan's
+lead says it took place *"four days after the Battle of the Yellow Sea"*, which
+is a date and not an argument; the edge written instead rests on the telegram in
+§ Sortie, which says why the squadron was at sea. The Japanese invasion of
+Sakhalin's § Background says the plan was reconsidered *"On 7 June 1905, shortly
+after the Battle of Tsushima"* — the same shape as the eleven "Following" quotes
+A14 (4) read again and dropped nine of, so `battle-of-tsushima →
+japanese-invasion-of-sakhalin` was not written. What the article does claim
+about the invasion is its purpose, and that is the edge above.
+
+**A third was refused on its own reading.** The Battle of Chemulpo Bay's
+§ Background puts it and the Battle of Port Arthur in one action — *"The opening
+stage of the Russo-Japanese War began with a pre-emptive strike by the Imperial
+Japanese Navy against the Russian Pacific Fleet spread among Port Arthur,
+Vladivostok, and Chemulpo Bay"* — which makes them two halves of one strike
+fought a day apart, and that is a filing under the war and not a cause between
+them. The edge Chemulpo earns is the one the Yalu article argues, a month later
+and in another country.

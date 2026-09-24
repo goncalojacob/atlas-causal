@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-chemulpo-bay--battle-of-the-yalu-river-1904--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yalu River\", revision 1370602766, § Background"
+    }
+  ],
+  "from": "battle-of-chemulpo-bay",
+  "to": "battle-of-the-yalu-river-1904",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Yalu article's § Background makes the claim itself: \"After the success of the Imperial Japanese Navy at the Battle of Chemulp'o Bay on 9 February 1904, the way was clear for the Imperial Japanese Army to deploy the 2nd, the 12th, and the Guards Divisions of the Japanese 1st Army, commanded by Major-General Baron Tamemoto Kuroki, into Korea.\" `enabled` is what \"the way was clear for\" says: the landing the sea battle opened is the army that fought on the Yalu. Probable: Wikipedia alone.",
+  "dispute": null
+}

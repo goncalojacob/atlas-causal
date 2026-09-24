@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "japanese-invasion-of-sakhalin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4538445",
+  "wikipedia": {
+    "en": "Japanese invasion of Sakhalin"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4538445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298"
+    }
+  ],
+  "title": "Japanese invasion of Sakhalin",
+  "summary": "The English Wikipedia article \"Japanese invasion of Sakhalin\", at revision 1371432298, opens: \"The Japanese invasion of Sakhalin was the last land battle of the Russo-Japanese War, and took place from 7 July to 31 July 1905.\" Wikidata item Q4538445, whose own description reads \"1905 battle of the Russo-Japanese War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1905,
+    "end": 1905,
+    "date": "1905-07-07",
+    "endDate": "1905-07-31"
+  },
+  "place": "sakhalin",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

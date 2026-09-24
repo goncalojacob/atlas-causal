@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-shaho--battle-of-sandepu--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shaho\", revision 1370589119, § Aftermath"
+    }
+  ],
+  "from": "battle-of-shaho",
+  "to": "battle-of-sandepu",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Shaho's § Aftermath names the next battle as the thing its own stalemate set up: \"the Japanese advance on Mukden was paused, as both sides dug in to prepare for the next confrontation at the Battle of Sandepu (Heikoutai).\" Sandepu's § Background says it from its own side: \"After the Battle of Shaho, the Russian and Japanese forces faced each other south of Mukden until the frozen Manchurian winter began.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-te-li-ssu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2619692",
+  "wikipedia": {
+    "en": "Battle of Te-li-Ssu"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2619692"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Te-li-Ssu\", revision 1370590724"
+    }
+  ],
+  "title": "Battle of Te-li-Ssu",
+  "summary": "The English Wikipedia article \"Battle of Te-li-Ssu\", at revision 1370590724, opens: \"The Battle of Te-li-ssu, also called Battle of Wafangou after the nearby railway station, was a land battle of the Russo-Japanese War. The battle was fought on 14–15 June 1904 between the Japanese Second Army under General Oku Yasukata and the Russian First Siberian Army Corps under Lieutenant General Georgii Stackelberg, at a hamlet some 80 mi (130 km) north of Port Arthur, Manchuria. The battle resulted in a Japanese victory.\" Wikidata item Q2619692, whose own description reads \"1904 battle of Russo-Japanese war\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-06-14",
+    "endDate": "1904-06-15"
+  },
+  "place": "te-li-ssu",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

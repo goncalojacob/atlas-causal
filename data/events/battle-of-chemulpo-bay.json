@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-chemulpo-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1192118",
+  "wikipedia": {
+    "en": "Battle of Chemulpo Bay",
+    "pt": "Batalha da Baía de Chemulpo"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1192118"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chemulpo Bay\", revision 1370436979"
+    }
+  ],
+  "title": "Battle of Chemulpo Bay",
+  "summary": "The English Wikipedia article \"Battle of Chemulpo Bay\", at revision 1370436979, opens: \"The Battle of Chemulpo Bay was a naval battle in the Russo-Japanese War (1904–1905), which took place on 9 February 1904, off the coast of present-day Incheon, Korea.\" Wikidata item Q1192118, whose own description reads \"1904 battle of the Russo-Japanese War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-02-09"
+  },
+  "place": "chemulpo-bay",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "japan",
+      "role": "belligerent",
+      "note": "Q1192118 gives the Empire of Japan as a participant"
+    },
+    {
+      "actor": "russian-empire",
+      "role": "belligerent",
+      "note": "Q1192118 gives the Russian Empire as a participant"
+    }
+  ]
+}

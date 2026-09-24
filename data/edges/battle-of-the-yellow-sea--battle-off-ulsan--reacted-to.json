@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yellow-sea--battle-off-ulsan--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle off Ulsan\", revision 1370603310, § Sortie"
+    }
+  ],
+  "from": "battle-of-the-yellow-sea",
+  "to": "battle-off-ulsan",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Ulsan's § Sortie: \"A telegram from the First Pacific Squadron at Port Arthur reached Vladivostok on the afternoon of 11 August 1904, stating that Admiral Wilgelm Vitgeft had decided to attempt to break through the Japanese blockade, and therefore Vice Admiral Jessen was ordered to sortie the Vladivostok Cruiser Squadron to assist.\" The breakout that telegram reports is the Battle of the Yellow Sea, and the sortie ordered in answer to it is the squadron Kamimura caught off Ulsan. The lead's \"four days after the Battle of the Yellow Sea\" would be chronology and no claim; this sentence is the claim. Probable: Wikipedia alone.",
+  "dispute": null
+}
