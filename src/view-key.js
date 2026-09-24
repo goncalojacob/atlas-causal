@@ -124,6 +124,11 @@ export const TIMELINE_ROWS = Object.freeze([
   { shape: 'rect', classes: 'bar', ring: true, label: 'opens into more' },
   { shape: 'rect', classes: 'bar instant', narrow: true, label: 'one day' },
   { shape: 'rect', classes: 'bar ongoing', label: 'no end in the record' },
+  // The two ends of the link the reader has opened (M87 §8). The map draws that
+  // link as a line and needs no row for it; here there is no line to draw
+  // between two rows, so what says it is the ink on the two bars — and a colour
+  // nobody explains is a colour a reader invents a meaning for.
+  { shape: 'rect', classes: 'bar chosen', label: 'an end of the link you opened' },
 ]);
 
 // One row's shape, drawn into the little `<svg>` the box gives it. A mark is a

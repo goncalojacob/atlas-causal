@@ -21857,6 +21857,268 @@ Wikipedia disowning the item's `P276`, and its infobox says the opposite
 (**deviation 1253**). `docs/m42b-pool.md` → "Batch 19" and "Batch 20" are the
 full account.
 
+## M87 — what breaks at 3,000 events
+
+Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
+(`docs/review-2026-09-24.md`): part B's findings 4 to 11, part A's 5, and part
+C's 2, 9 and 15 where the fix is code — the structural half of what the review
+found, the half that is linear in a corpus growing by about a hundred records a
+day. **All twelve sections are done and none was refused.** No record was
+written, no historical claim was made, no new hex value, token or type size was
+added, `emphasis.js`'s `shown` contract is untouched, and **nothing under
+`data/` changed at all**: §10's warning is disk-only and §12's `refused` map is
+a key the schema now allows and the tool will write, not one written by hand.
+`validate --index` is clean: 12,117 records, 0 errors, 505 warnings — twelve of
+them §10's new `span-vs-lead-sentence`, which is the whole of the difference
+from M86's 493.
+
+The three numbers the brief asked for, measured on this container:
+
+- **First paint's redraws.** At the whole span, counted through a hook on the
+  map's own matrix: **17 drawings for 12 attribute shards before, 7 after.**
+- **The timeline's height at the whole span**, 1280 × 800: **2,696 px of
+  drawing in a 676 px pane before, 676 px in 676 after** — 26 rows, 242 bars
+  and the 56 titles that have room.
+- **The browser suite's wall time**, 37 files run one at a time:
+  **8m29s before, 6m46s–7m13s after** over three runs (§4's own pair was
+  8m29s → 6m46s; the container is noisy and the range is what it gave).
+
+Two pictures: `docs/screens/m87-map-phone.png` and `m87-graph-phone.png`, which
+are §9. Every other picture `tools/screens.mjs` rewrote — 26 of them, because
+§2 and §9 change what most of them show — was restored, as the brief asks.
+
+The suite: **2,114 tests, none skipped** (1,819 pure in 3m21s, 295 browser in
+7m13s), against M86's 2,096.
+
+### 1 — first paint is one redraw per frame, not one per shard (B4)
+
+The atlas opens on the whole span since M85, so `attributeShardsIn` returns
+every shard the build wrote — twelve files today, one more with every century
+the corpus grows into — and each landing ran `remeasure()` (the map's cluster
+pass and label round, the timeline's full repack, the graph's label round, the
+band, the masthead), `panel.refresh`, the chips, the intro and the composer,
+with `reindexRecords()` before it. Twelve of everything inside the first
+second, on every visit.
+
+`shardLanded` is coalesced per animation frame exactly as `baseArrived` is in
+`map.js`, and `loadAttributes` takes a `batch` flag: the bulk ask fills the rows
+as each file lands and rebuilds the eight joins once for the frame's whole
+arrival, holding the promise until that settle so no caller is handed rows and
+joins that disagree. The panel's own asks and `record()`'s are unbatched and
+settle inside their own resolution, which is what they did before. The cap's
+eviction stays in the fill, because how many shards are held is an invariant and
+one that is true a frame later is not.
+
+And the redundant second ask for every shard a frame after `holdWindow` had
+asked for them (B11) is gone; what is left is that line's own purpose, the
+centuries a named window does not cover.
+
+### 2 — the timeline's rows are capped to the pane (B5)
+
+`rowLanes` packed one row per title with no ceiling — M77's rule, and correct at
+a corpus of a hundred events. At 242 main events it is 112 rows at 1280 px,
+repacked whole on every `pointermove` of the band, and linear: at 3,000 events,
+nine thousand pixels.
+
+The packing is tried M77's way first and, only where that does not fit the pane,
+packed again into the rows the pane holds at the floor a title is legible in.
+The second pack reserves no room for the titles, because room kept for a name
+that will not be written is room a neighbouring bar could have had; past the cap
+a name is written where it fits and not at all where it does not, as the graph
+writes only the names that fit, and a bar with no label still carries its own
+title under the pointer. What the reader is holding claims its room first, so
+the one name on a row they came for cannot be lost to a neighbour. Nothing is
+packed away behind a count: no `+N`, no stack, which is the half of M77 this
+does not touch and which its own test now asserts on a picture whose rows fit.
+
+### 3 — the lane-walk test settles on the shards (B6)
+
+`tests/keyboard-browser.test.mjs` waited until the lane, x and id of every bar
+were the same on two polls 50 ms apart — 50 ms of stillness, which any two shard
+landings further apart satisfy, and on a loaded runner they routinely are. It
+waits for every attribute shard the fixture manifest lists now, through
+`settledShards`, and then for the packing to be the same across an animation
+frame inside the page. The assertions are unchanged.
+
+### 4 — one Chromium per file (B7)
+
+Every test launched its own browser with its own profile: 250 launches per CI
+run, each polling `/json/list` until a page appeared, each paying the cold start
+the 60-second deadline exists to survive. One browser per file now, closed by
+the root `after` hook, with a `Target.createBrowserContext` and a
+`Target.createTarget` per test — an incognito context shares no cache, no
+storage and no cookies, which is the isolation the fresh profile gave. Keyed by
+the browser's flags and window size, because both are command-line and neither
+can be changed afterwards.
+
+`--remote-debugging-port=0` and the `DevTools listening on ws://…` line Chromium
+prints on stderr, which `said` was already capturing: the endpoint cannot race a
+port another process took, and the 100 ms poll is gone.
+
+**8m29s before, 6m46s after** on the pair either side of this section.
+
+### 5 — waits that say what they waited for (B8)
+
+154 of the browser tests open the live corpus, whose first paint grows with it,
+and four private copies of a "settled" loop polled a resource count forty times
+and then returned whether or not anything had settled. `settledShards(page,
+manifest)` in `browser.mjs` is the one wait, keyed on the manifest's own shard
+count and failing with "N of M attribute shards arrived"; `manifestFor(page)`
+reads which corpus the page opened, so a call site does not have to remember
+whether its own URL said `?fixtures=1`. The base map's wait in `m45b` and the
+band's profile wait in `m76` are `waitFor`s with a message, settling across a
+frame inside the page, and `panel-browser`'s three bare hundred-try loops say
+what they were waiting for.
+
+### 6 — the last source-grepping test (B9)
+
+`tests/m82.test.mjs` read `src/map/map.js` as text and held A5's rule by the
+class name not appearing in the file. `tests/m82-browser.test.mjs` asserts it on
+the drawing: no `.map-unplaced` on the map, the window control's sentence in the
+masthead with a count read off the page, and the corner the map writes its own
+notes in still there.
+
+### 7 — `lensView` consults its cache first (B10)
+
+The stamp `lensView`'s memo is keyed on was built out of `activeFoci`, which for
+an actor, a place, a region, a source or a narrative walks every active event
+before the cache is ever asked — on every one of the ten or so `lensView` calls
+a state change makes, and on every `pointermove` of a band drag. `activeFoci`
+keeps its own answer per state object now, weakly, with a stamp of the three
+things outside the state that can change it: the grounds file, the territorial
+join, and the count of attribute-shard arrivals. None of the three needs the
+foci to read, so the lookup comes first. Only where the atlas can say when it
+has changed — an atlas built by hand in a test has no arrival count, and a memo
+that could not see it move would be one that went stale in silence.
+
+### 8 — three small ones (B11)
+
+The graph rendered twice on `?view=graph`: `createGraphView` draws inside its
+own constructor, for the pane `showView` has just unhidden, and `showView` then
+forced it again. A view just built is not a view that came back.
+
+A chosen link had no mark on the timeline. The map draws it as a madder line
+between its two marks and both ends are kept by the lens, but `src/timeline.js`
+had no notion of `edge` at all. The two bars carry `working.chosen`'s own word
+now, stroked with the same token the map's line is, and the key has a row for
+it.
+
+The stale comment and the redundant shard request landed with §1.
+
+### 9 — the phone's picture (A5)
+
+The map's `<svg>` carries a 960 × 540 viewBox and no `preserveAspectRatio`, so
+fitted to a 390-pixel pane's width the world can never be taller than 56 % of
+it: the 220-pixel band with 3-pixel marks and empty ground beneath it the review
+was looking at. Under the phone breakpoint it is `xMidYMid slice` and fitted to
+the pane's height — the poles are cropped, which is a strip of ice for a picture
+nearly three times the size. An attribute and not a stylesheet rule, because CSS
+has no property for it; the breakpoint is `view-key.js`'s `PHONE`, the one the
+stylesheet already draws at.
+
+The graph's names were about four pixels tall there, because the picture is
+scaled to its pane and the text is scaled with it. Nothing under eight pixels on
+screen is drawn now, except what the reader has open and the one hop around it.
+One rule at every width, from what the pane makes of `LABEL_SIZE`.
+
+### 10 — the validator reads the lead's first sentence (C2)
+
+`span-vs-article-title` reads titles, and most articles do not put their years
+in their title: the review found fifteen records contradicting the year range in
+the first sentence of the very lead their own summary quotes, and the title rule
+fires on five of them. `span-vs-lead-sentence` reads that sentence. Three shapes
+of range and no fourth: a dash between two years, `from X to X`, `between X and
+X`. Containment and not equality — a record narrower than the range its article
+states is inside it, and widening one is A7's pass and a person's judgement —
+and `end: null` is compared on the start alone.
+
+A warning, never a change to a record, and a disk-only one: the leads are not
+under `data/` and no page has them, so the review index is untouched and nothing
+under `data/` changes because this exists. **12 warnings** on the repository as
+it stands.
+
+### 11 — the import tool's place reuse (C9)
+
+The Wikidata import reused a place by item alone, and thirty-eight of the
+atlas's places carry none — a place written by a person never will until
+somebody adds one — so `london-q84` was written beside the hand-written `london`
+at the same point. `reusablePlace` is the same two signals
+`tools/import/places.mjs` already matches Natural Earth's cities on and no
+third: an exact fold of a name, and the distance. Exactly one record has to
+survive both, because two is a question for a person. Nothing is written and
+nothing is merged: the import points this batch's events at the record that is
+there, and says so in the report. Merging the pairs already on disk is A14 (6)'s.
+
+### 12 — the refused-item log (C15)
+
+`data/imports/wikidata-state.json` kept no account of what the import has never
+been able to use, and the Action truncated `docs/import-report.md` on every run.
+A `refused` map in the state file, item to reason with the day it was first
+refused, **appended and never overwritten**: a run that refuses an item again is
+not news, and a log that rewrote itself every run would be a log of the last
+run — which is exactly what the report was. It is not the per-mode `refused`
+list under `runs`, which is a retry queue. And the report accumulates: a dated
+heading per run, with the batches appended under it.
+
+### Deviations
+
+Lane A numbers on from M86, which recorded none; lane B's block stood at 1252
+when this branch was cut, so these begin above every number in `STATUS.md` and
+cannot collide backwards. A forward collision with a lane B fire is the landing
+routine's to renumber, by deviation 461's rule.
+
+1253. **A shard's settle cannot be deferred for every caller, and the reason is
+      two callers that want opposite things.** The panel redraws its card on the
+      arrival count having moved (`panel.js`, `holdShards` → `refresh`) and does
+      not look again for a shard it already holds — so a count that moved before
+      the joins were rebuilt left a card drawn from the old joins and nothing to
+      redraw it, which is how the "Part of" section vanished from the Carnation
+      revolution's card. And `--dump-dom` has one turn of the loop in it, so a
+      promise held for a frame left `entry.html` rendering nothing at all.
+      Counting the settle alone broke the first; counting the fill alone broke
+      the second. `batch` is what separates the bulk ask, which can wait a
+      frame, from `record()`'s and the panel's, which cannot.
+1254. **A test that measures a gesture has to wait for the page to stop
+      arriving, and then for the gesture itself.** `graph-browser`'s ring test
+      dropped one run in three on `parted.ring.stroke < 1 / before` being an
+      exact equality: a century landing changes what the arrangement is of, the
+      camera is fitted to the lens again when it does, and that silently undid
+      the wheel. The dispatch also returned before the handler had run. Both
+      halves were there before M87 and only the timing shift made them show.
+1255. **A page in a browser context of its own is not the default context.**
+      `navigator.clipboard.writeText` never settles there without
+      `Browser.grantPermissions` — no rejection, no error, nothing — and the
+      composer awaits `copyText` before it opens the issue, so two tests waited
+      ten seconds for a tab that was never going to be asked for. The page also
+      has to be brought to the front. Both were free when every test had a
+      browser to itself.
+1256. **`tests/browser.mjs` now needs the test runner to close its browser.** The
+      root `after` hook is what does it, and `node --test` gives each file its
+      own process, so that is exactly right for the suite — but a script that
+      imports the file outside the runner never exits, because the browser's own
+      WebSocket holds the loop open. The child and its pipes are unreferenced
+      and `process.on('exit')` kills it, so nothing is left on a runner; a
+      scratch script still has to close the page itself.
+1257. **Capping the timeline's rows made the rows taller, which put the category
+      symbols back.** At 1900–1999 the rows were at the 22 px floor and the bars
+      under the glyph threshold, so `timeline-browser` asserted that no symbol is
+      drawn there — with a comment saying the corpus is always at the floor.
+      Capped, the rows are 26.8 px and the bars clear the threshold. The test
+      now reads the rule off the drawing instead of assuming the corpus
+      squeezes: a test that encodes a fault as a premise goes red when the fault
+      is fixed.
+1258. **The default headless window is not a reader's screen.** `withBrowser`
+      with no device gives 800 × 600, which leaves the graph a 474-pixel pane
+      and its names five pixels tall — so §9's floor stopped four label tests
+      drawing anything at all. They drive 1280 × 900 now. The rule is right; the
+      window was never a window anybody has.
+1259. **`propertyNames` is not one of `VALIDATION_KEYWORDS`, and the validator
+      fails closed on the whole schema set.** One unknown keyword in one file is
+      "schema set is invalid (1 problem(s)); refusing to validate" for every
+      record of every kind — which is the right answer and an expensive one to
+      read for the first time. The key shape of §12's map is the tool's and is
+      said in the description instead.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -22201,3 +22463,5 @@ M86 started 2026-09-24T04:18:24Z by scheduled (branch m86)
 M86 done
 M42 started 2026-09-24T04:58:45Z by scheduled
 M42b started 2026-09-24T05:02:46Z by scheduled
+M87 started 2026-09-24T05:46:20Z by scheduled (branch m87)
+M87 done

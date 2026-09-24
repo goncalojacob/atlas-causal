@@ -8,7 +8,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  withBrowser, open, waitFor, until, seenIntro, skip,
+  withBrowser, open, waitFor, until, seenIntro, skip, settledShards,
 } from './browser.mjs';
 import { cellsFor } from '../src/map/grid.js';
 import { parseBbox } from '../src/state.js';
@@ -20,21 +20,6 @@ import { parentsOf } from '../src/parts.js';
 const WIDE = { width: 1400, height: 620, deviceScaleFactor: 1 };
 
 const wide = (fn) => withBrowser(fn, { device: WIDE });
-
-// Waits until the attribute shards have stopped arriving: two readings of the
-// page's own resource timeline the same, a beat apart. The count is not known
-// here — it is a property of the build — and what a caller actually wants is
-// "nothing more is coming", which this is (attributes.js, I4a).
-async function settledShards(page) {
-  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
-  let last = -1;
-  for (let tries = 0; tries < 40; tries += 1) {
-    const now = await page.eval(count);
-    if (now > 0 && now === last) return;
-    last = now;
-    await new Promise((resolve) => { setTimeout(resolve, 100); });
-  }
-}
 
 const READY = 'return Boolean(document.querySelector(".map .mark"));';
 // The timeline is the third view since M60 and is drawn when it is chosen, so

@@ -207,11 +207,22 @@ const barsNamed = (also = 'true') => `
     return !name || drawn.has(name);
   });`;
 
-test('every bar on the resting timeline carries its title, and no +N is drawn', { skip }, async () => {
+// Every title that has a row to be written in, and never a `+N`.
+//
+// **Where the rows fit**, which is what M87 §2 left of this. M77's rule was one
+// row per title and no ceiling, and at the whole span of the repository's own
+// corpus that is 112 rows in a pane that holds thirty — a 2,500-pixel page,
+// repacked on every move of the band (review B5). The rows are capped at the
+// pane now, and past the cap a title is written where it fits, as the graph
+// writes only the names that fit. What M77 asked for is untouched and is
+// asserted here on a picture whose rows fit: every bar named, no `+N`, no stack.
+// The half of it that holds at every size — nothing packed away behind a count,
+// and no name written over another — is asserted on the live corpus below.
+test('every bar on a timeline whose rows fit carries its title, and no +N is drawn', { skip }, async () => {
   await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
-    await open(page, url('?view=timeline'), BARS_DRAWN);
+    await open(page, url('?view=timeline&fixtures=1'), BARS_DRAWN);
     // The wait was the count of labels being the same on two polls 50 ms apart.
     // A count is stable between two shards, and it is stable for the whole of
     // the gap between the picture being drawn and the last century landing:
@@ -226,6 +237,42 @@ test('every bar on the resting timeline carries its title, and no +N is drawn', 
     assert.deepEqual(seen.unnamed, [], 'every bar carries its title');
     assert.equal(seen.badges, 0, 'no +N badge exists');
     assert.equal(seen.stacks, 0, 'and nothing is drawn as a stack');
+    assert.deepEqual(await errorsOn(page), []);
+  });
+});
+
+// And the live corpus at the whole span, where the titles ask for more rows than
+// the pane holds: nothing is packed away behind a count, some bars are named,
+// and no name is written over another on its row. Nothing is counted — how many
+// fit is a fact about the corpus of the day.
+test('past the pane\'s cap the titles that are drawn do not run over each other', { skip }, async () => {
+  await desk(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=timeline'), BARS_DRAWN);
+    await waitFor(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;', 'some titles');
+    const seen = await page.eval(TIMELINE);
+    assert.ok(seen.bars.length > 1, `the timeline drew bars (${seen.bars.length})`);
+    assert.equal(seen.badges, 0, 'no +N badge exists');
+    assert.equal(seen.stacks, 0, 'and nothing is drawn as a stack');
+
+    const clashes = await page.eval(`
+      const rows = new Map();
+      for (const label of document.querySelectorAll('#timeline text.bar-label')) {
+        const box = label.getBBox();
+        const row = Math.round(Number(label.getAttribute('y')));
+        if (!rows.has(row)) rows.set(row, []);
+        rows.get(row).push({ text: label.textContent, x0: box.x, x1: box.x + box.width });
+      }
+      const over = [];
+      for (const [row, boxes] of rows) {
+        boxes.sort((a, b) => a.x0 - b.x0);
+        for (let i = 1; i < boxes.length; i += 1) {
+          if (boxes[i].x0 < boxes[i - 1].x1 - 0.5) over.push(row + ': ' + boxes[i - 1].text + ' / ' + boxes[i].text);
+        }
+      }
+      return over;`);
+    assert.deepEqual(clashes, [], 'two titles nobody can read is the fault M77 exists to fix');
     assert.deepEqual(await errorsOn(page), []);
   });
 });
