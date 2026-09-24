@@ -467,6 +467,14 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
     item.ofNarrative ? 'of-narrative' : '',
     item.ofActor ? 'of-actor' : '',
+    // The two ends of the link the reader has opened (M87 §8, B11). The map
+    // draws that link as a madder line between its two marks (M83, B7) and both
+    // ends are kept by the lens, but this view had no notion of `edge` at all —
+    // so the same two events were bars like any other and a reader who opened a
+    // link from the graph and came here could not see which two it was about.
+    // The word is `working.chosen`'s, from the one place that decides it
+    // (emphasis.js), so the two pictures cannot disagree about which link is open.
+    item.chosen ? 'chosen' : '',
     item.onPath ? 'on-path' : '',
     item.selected ? 'selected' : '',
   ].filter(Boolean).join(' ');
@@ -507,7 +515,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     }, { text: name });
   };
 
-  function laneBars(bars, rings, labels, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
+  function laneBars(bars, rings, labels, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear, chosenIds) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -527,6 +535,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       const depth = reachable.get(event.id) ?? null;
       const item = {
         id: event.id, event, onPath, selected, ofActor, ofNarrative, inside, depth,
+        chosen: chosenIds ? chosenIds.has(event.id) : false,
         // A direct neighbour of the lens's focus set, drawn faintly (lens.js).
         lensNear: lensNear ? lensNear.has(event.id) : false,
         ...box,
@@ -900,7 +909,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
 
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(into.bars, into.rings, into.barLabels, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
+      for (const item of laneBars(into.bars, into.rings, into.barLabels, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear, working.chosen)) {
         deferred.push({ item, i });
       }
     });

@@ -314,11 +314,19 @@ try {
     mapArea.hidden = graphOn || timelineOn;
     graphArea.hidden = !graphOn;
     timelineArea.hidden = !timelineOn;
+    // **A view just built is not a view that came back** (M87 §8, B11). Both
+    // constructors draw once, for the pane they have just been given — the
+    // panes are unhidden above precisely so that they measure the right one —
+    // and the forced render below then laid the whole arrangement out a second
+    // time before a reader had seen anything. It is the graph that pays for it:
+    // a link naming `?view=graph` built the layout, drew it, and drew it again.
     if (graphOn && !graph) {
       graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
+      wasHidden.graph = false;
     }
     if (timelineOn && !timeline) {
       timeline = createTimeline(timelineArea, { atlas, state });
+      wasHidden.timeline = false;
     }
     // The layer switches belong to the map: the graph has no coastlines and
     // the timeline no territories. And the degree floor belongs to the graph,

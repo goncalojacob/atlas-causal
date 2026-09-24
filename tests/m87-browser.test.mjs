@@ -113,3 +113,74 @@ test('§5: the shard wait fails saying how far the page got', async () => {
   // And a manifest that shards nothing is nothing to wait for.
   await settledShards({ eval: async () => 0 }, { attributeShards: [] }, { tries: 1, every: 1 });
 });
+
+// §8 (B11), the first of the three. `createGraphView` renders inside its own
+// constructor, and `showView` then forced the picture again because the pane it
+// was built for had been hidden a moment earlier — so a link naming `?view=graph`
+// laid the whole arrangement out twice before a reader saw anything. The hook
+// counts the draws of the first synchronous turn, which is where both of them
+// were; a shard landing draws again in a turn of its own and is not counted.
+const COUNT_GRAPH_DRAWS = `
+  window.__graphDraws = 0;
+  window.__firstTurn = null;
+  const original = Element.prototype.replaceChildren;
+  Element.prototype.replaceChildren = function (...children) {
+    if (this.classList && this.classList.contains('layer-nodes')) {
+      window.__graphDraws += 1;
+      if (window.__firstTurn === null) {
+        window.__firstTurn = 0;
+        queueMicrotask(() => { window.__firstTurn = window.__graphDraws; });
+      }
+    }
+    return original.apply(this, children);
+  };
+`;
+
+test('§8: a link naming the graph draws it once, not twice', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await page.send('Page.addScriptToEvaluateOnNewDocument', { source: COUNT_GRAPH_DRAWS });
+    await open(page, url('?fixtures=1&view=graph'), 'return document.querySelectorAll("#graph circle.node").length > 0;');
+    await waitFor(page, 'return window.__firstTurn !== null && window.__firstTurn > 0;', 'the graph to draw');
+    assert.equal(await page.eval('return window.__firstTurn;'), 1,
+      'the graph was laid out twice before anything was on the screen');
+  }, { device: DESK });
+});
+
+// §8, the second. The map draws the link the reader has opened as a madder line
+// between its two marks (M83, B7); the timeline had no notion of `edge` at all,
+// so the two bars it draws for the same two events looked like any other. They
+// carry the same word the map's line does now, and the key says so.
+test('§8: the timeline marks the two ends of the link the reader has opened', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    // The fixtures' own first active edge, read off the page rather than typed.
+    await open(page, url('?fixtures=1&view=timeline'), 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;');
+    const edge = await page.eval(`return (async () => {
+      const { loadAtlas } = await import('/src/data.js');
+      const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', landFile: false });
+      const found = [...atlas.edges.values()].find((e) => e.status === 'active'
+        && atlas.events.get(e.from)?.status === 'active' && atlas.events.get(e.to)?.status === 'active');
+      return found ? { id: found.id, from: found.from, to: found.to } : null;
+    })();`);
+    assert.ok(edge, 'the fixtures have an active link between two active events');
+
+    await open(page, url(`?fixtures=1&view=timeline&edge=${edge.id}`), 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;');
+    await waitFor(page, 'return document.querySelectorAll("#timeline rect.chosen[data-id]").length > 0;', 'the link\'s two ends');
+    const marked = await page.eval(`return [...document.querySelectorAll('#timeline rect.chosen[data-id]')]
+      .map((el) => el.getAttribute('data-id')).sort();`);
+    assert.deepEqual(marked, [edge.from, edge.to].sort(), 'both ends and nothing else');
+
+    // And the key names the shape, as it names every other one.
+    const key = await page.eval(`
+      const row = document.querySelector('#timeline .view-key rect.bar.chosen');
+      const bar = document.querySelector('#timeline svg.timeline rect.bar.chosen[data-id]');
+      if (!row || !bar) return null;
+      const read = (el) => { const s = getComputedStyle(el); return { stroke: s.stroke, width: s.strokeWidth }; };
+      const dd = row.closest('dt')?.nextElementSibling;
+      return { row: read(row), bar: read(bar), label: dd ? dd.textContent : null };`);
+    assert.ok(key, 'the key carries the row, and the picture a bar to compare it with');
+    assert.equal(key.row.stroke, key.bar.stroke, 'inked as the picture inks it');
+    assert.ok(key.label && key.label.length > 0, 'and it says what it means');
+  }, { device: DESK });
+});
