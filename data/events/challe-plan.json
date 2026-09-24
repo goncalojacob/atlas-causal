@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "challe-plan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "participants-from-p710"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q137752577",
+  "wikipedia": {
+    "en": "Challe Plan"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137752577"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Challe Plan\", revision 1370610721"
+    }
+  ],
+  "title": "Challe Plan",
+  "summary": "The English Wikipedia article \"Challe Plan\", at revision 1370610721, opens: \"Challe Plan, also known as Challe Offensive, was the codename of a strategic offensive carried out by France in 1959–1961 during the Algerian War. Named after the French general in command, Maurice Challe, the plan resulted in French troops regaining control over much of northern Algeria, weakening the National Liberation Army (ALN) forces for a while and marking a point of maximal French military dominance during the war. Despite some military successes, the Plan failed to achieve its objective, the ALN was not defeated and the cause for Algerian self-determination had only grown more popular, both domestically in France and internationally.\" Wikidata item Q137752577, whose own description reads \"French strategic offensive during the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1959,
+    "end": 1961,
+    "date": "1959-02",
+    "endDate": "1961-04"
+  },
+  "place": "algeria-q262",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "france",
+      "role": "belligerent",
+      "note": "The item names Q142, France, as a participant (P710); the atlas holds it as `france`."
+    }
+  ]
+}
