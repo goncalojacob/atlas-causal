@@ -19,7 +19,25 @@ import { findChrome } from '../tools/screens.mjs';
 import { ROOT, corpusOf, atlasOf } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
 import { resolveWindow, overlaps } from '../src/util/window.js';
-import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn,
+} from './browser.mjs';
+
+// The lens chip, once it carries a name rather than the word the chip shows
+// while its century is still on the way (lens-chips.js). The masthead gains a
+// row when it lands, which is a resize, which is the thing §7 is about.
+const CHIP_NAMED = `
+  const el = document.querySelector('#lens-chips .lens-name');
+  return Boolean(el) && el.textContent.trim() !== 'loading…';`;
+
+// Two frames of stillness on the camera itself. A transform read while a
+// shard, a layout or a masthead row is still landing is a transform read
+// halfway through a gesture (M86 §7).
+const SETTLED = `
+  const attr = () => document.querySelector('svg.graph g.viewport').getAttribute('transform');
+  const first = attr();
+  return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(
+    () => resolve(attr() === first))));`;
 import { LOADING_LABEL } from '../src/attributes.js';
 import { workingSet } from '../src/emphasis.js';
 
@@ -377,6 +395,17 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     // about the record having parts at all.
     await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-f&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
+    // **Wait for the pane to stop changing size before reading the camera**
+    // (M86 §7). The lens chip's name lands with its century and the masthead
+    // gains a row when it does, which is a resize; the camera is read after
+    // the chip is named and after the transform has held still for two frames,
+    // so that what is read is a camera and not a fit halfway through one.
+    await waitFor(page, CHIP_NAMED, 'the lens chip to be named');
+    await waitFor(page, SETTLED, 'the camera to settle');
+    const before = await page.eval(`
+      const t = /scale\\(([\\d.]+)\\)/.exec(
+        document.querySelector('svg.graph g.viewport').getAttribute('transform') || 'scale(1)');
+      return Number(t[1]);`);
     await page.eval(`
       const svg = document.querySelector('svg.graph');
       const box = svg.getBoundingClientRect();
@@ -389,7 +418,12 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     assert.ok(parted.ring, 'and it is still ringed');
     assert.ok(parted.ring.r > parted.node.r);
     // The stroke is divided by the zoom, so the ring is as thin on the screen
-    // at four times in as it is at one, like the labels' halo.
+    // at four times in as it is at one, like the labels' halo. Against the
+    // camera this page was at before the wheel and never against the other
+    // page's rest, which is what made this a flake: a wheel of e^0.9 = 2.46 on
+    // a camera at `before` leaves the ring thinner than 1/`before`.
+    assert.ok(parted.ring.stroke < 1 / before,
+      `${parted.ring.stroke} at k = ${before} before the wheel`);
     assert.ok(parted.ring.stroke < held.ring.stroke, `${parted.ring.stroke} against ${held.ring.stroke}`);
     // And the parts themselves are leaves: a ring on a leaf would say there is
     // something inside it that is not there.

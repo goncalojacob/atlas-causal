@@ -355,6 +355,17 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // has answered the question of where to look: their own camera stands until
   // they ask another one. Cleared by the frame itself.
   let cameraMoved = false;
+  // **And which layout it was moved on** (M86 §7, review B finding 2). The
+  // guard above is "the reader has answered where to look", and on its own it
+  // also refuses the frame a *new* arrangement needs: a reader who wheels
+  // while the Worker is out sets it, and the new coordinates then land under a
+  // camera that was set on the old ones. Holding the layout the gesture was
+  // made on is what tells the two apart.
+  let movedOn = null;
+  const cameraWasMoved = () => {
+    cameraMoved = true;
+    movedOn = laid;
+  };
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -421,12 +432,21 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     };
   }
 
+  // **How many layouts are out on a thread** (M86 §7, review B finding 2c).
+  // The note said what it was doing only when there was no picture at all, so
+  // above six hundred events a reader who moved the band saw the *old* picture
+  // under the new question with nothing to say a new one was coming. It is
+  // shown whenever a job is pending and taken down when the last one answers,
+  // which is what "pending" means with two of them out.
+  let jobs = 0;
+  const sayWaiting = () => { waiting.hidden = jobs === 0; };
+
   // The arrangement in hand becomes the one on screen.
   function adopt(entry, key) {
     laid = entry.layout;
     laidFor = key;
     weights = entry.weights;
-    waiting.hidden = true;
+    sayWaiting();
     root.setAttribute('viewBox', `0 0 ${laid.width} ${laid.height}`);
     drawFrame();
     // Where the camera is put is decided in `render`, on the drawing that
@@ -454,14 +474,19 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       return true;
     }
     // Otherwise the picture the reader already has stays on screen until the
-    // new one lands, and on the very first arrangement — when there is none —
-    // the frame says what it is doing rather than showing an empty field.
-    if (!laid) waiting.hidden = false;
+    // new one lands, and the frame says what it is doing rather than leaving
+    // the old picture looking like an answer to the new question.
+    jobs += 1;
+    sayWaiting();
     runner.run(inputFor(events, lanes, lens), (layout) => {
       const entry = arrangements.set(key, entryFor(layout));
+      jobs -= 1;
       // The reader may have moved the band again while this was away. The
       // arrangement is kept either way; it is simply not what is on screen.
-      if (arrangedFor !== key) return;
+      if (arrangedFor !== key) {
+        sayWaiting();
+        return;
+      }
       adopt(entry, key);
       render(state.get(), { force: true });
     });
@@ -613,7 +638,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       capture('setPointerCapture', drag.pointerId);
     }
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
-    cameraMoved = true;
+    cameraWasMoved();
     applyTransform();
     renderSoon();
   });
@@ -643,7 +668,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       k, s, x: x - (x - transform.x) * across, y: y - (y - transform.y) * down,
     };
     exactZoom = false;
-    cameraMoved = true;
+    cameraWasMoved();
     applyTransform();
     render(state.get());
   }, { passive: false });
@@ -1363,6 +1388,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // never to one the reader wheeled or dragged into place.
   let framedFor = null;
   let framedLayout = null;
+  // The rectangle the camera was last set against, kept so that a pane which
+  // changes size can be answered with a translation rather than a fit.
+  let framedSeen = null;
   function frameCamera(s, seen) {
     const working = workingOf(s);
     // **The question and not the whole arrangement key** (M83). The key carries
@@ -1371,7 +1399,41 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // frames again is a new question — a lens set or cleared, a filter, a
     // category — which is `question` (arrangement.js).
     const key = `${askedFor}|${seen.x0},${seen.y0},${seen.x1},${seen.y1}`;
-    if (key === framedFor && (framedLayout === laid || cameraMoved)) return;
+    // The reader's own camera stands — **on the layout they set it on** (M86
+    // §7). A camera moved while the Worker was out was set on coordinates that
+    // no longer exist, and letting it stand drew the new arrangement at a
+    // stale fit.
+    const readers = cameraMoved && movedOn === laid;
+    if (key === framedFor && (framedLayout === laid || readers)) return;
+
+    // **A pane that changed size is not a new question** (M86 §7, review B
+    // finding 2). The key carries the rectangle, and it has to: a frame
+    // measured against a rectangle that no longer exists is not a frame of
+    // anything. But any resize — the panel opening on the first card, the
+    // masthead gaining a row when a lens chip's title lands, the window itself
+    // — then overwrote a camera the reader had wheeled or dragged into place,
+    // against the promise the comment above makes. So where the question and
+    // the layout are what they were and only the rectangle moved, the camera
+    // is kept and slid instead: the graph point at the middle of the old
+    // rectangle is put at the middle of the new one, which is the reader still
+    // looking at what they were looking at, in a pane of another size.
+    const sameQuestion = framedFor !== null && framedFor.startsWith(`${askedFor}|`);
+    if (sameQuestion && readers && framedSeen && framedLayout === laid) {
+      const centre = (box, axis) => (box[`${axis}0`] + box[`${axis}1`]) / 2;
+      // The graph point in the middle of the old rectangle, under the camera
+      // the reader set, and where the camera has to stand for it to be in the
+      // middle of the new one. `view()` is the same arithmetic backwards.
+      const at = (axis) => (centre(framedSeen, axis) - transform[axis]) / transform.k;
+      transform = {
+        ...transform,
+        x: centre(seen, 'x') - at('x') * transform.k,
+        y: centre(seen, 'y') - at('y') * transform.k,
+      };
+      framedFor = key;
+      framedSeen = seen;
+      applyTransform();
+      return;
+    }
     // Whether this is the first camera this arrangement has been given, which
     // is the whole of what the chosen link may decide (M80). A reader who
     // *arrives* on `?edge=` has not seen the picture yet and the two ends are
@@ -1383,7 +1445,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const arriving = framedFor === null || !framedFor.startsWith(`${askedFor}|`);
     framedFor = key;
     framedLayout = laid;
+    framedSeen = seen;
     cameraMoved = false;
+    movedOn = null;
     // And what that frame is: the link's own two ends and nothing else. The
     // card names them, and a camera that left one of them off the screen would
     // be the picture disagreeing with the card. It is the only set offered,

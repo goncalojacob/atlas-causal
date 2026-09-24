@@ -223,3 +223,95 @@ test('a drag on the graph draws the ground it pans onto', { skip }, async () => 
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 7. a resize keeps the reader's camera (B2) ────────────────────────────
+//
+// `frameCamera` keyed on the question *and* the rectangle, so any resize — a
+// panel opening, a lens chip wrapping the masthead, the window itself — threw
+// away a camera the reader had wheeled into place. It is also the ring-ratio
+// flake of PR #24: a "post-wheel" k of 1.30 where the wheel alone leaves 2.46
+// is not a camera, it is a fit that ran after the gesture.
+
+// The camera and the rectangle it shows, in the graph's own coordinates.
+const CAMERA = `
+  const svg = document.querySelector('svg.graph');
+  const rect = svg.getBoundingClientRect();
+  const inverse = svg.getScreenCTM().inverse();
+  const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+  const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+  const t = /translate\\((-?[\\d.]+) (-?[\\d.]+)\\) scale\\(([\\d.]+)\\)/
+    .exec(svg.querySelector('g.viewport').getAttribute('transform') || 'translate(0 0) scale(1)');
+  const [tx, ty, k] = [Number(t[1]), Number(t[2]), Number(t[3])];
+  const box = {
+    x0: (Math.min(a.x, b.x) - tx) / k, x1: (Math.max(a.x, b.x) - tx) / k,
+    y0: (Math.min(a.y, b.y) - ty) / k, y1: (Math.max(a.y, b.y) - ty) / k,
+  };
+  return { k, centre: { x: (box.x0 + box.x1) / 2, y: (box.y0 + box.y1) / 2 } };`;
+
+// Two frames of stillness on the transform itself: a camera read while a
+// layout or a shard is still landing is a camera read mid-gesture.
+const SETTLED = `
+  const attr = () => document.querySelector('svg.graph g.viewport').getAttribute('transform');
+  const first = attr();
+  return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(
+    () => resolve(attr() === first))));`;
+
+test('a resize keeps a camera the reader moved, and keeps its centre centred', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    await waitFor(page, SETTLED, 'the first frame to settle');
+
+    // The reader's own gesture, and then their own camera read off the page.
+    for (let i = 0; i < 4; i += 1) await page.eval(WHEEL(-100));
+    await waitFor(page, SETTLED, 'the camera to settle after the wheel');
+    const held = await page.eval(CAMERA);
+    assert.ok(held.k > 1, `the wheel took the camera in (k = ${held.k})`);
+
+    // A pane that changes size. Nothing about the question changed: the same
+    // events, the same lens, the same window.
+    await page.send('Emulation.setDeviceMetricsOverride', {
+      mobile: false, width: 1180, height: 820, deviceScaleFactor: 1,
+    });
+    await waitFor(page, SETTLED, 'the camera to settle after the resize');
+
+    const after = await page.eval(CAMERA);
+    assert.equal(after.k, held.k, `the resize re-fitted the camera (${held.k} → ${after.k})`);
+    // And what the reader was looking at is still in the middle of the pane.
+    assert.ok(Math.abs(after.centre.x - held.centre.x) < 1,
+      `the picture slid sideways under the resize (${held.centre.x} → ${after.centre.x})`);
+    assert.ok(Math.abs(after.centre.y - held.centre.y) < 1,
+      `the picture slid up or down under the resize (${held.centre.y} → ${after.centre.y})`);
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+test('but a new arrangement is framed, even after the reader has moved the camera', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    await waitFor(page, SETTLED, 'the first frame to settle');
+    for (let i = 0; i < 4; i += 1) await page.eval(WHEEL(-100));
+    await waitFor(page, SETTLED, 'the camera to settle after the wheel');
+    const held = await page.eval(CAMERA);
+
+    // A new question — a lens — is a new picture, and a new picture is framed
+    // however the camera got where it is. This is the guard M83's `cameraMoved`
+    // must not become: "the reader wheeled once, so nothing is ever framed
+    // again".
+    await page.eval(`
+      document.querySelector('svg.graph').dispatchEvent(new WheelEvent('wheel', {
+        bubbles: true, cancelable: true, deltaY: 0, clientX: 10, clientY: 10 }));
+      return true;`);
+    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-f&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the lens to draw');
+    await waitFor(page, SETTLED, 'the lens frame to settle');
+    const lens = await page.eval(CAMERA);
+    assert.notEqual(lens.k, held.k, 'the lens was drawn at the camera of the picture before it');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
