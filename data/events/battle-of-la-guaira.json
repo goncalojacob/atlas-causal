@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-guaira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "date-from-article"
+    ],
+    "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 2 March 1743, and the English Wikipedia lead, at revision 1370446747, says the battle \"took place between 2-5 March 1743\". The end is the article's."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4871513",
+  "wikipedia": {
+    "en": "Battle of La Guaira"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Guaira\", revision 1370446747"
+    }
+  ],
+  "title": "Battle of La Guaira",
+  "summary": "The English Wikipedia article \"Battle of La Guaira\", at revision 1370446747, opens: \"The Battle of La Guaira took place between 2–5 March 1743 in the Caribbean, off the coast of La Guaira, present day Venezuela. La Guaira was a port of the Royal Gipuzkoan Company of Caracas, whose ships had rendered great assistance to the Spanish navy during War of Jenkins' Ear in carrying troops, arms, stores and ammunition from Spain to her colonies, and its destruction would be a severe blow both to the Company and the Spanish Government. A British expeditionary fleet under Charles Knowles was defeated, and the expedition ended in failure. 97 of Knowles' men were killed, among whom was the captain of HMS Burford, and many of the ships were badly damaged or lost. Knowles was therefore unable to proceed to Puerto Cabello until he had refitted.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871513, imported by tools/import/wikidata.mjs. The item's own description reads \"1743 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1743,
+    "end": 1743,
+    "date": "1743-03-02",
+    "endDate": "1743-03-05"
+  },
+  "place": "la-guaira",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-jenkins-ear",
+  "category": "war",
+  "actors": []
+}

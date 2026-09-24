@@ -1222,7 +1222,17 @@
     "Q1612597",
     "Q3119074",
     "Q1615387",
-    "Q3636591"
+    "Q3636591",
+    "Q797147",
+    "Q208035",
+    "Q873405",
+    "Q995695",
+    "Q3024756",
+    "Q4872309",
+    "Q4871513",
+    "Q4872124",
+    "Q4872306",
+    "Q1136414"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5062,6 +5072,18 @@
       "precision": "point",
       "label": "archaeological site",
       "note": "Added in M42b batch 19, the Spanish conquest vein of the Americas' 16th century. The label and the gloss are read from the class item itself over the network: Wikidata's own description is \"place (or group of physical sites) in which evidence of past activity is preserved\", which is A12 C2's \"point\" — the precision it names for a battlefield or a site — and not a settlement."
+    },
+    "Q2264924": {
+      "kind": "place",
+      "precision": "city",
+      "label": "port city",
+      "note": "Added in M42b batch 20, the South and Central American half of the War of Jenkins' Ear. The label and the gloss are read from the class item itself over the network: Wikidata's own description is 'city or town which has a port', which is a settlement and so the same precision Q515 takes."
+    },
+    "Q39594": {
+      "kind": "place",
+      "precision": "region",
+      "label": "bay",
+      "note": "Added in M42b batch 20. Wikidata's own description, read off the class item, is 'body of water connected to an ocean or lake, formed by an indentation of the shoreline': an area of water and not a point on the ground, so the coarse precision PRECISIONS gives a region, as batch 18 gave the Bay of All Saints."
     }
   },
   "reconcile": true

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "pares-1936-war-and-trade-in-the-west-indies",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Richard Pares"
+  ],
+  "title": "War and Trade in the West Indies",
+  "year": 1936,
+  "publisher": "Oxford University Press",
+  "isbn": "0714619434",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"Invasion of Cuba (1741)\" cites at pp. 91-92 for Vernon turning on Cuba after his repulse at Cartagena, at revision 1370623950. The ISBN is the article's own, a later reissue of the 1936 edition. Cited and not read."
+}
