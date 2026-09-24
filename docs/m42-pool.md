@@ -8067,3 +8067,287 @@ re-taken over the batch's records, and `tests/m53.test.mjs` and
 `tests/m67.test.mjs` are correspondence tests that fail on exactly that gap.
 Runs 1685 and 1688 were cancelled by the next push in the same concurrency
 group. The re-run allowance is unspent: nothing was re-run.
+
+## Batch 49 — the Russo-Japanese War finished as a chain, and the four `reacted-to` written backwards
+
+*24 September, the fire that picked the run up at 10:46Z. Today already carries
+a `## Curation 2026-09-24` section and **all six of A14's passes carry theirs**,
+so this is an import fire and every one of the six is skipped by its own rule.
+`origin/m0` was merged in at the head of the run (M86 and M87). A10's order of
+need turned over again with batch 48: Africa is at 147 and **Asia trails at
+143**, so this batch is seven Asia rows and no other lane.*
+
+### The vein, chosen by the endpoint's degree and not by the ranking
+
+Batch 48's stand asked the next fire to choose its vein by what the endpoints
+are worth to the component rather than by whether the endpoint is held, and
+this batch is that question answered. `Q159950`, the Russo-Japanese War, had
+**74 rows under the inverse `part of` vein and the atlas held nine of them**
+after batch 47 — the war itself, seven engagements and the treaty — and every
+one of the nine is inside the 610. So the remaining rows are the vein whose
+endpoints are worth the most, and seven of them are the engagements the held
+chain was missing.
+
+Read through the query service (`query.wikidata.org/sparql`), which answered
+200 throughout while `www.wikidata.org/w/api.php` answered 429 twice before
+the import itself went through — deviation 1414's reading of the two refusals,
+applied.
+
+A11 (b)'s partition check was made before the import: none of the seven ids is
+on `origin/m42b` (`docs: the check is green on the head of this fire`,
+24 September 10:31Z), which is what a lane owes the other lane.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-chemulpo-bay` | 19 | 9 Feb 1904 | `chemulpo-bay` (new) | `russo-japanese-war` |
+| `battle-of-te-li-ssu` | 12 | 14–15 Jun 1904 | `te-li-ssu` (new) | `russo-japanese-war` |
+| `battle-of-tashihchiao` | 11 | 24–25 Jul 1904 | `tashihchiao` (new) | `russo-japanese-war` |
+| `battle-off-ulsan` | 15 | 14 Aug 1904 | `korea-strait` (reused) | `russo-japanese-war` |
+| `battle-of-shaho` | 17 | 5–17 Oct 1904 | `shaho` (new) | `russo-japanese-war` |
+| `battle-of-sandepu` | 17 | 25–29 Jan 1905 | `shenyang` (reused) | `russo-japanese-war` |
+| `japanese-invasion-of-sakhalin` | 14 | 7–31 Jul 1905 | `sakhalin` (new, from `P276`) | `russo-japanese-war` |
+
+All seven pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one inside `russo-japanese-war`'s 8 February
+1904 to 5 September 1905 at the day; and **lane**, six of the seven in
+Manchuria, Korea or the Korea Strait. All seven filed, so **main stays at 242**,
+unmoved through twenty batches, three curation fires and A14. Every date is
+Gregorian on the item (`Q1985727`), so batch 47's Old Style problem does not
+recur.
+
+**No class was added.** `Q178561` battle, `Q1261499` naval battle and `Q467011`
+invasion were all already in `data/imports/wikidata-seeds.json` → `classes`,
+and `Q23442` island carried the Sakhalin place. That is the second batch
+running with nothing for a person to decide about a class, and the first with
+no class read over the network at all.
+
+### The nine edges, and the component they moved
+
+Nine edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 49". **Seven run into records that were
+already here**, which is A5's own standard, and the other two chain the batch
+to itself:
+
+| from | type | to |
+| --- | --- | --- |
+| `battle-of-chemulpo-bay` | enabled | `battle-of-the-yalu-river-1904` |
+| `battle-of-nanshan` | reacted-to | `battle-of-te-li-ssu` |
+| `battle-of-te-li-ssu` | precondition-of | `battle-of-tashihchiao` |
+| `battle-of-tashihchiao` | precondition-of | `battle-of-liaoyang` |
+| `battle-of-the-yellow-sea` | reacted-to | `battle-off-ulsan` |
+| `battle-of-liaoyang` | reacted-to | `battle-of-shaho` |
+| `battle-of-shaho` | precondition-of | `battle-of-sandepu` |
+| `siege-of-port-arthur` | reacted-to | `battle-of-sandepu` |
+| `japanese-invasion-of-sakhalin` | enabled | `treaty-of-portsmouth` |
+
+**The largest connected component goes from 610 to 617** — every one of the
+seven joined it, the component count did not move, and no new island was made.
+That is what batch 48's stand was asking for: its ten records and six edges
+left the 610 exactly where they found it because the endpoint they hung on was
+held and edgeless, and these seven hang on nine endpoints that are all inside
+it.
+
+**`japanese-invasion-of-sakhalin --enabled--> treaty-of-portsmouth` is a third
+branch into that endpoint**, beside `battle-of-tsushima --caused-->` and batch
+47's `battle-of-mukden --enabled-->`, and each rests on a different sentence in
+a different article: the fleet destroyed, the field taken, and the threat of
+losing territory that the invasion's own § Background says was the only thing
+that would bring the Tsar to the table. Three independently argued branches
+converging on one treaty is the convergence query's whole subject, and it is
+now in the data rather than in the brief.
+
+### The four `reacted-to` were written backwards, and rule 4 caught all four
+
+All four `reacted-to` edges of this batch were first written **from the
+reaction to the thing reacted to** — on the sense of the English verb — and
+rule 4 refused all four in one run, by name and with both dates. The atlas's
+`reacted-to` runs forward in time like every other type: `A --reacted-to--> B`
+says *B answered A*, which is what `october-revolution --reacted-to-->
+kerensky-krasnov-uprising` and batch 48's `evian-accords --reacted-to-->
+battle-of-bab-el-oued` already said. Four files were deleted and rewritten;
+nothing was pushed in the wrong direction, because the validator runs before
+the commit. **Deviation 1420**, and it is the validator doing precisely what it
+is for.
+
+### A9's first step answered the row batch 47 refused
+
+Four place records are new and **not one was hand-corrected**.
+
+- **`chemulpo-bay`** (`point`) is the row batch 47 chose and dropped: its
+  `P276` is Q125696445, Jemulpo, which "carries no `P625` at all", so A9's
+  second step gave nothing and the battle was left out. **A12 (2)'s corrected
+  order reads the item's own `P625` first**, and Q1192118 has one. The record
+  carries no `wikidata` key, batch 39's rule for a place written from an
+  event's own point, and its note names `incheon` — the modern city on this
+  bay, 17 km off, which the atlas already holds — so that a reader meeting two
+  marks knows why there are two.
+- **`te-li-ssu`** (`point`) is the first place in the run where A9's first step
+  was taken **over** a held answer at its second: Q2619692's `P276` is
+  Q326917, the Liaodong Peninsula, which the atlas holds and which
+  `siege-of-port-arthur` already stands on. The own point won because the
+  article at revision 1370590724 locates the hamlet itself — "some 80 mi
+  (130 km) north of Port Arthur" — and the peninsula is the ground rather than
+  the place on it. **Deviation 1421.**
+- **`tashihchiao`** (`point`) and **`shaho`** (`region`) have no `P276` at all,
+  so only the first step reaches them. `shaho` is `region` because its article
+  puts the fighting "along a 37-mile (60 km) front centered at the Shaho
+  River", which is an area and not a pin, and because `yalu-river` — the other
+  river of this war — is already drawn that way.
+- **`sakhalin`** (`region`, `Q7792`) is the import's own, written from `P276`
+  before the events were touched. The item's own `P625` is 46.75, 142.65, in
+  the south of the island it names, so the two steps agree in substance for the
+  **fifth** time, and the record that says "the island" is the one an invasion
+  of the island wants.
+
+**`battle-of-sandepu` reuses `shenyang` rather than taking its own point, and
+that is a refusal with a reason.** Q1358032's `P625` is 41.7833, 123.4333 —
+**2.2 km from the point the atlas already draws Mukden at** — while the same
+article says the battle was fought "within a group of villages about 36 miles
+(58 km) southwest of Mukden". The item's coordinate is Mukden's own, not
+Sandepu's, so writing a place called Sandepu at it would be a record asserting
+what its only source denies, and writing it 2 km from `shenyang` would be the
+`london-q84` fault A14 (6) has just finished undoing. The event stands on the
+city the item actually points at, and its own note says the villages were 58 km
+away. **Deviation 1422** — a sixth shape A9's rule does not answer: *an item
+whose `P625` is its parent battle's city and not its own site.*
+
+**`battle-off-ulsan` reuses `korea-strait`, which its own article names.** The
+lead calls it "also known as the Battle of the Japanese Sea or **Battle of the
+Korean Strait**", the atlas holds `korea-strait` (Q52052) as a `region`, and
+the item's own point falls inside it. A9's first step would have written a
+point at sea named after a city 55 km away.
+
+### The lane the europe polygon takes, and the count it changes
+
+**Asia gains six of the seven, not all seven.** `sakhalin` derives to the
+**`europe`** lane: the atlas's five lane polygons put the whole of Russian
+ground there, which is how `ipatiev-house` (Yekaterinburg), `russia`,
+`soviet-union-q15180` and `russian-empire-q34266` are already drawn, none of
+them with an override. Nothing was overridden here either — a single record
+contradicting four others at the same longitude would be worse than a lane set
+that is coarse and consistent — but the question is now a real one and it is
+the owner's: **should the `europe` lane hold Russian Asia?** Every Russian
+event east of the Urals is in it today. **Deviation 1423.**
+
+### The two refusals, and the third on its own reading
+
+Both refusals are the fire's own class — chronology with no claim in it, the
+class A14 (4) read the eleven "Following" quotes under and dropped nine.
+
+- The Battle off Ulsan's lead: "four days after the Battle of the Yellow Sea".
+  A date, not an argument. The edge written instead rests on § Sortie's
+  telegram, which says *why* the squadron was at sea.
+- The invasion of Sakhalin's § Background: the plan was reconsidered "On 7 June
+  1905, shortly after the Battle of Tsushima". Same shape, same refusal, so
+  `battle-of-tsushima → japanese-invasion-of-sakhalin` was not written. What
+  the article does claim is the invasion's purpose, and that is the edge into
+  the treaty.
+
+The third is refused on what its article actually says rather than on how the
+sentence opens: the Battle of Chemulpo Bay's § Background puts it and the
+Battle of Port Arthur in **one** action — "The opening stage of the
+Russo-Japanese War began with a pre-emptive strike by the Imperial Japanese
+Navy against the Russian Pacific Fleet spread among Port Arthur, Vladivostok,
+and Chemulpo Bay" — fought a day apart. Two halves of one strike is a filing
+under the war and not a cause between them. Chemulpo earns its edge a month
+later and in another country, where the Yalu article says "the way was clear
+for the Imperial Japanese Army to deploy ... into Korea".
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 883 | **890** |
+| main | 242 | **242** |
+| filed | 641 | 648 |
+| active edges | 850 | **859** |
+| largest connected component | 610 | **617** |
+| components | 201 | 201 |
+| events with no edge at all | 158 | 158 |
+| events with no place | 50 | 50 |
+| per lane, active | Europe 377, Americas 216, Asia 143, Africa 147 | Europe 378, Americas 216, **Asia 149**, Africa 147 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 | unchanged |
+
+`docs/m53-polities.md` §4.1 is retaken at **383 of 890**, counted by overlap
+**384**: `battle-of-chemulpo-bay` is the one row of this batch whose item names
+participants the atlas holds (`Q188712` and `Q34266`, read as `japan` and
+`russian-empire`, which is how `russo-japanese-war` and `battle-of-port-arthur`
+already read the same two items). The other six carry no `P710` at all.
+
+## Where the run stands after batch 49, for the fire that picks it up
+
+*24 September, 10:46Z onward. An import fire, one batch and no code change.*
+
+| | |
+| --- | --- |
+| corpus | **890 active** |
+| **main** | **242**, unmoved through twenty batches, three curation fires and A14 |
+| filed | 648 |
+| active edges | **859** |
+| largest connected component | **617** (+7) |
+| components | **201**, unmoved |
+| events with no edge at all | **158**, unmoved: the batch left none |
+| events with no place | **50**, unmoved: all seven arrived placed |
+| events naming no actor | 506 |
+| validator | **0 errors, 426 warnings** |
+| tests | **1,819 pure and 295 browser, all passing, 0 skipped** |
+| per lane, active | Europe 378, Americas 216, **Asia 149**, **Africa 147** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again and by two**: Africa is at 147 and
+Asia at 149, so **the next import batch is Africa's** unless a chain crosses
+out of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **The Russo-Japanese vein is worked out as a chain and the method is proved.**
+  Sixteen of `Q159950`'s 74 rows are now here and the war runs unbroken from
+  Port Arthur in February 1904 to Portsmouth in September 1905, with three
+  branches converging on the treaty. What is left of the vein is the small
+  rows — `Q4871480` Korsakov 12, `Q2409264`'s neighbours `Q2469370` Motien Pass
+  10 and `Q2409166` Hsimucheng 9, `Q11481675` the Hitachi Maru Incident 9 — and
+  none of them carries dates in the query's own answer, so each needs its item
+  read before it is worth a row. **The method to carry forward is batch 48's
+  question answered here: pick the vein whose endpoints are already inside the
+  largest component, not the vein with the most rows.** `Q8663` the Korean War
+  and `Q170314` the Second Sino-Japanese War, at 92 rows each, are the next two
+  Asia veins and both have endpoints in the 610.
+- **The Africa vein is still the one read incompletely**, unchanged from batch
+  48's stand: two of its six query groups came back 429 and 502, `mali-war`'s
+  78 unheld rows and `scramble-for-africa`'s 39 are untouched, and `mali-war`
+  sits in the largest component. It is Africa's turn by A10 and this is the
+  vein to re-run.
+- **C8 is still the run's largest single question**, and this batch is the
+  counter-example to batch 48's cost rather than an answer to it: where the
+  parts chain to *each other* the parent-to-child edge is not needed at all,
+  and the 617 is what that looks like. The 91 that exist stay; a batch writes
+  no more.
+- **`should the europe lane hold Russian Asia?`** is new and is the owner's
+  (deviation 1423). Every Russian event east of the Urals is drawn in the
+  europe lane today, `japanese-invasion-of-sakhalin` included.
+- **The five other questions of the A14 stand are unchanged** and unanswered:
+  which record a lane guard clears, whether the cache may hold more than one
+  revision, whether a certain reconciliation may write `wikidata`, whether a
+  § Background mention is ever a `precondition-of`, and whether `parent`
+  satisfies §1's bar. A9's first step has now been taken **over** a held second
+  step once (deviation 1421), which is the narrowest version of the last of
+  them.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`. A filing fire can do both and neither
+  costs a main event.
+- **`rhodesian-bush-war` is still the one active event with neither an edge nor
+  a parent.**
+- **Deviation numbers: take the next above 1424.** This fire wrote **1420 to
+  1424**.
+
+**The check is green on this fire's head.** Run 1713 of `validate.yml`, commit
+`cb1c9821`, conclusion `success`. Run 1712 on the index head was green before
+it and run 1711 on the records head was cancelled by the next push in the same
+concurrency group, which is the ordering rule 798 working rather than a fault.
+The re-run allowance is unspent: nothing was re-run.

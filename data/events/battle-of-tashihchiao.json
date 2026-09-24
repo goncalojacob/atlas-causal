@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tashihchiao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2409264",
+  "wikipedia": {
+    "en": "Battle of Tashihchiao"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2409264"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    }
+  ],
+  "title": "Battle of Tashihchiao",
+  "summary": "The English Wikipedia article \"Battle of Tashihchiao\", at revision 1370590643, opens: \"The Battle of Tashihchiao  was a land engagement fought on 24–25 July 1904, during the Imperial Japanese Army's advance toward Liaoyang in first stage of the Russo-Japanese War. Tashihchiao is located about 25 kilometres (16 mi) southwest of the city of Haicheng, in present-day Liaoning Province, China. The town of Tashihchiao was of strategic importance in the Russo-Japanese War, as it was a railroad junction between the main line on the Russian South Manchurian Railway and a spur which led to the old treaty port of Yingkou (Newchwang). Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden.\" Wikidata item Q2409264, whose own description reads \"1904 Russo-Japanese battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-07-24",
+    "endDate": "1904-07-25"
+  },
+  "place": "tashihchiao",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

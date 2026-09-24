@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    }
+  ],
+  "from": "battle-of-tashihchiao",
+  "to": "battle-of-liaoyang",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Tashihchiao's first section argues the edge itself: the town \"was of strategic importance in the Russo-Japanese War, as it was a railroad junction between the main line on the Russian South Manchurian Railway and a spur which led to the old treaty port of Yingkou (Newchwang). Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden.\" `precondition-of` is exactly \"essential for\", and no more than that. Probable: Wikipedia alone.",
+  "dispute": null
+}

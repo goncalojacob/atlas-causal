@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-off-ulsan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q702150",
+  "wikipedia": {
+    "en": "Battle off Ulsan"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q702150"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle off Ulsan\", revision 1370603310"
+    }
+  ],
+  "title": "Battle off Ulsan",
+  "summary": "The English Wikipedia article \"Battle off Ulsan\", at revision 1370603310, opens: \"The naval Battle off Ulsan, also known as the Battle of the Japanese Sea or Battle of the Korean Strait, took place on 14 August 1904 between cruiser squadrons of the Imperial Russian Navy and the Imperial Japanese Navy during the Russo-Japanese War, four days after the Battle of the Yellow Sea.\" Wikidata item Q702150, whose own description reads \"1904 battle during the Russo-Japanese War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-08-14"
+  },
+  "place": "korea-strait",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

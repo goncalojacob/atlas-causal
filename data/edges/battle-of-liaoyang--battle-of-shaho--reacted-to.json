@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-liaoyang--battle-of-shaho--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shaho\", revision 1370589119, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    }
+  ],
+  "from": "battle-of-liaoyang",
+  "to": "battle-of-shaho",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Shaho's § Background: \"After the Battle of Liaoyang the situation for General Alexei Kuropatkin, Commander-in-Chief of the Russian armies in Manchuria became increasingly unfavorable ... Although he needed to reverse the tide of the war, Kuropatkin was reluctant to move too far from Mukden\", and the plan that followed was \"to block the Japanese advance at the Shaho River south of Mukden by turning the Japanese right flank and counterattacking towards Liaoyang\". The Mukden article says the same from the other side: the Japanese \"had failed to take advantage of their victory at Liaoyang, allowing the Russians to retreat in good order and to soon launch a counterattack during the Battle of Shaho\". A counterattack mounted to reverse a defeat is `reacted-to`. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-sandepu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1358032",
+  "wikipedia": {
+    "en": "Battle of Sandepu",
+    "pt": "Batalha de Sandepu"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1358032"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sandepu\", revision 1370588463"
+    }
+  ],
+  "title": "Battle of Sandepu",
+  "summary": "The English Wikipedia article \"Battle of Sandepu\", at revision 1370588463, opens: \"The Battle of Sandepu was a major land battle of the Russo-Japanese War. It was fought within a group of villages about 36 miles (58 km) southwest of Mukden, Manchuria.\" Wikidata item Q1358032, whose own description reads \"1905 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1905,
+    "end": 1905,
+    "date": "1905-01-25",
+    "endDate": "1905-01-29"
+  },
+  "place": "shenyang",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}
