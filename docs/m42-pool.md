@@ -7705,3 +7705,81 @@ one date cannot take an edge that means anything.
 **Per lane, active and main (A10).** Europe 375/89, Americas 202/55, Asia
 143/67, Africa 139/31. Nothing was imported, so the lanes moved only by the
 Holocaust's division, which is Europe.
+
+## Where the run stands after A14's six passes, for the fire that picks it up
+
+*24 September, 04:58Z onward. **A14 fire**: the six data passes the second
+review asked for, in order, each with its section above. Nothing was imported.
+`origin/m0` was merged in at the head of the run, so this branch carries the 24
+September review, the amendment itself and M42b's batches 16 to 18.*
+
+| | |
+| --- | --- |
+| corpus | **859 active** (858 before; the Holocaust became two records) |
+| **main** | **242**, unmoved through eighteen batches, three curation fires and A14 |
+| filed | 617 |
+| active edges | **834** (843 before: nine chronology edges dropped, one endpoint corrected) |
+| largest connected component | **608** |
+| components | **193** |
+| events with no edge at all | **155**, of which 144 are filed under a parent, 10 are umbrellas and **one** (`rhodesian-bush-war`) is neither |
+| events with neither an edge nor a parent | **11** — 10 umbrellas and `rhodesian-bush-war` |
+| events with no place | **47** (41 before A14(2) cleared six) |
+| events naming no actor | 478 |
+| validator | **0 errors, 402 warnings** (496 before; `summary-imported` fell from 109 to 15) |
+| tests | **1,792 pure and 279 browser, all passing, 0 skipped** |
+| per lane, active | Europe 375, Americas 202, **Asia 143**, **Africa 139** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A14 is spent.** All six passes carry their sections above, so the clause
+*"in force for both lanes before any further import"* is satisfied and **the
+next fire is an import fire** unless it is the first after 02:00Z tomorrow, in
+which case it is the curation fire and A13's relations pass.
+
+**What is open, in the order a fire should weigh it:**
+
+- **A10's order is unchanged and the gap has not moved**: Africa 139 and Asia
+  143 against Europe's 375. The veins the stand after batch 47 named are still
+  the cleanest and still untouched: `Q159950`'s remaining **67 unheld rows**
+  would finish the Russo-Japanese War — `Q920679` Shaho (17), `Q1358032`
+  Sandepu (17), `Q702150` off Ulsan (15), `Q4538445` the invasion of Sakhalin
+  (14), `Q2619692` Te-li-Ssu (12) — then `Q8663` the Korean War, then `Q170314`
+  the Second Sino-Japanese War at 92. The Yom Kippur War's 44 unheld rows are
+  Africa and Asia both.
+- **Six questions for the owner came out of these passes**, and each is a line:
+  1. Where the lane guard fires, which does it clear — the place, always, or
+     the one that disagrees with the record's title? (A14(2), deviation 1409;
+     two of the six cleared places were right and the lane was wrong.)
+  2. Should the cache hold more than one revision of an article? 72 citations
+     name a revision it cannot hold, all of them second readings of 59 articles
+     (A14(3)).
+  3. May a reconciliation as certain as A14(5)'s — one article, one item, the
+     dissolution year matching — write `wikidata` on the record as it goes?
+     Twelve of the nineteen still name their item only in a source locator.
+  4. Is a § Background mention ever a `precondition-of`? (Review finding 4; 52
+     `a13-relations-pass` edges are still unread against their revisions.)
+  5. C8, still: 91 parent-to-child edges exist and the fires refuse to write
+     more. §5's `world-war-ii --enabled--> the-extermination-of-the-jews`
+     is now one of the edges that clause forbids.
+  6. Does `parent` satisfy the bar of §1? 144 of the 155 edgeless events are
+     filed under one.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are a two-node
+  component**, new this fire, and the only thing the division cost the graph.
+  Rejoining it wants one sentence from the Holocaust article about the
+  persecution and something the atlas holds; A14(6) gave this fire no licence
+  to go looking, and a curation fire has one.
+- **Two of the fifteen tombstones want an A6 umbrella and not an edge**:
+  `1948-palestine-war` over the 1948 war and the civil war in Mandatory
+  Palestine, and `balkan-wars` over its two parts. Reinstating either costs no
+  edge and no main event, because each would take main events under it. A
+  filing fire can do both; §2 could not, because its bar is an edge.
+  `population-transfer-in-the-soviet-union` wants dividing, the way the
+  Holocaust was divided this day.
+- **The P710 vein is spent until the actor corpus grows**, unchanged: 118 of
+  194 items name no participant and the 68 naming unheld ones produced zero
+  candidates. The 32 partial lists review finding 7 names are still on the
+  records, because the two rules that govern them are the owner's to choose
+  between.
+- **Deviation numbers: take the next above 1412.** This fire wrote
+  **1408 to 1412** and deviation 1407's proposal — `m42` from 1400 upward,
+  `m42b` continuing the shared sequence — held for a full day without a
+  collision.
