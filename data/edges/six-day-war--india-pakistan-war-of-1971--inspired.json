@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "id": "six-day-war--bangladesh-liberation-war--inspired",
+  "id": "six-day-war--india-pakistan-war-of-1971--inspired",
   "kind": "edge",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -12,8 +12,8 @@
     }
   ],
   "license": "CC-BY-SA-4.0",
-  "created": "2026-09-23",
-  "revised": "2026-09-24",
+  "created": "2026-09-24",
+  "revised": null,
   "review": {
     "status": "draft",
     "flags": [
@@ -32,13 +32,9 @@
     }
   ],
   "from": "six-day-war",
-  "to": "bangladesh-liberation-war",
+  "to": "india-pakistan-war-of-1971",
   "type": "inspired",
   "confidence": "probable",
   "explanation": "The Pakistani pre-emptive strike that widened the war was, the article says, modelled on Israel’s Operation Focus of 1967. The article reads: \"The attack was modeled on the Israeli Air Force's Operation Focus during the Six-Day War and intended to neutralize the Indian Air Force planes on the ground.\"",
-  "dispute": null,
-  "retraction": {
-    "on": "2026-09-24",
-    "reason": "A14(4): the quote is about the Pakistani pre-emptive strike of 3 December 1971 — \"The attack was modeled on the Israeli Air Force's Operation Focus during the Six-Day War\" — which opened the Indo-Pakistani war, not the Bangladesh Liberation War that had been running since March. The 24 September review read it in full and called the endpoint wrong. The atlas holds india-pakistan-war-of-1971, so the reading is kept and moved there; an edge cannot change an end without becoming another record, so this one is withdrawn and six-day-war--india-pakistan-war-of-1971--inspired carries the same quote and the same source."
-  }
+  "dispute": null
 }
