@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "nam-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q485254 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-nam-river's place by A9's second step and not its first: Q2890901 carries two P625 values, 5 km and 17 km downstream of the river item's point, and A9's first step says nothing about which of two coordinates to take (deviation 1434's question, in a second shape). The article's own location field is \"Nam River, South Korea\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q485254",
+  "wikipedia": {
+    "en": "Nam River (South Korea)"
+  },
+  "sources": [],
+  "names": [
+    "Nam River"
+  ],
+  "where": {
+    "lon": 128.4356,
+    "lat": 35.3919,
+    "precision": "region",
+    "label": "Nam River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

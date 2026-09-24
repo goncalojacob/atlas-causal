@@ -6846,6 +6846,15 @@
         }
       ]
     },
+    "battle-of-kapyong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-karameh": {
       "from": "git",
       "versions": [
@@ -6884,6 +6893,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-korea-strait": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7096,6 +7114,15 @@
         }
       ]
     },
+    "battle-of-nam-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-nanshan": {
       "from": "git",
       "versions": [
@@ -7289,6 +7316,15 @@
     },
     "battle-of-the-ch-ongch-on-river": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-imjin-river": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -8354,6 +8390,15 @@
         }
       ]
     },
+    "chaplain-medic-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "charter-of-the-united-nations": {
       "from": "git",
       "versions": [
@@ -8482,6 +8527,15 @@
             "review"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "chinese-spring-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -15098,6 +15152,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-pokpung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

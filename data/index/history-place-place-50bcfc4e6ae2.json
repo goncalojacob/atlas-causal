@@ -1815,6 +1815,15 @@
         }
       ]
     },
+    "duman-ri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "dunajovice": {
       "from": "git",
       "versions": [
@@ -2713,6 +2722,15 @@
     },
     "ilha-de-itamaraca": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "imjin-river": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -4478,6 +4496,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nam-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6615,6 +6642,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "south-korea-q884": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

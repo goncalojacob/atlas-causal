@@ -2960,6 +2960,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kapyong",
+      "kind": "event",
+      "locator": "Q713018"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "Q1930278"
@@ -2981,6 +2987,12 @@
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "Q3018708"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-korea-strait",
+      "kind": "event",
+      "locator": "Q289102"
     },
     {
       "dissent": false,
@@ -3119,6 +3131,12 @@
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "Q19831524"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nam-river",
+      "kind": "event",
+      "locator": "Q2890901"
     },
     {
       "dissent": false,
@@ -3431,6 +3449,12 @@
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "Q675999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-imjin-river",
+      "kind": "event",
+      "locator": "Q16170016"
     },
     {
       "dissent": false,
@@ -3800,6 +3824,12 @@
     },
     {
       "dissent": false,
+      "id": "chaplain-medic-massacre",
+      "kind": "event",
+      "locator": "Q5073209"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -3821,6 +3851,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "Q179975"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-spring-offensive",
+      "kind": "event",
+      "locator": "Q485256"
     },
     {
       "dissent": false,
@@ -5261,6 +5297,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "Q3269922"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pokpung",
+      "kind": "event",
+      "locator": "Q4260079"
     },
     {
       "dissent": false,

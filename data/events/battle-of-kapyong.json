@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "battle-of-kapyong",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Dates widened under A7 from the article's own infobox, \"22–27 April 1951\", against the item's P582 of 25 April 1951. Filed under chinese-spring-offensive, which the article's own infobox names — \"part of the Chinese Spring Offensive in the Korean War\". Place is the atlas's gapyeong-county (Q50203), the item's P276, whose point is 5 km from the item's own P625; A9's two steps agree at county scale."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q713018",
+  "wikipedia": {
+    "en": "Battle of Kapyong"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q713018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kapyong\", revision 1376150205"
+    }
+  ],
+  "title": "Battle of Kapyong",
+  "summary": "The English Wikipedia article \"Battle of Kapyong\", at revision 1376150205, records a battle of 22–27 April 1951 on the Kapyong River in South Korea, fought as part of the Chinese spring offensive in the Korean War between United Nations Command forces — the Republic of Korea, the United States, the United Kingdom, Australia, Canada and New Zealand — and China, and gives the result as a UN victory. The article states that the Chinese 40th Army was \"given the mission of destroying the ROK 6th Division while blocking any UN reinforcements towards the Imjin River at Kapyong\". Wikidata item Q713018, whose own description reads \"1951 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-04-22",
+    "endDate": "1951-04-27"
+  },
+  "place": "gapyeong-county",
+  "region": null,
+  "regionNote": null,
+  "parent": "chinese-spring-offensive",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

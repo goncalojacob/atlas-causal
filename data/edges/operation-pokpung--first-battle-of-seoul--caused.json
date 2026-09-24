@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-pokpung--first-battle-of-seoul--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pokpung\", revision 1373958261, lead"
+    }
+  ],
+  "from": "operation-pokpung",
+  "to": "first-battle-of-seoul",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The invasion's own lead makes the assault on Seoul its object and its result in one movement: North Korean forces \"launched the blitzkrieg by crossing the 38th parallel north and swarming South Korea at 04:00\", and \"rushed to encircle and eventually capture Seoul, the capital of South Korea, from the ROK within a week\"; the next paragraph closes it — \"the DPRK captured Seoul within three days on 28 June\". Caused and not precondition-of: the article does not say the invasion made the fight for Seoul possible, it says the invasion was the drive on Seoul. Probable: Wikipedia alone, which rule 22 will not let stand as consensus.",
+  "dispute": null
+}

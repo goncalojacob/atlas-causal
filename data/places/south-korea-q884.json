@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "south-korea-q884",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q884 for batch 53. `country` off the item's own class, country (Q6256), which M80's fourth precision is for. It is operation-pokpung's place by A9's second step: the item Q4260079 carries no P625 of its own and its P276 is Q884. The article's own location field is the 38th parallel, which is a line and not a thing this atlas holds a record for; the country is the located thing Wikidata names."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q884",
+  "wikipedia": {
+    "en": "South Korea"
+  },
+  "sources": [],
+  "names": [
+    "South Korea",
+    "Republic of Korea"
+  ],
+  "where": {
+    "lon": 128,
+    "lat": 36,
+    "precision": "country",
+    "label": "South Korea"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
