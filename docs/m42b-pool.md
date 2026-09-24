@@ -6802,6 +6802,20 @@ deciding which of the two the source got wrong. **Deviation 1294.**
 
 ### Deviations
 
+**1295. Deviation 1286 has a second face and this fire walked into it.** 1286 says run
+the suite *over the records* before committing them, and this fire did — and still turned
+run **1750** on the index commit `1c5a79ac` red, on `tests/m67.test.mjs` →
+*"a child that names neither is one the measurement argues for"*. That test asks
+`docs/m42b-pool.md` to name every filed event that carries neither an actor nor a place,
+and `blockade-of-saint-domingue` is one: it is placeless by deviation 1289 and actorless
+by deviation 1293. **The records were correct and the note that argues for them had not
+been written yet**, and the note is two commits later by the order deviation 798 sets —
+records, rebuild, index, docs. **So the correspondence tests make the order deviation 798
+sets impossible to satisfy for any batch that writes an actorless placeless record**: 798
+wants the docs last and `m67` wants them no later than the records. The cheap fix is to
+write the batch note's own paragraph in the records commit and the measurements in the
+docs commit; the run reports it rather than reordering 798 unasked.
+
 **1294. An article's narrative order and the item's dates can disagree, and neither is
 this run's to correct.** The Gonaïves article narrates Saint-Raphaël first; Wikidata
 dates Saint-Raphaël five months after Gonaïves. Rule 4 refuses the edge in the direction
@@ -7017,9 +7031,15 @@ Adding `Q1155622` to the class table would mirror `Q124734` rebellion cleanly, b
 line would settle that three-way question as a side effect, which deviation 1291 says a
 mirror may not do. One word from the owner imports it.
 
-**The check, on this fire's two heads.** Run on the batch's records commit `f5c8a5a9`
-and on its index commit `1c5a79ac`; the result is recorded in `STATUS.md` with this
-fire's line. Locally the fire finished at **2,114 tests passing with nothing failed and
+**The check, on this fire's four heads.** Run **1748** on the claim commit `61ae0b2f`
+was **cancelled** when the merge superseded it. Run **1749** on the merge commit
+`0561b3d5` **failed**, which is deviation 1278's known shape: the merge is committed with
+`data/index/` absent and the rebuild is the commit after it, so `--index` cannot be fresh
+on that head by construction. Run **1750** on the index commit `1c5a79ac` **failed**, on
+`tests/m67.test.mjs` and on nothing else, which is **deviation 1295**: the records were
+right and the paragraph that argues for `blockade-of-saint-domingue` was two commits
+away. Run **1751** on `19049b38`, the head of this fire, is what the next fire should
+read first. Locally the fire finished at **2,114 tests passing with nothing failed and
 nothing skipped** — the 1,819 of the pure suites and the 295 of the browser suites, the
 browser set run alone, the two sets never at once. `node tools/validate.mjs --index` is
 **clean at 0 errors and 480 warnings** on the pushed index. **The next fire should read
