@@ -5083,6 +5083,15 @@ batch note named them. **A placeless, actorless child costs a paragraph in this
 file, and the fire that writes one should write the paragraph in the same
 breath.**
 
+**The check is green on the head of this fire.** Run **1654** on `c5079980`
+concluded `success` — "Validate records" and "Tests" both green; runs 1639,
+1645, 1646, 1651 and 1652 were each cancelled by the concurrency group as the
+next push landed, which is the pattern every fire of this branch sees. Locally:
+`node tools/validate.mjs --index` clean at **0 errors and 502 warnings**, and
+**2,071 tests pass with none failed and none skipped** — 1,792 in the 151 pure
+suites and 279 in the 36 browser suites, run the way the check runs them, one
+browser suite at a time.
+
 **For article text beyond the cached lead, `Special:Export` and nothing else**
 (deviation 1247). It answered eleven times this fire, with the revision id in
 the XML and the wikitext whole, which is where the `<ref>` tags and therefore
