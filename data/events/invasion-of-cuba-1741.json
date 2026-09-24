@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "invasion-of-cuba-1741",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "date-from-article"
+    ],
+    "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 9 December 1741, and the English Wikipedia lead, at revision 1370623950, says the invasion \"took place between 4-5 August and 9 December 1741\". The start is the article's and the end is the item's own."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4872309",
+  "wikipedia": {
+    "en": "Invasion of Cuba (1741)"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872309"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Cuba (1741)\", revision 1370623950"
+    }
+  ],
+  "title": "Invasion of Cuba (1741)",
+  "summary": "The English Wikipedia article \"Invasion of Cuba (1741)\", at revision 1370623950, opens: \"The invasion of Cuba took place between 4–5 August and 9 December 1741 during the War of Jenkins' Ear. A combined army and naval force under the command of Admiral Edward Vernon and Major-General Thomas Wentworth arrived off Cuba and fortified positions around their landing site at Cumberland Bay. Despite facing no serious opposition, neither commander felt prepared to advance on the Spanish settlement at Santiago de Cuba. Harassed by Spanish raids and with a mounting sick list, the British finally evacuated the island after several months of inactivity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872309, imported by tools/import/wikidata.mjs. The item's own description reads \"1741 English invasion during the War of Jenkins' Ear\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1741,
+    "date": "1741-08-04",
+    "endDate": "1741-12-09"
+  },
+  "place": "guantanamo-bay",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-jenkins-ear",
+  "category": "war",
+  "actors": []
+}

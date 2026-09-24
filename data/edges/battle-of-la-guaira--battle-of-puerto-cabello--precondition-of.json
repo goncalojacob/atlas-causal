@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-guaira--battle-of-puerto-cabello--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Guaira\", revision 1370446747"
+    }
+  ],
+  "from": "battle-of-la-guaira",
+  "to": "battle-of-puerto-cabello",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The La Guaira article states the condition and names the other record while doing it: \"97 of Knowles' men were killed, among whom was the captain of HMS Burford, and many of the ships were badly damaged or lost. Knowles was therefore unable to proceed to Puerto Cabello until he had refitted.\" Its own account of the days after says the same: Knowles \"decided to retire to west before sunrise on 6 March and attack nearby Puerto Cabello\", and went to sea again on 31 March \"once his main body had been refitted\". `precondition-of`: the damaged squadron is the state the April attack was mounted from, and \"therefore\" is the article's word. Probable, and on Wikipedia alone: the sentence is cited to \"The Navy In the War of 1739-48\", Cambridge University Press, p. 251, which the article names without an author, a year or an identifier.",
+  "dispute": null
+}

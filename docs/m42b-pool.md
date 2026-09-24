@@ -4600,180 +4600,569 @@ is not the same thing as an article that exists**, so a run that means to file a
 item under a name should export the title before it imports the item — one call,
 and here it stopped a duplicate of `Q932845` being written under a second name.
 
+## Batch 19 — the Spanish conquest vein, and the Americas' sixteenth century
+
+*24 September, the nineteenth fire. The cell is **the Americas' sixteenth
+century**, at 16 active and 5 main, which the eighteenth fire named as the
+thinnest workable cell in this partition. The vein is the one every fire since
+the eighth has listed and none has opened: **the nine of the Spanish conquest,
+every one of them inside an umbrella already here**.*
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 858 active | **866 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 843 | **849** |
+| **largest connected component** | 609 | **611** |
+| components | 192 | **194** |
+| events with no edge at all | 155 | **156** |
+| Europe before 1900 | 83 active, 18 main | 83 active, 18 main — untouched |
+| the `americas` lane | 202 active, 55 main | **210 active, 55 main** |
+| the Americas' 16th century | 16 active, 5 main | **24 active, 5 main** |
+| source records | 70 | **72** |
+| edges with two cited authors (rule 9) | 195 | **201** |
+
+**The before column is the merge's and not batch 18's.** This fire found
+`origin/m0` eight commits ahead with the 24 September review, M86's brief and
+amendment A14 on it, and `origin/m42` fourteen commits ahead with its curation
+fire's edges; both were merged before anything was imported, which is why the
+component starts at **609** and not batch 18's 607. The only conflict in either
+merge was `STATUS.md`, where both claim lines were kept. No cell of this
+partition moved in the merge.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | **24 / 5** | — | — | 43 / 6 |
+| 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
+| 18th c. | 24 / 3 | — | — | 17 / 2 | — | — | 41 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **374 / 89** | **139 / 31** | **143 / 67** | **210 / 55** | **—** | **—** | **866 / 242** |
+
+**South and Central America against North America is 176 to 19.** All eight of
+this batch are South or Central American — Peru, Colombia, Ecuador and
+Guatemala — so the brief's order inside the lane is kept.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-punta-quemada` | `Q1615387` | 1525-01 | `spanish-colonization-of-the-americas` | `cauca-department` | 16th |
+| `spanish-conquest-of-the-kingdom-of-q-umarkaj` | `Q3119074` | 1524 | `spanish-conquest-of-guatemala` | — | 16th |
+| `battle-of-puna` | `Q3636591` | 1531-04 | `spanish-colonization-of-the-americas` | `puna-island` | 16th |
+| `battle-of-vilcaconga` | `Q3636661` | 1533-11-08 – 11-09 | `spanish-conquest-of-the-inca-empire` | — | 16th |
+| `battle-of-cusco` | `Q1612814` | 1533-11-14 – 11-15 | `spanish-conquest-of-the-inca-empire` | `cusco` | 16th |
+| `battle-of-maraycalla` | `Q3636517` | 1534-05 | `spanish-conquest-of-the-inca-empire` | `maray-qalla` | 16th |
+| `battle-of-ollantaytambo` | `Q2338569` | 1537-01 | `spanish-conquest-of-the-inca-empire` | `ollantaytambo` | 16th |
+| `battle-of-chupas` | `Q1612597` | 1542-09-16 | `spanish-conquest-of-the-inca-empire` | `ayacucho` | 16th |
+
+**Twelve items put to `tools/import/wikidata.mjs --import` — eight events and
+four places — twelve created, none refused and none ambiguous**, in
+forty-seven calls. **The main count does not move**: five are inside the Inca
+conquest's own 1532–1572, one inside the conquest of Guatemala's 1521–1697, and
+the two that are older than the Inca conquest file under
+`spanish-colonization-of-the-americas`, whose 1493–1898 holds them.
+
+**Two of the eight are older than the umbrella the item names.** `Q1615387` and
+`Q3636591` both carry `P361` `Q636771`, the Spanish conquest of the Inca Empire,
+and both fall before its 1532 start — Punta Quemada is the end of Pizarro's
+first expedition and Puná the beginning of his third. Filing either under the
+conquest would be a `child-outside-parent`, and A7 gives no way to widen the
+conquest, whose article states 1532–1572. They file one level up instead, under
+the colonisation, where the span holds them and the subject is the same.
+
+### Summaries (A12 C1)
+
+**All eight carry the cached English lead as their summary**, at the revision
+the cache names, with the `wikipedia-en` citation beside the Wikidata one and
+the `summary-from-lead` flag. The shortest is the Battle of Cusco's at 106
+characters and the longest Q'umarkaj's at 694, so every one was quoted whole.
+
+### Intervals (A7): nothing to widen
+
+**Every one of the eight agrees with its own cited lead**, which is the first
+batch of this branch where the A7 pass writes nothing. Vilcaconga's lead says
+"November 8–9, 1533" and the item's `P580`/`P582` say the same; Ollantaytambo's
+"January 1537", Punta Quemada's "sometime in January 1525" and Puná's "April
+1531" each match the item's `P585` exactly; Cusco's "November 1533" and
+Maraycalla's "in 1534" are coarser than the item, which is not a disagreement.
+**Q'umarkaj was the one candidate and was refused.** Its lead ends "Following
+the war, two Spanish noblemen were put in charge of Q'umarkaj, although some
+fighting continued until 1527" — fighting after the war is not the war's own
+span, and widening 1524 to 1527 on that sentence would be the run's reading and
+not the article's statement. The date stands at 1524.
+
+### Places (A9, as A12 corrects it)
+
+**Four place records created by the import itself and two reused.** The import
+creates a place only for an item the seeds name as one, so the four location
+items went into the batch beside the eight events and the tool wrote them first,
+which is what its own ordering is for; `cusco` and `ayacucho` have been here
+since batch 8 and are reused.
+
+| place | item | precision | why |
+| --- | --- | --- | --- |
+| `maray-qalla` | `Q16473372` | `point` | an archaeological site, which is A12 C2's "point for a battlefield or site" |
+| `ollantaytambo` | `Q916382` | `city` | `Q515`, city |
+| `cauca-department` | `Q230602` | `region` | a department of Colombia, larger than a settlement and not a state |
+| `puna-island` | `Q2117213` | `region` | an island, the precision batch 18 gave Itamaracá |
+
+**Every precision comes from the item's own class and none was chosen here.**
+`Q839954`, archaeological site, is the one class the batch added to
+`data/imports/wikidata-seeds.json`; its label and its gloss were read off the
+class item over the network and not guessed, and the gloss — "place (or group of
+physical sites) in which evidence of past activity is preserved" — is what makes
+it `point` and not `city`.
+
+**The lane guard of A14(2) passes on all six**: every place's lane is `americas`
+and so is every event's.
+
+**Two of the eight are placeless and both honestly so.** `battle-of-vilcaconga`
+carries no `P625`, no `P276` and no `P131`; its `P17` is `Q28573`, the Inca
+Empire, which the class table types as an actor and not a place, so A9's chain
+runs out and the event takes the lane the empire's point derives. Its article
+ends `{{coord missing|Peru}}`, which is Wikipedia saying the same thing.
+`spanish-conquest-of-the-kingdom-of-q-umarkaj` carries none of the four
+properties at all, so its lane is named for it in the seeds file — the one lane
+this batch seeded.
+
+### Actors: none, and the reason is countable
+
+**The eight items name five distinct `P710` participants between them and the
+atlas holds an actor for none of them**: `Q766543` the Spanish monarchy,
+`Q28573` the Inca Empire, `Q2121220` the K'iche' Kingdom, `Q123531030`, and
+`Q419` Peru — which the atlas does hold, but as the modern republic, whose dates
+do not reach 1533. So all eight carry `actors: []`, which M67 A1 says is not a
+defect, and `docs/m53-polities.md` §4.1 is re-taken at **379 of 866** with the
+numerator unmoved. The nine polities the eighteenth fire named as the largest
+cheap thing in this partition are now eleven, and the two the conquest adds —
+the Inca Empire and the K'iche' Kingdom — would give `actors` lines to every
+record of this vein.
+
+### The six edges
+
+| edge | type | second author | what the article says |
+| --- | --- | --- | --- |
+| `battle-of-vilcaconga` → `battle-of-cusco` | `enabled` | — | "Vilcaconga ensured that the Spanish would not be stopped on their way to the Incan capital, Cuzco." |
+| `battle-of-cusco` → `battle-of-maraycalla` | `precondition-of` | — | Maraycalla was fought against "renegade forces of the Inca Empire, whose capital Cuzco had been taken by the Spaniards in November 1533" |
+| `battle-of-cusco` → `siege-of-cusco` | `precondition-of` | Hemming, p. 115 | "A Spanish expedition led by Francisco Pizarro had captured the Inca capital of Cusco on November 15, 1533 after defeating an Inca army headed by general Quisquis" |
+| `siege-of-cusco` → `battle-of-ollantaytambo` | `caused` | Hemming, p. 206 | "neither side was able to break the deadlock at Cusco for several months, so the Spaniard garrison decided to make a direct attack on Manco's headquarters at the town of Ollantaytambo" |
+| `battle-of-punta-quemada` → `spanish-conquest-of-the-inca-empire` | `precondition-of` | Prescott, pp. 96–102 | "the battle also represented a crucial step to Spain's discovery and conquest of the Peru" |
+| `battle-of-puna` → `spanish-conquest-of-the-inca-empire` | `precondition-of` | Prescott, pp. 142–143 | "The battle marked the beginning of Pizarro's third and final expedition prior to the fall of the Inca Empire." |
+
+**No edge runs from a parent to its own child**, which is A14 and which the two
+edges into `spanish-conquest-of-the-inca-empire` obey because neither Punta
+Quemada nor Puná is filed under it.
+
+**Two source records, both cited and not read**: `hemming-1993-conquest-of-the-incas`
+— John Hemming, *The Conquest of the Incas*, Macmillan 1993 — which is the work
+the Siege of Cusco and Ollantaytambo articles rest on throughout and which their
+own bibliographies name down to the ISBN; and `prescott-conquest-of-peru` —
+William H. Prescott, *History of the Conquest of Peru* — which is the only work
+the Punta Quemada and Puná articles cite, in two different reprints whose page
+numbers the locators keep apart. Source records go 70 → **72** and rule 9's
+count 195 → **201**.
+
+**A third second author was written and deleted.** The Vilcaconga article's only
+citation is a chapter — John F. Guilmartin, "The Cutting Edge: An analysis of
+the Spanish invasion and overthrow of the Inca empire, 1532-1539", in
+*Transatlantic Encounters* — and the article gives it no page, no ISBN and no
+URL. **Rule 13 asks a chapter for at least one resolvable identifier**, and
+inventing one is the thing this run may not do, so the source record was removed
+and the Vilcaconga edge rests on Wikipedia alone at one revision, which its
+explanation says.
+
+### What the component says
+
+**Six new edges, and the largest component moves by two.** `battle-of-punta-quemada`
+and `battle-of-puna` both point at `spanish-conquest-of-the-inca-empire`, which
+is in the 609, so those two join it and the component is **611**. The other four
+edges build a component of five around Cusco — Vilcaconga, the Battle of Cusco,
+Maraycalla, the Siege of Cusco and Ollantaytambo — and **that five does not touch
+the 611**, because the only record of this atlas it can reach is the conquest
+umbrella itself and every one of the five is filed under it. A child-to-parent
+edge there fails rule 4 on the dates and would be the thing A14 refuses in the
+other direction; the five wait for a sibling outside the umbrella.
+
+**`siege-of-cusco` stops being isolated.** It has been here since an earlier
+fire with no edge at all; two of this batch's six run into and out of it, which
+is why the isolated count goes 155 → 156 rather than 155 → 158 and why the
+component count goes 192 → 194 rather than further.
+
+**Two of the eight earn no edge and both are honest.** `battle-of-chupas` is the
+Almagrist civil war and its article argues from Francisco Pizarro's
+assassination, his brother's execution at Las Salinas and Vaca de Castro's
+governorship — **not one of the three is a record here**, and the one link the
+article does make, to Las Salinas, has nothing to point at.
+`spanish-conquest-of-the-kingdom-of-q-umarkaj` is a four-sentence article whose
+only reach outside itself is that Alvarado's 400 allies were "Aztec, Tlaxcaltec
+and Cholultec" — a fact about the force and not a claim that the conquest of
+Mexico brought the conquest of Guatemala about. `spanish-conquest-of-guatemala`
+is its parent and A14 forbids the edge down to it. **The batch wrote no edge
+rather than two hollow ones.**
+
+### What was refused, and why
+
+- **`Q7573336`, the Spanish conquest of Petén** — the ninth of the vein — was
+  read and set aside: its `P580`/`P582` are 1618–1697, so it is the Americas'
+  **seventeenth** century and not this cell's, and it is named below as the
+  cheapest thing the next fire can take. Its Wikidata label carries somebody's
+  vandalism ("Spanish conquest of Petén metides") and `titleFor()` would take
+  the article's title, which is clean.
+- **`battle-of-cajamarca` → `battle-of-vilcaconga`** was drafted and dropped.
+  The Vilcaconga article's Battle section opens "The Spanish emerged as victors
+  in the Battle of Cajamarca in November 1532" and runs from there to the
+  ransom, Atahualpa's execution and "The Spanish, for their part, sought to
+  conquer Cuzco." That is the article setting a scene, not stating that
+  Cajamarca brought Vilcaconga about — the refusal class A14(4) names — and it
+  would have joined an isolated record to the five for nothing but chronology.
+- **`spanish-conquest-of-the-aztec-empire` → `spanish-conquest-of-the-kingdom-of-q-umarkaj`**
+  was considered on the strength of Alvarado's Aztec allies and refused, above.
+
+### Deviations
+
+**1253. A hatnote that disambiguates two articles is not a statement that a
+record is in the wrong place, and the infobox is where to check.** The Battle of
+Maraycalla article opens `{{About||the archaeological site in the Ancash Region,
+Peru|Maray Qalla}}`, which reads at first like Wikipedia saying the battle and
+the site are different things and the item's `P276` therefore wrong. It is not:
+the same article's infobox gives `location=[[Maray Qalla|Maraycalla]]`, so
+Wikipedia itself puts the battle at the site, and the hatnote is only keeping two
+**article titles** apart. The place record had already been half-deleted when the
+infobox was read. **A hatnote is about articles; an infobox is about the thing.**
+
+**1254. Rule 13 can cost a batch its second author, and the honest answer is to
+delete the source record rather than furnish an identifier.** The Vilcaconga
+article cites one work and gives it no page, no ISBN and no URL. A chapter
+without a resolvable identifier is rule 13, and every way past it — looking the
+ISBN up in a catalogue and writing it as though the article had given it,
+demoting the chapter to a `book`, inventing a URL — is the run asserting
+something the article does not. The record was written, refused by the validator
+and deleted, and the edge says in its own explanation that it rests on Wikipedia
+alone.
+
+**1255. A measurement is re-taken with the same rule, never re-derived.** This
+fire wrote its own lane-and-century script and used the strict convention,
+`Math.floor((y - 1) / 100) + 1`, where the eighteen batch notes before it use
+`Math.floor(y / 100) + 1`. The only records the two disagree about are the ones
+dated exactly 1500 — two of them here — but the disagreement showed up as the
+Americas' sixteenth century apparently losing two events in a merge that did not
+touch them, and the first draft of batch 19's note explained the loss with a
+cause that did not exist. **Before a fire reports a cell as having moved, it
+reproduces the previous fire's number with the previous fire's rule**; a number
+that will not reproduce is a fault in the script before it is a fact about the
+corpus.
+
+## Batch 20 — the War of Jenkins' Ear in Panama, Cuba and Venezuela, and the Americas' eighteenth century
+
+*24 September, the nineteenth fire's second batch. The cell is **the Americas'
+eighteenth century**, at 17 active and 2 main, which batch 19 left as the
+thinnest cell in this partition that a vein was ready for, and the vein is the
+six South and Central American items the thirteenth fire listed and left.
+Europe's nineteenth was thinner and §"The cell this fire should have taken
+first" is why it was not taken.*
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 866 active | **872 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 849 | **853** |
+| largest connected component | 611 | **611** — unmoved, and §"What the component says" is why |
+| components | 194 | **196** |
+| events with no edge at all | 156 | **156** — every one of the six earns an edge |
+| the `americas` lane | 210 active, 55 main | **216 active, 55 main** |
+| the Americas' 18th century | 17 active, 2 main | **23 active, 2 main** |
+| source records | 72 | **73** |
+| edges with two cited authors (rule 9) | 201 | **202** |
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | 24 / 5 | — | — | 43 / 6 |
+| 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
+| 18th c. | 24 / 3 | — | — | **23 / 2** | — | — | 47 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **374 / 89** | **139 / 31** | **143 / 67** | **216 / 55** | **—** | **—** | **872 / 242** |
+
+**South and Central America against North America is 182 to 19.** All six are
+Panamanian, Cuban or Venezuelan, which is the brief's order inside the lane and
+is why the four North American and the four open-sea items of the same war were
+left where the thirteenth fire put them.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-porto-bello-1739` | `Q3024756` | 1739-11-22 | `war-of-jenkins-ear` | `portobelo` | 18th |
+| `invasion-of-cuba-1741` | `Q4872309` | 1741-08-04 – 12-09 | `war-of-jenkins-ear` | `guantanamo-bay` | 18th |
+| `battle-of-la-guaira` | `Q4871513` | 1743-03-02 – 03-05 | `war-of-jenkins-ear` | `la-guaira` | 18th |
+| `battle-of-puerto-cabello` | `Q4872124` | 1743-04-16 | `war-of-jenkins-ear` | `puerto-cabello` | 18th |
+| `battle-of-santiago-de-cuba-1748` | `Q4872306` | 1748-04-09 | `war-of-jenkins-ear` | `santiago-de-cuba` | 18th |
+| `battle-of-havana-1748` | `Q1136414` | 1748-10-12 – 10-14 | `war-of-jenkins-ear` | `havana` | 18th |
+
+**Ten items put to the import — six events and four places — ten created, none
+refused and none ambiguous**, in forty-six calls. Every one carries `P361`
+`Q54434` and every date falls inside the war's own 1739-10-22 to 1748-10-18, so
+**the main count does not move** and `war-of-jenkins-ear` goes from one child to
+seven. Two classes were added, `Q2264924` port city and `Q39594` bay, each with
+its label and its gloss read off the class item itself.
+
+### Three intervals written from the cited article (A7)
+
+Every one is a widening from the record's own article at the revision the record
+cites, and in every one the item gave a single `P585` where the article gives a
+span:
+
+| record | item's `P585` | what the lead says | written |
+| --- | --- | --- | --- |
+| `invasion-of-cuba-1741` | 1741-12-09 | "took place between 4–5 August and 9 December 1741" | 1741-08-04 – 1741-12-09 |
+| `battle-of-la-guaira` | 1743-03-02 | "took place between 2–5 March 1743" | 1743-03-02 – 1743-03-05 |
+| `battle-of-havana-1748` | 1748-10-12 | "was fought between 12–14 October 1748" | 1748-10-12 – 1748-10-14 |
+
+Each carries the `date-from-article` flag and a `review.note` saying what was
+read from where. **The invasion of Cuba is the one that matters**: the item's
+single December date is the day the British evacuated, so the record was four
+months short of the thing it names.
+
+### Places (A9, as A12 corrects it)
+
+**Four created by the import and two attached by hand.** `portobelo`
+(`Q797147`, city, from `Q2264924` port city), `guantanamo-bay` (`Q208035`,
+region, from `Q39594` bay), `la-guaira` (`Q873405`, city) and `puerto-cabello`
+(`Q995695`, city) are the import's. `havana` and `santiago-de-cuba` were already
+here, at the right coordinates and the right precision — and **neither carries a
+`wikidata` field**, so the import's item index could not see them and would have
+written a second Havana. They were attached by hand and the two records say so
+in their `review.note`.
+
+**That is a gap worth a pass and not a batch.** A place record written before
+the identity fields existed is invisible to every import that comes after it;
+`tools/import/wikidata.mjs --reconcile` is the tool that closes it, it is
+additive by `tools/import/identity.mjs`'s own rule, and no fire on this branch
+has run it. Until one does, every batch has to check the place directory by name
+before it seeds a location item, which is what this batch did.
+
+**The lane guard of A14(2) passes on all six**: every place is in the `americas`
+lane and so is every event.
+
+### The four edges
+
+| edge | type | second author | what the article says |
+| --- | --- | --- | --- |
+| `battle-of-porto-bello-1739` → `battle-of-cartagena-de-indias` | `enabled` | — | "after the victory, British Prime Minister Robert Walpole was under great pressure by the Opposition to launch similar raids along the Spanish coast. Vernon's next battle in this campaign, a large-scale invasion of Cartagena in 1741, ended in defeat." |
+| `battle-of-cartagena-de-indias` → `invasion-of-cuba-1741` | `caused` | Pares, pp. 91–92 | "Vernon had made an unsuccessful attempt to capture Cartagena in 1741, and after his repulse he directed the fragments of his sickly and dispirited followers against the island of Cuba." |
+| `battle-of-la-guaira` → `battle-of-puerto-cabello` | `precondition-of` | — | "Knowles was therefore unable to proceed to Puerto Cabello until he had refitted." |
+| `battle-of-santiago-de-cuba-1748` → `battle-of-havana-1748` | `precondition-of` | — | Knowles "had failed to subdue Santiago de Cuba the following year. After having his ships had refitted at Port Royal Knowles sailed on a cruise…" |
+
+**One source record**, `pares-1936-war-and-trade-in-the-west-indies` — Richard
+Pares, *War and Trade in the West Indies*, Oxford University Press 1936 — which
+the Cuba article cites on the sentence itself. Source records go 72 → **73** and
+rule 9's count 201 → **202**.
+
+**Two second authors were available and neither could be written.** The Porto
+Bello article footnotes its Cartagena sentence to Victoria 2005 and carries its
+own `{{Page needed}}` tag on that footnote, so there is no locator; the Marley
+it cites elsewhere is the **1998 first edition**, and this atlas's
+`marley-2008-wars-of-the-americas` is the second, so the page numbers are not
+the same pages and the record must not be made to stand for both. The La Guaira
+sentence is cited to *The Navy In the War of 1739–48*, Cambridge University
+Press, p. 251, which the article names with no author, no year and no
+identifier. Both edges say so in their own explanations.
+
+### The cell this fire should have taken first, and the measurement fault behind it
+
+**Europe's nineteenth century holds 15 active events and 10 of them are main**,
+which makes it the thinnest cell in this partition — thinner than the Americas'
+sixteenth that batch 19 took and the eighteenth that this batch took. **No fire
+of this branch has named it.** The "thinnest cells left" line the run-stands
+section has carried since batch 12 lists the Americas' centuries and Europe's
+15th to 18th and stops there, and a cell nobody lists is a cell nobody takes.
+It is named at the head of the run-stands table from this fire on.
+
+**Ten main of fifteen is the shape of the cell, and it is the cheap kind.**
+Europe's nineteenth is almost all umbrellas with nothing under them, so a batch
+of parts there raises the main count by nothing and fills the emptiest century
+of the lane that the review of 24 September measured as the atlas's largest.
+
+**And a measurement fault the fire found in its own script.** This fire's first
+table put 1500 in the fifteenth century — `Math.floor((y - 1) / 100) + 1`, the
+strict convention — and the eighteen batch notes before it use
+`Math.floor(y / 100) + 1`, which puts 1500 in the sixteenth. Two events,
+`portuguese-landfall-in-brazil-1500` and
+`indigenous-depopulation-of-coastal-brazil`, sit exactly on the boundary, so the
+two conventions disagree about the Americas' fifteenth and sixteenth by two
+records and about nothing else. **The tables of batches 19 and 20 were written
+once under the strict convention and rewritten under the run's own**, so every
+number in this file is comparable with every number before it: the Americas'
+sixteenth went 16 → 24, not 14 → 22. **A run that re-derives a measurement
+rather than re-taking it with the same rule reports a change that never
+happened**, which here would have been two events appearing to leave a century
+in a merge that did not touch them.
+
+### What the component says
+
+**Four edges and the largest component does not move.** `battle-of-cartagena-de-indias`
+has been in a component of three since an earlier fire and is not in the 611;
+Porto Bello and the invasion of Cuba join it and make it five. La Guaira and
+Puerto Cabello are a component of two and Santiago de Cuba and Havana another,
+which is the component count going 194 → **196** while the isolated count stays
+at 156 — **every one of the six earns an edge, which is the first batch of this
+branch where all of them do.**
+
+**The War of Jenkins' Ear itself is the door and it is shut for the same reason
+the Inca conquest's was.** All seven records of the war are now filed under it,
+so every edge one of them could take to the umbrella is a child pointing at its
+own parent: rule 4 refuses it on the dates and A14 refuses the reverse. The
+war's own article is where a run should look for the edge out — to the War of
+the Austrian Succession, which its lead calls this war a part of and which this
+atlas does not hold.
+
 ## Where the run stands, for the fire that picks it up
 
-*24 September, after the eighteenth fire and its two batches, 17 and 18.*
+*24 September, after the nineteenth fire and its two batches, 19 and 20.*
 
 | | |
 | --- | --- |
-| corpus | **858 active** |
+| corpus | **872 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **607** |
-| components | 195 |
-| events with no edge at all | 159 |
+| **largest connected component** | **611** |
+| components | 196 |
+| events with no edge at all | 156 |
 | Europe before 1900 | 83 active, 18 main |
-| the `americas` lane | **202 active, 55 main** |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 16th (16, 5)**, the Americas' 18th (17, 2), the Americas' 17th (18, 6), Europe's 16th (19, 1) |
-| the cells this fire moved | Europe's 16th, 12 → 19; the Americas' 17th, 14 → 18; both with their main counts untouched |
+| the `americas` lane | **216 active, 55 main** |
+| south and central America against north, inside that lane | 182 to 19 |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 19th (15, 10)**, the Americas' 17th (18, 6), Europe's 16th (19, 1), Europe's 17th (21, 2), the Americas' 18th (23, 2), Europe's 18th (24, 3), the Americas' 16th (24, 5) |
+| the cells this fire moved | the Americas' 16th, 16 → 24; the Americas' 18th, 17 → 23; both with their main counts untouched |
 
-**The thinnest workable cell is now the Americas' sixteenth century**, at 16
-active and 5 main, and its vein has been sitting ready for three fires: the nine
-of the conquest vein listed below, every one inside an umbrella already here.
-After it come the Americas' 18th (the six South and Central American items of the
-War of Jenkins' Ear) and the Americas' 17th (the six Brazilian items batch 18
-left). **Europe's 16th is no longer the trailing cell and is nowhere near spent**:
-nine more parts of the War of the League of Cambrai and about thirty of the other
-phases came back in this fire's one query and are listed below.
+**This fire merged before it imported.** `origin/m0` was eight commits ahead
+with `docs/review-2026-09-24.md`, `docs/m86-brief.md` and **amendment A14**, and
+`origin/m42` fourteen ahead with its curation fire's edges. Both merged with one
+conflict each time, `STATUS.md`, both sides kept; `data/index/` was dropped and
+rebuilt. **The merge moved the graph and not the cells**: the largest component
+was 607 on batch 18's head and 609 after it, from `origin/m42`'s curation edges,
+and no century of this partition changed.
 
-**The order of a fire on this branch, which deviations 1242 and 1251 settle
-together.** Resolve the merge and **commit it**; only then
-`node tools/build-index.mjs`; then commit the index as its own commit. The same
-order is 798's for a batch: records committed, then rebuild, then commit the
-index — **and `docs/m53-polities.md` §4.1 is re-taken in the commit that writes
-the records**, because its denominator is the active count and
-`tests/m53.test.mjs` fails the moment the records land without it. This fire kept
-798's order and missed the §4.1 half, which is deviation 1251.
+**A14 binds this branch and the one clause that touches a batch is obeyed**: no
+edge this fire wrote runs from a parent to its own child. **A14's six data
+passes over the existing records are M42's**, and nothing here took them.
+
+**The thinnest cell in this partition is Europe's nineteenth century**, at 15
+active and 10 main — see "The cell this fire should have taken first" in batch
+20. After it comes **the Americas' seventeenth**, at 18 and 6, whose vein is
+named below and is small — two Brazilian items with no
+point, which makes it a place-record batch. **After it, Europe's sixteenth at 19
+and 1 is the deepest vein in this partition by far**: the Italian Wars query of
+batch 17 returns about sixty-eight items, nine of them here, and the other
+phases listed below are four or five batches' worth that need no new class.
+
+**The order of a fire on this branch is unchanged and it held twice today.**
+Resolve the merge and commit it; only then `node tools/build-index.mjs`; then
+the index as its own commit. For a batch it is 798's order — records committed,
+then rebuild, then the index — **and `docs/m53-polities.md` §4.1 is re-taken in
+the commit that writes the records**, which this fire did for both batches
+(379 of 866, then 379 of 872). Deviation 1251 has not recurred.
+
+**A test caught a filing before the check did, and the lesson is 711's.** The
+m67 suite asserts that a filed child naming neither an actor nor a place is one
+the measurement argues for **in `docs/m42b-pool.md`** — this file is in its
+`ARGUED_IN` list. Batch 19 wrote two such children, `battle-of-vilcaconga` and
+`spanish-conquest-of-the-kingdom-of-q-umarkaj`, and the suite failed until the
+batch note named them. **A placeless, actorless child costs a paragraph in this
+file, and the fire that writes one should write the paragraph in the same
+breath.**
+
+**The check is green on the head of this fire.** Run **1654** on `c5079980`
+concluded `success` — "Validate records" and "Tests" both green; runs 1639,
+1645, 1646, 1651 and 1652 were each cancelled by the concurrency group as the
+next push landed, which is the pattern every fire of this branch sees. Locally:
+`node tools/validate.mjs --index` clean at **0 errors and 502 warnings**, and
+**2,071 tests pass with none failed and none skipped** — 1,792 in the 151 pure
+suites and 279 in the 36 browser suites, run the way the check runs them, one
+browser suite at a time.
 
 **For article text beyond the cached lead, `Special:Export` and nothing else**
-(deviation 1247). It answered eleven times in this fire with the revision id in
+(deviation 1247). It answered eleven times this fire, with the revision id in
 the XML and the wikitext whole, which is where the `<ref>` tags and therefore
 M72's second author come from. `api.php` is still refused.
 
-### The vein this batch opened, and what is left in it
+### The veins, and which are open
 
-**One SPARQL query returns every part of the Italian Wars that has an English
-article — seventy-four rows, about sixty-eight items, nine of them records
-here.** It costs one call and it is the whole of the work of finding the next
-four or five batches in Europe's sixteenth century. The query is `?item wdt:P361
-?parent` over `VALUES ?parent { wd:Q273348 wd:Q1355145 wd:Q2087151 wd:Q636365
-wd:Q698281 wd:Q1429256 wd:Q2452024 wd:Q15542964 wd:Q2524228 }` with an
-`en.wikipedia.org` sitelink required.
+**The Americas' seventeenth century — the thinnest cell — has two items left and
+both need a place record.** `Q106542703` Battle of Mata Redonda (1636-01-18,
+`P276` Porto Calvo) and `Q121365322` Action at Tamanana, 9 September 1645
+(`P276` Tamandaré); both file under `dutch-brazil-1630-1654`, neither carries a
+point of its own, and the atlas has a place record for neither location. That is
+the shape batch 16 and batch 20 both worked in and it is not expensive.
+`Q138011120`, the South Atlantic campaign, is a sea campaign whose lane a run
+should settle first; the three Luanda items are Angola's and **M42's**;
+`Q4677306` and `Q4677341` are the sea fights off Ceylon and are **Asia's and
+M42's**; and **`Q10369402` must not be imported** (deviation 1252).
 
-**The nine left of the War of the League of Cambrai**, all filing under
-`war-of-the-league-of-cambrai` and so costing no main event:
+**Europe's sixteenth century is the deepest vein and is nowhere near spent.**
+The nine of the War of the League of Cambrai the eighteenth fire listed are
+unchanged and unimported: `Q3636372` Casaloldo, `Q11703607` the Sack of Brescia,
+`Q3312328` the Spanish conquest of Iberian Navarre, `Q699475` Guinegate,
+`Q1300742` Flodden, `Q3485875` Dijon, `Q110448326` Crema, `Q575924`
+Saint-Mathieu, `Q124249264` the citadel of Vicenza. So are the other phases:
+the 1521–1526 war's seven, the League of Cognac's six — **`Q465627`, the Sack of
+Rome of 1527, is the one a reader would look for first** — the 1542–1546 war's
+seven, the 1551–1559 war's four, the 1494–1495 war's four and the 1499–1504
+wars' one. The query is one call and it is in batch 17's section.
 
-| item | title | date | `P625` | note |
-| --- | --- | --- | --- | --- |
-| `Q3636372` | Battle of Casaloldo | 1509-05-10 | yes | four days before Agnadello; the war article calls it a Venetian victory over Mantua |
-| `Q11703607` | Sack of Brescia | 1512-02-28 | yes | Gaston de Foix's storm of the city, six weeks before Ravenna |
-| `Q3312328` | Spanish conquest of Iberian Navarre | 1512 | yes | the query returns it under this war; the 1521–1526 article links its own 1521 section, so A8's second parent is worth checking before filing |
-| `Q699475` | Battle of Guinegate | 1513-08-26 | yes | the Battle of the Spurs; the English front |
-| `Q1300742` | Battle of Flodden | 1513-09-19 | yes | the English front again, and the largest article of the nine |
-| `Q3485875` | Siege of Dijon | 1513-09-18 | yes | the Swiss in Burgundy after Novara |
-| `Q110448326` | Siege of Crema | 1513 | yes | year only |
-| `Q575924` | Battle of Saint-Mathieu | 1512-08-20 | yes | naval, off Brest |
-| `Q124249264` | Battle of the citadel of Vicenza | 1509-12-06 | no | the war article dates it 26–29 November 1509 and calls it Pitigliano's recapture; no `P625`, so it needs a place record or a seeded lane |
+**The Spanish conquest vein is spent but for one item.** `Q7573336`, the
+**Spanish conquest of Petén**, was read this fire and set aside: its span is
+1618–1697, so it is the Americas' seventeenth century and not the sixteenth, and
+it files under `spanish-conquest-of-guatemala`, which holds 1521–1697, so it
+costs no main event. Its Wikidata label carries vandalism and `titleFor()` takes
+the article's title instead. **It is the cheapest single record left in this
+partition.**
 
-**Eight of the nine carry `P625` and every one of them is inside 1508-02 to
-1516-12**, so a batch of them is the same shape as this one and needs no new
-class.
-
-**The other phases, from the same query, counting only the parts that carry
-`P625`.** The 1521–1526 war has seven (`Q3174545` Pamplona, `Q2889540` Noáin,
-`Q7879248` Mézières, `Q683341` Bicocca, `Q9291683` Genoa, `Q1541712`
-Fuenterrabía, `Q3485951` Marseille); the League of Cognac six (`Q465627` the
-Sack of Rome 1527, `Q16529030` Naples, `Q38251286` Capo d'Orso, `Q2746040`
-Landriano, `Q981042` Florence, `Q633362` Gavinana); the 1542–1546 war seven
-(`Q7510304` Perpignan, `Q2744068` Muros Bay, `Q2237484` Ceresole, `Q3822861`
-Serravalle, `Q3486015` Saint-Dizier, `Q7885742` Boulogne, `Q2297059` the
-Solent); the 1551–1559 war four (`Q3625430` Mirandola, `Q3485960` Metz,
-`Q3486028` Thionville, `Q2236963` Gravelines); the 1494–1495 war four
-(`Q764793` Fornovo, `Q2670926` Seminara, `Q5708031` Atella, and `Q112232807`
-Novara 1495 without a point); and the 1499–1504 wars one (`Q1443091`
-Garigliano). **`Q465627`, the Sack of Rome of 1527, is the one of all of these
-that a reader would look for first**, and it files under
-`war-of-the-league-of-cognac`, which `battle-of-pavia` already points at.
-
-**Where a batch of those would connect.** `battle-of-pavia` and
-`war-of-the-league-of-cognac` are a component of two, `italian-war-of-1494-1495`
-and `italian-wars-of-1499-1504` another, `italian-war-of-1542-1546` and
-`italian-war-of-1551-1559` a third, and `italian-wars`,
-`war-of-the-league-of-cambrai`, `italian-war-of-1521-1526`,
-`italian-war-of-1536-1538` and `battle-of-st-quentin` are isolated. A batch that
-writes the Thionville and Gravelines end of the 1551–1559 war reaches
-`battle-of-st-quentin`; a batch of the Cognac parts reaches `battle-of-pavia`.
-**None of them reaches the 604**, for the reason batch 17 states: the tree's door
-to the rest of this atlas is the French Wars of Religion or the Reformation, and
-both are main events.
-
-### The nine polities, which is the largest cheap thing in this partition
-
-Every item of batch 17 named two to four `P710` participants and the atlas holds
-an actor for **none** of the nine: `Q4948` Venice, `Q70972` the Kingdom of
-France, `Q12548` the Holy Roman Empire, `Q170174` the Papal States, `Q693570`
-Ferrara, `Q153529` Milan, `Q435583` the Old Swiss Confederacy, `Q766543` and
-`Q21088788` the Spanish monarchy. Nine actor records would give `actors` lines to
-every European record before 1800 this branch holds, and `docs/m53-polities.md`
-§4.1 has not moved by an import of this lane since it was first taken. A fire
-that takes it should read `NC_ORIGINS` in `src/origin.js` first: an actor an
-import creates is licensed differently from one written here.
-
-### The veins earlier fires named, and which are still open
-
-**The Americas' seventeenth century, four of its items spent by batch 18 and six
-left.** `?item wdt:P361 ?parent` over `VALUES ?parent { wd:Q377269 wd:Q19019163 }`
-with an English sitelink returns **forty-four distinct items**; the war was fought
-on four continents, so most of them are Asia's or Africa's and **M42's, not this
-lane's**. What is left of that query once the Asian items are set aside, with the
-lane of each said plainly; all of them file under `dutch-portuguese-war` or
-`dutch-brazil-1630-1654` and none costs a main event:
-
-| item | title | date | point |
-| --- | --- | --- | --- |
-| `Q106542703` | Battle of Mata Redonda | 1636-01-18 | no; `P276` is Porto Calvo, which the atlas has no place record for |
-| `Q121365322` | Action at Tamanana, 9 September 1645 | 1645-09-09 | no; `P276` is Tamandaré |
-| `Q138011120` | South Atlantic campaign | 1647-02 | no; `P276` is the South Atlantic Ocean |
-| `Q4871476` | Battle of Kombi | 1647-10-29 | no, and no `P276` either — it is Angola's and so M42's |
-| `Q5037028` | Capture of Luanda | 1641 | Angola's, M42's |
-| `Q130377423` | Filips van Zuylen's campaign against Luanda | 1624-06 | Angola's, M42's |
-
-**Two of the six are plainly Brazilian and this lane's** — Mata Redonda and the
-action at Tamandaré — **and neither carries a point**, so a batch of them is a
-place-record batch first, which is the shape batch 16 worked in and is not
-expensive. The South Atlantic campaign is a sea campaign whose lane a run should
-settle before importing it, and the three Luanda items are Angola's and M42's.
-**`Q10369402` must not be imported** — see deviation 1252.
-
-**A correction to what the fifteenth to seventeenth fires wrote, three times
-over.** `Q4677306` and `Q4677341` are **not** the actions that end the war in
-Brazil: both have `P276` `Q35381`, Colombo, and they are the sea fights off
-Ceylon. **They are Asia's and belong to M42**, and this branch should not import
-them. `Q19019163` *Dutch invasions of Brazil* (1624–1654) is still an umbrella
-whose span already holds seven records here; a fire that takes it should check
-first that it does not sit between the war and Dutch Brazil in the way deviation
-1244 refuses.
-
-**The nine of the conquest vein are unchanged and still open** — the Americas'
-sixteenth century, every one inside an umbrella already here, so none costs a
-main event: `Q3636661` Vilcaconga, `Q1612814` Battle of Cusco, `Q3636517`
-Maraycalla, `Q2338569` Ollantaytambo, `Q1612597` Chupas, `Q3119074` Q'umarkaj,
-`Q1615387` Punta Quemada, `Q3636591` Puná, `Q7573336` Petén. The two dates to
-check before importing `Q1615387` and `Q3636591` are as the sixteenth fire left
-them.
-
-**The fifteen of the War of Jenkins' Ear are unchanged**, six of them South and
-Central America and the next batch's in that lane by the brief's own order:
-`Q3024756` Porto Bello, `Q4872309` the invasion of Cuba, `Q4871513` La Guaira,
-`Q4872124` Puerto Cabello, `Q4872306` Santiago de Cuba, `Q1136414` Havana. Four
-are at sea and five are North American, which A10's order puts behind them while
-the split is 158 to 19. **`Q9172888`, the Battle of Combapata**, is still refused
-for want of a place record for `Q3312913`, and still worth a fire: it is the
-engagement the Túpac Amaru rising turned on.
+**The War of Jenkins' Ear has nine items left and none of them is this lane's
+first choice.** Four are North American and four are at sea, which A10's order
+puts behind South and Central America while the split is 182 to 19;
+**`Q9172888`, the Battle of Combapata**, is still refused for want of a place
+record for `Q3312913`, and is still worth a fire.
 
 **The French Wars of Religion (`Q673175`) are still free to whoever brings their
-children, and still cost a main event**, which is the whole of why Europe's
-sixteenth century has one main and nineteen records.
+children, and still cost a main event**, which with the Italian Wars' tree is
+the whole of why Europe's sixteenth century has one main event and nineteen
+records.
 
-**A lesson batch 16 paid for and this fire used.** A part-to-umbrella edge is
-available only where the part is what *began* the umbrella: rule 4 refuses it
-otherwise. What carries the same argument is the edge from the umbrella *forward*
-into the part. Batch 17 wrote no such edge and needed none.
+### The cheap things this partition keeps not doing
 
-**A lesson batch 17 paid for.** An edge that would join two components is still
-not writable if the article does not state it. `battle-of-marignano` →
-`italian-war-of-1521-1526` was drafted and dropped for exactly that: the 1521
-article gives the Imperial election and Leo X's need of Charles as the war's
-causes and never mentions Marignano.
+**`--reconcile` has never been run on this branch, and batch 20 paid for it.**
+`havana` and `santiago-de-cuba` are place records with the right coordinates and
+no `wikidata` field, so the import cannot see them and would have written each a
+second time; they were attached by hand. Every place record written before the
+identity fields existed is in the same state. `tools/import/wikidata.mjs
+--reconcile` is additive by `tools/import/identity.mjs`'s rule — fill a gap,
+never change a value, never sign — and closing that gap once would make every
+later batch cheaper and safer.
+
+**The eleven polities.** Every item of batches 17, 19 and 20 named two to four
+`P710` participants and the atlas holds an actor for almost none: `Q4948`
+Venice, `Q70972` the Kingdom of France, `Q12548` the Holy Roman Empire,
+`Q170174` the Papal States, `Q693570` Ferrara, `Q153529` Milan, `Q435583` the
+Old Swiss Confederacy, `Q766543` and `Q21088788` the Spanish monarchy, and now
+`Q28573` the Inca Empire and `Q2121220` the K'iche' Kingdom. Eleven actor
+records would give `actors` lines to nearly every record before 1800 this branch
+holds, and `docs/m53-polities.md` §4.1's numerator has not moved by an import of
+this lane since it was first taken — 379, through 841, 847, 854, 858, 866 and
+now 872. **A fire that takes it should read `NC_ORIGINS` in `src/origin.js`
+first**: an actor an import creates is licensed differently from one written
+here.
 
 ### The two questions for the owner are unchanged and both still block a century
 

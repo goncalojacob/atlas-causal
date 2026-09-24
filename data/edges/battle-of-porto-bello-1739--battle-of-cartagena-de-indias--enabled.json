@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-porto-bello-1739--battle-of-cartagena-de-indias--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505, § Aftermath"
+    }
+  ],
+  "from": "battle-of-porto-bello-1739",
+  "to": "battle-of-cartagena-de-indias",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Porto Bello article argues the larger expedition out of this victory: \"Vernon became a popular hero in the wake of the victory and was promoted to the rank of admiral. He had been one of the advocates of a more belligerent approach towards Britain's enemies even prior to this expedition, and after the victory, British Prime Minister Robert Walpole was under great pressure by the Opposition to launch similar raids along the Spanish coast. Vernon's next battle in this campaign, a large-scale invasion of Cartagena in 1741, ended in defeat.\" `enabled`: the acclaim and the political pressure it made are what the article says put Vernon in front of Cartagena, and it claims no more than that. Probable, and on Wikipedia alone at one revision: the sentence about Cartagena is footnoted to Victoria 2005 with the article's own {{Page needed}} tag on it, so there is no locator to carry a second author, and the Marley the article cites elsewhere is its 1998 first edition, not the 2008 one this atlas holds.",
+  "dispute": null
+}

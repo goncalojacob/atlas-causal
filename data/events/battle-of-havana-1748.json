@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-havana-1748",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "date-from-article"
+    ],
+    "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 12 October 1748, and the English Wikipedia lead, at revision 1370442712, says the battle \"was fought between 12-14 October 1748\". The end is the article's. Place attached by hand: the place record was already here without a Wikidata identifier, so the import could not match it to the item and would have written a second one."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1136414",
+  "wikipedia": {
+    "en": "Battle of Havana (1748)"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1136414"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Havana (1748)\", revision 1370442712"
+    }
+  ],
+  "title": "Battle of Havana (1748)",
+  "summary": "The English Wikipedia article \"Battle of Havana (1748)\", at revision 1370442712, opens: \"The Battle of Havana was fought between 12–14 October 1748 off Havana between the British and Spanish navies during the War of Jenkins' Ear. A British squadron under Rear-Admiral of the Red Charles Knowles attacked a Spanish squadron led by Lieutenant-general Andrés Reggio during an attempt by Knowles to intercept the Spanish treasure fleet.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1136414, imported by tools/import/wikidata.mjs. The item's own description reads \"1748 naval battle between British and Spanish squadrons in the War of Jenkins' Ear\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1748,
+    "end": 1748,
+    "date": "1748-10-12",
+    "endDate": "1748-10-14"
+  },
+  "place": "havana",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-jenkins-ear",
+  "category": "war",
+  "actors": []
+}

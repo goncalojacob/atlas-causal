@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-cusco--battle-of-ollantaytambo--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ollantaytambo\", revision 1376074803, § Background"
+    },
+    {
+      "source": "hemming-1993-conquest-of-the-incas",
+      "locator": "p. 206"
+    }
+  ],
+  "from": "siege-of-cusco",
+  "to": "battle-of-ollantaytambo",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Ollantaytambo article gives the raid its reason in so many words: \"As a result of these events, neither side was able to break the deadlock at Cusco for several months, so the Spaniard garrison decided to make a direct attack on Manco's headquarters at the town of Ollantaytambo, 70 km northwest of the city.\" The lead says the same: \"To end the stand-off, the besieged mounted a raid against the emperor's headquarters.\" `caused`: the deadlock at Cusco is what the article says produced the expedition, not merely what preceded it. Probable, and with a second author: the sentence carries Hemming, The Conquest of the Incas, p. 206.",
+  "dispute": null
+}

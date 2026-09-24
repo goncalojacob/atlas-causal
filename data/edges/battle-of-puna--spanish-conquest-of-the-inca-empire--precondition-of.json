@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Puná\", revision 1370586803"
+    },
+    {
+      "source": "prescott-conquest-of-peru",
+      "locator": "pp. 142-143"
+    }
+  ],
+  "from": "battle-of-puna",
+  "to": "spanish-conquest-of-the-inca-empire",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Puná article opens by placing the battle where the conquest begins: it was \"a peripheral engagement of Francisco Pizarro's conquest of Peru\", and \"The battle marked the beginning of Pizarro's third and final expedition prior to the fall of the Inca Empire.\" The article's last paragraph has the Spaniards sail from Puná \"bound for more fruitful conquests on the Peruvian mainland\". `precondition-of`: the expedition that became the conquest starts here, which is a condition of it and not its cause. Probable, and with a second author: Prescott, at pp. 142-143 in the edition the article cites.",
+  "dispute": null
+}

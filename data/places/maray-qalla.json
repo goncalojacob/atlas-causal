@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "maray-qalla",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q16473372",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Maray Qalla"
+  },
+  "sources": [],
+  "names": [
+    "Maray Qalla"
+  ],
+  "where": {
+    "lon": -77.2397,
+    "lat": -9.07861,
+    "precision": "point",
+    "label": "Maray Qalla"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q16473372, imported by tools/import/wikidata.mjs. The item's own description reads \"cultural heritage site in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}
