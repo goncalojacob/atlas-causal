@@ -7031,15 +7031,16 @@ Adding `Q1155622` to the class table would mirror `Q124734` rebellion cleanly, b
 line would settle that three-way question as a side effect, which deviation 1291 says a
 mirror may not do. One word from the owner imports it.
 
-**The check, on this fire's four heads.** Run **1748** on the claim commit `61ae0b2f`
+**The check, on this fire's five heads.** Run **1748** on the claim commit `61ae0b2f`
 was **cancelled** when the merge superseded it. Run **1749** on the merge commit
 `0561b3d5` **failed**, which is deviation 1278's known shape: the merge is committed with
 `data/index/` absent and the rebuild is the commit after it, so `--index` cannot be fresh
 on that head by construction. Run **1750** on the index commit `1c5a79ac` **failed**, on
 `tests/m67.test.mjs` and on nothing else, which is **deviation 1295**: the records were
 right and the paragraph that argues for `blockade-of-saint-domingue` was two commits
-away. Run **1751** on `19049b38`, the head of this fire, is what the next fire should
-read first. Locally the fire finished at **2,114 tests passing with nothing failed and
+away. Run **1751** on `19049b38` was **cancelled** when the
+commit carrying this deviation superseded it, and run **1752** on `adb6186e`, the head
+of this fire, concluded **success**. Locally the fire finished at **2,114 tests passing with nothing failed and
 nothing skipped** — the 1,819 of the pure suites and the 295 of the browser suites, the
 browser set run alone, the two sets never at once. `node tools/validate.mjs --index` is
 **clean at 0 errors and 480 warnings** on the pushed index. **The next fire should read
