@@ -9873,3 +9873,12 @@ chain crosses out of it.
   it owns A13's relations pass over every active event.
 - **Deviation numbers: take the next above 1439.** This fire wrote **1438 and
   1439**.
+
+**The check is green on this fire's head.** Run 1774 of `validate.yml`, commit
+`f27f2a17`, conclusion `success`. Runs 1772 and 1773, on the records commit and
+on the index commit, were cancelled by the next push in the same concurrency
+group, which is rule 798's ordering working rather than a fault: the docs commit
+carries the `docs/m53-polities.md` §4.1 figures the index commit would have
+failed on, and the run that matters is the one on the head.
+**2,114 tests pass locally, 1,819 pure and 295 browser, with nothing skipped.**
+The re-run allowance is unspent: nothing was re-run.
