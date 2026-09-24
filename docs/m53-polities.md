@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 379 of 854 |
+| **after M42** | 36 of 36 | 379 of 858 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -355,7 +355,13 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands** — M42b's batch 17 of 24 September takes the denominator to 854 and leaves the
+rewritten as each of that milestone's batches lands** — M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
+**379** again, and for two reasons this time: two of its four items carry no
+`P710` at all (`Q932845` the siege of Salvador and `Q122056040` the action in
+the Bay of São Salvador), and the other two name `Q170072` the Dutch Republic,
+`Q377350` the Iberian Union and `Q617066` the Dutch West India Company, for none
+of which the atlas holds an actor. `Q377350` is also open question 2 of
+`docs/m42b-pool.md`, so it is not a record a run may write on its own. M42b's batch 17 of 24 September takes the denominator to 854 and leaves the
 numerator at **379**: its seven War of the League of Cambrai engagements all
 arrived with `actors: []`, and not for want of a `P710` — every one of the seven
 items names two to four participants, and the atlas holds an actor for none of
