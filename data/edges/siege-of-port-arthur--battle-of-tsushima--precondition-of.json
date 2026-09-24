@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--battle-of-tsushima--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "battle-of-tsushima",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Tsushima's article says why the Baltic Fleet sailed and why its errand changed. \"With the inactivity of the First Pacific Squadron after the death of Admiral Makarov and the tightening of the Japanese noose around Port Arthur, the Russians considered sending part of their Baltic Fleet to the Far East. The plan was to relieve Port Arthur by sea, link up with the First Pacific Squadron, overwhelm the Imperial Japanese Navy, and then delay the Japanese advance into Manchuria.\" And after the fortress fell: \"The heavily fortified city/port had already fallen on 2 January, just after the Second Pacific Squadron arrived at Nossi Be, Madagascar... The objective was therefore shifted to linking up with the remaining Russian ships stationed in the port of Vladivostok, before bringing the Japanese fleet to battle.\" `precondition-of`: the siege is the errand the fleet was sent on and the fall of Port Arthur is what left it with the run to Vladivostok that ended in the strait. Probable: Wikipedia alone.",
+  "dispute": null
+}

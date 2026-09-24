@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
+    }
+  ],
+  "from": "battle-of-port-arthur",
+  "to": "battle-of-the-yellow-sea",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Yellow Sea's own article dates the blockade to the night attack and names it: \"The Imperial Russian Navy's First Pacific Squadron (Admiral Wilgelm Vitgeft) had been trapped in Lüshunkou (Port Arthur) since the Imperial Japanese Navy blockade began on 8 February 1904 with the Battle of Port Arthur.\" `precondition-of` and not `caused`: the attack of 8 February put the squadron under blockade, and the blockade is the position the sortie of 10 August was an attempt to break — a position and not a motive. Probable: Wikipedia alone.",
+  "dispute": null
+}

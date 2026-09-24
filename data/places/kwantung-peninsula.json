@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "kwantung-peninsula",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q4218510",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-23"
+  },
+  "sources": [],
+  "names": [
+    "Kwantung Peninsula"
+  ],
+  "where": {
+    "lon": 121.417,
+    "lat": 38.9167,
+    "precision": "region",
+    "label": "Kwantung Peninsula"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q4218510, imported by tools/import/wikidata.mjs. The item's own description reads \"peninsula in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}
