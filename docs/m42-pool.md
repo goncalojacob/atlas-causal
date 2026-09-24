@@ -7172,3 +7172,70 @@ merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
   and deviation **1407** proposes the split — `m42` from 1400 upward, `m42b`
   continuing the shared sequence. It is a proposal the assistant may overrule,
   but a fire that ignores it re-collides the same day.
+
+## A14 (1) — the fifteen intervals, read off the leads already on disk
+
+*24 September, the 04:58Z fire. No import, no network: every span below was
+read from `tools/import/cache/wikipedia/`, the same file the record's own
+summary quotes, at the revision that file carries.*
+
+The 23 September A7 pass reported *"no record's cited article states a wider
+span than the record carries"* and the 24 September review found fifteen where
+it does. The pass was reading the item, not the lead. This one reads the lead:
+for each of the fifteen, the first sentence of the cached article (or, for
+three of them, the article's own title, which is part of the same revision) is
+the authority, the clause that states the span is written into a
+`wikipedia-en` locator beside the citation already there, and `review.note`
+says what the span was, what the article says and what was left alone. Every
+quote was checked against the cache before anything was written; a quote the
+cache does not hold would have stopped the pass.
+
+| record | was | now | the clause |
+| --- | --- | --- | --- |
+| `cambodian-vietnamese-war` | 1989–1991 | **1978–1989** | "an armed conflict from 1978 to 1989" |
+| `rif-war` | 1911–1927 | **1921–1926** | "fought from 1921 to 1926" |
+| `wadai-war` | 1906 | **1906–1912** | "from 1906 to 1912" |
+| `great-depression` | 1929–1941 | **1929–1939** | "a severe global economic downturn from 1929 to 1939" |
+| `la-violencia` | 1949–1958 | **1948–1958** | "a ten-year wave ... from 1948 to 1958" |
+| `south-sudanese-civil-war` | 2013–2020 | **2013–2018** | "fought from 2013 to 2018" |
+| `tambov-rebellion` | June 1921 | **1920–1922** | "The Tambov Rebellion of 1920–1922" |
+| `indochina-wars` | 1946–1989 | **1945–1991** | "waged in Indochina from 1945 to 1991" |
+| `first-italo-ethiopian-war` | 1894–1896 | **1895–1896** | "fought between Italy and Ethiopia from 1895 to 1896" |
+| `the-holocaust-in-romania` | 1941–1943 | **1940–1944** | "between 1940 and 1944" |
+| `massacres-of-poles-in-volhynia-and-eastern-galicia` | 1942–1944 | **1943–1945** | "from 1943 to 1945" |
+| `insurgency-in-kosovo` | 1998-02-28 alone | **1995–1998** | title "(1995–1998)"; "began in 1995" |
+| `darfur-genocide` | 2003–2008 | **2003–2005** | title "(2003–2005)"; "killed between 2003 and 2005" |
+| `1957-1958-influenza-pandemic` | 1956–1958 | **1957–1958** | "The 1957–1958 Asian flu pandemic" |
+| `2011-bahraini-uprising` | 2011–open | **2011–2014** | "from 2011 until 2014" |
+
+**Counts.** 15 records rewritten, all `active`, all flagged `a7-widened`; 15
+locators added. Eleven spans are wider than they were and four narrower —
+`rif-war`, `south-sudanese-civil-war`, `darfur-genocide` and
+`first-italo-ethiopian-war`, where the record held the campaigns or the
+aftermath around the thing and the article holds the thing. **No edge fails
+rule 4 after them, so none was disputed and none dropped**; the validator goes
+from 493 warnings to **492** (0 errors), the one lost being
+`span-vs-article-title` on `darfur-genocide`. Corpus unchanged: **858 active,
+242 main, 616 filed, 843 edges, largest component 609**.
+
+**Eight days go with the dates that carried them**, because the article gives
+the bound no day: `cambodian-vietnamese-war` (both), `rif-war` (both),
+`la-violencia`, `south-sudanese-civil-war` (its end), `tambov-rebellion`
+(both), `first-italo-ethiopian-war` (its start) and `insurgency-in-kosovo`
+(its start). A day is kept only where it still marks the bound the article
+states: Wall Street on 29 October 1929, Addis Ababa on 23 October 1896,
+Juba on 15 December 2013, Darfur on 23 February 2003, the Pearl Roundabout on
+14 February 2011, and 28 February 1998, which the Kosovo article puts in the
+month it names as the insurgency's close.
+
+**Deviation 1408.** *The schema's limits are what a quoted locator is written
+to, not an afterthought.* A locator is 200 characters and a review note 500;
+the first draft of this pass quoted whole first sentences and wrote nine
+`rule 1` errors before a byte of it was believed. The pass now checks both
+lengths itself and refuses rather than writing, and quotes the clause that
+states the span instead of the sentence around it. A quoted clause is still
+verbatim and still findable in the article; a truncated one would not be.
+
+**`2011-bahraini-uprising` is closed here and not in A14(6)**, which asks for
+the same record under the same rule. Its section says so, and the record's own
+note says it takes no `end-unstated` flag.
