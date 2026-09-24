@@ -42,19 +42,23 @@ const RELIEF_REQUESTS = `
       .filter(Boolean).map((m) => m[1]).sort(),
   };`;
 
-// Waits until the base map's files have stopped arriving, the way
-// map-browser.test.mjs does: a cell that lands between two readings is a
-// picture that was still changing on its own.
-async function settledBase(page) {
-  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/geo/base/")).length;';
-  let last = -1;
-  for (let tries = 0; tries < 40; tries += 1) {
-    const now = await page.eval(count);
-    if (now > 0 && now === last) return;
-    last = now;
-    await new Promise((resolve) => { setTimeout(resolve, 100); });
-  }
-}
+// Waits until the base map's files have stopped arriving: a cell that lands
+// between two readings is a picture that was still changing on its own.
+//
+// **It fails rather than returning quietly** (M87 §5, review B8). It polled a
+// count forty times and then returned whether or not anything had settled, so on
+// a slow run the assertions after it read a page that was still arriving and
+// failed with a sentence about swatches rather than about time. And the settle is
+// across an animation frame *inside the page* rather than across two polls of
+// the protocol, which is the same correction §3 made to the lane walk.
+const settledBase = (page) => waitFor(
+  page,
+  `const count = () => performance.getEntriesByType('resource').filter((e) => e.name.includes('/geo/base/')).length;
+   const was = count();
+   return new Promise((resolve) => requestAnimationFrame(() => setTimeout(
+     () => resolve(was > 0 && was === count()), 0)));`,
+  "the base map's files to stop arriving",
+);
 
 test('with the bands on, the whole world fetches the far file and not one cell', { skip }, async () => {
   await wide(async (page, url) => {

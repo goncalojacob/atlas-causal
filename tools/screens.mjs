@@ -896,6 +896,24 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=timeline',
     width: 500, height: 844,
     what: 'the same timeline on a 390 x 844 phone' },
+
+  // --- M87 §9: the phone's picture -----------------------------------------
+  //
+  // The two the brief asks for, and the two the review was looking at when it
+  // said the picture on a phone is a strip a quarter of the screen high
+  // (`docs/review-2026-09-24.md`, part A finding 5). The map is fitted to the
+  // pane's *height* now and crops the poles instead of leaving empty ground
+  // under a 220-pixel band; the graph draws no name under eight pixels on
+  // screen, so what was a scatter of four-pixel smudges is marks and the names
+  // that can be read.
+  { name: 'm87-map-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844',
+    width: 500, height: 844,
+    what: 'the map on a 390 x 844 phone: the world fitted to the pane, poles cropped' },
+  { name: 'm87-graph-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph',
+    width: 500, height: 844,
+    what: 'the graph on the same phone: no name drawn too small to read' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -10,7 +10,9 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { withBrowser, open, waitFor, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, skip, manifestOf, settledShards,
+} from './browser.mjs';
 
 const DESK = { width: 1280, height: 900, deviceScaleFactor: 1 };
 const desk = (fn) => withBrowser(fn, { device: DESK });
@@ -94,23 +96,31 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     // unchanged.
     await waitFor(page, `return document.querySelectorAll('#timeline rect.bar[data-id]').length > 0
       && [...document.querySelectorAll('#timeline .layer-barLabels text')].length > 0;`, 'the titles');
-    // **And then until the packing stops moving.** The wait above is satisfied
-    // by the *first* century to land, and the atlas opens on all of them: a
-    // later shard arriving between the read below and the arrow presses
-    // repacks the lanes under the order this test then walks, which is how the
-    // check went red on run 1565 with `End` landing on `fixture-event-deep-1969`
-    // where `order` said 2025. Same shape as `timeline-browser` 214 in
-    // docs/m78-flakes.md — one gesture lays the rows out twice and the test
-    // read the first of the two. So: the lane, x and id of every bar, read
-    // twice over a frame, and the test goes on only when the two agree.
+    // **And then every shard the manifest names, and a settle across a frame**
+    // (M87 §3, review B6). The wait above is satisfied by the *first* century to
+    // land, and the atlas opens on all of them: a later shard arriving between
+    // the read below and the arrow presses repacks the lanes under the order this
+    // test then walks, which is how the check went red on run 1565 with `End`
+    // landing on `fixture-event-deep-1969` where `order` said 2025.
+    //
+    // What stood here was "the lane, x and id of every bar the same on two polls
+    // 50 ms apart", which is 50 ms of stillness — and any two shard landings
+    // more than 50 ms apart satisfy it, which on a loaded runner they routinely
+    // are. So the wait is now the thing itself: every attribute shard the fixture
+    // manifest lists has arrived (`settledShards`, which fails saying how far the
+    // page got), and then the packing is the same across an animation frame
+    // *inside the page* rather than across two polls of the protocol. The
+    // assertions below are unchanged.
+    await settledShards(page, await manifestOf({ fixtures: true }));
     const packing = `return [...document.querySelectorAll('#timeline [data-bar]')]
       .map((el) => el.getAttribute('data-lane') + '@' + el.getAttribute('x') + '#'
         + (el.getAttribute('data-id') ?? 'cluster:' + el.getAttribute('data-cluster')))
       .sort().join('|');`;
-    await waitFor(page, `const now = (() => { ${packing} })();
-      const was = window.__packingWas ?? null;
-      window.__packingWas = now;
-      return was !== null && was === now;`, 'the lanes to stop repacking');
+    await waitFor(page, `const read = () => { ${packing} };
+      return new Promise((resolve) => {
+        const was = read();
+        requestAnimationFrame(() => setTimeout(() => resolve(was === read()), 0));
+      });`, 'the lanes to stop repacking across a frame');
     const settled = await page.eval(packing);
 
     // Both in one evaluation, off one frame, for the same reason.

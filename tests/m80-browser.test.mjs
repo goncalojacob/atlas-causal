@@ -16,6 +16,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   withBrowser, open, waitFor, until, seenIntro, skip,
+  manifestOf, settledShards,
 } from './browser.mjs';
 
 // Wide enough that the views draw records rather than stacks of them: a stack
@@ -177,6 +178,13 @@ test('a line answers Enter, and choosing one of its ends closes its card', { ski
   await desk(async (page, url) => {
     await seenIntro(page);
     await open(page, url(`?${WHOLE}&view=graph`), GRAPH_READY);
+    // **Every shard, and then a frame** (M87 §1). What this test is about is the
+    // focus surviving the redraw that opening a link causes; a redraw the last
+    // century's arrival causes is a different one, and since M87 the arrivals
+    // are coalesced into a frame of their own rather than spread through first
+    // paint. The count is the fixture manifest's own.
+    await settledShards(page, await manifestOf({ fixtures: true }));
+    await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
     const line = await page.eval(A_LINE);
     assert.ok(line);
 

@@ -52,6 +52,7 @@ import { createRegionDeriver } from '../../src/util/geo.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { mergeIdentity, mergeNames } from './identity.mjs';
+import { reusablePlace } from './places.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -928,6 +929,33 @@ export function nextBatch(state, mode, wanted, size = BATCH) {
   return { batch: pending.slice(0, size), pending, done: [...done] };
 }
 
+// What the run would not do anything with, kept (M87 §12, review part C finding
+// 15). The per-mode `refused` list beside `pending` and `done` is a *retry
+// queue*: an item refused for a class the table has no row for is offered again
+// next run, ahead of the untried, because the fix is an edit to a file under
+// `data/` and a cursor that had passed it would have made that edit answer
+// nothing. This is the other thing — the **log**: item to reason, with the day
+// it was first refused, so that "what has this import never been able to use,
+// and why" is a question the repository answers rather than a job's log that
+// nobody can read back.
+//
+// **Appended, never overwritten.** An item already in the map keeps the reason
+// and the date it was first refused: the run that refuses it again is not news,
+// and a log that rewrote itself every run would be a log of the last run. Which
+// is exactly what `docs/import-report.md` was until this milestone.
+export function rememberRefusals(state, refusals, today) {
+  const refused = { ...(state?.refused ?? {}) };
+  let changed = false;
+  for (const { qid, why } of refusals ?? []) {
+    if (typeof qid !== 'string' || !qid) continue;
+    if (Object.hasOwn(refused, qid)) continue;
+    refused[qid] = { on: today, why: String(why ?? '').slice(0, 400) };
+    changed = true;
+  }
+  if (!changed && !state?.refused) return state;
+  return { ...state, refused };
+}
+
 export function advance(state, mode, { batch, pending, done, today }) {
   const remaining = pending.filter((id) => !batch.includes(id));
   return {
@@ -1043,7 +1071,7 @@ export const KINDS = IMPORT_KINDS;
 
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {
-  return { created: [], enriched: [], signed: [], named: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
+  return { created: [], enriched: [], signed: [], named: [], reused: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
 }
 
 // The identity fields and the other names, in one pass over one record, so
@@ -1159,6 +1187,25 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'a place with no coordinate is a word, not a place');
         continue;
       }
+      // **A place this atlas already holds is that place** (M87 §11, review part
+      // C finding 9). The reuse above is by Wikidata item alone, and thirty-eight
+      // of the atlas's places carry none — a place written by a person never will
+      // until somebody adds one — so `london-q84` was written beside the
+      // hand-written `london` at the same point, and the events of one town went
+      // to two marks. Folded name and distance, the same two signals
+      // `tools/import/places.mjs` already matches Natural Earth's cities on, and
+      // exactly one record has to survive both: two is a question for a person.
+      // Nothing is written and nothing is merged — the events of this batch point
+      // at the record that is there.
+      const already = reusablePlace(
+        { names: namesFor(read), point: read.point },
+        entries.map((e) => e.record),
+      );
+      if (already) {
+        byItem.set(`place:${qid}`, already);
+        report.reused.push({ id: already, qid, kind: 'place' });
+        continue;
+      }
       const lane = laneFor(read.point, { deriveRegion, countryPoints: read.country.concat(read.administrative).map(pointOf).filter(Boolean) });
       if (lane.how === null) {
         refuse(report, qid, 'no lane can be reached from its point or from the country it names; the index could not place it');
@@ -1231,7 +1278,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'import', { batch, pending, done, today });
+  const next = rememberRefusals(advance(state, 'import', { batch, pending, done, today }), report.refused, today);
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }
@@ -1309,7 +1356,7 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'reconcile', { batch, pending, done, today });
+  const next = rememberRefusals(advance(state, 'reconcile', { batch, pending, done, today }), report.refused, today);
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }
@@ -1773,6 +1820,9 @@ export function reportLines(report, mode) {
   // called" is the one thing here a reviewer may want to read before opening
   // the queue, and `imported-names` is on the record so they can find it.
   for (const n of report.named ?? []) lines.push(`named ${n.id} from ${n.qid}: ${n.names.join(', ')}`);
+  // A place the atlas already had under another id, which the import points at
+  // rather than writing a second record for (M87 §11).
+  for (const r of report.reused ?? []) lines.push(`reused ${r.kind} ${r.id} for ${r.qid}: the same name at the same point`);
   for (const g of report.signed ?? []) lines.push(`left alone ${g.id}: reviewed and signed, so ${g.qid} was not written onto it`);
   for (const r of report.refused) lines.push(`refused ${r.qid}: ${r.why}`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);
@@ -1781,7 +1831,7 @@ export function reportLines(report, mode) {
   }
   const leads = report.leads.filter((l) => l.file).length;
   if (leads) lines.push(`${leads} Wikipedia lead(s) cached under ${LEAD_CACHE}`);
-  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${(report.named ?? []).length} named, ${(report.signed ?? []).length} left alone, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
+  lines.push(`${report.created.length} created, ${report.enriched.length} enriched, ${(report.named ?? []).length} named, ${(report.reused ?? []).length} reused, ${(report.signed ?? []).length} left alone, ${report.refused.length} refused, ${report.ambiguous.length} ambiguous`);
   return lines;
 }
 

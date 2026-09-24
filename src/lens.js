@@ -448,7 +448,43 @@ function resolveFoci(atlas, foci) {
   });
 }
 
+// **Answered once per state, and consulted before it is worked out** (M87 §7,
+// review B10). `lensView` below is memoised on the state object, but the stamp
+// it keys that memo on was built out of `activeFoci` — so the scan this function
+// makes ran before the cache was ever asked, on every one of the ten or so
+// `lensView` calls a state change makes, and on every `pointermove` of a band
+// drag. At 858 events that is nothing; at 3,000 it is a few milliseconds a
+// frame spent answering a question whose answer was already in hand.
+//
+// The key is the state object, weakly, exactly as `lensView`'s is: the store
+// hands every subscriber the same object and replaces it only in `set`, so the
+// state the reader has left takes its answer with it. Beside it is a stamp of
+// everything an answer depends on that is *not* in the state — which files have
+// landed — and it is built without asking this function anything:
+//
+//   the grounds and the territorial join, both fetched when a lens on an actor
+//   first asks for them (data.js), and both of which change what an actor keeps;
+//   the count of attribute-shard arrivals, which is what says a narrative's
+//   steps or a record's own row has come in since (data.js, I4a).
+//
+// Only where the atlas can say that: an atlas built by hand in a test has no
+// arrival count, and a memo that could not see it change would be a memo that
+// went stale silently. Those compute every time, as they did before.
+const foci = new WeakMap();
+
 export function activeFoci(atlas, state) {
+  if (typeof atlas?.attributeShardsArrived !== 'function' || !state) {
+    return computeActiveFoci(atlas, state);
+  }
+  const stamp = `${atlas.attributeShardsArrived()}|${atlas.groundsLoaded?.() ? 1 : 0}|${atlas.territoriesLoaded?.() ? 1 : 0}`;
+  const held = foci.get(state);
+  if (held && held.atlas === atlas && held.stamp === stamp) return held.value;
+  const value = computeActiveFoci(atlas, state);
+  foci.set(state, { atlas, stamp, value });
+  return value;
+}
+
+function computeActiveFoci(atlas, state) {
   if (state?.focus === FOCUS_NONE) return [];
   const explicit = parseFoci(state?.focus);
   if (explicit.length) return resolveFoci(atlas, explicit);
