@@ -4634,6 +4634,13 @@ the records**, because its denominator is the active count and
 `tests/m53.test.mjs` fails the moment the records land without it. This fire kept
 798's order and missed the §4.1 half, which is deviation 1251.
 
+**The check is green on the head.** Run **1619** on `518c1b4d` concluded
+`success`; runs 1611, 1612, 1613 and 1618 were each cancelled by the concurrency
+group as the next push landed, so 1619 is the only one that reads this fire's
+tree. Locally: `node tools/validate.mjs --index` clean at 0 errors and 506
+warnings, and **2,071 tests pass with none failed and none skipped** — 1,792 pure
+and 279 in the eighteen browser suites, run the way the check runs them.
+
 **For article text beyond the cached lead, `Special:Export` and nothing else**
 (deviation 1247). It answered eleven times in this fire with the revision id in
 the XML and the wikitext whole, which is where the `<ref>` tags and therefore
