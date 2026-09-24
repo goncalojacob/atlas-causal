@@ -25,7 +25,13 @@ import { identifiers } from '../src/citation.js';
 import { timelineDomain, labelPlacement } from '../src/timeline.js';
 import { PRECISIONS } from '../src/vocab.js';
 import { PHONE } from '../src/view-key.js';
+import { DEGREE_OFF } from '../src/graph-filters.js';
+import { lensView } from '../src/lens.js';
+import { defaultState } from '../src/state.js';
+import { atlasOf } from './helpers.mjs';
 import { ROOT } from './helpers.mjs';
+
+const atlas = await atlasOf(path.join(ROOT, 'data'));
 
 const read = (file) => fs.readFile(path.join(ROOT, file), 'utf8');
 const source = await read('src/view-key.js');
@@ -280,6 +286,23 @@ test('the map’s key opens on a desktop and folds on a phone', () => {
   // And the phone's fold is not a preference stored anywhere: it is read off
   // the media query when the key is built.
   assert.ok(/matchMedia/.test(source), 'the fold is decided by the breakpoint');
+});
+
+// ─── 8. the degree control under a lens (B3) ───────────────────────────────
+
+test('every selection is a lens, so the degree floor is off from the first click', () => {
+  // The premise the finding rests on, asked of the corpus the test runs on:
+  // an event selected is a lens of one, and the floor is by rule off inside a
+  // lens (arrangement.js, M48 §3). Derived and never written down here.
+  const [event] = [...atlas.activeEvents];
+  assert.ok(event, 'the corpus has an active event to select');
+  const chosen = { ...defaultState(), selected: event.id, degree: 2 };
+  assert.ok(lensView(atlas, chosen), 'choosing an event is a lens');
+  assert.equal(lensView(atlas, defaultState()), null, 'and at rest there is none');
+  // And the control says why it is off, in a reader's words rather than the
+  // module's.
+  assert.match(DEGREE_OFF, /open/i);
+  assert.ok(!/lens/i.test(DEGREE_OFF), 'without the word "lens", which is ours and not a reader’s');
 });
 
 test('the four precisions still say which of them are areas and not points', () => {

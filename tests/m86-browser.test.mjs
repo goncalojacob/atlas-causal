@@ -315,3 +315,30 @@ test('but a new arrangement is framed, even after the reader has moved the camer
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 8. the degree control under a lens (B3) ───────────────────────────────
+
+const DEGREE = `
+  const el = document.querySelector('[data-filter="degree"]');
+  return el === null ? null : { disabled: el.disabled, title: el.getAttribute('title') };`;
+
+test('the degree control is off, and says so, while an event is open', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // At rest it works, which is the only time it does and why it is kept.
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    const resting = await page.eval(DEGREE);
+    assert.ok(resting, 'the control is on the page for the graph');
+    assert.equal(resting.disabled, false, 'at rest the floor does something, so the control is live');
+
+    // And with an event chosen — which since M65 is a lens — it is off.
+    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-f&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the lens to draw');
+    const under = await page.eval(DEGREE);
+    assert.ok(under === null || under.disabled, 'the control is live under a lens and does nothing');
+    if (under) assert.ok(under.title, 'and it says nothing about why');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});

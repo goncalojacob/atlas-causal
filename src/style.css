@@ -258,6 +258,10 @@ input, select, textarea { accent-color: var(--cobalt); }
    the graph since the graph had them, which is what taking M48's screenshot
    showed (deviation 734). */
 .bar .layers[hidden], .bar .graph-filters[hidden] { display: none; }
+/* The degree floor while an event is open (M86 §8). It is off by rule inside a
+   lens, so it is drawn as off rather than left looking live: the same ink the
+   interface uses for what it is not asserting. */
+.bar .graph-filters select:disabled { color: var(--ink-soft); border-color: var(--line); opacity: 0.6; cursor: not-allowed; }
 /* The two collapsed groups — the base map, in the legend, and the categories,
    which are a control of their own since M68. Collapsed, so the phone drawer
    keeps four targets instead of nineteen, and every row carries its own symbol
