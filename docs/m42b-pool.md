@@ -5934,6 +5934,22 @@ when it takes a lane from a point. Setting `place` on such a record and nulling
 needs no note."* The place pass must `delete` the note, not just null the lane.
 
 
+**1273. Deviation 1232 recurred, at the merge and not at a batch, and 1264's
+sentence covers it.** The `origin/m42` merge conflicted in 236 `data/index/`
+paths, so the directory was dropped and rebuilt to check the merge was sound —
+and then committed with the merge, which is the one thing 1264 forbids: *"the
+measurement may be taken from an index built at any moment, the committed index
+may not."* Run **1717** on `140502c1` failed rule 16 on the manifest and six
+history shards, exactly as run 1696 did on `81ed7ad3` yesterday. **A merge commit
+is a commit that touches records**, because the other branch's records arrive in
+it, and the history shards are built out of the commits that touched each
+record's file — so a shard built before the merge commit exists names a different
+set of commits than a shard built after it. **The order is the same for a merge
+as for a batch**: resolve, drop `data/index/`, commit the merge *without* it,
+then rebuild and commit the index on its own. The rebuild before the commit is
+still worth doing — it is how the merge is checked — but its output must be
+thrown away and taken again.
+
 ## Where the run stands, for the fire that picks it up
 
 *24 September, after the twenty-third fire and its batch 23.*

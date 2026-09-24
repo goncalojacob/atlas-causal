@@ -22040,8 +22040,11 @@ active**, Europe before 1900 is **99**, the cell is **29 with its one main
 untouched**, and the `americas` lane is unchanged at 221. Deviations **1265** (a
 merge conflict in `sources.html` and `narratives.html` is resolved by checking
 one side out and rebuilding, never by deleting them, which `build-index.mjs`
-dies on) to **1272** (`region` and `regionNote` come off together or rule 10
-errors). `docs/m42b-pool.md` → "Batch 23" is the full account.
+dies on) to **1273**, and **1232 recurred**: the `origin/m42` merge's index was
+built before the merge was committed, run 1717 failed rule 16 on the manifest and
+six history shards, and 1273 says the cure — **a merge commit is a commit that
+touches records**, so 1264's order holds for it too. `docs/m42b-pool.md` →
+"Batch 23" is the full account.
 
 **M42b batch 21 — the six other conflicts of the Napoleonic Wars, and Europe's
 nineteenth century, 24 September.** The twentieth fire merged `origin/m0` and
