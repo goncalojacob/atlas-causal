@@ -6546,6 +6546,17 @@ and retry three times; eleven bodies came through that way and the twelfth did n
 The REST summary endpoint the import itself uses is not affected — 139 calls in one run
 went through without a pause.
 
+**1286. Deviations 711 and 717 say tests before the records they judge, and this fire
+pushed the records first and turned the check red.** Run **1739** on `6ee07b27` failed
+on `tests/map-browser.test.mjs`, and the failure was entirely predictable from the
+batch: fifteen new place records in one viewport is a change to what the map draws, and
+the one test that asserts *which* place is drawn there names its examples. **The rule
+is not "run the suite before pushing" — this fire did that, on the commit before —
+it is "run the suite over the records before committing them".** The records were
+validated and the index rebuilt and both were pushed while the browser suite was still
+running on the batch, which saved twenty minutes of wall clock and cost a red head that
+the next commit had to answer.
+
 **1285. A browser test that names its examples goes stale the moment a batch writes
 more of the same thing.** `tests/map-browser.test.mjs` → *"a place this atlas names and
 Natural Earth has no city for is on the map, from the record"* listed seven Portuguese
@@ -6709,15 +6720,15 @@ and leaves only the ones that cost a fetch each (deviation 1282). The run does n
 argue with the rule; it reports what it costs, which the owner asked for when C8 was
 raised.
 
-**The check is green on the head of this fire.** Run **1730** on `2d0346cd` concluded
-**success**. Run **1729** on the `origin/m42` merge `54150eb6` **failed**, and the
-failure is deviation 1278: the merge was committed with a `data/index/` built before
-the merge commit existed, which is 1273's fault repeated at the same step. The commits
-of this batch put the records first and the index in a commit of its own after them,
-which is 798's order and 1273's, and that head is clean. Locally the fire finished at
-**2,114 tests passing with nothing failed and nothing skipped** — the 1,819 of the 153
-pure suites and the 295 of the 38 browser suites, the browser set run alone, the two
-sets never at once. `node tools/validate.mjs --index` is **clean at 0 errors and 461
-warnings** on the pushed index. **The next fire should read this head's run before it
-does anything else**, and if it is red, read the failure: the check has been honest
-since M63 and it is not load.
+**The check, on this fire's three heads.** Run **1738** on the merge's index commit
+`974a784a` concluded **success** — deviation 1278 answered. Run **1739** on the batch's
+index commit `6ee07b27` **failed**, on `tests/map-browser.test.mjs` and on nothing else,
+which is deviation 1286: the records were pushed while the browser suite was still
+running over them. Run **1740** on `f56e7af8`, the head that carries the test fix, was
+still in progress when this was written; the commit after this one says how it
+concluded. Locally the fire finished at **2,114 tests passing with nothing failed and
+nothing skipped** — the 1,819 of the pure suites and the 295 of the browser suites, the
+browser set run alone, the two sets never at once. `node tools/validate.mjs --index` is
+**clean at 0 errors and 463 warnings** on the pushed index. **The next fire should read
+this head's run before it does anything else**, and if it is red, read the failure: the
+check has been honest since M63 and it is not load.
