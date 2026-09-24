@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "suipacha",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2890073, Battle of Suipacha, read on 2026-09-24; Suipacha itself has no item this pass could reach. The record carries no `wikidata` key for that reason: a place claiming to be the battle would be a worse record than one claiming nothing."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [],
+  "names": [
+    "Suipacha"
+  ],
+  "where": {
+    "lon": -65.60888889,
+    "lat": -21.56560278,
+    "precision": "point",
+    "label": "Suipacha"
+  },
+  "region": null,
+  "summary": null
+}

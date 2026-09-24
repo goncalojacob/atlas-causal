@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,8 +21,11 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened",
+      "a9-place"
+    ],
+    "note": "Place from A9 P17 = Q414, the \"argentina-q414\" record already here."
   },
   "wikidata": "Q968126",
   "sitelinks": {
@@ -48,11 +51,12 @@
   "when": {
     "start": 1817,
     "end": 1817,
-    "date": "1817-02-13"
+    "date": "1817-01",
+    "endDate": "1817-02-13"
   },
-  "place": null,
-  "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "spanish-american-wars-of-independence"

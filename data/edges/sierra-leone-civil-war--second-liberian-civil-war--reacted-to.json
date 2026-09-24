@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "a13-contradicted"
     ]
   },
   "origin": {
@@ -32,7 +33,19 @@
   "from": "sierra-leone-civil-war",
   "to": "second-liberian-civil-war",
   "type": "reacted-to",
-  "confidence": "probable",
+  "confidence": "disputed",
   "explanation": "The English article on the second Liberian war makes Taylor’s Sierra Leonean adventure its trigger: \"Taylor’s ambition of establishing Liberia as a regional power led to him supporting rebel groups such as... the Revolutionary United Front in the Sierra Leone Civil War. This brought him into conflict with the governments of Guinea and Sierra Leone who, in retaliation, began supporting the anti-Taylor dissidents that had fled to their countries.\" The war of 1999 is the retaliation that support became.",
-  "dispute": null
+  "dispute": {
+    "text": "The edge’s own cited articles contradict its direction, and A13 (22 September) says such an edge is marked and never silently turned round. \"Sierra Leone Civil War\", at revision 1375466974, dates that war 1991–2002 and opens it \"on 23 March 1991 when the Revolutionary United Front (RUF), with support from the special forces of Liberian dictator Charles Taylor, the National Patriotic Front of Liberia (NPFL), intervened in Sierra Leone\"; \"Second Liberian Civil War\", at revision 1373880319, dates that war 1999 to 2003. A war that began in 1991 cannot have reacted to one that began in 1999, and the second article puts the influence the other way round: Taylor \"supporting rebel groups such as the Rally of Democratic Forces of Guinea in the RFDG Insurgency and the Revolutionary United Front in the Sierra Leone Civil War\". What the pair wants is an edge from the Sierra Leone war to the Second Liberian one, or from the First; which is a reviewer’s judgement.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Sierra Leone Civil War\", revision 1375466974, lead"
+      },
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Second Liberian Civil War\", revision 1373880319, lead and § Background"
+      }
+    ]
+  }
 }

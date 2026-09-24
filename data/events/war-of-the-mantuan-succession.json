@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,8 +21,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place from A9 P276 = Q4345530, written as \"northern-italy\" at `region` precision."
   },
   "wikidata": "Q1527665",
   "sitelinks": {
@@ -49,9 +51,9 @@
     "start": 1628,
     "end": 1631
   },
-  "place": null,
-  "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "northern-italy",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "thirty-years-war"

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "uruguay-q77",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q77, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q77",
+  "sitelinks": {
+    "count": 266,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Uruguay",
+    "pt": "Uruguai"
+  },
+  "sources": [],
+  "names": [
+    "Uruguay",
+    "Uruguai"
+  ],
+  "where": {
+    "lon": -56,
+    "lat": -33,
+    "precision": "country",
+    "label": "Uruguay"
+  },
+  "region": null,
+  "summary": null
+}

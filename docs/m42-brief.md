@@ -444,3 +444,43 @@ pass reports edges added by type, edges disputed, and the largest connected
 component before and after, under the day's `## Curation <date>` section.
 This is the standing review of the graph the owner asked for; the daily
 snapshot publishes it.
+
+**A14 (24 September). The second review's data passes, in force for both
+lanes before any further import.** `docs/review-2026-09-24.md`, part C,
+measured the corpus after two curation fires; these are the passes a run can
+make under the amendments already in force, each its own section and counts
+in the pool file, each skipped if its section exists, in this order. (1) The
+fifteen intervals part C names whose cached lead states a wider or different
+span in its first sentence are widened under A7, at the cached revision, with
+the `date` note; where an existing edge would then fail rule 4, the edge is
+disputed with a note or dropped, never the date kept wrong. (2) The lane guard
+of the 24 September fire is run over every event carrying `a9-place`, and a
+place whose lane disagrees with the event's is cleared, the `region` kept;
+the Great Depression stands in no single country. (3) Every `wikipedia-en`
+citation on an active record is cached at the revision it cites, through the
+action API the fires already use, so the cache's `revid` matches the
+citation. (4) The three A13 edges part C names are corrected —
+`great-depression--siamese-revolution-of-1932` retyped `precondition-of`,
+`six-day-war--bangladesh-liberation-war` re-pointed at
+`india-pakistan-war-of-1971`, the locator label on
+`february-revolution--russian-civil-war` corrected — and the eleven whose
+quote opens with "Following", "After" or "In the aftermath" are read again
+under the fire's own refusal class (chronology with no claim in it) and
+dropped where they make none. (5) The 34 polities that active events name
+and no description reaches (`third-portuguese-republic`, `estado-novo`,
+`ottoman-empire`, `soviet-union`, `nazi-germany`, `russian-empire`,
+`austria-hungary` and the rest part C lists) are reconciled under A12(6)'s
+two signals plus the inverse gate — the item's dissolution year must match
+the record's end — and described from the lead; population for an ended
+polity is P1082's latest year or omitted. (6) The 21 titles that drop their
+article's disambiguator are retitled under A12(5); `london-q84` is merged
+into `london` and `wikidata: Q84` written on it; the 94 place placeholders
+become `summary: null`; the 16 open-ended imports without the flag get
+`end-unstated` and `2011-bahraini-uprising` is closed from its lead under
+A7; the 15 tombstones citing M44b are re-read under §2 and their reason
+rewritten; the Holocaust is divided under §5 from the article at a revision,
+or a line says the sources give no defensible boundary. **And until the owner
+decides the 22 September C8, a batch writes no edge from a parent to its own
+child**, which is the rule the curation fire already applies; the 91 that
+exist stay as they are. What waits for the owner is listed in the review's
+fix plan and in the standing orders' §6.
