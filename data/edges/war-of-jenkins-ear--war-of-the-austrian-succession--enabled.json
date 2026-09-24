@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "war-of-jenkins-ear--war-of-the-austrian-succession--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cartagena de Indias\", revision 1375974450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Austrian Succession\", revision 1375907167"
+    }
+  ],
+  "from": "war-of-jenkins-ear",
+  "to": "war-of-the-austrian-succession",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The mechanism is in the Battle of Cartagena de Indias article, under \"Aftermath\", about the defeat that ended this war’s American campaign: \"News of Britain’s defeat reached Europe at the end of June 1741 and had immense repercussions. It caused George II of Great Britain, who had been acting as mediator between Frederick the Great of Prussia and Maria Theresa supporting Austria over Prussian seizure of Silesia in December 1740, to withdraw Britain’s guarantees of armed support for the Pragmatic Sanction. That encouraged France and Spain, the Bourbon allies, revealed to also be allied with Prussia, to move militarily against a now isolated Austria.\" The reading is attributed there to Reed Browning, The War of the Austrian Succession (1993), pp. 58-66. The War of the Austrian Succession article names this war among its own from its first paragraph: \"Related conflicts include King George’s War, the War of Jenkins’ Ear, the First Carnatic War, and the First and Second Silesian Wars.\" The wider war is dated from the Prussian invasion of Silesia in December 1740, a year after this one began and six months before the news from Cartagena reached Europe, so this war cannot have caused it: what it did was take away the guarantee that had held Britain between the two sides, which is `enabled`. Probable and not consensus: the work is named in the article rather than read here (A2).",
+  "dispute": null
+}

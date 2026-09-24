@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siege-of-salvador-1638",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "date-from-article"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. A7: the item's P580 is 1 May 1638 and the article says the siege \"took place between April and May 1638\", at the revision cited, so the start is widened to April and the end left at the item's own 18 May."
+  },
+  "wikidata": "Q932845",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Siege of Salvador (1638)",
+    "pt": "Primeira Batalha de Salvador"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q932845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
+    }
+  ],
+  "title": "Siege of Salvador (1638)",
+  "summary": "The English Wikipedia article \"Siege of Salvador (1638)\", at revision 1370744949, opens: \"The siege of Salvador was a siege that took place between April and May 1638, during the Dutch–Portuguese War and Eighty Years' War. The governor of the Dutch colony in Brazil, John Maurice, Prince of Nassau-Siegen, commanding the army of the Dutch West India Company, with vastly superior forces and a supporting fleet under Johan van der Mast, put the city of Salvador under siege. The Portuguese and Spanish defenders, commanded by Giovanni di San Felice, Count of Bagnolo, and Luís Barbalho, managed to resist the Dutch attacks until they gave up taking the city and withdrew with several casualties.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q932845, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-04",
+    "endDate": "1638-05-18"
+  },
+  "place": "salvador",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-brazil-1630-1654"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "voyages-of-christopher-columbus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q18578423",
+  "wikipedia": {
+    "en": "Voyages of Christopher Columbus"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18578423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1376021649"
+    }
+  ],
+  "title": "Voyages of Christopher Columbus",
+  "summary": "The English Wikipedia article \"Voyages of Christopher Columbus\", at revision 1376021649, opens: \"Between 1492 and 1504, the Italian explorer and navigator Christopher Columbus led four transatlantic maritime expeditions to the Americas in the name of the Catholic Monarchs of Spain. These voyages led to Europeans learning about the New World and were an early breakthrough in the period known in Europe as the Age of Exploration, which saw the colonization of the Americas, a related biological exchange, and the beginning of trans-Atlantic trade. These events, the effects and consequences of which persist to the present, are often cited as the beginning of the modern era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18578423, imported by tools/import/wikidata.mjs. The item's own description reads \"1492–1504 voyages to the Americas; beginning of the Columbian exchange\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1492,
+    "end": 1504
+  },
+  "place": "caribbean-sea",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

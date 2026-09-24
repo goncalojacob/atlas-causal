@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892, § Background"
+    },
+    {
+      "source": "marley-2008-wars-of-the-americas",
+      "locator": "pp. 193-194, as the \"Siege of Salvador (1638)\" article cites it for the siege whole"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "siege-of-salvador-1638",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The siege article names the colony as the thing that mounted it: \"The governor of the Dutch colony in Brazil, John Maurice, Prince of Nassau-Siegen, commanding the army of the Dutch West India Company, with vastly superior forces and a supporting fleet under Johan van der Mast, put the city of Salvador under siege.\" The 1640 action's article calls the same event \"John Maurits of Nassau's attack over Bahia\". `enabled`: the colony and its army are what made a march on Salvador possible from Pernambuco, and neither article says the colony's existence obliged it. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

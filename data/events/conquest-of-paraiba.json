@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "conquest-of-paraiba",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "date",
+      "a9-place"
+    ],
+    "note": "The item dates the conquest 25 November to 25 December 1634 and the record keeps those days. The cached English lead at revision 1370612312 opens “the attempts by Dutch forces in 1630 to seize control of Paraíba”, four years earlier. A7 lets a run widen a span from the cited article and this run did not: that sentence is about what led to the conquest, not when it ran. A reviewer decides which the record should carry."
+  },
+  "wikidata": "Q121494180",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Conquest of Paraíba"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121494180"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Paraíba\", revision 1370612312"
+    }
+  ],
+  "title": "Conquest of Paraíba",
+  "summary": "The English Wikipedia article \"Conquest of Paraíba\", at revision 1370612312, opens: \"The Conquest of Paraíba refers to the attempts by Dutch forces in 1630 to seize control of Paraíba, Brazil, from the Portuguese, mainly for the lucrative sugar cane market.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121494180, imported by tools/import/wikidata.mjs. The item's own description reads \"1634 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1634,
+    "date": "1634-11-25",
+    "endDate": "1634-12-25"
+  },
+  "place": "paraiba",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-brazil-1630-1654"
+}

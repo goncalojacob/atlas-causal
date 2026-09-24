@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "saylla-district",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item's own; nothing here is guessed."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q2584188",
+  "wikipedia": {
+    "en": "Saylla District"
+  },
+  "sources": [],
+  "names": [
+    "Saylla District"
+  ],
+  "where": {
+    "lon": -71.8386448,
+    "lat": -13.5648635,
+    "precision": "region",
+    "label": "Saylla District"
+  },
+  "region": null,
+  "summary": null
+}

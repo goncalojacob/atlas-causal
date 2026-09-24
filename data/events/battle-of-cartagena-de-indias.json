@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cartagena-de-indias",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2366970",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Battle of Cartagena de Indias",
+    "pt": "Cerco de Cartagena das Índias"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2366970"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cartagena de Indias\", revision 1375974450"
+    }
+  ],
+  "title": "Battle of Cartagena de Indias",
+  "summary": "The English Wikipedia article \"Battle of Cartagena de Indias\", at revision 1375974450, opens: \"The Battle of Cartagena de Indias took place during the 1739 to 1748 War of Jenkins' Ear between Spain and Great Britain. The result of long-standing commercial tensions, the war was primarily fought in the Caribbean; the British tried to capture key Spanish ports in the region, including Porto Bello and Chagres in Panama, Havana, and Cartagena de Indias in present-day Colombia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2366970, imported by tools/import/wikidata.mjs. The item's own description reads \"1741 battle during the War of Jenkins' Ear\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1741,
+    "date": "1741-03-13",
+    "endDate": "1741-05-20"
+  },
+  "place": "cartagena-de-indias",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-jenkins-ear"
+}

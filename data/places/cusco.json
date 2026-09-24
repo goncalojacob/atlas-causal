@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cusco",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q5582862",
+  "sitelinks": {
+    "count": 100,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Cusco",
+    "pt": "Cusco"
+  },
+  "sources": [],
+  "names": [
+    "Cusco"
+  ],
+  "where": {
+    "lon": -71.9786111111111,
+    "lat": -13.516944444444444,
+    "precision": "point",
+    "label": "Cusco"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q5582862, imported by tools/import/wikidata.mjs. The item's own description reads \"historic city of Peru, capital of the Department of Cusco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

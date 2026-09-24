@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "war-of-the-austrian-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q32929",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "War of the Austrian Succession",
+    "pt": "Guerra de Sucessão Austríaca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q32929"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Austrian Succession\", revision 1375907167"
+    }
+  ],
+  "title": "War of the Austrian Succession",
+  "summary": "The English Wikipedia article \"War of the Austrian Succession\", at revision 1375907167, opens: \"The War of the Austrian Succession, 1740 to 1748, was a conflict between the European great powers, fought primarily in Europe, the Atlantic Ocean and Mediterranean Sea. Related conflicts include King George's War, the War of Jenkins' Ear, the First Carnatic War, and the First and Second Silesian Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q32929, imported by tools/import/wikidata.mjs. The item's own description reads \"1740–1748 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1748,
+    "date": "1740-12-16",
+    "endDate": "1748-10-18"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

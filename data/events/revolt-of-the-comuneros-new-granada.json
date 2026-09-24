@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-comuneros-new-granada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2095753",
+  "wikipedia": {
+    "en": "Revolt of the Comuneros (New Granada)",
+    "pt": "Revolta dos Comuneros"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2095753"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Comuneros (New Granada)\", revision 1369393858"
+    }
+  ],
+  "title": "Revolt of the Comuneros (New Granada)",
+  "summary": "The English Wikipedia article \"Revolt of the Comuneros (New Granada)\", at revision 1369393858, opens: \"The Revolt of the Comuneros was a popular uprising in the Viceroyalty of New Granada against the Spanish authorities from March through October 1781. The revolt was in reaction to the increase in taxation to raise funds for the defense of the region against the British and a rise in the price of tobacco and brandy. These were part of the late eighteenth-century Bourbon Reforms.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2095753, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt in New Granada (modern Colombia) from 1781\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781
+  },
+  "place": "santander-department",
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": [
+    "spanish-colonization-of-the-americas",
+    "atlantic-revolutions"
+  ],
+  "category": "revolution",
+  "actors": []
+}

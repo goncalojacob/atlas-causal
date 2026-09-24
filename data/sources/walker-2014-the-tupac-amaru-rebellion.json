@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "walker-2014-the-tupac-amaru-rebellion",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Charles F. Walker"
+  ],
+  "title": "The Tupac Amaru Rebellion",
+  "year": 2014,
+  "publisher": "Belknap Press of Harvard University Press",
+  "isbn": "9780674058255",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"Rebellion of Túpac Amaru II\" cites for the royalist march on Tinta and the night attack at Pucacasa, at revision 1376254812; the full entry is the article's own."
+}

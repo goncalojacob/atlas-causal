@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
+    },
+    {
+      "source": "marley-2008-wars-of-the-americas",
+      "locator": "p. 123, as the \"Action of 12-17 January 1640\" article cites it for the 1635 landing of 2,500 reinforcements"
+    }
+  ],
+  "from": "siege-of-salvador-1638",
+  "to": "action-of-12-17-january-1640",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1640 action's § Background has the failed siege in it and then the expedition: the reinforcements landed in 1635 \"greatly contributed to the defeat of John Maurits of Nassau's attack over Bahia\", and \"Another expedition was planned… to retake the Dutch base of Pernambuco\", whose command the Count of Torre took and which sailed with 41 ships and 5,000 soldiers into the action of January 1640. The siege article is the other end: the defenders \"managed to resist the Dutch attacks until they gave up taking the city and withdrew\". `precondition-of`: holding Bahia in 1638 is the position the 1640 fleet sailed from, and the article stops short of saying the defence brought the expedition about — it says the expedition was planned on Hoces's arrival, before the siege. That gap is why the type is not `caused`. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

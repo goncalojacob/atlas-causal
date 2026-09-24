@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mallett-shaw-2014-the-italian-wars",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Michael Mallett",
+    "Christine Shaw"
+  ],
+  "title": "The Italian Wars 1494–1559: War, State and Society in Early Modern Europe",
+  "year": 2014,
+  "publisher": "Routledge",
+  "isbn": "9781317899396",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia articles \"War of the League of Cambrai\" (revision 1375133857) and \"Battle of Novara (1513)\" (revision 1370270949, by its 2012 printing) cite for these links; the full entry is theirs. Cited and not read."
+}

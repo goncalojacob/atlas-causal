@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "marley-2008-wars-of-the-americas",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "David Marley"
+  ],
+  "title": "Wars of the Americas: A Chronology of Armed Conflict in the New World, 1492 to the Present",
+  "year": 2008,
+  "publisher": "ABC-CLIO",
+  "isbn": "9781598841008",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"Siege of Salvador (1638)\" cites for the siege whole, at revision 1370744949, and which the \"Action of 12-17 January 1640\" article cites for the 1635 landing. Second edition. Cited and not read."
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--spanish-american-wars-of-independence--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213, lead and \"Background\""
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "spanish-american-wars-of-independence",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article on the wars opens: **\"The struggles in both hemispheres began shortly after the outbreak of the Peninsular War forming part of the broader context of the Napoleonic Wars.\"** It puts the mechanism plainly further down, comparing the Spanish American case with the Brazilian one: **\"both conflicts were triggered by Napoleon's invasion of the Iberian Peninsula, which forced the Portuguese royal family to flee to Brazil in 1807\"**. \"Triggered\" is causing and not merely preceding, so `caused` is the type the source allows; what the article names is the invasion, which is the war this atlas holds as `peninsular-war`. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

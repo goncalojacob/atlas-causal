@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-polesella",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q3636579",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Polesella"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636579"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Polesella\", revision 1370586353"
+    }
+  ],
+  "title": "Battle of Polesella",
+  "summary": "The English Wikipedia article \"Battle of Polesella\", at revision 1370586353, opens: \"The Battle of Polesella, fought on 22 December 1509, by forces of the Duchy of Ferrara and the Republic of Venice, was a naval battle on the River Po in the War of the League of Cambrai in the Italian Wars. It was an overwhelming victory for Ferrara.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636579, imported by tools/import/wikidata.mjs. The item's own description reads \"December 1509 battle between the Duchy of Ferrara and the Republic of Venice\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509,
+    "date": "1509-12-22"
+  },
+  "place": "polesella",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-cambrai"
+}

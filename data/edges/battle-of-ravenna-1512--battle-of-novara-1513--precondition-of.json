@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Prelude"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ravenna (1512)\", revision 1370587274"
+    },
+    {
+      "source": "mallett-shaw-2014-the-italian-wars",
+      "locator": "p. 121 of the 2012 printing, as the \"Battle of Novara (1513)\" article cites it"
+    }
+  ],
+  "from": "battle-of-ravenna-1512",
+  "to": "battle-of-novara-1513",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Novara article opens its § Prelude on Ravenna in so many words: \"The French had been victorious at the Battle of Ravenna the previous year. Nevertheless, the French under King Louis XII were driven out of the city of Milan the following month by the Holy League. Following the French removal from Milan, Swiss mercenaries installed Maximilian Sforza as Duke of Milan on 29 December 1512.\" Novara was the French attempt to take Milan back: \"In June 1513, the French army, consisting of more than 20,000 under Louis de la Trémoille, besieged the city of Novara, which was held by Swiss mercenaries.\" `precondition-of`: a victory that cost the French Milan a month later is the position the 1513 campaign begins from, which is what the article says and no more. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

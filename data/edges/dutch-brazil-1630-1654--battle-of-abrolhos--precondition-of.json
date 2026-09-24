@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "battle-of-abrolhos",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Abrolhos article puts the Dutch fleet where the Dutch colony had put it: Oquendo \"carried reinforcements to Paraíba, Pernambuco, and Bahia\", and \"Once the Dutch learned of his coming, their fleet in Pernambuco, led by admiral Adrian Pater, sailed to intercept the Spanish convoy.\" A Dutch fleet of thirty-three ships lying at Pernambuco in 1631 is what the capture of 1630 left there, and the battle is the convoy meeting it. `precondition-of`: the colony is the state of affairs the battle begins from, and the article says the fleet sailed because Oquendo was coming and not because of anything the colony did. Probable: Wikipedia alone, and the article's own account of both ends.",
+  "dispute": null
+}
