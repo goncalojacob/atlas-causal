@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1542–1546\", revision 1370624570"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1551–1559\", revision 1370624572"
+    }
+  ],
+  "from": "italian-war-of-1542-1546",
+  "to": "italian-war-of-1551-1559",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Italian War of 1542–1546 article ends on what it left undone: Charles came to terms with Francis at Crépy in 1544, the treaty was made moot within a year by the death of the Duke of Orléans, Henry fought on to the Treaty of Ardres in 1546, and \"the deaths of King Francis of France and King Henry VIII of England, in early 1547 left the resolution of the Italian Wars to their successors.\" The 1551–1559 article opens on one of those successors doing exactly that: the war \"began when Henry II of France declared war against Charles V, Holy Roman Emperor, with the intent of recapturing parts of Italy\". A war that settles nothing and passes the quarrel to the next reign is a precondition of the war that reign fights, not its cause. Probable, because both articles are read at one revision each and neither names a historian for the reading.",
+  "dispute": null
+}

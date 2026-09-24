@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-nanshan--siege-of-port-arthur--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nanshan\", revision 1370451314, § Background and § Results"
+    }
+  ],
+  "from": "battle-of-nanshan",
+  "to": "siege-of-port-arthur",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Nanshan's article states the intention before the battle and the outcome after it. § Background: \"The Japanese intention was to break through this Russian defensive position, capture the port of Dalny, and lay siege to Port Arthur.\" § Results: \"To their amazement, they found that the Russians had made no effort to hold the strategically valuable and easily defendable port of Dalny, but had retreated all the way back to Port Arthur.\" `precondition-of`: taking the neck of the Liaodong Peninsula is what shut the garrison inside the fortress the siege was then laid to. Probable: Wikipedia alone.",
+  "dispute": null
+}

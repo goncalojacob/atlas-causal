@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-brega--battle-of-ajdabiya--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ajdabiya\", revision 1374514977"
+    }
+  ],
+  "from": "second-battle-of-brega",
+  "to": "battle-of-ajdabiya",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Ajdabiya's article states what the second battle of Brega left in front of it: \"Following the Second Battle of Brega, in which pro-Gaddafi forces captured the town, Ajdabiya was the only major rebel-held city left en route to the rebel capital of Benghazi.\" `precondition-of`: losing Brega is what made Ajdabiya the next thing on the road, which is a position on a coastal highway and not a cause. Probable: Wikipedia alone.",
+  "dispute": null
+}

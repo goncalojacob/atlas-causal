@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 368 of 749 |
+| **after M42** | 36 of 36 | 379 of 858 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -282,7 +282,7 @@ those lines is `croatian-war-of-independence` naming `croatia`. The war runs
 **1991 to 1995** and the CShapes record `croatia` begins in **1992**, so the
 war *overlaps* the polity without the polity being alive in the year the war
 started. Counted by the rule this table states — alive at the start — the
-figure is **368**; counted by overlap it is **369**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, and both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name; the **gap** is still the one entry this paragraph is about.
+figure is **379**; counted by overlap it is **380**. Both figures rose by one in batch 35, which gave `battle-of-mogadishu-1993` the two participants its item names and this atlas holds, both rose by sixteen in the curation fire of 23 September, whose `P710` pass gave sixteen more actorless events the parties their items name, both rose by two in M42b batch 8, which gave `battle-of-cajamarca` and `siege-of-cusco` the `inca-empire` their items name as a participant and this atlas already held, both rose by one in M42b batch 9, which gave `guarani-war` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670) and this atlas has held since M53, both rose by one again in M42's batch 40, whose `P710` pass gave `rhodesian-bush-war` the two participants its item names and this atlas holds, and by one again in M42's batch 42, whose `P710` pass gave `operation-green-sea` the three its item names, by three again in M42's batch 43, whose `P710` pass gave `operation-odyssey-dawn` twelve participants, `2003-invasion-of-iraq` five and `india-pakistan-war-of-1971` two, by one again in M42's batch 44, whose `P710` pass gave `battle-of-inchon` the one participant its item names and this atlas holds, and by one again in M42b batch 13, which gave `first-treaty-of-san-ildefonso` the `kingdom-of-portugal` its item names as a participant (`P710` Q45670), and both rose by one again in M42's batch 47, whose `P710` pass gave `battle-of-port-arthur` the two participants its item names — the Empire of Japan and the Russian Empire, read as `japan` and `russian-empire`, which is how `russo-japanese-war` itself already reads the same two items; the **gap** is still the one entry this paragraph is about, and `croatian-war-of-independence` is still the only event the two rules disagree about.
 
 Nothing here is wrong. 1992 is where CShapes begins Croatia, which is a
 recognition date and not the date a state began fighting for itself, and
@@ -304,7 +304,26 @@ brought `origin/m42`’s own batches across — and every one of them leaves the
 numerator where it was. `origin/m42`'s own batches 37 and 38, nine imported
 joins between them and none of which names an actor, then arrive on this branch
 with the merge of 23 September, which is what takes the denominator to
-**726** without a batch of this lane having run — and M42b's own batch 7, twenty-three records of the Spanish American wars of independence and none of them naming an actor, takes it to **749**: the count is of the corpus
+**726** without a batch of this lane having run — and M42b's own batch 7, twenty-three records of the Spanish American wars of independence and none of them naming an actor, takes it to **749**; M42b's own batches 8 to 11 and, at the head of the fire of
+23 September, the merge bringing `origin/m42`'s batches 39 to 42 across take it
+to **373 of 790**, the numerator moving by the actor lines those batches read off
+their items' own `P710` and not by anything written here; M42b's batch 12, five
+imports of the Italian Wars and not one of them naming an actor, takes it to
+**373 of 795**; the merge of `origin/m42`'s batch 45, six Libyan and Darfur
+events of which not one item carries a `P710`, takes it to **378 of 817**; M42b's batch 14, five engagements of the Dutch–Portuguese War in
+Brazil whose items name three participants between them and not one of which this atlas holds as an
+actor, takes it to **378 of 822**; and the merge of `origin/m42`'s batch 46 — the
+seven remaining events of the Libyan civil war's eastern front, of which again
+not one item carries a `P710` — takes it to **378 of 829**; and M42b's batch 15,
+five engagements of the Spanish conquest of the Aztec Empire of which one item
+names three participants and this atlas holds none of them, takes it to
+**378 of 834**; and the merge of `origin/m42`'s batch 47 — the seven
+Russo-Japanese War records, the first batch of that lane in four to move the
+numerator, because `Q1363925`, the naval Battle of Port Arthur, names the
+Empire of Japan and the Russian Empire in its `P710` and this atlas holds an
+actor for each — takes it to **379 of 841**; and M42b's batch 16, six engagements of the Rebellion of
+Túpac Amaru II of which not one item carries a `P710` the atlas holds,
+takes it to **379 of 847**: the count is of the corpus
 and not of a branch. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
@@ -336,7 +355,45 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands.** M42 adds active events
+rewritten as each of that milestone's batches lands** — M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
+**379** again, and for two reasons this time: two of its four items carry no
+`P710` at all (`Q932845` the siege of Salvador and `Q122056040` the action in
+the Bay of São Salvador), and the other two name `Q170072` the Dutch Republic,
+`Q377350` the Iberian Union and `Q617066` the Dutch West India Company, for none
+of which the atlas holds an actor. `Q377350` is also open question 2 of
+`docs/m42b-pool.md`, so it is not a record a run may write on its own. M42b's batch 17 of 24 September takes the denominator to 854 and leaves the
+numerator at **379**: its seven War of the League of Cambrai engagements all
+arrived with `actors: []`, and not for want of a `P710` — every one of the seven
+items names two to four participants, and the atlas holds an actor for none of
+the nine polities between them (`Q4948` the Republic of Venice, `Q70972` the
+Kingdom of France, `Q12548` the Holy Roman Empire, `Q170174` the Papal States,
+`Q693570` Ferrara, `Q153529` Milan, `Q435583` the Old Swiss Confederacy,
+`Q766543` and `Q21088788` the Spanish monarchy under its two items). That is
+what §4.1 counts and it is the reason Europe's sixteenth century moves the
+denominator and never the numerator. batch 44 of 23 September
+takes the denominator to 778 and the numerator to **374**, its six events
+carrying one actor line between them: `battle-of-inchon`'s
+`united-states-of-america`, the one participant of its item's own `P710` this
+atlas holds, the other five items naming no `P710` at all. Batch 43 earlier the
+same day took the denominator to 772 and the numerator to 373, the largest move
+by an import: three of its five take actor lines from their items' own `P710`
+(`operation-odyssey-dawn` twelve, `2003-invasion-of-iraq` five,
+`india-pakistan-war-of-1971` two), and every one of those lines names a polity
+this atlas already held, which is the whole of what §4.1 counts. Batch 42 before
+it took the denominator to 767 and the numerator to 370, because `operation-green-sea`
+took three actor lines from its item's own `P710` (`portugal` as `invader`,
+`guinea` and `paigc` as `target`), which is A12 (4) asked of a batch again; its
+four other imports carry `actors: []`. Batch 41 before it
+took the denominator to 762 and left the numerator at 369. Batch 40 before
+it, of the same day, took the denominator to 757 and the numerator to 369, and
+it is the first M42 batch to move the numerator by an import rather than by an
+umbrella written here. `rhodesian-bush-war` arrived with `actors: []` like every other imported
+record and then took two actor lines from its item's own `P710` participants,
+which is what amendment A12 (4) asks of every batch: `south-africa` and
+`frelimo`, both already held, both `supporter`, each with the article's own
+phrase as the note. Batch 39 before it took the denominator to 752 and left the
+numerator at 368, because its three imports carried `actors: []` and nothing
+asked them for more. M42 adds active events
 and does not add actor lines: everything it reinstates or imports is a
 Wikidata record carrying `actors: []`, which is what `docs/m67-umbrellas.md`
 §2.1 and M67's amendment A1 already settled — **an event with no actor and no

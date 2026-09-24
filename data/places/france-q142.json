@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "france-q142",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q142, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q142",
+  "sitelinks": {
+    "count": 339,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "France",
+    "pt": "França"
+  },
+  "sources": [],
+  "names": [
+    "France",
+    "França"
+  ],
+  "where": {
+    "lon": 2,
+    "lat": 47,
+    "precision": "country",
+    "label": "France"
+  },
+  "region": null,
+  "summary": null
+}

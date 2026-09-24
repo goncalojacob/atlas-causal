@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "wiriyamu-massacre-1972--carnation-revolution-1974--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mozambican War of Independence\", revision 1374663244, § Portuguese counter-offensive (June 1970)"
+    }
+  ],
+  "from": "wiriyamu-massacre-1972",
+  "to": "carnation-revolution-1974",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war's article names the massacre among what brought the regime in Lisbon down: \"Combined with the news of the Wiriyamu Massacre and that of renewed FRELIMO onslaughts through 1973 and early 1974, the worsening situation in Mozambique later contributed to the downfall of the Portuguese government in 1974.\" The atlas already holds mozambican-war-of-independence --caused--> carnation-revolution-1974 for the war as a whole; the sentence names the massacre separately and \"contributed to\" is a precondition and not a cause. It is the edge that joins the Portuguese chain to the record the Mozambican war already carries.",
+  "dispute": null
+}

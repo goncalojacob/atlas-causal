@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-sangarara--siege-of-cusco-1781--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    }
+  ],
+  "from": "battle-of-sangarara",
+  "to": "siege-of-cusco-1781",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The rebellion's article, opening its \"Siege of Cusco\" section, gives the march on the city as a decision taken to hold what had been won: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** The sentences on either side put the same thing in order — Túpac Amaru returned to Tungasuca on 17 December, \"the rebel leader began preparations for the great expedition against Cusco\", and the army departed on 20 December. `enabled` and not `caused`, because Sangarará is one of three advantages the sentence names and the article gives no weight to any of them; what the source supports is that the victory was part of the position from which the offensive was launched, and not that it brought the offensive about.",
+  "dispute": null
+}

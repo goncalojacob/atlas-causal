@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unified-task-force",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q460844",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Unified Task Force",
+    "pt": "Unified Task Force"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q460844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Unified Task Force\", revision 1375002456"
+    }
+  ],
+  "title": "Unified Task Force",
+  "summary": "The English Wikipedia article \"Unified Task Force\", at revision 1375002456, opens: \"The Unified Task Force (UNITAF), also known as Operation Restore Hope, was a United States–led, United Nations–sanctioned coalition military force deployed to Somalia from 5 December 1992 to 4 May 1993. It was established to replace United Nations Operation in Somalia I, which had been deployed in April 1992 in response to the 1992 famine—a crisis that followed the 1991 collapse of the Somali Democratic Republic and the full outbreak of the Somali Civil War.\" Wikidata item Q460844, whose own description reads \"1992 American-led UN peacekeeping mission in Somalia\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1992,
+    "end": 1993,
+    "date": "1992-12-05",
+    "endDate": "1993-05-04"
+  },
+  "place": "somalia-q1045",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "somali-civil-war"
+}

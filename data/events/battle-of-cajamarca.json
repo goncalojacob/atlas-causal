@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "battle-of-cajamarca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1425362",
+  "wikipedia": {
+    "en": "Battle of Cajamarca",
+    "pt": "Batalha de Cajamarca"
+  },
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1425362"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cajamarca\", revision 1370108415"
+    }
+  ],
+  "title": "Battle of Cajamarca",
+  "summary": "The English Wikipedia article \"Battle of Cajamarca\", at revision 1370108415, opens: \"The Battle of Cajamarca, also spelled Cajamalca, was the ambush and seizure of the Incan ruler Atahualpa by a small Spanish force led by Francisco Pizarro, on November 16, 1532. The Spanish killed thousands of Atahualpa's counselors, commanders, and unarmed attendants in the great plaza of Cajamarca, and caused his armed host outside the town to flee. The capture of Atahualpa marked the opening stage of the conquest of the pre-Columbian civilization of Peru.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1425362, imported by tools/import/wikidata.mjs. The item's own description reads \"1532 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1532,
+    "end": 1532,
+    "date": "1532-11-16"
+  },
+  "place": "cajamarca",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "inca-empire",
+      "role": "belligerent",
+      "note": "Wikidata names the Inca Empire (Q28573) a participant of the battle; this atlas already holds that polity."
+    }
+  ]
+}

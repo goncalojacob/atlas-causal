@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "unified-task-force--united-nations-operation-in-somalia-ii--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997, lead and \"Expansion of mandate\""
+    }
+  ],
+  "from": "unified-task-force",
+  "to": "united-nations-operation-in-somalia-ii",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article says \"UNOSOM II carried on from the transitory United States-controlled (UN-sanctioned) Unified Task Force (UNITAF)\", that the Secretary-General \"noted that despite the size of the UNITAF mission, a secure environment was not yet established\" and concluded that its successor \"should be endowed with enforcement powers under Chapter VII\", that \"UNOSOM II would therefore seek to complete the task begun by UNITAF\", and that UNOSOM II \"did not formally take over operations in Somalia until UNITAF was dissolved just over a month later on 4 May 1993\". The second mission was constituted out of what the first had and had not done; that is a precondition and not a cause. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

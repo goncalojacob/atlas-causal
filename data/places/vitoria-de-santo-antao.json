@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "vitoria-de-santo-antao",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q985685",
+  "wikipedia": {
+    "en": "Vitória de Santo Antão"
+  },
+  "sources": [],
+  "names": [
+    "Vitória de Santo Antão",
+    "Vitória do Santo Antão"
+  ],
+  "where": {
+    "lon": -35.3075,
+    "lat": -8.12639,
+    "precision": "city",
+    "label": "Vitória de Santo Antão"
+  },
+  "region": null,
+  "summary": null
+}

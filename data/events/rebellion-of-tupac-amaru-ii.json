@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rebellion-of-tupac-amaru-ii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1806552",
+  "wikipedia": {
+    "en": "Rebellion of Túpac Amaru II"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1806552"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812"
+    }
+  ],
+  "title": "Rebellion of Túpac Amaru II",
+  "summary": "The English Wikipedia article \"Rebellion of Túpac Amaru II\", at revision 1376254812, opens: \"The Rebellion of Túpac Amaru II was an uprising by kuraka-led Aymara, Quechua, and mestizo rebels aimed at overthrowing Spanish colonial rule in Peru, from 1780 to 1783. The causes of the rebellion included opposition to the Bourbon Reforms, an economic downturn in colonial Peru, and a grassroots revival of Inca cultural identity led by Túpac Amaru II, an indigenous kuraka and the leader of the rebellion. While Amaru II and other prominent rebel leaders were captured and executed by the Spanish in 1781, the rebellion continued for at least another year under Diego Cristóbal Túpac Amaru, Túpac Katari and Andrés Túpac Amaru, among others.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1806552, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising of native and mestizo peasants against the Bourbon reforms in the Spanish Viceroyalty of Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1783,
+    "date": "1780-11-04",
+    "endDate": "1783-03-15"
+  },
+  "place": "peru-q419",
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": [
+    "spanish-colonization-of-the-americas",
+    "atlantic-revolutions"
+  ],
+  "actors": []
+}

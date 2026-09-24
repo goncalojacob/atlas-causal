@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-the-aztec-empire--new-laws--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § The crown and the indigenous populations"
+    }
+  ],
+  "from": "spanish-conquest-of-the-aztec-empire",
+  "to": "new-laws",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article names the two conquests as what the legislation of 1542 followed: **\"following the Spanish conquest of the Aztec Empire and the Spanish conquest of Peru, more stringent laws to control conquerors' and settlers' exercise of power, especially their maltreatment of the indigenous populations, were promulgated, known as the New Laws (1542)\"**. The New Laws' own article gives the same reading, crediting \"denunciations and calls for reform from individuals, such as the Dominican friar Bartolomé de las Casas\".",
+  "dispute": null
+}

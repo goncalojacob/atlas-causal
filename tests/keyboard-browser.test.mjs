@@ -94,6 +94,24 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     // unchanged.
     await waitFor(page, `return document.querySelectorAll('#timeline rect.bar[data-id]').length > 0
       && [...document.querySelectorAll('#timeline .layer-barLabels text')].length > 0;`, 'the titles');
+    // **And then until the packing stops moving.** The wait above is satisfied
+    // by the *first* century to land, and the atlas opens on all of them: a
+    // later shard arriving between the read below and the arrow presses
+    // repacks the lanes under the order this test then walks, which is how the
+    // check went red on run 1565 with `End` landing on `fixture-event-deep-1969`
+    // where `order` said 2025. Same shape as `timeline-browser` 214 in
+    // docs/m78-flakes.md — one gesture lays the rows out twice and the test
+    // read the first of the two. So: the lane, x and id of every bar, read
+    // twice over a frame, and the test goes on only when the two agree.
+    const packing = `return [...document.querySelectorAll('#timeline [data-bar]')]
+      .map((el) => el.getAttribute('data-lane') + '@' + el.getAttribute('x') + '#'
+        + (el.getAttribute('data-id') ?? 'cluster:' + el.getAttribute('data-cluster')))
+      .sort().join('|');`;
+    await waitFor(page, `const now = (() => { ${packing} })();
+      const was = window.__packingWas ?? null;
+      window.__packingWas = now;
+      return was !== null && was === now;`, 'the lanes to stop repacking');
+    const settled = await page.eval(packing);
 
     // Both in one evaluation, off one frame, for the same reason.
     const seen = await page.eval(`const out = {};
@@ -122,6 +140,11 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     const busiest = names.map((lane) => ({ lane, n: seen[lane].length })).sort((a, b) => b.n - a.n)[0];
     assert.ok(busiest.n > 1, 'a lane with somewhere to walk to');
     const order = seen[busiest.lane].map((bar) => bar.key);
+    // The order the arrows are about to walk is the settled one and not a
+    // frame the test happened to catch. Said as an assertion rather than left
+    // to the wait: a shard that lands anyway should be reported as what it is,
+    // not as an arrow key that went to the wrong bar.
+    assert.equal(await page.eval(packing), settled, 'the lanes did not repack while the order was read');
 
     await page.eval(`document.querySelector('#timeline [data-bar][tabindex="0"][data-lane=' + JSON.stringify(${JSON.stringify(busiest.lane)}) + ']').focus(); return true;`);
     assert.equal((await page.eval(FOCUSED)).lane, busiest.lane);

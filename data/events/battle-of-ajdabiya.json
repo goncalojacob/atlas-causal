@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ajdabiya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q506595",
+  "wikipedia": {
+    "en": "Battle of Ajdabiya"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q506595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ajdabiya\", revision 1374514977"
+    }
+  ],
+  "title": "Battle of Ajdabiya",
+  "summary": "The English Wikipedia article \"Battle of Ajdabiya\", at revision 1374514977, opens: \"The Battle of Ajdabiya was an armed battle in and near the city of Ajdabiya that took place as part of the Libyan Civil War. It was fought between anti-government rebels and military forces loyal to the Libyan leader Muammar Gaddafi. Following the Second Battle of Brega, in which pro-Gaddafi forces captured the town, Ajdabiya was the only major rebel-held city left en route to the rebel capital of Benghazi. The battle for Ajdabiya had been cited as a potential turning point in the conflict on which the fate of the whole rebellion may be decided. On 26 March 2011, Libyan rebels, backed by extensive allied air raids, seized control of the frontline oil town of Ajdabiya from Colonel Muammar Gaddafi's forces. During the first phase of the battle, pro-Gaddafi forces seized the strategic road junction leading to Benghazi and Tobruk, and captured most of the city. The city centre remained in rebel hands but was surrounded by pro-government forces and cut off from outside assistance. After the second phase, anti-Gaddafi forces recaptured the road junction and cleared loyalist forces from the city, sending them retreating down the Libyan Coastal Highway towards Sirte.\" Wikidata item Q506595, whose own description reads \"battle of the 2011 Libyan Civil War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-15",
+    "endDate": "2011-03-26"
+  },
+  "place": "ajdabiya",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

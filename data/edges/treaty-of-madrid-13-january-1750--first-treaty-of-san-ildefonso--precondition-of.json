@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "treaty-of-madrid-13-january-1750--first-treaty-of-san-ildefonso--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Madrid (13 January 1750)\", revision 1367898537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Treaty of San Ildefonso\", revision 1372949821"
+    }
+  ],
+  "from": "treaty-of-madrid-13-january-1750",
+  "to": "first-treaty-of-san-ildefonso",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1777 treaty is the 1750 one taken up again after it failed. The Treaty of Madrid article: \"The terms of the Treaty of Madrid, with a few exceptions, were re-established in the First Treaty of San Ildefonso in 1777, and that treaty was again negated in 1801.\" The San Ildefonso article says the same from its own end, in its background: \"The 1750 Treaty of Madrid sought to resolve the dispute, but it was annulled in 1761 by the new Spanish monarch Charles III\", after which came the Fantastic War of 1762-1763, the Spanish capture of Colónia do Sacramento and its return under the Treaty of Paris of 1763. Twenty-seven years and a war separate them and the second settles what the first could not, so the first is a `precondition-of` the second and did not cause it. Probable, on two articles at one revision each.",
+  "dispute": null
+}

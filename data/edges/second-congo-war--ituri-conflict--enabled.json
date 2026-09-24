@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-congo-war--ituri-conflict--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ituri conflict\", revision 1370624684, lead"
+    }
+  ],
+  "from": "second-congo-war",
+  "to": "ituri-conflict",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article's lead says the conflict \"was largely set off by the Second Congo War, which had led to increased ethnic consciousness, a large supply of small arms, and the formation of various armed groups\", and the body adds that \"during the Second Congo War, which began in 1998, the situation between the Hema and Lendu reached the level of regional conflict\". The mechanism the article names is a set of conditions — arms, groups, hardened identities — and not an act, and the Hema and Lendu had fought \"since as early as 1972\"; so the war enabled the conflict rather than causing it, and the weaker of the two types the source allows is the one written. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

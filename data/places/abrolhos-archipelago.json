@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "abrolhos-archipelago",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q331529",
+  "wikipedia": {
+    "en": "Abrolhos Archipelago"
+  },
+  "sources": [],
+  "names": [
+    "Abrolhos Archipelago"
+  ],
+  "where": {
+    "lon": -38.70028,
+    "lat": -17.97122,
+    "precision": "region",
+    "label": "Abrolhos Archipelago"
+  },
+  "region": null,
+  "summary": null
+}

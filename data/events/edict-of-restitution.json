@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,9 +21,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a9-place"
     ],
-    "note": "M42b batch 5: the item gives P580 6 March 1629 and no P582, so the import wrote end: null with the end-unstated flag, which the atlas reads as still going and which put the edict outside the war it is part of. The record names a proclamation, and its cited article dates that act alone: \"proclaimed by Ferdinand II, Holy Roman Emperor in Vienna, on 6 March 1629\" (revision 1285679503). The end is that day. How long the edict stayed in force is another question this record does not answer."
+    "note": "Place from A9 P17 = Q12548, written as \"holy-roman-empire-q12548\" at `country` precision."
   },
   "wikidata": "Q703097",
   "sitelinks": {
@@ -51,9 +52,9 @@
     "end": 1629,
     "date": "1629-03-06"
   },
-  "place": null,
-  "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "holy-roman-empire-q12548",
+  "region": null,
+  "regionNote": null,
   "category": "law",
   "actors": [],
   "parent": "thirty-years-war"

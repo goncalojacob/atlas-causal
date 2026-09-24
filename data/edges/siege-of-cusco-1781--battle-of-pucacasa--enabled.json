@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-cusco-1781--battle-of-pucacasa--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cusco (1781)\", revision 1370740510, \"Aftermath\"; \"Rebellion of Túpac Amaru II\", revision 1376254812, \"Spanish punitive expedition\""
+    },
+    {
+      "source": "walker-2014-the-tupac-amaru-rebellion",
+      "locator": "the march on Tinta and the night attack of 22 March 1781"
+    }
+  ],
+  "from": "siege-of-cusco-1781",
+  "to": "battle-of-pucacasa",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The siege's article says what the failed siege left behind: **\"Following the rebel retreat, momentum of the rebels slowed down and royalists in Cusco celebrated\"**, and **\"The final, larger and professional group of reinforcements of Lima arrived in Cusco on 24 February 1781, with a count of over 20,000.\"** The rebellion's article takes it from there — **\"The royalists took the offensive, now having an advantage in armament and cavalry\"** — and Pucacasa is where that offensive first met the main rebel army: its own article calls it **\"the first major engagement between the Spanish reinforcements from Lima and Túpac Amaru's main army\"** (revision 1370586703). `enabled` and not `caused`: the reinforcements had been sent for before the siege ended and the article does not make the siege's failure the reason for the march, only the state of the war the march set out into. Walker is the work the article itself cites for the march on Tinta and the ruse that ended at Pucacasa; it is cited here and not read, which is why the confidence stays `probable`.",
+  "dispute": null
+}

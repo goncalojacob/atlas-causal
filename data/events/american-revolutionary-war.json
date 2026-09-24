@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "american-revolutionary-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "Place corrected by the run that imported it. The import reused `caribbean-sea`, the only P276 location of Q40949 this atlas already held; the item lists Eastern United States (Q1189650) first, and the article this record cites opens \"The conflict was fought in North America, the Caribbean, and the Atlantic Ocean\" at revision 1376266742. The first of those is what the record now points at, as a new place record `eastern-united-states` carrying Q1189650's own P625."
+  },
+  "wikidata": "Q40949",
+  "sitelinks": {
+    "count": 107,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "American Revolutionary War",
+    "pt": "Guerra de Independência dos Estados Unidos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q40949"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"American Revolutionary War\", revision 1376266742"
+    }
+  ],
+  "title": "American Revolutionary War",
+  "summary": "The English Wikipedia article \"American Revolutionary War\", at revision 1376266742, opens: \"The American Revolutionary War, also known as the Revolutionary War or American War of Independence or simply the American Revolution, was the armed conflict that comprised the final eight years of the broader American Revolution, in which American Patriot forces organized as the Continental Army and, commanded by George Washington, defeated the British Army. The conflict was fought in North America, the Caribbean, and the Atlantic Ocean. The war's outcome seemed uncertain for most of the war, but Washington and the Continental Army's decisive victory in the Siege of Yorktown in 1781 led King George III and the Kingdom of Great Britain to negotiate an end to the war. In 1783, in the Treaty of Paris, the British monarchy acknowledged the independence of the Thirteen Colonies, leading to the establishment of the United States as an independent and sovereign nation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q40949, imported by tools/import/wikidata.mjs. The item's own description reads \"1775–1783 war between Great Britain and the Thirteen Colonies, which won independence as the United States of America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1783,
+    "date": "1775-04-19",
+    "endDate": "1783-09-03"
+  },
+  "place": "eastern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "atlantic-revolutions"
+}

@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "filed-from-p527"
     ]
   },
   "origin": {
@@ -79,5 +80,6 @@
       "actor": "syria",
       "role": "belligerent"
     }
-  ]
+  ],
+  "parent": "arab-israeli-conflict"
 }

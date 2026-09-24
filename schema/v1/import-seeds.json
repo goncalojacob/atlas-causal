@@ -88,11 +88,26 @@
             "type": "string",
             "enum": ["person", "polity", "institution", "people"]
           },
-          "category": {
+          "precision": {
+    "description": "How coarsely a place of this class is drawn: one of the four of src/vocab.js. Meaningful only where kind is place. A class that leaves it out is a point on the ground, which is what every imported place was until M42b batch 9 — a department, a captaincy or a historical region is an area and PRECISIONS calls those coarse, so the map draws them wider and fainter. The decision is editorial, like the kind and the category beside it, and belongs in a file somebody can argue with.",
+    "type": "string",
+    "enum": [
+     "point",
+     "city",
+     "region",
+     "country"
+    ]
+   },
+   "category": {
             "description": "Which category of data/categories.json an item of this class becomes. Meaningful only where kind is event, and checked against that file by tools/validate.mjs — a category spelled wrong here would be written onto every record the class creates. A class with none is a class whose mapping nobody has decided: the import writes no category for it rather than guessing one (plan decision 13, amendment A17).",
             "type": "string",
             "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
             "maxLength": 120
+          },
+          "precision": {
+            "description": "How coarse a place of this class is, as one of the four precisions of src/vocab.js. Meaningful only where kind is place, and the same kind of editorial decision as kind and category: a settlement is a city, a province or a mountain range is a region, a fort or a building is a point. A place class with none is written at point, which is what every place imported before this key existed carries (amendment A12 (2)).",
+            "type": "string",
+            "enum": ["point", "city", "region", "country"]
           },
           "label": {
             "description": "What the source calls the class, copied in by the report so the file reads as something other than a list of numbers. Never used for matching.",

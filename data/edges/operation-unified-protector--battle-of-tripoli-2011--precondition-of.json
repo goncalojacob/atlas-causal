@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-unified-protector--battle-of-tripoli-2011--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tripoli (2011)\", revision 1374512796, § Operation Mermaid Dawn plans and aims"
+    }
+  ],
+  "from": "operation-unified-protector",
+  "to": "battle-of-tripoli-2011",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article, § Operation Mermaid Dawn plans and aims: \"The plan was discussed between the NTC and the French government, and rebels drew up a list of over 120 targets for NATO to strike, although the actual number of targets struck was much lower. Memory cards containing information on loyalist command and control centres and other regime military and intelligence facilities were supplied to NATO by rebel cells in Tripoli.\" The assault was planned around the NATO air campaign, which by 21 August had been Unified Protector for five months. `precondition-of` and not `caused`: the article has the strikes as something the plan was built on and counted on, not as the reason anyone attacked. Probable: Wikipedia alone.",
+  "dispute": null
+}

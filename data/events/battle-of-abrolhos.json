@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-abrolhos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q2890640",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Abrolhos",
+    "pt": "Batalha Naval dos Abrolhos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890640"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814"
+    }
+  ],
+  "title": "Battle of Abrolhos",
+  "summary": "The English Wikipedia article \"Battle of Abrolhos\", at revision 1370430814, opens: \"The naval Battle of the Abrolhos took place on 12 September 1631 off the coast of Pernambuco, Brazil, during the Eighty Years' War. A joint Spanish-Portuguese fleet under admiral Antonio de Oquendo defeated the Dutch after a six-hour naval battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890640, imported by tools/import/wikidata.mjs. The item's own description reads \"1631 naval battle of the Dutch invasions of Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631,
+    "date": "1631-09-12"
+  },
+  "place": "abrolhos-archipelago",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-brazil-1630-1654"
+}

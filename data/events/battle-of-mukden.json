@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "battle-of-mukden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "date"
+    ],
+    "note": "Q384091 dates itself in the Julian calendar: both date statements carry `calendarmodel` Q1985786, the Old Style the Russian army reckoned in. The import does not read `calendarmodel`, so the days landed as the item states them while `interval.json` defaults a 1905 record to Gregorian. `calendar: \"julian\"` is that read written down and the days are unchanged. The cited article, at revision 1375786749, gives the same span New Style — \"19 February – 10 March 1905\" — to the day."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q384091",
+  "wikipedia": {
+    "en": "Battle of Mukden",
+    "pt": "Batalha de Mukden"
+  },
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q384091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mukden\", revision 1375786749"
+    }
+  ],
+  "title": "Battle of Mukden",
+  "summary": "The English Wikipedia article \"Battle of Mukden\", at revision 1375786749, opens: \"The Battle of Mukden was fought in the Russo-Japanese War between the Russian Empire and the Empire of Japan near the town of Mukden. Involving close to 550,000 troops and resulting in over 150,000 casualties, it was the largest and most decisive battle of the war, as well as the last major engagement on land. The Battle of Mukden was a strategic victory for the Japanese that, coupled with their victory at sea in the Battle of Tsushima four months later, proved critical in ending the war in Japan's favour.\" Wikidata item Q384091, whose own description reads \"1905 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1905,
+    "end": 1905,
+    "date": "1905-02-06",
+    "endDate": "1905-02-25",
+    "calendar": "julian"
+  },
+  "place": "shenyang",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

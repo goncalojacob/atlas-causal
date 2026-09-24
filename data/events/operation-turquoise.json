@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "operation-turquoise",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1433226",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Opération Turquoise",
+    "pt": "Operação Turquoise"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1433226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Opération Turquoise\", revision 1357895302"
+    }
+  ],
+  "title": "Opération Turquoise",
+  "summary": "The English Wikipedia article \"Opération Turquoise\", at revision 1357895302, opens: \"Opération Turquoise was a French-led military operation in Rwanda in 1994 under the mandate of the United Nations. The \\\"multilateral\\\" force consisted of 2,500 troops, 32 from Senegal and the rest French. ... Opération Turquoise is controversial for two reasons: accusations that it was an attempt to prop up the Hutu regime responsible for the Rwandan genocide, and that its mandate undermined the UNAMIR.\" Wikidata item Q1433226, whose own description reads \"1994 military operation\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1994,
+    "end": 1994,
+    "date": "1994-06-23",
+    "endDate": "1994-08-21"
+  },
+  "place": "rwanda-q1037",
+  "region": null,
+  "category": "war",
+  "actors": []
+}

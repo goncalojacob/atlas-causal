@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-brega--battle-of-ras-lanuf--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Brega\", revision 1372213042, § Battle and § Aftermath"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
+    }
+  ],
+  "from": "first-battle-of-brega",
+  "to": "battle-of-ras-lanuf",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Brega's own article states where the losing side went and what the winning side did next: \"The government force retreated to Ra's Lanuf, about 120 km west of Brega, after the battle\", and, in § Aftermath, \"On 4 March, anti-Gaddafi fighters launched an attack against Ra's Lanuf.\" Ras Lanuf's article says the same from the other end: \"The first phase of confrontation followed two days after the First Battle of Brega which occurred in the town Brega, roughly 130 kilometres (81 mi) to the east of Ras Lanuf.\" `precondition-of` and not `caused`: what Brega gave the next battle is where both armies then were, which is a position and not a motive. Probable: Wikipedia alone.",
+  "dispute": null
+}

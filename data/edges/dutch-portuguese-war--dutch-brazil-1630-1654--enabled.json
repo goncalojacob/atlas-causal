@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dutch-portuguese-war--dutch-brazil-1630-1654--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch–Portuguese War\", revision 1374150566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Brazil\", revision 1375595876"
+    }
+  ],
+  "from": "dutch-portuguese-war",
+  "to": "dutch-brazil-1630-1654",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Dutch Brazil was the American theatre of this war and not an enterprise beside it. The war's article, at revision 1374150566, describes a conflict in which \"the Dutch companies and fleet\" were \"invading Portuguese colonies in the Americas, Africa, and the East Indies\"; the Dutch Brazil article dates the American half of that to the fleet of sixty-five ships under Hendrick Corneliszoon Loncq, which \"gained control of Olinda by 16 February 1630, and Recife (the capital of Pernambuco) and António Vaz by March 3\". `enabled` rather than `caused`: the war is what made a Company fleet in Brazilian waters possible, and the colony is one of the things that possibility was spent on. The atlas also files the colony under the war as a part of it; `parent` does not enter the adjacency, so the causal reading is written here or nowhere.",
+  "dispute": null
+}

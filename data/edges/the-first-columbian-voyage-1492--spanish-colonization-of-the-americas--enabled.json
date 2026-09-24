@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "the-first-columbian-voyage-1492--spanish-colonization-of-the-americas--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish colonization of the Americas\", revision 1376245871, lead"
+    }
+  ],
+  "from": "the-first-columbian-voyage-1492",
+  "to": "spanish-colonization-of-the-americas",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "This edge claims only what the article's first sentence states: the Spanish colonization of the Americas **\"began in 1493 on the Caribbean island of Hispaniola after the initial 1492 voyage of Genoese mariner Christopher Columbus under license from Queen Isabella I of Castile\"**. The voyage is what the settlement of 1493 followed from and was licensed under; the article says nothing about how much of what came after was decided by it, and neither does this link.",
+  "dispute": null
+}

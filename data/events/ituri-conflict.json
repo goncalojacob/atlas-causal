@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ituri-conflict",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q133919",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Ituri conflict",
+    "pt": "Conflito de Ituri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ituri conflict\", revision 1370624684"
+    }
+  ],
+  "title": "Ituri conflict",
+  "summary": "The English Wikipedia article \"Ituri conflict\", at revision 1370624684, opens: \"The Ituri conflict is an ongoing low intensity asymmetrical conflict between the agriculturalist Lendu and pastoralist Hema ethnic groups in the Ituri region of the north-eastern Democratic Republic of the Congo. While the two groups had fought since as early as 1972, the name \"Ituri conflict\" refers to the period of intense violence between 1999 and 2003. Armed conflict continues to the present day.\" Wikidata item Q133919, whose own description reads \"low intensity asymmetrical conflict between the agriculturalist Lendu and pastoralist Hema ethnic groups in the Ituri region of the north-eastern DR Congo; subconflict of Second Congo War (main phase 1999–2003; started in 1972, continues to present)\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1999,
+    "end": 2003
+  },
+  "place": "ituri-province-q24909562",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-congo-war"
+}

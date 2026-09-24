@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "karameh",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the import for Q2592647, the town `battle-of-karameh` names in its `P276` and whose `P625` is the battle's own point to two places. The precision the import writes is hard-coded `point`; A12 (2) says it comes from the item's class, and the class here is Q486972, human settlement, so it is `city`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2592647",
+  "wikipedia": {
+    "en": "Karameh"
+  },
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-23"
+  },
+  "sources": [],
+  "names": [
+    "Karameh"
+  ],
+  "where": {
+    "lon": 35.58,
+    "lat": 31.951666666666668,
+    "precision": "city",
+    "label": "Karameh"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q2592647, imported by tools/import/wikidata.mjs. The item's own description reads \"human settlement in Jordan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

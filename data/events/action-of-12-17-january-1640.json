@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "action-of-12-17-january-1640",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q4677243",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Action of 12–17 January 1640"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677243"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892"
+    }
+  ],
+  "title": "Action of 12–17 January 1640",
+  "summary": "The English Wikipedia article \"Action of 12–17 January 1640\", at revision 1370425892, opens: \"The action of 12–17 January 1640 was a naval battle between a Dutch fleet and a combined Spanish-Portuguese fleet during the Eighty Years' War. The battle took place on the Brazilian coast off Pernambuco and was an attempt by a fleet consisting of approximately eighty vessels transporting about 5,000 soldiers under the command of Portuguese Admiral Fernando de Mascarenhas to land reinforcements to bolster the Portuguese militia besieging the city of Recife. On 12 January this fleet was intercepted by a Dutch task force of about forty ships commanded by Willem Loos. The ensuing battle lasted with occasional breaks until the evening of 17 January, when the Spanish and Portuguese fleet retreated and sailed away to the north.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677243, imported by tools/import/wikidata.mjs. The item's own description reads \"1640 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1640,
+    "date": "1640-01-12",
+    "endDate": "1640-01-17"
+  },
+  "place": "ilha-de-itamaraca",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-brazil-1630-1654"
+}

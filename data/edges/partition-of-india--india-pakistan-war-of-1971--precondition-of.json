@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "partition-of-india--india-pakistan-war-of-1971--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indo-Pakistani war of 1971\", revision 1371969450, § Background"
+    }
+  ],
+  "from": "partition-of-india",
+  "to": "india-pakistan-war-of-1971",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's § Background traces the war to the partition in so many words: \"The political tensions in East Pakistan had its origin in the creation of Pakistan as a result of the partition of India by the United Kingdom in 1947; the popular language movement in 1950; mass riots in East Bengal in 1964; and the mass protests in 1969.\" The partition is named as the origin of the tensions the war came out of, with three later stages between, so the type is precondition-of and not caused. The atlas already reads the partition into the 1947–48 war and the Kashmir conflict; this is the third war the same article traces to it.",
+  "dispute": null
+}

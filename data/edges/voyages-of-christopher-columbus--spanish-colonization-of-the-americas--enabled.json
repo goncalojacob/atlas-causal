@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish colonization of the Americas\", revision 1376245871"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Voyages of Christopher Columbus\", revision 1376021649"
+    }
+  ],
+  "from": "voyages-of-christopher-columbus",
+  "to": "spanish-colonization-of-the-americas",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The colonization article dates itself from the voyages and not from the first of them: \"The Spanish colonization of the Americas began in 1493 on the Caribbean island of Hispaniola after the initial 1492 voyage of Genoese mariner Christopher Columbus\" — 1493 is the second voyage, which carried settlers. The voyages article says the same from its end: the four expeditions \"led to Europeans learning about the New World and were an early breakthrough in the period known in Europe as the Age of Exploration, which saw the colonization of the Americas\". The atlas already carries the 1492 voyage as enabling the colonization; this edge is the other three voyages, which is what the colonization's own first sentence reaches back to. `enabled`, because a crossing that shows the way is not the decision to settle.",
+  "dispute": null
+}

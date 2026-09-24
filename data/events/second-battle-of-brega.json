@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-brega",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q911471",
+  "wikipedia": {
+    "en": "Second Battle of Brega",
+    "pt": "Segunda Batalha de Brega"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q911471"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Brega\", revision 1370735973"
+    }
+  ],
+  "title": "Second Battle of Brega",
+  "summary": "The English Wikipedia article \"Second Battle of Brega\", at revision 1370735973, opens: \"The Second Battle of Brega took place during the Libyan Civil War. Eleven days earlier, anti-Gaddafi forces had beaten back an attempt by loyalist forces to take the town on 2 March 2011, in the First Battle of Brega. Following that battle, rebel forces advanced along the Libyan Coastal Highway, taking the towns of Ra's Lanuf and Bin Jawad. However, after the Battle of Bin Jawad and the Battle of Ra's Lanuf, government troops retook all of the lost territory and were once again threatening Brega by mid-March.\" Wikidata item Q911471, whose own description reads \"conflict\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-13",
+    "endDate": "2011-03-15"
+  },
+  "place": "brega",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

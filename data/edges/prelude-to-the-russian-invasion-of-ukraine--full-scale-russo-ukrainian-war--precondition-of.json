@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prelude to the 2022 Russian invasion of Ukraine\", revision 1370705034, lead and the closing narrative"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q110116635 P156 (followed by) Q110999040"
+    }
+  ],
+  "from": "prelude-to-the-russian-invasion-of-ukraine",
+  "to": "full-scale-russo-ukrainian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article is the build-up and it ends on the invasion: \"On the morning of 24 February, Putin announced that Russia was initiating a \\\"special military operation\\\" in the Donbas, and launched a full-scale invasion into Ukraine\", after a year in which \"Russia had assembled 83 battalion tactical groups, estimated to be 70 percent of its combat capabilities, for a full-scale invasion of Ukraine\". The item says the same thing as a pointer, Q110116635 P156. It is precondition-of and not caused because the article is an account of what was in place before the decision, not an argument that the build-up compelled it; the two records are siblings under russo-ukrainian-war, and this is the edge the filing cannot make.",
+  "dispute": null
+}

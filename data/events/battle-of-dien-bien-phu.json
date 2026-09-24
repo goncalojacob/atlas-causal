@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-dien-bien-phu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `first-indochina-war` from `P361`: 13 March to 7 May 1954 is inside the war's 1946-12-19 to 1954-08-01, and the article's own §Aftermath calls it \"the decisive battle of the First Indochina War\". A9's first step and its second agree on the place: the battle's own `P625` is 21.3869/103.0156 and Q36027, its `P276`, carries 21.3924/103.0160 — the same valley to two places — so the place record is written for the city and not for the battle. The item names no `P710`, so no actor line."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q604897",
+  "wikipedia": {
+    "en": "Battle of Dien Bien Phu",
+    "pt": "Batalha de Dien Bien Phu"
+  },
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q604897"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
+    }
+  ],
+  "title": "Battle of Dien Bien Phu",
+  "summary": "The English Wikipedia article \"Battle of Dien Bien Phu\", at revision 1372169112, opens: \"The Battle of Điện Biên Phủ was a defeat of the French Union forces by the Viet Minh forces in the First Indochina War. It took place between 13 March and 7 May 1954.\" Wikidata item Q604897, whose own description reads \"The decisive battle of the First Indochina War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1954,
+    "end": 1954,
+    "date": "1954-03-13",
+    "endDate": "1954-05-07"
+  },
+  "place": "dien-bien-phu",
+  "region": null,
+  "regionNote": null,
+  "parent": "first-indochina-war",
+  "category": "war",
+  "actors": []
+}

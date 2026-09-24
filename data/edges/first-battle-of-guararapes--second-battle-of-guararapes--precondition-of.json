@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Guararapes\", revision 1370736242, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    }
+  ],
+  "from": "first-battle-of-guararapes",
+  "to": "second-battle-of-guararapes",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Second Battle of Guararapes article calls itself \"the second and decisive battle in the Insurrection of Pernambuco\", takes the First Battle as its § Background — \"{{Main|First Battle of Guararapes}}\" — and says there, in so many words, what the second answered: \"Facing an uprising by the Portuguese planters in Dutch Brazil and having concluded a Peace Treaty with the Spanish in 1647, the Dutch sent an expeditionary force to Brazil, consisting of 41 ships with 6000 men. This expeditionary force arrived late in Recife (Mauritsstad) and faced numerous problems. In April 1648, the Portuguese routed the expeditionary force at the First Battle of Guararapes, fought outside Recife.\" The same force fought again ten months later on the same ground. `precondition-of` rather than `caused`: the article makes the first battle the state of affairs the second begins from, and does not say the first brought the second about. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

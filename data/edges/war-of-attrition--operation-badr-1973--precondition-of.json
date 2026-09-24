@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "war-of-attrition--operation-badr-1973--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Badr (1973)\", revision 1370630810, lead"
+    }
+  ],
+  "from": "war-of-attrition",
+  "to": "operation-badr-1973",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's own lead makes the earlier war the reason for the operation: \"During the War of Attrition, which preceded Operation Badr, both Egypt and Syria (previously constituents of the United Arab Republic) had been seeking to recover the territories that Israel had captured from them during the 1967 Arab–Israeli War.\" The recovery the War of Attrition failed to win is what Badr was mounted to take, which is a precondition and not a cause: the article says the aim carried over, not that the one produced the other. The atlas already holds war-of-attrition --precondition-of--> yom-kippur-war; this is the same claim said of the operation that opened it.",
+  "dispute": null
+}

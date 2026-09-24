@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-pavia--war-of-the-league-of-cognac--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the League of Cognac\", revision 1370750083"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pavia\", revision 1370271639"
+    }
+  ],
+  "from": "battle-of-pavia",
+  "to": "war-of-the-league-of-cognac",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The War of the League of Cognac article opens its background on this edge in so many words: \"Shocked by the defeat of the Kingdom of France in the Italian War of 1521, Pope Clement VII, together with the Republic of Venice, began to organize an alliance to drive Charles V from the Italian Peninsula. Francis I, having signed the Treaty of Madrid, was released from his captivity in Madrid and returned to France, where he quickly announced his intention to assist Clement. Thus, on 22 May 1526, the League of Cognac was signed.\" The Battle of Pavia article says the same from its own end: Francis was taken to Spain, signed the Treaty of Madrid of 1526, and \"denounced the treaty after his liberation and soon re-opened hostilities over Burgundy and Milan.\" An alliance organised because of a defeat, by a pope shocked by it and a king released from the captivity it caused, is a reaction to that defeat and not a consequence of it, so `reacted-to` and not `caused`. Probable, because both articles are read at one revision each and neither names a historian for the reading.",
+  "dispute": null
+}

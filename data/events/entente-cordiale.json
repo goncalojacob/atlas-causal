@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m67-lined",
-      "a9-place"
+      "a9-place",
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -42,10 +43,14 @@
     {
       "source": "wikidata",
       "locator": "Q464399"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Entente Cordiale\", revision 1370844455"
     }
   ],
   "title": "Entente Cordiale",
-  "summary": "Wikidata item Q464399, imported by tools/import/wikidata.mjs. The item's own description reads \"series of agreements between the United Kingdom and France about colonies in Africa, Siam (Thailand), Newfoundland, and New Hebrides (Vanuatu)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Entente Cordiale\", at revision 1370844455, opens: \"The Entente Cordiale (French pronunciation: [ɑ̃tɑ̃t kɔʁdjal]; lit. 'Cordial Agreement') comprised a series of agreements signed on 8 April 1904 between the United Kingdom and France which saw a significant improvement in Anglo-French relations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q464399, imported by tools/import/wikidata.mjs. The item's own description reads \"series of agreements between the United Kingdom and France about colonies in Africa, Siam (Thailand), Newfoundland, and New Hebrides (Vanuatu)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1904,
     "end": 1904,

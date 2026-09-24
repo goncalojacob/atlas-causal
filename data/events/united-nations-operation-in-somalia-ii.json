@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "united-nations-operation-in-somalia-ii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1778229",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "United Nations Operation in Somalia II",
+    "pt": "Operação das Nações Unidas na Somália II"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1778229"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997"
+    }
+  ],
+  "title": "United Nations Operation in Somalia II",
+  "summary": "The English Wikipedia article \"United Nations Operation in Somalia II\", at revision 1373633997, opens: \"The United Nations Operation in Somalia II was the second phase of the United Nations intervention in Somalia and took place from March 1993 until March 1995, following the outbreak of the Somali Civil War in 1991. UNOSOM II carried on from the transitory United States-controlled (UN-sanctioned) Unified Task Force (UNITAF), which had been preceded by UNOSOM I.\" Wikidata item Q1778229, whose own description reads \"second phase of UN Intervention in Somalia after civil war erupted in 1991\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1993,
+    "end": 1995,
+    "date": "1993-03",
+    "endDate": "1995-03-28"
+  },
+  "place": "somalia-q1045",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "somali-civil-war"
+}

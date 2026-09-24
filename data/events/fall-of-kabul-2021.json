@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fall-of-kabul-2021",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `war-in-afghanistan-2001-2021` from `P361`: 15 August 2021 is inside the war's 2001-10-07 to 2021-08-30, and the article calls it \"the final action of the War in Afghanistan\". The item's other `P361`, `Q107461898`, is no record here. The place is `kabul`, its own `P276`, whose point its own `P625` gives to within four kilometres. Its one `P710` is the Taliban, which this atlas holds as no actor."
+  },
+  "wikidata": "Q108102583",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Fall of Kabul (2021)",
+    "pt": "Queda de Cabul (2021)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q108102583"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Kabul (2021)\", revision 1372101001"
+    }
+  ],
+  "title": "Fall of Kabul (2021)",
+  "summary": "The English Wikipedia article \"Fall of Kabul (2021)\", at revision 1372101001, opens: \"On 15 August 2021, Afghanistan's capital city of Kabul was captured by the Taliban after a major insurgent offensive that began in May 2021. It was the final action of the War in Afghanistan, and marked a total victory for the Taliban.\" Wikidata item Q108102583, whose own description reads \"Taliban capture of the capital of Afghanistan in 2021\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2021,
+    "end": 2021,
+    "date": "2021-08-15"
+  },
+  "place": "kabul",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-in-afghanistan-2001-2021"
+}

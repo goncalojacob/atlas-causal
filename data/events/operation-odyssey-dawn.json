@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "operation-odyssey-dawn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "participants-from-p710"
+    ],
+    "note": "Filed under `2011-military-intervention-in-libya` from `P361`: 19 to 31 March 2011 is inside the intervention, and the first sentence calls this \"the U.S. code name for the American role\" in it. The place is `libya-q1016`, the item's `P276` and a record already held. Twelve of the item's twenty-four `P710` participants are actors this atlas holds and are written as `belligerent` (A12 (4)); the rest are commands, ships and people."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q878102",
+  "wikipedia": {
+    "en": "Operation Odyssey Dawn",
+    "pt": "Operação Amanhecer da Odisseia"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q878102"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Odyssey Dawn\", revision 1375561963"
+    }
+  ],
+  "title": "Operation Odyssey Dawn",
+  "summary": "The English Wikipedia article \"Operation Odyssey Dawn\", at revision 1375561963, opens: \"Operation Odyssey Dawn was the U.S. code name for the American role in the international military operation in Libya to enforce United Nations Security Council Resolution 1973 during the initial period of 19–31 March 2011, which continued afterwards under NATO command as Operation Unified Protector. The initial operation implemented a no-fly zone that was proposed during the Libyan Civil War to prevent government forces loyal to Muammar Gaddafi from carrying out air attacks on anti-Gaddafi forces. On 19 March 2011, several countries prepared to take immediate military action at a summit in Paris. Operations commenced on the same day with a strike by French fighter jets, then US and UK forces conducting strikes from ships and submarines via 110 Tomahawk cruise missiles and air assets bombing Gaddafi forces near Benghazi. The goal of coalition forces was to impose a no-fly zone for Libyan government forces.\" Wikidata item Q878102, whose own description reads \"2011 military operation\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-19",
+    "endDate": "2011-03-31"
+  },
+  "place": "libya-q1016",
+  "region": null,
+  "regionNote": null,
+  "parent": "2011-military-intervention-in-libya",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Odyssey Dawn is the American name for the American role"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "canada",
+      "role": "belligerent"
+    },
+    {
+      "actor": "denmark",
+      "role": "belligerent"
+    },
+    {
+      "actor": "sweden",
+      "role": "belligerent"
+    },
+    {
+      "actor": "norway",
+      "role": "belligerent"
+    },
+    {
+      "actor": "spain",
+      "role": "belligerent"
+    },
+    {
+      "actor": "belgium",
+      "role": "belligerent"
+    },
+    {
+      "actor": "netherlands",
+      "role": "belligerent"
+    },
+    {
+      "actor": "italy-sardinia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "qatar",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-arab-emirates",
+      "role": "belligerent"
+    }
+  ]
+}

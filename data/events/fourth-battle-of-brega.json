@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fourth-battle-of-brega",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2632974",
+  "wikipedia": {
+    "en": "Fourth Battle of Brega"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2632974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Battle of Brega\", revision 1370619930"
+    }
+  ],
+  "title": "Fourth Battle of Brega",
+  "summary": "The English Wikipedia article \"Fourth Battle of Brega\", at revision 1370619930, opens: \"The Fourth Battle of Brega was a battle in July and August 2011, during the Libyan Civil War, between forces loyal to Muammar Gaddafi and forces of the Libyan opposition for control of the strategic town of Brega and its oil port.\" Wikidata item Q2632974, whose own description reads \"battle of the Libyan Civil War, fought 14-21 July 2011\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-07-14",
+    "endDate": "2011-07-21"
+  },
+  "place": "brega",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

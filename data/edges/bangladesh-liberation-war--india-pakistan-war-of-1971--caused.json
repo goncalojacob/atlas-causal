@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bangladesh-liberation-war--india-pakistan-war-of-1971--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    }
+  ],
+  "from": "bangladesh-liberation-war",
+  "to": "india-pakistan-war-of-1971",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article says it in one clause: \"The Indo-Pakistani conflict was sparked by the Bangladesh Liberation War, which was a result of the violation of the rights of East Pakistan by the Pakistan Army.\" The mechanism is in the same article — the campaign in the east drove \"approximately 10 million people\" into India, and \"Prime Minister Indira Gandhi on 27 March 1971 concluded that, instead of taking in millions of refugees, it was better to go to war with Pakistan\" — so `caused` and not `precondition-of`: the article supplies the chain and not only the sequence. The war is also filed under the liberation war, which is a display fact and says nothing this edge says. Probable: Wikipedia alone.",
+  "dispute": null
+}

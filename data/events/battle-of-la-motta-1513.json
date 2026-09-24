@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-motta-1513",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The article's own lead says Schio and its narrative puts the battle \"in the plains of Vicenza near Motta de Costabissara\", which is the locality the item's P276 names and within two kilometres of the item's own point; the record takes that and says so rather than choosing silently."
+  },
+  "wikidata": "Q1464620",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of La Motta (1513)",
+    "pt": "Batalha de La Motta (1513)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1464620"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Motta (1513)\", revision 1370446782"
+    }
+  ],
+  "title": "Battle of La Motta (1513)",
+  "summary": "The English Wikipedia article \"Battle of La Motta (1513)\", at revision 1370446782, opens: \"The Battle of La Motta, also known as the Battle of Schio, Battle of Vicenza or Battle of Creazzo, took place at Schio, in the Italian region of Veneto, Republic of Venice, on 7 October 1513, between the forces of the Republic of Venice and a combined force of Spain and the Holy Roman Empire, and was a significant battle of the War of the League of Cambrai. A Venetian army under Bartolomeo d'Alviano was decisively defeated by the Spanish/Imperial army commanded by Ramón de Cardona and Fernando d'Ávalos.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1464620, imported by tools/import/wikidata.mjs. The item's own description reads \"1513 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1513,
+    "end": 1513,
+    "date": "1513-10-07"
+  },
+  "place": "costabissara",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-cambrai"
+}

@@ -378,3 +378,26 @@ that belongs to two arguments at once, as Angolan independence belongs to the
 Portuguese republic and to African decolonisation, and not about restating an
 ancestor the chain already reaches. **Every umbrella that fits means every
 umbrella that adds something.**
+
+## M42 batch 42 — a second filing into `portuguese-colonial-war-1961-1974`
+
+**`portuguese-colonial-war-1961-1974` gained `operation-green-sea`**, the
+Portuguese amphibious raid on Conakry of 22 November 1970, which M42's inverse
+`part of` vein imported on 23 September. Both of §3's tests hold. The span is
+not in doubt: the raid is one night inside 4 February 1961 to 25 April 1974.
+The subject holds the way the Angolan war of independence's did — the raid was
+mounted from Portuguese Guinea by Portuguese officers against the PAIGC's
+headquarters and the government sheltering them, which is the umbrella's own
+war in one of its three theatres — and the record says so in its actors:
+`portugal` as `invader`, `guinea` and `paigc` as `target`, each read off the
+article's first two sentences at revision 1372115645.
+
+**This is the batch's A8 case and it is the owner's own shape.** The raid is
+also part of `guinea-bissau-war-of-independence`, which Wikidata's `P361` names
+(Q2609193) and which the atlas imported the day before. That war is **not**
+filed under the colonial war: it ran to 10 September 1974 and the colonial war
+closes on 25 April, so the umbrella is shorter than its part and rule 24 would
+warn (batch 41). The colonial war is therefore not reachable from the raid
+through its first parent, `tests/m42-filing.test.mjs` admits the second, and
+both are written. The raid belongs to two arguments at once — the war Portugal
+fought and the war Guinea-Bissau won — which is exactly what A8 was asked for.

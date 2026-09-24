@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-sirte-2011",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2361214",
+  "wikipedia": {
+    "en": "Battle of Sirte (2011)",
+    "pt": "Batalha de Sirte (2011)"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2361214"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
+    }
+  ],
+  "title": "Battle of Sirte (2011)",
+  "summary": "The English Wikipedia article \"Battle of Sirte (2011)\", at revision 1374518213, opens: \"The Battle of Sirte was the final and most decisive battle of the First Libyan Civil War, beginning when the National Liberation Army attacked the last remnants of the Libyan army still loyal to Muammar Gaddafi in his hometown and designated capital of Sirte, on the Gulf of Sidra. As of September 2011, Sirte and Bani Walid were the last strongholds of Gaddafi loyalists and the National Transitional Council hoped that the fall of Sirte would bring the war to an end. The battle and its aftermath marked the fall of the final stronghold of Gaddafi loyalists. Both Gaddafi and his son, Mutassim, were wounded and captured, then tortured and killed in custody less than an hour later. The month-long battle left Sirte almost completely in ruins, with many buildings damaged or totally destroyed.\" Wikidata item Q2361214, whose own description reads \"2011 final battle of the First Libyan Civil War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-09-15",
+    "endDate": "2011-10-20"
+  },
+  "place": "sirte",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "war-of-jenkins-ear--battle-of-cartagena-de-indias--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of Jenkins' Ear\", revision 1372109682"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cartagena de Indias\", revision 1375974450"
+    }
+  ],
+  "from": "war-of-jenkins-ear",
+  "to": "battle-of-cartagena-de-indias",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The battle is an operation of the war, and the war is what put a British fleet in the Caribbean for it. The Battle of Cartagena de Indias article opens: \"The Battle of Cartagena de Indias took place during the 1739 to 1748 War of Jenkins’ Ear between Spain and Great Britain. The result of long-standing commercial tensions, the war was primarily fought in the Caribbean; the British tried to capture key Spanish ports in the region, including Porto Bello and Chagres in Panama, Havana, and Cartagena de Indias in present-day Colombia.\" The War of Jenkins’ Ear article names it in the same terms: \"The most significant operation of the war was a failed British attack on Cartagena in 1741, which resulted in heavy casualties and ship losses, and was not repeated.\" A war that sends the fleet does not cause any one of its engagements, which is why this is `enabled` and not `caused`; that the battle is also part of the war is said by `parent` and not by this edge. Probable, on two articles at one revision each.",
+  "dispute": null
+}

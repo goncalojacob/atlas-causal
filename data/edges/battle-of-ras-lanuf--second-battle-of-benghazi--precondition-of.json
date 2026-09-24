@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414, § Aftermath"
+    }
+  ],
+  "from": "battle-of-ras-lanuf",
+  "to": "second-battle-of-benghazi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article, § Aftermath: \"After the battle the town was firmly in loyalist hands and government troops advanced further east taking the towns of Brega and Ajdabiya and reaching Benghazi.\" The loyalist recapture of Ras Lanuf on 11 March is the start of the advance that stood outside Benghazi eight days later. `precondition-of`: the article gives the advance its road and not its reason. Probable: Wikipedia alone.",
+  "dispute": null
+}

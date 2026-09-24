@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,8 +21,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place from A9 P17 = Q96, written as \"mexico-q96\" at `country` precision."
   },
   "wikidata": "Q7573442",
   "sitelinks": {
@@ -50,9 +52,9 @@
     "date": "1821-10-26",
     "endDate": "1829-09-11"
   },
-  "place": null,
-  "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "spanish-american-wars-of-independence"

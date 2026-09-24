@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-comuneros-new-granada--spanish-american-wars-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213, \"Background\""
+    },
+    {
+      "source": "kinsbruner-1994-independence-in-spanish-america",
+      "locator": "12–14, 17–32"
+    }
+  ],
+  "from": "revolt-of-the-comuneros-new-granada",
+  "to": "spanish-american-wars-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same paragraph of the wars' article that names the Túpac Amaru rising names this one in the same breath — **\"open revolts, such as the Revolt of the Comuneros in New Granada and the Rebellion of Túpac Amaru II in Peru\"** — and the same hedged sentence follows it: **\"The loss of high offices to peninsulars and the eighteenth-century revolts in Spanish South America were some of the direct causes of the wars of independence, which took place decades later, but they have been considered important elements of the political background in which the wars took place.\"** The revolt's own article gives the grievance: the rising was \"in reaction to the increase in taxation to raise funds for the defense of the region against the British and a rise in the price of tobacco and brandy\", which \"were part of the late eighteenth-century Bourbon Reforms\" (revision 1369393858). `precondition-of` for the same reason as its twin, and probable for the same reason.",
+  "dispute": null
+}
