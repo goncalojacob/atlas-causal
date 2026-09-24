@@ -65,13 +65,25 @@ function rowHtml(into, row) {
 // legend hiding the thing it explains, on a phone and on a 1440 px screen
 // alike, so it is one button and the key opens behind it. The stylesheet draws
 // it; the class is all this writes.
-export function viewKey(title, rows) {
+// **And the map's opens on a desktop** (M86 §5, review A finding 10). A "KEY"
+// button bottom left and nothing else is a key the first-time reader — the one
+// who most needs to know what a double ring means — does not know is one. The
+// phone keeps the fold, because there the box really would stand over the
+// picture: `PHONE` is the breakpoint `src/style.css` already draws at, asked
+// once when the key is built. A reader who closes it closes it.
+export const PHONE = '(max-width: 720px)';
+
+const onAPhone = () => Boolean(globalThis.matchMedia?.(PHONE)?.matches);
+
+export function viewKey(title, rows, { open = false } = {}) {
   const box = document.createElement('div');
   box.className = 'graph-key view-key';
+  const opened = open && !onAPhone();
+  if (opened) box.classList.add('open');
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'graph-key-toggle';
-  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-expanded', String(opened));
   button.textContent = 'Key';
   const body = document.createElement('div');
   body.className = 'graph-key-body';
@@ -142,5 +154,5 @@ function draw(into, row) {
   }
 }
 
-export const mapKey = () => viewKey('Marks', MAP_ROWS);
+export const mapKey = () => viewKey('Marks', MAP_ROWS, { open: true });
 export const timelineKey = () => viewKey('Bars', TIMELINE_ROWS);

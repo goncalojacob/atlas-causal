@@ -24,9 +24,11 @@ import { stackBadge, stackTitle } from '../src/cluster.js';
 import { identifiers } from '../src/citation.js';
 import { timelineDomain, labelPlacement } from '../src/timeline.js';
 import { PRECISIONS } from '../src/vocab.js';
+import { PHONE } from '../src/view-key.js';
 import { ROOT } from './helpers.mjs';
 
 const read = (file) => fs.readFile(path.join(ROOT, file), 'utf8');
+const source = await read('src/view-key.js');
 
 // Every record of every kind that carries prose a card prints. Read off disk
 // and not out of the index, because the index carries no summary: what the
@@ -266,6 +268,18 @@ test('the card head omits the default calendar and keeps a stated one', async ()
   const card = await read('src/panel/event.js');
   assert.ok(/defaultCalendar/.test(card), 'the card still knows what the default is');
   assert.ok(/calendar !== |calendar ===/.test(card), 'and compares against it');
+});
+
+test('the map’s key opens on a desktop and folds on a phone', () => {
+  // No DOM in `node --test`, so the question is asked of the module's own
+  // contract: the map asks for an open key and the timeline does not, and the
+  // breakpoint is the one the stylesheet already draws at.
+  assert.equal(PHONE, '(max-width: 720px)');
+  assert.ok(/mapKey = \(\) => viewKey\('Marks', MAP_ROWS, \{ open: true \}\)/.test(source),
+    'the map asks for its key open');
+  // And the phone's fold is not a preference stored anywhere: it is read off
+  // the media query when the key is built.
+  assert.ok(/matchMedia/.test(source), 'the fold is decided by the breakpoint');
 });
 
 test('the four precisions still say which of them are areas and not points', () => {
