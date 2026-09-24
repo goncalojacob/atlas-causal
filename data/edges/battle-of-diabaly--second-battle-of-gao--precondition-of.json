@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-diabaly--second-battle-of-gao--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Gao\", revision 1370736225, § Prelude"
+    }
+  ],
+  "from": "battle-of-diabaly",
+  "to": "second-battle-of-gao",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Gao's § Prelude makes the advance on the city the next step of the same push: \"A few days after taking the towns of Konna and Diabaly, the French and Malian forces continued their progress on Timbuktu and Gao\", and then singles Diabaly out — \"After the capture of Diabaly, the special forces advanced in Gao, the largest city in northern Mali\". Probable: Wikipedia alone.",
+  "dispute": null
+}

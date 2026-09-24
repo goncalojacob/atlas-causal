@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "battle-of-konna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3018708",
+  "wikipedia": {
+    "en": "Battle of Konna"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3018708"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Konna\", revision 1375363074"
+    }
+  ],
+  "title": "Battle of Konna",
+  "summary": "The English Wikipedia article \"Battle of Konna\", at revision 1375363074, opens: \"The Battle of Konna was a battle in the Northern Mali Conflict fought in January 2013 in the town of Konna in central Mali.\" Wikidata item Q3018708, whose own description reads \"battle during the Northern Mali Conflict in January 2013\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-01-10",
+    "endDate": "2013-01-18"
+  },
+  "place": "konna",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

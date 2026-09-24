@@ -1286,7 +1286,21 @@
     "Q6537",
     "Q200262",
     "Q208962",
-    "Q6221"
+    "Q6221",
+    "Q4474075",
+    "Q3560870",
+    "Q3181123",
+    "Q3018708",
+    "Q3276735",
+    "Q3915054",
+    "Q5923961",
+    "Q16960952",
+    "Q188904",
+    "Q650100",
+    "Q1764720",
+    "Q1764788",
+    "Q1025926",
+    "Q366665"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5191,6 +5205,12 @@
       "category": "war",
       "label": "sack",
       "note": "Added in M42b batch 23, on the precedent of Q188055, siege, which M42 batch 35 added with the same reasoning, and of Q178561, battle. Wikidata's own description of the class, read off the class item, is 'violent wartime looting of a foreign city': a dated military action of a war, which is the category war. Refusing the Sack of Brescia while the Sack of Rome of 1527 imported in the same batch under its siege class would have been the table disagreeing with itself."
+    },
+    "Q1758856": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Mali",
+      "note": "Added in M42 batch 50, the Mali War vein of the Africa lane, where five of the six located items the batch names carry it and nothing else. The label and the description — “third-level administrative unit in Mali” — are read from the item itself over the network. `city` is the precision Q484170, commune of France, already carries for the same reason: a commune of Mali is the unit a town is, and Gao, Kidal, Konna, Diabaly and Tessalit are towns."
     }
   },
   "reconcile": true

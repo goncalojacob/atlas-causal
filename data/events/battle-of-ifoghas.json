@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-ifoghas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place read by A9's first step (the item's own P625, 1.2342E 19.8628N) over its second (P276 Tessalit, 45 km north): the article at revision 1370443583 puts the fighting in \"the Ametettai Valley\" of \"the Adrar Tigharghar, a mountain of the Adrar of Ifoghas\". The town is where the French supply line ran, not where the battle was."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5923961",
+  "wikipedia": {
+    "en": "Battle of Ifoghas"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5923961"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583"
+    }
+  ],
+  "title": "Battle of Ifoghas",
+  "summary": "The English Wikipedia article \"Battle of Ifoghas\", at revision 1370443583, opens: \"The Battle of Ifoghas, also known as the Battle of Tigharghâr or the Battle of the Ametettai, took place from 18 February to 31 March 2013, during the Northern Mali conflict.\" Wikidata item Q5923961, whose own description reads \"2013 battle in northern Mali\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-02-18",
+    "endDate": "2013-03-31"
+  },
+  "place": "adrar-des-ifoghas",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

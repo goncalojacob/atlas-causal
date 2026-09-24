@@ -4906,3 +4906,64 @@ Vladivostok, and Chemulpo Bay"* — which makes them two halves of one strike
 fought a day apart, and that is a filing under the war and not a cause between
 them. The edge Chemulpo earns is the one the Yalu article argues, a month later
 and in another country.
+
+## Batch 50 — the Mali War read as a chain
+
+*24 September, the import fire that picked the run up at 13:07Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Africa** at the
+front, trailing at 147 against Europe's 378. The full note, the refusals and
+the counts are in `docs/m42-pool.md` under "Batch 50".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `2012-malian-coup-d-etat` → `battle-of-kidal-2012` | `enabled` | *"Inspired in part by the diversion caused by the military coup, Tuareg rebels in the country's north launched incursions deeper into Mali, seizing towns and bases formerly held by government forces"*, and *"As military forces were engaged in consolidating their hold on the capital, the rebels were able to push southward with little opposition."* — "2012 Malian coup d'état", revision 1370102863, § Aftermath |
+| `2012-tuareg-rebellion` → `battle-of-gao` | `precondition-of` | *"After the end of hostilities with the Malian Army, however, Tuareg nationalists and Islamists struggled to reconcile their conflicting visions for the intended new state. On 27 June, Islamists from the Movement for Oneness and Jihad in West Africa (MOJWA) clashed with the MNLA in the Battle of Gao"* — "Tuareg rebellion (2012)", revision 1370751541, lead; and *"Tensions then started between the MNLA and Islamist movements over the use of sharia law within the territory"* — "Battle of Gao", revision 1370441289, § Background |
+| `battle-of-konna` → `operation-serval` | `caused` | *"However, the jihadist offensive in southern Mali provoked France's entry into the war. On January 11, the French army launched Operation Serval."* — "Battle of Konna", revision 1375363074, § Jihadist coalition advances in Sevare and Mopti and Operation Serval |
+| `operation-serval` → `battle-of-diabaly` | `reacted-to` | *"On 13 January, the French Air Force bombarded major Islamist towns throughout northern Mali. As a result of this hundreds of Islamists fled to the Mauritania border, where they launched a counterattack on the western town of Diabaly."* — "Battle of Diabaly", revision 1370438795, § Background |
+| `battle-of-diabaly` → `second-battle-of-gao` | `precondition-of` | *"A few days after taking the towns of Konna and Diabaly, the French and Malian forces continued their progress on Timbuktu and Gao"*, and *"After the capture of Diabaly, the special forces advanced in Gao, the largest city in northern Mali"* — "Second Battle of Gao", revision 1370736225, § Prelude |
+| `battle-of-konna` → `battle-of-ifoghas` | `precondition-of` | *"After being defeated in January in the Battle of Konna and the Battle of Diabaly, the jihadists abandoned Timbuktu and retreated into the Adrar Tigharghar, a mountain of the Adrar of Ifoghas in northeastern Mali, which has been their sanctuary for years. The French started quickly a pursuit"* — "Battle of Ifoghas", revision 1370443583, lead |
+| `battle-of-diabaly` → `battle-of-ifoghas` | `precondition-of` | the other half of the same sentence, same article and revision |
+| `chadian-intervention-in-northern-mali` → `battle-of-ifoghas` | `enabled` | *"France was also seeking the help of Chad's President Idriss Déby. He agreed to deploy his army in the Adrar of Ifoghas. On February 3, the first Chadian soldiers arrived in Kidal."* — "Battle of Ifoghas", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region; and *"the Chadian army launched a joint military operation with the support of French war jets on an Islamists base ... hidden in the mountains of the Adrar des Ifoghas"* — "Chadian intervention in northern Mali", revision 1370610691, § Timeline |
+
+All eight are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Seven of the eight run into or out of a record that was already
+here** — the coup, the rebellion, Operation Serval — which is A5's own
+standard, and the eighth (`battle-of-diabaly → second-battle-of-gao`) chains
+the batch to itself.
+
+**The one `reacted-to` runs forward in time**, as batch 49 wrote down:
+`operation-serval --reacted-to--> battle-of-diabaly` says *Diabaly answered
+Serval*, which is what the article's word "counterattack" says. Written that
+way at the first attempt; rule 4 refused nothing this batch.
+
+**`battle-of-ifoghas` is a convergence of three branches**, and each rests on a
+different sentence: two defeats that drove the jihadists into the massif, and
+the Chadian column that went in after them. The atlas's convergence query is
+what that shape is for.
+
+**Two edges rest on one sentence, and that is deliberate.** The Ifoghas lead
+names Konna *and* Diabaly as the defeats behind the retreat, gives them equal
+weight, and neither alone is what it says; writing one edge naming both would
+be a claim the article does not make. The Gao prelude names both too, but its
+next sentence singles Diabaly out — *"After the capture of Diabaly, the special
+forces advanced in Gao"* — so only that one is written there.
+
+**Three refusals, all the fire's own class: chronology with no claim in it.**
+
+- The Diabaly article's § Order of battle: *"The jihadist offensive on Diabaly
+  was launched parallel with that of Battle of Konna."* Parallel is not
+  consequent, so `battle-of-konna → battle-of-diabaly` was not written even
+  though the Konna article says eighty of the vanguard's pick-ups "were then
+  detached to take part in the Battle of Diabaly". Two prongs of one offensive
+  is a filing under the war, which both records have.
+- The Tessalit article's first line: *"The siege of Tessalit occurred in early
+  2012 during the Tuareg rebellion in Mali."* "During" is a filing and not an
+  argument.
+- The coup's § Background names the rebellion in general — *"weeks of protests
+  of the government's handling of a nomad-led rebellion in the country's
+  north"* — and no source read here names the fall of Tessalit as what broke
+  the army's patience, so `siege-of-tessalit → 2012-malian-coup-d-etat` was not
+  written. **`siege-of-tessalit` is therefore the one record of this batch with
+  no edge at all**, and the stand says so rather than reaching for a sentence
+  that is not there.
