@@ -1,0 +1,344 @@
+// M86, the half only a drawing can answer: a name on the resting map, a stack
+// drawn after a drag on the graph, a camera that survives a resize, and a
+// degree control that says it is off.
+//
+// `tests/m86.test.mjs` holds what needs no DOM. Written before the behaviour
+// it judges (deviations 711 and 717), and **nothing here pins a count or a
+// pixel**: the labels are counted off the picture the page drew, the stacks
+// are read against the rectangle the page itself reports, and the zoom is
+// read before the gesture rather than written down here.
+
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+
+import {
+  withBrowser, open, skip, waitFor, until, watchErrors, errorsOn, seenIntro,
+} from './browser.mjs';
+import { atlasOf, ROOT } from './helpers.mjs';
+
+// The corpus the page is served, so every expectation below is the data's own.
+const atlas = await atlasOf(path.join(ROOT, 'data'));
+
+const DESK = { width: 1440, height: 900, deviceScaleFactor: 1 };
+
+const MAP_READY = 'return document.querySelectorAll("#map circle.mark").length > 0;';
+
+// What the map has written on itself: the names, and the badges beside the
+// stacks. Read off the picture and not off any state.
+const MAP_WORDS = `
+  return {
+    labels: [...document.querySelectorAll('#map text.mark-label')].map((el) => el.textContent),
+    badges: [...document.querySelectorAll('#map text.cluster-count')].map((el) => el.textContent),
+    marks: document.querySelectorAll('#map circle.mark').length,
+  };`;
+
+// ─── 2. the first map has names (A2, A11) ──────────────────────────────────
+
+test('the resting map carries event names, at the zoom a reader arrives at', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(''), MAP_READY);
+    await waitFor(page, MAP_READY, 'the map to draw');
+    // A name arrives with its century and not with its mark (attributes.js),
+    // so the wait is for a label to be written and never for a timer. `until`
+    // and not `waitFor`, because this wait *is* the test's own assertion: a
+    // map that never writes one must be reported by the assertion below, with
+    // what it did draw, and not thrown away as a timeout (M78).
+    await until(page, 'return document.querySelectorAll("#map text.mark-label").length > 0;');
+
+    const words = await page.eval(MAP_WORDS);
+    assert.ok(words.marks > 0, 'the map drew marks');
+    assert.ok(words.labels.length > 0,
+      `the resting world carries no event name at all (${words.marks} marks, 0 labels)`);
+    // Nothing is pinned: what is asked is that the picture is not all names
+    // either — the floor exists so that the world does not become a smudge.
+    assert.ok(words.labels.length <= words.marks,
+      `more labels than marks (${words.labels.length} of ${words.marks})`);
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+test('and no badge on it reads "1 more"', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url(''), MAP_READY);
+    await waitFor(page, MAP_READY, 'the map to draw');
+    const words = await page.eval(MAP_WORDS);
+    for (const badge of words.badges) {
+      assert.notEqual(badge, '1 more', 'a stack of two carries a badge as loud as a stack of thirteen');
+      assert.notEqual(badge.trim(), '', 'an empty badge was drawn');
+    }
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+// ─── 4. the timeline's right edge (A6) ─────────────────────────────────────
+
+const LANES_READY = 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;';
+
+// The axis's own tick labels, and every title with the box it occupies, in the
+// page's own pixels — which is the only place "cut by the pane edge" is a
+// question that can be asked.
+const TIMELINE_EDGE = `
+  const svg = document.querySelector('svg.timeline');
+  const pane = svg.getBoundingClientRect();
+  return {
+    pane: { left: pane.left, right: pane.right },
+    ticks: [...svg.querySelectorAll('text.tick-label')].map((el) => el.textContent),
+    labels: [...svg.querySelectorAll('text.bar-label')].map((el) => {
+      const box = el.getBoundingClientRect();
+      return { text: el.firstChild ? el.firstChild.nodeValue : '', left: box.left, right: box.right };
+    }),
+  };`;
+
+test('no tick runs past the last year of the data, and no resting title is cut by the pane', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=timeline'), LANES_READY);
+    await waitFor(page, LANES_READY, 'the timeline to draw');
+    // The titles arrive with their centuries; this waits for one and asserts
+    // about all of them below.
+    await until(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;');
+
+    const seen = await page.eval(TIMELINE_EDGE);
+    assert.ok(seen.labels.length > 0, 'the timeline wrote no title at all');
+    // The last year the atlas holds, read off the same records the page was
+    // served rather than written down here: the corpus grows under this test
+    // every day.
+    const last = atlas.extent?.max ?? null;
+    if (last !== null) {
+      for (const tick of seen.ticks) {
+        const year = Number(String(tick).replace(/[^\d-]/g, ''));
+        if (!Number.isFinite(year) || String(tick).includes('BCE')) continue;
+        assert.ok(year <= last, `a tick at ${tick} past the last year of the data (${last})`);
+      }
+    }
+    // And every title is inside the pane it is drawn in. A name written into
+    // the edge is the review's own "COVID-19 pander".
+    for (const label of seen.labels) {
+      assert.ok(label.right <= seen.pane.right + 1,
+        `"${label.text}" runs past the right edge (${label.right} > ${seen.pane.right})`);
+      assert.ok(label.left >= seen.pane.left - 1,
+        `"${label.text}" runs past the left edge (${label.left} < ${seen.pane.left})`);
+    }
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+// ─── 6. the graph after a drag (B1) ────────────────────────────────────────
+//
+// Since I6 only the stacks inside the rectangle on screen are in the DOM, and
+// a drag applied the transform and rendered nothing: wheel in, drag towards
+// the part of the picture you wanted, and the ground there is empty until the
+// next notch, click or state change. Nothing pinned here either — what is
+// asserted is that the picture after a drag is the picture the next render
+// would have drawn, whatever either of them holds.
+
+const GRAPH_READY = 'return document.querySelectorAll("svg.graph .layer-nodes circle").length > 0;';
+
+// Every node in the DOM, and the rectangle on screen in the graph's own
+// coordinates, read the way the view reads it — through the element's matrix,
+// because the SVG is letterboxed.
+const GRAPH_DRAWING = `
+  const svg = document.querySelector('svg.graph');
+  const rect = svg.getBoundingClientRect();
+  const inverse = svg.getScreenCTM().inverse();
+  const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+  const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+  // The camera is a transform on the viewport group and not on the root, so
+  // the rectangle has to be taken back through it: what the cull asks about is
+  // the graph's own coordinates (graph-view.js, \`view\`).
+  const t = /translate\\((-?[\\d.]+) (-?[\\d.]+)\\) scale\\(([\\d.]+)\\)/
+    .exec(svg.querySelector('g.viewport').getAttribute('transform') || 'translate(0 0) scale(1)');
+  const [tx, ty, k] = [Number(t[1]), Number(t[2]), Number(t[3])];
+  const ids = [...svg.querySelectorAll('.layer-nodes circle.node')]
+    .map((n) => n.getAttribute('data-id') || n.getAttribute('data-stack')).filter(Boolean);
+  return {
+    ids: ids.sort(),
+    box: {
+      x0: (Math.min(a.x, b.x) - tx) / k, x1: (Math.max(a.x, b.x) - tx) / k,
+      y0: (Math.min(a.y, b.y) - ty) / k, y1: (Math.max(a.y, b.y) - ty) / k,
+    },
+  };`;
+
+// One wheel notch over the middle of the picture. `deltaY: 0` is the notch
+// that changes no camera at all and still renders: it is how this test asks
+// "what would the next render have drawn?" without moving anything.
+const WHEEL = (deltaY) => `
+  const svg = document.querySelector('svg.graph');
+  const at = svg.getBoundingClientRect();
+  svg.dispatchEvent(new WheelEvent('wheel', {
+    bubbles: true, cancelable: true, deltaY: ${deltaY},
+    clientX: at.left + at.width / 2, clientY: at.top + at.height / 2,
+  }));
+  return true;`;
+
+// A press, a move and a release: the reader's own gesture, through the pointer
+// events the view listens for.
+const DRAG = (dx, dy) => `
+  const svg = document.querySelector('svg.graph');
+  const at = svg.getBoundingClientRect();
+  const from = { x: at.left + at.width / 2, y: at.top + at.height / 2 };
+  const send = (type, x, y) => svg.dispatchEvent(new PointerEvent(type, {
+    bubbles: true, cancelable: true, pointerId: 1, isPrimary: true, clientX: x, clientY: y,
+  }));
+  send('pointerdown', from.x, from.y);
+  send('pointermove', from.x + ${dx} / 2, from.y + ${dy} / 2);
+  send('pointermove', from.x + ${dx}, from.y + ${dy});
+  send('pointerup', from.x + ${dx}, from.y + ${dy});
+  return true;`;
+
+test('a drag on the graph draws the ground it pans onto', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // The fixtures and the whole resting picture, with the implicit lens off:
+    // a lens has nothing to cull, and the cull is what this is about.
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+
+    // In first, so that there is something off the screen to pan onto.
+    for (let i = 0; i < 6; i += 1) await page.eval(WHEEL(-100));
+    const before = await page.eval(GRAPH_DRAWING);
+    assert.ok(before.ids.length > 0, 'the zoomed picture draws something');
+
+    // Half a pane to the right, which brings the ground on the left into view.
+    await page.eval(DRAG(400, 0));
+    // One animation frame, since the render is booked on one.
+    await until(page, 'return new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(true))));');
+    const dragged = await page.eval(GRAPH_DRAWING);
+    assert.notDeepEqual(dragged.box, before.box, 'the drag moved the rectangle');
+
+    // And what the next render would have drawn, at the very same camera: a
+    // wheel of nothing changes no transform and still renders.
+    await page.eval(WHEEL(0));
+    const after = await page.eval(GRAPH_DRAWING);
+    assert.deepEqual(dragged.box, after.box, 'the empty notch moved nothing');
+    assert.deepEqual(dragged.ids, after.ids,
+      'the drag left a stale picture: the next render drew marks the drag did not');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+// ─── 7. a resize keeps the reader's camera (B2) ────────────────────────────
+//
+// `frameCamera` keyed on the question *and* the rectangle, so any resize — a
+// panel opening, a lens chip wrapping the masthead, the window itself — threw
+// away a camera the reader had wheeled into place. It is also the ring-ratio
+// flake of PR #24: a "post-wheel" k of 1.30 where the wheel alone leaves 2.46
+// is not a camera, it is a fit that ran after the gesture.
+
+// The camera and the rectangle it shows, in the graph's own coordinates.
+const CAMERA = `
+  const svg = document.querySelector('svg.graph');
+  const rect = svg.getBoundingClientRect();
+  const inverse = svg.getScreenCTM().inverse();
+  const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+  const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+  const t = /translate\\((-?[\\d.]+) (-?[\\d.]+)\\) scale\\(([\\d.]+)\\)/
+    .exec(svg.querySelector('g.viewport').getAttribute('transform') || 'translate(0 0) scale(1)');
+  const [tx, ty, k] = [Number(t[1]), Number(t[2]), Number(t[3])];
+  const box = {
+    x0: (Math.min(a.x, b.x) - tx) / k, x1: (Math.max(a.x, b.x) - tx) / k,
+    y0: (Math.min(a.y, b.y) - ty) / k, y1: (Math.max(a.y, b.y) - ty) / k,
+  };
+  return { k, centre: { x: (box.x0 + box.x1) / 2, y: (box.y0 + box.y1) / 2 } };`;
+
+// Two frames of stillness on the transform itself: a camera read while a
+// layout or a shard is still landing is a camera read mid-gesture.
+const SETTLED = `
+  const attr = () => document.querySelector('svg.graph g.viewport').getAttribute('transform');
+  const first = attr();
+  return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(
+    () => resolve(attr() === first))));`;
+
+test('a resize keeps a camera the reader moved, and keeps its centre centred', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    await waitFor(page, SETTLED, 'the first frame to settle');
+
+    // The reader's own gesture, and then their own camera read off the page.
+    for (let i = 0; i < 4; i += 1) await page.eval(WHEEL(-100));
+    await waitFor(page, SETTLED, 'the camera to settle after the wheel');
+    const held = await page.eval(CAMERA);
+    assert.ok(held.k > 1, `the wheel took the camera in (k = ${held.k})`);
+
+    // A pane that changes size. Nothing about the question changed: the same
+    // events, the same lens, the same window.
+    await page.send('Emulation.setDeviceMetricsOverride', {
+      mobile: false, width: 1180, height: 820, deviceScaleFactor: 1,
+    });
+    await waitFor(page, SETTLED, 'the camera to settle after the resize');
+
+    const after = await page.eval(CAMERA);
+    assert.equal(after.k, held.k, `the resize re-fitted the camera (${held.k} → ${after.k})`);
+    // And what the reader was looking at is still in the middle of the pane.
+    assert.ok(Math.abs(after.centre.x - held.centre.x) < 1,
+      `the picture slid sideways under the resize (${held.centre.x} → ${after.centre.x})`);
+    assert.ok(Math.abs(after.centre.y - held.centre.y) < 1,
+      `the picture slid up or down under the resize (${held.centre.y} → ${after.centre.y})`);
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+test('but a new arrangement is framed, even after the reader has moved the camera', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    await waitFor(page, SETTLED, 'the first frame to settle');
+    for (let i = 0; i < 4; i += 1) await page.eval(WHEEL(-100));
+    await waitFor(page, SETTLED, 'the camera to settle after the wheel');
+    const held = await page.eval(CAMERA);
+
+    // A new question — a lens — is a new picture, and a new picture is framed
+    // however the camera got where it is. This is the guard M83's `cameraMoved`
+    // must not become: "the reader wheeled once, so nothing is ever framed
+    // again".
+    await page.eval(`
+      document.querySelector('svg.graph').dispatchEvent(new WheelEvent('wheel', {
+        bubbles: true, cancelable: true, deltaY: 0, clientX: 10, clientY: 10 }));
+      return true;`);
+    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-f&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the lens to draw');
+    await waitFor(page, SETTLED, 'the lens frame to settle');
+    const lens = await page.eval(CAMERA);
+    assert.notEqual(lens.k, held.k, 'the lens was drawn at the camera of the picture before it');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+// ─── 8. the degree control under a lens (B3) ───────────────────────────────
+
+const DEGREE = `
+  const el = document.querySelector('[data-filter="degree"]');
+  return el === null ? null : { disabled: el.disabled, title: el.getAttribute('title') };`;
+
+test('the degree control is off, and says so, while an event is open', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // At rest it works, which is the only time it does and why it is kept.
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+    const resting = await page.eval(DEGREE);
+    assert.ok(resting, 'the control is on the page for the graph');
+    assert.equal(resting.disabled, false, 'at rest the floor does something, so the control is live');
+
+    // And with an event chosen — which since M65 is a lens — it is off.
+    await open(page, url('?fixtures=1&view=graph&selected=fixture-event-f&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the lens to draw');
+    const under = await page.eval(DEGREE);
+    assert.ok(under === null || under.disabled, 'the control is live under a lens and does nothing');
+    if (under) assert.ok(under.title, 'and it says nothing about why');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});

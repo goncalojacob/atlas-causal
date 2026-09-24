@@ -37,8 +37,8 @@ const TYPE_HINT = Object.freeze({
 });
 
 export function identifiersHtml(source) {
-  const ids = identifiers(source).map(({ label, href }) => (href
-    ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
+  const ids = identifiers(source).map(({ label, href, title }) => (href
+    ? `<a href="${esc(href)}" rel="noopener" target="_blank"${title ? ` title="${esc(title)}"` : ''}>${esc(label)}</a>`
     : `<span class="unsafe-url">${esc(label)}</span>`));
   return ids.length ? `<p class="identifiers">${ids.join(' · ')}</p>` : '';
 }

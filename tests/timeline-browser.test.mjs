@@ -149,6 +149,13 @@ test('when the rows have the room they take it, and the pane does not scroll', {
 test('the rows are laid out again when the window changes height', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await open(page, url(on('fixtures=1')), READY);
+    // **Every bar named before the first measurement** (M86 §4). The row count
+    // is what the titles need, and a title that has not landed is reserved as
+    // the interface's own "loading" string: the drawing read here would be
+    // packed for names that are not the names, and the assertion below — that
+    // the height changing does not change the count — would be comparing two
+    // different questions. The wait this file already owes itself (M78).
+    await waitFor(page, BARS_NAMED, 'every bar to carry its name');
     const tall = await fitOf(page);
     fits(tall, 'a 900 px window');
     assert.equal(tall.svgHeight, tall.paneHeight, 'the drawing is exactly the pane');

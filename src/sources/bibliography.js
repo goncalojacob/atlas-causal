@@ -21,8 +21,8 @@ const TYPE_LABEL = Object.freeze({
 
 function entryHtml(source) {
   const count = source.citationCount ?? (source.citations ?? []).length;
-  const ids = identifiers(source).map(({ label, href }) => (href
-    ? `<a href="${esc(href)}" rel="noopener">${esc(label)}</a>`
+  const ids = identifiers(source).map(({ label, href, title }) => (href
+    ? `<a href="${esc(href)}" rel="noopener"${title ? ` title="${esc(title)}"` : ''}>${esc(label)}</a>`
     : `<span class="unsafe-url">${esc(label)}</span>`));
   return `<li class="bib-entry${source.status === 'active' ? '' : ' inactive'}">
     <p class="bib-citation"><a href="index.html?source=${encodeURIComponent(source.id)}">${esc(citationText(source))}</a></p>

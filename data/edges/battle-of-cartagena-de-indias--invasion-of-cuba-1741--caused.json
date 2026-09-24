@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Cuba (1741)\", revision 1370623950, § Background"
+    },
+    {
+      "source": "pares-1936-war-and-trade-in-the-west-indies",
+      "locator": "pp. 91-92"
+    }
+  ],
+  "from": "battle-of-cartagena-de-indias",
+  "to": "invasion-of-cuba-1741",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Cuba article makes the defeat at Cartagena the reason for the invasion, in one sentence: \"Vernon had made an unsuccessful attempt to capture Cartagena in 1741, and after his repulse he directed the fragments of his sickly and dispirited followers against the island of Cuba.\" The same section says the force was the same force: \"The land forces consisted of the remnants of the troops from Cartagena, some 3,000 British and American troops\". `caused`: the article does not merely date one after the other, it says the repulse is what sent Vernon to Cuba and what the army he landed was made of. Probable, and with a second author: the sentence is cited there to Pares, War and Trade in the West Indies, pp. 91-92.",
+  "dispute": null
+}

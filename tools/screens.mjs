@@ -866,6 +866,36 @@ export const SHOTS = Object.freeze([
   // `m19-about` is: what it is about is the reading measure and not a viewport.
   { name: 'm85-about', page: 'about.html', query: '', width: 1100, height: 1000,
     what: 'the about page as one screen: what it is, who makes it, confidence, licences, what is coming' },
+
+  // M86 (§9, review A finding 7): the second and third click, which nobody had
+  // looked at since the span changed. M85 took the map and the about page; the
+  // last resting graph was `m82-graph.png` at 1900–1999 and the last resting
+  // timeline `m82-timeline.png`, and what a funder actually gets on "Graph"
+  // and "Timeline" is the whole span — the picture §2, §4, §6 and §7 are
+  // about. No window in the query, as `m85-first-screen` has none: the resting
+  // window is the corpus's own extent (util/window.js).
+  { name: 'm86-graph', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=graph',
+    width: 1440, height: 900,
+    what: 'the graph at rest over the whole span: main events, one name per mark that fits' },
+  { name: 'm86-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1440&h=900&view=timeline',
+    width: 1440, height: 900,
+    what: 'the timeline at rest over the whole span: the axis stopping at the last year, every bar named' },
+  // And both at phone width, where the row and the pane are what they are and
+  // the reader scrolls.
+  // 500 and not 390 in the window: headless Chromium will not give one
+  // narrower, and the frame lays the atlas out at the width its query names
+  // inside it (docs/screens/frame.html). Every phone shot in this file is
+  // taken this way.
+  { name: 'm86-graph-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph',
+    width: 500, height: 844,
+    what: 'the same graph on a 390 x 844 phone' },
+  { name: 'm86-timeline-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=timeline',
+    width: 500, height: 844,
+    what: 'the same timeline on a 390 x 844 phone' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

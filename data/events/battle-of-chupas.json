@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-chupas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1612597",
+  "wikipedia": {
+    "en": "Battle of Chupas",
+    "pt": "Batalha de Chupas"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1612597"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chupas\", revision 1370437248"
+    }
+  ],
+  "title": "Battle of Chupas",
+  "summary": "The English Wikipedia article \"Battle of Chupas\", at revision 1370437248, opens: \"After the assassination of Francisco Pizarro, in retaliation for his father's execution in 1538, Diego de Almagro II, El Mozo, continued to press claims as the rightful ruler of Peru and as leader of his father's supporters. His claims were largely unsuccessful, however, as Pizarro was succeeded as governor by Cristóbal Vaca de Castro, despite claims from his brother Gonzalo Pizarro, whose claims to join arms against the Almagristas and \"El Mozo\" largely remained unanswered.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1612597, imported by tools/import/wikidata.mjs. The item's own description reads \"1542 battle that took place during the Spanish conquest of Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1542,
+    "end": 1542,
+    "date": "1542-09-16"
+  },
+  "place": "ayacucho",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": []
+}
