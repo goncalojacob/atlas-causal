@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-stralsund-1628--battle-of-wolgast--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wolgast\", revision 1370276997, § Battle"
+    },
+    {
+      "source": "heckel-1983-deutschland-im-konfessionellen-zeitalter",
+      "locator": "p. 143"
+    }
+  ],
+  "from": "siege-of-stralsund-1628",
+  "to": "battle-of-wolgast",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Wolgast article says why Wallenstein was in front of Wolgast at all: \"Christian IV then awaited Wallenstein, who withdrew from the siege of Stralsund and was heading east to face the Danish force.\" The battle is the one Wallenstein could fight once Stralsund had held and released his army; the sentence carries the article's own citation to Heckel (1983), p. 143, which is the second author named here.",
+  "dispute": null
+}

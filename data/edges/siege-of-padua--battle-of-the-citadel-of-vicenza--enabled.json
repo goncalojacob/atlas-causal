@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-padua--battle-of-the-citadel-of-vicenza--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838, § The Battle"
+    }
+  ],
+  "from": "siege-of-padua",
+  "to": "battle-of-the-citadel-of-vicenza",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Vicenza article states the sequence as a consequence: \"the Venetians resisted and in October, after the defeat in the Siege of Padua, the French Army’s Marshal Jacques de la Palice left Veneto, retreating to Milan … The Venetians were now able to take back a large part of Veneto during November and, on November 26, the inhabitants of Vicenza opened the doors of the city.\" The French withdrawal after Padua is what let the Venetians reach Vicenza at all; the citadel action is what was left once they were inside. `enabled` is the word \"now able to\" says. Probable: Wikipedia alone, and the sentence carries no citation of its own.",
+  "dispute": null
+}

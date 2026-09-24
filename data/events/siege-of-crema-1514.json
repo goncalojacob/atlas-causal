@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-crema-1514",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q110448326",
+  "wikipedia": {
+    "en": "Siege of Crema (1514)"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110448326"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Crema (1514)\", revision 1370740461"
+    }
+  ],
+  "title": "Siege of Crema (1514)",
+  "summary": "The English Wikipedia article \"Siege of Crema (1514)\", at revision 1370740461, opens: \"The siege of Crema in 1514 was a significant military engagement set within the broader context of political and martial upheaval in early 16th-century Italy, particularly during the War of the League of Cambrai.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q110448326, imported by tools/import/wikidata.mjs. The item's own description reads \"1513–1514 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1513,
+    "end": 1514,
+    "endDate": "1514-08"
+  },
+  "place": "crema-lombardy",
+  "region": null,
+  "parent": "war-of-the-league-of-cambrai",
+  "category": "war",
+  "actors": []
+}

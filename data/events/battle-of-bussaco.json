@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-bussaco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q389349",
+  "wikipedia": {
+    "en": "Battle of Bussaco",
+    "pt": "Batalha do Buçaco"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q389349"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bussaco\", revision 1370785527"
+    }
+  ],
+  "title": "Battle of Bussaco",
+  "summary": "The English Wikipedia article \"Battle of Bussaco\", at revision 1370785527, opens: \"The Battle of Buçaco or Bussaco was fought on 27 September 1810 during the Peninsular War in the Portuguese mountain range of Serra do Buçaco, resulting in the defeat of French forces by Lord Wellington's Anglo-Portuguese Army. Having occupied the heights of Bussaco with a total of 26,843 British and 25,429 Portuguese troops, Wellington was attacked five times successively by invasion force of 65,050 French under Marshal André Masséna. Masséna was uncertain as to the disposition and strength of the opposing forces because Wellington had deployed them on the reverse slope of the ridge, where they could neither be easily seen nor easily softened up with artillery.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q389349, imported by tools/import/wikidata.mjs. The item's own description reads \"1810 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-09-27"
+  },
+  "place": "serra-do-bucaco",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

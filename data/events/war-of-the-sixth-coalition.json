@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-sixth-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q138107",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "War of the Sixth Coalition",
+    "pt": "Sexta Coligação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q138107"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+    }
+  ],
+  "title": "War of the Sixth Coalition",
+  "summary": "The English Wikipedia article \"War of the Sixth Coalition\", at revision 1373828502, opens: \"The War of the Sixth Coalition, sometimes known in Germany as the Wars of Liberation saw a coalition of Austria, Prussia, Russia, Spain, the United Kingdom, Portugal, Sweden, Sardinia, and a number of German states defeat the First French Empire and force Napoleon into exile on Elba. Following the disastrous French invasion of Russia in 1812 in which they had been forced to support France, Prussia and Austria joined Russia, Britain, Sweden, Portugal and Spain against France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q138107, imported by tools/import/wikidata.mjs. The item's own description reads \"1813–1814 conflict during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1814
+  },
+  "place": "central-europe",
+  "region": null,
+  "regionNote": null,
+  "parent": "napoleonic-wars",
+  "category": "war",
+  "actors": []
+}

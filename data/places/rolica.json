@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rolica",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place"
+    ],
+    "note": "The point is the one Wikidata gives for the battle item Q324344 (P625), not one of its own: Q602858, the freguesia of Roliça that the battle names as its location (P276), carries no coordinate, and the import refused it for that. A12(2)'s corrected rule reads the event item's own P625 first, which is what this record is. The site is the battlefield near the village and not the village centre, which is why the precision is a point."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q602858",
+  "sources": [],
+  "names": [
+    "Roliça"
+  ],
+  "where": {
+    "lon": -9.18361,
+    "lat": 39.3136,
+    "precision": "point",
+    "label": "Roliça"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

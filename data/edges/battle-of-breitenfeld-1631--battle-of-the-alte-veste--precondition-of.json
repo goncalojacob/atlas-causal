@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
+    }
+  ],
+  "from": "battle-of-breitenfeld-1631",
+  "to": "battle-of-the-alte-veste",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Alte Veste article makes Breitenfeld one of the two reasons Wallenstein was in the field to be met at all: \"The earlier successes of Gustavus Adolphus over General Tilly, particularly at Breitenfeld, followed by Tilly's death during the Battle of Rain, forced Holy Roman Emperor Ferdinand II to recall Albrecht von Wallenstein into military service from retirement.\" The paragraph carries no citation of its own, so Wikipedia is the only author named and the confidence stays probable.",
+  "dispute": null
+}

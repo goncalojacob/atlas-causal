@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-agnadello--siege-of-crema-1514--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Crema (1514)\", revision 1370740461, § Background, 1512–1514: Shifting alliances"
+    },
+    {
+      "source": "dossena-2014-battaglia-di-ombriano",
+      "locator": "the work the article cites for that sentence"
+    }
+  ],
+  "from": "battle-of-agnadello",
+  "to": "siege-of-crema-1514",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Crema article says why the town was worth a siege: \"Crema remained heavily militarized, serving as a Venetian bridgehead to reclaim territories lost after Agnadello\", and again, of the Senate, \"determined to recover all territories lost post-Agnadello\". The loss at Agnadello is the condition that made Crema a Venetian bridgehead and therefore a target. `precondition-of` and not `caused`: the article makes Agnadello the state of affairs the siege happened inside, not its trigger. Probable: Wikipedia, with the work Wikipedia itself cites for the sentence beside it — which is a second author and not a second reading, so the confidence does not rise.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-zusmarshausen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q519818",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Zusmarshausen",
+    "pt": "Batalha de Zusmarshausen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q519818"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zusmarshausen\", revision 1370597065"
+    }
+  ],
+  "title": "Battle of Zusmarshausen",
+  "summary": "The English Wikipedia article \"Battle of Zusmarshausen\", at revision 1370597065, opens: \"The Battle of Zusmarshausen was fought on 17 May 1648 between Bavarian-Imperial forces under von Holzappel and an allied Franco-Swedish army under the command of Carl Gustaf Wrangel and Turenne in the modern Augsburg district of Bavaria, Germany. The allied force emerged victorious, and the Imperial army was only rescued from annihilation by the stubborn rearguard fighting of Raimondo Montecuccoli and his cavalry.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q519818, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-05-17"
+  },
+  "place": "augsburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-of-the-third-coalition--war-of-the-fifth-coalition--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
+    }
+  ],
+  "from": "war-of-the-third-coalition",
+  "to": "war-of-the-fifth-coalition",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Fifth Coalition article states Austria's war aim as the undoing of the Third Coalition's settlement: \"Austria attacked France to seek the recovery of territories lost in the 1803–1806 War of the Third Coalition.\" `caused`: the earlier war's territorial outcome is the stated purpose of the later one, and the edge claims no more than the sentence does. Probable, and on the article alone at one revision: the lead carries no footnote on that sentence, so there is no locator for a second author.",
+  "dispute": null
+}

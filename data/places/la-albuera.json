@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "la-albuera",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q144268",
+  "wikipedia": {
+    "en": "La Albuera",
+    "pt": "La Albuera"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "La Albuera"
+  ],
+  "where": {
+    "lon": -6.8239504,
+    "lat": 38.7161343,
+    "precision": "city",
+    "label": "La Albuera"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

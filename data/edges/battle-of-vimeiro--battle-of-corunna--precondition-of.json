@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-vimeiro--battle-of-corunna--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Corunna\", revision 1370437705, § Prelude; \"Battle of Vimeiro\", revision 1370623683, § Aftermath"
+    }
+  ],
+  "from": "battle-of-vimeiro",
+  "to": "battle-of-corunna",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Vimeiro was settled by the Convention of Cintra — \"Under the terms of the Convention of Cintra, the defeated army was transported back to France by the British navy, complete with its loot, guns and equipment\" — and the Convention is what put Moore in command of the army that retreated to Corunna: \"In early October 1808, following the scandal in Britain over the Convention of Sintra and the recall of the generals Dalrymple, Burrard and Wellesley, Sir John Moore took command of the 30,000-man British force in Portugal.\" The link runs through the Convention, which this atlas does not hold as a record, so it is a precondition and not a cause. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-spurs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q699475",
+  "wikipedia": {
+    "en": "Battle of the Spurs",
+    "pt": "Batalha das Esporas"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699475"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Spurs\", revision 1370602393"
+    }
+  ],
+  "title": "Battle of the Spurs",
+  "summary": "The English Wikipedia article \"Battle of the Spurs\", at revision 1370602393, opens: \"The Battle of the Spurs or (Second) Battle of Guinegate took place on 16 August 1513. It formed a part of the War of the League of Cambrai of 1508 to 1516, during the Italian Wars. King Henry VIII of England and Emperor Maximilian I were besieging the French town of Thérouanne in Artois. Henry's camp was at Guinegate. A large body of French heavy cavalry under Jacques de La Palice was covering an attempt by light cavalry to bring supplies to the besieged garrison. English and Imperial troops surprised and routed the French cavalry. The battle resulted in the precipitate flight and extensive pursuit of the French. During the pursuit, a number of notable French leaders and knights were captured. After the fall of Thérouanne, Henry VIII besieged and took Tournai.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699475, imported by tools/import/wikidata.mjs. The item's own description reads \"1513 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1513,
+    "end": 1513,
+    "date": "1513-08-16"
+  },
+  "place": "enguinegatte",
+  "region": null,
+  "parent": "war-of-the-league-of-cambrai",
+  "category": "war",
+  "actors": []
+}

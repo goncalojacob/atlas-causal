@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-maricay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q141304393",
+  "wikipedia": {
+    "en": "Portuguese Conquest of Maricay"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141304393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Conquest of Maricay\", revision 1370704725"
+    }
+  ],
+  "title": "Portuguese Conquest of Maricay",
+  "summary": "The English Wikipedia article \"Portuguese Conquest of Maricay\", at revision 1370704725, opens: \"The Portuguese Conquest of Maricay was a series of battles between the Portuguese Empire under the Iberian Union and the Dutch Republic, taking place in 1623 in the trading post of Maricay, now Gurupá. Taking place one year before the Capture of Bahia, the battle is one of the events leading to thirty years of war between the Portuguese and Dutch in Brazil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141304393, imported by tools/import/wikidata.mjs. The item's own description reads \"1623–1632 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1623,
+    "end": 1632
+  },
+  "place": "gurupa",
+  "region": null,
+  "regionNote": null,
+  "parent": "dutch-portuguese-war",
+  "category": "war",
+  "actors": []
+}

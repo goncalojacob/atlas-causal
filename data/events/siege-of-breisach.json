@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-breisach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q331565",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Siege of Breisach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q331565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Breisach\", revision 1370739740"
+    }
+  ],
+  "title": "Siege of Breisach",
+  "summary": "The English Wikipedia article \"Siege of Breisach\", at revision 1370739740, opens: \"The siege of Breisach was fought on 18 August — 17 December 1638 as part of the Thirty Years' War. It ended after several unsuccessful relief attempts by Imperial forces with the surrender of the Imperial garrison to Bernard of Saxe-Weimar, commander of a Protestant army in French service.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q331565, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 siege of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-08-18",
+    "endDate": "1638-12-17"
+  },
+  "place": "breisach",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

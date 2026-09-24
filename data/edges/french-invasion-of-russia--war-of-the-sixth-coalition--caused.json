@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "french-invasion-of-russia--war-of-the-sixth-coalition--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+    }
+  ],
+  "from": "french-invasion-of-russia",
+  "to": "war-of-the-sixth-coalition",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Sixth Coalition article opens by deriving itself from the invasion: \"Following the disastrous French invasion of Russia in 1812 in which they had been forced to support France, Prussia and Austria joined Russia, Britain, Sweden, Portugal and Spain against France. The invasion of Russia cost the French many seasoned soldiers, so Napoleon took action to engage \"Marie-Louises\", young conscripts who were barely familiar with m[ilitary service]\". `caused`: the article gives the invasion both as what turned Prussia and Austria round and as what emptied the French army they turned on. Probable, and on the article alone at one revision: the lead carries no footnote on those sentences, so there is no locator for a second author.",
+  "dispute": null
+}

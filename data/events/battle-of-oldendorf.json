@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-oldendorf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q481354",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Oldendorf"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q481354"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oldendorf\", revision 1370452128"
+    }
+  ],
+  "title": "Battle of Oldendorf",
+  "summary": "The English Wikipedia article \"Battle of Oldendorf\", at revision 1370452128, opens: \"The Battle of Oldendorf, took place on 8 July 1633 during the Thirty Years' War near Hessisch-Oldendorf in Lower Saxony. Troops besieging Hamelin led by the Duke of Brunswick combined with their Swedish allies to defeat an Imperial army sent to relieve the town.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q481354, imported by tools/import/wikidata.mjs. The item's own description reads \"battle (1633) during the Thirty Years' War which resulted in a decisive victory for the Swedish army over the Holy Roman Empire army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1633,
+    "end": 1633,
+    "date": "1633-07-08"
+  },
+  "place": "hessisch-oldendorf",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

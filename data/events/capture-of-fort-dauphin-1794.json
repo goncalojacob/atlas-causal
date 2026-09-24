@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-fort-dauphin-1794",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3403821",
+  "wikipedia": {
+    "en": "Capture of Fort-Dauphin (1794)",
+    "pt": "Captura de Fort-Dauphin"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403821"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fort-Dauphin (1794)\", revision 1370608656"
+    }
+  ],
+  "title": "Capture of Fort-Dauphin (1794)",
+  "summary": "The English Wikipedia article \"Capture of Fort-Dauphin (1794)\", at revision 1370608656, opens: \"The capture of Fort-Dauphin  was a bloodless encounter of the French Revolutionary Wars in which a Spanish expeditionary force under Admiral Gabriel de Aristizábal y Espinosa seized Fort-Dauphin, in Saint-Domingue, from France. The French garrison of about a thousand men, blockaded by land and sea, surrendered without firing a single shot.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403821, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-01-28",
+    "endDate": "1794-01-29"
+  },
+  "place": "fort-liberte",
+  "region": null,
+  "regionNote": null,
+  "parent": "haitian-revolution-1791-1804",
+  "category": "war",
+  "actors": []
+}

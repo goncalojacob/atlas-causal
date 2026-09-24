@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-third-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q249232",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "War of the Third Coalition",
+    "pt": "Terceira Coligação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q249232"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Third Coalition\", revision 1370750237"
+    }
+  ],
+  "title": "War of the Third Coalition",
+  "summary": "The English Wikipedia article \"War of the Third Coalition\", at revision 1370750237, opens: \"The War of the Third Coalition was a European conflict lasting from 1805 to 1806 and was the first conflict of the Napoleonic Wars. During the war, France and its client states under Napoleon I and its ally Spain opposed an alliance, the Third Coalition, which was made up of the United Kingdom, the Austrian Empire, the Russian Empire, Naples, Sicily, and Sweden. Prussia remained neutral during the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q249232, imported by tools/import/wikidata.mjs. The item's own description reads \"1805–1806 conflict during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1806
+  },
+  "place": "central-europe",
+  "region": null,
+  "regionNote": null,
+  "parent": "napoleonic-wars",
+  "category": "war",
+  "actors": []
+}

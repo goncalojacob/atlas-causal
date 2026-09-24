@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chemnitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q245811",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Chemnitz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q245811"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chemnitz\", revision 1370108980"
+    }
+  ],
+  "title": "Battle of Chemnitz",
+  "summary": "The English Wikipedia article \"Battle of Chemnitz\", at revision 1370108980, opens: \"The Battle of Chemnitz, 14 April 1639, took place near Chemnitz in Saxony during the Thirty Years' War. Swedish forces under Johan Banér inflicted a crushing defeat on a combined Saxon/Imperial detachment under Rodolfo Giovanni Marazzino and von Puchheim.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q245811, imported by tools/import/wikidata.mjs. The item's own description reads \"1639 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1639,
+    "end": 1639,
+    "date": "1639-04-14"
+  },
+  "place": "chemnitz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

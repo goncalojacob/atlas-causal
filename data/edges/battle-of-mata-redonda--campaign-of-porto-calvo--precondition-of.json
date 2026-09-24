@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign of Porto Calvo\", revision 1373668892, § Background"
+    },
+    {
+      "source": "marley-2008-wars-of-the-americas",
+      "locator": "pp. 191–192"
+    }
+  ],
+  "from": "battle-of-mata-redonda",
+  "to": "campaign-of-porto-calvo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The campaign's own article puts the expedition beaten at Mata Redonda at the head of its background: John Maurice \"was also sent for another reason since, Don Luis de Rojas y Borgia arrived in Brazil Upon his arrival, he disembarked his troops at Jaragua and initiated guerrilla warfare against the opposing forces. This involved attacks on farms and plantations. These actions were primarily carried out from the captaincy of Porto Calvo. At one point, a proposal was put forth by Von Schoppe to undertake a more aggressive approach by attacking and destroying the enemy bases. Despite initial reservations, this proposal was eventually accepted. As a result, a decision was made to shift from a defensive stance of protecting farms and plantations to an offensive strategy.\" Rojas y Borja's armada is what the Battle of Mata Redonda is the record of — its own article has him killed there on 18 January 1636 — and Marley 2008 runs the two consecutively, the battle at p. 191 and the campaign at p. 192. `precondition-of` and not `caused`: the article gives the campaign two reasons, Nassau's appointment and his own ambition being the other, so the force left at Porto Calvo is what the 1637 offensive was aimed at rather than what set it off.",
+  "dispute": null
+}

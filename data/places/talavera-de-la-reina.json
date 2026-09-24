@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "talavera-de-la-reina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q181359",
+  "wikipedia": {
+    "en": "Talavera de la Reina",
+    "pt": "Talavera de la Reina"
+  },
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Talavera de la Reina"
+  ],
+  "where": {
+    "lon": -4.8333333333333,
+    "lat": 39.966666666667,
+    "precision": "city",
+    "label": "Talavera de la Reina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

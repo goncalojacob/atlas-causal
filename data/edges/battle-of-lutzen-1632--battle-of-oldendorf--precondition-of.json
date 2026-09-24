@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Oldendorf\", revision 1370452128, § Background"
+    },
+    {
+      "source": "guthrie-2003-the-later-thirty-years-war",
+      "locator": "p. 238"
+    }
+  ],
+  "from": "battle-of-lutzen-1632",
+  "to": "battle-of-oldendorf",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Oldendorf article dates its own campaign from the death at Lützen: \"After Gustavus Adolphus was killed in November 1632, the Duke of Brunswick was appointed local Swedish commander. The 1633 campaign focused on securing the supply route stretching from Bremen on the coast south along the River Weser.\" The siege of Hamelin that Oldendorf was fought to relieve is the first move of that campaign. The sentence carries the article's own citation to Guthrie (2003), p. 238, which is the second author named here.",
+  "dispute": null
+}
