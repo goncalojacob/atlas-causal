@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--war-of-the-fifth-coalition--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "war-of-the-fifth-coalition",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Fifth Coalition article makes the Peninsular War the opening Austria took: \"By the start of 1809 much of the French army was committed to the Peninsular War against Britain, Spain and Portugal. After France withdrew 108,000 soldiers from Germany, Austria attacked France to seek the recovery of territories lost in the 1803–1806 War of the Third Coalition.\" `enabled` and not `caused`: what the article credits the Peninsular War with is the absence of the French army from Germany, which is an opportunity and not a motive — the motive it gives is the Third Coalition's territorial losses, which this atlas carries as a separate edge. Probable, and on the article alone at one revision: the lead carries no footnote on those sentences, so there is no locator for a second author.",
+  "dispute": null
+}

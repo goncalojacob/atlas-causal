@@ -21809,6 +21809,53 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b batch 21 — the six other conflicts of the Napoleonic Wars, and Europe's
+nineteenth century, 24 September.** The twentieth fire merged `origin/m0` and
+`origin/m42` before importing anything; neither conflicted and the rebuilt index
+was byte-identical. **The cell is Europe's nineteenth century**, at 15 active and
+10 main — the thinnest in this partition, named by batch 20 and never taken —
+and the vein is the umbrella's own article: `napoleonic-wars` (1803–1815) was a
+main event with exactly one child, and its cached lead enumerates **seven**
+conflicts, of which the atlas held one, `peninsular-war`. **Six items imported,
+six created, none refused and none ambiguous**, in twenty-eight calls:
+`war-of-the-third-coalition`, `war-of-the-fourth-coalition`,
+`war-of-the-fifth-coalition`, `french-invasion-of-russia`,
+`war-of-the-sixth-coalition` and `war-of-the-seventh-coalition`, all filed under
+`napoleonic-wars`, all carrying `P361` `Q78994` on their own items and all
+inside 1803–1815, so **the main count does not move: 242 before and 242 after**.
+**No class was added and no place record was written** — all four locations the
+import reached for were already here with a `wikidata` field on them
+(`central-europe`, `poland-q36`, `france-q142`, `russian-empire-q34266`), the
+first batch of this branch that needed the place directory and found everything
+in it; A14(2)'s lane guard passes on all six, `russian-empire-q34266` included,
+which derives `europe` inside the polygon at distance 0. **Five carry the cached
+English lead as their summary** at a named revision with the `summary-from-lead`
+flag; **the sixth keeps the import's placeholder and the batch says why** —
+`Q2724511` has eleven sitelinks and none in English, and the English title *War
+of the Seventh Coalition* redirects to *Hundred Days*, a different item
+(`Q199955`), so quoting it would have been deviation 1252 again. **Six edges**,
+each `probable` and each quoting the sentence that carries it, **none of them
+running from a parent to its own child (A14)**: all six run between the seven
+children of the umbrella, and the umbrella takes no edge in either direction.
+One new source record, `riehn-1990-1812-napoleons-russian-campaign`, from the
+invasion article's own `{{sfn|Riehn|1990|p=26}}`, taking rule 9's count **202 →
+203**; the other five explanations say in their own words why the lead they
+quote carries no footnote to take a second author from. **The largest component
+moves 610 → 616** — `peninsular-war` is inside it, so the edge to the Fifth
+Coalition carries the whole new cluster in at one step, and **every one of the
+six earns an edge**, the second batch in a row where all of them do. `P710` was
+read and refused on all three items that carry one: the atlas holds an actor for
+one of the ten polities and people between them, so
+`docs/m53-polities.md` §4.1 is re-taken at **380 of 879** and `Q34266` and
+`Q71084` join the polity list, now thirteen. The corpus is **879 active**,
+Europe before 1900 is **89**, the cell is **21 with its ten main untouched**, and
+the `americas` lane is unchanged at 216. Deviations **1256** (on this branch the
+ninety-minute clause is the landing routine's, so 1249's last sentence decides)
+and **1257** (`--import` writes the record before it fetches the lead, so the
+placeholder is always what lands first and the lead summary is the fire's own
+second write); **1250 recurred**, a `reference` of 318 characters cut to 282.
+`docs/m42b-pool.md` → "Batch 21" is the full account.
+
 **M42b batches 19 and 20 — the Spanish conquest and the War of Jenkins' Ear, 24
 September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
 September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)

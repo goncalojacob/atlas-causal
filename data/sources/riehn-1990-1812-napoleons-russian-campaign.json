@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "riehn-1990-1812-napoleons-russian-campaign",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "type": "book",
+  "creators": [
+    "Richard K. Riehn"
+  ],
+  "title": "1812: Napoleon's Russian Campaign",
+  "year": 1990,
+  "publisher": "McGraw-Hill",
+  "isbn": "9780070527317",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"French invasion of Russia\" cites at p. 26, at revision 1375995823, for Alexander leaving the Continental blockade and Napoleon losing his chief instrument against Britain. ISBN and publisher are the article's own template. Cited and not read."
+}

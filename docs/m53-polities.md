@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 380 of 873 |
+| **after M42** | 36 of 36 | 380 of 879 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -355,7 +355,15 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands** — M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
+rewritten as each of that milestone's batches lands** — M42b's batch 21 of 24 September takes the denominator to 879 and leaves the numerator at
+**380**: its six conflicts of the Napoleonic Wars arrived with `actors: []`, and
+three of the six name a `P710` at all — `Q249232` seven participants, of which
+the atlas holds one (`Q34` Sweden, as `sweden`), `Q179250` two, of which it
+holds neither (`Q34266` the Russian Empire, `Q71084` the First French Empire),
+and `Q605977` three people rather than polities. The rule takes `P710` only
+where the atlas holds every participant the item names, so none of the three
+qualified. `Q34266` and `Q71084` join the polity list of `docs/m42b-pool.md`,
+which stands at thirteen. M42b's batch 18 of the same day takes it to 858 and leaves the numerator at
 **379** again, and for two reasons this time: two of its four items carry no
 `P710` at all (`Q932845` the siege of Salvador and `Q122056040` the action in
 the Bay of São Salvador), and the other two name `Q170072` the Dutch Republic,

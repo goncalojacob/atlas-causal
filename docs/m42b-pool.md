@@ -4859,6 +4859,35 @@ reproduces the previous fire's number with the previous fire's rule**; a number
 that will not reproduce is a fault in the script before it is a fact about the
 corpus.
 
+**1256. On this branch the ninety-minute clause is written by the landing
+routine and not by any lane run, so 1249's last sentence is the one that
+decides.** Read literally, this fire had to stop: the claim was 153 minutes old
+but `origin/m0` had been pushed 60 minutes before, which is inside ninety, and
+the clause is an `or`. But `origin/m0`'s push time on a day like this one is the
+assistant landing somebody else's branch — it says nothing at all about whether
+a run is on `m42b`, which is the only question the claim rule is asking.
+`origin/m42b` had last been pushed 96 minutes before, by a fire that had written
+"the check is green on the head of this fire" and stopped. **1249 settled this
+already** — *"a fire that finds a finished run and a claim over an hour old
+takes the branch"* — and this fire read the branch's push time where the rule
+says `m0` and reached the same answer. Written down again because the two
+readings now disagree in the other direction from 1249's, and the next fire
+should not have to work out which of them 1249 meant.
+
+**1257. `--import` cannot write a lead summary on a first pass, because it
+writes the record before it fetches the lead.** `runImportMode` calls
+`writeRecord` and only then `fetchLeads`, so `eventRecord`'s `importedSummary()`
+— the placeholder — is what lands on disk, every time, for every item the atlas
+has never seen. The lead is cached in the same loop, one call later. **Every
+"no record of this batch shows the placeholder alone" line in the eighteen
+notes above is the fire's own second write**, reading
+`tools/import/cache/wikipedia/<qid>.en.json` and prefixing the quote, the
+revision, the `wikipedia-en` citation and the `summary-from-lead` flag by hand.
+Nothing is wrong with the tool — the quote is a mechanical copy of a cached
+file and not a judgement, so it costs nothing to do it outside — but a fire
+that runs `--import`, sees six placeholders and concludes the network failed
+will waste the batch. It did not fail; the second pass had not been made yet.
+
 ## Batch 20 — the War of Jenkins' Ear in Panama, Cuba and Venezuela, and the Americas' eighteenth century
 
 *24 September, the nineteenth fire's second batch. The cell is **the Americas'
@@ -5029,73 +5058,253 @@ war's own article is where a run should look for the edge out — to the War of
 the Austrian Succession, which its lead calls this war a part of and which this
 atlas does not hold.
 
+## Batch 21 — the six other conflicts the Napoleonic Wars are made of, and Europe's nineteenth century
+
+*24 September, the twentieth fire. The cell is **Europe's nineteenth century**,
+at 15 active and 10 main — the thinnest cell in this partition, named at the
+head of the run-stands table by batch 20 and never taken by any fire of this
+branch. The vein is the one the umbrella's own article hands over: the
+`napoleonic-wars` record, 1803–1815, was a main event with exactly one child.*
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 873 active | **879 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 844 | **850** |
+| largest connected component | 610 | **616** — every one of the six joins it |
+| components | 197 | **197** — unmoved |
+| events with no edge at all | 156 | **156** — every one of the six earns an edge |
+| Europe before 1900 | 83 active, 18 main | **89 active, 18 main** |
+| the `europe` lane | 375 active, 89 main | **381 active, 89 main** |
+| Europe's 19th century | 15 active, 10 main | **21 active, 10 main** |
+| source records | 73 | **74** |
+| edges with two cited authors (rule 9) | 202 | **203** |
+
+The corpus figures before the batch are this fire's own re-measurement after its
+two merges, not batch 20's: `origin/m0` and `origin/m42` both moved, taking the
+corpus 872 → 873, the component 611 → 610 and the components 196 → 197. No
+century of this partition changed in either merge.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | 24 / 5 | — | — | 43 / 6 |
+| 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
+| 18th c. | 24 / 3 | — | — | 23 / 2 | — | — | 47 / 5 |
+| 19th c. | **21 / 10** | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 83 / 26 |
+| 20th c. | 240 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 511 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **381 / 89** | **139 / 31** | **143 / 67** | **216 / 55** | **—** | **—** | **879 / 242** |
+
+Taken with the run's own century rule, `Math.floor(y / 100) + 1`, which is
+deviation 1255 and is what makes this table comparable with every table before
+it. South and Central America against North America inside the `americas` lane
+is unchanged at 182 to 19, because nothing this batch wrote is in that lane.
+
+### The vein, and why it was free
+
+`napoleonic-wars` (`Q78994`) was imported on 23 September with the whole of its
+own lead, and that lead names its parts: *"The wars are categorised as seven
+conflicts, five named after the coalitions that fought Napoleon, plus two named
+for their respective theatres: the War of the Third Coalition, War of the Fourth
+Coalition, War of the Fifth Coalition, War of the Sixth Coalition, War of the
+Seventh Coalition, the Peninsular War, and the French invasion of Russia."*
+**The atlas held one of the seven**, `peninsular-war`, filed under the umbrella
+since it was written. The other six are this batch, they are all inside
+1803–1815, and every one of them carries `P361` `Q78994` on its own item — so
+the filing is the item's own statement and the umbrella's own sentence twice
+over, and **the main count cannot move**: six children under a main event that
+already existed.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `war-of-the-third-coalition` | `Q249232` | 1805–1806 | `napoleonic-wars` | `central-europe` | 19th |
+| `war-of-the-fourth-coalition` | `Q605977` | 1806–1807 | `napoleonic-wars` | `poland-q36` | 19th |
+| `war-of-the-fifth-coalition` | `Q684324` | 1809-04-10 – 1809-10-14 | `napoleonic-wars` | `central-europe` | 19th |
+| `french-invasion-of-russia` | `Q179250` | 1812-06-24 – 1812-12-14 | `napoleonic-wars` | `russian-empire-q34266` | 19th |
+| `war-of-the-sixth-coalition` | `Q138107` | 1813–1814 | `napoleonic-wars` | `central-europe` | 19th |
+| `war-of-the-seventh-coalition` | `Q2724511` | 1815-03-13 – 1815-07-08 | `napoleonic-wars` | `france-q142` | 19th |
+
+**Six items put to `tools/import/wikidata.mjs --import`, six created, none
+refused and none ambiguous**, in twenty-eight calls. `napoleonic-wars` goes from
+one child to seven.
+
+**No class was added and no place was written.** All six carry `Q198` *war*,
+which the table already holds; `Q179250` carries `Q467011` *invasion* as a
+second class, which the table also holds, and `classify()` agrees with itself on
+both. All three locations the import reached for were already place records with
+a `wikidata` field on them — `central-europe` (`Q27509`), `france-q142`
+(`Q142`), `russian-empire-q34266` (`Q34266`) — which is the first batch of this
+branch that needed the place directory and found everything in it. `poland-q36`
+is the fourth: `Q605977` names five `P276` locations (`Q34` Sweden, `Q36`
+Poland, `Q38872` Prussia, `Q103801` East Prussia, `Q153015` Saxony) and the
+import takes the first of them the atlas holds — which here is also the only one
+it holds, `poland-q36`. A run that later writes place records for the other
+four will not change this record, because the import fills a gap and never
+changes a value; if Poland is the wrong theatre for that war, a person changes
+it in `review.html` and the batch is not what decided it.
+
+**The lane guard of A14(2) passes on all six.** Every one of the four place
+records derives `europe` — `russian-empire-q34266` sits at 70.1167E, 58.65N,
+which is east of the Urals and reads as a place a run should check, and
+`createRegionDeriver` puts it `inside` the `europe` polygon with distance 0, the
+same lane as every one of the six events. Nothing was written whose place and
+event disagree.
+
+### The summaries, and the one that is honestly a placeholder
+
+**Five of the six carry the cached English lead as their summary**, at the
+revision the cache names, with the `wikipedia-en` citation and the
+`summary-from-lead` flag: *War of the Third Coalition* at 1370750237, *War of
+the Fourth Coalition* at 1372944372, *War of the Fifth Coalition* at 1371442339,
+*War of the Sixth Coalition* at 1373828502, *French invasion of Russia* at
+1375995823.
+
+**The sixth keeps the import's placeholder and that is the honest answer.**
+`Q2724511`, the War of the Seventh Coalition, has eleven sitelinks and **none of
+them is English**: the record carries no `wikipedia` field at all, the cache has
+no lead for it, and there is nothing to quote. The English title *War of the
+Seventh Coalition* is a redirect to *Hundred Days*, which is a **different
+item**, `Q199955`, also a `P361` of `Q78994` — so taking that article's lead for
+this record would have been deviation 1252's mistake with a different number on
+it. It keeps the placeholder, keeps the `summary-imported` warning the validator
+prints for it, and is one of the four records in the corpus that shows it.
+
+### The six edges
+
+| edge | type | second author | what the article says |
+| --- | --- | --- | --- |
+| `war-of-the-third-coalition` → `war-of-the-fourth-coalition` | `caused` | — | "Excluding Prussia, some members of the coalition had previously been fighting France as part of the Third Coalition, and there was no intervening period of general peace. On 9 October 1806, Prussia declared war on France and joined a renewed coalition, fearing the rise in French power after the defeat of Austria and establishment of the French-sponsored Confederation of the Rhine…" |
+| `war-of-the-third-coalition` → `war-of-the-fifth-coalition` | `caused` | — | "Austria attacked France to seek the recovery of territories lost in the 1803–1806 War of the Third Coalition." |
+| `peninsular-war` → `war-of-the-fifth-coalition` | `enabled` | — | "By the start of 1809 much of the French army was committed to the Peninsular War against Britain, Spain and Portugal. After France withdrew 108,000 soldiers from Germany, Austria attacked France…" |
+| `war-of-the-fourth-coalition` → `french-invasion-of-russia` | `precondition-of` | Riehn 1990, p. 26 | "The accord rendered Russia an ally of France, leading to their adoption of the Continental System, a blockade aimed at the United Kingdom… the treaty imposed significant economic strain on Russia, prompting Tsar Alexander to break away from the Continental blockade on 31 December 1810… This decision left Napoleon without his primary foreign policy tool against the United Kingdom." |
+| `french-invasion-of-russia` → `war-of-the-sixth-coalition` | `caused` | — | "Following the disastrous French invasion of Russia in 1812 in which they had been forced to support France, Prussia and Austria joined Russia, Britain, Sweden, Portugal and Spain against France." |
+| `war-of-the-sixth-coalition` → `war-of-the-seventh-coalition` | `precondition-of` | — | "The victors exiled Napoleon to the island of Elba, and restored the Bourbon monarchy in the person of Louis XVIII"; and, in the same article's lead, "The Hundred Days began in 1815 when Napoleon escaped from his captivity on Elba and returned to power in France." |
+
+**Not one of them runs from a parent to its own child, which is A14.** All six
+run between siblings — the six imports and `peninsular-war`, which are the seven
+children of `napoleonic-wars` — and the umbrella itself takes no edge in either
+direction. The door out of the tree is the umbrella's own, as it was for the War
+of Jenkins' Ear in batch 20, and this batch did not force it.
+
+**One source record**, `riehn-1990-1812-napoleons-russian-campaign` — Richard K.
+Riehn, *1812: Napoleon's Russian Campaign*, McGraw-Hill 1990, ISBN
+9780070527317 — which the invasion article cites with `{{sfn|Riehn|1990|p=26}}`
+on the sentence the edge quotes. Source records go 73 → **74** and rule 9's
+count 202 → **203**. **Deviation 1250 recurred**: the first `reference` written
+for it was 318 characters and rule 1 refused it; it was cut to 282 and says the
+same thing.
+
+**Five of the six carry no second author and the reason is the same each time**:
+the sentence quoted is in an article's lead, and the leads of these five carry
+no footnote of their own — the citations live in the body sections the lead
+summarises. Each of the five explanations says so rather than leaving the gap
+unexplained, which is M72's own answer to a missing locator.
+
+### `P710`, and why no actor line was written (A12 (4))
+
+Three of the six items name participants and **the atlas holds an actor for one
+of the ten polities and people between them**, which is short of what this
+partition's rule asks: `P710` is taken only where the atlas holds *every*
+participant the item names. `Q249232` names seven — `Q34` Sweden (held, as
+`sweden`), `Q12548` the Holy Roman Empire, `Q34266` the Russian Empire,
+`Q71084` the First French Empire, `Q173065` Naples, `Q174193` the United
+Kingdom and `Q188586` Sicily — and six of the seven have no actor here.
+`Q179250` names two, `Q34266` and `Q71084`, and the atlas holds neither.
+`Q605977` names three people rather than polities — `Q7729` Louis Bonaparte,
+`Q37134` Frederick William III and `Q151087` Jérôme Bonaparte — and the atlas
+holds none. The other three name no `P710` at all. So all six arrived with
+`actors: []` and stayed that way, and `docs/m53-polities.md` §4.1's numerator
+does not move: **380 of 879**.
+
+**Q34266 and Q71084 are two more for the polity list**, which stood at eleven
+after batch 20 and stands at thirteen now. `Q34266` shows the distinction the
+pool keeps making in one record: the atlas has held `russian-empire-q34266` as a
+**place** since before this batch, and used it as the place of the invasion —
+but where a thing was is a place and what it did is an actor, and this branch
+has been writing the first and never the second. `Q71084`, the First French
+Empire, is neither here.
+
+### What the component says
+
+**Six edges and the largest component grows by six, from 610 to 616.**
+`peninsular-war` is in the 610, so the edge to the Fifth Coalition carries the
+whole new cluster into it in one step, and every other edge of the batch is
+inside that cluster. The component count does not move and neither does the
+isolated count: **every one of the six earns an edge**, which is the second
+batch of this branch in a row where all of them do.
+
+**What batches 19 and 20 could not do, this one did in one edge.** Both left
+their clusters outside the 611 and said why: the Inca conquest's door and the
+War of Jenkins' Ear's were each shut because every record of the vein was
+already filed under the same umbrella, so the only edge left to write would
+have run from a child to its own parent. The difference here is not the rule —
+A14 binds this batch the same way — but the vein: `peninsular-war` was a
+sibling that was already in the graph, so the tree had a door that was not the
+umbrella's. **A vein to prefer, stated as a rule for the next fire: an umbrella
+with one child already connected is worth more than an umbrella with none.**
+
 ## Where the run stands, for the fire that picks it up
 
-*24 September, after the nineteenth fire and its two batches, 19 and 20.*
+*24 September, after the twentieth fire and its batch 21.*
 
 | | |
 | --- | --- |
-| corpus | **872 active** |
+| corpus | **879 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **611** |
-| components | 196 |
+| **largest connected component** | **616** |
+| components | 197 |
 | events with no edge at all | 156 |
-| Europe before 1900 | 83 active, 18 main |
+| Europe before 1900 | **89 active, 18 main** |
 | the `americas` lane | **216 active, 55 main** |
 | south and central America against north, inside that lane | 182 to 19 |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 19th (15, 10)**, the Americas' 17th (18, 6), Europe's 16th (19, 1), Europe's 17th (21, 2), the Americas' 18th (23, 2), Europe's 18th (24, 3), the Americas' 16th (24, 5) |
-| the cells this fire moved | the Americas' 16th, 16 → 24; the Americas' 18th, 17 → 23; both with their main counts untouched |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (18, 6)**, Europe's 16th (19, 1), Europe's 17th (21, 2), the Americas' 18th (23, 2), Europe's 18th (24, 3), the Americas' 16th (24, 5), **Europe's 19th (21, 10)** |
+| the cells this fire moved | Europe's 19th, 15 → 21, its main count untouched |
 
-**This fire merged before it imported.** `origin/m0` was eight commits ahead
-with `docs/review-2026-09-24.md`, `docs/m86-brief.md` and **amendment A14**, and
-`origin/m42` fourteen ahead with its curation fire's edges. Both merged with one
-conflict each time, `STATUS.md`, both sides kept; `data/index/` was dropped and
-rebuilt. **The merge moved the graph and not the cells**: the largest component
-was 607 on batch 18's head and 609 after it, from `origin/m42`'s curation edges,
-and no century of this partition changed.
+**This fire merged before it imported, and both merges were clean.**
+`origin/m0` was ahead with M53's §4.1 row re-taken over records snapshot 7, and
+`origin/m42` with its own pool note; neither conflicted, `data/index/` rebuilt
+byte-identical, and the corpus went 872 → 873 with the component 611 → 610 and
+the components 196 → 197. **No century of this partition changed in either
+merge**, as it did not in the nineteenth fire's two.
+
+**Europe's nineteenth century is no longer the thinnest cell and the vein that
+filled it is spent.** All seven conflicts the `napoleonic-wars` lead names are
+now in the atlas, filed under it, and six of the seven are this batch. **The
+thinnest cell in this partition is now the Americas' seventeenth**, at 18 active
+and 6 main, whose two remaining items are named below and both need a place
+record. After it, **Europe's sixteenth at 19 and 1 is still the deepest vein in
+this partition by far** — batch 17's Italian Wars query returns about sixty-eight
+items, nine of them already listed, and four or five batches' worth behind them
+that need no new class.
 
 **A14 binds this branch and the one clause that touches a batch is obeyed**: no
-edge this fire wrote runs from a parent to its own child. **A14's six data
-passes over the existing records are M42's**, and nothing here took them.
+edge this fire wrote runs from a parent to its own child. All six run between
+the seven children of `napoleonic-wars`, and the umbrella takes no edge in
+either direction. **A14's six data passes over the existing records are M42's**,
+and nothing here took them.
 
-**The thinnest cell in this partition is Europe's nineteenth century**, at 15
-active and 10 main — see "The cell this fire should have taken first" in batch
-20. After it comes **the Americas' seventeenth**, at 18 and 6, whose vein is
-named below and is small — two Brazilian items with no
-point, which makes it a place-record batch. **After it, Europe's sixteenth at 19
-and 1 is the deepest vein in this partition by far**: the Italian Wars query of
-batch 17 returns about sixty-eight items, nine of them here, and the other
-phases listed below are four or five batches' worth that need no new class.
+**The order of a fire on this branch is unchanged and it held again.** Resolve
+the merges and commit them; only then `node tools/build-index.mjs`; then the
+index as its own commit. For a batch it is 798's order — records committed, then
+rebuild, then the index — and `docs/m53-polities.md` §4.1 is re-taken in the
+commit that writes the records, which this fire did at 380 of 879. Deviation
+1251 has not recurred.
 
-**The order of a fire on this branch is unchanged and it held twice today.**
-Resolve the merge and commit it; only then `node tools/build-index.mjs`; then
-the index as its own commit. For a batch it is 798's order — records committed,
-then rebuild, then the index — **and `docs/m53-polities.md` §4.1 is re-taken in
-the commit that writes the records**, which this fire did for both batches
-(379 of 866, then 379 of 872). Deviation 1251 has not recurred.
-
-**A test caught a filing before the check did, and the lesson is 711's.** The
-m67 suite asserts that a filed child naming neither an actor nor a place is one
-the measurement argues for **in `docs/m42b-pool.md`** — this file is in its
-`ARGUED_IN` list. Batch 19 wrote two such children, `battle-of-vilcaconga` and
-`spanish-conquest-of-the-kingdom-of-q-umarkaj`, and the suite failed until the
-batch note named them. **A placeless, actorless child costs a paragraph in this
-file, and the fire that writes one should write the paragraph in the same
-breath.**
-
-**The check is green on the head of this fire.** Run **1654** on `c5079980`
-concluded `success` — "Validate records" and "Tests" both green; runs 1639,
-1645, 1646, 1651 and 1652 were each cancelled by the concurrency group as the
-next push landed, which is the pattern every fire of this branch sees. Locally:
-`node tools/validate.mjs --index` clean at **0 errors and 502 warnings**, and
-**2,071 tests pass with none failed and none skipped** — 1,792 in the 151 pure
-suites and 279 in the 36 browser suites, run the way the check runs them, one
-browser suite at a time.
-
-**For article text beyond the cached lead, `Special:Export` and nothing else**
-(deviation 1247). It answered eleven times this fire, with the revision id in
-the XML and the wikitext whole, which is where the `<ref>` tags and therefore
-M72's second author come from. `api.php` is still refused.
+**The umbrella's own lead is the cheapest vein this branch has found.** Batch 21
+cost six imports, no place record, no class, no ambiguity and no refusal, and
+it moved the largest component by six — because the umbrella was already here,
+one of its children was already in the graph, and the article that named the
+other six is the article the umbrella already cites. **A fire looking for the
+next batch should read the leads of the main events this partition already
+holds before it writes a query**: a main event whose lead enumerates its parts
+is a batch with the filing, the span and the subject already settled.
 
 ### The veins, and which are open
 
