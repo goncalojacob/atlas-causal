@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "battle-of-osan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the record carried 1950-07-04, the item's single P585. Its own cited article at revision 1375327001 dates the engagement to the next day in its first sentence — \"On July 5, 1950, Task Force Smith ... was moved to Osan\" — and its infobox reads \"July 5, 1950\", so the day is 5 July. A reading that moves a date by one day rather than widening a span, which is the first of its kind in this run."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q484494",
+  "wikipedia": {
+    "en": "Battle of Osan",
+    "pt": "Batalha de Osan"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q484494"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Osan\", revision 1375327001"
+    }
+  ],
+  "title": "Battle of Osan",
+  "summary": "The English Wikipedia article \"Battle of Osan\", at revision 1375327001, opens: \"The Battle of Osan was the first engagement between the United States and North Korea during the Korean War. On July 5, 1950, Task Force Smith, an American task force of 540 infantry supported by an artillery battery, was moved to Osan, south of Seoul, the capital of South Korea, and was ordered to fight as a rearguard to delay the advancing North Korean forces while more US troops arrived to form a stronger defensive line to the south.\" Wikidata item Q484494, whose own description reads \"1950 first battle between North Korean and American forces during the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-07-05"
+  },
+  "place": "osan",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "korea-people-s-republic-of",
+      "role": "belligerent"
+    },
+    {
+      "actor": "korea-republic-of",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

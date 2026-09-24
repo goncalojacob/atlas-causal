@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-pusan-perimeter",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q482979",
+  "wikipedia": {
+    "en": "Battle of the Pusan Perimeter",
+    "pt": "Batalha de Pusan"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q482979"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Pusan Perimeter\", revision 1376282930"
+    }
+  ],
+  "title": "Battle of the Pusan Perimeter",
+  "summary": "The English Wikipedia article \"Battle of the Pusan Perimeter\", at revision 1376282930, opens: \"The Battle of the Pusan Perimeter, known in Korean as the Battle of the Naktong River Defense Line, was a large-scale battle between United Nations Command (UN) and North Korean forces lasting from August 4 to September 18, 1950.\" Wikidata item Q482979, whose own description reads \"1950 major battle of the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-08-04",
+    "endDate": "1950-09-18"
+  },
+  "place": "pusan-perimeter",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "korea-people-s-republic-of",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

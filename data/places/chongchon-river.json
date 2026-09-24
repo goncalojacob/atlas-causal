@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "chongchon-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q499266 for batch 51: the river battle-of-the-ch-ongch-on-river was fought along. A9's two steps differ by 37 km, which is what a river's single P625 means; the article puts the fighting \"along the Ch'ongch'on River Valley\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q499266",
+  "wikipedia": {
+    "en": "Chongchon River",
+    "pt": "Rio Ch'ŏngch'ŏn"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Ch'ongch'on River",
+    "Rio Ch'ŏngch'ŏn",
+    "Chongchon River"
+  ],
+  "where": {
+    "lon": 125.41666666667,
+    "lat": 39.6,
+    "precision": "region",
+    "label": "Chongchon River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-seoul--battle-of-inchon--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Inchon\", revision 1370266029, § Planning"
+    }
+  ],
+  "from": "first-battle-of-seoul",
+  "to": "battle-of-inchon",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Read in this direction the edge says the landing answered the loss of the capital. Two consecutive sentences of the Inchon article give it: \"Days after the beginning of the war, General of the Army Douglas MacArthur, the US Army officer in command of all UN forces in Korea, envisioned an amphibious assault to retake the Seoul area. The city had fallen in the first days of the war in the First Battle of Seoul.\" The object of the operation was the ground this battle had lost. Probable: Wikipedia alone.",
+  "dispute": null
+}

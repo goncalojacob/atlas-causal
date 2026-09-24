@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-ch-ongch-on-river--third-battle-of-seoul--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Seoul\", revision 1370750418, § Background"
+    }
+  ],
+  "from": "battle-of-the-ch-ongch-on-river",
+  "to": "third-battle-of-seoul",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article puts the decision that produced this offensive immediately after the earlier victory and attributes it to it: \"Immediately after the PVA 13th Army's victory over the Eighth Army at the Ch'ongch'on River, Chinese Communist Party chairman Mao Zedong started to contemplate another offensive against the UN forces on the urging of North Korean Premier Kim Il Sung.\" It reads the other consequence in the same section — the UN \"started to contemplate the possibility of evacuation from the Korean Peninsula\", and the Eighth Army \"retreated back to the Imjin River while setting up defensive positions around the South Korean capital of Seoul\". Probable: Wikipedia alone.",
+  "dispute": null
+}

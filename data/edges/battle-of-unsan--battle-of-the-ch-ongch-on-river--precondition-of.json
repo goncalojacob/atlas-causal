@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822, § Background and § Actions at Ipsok"
+    }
+  ],
+  "from": "battle-of-unsan",
+  "to": "battle-of-the-ch-ongch-on-river",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article names the earlier battle as what put the Eighth Army on the river it was then attacked along: the PVA \"surprised and defeated the Republic of Korea Army (ROK) II Corps and the US 1st Cavalry Division in a series of battles around Onjong and Unsan, destroying the right flank of the US Eighth Army while forcing the UN forces to retreat back to the Ch'ongch'on River\". It also says what the defeat taught: \"Because of the earlier UN defeat at the Battle of Unsan, the US 25th Infantry Division expected to encounter heavy PVA resistance during its advance.\" Probable: Wikipedia alone.",
+  "dispute": null
+}
