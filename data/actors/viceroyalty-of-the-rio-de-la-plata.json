@@ -14,26 +14,40 @@
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
   "revised": null,
-  "origin": {
-    "tool": "basemaps"
-  },
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "summary-from-lead"
     ]
+  },
+  "origin": {
+    "tool": "basemaps"
+  },
+  "wikidata": "Q210551",
+  "wikipedia": {
+    "en": "Viceroyalty of the Río de la Plata",
+    "pt": "Vice-Reino do Rio da Prata"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-23"
   },
   "sources": [
     {
       "source": "historical-basemaps",
       "locator": "NAME \"Viceroyalty of the Río de la Plata\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Viceroyalty of the Río de la Plata\", revision 1372215943"
     }
   ],
   "actorType": "polity",
   "names": [
     "Viceroyalty of the Río de la Plata"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1783 and 1800. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1783 to 1814, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "The English Wikipedia article \"Viceroyalty of the Río de la Plata\", at revision 1372215943, opens: \"The Viceroyalty of the Río de la Plata or Viceroyalty of the River Plate was the last to be organised and also the shortest-lived viceroyalty of the Spanish Empire in the Americas. It was established in 1776 from several former Viceroyalty of Peru dependencies that mainly extended over the Río de la Plata Basin, roughly the present-day territories of Argentina, northern Chile, Bolivia, Paraguay and Uruguay, extending inland from the Atlantic Coast. The colony of Spanish Guinea also depended administratively on the Viceroyalty of the Río de la Plata.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity the Historical Basemaps dataset draws in the snapshots for 1783 and 1800. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1783 to 1814, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1783,
     "end": 1814

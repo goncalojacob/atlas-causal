@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-saylla--siege-of-cusco-1781--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    }
+  ],
+  "from": "battle-of-saylla",
+  "to": "siege-of-cusco-1781",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article puts the two engagements two days apart and in one sequence: the reinforcements under Avilés entered Cusco on 1 January 1781, then **\"On 2 January, alerted by the priest of Urcos, the cavalry of the Royalists, commanded by Joaquín de Varcárcel and Francisco Laisequilla, destroyed Castelo's vanguard in the town of Saylla, killing 400 rebels and capturing a flag bearing the coat of arms of Túpac Amaru\"**, and then **\"On 4 January, Túpac Amaru ordered his troops to move around the city\"**, which is where the siege begins. **The article gives the order and the position and states no cause between them**, which is why the type is the weakest one the arrangement supports and the confidence is `probable`: the royalist cavalry had broken the rebel vanguard outside the city before the main army reached it, and that is the whole of what is claimed here. (Saylla's own article dates the action 3 January; the rebellion's dates it 2 January. Neither is preferred here and the record keeps its item's own date.)",
+  "dispute": null
+}

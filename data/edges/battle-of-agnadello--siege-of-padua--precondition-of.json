@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-agnadello--siege-of-padua--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Agnadello\", revision 1370431087, § Aftermath"
+    }
+  ],
+  "from": "battle-of-agnadello",
+  "to": "siege-of-padua",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Siege of Padua article makes Agnadello the state Venice defended Padua from: Maximilian's army \"did not reach Padua until mid-September, which allowed the Venetian commander Niccolò di Pitigliano to concentrate what remained of Venice's army after Agnadello, as well as several companies of volunteers from Venice, in the city.\" The Agnadello article says what that remnant was left by: \"Faced with the continued advance of the French army, he hurriedly retreated towards Treviso and Venice. Louis then proceeded to occupy the remainder of Lombardy.\" `precondition-of` rather than `caused`: the defeat in May is the position the September defence begins from, and neither article says Agnadello brought the siege about — Maximilian raised his army in answer to Venice retaking Padua in July. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

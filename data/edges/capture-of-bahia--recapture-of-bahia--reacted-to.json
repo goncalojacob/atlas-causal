@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Bahia\", revision 1373231929"
+    }
+  ],
+  "from": "capture-of-bahia",
+  "to": "recapture-of-bahia",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Capture of Bahia article closes its lead on the answer this edge names: \"Although the Dutch intentions were reported to the Spanish, no preventive counter-action was taken until the Recapture of Bahia in 1625.\" The Recapture article opens with the same thing said from the other side: \"The recapture of Bahia was a Spanish–Portuguese military expedition in 1625 to retake the city of Bahia in Brazil from the forces of the Dutch West India Company (WIC).\" An expedition mounted to retake a city taken the year before is a reaction to the taking and not a consequence of it, so `reacted-to` and not `caused`. Probable, because both articles are read at one revision each and neither names a historian for the reading.",
+  "dispute": null
+}

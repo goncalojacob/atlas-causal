@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-pillpinto--siege-of-cusco-1781--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, lead and \"Siege of Cusco\""
+    }
+  ],
+  "from": "battle-of-pillpinto",
+  "to": "siege-of-cusco-1781",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Two sentences of the article, and the edge is no wider than what stands between them. The first groups this battle with two others as the victories the rising's first phase turned on: **\"This initial phase of the rebellion in Cusco and the south was marked by key victories, such as the capture of Ayaviri, the Battle of Pillpinto, and especially the Battle of Sangarará, which consolidated rebel control over the Cusco region.\"** The second gives the offensive against Cusco as the attempt to keep what had been won: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** **The second sentence does not name Pillpinto**, and this record says so rather than reading it in: what the article supports is that Pillpinto is one of the victories that made the position the offensive set out from, which is `enabled` at `probable` and nothing stronger. Pillpinto's own article adds what was held there — \"a small women's brigade led by Tomasa Tito Condemayta successfully suppressing the Spanish militia from capturing Túpac Amaru II\" (revision 1370586073).",
+  "dispute": null
+}

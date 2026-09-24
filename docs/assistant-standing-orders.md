@@ -100,12 +100,18 @@ bugs, first paint; landed 22 September evening, PR #21) → **M84 (the
 owner's feedback document, `docs/feedback-2026-09-22.md`: a cross closes a
 card; the ring in a distinct colour; landed 22 September, PR #22)** → M85
 (`docs/m85-brief.md`: the first review's remainder; landed 22 September
-night, PR #23, all nine sections done) → **a second Fable review on 24
-September** over the code, the live site and the records as they stand
-then (independent subagents, model fable; a numbered findings file
-`docs/review-2026-09-24.md` with a fix plan) → its fixes as M86 onward.
-Lane A is idle from M85's landing until that review; lane B keeps
-growing the corpus meanwhile, with a snapshot landed every day.
+night, PR #23, all nine sections done) → the second Fable review, done
+24 September (`docs/review-2026-09-24.md`: part A reader, B display, C
+records, with a fix plan) → **M86 (`docs/m86-brief.md`: what a funder
+meets first — the provenance paragraph out of card bodies, names on the
+first map, the about page's paragraph, the timeline's right edge, the
+graph after a drag, a resize keeping the camera, the degree control under
+a lens, three card polish items, the resting pictures)** → M87 (what
+breaks at 3,000 events: first paint coalesced, the timeline's rows capped,
+the browser harness, the phone's picture, the validator's lead-sentence
+warning, the import tool's place reuse) → a third review before the owner
+returns. Lane B runs amendment A14 (the review's data passes) before any
+further import.
 
 **Two lessons from 22 September's landings**, for every brief from here:
 a test of a display property over the live corpus derives its expectation
@@ -178,3 +184,16 @@ The owner writes a feedback document after the current improvements land
 8. Since M85 the atlas opens at rest on the whole span, 1492 to the present,
    main events only (the review's finding A4). Is that the first picture
    you want, or the densest century as before?
+9. From the 24 September review, part C (each is a rule about what counts,
+   so it waits for you): may an event whose item names several countries
+   be placed at all (C1)? May a war cause its own battle, and is an
+   umbrella one by flag or by having children (C3)? Does a background
+   section's mention of an earlier event make a `precondition-of` (C4)?
+   Is a partial participant list with a note acceptable, and what is the
+   role for a revolution's participants (C7)? Does `parent` satisfy the
+   bar of §1, a record earning its place by an edge (C8)? Should the
+   Wikipedia cache hold article bodies (C5)?
+10. Part A's finding 3: the corpus and the front card still read as
+   Portugal in the twentieth century. One non-Portuguese "Start here"
+   account is a narrative record and waits for you; which chain would you
+   like it to tell?

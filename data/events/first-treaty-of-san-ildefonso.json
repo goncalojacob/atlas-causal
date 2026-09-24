@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "first-treaty-of-san-ildefonso",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q580765",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "First Treaty of San Ildefonso",
+    "pt": "Tratado de Santo Ildefonso (1777)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q580765"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Treaty of San Ildefonso\", revision 1372949821"
+    }
+  ],
+  "title": "First Treaty of San Ildefonso",
+  "summary": "The English Wikipedia article \"First Treaty of San Ildefonso\", at revision 1372949821, opens: \"The First Treaty of San Ildefonso, 1 October 1777, fixed borders between the colonial possessions in South America held by Spain and Portugal, primarily in the Río de la Plata region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q580765, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 treaty between Spain and Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-10-01"
+  },
+  "place": "royal-palace-of-la-granja-de-san-ildefonso",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [
+    {
+      "actor": "kingdom-of-portugal",
+      "role": "signatory",
+      "note": "Wikidata Q580765 names it a participant (P710 Q45670); the treaty fixed borders between Spain and Portugal. The other signatory, Q3399982, is not a record here."
+    }
+  ],
+  "parent": "spanish-colonization-of-the-americas"
+}

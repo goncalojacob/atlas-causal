@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cortes-of-cadiz",
+  "kind": "actor",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1135591",
+  "wikipedia": {
+    "en": "Cortes of Cádiz"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1135591"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cortes of Cádiz\", revision 1370948041"
+    }
+  ],
+  "actorType": "institution",
+  "names": [
+    "Cortes of Cádiz"
+  ],
+  "summary": "The English Wikipedia article \"Cortes of Cádiz\", at revision 1370948041, opens: \"The Cortes of Cádiz were the result of the Spanish liberal revolution that transformed the Bourbon Kingdom of Spain and the Indies from an absolutist state into a national state, through the formation of a national parliament, cortes. It met as a single body, rather than divided into estates as with traditional cortes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1135591, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century revival of the traditional Spanish parliament (cortes)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1814
+  },
+  "where": null
+}

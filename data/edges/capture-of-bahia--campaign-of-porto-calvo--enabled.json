@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "capture-of-bahia--campaign-of-porto-calvo--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign of Porto Calvo\", revision 1373668892, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    }
+  ],
+  "from": "capture-of-bahia",
+  "to": "campaign-of-porto-calvo",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Campaign of Porto Calvo article, § Background, puts the campaign at the end of a sequence it starts at Bahia: \"the year 1624 saw the Dutch fleet arriving off the coast of Salvador, where a swift invasion ensued, resulting in the city’s capture within a remarkably brief span of 24 hours. This marked an acceleration of their territorial expansion in Brazil\", and then, of the campaign itself, that John Maurice, governor from 1636, \"spearheaded multiple far-reaching expeditions aimed at further territorial growth and consolidation\". `enabled` is the type the article’s own wording carries: the 1624 capture is what it says the expansion accelerated from, thirteen years before this campaign, and not a cause of this campaign in particular. Probable: Wikipedia alone, at two revisions. The article attributes the passage to Clemmy Manzo, The Rough Guide to Brazil (2014) and to Erik Odegard, Patronage, Patrimonialism, and Governors’ Careers in the Dutch Chartered Companies, 1630–1681 (2022), pp. 60–62 — works Wikipedia itself cites, which A2 would allow as a second author, and neither was read here, so the edge stays probable.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-padua--siege-of-asola-1516--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Asola (1516)\", revision 1370739014, § History"
+    }
+  ],
+  "from": "siege-of-padua",
+  "to": "siege-of-asola-1516",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Siege of Padua article closes on exactly this interval: \"The defeat was a major loss of face for Maximilian, and the Holy Roman Empire would not attempt another invasion of Italy until 1516.\" The Siege of Asola article is that attempt: \"In 1516, Emperor Maximilian I decided to descend on Italy, eager to regain Lombardy and with it Milan\", and it ended on 19 March \"with the retreat of Maximilian I, who retreated towards the Tyrol\" — as Padua had. `precondition-of`: the failure at Padua is the state the 1516 descent begins from, and the article dates the next attempt by it rather than claiming the one brought the other about. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

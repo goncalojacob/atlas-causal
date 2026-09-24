@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "peninsular-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q152499",
+  "wikipedia": {
+    "en": "Peninsular War",
+    "pt": "Guerra Peninsular"
+  },
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152499"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peninsular War\", revision 1370787208"
+    }
+  ],
+  "title": "Peninsular War",
+  "summary": "The English Wikipedia article \"Peninsular War\", at revision 1370787208, opens: \"The Peninsular War (1808–1814) was fought in the Iberian Peninsula by the Iberian nations Spain and Portugal, along with the United Kingdom, against the invading and occupying forces of the First French Empire during the Napoleonic Wars. In Spain, it is considered to overlap with the Spanish War of Independence. It overlapped with the War of the Fifth Coalition (1809) and the War of the Sixth Coalition (1812–1814).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152499, imported by tools/import/wikidata.mjs. The item's own description reads \"1807–1814 conflict during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1814,
+    "date": "1808-05-02",
+    "endDate": "1814-04-17"
+  },
+  "place": "iberian-peninsula",
+  "region": null,
+  "regionNote": null,
+  "parent": "napoleonic-wars",
+  "category": "war",
+  "actors": []
+}

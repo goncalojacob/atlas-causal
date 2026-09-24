@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "united-states-declaration-of-independence--treaty-of-paris-1783--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States Declaration of Independence\", revision 1375522610, lead; \"Treaty of Paris (1783)\", revision 1376240014, lead"
+    }
+  ],
+  "from": "united-states-declaration-of-independence",
+  "to": "treaty-of-paris-1783",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The two articles describe one claim and its recognition seven years apart. The Declaration **\"explains why the Thirteen Colonies regarded themselves as independent sovereign states no longer subject to British colonial rule\"**; the treaty **\"recognized the Thirteen Colonies, which had been part of colonial British America, to be free, sovereign, and independent unified states.\"** Neither article says the second followed from the first, and this edge does not say so either: it takes `precondition-of`, the weakest of the five, for a claim that had to exist before it could be recognised in the same words. `probable`.",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "norwich-1982-a-history-of-venice",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "John Julius Norwich"
+  ],
+  "title": "A History of Venice",
+  "year": 1982,
+  "publisher": "Knopf",
+  "isbn": "9780679721970",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"Battle of La Motta (1513)\" cites for d'Alviano's retreat into the Veneto without French support, at revision 1370446782; the full entry is the \"War of the League of Cambrai\" article's own, at revision 1375133857. Cited and not read."
+}

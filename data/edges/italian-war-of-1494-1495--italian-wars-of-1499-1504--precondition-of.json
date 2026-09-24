@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m42b"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian Wars of 1499–1504\", revision 1372847284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1494–1495\", revision 1372866209"
+    }
+  ],
+  "from": "italian-war-of-1494-1495",
+  "to": "italian-wars-of-1499-1504",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Italian Wars of 1499–1504 article states the sequence as a condition and not as a cause: \"In the aftermath of the Italian War of 1494–1498, Louis was determined to pursue French claims to Milan and Naples and in October 1499 he captured Milan, which remained in French hands for the next thirteen years.\" It adds what put Louis in a position to pursue them: \"7 April 1498: Charles VIII of France died and was succeeded by his cousin Louis, Duke of Orléans as Louis XII. Louis had participated in the previous war, primarily in the 1495 Siege of Novara.\" The first war left the French claims unsettled and left the man who would press them next having fought in it; that is a precondition of the second and not its cause, which was a succession the first war did not bring about. Probable, because both articles are read at one revision each and neither names a historian for the reading. The 1499–1504 article calls the earlier war \"Italian War of 1494–1498\" where the record, taking its title from the item's own English article, calls it \"Italian War of 1494–1495\"; the two are the same war under two of English Wikipedia's own names and nothing here resolves which is right.",
+  "dispute": null
+}

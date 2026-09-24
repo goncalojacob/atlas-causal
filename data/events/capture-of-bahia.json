@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-bahia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "Place written by the run that imported it, under A9 as A12 corrects it: the item carries no P625 of its own, its P276 is Salvador (Q36947), and this atlas already holds that city as `salvador` with the point Q36947 gives. The import had reached past P276 to the first P17 — the Netherlands on Q3704801 — and filed the engagement in the European lane; the lane is now derived from Salvador, which is where the article says it happened."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3704801",
+  "wikipedia": {
+    "en": "Capture of Bahia",
+    "pt": "Captura da Bahia"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3704801"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Bahia\", revision 1370608303"
+    }
+  ],
+  "title": "Capture of Bahia",
+  "summary": "The English Wikipedia article \"Capture of Bahia\", at revision 1370608303, opens: \"The capture of Salvador was a military engagement between Portugal and the Dutch West India Company, that occurred in 1624, and ended in the capture of the Brazilian city of Salvador by the latter. This capture was part of the Groot Desseyn plan of the Dutch West India Company. Although the Dutch intentions were reported to the Spanish, no preventive counter-action was taken until the Recapture of Bahia in 1625.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3704801, imported by tools/import/wikidata.mjs. The item's own description reads \"1624 military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1624,
+    "date": "1624-05-08"
+  },
+  "place": "salvador",
+  "region": null,
+  "regionNote": null,
+  "parent": "dutch-portuguese-war",
+  "actors": []
+}

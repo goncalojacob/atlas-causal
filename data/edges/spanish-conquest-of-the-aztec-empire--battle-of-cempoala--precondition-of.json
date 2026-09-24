@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-the-aztec-empire--battle-of-cempoala--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cempoala\", revision 1370436634, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Otumba\", revision 1370271351, § Background"
+    }
+  ],
+  "from": "spanish-conquest-of-the-aztec-empire",
+  "to": "battle-of-cempoala",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The expedition is why the punitive force came. The Battle of Cempoala article's § Background states it plainly: \"While Cortés was enriching himself by leading an expedition in eastern Mexico, he tried to convince the King of Spain, in a series of letters, to take away Cuban governor Diego Velázquez de Cuéllar’s control over the campaign. When Velázquez heard about this, he was furious. He decided to send Pánfilo de Narváez to regain control of the expedition.\" The Battle of Otumba article says the same thing from the other side: \"Velázquez, angered at Cortés' disobedience, sent an armed force at the command of Pánfilo Narváez against Cortés to bring him to justice and claim the lands and riches he had conquered.\" `precondition-of` and not `caused`: the conquest is the state of affairs the battle could not have happened without, and neither article says the conquest brought that battle about — what did was Velázquez's decision. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "united-states-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "Placed by the run that imported it, under A9's order: Q127912 names Independence Hall (Q390028) as its location (P276) and that building carries its own P625, which is what a place record is written from here rather than the bare coordinate on the event's own item."
+  },
+  "wikidata": "Q127912",
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "United States Declaration of Independence",
+    "pt": "Declaração de Independência dos Estados Unidos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q127912"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States Declaration of Independence\", revision 1375522610"
+    }
+  ],
+  "title": "United States Declaration of Independence",
+  "summary": "The English Wikipedia article \"United States Declaration of Independence\", at revision 1375522610, opens: \"The Declaration of Independence, headed The unanimous Declaration of the thirteen united States of America on the document directed to be engrossed by Congress on July 19, 1776, is the founding document of the United States. On July 4, 1776, it was adopted unanimously by the Second Continental Congress, who were convened at the Pennsylvania State House, later renamed Independence Hall, in Philadelphia. These delegates became known as the nation's Founding Fathers. The Declaration explains why the Thirteen Colonies regarded themselves as independent sovereign states no longer subject to British colonial rule, and has become one of the most circulated, reprinted, and influential documents in history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q127912, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 assertion of colonial America's independence from Great Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-07-04"
+  },
+  "place": "independence-hall",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

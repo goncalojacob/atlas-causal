@@ -20928,6 +20928,578 @@ Americas' 16th and 18th at three each and Europe's 15th at four.
 `docs/m42b-pool.md` → "Batch 7" and `docs/m67-umbrellas.md` → "M42b batch 7"
 carry the whole of it.
 
+**M42b batch 8 — the Spanish conquest, and the Americas' 16th century, 23
+September.** The eighth fire on the branch, taken from the cell the seventh
+fire's note named as one of the two thinnest in this partition: the Americas'
+16th century, which held five active events, all of them Portuguese Brazil or
+the Caribbean, and nothing at all of the Spanish conquest. **Nine events, four
+places and two actors**, every one draft and flagged, filed as they were
+imported — `spanish-colonization-of-the-americas` as the umbrella the century
+lacked, three conquests under it with the New Laws and the Valladolid debate,
+and three battles under the conquests they belong to. **Eight of the nine
+arrived with a parent**; the ninth is the umbrella, and `the-cuban-sugar-boom`,
+which was already here and is Spanish Cuba for the whole of its span, was filed
+under it to pay for it. **The main count is unchanged at 243.** The century
+goes from five active events to eleven.
+
+**Five edges, and the component from 529 to 533.** Each quotes the sentence of
+a cited article, at a named revision, that carries it: the first Columbian
+voyage enabled the colonization; the Treaty of Tordesillas is what the
+Caribbean settlement was answered with; the colonization enabled the conquest
+of Mexico, because the article says Cortés was "a well-connected settler in
+Cuba" who "received authorization in 1519 by the governor of Cuba"; and the two
+conquests are what the New Laws of 1542 reacted to, the article naming both in
+one sentence. That third edge is what joined the conquest vein to the rest of
+the atlas — without it the vein was an island of three and the component would
+have grown by one.
+
+**What this fire could not settle, and did not pretend to.** The seventh fire's
+note recommended `Q753624` as the Cortes of Cádiz and the edge this partition
+was missing; `Q753624` is a 1999 film. The Cortes is `Q1135591`, its only class
+is *legislature*, so it enters this atlas as an **actor** and cannot carry an
+edge; the event that would carry it, the Spanish Constitution of 1812
+(`Q1421412`), has **no date at all** on its Wikidata item and the import
+refuses it. The sentences are read and quoted at revision 1375550213 and
+`spanish-american-wars-of-independence` is still a component of one — the
+highest-value unconnected record in the partition, and the next fire's first
+decision rather than its last. One further edge, about indigenous
+depopulation, was written and then deleted: rule 4 refuses it, because the
+umbrella's article begins the colonization in 1493 and this atlas's depopulation
+record begins in 1492. **The edge was deleted rather than the date moved.**
+Deviations **1218 to 1221**, and `docs/m42b-pool.md` → "Batch 8" carries all of
+it with the counts per lane and per century.
+
+**M42b batch 9 — the Spanish American eighteenth century, and the wars of
+independence connected, 23 September.** The ninth fire on the branch, which
+took the two things the eighth fire's note left in the order it left them.
+**First**, `spanish-american-wars-of-independence` carried no edge at all and
+was a component of one: the eighth fire found the sentences and could not use
+them, because the record they run through — the Cortes of Cádiz — is an actor
+and an edge runs between events (deviation 1219), and the record that would
+carry them — the Spanish Constitution of 1812 — has no date on its Wikidata
+item that the import would read (deviation 1220). **Both are settled, and in
+the tool rather than by hand**: `Q1421412` carries `P577`, a publication date,
+1812, and `intervalFor()` now reads a publication date **last**, behind the
+span and behind the point in time, so nothing already answered moves
+(deviation 1222). The route to the component is the **Peninsular War**, which
+the wars' own article names in its first paragraph and which is Europe before
+1900 and so this partition's: the wars were "triggered by Napoleon's invasion
+of the Iberian Peninsula", the constitution "emerged as a response to the
+French occupation", the war is one of the seven conflicts the Napoleonic Wars
+are made of, and those "originated in political forces arising from the French
+Revolution", which was already in the component. **The largest connected
+component goes from 536 to 542** and the wars of independence are in it.
+
+**Second, the Americas' eighteenth century, which was the thinnest cell in this
+partition at three active events and is now seven**: the Rebellion of Túpac
+Amaru II, the Revolt of the Comuneros of New Granada, the Guaraní War and the
+Inconfidência Mineira, with the Spanish Constitution of 1812, the Peninsular
+War and the Napoleonic Wars beside them in Europe. **Seven events and five
+places**, every one draft and flagged, **none of them placeless**. Six of the
+seven were filed on arrival and the seventh is an umbrella, so two events
+already here — the transfer of the Portuguese court and the independence of
+Brazil — were filed under `atlantic-revolutions`, which the wars' article puts
+beside Spanish America's in the same paragraph: **the main count goes from 243
+to 242**. Six edges, each quoting its article at a named revision; two of them
+quote a sentence that hedges itself and quote it whole, and take
+`precondition-of`, the weakest type it supports, rather than `caused`.
+
+**Two fixes in the import that belong to both branches.** `placeRecord()` wrote
+`precision: 'point'` for every place any import has ever made, which A12 (2)
+had corrected in a pass's own script and never in the tool; a place class of
+`data/imports/wikidata-seeds.json` may now carry `precision`, the schema
+declares the four, and three classes carry `region` today (deviation 1223). And
+the import wrote a **second actor for a polity the atlas already held** — the
+Viceroyalty of the Río de la Plata, whose Historical Basemaps record is dated
+1783–1814 from the snapshots and whose item is dated 1776–1810 — because the
+names match and the dates do not; the duplicate was deleted and the item
+written onto the record that was there, and the same was done for
+`kingdom-of-portugal`, closing the `aztec-empire` and `inca-empire` failure for
+two more polities (deviation 1224). **Every record this branch has written now
+carries the cached Wikipedia lead as its summary**, at the revision the cache
+names, batch 8's eleven included.
+
+**`Q2734662`, the Bourbon Reforms, was refused**: its only class is *form of
+government* and it carries no date of any kind, and it is what both risings of
+1780–1781 were against by their own first paragraphs. `docs/m53-polities.md`
+§4.1 is re-taken at **371 of 768**. Deviations **1222 to 1225**, and
+`docs/m42b-pool.md` → "Batch 9" carries all of it with the counts per lane and
+per century.
+
+**M42b batch 10 — North America enters the atlas, and the wall in front of the
+fifteenth century, 23 September.** The tenth fire on the branch took the first
+of the two things the ninth fire's note left, and found that the second cannot
+be taken at all without a decision that is the owner's.
+
+**A10 puts South and Central America ahead of North America only while those
+trail**, and they do not: measured by the latitude of each `americas` event's
+place, the lane holds **138 active events south of 30°N against 17 north of
+it**, and the seventeen are mostly treaties signed on American soil rather than
+North American history. The clause is spent, and the **American Revolutionary
+War** — the record batch 9 called the one that would pay for itself three times
+over — is the first event of North America's own history this atlas holds, with
+the **Declaration of Independence** and the **Treaty of Paris** beside it.
+Three events, two new places (`eastern-united-states`, `independence-hall`,
+each written from the item's own `P625`), **none placeless**, every one
+carrying its cached English lead at a named revision. **All three were filed on
+arrival, so the main count is 242 before the batch and 242 after it.** Four
+edges, all `probable`: two into records the atlas already held — the
+Inconfidência Mineira, which was a component of one until now, and the French
+Revolution — and two putting the batch's own records into the graph. **The
+largest connected component goes from 546 to 550** and the number of components
+falls from 187 to 186.
+
+**Europe's fifteenth century was imported and backed out, and the reason is on
+the first screen.** The Hundred Years' War, the Wars of the Roses, the Granada
+War and the late Middle Ages as their umbrella all imported cleanly; every one
+of them starts before 1492, and `src/intro.js` → `WHAT_IT_IS` — the sentence on
+the masthead, in the intro card and at the head of `about.html` — reads *"The
+history of the world **since 1492** as a graph"*, where **the year is
+`atlas.extent.min` and not a period anybody decided on**. `tests/m82.test.mjs`
+asserts it against the live corpus and `tests/m85.test.mjs` pins the literal in
+`about.html`. Importing any fifteenth-century European event makes that
+sentence false and can only be answered by editing two pages, a module and a
+test, which is the display change this run's brief forbids. **The four records
+were removed and their items taken back out of the seeds and the import cursor,
+so a later fire imports them rather than finding them marked done and absent.**
+
+**The question for the owner is one line: does the atlas begin in 1492, or does
+that sentence follow the corpus wherever it goes?** Either answer unblocks the
+century; neither is a run's to pick. Until it is answered, this branch's Europe
+is the 16th to 19th centuries, which is what M42b's brief calls it in its own
+words. Deviations **1226** (the import prefers a place record the atlas already
+holds over the place the item names first — it put the American Revolutionary
+War in the Caribbean Sea), **1227** (A9 orders the properties, not the values
+inside one — it put the Hundred Years' War in Spain), **1228** (the import
+still creates no place for an event, so both of this batch's were written by
+hand) and **1229** (the first screen is a floor on the corpus).
+`docs/m53-polities.md` §4.1 is re-taken at **372 of 776**, and
+`docs/m42b-pool.md` → "Batch 10" carries all of it with the counts per lane and
+per century.
+
+**M42b batch 11 — the Dutch–Portuguese War, and the Americas' seventeenth
+century, 23 September.** The eleventh fire on the branch took what batch 10's
+note left first: the Americas' seventeenth century, six active events and six
+main, **not one of them filed under anything**. Four records imported from
+Wikidata and Wikipedia — `dutch-portuguese-war` (`Q377269`, 1601–1661),
+`capture-of-bahia` (`Q3704801`, 1624), `recapture-of-bahia` (`Q3286392`, 1625)
+and `voyages-of-christopher-columbus` (`Q18578423`, 1492–1504) — every one
+carrying its cached English lead at a named revision and **none showing the
+import's placeholder**. One class added, `Q2401485` *expedition*, with no
+category because `data/categories.json` has none for one. The corpus goes from
+781 active to **785**; **the main count is 242 before the batch and 242 after
+it**, because two umbrellas arrived main and two events that had been main —
+`dutch-brazil-1630-1654` and `the-first-columbian-voyage-1492` — were filed
+under them. Four edges, all `probable` and all carrying two locators; **the
+largest connected component goes from 553 to 557**, which is exactly the four
+records added, so nothing arrived stranded. Both Bahia engagements point at
+`salvador`, the place record the atlas already held, and no new place was
+written.
+
+**Three records this branch can name, can cite and cannot import**, which is
+deviation 1220's case for the third time. **Colonial Brazil (`Q2088324`) is the
+umbrella this partition most wants** — an article that opens "the period from
+1500 … until 1815", worth four main events, whose only class is `Q133156`
+*colony*, a polity and not an event; *Portuguese colonization of the Americas*
+(`Q2724951`) is the same subject under a class that would pass and carries no
+date at all. The **Atlantic slave trade** (`Q10701282`) is classed
+`Q17524420` *aspect of history*, a metaclass over every "History of …" article
+there is, and no batch should buy one umbrella at that price.
+
+Three deviations: **1230** (the import reads `P276` before `P17` but only ever
+fetches the `P17` countries, so a `P276` location it did not fetch falls
+through to the country — it filed a Brazilian engagement in the European lane),
+**1231** (a refusal is written into `wikidata-state.json` → `done`, so
+fixing the cause of one does not retry it; `Q377269` had to be taken out by
+hand after its lane was named) and **1232** (a merge that brings in records
+has to be committed *before* the index is rebuilt, because the history shards
+are built out of the commits that touched each file — this fire's merge commit
+went red on seven rule 16 errors for exactly that, with all 279 browser tests
+passing in the same run; the batch's own commits were in the right order and
+the branch head is byte-identical to a fresh build). `docs/m53-polities.md` §4.1 is re-taken at
+**372 of 781** over the merged corpus, and `docs/m42b-pool.md` → "Batch 11"
+carries all of it with the counts per lane and per century.
+
+**M42b batch 12 — the Italian Wars' missing phases, and Europe's sixteenth
+century, 23 September.** The twelfth fire on the branch took the thinnest cell
+this partition could act on — **Europe's sixteenth century, eight active events
+and one main** — and filled it without touching the main count. The cell
+already had its umbrella, `italian-wars` (1494–1559) with five phases under it,
+so the fire imported the phases and engagements that umbrella was missing
+rather than a new umbrella: **`italian-war-of-1494-1495`** (`Q1355145`),
+**`battle-of-marignano`** (`Q330`, 1515), **`battle-of-pavia`** (`Q63468`,
+1525), **`war-of-the-league-of-cognac`** (`Q1429256`, 1526–1530) and
+**`italian-war-of-1542-1546`** (`Q15542964`). **Five items, five created, none
+refused, and every one of them filed on arrival** — three under `italian-wars`
+and two under the phase its own lead names — so the main count stayed at
+**242** and nothing had to be paid for it. Active 790 → **795**, filed 548 →
+553, active edges 771 → **774**, events with no edge 159 → **158**. Europe's
+sixteenth century is 8 → **12 active, still 1 main**; the europe lane is 359 →
+364 active at 88 main, and the americas lane is unmoved at 180 and 56. Every
+record carries the cached English lead as its summary at a named revision with
+the `summary-from-lead` flag and the `wikipedia-en` citation; **no record of
+this batch shows the import's placeholder**, and no class was added.
+
+**Three edges, all `probable`, each with two locators**: `battle-of-pavia`
+→ `war-of-the-league-of-cognac` (`reacted-to`, the Cognac article's own
+"Shocked by the defeat of the Kingdom of France … began to organize an
+alliance"), `italian-war-of-1494-1495` → `italian-wars-of-1499-1504`
+(`precondition-of`) and `italian-war-of-1542-1546` →
+`italian-war-of-1551-1559` (`precondition-of`). **The largest connected
+component did not move, and A5 asks a batch that grows the corpus and not the
+component to say why**: the whole Italian Wars tree — twelve active events
+after this batch — is components of one and two, because `parent` is a display
+fact and never adjacency, and joining it to the 560 needs an edge no article
+this fire read states. The *Italian Wars* article reaches the Americas exactly
+once, in a paragraph about where the veterans went, and **an edge written on
+that would be a record kept by writing something**, which M42's brief refuses;
+the fire refused it and named the door it did find, the Peace of
+Cateau-Cambrésis of 1559, which the corpus does not hold.
+
+**Two refusals worth naming.** `Q673175`, the **French Wars of Religion**
+(1562–1598, class `Q104212151` *series of wars*), is importable today and was
+left out because nothing in the corpus falls inside its span and subject: it
+would arrive main with nothing to file under it. `Q377350`, the **Iberian
+Union**, carries the dates the import reads (`P571` 1580-09-12, `P576`
+1640-12-01) but is classed as an actor and an event at once, which is the
+Colonial Brazil question of batch 11 met a second time and an editorial
+decision the run will not take.
+
+One deviation, **1233**: deviation 1232 — a merge that brings in records must
+be committed *before* the index that describes it is rebuilt — is a rule about
+the order of a fire's first two commits, and this fire broke it merging
+`origin/m42` (its batches 39 to 42) before reading it. The fire caught it
+itself, rebuilt over the merge commit and pushed the difference: five history
+shards and the manifest. Deviation **1230** is still open and cost this batch
+the places of both its battles, repaired by hand from each town item's own
+`P625` — `pavia` (`Q6259`) and `melegnano` (`Q42932`), both written as `city`.
+A second, **1234**: `git add -A data/index` is not the
+index, because the build has written `sources.html` and `narratives.html` since
+H8 and the batch's edges moved the bibliography's citation counts; the page was
+left in the working tree and `validate --index` did not catch it, its page half
+being `main` only. `docs/m53-polities.md` §4.1 is re-taken at **373 of 795** over the merged
+corpus, 374 by the overlap rule, and `docs/m42b-pool.md` → "Batch 12" carries
+all of it with the counts per lane and per century.
+
+**M42b — the thirteenth fire imported nothing, and paid off two tool faults
+instead, 23 September.** **Wikimedia refused every request this fire made**:
+twenty probes a minute apart, all 429, and not only on the endpoint the tool
+uses — `api.php`, `Special:EntityData`, the REST summary endpoint,
+`api.wikimedia.org` and the Wikibase REST API alike, with the body *"You are
+making too many requests to the API."* Deviation 1235 says to read a clock
+rather than feel one, so the fire read one and reported what it measured. The
+agent proxy showed no relay failures, so this is Wikimedia refusing the
+sandbox's shared egress and not a fault here. **No batch, and nothing claimed
+that was not done.**
+
+What the fire did instead is the two deviations that both briefs say belong to
+"one fire that imports nothing", each with its test first (711, 717).
+**1230**: A9 reads the location first, then the administrative territory, then
+the country, but `runImportMode` only ever fetched the last two, so `pointOf()`
+could not answer for the town an event names by `P276` and the first point with
+an answer was the country's — which put a Brazilian engagement in the European
+lane in batch 11 and left both of batch 12's battles placeless. All three
+properties are collected now, and the extra items are fetched in chunks rather
+than in one call sliced at the batch size, which was the same gap one step
+further out. `Q9000016` is a new fixture reproducing it: a town at (5,5), the
+state it is in at (-140,-60), the town outside the batch. **1231**: a refusal
+was written into `wikidata-state.json` → `done` beside the completions, so
+adding the class or the lane that would have answered it changed nothing;
+each run now carries a `refused` list of its own and the next run offers those
+first, with an item Wikidata does not have settled rather than asked about
+forever. The fix is forward-only — refusals already buried in `done` cannot be
+told from completions.
+
+The merge of `origin/m42`'s batch 43 took the corpus to **800 active**, main
+unchanged at **242**, 558 filed, 779 active edges, largest component **565**,
+158 events with no edge; the americas lane is 180 active at 56 main and Europe
+before 1900 is 73 at 17, both unmoved, since batch 43 was Asia's.
+`docs/m53-polities.md` §4.1 is re-taken at **376 of 800**, 377 by the overlap
+rule. A filing pass was measured and honestly refused: 43 of this partition's
+73 main events fall inside some umbrella's span and lane and every one fails
+M62's subject test or M67's rule 1, so nothing was filed. Two deviations,
+**1236** (1232 broken a third time, because STEP 1 merges before STEP 2 reads
+the deviations — caught and repaired inside the fire) and **1237** (a fire that
+cannot reach the network should find out in its first minutes and spend itself
+on the backlog).
+
+**The check went red twice on this head and is green.** Run 1548 on
+`f7a79472` and its re-run both failed on `keyboard-browser.test.mjs` 81 with
+the same two values — `End` reaching `fixture-event-deep-1969` where the order
+read a frame earlier said `fixture-event-deep-2025`. The test draws
+`?fixtures=1` and reads no record under `data/`, and it passed here alone three
+times and in two full browser passes run as the check runs them. The cause is
+the race its own comment names and `docs/m78-flakes.md` §3 measured — a title
+arrives with its century, a shard landing repacks the rows — and **the fix
+already existed and had not been ported here**: M78's `named()`, which
+`graph-labels-browser` and `m77-browser` already use and which is true only
+when no bar is still loading. No assertion changed, nothing was skipped.
+Deviation **1238** is that a fix applied only where it was already hurting is
+half a fix. Run 1552 on `724baac6` is **success**.
+`docs/m42b-pool.md` → "The thirteenth fire" carries all of it
+with the counts per lane and per century.
+
+**M42b batch 13 — the War of Jenkins' Ear, and the Americas' eighteenth
+century, 23 September.** The fourteenth fire on the branch took the vein the
+thirteenth left mapped and unclaimed: **the Americas' eighteenth century, nine
+active events and one main**, the thinnest cell in this partition. The network
+was intermittent rather than closed — `Special:EntityData` and the SPARQL
+endpoint answered 200 while `api.php` and the REST summaries answered 429 and
+then 200 on a retry — so the import's own backoff carried every call, and
+deviation 1237's probe cost one minute and told the fire which kind of fire it
+was. **Five items, five created, none refused**: **`war-of-jenkins-ear`**
+(`Q54434`, 1739–1748), **`battle-of-cartagena-de-indias`** (`Q2366970`, 1741),
+**`treaty-of-madrid-13-january-1750`** (`Q1422396`),
+**`first-treaty-of-san-ildefonso`** (`Q580765`, 1777) and
+**`war-of-the-austrian-succession`** (`Q32929`, 1740–1748). The fifth is not in
+the thirteenth fire's map: it is what `P361` on the War of Jenkins' Ear said
+when the fire read the item, and it leaves the branch a European 18th-century
+umbrella it did not have. Three were filed on arrival and two stayed main, so
+**two payments** held the count: `the-end-of-the-amazon-rubber-monopoly` →
+`the-amazon-rubber-boom` (both cite *Amazon rubber cycle* at revision
+1373636077 and the boom's own span ends in the year the event is named for) and
+`cuban-war-of-independence-1895-1898` → `spanish-colonization-of-the-americas`
+(the filing `the-cuban-sugar-boom` already has). The main count is **242**
+before and after. Active 806 → **811**, filed 564 → 569, active edges 783 →
+**787**, events with no edge 160 → 159, components 193 → 194. The Americas'
+eighteenth century is 9 → **11 active, 1 → 2 main**; Europe's is 21 → 24 active
+at 2 → 3 main; the americas lane is 180 → 182 active at **55** main and the
+europe lane 364 → 367 at 89. Every record carries the cached English lead as
+its summary at a named revision with the `summary-from-lead` flag and the
+`wikipedia-en` citation; **no record of this batch shows the import's
+placeholder**, and no class was added. Three places were written by hand from
+the item each event's `P276` names — `cartagena-de-indias` and `madrid` as
+`city`, the `royal-palace-of-la-granja-de-san-ildefonso` as `point`, the
+precision off the class as A12 (2) asks — and `war-of-jenkins-ear` stays
+placeless, because its item names six locations and no coordinate.
+
+**One filing was written and the corpus refused it, which is deviation 1239.**
+`P361` on `Q54434` and the article's infobox `part_of` both say the War of
+Jenkins' Ear is part of the War of the Austrian Succession, but it runs
+1739–1748 against the wider war's 1740–1748, so the child begins a year before
+its parent. `child-outside-parent` is a **warning** in the validator and the
+fire treated it as one to accept and explain; `tests/m62.test.mjs` and
+`tests/m67.test.mjs` hold the corpus at **zero** of them and four assertions
+failed. The filing came off, `war-of-jenkins-ear` is main, and what `P361`
+asserts is carried by the **edge** instead — which is where an argument belongs,
+because `parent` is a display fact. The same `P361` sweep over all 41 main
+events of this partition that carry a Wikidata id found two more pointing at a
+record this atlas holds, `berlin-conference` → `scramble-for-africa` and
+`cretan-revolt-of-1897-1898` → `greco-turkish-war-of-1897`, and **both are
+refused by the same dates**. **Three edges, all `probable`, each with two
+locators**: `treaty-of-madrid-13-january-1750` → `guarani-war` (`caused`, both
+articles say it from their own ends), the same treaty →
+`first-treaty-of-san-ildefonso` (`precondition-of`, "the terms … were
+re-established in the First Treaty of San Ildefonso in 1777") and
+`war-of-jenkins-ear` → `war-of-the-austrian-succession` (`enabled`). A fourth
+was drafted and **refused by rule 4** — the arrow of time: the Cartagena battle
+of 1741 cannot start after a war dated from December 1740 — and the argument
+moved one record up the tree to where the dates allow it, which is deviation
+**1240**: check the two `when.start`s before writing the explanation, not after.
+**The largest connected component did not move**, and A5 asks why: the two
+treaty edges run to `guarani-war`, which had no edge at all and is now a
+component of three, and the Jenkins vein is a second component of three — the
+two articles between them link to exactly one record this atlas holds, and that
+is an umbrella and a parent question, not an edge. `docs/m53-polities.md` §4.1
+is re-taken at **377 of 806** over the merged corpus and at **378 of 811** after
+the batch.
+
+**The check went red on the merge commit and it is deviation 1232 a fourth
+time.** Run **1557** on `bf0d6cb8` failed on **eleven rule 16 errors and
+nothing else** — five history shards missing, five stale, the manifest
+differing — with all 279 browser tests passing in the same run: the merge
+brought in records and its rebuilt index went into the same commit, and the
+history shards are built out of the commits that touched each file. 1233 said
+the cure is three commits; 1236 said the deviations have to be read before
+STEP 1's merge. **A fire cannot obey 1236 from inside a prompt that puts the
+merge in STEP 1 and the reading in STEP 2**, which is deviation **1241**, so
+the rule that does work without a prompt change is written in the pool file's
+stand: rebuild and commit the index as its own commit immediately after the
+merge commit. The batch's own two commits are in that order and **run 1562
+on `ef86ee8a` is success**; run 1561 was cancelled by that push, not red.
+Locally: `validate --index` 0 errors and 493 warnings, **1794 pure tests and
+279 browser tests, 0 failed and 0 skipped**, with no browser flake on this
+fire. `docs/m42b-pool.md` → "Batch 13" carries all of it with
+the counts per lane and per century.
+
+**M42b batch 15 — the Spanish conquest of the Aztec Empire, and the Americas'
+sixteenth century, 23 September.** The sixteenth fire on the branch took the
+cell the fifteenth named as the thinnest in this partition — **the Americas'
+sixteenth century, eleven active events and five main** — and the vein batch 8
+opened there. One SPARQL query found it: every item whose `P361` is one of the
+three conquest umbrellas the atlas already holds, with an English article.
+**Sixteen came back, two of them records already here; five were imported and
+none refused**: **`massacre-in-the-great-temple-of-tenochtitlan`**
+(`Q1131442`, 22 May 1520), **`battle-of-cempoala`** (`Q97610233`, 27 May),
+**`la-noche-triste`** (`Q1308854`, 30 June – 1 July),
+**`battle-of-otumba`** (`Q2888038`, 7 July) and
+**`battle-of-colhuacatonco`** (`Q112811996`, 30 June 1521). **All five filed
+under an umbrella already here** — four under
+`spanish-conquest-of-the-aztec-empire`, and Colhuacatonco under
+`fall-of-tenochtitlan`, the siege it was fought inside, which is the narrower of
+the two it falls in and the only one deviation 1244 allows — **so the main count
+stayed at 242**. Every one carries the cached English lead as its summary at a
+named revision. **Two place records were written by hand**, `cempoala` and
+`otompan`, from the items their `P276` names; three events point at
+`tenochtitlan`, one of them because the item's own `P625` puts La Noche Triste
+in Sonora, 1,400 km from the Valley of Mexico (deviation 1247). **Six edges, all
+`probable`, each quoting two articles at named revisions**, and the first of
+them reaches back into `spanish-conquest-of-the-aztec-empire`, which was already
+in the largest component: **585 → 591**, with `fall-of-tenochtitlan` carried in
+from a component of one. The corpus is **834 active**, the `americas` lane 192,
+the cell 16 with its five mains untouched. `docs/m53-polities.md` §4.1 re-taken
+at **378 of 834**. **Deviation 1246** is what this fire paid for: taking
+`origin/m42`'s whole `tools/import/wikidata.mjs` at the merge kept its A12 (2)
+correction and dropped this branch's own `maxlag` fallback, and the import died
+twice on a lag before anyone noticed; the fix and its test were re-applied.
+`docs/m42b-pool.md` → "Batch 15" is the full account.
+
+**M42b batch 16 — the Rebellion of Túpac Amaru II, and the Americas'
+eighteenth century, 24 September.** The seventeenth fire on this branch took
+the cell the sixteenth left thinnest in this partition — the Americas' 18th, 11
+active and 2 main — and opened a vein the atlas had never touched, the
+engagements of a rising it has held as one record since M53. One SPARQL query
+for every item whose `P361` is one of four umbrellas already here returned
+**twenty-three**; seven are the Túpac Amaru rising and **six were created, one
+refused**, in twenty-five calls. `battle-of-sangarara`, `battle-of-pillpinto`,
+`capture-of-ayaviri`, `battle-of-saylla`, `siege-of-cusco-1781` and
+`battle-of-pucacasa`, all filed under `rebellion-of-tupac-amaru-ii` and all
+inside its 1780–1783, so **the main count does not move: 242 before and 242
+after**. Five place records written by hand from each item's own `P276` under
+A9 — `sangarara` and `ayaviri` as `city`, `pillpinto-district`,
+`saylla-district` and `quispicanchi-province` as `region`, because a district
+and a province are areas and not points — and the sixth took `cusco`, which is
+the same item its `P276` gives. All six carry the **cached English lead as
+their summary** at a named revision, with the `wikipedia-en` citation and the
+`summary-from-lead` flag; none shows the import's placeholder. **Six edges**,
+each `probable` and each from what the article states in so many words, one of
+them running from a record the atlas already held into the batch, which is how
+all six reached the largest component: **598 → 604**, with no new component and
+the isolated count unmoved at 159. One new source record,
+`walker-2014-the-tupac-amaru-rebellion`, the work the English article itself
+cites — cited and not read. The corpus is **847 active**, the `americas` lane
+198, the cell 17 with its two mains untouched. `docs/m53-polities.md` §4.1
+re-taken at **379 of 847** — the numerator moved at the merge of `origin/m42`'s
+batch 47 and not by anything this lane wrote. **`Q9172888`, the Battle of
+Combapata, was refused** and is named for the next fire: it carries no `P625`,
+no `P17` and a `P276` the atlas has no place for, so the import would not write
+a placeless event with no region, and the refusal is correct. **Deviation 1247**
+is what this fire found: a hand-written `curl` at `en.wikipedia.org`'s `api.php`
+is refused whatever user-agent it carries, and `Special:Export` answers at once
+with the revision id and the wikitext whole — which is where M72's second author
+comes from, since the `<ref>` tags name the works the article cites. **Three
+edges were written and deleted**: a part may not point at its own umbrella where
+the umbrella is dated first, which rule 4 refused three times.
+**Deviation 1248** is the one this fire repeated and the check caught: the merge
+of `origin/m42`'s batch 47 was built and committed as one commit instead of
+three, so run **1601** on `e84f5d1e` went red with **seven rule 16 errors** on
+the history shards — the fourth fire running to break deviation 1232, for the
+reason 1236 named and nothing has yet fixed, which is that STEP 1 merges before
+STEP 2 reads the file where the rule lives. The batch's own three commits keep
+798's order and the rebuild in `bdcd0f84` rewrote all seven shards, so the head
+is clean; one red commit is left in the branch's history.
+`docs/m42b-pool.md` → "Batch 16" is the full account.
+
+**M42b batch 17 — the War of the League of Cambrai, and Europe's sixteenth
+century, 24 September.** The eighteenth fire on this branch took the thinnest
+whole century left in this partition — Europe's 16th, 12 active and 1 main — and
+opened the vein four fires had named and none had touched: **the Italian Wars
+tree, twelve active events joined to almost nothing**. One SPARQL query for every
+item whose `P361` is the Italian Wars or one of the eight phase records here
+returned **seventy-four rows, about sixty-eight items**, nine of them records
+already. **Seven were created, none refused and none ambiguous**, in thirty
+calls: `battle-of-agnadello`, `siege-of-padua`, `battle-of-polesella`,
+`battle-of-ravenna-1512`, `battle-of-novara-1513`, `battle-of-la-motta-1513` and
+`siege-of-asola-1516`, all filed under `war-of-the-league-of-cambrai` and all
+inside its 1508–1516, so **the main count does not move: 242 before and 242
+after**. **Seven place records written by hand** from each item's own `P276`,
+every one at `city` precision because every one is a comune or a town, and the
+atlas had held no northern Italian place between Melegnano and Rome.
+`costabissara` is the one the run had to decide: the La Motta article's lead says
+Schio, its own narrative says "the plains of Vicenza near Motta de Costabissara",
+and the item's `P276` says Costabissara — the record takes the item's locality
+and its `review.note` states the disagreement. All seven carry the **cached
+English lead as their summary** at a named revision with the `summary-from-lead`
+flag; none shows the import's placeholder. **Seven edges**, each `probable` and
+each quoting the sentence that carries it, one of them running into
+`battle-of-marignano`, which had been here since batch 12 with no link of any
+kind. **Four of the seven carry a second author, cited and not read** — two new
+source records, `mallett-shaw-2014-the-italian-wars` and
+`norwich-1982-a-history-of-venice`, each with the page the article's own footnote
+gives — and rule 9's count moves **183 → 187**. **The largest component did not
+move, 604 to 604, and the batch says why**: the seven and Marignano are one
+component of eight, the isolated count falls 159 → 158, and the Italian Wars
+tree reaches the rest of this atlas only through the French Wars of Religion or
+the Reformation, both of which are main events this batch may not write. **One
+edge was drafted and dropped**: `battle-of-marignano` →
+`italian-war-of-1521-1526` would have joined eleven, and the 1521 article gives
+the Imperial election and Leo X's need of Charles as the war's causes and never
+mentions Marignano — an edge the article does not state is not the run's to
+write, whatever it would do to the number. The corpus is **854 active**, Europe
+before 1900 is 83, the cell is 19 with its one main untouched, and the `americas`
+lane is untouched at 198. `docs/m53-polities.md` §4.1 re-taken at **379 of 854**:
+the numerator did not move, and **not for want of a `P710`** — every one of the
+seven items names two to four participants and the atlas holds an actor for none
+of the nine polities between them (Venice, France, the Empire, the Papal States,
+Ferrara, Milan, the Swiss Confederacy and the Spanish monarchy under two items),
+which is the largest cheap thing left in this partition. **Deviation 1251**: the
+records and §4.1 belong in one commit, and this fire learned it from
+`tests/m53.test.mjs` failing at "854 !== 847" after the records were already
+pushed, so `b0605a58` is red on that one test and `ddb3aa13` is not — run 1611
+was cancelled by the concurrency group before it could say so, which is luck and
+not a process. **Deviation 1250**: a source record's `reference` is capped at 300
+characters and rule 1 reports the overflow as "expected exactly one of 2
+alternatives to match", which names the keyword and not the length.
+**Deviation 1249**: the claim rule's ninety-minute clause names `origin/m0`,
+which a lane run never pushes, so on a branch the sixty-minute clause decides
+alone — which is how every claim in this file has been taken, and it is written
+down so the next fire does not re-derive it.
+`docs/m42b-pool.md` → "Batch 17" is the full account.
+
+**M42b batch 18 — the Brazilian half of the Dutch–Portuguese War, and the
+Americas' seventeenth century, 24 September.** The eighteenth fire's second batch
+took the cell batch 17 left thinnest — the Americas' 17th, 14 active and 6 main.
+One SPARQL query over the war (`Q377269`) and the Dutch invasions of Brazil
+(`Q19019163`) returned **forty-four distinct items**, most of them Malacca,
+Mozambique, Hormuz, Goa, Elmina, Luanda, Macau and Colombo and therefore **M42's
+and skipped**. **Four were created, none refused and none ambiguous**, in
+twenty-three calls: `battle-in-the-bay-of-sao-salvador`, `battle-of-abrolhos`,
+`siege-of-salvador-1638` and `action-of-12-17-january-1640`, filed under
+`dutch-portuguese-war` and `dutch-brazil-1630-1654`, so **the main count does not
+move: 242 before and 242 after**. **Three place records written by hand** and one
+reused: `bay-of-all-saints`, `abrolhos-archipelago` and `ilha-de-itamaraca`, all
+three at `region` precision because what the items name are a bay, an archipelago
+and an island and not points on the ground, and the siege took the `salvador`
+record the atlas already held. **Two intervals written from the cited article
+under A7**: the Bay of São Salvador action gets its day, 3 March 1627, which the
+item does not carry; and the siege of Salvador is widened from the item's 1 May to
+the article's "between April and May 1638", the end left at the item's own 18 May.
+**Three edges**, each `probable` and each quoting the sentence that carries it,
+all three running into or out of `dutch-brazil-1630-1654`, which is inside the
+largest component — so **the component grows, 604 → 607**, which is the number A5
+asks for. **Two of the three carry a second author, cited and not read**: one more
+source record, `marley-2008-wars-of-the-americas`, the work the siege article cites
+for the siege whole and the 1640 article cites for the 1635 landing, taking source
+records to **70** and rule 9's count to **189**. The corpus is **858 active**, the `americas` lane 202, the cell 18 with
+its six mains untouched, and South and Central America against North America is
+162 to 19. `docs/m53-polities.md` §4.1 re-taken at **379 of 858 in the same
+commit as the records**, which is deviation 1251's lesson applied the first time it
+could be. **Two things were refused and both are the run's own reading and not the
+tool's.** `Q10369402`, "Second Battle of Salvador", has an English sitelink to a
+**redirect**: `Special:Export` of it returns a body of one character, so there is
+no lead to quote, and its `P585` collides with `Q932845`, whose article is the
+April–May 1638 siege — importing both would have written one siege twice
+(**deviation 1252**). And `battle-in-the-bay-of-sao-salvador` was left with **no
+edge at all**, because its article is a three-sentence stub with no background and
+no aftermath: an edge whose only support is that both records are parts of the
+same war says what `parent` already says, so the isolated count going 158 → 159 is
+the honest number. **A correction the batch owes the record**: the fifteenth,
+sixteenth and seventeenth fires each wrote that `Q4677306` and `Q4677341` are the
+1654 actions ending the war *in Brazil*. Both have `P276` `Q35381`, **Colombo** —
+they are the sea fights off Ceylon, they are **M42's**, and this branch should not
+import them. Nothing was imported on the strength of the error.
+`docs/m42b-pool.md` → "Batch 18" is the full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -21247,14 +21819,25 @@ M42b started 2026-09-23T01:12:42Z by scheduled
 M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done
 M42 started 2026-09-23T02:06:09Z by scheduled
+M42b started 2026-09-23T03:47:07Z by scheduled
 M42 started 2026-09-23T04:11:26Z by scheduled
+M42b started 2026-09-23T05:53:13Z by scheduled
+M42b started 2026-09-23T07:59:07Z by scheduled
 M42 started 2026-09-23T06:41:50Z by scheduled
 M42 started 2026-09-23T08:38:24Z by scheduled
+M42b started 2026-09-23T10:02:11Z by scheduled
+M42b started 2026-09-23T12:16:20Z by scheduled
 M42 started 2026-09-23T10:40:12Z by scheduled
+M42b started 2026-09-23T14:55:21Z by scheduled
 M42 started 2026-09-23T12:52:31Z by scheduled
 M42 started 2026-09-23T15:18:10Z by scheduled
+M42b started 2026-09-23T17:51:24Z by scheduled
+M42b started 2026-09-23T20:24:15Z by scheduled
 M42 started 2026-09-23T17:51:33Z by scheduled
 M42 started 2026-09-23T20:07:29Z by scheduled
+M42b started 2026-09-23T22:47:10Z by scheduled
 M42 started 2026-09-23T22:33:06Z by scheduled
+M42b started 2026-09-24T01:00:37Z by scheduled
 M42 started 2026-09-24T02:06:57Z by scheduled
+M42b started 2026-09-24T02:37:38Z by scheduled
 M42 started 2026-09-24T04:58:45Z by scheduled

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "costabissara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q46389",
+  "wikipedia": {
+    "en": "Costabissara"
+  },
+  "sources": [],
+  "names": [
+    "Costabissara"
+  ],
+  "where": {
+    "lon": 11.483333333,
+    "lat": 45.583333333,
+    "precision": "city",
+    "label": "Costabissara"
+  },
+  "region": null,
+  "summary": null
+}

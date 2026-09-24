@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--independence-of-brazil-1822--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish American wars of independence\", revision 1375550213, \"Background\""
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "independence-of-brazil-1822",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The wars' article draws the Brazilian case beside the Spanish American one and gives both the same trigger: **\"Brazil's independence in particular shared a common starting point with that of Spanish America, since both conflicts were triggered by Napoleon's invasion of the Iberian Peninsula, which forced the Portuguese royal family to flee to Brazil in 1807.\"** The invasion the sentence names is the war this atlas holds as `peninsular-war`, and \"triggered\" is the word the article chose. The flight it names is a record of this atlas too — `transfer-of-the-portuguese-court-to-brazil-1807` — and no edge is written to it, because that record starts in 1807 and the war record starts in 1808: rule 4 refuses the arrow, and the year is the invasion of Portugal, which the war record does not cover. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

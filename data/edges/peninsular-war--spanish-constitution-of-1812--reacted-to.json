@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--spanish-constitution-of-1812--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish Constitution of 1812\", revision 1370968394, \"Background\""
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "spanish-constitution-of-1812",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The constitution's own article says it **\"emerged as a response to the French occupation in a context of rivalry with the [[Bayonne Statute]] imposed by Napoleon\"**, and that until the Napoleonic invasion of Spain in 1808 Ferdinand VII \"ruled as an absolute monarch\". The occupation the sentence names is the war this atlas holds as `peninsular-war`, which is the fighting against it; the identification is the only step this edge takes beyond the article. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}
