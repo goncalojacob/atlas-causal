@@ -1345,6 +1345,8 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
    same fill the two pictures give it. */
 .view-key .mark.lens-near { stroke: var(--terr-5-line); }
 .view-key .bar.lens-near { fill: var(--terr-5-tint); stroke: var(--terr-5-line); }
+/* And the ends of an open link, in the ink the timeline gives them. */
+.view-key .bar.chosen { stroke: var(--madder); stroke-width: 2; }
 
 /* The picture as a file. Bottom right in both views, opposite the graph's
    key, and quiet: it is a way out, not a thing to do. */
@@ -1483,6 +1485,12 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .timeline .bar.lens-near { fill: var(--terr-5-tint); stroke: var(--terr-5-line); }
 .timeline .bar.instant.lens-near { fill: var(--terr-5); }
 .timeline .bar.lens-near:hover { fill: var(--terr-5); }
+/* The two ends of the link the reader has opened (M87 §8). The map strokes
+   that link's line madder and these are the same link said on another picture,
+   so they are stroked with the same token and the same width. Before the walked
+   path below, which fills as well as strokes: an end that is also a step of the
+   chain reads as the chain. */
+.timeline .bar.chosen { stroke: var(--madder); stroke-width: 2; }
 .timeline .bar.on-path { fill: var(--madder-faint); stroke: var(--madder); }
 .timeline .bar.selected { fill: var(--madder); stroke: var(--madder); }
 /* And at the left end of a bar, in the same rule against the bar's own fill:

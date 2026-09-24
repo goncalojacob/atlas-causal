@@ -467,6 +467,14 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     item.depth === null ? '' : `in-horizon ${horizonBand(item.depth)}`,
     item.ofNarrative ? 'of-narrative' : '',
     item.ofActor ? 'of-actor' : '',
+    // The two ends of the link the reader has opened (M87 §8, B11). The map
+    // draws that link as a madder line between its two marks (M83, B7) and both
+    // ends are kept by the lens, but this view had no notion of `edge` at all —
+    // so the same two events were bars like any other and a reader who opened a
+    // link from the graph and came here could not see which two it was about.
+    // The word is `working.chosen`'s, from the one place that decides it
+    // (emphasis.js), so the two pictures cannot disagree about which link is open.
+    item.chosen ? 'chosen' : '',
     item.onPath ? 'on-path' : '',
     item.selected ? 'selected' : '',
   ].filter(Boolean).join(' ');
@@ -477,10 +485,19 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   const labelRoom = (name) => BAR_LABEL_GAP
     + (name === null ? BAR_LABEL_UNKNOWN : name.length) * BAR_LABEL_SIZE * BAR_LABEL_EM;
 
-  // **Every bar carries its title** (M77). No `+N`, no unlabelled mark: the
-  // owner asked for the titles and for nothing to be packed away behind a
-  // count, and the rows are as many as that takes.
-  const barLabel = (into, item, { classes, y: top, height: tall, name }) => {
+  // Whether a title may be written where it wants to go. It is `() => true`
+  // wherever the rows are as many as the titles need, which is the picture at
+  // every window a reader is likely to be looking at: the packing reserved the
+  // room, so nothing can be in the way. Past the pane's cap (M87 §2) it is the
+  // one in `draw` below, which keeps what each row has already given away and
+  // refuses a name that would be written over one — the same answer
+  // `placeLabels` gives on the map and on the graph, and the same one twice.
+  let labelFits = () => true;
+
+  // **Every bar carries its title** (M77), and past the cap every bar that has
+  // room for one. No `+N` and nothing packed away behind a count: a bar with no
+  // room for its name still has the name under the pointer.
+  const barLabel = (into, item, { classes, y: top, height: tall, name, row = 0 }) => {
     if (name === null) return;
     // To the right of the bar, which is where the packing reserved the room —
     // and to its left where that room is not there to be had (M86 §4). The
@@ -489,6 +506,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // cut by it. A name written on the other side of its own bar is still
     // beside the thing it names, which a name half off the page is not.
     const at = labelPlacement(item.x, item.width, labelRoom(name), width);
+    if (!labelFits(row, at, labelRoom(name), item.id)) return;
     into.take('text', {
       x: at.x, y: top + tall / 2,
       class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),
@@ -497,7 +515,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     }, { text: name });
   };
 
-  function laneBars(bars, rings, labels, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear) {
+  function laneBars(bars, rings, labels, glyphs, lane, i, events, s, window, actorIds, narrativeIds, pathIds, reachable, lensNear, chosenIds) {
     const y = barTop(i);
     const height_ = barHeight();
     // barBox is lanes.js's, and it is the geometry the packing itself used:
@@ -517,6 +535,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       const depth = reachable.get(event.id) ?? null;
       const item = {
         id: event.id, event, onPath, selected, ofActor, ofNarrative, inside, depth,
+        chosen: chosenIds ? chosenIds.has(event.id) : false,
         // A direct neighbour of the lens's focus set, drawn faintly (lens.js).
         lensNear: lensNear ? lensNear.has(event.id) : false,
         ...box,
@@ -547,7 +566,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       // And the symbol of its category at the left end of the bar, vertically
       // centred.
       glyph(glyphs, item, { classes, y, height: height_ });
-      barLabel(labels, item, { classes, y, height: height_, name });
+      barLabel(labels, item, { classes, y, height: height_, name, row: i });
       return el;
     };
 
@@ -681,24 +700,37 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // the room, so a reader following a chain finds its steps near each
     // other instead of scattered down the rows.
     //
-    // **As many rows as it takes, and no ceiling** (M77). There was one — the
-    // number the pane could hold at a 14 px floor — and past it the bars
-    // shared a row and stacking drew the overlap as one bar with a count.
-    // Every bar carries its title now, and a title is not something the
-    // timeline may pack away to keep its drawing inside the pane: what does
-    // not fit the pane is what the pane scrolls to.
+    // **As many rows as the titles need, up to what the pane holds** (M77, and
+    // M87 §2). M77 took the ceiling away — every bar carries its title, and a
+    // title is not something the timeline may pack away behind a count — and
+    // left none at all, so at the whole span the resting picture was 112 rows at
+    // 1280 px: a 2,500-pixel page in a 700-pixel pane, repacked whole on every
+    // move of the band, and linear in the corpus (review B5). At three thousand
+    // events it is nine thousand pixels.
     //
-    // And what the packing reserves is the bar **and its title**: two bars a
+    // So the packing is tried M77's way first, and only where that does not fit
+    // the pane is it packed again into the rows there are. The second pack
+    // reserves no room for the titles: room reserved for a title that will not
+    // be written is room a neighbouring bar could have had, and past the cap a
+    // title is written only where it fits (`fitsLabel` below), exactly as the
+    // graph writes only the names that fit. Nothing is hidden either way — the
+    // bar is there, with its own title under the pointer, which is the answer
+    // both other pictures give for a mark they could not name.
+    //
+    // What the first packing reserves is the bar **and its title**: two bars a
     // hair apart whose titles run over each other are two titles nobody can
-    // read, which is the fault this section exists to fix and not a smaller
-    // version of it.
-    lanes = rowLanes(near, scale, width, {
+    // read, which is the fault M77 exists to fix and not a smaller version of
+    // it.
+    const packing = {
       openEnd: domain[1],
       gap: ROW_GAP,
-      // The room a title needs, on the side it is going to be written
-      // (M86 §4). `labelPlacement` decides that, and it is asked here with
-      // the same geometry the packing itself uses, so a row packed for a
-      // title on the left is the row that title is drawn in.
+      affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
+    };
+    // The room a title needs, on the side it is going to be written
+    // (M86 §4). `labelPlacement` decides that, and it is asked here with
+    // the same geometry the packing itself uses, so a row packed for a
+    // title on the left is the row that title is drawn in.
+    const titleRoom = {
       extra: (event) => {
         const name = labelOf(atlas, event);
         const box = barBox(event, scale, { openEnd: domain[1] });
@@ -711,8 +743,15 @@ export function createTimeline(container, { atlas, state, createScale = createTi
         return labelPlacement(box.x, box.width, labelRoom(name), width).anchor === 'end'
           ? labelRoom(name) : 0;
       },
-      affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
-    });
+    };
+    lanes = rowLanes(near, scale, width, { ...packing, ...titleRoom });
+    // What the pane holds, at the floor a row may not go below. A pane that has
+    // measured nothing — a first render before the panes are sized — has no cap
+    // at all, which is the picture M77 drew.
+    const maxRows = paneHeight > AXIS_HEIGHT
+      ? Math.max(1, Math.floor((paneHeight - AXIS_HEIGHT) / ROW_HEIGHT)) : Infinity;
+    const capped = lanes.length > maxRows;
+    if (capped) lanes = rowLanes(near, scale, width, { ...packing, maxRows });
     // The rows are laid out into the height the pane has: they grow into the
     // room it has going spare, as far as `LANE_MAX`, and they never shrink
     // below the height a title needs. The drawing is never shorter than the
@@ -792,9 +831,53 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     if (window) bandShade(into.band, window, bandBox());
 
     const byLane = new Map(lanes.map((lane) => [lane.id, []]));
+    const rowOf = new Map();
     for (const event of near) {
       const lane = laneOf(event, lanes);
-      if (lane) byLane.get(lane.id).push(event);
+      if (!lane) continue;
+      byLane.get(lane.id).push(event);
+      rowOf.set(event.id, lanes.indexOf(lane));
+    }
+
+    // Past the cap (M87 §2), what each row has already given away to a title, so
+    // that no name is written over another. `taken` is a short list per row —
+    // most rows hold a handful of bars — and nothing at all where the rows are
+    // as many as the titles need, which is the ordinary picture.
+    //
+    // What the reader is holding is reserved first, before any of it is drawn:
+    // the walked path, the selection, an open actor's events and an open
+    // narrative's walk are drawn above their neighbours (the `held` layer
+    // below), and a name they lost to a bar drawn earlier would be the one name
+    // on the row the reader came for. It is the same priority `placeLabels`
+    // takes on the other two pictures, said in the order things are placed.
+    labelFits = () => true;
+    if (capped) {
+      const taken = new Map();
+      const boxOf = (at, room) => (at.anchor === 'end'
+        ? { x0: at.x - room, x1: at.x } : { x0: at.x, x1: at.x + room });
+      const claim = (row, box) => {
+        const on = taken.get(row);
+        if (!on) { taken.set(row, [box]); return true; }
+        if (on.some((other) => box.x0 < other.x1 && other.x0 < box.x1)) return false;
+        on.push(box);
+        return true;
+      };
+      // The ids whose room is already theirs, so that the bar itself is not
+      // refused by its own reservation when its turn to be drawn comes.
+      const reserved = new Set();
+      for (const event of near) {
+        const row = rowOf.get(event.id);
+        if (row === undefined) continue;
+        if (!(pathIds.has(event.id) || event.id === s.selected
+          || actorIds?.has(event.id) || narrativeIds?.has(event.id))) continue;
+        const name = labelOf(atlas, event);
+        if (name === null) continue;
+        const box = barBox(event, scale, { openEnd: domain[1] });
+        if (claim(row, boxOf(labelPlacement(box.x, box.width, labelRoom(name), width), labelRoom(name)))) {
+          reserved.add(event.id);
+        }
+      }
+      labelFits = (row, at, room, id) => (reserved.has(id) ? true : claim(row, boxOf(at, room)));
     }
     // The strip first, under everything: one path per row, on the floor of
     // the lane the events belong to, or of the first row when there are no
@@ -826,7 +909,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
 
     const deferred = [];
     lanes.forEach((lane, i) => {
-      for (const item of laneBars(into.bars, into.rings, into.barLabels, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear)) {
+      for (const item of laneBars(into.bars, into.rings, into.barLabels, into.glyphs, lane, i, byLane.get(lane.id), s, window, actorIds, narrativeIds, pathIds, reachable, working.lensNear, working.chosen)) {
         deferred.push({ item, i });
       }
     });
@@ -863,7 +946,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       // the walked path's alone until M77, which is exactly the half of the
       // owner's sentence this milestone is about.
       barLabel(into.heldLabels, item, {
-        classes, y, height: barHeight(), name,
+        classes, y, height: barHeight(), name, row: i,
       });
     }
 

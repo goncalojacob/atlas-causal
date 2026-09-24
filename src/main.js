@@ -314,11 +314,19 @@ try {
     mapArea.hidden = graphOn || timelineOn;
     graphArea.hidden = !graphOn;
     timelineArea.hidden = !timelineOn;
+    // **A view just built is not a view that came back** (M87 §8, B11). Both
+    // constructors draw once, for the pane they have just been given — the
+    // panes are unhidden above precisely so that they measure the right one —
+    // and the forced render below then laid the whole arrangement out a second
+    // time before a reader had seen anything. It is the graph that pays for it:
+    // a link naming `?view=graph` built the layout, drew it, and drew it again.
     if (graphOn && !graph) {
       graph = createGraphView(graphArea, { atlas, state, onCluster: showCluster });
+      wasHidden.graph = false;
     }
     if (timelineOn && !timeline) {
       timeline = createTimeline(timelineArea, { atlas, state });
+      wasHidden.timeline = false;
     }
     // The layer switches belong to the map: the graph has no coastlines and
     // the timeline no territories. And the degree floor belongs to the graph,
@@ -377,7 +385,7 @@ try {
   // (render-key.js), so this asks and then tells the views to look again.
   // The three pictures, the card, and the header's chips: a lens chip names a
   // record too, and it is drawn in the masthead rather than by the panel.
-  const shardLanded = () => {
+  const redrawForShards = () => {
     remeasure(); panel.refresh(); lensChips.render(state.get());
     // And the card over the view on a first visit, which quotes the titles of
     // the narratives and the events it offers: until the century carrying one
@@ -388,8 +396,31 @@ try {
     // title once its century is in and by its id until then (attributes.js).
     composer?.refresh();
   };
+  // **Coalesced per animation frame** (M87 §1, B4), exactly as `baseArrived`
+  // is in map.js and for the same reason. The atlas opens on the whole span, so
+  // every shard the build wrote is asked for at first paint and each one used to
+  // redraw every picture on its own: twelve full redraws — a cluster pass, a
+  // label round, a repack of the lanes, a graph label round, the card, the
+  // chips, the intro — inside the first second, on every visit, growing by one
+  // with every century the corpus reaches into. Together in a frame they are one
+  // to three. A frame and then a turn of the loop: `requestAnimationFrame` runs
+  // before the paint it belongs to and the timeout after it.
+  let landingPending = false;
+  const shardLanded = () => {
+    if (landingPending) return;
+    landingPending = true;
+    if (typeof requestAnimationFrame !== 'function') { landingPending = false; redrawForShards(); return; }
+    requestAnimationFrame(() => setTimeout(() => {
+      landingPending = false;
+      redrawForShards();
+    }, 0));
+  };
+  // `{ batch: true }`, because this is the ask that is many: the joins over the
+  // corpus are rebuilt once for the frame's whole arrival rather than once per
+  // file (data.js, `loadAttributes`). The panel's own asks and `record()`'s are
+  // not batched and are unchanged.
   const askFor = (shards) => {
-    for (const shard of shards) atlas.loadAttributes(shard).then(shardLanded, () => {});
+    for (const shard of shards) atlas.loadAttributes(shard, { batch: true }).then(shardLanded, () => {});
   };
 
   // The window's shards, and the lens's: both are on screen, so both are held
@@ -438,11 +469,23 @@ try {
   state.subscribe(holdWindow);
   holdWindow(state.get());
 
-  // And then the rest, in year order, once the picture is on screen — unpinned,
-  // so a reader who never leaves 1974 does not end up holding the corpus. A
-  // frame and then a turn of the loop: `requestAnimationFrame` runs before the
-  // paint it belongs to, and the timeout after it.
-  requestAnimationFrame(() => setTimeout(() => askFor(atlas.attributeShards), 0));
+  // And then **the rest**, in year order, once the picture is on screen —
+  // unpinned, so a reader who never leaves 1974 does not end up holding the
+  // corpus. A frame and then a turn of the loop: `requestAnimationFrame` runs
+  // before the paint it belongs to, and the timeout after it.
+  //
+  // The rest and not all of them (M87 §1, B11). Since M85 an empty URL is the
+  // whole span, so `holdWindow` has just asked for every shard there is and this
+  // line asked for every one of them again — deduplicated in flight and
+  // therefore harmless, but a comment that no longer described what it did. What
+  // is left is what the line was written for: at a window the reader named, the
+  // centuries the window does not cover, fetched behind the picture. Computed
+  // here rather than remembered, so a shard the cap has since evicted is asked
+  // for again by the window that wants it.
+  requestAnimationFrame(() => setTimeout(() => {
+    const onScreen = new Set(onScreenShards(state.get()).map((shard) => shard.key));
+    askFor(atlas.attributeShards.filter((shard) => !onScreen.has(shard.key)));
+  }, 0));
 } catch (error) {
   panelEl.innerHTML = `<section class="intro"><h2>Could not load the atlas</h2><p><code>${esc(error.message)}</code></p>
     <p>Serve the repository root (<code>python3 -m http.server 8000</code>) and make sure <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).</p></section>`;

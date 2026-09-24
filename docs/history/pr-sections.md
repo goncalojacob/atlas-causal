@@ -4211,3 +4211,83 @@ time as the check runs them.
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size; `emphasis.js`'s `shown` contract is unchanged.
 `docs/drafts/` ignored. Deviations **1203 to 1213**.
+
+## M87 — what breaks at 3,000 events
+
+Lane A, on the branch `m87`, over the second Fable review
+(`docs/review-2026-09-24.md`): part B's findings 4 to 11, part A's 5, and part
+C's 2, 9 and 15 where the fix is code — the structural half of what it found,
+the half that is linear in a corpus growing by about a hundred records a day.
+All twelve sections are done and none was refused. No record was written, no
+historical claim was made, and nothing under `data/` changed at all.
+
+### What first paint costs
+
+The atlas opens on the whole span, so every attribute shard the build wrote is
+asked for at once — twelve files today, one more with every century the corpus
+grows into — and each landing redrew every picture, rebuilt the card, the
+chips, the intro and the composer, and ran the eight joins over the whole
+corpus before any of it. `shardLanded` is coalesced per animation frame exactly
+as the base map's arrivals have been since H4a, and `loadAttributes` takes a
+`batch` flag so the bulk ask rebuilds the joins once for the frame's whole
+arrival while the panel's own asks and `record()`'s settle inside their own
+resolution, as they always did. Measured at the whole span through a hook on
+the map's own matrix: **17 drawings for 12 shards before, 7 after.**
+
+### How tall the timeline is
+
+`rowLanes` packed one row per title with no ceiling, which was right at a
+hundred events and is a 2,542-pixel drawing in a 676-pixel pane at 242, and
+nine thousand pixels at three thousand. The rows are capped at what the pane
+holds now: the packing is tried the old way first and, only where that does not
+fit, packed again into the rows there are, with no room reserved for titles
+that will not be written. Past the cap a name is written where it fits and not
+at all where it does not — as the graph writes only the names that fit — and a
+bar with no label still carries its own title under the pointer. What the
+reader is holding claims its room first. Nothing is packed away behind a count:
+no `+N`, no stack. **2,696 px in a 676 px pane before, 676 px in 676 after.**
+
+### What the check costs, and what its waits say
+
+Every browser test launched its own Chromium with its own profile: 250 launches
+per CI run, each polling for a page, each paying the cold start. One browser per
+file now, with an incognito context and a target per test — the same isolation a
+fresh profile gives — and the debugging endpoint read from the
+`DevTools listening on ws://…` line the browser prints rather than from a port
+chosen in advance. **8m29s before, 6m46s after**, 295 tests, none skipped.
+
+Four private copies of a "settled" loop polled a count forty times and then
+returned whether or not anything had settled, so a slow run failed with a
+sentence about lanes or profiles rather than about time. One
+`settledShards(page, manifest)` fails with "N of M attribute shards arrived",
+keyed on the manifest read at run time; the lane walk waits for every shard and
+then for the packing to hold across a frame inside the page; the last test that
+held a rule by grepping a source file asks the page instead.
+
+### What a phone gets
+
+The map was a 220-pixel band with empty ground beneath it, because a 960 × 540
+viewBox fitted to a 390-pixel pane's width can never be taller than 56 % of it.
+It is fitted to the pane's height under the phone breakpoint and crops the
+poles, which is a strip of ice for a picture nearly three times the size. The
+graph's names were about four pixels tall; nothing under eight pixels on screen
+is drawn now, except what the reader has open and the one hop around it.
+`docs/screens/m87-map-phone.png` and `m87-graph-phone.png`.
+
+### What the tools say about themselves
+
+`span-vs-lead-sentence` compares a record's dates with the year range in the
+first sentence of its own cached lead, which `span-vs-article-title` cannot see
+because it reads titles only: 12 warnings, and never a change to a record. The
+Wikidata import reuses a place it already holds by folded name and distance, so
+a second `london` is not written beside the first. And what an import refused is
+kept — item to reason, with the day, appended and never overwritten — while the
+Action's report accumulates a dated section per run instead of being truncated.
+
+`validate --index` clean: 12,117 records, 0 errors, 505 warnings (493 before,
+plus §10's twelve). The suite: 2,114 tests, none skipped, 1,819 pure and 295 in
+a browser, run the way the check runs them.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size; `emphasis.js`'s `shown` contract is unchanged.
+`docs/drafts/` ignored. Deviations **1253 to 1259**.

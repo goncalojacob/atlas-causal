@@ -390,3 +390,41 @@ test('A9: on a phone the picture is more than half the screen, on all three view
     assert.ok(opened.length > folded.length, 'and Options brings the rest back');
   }, { device: PHONE });
 });
+
+// 5 — A5, on the page rather than in the file (M87 §6, review B9).
+//
+// The rule is that the map draws no box about the events it has no place for:
+// that count is a fact about the window and it is said in the masthead, beside
+// the count of what is in view, instead of standing as a paragraph in the
+// corner of the picture on every visit. `tests/m82.test.mjs` held it by reading
+// `src/map/map.js` as text and asserting the class name did not appear in it —
+// which a rename to `map-noplace` would pass and a comment mentioning the old
+// name would fail. The page is what has the rule; this asks the page.
+test('A5: the map draws no box about the events it has no place for, and the masthead says the count', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // A window the corpus has placeless events in, so the sentence has
+    // something to say; which window that is is read off the page below and
+    // never asserted as a number.
+    await open(page, url('?from=1960&to=1980'), ready);
+    await waitFor(page, 'return Boolean((document.querySelector("#window-control .window-unplaced") || {}).textContent);',
+      "the masthead's note about them");
+
+    const seen = await page.eval(`return {
+      onTheMap: document.querySelectorAll('#map .map-unplaced').length,
+      inTheMasthead: document.querySelector('#window-control .window-unplaced').textContent,
+      corner: Boolean(document.querySelector('#map .map-corner')),
+    };`);
+    assert.equal(seen.onTheMap, 0, 'no box of it on the map');
+    assert.match(seen.inTheMasthead, /^\d+ events? in this window ha[sv]e? no place on the map$/);
+    assert.ok(Number(seen.inTheMasthead.match(/^(\d+)/)[1]) > 0, 'and it is counting something');
+    // The corner is still there for what *is* about the picture — an event that
+    // spans the whole map, and which year's borders are under the marks. No
+    // active record carries `scope: worldwide` today (review C15), so the line
+    // itself has nothing to fire it; what is asserted is that the corner the map
+    // writes it into was not taken away with the paragraph.
+    assert.ok(seen.corner, 'and the corner the map writes its own notes in is still there');
+    assert.deepEqual(await errorsOn(page), [], 'the console is clean');
+  }, { device: DESK });
+});

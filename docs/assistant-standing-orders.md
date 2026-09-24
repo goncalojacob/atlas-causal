@@ -103,13 +103,14 @@ card; the ring in a distinct colour; landed 22 September, PR #22)** → M85
 night, PR #23, all nine sections done) → the second Fable review, done
 24 September (`docs/review-2026-09-24.md`: part A reader, B display, C
 records, with a fix plan) → M86 (what a funder meets first; landed 24
-September morning, PR #26, all nine sections done) → **M87
-(`docs/m87-brief.md`: what breaks at 3,000 events — first paint coalesced,
-the timeline's rows capped, the lane-walk settle, one Chromium per file,
-waits that say what they waited for, the last source scan, `lensView`'s
-cache, three small ones, the phone's picture, the validator's
-lead-sentence warning, the import tool's place reuse, the refused-item
-log)** → a third review before the owner returns. Lane B runs amendment A14 (the review's data passes) before any
+September morning, PR #26, all nine sections done) → M87 (what breaks at
+3,000 events; landed 24 September midday, PR #28, all twelve sections
+done) → **a third Fable review on 26 September** over the live site, the
+code and the records as they stand then (three independent subagents as
+before; `docs/review-2026-09-26.md` with a fix plan) → its fixes as M88
+onward, landed before the owner returns on 29 September. Lane A is idle
+between M87's landing and that review; lane B keeps growing the corpus
+with a snapshot landed every day after the 02:00Z curation fire. Lane B runs amendment A14 (the review's data passes) before any
 further import.
 
 **Two lessons from 22 September's landings**, for every brief from here:
