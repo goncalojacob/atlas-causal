@@ -4815,3 +4815,274 @@ the edge the source argues, and the source is what is being quoted.
 Italo-Turkish War's lead also calls the war *"a precursor of World War I"*.
 A precursor is a periodisation and not a mechanism, and all five of this
 atlas's edge types assert a mechanism — batch 41's rule, applied again.
+
+## Batch 48 — the Algerian War read as a chain
+
+*24 September, the import fire that picked the run up at 08:18Z. The Africa
+lane trails at 139 against Europe's 375, so the batch is taken from it; the
+full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 48".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `philippeville-massacre` → `battle-of-algiers-1956-1957` | `precondition-of` | *"On 20 August 1955, violence broke out around Philippeville, drastically escalating the conflict."* — "Battle of Algiers (1956–1957)", revision 1374865618, § Background |
+| `milk-bar-cafe-bombing` → `battle-of-algiers-1956-1957` | `precondition-of` | *"On the evening of 30 September 1956, a trio of female FLN militants ... carried out the first series of bomb attacks on three civilian targets in European Algiers"*, and, in the lead, *"Reprisals followed and the violence escalated, leading the French Governor-General to deploy the French Army in Algiers to suppress the FLN"* — same article and revision, § First phase and lead |
+| `may-1958-crisis-in-france` → `challe-plan` | `precondition-of` | *"Tensions finally culminated in the May 1958 crisis, which saw General Charles de Gaulle take power and establish the French Fifth Republic. ... In early 1959, De Gaulle resorted to a decisive military offensive"* — "Challe Plan", revision 1370610721, § Background |
+| `challe-plan` → `algiers-putsch-of-1961` | `precondition-of` | *"De Gaulle therefore put his efforts into seeking a political solution. The Colons and part of the army resisted this move, which nearly resulted in a civil war; Challe himself was one of the heads of the Algiers Putsch"* — same article and revision, § Aftermath |
+| `challe-plan` → `evian-accords` | `precondition-of` | *"The Challe plan, despite military success, failed to achieve its ultimate goal and the FLN were not defeated. ... De Gaulle therefore put his efforts into seeking a political solution."* — same article, revision and section |
+| `evian-accords` → `battle-of-bab-el-oued` | `reacted-to` | *"The OAS decided to dig in at their stronghold of Bab El Oued ... to fight the Evian Agreements by force"* — "Battle of Bab El Oued", revision 1370432852, § Context; and *"One of the primary forces of opposition to the signing of the Evian Accords ... was the Secret Army Organisation (OAS)"* — "Évian Accords", revision 1372137587 |
+
+All six are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. The last runs from the accords to the battle and not the other way
+round, because rule 4 reads the arrow of time and the atlas's `reacted-to`
+says *the later record answered the earlier one* — which is what both articles
+say happened in the five days between 18 and 23 March 1962.
+
+**`may-1958-crisis-in-france` names neither an actor nor a place, and it is
+filed under `algerian-war` all the same.** Its item gives no `P710` and no
+`P276`, `P131` or own `P625`; the only located thing it names is `Q69829`, the
+French Fourth Republic, whose point is Paris and which this atlas holds as
+neither a place nor an actor, so the record takes the `europe` lane from that
+point and stays placeless. It is filed under the Algerian War because its own
+cited article, at revision 1373489110, calls it *"a political crisis in France
+during the turmoil of the Algerian War"* and carries the category *"1958 in
+the Algerian War"* — the reading is the article's and not the item's, which
+states no `P361` at all, and the record's `review.note` says so. Without the
+filing it would have been the 243rd main event, which A6 forbids; with it, the
+one French record of an Africa batch sits where the source puts it.
+
+## Batch 49 — the Russo-Japanese War finished as a chain
+
+*24 September, the import fire that picked the run up at 10:46Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Asia** at the
+front, trailing at 143 against Europe's 377. The full note, the refusals and
+the counts are in `docs/m42-pool.md` under "Batch 49".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-chemulpo-bay` → `battle-of-the-yalu-river-1904` | `enabled` | *"After the success of the Imperial Japanese Navy at the Battle of Chemulp'o Bay on 9 February 1904, the way was clear for the Imperial Japanese Army to deploy the 2nd, the 12th, and the Guards Divisions of the Japanese 1st Army ... into Korea."* — "Battle of Yalu River", revision 1370602766, § Background |
+| `battle-of-nanshan` → `battle-of-te-li-ssu` | `reacted-to` | *"After the loss to the Japanese at the Battle of Nanshan, the Russian Viceroy Yevgeni Alekseyev came under extreme political pressure to make a military advance"*, and *"General Kuropatkin was reluctantly forced to mount an offensive from Liaoyang in the general direction of Port Arthur"* — "Battle of Te-li-Ssu", revision 1370590724, § Background |
+| `battle-of-te-li-ssu` → `battle-of-tashihchiao` | `precondition-of` | *"the 1st Siberian Army Corps under Lieutenant General Georg von Stackelberg (consisting of surviving forces from the disaster at Telissu, which had retreated north towards Liaoyang, but which had received new orders diverting them to Kaiping)"* — "Battle of Tashihchiao", revision 1370590643, § Preparations by the Russians |
+| `battle-of-tashihchiao` → `battle-of-liaoyang` | `precondition-of` | *"The town of Tashihchiao was of strategic importance ... Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden."* — same article and revision, first section |
+| `battle-of-the-yellow-sea` → `battle-off-ulsan` | `reacted-to` | *"A telegram from the First Pacific Squadron at Port Arthur reached Vladivostok on the afternoon of 11 August 1904, stating that Admiral Wilgelm Vitgeft had decided to attempt to break through the Japanese blockade, and therefore Vice Admiral Jessen was ordered to sortie the Vladivostok Cruiser Squadron to assist."* — "Battle off Ulsan", revision 1370603310, § Sortie |
+| `battle-of-liaoyang` → `battle-of-shaho` | `reacted-to` | *"After the Battle of Liaoyang the situation for General Alexei Kuropatkin ... became increasingly unfavorable ... Although he needed to reverse the tide of the war"* — "Battle of Shaho", revision 1370589119, § Background; and *"the Japanese had failed to take advantage of their victory at Liaoyang, allowing the Russians to retreat in good order and to soon launch a counterattack during the Battle of Shaho"* — "Battle of Mukden", revision 1375786749, § Background |
+| `battle-of-shaho` → `battle-of-sandepu` | `precondition-of` | *"the Japanese advance on Mukden was paused, as both sides dug in to prepare for the next confrontation at the Battle of Sandepu (Heikoutai)"* — "Battle of Shaho", revision 1370589119, § Aftermath |
+| `siege-of-port-arthur` → `battle-of-sandepu` | `reacted-to` | *"[Kuropatkin] was concerned about the impending arrival of the battle-hardened Japanese Third Army under General Nogi Maresuke to the front after the fall of Port Arthur on 2 January 1905"*, and *"Kuropatkin issued orders for the Second Manchurian Army to attack ... before Nogi's Third Army could arrive"* — "Battle of Sandepu", revision 1370588463, § Background and § The Battle of Sandepu |
+| `japanese-invasion-of-sakhalin` → `treaty-of-portsmouth` | `enabled` | *"Roosevelt agreed with the Japanese assessment that the invasion and occupation of Sakhalin was now necessary, as only the threat of direct loss of Russian territory would bring Tsar Nicholas II to consider a negotiated settlement to the war."* — "Japanese invasion of Sakhalin", revision 1371432298, § Background |
+
+All nine are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **All four `reacted-to` run from the earlier record to the later
+one**, which is rule 4's arrow of time and the reading batch 48 wrote down:
+the atlas's `reacted-to` says *the later record answered the earlier one*. All
+four were first written the other way round, on the sense of the English verb,
+and rule 4 refused all four in one run — which is the validator doing exactly
+what it is for, and is deviation 953.
+
+**`japanese-invasion-of-sakhalin --enabled--> treaty-of-portsmouth` is the
+third branch into that endpoint**, beside `battle-of-tsushima --caused-->` and
+batch 47's `battle-of-mukden --enabled-->`. The three are not a repetition:
+Tsushima destroyed the fleet, Mukden took the field, and the invasion is the
+one the article names as the thing that would bring the Tsar to the table —
+*"only the threat of direct loss of Russian territory"*. A convergence of three
+independently argued branches on one treaty is the query this atlas was built
+around, and it now exists in the data.
+
+**Two refusals, both chronology with no claim in it.** The Battle off Ulsan's
+lead says it took place *"four days after the Battle of the Yellow Sea"*, which
+is a date and not an argument; the edge written instead rests on the telegram in
+§ Sortie, which says why the squadron was at sea. The Japanese invasion of
+Sakhalin's § Background says the plan was reconsidered *"On 7 June 1905, shortly
+after the Battle of Tsushima"* — the same shape as the eleven "Following" quotes
+A14 (4) read again and dropped nine of, so `battle-of-tsushima →
+japanese-invasion-of-sakhalin` was not written. What the article does claim
+about the invasion is its purpose, and that is the edge above.
+
+**A third was refused on its own reading.** The Battle of Chemulpo Bay's
+§ Background puts it and the Battle of Port Arthur in one action — *"The opening
+stage of the Russo-Japanese War began with a pre-emptive strike by the Imperial
+Japanese Navy against the Russian Pacific Fleet spread among Port Arthur,
+Vladivostok, and Chemulpo Bay"* — which makes them two halves of one strike
+fought a day apart, and that is a filing under the war and not a cause between
+them. The edge Chemulpo earns is the one the Yalu article argues, a month later
+and in another country.
+
+## Batch 50 — the Mali War read as a chain
+
+*24 September, the import fire that picked the run up at 13:07Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Africa** at the
+front, trailing at 147 against Europe's 378. The full note, the refusals and
+the counts are in `docs/m42-pool.md` under "Batch 50".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `2012-malian-coup-d-etat` → `battle-of-kidal-2012` | `enabled` | *"Inspired in part by the diversion caused by the military coup, Tuareg rebels in the country's north launched incursions deeper into Mali, seizing towns and bases formerly held by government forces"*, and *"As military forces were engaged in consolidating their hold on the capital, the rebels were able to push southward with little opposition."* — "2012 Malian coup d'état", revision 1370102863, § Aftermath |
+| `2012-tuareg-rebellion` → `battle-of-gao` | `precondition-of` | *"After the end of hostilities with the Malian Army, however, Tuareg nationalists and Islamists struggled to reconcile their conflicting visions for the intended new state. On 27 June, Islamists from the Movement for Oneness and Jihad in West Africa (MOJWA) clashed with the MNLA in the Battle of Gao"* — "Tuareg rebellion (2012)", revision 1370751541, lead; and *"Tensions then started between the MNLA and Islamist movements over the use of sharia law within the territory"* — "Battle of Gao", revision 1370441289, § Background |
+| `battle-of-konna` → `operation-serval` | `caused` | *"However, the jihadist offensive in southern Mali provoked France's entry into the war. On January 11, the French army launched Operation Serval."* — "Battle of Konna", revision 1375363074, § Jihadist coalition advances in Sevare and Mopti and Operation Serval |
+| `operation-serval` → `battle-of-diabaly` | `reacted-to` | *"On 13 January, the French Air Force bombarded major Islamist towns throughout northern Mali. As a result of this hundreds of Islamists fled to the Mauritania border, where they launched a counterattack on the western town of Diabaly."* — "Battle of Diabaly", revision 1370438795, § Background |
+| `battle-of-diabaly` → `second-battle-of-gao` | `precondition-of` | *"A few days after taking the towns of Konna and Diabaly, the French and Malian forces continued their progress on Timbuktu and Gao"*, and *"After the capture of Diabaly, the special forces advanced in Gao, the largest city in northern Mali"* — "Second Battle of Gao", revision 1370736225, § Prelude |
+| `battle-of-konna` → `battle-of-ifoghas` | `precondition-of` | *"After being defeated in January in the Battle of Konna and the Battle of Diabaly, the jihadists abandoned Timbuktu and retreated into the Adrar Tigharghar, a mountain of the Adrar of Ifoghas in northeastern Mali, which has been their sanctuary for years. The French started quickly a pursuit"* — "Battle of Ifoghas", revision 1370443583, lead |
+| `battle-of-diabaly` → `battle-of-ifoghas` | `precondition-of` | the other half of the same sentence, same article and revision |
+| `chadian-intervention-in-northern-mali` → `battle-of-ifoghas` | `enabled` | *"France was also seeking the help of Chad's President Idriss Déby. He agreed to deploy his army in the Adrar of Ifoghas. On February 3, the first Chadian soldiers arrived in Kidal."* — "Battle of Ifoghas", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region; and *"the Chadian army launched a joint military operation with the support of French war jets on an Islamists base ... hidden in the mountains of the Adrar des Ifoghas"* — "Chadian intervention in northern Mali", revision 1370610691, § Timeline |
+
+All eight are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Seven of the eight run into or out of a record that was already
+here** — the coup, the rebellion, Operation Serval — which is A5's own
+standard, and the eighth (`battle-of-diabaly → second-battle-of-gao`) chains
+the batch to itself.
+
+**The one `reacted-to` runs forward in time**, as batch 49 wrote down:
+`operation-serval --reacted-to--> battle-of-diabaly` says *Diabaly answered
+Serval*, which is what the article's word "counterattack" says. Written that
+way at the first attempt; rule 4 refused nothing this batch.
+
+**`battle-of-ifoghas` is a convergence of three branches**, and each rests on a
+different sentence: two defeats that drove the jihadists into the massif, and
+the Chadian column that went in after them. The atlas's convergence query is
+what that shape is for.
+
+**Two edges rest on one sentence, and that is deliberate.** The Ifoghas lead
+names Konna *and* Diabaly as the defeats behind the retreat, gives them equal
+weight, and neither alone is what it says; writing one edge naming both would
+be a claim the article does not make. The Gao prelude names both too, but its
+next sentence singles Diabaly out — *"After the capture of Diabaly, the special
+forces advanced in Gao"* — so only that one is written there.
+
+**Three refusals, all the fire's own class: chronology with no claim in it.**
+
+- The Diabaly article's § Order of battle: *"The jihadist offensive on Diabaly
+  was launched parallel with that of Battle of Konna."* Parallel is not
+  consequent, so `battle-of-konna → battle-of-diabaly` was not written even
+  though the Konna article says eighty of the vanguard's pick-ups "were then
+  detached to take part in the Battle of Diabaly". Two prongs of one offensive
+  is a filing under the war, which both records have.
+- The Tessalit article's first line: *"The siege of Tessalit occurred in early
+  2012 during the Tuareg rebellion in Mali."* "During" is a filing and not an
+  argument.
+- The coup's § Background names the rebellion in general — *"weeks of protests
+  of the government's handling of a nomad-led rebellion in the country's
+  north"* — and no source read here names the fall of Tessalit as what broke
+  the army's patience, so `siege-of-tessalit → 2012-malian-coup-d-etat` was not
+  written. **`siege-of-tessalit` is therefore the one record of this batch with
+  no edge at all**, and the stand says so rather than reaching for a sentence
+  that is not there.
+
+## Batch 51 — the Korean War read as a chain, and the component `parent` cannot join
+
+*24 September, the import fire that picked the run up at 15:45Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Asia** at the
+front, trailing at 149 against Africa's 155 and Europe's 378. The full note,
+the refusals and the counts are in `docs/m42-pool.md` under "Batch 51".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `first-battle-of-seoul` → `battle-of-osan` | `precondition-of` | *"The North Koreans had captured South Korea's capital, Seoul, by June 28, which forced the government and its shattered army to retreat further south"*, and the column Task Force Smith met was *"advancing from Seoul"* — "Battle of Osan", revision 1375327001, § Outbreak of war and § Infantry column |
+| `battle-of-osan` → `battle-of-taejon` | `precondition-of` | *"Within a week, the 24th Infantry Division had been pushed back to Taejon where it was again defeated in the Battle of Taejon"* — "Battle of Osan", revision 1375327001, § Aftermath; read with *"The 24th Infantry Division's regiments were already exhausted from the previous two weeks of delaying actions"* — "Battle of Taejon", revision 1370312872, lead |
+| `battle-of-taejon` → `battle-of-the-pusan-perimeter` | `enabled` | *"the 24th Infantry Division achieved a strategic victory by delaying the North Koreans, providing time for other U.S. divisions to establish a defensive perimeter around Pusan further south. The delay imposed at Taejon probably prevented a U.S. rout during the subsequent Battle of Pusan Perimeter"*, and the order itself — *"ordered General Dean to hold Taejon until the 20th so that the 1st Cavalry Division and 25th Infantry Division could establish defensive lines along the Naktong River, forming the Pusan Perimeter"* — "Battle of Taejon", revision 1370312872, lead and § Second North Korean attack |
+| `first-battle-of-seoul` → `battle-of-inchon` | `reacted-to` | *"Days after the beginning of the war, General of the Army Douglas MacArthur, the US Army officer in command of all UN forces in Korea, envisioned an amphibious assault to retake the Seoul area. The city had fallen in the first days of the war in the First Battle of Seoul."* — "Battle of Inchon", revision 1370266029, § Planning |
+| `battle-of-inchon` → `second-battle-of-seoul` | `caused` | *"The operation involved some 75,000 troops and 261 naval vessels and led to the recapture of the South Korean capital of Seoul two weeks later"*, where the article's own link on "recapture" points at this record — "Battle of Inchon", revision 1370266029, lead |
+| `battle-of-the-pusan-perimeter` → `battle-of-unsan` | `precondition-of` | *"After breaking out of the Pusan Perimeter at the south-east tip of the Korean peninsula in September, the UNC offensive pursued the Korean People's Army (KPA) through South Korea, into North Korea, and toward the Sino-Korean border"*, and *"In response to the rapid KPA collapse and the UNC advance toward the Chinese border, Chairman Mao Zedong ordered the People's Liberation Army's North East Frontier Force to be reorganized into the People's Volunteer Army (PVA) for the upcoming intervention in Korea"* — "Battle of Unsan", revision 1370276047, § Background |
+| `battle-of-unsan` → `battle-of-the-ch-ongch-on-river` | `precondition-of` | *"the PVA 13th Army Group surprised and defeated the Republic of Korea Army (ROK) II Corps and the US 1st Cavalry Division in a series of battles around Onjong and Unsan, destroying the right flank of the US Eighth Army while forcing the UN forces to retreat back to the Ch'ongch'on River"*, and *"Because of the earlier UN defeat at the Battle of Unsan, the US 25th Infantry Division expected to encounter heavy PVA resistance during its advance"* — "Battle of the Ch'ongch'on River", revision 1374278822, § Background and § Actions at Ipsok |
+| `battle-of-the-ch-ongch-on-river` → `battle-of-chosin-reservoir` | `precondition-of` | *"At the same time, the US Eighth Army on the Korean western front was forced into full retreat at the Battle of the Ch'ongch'on River, and MacArthur ordered Almond to withdraw the US X Corps to the port of Hungnam"* — "Battle of Chosin Reservoir", revision 1370109047, § Battle / Actions at Yudam-ni |
+| `battle-of-the-ch-ongch-on-river` → `third-battle-of-seoul` | `caused` | *"Immediately after the PVA 13th Army's victory over the Eighth Army at the Ch'ongch'on River, Chinese Communist Party chairman Mao Zedong started to contemplate another offensive against the UN forces on the urging of North Korean Premier Kim Il Sung"* — "Third Battle of Seoul", revision 1370750418, § Background |
+
+All nine are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Two of the nine run into or out of a record that was already
+here** — both of them `battle-of-inchon`, which until this batch had no edge at
+all and was one of the 159 events the validator warned `degree-zero` about. The
+other seven chain the batch to itself, in one line from the fall of Seoul in
+June 1950 to its third fall in January 1951.
+
+**The one `reacted-to` runs forward in time**, as batches 49 and 50 wrote down:
+`first-battle-of-seoul --reacted-to--> battle-of-inchon` says *the landing
+answered the loss of the capital*, which is what the two consecutive sentences
+of the Inchon article's § Planning say. Rule 4 refused nothing this batch.
+
+**`battle-of-the-ch-ongch-on-river` is the branching point**, and both branches
+rest on a sentence of the article at the other end: the western defeat pulled
+the X Corps out of the Chosin Reservoir, and it is what Mao was answering when
+he ordered the offensive that took Seoul for the third time.
+
+**Two edges were looked for and not written.**
+
+- **`battle-of-chosin-reservoir → korean-armistice-agreement`.** The Chosin
+  article does carry a sentence that would join this chain to the largest
+  connected component in one stroke — for China the battle *"drove a vastly
+  technologically superior foe from the battlefield, and eventually forced it
+  to sign an armistice agreement some three years later"*. But the article is
+  reporting how one side remembers the battle, in a quotation inside a
+  quotation, and not asserting it: the clause it belongs to is *"for China, it
+  won because"*. An edge written on that sentence would be reading a party's
+  memory as the article's argument, and the fact that it would have moved the
+  component is the reason to be careful rather than the reason to write it.
+- **`chinese-civil-war → battle-of-unsan`**, which would have done the same
+  thing. The Ch'ongch'on article names the civil war only for the PVA's
+  equipment — *"Because the Chinese had captured large numbers of Nationalist
+  weapons during the Chinese Civil War, most of the PVA men used US-made small
+  arms"* — and the Chosin article only for its tactics. Neither says the civil
+  war is why the intervention happened, and the Chinese Civil War article's own
+  two mentions of Korea at revision 1372330605 run the other way, about what
+  the Korean War did to Taiwan. The claim is not in the sources read here.
+
+## Batch 52 — the Mali War carried from 2013 to 2024
+
+*24 September, the import fire that picked the run up at 17:59Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need had turned over again and
+puts **Africa** at the front, trailing at 155 against Asia's 158 and Europe's
+378. The full note, the four refusals and the counts are in `docs/m42-pool.md`
+under "Batch 52".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `2021-malian-coup-d-etat` → `french-military-withdrawal-from-west-africa` | `caused` | *"As a result of the 2021 Malian coup d'état, French President Emmanuel Macron announced the end of the operation and his intentions to remove troops incrementally."* The operation is Operation Barkhane, which the same paragraph has just called *"less successful than its predecessor"* — "French military withdrawal from West Africa (2022–2025)", revision 1371499896, § Mali |
+| `2021-malian-coup-d-etat` → `kidal-offensive` | `precondition-of` | *"The offensive was part of a renewed conflict between the Malian junta that took power in 2021 and former Tuareg rebel groups that had signed the Algiers Agreement in 2015"*, and § Background on the same ground: the CSP-PSD formed in April 2021, *"just a month later"* Goïta's coup took power, and *"Goita and the CSP-PSD got off to a rocky start"* — "Kidal offensive", revision 1370625765, lead and § Background |
+| `2020-malian-coup-d-etat` → `moura-massacre` | `precondition-of` | France *"announced after the 2020 Malian coup d'état their intention to gradually reduce the number of French forces and withdraw them from the country. Mali has since looked for other ways to acquire foreign help, and has received help from Wagner Group, a Russian private military company"*, and the lead names Wagner, with the Malian army, as who carried the massacre out — "Moura massacre", revision 1370628775, § Background and lead |
+| `battle-of-timbuktu` → `second-battle-of-timbuktu` | `precondition-of` | *"French forces expected a second attack on the city following the jihadist's failed first incursion. The French 1st Marine Infantry Regiment received reinforcements from the 92nd Infantry Regiment and the 126th Infantry Regiment."* The whole § Background is the first battle, under `{{Main articles|Battle of Timbuktu}}` — "Second Battle of Timbuktu", revision 1370736664, § Background |
+| `third-battle-of-gao` → `fourth-battle-of-gao` | `precondition-of` | *"Ten days after the Third Battle of Gao, the Jihadists launched another offensive to retake the city on 20 February 2013."* Read with both leads — the third *"a raid on the city"* whose *"raiders were defeated"*, the fourth *"an attempt by rebel MOJWA forces to retake the city"* — the sentence states a second attempt by the same force at the same objective and not only a date — "Fourth Battle of Gao", revision 1370619931, § February 20–22 attack |
+
+All five are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Three of the five run out of a record that was already here**, and
+both of those records — the coups of 2020 and 2021 — are inside the largest
+connected component, so the component goes from 624 to 627. That is deviation
+1430's lesson applied: the three that joined it are joined to *siblings* inside
+it and not to their own parent.
+
+**Two of the five are pairs and stay pairs.** The two battles of Timbuktu and
+the third and fourth battles of Gao are each a component of two, because the
+only record inside the largest component that either family could reach is
+`mali-war`, which is their parent, and C8 bars the edge. Neither the first
+Timbuktu article nor the third Gao article names any other record this atlas
+holds; the fourth Gao article names only the third, and the second Timbuktu
+article only the first. The pairs are honest and the sentences are the
+articles' own; what is missing is a sibling, not an argument.
+
+**Four candidates were read and refused, three of them for arriving edgeless.**
+
+- **`Q128007033`, the Battle of Tinzaouaten (July 2024)**, is the largest thing
+  in the vein that is not here — 9 sitelinks, the Wagner Group's worst defeat in
+  Mali — and its article at revision 1373950868 names no event this atlas holds
+  in a sentence that argues anything. Its § Prelude begins with a convoy on 20
+  July and reaches nothing earlier; its § Aftermath is the diplomatic break with
+  Ukraine and the Sahel states' reprisals, none of them records here. The Kidal
+  offensive's article, read for the other half, names Tinzaouaten once — a drone
+  strike of December 2023 — and not this battle. It is dated, placed and worth
+  having, and the right way to get it is with a sibling it can reach.
+- **`Q123058541`, the Siege of Timbuktu (2023)**, states one relation in its
+  lead and only one: *"The siege began after the withdrawal of MINUSMA, the
+  United Nations mission to Mali during the Mali War."* MINUSMA is not a record
+  of this atlas, so the sentence has no `from`.
+- **`Q8578070`, the Fifth Battle of Gao (March 2013)**, names neither the fourth
+  battle nor anything else the atlas holds: its article at revision 1370618201
+  is five sentences and opens on the day itself.
+- **`Q6337939`, Operation Panther**, is the one refused for the opposite
+  reason. Its article names `battle-of-ifoghas`, which this atlas holds, but the
+  sentence is a § See also line — *"Battle of Ifoghas, fighting in the Adrar des
+  Ifoghas rock massif during Operation Panther"* — and what it states is
+  containment, not cause. Containment is `parent`, and C8 bars the edge a parent
+  would then be barred from; and as a parent the spans do not fit either, since
+  the battle begins a day before the operation and ends six days after it, which
+  rule 24 would warn about. A record whose only link to the atlas is a link the
+  atlas may not draw is not this batch's to import.

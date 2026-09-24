@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chosin Reservoir\", revision 1370109047, § Battle / Actions at Yudam-ni"
+    }
+  ],
+  "from": "battle-of-the-ch-ongch-on-river",
+  "to": "battle-of-chosin-reservoir",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The two battles were fought on the two sides of the peninsula in the same fortnight, and the Chosin article makes the western one the reason the eastern force was pulled out: \"At the same time, the US Eighth Army on the Korean western front was forced into full retreat at the Battle of the Ch'ongch'on River, and MacArthur ordered Almond to withdraw the US X Corps to the port of Hungnam.\" The withdrawal to Hungnam is what this battle became. Probable: Wikipedia alone.",
+  "dispute": null
+}

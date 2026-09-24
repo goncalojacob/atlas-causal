@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lake-changjin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q12614724 for batch 51: the reservoir battle-of-chosin-reservoir was fought around, under the Korean name of the lake the battle is known by its Japanese one. A9's two steps differ by 15 km across the reservoir. Its class Q131681, reservoir, was added to the class table for it."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q12614724",
+  "wikipedia": {
+    "en": "Lake Changjin"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Changjin Reservoir",
+    "Lake Changjin"
+  ],
+  "where": {
+    "lon": 127.20194444444,
+    "lat": 40.498333333333,
+    "precision": "region",
+    "label": "Lake Changjin"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

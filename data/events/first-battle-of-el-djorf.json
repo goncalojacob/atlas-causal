@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-el-djorf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "The cited article disagrees with itself at revision 1371469454: its first sentence says the battle \"took place on 22 September 1955\", while its § Aftermath quotes Alcaraz 2016 for \"du 20 au 28 septembre 1955\", which is the span the item states and the record carries. Nothing was changed; the disagreement is recorded here."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5454129",
+  "wikipedia": {
+    "en": "First Battle of El Djorf"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5454129"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of El Djorf\", revision 1371469454"
+    }
+  ],
+  "title": "First Battle of El Djorf",
+  "summary": "The English Wikipedia article \"First Battle of El Djorf\", at revision 1371469454, opens: \"The First Battle of El Djorf took place on 22 September 1955, during the Algerian War, between the National Liberation Army and the French Army.\" Wikidata item Q5454129, whose own description reads \"1955 battle in the French-Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1955,
+    "end": 1955,
+    "date": "1955-09-20",
+    "endDate": "1955-09-28"
+  },
+  "place": "tebessa",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "war",
+  "actors": []
+}

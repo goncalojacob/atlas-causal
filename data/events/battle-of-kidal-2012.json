@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "battle-of-kidal-2012",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3560870",
+  "wikipedia": {
+    "en": "Battle of Kidal (2012)"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3560870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kidal (2012)\", revision 1370445294"
+    }
+  ],
+  "title": "Battle of Kidal (2012)",
+  "summary": "The English Wikipedia article \"Battle of Kidal (2012)\", at revision 1370445294, opens: \"The first battle of Kidal took place during the Mali war. On 30 March 2012, the city was captured by rebel MNLA and Ansar Dine forces.\" Wikidata item Q3560870, whose own description reads \"2012 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-03-26",
+    "endDate": "2012-03-30"
+  },
+  "place": "kidal",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

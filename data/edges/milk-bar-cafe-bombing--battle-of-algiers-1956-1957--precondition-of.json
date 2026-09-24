@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "milk-bar-cafe-bombing--battle-of-algiers-1956-1957--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618, lead, § First phase and § The Army takes over"
+    }
+  ],
+  "from": "milk-bar-cafe-bombing",
+  "to": "battle-of-algiers-1956-1957",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same article makes the 30 September 1956 bombings the opening of the FLN's campaign in the European city, and the campaign what brought the army in. § First phase: \"Ben M'Hidi decided to extend terrorist actions to the European city as to touch more urban populations... On the evening of 30 September 1956, a trio of female FLN militants recruited by Yacef Saâdi, Djamila Bouhired, Zohra Drif and Samia Lakhdari, carried out the first series of bomb attacks on three civilian targets in European Algiers. The bombs at the Milk Bar Café on Place Bugeaud and the Cafeteria on Rue Michelet killed 3 and injured 50\". The lead: \"Reprisals followed and the violence escalated, leading the French Governor-General to deploy the French Army in Algiers to suppress the FLN.\" § The Army takes over dates that deployment to 7 January 1957, which is where this atlas starts the battle. `precondition-of`: the article puts the bombing at the head of the campaign the deployment answered, not as its cause on its own. Probable: Wikipedia alone.",
+  "dispute": null
+}

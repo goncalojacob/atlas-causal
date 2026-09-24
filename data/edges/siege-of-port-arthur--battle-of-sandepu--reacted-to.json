@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--battle-of-sandepu--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sandepu\", revision 1370588463, § Background and § The Battle of Sandepu"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "battle-of-sandepu",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Sandepu's § Background gives the reason for the offensive: Kuropatkin \"was concerned about the impending arrival of the battle-hardened Japanese Third Army under General Nogi Maresuke to the front after the fall of Port Arthur on 2 January 1905\", and § The Battle of Sandepu gives its timing from the same fact: \"On 19 January, Kuropatkin issued orders for the Second Manchurian Army to attack in a maneuver to outflank General Oku's Japanese Second Army and to drive it back across the Taitzu River before Nogi's Third Army could arrive.\" The siege ends on 2 January and the attack opens on 25 January, so the reaction is datable as well as stated. Probable: Wikipedia alone.",
+  "dispute": null
+}

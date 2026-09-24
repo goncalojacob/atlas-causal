@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-te-li-ssu--battle-of-tashihchiao--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643, § Preparations by the Japanese and § Preparations by the Russians"
+    }
+  ],
+  "from": "battle-of-te-li-ssu",
+  "to": "battle-of-tashihchiao",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Not a sequence but the same two armies: Tashihchiao's § Preparations by the Russians says the force that met the Japanese there was \"the 1st Siberian Army Corps under Lieutenant General Georg von Stackelberg (consisting of surviving forces from the disaster at Telissu, which had retreated north towards Liaoyang, but which had received new orders diverting them to Kaiping, which they occupied on 20 June 1904)\", and § Preparations by the Japanese says \"After the victory at the Battle of Telissu, General Oku rested for four days for re-supply\". Probable: Wikipedia alone.",
+  "dispute": null
+}

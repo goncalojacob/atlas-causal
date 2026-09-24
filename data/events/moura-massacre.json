@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "moura-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9: the item's own P625 and its P276 (Q6925960, Mourrah) are the same point to the digit."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q111480185",
+  "wikipedia": {
+    "en": "Moura massacre",
+    "pt": "Massacre de Moura"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111480185"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moura massacre\", revision 1370628775"
+    }
+  ],
+  "title": "Moura massacre",
+  "summary": "The English Wikipedia article \"Moura massacre\", at revision 1370628775, opens: \"The Moura massacre was carried out by Malian Armed Forces and Russian mercenaries from the Wagner Group between 27 and 31 March 2022, in the central Malian town of Moura, Mopti Region in conflict with Al-Qaeda in the Islamic Maghreb’s Jama’at Nasr al-Islam wal Muslimin.\" Wikidata item Q111480185, whose own description reads \"2022 killing of civilians in the Malian village of Moura\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-03-27",
+    "endDate": "2022-03-31"
+  },
+  "place": "moura",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "death",
+  "actors": []
+}

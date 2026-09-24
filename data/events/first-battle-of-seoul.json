@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-seoul",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q18016068",
+  "wikipedia": {
+    "en": "First Battle of Seoul",
+    "pt": "Primeira Batalha de Seul"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18016068"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Seoul\", revision 1370618963"
+    }
+  ],
+  "title": "First Battle of Seoul",
+  "summary": "The English Wikipedia article \"First Battle of Seoul\", at revision 1370618963, opens: \"The First Battle of Seoul was one of the early battles of the Korean War. Following the border engagements at the outbreak of the war, it was fought between the Republic of Korea Armed Forces and the Korean People's Army of North Korea from 26 to 28 June 1950 across the central region of South Korea, centering on the city of Seoul.\" Wikidata item Q18016068, whose own description reads \"1950 North Korean capture of Seoul in the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-06-25"
+  },
+  "place": "seoul",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": []
+}

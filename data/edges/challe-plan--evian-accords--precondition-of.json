@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "challe-plan--evian-accords--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Challe Plan\", revision 1370610721, § Aftermath"
+    }
+  ],
+  "from": "challe-plan",
+  "to": "evian-accords",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same passage is the article's account of why France went to the table: \"The Challe plan, despite military success, failed to achieve its ultimate goal and the FLN were not defeated... The war, by this stage, had become an international embarrassment and a drain on France's economy. De Gaulle therefore put his efforts into seeking a political solution.\" `precondition-of`: the failure of the last military answer is what the article puts in front of the political one, which is the Évian negotiation. Probable: Wikipedia alone.",
+  "dispute": null
+}

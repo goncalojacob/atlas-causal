@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-gao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3915054",
+  "wikipedia": {
+    "en": "Second Battle of Gao"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3915054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Gao\", revision 1370736225"
+    }
+  ],
+  "title": "Second Battle of Gao",
+  "summary": "The English Wikipedia article \"Second Battle of Gao\", at revision 1370736225, opens: \"The Second Battle of Gao was the recapture of the city of Gao from Islamist MOJWA fighters by Malian/French forces. It took place in January 2013 within the Northern Mali Conflict.\" Wikidata item Q3915054, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-01-25",
+    "endDate": "2013-01-27"
+  },
+  "place": "gao",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

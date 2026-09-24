@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-gao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Interval widened under A7 from the cited article at revision 1370750328, whose first sentence and infobox both give \"9–11 February 2013\": the item's P580 is 10 February. Place by A9's second step (P276 Q188904, Gao); the item's own P625 is the same point to the digit."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q13403330",
+  "wikipedia": {
+    "en": "Third Battle of Gao"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13403330"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Gao\", revision 1370750328"
+    }
+  ],
+  "title": "Third Battle of Gao",
+  "summary": "The English Wikipedia article \"Third Battle of Gao\", at revision 1370750328, opens: \"The Third Battle of Gao was fought in the city of Gao on 9–11 February 2013, during the Northern Mali Conflict. It was a raid on the city by rebel MOJWA forces.\" Wikidata item Q13403330, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-02-09",
+    "endDate": "2013-02-11"
+  },
+  "place": "gao",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "palestro-ambush",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3052126",
+  "wikipedia": {
+    "en": "Palestro ambush"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3052126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palestro ambush\", revision 1371094744"
+    }
+  ],
+  "title": "Palestro ambush",
+  "summary": "The English Wikipedia article \"Palestro ambush\", at revision 1371094744, opens: \"The Palestro ambush, or Djerrah ambush, took place on 18 May 1956, during the Algerian War, near the village of Djerrah in the region of Palestro in Kabylie. A section of about forty men from the National Liberation Army (ALN) under the command of Lieutenant Ali Khodja ambushed a unit of 21 men from the 9th Colonial Infantry Regiment of the French Army commanded by Second Lieutenant Hervé Artur.\" Wikidata item Q3052126, whose own description reads \"1956 military operation in the Algerian War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1956,
+    "end": 1956,
+    "date": "1956-05-18"
+  },
+  "place": "lakhdaria",
+  "region": null,
+  "regionNote": null,
+  "parent": "algerian-war",
+  "category": "war",
+  "actors": []
+}

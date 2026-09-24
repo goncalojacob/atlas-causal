@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-pusan-perimeter--battle-of-unsan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Unsan\", revision 1370276047, § Background"
+    }
+  ],
+  "from": "battle-of-the-pusan-perimeter",
+  "to": "battle-of-unsan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Unsan article traces the Chinese intervention back to the breakout: \"After breaking out of the Pusan Perimeter at the south-east tip of the Korean peninsula in September, the UNC offensive pursued the Korean People's Army (KPA) through South Korea, into North Korea, and toward the Sino-Korean border\", and then \"In response to the rapid KPA collapse and the UNC advance toward the Chinese border, Chairman Mao Zedong ordered the People's Liberation Army's North East Frontier Force to be reorganized into the People's Volunteer Army (PVA) for the upcoming intervention in Korea.\" The advance the perimeter released is what the First Phase Campaign was aimed at, and Unsan was fought inside it. Probable: Wikipedia alone.",
+  "dispute": null
+}

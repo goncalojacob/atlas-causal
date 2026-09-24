@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2020-malian-coup-d-etat--moura-massacre--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moura massacre\", revision 1370628775, § Background"
+    }
+  ],
+  "from": "2020-malian-coup-d-etat",
+  "to": "moura-massacre",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The massacre's own § Background is a chain of three sentences from the coup to the force that carried the massacre out: France \"announced after the 2020 Malian coup d'état their intention to gradually reduce the number of French forces and withdraw them from the country. Mali has since looked for other ways to acquire foreign help, and has received help from Wagner Group, a Russian private military company.\" The lead names Wagner, with the Malian army, as who carried the massacre out. Precondition and not cause: the article argues why those troops were in Mali, not why they killed. Probable: Wikipedia alone.",
+  "dispute": null
+}

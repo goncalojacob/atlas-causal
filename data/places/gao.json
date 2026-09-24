@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gao",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q188904 for batch 50: the city five of the vein's rows name, and the place battle-of-gao and second-battle-of-gao both stand on. A9's two steps agree here — the battles' own P625 is the city's own point."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q188904",
+  "wikipedia": {
+    "en": "Gao",
+    "pt": "Gao"
+  },
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Gao"
+  ],
+  "where": {
+    "lon": -0.05,
+    "lat": 16.266666666667,
+    "precision": "city",
+    "label": "Gao"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
