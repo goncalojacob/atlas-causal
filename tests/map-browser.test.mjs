@@ -7,6 +7,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readdir, readFile } from 'node:fs/promises';
 import {
   withBrowser, open, waitFor, until, seenIntro, skip, settledShards,
 } from './browser.mjs';
@@ -1795,6 +1796,27 @@ test('the rivers, the lakes, the regions and the peaks are named under the citie
   });
 });
 
+// Every name an active place record could be labelled by, for the records the
+// city mapping does not match: those are the ones the map names from the
+// record itself rather than leaving to Natural Earth's city.
+const ourOwnPlaceNames = async () => {
+  const root = new URL('../data/', import.meta.url);
+  const mapping = JSON.parse(await readFile(new URL('imports/naturalearth-places.json', root), 'utf8'));
+  const matched = new Set(Object.values(mapping.entries ?? {}).map((e) => e.place));
+  const names = new Set();
+  for (const file of await readdir(new URL('places/', root))) {
+    if (!file.endsWith('.json')) continue;
+    const place = JSON.parse(await readFile(new URL(`places/${file}`, root), 'utf8'));
+    if (place.status !== 'active' || matched.has(place.id)) continue;
+    if (place.where?.label) names.add(place.where.label);
+    for (const name of place.names ?? []) names.add(name);
+    for (const name of Object.values(place.historicalNames ?? {})) {
+      if (typeof name === 'string') names.add(name);
+    }
+  }
+  return names;
+};
+
 test('a place this atlas names and Natural Earth has no city for is on the map, from the record', { skip }, async () => {
   await wide(async (page, url) => {
     // Thirteen of the twenty-six place records have no Natural Earth city, and
@@ -1809,9 +1831,15 @@ test('a place this atlas names and Natural Earth has no city for is on the map, 
     await waitFor(page, 'return document.querySelectorAll("#map .layer-base-cities circle").length > 100;',
       'the cities of the near level');
     const said = new Set((await page.eval(LABELS)).map((l) => l.text));
-    const ours = ['Alvor, Algarve', 'Belém, Lisbon', 'Central Portugal', 'Lajes, Terceira',
-      'Pedrógão Grande', 'Parque das Nações, Lisbon', 'Flanders, near Laventie'];
-    assert.ok(ours.some((name) => said.has(name)),
+    // **The seven names this listed until M42b batch 25 were a sample and the
+    // sample went stale**: the batch wrote fifteen more Iberian place records
+    // with no Natural Earth city, the label placer preferred them, and a test
+    // that names its examples failed although the thing it is about — a record
+    // of ours, labelled from itself, on the map — was true fifteen times over.
+    // So the set is read off the data instead: every active place the city
+    // mapping does not match is one Natural Earth has no city for here.
+    const ours = await ourOwnPlaceNames();
+    assert.ok([...said].some((name) => ours.has(name)),
       `one of this atlas's own places is named: ${[...said].join(' · ')}`);
 
     // And a record that *has* a city is left to the city, whether or not the
