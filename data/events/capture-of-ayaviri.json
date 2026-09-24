@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-ayaviri",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q140157741",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Capture of Ayaviri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q140157741"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Ayaviri\", revision 1370608267"
+    }
+  ],
+  "title": "Capture of Ayaviri",
+  "summary": "The English Wikipedia article \"Capture of Ayaviri\", at revision 1370608267, opens: \"The Capture of Ayaviri took place on December 6, 1780, in the town of Ayaviri. Rebel troops led by Túpac Amaru II took control of the town with little Spanish resistance. The capture was part of Túpac Amaru II's plan to expand in the Lake Titicaca and possibly unite with the rebels in Charcas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q140157741, imported by tools/import/wikidata.mjs. The item's own description reads \"1780 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-12-06"
+  },
+  "place": "ayaviri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "rebellion-of-tupac-amaru-ii"
+}

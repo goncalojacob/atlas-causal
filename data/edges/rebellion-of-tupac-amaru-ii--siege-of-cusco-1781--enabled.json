@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    },
+    {
+      "source": "walker-2014-the-tupac-amaru-rebellion",
+      "locator": "the offensive against Cusco, December 1780"
+    }
+  ],
+  "from": "rebellion-of-tupac-amaru-ii",
+  "to": "siege-of-cusco-1781",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article gives the march on Cusco as a move the rising made out of its own position, and gives the reason in one sentence: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** The sentence before it says what he was anticipating — **\"Túpac Amaru had received news of an impending attack on Tinta, which was why he quickly returned to Tungasuca\"** — and the one after it that \"the rebel leader began preparations for the great expedition against Cusco\", the army departing on 20 December with some five thousand armed men. This is an edge from an umbrella to one of its own parts, written because `parent` is a display fact that never enters the adjacency: the three months of rising that put an army outside Cusco are the argument, and without this edge the graph could not walk it. `enabled` and not `caused`: the article gives the decision to Túpac Amaru and a warning about Tinta, not to the rising as such. Walker is the work the article itself cites through this stretch; it is cited and not read, which is why the confidence stays `probable`.",
+  "dispute": null
+}
