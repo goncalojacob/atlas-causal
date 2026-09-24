@@ -19515,6 +19515,94 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-05",
+      "from": "the-extermination-of-the-jews-1941-1945",
+      "id": "the-extermination-of-the-jews-1941-1945--european-convention-on-human-rights--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a14-holocaust-divided"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "to": "european-convention-on-human-rights",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "from": "the-extermination-of-the-jews-1941-1945",
+      "id": "the-extermination-of-the-jews-1941-1945--genocide-convention--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a14-holocaust-divided"
+        ],
+        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "to": "genocide-convention",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "the-extermination-of-the-jews-1941-1945",
+      "id": "the-extermination-of-the-jews-1941-1945--warsaw-ghetto-uprising--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a14-holocaust-divided"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "to": "warsaw-ghetto-uprising",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "the-first-columbian-voyage-1492",
       "id": "the-first-columbian-voyage-1492--indigenous-depopulation-of-the-greater-antilles--caused",
@@ -19631,119 +19719,6 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-05",
-      "from": "the-holocaust",
-      "id": "the-holocaust--european-convention-on-human-rights--reacted-to",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "european-convention-on-human-rights",
-      "type": "reacted-to"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-15",
-      "from": "the-holocaust",
-      "id": "the-holocaust--genocide-convention--caused",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted"
-        ],
-        "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates.",
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "genocide-convention",
-      "type": "caused"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-21",
-      "from": "the-holocaust",
-      "id": "the-holocaust--porajmos--enabled",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "porajmos",
-      "type": "enabled"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-21",
-      "from": "the-holocaust",
-      "id": "the-holocaust--warsaw-ghetto-uprising--reacted-to",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "warsaw-ghetto-uprising",
-      "type": "reacted-to"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
       "created": "2026-09-18",
       "from": "the-impeachment-of-dilma-rousseff-2016",
       "id": "the-impeachment-of-dilma-rousseff-2016--the-2018-brazilian-general-election--precondition-of",
@@ -19762,6 +19737,35 @@
       "status": "active",
       "to": "the-2018-brazilian-general-election",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-21",
+      "from": "the-persecution-of-the-jews-1933-1941",
+      "id": "the-persecution-of-the-jews-1933-1941--porajmos--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a14-holocaust-divided"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "to": "porajmos",
+      "type": "enabled"
     },
     {
       "authors": [

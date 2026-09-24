@@ -3987,11 +3987,12 @@
           "imported-facts",
           "m42-umbrella",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Afghan Conflict"
     },
@@ -4302,7 +4303,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Anglo-Irish Treaty"
     },
@@ -4563,11 +4564,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Arab–Israeli conflict"
     },
@@ -4842,13 +4844,14 @@
           "standing-backfilled",
           "imported-by-wikidata",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Arusha Accords"
+      "title": "Arusha Accords (Rwanda)"
     },
     {
       "authors": [
@@ -7882,13 +7885,14 @@
         "flags": [
           "imported-facts",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Battle of San Carlos"
+      "title": "Battle of San Carlos (1982)"
     },
     {
       "authors": [
@@ -8114,13 +8118,14 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Battle of St. Quentin"
+      "title": "Battle of St. Quentin (1557)"
     },
     {
       "authors": [
@@ -8302,7 +8307,8 @@
       ],
       "category": "war",
       "cites": [
-        "meneses-2004-portugal-1914-1926"
+        "meneses-2004-portugal-1914-1926",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -8314,13 +8320,14 @@
       "parent": "world-war-i",
       "review": {
         "flags": [
-          "m69-categorised"
+          "m69-categorised",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-20",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Battle of the Lys"
+      "title": "Battle of the Lys (1918)"
     },
     {
       "authors": [
@@ -8943,13 +8950,14 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Black Monday"
+      "title": "Black Monday (1987)"
     },
     {
       "authors": [
@@ -9830,11 +9838,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Catatumbo campaign"
     },
@@ -9957,14 +9966,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "end-unstated",
           "a9-place",
           "summary-from-lead"
         ],
         "note": "The interval read 1827 with no end, which is Wikidata P580 for Q1072889 taken alone. The same item’s own English description, which this record cites and its summary quotes, reads “1812-1827 war between patriots and royalists”, and this atlas holds battles of this war at 1814 and 1817. The English article, revision 1371212438, states no years in its lead, so A7 does not reach it; the span is settled from the cited item against itself. A reviewer should read the article’s infobox.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Chilean War of Independence"
     },
@@ -10162,11 +10170,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Colombian conflict"
     },
@@ -10192,12 +10201,13 @@
         "flags": [
           "imported-facts",
           "m42-umbrella",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "note": "A9's place pass of 2026-09-23 gave this event the place colombia-q739, from P17, Q739.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Colombian conflict (2018–present)"
     },
@@ -10916,12 +10926,13 @@
           "imported-facts",
           "summary-drafted",
           "facts-thin",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "note": "The bibliography holds nothing on the pandemic: this record and its edge stand on the two cached Wikipedia leads and the Wikidata item alone, which is why the edge is `probable` and not `consensus` (rule 22 would forbid consensus here in any case). A reviewer should add a source before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "COVID-19 pandemic"
     },
@@ -10955,12 +10966,13 @@
           "imported-facts",
           "summary-drafted",
           "facts-thin",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "note": "As with the pandemic record itself: the bibliography holds nothing on COVID-19, so this record and its edges stand on the cached Wikipedia leads and the Wikidata item. A reviewer should add a source before signing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "COVID-19 pandemic in Europe"
     },
@@ -11334,14 +11346,15 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "title-from-article"
         ],
         "note": "A7: the end was 2008. At the cached revision 1373825853 the article's title reads \"Darfur genocide (2003-2005)\" and its lead dates the killing \"between 2003 and 2005\"; the 2003-2008 figure in the next sentence is the War in Darfur's, which this record's parent holds. So the end is 2005; the start and 23 February 2003 stand.",
         "status": "draft"
       },
       "revised": "2026-09-24",
       "status": "active",
-      "title": "Darfur genocide"
+      "title": "Darfur genocide (2003–2005)"
     },
     {
       "authors": [
@@ -11863,13 +11876,14 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Eastern Front"
+      "title": "Eastern Front (World War II)"
     },
     {
       "authors": [
@@ -13916,11 +13930,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "full-scale Russo-Ukrainian war"
     },
@@ -13952,11 +13967,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Gaza genocide"
     },
@@ -13987,11 +14003,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Gaza War"
     },
@@ -15870,12 +15887,13 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "note": "Wikidata Q179275 names 19 participants (P710) and the atlas holds an actor for 3 of them, so this list is partial: 16 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "insurgency in Khyber Pakhtunkhwa"
     },
@@ -15907,14 +15925,15 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "title-from-article"
         ],
         "note": "A7: the span was 28 February 1998 alone, the day the Kosovo War opened, which is the day this insurgency ended. At the cached revision 1370623741 the article's title reads \"(1995-1998)\", its first sentence \"began in 1995\" and its third \"would lead to the more intense Kosovo War in February 1998\". So 1995-1998, keeping 28 February 1998 as the end day; the start day goes.",
         "status": "draft"
       },
       "revised": "2026-09-24",
       "status": "active",
-      "title": "Insurgency in Kosovo"
+      "title": "Insurgency in Kosovo (1995–1998)"
     },
     {
       "authors": [
@@ -16245,13 +16264,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Iraqi insurgency"
+      "title": "Iraqi insurgency (2003–2011)"
     },
     {
       "authors": [
@@ -16912,12 +16932,13 @@
           "m42-reinstated",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "note": "Wikidata Q1413732 names 3 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Kashmir conflict"
     },
@@ -17764,13 +17785,14 @@
           "standing-backfilled",
           "imported-by-wikidata",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Libyan Civil War"
+      "title": "Libyan civil war (2011)"
     },
     {
       "authors": [
@@ -18037,11 +18059,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Mali War"
     },
@@ -18708,13 +18731,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Mountain War"
+      "title": "Mountain War (Lebanon)"
     },
     {
       "authors": [
@@ -18914,13 +18938,15 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Myanmar Civil War"
+      "title": "Myanmar civil war (2021–present)"
     },
     {
       "authors": [
@@ -19822,7 +19848,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "the-holocaust",
+      "parent": "the-extermination-of-the-jews-1941-1945",
       "review": {
         "flags": [
           "imported-facts",
@@ -19831,7 +19857,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Operation Reinhard"
     },
@@ -20229,13 +20255,14 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Paris Peace Conference"
+      "title": "Paris Peace Conference (1919–1920)"
     },
     {
       "authors": [
@@ -21403,11 +21430,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Republican insurgency in Afghanistan"
     },
@@ -21985,11 +22013,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Russo-Ukrainian war"
     },
@@ -24063,11 +24092,12 @@
           "standing-backfilled",
           "imported-by-wikidata",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "end-unstated"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Somali Civil War"
     },
@@ -24133,14 +24163,15 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "note": "Wikidata Q2479435 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "South Lebanon conflict"
+      "title": "South Lebanon conflict (1985–2000)"
     },
     {
       "authors": [
@@ -25595,6 +25626,43 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wikipedia-pt",
+        "wikidata"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "the-extermination-of-the-jews-1941-1945",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a14-holocaust-divided"
+        ],
+        "note": "A14(6), brief §5: the second half of what was one record, the-holocaust, and the one that inherits its item, its article and three of its four edges. The span is the cited article's at revision 1376446924: the lead dates the systematic murder \"From 1941 to 1945\" and § Mass shooting says it \"began in the Soviet Union in 1941\". Filed under world-war-ii, whose span holds it; §5 asked for an edge from the war and C8 suspends a parent-to-child edge, so the filing carries it and no edge is written.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The extermination of the Jews, 1941–1945"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -25635,41 +25703,6 @@
         }
       ],
       "cites": [
-        "wikipedia-en",
-        "wikipedia-pt",
-        "wikidata"
-      ],
-      "created": "2026-09-05",
-      "degree": 4,
-      "id": "the-holocaust",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-drafted",
-          "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": "2026-09-22",
-      "status": "active",
-      "title": "The Holocaust"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        },
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
         "wikidata",
         "wikipedia-en"
       ],
@@ -25680,7 +25713,7 @@
         "tool": "wikidata"
       },
       "parent": [
-        "the-holocaust",
+        "the-extermination-of-the-jews-1941-1945",
         "world-war-ii"
       ],
       "review": {
@@ -25729,6 +25762,37 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "The impeachment of Dilma Rousseff, 2016"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "the-persecution-of-the-jews-1933-1941",
+      "kind": "event",
+      "origin": {
+        "run": "m42",
+        "tool": "assistant"
+      },
+      "parent": null,
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a14-holocaust-divided"
+        ],
+        "note": "A14(6), brief §5: the first half of what was one record, the-holocaust, dated 1933–1945. The division and both spans are the cited article's at revision 1376446924, which dates the first measures to 1933, the violence of this period \"from 1933 to 1939\", and the beginning of the systematic murder to 1941, where this record ends and the other begins. The article also speaks of persecutions \"from 1933 to 1945\", so 1941 is the boundary between two things and not the end of persecution.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The persecution of the Jews, 1933–1941"
     },
     {
       "authors": [
@@ -26262,13 +26326,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Treaty of Bucharest"
+      "title": "Treaty of Bucharest (1913)"
     },
     {
       "authors": [
@@ -26482,7 +26547,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Treaty of London (1913)"
     },
@@ -26616,13 +26681,14 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Treaty of Paris"
+      "title": "Treaty of Paris (1951)"
     },
     {
       "authors": [
@@ -26823,13 +26889,14 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Treaty of Rapallo"
+      "title": "Treaty of Rapallo (1922)"
     },
     {
       "authors": [
@@ -26965,13 +27032,14 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Treaty of Tartu"
+      "title": "Treaty of Tartu (Estonia–Russia)"
     },
     {
       "authors": [
@@ -27109,14 +27177,15 @@
           "summary-drafted",
           "m22-reinstated",
           "m67-lined",
-          "a9-place"
+          "a9-place",
+          "title-from-article"
         ],
         "note": "Retracted in M21 under the two-edge rule and reinstated in M22 under the rule the owner set on 4 September 2026: one honest edge, in either direction, is enough to keep an event. The M21 note said this record had exactly one, and named it; the edge M22 wrote is that one.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "Treaty of Windsor"
+      "title": "Treaty of Windsor (1899)"
     },
     {
       "authors": [
@@ -27601,12 +27670,13 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "participants-from-p710"
+          "participants-from-p710",
+          "end-unstated"
         ],
         "note": "Wikidata Q136090852 names 7 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "United States military campaign against cartels"
     },
@@ -28141,14 +28211,15 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "note": "Wikidata Q1072042 names 11 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 10 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
-      "title": "War in Somalia"
+      "title": "War in Somalia (2006–2009)"
     },
     {
       "authors": [
@@ -28395,13 +28466,14 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "title-from-article"
         ],
         "status": "draft"
       },
       "revised": "2026-09-24",
       "status": "active",
-      "title": "War over Water"
+      "title": "War over Water (Jordan River)"
     },
     {
       "authors": [
@@ -29948,6 +30020,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "the-holocaust-in-romania",
+      "kind": "event",
+      "message": "the event is part of \"the-extermination-of-the-jews-1941-1945\" and is not dated inside it",
+      "rule": "child-outside-parent"
     },
     {
       "id": "the-holocaust-in-romania",

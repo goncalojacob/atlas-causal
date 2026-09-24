@@ -138,11 +138,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -250,12 +251,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "title-not-english"
+          "title-not-english",
+          "a14-summary-nulled"
         ],
         "note": "The item carries a label only in Spanish, so the import fell back to the QID for the id, the label and the names. Both are the item's own field read as it stands — \"Alegría de Pío\" — and not a translation or a correction; the title-not-english flag stays so a reviewer sees where the name came from.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -678,11 +680,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -823,11 +826,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -873,11 +877,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -900,11 +905,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -954,11 +960,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -980,11 +987,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1086,11 +1094,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1201,11 +1210,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1282,11 +1292,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1311,11 +1322,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1499,11 +1511,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1787,11 +1800,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1871,11 +1885,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -1930,11 +1945,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2123,11 +2139,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2150,11 +2167,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2178,11 +2196,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2293,11 +2312,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2349,11 +2369,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2377,11 +2398,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2541,11 +2563,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2660,11 +2683,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2686,11 +2710,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2858,11 +2883,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2887,11 +2913,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2915,12 +2942,13 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "note": "Written by the import from Q36027, the Battle of Điện Biên Phủ's `P276`, whose own `P625` is the battle's coordinate to two places — the shape `karameh` took in batch 42. Two corrections by hand: the id, because `slug()` strips combining marks and `Đ` is U+0110 and decomposes into nothing, so the tool wrote `ien-bien-phu-city` (deviation 1233); and the precision, from the import's hard-coded `point` to `city`, which is A12 (2)'s rule read off the class Q3249005.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -2965,11 +2993,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -3495,11 +3524,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -3720,11 +3750,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -4125,11 +4156,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -4211,11 +4243,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -4270,11 +4303,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -4638,11 +4672,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -5063,11 +5098,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -5269,12 +5305,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "note": "Written by the import for Q2592647, the town `battle-of-karameh` names in its `P276` and whose `P625` is the battle's own point to two places. The precision the import writes is hard-coded `point`; A12 (2) says it comes from the item's class, and the class here is Q486972, human settlement, so it is `city`.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -5866,11 +5903,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6154,11 +6192,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6210,11 +6249,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6236,11 +6276,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6365,32 +6406,8 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 7,
       "id": "london",
-      "kind": "place",
-      "names": [
-        "London"
-      ],
-      "origin": {
-        "run": "m50",
-        "tool": "assistant"
-      },
-      "review": {
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "created": "2026-09-22",
-      "degree": 2,
-      "id": "london-q84",
       "kind": "place",
       "names": [
         "London",
@@ -6400,16 +6417,17 @@
         "London UK"
       ],
       "origin": {
+        "run": "m50",
         "tool": "assistant"
       },
       "review": {
         "flags": [
-          "imported-facts",
-          "a9-place"
+          "a14-merged"
         ],
+        "note": "A14(6): london-q84, written by A9 on 22 September from Q84, is merged into this record — one point, one city, two ids. Q84 and the item’s other names come across with it, and the two events that pointed at the other id point here.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6544,11 +6562,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6570,11 +6589,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -6596,11 +6616,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7010,11 +7031,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7036,11 +7058,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7179,11 +7202,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7206,11 +7230,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7265,11 +7290,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7375,11 +7401,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7521,11 +7548,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7575,11 +7603,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7601,11 +7630,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -7764,7 +7794,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "nazi-germany-q7318",
       "kind": "place",
       "names": [
@@ -7858,11 +7888,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -8000,11 +8031,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -8435,11 +8467,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -8849,11 +8882,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9083,11 +9117,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9109,11 +9144,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9135,11 +9171,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9589,11 +9626,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9616,11 +9654,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9674,11 +9713,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9702,11 +9742,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9789,11 +9830,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9815,11 +9857,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -9869,11 +9912,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10543,11 +10587,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10569,11 +10614,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10648,11 +10694,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10708,11 +10755,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10735,11 +10783,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10787,11 +10836,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10874,11 +10924,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10902,11 +10953,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -10929,11 +10981,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11231,11 +11284,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11342,11 +11396,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11456,11 +11511,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11603,11 +11659,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11894,11 +11951,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11948,11 +12006,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12201,11 +12260,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12334,11 +12394,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12526,11 +12587,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12734,11 +12796,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12846,11 +12909,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12903,11 +12967,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -12986,11 +13051,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13308,11 +13374,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13481,11 +13548,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13508,11 +13576,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13535,11 +13604,12 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13704,231 +13774,22 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a14-summary-nulled"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active"
     }
   ],
   "schema": 1,
   "warnings": [
     {
-      "id": "ajdabiya",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "alegria-de-pio",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "ayacucho",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bani-walid",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "baracoa",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "bartolome-maso-cuba",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bastille",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bay-of-gibraltar",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bayamo",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "benghazi",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bin-jawad",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bogota",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "bolivar-department",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "breitenfeld-leipzig",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "cajamarca",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "caribbean-sea",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "catatumbo-river",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "champ-de-mars",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "chapinero",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "chateau-de-saint-cloud",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "chiquinquira",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "cienfuegos",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "cochabamba-department",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "crete",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "cundinamarca-department",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "cusco",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "department-of-ica",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "department-of-junin",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "dien-bien-phu",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "domokos",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "falkland-islands",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "freiburg-im-breisgau",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "goose-green",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "grytviken",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "guaviare-department",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "incheon",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "ipatiev-house",
@@ -13937,118 +13798,10 @@
       "rule": "place-unused"
     },
     {
-      "id": "jankov-benesov-district",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "karameh",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "kwantung-peninsula",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "lens-pas-de-calais",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "liaodong-peninsula",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "liaoyang",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "lushunkou",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "lutter-am-barenberge",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "lutzen",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "matanzas",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "mayari",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "minas-gerais-captaincy",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "misiones-orientales",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "mitu",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "monastir-vilayet",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "montevideo",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "mount-kent",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "mount-longdon",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "mount-simon",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "near-east",
@@ -14057,262 +13810,16 @@
       "rule": "place-unused"
     },
     {
-      "id": "neiva",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "nordlingen",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "oriente-province",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "pebble-island",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "place-de-la-concorde",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "pleasant-peak",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "plzen",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "prague-castle",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "prison-de-l-abbaye",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "provence",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "pueblo-rico",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "rain-swabia",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "rancagua",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "ras-lanuf",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "saint-denis",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
     },
     {
-      "id": "saint-quentin",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "salle-du-jeu-de-paume",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "san-carlos-water",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "san-jacinto",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "san-miguel-de-tucuman",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "san-vicente-del-caguan",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "santa-clara-cuba",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "santander-department",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "santiago",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "shenyang",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "sierra-maestra",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "smolensk-voivodeship",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "south-georgia",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "stanley",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "stralsund",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "tenochtitlan",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "thule-island",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "tuileries-palace",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "uraba-choco",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "uss-missouri",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "valladolid",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "velestino",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "versailles-yvelines",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "west-falkland",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "yaguajay-cuba",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "yalu-river",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "yellow-sea",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "zawiya-libya",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     }
   ]
 }

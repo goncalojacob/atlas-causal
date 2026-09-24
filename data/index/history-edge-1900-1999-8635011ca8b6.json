@@ -5318,7 +5318,7 @@
         }
       ]
     },
-    "the-holocaust--european-convention-on-human-rights--reacted-to": {
+    "the-extermination-of-the-jews-1941-1945--european-convention-on-human-rights--reacted-to": {
       "from": "git",
       "versions": [
         {
@@ -5331,33 +5331,69 @@
             "review"
           ],
           "on": "2026-09-05"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
-    "the-holocaust--genocide-convention--caused": {
+    "the-extermination-of-the-jews-1941-1945--genocide-convention--caused": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-15"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
-    "the-holocaust--porajmos--enabled": {
+    "the-extermination-of-the-jews-1941-1945--warsaw-ghetto-uprising--reacted-to": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
-    "the-holocaust--warsaw-ghetto-uprising--reacted-to": {
+    "the-persecution-of-the-jews-1933-1941--porajmos--enabled": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        },
+        {
+          "fields": [
+            "aliases",
+            "from",
+            "id",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
