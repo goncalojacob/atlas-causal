@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Aftermath"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Motta (1513)\", revision 1370446782, § Background"
+    }
+  ],
+  "from": "battle-of-novara-1513",
+  "to": "battle-of-la-motta-1513",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Novara article ends: \"The French defeat forced Louis XII to withdraw from Milan and Italy.\" The La Motta article begins from what that withdrawal left Venice holding: \"The Venetian commander, Bartolomeo d'Alviano, unexpectedly left without French support, retreated into the region of Veneto, pursued closely by the Spanish army under Ramón de Cardona.\" `precondition-of`: being without the French ally is the state the October battle begins from; neither article says Novara brought La Motta about. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

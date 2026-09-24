@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-padua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q2284174",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Siege of Padua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2284174"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Padua\", revision 1370744265"
+    }
+  ],
+  "title": "Siege of Padua",
+  "summary": "The English Wikipedia article \"Siege of Padua\", at revision 1370744265, opens: \"The siege of Padua was a major engagement early in the War of the League of Cambrai.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2284174, imported by tools/import/wikidata.mjs. The item's own description reads \"1509 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509,
+    "date": "1509-09-15",
+    "endDate": "1509-09-30"
+  },
+  "place": "padua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-cambrai"
+}

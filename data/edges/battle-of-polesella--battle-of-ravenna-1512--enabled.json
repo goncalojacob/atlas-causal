@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-polesella--battle-of-ravenna-1512--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857, § Decline of the League of Cambrai"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ravenna (1512)\", revision 1370587274, § Prelude"
+    }
+  ],
+  "from": "battle-of-polesella",
+  "to": "battle-of-ravenna-1512",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The War of the League of Cambrai article takes the line from the one to the other in three stated steps. After Polesella: \"Faced with a shortage of both funds and men, the Senate decided to send an embassy to Julius in order to negotiate a settlement\", concluded on 15 February 1510. Then: \"By concluding peace with the Venetians, the pope effectively left the League of Cambrai\", and, \"increasingly concerned by the growing French presence in Italy\", \"the Pope hired an army of Swiss mercenaries, ordering them to attack the French in Milan; he also invited Venice to ally with him against Louis.\" The Ravenna article is the French army fighting that alignment: Nemours \"was determined to force the main army of the Holy League into battle\". `enabled` and not `caused`: Polesella is what pushed Venice to the settlement that turned the Pope against France, and the article makes the reversal of alliances, not the river defeat, what put the two armies at Ravenna. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

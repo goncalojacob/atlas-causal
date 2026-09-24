@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-novara-1513--battle-of-marignano--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marignano\", revision 1370449034, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Aftermath"
+    }
+  ],
+  "from": "battle-of-novara-1513",
+  "to": "battle-of-marignano",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Marignano article names Novara as what the 1515 campaign was fought to undo: \"The campaign of Marignano followed years of Swiss successes, during which French fortunes in northern Italy had suffered greatly. The Swiss had taken control of Milan (for France the gateway to Italy) after their victory at the Battle of Novara (1513), and returned to its ducal throne Maximilian Sforza, son of Ludovico Sforza, to make Milan a protectorate of Switzerland.\" The Novara article says the same from its own end: \"The French defeat forced Louis XII to withdraw from Milan and Italy.\" `precondition-of`: Swiss-held Milan is the position Francis I crossed the Alps against, which is the article's own account and stops short of saying the battle caused the campaign. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-padua--battle-of-polesella--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857, § War of the League of Cambrai"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Polesella\", revision 1370586353"
+    }
+  ],
+  "from": "siege-of-padua",
+  "to": "battle-of-polesella",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The War of the League of Cambrai article runs the two together in one paragraph: the defenders \"managed to hold the city until Maximilian, growing impatient, lifted the siege on 1 October and withdrew to Tyrol with the main part of his army\", and then \"In mid-November, Pitigliano returned to the offensive, recapturing Vicenza, Este, Feltre, and Belluno... Angelo Trevisan organized a river attack on Ferrara by the Venetian galley fleet, but the resulting Battle of Polesella ended in another defeat for the Republic when the Venetian ships anchored in the Po River were sunk by Ferrarese artillery.\" The Polesella article says the same fleet \"was moored on the river Po, waiting for the right moment to attack Ferrara\". `precondition-of`: holding Padua is what freed the Venetian counter-offensive the river attack was part of; the article does not say the siege caused the attack to be made. Probable: Wikipedia alone, at two revisions.",
+  "dispute": null
+}

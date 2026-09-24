@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-agnadello",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one."
+  },
+  "wikidata": "Q1754732",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Agnadello",
+    "pt": "Batalha de Agnadello"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1754732"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Agnadello\", revision 1370431087"
+    }
+  ],
+  "title": "Battle of Agnadello",
+  "summary": "The English Wikipedia article \"Battle of Agnadello\", at revision 1370431087, opens: \"The Battle of Agnadello, also known as Vailà, was fought on 14 May 1509 between the army of King Louis XII of France and the Venetian rear-guard elements commanded by Bartolomeo d'Alviano. After a three hour struggle, and after Bartolomeo found himself abandoned by a part of his army, the Venetians were defeated with losses in excess of 4,000 men. Louis then occupied the rest of Lombardy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1754732, imported by tools/import/wikidata.mjs. The item's own description reads \"1509 battle during the War of the League of Cambrai\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509,
+    "date": "1509-05-14"
+  },
+  "place": "agnadello",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-league-of-cambrai"
+}
