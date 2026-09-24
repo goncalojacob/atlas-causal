@@ -3826,6 +3826,39 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "action-of-12-17-january-1640",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 12–17 January 1640"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5389,6 +5422,72 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Batepá massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-in-the-bay-of-sao-salvador",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "date-from-article"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. A7: the item gives 1627 and no day; the article's own first sentence dates the action to 3 March 1627, at the revision cited, so the day is written from it.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle in the Bay of São Salvador"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-abrolhos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Abrolhos"
     },
     {
       "authors": [
@@ -11515,7 +11614,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 6,
+      "degree": 8,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "names": [
@@ -23295,6 +23394,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "siege-of-salvador-1638",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "date-from-article"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. A7: the item's P580 is 1 May 1638 and the article says the siege \"took place between April and May 1638\", at the revision cited, so the start is widened to April and the end left at the item's own 18 May.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Salvador (1638)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "siege-of-stralsund-1628",
       "kind": "event",
@@ -28932,6 +29065,12 @@
     },
     {
       "id": "bala-hissar-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-in-the-bay-of-sao-salvador",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

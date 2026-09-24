@@ -7649,6 +7649,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "dutch-brazil-1630-1654",
+      "id": "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-abrolhos",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "dutch-brazil-1630-1654",
       "id": "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of",
@@ -7666,6 +7694,34 @@
       "status": "active",
       "to": "conquest-of-paraiba",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "dutch-brazil-1630-1654",
+      "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-salvador-1638",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -17179,6 +17235,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-tsushima",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "siege-of-salvador-1638",
+      "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "action-of-12-17-january-1640",
       "type": "precondition-of"
     },
     {

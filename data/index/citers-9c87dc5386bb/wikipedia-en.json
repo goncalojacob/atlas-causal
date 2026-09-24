@@ -2570,6 +2570,18 @@
     },
     {
       "dissent": false,
+      "id": "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814, § Background"
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of",
       "kind": "edge",
       "locator": "\"Conquest of Paraíba\", revision 1370612312, § Details"
@@ -2579,6 +2591,18 @@
       "id": "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of",
       "kind": "edge",
       "locator": "\"Dutch Brazil\", revision 1371124077"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
+      "kind": "edge",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
     },
     {
       "dissent": false,
@@ -4823,6 +4847,18 @@
       "id": "siege-of-port-arthur--battle-of-tsushima--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
+      "kind": "edge",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
     },
     {
       "dissent": false,
@@ -7256,6 +7292,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-12-17-january-1640",
+      "kind": "event",
+      "locator": "\"Action of 12–17 January 1640\", revision 1370425892"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
@@ -7493,6 +7535,18 @@
       "id": "batepa-massacre",
       "kind": "event",
       "locator": "\"Batepá massacre\", revision 1366289250"
+    },
+    {
+      "dissent": false,
+      "id": "battle-in-the-bay-of-sao-salvador",
+      "kind": "event",
+      "locator": "\"Battle in the Bay of São Salvador\", revision 1373418032"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-abrolhos",
+      "kind": "event",
+      "locator": "\"Battle of Abrolhos\", revision 1370430814"
     },
     {
       "dissent": false,
@@ -10271,6 +10325,12 @@
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "\"Siege of Port Arthur\", revision 1373678673"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-salvador-1638",
+      "kind": "event",
+      "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
     },
     {
       "dissent": false,

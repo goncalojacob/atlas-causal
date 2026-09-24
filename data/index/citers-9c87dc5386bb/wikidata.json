@@ -2192,6 +2192,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-12-17-january-1640",
+      "kind": "event",
+      "locator": "Q4677243"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "Q2405009"
@@ -2441,6 +2447,18 @@
       "id": "batepa-massacre",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "battle-in-the-bay-of-sao-salvador",
+      "kind": "event",
+      "locator": "Q122056040"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-abrolhos",
+      "kind": "event",
+      "locator": "Q2890640"
     },
     {
       "dissent": false,
@@ -5117,6 +5135,12 @@
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "Q210800"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-salvador-1638",
+      "kind": "event",
+      "locator": "Q932845"
     },
     {
       "dissent": false,

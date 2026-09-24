@@ -8,6 +8,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "abrolhos-archipelago",
+      "kind": "place",
+      "names": [
+        "Abrolhos Archipelago"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "adwa",
@@ -874,6 +902,34 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "bay-of-all-saints",
+      "kind": "place",
+      "names": [
+        "Bay of All Saints"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground.",
         "status": "draft"
       },
       "revised": null,
@@ -4328,6 +4384,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "ilha-de-itamaraca",
+      "kind": "place",
+      "names": [
+        "Ilha de Itamaracá"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground.",
         "status": "draft"
       },
       "revised": null,
@@ -10215,7 +10299,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 6,
       "id": "salvador",
       "kind": "place",
       "names": [
