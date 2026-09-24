@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "xinhai-revolution--sino-indian-war--precondition-of",
   "kind": "edge",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "edge-drafted",
-      "a13-relations-pass"
+      "a13-relations-pass",
+      "a14-chronology-dropped"
     ]
   },
   "origin": {
@@ -35,5 +36,9 @@
   "type": "precondition-of",
   "confidence": "probable",
   "explanation": "The Aksai Chin section makes the revolution the shift in China after which the British held the Johnson Line without enforcing it — the line the war was fought over. The article reads: \"Following the Xinhai Revolution in 1911 which resulted in power shifts in China, the fall of Tzarist Russia in 1917 and the end of World War I in 1918, the British officially used the Johnson Line but had lost the urgency to enforce this boundary.\"",
-  "dispute": null
+  "dispute": null,
+  "retraction": {
+    "on": "2026-09-24",
+    "reason": "A14(4): one of the eleven A13 edges whose quote opens \"Following\", \"After\" or \"In the aftermath\", re-read under the fire's own refusal class — chronology with no claim in it. A13 asks for an edge where the article states that one event caused, enabled, preceded or reacted to the other, and here the sentence says the British \"officially used the Johnson Line but had lost the urgency to enforce this boundary\" following the revolution. The war of 1962 is fifty-one years on and the sentence makes no claim about it. The 24 September review read it in full and called it chronology. The quote stays in this record; what is withdrawn is the claim that the article made the link."
+  }
 }

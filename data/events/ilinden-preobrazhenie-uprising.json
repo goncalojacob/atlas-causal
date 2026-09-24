@@ -17,15 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a14-lane-guard"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it."
   },
   "origin": {
     "tool": "wikidata"
@@ -56,7 +57,7 @@
     "end": 1903,
     "endDate": "1903-10"
   },
-  "place": "monastir-vilayet",
+  "place": null,
   "region": "asia",
   "actors": []
 }

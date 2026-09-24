@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class C. The treaty of 1967 has one available neighbour in this atlas, the Charter, on the ground that the treaty was negotiated in a United Nations committee. Portugal is a party and no Portuguese event here touches it. The edge that could be written would be indistinguishable from the edge to every other United Nations instrument, and a round whose whole point is honest connection should not write it."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The treaty of 1967 still has one available neighbour here, the Charter, on the ground that it was negotiated in a United Nations committee, and that edge would be indistinguishable from the same edge on any other multilateral treaty. The world corpus has added no space record for it to reach. It stays retracted under the new bar."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q256608",

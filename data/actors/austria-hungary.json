@@ -9,11 +9,15 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "cshapes"
   },
@@ -21,20 +25,29 @@
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 300"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q28513, P2046 (area) and P1082 (population, 1914)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austria-Hungary\", revision 1375906665"
     }
   ],
   "actorType": "polity",
   "names": [
     "Austria-Hungary"
   ],
-  "summary": "Entity 300 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to 1918. Its last capital in the dataset is Vienna. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 676,615 km² and about 52.8 million people (1914), from Wikidata's Q28513 (P2046, P1082). The English Wikipedia article \"Austria-Hungary\", at revision 1375906665, opens: \"Austria-Hungary, also referred to as the Austro-Hungarian Empire and officially as the Austro-Hungarian Monarchy, was a multi-national empire in Central Europe under a constitutional dual monarchy that existed between 1867 and 1918. A military and diplomatic real union, it consisted of two largely self governing states with a single monarch who was titled both the Emperor of Austria and the Apostolic King of Hungary. Austria-Hungary constituted the last phase in the constitutional evolution of the Habsburg monarchy: it was formed with the Austro-Hungarian Compromise of 1867 in the aftermath of the Austro-Prussian War, following wars of independence by Hungary in opposition to Habsburg rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 300 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to 1918. Its last capital in the dataset is Vienna. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": 1918

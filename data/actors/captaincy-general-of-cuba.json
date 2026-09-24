@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant",
     "run": "m53"
@@ -21,7 +21,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m53-polities"
+      "m53-polities",
+      "polity-description"
     ],
     "note": "M53: written on Wikidata’s Q2039931 — P571 1607-01-01, P576 1898 — to carry the century between `cuba-spain` (to 1782) and `cuba-under-spain` (from 1886), which is where `the-cuban-sugar-boom` sits. It overlaps both and no relation is written to either: whether these are one record under three labels is the M49 question and is a person’s. It holds no ground."
   },
@@ -33,13 +34,21 @@
     {
       "source": "wikidata",
       "locator": "Q2039931, P576 1898"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2039931, P571 and P576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Captaincy General of Cuba\", revision 1368931206"
     }
   ],
   "actorType": "polity",
   "names": [
     "Captaincy General of Cuba"
   ],
-  "summary": "A polity whose inception Wikidata states as 1607 on Q2039931 and whose dissolution it states as 1898. Both years here are those two values and nothing else. It is the Spanish government of Cuba, and it is written because `the-cuban-sugar-boom` runs from 1791 to 1886 and the atlas had nothing alive across it: `cuba-spain` ends 1782, `cuba-under-spain` begins 1886 where CShapes begins, and between them a century of the thing the chain is about had no actor. It holds no territory; the island’s outlines belong to the records already there.",
+  "summary": "Wikidata's Q2039931 gives it neither an area nor a population. The English Wikipedia article \"Captaincy General of Cuba\", at revision 1368931206, opens: \"The Captaincy General of Cuba was an administrative district of the Spanish Empire created in 1607 as part of Habsburg Spain's attempt to better defend and administer its Caribbean possessions. The reform also established captaincies general in Puerto Rico, Guatemala and Yucatán.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1607 on Q2039931 and whose dissolution it states as 1898. Both years here are those two values and nothing else. It is the Spanish government of Cuba, and it is written because `the-cuban-sugar-boom` runs from 1791 to 1886 and the atlas had nothing alive across it: `cuba-spain` ends 1782, `cuba-under-spain` begins 1886 where CShapes begins, and between them a century of the thing the chain is about had no actor. It holds no territory; the island’s outlines belong to the records already there.",
   "when": {
     "start": 1607,
     "end": 1898

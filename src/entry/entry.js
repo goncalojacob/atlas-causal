@@ -69,8 +69,8 @@ function wikipediaHtml(record, languages) {
 // the record rests on but the entry never names is still listed, unnumbered,
 // because the record rests on it either way.
 function citationHtml(source, { mark = null, locators = [], links = createLinks() } = {}) {
-  const ids = identifiers(source).map(({ label, href }) => (href
-    ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
+  const ids = identifiers(source).map(({ label, href, title }) => (href
+    ? `<a href="${esc(href)}" rel="noopener" target="_blank"${title ? ` title="${esc(title)}"` : ''}>${esc(label)}</a>`
     : `<span class="unsafe-url">${esc(label)}</span>`));
   return `<li class="citation" id="entry-cite-${esc(source.id)}">
     ${mark === null ? '' : `<span class="cite-number">[${esc(mark)}]</span>`}

@@ -9,11 +9,15 @@
     {
       "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": "2026-09-16",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "basemaps"
   },
@@ -21,7 +25,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m52-russia"
+      "m52-russia",
+      "polity-description"
     ],
     "note": "M52: this record and `soviet-union` are two of the three polities CShapes carried under gwcode 365. Its interval is now Wikidata’s Q34266 — P571 1721-10-22, P576 1917-09-01 — and it holds entity 365’s first three periods; the third runs to 1917-12-05 because CShapes draws no boundary on the day Wikidata gives, and cutting one there would invent a border. No succession is written to what follows: five years stand between this end and the Soviet Union’s start. See docs/m52-russia.md."
   },
@@ -41,13 +46,21 @@
     {
       "source": "wikidata",
       "locator": "Q34266, P576 1917-09-01"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q34266, P2046 (area) and P1082 (population, 1916)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Empire\", revision 1376138418"
     }
   ],
   "actorType": "polity",
   "names": [
     "Russian Empire"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1783, 1800, 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors’ work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1783 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields. M52 then set its interval to 1721–1917, the inception and dissolution Wikidata states for Q34266, and gave it the first three periods CShapes draws for entity 365, which run to 1917-12-05; both years are that claim and neither is either dataset’s, and review.note says so.",
+  "summary": "Approximately 21,800,251 km² and about 181.5 million people (1916), from Wikidata's Q34266 (P2046, P1082). The English Wikipedia article \"Russian Empire\", at revision 1376138418, opens: \"The Russian Empire was an empire that extended across northern Eurasia from 1721 until the proclamation of the Russian Republic in 1917, forming the final era of Tsarist Russia and the wider Russian monarchy. At its height in the late 19th century, it covered about 22,800,000 km2 (8,800,000 sq mi), roughly one-sixth of the world's landmass, making it the third-largest empire in history, behind only the British and Mongol empires. The 1897 Russian census found a population of 126 million with considerable ethnic, linguistic, religious, and socioeconomic diversity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity the Historical Basemaps dataset draws in the snapshots for 1783, 1800, 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors’ work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1783 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields. M52 then set its interval to 1721–1917, the inception and dissolution Wikidata states for Q34266, and gave it the first three periods CShapes draws for entity 365, which run to 1917-12-05; both years are that claim and neither is either dataset’s, and review.note says so.",
   "when": {
     "start": 1721,
     "end": 1917

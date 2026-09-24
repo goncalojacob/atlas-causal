@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant"
   },
   "review": {
     "status": "draft",
     "flags": [
-      "m52-russia"
+      "m52-russia",
+      "polity-description"
     ],
     "note": "M52: written to carry the middle of CShapes’ gwcode 365, which held three polities under one label. Its dates are Wikidata’s Q15180: P571 1922-12-30, the normal-rank value — the 1923-07-06 inception, the constitution, is deprecated there — and P576 1991-12-26. Nine of its nineteen periods begin before 1922 and are flagged m52-gap: CShapes draws entity 365 continuously across those years and whose ground it was is open. See docs/m52-russia.md."
   },
@@ -36,13 +37,21 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 365"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q15180, P2046 (area) and P1082 (population, 1989)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet Union\", revision 1375523844"
     }
   ],
   "actorType": "polity",
   "names": [
     "Soviet Union"
   ],
-  "summary": "A polity whose inception Wikidata states as 1922-12-30 on Q15180 and whose dissolution it states as 1991-12-26. The same item carries a second inception, 1923-07-06, and that value is deprecated there, so this record takes the first and says so. Its name is its own and not CShapes’ label for entity 365, which reads \"Russia (Soviet Union)\" and covers three polities at once; its territory is that entity’s: the dataset draws 24 periods for it between 1886 and 2019 under a single label covering three polities, and M52 gave this record the nineteen that run from the Russian Empire’s last period to 1991-12-20. Nine of those nineteen begin before 1922. CShapes draws that ground continuously and Wikidata names no polity holding it, so they are carried here and flagged rather than assigned to a record invented for them.",
+  "summary": "Approximately 22,402,200 km² and about 293 million people (1989), from Wikidata's Q15180 (P2046, P1082). The English Wikipedia article \"Soviet Union\", at revision 1375523844, opens: \"The Soviet Union, officially the Union of Soviet Socialist Republics (USSR), was a transcontinental country that spanned much of Eurasia from its formation in 1922 until its dissolution in 1991. It was the world's third-most populous country, the largest by area, and bordered twelve other countries. A diverse multinational state, it was organized as a federal union of national republics, with the largest and most populous being the Russian Soviet Federative Socialist Republic (SFSR).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1922-12-30 on Q15180 and whose dissolution it states as 1991-12-26. The same item carries a second inception, 1923-07-06, and that value is deprecated there, so this record takes the first and says so. Its name is its own and not CShapes’ label for entity 365, which reads \"Russia (Soviet Union)\" and covers three polities at once; its territory is that entity’s: the dataset draws 24 periods for it between 1886 and 2019 under a single label covering three polities, and M52 gave this record the nineteen that run from the Russian Empire’s last period to 1991-12-20. Nine of those nineteen begin before 1922. CShapes draws that ground continuously and Wikidata names no polity holding it, so they are carried here and flagged rather than assigned to a record invented for them.",
   "when": {
     "start": 1922,
     "end": 1991

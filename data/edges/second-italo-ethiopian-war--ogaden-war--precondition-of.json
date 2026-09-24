@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
   "kind": "edge",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "edge-drafted",
-      "a13-relations-pass"
+      "a13-relations-pass",
+      "a14-chronology-dropped"
     ]
   },
   "origin": {
@@ -35,5 +36,9 @@
   "type": "precondition-of",
   "confidence": "probable",
   "explanation": "The Ogaden war’s article dates the single administration over the disputed ground — the thing the war was fought about — from the Italian conquest’s end. The article reads: \"Following the end of the Second Italo-Ethiopian War in 1937, and the outbreak of World War II, the Ogaden was united under a single administration with the British and Italian Somaliland's.\"",
-  "dispute": null
+  "dispute": null,
+  "retraction": {
+    "on": "2026-09-24",
+    "reason": "A14(4): one of the eleven A13 edges whose quote opens \"Following\", \"After\" or \"In the aftermath\", re-read under the fire's own refusal class — chronology with no claim in it. A13 asks for an edge where the article states that one event caused, enabled, preceded or reacted to the other, and here what the sentence says followed the war of 1935–1937 is that \"the Ogaden was united under a single administration\" — an administrative arrangement, not the war of 1977 forty years later, which the sentence never mentions. The quote stays in this record; what is withdrawn is the claim that the article made the link."
+  }
 }

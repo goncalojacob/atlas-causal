@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. Portugal was among the first states to ratify the Istanbul convention, in February 2013, and that is exactly the kind of edge this round wanted; the atlas holds no record of the ratification, and no Portuguese event of the law on domestic violence before or after it, so there is no Portuguese end to attach. Named in docs/m44-connections.md as work the atlas needs."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The atlas holds no Portuguese event of the law on domestic violence and no other state’s ratification of the Istanbul convention, and the world corpus has added nothing it touches. Its only available neighbours here are the European treaties, and an edge to those would be true of a dozen records and argue nothing. It stays retracted under the new bar and not under M44b’s."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q1697391",

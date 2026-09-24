@@ -165,8 +165,15 @@ function makeHeap(ends) {
 // timeline writes every bar's title beside it, and two bars that do not
 // overlap whose titles do are two titles nobody can read. It is a function of
 // the event because the room a title needs is the length of the title.
+//
+// `before` is the same question on the other side (M86 §4). A bar so near the
+// right edge that its title would run off the pane is written to the *left* of
+// it instead, and ground reserved on the wrong side is ground two titles are
+// packed into. The sweep stays monotone because the items are sorted by where
+// each one *starts* — its bar's x less whatever it reserves before it — and
+// released against the same number.
 export function packRows(events, scale, width, {
-  gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity, extra = null,
+  gap = 4, minBar = 6, openEnd = null, affinity = null, maxRows = Infinity, extra = null, before = null,
 } = {}) {
   const items = events
     .map((event) => ({
@@ -174,8 +181,10 @@ export function packRows(events, scale, width, {
       event,
       ...barBox(event, scale, { width, openEnd, minBar }),
       room: extra ? extra(event) : 0,
+      room0: before ? before(event) : 0,
     }))
-    .sort((a, b) => a.x - b.x || byId(a.id, b.id));
+    .map((item) => ({ ...item, from: item.x - item.room0 }))
+    .sort((a, b) => a.from - b.from || byId(a.id, b.id));
   const assigned = new Map();
   // A row is the x it ends at and nothing else, so the rows are one array of
   // numbers: what is in a row is `assigned`, and which keys it carries is
@@ -206,11 +215,11 @@ export function packRows(events, scale, width, {
   const carrying = new Map();
 
   for (const item of items) {
-    // Everything the sweep has passed is free from here on: `item.x` only
+    // Everything the sweep has passed is free from here on: `item.from` only
     // grows, so this is a release and never a re-test. Each row is released
     // at most once per bar it took, so the whole of this loop over the whole
     // pack is one pop per bar.
-    while (pending.size && ends[pending.peek()] + gap <= item.x) setFree(pending.pop());
+    while (pending.size && ends[pending.peek()] + gap <= item.from) setFree(pending.pop());
 
     // The lowest free row is what first fit means, and it is also what says
     // whether the affinity has anything to choose among: a preference only

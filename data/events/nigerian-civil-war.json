@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A, and this is the retraction most worth undoing. Portugal was Biafra’s lifeline: the relief and arms airlift flew out of Portuguese São Tomé, and Lisbon gave the secessionists the diplomatic room it did because Lagos was backing the movements fighting Portugal in Angola, Guinea and Mozambique. That is a real edge with a real argument behind it, and it cannot be written because its Portuguese end is not a record: the atlas holds no event of Portugal’s Biafra policy and no event of the São Tomé airlift. Writing an edge from the Nigerian war to the war in Angola would put the claim on the wrong pair. Named in docs/m44-connections.md as work the atlas needs."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The African corpus has grown around it and the Portuguese one it needed is here — angolan-war-of-independence, filed under the colonial war — but the sentences that would carry the edge do not. The article, at revision 1376166092, says \"Portuguese pilots also served in the Biafran Air Force, transporting weapons from Portugal to Biafra\" and describes the airlift through São Tomé; it names Portugal and no event this atlas holds, and it does not say the war in Angola is why Lisbon did it. That last sentence is the edge, and it wants a source the atlas can open. Still the retraction most worth undoing, and now for one sentence rather than for a rule."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q829875",

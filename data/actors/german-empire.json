@@ -11,11 +11,15 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-17",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "cshapes"
   },
@@ -35,13 +39,21 @@
     {
       "source": "wikidata",
       "locator": "Q43287, P576 1918-11-09"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q43287, P571 and P576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German Empire\", revision 1376320372"
     }
   ],
   "actorType": "polity",
   "names": [
     "German Empire"
   ],
-  "summary": "A polity whose inception Wikidata states as 1871-01-01 on Q43287 and whose dissolution it states as 1918-11-09. Both years here are those two values. Its territory is CShapes’ entity 255, which the dataset labels \"Germany (Prussia)\" and draws in four periods from 1886 to 1945 — a label and a span covering three polities at once: M55 gave this record the first period, cut at the Empire’s cited dissolution, and the Weimar Republic and the Nazi state the rest. It also carries the two Historical Basemaps snapshots of 1878 and 1880, merged in from `germany`: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both years fall inside these dates, which is the question docs/m51-overlaps.md left open and could not answer without them. The eighteen colonial presences that name this record as their sovereign run from 1886 to 1916 and are all inside its interval.",
+  "summary": "Wikidata's Q43287 gives it neither an area nor a population. The English Wikipedia article \"German Empire\", at revision 1376320372, opens: \"The German Empire, also referred to as Imperial Germany or the Second Reich, was the period of the German Reich from the unification of Germany in 1871 until the November Revolution in 1918, when Germany changed its form of government to a republic. The German Empire consisted of 25 states, each with its own nobility: four constituent kingdoms, six grand duchies, five duchies, seven principalities, three free Hanseatic cities, and one imperial territory. While Prussia was only one of the four kingdoms in the realm, it contained about two-thirds of the Empire's population and territory, and Prussian dominance was also constitutionally established, since the king of Prussia was also the German Emperor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1871-01-01 on Q43287 and whose dissolution it states as 1918-11-09. Both years here are those two values. Its territory is CShapes’ entity 255, which the dataset labels \"Germany (Prussia)\" and draws in four periods from 1886 to 1945 — a label and a span covering three polities at once: M55 gave this record the first period, cut at the Empire’s cited dissolution, and the Weimar Republic and the Nazi state the rest. It also carries the two Historical Basemaps snapshots of 1878 and 1880, merged in from `germany`: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both years fall inside these dates, which is the question docs/m51-overlaps.md left open and could not answer without them. The eighteen colonial presences that name this record as their sovereign run from 1886 to 1916 and are all inside its interval.",
   "when": {
     "start": 1871,
     "end": 1918
@@ -56,7 +68,8 @@
     "status": "draft",
     "flags": [
       "m55-germany",
-      "m55-joined"
+      "m55-joined",
+      "polity-description"
     ],
     "note": "M55: this record was named \"Germany (Prussia)\" and was one record for three polities, 1886 to 1945. It is now the German Empire alone, on Wikidata’s Q43287 — P571 1871-01-01, P576 1918-11-09 — and the Weimar Republic and the Nazi state carry the rest. `germany` is merged into it: the outlines either side of the 1885/1886 seam share 98.24% of the smaller and both snapshots fall inside these dates. Its eighteen colonial dependencies all run 1886–1916 and are untouched."
   }

@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "the-holocaust",
   "kind": "event",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "the-extermination-of-the-jews-1941-1945",
   "aliases": [],
   "authors": [
     {
@@ -17,26 +17,19 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
-    ]
+      "a9-place",
+      "a14-holocaust-divided"
+    ],
+    "note": "A14(6), brief §5: divided into the-persecution-of-the-jews-1933-1941 and the-extermination-of-the-jews-1941-1945, at the boundary the cited article states at revision 1376446924. The item, the article and three of the four edges went to the second, which is why this record is superseded by that one; the porajmos edge went to the first, because it argues from the Nuremberg Laws of 1935."
   },
   "origin": {
     "tool": "wikidata"
-  },
-  "wikidata": "Q2763",
-  "wikipedia": {
-    "en": "The Holocaust",
-    "pt": "Holocausto"
-  },
-  "sitelinks": {
-    "count": 173,
-    "on": "2026-09-05"
   },
   "sources": [
     {

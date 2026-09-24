@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b as redundant, which is its own small class. The same import created records of the First and the Second Balkan war, and this round wired both — the first into the second and each of them into Sarajevo, which is where the historiography puts the claim this series record would have carried. Every edge available to it is carried by one of its two parts, and three records of two wars is less of the atlas rather than more. Nothing was lost but a duplicate: the item Q165725 stays on the tombstone, and a future run that wants the series as such should merge it rather than write a third."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Both parts are in the atlas and both are wired — first-balkan-war into second-balkan-war and each of them into Sarajevo — so a series record joining them would say what the two already say, and C8 suspends an edge from a series to its own parts anyway. Retracted as redundant, which was its class in M44b too and is not the Portuguese rule. Under A6 it is the umbrella the two wars would be filed under, which needs a filing pass and not an edge."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q165725",

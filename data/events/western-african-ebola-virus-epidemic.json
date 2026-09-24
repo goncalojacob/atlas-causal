@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A. The nearest Portuguese ground is Guinea-Bissau, a neighbour of the outbreak’s three countries and a member of the community of Portuguese-speaking states, and the atlas holds no record of Guinea-Bissau after 1973 and no record of the epidemic reaching it. An edge from the founding of the CPLP in 1996 to an epidemic in 2013 would argue nothing at all, which is the shape of edge this round exists to refuse."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Both wars the epidemic’s three countries came out of are in the atlas now, sierra-leone-civil-war and second-liberian-civil-war, and covid-19-pandemic is here too. The article, at revision 1376198977, does not draw the line: it describes the epidemic’s course country by country and states no relation to either war or to any later pandemic. The neighbours arrived and the sentence did not."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q15989108",

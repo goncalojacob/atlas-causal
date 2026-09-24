@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "the-extermination-of-the-jews-1941-1945",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a14-holocaust-divided"
+    ],
+    "note": "A14(6), brief §5: the second half of what was one record, the-holocaust, and the one that inherits its item, its article and three of its four edges. The span is the cited article's at revision 1376446924: the lead dates the systematic murder \"From 1941 to 1945\" and § Mass shooting says it \"began in the Soviet Union in 1941\". Filed under world-war-ii, whose span holds it; §5 asked for an edge from the war and C8 suspends a parent-to-child edge, so the filing carries it and no edge is written."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2763",
+  "wikipedia": {
+    "en": "The Holocaust",
+    "pt": "Holocausto"
+  },
+  "sitelinks": {
+    "count": 173,
+    "on": "2026-09-05"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1376446924, lead and § Mass shooting"
+    },
+    {
+      "source": "wikipedia-pt",
+      "locator": "\"Holocausto\", revision 72716958"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2763"
+    }
+  ],
+  "title": "The extermination of the Jews, 1941–1945",
+  "summary": "The English Wikipedia article \"The Holocaust\", at revision 1376446924, opens: \"From 1941 to 1945, Nazi Germany and its collaborators systematically murdered around six million Jews across German-occupied Europe, approximately two-thirds of Europe's Jewish population.\" Its § Mass shooting states: \"The systematic murder of Jews began in the Soviet Union in 1941.\" The murders were committed by mass shootings across eastern Europe and by poison gas in the extermination camps of Auschwitz-Birkenau, Treblinka, Bełżec, Sobibor, Chełmno and Majdanek in occupied Poland. That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. This record is one half of the-holocaust, divided under the owner's instruction of 16 September; the other half is the-persecution-of-the-jews-1933-1941.",
+  "when": {
+    "start": 1941,
+    "end": 1945
+  },
+  "place": "nazi-germany-q7318",
+  "region": "europe",
+  "parent": "world-war-ii",
+  "actors": [
+    {
+      "actor": "nazi-germany",
+      "role": "perpetrator"
+    }
+  ]
+}

@@ -7172,3 +7172,614 @@ merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
   and deviation **1407** proposes the split — `m42` from 1400 upward, `m42b`
   continuing the shared sequence. It is a proposal the assistant may overrule,
   but a fire that ignores it re-collides the same day.
+
+## A14 (1) — the fifteen intervals, read off the leads already on disk
+
+*24 September, the 04:58Z fire. No import, no network: every span below was
+read from `tools/import/cache/wikipedia/`, the same file the record's own
+summary quotes, at the revision that file carries.*
+
+The 23 September A7 pass reported *"no record's cited article states a wider
+span than the record carries"* and the 24 September review found fifteen where
+it does. The pass was reading the item, not the lead. This one reads the lead:
+for each of the fifteen, the first sentence of the cached article (or, for
+three of them, the article's own title, which is part of the same revision) is
+the authority, the clause that states the span is written into a
+`wikipedia-en` locator beside the citation already there, and `review.note`
+says what the span was, what the article says and what was left alone. Every
+quote was checked against the cache before anything was written; a quote the
+cache does not hold would have stopped the pass.
+
+| record | was | now | the clause |
+| --- | --- | --- | --- |
+| `cambodian-vietnamese-war` | 1989–1991 | **1978–1989** | "an armed conflict from 1978 to 1989" |
+| `rif-war` | 1911–1927 | **1921–1926** | "fought from 1921 to 1926" |
+| `wadai-war` | 1906 | **1906–1912** | "from 1906 to 1912" |
+| `great-depression` | 1929–1941 | **1929–1939** | "a severe global economic downturn from 1929 to 1939" |
+| `la-violencia` | 1949–1958 | **1948–1958** | "a ten-year wave ... from 1948 to 1958" |
+| `south-sudanese-civil-war` | 2013–2020 | **2013–2018** | "fought from 2013 to 2018" |
+| `tambov-rebellion` | June 1921 | **1920–1922** | "The Tambov Rebellion of 1920–1922" |
+| `indochina-wars` | 1946–1989 | **1945–1991** | "waged in Indochina from 1945 to 1991" |
+| `first-italo-ethiopian-war` | 1894–1896 | **1895–1896** | "fought between Italy and Ethiopia from 1895 to 1896" |
+| `the-holocaust-in-romania` | 1941–1943 | **1940–1944** | "between 1940 and 1944" |
+| `massacres-of-poles-in-volhynia-and-eastern-galicia` | 1942–1944 | **1943–1945** | "from 1943 to 1945" |
+| `insurgency-in-kosovo` | 1998-02-28 alone | **1995–1998** | title "(1995–1998)"; "began in 1995" |
+| `darfur-genocide` | 2003–2008 | **2003–2005** | title "(2003–2005)"; "killed between 2003 and 2005" |
+| `1957-1958-influenza-pandemic` | 1956–1958 | **1957–1958** | "The 1957–1958 Asian flu pandemic" |
+| `2011-bahraini-uprising` | 2011–open | **2011–2014** | "from 2011 until 2014" |
+
+**Counts.** 15 records rewritten, all `active`, all flagged `a7-widened`; 15
+locators added. Eleven spans are wider than they were and four narrower —
+`rif-war`, `south-sudanese-civil-war`, `darfur-genocide` and
+`first-italo-ethiopian-war`, where the record held the campaigns or the
+aftermath around the thing and the article holds the thing. **No edge fails
+rule 4 after them, so none was disputed and none dropped**; the validator goes
+from 493 warnings to **492** (0 errors), the one lost being
+`span-vs-article-title` on `darfur-genocide`. Corpus unchanged: **858 active,
+242 main, 616 filed, 843 edges, largest component 609**.
+
+**Eight days go with the dates that carried them**, because the article gives
+the bound no day: `cambodian-vietnamese-war` (both), `rif-war` (both),
+`la-violencia`, `south-sudanese-civil-war` (its end), `tambov-rebellion`
+(both), `first-italo-ethiopian-war` (its start) and `insurgency-in-kosovo`
+(its start). A day is kept only where it still marks the bound the article
+states: Wall Street on 29 October 1929, Addis Ababa on 23 October 1896,
+Juba on 15 December 2013, Darfur on 23 February 2003, the Pearl Roundabout on
+14 February 2011, and 28 February 1998, which the Kosovo article puts in the
+month it names as the insurgency's close.
+
+**Deviation 1408.** *The schema's limits are what a quoted locator is written
+to, not an afterthought.* A locator is 200 characters and a review note 500;
+the first draft of this pass quoted whole first sentences and wrote nine
+`rule 1` errors before a byte of it was believed. The pass now checks both
+lengths itself and refuses rather than writing, and quotes the clause that
+states the span instead of the sentence around it. A quoted clause is still
+verbatim and still findable in the article; a truncated one would not be.
+
+**`2011-bahraini-uprising` is closed here and not in A14(6)**, which asks for
+the same record under the same rule. Its section says so, and the record's own
+note says it takes no `end-unstated` flag.
+
+## A14 (2) — the lane guard over the 566 places A9 wrote before it
+
+*24 September, the 04:58Z fire. No import, no network: the guard is
+`deriveRegion` over the place records already on disk.*
+
+Deviation 1402 added a guard to A9 on 24 September — *the pass refuses a link
+whose point falls in a different lane from the record's own* — after `P17`
+offered Madrid for the Mexican War of Independence. It was added after 410
+places had been written on 22 September and never run over them. This pass
+runs it over all of them: **566 `a9-place` events carry a place; 6 fail; 6
+places cleared, every `region` kept.** They are the six the review named, and
+no seventh.
+
+| event | its lane | the place it had | the place's lane |
+| --- | --- | --- | --- |
+| `great-depression` | americas | `afghanistan-q889` | asia |
+| `1948-arab-israeli-war` | asia | `sinai-peninsula` | africa |
+| `yom-kippur-war` | africa | `near-east` | asia |
+| `japanese-instrument-of-surrender` | asia | `uss-missouri` | americas |
+| `execution-of-the-romanov-family` | asia | `ipatiev-house` | europe |
+| `ilinden-preobrazhenie-uprising` | asia | `monastir-vilayet` | europe |
+
+**Counts.** 566 scanned, 6 cleared, 0 errors; warnings go from 492 to **496**,
+the four new ones being `place-unused` on `ipatiev-house`,
+`monastir-vilayet`, `near-east` and `uss-missouri`, which no event cites now.
+Each of the six keeps its lane, takes the flag `a14-lane-guard` in place of
+`a9-place`, and says in `review.note` what it had and why it went. Corpus
+unchanged: **858 active, 242 main, 616 filed, 843 edges, largest component
+609**. The scan is now clean: re-run, it reports nothing.
+
+**Four of the six are what the guard is for.** The Great Depression was drawn
+in Kabul, the first of the nine countries `Q8698` names under `P17`. The
+Japanese Instrument of Surrender was drawn at the `uss-missouri`'s berth in
+Pearl Harbor, in the Americas lane, for a signing in Tokyo Bay — the same
+defect one step further on, because a ship's `P625` is where the ship is now.
+The 1948 war sat on the Sinai, which is one front and not the war; the Yom
+Kippur War sat on the `near-east`, which is the other front and not the war
+either.
+
+**Deviation 1409.** *Two of the six failed on the lane polygon, not on the
+place, and the guard cannot tell the difference.* `ipatiev-house` is exactly
+where the Romanovs were shot, and Yekaterinburg is east of the Urals, so the
+disagreement is between `data/geo/regions.json`'s Europe–Asia boundary and the
+lane the event's own point was given at import — not between the record and
+the world. `monastir-vilayet` is exactly where the Ilinden uprising was, and
+there the record's **own** lane is the wrong half: `asia`, from the Ottoman
+point the import read, against an uprising in Macedonia. The guard is
+mechanical and was run as A14(2) writes it, so both places are cleared and
+both lanes kept — which in the Ilinden case leaves a Macedonian uprising in
+the Asia lane with no place at all, a worse picture than the one it replaced.
+**The narrow question for the owner is one line: where the guard fires, which
+of the two does it clear — the place, always, or the one that disagrees with
+the record's title?** A fire cannot decide that without a rule; what it can do
+is not hide it, which is this paragraph.
+
+**What this does not touch.** The 21 country-placed events whose place appears
+nowhere in their title or summary (review finding 1) pass the guard, because
+their place is in the right lane; `world-war-ii` at `russia` is the example
+the review gives. That is the owner's question — *may a multi-valued `P17`
+place an event at all* — and not this pass's.
+
+## A14 (3) — the evidence put on disk at the revision it is cited at
+
+*24 September, the 04:58Z fire. The only pass of this fire that leaves the
+sandbox: 1,014 revisions resolved to their items through `api.php`, 357 leads
+fetched through the REST summary endpoint.*
+
+The 24 September review, finding 5: *"the evidence the last two days cite is
+not on disk"* — the curation fires read whole articles live at the current
+revision, cited that revision, and never refreshed the cache, so 118
+citations named a revision `tools/import/cache/wikipedia/` did not hold and
+several hundred more named an article it had never seen. A citation whose
+revision only exists on Wikipedia's servers is checkable, but not by
+`review.html` offline, and not by the next fire, which re-fetches what the
+last one already read.
+
+**The endpoint.** `summaryUrl()` in `tools/import/wikidata.mjs` uses
+`/api/rest_v1/page/summary/{title}`; the same endpoint takes a revision as a
+second path segment, `/{title}/{revid}`, and answers with the same envelope —
+`extract` and `revision` — at that revision. So the text that lands is the
+same shape as the 1,069 leads already on disk, written by the same code path,
+and no second shape enters the cache. The action API is used for one thing
+only: which Wikidata item each cited revision belongs to, 50 revisions a call,
+because the cache is filed by item.
+
+**Two sweeps, because the first chose badly.** The first cached, per item, the
+best of the revisions it still had to fetch — and an article cited at two
+revisions, one of them already on disk, could lose the one on disk. The second
+counts every citation of every article first and caches the revision the most
+citations name, ties to the later, which is the fewest citations left pointing
+at text the cache does not hold.
+
+| | before | after |
+| --- | --- | --- |
+| article references in `wikipedia-en` citations on active records | 1,927 | 1,927 |
+| **cached at the revision cited** | 1,342 | **1,854** |
+| cached only at another cited revision of the same article | 578 | **72** |
+| the cache has never seen | 6 | **0** |
+| locators naming no article | 1 | 1 |
+
+**Counts.** 357 cache entries written (323 in the first sweep, 34 in the
+second), 0 refused, 0 revisions the API could not place. Nothing under `data/`
+changed, so the corpus, the index and the validator are exactly where A14(2)
+left them: **858 active, 242 main, 616 filed, 843 edges, largest component
+609, 0 errors, 496 warnings**.
+
+**Deviation 1410.** *The summary endpoint answers with `revision` as a string,
+and a pass that believes `Number.isInteger` refuses all 323 of its own
+fetches.* `fetchLeads()` has coerced it since the import was written —
+`Number.isInteger(body?.revision) ? body.revision : Number(body?.revision)` —
+and this pass reimplemented the check without the coercion, wrote nothing, and
+reported *"no extract at that revision"* 323 times for 323 good answers. A
+pass that writes nothing and blames the source is the failure mode worth
+naming: the first reading of that report was that the endpoint has no
+summaries at old revisions, which one `curl` disproved.
+
+**The 72 that are left are the cache's shape and not this pass's reach.** They
+are 59 articles that two or more records cite at different revisions — `Great
+Depression`, `World War I`, `Algerian War` and `Gaza war` at five each — and
+the cache holds one lead per item per language, so one of the revisions must
+lose. Which one it is is now the most-cited rather than the last written.
+Making it hold more is a change to `schema/v1/wikipedia-lead.json` and to how
+the file is named, which the review itself puts to the owner.
+
+**Six citations name a title the cache files under another name** and are
+*not* among the 72: the lead is on disk at exactly the revision cited, under
+the article's own title. `battle-of-musa-dagh` cites "Musa Dagh Resistance"
+and the article is "Musa Dagh"; `eritrean-civil-wars` cites "Eritrean Civil
+Wars" and the article is "Eritrean War of Independence"; likewise
+"Moncada Barracks", "Indo-Pakistani war of 1971" and "Revolution in the
+Kingdom of Poland (1905–1907)". A reviewer following the revision lands in the
+right place; a reader following the title does not. Correcting a locator is
+correcting what a record says it read, which is a reading and not a sweep, so
+this pass leaves them and names them.
+
+## A14 (4) — the three A13 edges corrected, and the eleven "Following" quotes read again
+
+*24 September, the 04:58Z fire. No import: every sentence below was already
+in the record it is quoted in, and A14(3) has just put every one of the cited
+revisions on disk.*
+
+The 24 September review read ten of the 63 `a13-relations-pass` edges in full
+and found five sound, one mistyped, two at the wrong endpoint and two
+chronology, and named eleven more whose quote opens "Following", "After" or
+"In the aftermath" — the fire's own refusal class.
+
+**The three named.**
+
+- `great-depression--siamese-revolution-of-1932` was `caused` on a quote that
+  says *"contributed to"*, which the same fire typed `precondition-of`
+  elsewhere and said why. Retyped through `tools/migrate/ids.mjs`, which is
+  the one thing that tool will do to a derived id — *"only the type may be
+  corrected here"* — so the former id stays in `aliases` and a link shared
+  yesterday still resolves.
+- `six-day-war--bangladesh-liberation-war--inspired` rested on *"The attack
+  was modeled on the Israeli Air Force's Operation Focus during the Six-Day
+  War"*, which is the Pakistani pre-emptive strike of 3 December 1971 — the
+  opening of the Indo-Pakistani war, not of a liberation war already nine
+  months old. `ids.mjs` refuses to move an end, and rightly: an edge with
+  another end is another record. So the old edge is **withdrawn with its
+  reason** and `six-day-war--india-pakistan-war-of-1971--inspired` carries the
+  same quote and the same citation.
+- `february-revolution--russian-civil-war--caused` is right and its label was
+  not: the explanation said *"the civil war's own lead"* where the locator
+  says, correctly, the February Revolution's. Only the article the explanation
+  names is changed.
+
+**The eleven, under one test.** A13 asks for an edge *where the article states
+that one caused, enabled, preceded or reacted to the other*. So: does the
+quoted sentence name both ends, or state the relation between them? "Following
+X, Z happened", where Z is not the `to` record, is the article stating what
+followed X — and the edge is the run's own inference from it. **Nine fail that
+test and are withdrawn; two pass and stay.**
+
+| kept | why |
+| --- | --- |
+| `soviet-afghan-war--afghan-civil-war-q1980081` | *"…leading to the toppling of the government by the mujahideen in 1992 and the start of a second Afghan Civil War"* — names the `to` and states the chain |
+| `world-war-i--treaty-of-lausanne` | *"…a war that eventually resulted in a massive population exchange between the two countries under the Treaty of Lausanne"* — names both ends |
+
+| dropped | what the sentence actually says followed |
+| --- | --- |
+| `boxer-rebellion--soviet-japanese-border-conflicts` | Russia and Japan "vying for control" — the rivalry of 1904, 33 years short |
+| `first-sino-japanese-war--soviet-japanese-border-conflicts` | the same sentence, 38 years short |
+| `february-revolution--execution-of-the-romanov-family` | the Romanovs "imprisoned in the Alexander Palace" |
+| `second-italo-ethiopian-war--ogaden-war` | "the Ogaden was united under a single administration" |
+| `six-day-war--gaza-war` | "Israel occupied both Palestinian territories" |
+| `six-day-war--yom-kippur-war` | "the Israeli military had become complacent" |
+| `world-war-i--second-sino-japanese-war` | Shandong, "leading to nationwide anti-Japanese protests" — May Fourth, not 1937 |
+| `xinhai-revolution--chinese-civil-war` | "Sun Yat-sen assumed the presidency of the newly formed Republic of China" |
+| `xinhai-revolution--sino-indian-war` | the British "had lost the urgency to enforce this boundary" |
+
+**Counts.** 1 retyped, 1 re-pointed (1 withdrawn, 1 written), 1 relabelled, 9
+withdrawn. Active edges **843 → 834**; `precondition-of` **417 → 407**. Corpus
+unchanged at **858 active, 242 main, 616 filed**. **The largest connected
+component is 609 before and 609 after, the component count 192 before and 192
+after, and the isolate count 155 before and 155 after** — not one of the nine
+was the only thing holding a record in the graph, which is its own reading of
+how much they were carrying. `soviet-japanese-border-conflicts` and
+`sino-indian-war` are each down to one edge. Validator: 0 errors, 496 warnings
+either side.
+
+**A withdrawal keeps its quote.** Every one of the nine keeps its
+`explanation`, its citation and the revision it read, and says in
+`retraction.reason` which half of A13's sentence the article did not supply.
+Nothing here says the link is false — `six-day-war → yom-kippur-war` is a
+claim historians make — only that *this sentence* does not make it. Seven of
+the nine name a `to` the sentence never mentions; two (`boxer-rebellion` and
+`first-sino-japanese-war`) name a consequence the atlas holds as a different
+record entirely, which is the review's *"endpoint chosen by which article was
+open"*.
+
+**Deviation 1411.** *`six-day-war--yom-kippur-war` is the drop that most
+likely has a better sentence in the same article, and a sweep cannot find it.*
+The quote came from § Response in Israel; the Yom Kippur War's article argues
+the 1967 complacency at length and somewhere states the link the edge asserts.
+Re-reading one article for one sentence is a reading and not a pass, and A14
+gives this fire nine drops and no re-argument. The record is on disk with its
+reason, so a person or a later curation fire can restore it from a sentence
+that says it.
+
+**What stays open.** Whether a § Background mention is ever a `precondition-of`
+is the owner's (review finding 4). The other 52 `a13-relations-pass` edges are
+untouched by this pass: the review read ten and named eleven, and reading the
+remaining 42 against their revisions is a curation fire's work, not this
+one's.
+
+## A14 (5) — the polities the events name, nineteen of thirty-four described
+
+*24 September, the 04:58Z fire. 34 records reconciled against Wikidata; 14
+leads fetched, the other 5 read off the cache A14(3) had just filled.*
+
+The 22 September pass wrote 177 descriptions and every one of them went to a
+polity dated as ongoing, because its own gate — *an item with a dissolution
+date cannot describe a polity dated as ongoing* — excludes exactly the
+polities an event names. 34 named polities had none, and they are the ones
+named most: `third-portuguese-republic` by 35 events, `estado-novo` by 31,
+`first-portuguese-republic` by 21, `kingdom-of-portugal` by 15, then the
+Ottoman Empire, the Soviet Union and the Empire of Brazil at 9 each. A reader
+opening the Soviet Union from a war card found the CShapes boilerplate.
+
+**The rule, and the one thing it had to decide.** A12(6)'s two signals are the
+article the record's own names resolve to and a capital within 1.5° of the
+one the record carries; A14 adds the inverse gate, the item's dissolution year
+matching the record's end. **23 of the 34 carry no capital at all**, so the
+pass had to say what a missing signal means, and says this: the name
+resolution is required and must reach **one** item, never two; **a signal the
+record can supply and that disagrees always refuses**; a signal it cannot
+supply neither passes nor fails; and **at least one of the two must actually
+agree**. That is A12(6)'s discipline with the hole named rather than widened.
+
+**19 matched.** `third-portuguese-republic`, `estado-novo`,
+`first-portuguese-republic`, `kingdom-of-portugal`, `empire-of-brazil`,
+`ottoman-empire`, `soviet-union`, `russian-empire`, `nazi-germany`,
+`russian-sfsr`, `austria-hungary`, `german-empire`, `weimar-republic`,
+`czechoslovakia`, `saint-domingue`, `sao-tome-and-principe`,
+`united-kingdom-of-great-britain-and-ireland`, `captaincy-general-of-cuba`,
+`vietnam-republic-of`. Four matched on a capital *and* the dissolution year
+(Estado Novo, the First Republic, Austria-Hungary, the German Empire,
+Czechoslovakia, South Vietnam); the rest on the dissolution year alone, with
+the inception agreeing on eleven of them.
+
+**15 refused, and the refusals are the pass's own reading.**
+
+| refused | why |
+| --- | --- |
+| `european-economic-community` | Q52847 was dissolved in 2009; the record ends 1993 |
+| `inca-empire` | Q28573 dissolved 1533/1572; the record ends 1649 |
+| `dutch-republic` | Q170072 dissolved 1795; the record ends 1782 |
+| `viceroyalty-of-brazil` | Q2920081 dissolved 1808; the record ends 1815 |
+| `orange-free-state` | Q218023 dissolved 1902; the record ends 1910 |
+| `vietnam-democratic-republic-of` | the record is ongoing and Q172640 was dissolved in 1976 — the same refusal the 22 September fire made |
+| `united-kingdom-before-1886`, `castille`, `persia`, `transvaal` | neither signal could be checked: no capital on the record, and the item names no dissolution against a record end of 1877, 1529, 1925, 1910 |
+| `military-dictatorship` | its three names resolve to three different items |
+| `england-and-ireland`, `algeria-under-france`, `cuba-under-spain`, `vietnam-annam-cochin-china-tonkin` | no English article their names resolve to |
+
+The five ending in a year the item's dissolution does not carry are the
+interesting ones: four of them end at a **Historical Basemaps snapshot**
+(1529, 1782, 1815, 1910) rather than at a dissolution, which is what the
+import's own summary says those years are. The gate is doing what it was
+written for.
+
+**Counts.** 19 records rewritten, all `active`, all flagged
+`polity-description`; 19 `wikidata` locators and 19 `wikipedia-en` locators
+added, every one at a revision the cache now holds. 14 leads fetched, 5 read
+off disk. Three of the nineteen are Historical Basemaps records under
+GPL-3.0-only and carry a CC BY-SA quotation beside the GPL summary, which is
+the first time a described polity has not been CShapes' or the assistant's;
+the validator's licence rules pass, because the prohibition runs the other way
+— nothing here copies NC or GPL material into a CC BY-SA record. Corpus
+unchanged: **858 active, 242 main, 616 filed, 834 edges, largest component
+609, 0 errors, 496 warnings**; citations to check go from 13,079 to 13,105.
+
+**What this pass did not write.** No identity field. Twelve of the nineteen
+carry no `wikidata` key at all — the item is named in a source locator and
+nowhere else — and CLAUDE.md gives identity fields to the import and not to a
+hand pass. A12(6)'s 177 are in the same state. The narrow question for the
+owner is whether a reconciliation this certain (one article, one item, the
+dissolution year matching) should write `wikidata` as it goes, which would
+let the next Wikidata run see these records at all.
+
+**Deviation 1412.** *Population for an ended polity is a snapshot of a year,
+and P1082 without a `P585` qualifier is unusable for one.* The pass takes the
+latest qualified value and omits the figure where there is none, so the Soviet
+Union carries 293 million people (1989) and the German Empire carries no
+population rather than a number with no year against it. Five of the nineteen
+carry no area, four no population, two neither.
+
+## A14 (6) — the seven cleanups, the fifteen tombstones and the Holocaust
+
+*24 September, the 04:58Z fire. Six of the seven read only what is on disk;
+the Holocaust and the tombstones were read from their own articles at named
+revisions.*
+
+### The 21 titles
+
+Every active event whose `title` is its article's title minus the parenthetical
+— 19 exactly, and 2 more that differ only in case, which is the review's 21.
+Each is retitled to the article's own title at the revision the cache holds,
+under A12(5), and carries `title-from-article` and a `wikipedia-en` locator at
+that revision. **No id moved and no reference was rewritten**: an id is not a
+title. `Black Monday` becomes `Black Monday (1987)`, `Treaty of Paris`
+becomes `Treaty of Paris (1951)` beside `treaty-of-paris-1783` and `-1898`,
+`Eastern Front` becomes `Eastern Front (World War II)`, and
+`Libyan Civil War` and `Myanmar Civil War` take their articles' lower-case
+`civil war` with the years. **21 retitled, 0 refused.**
+
+### London
+
+`london-q84`, written by A9 on 22 September from Q84, is merged into `london`,
+written by hand in M50 — one city, one point, two ids. `Q84`, the article and
+the item's four other names go to the survivor and `london-q84` gives them up,
+because **rule 21 gives one item to one record** and the validator says so in
+two errors if you try to leave the item on both. The two events that pointed at
+the merged id — `anglo-irish-treaty` and `treaty-of-london-q584617` — point at
+`london`. `supersededBy` is how the old id keeps resolving; an alias would not
+do, because rule 2 refuses an alias equal to another record's id.
+
+### The 94 place placeholders
+
+`placeRecord()` wrote the import's own placeholder sentence on every place it
+created while the fires' hand-written places wrote `summary: null`, so one
+pass left two shapes and `summary-imported` counted one of them. **94 places
+become `summary: null`**, which is what a record that cites nothing and
+asserts nothing should say. The warning drops from 109 to 15 (12 events, 3
+actors), and those twelve events are the ones with no English article, which
+is review finding 11 and a person's.
+
+### The open ends
+
+**18 open-ended imports take `end-unstated`** — every active event with
+`end: null`, `origin.tool: wikidata` and no flag. The flag says the *item*
+states no end, which is what `intervalFor()` writing `end: null` means, and it
+is as true of `covid-19-pandemic` as of `kashmir-conflict`. Two are left
+because they are not imports: `nova-republica-brazil-since-1985` and
+`third-portuguese-republic-since-1974`, written by hand as period records.
+`2011-bahraini-uprising` is not among them — A14(1) closed it at 2014 from its
+lead. The stale flag on `chilean-war-of-independence` is cleared; **its note
+is not touched**, because the 465-character account it carries and the
+bookkeeping line would not both fit in 500 (deviation 1408 again), and the
+account is worth more than the line.
+
+### The Holocaust, divided (brief §5)
+
+The sources give a boundary and it is stated twice. At revision 1376446924 the
+article's lead reads *"From 1941 to 1945, Nazi Germany and its collaborators
+systematically murdered around six million Jews across German-occupied
+Europe"*, its § Mass shooting reads *"The systematic murder of Jews began in
+the Soviet Union in 1941"*, and its § Persecution of Jews dates the first
+measures to 1933 — *"In 1933, Jews were banned or restricted from several
+professions and the civil service"* — and the violence of that period *"from
+1933 to 1939"*. So:
+
+- **`the-persecution-of-the-jews-1933-1941`**, 1933–1941, main.
+- **`the-extermination-of-the-jews-1941-1945`**, 1941–1945, **filed under
+  `world-war-ii`**.
+- `the-holocaust` is **merged**, superseded by the extermination record, which
+  inherits its Wikidata item, its article and three of its four edges.
+
+**The edges are inherited, not withdrawn.** §5 says `supersededBy` points at
+"the one that inherits its edges", so each edge is renamed in place with its
+former id in `aliases` rather than retracted: three go to the extermination
+record and one, `--porajmos--enabled`, goes to the **persecution** record,
+because its own explanation argues from the Nuremberg Laws of 1935 and rule 4
+refuses it from a record starting in 1941. `operation-reinhard` (1942–1943) is
+filed under the extermination record; `the-holocaust-in-romania` (1940–1944)
+under it and `world-war-ii`.
+
+**§5 asked for `world-war-ii --enabled--> <the second>` and this pass writes no
+such edge**, because A14 suspends an edge from a parent to its own child until
+the owner decides C8, and the extermination record is filed under the war. The
+filing carries the same connection to a reader — the extermination opens
+inside the Second World War — and costs no disputed edge. **That filing is also
+what keeps A6**: two main records out of one would have raised the main count,
+and main is **242 before and 242 after**.
+
+**What it cost.** Active events 858 → **859**; components **192 → 193** and the
+largest **609 → 608**, because `the-persecution-of-the-jews-1933-1941` and
+`porajmos` are now a two-node component of their own: the persecution record
+holds the one edge that could not stay on the extermination record, and
+`porajmos` has no other. Rejoining it wants a sentence from the article about
+the persecution and something the atlas holds, and finding one is a reading
+this pass was not given.
+
+**What is judgement and what is quoted.** Every date, and every clause in both
+summaries, is the article's at revision 1376446924, checked verbatim before
+anything was written. The two **titles** are this atlas's own, because no
+article is titled either thing; the **1941 boundary** is the article's; the
+decision to file the second under the war rather than edge it is C8's and A6's.
+The article also says *"further Nazi persecutions from 1933 to 1945"*, so 1941
+is the boundary between two things and not the end of persecution, and both
+records' notes say so.
+
+### The fifteen M44b tombstones (brief §2)
+
+**15 reasons rewritten, 0 reinstated.** Each cited a rule that died with the
+Portuguese scope, which is a lie about why the record is not here; each now
+says what the corpus holds today and what is still missing. The corpus that
+M44b judged them against is gone — 859 active events across all five lanes —
+and for five of them the neighbour M44b named has actually arrived:
+
+| | the neighbour M44b wanted | today |
+| --- | --- | --- |
+| `chaco-war` | anything South American | 202 active in the Americas lane — and the article's § Origins names oil and a territorial dispute, no event here |
+| `sri-lankan-civil-war` | anything South Asian | 143 in Asia — and the article's war runs through the IPKF, which the atlas has not got |
+| `2023-nigerien-coup-d-etat` | the other Sahel coups | `2020-` and `2021-malian-coup-d-etat`, both filed under `mali-war` |
+| `western-african-ebola-virus-epidemic` | Guinea-Bissau, or the region | `sierra-leone-civil-war` and `second-liberian-civil-war` |
+| `nigerian-civil-war` | Portuguese Africa | `angolan-war-of-independence`, filed under the colonial war |
+
+**And none of the five earns an edge**, because the sentence is the thing that
+is missing and not the neighbour. The Nigerien article says the coup *"came in
+the wake of recent coups in nearby countries, such as in Guinea, Mali, and
+Sudan in 2021"* and names the "coup belt" — which is **exactly the chronology
+class this same fire dropped nine A13 edges for four sections ago**, and
+writing it to keep a record is what §1 forbids in so many words. The Biafra
+article says *"Portuguese pilots also served in the Biafran Air Force"* and
+describes the airlift through São Tomé, and never says the war in Angola is
+why Lisbon did it — that sentence is the edge, and it wants a source the atlas
+can open. The Ebola article describes the epidemic country by country and
+draws no line to either war.
+
+**Two of the fifteen do not want an edge at all.** `1948-palestine-war` is the
+war the atlas's own `1948-arab-israeli-war` calls its second stage, and
+`balkan-wars` is the series whose two parts the atlas holds and has wired:
+under A6 each is an **umbrella**, and a filing pass could reinstate both
+without an edge and without raising the main count. Their reasons now say so.
+`population-transfer-in-the-soviet-union` wants the same treatment the
+Holocaust got this day — dividing, because twenty-two years of policy under
+one date cannot take an edge that means anything.
+
+### Counts for the whole pass
+
+| | before A14(6) | after |
+| --- | --- | --- |
+| active events | 858 | **859** |
+| **main** | 242 | **242** |
+| filed | 616 | 617 |
+| active edges | 834 | 834 |
+| largest component | 609 | **608** |
+| components | 192 | **193** |
+| validator | 0 errors, 496 warnings | **0 errors, 403 warnings** |
+| `summary-imported` | 109 | **15** |
+
+**Per lane, active and main (A10).** Europe 375/89, Americas 202/55, Asia
+143/67, Africa 139/31. Nothing was imported, so the lanes moved only by the
+Holocaust's division, which is Europe.
+
+## Where the run stands after A14's six passes, for the fire that picks it up
+
+*24 September, 04:58Z onward. **A14 fire**: the six data passes the second
+review asked for, in order, each with its section above. Nothing was imported.
+`origin/m0` was merged in at the head of the run, so this branch carries the 24
+September review, the amendment itself and M42b's batches 16 to 18.*
+
+| | |
+| --- | --- |
+| corpus | **859 active** (858 before; the Holocaust became two records) |
+| **main** | **242**, unmoved through eighteen batches, three curation fires and A14 |
+| filed | 617 |
+| active edges | **834** (843 before: nine chronology edges dropped, one endpoint corrected) |
+| largest connected component | **608** |
+| components | **193** |
+| events with no edge at all | **155**, of which 144 are filed under a parent, 10 are umbrellas and **one** (`rhodesian-bush-war`) is neither |
+| events with neither an edge nor a parent | **11** — 10 umbrellas and `rhodesian-bush-war` |
+| events with no place | **47** (41 before A14(2) cleared six) |
+| events naming no actor | 478 |
+| validator | **0 errors, 402 warnings** (496 before; `summary-imported` fell from 109 to 15) |
+| tests | **1,792 pure and 279 browser, all passing, 0 skipped** |
+| per lane, active | Europe 375, Americas 202, **Asia 143**, **Africa 139** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A14 is spent.** All six passes carry their sections above, so the clause
+*"in force for both lanes before any further import"* is satisfied and **the
+next fire is an import fire** unless it is the first after 02:00Z tomorrow, in
+which case it is the curation fire and A13's relations pass.
+
+**What is open, in the order a fire should weigh it:**
+
+- **A10's order is unchanged and the gap has not moved**: Africa 139 and Asia
+  143 against Europe's 375. The veins the stand after batch 47 named are still
+  the cleanest and still untouched: `Q159950`'s remaining **67 unheld rows**
+  would finish the Russo-Japanese War — `Q920679` Shaho (17), `Q1358032`
+  Sandepu (17), `Q702150` off Ulsan (15), `Q4538445` the invasion of Sakhalin
+  (14), `Q2619692` Te-li-Ssu (12) — then `Q8663` the Korean War, then `Q170314`
+  the Second Sino-Japanese War at 92. The Yom Kippur War's 44 unheld rows are
+  Africa and Asia both.
+- **Six questions for the owner came out of these passes**, and each is a line:
+  1. Where the lane guard fires, which does it clear — the place, always, or
+     the one that disagrees with the record's title? (A14(2), deviation 1409;
+     two of the six cleared places were right and the lane was wrong.)
+  2. Should the cache hold more than one revision of an article? 72 citations
+     name a revision it cannot hold, all of them second readings of 59 articles
+     (A14(3)).
+  3. May a reconciliation as certain as A14(5)'s — one article, one item, the
+     dissolution year matching — write `wikidata` on the record as it goes?
+     Twelve of the nineteen still name their item only in a source locator.
+  4. Is a § Background mention ever a `precondition-of`? (Review finding 4; 52
+     `a13-relations-pass` edges are still unread against their revisions.)
+  5. C8, still: 91 parent-to-child edges exist and the fires refuse to write
+     more. §5's `world-war-ii --enabled--> the-extermination-of-the-jews`
+     is now one of the edges that clause forbids.
+  6. Does `parent` satisfy the bar of §1? 144 of the 155 edgeless events are
+     filed under one.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are a two-node
+  component**, new this fire, and the only thing the division cost the graph.
+  Rejoining it wants one sentence from the Holocaust article about the
+  persecution and something the atlas holds; A14(6) gave this fire no licence
+  to go looking, and a curation fire has one.
+- **Two of the fifteen tombstones want an A6 umbrella and not an edge**:
+  `1948-palestine-war` over the 1948 war and the civil war in Mandatory
+  Palestine, and `balkan-wars` over its two parts. Reinstating either costs no
+  edge and no main event, because each would take main events under it. A
+  filing fire can do both; §2 could not, because its bar is an edge.
+  `population-transfer-in-the-soviet-union` wants dividing, the way the
+  Holocaust was divided this day.
+- **The P710 vein is spent until the actor corpus grows**, unchanged: 118 of
+  194 items name no participant and the 68 naming unheld ones produced zero
+  candidates. The 32 partial lists review finding 7 names are still on the
+  records, because the two rules that govern them are the owner's to choose
+  between.
+- **Deviation numbers: take the next above 1413.** This fire wrote
+  **1408 to 1413** and deviation 1407's proposal — `m42` from 1400 upward,
+  `m42b` continuing the shared sequence — held for a full day without a
+  collision.

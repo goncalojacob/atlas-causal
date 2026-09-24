@@ -17,15 +17,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a7-widened"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "A7: the end was 2020, dated 22 February, which is the unity government and not the war. The cited article's first sentence says, at the cached revision 1374713494, \"fought from 2013 to 2018\". So the end is 2018 and its day goes; the start and 15 December 2013 stand."
   },
   "origin": {
     "tool": "wikidata"
@@ -47,15 +49,18 @@
     {
       "source": "wikipedia-en",
       "locator": "\"South Sudanese Civil War\", revision 1374713494"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Sudanese Civil War\", revision 1374713494: \"a multi-sided civil war in South Sudan fought from 2013 to 2018 between government and opposition forces\""
     }
   ],
   "title": "South Sudanese Civil War",
   "summary": "The English Wikipedia article \"South Sudanese Civil War\", at revision 1374713494, opens: \"The South Sudanese Civil War was a multi-sided civil war in South Sudan fought from 2013 to 2018 between government and opposition forces. The civil war caused rampant human rights abuses, including forced displacement, ethnic massacres, and killings of journalists by various parties. Since the war's end, South Sudan has been governed by a coalition formed by leaders of the former warring factions, Salva Kiir Mayardit and Riek Machar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15353665, imported by tools/import/wikidata.mjs. The item's own description reads \"South Sudanese civil war/conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2013,
-    "end": 2020,
-    "date": "2013-12-15",
-    "endDate": "2020-02-22"
+    "end": 2018,
+    "date": "2013-12-15"
   },
   "place": "south-sudan-q958",
   "region": "africa",

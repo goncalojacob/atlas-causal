@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant",
     "run": "m53"
@@ -21,7 +21,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m53-polities"
+      "m53-polities",
+      "polity-description"
     ],
     "note": "M53: written on Wikidata’s Q2184 — P571 1917-10-25, P576 1991-12-25 — to carry the three events M52 left naming `soviet-union` before its cited inception of 1922-12-30. It stands beside the Soviet Union rather than before it: the two intervals overlap by design, because this was a republic within that union, and no succession is written between them. It holds no territory; the nine CShapes periods of the 1917–1922 gap stay where M52 put them, flagged m52-gap."
   },
@@ -33,13 +34,21 @@
     {
       "source": "wikidata",
       "locator": "Q2184, P576 1991-12-25"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q2184, P2046 (area) and P1082 (population, 1990)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Soviet Federative Socialist Republic\", revision 1376091324"
     }
   ],
   "actorType": "polity",
   "names": [
     "Russian Soviet Federative Socialist Republic"
   ],
-  "summary": "A polity whose inception Wikidata states as 1917-10-25 on Q2184 and whose dissolution it states as 1991-12-25. Both years here are those two values and nothing else. It is written because M52 dated `soviet-union` from 1922-12-30, which left three events of 1917 and 1918 — the October Revolution, the Russian Civil War and the Treaty of Brest-Litovsk — naming a state that did not yet exist. This record is what they name instead. It holds no territory: CShapes draws entity 365 across these years under a single label and M52 gave those periods to `soviet-union` with the gap flagged, and moving ground is a claim about borders that this milestone does not make.",
+  "summary": "Approximately 17,075,000 km² and about 148 million people (1990), from Wikidata's Q2184 (P2046, P1082). The English Wikipedia article \"Russian Soviet Federative Socialist Republic\", at revision 1376091324, opens: \"The Russian Soviet Federative Socialist Republic was a revolutionary, and later, communist state from 1917 to 1922, and afterwards the largest and most populous constituent republic of the Soviet Union (USSR) from 1922 to 1991, until becoming a sovereign part of the Soviet Union with priority of Russian laws over Union-level legislation in 1990 and 1991, the last two years of the existence of the USSR. The Russian SFSR was composed of sixteen smaller constituent units of autonomous republics, five autonomous oblasts, ten autonomous okrugs, six krais and forty oblasts. Russians formed the largest ethnic group.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1917-10-25 on Q2184 and whose dissolution it states as 1991-12-25. Both years here are those two values and nothing else. It is written because M52 dated `soviet-union` from 1922-12-30, which left three events of 1917 and 1918 — the October Revolution, the Russian Civil War and the Treaty of Brest-Litovsk — naming a state that did not yet exist. This record is what they name instead. It holds no territory: CShapes draws entity 365 across these years under a single label and M52 gave those periods to `soviet-union` with the gap flagged, and moving ground is a claim about borders that this milestone does not make.",
   "when": {
     "start": 1917,
     "end": 1991

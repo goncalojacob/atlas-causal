@@ -19,7 +19,25 @@ import { findChrome } from '../tools/screens.mjs';
 import { ROOT, corpusOf, atlasOf } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
 import { resolveWindow, overlaps } from '../src/util/window.js';
-import { withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn,
+} from './browser.mjs';
+
+// The lens chip, once it carries a name rather than the word the chip shows
+// while its century is still on the way (lens-chips.js). The masthead gains a
+// row when it lands, which is a resize, which is the thing §7 is about.
+const CHIP_NAMED = `
+  const el = document.querySelector('#lens-chips .lens-name');
+  return Boolean(el) && el.textContent.trim() !== 'loading…';`;
+
+// Two frames of stillness on the camera itself. A transform read while a
+// shard, a layout or a masthead row is still landing is a transform read
+// halfway through a gesture (M86 §7).
+const SETTLED = `
+  const attr = () => document.querySelector('svg.graph g.viewport').getAttribute('transform');
+  const first = attr();
+  return new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(
+    () => resolve(attr() === first))));`;
 import { LOADING_LABEL } from '../src/attributes.js';
 import { workingSet } from '../src/emphasis.js';
 
@@ -83,6 +101,14 @@ const stacks = (graph) => count(graph, /<circle[^>]*class="node stack[ "]/g);
 // "46 more" since M85 (cluster.js, `stackBadge`): the badge says what the
 // stack's own title says, and never a bare "+46".
 const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>(\d+) more</g)].map((m) => Number(m[1]));
+// And what every stack says it hides, off its own title — which is where the
+// arithmetic below has had to ask since M86 §2: a stack of two carries no
+// badge any more (its ring already says "more than one here"), so the badges
+// are the counts a reader could not have guessed and the titles are all of
+// them.
+// Off the `<title>` alone, because a stack carries the same sentence twice —
+// once as its accessible name and once as the tooltip.
+const hidden = (graph) => [...graph.matchAll(/<title>[^<]*— and (\d+) more event/g)].map((m) => Number(m[1]));
 
 // **Nothing is folded out of sight twice over any more.** There were two
 // levels of detail until M70: the semantic fold put a part inside its parent
@@ -135,14 +161,20 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const drawn = marks(graph);
-  const hidden = badges(graph);
+  const folded = hidden(graph);
+  const shown = badges(graph);
   assert.ok(drawn < events, `${drawn} marks for ${events} events`);
-  assert.equal(stacks(graph), hidden.length, 'a stack carries a badge and nothing else does');
-  assert.ok(hidden.length > 0, 'and there are stacks to carry one');
-  // The promise the badges make: nothing has been dropped from the picture,
-  // only merged into it.
-  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0), events);
-  for (const n of hidden) assert.ok(n >= 1, 'a badge never says nothing is hidden');
+  assert.equal(stacks(graph), folded.length, 'every stack says in its title how many it hides');
+  assert.ok(folded.length > 0, 'and there are stacks to say it');
+  // The promise a stack makes: nothing has been dropped from the picture, only
+  // merged into it.
+  assert.equal(drawn + folded.reduce((a, b) => a + b, 0), events);
+  for (const n of folded) assert.ok(n >= 1, 'a stack never says nothing is hidden');
+  // And the badge is on exactly the stacks whose count a reader could not have
+  // guessed from the ring (M86 §2).
+  assert.deepEqual(shown.slice().sort((a, b) => a - b),
+    folded.filter((n) => n >= 2).sort((a, b) => a - b),
+    'a badge for every stack of three and up, and for nothing else');
 });
 
 // *Grouping into bands crowds the picture, and more of it merges* stood here.
@@ -363,6 +395,17 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     // about the record having parts at all.
     await open(page, url(`?fixtures=1&view=graph&selected=fixture-event-f&from=1200&to=2025&${WHOLE}`), drawnGraph);
     await waitFor(page, NODE('fixture-event-t'), 'the parts to be drawn on their own');
+    // **Wait for the pane to stop changing size before reading the camera**
+    // (M86 §7). The lens chip's name lands with its century and the masthead
+    // gains a row when it does, which is a resize; the camera is read after
+    // the chip is named and after the transform has held still for two frames,
+    // so that what is read is a camera and not a fit halfway through one.
+    await waitFor(page, CHIP_NAMED, 'the lens chip to be named');
+    await waitFor(page, SETTLED, 'the camera to settle');
+    const before = await page.eval(`
+      const t = /scale\\(([\\d.]+)\\)/.exec(
+        document.querySelector('svg.graph g.viewport').getAttribute('transform') || 'scale(1)');
+      return Number(t[1]);`);
     await page.eval(`
       const svg = document.querySelector('svg.graph');
       const box = svg.getBoundingClientRect();
@@ -375,7 +418,12 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     assert.ok(parted.ring, 'and it is still ringed');
     assert.ok(parted.ring.r > parted.node.r);
     // The stroke is divided by the zoom, so the ring is as thin on the screen
-    // at four times in as it is at one, like the labels' halo.
+    // at four times in as it is at one, like the labels' halo. Against the
+    // camera this page was at before the wheel and never against the other
+    // page's rest, which is what made this a flake: a wheel of e^0.9 = 2.46 on
+    // a camera at `before` leaves the ring thinner than 1/`before`.
+    assert.ok(parted.ring.stroke < 1 / before,
+      `${parted.ring.stroke} at k = ${before} before the wheel`);
     assert.ok(parted.ring.stroke < held.ring.stroke, `${parted.ring.stroke} against ${held.ring.stroke}`);
     // And the parts themselves are leaves: a ring on a leaf would say there is
     // something inside it that is not there.

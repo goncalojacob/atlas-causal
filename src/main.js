@@ -264,7 +264,7 @@ try {
   createCategoryControl(document.getElementById('categories'), { atlas, state });
   // And the graph's own two, which are the other half of the same idea: what
   // is drawn at all. They swap with the layer switches below.
-  createGraphFilters(graphFiltersGroup, { state });
+  createGraphFilters(graphFiltersGroup, { state, atlas });
   // The window of time, on every view: its two ends to read and to type, the
   // density of the corpus beside them, and the count of what the map is
   // looking at. It stands where the band stood before M60 made the timeline a
