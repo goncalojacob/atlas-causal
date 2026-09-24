@@ -21500,6 +21500,48 @@ they are the sea fights off Ceylon, they are **M42's**, and this branch should n
 import them. Nothing was imported on the strength of the error.
 `docs/m42b-pool.md` → "Batch 18" is the full account.
 
+**M42b batches 19 and 20 — the Spanish conquest and the War of Jenkins' Ear, 24
+September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
+September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)
+before importing anything; each conflicted only in `STATUS.md` and both sides
+were kept. **Batch 19 took the Americas' sixteenth century**, which the merge
+left at 14 active and 3 main, and opened the vein every fire since the eighth
+had listed and none had opened: **eight events of the Spanish conquest**, twelve
+items to the import and twelve created with none refused, in forty-seven calls —
+Vilcaconga, Cusco, Maraycalla, Ollantaytambo and Chupas under
+`spanish-conquest-of-the-inca-empire`, Q'umarkaj under
+`spanish-conquest-of-guatemala`, and Punta Quemada and Puná, both older than the
+conquest's own 1532 start, under `spanish-colonization-of-the-americas`. **Batch
+20 took the Americas' eighteenth**, at 17 and 2, with **six events of the War of
+Jenkins' Ear** fought in Panama, Cuba and Venezuela, all six filing under
+`war-of-jenkins-ear`, which goes from one child to seven. **The main count does
+not move across either batch: 242 before and 242 after.** Eight place records
+created by the import and four reused, every precision from the item's own
+class; three classes added — `Q839954` archaeological site, `Q2264924` port city
+and `Q39594` bay — each with its gloss read off the class item over the network.
+**Three intervals widened under A7** from each record's own cited article at a
+named revision, the invasion of Cuba's by four months. **Ten edges**, each
+quoting the sentence that carries it, **four with a second cited author** —
+Hemming's *Conquest of the Incas*, Prescott's *History of the Conquest of Peru*
+and Pares's *War and Trade in the West Indies*, all three cited and not read —
+and **not one runs from a parent to its own child**, which is A14. The largest
+component goes 609 → **611** and the corpus **858 → 872 active**; the `americas`
+lane is **216**, its 16th century 22 and its 18th 23, and South and Central
+America against North is 182 to 19. `docs/m53-polities.md` §4.1 re-taken twice,
+in the same commit as each batch's records. **Three things were refused and all
+three are the run's own reading**: `Q7573336`, the Spanish conquest of Petén, is
+1618–1697 and belongs to the seventeenth century, not this cell; a Guilmartin
+chapter was written as a source record and **deleted** because the article gives
+it no page, ISBN or URL and rule 13 asks a chapter for one, so the Vilcaconga
+edge rests on Wikipedia alone (**deviation 1254**); and `battle-of-chupas` and
+the conquest of Q'umarkaj were left with no edge, because what their articles
+reach for — Las Salinas, Pizarro's assassination, Alvarado's Aztec allies — is
+either not a record here or not a claim the article makes. A hatnote nearly cost
+the batch a correct place: the Maraycalla article's `{{About}}` reads like
+Wikipedia disowning the item's `P276`, and its infobox says the opposite
+(**deviation 1253**). `docs/m42b-pool.md` → "Batch 19" and "Batch 20" are the
+full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
