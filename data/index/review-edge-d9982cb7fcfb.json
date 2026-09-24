@@ -4321,6 +4321,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "marley-2008-wars-of-the-americas"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-mata-redonda",
+      "id": "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "campaign-of-porto-calvo",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-22",
@@ -15355,6 +15384,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "portuguese-conquest-of-maricay",
+      "id": "portuguese-conquest-of-maricay--capture-of-bahia--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "capture-of-bahia",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "from": "portuguese-landfall-in-brazil-1500",
       "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
@@ -18578,6 +18635,35 @@
       "status": "active",
       "to": "new-laws",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "jones-1998-the-conquest-of-the-last-maya-kingdom"
+      ],
+      "created": "2026-09-24",
+      "from": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj--spanish-conquest-of-peten--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-conquest-of-peten",
+      "type": "precondition-of"
     },
     {
       "authors": [

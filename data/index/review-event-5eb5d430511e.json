@@ -3837,6 +3837,37 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "id": "action-at-tamanana-9-september-1645",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "The article this item's own English sitelink names, \"Action at Tamanana, 9 September 1645\", is a redirect to the broader article \"Insurrection of Pernambuco\", and that is the article the summary quotes and the citation names: the lead is the insurrection's and not this action's. The insurrection's § Course does describe the action, citing Marley 2008 at p. 204. A reviewer should replace the quoted paragraph with an account of the action itself.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action at Tamanana, 9 September 1645"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 1,
       "id": "action-of-12-17-january-1640",
       "kind": "event",
@@ -7369,6 +7400,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-mata-redonda",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-brazil-1630-1654",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mata Redonda"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -10150,7 +10212,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "origin": {
@@ -10215,7 +10277,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "capture-of-bahia",
       "kind": "event",
       "origin": {
@@ -21690,6 +21752,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portuguese campaigns in the Amazon River of 1623–1625"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21718,6 +21810,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "The Portuguese Colonial War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "portuguese-conquest-of-maricay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portuguese Conquest of Maricay"
     },
     {
       "authors": [
@@ -25290,6 +25413,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "spanish-conquest-of-peten",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-guatemala",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish conquest of Petén"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 3,
       "id": "spanish-conquest-of-the-aztec-empire",
@@ -25353,6 +25507,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 1,
       "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
       "kind": "event",
       "origin": {
@@ -30100,6 +30255,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-at-tamanana-9-september-1645",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "afghan-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30874,6 +31035,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "potemkin-mutiny",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30977,12 +31144,6 @@
     },
     {
       "id": "spanish-conquest-of-guatemala",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

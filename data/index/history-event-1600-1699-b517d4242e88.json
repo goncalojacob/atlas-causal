@@ -2,6 +2,15 @@
   "from": 1600,
   "kind": "event",
   "records": {
+    "action-at-tamanana-9-september-1645": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "action-of-12-17-january-1640": {
       "from": "git",
       "versions": [
@@ -89,6 +98,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-mata-redonda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -290,6 +308,24 @@
         }
       ]
     },
+    "portuguese-campaigns-in-the-amazon-river-of-1623-1625": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "portuguese-conquest-of-maricay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "recapture-of-bahia": {
       "from": "git",
       "versions": [
@@ -383,6 +419,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "spanish-conquest-of-peten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

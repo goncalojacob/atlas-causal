@@ -2048,6 +2048,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of",
+      "kind": "edge",
+      "locator": "\"Campaign of Porto Calvo\", revision 1373668892, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Legacy"
@@ -4514,6 +4520,12 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-maricay--capture-of-bahia--precondition-of",
+      "kind": "edge",
+      "locator": "\"Portuguese Conquest of Maricay\", revision 1370704725, lead"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused",
       "kind": "edge",
       "locator": "\"Colonial Brazil\", revision 1371077435"
@@ -5303,6 +5315,12 @@
       "id": "spanish-conquest-of-the-inca-empire--new-laws--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § The crown and the indigenous populations"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj--spanish-conquest-of-peten--precondition-of",
+      "kind": "edge",
+      "locator": "\"Spanish conquest of Petén\", revision 1370748351, lead and § Conquest of the central lakes"
     },
     {
       "dissent": false,
@@ -7562,6 +7580,12 @@
     },
     {
       "dissent": false,
+      "id": "action-at-tamanana-9-september-1645",
+      "kind": "event",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
+    },
+    {
+      "dissent": false,
       "id": "action-of-12-17-january-1640",
       "kind": "event",
       "locator": "\"Action of 12–17 January 1640\", revision 1370425892"
@@ -8153,6 +8177,12 @@
       "id": "battle-of-marignano",
       "kind": "event",
       "locator": "\"Battle of Marignano\", revision 1370449034"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mata-redonda",
+      "kind": "event",
+      "locator": "\"Battle of Mata Redonda\", revision 1370449287"
     },
     {
       "dissent": false,
@@ -10424,9 +10454,21 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
+      "kind": "event",
+      "locator": "\"Portuguese campaigns in the Amazon River of 1623–1625\", revision 1370704740"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-colonial-war-1961-1974",
       "kind": "event",
       "locator": "\"Portuguese Colonial War\", revision 1372834694"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-maricay",
+      "kind": "event",
+      "locator": "\"Portuguese Conquest of Maricay\", revision 1370704725"
     },
     {
       "dissent": false,
@@ -11021,6 +11063,12 @@
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "locator": "\"Spanish conquest of Guatemala\", revision 1371444057"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-peten",
+      "kind": "event",
+      "locator": "\"Spanish conquest of Petén\", revision 1370748351"
     },
     {
       "dissent": false,
