@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 379 of 847 |
+| **after M42** | 36 of 36 | 379 of 854 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -355,7 +355,16 @@ event at all, and `tripartite-pact`, which carries a place and no actor. The
 two rules still give the same number, 306.
 
 **The "after M42" row is the count with the world put back into it, and it is
-rewritten as each of that milestone's batches lands** — batch 44 of 23 September
+rewritten as each of that milestone's batches lands** — M42b's batch 17 of 24 September takes the denominator to 854 and leaves the
+numerator at **379**: its seven War of the League of Cambrai engagements all
+arrived with `actors: []`, and not for want of a `P710` — every one of the seven
+items names two to four participants, and the atlas holds an actor for none of
+the nine polities between them (`Q4948` the Republic of Venice, `Q70972` the
+Kingdom of France, `Q12548` the Holy Roman Empire, `Q170174` the Papal States,
+`Q693570` Ferrara, `Q153529` Milan, `Q435583` the Old Swiss Confederacy,
+`Q766543` and `Q21088788` the Spanish monarchy under its two items). That is
+what §4.1 counts and it is the reason Europe's sixteenth century moves the
+denominator and never the numerator. batch 44 of 23 September
 takes the denominator to 778 and the numerator to **374**, its six events
 carrying one actor line between them: `battle-of-inchon`'s
 `united-states-of-america`, the one participant of its item's own `P710` this
