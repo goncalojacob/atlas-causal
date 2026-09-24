@@ -20165,7 +20165,7 @@ and A13's relations pass, still never run.
       not. Measured, not assumed: the same six tests run green locally three
       times in a row in 5.8, 6.0 and 6.2 seconds, so the file's own work is
       seconds and the sixty is all handshake.
-1241. **A11(a)'s "shorter than two sentences" is a bar on the summary, and the
+1401. **A11(a)'s "shorter than two sentences" is a bar on the summary, and the
       23 September fire read it as a bar on the lead.** That fire left nine
       records opening on `Wikidata item Q…` because their article's lead is a
       single sentence. But the quotation is written *in front of* the import's
@@ -20176,7 +20176,7 @@ and A13's relations pass, still never run.
       **lead** is one complete sentence, the bar for the **summary** is
       A11(a)'s two. The ninth, `argentine-surrender-in-the-falklands-war`, is
       the same shape at revision 1290880119.
-1242. **A9's place chain can put an event on the other side of the world, and
+1402. **A9's place chain can put an event on the other side of the world, and
       the only thing that catches it is the record's own lane.** `Q68750`, the
       Mexican War of Independence, gives `P17` = `Q80702`, the **Spanish
       Empire**, whose `P625` is 40.42N 3.68W — Madrid. A9 as A12 (2) corrects it
@@ -20190,7 +20190,7 @@ and A13's relations pass, still never run.
       The same shape is why a war's own `P625` is not a place: a ten-year war's
       centroid is a claim nobody made, so step one is taken only where the
       record's span is one engagement's.
-1243. **`operation-sutton` cannot be corrected under A7, because its own cited
+1403. **`operation-sutton` cannot be corrected under A7, because its own cited
       article carries no date at all.** The stand after the 23 September fire
       named the pair `operation-sutton --caused--> battle-of-san-carlos` as
       *"the first thing an A7 pass over these two should look at"* — the
@@ -20202,7 +20202,7 @@ and A13's relations pass, still never run.
       state stays as it is, so it does, and the edge stays refused. What
       unblocks it is a person, or a licence to read a second article the record
       does not yet cite — which is wider than A7 grants.
-1244. **A partial list of belligerents or signatories is a different claim from
+1404. **A partial list of belligerents or signatories is a different claim from
       the list, and a two-party floor does not catch it.** The 23 September
       fire's check was the parent's actors: where the half the atlas cannot
       write carries an existing filing, withhold. This fire found the case that
@@ -20219,7 +20219,7 @@ and A13's relations pass, still never run.
       partial. `foldName()` over every name of every active actor produced
       **zero** further candidates, so what would move this vein is actors and
       not another pass.
-1245. **A6's span-and-lane subject test cannot work in the Asia lane, because
+1405. **A6's span-and-lane subject test cannot work in the Asia lane, because
       the Asia lane is one lane for a continent.** Filtering the 243 main
       events by span and lane against the 18 umbrellas returns 119 candidates
       and almost all are nonsense — `1948-czechoslovak-coup-d-etat` under the
@@ -20235,7 +20235,7 @@ and A13's relations pass, still never run.
       this because their lanes are closer to the size of the periods historians
       name there. It is why A6 has filed nothing in Asia in three fires, and
       the fix is a subject a record carries, not a tighter span.
-1246. **"156 events with no edge" was never 156 events nobody can reach.** Of
+1406. **"156 events with no edge" was never 156 events nobody can reach.** Of
       the 152 active events with no edge after this fire, **142 are filed under
       a parent**: they are in the resting picture through the umbrella a reader
       opens, and missing only from the causal graph, which is what the
@@ -20251,6 +20251,24 @@ and A13's relations pass, still never run.
       refuses and rightly. A fire chasing the isolate count is chasing 142
       records that are already in the picture; the number worth moving is the
       one above.
+1407. **`m42` and `m42b` have been writing the same deviation numbers since
+      A11(b) split lane B in two, and this fire collided head-on.** The
+      protocol's amendment of 21 September gives *lane B* a block from 950
+      upward and says numbers cannot collide across lanes; A11(b), on 22
+      September, made lane B **two** branches under one brief and did not split
+      that block. Both branches' standing instruction is the same sentence —
+      *"numbered from 950 upward, continuing from the last in the branch's
+      `STATUS.md`"* — and on 24 September the last in both was 1240. So this
+      fire wrote 1241 to 1246 and `origin/m42b` had already written **1241 to
+      1251** for entirely different findings. Two runs an hour on two branches
+      means it recurs every day until the block is split, and it lands on the
+      assistant at merge as deviation 461's renumbering, which is work nobody
+      needs to do twice a week. **This fire moved its six to 1401–1406 and
+      proposes the rule: `m42` numbers from 1400 upward and `m42b` continues
+      the shared sequence it is already in.** That is a proposal and not a
+      decision — the landing routine or the assistant may renumber either side
+      — but a fire on `m42` that reads this should take the next free number
+      **above 1400** rather than the next after `STATUS.md`'s last, and say so.
 
 ## M84 — the owner's feedback document
 

@@ -6756,7 +6756,7 @@ or shorter than two sentences" — and the summary is four. What a one-sentence
 lead cannot do is *be* the summary; standing at the front of one, it is the
 difference between a record that opens on an account of itself and a record
 that opens on `Wikidata item Q537052`. So the bar here is one complete
-sentence, and that is deviation 1241.
+sentence, and that is deviation 1401.
 
 ### Places — A9's chain, and the guard the Spanish Empire asked for
 
@@ -6795,7 +6795,7 @@ with the record's own: Q80702 is in the Europe lane and the record is in the
 Americas. It is the mechanical half of the rule the 23 September fire wrote by
 hand — *"where an item names several locations the pass takes the one the
 record's own title names"* — and it costs one row and catches exactly one
-error, which is deviation 1242. Every other placement passed it unchanged.
+error, which is deviation 1402. Every other placement passed it unchanged.
 
 **The thirty-four refusals are all one shape**: no coordinate anywhere on the
 chain. Nineteen items name no location and carry no point of their own
@@ -6832,7 +6832,7 @@ thing an A7 pass over these two should look at"*. The article was read whole:
 A7 is explicit that *"an interval the cited article does not state stays as it
 is and stays flagged"*, and the 21 May the pair needs is on the **other**
 record's article, not this one's. So the edge stays refused and the record
-stays as it is. That is deviation 1243, and what unblocks it is a person, or a
+stays as it is. That is deviation 1403, and what unblocks it is a person, or a
 run reading the second article as a source the record does not yet cite — which
 is a wider licence than A7 grants.
 
@@ -7000,7 +7000,7 @@ coming end of colonial rule in Mozambique … Such events proved beneficial to
 ZANLA and disastrous for the Rhodesians, adding 1,300 kilometres (800 mi) of
 hostile border"* — describes an escalation inside a war that began in 1964, ten
 years before the revolution, which rule 4 refuses and rightly. That is
-deviation 1246: **"156 isolates" was never 156 events nobody can reach**, and a
+deviation 1406: **"156 isolates" was never 156 events nobody can reach**, and a
 fire chasing the number rather than the reachability was chasing 142 records
 that are already filed.
 
@@ -7025,7 +7025,7 @@ holds three of seven — Chile, Peru and Bolivia — and **all three are on the
 independence side**, the Spanish Empire being Q80702, an item the atlas does
 not hold. A list whole on one side reads as the war's parties and names one
 party. **So a belligerent or signatory list is written only where the atlas
-holds every participant the item names**, which is deviation 1244 and one step
+holds every participant the item names**, which is deviation 1404 and one step
 past the 23 September fire's filing check, because that check does not see a
 list that is complete on one side.
 
@@ -7063,7 +7063,7 @@ filed **nothing**, and each refusal is a reading:
   the Korean War, the partition of India, the Cultural Revolution, two
   influenza pandemics. **The Asia lane is one lane for a continent**, so it
   cannot stand in for the subject of an Asian umbrella the way the Europe lane
-  can for a European one. That is deviation 1245, and it is the reason A6's
+  can for a European one. That is deviation 1405, and it is the reason A6's
   span-and-lane test has produced nothing in Asia in three fires.
 
 ### Where the index was rebuilt, and the commit it cost
@@ -7156,3 +7156,11 @@ merge needed — `origin/m0` was already an ancestor of `m42` at claim time.*
 - **The P710 vein is spent until the actor corpus grows.** 118 of 194 items
   name no participant at all, and the 68 that name unheld ones produced **zero**
   name-fold candidates. What would move it is actors, not another pass.
+- **Take the next deviation number above 1400, not the next after
+  `STATUS.md`'s last.** `m42` and `m42b` have been handed the same sentence
+  since A11(b) split lane B in two, and on 24 September both had 1240 as their
+  last: this fire wrote 1241–1246 and `origin/m42b` had already written
+  **1241–1251** for different findings. The six were moved to **1401–1406**
+  and deviation **1407** proposes the split — `m42` from 1400 upward, `m42b`
+  continuing the shared sequence. It is a proposal the assistant may overrule,
+  but a fire that ignores it re-collides the same day.
