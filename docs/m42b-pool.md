@@ -6406,12 +6406,15 @@ count. Both carry the divergence in `review.note`. Importing `Q164432` the Eight
 War and `Q2985977` the Polish-Swedish War of 1626-1629 as umbrellas would settle it and
 would cost two main events, which is why the run did not.
 
-**The check on the head of this fire is still running when this is written.** Run
-**1721** on `7df5d47c` concluded **success** — the last green head before this fire.
-Run **1729** on the `origin/m42` merge `54150eb6` **failed**, and the failure is
-deviation 1278: the merge was committed with a `data/index/` built before the merge
-commit existed, which is 1273's fault repeated at the same step. The commits of this
-batch put the records first and the index in a commit of its own after them, which is
-798's order and 1273's, so the head this fire leaves should be clean. **The next fire
-should read this head's run before it does anything else**, and if it is red, read the
-failure: the check has been honest since M63 and it is not load.
+**The check is green on the head of this fire.** Run **1730** on `2d0346cd` concluded
+**success**. Run **1729** on the `origin/m42` merge `54150eb6` **failed**, and the
+failure is deviation 1278: the merge was committed with a `data/index/` built before
+the merge commit existed, which is 1273's fault repeated at the same step. The commits
+of this batch put the records first and the index in a commit of its own after them,
+which is 798's order and 1273's, and that head is clean. Locally the fire finished at
+**2,114 tests passing with nothing failed and nothing skipped** — the 1,819 of the 153
+pure suites and the 295 of the 38 browser suites, the browser set run alone, the two
+sets never at once. `node tools/validate.mjs --index` is **clean at 0 errors and 461
+warnings** on the pushed index. **The next fire should read this head's run before it
+does anything else**, and if it is red, read the failure: the check has been honest
+since M63 and it is not load.
