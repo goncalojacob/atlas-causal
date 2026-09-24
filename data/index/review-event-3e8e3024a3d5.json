@@ -895,11 +895,13 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the start was 1956. The cited article names its span in its title and its first sentence, at the cached revision 1371253096: \"The 1957-1958 Asian flu pandemic\". So the start is 1957; the end is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "1957–1958 influenza pandemic"
     },
@@ -2745,11 +2747,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the end was open, which said the uprising was still running. The cited article's first sentence says, at the cached revision 1374892677, \"from 2011 until 2014\". So the end is 2014, with no day; the start and 14 February 2011 stand. This answers A14(6) for this record, so it takes no end-unstated flag.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "2011 Bahraini uprising"
     },
@@ -9632,12 +9636,13 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
-        "note": "Wikidata Q635533 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
+        "note": "Wikidata Q635533 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.\n\nA7: the span was 1989-1991, the withdrawal and the Paris accords, not the war. The lead this summary quotes says, at the cached revision, \"an armed conflict from 1978 to 1989\". So 1978-1989, and the two days go: the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Cambodian–Vietnamese War"
     },
@@ -11327,11 +11332,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the end was 2008. At the cached revision 1373825853 the article's title reads \"Darfur genocide (2003-2005)\" and its lead dates the killing \"between 2003 and 2005\"; the 2003-2008 figure in the next sentence is the War in Darfur's, which this record's parent holds. So the end is 2005; the start and 23 February 2003 stand.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Darfur genocide"
     },
@@ -13331,11 +13338,13 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the start was 1894, dated 15 December, which is the Bahta Hagos revolt in Eritrea and not the war. The cited article's first sentence says, at the cached revision 1370619360, \"from 1895 to 1896\". So the start is 1895 and its day goes; the end and 23 October 1896, the Treaty of Addis Ababa, stand.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "First Italo-Ethiopian War"
     },
@@ -14478,11 +14487,13 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a7-widened"
         ],
+        "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Great Depression"
     },
@@ -15781,11 +15792,13 @@
           "imported-facts",
           "m42-umbrella",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1946-1989, the First Indochina War's opening and the Cambodian-Vietnamese War's close. The cited article's first sentence says, at the cached revision 1373921212, \"waged in Indochina from 1945 to 1991\". This is an umbrella: widening it widens what may be filed under it and argues nothing.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Indochina Wars"
     },
@@ -15890,11 +15903,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 28 February 1998 alone, the day the Kosovo War opened, which is the day this insurgency ended. At the cached revision 1370623741 the article's title reads \"(1995-1998)\", its first sentence \"began in 1995\" and its third \"would lead to the more intense Kosovo War in February 1998\". So 1995-1998, keeping 28 February 1998 as the end day; the start day goes.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Insurgency in Kosovo"
     },
@@ -17251,11 +17266,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the start was 1949, dated 6 December, which left the Bogotazo of April 1948 and the first year of the killing outside the record. The cited article's first sentence says, at the cached revision 1373312674, \"from 1948 to 1958\". So the start is 1948 and its day goes.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "La Violencia"
     },
@@ -18246,11 +18263,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1942-1944. The cited article's first sentence says, at the cached revision 1372344283, \"from 1943 to 1945\". So 1943-1945, with no days, because the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Massacres of Poles in Volhynia and Eastern Galicia"
     },
@@ -21646,11 +21665,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1911-1927, which is the Spanish campaigns in Morocco either side of the war. The cited article's first sentence says, at the cached revision 1374340065, \"fought from 1921 to 1926\". So 1921-1926, and the two days go: the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Rif War"
     },
@@ -24144,11 +24165,13 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the end was 2020, dated 22 February, which is the unity government and not the war. The cited article's first sentence says, at the cached revision 1374713494, \"fought from 2013 to 2018\". So the end is 2018 and its day goes; the start and 15 December 2013 stand.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "South Sudanese Civil War"
     },
@@ -24915,11 +24938,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was June 1921 alone, the month of the suppression order. The cited article names its span in its title and its first sentence, at the cached revision 1370749600: \"The Tambov Rebellion of 1920-1922\". So 1920-1922, and the month goes: no day is given at either end.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Tambov Rebellion"
     },
@@ -25659,11 +25684,13 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1941-1943. The cited article's first sentence says, at the cached revision 1375965594, \"between 1940 and 1944\". So 1940-1944, with no days, because the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "The Holocaust in Romania"
     },
@@ -27855,11 +27882,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the end was 1906, the year the item dates the outbreak to, which made a six-year war a single year. The cited article's first sentence says, at the cached revision 1372473413, \"from 1906 to 1912\". So the end is 1912; the start is unchanged and no day is written.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "Wadai War"
     },
@@ -29002,12 +29031,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "1957-1958-influenza-pandemic",
-      "kind": "event",
-      "message": "the title states 1957–1958 and the record is dated 1956–1958",
-      "rule": "span-vs-article-title"
     },
     {
       "id": "1963-south-vietnamese-coup",

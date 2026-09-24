@@ -916,6 +916,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1166,7 +1174,7 @@
       ]
     },
     "napoleonic-wars": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1222,7 +1230,7 @@
       ]
     },
     "peninsular-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1623,7 +1631,7 @@
       ]
     },
     "spanish-constitution-of-1812": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

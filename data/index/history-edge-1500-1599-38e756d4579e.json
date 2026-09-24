@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "battle-of-agnadello--siege-of-padua--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12,7 +12,7 @@
       ]
     },
     "battle-of-cempoala--la-noche-triste--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -21,16 +21,22 @@
       ]
     },
     "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-24"
         }
       ]
     },
     "battle-of-novara-1513--battle-of-marignano--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -39,7 +45,7 @@
       ]
     },
     "battle-of-otumba--fall-of-tenochtitlan--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -48,7 +54,7 @@
       ]
     },
     "battle-of-pavia--war-of-the-league-of-cognac--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -57,25 +63,37 @@
       ]
     },
     "battle-of-polesella--battle-of-ravenna-1512--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-24"
         }
       ]
     },
     "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-24"
         }
       ]
     },
     "fall-of-tenochtitlan--battle-of-colhuacatonco--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -120,7 +138,7 @@
       ]
     },
     "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -129,7 +147,7 @@
       ]
     },
     "la-noche-triste--battle-of-otumba--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -138,7 +156,7 @@
       ]
     },
     "massacre-in-the-great-temple-of-tenochtitlan--la-noche-triste--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -165,16 +183,22 @@
       ]
     },
     "siege-of-padua--battle-of-polesella--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-24"
         }
       ]
     },
     "siege-of-padua--siege-of-asola-1516--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -183,7 +207,7 @@
       ]
     },
     "spanish-conquest-of-the-aztec-empire--battle-of-cempoala--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -192,7 +216,7 @@
       ]
     },
     "spanish-conquest-of-the-aztec-empire--new-laws--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -201,7 +225,7 @@
       ]
     },
     "spanish-conquest-of-the-inca-empire--new-laws--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

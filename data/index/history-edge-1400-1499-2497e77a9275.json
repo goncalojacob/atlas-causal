@@ -21,7 +21,7 @@
       ]
     },
     "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -30,7 +30,7 @@
       ]
     },
     "spanish-colonization-of-the-americas--spanish-conquest-of-the-aztec-empire--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -39,7 +39,7 @@
       ]
     },
     "spanish-colonization-of-the-americas--treaty-of-tordesillas-1494--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -57,7 +57,7 @@
       ]
     },
     "the-first-columbian-voyage-1492--spanish-colonization-of-the-americas--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -102,7 +102,7 @@
       ]
     },
     "voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

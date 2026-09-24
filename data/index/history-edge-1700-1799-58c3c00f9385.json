@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "american-revolutionary-war--french-revolution--inspired": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -12,7 +12,7 @@
       ]
     },
     "american-revolutionary-war--inconfidencia-mineira--inspired": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -21,7 +21,7 @@
       ]
     },
     "american-revolutionary-war--treaty-of-paris-1783--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -30,7 +30,7 @@
       ]
     },
     "battle-of-pillpinto--siege-of-cusco-1781--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -39,7 +39,7 @@
       ]
     },
     "battle-of-sangarara--siege-of-cusco-1781--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -48,7 +48,7 @@
       ]
     },
     "battle-of-saylla--siege-of-cusco-1781--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -57,7 +57,7 @@
       ]
     },
     "capture-of-ayaviri--siege-of-cusco-1781--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -93,7 +93,7 @@
       ]
     },
     "french-revolution--napoleonic-wars--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -111,7 +111,7 @@
       ]
     },
     "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -120,7 +120,7 @@
       ]
     },
     "rebellion-of-tupac-amaru-ii--spanish-american-wars-of-independence--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -129,7 +129,7 @@
       ]
     },
     "revolt-of-the-comuneros-new-granada--spanish-american-wars-of-independence--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -138,7 +138,7 @@
       ]
     },
     "siege-of-cusco-1781--battle-of-pucacasa--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -210,7 +210,7 @@
       ]
     },
     "treaty-of-madrid-13-january-1750--first-treaty-of-san-ildefonso--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -219,7 +219,7 @@
       ]
     },
     "treaty-of-madrid-13-january-1750--guarani-war--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -228,7 +228,7 @@
       ]
     },
     "united-states-declaration-of-independence--treaty-of-paris-1783--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -237,7 +237,7 @@
       ]
     },
     "war-of-jenkins-ear--battle-of-cartagena-de-indias--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -246,7 +246,7 @@
       ]
     },
     "war-of-jenkins-ear--war-of-the-austrian-succession--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

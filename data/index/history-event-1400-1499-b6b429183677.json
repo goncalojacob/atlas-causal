@@ -24,7 +24,7 @@
       ]
     },
     "italian-war-of-1494-1495": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -89,10 +89,18 @@
       ]
     },
     "spanish-colonization-of-the-americas": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
           "on": "2026-09-23"
         }
       ]
@@ -146,7 +154,7 @@
       ]
     },
     "voyages-of-christopher-columbus": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
