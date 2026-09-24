@@ -7079,11 +7079,19 @@ that writes records should read deviation 1227 before it builds.
 
 ### The check and the suite
 
-Run locally the way the check runs it since M63, before anything was pushed:
-**1,791 pure tests, 1,791 passed, 0 failed, 0 skipped**, and **279 browser
-tests one at a time at `--test-timeout=120000`, 279 passed, 0 failed, 0
-cancelled, 0 skipped**. `compose-browser` 1 — the test of deviation 1240 —
-passed; the fire spent no re-run.
+Run locally the way the check runs it since M63, before anything was pushed,
+and again on the final tree: **1,791 pure tests, 1,791 passed, 0 failed, 0
+skipped**, and **279 browser tests one at a time at `--test-timeout=120000`,
+279 passed, 0 failed, 0 cancelled, 0 skipped**. `compose-browser` 1 — the test
+of deviation 1240 — passed both times.
+
+**On the branch: run 1610 on `8b5185c3`, which carries every record this fire
+wrote, passed, and run 1617 on `5d0d964b` passed — both on their first
+attempt.** Runs 1614 and 1615 were cancelled rather than red, each superseded
+by the next push of this fire. **The fire spent no re-run**, so the one
+deviation 1240 entitles it to is unspent for whoever meets `compose-browser` 1
+next; the stand after batch 47 asks that it be spent on the arithmetic rather
+than on another attempt.
 
 ## Where the run stands after the curation fire of 24 September, for the fire that picks it up
 
