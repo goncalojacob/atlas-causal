@@ -6847,7 +6847,7 @@
       ]
     },
     "battle-of-kapyong": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6897,7 +6897,7 @@
       ]
     },
     "battle-of-korea-strait": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7115,7 +7115,7 @@
       ]
     },
     "battle-of-nam-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7324,7 +7324,7 @@
       ]
     },
     "battle-of-the-imjin-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8391,7 +8391,7 @@
       ]
     },
     "chaplain-medic-massacre": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8531,10 +8531,17 @@
       ]
     },
     "chinese-spring-offensive": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "review",
+            "when"
+          ],
           "on": "2026-09-24"
         }
       ]
@@ -15156,7 +15163,7 @@
       ]
     },
     "operation-pokpung": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
