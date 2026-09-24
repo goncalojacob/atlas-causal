@@ -2991,7 +2991,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "2012-malian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -3002,11 +3002,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record began and ended on 2012-04-08, which is the item's P585 read over its P580. Its own cited article at revision 1370102863 opens \"The 2012 Malian coup d'état began on 21 March that year\", so the start is 2012-03-21; the end of 2012-04-08 is left as it was.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-24",
       "status": "active",
       "title": "2012 Malian coup d'état"
     },
@@ -3027,7 +3029,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "2012-tuareg-rebellion",
       "kind": "event",
       "origin": {
@@ -6330,6 +6332,42 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-diabaly",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Diabaly"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -6454,6 +6492,44 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Freiburg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-gao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead",
+          "a7-widened"
+        ],
+        "note": "A7: the record carried 2012-06-27 alone, which is the item's single P585. Its own cited article at revision 1370441289 says the battle was fought \"in Gao between 26 and 28 June 2012\", so the span is 26 to 28 June.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Gao"
     },
     {
       "authors": [
@@ -6767,6 +6843,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-ifoghas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place read by A9's first step (the item's own P625, 1.2342E 19.8628N) over its second (P276 Tessalit, 45 km north): the article at revision 1370443583 puts the fighting in \"the Ametettai Valley\" of \"the Adrar Tigharghar, a mountain of the Adrar of Ifoghas\". The town is where the French supply line ran, not where the battle was.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Ifoghas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -6961,6 +7075,78 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Khe Sanh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-kidal-2012",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Kidal (2012)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-konna",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Konna"
     },
     {
       "authors": [
@@ -10556,6 +10742,42 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Cavaco Silva's absolute majority"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "chadian-intervention-in-northern-mali",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Chadian intervention in northern Mali"
     },
     {
       "authors": [
@@ -20813,7 +21035,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 3,
       "id": "operation-serval",
       "kind": "event",
       "origin": {
@@ -23530,6 +23752,42 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "second-battle-of-gao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Second Battle of Gao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -24506,6 +24764,41 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Stralsund (1628)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "siege-of-tessalit",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Siege of Tessalit"
     },
     {
       "authors": [
@@ -30993,6 +31286,12 @@
     },
     {
       "id": "siege-of-stralsund-1628",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-tessalit",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

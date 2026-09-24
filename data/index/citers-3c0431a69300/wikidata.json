@@ -2732,6 +2732,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-diabaly",
+      "kind": "event",
+      "locator": "Q3276735"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "Q604897"
@@ -2753,6 +2759,12 @@
       "id": "battle-of-freiburg",
       "kind": "event",
       "locator": "Q174574"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gao",
+      "kind": "event",
+      "locator": "Q3181123"
     },
     {
       "dissent": false,
@@ -2810,6 +2822,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ifoghas",
+      "kind": "event",
+      "locator": "Q5923961"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "Q483039"
@@ -2843,6 +2861,18 @@
       "id": "battle-of-khe-sanh",
       "kind": "event",
       "locator": "Q247253"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kidal-2012",
+      "kind": "event",
+      "locator": "Q3560870"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konna",
+      "kind": "event",
+      "locator": "Q3018708"
     },
     {
       "dissent": false,
@@ -3449,6 +3479,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
+    },
+    {
+      "dissent": false,
+      "id": "chadian-intervention-in-northern-mali",
+      "kind": "event",
+      "locator": "Q16960952"
     },
     {
       "dissent": false,
@@ -5288,6 +5324,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-gao",
+      "kind": "event",
+      "locator": "Q3915054"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-guararapes",
       "kind": "event",
       "locator": "Q3504102"
@@ -5447,6 +5489,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "Q2612839"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tessalit",
+      "kind": "event",
+      "locator": "Q4474075"
     },
     {
       "dissent": false,

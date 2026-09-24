@@ -11,6 +11,15 @@
         }
       ]
     },
+    "adrar-des-ifoghas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "adwa": {
       "from": "git",
       "versions": [
@@ -1509,6 +1518,15 @@
         }
       ]
     },
+    "diabaly": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "dien-bien-phu": {
       "from": "git",
       "versions": [
@@ -2063,6 +2081,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "gao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2870,6 +2897,15 @@
         }
       ]
     },
+    "kidal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "kingdom-of-egypt": {
       "from": "git",
       "versions": [
@@ -2942,6 +2978,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "konna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6504,6 +6549,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "tessalit": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

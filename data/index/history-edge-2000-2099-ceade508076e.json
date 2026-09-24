@@ -186,12 +186,30 @@
         }
       ]
     },
+    "2012-malian-coup-d-etat--battle-of-kidal-2012--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "2012-tuareg-rebellion--2012-malian-coup-d-etat--caused": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "2012-tuareg-rebellion--battle-of-gao--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -356,6 +374,42 @@
         }
       ]
     },
+    "battle-of-diabaly--battle-of-ifoghas--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-diabaly--second-battle-of-gao--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-konna--battle-of-ifoghas--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-konna--operation-serval--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of": {
       "from": "git",
       "versions": [
@@ -414,6 +468,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -997,6 +1060,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-serval--battle-of-diabaly--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

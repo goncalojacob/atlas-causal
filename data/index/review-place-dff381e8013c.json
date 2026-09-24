@@ -33,6 +33,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "adrar-des-ifoghas",
+      "kind": "place",
+      "names": [
+        "Adrar des Ifoghas",
+        "Adrar dos Ifogas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q366665 for batch 50. `region` off the item's own class, mountain range. It is battle-of-ifoghas's place by A9's first step over its second: the item's own P625 is in this massif and its P276 is Tessalit, 45 km north.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -724,7 +753,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "azawad",
       "kind": "place",
       "names": [
@@ -3009,6 +3038,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "diabaly",
+      "kind": "place",
+      "names": [
+        "Diabaly"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q1764788 for batch 50, for battle-of-diabaly. A9's two steps agree: the battle's own P625 is the town's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "dien-bien-phu",
@@ -4002,6 +4059,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "gao",
+      "kind": "place",
+      "names": [
+        "Gao"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q188904 for batch 50: the city five of the vein's rows name, and the place battle-of-gao and second-battle-of-gao both stand on. A9's two steps agree here — the battles' own P625 is the city's own point.",
         "status": "draft"
       },
       "revised": null,
@@ -5680,6 +5765,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "kidal",
+      "kind": "place",
+      "names": [
+        "Kidal"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q650100 for batch 50, for battle-of-kidal-2012. A9's two steps agree: the battle's own P625 and the town's are the same point to three decimals.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5809,6 +5922,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "konna",
+      "kind": "place",
+      "names": [
+        "Konna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q1764720 for batch 50, for battle-of-konna. A9's two steps agree: the battle's own P625 is the town's.",
         "status": "draft"
       },
       "revised": null,
@@ -12773,6 +12914,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "tessalit",
+      "kind": "place",
+      "names": [
+        "Tessalit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q1025926 for batch 50, for siege-of-tessalit. The siege's own P625 is 1.5 km off the town's; the article puts the besieged camp at Amachach, \"about fifteen kilometers from Tessalit itself\", which is this town and not a second mark beside it.",
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

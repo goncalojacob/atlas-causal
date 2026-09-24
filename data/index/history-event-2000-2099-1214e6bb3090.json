@@ -1330,6 +1330,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -3426,6 +3434,51 @@
         }
       ]
     },
+    "battle-of-diabaly": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-gao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-ifoghas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-kidal-2012": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-konna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-misrata-2011": {
       "from": "git",
       "versions": [
@@ -3670,6 +3723,15 @@
           "fields": [
             "review"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "chadian-intervention-in-northern-mali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -5962,6 +6024,15 @@
         }
       ]
     },
+    "second-battle-of-gao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "second-intifada": {
       "from": "git",
       "versions": [
@@ -6015,6 +6086,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "siege-of-tessalit": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

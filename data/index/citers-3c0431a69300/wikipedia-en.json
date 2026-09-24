@@ -1610,9 +1610,21 @@
     },
     {
       "dissent": false,
+      "id": "2012-malian-coup-d-etat--battle-of-kidal-2012--enabled",
+      "kind": "edge",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "2012-tuareg-rebellion--2012-malian-coup-d-etat--caused",
       "kind": "edge",
       "locator": "\"2012 Malian coup d'état\", revision 1370102863, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "2012-tuareg-rebellion--battle-of-gao--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tuareg rebellion (2012)\", revision 1370751541, lead"
     },
     {
       "dissent": false,
@@ -2012,6 +2024,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-diabaly--battle-of-ifoghas--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-diabaly--second-battle-of-gao--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Gao\", revision 1370736225, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
@@ -2021,6 +2045,18 @@
       "id": "battle-of-karameh--black-september--caused",
       "kind": "edge",
       "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konna--battle-of-ifoghas--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konna--operation-serval--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Konna\", revision 1375363074, § Jihadist coalition advances in Sevare and Mopti and Operation Serval"
     },
     {
       "dissent": false,
@@ -2453,6 +2489,12 @@
       "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
       "kind": "edge",
       "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
+      "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region"
     },
     {
       "dissent": false,
@@ -4313,6 +4355,12 @@
       "id": "operation-rosary--falklands-war--caused",
       "kind": "edge",
       "locator": "\"1982 invasion of the Falkland Islands\", revision 1372863686, lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-serval--battle-of-diabaly--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Diabaly\", revision 1370438795, § Background"
     },
     {
       "dissent": false,
@@ -7448,6 +7496,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-malian-coup-d-etat",
+      "kind": "event",
+      "locator": "\"2012 Malian coup d'état\", revision 1370102863, lead: \"began on 21 March\""
+    },
+    {
+      "dissent": false,
       "id": "2012-tuareg-rebellion",
       "kind": "event",
       "locator": "\"Tuareg rebellion (2012)\", revision 1370751541"
@@ -8000,6 +8054,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-diabaly",
+      "kind": "event",
+      "locator": "\"Battle of Diabaly\", revision 1370438795"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
@@ -8021,6 +8081,18 @@
       "id": "battle-of-freiburg",
       "kind": "event",
       "locator": "\"Battle of Freiburg\", revision 1370441091"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gao",
+      "kind": "event",
+      "locator": "\"Battle of Gao\", revision 1370441289"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gao",
+      "kind": "event",
+      "locator": "\"Battle of Gao\", revision 1370441289, lead: \"between 26 and 28 June 2012\""
     },
     {
       "dissent": false,
@@ -8072,6 +8144,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ifoghas",
+      "kind": "event",
+      "locator": "\"Battle of Ifoghas\", revision 1370443583"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "\"Battle of Inchon\", revision 1370266029"
@@ -8105,6 +8183,18 @@
       "id": "battle-of-khe-sanh",
       "kind": "event",
       "locator": "\"Battle of Khe Sanh\", revision 1375065823"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kidal-2012",
+      "kind": "event",
+      "locator": "\"Battle of Kidal (2012)\", revision 1370445294"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-konna",
+      "kind": "event",
+      "locator": "\"Battle of Konna\", revision 1375363074"
     },
     {
       "dissent": false,
@@ -8717,6 +8807,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "\"Catatumbo campaign\", revision 1370610401"
+    },
+    {
+      "dissent": false,
+      "id": "chadian-intervention-in-northern-mali",
+      "kind": "event",
+      "locator": "\"Chadian intervention in northern Mali\", revision 1370610691"
     },
     {
       "dissent": false,
@@ -10748,6 +10844,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-gao",
+      "kind": "event",
+      "locator": "\"Second Battle of Gao\", revision 1370736225"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-guararapes",
       "kind": "event",
       "locator": "\"Second Battle of Guararapes\", revision 1370736242"
@@ -10901,6 +11003,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tessalit",
+      "kind": "event",
+      "locator": "\"Siege of Tessalit\", revision 1370745744"
     },
     {
       "dissent": false,
