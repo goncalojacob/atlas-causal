@@ -425,6 +425,92 @@ export function disagreesWithSpan(stated, when) {
   return stated.end !== when.end;
 }
 
+// --- the cached lead's first sentence ---------------------------------------
+//
+// `span-vs-article-title` above reads titles, and most articles do not put their
+// years in their title. Part C of the 24 September review compared each record's
+// `when` against the year range in the first sentence of its own cached lead —
+// the same file its summary quotes — and found fifteen records contradicting it:
+// the Cambodian–Vietnamese war dated 1989–1991 beside *"from 1978 to 1989"*, the
+// Rif war 1911–1927 beside 1921–1926, the Great Depression 1929–1941 beside
+// 1929–1939. The title rule fires on five of them, because it reads titles only.
+//
+// It is a **warning** and never a change to a record: which of the two is wrong
+// is a question only a person can answer, and the lead is somebody else's
+// sentence. A7's pass is what acts on it.
+
+// The first sentence, roughly and on purpose. A full stop followed by a space
+// and a capital, with the abbreviations an encyclopaedia's first line actually
+// carries left alone — `c.`, `r.`, `d.`, `b.`, `No.`, `St.`, an initial — none of
+// which is followed by a capital and a space in practice, so the rule that ends a
+// sentence is the space and the capital rather than the stop alone.
+export function firstSentence(text) {
+  const whole = String(text ?? '').replace(/\s+/g, ' ').trim();
+  if (!whole) return '';
+  const end = /\.\s+(?=[A-Z(\u201c"])/.exec(whole);
+  return end ? whole.slice(0, end.index + 1) : whole;
+}
+
+// A year range the sentence states, or null. Three shapes and no fourth, because
+// a fourth is a guess: a dash between two years, `from X to X`, and `between X
+// and X`. Two years in one sentence that are not joined by one of those state no
+// span — "the 1914 and 1918 treaties" is two dates, not an interval — and a
+// sentence with none is most of them.
+const LEAD_DASH = /(?<!\d)(1\d{3}|20\d{2})\s*[‐-―-]\s*(1\d{3}|20\d{2})(?!\d)/;
+const LEAD_FROM = /\bfrom\s+(?:[^.]{0,24}?\s)?(1\d{3}|20\d{2})\s+(?:until|to)\s+(?:[^.]{0,24}?\s)?(1\d{3}|20\d{2})(?!\d)/i;
+const LEAD_BETWEEN = /\bbetween\s+(?:[^.]{0,24}?\s)?(1\d{3}|20\d{2})\s+and\s+(?:[^.]{0,24}?\s)?(1\d{3}|20\d{2})(?!\d)/i;
+
+export function yearsInLead(sentence) {
+  for (const pattern of [LEAD_DASH, LEAD_FROM, LEAD_BETWEEN]) {
+    const found = pattern.exec(String(sentence ?? ''));
+    if (!found) continue;
+    const start = Number(found[1]);
+    const end = Number(found[2]);
+    if (end < start) continue;
+    return { start, end };
+  }
+  return null;
+}
+
+// Whether the record claims a year the sentence does not cover. Containment and
+// not equality: a record *narrower* than the range its article states is inside
+// it, and widening one is A7's pass and a person's judgement, not an error in
+// this record. `end: null` is "as far as the data goes" and is compared on the
+// start alone, exactly as `disagreesWithSpan` treats it.
+export function spanOutsideLead(stated, when) {
+  if (!stated || !when || !Number.isInteger(when.start)) return false;
+  if (when.start < stated.start || when.start > stated.end) return true;
+  if (!Number.isInteger(when.end)) return false;
+  return when.end < stated.start || when.end > stated.end;
+}
+
+const said = (from, to) => (from === to ? `${from}` : `${from}–${to}`);
+
+// The warnings themselves, over the records and the leads in hand. Pure: the
+// cache is read by `tools/validate.mjs`, which is the only thing here that can
+// read a directory, and handed over as a Map of item to lead. A record with no
+// `wikidata`, or one whose item nobody has cached a lead for, is not a record
+// this can say anything about.
+export function leadSpanWarnings(records, leads) {
+  const out = [];
+  for (const r of records ?? []) {
+    if (r?.kind !== 'event' || r.status !== 'active') continue;
+    if (typeof r.wikidata !== 'string' || !r.wikidata) continue;
+    const lead = leads?.get?.(r.wikidata) ?? null;
+    if (!lead || typeof lead.text !== 'string') continue;
+    const stated = yearsInLead(firstSentence(lead.text));
+    if (!stated || !spanOutsideLead(stated, r.when)) continue;
+    out.push({
+      rule: 'span-vs-lead-sentence',
+      id: r.id,
+      kind: r.kind,
+      message: `the first sentence of the cached ${lead.lang ?? 'en'} lead states ${said(stated.start, stated.end)}`
+        + ` and the record is dated ${said(r.when.start, Number.isInteger(r.when.end) ? r.when.end : '(open)')}`,
+    });
+  }
+  return out;
+}
+
 export function checkRules(records, topology = {}, { universe: prebuilt = null } = {}) {
   const errors = [];
   const warnings = [];

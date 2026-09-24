@@ -1020,7 +1020,7 @@ test('the report says what happened, including what it would not decide', async 
   assert.match(text, /created event northfield-rising from Q9000001/);
   assert.match(text, /refused Q9000004/);
   assert.match(text, /unclassified class Q9100009/);
-  assert.match(text, /4 created, 0 enriched, 0 named, 0 left alone, 3 refused, 0 ambiguous/);
+  assert.match(text, /4 created, 0 enriched, 0 named, 0 reused, 0 left alone, 3 refused, 0 ambiguous/);
 });
 
 test('itemIndex finds the records that already carry an item, per kind', () => {

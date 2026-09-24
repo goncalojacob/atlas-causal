@@ -6,7 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg, svgTitle } from '../util/dom.js';
-import { mapKey } from '../view-key.js';
+import { mapKey, PHONE } from '../view-key.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
@@ -102,6 +102,24 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const labelsGroup = svg('g', { class: 'layer layer-labels' });
   viewport.append(landGroup, baseGroup, presencesGroup, regionsGroup, eventsGroup, labelsGroup);
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
+  // **On a phone the world is fitted to the pane's height** (M87 §9, review A
+  // finding 5). The viewBox is 960 x 540 and the default fit is `xMidYMid meet`,
+  // so the picture is letterboxed inside its pane: at 390 px wide the world can
+  // never be taller than 56 % of that, which is the 220-pixel band with 3-pixel
+  // marks and empty ground beneath it the review found. `slice` fits the other
+  // dimension instead and crops what does not fit, which at this ratio is the
+  // poles — a strip of ice for a picture nearly three times the size.
+  //
+  // Not a stylesheet rule, because `preserveAspectRatio` is an attribute and CSS
+  // has no property for it; the breakpoint is `view-key.js`'s `PHONE`, which is
+  // the one `src/style.css` already draws at, so there is one number and not two.
+  // Read again whenever the pane changes size, so a window dragged across the
+  // breakpoint is the picture the breakpoint asks for.
+  const fitToPane = () => {
+    root.setAttribute('preserveAspectRatio', globalThis.matchMedia?.(PHONE)?.matches
+      ? 'xMidYMid slice' : 'xMidYMid meet');
+  };
+  fitToPane();
   // The twelve symbols, once in the document: the timeline draws the same ones
   // by id, and two copies would be twelve repeated ids (glyphs.js).
   installGlyphs(root);
@@ -932,6 +950,9 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
       if (now === last) return;
       last = now;
+      // A pane that changed size may have crossed the phone breakpoint, and
+      // which way the world is fitted to it is decided there (§9).
+      fitToPane();
       render(state.get());
       if (state.get().bbox) scheduleBbox();
     }).observe(container);

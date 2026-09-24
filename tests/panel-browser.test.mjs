@@ -10,7 +10,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
-import { withBrowser, open, waitFor, seenIntro, skip } from './browser.mjs';
+import {
+  withBrowser, open, waitFor, seenIntro, skip, settledShards,
+} from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { defaultState } from '../src/state.js';
 import { horizonSet, horizonYear } from '../src/horizon.js';
@@ -75,21 +77,6 @@ const setWindowTo = (kind, year) => `
 // masthead and the pictures to have caught up with the link.
 const bandEndAt = (kind, year) => `return document.querySelector('#map-band-strip .window-handle.${kind}')
   ?.getAttribute('aria-valuenow') === '${year}';`;
-
-// Waits until the attribute shards have stopped arriving: two readings of the
-// page's own resource timeline the same, a beat apart. The count is a property
-// of the build and not of this file, and what a caller wants is "nothing more
-// is coming" (attributes.js, I4a; the same wait as in map-browser).
-async function settledShards(page) {
-  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
-  let last = -1;
-  for (let tries = 0; tries < 40; tries += 1) {
-    const now = await page.eval(count);
-    if (now > 0 && now === last) return;
-    last = now;
-    await new Promise((resolve) => { setTimeout(resolve, 100); });
-  }
-}
 
 // What the reader can see of the sections: which are there, and which is open.
 const SECTIONS = `return [...document.querySelectorAll(".panel .card-section")].map((s) => ({
@@ -226,26 +213,20 @@ test('opening an actor from an event, then Back, shows the event again', { skip 
     const label = await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();');
     assert.equal(label, '← 25 April');
     await page.eval('document.querySelector(".panel .card-history .go-back").click(); return true;');
-    for (let tries = 0; tries < 100; tries += 1) {
-      if (await page.eval('return Boolean(document.querySelector(".panel .event-head h2"));')) break;
-      await new Promise((resolve) => { setTimeout(resolve, 20); });
-    }
+    // A wait with a name, not a bare hundred tries (M87 §5, review B8): a card
+    // that never comes back said nothing at all before, and the assertion under
+    // it then failed on a null with no hint that it was a matter of time.
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', "the event's card to come back");
     assert.equal(await page.eval('return document.querySelector(".panel .event-head h2").textContent;'), '25 April');
     assert.equal(await page.eval('return new URLSearchParams(location.search).get("actor");'), null,
       'going back to the event closes the actor rather than leaving it open');
 
     // And the browser's own Back and Forward do exactly the same thing.
     await page.eval('history.forward(); return true;');
-    for (let tries = 0; tries < 100; tries += 1) {
-      if (await page.eval('return Boolean(document.querySelector(".panel .actor-head h2"));')) break;
-      await new Promise((resolve) => { setTimeout(resolve, 20); });
-    }
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .actor-head h2"));', "the actor's card on Forward");
     assert.equal(await page.eval('return document.querySelector(".panel .actor-head h2").textContent;'), 'Estado Novo');
     await page.eval('history.back(); return true;');
-    for (let tries = 0; tries < 100; tries += 1) {
-      if (await page.eval('return Boolean(document.querySelector(".panel .event-head h2"));')) break;
-      await new Promise((resolve) => { setTimeout(resolve, 20); });
-    }
+    await waitFor(page, 'return Boolean(document.querySelector(".panel .event-head h2"));', "the event's card on Back");
     assert.equal(await page.eval('return document.querySelector(".panel .event-head h2").textContent;'), '25 April');
   });
 });

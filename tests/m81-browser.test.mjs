@@ -137,6 +137,9 @@ test('one notch of the wheel widens time by more than it grows the picture', { s
 });
 
 test('a mark and a label are the same size on screen before and after a stretch', { skip }, async () => {
+  // A reader's window and not the 800 x 600 default: the picture is scaled to its
+  // pane, and in a 474-pixel pane a name is five pixels tall and is not drawn at
+  // all since M87 §9. What this test measures is a name, so it needs one.
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await open(page, url(`?view=graph&selected=${WAR}`), ready);
@@ -192,7 +195,7 @@ test('a mark and a label are the same size on screen before and after a stretch'
       assert.doesNotMatch(label.text, /…$/, `“${label.text}” is cut`);
     }
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
-  });
+  }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
 test('World War II opened reads as a row of its parts across the pane', { skip }, async () => {

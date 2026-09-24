@@ -14,6 +14,28 @@
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
       "maxLength": 120
     },
+    "refused": {
+      "description": "Every item this import has refused, and why: the day it was first refused and the tool's own sentence about it. Appended and never overwritten — an item refused again is not news, and a log that rewrote itself every run would be a log of the last run, which is what docs/import-report.md was until M87. It is not the per-mode `refused` list under `runs`, which is a retry queue; this is the account of what the import has never been able to use, kept here because a job's log is not something a later run can read back. Keyed by the item, which is the only key the tool ever writes. Absent in a file written before this existed, which reads as empty. No historical claim: the reasons are the tool's own.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["on", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "on": {
+            "description": "The day this item was first refused.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "why": {
+            "description": "The tool's own sentence about it, as the report prints it.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          }
+        }
+      }
+    },
     "runs": {
       "description": "One cursor per mode, because --reconcile and --import walk different lists and neither may clobber the other's place.",
       "type": "object",

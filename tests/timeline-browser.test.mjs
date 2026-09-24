@@ -585,32 +585,52 @@ test('a bar wide enough carries its category, and one below the threshold does n
       assert.ok(bar.width >= 10 && bar.height >= 10, `${bar.id} is ${bar.width} x ${bar.height}`);
     }
 
-    // The bar is what is left of the row once the air round it is taken off,
-    // so the threshold is a question about the row's height. At the floor —
-    // which since M77 is where the repository's own corpus always is, because
-    // the titles ask for more rows than the pane holds — the bar is under the
-    // symbol and none is drawn. The rule is the same one either way: the
-    // symbol follows the bar's size.
+    // The bar is what is left of the row once the air round it is taken off, so
+    // the threshold is a question about the row's height. The rule is read off
+    // the drawing and never assumed of the corpus: whatever height the rows come
+    // out at on the day, a bar at or over the symbol's box carries one and a bar
+    // under it does not. (Before M87 the repository's own corpus was always at
+    // the floor here, because the rows had no cap and the titles asked for more
+    // of them than the pane held; now they are capped at the pane and the rows
+    // are as tall as that leaves them, which is not a number to write down.)
     const PACKED = `return {
       heights: [...new Set([...document.querySelectorAll('#timeline rect.bar[data-id]')].map((b) => Number(b.getAttribute('height'))))],
       glyphs: [...document.querySelectorAll('#timeline use.glyph')].length,
+      under: [...document.querySelectorAll('#timeline use.glyph')].map((g) => {
+        const gy = Number(g.getAttribute('y')) + Number(g.getAttribute('height')) / 2;
+        const gx = Number(g.getAttribute('x'));
+        const bar = [...document.querySelectorAll('#timeline rect[data-id]')].find((b) => {
+          const y = Number(b.getAttribute('y'));
+          const h = Number(b.getAttribute('height'));
+          const x = Number(b.getAttribute('x'));
+          const w = Number(b.getAttribute('width'));
+          return Math.abs(gy - (y + h / 2)) < 0.01 && gx >= x - 1 && gx < x + w;
+        }) ?? null;
+        return bar && { width: Number(bar.getAttribute('width')), height: Number(bar.getAttribute('height')) };
+      }),
     };`;
     await open(page, url(on('from=1900&to=1999')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the packed rows');
-    const squeezed = await page.eval(PACKED);
-    for (const height of squeezed.heights) {
-      assert.ok(height < GLYPH_BOX, `a squeezed row leaves the bar under the symbol (${height})`);
+    const packed = await page.eval(PACKED);
+    if (packed.heights.every((height) => height < GLYPH_BOX)) {
+      assert.equal(packed.glyphs, 0, 'a row that leaves the bar under the symbol carries none');
+    } else {
+      for (const bar of packed.under) {
+        assert.ok(bar, 'every symbol sits on a bar');
+        assert.ok(bar.width >= GLYPH_BOX && bar.height >= GLYPH_BOX,
+          `and on one over the threshold (${bar.width} x ${bar.height})`);
+      }
     }
-    assert.equal(squeezed.glyphs, 0, 'so none is drawn');
 
-    // And with the room to grow, the rows clear it and the same rule puts a
+    // And with the room to grow, the rows are taller and the same rule puts a
     // symbol on every bar that is also wide enough, and on no other.
     await open(page, url(on('fixtures=1')), READY);
     await waitFor(page, 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;', 'the fixtures\' rows');
     const roomy = await page.eval(PACKED);
     for (const height of roomy.heights) {
-      assert.ok(height > Math.max(...squeezed.heights), `a row with room leaves more of it to the bar (${height})`);
+      assert.ok(height >= Math.max(...packed.heights), `a row with room leaves at least as much of it to the bar (${height})`);
     }
+    assert.ok(roomy.glyphs > 0, 'and the roomy rows carry their symbols');
   }, { device: { width: 1280, height: 900, deviceScaleFactor: 1 } });
 });
 
@@ -893,15 +913,19 @@ test('on a very tall pane the rows stop at their cap', { skip }, async () => {
   }, { device: { width: 1440, height: 1400, deviceScaleFactor: 1 } });
 });
 
-// And the other end, which is the ordinary case on the repository's own corpus
-// since M77: every bar carries its title, the packing needs more rows than the
-// pane holds, and rather than squeeze a row below the height a title is
-// legible in — or pack the overflow away behind a count, which is what the
-// owner asked to have removed — the drawing is taller than its pane and the
-// pane scrolls. No count is pinned: what is asserted is the floor, the
-// overflow and the scroll.
-test('when the titles need more rows than the pane holds, the floor holds and the pane scrolls', { skip }, async () => {
-  const { ROW_HEIGHT } = ROW_LIMITS;
+// And the other end, which is the ordinary case on the repository's own corpus:
+// the titles ask for more rows than the pane holds. Until M87 the drawing simply
+// grew — 112 rows and 2,500 px in a 700-pixel pane at the whole span, linear in
+// the corpus and repacked whole on every move of the band (review B5). It is
+// capped at what the pane holds now: the rows stop at the floor a title is
+// legible in, the drawing is the pane and nothing is packed away behind a count.
+// A bar with no room for its name keeps the name under the pointer, which is
+// the answer the map and the graph give for a mark they could not label.
+//
+// No count is pinned: the floor, the cap and the pane are all read off the
+// drawing the corpus of the day produces.
+test('when the titles need more rows than the pane holds, the rows stop at the pane', { skip }, async () => {
+  const { ROW_HEIGHT, AXIS_HEIGHT } = ROW_LIMITS;
   await withBrowser(async (page, url) => {
     await open(page, url(on('from=1900&to=1999')), READY);
     // How many rows the titles need is the whole question here, so the wait is
@@ -910,9 +934,23 @@ test('when the titles need more rows than the pane holds, the floor holds and th
     // being counted.
     await until(page, BARS_NAMED);
     const fit = await fitOf(page);
-    assert.equal(fit.laneHeight, ROW_HEIGHT, `at the floor and no further (${fit.laneHeight})`);
-    assert.ok(fit.svgHeight > fit.paneHeight,
-      `the drawing is taller than the pane (${fit.svgHeight} of ${fit.paneHeight})`);
-    assert.equal(fit.scrollHeight, fit.svgHeight, 'so the pane scrolls it rather than cutting it off');
+    assert.ok(fit.laneHeight >= ROW_HEIGHT, `never below the floor (${fit.laneHeight})`);
+    assert.ok(fit.svgHeight <= fit.paneHeight,
+      `the drawing is inside the pane (${fit.svgHeight} of ${fit.paneHeight})`);
+    assert.equal(fit.scrollHeight, fit.svgHeight, 'so there is nothing under the pane to scroll to');
+    // The cap is the pane's own arithmetic and not a number: as many rows of the
+    // floor's height as fit under the axis.
+    const rows = Math.round((fit.svgHeight - AXIS_HEIGHT) / fit.laneHeight);
+    assert.ok(rows <= Math.floor((fit.paneHeight - AXIS_HEIGHT) / ROW_HEIGHT),
+      `and no more rows than the pane holds (${rows})`);
+    assert.ok(rows > 1, 'with more than one of them');
+    // Nothing is packed away behind a count, which is the half of M77 that §2
+    // does not touch.
+    const packed = await page.eval(`return {
+      badges: document.querySelectorAll('#timeline .bar-count, #timeline .stack-count').length,
+      stacks: document.querySelectorAll('#timeline rect.bar.stack').length,
+    };`);
+    assert.equal(packed.badges, 0, 'no +N badge');
+    assert.equal(packed.stacks, 0, 'and nothing drawn as a stack');
   }, { device: { width: 1280, height: 700, deviceScaleFactor: 1 } });
 });
