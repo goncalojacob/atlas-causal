@@ -4600,6 +4600,255 @@ is not the same thing as an article that exists**, so a run that means to file a
 item under a name should export the title before it imports the item — one call,
 and here it stopped a duplicate of `Q932845` being written under a second name.
 
+## Batch 19 — the Spanish conquest vein, and the Americas' sixteenth century
+
+*24 September, the nineteenth fire. The cell is **the Americas' sixteenth
+century**, which the eighteenth fire left as the thinnest workable cell in this
+partition and which the merge of `origin/m0` left at 14 active and 3 main — two
+fewer than batch 18 measured, because A14's first pass widened two intervals out
+of the century. The vein is the one every fire since the eighth has listed and
+none has opened: **the nine of the Spanish conquest, every one of them inside an
+umbrella already here**.*
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 858 active | **866 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 843 | **849** |
+| **largest connected component** | 609 | **611** |
+| components | 192 | **194** |
+| events with no edge at all | 155 | **156** |
+| Europe before 1900 | 83 active, 18 main | 83 active, 18 main — untouched |
+| the `americas` lane | 202 active, 55 main | **210 active, 55 main** |
+| the Americas' 16th century | 14 active, 3 main | **22 active, 3 main** |
+| source records | 70 | **72** |
+| edges with two cited authors (rule 9) | 195 | **201** |
+
+**The before column is the merge's and not batch 18's.** This fire found
+`origin/m0` eight commits ahead with the 24 September review, M86's brief and
+amendment A14 on it, and `origin/m42` fourteen commits ahead with its curation
+fire's edges; both were merged before anything was imported, which is why the
+component starts at 609 and not batch 18's 607, and why the Americas' 16th
+starts at 14 and not 16. The only conflict in either merge was `STATUS.md`, where
+both claim lines were kept.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 6 / 5 | — | — | 10 / 7 |
+| 16th c. | 19 / 1 | — | — | **22 / 3** | — | — | 41 / 4 |
+| 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
+| 18th c. | 24 / 3 | — | — | 17 / 2 | — | — | 41 / 5 |
+| 19th c. | 15 / 10 | 19 / 1 | 7 / 7 | 38 / 8 | — | — | 79 / 26 |
+| 20th c. | 239 / 64 | 74 / 23 | 111 / 45 | 89 / 30 | — | — | 513 / 162 |
+| 21st c. | 52 / 7 | 46 / 7 | 25 / 15 | 20 / 1 | — | — | 143 / 30 |
+| **all** | **374 / 89** | **139 / 31** | **143 / 67** | **210 / 55** | **—** | **—** | **866 / 242** |
+
+**South and Central America against North America is 176 to 19.** All eight of
+this batch are South or Central American — Peru, Colombia, Ecuador and
+Guatemala — so the brief's order inside the lane is kept.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-punta-quemada` | `Q1615387` | 1525-01 | `spanish-colonization-of-the-americas` | `cauca-department` | 16th |
+| `spanish-conquest-of-the-kingdom-of-q-umarkaj` | `Q3119074` | 1524 | `spanish-conquest-of-guatemala` | — | 16th |
+| `battle-of-puna` | `Q3636591` | 1531-04 | `spanish-colonization-of-the-americas` | `puna-island` | 16th |
+| `battle-of-vilcaconga` | `Q3636661` | 1533-11-08 – 11-09 | `spanish-conquest-of-the-inca-empire` | — | 16th |
+| `battle-of-cusco` | `Q1612814` | 1533-11-14 – 11-15 | `spanish-conquest-of-the-inca-empire` | `cusco` | 16th |
+| `battle-of-maraycalla` | `Q3636517` | 1534-05 | `spanish-conquest-of-the-inca-empire` | `maray-qalla` | 16th |
+| `battle-of-ollantaytambo` | `Q2338569` | 1537-01 | `spanish-conquest-of-the-inca-empire` | `ollantaytambo` | 16th |
+| `battle-of-chupas` | `Q1612597` | 1542-09-16 | `spanish-conquest-of-the-inca-empire` | `ayacucho` | 16th |
+
+**Twelve items put to `tools/import/wikidata.mjs --import` — eight events and
+four places — twelve created, none refused and none ambiguous**, in
+forty-seven calls. **The main count does not move**: five are inside the Inca
+conquest's own 1532–1572, one inside the conquest of Guatemala's 1521–1697, and
+the two that are older than the Inca conquest file under
+`spanish-colonization-of-the-americas`, whose 1493–1898 holds them.
+
+**Two of the eight are older than the umbrella the item names.** `Q1615387` and
+`Q3636591` both carry `P361` `Q636771`, the Spanish conquest of the Inca Empire,
+and both fall before its 1532 start — Punta Quemada is the end of Pizarro's
+first expedition and Puná the beginning of his third. Filing either under the
+conquest would be a `child-outside-parent`, and A7 gives no way to widen the
+conquest, whose article states 1532–1572. They file one level up instead, under
+the colonisation, where the span holds them and the subject is the same.
+
+### Summaries (A12 C1)
+
+**All eight carry the cached English lead as their summary**, at the revision
+the cache names, with the `wikipedia-en` citation beside the Wikidata one and
+the `summary-from-lead` flag. The shortest is the Battle of Cusco's at 106
+characters and the longest Q'umarkaj's at 694, so every one was quoted whole.
+
+### Intervals (A7): nothing to widen
+
+**Every one of the eight agrees with its own cited lead**, which is the first
+batch of this branch where the A7 pass writes nothing. Vilcaconga's lead says
+"November 8–9, 1533" and the item's `P580`/`P582` say the same; Ollantaytambo's
+"January 1537", Punta Quemada's "sometime in January 1525" and Puná's "April
+1531" each match the item's `P585` exactly; Cusco's "November 1533" and
+Maraycalla's "in 1534" are coarser than the item, which is not a disagreement.
+**Q'umarkaj was the one candidate and was refused.** Its lead ends "Following
+the war, two Spanish noblemen were put in charge of Q'umarkaj, although some
+fighting continued until 1527" — fighting after the war is not the war's own
+span, and widening 1524 to 1527 on that sentence would be the run's reading and
+not the article's statement. The date stands at 1524.
+
+### Places (A9, as A12 corrects it)
+
+**Four place records created by the import itself and two reused.** The import
+creates a place only for an item the seeds name as one, so the four location
+items went into the batch beside the eight events and the tool wrote them first,
+which is what its own ordering is for; `cusco` and `ayacucho` have been here
+since batch 8 and are reused.
+
+| place | item | precision | why |
+| --- | --- | --- | --- |
+| `maray-qalla` | `Q16473372` | `point` | an archaeological site, which is A12 C2's "point for a battlefield or site" |
+| `ollantaytambo` | `Q916382` | `city` | `Q515`, city |
+| `cauca-department` | `Q230602` | `region` | a department of Colombia, larger than a settlement and not a state |
+| `puna-island` | `Q2117213` | `region` | an island, the precision batch 18 gave Itamaracá |
+
+**Every precision comes from the item's own class and none was chosen here.**
+`Q839954`, archaeological site, is the one class the batch added to
+`data/imports/wikidata-seeds.json`; its label and its gloss were read off the
+class item over the network and not guessed, and the gloss — "place (or group of
+physical sites) in which evidence of past activity is preserved" — is what makes
+it `point` and not `city`.
+
+**The lane guard of A14(2) passes on all six**: every place's lane is `americas`
+and so is every event's.
+
+**Two of the eight are placeless and both honestly so.** `battle-of-vilcaconga`
+carries no `P625`, no `P276` and no `P131`; its `P17` is `Q28573`, the Inca
+Empire, which the class table types as an actor and not a place, so A9's chain
+runs out and the event takes the lane the empire's point derives. Its article
+ends `{{coord missing|Peru}}`, which is Wikipedia saying the same thing.
+`spanish-conquest-of-the-kingdom-of-q-umarkaj` carries none of the four
+properties at all, so its lane is named for it in the seeds file — the one lane
+this batch seeded.
+
+### Actors: none, and the reason is countable
+
+**The eight items name five distinct `P710` participants between them and the
+atlas holds an actor for none of them**: `Q766543` the Spanish monarchy,
+`Q28573` the Inca Empire, `Q2121220` the K'iche' Kingdom, `Q123531030`, and
+`Q419` Peru — which the atlas does hold, but as the modern republic, whose dates
+do not reach 1533. So all eight carry `actors: []`, which M67 A1 says is not a
+defect, and `docs/m53-polities.md` §4.1 is re-taken at **379 of 866** with the
+numerator unmoved. The nine polities the eighteenth fire named as the largest
+cheap thing in this partition are now eleven, and the two the conquest adds —
+the Inca Empire and the K'iche' Kingdom — would give `actors` lines to every
+record of this vein.
+
+### The six edges
+
+| edge | type | second author | what the article says |
+| --- | --- | --- | --- |
+| `battle-of-vilcaconga` → `battle-of-cusco` | `enabled` | — | "Vilcaconga ensured that the Spanish would not be stopped on their way to the Incan capital, Cuzco." |
+| `battle-of-cusco` → `battle-of-maraycalla` | `precondition-of` | — | Maraycalla was fought against "renegade forces of the Inca Empire, whose capital Cuzco had been taken by the Spaniards in November 1533" |
+| `battle-of-cusco` → `siege-of-cusco` | `precondition-of` | Hemming, p. 115 | "A Spanish expedition led by Francisco Pizarro had captured the Inca capital of Cusco on November 15, 1533 after defeating an Inca army headed by general Quisquis" |
+| `siege-of-cusco` → `battle-of-ollantaytambo` | `caused` | Hemming, p. 206 | "neither side was able to break the deadlock at Cusco for several months, so the Spaniard garrison decided to make a direct attack on Manco's headquarters at the town of Ollantaytambo" |
+| `battle-of-punta-quemada` → `spanish-conquest-of-the-inca-empire` | `precondition-of` | Prescott, pp. 96–102 | "the battle also represented a crucial step to Spain's discovery and conquest of the Peru" |
+| `battle-of-puna` → `spanish-conquest-of-the-inca-empire` | `precondition-of` | Prescott, pp. 142–143 | "The battle marked the beginning of Pizarro's third and final expedition prior to the fall of the Inca Empire." |
+
+**No edge runs from a parent to its own child**, which is A14 and which the two
+edges into `spanish-conquest-of-the-inca-empire` obey because neither Punta
+Quemada nor Puná is filed under it.
+
+**Two source records, both cited and not read**: `hemming-1993-conquest-of-the-incas`
+— John Hemming, *The Conquest of the Incas*, Macmillan 1993 — which is the work
+the Siege of Cusco and Ollantaytambo articles rest on throughout and which their
+own bibliographies name down to the ISBN; and `prescott-conquest-of-peru` —
+William H. Prescott, *History of the Conquest of Peru* — which is the only work
+the Punta Quemada and Puná articles cite, in two different reprints whose page
+numbers the locators keep apart. Source records go 70 → **72** and rule 9's
+count 195 → **201**.
+
+**A third second author was written and deleted.** The Vilcaconga article's only
+citation is a chapter — John F. Guilmartin, "The Cutting Edge: An analysis of
+the Spanish invasion and overthrow of the Inca empire, 1532-1539", in
+*Transatlantic Encounters* — and the article gives it no page, no ISBN and no
+URL. **Rule 13 asks a chapter for at least one resolvable identifier**, and
+inventing one is the thing this run may not do, so the source record was removed
+and the Vilcaconga edge rests on Wikipedia alone at one revision, which its
+explanation says.
+
+### What the component says
+
+**Six new edges, and the largest component moves by two.** `battle-of-punta-quemada`
+and `battle-of-puna` both point at `spanish-conquest-of-the-inca-empire`, which
+is in the 609, so those two join it and the component is **611**. The other four
+edges build a component of five around Cusco — Vilcaconga, the Battle of Cusco,
+Maraycalla, the Siege of Cusco and Ollantaytambo — and **that five does not touch
+the 611**, because the only record of this atlas it can reach is the conquest
+umbrella itself and every one of the five is filed under it. A child-to-parent
+edge there fails rule 4 on the dates and would be the thing A14 refuses in the
+other direction; the five wait for a sibling outside the umbrella.
+
+**`siege-of-cusco` stops being isolated.** It has been here since an earlier
+fire with no edge at all; two of this batch's six run into and out of it, which
+is why the isolated count goes 155 → 156 rather than 155 → 158 and why the
+component count goes 192 → 194 rather than further.
+
+**Two of the eight earn no edge and both are honest.** `battle-of-chupas` is the
+Almagrist civil war and its article argues from Francisco Pizarro's
+assassination, his brother's execution at Las Salinas and Vaca de Castro's
+governorship — **not one of the three is a record here**, and the one link the
+article does make, to Las Salinas, has nothing to point at.
+`spanish-conquest-of-the-kingdom-of-q-umarkaj` is a four-sentence article whose
+only reach outside itself is that Alvarado's 400 allies were "Aztec, Tlaxcaltec
+and Cholultec" — a fact about the force and not a claim that the conquest of
+Mexico brought the conquest of Guatemala about. `spanish-conquest-of-guatemala`
+is its parent and A14 forbids the edge down to it. **The batch wrote no edge
+rather than two hollow ones.**
+
+### What was refused, and why
+
+- **`Q7573336`, the Spanish conquest of Petén** — the ninth of the vein — was
+  read and set aside: its `P580`/`P582` are 1618–1697, so it is the Americas'
+  **seventeenth** century and not this cell's, and it is named below as the
+  cheapest thing the next fire can take. Its Wikidata label carries somebody's
+  vandalism ("Spanish conquest of Petén metides") and `titleFor()` would take
+  the article's title, which is clean.
+- **`battle-of-cajamarca` → `battle-of-vilcaconga`** was drafted and dropped.
+  The Vilcaconga article's Battle section opens "The Spanish emerged as victors
+  in the Battle of Cajamarca in November 1532" and runs from there to the
+  ransom, Atahualpa's execution and "The Spanish, for their part, sought to
+  conquer Cuzco." That is the article setting a scene, not stating that
+  Cajamarca brought Vilcaconga about — the refusal class A14(4) names — and it
+  would have joined an isolated record to the five for nothing but chronology.
+- **`spanish-conquest-of-the-aztec-empire` → `spanish-conquest-of-the-kingdom-of-q-umarkaj`**
+  was considered on the strength of Alvarado's Aztec allies and refused, above.
+
+### Deviations
+
+**1253. A hatnote that disambiguates two articles is not a statement that a
+record is in the wrong place, and the infobox is where to check.** The Battle of
+Maraycalla article opens `{{About||the archaeological site in the Ancash Region,
+Peru|Maray Qalla}}`, which reads at first like Wikipedia saying the battle and
+the site are different things and the item's `P276` therefore wrong. It is not:
+the same article's infobox gives `location=[[Maray Qalla|Maraycalla]]`, so
+Wikipedia itself puts the battle at the site, and the hatnote is only keeping two
+**article titles** apart. The place record had already been half-deleted when the
+infobox was read. **A hatnote is about articles; an infobox is about the thing.**
+
+**1254. Rule 13 can cost a batch its second author, and the honest answer is to
+delete the source record rather than furnish an identifier.** The Vilcaconga
+article cites one work and gives it no page, no ISBN and no URL. A chapter
+without a resolvable identifier is rule 13, and every way past it — looking the
+ISBN up in a catalogue and writing it as though the article had given it,
+demoting the chapter to a `book`, inventing a URL — is the run asserting
+something the article does not. The record was written, refused by the validator
+and deleted, and the edge says in its own explanation that it rests on Wikipedia
+alone.
+
 ## Where the run stands, for the fire that picks it up
 
 *24 September, after the eighteenth fire and its two batches, 17 and 18.*
