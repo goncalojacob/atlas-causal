@@ -2198,6 +2198,12 @@
     },
     {
       "dissent": false,
+      "id": "2013-colombian-clashes",
+      "kind": "event",
+      "locator": "Q14186580"
+    },
+    {
+      "dissent": false,
       "id": "2013-egyptian-coup-d-etat",
       "kind": "event",
       "locator": "Q13605743"
@@ -2291,6 +2297,12 @@
       "id": "2025-2026-iranian-protests",
       "kind": "event",
       "locator": "Q137612545"
+    },
+    {
+      "dissent": false,
+      "id": "2025-catatumbo-clashes",
+      "kind": "event",
+      "locator": "Q131838925"
     },
     {
       "dissent": false,
@@ -3968,9 +3980,99 @@
     },
     {
       "dissent": false,
+      "id": "covid-19-pandemic-in-argentina",
+      "kind": "event",
+      "locator": "Q87235137"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-bolivia",
+      "kind": "event",
+      "locator": "Q87480220"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-brazil",
+      "kind": "event",
+      "locator": "Q86597695"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-canada",
+      "kind": "event",
+      "locator": "Q83873580"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-chile",
+      "kind": "event",
+      "locator": "Q87191204"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-colombia",
+      "kind": "event",
+      "locator": "Q87483673"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-ecuador",
+      "kind": "event",
+      "locator": "Q87250713"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic-in-europe",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-guyana",
+      "kind": "event",
+      "locator": "Q87659698"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-mexico",
+      "kind": "event",
+      "locator": "Q86628344"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-north-america",
+      "kind": "event",
+      "locator": "Q86695115"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-peru",
+      "kind": "event",
+      "locator": "Q87587763"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-south-america",
+      "kind": "event",
+      "locator": "Q86694744"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-the-united-states",
+      "kind": "event",
+      "locator": "Q83873577"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-uruguay",
+      "kind": "event",
+      "locator": "Q87660365"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-venezuela",
+      "kind": "event",
+      "locator": "Q87652010"
     },
     {
       "dissent": false,

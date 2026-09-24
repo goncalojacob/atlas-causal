@@ -2912,9 +2912,51 @@
     },
     {
       "dissent": false,
+      "id": "covid-19-pandemic--covid-19-pandemic-in-the-united-states--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in the United States\", revision 1374802509, lead"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-brazil--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921, lead"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-chile--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Chile\", revision 1371476891, lead"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-peru--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Peru\", revision 1361422337, lead"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-south-america--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921, lead"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-south-america--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in South America\", revision 1372456988, lead"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
       "kind": "edge",
       "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-the-united-states--covid-19-pandemic-in-guyana--caused",
+      "kind": "edge",
+      "locator": "\"COVID-19 pandemic in Guyana\", revision 1373725804, lead"
     },
     {
       "dissent": false,
@@ -7892,6 +7934,12 @@
     },
     {
       "dissent": false,
+      "id": "2013-colombian-clashes",
+      "kind": "event",
+      "locator": "\"2013 Colombian clashes\", revision 1370423552"
+    },
+    {
+      "dissent": false,
       "id": "2013-egyptian-coup-d-etat",
       "kind": "event",
       "locator": "\"2013 Egyptian coup d'état\", revision 1369875339"
@@ -7985,6 +8033,12 @@
       "id": "2025-2026-iranian-protests",
       "kind": "event",
       "locator": "\"2025–2026 Iranian protests\", revision 1373363187"
+    },
+    {
+      "dissent": false,
+      "id": "2025-catatumbo-clashes",
+      "kind": "event",
+      "locator": "\"2025 Catatumbo clashes\", revision 1370103711"
     },
     {
       "dissent": false,
@@ -9680,9 +9734,99 @@
     },
     {
       "dissent": false,
+      "id": "covid-19-pandemic-in-argentina",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Argentina\", revision 1354706847"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-bolivia",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Bolivia\", revision 1370750929"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-brazil",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-canada",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Canada\", revision 1376384524"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-chile",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Chile\", revision 1371476891"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-colombia",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Colombia\", revision 1370746142"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-ecuador",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Ecuador\", revision 1371474249"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic-in-europe",
       "kind": "event",
       "locator": "\"COVID-19 pandemic in Europe\", revision 1372462868"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-guyana",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Guyana\", revision 1373725804"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-mexico",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Mexico\", revision 1372099800"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-north-america",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in North America\", revision 1372454276"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-peru",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Peru\", revision 1361422337"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-south-america",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in South America\", revision 1372456988"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-the-united-states",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in the United States\", revision 1374802509"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-uruguay",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Uruguay\", revision 1370798345"
+    },
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-venezuela",
+      "kind": "event",
+      "locator": "\"COVID-19 pandemic in Venezuela\", revision 1376124982"
     },
     {
       "dissent": false,

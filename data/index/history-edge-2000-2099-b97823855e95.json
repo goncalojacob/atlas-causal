@@ -566,6 +566,51 @@
         }
       ]
     },
+    "covid-19-pandemic--covid-19-pandemic-in-the-united-states--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-europe--covid-19-pandemic-in-brazil--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-europe--covid-19-pandemic-in-chile--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-europe--covid-19-pandemic-in-peru--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-europe--covid-19-pandemic-in-south-america--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused": {
       "from": "git",
       "versions": [
@@ -579,6 +624,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-the-united-states--covid-19-pandemic-in-guyana--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

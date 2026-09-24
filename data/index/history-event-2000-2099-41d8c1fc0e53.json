@@ -1391,6 +1391,15 @@
         }
       ]
     },
+    "2013-colombian-clashes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "2013-egyptian-coup-d-etat": {
       "from": "git",
       "versions": [
@@ -3026,6 +3035,15 @@
         }
       ]
     },
+    "2025-catatumbo-clashes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "2025-lisbon-local-election": {
       "from": "git",
       "versions": [
@@ -3913,6 +3931,69 @@
         }
       ]
     },
+    "covid-19-pandemic-in-argentina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-bolivia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-canada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-chile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-colombia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-ecuador": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "covid-19-pandemic-in-europe": {
       "from": "git",
       "versions": [
@@ -3960,6 +4041,78 @@
           "fields": [
             "review"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-guyana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-north-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-peru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-south-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-the-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-uruguay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "covid-19-pandemic-in-venezuela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

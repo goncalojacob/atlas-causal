@@ -3053,6 +3053,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "2013-colombian-clashes",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "colombian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "The date is the item's own, 21 July 2013; the cached English lead at revision 1370423552 opens \"On 20 July 2013\". One day apart, and a reviewer should settle which. This run does not move a date the import wrote.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2013 Colombian clashes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3625,6 +3656,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "2025–2026 Iranian protests"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "2025-catatumbo-clashes",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "catatumbo-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2025 Catatumbo clashes"
     },
     {
       "authors": [
@@ -13644,7 +13706,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
-      "degree": 1,
+      "degree": 2,
       "id": "covid-19-pandemic",
       "kind": "event",
       "origin": {
@@ -13670,6 +13732,225 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-argentina",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Argentina"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-bolivia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Bolivia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "covid-19-pandemic-in-brazil",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Brazil"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-canada",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-north-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Canada"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "covid-19-pandemic-in-chile",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Chile"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-colombia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Colombia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-ecuador",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Ecuador"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -13683,7 +13964,7 @@
         "wikidata"
       ],
       "created": "2026-09-04",
-      "degree": 2,
+      "degree": 6,
       "id": "covid-19-pandemic-in-europe",
       "kind": "event",
       "origin": {
@@ -13704,6 +13985,258 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "COVID-19 pandemic in Europe"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "covid-19-pandemic-in-guyana",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Guyana"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-mexico",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-north-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Mexico"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-north-america",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in North America"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "covid-19-pandemic-in-peru",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Peru"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "covid-19-pandemic-in-south-america",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in South America"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "covid-19-pandemic-in-the-united-states",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-north-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in the United States"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-uruguay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "end-unstated"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Uruguay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "covid-19-pandemic-in-venezuela",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "covid-19-pandemic-in-south-america",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "The interval is the item's own: Wikidata dates this record 29 February to March 2020, which is the first suspected case and the first confirmed ones, not the span of the epidemic. The cached lead says nothing about an end. A reviewer should widen or open the interval from a source; this run does not, because A7 lets a run widen an interval only from the record's own cited article at a named revision and that article states no end.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "COVID-19 pandemic in Venezuela"
     },
     {
       "authors": [
@@ -33399,6 +33932,12 @@
       "rule": "span-vs-article-title"
     },
     {
+      "id": "2013-colombian-clashes",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2019-bogota-car-bombing",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -33406,6 +33945,12 @@
     },
     {
       "id": "2022-somali-ministry-of-education-bombings",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2025-catatumbo-clashes",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -34018,6 +34563,60 @@
     },
     {
       "id": "coup-of-18-fructidor",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-argentina",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-bolivia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-canada",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-colombia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-ecuador",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-mexico",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-north-america",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-uruguay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "covid-19-pandemic-in-venezuela",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

@@ -55,7 +55,7 @@
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-0e98258f7764.json",
+      "file": "index/attributes-2000-2099-df1f7cccbd98.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -928,7 +928,7 @@
       "id": "death"
     },
     {
-      "count": 4,
+      "count": 19,
       "id": "disaster"
     },
     {
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 411,
+      "count": 413,
       "id": "war"
     }
   ],
@@ -1024,8 +1024,8 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 939,
-    "events": 1227,
+    "edges": 945,
+    "events": 1244,
     "narratives": 2,
     "offices": 11,
     "places": 574,
@@ -1067,20 +1067,20 @@
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-037219b97922.json",
+      "file": "index/explanations-2000-2099-e00c71b3e868.json",
       "from": 2000,
       "to": 2099
     }
   ],
   "files": {
-    "citers": "index/citers-fe95bd9cc309",
-    "core": "index/core-4d4e7ebdd4ec.json",
-    "grounds": "index/grounds-9e8d9bbdbebc.json",
+    "citers": "index/citers-14e14746194e",
+    "core": "index/core-d97b89791894.json",
+    "grounds": "index/grounds-a9ecc90bd867.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-e75f9cb73ad4.json",
-    "search": "index/search-5fb73c7ebe78.json",
-    "sources": "index/sources-5c547e8548b8.json",
-    "territories": "index/territories-87636b04764e.json"
+    "review": "index/review-8959f320c71e.json",
+    "search": "index/search-04292c4b8cbf.json",
+    "sources": "index/sources-fa5d0d338cd7.json",
+    "territories": "index/territories-7aa329eab833.json"
   },
   "historyShards": [
     {
@@ -1126,7 +1126,7 @@
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-a3ea7016536c.json",
+      "file": "index/history-event-2000-2099-41d8c1fc0e53.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
@@ -1175,7 +1175,7 @@
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-816286095cd2.json",
+      "file": "index/history-edge-2000-2099-b97823855e95.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 929,
-    "explained": 929
+    "active": 935,
+    "explained": 935
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [
