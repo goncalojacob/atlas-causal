@@ -6236,6 +6236,42 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-chosin-reservoir",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Chosin Reservoir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -6889,6 +6925,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "battle-of-inchon",
       "kind": "event",
       "origin": {
@@ -7954,6 +7991,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-osan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead",
+          "a7-widened"
+        ],
+        "note": "A7: the record carried 1950-07-04, the item's single P585. Its own cited article at revision 1375327001 dates the engagement to the next day in its first sentence — \"On July 5, 1950, Task Force Smith ... was moved to Osan\" — and its infobox reads \"July 5, 1950\", so the day is 5 July. A reading that moves a date by one day rather than widening a span, which is the first of its kind in this run.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Osan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -8952,6 +9027,43 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-taejon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "note": "The item's P580 and P582 give 14 to 21 July 1950; the record's own cited article at revision 1370312872 dates the battle \"16–20 July 1950 (4 days)\" in its infobox and \"(16–20 July 1950)\" in its first sentence. A7 licenses widening an interval from the cited article and not narrowing one, so the wider bounds the item states are kept and this is the note that says two cited sources disagree about four days.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Taejon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-tannenberg",
       "kind": "event",
@@ -9042,6 +9154,42 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-the-ch-ongch-on-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of the Ch'ongch'on River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -9099,6 +9247,42 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of the Lys (1918)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-the-pusan-perimeter",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of the Pusan Perimeter"
     },
     {
       "authors": [
@@ -9298,6 +9482,42 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Two Sisters"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-unsan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Unsan"
     },
     {
       "authors": [
@@ -14155,6 +14375,42 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Guararapes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "first-battle-of-seoul",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "First Battle of Seoul"
     },
     {
       "authors": [
@@ -23827,6 +24083,42 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "second-battle-of-seoul",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Second Battle of Seoul"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "ramos-2009-historia-de-portugal",
         "meneses-2004-portugal-1914-1926",
@@ -27217,6 +27509,42 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Third Battle of Kharkov"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "third-battle-of-seoul",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Third Battle of Seoul"
     },
     {
       "authors": [
@@ -30626,12 +30954,6 @@
     },
     {
       "id": "battle-of-ica",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-inchon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

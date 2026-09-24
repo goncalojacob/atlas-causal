@@ -1242,6 +1242,15 @@
         }
       ]
     },
+    "battle-of-inchon--second-battle-of-seoul--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-karameh--black-september--caused": {
       "from": "git",
       "versions": [
@@ -1314,6 +1323,15 @@
         }
       ]
     },
+    "battle-of-osan--battle-of-taejon--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of": {
       "from": "git",
       "versions": [
@@ -1324,6 +1342,15 @@
       ]
     },
     "battle-of-shaho--battle-of-sandepu--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-taejon--battle-of-the-pusan-perimeter--enabled": {
       "from": "git",
       "versions": [
         {
@@ -1350,6 +1377,24 @@
         }
       ]
     },
+    "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-ch-ongch-on-river--third-battle-of-seoul--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-the-lys-1918--coup-28-may-1926--precondition-of": {
       "from": "git",
       "versions": [
@@ -1363,6 +1408,15 @@
             "review"
           ],
           "on": "2026-09-02"
+        }
+      ]
+    },
+    "battle-of-the-pusan-perimeter--battle-of-unsan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1399,6 +1453,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2817,6 +2880,24 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-battle-of-seoul--battle-of-inchon--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "first-battle-of-seoul--battle-of-osan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

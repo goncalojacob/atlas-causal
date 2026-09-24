@@ -2434,6 +2434,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "chongchon-river",
+      "kind": "place",
+      "names": [
+        "Ch'ongch'on River",
+        "Rio Ch'ŏngch'ŏn",
+        "Chongchon River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q499266 for batch 51: the river battle-of-the-ch-ongch-on-river was fought along. A9's two steps differ by 37 km, which is what a river's single P625 means; the article puts the fighting \"along the Ch'ongch'on River Valley\".",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2823,6 +2853,34 @@
           "imported-facts",
           "a14-summary-nulled"
         ],
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "daejeon",
+      "kind": "place",
+      "names": [
+        "Daejeon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q20921 for batch 51: the city battle-of-taejon stands on, under the spelling the article calls \"then spelt Taejon\". A9's two steps differ by 17 km across a metropolitan city.",
         "status": "draft"
       },
       "revised": "2026-09-24",
@@ -6301,6 +6359,35 @@
       ],
       "created": "2026-09-24",
       "degree": 1,
+      "id": "lake-changjin",
+      "kind": "place",
+      "names": [
+        "Changjin Reservoir",
+        "Lake Changjin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q12614724 for batch 51: the reservoir battle-of-chosin-reservoir was fought around, under the Korean name of the lake the battle is known by its Japanese one. A9's two steps differ by 15 km across the reservoir. Its class Q131681, reservoir, was added to the class table for it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
       "id": "lakhdaria",
       "kind": "place",
       "names": [
@@ -8858,6 +8945,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "osan",
+      "kind": "place",
+      "names": [
+        "Osan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q42129 for batch 51: the town battle-of-osan stands on. A9's two steps differ by 5 km, which is the size of the town and not a disagreement about where the battle was.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10207,6 +10322,34 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "pusan-perimeter",
+      "kind": "place",
+      "names": [
+        "Pusan Perimeter"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q24297886 for batch 51: the defence line battle-of-the-pusan-perimeter was fought over. A9's two steps give the same point to the digit, because the perimeter is what the battle was about. Its class Q718893, theater of war, was added to the class table for it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -11689,6 +11832,35 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "seoul",
+      "kind": "place",
+      "names": [
+        "Seoul",
+        "Seul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q8684 for batch 51: the capital three of the vein's rows name, and the place first-battle-of-seoul, second-battle-of-seoul and third-battle-of-seoul all stand on. The first two carry no P625 of their own, so A9's first step has nothing to say; the third's own point is 1.4 km from the city's.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
       "status": "active"
     },
     {
@@ -13449,6 +13621,34 @@
         "status": "draft"
       },
       "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "unsan-county",
+      "kind": "place",
+      "names": [
+        "Unsan County"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q708507 for batch 51: the county battle-of-unsan was fought in. A9's two steps differ by 13 km, inside the county. Its class Q18534049, county of North Korea, was added to the class table for it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
       "status": "active"
     },
     {

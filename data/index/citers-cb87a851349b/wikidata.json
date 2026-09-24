@@ -2714,6 +2714,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chosin-reservoir",
+      "kind": "event",
+      "locator": "Q277337"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chupas",
       "kind": "event",
       "locator": "Q1612597"
@@ -3020,6 +3026,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-osan",
+      "kind": "event",
+      "locator": "Q484494"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "Q2888038"
@@ -3200,6 +3212,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-taejon",
+      "kind": "event",
+      "locator": "Q492880"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
@@ -3218,9 +3236,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-ch-ongch-on-river",
+      "kind": "event",
+      "locator": "Q493313"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "Q675999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pusan-perimeter",
+      "kind": "event",
+      "locator": "Q482979"
     },
     {
       "dissent": false,
@@ -3257,6 +3287,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-unsan",
+      "kind": "event",
+      "locator": "Q486531"
     },
     {
       "dissent": false,
@@ -3935,6 +3971,12 @@
       "id": "first-battle-of-guararapes",
       "kind": "event",
       "locator": "Q5452519"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-seoul",
+      "kind": "event",
+      "locator": "Q18016068"
     },
     {
       "dissent": false,
@@ -5336,6 +5378,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-seoul",
+      "kind": "event",
+      "locator": "Q646336"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112"
@@ -5765,6 +5813,12 @@
       "id": "third-battle-of-kharkov",
       "kind": "event",
       "locator": "Q157873"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-seoul",
+      "kind": "event",
+      "locator": "Q493922"
     },
     {
       "dissent": false,

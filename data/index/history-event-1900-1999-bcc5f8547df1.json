@@ -6574,6 +6574,15 @@
         }
       ]
     },
+    "battle-of-chosin-reservoir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-dien-bien-phu": {
       "from": "git",
       "versions": [
@@ -7096,6 +7105,15 @@
         }
       ]
     },
+    "battle-of-osan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-paardeberg": {
       "from": "git",
       "versions": [
@@ -7217,6 +7235,15 @@
         }
       ]
     },
+    "battle-of-taejon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-tannenberg": {
       "from": "git",
       "versions": [
@@ -7252,6 +7279,15 @@
       ]
     },
     "battle-of-te-li-ssu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-ch-ongch-on-river": {
       "from": "git",
       "versions": [
         {
@@ -7331,6 +7367,15 @@
         }
       ]
     },
+    "battle-of-the-pusan-perimeter": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-the-yalu-river-1904": {
       "from": "git",
       "versions": [
@@ -7395,6 +7440,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-unsan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -10531,6 +10585,15 @@
       ]
     },
     "first-battle-of-el-djorf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "first-battle-of-seoul": {
       "from": "git",
       "versions": [
         {
@@ -17245,6 +17308,15 @@
         }
       ]
     },
+    "second-battle-of-seoul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "second-chechen-war": {
       "from": "git",
       "versions": [
@@ -18936,6 +19008,15 @@
             "parent"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "third-battle-of-seoul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

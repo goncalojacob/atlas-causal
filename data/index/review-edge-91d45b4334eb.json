@@ -4322,6 +4322,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "battle-of-inchon",
+      "id": "battle-of-inchon--second-battle-of-seoul--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-seoul",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "battle-of-karameh",
       "id": "battle-of-karameh--black-september--caused",
@@ -4732,6 +4760,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-marignano",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-osan",
+      "id": "battle-of-osan--battle-of-taejon--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-taejon",
       "type": "precondition-of"
     },
     {
@@ -5226,6 +5282,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "from": "battle-of-taejon",
+      "id": "battle-of-taejon--battle-of-the-pusan-perimeter--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-pusan-perimeter",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "from": "battle-of-tashihchiao",
       "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
       "kind": "edge",
@@ -5279,6 +5363,62 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-the-ch-ongch-on-river",
+      "id": "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-chosin-reservoir",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-the-ch-ongch-on-river",
+      "id": "battle-of-the-ch-ongch-on-river--third-battle-of-seoul--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-battle-of-seoul",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "meneses-2004-portugal-1914-1926",
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
@@ -5296,6 +5436,34 @@
       "revised": null,
       "status": "active",
       "to": "coup-28-may-1926",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-the-pusan-perimeter",
+      "id": "battle-of-the-pusan-perimeter--battle-of-unsan--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-unsan",
       "type": "precondition-of"
     },
     {
@@ -5465,6 +5633,34 @@
       "status": "active",
       "to": "treaty-of-portsmouth",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-unsan",
+      "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-ch-ongch-on-river",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -9780,6 +9976,62 @@
       "revised": null,
       "status": "active",
       "to": "second-battle-of-guararapes",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "first-battle-of-seoul",
+      "id": "first-battle-of-seoul--battle-of-inchon--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-inchon",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "first-battle-of-seoul",
+      "id": "first-battle-of-seoul--battle-of-osan--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-osan",
       "type": "precondition-of"
     },
     {

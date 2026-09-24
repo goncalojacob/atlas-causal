@@ -2042,6 +2042,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-inchon--second-battle-of-seoul--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Inchon\", revision 1370266029, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-karameh--black-september--caused",
       "kind": "edge",
       "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
@@ -2159,6 +2165,12 @@
       "id": "battle-of-novara-1513--battle-of-marignano--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-osan--battle-of-taejon--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Osan\", revision 1375327001, § Aftermath"
     },
     {
       "dissent": false,
@@ -2300,6 +2312,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-taejon--battle-of-the-pusan-perimeter--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Taejon\", revision 1370312872, lead and § Second North Korean attack"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
@@ -2309,6 +2327,24 @@
       "id": "battle-of-te-li-ssu--battle-of-tashihchiao--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643, § Preparations by the Japanese and § Preparations by the Russians"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Chosin Reservoir\", revision 1370109047, § Battle / Actions at Yudam-ni"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-ch-ongch-on-river--third-battle-of-seoul--caused",
+      "kind": "edge",
+      "locator": "\"Third Battle of Seoul\", revision 1370750418, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pusan-perimeter--battle-of-unsan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Unsan\", revision 1370276047, § Background"
     },
     {
       "dissent": false,
@@ -2351,6 +2387,12 @@
       "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822, § Background and § Actions at Ipsok"
     },
     {
       "dissent": false,
@@ -3197,6 +3239,18 @@
       "id": "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of",
       "kind": "edge",
       "locator": "\"Second Battle of Guararapes\", revision 1370736242, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-seoul--battle-of-inchon--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Inchon\", revision 1370266029, § Planning"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-seoul--battle-of-osan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Osan\", revision 1375327001, § Outbreak of war and § Infantry column"
     },
     {
       "dissent": false,
@@ -8036,6 +8090,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chosin-reservoir",
+      "kind": "event",
+      "locator": "\"Battle of Chosin Reservoir\", revision 1370109047"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chupas",
       "kind": "event",
       "locator": "\"Battle of Chupas\", revision 1370437248"
@@ -8342,6 +8402,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-osan",
+      "kind": "event",
+      "locator": "\"Battle of Osan\", revision 1375327001"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -8522,6 +8588,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-taejon",
+      "kind": "event",
+      "locator": "\"Battle of Taejon\", revision 1370312872"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
@@ -8540,6 +8612,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-ch-ongch-on-river",
+      "kind": "event",
+      "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "\"Battle of the Downs\", revision 1370599272"
@@ -8549,6 +8627,12 @@
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "locator": "\"Battle of the Lys (1918)\", revision 1370600869"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pusan-perimeter",
+      "kind": "event",
+      "locator": "\"Battle of the Pusan Perimeter\", revision 1376282930"
     },
     {
       "dissent": false,
@@ -8585,6 +8669,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "\"Battle of Two Sisters\", revision 1372847051"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-unsan",
+      "kind": "event",
+      "locator": "\"Battle of Unsan\", revision 1370276047"
     },
     {
       "dissent": false,
@@ -9299,6 +9389,12 @@
       "id": "first-battle-of-guararapes",
       "kind": "event",
       "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-seoul",
+      "kind": "event",
+      "locator": "\"First Battle of Seoul\", revision 1370618963"
     },
     {
       "dissent": false,
@@ -10856,6 +10952,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-seoul",
+      "kind": "event",
+      "locator": "\"Second Battle of Seoul\", revision 1370736593"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "\"Second Boer War\", revision 1372994797"
@@ -11525,6 +11627,12 @@
       "id": "third-battle-of-kharkov",
       "kind": "event",
       "locator": "\"Third Battle of Kharkov\", revision 1370750346"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-seoul",
+      "kind": "event",
+      "locator": "\"Third Battle of Seoul\", revision 1370750418"
     },
     {
       "dissent": false,
