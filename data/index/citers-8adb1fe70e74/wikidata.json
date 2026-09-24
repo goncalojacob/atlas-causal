@@ -2618,6 +2618,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-albuera",
+      "kind": "event",
+      "locator": "Q689471"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "Q5778565"
@@ -2654,6 +2660,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bailen",
+      "kind": "event",
+      "locator": "Q1364346"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bani-walid",
       "kind": "event",
       "locator": "Q775224"
@@ -2687,6 +2699,12 @@
       "id": "battle-of-buceo",
       "kind": "event",
       "locator": "Q2890940"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bussaco",
+      "kind": "event",
+      "locator": "Q389349"
     },
     {
       "dissent": false,
@@ -2753,6 +2771,12 @@
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "Q112811996"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-corunna",
+      "kind": "event",
+      "locator": "Q708088"
     },
     {
       "dissent": false,
@@ -3200,9 +3224,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rolica",
+      "kind": "event",
+      "locator": "Q324344"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "Q575924"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salamanca",
+      "kind": "event",
+      "locator": "Q708580"
     },
     {
       "dissent": false,
@@ -3296,9 +3332,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talavera",
+      "kind": "event",
+      "locator": "Q169023"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tarbes",
+      "kind": "event",
+      "locator": "Q136669216"
     },
     {
       "dissent": false,
@@ -3341,6 +3389,12 @@
       "id": "battle-of-the-pusan-perimeter",
       "kind": "event",
       "locator": "Q482979"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pyrenees",
+      "kind": "event",
+      "locator": "Q2890693"
     },
     {
       "dissent": false,
@@ -3419,6 +3473,18 @@
       "id": "battle-of-viluma",
       "kind": "event",
       "locator": "Q2890016"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vimeiro",
+      "kind": "event",
+      "locator": "Q209359"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vitoria",
+      "kind": "event",
+      "locator": "Q276059"
     },
     {
       "dissent": false,
@@ -3887,6 +3953,12 @@
       "id": "donghak-peasant-revolution",
       "kind": "event",
       "locator": "Q701045"
+    },
+    {
+      "dissent": false,
+      "id": "dos-de-mayo-uprising",
+      "kind": "event",
+      "locator": "Q181146"
     },
     {
       "dissent": false,
@@ -5534,6 +5606,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-porto",
+      "kind": "event",
+      "locator": "Q233405"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "Q646336"
@@ -5630,6 +5708,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-badajoz-1812",
+      "kind": "event",
+      "locator": "Q815121"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bergen-op-zoom-1622",
       "kind": "event",
       "locator": "Q1838038"
@@ -5639,6 +5723,18 @@
       "id": "siege-of-breisach",
       "kind": "event",
       "locator": "Q331565"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cadiz",
+      "kind": "event",
+      "locator": "Q2633683"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ciudad-rodrigo-1812",
+      "kind": "event",
+      "locator": "Q567571"
     },
     {
       "dissent": false,
@@ -5723,6 +5819,12 @@
       "id": "siege-of-tessalit",
       "kind": "event",
       "locator": "Q4474075"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-zaragoza-1809",
+      "kind": "event",
+      "locator": "Q524251"
     },
     {
       "dissent": false,

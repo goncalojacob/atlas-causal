@@ -2,6 +2,15 @@
   "from": null,
   "kind": "place",
   "records": {
+    "a-coruna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "abrolhos-archipelago": {
       "from": "git",
       "versions": [
@@ -266,6 +275,15 @@
         }
       ]
     },
+    "arapiles-castile-and-leon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "argentina-q414": {
       "from": "git",
       "versions": [
@@ -363,6 +381,15 @@
         }
       ]
     },
+    "badajoz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "bahrain-q398": {
       "from": "git",
       "versions": [
@@ -375,6 +402,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "bailen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -961,6 +997,15 @@
         }
       ]
     },
+    "cadiz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "cajamarca": {
       "from": "git",
       "versions": [
@@ -1303,6 +1348,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "ciudad-rodrigo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -3297,6 +3351,15 @@
         }
       ]
     },
+    "la-albuera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "la-guaira": {
       "from": "git",
       "versions": [
@@ -3811,6 +3874,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "sitelinks"
+          ],
           "on": "2026-09-23"
         }
       ]
@@ -5422,6 +5491,15 @@
         }
       ]
     },
+    "pyrenees": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "qing-dynasty": {
       "from": "git",
       "versions": [
@@ -5633,6 +5711,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "rolica": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6145,6 +6232,15 @@
       ]
     },
     "seoul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "serra-do-bucaco": {
       "from": "git",
       "versions": [
         {
@@ -6690,6 +6786,15 @@
         }
       ]
     },
+    "talavera-de-la-reina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "tamandare": {
       "from": "git",
       "versions": [
@@ -6711,6 +6816,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tarbes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7257,12 +7371,30 @@
         }
       ]
     },
+    "vimeiro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "vitoria-de-santo-antao": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "vitoria-gasteiz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7630,6 +7762,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "zaragoza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

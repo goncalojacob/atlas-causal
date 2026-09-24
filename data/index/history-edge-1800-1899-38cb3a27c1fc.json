@@ -47,6 +47,42 @@
         }
       ]
     },
+    "battle-of-albuera--siege-of-badajoz-1812--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-bailen--battle-of-corunna--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-bailen--siege-of-zaragoza-1809--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-bailen--war-of-the-fifth-coalition--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-magersfontein--battle-of-paardeberg--precondition-of": {
       "from": "git",
       "versions": [
@@ -65,12 +101,48 @@
         }
       ]
     },
+    "battle-of-rolica--battle-of-vimeiro--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-salamanca--battle-of-vitoria--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-stormberg--second-battle-of-colenso--reacted-to": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-vimeiro--battle-of-corunna--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-vitoria--battle-of-the-pyrenees--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -167,6 +239,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "dos-de-mayo-uprising--battle-of-bailen--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -430,6 +511,15 @@
         }
       ]
     },
+    "second-battle-of-porto--battle-of-talavera--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "second-boer-war--bambatha-rebellion--precondition-of": {
       "from": "git",
       "versions": [
@@ -461,6 +551,42 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "siege-of-badajoz-1812--battle-of-salamanca--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-cadiz--battle-of-albuera--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-cadiz--spanish-constitution-of-1812--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-ciudad-rodrigo-1812--siege-of-badajoz-1812--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

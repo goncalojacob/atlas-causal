@@ -1964,6 +1964,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-albuera--siege-of-badajoz-1812--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Albuera\", revision 1373550746, § Consequences"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Alegría de Pío\", revision 1370431604, § lead"
@@ -1985,6 +1991,24 @@
       "id": "battle-of-annual--alhucemas-landing--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Annual\", revision 1370483005, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bailen--battle-of-corunna--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Corunna\", revision 1370437705, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bailen--siege-of-zaragoza-1809--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Zaragoza (1809)\", revision 1370746579, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bailen--war-of-the-fifth-coalition--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Bailén\", revision 1371963680, § Aftermath"
     },
     {
       "dissent": false,
@@ -2324,6 +2348,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rolica--battle-of-vimeiro--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Vimeiro\", revision 1370623683, § Background and § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salamanca--battle-of-vitoria--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Salamanca\", revision 1370273420, lead and § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sangarara--siege-of-cusco-1781--enabled",
       "kind": "edge",
       "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
@@ -2465,6 +2501,18 @@
       "id": "battle-of-vilcaconga--battle-of-cusco--enabled",
       "kind": "edge",
       "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vimeiro--battle-of-corunna--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Corunna\", revision 1370437705, § Prelude; \"Battle of Vimeiro\", revision 1370623683, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vitoria--battle-of-the-pyrenees--caused",
+      "kind": "edge",
+      "locator": "\"Battle of the Pyrenees\", revision 1370601915, lead and § Background"
     },
     {
       "dissent": false,
@@ -2951,6 +2999,12 @@
       "id": "donghak-peasant-revolution--first-sino-japanese-war--caused",
       "kind": "edge",
       "locator": "\"Tonghak Peasant Revolution\", revision 1375257262, § lead and § Siege of Jeonju Fortress"
+    },
+    {
+      "dissent": false,
+      "id": "dos-de-mayo-uprising--battle-of-bailen--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Bailén\", revision 1371963680, lead and § Background"
     },
     {
       "dissent": false,
@@ -5162,6 +5216,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-porto--battle-of-talavera--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Porto\", revision 1370787422, lead and § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war--bambatha-rebellion--precondition-of",
       "kind": "edge",
       "locator": "\"Bambatha Rebellion\", revision 1372396539, § Rebellion"
@@ -5261,6 +5321,30 @@
       "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-badajoz-1812--battle-of-salamanca--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Badajoz (1812)\", revision 1370739148, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cadiz--battle-of-albuera--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Albuera\", revision 1373550746, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cadiz--spanish-constitution-of-1812--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Cádiz\", revision 1370740530, § Siege"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ciudad-rodrigo-1812--siege-of-badajoz-1812--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278, lead and § Aftermath"
     },
     {
       "dissent": false,
@@ -8132,6 +8216,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-albuera",
+      "kind": "event",
+      "locator": "\"Battle of Albuera\", revision 1373550746"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "\"Battle of Alegría de Pío\", revision 1370431604"
@@ -8168,6 +8258,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bailen",
+      "kind": "event",
+      "locator": "\"Battle of Bailén\", revision 1371963680"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bani-walid",
       "kind": "event",
       "locator": "\"Battle of Bani Walid\", revision 1374518311"
@@ -8201,6 +8297,12 @@
       "id": "battle-of-buceo",
       "kind": "event",
       "locator": "\"Battle of Buceo\", revision 1366243583"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bussaco",
+      "kind": "event",
+      "locator": "\"Battle of Bussaco\", revision 1370785527"
     },
     {
       "dissent": false,
@@ -8267,6 +8369,12 @@
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-corunna",
+      "kind": "event",
+      "locator": "\"Battle of Corunna\", revision 1370437705"
     },
     {
       "dissent": false,
@@ -8714,9 +8822,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rolica",
+      "kind": "event",
+      "locator": "\"Battle of Roliça\", revision 1373583318"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "\"Battle of Saint-Mathieu\", revision 1370588044"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salamanca",
+      "kind": "event",
+      "locator": "\"Battle of Salamanca\", revision 1370273420"
     },
     {
       "dissent": false,
@@ -8810,9 +8930,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talavera",
+      "kind": "event",
+      "locator": "\"Battle of Talavera\", revision 1370880065"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tarbes",
+      "kind": "event",
+      "locator": "\"Battle of Tarbes\", revision 1370590584"
     },
     {
       "dissent": false,
@@ -8861,6 +8993,12 @@
       "id": "battle-of-the-pusan-perimeter",
       "kind": "event",
       "locator": "\"Battle of the Pusan Perimeter\", revision 1376282930"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pyrenees",
+      "kind": "event",
+      "locator": "\"Battle of the Pyrenees\", revision 1370601915"
     },
     {
       "dissent": false,
@@ -8939,6 +9077,18 @@
       "id": "battle-of-viluma",
       "kind": "event",
       "locator": "\"Battle of Viluma\", revision 1374737190"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vimeiro",
+      "kind": "event",
+      "locator": "\"Battle of Vimeiro\", revision 1370623683"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vitoria",
+      "kind": "event",
+      "locator": "\"Battle of Vitoria\", revision 1370276545"
     },
     {
       "dissent": false,
@@ -9425,6 +9575,12 @@
       "id": "donghak-peasant-revolution",
       "kind": "event",
       "locator": "\"Tonghak Peasant Revolution\", revision 1375257262"
+    },
+    {
+      "dissent": false,
+      "id": "dos-de-mayo-uprising",
+      "kind": "event",
+      "locator": "\"Dos de Mayo Uprising\", revision 1370615812"
     },
     {
       "dissent": false,
@@ -11246,6 +11402,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-porto",
+      "kind": "event",
+      "locator": "\"Second Battle of Porto\", revision 1370787422"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "\"Second Battle of Seoul\", revision 1370736593"
@@ -11336,6 +11498,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-badajoz-1812",
+      "kind": "event",
+      "locator": "\"Siege of Badajoz (1812)\", revision 1370739148"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bergen-op-zoom-1622",
       "kind": "event",
       "locator": "\"Siege of Bergen op Zoom (1622)\", revision 1370739522"
@@ -11345,6 +11513,18 @@
       "id": "siege-of-breisach",
       "kind": "event",
       "locator": "\"Siege of Breisach\", revision 1370739740"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cadiz",
+      "kind": "event",
+      "locator": "\"Siege of Cádiz\", revision 1370740530"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ciudad-rodrigo-1812",
+      "kind": "event",
+      "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278"
     },
     {
       "dissent": false,
@@ -11429,6 +11609,12 @@
       "id": "siege-of-tessalit",
       "kind": "event",
       "locator": "\"Siege of Tessalit\", revision 1370745744"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-zaragoza-1809",
+      "kind": "event",
+      "locator": "\"Siege of Zaragoza (1809)\", revision 1370746579"
     },
     {
       "dissent": false,
