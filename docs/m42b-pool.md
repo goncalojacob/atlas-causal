@@ -4209,92 +4209,359 @@ cites and that is what M72's second author comes from. **The rule: for article
 text beyond the cached lead, use `Special:Export` and read the revision id out
 of the XML.** The REST summary endpoint also answered; it is the lead only.
 
+## Batch 17 — the War of the League of Cambrai, and Europe's sixteenth century
+
+*24 September, the eighteenth fire. The cell is **Europe's sixteenth century**,
+which the seventeenth fire left at 12 active and 1 main — the thinnest cell in
+this partition that is a whole century, since the Americas' 15th at 4 and 3 is
+eight years of a century and Europe's 15th stands against the 1492 wall of open
+question 1. The vein is the one the fires have named four times and not opened:
+**the Italian Wars tree, twelve active events joined to almost nothing.***
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 847 active | **854 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 826 | **833** |
+| largest connected component | 604 | **604** — unmoved, and §"What the component says" is why |
+| components | 194 | 194 |
+| events with no edge at all | 159 | **158** |
+| Europe before 1900 | 76 active, 18 main | **83 active, 18 main** |
+| Europe's 16th century | 12 active, 1 main | **19 active, 1 main** |
+| the `americas` lane | 198 active, 55 main | 198 active, 55 main — untouched |
+| source records | 67 | **69** |
+| edges with two cited authors (rule 9) | 183 | **187** |
+
+`origin/m42` had moved by one commit, its own claim line, and the merge
+conflicted only in `STATUS.md`, where both sides were kept. `docs/m53-polities.md`
+§4.1 re-taken at **379 of 854** — the numerator did not move and §"The nine
+polities" says why.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | **19 / 1** | — | — | 16 / 5 | — | — | 35 / 6 |
+| 17th c. | 21 / 2 | — | — | 14 / 6 | — | — | 35 / 8 |
+| 18th c. | 24 / 3 | — | — | 17 / 2 | — | — | 41 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **374 / 89** | **139 / 31** | **143 / 67** | **198 / 55** | **—** | **—** | **854 / 242** |
+
+**South and Central America against North America is unmoved at 158 to 19.**
+This batch is Europe's and the brief's order inside the `americas` lane is not
+touched by it; the thinnest American cell, the 17th at 14 and 6, is still open
+and its vein is still the two 1654 actions named below.
+
+### How the seven were found
+
+**One SPARQL query and it cost one call**: every item whose `P361` is the Italian
+Wars (`Q273348`) or one of the eight phase records this atlas already holds
+(`Q1355145`, `Q2087151`, `Q636365`, `Q698281`, `Q1429256`, `Q2452024`,
+`Q15542964`, `Q2524228`) and that has an English article. **Seventy-four rows,
+about sixty-eight distinct items**, nine of them records here already. Sixteen
+of them are parts of the War of the League of Cambrai alone, which is why the
+cell was worth a batch and not a pass.
+
+The seven are the ones that carry `P625` **and** fall inside their phase's own
+span (1508-02 to 1516-12), so every one of them files without a
+`child-outside-parent` and none needed a lane seeded for it.
+
+### What was imported
+
+| record | item | date | class | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-agnadello` | `Q1754732` | 1509-05-14 | battle | `agnadello` | 16th |
+| `siege-of-padua` | `Q2284174` | 1509-09-15 – 09-30 | siege | `padua` | 16th |
+| `battle-of-polesella` | `Q3636579` | 1509-12-22 | battle | `polesella` | 16th |
+| `battle-of-ravenna-1512` | `Q1137980` | 1512-04-11 | battle | `ravenna` | 16th |
+| `battle-of-novara-1513` | `Q661940` | 1513-06-06 | battle | `novara` | 16th |
+| `battle-of-la-motta-1513` | `Q1464620` | 1513-10-07 | battle | `costabissara` | 16th |
+| `siege-of-asola-1516` | `Q48807593` | 1516-03-16 – 03-19 | siege | `asola` | 16th |
+
+**Seven items put to `tools/import/wikidata.mjs --import`, seven created, none
+refused and none ambiguous**, in thirty calls. **No class was added**: every one
+is `Q178561` battle or `Q188055` siege and both were already in the table.
+
+**`titleFor()` earned its keep here.** The Wikidata label of `Q15542964` reads
+*"Italian War of 1542–46 Un penesote"* — somebody's vandalism, still standing on
+the item — and three of the seven take a disambiguator the item's label does not
+carry. Every title in the table above is the English article's, not the label's.
+
+### Summaries (A12 C1)
+
+**All seven carry the cached English lead as their summary**, at the revision
+the cache names, with the `wikipedia-en` citation beside the Wikidata one and
+the `summary-from-lead` flag. Every lead was short enough to quote whole — the
+longest is La Motta's at 508 characters and the shortest Padua's at 84 — so
+nothing was cut. **No record of this batch shows the import's placeholder
+alone.**
+
+### Places (A9, as A12 corrects it)
+
+**Seven place records written by hand and none reused**: the atlas held no
+northern Italian town between Melegnano and Rome, so all seven items' `P276`
+localities were new. Each record takes the locality item's own point, its own
+name and `city` precision, which is what its class says — five comuni or cities,
+one municipality seat (`Q30022007`, Agnadello, which has no English article and
+so carries no `wikipedia`).
+
+| place | item | why |
+| --- | --- | --- |
+| `agnadello` | `Q30022007` | the village the battle is named for |
+| `padua` | `Q617` | the city besieged |
+| `polesella` | `Q34382` | the reach of the Po the fleet was moored on |
+| `ravenna` | `Q13364` | the city the French had breached when the battle was fought |
+| `novara` | `Q6046` | the city the French were besieging |
+| `costabissara` | `Q46389` | see below |
+| `asola` | `Q42288` | the town besieged |
+
+**`costabissara` is the one the run had to decide and it said so in the record.**
+The La Motta article's lead names Schio, with a `{{huh}}` tag on it and an HTML
+comment saying the Italian Wikipedia links Costabissara; its own narrative puts
+the battle "in the plains of Vicenza near Motta de Costabissara"; and the item's
+`P276` is Costabissara, within two kilometres of the item's own `P625`. The
+record takes Costabissara and its `review.note` states the disagreement rather
+than reading over it. **Nothing was invented**: every point is the locality
+item's own.
+
+### Filing (A3, A6, A8), and the main count
+
+**All seven file under `war-of-the-league-of-cambrai`** (1508-02 – 1516-12),
+which this atlas has held since M42b's batch 1, and every one of the seven
+falls inside it. `P361` on all seven is `Q636365`, the war itself. **The main
+count does not move: 242 before and 242 after.** No second parent was written:
+the only umbrella above the war is `italian-wars`, and filing a battle under
+both the phase and the whole would nest what is already nested.
+
+### The seven edges, and the second author on four of them
+
+Every edge is `probable` and every explanation quotes the sentence that carries
+the claim, at a named revision.
+
+| edge | type | what the article says |
+| --- | --- | --- |
+| `battle-of-agnadello` → `siege-of-padua` | `precondition-of` | Padua's defenders were "what remained of Venice's army after Agnadello" |
+| `siege-of-padua` → `battle-of-polesella` | `precondition-of` | holding Padua freed Pitigliano's November counter-offensive, of which the river attack on Ferrara was part |
+| `siege-of-padua` → `siege-of-asola-1516` | `precondition-of` | "the Holy Roman Empire would not attempt another invasion of Italy until 1516" |
+| `battle-of-polesella` → `battle-of-ravenna-1512` | `enabled` | the defeat sent Venice's embassy to Julius; the peace took him out of the League and turned him against France |
+| `battle-of-ravenna-1512` → `battle-of-novara-1513` | `precondition-of` | a French victory that cost them Milan a month later, and Novara was the attempt to take it back |
+| `battle-of-novara-1513` → `battle-of-la-motta-1513` | `precondition-of` | d'Alviano "unexpectedly left without French support" after Louis XII withdrew from Italy |
+| `battle-of-novara-1513` → `battle-of-marignano` | `precondition-of` | "The Swiss had taken control of Milan… after their victory at the Battle of Novara (1513)" |
+
+**The last of the seven is the edge into what the atlas already had.**
+`battle-of-marignano` has been here since batch 12 with no link of any kind; the
+Marignano article names Novara as the thing the 1515 campaign was fought to
+undo, so the edge is the article's own sentence read forwards.
+
+**Four of the seven carry a second author, cited and not read**, on the shape
+batch 16 set: two new source records for the works the articles themselves cite
+— `mallett-shaw-2014-the-italian-wars` (pp. 95, 97–98, and p. 121 of the 2012
+printing) and `norwich-1982-a-history-of-venice` (pp. 428–429) — each with the
+page that article's own footnote gives and a `reference` that says it is the
+article's entry and not a reading. Rule 9's count moves 183 → 187. The other
+three edges rest on two Wikipedia revisions each, because the sentences that
+carry them are footnoted to works no other edge of this batch needed
+(Shaw 2006, Tucker 2010, Burnett 2016) or to nothing at all — the Siege of Padua
+article carries a standing `{{no footnotes}}` tag.
+
+### What the component says, and what the run refused
+
+**The largest component did not move and this is the honest reason.** The seven
+new events and `battle-of-marignano` are now **one component of eight**, where
+before there were seven singletons-to-be and one isolated record; the count of
+components is unchanged at 194 and the isolated count fell by one, which is
+`battle-of-marignano` leaving it. **The Italian Wars tree reaches the rest of
+this atlas through no record that is here yet.** What would join them is the
+French Wars of Religion, the Habsburg–Ottoman wars or the Reformation, and every
+one of those is a main event this batch may not write.
+
+**One edge was written in draft and not kept**: `battle-of-marignano` →
+`italian-war-of-1521-1526`, which would have joined nine and then, through
+`battle-of-pavia`, eleven. **The article refuses it.** The Italian War of
+1521–1526 article (revision 1370788853) says the war "arose from animosity over
+the election of Charles as Emperor in 1519–1520 and from Pope Leo X's need to
+ally with Charles against Martin Luther", and names Marignano nowhere. An edge
+the article does not state is not this run's to write, whatever it would do to
+the number.
+
+### The nine polities, which is why §4.1 did not move
+
+**Every one of the seven items names its participants and the atlas holds not
+one of them.** `P710` across the seven gives nine polities — `Q4948` the
+Republic of Venice, `Q70972` the Kingdom of France, `Q12548` the Holy Roman
+Empire, `Q170174` the Papal States, `Q693570` Ferrara, `Q153529` Milan,
+`Q435583` the Old Swiss Confederacy, and `Q766543` and `Q21088788` for the
+Spanish monarchy under two items — and there is no actor record for any of the
+nine. So all seven arrived with `actors: []`, the import behaving exactly as its
+rule says, and `docs/m53-polities.md` §4.1 stands at 379 of 854.
+
+**That is a vein and a large one.** Nine polities would carry every European
+record before 1800 this branch has written or will write, and the four the
+`americas` lane needs for the same centuries (Castile, Portugal, the Spanish
+Empire) are partly here already. It is not this batch's, because an actor is a
+record with a span and a licence question of its own (`NC_ORIGINS`), but it is
+the cheapest large thing left in this partition.
+
+### Deviations
+
+**1251. The batch's records and `docs/m53-polities.md` §4.1 belong in the same
+commit, and this fire learned it from a red test rather than from the note that
+says so.** `docs/m53-polities.md` line 296 states that the "after M42" row is
+retaken at every batch of that milestone; this fire committed the seven records
+and the index first and read §4.1 only when `node --test` failed on
+`tests/m53.test.mjs:363` with *"854 !== 847"*. Commit `b0605a58` is therefore
+red on that one test and `ddb3aa13` is not. It cost nothing this time because
+run **1611** on `b0605a58` was cancelled by the concurrency group when the next
+push landed, which is luck and not a process. **The rule the next fire can have
+for free: `docs/m53-polities.md` §4.1's denominator is the active count, so the
+commit that changes the active count is the commit that re-takes the row.**
+
+**1250. A source record's `reference` is capped at 300 characters, and a "cited
+and not read" note that names two articles and two revisions runs past it.**
+`schema/v1/source.json` → `/properties/reference` is `oneOf` null and a string
+of at most 300, and rule 1 reported it as *"expected exactly one of 2
+alternatives to match, 0 did"* — which names the keyword and not the length, so
+the length is worth writing down. The Mallett and Shaw note was 234 characters
+at its second attempt. **Write the reference as one sentence naming one article,
+and put the second article's revision in the citation's own locator**, which has
+room.
+
+**1249. The claim rule's ninety-minute clause names `origin/m0`, which a lane
+run never pushes, so on a branch it is the sixty-minute clause alone that
+decides.** Section 2 of `docs/run-protocol.md` stops a fire when a claim younger
+than five hours exists *and* either `origin/m0` was pushed less than ninety
+minutes ago or the claim is less than sixty minutes old; the 21 September
+amendment says the rule applies on the branch as it did on `m0`. Read with the
+branch substituted, this fire would have stopped: the claim was ninety-six
+minutes old and `origin/m42b` had been pushed sixty-seven minutes before. **The
+branch's own history settles it the other way.** The 01:00:37 claim was taken
+sixty-five minutes after the previous run's last push, and every claim in
+`STATUS.md` sits about two and a quarter hours after the one before it, which is
+the cadence the sixty-minute clause alone produces against hourly fires. So the
+reading in force on this branch is the literal one — `origin/m0`'s push time,
+and the claim's own age — and a fire that finds a finished run and a claim over
+an hour old takes the branch. Written down so the fire after this one does not
+re-derive it.
+
 ## Where the run stands, for the fire that picks it up
 
-*24 September, after the seventeenth fire and its sixteenth batch.*
+*24 September, after the eighteenth fire and its seventeenth batch.*
 
 | | |
 | --- | --- |
-| corpus | **847 active** |
+| corpus | **854 active** |
 | **main** | **242** — the count the next batch must not raise |
 | **largest connected component** | **604** |
 | components | 194 |
-| events with no edge at all | 159 |
-| Europe before 1900 | 76 active, 18 main |
-| the `americas` lane | **198 active, 55 main** |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3), Europe's 16th (12, 1), the Americas' 17th (14, 6) |
-| the cell this batch moved | the Americas' 18th, 11 → 17 active and 2 main unchanged |
+| events with no edge at all | 158 |
+| Europe before 1900 | 83 active, 18 main |
+| the `americas` lane | 198 active, 55 main |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3), the Americas' 17th (**14, 6**), Europe's 15th (4, 2) |
+| the cell this batch moved | Europe's 16th, 12 → 19 active and 1 main unchanged |
 
-**The order of a fire on this branch, which deviation 1242 settles.** Resolve
-the merge and **commit it**; only then `node tools/build-index.mjs`; then commit
-the index as its own commit. Building before the merge commit exists costs seven
-rule 16 errors on the history shards every time. The same order is 798's for a
-batch: records committed, then rebuild, then commit the index. **This fire kept
-it** and had no history-shard errors.
+**The thinnest workable cell is now the Americas' seventeenth century**, at 14
+active and 6 main, and its vein is named below. Europe's 16th is no longer the
+trailing cell but it is nowhere near spent: nine more parts of the War of the
+League of Cambrai and about forty parts of the other seven phases came back in
+this fire's one query and are listed below.
 
-**Read `git log origin/m42 -- <file>` before taking a conflicted file whole**
-(deviation 1246). This fire's merge of `origin/m42`'s batch 47 conflicted only
-in the generated index, the two import bookkeeping files and
-`docs/m53-polities.md`; `tools/import/wikidata.mjs` was untouched and its
-`maxlag` fallback is still in place.
+**The order of a fire on this branch, which deviations 1242 and 1251 settle
+together.** Resolve the merge and **commit it**; only then
+`node tools/build-index.mjs`; then commit the index as its own commit. The same
+order is 798's for a batch: records committed, then rebuild, then commit the
+index — **and `docs/m53-polities.md` §4.1 is re-taken in the commit that writes
+the records**, because its denominator is the active count and
+`tests/m53.test.mjs` fails the moment the records land without it. This fire kept
+798's order and missed the §4.1 half, which is deviation 1251.
 
-**The network answered throughout and `maxlag` never stood.** `Special:EntityData`,
-the SPARQL endpoint and the import's own calls all served; the import finished
-in twenty-five calls on the first attempt. **`api.php` at `en.wikipedia.org` is
-refused whatever user-agent a hand-written `curl` carries** — see deviation 1247
-— and `Special:Export` is the way to an article's text and its revision id.
+**For article text beyond the cached lead, `Special:Export` and nothing else**
+(deviation 1247). It answered eleven times in this fire with the revision id in
+the XML and the wikitext whole, which is where the `<ref>` tags and therefore
+M72's second author come from. `api.php` is still refused.
 
 ### The vein this batch opened, and what is left in it
 
-**Sixteen items are left of the twenty-three the query returned, and the query
-costs one call.** Every item whose `P361` is one of `Q54434` (the War of
-Jenkins' Ear), `Q1806552` (the Rebellion of Túpac Amaru II), `Q2427419` (the
-Guaraní War) or `Q2095753` (the Revolt of the Comuneros) and that has an English
-article. One of the twenty-three is already a record here
-(`battle-of-cartagena-de-indias`) and six are this batch.
+**One SPARQL query returns every part of the Italian Wars that has an English
+article — seventy-four rows, about sixty-eight items, nine of them records
+here.** It costs one call and it is the whole of the work of finding the next
+four or five batches in Europe's sixteenth century. The query is `?item wdt:P361
+?parent` over `VALUES ?parent { wd:Q273348 wd:Q1355145 wd:Q2087151 wd:Q636365
+wd:Q698281 wd:Q1429256 wd:Q2452024 wd:Q15542964 wd:Q2524228 }` with an
+`en.wikipedia.org` sitelink required.
 
-**The one that is the Túpac Amaru rising and is not here:**
+**The nine left of the War of the League of Cambrai**, all filing under
+`war-of-the-league-of-cambrai` and so costing no main event:
 
-| item | title | date | why it was refused | century |
+| item | title | date | `P625` | note |
 | --- | --- | --- | --- | --- |
-| `Q9172888` | Battle of Combapata | 1781-04-05 | no `P625`, no `P17`, and its `P276` `Q3312913` is not a place record here, so the import refused a placeless event with no region | 18th |
+| `Q3636372` | Battle of Casaloldo | 1509-05-10 | yes | four days before Agnadello; the war article calls it a Venetian victory over Mantua |
+| `Q11703607` | Sack of Brescia | 1512-02-28 | yes | Gaston de Foix's storm of the city, six weeks before Ravenna |
+| `Q3312328` | Spanish conquest of Iberian Navarre | 1512 | yes | the query returns it under this war; the 1521–1526 article links its own 1521 section, so A8's second parent is worth checking before filing |
+| `Q699475` | Battle of Guinegate | 1513-08-26 | yes | the Battle of the Spurs; the English front |
+| `Q1300742` | Battle of Flodden | 1513-09-19 | yes | the English front again, and the largest article of the nine |
+| `Q3485875` | Siege of Dijon | 1513-09-18 | yes | the Swiss in Burgundy after Novara |
+| `Q110448326` | Siege of Crema | 1513 | yes | year only |
+| `Q575924` | Battle of Saint-Mathieu | 1512-08-20 | yes | naval, off Brest |
+| `Q124249264` | Battle of the citadel of Vicenza | 1509-12-06 | no | the war article dates it 26–29 November 1509 and calls it Pitigliano's recapture; no `P625`, so it needs a place record or a seeded lane |
 
-**It is worth a fire, because it is the engagement the rising turned on**: the
-article has Túpac Amaru II captured retreating from it. What it needs is a place
-record written by hand from `Q3312913` — the same pass this batch did five times
-— or a lane seeded for it in `data/imports/wikidata-seeds.json` → `lanes`. Not a
-change to the tool: the refusal is correct.
+**Eight of the nine carry `P625` and every one of them is inside 1508-02 to
+1516-12**, so a batch of them is the same shape as this one and needs no new
+class.
 
-**The fifteen of the War of Jenkins' Ear**, which file under `war-of-jenkins-ear`
-(1739–1748, main, already here) and would cost **no main event**:
+**The other phases, from the same query, counting only the parts that carry
+`P625`.** The 1521–1526 war has seven (`Q3174545` Pamplona, `Q2889540` Noáin,
+`Q7879248` Mézières, `Q683341` Bicocca, `Q9291683` Genoa, `Q1541712`
+Fuenterrabía, `Q3485951` Marseille); the League of Cognac six (`Q465627` the
+Sack of Rome 1527, `Q16529030` Naples, `Q38251286` Capo d'Orso, `Q2746040`
+Landriano, `Q981042` Florence, `Q633362` Gavinana); the 1542–1546 war seven
+(`Q7510304` Perpignan, `Q2744068` Muros Bay, `Q2237484` Ceresole, `Q3822861`
+Serravalle, `Q3486015` Saint-Dizier, `Q7885742` Boulogne, `Q2297059` the
+Solent); the 1551–1559 war four (`Q3625430` Mirandola, `Q3485960` Metz,
+`Q3486028` Thionville, `Q2236963` Gravelines); the 1494–1495 war four
+(`Q764793` Fornovo, `Q2670926` Seminara, `Q5708031` Atella, and `Q112232807`
+Novara 1495 without a point); and the 1499–1504 wars one (`Q1443091`
+Garigliano). **`Q465627`, the Sack of Rome of 1527, is the one of all of these
+that a reader would look for first**, and it files under
+`war-of-the-league-of-cognac`, which `battle-of-pavia` already points at.
 
-| item | title | date | where | century |
-| --- | --- | --- | --- | --- |
-| `Q3024756` | Battle of Porto Bello (1739) | 1739-11-22 | Panama, S/C | 18th |
-| `Q4677387` | Action of 8 April 1740 | 1740-04-08 | at sea | 18th |
-| `Q3486020` | Siege of St. Augustine (1740) | 1740-06-13 | Florida, **North** | 18th |
-| `Q7510020` | Battle of Bloody Mose | 1740-06-26 | Florida, **North** | 18th |
-| `Q22936135` | Attacks on Fuerteventura in 1740 | 1740-11-24 | Canaries, **not this lane** | 18th |
-| `Q4872309` | Invasion of Cuba (1741) | 1741-12-09 | Cuba, S/C | 18th |
-| `Q6059634` | Invasion of Georgia (1742) | 1742-07-01 | Georgia, **North** | 18th |
-| `Q2888163` | Battle of Bloody Marsh | 1742-07-07 | Georgia, **North** | 18th |
-| `Q4871513` | Battle of La Guaira | 1743-03-02 | Venezuela, S/C | 18th |
-| `Q4872124` | Battle of Puerto Cabello | 1743-04-16 | Venezuela, S/C | 18th |
-| `Q2713453` | Voyage of the Glorioso | 1747-07-25 | at sea | 18th |
-| `Q4677277` | Action of 18 March 1748 | 1748-03-18 | at sea | 18th |
-| `Q4872306` | Battle of Santiago de Cuba (1748) | 1748-04-09 | Cuba, S/C | 18th |
-| `Q1136414` | Battle of Havana (1748) | 1748-10-12 | Cuba, S/C | 18th |
-| `Q16838766` | Georgia Experiment | 1735-01-01 | Georgia, **North**, and *outside* the war's 1739 start | 18th |
+**Where a batch of those would connect.** `battle-of-pavia` and
+`war-of-the-league-of-cognac` are a component of two, `italian-war-of-1494-1495`
+and `italian-wars-of-1499-1504` another, `italian-war-of-1542-1546` and
+`italian-war-of-1551-1559` a third, and `italian-wars`,
+`war-of-the-league-of-cambrai`, `italian-war-of-1521-1526`,
+`italian-war-of-1536-1538` and `battle-of-st-quentin` are isolated. A batch that
+writes the Thionville and Gravelines end of the 1551–1559 war reaches
+`battle-of-st-quentin`; a batch of the Cognac parts reaches `battle-of-pavia`.
+**None of them reaches the 604**, for the reason batch 17 states: the tree's door
+to the rest of this atlas is the French Wars of Religion or the Reformation, and
+both are main events.
 
-**Six of the fifteen are South and Central America and are the next batch's by
-the brief's own order**: Porto Bello, the invasion of Cuba, La Guaira, Puerto
-Cabello, Santiago de Cuba and Havana. The four at sea and the five North
-American ones wait behind them — the split is 158 to 19 and nowhere near spent.
-`Q16838766` is dated 1735 and `war-of-jenkins-ear` begins in 1739, so filing it
-there is a `child-outside-parent` and the tests hold that at zero: it wants
-`spanish-colonization-of-the-americas` or nothing.
+### The nine polities, which is the largest cheap thing in this partition
+
+Every item of batch 17 named two to four `P710` participants and the atlas holds
+an actor for **none** of the nine: `Q4948` Venice, `Q70972` the Kingdom of
+France, `Q12548` the Holy Roman Empire, `Q170174` the Papal States, `Q693570`
+Ferrara, `Q153529` Milan, `Q435583` the Old Swiss Confederacy, `Q766543` and
+`Q21088788` the Spanish monarchy. Nine actor records would give `actors` lines to
+every European record before 1800 this branch holds, and `docs/m53-polities.md`
+§4.1 has not moved by an import of this lane since it was first taken. A fire
+that takes it should read `NC_ORIGINS` in `src/origin.js` first: an actor an
+import creates is licensed differently from one written here.
 
 ### The veins earlier fires named, and which are still open
+
+**The Americas' seventeenth century is the thinnest cell and its vein is two
+items**: `Q4677306` and `Q4677341`, the 1654 actions that end the
+Dutch–Portuguese War in Brazil, filing under the war itself and costing no main
+event. **`Q19019163`** *Dutch invasions of Brazil* (1624–1654) is an umbrella
+whose span already holds seven records here; a fire that takes it should check
+first that it does not sit between the war and Dutch Brazil in the way deviation
+1244 refuses.
 
 **The nine of the conquest vein are unchanged and still open** — the Americas'
 sixteenth century, every one inside an umbrella already here, so none costs a
@@ -4302,24 +4569,31 @@ main event: `Q3636661` Vilcaconga, `Q1612814` Battle of Cusco, `Q3636517`
 Maraycalla, `Q2338569` Ollantaytambo, `Q1612597` Chupas, `Q3119074` Q'umarkaj,
 `Q1615387` Punta Quemada, `Q3636591` Puná, `Q7573336` Petén. The two dates to
 check before importing `Q1615387` and `Q3636591` are as the sixteenth fire left
-them: both are `P361` of the Inca conquest and both are dated before its 1532
-start, so `spanish-colonization-of-the-americas` is the umbrella that certainly
-holds them.
+them.
 
-**`Q4677306` and `Q4677341`**, the two 1654 actions that end the Dutch–Portuguese
-War in Brazil, file under the war itself and cost no main event.
-**`Q19019163`** *Dutch invasions of Brazil* (1624–1654) is an umbrella whose span
-already holds seven records here; a fire that takes it should check first that it
-does not sit between the war and Dutch Brazil in the way deviation 1244 refuses.
-**The Italian Wars tree is still twelve active events joined to nothing**, and
-the **Peace of Cateau-Cambrésis of 1559 is still the named door**. The French
-Wars of Religion (`Q673175`) are still free to whoever brings their children.
+**The fifteen of the War of Jenkins' Ear are unchanged**, six of them South and
+Central America and the next batch's in that lane by the brief's own order:
+`Q3024756` Porto Bello, `Q4872309` the invasion of Cuba, `Q4871513` La Guaira,
+`Q4872124` Puerto Cabello, `Q4872306` Santiago de Cuba, `Q1136414` Havana. Four
+are at sea and five are North American, which A10's order puts behind them while
+the split is 158 to 19. **`Q9172888`, the Battle of Combapata**, is still refused
+for want of a place record for `Q3312913`, and still worth a fire: it is the
+engagement the Túpac Amaru rising turned on.
 
-**A lesson this fire paid for and the next can have free.** A part-to-umbrella
-edge is available only where the part is what *began* the umbrella: rule 4
-refuses it otherwise, because the umbrella is dated from before its parts. Three
-such edges were written and deleted here. What carries the same argument is the
-edge from the umbrella *forward* into the part.
+**The French Wars of Religion (`Q673175`) are still free to whoever brings their
+children, and still cost a main event**, which is the whole of why Europe's
+sixteenth century has one main and nineteen records.
+
+**A lesson batch 16 paid for and this fire used.** A part-to-umbrella edge is
+available only where the part is what *began* the umbrella: rule 4 refuses it
+otherwise. What carries the same argument is the edge from the umbrella *forward*
+into the part. Batch 17 wrote no such edge and needed none.
+
+**A lesson batch 17 paid for.** An edge that would join two components is still
+not writable if the article does not state it. `battle-of-marignano` →
+`italian-war-of-1521-1526` was drafted and dropped for exactly that: the 1521
+article gives the Imperial election and Leo X's need of Charles as the war's
+causes and never mentions Marignano.
 
 ### The two questions for the owner are unchanged and both still block a century
 

@@ -21296,6 +21296,62 @@ STEP 2 reads the file where the rule lives. The batch's own three commits keep
 is clean; one red commit is left in the branch's history.
 `docs/m42b-pool.md` → "Batch 16" is the full account.
 
+**M42b batch 17 — the War of the League of Cambrai, and Europe's sixteenth
+century, 24 September.** The eighteenth fire on this branch took the thinnest
+whole century left in this partition — Europe's 16th, 12 active and 1 main — and
+opened the vein four fires had named and none had touched: **the Italian Wars
+tree, twelve active events joined to almost nothing**. One SPARQL query for every
+item whose `P361` is the Italian Wars or one of the eight phase records here
+returned **seventy-four rows, about sixty-eight items**, nine of them records
+already. **Seven were created, none refused and none ambiguous**, in thirty
+calls: `battle-of-agnadello`, `siege-of-padua`, `battle-of-polesella`,
+`battle-of-ravenna-1512`, `battle-of-novara-1513`, `battle-of-la-motta-1513` and
+`siege-of-asola-1516`, all filed under `war-of-the-league-of-cambrai` and all
+inside its 1508–1516, so **the main count does not move: 242 before and 242
+after**. **Seven place records written by hand** from each item's own `P276`,
+every one at `city` precision because every one is a comune or a town, and the
+atlas had held no northern Italian place between Melegnano and Rome.
+`costabissara` is the one the run had to decide: the La Motta article's lead says
+Schio, its own narrative says "the plains of Vicenza near Motta de Costabissara",
+and the item's `P276` says Costabissara — the record takes the item's locality
+and its `review.note` states the disagreement. All seven carry the **cached
+English lead as their summary** at a named revision with the `summary-from-lead`
+flag; none shows the import's placeholder. **Seven edges**, each `probable` and
+each quoting the sentence that carries it, one of them running into
+`battle-of-marignano`, which had been here since batch 12 with no link of any
+kind. **Four of the seven carry a second author, cited and not read** — two new
+source records, `mallett-shaw-2014-the-italian-wars` and
+`norwich-1982-a-history-of-venice`, each with the page the article's own footnote
+gives — and rule 9's count moves **183 → 187**. **The largest component did not
+move, 604 to 604, and the batch says why**: the seven and Marignano are one
+component of eight, the isolated count falls 159 → 158, and the Italian Wars
+tree reaches the rest of this atlas only through the French Wars of Religion or
+the Reformation, both of which are main events this batch may not write. **One
+edge was drafted and dropped**: `battle-of-marignano` →
+`italian-war-of-1521-1526` would have joined eleven, and the 1521 article gives
+the Imperial election and Leo X's need of Charles as the war's causes and never
+mentions Marignano — an edge the article does not state is not the run's to
+write, whatever it would do to the number. The corpus is **854 active**, Europe
+before 1900 is 83, the cell is 19 with its one main untouched, and the `americas`
+lane is untouched at 198. `docs/m53-polities.md` §4.1 re-taken at **379 of 854**:
+the numerator did not move, and **not for want of a `P710`** — every one of the
+seven items names two to four participants and the atlas holds an actor for none
+of the nine polities between them (Venice, France, the Empire, the Papal States,
+Ferrara, Milan, the Swiss Confederacy and the Spanish monarchy under two items),
+which is the largest cheap thing left in this partition. **Deviation 1251**: the
+records and §4.1 belong in one commit, and this fire learned it from
+`tests/m53.test.mjs` failing at "854 !== 847" after the records were already
+pushed, so `b0605a58` is red on that one test and `ddb3aa13` is not — run 1611
+was cancelled by the concurrency group before it could say so, which is luck and
+not a process. **Deviation 1250**: a source record's `reference` is capped at 300
+characters and rule 1 reports the overflow as "expected exactly one of 2
+alternatives to match", which names the keyword and not the length.
+**Deviation 1249**: the claim rule's ninety-minute clause names `origin/m0`,
+which a lane run never pushes, so on a branch the sixty-minute clause decides
+alone — which is how every claim in this file has been taken, and it is written
+down so the next fire does not re-derive it.
+`docs/m42b-pool.md` → "Batch 17" is the full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
