@@ -38,7 +38,34 @@
         }
       ]
     },
+    "battle-of-havana-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-la-guaira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-pillpinto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-porto-bello-1739": {
       "from": "git",
       "versions": [
         {
@@ -56,7 +83,25 @@
         }
       ]
     },
+    "battle-of-puerto-cabello": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-sangarara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-santiago-de-cuba-1748": {
       "from": "git",
       "versions": [
         {
@@ -258,6 +303,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "invasion-of-cuba-1741": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

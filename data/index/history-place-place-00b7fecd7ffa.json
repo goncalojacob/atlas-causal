@@ -2007,6 +2007,15 @@
         }
       ]
     },
+    "guantanamo-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "guaviare-department": {
       "from": "git",
       "versions": [
@@ -2784,6 +2793,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "la-guaira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4471,6 +4489,15 @@
         }
       ]
     },
+    "portobelo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "portsmouth-naval-shipyard": {
       "from": "git",
       "versions": [
@@ -4618,6 +4645,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "puerto-cabello": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

@@ -29,6 +29,24 @@
         }
       ]
     },
+    "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-la-guaira--battle-of-puerto-cabello--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-pillpinto--siege-of-cusco-1781--enabled": {
       "from": "git",
       "versions": [
@@ -38,7 +56,25 @@
         }
       ]
     },
+    "battle-of-porto-bello-1739--battle-of-cartagena-de-indias--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-sangarara--siege-of-cusco-1781--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-santiago-de-cuba-1748--battle-of-havana-1748--precondition-of": {
       "from": "git",
       "versions": [
         {

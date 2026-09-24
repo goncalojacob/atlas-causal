@@ -6038,7 +6038,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 3,
       "id": "battle-of-cartagena-de-indias",
       "kind": "event",
       "origin": {
@@ -6523,6 +6523,40 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-havana-1748",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "date-from-article"
+        ],
+        "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 12 October 1748, and the English Wikipedia lead, at revision 1370442712, says the battle \"was fought between 12-14 October 1748\". The end is the article's. Place attached by hand: the place record was already here without a Wikidata identifier, so the import could not match it to the item and would have written a second one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Havana (1748)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6859,6 +6893,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Kursk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-la-guaira",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "date-from-article"
+        ],
+        "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 2 March 1743, and the English Wikipedia lead, at revision 1370446747, says the battle \"took place between 2-5 March 1743\". The end is the article's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of La Guaira"
     },
     {
       "authors": [
@@ -7803,6 +7871,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-porto-bello-1739",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Porto Bello (1739)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-prague-1648",
       "kind": "event",
@@ -7853,6 +7953,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Pucacasa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-puerto-cabello",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Puerto Cabello"
     },
     {
       "authors": [
@@ -8144,6 +8276,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Santa Clara"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-santiago-de-cuba-1748",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place attached by hand: the place record was already here without a Wikidata identifier, so the import could not match it to the item and would have written a second one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Santiago de Cuba (1748)"
     },
     {
       "authors": [
@@ -16247,6 +16412,40 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "interwar period"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "invasion-of-cuba-1741",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "date-from-article"
+        ],
+        "note": "Interval widened under A7 from the record's own cited article: the item gives only P585 9 December 1741, and the English Wikipedia lead, at revision 1370623950, says the invasion \"took place between 4-5 August and 9 December 1741\". The start is the article's and the end is the item's own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Invasion of Cuba (1741)"
     },
     {
       "authors": [

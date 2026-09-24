@@ -4283,6 +4283,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "guantanamo-bay",
+      "kind": "place",
+      "names": [
+        "Guantánamo Bay",
+        "Baía de Guantánamo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "guaviare-department",
@@ -4429,7 +4456,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 6,
+      "degree": 7,
       "id": "havana",
       "kind": "place",
       "names": [
@@ -5924,6 +5951,32 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "la-guaira",
+      "kind": "place",
+      "names": [
+        "La Guaira"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -9447,6 +9500,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "portobelo",
+      "kind": "place",
+      "names": [
+        "Portobelo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9785,6 +9864,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "puerto-cabello",
+      "kind": "place",
+      "names": [
+        "Puerto Cabello",
+        "Puerto Cabello (Venezuela)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -11053,7 +11159,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 3,
+      "degree": 4,
       "id": "santiago-de-cuba",
       "kind": "place",
       "names": [
@@ -14035,6 +14141,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "guantanamo-bay",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "guaviare-department",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14060,6 +14172,12 @@
     },
     {
       "id": "kwantung-peninsula",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "la-guaira",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -14209,6 +14327,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "portobelo",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "prague-castle",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14228,6 +14352,12 @@
     },
     {
       "id": "pueblo-rico",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "puerto-cabello",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

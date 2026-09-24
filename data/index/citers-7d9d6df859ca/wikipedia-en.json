@@ -1862,6 +1862,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused",
+      "kind": "edge",
+      "locator": "\"Invasion of Cuba (1741)\", revision 1370623950, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala--la-noche-triste--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Cempoala\", revision 1370436634, § Aftermath"
@@ -1895,6 +1901,12 @@
       "id": "battle-of-karameh--black-september--caused",
       "kind": "edge",
       "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-guaira--battle-of-puerto-cabello--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of La Guaira\", revision 1370446747"
     },
     {
       "dissent": false,
@@ -2024,6 +2036,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-porto-bello-1739--battle-of-cartagena-de-indias--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Puná\", revision 1370586803"
@@ -2069,6 +2087,12 @@
       "id": "battle-of-sangarara--siege-of-cusco-1781--enabled",
       "kind": "edge",
       "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santiago-de-cuba-1748--battle-of-havana-1748--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Havana (1748)\", revision 1370442712, § Background"
     },
     {
       "dissent": false,
@@ -7832,6 +7856,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-havana-1748",
+      "kind": "event",
+      "locator": "\"Battle of Havana (1748)\", revision 1370442712"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hue",
       "kind": "event",
       "locator": "\"Battle of Huế\", revision 1374240274"
@@ -7889,6 +7919,12 @@
       "id": "battle-of-kursk",
       "kind": "event",
       "locator": "\"Battle of Kursk\", revision 1373344662"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-guaira",
+      "kind": "event",
+      "locator": "\"Battle of La Guaira\", revision 1370446747"
     },
     {
       "dissent": false,
@@ -8060,6 +8096,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-porto-bello-1739",
+      "kind": "event",
+      "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-prague-1648",
       "kind": "event",
       "locator": "\"Battle of Prague (1648)\", revision 1370586580"
@@ -8069,6 +8111,12 @@
       "id": "battle-of-pucacasa",
       "kind": "event",
       "locator": "\"Battle of Pucacasa\", revision 1370586703"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-puerto-cabello",
+      "kind": "event",
+      "locator": "\"Battle of Puerto Cabello\", revision 1370272346"
     },
     {
       "dissent": false,
@@ -8123,6 +8171,12 @@
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "\"Battle of Santa Clara\", revision 1370588555"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-santiago-de-cuba-1748",
+      "kind": "event",
+      "locator": "\"Battle of Santiago de Cuba (1748)\", revision 1370588626"
     },
     {
       "dissent": false,
@@ -9353,6 +9407,12 @@
       "id": "interwar-period",
       "kind": "event",
       "locator": "\"Interwar period\", revision 1375184905"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-cuba-1741",
+      "kind": "event",
+      "locator": "\"Invasion of Cuba (1741)\", revision 1370623950"
     },
     {
       "dissent": false,
