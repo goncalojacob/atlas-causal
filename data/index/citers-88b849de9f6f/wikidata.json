@@ -3956,6 +3956,12 @@
     },
     {
       "dissent": false,
+      "id": "french-invasion-of-russia",
+      "kind": "event",
+      "locator": "Q179250"
+    },
+    {
+      "dissent": false,
       "id": "french-revolution",
       "kind": "event",
       "locator": "Q6534"
@@ -5996,6 +6002,18 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-fifth-coalition",
+      "kind": "event",
+      "locator": "Q684324"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-fourth-coalition",
+      "kind": "event",
+      "locator": "Q605977"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "locator": "Q636365"
@@ -6011,6 +6029,24 @@
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
       "locator": "Q1527665"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-seventh-coalition",
+      "kind": "event",
+      "locator": "Q2724511"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-sixth-coalition",
+      "kind": "event",
+      "locator": "Q138107"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-third-coalition",
+      "kind": "event",
+      "locator": "Q249232"
     },
     {
       "dissent": false,

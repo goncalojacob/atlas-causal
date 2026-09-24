@@ -2264,6 +2264,46 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "citationCount": 1,
+      "created": "2026-09-24",
+      "creators": [
+        "Richard K. Riehn"
+      ],
+      "doi": null,
+      "id": "riehn-1990-1812-napoleons-russian-campaign",
+      "isbn": "9780070527317",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "McGraw-Hill",
+      "reference": "The work the English Wikipedia article \"French invasion of Russia\" cites at p. 26, at revision 1375995823, for Alexander leaving the Continental blockade and Napoleon losing his chief instrument against Britain. ISBN and publisher are the article's own template. Cited and not read.",
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "1812: Napoleon's Russian Campaign",
+      "type": "book",
+      "url": null,
+      "year": 1990
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "citationCount": 98,
       "created": "2026-09-02",
       "creators": [
@@ -2783,7 +2823,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1036,
+      "citationCount": 1042,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -2820,7 +2860,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1972,
+      "citationCount": 1983,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

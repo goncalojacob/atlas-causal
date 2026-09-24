@@ -1027,6 +1027,15 @@
         }
       ]
     },
+    "french-invasion-of-russia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "greco-turkish-war-of-1897": {
       "from": "git",
       "versions": [
@@ -1888,6 +1897,51 @@
             "regionNote",
             "review"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-the-fifth-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-the-fourth-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-the-seventh-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-the-sixth-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-the-third-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

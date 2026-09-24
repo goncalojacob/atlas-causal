@@ -708,6 +708,15 @@
         }
       ]
     },
+    "riehn-1990-1812-napoleons-russian-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "rosas-1994-estado-novo": {
       "from": "git",
       "versions": [

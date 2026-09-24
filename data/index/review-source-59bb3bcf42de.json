@@ -1470,6 +1470,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "doi": null,
+      "id": "riehn-1990-1812-napoleons-russian-campaign",
+      "isbn": "9780070527317",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1812: Napoleon's Russian Campaign",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-02",
       "degree": 98,
       "doi": null,
@@ -1806,7 +1833,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 1036,
+      "degree": 1042,
       "doi": null,
       "id": "wikidata",
       "isbn": null,
@@ -1830,7 +1857,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 1972,
+      "degree": 1983,
       "doi": null,
       "id": "wikipedia-en",
       "isbn": null,

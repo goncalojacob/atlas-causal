@@ -3224,6 +3224,12 @@
     },
     {
       "dissent": false,
+      "id": "french-invasion-of-russia--war-of-the-sixth-coalition--caused",
+      "kind": "edge",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+    },
+    {
+      "dissent": false,
       "id": "french-revolution--haitian-revolution-1791-1804--inspired",
       "kind": "edge",
       "locator": "\"Haitian Revolution\", revision 1376092092, § Effects of the French Revolution"
@@ -4379,6 +4385,12 @@
       "id": "peninsular-war--spanish-constitution-of-1812--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish Constitution of 1812\", revision 1370968394, \"Background\""
+    },
+    {
+      "dissent": false,
+      "id": "peninsular-war--war-of-the-fifth-coalition--enabled",
+      "kind": "edge",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
     },
     {
       "dissent": false,
@@ -6431,6 +6443,30 @@
       "id": "war-of-jenkins-ear--war-of-the-austrian-succession--enabled",
       "kind": "edge",
       "locator": "\"War of the Austrian Succession\", revision 1375907167"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-fourth-coalition--french-invasion-of-russia--precondition-of",
+      "kind": "edge",
+      "locator": "\"French invasion of Russia\", revision 1375995823, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of",
+      "kind": "edge",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-third-coalition--war-of-the-fifth-coalition--caused",
+      "kind": "edge",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-third-coalition--war-of-the-fourth-coalition--caused",
+      "kind": "edge",
+      "locator": "\"War of the Fourth Coalition\", revision 1372944372"
     },
     {
       "dissent": false,
@@ -9164,6 +9200,12 @@
     },
     {
       "dissent": false,
+      "id": "french-invasion-of-russia",
+      "kind": "event",
+      "locator": "\"French invasion of Russia\", revision 1375995823"
+    },
+    {
+      "dissent": false,
       "id": "french-revolution",
       "kind": "event",
       "locator": "\"French Revolution\", revision 1375966584"
@@ -11642,6 +11684,18 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-fifth-coalition",
+      "kind": "event",
+      "locator": "\"War of the Fifth Coalition\", revision 1371442339"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-fourth-coalition",
+      "kind": "event",
+      "locator": "\"War of the Fourth Coalition\", revision 1372944372"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-league-of-cambrai",
       "kind": "event",
       "locator": "\"War of the League of Cambrai\", revision 1375133857"
@@ -11657,6 +11711,18 @@
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
       "locator": "\"War of the Mantuan Succession\", revision 1374838991"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-sixth-coalition",
+      "kind": "event",
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-third-coalition",
+      "kind": "event",
+      "locator": "\"War of the Third Coalition\", revision 1370750237"
     },
     {
       "dissent": false,
