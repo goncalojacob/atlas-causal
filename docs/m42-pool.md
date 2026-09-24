@@ -9260,9 +9260,23 @@ it.
   fought that the atlas also holds; none exists yet. A fire that takes two or
   three of the 2023–2024 rows together may get it.
 - **`siege-of-tessalit` is still the record batch 50 left edgeless**, and this
-  batch did not reach it either: the Mali War rows read here name Tessalit as
-  ground and never as an event. It is still the first thing the next Africa fire
-  should try.
+  fire read its own article end to end at revision 1370745744 rather than
+  guessing again. **There is no edge in it.** Every event it names is a place —
+  Tessalit, Tinsalane, Kidal, Anefif, In-Khalil, Gao — and the only record this
+  atlas holds that its prose names is `2012-tuareg-rebellion`, in the lead's
+  *"occurred in early 2012 during the Tuareg rebellion in Mali"*, which is
+  containment and not cause; as a filing that would be a second parent under A8
+  and a two-deep nest under a `mali-war` it already has, and as an edge it is
+  what C8 bars. The Mali War rows read for this batch name Tessalit as ground and
+  never as an event. **A later fire should stop trying this record from the Mali
+  vein**: what it wants is the Ambush of Tinsalane, which the siege's own
+  February section names as the engagement that decided it — *"the planned
+  transport convoy carrying Malian soldiers … was ambushed by a brigade of the
+  MNLA"*, and *"a month later Tessalit fell"*. That article exists on the English
+  Wikipedia (page 75084621) and **carries no Wikidata item at all**, so it is not
+  a row of any query this run can make and cannot be imported under A2. A record
+  reachable only through an itemless article is a new shape of gap and is put
+  here rather than rediscovered.
 - **`Q21028650`, the Algiers Accords of 2015, is still refused on its class and
   is still a question for a person** (batch 50), and it is now named in the lead
   of a record the atlas holds — `kidal-offensive` — which is a reason to settle
@@ -9281,3 +9295,12 @@ it.
   `1948-palestine-war` and `balkan-wars`.
 - **Deviation numbers: take the next above 1434.** This fire wrote **1432 to
   1434**.
+
+**The check is green on this fire's head.** Run 1746 of `validate.yml`, commit
+`998a2e82`, conclusion `success`. Run 1745, on the index commit, failed on one
+test and one only — `docs/m53-polities.md` §4.1's denominator, which rule 798's
+ordering leaves stale between the index commit and the docs commit that retakes
+it; run 1744, on the records commit, was cancelled by the next push in the same
+concurrency group, which is that ordering working rather than a fault.
+**2,114 tests pass locally, 1,819 pure and 295 browser, with nothing skipped.**
+The re-run allowance is unspent: nothing was re-run.
