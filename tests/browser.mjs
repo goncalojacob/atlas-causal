@@ -9,6 +9,7 @@
 
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+import { after } from 'node:test';
 import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -132,35 +133,32 @@ export async function connect(wsUrl) {
   };
 }
 
-// The server, the browser and one page, torn down in that order however the
-// body ends. `device`, when given, is an Emulation.setDeviceMetricsOverride
-// payload — the viewport the page lays itself out in, and its pixel ratio —
-// and `touch` adds a touchscreen to it.
+// --- one Chromium per file --------------------------------------------------
 //
-// `mobile` stays false in that payload even for a phone. It is not a size:
-// it turns on Chromium's whole mobile-viewport machinery, which rescales the
-// layout viewport to something of its own choosing — 390 × 844 comes out
-// 551 × 1191 — and what these tests need is the width the brief names, laid
-// out under a finger. The touchscreen comes from setTouchEmulationEnabled,
-// which is a separate thing and works either way.
+// A browser was launched for every test — 250 launches per CI run, each with a
+// fresh profile, each waiting on `/json/list` and each paying the cold start
+// that the 60-second deadline below exists to survive (review B7). One browser
+// per file now, with a fresh `Target.createBrowserContext` per test: an
+// incognito context is the same isolation a fresh profile gives — no cache, no
+// storage, no cookies shared — and the launch is paid once instead of twenty
+// times.
 //
-// `args` are extra flags for the browser itself, for the one thing a suite may
-// need that no other should have: see the note at the flag list below.
-export async function withBrowser(fn, { device = null, touch = false, args = [] } = {}) {
-  const port = await freePort();
-  const server = createServer({ port });
-  // What the close below is waiting on, when it waits: `server.close()` stops
-  // the server accepting and then waits for the connections it already has,
-  // and Chromium keeps its own alive. Held here so the failure can say how
-  // many there were and where from, which is what nobody could see before.
-  const connections = new Set();
-  server.on('connection', (socket) => {
-    connections.add(socket);
-    socket.once('close', () => connections.delete(socket));
-  });
-  await new Promise((resolve) => server.listen(port, HOST, resolve));
+// It is per *file* rather than per process because `node --test` gives each file
+// its own process, and the root `after` below is what closes it. Keyed by the
+// browser's own flags and window size, because both are given on the command
+// line and neither can be changed afterwards: a suite that asks for
+// `--disable-lcd-text` or for a phone-sized window gets its own browser, which
+// is one or two per file rather than one per test.
+const launched = new Map();
 
-  const debugPort = await freePort();
+// Where the browser is listening, from **its own words**. Chromium prints
+// `DevTools listening on ws://…` to stderr the instant the port is up, and that
+// line carries the endpoint; the old loop chose a port, hoped nothing else took
+// it, and polled `/json/list` every 100 ms until a page appeared. `--port=0`
+// and this line cannot race anything.
+const ENDPOINT = /ws:\/\/[^\s]+/;
+
+async function launch(args, device) {
   const profile = await mkdtemp(path.join(tmpdir(), 'atlas-cdp-'));
   const child = spawn(chrome, [
     '--headless', '--disable-gpu', '--no-sandbox',
@@ -187,9 +185,10 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
     // launch failure the assertion below reports with nothing else to say.
     '--disable-dev-shm-usage',
     // The window is the device's own size before the page is ever loaded.
-    // The override below alone is not enough: headless scales the emulated
-    // viewport to the window it was given, and a phone inside an 800 × 600
-    // window comes out neither 390 wide nor 844 tall.
+    // The override per target is not enough on its own: headless scales the
+    // emulated viewport to the window it was given, and a phone inside an
+    // 800 × 600 window comes out neither 390 wide nor 844 tall. It is why the
+    // browsers are keyed by this size as well as by the flags.
     ...(device ? [`--window-size=${device.width},${device.height}`] : []),
     // What one suite needs of the browser and no other should carry: the halo
     // tests ask for `--disable-lcd-text`, because subpixel-antialiased text
@@ -198,7 +197,7 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
     // rather than in the list above, so a test that reads pixels does not
     // change how every other test's page is rasterised.
     ...args,
-    `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`,
+    '--remote-debugging-port=0', `--user-data-dir=${profile}`,
     'about:blank',
   ], { stdio: ['ignore', 'pipe', 'pipe'] });
 
@@ -206,45 +205,146 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
   // never read before, which both risked a full pipe blocking the child and
   // left every launch failure saying nothing but that it had failed; a
   // missing shared library or a profile it cannot write is in here.
-  let said = '';
+  const state = { child, profile, said: '', exited: null, browser: null, url: null };
+  let announce = null;
+  const listening = new Promise((resolve) => { announce = resolve; });
   for (const stream of [child.stdout, child.stderr]) {
     stream.setEncoding('utf8');
-    stream.on('data', (chunk) => { said = (said + chunk).slice(-2000); });
+    stream.on('data', (chunk) => {
+      state.said = (state.said + chunk).slice(-2000);
+      if (state.url) return;
+      const found = ENDPOINT.exec(chunk);
+      if (found) { state.url = found[0].trim(); announce(state.url); }
+    });
   }
-  let exited = null;
-  child.once('exit', (code, signal) => { exited = signal ? `signal ${signal}` : `code ${code}`; });
+  child.once('exit', (code, signal) => {
+    state.exited = signal ? `signal ${signal}` : `code ${code}`;
+    announce(null);
+  });
 
-  // The endpoint is up when it answers; the browser takes a moment to bind.
-  // A deadline and not a count of tries: the old loop slept only when the
-  // fetch threw, so a Chromium that answered before it had made its first
-  // page spent its hundred tries in a few milliseconds and failed a browser
-  // that was seconds from ready. Sixty seconds because a cold shared runner
-  // unpacking a browser for the first test in a file is slow and this failing
-  // spuriously has cost three checks at thirty (deviations 551, 553) and, on
-  // 22 September 2026, three more in one evening — two runs of pull request
-  // #20 and one of `m42`, each on the first test of `compose-browser`, each
-  // with Chromium alive and no page listed at the deadline, each green on the
-  // next try; it is still under the job's `--test-timeout`, and a browser
-  // that is genuinely absent still fails, just later and with a reason.
-  let targets = null;
-  const deadline = Date.now() + 60_000;
-  while (!targets && Date.now() < deadline && exited === null) {
-    try {
-      const response = await fetch(`http://127.0.0.1:${debugPort}/json/list`);
-      const list = await response.json();
-      targets = list.filter((t) => t.type === 'page' && t.webSocketDebuggerUrl);
-      if (targets.length === 0) targets = null;
-    } catch {
-      targets = null;
-    }
-    if (!targets) await new Promise((resolve) => { setTimeout(resolve, 100); });
+  // Sixty seconds because a cold shared runner unpacking a browser for the
+  // first test in a file is slow and this failing spuriously has cost six
+  // checks (deviations 551, 553, and three runs on 22 September 2026); it is
+  // still under the job's `--test-timeout`, and a browser that is genuinely
+  // absent still fails, just later and with a reason. One file pays it once.
+  const url = await bounded(
+    listening,
+    60_000,
+    () => `headless Chromium never said where it was listening: 60 s${
+      state.exited ? ` — it exited with ${state.exited}` : ''}${state.said ? `, saying: ${state.said.trim()}` : ''}`,
+  );
+  assert.ok(url, `headless Chromium opened a debugging port${
+    state.exited ? ` — it exited with ${state.exited}` : ''}${state.said ? `, saying: ${state.said.trim()}` : ''}`);
+  state.browser = await connect(url);
+  // The page endpoints are on the same host and port as the browser's own.
+  state.origin = new URL(url).host;
+  // Unreferenced, so the child process and its pipes are not by themselves what
+  // holds node's event loop open. The `after` below is what closes the browser
+  // under `node --test`, and `process.on('exit')` kills whatever is left, so
+  // nothing of this is ever abandoned on the runner.
+  child.unref?.();
+  child.stdout?.unref?.();
+  child.stderr?.unref?.();
+  return state;
+}
+
+async function browserFor(args, device) {
+  const key = JSON.stringify([args, device?.width ?? null, device?.height ?? null]);
+  // A browser that died takes its key with it, so the next test in the file
+  // launches a new one rather than failing on a socket nobody is holding.
+  const held = launched.get(key);
+  if (held && (await held).exited === null) return held;
+  const fresh = launch(args, device);
+  launched.set(key, fresh);
+  return fresh;
+}
+
+async function shutDown(state) {
+  state.browser?.close();
+  state.child.kill();
+  // The profile is still being written to until the browser is actually
+  // gone, so the wait is not politeness: removing it first fails.
+  if (state.exited === null) await new Promise((resolve) => { state.child.once('exit', resolve); });
+  await rm(state.profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 }).catch(() => {});
+}
+
+// The root hook of whichever file imported this: `node --test` runs each file in
+// a process of its own, so this is the end of the file's browsers and of nothing
+// else. A `process.on('exit')` kill as well, because a file whose hooks never
+// run must not leave a Chromium behind on the runner.
+after(async () => {
+  const all = [...launched.values()];
+  launched.clear();
+  for (const pending of all) {
+    await shutDown(await pending.catch(() => null) ?? { child: { kill: () => {}, once: (_, f) => f() }, profile: tmpdir(), exited: 'never started' });
   }
-  assert.ok(targets, `headless Chromium opened a debugging port${
-    exited ? ` — it exited with ${exited}` : ''}${said ? `, saying: ${said.trim()}` : ''}`);
+});
+process.on('exit', () => {
+  for (const pending of launched.values()) {
+    // Synchronous and best-effort: nothing can be awaited here.
+    Promise.resolve(pending).then((state) => state?.child?.kill(), () => {});
+  }
+});
 
-  const page = await connect(targets[0].webSocketDebuggerUrl);
+// The server and one page in a browser context of its own, torn down in that
+// order however the body ends. `device`, when given, is an
+// Emulation.setDeviceMetricsOverride payload — the viewport the page lays itself
+// out in, and its pixel ratio — and `touch` adds a touchscreen to it.
+//
+// `mobile` stays false in that payload even for a phone. It is not a size:
+// it turns on Chromium's whole mobile-viewport machinery, which rescales the
+// layout viewport to something of its own choosing — 390 × 844 comes out
+// 551 × 1191 — and what these tests need is the width the brief names, laid
+// out under a finger. The touchscreen comes from setTouchEmulationEnabled,
+// which is a separate thing and works either way.
+//
+// `args` are extra flags for the browser itself, for the one thing a suite may
+// need that no other should have: see the note at the flag list above.
+export async function withBrowser(fn, { device = null, touch = false, args = [] } = {}) {
+  const port = await freePort();
+  const server = createServer({ port });
+  // What the close below is waiting on, when it waits: `server.close()` stops
+  // the server accepting and then waits for the connections it already has,
+  // and Chromium keeps its own alive. Held here so the failure can say how
+  // many there were and where from, which is what nobody could see before.
+  const connections = new Set();
+  server.on('connection', (socket) => {
+    connections.add(socket);
+    socket.once('close', () => connections.delete(socket));
+  });
+  await new Promise((resolve) => server.listen(port, HOST, resolve));
+
+  const browser = await browserFor(args, device);
+  // A context per test, which is the isolation the fresh profile gave: an
+  // incognito context shares no cache, no storage and no cookies with any
+  // other, and a page in one cannot see what a page in another wrote.
+  const { browserContextId } = await browser.browser.send('Target.createBrowserContext');
+  const { targetId } = await browser.browser.send('Target.createTarget', {
+    url: 'about:blank',
+    browserContextId,
+    ...(device ? { width: device.width, height: device.height } : {}),
+  });
+  // And the clipboard, which the default context granted for nothing. A page in
+  // a context of its own is asked to be given permission, and with no interface
+  // to ask in `navigator.clipboard.writeText` never settles at all — so the
+  // composer, which awaits `copyText` before it opens the issue (submit.js),
+  // waited for ever for a tab it had not yet asked for. Granted on the context,
+  // so it is the same answer a reader's own browser gives inside a click.
+  await browser.browser.send('Browser.grantPermissions', {
+    browserContextId,
+    permissions: ['clipboardReadWrite', 'clipboardSanitizedWrite'],
+  }).catch(() => {});
+  const page = await connect(`ws://${browser.origin}/devtools/page/${targetId}`);
   await page.send('Page.enable');
   await page.send('Runtime.enable');
+  // And the page is the one in front. A browser that held one target per launch
+  // gave that for nothing; with several contexts in one browser a page nobody
+  // brought forward is a page the browser thinks is in the background, and the
+  // Clipboard API refuses — or worse, waits — on a document that is not focused.
+  // That is `copyText` in `submit.js`, which the composer awaits before it opens
+  // the issue: two tests timed out waiting for a tab that was never going to be
+  // asked for.
+  await page.send('Page.bringToFront').catch(() => {});
   if (device) await page.send('Emulation.setDeviceMetricsOverride', { mobile: false, ...device });
   if (touch) await page.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 });
   // Not a `finally`: the teardown below can now fail, and a bound that fires
@@ -259,10 +359,11 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
     failure = error;
   }
   page.close();
-  child.kill();
-  // The profile is still being written to until the browser is actually
-  // gone, so the wait is not politeness: removing it first fails.
-  await new Promise((resolve) => child.once('exit', resolve));
+  // The target and its context go; the browser stays for the next test in this
+  // file. A browser that has died in the meantime is not something to report
+  // over the body's own failure, so both are allowed to fail quietly.
+  await browser.browser.send('Target.closeTarget', { targetId }).catch(() => {});
+  await browser.browser.send('Target.disposeBrowserContext', { browserContextId }).catch(() => {});
   server.close();
   // The second of the two.
   let stuck = null;
@@ -277,7 +378,6 @@ export async function withBrowser(fn, { device = null, touch = false, args = [] 
     server.closeAllConnections();
     stuck = error;
   });
-  await rm(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 }).catch(() => {});
   if (failure) {
     // Both went wrong: the test's own failure is what is reported, with the
     // teardown's sentence carried on the end of it rather than thrown away.

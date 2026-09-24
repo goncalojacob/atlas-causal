@@ -21,6 +21,7 @@ import { defaultState } from '../src/state.js';
 import { resolveWindow, overlaps } from '../src/util/window.js';
 import {
   withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn,
+  manifestOf, settledShards,
 } from './browser.mjs';
 
 // The lens chip, once it carries a name rather than the word the chip shows
@@ -401,6 +402,12 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
     // the chip is named and after the transform has held still for two frames,
     // so that what is read is a camera and not a fit halfway through one.
     await waitFor(page, CHIP_NAMED, 'the lens chip to be named');
+    // **And every shard** (M87 §4). A century landing changes what the
+    // arrangement is of, and the camera is fitted again to the lens when it
+    // does — which silently undid the wheel below and left the ring's stroke at
+    // exactly `1 / before`. The camera the wheel is measured against has to be
+    // the camera the page has finished arriving at.
+    await settledShards(page, await manifestOf({ fixtures: true }));
     await waitFor(page, SETTLED, 'the camera to settle');
     const before = await page.eval(`
       const t = /scale\\(([\\d.]+)\\)/.exec(
@@ -414,6 +421,15 @@ test('a parent keeps its ring at rest and at every zoom', { skip }, async () => 
         clientX: box.left + box.width / 2, clientY: box.top + box.height / 2,
       }));
       return true;`);
+    // **And the wheel has to have been applied before the ring is read.** The
+    // dispatch returns as soon as the event is queued; nothing said the handler
+    // had run, so the ring was read at the camera the page was already at and
+    // `stroke < 1 / before` was an equality — which is how this dropped one run
+    // in three (M87 §4). The transform saying something else is the wheel having
+    // landed, and it is the wheel's own effect and not a duration.
+    await waitFor(page, `const t = /scale\\(([\\d.]+)\\)/.exec(
+        document.querySelector('svg.graph g.viewport').getAttribute('transform') || 'scale(1)');
+      return Number(t[1]) !== ${before};`, 'the wheel to move the camera');
     const parted = await page.eval(RING_AROUND('fixture-event-f'));
     assert.ok(parted.ring, 'and it is still ringed');
     assert.ok(parted.ring.r > parted.node.r);

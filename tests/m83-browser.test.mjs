@@ -296,6 +296,12 @@ test('B6: a link chosen inside a narrative opens its card and writes ?edge=', { 
     await open(page, url('?view=graph&narrative=how-the-colonial-war-ended-the-regime&step=1'), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
     await waitFor(page, 'return Boolean(document.querySelector("svg.graph line.edge[data-edge]"));', 'a line to choose');
+    // **Every shard, and then a frame** (M87 §1). A century landing redraws the
+    // graph, and a redraw between the line being read and the key being pressed
+    // is a line the page has replaced under the focus. What this test is about
+    // is Enter on a line, not what the arrivals do to one.
+    await settledShards(page, await manifestOf());
+    await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
     const line = await page.eval(A_LINE);
 
     await page.eval(`
