@@ -7808,7 +7808,9 @@ against Europe's 375**, with Asia at 143 and the Americas at 216 after M42b's
 two batches landed. So this batch is Africa, and the inverse `part of` vein was
 run over the **132** Africa-lane active events that carry an item, against every
 record of any status on `m42`: 459 rows, **392 of them unheld**, over these
-parents —
+parents. The 132 went to the query service in six groups of 25 and **two of
+those six came back 429 and 502**, so about fifty of the lane's events were
+never asked and the table below is a floor and not the lane's whole vein —
 
 | parent | unheld rows |
 | --- | --- |
@@ -8047,5 +8049,11 @@ of it.
 - **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
   `1948-palestine-war` and `balkan-wars`. A filing fire can do both and neither
   costs a main event.
+- **The Africa vein was read incompletely and is worth re-running.** Two of
+  the six query groups came back 429 and 502, so about fifty of the lane's 132
+  events with an item were never asked. `mali-war`'s 78 unheld rows and
+  `scramble-for-africa`'s 39 are both still untouched, and `mali-war` sits in
+  the largest component with two edges — which, after this batch's finding, is
+  the number that decides whether a vein is worth reading.
 - **Deviation numbers: take the next above 1419.** This fire wrote **1414 to
   1419**.
