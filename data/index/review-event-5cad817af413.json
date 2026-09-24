@@ -25712,10 +25712,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "the-extermination-of-the-jews-1941-1945",
-        "world-war-ii"
-      ],
+      "parent": "world-war-ii",
       "review": {
         "flags": [
           "imported-facts",
@@ -25781,7 +25778,6 @@
         "run": "m42",
         "tool": "assistant"
       },
-      "parent": null,
       "review": {
         "flags": [
           "summary-from-lead",
@@ -30020,12 +30016,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "the-holocaust-in-romania",
-      "kind": "event",
-      "message": "the event is part of \"the-extermination-of-the-jews-1941-1945\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "the-holocaust-in-romania",

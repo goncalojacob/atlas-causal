@@ -63,9 +63,6 @@
   "place": "romania-q218",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "the-extermination-of-the-jews-1941-1945",
-    "world-war-ii"
-  ],
+  "parent": "world-war-ii",
   "actors": []
 }
