@@ -20449,6 +20449,100 @@ Tests: 1,792 pure and 279 browser, all passing.
       Africa lane is mostly umbrella-and-parts in this shape, so every further
       Africa batch will produce the same picture: a war the reader can reach
       and its battles in islands beside it.
+1420. **The atlas's `reacted-to` runs forward in time, and four edges were
+      written backwards before rule 4 said so.** All four of this batch's
+      `reacted-to` edges were first written from the reaction to the thing
+      reacted to, on the sense of the English verb; rule 4 refused all four in
+      one run, by name and with both dates. `A --reacted-to--> B` says *B
+      answered A*, which is what `october-revolution --reacted-to-->
+      kerensky-krasnov-uprising` and batch 48's own `evian-accords
+      --reacted-to--> battle-of-bab-el-oued` already said, and what batch 48's
+      note in `docs/m42-connections.md` wrote down. Four files were deleted and
+      rewritten before anything was pushed. Nothing here needs fixing — the
+      validator ran before the commit and did exactly what it is for — but a
+      fire writing this type should read the direction off rule 4 and not off
+      the verb.
+1421. **A9's first step may be taken over a held answer at its second, and this
+      batch is the first time it was.** `battle-of-te-li-ssu`'s `P276` is the
+      Liaodong Peninsula, which the atlas holds and which `siege-of-port-arthur`
+      already stands on, so the import placed the event there on its own rule.
+      A12 (2)'s corrected order reads the item's own `P625` first, and the
+      article at revision 1370590724 locates the hamlet itself — *"some 80 mi
+      (130 km) north of Port Arthur"* — so the own point was written instead.
+      The peninsula is the ground and not the place on it. This is the narrow
+      version of the A14 stand's open question about A9's first step, answered
+      in one direction by one record; the general rule is still the owner's.
+1422. **An item's `P625` can be its parent battle's city rather than its own
+      site, and A9 has no test for it.** `Q1358032`, the Battle of Sandepu,
+      gives 41.7833, 123.4333 — **2.2 km** from the point the atlas already
+      draws Mukden at — while its own article says the battle was fought
+      *"within a group of villages about 36 miles (58 km) southwest of
+      Mukden"*. A place called Sandepu written at that coordinate would assert
+      what its only source denies, and a second mark 2 km from `shenyang` would
+      be the `london-q84` fault A14 (6) has just finished undoing. The event
+      reuses `shenyang` and its note says the villages were 58 km away. This is
+      a sixth shape A9's rule does not answer, beside the five the A14 stand
+      lists.
+1423. **The `europe` lane holds Russian Asia, and that is now a question and
+      not an oversight.** `sakhalin` derives to `europe` because the atlas's
+      five lane polygons put the whole of Russian ground there — as
+      `ipatiev-house`, `russia`, `soviet-union-q15180` and
+      `russian-empire-q34266` are already drawn, none of them with an override.
+      So the batch's seven Asian engagements are six in the Asia lane and one
+      in Europe's, and A10's per-lane count reads six. Nothing was overridden:
+      a single record contradicting four others at the same longitude would be
+      worse than a lane set that is coarse and consistent. **Should the europe
+      lane hold Russian Asia?** is the owner's, and every Russian event east of
+      the Urals waits on it.
+1424. **Reconnaissance through the query service, the import through the action
+      API, is now the shape that works.** Deviation 1414 told the two refusals
+      apart; this fire acted on it from the start. `query.wikidata.org/sparql`
+      answered 200 on the first call and gave the whole vein — 75 rows over
+      `P361`, with dates, coordinates, classes and sitelinks in one query —
+      while `www.wikidata.org/w/api.php` answered 429 twice before going
+      through. A fire that reads its vein through SPARQL and spends the action
+      API only on `--import` pays fifteen calls for a batch instead of waiting.
+
+## M42 batch 49 — the Russo-Japanese War finished as a chain, 24 September
+
+The 10:46Z fire of 24 September was an **import fire**: today already carried a
+curation section and all six of A14's passes carried theirs, so each was
+skipped by its own rule. It merged `origin/m0` at the head of the run (M86 and
+M87) and took one batch from the lane that trails, Asia at 143 against Europe's
+377.
+
+**Seven events, four places and nine edges, all from the Russo-Japanese War.**
+They are the engagements the chain batch 47 built was missing, in date order
+from Chemulpo Bay in February 1904 to the invasion of Sakhalin in July 1905.
+All seven are filed under `russo-japanese-war`, so **main stays at 242**, and
+Asia goes from 143 to 149. No class was added: battle, naval battle and
+invasion were all in the table already, which is the first batch that read no
+class item over the network at all.
+
+**The largest connected component goes from 610 to 617, and that is the
+batch's finding.** Batch 48's stand asked the next fire to pick its vein by
+what the endpoints are worth to the component rather than by how many rows it
+has; this batch hangs nine edges on nine endpoints that are all inside the 610,
+and all seven records joined it. `japanese-invasion-of-sakhalin --enabled-->
+treaty-of-portsmouth` is a third independently argued branch into that
+endpoint beside Tsushima's and Mukden's — the convergence query's own subject,
+now in the data.
+
+**A9's first step answered the row batch 47 refused.** `battle-of-chemulpo-bay`
+was chosen and dropped by that batch because its `P276` carries no coordinate;
+A12 (2)'s corrected order reads the item's own `P625` first, and it has one.
+Four place records are new and not one was hand-corrected. Two reuses are
+refusals with reasons: `battle-off-ulsan` takes `korea-strait`, which its own
+article names, and `battle-of-sandepu` takes `shenyang`, because the item's
+coordinate is Mukden's own while the article puts the villages 58 km away.
+
+`docs/m53-polities.md` §4.1 is retaken at **383 of 890**, counted by overlap
+**384**: `battle-of-chemulpo-bay` is the one row whose item names participants
+the atlas holds.
+
+The validator is clean, the index is byte-identical to a fresh build, and the
+tests are **1,819 pure and 295 browser, all passing, 0 skipped**. Deviations
+1420 to 1424. The full note is `docs/m42-pool.md` under "Batch 49".
 
 ## M84 — the owner's feedback document
 
