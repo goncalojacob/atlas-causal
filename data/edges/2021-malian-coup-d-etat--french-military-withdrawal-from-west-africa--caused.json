@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2021-malian-coup-d-etat--french-military-withdrawal-from-west-africa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French military withdrawal from West Africa (2022–2025)\", revision 1371499896, § Mali"
+    }
+  ],
+  "from": "2021-malian-coup-d-etat",
+  "to": "french-military-withdrawal-from-west-africa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article names both ends in one sentence and states the relation: \"As a result of the 2021 Malian coup d'état, French President Emmanuel Macron announced the end of the operation and his intentions to remove troops incrementally.\" The operation is Operation Barkhane, which the same paragraph has just called \"less successful than its predecessor\"; the withdrawal this record is about is the withdrawal of it. Probable: Wikipedia alone.",
+  "dispute": null
+}

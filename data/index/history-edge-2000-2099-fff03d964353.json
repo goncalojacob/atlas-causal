@@ -256,6 +256,33 @@
         }
       ]
     },
+    "2020-malian-coup-d-etat--moura-massacre--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "2021-malian-coup-d-etat--french-military-withdrawal-from-west-africa--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "2021-malian-coup-d-etat--kidal-offensive--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "2021-myanmar-coup-d-etat--myanmar-civil-war--caused": {
       "from": "git",
       "versions": [
@@ -434,6 +461,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-timbuktu--second-battle-of-timbuktu--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1259,6 +1295,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "third-battle-of-gao--fourth-battle-of-gao--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

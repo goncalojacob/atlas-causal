@@ -3131,6 +3131,15 @@
         }
       ]
     },
+    "kidal-region": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "kingdom-of-egypt": {
       "from": "git",
       "versions": [
@@ -4330,6 +4339,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "moura": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -7008,6 +7026,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "timbuktu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "moura",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q6925960 for batch 52. `city` off the item's own class, human settlement. A9's two steps agree to the digit: moura-massacre's own P625 and this item's are both 14.327778N 4.6W."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6925960",
+  "wikipedia": {
+    "en": "Moura, Mali",
+    "pt": "Mourrah"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Mourrah",
+    "Moura"
+  ],
+  "where": {
+    "lon": -4.6,
+    "lat": 14.327777777778,
+    "precision": "city",
+    "label": "Mourrah"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

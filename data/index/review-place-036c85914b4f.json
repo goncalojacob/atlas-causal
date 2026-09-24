@@ -4606,7 +4606,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 4,
       "id": "gao",
       "kind": "place",
       "names": [
@@ -6460,6 +6460,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "kidal-region",
+      "kind": "place",
+      "names": [
+        "Kidal Region",
+        "Kidal (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q338988 for batch 52. `region` off the item's own class, region of Mali. It is kidal-offensive's place by A9's second step: the event's own P625 is 215 km south of the region's, which is the size of the thing and not a disagreement — the article's own statement of the offensive's objective is \"the capture of MINUSMA bases in Kidal Region\". Not the atlas's `kidal`, which is the town (Q650100).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7907,7 +7936,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "mali-q912",
       "kind": "place",
       "names": [
@@ -8711,6 +8740,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "moura",
+      "kind": "place",
+      "names": [
+        "Mourrah",
+        "Moura"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q6925960 for batch 52. `city` off the item's own class, human settlement. A9's two steps agree to the digit: moura-massacre's own P625 and this item's are both 14.327778N 4.6W.",
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -14159,6 +14217,39 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "timbuktu",
+      "kind": "place",
+      "names": [
+        "Timbuktu",
+        "Tombouctou",
+        "Tumbutu",
+        "Timbuctoo",
+        "Timbuktoo",
+        "Tombuctu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q9427 for batch 52. `city` off the item's own class, city. It is the place of battle-of-timbuktu and second-battle-of-timbuktu by A9's second step: both items give the same P625, 16.7667N 3.0000W, which is the town, and both name Q9427 under P276.",
         "status": "draft"
       },
       "revised": null,

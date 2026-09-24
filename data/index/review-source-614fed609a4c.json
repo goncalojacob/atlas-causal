@@ -1,180 +1,118 @@
 {
-  "schema": 1,
-  "sources": [
+  "kind": "source",
+  "records": [
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Astrid Ackermann"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "ackermann-2023-herzog-bernhard-von-weimar",
       "isbn": "9783110701913",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "De Gruyter",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Herzog Bernhard von Weimar: Militärunternehmer und politischer Stratege im Dreißigjährigen Krieg",
-      "type": "book",
-      "url": null,
-      "year": 2023
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-03",
-      "creators": [
-        "Assembleia da República"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "ar-2024-fiftieth-anniversary",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "Diário da Assembleia da República, solemn session of 25 April 2024",
-      "repository": "Assembleia da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Solemn session for the fiftieth anniversary of 25 April",
-      "type": "primary",
-      "url": null,
-      "year": 2024
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-03",
-      "creators": [
-        "Assembleia da República"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "ar-2025-confidence-vote",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "Diário da Assembleia da República, sitting of 11 March 2025",
-      "repository": "Assembleia da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Rejection of the motion of confidence tabled by the XXIV Constitutional Government",
-      "type": "primary",
-      "url": null,
-      "year": 2025
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 5,
       "created": "2026-09-03",
-      "creators": [
-        "Banco de Portugal"
-      ],
+      "degree": 5,
       "doi": null,
       "id": "banco-de-portugal-2014-bes-resolution",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "deliberation of the Board of Directors of 3 August 2014",
-      "repository": "Banco de Portugal",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Resolution measure applied to Banco Espírito Santo, S.A.",
-      "type": "primary",
-      "url": null,
-      "year": 2014
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "H. James Burgwyn"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "burgwyn-1997-italian-foreign-policy",
       "isbn": "9780275948771",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Praeger Publishers",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -182,40 +120,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Italian Foreign Policy in the Interwar Period 1918–1940",
-      "type": "book",
-      "url": null,
-      "year": 1997
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Max Caulfield"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "caulfield-1995-easter-rebellion",
       "isbn": "157098042X",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Roberts Rinehart Publishers",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -223,298 +147,194 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Easter Rebellion, Dublin 1916",
-      "type": "book",
-      "url": null,
-      "year": 1995
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 5,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 5,
       "doi": null,
       "id": "cne-legislative-2015",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, legislative election of 2015-10-04",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, legislative election of 2015-10-04",
-      "type": "primary",
-      "url": null,
-      "year": 2015
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 6,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 6,
       "doi": null,
       "id": "cne-legislative-2019",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, legislative election of 2019-10-06",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, legislative election of 2019-10-06",
-      "type": "primary",
-      "url": null,
-      "year": 2019
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 4,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 4,
       "doi": null,
       "id": "cne-legislative-2022",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, legislative election of 2022-01-30",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, legislative election of 2022-01-30",
-      "type": "primary",
-      "url": null,
-      "year": 2022
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 9,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 9,
       "doi": null,
       "id": "cne-legislative-2024",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, legislative election of 2024-03-10",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, legislative election of 2024-03-10",
-      "type": "primary",
-      "url": null,
-      "year": 2024
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "cne-legislative-2025",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, legislative election of 2025-05-18",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, legislative election of 2025-05-18",
-      "type": "primary",
-      "url": null,
-      "year": 2025
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 5,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 5,
       "doi": null,
       "id": "cne-presidential-2016",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, presidential election of 2016-01-24",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, presidential election of 2016-01-24",
-      "type": "primary",
-      "url": null,
-      "year": 2016
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Nacional de Eleições"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "cne-presidential-2021",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official results, presidential election of 2021-01-24",
-      "repository": "Comissão Nacional de Eleições",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Official results, presidential election of 2021-01-24",
-      "type": "primary",
-      "url": null,
-      "year": 2021
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-21",
-      "creators": [
-        "Benjamin J. Cohen"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "cohen-2007-global-monetary-governance",
       "isbn": "9780203962589",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Routledge",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -522,115 +342,74 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Global Monetary Governance",
-      "type": "book",
-      "url": null,
-      "year": 2007
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 82,
       "created": "2026-09-02",
-      "creators": [
-        "António Costa Pinto"
-      ],
+      "degree": 82,
       "doi": null,
       "id": "costa-pinto-2003-contemporary-portugal",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Social Science Monographs / Columbia University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Contemporary Portugal: Politics, Society and Culture",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Contemporary%20Portugal%3A%20Politics%2C%20Society%20and%20Culture%20Ant%C3%B3nio%20Costa%20Pinto",
-      "year": 2003
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 87,
       "created": "2026-09-03",
-      "creators": [
-        "António Costa Pinto",
-        "Conceição Pequito Teixeira"
-      ],
+      "degree": 87,
       "doi": null,
       "id": "costa-pinto-teixeira-2019-political-institutions",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Palgrave Macmillan",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Political Institutions and Democracy in Portugal: Assessing the Impact of the Eurocrisis",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Political%20Institutions%20and%20Democracy%20in%20Portugal%3A%20Assessing%20the%20Impact%20of%20the%20Eurocrisis%20Ant%C3%B3nio%20Costa%20Pinto%20Concei%C3%A7%C3%A3o%20Pequito%20Teixeira",
-      "year": 2019
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Michael Craton"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "craton-1982-testing-the-chains",
       "isbn": "9780801412523",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Cornell University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -638,44 +417,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Testing the Chains",
-      "type": "book",
-      "url": null,
-      "year": 1982
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "CShapes 2.0 import (tools/import/cshapes.mjs)"
         }
       ],
-      "citationCount": 1126,
       "created": "2026-09-02",
-      "creators": [
-        "Guy Schvitz",
-        "Luc Girardin",
-        "Seraina Rüegger",
-        "Nils B. Weidmann",
-        "Lars-Erik Cederman",
-        "Kristian Skrede Gleditsch"
-      ],
+      "degree": 1126,
       "doi": "10.1177/00220027211013563",
       "id": "cshapes-2-0",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "cshapes"
       },
-      "publisher": "Journal of Conflict Resolution",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "standing-backfilled",
@@ -684,188 +445,122 @@
         "status": "draft"
       },
       "revised": "2026-09-20",
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Mapping the International System, 1886-2019: The CShapes 2.0 Dataset",
-      "type": "dataset",
-      "url": "https://icr.ethz.ch/data/cshapes/",
-      "year": 2022
+      "type": "dataset"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-03",
-      "creators": [
-        "Comissão Técnica Independente"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "cti-2017-2018-fires",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "reports of the Comissão Técnica Independente on the fires of 17-24 June 2017 and of 15-16 October 2017",
-      "repository": "Assembleia da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Reports on the forest fires of June and October 2017",
-      "type": "primary",
-      "url": null,
-      "year": 2018
+      "type": "primary"
     },
     {
-      "accessed": "2026-09-24",
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Luigi Dossena"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "dossena-2014-battaglia-di-ombriano",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Cremaonline",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Historia et imago Cremae. Eventi e fatti d’arme della battaglia di Ombriano del 1514: gli eserciti più potenti d’Europa combatterono nel cremasco",
-      "type": "web",
-      "url": "https://www.cremaonline.it/cultura/27-09-2014_Historia+et+imago+Cremae,+la+battaglia+di+Ombriano/",
-      "year": 2014
+      "type": "web"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 4,
       "created": "2026-09-03",
-      "creators": [
-        "Presidência da República"
-      ],
+      "degree": 4,
       "doi": null,
       "id": "dre-2020-state-of-emergency",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "decrees of the President of the Republic declaring and renewing the state of emergency between 18 March and 2 May 2020",
-      "repository": "Diário da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Declaration and renewals of the state of emergency, March to May 2020",
-      "type": "primary",
-      "url": null,
-      "year": 2020
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-03",
-      "creators": [
-        "Presidência da República"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "dre-government-appointments-2015-2024",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "decrees of the President of the Republic appointing the XXI Constitutional Government (November 2015) and the XXIV Constitutional Government (April 2024)",
-      "repository": "Diário da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Appointment of the XXI and XXIV Constitutional Governments",
-      "type": "primary",
-      "url": null,
-      "year": null
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Marshall C. Eakin"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "eakin-1998-brazil-once-and-future-country",
       "isbn": "9780312214456",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Palgrave Macmillan",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -873,40 +568,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Brazil: The Once and Future Country",
-      "type": "book",
-      "url": null,
-      "year": 1998
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Boris Fausto"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "fausto-1999-concise-history-of-brazil",
       "isbn": "9780521565264",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Cambridge University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -914,41 +595,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A Concise History of Brazil",
-      "type": "book",
-      "url": null,
-      "year": 1999
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Jorge Ferreira",
-        "Angela de Castro Gomes"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "ferreira-gomes-2014-1964",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Civilização Brasileira",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -956,45 +622,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "1964: O golpe que derrubou um presidente, pôs fim ao regime democrático e instituiu a ditadura no Brasil",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=1964+O+golpe+que+derrubou+um+presidente+Ferreira+Gomes",
-      "year": 2014
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": {
-        "issue": "2",
-        "kind": "journal",
-        "title": "Journal of Latin American Studies",
-        "volume": "2"
-      },
       "created": "2026-09-21",
-      "creators": [
-        "Valerie Fifer"
-      ],
+      "degree": 1,
       "doi": "10.1017/S0022216X00005095",
       "id": "fifer-1970-empire-builders",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1002,40 +649,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Empire Builders: A History of the Bolivian Rubber Boom and the Rise of the House of Suarez",
-      "type": "article",
-      "url": "https://www.jstor.org/stable/156583",
-      "year": 1970
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "David Fromkin"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "fromkin-2009-peace-to-end-all-peace",
       "isbn": "9780805088090",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Macmillan",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1043,40 +676,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East",
-      "type": "book",
-      "url": null,
-      "year": 2009
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "David Gaunt"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "gaunt-2006-massacres-resistance-protectors",
       "isbn": "9781593333010",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Gorgias Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1084,39 +703,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia During World War I",
-      "type": "book",
-      "url": null,
-      "year": 2006
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-21",
-      "creators": [
-        "Lansana Gberie"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "gberie-2005-dirty-war-west-africa",
       "isbn": "9780253218551",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Indiana University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1124,40 +730,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A Dirty War in West Africa: The RUF and the Destruction of Sierra Leone",
-      "type": "book",
-      "url": null,
-      "year": 2005
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Robert Gellately"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "gellately-2007-lenin-stalin-hitler",
       "isbn": "1400040051",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Knopf",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1165,40 +757,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Lenin, Stalin, and Hitler: The Age of Social Catastrophe",
-      "type": "book",
-      "url": null,
-      "year": 2007
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Ivo Goldstein"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "goldstein-1999-croatia-a-history",
       "isbn": "9781850655251",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "C. Hurst & Co.",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1206,77 +784,50 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Croatia: A History",
-      "type": "book",
-      "url": null,
-      "year": 1999
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "William P. Guthrie"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "guthrie-2003-the-later-thirty-years-war",
       "isbn": "0313324085",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Greenwood Publishing Group",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The later Thirty Years War: from the Battle of Wittstock to the Treaty of Westphalia",
-      "type": "book",
-      "url": null,
-      "year": 2003
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Richard C. Hall"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "hall-2000-balkan-wars",
       "isbn": "0415229464",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Routledge",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1284,76 +835,50 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Balkan Wars, 1912–1913: Prelude to the First World War",
-      "type": "book",
-      "url": null,
-      "year": 2000
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Martin Heckel"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "heckel-1983-deutschland-im-konfessionellen-zeitalter",
       "isbn": "3525334834",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Vandenhoeck & Ruprecht",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Deutschland im konfessionellen Zeitalter",
-      "type": "book",
-      "url": null,
-      "year": 1983
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-24",
-      "creators": [
-        "John Hemming"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "hemming-1993-conquest-of-the-incas",
       "isbn": "0333106830",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Macmillan",
-      "reference": "The work the English Wikipedia article \"Battle of Ollantaytambo\" rests on throughout, at revision 1376074803, cited there at p. 206 for the Cusco garrison's decision to attack Ollantaytambo. \"Battle of Chupas\" cites the same work, Mariner 2012, p. 264. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1361,153 +886,98 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Conquest of the Incas",
-      "type": "book",
-      "url": null,
-      "year": 1993
+      "type": "book"
     },
     {
-      "accessed": "2026-09-16",
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
-      "citationCount": 8175,
       "created": "2026-09-16",
-      "creators": [
-        "André Ourednik",
-        "the historical-basemaps contributors"
-      ],
+      "degree": 8175,
       "doi": null,
       "id": "historical-basemaps",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "basemaps"
       },
-      "publisher": null,
-      "reference": null,
-      "repository": "https://github.com/aourednik/historical-basemaps",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Historical Basemaps: historical boundaries of world countries and cultural regions",
-      "type": "dataset",
-      "url": "https://github.com/aourednik/historical-basemaps",
-      "year": 2026
+      "type": "dataset"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-03",
-      "creators": [
-        "Holy See Press Office"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "holy-see-2023-world-youth-day",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "designation of Lisbon on 27 January 2019 and the celebration of 1-6 August 2023",
-      "repository": "Holy See Press Office",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "World Youth Day, Lisbon 2023",
-      "type": "primary",
-      "url": null,
-      "year": 2023
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 16,
       "created": "2026-09-03",
-      "creators": [
-        "International Monetary Fund"
-      ],
+      "degree": 16,
       "doi": null,
       "id": "imf-2016-portugal-ex-post-evaluation",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "International Monetary Fund",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Portugal: Ex Post Evaluation of Exceptional Access under the 2011 Extended Arrangement",
-      "type": "article",
-      "url": "https://search.worldcat.org/search?q=Portugal%3A%20Ex%20Post%20Evaluation%20of%20Exceptional%20Access%20under%20the%202011%20Extended%20Arrangement%20International%20Monetary%20Fund",
-      "year": 2016
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Arnold Isaacs",
-        "Gordon Hardy"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "isaacs-hardy-1988-pawns-of-war",
       "isbn": "0939526247",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Boston Publishing Company",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1515,47 +985,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Pawns of War: Cambodia and Laos",
-      "type": "book",
-      "url": null,
-      "year": 1988
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": {
-        "issue": "110(5)",
-        "kind": "journal",
-        "pages": "669-676",
-        "title": "American Journal of Public Health"
-      },
       "created": "2026-09-21",
-      "creators": [
-        "Barbara J. Jester",
-        "Timothy M. Uyeki",
-        "Daniel B. Jernigan"
-      ],
+      "degree": 1,
       "doi": "10.2105/AJPH.2019.305557",
       "id": "jester-uyeki-jernigan-2020-fifty-years-h3n2",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1563,39 +1012,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Fifty Years of Influenza A(H3N2) Following the Pandemic of 1968",
-      "type": "article",
-      "url": null,
-      "year": 2020
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Grant D. Jones"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "jones-1998-the-conquest-of-the-last-maya-kingdom",
       "isbn": "9780804735223",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Stanford University Press",
-      "reference": "The work the English Wikipedia article \"Spanish conquest of Petén\" cites, at revision 1370748351, for the delay between the conquest of the Guatemalan Highlands and the fall of Nojpetén. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1603,40 +1039,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Conquest of the Last Maya Kingdom",
-      "type": "book",
-      "url": null,
-      "year": 1998
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Robert D. Kaplan"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "kaplan-1990-soldiers-of-god",
       "isbn": "9780395521328",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Knopf Doubleday",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1644,39 +1066,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Soldiers of God: With Islamic Warriors in Afghanistan and Pakistan",
-      "type": "book",
-      "url": null,
-      "year": 1990
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-23",
-      "creators": [
-        "Jay Kinsbruner"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "kinsbruner-1994-independence-in-spanish-america",
       "isbn": "9780826321770",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "University of New Mexico Press",
-      "reference": "The work the English Wikipedia article \"Spanish American wars of independence\" cites for its Background section, at revision 1375550213; the full entry is the article's own.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1684,39 +1093,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Independence in Spanish America: Civil Wars, Revolutions, and Underdevelopment",
-      "type": "book",
-      "url": null,
-      "year": 1994
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-21",
-      "creators": [
-        "Garry Leech"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "leech-2009-beyond-bogota",
       "isbn": "9780807061480",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Beacon Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1724,77 +1120,50 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Beyond Bogota: Diary of a Drug War Journalist",
-      "type": "book",
-      "url": null,
-      "year": 2009
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 68,
       "created": "2026-09-02",
-      "creators": [
-        "Norrie MacQueen"
-      ],
+      "degree": 68,
       "doi": null,
       "id": "macqueen-1997-decolonization",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Longman",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Decolonization of Portuguese Africa: Metropolitan Revolution and the Dissolution of Empire",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=The%20Decolonization%20of%20Portuguese%20Africa%3A%20Metropolitan%20Revolution%20and%20the%20Dissolution%20of%20Empire%20Norrie%20MacQueen",
-      "year": 1997
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-24",
-      "creators": [
-        "Michael Mallett",
-        "Christine Shaw"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "mallett-shaw-2014-the-italian-wars",
       "isbn": "9781317899396",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Routledge",
-      "reference": "The work the English Wikipedia articles \"War of the League of Cambrai\" (revision 1375133857) and \"Battle of Novara (1513)\" (revision 1370270949, by its 2012 printing) cite for these links; the full entry is theirs. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1802,39 +1171,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Italian Wars 1494–1559: War, State and Society in Early Modern Europe",
-      "type": "book",
-      "url": null,
-      "year": 2014
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-24",
-      "creators": [
-        "David Marley"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "marley-2008-wars-of-the-americas",
       "isbn": "9781598841008",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "ABC-CLIO",
-      "reference": "The work the English Wikipedia article \"Siege of Salvador (1638)\" cites for the siege whole, at revision 1370744949, and which the \"Action of 12-17 January 1640\" article cites for the 1635 landing. Second edition. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -1842,152 +1198,98 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Wars of the Americas: A Chronology of Armed Conflict in the New World, 1492 to the Present",
-      "type": "book",
-      "url": null,
-      "year": 2008
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 59,
       "created": "2026-09-02",
-      "creators": [
-        "Kenneth Maxwell"
-      ],
+      "degree": 59,
       "doi": null,
       "id": "maxwell-1995-making-of-portuguese-democracy",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Cambridge University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Making of Portuguese Democracy",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=The%20Making%20of%20Portuguese%20Democracy%20Kenneth%20Maxwell",
-      "year": 1995
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 60,
       "created": "2026-09-02",
-      "creators": [
-        "Filipe Ribeiro de Meneses"
-      ],
+      "degree": 60,
       "doi": null,
       "id": "meneses-2004-portugal-1914-1926",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Bristol: HiPLAM",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Portugal 1914–1926: From the First World War to Military Dictatorship",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Portugal%201914%E2%80%931926%3A%20From%20the%20First%20World%20War%20to%20Military%20Dictatorship%20Filipe%20Ribeiro%20de%20Meneses",
-      "year": 2004
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 18,
       "created": "2026-09-02",
-      "creators": [
-        "Filipe Ribeiro de Meneses"
-      ],
+      "degree": 18,
       "doi": null,
       "id": "meneses-2009-salazar",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Enigma Books",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Salazar: A Political Biography",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Salazar%3A%20A%20Political%20Biography%20Filipe%20Ribeiro%20de%20Meneses",
-      "year": 2009
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Barbara D. Metcalf",
-        "Thomas R. Metcalf"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "metcalf-metcalf-2006-concise-history-of-modern-india",
       "isbn": "9780521863629",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Cambridge University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -1995,46 +1297,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A Concise History of Modern India",
-      "type": "book",
-      "url": null,
-      "year": 2006
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": {
-        "issue": "48",
-        "kind": "journal",
-        "pages": "58-71",
-        "title": "Conflict Studies Quarterly"
-      },
       "created": "2026-09-21",
-      "creators": [
-        "Andrei Miroiu",
-        "Ana Raluca Alecu"
-      ],
+      "degree": 1,
       "doi": "10.24193/csq.48.4",
       "id": "miroiu-alecu-2024-mali-conflict",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2042,40 +1324,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Mali: Conflict, Social Order and the Crime-Terror Nexus",
-      "type": "article",
-      "url": null,
-      "year": 2024
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Hans Mommsen"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "mommsen-1996-rise-and-fall-of-weimar-democracy",
       "isbn": "0807847216",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "University of North Carolina Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2083,39 +1351,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Rise and Fall of Weimar Democracy",
-      "type": "book",
-      "url": null,
-      "year": 1996
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "John Julius Norwich"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "norwich-1982-a-history-of-venice",
       "isbn": "9780679721970",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Knopf",
-      "reference": "The work the English Wikipedia article \"Battle of La Motta (1513)\" cites for d'Alviano's retreat into the Veneto without French support, at revision 1370446782; the full entry is the \"War of the League of Cambrai\" article's own, at revision 1375133857. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2123,39 +1378,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A History of Venice",
-      "type": "book",
-      "url": null,
-      "year": 1982
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Richard Pares"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "pares-1936-war-and-trade-in-the-west-indies",
       "isbn": "0714619434",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Oxford University Press",
-      "reference": "The work the English Wikipedia article \"Invasion of Cuba (1741)\" cites at pp. 91-92 for Vernon turning on Cuba after his repulse at Cartagena, at revision 1370623950. The ISBN is the article's own, a later reissue of the 1936 edition. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2163,40 +1405,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "War and Trade in the West Indies",
-      "type": "book",
-      "url": null,
-      "year": 1936
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Phyllis R. Parker"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "parker-1977-papel-dos-estados-unidos",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Civilização Brasileira",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2204,76 +1432,50 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "1964: O Papel dos Estados Unidos no Golpe de 31 de Março",
-      "type": "book",
-      "url": "http://docvirt.com/docreader.net/bibliotbnm/2910",
-      "year": 1977
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 3,
       "created": "2026-09-03",
-      "creators": [
-        "Procuradoria-Geral da República"
-      ],
+      "degree": 3,
       "doi": null,
       "id": "pgr-2023-operation-influencer",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "communiqué of 7 November 2023",
-      "repository": "Procuradoria-Geral da República",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Communiqué on the searches of 7 November 2023",
-      "type": "primary",
-      "url": null,
-      "year": 2023
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-24",
-      "creators": [
-        "William H. Prescott"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "prescott-conquest-of-peru",
       "isbn": "142640042X",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "BiblioBazaar",
-      "reference": "The work \"Battle of Punta Quemada\" cites for its whole account, at revision 1370586796, in this edition at pp. 96-102; \"Battle of Puna\" cites the same work, Digireads.com 2011, pp. 142-143. A nineteenth-century history, reprinted. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2281,153 +1483,98 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "History of the Conquest of Peru",
-      "type": "book",
-      "url": null,
-      "year": 2006
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 136,
       "created": "2026-09-02",
-      "creators": [
-        "Rui Ramos",
-        "Bernardo Vasconcelos e Sousa",
-        "Nuno Gonçalo Monteiro"
-      ],
+      "degree": 136,
       "doi": null,
       "id": "ramos-2009-historia-de-portugal",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "A Esfera dos Livros",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "História de Portugal",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20de%20Portugal%20Rui%20Ramos",
-      "year": 2009
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 28,
       "created": "2026-09-02",
-      "creators": [
-        "Ricardo Reis"
-      ],
+      "degree": 28,
       "doi": null,
       "id": "reis-2013-portuguese-slump",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Brookings Institution",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Portuguese Slump and Crash and the Euro Crisis. Brookings Papers on Economic Activity, Spring 2013",
-      "type": "article",
-      "url": "https://search.worldcat.org/search?q=The%20Portuguese%20Slump%20and%20Crash%20and%20the%20Euro%20Crisis.%20Brookings%20Papers%20on%20Economic%20Activity%2C%20Spring%202013%20Ricardo%20Reis",
-      "year": 2013
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-03",
-      "creators": [
-        "Redes Energéticas Nacionais"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "ren-2025-blackout",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "transmission system operator's records of the interruption of 28 April 2025 on the Iberian peninsula",
-      "repository": "Redes Energéticas Nacionais",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The supply interruption of 28 April 2025",
-      "type": "primary",
-      "url": null,
-      "year": 2025
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "M. C. Ricklefs"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "ricklefs-1991-history-of-modern-indonesia",
       "isbn": "1349227005",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Stanford University Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -2435,39 +1582,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A History of Modern Indonesia Since c. 1300",
-      "type": "book",
-      "url": null,
-      "year": 1991
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Richard K. Riehn"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "riehn-1990-1812-napoleons-russian-campaign",
       "isbn": "9780070527317",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "McGraw-Hill",
-      "reference": "The work the English Wikipedia article \"French invasion of Russia\" cites at p. 26, at revision 1375995823, for Alexander leaving the Continental blockade and Napoleon losing his chief instrument against Britain. ISBN and publisher are the article's own template. Cited and not read.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2475,113 +1609,74 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "1812: Napoleon's Russian Campaign",
-      "type": "book",
-      "url": null,
-      "year": 1990
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 98,
       "created": "2026-09-02",
-      "creators": [
-        "Fernando Rosas"
-      ],
+      "degree": 98,
       "doi": null,
       "id": "rosas-1994-estado-novo",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Círculo de Leitores",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "O Estado Novo (1926–1974). História de Portugal, vol. 7 (dir. José Mattoso)",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=O%20Estado%20Novo%20(1926%E2%80%931974).%20Hist%C3%B3ria%20de%20Portugal%2C%20vol.%207%20(dir.%20Jos%C3%A9%20Mattoso)%20Fernando%20Rosas",
-      "year": 1994
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 5,
       "created": "2026-09-02",
-      "creators": [
-        "Fernando Rosas"
-      ],
+      "degree": 5,
       "doi": null,
       "id": "rosas-2012-salazar-e-o-poder",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Tinta-da-China",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Salazar e o Poder: A Arte de Saber Durar",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Salazar%20e%20o%20Poder%3A%20A%20Arte%20de%20Saber%20Durar%20Fernando%20Rosas",
-      "year": 2012
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-21",
-      "creators": [
-        "James F. Schnabel"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "schnabel-1972-policy-and-direction",
       "isbn": "9780160359552",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Center of Military History, United States Army",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2589,40 +1684,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Policy and Direction: The First Year",
-      "type": "book",
-      "url": "https://history.army.mil/books/P&D.HTM",
-      "year": 1972
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Gerhard Seibert"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "seibert-2005-comrades-clients-and-cousins",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Brill",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2630,44 +1711,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Comrades, Clients and Cousins: Colonialism, Socialism and Democratization in São Tomé and Príncipe",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Comrades+Clients+and+Cousins+Seibert",
-      "year": 2005
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": {
-        "issue": "261",
-        "kind": "journal",
-        "title": "Informationen zur politischen Bildung"
-      },
       "created": "2026-09-21",
-      "creators": [
-        "Reinhard Sturm"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "sturm-2011-weimarer-republik",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2675,40 +1738,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Weimarer Republik",
-      "type": "article",
-      "url": "https://www.bpb.de/shop/zeitschriften/izpb/55943/weimarer-republik/",
-      "year": 2011
+      "type": "article"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Eliezer Tauber"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "tauber-2014-arab-movements-world-war-i",
       "isbn": "9781135199784",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Routledge",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2716,77 +1765,50 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Arab Movements in World War I",
-      "type": "book",
-      "url": null,
-      "year": 2014
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 189,
       "created": "2026-09-02",
-      "creators": [
-        "António José Telo"
-      ],
+      "degree": 189,
       "doi": null,
       "id": "telo-2007-historia-contemporanea",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Presença",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "História Contemporânea de Portugal: do 25 de Abril à Actualidade",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Hist%C3%B3ria%20Contempor%C3%A2nea%20de%20Portugal%3A%20do%2025%20de%20Abril%20%C3%A0%20Actualidade%20Ant%C3%B3nio%20Jos%C3%A9%20Telo",
-      "year": 2007
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Frank E. Trout"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "trout-1969-moroccos-saharan-frontiers",
       "isbn": "9782600044950",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Librairie Droz",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m42-second-source"
@@ -2794,77 +1816,49 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Morocco's Saharan Frontiers",
-      "type": "book",
-      "url": null,
-      "year": 1969
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 0,
       "created": "2026-09-03",
-      "creators": [
-        "Union of European Football Associations"
-      ],
       "doi": null,
       "id": "uefa-2016-final",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": null,
-      "reference": "official match report, Saint-Denis, 10 July 2016",
-      "repository": "Union of European Football Associations",
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Match report, final of the 2016 European Championship",
-      "type": "primary",
-      "url": null,
-      "year": 2016
+      "type": "primary"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
-      "container": null,
       "created": "2026-09-21",
-      "creators": [
-        "Anthony F. Upton"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "upton-1980-vallankumous-suomessa",
       "isbn": "9512620227",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Gummerus",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2872,39 +1866,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Vallankumous Suomessa 1917–1918, I",
-      "type": "book",
-      "url": null,
-      "year": 1980
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2,
       "created": "2026-09-24",
-      "creators": [
-        "Charles F. Walker"
-      ],
+      "degree": 2,
       "doi": null,
       "id": "walker-2014-the-tupac-amaru-rebellion",
       "isbn": "9780674058255",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Belknap Press of Harvard University Press",
-      "reference": "The work the English Wikipedia article \"Rebellion of Túpac Amaru II\" cites for the royalist march on Tinta and the night attack at Pucacasa, at revision 1376254812; the full entry is the article's own.",
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2912,44 +1893,26 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "The Tupac Amaru Rebellion",
-      "type": "book",
-      "url": null,
-      "year": 2014
+      "type": "book"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
-      "container": {
-        "kind": "edited-volume",
-        "pages": "30-34",
-        "title": "Barbados: Just Beyond Your Imagination"
-      },
       "created": "2026-09-21",
-      "creators": [
-        "Karl Watson"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "watson-1970-brief-history-of-barbados",
       "isbn": "9781870518543",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Hansib",
-      "reference": null,
-      "repository": null,
       "review": {
         "flags": [
           "m72-second-source"
@@ -2957,198 +1920,138 @@
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "A Brief History of Barbados",
-      "type": "chapter",
-      "url": null,
-      "year": 1970
+      "type": "chapter"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 74,
       "created": "2026-09-02",
-      "creators": [
-        "Douglas L. Wheeler"
-      ],
+      "degree": 74,
       "doi": null,
       "id": "wheeler-1978-republican-portugal",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "University of Wisconsin Press",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Republican Portugal: A Political History, 1910–1926",
-      "type": "book",
-      "url": "https://search.worldcat.org/search?q=Republican%20Portugal%3A%20A%20Political%20History%2C%201910%E2%80%931926%20Douglas%20L.%20Wheeler",
-      "year": 1978
+      "type": "book"
     },
     {
-      "accessed": "2026-09-04",
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1124,
       "created": "2026-09-04",
-      "creators": [
-        "Wikidata contributors"
-      ],
+      "degree": 1131,
       "doi": null,
       "id": "wikidata",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Wikimedia Foundation; the data is released under CC0 1.0",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Wikidata",
-      "type": "dataset",
-      "url": "https://www.wikidata.org/",
-      "year": null
+      "type": "dataset"
     },
     {
-      "accessed": "2026-09-04",
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2131,
       "created": "2026-09-04",
-      "creators": [
-        "Wikipedia contributors"
-      ],
+      "degree": 2143,
       "doi": null,
       "id": "wikipedia-en",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Wikipedia, English edition",
-      "type": "web",
-      "url": "https://en.wikipedia.org/",
-      "year": null
+      "type": "web"
     },
     {
-      "accessed": "2026-09-04",
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 157,
       "created": "2026-09-04",
-      "creators": [
-        "Wikipedia contributors"
-      ],
+      "degree": 157,
       "doi": null,
       "id": "wikipedia-pt",
       "isbn": null,
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Wikimedia Foundation; the text is licensed CC BY-SA 4.0",
-      "reference": null,
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Wikipedia, Portuguese edition",
-      "type": "web",
-      "url": "https://pt.wikipedia.org/",
-      "year": null
+      "type": "web"
     },
     {
-      "accessed": null,
-      "aliases": [],
       "authors": [
         {
           "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1,
       "created": "2026-09-24",
-      "creators": [
-        "Peter H. Wilson"
-      ],
+      "degree": 1,
       "doi": null,
       "id": "wilson-2009-europes-tragedy",
       "isbn": "9780713995923",
       "kind": "source",
-      "license": "CC-BY-SA-4.0",
       "origin": {
         "tool": "assistant"
       },
-      "publisher": "Allen Lane",
-      "reference": "The English Wikipedia cites this work in both the Allen Lane 2009 printing and the Penguin 2010 printing, whose subtitle reads \"A New History of the Thirty Years War\"; the page numbers a citation here gives are the printing that citation names.",
-      "repository": null,
       "review": {
         "status": "draft"
       },
       "revised": null,
-      "schema": 1,
       "status": "active",
-      "supersededBy": null,
       "title": "Europe's Tragedy: A History of the Thirty Years War",
-      "type": "book",
-      "url": null,
-      "year": 2009
+      "type": "book"
+    }
+  ],
+  "schema": 1,
+  "warnings": [
+    {
+      "id": "uefa-2016-final",
+      "kind": "source",
+      "message": "source is cited by nothing under validation",
+      "rule": "no-citers"
     }
   ]
 }

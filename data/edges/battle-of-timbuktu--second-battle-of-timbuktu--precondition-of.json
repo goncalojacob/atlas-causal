@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-timbuktu--second-battle-of-timbuktu--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Timbuktu\", revision 1370736664, § Background"
+    }
+  ],
+  "from": "battle-of-timbuktu",
+  "to": "second-battle-of-timbuktu",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The second battle's article gives the first its whole § Background, under {{Main articles|Battle of Timbuktu}}, and ends it on the link: \"French forces expected a second attack on the city following the jihadist's failed first incursion. The French 1st Marine Infantry Regiment received reinforcements from the 92nd Infantry Regiment and the 126th Infantry Regiment.\" The first attack's failure is why the garrison the second met was the size it was. Probable: Wikipedia alone.",
+  "dispute": null
+}

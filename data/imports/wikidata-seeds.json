@@ -5325,6 +5325,18 @@
       "precision": "city",
       "label": "municipality of Galicia",
       "note": "Added in M42b batch 25, on the same rule and the same line: Q2074737 municipality of Spain, which batch 8 added, and of which this is the Galician case. Wikidata's own description of the class, read off the class item, is \"administrative territorial entity of Galicia, Spain\". A Coruña, where the Battle of Corunna was fought, carries this class and no other and was refused for want of it."
+    },
+    "Q1760704": {
+      "kind": "event",
+      "category": "war",
+      "label": "withdrawal",
+      "note": "Added in M42 batch 52, the Mali War vein of the Africa lane, for Q131697486, the French military withdrawal from West Africa. The label and the description — “military maneuver of abandoning territory and returning to a safer area” — are read from the item itself over the network and not guessed. `war` is the category Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a withdrawal is a manoeuvre of one."
+    },
+    "Q743074": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region of Mali",
+      "note": "Added in M42 batch 52 for Q338988, Kidal Region, which kidal-offensive names under P276. The label is read from the item itself over the network; the item carries no English description and its article is “Regions of Mali”. `region` because a first-level administrative division of Mali is larger than a town and is not a state, which is the line PRECISIONS draws."
     }
   },
   "reconcile": true

@@ -5025,3 +5025,64 @@ he ordered the offensive that took Seoul for the third time.
   war is why the intervention happened, and the Chinese Civil War article's own
   two mentions of Korea at revision 1372330605 run the other way, about what
   the Korean War did to Taiwan. The claim is not in the sources read here.
+
+## Batch 52 — the Mali War carried from 2013 to 2024
+
+*24 September, the import fire that picked the run up at 17:59Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need had turned over again and
+puts **Africa** at the front, trailing at 155 against Asia's 158 and Europe's
+378. The full note, the four refusals and the counts are in `docs/m42-pool.md`
+under "Batch 52".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `2021-malian-coup-d-etat` → `french-military-withdrawal-from-west-africa` | `caused` | *"As a result of the 2021 Malian coup d'état, French President Emmanuel Macron announced the end of the operation and his intentions to remove troops incrementally."* The operation is Operation Barkhane, which the same paragraph has just called *"less successful than its predecessor"* — "French military withdrawal from West Africa (2022–2025)", revision 1371499896, § Mali |
+| `2021-malian-coup-d-etat` → `kidal-offensive` | `precondition-of` | *"The offensive was part of a renewed conflict between the Malian junta that took power in 2021 and former Tuareg rebel groups that had signed the Algiers Agreement in 2015"*, and § Background on the same ground: the CSP-PSD formed in April 2021, *"just a month later"* Goïta's coup took power, and *"Goita and the CSP-PSD got off to a rocky start"* — "Kidal offensive", revision 1370625765, lead and § Background |
+| `2020-malian-coup-d-etat` → `moura-massacre` | `precondition-of` | France *"announced after the 2020 Malian coup d'état their intention to gradually reduce the number of French forces and withdraw them from the country. Mali has since looked for other ways to acquire foreign help, and has received help from Wagner Group, a Russian private military company"*, and the lead names Wagner, with the Malian army, as who carried the massacre out — "Moura massacre", revision 1370628775, § Background and lead |
+| `battle-of-timbuktu` → `second-battle-of-timbuktu` | `precondition-of` | *"French forces expected a second attack on the city following the jihadist's failed first incursion. The French 1st Marine Infantry Regiment received reinforcements from the 92nd Infantry Regiment and the 126th Infantry Regiment."* The whole § Background is the first battle, under `{{Main articles|Battle of Timbuktu}}` — "Second Battle of Timbuktu", revision 1370736664, § Background |
+| `third-battle-of-gao` → `fourth-battle-of-gao` | `precondition-of` | *"Ten days after the Third Battle of Gao, the Jihadists launched another offensive to retake the city on 20 February 2013."* Read with both leads — the third *"a raid on the city"* whose *"raiders were defeated"*, the fourth *"an attempt by rebel MOJWA forces to retake the city"* — the sentence states a second attempt by the same force at the same objective and not only a date — "Fourth Battle of Gao", revision 1370619931, § February 20–22 attack |
+
+All five are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Three of the five run out of a record that was already here**, and
+both of those records — the coups of 2020 and 2021 — are inside the largest
+connected component, so the component goes from 624 to 627. That is deviation
+1430's lesson applied: the three that joined it are joined to *siblings* inside
+it and not to their own parent.
+
+**Two of the five are pairs and stay pairs.** The two battles of Timbuktu and
+the third and fourth battles of Gao are each a component of two, because the
+only record inside the largest component that either family could reach is
+`mali-war`, which is their parent, and C8 bars the edge. Neither the first
+Timbuktu article nor the third Gao article names any other record this atlas
+holds; the fourth Gao article names only the third, and the second Timbuktu
+article only the first. The pairs are honest and the sentences are the
+articles' own; what is missing is a sibling, not an argument.
+
+**Four candidates were read and refused, three of them for arriving edgeless.**
+
+- **`Q128007033`, the Battle of Tinzaouaten (July 2024)**, is the largest thing
+  in the vein that is not here — 9 sitelinks, the Wagner Group's worst defeat in
+  Mali — and its article at revision 1373950868 names no event this atlas holds
+  in a sentence that argues anything. Its § Prelude begins with a convoy on 20
+  July and reaches nothing earlier; its § Aftermath is the diplomatic break with
+  Ukraine and the Sahel states' reprisals, none of them records here. The Kidal
+  offensive's article, read for the other half, names Tinzaouaten once — a drone
+  strike of December 2023 — and not this battle. It is dated, placed and worth
+  having, and the right way to get it is with a sibling it can reach.
+- **`Q123058541`, the Siege of Timbuktu (2023)**, states one relation in its
+  lead and only one: *"The siege began after the withdrawal of MINUSMA, the
+  United Nations mission to Mali during the Mali War."* MINUSMA is not a record
+  of this atlas, so the sentence has no `from`.
+- **`Q8578070`, the Fifth Battle of Gao (March 2013)**, names neither the fourth
+  battle nor anything else the atlas holds: its article at revision 1370618201
+  is five sentences and opens on the day itself.
+- **`Q6337939`, Operation Panther**, is the one refused for the opposite
+  reason. Its article names `battle-of-ifoghas`, which this atlas holds, but the
+  sentence is a § See also line — *"Battle of Ifoghas, fighting in the Adrar des
+  Ifoghas rock massif during Operation Panther"* — and what it states is
+  containment, not cause. Containment is `parent`, and C8 bars the edge a parent
+  would then be barred from; and as a parent the spans do not fit either, since
+  the battle begins a day before the operation and ends six days after it, which
+  rule 24 would warn about. A record whose only link to the atlas is a link the
+  atlas may not draw is not this batch's to import.

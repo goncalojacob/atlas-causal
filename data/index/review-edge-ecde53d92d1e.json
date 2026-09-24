@@ -2417,6 +2417,90 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "2020-malian-coup-d-etat",
+      "id": "2020-malian-coup-d-etat--moura-massacre--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "moura-massacre",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "2021-malian-coup-d-etat",
+      "id": "2021-malian-coup-d-etat--french-military-withdrawal-from-west-africa--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "french-military-withdrawal-from-west-africa",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "2021-malian-coup-d-etat",
+      "id": "2021-malian-coup-d-etat--kidal-offensive--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kidal-offensive",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "2021-myanmar-coup-d-etat",
       "id": "2021-myanmar-coup-d-etat--myanmar-civil-war--caused",
@@ -6030,6 +6114,34 @@
       "status": "active",
       "to": "battle-off-ulsan",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-timbuktu",
+      "id": "battle-of-timbuktu--second-battle-of-timbuktu--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-timbuktu",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -21935,6 +22047,34 @@
       "status": "active",
       "to": "good-friday-agreement",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "third-battle-of-gao",
+      "id": "third-battle-of-gao--fourth-battle-of-gao--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fourth-battle-of-gao",
+      "type": "precondition-of"
     },
     {
       "authors": [

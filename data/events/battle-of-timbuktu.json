@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-timbuktu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9's second step (P276 Q9427, Timbuktu); the item's own P625 is the town's own coordinate template, 16.7667N 3.0000W."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q8363015",
+  "wikipedia": {
+    "en": "Battle of Timbuktu"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8363015"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Timbuktu\", revision 1370591090"
+    }
+  ],
+  "title": "Battle of Timbuktu",
+  "summary": "The English Wikipedia article \"Battle of Timbuktu\", at revision 1370591090, opens: \"The Battle of Timbuktu occurred in Timbuktu, Mali, in March 2013, between Islamist groups and Mali government forces supported by France.\" Wikidata item Q8363015, whose own description reads \"battle in Mali in March 2013\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-03-20",
+    "endDate": "2013-03-21"
+  },
+  "place": "timbuktu",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

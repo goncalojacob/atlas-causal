@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-timbuktu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Start moved from the item's P580, 20 March 2013, to 30 March: the cited article at revision 1370736664 gives \"between March 30 and April 1, 2013\" in its first sentence and \"30 March 2013 – 1 April 2013\" in its infobox, and 20 March is the date of the first battle, which this atlas holds separately as battle-of-timbuktu — the item's wider bound is the other record's date and not a wider reading of this one (deviation 1432). Place by A9's second step (P276 Q9427, Timbuktu)."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q9101600",
+  "wikipedia": {
+    "en": "Second Battle of Timbuktu"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9101600"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Timbuktu\", revision 1370736664"
+    }
+  ],
+  "title": "Second Battle of Timbuktu",
+  "summary": "The English Wikipedia article \"Second Battle of Timbuktu\", at revision 1370736664, opens: \"The Second Battle of Timbuktu was a battle during the Mali War between March 30 and April 1, 2013, in which two Islamist attacks targeted the Malian army in Timbuktu.\" Wikidata item Q9101600, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-03-30",
+    "endDate": "2013-04-01"
+  },
+  "place": "timbuktu",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}
