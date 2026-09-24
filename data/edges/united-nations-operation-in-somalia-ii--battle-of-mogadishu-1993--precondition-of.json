@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "united-nations-operation-in-somalia-ii--battle-of-mogadishu-1993--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United Nations Operation in Somalia II\", revision 1373633997, lead and \"Operation Gothic Serpent\""
+    }
+  ],
+  "from": "united-nations-operation-in-somalia-ii",
+  "to": "battle-of-mogadishu-1993",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article says that \"three months into the conflict, the US military implemented Operation Gothic Serpent to assist UNOSOM II against the SNA with special forces\", that Task Force Ranger \"was flown into Mogadishu and began a manhunt for Aidid in what became known as Operation Gothic Serpent\", and that \"soon after, the infamous Battle of Mogadishu took place, signifying the end of the hunt for Aidid and military operations in Somalia\". The battle was fought by a force sent to assist this operation, against the faction this operation was fighting; the mission is what the battle presupposes, not what caused it. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

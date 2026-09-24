@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ras-lanuf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1089511",
+  "wikipedia": {
+    "en": "Battle of Ras Lanuf",
+    "pt": "Primeira Batalha de Ras Lanuf"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1089511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
+    }
+  ],
+  "title": "Battle of Ras Lanuf",
+  "summary": "The English Wikipedia article \"Battle of Ras Lanuf\", at revision 1372942414, opens: \"The Battle of Ras Lanuf was a two-phase battle in early to mid-March 2011 during the Libyan Civil War between forces loyal to Libyan leader Muammar Gaddafi and those loyal to the National Transitional Council.  Both forces sought control of the town of Ras Lanuf. The first phase of confrontation followed two days after the First Battle of Brega which occurred in the town Brega, roughly 130 kilometres (81 mi) to the east of Ras Lanuf. After conquering the town on 4 March, the rebels pushed further west to attack Sirte but they were driven back by government forces and on 11 March, government troops reconquered most of Ras Lanuf.\" Wikidata item Q1089511, whose own description reads \"2011 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-04",
+    "endDate": "2011-03-05"
+  },
+  "place": "ras-lanuf",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bin-jawad--second-battle-of-benghazi--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Aftermath"
+    }
+  ],
+  "from": "battle-of-bin-jawad",
+  "to": "second-battle-of-benghazi",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Bin Jawad's § Aftermath makes the claim in its own words: \"The Battle of Bin Jawad marked the end of the initial rebel offensive. Proving to be the high-water mark of the rebel offensive, it marked the end of the rebel advance westward at the time, and opened the way for a government counter-offensive that took pro-Gaddafi forces as far as the gates of Benghazi, before being pushed back by UN intervention.\" The counter-offensive reaching those gates is the second battle of Benghazi of 19 March. `enabled` and not `caused`: \"opened the way for\" is what the article says, and a counter-offensive has its own reasons. Probable: Wikipedia alone.",
+  "dispute": null
+}

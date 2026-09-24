@@ -1080,7 +1080,63 @@
     "Q736",
     "Q750",
     "Q77",
-    "Q96"
+    "Q96",
+    "Q2444955",
+    "Q472238",
+    "Q460844",
+    "Q1778229",
+    "Q133919",
+    "Q210714",
+    "Q770372",
+    "Q42033121",
+    "Q2592647",
+    "Q1930278",
+    "Q604897",
+    "Q36027",
+    "Q107802",
+    "Q626191",
+    "Q2915155",
+    "Q878102",
+    "Q20934",
+    "Q114926903",
+    "Q2704666",
+    "Q3269455",
+    "Q923340",
+    "Q108102583",
+    "Q483039",
+    "Q40816",
+    "Q58462",
+    "Q97701895",
+    "Q2361214",
+    "Q1089511",
+    "Q942901",
+    "Q371620",
+    "Q221503",
+    "Q923890",
+    "Q588059",
+    "Q911471",
+    "Q506595",
+    "Q846532",
+    "Q581087",
+    "Q2632974",
+    "Q775224",
+    "Q117564",
+    "Q202991",
+    "Q244230",
+    "Q623329",
+    "Q55498",
+    "Q4218510",
+    "Q326917",
+    "Q37960",
+    "Q75203",
+    "Q11720",
+    "Q1363925",
+    "Q2273445",
+    "Q2409298",
+    "Q210800",
+    "Q702377",
+    "Q2440191",
+    "Q384091"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1279,7 +1335,19 @@
     "Q1123201": "americas",
     "Q8934": "americas",
     "Q775606": "americas",
-    "Q7134668": "americas"
+    "Q7134668": "americas",
+    "Q2444955": "africa",
+    "Q203824": "africa",
+    "Q555833": "asia",
+    "Q1922071": "asia",
+    "Q626191": "asia",
+    "Q114926903": "africa",
+    "Q2704666": "africa",
+    "Q3269455": "africa",
+    "Q923340": "africa",
+    "Q108102583": "asia",
+    "Q483039": "asia",
+    "Q20934": "asia"
   },
   "queries": [
     {
@@ -3599,18 +3667,22 @@
     },
     "Q515": {
       "kind": "place",
+      "precision": "city",
       "label": "city"
     },
     "Q532": {
       "kind": "place",
+      "precision": "city",
       "label": "village"
     },
     "Q3957": {
       "kind": "place",
+      "precision": "city",
       "label": "town"
     },
     "Q5119": {
       "kind": "place",
+      "precision": "city",
       "label": "capital city"
     },
     "Q6256": {
@@ -3671,10 +3743,12 @@
     },
     "Q15284": {
       "kind": "place",
+      "precision": "city",
       "label": "municipality"
     },
     "Q23442": {
       "kind": "place",
+      "precision": "region",
       "label": "island"
     },
     "Q40231": {
@@ -3736,8 +3810,8 @@
     },
     "Q124734": {
       "kind": "event",
-      "label": "rebellion / civil war",
-      "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "label": "rebellion",
+      "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. The label was the candidate list's own phrase, \"rebellion / civil war\"; it is read from Wikidata here in M42 batch 42 and is `rebellion` alone. No category even so: the class is what Q2656683, the Simba rebellion, carries, and that record is a rebellion its own article also calls a regional uprising inside a civil war, so choosing between `revolution` and `war` for every item of this class is an edit somebody should argue with."
     },
     "Q131569": {
       "kind": "event",
@@ -3786,13 +3860,14 @@
     },
     "Q273120": {
       "kind": "event",
-      "label": "civil war / rebellion",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "label": "protest",
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. The label was the candidate list's own word for those items, because that sandbox had no network; it is read from Wikidata here in M42 batch 42, which is what batch 40 asked of the next fire to touch this table. Still no category: a protest that seizes nothing is not `revolution`, which data/categories.json describes as a seizure or a loss of power."
     },
     "Q350604": {
       "kind": "event",
       "label": "civil war / rebellion",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with. Given the category `war` in M42 batch 39, where the first record of the class arrived without one: the class is civil war and rebellion, and the category's own description names a war, a campaign and a battle without asking who the parties are.",
+      "category": "war"
     },
     "Q365680": {
       "kind": "event",
@@ -3806,7 +3881,14 @@
     },
     "Q486972": {
       "kind": "place",
+      "precision": "city",
       "label": "human settlement"
+    },
+    "Q3249005": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city of Vietnam",
+      "note": "Added in M42 batch 43 for Q36027, Điện Biên Phủ, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
     },
     "Q625298": {
       "kind": "event",
@@ -3892,6 +3974,7 @@
     },
     "Q1549591": {
       "kind": "place",
+      "precision": "city",
       "label": "big city"
     },
     "Q1646218": {
@@ -4362,11 +4445,13 @@
     },
     "Q484170": {
       "kind": "place",
+      "precision": "city",
       "label": "commune of France",
       "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
     },
     "Q82794": {
       "kind": "place",
+      "precision": "region",
       "label": "region",
       "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
     },
@@ -4454,36 +4539,43 @@
     },
     "Q2555896": {
       "kind": "place",
+      "precision": "city",
       "label": "municipality of Colombia",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q215655": {
       "kind": "place",
+      "precision": "region",
       "label": "department of Colombia",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q63209072": {
       "kind": "place",
+      "precision": "city",
       "label": "city of Colombia",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q15701038": {
       "kind": "place",
+      "precision": "region",
       "label": "subregion of Antioquia Department",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q165": {
       "kind": "place",
+      "precision": "region",
       "label": "sea",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q4022": {
       "kind": "place",
+      "precision": "region",
       "label": "river",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q3257686": {
       "kind": "place",
+      "precision": "city",
       "label": "locality",
       "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
@@ -4494,16 +4586,19 @@
     },
     "Q558330": {
       "kind": "place",
+      "precision": "city",
       "label": "municipality of Cuba",
       "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     },
     "Q115291": {
       "kind": "place",
+      "precision": "region",
       "label": "province of Cuba",
       "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     },
     "Q46831": {
       "kind": "place",
+      "precision": "region",
       "label": "mountain range",
       "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     },
@@ -4521,31 +4616,37 @@
     },
     "Q42744322": {
       "kind": "place",
+      "precision": "city",
       "label": "urban municipality in Germany",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “municipality with town privileges in Germany”: Lützen, Nördlingen, Rain and Stralsund are each one."
     },
     "Q79423884": {
       "kind": "place",
+      "precision": "point",
       "label": "quarter in Leipzig, Germany",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q873362 Breitenfeld, where both battles of that name were fought."
     },
     "Q23413": {
       "kind": "place",
+      "precision": "point",
       "label": "castle",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “type of fortified structure built in Europe, Asia and the Middle East”. Carried by Q193369 Prague Castle, where the Peace of Prague was concluded: a castle is somewhere events happen, which is what a place record is."
     },
     "Q19698023": {
       "kind": "place",
+      "precision": "region",
       "label": "voivodeship of the Grand Duchy of Lithuania",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q2454841 Smolensk Voivodeship, the ground the Smolensk War was fought over. A voivodeship is a province and not a country, which is why it takes a place record where the Commonwealth itself does not."
     },
     "Q5153359": {
       "kind": "place",
+      "precision": "city",
       "label": "municipality of the Czech Republic",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “administrative territorial division of the Czech Republic”. Carried by Q1682828 Jankov."
     },
     "Q116457956": {
       "kind": "place",
+      "precision": "city",
       "label": "municipality without town privileges in Germany",
       "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q575676 Lutter am Barenberge, beside which the Battle of Lutter was fought."
     },
@@ -4623,26 +4724,31 @@
     },
     "Q40357": {
       "kind": "place",
+      "precision": "point",
       "label": "prison",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “place in which people are, for legal reasons, physically confined” — a building on the ground, which is what a place of this atlas is. Carried by Q3292048, the Prison de l’Abbaye, and by Q1865480, the Bastille."
     },
     "Q16560": {
       "kind": "place",
+      "precision": "point",
       "label": "palace",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “grand residence, especially a royal or episcopal residence”. Carried by Q662491, the Château de Saint-Cloud, and Q234364, the Tuileries."
     },
     "Q19860854": {
       "kind": "place",
+      "precision": "point",
       "label": "destroyed building or structure",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building or structure that has been demolished or destroyed”. A building that no longer stands is still somewhere events happened, which is all a place record claims; it is the second class of the Bastille and of both palaces and it agrees with the first."
     },
     "Q805248": {
       "kind": "place",
+      "precision": "point",
       "label": "jeu de paume building",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building for the ‘jeu de paume’ game in Baroque times”. Carried by Q805255, the Salle du Jeu de Paume at Versailles."
     },
     "Q174782": {
       "kind": "place",
+      "precision": "point",
       "label": "square",
       "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “open public spaces in cities or towns … often located at the junction of two or more thoroughfares”. Carried by Q189503, the place de la Concorde, and Q217925, the Champ de Mars."
     },
@@ -4654,38 +4760,90 @@
     },
     "Q861184": {
       "kind": "place",
+      "precision": "region",
       "label": "department of Peru",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first level administrative subdivision of Peru”."
     },
     "Q250050": {
       "kind": "place",
+      "precision": "region",
       "label": "department of Bolivia",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first-level administrative subdivision of Bolivia”."
     },
     "Q5770918": {
       "kind": "place",
+      "precision": "city",
       "label": "city of Argentina",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “administrative territorial entity of Argentina”."
     },
     "Q108178728": {
       "kind": "place",
+      "precision": "city",
       "label": "national capital",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “capital of a sovereign state”."
     },
     "Q51929311": {
       "kind": "place",
+      "precision": "city",
       "label": "largest city",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city which has the greatest population in a country”."
     },
     "Q1422929": {
       "kind": "place",
+      "precision": "city",
       "label": "primate city",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “disproportionately large city in its country or region”."
     },
     "Q1637706": {
       "kind": "place",
+      "precision": "city",
       "label": "million city",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city with a population of more than 1,000,000”."
+    },
+    "Q5919191": {
+      "kind": "event",
+      "category": "war",
+      "label": "military intervention",
+      "note": "Added in M42 batch 42 from the class Q210714, the 2011 military intervention in Libya, names. The label and the description — \"use of force by a State over foreign territory\" — are read from the item itself over the network. The category needs no argument: data/categories.json describes `war` as organised armed force between polities."
+    },
+    "Q18493502": {
+      "kind": "event",
+      "label": "suicide bombing",
+      "note": "Added in M42 batch 42 from the class Q42033121, the 14 October 2017 Mogadishu bombings, names. The label and the description — \"type of suicide attack\" — are read from the item itself. No category: data/categories.json has none a bombing belongs to, since `war` is armed force between polities and `disaster` is harm nobody chose, and a thirteenth category is an edit somebody should argue with and not a batch's side effect."
+    },
+    "Q25917154": {
+      "kind": "event",
+      "label": "truck bombing",
+      "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
+    },
+    "Q482821": {
+      "kind": "place",
+      "precision": "city",
+      "label": "metropolitan city of South Korea",
+      "note": "Added in M42 batch 44 from the class Q20934, Incheon, names. The label and the description — \"type of administrative subdivision in South Korea\" — are read from the item itself over the network rather than guessed."
+    },
+    "Q21480300": {
+      "kind": "event",
+      "label": "mass shooting",
+      "note": "Added in M42 batch 45 for Q97701895, the 2020 Darfur attacks. The label and the description — 'incident in which an active shooter shoots multiple people with a firearm' — are read from the item itself over the network. No category: the twelve of data/categories.json have no kind for a mass shooting as a class, and 'war' would be read off this event's parent rather than off the class, which is not what the table is for. Fifty event classes already carry no category."
+    },
+    "Q34763": {
+      "kind": "place",
+      "precision": "region",
+      "label": "peninsula",
+      "note": "Added in M42 batch 47, the Russo-Japanese War read as a chain, from the class Q4218510 (the Kwantung Peninsula) and Q326917 (the Liaodong Peninsula) both name and nothing else does. The label and the description — \"landform surrounded more than half but not entirely by water\" — are read from the item itself over the network. `region` because a peninsula is ground and not a point on it, and larger than a settlement without being a state: src/vocab.js calls that coarse and the map draws it wider and fainter, which is the honest drawing of a battle sited only by the peninsula it was fought on."
+    },
+    "Q7930989": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city or town",
+      "note": "Added in M42 batch 47 from one of the two classes Q623329, Lüshunkou, names. The label and the description — \"type of human settlement\" — are read from the item itself over the network. A settlement is a `city`, which is the reading A12 (2) already states."
+    },
+    "Q1065118": {
+      "kind": "place",
+      "precision": "city",
+      "label": "district of China",
+      "note": "Added in M42 batch 47 from the other class Q623329, Lüshunkou, names. The label and the description — \"administrative division of the People's Republic of China\" — are read from the item itself over the network. `city` and not `region` because a district of China sits below a prefecture-level city and is settlement-scale, which is what Lüshunkou is; it agrees with Q7930989 on the same item, so `classify()` reads one precision and not a disagreement."
     }
   },
   "reconcile": true

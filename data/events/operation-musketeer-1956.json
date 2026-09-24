@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "operation-musketeer-1956",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `suez-crisis` from `P361`: the item gives no `P580` and no `P582`, only `P585` November 1956, which is inside the crisis's 1956-10-29 to 1956-11-07 — a point in time is its own end, so `end-unstated` does not apply (A12 (3)). The place is `suez-canal`, the item's own `P276` and a record this atlas already held. The item names no `P710`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2915155",
+  "wikipedia": {
+    "en": "Operation Musketeer (1956)",
+    "pt": "Operação Mosqueteiro"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2915155"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
+    }
+  ],
+  "title": "Operation Musketeer (1956)",
+  "summary": "The English Wikipedia article \"Operation Musketeer (1956)\", at revision 1375553410, opens: \"Operation Musketeer was the Anglo-French plan for the invasion of the Suez Canal Zone to capture the Suez Canal during the Suez Crisis in 1956. The operation had initially been given the codename Operation Hamilcar, but this name was quickly dropped when it was found that the British were painting an air recognition letter H on their vehicles, while the French, who spelled Hamilcar differently, were painting an A. Musketeer was chosen as a replacement because it started with M in both languages. Israel, which invaded the Sinai Peninsula, had the additional objectives of opening the Straits of Tiran and halting fedayeen incursions into Israel. The Anglo-French military operation was originally planned for early September, but the necessity of coordination with Israel delayed it until early November. However, on 10 September British and French politicians and Chiefs of the General Staff agreed to adopt General Charles Keightley's alterations to the military plans with the intention of reducing Egyptian civilian casualties. The new plan, renamed Musketeer Revise, provided the basis of the actual Suez operation.\" Wikidata item Q2915155, whose own description reads \"1956 Anglo-French-Israeli plan for the invasion of Egypt to capture the Suez Canal during the Suez Crisis\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1956,
+    "end": 1956,
+    "date": "1956-11"
+  },
+  "place": "suez-canal",
+  "region": null,
+  "regionNote": null,
+  "parent": "suez-crisis",
+  "category": "war",
+  "actors": []
+}

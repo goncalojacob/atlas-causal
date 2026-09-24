@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "guinea-bissau-war-of-independence--carnation-revolution-1974--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Guinea-Bissau War of Independence\", revision 1372113350, \"Carnation Revolution and independence\""
+    }
+  ],
+  "from": "guinea-bissau-war-of-independence",
+  "to": "carnation-revolution-1974",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article states it in its own words: \"the war in Guinea-Bissau has been viewed as a factor which contributed to the coup and revolution: its status as 'the most intense, destructive, and materially pointless' of the three Portuguese wars in Africa rendered it an embarrassment\" to the regime; and the lead says the war \"created significant internal political turmoil in Portugal\" and is \"commonly referred to as 'Portugal's Vietnam'\". A factor contributing to the coup is causation and not a precondition, so `caused` is written, matching the type the atlas already carries on `guinea-war-begins-1963`, which is this war's first day. Probable: the article attributes the reading to others (\"has been viewed as\"), and names no single historian for it.",
+  "dispute": null
+}

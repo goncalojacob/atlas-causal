@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bani-walid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q775224",
+  "wikipedia": {
+    "en": "Battle of Bani Walid",
+    "pt": "Batalha de Bani Walid"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q775224"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bani Walid\", revision 1374518311"
+    }
+  ],
+  "title": "Battle of Bani Walid",
+  "summary": "The English Wikipedia article \"Battle of Bani Walid\", at revision 1374518311, opens: \"The Battle of Bani Walid was a military operation in the Libyan Civil War conducted by anti-Gaddafi forces in September and October 2011, in an effort to take control of the desert city of Bani Walid from pro-Gaddafi forces. It began following days of force buildup on the part of the attackers, as well as skirmishes around the city.\" Wikidata item Q775224, whose own description reads \"2011 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-09-08",
+    "endDate": "2011-10-17"
+  },
+  "place": "bani-walid",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "2020-darfur-attacks",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q97701895",
+  "wikipedia": {
+    "en": "2020 Darfur attacks",
+    "pt": "Ataques em Darfur em 2020"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q97701895"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2020 Darfur attacks\", revision 1327431594"
+    }
+  ],
+  "title": "2020 Darfur attacks",
+  "summary": "The English Wikipedia article \"2020 Darfur attacks\", at revision 1327431594, opens: \"The 2020 Darfur attacks were three mass shootings that occurred in July 2020 in Darfur, Sudan. Sudan's leadership and the joint United Nations and African Union mission in Darfur (UNAMID) have connected the massacres to land conflicts relating to farming rights, typically between non-Arab tribal farmers, such as the Masalit people, and Arab Bedouin tribes, whom the government believes to be the attackers.\" Wikidata item Q97701895, whose own description reads \"three mass shootings in July 2020 in Darfur, Sudan\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2020,
+    "end": 2020,
+    "date": "2020-07-12",
+    "endDate": "2020-07-26"
+  },
+  "place": "darfur-q46733",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-in-darfur",
+  "actors": []
+}

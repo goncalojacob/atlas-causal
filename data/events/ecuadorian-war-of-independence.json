@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,8 +21,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place from A9 P17 = Q736, written as \"ecuador-q736\" at `country` precision."
   },
   "wikidata": "Q5334383",
   "sitelinks": {
@@ -48,9 +50,9 @@
     "start": 1820,
     "end": 1823
   },
-  "place": null,
-  "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "ecuador-q736",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "spanish-american-wars-of-independence"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "india-pakistan-war-of-1971",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "participants-from-p710",
+      "lane-from-seeds"
+    ],
+    "note": "Filed under `bangladesh-liberation-war` from `P361`: 3 to 16 December 1971 is inside the liberation war, whose name the article's first sentence gives as where the confrontation \"occurred\". Placeless: the item names six `P276` locations across two fronts and the title names none of them, so batch 39's rule leaves it a lane and no point — asia, named for the item in the seeds file. Both `P710` participants are held and written as `belligerent`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1922071",
+  "wikipedia": {
+    "en": "India–Pakistan war of 1971",
+    "pt": "Guerra Indo-Paquistanesa de 1971"
+  },
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1922071"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    }
+  ],
+  "title": "India–Pakistan war of 1971",
+  "summary": "The English Wikipedia article \"India–Pakistan war of 1971\", at revision 1371969450, opens: \"The India–Pakistan war of 1971, also known as the third Indo-Pakistani war, was a military confrontation between India and Pakistan that occurred during the Bangladesh Liberation War in East Pakistan from 3 December 1971 until the Pakistani capitulation in Dhaka on 16 December 1971. The war began with Pakistan's Operation Chengiz Khan, consisting of preemptive aerial strikes on eight Indian air stations. The strikes led to India declaring war on Pakistan, marking their entry into the war for East Pakistan's independence, on the side of Bengali nationalist forces. India's entry expanded the existing conflict with Indian and Pakistani forces engaging on both the eastern and western fronts.\" Wikidata item Q1922071, whose own description reads \"1971 war between India and Pakistan along Bengladesh Liberation War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1971,
+    "end": 1971,
+    "date": "1971-12-03",
+    "endDate": "1971-12-16"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "bangladesh-liberation-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "republic-of-india",
+      "role": "belligerent"
+    },
+    {
+      "actor": "pakistan",
+      "role": "belligerent"
+    }
+  ]
+}

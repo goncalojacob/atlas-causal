@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "libyan-civil-war--operation-odyssey-dawn--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Odyssey Dawn\", revision 1375561963"
+    }
+  ],
+  "from": "libyan-civil-war",
+  "to": "operation-odyssey-dawn",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Read in this direction the edge says the operation was the answer to the war. The article's first sentences: it was \"the U.S. code name for the American role in the international military operation in Libya to enforce United Nations Security Council Resolution 1973\", and \"The initial operation implemented a no-fly zone that was proposed during the Libyan Civil War to prevent government forces loyal to Muammar Gaddafi from carrying out air attacks on anti-Gaddafi forces.\" The war is what was reacted to and the no-fly zone is the form the reaction took. Probable: Wikipedia alone.",
+  "dispute": null
+}

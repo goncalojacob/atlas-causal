@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "closure-of-the-suez-canal-1956-1957",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q113946324",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Closure of the Suez Canal (1956–1957)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q113946324"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Closure of the Suez Canal (1956–1957)\", revision 1357662864"
+    }
+  ],
+  "title": "Closure of the Suez Canal (1956–1957)",
+  "summary": "The English Wikipedia article \"Closure of the Suez Canal (1956–1957)\", at revision 1357662864, opens: \"The closure of the Suez Canal from November 1956 to April 1957 was caused by the Second Arab–Israeli war, also known as the Suez Crisis, in 1956. On 26 July 1956 Egyptian president Gamal Abdel Nasser nationalized the Suez Canal from British and French investors who owned the Suez Canal Company, causing Britain and France to devise a military operation with the help of Israel to invade the Egyptian Sinai Peninsula and have British and French paratroopers drop in to protect the Suez Canal, but the objective was to take the canal back. The United States and Soviet Union condemned the invasion and de-escalated the situation by early 1957.\" Wikidata item Q113946324, whose own description reads \"1956–1957\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1956,
+    "end": 1957,
+    "date": "1956-11",
+    "endDate": "1957-04"
+  },
+  "place": "suez-canal",
+  "region": "africa",
+  "regionNote": "The canal is in Egypt and the atlas draws the Suez Crisis, which closed it, in the africa lane; the place record is the canal itself and carries no lane of its own.",
+  "actors": []
+}

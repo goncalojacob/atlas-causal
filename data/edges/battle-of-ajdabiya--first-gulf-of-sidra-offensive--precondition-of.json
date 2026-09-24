@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-ajdabiya--first-gulf-of-sidra-offensive--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Gulf of Sidra offensive\", revision 1374515970"
+    }
+  ],
+  "from": "battle-of-ajdabiya",
+  "to": "first-gulf-of-sidra-offensive",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The offensive's own article dates itself from the battle: \"It was mounted by anti-Gaddafi forces immediately after their victory in the Battle of Ajdabiya. The offensive was meant to have the rebel forces quickly reach Gaddafi's hometown of Sirte.\" `precondition-of`: taking Ajdabiya is what put the rebels back on the road west, and the article gives the offensive its own aim. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -19973,6 +19973,302 @@ and A13's relations pass, still never run.
       any more" was written into `docs/m42-pool.md` and then taken out again
       in the same fire. A count of what is wrong has to ask where the wrong
       thing is, not whether its words appear.
+1222. **The one red test on this branch is a `?fixtures=1` test and the same
+      commit is both green and red on `m0`.** `tests/graph-browser.test.mjs`
+      → *"a parent keeps its ring at rest and at every zoom"* failed on batch
+      39's `m0` merge commit, on `parted.ring.stroke < held.ring.stroke` with
+      0.7686 against 0.5831. It draws the synthetic graph and reads no record
+      under `data/`, so no import can reach it; `e0845d53` on `m0` passed its
+      pull-request run and failed its push run; and it passes here, run alone,
+      twice. The assertion measures a stroke width after a synthetic wheel
+      event, which can be read before the zoom it is about has settled. It is
+      lane A's code and not this run's data, and this fire did not touch it.
+1224. **The inverse `part of` vein was filtered against the *active* corpus,
+      and rule 21 does not care about status.** Batch 41 wrote
+      `maji-maji-rebellion` out of a row the query called unheld, and the
+      validator refused it: Q705553 is already the item of `majimaji-war`,
+      **retracted** in M44b class A for having no neighbour here to touch.
+      The record was deleted rather than argued with, and reinstating it was
+      refused on M44b's own terms — this batch found it nothing to touch
+      either, because the one held record its article names, `abushiri-revolt`,
+      it names only as a *precursor*, and a precursor is a periodisation and
+      not a mechanism, which is what all five edge types assert. **The check
+      before writing is `git grep -l '"Q<id>"' data/events`**, over every
+      event and not the active ones; it is cheaper than a record the validator
+      throws out. The 679 "unheld" Africa rows this fire measured are therefore
+      an upper bound and nobody has taken the true one.
+1225. **An item the import once refused stays refused, because the cursor does
+      not know why it was turned away.** `Q203824`, the Italo-Turkish War and
+      the largest row in the Africa vein at 61 language editions, was already
+      in `data/imports/wikidata-state.json`'s `done` list: an earlier run had
+      taken it, found no `P625`, no located `P276`, no `P131` and no `P17`, and
+      refused it for having no lane — and `advance()` writes every item of a
+      batch to `done` whether it became a record or not. Naming the lane in
+      `data/imports/wikidata-seeds.json` is the documented route (deviation
+      1029) and it does nothing on its own, because `nextBatch()` never offers
+      the item again. **This batch removed that one id from `done` by hand**
+      and the import then wrote the record. Nothing else in the state file was
+      touched. The state file is the tool's own cursor and editing it is a
+      deviation each time; the shape that would end it is a refusal list the
+      seeds file could answer — an item refused *for want of a lane* is not the
+      same as an item that has been imported, and today they are one list.
+1226. **The Arab Spring sits in two lanes and the filing rule can only name
+      one, which cost this batch a record.** `2011-2012-jordanian-protests` was
+      imported, placed at `jordan-q810`, widened to 2011–2012 from its
+      article's own title (A7), filed under `arab-spring` and given two
+      `inspired` edges — and `tests/m42-filing.test.mjs` refused it: the
+      umbrella's lane is africa, because its place `arab-world` has a point in
+      Africa, and Jordan is asia. The test states the run's own property and
+      the property is the one that is wrong here: A6 files an event whose place
+      is "in that region", and the region of the Arab Spring is a people, not a
+      continent. Every other child of that umbrella is African, so the
+      coincidence had held. **The record was deleted rather than argued with**,
+      `Q555833` is out of the seeds file's `items` and out of the state file's
+      `done` so that a fire with a rule finds it, and its `lanes` entry is left
+      because it is true. Bahrain, Yemen, Syria and Oman are the same row.
+1227. **The index is a function of the commits, so it is built *after* the
+      records are committed and never before.** `tools/lib/history.mjs` reads
+      each record's versions off the commits that touched its file, so an index
+      built on a dirty tree carries history shards a fresh build will not
+      reproduce: this batch built it first, committed records and index in that
+      order, and `validate --index` then found **eleven rule 16 errors, six of
+      them history shards** on a tree that had validated clean minutes before.
+      Rebuilding on top of the records' own commit made the branch head
+      byte-identical to a fresh build. **This is M42b's deviation 1232 met from
+      the other direction** — that fire put both in one commit, this one put
+      the index in the earlier of two — and the rule they share is the one
+      worth writing once: *records, commit, build, commit*. The check is the
+      only thing that catches it, because the validator on the working tree
+      agrees with a stale index until the commit exists.
+1223. **A test that asks whether a label lands *on* a mark is asking about the
+      corpus and not about the drawing.** `tests/graph-halo-browser.test.mjs`
+      → *"a label over a line and a label over a mark ..."* took its mark case
+      from a label box strictly overlapping a `circle.node`. A name is written
+      beside the mark it names with a leader back to it (M77), so a label is
+      only ever over some *other* event's mark, and whether one is depends on
+      how the barycentre pass packed that century. Batch 39's three records
+      took the twentieth century's world view from three such labels to none,
+      with **1.59 px** between the nearest pair — which is not the question
+      going away, it is the halo being the only thing between the letters and
+      the mark. The candidate is now read to the same four pixels the
+      measurement's own clip already reaches, and every assertion under it is
+      unchanged. Zooming in was tried first and is not the answer: at k = 3
+      the picture names five things and at k = 8 two, and the nearest label
+      and mark are 7 px apart. Line 140 of the same file records the same
+      shape of breakage from an earlier M42 batch and the same kind of fix.
+1233. **`slug()` drops a letter that carries its stroke inside the codepoint.**
+      The function normalises NFD and strips combining marks, which folds `ệ`
+      to `e` and `ủ` to `u` — and `Đ` is U+0110, a letter with a stroke and no
+      decomposition at all, so it is not folded to `d` but removed. Batch 43's
+      place for Điện Biên Phủ was therefore written as `ien-bien-phu-city` and
+      corrected by hand to `dien-bien-phu` before anything outside the run
+      referenced it. The fix is a small table of the letters NFD cannot reach
+      (Đ/đ, Ł/ł, Ø/ø, Æ, Þ), applied before the strip; nothing here has needed
+      it until an id came out of Vietnamese.
+1234. **An item listed twice in the seeds file becomes two records, and
+      `idFor` hides it by disambiguating the second.** `Q1922071` was already
+      in `data/imports/wikidata-seeds.json`'s `items`, refused by an earlier
+      fire for want of a lane and sitting in the state file's `done`; batch 43
+      added it a second time rather than checking, cleared the `done` entry the
+      way deviation 1225 did, and the import wrote
+      `india-pakistan-war-of-1971` **and**
+      `india-pakistan-war-of-1971-q1922071` in one run. The second is `idFor`
+      answering a taken id, which is the right behaviour for two different
+      items with one name and the wrong one for the same item twice. The
+      duplicate and the extra entry were removed. **The tool should refuse an
+      item it has already created a record for in the same run**, which is one
+      `Set` in the loop and not a rule anybody has to remember.
+1235. **A record that holds an event without the item is invisible to the
+      inverse `part of` vein.** The vein's "unheld" filter is every record's
+      `wikidata` key, over both branches — deviation 1224's own correction —
+      and `Q626191`, the Indian annexation of Goa, came back unheld although
+      this atlas has carried `goa-annexed-1961` since 2 September: a record
+      written from two books, naming three actors and carrying an edge, and
+      never given an identifier. Batch 43 created `indian-annexation-of-goa`
+      from the item, found the duplicate by reading the corpus for the title,
+      deleted it, and wrote the item on to the record that was already here —
+      by hand, which is the M20 route, because the import can only enrich a
+      record that already carries the item. **The check before an import is
+      the title and not only the key**, and the cheaper standing fix is to
+      keep reconciling: an atlas whose hand-written records all carry their
+      item cannot be told the same event twice.
+1236. **A vein read only at its head is reported as exhausted.** Batch 43
+      measured the inverse `part of` vein at 600 Africa rows that fit their
+      parent's span, and then wrote that "Africa's top rows are refused by
+      rules the run already has" and took the lane that trails second
+      instead. The measurement was right and the conclusion was drawn from
+      the first seven rows of a ranking 600 long: the eighth, `Q114926903`,
+      files with no rule the run lacks, and batch 44 took four such rows out
+      of the same list an hour later. **A lane is exhausted when the rows
+      that file run out, not when the rows above twenty sitelinks do**, and a
+      batch note that names its blockers owes the count of rows below them.
+1237. **`placeRecord()` writes `precision: "point"` whatever the item's class
+      says, and three consecutive batches have corrected it by hand.** A12 (2)
+      states the rule — `city` for a settlement, `region` for anything larger
+      that is not a state, `point` for a battlefield or site, `country` since
+      `M80 done` — and the class table `data/imports/wikidata-seeds.json`
+      already carries the class of every place the import creates. `karameh`
+      in batch 42, `dien-bien-phu` in batch 43 and `incheon` in batch 44 were
+      each written `point` and each edited to `city` afterwards. It is a lookup
+      and a default, and until it is written every place this import creates
+      is drawn at the wrong precision until somebody notices.
+      **Closed.** Batch 46 wrote it — `classify()` returns a precision the way
+      it returns a category, and all forty place classes of the table name one —
+      and batch 47 is the proof: seven new place records, seven correct
+      precisions, no hand-correction. Nine corrections over five batches was
+      the price of not writing it sooner.
+1238. **`claimTimes()` reads a Wikidata time's `time` and ignores its
+      `calendarmodel`, so an item dated Old Style imports days labelled
+      Gregorian.** `Q384091`, the Battle of Mukden, states `P580` 6 February
+      and `P582` 25 February 1905 with `calendarmodel` `Q1985786`, the
+      proleptic Julian calendar — the reckoning the Russian army used — and
+      the article's own first sentence gives the same span as 19 February to
+      10 March. `schema/common/interval.json` defaults a 1905 record to
+      Gregorian, so the two are thirteen days apart and nothing said so.
+      Batch 47 wrote `when.calendar: "julian"` on the record by hand, which is
+      the field the schema already has, and left the item's days untouched.
+      This is deviation 1237's shape exactly: the answer is on the item, the
+      atlas has somewhere to put it, and the alternative is one correction per
+      record for as long as the run touches Russian, Ottoman or Balkan dates
+      before 1918 — which both lanes M42 owns are full of.
+1239. **`claimTimes()` filters a statement on `snaktype` and not on rank, so a
+      `deprecated` value can be read where a `normal` one exists.** `Q384091`
+      carries two `P582`, 25 February at `normal` and 26 February at
+      `deprecated`, and the normal one happened to come first in the document
+      order the API returned. Nothing in the tool says it always will. Rank is
+      the editors' own statement about which value to believe, and an import
+      that reads past it is reading something the item asked it not to.
+1240. **`tests/browser.mjs`'s sixty-second handshake wait is charged to the
+      file's own `--test-timeout`, so the wait that was raised to stop a red
+      check is now what makes the file time out.** The wait was 30 s
+      (deviation 1009), fired on the *first* browser test of a file with
+      `duration_ms 30107`, and was raised to 60 s on 22 September after three
+      more instances in one evening. On 23 September, run 1597 on `m42`, it
+      fired at 60 s on `compose-browser` 1 — Chromium alive, no page listed,
+      `duration_ms 60412` — and then the **file** went `not ok` with
+      `testTimeoutFailure`, `test timed out after 120000ms`, even though every
+      one of its remaining five tests passed. The arithmetic is the whole
+      finding: `validate.yml` runs `--test-timeout=120000`, which bounds the
+      file as well as each test, and the file spent 60,412 ms in the handshake
+      plus 40,933 ms on tests 2 to 6 — 101 s before teardown. At 30 s the same
+      file came in around 71 s; at 60 s one slow handshake tips it past 120.
+      **So the two bounds now fight, and a third raise of the wait makes the
+      timeout more likely rather than less.** The workflow's comment says "the
+      slowest single test takes about 6s, so 120s is not a deadline an honest
+      test comes near", which is true of a test and false of this file. Either
+      the file's budget has to exceed the worst-case handshake plus its own
+      work, or the handshake must not be inside the first test's clock — a
+      browser launched once for the file, or the wait moved to a `before` hook,
+      would cost nothing and end both failures. Raising `--test-timeout` is the
+      owner's, because that step's comment says turning a hang into a red check
+      rather than a green one is theirs to overrule; the shape of the fix is
+      not. Measured, not assumed: the same six tests run green locally three
+      times in a row in 5.8, 6.0 and 6.2 seconds, so the file's own work is
+      seconds and the sixty is all handshake.
+1401. **A11(a)'s "shorter than two sentences" is a bar on the summary, and the
+      23 September fire read it as a bar on the lead.** That fire left nine
+      records opening on `Wikidata item Q…` because their article's lead is a
+      single sentence. But the quotation is written *in front of* the import's
+      placeholder, which stays behind it, so a one-sentence lead still leaves a
+      summary of four sentences — and the difference is whether the record
+      opens on an account of itself or on a boilerplate line about an item.
+      Eight of the nine were written this fire on that reading: the bar for the
+      **lead** is one complete sentence, the bar for the **summary** is
+      A11(a)'s two. The ninth, `argentine-surrender-in-the-falklands-war`, is
+      the same shape at revision 1290880119.
+1402. **A9's place chain can put an event on the other side of the world, and
+      the only thing that catches it is the record's own lane.** `Q68750`, the
+      Mexican War of Independence, gives `P17` = `Q80702`, the **Spanish
+      Empire**, whose `P625` is 40.42N 3.68W — Madrid. A9 as A12 (2) corrects it
+      says to take the first item on the chain that carries a coordinate, and
+      that item does; taking it would have drawn a Mexican war in Spain and
+      called it a reading of the source. The pass now refuses a link whose
+      point falls in a different lane from the record's own, which is the
+      mechanical half of the rule the 23 September fire wrote by hand (*"where
+      an item names several locations the pass takes the one the record's own
+      title names"*). It cost one row of sixteen and caught exactly one error.
+      The same shape is why a war's own `P625` is not a place: a ten-year war's
+      centroid is a claim nobody made, so step one is taken only where the
+      record's span is one engagement's.
+1403. **`operation-sutton` cannot be corrected under A7, because its own cited
+      article carries no date at all.** The stand after the 23 September fire
+      named the pair `operation-sutton --caused--> battle-of-san-carlos` as
+      *"the first thing an A7 pass over these two should look at"* — the
+      operation dated 1982-05-23 against a battle dated 1982-05-21. The article
+      was read whole this fire: 2,580 characters, revision 1374609063, and
+      **not one date in it**, in the lead, in § Landings or anywhere the
+      plain-text endpoint reaches; the 21 May is in the infobox and on the
+      *other* record's article. A7 says an interval the cited article does not
+      state stays as it is, so it does, and the edge stays refused. What
+      unblocks it is a person, or a licence to read a second article the record
+      does not yet cite — which is wider than A7 grants.
+1404. **A partial list of belligerents or signatories is a different claim from
+      the list, and a two-party floor does not catch it.** The 23 September
+      fire's check was the parent's actors: where the half the atlas cannot
+      write carries an existing filing, withhold. This fire found the case that
+      check does not see. `Q1123201`, the Spanish American wars of independence,
+      names seven participants and the atlas holds three — Chile, Peru and
+      Bolivia — **all three on the independence side**, the Spanish Empire
+      being `Q80702`, which the atlas does not hold as an actor. Three
+      belligerents that are whole on one side read as the war's parties and
+      name one party, and no count-based floor tells that from a genuine
+      three-way war. So a `belligerent` or `signatory` list is written only
+      where the atlas holds **every** participant the item names. Of 194
+      eligible events this fire, that left nothing written: 118 name no
+      participant, 68 name participants the atlas holds none of, and 8 are
+      partial. `foldName()` over every name of every active actor produced
+      **zero** further candidates, so what would move this vein is actors and
+      not another pass.
+1405. **A6's span-and-lane subject test cannot work in the Asia lane, because
+      the Asia lane is one lane for a continent.** Filtering the 243 main
+      events by span and lane against the 18 umbrellas returns 119 candidates
+      and almost all are nonsense — `1948-czechoslovak-coup-d-etat` under the
+      Estado Novo, `covid-19-pandemic` under the Afghan conflict — because for
+      a *polity* umbrella the subject is the polity and the lane says only which
+      continent, which the second-parents pass already corrected (*"the subject
+      test now is the lane **or** an actor the umbrella itself names"*). What
+      this fire adds is that the lane fails for a **regional** umbrella too
+      wherever the lane is a continent: `indochina-wars` drew eighteen
+      candidates inside its span and its lane and **not one of them is in
+      Indochina** — the Korean War, the partition of India, the Cultural
+      Revolution, two influenza pandemics. Europe and the Americas do not show
+      this because their lanes are closer to the size of the periods historians
+      name there. It is why A6 has filed nothing in Asia in three fires, and
+      the fix is a subject a record carries, not a tighter span.
+1406. **"156 events with no edge" was never 156 events nobody can reach.** Of
+      the 152 active events with no edge after this fire, **142 are filed under
+      a parent**: they are in the resting picture through the umbrella a reader
+      opens, and missing only from the causal graph, which is what the
+      component count measures. Ten of the remaining eleven are umbrellas
+      themselves, which batch 31a's rule forbids an edge on at either end.
+      **Exactly one active event has neither an edge nor a parent**,
+      `rhodesian-bush-war`, and neither is available from its own article: its
+      `P361` names `decolonisation-of-africa`, whose span ends 1976 against a
+      war running to 1979, and its best causal sentence — the Carnation
+      Revolution *"heralding the coming end of colonial rule in Mozambique"*,
+      *"beneficial to ZANLA and disastrous for the Rhodesians"* — describes an
+      escalation inside a war that began ten years earlier, which rule 4
+      refuses and rightly. A fire chasing the isolate count is chasing 142
+      records that are already in the picture; the number worth moving is the
+      one above.
+1407. **`m42` and `m42b` have been writing the same deviation numbers since
+      A11(b) split lane B in two, and this fire collided head-on.** The
+      protocol's amendment of 21 September gives *lane B* a block from 950
+      upward and says numbers cannot collide across lanes; A11(b), on 22
+      September, made lane B **two** branches under one brief and did not split
+      that block. Both branches' standing instruction is the same sentence —
+      *"numbered from 950 upward, continuing from the last in the branch's
+      `STATUS.md`"* — and on 24 September the last in both was 1240. So this
+      fire wrote 1241 to 1246 and `origin/m42b` had already written **1241 to
+      1251** for entirely different findings. Two runs an hour on two branches
+      means it recurs every day until the block is split, and it lands on the
+      assistant at merge as deviation 461's renumbering, which is work nobody
+      needs to do twice a week. **This fire moved its six to 1401–1406 and
+      proposes the rule: `m42` numbers from 1400 upward and `m42b` continues
+      the shared sequence it is already in.** That is a proposal and not a
+      decision — the landing routine or the assistant may renumber either side
+      — but a fire on `m42` that reads this should take the next free number
+      **above 1400** rather than the next after `STATUS.md`'s last, and say so.
 
 ## M84 — the owner's feedback document
 
@@ -20951,3 +21247,13 @@ M42b started 2026-09-23T01:12:42Z by scheduled
 M85 started 2026-09-22T21:28:16Z by scheduled (branch m85)
 M85 done
 M42 started 2026-09-23T02:06:09Z by scheduled
+M42 started 2026-09-23T04:11:26Z by scheduled
+M42 started 2026-09-23T06:41:50Z by scheduled
+M42 started 2026-09-23T08:38:24Z by scheduled
+M42 started 2026-09-23T10:40:12Z by scheduled
+M42 started 2026-09-23T12:52:31Z by scheduled
+M42 started 2026-09-23T15:18:10Z by scheduled
+M42 started 2026-09-23T17:51:33Z by scheduled
+M42 started 2026-09-23T20:07:29Z by scheduled
+M42 started 2026-09-23T22:33:06Z by scheduled
+M42 started 2026-09-24T02:06:57Z by scheduled

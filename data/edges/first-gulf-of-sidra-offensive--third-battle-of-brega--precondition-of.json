@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "first-gulf-of-sidra-offensive--third-battle-of-brega--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Brega\", revision 1370750314, § Background"
+    }
+  ],
+  "from": "first-gulf-of-sidra-offensive",
+  "to": "third-battle-of-brega",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The third battle's § Background is an account of the offensive collapsing back onto Brega: \"After advancing rapidly along the coast of the Gulf of Sidra in a previous offensive, the rebels were quickly pushed back. They had initially advanced 300 kilometres (190 miles) from Ajdabiya to just 120 kilometres (75 miles) from Gaddafi's hometown of Sirte. However, they were forced to retreat in a government counter-offensive and by 30 March, were back to their starting positions at Ajdabiya, with Brega being retaken by the loyalists that night.\" The battle this atlas dates from 31 March is the counter-attack on the town retaken that night. `precondition-of`: the offensive's failure is what put Brega back in loyalist hands to be fought over. Probable: Wikipedia alone.",
+  "dispute": null
+}

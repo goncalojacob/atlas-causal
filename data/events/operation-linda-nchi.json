@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "operation-linda-nchi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `somali-civil-war-2009-present` from `P361`: the invasion opens on 2011-10-16, inside the phase the war record opens at 2009-01-31. The item states no `P582`, so A12 (3) writes `end: null` with `end-unstated`; the parent's end is null too, so the child is inside it at both ends rather than outside it as `Q152060` is against a war that closes. The place is `somalia-q1045`, the item's own `P276`."
+  },
+  "wikidata": "Q923340",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Operation Linda Nchi",
+    "pt": "Operação Linda Nchi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q923340"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Linda Nchi\", revision 1375942642"
+    }
+  ],
+  "title": "Operation Linda Nchi",
+  "summary": "The English Wikipedia article \"Operation Linda Nchi\", at revision 1375942642, opens: \"Operation Linda Nchi was the Kenya Defence Forces' invasion of southern Somalia beginning in 2011. The Kenyan government declared the operation completed in March 2012, but its forces then joined AMISOM in Somalia.\" Wikidata item Q923340, whose own description reads \"2011 military operation\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": null,
+    "date": "2011-10-16"
+  },
+  "place": "somalia-q1045",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "somali-civil-war-2009-present"
+}

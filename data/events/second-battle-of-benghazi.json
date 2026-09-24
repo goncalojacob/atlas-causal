@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-benghazi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q942901",
+  "wikipedia": {
+    "en": "Second Battle of Benghazi",
+    "pt": "Segunda Batalha de Bengasi"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q942901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Benghazi\", revision 1370735938"
+    }
+  ],
+  "title": "Second Battle of Benghazi",
+  "summary": "The English Wikipedia article \"Second Battle of Benghazi\", at revision 1370735938, opens: \"The Second Battle of Benghazi was fought between army units and militiamen loyal to Libyan leader Muammar Gaddafi, and anti-Gaddafi forces in Benghazi on 19-20 March 2011 during the Libyan Civil War. The battle marked the start of a United Nations-mandated military intervention in the conflict, with fighter jets from the French Air Force attacking and destroying several pro-Gaddafi units, forcing them to retreat.\" Wikidata item Q942901, whose own description reads \"2011 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-19",
+    "endDate": "2011-03-20"
+  },
+  "place": "benghazi",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nanshan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2409298",
+  "wikipedia": {
+    "en": "Battle of Nanshan"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2409298"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nanshan\", revision 1370451314"
+    }
+  ],
+  "title": "Battle of Nanshan",
+  "summary": "The English Wikipedia article \"Battle of Nanshan\", at revision 1370451314, opens: \"The Battle of Nanshan , also known as the battle of Jinzhou or Chinchou, was one of many vicious land battles of the Russo-Japanese War. It took place on 24–26 May 1904 across a two-mile-wide defense line across the narrowest part of the Liáodōng Peninsula, covering the approaches to Port Arthur and on the 116-meter high Nanshan Hill, the present-day Jinzhou District, north of the city center of Dalian, Liaoning, China.\" Wikidata item Q2409298, whose own description reads \"1904 battle of the Russo-Japanese war\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-05-24",
+    "endDate": "1904-05-26"
+  },
+  "place": "kwantung-peninsula",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

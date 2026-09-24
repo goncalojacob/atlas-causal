@@ -4784,3 +4784,34 @@ eight are the plainest links the corpus has:
 
 Each is refused because one end carries an umbrella flag. The arguments are
 kept here because the records, not the edges, are what would have to change.
+
+## Batch 42 — three edges, and the two the articles would not argue for
+
+*23 September, the Africa batch of the inverse `part of` vein, run with the
+filter over every record and not the active ones. Five imports, three edges,
+and the largest connected component 539 → 542. Full account in
+`docs/m42-pool.md` under "Batch 42".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `italo-turkish-war` → `first-balkan-war` | `enabled` | *"Members of the Balkan League, seeing how easily Italy defeated the Ottomans and motivated by incipient Balkan nationalism, attacked the Ottoman Empire in October 1912, starting the First Balkan War a few days before the end of the Italo-Turkish War."* — "Italo-Turkish War", revision 1370624672 |
+| `libyan-civil-war` → `2011-military-intervention-in-libya` | `reacted-to` | *"On 19 March 2011, a NATO-led coalition began a military intervention into the ongoing Libyan Civil War to implement United Nations Security Council Resolution 1973"*, passed with the intent of *"an immediate ceasefire in Libya, including an end to the current attacks against civilians"* — "2011 military intervention in Libya", revision 1370780938 |
+| `battle-of-karameh` → `black-september` | `caused` | *"The battle of Karameh and the subsequent increase in the PLO's strength are considered to have been important catalysts for the 1970 events of the civil war known as Black September"*, after *"more than 5000 individuals applied to join Fatah within the next 48 hours"* — "Battle of Karameh", revision 1374545421 |
+
+All three are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus.
+
+**Two refusals, and one of them is the third of its kind in three batches.**
+`14-october-2017-mogadishu-bombings` names one other event in its whole article
+— the 2011 Mogadishu bombing it is measured against — and this atlas does not
+hold it. `operation-green-sea` has a Consequences section naming the purges
+inside Guinea, UN Security Council Resolution 290, the OAU resolution and the
+Soviet naval patrol, none of them here; it does **not** join the raid to
+`cabral-assassinated-1973`, although capturing Cabral was the raid's stated
+goal and the atlas holds his assassination. The edge the corpus wants is not
+the edge the source argues, and the source is what is being quoted.
+
+**One edge of the lead was refused on type rather than on evidence.** The
+Italo-Turkish War's lead also calls the war *"a precursor of World War I"*.
+A precursor is a periodisation and not a mechanism, and all five of this
+atlas's edge types assert a mechanism — batch 41's rule, applied again.

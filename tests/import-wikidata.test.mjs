@@ -25,6 +25,7 @@ import {
 } from '../tools/import/wikidata.mjs';
 import { schemas, ROOT } from './helpers.mjs';
 import { isDraft } from '../src/origin.js';
+import { PRECISIONS } from '../src/vocab.js';
 
 const FIXTURES = path.join(ROOT, 'tests', 'fixtures', 'wikidata');
 const load = async (name) => JSON.parse(await readFile(path.join(FIXTURES, name), 'utf8'));
@@ -472,6 +473,59 @@ test('a lane comes from the point, then from the country, then not at all', asyn
   assert.match(laneNote(viaCountry), /reaches no lane polygon/);
   assert.match(laneNote(viaCountry, { placeless: true }), /points at no place record/);
   assert.match(viaCountry.how, /Q9000006/);
+});
+
+// A12 (2): "placeRecord() writes `precision` from the item's class (`city` for
+// a settlement, `region` for anything larger that is not a state, `point` for a
+// battlefield or site ...), never a hard-coded `point`." Nine place records
+// over five batches of M42 had that hard-coded `point` corrected to `city` by
+// hand — karameh, dien-bien-phu, incheon, benghazi, ras-lanuf, zawiya-libya,
+// bin-jawad, ajdabiya, bani-walid — which is the same edit nine times and the
+// sign that the table, not the person, should be saying it.
+//
+// Which precision a class means is decided the way the kind and the category
+// already are: in `data/imports/wikidata-seeds.json`, a file somebody can argue
+// with, and never in code. Classes that disagree say nothing rather than
+// tossing a coin, exactly as `category` does, and a class the table gives no
+// precision leaves the record at `point` — which is what every place already on
+// disk was written with, so nothing already imported changes meaning.
+test('a place takes its precision from its class, and disagreement takes none', async () => {
+  const withPrecision = {
+    Q9100003: { kind: 'place', precision: 'city' },
+    Q9100010: { kind: 'place', precision: 'region' },
+  };
+  assert.equal(classify(await read('Q9000003'), withPrecision).precision, 'city');
+  // Two place classes naming two precisions: still a place, and a person says
+  // which kind of one.
+  assert.equal(classify({ classes: ['Q9100003', 'Q9100010'] }, withPrecision).precision, null);
+  // A table that says nothing about precision is the table as it shipped.
+  assert.equal(classify(await read('Q9000003'), CLASSES).precision, null);
+
+  const read3 = await read('Q9000003');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: 'city' }).where.precision, 'city');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: 'region' }).where.precision, 'region');
+  // No precision given is the behaviour every place on disk was written with.
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04' }).where.precision, 'point');
+  assert.equal(placeRecord(read3, { id: 'northfield', created: '2026-09-04', precision: null }).where.precision, 'point');
+});
+
+// Every place class of the shipped table says which precision it means, and
+// says one of the four `src/vocab.js` has. A class added without one would
+// quietly write `point` onto a country.
+test('every place class of the seeds table names a precision the vocabulary has', async () => {
+  const seeds = JSON.parse(await readFile(path.join(ROOT, 'data', 'imports', 'wikidata-seeds.json'), 'utf8'));
+  const ids = new Set(PRECISIONS.map((p) => p.id));
+  const places = Object.entries(seeds.classes).filter(([, entry]) => entry.kind === 'place');
+  assert.ok(places.length > 0, 'the table has place classes');
+  for (const [qid, entry] of places) {
+    assert.ok(ids.has(entry.precision), `${qid} (${entry.label}) names precision ${JSON.stringify(entry.precision)}`);
+  }
+  // And nothing that is not a place carries one: a precision on an event class
+  // would be read by nothing.
+  for (const [qid, entry] of Object.entries(seeds.classes)) {
+    if (entry.kind === 'place') continue;
+    assert.equal(entry.precision, undefined, `${qid} is a ${entry.kind} and carries a precision`);
+  }
 });
 
 // --- the records ------------------------------------------------------------

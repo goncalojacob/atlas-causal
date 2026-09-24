@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yalu-river-1904--battle-of-liaoyang--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766, § Significance"
+    }
+  ],
+  "from": "battle-of-the-yalu-river-1904",
+  "to": "battle-of-liaoyang",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Yalu article makes the claim itself, and names Liaoyang: \"The Battle of the Yalu River was the first major land campaign of the Russo-Japanese War. With nothing preventing the Japanese from entering the poorly defended expanses of Manchuria, Kuroki and other generals involved in the campaign were ordered to launch a large offensive with a goal of crushing the massing Russian reinforcements at Liaoyang.\" `enabled` and not `precondition-of`: the article says the victory removed what stood in the way and that the order followed it, which is more than a sequence and less than a cause. Probable: Wikipedia alone.",
+  "dispute": null
+}

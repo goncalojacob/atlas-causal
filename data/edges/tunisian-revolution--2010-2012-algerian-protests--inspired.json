@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "tunisian-revolution--2010-2012-algerian-protests--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2010–2012 Algerian protests\", revision 1373580732, lead and \"Self-immolations (starting 12 January)\""
+    }
+  ],
+  "from": "tunisian-revolution",
+  "to": "2010-2012-algerian-protests",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The article's lead says the protests \"were inspired by similar protests across the Middle East and North Africa\", and the body names which: \"as the widely reported protests sparked off by Mohamed Bouazizi's self-immolation in Tunisia began to have a clear impact on the Tunisian government, a wave of self-immolations swept Algeria\", and at the February march \"some demonstrators waved the Tunisian flag, alluding to the protests which had brought down Ben Ali\". Agence France-Presse is quoted linking the January protests to Tunisia in the same way. An example followed is inspired and not caused, which is the same reading batch 26 gave Bahrain. Probable, for the reason every edge drawn from this source is.",
+  "dispute": null
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "italo-turkish-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "lane-from-seeds",
+      "filed-from-p361"
+    ],
+    "note": "A9 reaches no point: no `P625`, and its `P276` is Q1529261, the Tripolitania vilayet, which carries none either; no `P131` and no `P17`. So it is placeless and the lane is named for the item in the seeds file — africa, the theatre the article's first sentence gives, from Tripoli to Fezzan. The Aegean half is in no lane: a war on two seas has no one point and no place record is better than a wrong one. Filed under `scramble-for-africa` from `P361`."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q203824",
+  "wikipedia": {
+    "en": "Italo-Turkish War",
+    "pt": "Guerra Ítalo-Turca"
+  },
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-23"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q203824"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italo-Turkish War\", revision 1370624672"
+    }
+  ],
+  "title": "Italo-Turkish War",
+  "summary": "The English Wikipedia article \"Italo-Turkish War\", at revision 1370624672, opens: \"The Italo-Turkish War (Turkish: Trablusgarp Savaşı, \"Tripolitanian War\", Italian: Guerra di Libia, \"War of Libya\"), also known as the Turco-Italian War, was fought between the Kingdom of Italy and the Ottoman Empire from 29 September 1911 to 18 October 1912. As a result of this conflict, Italy captured coastal areas of the Ottoman Tripolitania Vilayet, of which the main sub-provinces were Fezzan, Cyrenaica, and Tripoli itself.\" Wikidata item Q203824, whose own description reads \"1911–12 war between the Ottoman Empire and the Kingdom of Italy\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1911,
+    "end": 1912,
+    "date": "1911-09-29",
+    "endDate": "1912-10-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "scramble-for-africa",
+  "category": "war",
+  "actors": []
+}

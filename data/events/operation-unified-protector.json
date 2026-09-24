@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "operation-unified-protector",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `2011-military-intervention-in-libya` from `P361`: 23 March to 31 October 2011 is inside the intervention's own span, and it is the NATO half of it. The place is `libya-q1016`: the item names two `P276`, Libya and the Mediterranean Sea, and only the first is a place this atlas holds — and Libya is also its single `P17`. No `P710`, so no actor line."
+  },
+  "wikidata": "Q3269455",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Operation Unified Protector"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3269455"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Unified Protector\", revision 1370700566"
+    }
+  ],
+  "title": "Operation Unified Protector",
+  "summary": "The English Wikipedia article \"Operation Unified Protector\", at revision 1370700566, opens: \"Operation Unified Protector was a NATO operation in 2011 enforcing United Nations Security Council resolutions 1970 and 1973 concerning the Libyan Civil War and adopted on 26 February and 17 March 2011, respectively. These resolutions imposed sanctions on key members of the Gaddafi government and authorized NATO to implement an arms embargo, a no-fly zone and to use all means necessary, short of foreign occupation, to protect Libyan civilians and civilian populated areas.\" Wikidata item Q3269455, whose own description reads \"NATO operation during the 2011 military intervention in Libya\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-03-23",
+    "endDate": "2011-10-31"
+  },
+  "place": "libya-q1016",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "2011-military-intervention-in-libya"
+}

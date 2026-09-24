@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "rhodesia-q217169",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q217169",
+  "wikipedia": {
+    "en": "Rhodesia"
+  },
+  "sources": [],
+  "names": [
+    "Rhodesia",
+    "Republic of Rhodesia"
+  ],
+  "where": {
+    "lon": 28.583333333333332,
+    "lat": -20.5,
+    "precision": "country",
+    "label": "Rhodesia"
+  },
+  "region": null,
+  "summary": null
+}

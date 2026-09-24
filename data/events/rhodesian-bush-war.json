@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rhodesian-bush-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2444955",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Rhodesian Bush War",
+    "pt": "Guerra Civil da Rodésia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2444955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rhodesian Bush War\", revision 1373754851"
+    }
+  ],
+  "title": "Rhodesian Bush War",
+  "summary": "The English Wikipedia article \"Rhodesian Bush War\", at revision 1373754851, opens: \"The Rhodesian Bush War, also known as the Rhodesian Civil War, the Second Chimurenga or the Zimbabwe War of Independence, was a civil conflict from July 1964 to December 1979 in the unrecognised state of Rhodesia.\" Wikidata item Q2444955, whose own description reads \"civil conflict in Southern Africa from 1964 to 1979\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1964,
+    "end": 1979,
+    "date": "1964-07-04",
+    "endDate": "1979-12-12"
+  },
+  "place": "rhodesia-q217169",
+  "region": null,
+  "category": "war",
+  "actors": [
+    {
+      "actor": "south-africa",
+      "role": "supporter",
+      "note": "A participant (P710) on Q2444955. The article: Rhodesia \"had the private support of neighbouring South Africa\", whose air force flew with the 1978 raids."
+    },
+    {
+      "actor": "frelimo",
+      "role": "supporter",
+      "note": "A participant (P710) on Q2444955. The article: ZANLA \"had strong links with Mozambique's independence movement, FRELIMO\", and operated from FRELIMO-held ground."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siege-of-jadotville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "The first of the Congo Crisis's parts this atlas holds; the crisis had no children at all before this batch. No edge: the article's only sentence joining it to anything here is \"a major battle during the Congo Crisis\", which is what `parent` already says, and the one other held record it names, `algerian-war`, it names only as where the mercenaries facing the relief column had served."
+  },
+  "wikidata": "Q2404547",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "Siege of Jadotville",
+    "pt": "Cerco de Jadotville"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2404547"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jadotville\", revision 1370742055"
+    }
+  ],
+  "title": "Siege of Jadotville",
+  "summary": "The English Wikipedia article \"Siege of Jadotville\", at revision 1370742055, opens: \"The Siege of Jadotville was a major battle during the Congo Crisis, that began on 13 September 1961 and lasted for five days. A small contingent of the Irish Army's 35th Battalion serving under the United Nations Operation in the Congo (ONUC), designated 'A' Company, was besieged at the UN base near the mining town of Jadotville (modern-day Likasi) by Katangese forces loyal to the secessionist State of Katanga.\" Wikidata item Q2404547, whose own description reads \"1961 Irish UN troops defend against attack by Belgian and Kanganese soldiers\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-09-13",
+    "endDate": "1961-09-17",
+    "calendar": "gregorian"
+  },
+  "place": "jadotville-q18780",
+  "region": null,
+  "category": "war",
+  "actors": [],
+  "parent": "congo-crisis"
+}

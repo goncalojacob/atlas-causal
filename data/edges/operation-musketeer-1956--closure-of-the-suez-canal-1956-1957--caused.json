@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-musketeer-1956--closure-of-the-suez-canal-1956-1957--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
+    }
+  ],
+  "from": "operation-musketeer-1956",
+  "to": "closure-of-the-suez-canal-1956-1957",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article, twice: \"Although landing forces quickly established control over major canal facilities, the Egyptians were able to sink obstacles in the canal, rendering it unusable\"; and, of the withdrawal, \"Nasser nevertheless ensured the Canal could not be used by sinking or otherwise disabling 49 ships in the channel.\" The atlas already carries `suez-crisis --caused--> closure-of-the-suez-canal-1956-1957`; this is the same direction and the same type at the grain of the operation the crisis was fought as, and the article names the closure in its own See also. Probable: Wikipedia alone.",
+  "dispute": null
+}

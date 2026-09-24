@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "2022-somali-ministry-of-education-bombings",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ],
+    "note": "Filed under `somali-civil-war-2009-present` from `P361`: 29 October 2022 is inside the phase the war record opens at 2009-01-31 and leaves open. The place is `mogadishu`, the item's own `P276`, whose point its own `P625` gives to within five kilometres. No `P710`, so no actor line. No edge: the article relates the bombings to the 2017 ones only as \"the deadliest attack in Somalia since\" them, and the offensive it says they answered is no record here."
+  },
+  "wikidata": "Q114926903",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-23"
+  },
+  "wikipedia": {
+    "en": "2022 Somali Ministry of Education bombings",
+    "pt": "Atentado terrorista em Mogadíscio de outubro de 2022"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q114926903"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2022 Somali Ministry of Education bombings\", revision 1365703414"
+    }
+  ],
+  "title": "2022 Somali Ministry of Education bombings",
+  "summary": "The English Wikipedia article \"2022 Somali Ministry of Education bombings\", at revision 1365703414, opens: \"On 29 October 2022, 121 people were killed and over 300 were injured by a double car bombing in Somalia's capital, Mogadishu. President Hassan Sheikh Mohamud accused Sunni jihadist group al-Shabaab of carrying out the attacks, which they admitted.\" Wikidata item Q114926903, whose own description reads \"double car bombing attack in Somalia\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2022,
+    "end": 2022,
+    "date": "2022-10-29"
+  },
+  "place": "mogadishu",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "somali-civil-war-2009-present"
+}

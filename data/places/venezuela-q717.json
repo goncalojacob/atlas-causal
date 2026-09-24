@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "venezuela-q717",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q717, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q717",
+  "sitelinks": {
+    "count": 275,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Venezuela",
+    "pt": "Venezuela"
+  },
+  "sources": [],
+  "names": [
+    "Venezuela"
+  ],
+  "where": {
+    "lon": -67,
+    "lat": 8,
+    "precision": "country",
+    "label": "Venezuela"
+  },
+  "region": null,
+  "summary": null
+}

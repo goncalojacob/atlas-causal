@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
@@ -21,8 +21,10 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Place from A9's first step as A12 (2) corrects it: Q675999's own P625, written as \"the-downs\" at `point` precision."
   },
   "wikidata": "Q675999",
   "sitelinks": {
@@ -50,9 +52,9 @@
     "end": 1639,
     "date": "1639-10-21"
   },
-  "place": null,
-  "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "the-downs",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "thirty-years-war"

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-karameh--black-september--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-23",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
+    }
+  ],
+  "from": "battle-of-karameh",
+  "to": "black-september",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article says it outright: \"The battle of Karameh and the subsequent increase in the PLO's strength are considered to have been important catalysts for the 1970 events of the civil war known as Black September, in which the kingdom managed to expel the Palestinian groups to Lebanon after they had started to gain control over Jordan.\" It supplies the chain as well as the verdict — after the battle \"more than 5000 individuals applied to join Fatah within the next 48 hours\", and \"as the PLO's strength began to grow in the aftermath, the fedayeen began to speak openly of overthrowing the Hashemite monarchy, and the ensuing tensions with the Jordanian authorities eventually precipitated in their expulsion to Lebanon in 1971\". \"Important catalysts\" and \"precipitated\" are causal words and the recruitment is the mechanism between them, so `caused` and not `enabled`. Probable: Wikipedia alone.",
+  "dispute": null
+}

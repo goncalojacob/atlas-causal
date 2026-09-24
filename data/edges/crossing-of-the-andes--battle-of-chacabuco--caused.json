@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "crossing-of-the-andes--battle-of-chacabuco--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crossing of the Andes\", revision 1374600996, § Conclusion"
+    }
+  ],
+  "from": "crossing-of-the-andes",
+  "to": "battle-of-chacabuco",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article's § Conclusion says it in four words — \"This led to the Battle of Chacabuco.\" — of the army's arrival on the Chilean side. The crossing is what put San Martín's army where Chacabuco was fought twelve days later, which is what the article means and what the type says. Writing it needed the record's interval widened first, from the same article at the same revision (A7): it was dated 1817-02-13 alone, which is after the battle.",
+  "dispute": null
+}
