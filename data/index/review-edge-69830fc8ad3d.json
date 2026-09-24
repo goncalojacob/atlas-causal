@@ -5111,35 +5111,6 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-23",
-      "from": "boxer-rebellion",
-      "id": "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "soviet-japanese-border-conflicts",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
       "created": "2026-09-05",
       "from": "boxer-rebellion",
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
@@ -8747,35 +8718,6 @@
       ],
       "created": "2026-09-23",
       "from": "february-revolution",
-      "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "execution-of-the-romanov-family",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "february-revolution",
       "id": "february-revolution--finnish-civil-war--precondition-of",
       "kind": "edge",
       "origin": {
@@ -8869,11 +8811,13 @@
       "review": {
         "flags": [
           "edge-drafted",
-          "a13-relations-pass"
+          "a13-relations-pass",
+          "a14-label-corrected"
         ],
+        "note": "A14(4): the explanation said the sentence was the civil war’s own lead; the locator says, correctly, the February Revolution’s. The edge and its quote are right and unchanged — only the article the explanation names is.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "to": "russian-civil-war",
       "type": "caused"
@@ -9443,35 +9387,6 @@
       "revised": null,
       "status": "active",
       "to": "russo-japanese-war",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "first-sino-japanese-war",
-      "id": "first-sino-japanese-war--soviet-japanese-border-conflicts--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "soviet-japanese-border-conflicts",
       "type": "precondition-of"
     },
     {
@@ -10381,7 +10296,7 @@
       ],
       "created": "2026-09-23",
       "from": "great-depression",
-      "id": "great-depression--siamese-revolution-of-1932--caused",
+      "id": "great-depression--siamese-revolution-of-1932--precondition-of",
       "kind": "edge",
       "origin": {
         "tool": "assistant"
@@ -10393,10 +10308,10 @@
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-24",
       "status": "active",
       "to": "siamese-revolution-of-1932",
-      "type": "caused"
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -16920,35 +16835,6 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-23",
-      "from": "second-italo-ethiopian-war",
-      "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "ogaden-war",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
       "created": "2026-09-05",
       "from": "second-sino-japanese-war",
       "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
@@ -17537,9 +17423,9 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-23",
+      "created": "2026-09-24",
       "from": "six-day-war",
-      "id": "six-day-war--bangladesh-liberation-war--inspired",
+      "id": "six-day-war--india-pakistan-war-of-1971--inspired",
       "kind": "edge",
       "origin": {
         "tool": "assistant"
@@ -17547,43 +17433,15 @@
       "review": {
         "flags": [
           "edge-drafted",
-          "a13-relations-pass"
+          "a13-relations-pass",
+          "a14-endpoint-corrected"
         ],
         "status": "draft"
       },
       "revised": null,
       "status": "active",
-      "to": "bangladesh-liberation-war",
+      "to": "india-pakistan-war-of-1971",
       "type": "inspired"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "six-day-war",
-      "id": "six-day-war--gaza-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "gaza-war",
-      "type": "precondition-of"
     },
     {
       "authors": [
@@ -17611,35 +17469,6 @@
       "revised": null,
       "status": "active",
       "to": "war-of-attrition",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "six-day-war",
-      "id": "six-day-war--yom-kippur-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "yom-kippur-war",
       "type": "precondition-of"
     },
     {
@@ -22619,35 +22448,6 @@
       ],
       "created": "2026-09-23",
       "from": "world-war-i",
-      "id": "world-war-i--second-sino-japanese-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "second-sino-japanese-war",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "world-war-i",
       "id": "world-war-i--treaty-of-lausanne--precondition-of",
       "kind": "edge",
       "origin": {
@@ -23514,64 +23314,6 @@
       "status": "active",
       "to": "xinhai-revolution",
       "type": "caused"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "xinhai-revolution",
-      "id": "xinhai-revolution--chinese-civil-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "chinese-civil-war",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-23",
-      "from": "xinhai-revolution",
-      "id": "xinhai-revolution--sino-indian-war--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "sino-indian-war",
-      "type": "precondition-of"
     },
     {
       "authors": [

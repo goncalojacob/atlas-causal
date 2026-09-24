@@ -2624,6 +2624,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2667,6 +2675,13 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "explanation",
+            "review"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2966,12 +2981,20 @@
         }
       ]
     },
-    "great-depression--siamese-revolution-of-1932--caused": {
+    "great-depression--siamese-revolution-of-1932--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "aliases",
+            "id",
+            "type"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4803,6 +4826,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4976,6 +5007,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4985,6 +5024,23 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "six-day-war--india-pakistan-war-of-1971--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5003,6 +5059,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6009,6 +6073,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6312,6 +6384,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6321,6 +6401,14 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status"
+          ],
+          "on": "2026-09-24"
         }
       ]
     },

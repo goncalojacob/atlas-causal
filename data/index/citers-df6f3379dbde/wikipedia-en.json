@@ -2156,12 +2156,6 @@
     },
     {
       "dissent": false,
-      "id": "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of",
-      "kind": "edge",
-      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
-    },
-    {
-      "dissent": false,
       "id": "boxer-rebellion--xinhai-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"1911 Revolution\", revision 1373070054"
@@ -2822,12 +2816,6 @@
     },
     {
       "dissent": false,
-      "id": "february-revolution--execution-of-the-romanov-family--precondition-of",
-      "kind": "edge",
-      "locator": "\"Murder of the Romanov family\", revision 1374973698, lead"
-    },
-    {
-      "dissent": false,
       "id": "february-revolution--finnish-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Finnish Civil War\", revision 1375858302, § Build-up"
@@ -3017,12 +3005,6 @@
       "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
-    },
-    {
-      "dissent": false,
-      "id": "first-sino-japanese-war--soviet-japanese-border-conflicts--precondition-of",
-      "kind": "edge",
-      "locator": "\"Soviet–Japanese border conflicts\", revision 1375520653, § Prelude from 1904 to 1932"
     },
     {
       "dissent": false,
@@ -3248,7 +3230,7 @@
     },
     {
       "dissent": false,
-      "id": "great-depression--siamese-revolution-of-1932--caused",
+      "id": "great-depression--siamese-revolution-of-1932--precondition-of",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1374942454, § Thailand"
     },
@@ -4760,12 +4742,6 @@
     },
     {
       "dissent": false,
-      "id": "second-italo-ethiopian-war--ogaden-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Ogaden War\", revision 1373903527, § Second Italo-Ethiopian War and World War II"
-    },
-    {
-      "dissent": false,
       "id": "second-sino-japanese-war--chinese-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Chinese Civil War\", revision 1372330605"
@@ -4934,27 +4910,15 @@
     },
     {
       "dissent": false,
-      "id": "six-day-war--bangladesh-liberation-war--inspired",
+      "id": "six-day-war--india-pakistan-war-of-1971--inspired",
       "kind": "edge",
       "locator": "\"Bangladesh Liberation War\", revision 1375044402, § Indian involvement"
-    },
-    {
-      "dissent": false,
-      "id": "six-day-war--gaza-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Gaza war\", revision 1376206831, § Background"
     },
     {
       "dissent": false,
       "id": "six-day-war--war-of-attrition--precondition-of",
       "kind": "edge",
       "locator": "\"Six-Day War\", revision 1375500255, § Aftermath — War of Attrition"
-    },
-    {
-      "dissent": false,
-      "id": "six-day-war--yom-kippur-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Yom Kippur War\", revision 1375181066, § Response in Israel"
     },
     {
       "dissent": false,
@@ -6428,12 +6392,6 @@
     },
     {
       "dissent": false,
-      "id": "world-war-i--second-sino-japanese-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Second Sino-Japanese War\", revision 1375531758, § Japanese expansion"
-    },
-    {
-      "dissent": false,
       "id": "world-war-i--treaty-of-lausanne--precondition-of",
       "kind": "edge",
       "locator": "\"World War I\", revision 1376154299, § National identities"
@@ -6647,18 +6605,6 @@
       "id": "wuchang-uprising--xinhai-revolution--caused",
       "kind": "edge",
       "locator": "\"Wuchang Uprising\", revision 1371641231, § lead"
-    },
-    {
-      "dissent": false,
-      "id": "xinhai-revolution--chinese-civil-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Chinese Civil War\", revision 1375954779, § First United Front"
-    },
-    {
-      "dissent": false,
-      "id": "xinhai-revolution--sino-indian-war--precondition-of",
-      "kind": "edge",
-      "locator": "\"Sino-Indian War\", revision 1374100162, § Aksai Chin"
     },
     {
       "dissent": false,
