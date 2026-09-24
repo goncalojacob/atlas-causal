@@ -10,17 +10,11 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { withBrowser, open, seenIntro, waitFor, until, skip } from './browser.mjs';
+import {
+  withBrowser, open, seenIntro, waitFor, skip, manifestOf, settledShards,
+} from './browser.mjs';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DESK = { width: 1280, height: 800, deviceScaleFactor: 1 };
-
-const manifestOf = async (root = 'data') => JSON.parse(
-  await readFile(path.join(ROOT, root, 'index/manifest.json'), 'utf8'),
-);
 
 // The map is drawn out of `map.render`, and every render asks the element for
 // its own matrix before it asks anything else (`visibleBox` in src/map/map.js).
@@ -71,5 +65,33 @@ test('§1: first paint draws the map fewer times than there are attribute shards
     const draws = await page.eval('return window.__draws;');
     assert.ok(draws < shards,
       `the map was drawn ${draws} times while ${shards} attribute shards landed; one drawing per file is what §1 removes`);
+  }, { device: DESK });
+});
+
+// §2 (B5). `rowLanes` packed one row per title and no cap, so the resting
+// timeline at the whole span was a 2,500-pixel page at 1280 px and a 3,000-pixel
+// one at 960 — a reader saw the first thirty rows and a scrollbar, and every
+// drag of the band repacked all of it. It is capped at what the pane holds now.
+// Nothing is pinned: the pane measures itself and the drawing is compared with
+// the pane it was laid out into, whatever the corpus is that day.
+const TIMELINE_HEIGHT = `
+  const pane = document.querySelector('.timeline-area');
+  const svg = pane && pane.querySelector('svg.timeline');
+  if (!svg) return null;
+  return { pane: pane.clientHeight, drawing: Number(svg.getAttribute('height')) };`;
+
+test('§2: the resting timeline is no taller than its pane', { skip }, async () => {
+  const manifest = await manifestOf();
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    for (const [where, query] of [['the whole span', '?view=timeline'], ['a century', '?view=timeline&from=1900&to=1999']]) {
+      await open(page, url(query), 'return document.querySelectorAll("#timeline .bar").length > 0;');
+      await settledShards(page, manifest);
+      await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
+      const { pane, drawing } = await page.eval(TIMELINE_HEIGHT);
+      assert.ok(pane > 0, `${where}: the pane measured itself`);
+      assert.ok(drawing <= pane,
+        `${where}: the drawing is ${drawing} px in a pane of ${pane} px`);
+    }
   }, { device: DESK });
 });
