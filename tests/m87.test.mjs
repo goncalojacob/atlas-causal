@@ -9,6 +9,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { lensView, activeFoci } from '../src/lens.js';
+import {
+  firstSentence, yearsInLead, spanOutsideLead, leadSpanWarnings,
+} from '../src/validate/rules.js';
 
 // An atlas the size of a test, with one thing added: `activeEvents` counts how
 // many times it was read. `eventsOfFocus` walks that list — and builds a Set of
@@ -102,4 +105,73 @@ test('§7: a file landing is a new answer, and a different state is its own', ()
   const was = moving.state.scans;
   lensView(moving.atlas, other);
   assert.ok(moving.state.scans > was, 'and a state nobody has asked about is worked out');
+});
+
+// §10 (review part C, finding 2). `span-vs-article-title` reads titles, and most
+// articles do not put their years in their title: fifteen records contradict the
+// year range in the first sentence of the very lead their own summary quotes.
+// The new warning reads that sentence. A warning and never a change to a record.
+test('§10: a year range in the lead\'s first sentence, and only where it is one', () => {
+  // The three shapes, and nothing else. A fourth would be a guess.
+  assert.deepEqual(yearsInLead('The Rif War (1921–1926) was fought in Morocco.'), { start: 1921, end: 1926 });
+  assert.deepEqual(yearsInLead('It lasted from 1978 to 1989.'), { start: 1978, end: 1989 });
+  assert.deepEqual(yearsInLead('It ran from January 1809 until December 1826.'), { start: 1809, end: 1826 });
+  assert.deepEqual(yearsInLead('Fought between 1809 and 1826 in the Andes.'), { start: 1809, end: 1826 });
+
+  // Two years that are not an interval state no span.
+  assert.equal(yearsInLead('The 1914 and 1918 treaties differed.'), null);
+  assert.equal(yearsInLead('It began in 1995.'), null, 'one year is not a range');
+  assert.equal(yearsInLead('Nothing here.'), null);
+  assert.equal(yearsInLead(null), null);
+  // And a pair the wrong way round is somebody counting backwards, not a span.
+  assert.equal(yearsInLead('between 1926 and 1921'), null);
+
+  // The first sentence is where it is read, so a range further down the lead is
+  // not the article's own statement of its subject's span.
+  assert.equal(firstSentence('The coup happened. It was preceded by 1959–1961 unrest.'), 'The coup happened.');
+  assert.equal(yearsInLead(firstSentence('The coup happened. It was preceded by 1959–1961 unrest.')), null);
+  assert.equal(firstSentence('One sentence with no stop'), 'One sentence with no stop');
+  assert.equal(firstSentence('  Spaced   out.  And more. '), 'Spaced out.');
+});
+
+test('§10: the record is outside the lead only where it claims a year the lead does not', () => {
+  const range = { start: 1978, end: 1989 };
+  // Either bound past either end.
+  assert.equal(spanOutsideLead(range, { start: 1989, end: 1991 }), true, 'an end past the lead\'s');
+  assert.equal(spanOutsideLead(range, { start: 1977, end: 1989 }), true, 'a start before it');
+  // Containment, and not equality: a record narrower than its article's range is
+  // inside it. Widening one is A7's pass and a person's judgement.
+  assert.equal(spanOutsideLead(range, { start: 1980, end: 1985 }), false, 'a narrower record is inside');
+  assert.equal(spanOutsideLead(range, { start: 1978, end: 1989 }), false, 'and an equal one');
+  // `end: null` is "as far as the data goes", compared on the start alone,
+  // exactly as `disagreesWithSpan` treats it.
+  assert.equal(spanOutsideLead(range, { start: 1980, end: null }), false);
+  assert.equal(spanOutsideLead(range, { start: 1970, end: null }), true);
+  assert.equal(spanOutsideLead(range, { start: null }), false, 'a record with no start says nothing');
+  assert.equal(spanOutsideLead(null, { start: 1970 }), false, 'nor does a lead with no range');
+});
+
+test('§10: the warning names both spans, and is raised only about an active event with a lead', () => {
+  const leads = new Map([
+    ['Q1', { qid: 'Q1', lang: 'en', text: 'The war lasted from 1978 to 1989. It ended.' }],
+    ['Q2', { qid: 'Q2', lang: 'pt', text: 'A guerra durou de 1978 a 1989.' }],
+  ]);
+  const records = [
+    { kind: 'event', status: 'active', id: 'war', wikidata: 'Q1', when: { start: 1989, end: 1991 } },
+    { kind: 'event', status: 'active', id: 'inside', wikidata: 'Q1', when: { start: 1980, end: 1985 } },
+    { kind: 'event', status: 'retracted', id: 'gone', wikidata: 'Q1', when: { start: 1500, end: 1501 } },
+    { kind: 'event', status: 'active', id: 'no-item', when: { start: 1500, end: 1501 } },
+    { kind: 'event', status: 'active', id: 'no-lead', wikidata: 'Q9', when: { start: 1500, end: 1501 } },
+    { kind: 'actor', status: 'active', id: 'somebody', wikidata: 'Q1', when: { start: 1500, end: 1501 } },
+  ];
+  const found = leadSpanWarnings(records, leads);
+  assert.deepEqual(found.map((w) => w.id), ['war'], 'one record, and it is the one that claims more');
+  assert.equal(found[0].rule, 'span-vs-lead-sentence');
+  assert.match(found[0].message, /states 1978–1989/, 'the lead\'s span');
+  assert.match(found[0].message, /dated 1989–1991/, 'and the record\'s');
+  assert.match(found[0].message, /cached en lead/, 'and which lead it read');
+
+  // A record with no lead in hand is not a record this can say anything about.
+  assert.deepEqual(leadSpanWarnings(records, new Map()), []);
+  assert.deepEqual(leadSpanWarnings([], leads), []);
 });

@@ -17,6 +17,7 @@ import { createRegionDeriver, NEAREST_TOLERANCE } from '../src/util/geo.js';
 import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readRoles, readCategories, readPresenceShards, readPresenceGeometry, readImportMaps, readCachedLeads, DEFAULT_IMPORT_KIND, KIND_DIRS } from './lib/read.mjs';
 import { buildIndex, readIndex, compareIndex, readSite, compareSite } from './build-index.mjs';
 import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
+import { leadSpanWarnings } from '../src/validate/rules.js';
 import { countDrafts } from '../src/review/queue.js';
 import { countCitations } from '../src/review/citations.js';
 
@@ -449,6 +450,28 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
     if (typeof lead?.qid === 'string' && typeof lead?.lang === 'string' && file !== expected) {
       errors.push({ rule: 'lead-cache', id: null, file: `${LEAD_CACHE}/${file}`, path: '', message: `holds ${lead.qid} in ${lead.lang} and should be called ${expected}` });
     }
+  }
+
+  // M87 §10 (review part C, finding 2). `span-vs-article-title` reads titles, and
+  // most articles do not put their years in their title: fifteen records were
+  // found contradicting the year range in the first sentence of the very lead
+  // their own summary quotes. A **warning**, never a change to a record — which
+  // of the two is wrong is a person's judgement and A7's pass is what makes it —
+  // and a disk-only one, because the leads are not under `data/` and no page has
+  // them: the review index is built from the rules' own warnings and is
+  // untouched, so nothing under `data/` changes because this exists.
+  //
+  // The English lead where the item has one, since that is the article the
+  // records quote; otherwise whichever language was cached, named in the
+  // message so a reader knows what they are being asked to compare.
+  const leadByItem = new Map();
+  for (const { lead } of leads) {
+    if (typeof lead?.qid !== 'string' || typeof lead?.text !== 'string') continue;
+    const held = leadByItem.get(lead.qid);
+    if (!held || (held.lang !== 'en' && lead.lang === 'en')) leadByItem.set(lead.qid, lead);
+  }
+  for (const w of leadSpanWarnings(records, leadByItem)) {
+    warnings.push({ ...w, file: fileOf.get(w.id) ?? null, path: '' });
   }
 
   if (index) {
