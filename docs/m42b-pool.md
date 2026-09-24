@@ -5303,9 +5303,10 @@ records commit `4b7219be` has the same shape. Locally the fire has
 `node tools/validate.mjs --index` clean at **0 errors and 412 warnings**, and
 the **1,810 tests of the 152 pure suites all pass with none failed and none
 skipped** — which is every suite that judges a record, the validator's own,
-`registry`, `spine` and `m67` among them. The 37 browser suites, which judge the
-display this batch does not touch, were green through 30 of 37 and 206 tests
-with nothing failed when the fire ended. **The next fire should read 1677's
+`registry`, `spine` and `m67` among them. **The 37 browser suites, run the way
+the check runs them, one at a time, are green too: 286 tests, none failed and
+none skipped** — so **2,096 tests pass locally on this head with nothing failed
+and nothing skipped**. **The next fire should read 1677's
 conclusion before it does anything else**, and if it is red, read the failure:
 the check has been honest since M63 and it is not load.
 
