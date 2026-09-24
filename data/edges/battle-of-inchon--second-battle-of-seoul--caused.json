@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-inchon--second-battle-of-seoul--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Inchon\", revision 1370266029, lead"
+    }
+  ],
+  "from": "battle-of-inchon",
+  "to": "second-battle-of-seoul",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Inchon article states it in its second sentence, and links the words to this record: the operation \"involved some 75,000 troops and 261 naval vessels and led to the recapture of the South Korean capital of Seoul two weeks later\". The Second Battle of Seoul article at revision 1370736593 reads it from the other end — after the landing \"UN forces consolidated their positions south of the Han River and prepared to recapture Seoul\", and the KPA 18th Division, \"on the point of moving from Seoul to the Naktong front when the landing came at Inchon, was instead ordered to retake Inchon\". Probable: Wikipedia alone.",
+  "dispute": null
+}

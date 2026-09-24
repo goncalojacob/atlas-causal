@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-osan--battle-of-taejon--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Osan\", revision 1375327001, § Aftermath"
+    }
+  ],
+  "from": "battle-of-osan",
+  "to": "battle-of-taejon",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same division fought both, and the article follows it from one to the other in one sentence: \"Within a week, the 24th Infantry Division had been pushed back to Taejon where it was again defeated in the Battle of Taejon.\" The Taejon article at revision 1370312872 reads the other half of it — the division's regiments were \"already exhausted from the previous two weeks of delaying actions to stem the advance of the KPA\", of which Osan was the first. Probable: Wikipedia alone.",
+  "dispute": null
+}

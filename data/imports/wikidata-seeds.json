@@ -1329,7 +1329,23 @@
     "Q489911",
     "Q2795",
     "Q486541",
-    "Q2749"
+    "Q2749",
+    "Q8684",
+    "Q42129",
+    "Q20921",
+    "Q24297886",
+    "Q708507",
+    "Q499266",
+    "Q12614724",
+    "Q18016068",
+    "Q484494",
+    "Q492880",
+    "Q482979",
+    "Q646336",
+    "Q486531",
+    "Q493313",
+    "Q277337",
+    "Q493922"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5246,6 +5262,24 @@
       "precision": "city",
       "label": "commune of Mali",
       "note": "Added in M42 batch 50, the Mali War vein of the Africa lane, where five of the six located items the batch names carry it and nothing else. The label and the description — “third-level administrative unit in Mali” — are read from the item itself over the network. `city` is the precision Q484170, commune of France, already carries for the same reason: a commune of Mali is the unit a town is, and Gao, Kidal, Konna, Diabaly and Tessalit are towns."
+    },
+    "Q718893": {
+      "kind": "place",
+      "precision": "region",
+      "label": "theater of war",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “area or place in which important military events occur or are progressing”."
+    },
+    "Q18534049": {
+      "kind": "place",
+      "precision": "region",
+      "label": "county of North Korea",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “subdivision from North Korea”."
+    },
+    "Q131681": {
+      "kind": "place",
+      "precision": "region",
+      "label": "reservoir",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “artificial lake impounded using a dam or lock to store water”."
     }
   },
   "reconcile": true

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-ch-ongch-on-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q493313",
+  "wikipedia": {
+    "en": "Battle of the Ch'ongch'on River",
+    "pt": "Batalha do Rio Ch'ongch'on"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q493313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822"
+    }
+  ],
+  "title": "Battle of the Ch'ongch'on River",
+  "summary": "The English Wikipedia article \"Battle of the Ch'ongch'on River\", at revision 1374278822, opens: \"The Battle of the Ch'ongch'on River, also known as the Battle of the Ch'ongch'on, was a battle in the Korean War that took place from November 25 to December 2, 1950, along the Ch'ongch'on River Valley in the northwestern part of North Korea.\" Wikidata item Q493313, whose own description reads \"1950 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-11-25",
+    "endDate": "1950-12-02"
+  },
+  "place": "chongchon-river",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

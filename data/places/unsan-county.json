@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "unsan-county",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q708507 for batch 51: the county battle-of-unsan was fought in. A9's two steps differ by 13 km, inside the county. Its class Q18534049, county of North Korea, was added to the class table for it."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q708507",
+  "wikipedia": {
+    "en": "Unsan County"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Unsan County"
+  ],
+  "where": {
+    "lon": 125.75,
+    "lat": 40.08333,
+    "precision": "region",
+    "label": "Unsan County"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
