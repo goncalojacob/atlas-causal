@@ -2000,6 +2000,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused",
       "kind": "edge",
       "locator": "\"Invasion of Cuba (1741)\", revision 1370623950, § Background"
@@ -2096,6 +2102,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Oldendorf\", revision 1370452128, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
@@ -2153,6 +2165,18 @@
       "id": "battle-of-nanshan--siege-of-port-arthur--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Nanshan\", revision 1370451314, § Background and § Results"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Wittstock\", revision 1371435921, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nordlingen-1634--siege-of-breisach--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Breisach\", revision 1370739740, § Background"
     },
     {
       "dissent": false,
@@ -2252,6 +2276,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rain--battle-of-the-alte-veste--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Battle"
@@ -2336,6 +2366,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Result"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-spurs--siege-of-dijon--enabled",
       "kind": "edge",
       "locator": "\"Siege of Dijon\", revision 1370740741, § Prelude"
@@ -2387,6 +2423,12 @@
       "id": "battle-of-vilcaconga--battle-of-cusco--enabled",
       "kind": "edge",
       "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zusmarshausen--battle-of-prague-1648--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Zusmarshausen\", revision 1370597065, § Aftermath"
     },
     {
       "dissent": false,
@@ -4532,6 +4574,18 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-prague-1635--battle-of-chemnitz--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Chemnitz\", revision 1370108980, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-prague-1635--battle-of-wittstock--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Wittstock\", revision 1371435921, § Background"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-riga--soviet-invasion-of-poland--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Riga\", revision 1368931640, § Further consequences"
@@ -5249,6 +5303,12 @@
       "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-stralsund-1628--battle-of-wolgast--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Wolgast\", revision 1370276997, § Battle"
     },
     {
       "dissent": false,
@@ -8126,6 +8186,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chemnitz",
+      "kind": "event",
+      "locator": "\"Battle of Chemnitz\", revision 1370108980"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chemulpo-bay",
       "kind": "event",
       "locator": "\"Battle of Chemulpo Bay\", revision 1370436979"
@@ -8147,6 +8213,12 @@
       "id": "battle-of-cusco",
       "kind": "event",
       "locator": "\"Battle of Cusco\", revision 1370109425"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dessau-bridge",
+      "kind": "event",
+      "locator": "\"Battle of Dessau Bridge\", revision 1370109657"
     },
     {
       "dissent": false,
@@ -8234,6 +8306,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-humenne",
+      "kind": "event",
+      "locator": "\"Battle of Humenné\", revision 1370265836"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ia-drang",
       "kind": "event",
       "locator": "\"Battle of Ia Drang\", revision 1370265925"
@@ -8267,6 +8345,12 @@
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "\"Battle of Junín\", revision 1370266471"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-juterbog",
+      "kind": "event",
+      "locator": "\"Battle of Jüterbog\", revision 1370444413"
     },
     {
       "dissent": false,
@@ -8339,6 +8423,12 @@
       "id": "battle-of-liaoyang",
       "kind": "event",
       "locator": "\"Battle of Liaoyang\", revision 1370447606"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lomnice",
+      "kind": "event",
+      "locator": "\"Battle of Lomnice\", revision 1370447945"
     },
     {
       "dissent": false,
@@ -8438,9 +8528,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nordlingen-1645",
+      "kind": "event",
+      "locator": "\"Battle of Nördlingen (1645)\", revision 1370452014"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "\"Battle of Novara (1513)\", revision 1370270949"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-oldendorf",
+      "kind": "event",
+      "locator": "\"Battle of Oldendorf\", revision 1370452128"
     },
     {
       "dissent": false,
@@ -8654,6 +8756,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-alte-veste",
+      "kind": "event",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838"
@@ -8693,6 +8801,12 @@
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "locator": "\"Battle of Tripoli (2011)\", revision 1374512796"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trzciana",
+      "kind": "event",
+      "locator": "\"Battle of Trzciana\", revision 1370591664"
     },
     {
       "dissent": false,
@@ -8744,15 +8858,39 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-werben",
+      "kind": "event",
+      "locator": "\"Battle of Werben\", revision 1370276785"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "locator": "\"Battle of Wireless Ridge\", revision 1373880954"
     },
     {
       "dissent": false,
+      "id": "battle-of-wittstock",
+      "kind": "event",
+      "locator": "\"Battle of Wittstock\", revision 1371435921"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wolgast",
+      "kind": "event",
+      "locator": "\"Battle of Wolgast\", revision 1370276997"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "\"Battle of Yaguajay\", revision 1371154538"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zusmarshausen",
+      "kind": "event",
+      "locator": "\"Battle of Zusmarshausen\", revision 1370597065"
     },
     {
       "dissent": false,
@@ -11093,6 +11231,18 @@
       "id": "siege-of-asola-1516",
       "kind": "event",
       "locator": "\"Siege of Asola (1516)\", revision 1370739014"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-bergen-op-zoom-1622",
+      "kind": "event",
+      "locator": "\"Siege of Bergen op Zoom (1622)\", revision 1370739522"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-breisach",
+      "kind": "event",
+      "locator": "\"Siege of Breisach\", revision 1370739740"
     },
     {
       "dissent": false,

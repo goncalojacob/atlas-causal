@@ -2726,6 +2726,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chemnitz",
+      "kind": "event",
+      "locator": "Q245811"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chemulpo-bay",
       "kind": "event",
       "locator": "Q1192118"
@@ -2747,6 +2753,12 @@
       "id": "battle-of-cusco",
       "kind": "event",
       "locator": "Q1612814"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dessau-bridge",
+      "kind": "event",
+      "locator": "Q677121"
     },
     {
       "dissent": false,
@@ -2834,6 +2846,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-humenne",
+      "kind": "event",
+      "locator": "Q723957"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ia-drang",
       "kind": "event",
       "locator": "Q714749"
@@ -2867,6 +2885,12 @@
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "Q1508820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-juterbog",
+      "kind": "event",
+      "locator": "Q1584586"
     },
     {
       "dissent": false,
@@ -2939,6 +2963,12 @@
       "id": "battle-of-liaoyang",
       "kind": "event",
       "locator": "Q2440191"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lomnice",
+      "kind": "event",
+      "locator": "Q2088781"
     },
     {
       "dissent": false,
@@ -3038,9 +3068,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nordlingen-1645",
+      "kind": "event",
+      "locator": "Q630142"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "Q661940"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-oldendorf",
+      "kind": "event",
+      "locator": "Q481354"
     },
     {
       "dissent": false,
@@ -3254,6 +3296,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-alte-veste",
+      "kind": "event",
+      "locator": "Q2002331"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "Q124249264"
@@ -3287,6 +3335,12 @@
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "locator": "Q609013"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trzciana",
+      "kind": "event",
+      "locator": "Q380067"
     },
     {
       "dissent": false,
@@ -3338,15 +3392,39 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-werben",
+      "kind": "event",
+      "locator": "Q653487"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "locator": "Q4872743"
     },
     {
       "dissent": false,
+      "id": "battle-of-wittstock",
+      "kind": "event",
+      "locator": "Q428972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wolgast",
+      "kind": "event",
+      "locator": "Q653561"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "Q3636666"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-zusmarshausen",
+      "kind": "event",
+      "locator": "Q519818"
     },
     {
       "dissent": false,
@@ -5501,6 +5579,18 @@
       "id": "siege-of-asola-1516",
       "kind": "event",
       "locator": "Q48807593"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-bergen-op-zoom-1622",
+      "kind": "event",
+      "locator": "Q1838038"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-breisach",
+      "kind": "event",
+      "locator": "Q331565"
     },
     {
       "dissent": false,

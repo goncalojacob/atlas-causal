@@ -187,7 +187,7 @@
       ]
     },
     "2012-malian-coup-d-etat--battle-of-kidal-2012--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -205,7 +205,7 @@
       ]
     },
     "2012-tuareg-rebellion--battle-of-gao--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -375,7 +375,7 @@
       ]
     },
     "battle-of-diabaly--battle-of-ifoghas--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -384,7 +384,7 @@
       ]
     },
     "battle-of-diabaly--second-battle-of-gao--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -393,7 +393,7 @@
       ]
     },
     "battle-of-konna--battle-of-ifoghas--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -402,7 +402,7 @@
       ]
     },
     "battle-of-konna--operation-serval--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -472,7 +472,7 @@
       ]
     },
     "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1064,7 +1064,7 @@
       ]
     },
     "operation-serval--battle-of-diabaly--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

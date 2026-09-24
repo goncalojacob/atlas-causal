@@ -4151,6 +4151,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-breitenfeld-1631",
+      "id": "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-alte-veste",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "pares-1936-war-and-trade-in-the-west-indies"
       ],
@@ -4545,6 +4573,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en",
+        "guthrie-2003-the-later-thirty-years-war"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-lutzen-1632",
+      "id": "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-oldendorf",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en"
       ],
       "created": "2026-09-23",
@@ -4761,6 +4818,64 @@
       "revised": null,
       "status": "active",
       "to": "siege-of-port-arthur",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-nordlingen-1634",
+      "id": "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-wittstock",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "ackermann-2023-herzog-bernhard-von-weimar"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-nordlingen-1634",
+      "id": "battle-of-nordlingen-1634--siege-of-breisach--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "note": "The Breisach article carries a {{failed verification span}} maintenance tag of August 2026 over the words \"independent army,\" inside the sentence quoted here. The tag is about that phrase and not about the defeat at Nördlingen or the 1637 offensive, and the quotation above leaves the tagged words out; a reviewer who reads Ackermann should say whether the whole sentence survives.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-breisach",
       "type": "precondition-of"
     },
     {
@@ -5086,6 +5201,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "battle-of-rain",
+      "id": "battle-of-rain--battle-of-the-alte-veste--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-alte-veste",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "battle-of-ras-lanuf",
       "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
@@ -5393,6 +5536,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-the-alte-veste",
+      "id": "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-lutzen-1632",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "meneses-2004-portugal-1914-1926",
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
@@ -5634,6 +5805,35 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-cusco",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "wilson-2009-europes-tragedy"
+      ],
+      "created": "2026-09-24",
+      "from": "battle-of-zusmarshausen",
+      "id": "battle-of-zusmarshausen--battle-of-prague-1648--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-prague-1648",
       "type": "enabled"
     },
     {
@@ -15353,6 +15553,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "peace-of-prague-1635",
+      "id": "peace-of-prague-1635--battle-of-chemnitz--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-chemnitz",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "peace-of-prague-1635",
+      "id": "peace-of-prague-1635--battle-of-wittstock--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-wittstock",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "peace-of-riga",
       "id": "peace-of-riga--soviet-invasion-of-poland--precondition-of",
@@ -18482,6 +18738,35 @@
       "status": "active",
       "to": "action-of-12-17-january-1640",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en",
+        "heckel-1983-deutschland-im-konfessionellen-zeitalter"
+      ],
+      "created": "2026-09-24",
+      "from": "siege-of-stralsund-1628",
+      "id": "siege-of-stralsund-1628--battle-of-wolgast--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-wolgast",
+      "type": "enabled"
     },
     {
       "authors": [

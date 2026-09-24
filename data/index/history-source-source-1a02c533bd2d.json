@@ -2,6 +2,15 @@
   "from": null,
   "kind": "source",
   "records": {
+    "ackermann-2023-herzog-bernhard-von-weimar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "ar-2024-fiftieth-anniversary": {
       "from": "git",
       "versions": [
@@ -395,12 +404,30 @@
         }
       ]
     },
+    "guthrie-2003-the-later-thirty-years-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "hall-2000-balkan-wars": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "heckel-1983-deutschland-im-konfessionellen-zeitalter": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -938,6 +965,15 @@
             "review"
           ],
           "on": "2026-09-04"
+        }
+      ]
+    },
+    "wilson-2009-europes-tragedy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     }

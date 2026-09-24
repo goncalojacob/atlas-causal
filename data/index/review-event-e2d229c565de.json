@@ -5952,6 +5952,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "origin": {
@@ -6274,6 +6275,38 @@
       ],
       "created": "2026-09-24",
       "degree": 1,
+      "id": "battle-of-chemnitz",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chemnitz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
       "id": "battle-of-chemulpo-bay",
       "kind": "event",
       "origin": {
@@ -6388,6 +6421,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cusco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-dessau-bridge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dessau Bridge"
     },
     {
       "authors": [
@@ -6868,6 +6932,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-humenne",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Humenné"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7062,6 +7157,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Junín"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-juterbog",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "torstenson-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Wikidata's P361 on Q1584586 names the Thirty Years' War; the English article's own background opens 'Field Marshal Lennart Torstenson had unexpectedly marched into Jutland in September 1643 (see Torstenson War)' and the whole campaign it describes is that war, whose record the atlas holds (1643-1645) as a child of the Thirty Years' War. Filed at the narrower umbrella, whose span and subject both fit.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jüterbog"
     },
     {
       "authors": [
@@ -7481,6 +7608,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-lomnice",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bohemian-revolt",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Lomnice"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7557,6 +7715,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
       "id": "battle-of-lutzen-1632",
       "kind": "event",
       "origin": {
@@ -7990,6 +8149,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
       "id": "battle-of-nordlingen-1634",
       "kind": "event",
       "origin": {
@@ -8007,6 +8167,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Nördlingen (1634)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-nordlingen-1645",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Nördlingen (1645)"
     },
     {
       "authors": [
@@ -8040,6 +8230,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Novara (1513)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-oldendorf",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Oldendorf"
     },
     {
       "authors": [
@@ -8319,6 +8541,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-prague-1648",
       "kind": "event",
       "origin": {
@@ -8478,6 +8701,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-rain",
       "kind": "event",
       "origin": {
@@ -9205,6 +9429,38 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-the-alte-veste",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Alte Veste"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
@@ -9419,6 +9675,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Tripoli (2011)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-trzciana",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Wikidata's P361 on Q380067 names the Thirty Years' War and that is where this record is filed; the English article's own first sentence calls the battle one of the Polish-Swedish War of 1626-1629, which this atlas does not yet hold. Both are stated by the sources cited and neither was chosen over the other by anybody here — a reviewer decides.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Trzciana"
     },
     {
       "authors": [
@@ -9693,6 +9981,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "id": "battle-of-werben",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Werben"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-wireless-ridge",
       "kind": "event",
@@ -9711,6 +10030,70 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Wireless Ridge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-wittstock",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wittstock"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-wolgast",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wolgast"
     },
     {
       "authors": [
@@ -9746,6 +10129,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Yaguajay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-zusmarshausen",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Zusmarshausen"
     },
     {
       "authors": [
@@ -21786,6 +22201,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
       "id": "peace-of-prague-1635",
       "kind": "event",
       "origin": {
@@ -24784,6 +25200,70 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "id": "siege-of-bergen-op-zoom-1622",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Wikidata's P361 on Q1838038 names the Thirty Years' War and that is where this record is filed; the English article's own first sentence calls the siege one of the Eighty Years' War, which this atlas does not yet hold. Both are stated by the sources cited and neither was chosen over the other by anybody here — a reviewer decides.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Bergen op Zoom (1622)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "siege-of-breisach",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "thirty-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Breisach"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 1,
       "id": "siege-of-crema-1514",
       "kind": "event",
@@ -25184,6 +25664,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "origin": {
@@ -31187,12 +31668,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-breitenfeld-1631",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-breitenfeld-1642",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31230,6 +31705,12 @@
     },
     {
       "id": "battle-of-chupas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dessau-bridge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31295,6 +31776,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-humenne",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ica",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31314,6 +31801,12 @@
     },
     {
       "id": "battle-of-junin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-juterbog",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31343,6 +31836,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-lomnice",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-long-tan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31350,12 +31849,6 @@
     },
     {
       "id": "battle-of-lutter",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-lutzen-1632",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31379,19 +31872,7 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-nordlingen-1634",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-prague-1648",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-rain",
+      "id": "battle-of-nordlingen-1645",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31451,6 +31932,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-trzciana",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-tucuman",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31482,6 +31969,12 @@
     },
     {
       "id": "battle-of-waterberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-werben",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31877,12 +32370,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "peace-of-prague-1635",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31961,6 +32448,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "siege-of-bergen-op-zoom-1622",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-crema-1514",
       "kind": "event",
       "message": "the title states 1514 and the record is dated 1513–1514",
@@ -31980,12 +32473,6 @@
     },
     {
       "id": "siege-of-mitu",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "siege-of-stralsund-1628",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

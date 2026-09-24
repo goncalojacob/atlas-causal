@@ -2,7 +2,70 @@
   "from": 1600,
   "kind": "edge",
   "records": {
+    "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-nordlingen-1634--siege-of-breisach--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-rain--battle-of-the-alte-veste--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-zusmarshausen--battle-of-prague-1648--enabled": {
       "from": "git",
       "versions": [
         {
@@ -141,6 +204,24 @@
         }
       ]
     },
+    "peace-of-prague-1635--battle-of-chemnitz--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "peace-of-prague-1635--battle-of-wittstock--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "portuguese-conquest-of-maricay--capture-of-bahia--precondition-of": {
       "from": "git",
       "versions": [
@@ -170,6 +251,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-stralsund-1628--battle-of-wolgast--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

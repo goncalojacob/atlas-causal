@@ -12,7 +12,7 @@
       ]
     },
     "adrar-des-ifoghas": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -305,6 +305,15 @@
         }
       ]
     },
+    "augsburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "ayacucho": {
       "from": "git",
       "versions": [
@@ -559,6 +568,15 @@
         }
       ]
     },
+    "bergen-op-zoom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "berlin": {
       "from": "git",
       "versions": [
@@ -777,6 +795,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "breisach": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1182,6 +1209,15 @@
         }
       ]
     },
+    "chemnitz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "chemulpo-bay": {
       "from": "git",
       "versions": [
@@ -1554,8 +1590,17 @@
         }
       ]
     },
+    "dessau-ro-lau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "diabaly": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1671,6 +1716,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "dunajovice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2139,7 +2193,7 @@
       ]
     },
     "gao": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2450,6 +2504,15 @@
         }
       ]
     },
+    "hessisch-oldendorf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "ho-chi-minh-city": {
       "from": "git",
       "versions": [
@@ -2492,6 +2555,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "humenne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2818,6 +2890,15 @@
         }
       ]
     },
+    "juterbog": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "kabul": {
       "from": "git",
       "versions": [
@@ -2970,7 +3051,7 @@
       ]
     },
     "kidal": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3054,7 +3135,7 @@
       ]
     },
     "konna": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4480,6 +4561,15 @@
       ]
     },
     "novara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "nuremberg": {
       "from": "git",
       "versions": [
         {
@@ -6644,7 +6734,7 @@
       ]
     },
     "tessalit": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6784,6 +6874,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "trzciano-pomeranian-voivodeship": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7215,6 +7314,15 @@
         }
       ]
     },
+    "werben-elbe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "west-asia": {
       "from": "git",
       "versions": [
@@ -7261,6 +7369,15 @@
         }
       ]
     },
+    "wittstock": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "wolf-s-lair": {
       "from": "git",
       "versions": [
@@ -7273,6 +7390,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "wolgast": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
