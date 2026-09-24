@@ -7779,7 +7779,7 @@ which case it is the curation fire and A13's relations pass.
   candidates. The 32 partial lists review finding 7 names are still on the
   records, because the two rules that govern them are the owner's to choose
   between.
-- **Deviation numbers: take the next above 1412.** This fire wrote
-  **1408 to 1412** and deviation 1407's proposal — `m42` from 1400 upward,
+- **Deviation numbers: take the next above 1413.** This fire wrote
+  **1408 to 1413** and deviation 1407's proposal — `m42` from 1400 upward,
   `m42b` continuing the shared sequence — held for a full day without a
   collision.
