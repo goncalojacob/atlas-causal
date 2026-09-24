@@ -19,6 +19,13 @@ import {
 import { LABEL_CHARS } from '../src/graph-view/label-fit.js';
 
 const VIEW = '?view=graph&from=1900&to=1999';
+// A window a reader would have. The default headless window is 800 x 600, which
+// leaves the graph a pane 474 px wide — and the picture is scaled to its pane, so
+// the names come out five pixels tall there and are not drawn at all since M87 §9.
+// That is the rule working, not a fault: this file is about which names are
+// written and how, so it drives a screen on which they are legible.
+const DESK = { width: 1280, height: 900, deviceScaleFactor: 1 };
+const desk = (fn) => withBrowser(fn, { device: DESK });
 const DRAWN = 'return document.querySelector("svg.graph text.node-label") !== null;';
 
 // The zoom in force, read off the viewport's own transform — there is no
@@ -93,7 +100,7 @@ const LONGEST = `
   return best;`;
 
 test('a node with room round it is named in full, with nothing left off', { skip }, async () => {
-  await withBrowser(async (page, url) => {
+  await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(VIEW), DRAWN);
@@ -157,7 +164,7 @@ test('a node with room round it is named in full, with nothing left off', { skip
 });
 
 test('at the world view a label is no longer than it was, and none is drawn over another', { skip }, async () => {
-  await withBrowser(async (page, url) => {
+  await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(VIEW), DRAWN);
@@ -184,7 +191,7 @@ test('at the world view a label is no longer than it was, and none is drawn over
 });
 
 test('a label is the same size on screen however far the picture is zoomed', { skip }, async () => {
-  await withBrowser(async (page, url) => {
+  await desk(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(VIEW), DRAWN);

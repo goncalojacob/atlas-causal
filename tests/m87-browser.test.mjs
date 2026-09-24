@@ -15,6 +15,8 @@ import {
 } from './browser.mjs';
 
 const DESK = { width: 1280, height: 800, deviceScaleFactor: 1 };
+// The phone the brief names and the frame page drives (M86, review A finding 5).
+const PHONE = { width: 390, height: 844, deviceScaleFactor: 1 };
 
 // The map is drawn out of `map.render`, and every render asks the element for
 // its own matrix before it asks anything else (`visibleBox` in src/map/map.js).
@@ -183,4 +185,77 @@ test('§8: the timeline marks the two ends of the link the reader has opened', {
     assert.equal(key.row.stroke, key.bar.stroke, 'inked as the picture inks it');
     assert.ok(key.label && key.label.length > 0, 'and it says what it means');
   }, { device: DESK });
+});
+
+// §9 (review A finding 5). On a phone the map was a 220-pixel band with 3-pixel
+// marks and empty ground beneath it: the `<svg>` carries a 960 x 540 viewBox and
+// no `preserveAspectRatio`, so it is letterboxed, and fitted to a 390-pixel pane's
+// *width* the world can never be taller than 56 % of it. Under the phone
+// breakpoint it is fitted to the pane's height instead — the poles are cropped,
+// which is what a reader loses, and they lose a strip of ice for a picture twice
+// the size. Nothing is pinned: the drawing is compared with the pane it is in.
+const MAP_FIT = `
+  const pane = document.querySelector('.map-area');
+  const svg = document.querySelector('#map svg.map');
+  const ctm = svg.getScreenCTM();
+  const box = svg.viewBox.baseVal;
+  return {
+    pane: { width: pane.clientWidth, height: pane.clientHeight },
+    drawn: { width: Math.abs(ctm.a) * box.width, height: Math.abs(ctm.d) * box.height },
+    fit: svg.getAttribute('preserveAspectRatio'),
+  };`;
+
+test('§9: on a phone the map fills the pane, and on a desktop it still fits inside it', { skip }, async () => {
+  for (const [where, device, covers] of [['a phone', PHONE, true], ['a desktop', DESK, false]]) {
+    // eslint-disable-next-line no-await-in-loop
+    await withBrowser(async (page, url) => {
+      await seenIntro(page);
+      await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
+      const seen = await page.eval(MAP_FIT);
+      assert.ok(seen.pane.height > 0, `${where}: the pane measured itself`);
+      if (covers) {
+        assert.ok(seen.drawn.height >= seen.pane.height - 1,
+          `${where}: the world is ${Math.round(seen.drawn.height)} px in a pane of ${seen.pane.height} px`);
+      } else {
+        assert.ok(seen.drawn.height <= seen.pane.height + 1,
+          `${where}: nothing is cropped (${Math.round(seen.drawn.height)} px in ${seen.pane.height} px)`);
+        assert.ok(seen.drawn.width <= seen.pane.width + 1, `${where}: nor sideways`);
+      }
+    }, { device });
+  }
+});
+
+// And the graph's names, which were about 4 px tall on a phone — the picture is
+// scaled to the pane and the text is scaled with it, so a name nobody can read is
+// ink over the marks it is naming. Nothing under 8 px on screen is drawn, except
+// what the reader has open and the one hop around it: those are what they came
+// for, and a picture that named nothing at all would be worse than one that
+// named too much.
+const GRAPH_LABEL_SIZES = `
+  return [...document.querySelectorAll('#graph svg.graph text.node-label')].map((el) => ({
+    text: el.textContent,
+    px: parseFloat(getComputedStyle(el).fontSize) * Math.abs(el.getScreenCTM().a),
+    selected: el.classList.contains('selected'),
+  }));`;
+
+test('§9: on a phone the graph draws no name too small to read', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?view=graph'), 'return document.querySelectorAll("#graph circle.node").length > 0;');
+    await settledShards(page);
+    await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
+    const rest = await page.eval(GRAPH_LABEL_SIZES);
+    const tiny = rest.filter((label) => label.px < 8 - 0.01);
+    assert.deepEqual(tiny.map((l) => `${l.text} at ${l.px.toFixed(1)}px`), [],
+      'a name under 8 px on screen is ink over the mark it names');
+
+    // And what the reader has open is named whatever the picture is scaled to.
+    const id = await page.eval(`return (document.querySelector('#graph circle.node[data-id]') || {}).getAttribute
+      ? document.querySelector('#graph circle.node[data-id]').getAttribute('data-id') : null;`);
+    assert.ok(id, 'there is a mark to open');
+    await open(page, url(`?view=graph&selected=${id}`), 'return document.querySelectorAll("#graph circle.node").length > 0;');
+    await settledShards(page);
+    await waitFor(page, "return document.querySelectorAll('#graph text.node-label').length > 0;",
+      'the open event to be named');
+  }, { device: PHONE });
 });

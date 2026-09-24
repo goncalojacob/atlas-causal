@@ -42,6 +42,12 @@ import { createLayoutRunner } from './layout-runner.js';
 import { frameFor } from './frame.js';
 import { STRETCH_CAP, stretchStep } from './stretch.js';
 import { LABEL_SIZE } from './label-fit.js';
+// Under this many screen pixels a name is not drawn at all (§9). Eight, because
+// it is the smallest size the type scale has a word for — `--text-xs` is 0.78rem
+// and the halo the labels wear is one pixel — and because four, which is what a
+// phone was giving them, is a smudge. A size and not a token: it is a threshold
+// about the screen, not an ink, and nothing in the stylesheet reads it.
+const LABEL_MIN_PIXELS = 8;
 import {
   naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
@@ -529,6 +535,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
     measured = {
       x0: Math.min(a.x, b.x), y0: Math.min(a.y, b.y), x1: Math.max(a.x, b.x), y1: Math.max(a.y, b.y),
+      // How many screen pixels one of the drawing's own units is, which is the
+      // one thing about this picture that no zoom changes: the text is written
+      // at `LABEL_SIZE / k` inside a group scaled by `k`, so what a reader
+      // actually sees is `LABEL_SIZE` times this. On a phone it is about 0.4 and
+      // the names come out four pixels tall (§9). Kept here because it is the
+      // same matrix and the same measurement, and asking for it a second time
+      // inside `draw` would lay the whole picture out again.
+      scale: Math.abs(ctm.a),
     };
     return measured;
   };
@@ -1252,7 +1266,22 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
     const focus = working.lensFocus;
     const order = working.narrative ? [...working.narrative] : null;
+    // **Nothing too small to read** (M87 §9, review A finding 5). The picture is
+    // scaled to its pane and the text is scaled with it, so on a phone the names
+    // were about four pixels tall: ink over the marks they were naming and a
+    // word to nobody. What the reader has open is the exception — the selection
+    // and the one hop around it are what they came for, and a picture that named
+    // nothing at all would be worse than one that named too much. `pixels` is
+    // whatever the pane makes of `LABEL_SIZE`, so this is one rule at every
+    // width and there is no second breakpoint in here.
+    const pixels = LABEL_SIZE * (visibleBox().scale ?? 1);
+    const legible = pixels >= LABEL_MIN_PIXELS;
+    const kept = legible ? null : new Set([
+      ...(s.selected ? [s.selected] : []),
+      ...(working.lensNear ?? []),
+    ]);
     const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all: true })
+      .filter((node) => !kept || kept.has(node.representative.id))
       .map((node) => ({ node, name: labelOf(atlas, node.representative.event) }))
       // No name yet is no label, and the next node still gets its own.
       .filter((c) => c.name !== null);
