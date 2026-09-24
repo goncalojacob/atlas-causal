@@ -7465,3 +7465,84 @@ is the owner's (review finding 4). The other 52 `a13-relations-pass` edges are
 untouched by this pass: the review read ten and named eleven, and reading the
 remaining 42 against their revisions is a curation fire's work, not this
 one's.
+
+## A14 (5) — the polities the events name, nineteen of thirty-four described
+
+*24 September, the 04:58Z fire. 34 records reconciled against Wikidata; 14
+leads fetched, the other 5 read off the cache A14(3) had just filled.*
+
+The 22 September pass wrote 177 descriptions and every one of them went to a
+polity dated as ongoing, because its own gate — *an item with a dissolution
+date cannot describe a polity dated as ongoing* — excludes exactly the
+polities an event names. 34 named polities had none, and they are the ones
+named most: `third-portuguese-republic` by 35 events, `estado-novo` by 31,
+`first-portuguese-republic` by 21, `kingdom-of-portugal` by 15, then the
+Ottoman Empire, the Soviet Union and the Empire of Brazil at 9 each. A reader
+opening the Soviet Union from a war card found the CShapes boilerplate.
+
+**The rule, and the one thing it had to decide.** A12(6)'s two signals are the
+article the record's own names resolve to and a capital within 1.5° of the
+one the record carries; A14 adds the inverse gate, the item's dissolution year
+matching the record's end. **23 of the 34 carry no capital at all**, so the
+pass had to say what a missing signal means, and says this: the name
+resolution is required and must reach **one** item, never two; **a signal the
+record can supply and that disagrees always refuses**; a signal it cannot
+supply neither passes nor fails; and **at least one of the two must actually
+agree**. That is A12(6)'s discipline with the hole named rather than widened.
+
+**19 matched.** `third-portuguese-republic`, `estado-novo`,
+`first-portuguese-republic`, `kingdom-of-portugal`, `empire-of-brazil`,
+`ottoman-empire`, `soviet-union`, `russian-empire`, `nazi-germany`,
+`russian-sfsr`, `austria-hungary`, `german-empire`, `weimar-republic`,
+`czechoslovakia`, `saint-domingue`, `sao-tome-and-principe`,
+`united-kingdom-of-great-britain-and-ireland`, `captaincy-general-of-cuba`,
+`vietnam-republic-of`. Four matched on a capital *and* the dissolution year
+(Estado Novo, the First Republic, Austria-Hungary, the German Empire,
+Czechoslovakia, South Vietnam); the rest on the dissolution year alone, with
+the inception agreeing on eleven of them.
+
+**15 refused, and the refusals are the pass's own reading.**
+
+| refused | why |
+| --- | --- |
+| `european-economic-community` | Q52847 was dissolved in 2009; the record ends 1993 |
+| `inca-empire` | Q28573 dissolved 1533/1572; the record ends 1649 |
+| `dutch-republic` | Q170072 dissolved 1795; the record ends 1782 |
+| `viceroyalty-of-brazil` | Q2920081 dissolved 1808; the record ends 1815 |
+| `orange-free-state` | Q218023 dissolved 1902; the record ends 1910 |
+| `vietnam-democratic-republic-of` | the record is ongoing and Q172640 was dissolved in 1976 — the same refusal the 22 September fire made |
+| `united-kingdom-before-1886`, `castille`, `persia`, `transvaal` | neither signal could be checked: no capital on the record, and the item names no dissolution against a record end of 1877, 1529, 1925, 1910 |
+| `military-dictatorship` | its three names resolve to three different items |
+| `england-and-ireland`, `algeria-under-france`, `cuba-under-spain`, `vietnam-annam-cochin-china-tonkin` | no English article their names resolve to |
+
+The five ending in a year the item's dissolution does not carry are the
+interesting ones: four of them end at a **Historical Basemaps snapshot**
+(1529, 1782, 1815, 1910) rather than at a dissolution, which is what the
+import's own summary says those years are. The gate is doing what it was
+written for.
+
+**Counts.** 19 records rewritten, all `active`, all flagged
+`polity-description`; 19 `wikidata` locators and 19 `wikipedia-en` locators
+added, every one at a revision the cache now holds. 14 leads fetched, 5 read
+off disk. Three of the nineteen are Historical Basemaps records under
+GPL-3.0-only and carry a CC BY-SA quotation beside the GPL summary, which is
+the first time a described polity has not been CShapes' or the assistant's;
+the validator's licence rules pass, because the prohibition runs the other way
+— nothing here copies NC or GPL material into a CC BY-SA record. Corpus
+unchanged: **858 active, 242 main, 616 filed, 834 edges, largest component
+609, 0 errors, 496 warnings**; citations to check go from 13,079 to 13,105.
+
+**What this pass did not write.** No identity field. Twelve of the nineteen
+carry no `wikidata` key at all — the item is named in a source locator and
+nowhere else — and CLAUDE.md gives identity fields to the import and not to a
+hand pass. A12(6)'s 177 are in the same state. The narrow question for the
+owner is whether a reconciliation this certain (one article, one item, the
+dissolution year matching) should write `wikidata` as it goes, which would
+let the next Wikidata run see these records at all.
+
+**Deviation 1412.** *Population for an ended polity is a snapshot of a year,
+and P1082 without a `P585` qualifier is unusable for one.* The pass takes the
+latest qualified value and omits the figure where there is none, so the Soviet
+Union carries 293 million people (1989) and the German Empire carries no
+population rather than a number with no year against it. Five of the nineteen
+carry no area, four no population, two neither.
