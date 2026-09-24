@@ -5311,13 +5311,12 @@ rebuild, then the index — and `docs/m53-polities.md` §4.1 is re-taken in the
 commit that writes the records, which this fire did at 380 of 879. Deviation
 1251 has not recurred.
 
-**The check, as this fire leaves it.** "Validate records" is **green on both of
-the commits that changed anything** — run **1676** on the records commit
-`4b7219be` and run **1677** on the index commit `ce0f48f1` — and "Tests" was
-still running on each when the fire ended. The docs-only commits after them
-each start a run of their own and cancel the one before, which is the pattern
-every fire of this branch sees, so **the run to read is the newest one on the
-branch head**, not 1677. Locally the fire has
+**The check is green on the head of this fire.** Run **1681** on `b98f9f8d`
+concluded **success** — "Validate records" and "Tests" both green, and with
+them the two steps that hold `data/index/` to the records it is built from.
+Runs 1676, 1677, 1678 and 1680 were each cancelled by the next push, which is
+deviation 1258 below and the pattern every fire of this branch sees; 1681 is
+the one that ran to the end because nothing followed it. Locally the fire has
 `node tools/validate.mjs --index` clean at **0 errors and 412 warnings**, and
 the **1,810 tests of the 152 pure suites all pass with none failed and none
 skipped** — which is every suite that judges a record, the validator's own,
