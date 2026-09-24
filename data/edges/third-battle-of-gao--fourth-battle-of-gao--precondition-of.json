@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-gao--fourth-battle-of-gao--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Battle of Gao\", revision 1370619931, § February 20–22 attack"
+    }
+  ],
+  "from": "third-battle-of-gao",
+  "to": "fourth-battle-of-gao",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The fourth battle's article opens its account by naming the third and the relation between them: \"Ten days after the Third Battle of Gao, the Jihadists launched another offensive to retake the city on 20 February 2013.\" Both leads say the same thing from either side — the third was \"a raid on the city\" whose \"raiders were defeated\", the fourth \"an attempt by rebel MOJWA forces to retake the city\" — so the sentence is stating a second attempt by the same force at the same objective and not only a date. Probable: Wikipedia alone.",
+  "dispute": null
+}

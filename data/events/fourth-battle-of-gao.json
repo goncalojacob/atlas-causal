@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fourth-battle-of-gao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Two cited sources disagree about one day and the wider bound is kept: the item's P582 is 23 February, the article at revision 1370619931 gives \"20–22 February 2013\" in its first sentence and its infobox. A7 licenses widening an interval from the cited article and not narrowing one. Place by A9's second step (P276 Q188904, Gao); the item's own P625 is the same point to the digit."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q10766798",
+  "wikipedia": {
+    "en": "Fourth Battle of Gao"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10766798"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Battle of Gao\", revision 1370619931"
+    }
+  ],
+  "title": "Fourth Battle of Gao",
+  "summary": "The English Wikipedia article \"Fourth Battle of Gao\", at revision 1370619931, opens: \"The Fourth Battle of Gao was fought in the city of Gao on 20–22 February 2013, during the Northern Mali Conflict. It was an attempt by rebel MOJWA forces to retake the city.\" Wikidata item Q10766798, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-02-20",
+    "endDate": "2013-02-23"
+  },
+  "place": "gao",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

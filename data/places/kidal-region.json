@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kidal-region",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q338988 for batch 52. `region` off the item's own class, region of Mali. It is kidal-offensive's place by A9's second step: the event's own P625 is 215 km south of the region's, which is the size of the thing and not a disagreement — the article's own statement of the offensive's objective is \"the capture of MINUSMA bases in Kidal Region\". Not the atlas's `kidal`, which is the town (Q650100)."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q338988",
+  "wikipedia": {
+    "en": "Kidal Region",
+    "pt": "Kidal (região)"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Kidal Region",
+    "Kidal (região)"
+  ],
+  "where": {
+    "lon": 0.74694444444444,
+    "lat": 19.973333333333,
+    "precision": "region",
+    "label": "Kidal Region"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
