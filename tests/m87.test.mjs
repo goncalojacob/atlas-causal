@@ -12,6 +12,7 @@ import { lensView, activeFoci } from '../src/lens.js';
 import {
   firstSentence, yearsInLead, spanOutsideLead, leadSpanWarnings,
 } from '../src/validate/rules.js';
+import { reusablePlace } from '../tools/import/places.mjs';
 
 // An atlas the size of a test, with one thing added: `activeEvents` counts how
 // many times it was read. `eventsOfFocus` walks that list — and builds a Set of
@@ -174,4 +175,60 @@ test('§10: the warning names both spans, and is raised only about an active eve
   // A record with no lead in hand is not a record this can say anything about.
   assert.deepEqual(leadSpanWarnings(records, new Map()), []);
   assert.deepEqual(leadSpanWarnings([], leads), []);
+});
+
+// §11 (review part C, finding 9). The Wikidata import reused a place by item
+// alone, and thirty-eight of the atlas's places carry no item — a place written
+// by a person never will until somebody adds one — so `london-q84` was written
+// beside the hand-written `london` at the same point and the events of one town
+// went to two marks. Folded name and distance now, the same two signals the
+// Natural Earth matcher uses, and exactly one record has to survive both.
+const place = (id, names, lon, lat, extra = {}) => ({
+  kind: 'place', status: 'active', id, names, where: { lon, lat, precision: 'city', label: names[0] }, ...extra,
+});
+
+test('§11: a place the atlas already holds is reused, by its name and where it is', () => {
+  const held = [
+    place('london', ['London'], -0.1276, 51.5072),
+    place('lisbon', ['Lisboa', 'Lisbon'], -9.1393, 38.7223),
+    place('belem-lisbon', ['Belém, Lisbon', 'Belém'], -9.2058, 38.6959),
+  ];
+
+  // The hand-written record, found by an item that has no record of its own.
+  assert.equal(reusablePlace({ names: ['London', 'Londres'], point: { lon: -0.1, lat: 51.5 } }, held), 'london');
+  // Folded: the same name written with different diacritics is the same name.
+  assert.equal(reusablePlace({ names: ['Lisboa'], point: { lon: -9.14, lat: 38.72 } }, held), 'lisbon');
+  assert.equal(reusablePlace({ names: ['LISBON'], point: { lon: -9.14, lat: 38.72 } }, held), 'lisbon');
+
+  // And the distance only ever refuses: nothing is reused for being near, and
+  // a name that matches four thousand kilometres away is another place.
+  assert.equal(reusablePlace({ names: ['Belém'], point: { lon: -48.5, lat: -1.45 } }, held), null,
+    'Belém in Pará is not Belém in Lisbon');
+  assert.equal(reusablePlace({ names: ['Porto'], point: { lon: -8.61, lat: 41.15 } }, held), null,
+    'a name the atlas does not hold is a place it does not have');
+
+  // Two records of one name near one point is a question for a person.
+  const twice = [...held, place('london-again', ['London'], -0.13, 51.51)];
+  assert.equal(reusablePlace({ names: ['London'], point: { lon: -0.1, lat: 51.5 } }, twice), null);
+
+  // Nothing to go on is no match: a place with no point, a candidate with no
+  // name, a record that is not a place, a record that is not active.
+  assert.equal(reusablePlace({ names: ['London'], point: null }, held), null);
+  assert.equal(reusablePlace({ names: [], point: { lon: -0.1, lat: 51.5 } }, held), null);
+  assert.equal(reusablePlace({ names: ['London'], point: { lon: -0.1, lat: 51.5 } }, []), null);
+  assert.equal(reusablePlace(
+    { names: ['London'], point: { lon: -0.1, lat: 51.5 } },
+    [{ ...place('london', ['London'], -0.1276, 51.5072), status: 'retracted' }],
+  ), null, 'a tombstone is out of the corpus');
+  assert.equal(reusablePlace(
+    { names: ['London'], point: { lon: -0.1, lat: 51.5 } },
+    [{ ...place('london', ['London'], -0.1276, 51.5072), kind: 'actor' }],
+  ), null, 'and an actor of the same name is not a place');
+
+  // The label a place carries for the map counts as one of its names, because
+  // a record written before `names` was required may have it and nothing else.
+  assert.equal(reusablePlace(
+    { names: ['Porto'], point: { lon: -8.61, lat: 41.15 } },
+    [{ kind: 'place', status: 'active', id: 'porto', names: [], where: { lon: -8.6291, lat: 41.1579, label: 'Porto' } }],
+  ), 'porto');
 });

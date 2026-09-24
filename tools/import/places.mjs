@@ -121,6 +121,45 @@ export function placeIdentity(record) {
   };
 }
 
+// --- a place this atlas already holds ---------------------------------------
+//
+// M87 §11 (review part C, finding 9). `placeRecord` in the Wikidata import reuses
+// a place by Wikidata item alone, so `london-q84` was written beside the
+// hand-written `london` at the same point, and eight more pairs share a point.
+// Thirty-eight of the atlas's places carry no item at all, and a place record
+// written by a person never will until somebody adds one, so the item cannot be
+// the only signal.
+//
+// The same two the Natural Earth matcher uses above and no third: an exact fold
+// of a name, and the distance. Both halves of the guard are load-bearing — a
+// name is not an identity, and this atlas's own corpus has a Belém in Lisbon and
+// a Belém in Pará — and the distance only ever *refuses*: nothing is reused for
+// being near. Exactly one record has to survive both, because two is a question
+// for a person and not a match.
+//
+// It never merges and never writes: it hands back the id of a record that is
+// already there, so the import points its events at that one instead of writing
+// a second. Merging the pairs that are already on disk is a record change and
+// A14 (6)'s.
+export function reusablePlace({ names = [], point = null }, records, { near = NEAR_DEGREES } = {}) {
+  const wanted = new Set(names.filter((name) => typeof name === 'string' && name !== '').map(fold));
+  if (wanted.size === 0 || !point) return null;
+  const found = [];
+  for (const record of records ?? []) {
+    if (record?.kind !== 'place' || record.status !== 'active') continue;
+    const mine = placeIdentity(record);
+    // An item of its own that is not this one is another place, whatever it is
+    // called: two towns of one name in one country are exactly what `wikidata`
+    // is on a record to tell apart.
+    const calls = [...(mine.names ?? []), record?.where?.label]
+      .filter((name) => typeof name === 'string' && name !== '');
+    if (!calls.some((name) => wanted.has(fold(name)))) continue;
+    if (degreesApart(mine, point) > near) continue;
+    found.push(record.id);
+  }
+  return found.length === 1 ? found[0] : null;
+}
+
 // --- the match -----------------------------------------------------------
 
 // → { entries, matched, unresolved }
