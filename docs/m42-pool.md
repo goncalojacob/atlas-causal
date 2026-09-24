@@ -8057,3 +8057,13 @@ of it.
   the number that decides whether a vein is worth reading.
 - **Deviation numbers: take the next above 1419.** This fire wrote **1414 to
   1419**.
+
+**The check is green on this fire's head.** Run 1689 of `validate.yml`, commit
+`7c97a4c3`, conclusion `success`. Two earlier runs of this fire were red and
+both for the same reason, which is the ordering rule 798 doing its work rather
+than a fault: run 1683 on the merge head and run 1686 on the index head were
+taken before `docs/m53-polities.md` §4.1 and `docs/m42-connections.md` had been
+re-taken over the batch's records, and `tests/m53.test.mjs` and
+`tests/m67.test.mjs` are correspondence tests that fail on exactly that gap.
+Runs 1685 and 1688 were cancelled by the next push in the same concurrency
+group. The re-run allowance is unspent: nothing was re-run.
