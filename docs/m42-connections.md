@@ -4967,3 +4967,61 @@ forces advanced in Gao"* — so only that one is written there.
   written. **`siege-of-tessalit` is therefore the one record of this batch with
   no edge at all**, and the stand says so rather than reaching for a sentence
   that is not there.
+
+## Batch 51 — the Korean War read as a chain, and the component `parent` cannot join
+
+*24 September, the import fire that picked the run up at 15:45Z. Today already
+carries a `## Curation 2026-09-24` section and all six of A14's passes have
+theirs, so this is an import fire; A10's order of need puts **Asia** at the
+front, trailing at 149 against Africa's 155 and Europe's 378. The full note,
+the refusals and the counts are in `docs/m42-pool.md` under "Batch 51".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `first-battle-of-seoul` → `battle-of-osan` | `precondition-of` | *"The North Koreans had captured South Korea's capital, Seoul, by June 28, which forced the government and its shattered army to retreat further south"*, and the column Task Force Smith met was *"advancing from Seoul"* — "Battle of Osan", revision 1375327001, § Outbreak of war and § Infantry column |
+| `battle-of-osan` → `battle-of-taejon` | `precondition-of` | *"Within a week, the 24th Infantry Division had been pushed back to Taejon where it was again defeated in the Battle of Taejon"* — "Battle of Osan", revision 1375327001, § Aftermath; read with *"The 24th Infantry Division's regiments were already exhausted from the previous two weeks of delaying actions"* — "Battle of Taejon", revision 1370312872, lead |
+| `battle-of-taejon` → `battle-of-the-pusan-perimeter` | `enabled` | *"the 24th Infantry Division achieved a strategic victory by delaying the North Koreans, providing time for other U.S. divisions to establish a defensive perimeter around Pusan further south. The delay imposed at Taejon probably prevented a U.S. rout during the subsequent Battle of Pusan Perimeter"*, and the order itself — *"ordered General Dean to hold Taejon until the 20th so that the 1st Cavalry Division and 25th Infantry Division could establish defensive lines along the Naktong River, forming the Pusan Perimeter"* — "Battle of Taejon", revision 1370312872, lead and § Second North Korean attack |
+| `first-battle-of-seoul` → `battle-of-inchon` | `reacted-to` | *"Days after the beginning of the war, General of the Army Douglas MacArthur, the US Army officer in command of all UN forces in Korea, envisioned an amphibious assault to retake the Seoul area. The city had fallen in the first days of the war in the First Battle of Seoul."* — "Battle of Inchon", revision 1370266029, § Planning |
+| `battle-of-inchon` → `second-battle-of-seoul` | `caused` | *"The operation involved some 75,000 troops and 261 naval vessels and led to the recapture of the South Korean capital of Seoul two weeks later"*, where the article's own link on "recapture" points at this record — "Battle of Inchon", revision 1370266029, lead |
+| `battle-of-the-pusan-perimeter` → `battle-of-unsan` | `precondition-of` | *"After breaking out of the Pusan Perimeter at the south-east tip of the Korean peninsula in September, the UNC offensive pursued the Korean People's Army (KPA) through South Korea, into North Korea, and toward the Sino-Korean border"*, and *"In response to the rapid KPA collapse and the UNC advance toward the Chinese border, Chairman Mao Zedong ordered the People's Liberation Army's North East Frontier Force to be reorganized into the People's Volunteer Army (PVA) for the upcoming intervention in Korea"* — "Battle of Unsan", revision 1370276047, § Background |
+| `battle-of-unsan` → `battle-of-the-ch-ongch-on-river` | `precondition-of` | *"the PVA 13th Army Group surprised and defeated the Republic of Korea Army (ROK) II Corps and the US 1st Cavalry Division in a series of battles around Onjong and Unsan, destroying the right flank of the US Eighth Army while forcing the UN forces to retreat back to the Ch'ongch'on River"*, and *"Because of the earlier UN defeat at the Battle of Unsan, the US 25th Infantry Division expected to encounter heavy PVA resistance during its advance"* — "Battle of the Ch'ongch'on River", revision 1374278822, § Background and § Actions at Ipsok |
+| `battle-of-the-ch-ongch-on-river` → `battle-of-chosin-reservoir` | `precondition-of` | *"At the same time, the US Eighth Army on the Korean western front was forced into full retreat at the Battle of the Ch'ongch'on River, and MacArthur ordered Almond to withdraw the US X Corps to the port of Hungnam"* — "Battle of Chosin Reservoir", revision 1370109047, § Battle / Actions at Yudam-ni |
+| `battle-of-the-ch-ongch-on-river` → `third-battle-of-seoul` | `caused` | *"Immediately after the PVA 13th Army's victory over the Eighth Army at the Ch'ongch'on River, Chinese Communist Party chairman Mao Zedong started to contemplate another offensive against the UN forces on the urging of North Korean Premier Kim Il Sung"* — "Third Battle of Seoul", revision 1370750418, § Background |
+
+All nine are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Two of the nine run into or out of a record that was already
+here** — both of them `battle-of-inchon`, which until this batch had no edge at
+all and was one of the 159 events the validator warned `degree-zero` about. The
+other seven chain the batch to itself, in one line from the fall of Seoul in
+June 1950 to its third fall in January 1951.
+
+**The one `reacted-to` runs forward in time**, as batches 49 and 50 wrote down:
+`first-battle-of-seoul --reacted-to--> battle-of-inchon` says *the landing
+answered the loss of the capital*, which is what the two consecutive sentences
+of the Inchon article's § Planning say. Rule 4 refused nothing this batch.
+
+**`battle-of-the-ch-ongch-on-river` is the branching point**, and both branches
+rest on a sentence of the article at the other end: the western defeat pulled
+the X Corps out of the Chosin Reservoir, and it is what Mao was answering when
+he ordered the offensive that took Seoul for the third time.
+
+**Two edges were looked for and not written.**
+
+- **`battle-of-chosin-reservoir → korean-armistice-agreement`.** The Chosin
+  article does carry a sentence that would join this chain to the largest
+  connected component in one stroke — for China the battle *"drove a vastly
+  technologically superior foe from the battlefield, and eventually forced it
+  to sign an armistice agreement some three years later"*. But the article is
+  reporting how one side remembers the battle, in a quotation inside a
+  quotation, and not asserting it: the clause it belongs to is *"for China, it
+  won because"*. An edge written on that sentence would be reading a party's
+  memory as the article's argument, and the fact that it would have moved the
+  component is the reason to be careful rather than the reason to write it.
+- **`chinese-civil-war → battle-of-unsan`**, which would have done the same
+  thing. The Ch'ongch'on article names the civil war only for the PVA's
+  equipment — *"Because the Chinese had captured large numbers of Nationalist
+  weapons during the Chinese Civil War, most of the PVA men used US-made small
+  arms"* — and the Chosin article only for its tactics. Neither says the civil
+  war is why the intervention happened, and the Chinese Civil War article's own
+  two mentions of Korea at revision 1372330605 run the other way, about what
+  the Korean War did to Taiwan. The claim is not in the sources read here.

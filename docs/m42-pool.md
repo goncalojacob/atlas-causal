@@ -8652,3 +8652,313 @@ after it. Runs 1723 and 1724 were cancelled by the next push in the same
 concurrency group, which is the ordering of rule 798 working rather than a
 fault. **2,114 tests pass locally, 1,819 pure and 295 browser, with nothing
 skipped.** The re-run allowance is unspent: nothing was re-run.
+
+## Batch 51 — the Korean War read as a chain, and the component `parent` cannot join
+
+*24 September, the fire that picked the run up at 15:45Z. Today already carries
+a `## Curation 2026-09-24` section and **all six of A14's passes carry theirs**,
+so this is an import fire and every one of the six is skipped by its own rule.
+`origin/m0` was already an ancestor of `m42` at claim time, so no merge. The
+claim at 13:07Z was 158 minutes old and `origin/m42` had not moved for 93, so
+the protocol's ninety-minute clause let this fire take it. A10's order of need
+has turned over as batch 50's stand said it would: **Asia trails at 149**
+against Africa's 155 and Europe's 378, so this batch is nine Asia rows and no
+other lane.*
+
+### The vein, and the reason it was the right one to read and the wrong one to count
+
+Batch 50's stand named two Asia veins and this is the first of them. `Q8663`,
+the Korean War, answers **138 distinct rows** under the inverse `part of` vein,
+and the atlas held exactly **one** of them — `battle-of-inchon`, which arrived
+in batch 44 and has had no edge since. The other held Korean War records are
+`korean-war` itself and `korean-armistice-agreement`.
+
+Read through the query service (`query.wikidata.org/sparql`), which answered 200
+on the first or second attempt throughout, and `en.wikipedia.org` through
+`index.php?action=raw&oldid=<revid>` pinned from one light `prop=revisions`
+call, which is deviation 1425's reading applied from the start: every one of the
+ten articles came back inside two attempts, against the two hours of 429s batch
+50 spent.
+
+A11 (b)'s partition check was made before the import: none of the nine ids is on
+`origin/m42b`, whose `data/events/` holds 1,172 ids.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `first-battle-of-seoul` | 15 | 25 Jun 1950 | `seoul` (new) | `korean-war` |
+| `battle-of-osan` | 15 | 5 Jul 1950 | `osan` (new) | `korean-war` |
+| `battle-of-taejon` | 15 | 14–21 Jul 1950 | `daejeon` (new) | `korean-war` |
+| `battle-of-the-pusan-perimeter` | 19 | 4 Aug – 18 Sep 1950 | `pusan-perimeter` (new) | `korean-war` |
+| `second-battle-of-seoul` | 11 | 22–25 Sep 1950 | `seoul` (reused) | `korean-war` |
+| `battle-of-unsan` | 7 | 25 Oct – 4 Nov 1950 | `unsan-county` (new) | `korean-war` |
+| `battle-of-the-ch-ongch-on-river` | 11 | 25 Nov – 2 Dec 1950 | `chongchon-river` (new) | `korean-war` |
+| `battle-of-chosin-reservoir` | 20 | 27 Nov – 13 Dec 1950 | `lake-changjin` (new) | `korean-war` |
+| `third-battle-of-seoul` | 10 | 31 Dec 1950 – 7 Jan 1951 | `seoul` (reused) | `korean-war` |
+
+All nine pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one inside `korean-war`'s 25 June 1950 to
+27 July 1953; and **lane**, every one in Korea. All nine filed, so **main stays
+at 242**, unmoved through twenty-two batches, three curation fires and A14.
+
+**Three classes were added**, all of them places and all three read off the
+item's own description rather than guessed: `Q718893` theater of war
+(*"area or place in which important military events occur or are progressing"*),
+`Q18534049` county of North Korea (*"subdivision from North Korea"*) and
+`Q131681` reservoir (*"artificial lake impounded using a dam or lock to store
+water"*), each as `place`/`region` — the precision `Q4022`, river, already
+carries for the same reason, a thing on the ground longer than a town. Without
+them the Pusan Perimeter, Unsan and the Chosin Reservoir would have arrived
+placeless, and those are three of the nine. `Q178561` battle, `Q515` city,
+`Q1549591` big city, `Q482821` metropolitan city of South Korea, `Q108178728`
+national capital and `Q51929311` largest city were all in the table already.
+
+### The nine edges, and the component they did not move
+
+Nine edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 51". **Two run into or out of
+`battle-of-inchon`**, which was already here, and the other seven chain the
+batch to itself.
+
+| from | type | to |
+| --- | --- | --- |
+| `first-battle-of-seoul` | precondition-of | `battle-of-osan` |
+| `battle-of-osan` | precondition-of | `battle-of-taejon` |
+| `battle-of-taejon` | enabled | `battle-of-the-pusan-perimeter` |
+| `first-battle-of-seoul` | reacted-to | `battle-of-inchon` |
+| `battle-of-inchon` | caused | `second-battle-of-seoul` |
+| `battle-of-the-pusan-perimeter` | precondition-of | `battle-of-unsan` |
+| `battle-of-unsan` | precondition-of | `battle-of-the-ch-ongch-on-river` |
+| `battle-of-the-ch-ongch-on-river` | precondition-of | `battle-of-chosin-reservoir` |
+| `battle-of-the-ch-ongch-on-river` | caused | `third-battle-of-seoul` |
+
+**The largest connected component does not move. It is 624 before and 624
+after, and this is the finding of the batch rather than its failure.** What the
+batch built is a component of **ten** — the nine new records and
+`battle-of-inchon` — which is now the second largest in the atlas, where before
+it there was no Korean War component at all and `battle-of-inchon` was a
+component of one. The component count therefore stays at 202 and the edgeless
+count falls from 159 to 158: nine records arrive, every one of them with an
+edge, and one record that was here loses its `degree-zero` warning.
+
+**Why the ten do not join the 624 is C8, and this batch is the clearest case of
+it the run has produced.** `korean-war` *is* inside the largest component,
+through `chinese-civil-war --precondition-of--> korean-war` and
+`korean-war --caused--> korean-armistice-agreement`, and every one of these
+nine records is a child of it. `parent` is a display fact and never an argument,
+so it is not a link; and A14 forbids a batch to write an edge from a parent to
+its own child until the owner decides C8. So the war is in the component, its
+battles are beside it, and the one edge that would join them is the one edge
+this batch may not write. **The 91 parent-to-child edges that already exist
+include `korean-war --caused--> korean-armistice-agreement`** — which is to say
+the atlas already contains, on this very war, the edge whose successors are
+barred.
+
+Two edges to records outside the family were looked for and refused, and both
+of them would have joined the ten to the 624 in one stroke. That is exactly why
+they were read twice rather than once. Both refusals are written out in
+`docs/m42-connections.md`; in short, the Chosin article's armistice sentence is
+reporting *"for China, it won because"* and not asserting, and the Chinese Civil
+War is named in these articles only for the PVA's rifles and its tactics. **The
+batch that would most like a sentence is the batch that should trust one least**,
+and the honest report is that the chain is nine records long, joined to one held
+record, and waiting on C8 for the tenth link.
+
+### A12 (4)'s participants — the largest single move an import has made
+
+**Eight of the nine items carry a `P710`**, and every participant they name that
+this atlas holds is one of four: `Q30` the United States, `Q145` the United
+Kingdom, `Q423` North Korea and `Q884` South Korea, read as
+`united-states-of-america`, `united-kingdom`, `korea-people-s-republic-of` and
+`korea-republic-of`, all four `belligerent` — which is how `korean-war` and
+`battle-of-inchon` already read the same items. `Q163098`, the Eighth United
+States Army, is the one participant named that is not a record here, and
+`Q18016068`, the First Battle of Seoul, is the one of the nine whose item
+carries no `P710` at all. `docs/m53-polities.md` §4.1 goes from **383 of 898**
+to **391 of 907**, counted by overlap from 384 to 392: eight events gained a
+line, which is the biggest move an import has made to that row and the first
+time in five batches the numerator has moved at all.
+
+### A9's places, and the two steps agreeing seven times out of seven
+
+Seven place records are new and **not one was hand-corrected**; all seven carry
+`summary: null`, which is what A14 (6) left every imported place at, and the
+`a9-place` flag.
+
+- **`seoul`** (`city`, `Q8684`) serves three of the nine. Two of them —
+  `first-battle-of-seoul` and `second-battle-of-seoul` — carry no `P625` of
+  their own at all, so A9's first step has nothing to say and the second decides;
+  `third-battle-of-seoul`'s own point is 1.4 km from the city's, which is the
+  same picture.
+- **`osan`** (`city`, `Q42129`), **`daejeon`** (`city`, `Q20921`),
+  **`unsan-county`** (`region`, `Q708507`) and **`lake-changjin`** (`region`,
+  `Q12614724`) are the four where the two steps differ by 5, 17, 13 and 15 km
+  and the difference is the size of the thing, not a disagreement about where
+  the battle was: a battle fought over a county, a metropolitan city, or a
+  reservoir the article calls *"the Chosin Reservoir area"* is not at a point.
+  Held at the second step in every case.
+- **`pusan-perimeter`** (`region`, `Q24297886`) is the one where the two steps
+  are the same point to the digit: the item's own `P625` and its `P276`'s are
+  both 129.0403E 35.1N, because the perimeter is what it was fought over.
+- **`chongchon-river`** (`region`, `Q499266`) is the widest gap, 37 km, and the
+  reason is that a river's `P625` is a point on a line: the article puts the
+  fighting *"along the Ch'ongch'on River Valley"* and the record is the valley.
+
+**A9's first step changed no answer this batch**, which is the first batch in
+three where it changed none — batch 49's `te-li-ssu` and batch 50's
+`adrar-des-ifoghas` each had one.
+
+### One date read off the article, and one disagreement written down instead
+
+- **`battle-of-osan`** carried `1950-07-04`, the item's single `P585`. Its own
+  cited article at revision 1375327001 dates the engagement to the next day,
+  in its first sentence — *"On July 5, 1950, Task Force Smith ... was moved to
+  Osan"* — and in its infobox, which reads *"July 5, 1950"*. The day is now
+  5 July. **This is an A7 reading that *moves* a date by one day rather than
+  widening a span, which the run has not done before: deviation 1429.** Nothing
+  in the batch depended on it; the reason to do it is A14 (1)'s own words,
+  *never the date kept wrong*.
+- **`battle-of-taejon`** is the disagreement the other way round and is
+  therefore **not** changed. The item's `P580` and `P582` give 14 to 21 July
+  1950; the article at revision 1370312872 gives *"16–20 July 1950 (4 days)"*
+  in its infobox and *"(16–20 July 1950)"* in its first sentence. A7 licenses
+  widening an interval from the cited article and **not narrowing one**, so the
+  wider bounds the item states are kept and the record's `review.note` says
+  that two cited sources disagree about four days. The validator's
+  `span-vs-lead-sentence` check does not catch it, because the cached lead's
+  first sentence has the parenthetical stripped.
+
+### The one refusal, and the vein it names for the next fire
+
+**`Q485256`, the Chinese spring offensive, was chosen for this batch and set
+aside before it was imported.** It is the largest thing in the vein that is not
+here — 700,000 men, the last all-out PVA offensive of the war — and it fails
+both of the batch's own tests at once. It carries **no `P276`, no `P131` and no
+`P17`**, so A9's second step has nothing to reach and it would arrive
+**placeless**; and its article at revision 1376272952 names no event this atlas
+holds in a sentence that argues anything, so it would arrive **edgeless** as
+well. Its § Aftermath reaches the armistice only through Operation Ripper and
+the Jamestown Line, neither of which is a record here. A record that would
+arrive placeless and edgeless is what A5 exists to stop, and the right answer
+is not to import it alone but to take it **with the vein under it** — the Imjin
+River (`Q16170016`, 6 sitelinks) and Kapyong (`Q713018`, 8) are both rows of
+the same query, both dated, both with English articles, and the Imjin River is
+named in the Third Battle of Seoul's own lead. **That is the next Asia batch.**
+
+### The deviations
+
+- **1429.** *An A7 reading may move a date and not only widen a span.* Every A7
+  reading this run has written has widened an interval or closed a `date` flag.
+  `battle-of-osan`'s item gives one day and its own cited article gives the
+  next, twice over, in the first sentence and in the infobox. A7's licence is
+  written as widening, and A14 (1)'s is written as *never the date kept wrong*;
+  where the two point the same way at a one-day correction, the second decides
+  and the record carries the note saying what moved and on what authority.
+- **1430.** *A batch can be chosen for its endpoints, do everything right, and
+  still not move the largest component, because `parent` is not a link.* Batch
+  49's stand said to pick the vein whose endpoints are already inside the
+  largest component, and `korean-war` and `korean-armistice-agreement` both
+  are. What that advice cannot see is **which** kind of endpoint: a held
+  *sibling* inside the component joins a chain to it, and a held *parent*
+  inside the component does not, because the only edge that would reach it is
+  the parent-to-child edge C8 bars. Mali worked because `operation-serval` and
+  the coups were siblings. Korea does not, because the only held siblings are
+  `battle-of-inchon`, which was isolated, and `korean-armistice-agreement`,
+  which no article read here argues to. **A vein's endpoints should be counted
+  as siblings inside the component, not as records inside it.**
+- **1431.** *Wikimedia's rate limit is survivable if the first request is the
+  cheap one.* Batch 50 spent two hours on 429s. This batch read eleven articles
+  in a few minutes by never asking for `prop=extracts` or `api/rest_v1` at all:
+  one `prop=revisions` call for the revid, then `index.php?action=raw&oldid=`
+  for the text, each retried every two seconds. Deviation 1425 found this at
+  the end of a bad afternoon; applied from the start it costs nothing.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 898 | **907** |
+| main | 242 | **242** |
+| filed | 656 | 665 |
+| active edges | 867 | **876** |
+| largest connected component | 624 | **624** |
+| second largest component | 8 | **10** |
+| components | 202 | **202** |
+| events with no edge at all | 159 | **158** |
+| events with no place | 50 | 50 |
+| validator | 0 errors, 427 warnings | **0 errors, 426 warnings** |
+| per lane, active | Europe 378, Americas 216, Asia 149, Africa 155 | Europe 378, Americas 216, **Asia 158**, Africa 155 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 | unchanged |
+
+The one warning that goes away is `degree-zero` on `battle-of-inchon`, and no
+new one arrives: every one of the nine has an edge, a place and a summary from
+its own cited lead.
+
+`docs/m53-polities.md` §4.1 is retaken at **391 of 907**, counted by overlap
+**392**, which is A12 (4) above.
+
+## Where the run stands after batch 51, for the fire that picks it up
+
+*24 September, 15:45Z onward. An import fire, one batch and no code change.*
+
+| | |
+| --- | --- |
+| corpus | **907 active** |
+| **main** | **242**, unmoved through twenty-two batches, three curation fires and A14 |
+| filed | 665 |
+| active edges | **876** |
+| largest connected component | **624** (unmoved; see below) |
+| components | **202** (unmoved) |
+| events with no edge at all | **158** (−1) |
+| events with no place | **50**, unmoved: all nine arrived placed |
+| validator | **0 errors, 426 warnings** |
+| per lane, active | Europe 378, Americas 216, **Asia 158**, Africa 155 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again**: Asia is at 158 and **Africa
+trails at 155**, so the next import batch is Africa's unless a chain crosses out
+of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **C8 is no longer the run's largest *single* question; it is now the thing
+  keeping a ten-record component out of the largest one.** This batch is the
+  case to put to the owner: nine Korean War battles, chained to each other and
+  to `battle-of-inchon`, sitting beside a `korean-war` record that is inside the
+  624, with `parent` between them and no edge allowed across it. Deciding C8
+  one way joins ten records to the component at a stroke; deciding it the other
+  way means the run should stop choosing veins by whether the *parent* is in the
+  component. Until then no batch writes a parent-to-child edge and the 91 that
+  exist stay.
+- **The next Asia vein is the Chinese spring offensive with the vein under it**
+  — `Q485256` with `Q16170016` the Battle of the Imjin River and `Q713018`
+  Kapyong, and the rest of the 138 rows `Q8663` answers. Taken together they
+  have places and they have edges; taken alone the offensive has neither, which
+  is why this batch set it aside.
+- **The Africa lane is what A10 asks for next**, and the Mali vein is still not
+  finished: `Q8363015` the Battle of Timbuktu (March 2013), `Q9101600` the
+  second, `Q6337939` Operation Panther, `Q111480185` the Moura massacre (2022)
+  and `Q128007033` the Battle of Tinzaouaten (2024), which would carry the
+  chain from 2013 up to the present and into the two coups the atlas holds.
+- **`siege-of-tessalit` is still the record batch 50 left edgeless** and is
+  still the first thing the next Africa fire should try.
+- **`Q21028650`, the Algiers Accords of 2015, is still refused on its class and
+  is still a question for a person** (batch 50).
+- **The 138 rows of `Q8663` are the richest unread vein the run has found**, and
+  this batch took nine of them. The next ones by sitelinks, all dated and all
+  with English articles, are `Q5073209` the Tunam massacre (13), `Q4260079`
+  Operation Pokpoong (11), `Q489561` Heartbreak Ridge (10), `Q289102` the
+  Battle of Korea Strait (10) — which is fought at `korea-strait`, the place
+  `korean-war` itself stands on — and `Q2890901` the Battle of Nam River (10).
+- **`should the europe lane hold Russian Asia?`** is still the owner's, from
+  batch 49 (deviation 1423).
+- **The five questions of the A14 stand are unchanged** and unanswered.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`.
+- **Deviation numbers: take the next above 1431.** This fire wrote **1429 to
+  1431**.
