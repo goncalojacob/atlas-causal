@@ -4467,6 +4467,8 @@ half-described and got wrong.*
 | events with no edge at all | 158 | **159** |
 | the `americas` lane | 198 active, 55 main | **202 active, 55 main** |
 | the Americas' 17th century | 14 active, 6 main | **18 active, 6 main** |
+| source records | 69 | **70** |
+| edges with two cited authors (rule 9) | 187 | **189** |
 
 **Three of the four joined the largest component and the fourth opened a
 component of its own**, which is what the component count and the isolated count
@@ -4563,7 +4565,18 @@ them wider and fainter, which for three sea fights is the truth about them.
 **All three run into or out of `dutch-brazil-1630-1654`, which is in the largest
 component**, so three of the four new records are in the 604 and the component is
 **607**. Every explanation quotes the sentence that carries it and names the
-revision; all three are `probable`, Wikipedia alone.
+revision; all three are `probable`.
+
+**Two of the three carry a second author, cited and not read**: one more source
+record, `marley-2008-wars-of-the-americas` — David Marley, *Wars of the Americas:
+A Chronology of Armed Conflict in the New World, 1492 to the Present*, second
+edition, ABC-CLIO 2008 — which is the work the siege article cites for the siege
+whole (pp. 193–194) and the 1640 action's article cites for the 1635 landing
+(p. 123). Source records go 69 → **70** and rule 9's count 187 → **189**. The
+Abrolhos edge rests on Wikipedia alone at one revision: the sentence it quotes is
+followed in the article by a reference to Guthrie's *Naval actions of the Thirty
+Years' War*, a journal article, and the page it would need is not the page the
+footnote gives.
 
 ### The one with no edge, and why none was written
 

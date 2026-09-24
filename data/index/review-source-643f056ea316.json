@@ -1032,6 +1032,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "doi": null,
+      "id": "marley-2008-wars-of-the-americas",
+      "isbn": "9781598841008",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Wars of the Americas: A Chronology of Armed Conflict in the New World, 1492 to the Present",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-02",
       "degree": 59,
       "doi": null,

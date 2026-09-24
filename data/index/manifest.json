@@ -1032,7 +1032,7 @@
     "presences": 6691,
     "regions": 5,
     "relations": 138,
-    "sources": 69,
+    "sources": 70,
     "tenures": 83
   },
   "explanationShards": [
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-9c87dc5386bb",
+    "citers": "index/citers-e2af3e4cbefa",
     "core": "index/core-5ed262918257.json",
     "grounds": "index/grounds-1b4b3b86515b.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-ebf71c4d58c5.json",
-    "search": "index/search-e188100c74fa.json",
-    "sources": "index/sources-b6614a0bc712.json",
+    "review": "index/review-1747752cee11.json",
+    "search": "index/search-2b43c05cdd44.json",
+    "sources": "index/sources-23f158a4f531.json",
     "territories": "index/territories-e207bc5c8bd8.json"
   },
   "historyShards": [
@@ -1147,7 +1147,7 @@
       "to": 1599
     },
     {
-      "file": "index/history-edge-1600-1699-c3d1bf8979f6.json",
+      "file": "index/history-edge-1600-1699-57662d3873ed.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "edge",
@@ -1182,7 +1182,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-source-source-629191d5e60c.json",
+      "file": "index/history-source-source-2d6173a41e1e.json",
       "from": null,
       "key": "source",
       "kind": "source",

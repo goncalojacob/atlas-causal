@@ -506,6 +506,15 @@
         }
       ]
     },
+    "marley-2008-wars-of-the-americas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "maxwell-1995-making-of-portuguese-democracy": {
       "from": "git",
       "versions": [

@@ -21373,7 +21373,10 @@ the article's "between April and May 1638", the end left at the item's own 18 Ma
 **Three edges**, each `probable` and each quoting the sentence that carries it,
 all three running into or out of `dutch-brazil-1630-1654`, which is inside the
 largest component — so **the component grows, 604 → 607**, which is the number A5
-asks for. The corpus is **858 active**, the `americas` lane 202, the cell 18 with
+asks for. **Two of the three carry a second author, cited and not read**: one more
+source record, `marley-2008-wars-of-the-americas`, the work the siege article cites
+for the siege whole and the 1640 article cites for the 1635 landing, taking source
+records to **70** and rule 9's count to **189**. The corpus is **858 active**, the `americas` lane 202, the cell 18 with
 its six mains untouched, and South and Central America against North America is
 162 to 19. `docs/m53-polities.md` §4.1 re-taken at **379 of 858 in the same
 commit as the records**, which is deviation 1251's lesson applied the first time it
