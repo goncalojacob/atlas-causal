@@ -13,14 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-23",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the span was 1911-1927, which is the Spanish campaigns in Morocco either side of the war. The cited article's first sentence says, at the cached revision 1374340065, \"fought from 1921 to 1926\". So 1921-1926, and the two days go: the article gives none."
   },
   "origin": {
     "tool": "wikidata"
@@ -42,15 +44,17 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Rif War\", revision 1374340065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rif War\", revision 1374340065: \"an anti-colonial war fought from 1921 to 1926 between the indigenous Berber tribes\""
     }
   ],
   "title": "Rif War",
   "summary": "The English Wikipedia article \"Rif War\", at revision 1374340065, opens: \"The Rif War was an anti-colonial war fought from 1921 to 1926 between the indigenous Berber tribes of the mountainous Rif region of northern Morocco and Spain (joined by France in 1924). Led by Abd el-Krim, the Riffians attacked workers at 'Minas del Rif', an extremely rich, nearly pure magnetite iron mine, and at first inflicted several defeats on the Spanish forces by using guerrilla tactics with the help of captured European weapons. After an unprecedented large landing of Spanish troops at Al Hoceima, considered the first amphibious landing in history to involve the use of tanks and aircraft, as well as France joining the conflict, Abd el-Krim surrendered and was put into exile. In July 1909, some Riffians attacked Spanish workers constructing a rail-bridge to provide access to iron mines near Melilla. This incident led to the summoning of reinforcements from Spain itself. A series of skirmishes over the following weeks cost the Spanish over a thousand casualties. By September, the Spanish Army had 40,000 troops in northern Morocco and had occupied the mountainous tribal regions to the south and southeast of Melilla. The military operations in Jebala, in the Moroccan west, began in 1911 with the Larache landing. Spain worked to pacify a large part of the most violent areas until 1914, a slow process of consolidation of frontiers that lasted until 1919. The following year, after the signing of the Treaty of Fez, the northern Moroccan area was adjudicated to Spain as a protectorate. The Riffian populations strongly resisted the Spanish, unleashing a conflict that would last for several years. In 1921, in an attempt to consolidate control of the region, the Spanish troops suffered the catastrophic Disaster of Annual in addition to a rebellion led by Riffian leader Abd el-Krim. As a result, the Spanish retreated to a few fortified positions while Abd el-Krim ultimately created an entire independent state: the Republic of the Rif. The development of the conflict and its end coincided with the dictatorship of Primo de Rivera, who took on command of the campaign from 1924 to 1927. In addition, and after the Battle of Uarga in 1925, the French intervened in the conflict and established a joint collaboration with Spain that culminated in the Alhucemas landing, which proved a turning point. The Spanish also used chemical weapons during the conflict. By 1926, the area had been pacified; Abd-el-Krim surrendered to the French that year, and Spain gained effective control of the protectorate's territory at last. The Rif War still causes much disagreement among historians. Some see in it a harbinger of the decolonization process in North Africa. Others consider it one of the last colonial wars, as it was the decision of the Spanish to conquer the Rif – nominally part of their Moroccan protectorate but de facto independent – that catalyzed the entry of France in 1924. The Rif War left a deep memory both in Spain and in Morocco. The Riffian insurgency of the 1920s can be interpreted as a precursor to the Algerian War which took place three decades later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q766437, imported by tools/import/wikidata.mjs. The item's own description reads \"1921–1926 war between Spain and Berber tribes of Morocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1911,
-    "end": 1927,
-    "date": "1911-06-08",
-    "endDate": "1927-07-08"
+    "start": 1921,
+    "end": 1926
   },
   "place": "rif",
   "region": "africa",

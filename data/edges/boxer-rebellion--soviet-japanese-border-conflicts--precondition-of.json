@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of",
   "kind": "edge",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "edge-drafted",
-      "a13-relations-pass"
+      "a13-relations-pass",
+      "a14-chronology-dropped"
     ]
   },
   "origin": {
@@ -35,5 +36,9 @@
   "type": "precondition-of",
   "confidence": "probable",
   "explanation": "The conflicts’ own prelude begins at the weakening of the Qing hold on Manchuria that the intervention against the rebellion left. The article reads: \"In the aftermath of the First Sino-Japanese War and the Eight Power Intervention against the Boxer Rebellion in China, the Qing hold over Manchuria and Korea had weakened significantly, leading to both the Russian and Japanese Empires vying for control over the territories.\"",
-  "dispute": null
+  "dispute": null,
+  "retraction": {
+    "on": "2026-09-24",
+    "reason": "A14(4): one of the eleven A13 edges whose quote opens \"Following\", \"After\" or \"In the aftermath\", re-read under the fire's own refusal class — chronology with no claim in it. A13 asks for an edge where the article states that one event caused, enabled, preceded or reacted to the other, and here the sentence’s stated consequence is the Qing hold weakening \"leading to both the Russian and Japanese Empires vying for control over the territories\" — the rivalry of 1904, which the atlas holds as the Russo-Japanese War. The border conflicts of 1932–1939 are thirty-three years on and the sentence does not reach them; the endpoint was chosen by which article happened to be open. The quote stays in this record; what is withdrawn is the claim that the article made the link."
+  }
 }

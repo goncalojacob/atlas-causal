@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "the-extermination-of-the-jews-1941-1945--genocide-convention--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [
+    "the-holocaust--genocide-convention--caused"
+  ],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-15",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a14-holocaust-divided"
+    ],
+    "note": "Drafted by the assistant in M44b under the owner's dated exception, from the sources named and not from a reading of them; the argument is the thing to check, not only the dates."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"The Holocaust\", revision 1373403276"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Genocide Convention\", revision 1371861623"
+    }
+  ],
+  "from": "the-extermination-of-the-jews-1941-1945",
+  "to": "genocide-convention",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The convention of 9 December 1948 was written because of what had been done in Europe between 1941 and 1945, and by a man who had lost his family in it. Lemkin coined the word in 1944 and spent the next four years getting it into a treaty; the General Assembly adopted the convention the day before the Universal Declaration, and the drafting arguments over which groups the definition would cover were arguments about how far the European case generalised. The claim is that the Holocaust is the cause of the instrument; it is not a claim that the instrument worked.",
+  "dispute": null
+}

@@ -401,3 +401,36 @@ warn (batch 41). The colonial war is therefore not reachable from the raid
 through its first parent, `tests/m42-filing.test.mjs` admits the second, and
 both are written. The raid belongs to two arguments at once — the war Portugal
 fought and the war Guinea-Bissau won — which is exactly what A8 was asked for.
+
+## A14 (6), 24 September — `world-war-ii` gained `the-extermination-of-the-jews-1941-1945`
+
+**`the-holocaust` was divided at 1941** under the brief's §5 and the amendment
+A14(6), into `the-persecution-of-the-jews-1933-1941`, which stays a main event,
+and **`the-extermination-of-the-jews-1941-1945`, which is filed under
+`world-war-ii`**. Both of §3's tests hold.
+
+**The span is not in doubt** and it is the cited article's own, at revision
+1376446924: the lead reads *"From 1941 to 1945, Nazi Germany and its
+collaborators systematically murdered around six million Jews across
+German-occupied Europe"* and § Mass shooting reads *"The systematic murder of
+Jews began in the Soviet Union in 1941"*. 1941–1945 is inside 1939–1945.
+
+**The subject holds** the way `eastern-front`'s does: the record names
+`nazi-germany` as `perpetrator` and the umbrella names `nazi-germany`, and the
+ground is German-occupied Europe, which is the war's own. M67's rule 1 does not
+reach it — this is not an act that created or destroyed a form of government.
+
+**Why a filing and not the edge §5 asked for.** §5 was written on 16 September
+and says `world-war-ii --enabled--> <the second>` becomes datable and true once
+the record starts in 1941. It does; and A14 suspends an edge from a parent to
+its own child until the owner decides the 22 September C8, so the edge is not
+written. The filing carries the same thing to a reader — the extermination
+opens inside the Second World War — and it is also what keeps A6: two main
+records out of one would have raised the main count, and main is 242 before
+and 242 after.
+
+**`the-holocaust-in-romania` is filed under `world-war-ii` and under neither
+half.** It runs 1940–1944 (A14(1) widened it from its own lead the same day),
+which straddles the boundary: rule 24 refuses it inside the extermination
+record and 1944 puts it outside the persecution record. The war contains it and
+the two halves do not, which is the honest filing and not a convenience.

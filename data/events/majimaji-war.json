@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. German East Africa bordered Portuguese Mozambique and the rising of 1905 was put down partly along that border, but the atlas holds no record of Portuguese Mozambique before 1960 — not the Barue rising of 1902, not the chartered companies, not the campaigns of pacification — so there is nothing here for it to touch. Retracted for want of a Portuguese Africa before the wars, which is a real gap and is named in docs/m44-connections.md."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Africa is in the atlas now, 139 active events, and the rising’s own article, at revision 1370627418, opens its § Causes with \"After the Scramble for Africa among the major European powers in the 1880s, Germany reinforced its hold on several formal African colonies.\" That sentence names the scramble and not this rising, which is the chronology class this fire dropped nine A13 edges for, and scramble-for-africa is an umbrella, which batch 31a’s rule keeps off both ends of an edge. What it wants is to be filed under that umbrella — 1905 to 1907 is inside 1885 to 1914 — which is a filing and not an edge, and so not a reinstatement this pass may make."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q705553",

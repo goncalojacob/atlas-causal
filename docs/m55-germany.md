@@ -209,11 +209,12 @@ the Nazi state.
 | `treaty-of-versailles` | 1919 | `weimar-republic` |
 | `beer-hall-putsch` | 1923 | `weimar-republic` |
 | `great-depression` | 1929 | `weimar-republic` |
-| `the-holocaust` | 1933 | `nazi-germany` |
+| `the-persecution-of-the-jews-1933-1941` | 1933 | `nazi-germany` |
 | `spanish-civil-war` | 1936 | `nazi-germany` |
 | `munich-agreement` | 1938 | `nazi-germany` |
 | `molotov-ribbentrop-pact` | 1939 | `nazi-germany` |
 | `world-war-ii` | 1939 | `nazi-germany` |
+| `the-extermination-of-the-jews-1941-1945` | 1941 | `nazi-germany` |
 | `eastern-front` | 1941 | `nazi-germany` |
 | `warsaw-uprising` | 1944 | `nazi-germany` |
 

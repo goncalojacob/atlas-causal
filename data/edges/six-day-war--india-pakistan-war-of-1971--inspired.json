@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "six-day-war--india-pakistan-war-of-1971--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass",
+      "a14-endpoint-corrected"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bangladesh Liberation War\", revision 1375044402, § Indian involvement"
+    }
+  ],
+  "from": "six-day-war",
+  "to": "india-pakistan-war-of-1971",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The Pakistani pre-emptive strike that widened the war was, the article says, modelled on Israel’s Operation Focus of 1967. The article reads: \"The attack was modeled on the Israeli Air Force's Operation Focus during the Six-Day War and intended to neutralize the Indian Air Force planes on the ground.\"",
+  "dispute": null
+}

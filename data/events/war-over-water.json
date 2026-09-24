@@ -20,7 +20,8 @@
       "imported-facts",
       "a9-place",
       "participants-from-p710",
-      "summary-from-lead"
+      "summary-from-lead",
+      "title-from-article"
     ]
   },
   "origin": {
@@ -44,7 +45,7 @@
       "locator": "\"War over Water (Jordan River)\", revision 1370750282"
     }
   ],
-  "title": "War over Water",
+  "title": "War over Water (Jordan River)",
   "summary": "The English Wikipedia article \"War over Water (Jordan River)\", at revision 1370750282, opens: \"The War over Water, also known as the Battle over Water, was a series of confrontations between Israel and its Arab neighbors from November 1964 to May 1967 over control of water sources in the Jordan River drainage basin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2904516, imported by tools/import/wikidata.mjs. The item's own description reads \"1964-1967 military confrontations between Israel and Syria and Lebanon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1964,

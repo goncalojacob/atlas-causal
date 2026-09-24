@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "london-q84",
   "kind": "place",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "london",
   "aliases": [],
   "authors": [
     {
@@ -13,20 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "a14-merged"
+    ],
+    "note": "A14(6): merged into london, which is the same city at the same point, written by hand in M50 before A9 wrote this one from Q84. Q84, the article and the item's other names went across to it — rule 21 gives one item to one record — and this record stays as the address a link of 22 September still resolves through."
   },
   "origin": {
     "tool": "assistant"
-  },
-  "wikidata": "Q84",
-  "wikipedia": {
-    "en": "London"
   },
   "sources": [],
   "names": [

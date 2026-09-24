@@ -201,8 +201,14 @@ test('a place\'s precision is in the core, where the first frame can read it', a
   const keysOf = (table) => table.place.columns.find((c) => c.name === 'where')?.keys ?? [];
   assert.ok(keysOf(CORE_COLUMNS).includes('precision'), 'the core does not carry a place\'s precision');
   assert.ok(!keysOf(ATTRIBUTE_COLUMNS).includes('precision'), 'the shard carries it too');
-  // And the atlas a reader has before any shard lands reads it off a place.
+  // And the atlas a reader has before any shard lands reads it off a place —
+  // an **active** one. A tombstone carries `TOMBSTONE_KEYS` and no `where`
+  // (spine.js): it is never drawn, so it has no mark and no shape, and the
+  // first merged place in the corpus would otherwise fail a property that is
+  // about the marks on the map. A14(6) merged `london-q84` into `london` on
+  // 24 September and made that case real.
   for (const place of atlas.places.values()) {
+    if (place.status !== 'active') continue;
     assert.ok(PRECISION_IDS.includes(place.where.precision), `${place.id}: ${place.where.precision}`);
   }
 });

@@ -9,16 +9,21 @@
     {
       "name": "Historical Basemaps import (tools/import/basemaps.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": "2026-09-18",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "m59-dissolved"
+      "m59-dissolved",
+      "polity-description"
     ],
     "note": "M59: this record ended in 1885 because that is where Historical Basemaps stops, not because the polity did. Wikidata's Q174193 (United Kingdom of Great Britain and Ireland) gives P576 1927-04-12, and that is the end this record now asserts. The start is still the first snapshot the dataset draws and is not a claim about when the polity began."
   },
@@ -33,13 +38,21 @@
     {
       "source": "wikidata",
       "locator": "Q174193, P576 1927-04-12"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q174193, P2046 (area) and P1082 (population, 1921)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United Kingdom of Great Britain and Ireland\", revision 1374532628"
     }
   ],
   "actorType": "polity",
   "names": [
     "United Kingdom of Great Britain and Ireland"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1815 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 315,093 km² and about 42.8 million people (1921), from Wikidata's Q174193 (P2046, P1082). The English Wikipedia article \"United Kingdom of Great Britain and Ireland\", at revision 1374532628, opens: \"The United Kingdom of Great Britain and Ireland was established by the Acts of Union in 1801 that united the Kingdom of Great Britain and the Kingdom of Ireland into one unitary and sovereign state. It continued in this form until 1922, after the Irish Free State gained independence, with the remainder continuing as the United Kingdom of Great Britain and Northern Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity the Historical Basemaps dataset draws in the snapshots for 1815, 1878 and 1880. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The span those snapshots cover is 1815 to 1885, and that is not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1815,
     "end": 1927
