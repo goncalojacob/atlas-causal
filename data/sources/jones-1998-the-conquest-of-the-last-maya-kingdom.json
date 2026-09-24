@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "jones-1998-the-conquest-of-the-last-maya-kingdom",
+  "kind": "source",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "m72-second-source"
+    ]
+  },
+  "type": "book",
+  "creators": [
+    "Grant D. Jones"
+  ],
+  "title": "The Conquest of the Last Maya Kingdom",
+  "year": 1998,
+  "publisher": "Stanford University Press",
+  "isbn": "9780804735223",
+  "doi": null,
+  "url": null,
+  "accessed": null,
+  "repository": null,
+  "reference": "The work the English Wikipedia article \"Spanish conquest of Petén\" cites, at revision 1370748351, for the delay between the conquest of the Guatemalan Highlands and the fall of Nojpetén. Cited and not read."
+}
