@@ -9304,3 +9304,231 @@ it; run 1744, on the records commit, was cancelled by the next push in the same
 concurrency group, which is that ordering working rather than a fault.
 **2,114 tests pass locally, 1,819 pure and 295 browser, with nothing skipped.**
 The re-run allowance is unspent: nothing was re-run.
+
+## Batch 53 — the Korean War read forward from the invasion, and the parent that is in the 651
+
+*24 September, the fire that picked the run up at 20:25Z. Today already carries
+a `## Curation 2026-09-24` section and **all six of A14's passes carry theirs**,
+so this is an import fire and every one of the six is skipped by its own rule.
+The claim at 18:00Z was 145 minutes old and `origin/m42` had not been pushed for
+96 minutes, so the protocol's ninety-minute clause let this fire take it.
+`origin/m0` was **not** an ancestor of `m42`, so the merge of STEP 1 was made:
+it came through clean, the rebuilt index was byte-identical, and it is what
+carries the corpus from the 914 active of batch 52's stand to the 982 this batch
+started from. A10's order of need has turned over again as batch 52's stand
+said: **Asia trails at 158** against Africa's 162 and Europe's 426, so this
+batch is seven Asia rows and no other lane.*
+
+### The vein, and the eighth row that was left
+
+`Q8663`, the Korean War, answers **113 distinct rows** with an English article
+under the inverse `part of` vein, and the atlas held **ten** of them before this
+batch. Batch 51 took the 1950 core and named the next Asia batch in its stand:
+the Chinese spring offensive `Q485256` with `Q16170016`, the Battle of the Imjin
+River, and `Q713018`, Kapyong, under it, and the other rows of `Q8663` by
+sitelinks beside them. This fire read all six of those and two more, took seven
+and refused one.
+
+Read through the query service (`query.wikidata.org/sparql`), which answered 200
+on the first attempt, and `en.wikipedia.org` through
+`index.php?action=raw&oldid=<revid>` pinned from one light `prop=revisions`
+call. **Every Wikimedia API — `en.wikipedia.org`, `api.wikimedia.org` and
+`www.wikidata.org` alike — answered 429 for the first twenty-five minutes of
+this fire** (deviation 1435); the query service was never refused. Eight articles
+came back once it cleared.
+
+A11 (b)'s partition check was made before the import, by id and by Wikidata
+item: none of the eight is on `origin/m42b`, whose `data/events/` holds 1,220
+ids.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `operation-pokpung` | 11 | 25–30 Jun 1950 | `south-korea-q884` (new) | `korean-war` |
+| `battle-of-korea-strait` | 10 | 25–26 Jun 1950 | `korea-strait` (reused) | `korean-war` |
+| `chaplain-medic-massacre` | 13 | 16 Jul 1950 | `duman-ri` (new) | `korean-war` |
+| `battle-of-nam-river` | 10 | 31 Aug – 19 Sep 1950 | `nam-river` (new) | `korean-war` |
+| `chinese-spring-offensive` | 6 | 22 Apr – 10 Jun 1951 | `korean-peninsula` (reused) | `korean-war` |
+| `battle-of-the-imjin-river` | 6 | 22–25 Apr 1951 | `imjin-river` (new) | `chinese-spring-offensive` |
+| `battle-of-kapyong` | 8 | 22–27 Apr 1951 | `gapyeong-county` (reused) | `chinese-spring-offensive` |
+
+All seven pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one inside `korean-war`'s 25 June 1950 – 27
+July 1953; and **lane**, every one in Asia. All seven filed, so **main stays at
+242**, unmoved through twenty-four batches, three curation fires and A14.
+
+**One class was added**, read off the class item's own description rather than
+guessed: `Q135010` war crime (*"individual act constituting a serious violation
+of the laws of war"*) as `event` with **no category**, which is what `Q3199915`
+massacre already carries — `data/categories.json` has no kind for an atrocity
+and `war` would say the record is the fighting. `Q4022` river was already in the
+table from M42b batch 3 and is what the two river places take their precision
+from.
+
+**Three titles are the article's and not the item's** (A12 (5)): `Q5073209`'s
+label is "Tunam massacre" and its article is "Chaplain–Medic massacre";
+`Q4260079`'s label is "Operation Pokpoong" and its article is "Operation
+Pokpung"; `Q485256` capitalises "Spring Offensive" and its article does not.
+All three were found by asking the query service for the sitelink rather than by
+guessing the title, after the action API resolved the item labels to redirects.
+
+**Two intervals were widened from the article under A7**, each at the revision
+cited on the record: the Korea Strait battle from the item's single `P585` of 26
+June to the article's *"25–26 June 1950"*, and Kapyong from the item's `P582` of
+25 April to the article's *"22–27 April 1951"*. **A third was left wide and
+flagged.** `chinese-spring-offensive`'s item gives `P582` 10 June 1951 while its
+article's infobox and the item's own `P585` both give 22 May; A7 is a licence to
+widen and not to narrow, so the wider bound is kept, the `date` flag stays and
+`review.note` says which two cited sources disagree — which is exactly how batch
+51 left `battle-of-taejon` and batch 52 left `fourth-battle-of-gao`. Narrowing
+here would have been a third reading of A7 on the strength of one infobox, and
+the offensive's span is not what any filing in this batch turns on.
+
+### The five edges, and the component they could not reach
+
+Five edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 53".
+
+| from | type | to |
+| --- | --- | --- |
+| `operation-pokpung` | caused | `first-battle-of-seoul` |
+| `operation-pokpung` | precondition-of | `battle-of-the-pusan-perimeter` |
+| `operation-pokpung` | caused | `battle-of-korea-strait` |
+| `battle-of-osan` | precondition-of | `chaplain-medic-massacre` |
+| `battle-of-kapyong` | enabled | `battle-of-the-imjin-river` |
+
+**The largest connected component does not move, and C8 is the whole reason.**
+It stays at **651**. Three of the five edges run into records that were already
+here — `first-battle-of-seoul`, `battle-of-the-pusan-perimeter` and
+`battle-of-osan` — but all three sit in the corpus's **second** component, the
+ten Korean War battles batch 51's stand already named as kept out of the 651 by
+C8. That component goes from **10 to 13**. The one record in the 651 that every
+one of them can reach is `korean-war`, which is their parent, and A14 bars the
+edge until the owner decides.
+
+This is now the third batch in a row to measure the same cost, and it is the
+largest measurement yet: **thirteen records, a whole war, held outside the
+largest component by one rule.** Batch 51 measured ten, batch 52 measured four
+records and one refused outright; this batch adds three to the thirteen and
+moves the largest component not at all. A fire that could write
+`korean-war` → `first-battle-of-seoul` would join all thirteen in one edge.
+
+**Two of the seven arrive edgeless** and the count goes from 176 to 178.
+`chinese-spring-offensive` is an umbrella whose only relations its article
+states are to its own parent (`korean-war`) and its own two children, all three
+barred by C8. `battle-of-nam-river` is the refusal below. The component count
+therefore rises from 230 to **233**: those two, and the pair
+`battle-of-the-imjin-river`/`battle-of-kapyong`, which reach nothing but each
+other and their parent.
+
+### The refusals
+
+- **`Q489561`, the Battle of Heartbreak Ridge (10 sitelinks, dated, placed),
+  was read and left.** Its article names one other event in a causal sentence —
+  *"After withdrawing from Bloody Ridge, the KPA set up new positions just 1500
+  yd away"* — and Bloody Ridge (`Q2035177`) is not a record this atlas holds. It
+  would have arrived as a third edgeless record. **The row that unlocks it is
+  `Q2035177`**, and a later Asia batch should take the two together: the pair is
+  one stated sentence apart.
+- **`battle-of-nam-river` was imported and its one candidate edge refused.** The
+  article's § North Korean withdrawal says *"The UN counterattack at Inchon
+  outflanked the KPA and cut off all their main supply and reinforcement
+  routes"*, which is a statement about how this battle **ended**; as an edge
+  `battle-of-inchon` → `battle-of-nam-river` it would read as Inchon causing the
+  battle, and reversed it is the "until" chronology the fires already refuse.
+- **`battle-of-nam-river` is filed under `korean-war` and not under the umbrella
+  its own article names.** The infobox reads *"part of the Battle of Pusan
+  Perimeter"*, but that record runs 4 August – 18 September 1950 and this battle
+  runs to 19 September, so M62's span test refuses the nearer umbrella **by one
+  day**. A later fire that widens the perimeter's interval under A7 from the
+  perimeter's own article should re-file it; the reason is on the record.
+
+### A9's places, and the two the strait and the peninsula already had
+
+Four place records are new and **not one was hand-corrected**; all four carry
+`summary: null`, which is what A14 (6) left every imported place at, and the
+`a9-place` flag. Three were reused.
+
+- **`south-korea-q884`** (`country`, `Q884`) is `operation-pokpung`'s place by
+  A9's second step: the item carries no `P625` of its own and its `P276` is
+  South Korea. The article's own location field is the 38th parallel, which is a
+  line and not a thing this atlas holds a record for.
+- **`duman-ri`** (`point`, no item) is A9's first step and the batch's cleanest:
+  the massacre's own `P625` and the article's coordinate template agree to six
+  digits, and the village itself has no item this pass could reach.
+- **`imjin-river`** (`region`, `Q495534`) and **`nam-river`** (`region`,
+  `Q485254`) are both A9's second step over a river. The Imjin battle's own
+  `P625` is 28 km up the same river from the river item's point, which is the
+  length of the thing and not a disagreement. The Nam River battle's item
+  carries **two** `P625` values, 5 km and 17 km from the river item's point, and
+  A9's first step says nothing about which of two coordinates to take —
+  deviation 1434's question in a second shape, and the reason the second step
+  was taken there too.
+- **`korea-strait` and `korean-peninsula` were reused rather than duplicated.**
+  The strait battle's own `P625` is the water off Busan and its article's
+  location field reads *"off the coast of Busan, in the Korea Strait"*; the
+  spring offensive's own `P625` is `Q16170016`'s to six digits — one action on a
+  front its own location field calls *"near the 38th Parallel, Korea"*. Writing
+  either as a new point place would have put a near-duplicate beside a record
+  the atlas already holds and, for the offensive, named a campaign after one of
+  its battles.
+- **`gapyeong-county` was reused**: Kapyong's own `P625` is 5 km from the
+  county's point, so A9's two steps agree at county scale.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 982 active | **989 active** |
+| **main** | 242 | **242** |
+| filed | 740 | 747 |
+| active edges | 924 | **929** |
+| largest connected component | 651 | **651** |
+| second component | 10 | **13** |
+| components | 230 | **233** |
+| events with no edge at all | 176 | **178** |
+| validator | 0 errors, 480 warnings | **0 errors, 482 warnings** |
+| per lane, active | Europe 426, Americas 236, Africa 162, **Asia 158** | Europe 426, Americas 236, **Asia 165**, Africa 162 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 | unchanged |
+
+The two new warnings are the two `degree-zero` above and no new class.
+
+### The deviations
+
+- **1435.** *Every Wikimedia API can refuse this sandbox at once, and the query
+  service is the one that does not.* Deviation 1424 split reconnaissance (the
+  query service) from the import (the action API) because the two behave
+  differently. This fire found a third state: for the first twenty-five minutes
+  `en.wikipedia.org/w/api.php`, `en.wikipedia.org/w/index.php?action=raw`,
+  `api.wikimedia.org` and `www.wikidata.org/w/api.php` **all** answered `429 You
+  are making too many requests to the API`, with a descriptive User-Agent and a
+  contact address, while `query.wikidata.org/sparql` answered 200 throughout.
+  The limit is on the shared egress and not on this run's rate, so it is not
+  something a fire can fix by slowing down and it is **not** "no network in this
+  sandbox". The answer is patience: a retry loop at 30–45 second intervals in
+  the background, and the rest of the fire's work — the partition check, the
+  before-measurement, the class table, the held-record survey — done while it
+  waits. It cleared on the fourth attempt.
+- **1436.** *An item's label is not its article's title, and the action API
+  silently resolves the difference into the wrong page.* Asking
+  `prop=revisions` for the eight rows by their Wikidata **labels** returned a
+  page for every one of them, but three were redirects whose newest revision was
+  years old: "Tunam massacre" → "Chaplain–Medic massacre", "Operation Pokpoong"
+  → "Operation Pokpung", "Chinese Spring Offensive" → "Chinese spring
+  offensive". A stale `revid` beside a plausible title is the failure that gets
+  a wrong revision cited on a record. **The title comes from the item's own
+  `schema:about` sitelink, asked of the query service**, never from its label —
+  which is also what A12 (5) has been saying about `titleFor()` from the other
+  side. Three of eight rows in one batch is not a rare case.
+- **1437.** *A record can miss its own article's umbrella by one day, and M62's
+  span test then refuses the truer filing.* `battle-of-nam-river`'s infobox
+  reads *"part of the Battle of Pusan Perimeter"* and the atlas holds that
+  record at 4 August – 18 September 1950, from its item; this battle runs to 19
+  September. Filing it there would date a child outside its parent, so it is
+  filed under `korean-war` with the reason on the record. The fix is not a
+  looser span test but A7 on the **parent**: a fire that reads the perimeter's
+  own article and widens its interval should re-file the child. Until then, a
+  batch that meets this should say so on the record rather than file against the
+  test or drop the row.

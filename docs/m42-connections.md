@@ -5086,3 +5086,41 @@ articles' own; what is missing is a sibling, not an argument.
   the battle begins a day before the operation and ends six days after it, which
   rule 24 would warn about. A record whose only link to the atlas is a link the
   atlas may not draw is not this batch's to import.
+
+## Batch 53 — the Korean War read forward from the invasion
+
+*24 September, the import fire that picked the run up at 20:25Z. Today carries
+a `## Curation 2026-09-24` section and all six of A14's passes carry theirs, so
+this is an import fire. A10's order of need had turned over again and puts
+**Asia** at the front, trailing at 158 against Africa's 162 and Europe's 426.
+The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 53".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `operation-pokpung` → `first-battle-of-seoul` | `caused` | North Korean forces *"launched the blitzkrieg by crossing the 38th parallel north and swarming South Korea at 04:00"* and *"rushed to encircle and eventually capture Seoul, the capital of South Korea, from the ROK within a week"*; the next paragraph closes it — *"the DPRK captured Seoul within three days on 28 June"* — "Operation Pokpung", revision 1373958261, lead |
+| `operation-pokpung` → `battle-of-the-pusan-perimeter` | `precondition-of` | heavy losses *"were inflicted on the DPRK's II Corps by the ROK's 6th Infantry Division, stalling the DPRK's advance in the east, ceasing the blitzkrieg at the Battle of the Pusan Perimeter"* — "Operation Pokpung", revision 1373958261, lead |
+| `operation-pokpung` → `battle-of-korea-strait` | `caused` | *"The Korean War began on 25 June 1950 with a massive North Korean invasion across the 38th parallel and into the south. Around twenty hours after the beginning of the invasion, a North Korean steamer was assigned to insert highly-trained commandos … near the port of Busan"* — "Battle of Korea Strait", revision 1376104466, § Background |
+| `battle-of-osan` → `chaplain-medic-massacre` | `precondition-of` | *"Advance elements of the 24th Infantry Division were badly defeated in the Battle of Osan on July 5"*, after which the division *"was systematically pushed south"* and on 12 July its commander *"ordered the division's 19th, 21st and 34th infantry regiments to cross the Geum River"*; the lead names the victims as *"troops of the US 19th Infantry Regiment, 24th Infantry Division"* — "Chaplain–Medic massacre", revision 1363525691, lead and § Delaying action |
+| `battle-of-kapyong` → `battle-of-the-imjin-river` | `enabled` | Commander *"Wen Yuchen of the 40th Army was given the mission of destroying the ROK 6th Division while blocking any UN reinforcements towards the Imjin River at Kapyong"*, the offensive opening on 22 April on two fronts, *"the main thrust across the Imjin River in the western sector"* and *"the secondary effort"* further east — "Battle of Kapyong", revision 1376150205, § Chinese spring offensive |
+
+All five are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **Three of the five run into records that were already here** —
+`first-battle-of-seoul`, `battle-of-the-pusan-perimeter` and `battle-of-osan`,
+all three inside the corpus's **second** component and not its largest, because
+the only record in the 651 that any of them can reach is `korean-war`, their own
+parent, which C8 bars. So the largest component does not move and the second
+goes from 10 to 13.
+
+**Four edges were read and refused**, each because the sentence is chronology
+and not a claim, which is the refusal class the curation fires already use:
+`battle-of-korea-strait` → `battle-of-inchon` (*"It would remain so until the
+US-led United Nations landings at Inchon"*); `battle-of-inchon` →
+`battle-of-nam-river` (*"The UN counterattack at Inchon outflanked the KPA and
+cut off all their main supply and reinforcement routes"* — a statement about how
+the Nam River fight ended, which as an edge would read as Inchon causing the
+battle); `battle-of-nam-river` → `battle-of-inchon` (*"they were able to hold
+the line … until the Inchon attack and Pusan breakout"*); and
+`chinese-spring-offensive` → `korean-armistice-agreement` (*"the armistice
+negotiations that began on 10 July 1951 at Kaesong forced both sides to dig
+in"* — about the front, not about the 1953 agreement).
