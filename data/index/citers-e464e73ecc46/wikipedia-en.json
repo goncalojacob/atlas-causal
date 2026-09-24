@@ -4136,6 +4136,24 @@
     },
     {
       "dissent": false,
+      "id": "kidal-offensive--abeibara-massacres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Abeïbara massacres\", revision 1326919232, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of",
+      "kind": "edge",
+      "locator": "\"Abeïbara massacres\", revision 1326919232, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "korean-war--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"1954 Geneva Conference\", revision 1369041532"
@@ -4988,6 +5006,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-dioura-2023--kidal-offensive--reacted-to",
+      "kind": "edge",
+      "locator": "\"Kidal offensive\", revision 1370625765, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "railway-protection-movement--wuchang-uprising--enabled",
       "kind": "edge",
       "locator": "\"Railway Protection Movement\", revision 1361142110, lead"
@@ -5537,6 +5561,12 @@
       "id": "siege-of-stralsund-1628--battle-of-wolgast--enabled",
       "kind": "edge",
       "locator": "\"Battle of Wolgast\", revision 1370276997, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tessalit--tinsalane-ambush--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tinsalane ambush\", revision 1370751066, lead and § The ambush"
     },
     {
       "dissent": false,
@@ -8006,6 +8036,12 @@
     },
     {
       "dissent": false,
+      "id": "abeibara-massacres",
+      "kind": "event",
+      "locator": "\"Abeïbara massacres\", revision 1326919232"
+    },
+    {
+      "dissent": false,
       "id": "aberdeen-act-1845",
       "kind": "event",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -9197,6 +9233,12 @@
       "id": "battle-of-timbuktu",
       "kind": "event",
       "locator": "\"Battle of Timbuktu\", revision 1370591090"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tinzaouaten-2024",
+      "kind": "event",
+      "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868"
     },
     {
       "dissent": false,
@@ -11408,6 +11450,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-dioura-2023",
+      "kind": "event",
+      "locator": "\"Raid on Dioura (2023)\", revision 1370705729"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-pebble-island",
       "kind": "event",
       "locator": "\"Pebble Island raid\", revision 1370703799"
@@ -12449,6 +12497,12 @@
       "id": "tigray-war",
       "kind": "event",
       "locator": "\"Tigray war\", revision 1374637577"
+    },
+    {
+      "dissent": false,
+      "id": "tinsalane-ambush",
+      "kind": "event",
+      "locator": "\"Tinsalane ambush\", revision 1370751066"
     },
     {
       "dissent": false,

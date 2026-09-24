@@ -862,6 +862,24 @@
         }
       ]
     },
+    "kidal-offensive--abeibara-massacres--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "legislative-election-2015--geringonca-2015--enabled": {
       "from": "git",
       "versions": [
@@ -1167,6 +1185,15 @@
         }
       ]
     },
+    "raid-on-dioura-2023--kidal-offensive--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "revolution-of-dignity--2014-pro-russian-unrest-in-ukraine--caused": {
       "from": "git",
       "versions": [
@@ -1259,6 +1286,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "siege-of-tessalit--tinsalane-ambush--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

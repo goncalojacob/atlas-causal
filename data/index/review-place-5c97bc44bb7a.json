@@ -32,6 +32,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "abeibara",
+      "kind": "place",
+      "names": [
+        "Abeïbara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q127166696, the Abeïbara massacres, read on 2026-09-24; the town itself has no item this pass could reach. A9's first step as A12 (2) corrects it. The massacres themselves were spread over \"a forty kilometer radius\", so the point is the centre the article names and not the extent of the thing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -3644,6 +3672,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "dioura",
+      "kind": "place",
+      "names": [
+        "Dioura"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q125697830, the 2023 raid on Dioura, read on 2026-09-24; the town itself has no item this pass could reach. A9's first step as A12 (2) corrects it.",
         "status": "draft"
       },
       "revised": null,
@@ -14607,6 +14663,62 @@
           "a9-place"
         ],
         "note": "Written by the Wikidata import from Q9427 for batch 52. `city` off the item's own class, city. It is the place of battle-of-timbuktu and second-battle-of-timbuktu by A9's second step: both items give the same P625, 16.7667N 3.0000W, which is the town, and both name Q9427 under P276.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "tinsalane",
+      "kind": "place",
+      "names": [
+        "Tinsalane"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q15231259, the ambush of Tinsalane, read on 2026-09-24; the locality itself has no item this pass could reach. The article places it \"in Tinsalane, 20 kilometers south of Tessalit\", which is where this point is.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "tinzaouaten",
+      "kind": "place",
+      "names": [
+        "Tinzaouaten"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written from Q2312553, the commune and village of Kidal Region, by A9's second step (P276) and not its first. The battle item's own P625 is 28 km west of the village, which is the \"outskirts of Tinzaouaten\" its own article names, so the village is where the battle was and is a place a later record can reuse; a place record written at the battlefield point and called Tinzaouaten would be neither. `city` off the item's own class, a commune and village.",
         "status": "draft"
       },
       "revised": null,

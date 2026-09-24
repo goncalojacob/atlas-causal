@@ -11,6 +11,15 @@
         }
       ]
     },
+    "abeibara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "abrolhos-archipelago": {
       "from": "git",
       "versions": [
@@ -1751,6 +1760,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "dioura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7153,6 +7171,24 @@
       ]
     },
     "timbuktu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "tinsalane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "tinzaouaten": {
       "from": "git",
       "versions": [
         {

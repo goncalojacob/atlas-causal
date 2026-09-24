@@ -3294,6 +3294,15 @@
         }
       ]
     },
+    "abeibara-massacres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "andino-shopping-mall-attack": {
       "from": "git",
       "versions": [
@@ -3513,6 +3522,15 @@
       ]
     },
     "battle-of-timbuktu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-tinzaouaten-2024": {
       "from": "git",
       "versions": [
         {
@@ -5843,6 +5861,15 @@
         }
       ]
     },
+    "raid-on-dioura-2023": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "republican-insurgency-in-afghanistan": {
       "from": "git",
       "versions": [
@@ -6387,6 +6414,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tinsalane-ambush": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

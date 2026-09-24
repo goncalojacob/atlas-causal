@@ -2312,6 +2312,12 @@
     },
     {
       "dissent": false,
+      "id": "abeibara-massacres",
+      "kind": "event",
+      "locator": "Q127166696"
+    },
+    {
+      "dissent": false,
       "id": "abushiri-revolt",
       "kind": "event",
       "locator": "Q481590"
@@ -3491,6 +3497,12 @@
       "id": "battle-of-timbuktu",
       "kind": "event",
       "locator": "Q8363015"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tinzaouaten-2024",
+      "kind": "event",
+      "locator": "Q128007033"
     },
     {
       "dissent": false,
@@ -5528,6 +5540,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-dioura-2023",
+      "kind": "event",
+      "locator": "Q125697830"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-pebble-island",
       "kind": "event",
       "locator": "Q1979826"
@@ -6311,6 +6329,12 @@
       "id": "tigray-war",
       "kind": "event",
       "locator": "Q101231200"
+    },
+    {
+      "dissent": false,
+      "id": "tinsalane-ambush",
+      "kind": "event",
+      "locator": "Q15231259"
     },
     {
       "dissent": false,

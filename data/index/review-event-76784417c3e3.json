@@ -3762,6 +3762,43 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "abeibara-massacres",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "No category: the item's class is Q3199915, massacre, and data/categories.json has no kind for an atrocity, so the class table gives it none. Place by A9's first step, the item's own P625.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Abeïbara massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10533,6 +10570,44 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Timbuktu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-tinzaouaten-2024",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Title from the article (A12 (5)), which disambiguates the 2024 battle from the 2012 one; the item's label does not. Place by A9's second step (P276 Q2312553, the village of Tinzaouaten): the item's own P625 is 28 km west of it, which is the \"outskirts of Tinzaouaten\" the article itself names. Of the four participants the item's P710 gives — Mali, JNIM, the Wagner Group and the CSP — only Mali is an actor this atlas holds, so only Mali is on the record (A12 (4)).",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Tinzaouaten (2024)"
     },
     {
       "authors": [
@@ -20100,7 +20175,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 4,
       "id": "kidal-offensive",
       "kind": "event",
       "origin": {
@@ -24559,6 +24634,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "raid-on-dioura-2023",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Title from the article (A12 (5)): the item's label is \"2023 Dioura attack\" and the English article it sitelinks is \"Raid on Dioura (2023)\". Place by A9's first step, the item's own P625.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Raid on Dioura (2023)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -27409,6 +27522,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 1,
       "id": "siege-of-tessalit",
       "kind": "event",
       "origin": {
@@ -30176,6 +30290,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Tigray war"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "tinsalane-ambush",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "2012-tuareg-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Title from the article (A12 (5)): the item's label is \"Ambush of Tinsalane\" and the English article it sitelinks is \"Tinsalane ambush\". Filed under 2012-tuareg-rebellion, which is the item's own P361 and not mali-war. Place by A9's first step, the item's own P625.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Tinsalane ambush"
     },
     {
       "authors": [
@@ -34384,12 +34536,6 @@
     },
     {
       "id": "siege-of-mitu",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "siege-of-tessalit",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

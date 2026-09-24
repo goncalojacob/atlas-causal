@@ -13642,6 +13642,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "from": "kidal-offensive",
+      "id": "kidal-offensive--abeibara-massacres--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "abeibara-massacres",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "kidal-offensive",
+      "id": "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-tinzaouaten-2024",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "korean-war",
       "id": "korean-war--geneva-conference--caused",
@@ -17360,6 +17416,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "raid-on-dioura-2023",
+      "id": "raid-on-dioura-2023--kidal-offensive--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kidal-offensive",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "wikidata"
       ],
@@ -19775,6 +19859,34 @@
       "status": "active",
       "to": "battle-of-wolgast",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "from": "siege-of-tessalit",
+      "id": "siege-of-tessalit--tinsalane-ambush--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tinsalane-ambush",
+      "type": "precondition-of"
     },
     {
       "authors": [
