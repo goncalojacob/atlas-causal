@@ -771,6 +771,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "doi": null,
+      "id": "hemming-1993-conquest-of-the-incas",
+      "isbn": "0333106830",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Conquest of the Incas",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Historical Basemaps import (tools/import/basemaps.mjs)"
         }
       ],
@@ -1290,6 +1317,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "doi": null,
+      "id": "prescott-conquest-of-peru",
+      "isbn": "142640042X",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "History of the Conquest of Peru",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-02",
       "degree": 136,
       "doi": null,
@@ -1725,7 +1779,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 1003,
+      "degree": 1011,
       "doi": null,
       "id": "wikidata",
       "isbn": null,
@@ -1749,7 +1803,7 @@
         }
       ],
       "created": "2026-09-04",
-      "degree": 1921,
+      "degree": 1935,
       "doi": null,
       "id": "wikipedia-en",
       "isbn": null,

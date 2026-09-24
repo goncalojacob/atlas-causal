@@ -2582,9 +2582,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chupas",
+      "kind": "event",
+      "locator": "Q1612597"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "Q112811996"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cusco",
+      "kind": "event",
+      "locator": "Q1612814"
     },
     {
       "dissent": false,
@@ -2756,6 +2768,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-maraycalla",
+      "kind": "event",
+      "locator": "Q3636517"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-marignano",
       "kind": "event",
       "locator": "Q330"
@@ -2822,6 +2840,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ollantaytambo",
+      "kind": "event",
+      "locator": "Q2338569"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "Q2888038"
@@ -2867,6 +2891,18 @@
       "id": "battle-of-pucacasa",
       "kind": "event",
       "locator": "Q11688225"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-puna",
+      "kind": "event",
+      "locator": "Q3636591"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-punta-quemada",
+      "kind": "event",
+      "locator": "Q1615387"
     },
     {
       "dissent": false,
@@ -3017,6 +3053,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "Q130847"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vilcaconga",
+      "kind": "event",
+      "locator": "Q3636661"
     },
     {
       "dissent": false,
@@ -5315,6 +5357,12 @@
       "id": "spanish-conquest-of-the-inca-empire",
       "kind": "event",
       "locator": "Q636771"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
+      "kind": "event",
+      "locator": "Q3119074"
     },
     {
       "dissent": false,

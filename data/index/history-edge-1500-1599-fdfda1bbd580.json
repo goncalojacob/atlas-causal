@@ -20,6 +20,24 @@
         }
       ]
     },
+    "battle-of-cusco--battle-of-maraycalla--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-cusco--siege-of-cusco--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of": {
       "from": "git",
       "versions": [
@@ -77,6 +95,24 @@
         }
       ]
     },
+    "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-punta-quemada--spanish-conquest-of-the-inca-empire--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of": {
       "from": "git",
       "versions": [
@@ -88,6 +124,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-vilcaconga--battle-of-cusco--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -179,6 +224,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "siege-of-cusco--battle-of-ollantaytambo--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

@@ -867,6 +867,15 @@
         }
       ]
     },
+    "cauca-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "cecilienhof": {
       "from": "git",
       "versions": [
@@ -3304,6 +3313,15 @@
         }
       ]
     },
+    "maray-qalla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "mariinskyi-park": {
       "from": "git",
       "versions": [
@@ -3972,6 +3990,15 @@
         }
       ]
     },
+    "ollantaytambo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "olsztyn": {
       "from": "git",
       "versions": [
@@ -4591,6 +4618,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "puna-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

@@ -1182,6 +1182,46 @@
       "year": 2000
     },
     {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 2,
+      "created": "2026-09-24",
+      "creators": [
+        "John Hemming"
+      ],
+      "doi": null,
+      "id": "hemming-1993-conquest-of-the-incas",
+      "isbn": "0333106830",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Macmillan",
+      "reference": "The work the English Wikipedia article \"Battle of Ollantaytambo\" rests on throughout, at revision 1376074803, cited there at p. 206 for the Cusco garrison's decision to attack Ollantaytambo. \"Battle of Chupas\" cites the same work, Mariner 2012, p. 264. Cited and not read.",
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "The Conquest of the Incas",
+      "type": "book",
+      "url": null,
+      "year": 1993
+    },
+    {
       "accessed": "2026-09-16",
       "aliases": [],
       "authors": [
@@ -1990,6 +2030,46 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "citationCount": 2,
+      "created": "2026-09-24",
+      "creators": [
+        "William H. Prescott"
+      ],
+      "doi": null,
+      "id": "prescott-conquest-of-peru",
+      "isbn": "142640042X",
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "BiblioBazaar",
+      "reference": "The work \"Battle of Punta Quemada\" cites for its whole account, at revision 1370586796, in this edition at pp. 96-102; \"Battle of Puna\" cites the same work, Digireads.com 2011, pp. 142-143. A nineteenth-century history, reprinted. Cited and not read.",
+      "repository": null,
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "History of the Conquest of Peru",
+      "type": "book",
+      "url": null,
+      "year": 2006
+    },
+    {
+      "accessed": null,
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "citationCount": 136,
       "created": "2026-09-02",
       "creators": [
@@ -2663,7 +2743,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1003,
+      "citationCount": 1011,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -2700,7 +2780,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1921,
+      "citationCount": 1935,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

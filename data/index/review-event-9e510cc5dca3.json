@@ -6136,6 +6136,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "id": "battle-of-chupas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chupas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "battle-of-colhuacatonco",
@@ -6156,6 +6187,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Colhuacatonco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-cusco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cusco"
     },
     {
       "authors": [
@@ -7109,6 +7172,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-maraycalla",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Maraycalla"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "battle-of-marignano",
@@ -7475,6 +7570,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-ollantaytambo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ollantaytambo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-otumba",
@@ -7726,6 +7853,70 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Pucacasa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-puna",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Puná"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-punta-quemada",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Punta Quemada"
     },
     {
       "authors": [
@@ -8580,6 +8771,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Verdun"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-vilcaconga",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vilcaconga"
     },
     {
       "authors": [
@@ -23132,6 +23354,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "siege-of-cusco",
       "kind": "event",
       "origin": {
@@ -24495,7 +24718,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 3,
       "id": "spanish-conquest-of-the-inca-empire",
       "kind": "event",
       "origin": {
@@ -24512,6 +24735,36 @@
       "revised": null,
       "status": "active",
       "title": "Spanish conquest of the Inca Empire"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-guatemala",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish conquest of the Kingdom of Q'umarkaj"
     },
     {
       "authors": [
@@ -29184,6 +29437,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chupas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-domokos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -29856,12 +30115,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "siege-of-cusco",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "siege-of-jadotville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -29911,6 +30164,12 @@
     },
     {
       "id": "spanish-conquest-of-guatemala",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

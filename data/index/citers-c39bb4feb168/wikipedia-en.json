@@ -1874,6 +1874,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cusco--battle-of-maraycalla--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Maraycalla\", revision 1370448960"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cusco--siege-of-cusco--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Cusco\", revision 1370740508, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dien-bien-phu--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
@@ -2012,6 +2024,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Puná\", revision 1370586803"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-punta-quemada--spanish-conquest-of-the-inca-empire--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Punta Quemada\", revision 1370586796"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Battle"
@@ -2105,6 +2129,12 @@
       "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vilcaconga--battle-of-cusco--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
     },
     {
       "dissent": false,
@@ -4817,6 +4847,12 @@
       "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cusco--battle-of-ollantaytambo--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ollantaytambo\", revision 1376074803, § Background"
     },
     {
       "dissent": false,
@@ -7730,9 +7766,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chupas",
+      "kind": "event",
+      "locator": "\"Battle of Chupas\", revision 1370437248"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cusco",
+      "kind": "event",
+      "locator": "\"Battle of Cusco\", revision 1370109425"
     },
     {
       "dissent": false,
@@ -7898,6 +7946,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-maraycalla",
+      "kind": "event",
+      "locator": "\"Battle of Maraycalla\", revision 1370448960"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-marignano",
       "kind": "event",
       "locator": "\"Battle of Marignano\", revision 1370449034"
@@ -7964,6 +8018,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ollantaytambo",
+      "kind": "event",
+      "locator": "\"Battle of Ollantaytambo\", revision 1376074803"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -8009,6 +8069,18 @@
       "id": "battle-of-pucacasa",
       "kind": "event",
       "locator": "\"Battle of Pucacasa\", revision 1370586703"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-puna",
+      "kind": "event",
+      "locator": "\"Battle of Puná\", revision 1370586803"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-punta-quemada",
+      "kind": "event",
+      "locator": "\"Battle of Punta Quemada\", revision 1370586796"
     },
     {
       "dissent": false,
@@ -8159,6 +8231,12 @@
       "id": "battle-of-verdun",
       "kind": "event",
       "locator": "\"Battle of Verdun\", revision 1376156165"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vilcaconga",
+      "kind": "event",
+      "locator": "\"Battle of Vilcaconga\", revision 1370592503"
     },
     {
       "dissent": false,
@@ -10619,6 +10697,12 @@
       "id": "spanish-conquest-of-the-inca-empire",
       "kind": "event",
       "locator": "\"Spanish conquest of the Inca Empire\", revision 1375586932"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-kingdom-of-q-umarkaj",
+      "kind": "event",
+      "locator": "\"Spanish conquest of the Kingdom of Q'umarkaj\", revision 1366198295"
     },
     {
       "dissent": false,

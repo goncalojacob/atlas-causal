@@ -666,7 +666,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "ayacucho",
       "kind": "place",
       "names": [
@@ -1941,6 +1941,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "cauca-department",
+      "kind": "place",
+      "names": [
+        "Cauca Department",
+        "Cauca"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -2675,7 +2702,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "cusco",
       "kind": "place",
       "names": [
@@ -6942,6 +6969,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "maray-qalla",
+      "kind": "place",
+      "names": [
+        "Maray Qalla"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8392,6 +8445,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "ollantaytambo",
+      "kind": "place",
+      "names": [
+        "Ollantaytambo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9706,6 +9785,33 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "puna-island",
+      "kind": "place",
+      "names": [
+        "Puná Island",
+        "Ilha Puná"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -13821,6 +13927,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "cauca-department",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "champ-de-mars",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -13989,6 +14101,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "maray-qalla",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "matanzas",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14055,6 +14173,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "ollantaytambo",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "oriente-province",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -14104,6 +14228,12 @@
     },
     {
       "id": "pueblo-rico",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "puna-island",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

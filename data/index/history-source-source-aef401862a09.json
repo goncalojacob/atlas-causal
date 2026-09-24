@@ -395,6 +395,15 @@
         }
       ]
     },
+    "hemming-1993-conquest-of-the-incas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "historical-basemaps": {
       "from": "git",
       "versions": [
@@ -621,6 +630,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "prescott-conquest-of-peru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
