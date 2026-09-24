@@ -5542,6 +5542,33 @@ taste makes the next run's measurement incomparable. A person should either
 give `Q839954` a second reading or set this one record's precision by hand; both
 are one line.
 
+**1264. Deviation 1232 recurred, in a shape 1233 does not name: the index was
+rebuilt before the merge was committed rather than after.** 1233's cure is three
+commits — resolve and commit the merge, rebuild, commit the index — and this
+fire made three commits, but it ran `node tools/build-index.mjs` while the merge
+was still uncommitted, because the measurement at the head of a batch note is
+taken from the index and the fire wanted it before it wrote anything.
+`tools/lib/history.mjs` reads each record's versions **from the commits
+reachable at HEAD**, and at that moment HEAD was the claim commit: not one of
+`origin/m42`'s commits was an ancestor. So `81ed7ad3` went out with history
+shards that knew nothing of the merge, and **run 1696 failed rule 16** on
+`manifest.json` and six history shards — the branch's first honest red, and not
+load. Deviation 1258's own warning applies to the diagnosis too: runs 1695 and
+1699 either side of it were cancelled, and 1696 ran to the end only because
+nothing followed it.
+
+**The distinction 1233 was missing is which half of the index depends on git.**
+The counts a batch note reports — the corpus, the main count, the components,
+the per-lane and per-century table — are read off the core and the spine and are
+correct from an index built at any moment. **Only the history shards and the
+manifest that names them depend on what HEAD can reach.** So the measurement may
+be taken early and the *committed* index may not: rebuild once more after the
+commit that touches records, then commit the index. Amending is enough where the
+index commit is not yet pushed, and safe, because a commit touching only
+`data/index/` and the two prerendered pages touches no record file and so moves
+no shard — a second rebuild after the amend changed nothing, which is the check
+worth making before pushing.
+
 ## Where the run stands, for the fire that picks it up
 
 *24 September, after the twenty-second fire and its batch 22.*
@@ -5600,24 +5627,40 @@ sibling or to a sibling of a parent, which is what is left once A14 and rule 4's
 dates have taken the obvious ones. **A14's six data passes over the existing
 records are M42's**, and nothing here took them.
 
-**The order of a fire on this branch is unchanged and it held again.** Resolve
-the merge and commit it; only then `node tools/build-index.mjs`; then the index
-as its own commit. For a batch it is 798's order — records committed, then
-rebuild, then the index — with the batch note, this section and
-`docs/m53-polities.md` §4.1 written **before** the records commit, which is
-deviation 1258's rule and the first fire to obey it from the start.
-`docs/m53-polities.md` §4.1 is re-taken at **382 of 894**: the numerator has not
-moved by an import of this lane since it was first taken — 379, through 841,
-847, 854, 858, 866, 872, 879 and now 894 — because every record this branch
-writes carries `actors: []`. Deviations 1232 and 1251 have not recurred.
+**The order of a fire on this branch is unchanged and this fire broke it, in a
+way deviation 1264 below sets out.** Resolve the merge and commit it; only then
+`node tools/build-index.mjs`; then the index as its own commit. For a batch it
+is 798's order — records committed, then rebuild, then the index — with the
+batch note, this section and `docs/m53-polities.md` §4.1 written **before** the
+records commit, which is deviation 1258's rule and held. What did not hold is
+the rebuild: this fire built the index before committing the merge, because the
+measurement is read off the index, and **deviation 1232 recurred** — run 1696
+on `81ed7ad3` failed rule 16 on the manifest and six history shards. The cure
+is in 1264 and it is one sentence: **the measurement may be taken from an index
+built at any moment, the committed index may not.** Rebuild once more after the
+commit that touches records. `docs/m53-polities.md` §4.1 is re-taken at
+**382 of 894**: the numerator has not moved by an import of this lane since it
+was first taken — 379, through 841, 847, 854, 858, 866, 872, 879 and now 894 —
+because every record this branch writes carries `actors: []`. Deviation 1251 has
+not recurred.
 
-**The check's state on this head is reported in the one commit deviation 1258
-allows at the end of the fire.** Locally this fire has `node
-tools/validate.mjs --index` clean, and the tests run the way the check runs
-them — the pure suites in parallel, the browser suites one at a time — before
-the records they judge, as 711 and 717 ask. **The next fire should read this
-head's run before it does anything else**, and if it is red, read the failure:
-the check has been honest since M63 and it is not load.
+**The check on this head is run 1701 on `9c0ccefe`, and it was still running
+when this fire wrote its last commit.** What the fire knows: `node
+tools/validate.mjs --index` is **clean at 0 errors and 422 warnings** on the
+pushed index, and `tests/validate-cli.test.mjs` — the suite that failed in run
+1696 and the one that holds `data/index/` to the records it is built from —
+passes on it, 8 of 8. The **1,810 tests of the 152 pure suites all passed** on
+this batch's records before the index was amended, none failed and none skipped,
+which is every suite that judges a record: the validator's own, `registry`,
+`spine` and `m67` among them. The **286 tests of the 37 browser suites passed in
+run 1696 itself** — its test step reported 286 of 286 with nothing failed and
+nothing skipped, and the job's exit 1 was rule 16 in the pure step alone — and
+this batch changes no line of `src/`. A local re-run of both sets was still in
+flight, and **running the two sets at once is the contention `docs/m63-load.md`
+describes**, which is why the check runs them apart and why a fire should not
+run them together. **The next fire should read run 1701's conclusion before it
+does anything else**, and if it is red, read the failure: the check has been
+honest since M63 and it is not load — 1696 proved that this morning.
 
 ### The veins, and which are open
 
