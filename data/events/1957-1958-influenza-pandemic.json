@@ -17,14 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the start was 1956. The cited article names its span in its title and its first sentence, at the cached revision 1371253096: \"The 1957-1958 Asian flu pandemic\". So the start is 1957; the end is unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -46,12 +48,16 @@
     {
       "source": "wikipedia-en",
       "locator": "\"1957–1958 influenza pandemic\", revision 1371253096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1957–1958 influenza pandemic\", revision 1371253096: \"The 1957–1958 Asian flu pandemic was a global pandemic of influenza A virus subtype H2N2\""
     }
   ],
   "title": "1957–1958 influenza pandemic",
   "summary": "The English Wikipedia article \"1957–1958 influenza pandemic\", at revision 1371253096, opens: \"The 1957–1958 Asian flu pandemic was a global pandemic of influenza A virus subtype H2N2 that originated in Guizhou in Southern China. The number of excess deaths caused by the pandemic is estimated to be 1–4 million around the world, making it one of the deadliest pandemics in history. A decade later, a reassorted viral strain H3N2 further caused the Hong Kong flu pandemic (1968–1970).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1434550, imported by tools/import/wikidata.mjs. The item's own description reads \"pandemic of influenza virus (H2N2)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1956,
+    "start": 1957,
     "end": 1958
   },
   "place": null,

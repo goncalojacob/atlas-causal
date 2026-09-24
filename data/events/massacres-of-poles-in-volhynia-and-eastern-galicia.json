@@ -17,14 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a7-widened"
+    ],
+    "note": "A7: the span was 1942-1944. The cited article's first sentence says, at the cached revision 1372344283, \"from 1943 to 1945\". So 1943-1945, with no days, because the article gives none."
   },
   "origin": {
     "tool": "wikidata"
@@ -46,13 +48,17 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283: \"against the Polish minority in Volhynia, Eastern Galicia, parts of Polesia, and the Lublin region from 1943 to 1945\""
     }
   ],
   "title": "Massacres of Poles in Volhynia and Eastern Galicia",
   "summary": "The English Wikipedia article \"Massacres of Poles in Volhynia and Eastern Galicia\", at revision 1372344283, opens: \"The massacres of Poles in Volhynia and Eastern Galicia were carried out in German-occupied Poland by the Ukrainian Insurgent Army (UPA), with the support of parts of the local Ukrainian population, against the Polish minority in Volhynia, Eastern Galicia, parts of Polesia, and the Lublin region from 1943 to 1945. The UPA's actions resulted in up to 100,000 Polish deaths.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695020, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of Poles by Ukrainian nationalists during World War II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1942,
-    "end": 1944
+    "start": 1943,
+    "end": 1945
   },
   "place": "volhynia",
   "region": "europe",
