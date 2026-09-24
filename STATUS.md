@@ -21286,6 +21286,14 @@ with the revision id and the wikitext whole — which is where M72's second auth
 comes from, since the `<ref>` tags name the works the article cites. **Three
 edges were written and deleted**: a part may not point at its own umbrella where
 the umbrella is dated first, which rule 4 refused three times.
+**Deviation 1248** is the one this fire repeated and the check caught: the merge
+of `origin/m42`'s batch 47 was built and committed as one commit instead of
+three, so run **1601** on `e84f5d1e` went red with **seven rule 16 errors** on
+the history shards — the fourth fire running to break deviation 1232, for the
+reason 1236 named and nothing has yet fixed, which is that STEP 1 merges before
+STEP 2 reads the file where the rule lives. The batch's own three commits keep
+798's order and the rebuild in `bdcd0f84` rewrote all seven shards, so the head
+is clean; one red commit is left in the branch's history.
 `docs/m42b-pool.md` → "Batch 16" is the full account.
 
 ## Milestones landed

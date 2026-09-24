@@ -4169,6 +4169,34 @@ runs.
 
 ### Deviations
 
+**1248. Deviation 1232 was broken a fourth time, by the fire that had 1236's
+own account of it in front of it — and the check caught it, which is the part
+that is not a repeat.** This fire resolved the merge of `origin/m42`'s batch 47,
+staged it, ran `node tools/build-index.mjs`, validated clean, and committed the
+merge and its index **together**. `validate --index` passed locally because by
+then the merge commit did not yet exist and the history shards were built against
+a tree that matched; on the runner, where the commit does exist, run **1601** on
+`e84f5d1e` went red with **seven rule 16 errors** on exactly the shards 1233
+measured — `manifest.json`, three missing and three stale `history-*` files.
+**It was repaired by the next commit and not by a fix**: the batch's own three
+commits keep 798's order (records, rebuild, index), so the rebuild in `bdcd0f84`
+rewrote all seven, and `validate --index` is clean on the head with the merge
+commit in place. Run 1602 on `bdcd0f84` was **cancelled** by the concurrency
+group when the docs commit landed, so run **1603** on `ab31dd65` is the one that
+reads this branch's head. One red commit is left in the branch's history at
+`e84f5d1e`, and it is red for a reason that no longer holds at the head.
+
+**Why four fires in a row have done this, said plainly: the standing prompt's
+own order causes it.** STEP 1 merges; STEP 2 reads the pool file where the rule
+lives. A fire that follows the prompt reads 1232, 1233 and 1236 *after* the
+merge they are about. 1236 named this and asked for "a rule about the prompt's
+own order"; nothing has changed the prompt, so the fire after this one will meet
+it again unless it does what this note asks. **What a fire can do without the
+prompt changing: before the first `git merge` of the fire, read this deviation
+list.** Three commits and not two — resolve and commit the merge, rebuild, commit
+the index — and `validate --index` passing before the merge commit exists means
+nothing, because the history shards are read out of the repository's commits.
+
 **1247. A `curl` at `en.wikipedia.org`'s `api.php` is refused whatever
 user-agent it carries, and `Special:Export` is not.** Deviation of the
 sixteenth fire said the import's own user-agent gets through where a bare one
