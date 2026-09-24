@@ -6724,9 +6724,9 @@ raised.
 `974a784a` concluded **success** — deviation 1278 answered. Run **1739** on the batch's
 index commit `6ee07b27` **failed**, on `tests/map-browser.test.mjs` and on nothing else,
 which is deviation 1286: the records were pushed while the browser suite was still
-running over them. Run **1740** on `f56e7af8`, the head that carries the test fix, was
-still in progress when this was written; the commit after this one says how it
-concluded. Locally the fire finished at **2,114 tests passing with nothing failed and
+running over them. Run **1740** on `f56e7af8`, the head that carried the test fix, was
+**cancelled** when the next commit superseded it, and run **1741** on `0315f2cb`, the
+head of this fire, concluded **success**. Locally the fire finished at **2,114 tests passing with nothing failed and
 nothing skipped** — the 1,819 of the pure suites and the 295 of the browser suites, the
 browser set run alone, the two sets never at once. `node tools/validate.mjs --index` is
 **clean at 0 errors and 463 warnings** on the pushed index. **The next fire should read
