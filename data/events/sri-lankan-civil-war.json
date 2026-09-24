@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class A: the neighbour is missing. Twenty-six years of war in Sri Lanka touch nothing this atlas holds. The Portuguese presence on the island ended in the seventeenth century and is outside the corpus’s period entirely; there is no South Asian record here except Goa and the Indo-Pakistani wars, and no honest edge to either."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Asia is in the atlas now, 122 active events, which is what M44b said was missing. The article, at revision 1375466345, puts the Indian Peace Keeping Force at the centre of the war’s middle years, and the atlas holds no Indian record it touches: india-pakistan-war-of-1971 is fourteen years earlier and the article draws no line to it. Twenty-six years of war still reaching nothing, and now for want of the IPKF rather than for want of Lisbon."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q213394",

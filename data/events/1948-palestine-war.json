@@ -13,18 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-15",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
-    "on": "2026-09-15",
-    "reason": "Retracted in M44b, class B. The atlas now holds the 1948 Arab-Israeli war, which this record’s own cached lead calls the second and final stage of the same war, and that record carries the edges: to the Egyptian revolution of 1952 and forward to 1973. This one can only argue to that one, which leaves it at three hops. Two records of one war, one of them a stage of the other, is not more of the atlas."
+    "on": "2026-09-24",
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The atlas holds 1948-arab-israeli-war, which this record’s own cached lead calls the second and final stage of the 1948 Palestine war, and it is filed under arab-israeli-conflict. A relation between a war and its own stage is what `parent` says, not what an edge says, and C8 suspends an edge from a parent to its own child until the owner decides. So no edge is available and the record stays retracted — but what it wants is not an edge at all: under A6 it is the umbrella the 1948 war and the civil war in Mandatory Palestine would be filed under, which is a reinstatement a person or a filing fire can make and this pass may not."
   },
   "review": {
     "flags": [
       "imported-facts",
-      "m44b-retracted"
+      "a14-reason-rewritten"
     ]
   },
   "wikidata": "Q49097",
