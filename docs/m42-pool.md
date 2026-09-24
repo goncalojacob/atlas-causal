@@ -8962,3 +8962,10 @@ of it.
   `1948-palestine-war` and `balkan-wars`.
 - **Deviation numbers: take the next above 1431.** This fire wrote **1429 to
   1431**.
+
+**The check is green on this fire's head.** Run 1735 of `validate.yml`, commit
+`ec632fcf`, conclusion `success`. Runs 1733 and 1734, on the records and the
+index commits, were cancelled by the next push in the same concurrency group,
+which is the ordering of rule 798 working rather than a fault. **2,114 tests
+pass locally, 1,819 pure and 295 browser, with nothing skipped.** The re-run
+allowance is unspent: nothing was re-run.
