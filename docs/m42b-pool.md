@@ -5297,6 +5297,18 @@ rebuild, then the index — and `docs/m53-polities.md` §4.1 is re-taken in the
 commit that writes the records, which this fire did at 380 of 879. Deviation
 1251 has not recurred.
 
+**The check, as this fire leaves it.** Run **1677** on `ce0f48f1`, the head, has
+"Validate records" **green** and "Tests" still running; run **1676** on the
+records commit `4b7219be` has the same shape. Locally the fire has
+`node tools/validate.mjs --index` clean at **0 errors and 412 warnings**, and
+the **1,810 tests of the 152 pure suites all pass with none failed and none
+skipped** — which is every suite that judges a record, the validator's own,
+`registry`, `spine` and `m67` among them. The 37 browser suites, which judge the
+display this batch does not touch, were green through 30 of 37 and 206 tests
+with nothing failed when the fire ended. **The next fire should read 1677's
+conclusion before it does anything else**, and if it is red, read the failure:
+the check has been honest since M63 and it is not load.
+
 **The umbrella's own lead is the cheapest vein this branch has found.** Batch 21
 cost six imports, no place record, no class, no ambiguity and no refusal, and
 it moved the largest component by six — because the umbrella was already here,
