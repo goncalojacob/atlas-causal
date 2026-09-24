@@ -21651,8 +21651,13 @@ why M85 kept it.
 
 ### 9 — the pictures nobody had seen (A7)
 
-`m86-graph.png`, `m86-timeline.png` and both at phone width. The 1900s column
-of the graph is still dense — 159 of the 242 main events are in it — and the
+`m86-graph.png`, `m86-timeline.png` and both at phone width. **The phone
+graph is unreadable and is left so**: its labels are about four pixels tall,
+which is review A's finding 5 and is `docs/m87-brief.md`'s — "on the graph
+draw no label under 8 px on screen except the selected node and its ring".
+The picture is taken because that is what §9 is for: the fault is now on the
+record rather than unseen. The 1900s column of the desktop graph is still
+dense — 159 of the 242 main events are in it — and the
 resting labels were **not** capped further, which the brief allowed: the
 graph's own placer already writes only the names that fit, so a lower cap
 would take names off the left half of the picture without thinning the right.
@@ -21718,6 +21723,19 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+1214. **The check went red once on the cold browser launch, and it is the
+      flake `tests/browser.mjs` already names.** On `dabfded3`, the first test
+      of `compose-browser` — a suite M86 does not touch — failed with
+      *"headless Chromium opened a debugging port"*, Chromium alive and no
+      page listed at the sixty-second deadline, exactly as it did three times
+      on 22 September; the next test in the same file then passed in 42 s on
+      the same browser, and the file hit the job's own 120 s bound. Every one
+      of the 189 suites passes here, 1,810 pure and 286 browser, the browser
+      ones one at a time as the check runs them. **The wait was not raised**:
+      it is 60 s against a `--test-timeout` of 120 s, so a longer one would be
+      killed by the test timeout before it could fire. What the measurement
+      says is that the budget is the *file's*, which is finding B7's — one
+      Chromium per file — and `docs/m87-brief.md`'s to spend.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
