@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ecuador-q736",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q736, whose P625 is this point. Precision `country` from the item's own class."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q736",
+  "sitelinks": {
+    "count": 259,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Ecuador",
+    "pt": "Equador"
+  },
+  "sources": [],
+  "names": [
+    "Ecuador",
+    "Equador"
+  ],
+  "where": {
+    "lon": -78,
+    "lat": -1,
+    "precision": "country",
+    "label": "Ecuador"
+  },
+  "region": null,
+  "summary": null
+}

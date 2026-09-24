@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "french-first-republic",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q58296, whose P625 is this point. Precision `country` from the item's own class."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q58296",
+  "sitelinks": {
+    "count": 72,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "French First Republic",
+    "pt": "Primeira República Francesa"
+  },
+  "sources": [],
+  "names": [
+    "French First Republic",
+    "Primeira República Francesa"
+  ],
+  "where": {
+    "lon": 2.3272222222222223,
+    "lat": 48.86527777777778,
+    "precision": "country",
+    "label": "French First Republic"
+  },
+  "region": null,
+  "summary": null
+}

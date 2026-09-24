@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "operation-turquoise--first-congo-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Opération Turquoise\", revision 1357895302, § Implementation"
+    }
+  ],
+  "from": "operation-turquoise",
+  "to": "first-congo-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's § Implementation makes the operation's camps the thing the invasion of Zaire was launched against: \"These camps contained the Rwandan state military (FAR) which led to the invasion of Zaire by Rwanda, Burundi and Uganda, known as the First Congo War.\" It is precondition-of rather than caused because the article gives the camps' composition, not the operation itself, as what led to the invasion — the operation is what put them there. The atlas already holds 1994-genocide-against-tutsi --precondition-of--> first-congo-war; this is the same chain read through the French operation the article says created the camps.",
+  "dispute": null
+}

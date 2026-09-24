@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "russo-japanese-war--revolution-in-the-kingdom-of-poland--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution in the Kingdom of Poland (1905–1907)\", revision 1370706988, § Background"
+    }
+  ],
+  "from": "russo-japanese-war",
+  "to": "revolution-in-the-kingdom-of-poland",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The revolution's own article puts the war among the conditions it broke out of: \"Worsening economic conditions (the recession of 1901-1903) contributed to mounting political tensions in the Russian Empire, including Poland; the economy of the Kingdom of Poland was also being significantly hit by the aftershocks of the Russo-Japanese War; by late 1904 over 100,000 Polish workers had lost their jobs.\" The article names the war as one cause among several and does not make it the cause, so the type is precondition-of. The atlas already holds russo-japanese-war --caused--> russian-revolution-of-1905, of which this is the Polish half, and holds it as a separate record.",
+  "dispute": null
+}
