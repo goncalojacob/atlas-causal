@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Result"
+    }
+  ],
+  "from": "battle-of-the-alte-veste",
+  "to": "battle-of-lutzen-1632",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article puts Lützen among the Alte Veste's own results: \"Several weeks later, lack of supplies led Wallenstein to break camp and move north, allowing the Swedes out of Nuremberg. The two armies met again two months later at the Battle of Lützen, where Gustavus was killed,\" and before it: \"The immediate result of the Nuremberg campaign allowed the Habsburgs to advance into Saxony.\" The stalemate at Nuremberg is what sent Wallenstein into Saxony, which is the ground Lützen was fought over. Uncited in the article, so probable.",
+  "dispute": null
+}

@@ -5950,151 +5950,468 @@ then rebuild and commit the index on its own. The rebuild before the commit is
 still worth doing — it is how the merge is checked — but its output must be
 thrown away and taken again.
 
-## Where the run stands, for the fire that picks it up
+## Batch 24 — the Thirty Years' War's unimported children, and Europe's seventeenth century
 
-*24 September, after the twenty-third fire and its batch 23.*
+*24 September, the twenty-fourth fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **911 active** |
+| corpus | **919 active** (911 on this branch, plus the eight `origin/m42` brought) |
+| **main** | **242** |
+| **largest connected component** | **632** |
+| components | 210 |
+| events with no edge at all | 166 |
+| Europe before 1900 | 99 active, 18 main |
+| the `americas` lane | 221 active, 55 main |
+| **Europe's seventeenth century** | **21 active, 2 main** — the thinnest cell of this partition that is not against the 1492 wall |
+
+**One merge came first.** `origin/m0` was already an ancestor; `origin/m42` was six
+commits ahead with its batch 50 and was merged the way the brief says. It conflicted
+in 238 `data/index/` paths as rename/rename and in four prose files: `STATUS.md` and
+the two `data/imports/` item lists were unioned, `sources.html` was left to the
+rebuild, and `docs/m53-polities.md` §4.1 was re-taken over the merged corpus (383 of
+919). The class table conflicted in its last entry and both sides were kept —
+`Q747074` comune of Italy, which this branch added at batch 23, and `Q1758856`
+commune of Mali, which `m42` added at its batch 50.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 155 | 31 | 155 | 31 |
+| `americas` | 221 | 55 | 221 | 55 |
+| `asia` | 149 | 67 | 149 | 67 |
+| `europe` | 394 | 89 | **409** | 89 |
+| Europe before 1900 | 99 | 18 | **114** | 18 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 4 | 3 | 4 | 3 |
+| the Americas' 16th | 24 | 5 | 24 | 5 |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 23 | 2 | 23 | 2 |
+| the Americas' 19th | 38 | 8 | 38 | 8 |
+| the Americas' 20th | 86 | 30 | 86 | 30 |
+| the Americas' 21st | 23 | 1 | 23 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| **Europe's 17th** | **21** | **2** | **36** | **2** |
+| Europe's 18th | 24 | 3 | 24 | 3 |
+| Europe's 19th | 21 | 10 | 21 | 10 |
+
+South and central America against north, inside the `americas` lane: **187 to 18**,
+with sixteen of the lane's events still placeless — unmoved, because nothing of this
+batch is that lane's.
+
+**The main count is 242 before and 242 after.** Fourteen of the fifteen are filed
+under `thirty-years-war`, which the atlas already held as a main event; the
+fifteenth, `battle-of-lomnice`, is filed under `bohemian-revolt`, which is itself a
+child of it.
+
+### The vein, and why it was the one to take
+
+Europe's seventeenth century held twenty-one active events and **nineteen of them
+were the Thirty Years' War** — the war itself, the Bohemian Revolt and seventeen of
+its children — with `royal-african-company` the only other thing in the century.
+Wikidata's `P361` on `Q2487` returns **171 items**, of which this atlas held nineteen
+before the batch and **152 it had never seen**. Nothing had to be worked out first:
+`thirty-years-war` (1618–1648) is here and is a main event, so a child filed under it
+cannot raise the main count, and every one of the fifteen falls inside its span.
+
+Fifteen were taken, spread deliberately across the whole war rather than clustered
+in one campaign — 1618, 1619, 1622, 1626, 1628, 1629, 1631, 1632, 1633, 1636, 1638,
+1639, 1644, 1645 and 1648 — so that the century fills evenly and the next fire has
+somewhere to write edges in every decade.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-lomnice` | `Q2088781` | 1618-11-09 | `bohemian-revolt` | `dunajovice` (new) | Europe 17th |
+| `battle-of-humenne` | `Q723957` | 1619-11-23 | `thirty-years-war` | `humenne` (new) | Europe 17th |
+| `siege-of-bergen-op-zoom-1622` | `Q1838038` | 1622-07-18 – 10-02 | `thirty-years-war` | `bergen-op-zoom` (new) | Europe 17th |
+| `battle-of-dessau-bridge` | `Q677121` | 1626-04-25 | `thirty-years-war` | `dessau-ro-lau` (new) | Europe 17th |
+| `battle-of-wolgast` | `Q653561` | 1628-09-02 | `thirty-years-war` | `wolgast` (new) | Europe 17th |
+| `battle-of-trzciana` | `Q380067` | 1629-06-25 | `thirty-years-war` | `trzciano-pomeranian-voivodeship` (new) | Europe 17th |
+| `battle-of-werben` | `Q653487` | 1631-07-22 | `thirty-years-war` | `werben-elbe` (new) | Europe 17th |
+| `battle-of-the-alte-veste` | `Q2002331` | 1632-09-09 | `thirty-years-war` | `nuremberg` (new) | Europe 17th |
+| `battle-of-oldendorf` | `Q481354` | 1633-07-08 | `thirty-years-war` | `hessisch-oldendorf` (new) | Europe 17th |
+| `battle-of-wittstock` | `Q428972` | 1636-10-04 | `thirty-years-war` | `wittstock` (new) | Europe 17th |
+| `siege-of-breisach` | `Q331565` | 1638-08-18 – 12-17 | `thirty-years-war` | `breisach` (new) | Europe 17th |
+| `battle-of-chemnitz` | `Q245811` | 1639-04-14 | `thirty-years-war` | `chemnitz` (new) | Europe 17th |
+| `battle-of-juterbog` | `Q1584586` | 1644-11-23 | `torstenson-war` | `juterbog` (new) | Europe 17th |
+| `battle-of-nordlingen-1645` | `Q630142` | 1645-08-03 | `thirty-years-war` | `nordlingen` (reused) | Europe 17th |
+| `battle-of-zusmarshausen` | `Q519818` | 1648-05-17 | `thirty-years-war` | `augsburg` (new) | Europe 17th |
+
+**Fifteen items created, none enriched, none ambiguous, none refused**, over two
+`--import` runs and 53 calls, with 45 Wikipedia leads cached. The fifteen events were
+the first run; the fourteen place items their `P276` names were the second.
+
+**One record is filed away from where `P361` points and the article is why.**
+`battle-of-juterbog` carries `P361` to the Thirty Years' War, but the English
+article's own background opens *"Field Marshal Lennart Torstenson had unexpectedly
+marched into Jutland in September 1643 (see Torstenson War)"* and the campaign it
+then describes is that war throughout. `torstenson-war` (1643–1645) is here, is
+itself a child of `thirty-years-war`, and contains 1644: A3/A6/A8's narrowest
+umbrella whose span and subject both fit. The reason is in the record's `review.note`.
+
+**Two records are filed under an umbrella their own article does not name, and both
+say so in `review.note`.** `siege-of-bergen-op-zoom-1622`'s first sentence calls it
+a siege *"during the Eighty Years' War"* and `battle-of-trzciana`'s calls it one of
+*"the Polish-Swedish War (1626–1629)"*; Wikidata's `P361` on both names the Thirty
+Years' War, and the atlas holds neither of the other two. Both claims are stated by
+sources the record cites, the run chose neither over the other, and the note says so
+for the reviewer. Leaving either parentless would have raised the main count, which
+this brief forbids.
+
+### The summaries
+
+Every one of the fifteen carries the cached English lead at a named revision, written
+on the second pass deviation 1257 describes — 1370447945, 1370265836, 1370739522,
+1370109657, 1370276997, 1370591664, 1370276785, 1370277557, 1370452128, 1371435921,
+1370739740, 1370108980, 1370444413, 1370452014 and 1370597065 — with the
+`wikipedia-en` citation beside the `wikidata` one and `summary-from-lead` in
+`review.flags`. **No record of this batch shows the placeholder alone.** Deviation
+1260's check was run on all fifteen and **none diverged**: the cached file's `title`
+is the record's own `wikipedia.en` in every case. A14 (3) holds — every
+`wikipedia-en` citation this batch writes names a revision the cache carries, because
+the revision was read off the cache.
+
+### Places (A9, as A12 corrects it)
+
+Fourteen place records were created and one reused:
+
+| place | item | precision | from |
+| --- | --- | --- | --- |
+| `dunajovice` | `Q1265269` | `city` | the event's `P276` |
+| `humenne` | `Q502264` | `city` | the event's `P276` |
+| `bergen-op-zoom` | `Q192508` | `city` | the event's `P276` |
+| `dessau-ro-lau` | `Q3828` | `city` | the event's `P276` |
+| `wolgast` | `Q492543` | `city` | the event's `P276` |
+| `trzciano-pomeranian-voivodeship` | `Q260055` | `city` | the event's `P276` |
+| `werben-elbe` | `Q504889` | `city` | the event's `P276` |
+| `nuremberg` | `Q2090` | `city` | the event's `P276` |
+| `hessisch-oldendorf` | `Q533826` | `city` | the event's `P276` |
+| `wittstock` | `Q159572` | `city` | the event's `P276` |
+| `breisach` | `Q489911` | `city` | the event's `P276` |
+| `chemnitz` | `Q2795` | `city` | the event's `P276` |
+| `juterbog` | `Q486541` | `city` | the event's `P276` |
+| `augsburg` | `Q2749` | `city` | the event's `P276` |
+| `nordlingen` | — | — | reused, written by batch 23's own run |
+
+**The 24 September lane guard was run and all fifteen passed**: every point derives
+`europe`, which is the lane the events carry, so nothing was cleared and no place was
+written whose lane disagreed with its event's.
+
+**Every precision came off the item's class and none was hard-coded** (A12 (2)):
+`city` from `Q42744322` urban municipality in Germany, `Q1549591` big city, `Q3957`
+town, `Q515` city, `Q5153359` municipality of the Czech Republic and `Q3558970`
+village of Poland. The last is the one class line this batch added, under deviation
+1266's rule; deviation 1274 below is where it is argued.
+
+**Every one of the fifteen events had its own `P625` and the tool used none of them**,
+which is deviation 1277: an event takes a place record and never a coordinate, and the
+place record a `P276` names is created only if that item is in the same `--import`
+batch. It was not, so the first run wrote fourteen placeless events and the second
+wrote the fourteen places; the `place` field was then written by the fire, which is
+what the `a9-place` flag on those fourteen says. `battle-of-nordlingen-1645` carries
+no such flag, because `nordlingen` was already here and the tool did the linking.
+
+### The ten edges
+
+Every one runs to or from a record the atlas already held, every one quotes the
+sentence that makes the claim, and **none runs from a parent to its own child**
+(A14): no edge touches `thirty-years-war`, `bohemian-revolt` or `torstenson-war`.
+
+| edge | type | confidence | the claim, and where |
+| --- | --- | --- | --- |
+| `siege-of-stralsund-1628` → `battle-of-wolgast` | `enabled` | `probable` | Wolgast § Battle, rev 1370276997: *"Christian IV then awaited Wallenstein, who withdrew from the siege of Stralsund and was heading east to face the Danish force."* |
+| `battle-of-breitenfeld-1631` → `battle-of-the-alte-veste` | `precondition-of` | `probable` | Alte Veste § Background, rev 1370277557: *"The earlier successes of Gustavus Adolphus over General Tilly, particularly at Breitenfeld … forced Holy Roman Emperor Ferdinand II to recall Albrecht von Wallenstein into military service from retirement."* |
+| `battle-of-rain` → `battle-of-the-alte-veste` | `precondition-of` | `probable` | the same sentence, which names Tilly's death at Rain as the other half of it |
+| `battle-of-the-alte-veste` → `battle-of-lutzen-1632` | `enabled` | `probable` | Alte Veste § Result: *"lack of supplies led Wallenstein to break camp and move north … The two armies met again two months later at the Battle of Lützen"*, and *"The immediate result of the Nuremberg campaign allowed the Habsburgs to advance into Saxony."* |
+| `battle-of-lutzen-1632` → `battle-of-oldendorf` | `precondition-of` | `probable` | Oldendorf § Background, rev 1370452128: *"After Gustavus Adolphus was killed in November 1632, the Duke of Brunswick was appointed local Swedish commander. The 1633 campaign focused on securing the supply route …"* |
+| `battle-of-nordlingen-1634` → `battle-of-wittstock` | `precondition-of` | `probable` | Wittstock § Background, rev 1371435921: *"After the Swedish defeat at Nördlingen in 1634, many protestant princes … lost faith in their alliance with Sweden and reconciled with the emperor."* |
+| `peace-of-prague-1635` → `battle-of-wittstock` | `precondition-of` | `probable` | the same paragraph: *"In May 1635, the Elector of Saxony agreed to the Peace of Prague … In northern Germany, a corps of the Habsburg Imperial army and the Saxon army fought against the last significant Swedish forces."* |
+| `peace-of-prague-1635` → `battle-of-chemnitz` | `precondition-of` | `probable` | Chemnitz § Background, rev 1370108980: *"The former Swedish ally Saxony defected in the Peace of Prague (1635) to Emperor Ferdinand II."* |
+| `battle-of-nordlingen-1634` → `siege-of-breisach` | `precondition-of` | `probable` | Breisach § Background, rev 1370739740: *"After his defeat as Swedish commander at Nördlingen in 1634, he commanded … the former troops of the Protestant Heilbronn League … In 1637, he went onto the offensive against Breisach."* |
+| `battle-of-zusmarshausen` → `battle-of-prague-1648` | `enabled` | `probable` | Zusmarshausen § Aftermath, rev 1370597065: *"However, the Swedes took advantage of the weakened defences in Bohemia; a second Swedish army under Königsmarck took the castle and the Malá Strana district of Prague by surprise on 25 July."* |
+
+**Four edges name a second author and each is the one Wikipedia itself cites** (A5,
+M72). The Wolgast sentence carries `<ref name=Heckel143/>`, the Oldendorf sentence
+`{{sfn|Guthrie|2003|p=238}}`, the Breisach paragraph `{{Sfn|Ackermann|2023|pp=215}}`
+and the Zusmarshausen paragraph `<ref name="Wilson 2010 743-4">`, so
+`heckel-1983-deutschland-im-konfessionellen-zeitalter`,
+`guthrie-2003-the-later-thirty-years-war`,
+`ackermann-2023-herzog-bernhard-von-weimar` and `wilson-2009-europes-tragedy` are
+source records now and each edge names one with its own locator. The other six
+sentences carry no citation of their own — the Alte Veste background and result are
+uncited throughout, and so are the Wittstock and Chemnitz background paragraphs — so
+those six name Wikipedia alone. **A second author does not lift the confidence**:
+all ten stay `probable` under A2.
+
+**One of the four carries a maintenance tag and the edge says so.** The Breisach
+sentence has a `{{failed verification span}}` of August 2026 over the words
+*"independent army,"*. The quotation leaves the tagged words out, and the edge's
+`review.note` tells the reviewer where the tag is and what it covers.
+
+### What was refused, and why
+
+**Four claims were read and not written.**
+
+1. **`battle-of-dessau-bridge` → `battle-of-lutter`.** The Dessau article says
+   *"Once nearly half of Mansfeld's army had been destroyed, the Danes retreated to
+   Silesia. Christian IV's army was defeated by the Count of Tilly in the Battle of
+   Lutter."* Two sentences side by side with no claim between them — A14 (4)'s own
+   refusal class. The connection a reader supplies is not the one the article makes.
+2. **`battle-of-wittstock` → `battle-of-chemnitz`.** The Chemnitz background does
+   make a claim — *"The Swedish victory at the Battle of Wittstock in autumn 1636 led
+   to a brief Swedish incursion into Saxony, but this was overturned by an Imperial
+   counteroffensive in 1637"* — but what Wittstock led to there is the 1636–37
+   incursion, not the battle of 1639. An edge would put the article's claim on a
+   record the article does not name.
+3. **`battle-of-lutzen-1632` → `battle-of-nordlingen-1634`.** The Nördlingen article,
+   rev 1373505403, narrates *"Despite the death of Gustavus at Lützen in November
+   1632, Sweden and its German allies formed the Heilbronn League in April 1633 …
+   In July, the coalition defeated an Imperial army at Oldendorf"* — a chronology of
+   the two years before the battle, and a *despite* rather than a *because*. It would
+   have joined the batch's two five-event components into one of ten, which is
+   exactly why it was read twice and still refused.
+4. **`battle-of-jankau` → `battle-of-nordlingen-1645`.** Both are 1645 and neither
+   article names the other.
+
+### What the component says (A5)
+
+| | before | after |
+| --- | --- | --- |
+| active events | 919 | **934** |
+| main | **242** | **242** |
+| active edges | 881 | **891** |
+| components | 210 | 215 |
+| **largest connected component** | **632** | **632** |
+| events with no edge at all | 166 | 167 |
+
+**The largest component did not move and this batch could not have moved it.** The
+632-event component is the Atlantic and modern story; the Thirty Years' War was three
+edges and nineteen records before this batch and is a set of islands in it still. What
+the ten edges did was build four of those islands out of records that had none:
+`battle-of-breitenfeld-1631`–`battle-of-rain`–`battle-of-the-alte-veste`–`battle-of-lutzen-1632`–`battle-of-oldendorf`
+(five), `battle-of-nordlingen-1634`–`peace-of-prague-1635`–`battle-of-wittstock`–`battle-of-chemnitz`–`siege-of-breisach`
+(five), `siege-of-stralsund-1628`–`battle-of-wolgast` (two) and
+`battle-of-zusmarshausen`–`battle-of-prague-1648` (two). Five of those ten records
+are ones the atlas already held and had never linked, which is the part of this batch
+that is worth more than the fifteen imports.
+
+**The two five-event islands are one refusal apart**, and the refusal is number 3
+above. A fire that finds a work making the claim the Nördlingen article does not —
+that Lützen's outcome is why the Swedish position collapsed at Nördlingen — joins
+them. **The likeliest bridge to the 632 is a record this branch has not imported**:
+`Q1501724`, the Portuguese Restoration War (1640-1668), is one `P361` hop under
+`Q2487` and is the one member of that hop whose subject the Atlantic side of the
+atlas already holds at its other end. Whether an edge to it exists is a question for
+the articles and not for this note.
+
+### Deviations
+
+**1274. A class line for `Q3558970`, village of Poland, added under deviation 1266's
+rule.** Trzciano, where the Battle of Trzciana was fought, is classed as one and
+nothing else, and was refused for want of the line. `Q484170` commune of France and
+`Q5153359` municipality of the Czech Republic are already in the table as `city`, and
+a village of Poland is the same kind of thing: a settlement with a seat and a point,
+which is what `PRECISIONS` calls a city. Wikidata's own description of the class, read
+off the class item, is *"type of populated place"*. The line mirrors ones the table
+already holds, so 1266 allows it and no owner question is raised.
+
+**1275. `type: "secondary"` is not a source type and rule 1 says so by listing the
+seven that are.** A source record takes `book`, `chapter`, `article`, `thesis`,
+`primary`, `dataset` or `web` — what kind of thing the source *is*, not what kind of
+evidence it gives. Four records of this batch were written `secondary` and all four
+were refused; all four are books.
+
+**1276. A Wikipedia `{{cite book}}` for a later printing often carries no ISBN, and
+rule 13 refuses a book with no resolvable identifier.** The Zusmarshausen article
+cites *Europe's Tragedy* in the Penguin 2010 printing with pages and no ISBN, and a
+source record written from that citation alone cannot validate. **Do not invent one.**
+The work is the same work: the record names the edition that has an identifier — Allen
+Lane 2009, ISBN 9780713995923, which two other articles of this batch cite — and the
+printing the page numbers belong to goes in the edge's own locator. `reference` on the
+source record says the work has two printings and that a locator names which one it
+read.
+
+**1277. The import links an event to a place only inside one batch.** `runImportMode`
+resolves an event's `place` through `byItem`, which holds the places this atlas
+already had plus the ones *this batch* created, and it sorts places before events so
+that the second can point at the first. A place item added to `items` after the events
+have run is therefore too late: the events are in `done`, the tool will not revisit
+them, and the place record it creates links to nothing. **Put an event's `P276` items
+in the same `--import` batch as the event** and the tool does the placing itself, with
+no `a9-place` flag and no second pass. Batch 23 and this batch both ran the places
+afterwards and both paid the same price — fourteen `place` fields written by hand
+here, seven there.
+
+**1278. Deviation 1273 was written on the twenty-third fire and the twenty-fourth
+reproduced it at the same step.** This fire resolved the `origin/m42` merge, rebuilt
+`data/index/` and committed the rebuild *in the merge commit* — which is exactly what
+1273 forbids, because a history shard built before the merge commit exists names a
+different set of commits than one built after it. Run **1729** on `54150eb6` failed,
+as run 1717 failed on `140502c1` and run 1696 on `81ed7ad3`. **1273's order is not
+advice and reading it is not enough**: the merge is committed with `data/index/`
+absent, and the rebuild is a commit of its own after it. The same holds for a batch,
+which is why 798 puts the records first.
+
+## Where the run stands, for the fire that picks it up
+
+*24 September, after the twenty-fourth fire and its batch 24.*
+
+| | |
+| --- | --- |
+| corpus | **934 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **625** |
-| the second component, the Italian Wars | **12**, up from 8 |
-| components | 209 |
-| events with no edge at all | 165 |
-| Europe before 1900 | **99 active, 18 main** |
+| **largest connected component** | **632** |
+| the second component | **12** |
+| components | 215 |
+| events with no edge at all | 167 |
+| Europe before 1900 | **114 active, 18 main** |
 | the `americas` lane | **221 active, 55 main** |
 | south and central America against north, inside that lane | 187 to 18, with 16 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 17th (21, 2)** and **Europe's 19th (21, 10)**, the Americas' 17th (23, 6), the Americas' 18th (23, 2), **Europe's 18th (24, 3)**, the Americas' 16th (24, 5), Europe's 16th (29, 1), the Americas' 19th (38, 8) |
-| the cell this fire moved | **Europe's 16th, 19 → 29**, its main count untouched at 1 |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 19th (21, 10)**, the Americas' 17th (23, 6), the Americas' 18th (23, 2), **Europe's 18th (24, 3)**, the Americas' 16th (24, 5), Europe's 16th (29, 1), Europe's 17th (36, 2), the Americas' 19th (38, 8) |
+| the cell this fire moved | **Europe's 17th, 21 → 36**, its main count untouched at 2 |
 
-**This fire merged both other branches and then took the cell that had waited
-six fires.** `origin/m0` was eighteen commits ahead with M87 and `origin/m42`
-six ahead with its batch 49; both merges are described in the batch note above,
-and deviation 1265 is the one new thing they taught. **Europe's sixteenth century
-is no longer the thinnest cell of this partition** — Europe's seventeenth and
-nineteenth are, at 21 apiece — and the vein that filled it has four or five
-batches left in it.
+**This fire merged `origin/m42` and then took the cell the last one left thinnest.**
+`origin/m0` was already an ancestor; `origin/m42` was six commits ahead with its batch
+50. Europe's seventeenth century is no longer the thinnest cell of this partition —
+**Europe's nineteenth is, at 21 active and 10 main** — and the vein that filled the
+seventeenth has ten or more batches left in it.
 
-**The vein is the War of the League of Cambrai's remaining children and the
-phases beside it.** This fire took the nine the eighteenth fire listed, plus the
-Sack of Rome; behind them, and still unimported, are the 1521–1526 war's seven,
-the League of Cognac's six less the Sack of Rome, the 1542–1546 war's seven, the
-1551–1559 war's four, the 1494–1495 war's four and the 1499–1504 wars' one.
-**None of it needs a new class now** — `Q747074` comune of Italy and `Q19841484`
-sack were the two this fire added and they were the two the cell wanted — and
-none of it can raise the main count, because every phase is already filed under
-`italian-wars`. One SPARQL call for everything one `P361` hop under `Q273348`
-returns the lot.
+**The vein is the Thirty Years' War's remaining children.** `P361` on `Q2487` returns
+**171 items**; this branch now holds thirty-four of them and **137 are unimported**.
+None of them can raise the main count, because `thirty-years-war` is here as a main
+event and every one of the 137 falls inside 1618–1648. Of the 137, roughly half carry
+an English article and a class the table already holds, which is the set a fire should
+take first; the rest are stubs with no article, whose summaries would be the item
+description alone. One SPARQL call for everything one `P361` hop under `Q2487`, with
+`P31` and the English sitelink beside it, returns the lot and sorts them.
 
-**The number A5 asks about will not move in this cell and the batch note says
-why.** The 625-event component is the Atlantic and modern story; the Italian Wars
-are a second island, which this batch grew from 8 to 12 and the next four batches
-will grow further without touching 625. **The join, when somebody finds it, is a
-claim about the Habsburg inheritance or about the silver that paid the Imperial
-armies**, and it will come from an article about that rather than from a battle's
-prelude. A fire that wants the largest component to move should spend itself on
-Europe's eighteenth or nineteenth century instead, where the Atlantic and the
-continent are the same story and the atlas already holds both ends.
+**Two things inside that vein are worth more than a batch of imports.** The first is
+`Q1501724`, the **Portuguese Restoration War** (1640–1668), which is one `P361` hop
+under `Q2487` and is the only member of that hop whose other end the Atlantic side of
+this atlas already holds; it is the likeliest bridge from the Thirty Years' War
+islands to the 632-event component. The second is that **the war's phases are
+importable as umbrellas and each is filed under `thirty-years-war`**: `Q83364344` the
+Czecho-Palatinate phase, `Q3778625` the Danish phase, `Q7655000` the Swedish
+intervention and `Q56823171` the Franco-Swedish phase are all `Q105370834` and all
+sit inside 1618–1648, so writing them costs no main event and would give every child
+of this batch and the next a narrower umbrella than the war itself.
 
-**The check is green on the head of this fire.** Run **1720** on `4f63dda3`
-concluded **success**. Run **1717** on the `origin/m42` merge failed rule 16 on
-the manifest and six history shards and deviation 1273 is that failure; runs
-1718 and 1719 were cancelled by the pushes that followed them, which is
-deviation 1258's own pattern. Locally the fire finished at **2,114 tests passing
-with nothing failed and nothing skipped** — the 1,819 of the 153 pure suites and
-the 295 of the 38 browser suites, the browser set run alone, the two sets never
-at once. **The first pure run of this fire reported three failures and they were
-real, not load**: it was started before the index was rebuilt, so
-`validate-cli.test.mjs` was reading the index deviation 1273 describes; the run
-after the rebuild passed 1,819 of 1,819. `node tools/validate.mjs --index` is
-**clean at 0 errors and 445 warnings** on the pushed index. **The next fire
-should read this head's run before it does anything else**, and if it is red,
-read the failure: the check has been honest since M63 and it is not load.
+**The number A5 asks about did not move and this cell cannot move it alone.** The
+Thirty Years' War is a set of islands beside the 632-event Atlantic component, and
+this batch made four of them (5, 5, 2, 2) out of records that had no edges at all.
+The two five-event islands are one refusal apart — refusal 3 of the batch note — and
+joining them is a question about what Lützen did to the Swedish position before
+Nördlingen, which needs a work the Nördlingen article does not cite.
 
 ### The veins, and which are open
 
-**Europe's seventeenth century (21, 2) and Europe's nineteenth (21, 10) are now
-the thinnest cells of this partition** and neither has been surveyed on this
-branch. The nineteenth is where the largest component is reachable: the atlas
-holds the Napoleonic Wars, the Latin American independence wars and the Atlantic
-story in one component, and a European nineteenth-century import lands beside
-records that are already in it.
+**Europe's nineteenth century (21, 10) is now the thinnest cell of this partition and
+has never been surveyed on this branch.** It is also where the largest component is
+reachable: the atlas holds the Napoleonic Wars, the Latin American independence wars
+and the Atlantic story in one component, and a European nineteenth-century import
+lands beside records that are already in it. **A fire that wants the 632 to grow
+should take it rather than the seventeenth.**
 
-**The Americas' seventeenth has three items left and each needs a decision, not
-a call.** `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions
-of Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120`
-the South Atlantic campaign (lane unsettled).
+**The Americas' seventeenth has three items left and each needs a decision, not a
+call.** `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of
+Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the
+South Atlantic campaign (lane unsettled).
 
-**The War of Jenkins' Ear has nine items left and none of them is this lane's
-first choice.** Four are North American and four are at sea, which A10's order
-puts behind South and Central America while the split is 187 to 18;
-**`Q9172888`, the Battle of Combapata**, is still refused for want of a place
-record for `Q3312913`, and is still worth a fire.
+**The War of Jenkins' Ear has nine items left and none of them is this lane's first
+choice.** Four are North American and four are at sea, which A10's order puts behind
+South and Central America while the split is 187 to 18; **`Q9172888`, the Battle of
+Combapata**, is still refused for want of a place record for `Q3312913`, and is still
+worth a fire.
 
 **The French Wars of Religion (`Q673175`) are still free to whoever brings their
 children, and still cost a main event.**
 
-**The Dutch–Portuguese War's children are a chronology with almost no argument
-drawn between its links**, and the cheapest edges left in this lane are in the
-records the atlas already holds rather than in the ones it has yet to import. A
-fire with a slow network should spend itself there.
+**The Dutch–Portuguese War's children are a chronology with almost no argument drawn
+between its links**, and the cheapest edges left in that lane are in the records the
+atlas already holds rather than in the ones it has yet to import. A fire with a slow
+network should spend itself there. **This batch is the proof of that**: five of the
+ten records its edges touch were already here and had never been linked.
 
 ### The cheap things this partition keeps not doing
 
-**`--reconcile` has never been run on this branch, and batches 20 and 22 both
-paid for it.** `havana`, `santiago-de-cuba` and `porto-calvo` are place records
-with the right coordinates written by hand because the import could not see them.
-Every place record written before the identity fields existed is in the state
-`havana` was. `tools/import/wikidata.mjs --reconcile` is additive by
-`tools/import/identity.mjs`'s rule — fill a gap, never change a value, never
-sign — and closing that gap once would make every later batch cheaper and safer.
+**`--reconcile` has never been run on this branch, and batches 20, 22 and 24 all paid
+for it.** `havana`, `santiago-de-cuba` and `porto-calvo` are place records with the
+right coordinates written by hand because the import could not see them. Every place
+record written before the identity fields existed is in the state `havana` was.
+`tools/import/wikidata.mjs --reconcile` is additive by `tools/import/identity.mjs`'s
+rule — fill a gap, never change a value, never sign — and closing that gap once would
+make every later batch cheaper and safer.
 
-**The thirteen polities, and now the twelve of them this batch named.** Every item
-of batches 17, 19, 20, 22 and 23 named two to eleven `P710` participants and the
-atlas holds one: `kingdom-of-navarre`, which batch 23's place run created by
-accident of `P276`. The twelve absent ones this batch alone named are `Q4948`
-Venice, `Q70972` the Kingdom of France, `Q12548` the Holy Roman Empire, `Q179876`
-England, `Q230791` Scotland, `Q435583` the Old Swiss Confederacy, `Q153529`
-Milan, `Q170174` the Papal States, `Q693570` Ferrara, `Q21088788` the Catholic
-Monarchy, `Q3845763` Mantua and `Q71747` Brittany, and `Q28573` the Inca Empire,
-`Q2121220` the K'iche' Kingdom, `Q617066` the Dutch West India Company, `Q377350`
-the Iberian Union and `Q766543` stand behind them from the earlier batches.
-**One `--import` run over those seventeen items would give `actors` lines to
-nearly every record before 1800 this branch holds**, and
-`docs/m53-polities.md` §4.1's numerator has moved by two in twenty-three batches.
-A fire that takes it should read `NC_ORIGINS` in `src/origin.js` first: an actor
-an import creates is licensed differently from one written here. This fire proved
+**Deviation 1277 is the other half of that, and it is free.** An event's `P276` items
+belong in the *same* `--import` batch as the event, because the tool sorts places
+before events and links them itself. Two batches in a row have run the places
+afterwards and written twenty-one `place` fields by hand. A fire that surveys its
+items' `P276` before it runs anything, and puts both lists in `items` together, pays
+one run instead of two and no `a9-place` flag at all.
+
+**The thirteen polities, and the twelve of them batch 23 named.** Every item of
+batches 17, 19, 20, 22 and 23 named two to eleven `P710` participants and the atlas
+holds one. This batch's fifteen are the same story: `P710` on them names Sweden, the
+Holy Roman Empire, Denmark-Norway, the Electorate of Saxony, Bavaria and France, and
+the atlas holds none as an actor of the right dates. **One `--import` run over those
+items would give `actors` lines to nearly every record before 1800 this branch
+holds**, and `docs/m53-polities.md` §4.1's numerator has not moved in twenty-four
+batches. A fire that takes it should read `NC_ORIGINS` in `src/origin.js` first: an
+actor an import creates is licensed differently from one written here. Batch 23 proved
 the run works — one item in, one actor out, correctly typed and dated.
 
-**A class-table line for `Q3184121`, municipality of Brazil.** Three place records
-of this branch have been written for Brazilian municipalities and the table has no
-entry for the class, so each one's precision was decided outside it. Deviation
-1266 settles the question of whether a fire may add such a line: **it may, where
-the line mirrors one already in the table**, and `Q484170` commune of France is
-that line. One line settles every Brazilian municipality that follows.
+**A class-table line for `Q3184121`, municipality of Brazil.** Three place records of
+this branch have been written for Brazilian municipalities and the table has no entry
+for the class, so each one's precision was decided outside it. Deviation 1266 settles
+whether a fire may add such a line: **it may, where the line mirrors one already in
+the table**, and `Q484170` commune of France is that line. Deviation 1274 of this fire
+is the same move made for `Q3558970`, village of Poland, and it cost one line.
 
 ### The two questions for the owner are unchanged and both still block a century
 
 1. **Does the atlas begin in 1492, or does its first sentence follow the corpus
-   wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names
-   `atlas.extent.min` and two tests hold it there, so nothing on this branch can
-   fill Europe's fifteenth century or anything earlier. A one-line answer
-   unblocks four records already known to import cleanly (`Q212976`, `Q12551`,
-   `Q127751`, `Q1552718`), and `italian-war-of-1494-1495` is the fifth record
-   sitting against the wall.
-2. **May a run take a period umbrella from an item whose class is a polity, where
-   the article is plainly a period article?** Colonial Brazil (`Q2088324`) is the
-   case and it is worth seven main events. `Q377350`, the **Iberian Union**, is a
-   second case of the same shape, and `battle-of-mata-redonda` names it. The class
-   table is an editorial decision and the whole point of it living in `data/`, so
-   the run will not decide either. **Deviation 1266's rule does not reach these**:
-   neither mirrors a line the table already holds.
+   wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min`
+   and two tests hold it there, so nothing on this branch can fill Europe's fifteenth
+   century or anything earlier. A one-line answer unblocks four records already known
+   to import cleanly (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and
+   `italian-war-of-1494-1495` is the fifth record sitting against the wall.
+2. **May a run take a period umbrella from an item whose class is a polity, where the
+   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and
+   it is worth seven main events. `Q377350`, the **Iberian Union**, is a second case of
+   the same shape, and `battle-of-mata-redonda` names it. The class table is an
+   editorial decision and the whole point of it living in `data/`, so the run will not
+   decide either. **Deviation 1266's rule does not reach these**: neither mirrors a
+   line the table already holds.
 
-A third question has been added by this batch, and it is smaller than both:
-**`spanish-conquest-of-iberian-navarre` is one record covering 1512 to 1529, and
-rule 4 therefore refuses every edge the article's own sentences state** (deviation
-1269). Dividing it at its campaigns — the 1512 invasion, the 1516 attempt, the
-1521 Franco-Navarrese campaign, the 1528 withdrawal — would let Pavia reach it and
-would cost no main event, because all four would file under the same umbrella. It
+A third question, added by batch 23, is smaller than both:
+**`spanish-conquest-of-iberian-navarre` is one record covering 1512 to 1529, and rule 4
+therefore refuses every edge the article's own sentences state** (deviation 1269).
+Dividing it at its campaigns would let Pavia reach it and would cost no main event. It
 is a division of somebody else's record and the run will not make it unasked.
+
+A fourth is added by this batch and is the same shape. **Two records are filed under
+`thirty-years-war` although their own articles call them part of the Eighty Years' War
+and of the Polish-Swedish War of 1626-1629** — `siege-of-bergen-op-zoom-1622` and
+`battle-of-trzciana`. Wikidata's `P361` says the Thirty Years' War for both, the atlas
+holds neither of the other two wars, and leaving either parentless would raise the main
+count. Both carry the divergence in `review.note`. Importing `Q164432` the Eighty Years'
+War and `Q2985977` the Polish-Swedish War of 1626-1629 as umbrellas would settle it and
+would cost two main events, which is why the run did not.
+
+**The check on the head of this fire is still running when this is written.** Run
+**1721** on `7df5d47c` concluded **success** — the last green head before this fire.
+Run **1729** on the `origin/m42` merge `54150eb6` **failed**, and the failure is
+deviation 1278: the merge was committed with a `data/index/` built before the merge
+commit existed, which is 1273's fault repeated at the same step. The commits of this
+batch put the records first and the index in a commit of its own after them, which is
+798's order and 1273's, so the head this fire leaves should be clean. **The next fire
+should read this head's run before it does anything else**, and if it is red, read the
+failure: the check has been honest since M63 and it is not load.

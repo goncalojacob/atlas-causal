@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "peace-of-prague-1635--battle-of-wittstock--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wittstock\", revision 1371435921, § Background"
+    }
+  ],
+  "from": "peace-of-prague-1635",
+  "to": "battle-of-wittstock",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same paragraph names the Peace itself as the step between Nördlingen and the field: \"In May 1635, the Elector of Saxony agreed to the Peace of Prague with Emperor Ferdinand II… In northern Germany, a corps of the Habsburg Imperial army and the Saxon army fought against the last significant Swedish forces.\" Wittstock was fought by a combined Imperial-Saxon army, which is the army the Peace of Prague made. Uncited in the article, so probable.",
+  "dispute": null
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-zusmarshausen--battle-of-prague-1648--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zusmarshausen\", revision 1370597065, § Aftermath"
+    },
+    {
+      "source": "wilson-2009-europes-tragedy",
+      "locator": "Penguin 2010 printing, pp. 744-747, as the Zusmarshausen article cites it"
+    }
+  ],
+  "from": "battle-of-zusmarshausen",
+  "to": "battle-of-prague-1648",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Zusmarshausen article puts the raid on Prague among the campaign's own consequences: \"However, the Swedes took advantage of the weakened defences in Bohemia; a second Swedish army under Königsmarck took the castle and the Malá Strana district of Prague by surprise on 25 July. Their following siege of the Old and the New Town at the other side of the Vltava river continued even after the final conclusion of the negotiations…\" The armies drawn into Bavaria after Zusmarshausen are the defences Bohemia lacked. The paragraph carries the article's own citation to Wilson, Europe’s Tragedy, Penguin 2010 printing, pp. 744-747, which is the second author named here.",
+  "dispute": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-humenne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q723957",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "wikipedia": {
+    "en": "Battle of Humenné"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q723957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Humenné\", revision 1370265836"
+    }
+  ],
+  "title": "Battle of Humenné",
+  "summary": "The English Wikipedia article \"Battle of Humenné\", at revision 1370265836, opens: \"The Battle of Humenné took place on 22–23 November 1619 near Humenné during the first period of the Thirty Years' War between the Transylvanian army and the joined loyalist Hungarian and Polish forces of Lisowczycy. It was the only battle of that war to involve the Polish–Lithuanian Commonwealth.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q723957, imported by tools/import/wikidata.mjs. The item's own description reads \"1619 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619,
+    "date": "1619-11-23"
+  },
+  "place": "humenne",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}
