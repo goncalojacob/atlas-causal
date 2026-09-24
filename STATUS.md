@@ -21504,9 +21504,9 @@ import them. Nothing was imported on the strength of the error.
 September.** The nineteenth fire merged `origin/m0` (eight commits, with the 24
 September review, M86's brief and **amendment A14**) and `origin/m42` (fourteen)
 before importing anything; each conflicted only in `STATUS.md` and both sides
-were kept. **Batch 19 took the Americas' sixteenth century**, which the merge
-left at 14 active and 3 main, and opened the vein every fire since the eighth
-had listed and none had opened: **eight events of the Spanish conquest**, twelve
+were kept. **Batch 19 took the Americas' sixteenth century**, at 16 active
+and 5 main, and opened the vein every fire since the eighth had listed and none
+had opened: **eight events of the Spanish conquest**, twelve
 items to the import and twelve created with none refused, in forty-seven calls —
 Vilcaconga, Cusco, Maraycalla, Ollantaytambo and Chupas under
 `spanish-conquest-of-the-inca-empire`, Q'umarkaj under
@@ -21526,8 +21526,14 @@ Hemming's *Conquest of the Incas*, Prescott's *History of the Conquest of Peru*
 and Pares's *War and Trade in the West Indies*, all three cited and not read —
 and **not one runs from a parent to its own child**, which is A14. The largest
 component goes 609 → **611** and the corpus **858 → 872 active**; the `americas`
-lane is **216**, its 16th century 22 and its 18th 23, and South and Central
-America against North is 182 to 19. `docs/m53-polities.md` §4.1 re-taken twice,
+lane is **216**, its 16th century 24 and its 18th 23, and South and Central
+America against North is 182 to 19. **Europe's nineteenth century, at 15 active
+and 10 main, is the thinnest cell in this partition and no fire has named it**:
+the run-stands "thinnest cells" line has listed Europe only to the eighteenth
+century since batch 12, and a cell nobody lists is a cell nobody takes. It is
+named from this fire on, and so is the rule the eighteen batch notes measure a
+century by, which this fire's own script disagreed with about the two records
+dated exactly 1500 (**deviation 1255**). `docs/m53-polities.md` §4.1 re-taken twice,
 in the same commit as each batch's records. **Three things were refused and all
 three are the run's own reading**: `Q7573336`, the Spanish conquest of Petén, is
 1618–1697 and belongs to the seventeenth century, not this cell; a Guilmartin

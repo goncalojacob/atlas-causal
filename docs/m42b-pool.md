@@ -4603,12 +4603,10 @@ and here it stopped a duplicate of `Q932845` being written under a second name.
 ## Batch 19 — the Spanish conquest vein, and the Americas' sixteenth century
 
 *24 September, the nineteenth fire. The cell is **the Americas' sixteenth
-century**, which the eighteenth fire left as the thinnest workable cell in this
-partition and which the merge of `origin/m0` left at 14 active and 3 main — two
-fewer than batch 18 measured, because A14's first pass widened two intervals out
-of the century. The vein is the one every fire since the eighth has listed and
-none has opened: **the nine of the Spanish conquest, every one of them inside an
-umbrella already here**.*
+century**, at 16 active and 5 main, which the eighteenth fire named as the
+thinnest workable cell in this partition. The vein is the one every fire since
+the eighth has listed and none has opened: **the nine of the Spanish conquest,
+every one of them inside an umbrella already here**.*
 
 ### Before the batch
 
@@ -4622,7 +4620,7 @@ umbrella already here**.*
 | events with no edge at all | 155 | **156** |
 | Europe before 1900 | 83 active, 18 main | 83 active, 18 main — untouched |
 | the `americas` lane | 202 active, 55 main | **210 active, 55 main** |
-| the Americas' 16th century | 14 active, 3 main | **22 active, 3 main** |
+| the Americas' 16th century | 16 active, 5 main | **24 active, 5 main** |
 | source records | 70 | **72** |
 | edges with two cited authors (rule 9) | 195 | **201** |
 
@@ -4630,21 +4628,21 @@ umbrella already here**.*
 `origin/m0` eight commits ahead with the 24 September review, M86's brief and
 amendment A14 on it, and `origin/m42` fourteen commits ahead with its curation
 fire's edges; both were merged before anything was imported, which is why the
-component starts at 609 and not batch 18's 607, and why the Americas' 16th
-starts at 14 and not 16. The only conflict in either merge was `STATUS.md`, where
-both claim lines were kept.
+component starts at **609** and not batch 18's 607. The only conflict in either
+merge was `STATUS.md`, where both claim lines were kept. No cell of this
+partition moved in the merge.
 
 ### Per lane and per century (A10)
 
 | century | europe | africa | asia | americas | oceania | no lane | all |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15th c. | 4 / 2 | — | — | 6 / 5 | — | — | 10 / 7 |
-| 16th c. | 19 / 1 | — | — | **22 / 3** | — | — | 41 / 4 |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | **24 / 5** | — | — | 43 / 6 |
 | 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
 | 18th c. | 24 / 3 | — | — | 17 / 2 | — | — | 41 / 5 |
-| 19th c. | 15 / 10 | 19 / 1 | 7 / 7 | 38 / 8 | — | — | 79 / 26 |
-| 20th c. | 239 / 64 | 74 / 23 | 111 / 45 | 89 / 30 | — | — | 513 / 162 |
-| 21st c. | 52 / 7 | 46 / 7 | 25 / 15 | 20 / 1 | — | — | 143 / 30 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
 | **all** | **374 / 89** | **139 / 31** | **143 / 67** | **210 / 55** | **—** | **—** | **866 / 242** |
 
 **South and Central America against North America is 176 to 19.** All eight of
@@ -4849,12 +4847,26 @@ something the article does not. The record was written, refused by the validator
 and deleted, and the edge says in its own explanation that it rests on Wikipedia
 alone.
 
+**1255. A measurement is re-taken with the same rule, never re-derived.** This
+fire wrote its own lane-and-century script and used the strict convention,
+`Math.floor((y - 1) / 100) + 1`, where the eighteen batch notes before it use
+`Math.floor(y / 100) + 1`. The only records the two disagree about are the ones
+dated exactly 1500 — two of them here — but the disagreement showed up as the
+Americas' sixteenth century apparently losing two events in a merge that did not
+touch them, and the first draft of batch 19's note explained the loss with a
+cause that did not exist. **Before a fire reports a cell as having moved, it
+reproduces the previous fire's number with the previous fire's rule**; a number
+that will not reproduce is a fault in the script before it is a fact about the
+corpus.
+
 ## Batch 20 — the War of Jenkins' Ear in Panama, Cuba and Venezuela, and the Americas' eighteenth century
 
 *24 September, the nineteenth fire's second batch. The cell is **the Americas'
-eighteenth century**, which batch 19 left as the thinnest in this partition at
-17 active and 2 main, and the vein is the six South and Central American items
-the thirteenth fire listed and left.*
+eighteenth century**, at 17 active and 2 main, which batch 19 left as the
+thinnest cell in this partition that a vein was ready for, and the vein is the
+six South and Central American items the thirteenth fire listed and left.
+Europe's nineteenth was thinner and §"The cell this fire should have taken
+first" is why it was not taken.*
 
 ### Before the batch
 
@@ -4875,13 +4887,13 @@ the thirteenth fire listed and left.*
 
 | century | europe | africa | asia | americas | oceania | no lane | all |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15th c. | 4 / 2 | — | — | 6 / 5 | — | — | 10 / 7 |
-| 16th c. | 19 / 1 | — | — | 22 / 3 | — | — | 41 / 4 |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | 24 / 5 | — | — | 43 / 6 |
 | 17th c. | 21 / 2 | — | — | 18 / 6 | — | — | 39 / 8 |
 | 18th c. | 24 / 3 | — | — | **23 / 2** | — | — | 47 / 5 |
-| 19th c. | 15 / 10 | 19 / 1 | 7 / 7 | 38 / 8 | — | — | 79 / 26 |
-| 20th c. | 239 / 64 | 74 / 23 | 111 / 45 | 89 / 30 | — | — | 513 / 162 |
-| 21st c. | 52 / 7 | 46 / 7 | 25 / 15 | 20 / 1 | — | — | 143 / 30 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
 | **all** | **374 / 89** | **139 / 31** | **143 / 67** | **216 / 55** | **—** | **—** | **872 / 242** |
 
 **South and Central America against North America is 182 to 19.** All six are
@@ -4969,6 +4981,36 @@ sentence is cited to *The Navy In the War of 1739–48*, Cambridge University
 Press, p. 251, which the article names with no author, no year and no
 identifier. Both edges say so in their own explanations.
 
+### The cell this fire should have taken first, and the measurement fault behind it
+
+**Europe's nineteenth century holds 15 active events and 10 of them are main**,
+which makes it the thinnest cell in this partition — thinner than the Americas'
+sixteenth that batch 19 took and the eighteenth that this batch took. **No fire
+of this branch has named it.** The "thinnest cells left" line the run-stands
+section has carried since batch 12 lists the Americas' centuries and Europe's
+15th to 18th and stops there, and a cell nobody lists is a cell nobody takes.
+It is named at the head of the run-stands table from this fire on.
+
+**Ten main of fifteen is the shape of the cell, and it is the cheap kind.**
+Europe's nineteenth is almost all umbrellas with nothing under them, so a batch
+of parts there raises the main count by nothing and fills the emptiest century
+of the lane that the review of 24 September measured as the atlas's largest.
+
+**And a measurement fault the fire found in its own script.** This fire's first
+table put 1500 in the fifteenth century — `Math.floor((y - 1) / 100) + 1`, the
+strict convention — and the eighteen batch notes before it use
+`Math.floor(y / 100) + 1`, which puts 1500 in the sixteenth. Two events,
+`portuguese-landfall-in-brazil-1500` and
+`indigenous-depopulation-of-coastal-brazil`, sit exactly on the boundary, so the
+two conventions disagree about the Americas' fifteenth and sixteenth by two
+records and about nothing else. **The tables of batches 19 and 20 were written
+once under the strict convention and rewritten under the run's own**, so every
+number in this file is comparable with every number before it: the Americas'
+sixteenth went 16 → 24, not 14 → 22. **A run that re-derives a measurement
+rather than re-taking it with the same rule reports a change that never
+happened**, which here would have been two events appearing to leave a century
+in a merge that did not touch them.
+
 ### What the component says
 
 **Four edges and the largest component does not move.** `battle-of-cartagena-de-indias`
@@ -5001,23 +5043,25 @@ atlas does not hold.
 | Europe before 1900 | 83 active, 18 main |
 | the `americas` lane | **216 active, 55 main** |
 | south and central America against north, inside that lane | 182 to 19 |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (18, 6)**, Europe's 16th (19, 1), Europe's 17th (21, 2), the Americas' 16th (22, 3), the Americas' 18th (23, 2) |
-| the cells this fire moved | the Americas' 16th, 14 → 22; the Americas' 18th, 17 → 23; both with their main counts untouched |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 19th (15, 10)**, the Americas' 17th (18, 6), Europe's 16th (19, 1), Europe's 17th (21, 2), the Americas' 18th (23, 2), Europe's 18th (24, 3), the Americas' 16th (24, 5) |
+| the cells this fire moved | the Americas' 16th, 16 → 24; the Americas' 18th, 17 → 23; both with their main counts untouched |
 
 **This fire merged before it imported.** `origin/m0` was eight commits ahead
 with `docs/review-2026-09-24.md`, `docs/m86-brief.md` and **amendment A14**, and
 `origin/m42` fourteen ahead with its curation fire's edges. Both merged with one
 conflict each time, `STATUS.md`, both sides kept; `data/index/` was dropped and
-rebuilt. The merge is why the corpus starts this fire at 858 and not batch 18's
-858 with the same cells — A14's first pass moved two events out of the Americas'
-sixteenth century and into the fifteenth.
+rebuilt. **The merge moved the graph and not the cells**: the largest component
+was 607 on batch 18's head and 609 after it, from `origin/m42`'s curation edges,
+and no century of this partition changed.
 
 **A14 binds this branch and the one clause that touches a batch is obeyed**: no
 edge this fire wrote runs from a parent to its own child. **A14's six data
 passes over the existing records are M42's**, and nothing here took them.
 
-**The thinnest workable cell is now the Americas' seventeenth century**, at 18
-and 6, and its vein is named below and is small — two Brazilian items with no
+**The thinnest cell in this partition is Europe's nineteenth century**, at 15
+active and 10 main — see "The cell this fire should have taken first" in batch
+20. After it comes **the Americas' seventeenth**, at 18 and 6, whose vein is
+named below and is small — two Brazilian items with no
 point, which makes it a place-record batch. **After it, Europe's sixteenth at 19
 and 1 is the deepest vein in this partition by far**: the Italian Wars query of
 batch 17 returns about sixty-eight items, nine of them here, and the other
