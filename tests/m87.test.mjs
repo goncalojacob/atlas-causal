@@ -8,11 +8,17 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import path from 'node:path';
+import { readFile } from 'node:fs/promises';
 import { lensView, activeFoci } from '../src/lens.js';
 import {
   firstSentence, yearsInLead, spanOutsideLead, leadSpanWarnings,
 } from '../src/validate/rules.js';
 import { reusablePlace } from '../tools/import/places.mjs';
+import { rememberRefusals } from '../tools/import/wikidata.mjs';
+import { readSchemaFiles } from '../tools/lib/read.mjs';
+import { createValidator } from '../src/validate/schema.js';
+import { ROOT } from './helpers.mjs';
 
 // An atlas the size of a test, with one thing added: `activeEvents` counts how
 // many times it was read. `eventsOfFocus` walks that list — and builds a Set of
@@ -231,4 +237,65 @@ test('§11: a place the atlas already holds is reused, by its name and where it 
     { names: ['Porto'], point: { lon: -8.61, lat: 41.15 } },
     [{ kind: 'place', status: 'active', id: 'porto', names: [], where: { lon: -8.6291, lat: 41.1579, label: 'Porto' } }],
   ), 'porto');
+});
+
+// §12 (review part C, finding 15). The state file kept no account of what the
+// import has never been able to use, and the report was truncated on every run —
+// eighteen lines today for an import that has been going a fortnight. The log is
+// in the state file now, appended and never overwritten.
+test('§12: what the import refused is kept, and a second refusal is not news', () => {
+  const empty = { schema: 1, kind: 'import-state', source: 'wikidata', runs: {} };
+
+  const first = rememberRefusals(empty, [
+    { qid: 'Q1', why: 'none of its classes is in the table' },
+    { qid: 'Q2', why: 'no date the atlas can use' },
+  ], '2026-09-24');
+  assert.deepEqual(Object.keys(first.refused).sort(), ['Q1', 'Q2']);
+  assert.deepEqual(first.refused.Q1, { on: '2026-09-24', why: 'none of its classes is in the table' });
+  assert.deepEqual(first.runs, empty.runs, 'the cursors are not touched');
+
+  // Appended: a run that refuses Q1 again for another reason keeps the first
+  // refusal and the day it happened. A log that rewrote itself every run would
+  // be a log of the last run.
+  const later = rememberRefusals(first, [
+    { qid: 'Q1', why: 'something else entirely' },
+    { qid: 'Q3', why: 'no such item' },
+  ], '2026-09-30');
+  assert.deepEqual(later.refused.Q1, { on: '2026-09-24', why: 'none of its classes is in the table' });
+  assert.deepEqual(later.refused.Q3, { on: '2026-09-30', why: 'no such item' });
+  assert.deepEqual(Object.keys(later.refused).sort(), ['Q1', 'Q2', 'Q3']);
+
+  // A run that refused nothing writes nothing, and a state that has no map yet
+  // and nothing to put in one is handed back unchanged.
+  assert.equal(rememberRefusals(empty, [], '2026-09-30'), empty);
+  assert.deepEqual(rememberRefusals(first, [], '2026-09-30').refused, first.refused);
+  // A refusal with no item is not an entry, and a very long reason is cut
+  // rather than written whole into a file somebody has to read.
+  assert.deepEqual(rememberRefusals(empty, [{ why: 'nobody' }], '2026-09-30'), empty);
+  const long = rememberRefusals(empty, [{ qid: 'Q4', why: 'x'.repeat(600) }], '2026-09-30');
+  assert.equal(long.refused.Q4.why.length, 400);
+});
+
+test('§12: the state file the tool writes is what the schema allows', async () => {
+  const schemas = await readSchemaFiles(path.join(ROOT, 'schema'));
+  const validator = createValidator(schemas);
+  assert.deepEqual(validator.schemaErrors, [], 'the schema set itself is sound');
+  const state = rememberRefusals(
+    { schema: 1, kind: 'import-state', source: 'wikidata', runs: { import: { updated: '2026-09-24', pending: [], done: ['Q7'] } } },
+    [{ qid: 'Q1', why: 'none of its classes is in the table' }],
+    '2026-09-24',
+  );
+  assert.deepEqual(validator.validate('v1/import-state.json', state), []);
+  // And the file on disk, which has no `refused` yet and reads as empty: a file
+  // written before this existed is not a file that stopped validating.
+  const onDisk = JSON.parse(await readFile(path.join(ROOT, 'data/imports/wikidata-state.json'), 'utf8'));
+  assert.deepEqual(validator.validate('v1/import-state.json', onDisk), []);
+});
+
+test('§12: the Action accumulates its report instead of truncating it', async () => {
+  const text = await readFile(path.join(ROOT, '.github/workflows/import-wikidata.yml'), 'utf8');
+  assert.doesNotMatch(text, /:\s*>\s*docs\/import-report\.md/, 'the report is not emptied on every run');
+  // A dated heading per run, appended, and the batches under it.
+  assert.match(text, />> docs\/import-report\.md/, 'the heading is appended');
+  assert.match(text, /--report docs\/import-report\.md/, 'and the batches write into the same file');
 });

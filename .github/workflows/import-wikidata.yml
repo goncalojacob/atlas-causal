@@ -95,9 +95,21 @@ jobs:
           # The report each batch appends to, committed with the batch. A job's
           # log is not something the run that pushed this branch can read back,
           # and what an import refused — and which classes it could not type —
-          # is the half of the report somebody acts on. It describes this run
-          # only, so it starts empty, and a failure leaves it behind on purpose.
-          : > docs/import-report.md
+          # is the half of the report somebody acts on.
+          #
+          # **It accumulates** (M87 §12, review part C finding 15). It was
+          # truncated here on every run, so the file said what the last batch of
+          # the last job did and nothing about the run before it: eighteen lines
+          # today for an import that has been going for a fortnight, and every
+          # refusal anybody might have acted on written over by the next run. A
+          # dated heading per run and the batches appended under it, so the
+          # question "what has this import refused, and when" is one the
+          # repository answers. A failure still leaves its own section behind,
+          # which is the point of writing it as the run goes.
+          if [ ! -s docs/import-report.md ]; then
+            printf '# What the Wikidata import did\n\nAppended to by .github/workflows/import-wikidata.yml, one section per run.\nNothing here is a historical claim: the sentences are the tool'"'"'s own.\n' > docs/import-report.md
+          fi
+          printf '\n## %s — %s (run %s)\n\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$MODE" "${GITHUB_RUN_ID:-local}" >> docs/import-report.md
           for batch in $(seq 1 40); do
             node "tools/import/wikidata.mjs" "--$MODE" --report docs/import-report.md || fail "the import failed on batch $batch"
             node tools/build-index.mjs || fail "the index cannot be built after batch $batch"

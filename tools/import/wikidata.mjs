@@ -929,6 +929,33 @@ export function nextBatch(state, mode, wanted, size = BATCH) {
   return { batch: pending.slice(0, size), pending, done: [...done] };
 }
 
+// What the run would not do anything with, kept (M87 §12, review part C finding
+// 15). The per-mode `refused` list beside `pending` and `done` is a *retry
+// queue*: an item refused for a class the table has no row for is offered again
+// next run, ahead of the untried, because the fix is an edit to a file under
+// `data/` and a cursor that had passed it would have made that edit answer
+// nothing. This is the other thing — the **log**: item to reason, with the day
+// it was first refused, so that "what has this import never been able to use,
+// and why" is a question the repository answers rather than a job's log that
+// nobody can read back.
+//
+// **Appended, never overwritten.** An item already in the map keeps the reason
+// and the date it was first refused: the run that refuses it again is not news,
+// and a log that rewrote itself every run would be a log of the last run. Which
+// is exactly what `docs/import-report.md` was until this milestone.
+export function rememberRefusals(state, refusals, today) {
+  const refused = { ...(state?.refused ?? {}) };
+  let changed = false;
+  for (const { qid, why } of refusals ?? []) {
+    if (typeof qid !== 'string' || !qid) continue;
+    if (Object.hasOwn(refused, qid)) continue;
+    refused[qid] = { on: today, why: String(why ?? '').slice(0, 400) };
+    changed = true;
+  }
+  if (!changed && !state?.refused) return state;
+  return { ...state, refused };
+}
+
 export function advance(state, mode, { batch, pending, done, today }) {
   const remaining = pending.filter((id) => !batch.includes(id));
   return {
@@ -1251,7 +1278,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'import', { batch, pending, done, today });
+  const next = rememberRefusals(advance(state, 'import', { batch, pending, done, today }), report.refused, today);
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }
@@ -1329,7 +1356,7 @@ export async function runReconcileMode(dataDir, { fetcher, today, batchSize = BA
   }
 
   report.calls = fetcher.calls;
-  const next = advance(state, 'reconcile', { batch, pending, done, today });
+  const next = rememberRefusals(advance(state, 'reconcile', { batch, pending, done, today }), report.refused, today);
   await writeState(dataDir, next);
   return { report, failed: [], written, state: next };
 }
