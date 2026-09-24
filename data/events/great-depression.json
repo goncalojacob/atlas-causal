@@ -23,10 +23,10 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place",
-      "a7-widened"
+      "a7-widened",
+      "a14-lane-guard"
     ],
-    "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day."
+    "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.\n\nA14(2): the place was afghanistan-q889, first of the nine countries Q8698 names under P17, taken before the guard. A worldwide downturn drawn in Kabul is a wrong picture; cleared, the Americas lane kept."
   },
   "origin": {
     "tool": "wikidata"
@@ -73,7 +73,7 @@
     "end": 1939,
     "date": "1929-10-29"
   },
-  "place": "afghanistan-q889",
+  "place": null,
   "region": "americas",
   "actors": [
     {

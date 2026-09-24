@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a14-lane-guard"
+    ],
+    "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case."
   },
   "origin": {
     "tool": "wikidata"
@@ -55,7 +56,7 @@
     "end": 1918,
     "date": "1918-07-16"
   },
-  "place": "ipatiev-house",
+  "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-civil-war",
