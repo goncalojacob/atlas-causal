@@ -5644,22 +5644,22 @@ was first taken — 379, through 841, 847, 854, 858, 866, 872, 879 and now 894 �
 because every record this branch writes carries `actors: []`. Deviation 1251 has
 not recurred.
 
-**The check on this head is run 1701 on `9c0ccefe`, and it was still running
-when this fire wrote its last commit.** What the fire knows: `node
-tools/validate.mjs --index` is **clean at 0 errors and 422 warnings** on the
-pushed index, and `tests/validate-cli.test.mjs` — the suite that failed in run
-1696 and the one that holds `data/index/` to the records it is built from —
-passes on it, 8 of 8. The **1,810 tests of the 152 pure suites all passed** on
-this batch's records before the index was amended, none failed and none skipped,
-which is every suite that judges a record: the validator's own, `registry`,
-`spine` and `m67` among them. The **286 tests of the 37 browser suites passed in
-run 1696 itself** — its test step reported 286 of 286 with nothing failed and
-nothing skipped, and the job's exit 1 was rule 16 in the pure step alone — and
-this batch changes no line of `src/`. A local re-run of both sets was still in
-flight, and **running the two sets at once is the contention `docs/m63-load.md`
-describes**, which is why the check runs them apart and why a fire should not
-run them together. **The next fire should read run 1701's conclusion before it
-does anything else**, and if it is red, read the failure: the check has been
+**The check is green on the head of this fire.** Run **1702** on `fa460401`
+concluded **success** — "Validate records" and "Tests" both green, and with them
+the two steps that hold `data/index/` to the records it is built from. Run 1701
+on `9c0ccefe` was cancelled by the prose push that followed it, which is
+deviation 1258's own pattern and the reason 1702 is the one that ran to the end.
+Locally the fire finished at **2,096 tests passing with nothing failed and
+nothing skipped** — the 1,810 of the 152 pure suites and the 286 of the 37
+browser suites, the browser set run alone. **One browser test failed on a first
+local run and it was contention, established and not assumed**: the fire had the
+two sets running at once on four cores, which is the load `docs/m63-load.md`
+describes, and a serial re-run passed 286 of 286. A fire that runs the two sets
+together will see this, and the fix is not to. `node tools/validate.mjs --index` is
+**clean at 0 errors and 422 warnings** on the pushed index, and
+`tests/validate-cli.test.mjs` — the suite that failed in run 1696 — passes on it,
+8 of 8. **The next fire should read this head's run before it does anything
+else**, and if it is red, read the failure: the check has been
 honest since M63 and it is not load — 1696 proved that this morning.
 
 ### The veins, and which are open
