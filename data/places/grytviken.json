@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
+      "imported-facts",
+      "a14-summary-nulled"
     ]
   },
   "origin": {
@@ -36,5 +37,5 @@
   },
   "region": "americas",
   "regionNote": "Lane set by hand in M42b batch 2: rule 10 reaches no lane polygon within 3 degrees of this point. South Georgia and the South Sandwich Islands lie below every region outline the atlas draws, and the Falklands — one war with them here — are in the americas lane.",
-  "summary": "Wikidata item Q185672, imported by tools/import/wikidata.mjs. The item's own description reads \"abandoned whaling station; settlement on the island of South Georgia–South Sandwich Islands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+  "summary": null
 }

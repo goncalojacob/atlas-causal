@@ -24,7 +24,8 @@
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "a7-widened"
+      "a7-widened",
+      "title-from-article"
     ],
     "note": "A7: the end was 2008. At the cached revision 1373825853 the article's title reads \"Darfur genocide (2003-2005)\" and its lead dates the killing \"between 2003 and 2005\"; the 2003-2008 figure in the next sentence is the War in Darfur's, which this record's parent holds. So the end is 2005; the start and 23 February 2003 stand."
   },
@@ -54,7 +55,7 @@
       "locator": "\"Darfur genocide (2003–2005)\", revision 1373825853: \"An estimated 200,000 people were killed between 2003 and 2005.\""
     }
   ],
-  "title": "Darfur genocide",
+  "title": "Darfur genocide (2003–2005)",
   "summary": "The English Wikipedia article \"Darfur genocide (2003–2005)\", at revision 1373825853, opens: \"The Darfur genocide was the systematic killing of ethnic Darfuri people during the War in Darfur. The genocide, which was carried out against the Fur, Masalit and Zaghawa ethnic groups, led the International Criminal Court (ICC) to indict several people for crimes against humanity, rape, forced transfer and torture. An estimated 200,000 people were killed between 2003 and 2005.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q42915906, imported by tools/import/wikidata.mjs. The item's own description reads \"2003–2005 genocide in western Sudan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 2003,

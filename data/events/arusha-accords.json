@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-23",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
@@ -26,7 +26,8 @@
       "standing-backfilled",
       "imported-by-wikidata",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "title-from-article"
     ]
   },
   "origin": {
@@ -51,7 +52,7 @@
       "locator": "\"Arusha Accords (Rwanda)\", revision 1277018129"
     }
   ],
-  "title": "Arusha Accords",
+  "title": "Arusha Accords (Rwanda)",
   "summary": "The English Wikipedia article \"Arusha Accords (Rwanda)\", at revision 1277018129, opens: \"The Arusha Accords, officially the Peace Agreement between the Government of the Republic of Rwanda and the Rwandan Patriotic Front, also known as the Arusha Peace Agreement or Arusha negotiations, were a set of five accords signed in Arusha, Tanzania, on 4 August 1993, by the government of Rwanda and the rebel Rwandan Patriotic Front (RPF), under mediation, to end a three-year Rwandan Civil War. Primarily organized by the Organisation of African Unity and the heads of state in the African Great Lakes region, the talks began on 12 July 1992, and ended on 4 August 1993, when the accords were finally signed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1429076, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1993,

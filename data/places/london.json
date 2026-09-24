@@ -13,17 +13,29 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a14-merged"
+    ],
+    "note": "A14(6): london-q84, written by A9 on 22 September from Q84, is merged into this record — one point, one city, two ids. Q84 and the item’s other names come across with it, and the two events that pointed at the other id point here."
+  },
   "origin": {
     "tool": "assistant",
     "run": "m50"
   },
-  "review": {
-    "status": "draft"
+  "wikidata": "Q84",
+  "wikipedia": {
+    "en": "London"
   },
   "sources": [],
   "names": [
-    "London"
+    "London",
+    "London, UK",
+    "London, United Kingdom",
+    "London, England",
+    "London UK"
   ],
   "where": {
     "lon": -0.128,

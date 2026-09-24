@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-24",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
       "participants-from-p710",
-      "summary-from-lead"
+      "summary-from-lead",
+      "end-unstated"
     ],
     "status": "draft",
     "note": "Wikidata Q1413732 names 3 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing."
