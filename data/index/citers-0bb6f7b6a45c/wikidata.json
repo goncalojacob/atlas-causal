@@ -704,6 +704,12 @@
     },
     {
       "dissent": false,
+      "id": "kingdom-of-navarre",
+      "kind": "actor",
+      "locator": "Q200262"
+    },
+    {
+      "dissent": false,
       "id": "kingdom-of-portugal",
       "kind": "actor",
       "locator": "Q45670, P1082 (population, 1910)"
@@ -2702,6 +2708,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-casaloldo",
+      "kind": "event",
+      "locator": "Q3636372"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala",
       "kind": "event",
       "locator": "Q97610233"
@@ -2753,6 +2765,12 @@
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "Q208529"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-flodden",
+      "kind": "event",
+      "locator": "Q1300742"
     },
     {
       "dissent": false,
@@ -3098,6 +3116,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-mathieu",
+      "kind": "event",
+      "locator": "Q575924"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "Q4872265"
@@ -3200,9 +3224,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-citadel-of-vicenza",
+      "kind": "event",
+      "locator": "Q124249264"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "Q675999"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-spurs",
+      "kind": "event",
+      "locator": "Q699475"
     },
     {
       "dissent": false,
@@ -5264,6 +5300,18 @@
     },
     {
       "dissent": false,
+      "id": "sack-of-brescia",
+      "kind": "event",
+      "locator": "Q11703607"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-rome-1527",
+      "kind": "event",
+      "locator": "Q465627"
+    },
+    {
+      "dissent": false,
       "id": "santiago-de-cuba-uprising",
       "kind": "event",
       "locator": "Q5974095"
@@ -5414,6 +5462,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-crema-1514",
+      "kind": "event",
+      "locator": "Q110448326"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "Q2398589"
@@ -5423,6 +5477,12 @@
       "id": "siege-of-cusco-1781",
       "kind": "event",
       "locator": "Q11794853"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-dijon",
+      "kind": "event",
+      "locator": "Q3485875"
     },
     {
       "dissent": false,
@@ -5627,6 +5687,12 @@
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "locator": "Q2993582"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-iberian-navarre",
+      "kind": "event",
+      "locator": "Q3312328"
     },
     {
       "dissent": false,

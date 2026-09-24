@@ -1922,6 +1922,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agnadello--battle-of-the-citadel-of-vicenza--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838, § The Battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-agnadello--siege-of-crema-1514--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Crema (1514)\", revision 1370740461, § Background, 1512–1514: Shifting alliances"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello--siege-of-padua--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Agnadello\", revision 1370431087, § Aftermath"
@@ -2132,6 +2144,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-novara-1513--siege-of-dijon--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Dijon\", revision 1370740741, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
       "kind": "edge",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -2279,6 +2297,12 @@
       "id": "battle-of-te-li-ssu--battle-of-tashihchiao--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643, § Preparations by the Japanese and § Preparations by the Russians"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-spurs--siege-of-dijon--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Dijon\", revision 1370740741, § Prelude"
     },
     {
       "dissent": false,
@@ -5117,6 +5141,12 @@
       "id": "siege-of-padua--battle-of-polesella--precondition-of",
       "kind": "edge",
       "locator": "\"War of the League of Cambrai\", revision 1375133857, § War of the League of Cambrai"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua--battle-of-the-citadel-of-vicenza--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838, § The Battle"
     },
     {
       "dissent": false,
@@ -8024,6 +8054,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-casaloldo",
+      "kind": "event",
+      "locator": "\"Battle of Casaloldo\", revision 1370436439"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala",
       "kind": "event",
       "locator": "\"Battle of Cempoala\", revision 1370436634"
@@ -8075,6 +8111,12 @@
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "\"Battle of Dunkirk\", revision 1374147037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-flodden",
+      "kind": "event",
+      "locator": "\"Battle of Flodden\", revision 1375370650"
     },
     {
       "dissent": false,
@@ -8414,6 +8456,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-mathieu",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Mathieu\", revision 1370588044"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "\"Battle of San Carlos (1982)\", revision 1373226188"
@@ -8516,6 +8564,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-citadel-of-vicenza",
+      "kind": "event",
+      "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "\"Battle of the Downs\", revision 1370599272"
@@ -8525,6 +8579,12 @@
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "locator": "\"Battle of the Lys (1918)\", revision 1370600869"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-spurs",
+      "kind": "event",
+      "locator": "\"Battle of the Spurs\", revision 1370602393"
     },
     {
       "dissent": false,
@@ -10772,6 +10832,18 @@
     },
     {
       "dissent": false,
+      "id": "sack-of-brescia",
+      "kind": "event",
+      "locator": "\"Sack of Brescia\", revision 1370729504"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-rome-1527",
+      "kind": "event",
+      "locator": "\"Sack of Rome (1527)\", revision 1372345219"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue-and-the-french-sugar-colony",
       "kind": "event",
       "locator": "\"Saint-Domingue\", revision 1375182685"
@@ -10922,6 +10994,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-crema-1514",
+      "kind": "event",
+      "locator": "\"Siege of Crema (1514)\", revision 1370740461"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "\"Siege of Cusco\", revision 1370740508"
@@ -10931,6 +11009,12 @@
       "id": "siege-of-cusco-1781",
       "kind": "event",
       "locator": "\"Siege of Cusco (1781)\", revision 1370740510"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-dijon",
+      "kind": "event",
+      "locator": "\"Siege of Dijon\", revision 1370740741"
     },
     {
       "dissent": false,
@@ -11165,6 +11249,12 @@
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "locator": "\"Spanish conquest of Guatemala\", revision 1371444057"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-iberian-navarre",
+      "kind": "event",
+      "locator": "\"Spanish conquest of Iberian Navarre\", revision 1372121033"
     },
     {
       "dissent": false,

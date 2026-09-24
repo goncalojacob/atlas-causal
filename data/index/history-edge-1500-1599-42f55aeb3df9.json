@@ -2,6 +2,24 @@
   "from": 1500,
   "kind": "edge",
   "records": {
+    "battle-of-agnadello--battle-of-the-citadel-of-vicenza--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-agnadello--siege-of-crema-1514--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-agnadello--siege-of-padua--precondition-of": {
       "from": "git",
       "versions": [
@@ -54,6 +72,15 @@
       ]
     },
     "battle-of-novara-1513--battle-of-marignano--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-novara-1513--siege-of-dijon--enabled": {
       "from": "git",
       "versions": [
         {
@@ -124,6 +151,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-spurs--siege-of-dijon--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -247,6 +283,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-padua--battle-of-the-citadel-of-vicenza--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

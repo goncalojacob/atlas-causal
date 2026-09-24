@@ -267,6 +267,15 @@
         }
       ]
     },
+    "dossena-2014-battaglia-di-ombriano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "dre-2020-state-of-emergency": {
       "from": "git",
       "versions": [

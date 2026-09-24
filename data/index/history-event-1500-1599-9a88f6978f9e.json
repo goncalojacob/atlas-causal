@@ -28,6 +28,15 @@
         }
       ]
     },
+    "battle-of-casaloldo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-cempoala": {
       "from": "git",
       "versions": [
@@ -56,6 +65,15 @@
       ]
     },
     "battle-of-cusco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-flodden": {
       "from": "git",
       "versions": [
         {
@@ -163,6 +181,15 @@
         }
       ]
     },
+    "battle-of-saint-mathieu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-st-quentin": {
       "from": "git",
       "versions": [
@@ -183,6 +210,24 @@
             "review",
             "title"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-citadel-of-vicenza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-spurs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -406,7 +451,34 @@
         }
       ]
     },
+    "sack-of-brescia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "sack-of-rome-1527": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "siege-of-asola-1516": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-crema-1514": {
       "from": "git",
       "versions": [
         {
@@ -429,6 +501,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-dijon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -455,6 +536,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-conquest-of-iberian-navarre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

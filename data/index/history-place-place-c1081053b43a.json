@@ -729,6 +729,15 @@
         }
       ]
     },
+    "branxton-northumberland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "brasilia": {
       "from": "git",
       "versions": [
@@ -774,6 +783,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "brescia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -972,6 +990,15 @@
         }
       ]
     },
+    "casaloldo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "catatumbo-river": {
       "from": "git",
       "versions": [
@@ -1147,7 +1174,7 @@
       ]
     },
     "chemulpo-bay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1307,6 +1334,15 @@
       ]
     },
     "costabissara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "crema-lombardy": {
       "from": "git",
       "versions": [
         {
@@ -1525,6 +1561,15 @@
         }
       ]
     },
+    "dijon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "dili": {
       "from": "git",
       "versions": [
@@ -1722,6 +1767,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "enguinegatte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2559,6 +2613,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "iroise-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -5603,7 +5666,7 @@
       ]
     },
     "sakhalin": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5926,7 +5989,7 @@
       ]
     },
     "shaho": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6463,7 +6526,7 @@
       ]
     },
     "tashihchiao": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6472,7 +6535,7 @@
       ]
     },
     "te-li-ssu": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6941,6 +7004,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "vicenza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

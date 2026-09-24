@@ -693,6 +693,43 @@
       "year": 2018
     },
     {
+      "accessed": "2026-09-24",
+      "aliases": [],
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "citationCount": 1,
+      "created": "2026-09-24",
+      "creators": [
+        "Luigi Dossena"
+      ],
+      "doi": null,
+      "id": "dossena-2014-battaglia-di-ombriano",
+      "isbn": null,
+      "kind": "source",
+      "license": "CC-BY-SA-4.0",
+      "origin": {
+        "tool": "assistant"
+      },
+      "publisher": "Cremaonline",
+      "reference": null,
+      "repository": null,
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "schema": 1,
+      "status": "active",
+      "supersededBy": null,
+      "title": "Historia et imago Cremae. Eventi e fatti d’arme della battaglia di Ombriano del 1514: gli eserciti più potenti d’Europa combatterono nel cremasco",
+      "type": "web",
+      "url": "https://www.cremaonline.it/cultura/27-09-2014_Historia+et+imago+Cremae,+la+battaglia+di+Ombriano/",
+      "year": 2014
+    },
+    {
       "accessed": null,
       "aliases": [],
       "authors": [
@@ -2863,7 +2900,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 1064,
+      "citationCount": 1075,
       "created": "2026-09-04",
       "creators": [
         "Wikidata contributors"
@@ -2900,7 +2937,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
-      "citationCount": 2024,
+      "citationCount": 2039,
       "created": "2026-09-04",
       "creators": [
         "Wikipedia contributors"

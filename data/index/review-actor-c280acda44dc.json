@@ -32231,6 +32231,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-24",
+      "id": "kingdom-of-navarre",
+      "kind": "actor",
+      "names": [
+        "Kingdom of Navarre",
+        "Reino de Navarra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -79200,6 +79229,18 @@
     },
     {
       "id": "energias-de-portugal",
+      "kind": "actor",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "kingdom-of-navarre",
+      "kind": "actor",
+      "message": "actor is referenced by no event and no relation, and holds no territory",
+      "rule": "actor-unused"
+    },
+    {
+      "id": "kingdom-of-navarre",
       "kind": "actor",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

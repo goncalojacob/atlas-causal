@@ -5611,7 +5611,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 3,
       "id": "battle-of-agnadello",
       "kind": "event",
       "origin": {
@@ -6171,6 +6171,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "id": "battle-of-casaloldo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Casaloldo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-cempoala",
@@ -6454,6 +6485,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Dunkirk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-flodden",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Flodden"
     },
     {
       "authors": [
@@ -7773,7 +7835,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "battle-of-novara-1513",
       "kind": "event",
       "origin": {
@@ -8356,6 +8418,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "id": "battle-of-saint-mathieu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Saint-Mathieu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-san-carlos",
       "kind": "event",
@@ -8925,6 +9018,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-the-citadel-of-vicenza",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the citadel of Vicenza"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-the-downs",
       "kind": "event",
@@ -8975,6 +9100,38 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of the Lys (1918)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-the-spurs",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Spurs"
     },
     {
       "authors": [
@@ -23216,6 +23373,68 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "sack-of-brescia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sack of Brescia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "sack-of-rome-1527",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cognac",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sack of Rome (1527)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -24306,6 +24525,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "siege-of-crema-1514",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Crema (1514)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "siege-of-cusco",
@@ -24357,6 +24608,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Cusco (1781)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "siege-of-dijon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Dijon"
     },
     {
       "authors": [
@@ -24512,7 +24795,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "siege-of-padua",
       "kind": "event",
       "origin": {
@@ -25630,6 +25913,36 @@
       "revised": null,
       "status": "active",
       "title": "Spanish conquest of Guatemala"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "spanish-conquest-of-iberian-navarre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish conquest of Iberian Navarre"
     },
     {
       "authors": [
@@ -30617,6 +30930,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-casaloldo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chupas",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30630,6 +30949,12 @@
     },
     {
       "id": "battle-of-dunkirk",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-flodden",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -30780,6 +31105,12 @@
     },
     {
       "id": "battle-of-rancagua",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-saint-mathieu",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -31301,6 +31632,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sack-of-brescia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "sack-of-rome-1527",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -31323,6 +31666,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "siege-of-crema-1514",
+      "kind": "event",
+      "message": "the title states 1514 and the record is dated 1513–1514",
+      "rule": "span-vs-article-title"
     },
     {
       "id": "siege-of-jadotville",
@@ -31374,6 +31723,12 @@
     },
     {
       "id": "spanish-conquest-of-guatemala",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "spanish-conquest-of-iberian-navarre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
