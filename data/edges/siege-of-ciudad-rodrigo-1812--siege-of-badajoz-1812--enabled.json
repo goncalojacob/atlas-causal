@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-ciudad-rodrigo-1812--siege-of-badajoz-1812--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278, lead and § Aftermath"
+    }
+  ],
+  "from": "siege-of-ciudad-rodrigo-1812",
+  "to": "siege-of-badajoz-1812",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article states it in the word the vocabulary has for it: the fall of the city \"opened the northern gateway into French-occupied Spain from Portugal\", and \"It also allowed Wellington to proceed to Badajoz on the southern corridor, whose taking would be a much more bloody affair.\" Its aftermath reads \"The allied campaign in Spain proceeded with the siege of Badajoz.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

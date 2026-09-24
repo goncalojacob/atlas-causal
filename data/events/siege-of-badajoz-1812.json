@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-badajoz-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q815121",
+  "wikipedia": {
+    "en": "Siege of Badajoz (1812)",
+    "pt": "Batalha de Badajoz"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815121"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Badajoz (1812)\", revision 1370739148"
+    }
+  ],
+  "title": "Siege of Badajoz (1812)",
+  "summary": "The English Wikipedia article \"Siege of Badajoz (1812)\", at revision 1370739148, opens: \"In the siege of Badajoz, also called the third siege of Badajoz, an Anglo-Portuguese Army under the command of the Arthur Wellesley, the Earl of Wellington besieged Badajoz, Spain, and forced the surrender of the French garrison. The siege was one of the bloodiest in the Napoleonic Wars and was considered a costly victory by the British, with some 4,800 Allied soldiers killed or wounded in a few short hours of intense fighting during the storming of the breaches as the siege drew to an end. Enraged at the huge number of casualties they suffered in seizing the city, the troops broke into houses and stores consuming vast quantities of alcohol with many of them then going on a rampage, threatening their officers and ignoring their commands to desist, and even killing several. It took three days before the men were brought back into order. When order was restored, an estimated 200–300 civilians had been killed or injured.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815121, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-03-16",
+    "endDate": "1812-04-06"
+  },
+  "place": "badajoz",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

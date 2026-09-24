@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-vimeiro",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q209359",
+  "wikipedia": {
+    "en": "Battle of Vimeiro",
+    "pt": "Batalha do Vimeiro"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q209359"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vimeiro\", revision 1370623683"
+    }
+  ],
+  "title": "Battle of Vimeiro",
+  "summary": "The English Wikipedia article \"Battle of Vimeiro\", at revision 1370623683, opens: \"In the Battle of Vimeiro on 21 August 1808, the British under General Arthur Wellesley defeated the French under Major-General Jean-Andoche Junot near the village of Vimeiro, near Lisbon, Portugal, during the Peninsular War. This battle put an end to the first French invasion of Portugal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q209359, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-08-21"
+  },
+  "place": "vimeiro",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

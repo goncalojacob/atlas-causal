@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-talavera",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q169023",
+  "wikipedia": {
+    "en": "Battle of Talavera",
+    "pt": "Batalha de Talavera"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q169023"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Talavera\", revision 1370880065"
+    }
+  ],
+  "title": "Battle of Talavera",
+  "summary": "The English Wikipedia article \"Battle of Talavera\", at revision 1370880065, opens: \"The Battle of Talavera was fought just outside the town of Talavera de la Reina, Spain some 120 kilometres (75 mi) southwest of Madrid, during the Peninsular War. At Talavera, a British army under Sir Arthur Wellesley combined with a Spanish army under General Gregorio García de la Cuesta fought in operations against French-occupied Madrid. At nightfall, the French army withdrew a short distance after several of its attacks had been repulsed; the allies, having suffered comparable casualties to the French, made no attempt to pursue.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q169023, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809,
+    "date": "1809-07-27",
+    "endDate": "1809-07-28"
+  },
+  "place": "talavera-de-la-reina",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

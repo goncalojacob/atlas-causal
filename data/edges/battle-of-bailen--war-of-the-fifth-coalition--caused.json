@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bailen--war-of-the-fifth-coalition--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bailén\", revision 1371963680, § Aftermath"
+    }
+  ],
+  "from": "battle-of-bailen",
+  "to": "war-of-the-fifth-coalition",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article states the consequence and names the war: \"Spanish victory in an obscure Andalusian village signalled to the armies of Europe that the French, long considered invincible, could be beaten—a fact that persuaded the Austrian Empire to initiate the War of the Fifth Coalition against Napoleon.\" Bailén was the first open-field defeat of a Napoleonic army, which is what the article says the news carried. Probable: Wikipedia alone.",
+  "dispute": null
+}

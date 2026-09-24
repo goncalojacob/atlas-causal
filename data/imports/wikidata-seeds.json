@@ -1345,7 +1345,40 @@
     "Q486531",
     "Q493313",
     "Q277337",
-    "Q493922"
+    "Q493922",
+    "Q2807",
+    "Q695456",
+    "Q602858",
+    "Q1932382",
+    "Q10305",
+    "Q8757",
+    "Q181359",
+    "Q15682",
+    "Q2119573",
+    "Q144268",
+    "Q820476",
+    "Q15679",
+    "Q1641154",
+    "Q14318",
+    "Q12431",
+    "Q184023",
+    "Q181146",
+    "Q1364346",
+    "Q324344",
+    "Q209359",
+    "Q524251",
+    "Q708088",
+    "Q233405",
+    "Q169023",
+    "Q2633683",
+    "Q389349",
+    "Q689471",
+    "Q567571",
+    "Q815121",
+    "Q708580",
+    "Q276059",
+    "Q2890693",
+    "Q136669216"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5249,7 +5282,7 @@
       "kind": "place",
       "precision": "city",
       "label": "village of Poland",
-      "note": "Added in M42b batch 24, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q5153359 municipality of the Czech Republic are that line, and both are settlements with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \u201ctype of populated place\u201d. Trzciano, where the Battle of Trzciana was fought, was refused for want of it."
+      "note": "Added in M42b batch 24, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q5153359 municipality of the Czech Republic are that line, and both are settlements with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is “type of populated place”. Trzciano, where the Battle of Trzciana was fought, was refused for want of it."
     },
     "Q19841484": {
       "kind": "event",
@@ -5280,6 +5313,18 @@
       "precision": "region",
       "label": "reservoir",
       "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “artificial lake impounded using a dam or lock to store water”."
+    },
+    "Q1131296": {
+      "kind": "place",
+      "precision": "city",
+      "label": "freguesia of Portugal",
+      "note": "Added in M42b batch 25, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q2074737 municipality of Spain are that line, and a freguesia is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third level of administrative subdivision of Portugal\". Vimeiro, where the Battle of Vimeiro was fought, was refused for want of it."
+    },
+    "Q2276925": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Galicia",
+      "note": "Added in M42b batch 25, on the same rule and the same line: Q2074737 municipality of Spain, which batch 8 added, and of which this is the Galician case. Wikidata's own description of the class, read off the class item, is \"administrative territorial entity of Galicia, Spain\". A Coruña, where the Battle of Corunna was fought, carries this class and no other and was refused for want of it."
     }
   },
   "reconcile": true

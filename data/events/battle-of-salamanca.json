@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-salamanca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q708580",
+  "wikipedia": {
+    "en": "Battle of Salamanca",
+    "pt": "Batalha de Salamanca"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q708580"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salamanca\", revision 1370273420"
+    }
+  ],
+  "title": "Battle of Salamanca",
+  "summary": "The English Wikipedia article \"Battle of Salamanca\", at revision 1370273420, opens: \"The Battle of Salamanca took place on 22 July 1812. An Anglo-Portuguese army under the Earl of Wellington defeated Marshal Auguste Marmont's French forces at Arapiles, south of Salamanca, Spain, during the Peninsular War. A Spanish division was also present but took no part in the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q708580, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-22"
+  },
+  "place": "arapiles-castile-and-leon",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "category": "war",
+  "actors": []
+}

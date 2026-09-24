@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ciudad-rodrigo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q820476",
+  "wikipedia": {
+    "en": "Ciudad Rodrigo",
+    "pt": "Cidade Rodrigo"
+  },
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Ciudad Rodrigo",
+    "Cidade Rodrigo"
+  ],
+  "where": {
+    "lon": -6.528889,
+    "lat": 40.599167,
+    "precision": "city",
+    "label": "Ciudad Rodrigo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

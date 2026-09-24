@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dos-de-mayo-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q181146",
+  "wikipedia": {
+    "en": "Dos de Mayo Uprising",
+    "pt": "Levantamento de dois de maio"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q181146"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dos de Mayo Uprising\", revision 1370615812"
+    }
+  ],
+  "title": "Dos de Mayo Uprising",
+  "summary": "The English Wikipedia article \"Dos de Mayo Uprising\", at revision 1370615812, opens: \"The Dos de Mayo or Second of May Uprising took place in Madrid, Spain, on 2–3 May 1808. The rebellion, mainly by civilians, with some isolated military action by junior officers, was against the occupation of the city by French troops, and was violently repressed by the French Imperial forces, with hundreds of public executions. These actions led to the Spanish people revolting against French occupation and outbreak of the Peninsular War, and ended the Franco-Spanish alliance in the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q181146, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 rebellion during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-05-02"
+  },
+  "place": "madrid",
+  "region": null,
+  "regionNote": null,
+  "parent": "peninsular-war",
+  "actors": []
+}

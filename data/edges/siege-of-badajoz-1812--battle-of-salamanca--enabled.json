@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-badajoz-1812--battle-of-salamanca--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Badajoz (1812)\", revision 1370739148, § Aftermath"
+    }
+  ],
+  "from": "siege-of-badajoz-1812",
+  "to": "battle-of-salamanca",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Badajoz article names what the captured fortress let Wellington do: \"Wellington advanced into Spain leading to the Battle of Salamanca in a continuation of the Coalition campaign of 1812.\" The Salamanca article reads the same sequence from the other end — \"In April 1812, following the successful Siege of Badajoz during the allied campaign in Spain, Wellington and the greater part of the Anglo-Portuguese army marched north to expel Marmont's French army who had temporarily invaded Portugal\" (revision 1370273420, § Background). Probable: Wikipedia alone.",
+  "dispute": null
+}

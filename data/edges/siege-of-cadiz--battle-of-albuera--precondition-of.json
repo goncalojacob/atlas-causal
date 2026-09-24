@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-cadiz--battle-of-albuera--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Albuera\", revision 1373550746, § Background"
+    }
+  ],
+  "from": "siege-of-cadiz",
+  "to": "battle-of-albuera",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The siege shaped both sides of Albuera, and the article says so twice. It drew off the besiegers — the campaign in Estremadura \"also pulled both infantry and cavalry from Marshal Claude-Victor Perrin's I Corps who were besieging Cádiz at the time\" — and it governed Soult: \"On 12 March, news of Victor's defeat at the Battle of Barrosa reached Soult and he left Badajoz to return to Andalusia, anxious that the siege of Cádiz had been lifted.\" It also produced the Spanish corps that fought here: \"The Cortes of Cádiz, serving as Spain's Regency, had sent General Joaquín Blake, with the two divisions of Zayas and Lardizábal, by sea to Ayamonte on the mouth of the Guadiana.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

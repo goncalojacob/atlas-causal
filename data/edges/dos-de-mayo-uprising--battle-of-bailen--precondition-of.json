@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dos-de-mayo-uprising--battle-of-bailen--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bailén\", revision 1371963680, lead and § Background"
+    }
+  ],
+  "from": "dos-de-mayo-uprising",
+  "to": "battle-of-bailen",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Bailén article makes the rising the reason the column that surrendered at Bailén was in Andalusia at all: \"In June 1808, following the widespread uprisings against the French occupation of Spain, Napoleon organized French units into flying columns to pacify Spain's major centres of resistance. One column under Dupont was dispatched across the Sierra Morena and south through Andalusia towards the port of Cádiz.\" The Madrid rising is the first of those the article describes — \"The uprising by the citizens of Madrid broke out on 2 May, slew 150 French soldiers, and was violently stamped out by Marshal Joachim Murat's elite Imperial Guards and Mamluk cavalry.\" It names the uprisings in the plural and not this one alone, which is why this is a precondition and not a cause. Probable: Wikipedia alone.",
+  "dispute": null
+}

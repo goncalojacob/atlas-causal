@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bailen--battle-of-corunna--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Corunna\", revision 1370437705, § Prelude"
+    }
+  ],
+  "from": "battle-of-bailen",
+  "to": "battle-of-corunna",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Corunna article puts Napoleon's intervention, and therefore Moore's retreat, down to Bailén: \"After the surrender of a French army corps at Bailén and the loss of Portugal, Napoleon was convinced of the peril he faced in Spain.\" What followed, in the same section, is the army Moore could not face — \"a vast consolidation of bodies and bayonets from the far reaches of the French Empire brought 100,000 veterans of the Grande Armée into Spain, led in person by Napoleon and his Marshals\" — and the retreat to the coast that this battle covered. Probable: Wikipedia alone.",
+  "dispute": null
+}
