@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant",
     "run": "m55"
@@ -21,7 +21,8 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m55-germany"
+      "m55-germany",
+      "polity-description"
     ],
     "note": "M55: written to carry the last of CShapes’ entity 255, which held three polities under one label. Its dates are Wikidata’s Q7318: P571 1933-03-15 and P576 1945-05-23. This is the record World War II and the Holocaust now name, in place of the chip reading \"Germany (Prussia)\" that the owner objected to on 17 September. Four years stand between its dissolution and the Federal Republic’s cited inception; the succession says so in its own note."
   },
@@ -37,13 +38,21 @@
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 255"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q7318, P2046 (area) and P1082 (population, 1940)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nazi Germany\", revision 1375566482"
     }
   ],
   "actorType": "polity",
   "names": [
     "Nazi Germany"
   ],
-  "summary": "A polity whose inception Wikidata states as 1933-03-15 on Q7318 and whose dissolution it states as 1945-05-23. Both years here are those two values. Its name is its own and not CShapes’ label for entity 255, \"Germany (Prussia)\", which covers this state, the Weimar Republic and the German Empire at once; its territory is that entity’s last two periods, the first of them cut at this record’s own cited inception. It is what the atlas’s World War II, the Holocaust, the Eastern Front, the Munich Agreement, the Molotov–Ribbentrop Pact, the Warsaw Uprising and the Spanish Civil War name for the German belligerent, occupier, signatory, supporter and perpetrator of those years.",
+  "summary": "Approximately 583,419 km² and about 109.5 million people (1940), from Wikidata's Q7318 (P2046, P1082). The English Wikipedia article \"Nazi Germany\", at revision 1375566482, opens: \"Nazi Germany, officially the German Reich and later the Greater German Reich, was the German state between 1933 and 1945, when Adolf Hitler and the Nazi Party controlled the country, transforming it into a totalitarian dictatorship. The Third Reich, meaning \"Third Realm\" or \"Third Empire\", referred to the Nazi claim that Nazi Germany was the successor to the Holy Roman Empire (800–1806) and the German Empire (1871–1918). The Third Reich, which the Nazis referred to as the Thousand-Year Reich, ended in May 1945, after 12 years, when the Allies defeated Germany and entered the capital, Berlin, ending World War II in Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1933-03-15 on Q7318 and whose dissolution it states as 1945-05-23. Both years here are those two values. Its name is its own and not CShapes’ label for entity 255, \"Germany (Prussia)\", which covers this state, the Weimar Republic and the German Empire at once; its territory is that entity’s last two periods, the first of them cut at this record’s own cited inception. It is what the atlas’s World War II, the Holocaust, the Eastern Front, the Munich Agreement, the Molotov–Ribbentrop Pact, the Warsaw Uprising and the Spanish Civil War name for the German belligerent, occupier, signatory, supporter and perpetrator of those years.",
   "when": {
     "start": 1933,
     "end": 1945

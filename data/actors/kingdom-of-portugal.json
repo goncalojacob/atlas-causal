@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": null,
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
-      "m53-polities"
+      "m53-polities",
+      "polity-description"
     ],
     "note": "M53: written on Wikidata’s Q45670 — P571 1139-07-25, P576 1910-10-05 — because the atlas held no Portugal before 1886 and twelve chain events named nobody for want of one. It overlaps `portugal` (1886–) and ends where `first-portuguese-republic` (1910–) begins; no relation is written to either, because whether these are the same record under two regimes or two records is the M49 question and is a person’s. It holds no ground."
   },
@@ -37,13 +38,21 @@
     {
       "source": "wikidata",
       "locator": "Q45670, P576 1910-10-05"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q45670, P1082 (population, 1910)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kingdom of Portugal\", revision 1368546868"
     }
   ],
   "actorType": "polity",
   "names": [
     "Kingdom of Portugal"
   ],
-  "summary": "A polity whose inception Wikidata states as 1139-07-25 on Q45670 and whose dissolution it states as 1910-10-05. Both years here are those two values and nothing else. It is written because the atlas had no metropolitan Portugal before 1886 at all: `portugal` begins where CShapes begins, and everything Portuguese the two territory imports drew before that is a colony — `portuguese-brazil`, `portuguese-guinea`, `portuguese-east-africa` — with no crown above them. Twelve events of the Brazilian chain, from Tordesillas in 1494 to the Strangford Treaty of 1810, had no actor to name without it. It holds no territory: neither import draws Portugal before 1886, and drawing one is not this milestone’s work.",
+  "summary": "Approximately about 5 million people (1910), from Wikidata's Q45670 (P1082). The English Wikipedia article \"Kingdom of Portugal\", at revision 1368546868, opens: \"The Kingdom of Portugal was a monarchy in the western Iberian Peninsula and the predecessor of the modern Portuguese Republic. Existing to various extents between the mid-12th century and the early 20th century, it was also known as the Kingdom of Portugal and the Algarves after 1471, and was the main constituent of the United Kingdom of Portugal, Brazil and the Algarves, which existed between 1815 and 1822. It coexisted with the Portuguese Empire, the realm's overseas colonies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1139-07-25 on Q45670 and whose dissolution it states as 1910-10-05. Both years here are those two values and nothing else. It is written because the atlas had no metropolitan Portugal before 1886 at all: `portugal` begins where CShapes begins, and everything Portuguese the two territory imports drew before that is a colony — `portuguese-brazil`, `portuguese-guinea`, `portuguese-east-africa` — with no crown above them. Twelve events of the Brazilian chain, from Tordesillas in 1494 to the Strangford Treaty of 1810, had no actor to name without it. It holds no territory: neither import draws Portugal before 1886, and drawing one is not this milestone’s work.",
   "when": {
     "start": 1139,
     "end": 1910

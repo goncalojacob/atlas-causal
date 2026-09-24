@@ -13,12 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-09-24",
   "origin": {
     "tool": "assistant"
   },
   "review": {
-    "status": "draft"
+    "status": "draft",
+    "flags": [
+      "polity-description"
+    ]
   },
   "wikidata": "Q824489",
   "wikipedia": {
@@ -37,6 +40,14 @@
     {
       "source": "costa-pinto-2003-contemporary-portugal",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q824489, P2046 (area)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estado Novo (Portugal)\", revision 1375585347"
     }
   ],
   "actorType": "polity",
@@ -45,7 +56,7 @@
     "New State",
     "Second Portuguese Republic"
   ],
-  "summary": "The Estado Novo was the authoritarian regime founded on the constitution of 1933 and dissolved on 25 April 1974, the longest-lived of its kind in twentieth-century Europe. It was corporatist in doctrine and Catholic and conservative in temper, with a single party, a political police, censorship, a corporative chamber and no free elections; Salazar governed it until 1968 and Marcelo Caetano until its fall. It stayed out of the world war while granting the Azores to the Allies, joined NATO in 1949 and the United Nations in 1955, and from 1961 held the African territories by a war on three fronts that consumed nearly half the state budget. Historians disagree over how far to call it fascist and how much of it was improvised around one man; they agree that the war is what ended it. It is in the atlas as the polity most of the events between 1933 and 1974 belong to.",
+  "summary": "Approximately 2,168,071 km², from Wikidata's Q824489 (P2046). The English Wikipedia article \"Estado Novo (Portugal)\", at revision 1375585347, opens: \"The Estado Novo was the corporatist Portuguese state installed in 1933. It evolved from the Ditadura Nacional formed after the coup d'état of 28 May 1926 against the unstable First Republic. Together, the Ditadura Nacional and the Estado Novo are recognised by historians as the Second Portuguese Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. The Estado Novo was the authoritarian regime founded on the constitution of 1933 and dissolved on 25 April 1974, the longest-lived of its kind in twentieth-century Europe. It was corporatist in doctrine and Catholic and conservative in temper, with a single party, a political police, censorship, a corporative chamber and no free elections; Salazar governed it until 1968 and Marcelo Caetano until its fall. It stayed out of the world war while granting the Azores to the Allies, joined NATO in 1949 and the United Nations in 1955, and from 1961 held the African territories by a war on three fronts that consumed nearly half the state budget. Historians disagree over how far to call it fascist and how much of it was improvised around one man; they agree that the war is what ended it. It is in the atlas as the polity most of the events between 1933 and 1974 belong to.",
   "when": {
     "start": 1933,
     "end": 1974

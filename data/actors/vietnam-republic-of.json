@@ -9,11 +9,15 @@
     {
       "name": "CShapes 2.0 import (tools/import/cshapes.mjs)",
       "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
     }
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
+  "revised": "2026-09-24",
   "origin": {
     "tool": "cshapes"
   },
@@ -21,20 +25,29 @@
     "status": "draft",
     "flags": [
       "standing-backfilled",
-      "imported-by-cshapes"
+      "imported-by-cshapes",
+      "polity-description"
     ]
   },
   "sources": [
     {
       "source": "cshapes-2-0",
       "locator": "gwcode 817"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q180573, P2046 (area) and P1082 (population, 1974)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South Vietnam\", revision 1376186839"
     }
   ],
   "actorType": "polity",
   "names": [
     "Vietnam, Republic of"
   ],
-  "summary": "Entity 817 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1954 to 1975. Its last capital in the dataset is Saigon. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 173,809 km² and about 19.6 million people (1974), from Wikidata's Q180573 (P2046, P1082). The English Wikipedia article \"South Vietnam\", at revision 1376186839, opens: \"The Republic of Vietnam, commonly known as South Vietnam, was a country in Southeast Asia that existed from 1955 to 1975. It first garnered recognition in 1949 as the associated State of Vietnam within the French Union, with its capital at Saigon. Since 1950, it was a member of the Western Bloc during the Cold War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 817 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1954 to 1975. Its last capital in the dataset is Saigon. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1954,
     "end": 1975
