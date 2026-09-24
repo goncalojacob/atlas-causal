@@ -555,6 +555,34 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // The drag is over by the time the click arrives, so whether it moved has
   // to outlive it — the same guard the map needs (STATUS.md, deviation 34).
   let dragged = false;
+
+  // **A pan draws again** (M86 §6, review B finding 1). Since I6 only the
+  // stacks inside the rectangle on screen are in the DOM, and the comment on
+  // the cull said "the rectangle is already in this view's render key, so a
+  // pan redraws" — true of the map, whose `pointerup` publishes a `bbox` that
+  // reaches `render` through the store, and never true here: the graph has no
+  // bbox, `pointermove` applied the transform and nothing else, and the click
+  // that follows a drag returns. So a reader who wheeled in and dragged
+  // towards the part of the picture they wanted found empty ground there until
+  // the next notch.
+  //
+  // One render per animation frame while the pointer is down, so the marks
+  // appear as the drag goes rather than at the end of it, and one more at the
+  // release in case the last move fell inside a frame already booked. Neither
+  // costs a drawing it would not otherwise do: the key carries the rectangle,
+  // so a render whose box has not moved returns at once.
+  let panFrame = null;
+  const renderSoon = () => {
+    if (panFrame !== null) return;
+    if (typeof requestAnimationFrame !== 'function') {
+      render(state.get());
+      return;
+    }
+    panFrame = requestAnimationFrame(() => {
+      panFrame = null;
+      render(state.get());
+    });
+  };
   const capture = (method, pointerId) => {
     try {
       root[method](pointerId);
@@ -587,11 +615,14 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
     cameraMoved = true;
     applyTransform();
+    renderSoon();
   });
   root.addEventListener('pointerup', () => {
     if (drag?.moved) capture('releasePointerCapture', drag.pointerId);
     dragged = drag?.moved ?? false;
+    const moved = drag?.moved ?? false;
     drag = null;
+    if (moved) render(state.get());
   });
   // **A notch widens time by more than it grows the picture** (M81). One
   // gesture, two numbers: `k` is the zoom, and `s` is how much wider than the

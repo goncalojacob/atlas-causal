@@ -128,3 +128,98 @@ test('no tick runs past the last year of the data, and no resting title is cut b
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });
 });
+
+// ─── 6. the graph after a drag (B1) ────────────────────────────────────────
+//
+// Since I6 only the stacks inside the rectangle on screen are in the DOM, and
+// a drag applied the transform and rendered nothing: wheel in, drag towards
+// the part of the picture you wanted, and the ground there is empty until the
+// next notch, click or state change. Nothing pinned here either — what is
+// asserted is that the picture after a drag is the picture the next render
+// would have drawn, whatever either of them holds.
+
+const GRAPH_READY = 'return document.querySelectorAll("svg.graph .layer-nodes circle").length > 0;';
+
+// Every node in the DOM, and the rectangle on screen in the graph's own
+// coordinates, read the way the view reads it — through the element's matrix,
+// because the SVG is letterboxed.
+const GRAPH_DRAWING = `
+  const svg = document.querySelector('svg.graph');
+  const rect = svg.getBoundingClientRect();
+  const inverse = svg.getScreenCTM().inverse();
+  const a = new DOMPoint(rect.left, rect.top).matrixTransform(inverse);
+  const b = new DOMPoint(rect.right, rect.bottom).matrixTransform(inverse);
+  // The camera is a transform on the viewport group and not on the root, so
+  // the rectangle has to be taken back through it: what the cull asks about is
+  // the graph's own coordinates (graph-view.js, \`view\`).
+  const t = /translate\\((-?[\\d.]+) (-?[\\d.]+)\\) scale\\(([\\d.]+)\\)/
+    .exec(svg.querySelector('g.viewport').getAttribute('transform') || 'translate(0 0) scale(1)');
+  const [tx, ty, k] = [Number(t[1]), Number(t[2]), Number(t[3])];
+  const ids = [...svg.querySelectorAll('.layer-nodes circle.node')]
+    .map((n) => n.getAttribute('data-id') || n.getAttribute('data-stack')).filter(Boolean);
+  return {
+    ids: ids.sort(),
+    box: {
+      x0: (Math.min(a.x, b.x) - tx) / k, x1: (Math.max(a.x, b.x) - tx) / k,
+      y0: (Math.min(a.y, b.y) - ty) / k, y1: (Math.max(a.y, b.y) - ty) / k,
+    },
+  };`;
+
+// One wheel notch over the middle of the picture. `deltaY: 0` is the notch
+// that changes no camera at all and still renders: it is how this test asks
+// "what would the next render have drawn?" without moving anything.
+const WHEEL = (deltaY) => `
+  const svg = document.querySelector('svg.graph');
+  const at = svg.getBoundingClientRect();
+  svg.dispatchEvent(new WheelEvent('wheel', {
+    bubbles: true, cancelable: true, deltaY: ${deltaY},
+    clientX: at.left + at.width / 2, clientY: at.top + at.height / 2,
+  }));
+  return true;`;
+
+// A press, a move and a release: the reader's own gesture, through the pointer
+// events the view listens for.
+const DRAG = (dx, dy) => `
+  const svg = document.querySelector('svg.graph');
+  const at = svg.getBoundingClientRect();
+  const from = { x: at.left + at.width / 2, y: at.top + at.height / 2 };
+  const send = (type, x, y) => svg.dispatchEvent(new PointerEvent(type, {
+    bubbles: true, cancelable: true, pointerId: 1, isPrimary: true, clientX: x, clientY: y,
+  }));
+  send('pointerdown', from.x, from.y);
+  send('pointermove', from.x + ${dx} / 2, from.y + ${dy} / 2);
+  send('pointermove', from.x + ${dx}, from.y + ${dy});
+  send('pointerup', from.x + ${dx}, from.y + ${dy});
+  return true;`;
+
+test('a drag on the graph draws the ground it pans onto', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    // The fixtures and the whole resting picture, with the implicit lens off:
+    // a lens has nothing to cull, and the cull is what this is about.
+    await open(page, url('?fixtures=1&view=graph&focus=none&degree=0'), GRAPH_READY);
+    await waitFor(page, GRAPH_READY, 'the graph to draw');
+
+    // In first, so that there is something off the screen to pan onto.
+    for (let i = 0; i < 6; i += 1) await page.eval(WHEEL(-100));
+    const before = await page.eval(GRAPH_DRAWING);
+    assert.ok(before.ids.length > 0, 'the zoomed picture draws something');
+
+    // Half a pane to the right, which brings the ground on the left into view.
+    await page.eval(DRAG(400, 0));
+    // One animation frame, since the render is booked on one.
+    await until(page, 'return new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(true))));');
+    const dragged = await page.eval(GRAPH_DRAWING);
+    assert.notDeepEqual(dragged.box, before.box, 'the drag moved the rectangle');
+
+    // And what the next render would have drawn, at the very same camera: a
+    // wheel of nothing changes no transform and still renders.
+    await page.eval(WHEEL(0));
+    const after = await page.eval(GRAPH_DRAWING);
+    assert.deepEqual(dragged.box, after.box, 'the empty notch moved nothing');
+    assert.deepEqual(dragged.ids, after.ids,
+      'the drag left a stale picture: the next render drew marks the drag did not');
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});

@@ -83,6 +83,14 @@ const stacks = (graph) => count(graph, /<circle[^>]*class="node stack[ "]/g);
 // "46 more" since M85 (cluster.js, `stackBadge`): the badge says what the
 // stack's own title says, and never a bare "+46".
 const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>(\d+) more</g)].map((m) => Number(m[1]));
+// And what every stack says it hides, off its own title — which is where the
+// arithmetic below has had to ask since M86 §2: a stack of two carries no
+// badge any more (its ring already says "more than one here"), so the badges
+// are the counts a reader could not have guessed and the titles are all of
+// them.
+// Off the `<title>` alone, because a stack carries the same sentence twice —
+// once as its accessible name and once as the tooltip.
+const hidden = (graph) => [...graph.matchAll(/<title>[^<]*— and (\d+) more event/g)].map((m) => Number(m[1]));
 
 // **Nothing is folded out of sight twice over any more.** There were two
 // levels of detail until M70: the semantic fold put a part inside its parent
@@ -135,14 +143,20 @@ test('at the default zoom the graph draws stacks, and they add up to the events'
   const dom = await withServer((url) => dumpDom(chrome, url(`?view=graph&${WHOLE}`)));
   const graph = graphOf(dom);
   const drawn = marks(graph);
-  const hidden = badges(graph);
+  const folded = hidden(graph);
+  const shown = badges(graph);
   assert.ok(drawn < events, `${drawn} marks for ${events} events`);
-  assert.equal(stacks(graph), hidden.length, 'a stack carries a badge and nothing else does');
-  assert.ok(hidden.length > 0, 'and there are stacks to carry one');
-  // The promise the badges make: nothing has been dropped from the picture,
-  // only merged into it.
-  assert.equal(drawn + hidden.reduce((a, b) => a + b, 0), events);
-  for (const n of hidden) assert.ok(n >= 1, 'a badge never says nothing is hidden');
+  assert.equal(stacks(graph), folded.length, 'every stack says in its title how many it hides');
+  assert.ok(folded.length > 0, 'and there are stacks to say it');
+  // The promise a stack makes: nothing has been dropped from the picture, only
+  // merged into it.
+  assert.equal(drawn + folded.reduce((a, b) => a + b, 0), events);
+  for (const n of folded) assert.ok(n >= 1, 'a stack never says nothing is hidden');
+  // And the badge is on exactly the stacks whose count a reader could not have
+  // guessed from the ring (M86 §2).
+  assert.deepEqual(shown.slice().sort((a, b) => a - b),
+    folded.filter((n) => n >= 2).sort((a, b) => a - b),
+    'a badge for every stack of three and up, and for nothing else');
 });
 
 // *Grouping into bands crowds the picture, and more of it merges* stood here.
