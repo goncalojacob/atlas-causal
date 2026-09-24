@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-osan--chaplain-medic-massacre--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chaplain–Medic massacre\", revision 1363525691, lead and § Delaying action"
+    }
+  ],
+  "from": "battle-of-osan",
+  "to": "chaplain-medic-massacre",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The massacre's own article puts the 24th Infantry Division on the Kum River by way of Osan: \"Advance elements of the 24th Infantry Division were badly defeated in the Battle of Osan on July 5, during the first battle between US and KPA forces\", after which \"the 24th Infantry Division was systematically pushed south\" and on 12 July its commander \"ordered the division's 19th, 21st and 34th infantry regiments to cross the Geum River\". The lead names the victims as \"troops of the US 19th Infantry Regiment, 24th Infantry Division\" who were \"cut off from resupply by a roadblock\" there. Precondition-of and not caused: the defeat at Osan is what put that regiment in that withdrawal, and the article makes no claim that it produced the killing. Probable: Wikipedia alone.",
+  "dispute": null
+}

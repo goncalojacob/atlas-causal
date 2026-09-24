@@ -5380,6 +5380,11 @@
       "category": "war",
       "label": "naval blockade",
       "note": "Added in M42b batch 26 for Q4927230, the Blockade of Saint-Domingue. The label is read from the class item itself; the item carries no description in English or Portuguese and has no English article, so there is no gloss to quote. `war` is the category Q1261499, naval battle, Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a blockade is a military operation of one against another."
+    },
+    "Q135010": {
+      "kind": "event",
+      "label": "war crime",
+      "note": "Added in M42 batch 53 from the class the Chaplain-Medic massacre names, read off the class item itself over the network and not guessed. Wikidata glosses it “individual act constituting a serious violation of the laws of war”. No category, as Q3199915 massacre carries none: data/categories.json has no kind for an atrocity and war would say the record is the fighting."
     }
   },
   "reconcile": true

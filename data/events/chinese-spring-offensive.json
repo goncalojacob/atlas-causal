@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "chinese-spring-offensive",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Dates from the article’s own infobox, 22 April – 22 May 1951, against the item’s P582 of 10 June 1951; the article is the cited source and A7 is the licence to read it. Title from the article (A12 (5)), which does not capitalise “spring offensive” as the item’s label does. Place is the atlas’s korean-peninsula and not a record at the item’s own P625: that P625 is Q16170016’s to six digits, one action on a front the article calls “near the 38th Parallel, Korea”."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q485256",
+  "wikipedia": {
+    "en": "Chinese spring offensive"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q485256"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chinese spring offensive\", revision 1376272952"
+    }
+  ],
+  "title": "Chinese spring offensive",
+  "summary": "The English Wikipedia article \"Chinese spring offensive\", at revision 1376272952, opens: \"The Chinese spring offensive, also known as the Chinese Fifth Phase Offensive, was a military operation conducted by the Chinese People's Volunteer Army (PVA) during the Korean War. Mobilizing three field armies totaling 700,000 men for the operation, the Chinese command conducted their largest offensive operation since their Second Phase Offensive in November and December 1950.\" Wikidata item Q485256, whose own description reads \"1951 Chinese offensive during the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-04-22",
+    "endDate": "1951-05-22"
+  },
+  "place": "korean-peninsula",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

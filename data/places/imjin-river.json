@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "imjin-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written by the Wikidata import from Q495534 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-the-imjin-river's place by A9's second step: the event's own P625 is 28 km up the same river from the river item's point, which is the length of the thing and not a disagreement — the article's own location field is \"Imjin River, Korea\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q495534",
+  "wikipedia": {
+    "en": "Imjin River"
+  },
+  "sources": [],
+  "names": [
+    "Imjin River"
+  ],
+  "where": {
+    "lon": 126.66,
+    "lat": 37.79,
+    "precision": "region",
+    "label": "Imjin River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

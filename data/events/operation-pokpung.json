@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "operation-pokpung",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Dates from the article's own infobox, 25–30 June 1950, which is the item's P580–P582 to the day. Title from the article (A12 (5)): the item's label is \"Operation Pokpoong\" and the English article it sitelinks is \"Operation Pokpung\". Place by A9's second step (P276 Q884): the item carries no P625 of its own."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4260079",
+  "wikipedia": {
+    "en": "Operation Pokpung"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4260079"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pokpung\", revision 1373958261"
+    }
+  ],
+  "title": "Operation Pokpung",
+  "summary": "The English Wikipedia article \"Operation Pokpung\", at revision 1373958261, opens: \"Operation Pokpung (Korean: 폭풍 작전, lit. 'Operation Storm') was the invasion of South Korea (Republic of Korea, ROK) by North Korea (Democratic People's Republic of Korea, DPRK) that triggered the Korean War.\" Wikidata item Q4260079, whose own description reads \"North Korean invasion of South Korea en 1950 that began the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-06-25",
+    "endDate": "1950-06-30"
+  },
+  "place": "south-korea-q884",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": []
+}

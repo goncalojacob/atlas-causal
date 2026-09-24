@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-pokpung--battle-of-korea-strait--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Korea Strait\", revision 1376104466, § Background"
+    }
+  ],
+  "from": "operation-pokpung",
+  "to": "battle-of-korea-strait",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The naval action's own Background puts the steamer at sea because of the invasion and dates it from it: \"The Korean War began on 25 June 1950 with a massive North Korean invasion across the 38th parallel and into the south. Around twenty hours after the beginning of the invasion, a North Korean steamer was assigned to insert highly-trained commandos belonging to the elite 766th Independent Infantry Regiment near the port of Busan at the southeastern coast of the Korean Peninsula, intending to capture the city from South Korean forces.\" The landing attempt is a limb of the invasion and the battle is that limb being met. Probable: Wikipedia alone.",
+  "dispute": null
+}

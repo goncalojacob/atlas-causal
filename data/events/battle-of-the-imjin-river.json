@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-imjin-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under chinese-spring-offensive, which the article's own infobox names — \"part of the Chinese Spring Offensive in the Korean War\" — and whose span, 22 April – 22 May 1951, holds this one; the item's own P361 names only the Korean War, which is reached through the offensive. Place by A9's second step (P276 Q495534)."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q16170016",
+  "wikipedia": {
+    "en": "Battle of the Imjin River"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16170016"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Imjin River\", revision 1376480748"
+    }
+  ],
+  "title": "Battle of the Imjin River",
+  "summary": "The English Wikipedia article \"Battle of the Imjin River\", at revision 1376480748, describes itself in its short description as a \"Major confrontation during the Chinese Spring Offensive of the Korean War\", fought 22–25 April 1951 on the Imjin River in Korea between United Nations forces — the United Kingdom, Belgium, Luxembourg, the Philippines and the Republic of Korea — and China, and records the outcome as Chinese forces pushing the UN back 25 mi (40 km) while failing to achieve a breakthrough. Wikidata item Q16170016, whose own description reads \"1951 major confrontation during the Chinese Spring Offensive of the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-04-22",
+    "endDate": "1951-04-25"
+  },
+  "place": "imjin-river",
+  "region": null,
+  "regionNote": null,
+  "parent": "chinese-spring-offensive",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    }
+  ]
+}
