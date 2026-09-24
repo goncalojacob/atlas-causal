@@ -2582,6 +2582,18 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-saint-domingue--battle-of-vertieres--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Vertières\", revision 1371955419, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "blockade-of-saint-domingue--battle-of-vertieres--enabled",
+      "kind": "edge",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651, § Background"
+    },
+    {
+      "dissent": false,
       "id": "bohemian-revolt--siege-of-pilsen--enabled",
       "kind": "edge",
       "locator": "\"Siege of Pilsen\", revision 1370744459, § lead"
@@ -4460,6 +4472,12 @@
     },
     {
       "dissent": false,
+      "id": "napoleonic-wars--blockade-of-saint-domingue--enabled",
+      "kind": "edge",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651, lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "october-revolution--execution-of-the-romanov-family--precondition-of",
       "kind": "edge",
       "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead"
@@ -5453,6 +5471,24 @@
       "id": "siege-of-port-arthur--battle-of-tsushima--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1793--battle-of-cap-francais-1793--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1803--battle-of-vertieres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Vertières\", revision 1371955419, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1803--battle-of-vertieres--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Port-au-Prince (1803)\", revision 1370744541"
     },
     {
       "dissent": false,
@@ -6881,6 +6917,12 @@
       "id": "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of",
       "kind": "edge",
       "locator": "\"War of the Sixth Coalition\", revision 1373828502, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-south--saint-domingue-expedition--precondition-of",
+      "kind": "edge",
+      "locator": "\"Saint-Domingue expedition\", revision 1373644192, § The expedition"
     },
     {
       "dissent": false,
@@ -8342,6 +8384,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cap-francais-1793",
+      "kind": "event",
+      "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-caporetto",
       "kind": "event",
       "locator": "\"Battle of Caporetto\", revision 1370436282"
@@ -8408,6 +8456,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-crete-a-pierrot",
+      "kind": "event",
+      "locator": "\"Battle of Crête-à-Pierrot\", revision 1370437879"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-croix-des-bouquets",
+      "kind": "event",
+      "locator": "\"Battle of Croix-des-Bouquets\", revision 1370109349"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cusco",
       "kind": "event",
       "locator": "\"Battle of Cusco\", revision 1370109425"
@@ -8465,6 +8525,12 @@
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "\"Battle of Gao\", revision 1370441289, lead: \"between 26 and 28 June 2012\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gonaives",
+      "kind": "event",
+      "locator": "\"Battle of Gonaïves\", revision 1370110941"
     },
     {
       "dissent": false,
@@ -8540,6 +8606,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jean-rabel",
+      "kind": "event",
+      "locator": "\"Battle of Jean-Rabel\", revision 1370444142"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "\"Battle of Junín\", revision 1370266471"
@@ -8585,6 +8657,12 @@
       "id": "battle-of-kursk",
       "kind": "event",
       "locator": "\"Battle of Kursk\", revision 1373344662"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-bombarde",
+      "kind": "event",
+      "locator": "\"Battle of La Bombarde\", revision 1370446722"
     },
     {
       "dissent": false,
@@ -8852,6 +8930,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "locator": "\"Battle of Ravine-à-Couleuvres\", revision 1370587281"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rolica",
       "kind": "event",
       "locator": "\"Battle of Roliça\", revision 1373583318"
@@ -8861,6 +8945,12 @@
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "\"Battle of Saint-Mathieu\", revision 1370588044"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Raphaël\", revision 1370273387"
     },
     {
       "dissent": false,
@@ -9104,6 +9194,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vertieres",
+      "kind": "event",
+      "locator": "\"Battle of Vertières\", revision 1371955419"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vilcaconga",
       "kind": "event",
       "locator": "\"Battle of Vilcaconga\", revision 1370592503"
@@ -9215,6 +9311,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "\"Black September\", revision 1370604477"
+    },
+    {
+      "dissent": false,
+      "id": "blockade-of-saint-domingue",
+      "kind": "event",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651"
     },
     {
       "dissent": false,
@@ -9341,6 +9443,12 @@
       "id": "capture-of-bahia",
       "kind": "event",
       "locator": "\"Capture of Bahia\", revision 1370608303"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-dauphin-1794",
+      "kind": "event",
+      "locator": "\"Capture of Fort-Dauphin (1794)\", revision 1370608656"
     },
     {
       "dissent": false,
@@ -11396,6 +11504,12 @@
     },
     {
       "dissent": false,
+      "id": "saint-domingue-expedition",
+      "kind": "event",
+      "locator": "\"Saint-Domingue expedition\", revision 1373644192"
+    },
+    {
+      "dissent": false,
       "id": "santiago-de-cuba-uprising",
       "kind": "event",
       "locator": "\"Santiago de Cuba Uprising\", revision 1370730172"
@@ -11657,6 +11771,18 @@
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "\"Siege of Port Arthur\", revision 1373678673"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1793",
+      "kind": "event",
+      "locator": "\"Siege of Port-au-Prince (1793)\", revision 1370744538"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1803",
+      "kind": "event",
+      "locator": "\"Siege of Port-au-Prince (1803)\", revision 1370744541"
     },
     {
       "dissent": false,
@@ -12677,6 +12803,12 @@
       "id": "war-of-the-sixth-coalition",
       "kind": "event",
       "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-south",
+      "kind": "event",
+      "locator": "\"War of the South\", revision 1375173408"
     },
     {
       "dissent": false,

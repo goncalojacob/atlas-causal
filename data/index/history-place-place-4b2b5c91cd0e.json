@@ -299,6 +299,15 @@
         }
       ]
     },
+    "artibonite-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "arusha": {
       "from": "git",
       "versions": [
@@ -1043,6 +1052,12 @@
         {
           "first": true,
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "names"
+          ],
+          "on": "2026-09-16"
         }
       ]
     },
@@ -1502,6 +1517,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "croix-des-bouquets": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2158,6 +2182,15 @@
         }
       ]
     },
+    "fort-liberte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "france-q142": {
       "from": "git",
       "versions": [
@@ -2384,6 +2417,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "gonaives": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -2902,6 +2944,15 @@
         }
       ]
     },
+    "jean-rabel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "jordan-q810": {
       "from": "git",
       "versions": [
@@ -3132,7 +3183,7 @@
       ]
     },
     "kidal-region": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4180,6 +4231,15 @@
         }
       ]
     },
+    "mole-saint-nicolas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "monastir-vilayet": {
       "from": "git",
       "versions": [
@@ -4344,7 +4404,7 @@
       ]
     },
     "moura": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5216,6 +5276,15 @@
         }
       ]
     },
+    "port-au-prince": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "port-of-beirut": {
       "from": "git",
       "versions": [
@@ -5904,6 +5973,15 @@
         }
       ]
     },
+    "saint-marc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "saint-petersburg": {
       "from": "git",
       "versions": [
@@ -5946,6 +6024,15 @@
             "review",
             "summary"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "saint-raphael-haiti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]
@@ -7030,7 +7117,7 @@
       ]
     },
     "timbuktu": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

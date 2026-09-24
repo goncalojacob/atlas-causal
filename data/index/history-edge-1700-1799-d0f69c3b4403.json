@@ -182,6 +182,15 @@
         }
       ]
     },
+    "siege-of-port-au-prince-1793--battle-of-cap-francais-1793--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "storming-of-the-bastille--french-revolution--caused": {
       "from": "git",
       "versions": [
@@ -287,6 +296,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-of-the-south--saint-domingue-expedition--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     }

@@ -6204,6 +6204,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-cap-francais-1793",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cap-Français (1793)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-caporetto",
       "kind": "event",
@@ -6562,6 +6593,66 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "id": "battle-of-crete-a-pierrot",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "saint-domingue-expedition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Crête-à-Pierrot"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-croix-des-bouquets",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Croix-des-Bouquets"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 3,
       "id": "battle-of-cusco",
       "kind": "event",
@@ -6846,6 +6937,36 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Gao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-gonaives",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gonaïves"
     },
     {
       "authors": [
@@ -7299,6 +7420,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "id": "battle-of-jean-rabel",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jean-Rabel"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "id": "battle-of-junin",
       "kind": "event",
@@ -7564,6 +7715,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Kursk"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-la-bombarde",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of La Bombarde"
     },
     {
       "authors": [
@@ -9027,6 +9208,36 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "saint-domingue-expedition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ravine-à-Couleuvres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-rolica",
       "kind": "event",
@@ -9076,6 +9287,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Saint-Mathieu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Saint-Raphaël"
     },
     {
       "authors": [
@@ -10420,6 +10661,37 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-vertieres",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "saint-domingue-expedition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vertières"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-vilcaconga",
       "kind": "event",
@@ -11060,6 +11332,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Black September"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "blockade-of-saint-domingue",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Blockade of Saint-Domingue"
     },
     {
       "authors": [
@@ -11849,6 +12152,36 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Bahia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "capture-of-fort-dauphin-1794",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Fort-Dauphin (1794)"
     },
     {
       "authors": [
@@ -21569,7 +21902,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "napoleonic-wars",
       "kind": "event",
       "origin": {
@@ -24921,6 +25254,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "saint-domingue-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Saint-Domingue expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -26631,6 +26995,68 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Port Arthur"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "siege-of-port-au-prince-1793",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Port-au-Prince (1793)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "siege-of-port-au-prince-1803",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Port-au-Prince (1803)"
     },
     {
       "authors": [
@@ -31963,6 +32389,37 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 1,
+      "id": "war-of-the-south",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "haitian-revolution-1791-1804",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the South"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
       "degree": 2,
       "id": "war-of-the-third-coalition",
       "kind": "event",
@@ -32836,6 +33293,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-crete-a-pierrot",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-croix-des-bouquets",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dessau-bridge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -32861,6 +33330,12 @@
     },
     {
       "id": "battle-of-freiburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-gonaives",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -32920,6 +33395,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-jean-rabel",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-junin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -32939,6 +33420,12 @@
     },
     {
       "id": "battle-of-khe-sanh",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-la-bombarde",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -33004,7 +33491,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-saint-mathieu",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-saint-raphael",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -33155,6 +33654,12 @@
     },
     {
       "id": "boyaca-necklace-bomb-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-fort-dauphin-1794",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

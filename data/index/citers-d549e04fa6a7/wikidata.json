@@ -2714,6 +2714,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cap-francais-1793",
+      "kind": "event",
+      "locator": "Q2890742"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-caporetto",
       "kind": "event",
       "locator": "Q242644"
@@ -2780,6 +2786,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-crete-a-pierrot",
+      "kind": "event",
+      "locator": "Q3486058"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-croix-des-bouquets",
+      "kind": "event",
+      "locator": "Q2890512"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cusco",
       "kind": "event",
       "locator": "Q1612814"
@@ -2831,6 +2849,12 @@
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "Q3181123"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gonaives",
+      "kind": "event",
+      "locator": "Q2890666"
     },
     {
       "dissent": false,
@@ -2912,6 +2936,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jean-rabel",
+      "kind": "event",
+      "locator": "Q4871314"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "Q1508820"
@@ -2957,6 +2987,12 @@
       "id": "battle-of-kursk",
       "kind": "event",
       "locator": "Q130861"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-bombarde",
+      "kind": "event",
+      "locator": "Q2382626"
     },
     {
       "dissent": false,
@@ -3224,6 +3260,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "locator": "Q2890563"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rolica",
       "kind": "event",
       "locator": "Q324344"
@@ -3233,6 +3275,12 @@
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "Q575924"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "locator": "Q2889885"
     },
     {
       "dissent": false,
@@ -3470,6 +3518,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vertieres",
+      "kind": "event",
+      "locator": "Q2484240"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vilcaconga",
       "kind": "event",
       "locator": "Q3636661"
@@ -3581,6 +3635,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "Q154288"
+    },
+    {
+      "dissent": false,
+      "id": "blockade-of-saint-domingue",
+      "kind": "event",
+      "locator": "Q4927230"
     },
     {
       "dissent": false,
@@ -3701,6 +3761,12 @@
       "id": "capture-of-bahia",
       "kind": "event",
       "locator": "Q3704801"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-dauphin-1794",
+      "kind": "event",
+      "locator": "Q3403821"
     },
     {
       "dissent": false,
@@ -5570,6 +5636,12 @@
     },
     {
       "dissent": false,
+      "id": "saint-domingue-expedition",
+      "kind": "event",
+      "locator": "Q3062411"
+    },
+    {
+      "dissent": false,
       "id": "santiago-de-cuba-uprising",
       "kind": "event",
       "locator": "Q5974095"
@@ -5837,6 +5909,18 @@
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "Q210800"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1793",
+      "kind": "event",
+      "locator": "Q3485993"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-au-prince-1803",
+      "kind": "event",
+      "locator": "Q3485996"
     },
     {
       "dissent": false,
@@ -6575,6 +6659,12 @@
       "id": "war-of-the-sixth-coalition",
       "kind": "event",
       "locator": "Q138107"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-south",
+      "kind": "event",
+      "locator": "Q4122570"
     },
     {
       "dissent": false,

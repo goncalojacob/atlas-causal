@@ -173,6 +173,15 @@
         }
       ]
     },
+    "blockade-of-saint-domingue--battle-of-vertieres--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "boxer-rebellion--soviet-japanese-border-conflicts--precondition-of": {
       "from": "git",
       "versions": [
@@ -439,6 +448,15 @@
         }
       ]
     },
+    "napoleonic-wars--blockade-of-saint-domingue--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "peninsular-war--independence-of-brazil-1822--caused": {
       "from": "git",
       "versions": [
@@ -605,6 +623,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-port-au-prince-1803--battle-of-vertieres--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

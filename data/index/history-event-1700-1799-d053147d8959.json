@@ -29,6 +29,15 @@
         }
       ]
     },
+    "battle-of-cap-francais-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-cartagena-de-indias": {
       "from": "git",
       "versions": [
@@ -38,7 +47,43 @@
         }
       ]
     },
+    "battle-of-croix-des-bouquets": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-gonaives": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-havana-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-jean-rabel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-la-bombarde": {
       "from": "git",
       "versions": [
         {
@@ -92,6 +137,15 @@
         }
       ]
     },
+    "battle-of-saint-raphael": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-sangarara": {
       "from": "git",
       "versions": [
@@ -120,6 +174,15 @@
       ]
     },
     "capture-of-ayaviri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-fort-dauphin-1794": {
       "from": "git",
       "versions": [
         {
@@ -369,6 +432,15 @@
         }
       ]
     },
+    "siege-of-port-au-prince-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "storming-of-the-bastille": {
       "from": "git",
       "versions": [
@@ -498,6 +570,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-of-the-south": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
