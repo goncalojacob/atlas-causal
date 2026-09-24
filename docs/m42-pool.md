@@ -7374,3 +7374,94 @@ Kingdom of Poland (1905–1907)". A reviewer following the revision lands in the
 right place; a reader following the title does not. Correcting a locator is
 correcting what a record says it read, which is a reading and not a sweep, so
 this pass leaves them and names them.
+
+## A14 (4) — the three A13 edges corrected, and the eleven "Following" quotes read again
+
+*24 September, the 04:58Z fire. No import: every sentence below was already
+in the record it is quoted in, and A14(3) has just put every one of the cited
+revisions on disk.*
+
+The 24 September review read ten of the 63 `a13-relations-pass` edges in full
+and found five sound, one mistyped, two at the wrong endpoint and two
+chronology, and named eleven more whose quote opens "Following", "After" or
+"In the aftermath" — the fire's own refusal class.
+
+**The three named.**
+
+- `great-depression--siamese-revolution-of-1932` was `caused` on a quote that
+  says *"contributed to"*, which the same fire typed `precondition-of`
+  elsewhere and said why. Retyped through `tools/migrate/ids.mjs`, which is
+  the one thing that tool will do to a derived id — *"only the type may be
+  corrected here"* — so the former id stays in `aliases` and a link shared
+  yesterday still resolves.
+- `six-day-war--bangladesh-liberation-war--inspired` rested on *"The attack
+  was modeled on the Israeli Air Force's Operation Focus during the Six-Day
+  War"*, which is the Pakistani pre-emptive strike of 3 December 1971 — the
+  opening of the Indo-Pakistani war, not of a liberation war already nine
+  months old. `ids.mjs` refuses to move an end, and rightly: an edge with
+  another end is another record. So the old edge is **withdrawn with its
+  reason** and `six-day-war--india-pakistan-war-of-1971--inspired` carries the
+  same quote and the same citation.
+- `february-revolution--russian-civil-war--caused` is right and its label was
+  not: the explanation said *"the civil war's own lead"* where the locator
+  says, correctly, the February Revolution's. Only the article the explanation
+  names is changed.
+
+**The eleven, under one test.** A13 asks for an edge *where the article states
+that one caused, enabled, preceded or reacted to the other*. So: does the
+quoted sentence name both ends, or state the relation between them? "Following
+X, Z happened", where Z is not the `to` record, is the article stating what
+followed X — and the edge is the run's own inference from it. **Nine fail that
+test and are withdrawn; two pass and stay.**
+
+| kept | why |
+| --- | --- |
+| `soviet-afghan-war--afghan-civil-war-q1980081` | *"…leading to the toppling of the government by the mujahideen in 1992 and the start of a second Afghan Civil War"* — names the `to` and states the chain |
+| `world-war-i--treaty-of-lausanne` | *"…a war that eventually resulted in a massive population exchange between the two countries under the Treaty of Lausanne"* — names both ends |
+
+| dropped | what the sentence actually says followed |
+| --- | --- |
+| `boxer-rebellion--soviet-japanese-border-conflicts` | Russia and Japan "vying for control" — the rivalry of 1904, 33 years short |
+| `first-sino-japanese-war--soviet-japanese-border-conflicts` | the same sentence, 38 years short |
+| `february-revolution--execution-of-the-romanov-family` | the Romanovs "imprisoned in the Alexander Palace" |
+| `second-italo-ethiopian-war--ogaden-war` | "the Ogaden was united under a single administration" |
+| `six-day-war--gaza-war` | "Israel occupied both Palestinian territories" |
+| `six-day-war--yom-kippur-war` | "the Israeli military had become complacent" |
+| `world-war-i--second-sino-japanese-war` | Shandong, "leading to nationwide anti-Japanese protests" — May Fourth, not 1937 |
+| `xinhai-revolution--chinese-civil-war` | "Sun Yat-sen assumed the presidency of the newly formed Republic of China" |
+| `xinhai-revolution--sino-indian-war` | the British "had lost the urgency to enforce this boundary" |
+
+**Counts.** 1 retyped, 1 re-pointed (1 withdrawn, 1 written), 1 relabelled, 9
+withdrawn. Active edges **843 → 834**; `precondition-of` **417 → 407**. Corpus
+unchanged at **858 active, 242 main, 616 filed**. **The largest connected
+component is 609 before and 609 after, the component count 192 before and 192
+after, and the isolate count 155 before and 155 after** — not one of the nine
+was the only thing holding a record in the graph, which is its own reading of
+how much they were carrying. `soviet-japanese-border-conflicts` and
+`sino-indian-war` are each down to one edge. Validator: 0 errors, 496 warnings
+either side.
+
+**A withdrawal keeps its quote.** Every one of the nine keeps its
+`explanation`, its citation and the revision it read, and says in
+`retraction.reason` which half of A13's sentence the article did not supply.
+Nothing here says the link is false — `six-day-war → yom-kippur-war` is a
+claim historians make — only that *this sentence* does not make it. Seven of
+the nine name a `to` the sentence never mentions; two (`boxer-rebellion` and
+`first-sino-japanese-war`) name a consequence the atlas holds as a different
+record entirely, which is the review's *"endpoint chosen by which article was
+open"*.
+
+**Deviation 1411.** *`six-day-war--yom-kippur-war` is the drop that most
+likely has a better sentence in the same article, and a sweep cannot find it.*
+The quote came from § Response in Israel; the Yom Kippur War's article argues
+the 1967 complacency at length and somewhere states the link the edge asserts.
+Re-reading one article for one sentence is a reading and not a pass, and A14
+gives this fire nine drops and no re-argument. The record is on disk with its
+reason, so a person or a later curation fire can restore it from a sentence
+that says it.
+
+**What stays open.** Whether a § Background mention is ever a `precondition-of`
+is the owner's (review finding 4). The other 52 `a13-relations-pass` edges are
+untouched by this pass: the review read ten and named eleven, and reading the
+remaining 42 against their revisions is a curation fire's work, not this
+one's.
