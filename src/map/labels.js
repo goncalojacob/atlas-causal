@@ -130,6 +130,16 @@ const hits = (a, b) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
 // antes de haver um rectângulo para perguntar.
 const inView = (x, y, view) => !view || (x >= view.x0 && x <= view.x1 && y >= view.y0 && y <= view.y1);
 
+// E a **caixa** também, e não só a âncora (M86 §2). Uma etiqueta é escrita a
+// partir da sua âncora para a direita, por isso um nome ancorado dentro do
+// rectângulo pode acabar fora dele: no primeiro ecrã, agora que os
+// acontecimentos são escritos ao longe, era "The 1964 Brazilian c" cortado
+// pela borda. Um nome é escrito inteiro ou não é escrito — é a regra que o
+// grafo já segue (graph-view/labels.js) e a que a linha do tempo passou a
+// seguir em M86 §4 — e quem perde a borda fica sem nome, como quem perde a
+// caixa a outro.
+const boxInView = (box, view) => !view || box.x1 <= view.x1;
+
 // As etiquetas que ficam, pela ordem em que são desenhadas.
 //
 // `k` é o zoom em vigor: a caixa é em unidades da página e o texto tem o mesmo
@@ -169,6 +179,7 @@ export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } 
     if (spent >= limit) continue;
     if (candidate.once && said.has(candidate.once)) continue;
     const box = labelBox(candidate.text, candidate.x, candidate.y, k, candidate.em ?? EM);
+    if (!boxInView(box, view)) continue;
     if (boxes.some((other) => hits(box, other))) continue;
     boxes.push(box);
     used.set(priority, spent + 1);

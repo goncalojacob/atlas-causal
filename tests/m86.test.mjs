@@ -250,7 +250,11 @@ test('a title that would run off the right edge is written on the other side of 
   const tight = labelPlacement(940, 40, room, pane);
   assert.equal(tight.anchor, 'end');
   assert.ok(tight.x < 940, 'the anchor is to the left of the bar');
-  assert.ok(tight.x >= 0, 'and never off the other edge');
+  assert.ok(tight.x - room >= -5, 'and the name itself is on the drawing');
+  // A pane too narrow for the name on either side keeps it where it has
+  // always been: a name cut at its start cannot even be begun.
+  const narrow = labelPlacement(20, 10, 400, 390);
+  assert.equal(narrow.anchor, 'start');
   // The boundary is the room the name needs and nothing else.
   const exactly = pane - room - 5;
   assert.equal(labelPlacement(exactly, 0, room, pane).anchor, 'start');

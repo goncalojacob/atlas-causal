@@ -204,7 +204,14 @@ export function timelineDomain(extent) {
 export function labelPlacement(x, barWidth, room, paneWidth) {
   const right = x + barWidth + BAR_LABEL_GAP;
   if (right + room <= paneWidth) return { x: right, anchor: 'start' };
-  return { x: Math.max(0, x - BAR_LABEL_GAP), anchor: 'end' };
+  // **Only where the ground on the left is actually there.** On a phone the
+  // pane is 390 px and a good many titles are longer than that, so a title
+  // moved to the left ran off the *other* edge — which is the same fault
+  // seen in a mirror, and worse, because a name cut at its start cannot even
+  // be begun. Where neither side has the room the title stays on the right,
+  // which is where it has always been.
+  if (x - room >= 0) return { x: x - BAR_LABEL_GAP, anchor: 'end' };
+  return { x: right, anchor: 'start' };
 }
 // The corner a bar is rounded by, and the ring outside a parent's bar: how far
 // outside it on every side, and how thin. A ring says "there is more inside"
@@ -688,7 +695,22 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     lanes = rowLanes(near, scale, width, {
       openEnd: domain[1],
       gap: ROW_GAP,
-      extra: (event) => labelRoom(labelOf(atlas, event)),
+      // The room a title needs, on the side it is going to be written
+      // (M86 §4). `labelPlacement` decides that, and it is asked here with
+      // the same geometry the packing itself uses, so a row packed for a
+      // title on the left is the row that title is drawn in.
+      extra: (event) => {
+        const name = labelOf(atlas, event);
+        const box = barBox(event, scale, { openEnd: domain[1] });
+        return labelPlacement(box.x, box.width, labelRoom(name), width).anchor === 'start'
+          ? labelRoom(name) : 0;
+      },
+      before: (event) => {
+        const name = labelOf(atlas, event);
+        const box = barBox(event, scale, { openEnd: domain[1] });
+        return labelPlacement(box.x, box.width, labelRoom(name), width).anchor === 'end'
+          ? labelRoom(name) : 0;
+      },
       affinity: (event) => (pathIds.has(event.id) ? 'chain' : event.place ?? null),
     });
     // The rows are laid out into the height the pane has: they grow into the

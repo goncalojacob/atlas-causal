@@ -86,10 +86,25 @@ test('a dismissed introduction does not swallow the clicks on the map behind it'
     const covering = await page.eval(`const el = document.getElementById('intro');
       return getComputedStyle(el).display !== 'none';`);
     assert.equal(covering, false, 'a hidden overlay is not drawn');
-    const point = await page.eval(`const mark = document.querySelector('.map .mark:not(.cluster)');
-      const box = mark.getBoundingClientRect();
-      const at = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
-      return at === mark || mark.contains(at) || at?.closest('.map') !== null;`);
-    assert.equal(point, true, 'the mark is what is under the pointer');
+    // Over every mark and not the first one: since M86 §5 the map's key is
+    // open on a desktop, and a mark under the key is under the key — which is
+    // what a legend drawn over a corner of the picture means and not what this
+    // test is about. What it is about is the overlay: if the introduction were
+    // still there, *no* mark would have the map under it, and nothing anywhere
+    // on the picture would answer with anything but `#intro`.
+    const point = await page.eval(`
+      const marks = [...document.querySelectorAll('.map .mark:not(.cluster)')];
+      let reachable = 0;
+      let overlaid = 0;
+      for (const mark of marks) {
+        const box = mark.getBoundingClientRect();
+        const at = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+        if (at === mark || mark.contains(at) || at?.closest('.map') !== null) reachable += 1;
+        if (at?.closest('#intro') !== null) overlaid += 1;
+      }
+      return { marks: marks.length, reachable, overlaid };`);
+    assert.ok(point.marks > 0, 'the map drew marks to click');
+    assert.ok(point.reachable > 0, 'no mark on the map is under the pointer');
+    assert.equal(point.overlaid, 0, 'the dismissed introduction is still over the picture');
   });
 });
