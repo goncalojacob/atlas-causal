@@ -1274,7 +1274,7 @@
       ]
     },
     "chongchon-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1493,7 +1493,7 @@
       ]
     },
     "daejeon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3332,7 +3332,7 @@
       ]
     },
     "lake-changjin": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4715,7 +4715,7 @@
       ]
     },
     "osan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5414,7 +5414,7 @@
       ]
     },
     "pusan-perimeter": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6145,7 +6145,7 @@
       ]
     },
     "seoul": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7062,7 +7062,7 @@
       ]
     },
     "unsan-county": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
