@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-tessalit--tinsalane-ambush--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tinsalane ambush\", revision 1370751066, lead and § The ambush"
+    }
+  ],
+  "from": "siege-of-tessalit",
+  "to": "tinsalane-ambush",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The ambush's own lead makes the siege the reason the convoy was on that road: the rebels \"fought against a convoy of the Malian army who came to reinforce the troops besieged in Tessalit\". § The ambush says the same twice over — \"On February 10, 2012, the Malian army launched an offensive to rescue the garrison of Amachach camp, near Tessalit, besieged by the rebels\", and \"a convoy of Malian soldiers and militia departed the cities of Kidal and Anfif and moved towards Tessalit to strengthen the military forces of the besieged city. However, this convoy was ambushed by an MNLA brigade in Tinsalane.\" Precondition and not cause: the siege produced the relief column the ambush destroyed, and the article does not say the besiegers ordered the ambush. Probable: Wikipedia alone.",
+  "dispute": null
+}
