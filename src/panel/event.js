@@ -25,6 +25,7 @@ import { EDGE_TYPE_LABEL, PRECISION_LABEL } from '../vocab.js';
 import { standingSlot, fillStanding } from '../standing.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 // What a card calls each edge type, from the one list of them (vocab.js).
 export const TYPE_LABEL = EDGE_TYPE_LABEL;
@@ -450,7 +451,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
   atlas.record('event', event.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
-      container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      container.querySelector('[data-slot="summary"]').innerHTML = summaryHtml(rec.summary);
       // Who has read this, from the record's own `review` block — the same
       // fields the validator counts and the masthead's count is built from
       // (standing.js). It waits for the file, like the summary, because the

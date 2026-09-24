@@ -24,6 +24,7 @@ import { standingSlot, fillStanding } from '../standing.js';
 import { bylineOf } from '../demo.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 const authorsLine = (narrative) => esc(bylineOf(narrative));
 
@@ -183,7 +184,7 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
     ctx.atlas.record('event', resolved.event.id).then(
       (record) => {
         if (!ctx.isCurrent(mine)) return;
-        slot().innerHTML = `<p>${esc(record.summary)}</p>${ctx.citationsHtml(record.sources, 'Sources for this event')}`;
+        slot().innerHTML = `${summaryHtml(record.summary)}${ctx.citationsHtml(record.sources, 'Sources for this event')}`;
       },
       () => { if (ctx.isCurrent(mine)) slot().innerHTML = '<p class="muted">Could not load the record text.</p>'; },
     );

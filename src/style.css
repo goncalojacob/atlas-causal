@@ -1845,6 +1845,13 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* The way out to somebody else's account of the same thing. Set apart from
    the card's own text: what the atlas says is the summary below it. */
 .panel .wikipedia { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
+/* The credit under a quoted lead, and the importer's own note under that
+   (M86 §1). One line in the interface's face and not the atlas's, because it
+   is a statement about where the words above came from and not part of them;
+   the note is behind `?review=1` and is never on the published page. */
+.panel .summary-credit { margin: var(--space-1) 0 0; font-family: var(--font-ui); font-size: var(--text-xs); }
+.panel .summary-credit a { color: var(--cobalt); }
+.panel .provenance { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
 .panel .wikipedia a { color: var(--cobalt); }
 .panel .wikipedia .muted { margin-left: var(--space-2); }
 
