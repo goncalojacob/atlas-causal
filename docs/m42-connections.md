@@ -4815,3 +4815,38 @@ the edge the source argues, and the source is what is being quoted.
 Italo-Turkish War's lead also calls the war *"a precursor of World War I"*.
 A precursor is a periodisation and not a mechanism, and all five of this
 atlas's edge types assert a mechanism — batch 41's rule, applied again.
+
+## Batch 48 — the Algerian War read as a chain
+
+*24 September, the import fire that picked the run up at 08:18Z. The Africa
+lane trails at 139 against Europe's 375, so the batch is taken from it; the
+full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 48".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `philippeville-massacre` → `battle-of-algiers-1956-1957` | `precondition-of` | *"On 20 August 1955, violence broke out around Philippeville, drastically escalating the conflict."* — "Battle of Algiers (1956–1957)", revision 1374865618, § Background |
+| `milk-bar-cafe-bombing` → `battle-of-algiers-1956-1957` | `precondition-of` | *"On the evening of 30 September 1956, a trio of female FLN militants ... carried out the first series of bomb attacks on three civilian targets in European Algiers"*, and, in the lead, *"Reprisals followed and the violence escalated, leading the French Governor-General to deploy the French Army in Algiers to suppress the FLN"* — same article and revision, § First phase and lead |
+| `may-1958-crisis-in-france` → `challe-plan` | `precondition-of` | *"Tensions finally culminated in the May 1958 crisis, which saw General Charles de Gaulle take power and establish the French Fifth Republic. ... In early 1959, De Gaulle resorted to a decisive military offensive"* — "Challe Plan", revision 1370610721, § Background |
+| `challe-plan` → `algiers-putsch-of-1961` | `precondition-of` | *"De Gaulle therefore put his efforts into seeking a political solution. The Colons and part of the army resisted this move, which nearly resulted in a civil war; Challe himself was one of the heads of the Algiers Putsch"* — same article and revision, § Aftermath |
+| `challe-plan` → `evian-accords` | `precondition-of` | *"The Challe plan, despite military success, failed to achieve its ultimate goal and the FLN were not defeated. ... De Gaulle therefore put his efforts into seeking a political solution."* — same article, revision and section |
+| `evian-accords` → `battle-of-bab-el-oued` | `reacted-to` | *"The OAS decided to dig in at their stronghold of Bab El Oued ... to fight the Evian Agreements by force"* — "Battle of Bab El Oued", revision 1370432852, § Context; and *"One of the primary forces of opposition to the signing of the Evian Accords ... was the Secret Army Organisation (OAS)"* — "Évian Accords", revision 1372137587 |
+
+All six are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. The last runs from the accords to the battle and not the other way
+round, because rule 4 reads the arrow of time and the atlas's `reacted-to`
+says *the later record answered the earlier one* — which is what both articles
+say happened in the five days between 18 and 23 March 1962.
+
+**`may-1958-crisis-in-france` names neither an actor nor a place, and it is
+filed under `algerian-war` all the same.** Its item gives no `P710` and no
+`P276`, `P131` or own `P625`; the only located thing it names is `Q69829`, the
+French Fourth Republic, whose point is Paris and which this atlas holds as
+neither a place nor an actor, so the record takes the `europe` lane from that
+point and stays placeless. It is filed under the Algerian War because its own
+cited article, at revision 1373489110, calls it *"a political crisis in France
+during the turmoil of the Algerian War"* and carries the category *"1958 in
+the Algerian War"* — the reading is the article's and not the item's, which
+states no `P361` at all, and the record's `review.note` says so. Without the
+filing it would have been the 243rd main event, which A6 forbids; with it, the
+one French record of an Africa batch sits where the source puts it.

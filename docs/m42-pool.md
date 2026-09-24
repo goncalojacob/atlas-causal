@@ -7791,3 +7791,261 @@ mid-pass head — A14(5)'s index commit, before the documents the Holocaust's
 division moved had been re-taken — which is what the ordering rule 798 exists
 to make visible rather than to hide. The re-run allowance is unspent: nothing
 was re-run.
+
+## Batch 48 — the Algerian War read as a chain, and the war whose parts cannot reach it
+
+*24 September, the fire that picked the run up at 08:18Z. Today already carries
+a `## Curation 2026-09-24` section and all six of A14's passes carry theirs, so
+this is an **import fire**. `origin/m0` was not an ancestor of `m42` at claim
+time and was merged in at the head of the run, which brought M42b's batches 19
+and 20 and M86 with it; that merge, and not this batch, is why the corpus in
+the table below starts at 873 and not at the 859 the last stand measured.*
+
+### The lane, and the vein asked of it
+
+A10's order of need is unchanged and **Africa is the lane that trails: 139
+against Europe's 375**, with Asia at 143 and the Americas at 216 after M42b's
+two batches landed. So this batch is Africa, and the inverse `part of` vein was
+run over the **132** Africa-lane active events that carry an item, against every
+record of any status on `m42`: 459 rows, **392 of them unheld**, over these
+parents —
+
+| parent | unheld rows |
+| --- | --- |
+| `mali-war` | 78 |
+| `algerian-war` | 41 |
+| `scramble-for-africa` | 39 |
+| `rhodesian-bush-war` | 29 |
+| `libyan-civil-war` | 22 |
+| `rif-war` | 22 |
+| `italo-turkish-war` | 20 |
+
+**The vein was not read as that ranking**, for the reason batches 45 to 47
+arrived at. `rhodesian-bush-war` tops it on rows the atlas could use and is
+exactly the wrong choice: it holds none of its 29 parts, it has **no edge at
+all**, and a chain built inside it would be a 30-node island. `algerian-war` is
+the opposite shape — it sits in the largest component with five edges, the
+atlas already holds one of its parts (`battle-of-algiers-1956-1957`), and its
+41 rows run from 1955 to 1962 in an order the articles themselves put them in.
+
+### The ten records
+
+Seven parts of the war, in date order, and then the three endpoints the chain
+runs into. All ten are filed under `algerian-war`, so **main stays at 242**,
+unmoved through nineteen batches, three curation fires and A14.
+
+| the record | dates | placed at | lane |
+| --- | --- | --- | --- |
+| `philippeville-massacre` | 20–25 Aug 1955 | `skikda` (new) | africa |
+| `first-battle-of-el-djorf` | 20–28 Sep 1955 | `tebessa` (new) | africa |
+| `palestro-ambush` | 18 May 1956 | `lakhdaria` (new) | africa |
+| `milk-bar-cafe-bombing` | 30 Sep 1956 | `algiers-q3561` | africa |
+| `bombing-of-sakiet-sidi-youssef` | 8 Feb 1958 | `sakiet-sidi-youssef` (new) | africa |
+| `may-1958-crisis-in-france` | 13 May – 3 Jun 1958 | *(none)* | europe |
+| `challe-plan` | Feb 1959 – Apr 1961 | `algeria-q262` | africa |
+| `algiers-putsch-of-1961` | 21 Apr 1961 | `french-algeria` | africa |
+| `evian-accords` | 18 Mar 1962 | `evian-les-bains` (new) | europe |
+| `battle-of-bab-el-oued` | 23 Mar – 6 Apr 1962 | `bab-el-oued` (new) | africa |
+
+Eight of the ten are Africa; the two that are not are the lane the chain
+crosses into, which is the one case A10 lets a batch leave its own lane for.
+All ten pass **span** — every one inside `algerian-war`'s 1 November 1954 to 9
+September 1962 at the day — and **depth**, which the query guarantees for the
+seven and which the articles supply for the three.
+
+**Six place records, five of them new, and not one hand-corrected.** The
+precisions came off the class table as they have since batch 46: `skikda`,
+`tebessa`, `lakhdaria`, `sakiet-sidi-youssef`, `bab-el-oued` and
+`evian-les-bains` are all `city`. Seven classes were added to
+`data/imports/wikidata-seeds.json` → `classes`, each read off the class item
+itself over the network: **`Q2989398` commune of Algeria**, **`Q2983893`
+quarter** and **`Q41067667` municipality of Tunisia** as `city` — a commune is
+Algeria's third-level division, a quarter is a subclass of human settlement, a
+Tunisian municipality a subclass of municipality, and Bab El Oued names the
+first two together, which agree; **`Q678146` bombardment**, **`Q680838`
+ambush** and **`Q2001676` offensive** as events of category `war`, each a
+subclass of the military-operation class `Q645883` the table already reads that
+way; and **`Q3002772` political crisis** as an event with **no category**,
+because none of the twelve of `data/categories.json` is a political crisis and
+a category is a person's to set when the table cannot. That is 237 classes.
+
+### The six edges
+
+Every one `probable`, every one quoted from an article at the revision in its
+own locator, and all six in `docs/m42-connections.md` under "Batch 48" as well.
+
+| from | type | to | where the article says it |
+| --- | --- | --- | --- |
+| `philippeville-massacre` | precondition-of | `battle-of-algiers-1956-1957` | Battle of Algiers § Background, rev 1374865618 |
+| `milk-bar-cafe-bombing` | precondition-of | `battle-of-algiers-1956-1957` | same article, lead, § First phase and § The Army takes over |
+| `may-1958-crisis-in-france` | precondition-of | `challe-plan` | Challe Plan § Background, rev 1370610721 |
+| `challe-plan` | precondition-of | `algiers-putsch-of-1961` | Challe Plan § Aftermath, same revision |
+| `challe-plan` | precondition-of | `evian-accords` | same section |
+| `evian-accords` | **reacted-to** | `battle-of-bab-el-oued` | Bab El Oued § Context, rev 1370432852; Évian Accords, rev 1372137587 |
+
+**The last one was written the other way round first and rule 4 refused it**
+(deviation 1416). "The battle answered the accords" reads naturally as
+`battle-of-bab-el-oued --reacted-to--> evian-accords`, and the battle is five
+days later than the accords, which the arrow-of-time rule will not have. The
+atlas's `reacted-to` already runs the other way everywhere it is used —
+`1964-brazilian-coup-detat --reacted-to--> operation-brother-sam-1964` says the
+American movement answered the Brazilian one — so the edge is the accords into
+the battle, and the explanation says in which direction it is to be read.
+
+### What the batch did to the graph, and why
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 873 | **883** |
+| **main** | **242** | **242** |
+| filed | 631 | 641 |
+| active edges | 844 | **850** |
+| largest connected component | **610** | **610** |
+| components | 197 | **201** |
+| events with no edge at all | 156 | 158 |
+| events with no place | 49 | 50 |
+| events naming no actor | 492 | 500 |
+| per lane, active | Europe 375, **Africa 139**, Asia 143, Americas 216 | Europe 377, **Africa 147**, Asia 143, Americas 216 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 | unchanged |
+
+**The largest component did not move, and this is the batch's real finding.**
+The chain made two components of its own — a five of
+`may-1958-crisis-in-france`, `challe-plan`, `algiers-putsch-of-1961`,
+`evian-accords` and `battle-of-bab-el-oued`, and a three of
+`philippeville-massacre`, `milk-bar-cafe-bombing` and
+`battle-of-algiers-1956-1957` — and neither reaches the 610.
+`battle-of-algiers-1956-1957`, the one part of the war the atlas already held,
+**was itself edgeless before this batch**, which the batch did not know when it
+chose the vein for running into a record already here. Choosing a vein for a
+held endpoint is not enough; the endpoint has to be a *connected* one, and
+`tools/m42-pool.mjs` does not report degree per record.
+
+**What separates those two components from the 610 is C8.** `algerian-war`
+itself is in the largest component, with five edges — into `suez-crisis` and
+`angola-war-begins-1961`, out of `first-indochina-war`, `geneva-conference` and
+`1952-egyptian-revolution`. Every record this batch wrote is one of its parts,
+and the only edge that would join them to it is a parent-to-child edge, which
+the standing instruction forbids until the owner decides C8. **Ninety-one such
+edges already exist and the fires may write no more**, so a war whose umbrella
+is well connected and whose parts are freshly imported now has both, in two
+pieces, and the picture says they are unrelated. This is the clearest case the
+run has yet produced for putting C8 to the owner.
+
+### Three refusals, and the redirect that cost a summary
+
+**`first-battle-of-el-djorf`, `palestro-ambush` and `bombing-of-sakiet-sidi-youssef`
+are singletons**, because their own cited articles name no other event this
+atlas holds. Sakiet's is a stub whose only other event is a cross-border raid
+of 11 January 1958; El Djorf's aftermath names Bachir Chihani's execution;
+Palestro's § Executions names the executions of Ahmed Zabana and Abdelkader
+Ferradj on 19 June 1956 and says "These executions constituted 'an answer' to
+the ambush" — and the Battle of Algiers article names the *same* executions as
+what made Abane Ramdane order the reprisals that opened the urban campaign.
+**Two articles, one intermediate, and the atlas does not hold it**: Wikidata has
+`Q2827683` for Zabana the man and no item for his execution, so the run would
+have had to join two quotations into an argument neither makes, which is the
+line A4 draws. The edge is refused and named here instead.
+
+**One edge was refused on the fire's own A14(4) class.** The Battle of Algiers
+§ Aftermath says the paras' standing, won in the battle, "would reach its
+zenith during the May 1958 crisis", and the May 1958 article names Massu and
+Salan — the battle's own commanders — at the head of the revolt. That would
+have joined this batch's two components into one. It is a statement of
+continuity and not of consequence, and joining the two clusters is precisely
+the reason a fire would want to write it, which is the reason not to.
+
+**`milk-bar-cafe-bombing` carries no `wikipedia-en` citation and keeps the
+import's placeholder summary** (deviation 1415). Its item's English sitelink,
+"Milk Bar Café bombing", is a **redirect** to the biography "Zohra Drif", and
+`fetchLeads` followed it and cached the lead under the target's title. The
+record's `review.note` says so. A fire that meets this should not quote the
+redirect's target as the record's own article: the lead on disk is about a
+person and the record is about a bombing, and the mismatch is only visible
+because the cache keeps the title it actually read.
+
+**`first-battle-of-el-djorf`'s article disagrees with itself** and the run
+changed nothing. Its first sentence says the battle "took place on 22 September
+1955"; its § Aftermath quotes Alcaraz 2016 for "du 20 au 28 septembre 1955",
+which is the span the item states and the record carries. A7 widens an interval
+from the cited article and never narrows one, so the item's span stands and the
+disagreement is in `review.note`.
+
+### A12 (4) got two rows, and §4.1 moved with them
+
+`Q137752577` and `Q1471139` each name **`Q142`, France**, as a participant, and
+this atlas holds it as `france`: written to `challe-plan` as `belligerent` and
+to `evian-accords` as `signatory`. The other parties their items name — the
+ALN and `Q3100531`, the Provisional Government of the Algerian Republic — are
+not records here, and neither is any of the four generals `Q2605231` names. So
+`noActor` rises by eight and not ten, and `docs/m53-polities.md` §4.1 is retaken
+at **382 of 883**.
+
+### The API was refusing when the fire started
+
+The first forty minutes of the fire met **HTTP 429** from
+`www.wikidata.org/w/api.php` and from `en.wikipedia.org/w/api.php` —
+`x-envoy-ratelimited: true`, `retry-after: 40` — while
+`query.wikidata.org/sparql` answered **200** throughout. So the vein was read
+through the query service and the import waited (deviation 1414); when the
+action API came back the four import runs went through without a single retry,
+in 48, 22, 6 and 6 calls. This is not batch 47's `maxlag`: the entity database
+was not lagging, the edge was rate-limiting the address. The protocol's answer
+holds either way — the fire is hourly and idempotent, so a refused import is a
+fire that did nothing, which is a success — and the fire that meets it should
+poll the cheapest endpoint rather than re-run the import.
+
+## Where the run stands after batch 48, for the fire that picks it up
+
+*24 September, 08:18Z onward. An import fire, one batch and no code change.
+`origin/m0` was merged in at the head of the run.*
+
+| | |
+| --- | --- |
+| corpus | **883 active** (873 after the merge, 859 before it) |
+| **main** | **242**, unmoved through nineteen batches, three curation fires and A14 |
+| filed | 641 |
+| active edges | **850** |
+| largest connected component | **610**, unmoved |
+| components | **201** |
+| events with no edge at all | **158**, of which 147 are filed under a parent, 19 are umbrellas and **one** (`rhodesian-bush-war`) is neither |
+| events with no place | **50** |
+| events naming no actor | 500 |
+| validator | **0 errors, 420 warnings** |
+| tests | **1,810 pure and 286 browser, all passing, 0 skipped** |
+| per lane, active | Europe 377, Americas 216, **Asia 143**, **Africa 147** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again**: Africa is at 147 and **Asia now
+trails at 143**, so the next import batch is Asia's unless a chain crosses out
+of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **Choose the next vein by the endpoint's degree and not only by whether the
+  endpoint is held.** This batch's whole finding is that
+  `battle-of-algiers-1956-1957` was held and edgeless, so ten records and six
+  edges left the largest component exactly where they found it. The Asia veins
+  the stand after A14 named are still open — `Q159950`'s remaining 60 unheld
+  rows (`Q920679` Shaho 17, `Q1358032` Sandepu 17, `Q702150` off Ulsan 15,
+  `Q4538445` the invasion of Sakhalin 14, `Q2619692` Te-li-Ssu 12), then
+  `Q8663` the Korean War and `Q170314` the Second Sino-Japanese War at 92 —
+  and the Russo-Japanese vein is the one whose endpoints batch 47 put *in* the
+  610, so it is also the one that will move it.
+- **C8 is now the run's largest single question.** 91 parent-to-child edges
+  exist, the fires may write no more, and this batch shows what that costs: a
+  war in the largest component and ten of its parts in two islands beside it.
+  The Africa lane is mostly umbrella-and-parts in this shape, so every further
+  Africa batch will do the same thing until C8 is answered.
+- **The five other questions of the A14 stand are unchanged** and unanswered:
+  which record a lane guard clears, whether the cache may hold more than one
+  revision, whether a certain reconciliation may write `wikidata`, whether a
+  § Background mention is ever a `precondition-of` (this batch wrote two that
+  are, and refused one that is not), and whether `parent` satisfies §1's bar.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`. A filing fire can do both and neither
+  costs a main event.
+- **Deviation numbers: take the next above 1419.** This fire wrote **1414 to
+  1419**.

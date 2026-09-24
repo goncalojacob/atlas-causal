@@ -20270,6 +20270,45 @@ and A13's relations pass, still never run.
       — but a fire on `m42` that reads this should take the next free number
       **above 1400** rather than the next after `STATUS.md`'s last, and say so.
 
+## M42 batch 48 — the Algerian War read as a chain, 24 September
+
+The 08:18Z fire of 24 September was an **import fire**: today already carried a
+curation section and all six of A14's passes carried theirs. It merged
+`origin/m0` at the head of the run and then took one batch from the lane that
+trails, Africa at 139 against Europe's 375.
+
+**Ten events, six places and six edges, all from the Algerian War.** Seven are
+parts of the war in date order, from the Philippeville massacre of August 1955
+to the battle of Bab El Oued of April 1962; three are the endpoints the chain
+runs into — the May 1958 crisis, the Algiers putsch of 1961 and the Évian
+Accords. All ten are filed under `algerian-war`, so **main stays at 242**.
+Africa goes from 139 to 147 and Asia now trails at 143. Seven classes were
+added to `data/imports/wikidata-seeds.json`, each read off the class item
+itself; not one of the six place records was hand-corrected.
+
+**The largest connected component did not move, and that is the batch's
+finding.** `algerian-war` is in the 610 with five edges, and the one part of it
+the atlas already held — `battle-of-algiers-1956-1957` — was itself edgeless,
+so the batch made a five-node component and a three-node one beside the 610
+rather than joining it. The only edge that would join them is a parent-to-child
+edge, which **C8** forbids until the owner decides. Deviations 1418 and 1419.
+
+Three of the ten are singletons and say so: the articles for El Djorf, Palestro
+and Sakiet Sidi Youssef name no other event this atlas holds, and the one
+intermediate that would have joined Palestro to the Battle of Algiers — the
+executions of 19 June 1956 — has no Wikidata item to import. One further edge
+was refused on the fire's own A14(4) class, although it would have joined the
+batch's two components: the Battle of Algiers article says the paras' standing
+"would reach its zenith during the May 1958 crisis", which is continuity and
+not consequence.
+
+`docs/m53-polities.md` §4.1 is retaken at **382 of 883**: `Q142`, France, is
+the one `P710` participant of this batch the atlas holds, written to
+`challe-plan` as `belligerent` and to `evian-accords` as `signatory`.
+
+The validator is clean, the index is byte-identical to a fresh build, and the
+tests are **1,810 pure and 286 browser, all passing, 0 skipped**.
+
 ## M42 — A14's six data passes, 24 September
 
 The second review (`docs/review-2026-09-24.md`, part C) measured the corpus
@@ -20360,6 +20399,56 @@ Tests: 1,792 pure and 279 browser, all passing.
       drawn on the map; the property it asserts is about marks, and a tombstone
       has none. The test was narrowed before the records that made it fail were
       pushed.
+1414. **The rate limit and the lag are two different refusals and the fire
+      should tell them apart.** Batch 47 waited forty minutes on `maxlag`,
+      where the API answered HTTP 200 with `error.code: maxlag`. This fire
+      waited on HTTP **429** with `x-envoy-ratelimited: true` and
+      `retry-after: 40` from both `www.wikidata.org/w/api.php` and
+      `en.wikipedia.org/w/api.php`, while `query.wikidata.org/sparql` answered
+      200 the whole time. So the reconnaissance — the inverse `part of` vein
+      over the lane — was read through the query service and only the import
+      waited. A fire that meets a 429 should poll the cheapest request it has
+      rather than re-run `--import` into the wall.
+1415. **An item's English sitelink can be a redirect, and the lead cache is the
+      only place that shows it.** `Q76832368`'s `enwiki` title is "Milk Bar
+      Café bombing", which redirects to the biography "Zohra Drif";
+      `fetchLeads()` followed it and cached a lead about a person under that
+      title. The record keeps the import's placeholder summary and carries no
+      `wikipedia-en` citation, with a `review.note` saying why. Quoting a
+      redirect's target as the record's own article would have put a
+      paragraph about a lawyer's childhood on an event record, and nothing
+      but the cached `title` field distinguishes the two.
+1416. **`reacted-to` runs forwards in time, so "B answered A" is written
+      `A --reacted-to--> B`.** Rule 4 refused
+      `battle-of-bab-el-oued --reacted-to--> evian-accords` because the battle
+      is five days later than the accords. Every `reacted-to` in the corpus
+      already reads this way — `1964-brazilian-coup-detat --reacted-to-->
+      operation-brother-sam-1964` says the American movement answered the
+      Brazilian one — and the type's own label, "reacted to", reads the
+      opposite way round in the card. The edge's explanation now says in which
+      direction it is to be read, as the Brazilian one does.
+1417. **`docs/m42-pool.md` is not one of the files `tests/m67.test.mjs` reads,
+      so an M42 filing argued only there fails.** `ARGUED_IN` is
+      `docs/m67-umbrellas.md`, `docs/m42-connections.md` and
+      `docs/m42b-pool.md`. `may-1958-crisis-in-france` names neither an actor
+      nor a place — its item gives no `P710`, no `P276`, no `P131` and no own
+      `P625` — so its filing under `algerian-war` had to be argued in
+      `docs/m42-connections.md`, which is where M42's filings belong.
+1418. **Choosing a vein for an endpoint the atlas already holds is not enough;
+      the endpoint has to be connected.** `algerian-war` sits in the largest
+      component with five edges and the atlas held one of its parts,
+      `battle-of-algiers-1956-1957`, which is why the vein was chosen. That
+      part was itself **edgeless**, so ten records and six edges made two new
+      components and left the largest at 610. `tools/m42-pool.mjs` reports the
+      component sizes and not the degree of a named record, which is the
+      number a vein choice actually needs.
+1419. **C8 is what keeps a well-connected war apart from its own parts.** Every
+      record of this batch is a part of `algerian-war`, and the only edge that
+      would join the two new components to the 610 is a parent-to-child edge,
+      which the standing instruction forbids until the owner decides. The
+      Africa lane is mostly umbrella-and-parts in this shape, so every further
+      Africa batch will produce the same picture: a war the reader can reach
+      and its battles in islands beside it.
 
 ## M84 — the owner's feedback document
 
