@@ -7783,3 +7783,11 @@ which case it is the curation fire and A13's relations pass.
   **1408 to 1413** and deviation 1407's proposal — `m42` from 1400 upward,
   `m42b` continuing the shared sequence — held for a full day without a
   collision.
+
+**The check is green on this fire's head.** Run 1665 of `validate.yml`, commit
+`e650686d`, conclusion `success`. The two runs before it were cancelled by the
+next push in the same concurrency group and one earlier run, 1661, was red on a
+mid-pass head — A14(5)'s index commit, before the documents the Holocaust's
+division moved had been re-taken — which is what the ordering rule 798 exists
+to make visible rather than to hide. The re-run allowance is unspent: nothing
+was re-run.
