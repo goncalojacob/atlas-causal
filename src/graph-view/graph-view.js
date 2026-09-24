@@ -1091,13 +1091,17 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
           role: 'button',
           'aria-label': title,
         }, [svgTitle(title)]));
-        // "46 more" and not "+46", in the title's own words (M85, A4).
-        nodesGroup.appendChild(textNode(stackBadge(stack.count), {
-          x: stack.x + (radius + 2) / k,
-          y: stack.y - (radius + 1) / k,
-          class: 'cluster-count',
-          'font-size': BADGE_SIZE / k,
-        }));
+        // "46 more" and not "+46", in the title's own words (M85, A4), and
+        // nothing at all for a stack of two (M86 §2).
+        const badge = stackBadge(stack.count);
+        if (badge) {
+          nodesGroup.appendChild(textNode(badge, {
+            x: stack.x + (radius + 2) / k,
+            y: stack.y - (radius + 1) / k,
+            class: 'cluster-count',
+            'font-size': BADGE_SIZE / k,
+          }));
+        }
         continue;
       }
       const isSelected = node.id === s.selected;

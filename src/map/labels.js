@@ -50,6 +50,22 @@ export const LABEL_CHARS = 30;
 // briefing pede.
 export const LABEL_ZOOM = 4;
 
+// **Menos os acontecimentos, que são escritos sempre** (M86 §2, achado A2 da
+// segunda revisão). O piso acima é sobre o mapa *de base*: as dezassete
+// cidades que Natural Earth marca para a escala do mundo são dezassete nomes
+// de outro atlas por cima do primeiro fotograma, e isso não mudou. O que
+// mudou foi o que ficava por baixo delas: `m85-first-screen.png` é o mundo
+// inteiro em sessenta círculos numerados e nem um nome, e é a primeira imagem
+// que um financiador vê. Um acontecimento é o que este atlas é — prioridade
+// zero, a hierarquia dita em três números logo abaixo — por isso tem um piso
+// só seu, que é o zoom mais afastado que há.
+export const EVENT_LABEL_ZOOM = 1;
+
+// E quantos, ao longe. Dez, que é o que cabe num mundo sem se tornar a mancha
+// que `LABEL_ZOOM` existe para evitar; quais são os dez é a ordem que o
+// colocador já tem — peso a descer — e não uma segunda regra aqui.
+export const RESTING_EVENT_LABELS = 10;
+
 // As prioridades, que são a hierarquia do mapa dita em três números: um
 // acontecimento é o que este atlas é, uma cidade é onde ele aconteceu, e uma
 // serra é o chão por baixo dos dois (decisão 9 do plano). Um pico, um rio e um
