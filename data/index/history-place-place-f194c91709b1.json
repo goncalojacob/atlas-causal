@@ -26,6 +26,15 @@
         }
       ]
     },
+    "agnadello": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "ajdabiya": {
       "from": "git",
       "versions": [
@@ -252,6 +261,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "asola": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1062,6 +1080,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "costabissara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -3702,6 +3729,15 @@
         }
       ]
     },
+    "novara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "nyasaland": {
       "from": "git",
       "versions": [
@@ -3831,6 +3867,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "padua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4128,6 +4173,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "polesella": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4438,6 +4492,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "ravenna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

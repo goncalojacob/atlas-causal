@@ -1808,6 +1808,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agnadello--siege-of-padua--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Agnadello\", revision 1370431087, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-agnadello--siege-of-padua--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ajdabiya--first-gulf-of-sidra-offensive--precondition-of",
       "kind": "edge",
       "locator": "\"First Gulf of Sidra offensive\", revision 1374515970"
@@ -1928,6 +1940,30 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of La Motta (1513)\", revision 1370446782, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-novara-1513--battle-of-marignano--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Marignano\", revision 1370449034, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-novara-1513--battle-of-marignano--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba--fall-of-tenochtitlan--enabled",
       "kind": "edge",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -1958,6 +1994,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-polesella--battle-of-ravenna-1512--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Ravenna (1512)\", revision 1370587274, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-polesella--battle-of-ravenna-1512--enabled",
+      "kind": "edge",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857, § Decline of the League of Cambrai"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
@@ -1979,6 +2027,18 @@
       "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ras Lanuf\", revision 1372942414, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ravenna (1512)\", revision 1370587274"
     },
     {
       "dissent": false,
@@ -4718,6 +4778,30 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-padua--battle-of-polesella--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Polesella\", revision 1370586353"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua--battle-of-polesella--precondition-of",
+      "kind": "edge",
+      "locator": "\"War of the League of Cambrai\", revision 1375133857, § War of the League of Cambrai"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua--siege-of-asola-1516--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Asola (1516)\", revision 1370739014, § History"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua--siege-of-asola-1516--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-port-arthur--battle-of-mukden--enabled",
       "kind": "edge",
       "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
@@ -7418,6 +7502,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agnadello",
+      "kind": "event",
+      "locator": "\"Battle of Agnadello\", revision 1370431087"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ajdabiya",
       "kind": "event",
       "locator": "\"Battle of Ajdabiya\", revision 1374514977"
@@ -7634,6 +7724,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-motta-1513",
+      "kind": "event",
+      "locator": "\"Battle of La Motta (1513)\", revision 1370446782"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "\"Battle of La Plata (1957)\", revision 1370446805"
@@ -7742,6 +7838,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-novara-1513",
+      "kind": "event",
+      "locator": "\"Battle of Novara (1513)\", revision 1370270949"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "\"Battle of Otumba\", revision 1370271351"
@@ -7763,6 +7865,12 @@
       "id": "battle-of-pillpinto",
       "kind": "event",
       "locator": "\"Battle of Pillpinto\", revision 1370586073"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-polesella",
+      "kind": "event",
+      "locator": "\"Battle of Polesella\", revision 1370586353"
     },
     {
       "dissent": false,
@@ -7799,6 +7907,12 @@
       "id": "battle-of-ras-lanuf",
       "kind": "event",
       "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ravenna-1512",
+      "kind": "event",
+      "locator": "\"Battle of Ravenna (1512)\", revision 1370587274"
     },
     {
       "dissent": false,
@@ -10100,6 +10214,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-asola-1516",
+      "kind": "event",
+      "locator": "\"Siege of Asola (1516)\", revision 1370739014"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "\"Siege of Cusco\", revision 1370740508"
@@ -10133,6 +10253,12 @@
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "\"Siege of Mitú\", revision 1370743579"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua",
+      "kind": "event",
+      "locator": "\"Siege of Padua\", revision 1370744265"
     },
     {
       "dissent": false,

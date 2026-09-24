@@ -2450,6 +2450,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agnadello",
+      "kind": "event",
+      "locator": "Q1754732"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ajdabiya",
       "kind": "event",
       "locator": "Q506595"
@@ -2672,6 +2678,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-la-motta-1513",
+      "kind": "event",
+      "locator": "Q1464620"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "Q118445706"
@@ -2780,6 +2792,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-novara-1513",
+      "kind": "event",
+      "locator": "Q661940"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "Q2888038"
@@ -2801,6 +2819,12 @@
       "id": "battle-of-pillpinto",
       "kind": "event",
       "locator": "Q137360138"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-polesella",
+      "kind": "event",
+      "locator": "Q3636579"
     },
     {
       "dissent": false,
@@ -2837,6 +2861,12 @@
       "id": "battle-of-ras-lanuf",
       "kind": "event",
       "locator": "Q1089511"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ravenna-1512",
+      "kind": "event",
+      "locator": "Q1137980"
     },
     {
       "dissent": false,
@@ -5030,6 +5060,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-asola-1516",
+      "kind": "event",
+      "locator": "Q48807593"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "Q2398589"
@@ -5063,6 +5099,12 @@
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "Q3403831"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua",
+      "kind": "event",
+      "locator": "Q2284174"
     },
     {
       "dissent": false,

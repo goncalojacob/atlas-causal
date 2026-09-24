@@ -65,6 +65,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "agnadello",
+      "kind": "place",
+      "names": [
+        "Agnadello"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -569,6 +597,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "asola",
+      "kind": "place",
+      "names": [
+        "Asola"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,
@@ -2319,6 +2375,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "costabissara",
+      "kind": "place",
+      "names": [
+        "Costabissara"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,
@@ -7764,6 +7848,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "novara",
+      "kind": "place",
+      "names": [
+        "Novara"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "nyasaland",
@@ -8043,6 +8155,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "padua",
+      "kind": "place",
+      "names": [
+        "Padua"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,
@@ -8656,6 +8796,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "polesella",
+      "kind": "place",
+      "names": [
+        "Polesella"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,
@@ -9334,6 +9502,34 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "ravenna",
+      "kind": "place",
+      "names": [
+        "Ravenna"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
         "status": "draft"
       },
       "revised": null,

@@ -5439,6 +5439,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-agnadello",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Agnadello"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-ajdabiya",
@@ -6667,6 +6700,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-la-motta-1513",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The article's own lead says Schio and its narrative puts the battle \"in the plains of Vicenza near Motta de Costabissara\", which is the locality the item's P276 names and within two kilometres of the item's own point; the record takes that and says so rather than choosing silently.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of La Motta (1513)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6940,6 +7006,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "battle-of-marignano",
       "kind": "event",
       "origin": {
@@ -7271,6 +7338,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "battle-of-novara-1513",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Novara (1513)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-otumba",
@@ -7393,6 +7493,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Pillpinto"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-polesella",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Polesella"
     },
     {
       "authors": [
@@ -7583,6 +7716,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ras Lanuf"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "battle-of-ravenna-1512",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ravenna (1512)"
     },
     {
       "authors": [
@@ -22795,6 +22961,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "siege-of-asola-1516",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Asola (1516)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "id": "siege-of-cusco",
       "kind": "event",
@@ -22986,6 +23185,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Siege of Mitú"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "siege-of-padua",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cambrai",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Padua"
     },
     {
       "authors": [
@@ -28886,12 +29118,6 @@
     },
     {
       "id": "battle-of-lutzen-1632",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-marignano",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
