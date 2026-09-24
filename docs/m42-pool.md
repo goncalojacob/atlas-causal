@@ -7239,3 +7239,64 @@ verbatim and still findable in the article; a truncated one would not be.
 **`2011-bahraini-uprising` is closed here and not in A14(6)**, which asks for
 the same record under the same rule. Its section says so, and the record's own
 note says it takes no `end-unstated` flag.
+
+## A14 (2) — the lane guard over the 566 places A9 wrote before it
+
+*24 September, the 04:58Z fire. No import, no network: the guard is
+`deriveRegion` over the place records already on disk.*
+
+Deviation 1402 added a guard to A9 on 24 September — *the pass refuses a link
+whose point falls in a different lane from the record's own* — after `P17`
+offered Madrid for the Mexican War of Independence. It was added after 410
+places had been written on 22 September and never run over them. This pass
+runs it over all of them: **566 `a9-place` events carry a place; 6 fail; 6
+places cleared, every `region` kept.** They are the six the review named, and
+no seventh.
+
+| event | its lane | the place it had | the place's lane |
+| --- | --- | --- | --- |
+| `great-depression` | americas | `afghanistan-q889` | asia |
+| `1948-arab-israeli-war` | asia | `sinai-peninsula` | africa |
+| `yom-kippur-war` | africa | `near-east` | asia |
+| `japanese-instrument-of-surrender` | asia | `uss-missouri` | americas |
+| `execution-of-the-romanov-family` | asia | `ipatiev-house` | europe |
+| `ilinden-preobrazhenie-uprising` | asia | `monastir-vilayet` | europe |
+
+**Counts.** 566 scanned, 6 cleared, 0 errors; warnings go from 492 to **496**,
+the four new ones being `place-unused` on `ipatiev-house`,
+`monastir-vilayet`, `near-east` and `uss-missouri`, which no event cites now.
+Each of the six keeps its lane, takes the flag `a14-lane-guard` in place of
+`a9-place`, and says in `review.note` what it had and why it went. Corpus
+unchanged: **858 active, 242 main, 616 filed, 843 edges, largest component
+609**. The scan is now clean: re-run, it reports nothing.
+
+**Four of the six are what the guard is for.** The Great Depression was drawn
+in Kabul, the first of the nine countries `Q8698` names under `P17`. The
+Japanese Instrument of Surrender was drawn at the `uss-missouri`'s berth in
+Pearl Harbor, in the Americas lane, for a signing in Tokyo Bay — the same
+defect one step further on, because a ship's `P625` is where the ship is now.
+The 1948 war sat on the Sinai, which is one front and not the war; the Yom
+Kippur War sat on the `near-east`, which is the other front and not the war
+either.
+
+**Deviation 1409.** *Two of the six failed on the lane polygon, not on the
+place, and the guard cannot tell the difference.* `ipatiev-house` is exactly
+where the Romanovs were shot, and Yekaterinburg is east of the Urals, so the
+disagreement is between `data/geo/regions.json`'s Europe–Asia boundary and the
+lane the event's own point was given at import — not between the record and
+the world. `monastir-vilayet` is exactly where the Ilinden uprising was, and
+there the record's **own** lane is the wrong half: `asia`, from the Ottoman
+point the import read, against an uprising in Macedonia. The guard is
+mechanical and was run as A14(2) writes it, so both places are cleared and
+both lanes kept — which in the Ilinden case leaves a Macedonian uprising in
+the Asia lane with no place at all, a worse picture than the one it replaced.
+**The narrow question for the owner is one line: where the guard fires, which
+of the two does it clear — the place, always, or the one that disagrees with
+the record's title?** A fire cannot decide that without a rule; what it can do
+is not hide it, which is this paragraph.
+
+**What this does not touch.** The 21 country-placed events whose place appears
+nowhere in their title or summary (review finding 1) pass the guard, because
+their place is in the right lane; `world-war-ii` at `russia` is the example
+the review gives. That is the owner's question — *may a multi-valued `P17`
+place an event at all* — and not this pass's.
