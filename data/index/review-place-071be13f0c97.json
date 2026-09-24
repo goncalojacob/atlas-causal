@@ -3772,6 +3772,35 @@
       ],
       "created": "2026-09-24",
       "degree": 1,
+      "id": "duman-ri",
+      "kind": "place",
+      "names": [
+        "Duman-ri",
+        "Tuman"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q5073209, the Chaplain–Medic massacre, read on 2026-09-24; the village itself has no item this pass could reach. The article gives the same coordinate and names the place \"Tuman (current Duman-ri, Geumnam-myeon, Sejong City)\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
       "id": "dunajovice",
       "kind": "place",
       "names": [
@@ -4716,7 +4745,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "gapyeong-county",
       "kind": "place",
       "names": [
@@ -5589,6 +5618,34 @@
           "a9-place"
         ],
         "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "imjin-river",
+      "kind": "place",
+      "names": [
+        "Imjin River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q495534 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-the-imjin-river's place by A9's second step: the event's own P625 is 28 km up the same river from the river item's point, which is the length of the thing and not a disagreement — the article's own location field is \"Imjin River, Korea\".",
         "status": "draft"
       },
       "revised": null,
@@ -6793,7 +6850,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "korea-strait",
       "kind": "place",
       "names": [
@@ -6824,7 +6881,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "korean-peninsula",
       "kind": "place",
       "names": [
@@ -9075,6 +9132,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "nam-river",
+      "kind": "place",
+      "names": [
+        "Nam River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q485254 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-nam-river's place by A9's second step and not its first: Q2890901 carries two P625 values, 5 km and 17 km downstream of the river item's point, and A9's first step says nothing about which of two coordinates to take (deviation 1434's question, in a second shape). The article's own location field is \"Nam River, South Korea\".",
         "status": "draft"
       },
       "revised": null,
@@ -13476,6 +13561,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "south-korea-q884",
+      "kind": "place",
+      "names": [
+        "South Korea",
+        "Republic of Korea"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written by the Wikidata import from Q884 for batch 53. `country` off the item's own class, country (Q6256), which M80's fourth precision is for. It is operation-pokpung's place by A9's second step: the item Q4260079 carries no P625 of its own and its P276 is Q884. The article's own location field is the 38th parallel, which is a line and not a thing this atlas holds a record for; the country is the located thing Wikidata names.",
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

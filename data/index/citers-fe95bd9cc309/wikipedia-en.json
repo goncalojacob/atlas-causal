@@ -2108,6 +2108,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kapyong--battle-of-the-imjin-river--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Kapyong\", revision 1376150205, § Chinese spring offensive"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-karameh--black-september--caused",
       "kind": "edge",
       "locator": "\"Battle of Karameh\", revision 1374545421, \"Aftermath\""
@@ -2261,6 +2267,12 @@
       "id": "battle-of-osan--battle-of-taejon--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Osan\", revision 1375327001, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-osan--chaplain-medic-massacre--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chaplain–Medic massacre\", revision 1363525691, lead and § Delaying action"
     },
     {
       "dissent": false,
@@ -4577,6 +4589,24 @@
       "id": "operation-odyssey-dawn--operation-unified-protector--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Unified Protector\", revision 1370700566"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pokpung--battle-of-korea-strait--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Korea Strait\", revision 1376104466, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pokpung--battle-of-the-pusan-perimeter--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Pokpung\", revision 1373958261, lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pokpung--first-battle-of-seoul--caused",
+      "kind": "edge",
+      "locator": "\"Operation Pokpung\", revision 1373958261, lead"
     },
     {
       "dissent": false,
@@ -8630,6 +8660,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kapyong",
+      "kind": "event",
+      "locator": "\"Battle of Kapyong\", revision 1376150205"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "\"Battle of Karameh\", revision 1374545421"
@@ -8651,6 +8687,12 @@
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "\"Battle of Konna\", revision 1375363074"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-korea-strait",
+      "kind": "event",
+      "locator": "\"Battle of Korea Strait\", revision 1376104466"
     },
     {
       "dissent": false,
@@ -8789,6 +8831,12 @@
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh Resistance\", revision 1370628972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nam-river",
+      "kind": "event",
+      "locator": "\"Battle of Nam River\", revision 1376271535"
     },
     {
       "dissent": false,
@@ -9101,6 +9149,12 @@
       "id": "battle-of-the-downs",
       "kind": "event",
       "locator": "\"Battle of the Downs\", revision 1370599272"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-imjin-river",
+      "kind": "event",
+      "locator": "\"Battle of the Imjin River\", revision 1376480748"
     },
     {
       "dissent": false,
@@ -9476,6 +9530,12 @@
     },
     {
       "dissent": false,
+      "id": "chaplain-medic-massacre",
+      "kind": "event",
+      "locator": "\"Chaplain–Medic massacre\", revision 1363525691"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
@@ -9497,6 +9557,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-spring-offensive",
+      "kind": "event",
+      "locator": "\"Chinese spring offensive\", revision 1376272952"
     },
     {
       "dissent": false,
@@ -11075,6 +11141,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "\"Operation Paraquet\", revision 1370694202"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pokpung",
+      "kind": "event",
+      "locator": "\"Operation Pokpung\", revision 1373958261"
     },
     {
       "dissent": false,

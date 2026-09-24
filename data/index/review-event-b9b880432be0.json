@@ -7541,6 +7541,45 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-kapyong",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "chinese-spring-offensive",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Dates widened under A7 from the article's own infobox, \"22–27 April 1951\", against the item's P582 of 25 April 1951. Filed under chinese-spring-offensive, which the article's own infobox names — \"part of the Chinese Spring Offensive in the Korean War\". Place is the atlas's gapyeong-county (Q50203), the item's P276, whose point is 5 km from the item's own P625; A9's two steps agree at county scale.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Kapyong"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -7678,6 +7717,45 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Konna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-korea-strait",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Dates widened under A7 from the article's own infobox and first sentence, \"25–26 June 1950\", against the item's single P585 of 26 June 1950. Place is the atlas's korea-strait (Q52052) and not a new record at the item's own P625: that P625 is 35.179N 129.076E, the water off Busan, and the article's own location field reads \"off the coast of Busan, in the Korea Strait\" — the strait is the thing the article names and the atlas already holds it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Korea Strait"
     },
     {
       "authors": [
@@ -8450,6 +8528,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "battle-of-nam-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "parent"
+        ],
+        "note": "Filed under korean-war and not under the umbrella its own article names. The article's infobox reads \"part of the Battle of Pusan Perimeter\", but that record runs 4 August – 18 September 1950 and this battle runs to 19 September, so M62's span test refuses the nearer umbrella by one day. A later fire that widens the perimeter's interval under A7 from the perimeter's own article should re-file this record under it.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of Nam River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -8653,7 +8769,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-osan",
       "kind": "event",
       "origin": {
@@ -10152,6 +10268,44 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-the-imjin-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "chinese-spring-offensive",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under chinese-spring-offensive, which the article's own infobox names — \"part of the Chinese Spring Offensive in the Korean War\" — and whose span, 22 April – 22 May 1951, holds this one; the item's own P361 names only the Korean War, which is reached through the offensive. Place by A9's second step (P276 Q495534).",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Battle of the Imjin River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10196,7 +10350,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-the-pusan-perimeter",
       "kind": "event",
       "origin": {
@@ -12420,6 +12574,43 @@
         }
       ],
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "chaplain-medic-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Title from the article (A12 (5)): the item's label is \"Tunam massacre\" and the English article it sitelinks is \"Chaplain–Medic massacre\". No category: the item's class is Q135010, war crime, and data/categories.json has no kind for an atrocity, as Q3199915 massacre already has none. Place by A9's first step, the item's own P625, which the article gives to the same digits.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Chaplain–Medic massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "costa-pinto-2003-contemporary-portugal",
         "wikipedia-en",
         "wikipedia-pt",
@@ -12548,6 +12739,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Chinese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "chinese-spring-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Dates from the article’s own infobox, 22 April – 22 May 1951, against the item’s P582 of 10 June 1951; the article is the cited source and A7 is the licence to read it. Title from the article (A12 (5)), which does not capitalise “spring offensive” as the item’s label does. Place is the atlas’s korean-peninsula and not a record at the item’s own P625: that P625 is Q16170016’s to six digits, one action on a front the article calls “near the 38th Parallel, Korea”.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Chinese spring offensive"
     },
     {
       "authors": [
@@ -15768,7 +15997,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "first-battle-of-seoul",
       "kind": "event",
       "origin": {
@@ -22766,6 +22995,45 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Paraquet"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "operation-pokpung",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Dates from the article's own infobox, 25–30 June 1950, which is the item's P580–P582 to the day. Title from the article (A12 (5)): the item's label is \"Operation Pokpoong\" and the English article it sitelinks is \"Operation Pokpung\". Place by A9's second step (P276 Q884): the item carries no P625 of its own.",
+        "status": "draft"
+      },
+      "revised": "2026-09-24",
+      "status": "active",
+      "title": "Operation Pokpung"
     },
     {
       "authors": [
@@ -33479,6 +33747,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-nam-river",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-nordlingen-1645",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -33678,6 +33952,12 @@
     },
     {
       "id": "chilean-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chinese-spring-offensive",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
