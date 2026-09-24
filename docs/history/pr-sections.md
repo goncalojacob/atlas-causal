@@ -4151,3 +4151,63 @@ time as the check runs them.
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. `docs/drafts/` ignored. Deviations **1192 to
 1202**.
+
+## M86 — what a funder meets first
+
+Lane A, on the branch `m86`, over the second Fable review
+(`docs/review-2026-09-24.md`): part A's findings 1, 2, 4, 6, 7, 8, 9, 10 and
+11 and part B's 1, 2 and 3 — the reader and display half of what it found,
+which is what a funder meets in the first minute. All nine sections are done
+and none was refused.
+
+### What a card says now
+
+Two thirds of the active events carry a `summary` that quotes the article's
+lead and then says, **in the record**, that nobody has read it and that
+`review.html` is where somebody does. `src/demo.js` takes that message out of
+the chrome and cannot reach a record, so the sentence M82 removed from the
+masthead was back in the first paragraph of most cards, pointing a funder at
+the maintainer's page.
+
+`src/summary.js` is pure and splits an imported summary into the source's own
+words, the credit — the article and the revision it was read at, or the
+Wikidata item — and the importer's note about the record's standing, by the
+importer's own markers and never by length. A card renders the lead alone with
+*"From Wikipedia, revision N →"* under it, linking the permalink; the
+provenance is there, whole, under `?review=1`. Nothing in any record changed.
+
+### What the resting pictures are labelled with
+
+The map wrote no name until the fourth zoom, so the first screen was the whole
+world in sixty numbered circles. `LABEL_ZOOM` is kept for the base map and the
+events have a floor of their own at the furthest zoom there is, capped at ten
+by the placer's existing order; a stack of two carries no badge, because its
+ring already says "more than one here". The timeline's axis stops at the last
+year the data has, and a title that would run off the right edge is written on
+the other side of its own bar — with the packing reserving the room on the
+side the title is going to be written on, which is a change the brief did not
+ask for and the first screenshot did.
+
+### The graph
+
+A drag applied the transform and drew nothing, so a reader who zoomed and
+panned saw empty ground until the next notch: one render is booked per
+animation frame while the pointer is down and one at the release. A resize
+re-fitted the camera the reader had wheeled into place — PR #24's ring-ratio
+flake — and now slides it instead, keeping the old rectangle's centre centred;
+`movedOn` records which layout a gesture was made on, so a genuinely new
+arrangement is still framed. The degree floor is off by rule inside a lens and
+every selection is one, so the control is disabled, with a title saying why,
+from the first click until the reader clicks the ground.
+
+### Checks
+
+`node tools/validate.mjs --index`: **12,117 records, 5 regions, 0 errors, 493
+warnings**, and no record written — `data/index/` came back byte-identical
+after §5's prerendered page was rebuilt. `node --test`: **1,810 pure and 286
+browser, 2,096 in all, 0 failed and 0 skipped**, the browser suites one at a
+time as the check runs them.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size; `emphasis.js`'s `shown` contract is unchanged.
+`docs/drafts/` ignored. Deviations **1203 to 1213**.

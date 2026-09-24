@@ -1576,7 +1576,14 @@ const LABELS = `
   }
   return out;`;
 
-test('at the whole world the map writes no name at all', { skip }, async () => {
+// **The base map's names and not the events'** (M86 §2). This read "no name
+// at all" until 24 September, and that was the first screen the second Fable
+// review found: sixty numbered circles over the whole world and not one word.
+// `LABEL_ZOOM` is still what it was for the layers it was written for — the
+// seventeen cities Natural Earth ranks for the world view are seventeen names
+// of another atlas over this one's first frame — and the events, which are
+// what this atlas is, have a floor of their own (labels.js).
+test('at the whole world the map writes no base-map name', { skip }, async () => {
   await wide(async (page, url) => {
     await open(page, url(`?layers=${BASE_ON}`), READY);
     // Wait for the far files, so this is "the cities are here and unlabelled"
@@ -1586,7 +1593,8 @@ test('at the whole world the map writes no name at all', { skip }, async () => {
     const k = await page.eval(K_NOW);
     assert.ok(k < 2, `the world view (k = ${k})`);
     const labels = await page.eval(LABELS);
-    assert.deepEqual(labels, [], `no name at the world: ${labels.map((l) => l.text).join(' · ')}`);
+    const base = labels.filter((l) => l.cls !== 'mark-label');
+    assert.deepEqual(base, [], `a base-map name at the world: ${base.map((l) => l.text).join(' · ')}`);
     // Natural Earth would write seventeen of them here — it ranks Tokyo and
     // New York for the world view — and this map writes none until k = 4.
     const cities = await page.eval('return document.querySelectorAll("#map .layer-base-cities circle").length;');

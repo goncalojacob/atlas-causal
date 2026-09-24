@@ -26,6 +26,26 @@ export function articleUrl(lang, title) {
   return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(name.replace(/ /g, '_'))}`;
 }
 
+// And the one revision a record was read at, which is the credit a card owes
+// a quoted lead (M86 §1). A permalink and not the article: the article moves
+// under the quotation, and the revision the summary names is the text the
+// atlas actually copied.
+export function revisionUrl(lang, revision) {
+  if (!WIKIPEDIA_LANG.test(String(lang ?? ''))) return null;
+  const at = String(revision ?? '').trim();
+  if (!/^\d+$/.test(at)) return null;
+  return `https://${lang}.wikipedia.org/w/index.php?oldid=${at}`;
+}
+
+// The item on Wikidata, for the same reason: the records the import created
+// out of an item alone quote that item's own description, and a quotation
+// with no way back to what was quoted is an assertion.
+export function itemUrl(qid) {
+  const id = String(qid ?? '').trim();
+  if (!/^Q\d+$/.test(id)) return null;
+  return `https://www.wikidata.org/wiki/${id}`;
+}
+
 // "pt-BR" and "pt_BR" are the same request as "pt-br", and a reader asking
 // for "pt-BR" is also asking for "pt": the tag itself first, then the
 // language it is a variety of.

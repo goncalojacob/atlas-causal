@@ -50,6 +50,22 @@ export const LABEL_CHARS = 30;
 // briefing pede.
 export const LABEL_ZOOM = 4;
 
+// **Menos os acontecimentos, que são escritos sempre** (M86 §2, achado A2 da
+// segunda revisão). O piso acima é sobre o mapa *de base*: as dezassete
+// cidades que Natural Earth marca para a escala do mundo são dezassete nomes
+// de outro atlas por cima do primeiro fotograma, e isso não mudou. O que
+// mudou foi o que ficava por baixo delas: `m85-first-screen.png` é o mundo
+// inteiro em sessenta círculos numerados e nem um nome, e é a primeira imagem
+// que um financiador vê. Um acontecimento é o que este atlas é — prioridade
+// zero, a hierarquia dita em três números logo abaixo — por isso tem um piso
+// só seu, que é o zoom mais afastado que há.
+export const EVENT_LABEL_ZOOM = 1;
+
+// E quantos, ao longe. Dez, que é o que cabe num mundo sem se tornar a mancha
+// que `LABEL_ZOOM` existe para evitar; quais são os dez é a ordem que o
+// colocador já tem — peso a descer — e não uma segunda regra aqui.
+export const RESTING_EVENT_LABELS = 10;
+
 // As prioridades, que são a hierarquia do mapa dita em três números: um
 // acontecimento é o que este atlas é, uma cidade é onde ele aconteceu, e uma
 // serra é o chão por baixo dos dois (decisão 9 do plano). Um pico, um rio e um
@@ -114,6 +130,16 @@ const hits = (a, b) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
 // antes de haver um rectângulo para perguntar.
 const inView = (x, y, view) => !view || (x >= view.x0 && x <= view.x1 && y >= view.y0 && y <= view.y1);
 
+// E a **caixa** também, e não só a âncora (M86 §2). Uma etiqueta é escrita a
+// partir da sua âncora para a direita, por isso um nome ancorado dentro do
+// rectângulo pode acabar fora dele: no primeiro ecrã, agora que os
+// acontecimentos são escritos ao longe, era "The 1964 Brazilian c" cortado
+// pela borda. Um nome é escrito inteiro ou não é escrito — é a regra que o
+// grafo já segue (graph-view/labels.js) e a que a linha do tempo passou a
+// seguir em M86 §4 — e quem perde a borda fica sem nome, como quem perde a
+// caixa a outro.
+const boxInView = (box, view) => !view || box.x1 <= view.x1;
+
 // As etiquetas que ficam, pela ordem em que são desenhadas.
 //
 // `k` é o zoom em vigor: a caixa é em unidades da página e o texto tem o mesmo
@@ -153,6 +179,7 @@ export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } 
     if (spent >= limit) continue;
     if (candidate.once && said.has(candidate.once)) continue;
     const box = labelBox(candidate.text, candidate.x, candidate.y, k, candidate.em ?? EM);
+    if (!boxInView(box, view)) continue;
     if (boxes.some((other) => hits(box, other))) continue;
     boxes.push(box);
     used.set(priority, spent + 1);

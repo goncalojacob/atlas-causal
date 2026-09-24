@@ -18,6 +18,7 @@ import { PRECISION_LABEL } from '../vocab.js';
 import { standingSlot, fillStanding } from '../standing.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 // The section key of the list below, so panel.js can find it in the card it
 // is about to rewrite without spelling the string a second time.
@@ -153,7 +154,7 @@ export function renderPlaceCard(ctx, { container, place, state, mine, remembered
   ctx.atlas.record('place', place.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
-      if (rec.summary) container.querySelector('[data-slot="place-summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      if (rec.summary) container.querySelector('[data-slot="place-summary"]').innerHTML = summaryHtml(rec.summary);
       // The dated names are on the record and not in the spine: nothing that
       // is drawn at first paint reads them, so they arrive with the text.
       // Dated labels on the base map itself are M38's.

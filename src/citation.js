@@ -61,7 +61,18 @@ export function citationText(source) {
   return parts.join(' ');
 }
 
-// The resolvable identifiers, in a fixed order, each as { label, href }.
+// The host a url points at, or null where there is not one to read. `URL` is
+// the parser every browser and node already has; a string it refuses is not a
+// url this can say anything about.
+export function hostOf(url) {
+  try {
+    return new URL(String(url)).hostname || null;
+  } catch {
+    return null;
+  }
+}
+
+// The resolvable identifiers, in a fixed order, each as { label, href, title }.
 // `href` is null when there is nothing safe to link to — an ISBN gets an
 // Open Library link because a bare number is not a way to find a book, and a
 // url that is not http(s) is shown as text by the caller and never as a link
@@ -70,7 +81,19 @@ export function identifiers(source) {
   const out = [];
   if (source.doi) out.push({ kind: 'doi', label: `doi:${source.doi}`, href: `https://doi.org/${encodeURIComponent(source.doi)}` });
   if (source.isbn) out.push({ kind: 'isbn', label: `ISBN ${source.isbn}`, href: `https://openlibrary.org/isbn/${encodeURIComponent(source.isbn)}` });
-  if (source.url) out.push({ kind: 'url', label: source.url, href: safeUrl(source.url) });
+  // **Labelled with its host, and the url kept in the title** (M86 §5, review
+  // A finding 8). A WorldCat search url is 90 characters of percent-encoding
+  // wrapping over two lines under a book's title, and what a reader wants from
+  // it is "this goes to WorldCat". The host and not a name the atlas picks: a
+  // table of pretty names for the dozen catalogues a source may sit on is a
+  // table that goes stale and a judgement nobody asked for. A url with no host
+  // to read — a mailto, something typed by hand — keeps the url as its label,
+  // because a label of nothing is worse than a long one.
+  if (source.url) {
+    out.push({
+      kind: 'url', label: hostOf(source.url) ?? source.url, title: source.url, href: safeUrl(source.url),
+    });
+  }
   if (source.repository) {
     out.push({ kind: 'repository', label: `${source.repository}${source.reference ? `, ${source.reference}` : ''}`, href: null });
   }

@@ -404,9 +404,11 @@ export function createEditor({
       const source = sourceOf(row.source);
       const label = html('label', { for: box.id }, source ? citationText(source) : row.source);
       item.append(box, label);
-      for (const { label: text, href } of source ? identifiers(source) : []) {
+      for (const { label: text, href, title } of source ? identifiers(source) : []) {
         item.appendChild(href
-          ? html('a', { href, rel: 'noopener', target: '_blank', class: 'identifier' }, text)
+          ? html('a', {
+            href, rel: 'noopener', target: '_blank', class: 'identifier', ...(title ? { title } : {}),
+          }, text)
           : html('span', { class: 'identifier muted' }, text));
       }
       if (row.verified) {

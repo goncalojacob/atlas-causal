@@ -37,6 +37,7 @@
 
 import { esc } from './util/esc.js';
 import { DEGREE_CHOICES } from './state.js';
+import { lensView } from './lens.js';
 
 // "Connections" and not "links": a link is this atlas's word for an edge as a
 // record — a small historiographical argument with sources — and the number a
@@ -50,7 +51,19 @@ export const DEGREE_LABEL = Object.freeze({
 
 export const degreeLabel = (n) => DEGREE_LABEL[n] ?? `Show events with at least ${n} connections`;
 
-export function createGraphFilters(group, { state }) {
+// **And it says when it is off** (M86 §8, review B finding 3). The floor is by
+// rule off inside a lens (M48 §3, arrangement.js), and since H7/M65 every
+// selection *is* a lens: from the moment a reader clicks any node until they
+// click the ground, this select changed the URL and nothing on the picture or
+// in the count. A control that works sometimes, with nothing to say which
+// time it is, is worse than no control.
+//
+// Disabled rather than hidden, so the reader who used it at rest can see it is
+// still there and why; and in a reader's own words, without "lens", which is
+// this atlas's word for the thing and not theirs.
+export const DEGREE_OFF = 'Off while an event is open: what is drawn is that event and its parts';
+
+export function createGraphFilters(group, { state, atlas = null }) {
   if (!group) return { render: () => {} };
 
   const options = DEGREE_CHOICES
@@ -64,6 +77,14 @@ export function createGraphFilters(group, { state }) {
 
   const render = (s) => {
     degree.value = String(s.degree);
+    // A lens of any kind, asked of the one module that decides what a lens is
+    // (lens.js) rather than of `s.selected`, so the answer here and the answer
+    // the arrangement acts on cannot come apart.
+    const off = Boolean(atlas && lensView(atlas, s));
+    degree.disabled = off;
+    if (off) degree.setAttribute('title', DEGREE_OFF);
+    else degree.removeAttribute('title');
+    group.classList.toggle('off', off);
   };
   state.subscribe(render);
   render(state.get());

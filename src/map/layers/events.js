@@ -437,14 +437,18 @@ export function createEventsLayer(group, projection, {
           classes: `mark cluster ${cluster.coincident ? 'coincident' : 'splittable'}${near && cluster.members.every((m) => near.has(m.id)) ? ' lens-near' : ''}${Number.isFinite(nearest) ? ` in-horizon ${horizonBand(nearest)}` : ''}`,
         });
         // "46 more" and not "+46": the badge says what the title says, in the
-        // title's own words (M85, A4).
-        group.appendChild(textNode(stackBadge(cluster.count), {
-          x: cluster.x + (MARK_RADIUS + 2) / k,
-          y: cluster.y - (MARK_RADIUS + 1) / k,
-          class: 'cluster-count',
-          'font-size': BADGE_SIZE / k,
-          'data-cluster': cluster.key,
-        }));
+        // title's own words (M85, A4) — and nothing at all for a stack of two,
+        // whose ring has already said it (M86 §2, cluster.js).
+        const badge = stackBadge(cluster.count);
+        if (badge) {
+          group.appendChild(textNode(badge, {
+            x: cluster.x + (MARK_RADIUS + 2) / k,
+            y: cluster.y - (MARK_RADIUS + 1) / k,
+            class: 'cluster-count',
+            'font-size': BADGE_SIZE / k,
+            'data-cluster': cluster.key,
+          }));
+        }
       }
 
       // The events the reader is working with, on top of the clusters. The
