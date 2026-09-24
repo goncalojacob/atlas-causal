@@ -179,6 +179,33 @@ export function laneHeightFor(paneHeight, rows, { natural, minimum, cap = LANE_M
   return Math.max(minimum, Math.min(Math.max(cap, natural), room / rows));
 }
 const PADDING = 0.04;
+
+// The years the drawing runs over. Pure and exported, so `node --test` can
+// hold it without a pane.
+//
+// **The right end is the last year the data has** (M86 §4, review A finding
+// 6). The padding was symmetrical, and at today's span it is about twenty-one
+// years each side: the axis ran to 2040 with nothing after 2026 on it, and the
+// last titles — "COVID-19 pander", "The Nova Repúbli" — were cut by the pane's
+// edge. A margin before the first event is room a reader reads as "the data
+// starts here"; the same margin after the last one is an axis promising years
+// the atlas has nothing to say about. The `+ 1` is what it always was: a bar
+// one year wide for an event in the last year of the data.
+export function timelineDomain(extent) {
+  if (!extent) return [0, 1];
+  return [extent.min - (extent.max - extent.min) * PADDING - 1, extent.max + 1];
+}
+
+// And where a bar's title goes. To the right of the bar, which is where the
+// packing reserved the room — except for a bar so near the right edge that
+// its title would run off the pane, which is drawn to the *left* of the bar
+// and anchored at its end. `room` is what `labelRoom` says the name needs,
+// gap included.
+export function labelPlacement(x, barWidth, room, paneWidth) {
+  const right = x + barWidth + BAR_LABEL_GAP;
+  if (right + room <= paneWidth) return { x: right, anchor: 'start' };
+  return { x: Math.max(0, x - BAR_LABEL_GAP), anchor: 'end' };
+}
 // The corner a bar is rounded by, and the ring outside a parent's bar: how far
 // outside it on every side, and how thin. A ring says "there is more inside"
 // and nothing else, so it is thinner than the bar's own outline.
@@ -231,9 +258,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   let laneHeight = ROW_HEIGHT;
   let height = AXIS_HEIGHT + ROW_HEIGHT;
 
-  const domain = atlas.extent
-    ? [atlas.extent.min - (atlas.extent.max - atlas.extent.min) * PADDING - 1, atlas.extent.max + (atlas.extent.max - atlas.extent.min) * PADDING + 1]
-    : [0, 1];
+  const domain = timelineDomain(atlas.extent);
   // How the corpus is spread over the centuries, counted once at build and
   // not per render: it is a fact about the data, and the data does not change
   // under a reader. It is what decides whether the scale is the linear one it
@@ -450,15 +475,18 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // count, and the rows are as many as that takes.
   const barLabel = (into, item, { classes, y: top, height: tall, name }) => {
     if (name === null) return;
-    // To the right of the bar, which is where the packing reserved the room.
-    // Never to its left: the packing is left to right and packs tight, so the
-    // ground on that side belongs to the bar before this one and its own
-    // title. What keeps the last century's titles on the drawing is the
-    // gutter the scale ends at (`RIGHT_GUTTER`) and not a second side.
+    // To the right of the bar, which is where the packing reserved the room —
+    // and to its left where that room is not there to be had (M86 §4). The
+    // gutter the scale ends at is `RIGHT_GUTTER`, which is less than one
+    // title, so the last century's names were written into the pane's edge and
+    // cut by it. A name written on the other side of its own bar is still
+    // beside the thing it names, which a name half off the page is not.
+    const at = labelPlacement(item.x, item.width, labelRoom(name), width);
     into.take('text', {
-      x: item.x + item.width + BAR_LABEL_GAP, y: top + tall / 2,
+      x: at.x, y: top + tall / 2,
       class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),
       'dominant-baseline': 'middle', 'font-size': BAR_LABEL_SIZE,
+      ...(at.anchor === 'end' ? { 'text-anchor': 'end' } : {}),
     }, { text: name });
   };
 

@@ -10,10 +10,15 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import path from 'node:path';
 
 import {
   withBrowser, open, skip, waitFor, until, watchErrors, errorsOn, seenIntro,
 } from './browser.mjs';
+import { atlasOf, ROOT } from './helpers.mjs';
+
+// The corpus the page is served, so every expectation below is the data's own.
+const atlas = await atlasOf(path.join(ROOT, 'data'));
 
 const DESK = { width: 1440, height: 900, deviceScaleFactor: 1 };
 
@@ -65,6 +70,60 @@ test('and no badge on it reads "1 more"', { skip }, async () => {
     for (const badge of words.badges) {
       assert.notEqual(badge, '1 more', 'a stack of two carries a badge as loud as a stack of thirteen');
       assert.notEqual(badge.trim(), '', 'an empty badge was drawn');
+    }
+    assert.deepEqual(await errorsOn(page), []);
+  }, { device: DESK });
+});
+
+// ─── 4. the timeline's right edge (A6) ─────────────────────────────────────
+
+const LANES_READY = 'return document.querySelectorAll("#timeline rect.bar[data-id]").length > 0;';
+
+// The axis's own tick labels, and every title with the box it occupies, in the
+// page's own pixels — which is the only place "cut by the pane edge" is a
+// question that can be asked.
+const TIMELINE_EDGE = `
+  const svg = document.querySelector('svg.timeline');
+  const pane = svg.getBoundingClientRect();
+  return {
+    pane: { left: pane.left, right: pane.right },
+    ticks: [...svg.querySelectorAll('text.tick-label')].map((el) => el.textContent),
+    labels: [...svg.querySelectorAll('text.bar-label')].map((el) => {
+      const box = el.getBoundingClientRect();
+      return { text: el.firstChild ? el.firstChild.nodeValue : '', left: box.left, right: box.right };
+    }),
+  };`;
+
+test('no tick runs past the last year of the data, and no resting title is cut by the pane', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await watchErrors(page);
+    await seenIntro(page);
+    await open(page, url('?view=timeline'), LANES_READY);
+    await waitFor(page, LANES_READY, 'the timeline to draw');
+    // The titles arrive with their centuries; this waits for one and asserts
+    // about all of them below.
+    await until(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;');
+
+    const seen = await page.eval(TIMELINE_EDGE);
+    assert.ok(seen.labels.length > 0, 'the timeline wrote no title at all');
+    // The last year the atlas holds, read off the same records the page was
+    // served rather than written down here: the corpus grows under this test
+    // every day.
+    const last = atlas.extent?.max ?? null;
+    if (last !== null) {
+      for (const tick of seen.ticks) {
+        const year = Number(String(tick).replace(/[^\d-]/g, ''));
+        if (!Number.isFinite(year) || String(tick).includes('BCE')) continue;
+        assert.ok(year <= last, `a tick at ${tick} past the last year of the data (${last})`);
+      }
+    }
+    // And every title is inside the pane it is drawn in. A name written into
+    // the edge is the review's own "COVID-19 pander".
+    for (const label of seen.labels) {
+      assert.ok(label.right <= seen.pane.right + 1,
+        `"${label.text}" runs past the right edge (${label.right} > ${seen.pane.right})`);
+      assert.ok(label.left >= seen.pane.left - 1,
+        `"${label.text}" runs past the left edge (${label.left} < ${seen.pane.left})`);
     }
     assert.deepEqual(await errorsOn(page), []);
   }, { device: DESK });

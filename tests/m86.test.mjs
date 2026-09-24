@@ -22,6 +22,7 @@ import { revisionUrl, itemUrl } from '../src/wikipedia.js';
 import { placeLabels, PRIORITY, LABEL_ZOOM } from '../src/map/labels.js';
 import { stackBadge, stackTitle } from '../src/cluster.js';
 import { identifiers } from '../src/citation.js';
+import { timelineDomain, labelPlacement } from '../src/timeline.js';
 import { PRECISIONS } from '../src/vocab.js';
 import { ROOT } from './helpers.mjs';
 
@@ -217,6 +218,35 @@ test('about.html no longer says the site is not public yet, and no longer contra
   for (const words of ['Wikipedia', 'Wikidata', '?review=1']) {
     assert.ok(about.includes(words), `about.html does not say "${words}"`);
   }
+});
+
+// ─── 4. the timeline’s right edge (A6) ─────────────────────────────────────
+
+test('the timeline’s domain stops at the last year the data has', () => {
+  // Derived from the corpus the test runs on and from the fixtures alike: what
+  // is asked is the rule and never a year.
+  for (const extent of [{ min: 1415, max: 1580 }, { min: -400, max: 2026 }, { min: 1900, max: 1901 }]) {
+    const [from, to] = timelineDomain(extent);
+    assert.equal(to, extent.max + 1, 'the right end is the last year and a bar’s width');
+    assert.ok(from < extent.min, 'and the left end still has its margin');
+  }
+  assert.deepEqual(timelineDomain(null), [0, 1], 'a corpus with no extent still has a domain');
+});
+
+test('a title that would run off the right edge is written on the other side of its bar', () => {
+  const pane = 1000;
+  const room = 120;
+  // Room to spare: the title is to the right, where the packing reserved it.
+  assert.deepEqual(labelPlacement(100, 40, room, pane), { x: 145, anchor: 'start' });
+  // And at the edge it is anchored at the bar's left instead.
+  const tight = labelPlacement(940, 40, room, pane);
+  assert.equal(tight.anchor, 'end');
+  assert.ok(tight.x < 940, 'the anchor is to the left of the bar');
+  assert.ok(tight.x >= 0, 'and never off the other edge');
+  // The boundary is the room the name needs and nothing else.
+  const exactly = pane - room - 5;
+  assert.equal(labelPlacement(exactly, 0, room, pane).anchor, 'start');
+  assert.equal(labelPlacement(exactly + 1, 0, room, pane).anchor, 'end');
 });
 
 // ─── 5. three card polish items (A8, A9, A10) ──────────────────────────────
