@@ -9532,3 +9532,82 @@ The two new warnings are the two `degree-zero` above and no new class.
   own article and widens its interval should re-file the child. Until then, a
   batch that meets this should say so on the record rather than file against the
   test or drop the row.
+
+## Where the run stands after batch 53, for the fire that picks it up
+
+*24 September, 20:25Z onward. An import fire, one batch and no code change. The
+merge of `origin/m0` that STEP 1 asked for was made and is what carries the
+corpus from batch 52's 914 to the 982 this batch started from: M42b's own
+records, landed into `m0` at 20:13Z, are in this branch now.*
+
+| | |
+| --- | --- |
+| corpus | **989 active** |
+| **main** | **242**, unmoved through twenty-four batches, three curation fires and A14 |
+| filed | 747 |
+| active edges | **929** |
+| largest connected component | **651**, unmoved |
+| second component | **13** (+3), the Korean War's battles |
+| components | **233** (+3) |
+| events with no edge at all | **178** (+2) |
+| validator | **0 errors, 482 warnings** |
+| per lane, active | Europe 426, Americas 236, **Asia 165**, Africa 162 |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again**: Asia is now at 165 and **Africa
+trails at 162**, so the next import batch is Africa's unless a chain crosses out
+of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **C8 is now the single largest thing standing between this atlas and the
+  chains the owner asked for, and the case for putting it to the owner is as
+  strong as a measurement can make it.** Batch 51 measured ten records held out
+  of the largest component by it; batch 52 measured four more and one row
+  refused outright; this batch brings the Korean War's own component to
+  **thirteen** — a whole war, from the invasion of 25 June 1950 to the third
+  battle of Seoul — sitting outside the 651 because the one record in the 651
+  that any of them reaches is `korean-war`, their parent. **One edge,
+  `korean-war` → `operation-pokpung` or `korean-war` → `first-battle-of-seoul`,
+  would join all thirteen.** Until it is decided no batch writes a
+  parent-to-child edge and the 91 that exist stay.
+- **The next Africa vein is not chosen and the stand of batch 52 is still the
+  best list.** `battle-of-tinzaouaten` (`Q128007033`) is still the best Africa
+  row unimported and still refused for want of a sibling; the fire that takes it
+  should take two or three of the 2023–2024 Mali rows together.
+- **`Q2035177`, the Battle of Bloody Ridge, is what the next Asia batch should
+  take first**, and it should take `Q489561`, Heartbreak Ridge, with it. This
+  fire read Heartbreak Ridge's article end to end and left the row: its one
+  causal sentence — *"After withdrawing from Bloody Ridge, the KPA set up new
+  positions just 1500 yd away on a 7 mi long hill mass"* — names a record the
+  atlas does not hold, so alone it arrives edgeless. Taken together the pair is
+  one stated sentence apart. This is batch 51's deviation 1430 used forwards:
+  choose the row by what it can reach, not by its size.
+- **The other rows of `Q8663` by sitelinks**, all dated and all with English
+  articles, after this batch: `Q4872081` Pork Chop Hill (9), `Q492671` Triangle
+  Hill (8), `Q4870302` Andong (8), `Q48734658` the bombing of North Korea (8),
+  `Q7521988` the Sinchon massacre (8), `Q4871945` Onjong (8). The vein holds
+  113 rows with an English article and the atlas now has seventeen of them.
+- **`battle-of-nam-river` is filed one day away from its own umbrella** and
+  should be re-filed under `battle-of-the-pusan-perimeter` by whichever fire
+  first widens that record's interval under A7 from its own article (deviation
+  1437). It is the only record in this batch whose filing is not the one its
+  article states.
+- **The multi-valued-coordinate question is now beside the multi-valued-location
+  one** (deviation 1434 and this batch's `nam-river`): where an item carries two
+  `P625` values that are not the same point, A9's first step says nothing about
+  which to take, and this fire fell to the second step rather than choose.
+- **`Q21028650`, the Algiers Accords of 2015, is still refused on its class and
+  is still a question for a person** (batch 50).
+- **`should the europe lane hold Russian Asia?`** is still the owner's, from
+  batch 49 (deviation 1423).
+- **The five questions of the A14 stand are unchanged** and unanswered.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`.
+- **The next curation fire is the first fire after 02:00Z on 25 September**, and
+  it owns A13's relations pass over every active event.
+- **Deviation numbers: take the next above 1437.** This fire wrote **1435 to
+  1437**.
