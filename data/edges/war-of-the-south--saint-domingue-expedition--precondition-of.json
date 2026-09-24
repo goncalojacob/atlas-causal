@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-of-the-south--saint-domingue-expedition--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saint-Domingue expedition\", revision 1373644192, § The expedition"
+    }
+  ],
+  "from": "war-of-the-south",
+  "to": "saint-domingue-expedition",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The expedition's own article counts the War of the South among what the invasion force was made of: \"In total 31,131 troops were landed on Saint-Domingue, including Mulatto officers such as André Rigaud and future Haitian president Alexandre Pétion, both of whom Toussaint had expelled from the colony two years earlier in the War of Knives\" — the name that article gives this war. Precondition and not cause: the article says the war put those officers in France, where Leclerc's force was raised, and does not say the war is why Napoleon sent it. Probable: Wikipedia alone.",
+  "dispute": null
+}

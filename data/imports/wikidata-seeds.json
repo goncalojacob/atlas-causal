@@ -1378,7 +1378,32 @@
     "Q708580",
     "Q276059",
     "Q2890693",
-    "Q136669216"
+    "Q136669216",
+    "Q216835",
+    "Q2076213",
+    "Q34261",
+    "Q983788",
+    "Q2429630",
+    "Q852550",
+    "Q2031163",
+    "Q1317264",
+    "Q844024",
+    "Q132189",
+    "Q2890512",
+    "Q3485993",
+    "Q2890742",
+    "Q3403821",
+    "Q2382626",
+    "Q2890666",
+    "Q2889885",
+    "Q4871314",
+    "Q4122570",
+    "Q3062411",
+    "Q2890563",
+    "Q3486058",
+    "Q4927230",
+    "Q3485996",
+    "Q2484240"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5337,6 +5362,24 @@
       "precision": "region",
       "label": "region of Mali",
       "note": "Added in M42 batch 52 for Q338988, Kidal Region, which kidal-offensive names under P276. The label is read from the item itself over the network; the item carries no English description and its article is “Regions of Mali”. `region` because a first-level administrative division of Mali is larger than a town and is not a state, which is the line PRECISIONS draws."
+    },
+    "Q3685462": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Haiti",
+      "note": "Added in M42b batch 26, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France, Q2074737 municipality of Spain and Q1131296 freguesia of Portugal are that line, and a commune of Haiti is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third-level division of Haiti\". Four places of the Haitian Revolution vein carry it and no other place class."
+    },
+    "Q62127": {
+      "kind": "place",
+      "precision": "region",
+      "label": "department of Haiti",
+      "note": "Added in M42b batch 26, on the same mirror rule: Q215655 department of Colombia, Q861184 department of Peru, Q250050 department of Bolivia and Q743074 region of Mali are all first-level administrative divisions the table already calls a region. Wikidata's own description of the class, read off the class item, is \"first-level administrative territorial entity of the Republic of Haiti\". `region` because a department is larger than a town and is not a state, which is the line PRECISIONS draws. Artibonite, which battle-of-ravine-a-couleuvres names under P276, carries it."
+    },
+    "Q1959141": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval blockade",
+      "note": "Added in M42b batch 26 for Q4927230, the Blockade of Saint-Domingue. The label is read from the class item itself; the item carries no description in English or Portuguese and has no English article, so there is no gloss to quote. `war` is the category Q1261499, naval battle, Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a blockade is a military operation of one against another."
     }
   },
   "reconcile": true

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-au-prince-1793--battle-of-cap-francais-1793--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549, § Background"
+    }
+  ],
+  "from": "siege-of-port-au-prince-1793",
+  "to": "battle-of-cap-francais-1793",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Cap-Français article opens its own account with the siege two months earlier: \"The troops loyal to the commissioners commanded by generals Lassale and Beauvais besiege to Port-au-Prince, which is retaken on April 14, 1793.\" The commissioners hold the colony's two chief towns when the June conflict at the Cape begins. Precondition and not cause: the article places the siege behind the events at the Cape and argues nothing further. Probable: Wikipedia alone.",
+  "dispute": null
+}

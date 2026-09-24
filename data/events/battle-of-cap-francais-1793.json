@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cap-francais-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2890742",
+  "wikipedia": {
+    "en": "Battle of Cap-Français (1793)",
+    "pt": "Batalha de Cap-Français (1793)"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890742"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
+    }
+  ],
+  "title": "Battle of Cap-Français (1793)",
+  "summary": "The English Wikipedia article \"Battle of Cap-Français (1793)\", at revision 1370108549, opens: \"The Battle of Cap-Français took place from 20 to 22 June 1793 during the Haitian Revolution. It was originally a conflict between commissioners sent by the French Republican government, who were supported by rebellious slaves and free people of color, against the colony's elite and white royalist slave owners, who sparked an uprising against the commissioners in the city, led to a military conflict between whites and coloreds within the city, to eventually lead to an attack by slaves throughout the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890742, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 Haitian Revolution battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-06-20",
+    "endDate": "1793-06-22"
+  },
+  "place": "cap-haitien",
+  "region": null,
+  "regionNote": null,
+  "parent": "haitian-revolution-1791-1804",
+  "category": "war",
+  "actors": []
+}

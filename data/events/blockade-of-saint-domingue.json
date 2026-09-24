@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "blockade-of-saint-domingue",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4927230",
+  "wikipedia": {
+    "en": "Blockade of Saint-Domingue"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4927230"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Saint-Domingue\", revision 1370604651"
+    }
+  ],
+  "title": "Blockade of Saint-Domingue",
+  "summary": "The English Wikipedia article \"Blockade of Saint-Domingue\", at revision 1370604651, opens: \"The blockade of Saint-Domingue was a naval campaign fought during the first months of the Napoleonic Wars in which a series of British Royal Navy squadrons blockaded the French-held ports of Cap-Français and Môle-Saint-Nicolas on the northern coast of the French colony of Saint-Domingue, soon to become Haiti, after the conclusion of the Haitian Revolution on 1 January 1804. In the summer of 1803, when war broke out between the United Kingdom and the French Consulate, Saint-Domingue had been almost completely overrun by the rebel Indigenous Army led by Jean-Jacques Dessalines. In the north of the country, the French forces were isolated in the two large ports of Cap-Français and Môle-Saint-Nicolas and a few smaller settlements, all supplied by a French naval force based primarily at Cap-Français.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4927230, imported by tools/import/wikidata.mjs. The item's own description reads \"1803 naval campaign fought during the first months of the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1803,
+    "date": "1803-06-18",
+    "endDate": "1803-12-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "haitian-revolution-1791-1804",
+  "category": "war",
+  "actors": []
+}

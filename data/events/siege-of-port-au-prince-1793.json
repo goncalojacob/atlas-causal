@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-au-prince-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3485993",
+  "wikipedia": {
+    "en": "Siege of Port-au-Prince (1793)",
+    "pt": "Cerco de Porto Príncipe (1793)"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Port-au-Prince (1793)\", revision 1370744538"
+    }
+  ],
+  "title": "Siege of Port-au-Prince (1793)",
+  "summary": "The English Wikipedia article \"Siege of Port-au-Prince (1793)\", at revision 1370744538, opens: \"The siege of Port-au-Prince took place in April 1793 during the Haitian Revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485993, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-04-12",
+    "endDate": "1793-04-14"
+  },
+  "place": "port-au-prince",
+  "region": null,
+  "regionNote": null,
+  "parent": "haitian-revolution-1791-1804",
+  "category": "war",
+  "actors": []
+}
