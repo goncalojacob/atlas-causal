@@ -1224,6 +1224,15 @@
         }
       ]
     },
+    "battle-of-chemulpo-bay--battle-of-the-yalu-river-1904--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-dien-bien-phu--geneva-conference--caused": {
       "from": "git",
       "versions": [
@@ -1248,6 +1257,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-liaoyang--battle-of-shaho--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1278,6 +1296,15 @@
         }
       ]
     },
+    "battle-of-nanshan--battle-of-te-li-ssu--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-nanshan--siege-of-port-arthur--precondition-of": {
       "from": "git",
       "versions": [
@@ -1293,6 +1320,33 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-shaho--battle-of-sandepu--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-tashihchiao--battle-of-liaoyang--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-te-li-ssu--battle-of-tashihchiao--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -1327,6 +1381,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-the-yellow-sea--battle-off-ulsan--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -3402,6 +3465,15 @@
         }
       ]
     },
+    "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "kashmir-conflict--indo-pakistani-war-of-1965--caused": {
       "from": "git",
       "versions": [
@@ -4990,6 +5062,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-port-arthur--battle-of-sandepu--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

@@ -2708,6 +2708,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chemulpo-bay",
+      "kind": "event",
+      "locator": "Q1192118"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chupas",
       "kind": "event",
       "locator": "Q1612597"
@@ -3086,6 +3092,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sandepu",
+      "kind": "event",
+      "locator": "Q1358032"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sangarara",
       "kind": "event",
       "locator": "Q4872293"
@@ -3113,6 +3125,12 @@
       "id": "battle-of-seal-cove",
       "kind": "event",
       "locator": "Q4872339"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shaho",
+      "kind": "event",
+      "locator": "Q920679"
     },
     {
       "dissent": false,
@@ -3155,6 +3173,18 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tashihchiao",
+      "kind": "event",
+      "locator": "Q2409264"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-te-li-ssu",
+      "kind": "event",
+      "locator": "Q2619692"
     },
     {
       "dissent": false,
@@ -3239,6 +3269,12 @@
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "Q3636666"
+    },
+    {
+      "dissent": false,
+      "id": "battle-off-ulsan",
+      "kind": "event",
+      "locator": "Q702150"
     },
     {
       "dissent": false,
@@ -4421,6 +4457,12 @@
       "id": "japanese-instrument-of-surrender",
       "kind": "event",
       "locator": "Q665554"
+    },
+    {
+      "dissent": false,
+      "id": "japanese-invasion-of-sakhalin",
+      "kind": "event",
+      "locator": "Q4538445"
     },
     {
       "dissent": false,

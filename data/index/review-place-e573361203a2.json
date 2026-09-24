@@ -2292,6 +2292,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "chemulpo-bay",
+      "kind": "place",
+      "names": [
+        "Chemulpo Bay"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q1192118, Battle of Chemulpo Bay, read on 2026-09-24. A9's second step gives nothing: the port the item names, Jemulpo (Q125696445), carries no coordinate, which is why M42 batch 47 refused this row. No `wikidata` key: a place claiming to be the battle would be the worse record. The atlas's `incheon` is the modern city on this bay, 17 km off; the article says the battle was fought off its coast.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "chile-q298",
@@ -5794,7 +5822,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "korea-strait",
       "kind": "place",
       "names": [
@@ -10894,6 +10922,33 @@
       ],
       "created": "2026-09-24",
       "degree": 1,
+      "id": "sakhalin",
+      "kind": "place",
+      "names": [
+        "Sakhalin",
+        "Sacalina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
       "id": "sakiet-sidi-youssef",
       "kind": "place",
       "names": [
@@ -11558,6 +11613,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "shaho",
+      "kind": "place",
+      "names": [
+        "Shaho"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q920679, Battle of Shaho, read on 2026-09-24; the article at revision 1370589119 puts the fighting \"along a 37-mile (60 km) front centered at the Shaho River ... north of Liaoyang\". `region` for that reason, as `yalu-river` is. The item names no location A9's second step could read, and no `wikidata` key: a place claiming to be the battle would be the worse record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "shatila-refugee-camp",
@@ -11588,7 +11671,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "shenyang",
       "kind": "place",
       "names": [
@@ -12520,6 +12603,62 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "tashihchiao",
+      "kind": "place",
+      "names": [
+        "Tashihchiao"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2409264, Battle of Tashihchiao, read on 2026-09-24, and the article at revision 1370590643 puts the town \"about 25 kilometres (16 mi) southwest of the city of Haicheng\", which this coordinate is. The item names no location A9's second step could read. The record carries no `wikidata` key: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "te-li-ssu",
+      "kind": "place",
+      "names": [
+        "Te-li-Ssu"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2619692, Battle of Te-li-Ssu, read on 2026-09-24, and the article at revision 1370590724 puts the hamlet \"some 80 mi (130 km) north of Port Arthur\", which this coordinate is. A9's second step would have given the Liaodong Peninsula, which the atlas holds and which is the whole ground rather than the place on it. The record carries no `wikidata` key: a place claiming to be the battle would be a worse record than one claiming nothing.",
         "status": "draft"
       },
       "revised": null,
@@ -14248,6 +14387,12 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
+    },
+    {
+      "id": "sakhalin",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "sakiet-sidi-youssef",

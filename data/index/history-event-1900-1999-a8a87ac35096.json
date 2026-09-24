@@ -6565,6 +6565,15 @@
         }
       ]
     },
+    "battle-of-chemulpo-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-dien-bien-phu": {
       "from": "git",
       "versions": [
@@ -7142,6 +7151,15 @@
         }
       ]
     },
+    "battle-of-sandepu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "battle-of-santa-clara": {
       "from": "git",
       "versions": [
@@ -7172,6 +7190,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-shaho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7212,6 +7239,24 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-tashihchiao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-te-li-ssu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -7423,6 +7468,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-off-ulsan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -12493,6 +12547,15 @@
             "place",
             "review"
           ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "japanese-invasion-of-sakhalin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-24"
         }
       ]

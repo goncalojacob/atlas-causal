@@ -1146,6 +1146,15 @@
         }
       ]
     },
+    "chemulpo-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "chile-q298": {
       "from": "git",
       "versions": [
@@ -5575,6 +5584,15 @@
         }
       ]
     },
+    "sakhalin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "sakiet-sidi-youssef": {
       "from": "git",
       "versions": [
@@ -5886,6 +5904,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "shaho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -6405,6 +6432,24 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tashihchiao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "te-li-ssu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

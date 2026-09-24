@@ -1994,6 +1994,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chemulpo-bay--battle-of-the-yalu-river-1904--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Yalu River\", revision 1370602766, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cusco--battle-of-maraycalla--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Maraycalla\", revision 1370448960"
@@ -2027,6 +2033,18 @@
       "id": "battle-of-liaoyang--battle-of-mukden--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-liaoyang--battle-of-shaho--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-liaoyang--battle-of-shaho--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Shaho\", revision 1370589119, § Background"
     },
     {
       "dissent": false,
@@ -2069,6 +2087,12 @@
       "id": "battle-of-mukden--treaty-of-portsmouth--enabled",
       "kind": "edge",
       "locator": "\"Siege of Port Arthur\", revision 1373678673, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-nanshan--battle-of-te-li-ssu--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Te-li-Ssu\", revision 1370590724, § Background"
     },
     {
       "dissent": false,
@@ -2216,6 +2240,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shaho--battle-of-sandepu--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Shaho\", revision 1370589119, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sirte-2011--killing-of-muammar-gaddafi--caused",
       "kind": "edge",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
@@ -2234,6 +2264,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-te-li-ssu--battle-of-tashihchiao--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643, § Preparations by the Japanese and § Preparations by the Russians"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-yalu-river-1904--battle-of-liaoyang--enabled",
       "kind": "edge",
       "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766, § Significance"
@@ -2243,6 +2285,12 @@
       "id": "battle-of-the-yalu-river-1904--battle-of-nanshan--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Nanshan\", revision 1370451314, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yellow-sea--battle-off-ulsan--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle off Ulsan\", revision 1370603310, § Sortie"
     },
     {
       "dissent": false,
@@ -3758,6 +3806,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
+      "kind": "edge",
+      "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict--indo-pakistani-war-of-1965--caused",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
@@ -5057,6 +5111,12 @@
       "id": "siege-of-port-arthur--battle-of-mukden--enabled",
       "kind": "edge",
       "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-sandepu--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Sandepu\", revision 1370588463, § Background and § The Battle of Sandepu"
     },
     {
       "dissent": false,
@@ -7916,6 +7976,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chemulpo-bay",
+      "kind": "event",
+      "locator": "\"Battle of Chemulpo Bay\", revision 1370436979"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chupas",
       "kind": "event",
       "locator": "\"Battle of Chupas\", revision 1370437248"
@@ -8288,6 +8354,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sandepu",
+      "kind": "event",
+      "locator": "\"Battle of Sandepu\", revision 1370588463"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sangarara",
       "kind": "event",
       "locator": "\"Battle of Sangarará\", revision 1375224690"
@@ -8315,6 +8387,12 @@
       "id": "battle-of-seal-cove",
       "kind": "event",
       "locator": "\"Battle of Seal Cove\", revision 1373061421"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shaho",
+      "kind": "event",
+      "locator": "\"Battle of Shaho\", revision 1370589119"
     },
     {
       "dissent": false,
@@ -8357,6 +8435,18 @@
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tashihchiao",
+      "kind": "event",
+      "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-te-li-ssu",
+      "kind": "event",
+      "locator": "\"Battle of Te-li-Ssu\", revision 1370590724"
     },
     {
       "dissent": false,
@@ -8447,6 +8537,12 @@
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "\"Battle of Yaguajay\", revision 1371154538"
+    },
+    {
+      "dissent": false,
+      "id": "battle-off-ulsan",
+      "kind": "event",
+      "locator": "\"Battle off Ulsan\", revision 1370603310"
     },
     {
       "dissent": false,
@@ -9731,6 +9827,12 @@
       "id": "japanese-instrument-of-surrender",
       "kind": "event",
       "locator": "\"Japanese Instrument of Surrender\", revision 1371613000"
+    },
+    {
+      "dissent": false,
+      "id": "japanese-invasion-of-sakhalin",
+      "kind": "event",
+      "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298"
     },
     {
       "dissent": false,
