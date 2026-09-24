@@ -3983,6 +3983,204 @@ reason. A second commit repaired it. The paragraph at the head of "Where the run
 stands" has said this since the fifteenth fire; reading it is apparently not the
 same as doing it, so it is repeated here with the fire that paid for it named.
 
+## Batch 16 — the Rebellion of Túpac Amaru II, and the Americas' eighteenth century
+
+*24 September, the seventeenth fire. The cell is **the Americas' eighteenth
+century**, which the sixteenth fire left as the thinnest workable cell in this
+partition at 11 active and 2 main, and the vein is a new one: the engagements
+of a rising the atlas has held since M53 and had never opened.*
+
+### Before the batch
+
+The fire opened by merging `origin/m42`'s batch 47 — seven Russo-Japanese War
+records, none of them this lane's — and re-taking `docs/m53-polities.md` §4.1
+at **379 of 841**. That merge is where the numerator moved: `Q1363925`, the
+naval Battle of Port Arthur, names the Empire of Japan and the Russian Empire
+in its `P710` and this atlas holds an actor for each. Nothing of this lane
+moved it.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 841 active | **847 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| largest connected component | 598 | **604** |
+| components | 194 | 194 |
+| events with no edge at all | 159 | 159 |
+| the `americas` lane | 192 active, 55 main | **198 active, 55 main** |
+| the Americas' 18th century | 11 active, 2 main | **17 active, 2 main** |
+
+**All six joined the largest component and none of them opened a new one**,
+which is what the component count and the isolated count say side by side: the
+component grew by exactly the six the batch wrote.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 12 / 1 | — | — | 16 / 5 | — | — | 28 / 6 |
+| 17th c. | 21 / 2 | — | — | 14 / 6 | — | — | 35 / 8 |
+| 18th c. | 24 / 3 | — | — | **17 / 2** | — | — | 41 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **367 / 89** | **139 / 31** | **143 / 67** | **198 / 55** | **—** | **—** | **847 / 242** |
+
+**South and Central America against North America**, the order the brief sets:
+158 against 19 by the latitude of each event's place, splitting at the Rio
+Grande's mouth. All six of this batch are in the Cusco region of Peru, around
+13°S, so the order is kept and is nowhere near being spent.
+
+### How the six were found
+
+One SPARQL query and it cost one call: every item whose `P361` is one of four
+umbrellas this atlas already holds in the Americas' eighteenth century —
+`Q54434` the War of Jenkins' Ear, `Q1806552` the Rebellion of Túpac Amaru II,
+`Q2427419` the Guaraní War and `Q2095753` the Revolt of the Comuneros — that
+also has an English article. **Twenty-three items came back**; one is a record
+this atlas already has (`battle-of-cartagena-de-indias`, `Q2366970`). Seven of
+the twenty-three are the Túpac Amaru rising and those are this batch. The rest
+are listed under "Where the run stands" for the fire after this one.
+
+### What was imported
+
+| record | item | date | class | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-sangarara` | `Q4872293` | 1780-11-18 | `Q178561` battle | `sangarara` | 18th |
+| `battle-of-pillpinto` | `Q137360138` | 1780-11-26 | `Q178561` battle | `pillpinto-district` | 18th |
+| `capture-of-ayaviri` | `Q140157741` | 1780-12-06 | `Q178561` battle | `ayaviri` | 18th |
+| `battle-of-saylla` | `Q140068655` | 1781-01-03 | `Q178561` battle | `saylla-district` | 18th |
+| `siege-of-cusco-1781` | `Q11794853` | 1781-01-04 | `Q188055` siege | `cusco` | 18th |
+| `battle-of-pucacasa` | `Q11688225` | 1781-03-22 | `Q178561` battle | `quispicanchi-province` | 18th |
+
+**Seven items put to `tools/import/wikidata.mjs --import`, six created, one
+refused and none ambiguous**, in twenty-five calls. **No class was added**:
+both `Q178561` and `Q188055` were already in the table.
+
+**`Q9172888`, the Battle of Combapata, was refused and is the one the atlas
+does not have.** Its `P276` is `Q3312913` and it carries no `P625`, no `P17`
+and no lane the seeds file names, so the import refused it rather than place a
+placeless event with no region: *"a placeless event must carry a region"*. It
+is the engagement the article makes the rising's turning point — Túpac Amaru II
+was captured retreating from it — so it is worth a fire of its own, and what it
+needs is a place record or a seeded lane and not a change to the tool.
+
+### Summaries (A12 C1)
+
+**All six carry the cached English lead as their summary**, at the revision the
+cache names, with the `wikipedia-en` citation beside the Wikidata one and the
+`summary-from-lead` flag. **No record of this batch shows the import's
+placeholder alone.** Every lead was short enough to quote whole — the longest
+is the siege's at 499 characters — so nothing was cut.
+
+**The import caches the lead and does not write it, and this fire met that
+again.** `runImportMode` writes the record and *then* calls `fetchLeads`, so a
+freshly created record carries the placeholder and the lead sits in
+`tools/import/cache/wikipedia/` beside it. The pass that moves it across is the
+run's, by hand, as A12 C1 has it. Worth saying plainly because the import's own
+report line — "6 Wikipedia lead(s) cached" — reads like the work is done.
+
+### Places (A9, as A12 corrects it)
+
+**Five place records written by hand, one reused.** The import reuses a place
+record and never creates one, so five of the six came out placeless with the
+lane written as an override; the run wrote the five records their items' own
+`P276` names and attached them, and the sixth took `cusco`, which the atlas has
+held since 23 September and is the same item (`Q5582862`) its `P276` gives.
+
+| place | item | class | precision | why |
+| --- | --- | --- | --- | --- |
+| `sangarara` | `Q7417854` | `Q532` village | `city` | the town the battle is named for; the item's own point |
+| `ayaviri` | `Q3344141` | `Q515` city | `city` | the town taken on 6 December |
+| `pillpinto-district` | `Q3312511` | district | `region` | what the item's `P276` names, and a district is an area |
+| `saylla-district` | `Q2584188` | district | `region` | the same |
+| `quispicanchi-province` | `Q1920520` | province | `region` | the same; the article puts Pucacasa in this province |
+
+**Two of the five are administrative areas and are drawn as areas**, which is
+what `PRECISIONS` calls coarse: the item names a district or a province and not
+a point on the ground, and the record says so rather than pretending to a town.
+**The two classes behind them, `Q2179958` (district of Peru) and `Q509686`
+(province of Peru), are not in `data/imports/wikidata-seeds.json` → `classes`
+and were not added**: the places were written by hand, so the table was never
+asked, and a fire that wants the import to make them itself is the fire that
+should argue for the two rows.
+
+**Nothing was invented.** Every point and every name is the item's own, and the
+three records whose lead names a town the atlas does not hold as a place
+(Pillpinto, Saylla, Pucacasa) point at the area their `P276` gives and not at a
+coordinate somebody chose.
+
+### Filing (A3, A6, A8), and the main count
+
+**All six file under `rebellion-of-tupac-amaru-ii`** (1780-11-04 – 1783-03-15),
+which the atlas has held since M53, and every one of the six falls inside it —
+the earliest is Sangarará on 18 November 1780 and the latest Pucacasa on 22
+March 1781. `P361` on all six items is `Q1806552`, the rising itself. **The
+main count does not move**: six records arrive and not one of them is main.
+
+No record took a second parent under A8. Each is an engagement of one rising
+and fits one umbrella.
+
+### The edges (A5, M72)
+
+Six, each from what the article states in so many words, each `probable` —
+rule 22 refuses `consensus` on a Wikipedia citation. **One runs from a record
+the atlas already held into the batch**, which is how the six reached the
+largest component; the other five are within the batch.
+
+| the edge | into/from what existed | what the source says |
+| --- | --- | --- |
+| `rebellion-of-tupac-amaru-ii --enabled--> siege-of-cusco-1781` | from what existed | *"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive."* |
+| `battle-of-sangarara --enabled--> siege-of-cusco-1781` | within the batch | the same sentence, which names Sangarará as one of the three advantages |
+| `battle-of-pillpinto --enabled--> siege-of-cusco-1781` | within the batch | *"…key victories, such as the capture of Ayaviri, the Battle of Pillpinto, and especially the Battle of Sangarará, which consolidated rebel control over the Cusco region."* |
+| `capture-of-ayaviri --enabled--> siege-of-cusco-1781` | within the batch | the same sentence |
+| `battle-of-saylla --precondition-of--> siege-of-cusco-1781` | within the batch | the royalist cavalry *"destroyed Castelo's vanguard in the town of Saylla"* on 2 January, and *"On 4 January, Túpac Amaru ordered his troops to move around the city"* |
+| `siege-of-cusco-1781 --enabled--> battle-of-pucacasa` | within the batch | *"Following the rebel retreat, momentum of the rebels slowed down"*; *"The royalists took the offensive"*; and Pucacasa was *"the first major engagement between the Spanish reinforcements from Lima and Túpac Amaru's main army"* |
+
+**Two edges name a second author (M72).** `walker-2014-the-tupac-amaru-rebellion`
+is a new source record: Charles F. Walker, *The Tupac Amaru Rebellion* (Belknap
+Press, 2014), which is the work the English article itself cites for the
+royalist march on Tinta and the night attack at Pucacasa. It is **cited and not
+read**, which is part of why both edges stay `probable`.
+
+**Two edges say in their own explanation what the source does not say.**
+Pillpinto's and Ayaviri's rest on the article's summary sentence, which groups
+them with Sangarará as the first phase's key victories; the sentence that gives
+the reason for the march on Cusco names Quiquijana, Sangarará and Lampa and
+**not** those two. Each explanation states that gap rather than reading over it,
+which is why the type is `enabled` and not something stronger.
+
+### What the corpus refused
+
+**Three edges written and then deleted: a part may not point at its own
+umbrella here, because the umbrella starts first.** `battle-of-sangarara`,
+`battle-of-pillpinto` and `capture-of-ayaviri` were each first written as
+`--enabled--> rebellion-of-tupac-amaru-ii`, on the shape batch 14 defended
+(`operation-rosary --caused--> falklands-war`, *"an edge from a part to its own
+umbrella… written on purpose"*). **Rule 4 refused all three**: the rising is
+dated from 4 November 1780 and the three battles are 18 November, 26 November
+and 6 December, so each edge ran backwards in time. Batch 14's edge worked
+because the landing of 2 April *opened* the Falklands War; here the rising was
+already three weeks old. **The rule the next fire can have for free: the
+part-to-umbrella edge is available only where the part is what began the
+umbrella.** What carries the argument instead is the edge from the umbrella
+*forward* into the siege, which is the same claim read in the direction time
+runs.
+
+### Deviations
+
+**1247. A `curl` at `en.wikipedia.org`'s `api.php` is refused whatever
+user-agent it carries, and `Special:Export` is not.** Deviation of the
+sixteenth fire said the import's own user-agent gets through where a bare one
+does not; this fire tried exactly that against `action=query&prop=extracts` and
+got *"You are making too many requests to the API"* twice, three seconds apart.
+`https://en.wikipedia.org/wiki/Special:Export/<Title>` answered at once, with
+the revision id in the XML and the wikitext whole — which is more than the
+extract endpoint gives, because the `<ref>` tags name the works the article
+cites and that is what M72's second author comes from. **The rule: for article
+text beyond the cached lead, use `Special:Export` and read the revision id out
+of the XML.** The REST summary endpoint also answered; it is the lead only.
+
 ## Where the run stands, for the fire that picks it up
 
 *23 September, after the sixteenth fire and its fifteenth batch.*

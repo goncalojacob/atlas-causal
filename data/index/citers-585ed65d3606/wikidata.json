@@ -2798,6 +2798,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pillpinto",
+      "kind": "event",
+      "locator": "Q137360138"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-port-arthur",
       "kind": "event",
       "locator": "Q1363925"
@@ -2807,6 +2813,12 @@
       "id": "battle-of-prague-1648",
       "kind": "event",
       "locator": "Q3494380"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pucacasa",
+      "kind": "event",
+      "locator": "Q11688225"
     },
     {
       "dissent": false,
@@ -2834,9 +2846,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sangarara",
+      "kind": "event",
+      "locator": "Q4872293"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "Q2153101"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saylla",
+      "kind": "event",
+      "locator": "Q140068655"
     },
     {
       "dissent": false,
@@ -3107,6 +3131,12 @@
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "Q121754881"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-ayaviri",
+      "kind": "event",
+      "locator": "Q140157741"
     },
     {
       "dissent": false,
@@ -5003,6 +5033,12 @@
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "Q2398589"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cusco-1781",
+      "kind": "event",
+      "locator": "Q11794853"
     },
     {
       "dissent": false,

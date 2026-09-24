@@ -264,6 +264,15 @@
         }
       ]
     },
+    "ayaviri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "azawad": {
       "from": "git",
       "versions": [
@@ -2593,7 +2602,7 @@
       ]
     },
     "kwantung-peninsula": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2741,7 +2750,7 @@
       ]
     },
     "liaodong-peninsula": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2750,7 +2759,7 @@
       ]
     },
     "liaoyang": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2935,7 +2944,7 @@
       ]
     },
     "lushunkou": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4071,6 +4080,15 @@
         }
       ]
     },
+    "pillpinto-district": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "place-de-la-concorde": {
       "from": "git",
       "versions": [
@@ -4369,6 +4387,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "quispicanchi-province": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -4827,6 +4854,15 @@
         }
       ]
     },
+    "sangarara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "sanl-urfa": {
       "from": "git",
       "versions": [
@@ -4911,6 +4947,15 @@
         }
       ]
     },
+    "saylla-district": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "schengen": {
       "from": "git",
       "versions": [
@@ -4981,7 +5026,7 @@
       ]
     },
     "shenyang": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6053,7 +6098,7 @@
       ]
     },
     "yalu-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6062,7 +6107,7 @@
       ]
     },
     "yellow-sea": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

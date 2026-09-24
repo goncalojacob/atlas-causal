@@ -29,6 +29,42 @@
         }
       ]
     },
+    "battle-of-pillpinto--siege-of-cusco-1781--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-sangarara--siege-of-cusco-1781--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-saylla--siege-of-cusco-1781--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-ayaviri--siege-of-cusco-1781--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to": {
       "from": "git",
       "versions": [
@@ -74,6 +110,15 @@
         }
       ]
     },
+    "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "rebellion-of-tupac-amaru-ii--spanish-american-wars-of-independence--precondition-of": {
       "from": "git",
       "versions": [
@@ -89,6 +134,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-cusco-1781--battle-of-pucacasa--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },

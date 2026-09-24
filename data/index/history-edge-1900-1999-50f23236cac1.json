@@ -1243,7 +1243,7 @@
       ]
     },
     "battle-of-liaoyang--battle-of-mukden--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1270,7 +1270,7 @@
       ]
     },
     "battle-of-mukden--treaty-of-portsmouth--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1279,7 +1279,7 @@
       ]
     },
     "battle-of-nanshan--siege-of-port-arthur--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1288,7 +1288,7 @@
       ]
     },
     "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1313,7 +1313,7 @@
       ]
     },
     "battle-of-the-yalu-river-1904--battle-of-liaoyang--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1322,7 +1322,7 @@
       ]
     },
     "battle-of-the-yalu-river-1904--battle-of-nanshan--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4873,7 +4873,7 @@
       ]
     },
     "siege-of-port-arthur--battle-of-mukden--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4882,7 +4882,7 @@
       ]
     },
     "siege-of-port-arthur--battle-of-the-yellow-sea--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4891,7 +4891,7 @@
       ]
     },
     "siege-of-port-arthur--battle-of-tsushima--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

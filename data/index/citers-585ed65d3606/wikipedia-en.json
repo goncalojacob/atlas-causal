@@ -1952,6 +1952,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pillpinto--siege-of-cusco-1781--enabled",
+      "kind": "edge",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, lead and \"Siege of Cusco\""
+    },
+    {
+      "dissent": false,
       "id": "battle-of-port-arthur--battle-of-the-yellow-sea--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Yellow Sea\", revision 1375165941, § Background"
@@ -1973,6 +1979,18 @@
       "id": "battle-of-ras-lanuf--second-battle-of-benghazi--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ras Lanuf\", revision 1372942414, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sangarara--siege-of-cusco-1781--enabled",
+      "kind": "edge",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saylla--siege-of-cusco-1781--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
     },
     {
       "dissent": false,
@@ -2123,6 +2141,12 @@
       "id": "budapest-memorandum--russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-ayaviri--siege-of-cusco-1781--enabled",
+      "kind": "edge",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, lead and \"Siege of Cusco\""
     },
     {
       "dissent": false,
@@ -4280,6 +4304,12 @@
     },
     {
       "dissent": false,
+      "id": "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled",
+      "kind": "edge",
+      "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812, \"Siege of Cusco\""
+    },
+    {
+      "dissent": false,
       "id": "rebellion-of-tupac-amaru-ii--spanish-american-wars-of-independence--precondition-of",
       "kind": "edge",
       "locator": "\"Spanish American wars of independence\", revision 1375550213, \"Background\""
@@ -4667,6 +4697,12 @@
       "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cusco-1781--battle-of-pucacasa--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Cusco (1781)\", revision 1370740510, \"Aftermath\"; \"Rebellion of Túpac Amaru II\", revision 1376254812, \"Spanish punitive expedition\""
     },
     {
       "dissent": false,
@@ -7724,6 +7760,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pillpinto",
+      "kind": "event",
+      "locator": "\"Battle of Pillpinto\", revision 1370586073"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-port-arthur",
       "kind": "event",
       "locator": "\"Battle of Port Arthur\", revision 1376392782"
@@ -7733,6 +7775,12 @@
       "id": "battle-of-prague-1648",
       "kind": "event",
       "locator": "\"Battle of Prague (1648)\", revision 1370586580"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pucacasa",
+      "kind": "event",
+      "locator": "\"Battle of Pucacasa\", revision 1370586703"
     },
     {
       "dissent": false,
@@ -7760,9 +7808,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sangarara",
+      "kind": "event",
+      "locator": "\"Battle of Sangarará\", revision 1375224690"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "\"Battle of Santa Clara\", revision 1370588555"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-saylla",
+      "kind": "event",
+      "locator": "\"Battle of Saylla\", revision 1370588789"
     },
     {
       "dissent": false,
@@ -8027,6 +8087,12 @@
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "\"Campaign of Porto Calvo\", revision 1373668892"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-ayaviri",
+      "kind": "event",
+      "locator": "\"Capture of Ayaviri\", revision 1370608267"
     },
     {
       "dissent": false,
@@ -10037,6 +10103,12 @@
       "id": "siege-of-cusco",
       "kind": "event",
       "locator": "\"Siege of Cusco\", revision 1370740508"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cusco-1781",
+      "kind": "event",
+      "locator": "\"Siege of Cusco (1781)\", revision 1370740510"
     },
     {
       "dissent": false,
