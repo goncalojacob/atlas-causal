@@ -18,13 +18,14 @@ import { eventsOfFocus } from '../lens.js';
 import { largeEvent } from '../large.js';
 import { parentsOf } from '../parts.js';
 import { sectionHtml, openSection } from './sections.js';
-import { EDGE_TYPE_LABEL, PRECISION_LABEL } from '../vocab.js';
+import { EDGE_TYPE_LABEL, PRECISION_LABEL, isCoarse } from '../vocab.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
 // row a card is built from carries no signature.
 import { standingSlot, fillStanding } from '../standing.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 // What a card calls each edge type, from the one list of them (vocab.js).
 export const TYPE_LABEL = EDGE_TYPE_LABEL;
@@ -56,8 +57,14 @@ function whenLine(ctx, event) {
   const { when } = event;
   let text = formatInterval(when);
   if (when.date) {
+    // **The calendar only where it is not the one a reader assumes** (M86 §5,
+    // review A finding 9). "1939-09-01 (gregorian)" tells a reader nothing
+    // they did not take for granted; "1580-08-25 (julian)" is a fact about the
+    // date. The default is a function of the year and not of the record
+    // (util/dates.js), so this asks the same question the validator does.
     const calendar = when.calendar ?? defaultCalendar(ctx.startYear(event));
-    text += ` · ${esc(when.date)} (${calendar})`;
+    const said = calendar === defaultCalendar(ctx.startYear(event)) ? '' : ` (${calendar})`;
+    text += ` · ${esc(when.date)}${said}`;
   }
   return text;
 }
@@ -286,6 +293,15 @@ function whereHtml(ctx, event) {
   const place = ctx.atlas.placeOf(event);
   const where = ctx.atlas.pointOf(event);
   if (!where) return ' · <span class="muted">no place: timeline only</span>';
+  // **Nothing at all where the card already says the map washes a region**
+  // (M86 §5, review A finding 9). "World War II · 1939–1945 · Russia (the
+  // state's own point) · Europe" tells a reader the Second World War happened
+  // in Russia; the paragraph under the head already says the map washes
+  // Europe rather than putting a dot in one city, which is the true sentence
+  // about a coarse place. A city keeps its line: a dot on a town is what the
+  // record actually knows. The lane is still printed after this, so the head
+  // still says where the event is drawn.
+  if (isCoarse(where.precision) && largeEvent(ctx.atlas, event)?.region) return '';
   const name = place
     ? `<button type="button" class="link" data-action="place" data-id="${esc(place.id)}">${esc(place.name)}</button>`
     : esc(where.label);
@@ -450,7 +466,7 @@ export function renderEventCard(ctx, { container, event, found, state, mine, rem
   atlas.record('event', event.id).then(
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
-      container.querySelector('[data-slot="summary"]').innerHTML = `<p>${esc(rec.summary)}</p>`;
+      container.querySelector('[data-slot="summary"]').innerHTML = summaryHtml(rec.summary);
       // Who has read this, from the record's own `review` block — the same
       // fields the validator counts and the masthead's count is built from
       // (standing.js). It waits for the file, like the summary, because the

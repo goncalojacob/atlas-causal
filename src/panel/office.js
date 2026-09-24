@@ -22,6 +22,7 @@ import { sectionHtml, openSection } from './sections.js';
 import { standingSlot, fillStanding } from '../standing.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 // The section key of the holders, so panel.js and the tests name it once.
 export const HOLDERS_SECTION = 'holders';
@@ -102,7 +103,7 @@ export function renderOfficeCard(ctx, {
     (rec) => {
       if (!ctx.isCurrent(mine)) return;
       const slot = container.querySelector('[data-slot="office-summary"]');
-      if (slot && rec.summary) slot.innerHTML = `<p>${esc(rec.summary)}</p>`;
+      if (slot && rec.summary) slot.innerHTML = summaryHtml(rec.summary);
       fillStanding(container, rec);
     },
     () => {},

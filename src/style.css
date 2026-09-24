@@ -258,6 +258,10 @@ input, select, textarea { accent-color: var(--cobalt); }
    the graph since the graph had them, which is what taking M48's screenshot
    showed (deviation 734). */
 .bar .layers[hidden], .bar .graph-filters[hidden] { display: none; }
+/* The degree floor while an event is open (M86 §8). It is off by rule inside a
+   lens, so it is drawn as off rather than left looking live: the same ink the
+   interface uses for what it is not asserting. */
+.bar .graph-filters select:disabled { color: var(--ink-soft); border-color: var(--line); opacity: 0.6; cursor: not-allowed; }
 /* The two collapsed groups — the base map, in the legend, and the categories,
    which are a control of their own since M68. Collapsed, so the phone drawer
    keeps four targets instead of nineteen, and every row carries its own symbol
@@ -1845,6 +1849,13 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 /* The way out to somebody else's account of the same thing. Set apart from
    the card's own text: what the atlas says is the summary below it. */
 .panel .wikipedia { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
+/* The credit under a quoted lead, and the importer's own note under that
+   (M86 §1). One line in the interface's face and not the atlas's, because it
+   is a statement about where the words above came from and not part of them;
+   the note is behind `?review=1` and is never on the published page. */
+.panel .summary-credit { margin: var(--space-1) 0 0; font-family: var(--font-ui); font-size: var(--text-xs); }
+.panel .summary-credit a { color: var(--cobalt); }
+.panel .provenance { margin: var(--space-2) 0 0; font-size: var(--text-sm); }
 .panel .wikipedia a { color: var(--cobalt); }
 .panel .wikipedia .muted { margin-left: var(--space-2); }
 

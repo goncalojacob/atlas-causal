@@ -77,7 +77,11 @@ test('a stack says how many events it hides, in the words its own title uses', (
 
   // The badge beside the mark: the same count, in the same words, and never a
   // bare "+46", which a reader of the first screen reads as a typo (A4).
-  for (const count of [2, 3, 47]) {
+  // From three up, because since M86 §2 a stack of two carries no badge at
+  // all: its ring has already said "more than one here", and "1 more" on
+  // twenty marks was most of the words on the first screen (review A, 24
+  // September, finding 11). `tests/m86.test.mjs` is where that floor is held.
+  for (const count of [3, 47]) {
     const badge = stackBadge(count);
     assert.doesNotMatch(badge, /^\+\d+$/, `"${badge}" is a bare count behind a plus`);
     assert.match(badge, new RegExp(`^${count - 1} more$`), 'and it says how many are hidden');

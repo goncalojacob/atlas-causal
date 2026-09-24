@@ -319,6 +319,17 @@ export function stackTitle(name, count, { span = null } = {}) {
 
 // And the badge drawn beside the mark, in the title's own words and short
 // enough to sit on a mark: "46 more". Never `+46`.
+//
+// **And nothing at all where it would read "1 more"** (M86 §2, review A
+// finding 11). About twenty marks on the first screen said "1 more" beside
+// "12 more" at Rio and "9 more" at Lisbon, so a stack of two carried a badge
+// as loud as a stack of thirteen, and the badges were most of the words on
+// the picture. The double ring already says "more than one here" — it is a
+// row of the key — and the title still says how many; what the badge is for
+// is the count a reader could not guess from the ring.
+export const BADGE_FLOOR = 2;
+
 export function stackBadge(count) {
-  return `${Math.max(0, count - 1)} more`;
+  const hidden = Math.max(0, count - 1);
+  return hidden < BADGE_FLOOR ? '' : `${hidden} more`;
 }

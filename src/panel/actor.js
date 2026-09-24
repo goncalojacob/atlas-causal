@@ -21,6 +21,7 @@ import { attributionHtml, attributionSource } from '../licensing.js';
 import { standingSlot, fillStanding } from '../standing.js';
 // The cross in the card's top right, the same on every card (M84).
 import { closeControlHtml } from './close.js';
+import { summaryHtml } from './summary.js';
 
 // What a relation is called from each end, and the order the groups are drawn
 // in: both from the one list of relation types (vocab.js), which is also
@@ -439,7 +440,7 @@ export function renderActorCard(ctx, { container, actor, mine, state = null, rem
       // first true of (I8, A3) — which is this actor whenever the actor is
       // itself an import's.
       const drawn = [rec, ...(ctx.atlas.relationsByActor.get(actor.id) ?? []).map((r) => r.relation)];
-      container.querySelector('[data-slot="actor-summary"]').innerHTML = `${attributionHtml(attributionSource(drawn))}<p>${esc(rec.summary)}</p>${place ? `<p class="meta">${place}</p>` : ''}`;
+      container.querySelector('[data-slot="actor-summary"]').innerHTML = `${attributionHtml(attributionSource(drawn))}${summaryHtml(rec.summary, { extra: place ? `<p class="meta">${place}</p>` : '' })}`;
       container.querySelector('[data-slot="actor-sources"]').innerHTML = rec.sources?.length
         ? ctx.citationsHtml(rec.sources, '', rec)
         : '<p class="muted">This actor cites nothing yet.</p>';

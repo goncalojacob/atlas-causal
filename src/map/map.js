@@ -25,7 +25,8 @@ import { esc } from '../util/esc.js';
 import { normalizeBbox } from '../state.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import {
-  EM, EM_TRACKED, LABEL_HALO, LABEL_SIZE, LABEL_ZOOM, LIMITS, PRIORITY, placeLabels,
+  EM, EM_TRACKED, LABEL_HALO, LABEL_SIZE, LABEL_ZOOM, EVENT_LABEL_ZOOM, RESTING_EVENT_LABELS,
+  LIMITS, PRIORITY, placeLabels,
 } from './labels.js';
 // Os lugares que este atlas nomeia e o Natural Earth não: uma freguesia, um
 // distrito, um campo de batalha (names.js).
@@ -703,10 +704,17 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // função do que já está na chave — a transformação, a janela, as camadas, os
   // ficheiros chegados.
   function drawLabels(box) {
-    // Nada é escrito no mundo inteiro, e a ronda nem chega a perguntar: um
-    // nome à escala do planeta é ruído, e é a mesma frase que as etiquetas dos
-    // acontecimentos sempre disseram (labels.js).
-    if (transform.k < LABEL_ZOOM) {
+    // **Os acontecimentos são escritos a qualquer zoom** (M86 §2, achado A2 da
+    // revisão de 24 de Setembro). `LABEL_ZOOM` continua a valer para o mapa de
+    // base — dezassete cidades de Natural Earth à escala do mundo seriam
+    // dezassete nomes de outro mapa por cima do primeiro fotograma —, mas a
+    // primeira imagem deste atlas era sessenta círculos numerados e nem um
+    // nome, que é o que um financiador vê primeiro. Os acontecimentos *são* o
+    // mapa: têm um piso só seu, e um teto de dez, que é o que o colocador já
+    // sabe fazer por peso (labels.js).
+    const far = transform.k < EVENT_LABEL_ZOOM;
+    const baseNames = transform.k >= LABEL_ZOOM;
+    if (far) {
       if (labelsGroup.childNodes.length > 0) labelsGroup.replaceChildren();
       return [];
     }
@@ -742,14 +750,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const named = new Set();
     for (const { id, layer } of baseLayers) {
       const priority = LABELLED_LAYERS[id];
-      if (priority === undefined || !on.includes(id)) continue;
+      if (priority === undefined || !on.includes(id) || !baseNames) continue;
       candidates.push(...layer.labelCandidates({ priority, placeOf, weightOf, year }));
       if (layer.placeIds) for (const placeId of layer.placeIds()) named.add(placeId);
     }
     // E os lugares deste atlas que o Natural Earth não tem — treze dos vinte e
     // seis. Ao lado das cidades e sob o mesmo interruptor: quem desligou os
     // nomes das cidades não pediu estes (names.js).
-    if (on.includes('cities')) {
+    if (on.includes('cities') && baseNames) {
       candidates.push(...placeCandidates(atlas.places.values(), {
         drawn: named,
         project: projection.project,
@@ -768,7 +776,13 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // decisão que a classe, e uma camada que a tomasse teria de saber com que
     // espaçamento a folha de estilo a vai desenhar.
     const measured = candidates.map((c) => ({ ...c, em: LABEL_EM[c.priority] ?? EM }));
-    const placed = placeLabels(measured, { k: transform.k, view: box, limits: LIMITS });
+    const placed = placeLabels(measured, {
+      k: transform.k,
+      view: box,
+      // Ao longe só há acontecimentos, e há dez: o limite é por prioridade e é
+      // o colocador que escolhe os dez mais pesados, pela ordem que já tem.
+      limits: baseNames ? LIMITS : { ...LIMITS, [PRIORITY.events]: RESTING_EVENT_LABELS },
+    });
     labelsGroup.replaceChildren();
     for (const label of placed) {
       const candidate = byKey.get(`${label.priority}|${label.id}`);

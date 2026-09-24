@@ -325,8 +325,8 @@ export function createPanel(container, {
     const items = citations.map((c) => {
       const src = atlas.sources.get(c.source);
       if (!src) return `<li class="citation missing">unknown source <code>${esc(c.source)}</code></li>`;
-      const ids = identifiers(src).map(({ label, href }) => (href
-        ? `<a href="${esc(href)}" rel="noopener" target="_blank">${esc(label)}</a>`
+      const ids = identifiers(src).map(({ label, href, title }) => (href
+        ? `<a href="${esc(href)}" rel="noopener" target="_blank"${title ? ` title="${esc(title)}"` : ''}>${esc(label)}</a>`
         : `<span class="unsafe-url">${esc(label)}</span>`));
       // Whether somebody has opened the book is review apparatus, and off the
       // demo it is not what a citation is for (M82, A2; demo.js). The flag on,
