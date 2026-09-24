@@ -1,0 +1,36 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "marcelo-rebelo-de-sousa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "geringonca-2015--marcelo-elected-president-2016--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "marcelo-elected-president-2016",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "marcelo-rebelo-de-sousa--psd--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "marcelo-rebelo-de-sousa-president-2016",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "cne-presidential-2016",
+  "schema": 1
+}
