@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sack-of-rome-1527",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q465627",
+  "wikipedia": {
+    "en": "Sack of Rome (1527)",
+    "pt": "Saque de Roma (1527)"
+  },
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q465627"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Rome (1527)\", revision 1372345219"
+    }
+  ],
+  "title": "Sack of Rome (1527)",
+  "summary": "The English Wikipedia article \"Sack of Rome (1527)\", at revision 1372345219, opens: \"The Sack of Rome, then part of the Papal States, followed the capture of Rome on 6 May 1527 by the mutinous troops of Charles V, Holy Roman Emperor, during the War of the League of Cognac. Charles V only intended to threaten military action to make Pope Clement VII accept his terms. However, the Imperial army were largely unpaid and mutinied. Despite being ordered not to storm Rome, they broke into the scarcely defended city and began looting, killing, and holding citizens for ransom without any restraint. Clement VII took refuge in Castel Sant'Angelo after the Swiss Guard were annihilated in a delaying rear guard action; he remained there until a ransom was paid to the pillagers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q465627, imported by tools/import/wikidata.mjs. The item's own description reads \"1527 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1527,
+    "end": 1527,
+    "date": "1527-05-06"
+  },
+  "place": "rome",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-league-of-cognac",
+  "category": "war",
+  "actors": []
+}

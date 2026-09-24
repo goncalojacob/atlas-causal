@@ -1441,8 +1441,41 @@
         "Q920679",
         "Q1358032",
         "Q4538445",
-        "Q7792"
+        "Q7792",
+        "Q3636372",
+        "Q3312328",
+        "Q699475",
+        "Q1300742",
+        "Q3485875",
+        "Q110448326",
+        "Q575924",
+        "Q124249264",
+        "Q465627",
+        "Q475596",
+        "Q1863571",
+        "Q7003",
+        "Q6537",
+        "Q200262",
+        "Q208962",
+        "Q42145",
+        "Q42793",
+        "Q11703607",
+        "Q6221"
       ]
+    }
+  },
+  "refused": {
+    "Q11703607": {
+      "on": "2026-09-24",
+      "why": "none of its classes (Q19841484) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q42145": {
+      "on": "2026-09-24",
+      "why": "none of its classes (Q747074) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q42793": {
+      "on": "2026-09-24",
+      "why": "none of its classes (Q747074) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }

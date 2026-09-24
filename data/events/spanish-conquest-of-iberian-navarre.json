@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-iberian-navarre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3312328",
+  "wikipedia": {
+    "en": "Spanish conquest of Iberian Navarre",
+    "pt": "Conquista de Navarra"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3312328"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Iberian Navarre\", revision 1372121033"
+    }
+  ],
+  "title": "Spanish conquest of Iberian Navarre",
+  "summary": "The English Wikipedia article \"Spanish conquest of Iberian Navarre\", at revision 1372121033, opens: \"The Spanish conquest of the Iberian part of Navarre was initiated by Ferdinand II of Aragon and completed by his grandson and successor Holy Roman Emperor Charles V in a series of military campaigns lasting from 1512 to 1529. Ferdinand was both the king of Aragon and regent of Castile in 1512. When Pope Julius II declared a Holy League against France in late 1511, Navarre attempted to remain neutral. Ferdinand used this as an excuse to attack Navarre, conquering it while its potential protector, France, was beset by England, Venice, and Ferdinand's own Italian armies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3312328, imported by tools/import/wikidata.mjs. The item's own description reads \"war in the early sixteenth century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1512,
+    "end": 1529
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "italian-wars",
+  "category": "war",
+  "actors": []
+}

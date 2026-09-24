@@ -21992,6 +21992,57 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b batch 23 — the War of the League of Cambrai's nine unimported children,
+and Europe's sixteenth century, 24 September.** The twenty-third fire merged
+`origin/m0` (eighteen commits, M87) and `origin/m42` (six, its batch 49) before
+importing anything; the first conflicted only in `STATUS.md`, the second in 236
+`data/index/` paths as rename/rename and in four prose files, and both were
+resolved as the protocol says. **The cell is Europe's sixteenth century**, at 19
+active and 1 main — the thinnest in this partition that is not against the 1492
+wall, named by the eighteenth fire and never taken in six fires — and the vein is
+the nine children of `war-of-the-league-of-cambrai` that fire listed, plus the
+Sack of Rome of 1527. **Ten items imported, ten created, none enriched, none
+ambiguous, one refused twice before a class line settled it**, over four
+`--import` runs and 33 calls: `battle-of-casaloldo`,
+`battle-of-the-citadel-of-vicenza`, `sack-of-brescia`, `battle-of-saint-mathieu`,
+`spanish-conquest-of-iberian-navarre`, `siege-of-crema-1514`,
+`battle-of-the-spurs`, `siege-of-dijon`, `battle-of-flodden` and
+`sack-of-rome-1527`. Nine are filed under `war-of-the-league-of-cambrai` or
+`war-of-the-league-of-cognac` and the tenth under `italian-wars`, because the
+Navarre conquest runs 1512–1529 and Cambrai ends in 1516; all three umbrellas are
+children of `italian-wars`, so **the main count does not move: 242 before and 242
+after**. **Eight place records were written and the import wrote all eight** —
+`casaloldo`, `vicenza`, `brescia`, `iroise-sea`, `crema-lombardy`,
+`enguinegatte`, `dijon` and `branxton-northumberland` — every precision from the
+item's own class and none hard-coded, with `rome` reused; **A14(2)'s lane guard
+passes on all nine**, eight inside a lane polygon and `iroise-sea` at 0.25° from
+one, so nothing was cleared. **All ten carry the cached English lead as their
+summary** at a named revision with the `summary-from-lead` flag, and deviation
+1260's check — the cached title against the record's own `wikipedia.en` — is
+clean on all ten for the first time since it was written. **Five edges**, each
+`probable`, each quoting the sentence that carries it, **none of them running
+from a parent to its own child (A14)**; one new source record,
+`dossena-2014-battaglia-di-ombriano`, from the Crema article's own
+`<ref name="dossena" />`, and the other four explanations say why the sentence
+they quote carries no footnote. **Five claims were read and not written**, the
+first of them the one the Navarre article states outright — Pavia *"sealed the
+division of Navarre"* — which rule 4 refuses because a seventeen-year record
+cannot take an edge from inside its own span. **The largest component does not
+move, 625 to 625, and the batch says why**: that component is the Atlantic and
+modern story, the Italian Wars are a second island, and this batch grew that
+island **from 8 to 12**, now the atlas's second largest. `P710` was read on all
+ten and refused on all ten: they name twelve polities between them and the atlas
+holds one, `kingdom-of-navarre`, which this batch's own place run created because
+the Navarre conquest's `P276` is a polity and not a place. `docs/m53-polities.md`
+§4.1 is re-taken at **383 of 911** — and the previous row, 384 of 901, was a
+miscount of the actor's own dates and is corrected with it. The corpus is **911
+active**, Europe before 1900 is **99**, the cell is **29 with its one main
+untouched**, and the `americas` lane is unchanged at 221. Deviations **1265** (a
+merge conflict in `sources.html` and `narratives.html` is resolved by checking
+one side out and rebuilding, never by deleting them, which `build-index.mjs`
+dies on) to **1272** (`region` and `regionNote` come off together or rule 10
+errors). `docs/m42b-pool.md` → "Batch 23" is the full account.
+
 **M42b batch 21 — the six other conflicts of the Napoleonic Wars, and Europe's
 nineteenth century, 24 September.** The twentieth fire merged `origin/m0` and
 `origin/m42` before importing anything; neither conflicted and the rebuilt index

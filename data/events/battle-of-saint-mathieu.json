@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-saint-mathieu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q575924",
+  "wikipedia": {
+    "en": "Battle of Saint-Mathieu",
+    "pt": "Batalha de Saint-Mathieu"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q575924"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saint-Mathieu\", revision 1370588044"
+    }
+  ],
+  "title": "Battle of Saint-Mathieu",
+  "summary": "The English Wikipedia article \"Battle of Saint-Mathieu\", at revision 1370588044, opens: \"The Battle of Saint-Mathieu took place on 10 August 1512 during the War of the League of Cambrai, near Brest, France, between an English fleet of 25 ships commanded by Sir Edward Howard and a Franco-Breton fleet of 22 ships commanded by René de Clermont. It is possibly the first battle between ships using cannon through ports, although this played a minor role in the fighting. This was one of only two full-fledged naval battles fought by King Henry VIII's Tudor navy, along with the later Battle of the Solent. During the battle, each navy's largest and most powerful ship —  Regent and the Marie-la-Cordelière – were destroyed in a large explosion aboard the latter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q575924, imported by tools/import/wikidata.mjs. The item's own description reads \"1512 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1512,
+    "end": 1512,
+    "date": "1512-08-10"
+  },
+  "place": "iroise-sea",
+  "region": null,
+  "parent": "war-of-the-league-of-cambrai",
+  "category": "war",
+  "actors": []
+}
