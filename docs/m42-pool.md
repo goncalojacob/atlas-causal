@@ -7546,3 +7546,162 @@ latest qualified value and omits the figure where there is none, so the Soviet
 Union carries 293 million people (1989) and the German Empire carries no
 population rather than a number with no year against it. Five of the nineteen
 carry no area, four no population, two neither.
+
+## A14 (6) — the seven cleanups, the fifteen tombstones and the Holocaust
+
+*24 September, the 04:58Z fire. Six of the seven read only what is on disk;
+the Holocaust and the tombstones were read from their own articles at named
+revisions.*
+
+### The 21 titles
+
+Every active event whose `title` is its article's title minus the parenthetical
+— 19 exactly, and 2 more that differ only in case, which is the review's 21.
+Each is retitled to the article's own title at the revision the cache holds,
+under A12(5), and carries `title-from-article` and a `wikipedia-en` locator at
+that revision. **No id moved and no reference was rewritten**: an id is not a
+title. `Black Monday` becomes `Black Monday (1987)`, `Treaty of Paris`
+becomes `Treaty of Paris (1951)` beside `treaty-of-paris-1783` and `-1898`,
+`Eastern Front` becomes `Eastern Front (World War II)`, and
+`Libyan Civil War` and `Myanmar Civil War` take their articles' lower-case
+`civil war` with the years. **21 retitled, 0 refused.**
+
+### London
+
+`london-q84`, written by A9 on 22 September from Q84, is merged into `london`,
+written by hand in M50 — one city, one point, two ids. `Q84`, the article and
+the item's four other names go to the survivor and `london-q84` gives them up,
+because **rule 21 gives one item to one record** and the validator says so in
+two errors if you try to leave the item on both. The two events that pointed at
+the merged id — `anglo-irish-treaty` and `treaty-of-london-q584617` — point at
+`london`. `supersededBy` is how the old id keeps resolving; an alias would not
+do, because rule 2 refuses an alias equal to another record's id.
+
+### The 94 place placeholders
+
+`placeRecord()` wrote the import's own placeholder sentence on every place it
+created while the fires' hand-written places wrote `summary: null`, so one
+pass left two shapes and `summary-imported` counted one of them. **94 places
+become `summary: null`**, which is what a record that cites nothing and
+asserts nothing should say. The warning drops from 109 to 15 (12 events, 3
+actors), and those twelve events are the ones with no English article, which
+is review finding 11 and a person's.
+
+### The open ends
+
+**18 open-ended imports take `end-unstated`** — every active event with
+`end: null`, `origin.tool: wikidata` and no flag. The flag says the *item*
+states no end, which is what `intervalFor()` writing `end: null` means, and it
+is as true of `covid-19-pandemic` as of `kashmir-conflict`. Two are left
+because they are not imports: `nova-republica-brazil-since-1985` and
+`third-portuguese-republic-since-1974`, written by hand as period records.
+`2011-bahraini-uprising` is not among them — A14(1) closed it at 2014 from its
+lead. The stale flag on `chilean-war-of-independence` is cleared; **its note
+is not touched**, because the 465-character account it carries and the
+bookkeeping line would not both fit in 500 (deviation 1408 again), and the
+account is worth more than the line.
+
+### The Holocaust, divided (brief §5)
+
+The sources give a boundary and it is stated twice. At revision 1376446924 the
+article's lead reads *"From 1941 to 1945, Nazi Germany and its collaborators
+systematically murdered around six million Jews across German-occupied
+Europe"*, its § Mass shooting reads *"The systematic murder of Jews began in
+the Soviet Union in 1941"*, and its § Persecution of Jews dates the first
+measures to 1933 — *"In 1933, Jews were banned or restricted from several
+professions and the civil service"* — and the violence of that period *"from
+1933 to 1939"*. So:
+
+- **`the-persecution-of-the-jews-1933-1941`**, 1933–1941, main.
+- **`the-extermination-of-the-jews-1941-1945`**, 1941–1945, **filed under
+  `world-war-ii`**.
+- `the-holocaust` is **merged**, superseded by the extermination record, which
+  inherits its Wikidata item, its article and three of its four edges.
+
+**The edges are inherited, not withdrawn.** §5 says `supersededBy` points at
+"the one that inherits its edges", so each edge is renamed in place with its
+former id in `aliases` rather than retracted: three go to the extermination
+record and one, `--porajmos--enabled`, goes to the **persecution** record,
+because its own explanation argues from the Nuremberg Laws of 1935 and rule 4
+refuses it from a record starting in 1941. `operation-reinhard` (1942–1943) is
+filed under the extermination record; `the-holocaust-in-romania` (1940–1944)
+under it and `world-war-ii`.
+
+**§5 asked for `world-war-ii --enabled--> <the second>` and this pass writes no
+such edge**, because A14 suspends an edge from a parent to its own child until
+the owner decides C8, and the extermination record is filed under the war. The
+filing carries the same connection to a reader — the extermination opens
+inside the Second World War — and costs no disputed edge. **That filing is also
+what keeps A6**: two main records out of one would have raised the main count,
+and main is **242 before and 242 after**.
+
+**What it cost.** Active events 858 → **859**; components **192 → 193** and the
+largest **609 → 608**, because `the-persecution-of-the-jews-1933-1941` and
+`porajmos` are now a two-node component of their own: the persecution record
+holds the one edge that could not stay on the extermination record, and
+`porajmos` has no other. Rejoining it wants a sentence from the article about
+the persecution and something the atlas holds, and finding one is a reading
+this pass was not given.
+
+**What is judgement and what is quoted.** Every date, and every clause in both
+summaries, is the article's at revision 1376446924, checked verbatim before
+anything was written. The two **titles** are this atlas's own, because no
+article is titled either thing; the **1941 boundary** is the article's; the
+decision to file the second under the war rather than edge it is C8's and A6's.
+The article also says *"further Nazi persecutions from 1933 to 1945"*, so 1941
+is the boundary between two things and not the end of persecution, and both
+records' notes say so.
+
+### The fifteen M44b tombstones (brief §2)
+
+**15 reasons rewritten, 0 reinstated.** Each cited a rule that died with the
+Portuguese scope, which is a lie about why the record is not here; each now
+says what the corpus holds today and what is still missing. The corpus that
+M44b judged them against is gone — 859 active events across all five lanes —
+and for five of them the neighbour M44b named has actually arrived:
+
+| | the neighbour M44b wanted | today |
+| --- | --- | --- |
+| `chaco-war` | anything South American | 202 active in the Americas lane — and the article's § Origins names oil and a territorial dispute, no event here |
+| `sri-lankan-civil-war` | anything South Asian | 143 in Asia — and the article's war runs through the IPKF, which the atlas has not got |
+| `2023-nigerien-coup-d-etat` | the other Sahel coups | `2020-` and `2021-malian-coup-d-etat`, both filed under `mali-war` |
+| `western-african-ebola-virus-epidemic` | Guinea-Bissau, or the region | `sierra-leone-civil-war` and `second-liberian-civil-war` |
+| `nigerian-civil-war` | Portuguese Africa | `angolan-war-of-independence`, filed under the colonial war |
+
+**And none of the five earns an edge**, because the sentence is the thing that
+is missing and not the neighbour. The Nigerien article says the coup *"came in
+the wake of recent coups in nearby countries, such as in Guinea, Mali, and
+Sudan in 2021"* and names the "coup belt" — which is **exactly the chronology
+class this same fire dropped nine A13 edges for four sections ago**, and
+writing it to keep a record is what §1 forbids in so many words. The Biafra
+article says *"Portuguese pilots also served in the Biafran Air Force"* and
+describes the airlift through São Tomé, and never says the war in Angola is
+why Lisbon did it — that sentence is the edge, and it wants a source the atlas
+can open. The Ebola article describes the epidemic country by country and
+draws no line to either war.
+
+**Two of the fifteen do not want an edge at all.** `1948-palestine-war` is the
+war the atlas's own `1948-arab-israeli-war` calls its second stage, and
+`balkan-wars` is the series whose two parts the atlas holds and has wired:
+under A6 each is an **umbrella**, and a filing pass could reinstate both
+without an edge and without raising the main count. Their reasons now say so.
+`population-transfer-in-the-soviet-union` wants the same treatment the
+Holocaust got this day — dividing, because twenty-two years of policy under
+one date cannot take an edge that means anything.
+
+### Counts for the whole pass
+
+| | before A14(6) | after |
+| --- | --- | --- |
+| active events | 858 | **859** |
+| **main** | 242 | **242** |
+| filed | 616 | 617 |
+| active edges | 834 | 834 |
+| largest component | 609 | **608** |
+| components | 192 | **193** |
+| validator | 0 errors, 496 warnings | **0 errors, 403 warnings** |
+| `summary-imported` | 109 | **15** |
+
+**Per lane, active and main (A10).** Europe 375/89, Americas 202/55, Asia
+143/67, Africa 139/31. Nothing was imported, so the lanes moved only by the
+Holocaust's division, which is Europe.
