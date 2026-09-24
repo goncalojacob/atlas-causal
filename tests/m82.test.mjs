@@ -171,9 +171,12 @@ test('A5: the events with no place are a note beside the count, and no box on th
   // view buttons, the window's count and two groups of switches.
   assert.ok(unplacedText(96).length < 60, 'it is a note and not a paragraph');
 
-  const map = await readFile(path.join(ROOT, 'src/map/map.js'), 'utf8');
-  assert.doesNotMatch(map, /map-unplaced/, 'the map draws no box about it');
-  assert.match(map, /map-worldwide/, 'and still names in its corner what it cannot draw at all');
+  // Where the *drawing* keeps that promise is asserted on the drawing, in
+  // `tests/m82-browser.test.mjs`: no box on the map, the sentence in the
+  // masthead, the corner still there for what is about the picture. It was a
+  // read of `src/map/map.js` as text until M87 §6 — the last scan of its kind
+  // — and a rule held by a class name not appearing in a file is a rule a
+  // rename passes and a comment breaks (review B9).
 });
 
 // 6 — A10. "Read the full entry →" is offered only where an entry exists.
