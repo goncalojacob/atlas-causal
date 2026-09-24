@@ -5124,3 +5124,46 @@ the line … until the Inchon attack and Pusan breakout"*); and
 `chinese-spring-offensive` → `korean-armistice-agreement` (*"the armistice
 negotiations that began on 10 July 1951 at Kaesong forced both sides to dig
 in"* — about the front, not about the 1953 agreement).
+
+## Batch 54 — the Mali War read at both ends, 2012 and 2024
+
+*24 September, the import fire that picked the run up at 22:37Z. Today carries
+a `## Curation 2026-09-24` section and all six of A14's passes carry theirs, so
+this is an import fire. A10's order of need had turned over again and puts
+**Africa** at the front, trailing at 162 against Asia's 165 and Europe's 426.
+The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 54".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `siege-of-tessalit` → `tinsalane-ambush` | `precondition-of` | the rebels *"fought against a convoy of the Malian army who came to reinforce the troops besieged in Tessalit"*, and *"a convoy of Malian soldiers and militia departed the cities of Kidal and Anfif and moved towards Tessalit to strengthen the military forces of the besieged city. However, this convoy was ambushed by an MNLA brigade in Tinsalane"* — "Tinsalane ambush", revision 1370751066, lead and § The ambush |
+| `raid-on-dioura-2023` → `kidal-offensive` | `reacted-to` | *"The CSP-PSD began a series of raids against Malian and Wagner military bases throughout September; Bourem, Léré, Dioura, Bamba, and Taoussa were all pillaged between September 12 and October 3"*, and then *"In response to the attacks, the Malian junta launched airstrikes on Kidal on October 2"* — "Kidal offensive", revision 1370625765, § Prelude |
+| `kidal-offensive` → `abeibara-massacres` | `precondition-of` | *"Malian and Wagner forces launched an offensive on the Tuareg rebel capital of Kidal, capturing it in November 2023. Remaining CSP-PSD fighters fled to the rural towns of Abeïbara, Tinzaouaten, and the Adrar des Ifoghas mountains"*, and the June 2024 convoys *"left the towns of Kidal and Tessalit, and settled in Imaswaqassen, a village four kilometers from Abeibara"* — "Abeïbara massacres", revision 1326919232, § Background |
+| `kidal-offensive` → `battle-of-tinzaouaten-2024` | `precondition-of` | the same sentence names Tinzaouaten — *"Remaining CSP-PSD fighters fled to the rural towns of Abeïbara, Tinzaouaten, and the Adrar des Ifoghas mountains"* — and the battle's own prelude is the column arriving: on 20 July 2024 a FAMa and Wagner convoy *"engaged in a series of search operations in northern Mali, mainly looking for Tuareg rebels who held territory in the strongholds of Inafarak and Tinzaouten"* — "Abeïbara massacres", revision 1326919232, § Background, with "Battle of Tinzaouaten (2024)", revision 1373950868, § Prelude beside it |
+
+All four are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **All four run into a record that was already here**, which is what
+A5 asks of a batch, and three of the four run into `kidal-offensive`, which has
+been inside the largest component since batch 52 — so the component goes from
+651 to 654. The fourth runs into `siege-of-tessalit`, which was a singleton:
+batches 50 and 52 both read its own article end to end for an edge and found
+none, and the edge that reaches it was in a different article all along.
+
+**The `reacted-to` was written forward**, as batch 49's deviation 1424 asks:
+`A --reacted-to--> B` says *B answered A*, so the raid is the `from` and the
+offensive it provoked is the `to`.
+
+**Five edges were read and refused**, each because the sentence is chronology
+and not a claim, which is the refusal class the curation fires already use:
+`kidal-offensive` → `battle-of-tinzaouaten-2024` drawn from the battle's own
+article (its prelude names no held record at all, and its "See also" naming the
+Labbezanga attack is a list and not a claim — the edge as written rests on the
+Abeïbara article instead); `siege-of-timbuktu` → anything (*"The siege began
+after the withdrawal of MINUSMA"*, and no record here is that withdrawal);
+`operation-barkhane` → `labbezanga-attack` (*"the junta kicked the French of
+Operation Barkhane out a year prior"*, which dates the background and claims
+nothing about the raid); `abeibara-massacres` →
+`battle-of-tinzaouaten-2024` (the two articles do not name each other, and a
+month between them is not an argument); and `2012-tuareg-rebellion` →
+`tinsalane-ambush` (containment, which is the filing this record already has and
+which C8 bars as an edge).

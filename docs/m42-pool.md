@@ -9618,3 +9618,258 @@ next push in the same concurrency group, which is rule 798's ordering working
 rather than a fault; run 1758, on the merge commit, was green on its own.
 **2,114 tests pass locally, 1,819 pure and 295 browser, with nothing skipped.**
 The re-run allowance is unspent: nothing was re-run.
+
+## Batch 54 — the Mali War read at both ends, and the singleton two batches could not reach
+
+*24 September, the fire that picked the run up at 22:37Z. Today already carries
+a `## Curation 2026-09-24` section and **all six of A14's passes carry theirs**,
+so this is an import fire and every one of the six is skipped by its own rule.
+The claim at 20:25Z was 132 minutes old, `origin/m42` had not been pushed for 96
+minutes and `origin/m0` not for over two hours, so the protocol's ninety-minute
+clause let this fire take it. `origin/m0` was already an ancestor of `m42` at
+claim time, so no merge. A10's order of need had turned over as batch 53's stand
+said: **Africa trails at 162** against Asia's 165 and Europe's 426, so this
+batch is four Africa rows and no other lane.*
+
+### The vein, and the four rows chosen by what each can reach
+
+`Q2946372`, the Mali War, answers **93 distinct rows** with an English article
+under the inverse `part of` vein — twelve more than the 81 batch 52 counted,
+because the vein grows — and the atlas held **22** of them before this batch.
+Seventy-one were available and sixty-seven of those are dated. This fire read
+eleven articles and took four.
+
+Read through the query service (`query.wikidata.org/sparql`), which answered 200
+on the first attempt and on every attempt after it, and `en.wikipedia.org`
+through `index.php?action=raw&oldid=<revid>` and `index.php?action=render&oldid=`,
+pinned from one light `prop=revisions` call. **`api.php` answered 429 for the
+first twenty-five minutes of this fire and again while the leads were being
+read; `index.php` was never refused** (deviation 1438). That is deviation 1435's
+refusal seen once more, and this fire adds the reading that the two paths are
+separate buckets: the plain-text lead can be had from `index.php?action=render`
+when `prop=extracts` cannot.
+
+A11 (b)'s partition check was made before the import, by id and by Wikidata
+item: none of the four is on `origin/m42b`, whose `data/events/` holds 1,227
+ids.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `tinsalane-ambush` | 2 | 11 Feb 2012 | `tinsalane` (new) | `2012-tuareg-rebellion` |
+| `raid-on-dioura-2023` | 2 | 28 Sep 2023 | `dioura` (new) | `mali-war` |
+| `abeibara-massacres` | 2 | 20–29 Jun 2024 | `abeibara` (new) | `mali-war` |
+| `battle-of-tinzaouaten-2024` | 9 | 25–27 Jul 2024 | `tinzaouaten` (new) | `mali-war` |
+
+All four pass the three tests unchanged since batch 20 — **depth**, which the
+query guarantees; **span**, every one inside its umbrella's interval; and
+**lane**, every one in Africa. All four filed, so **main stays at 242**, unmoved
+through twenty-five batches, three curation fires and A14.
+
+**No class was added.** All four classes were already in the table:
+`Q178561` battle (`event`/`war`) for three of them and `Q3199915` massacre
+(`event`, no category) for the Abeïbara record, which is why that one carries no
+`category` — `data/categories.json` still has no kind for an atrocity.
+
+**Three titles are the article's and not the item's** (A12 (5)): `Q15231259`'s
+label is "Ambush of Tinsalane" and its article is "Tinsalane ambush";
+`Q125697830`'s label is "2023 Dioura attack" and its article is "Raid on Dioura
+(2023)"; `Q128007033`'s label is "Battle of Tinzaouaten" and its article is
+"Battle of Tinzaouaten (2024)", which disambiguates it from the 2012 battle of
+the same name. The ids follow the titles, so `battle-of-tinzaouaten-2024` beside
+the `battle-of-kidal-2012` the atlas already holds.
+
+**No interval was widened and none needed to be.** Each of the four articles
+states exactly the span its item gives: 11 February 2012; 28 September 2023;
+"between June 20 and 29, 2024"; "25–27 July 2024". Nothing was narrowed and no
+`date` flag was written.
+
+### The four edges, and the singleton that finally has one
+
+Four edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 54".
+
+| from | type | to |
+| --- | --- | --- |
+| `siege-of-tessalit` | precondition-of | `tinsalane-ambush` |
+| `raid-on-dioura-2023` | reacted-to | `kidal-offensive` |
+| `kidal-offensive` | precondition-of | `abeibara-massacres` |
+| `kidal-offensive` | precondition-of | `battle-of-tinzaouaten-2024` |
+
+**The largest connected component goes from 651 to 654**, and every one of the
+four arrivals has an edge, so **the edgeless count falls for the first time in
+four batches, from 178 to 177**. The component count does not move at all: three
+of the four join the 651 through `kidal-offensive`, which has been inside it
+since batch 52, and the fourth joins a singleton rather than making a new one.
+
+**That singleton is the result this batch was chosen for.**
+`siege-of-tessalit` has been edgeless since batch 50, and batch 52's stand wrote
+a paragraph on it: it read the siege's own article end to end at revision
+1370745744, found no edge in it, and said *"A later fire should stop trying this
+record from the Mali vein: what it wants is the Ambush of Tinsalane … That
+article exists on the English Wikipedia (page 75084621) and **carries no
+Wikidata item at all**, so it is not a row of any query this run can make and
+cannot be imported under A2."* **It carries one now.** `Q15231259` answers the
+same inverse `part of` query batch 52 ran, with two sitelinks and its own
+`P625`, and the sentence batch 52 quoted from the siege's article is in the
+ambush's lead as well. The stand was right about which record was wanted and
+wrong about whether it could be had; the lesson a later fire should take is that
+**a row refused for having no item is worth asking about again**, because items
+are created while this run is running.
+
+### A9's places, and the one that took the second step
+
+Four place records are new and **not one was hand-corrected**; all four carry
+`summary: null`, which is what A14 (6) left every imported place at, and the
+`a9-place` flag. All four are in Mali and all four derive the Africa lane from
+their own point.
+
+- **`tinsalane`**, **`dioura`** and **`abeibara`** are A9's **first step** as
+  A12 (2) corrects it: the event item's own `P625`, written as a place of
+  `precision: point` because no item this pass could reach is the locality
+  itself. This is `duman-ri`'s shape from batch 53. Each record's note says
+  whose `P625` the point is and what the article calls the place: Tinsalane is
+  *"20 kilometers south of Tessalit"*; the Abeïbara point is the centre of
+  killings the article spreads over *"a forty kilometer radius"*, which the note
+  says rather than letting a point stand for an area.
+- **`tinzaouaten` is A9's second step** (`P276` `Q2312553`, the commune and
+  village) **and not its first, which is this batch's one deviation from A12
+  (2)'s ordering** (deviation 1439). The battle item's own `P625` is 28 km west
+  of the village, and the battle's own lead says it *"took place in the
+  outskirts of Tinzaouaten, a commune near the Algeria–Mali border"* — so the
+  village is where the battle was, the difference is the outskirts and not a
+  disagreement, and the village is a place with its own item, its own name and
+  fifteen sitelinks that a later record can reuse. A place record written at the
+  battlefield point and called "Tinzaouaten" would be none of those things. This
+  is the reading batch 52 already made for `kidal-region`, written down as a
+  rule this time: **take the first step unless it would name a place after
+  something it is not.** `precision: city`, off the item's own class.
+
+### The actors, and the three the atlas does not hold
+
+Only `battle-of-tinzaouaten-2024` has a `P710` at all, and it has four: Mali
+(`Q912`), JNIM (`Q28877411`), the Wagner Group (`Q36597284`) and the CSP
+(`Q111207670`). **Only Mali is an actor this atlas holds**, so only Mali is on
+the record, as `belligerent` with the item id in its note — A12 (4)'s rule
+applied exactly as written, which maps a participant the atlas holds and creates
+nothing. The other three are the gap: a Mali War batch will keep meeting JNIM,
+Wagner and the CSP, and none of them is an actor here.
+
+### What was refused
+
+- **Five edges**, all listed in `docs/m42-connections.md`; each is chronology or
+  containment rather than a claim.
+- **`Q123058541`, the siege of Timbuktu** (3 sitelinks, 8 August 2023), read end
+  to end. Its one candidate sentence is *"The siege began after the withdrawal
+  of MINUSMA, the United Nations mission to Mali during the Mali War"*, and no
+  record here is that withdrawal; the CSP blockade of Timbuktu the Kidal
+  offensive's aftermath names — *"On February 11, the CSP ended its blockade of
+  Timbuktu and Gao"* — is a different blockade by a different party, so reading
+  it as this record would be wrong. Taken alone it arrives edgeless, and this
+  fire would rather leave it than pad the batch.
+- **`Q116446540` the Battle of Talataye, `Q125685055` the Diafarabé and Koumara
+  attacks, `Q126681300` the Mourdiah attack and `Q125256362` the Labbezanga
+  attack**, all four read end to end and all four edgeless against this corpus.
+  Talataye and the Abeïbara record both name **the Ménaka offensive of 2022–2023**
+  and the atlas does not hold it; Labbezanga's background names Operation
+  Barkhane's expulsion as background and claims nothing; Mourdiah's names an
+  attack at Kwala the atlas does not hold; Diafarabé's names a January 2023
+  campaign in Koulikoro the atlas does not hold. **The Ménaka offensive is the
+  row that would unlock three of these four** and is the first thing the next
+  Africa batch should look for.
+- **`Q125907283`, the Battle of Kidal (2023)**, which is the centre of the Kidal
+  offensive and **carries no date of any kind on its item**. A4 forbids
+  inventing one and an import's interval comes from the item, so it is left; it
+  is also the child of a record the atlas holds, so under C8 it would arrive
+  unable to reach its own parent.
+- **`Q21028650`, the Algiers Accords of 2015, is still refused on its class**
+  and is still a question for a person — the fourth batch in a row to say so.
+- **The 2025 and 2026 rows** (`Q135194308`, `Q135333602`, `Q135423253`,
+  `Q137460579`, `Q139556342`, `Q139571113`) were not read: the dated exception
+  A11 was written under names 1890–2025, `Q139556342` and `Q139571113` are dated
+  April 2026, and where the line falls for a war that is still being fought is
+  not this fire's to draw.
+
+## Where the run stands after batch 54, for the fire that picks it up
+
+*24 September, 22:37Z onward. An import fire, one batch and no code change.
+`origin/m0` was already an ancestor of `m42`, so no merge was made and nothing
+else moved the corpus: the four records below are this fire's alone.*
+
+| | |
+| --- | --- |
+| corpus | **993 active** (+4) |
+| **main** | **242**, unmoved through twenty-five batches, three curation fires and A14 |
+| filed | 751 (+4) |
+| active edges | **933** (+4) |
+| largest connected component | **654** (+3) |
+| second component | **13**, the Korean War's battles, unmoved |
+| components | **233**, unmoved |
+| events with no edge at all | **177** (−1, the first fall in four batches) |
+| validator | **0 errors, 481 warnings** (−1: `siege-of-tessalit` is no longer `degree-zero`) |
+| per lane, active | Europe 426, Americas 236, **Africa 166**, **Asia 165** |
+| per lane, main | Europe 89, Asia 67, Americas 55, Africa 31 |
+
+**A10's order of need has turned over again**, by one record: Africa is now at
+166 and **Asia trails at 165**, so the next import batch is Asia's unless a
+chain crosses out of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **C8 is still the single largest thing standing between this atlas and the
+  chains the owner asked for.** Nothing in this batch changes the measurement
+  and nothing in it was blocked by C8 except one refusal
+  (`2012-tuareg-rebellion` → `tinsalane-ambush`, containment) and one row
+  (`Q125907283`, the Battle of Kidal of 2023, whose only reachable record is its
+  own parent). The standing measurement is batch 53's: **thirteen records, a
+  whole war, held outside the largest component by one rule**, and one edge
+  `korean-war` → `first-battle-of-seoul` would join all thirteen. Until it is
+  decided no batch writes a parent-to-child edge and the 91 that exist stay.
+- **The next Asia batch is still `Q2035177`, the Battle of Bloody Ridge, with
+  `Q489561`, Heartbreak Ridge, beside it**, exactly as batch 53's stand left it:
+  Heartbreak Ridge's one causal sentence names Bloody Ridge and nothing else the
+  atlas holds, so the pair is one stated sentence apart and either alone arrives
+  edgeless. The other rows of `Q8663` by sitelinks after batch 53 are
+  `Q4872081` Pork Chop Hill (9), `Q492671` Triangle Hill (8), `Q4870302` Andong
+  (8), `Q48734658` the bombing of North Korea (8), `Q7521988` the Sinchon
+  massacre (8) and `Q4871945` Onjong (8); the vein holds 113 rows with an
+  English article and the atlas has seventeen.
+- **The next Africa batch should look for the Ménaka offensive of 2022–2023
+  first.** Two articles read for this batch name it — the Battle of Talataye's
+  and the Abeïbara massacres' — and it is the umbrella three of the four
+  refusals above sit under. It was not searched for directly: the label query
+  that would have found it timed out on the query service and `api.php` was
+  answering 429 at the time, so the fire left it rather than guess an item id.
+- **A row refused for having no Wikidata item is worth asking about again.**
+  Batch 52 wrote off the Tinsalane ambush as unreachable under A2 because the
+  article carried no item; ten days later it carries one, and it is this batch's
+  best edge. That is a general rule and not a one-off: the vein itself went from
+  81 rows to 93 between batch 52 and this one.
+- **JNIM, the Wagner Group and the CSP are not actors here**, and every Mali War
+  batch meets all three. `Q28877411`, `Q36597284` and `Q111207670` are the three
+  a fire should create if it has licence to create actors from `P710`; A12 (4)
+  as written only maps participants the atlas already holds, so no fire has done
+  it yet.
+- **`battle-of-nam-river` is still filed one day away from its own umbrella**
+  and should be re-filed under `battle-of-the-pusan-perimeter` by whichever fire
+  first widens that record's interval under A7 (deviation 1437).
+- **`Q21028650`, the Algiers Accords of 2015, is still refused on its class and
+  is still a question for a person** (batch 50), now for the fourth batch
+  running.
+- **Where the dated exception's 1890–2025 ends is a question the Mali vein now
+  asks in earnest.** Six rows of it are dated 2025 and two 2026; this fire read
+  none of them and drew no line.
+- **`should the europe lane hold Russian Asia?`** is still the owner's, from
+  batch 49 (deviation 1423).
+- **The five questions of the A14 stand are unchanged** and unanswered.
+- **`the-persecution-of-the-jews-1933-1941` and `porajmos` are still a two-node
+  component**, and a curation fire still has the licence to rejoin it that an
+  import fire does not.
+- **Two of the fifteen tombstones still want an A6 umbrella and not an edge**:
+  `1948-palestine-war` and `balkan-wars`.
+- **The next curation fire is the first fire after 02:00Z on 25 September**, and
+  it owns A13's relations pass over every active event.
+- **Deviation numbers: take the next above 1439.** This fire wrote **1438 and
+  1439**.
