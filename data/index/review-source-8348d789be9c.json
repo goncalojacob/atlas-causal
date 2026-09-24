@@ -1005,6 +1005,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "doi": null,
+      "id": "mallett-shaw-2014-the-italian-wars",
+      "isbn": "9781317899396",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "The Italian Wars 1494–1559: War, State and Society in Early Modern Europe",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-02",
       "degree": 59,
       "doi": null,
@@ -1149,6 +1176,33 @@
       "revised": null,
       "status": "active",
       "title": "The Rise and Fall of Weimar Democracy",
+      "type": "book"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "doi": null,
+      "id": "norwich-1982-a-history-of-venice",
+      "isbn": "9780679721970",
+      "kind": "source",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "m72-second-source"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "A History of Venice",
       "type": "book"
     },
     {
