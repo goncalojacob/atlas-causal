@@ -19,6 +19,7 @@ import assert from 'node:assert/strict';
 
 import {
   withBrowser, open, skip, waitFor, watchErrors, errorsOn, seenIntro,
+  manifestOf, settledShards,
 } from './browser.mjs';
 
 const DESK = { width: 1440, height: 900, deviceScaleFactor: 1 };
@@ -160,6 +161,15 @@ test('B2: the band\'s profile is the narrative\'s from the first drawing', { ski
     await seenIntro(page);
     await open(page, url('?narrative=how-the-colonial-war-ended-the-regime&step=0'), ready);
     await waitFor(page, `${PROFILE.replace('return path ? path.getAttribute(\'d\') : null;', 'return Boolean(path);')}`, 'the band to draw a profile');
+    // **Every shard, and then a frame** (M87 §1). A narrative's steps arrive
+    // with their century, and since the landings are coalesced per animation
+    // frame the redraw they cause is one frame behind the last of them. The
+    // first profile this test reads has to be the profile of an atlas that has
+    // everything, or the comparison below is between a page still arriving and
+    // the same page a second later — which is a wall clock and not an
+    // assertion. The count is the manifest's own.
+    await settledShards(page, await manifestOf());
+    await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
     const onArrival = await page.eval(PROFILE);
 
     // A state change that cannot itself move the profile: which view has the

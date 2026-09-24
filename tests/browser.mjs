@@ -9,12 +9,15 @@
 
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
-import { mkdtemp, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { createServer, HOST } from '../tools/serve.mjs';
 import { findChrome } from '../tools/screens.mjs';
 import { LOADING_LABEL } from '../src/attributes.js';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 export const chrome = findChrome();
 export const skip = chrome ? false : 'no headless browser found; set $CHROME to one';
@@ -318,6 +321,40 @@ export async function until(page, expression, { tries = 200, every = 50 } = {}) 
 
 export async function waitFor(page, expression, what, options = {}) {
   if (!await until(page, expression, options)) assert.fail(`timed out waiting for ${what}`);
+}
+
+// --- what a live-corpus test waits for --------------------------------------
+//
+// The manifest the page will read, off the disk the server is about to serve
+// from. The shard count is a property of the build and grows with the corpus, so
+// a test that waits for the shards reads it here and never writes a number
+// (M87 §5, B8).
+export async function manifestOf({ fixtures = false } = {}) {
+  const root = fixtures ? 'tests/fixtures/data' : 'data';
+  return JSON.parse(await readFile(path.join(ROOT, root, 'index', 'manifest.json'), 'utf8'));
+}
+
+// Every attribute shard the manifest names, arrived. The three private copies
+// of this wait polled a resource count until it stopped moving and fell through
+// **silently** after 4 s, so on a slow run the assertions after them ran
+// against a page that was still arriving and failed with a sentence about lanes
+// or profiles rather than about time. This one fails, and says how far the page
+// got: "9 of 12 attribute shards arrived".
+//
+// The page asks for all of them at first paint at the whole span and for the
+// window's at a narrower one, so a test that opens a window passes the shards it
+// expects rather than the whole manifest.
+export async function settledShards(page, manifest, { tries = 200, every = 50 } = {}) {
+  const wanted = (manifest?.attributeShards ?? []).length;
+  if (wanted === 0) return;
+  const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
+  let arrived = 0;
+  for (let i = 0; i < tries; i += 1) {
+    arrived = await page.eval(count);
+    if (arrived >= wanted) return;
+    await new Promise((resolve) => { setTimeout(resolve, every); });
+  }
+  assert.fail(`${arrived} of ${wanted} attribute shards arrived`);
 }
 
 // The wait every test about a name owes itself. A title arrives with its

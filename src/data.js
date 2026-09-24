@@ -1225,22 +1225,84 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
     return dropped;
   }
 
-  // One shard's rows into the records they are about. The joins are built again
-  // after it, because three of them are sorted or keyed by something a shard
-  // carries (createAtlas's `reindexRecords`).
-  function applyShard(key, file) {
+  // One shard's rows into the records they are about, in two halves: the rows,
+  // which are cheap and per file, and the settle, which is the eviction, the
+  // count the render keys read and the joins — eight index fills over every
+  // record — and is per *batch* since M87 §1 (B4). A first paint at the whole
+  // span lands every shard the build wrote (twelve today, one more per century
+  // the corpus grows into), and reindexing once per file was twelve passes over
+  // the corpus inside the first second.
+  //
+  // `arrived` is incremented in the settle and nowhere else, whichever of the
+  // two paths below took it there: it is the integer every render key carries
+  // (render-key.js) and the one thing that says a shard has landed, so it moves
+  // exactly when the atlas is whole again. The panel redraws its card on that
+  // number having moved (`panel.js`, `holdShards` → `refresh`) and does not look
+  // again for a shard it already holds, so a count that moved before the joins
+  // were back would be a card drawn from the old joins and never redrawn.
+  function settleShards() {
+    arrived += 1;
+    atlas.reindexRecords();
+  }
+  // The cap stays in the fill and is never batched: how many shards are held is
+  // an invariant of this file — a session that has scrubbed across six centuries
+  // must not be holding six centuries — and an invariant that is true a frame
+  // later is not one. It is the reindex alone that is per batch, which is what
+  // the finding asked for (B4: "the cap's eviction already does it separately").
+  function fillShard(key, file) {
     fillFromShard(byKey, file);
     loaded.set(key, file);
     touch(key);
-    arrived += 1;
     evictIfOver();
-    atlas.reindexRecords();
+  }
+  function applyShard(key, file) {
+    fillShard(key, file);
+    settleShards();
+  }
+  // A frame, then a turn of the loop — the same deferral `baseArrived` uses in
+  // map.js, and for the same reason. One promise per batch, so every shard that
+  // landed in it is told the atlas is whole at the same moment; cleared before
+  // the settle runs, so a shard that arrives during one starts the next.
+  const deferBatch = (fn) => {
+    if (typeof requestAnimationFrame === 'function' && typeof setTimeout === 'function') {
+      requestAnimationFrame(() => setTimeout(fn, 0));
+    } else if (typeof setTimeout === 'function') setTimeout(fn, 0);
+    else fn();
+  };
+  let settling = null;
+  function settleLater() {
+    settling ??= new Promise((resolve) => {
+      deferBatch(() => {
+        settling = null;
+        settleShards();
+        resolve();
+      });
+    });
+    return settling;
   }
 
   // Same cache discipline as `loadGeometry`, the citers and the explanations:
   // one request in flight per shard, and a rejection is dropped rather than
   // kept as the answer, so the next ask really is a new attempt.
-  function loadAttributes(shard) {
+  // `batch` is the caller saying *I am asking for several of these at once*, and
+  // it is the whole of M87 §1's half in this file. A page at the whole span asks
+  // for every shard the build wrote, and each of them used to rebuild the eight
+  // joins over the corpus on its own — twelve passes inside the first second,
+  // one more with every century the corpus grows into. With `batch` the rows go
+  // in as each file lands and the joins are rebuilt once for the frame's whole
+  // arrival; the promise is held until that settle, so a caller is never handed
+  // an atlas whose rows and joins disagree.
+  //
+  // Without it — the default, which is `record()`'s `beforeRecord` and the
+  // panel's own asks — a shard settles inside its own resolution, exactly as it
+  // did before this milestone. Those two want the answer now and not next frame:
+  // a page rendered by `--dump-dom` has one turn of the loop in it, and the
+  // panel does not ask twice for a shard it already holds.
+  //
+  // One request per shard whichever way it was asked for: the in-flight promise
+  // is shared, and `batch` therefore describes the ask that started the fetch.
+  // Either way the joins are back before it resolves.
+  function loadAttributes(shard, { batch = false } = {}) {
     const key = keyOf(shard);
     const entry = shardByKey.get(key);
     if (loaded.has(key)) {
@@ -1252,8 +1314,12 @@ export function createAtlasFromCore({ core, attributes = [], manifest, ...rest }
       const pending = fetchJson(`${dataRoot}${entry.file}`)
         .then((file) => {
           inFlight.delete(key);
-          applyShard(key, file);
-          return file;
+          fillShard(key, file);
+          if (!batch) {
+            settleShards();
+            return file;
+          }
+          return settleLater().then(() => file);
         })
         .catch((error) => {
           if (inFlight.get(key) === pending) inFlight.delete(key);
