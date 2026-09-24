@@ -7265,5 +7265,13 @@ commit existed, so the three history shards the merge's own commit changes were 
 one commit. A rebuild in a commit of its own fixed it. **`tools/lib/history.mjs` reads the
 repository's commits, so an index is only fresh against the commit it was built after**,
 and a merge that rebuilds the index inside itself can never be clean. Rebuild in the next
-commit, as 798 already says for records. The runs on the batch's own records and index
-commits are what the next fire should read first.
+commit, as 798 already says for records. 
+Runs **1768**, **1769** and **1770**, on the records commit `f7f38ecc`, the index commit
+`5644ab1f` and the first docs commit `3ceccef5`, were each **cancelled** by the push that
+followed them, which is deviation 1258's shape again. Run **1771**, on `9f409fb4`, the
+head of this fire, concluded **success**. Locally the fire finished at **2,114 tests
+passing with nothing failed and nothing skipped** — the 1,819 of the pure suites and the
+295 of the browser suites, the browser set run alone, the two sets never at once.
+`node tools/validate.mjs --index` is **clean at 0 errors and 493 warnings** on the pushed
+index. **The next fire should read this head's run before it does anything else**, and if
+it is red, read the failure: the check has been honest since M63 and it is not load.
