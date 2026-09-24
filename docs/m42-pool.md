@@ -8643,3 +8643,12 @@ of it.
   different faults.
 - **Deviation numbers: take the next above 1428.** This fire wrote **1425 to
   1428**.
+
+**The check is green on this fire's head.** Run 1726 of `validate.yml`, commit
+`0b8543da`, conclusion `success`. Run 1725 on the history-shards head failed and
+the failure was this batch's own and expected: `docs/m53-polities.md` §4.1 still
+said 890 active events at that commit, and the retake landed in the docs commit
+after it. Runs 1723 and 1724 were cancelled by the next push in the same
+concurrency group, which is the ordering of rule 798 working rather than a
+fault. **2,114 tests pass locally, 1,819 pure and 295 browser, with nothing
+skipped.** The re-run allowance is unspent: nothing was re-run.
