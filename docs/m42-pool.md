@@ -9611,3 +9611,10 @@ of it.
   it owns A13's relations pass over every active event.
 - **Deviation numbers: take the next above 1437.** This fire wrote **1435 to
   1437**.
+
+**The check is green on this fire's head.** Run 1762 of `validate.yml`, commit
+`389ddada`, conclusion `success`. Runs 1757, 1759 and 1761 were cancelled by the
+next push in the same concurrency group, which is rule 798's ordering working
+rather than a fault; run 1758, on the merge commit, was green on its own.
+**2,114 tests pass locally, 1,819 pure and 295 browser, with nothing skipped.**
+The re-run allowance is unspent: nothing was re-run.
