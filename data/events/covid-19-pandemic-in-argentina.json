@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-argentina",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q87235137",
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Argentina",
+    "pt": "Pandemia de COVID-19 na Argentina"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q87235137"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Argentina\", revision 1354706847"
+    }
+  ],
+  "title": "COVID-19 pandemic in Argentina",
+  "summary": "The English Wikipedia article \"COVID-19 pandemic in Argentina\", at revision 1354706847, opens: \"The COVID-19 pandemic in Argentina is part of the worldwide pandemic of coronavirus disease 2019 caused by severe acute respiratory syndrome coronavirus 2. As of 18 September 2026, a total of 10,119,840 people were confirmed to have been infected, and 130,859 people were known to have died because of the virus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q87235137, imported by tools/import/wikidata.mjs. The item's own description reads \"details of ongoing viral outbreak in Argentina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-03-03"
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "parent": "covid-19-pandemic-in-south-america",
+  "category": "disaster",
+  "actors": []
+}

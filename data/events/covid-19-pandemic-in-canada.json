@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-canada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q83873580",
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Canada",
+    "pt": "Pandemia de COVID-19 no Canadá"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q83873580"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Canada\", revision 1376384524"
+    }
+  ],
+  "title": "COVID-19 pandemic in Canada",
+  "summary": "The English Wikipedia article \"COVID-19 pandemic in Canada\", at revision 1376384524, opens: \"The COVID-19 pandemic in Canada is part of the worldwide pandemic of coronavirus disease 2019 which was declared by the World Health Organization on March 11, 2020. It is caused by severe acute respiratory syndrome coronavirus 2. Most cases over the course of the pandemic have been in Ontario, Quebec, British Columbia and Alberta. Confirmed cases have been reported in all of Canada's provinces and territories. Statistics show that COVID-19 has drastically declined in 2026, and now seems to be less dangerous than influenza.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q83873580, imported by tools/import/wikidata.mjs. The item's own description reads \"details of viral pandemic in Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-01-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "covid-19-pandemic-in-north-america",
+  "category": "disaster",
+  "actors": []
+}

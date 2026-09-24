@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-the-united-states--covid-19-pandemic-in-guyana--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Guyana\", revision 1373725804, lead"
+    }
+  ],
+  "from": "covid-19-pandemic-in-the-united-states",
+  "to": "covid-19-pandemic-in-guyana",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Guyanese article names where its first case had travelled from: \"The virus was confirmed to have reached Guyana on 11 March 2020. The first case was a woman who travelled from New York, a 52-year-old woman with underlying health conditions.\" Caused, on the article's own account of that one case. Probable: Wikipedia alone.",
+  "dispute": null
+}
