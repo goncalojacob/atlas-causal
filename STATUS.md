@@ -21500,6 +21500,225 @@ they are the sea fights off Ceylon, they are **M42's**, and this branch should n
 import them. Nothing was imported on the strength of the error.
 `docs/m42b-pool.md` → "Batch 18" is the full account.
 
+## M86 — what a funder meets first
+
+Lane A, on the branch `m86`. `docs/m86-brief.md` over the second Fable review
+(`docs/review-2026-09-24.md`): part A's findings 1, 2, 4, 6, 7, 8, 9, 10 and
+11 and part B's 1, 2 and 3 — the reader and display half of what the review
+found, which is what a funder meets in the first minute. **All nine sections
+are done and none was refused.** No record was written, no historical claim
+was made, no new hex value, token or type size was added, and nothing under
+`data/` changed: §5 changes a prerendered page, so the build was re-run, and
+`data/index/` came back byte-identical. `validate --index` is clean: 12,117
+records, 0 errors, 493 warnings.
+
+The pictures: `docs/screens/m86-graph.png` and `m86-timeline.png` at
+1440 × 900 and both at 390 × 844, which is §9 — and every other picture
+`tools/screens.mjs` writes, restored in the same run, because §1, §2 and §5
+change what most of them show.
+
+### 1 — the importer's provenance leaves the card body (A1)
+
+580 of the 858 active events carry a `summary` that quotes the article's lead
+and then says, **in the record**, that nobody has read it and that
+`review.html` is where somebody does. `src/demo.js` takes that message out of
+the chrome and cannot reach a record, so the sentence M82 removed from the
+masthead was back in the first paragraph of two thirds of the cards, with a
+pointer to the maintainer's page, to a reader who is not being asked to review
+anything.
+
+`src/summary.js` is pure and splits an imported summary into three: the
+source's own words, the credit — the article and the revision it was read at,
+or the Wikidata item — and the importer's note. It is detected by the
+importer's own markers and never by length, which is the brief's rule: the
+framing `The English Wikipedia article "…", at revision N, opens: "…"`, the
+`Wikidata item Q…` sentences, and the two fixed sentences the tool writes
+about the record's standing. `src/panel/summary.js` is the markup, the
+escaping and the one question `demo.js` answers.
+
+What a card says now, for `scramble-for-africa`: the article's lead alone, and
+under it *"From Wikipedia, revision 1373841219 →"*, linking the permalink. For
+an event the import made out of an item alone, the item's own description in
+the quotation marks that say it is quoted, credited to the item. For the 101
+whose item carried no description in English or Portuguese, the credit and
+nothing else — which is the truth: the atlas has no account of them yet.
+With `?review=1` the provenance is there, whole, under the body.
+
+**Nothing in the record changed.** The sentences are on disk, the validator
+counts them, `review.html` shows them, and the two imports are untouched.
+
+### 2 — the first map has names (A2, A11)
+
+`m85-first-screen.png` was the whole world in some sixty numbered circles and
+not one word but the badges and the borders line: `LABEL_ZOOM = 4` wrote no
+name until the fourth zoom, and M85's own 1492–2026 opening made that the
+resting picture. `LABEL_ZOOM` is unchanged for the base map — the seventeen
+cities Natural Earth ranks for the world view are seventeen names of another
+atlas over this one's first frame — and the events, which are what this atlas
+is, have `EVENT_LABEL_ZOOM = 1`, the furthest zoom there is, with a cap of ten
+spent by the placer's own order (priority, then weight down, then id).
+
+`stackBadge` returns nothing where it would read "1 more": about twenty marks
+carried one beside "12 more" at Rio, so a stack of two was as loud as a stack
+of thirteen. The double ring already says "more than one here" — it is a row
+of the key — and the title still says how many.
+
+The first screen now names World War II, the February Revolution, World War I,
+the First Balkan War, the Boxer Rebellion, the Korean War, 25 April, the
+Lebanese Civil War, the Eritrean–Ethiopian War and the Charter of the United
+Nations, and carries no badge under two.
+
+### 3 — the about page says what the repository says of itself (A4)
+
+`about.html` said, in one paragraph, that every explanation is written by a
+person and cited, and that the records are an assistant-drafted test dataset
+nobody has reviewed which a person reviews *"before this site is public"* — on
+the public site. Three sentences instead: where the drafts come from and that
+each credits its article and revision, that every causal link carries a
+written argument and at least one source and says how sure the atlas is, and
+that a person is reading them with `?review=1` showing each record's state.
+No sentence about history, and none about the site's own future.
+
+### 4 — the timeline's right edge (A6)
+
+The domain was padded by 4 % of the span on both sides — about twenty-one
+years each way at today's extent — so the axis ran to 2040 with nothing after
+2026 on it. `timelineDomain` clamps the right end to the last year the data
+has and keeps the left margin, which is room a reader reads as "the data
+starts here" rather than an axis promising years the atlas has nothing to say
+about.
+
+And `labelPlacement`: a title whose bar ends within `labelRoom(name)` of the
+edge is written to the left of its own bar, anchored at its end. The
+screenshot then showed why that is not only a drawing change — the packing
+reserves a title's room to the right, so the moved titles landed in ground the
+bar before them had reserved and overprinted it. `packRows` takes `before`
+beside `extra`, reserves the room on the side the title is going to be written
+on, and stays monotone because the items are now sorted and released by where
+each one *starts*. On a 390 px pane a title longer than the pane has nowhere
+to go on either side, and there it stays on the right, where it has always
+been: a name cut at its start cannot even be begun.
+
+### 5 — three card polish items (A8, A9, A10)
+
+A source's url was labelled with the url: ninety characters of WorldCat
+percent-encoding wrapping over two lines under a book's title. It is labelled
+with `new URL(href).hostname` and keeps the url in the `title`; a string with
+no host to read keeps the url, because a label of nothing is worse than a long
+one. The card head printed "(gregorian)" on every dated event — it is printed
+only where the calendar is not the default for that year — and "Russia (the
+state's own point)" beside a paragraph already saying the map washes Europe:
+a coarse place is left off the head where the region is washed, and a city
+keeps its line. The map's key opens on a desktop and folds at the 720 px
+breakpoint the stylesheet already draws at.
+
+### 6 — a pan on the graph draws the ground it pans onto (B1)
+
+Since I6 only the stacks inside the rectangle on screen are in the DOM, and
+the cull's own comment claimed a pan redraws — true of the map, which
+publishes a `bbox` at `pointerup`, and never true here. So a reader who
+wheeled in and dragged towards the part of the picture they wanted found empty
+ground until the next notch. One render booked per animation frame while the
+pointer is down, and one at the release; neither costs a drawing it would not
+otherwise do, because the render key carries the rectangle.
+
+### 7 — a resize keeps the reader's camera (B2)
+
+`frameCamera` keyed on the question *and* the rectangle, so any resize — the
+panel opening on the first card, the masthead gaining a row when a lens chip's
+title lands, the window itself — overwrote a camera the reader had wheeled
+into place. Where the question and the layout are what they were and only the
+rectangle moved, the camera is kept and slid, so the graph point at the middle
+of the old rectangle is at the middle of the new one. `movedOn` records which
+layout a gesture was made on, so a re-fit is let through when the coordinates
+are new — M83's `cameraMoved` must not become "the reader wheeled once, so
+nothing is ever framed again" — and "Arranging the graph…" is shown whenever a
+layout job is pending rather than only when there is no picture at all.
+
+That is also PR #24's ring-ratio flake: a post-wheel `k` of 1.30 where the
+gesture alone leaves 2.46 is a fit and not a camera. The test reads its own
+camera before the wheel, after the lens chip is named and the transform has
+held still for two frames, and asserts against `1 / k_before`.
+
+### 8 — the degree control says when it is off (B3)
+
+The floor is by rule off inside a lens, and since H7/M65 every selection *is*
+one, so "Show events with at least 2 connections" changed the URL and nothing
+else from the first click on any node until the reader clicked the ground. It
+is disabled while `lensView` is non-null, with a title saying why in a
+reader's words, and live at rest, which is the only time it does anything and
+why M85 kept it.
+
+### 9 — the pictures nobody had seen (A7)
+
+`m86-graph.png`, `m86-timeline.png` and both at phone width. The 1900s column
+of the graph is still dense — 159 of the 242 main events are in it — and the
+resting labels were **not** capped further, which the brief allowed: the
+graph's own placer already writes only the names that fit, so a lower cap
+would take names off the left half of the picture without thinning the right.
+What the drawing needs is fewer marks in one column, which is the arrangement
+and not the labels.
+
+### Deviations
+
+1203. **The provenance is taken off by a rule and not only by a list.**
+      `src/summary.js` knows the importer's four framings literally, and then
+      sweeps any sentence still naming `review.html` or "nobody has read".
+      One record — `decolonisation-of-africa` — carries a summary written by
+      hand in the importer's own voice, and a list would have missed it and
+      the next wording besides. Nobody writing for a reader points them at the
+      maintainer's page, which is the whole of the rule.
+1204. **Five cards and not one.** The brief says "the card"; the fault is one
+      paragraph rendered verbatim in five places (event, actor, place, office,
+      and a narrative's step), so all five call `summaryHtml`. `entry.js` is
+      untouched: no record carries a body, so nothing is prerendered under
+      `entry/`.
+1205. **`about.html` no longer says every explanation is written by a person.**
+      That sentence is the review's own contradiction — the records in the
+      atlas today are drafted — and CLAUDE.md's hard constraint, with its
+      documented exception, is where it belongs. The page says what is true of
+      the site now and nothing about what it will be.
+1206. **§4 grew a packing change the brief did not ask for.** The brief asks
+      for the anchor; the screenshot showed the consequence, which is titles
+      printed over each other near the right edge. `packRows` gained `before`
+      and the timeline passes both sides. Measured on the resting timeline:
+      the overprinting the first take showed is gone and the drawing takes
+      fewer rows than before.
+1207. **§2 grew a viewport clamp for the same reason.** A map label is written
+      from its anchor rightwards, so a name anchored inside the rectangle
+      could end outside it — "The 1964 Brazilian c" cut by the edge, visible
+      only once events were named at the world view. `placeLabels` skips a
+      candidate whose box leaves the view, which is the graph's rule and, since
+      §4, the timeline's.
+1208. **`LABEL_ZOOM` is kept and is now the base map's alone.** The floor is
+      right for what it was written for; it was wrong as a sentence about the
+      map. `map-browser`'s "at the whole world the map writes no name at all"
+      is now "no base-map name", which is what it was always asking.
+1209. **Only the map's key opens by default.** The brief names the map's, and
+      the timeline's and the graph's keep the fold M82 and M83 gave them.
+      `viewKey` takes the option; `mapKey` is the one that passes it.
+1210. **Five suites lost an assertion that M86 superseded, and each gained the
+      question it was asking.** `m85` counts badges from three up; `map-browser`
+      asks about base-map names; `graph-browser`'s folding arithmetic reads
+      each stack's own title rather than its badge, and its ring ratio is
+      against its own camera; `intro-browser` asks its question of every mark,
+      since the key now covers a corner of the picture; `timeline-browser`
+      waits for every bar to be named before its first measurement.
+1211. **`timeline-browser`'s row-count assertion was racing the shards, and had
+      been.** The row count is what the titles need, and a title that has not
+      landed is packed as the interface's "loading" string: measured here, the
+      fixtures pack into 8 rows unnamed and 7 named. The packing change moved
+      the numbers enough to make it fail rather than pass by luck. It is
+      finding B6's own shape, in a file M87 will take.
+1212. **A map label may still be drawn over a stack's badge.** The placer keeps
+      labels off one another and knows nothing of the badges, which are the
+      events layer's. Visible in the crowded European cluster of
+      `m85-first-screen.png`. Not touched: it is a second placer's worth of
+      work and the brief asked for names, which the picture now has.
+1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
+      is the build's own output and not `data/`; `data/index/` came back
+      byte-identical and `validate --index` is clean.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
