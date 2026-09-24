@@ -2408,6 +2408,18 @@
     },
     {
       "dissent": false,
+      "id": "challe-plan--algiers-putsch-of-1961--precondition-of",
+      "kind": "edge",
+      "locator": "\"Challe Plan\", revision 1370610721, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "challe-plan--evian-accords--precondition-of",
+      "kind": "edge",
+      "locator": "\"Challe Plan\", revision 1370610721, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations--genocide-convention--precondition-of",
       "kind": "edge",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
@@ -2951,6 +2963,18 @@
       "id": "eusebio-de-queiros-law-1850--lei-aurea-1888--caused",
       "kind": "edge",
       "locator": "\"Slavery in Brazil\", revision 1365192365"
+    },
+    {
+      "dissent": false,
+      "id": "evian-accords--battle-of-bab-el-oued--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Bab El Oued\", revision 1370432852, § Context — OAS uprising (19 March)"
+    },
+    {
+      "dissent": false,
+      "id": "evian-accords--battle-of-bab-el-oued--reacted-to",
+      "kind": "edge",
+      "locator": "\"Évian Accords\", revision 1372137587, § Opposition to the Accords"
     },
     {
       "dissent": false,
@@ -4016,9 +4040,21 @@
     },
     {
       "dissent": false,
+      "id": "may-1958-crisis-in-france--challe-plan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Challe Plan\", revision 1370610721, § Background"
+    },
+    {
+      "dissent": false,
       "id": "mexican-war-of-independence--spanish-attempts-to-reconquer-mexico--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284, lead"
+    },
+    {
+      "dissent": false,
+      "id": "milk-bar-cafe-bombing--battle-of-algiers-1956-1957--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618, lead, § First phase and § The Army takes over"
     },
     {
       "dissent": false,
@@ -4397,6 +4433,12 @@
       "id": "petrobras-1953--the-commodity-boom-and-the-chinese-buyer--enabled",
       "kind": "edge",
       "locator": "\"Petrobras\", revision 1372204096"
+    },
+    {
+      "dissent": false,
+      "id": "philippeville-massacre--battle-of-algiers-1956-1957--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618, § Background"
     },
     {
       "dissent": false,
@@ -7520,6 +7562,12 @@
     },
     {
       "dissent": false,
+      "id": "algiers-putsch-of-1961",
+      "kind": "event",
+      "locator": "\"Algiers putsch of 1961\", revision 1370427908"
+    },
+    {
+      "dissent": false,
       "id": "alhucemas-landing",
       "kind": "event",
       "locator": "\"Alhucemas landing\", revision 1370427911"
@@ -7793,6 +7841,12 @@
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "\"Battle of Ayacucho\", revision 1375770122"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bab-el-oued",
+      "kind": "event",
+      "locator": "\"Battle of Bab El Oued\", revision 1370432852"
     },
     {
       "dissent": false,
@@ -8462,6 +8516,12 @@
     },
     {
       "dissent": false,
+      "id": "bombing-of-sakiet-sidi-youssef",
+      "kind": "event",
+      "locator": "\"Bombing of Sakiet Sidi Youssef\", revision 1375558078"
+    },
+    {
+      "dissent": false,
       "id": "boxer-rebellion",
       "kind": "event",
       "locator": "\"Boxer Rebellion\", revision 1372943833"
@@ -8561,6 +8621,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "\"Catatumbo campaign\", revision 1370610401"
+    },
+    {
+      "dissent": false,
+      "id": "challe-plan",
+      "kind": "event",
+      "locator": "\"Challe Plan\", revision 1370610721"
     },
     {
       "dissent": false,
@@ -8942,6 +9008,12 @@
     },
     {
       "dissent": false,
+      "id": "evian-accords",
+      "kind": "event",
+      "locator": "\"Évian Accords\", revision 1372137587"
+    },
+    {
+      "dissent": false,
       "id": "execution-of-louis-xvi",
       "kind": "event",
       "locator": "\"Execution of Louis XVI\", revision 1373172133"
@@ -9023,6 +9095,12 @@
       "id": "first-battle-of-brega",
       "kind": "event",
       "locator": "\"First Battle of Brega\", revision 1372213042"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-el-djorf",
+      "kind": "event",
+      "locator": "\"First Battle of El Djorf\", revision 1371469454"
     },
     {
       "dissent": false,
@@ -9890,6 +9968,12 @@
     },
     {
       "dissent": false,
+      "id": "may-1958-crisis-in-france",
+      "kind": "event",
+      "locator": "\"May 1958 crisis in France\", revision 1373489110"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "\"Merger Treaty\", revision 1340086782"
@@ -10160,6 +10244,12 @@
     },
     {
       "dissent": false,
+      "id": "palestro-ambush",
+      "kind": "event",
+      "locator": "\"Palestro ambush\", revision 1371094744"
+    },
+    {
+      "dissent": false,
       "id": "panic-of-1893",
       "kind": "event",
       "locator": "\"Panic of 1893\", revision 1374530409"
@@ -10229,6 +10319,12 @@
       "id": "petrobras-1953",
       "kind": "event",
       "locator": "\"Petrobras\", revision 1372204096"
+    },
+    {
+      "dissent": false,
+      "id": "philippeville-massacre",
+      "kind": "event",
+      "locator": "\"Philippeville massacre\", revision 1371790989"
     },
     {
       "dissent": false,

@@ -21,7 +21,7 @@
       ]
     },
     "battle-of-cusco--battle-of-maraycalla--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -30,7 +30,7 @@
       ]
     },
     "battle-of-cusco--siege-of-cusco--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -96,7 +96,7 @@
       ]
     },
     "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -105,7 +105,7 @@
       ]
     },
     "battle-of-punta-quemada--spanish-conquest-of-the-inca-empire--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -129,7 +129,7 @@
       ]
     },
     "battle-of-vilcaconga--battle-of-cusco--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -228,7 +228,7 @@
       ]
     },
     "siege-of-cusco--battle-of-ollantaytambo--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

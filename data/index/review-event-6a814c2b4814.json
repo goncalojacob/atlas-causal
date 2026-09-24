@@ -4038,6 +4038,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "algiers-putsch-of-1961",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Algiers putsch of 1961"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -5654,6 +5685,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
       "id": "battle-of-algiers-1956-1957",
       "kind": "event",
       "origin": {
@@ -5777,6 +5809,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ayacucho"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "battle-of-bab-el-oued",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bab El Oued"
     },
     {
       "authors": [
@@ -9515,6 +9579,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "bombing-of-sakiet-sidi-youssef",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bombing of Sakiet Sidi Youssef"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10263,6 +10358,39 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Cavaco Silva's absolute majority"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 3,
+      "id": "challe-plan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "participants-from-p710"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Challe Plan"
     },
     {
       "authors": [
@@ -12949,6 +13077,38 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 2,
+      "id": "evian-accords",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "participants-from-p710"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Évian Accords"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "death",
       "cites": [
         "wikidata",
@@ -13510,6 +13670,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "First Battle of Brega"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "first-battle-of-el-djorf",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "The cited article disagrees with itself at revision 1371469454: its first sentence says the battle \"took place on 22 September 1955\", while its § Aftermath quotes Alcaraz 2016 for \"du 20 au 28 septembre 1955\", which is the span the item states and the record carries. Nothing was changed; the disagreement is recorded here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of El Djorf"
     },
     {
       "authors": [
@@ -18763,6 +18955,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "may-1958-crisis-in-france",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "note": "Filed under algerian-war although its own lane is europe: the cited article calls it \"a political crisis in France during the turmoil of the Algerian War\" and carries the category \"1958 in the Algerian War\". The item states no P361 and the filing is the run's reading of that article, not the item's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "May 1958 crisis in France"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -18825,6 +19048,36 @@
       "revised": null,
       "status": "active",
       "title": "Mexican War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "milk-bar-cafe-bombing",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361"
+        ],
+        "note": "The item's English sitelink, \"Milk Bar Café bombing\", is a redirect to the biography \"Zohra Drif\"; there is no English article about the bombing to quote or to cite, so this record keeps the item's own description and carries no wikipedia-en citation.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Milk Bar Café bombing"
     },
     {
       "authors": [
@@ -20553,6 +20806,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "id": "palestro-ambush",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Palestro ambush"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -20975,6 +21259,38 @@
       "revised": null,
       "status": "active",
       "title": "Petrobras and the state monopoly of oil, 1953"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-24",
+      "degree": 1,
+      "id": "philippeville-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "algerian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Philippeville massacre"
     },
     {
       "authors": [
@@ -29674,12 +29990,6 @@
     {
       "id": "battle-of-algiers-1956-1957",
       "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-algiers-1956-1957",
-      "kind": "event",
       "message": "the title states 1956–1957 and the record is dated 1957",
       "rule": "span-vs-article-title"
     },
@@ -30020,6 +30330,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bombing-of-sakiet-sidi-youssef",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "boyaca-necklace-bomb-incident",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30158,6 +30474,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-battle-of-el-djorf",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30266,6 +30588,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "milk-bar-cafe-bombing",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "mondonedo-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -30333,6 +30661,12 @@
     },
     {
       "id": "palace-of-justice-siege",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "palestro-ambush",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

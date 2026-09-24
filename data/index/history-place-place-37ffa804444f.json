@@ -336,6 +336,15 @@
         }
       ]
     },
+    "bab-el-oued": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "bahrain-q398": {
       "from": "git",
       "versions": [
@@ -980,7 +989,7 @@
       ]
     },
     "cauca-department": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1797,6 +1806,15 @@
         }
       ]
     },
+    "evian-les-bains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "falkland-islands": {
       "from": "git",
       "versions": [
@@ -2231,7 +2249,7 @@
       ]
     },
     "guantanamo-bay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3055,7 +3073,7 @@
       ]
     },
     "la-guaira": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3085,6 +3103,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "lakhdaria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
@@ -3651,7 +3678,7 @@
       ]
     },
     "maray-qalla": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4405,7 +4432,7 @@
       ]
     },
     "ollantaytambo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4921,7 +4948,7 @@
       ]
     },
     "portobelo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5108,7 +5135,7 @@
       ]
     },
     "puerto-cabello": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5117,7 +5144,7 @@
       ]
     },
     "puna-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5548,6 +5575,15 @@
         }
       ]
     },
+    "sakiet-sidi-youssef": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "salle-du-jeu-de-paume": {
       "from": "git",
       "versions": [
@@ -5969,6 +6005,15 @@
         }
       ]
     },
+    "skikda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
     "slovak-republic": {
       "from": "git",
       "versions": [
@@ -6360,6 +6405,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tebessa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
         }
       ]
     },
