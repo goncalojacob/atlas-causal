@@ -4448,27 +4448,169 @@ and the claim's own age — and a fire that finds a finished run and a claim ove
 an hour old takes the branch. Written down so the fire after this one does not
 re-derive it.
 
+## Batch 18 — the Brazilian half of the Dutch–Portuguese War, and the Americas' seventeenth century
+
+*24 September, the eighteenth fire's second batch. The cell is **the Americas'
+seventeenth century**, which batch 17 left as the thinnest workable cell in this
+partition at 14 active and 6 main, and the vein is the one the earlier fires had
+half-described and got wrong.*
+
+### Before the batch
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 854 active | **858 active** |
+| **main** | **242** | **242** — unchanged, which is the rule |
+| active edges | 833 | **836** |
+| **largest connected component** | 604 | **607** |
+| components | 194 | **195** |
+| events with no edge at all | 158 | **159** |
+| the `americas` lane | 198 active, 55 main | **202 active, 55 main** |
+| the Americas' 17th century | 14 active, 6 main | **18 active, 6 main** |
+
+**Three of the four joined the largest component and the fourth opened a
+component of its own**, which is what the component count and the isolated count
+say side by side; §"The one with no edge" is why, and it is the article's fault
+and not the batch's.
+
+### Per lane and per century (A10)
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 4 / 3 | — | — | 8 / 5 |
+| 16th c. | 19 / 1 | — | — | 16 / 5 | — | — | 35 / 6 |
+| 17th c. | 21 / 2 | — | — | **18 / 6** | — | — | 39 / 8 |
+| 18th c. | 24 / 3 | — | — | 17 / 2 | — | — | 41 / 5 |
+| 19th c. | 15 / 10 | 17 / 1 | 7 / 7 | 38 / 8 | — | — | 77 / 26 |
+| 20th c. | 239 / 64 | 75 / 22 | 110 / 45 | 86 / 30 | — | — | 510 / 161 |
+| 21st c. | 52 / 7 | 47 / 8 | 26 / 15 | 23 / 1 | — | — | 148 / 31 |
+| **all** | **374 / 89** | **139 / 31** | **143 / 67** | **202 / 55** | **—** | **—** | **858 / 242** |
+
+**South and Central America against North America is 162 to 19.** All four of
+this batch are Brazilian — Bahia at about 13°S and Pernambuco at about 8°S — so
+the brief's order inside the lane is kept and is nowhere near spent.
+
+### How the four were found, and what the earlier fires had wrong
+
+**One SPARQL query**: `?item wdt:P361 ?parent` over
+`VALUES ?parent { wd:Q377269 wd:Q19019163 }` — the Dutch–Portuguese War and the
+Dutch invasions of Brazil — with an English sitelink required. **Forty-four
+distinct items came back and most of them are not this lane's**: the war was
+fought at Malacca, Mozambique, Hormuz, Goa, Elmina, Luanda, Macau and Colombo as
+well as in Brazil, so Asia's and Africa's are M42's to import and were skipped.
+
+**The correction this batch owes the record.** The fifteenth, sixteenth and
+seventeenth fires each wrote that `Q4677306` and `Q4677341` are "the two 1654
+actions that end the Dutch–Portuguese War in Brazil". They are not: the `P276` of
+both is `Q35381`, **Colombo**, and they are the sea fights off Ceylon. They are
+Asia's and M42's, and this branch should not import them. Nothing was imported on
+the strength of the error; it was caught by reading the `P276` column of the query
+that would have imported them.
+
+**`Q10369402`, "Second Battle of Salvador", was found and refused.** Its English
+sitelink resolves to *Second Battle of Salvador da Bahia*, whose `Special:Export`
+returns a single character: the article is a redirect with no text, so there is no
+lead to quote and no account to cite. Its `P585` of 1638-04-01 also collides with
+`Q932845`, whose article is the April–May 1638 siege — so importing both would
+very likely have written the same siege twice under two names. **The refusal is
+the run's and not the tool's**, and it is the kind a query column cannot see.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `battle-in-the-bay-of-sao-salvador` | `Q122056040` | 1627-03-03 | `dutch-portuguese-war` | `bay-of-all-saints` | 17th |
+| `battle-of-abrolhos` | `Q2890640` | 1631-09-12 | `dutch-brazil-1630-1654` | `abrolhos-archipelago` | 17th |
+| `siege-of-salvador-1638` | `Q932845` | 1638-04 – 1638-05-18 | `dutch-brazil-1630-1654` | `salvador` | 17th |
+| `action-of-12-17-january-1640` | `Q4677243` | 1640-01-12 – 01-17 | `dutch-brazil-1630-1654` | `ilha-de-itamaraca` | 17th |
+
+**Four items put to the import, four created, none refused and none ambiguous**,
+in twenty-three calls. No class was added. **The main count does not move**: 1627
+is inside the war's 1601–1661 and the other three are inside Dutch Brazil's
+1630–1654.
+
+### Two intervals written from the cited article (A7)
+
+**`battle-in-the-bay-of-sao-salvador`**: the item's `P585` is 1627 with no day and
+the article's first sentence says the action "took place on 3 March 1627", at
+revision 1373418032. The day is written from it, the `date-from-article` flag set
+and the `review.note` says what was read from where.
+
+**`siege-of-salvador-1638`**: the item's `P580` is 1 May 1638; the article
+(revision 1370744949) says the siege "took place between April and May 1638". The
+start is widened to `1638-04` and the end left at the item's own 18 May, which is
+A7 exactly — a widening from the record's own cited article at a named revision,
+and never a date somebody chose.
+
+### Places (A9, as A12 corrects it)
+
+**Three place records written by hand and one reused.** `salvador` has been here
+since the Bahia records and is the same city the siege was fought at; the other
+three are new and all three are **`region`** and not `city`, because what the
+items name are a bay, an archipelago and an island and not a point on the ground:
+`bay-of-all-saints` (`Q1310944`), `abrolhos-archipelago` (`Q331529`) and
+`ilha-de-itamaraca` (`Q587114`). `PRECISIONS` calls those coarse and the map draws
+them wider and fainter, which for three sea fights is the truth about them.
+
+### The three edges
+
+| edge | type | what the article says |
+| --- | --- | --- |
+| `dutch-brazil-1630-1654` → `battle-of-abrolhos` | `precondition-of` | the Dutch fleet "in Pernambuco, led by admiral Adrian Pater, sailed to intercept the Spanish convoy" |
+| `dutch-brazil-1630-1654` → `siege-of-salvador-1638` | `enabled` | "The governor of the Dutch colony in Brazil, John Maurice, Prince of Nassau-Siegen, commanding the army of the Dutch West India Company… put the city of Salvador under siege" |
+| `siege-of-salvador-1638` → `action-of-12-17-january-1640` | `precondition-of` | the 1640 fleet sailed "to retake the Dutch base of Pernambuco" after the defeat of "John Maurits of Nassau's attack over Bahia" |
+
+**All three run into or out of `dutch-brazil-1630-1654`, which is in the largest
+component**, so three of the four new records are in the 604 and the component is
+**607**. Every explanation quotes the sentence that carries it and names the
+revision; all three are `probable`, Wikipedia alone.
+
+### The one with no edge, and why none was written
+
+**`battle-in-the-bay-of-sao-salvador` is the new isolated record.** Its article
+(revision 1373418032) is a three-sentence stub with no background and no
+aftermath: Piet Hein spotted thirty-four vessels, took twenty-two to twenty-five
+of them and 2,700 chests of sugar, tobacco and cotton, and *"It was a brilliant
+success"*. There is nothing in it that states a link to the recapture of Bahia two
+years before or to anything after. **The batch wrote no edge rather than a hollow
+one**: an edge whose only support is that both records are parts of the same war
+says what `parent` already says and adds an argument nobody made. It is the
+isolated count going 158 → 159 and it is the honest number.
+
+### Deviations
+
+**1252. A Wikidata item's English sitelink can point at a redirect, and
+`Special:Export` is how a run finds out.** `Q10369402` carries an `en` sitelink to
+*Second Battle of Salvador da Bahia*; the export of that title returns a revision
+id and a body of one character. **A lead the cache would have written as a summary
+is not the same thing as an article that exists**, so a run that means to file an
+item under a name should export the title before it imports the item — one call,
+and here it stopped a duplicate of `Q932845` being written under a second name.
+
 ## Where the run stands, for the fire that picks it up
 
-*24 September, after the eighteenth fire and its seventeenth batch.*
+*24 September, after the eighteenth fire and its two batches, 17 and 18.*
 
 | | |
 | --- | --- |
-| corpus | **854 active** |
+| corpus | **858 active** |
 | **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **604** |
-| components | 194 |
-| events with no edge at all | 158 |
+| **largest connected component** | **607** |
+| components | 195 |
+| events with no edge at all | 159 |
 | Europe before 1900 | 83 active, 18 main |
-| the `americas` lane | 198 active, 55 main |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3), the Americas' 17th (**14, 6**), Europe's 15th (4, 2) |
-| the cell this batch moved | Europe's 16th, 12 → 19 active and 1 main unchanged |
+| the `americas` lane | **202 active, 55 main** |
+| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 16th (16, 5)**, the Americas' 18th (17, 2), the Americas' 17th (18, 6), Europe's 16th (19, 1) |
+| the cells this fire moved | Europe's 16th, 12 → 19; the Americas' 17th, 14 → 18; both with their main counts untouched |
 
-**The thinnest workable cell is now the Americas' seventeenth century**, at 14
-active and 6 main, and its vein is named below. Europe's 16th is no longer the
-trailing cell but it is nowhere near spent: nine more parts of the War of the
-League of Cambrai and about forty parts of the other seven phases came back in
-this fire's one query and are listed below.
+**The thinnest workable cell is now the Americas' sixteenth century**, at 16
+active and 5 main, and its vein has been sitting ready for three fires: the nine
+of the conquest vein listed below, every one inside an umbrella already here.
+After it come the Americas' 18th (the six South and Central American items of the
+War of Jenkins' Ear) and the Americas' 17th (the six Brazilian items batch 18
+left). **Europe's 16th is no longer the trailing cell and is nowhere near spent**:
+nine more parts of the War of the League of Cambrai and about thirty of the other
+phases came back in this fire's one query and are listed below.
 
 **The order of a fire on this branch, which deviations 1242 and 1251 settle
 together.** Resolve the merge and **commit it**; only then
@@ -4555,10 +4697,35 @@ import creates is licensed differently from one written here.
 
 ### The veins earlier fires named, and which are still open
 
-**The Americas' seventeenth century is the thinnest cell and its vein is two
-items**: `Q4677306` and `Q4677341`, the 1654 actions that end the
-Dutch–Portuguese War in Brazil, filing under the war itself and costing no main
-event. **`Q19019163`** *Dutch invasions of Brazil* (1624–1654) is an umbrella
+**The Americas' seventeenth century, four of its items spent by batch 18 and six
+left.** `?item wdt:P361 ?parent` over `VALUES ?parent { wd:Q377269 wd:Q19019163 }`
+with an English sitelink returns **forty-four distinct items**; the war was fought
+on four continents, so most of them are Asia's or Africa's and **M42's, not this
+lane's**. What is left of that query once the Asian items are set aside, with the
+lane of each said plainly; all of them file under `dutch-portuguese-war` or
+`dutch-brazil-1630-1654` and none costs a main event:
+
+| item | title | date | point |
+| --- | --- | --- | --- |
+| `Q106542703` | Battle of Mata Redonda | 1636-01-18 | no; `P276` is Porto Calvo, which the atlas has no place record for |
+| `Q121365322` | Action at Tamanana, 9 September 1645 | 1645-09-09 | no; `P276` is Tamandaré |
+| `Q138011120` | South Atlantic campaign | 1647-02 | no; `P276` is the South Atlantic Ocean |
+| `Q4871476` | Battle of Kombi | 1647-10-29 | no, and no `P276` either — it is Angola's and so M42's |
+| `Q5037028` | Capture of Luanda | 1641 | Angola's, M42's |
+| `Q130377423` | Filips van Zuylen's campaign against Luanda | 1624-06 | Angola's, M42's |
+
+**Two of the six are plainly Brazilian and this lane's** — Mata Redonda and the
+action at Tamandaré — **and neither carries a point**, so a batch of them is a
+place-record batch first, which is the shape batch 16 worked in and is not
+expensive. The South Atlantic campaign is a sea campaign whose lane a run should
+settle before importing it, and the three Luanda items are Angola's and M42's.
+**`Q10369402` must not be imported** — see deviation 1252.
+
+**A correction to what the fifteenth to seventeenth fires wrote, three times
+over.** `Q4677306` and `Q4677341` are **not** the actions that end the war in
+Brazil: both have `P276` `Q35381`, Colombo, and they are the sea fights off
+Ceylon. **They are Asia's and belong to M42**, and this branch should not import
+them. `Q19019163` *Dutch invasions of Brazil* (1624–1654) is still an umbrella
 whose span already holds seven records here; a fire that takes it should check
 first that it does not sit between the war and Dutch Brazil in the way deviation
 1244 refuses.

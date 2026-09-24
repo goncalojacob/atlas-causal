@@ -21352,6 +21352,47 @@ alone — which is how every claim in this file has been taken, and it is writte
 down so the next fire does not re-derive it.
 `docs/m42b-pool.md` → "Batch 17" is the full account.
 
+**M42b batch 18 — the Brazilian half of the Dutch–Portuguese War, and the
+Americas' seventeenth century, 24 September.** The eighteenth fire's second batch
+took the cell batch 17 left thinnest — the Americas' 17th, 14 active and 6 main.
+One SPARQL query over the war (`Q377269`) and the Dutch invasions of Brazil
+(`Q19019163`) returned **forty-four distinct items**, most of them Malacca,
+Mozambique, Hormuz, Goa, Elmina, Luanda, Macau and Colombo and therefore **M42's
+and skipped**. **Four were created, none refused and none ambiguous**, in
+twenty-three calls: `battle-in-the-bay-of-sao-salvador`, `battle-of-abrolhos`,
+`siege-of-salvador-1638` and `action-of-12-17-january-1640`, filed under
+`dutch-portuguese-war` and `dutch-brazil-1630-1654`, so **the main count does not
+move: 242 before and 242 after**. **Three place records written by hand** and one
+reused: `bay-of-all-saints`, `abrolhos-archipelago` and `ilha-de-itamaraca`, all
+three at `region` precision because what the items name are a bay, an archipelago
+and an island and not points on the ground, and the siege took the `salvador`
+record the atlas already held. **Two intervals written from the cited article
+under A7**: the Bay of São Salvador action gets its day, 3 March 1627, which the
+item does not carry; and the siege of Salvador is widened from the item's 1 May to
+the article's "between April and May 1638", the end left at the item's own 18 May.
+**Three edges**, each `probable` and each quoting the sentence that carries it,
+all three running into or out of `dutch-brazil-1630-1654`, which is inside the
+largest component — so **the component grows, 604 → 607**, which is the number A5
+asks for. The corpus is **858 active**, the `americas` lane 202, the cell 18 with
+its six mains untouched, and South and Central America against North America is
+162 to 19. `docs/m53-polities.md` §4.1 re-taken at **379 of 858 in the same
+commit as the records**, which is deviation 1251's lesson applied the first time it
+could be. **Two things were refused and both are the run's own reading and not the
+tool's.** `Q10369402`, "Second Battle of Salvador", has an English sitelink to a
+**redirect**: `Special:Export` of it returns a body of one character, so there is
+no lead to quote, and its `P585` collides with `Q932845`, whose article is the
+April–May 1638 siege — importing both would have written one siege twice
+(**deviation 1252**). And `battle-in-the-bay-of-sao-salvador` was left with **no
+edge at all**, because its article is a three-sentence stub with no background and
+no aftermath: an edge whose only support is that both records are parts of the
+same war says what `parent` already says, so the isolated count going 158 → 159 is
+the honest number. **A correction the batch owes the record**: the fifteenth,
+sixteenth and seventeenth fires each wrote that `Q4677306` and `Q4677341` are the
+1654 actions ending the war *in Brazil*. Both have `P276` `Q35381`, **Colombo** —
+they are the sea fights off Ceylon, they are **M42's**, and this branch should not
+import them. Nothing was imported on the strength of the error.
+`docs/m42b-pool.md` → "Batch 18" is the full account.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
