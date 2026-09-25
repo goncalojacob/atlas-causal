@@ -52,6 +52,7 @@ import {
   naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
 import { exportButton } from '../share.js';
+import { PHONE } from '../view-key.js';
 
 // Sizes in SVG units at k = 1; divided by k when drawn, so a node keeps its
 // size on screen at any zoom, as the map's marks do.
@@ -313,6 +314,29 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     role: 'img',
     'aria-label': 'The graph of events and the links between them',
   }, [viewport]);
+
+  // **On a phone the picture fills the pane** (M88 §1, the third review,
+  // finding B1), which is the rule `src/map/map.js` already applies to the map
+  // and for the same reason. The viewBox is the arrangement's own rectangle,
+  // wider than it is tall, and the default `xMidYMid meet` letterboxes it: at
+  // 390 px wide the drawing could never be more than a strip across the top of
+  // an 844 px pane, and the review met it as *an unnamed strip a quarter of
+  // the screen high*. `slice` fits the other dimension and crops what does not
+  // fit — and what it crops here is time, which the camera then frames back
+  // into the rectangle a reader can actually see (`frameCamera` measures that
+  // rectangle off the element's own matrix, so it follows this attribute
+  // rather than the nominal box).
+  //
+  // An attribute and not a stylesheet rule, because CSS has no property for
+  // it; the breakpoint is `view-key.js`'s `PHONE`, which is the one
+  // `src/style.css` already draws at. Read again whenever the pane changes
+  // size, so a window dragged across the breakpoint is the picture the
+  // breakpoint asks for.
+  const fitToPane = () => {
+    root.setAttribute('preserveAspectRatio', globalThis.matchMedia?.(PHONE)?.matches
+      ? 'xMidYMid slice' : 'xMidYMid meet');
+  };
+  fitToPane();
 
   // The one line the reader sees while a first arrangement too large to make
   // here is being made elsewhere. Never shown at the sizes this atlas holds:
@@ -1269,19 +1293,21 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     // **Nothing too small to read** (M87 §9, review A finding 5). The picture is
     // scaled to its pane and the text is scaled with it, so on a phone the names
     // were about four pixels tall: ink over the marks they were naming and a
-    // word to nobody. What the reader has open is the exception — the selection
-    // and the one hop around it are what they came for, and a picture that named
-    // nothing at all would be worse than one that named too much. `pixels` is
-    // whatever the pane makes of `LABEL_SIZE`, so this is one rule at every
-    // width and there is no second breakpoint in here.
-    const pixels = LABEL_SIZE * (visibleBox().scale ?? 1);
-    const legible = pixels >= LABEL_MIN_PIXELS;
-    const kept = legible ? null : new Set([
-      ...(s.selected ? [s.selected] : []),
-      ...(working.lensNear ?? []),
-    ]);
+    // word to nobody. `pixels` is whatever the pane makes of `LABEL_SIZE`, so
+    // this is one rule at every width and there is no second breakpoint in here.
+    //
+    // **And what is too small is written larger, not dropped** (M88 §1, the
+    // third review, finding B1). M87 answered the four-pixel name by keeping
+    // only what the reader had open and the one hop around it — and at rest a
+    // phone has nothing open, so the picture was a field of unnamed circles.
+    // A name too small at the picture's own size is written at the floor's
+    // size instead: the box the placer measures grows with it, so fewer names
+    // fit and every one that is drawn can be read, which is the trade the
+    // review asked for and not a second picture with no names in it.
+    const drawnAt = visibleBox().scale ?? 1;
+    const pixels = LABEL_SIZE * drawnAt;
+    const size = pixels >= LABEL_MIN_PIXELS ? LABEL_SIZE : LABEL_MIN_PIXELS / drawnAt;
     const candidates = naming(onScreen, { focus, order, limit: LABEL_LIMIT, all: true })
-      .filter((node) => !kept || kept.has(node.representative.id))
       .map((node) => ({ node, name: labelOf(atlas, node.representative.event) }))
       // No name yet is no label, and the next node still gets its own.
       .filter((c) => c.name !== null);
@@ -1294,6 +1320,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       view: box,
       capped: false,
       rows: LENS_ROWS_AWAY,
+      size,
     });
     named = new Set(placed.map((p) => p.node.key));
     for (const { node, text, rect } of placed) {
@@ -1303,7 +1330,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // and a name on a line of its own with a leader under it is legible
       // where a name cut to six letters is not. Nothing at all when the label
       // is where it has always been, which is every label at rest.
-      if (movedAway(node, rect, k)) {
+      if (movedAway(node, rect, k, size)) {
         labelsGroup.appendChild(svg('line', {
           x1: node.x + (rect.right ? 1 : -1) * (MAX_RADIUS / k),
           y1: node.y,
@@ -1313,10 +1340,10 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
         }));
       }
       labelsGroup.appendChild(textNode(text, {
-        x: rect.x, y: rect.y + (LABEL_SIZE * 0.35) / k,
+        x: rect.x, y: rect.y + (size * 0.35) / k,
         class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
         'text-anchor': rect.right ? 'start' : 'end',
-        'font-size': LABEL_SIZE / k,
+        'font-size': size / k,
       }));
     }
   }
@@ -1338,16 +1365,23 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
     const name = labelOf(atlas, stack.representative.event);
     if (name === null) return;
     const k = transform.k;
-    const found = placeOne(name, stack, { k, gap: LABEL_GAP, view: view(), capped: false })
+    // The same floor the drawn labels are written at: a name a reader has
+    // asked for by pointing at its mark is the last one that should be four
+    // pixels tall.
+    const drawnAt = visibleBox().scale ?? 1;
+    const size = LABEL_SIZE * drawnAt >= LABEL_MIN_PIXELS ? LABEL_SIZE : LABEL_MIN_PIXELS / drawnAt;
+    const found = placeOne(name, stack, {
+      k, gap: LABEL_GAP, view: view(), capped: false, size,
+    })
       // Nowhere clear to write it is still written: the reader is pointing at
       // this mark and at no other, so there is nothing for it to be confused
       // with. Its halo is what keeps it readable over whatever is under it.
-      ?? { text: name, right: true, rect: labelBoxAt(stack, name, true, { k, gap: LABEL_GAP }) };
+      ?? { text: name, right: true, rect: labelBoxAt(stack, name, true, { k, gap: LABEL_GAP, size }) };
     hoverGroup.appendChild(textNode(found.text, {
-      x: found.rect.x, y: found.rect.y + (LABEL_SIZE * 0.35) / k,
+      x: found.rect.x, y: found.rect.y + (size * 0.35) / k,
       class: 'node-label hovered',
       'text-anchor': found.right ? 'start' : 'end',
-      'font-size': LABEL_SIZE / k,
+      'font-size': size / k,
     }));
   }
 
@@ -1517,6 +1551,9 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       const now = `${container.clientWidth}x${container.clientHeight}`;
       if (now === last) return;
       last = now;
+      // How the picture is fitted to the pane is a fact about the pane's own
+      // width, so it is read again before the measurement that follows it.
+      fitToPane();
       measured = null;
       render(state.get());
     }).observe(container);

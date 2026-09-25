@@ -227,10 +227,17 @@ test('§9: on a phone the map fills the pane, and on a desktop it still fits ins
 
 // And the graph's names, which were about 4 px tall on a phone — the picture is
 // scaled to the pane and the text is scaled with it, so a name nobody can read is
-// ink over the marks it is naming. Nothing under 8 px on screen is drawn, except
-// what the reader has open and the one hop around it: those are what they came
-// for, and a picture that named nothing at all would be worse than one that
-// named too much.
+// ink over the marks it is naming.
+//
+// **Rewritten in M88 §1** (the third review, finding B1). M87 answered the
+// four-pixel name by *dropping* every name under eight, keeping only what the
+// reader had open and the one hop around it — and at rest a phone has nothing
+// open, so the picture the review met was an unnamed strip a quarter of the
+// screen high. The answer now is the one the map already gives: the drawing
+// fills the pane, and a name too small at the picture's own size is written at
+// the floor's size instead, so fewer of them fit and every one drawn can be
+// read. What this asserts is that pair, against the pane it is in: nothing is
+// pinned, and "at least one name" is the part M87's picture could not do.
 const GRAPH_LABEL_SIZES = `
   return [...document.querySelectorAll('#graph svg.graph text.node-label')].map((el) => ({
     text: el.textContent,
@@ -238,18 +245,41 @@ const GRAPH_LABEL_SIZES = `
     selected: el.classList.contains('selected'),
   }));`;
 
-test('§9: on a phone the graph draws no name too small to read', { skip }, async () => {
+// The same measurement `MAP_FIT` makes, of the graph's own root and pane.
+const GRAPH_FIT = `
+  const pane = document.querySelector('#graph');
+  const svg = document.querySelector('#graph svg.graph');
+  const ctm = svg.getScreenCTM();
+  const box = svg.viewBox.baseVal;
+  return {
+    pane: { width: pane.clientWidth, height: pane.clientHeight },
+    drawn: { width: Math.abs(ctm.a) * box.width, height: Math.abs(ctm.d) * box.height },
+  };`;
+
+test('§9: on a phone the graph fills the pane and every name it draws is legible', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await seenIntro(page);
     await open(page, url('?view=graph'), 'return document.querySelectorAll("#graph circle.node").length > 0;');
     await settledShards(page);
     await page.eval('return new Promise((resolve) => requestAnimationFrame(() => setTimeout(() => resolve(true), 0)));');
+
+    // The drawing is the pane's picture and not a strip across the top of it.
+    // Half, because that is the failure — a quarter of the screen — and not a
+    // number about this layout: the map's own test asks for the whole height,
+    // and the graph's camera pads what it frames.
+    const fit = await page.eval(GRAPH_FIT);
+    assert.ok(fit.pane.height > 0, 'the pane measured itself');
+    assert.ok(fit.drawn.height > fit.pane.height / 2,
+      `the graph is ${Math.round(fit.drawn.height)} px in a pane of ${fit.pane.height} px`);
+
+    // At rest, with nothing open: names, and none of them too small to read.
     const rest = await page.eval(GRAPH_LABEL_SIZES);
+    assert.ok(rest.length > 0, 'the picture at rest names something');
     const tiny = rest.filter((label) => label.px < 8 - 0.01);
     assert.deepEqual(tiny.map((l) => `${l.text} at ${l.px.toFixed(1)}px`), [],
       'a name under 8 px on screen is ink over the mark it names');
 
-    // And what the reader has open is named whatever the picture is scaled to.
+    // And what the reader has open is named too, as it always was.
     const id = await page.eval(`return (document.querySelector('#graph circle.node[data-id]') || {}).getAttribute
       ? document.querySelector('#graph circle.node[data-id]').getAttribute('data-id') : null;`);
     assert.ok(id, 'there is a mark to open');
@@ -257,5 +287,8 @@ test('§9: on a phone the graph draws no name too small to read', { skip }, asyn
     await settledShards(page);
     await waitFor(page, "return document.querySelectorAll('#graph text.node-label').length > 0;",
       'the open event to be named');
+    const opened = await page.eval(GRAPH_LABEL_SIZES);
+    assert.deepEqual(opened.filter((l) => l.px < 8 - 0.01).map((l) => l.text), [],
+      'and nothing under the floor with a record open either');
   }, { device: PHONE });
 });
