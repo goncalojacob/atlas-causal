@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q402312",
-  "sitelinks": {
-    "count": 23,
-    "on": "2026-09-25"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q402312",
   "wikipedia": {
     "en": "Battle of Dettingen",
     "pt": "Batalha de Dettingen"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-25"
   },
   "sources": [
     {
@@ -52,9 +52,9 @@
     "date": "1743-06-27"
   },
   "place": "karlstein-am-main",
-  "category": "war",
-  "actors": [],
-  "parent": "war-of-the-austrian-succession",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
 }

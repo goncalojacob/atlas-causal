@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,14 +22,17 @@
       "a9-place"
     ]
   },
-  "wikidata": "Q233702",
-  "sitelinks": {
-    "count": 24,
-    "on": "2026-09-25"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q233702",
   "wikipedia": {
     "en": "Second Silesian War",
     "pt": "Segunda Guerra da Silésia"
+  },
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-25"
   },
   "sources": [
     {
@@ -53,9 +53,9 @@
     "endDate": "1745-12-25"
   },
   "place": "silesia",
-  "category": "war",
-  "actors": [],
-  "parent": "war-of-the-austrian-succession",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
 }

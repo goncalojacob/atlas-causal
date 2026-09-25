@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3485966",
+  "wikipedia": {
+    "en": "Siege of Namur (1746)"
+  },
   "sitelinks": {
     "count": 5,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Siege of Namur (1746)"
   },
   "sources": [
     {
@@ -52,9 +52,9 @@
     "endDate": "1746-09-30"
   },
   "place": "namur",
-  "category": "war",
-  "actors": [],
-  "parent": "war-of-the-austrian-succession",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
 }

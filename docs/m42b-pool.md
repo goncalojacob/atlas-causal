@@ -7612,6 +7612,18 @@ order and the file no longer matches what the review editor would save. **Set th
 `valuesFromRecord`/`applyValues` before writing, which is the only way to be sure of the
 key order a record gains a field in.
 
+
+**1307. The importer's id slug drops a letter it cannot fold, so `Małujowice` is
+`ma-ujowice` and `Dessau-Roßlau` was `dessau-ro-lau`.** The place records are right —
+`names` and `where.label` both read `Małujowice`, and the card and the map show that — but
+the id a reader sees in `?place=` has a hole in it where the `ł` was, and batch 24 left the
+same hole in a German `ß` without anyone writing it down. It is cosmetic and it is not a
+records lane's to fix: `slugify` is in `src/contribute/bundle.js`, the form and the review
+editor share it, and a change to it changes what id every future contribution gets. **A
+fire that meets a name with a letter outside ASCII should expect a gap in the slug and
+should not rename the record by hand** — `tools/migrate/ids.mjs` exists for a rename, and a
+rename costs every reference. Worth one line of the owner's time, because the two ids are
+the first thing a reader meets in the address bar.
 ## Where the run stands, for the fire that picks it up
 
 *25 September, after the twenty-ninth fire and its batch 29.*

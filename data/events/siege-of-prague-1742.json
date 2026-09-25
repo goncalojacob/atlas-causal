@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -24,13 +21,16 @@
       "summary-from-lead"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3486003",
+  "wikipedia": {
+    "en": "Siege of Prague (1742)"
+  },
   "sitelinks": {
     "count": 8,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Siege of Prague (1742)"
   },
   "sources": [
     {
@@ -51,9 +51,9 @@
     "endDate": "1742-12"
   },
   "place": "prague",
-  "category": "war",
-  "actors": [],
-  "parent": "war-of-the-austrian-succession",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
 }

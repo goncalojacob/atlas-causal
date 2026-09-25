@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q3485894",
+  "wikipedia": {
+    "en": "Fall of Ghent"
+  },
   "sitelinks": {
     "count": 4,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Fall of Ghent"
   },
   "sources": [
     {
@@ -52,9 +52,9 @@
     "endDate": "1745-07-15"
   },
   "place": "ghent",
-  "category": "war",
-  "actors": [],
-  "parent": "war-of-the-austrian-succession",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
 }

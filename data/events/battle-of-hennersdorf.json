@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q657406",
+  "wikipedia": {
+    "en": "Battle of Hennersdorf"
+  },
   "sitelinks": {
     "count": 11,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Battle of Hennersdorf"
   },
   "sources": [
     {
@@ -51,9 +51,9 @@
     "date": "1745-11-23"
   },
   "place": "henrykow-lubanski",
-  "category": "war",
-  "actors": [],
-  "parent": "second-silesian-war",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "second-silesian-war",
+  "category": "war",
+  "actors": []
 }

@@ -14,9 +14,6 @@
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
   "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
   "review": {
     "status": "draft",
     "flags": [
@@ -25,13 +22,16 @@
       "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q688504",
+  "wikipedia": {
+    "en": "Battle of Chotusitz"
+  },
   "sitelinks": {
     "count": 18,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Battle of Chotusitz"
   },
   "sources": [
     {
@@ -51,9 +51,9 @@
     "date": "1742-05-17"
   },
   "place": "chotusice",
-  "category": "war",
-  "actors": [],
-  "parent": "first-silesian-war",
   "region": null,
-  "regionNote": null
+  "regionNote": null,
+  "parent": "first-silesian-war",
+  "category": "war",
+  "actors": []
 }
