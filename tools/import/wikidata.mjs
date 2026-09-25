@@ -49,6 +49,8 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver } from '../../src/util/geo.js';
+import { astronomicalBounds } from '../../src/util/dates.js';
+import { PROVENANCE_SENTENCES } from '../../src/summary.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { mergeIdentity, mergeNames } from './identity.mjs';
@@ -110,8 +112,17 @@ export const PROPERTIES = Object.freeze({
   country: 'P17',
   administrative: 'P131',
   participant: 'P710',
+  partOf: 'P361',
 });
 
+// How many of the located things a batch names may be fetched for their own
+// sake. Three properties per item now instead of two (A9's chain reads P276
+// as well as P131 and P17), so the old ceiling of one batch was reached by
+// twenty-five events naming a town each. Four batches of 25 is one extra
+// hundred calls at the worst, well inside CALL_BUDGET, and the cap is still
+// there so that a seeds file naming a thousand towns cannot spend the budget
+// on places nobody asked for.
+export const LOCATION_FETCH = 100;
 // Batches of 25: the size wbgetentities takes for anonymous callers, and
 // small enough that a job cut off mid-run has lost at most 25 items of work.
 export const BATCH = 25;
@@ -405,6 +416,11 @@ export function readEntity(entity) {
     country: claimIds(entity, PROPERTIES.country),
     administrative: claimIds(entity, PROPERTIES.administrative),
     participants: claimIds(entity, PROPERTIES.participant),
+    // What the item itself says it is part of. Read for the filing pass and
+    // for nothing else: P361 is the item's own claim to belong to a larger
+    // thing, which is exactly what `parent` says here, and it is never read as
+    // an argument that one brought the other about.
+    partOf: claimIds(entity, PROPERTIES.partOf),
     titles: articleTitles(entity),
     sitelinks: countLanguageEditions(entity),
   };
@@ -669,6 +685,112 @@ export function importedSummary(read) {
   return `Wikidata item ${read.qid}, imported by tools/import/wikidata.mjs.${said} `
     + 'Everything here is copied from the item\'s own fields and nothing in it is this atlas\'s account of the thing: '
     + 'that is still to be written, and review.html is where somebody writes it.';
+}
+
+// --- the three passes a batch used to write by hand -------------------------
+
+// Deviation 1310, asked for by the fire of 25 September after paying for it
+// twice: the summary from the cached lead, the A9 place chain and the P361
+// filing were script code a fire wrote again from nothing at every batch, and
+// the two faults of 24 September were both in that code rather than in
+// anything the tool refused up front. They are here, exported and tested, and
+// a batch is a caller. Each is pure; none of them decides anything a person
+// has not already decided, and none of them invents a date, a point or a
+// claim.
+
+// What the record's `review.flags` says each pass did, so that a reviewer can
+// see where a summary, a place or a parent came from and take it off.
+// The sentence that says the quoted lead is the article's account and not yet
+// this atlas's. It is `src/summary.js`'s own, imported rather than retyped:
+// that module lifts it back out of the paragraph by matching it literally, so
+// a copy here that drifted by one comma would leave the sentence on the card.
+const LEAD_PROVENANCE = PROVENANCE_SENTENCES[0];
+
+export const LEAD_SUMMARY_FLAG = 'summary-from-lead';
+export const A9_PLACE_FLAG = 'a9-place';
+export const FILED_FLAG = 'filed-from-p361';
+
+// 1 — the summary, from the article's own lead at the revision it was read at
+// (A12 (1), and the brief's "a summary that is the cached lead at a revision,
+// never the placeholder"). The framing is the one `src/summary.js` already
+// takes apart, down to the sentence: a fifth wording would be a paragraph no
+// card could separate the article's account from the importer's note in.
+// Returns null where there is no lead, which is where `importedSummary` is
+// still the honest answer.
+export function leadSummary(read, lead) {
+  if (!lead || typeof lead.text !== 'string' || lead.text.trim() === '') return null;
+  if (!Number.isInteger(lead.revid) || lead.revid <= 0) return null;
+  return `The English Wikipedia article "${lead.title}", at revision ${lead.revid}, opens: `
+    + `"${lead.text.trim()}" ${LEAD_PROVENANCE} ${importedSummary(read)}`;
+}
+
+// And where it was read, as a citation. M72: a locator, always — the article
+// and the revision, which is what makes the quote checkable at all.
+export function leadCitation(lead, lang = 'en') {
+  if (!lead || !Number.isInteger(lead.revid) || lead.revid <= 0) return null;
+  const source = WIKIPEDIA_SOURCE[lang];
+  if (!source) return null;
+  return { source, locator: `"${lead.title}", revision ${lead.revid}` };
+}
+
+// 2 — the order A9 and A12 (2) fix for the place an item names: **the item's
+// own P625 first**, then where it says it happened (P276), then the
+// administrative territory (P131), then the country (P17). The first of them
+// that carries a coordinate is the place. The order is the whole of the rule,
+// so it is one list and not four branches at the call site.
+export function placeChain(read) {
+  return [...new Set([read.qid, ...read.location, ...read.administrative, ...read.country])];
+}
+
+// The lane guard of the 24 September fire, in force for both lanes (A14 (2)):
+// a place whose lane disagrees with the event's own is not the event's place.
+// The Great Depression stands in no single country, and a battle does not
+// happen in the lane of the capital that ordered it. Two nulls agree —
+// nothing was measured, so nothing disagrees.
+export function lanesAgree(eventLane, placeLane) {
+  if (eventLane === null || eventLane === undefined) return true;
+  if (placeLane === null || placeLane === undefined) return true;
+  return eventLane === placeLane;
+}
+
+// 3 — the umbrellas the item's own P361 names and this atlas holds as active
+// events. **Every one whose span contains the child's** (A8), not the first:
+// the conquest of Chiapas is part of the conquest of the Aztec empire and of
+// the colonisation of the Americas, and neither is the one true umbrella. The
+// span is read with rule 24's own arithmetic, so a filing this writes can
+// never be the warning that rule raises; a parent whose span does not contain
+// the child is left out and reported rather than written and warned about.
+//
+// `umbrellas` is a Map from the item to { id, when } — the atlas's own
+// records, so nothing here decides what an umbrella is.
+export function filedUnder(when, partOf, umbrellas) {
+  const child = importSpan(when);
+  const out = [];
+  const refused = [];
+  for (const qid of partOf ?? []) {
+    const held = umbrellas.get(qid);
+    if (!held) continue;
+    const whole = importSpan(held.when);
+    if (!child || !whole || child.from < whole.from || child.to > whole.to) {
+      refused.push({ id: held.id, qid, why: 'the child is not dated inside it (rule 24)' });
+      continue;
+    }
+    if (!out.includes(held.id)) out.push(held.id);
+  }
+  return { parents: out, refused };
+}
+
+// An interval as two astronomical bounds, which is `span()` in
+// src/validate/rules.js and has to stay the same arithmetic: a filing judged
+// by one and warned about by the other would be a fire writing its own defect.
+function importSpan(when) {
+  if (!when || typeof when !== 'object') return null;
+  try {
+    const start = astronomicalBounds(when.start);
+    return { from: start.min, to: when.end === null || when.end === undefined ? Infinity : astronomicalBounds(when.end).max };
+  } catch {
+    return null;
+  }
 }
 
 function envelope(id, kind, created, fields, { flags = [] } = {}) {
@@ -1030,6 +1152,22 @@ export async function fetchEntities(fetcher, qids) {
 // The lead of each article the item links to, cached by item and language.
 // A lead already on disk is not fetched again: the cache is what makes a
 // second run of a drafting milestone cost nothing.
+// The lead already on disk, whether this run fetched it or a run months ago
+// did. `fetchLeads` skips a cached file and so hands nothing back for it, and
+// the summary pass needs the text either way: a record whose lead was cached
+// by an earlier fire must get the same summary as one cached by this fire.
+// Missing or unreadable is null, never a throw — a cache is not a source of
+// truth and a batch does not stop because one file of it is gone.
+export async function readLead(cacheDir, qid, lang = 'en') {
+  const file = path.join(cacheDir, `${qid}.${lang}.json`);
+  if (!existsSync(file)) return null;
+  try {
+    return JSON.parse(await readFile(file, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
 export async function fetchLeads(fetcher, read, { cacheDir, today, force = false }) {
   const written = [];
   for (const [lang, title] of Object.entries(read.titles)) {
@@ -1071,7 +1209,16 @@ export const KINDS = IMPORT_KINDS;
 
 // Everything the run did, in the shape the report prints and the tests read.
 function emptyReport() {
-  return { created: [], enriched: [], signed: [], named: [], reused: [], refused: [], unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0 };
+  return {
+    created: [], enriched: [], signed: [], named: [], reused: [], refused: [],
+    unclassified: new Map(), ambiguous: [], leads: [], calls: 0, batch: [], remaining: 0,
+    // What the three passes would not do, which is the half of a pass worth
+    // reading: an umbrella the child is not dated inside (rule 24), a place in
+    // a different lane from its event (A14 (2)), a located item whose class is
+    // not a place of this atlas, and an event whose own point is the only thing
+    // located — the one a person writes the place for.
+    unfiled: [], offLane: [], offClass: [], ownPoint: [],
+  };
 }
 
 // The identity fields and the other names, in one pass over one record, so
@@ -1099,6 +1246,93 @@ function skipSigned(report, record, qid) {
   return true;
 }
 
+// A9's chain, walked: the place an event gets, reusing a record this atlas
+// already holds before writing one, and writing none where the lane guard
+// says the candidate is somewhere else.
+//
+// **Where this stops, and why.** The chain reads the item's own P625 first
+// (A12 (2)), and that first step can only ever *reuse*: an event's item is an
+// event, so a place written from it would carry an event's name, an event's
+// article and an event's item as its identity. The Abeïbara massacres are the
+// worked example — the town has no item of its own, and the fire of 24
+// September wrote its place by hand, with a name read off the article and a
+// note saying so. That is a judgement and it stays a person's; what the tool
+// does is report it (`report.ownPoint`) so that somebody can make it. From
+// P276, P131 and P17 on, the item *is* a place and carries its own label, its
+// own names and its own class, and the tool writes it.
+//
+// → { place, flagged } — `flagged` is whether this pass is what found it, and
+// is what puts `a9-place` on the event.
+async function eventPlace(read, {
+  dataDir, entries, entityOf, byItem, taken, written, report,
+  deriveRegion, classes, today, lane,
+}) {
+  const eventLane = lane?.how === null ? null : lane?.region ?? null;
+  for (const qid of placeChain(read)) {
+    const held = byItem.get(`place:${qid}`);
+    if (held) {
+      const record = entries.find((e) => e.record?.id === held)?.record;
+      const heldLane = record?.region ?? deriveRegion?.(record?.where)?.region ?? null;
+      if (!lanesAgree(eventLane, heldLane)) {
+        report.offLane.push({ qid, place: held, eventLane, placeLane: heldLane });
+        continue;
+      }
+      return { place: held, flagged: qid !== read.location[0] };
+    }
+    // The item's own P625 reuses and never writes: see above.
+    const own = qid === read.qid;
+    const entity = entityOf(qid);
+    if (!entity || isMissing(entity)) continue;
+    const candidate = readEntity(entity);
+    if (!candidate.point) continue;
+
+    // A place this atlas already holds is that place, by the two signals
+    // tools/import/places.mjs matches on (M87 §11): a folded name and a point
+    // within a degree, with exactly one record surviving both.
+    const already = reusablePlace(
+      { names: namesFor(candidate), point: candidate.point },
+      entries.map((e) => e.record),
+    );
+    const placeLane = deriveRegion?.(candidate.point)?.region ?? null;
+    if (!lanesAgree(eventLane, placeLane)) {
+      report.offLane.push({ qid, place: already ?? null, eventLane, placeLane });
+      continue;
+    }
+    if (already) {
+      byItem.set(`place:${qid}`, already);
+      report.reused.push({ id: already, qid, kind: 'place' });
+      return { place: already, flagged: true };
+    }
+    if (own) {
+      // Its own point, and no place here stands at it: a person writes that
+      // place, because its name is not in the item.
+      report.ownPoint.push({ qid, point: candidate.point });
+      continue;
+    }
+    const classified = classify(candidate, classes);
+    if (classified.kind !== 'place') {
+      report.offClass.push({ qid, kind: classified.kind ?? null, why: classified.reason ?? 'its class is not a place of this atlas' });
+      continue;
+    }
+    const id = idFor(candidate, taken);
+    const own2 = laneFor(candidate.point, { deriveRegion });
+    if (own2.how === null) {
+      report.offLane.push({ qid, place: null, eventLane, placeLane: null });
+      continue;
+    }
+    const record = placeRecord(candidate, {
+      id, created: today, region: own2.region, regionNote: laneNote(own2), precision: classified.precision,
+    });
+    record.review.flags.push(A9_PLACE_FLAG);
+    written.push(await writeRecord(dataDir, 'places', record));
+    taken.add(id);
+    byItem.set(`place:${qid}`, id);
+    report.created.push({ id, qid, kind: 'place', lane: own2.how });
+    return { place: id, flagged: true };
+  }
+  return { place: null, flagged: false };
+}
+
 // --import: create records for the items the seeds name and that the atlas
 // does not have, and fill identity fields in on the ones it does.
 export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH, cacheDir, deriveRegion = null } = {}) {
@@ -1117,17 +1351,30 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   const entities = await fetchEntities(fetcher, batch);
   const written = [];
 
-  // The countries the batch names, fetched together, so a place whose own
-  // point reaches no lane can still be given one.
-  const countries = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
-    .flatMap((e) => claimIds(e, PROPERTIES.country).concat(claimIds(e, PROPERTIES.administrative))))]
+  // The places and countries the batch names, fetched together: a place whose
+  // own point reaches no lane can still be given one, and A9's chain needs the
+  // label, the names and the class of whatever it ends up pointing at. P276 is
+  // in the list for that second reason — before the chain was here, only the
+  // country's point was ever wanted.
+  const named = [...new Set(Object.values(entities).filter((e) => !isMissing(e))
+    .flatMap((e) => claimIds(e, PROPERTIES.location)
+      .concat(claimIds(e, PROPERTIES.country), claimIds(e, PROPERTIES.administrative))))]
     .filter((qid) => !Object.hasOwn(entities, qid));
-  const countryEntities = countries.length ? await fetchEntities(fetcher, countries.slice(0, batchSize)) : {};
+  const countryEntities = named.length ? await fetchEntities(fetcher, named.slice(0, LOCATION_FETCH)) : {};
+  const entityOf = (qid) => entities[qid] ?? countryEntities[qid] ?? null;
   const pointOf = (qid) => {
-    const entity = entities[qid] ?? countryEntities[qid];
-    const point = entity ? claimPoint(entity) : null;
+    const entity = entityOf(qid);
+    const point = entity && !isMissing(entity) ? claimPoint(entity) : null;
     return point ? { qid, point } : null;
   };
+
+  // The umbrellas this atlas holds, by the item each names: what the filing
+  // pass looks a P361 up in. Active events only — filing a record under a
+  // withdrawn one would be rule 24's error — and the record's own `when`, so
+  // the span the filing is judged by is the atlas's and not the item's.
+  const umbrellas = new Map(entries
+    .filter((e) => e.kind === 'event' && e.record?.status === 'active' && e.record?.wikidata)
+    .map((e) => [e.record.wikidata, { id: e.record.id, when: e.record.when }]));
 
   // Classified first, then walked places before actors before events, so an
   // event can point at a place the same batch created rather than being
@@ -1232,47 +1479,68 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         refuse(report, qid, 'no date the atlas can use: an event with no year has nowhere on the timeline');
         continue;
       }
-      // An event points at a place record; creating one for it here would be
-      // creating a record nobody asked for, so an event whose location is not
-      // already a place of this atlas is placeless and takes a lane instead.
-      const place = read.location.map((qid2) => byItem.get(`place:${qid2}`)).find(Boolean) ?? null;
-      let region = null;
-      let lane = null;
-      if (!place) {
-        // Its own point if it has one, else the point of whatever it says it
-        // happened at or in — a lane is a coarse enough thing that a
-        // location's or a country's point answers it honestly.
-        const elsewhere = read.location.concat(read.administrative, read.country).map(pointOf).filter(Boolean);
-        const point = read.point ?? elsewhere[0]?.point ?? null;
-        lane = point ? laneFor(point, { deriveRegion, countryPoints: elsewhere }) : { how: null };
-        // Placeless: the region is not an override but the only thing the
-        // timeline has to go on, so it is written even where the point would
-        // have derived it.
-        region = lane.how === null ? null : lane.region ?? deriveRegion?.(point)?.region ?? null;
-        if (!region) {
-          // Nothing was measured, so the last thing left is what somebody
-          // wrote in the seeds file. Without it the item is refused, which is
-          // where the twenty-nine of deviation 447 have been sitting.
-          const seeded = seededLane(seeds.lanes, qid);
-          if (seeded) {
-            lane = seeded;
-            region = seeded.region;
-          }
-        }
-        if (!region) {
-          refuse(report, qid, 'no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region');
-          continue;
-        }
+      // The lane first, and the place after it, because A14 (2)'s guard is what
+      // decides whether the place may be written at all: the lane is measured
+      // from the event's own point where it has one, else from the point of
+      // whatever it says it happened at or in.
+      const elsewhere = read.location.concat(read.administrative, read.country).map(pointOf).filter(Boolean);
+      const ownPoint = read.point ?? elsewhere[0]?.point ?? null;
+      let lane = ownPoint ? laneFor(ownPoint, { deriveRegion, countryPoints: elsewhere }) : { how: null };
+      if (lane.how === null) {
+        const seeded = seededLane(seeds.lanes, qid);
+        if (seeded) lane = seeded;
       }
+
+      const found = await eventPlace(read, {
+        dataDir, entries, entityOf, byItem, taken, written, report,
+        deriveRegion, classes: seeds.classes, today, lane,
+      });
+      const place = found.place;
+      // Placeless: the region is not an override but the only thing the
+      // timeline has to go on, so it is written even where the point would
+      // have derived it. A placed event takes its lane from its place.
+      const region = place ? null : lane.region ?? deriveRegion?.(ownPoint)?.region ?? null;
+      if (!place && !region) {
+        refuse(report, qid, 'no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region');
+        continue;
+      }
+
+      // The lead before the record and not after it, because the summary is the
+      // lead: the placeholder was what a fire then rewrote by hand, which is
+      // half of deviation 1310.
+      report.leads.push(...(await fetchLeads(fetcher, read, { cacheDir, today })).map((l) => ({ qid, ...l })));
+      const lead = await readLead(cacheDir, qid, 'en');
+      const summary = leadSummary(read, lead);
+      const citation = summary ? leadCitation(lead, 'en') : null;
+
+      // And the filing: every umbrella the item's own P361 names and this atlas
+      // holds, whose span contains this event (A8).
+      const filed = filedUnder(when, read.partOf, umbrellas);
+      for (const one of filed.refused) report.unfiled.push({ qid, ...one });
+
       const record = eventRecord(read, {
         id, created: today, when, place, region,
         regionNote: laneNote(lane, { placeless: true }),
         category: classified.category ?? null,
         endUnstated: endUnstated('event', read.times),
       });
+      if (summary) {
+        record.summary = summary;
+        if (citation) record.sources.push(citation);
+        record.review.flags.push(LEAD_SUMMARY_FLAG);
+      }
+      if (found.flagged) record.review.flags.push(A9_PLACE_FLAG);
+      if (filed.parents.length) {
+        // One id where there is one and a list where there are several: `parent`
+        // takes all three shapes and src/parts.js is what reads them, so a
+        // record with one umbrella looks like every other record with one.
+        record.parent = filed.parents.length === 1 ? filed.parents[0] : filed.parents;
+        record.review.flags.push(FILED_FLAG);
+      }
       written.push(await writeRecord(dataDir, 'events', record));
       taken.add(id);
-      report.created.push({ id, qid, kind: 'event', place });
+      report.created.push({ id, qid, kind: 'event', place, parents: filed.parents, summary: Boolean(summary) });
+      continue;
     }
     report.leads.push(...(await fetchLeads(fetcher, read, { cacheDir, today })).map((l) => ({ qid, ...l })));
   }
@@ -1813,7 +2081,17 @@ ${doubtfulSection}${refusedSection}`;
 export function reportLines(report, mode) {
   const lines = [];
   lines.push(`${mode}: ${report.batch.length} item(s) this batch, ${report.remaining} left after it, ${report.calls} call(s) spent`);
-  for (const c of report.created) lines.push(`created ${c.kind} ${c.id} from ${c.qid}${c.lane ? ` (lane ${c.lane})` : ''}`);
+  for (const c of report.created) {
+    // What the three passes did to this record, said on its own line: a batch
+    // note reports them per record and a fire should not have to read the files
+    // back to write it (deviation 1310).
+    const passes = [
+      c.summary ? 'summary from the lead' : null,
+      c.place ? `place ${c.place}` : null,
+      c.parents?.length ? `filed under ${c.parents.join(', ')}` : null,
+    ].filter(Boolean);
+    lines.push(`created ${c.kind} ${c.id} from ${c.qid}${c.lane ? ` (lane ${c.lane})` : ''}${passes.length ? ` — ${passes.join('; ')}` : ''}`);
+  }
   for (const e of report.enriched) lines.push(`enriched ${e.id} from ${e.qid}: ${e.added.join(', ')}`);
   // Named separately from enriched, and by name rather than by count: what
   // the import wrote onto somebody else's record as "what this is also
