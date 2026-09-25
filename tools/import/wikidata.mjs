@@ -746,6 +746,47 @@ export function placeChain(read) {
   return [...new Set([read.qid, ...read.location, ...read.administrative, ...read.country])];
 }
 
+// Deviation 1330's guard: **P17 is a lane of last resort and never a place**
+// for an event whose own P625 stands a long way from the country's. Four
+// actions fought off Guadeloupe and Martinique took `place: france-q142` and
+// the `europe` lane with it, because the first three steps of the chain gave
+// nothing the place classes could use and the fourth gave France. The lane
+// guard above could not catch it: the event's own lane had been derived from
+// the same fallback point, so the two agreed with each other and were both
+// wrong.
+//
+// **The cap was measured before it was written**, which is what the deviation
+// asked for, over the 41 events whose place today *is* the country their item
+// names — the only events this guard can ever fire on, since it fires only
+// where the chain fell through to P17. Their distances have exactly one gap:
+// 39 of them stand 8.6 degrees or less from the country's point, the next two
+// stand 21.6 and 27.9, and the four actions the deviation was written about
+// stand 70 and more. The two in between are the same defect measured within
+// one lane rather than across two — `soviet-japanese-border-conflicts` is
+// filed in Japan and was fought on the Manchurian border,
+// `raid-on-oyster-river` is a raid in New Hampshire filed at the centroid of
+// the United States — so a cap anywhere from 10 to 21 keeps every one of the
+// 39 and refuses exactly those two. 15 is the round number in that band.
+//
+// It is degrees and not kilometres because that is the unit every other
+// distance in the import is in (`NEAR_DEGREES`, `NEARBY_DEGREES`), and the
+// question is a coarse one: no reading of this number changes at the third
+// significant figure.
+export const COUNTRY_AS_PLACE_DEGREES = 15;
+
+// → whether this step of the chain is the country being reached as the last
+// resort it is, and is too far from the event to be its place. Only the P17
+// step is guarded: P276 and P131 say where the event *was*, so the distance to
+// them is not evidence about anything, and a qid either of them also names is
+// not reached as the country at all.
+export function countryIsLastResort(read, qid, point, cap = COUNTRY_AS_PLACE_DEGREES) {
+  if (!read?.country?.includes(qid)) return false;
+  if (read.location?.includes(qid) || read.administrative?.includes(qid)) return false;
+  const own = read.point;
+  if (!own || !point) return false;
+  return Math.hypot(own.lon - point.lon, own.lat - point.lat) > cap;
+}
+
 // The lane guard of the 24 September fire, in force for both lanes (A14 (2)):
 // a place whose lane disagrees with the event's own is not the event's place.
 // The Great Depression stands in no single country, and a battle does not
@@ -1280,6 +1321,9 @@ function emptyReport() {
     // not a place of this atlas, and an event whose own point is the only thing
     // located — the one a person writes the place for.
     unfiled: [], offLane: [], offClass: [], ownPoint: [],
+    // And the country reached as the last resort it is, too far from the event
+    // to be its place (deviation 1330).
+    offCountry: [],
     // And what the second filing pass took, once the run's own umbrellas
     // existed to file against (deviation 1331).
     refiled: [],
@@ -1338,6 +1382,14 @@ async function eventPlace(read, {
     const held = byItem.get(`place:${qid}`);
     if (held) {
       const record = entries.find((e) => e.record?.id === held)?.record;
+      // Deviation 1330, and it has to be asked here as well as below: once
+      // `france-q142` is a record this atlas holds, the four actions off
+      // Guadeloupe would take it by reuse and never reach the guard further
+      // down. The held record's own point is what the map would draw.
+      if (countryIsLastResort(read, qid, record?.where ?? null)) {
+        report.offCountry.push({ qid, place: held, point: read.point });
+        continue;
+      }
       const heldLane = record?.region ?? deriveRegion?.(record?.where)?.region ?? null;
       if (!lanesAgree(eventLane, heldLane)) {
         report.offLane.push({ qid, place: held, eventLane, placeLane: heldLane });
@@ -1351,6 +1403,14 @@ async function eventPlace(read, {
     if (!entity || isMissing(entity)) continue;
     const candidate = readEntity(entity);
     if (!candidate.point) continue;
+
+    // Deviation 1330: the country is a lane of last resort, and at this
+    // distance it is not the place. Asked before the reuse and before the
+    // lane guard, because the whole fault was that those two let it through.
+    if (countryIsLastResort(read, qid, candidate.point)) {
+      report.offCountry.push({ qid, place: null, point: read.point });
+      continue;
+    }
 
     // A place this atlas already holds is that place, by the two signals
     // tools/import/places.mjs matches on (M87 §11): a folded name and a point
@@ -2211,6 +2271,7 @@ export function reportLines(report, mode) {
   for (const u of report.unfiled ?? []) lines.push(`not filed ${u.qid} under ${u.id}: ${u.why}`);
   for (const r of report.refiled ?? []) lines.push(`filed ${r.id} under ${r.parents.join(', ')} on the second pass: its umbrella was created in this same run`);
   for (const o of report.offLane ?? []) lines.push(`no place for ${o.qid}: its lane is ${o.placeLane ?? 'nowhere'} and the event's is ${o.eventLane ?? 'nowhere'}`);
+  for (const o of report.offCountry ?? []) lines.push(`no place from ${o.qid}: the country it names stands more than ${COUNTRY_AS_PLACE_DEGREES} degrees from the event's own point (${o.point.lon}, ${o.point.lat}), so it is this event's lane and not its place`);
   for (const o of report.offClass ?? []) lines.push(`no place from ${o.qid}: ${o.why}`);
   for (const o of report.ownPoint ?? []) lines.push(`no place for ${o.qid}: its own point (${o.point.lon}, ${o.point.lat}) and no name a tool can read; a person writes that place`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);

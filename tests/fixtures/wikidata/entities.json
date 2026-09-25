@@ -1401,6 +1401,147 @@
      "title": "Wide Southfield War"
     }
    }
+  },
+  "Q9000030": {
+   "type": "item",
+   "id": "Q9000030",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Action off Southcorner"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented naval action, used only to test an import"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1779-07-06T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 1,
+         "latitude": 1,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000031"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q9000031": {
+   "type": "item",
+   "id": "Q9000031",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northcorner"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented country, used only to test an import"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100003"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 19,
+         "latitude": 19,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
   }
  },
  "success": 1

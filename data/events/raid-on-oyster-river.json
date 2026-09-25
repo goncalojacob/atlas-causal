@@ -19,8 +19,7 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361",
-      "a9-place"
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -51,8 +50,8 @@
     "end": 1694,
     "date": "1694-07-18"
   },
-  "place": "united-states-q30",
-  "region": null,
+  "place": null,
+  "region": "americas",
   "regionNote": null,
   "parent": "king-william-s-war",
   "category": "war",

@@ -5,7 +5,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, readdir, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createValidator } from '../src/validate/schema.js';
@@ -23,6 +23,7 @@ import {
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
   leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
+  countryIsLastResort, COUNTRY_AS_PLACE_DEGREES,
   LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
@@ -1249,6 +1250,56 @@ test('the lane guard refuses a place that is in a different lane from the event 
   assert.equal(lanesAgree('europe', null), true);
 });
 
+test('P17 is a lane of last resort and never a place for an event far from the country (deviation 1330)', () => {
+  // The cap was measured before it was written, over the 41 events whose place
+  // today *is* the country their P17 names: 39 of them stand 8.6 degrees or
+  // less from it, the next two stand 21.6 and 27.9, and the four actions the
+  // deviation was written about stand 70 and more. 15 is the round number in
+  // the one empty band of that distribution.
+  assert.equal(COUNTRY_AS_PLACE_DEGREES, 15);
+
+  const guadeloupe = { lon: -61.6, lat: 16.3 };
+  const france = { lon: 2, lat: 47 };
+  const read = { qid: 'Q19873117', point: guadeloupe, location: [], administrative: [], country: ['Q142'] };
+
+  // The case the deviation is: the chain fell through to P17, and the country
+  // stands 70 degrees from where the action was fought.
+  assert.equal(countryIsLastResort(read, 'Q142', france), true,
+    'France is not where a battle off Guadeloupe happened');
+
+  // The same country, and an event that really is inside it: kept.
+  const martorell = { lon: 1.9, lat: 41.5 };
+  const spain = { lon: -3.7, lat: 40.4 };
+  assert.equal(countryIsLastResort(
+    { qid: 'Q1', point: martorell, location: [], administrative: [], country: ['Q29'] }, 'Q29', spain), false,
+  'an event legitimately inside a country stands degrees from its centroid, not tens of them');
+
+  // Only the country step is guarded. P276 and P131 are statements about where
+  // the event was, not about which state it belonged to, so the distance says
+  // nothing about them and they are left alone.
+  const alsoLocation = { qid: 'Q1', point: guadeloupe, location: ['Q142'], administrative: [], country: ['Q142'] };
+  assert.equal(countryIsLastResort(alsoLocation, 'Q142', france), false,
+    'a qid P276 also names is not reached as the country');
+  const alsoAdministrative = { qid: 'Q1', point: guadeloupe, location: [], administrative: ['Q142'], country: ['Q142'] };
+  assert.equal(countryIsLastResort(alsoAdministrative, 'Q142', france), false);
+
+  // A qid the country does not name at all is not the country step.
+  assert.equal(countryIsLastResort(read, 'Q17012', { lon: -61.6, lat: 16.2 }), false);
+
+  // Nothing measured, nothing refused: the guard needs both points, and an
+  // event with no P625 of its own is the ordinary case P17 exists for.
+  assert.equal(countryIsLastResort({ ...read, point: null }, 'Q142', france), false,
+    'with no point of its own the event has nothing to disagree with');
+  assert.equal(countryIsLastResort(read, 'Q142', null), false);
+
+  // The small islands the same batch met: P17 is right on top of the action,
+  // and the guard must leave every one of them alone.
+  const saintKitts = { lon: -62.7, lat: 17.3 };
+  assert.equal(countryIsLastResort(
+    { qid: 'Q4872428', point: saintKitts, location: [], administrative: [], country: ['Q763'] },
+    'Q763', { lon: -62.75, lat: 17.33 }), false);
+});
+
 test('the filing writes every umbrella P361 names whose span holds the child (A8), and refuses the rest', () => {
   const umbrellas = new Map([
     ['Q828435', { id: 'spanish-conquest-of-the-aztec-empire', when: { start: 1519, end: 1521 } }],
@@ -1353,6 +1404,42 @@ test('an event whose own point is the only located thing is reported, never name
   assert.equal(convention.place, null);
   assert.equal(convention.region, 'testland', 'and it is placeless with a lane, as it was before A9');
   assert.deepEqual(await readdir(path.join(dir, 'places')), [], 'nothing was named');
+});
+
+test('--import leaves an event placeless rather than at a country 25 degrees away (deviation 1330)', async () => {
+  // Q9000030's own P625 is (1, 1) and the only other thing it locates is a P17
+  // whose point is (19, 19). Both are inside the one fixture lane, so the lane
+  // guard cannot see the difference — which is exactly how the four actions off
+  // Guadeloupe and Martinique came out filed in France.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000030'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report, failed } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(failed, []);
+  assert.deepEqual(report.refused, [], 'the event is still imported; it is the place that is refused');
+
+  assert.deepEqual(report.offCountry.map((o) => o.qid), ['Q9000031'],
+    'and the run says which country it would not take and why');
+  const action = await readJson(path.join(dir, 'events', 'action-off-southcorner.json'));
+  assert.equal(action.place, null, 'placeless is the honest answer, not Northcorner');
+  assert.equal(action.region, 'testland',
+    'P17 is still a lane of last resort — the event is drawn in the right lane with no place');
+  assert.deepEqual(await readdir(path.join(dir, 'places')), [],
+    'and no country record was written for it either');
+
+  // The same guard on the second run, where the country is a record this atlas
+  // already holds and the reuse at the head of the chain is what would take it.
+  await writeFile(path.join(dir, 'places', 'northcorner.json'),
+    `${JSON.stringify({ schema: 1, kind: 'place', id: 'northcorner', title: 'Northcorner', wikidata: 'Q9000031', where: { lon: 19, lat: 19, precision: 'country', label: 'Northcorner' }, sources: [], origin: { tool: 'wikidata' }, review: { status: 'draft', flags: [] }, authors: [], created: '2026-09-25' }, null, 2)}\n`, 'utf8');
+  await rm(path.join(dir, 'events', 'action-off-southcorner.json'));
+  await writeFile(path.join(dir, 'imports', 'wikidata-state.json'),
+    JSON.stringify({ schema: 1, kind: 'import-state', source: 'wikidata', modes: {} }, null, 2), 'utf8');
+  const { fetcher: again } = await fixtureFetcher();
+  const second = await runImportMode(dir, { fetcher: again, today: '2026-09-26', cacheDir, deriveRegion });
+  assert.deepEqual(second.report.offCountry.map((o) => o.qid), ['Q9000031'],
+    'a held country is refused by the same measure as one the run would have written');
+  const rewritten = await readJson(path.join(dir, 'events', 'action-off-southcorner.json'));
+  assert.equal(rewritten.place, null);
+  assert.equal(rewritten.region, 'testland');
 });
 
 test('fetchEntities splits at the fifty the API takes, and asks for every id (deviation 1324)', async () => {

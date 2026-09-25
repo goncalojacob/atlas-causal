@@ -9350,6 +9350,104 @@ the `roatan` the first run had created, and a *reused* place carries no
 smaller deviation of the same family and it is left as a note rather than a
 number: **a re-import should not quietly drop a flag the first import earned.**
 
+## Deviation 1330, discharged — `P17` is a lane and never a place, and the cap was measured
+
+Two fires named this first and neither had the number. The deviation is explicit
+about why: *"any cap between three and twenty fixes them; what is missing is the
+measurement that says which... It cannot be taken from the records, because a
+record does not keep the `P625` its item gave — it has to be taken from the
+items."* So this fire took it from the items, and the number the measurement
+gives is not the number the deviation guessed at.
+
+### The measurement
+
+One SPARQL query over the 1,101 items of the events an import created, asking
+each item's own `P625` and the `P625` of every country its `P17` names. **568
+pairs over 470 events** carry both points. The distance is degrees on the flat,
+which is the unit `NEAR_DEGREES` and `NEARBY_DEGREES` are already in.
+
+Split by lane, the distribution says almost nothing:
+
+| | pairs | median | 90th | max |
+| --- | --- | --- | --- | --- |
+| both points in the same lane | 537 | 3.2° | 19.2° | 73.5° |
+| the two points in different lanes | 20 | 91.4° | 120.7° | 225.3° |
+| the event's own point reaches no lane | 11 | 34.2° | 71.0° | 71.3° |
+
+A cap read off *that* table is the mistake the deviation warned against: the
+same-lane column runs to 73.5°, so any cap under seventy "breaks" dozens of
+pairs — `battle-of-kursk` stands 55° from the USSR's centroid, `katyn-massacre`
+59°, the Acadian raids 44° from Canada's. **But not one of those is a pair the
+guard could ever fire on**, because every one of them already has a real place
+from an earlier step of the chain. Kursk's place is `kursk`.
+
+**The guard fires only where the chain fell through to `P17`.** So the cost is
+the events whose place today *is* the country their item names, and there are
+**41 of them**. Their distances have exactly one gap:
+
+- **39 of the 41 stand 8.6° or less** from the country's point — `battle-of-britain` at 0.6° in the United Kingdom, `soviet-invasion-of-poland` at 4.8°, `mali-war` at 5.9°, `mueda-massacre` at 8.6°, and the twenty-odd whole-country records (`covid-19-pandemic-in-brazil`, `ethiopian-civil-war`) at 0.0°, where the country *is* the event's ground;
+- then **nothing at all between 8.6° and 21.6°**;
+- **`soviet-japanese-border-conflicts` at 21.6°** and **`raid-on-oyster-river` at 27.9°**;
+- and the four actions the deviation was written about at **70.6° to 71.3°**.
+
+The two in the middle are the same defect measured inside one lane instead of
+across two, which is why the lane guard never saw them:
+`soviet-japanese-border-conflicts` is filed in Japan and was fought on the
+Manchurian border; `raid-on-oyster-river` is a raid whose own cited lead says
+*"present-day Durham, New Hampshire"* and is filed at the centroid of the United
+States, in Kansas. **The guard catching them is the guard working, not the guard
+overreaching.**
+
+So a cap anywhere from 10° to 21° keeps all 39 and refuses exactly those two
+plus the four. **`COUNTRY_AS_PLACE_DEGREES = 15`** — the round number in the one
+empty band of the distribution, and no reading of it changes at the third
+significant figure.
+
+### The guard
+
+`countryIsLastResort(read, qid, point)` is the pure half and states the rule
+whole: **only the `P17` step is guarded.** `P276` and `P131` say where the event
+*was*, so the distance to them is not evidence about anything, and a qid either
+of them also names is not reached as the country at all. With no point on either
+side it refuses nothing — an event with no `P625` of its own is the ordinary case
+`P17` exists for.
+
+It is asked at **both** places the chain can take a country, which is the whole
+of the wiring: at the candidate, and — the one the first draft would have missed
+— at the reuse at the head of the loop. Once `france-q142` is a record this atlas
+holds, the four actions off Guadeloupe take it by `byItem` and never reach a
+candidate at all. A refusal is reported as `offCountry` and says the distance in
+words, so a run's own log says which country it would not take.
+
+**The tests came first** (711, 717) and they are two: the rule, over the
+Guadeloupe case that is the deviation, over an event legitimately inside Spain,
+over the small islands where `P17` sits on top of the action (Saint Kitts at
+0.1°, Saint Lucia at 0.1°), and over a qid `P276` also names; and the wiring,
+through `--import` on a new fixture pair — `Q9000030`, whose own point is (1, 1)
+and whose only other location is a `P17` at (19, 19), **both inside the one
+fixture lane**, so the lane guard cannot tell them apart. The event comes out
+placeless in `testland` with no country record written, and the second half of
+the same test holds the country as a record the atlas already has, so the reuse
+path is proved too. **Both tests were run against the guard stubbed out and both
+fail**; that is what makes them a proof and not a description.
+
+### The five records it names, and the one it does not
+
+`raid-on-oyster-river` was written by **this branch's batch 31** and is corrected
+here the way the four were: **placeless in the `americas` lane**, which is the
+honest answer until somebody writes Durham. Naming the place is a person's job —
+that is the `report.ownPoint` case and A9's chain has nothing left to offer.
+
+**`soviet-japanese-border-conflicts` is left alone and reported.** It was written
+by M42's batch 13 and placed by M42's curation pass, it is in the `asia` lane,
+and editing another lane's record is deviation 1332's mistake even when the
+measurement that found it is this branch's. **M42's or the owner's to take**: the
+conflicts were fought on the Manchuria–Mongolia border and the record says Japan.
+
+And one thing the measurement found on the way: **the four of deviation 1330 were
+still flagged `a9-place` although they have no place**, which says A9's pass
+wrote a place that is not there. Cleared on all four, and on the raid.
+
 ## Where the run stands, for the fire that picks it up
 
 *25 September, after the thirty-third fire: the merge of M42's batches 57 to 61,
