@@ -4291,3 +4291,86 @@ a browser, run the way the check runs them.
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size; `emphasis.js`'s `shown` contract is unchanged.
 `docs/drafts/` ignored. Deviations **1253 to 1259**.
+
+## M88 — what the third review found in the display
+
+Lane A, on the branch `m88`, over the third Fable review
+(`docs/review-2026-09-26.md`, 25 September): part B's findings 1 to 12 and part
+C's 3 — the display half of what it found, measured on a corpus of 1,257 active
+events where all eleven of the second review's display findings were already
+fixed. All thirteen sections are done and none was refused. No record was
+written, no historical claim was made, and nothing under `data/` changed except
+the search shard §2 rebuilds.
+
+### What a phone gets, and what a search box answers
+
+The graph was an unnamed strip a quarter of the pane high: a viewBox wider than
+it is tall, letterboxed into a 390-pixel pane, with every name under M87's
+eight-pixel floor and therefore dropped. It is fitted to the pane's height under
+the phone breakpoint, as the map has been since M87, and a name too small at the
+picture's own size is written at the floor's size instead of being dropped — so
+fewer names fit and every one drawn can be read. `docs/screens/m88-graph-phone.png`.
+
+Typing `revision` answered with 975 of the 1,257 events, because the search index
+took an event's lead from the summary as written and an imported summary opens
+with the importer's own framing — *The English Wikipedia article "X", at revision
+N, opens:*. It reads `readSummary(summary).body` now, which is M86's own split of
+the source's account from the note about the record's standing: **975 records
+before, 4 after**, and a search shard of 1,203,594 bytes against 1,329,225. No
+record moved.
+
+### What a screen reader and a keyboard get
+
+The map's root and the graph's were `role="img"`, which announces a picture as
+one thing with one name and skips what is inside it — and what is inside is every
+mark and every node, each a named button. Both are `role="group"` now, which the
+timeline has been since M60. `#panel` was a live region, so every card was read
+out entire and again on every century that landed under it; it is a named region
+with one visually hidden status line beside it, saying what has just opened, once
+per record and never before the record can be named. The lens chips gave the
+keyboard's focus away on every rewrite; they skip a render that would draw what is
+on screen and put the focus back on the control it was on. And the degree floor's
+reason, which was a tooltip and a colour, is a line of text the select names.
+
+### What the machinery costs
+
+A drag of the time band called `setWindow` on every pointer event, and the store
+notifies synchronously: twenty full redraws of three pictures inside one frame.
+It books one patch per animation frame, last one wins, flushed at `pointerup`;
+the store's own contract is untouched. The timeline packed the lanes twice on
+every drawing — once to learn how many rows the titles wanted, once with the cap
+— and `packRows` reports whether the cap bound, so one pack answers both. Asking
+for a shard already in hand booked a second full redraw for an arrival that had
+already happened.
+
+### What the check costs, and what its tests may pin
+
+`validate.yml`'s push pattern is `m[1-9]*`, so `m0` is checked once, by the pull
+request the landing waits for, instead of twice on one tree. The m53 document's
+§4.1 row says the size it was measured at and its test compares figures only at
+that size — otherwise it holds the two rules the row counts by — so a batch of
+records on another branch no longer turns the check red on a document that is not
+wrong; `tools/m53-retake.mjs` re-measures the row. `settledShards` reads its
+budget from the shard files the build wrote — ten seconds plus one per 200 KB,
+which is 15 s on this corpus and 10 on the fixtures — so the wait grows with the
+records instead of going red at them. The browser harness keeps a set of the
+children it spawned and kills them synchronously at exit, where it used to book a
+`.then` on a queue that never runs again.
+
+### What the card said about a link
+
+`A --reacted-to--> B` says *B answered A* in this atlas — forward in time, which
+rule 4 enforces — and the card read it left to right with the type's own label
+between the ends, which says the opposite on the one page whose whole job is to
+state the argument for a link. `reads` is a field on the type now: `answered by`
+for that one and the label itself for the other four. The two disputes a curation
+fire wrote from the old reading stay `disputed` for the owner: what was wrong is
+the sentence the card printed, not the records.
+
+`validate --index` clean: 12,967 records, 0 errors, 730 warnings, every one of
+them the corpus's own — this branch added no record and no warning class. The
+suite: 2,151 tests, none skipped, 1,851 pure and 300 in a browser, run the way
+the check runs them; the browser lane 5m27s before and 5m16s after.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. `docs/drafts/` ignored. Deviations **1425 to 1428**.
