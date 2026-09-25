@@ -1,0 +1,114 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "oscar-carmona",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "coup-28-may-1926--1928-portuguese-presidential-election--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "great-depression--salazar-president-of-council-1932--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact--azores-agreement-1943--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "portugal-backs-franco-1936--iberian-pact--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-president-of-council-1932--constitution-1933--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1928-portuguese-presidential-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "constitution-1933",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "delgado-candidacy-1958",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "great-depression",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-finance-minister-1928",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-president-of-council-1932",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-prime-minister-1932",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "meneses-2009-salazar",
+  "schema": 1
+}
