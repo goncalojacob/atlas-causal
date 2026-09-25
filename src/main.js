@@ -25,6 +25,7 @@ import { createCategoryControl } from './category-control.js';
 import { createGraphFilters } from './graph-filters.js';
 import { createWindowControl } from './window-control.js';
 import { createMapBand } from './map-band.js';
+import { askForShards } from './attributes.js';
 
 const params = new URLSearchParams(window.location.search);
 const fixtures = params.get('fixtures') === '1';
@@ -415,13 +416,11 @@ try {
       redrawForShards();
     }, 0));
   };
-  // `{ batch: true }`, because this is the ask that is many: the joins over the
-  // corpus are rebuilt once for the frame's whole arrival rather than once per
-  // file (data.js, `loadAttributes`). The panel's own asks and `record()`'s are
-  // not batched and are unchanged.
-  const askFor = (shards) => {
-    for (const shard of shards) atlas.loadAttributes(shard, { batch: true }).then(shardLanded, () => {});
-  };
+  // The ask, and which of them is a landing: `attributes.js` holds both, so a
+  // shard already in hand is asked for (which touches the LRU) and says
+  // nothing (M88 §5, review B finding 5). The panel's own asks and `record()`'s
+  // are not batched and are unchanged.
+  const askFor = (shards) => { askForShards(atlas, shards, shardLanded); };
 
   // The window's shards, and the lens's: both are on screen, so both are held
   // outside the LRU cap while they are (data.js, ATTRIBUTE_SHARD_CAP). The new
