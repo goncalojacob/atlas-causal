@@ -11442,7 +11442,8 @@ minutes, so the protocol's ninety-minute clause let this fire take it.
 `origin/m0` was **not** an ancestor of `m42` at claim time, so STEP 1's merge ran
 and brought in M42b's batches 30, 31 and 32 and the 10:48Z snapshot: thirty-three
 commits, eighty-one more active events, both claim lines kept and `data/index/`
-rebuilt over the merged records.*
+rebuilt over the merged records — **and the merge commit's check went red on the
+history shards for it**, which is deviation 1451 in the stand below.*
 
 ### The vein chosen, and the measurement that chose it
 
@@ -11705,5 +11706,19 @@ so the next import batch is Asia's unless a chain crosses out of it.
   Mali vein's whole cast and it is a question for a person.
 - **The next curation fire is the first fire after 02:00Z on 26 September**, and
   it owns A13's relations pass over every active event.
-- **Deviation numbers: take the next above 1450.** This fire wrote **1450** and
-  no other.
+- **A merge commit cannot carry its own history index, and this fire's did not**
+  (**deviation 1451**). STEP 1 says to drop and rebuild `data/index/` when the
+  merge runs, and this fire did — but it built it *inside* the conflicted merge,
+  before the merge commit existed, so `tools/lib/history.mjs` read a history that
+  did not yet contain `origin/m0`'s commits. `validate --index` passed locally
+  (the build and the check saw the same commits) and **run 1836 failed on the
+  pushed tree** with sixteen `rule 16` errors, every one a `history-*` shard
+  missing or stale. Nothing was wrong with the records: the shards are a function
+  of the commit graph, so a tree that contains the merge is the only tree that
+  can build them. The batch's own `index:` commit — built after the records were
+  committed, which is rule 798's order — rebuilt them correctly and the head is
+  clean. **A fire whose STEP 1 merge runs should commit the merge first and
+  rebuild `data/index/` in a second commit on top of it**, exactly as a batch
+  does, and not expect one commit to carry both.
+- **Deviation numbers: take the next above 1451.** This fire wrote **1450** and
+  **1451**.
