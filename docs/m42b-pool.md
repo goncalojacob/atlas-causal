@@ -7625,180 +7625,379 @@ fire that meets a name with a letter outside ASCII should expect a gap in the sl
 should not rename the record by hand** — `tools/migrate/ids.mjs` exists for a rename, and a
 rename costs every reference. Worth one line of the owner's time, because the two ids are
 the first thing a reader meets in the address bar.
-## Where the run stands, for the fire that picks it up
+## Batch 30 — the American Indian Wars, and the Americas' seventeenth century
 
-*25 September, after the twenty-ninth fire and its batch 29.*
+*25 September, the thirtieth fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **1,049 active** |
-| **main** | **238** — the count the next batch must not raise |
+| corpus | **1,053 active** — four above the 1,049 the last fire left, because `origin/m42` was merged first and brought its batch 55 |
+| **main** | **238** |
 | **largest connected component** | **662** |
 | components | 267 |
-| events with no edge at all | **202** |
-| Europe before 1900 | **155 active, 17 main** |
-| the `americas` lane | **268 active, 55 main** |
-| south and central America against north, inside that lane | **209 to 20**, with 39 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 9), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
-| the cell this fire moved | **Europe's 18th, 24 → 48**, its main count untouched at three |
+| events with no edge at all | 201 |
+| Europe before 1900 | 155 active, 17 main |
+| the `americas` lane | 268 active, 55 main |
+| **the Americas' seventeenth century** | **23 active, 6 main** — the thinnest cell of this partition that no decision blocks, once the two fifteenth centuries are set aside for the 1492 wall |
 
-**This fire merged `origin/m0` and `origin/m42` and then took the vein the last fire
-surveyed and left**: the War of the Austrian Succession's Continental land war, twenty-four
-records, sixteen new places, seven edges. Europe's eighteenth century doubled and is no
-longer the thinnest unblocked cell of this partition.
+**One merge came first.** `origin/m0` was already an ancestor, so nothing of it was needed;
+`origin/m42` was five commits ahead and conflicted in 263 files, of which **259 were
+`data/index/`** — two hash renames of the same file, which is what a rebuilt index always
+looks like from the other side — and four were real: `STATUS.md` (both sides kept),
+`data/imports/wikidata-seeds.json` (this branch's six new class lines kept, `m42` adding
+none), `docs/m53-polities.md` and the generated `sources.html`. The index was dropped and
+rebuilt, and §4.1's row re-taken on the merged corpus: **400 of 1,053**, the numerator
+unmoved and the denominator carrying batch 29's twenty-four, which `m42` has not seen.
 
-**The next fire has two obvious moves and one that needs a decision.**
+### Per lane and per century (A10)
 
-1. **The rest of this same vein** — nineteen European items are left of the fifty-three,
-   and they are two coherent halves: **the Italian theatre** (`Q2522057` Campo Santo,
-   `Q4872675` Villafranca, `Q2280582` Velletri, `Q2889615` Casteldelfino, `Q2252463`
-   Madonna dell'Olmo, `Q1152443` Bassignano, `Q7510044` and `Q3625481` the two sieges of
-   Genoa, `Q571675` Piacenza, `Q693265` Assietta) and **the war at sea and on the French
-   coast** (`Q4677256`, `Q677929` Toulon, `Q2388607`, `Q695673` and `Q233430` the two Cape
-   Finisterre actions, `Q17509667`, `Q3485928` the Raid on Lorient, `Q105477492` Antibes,
-   and `Q7201333` the planned French invasion of Britain). Either is a batch on its own,
-   neither can raise the main count, and the Italian half would also give the atlas its
-   first eighteenth-century records in Italy. **Four more of the fifty-three are the
-   Americas'** — `Q517578` King George's War, `Q1152894` Louisbourg, `Q21070658` Anguilla,
-   `Q14644681` Saint-Louis-du-Sud — and are this partition's too, in a different cell;
-   **five are M42's** (the two Carnatic items, Madras, Adyar, Cuddalore) and are not to be
-   taken here.
-2. **The Americas' seventeenth (23, 6) is the thinnest unblocked-except-for-decisions cell
-   again**, and it is the one blocked on three decisions since batch 22. The cheapest thing
-   that moves it is still the Arauco War's remainder — `Q85745908` and `Q85783755` in the
-   seventeenth century, `Q104849178` in the eighteenth — which is three records and not a
-   batch, and could ride alongside another cell's batch rather than be one.
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 166 | 31 | 166 | 31 |
+| `americas` | 268 | 55 | **287** | **56** |
+| `asia` | 169 | 64 | 169 | 64 |
+| `europe` | 450 | 88 | 450 | 88 |
+| Europe before 1900 | 155 | 17 | 155 | 17 |
 
-### The veins, and which are open
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| the Americas' 16th | 37 | 3 | 37 | 3 |
+| **the Americas' 17th** | **23** | **6** | **41** | **7** |
+| the Americas' 18th | 32 | 2 | **33** | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| the Americas' 21st | 37 | 1 | 37 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 48 | 3 | 48 | 3 |
+| Europe's 19th | 38 | 9 | 38 | 9 |
 
-**The War of the Austrian Succession vein is half spent and the half that is left is
-listed above.** Nineteen European items, four American, five Asian.
+Eighteen of the nineteen fall in the seventeenth century and one, the Great Peace of
+Montreal of August 1701, in the eighteenth, which is why the eighteenth moves by one.
 
-**The Peninsular vein is far from spent.** `P361` on `Q152499` returns **218 items**; this
-branch holds seventeen and **201 are unimported**, none of which can raise the main count.
-Three things inside it are still worth more than a batch of imports: **`Q3153847`, the
-French invasions of Portugal** (an umbrella two records already point at in their own
-leads, so importing it gives both an edge A14 permits); **`Q1345027`, the Battle of
-Toulouse**, which `battle-of-tarbes` says it "paved the way for"; and **the Lines of Torres
-Vedras**, which `battle-of-bussaco` retreats to in its own lead.
+**South and central America against north, inside the `americas` lane: 206 to 47**, with 34
+placeless. Counted here by the place record's own latitude at the 23°N line — the
+Mexico/Guatemala border — which is **not the measure batch 29 reported**, so the two figures
+are not comparable and this one is stated with its rule. By this measure the batch moved
+north from 31 to 47: all sixteen of its placed events are north of the line, and every one
+of them is the first of its kind here. The lane's own ordering — south and central America
+before north, until they hold as many as north — is satisfied more than four times over and
+was not what held this batch back.
 
-**The Thirty Years' War vein is still open**: `P361` on `Q2487` returns 171 items, this
-branch holds thirty-four, and **137 are unimported**. `Q1501724`, the Portuguese
-Restoration War, is still the likeliest bridge from those islands to the main component,
-and the war's four phases (`Q83364344`, `Q3778625`, `Q7655000`, `Q56823171`) are still
-importable as umbrellas at no cost in main events.
+### **The main count rises by one, to 239, and this is why**
 
-**The pandemic vein is the largest open vein this partition has and it is barely touched.**
-This branch holds the two American continental records and thirteen of the **forty-four**
-country and territory items under `Q81068910`. **Twenty-nine are unimported**, every one
-with an English article and a 2020 start, every one a child of a record now on this branch.
-The Caribbean alone is sixteen of the twenty-nine. **Read batch 27's deviation 1298 before
-taking them**: most of those leads state no link an edge can carry.
+Every batch of this run until now has held the count where it found it, and A3 and A6 are
+what ask for that. They also both carry the same clause: *"an import that leaves the main
+count higher than it found it has to say why."* This is the first batch of M42b that has to
+use it, and the reason is the other half of the same sentence of the brief — *"write the
+regional period umbrellas a lane or century lacks"*.
 
-**The Arauco vein has three items left** (`Q85745908`, `Q85783755`, `Q104849178`), and a
-survey of Chile 1598–1799 returns twelve items of which seven are earthquakes with no
-umbrella over them — **so the Americas' seventeenth cannot be filled from Chile without
-either answering its three standing decisions or writing an umbrella for the earthquakes.**
+**The Americas' seventeenth century was thin for a structural reason: the lane had no
+umbrella for North America at all.** Twenty of its twenty-three events were the
+Dutch-Portuguese War and its children in Brazil; **North America held not one event of any
+century before 1739**. The two veins that would fill it — King Philip's War and the Beaver
+Wars — are both wars, so both are their own umbrellas by their fighting, and there was
+nothing here for either to be filed under. Imported as they stand they would have been
+**two** new main events.
 
-**The Dutch–Portuguese vein is spent for the Americas**; only `Q10369402`, the Second
-Battle of Salvador, is free and unblocked, and one record is not a batch.
+So the batch wrote the umbrella the lane lacked, and **Wikidata's own `P361` is what chose
+it**: `Q862257` King Philip's War and `Q856216` the Beaver Wars each name exactly one parent
+and it is the same one, `Q849680`, the **American Indian Wars**, 1609–1924, located in North
+America. It is a war and a series of wars by its own `P31`, not a period named for a form of
+government, so it raises none of M67's rule-1 question and none of question 2's: it needs no
+decision the owner has not already made. Filing the two wars under it makes the rise **one
+instead of two**, and eighteen of the nineteen records of this batch are filed.
 
-**The Colombian conflict vein is spent for the twenty-first century.** The twentieth may
-still want its twenty-one remaining items.
+**No existing main event could be adopted to offset it.** Every main event of the `americas`
+lane was read against the umbrella's span and subject: the Brazilian and Caribbean cycles,
+the two slave-trade records, `spanish-colonization-of-the-americas`, the Barbados
+settlement, `war-of-jenkins-ear`, and the twentieth-century economic records. Not one is a
+frontier conflict between settlers and Indigenous peoples in North America. Filing any of
+them under this umbrella to make the arithmetic come out would have been an invented
+filing, which is worse than a rise of one that says so.
 
-**The Americas' seventeenth still has its three items and each needs a decision, not a
-call**: `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of Brazil
-(an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the South Atlantic
-campaign (lane unsettled).
+The `americas` lane now stands at 56 main against 287 active. A6's target is "main events in
+the low tens per century"; this lane is at eight per century and this batch moved it towards
+that and not away.
 
-**The French Wars of Religion (`Q673175`) are still free to whoever brings their children,
-and still cost a main event. The Haitian vein is done.**
+### The vein, and why it was the one to take
 
-### The cheap things this partition keeps not doing
+`P361` on `Q849680` returns **two items with an English article** and this branch held
+neither; `P361` on each of those two returns **sixteen more**, and this branch held none of
+those either. The whole vein is eighteen records deep and one import wide, which is what a
+cell with nothing in it looks like from the source's side.
 
-**`--reconcile` has never been run on this branch.** `havana`, `santiago-de-cuba`,
-`porto-calvo` and `cap-haitien` are place records with the right coordinates written by
-hand because the import could not see them. **Batch 29 is the fourth piece of evidence and
-the second positive one**: sixteen of its twenty-one places were created from the items the
-events named, and five were reused, of which one — `brussels` — was reused by name and
-point rather than by item, because the atlas's record is `Q239` and the event's `P276` is
-`Q111901161`. `reusablePlace` caught it; a reconcile pass would have made the catch
-unnecessary.
+The alternatives were measured and set aside. The **Dutch-Portuguese War** — the one
+umbrella the cell already had — has forty children with an English article, but this branch
+holds ten of them and of the thirty left **only five or six are in the Americas at all**;
+the rest are Angola, Mozambique, Malacca, Goa and Ceylon, which are M42's lanes and not
+this one's. `spanish-colonization-of-the-americas`, the lane's broadest umbrella, has
+eighteen children with an article and **exactly one of them falls in the seventeenth
+century**, `Q1547791` the Pueblo Revolt. Neither was a batch.
 
-**A plain-name pass over the hand-written places is the other half of the same thing.**
-Thirty-eight of the atlas's places carry no Wikidata item and most carry one long
-descriptive name.
+### What was imported
 
-**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-eight batches**, and
-batch 29 is the clearest statement yet of why: ten of its twenty-four items carry a `P710`,
-and of every polity those ten name this atlas holds exactly one — `Q34`, Sweden, a CShapes
-actor beginning in 1886, against a war of 1741. **The rule needs the clause deviation 1293
-names**, and until it has it the eighteenth century will keep writing `actors: []` however
-many participants its items list.
+| record | item | date | filed under | place |
+| --- | --- | --- | --- | --- |
+| `american-indian-wars` | `Q849680` | 1609–1924 | — (main) | `north-america` (`region`) |
+| `king-philip-s-war` | `Q862257` | 1675-06-20–1678-04-12 | `american-indian-wars` | — |
+| `beaver-wars` | `Q856216` | 1609-07–1701-08-04 | `american-indian-wars` | `great-lakes-region` (`region`) |
+| `wheeler-s-surprise` | `Q7992172` | 1675-08-02–1675-08-04 | `king-philip-s-war` | `brookfield-massachusetts` |
+| `battle-of-bloody-brook` | `Q885253` | 1675-09-18 | `king-philip-s-war` | `south-deerfield-massachusetts` |
+| `siege-of-springfield` | `Q4818005` | 1675-08–1676 | `king-philip-s-war` | `springfield-massachusetts` |
+| `great-swamp-fight` | `Q5600061` | 1675-12-19 | `king-philip-s-war` | `south-kingstown-rhode-island` |
+| `northeast-coast-campaign-1676` | `Q18354826` | 1676 | `king-philip-s-war` | — |
+| `sudbury-fight` | `Q4818009` | 1676-04-21 | `king-philip-s-war` | `sudbury-massachusetts` |
+| `battle-of-turner-s-falls` | `Q4872610` | 1676-05-19 | `king-philip-s-war` | — |
+| `iroquois-war-1609` | `Q2890910` | 1609-07-29 | `beaver-wars` | `north-country-new-york` (`region`) |
+| `battle-of-sorel` | `Q16208744` | 1610-06-19 | `beaver-wars` | `sorel-tracy` |
+| `lachine-massacre` | `Q2624975` | 1689-08-05 | `beaver-wars` | `lachine-quebec` |
+| `battle-of-the-lake-of-two-mountains` | `Q16208754` | 1689-10-16 | `beaver-wars` | the battle's national historic site (`point`) |
+| `schenectady-massacre` | `Q7431161` | 1690-02-08 | `beaver-wars` | `schenectady-new-york` |
+| `battle-of-la-prairie` | `Q2889100` | 1691-08-11 | `beaver-wars` | `la-prairie-quebec` |
+| `mohawk-valley-raid` | `Q6893841` | 1692-02 | `beaver-wars` | `mohawk-valley` (`region`) |
+| `battle-of-wilton-new-york` | `Q24204942` | 1693-02-07 | `beaver-wars` | `wilton-new-york` |
+| `great-peace-of-montreal` | `Q326028` | 1701-08-04 | `beaver-wars` | `montreal` (already here) |
+
+**Every filing is the item's own `P361` and the nearest one only**, which is deviation
+1305's rule from batch 29: five of the Beaver Wars records — Lachine, Schenectady, La
+Prairie, the Mohawk Valley raid and Wilton — also name `Q1070342`, King William's War, and
+that record is not here, so they are filed under the Beaver Wars alone and King William's
+War is the next fire's to write.
+
+**One interval was corrected and one date was questioned, both from the record's own cited
+article and neither invented.**
+
+`american-indian-wars` carries **two** `P580` values, 1622 and 1609, and the tool takes the
+first; 1609 is the one the item's own children stand on, because `Q856216`, which names this
+item in `P361`, begins in 1609-07. The English article, at revision 1376049816, gives no
+year at either end — only *"from the time of the earliest colonial settlements in the 17th
+century until the end of the 19th century"* — so the start is the item's own earlier value
+and the record says so in its `review.note` and carries the `date` flag. Left at 1622 it
+would have held a child dated thirteen years before it.
+
+`battle-of-bloody-brook` is dated 1675-09-18 by the item and *"September 28, 1675"* by its
+own article at revision 1374876685. Ten days is the Old Style / New Style gap, so the two
+are most likely one date written twice; **nothing was changed**, the record carries the
+`date` flag and a note, and a reviewer picks the style this atlas keeps.
+
+### Places (A9, as A12 corrects it)
+
+**Fifteen place records were created and one was reused.** Each comes from the item the
+event's own `P276` names, with that item's point, its names and its precision read from its
+class, which is A12 (2); none was written from an event's bare coordinate.
+
+| place written | item | precision | from its class |
+| --- | --- | --- | --- |
+| `springfield-massachusetts` | `Q49158` | city | `Q1549591` big city |
+| `brookfield-massachusetts` | `Q2536826` | city | `Q15127012` town in the United States |
+| `south-deerfield-massachusetts` | `Q2680543` | city | `Q498162` census-designated place |
+| `south-kingstown-rhode-island` | `Q163507` | city | `Q62049` county seat |
+| `sudbury-massachusetts` | `Q591591` | city | `Q2154459` New England town |
+| `sorel-tracy` | `Q142010` | city | `Q27676416` city or town of Quebec |
+| `lachine-quebec` | `Q1474128` | city | `Q27676416` |
+| `la-prairie-quebec` | `Q142092` | city | `Q27676416` |
+| `schenectady-new-york` | `Q331380` | city | `Q15063611` / `Q62049` |
+| `wilton-new-york` | `Q3710319` | city | `Q15127012` |
+| `north-country-new-york` | `Q7054928` | region | `Q82794` region |
+| `mohawk-valley` | `Q3504658` | region | `Q39816` valley |
+| `great-lakes-region` | `Q1548416` | region | `Q123615496` U.S. region |
+| `north-america` | `Q49` | region | `Q855697` subcontinent |
+| the battle's national historic site | `Q19593663` | point | `Q4895508` battlefield |
+
+`montreal` is the one reused: the atlas has held it since M9 and it carries `Q340`, which is
+what `great-peace-of-montreal`'s `P276` names, so the import found it and nothing was
+written.
+
+**Seven class lines the table lacked were added**, each with its label and its gloss read
+from the class item itself over the network, which is deviation 1266's rule: `Q15127012`,
+`Q498162`, `Q62049`, `Q2154459`, `Q27676416`, `Q123615496` and `Q39816`. Five of the seven
+are American or Canadian local-government kinds and all five are `city`, on the same reading
+`Q3558970` village of Poland already carried: a unit of local government with a town in it
+is a city at this atlas's four precisions.
+
+**Every one of the fifteen derived the `americas` lane from its own point**, so the lane
+guard of 24 September — a place whose lane disagrees with the event's is not written — had
+nothing to refuse.
+
+**Three events are placeless and `docs/m67-umbrellas.md` names all three**, which is what
+`tests/m67.test.mjs` asks of a child that names neither an actor nor a place.
+`king-philip-s-war` names four locations and no coordinate, so the chain reaches four
+grounds and not one, and takes the lane from the seeds file as `war-of-jenkins-ear` already
+does. `northeast-coast-campaign-1676` carries no location Wikidata knows of at all and its
+article places it along a coastline. **`battle-of-turner-s-falls` is the interesting one: it
+carries a `P625` and no `P276`** — a point and no named thing — and the atlas does not write
+a place out of a bare coordinate, which would be a record with a point and no name. The
+nearest place this batch created is fifteen kilometres away and is a different town, so
+`reusablePlace`'s two signals do not reach it either.
+
+### The actors (A12), and `docs/m53-polities.md`
+
+**All nineteen arrived with `actors: []` and none was given one.** Ten of the nineteen items
+carry a `P710` at all, and of every polity and people those ten name this atlas holds
+exactly three — `Q30` the United States, `Q16` Canada and `Q96` Mexico — and all three are
+CShapes actors beginning in **1886**, against a war the item dates from 1609 and battles of
+1676. That is deviation 1293's case once more. The rest of what the items name — the
+Haudenosaunee, the Wendat, the Algonquin, the Nipmuc, the Narragansett, the Mohican, the
+Province of New York, the Spanish and Russian empires — **is not a record here at all**, so
+every list was partial besides.
+
+**This is the sharpest case the run has yet made for the clause deviation 1293 asks for.**
+The batch's participants are, almost without exception, peoples rather than states, and this
+atlas's actor vocabulary has a kind for exactly that — an actor may be *a people* — and not
+one of them is written. The 1886 wall and the missing-peoples gap are two different holes
+and this vein falls straight through both: §4.1's numerator does not move by one.
+
+### The edges (A5, M72), and the component that did not grow
+
+**Seven edges, each quoting the sentence of a cited article at the revision it was read
+at**, and **not one of them runs from a parent to its own child** (A14).
+
+| edge | type | the sentence it quotes, and where |
+| --- | --- | --- |
+| `lachine-massacre` → `schenectady-massacre` | `reacted-to` | *"The French raid was in retaliation for the Lachine massacre"* — Schenectady, rev 1370730424 |
+| `lachine-massacre` → `battle-of-the-lake-of-two-mountains` | `reacted-to` | *"The battle occurred in response to the Lachine massacre of August 1689."* — Two Mountains, rev 1370600653 |
+| `schenectady-massacre` → `battle-of-wilton-new-york` | `enabled` | *"led by a guide captured in the Schenectady Massacre, Jan Baptiste Van Eps"* — Wilton, rev 1370594093 |
+| `mohawk-valley-raid` → `battle-of-wilton-new-york` | `caused` | *"The raiders … were followed by a rapidly deployed English-Iroquois force led by Major Pieter Schuyler."* — the raid, rev 1370719124 |
+| `mohawk-valley-raid` → `great-peace-of-montreal` | `precondition-of` | *"the raid's effects contributed to the 1701 peace"* — the raid, rev 1370719124 |
+| `iroquois-war-1609` → `battle-of-sorel` | `precondition-of` | *"this battle created 150 years of mistrust"* — Sorel, rev 1370589713 |
+| `wheeler-s-surprise` → `battle-of-bloody-brook` | `precondition-of` | *"In the aftermath of the Siege of Brookfield … the New England Confederation raised several companies of English militia"* — Bloody Brook, rev 1374876685 |
+
+All seven are `probable`: not one of the sentences is footnoted to a work Wikipedia itself
+names, so Wikipedia is the only author and A2's `consensus` door stays shut. Every one has a
+locator; none has a second author, which is M72's open figure and not this batch's to move.
+
+**The largest connected component is 662 before and 662 after, and the reason is that the
+atlas holds nothing for this vein to reach.** The seven edges make three islands — six
+records around Lachine and Schenectady, the two Champlain battles, and the Brookfield pair —
+and nine records stand alone, so the corpus grew by nineteen and the component count by
+twelve. **This is not A14's fault this time**, which is new: batch 29 could say the bridge
+was built and the run was not allowed to cross it, and here there is no bridge at all.
+Every article of the batch was read for a claim naming a record this atlas already holds,
+and what they name is King William's War, the Nine Years' War, New Netherland and the
+French and Indian Wars, **none of which is here**. The one existing record a sentence of
+the batch touches is the Atlantic slave trade — King Philip's War's article says its
+captives were sold to *"Bermuda, Barbados, Jamaica, Spain, Portugal, Madeira, and the
+Azores"* — and the atlas's record for that trade begins in 1640, thirty-five years before
+the war, so rule 4 refuses the edge in the only direction the sentence supports.
+
+**The next fire can close this in one move, and the source says how.** `Q1070342`, King
+William's War, names **three** parents in its own `P361`: `Q152218` the Nine Years' War,
+`Q681416` the French and Indian Wars, and **`Q849680` the American Indian Wars, which this
+batch has just written**. So King William's War can be imported and filed under a record
+that is already here, at **no cost to the main count at all**, and it would join five of
+this batch's nine Beaver Wars records to each other and to itself. And the Nine Years' War
+(1688–1697) is a **Europe before 1900** record, which is the other half of this partition:
+importing it is one main event and it would put North America and Europe in one component
+for the first time.
+
+### Deviations
+
+**1308. The index has to be rebuilt after the records are committed, not before.** The
+history shards are built from the commits that touched each record's file
+(`tools/lib/history.mjs`), so an index built before its records are committed is stale the
+moment they are, and **rule 16 fails on `--index`**. This fire paid it twice: the merge
+commit was pushed with an index built before it existed, and run **1797** failed for it
+alone with 295 of 295 browser tests passing; then the batch's own first index commit failed
+the same way locally. The order a fire must keep is: write the records, validate, commit the
+records, **then** rebuild the index and commit that. Batch 29's two commits are in that
+order and this is the first fire to say why.
+
+**1309. `--import` marks a refused item `done`, so a refusal cannot be retried.** Three
+items of this batch were refused for want of a lane — `Q862257` King Philip's War among
+them, which is the umbrella of seven of the batch's records — and the fix is one line in
+`data/imports/wikidata-seeds.json` → `lanes`. But the state file had already recorded all
+three as done, so `--import` had nothing pending and the run had to **delete the three from
+`data/imports/wikidata-state.json` → `done` by hand** before the retry. A run that means to
+retry a refusal has to edit a file the tool says it writes. Nothing was pushed in between,
+so no batch was re-imported.
+
+**1310. The corrected summary rule is in no code, and every fire re-implements it.** A12
+asks for *"a summary that is the cached lead at a revision, never the placeholder"*, and
+`tools/import/wikidata.mjs` **caches the lead and then writes the placeholder anyway** — the
+string `summary-from-lead` does not appear anywhere under `tools/` or `src/`. The same is
+true of `a9-place` and `filed-from-p361`. So a batch's records arrive with the placeholder
+summary, no `wikipedia-en` citation and one flag, and each fire writes its own pass over
+them afterwards. Three fires have now written the same pass. **It belongs in the tool**, and
+until it is there a fire that forgets it ships two thirds of the bodies the 24 September
+review objected to.
 
 ### The questions for the owner
 
-Ten now. The first two still block a century each and both are unchanged.
+The ten of the last fire stand, unchanged, and this fire's batch sharpens the fifth and the
+tenth rather than answering them. One is new, and it is the first this run has had to ask
+about its own brief.
 
-1. **Does the atlas begin in 1492, or does its first sentence follow the corpus wherever
-   the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min` and two tests
-   hold it there, so nothing on this branch can fill Europe's fifteenth century or anything
-   earlier. A one-line answer unblocks four records already known to import cleanly
-   (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and `italian-war-of-1494-1495` is the fifth
-   record sitting against the wall.
-2. **May a run take a period umbrella from an item whose class is a polity, where the
-   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and it is
-   worth seven main events. `Q377350` the **Iberian Union** is a second case of the same
-   shape, and `Q133156` **colony**, which `Q861551` Saint-Domingue carries, a third.
-3. **`spanish-conquest-of-iberian-navarre` is one record covering 1512 to 1529, and rule 4
-   therefore refuses every edge the article's own sentences state** (deviation 1269).
-   `siege-of-cadiz`, one record covering 1810 to 1812, is the same question in a second
-   place (deviation 1284).
-4. **Two records are filed under `thirty-years-war` although their own articles call them
-   part of the Eighty Years' War and of the Polish-Swedish War of 1626-1629** —
-   `siege-of-bergen-op-zoom-1622` and `battle-of-trzciana`. Importing `Q164432` and
-   `Q2985977` as umbrellas would settle it and would cost two main events.
-5. **A14's C8 itself, and batch 29 is the strongest case any fire has made for deciding
-   it.** Seven batches have now measured the cost. Every earlier one could say only that a
-   vein stayed an island. **This one can say the bridge was already built and the run was
-   not allowed to cross it**: `war-of-the-austrian-succession` is joined to the 662-strong
-   main component by an edge an earlier fire wrote, `war-of-jenkins-ear--war-of-the-austrian-succession--enabled`,
-   and **one edge between any of batch 29's twenty-four records and their own parent would
-   have joined all twenty-four to it**. Four of the twenty-four state such a claim in their
-   own leads. The corpus grew by twenty-four and the component by nothing.
-6. **`Q3010371`, Bois Caïman, is the ceremony the Haitian Revolution is usually said to
-   begin at, and Wikidata calls it a facility, a slave rebellion and a Haitian Vodou.** One
-   word imports it.
-7. **`Q98379923` is the one class standing between the COVID-19 pandemic in Paraguay and
-   this atlas** (deviation 1296).
-8. **A run that imports an event nobody has dated the end of, and that also has to file it,
-   has no way to say "nobody has dated this"** (deviation 1301): `end: null` is the atlas's
-   own word for it, but two tests forbid a child dated outside its parent, so an open end
-   can only be filed under another open end.
-9. **Rule 4 compares `when.date` as strings** (deviation 1302), so a day-precision cause
-   inside a month-precision effect's own month reads as an arrow pointing backwards, and
-   one of this batch's edges was lost to it. Comparing only the precision both records
-   share is a change to `src/validate/rules.js` and two tests, and not a records lane's to
-   make.
-10. **Rule 4 also refuses an edge between two records that were both already here**, where
-    the cause is a long war that began after the effect did: the Jenkins' Ear article says
-    in so many words that the wider war ended its offensive operations, and the wider war
-    starts in 1740 against Jenkins' Ear's 1739. A14 does not refuse this edge — Jenkins'
-    Ear is main and is nobody's child — **rule 4 does**, and the same shape will refuse
-    every edge between two overlapping wars whichever way round it is written.
+11. **May a batch raise the main count by one in order to write the umbrella a lane
+    lacks?** The brief says both *"write the regional period umbrellas a lane or century
+    lacks"* and *"the main count must not rise from what you find it at"*, and when the
+    umbrella a lane lacks has no existing main event to adopt, the two cannot both hold.
+    A3 and A6 provide for it — *"an import that leaves the main count higher than it found
+    it has to say why"* — and this batch used that clause for the first time in thirty,
+    for **one** main event that is what held the rise to one instead of two and let
+    eighteen records be filed. **If the answer is no, North America stays empty**: neither
+    King Philip's War nor the Beaver Wars can be filed under anything this atlas held
+    before today, and the same will be true of every vein in a region the corpus has not
+    reached yet. A one-line answer settles it for the rest of the run.
 
-**The check, on this fire's heads.** Run **1787**, on the claim commit `9eec4bc5`, was
-**cancelled** by the merge push that followed it. Run **1788**, on `f9082c2e`, the head of
-the two merges, concluded **success**. Runs **1789** and **1790** were each cancelled by
-the next push in turn — deviation 1258's chain, which this fire did not manage to avoid
-because two corrections came after the batch. Run **1791**, on `37571651`, the head of this
-fire, concluded **success**. Locally the fire finished at **2,114 tests passing with
-nothing failed and nothing skipped** — the 1,819 of the pure suites and the 295 of the
-browser suites, the browser set run alone, the two sets never at once — and
-`node tools/validate.mjs --index` **clean at 0 errors and 520 warnings** on the pushed
-index. **Three pure tests failed on the first attempt and all three were this batch's
-own** — the redundant parent (deviation 1305), the deleted `region` keys (deviation 1306)
-and `docs/m53-polities.md` §4.1's denominator — and all three were fixed before anything
-was pushed. **The next fire should read this head's run before it does
-anything else**, and if it is red, read the failure: the check has been honest since M63
-and it is not load.
+## Where the run stands, for the fire that picks it up
+
+*25 September, after the thirtieth fire and its batch 30.*
+
+| | |
+| --- | --- |
+| corpus | **1,072 active** |
+| **main** | **239** — raised by one, by the umbrella batch 30 wrote; see question 11 |
+| **largest connected component** | **662** |
+| components | **279** |
+| events with no edge at all | **210** |
+| Europe before 1900 | **155 active, 17 main** |
+| the `americas` lane | **287 active, 56 main** |
+| south and central America against north, inside that lane | **206 to 47**, with 34 placeless, counted by the place's own latitude at 23°N |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 16th (29, 1)**, the Americas' 18th (33, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 9), the Americas' 17th (41, 7), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
+| the cell this fire moved | **the Americas' 17th, 23 → 41**, and North America from nothing at all to nineteen records |
+
+**This fire merged `origin/m42` and then opened North America**, which had held no event of
+any century before 1739: the American Indian Wars as the umbrella the lane lacked, King
+Philip's War and the Beaver Wars under it, and the sixteen actions their own `P361` files
+under those two. Fifteen places, seven edges, three deviations, and **the first rise in the
+main count in thirty batches** — one, and said at length above.
+
+**The next fire has one move that is better than any other, and the source chose it.**
+
+1. **King William's War, `Q1070342`.** It names `Q849680` — the umbrella this fire just
+   wrote — in its own `P361`, so it can be imported and filed **at no cost to the main
+   count at all**, and five of batch 30's Beaver Wars records name it too, so they gain a
+   second parent under A8 the moment it exists. Its own `P361` children are the rest of
+   the North American theatre. This is the cheapest batch available anywhere in the
+   partition.
+2. **The Nine Years' War, `Q152218`, 1688–1697.** King William's War's European parent, a
+   **Europe before 1900** record, and Europe's seventeenth century is at 36 active and 2
+   main. It is one main event and it is the bridge: with it and King William's War the
+   North American vein of batch 30 and the European corpus stand in one component for the
+   first time, which is the number A5 asks a batch to move. If question 11 is answered
+   yes, take it; if it is answered no, take King William's War alone and say the component
+   is still two.
+3. **Europe's sixteenth century is now the thinnest unblocked cell of the partition**, at
+   29 active and 1 main. The Italian and naval halves of the War of the Austrian
+   Succession the last fire listed are still there, nineteen items in two coherent
+   batches, and neither can raise the main count.
+4. **The Pueblo Revolt, `Q1547791`**, is the one seventeenth-century child of
+   `spanish-colonization-of-the-americas` this atlas does not hold, and it is one record
+   that costs no main.
+
+**The check, on this fire's heads.** Run **1796**, on the claim commit `9be98c8a`, was
+**cancelled** by the merge push. Run **1797**, on the merge head `2e0841a0`, concluded
+**failure**, and the failure was **deviation 1308 and nothing else** — rule 16 on six
+history shards, with 295 of 295 browser tests passing in the same job. Runs **1799**,
+**1800** and **1801** were each cancelled by the next push in turn, which is deviation
+1258's chain. Run **1802**, on `0562327d`, the head of this fire's records and index, concluded **success**. Locally the fire
+finished at **2,114 tests passing with nothing failed and nothing skipped** — 1,819 pure and
+295 browser, the browser set run alone — and `node tools/validate.mjs --index` **clean at 0
+errors and 543 warnings** on the pushed index. **The next fire should read this head's run
+before it does anything else**, and if it is red, read the failure: the check has been
+honest since M63 and it is not load.
