@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-te-li-ssu--battle-of-motien-pass--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Motien Pass\", revision 1370269908, § Preliminary movements"
+    }
+  ],
+  "from": "battle-of-te-li-ssu",
+  "to": "battle-of-motien-pass",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Motien Pass article gives the state of the force that lost the pass and gives it as a consequence: \"Keller, already weakened by the loss of men at the Battle of Te-li-Ssu, was further forced to give up two more regiments to Kuropatkin's defenses at Haicheng.\" The same paragraph has Keller taking over the Russian Eastern Force after the Yalu River and then holding Motien Pass with 25,000 men. The article is naming an earlier defeat as what left the position thin, which is a condition and not a date. Probable: Wikipedia alone.",
+  "dispute": null
+}

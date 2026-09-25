@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-hsimucheng--battle-of-liaoyang--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hsimucheng\", revision 1370443278, § Description of battle"
+    }
+  ],
+  "from": "battle-of-hsimucheng",
+  "to": "battle-of-liaoyang",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Hsimucheng article ends on what the engagement made possible: \"At 23:00 on 31 July 1904, General Zasulich exercised his standing order from General Alexei Kuropatkin to withdraw to Haicheng, and the Japanese forces were thus able to link up for the next push north towards Liaoyang.\" \"Thus able to\" is an enablement stated in the article's own voice, and its background has the 4th Army \"advancing north towards Liaoyang\" from the start. Probable: Wikipedia alone.",
+  "dispute": null
+}

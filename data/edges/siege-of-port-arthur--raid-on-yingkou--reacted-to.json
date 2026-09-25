@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--raid-on-yingkou--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Yingkou\", revision 1370706175, § Background"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "raid-on-yingkou",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Yingkou article's whole background is the answer to the surrender, and it uses the word: \"With the surrender of Port Arthur, the course of the war radically changed as the Japanese no longer had to fight on 2 fronts. The armies of Nogi Maresuke and Ōyama Iwao planned on joining up and on further invading Manchuria. In response, the Russian command, led by Pavel Mishchenko, developed a planned raid to prevent the joining of Japanese troops.\" Written in the direction deviation 1420 settled: the surrender stands at from and the raid that answered it at to. Probable: Wikipedia alone.",
+  "dispute": null
+}

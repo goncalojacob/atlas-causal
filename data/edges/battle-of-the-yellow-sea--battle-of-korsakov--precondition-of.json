@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-yellow-sea--battle-of-korsakov--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Korsakov\", revision 1370446023, lead and § Preliminary moves"
+    }
+  ],
+  "from": "battle-of-the-yellow-sea",
+  "to": "battle-of-korsakov",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Korsakov lead makes the earlier battle the reason there was anything to fight: the engagement \"foiled an attempt by the Imperial Russian Navy protected cruiser Novik at escaping Port Arthur to join the Russian cruiser squadron at Vladivostok, Russia, after the Russian Pacific Squadron was scattered in the Battle of the Yellow Sea\", and the body spells it out — \"it met defeat in the Battle of the Yellow Sea on 10 August 1904. The Russian squadron broke up during the engagement ... Novik ... was among the ships that fled south.\" Probable: Wikipedia alone.",
+  "dispute": null
+}
