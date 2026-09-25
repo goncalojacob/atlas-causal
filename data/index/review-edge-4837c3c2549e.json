@@ -4912,6 +4912,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "from": "battle-of-herbsthausen",
+      "id": "battle-of-herbsthausen--battle-of-nordlingen-1645--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-nordlingen-1645",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "from": "battle-of-in-delimane-2012",
       "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
       "kind": "edge",
@@ -5730,6 +5758,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "battle-of-oldendorf",
+      "id": "battle-of-oldendorf--battle-of-nordlingen-1634--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-nordlingen-1634",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "battle-of-osan",
       "id": "battle-of-osan--battle-of-taejon--precondition-of",
@@ -6182,7 +6238,7 @@
       "cites": [
         "wikipedia-en"
       ],
-      "created": "2026-09-24",
+      "created": "2026-09-25",
       "from": "battle-of-rain",
       "id": "battle-of-rain--battle-of-the-alte-veste--precondition-of",
       "kind": "edge",
@@ -7188,6 +7244,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-wolgast",
+      "id": "battle-of-wolgast--edict-of-restitution--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "edict-of-restitution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "wilson-2009-europes-tragedy"
       ],
@@ -7405,6 +7489,34 @@
       "status": "active",
       "to": "battle-of-vertieres",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "bohemian-revolt",
+      "id": "bohemian-revolt--palatinate-campaign--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "palatinate-campaign",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -10491,6 +10603,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "dutch-portuguese-war",
+      "id": "dutch-portuguese-war--portuguese-restoration-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-restoration-war",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "earth-summit",
       "id": "earth-summit--aarhus-convention--inspired",
@@ -10674,6 +10814,34 @@
       "revised": null,
       "status": "active",
       "to": "potsdam-conference",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "edict-of-restitution",
+      "id": "edict-of-restitution--peace-of-prague-1635--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "peace-of-prague-1635",
       "type": "precondition-of"
     },
     {
@@ -24219,6 +24387,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "thirty-years-war",
+      "id": "thirty-years-war--portuguese-restoration-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-restoration-war",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "thousand-days-war",
       "id": "thousand-days-war--hay-bunau-varilla-treaty--precondition-of",
@@ -26329,6 +26525,34 @@
       "status": "active",
       "to": "peninsular-war",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "war-of-the-mantuan-succession",
+      "id": "war-of-the-mantuan-succession--siege-of-s-hertogenbosch--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-s-hertogenbosch",
+      "type": "enabled"
     },
     {
       "authors": [

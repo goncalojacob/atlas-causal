@@ -245,6 +245,15 @@
         }
       ]
     },
+    "antwerp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "ap-bac": {
       "from": "git",
       "versions": [
@@ -305,6 +314,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "arras": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -408,12 +426,30 @@
         }
       ]
     },
+    "bad-mergentheim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "badajoz": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "baden-q6877935": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -522,6 +558,15 @@
         }
       ]
     },
+    "bautzen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bay-of-all-saints": {
       "from": "git",
       "versions": [
@@ -553,6 +598,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "bay-of-kiel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -985,6 +1039,15 @@
         }
       ]
     },
+    "brno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "brookfield-massachusetts": {
       "from": "git",
       "versions": [
@@ -1207,6 +1270,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "cavite-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -1564,6 +1636,15 @@
         }
       ]
     },
+    "corbie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "costabissara": {
       "from": "git",
       "versions": [
@@ -1678,6 +1759,15 @@
         }
       ]
     },
+    "dachau-bavaria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "daejeon": {
       "from": "git",
       "versions": [
@@ -1699,6 +1789,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "demmin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -1871,6 +1970,24 @@
         }
       ]
     },
+    "dolni-vestonice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "domitz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "domokos": {
       "from": "git",
       "versions": [
@@ -1914,6 +2031,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "dorsten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2256,6 +2382,15 @@
         }
       ]
     },
+    "fehmarn-belt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "finland-q33": {
       "from": "git",
       "versions": [
@@ -2326,6 +2461,15 @@
         }
       ]
     },
+    "fort-de-rocher": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "fort-liberte": {
       "from": "git",
       "versions": [
@@ -2347,6 +2491,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "frankfurt-oder": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2450,6 +2603,15 @@
         }
       ]
     },
+    "furth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "fussen": {
       "from": "git",
       "versions": [
@@ -2525,6 +2687,21 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "genoa-q1449": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2652,6 +2829,24 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "grevenbroich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "grison-alps": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2990,6 +3185,15 @@
         }
       ]
     },
+    "ile-de-re": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "ilha-de-itamaraca": {
       "from": "git",
       "versions": [
@@ -3319,6 +3523,15 @@
         }
       ]
     },
+    "julich": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "juterbog": {
       "from": "git",
       "versions": [
@@ -3578,6 +3791,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kolding": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -3929,6 +4151,15 @@
         }
       ]
     },
+    "leuven": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "levant": {
       "from": "git",
       "versions": [
@@ -4107,6 +4338,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "lons-le-saunier": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4522,6 +4762,15 @@
         }
       ]
     },
+    "memmingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "menaka": {
       "from": "git",
       "versions": [
@@ -4583,6 +4832,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "minden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -5220,6 +5478,15 @@
         }
       ]
     },
+    "novy-jicin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "nuremberg": {
       "from": "git",
       "versions": [
@@ -5392,6 +5659,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "palatinate-region": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -6470,6 +6746,15 @@
         }
       ]
     },
+    "s-hertogenbosch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "sahel": {
       "from": "git",
       "versions": [
@@ -6519,6 +6804,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "saint-omer": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -6608,6 +6902,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "salses-le-chateau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7107,6 +7410,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "snogh-j": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7685,6 +7997,15 @@
         }
       ]
     },
+    "thann-haut-rhin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "the-downs": {
       "from": "git",
       "versions": [
@@ -7706,6 +8027,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "thionville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7798,12 +8128,30 @@
         }
       ]
     },
+    "tonisvorst": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "tordesillas": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "tornavento": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7880,6 +8228,15 @@
         }
       ]
     },
+    "turin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "turkey": {
       "from": "git",
       "versions": [
@@ -7892,6 +8249,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tuttlingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8041,6 +8407,15 @@
         }
       ]
     },
+    "valtellina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "vatican-city": {
       "from": "git",
       "versions": [
@@ -8151,6 +8526,15 @@
         }
       ]
     },
+    "villabona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "vimeiro": {
       "from": "git",
       "versions": [
@@ -8175,6 +8559,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "vlotho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8338,6 +8731,24 @@
         }
       ]
     },
+    "wiesloch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "willstatt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "wilton-new-york": {
       "from": "git",
       "versions": [
@@ -8383,6 +8794,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "wolfenbuttel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8524,6 +8944,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "zablati-prachatice-district": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
