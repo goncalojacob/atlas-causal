@@ -11722,3 +11722,264 @@ so the next import batch is Asia's unless a chain crosses out of it.
   does, and not expect one commit to carry both.
 - **Deviation numbers: take the next above 1451.** This fire wrote **1450** and
   **1451**.
+
+## Batch 60 — the Manchurian road and the sea around it, and the vein with nothing outside the component
+
+*25 September, the same fire, continuing under STEP 3's "each imported,
+connected, filed, placed, validated, rebuilt and pushed before the next". Batch 59
+put Africa at 176 against Asia's 174, so A10's order of need turned over and this
+batch is five **Asia** rows and no other lane.*
+
+### The vein chosen, and the table that chose it in one request
+
+Deviation 1450's ranking, re-taken after batch 59, and then asked of Asia alone:
+
+| the Asia vein | held records inside the 677 | free rows left | of those, dated |
+| --- | --- | --- | --- |
+| `Q159950` Russo-Japanese War | **15 of 15** | 5 | 5 |
+| `Q8740` Vietnam War | 10 of 19 | 286 | 271 |
+| `Q8663` Korean War | 0 of 13 | 92 | 88 |
+
+**`Q159950` is the only vein in this atlas with no held record outside the
+component**: all fifteen of the records batches 47 and 49 wrote are inside the
+677, so any edge at all puts an arrival inside it too. It has only five free rows
+left, which by the old way of choosing — free-row count — would have put it below
+both of the others and below every African vein; by deviation 1449's number it is
+the best batch in the lane. **Every one of the five names a held record in prose**,
+which was checked before a single article was read in full, by folding the
+`[[wikilink]]` targets of each candidate against the `wikipedia.en` title of every
+active event, with `<ref>…</ref>` stripped first. That last detail matters: with
+references left in, two of batch 59's refused rows looked connected and were not —
+the links were inside citations.
+
+The Korean War's zero is the same finding batches 51, 53 and 55 made the expensive
+way: every edge that vein offers runs from `korean-war` to its own child, C8 bars
+those, and its thirteen records are still a component of their own.
+
+A11 (b)'s partition check was made before the import, against `origin/m42b`'s
+`data/events/` and `data/places/`: none of the five records and none of the four
+places is there.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `hitachi-maru-incident` | 9 | 15 Jun 1904 | `tsushima-strait` (new) | `russo-japanese-war` |
+| `battle-of-motien-pass` | 10 | 10–17 Jul 1904 | `liaodong-peninsula` (held) | `russo-japanese-war` |
+| `battle-of-hsimucheng` | 9 | 31 Jul 1904 | `hsimucheng` (new) | `russo-japanese-war` |
+| `battle-of-korsakov` | 12 | 20 Aug 1904 | `korsakov` (new) | `russo-japanese-war` |
+| `raid-on-yingkou` | 3 | 9–29 Jan 1905 | `yingkou` (new) | `russo-japanese-war` |
+
+All five pass **depth** (each carrying `P361` `Q159950`) and **span** (each inside
+the war's 8 February 1904 to 5 September 1905). **Four of the five pass lane and
+one does not**, which is deviation 1423 again and is below. All five filed, so
+**main stays at 239**, unmoved now through thirty-one batches, four curation fires
+and A14.
+
+**No class was added.** `Q178561` battle covers three of the five, `Q1261499`
+naval battle the Hitachi Maru incident and `Q476807` military raid the Yingkou
+raid; all three have been in the table since M42 batch 32 and M42b batch 2.
+
+**Two intervals were widened under A7 and three were not touched.** `Q2409166`,
+`Q4871480` and `Q11481675` state exactly the day their articles state.
+`Q4311063`'s `P580` is 12 January 1905 while the article's raid section opens "On
+the 9th of January 1905, Cossacks led by Mishchenko were split into 3 columns",
+so the start is widened back three days and the item's `P582` of 29 January is
+kept. `Q2469370` is the harder one and the first of its kind this run has met:
+its only `P585` is **17 July 1904** and the article's first sentence says the
+battle was fought **"on 10 July 1904"**, with its aftermath adding that the
+Japanese "moved in to occupy Motien Pass on 13 July". That is not a span recorded
+by one of its ends — it is the item and the article **disagreeing about the day by
+a week**, and the seven days are not the thirteen of the Julian calendar, so
+deviation 1425's Old Style reading does not explain it. **A7 widens and never
+narrows, so the interval is written to cover both readings** — 10 to 17 July —
+with the `date` flag kept and the note saying which end came from where. A
+reviewer, not a fire, decides which source is right.
+
+### The six edges, and why all five arrivals joined
+
+Six edges, every one quoted from an article at the revision in its own locator;
+the full table with the sentences is in `docs/m42-connections.md` under
+"Batch 60".
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `battle-of-port-arthur` | precondition-of | `hitachi-maru-incident` | probable |
+| `battle-of-te-li-ssu` | precondition-of | `battle-of-motien-pass` | probable |
+| `battle-of-tashihchiao` | precondition-of | `battle-of-hsimucheng` | probable |
+| `battle-of-hsimucheng` | enabled | `battle-of-liaoyang` | probable |
+| `battle-of-the-yellow-sea` | precondition-of | `battle-of-korsakov` | probable |
+| `siege-of-port-arthur` | reacted-to | `raid-on-yingkou` | probable |
+
+**The largest connected component moves, 677 to 682** — five arrivals and five
+joined, which is the first batch of this run to lose none of them. Five of the six
+edges run from a held record into an arrival and the sixth, `battle-of-hsimucheng`
+→ `battle-of-liaoyang`, runs the other way and puts the Manchurian road back into
+the chain it was missing a link of: Te-li-Ssu, Tashihchiao, Hsimucheng, Liaoyang
+now run end to end, and Motien Pass hangs off Te-li-Ssu beside them.
+
+**The component count stays at 308 and the edgeless count stays at 232.** Nothing
+was absorbed and nothing stranded: every arrival had an edge before it was
+committed, so the validator's warning count is unchanged at **586** — the second
+batch running with no new `degree-zero` at all.
+
+**One "Following" sentence was kept, the first this run has kept**, and the reason
+is in the connections note: A14 (4)'s refusal class is about sentences that say
+only how long afterwards, and the Hsimucheng prelude names a unit, a defeat and
+the retreat that put it on that ground.
+
+### A9's places, and the point that is its parent's
+
+**Three place records are new, one held place was reused, and not one was
+hand-corrected.** All three new ones carry `summary: null`, which is what A14 (6)
+left every imported place at, and the `a9-place` flag.
+
+- **`liaodong-peninsula` was reused** and this is the cleanest case of that A9 has
+  had. `Q2469370`'s own `P625` is **40 N, 122.5 E** — which is, to the digit,
+  the `P625` of `Q326917`, the Liaodong Peninsula, the item `Q2469370` also names
+  in `P276`, and the place this atlas has held at that point since batch 47 with
+  `siege-of-port-arthur` standing on it. So A9's **first** step and its **second**
+  return the same answer, and the answer is a record that already exists. That is
+  deviation 1422's case — an item's `P625` being its container's rather than its
+  own — resolved by reuse instead of by a new record repeating a held point.
+- **`hsimucheng`** is A9's first step with nothing to fall back on (`Q2409166`
+  carries no `P276`): the item's own point, `precision: point`.
+- **`korsakov`** is A9's first step too, and the point is **25 km north-east of
+  the town** `Q155331` gives, because the engagement was fought at sea off
+  southern Sakhalin and the item places it where the ships were. The record is
+  labelled for the town it is named after, with the offset in its note. That is
+  `quang-tri`'s case from batch 57 read at sea.
+- **`tsushima-strait`** is A9's **second** step (`P276` `Q52055`), taken because
+  `Q11481675` carries no `P625`. `precision: region`, a strait being larger than a
+  settlement and not a state. `Q52055` is the **eastern channel** of the Korea
+  Strait, which this atlas already holds from its own item `Q52052` as
+  `korea-strait` with `battle-off-ulsan` on it: **two neighbouring records and not
+  a duplicate**, because A9 matches on the item and these are two items.
+
+**`battle-of-korsakov` is filed in the `europe` lane and the batch is an Asia
+batch.** Its point (46.8 N, 143 E) derives `europe` from the lane polygons, exactly
+as `sakhalin` does for `japanese-invasion-of-sakhalin`, which has been filed there
+since batch 47. **This is deviation 1423** — *should the `europe` lane hold Russian
+Asia?* — which is the owner's question and not a fire's, so **no `region` override
+was written**: the record says what the polygons say and the note says why. The
+batch therefore reads **+4 Asia and +1 Europe** and the honest count of it is
+below.
+
+### The actors, and the two items that name two each
+
+**Two of the five items carry a `P710`** and both name the same pair: `Q188712`,
+the Empire of Japan, and `Q34266`, the Russian Empire, which this atlas holds as
+`japan` and `russian-empire` and writes `belligerent` — the reading
+`russo-japanese-war`, `battle-of-port-arthur` and `battle-of-chemulpo-bay` already
+give the same two items, with the mapping in each line's `note`. Both actors are
+alive in both years, so **the numerator of `docs/m53-polities.md` §4.1 moves for
+the first time in five batches**: **403 of 1,130** by the start rule, 404 by
+overlap. The other three items carry no `P710` and arrive with `actors: []`.
+
+### What was refused
+
+- **Three edges**, listed in `docs/m42-connections.md`. The one worth naming is
+  `first-sino-japanese-war` → `battle-of-motien-pass`: the Motien Pass article has
+  General Keller observing "that the Japanese strategy was similar to that of the
+  First Sino-Japanese War", which is a commander's analogy reported as his
+  reasoning. **An earlier war this one was compared to is not a condition of the
+  battle**, and writing the edge would be this run deciding what the analogy was
+  worth. It is a refusal class the run has not needed before and it should be
+  expected again: a war article's background names every war its generals had read.
+- **Nothing else was left in the vein.** `Q159950` had exactly five free rows with
+  an English article and all five are now here. **The Russo-Japanese vein is
+  finished** — batch 49's title claimed it and batch 60 is what actually did it —
+  and a later fire looking for it will find twenty of twenty held and nothing to
+  take.
+
+## Where the run stands after batch 60, for the fire that picks it up
+
+*25 September, the fire that claimed at 12:08Z. **Two import batches in one
+fire**: batch 59 (Africa, two records) and batch 60 (Asia, five). Seven events, ten
+edges, six places, no class added, and seven leads cached under
+`tools/import/cache/wikipedia/` at the revisions the records cite, so A14 (3)'s
+invariant holds over everything this fire wrote. No code changed and no data
+vocabulary either.*
+
+| | |
+| --- | --- |
+| corpus | **1,130 active** (+7 over the fire, +5 on this batch, +81 from the merge) |
+| **main** | **239**, unmoved through thirty-one batches and four curation fires |
+| filed | 891 (+7) |
+| active edges | **1,000** (+10 over the fire, +6 on this batch) |
+| largest connected component | **682** (+9 over the fire, +5 on this batch) |
+| second component | **13**, the Korean War's earlier battles, unmoved |
+| components | **308** (−1 over the fire: the Gao pair absorbed) |
+| events with no edge at all | **232** (unchanged over the fire) |
+| validator | **0 errors, 586 warnings** (unchanged over the fire) |
+| per lane, active | **Europe 466**, Asia 178, **Africa 176**, Americas 310 |
+| per lane, main | Europe 88, Asia 64, Americas 56, Africa 31 |
+
+**A10's order of need has turned over again: Africa trails at 176** against Asia's
+178, so the next import batch is Africa's unless a chain crosses out of it.
+
+**What is open, in the order a fire should weigh it:**
+
+- **Rank the veins before reading anything** (deviation 1450), and re-take the
+  table each fire because it moves with every batch. One POST to the query
+  service, the qids of every active event inside the largest component in a
+  `VALUES` block, grouped by `P361`. **Then check the candidates' prose links
+  before opening an article** — fold each candidate's `[[wikilink]]` targets,
+  with `<ref>…</ref>` stripped, against the `wikipedia.en` title of every active
+  event. Two of batch 59's refusals looked connected with references left in and
+  were not. Both halves together are about four minutes of a fire's time and they
+  chose two batches that moved the component by nine.
+- **After this fire the ranking was re-taken and reads: Mali War 26 of 31 inside
+  the component, Cold War 21, Russo-Japanese War 20 of 20 and finished, Libyan
+  Civil War 15 of 15, World War II 13, Peninsular War 13, Arab–Israeli conflict 10,
+  Vietnam War 10 of 19.** The **Libyan Civil War**
+  (`Q81545`) is the number to look at next for Africa: fifteen held records, every
+  one inside the component, and **33 rows with an English article** against the
+  Mali vein's 83. Batches 45 and 46 worked it and a fire should ask what is left
+  before assuming the Mali vein again.
+- **The Mali vein's remaining 48 dated free rows (52 free of 83) are mostly 2-to-5-sitelink
+  battles of 2013 and of 2025–26**, and batch 59 found that the 2013 Gao cluster
+  argues edges while the recent rows argue only chronology. The one strong pair
+  left is `Q137460579` the Mali fuel blockade and `Q139556342` the 2026 Mali
+  offensives, whose chain is stated between them — **but neither has an edge into
+  the 682**, which batch 59 looked for and did not find, so they would arrive as a
+  walled pair.
+- **Six held Vietnam records are still singletons whose articles argue edges nobody
+  has written** — `battle-of-hue`, `battle-of-long-tan`, `battle-of-ap-bac`,
+  `1963-south-vietnamese-coup`, `battle-of-hamburger-hill`, and `battle-of-ia-drang`
+  with `gulf-of-tonkin-incident`. Batch 59's Gao pair is the proof of what that is
+  worth: **two edges between records already here moved the number by two**. A fire
+  can write them without importing anything.
+- **`battle-of-korsakov` is the newest instance of deviation 1423** and there are
+  now two — it and `japanese-invasion-of-sakhalin` — both filed in `europe` from a
+  Sakhalin point, in a lane table that reads Europe 466. The owner's question is
+  still the owner's; what a fire should know is that **an Asia batch on the
+  Russian Pacific will keep landing records in the Europe lane** until it is
+  answered.
+- **C8 is still the largest thing standing between this atlas and the chains the
+  owner asked for**, and deviation 1450's table now measures its cost exactly: the
+  Korean War vein reads **0 of 13 inside the component**. One edge `korean-war` →
+  `first-battle-of-seoul` would join eighteen.
+- **`reacted-to` reads backwards on the card, on all 63 of them** (deviation 1443).
+  One word, a display change, and every reader of one of those cards is told the
+  reverse of what the record says.
+- **`ilinden-preobrazhenie-uprising`'s own lane is simply wrong** and a fire could
+  fix it by clearing the record's `region`; `execution-of-the-romanov-family` is
+  deviation 1423's question and is not a fire's.
+- **`declaration-by-united-nations`'s cache has drifted from its citation** and
+  wants a re-cache under A14 (3)'s pass. **`chinese-spring-offensive`'s two
+  children**, **`fifth-battle-of-gao`** (re-read in batch 59 and the vein still
+  offers nothing), the **two Timbuktu battles**, and
+  **`the-persecution-of-the-jews-1933-1941` with `porajmos`** are all still
+  two-node or singleton components. **Two of the fifteen tombstones still want an
+  A6 umbrella and not an edge**: `1948-palestine-war` and `balkan-wars`. **The
+  fourteen placeholder summaries are not a fire's to fix.**
+- **The Mali vein's whole cast is still not actors here** — JNIM, the Wagner Group,
+  the CSP, the FLA and MUJAO — which is why four Mali batches have written no
+  `P710` at all. The Russo-Japanese vein has the opposite property and batch 60 is
+  what it looks like: two items, four actor lines, and the m53 numerator moving for
+  the first time in five batches.
+- **The next curation fire is the first fire after 02:00Z on 26 September**, and it
+  owns A13's relations pass over every active event.
+- **Deviation numbers: take the next above 1451.** This fire wrote **1450** and
+  **1451**, across two batches.

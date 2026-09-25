@@ -5463,3 +5463,67 @@ its own card, and not only one hop away. Nothing in the count depends on it.
   Wagner replaced by the Africa Corps — is not an event this atlas holds.
 - **`mali-war` → any of the four Gao and Imenas records.** Containment, which is
   the filing they already carry, and C8 bars it as an edge.
+
+## Batch 60 — the Manchurian road and the sea around it, and the vein where every held record is inside the component
+
+*25 September, the same fire, continuing under STEP 3's "each imported,
+connected, filed, placed, validated, rebuilt and pushed before the next". Batch
+59 put Africa at 176 against Asia's 174, so A10's order of need turned over and
+this batch is five **Asia** rows. Deviation 1450's ranking picked the vein:
+`Q159950`, the Russo-Japanese War, holds **fifteen** records here and **all
+fifteen are inside the largest connected component** — the only vein in the atlas
+with no held record outside it. Five free rows are all that is left of it, all
+five are dated, and every one names a held record in prose. The full note, the
+refusals and the counts are in `docs/m42-pool.md` under "Batch 60".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-te-li-ssu` → `battle-of-motien-pass` | `precondition-of` | *"Keller, already weakened by the loss of men at the Battle of Te-li-Ssu, was further forced to give up two more regiments to Kuropatkin's defenses at Haicheng"* — "Battle of Motien Pass", revision 1370269908, § Preliminary movements |
+| `battle-of-tashihchiao` → `battle-of-hsimucheng` | `precondition-of` | *"Following its defeat at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich retreated to the village of Hsimungcheng"* — "Battle of Hsimucheng", revision 1370443278, § Prelude |
+| `battle-of-hsimucheng` → `battle-of-liaoyang` | `enabled` | *"General Zasulich exercised his standing order from General Alexei Kuropatkin to withdraw to Haicheng, and the Japanese forces were thus able to link up for the next push north towards Liaoyang"* — same article, § Description of battle |
+| `battle-of-the-yellow-sea` → `battle-of-korsakov` | `precondition-of` | *"it met defeat in the Battle of the Yellow Sea on 10 August 1904. The Russian squadron broke up during the engagement ... Novik ... was among the ships that fled south"* — "Battle of Korsakov", revision 1370446023, lead and § Preliminary moves |
+| `battle-of-port-arthur` → `hitachi-maru-incident` | `precondition-of` | *"At the start of the Russo-Japanese War, the bulk of the Russian Pacific Fleet was blockaded within the confines of Port Arthur by the Imperial Japanese Navy. However, the Russian subsidiary naval base at Vladivostok ... remained largely undamaged and unblockaded"* — "Hitachi Maru Incident", revision 1370622816, § Background |
+| `siege-of-port-arthur` → `raid-on-yingkou` | `reacted-to` | *"With the surrender of Port Arthur, the course of the war radically changed as the Japanese no longer had to fight on 2 fronts ... In response, the Russian command, led by Pavel Mishchenko, developed a planned raid to prevent the joining of Japanese troops"* — "Raid on Yingkou", revision 1370706175, § Background |
+
+**Six edges for five arrivals and every one of the five joined the component**,
+which is the first batch of this run where that is true. The reason is the vein
+and not the reading: when every record a vein already holds is inside the 677,
+any edge at all puts the arrival inside it too. Deviation 1450's table says which
+veins those are before a fire opens an article.
+
+**One `reacted-to`, and the article supplies the word.** `siege-of-port-arthur` →
+`raid-on-yingkou` rests on "In response", which is the strongest connective this
+run has been given for that type: the Yingkou background states the Japanese plan
+that followed the surrender and then the Russian raid built to stop it. Written in
+the direction **deviation 1420** settled — the surrender at `from`, the raid that
+answered it at `to`.
+
+**One "Following" sentence was kept and it is the first this run has kept.**
+A14 (4) drew a refusal class around eleven edges whose quotes opened on
+"Following", "After" or "In the aftermath", and the test it drew was whether the
+sentence *makes a claim*. `battle-of-tashihchiao` → `battle-of-hsimucheng` opens
+on the word and then names a unit, a defeat and a retreat: *"Following its defeat
+at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich
+retreated to the village of Hsimungcheng."* It is why the Russians were on that
+ground at all, which is what `precondition-of` says. **The refusal class is about
+sentences that say only how long afterwards, not about the word they open with.**
+
+**Three edges were read and refused.**
+
+- **`battle-of-the-yalu-river-1904` → `battle-of-motien-pass`.** The same
+  paragraph that argues Te-li-Ssu also says *"General Fyodor Keller had assumed
+  command of the Russian Eastern Force from General Zasulich after the Battle of
+  Yalu River"*, which is a change of commander dated by a battle and not a claim
+  about the pass. The Te-li-Ssu sentence in the same paragraph says what the
+  earlier fighting cost the force, and that is the edge.
+- **`first-sino-japanese-war` → `battle-of-motien-pass`.** The article has Keller
+  observing *"that the Japanese strategy was similar to that of the First
+  Sino-Japanese War"*, which is a Russian general's analogy reported as his
+  reasoning. An earlier war a commander compared this one to is not a condition of
+  the battle, and reading it as one would be this run deciding what the analogy
+  was worth.
+- **`hitachi-maru-incident` → `battle-off-ulsan`.** The Hitachi Maru article names
+  the Ulsan battle, where the same Vladivostok squadron was broken up two months
+  later, but only in listing what became of the ships. It states no claim that the
+  raid brought the hunt about, and the edge would be this run supplying the link
+  between a sortie and the squadron's later destruction.
