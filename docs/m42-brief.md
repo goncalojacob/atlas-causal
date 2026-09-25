@@ -484,3 +484,79 @@ decides the 22 September C8, a batch writes no edge from a parent to its own
 child**, which is the rule the curation fire already applies; the 91 that
 exist stay as they are. What waits for the owner is listed in the review's
 fix plan and in the standing orders' §6.
+
+**A15 (25 September). The third review's data passes, in force for both
+lanes before any further import.** `docs/review-2026-09-26.md`, part C,
+measured the corpus at 1,257 active events after four curation fires; these
+are the passes a run can make under the amendments already in force, each
+its own section and counts in the pool file, each skipped if its section
+exists, in this order. (1) **The balance.** M42b's "Europe before 1900"
+clause is paused until Africa and Asia each hold A10's 303 active events;
+M42b's second half is the trailing lanes' empty centuries instead — the
+Americas' 16th to 18th centuries as before, and Africa and Asia before 1800,
+which hold nothing and one event — read from Wikidata under M42's own rules
+for those lanes and with M42's `data/events/` ids checked before every batch
+as M42b already checks. A batch that walks a held umbrella's `P361` children
+imports only the children it can connect to what exists with an edge under
+A5, and its note counts the candidates it left. (2) **The cache is kept.**
+A14(3)'s pass becomes the last step of every batch in both lanes, over the
+batch's own citations, so every `wikipedia-en` citation on an active record
+is on disk at the revision it cites; `tests/` gets a pure test that fails
+when one is not, written before the pass runs (711). (3) **Places carry no
+summary.** `placeRecord()` writes `summary: null`; the 158 place records
+carrying the import's placeholder are nulled. (4) **Days and months.** A7's
+comparison reads day and month as well as year, from the cached first
+sentence and from the article title; a record dated to a single day by
+`P585` whose article states a range takes the range with the `date` note
+(`first-shaba-war`, `battle-of-tsushima`, `battle-of-port-arthur`,
+`dos-de-mayo-uprising`, `palace-of-justice-siege`, `flight-to-varennes`,
+`battle-of-buceo`, `battle-of-humenne`, `beer-hall-putsch`,
+`execution-of-the-romanov-family`, `warsaw-uprising`,
+`slovak-national-uprising`, `arab-revolt`, `1979-herat-uprising`, and
+`siege-of-fuenterrabia-1523-1524` from its own title); the import tool runs
+the `span-vs-article-title` comparison at import time and writes the
+title's span. (5) **Chronology is not a claim, at the point of writing.**
+The fire's refusal class (a quote that opens "After", "Following", "In the
+aftermath", "Shortly after" and states no cause) is applied by both lanes'
+batches when the edge is written, and the batch note counts what it refused;
+an edge whose quoted sentence names a third event the atlas holds as the
+cause is written from that event or not at all —
+`soviet-afghan-war--afghan-civil-war-q1980081--precondition-of` is
+re-pointed at `dissolution-of-the-soviet-union` or dropped, and
+`world-war-i--treaty-of-lausanne` is re-read against
+`turkish-war-of-independence`. (6) **A country is a place only when it was
+there.** Under A9, a `P17` country is refused as an event's place where the
+item's inception (`P571`) is after the event's end or its dissolution
+(`P576`) before the event's start, where the item names more than one
+country, or where the country's point is more than 1,000 km from every
+`P625`/`P276` point on the event's own chain of parents and children; the 23
+pre-1800 events on a modern state's point and the 46 country-placed events
+that name their country nowhere are re-run under it, `region` kept, and a
+refusal is logged with its reason. (7) **The lane from the point.** Where an
+event's own item, or its first located `P276`/`P131`, carries a point, the
+lane is derived from that point and an import-written `region` that
+disagrees is corrected, which places `ilinden-preobrazhenie-uprising` and
+the other five `a14-lane-guard` records; `execution-of-the-romanov-family`
+waits on deviation 1423. (8) **Redirects.** Where an item's English sitelink
+resolves to an article whose title folds to none of the item's names, the
+record takes the flag `article-is-redirect`, no summary is quoted from that
+article, and the span is read from the section that names the item at a
+revision or the record is retracted under §1 with the reason;
+`eritrean-civil-wars` first, then `action-at-tamanana-9-september-1645`,
+`atlantic-revolutions`, `battle-of-musa-dagh`, `milk-bar-cafe-bombing`,
+`united-states-military-campaign-against-cartels`. (9) **Doubles and
+paraphrases.** `rio-de-janeiro-q8678` is merged into `rio-de-janeiro` and
+`wikidata: Q8678` written on it, as London was; the three summaries that
+cite a revision and paraphrase it (`battle-of-kapyong`,
+`battle-of-the-imjin-river`, `the-persecution-of-the-jews-1933-1941`) are
+requoted from their leads at the cited revision. (10) **Three polities.**
+`european-economic-community`, `inca-empire` and `dutch-republic` were
+refused on the dissolution-year gate because the record's own `when.end`
+is the import's placeholder and not a claim; their end is read from the
+item under A7's logic and they are described under A14(5). (11) **The
+measurement that matters.** Every batch note and every curation section in
+both pool files reports, beside the largest component, the number of edges
+written that cross an umbrella (whose two endpoints have no parent in
+common), because that is the number "chains throughout the globe and time"
+is; it was zero for every batch the review read. What waits for the owner
+is listed in the review's fix plan and in the standing orders' §6.

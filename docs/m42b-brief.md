@@ -17,8 +17,13 @@ with `country` only once `M80 done` is on `origin/m0`).
 - **The Americas, every century from 1492**: the `americas` lane, South and
   Central America before North America until they hold as many active
   events as North America.
-- **Europe before 1900**: the 16th to 19th centuries hold one to eight main
-  events each; fill them.
+- **Europe before 1900 — paused by A15 (25 September)** until Africa and
+  Asia each hold A10's 303 active events; in its place, **Africa and Asia
+  before 1800** (Africa holds nothing before 1800 and Asia one event), read
+  from Wikidata under M42's rules for those lanes, with `origin/m42`'s
+  `data/events/` ids checked before every batch as you already do. A batch
+  that walks a held umbrella's `P361` children imports only the children it
+  can connect to what exists (A5, A15(1)), and its note counts what it left.
 - **Nothing of Africa or Asia** (M42's), and nothing the other branch already
   holds: `git fetch origin m42` and read its `data/events/` and
   `docs/m42-pool.md` before every batch.
