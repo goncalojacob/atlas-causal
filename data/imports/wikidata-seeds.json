@@ -4804,6 +4804,12 @@
       "label": "political murder",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q3882219": {
+      "kind": "event",
+      "category": "death",
+      "label": "assassination",
+      "note": "Added in M42 batch 58, the Congo Crisis vein, from the class Q2529018 — the assassination of Patrice Lumumba — names and nothing else. The label and the gloss are the item's own, read over the network: \"murder of a prominent person\". `death` because Wikidata makes it a subclass of Q4676786, deliberate murder, which this table has carried at that category since M20, as it carries Q1139665 political murder."
+    },
     "Q1190554": {
       "kind": "event",
       "label": "occurrence"

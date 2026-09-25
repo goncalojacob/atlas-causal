@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "operation-linebacker-ii",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Vietnam War from the item's own P361; December 1972 falls outside the Easter Offensive's span, which the article closes on 22 October, so the campaign is not filed under it. The item's interval and the article's first sentence give 18 to 29 December 1972 alike. Place by A9's second step (P276 Q172640, North Vietnam, a place this atlas already holds). No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q486866",
+  "wikipedia": {
+    "en": "Operation Linebacker II"
+  },
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q486866"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Linebacker II\", revision 1374115791"
+    }
+  ],
+  "title": "Operation Linebacker II",
+  "summary": "The English Wikipedia article \"Operation Linebacker II\", at revision 1374115791, opens: \"Operation Linebacker II, sometimes referred to as the Christmas bombings and, in Vietnam, the Twelve days and nights, or Điện Biên Phủ of the Sky, was a strategic bombing campaign conducted by the United States against military and industrial areas of North Vietnam from 18 December to 29 December 1972, during the Vietnam War.\" Wikidata item Q486866, whose own description reads \"1972 USAF strategic bombing campaign against North Vietnam\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-12-18",
+    "endDate": "1972-12-29"
+  },
+  "place": "north-vietnam",
+  "region": null,
+  "regionNote": null,
+  "parent": "vietnam-war",
+  "category": "war",
+  "actors": []
+}

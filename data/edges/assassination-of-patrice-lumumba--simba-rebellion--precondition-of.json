@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "assassination-of-patrice-lumumba--simba-rebellion--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Simba rebellion\", revision 1375684063, § lead"
+    }
+  ],
+  "from": "assassination-of-patrice-lumumba",
+  "to": "simba-rebellion",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Simba article names the dead man in its own first paragraph as what the rising was for: the rebellion \"was led by the followers of Patrice Lumumba, who had been ousted from power in 1960 by Joseph Kasa-Vubu and Joseph-Désiré Mobutu and subsequently killed in January 1961 in Katanga.\" Precondition-of and not caused: the article gives the killing as what the Lumumbists were, not as the event that started the rising two years later. Probable: Wikipedia alone (rule 22). Written to a record the atlas already held, under A5.",
+  "dispute": null
+}

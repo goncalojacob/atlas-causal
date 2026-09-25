@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lubumbashi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written from Wikidata Q187593, the city the assassination of Patrice Lumumba's item names in P276 — A9's second step, taken because Q2529018 carries no P625 of its own. `city` from the item's class Q1549591, big city. The cited article puts the killing \"in Katanga, near Elizabethville\", which is this city under the name it carried in 1961; both names are kept."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q187593",
+  "wikipedia": {
+    "en": "Lubumbashi"
+  },
+  "sitelinks": {
+    "count": 78,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Lubumbashi",
+    "Élisabethville"
+  ],
+  "where": {
+    "lon": 27.482777777778,
+    "lat": -11.664166666667,
+    "precision": "city",
+    "label": "Lubumbashi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

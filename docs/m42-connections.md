@@ -5286,3 +5286,116 @@ already have and which C8 bars as an edge. `fourth-battle-of-gao` →
 *"Dissolution of the State of Azawad"* as the result, but Azawad is a polity and
 the rebellion is the event, and an edge between them would be this run deciding
 that the one ended the other.
+
+## Batch 57 — the Easter Offensive and the road to Paris, and the riddle a fire may not settle
+
+*25 September, the import fire that picked the run up at 09:23Z. Today already
+carries a `## Curation 2026-09-25` section and all six of A14's passes carry
+theirs, so this is an import fire and every one of the six is skipped by its own
+rule. A10's order of need had turned over at batch 56: **Asia** trails at 169
+against Africa's 170, so this batch is five Asia rows and no other lane, taken
+from the Vietnam War vein. The full note, the refusals and the counts are in
+`docs/m42-pool.md` under "Batch 57".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `easter-offensive` → `paris-peace-accords` | `enabled` | *"The final major breakthrough came on October 8, 1972. Prior to this, North Vietnam had been disappointed by the results of its Nguyen Hue Offensive (known in the West as the Easter Offensive), which had resulted in the United States countering with 'Operation Linebacker', a significant air bombing campaign that blunted the North's drive in the South as well as inflicting damage in the North"* — "Paris Peace Accords", revision 1376485436, § Breakthrough and agreement |
+| `easter-offensive` → `operation-pocket-money` | `reacted-to` | *"Its purpose was to halt or slow the transportation of supplies and materials for the Nguyen Hue Offensive (known in the West as the Easter Offensive), an invasion of the Republic of Vietnam (South Vietnam), by forces of the People's Army of Vietnam (PAVN), that had been launched on 30 March"* — "Operation Pocket Money", revision 1370698649, lead |
+| `operation-linebacker-ii` → `paris-peace-accords` | `enabled`, **disputed** | *"US officials claimed that the operation had succeeded in forcing North Vietnam's Politburo to return to negotiating, citing the Paris Peace Accords signed shortly after the operation"* — "Operation Linebacker II", revision 1374115791, § Outcome and assessments, Diplomatic |
+| `first-battle-of-quang-tri` → `second-battle-of-quang-tri` | `precondition-of` | *"While the North Vietnamese tried to consolidate their rule over the liberated zones, South Vietnamese General Ngô Quang Trưởng was drawing up a plan to retake the province. The stage was set for the Second Battle of Quảng Trị"* — "First Battle of Quảng Trị", revision 1375790239, § Aftermath |
+| `battle-of-khe-sanh` → `tet-offensive` | `enabled`, **disputed** | *"Historians have observed that the Battle of Khe Sanh may have distracted American and South Vietnamese attention from the buildup of Viet Cong (VC) forces in the south before the early 1968 Tet Offensive"* — "Siege of Khe Sanh", revision 1376490321, § Analysis |
+
+**The fifth edge is between two records the atlas already held**, written under
+A5's clause that a batch writes its edges to what already exists as well as to
+itself. `battle-of-khe-sanh` had been a singleton since it was imported: every
+link its article offers runs to `tet-offensive`, and until this fire nobody had
+written the one it argues. It is the only edge of the batch that touches no new
+record, and it is the reason the largest connected component moves by four and
+not by three.
+
+**Two of the five are `disputed`, and both are disputed for the same reason:
+the article states the claim and then names who denies it.** `operation-linebacker-ii`
+→ `paris-peace-accords` carries Pierre Asselin's reading — *"Hanoi agreed to
+resume talks only because the bombing had crippled their country"* — against
+A. J. Langguth's, that the Christmas bombings were *"pointless"* because the
+agreement of 23 January 1973 was essentially the one reached on 8 October 1972.
+`battle-of-khe-sanh` → `tet-offensive` carries what John Prados and Ray Stubbe
+call the **riddle of Khe Sanh**: *"Either the Tet Offensive was a diversion
+intended to facilitate PAVN/VC preparations for a war-winning battle at Khe
+Sanh, or Khe Sanh was a diversion to mesmerize Westmoreland in the days before
+Tet."* Read the second way the arrow points the other direction. That is exactly
+the case `CLAUDE.md` reserves `disputed` for, and neither dispute is a fire's to
+settle: the atlas says both readings and names who holds each.
+
+**Four edges were read and refused.**
+
+- **`operation-pocket-money` → `operation-linebacker-ii`.** Both are American
+  air campaigns against North Vietnam in 1972 and the second is often read as
+  the sequel to the first, but the article the atlas cites makes Linebacker II
+  follow from the stalling of the talks in December — *"The intransigence of
+  Thiệu and his demand for the U.S. not to abandon his nation after any
+  agreement, as well as new demands by Hanoi, caused the stalling of peace talks
+  in December. That led Nixon to launch Operation Linebacker II"* — and names
+  neither the mining nor the offensive as its cause. Sharing an enemy and a year
+  is not an argument.
+- **`easter-offensive` → each of the two Quảng Trị battles**, which is
+  containment and is the filing those two records already carry; C8 bars it as
+  an edge.
+- **`battle-of-pork-chop-hill` → `korean-armistice-agreement`**, from the Korean
+  vein this fire read first: *"Less than three weeks after the Battle of Pork
+  Chop Hill, the Korean Armistice Agreement was signed by the UN, PVA and North
+  Korean Korean People's Army, ending the hostilities."* That is a date and not
+  a claim, and it is the refusal class A14 (4) drew — a sentence that opens on
+  how long afterwards a thing happened says nothing about why.
+
+## Batch 58 — the Congo Crisis from the dismissal to the coup, and the word the article uses
+
+*25 September, the same fire, continuing under STEP 3's "each imported,
+connected, filed, placed, validated, rebuilt and pushed before the next". Batch
+57 put Asia at 174 against Africa's 170, so A10's order of need turned back and
+this batch is four **Africa** rows, taken from the Congo Crisis vein by
+deviation 1449's rule: `Q1773926` holds `simba-rebellion` inside the largest
+connected component, and all four arrivals stand beside it rather than under it.
+The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 58".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `dissolution-of-the-lumumba-government` → `assassination-of-patrice-lumumba` | `enabled` | *"Following the September 1960 coup led by Mobutu Sese Seko, Lumumba and his political retinue were detained by Mobutu's forces in December 1960. After a month of imprisonment near Léopoldville, he was transferred to Belgium-aligned Katanga in mid-January"* — "Assassination of Patrice Lumumba", revision 1376437618, lead |
+| `assassination-of-patrice-lumumba` → `kwilu-rebellion` | `precondition-of` | *"When Lumumba was assassinated in early 1961, Mulele became a prominent and vocal advocate for his government and beliefs. In 1962, Mulele joined a group of fellow rebels and ex-politicians named the National Committee of Liberation"* — "Kwilu rebellion", revision 1370626353, § Background |
+| `assassination-of-patrice-lumumba` → `simba-rebellion` | `precondition-of` | *"The rebellion, located in the east of the country, was led by the followers of Patrice Lumumba, who had been ousted from power in 1960 by Joseph Kasa-Vubu and Joseph-Désiré Mobutu and subsequently killed in January 1961 in Katanga"* — "Simba rebellion", revision 1375684063, lead |
+| `kwilu-rebellion` → `simba-rebellion` | `caused` | *"As violence increased and attacks became more frequent, it sparked similar uprisings throughout the country, triggering the Simba rebellion"* — "Kwilu rebellion", revision 1370626353, § Rebel activity 1963–1965 |
+| `simba-rebellion` → `second-mobutu-coup-detat` | `precondition-of` | *"By 1965, with the Kwilu and Simba rebellions largely quelled, the alliance between Kasa-Vubu and Tshombe had outlived its usefulness ... Kasa-Vubu moved to remove Tshombe from power, which led to a political split between the two"* — "Second Mobutu coup d'état", revision 1371883429, § Background |
+
+**`caused` is written once and it is written because the source writes it.** This
+run has put `caused` on very few of its imported edges and the reason has always
+been that an article that says a thing followed another has not said it was
+caused by it. The Kwilu article says *triggering*, of a named event, in its own
+narrative voice, and nothing weaker would have been honest to that sentence.
+
+**Two of the five edges have a held record at one end and two more reach one.**
+`assassination-of-patrice-lumumba` → `simba-rebellion` and `kwilu-rebellion` →
+`simba-rebellion` both end on a record the atlas already had; `simba-rebellion` →
+`second-mobutu-coup-detat` begins on one. That is the shape deviation 1449 is
+about, and it is why four arrivals joined the largest component and none of them
+had to reach it through an umbrella.
+
+**Three edges were read and refused.**
+
+- **`congo-crisis` → each of the four.** Containment, which is the filing all
+  four already carry, and C8 bars it as an edge. The Second Mobutu coup's lead
+  states the relation the other way round — *"It marked the end of the years-long
+  Congo Crisis"* — and an edge from a child to the umbrella it ends would be the
+  same rule read backwards.
+- **`kwilu-rebellion` ↔ `simba-rebellion` as concurrency.** Both articles also
+  say the two risings were *contemporaneous* and *concurrent*, and on that
+  sentence alone there would be no edge in either direction: two things happening
+  at once is not one causing the other. The edge above rests on the other
+  sentence, which names one and says what it did.
+- **`assassination-of-patrice-lumumba` → `second-mobutu-coup-detat`.** The coup
+  article says Tshombe *"was suspected by many to be complicit in Lumumba's
+  assassination, thus tarnishing his public image"*, which is a reason Kasa-Vubu
+  moved against Tshombe five years later. It is a reported suspicion about a
+  person's standing and not a statement that the killing conditioned the coup,
+  and the chain the article does argue — through the rebellions — is already an
+  edge here.
