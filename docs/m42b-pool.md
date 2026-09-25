@@ -9218,6 +9218,19 @@ Q55603167 and Q2984953. No `P625`, no `P276`, no `P131`, no `P17`: a placeless
 event with no lane is refused by the tool and would be drawn nowhere. They are
 the same gap the place pass is for.
 
+**Two weak places kept rather than corrected, and the difference matters.**
+`spain-and-the-american-revolutionary-war` and `anglo-french-war-1778-1783` both
+took `english-channel`, because that is the first thing their items' `P276`
+names that carries a coordinate. For the Anglo-French war it is defensible — its
+own lead opens with *"dominance in the English Channel, the Mediterranean, the
+Indian Ocean and the Caribbean"* — and for Spain's war it is poor, because that
+war is Gibraltar, Minorca, the Mississippi and the Gulf Coast. **They were left
+as the source states them.** The four of deviation 1330 were changed because the
+item's own `P625` contradicted the place the chain chose, which is a fact about
+the record; here there is no contradiction, only a weak statement, and replacing
+it would be this run deciding where a war happened. Both are drafts and both are
+in the review queue, which is where that decision belongs.
+
 **The whole North American land campaign**, some two hundred children of the
 same umbrella. Not a defect: the brief orders South and Central America before
 North, and the lane is 223 to 55.
