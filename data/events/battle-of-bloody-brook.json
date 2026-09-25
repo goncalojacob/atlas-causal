@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-brook",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place",
+      "date"
+    ],
+    "note": "The day stands as the item gives it, 18 September 1675, but the English article at revision 1374876685 opens \"fought on September 28, 1675\". Ten days is the Old Style / New Style gap, so the two are most likely one date twice, and the year is the same either way. Nothing was changed: a reviewer should read the article and pick the style this atlas keeps."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q885253",
+  "wikipedia": {
+    "en": "Battle of Bloody Brook"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q885253"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Brook\", revision 1374876685"
+    }
+  ],
+  "title": "Battle of Bloody Brook",
+  "summary": "The English Wikipedia article \"Battle of Bloody Brook\", at revision 1374876685, opens: \"The Battle of Bloody Brook was fought on September 28, 1675 between an indigenous war party primarily composed of Pocumtuc warriors and other local indigenous people from the central Connecticut River valley, and the English colonial militia of the New England Confederation and their Mohegan allies during King Philip's War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q885253, imported by tools/import/wikidata.mjs. The item's own description reads \"1675 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1675,
+    "date": "1675-09-18"
+  },
+  "place": "south-deerfield-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-philip-s-war",
+  "category": "war",
+  "actors": []
+}

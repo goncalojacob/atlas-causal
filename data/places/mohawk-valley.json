@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mohawk-valley",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q3504658",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Mohawk Valley"
+  },
+  "sources": [],
+  "names": [
+    "Mohawk Valley"
+  ],
+  "where": {
+    "lon": -73.68706388888889,
+    "lat": 42.76091111111111,
+    "precision": "region",
+    "label": "Mohawk Valley"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q3504658, imported by tools/import/wikidata.mjs. The item's own description reads \"six-county region in New York, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

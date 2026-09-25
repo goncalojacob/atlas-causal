@@ -1477,7 +1477,41 @@
     "Q134121",
     "Q111901161",
     "Q3438046",
-    "Q736097"
+    "Q736097",
+    "Q849680",
+    "Q862257",
+    "Q856216",
+    "Q4818005",
+    "Q7992172",
+    "Q885253",
+    "Q5600061",
+    "Q18354826",
+    "Q4818009",
+    "Q4872610",
+    "Q2890910",
+    "Q16208744",
+    "Q2624975",
+    "Q16208754",
+    "Q7431161",
+    "Q2889100",
+    "Q6893841",
+    "Q24204942",
+    "Q326028",
+    "Q49158",
+    "Q2536826",
+    "Q2680543",
+    "Q163507",
+    "Q591591",
+    "Q7054928",
+    "Q142010",
+    "Q1474128",
+    "Q19593663",
+    "Q331380",
+    "Q142092",
+    "Q3710319",
+    "Q49",
+    "Q1548416",
+    "Q3504658"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1730,7 +1764,10 @@
     "Q1617531": "americas",
     "Q1616748": "americas",
     "Q559181": "europe",
-    "Q233702": "europe"
+    "Q233702": "europe",
+    "Q862257": "americas",
+    "Q18354826": "americas",
+    "Q6893841": "americas"
   },
   "queries": [
     {
@@ -5504,18 +5541,6 @@
       "label": "transcontinental region",
       "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"region or territory that is located across continental borders\". Carried by the Caribbean (Q664609)."
     },
-    "Q33837": {
-      "kind": "place",
-      "precision": "region",
-      "label": "archipelago",
-      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"collection of islands including the water around them\". Carried by the Caribbean (Q664609), beside Q137186904."
-    },
-    "Q855697": {
-      "kind": "place",
-      "precision": "region",
-      "label": "subcontinent",
-      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"large, relatively self-contained landmass forming a subdivision of a continent\". Carried by Northern America and Mexico (Q19464773)."
-    },
     "Q2616791": {
       "kind": "place",
       "precision": "city",
@@ -5527,6 +5552,48 @@
       "precision": "city",
       "label": "municipality of Belgium",
       "note": "Added in M42b batch 29, the same batch and for the same reason as Q2616791: Tournai, Melle and Riemst each carry it and the table did not. 'administrative division of Belgium', read from the item. Q15273785, the honorary title a Belgian municipality may hold, is deliberately not added — it is a decoration and not a kind of thing, and every item carrying it also carries this class."
+    },
+    "Q15127012": {
+      "kind": "place",
+      "precision": "city",
+      "label": "town in the United States",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q2536826, Brookfield, and Q3710319, Wilton carries it and the table did not. Wikidata's gloss: \"administrative division at the local government level in the United States\". A New England town has a town in it, so it is a city at this atlas's four precisions, which is what Q3558970 village of Poland already says for the smaller case."
+    },
+    "Q498162": {
+      "kind": "place",
+      "precision": "city",
+      "label": "census-designated place in the United States",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q2680543, South Deerfield carries it and the table did not. Wikidata's gloss: \"statistical concentration of population defined by the United States Census Bureau\". A named settlement the census counts is a city at these precisions even where it is not incorporated as one."
+    },
+    "Q62049": {
+      "kind": "place",
+      "precision": "city",
+      "label": "county seat",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q163507, South Kingstown, and Q331380, Schenectady carries it and the table did not. Wikidata's gloss: \"administrative center for a county or civil parish in the United States\". A county's seat is a town, so it is a city here."
+    },
+    "Q2154459": {
+      "kind": "place",
+      "precision": "city",
+      "label": "New England town",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q591591, Sudbury carries it and the table did not. Wikidata's gloss: \"basic unit of local government in each of the six New England federated states of the United States\". The same reading as Q15127012 beside it."
+    },
+    "Q27676416": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city or town of Quebec",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q142010 Sorel-Tracy, Q142092 La Prairie and Q1474128 Lachine carries it and the table did not. Wikidata's gloss: \"type of local municipality in Quebec (Quebec doesn't make the difference between city or town)\"."
+    },
+    "Q123615496": {
+      "kind": "place",
+      "precision": "region",
+      "label": "U.S. region",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q1548416, the Great Lakes region carries it and the table did not. Wikidata's gloss: \"geographic region within the United States encompassing more than one state or territory\". `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading."
+    },
+    "Q39816": {
+      "kind": "place",
+      "precision": "region",
+      "label": "valley",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q3504658, the Mohawk Valley, carries it and the table did not. Wikidata's gloss: \"low area between hills, often with a river running through it\". `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading — the Mohawk Valley is six counties of New York and the item says so."
     }
   },
   "reconcile": true

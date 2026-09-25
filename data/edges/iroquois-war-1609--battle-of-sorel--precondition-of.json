@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iroquois-war-1609--battle-of-sorel--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sorel\", revision 1370589713"
+    }
+  ],
+  "from": "iroquois-war-1609",
+  "to": "battle-of-sorel",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Sorel article reads the 1609 fight as what put Champlain and the Mohawk on opposite sides for good: \"The first deliberate battle in 1609 was fought at Champlain's initiative. Champlain deliberately went along with a war party down Lake Champlain. Furthermore, this battle created 150 years of mistrust that poisoned any chances that French-Iroquois alliances would be durable and long lived.\" The second battle is the first one continued a year later, with the same alliance and the same arquebuses. Wikipedia is the only author named, so probable.",
+  "dispute": null
+}

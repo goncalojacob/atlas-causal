@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-prairie",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2889100",
+  "wikipedia": {
+    "en": "Battle of La Prairie"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889100"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Prairie\", revision 1370446812"
+    }
+  ],
+  "title": "Battle of La Prairie",
+  "summary": "The English Wikipedia article \"Battle of La Prairie\", at revision 1370446812, opens: \"The Battle of La Prairie was an attack made on the French colonial settlement of La Prairie, New France on August 11, 1691 by an English, Mohawk and Mohican force coming north from Albany, New York. The force, led by Major Pieter Schuyler, initially intended to attack Montreal, but was repulsed with significant casualties by the French and their Indian allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889100, imported by tools/import/wikidata.mjs. The item's own description reads \"1691 failed English colonial expedition against Montreal during the the King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-08-11"
+  },
+  "place": "la-prairie-quebec",
+  "region": null,
+  "regionNote": null,
+  "parent": "beaver-wars",
+  "category": "war",
+  "actors": []
+}

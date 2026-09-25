@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "schenectady-massacre--battle-of-wilton-new-york--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wilton (New York)\", revision 1370594093"
+    }
+  ],
+  "from": "schenectady-massacre",
+  "to": "battle-of-wilton-new-york",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Wilton article makes the 1690 raid the reason the 1693 one could be found at all: \"In sixteen days they reached the Mohawk, led by a guide captured in the Schenectady Massacre, Jan Baptiste Van Eps.\" The same man then undid it — \"Van Eps had escaped before the attacks and made his way to Schenectady, where he alerted the inhabitants to the French attack\" — which is how Schuyler came to be on the retreat road. Enabled and not caused: Schenectady did not decide that the Mohawk castles would be attacked, it supplied the man who led the way there. Wikipedia is the only author named, so probable.",
+  "dispute": null
+}

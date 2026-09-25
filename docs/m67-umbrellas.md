@@ -943,3 +943,40 @@ still the import's placeholder.
 Every one of the thirteen is filed where its date and its subject put it,
 inside `spanish-american-wars-of-independence` or a national war inside it,
 and what each is missing is what the sources it was built from do not carry.
+
+## M42b batch 30 — three of the American Indian Wars vein name neither
+
+The nineteen records of the American Indian Wars vein (`docs/m42b-pool.md`,
+batch 30) are placed from the item's own `P276` wherever the item names one
+thing, and sixteen of them are. **Three name neither an actor nor a place**,
+and each for its own reason, which is what this section is for.
+
+**`king-philip-s-war` names four locations and no coordinate.** `Q862257`
+carries `P276` `Q1191350`, `Q951500`, `Q2335224` and `Q126195` — Plymouth
+Colony, Rhode Island and two more — and no `P625`, so A12 (2)'s chain reaches
+four grounds and not one. A war fought across southern New England has no
+narrower point that is not a choice, and the run does not make that choice for
+it: the lane is `americas`, named for the item in
+`data/imports/wikidata-seeds.json` because its four locations reach no lane
+polygon on their own, and the record carries nothing else. It is the same
+answer `war-of-jenkins-ear` already has for the same shape of fact.
+
+**`northeast-coast-campaign-1676` carries no location Wikidata knows of at
+all** — no `P625`, no `P276`, no `P131`, no `P17` — and its own cited article,
+at revision 1375172615, places it only along "the New England Colonies/Acadia
+border in present-day Maine", which is a coastline and not a point. The lane is
+named for the item in the seeds file for the same reason.
+
+**`battle-of-turner-s-falls` carries a `P625` and nothing else.** Its point,
+42.612865 / -72.549434, is the falls themselves, and the item names no located
+thing at all: there is no `P276` to take a place record from, and the atlas
+does not write a place out of a bare coordinate, which would be a record with
+a point and no name. The nearest place this batch created,
+`south-deerfield-massachusetts`, is fifteen kilometres away and is a different
+town, so `reusablePlace`'s two signals do not reach it either. The lane is
+derived from the point, which is what an event with a coordinate and no place
+has always taken.
+
+**Each of the three is filed where its date and its subject put it** — the
+first inside `american-indian-wars`, the other two inside `king-philip-s-war` —
+and what each is missing is what the sources it was built from do not carry.
