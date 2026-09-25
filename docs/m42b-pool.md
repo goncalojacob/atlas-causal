@@ -9410,5 +9410,21 @@ wrote itself from now on. Deviations **1328 to 1332**.
    section lists every one by name.
 7. **The Nine Years' War, `Q152218` — question 11, unanswered for a fifth fire.**
 
-**The check, on this fire's heads.** Recorded below by the fire itself once the
-run concluded.
+**The check, on this fire's heads.** Runs 1859, 1861 and 1862 were each
+**cancelled** by the push that followed them, which is this branch's normal
+shape when a fire pushes four times in twenty minutes and not a failure.
+**Run 1866, on `b3d0ad7d`, concluded success**, and that head carries the merge,
+batch 35, both correspondence re-takes and the deviation-1331 fix. Nothing this
+fire pushed was ever red.
+
+Locally, on that head, the two halves were run **one after the other and not at
+once**, as the branch's own note advises: **1,835 pure and 295 browser, 2,130
+passing, nothing failed and nothing skipped**, and `node tools/validate.mjs
+--index` **clean at 0 errors** on the pushed index, byte-identical to a fresh
+build. One local failure was seen and discarded on purpose: a suite started
+before the deviation-1331 edits reported rule 16 against an index that had since
+been rebuilt. **A test run started mid-edit reports the edit, not a defect** —
+re-run it on the committed head before believing it.
+
+**Read this head's run before doing anything else**; if it is red, read the
+failure, because the check has been honest since M63 and it is not load.
