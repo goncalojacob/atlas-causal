@@ -10619,3 +10619,16 @@ refusals all name and none of them can reach.
   added and over what is still outside the largest component.
 - **Deviation numbers: take the next above 1446.** This fire wrote **1445** and
   **1446**.
+
+**The check is green on this fire's head.** Run 1795 of `validate.yml`, commit
+`baa20e5b`, conclusion `success`, on its first attempt. Run 1794 on the merge
+head passed too; 1793, the claim commit's, was cancelled by the merge push,
+which is deviation 1258's chain and costs nothing. **2,114 tests pass locally,
+1,819 pure and 295 browser, with nothing failed and nothing skipped**, run the
+way the check runs them since M63 both before the push and on the final tree.
+Two suites failed on the first local run and both were correspondence tests
+this batch had moved rather than broken — `tests/m53.test.mjs` §4.1, re-taken
+in the same commit, and `tests/m67.test.mjs`'s "a child that names neither is
+one the measurement argues for", answered by the paragraph on
+`operation-commando` in `docs/m42-connections.md`. The re-run allowance is
+unspent: nothing was re-run.
