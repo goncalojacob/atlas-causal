@@ -9287,6 +9287,43 @@ wrote; it needs no network and it is the same `filedUnder` call.
 **1332. A class row belongs to the branch that added it.** See `Q718893` above.
 Measuring another lane's row is this branch's business; editing it is not.
 
+## Deviation 1331, discharged in the same fire — the second filing pass
+
+The deviation was written at 16:00 and closed at 16:20, because it is twenty
+lines and the fire had the case in front of it.
+
+`umbrellasWith(umbrellas, created)` is the pure half: the map the run started
+with, plus every active event the run itself wrote that carries an item, copied
+rather than mutated — the report was written against the first map and must
+keep reading true. At the end of `runImportMode` the filing is asked once more,
+for the events the run created that came out with no parent, against that
+extended map. **It fetches nothing**, so it costs a run no calls and cannot
+fail on the network. A record is never filed under itself, and the report says
+which records the pass took.
+
+**The tests came first** (711, 717) and they are two: that `umbrellasWith` adds
+the run's own umbrella with its parents read through `parentsOf`, leaves the
+first map alone, and makes a filing that `filedUnder` refused before it succeed
+after — including the redundancy reduction across the join, so an action naming
+both the American Revolutionary War and Spain's war inside it still keeps only
+the nearer one; and that the pass takes only active events that carry an item,
+so a place, a withdrawn record and an event with no item are all passed over.
+
+**The proof is the case it was written for.** `battle-of-roatan`,
+`action-of-12-december-1779` and their umbrella
+`spain-and-the-american-revolutionary-war` were deleted, taken out of the
+cursor and re-imported together. Both children filed themselves:
+
+> `filed battle-of-roatan under spain-and-the-american-revolutionary-war on the second pass: its umbrella was created in this same run`
+
+The corpus is unchanged by it — 1,255 active, main **240**, largest component
+**705** — and the only difference in the records is the `filed-from-p361` flag
+the first run could not earn. One flag was restored by hand: the re-run reused
+the `roatan` the first run had created, and a *reused* place carries no
+`a9-place` flag although the place still came from A9's chain. That is a
+smaller deviation of the same family and it is left as a note rather than a
+number: **a re-import should not quietly drop a flag the first import earned.**
+
 ## Where the run stands, for the fire that picks it up
 
 *25 September, after the thirty-third fire: the merge of M42's batches 57 to 61,
@@ -9305,11 +9342,13 @@ and batch 35.*
 | the thinnest cells left, in this partition | the Americas' 15th (7, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 21st (37, 1)**, the Americas' 16th (42, 3), Europe's 16th (44, 1), the Americas' 19th (44, 8), the Americas' 18th (55, 2), Europe's 18th (61, 3), the Americas' 17th (69, 7), Europe's 17th (109, 3) |
 | the cells this fire moved | **the Americas' 18th, 34 → 55**; **Europe's 18th, 48 → 61** |
 
-**Two things happened in this fire, in this order.** `origin/m42` was merged,
+**Three things happened in this fire, in this order.** `origin/m42` was merged,
 which brought its batches 57 to 61 and the corrected import rules its passes
 wrote; the index was dropped and rebuilt from the union. Then batch 35 took the
 Americas' eighteenth century and read the American Revolutionary War's Caribbean
-and European theatres. Deviations **1328 to 1332**.
+and European theatres. Then **deviation 1331 was discharged in the same fire**,
+because the batch had just paid for it: the import files under an umbrella it
+wrote itself from now on. Deviations **1328 to 1332**.
 
 **The next fire's moves, in order.**
 
@@ -9321,11 +9360,9 @@ and European theatres. Deviations **1328 to 1332**.
    `P17` has to stop being a place for an event whose own point is far from the
    country's, or the pass will write France onto Caribbean actions at scale
    rather than one at a time. Do 1330 first, then the pass.
-2. **Deviation 1331's second filing pass**, which is half an hour and needs no
-   network: re-run `filedUnder` at the end of a run over the records the run
-   created, against the umbrellas the run wrote. It cost two records this fire
-   and it will cost more in any batch that imports a war and its children
-   together — which is most of them.
+2. ~~Deviation 1331's second filing pass~~ — **done in this fire**, tests
+   first and proved on the two records that asked for it. The next batch that
+   imports a war and its children together files both without a hand.
 3. **The Americas' twenty-first century is now the thinnest unblocked cell**
    at 37 and 1, then the Americas' sixteenth at 42 and 3 and Europe's sixteenth
    at 44 and 1. The Americas' eighteenth is no longer thin, and the North
