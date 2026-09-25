@@ -7448,7 +7448,7 @@ and a fire that files a nested vein has to pick the nearest one and only the nea
 
 ### Places (A9, as A12 corrects it)
 
-**Sixteen place records were created and four reused**, every precision off the item's own
+**Sixteen place records were created and five reused**, every precision off the item's own
 class and none hard-coded:
 
 | place | item | precision | class it came from |
@@ -7469,7 +7469,8 @@ class and none hard-coded:
 | `namur` | `Q134121` | `city` | the same |
 | `rocourt-liege` | `Q3438046` | `city` | `Q486972` human settlement |
 | `riemst` | `Q736097` | `city` | `Q493522` |
-| `prague`, `bergen-op-zoom`, `maastricht`, `finland-q33` | — | — | reused; the tool did the linking, so those events carry no `a9-place` flag |
+| `prague`, `bergen-op-zoom`, `maastricht`, `finland-q33` | — | — | reused; the tool did the linking, so those four events carry no `a9-place` flag |
+| `brussels` | `Q239` | `city` | reused by name and point against the event's own `Q111901161` |
 
 **The 24 September lane guard was run and all twenty-four passed**: every point derives
 `europe`, which is the lane every one of these events carried, so nothing was cleared and
@@ -7638,7 +7639,7 @@ the first thing a reader meets in the address bar.
 | Europe before 1900 | **155 active, 17 main** |
 | the `americas` lane | **268 active, 55 main** |
 | south and central America against north, inside that lane | **209 to 20**, with 39 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 9), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
 | the cell this fire moved | **Europe's 18th, 24 → 48**, its main count untouched at three |
 
 **This fire merged `origin/m0` and `origin/m42` and then took the vein the last fire
@@ -7718,8 +7719,8 @@ and still cost a main event. The Haitian vein is done.**
 **`--reconcile` has never been run on this branch.** `havana`, `santiago-de-cuba`,
 `porto-calvo` and `cap-haitien` are place records with the right coordinates written by
 hand because the import could not see them. **Batch 29 is the fourth piece of evidence and
-the second positive one**: sixteen of its twenty places were created from the items the
-events named, and four were reused, of which one — `brussels` — was reused by name and
+the second positive one**: sixteen of its twenty-one places were created from the items the
+events named, and five were reused, of which one — `brussels` — was reused by name and
 point rather than by item, because the atlas's record is `Q239` and the event's `P276` is
 `Q111901161`. `reusablePlace` caught it; a reconcile pass would have made the catch
 unnecessary.
