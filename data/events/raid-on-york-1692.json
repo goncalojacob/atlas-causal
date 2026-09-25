@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "raid-on-york-1692",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7283762",
+  "wikipedia": {
+    "en": "Raid on York (1692)"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7283762"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on York (1692)\", revision 1375096253"
+    }
+  ],
+  "title": "Raid on York (1692)",
+  "summary": "The English Wikipedia article \"Raid on York (1692)\", at revision 1375096253, opens: \"The Raid on York took place on 24 January 1692 during King William's War, when Chief Madockawando and Father Louis-Pierre Thury led 200-300 natives into the town of York, killing about 100 of the English settlers and burning down buildings, taking another estimated 80 villagers hostage. The villagers were forced to walk to Canada, New France, where they were ransomed by Capt. John Alden Jr. of Boston. One of those taken captive was a young Jeremiah Moulton, who would later gain renown during Father Rale's War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7283762, imported by tools/import/wikidata.mjs. The item's own description reads \"1692 action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-01-24"
+  },
+  "place": "york-maine",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

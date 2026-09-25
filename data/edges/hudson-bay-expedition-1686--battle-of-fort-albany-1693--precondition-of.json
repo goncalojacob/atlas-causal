@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hudson-bay-expedition-1686--battle-of-fort-albany-1693--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
+    }
+  ],
+  "from": "hudson-bay-expedition-1686",
+  "to": "battle-of-fort-albany-1693",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1693 article says what there was to recapture and who had taken it: \"The fort, captured by a French expedition in 1686 and held by them in a battle the next year, was briefly defended by five Frenchmen, who then abandoned the fort and its stockpile of furs to a four-ship English fleet commanded by James Knight.\" A recapture presupposes the capture, and the article names the expedition this atlas holds as the one that made it. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

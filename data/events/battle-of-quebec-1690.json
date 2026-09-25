@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-quebec-1690",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1708064",
+  "wikipedia": {
+    "en": "Battle of Quebec (1690)"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1708064"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
+    }
+  ],
+  "title": "Battle of Quebec (1690)",
+  "summary": "The English Wikipedia article \"Battle of Quebec (1690)\", at revision 1370586919, opens: \"The Battle of Quebec was fought in October 1690 between the colonies of New France and Massachusetts Bay, then ruled by the kingdoms of France and England, respectively. It was the first time Quebec City's defences were tested. Following the capture of Port Royal in Acadia, during King William's War, the New Englanders hoped to seize Quebec City itself, the capital of New France. The loss of the Acadian fort shocked the Canadiens, and Governor-General Louis de Buade de Frontenac ordered the immediate preparation of the city for a possible siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1708064, imported by tools/import/wikidata.mjs. The item's own description reads \"October 1690 battle near Quebec City, Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-10-16"
+  },
+  "place": "quebec-city",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

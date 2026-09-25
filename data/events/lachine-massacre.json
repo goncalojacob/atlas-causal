@@ -54,6 +54,9 @@
   "place": "lachine-quebec",
   "region": null,
   "regionNote": null,
-  "parent": "beaver-wars",
+  "parent": [
+    "beaver-wars",
+    "king-william-s-war"
+  ],
   "actors": []
 }

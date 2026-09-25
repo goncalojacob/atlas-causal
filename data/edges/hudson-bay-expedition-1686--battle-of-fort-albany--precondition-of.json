@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hudson-bay-expedition-1686--battle-of-fort-albany--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Albany\", revision 1366220638"
+    }
+  ],
+  "from": "hudson-bay-expedition-1686",
+  "to": "battle-of-fort-albany",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1688 article opens on the 1686 expedition and makes it the reason there was a battle at all: \"In the Hudson Bay expedition (1686) the French had, in time of peace, marched overland from Quebec and captured all three English posts on James Bay. The French had left a garrison at Fort Albany and needed to send a ship to resupply it and take out the furs.\" The fight of 1688 is over a fort the earlier expedition had taken, which is what a precondition is. The sentences are not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

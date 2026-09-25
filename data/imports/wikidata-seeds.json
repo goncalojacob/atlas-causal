@@ -1511,7 +1511,31 @@
     "Q3710319",
     "Q49",
     "Q1548416",
-    "Q3504658"
+    "Q3504658",
+    "Q1070342",
+    "Q106412661",
+    "Q14474392",
+    "Q16854103",
+    "Q17305537",
+    "Q7510302",
+    "Q1708064",
+    "Q2888522",
+    "Q2890597",
+    "Q2935388",
+    "Q2937687",
+    "Q2937688",
+    "Q3062426",
+    "Q4392917",
+    "Q4870722",
+    "Q4871051",
+    "Q4871031",
+    "Q4872090",
+    "Q5931014",
+    "Q5934341",
+    "Q7283744",
+    "Q7283747",
+    "Q7283760",
+    "Q7283762"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1767,7 +1791,10 @@
     "Q233702": "europe",
     "Q862257": "americas",
     "Q18354826": "americas",
-    "Q6893841": "americas"
+    "Q6893841": "americas",
+    "Q2935388": "americas",
+    "Q3062426": "americas",
+    "Q7283747": "americas"
   },
   "queries": [
     {
@@ -5594,6 +5621,48 @@
       "precision": "region",
       "label": "valley",
       "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q3504658, the Mohawk Valley, carries it and the table did not. Wikidata's gloss: \"low area between hills, often with a river running through it\". `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading — the Mohawk Valley is six counties of New York and the item says so."
+    },
+    "Q2578218": {
+      "kind": "place",
+      "precision": "region",
+      "label": "inland sea",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “sea that is deeply landlocked”. Hudson Bay, Q3040, carries it; a sea is larger than a settlement and is not a state, which is the `region` precision as A9 states it."
+    },
+    "Q12734855": {
+      "kind": "place",
+      "precision": "region",
+      "label": "epicontinental sea",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “sea covering part of a continental shelf”. Hudson Bay's second class, and it agrees with the first: both are `region`."
+    },
+    "Q35657": {
+      "kind": "place",
+      "precision": "region",
+      "label": "U.S. state",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “constituent political entity of the United States of America”. Maine, Q724, carries it. It is `region` and not `country`: the precision `country` is for a state, and a constituent entity of one is an administrative division larger than a settlement, which is exactly what A9 sends to `region`."
+    },
+    "Q93267": {
+      "kind": "place",
+      "precision": "region",
+      "label": "isthmus",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “narrow strip of land connecting two larger land areas”. The Isthmus of Chignecto, Q1007898, carries it; a physical region and not a point."
+    },
+    "Q1093829": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city in the United States",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “administrative division at the local government level in the United States”. Dover and Haverhill, Q48215 and Q54132, carry it; a unit of local government with a town in it is a city at this atlas's four precisions, which is the reading Q3558970 and batch 30's five American and Canadian kinds already carried."
+    },
+    "Q28042933": {
+      "kind": "place",
+      "precision": "point",
+      "label": "state historic site in the United States",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “historic site administrated by a state of United States”. The Pemaquid Archeological Site, Q7161849, carries it beside Q839954 archaeological site, and the two agree at `point`."
+    },
+    "Q1785071": {
+      "kind": "place",
+      "precision": "point",
+      "label": "fort",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “military construction designed for defensive warfare”. Pemaquid's third class, and it agrees with the other two at `point`."
     }
   },
   "reconcile": true
