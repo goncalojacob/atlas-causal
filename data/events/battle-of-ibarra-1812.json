@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ibarra-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q10858446",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Ibarra (1812)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10858446"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ibarra (1812)\", revision 1370443500"
+    }
+  ],
+  "title": "Battle of Ibarra (1812)",
+  "summary": "The English Wikipedia article \"Battle of Ibarra (1812)\", at revision 1370443500, opens: \"The First Battle of Ibarra occurred in the vicinity of the city of Ibarra, Ecuador, between 27 November and 1 December 1812. The event, which is part of the Spanish American Wars of Independence, pitted the troops of the State of Quito against those of the Spanish Empire. The battle was a decisive victory for the Spanish and resulted in the disappearance of the short-lived nation that had been born in the territory of the Royal Audiencia of Quito, after the Quito revolt of 10 August 1809, which had declared itself independent from Spain on 11 October 1811.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10858446, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-12-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

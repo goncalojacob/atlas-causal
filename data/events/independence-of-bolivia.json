@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "independence-of-bolivia",
+  "kind": "event",
+  "status": "merged",
+  "supersededBy": "bolivian-war-of-independence",
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": "2026-09-25",
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-merged"
+    ],
+    "note": "Merged in M42b batch 36 into bolivian-war-of-independence, which is the same thing under a second Wikidata item: identical dates (1809-1825), the same place (bolivia-q750), the same umbrella, and Q68475 carries the English and Portuguese articles this item has none of. Deviation 1318's three signals all fired at once. This record keeps the Wikidata id the import brought and names its survivor rather than becoming an anonymous tombstone."
+  },
+  "wikidata": "Q5915146",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5915146"
+    }
+  ],
+  "title": "Independence of Bolivia",
+  "summary": "Wikidata item Q5915146, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1825
+  },
+  "place": "bolivia-q750",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

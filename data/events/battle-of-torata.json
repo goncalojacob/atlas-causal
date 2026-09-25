@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-torata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5723065",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Torata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5723065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Torata\", revision 1370591244"
+    }
+  ],
+  "title": "Battle of Torata",
+  "summary": "The English Wikipedia article \"Battle of Torata\", at revision 1370591244, opens: \"The Battle of Torata is part of the Peruvian War of Independence, which occurred on 19 January 1823 on the heights around Torata between the Liberation Army of Peru, under command of Argentinean General Rudecindo Alvarado, and Royal Army of Peru under Gen. Brigadier Jerónimo Valdés and culminated with the defeat of Patriots whose army would be almost completely destroyed two days later at the Battle of Moquegua with support of General José de Canterac.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5723065, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 battle during the Peruvian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-01-19"
+  },
+  "place": "department-of-moquegua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "peruvian-war-of-independence"
+}

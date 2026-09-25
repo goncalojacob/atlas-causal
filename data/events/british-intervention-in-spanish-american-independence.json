@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "british-intervention-in-spanish-american-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55196779",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "British intervention in Spanish American independence"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55196779"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British intervention in Spanish American independence\", revision 1366734765"
+    }
+  ],
+  "title": "British intervention in Spanish American independence",
+  "summary": "The English Wikipedia article \"British intervention in Spanish American independence\", at revision 1366734765, opens: \"Britain's role in the Spanish American wars of independence combines the military, political and diplomatic routes adopted by them, as well as its merchants and private citizens during the conflict. Britain wanted to see an end to Spanish colonialism in the Americas but at the same time wanted to keep her as an ally in post-Napoleonic Europe. British support for the Spanish American revolutionaries was essentially a covert role with both private and state involvement.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55196779, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1819
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-american-wars-of-independence"
+}

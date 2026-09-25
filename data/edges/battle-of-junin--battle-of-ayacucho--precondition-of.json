@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-junin--battle-of-ayacucho--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Background and § Aftermath"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Junín\", revision 1370266471, lead"
+    }
+  ],
+  "from": "battle-of-junin",
+  "to": "battle-of-ayacucho",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Junín is the stage of Bolívar's 1824 campaign that Ayacucho concluded. The Ayacucho article puts the two in one sequence: Bolívar \"took advantage of the dismantling of the royalist defences and 'moved the whole month of May to Jauja', to face José de Canterac, who was isolated in Junín on 6 August 1824. Unrelenting prosecution of the war began, and 2700 royalists deserted and went over to the independentists. On 7 October 1824, with his troops before the gates of Cusco, Bolívar gave General Sucre command of the new battlefront\" — the front on which Ayacucho was fought that December. The same article records how the victory was remembered: the Upper Peruvian independence act was dated 6 August 1825 \"in honor of the Battle of Junín won by Bolivar\". Probable, and a precondition rather than a cause: the article gives Junín as a step in the campaign, not as the reason Ayacucho was won.",
+  "dispute": null
+}

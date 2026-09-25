@@ -1685,7 +1685,21 @@
     "Q4090280",
     "Q5484470",
     "Q4168638",
-    "Q124344830"
+    "Q124344830",
+    "Q10858436",
+    "Q10858449",
+    "Q10858446",
+    "Q2889067",
+    "Q5722315",
+    "Q5723065",
+    "Q5722708",
+    "Q5778763",
+    "Q5722589",
+    "Q52696693",
+    "Q6123901",
+    "Q5915146",
+    "Q55196779",
+    "Q115454857"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5887,6 +5901,18 @@
       "category": "war",
       "label": "cancelled military operation",
       "note": "Added in M42b batch 35, the Caribbean theatre of the American Revolutionary War. The label and the description — “military operation which was planned but never executed” — are read from the class item itself over the network and not guessed. It is a subclass of Q645883, military operation, which this table already reads as an event of category war; the Armada of 1779 is the item that carries it and the table did not."
+    },
+    "Q1168287": {
+      "kind": "event",
+      "category": "war",
+      "label": "intervention",
+      "note": "Added in M42b batch 36, for the British intervention in Spanish American independence. The label and the description are read from the class item itself over the network, which this sandbox has: Wikidata glosses it 'use of force by one country or sovereign state in the affairs of another', which is the war category as data/categories.json describes it."
+    },
+    "Q2112892": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "pronunciamiento",
+      "note": "Added in M42b batch 36, for the Pronunciamiento of Riego. Read off the class item over the network: Wikidata glosses it 'form of military rebellion or coup d'etat peculiar to Spain and the Spanish American republics', and it is a subclass of Q45382, coup d'etat, which this table already reads as an event of category revolution."
     }
   },
   "reconcile": true

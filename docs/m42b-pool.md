@@ -9448,6 +9448,272 @@ And one thing the measurement found on the way: **the four of deviation 1330 wer
 still flagged `a9-place` although they have no place**, which says A9's pass
 wrote a place that is not there. Cleared on all four, and on the raid.
 
+## Batch 36 — the Spanish American wars of independence, and the Americas' nineteenth century
+
+The Americas' nineteenth century was the thinnest cell in this partition that had
+a held umbrella to hang anything from: **44 active and 8 main** at the start of
+the fire, against the Americas' 21st at 40 and 1 and the 16th at 44 and 5. The
+21st is thinner and was named first by the last fire, but nothing in it is a
+child of anything this atlas holds, and a batch there would have raised the main
+count. **The 19th had fourteen children waiting**, every one of them free.
+
+### How the vein was found, which is a change of method
+
+The three fires before this one chose a vein by reading, then asked Wikidata for
+its children. This one asked the question backwards and in bulk: **one SPARQL
+query over the held records of this partition that carry an item**, for the items
+whose `P361` names one of them and that this atlas does not have. It is the
+inverse `part of` vein M42's batch 32 opened, run over a partition at once
+instead of one umbrella at a time, and it prints the veins ranked.
+`spanish-american-wars-of-independence` came out with **25 unimported children**,
+which is the batch below.
+
+The query is worth keeping as a habit: it cost one call and it ruled out the two
+veins a reading would have chosen first. `thousand-days-war` has **three**
+children on Wikidata and two of them fall in the twentieth century;
+`empire-of-brazil-1822-1889` has **one**, and it is the office of emperor.
+
+**And the first run of it was wrong, in a way worth reading before trusting the
+second** — deviation 1333. It read each record's lane off the record, and a lane
+is not on the record: the index derives it from the place's point, and most place
+records carry no `region` field at all. So the query asked about **157 of the
+556** held records of this partition that carry an item, a little over a quarter,
+and the ranked list it printed was a list of what that quarter had. It was
+re-run off the index's own lane, over all 556, and the answer it gives is a
+different answer — see "The veins, measured properly" below. The batch itself is
+unaffected: the vein it took is a real vein and every number reported for it was
+measured on the records, not on that query.
+
+### What was imported
+
+**Fourteen events and five places, nothing refused.** Every one of the fourteen
+carries `P361` to a war this atlas already holds, so **every one filed itself and
+the main count did not move**: 240 before the batch and 240 after. Six filed
+under the nearer umbrella and not the wider one, which is deviation 1316's
+reduction working — the Peruvian, Bolivian and Argentine wars of independence are
+themselves children of the Spanish American wars.
+
+| filed under | events |
+| --- | --- |
+| `peruvian-war-of-independence` | `battle-of-cerro-de-pasco`, `battle-of-torata`, `battle-of-moquegua`, `second-siege-of-callao` |
+| `bolivian-war-of-independence` | `battle-of-tumusla` |
+| `argentine-war-of-independence` | `batalla-de-la-florida` |
+| `venezuelan-war-of-independence` | `second-battle-of-la-puerta` (filed by hand, below) |
+| `spanish-american-wars-of-independence` | `battle-of-chimbo`, `battle-of-mocha`, `battle-of-ibarra-1812`, `los-andes-vs-prueba`, `british-intervention-in-spanish-american-independence`, `pronunciamiento-of-riego` |
+
+**One filing by hand, under A3/A6/A8.** `second-battle-of-la-puerta` (1814) came
+in under the Spanish American wars, because that is the only umbrella its item's
+`P361` names. It is a battle of the Venezuelan war, which this atlas holds as an
+active record spanning 1810–1823, and the nearer umbrella is the one that stays.
+Refiled.
+
+**Five places written from A9's chain**: `department-of-pasco`,
+`department-of-moquegua`, `cabo-manglares`, `callao`,
+`las-cabezas-de-san-juan` — each from the first step of the chain that carried a
+coordinate, each with its lane derived from its own point.
+
+**Two class rows added, read off the class items over the network** (deviation
+1266's rule, never guessed): `Q1168287` *intervention*, which Wikidata glosses
+"use of force by one country or sovereign state in the affairs of another" — the
+war category as `data/categories.json` describes it; and `Q2112892`
+*pronunciamiento*, "form of military rebellion or coup d'état peculiar to Spain
+and the Spanish American republics", a subclass of `Q45382`, coup d'état, which
+this table already reads as `revolution`. **The category each row carries is its
+own parent class's**, not this run's opinion.
+
+### What the batch refused, and one thing it did not import
+
+**`Q7806313`, "timeline of the Argentine War of Independence."** A timeline is a
+page about a war, not a war. Left unseeded rather than seeded and refused, so the
+cursor does not record it as done (deviation 1329).
+
+**Six of the fourteen have no English article at all** — `pronunciamiento-of-riego`,
+`battle-of-chimbo`, `battle-of-mocha`, `battle-of-cerro-de-pasco`,
+`batalla-de-la-florida`, and the record that was merged away below. Their
+`wikipedia` is `null`, not a fetch that failed: **there is no lead to quote, so
+the placeholder is the honest summary** and A12's rule is not broken by it. Worth
+saying plainly, because a 429 would look the same on the record and does not look
+the same in the report — this fire met Wikipedia's rate limit twice while
+measuring and checked each of the six against its sitelinks rather than assuming.
+
+### The edges, and the two the atlas refused
+
+**Three edges written, all `probable`, each citing two articles at the revision
+the lead cache holds.** Every revision the batch cites was checked against the
+live article and all six matched the cached revision exactly, so A12's
+"cached at the revision it cites" holds without a re-fetch.
+
+- `battle-of-torata` **caused** `battle-of-moquegua` — two days, one rout. Torata's lead: the defeat there "culminated with the defeat of Patriots whose army would be almost completely destroyed two days later at the Battle of Moquegua".
+- `battle-of-junin` **precondition-of** `battle-of-ayacucho` — the campaign the Ayacucho article narrates as one sequence. A precondition and not a cause: the article gives Junín as a step, not as the reason Ayacucho was won.
+- `battle-of-ayacucho` **precondition-of** `battle-of-tumusla` — the two articles meet on one name, Pedro Antonio Olañeta, who stayed in Potosí after Ayacucho and was killed at Tumusla.
+
+Two of the five written were **refused by rule 4 and are worth more than the three
+that stood**, because in both cases the atlas's arrow of time caught a claim the
+articles' wording invited:
+
+1. `battle-of-ayacucho` → `second-siege-of-callao`. Callao's lead says its
+   garrison "refused to accept the capitulation of the Battle of Ayacucho", which
+   reads like a cause and is not one: **the siege opened on 5 December 1824 and
+   Ayacucho was fought on the 9th**. Ayacucho is why the siege lasted until 1826,
+   not why it began, and the atlas has no way to say "outlasted". Dropped.
+2. `battle-of-tumusla` → `independence-of-bolivia`. Refused because the target
+   starts in 1809, sixteen years before the battle — and chasing that refusal
+   found the duplicate below.
+
+### The duplicate deviation 1318's check caught, this time by finding one
+
+`independence-of-bolivia` (`Q5915146`) and `bolivian-war-of-independence`
+(`Q68475`) are **the same thing under two Wikidata items**. All three of
+deviation 1318's signals fired at once: identical dates (1809–1825), the same
+place (`bolivia-q750`), the same umbrella, the same subject — and `Q5915146`
+carries no description in any language and no article, where `Q68475` carries
+both the English and the Portuguese. The bare item is the poorer record of the
+two by every field.
+
+**Merged, not deleted**: `status: merged`, `supersededBy: bolivian-war-of-independence`,
+the flag `m42b-merged`, and a `review.note` that names its survivor and says which
+signals fired. It keeps the Wikidata id the import brought rather than becoming an
+anonymous tombstone, which is the shape M21 set.
+
+**This is the first duplicate thirteen batches of this check have found**, and it
+was not found by the check: it was found by rule 4 refusing an edge. The habit
+looked at the folded title — *"Independence of Bolivia"* against *"Bolivian War of
+Independence"* — and passed it, because the titles do not fold together. **The
+signal that would have caught it is the one the habit does not use: the span and
+the place, identical to the digit.** A script over those two fields alone would
+have found it in one pass, and deviation 1318 should be read as asking for that
+script and not for a better habit.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,257 | **1,270** |
+| **main** | **240** | **240** — unchanged |
+| active edges | 1,043 | 1,046 |
+| largest connected component | 707 | **707** — unchanged |
+| components | 395 | 405 |
+| events with no edge at all | 314 | 322 |
+| the Americas' 19th | 44 (8 main) | **56 (8 main)** |
+| Europe's 19th | 38 (9 main) | 39 (9 main) |
+| the `americas` lane | 343 active, 56 main | 355 active, 56 main |
+| Europe before 1900 | 256 active, 18 main | 257 active, 18 main |
+| south and central America against north | 223 to 55 | 231 to 54 |
+
+**The largest component did not move, and that is the batch's real limit.** The
+five records the three edges join — Junín, Ayacucho, Tumusla, Torata, Moquegua —
+were every one of them edgeless before this batch, so the batch built a cluster
+of five rather than growing the graph's spine. The bridge that would have joined
+them to the 707 is an edge from `spanish-american-wars-of-independence`, which is
+in the big component, to one of its own children. **A14 forbids exactly that
+edge**, and this is now the third fire to report the same cost in the same words.
+
+## The veins, measured properly — what the next fire should read before choosing
+
+Deviation 1333's re-run, over all **556** held records of this partition that
+carry an item, asking for every item whose `P361` names one of them and that this
+atlas does not hold. **82 held records have at least two unimported children.**
+The thirty richest, with the lane and century of the umbrella itself:
+
+| umbrella | lane | century | unimported children |
+| --- | --- | --- | --- |
+| `american-revolutionary-war` (Q40949) | americas | 18th | **273** |
+| `peninsular-war` (Q152499) | europe | 19th | **201** |
+| `covid-19-pandemic-in-brazil` (Q86597695) | americas | 21st | **175** |
+| `napoleonic-wars` (Q78994) | europe | 19th | **118** |
+| `american-indian-wars` (Q849680) | americas | 17th | **77** |
+| `thirty-years-war` (Q2487) | europe | 17th | **73** |
+| `covid-19-pandemic-in-the-united-states` (Q83873577) | americas | 21st | **66** |
+| `mexican-war-of-independence` (Q68750) | americas | 19th | **54** |
+| `venezuelan-war-of-independence` (Q8934) | americas | 19th | **48** |
+| `covid-19-pandemic-in-north-america` (Q86695115) | americas | 21st | **40** |
+| `french-revolution` (Q6534) | europe | 18th | **39** |
+| `french-invasion-of-russia` (Q179250) | europe | 19th | **39** |
+| `peruvian-war-of-independence` (Q68478) | americas | 19th | **37** |
+| `war-of-the-austrian-succession` (Q32929) | europe | 18th | **37** |
+| `war-of-the-sixth-coalition` (Q138107) | europe | 19th | **36** |
+| `spanish-conquest-of-the-inca-empire` (Q636771) | americas | 16th | **34** |
+| `dutch-portuguese-war` (Q377269) | americas | 17th | **33** |
+| `war-of-the-fifth-coalition` (Q684324) | europe | 19th | **32** |
+| `war-of-the-third-coalition` (Q249232) | europe | 19th | **30** |
+| `argentine-war-of-independence` (Q617409) | americas | 19th | **28** |
+| `covid-19-pandemic-in-argentina` (Q87235137) | americas | 21st | **26** |
+| `colombian-war-of-independence` (Q3063789) | americas | 19th | **26** |
+| `war-of-the-fourth-coalition` (Q605977) | europe | 19th | **26** |
+| `charter-of-the-united-nations` (Q171328) | americas | 20th | **25** |
+| `chilean-war-of-independence` (Q1072889) | americas | 19th | **23** |
+| `colombian-conflict` (Q169072) | americas | 20th | **19** |
+| `spanish-colonization-of-the-americas` (Q1047607) | americas | 15th | **18** |
+| `falklands-war` (Q48249) | americas | 20th | **17** |
+| `anglo-french-war-1778-1783` (Q3651696) | europe | 18th | **15** |
+| `portuguese-restoration-war` (Q1501724) | europe | 17th | **15** |
+
+**Three things in this table overturn what the last four fires have been saying,
+and a fire that takes this branch next should read them before it chooses.**
+
+1. **The Americas' twenty-first century is not blocked, and three fires have
+   called it blocked.** The last fire named it "the thinnest unblocked cell" and
+   then had nothing to put in it; this fire repeated the reasoning and went
+   elsewhere. In fact `covid-19-pandemic-in-brazil` alone holds **175 unimported
+   children**, with 66 more under the United States, 40 under North America and
+   26 under Argentina — every one of them a child of a held umbrella, so every
+   one of them free of main. The cell is 40 and 1 and it can be filled without a
+   reading. Whether a run *should* fill a thin cell with 175 pandemic-by-country
+   records is a separate question and an editorial one, and it is the owner's
+   rather than a fire's; but "there is nothing to put there" was simply wrong.
+2. **The independence complex is the Americas' nineteenth century, and it is
+   deep.** Mexico 54, Venezuela 48, Peru 37, Argentina 28, Colombia 26, Chile 23,
+   Bolivia 14 — **230 unimported children under seven held umbrellas**, all in the
+   thin cell this batch worked, all South and Central America, none of them
+   needing a new umbrella. This batch took 14 of them. `mexican-war-of-independence`
+   is the single richest and was never in the first query's reach.
+3. **The Americas' sixteenth and seventeenth centuries have their own held
+   veins**: `spanish-conquest-of-the-inca-empire` 34 in the 16th, and
+   `american-indian-wars` 77 and `dutch-portuguese-war` 33 in the 17th. The 16th
+   sits at 44 and 5.
+
+`american-revolutionary-war`'s 273 is the largest number in the table and is
+**North America**, which the brief defers behind South and Central. Left where the
+brief leaves it, and noted so that the next fire does not have to re-measure it
+to find that out.
+
+### Deviations
+
+**1333. A lane is not on the record, and a measurement that reads it off the
+record asks a quarter of the question.** This fire's vein query derived each
+record's lane from `event.region`, falling back to `place.region` — and neither
+field is usually there. The index derives a lane from the place's *point*
+(`createRegionDeriver` over `data/geo/regions.json`), which is why the atlas draws
+617 events in lanes that no record names. The query therefore ran over **157 of
+the 556** held items of this partition and printed a ranked list of what that
+quarter contained; the three findings above were all invisible in it. Re-run off
+`data/index/`'s own `region` column and the answer changed shape.
+**The rule: a measurement about lanes reads `data/index/`, never `data/`.** The
+same slip cost this fire a first draft of its own partition table, caught there
+because the table had a `(none)` row with 686 events in it — the vein query had no
+such tell, which is why it survived to be published and then corrected.
+
+**1334. Deviation 1318's duplicate check is looking at the wrong two fields.**
+The check's three signals are the folded title, the overlapping span and the
+article the lead cache resolved to. `independence-of-bolivia` and
+`bolivian-war-of-independence` are the same war, and **the titles do not fold
+together**, so the habit passed it; what caught it was rule 4 refusing an edge
+into a record dated sixteen years before the battle that was supposed to precede
+it. The two fields that would have caught it are **the span and the place,
+identical to the digit** — 1809–1825 and `bolivia-q750`. That is a pair of exact
+comparisons over two columns the core index already carries, which is a script and
+not a habit: any two active events with the same place and the same start and end
+are a duplicate or a pair worth a sentence explaining why not. Thirteen batches of
+checking by hand have found one duplicate, and did not find it by checking.
+
+**1335. `Q718893` is still unmeasured by its owner and now has a second row like
+it.** Deviation 1332 left *"theater of war"* to M42 as the branch that added it.
+This fire added two rows of its own — `Q1168287` and `Q2112892` — and the same
+question applies to them from the other side: **a row added for one batch should
+be measured a few batches later**, and nothing in the repository asks anybody to
+do that. One line of the pool doc per new row, naming the row and the batch, would
+make the question askable; today it is only askable by whoever remembers.
+
 ## Where the run stands, for the fire that picks it up
 
 *25 September, after the thirty-third fire: the merge of M42's batches 57 to 61,
