@@ -7997,6 +7997,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-khe-sanh",
       "kind": "event",
       "origin": {
@@ -15789,6 +15790,45 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "easter-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Filed under the Vietnam War from the item's own P361. Interval widened under A7 from the cited article at revision 1374321570, whose first sentence gives \"between 30 March and 22 October 1972\": the item carries a P585 of 22 October alone, which is the last day and not the campaign. Place by A9's second step (P276 Q180573, South Vietnam, held); the item carries no P625. No P710. This batch's two Quảng Trị battles are filed under it by span and subject.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Easter Offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -17226,6 +17266,44 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Guararapes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "first-battle-of-quang-tri",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "easter-offensive",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-by-span-and-subject",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The item's P361 is the Vietnam War, but its own lead calls the battle one fought \"during the Easter Offensive of 1972\" and its dates fall inside that campaign's span, so it is filed under the closer umbrella this batch writes rather than under the war. Place by A9's first step as A12 (2) corrects it: the item's own P625, written as `point`, because the item this pass could reach through P276 is Quảng Trị Province and not the ground. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Quảng Trị"
     },
     {
       "authors": [
@@ -24199,6 +24277,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "operation-linebacker-ii",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Vietnam War from the item's own P361; December 1972 falls outside the Easter Offensive's span, which the article closes on 22 October, so the campaign is not filed under it. The item's interval and the article's first sentence give 18 to 29 December 1972 alike. Place by A9's second step (P276 Q172640, North Vietnam, a place this atlas already holds). No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Linebacker II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -24292,6 +24408,44 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Operation Paraquet"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "operation-pocket-money",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Vietnam War from the item's own P361, and not under the Easter Offensive this batch also writes: the campaign was flown against the offensive and answering a thing is not being part of it. The item carries a P585 of 9 May 1972 alone and the article's infobox repeats that one date, so nothing is widened. Place by A9's second step (P276 Q72818, Haiphong). No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Pocket Money"
     },
     {
       "authors": [
@@ -24745,7 +24899,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 5,
       "id": "paris-peace-accords",
       "kind": "event",
       "origin": {
@@ -27463,6 +27617,45 @@
       "revised": null,
       "status": "active",
       "title": "Second Battle of Porto"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "second-battle-of-quang-tri",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "easter-offensive",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-by-span-and-subject",
+          "a9-place",
+          "participants-from-p710",
+          "summary-from-lead"
+        ],
+        "note": "The item's P361 is the Vietnam War, but its own lead calls the battle \"a battle in the Easter Offensive\" and its dates fall inside that campaign's span, so it is filed under the closer umbrella this batch writes. The interval is the item's and the article's alike, which give 28 June to 16 September 1972 in the same words. Place by A9's first step: the item's own P625 is the point the First Battle's item gives to three decimals, so the two stand on one record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Quảng Trị"
     },
     {
       "authors": [
@@ -30493,7 +30686,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "tet-offensive",
       "kind": "event",
       "origin": {
@@ -35208,12 +35401,6 @@
     },
     {
       "id": "battle-of-jutland",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-khe-sanh",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

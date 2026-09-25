@@ -2180,6 +2180,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-khe-sanh--tet-offensive--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Khe Sanh\", revision 1376490321, § Analysis"
+    },
+    {
+      "dissent": true,
+      "id": "battle-of-khe-sanh--tet-offensive--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Khe Sanh\", revision 1376490321, § Analysis"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-konna--battle-of-ifoghas--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ifoghas\", revision 1370443583, lead"
@@ -3266,6 +3278,24 @@
     },
     {
       "dissent": false,
+      "id": "easter-offensive--operation-pocket-money--reacted-to",
+      "kind": "edge",
+      "locator": "\"Operation Pocket Money\", revision 1370698649, § lead and Background"
+    },
+    {
+      "dissent": false,
+      "id": "easter-offensive--paris-peace-accords--enabled",
+      "kind": "edge",
+      "locator": "\"Easter Offensive\", revision 1374321570, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "easter-offensive--paris-peace-accords--enabled",
+      "kind": "edge",
+      "locator": "\"Paris Peace Accords\", revision 1376485436, § Breakthrough and agreement"
+    },
+    {
+      "dissent": false,
       "id": "easter-rising--irish-civil-war--precondition-of",
       "kind": "edge",
       "locator": "\"Easter Rising\", revision 1374874334"
@@ -3545,6 +3575,18 @@
       "id": "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of",
       "kind": "edge",
       "locator": "\"Second Battle of Guararapes\", revision 1370736242, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-quang-tri--second-battle-of-quang-tri--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Battle of Quảng Trị\", revision 1375790239, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-quang-tri--second-battle-of-quang-tri--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Quảng Trị\", revision 1376178980, § lead"
     },
     {
       "dissent": false,
@@ -4733,6 +4775,18 @@
       "id": "operation-jaque--colombian-peace-process--precondition-of",
       "kind": "edge",
       "locator": "\"Colombian peace process\", revision 1375561117, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "operation-linebacker-ii--paris-peace-accords--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Linebacker II\", revision 1374115791, § Aftermath — Negotiating and Outcome and assessments"
+    },
+    {
+      "dissent": true,
+      "id": "operation-linebacker-ii--paris-peace-accords--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Linebacker II\", revision 1374115791, § Aftermath — Outcome and assessments, Diplomatic"
     },
     {
       "dissent": false,
@@ -10232,6 +10286,12 @@
     },
     {
       "dissent": false,
+      "id": "easter-offensive",
+      "kind": "event",
+      "locator": "\"Easter Offensive\", revision 1374321570"
+    },
+    {
+      "dissent": false,
       "id": "easter-rising",
       "kind": "event",
       "locator": "\"Easter Rising\", revision 1375867431"
@@ -10445,6 +10505,12 @@
       "id": "first-battle-of-guararapes",
       "kind": "event",
       "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-quang-tri",
+      "kind": "event",
+      "locator": "\"First Battle of Quảng Trị\", revision 1375790239"
     },
     {
       "dissent": false,
@@ -11558,6 +11624,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-linebacker-ii",
+      "kind": "event",
+      "locator": "\"Operation Linebacker II\", revision 1374115791"
+    },
+    {
+      "dissent": false,
       "id": "operation-musketeer-1956",
       "kind": "event",
       "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
@@ -11573,6 +11645,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "\"Operation Paraquet\", revision 1370694202"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pocket-money",
+      "kind": "event",
+      "locator": "\"Operation Pocket Money\", revision 1370698649"
     },
     {
       "dissent": false,
@@ -12095,6 +12173,12 @@
       "id": "second-battle-of-porto",
       "kind": "event",
       "locator": "\"Second Battle of Porto\", revision 1370787422"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-quang-tri",
+      "kind": "event",
+      "locator": "\"Second Battle of Quảng Trị\", revision 1376178980"
     },
     {
       "dissent": false,

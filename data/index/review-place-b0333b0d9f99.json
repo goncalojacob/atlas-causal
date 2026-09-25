@@ -5488,6 +5488,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "haiphong",
+      "kind": "place",
+      "names": [
+        "Haiphong",
+        "Hải Phòng"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written from Wikidata Q72818, the city Operation Pocket Money's item names in P276 — A9's second step, taken because Q4335282 carries no P625 of its own. `city` from the item's class Q1549591, big city, which the class table already carries.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9843,7 +9872,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "north-vietnam",
       "kind": "place",
       "names": [
@@ -11787,6 +11816,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "quang-tri",
+      "kind": "place",
+      "names": [
+        "Quảng Trị"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2237223, the First Battle of Quảng Trị, read on 2026-09-25 — A9's first step as A12 (2) corrects it. Q4798235, the Second Battle, carries the same point to three decimals (16.7333, 106.967) and stands here too. The ground is the provincial capital and the item this pass could reach for it, Q36579, is the province and not the town, so the place is written from the point the two battle items give and carries no item of its own.",
         "status": "draft"
       },
       "revised": null,
@@ -14049,7 +14106,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "south-vietnam",
       "kind": "place",
       "names": [

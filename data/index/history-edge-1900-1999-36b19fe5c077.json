@@ -1296,6 +1296,15 @@
         }
       ]
     },
+    "battle-of-khe-sanh--tet-offensive--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-liaoyang--battle-of-mukden--precondition-of": {
       "from": "git",
       "versions": [
@@ -2550,6 +2559,24 @@
         }
       ]
     },
+    "easter-offensive--operation-pocket-money--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "easter-offensive--paris-peace-accords--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "easter-rising--irish-civil-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -2934,6 +2961,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-battle-of-quang-tri--second-battle-of-quang-tri--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4247,6 +4283,15 @@
             "explanation"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-linebacker-ii--paris-peace-accords--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

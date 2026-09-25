@@ -4304,6 +4304,12 @@
     },
     {
       "dissent": false,
+      "id": "easter-offensive",
+      "kind": "event",
+      "locator": "Q2395085"
+    },
+    {
+      "dissent": false,
       "id": "easter-rising",
       "kind": "event",
       "locator": "Q193689"
@@ -4505,6 +4511,12 @@
       "id": "first-battle-of-guararapes",
       "kind": "event",
       "locator": "Q5452519"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-quang-tri",
+      "kind": "event",
+      "locator": "Q2237223"
     },
     {
       "dissent": false,
@@ -5516,6 +5528,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-linebacker-ii",
+      "kind": "event",
+      "locator": "Q486866"
+    },
+    {
+      "dissent": false,
       "id": "operation-musketeer-1956",
       "kind": "event",
       "locator": "Q2915155"
@@ -5531,6 +5549,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "Q3269922"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pocket-money",
+      "kind": "event",
+      "locator": "Q4335282"
     },
     {
       "dissent": false,
@@ -5999,6 +6023,12 @@
       "id": "second-battle-of-porto",
       "kind": "event",
       "locator": "Q233405"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-quang-tri",
+      "kind": "event",
+      "locator": "Q4798235"
     },
     {
       "dissent": false,

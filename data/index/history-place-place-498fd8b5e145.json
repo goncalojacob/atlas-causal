@@ -2642,6 +2642,15 @@
         }
       ]
     },
+    "haiphong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "hall-of-mirrors": {
       "from": "git",
       "versions": [
@@ -5743,6 +5752,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "quang-tri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
