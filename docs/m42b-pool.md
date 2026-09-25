@@ -8563,22 +8563,28 @@ filings), and batch 32 shows that a populated century needs no rise at all.
 **The check, on this fire's heads.** Run **1810** (the claim) was cancelled by the merge push.
 Run **1811**, on the merge head, concluded **failure**, and the failure was **deviation 1308**:
 the index was built before the merge commit existed, so rule 16 saw a stale history shard.
-Run **1812** was cancelled. Run **1813**, on the head of batch 31's index, concluded
-**failure**, and the failure was real and this fire's: `tests/m53.test.mjs` on the §4.1
-denominator, and three in `tests/m67.test.mjs` — a child dated outside its parent, the
-validator's rule 24 warning for it, and four children naming neither an actor nor a place with
-no argument in `docs/m67-umbrellas.md`. All four were fixed by refusing
-`hudson-bay-expedition-1686` and writing the two documents. Run **1814** was cancelled and run
-**1815**, on the corrected head, was **cancelled by batch 32's push** before it finished its
-test step, having passed `Validate records`. Locally after both batches:
-`node tools/validate.mjs --index` **clean at 0 errors and 593 warnings**, and the pure suite
-**1,819 of 1,819 passing, nothing failed and nothing skipped**. The first pure run after
-batch 32 failed one test — `tests/m42-filing.test.mjs` on a second parent reachable through
-the first, which is deviation 1316 — and the two records were corrected before this head was
-pushed. **The browser suite was stopped by this fire rather than run**: it and the pure suite
-were started together, the machine's load reached nine, and the fire killed the browser half
-rather than spend the hour on it. So the branch's last full browser verdict is the run
-recorded here, and a next fire that wants one should run the two halves one after the other
-and not at once. **The next fire should read this head's run before it does
+Run **1812** was cancelled. Run **1813**, on batch 31's index, concluded **failure**, and the
+failure was real and this fire's: `tests/m53.test.mjs` on the §4.1 denominator, and three in
+`tests/m67.test.mjs` — a child dated outside its parent, the validator's rule 24 warning for
+it, and four children naming neither an actor nor a place with no argument in
+`docs/m67-umbrellas.md`. All four were fixed by refusing `hudson-bay-expedition-1686` and
+writing the two documents. Run **1814** was cancelled. Run **1815**, on the corrected head,
+was cancelled by batch 32's push. Run **1816** was cancelled.
+
+Run **1817**, on the head of batch 32's docs, was **cancelled**; run **1818**, on
+`131d2d6c`, concluded **failure**, and it is the one worth reading: **two of 295 browser
+tests**, both `"Pamplona" and "PYRENEES" overlap`, which is **deviation 1317** and was a real
+regression this batch caused. The fire reproduced it locally, established by a worktree at the
+pre-batch head that the same test was green there, traced it to the duplicate label, wrote the
+Natural Earth entries, ran the base-map import, found that the link **re-weights the whole
+label round** and moved the failure to a different pair, measured the estimate that makes such
+a pair possible at all, reverted the import and dropped the six records. Run **1819** was
+cancelled and **run 1820, on `8272c6d5`, concluded success.**
+
+Locally on that same head, the two halves run **one after the other and not at once**:
+**1,819 pure and 295 browser, 2,114 passing, nothing failed and nothing skipped**, and
+`node tools/validate.mjs --index` **clean at 0 errors and 587 warnings** on the pushed index,
+byte-identical to a fresh build. **The next fire should read this head's run before it does
 anything else**, and if it is red, read the failure: the check has been honest since M63 and
-it is not load.
+it is not load. And it should run the two test halves in sequence — this fire started them
+together, the machine's load reached nine, and neither finished.
