@@ -22403,6 +22403,315 @@ routine's to renumber, by deviation 461's rule.
       read for the first time. The key shape of §12's map is the tool's and is
       said in the description instead.
 
+## M88 — what the third review found in the display
+
+Lane A, on the branch `m88`. `docs/m88-brief.md` over the third Fable review
+(`docs/review-2026-09-26.md`, 25 September): part B's findings 1 to 12 and part
+C's 3 — the display half of what it found, measured on `m0` at 12ecb81f, where
+all eleven of the second review's display findings were already fixed. **All
+thirteen sections are done and none was refused.** No record was written, no
+historical claim was made, no new hex value, token or type size was added, and
+**nothing under `data/` changed except the search shard §2 rebuilds** — the
+manifest's name for it moved with it and no record moved at all.
+`validate --index` is clean: 12,967 records, 0 errors, 730 warnings, every one of
+them the corpus's own. This branch added no warning class and no record, so the
+whole of the difference from M87's 505 is the 850 records lane B wrote in
+between.
+
+The three numbers the brief asked for, measured on this container:
+
+- **The search shard, and what the importer's words match.** `1,329,225 B`
+  before and `1,203,594 B` after; the word `revision` answered with **975
+  records before and 4 after**, which is the number of events whose own first
+  sentence holds the word.
+- **The browser suite's wall time**, 39 files run one at a time: **5m27s before
+  §12 and 5m16s after**, which is inside the noise of this container and is not
+  what §12 was for: the wait is no longer the number 10 but ten seconds plus one
+  per 200 KB the manifest names — 15 s on this corpus, growing with it — so the
+  lane stops getting slower *and* stops going red as the records arrive.
+- **The graph on a phone.** At 390 × 844 at rest the drawing was a strip a
+  quarter of the pane high with no name on it; it fills the pane's height now
+  and every name drawn is at least eight pixels on screen.
+  `docs/screens/m88-graph-phone.png`, and every other picture
+  `tools/screens.mjs` rewrites was restored.
+
+The suite: **2,151 tests, none skipped** (1,851 pure, 300 in a browser in 5m16s,
+run the way the check runs them), against M87's 2,114.
+
+### 1 — the graph on a phone fills the pane, and every drawn name is legible (B1)
+
+The graph's root takes under `PHONE` the `preserveAspectRatio` rule `map.js` has
+taken since M87 §9, so the arrangement fills the pane's height instead of being
+letterboxed into a band across the top of it: the viewBox is wider than it is
+tall and `xMidYMid meet` could never make it more than a strip at 390 px wide.
+What it crops is time, which the camera frames back.
+
+And a name too small at the picture's own size is **written at
+`LABEL_MIN_PIXELS / scale`** rather than dropped. M87's floor was the right rule
+with the wrong remedy: at rest a phone has nothing open, so every name was under
+the floor and the review met a picture that named nothing at all. Fewer names fit
+now — the placer skips what collides, as it always did — and every one drawn can
+be read. The size is threaded through the placer (`charWidth`, `halfLine`,
+`boxWidth`, `lineHeight`, `labelBoxAt`, `placeOne`, `placeLabels`, `movedAway`),
+because a box measured at eleven units cannot hold a word written at twenty; it
+is defaulted everywhere, so no other caller changed.
+
+`tests/m87-browser.test.mjs` §9 is rewritten: on a phone at rest the drawing is
+more than half the pane, the picture names something, and no drawn name is under
+eight pixels — with a record open and without one.
+
+### 2 — searching for the importer's words no longer matches every event (B2)
+
+`buildSearchIndex` took an event's `lead` from the summary as written, whose
+first sentence on an imported record is the importer's framing — *The English
+Wikipedia article "X", at revision N, opens:* — so `revision` matched 975 of the
+1,257 active events and `article` most of them. It reads
+`readSummary(summary).body` now, which is M86 §1's own split of the source's
+account from the note about the record's standing, and the one place that
+question is answered. `readSummary` also learned the second framing the curation
+fire wrote — the same opening with a verb other than `opens:`, three of the
+corpus's 993 imported events — so the article and the revision are the credit
+there too, and the card no longer opens with a revision number.
+
+And `terms` is deduplicated with a `Set`: a title that is also one of the
+record's names was three copies of one string, and three scans per keystroke per
+record.
+
+The test is pure and over the live corpus, deriving what it expects from it: for
+every active event whose summary is an imported one the entry's lead is that
+expression and holds neither *wikipedia article* nor *at revision*, and
+`search(entries, 'revision').total` is below the number of events whose body's
+first sentence holds the word, counted in the test. Only
+`data/index/search-*.json` and the manifest's name for it changed.
+
+### 3 — a landing on `m0` runs the suite once (B3)
+
+`validate.yml`'s push pattern becomes `m[1-9]*`, so `m0` — the branch every
+landing pushes before opening the pull request to `main` from it — is checked
+once, by that pull request, instead of twice on one tree.
+`tests/workflows.test.mjs` asserts the pattern's **meaning** and not its text: it
+must not match `m0` or `main`, and must match `m1`, `m42`, `m42b` and `m88`.
+
+The third validation per job stays, and the brief's own alternative is why: the
+`Validate records` step and the two pure tests that validate again are separate
+processes with no channel between them, so the tests cannot read the step's
+result.
+
+### 4 — the m53 test stops pinning the corpus's count (B4)
+
+`tests/m53.test.mjs` compared the four figures of `docs/m53-polities.md` §4.1
+against the corpus it ran on, so every batch of records on `m42` turned the check
+red on a document that was not wrong — it was measured at another size. The row
+says the size it was measured at now, and the test compares the figures only when
+that size is the corpus's own; otherwise it holds the two rules §4.1 counts by —
+the start-rule and overlap predicates, and the paragraph stating the gap between
+them — and says nothing about figures it cannot check.
+
+`tools/m53-retake.mjs` is the retake, so the records lanes and the landing script
+can re-measure the row rather than a person: pure row reading and writing, the
+measurement over the records, and `--write`. The test reads the row with the same
+functions, so the document and the test cannot come apart. Its fixture-document
+test holds both halves — a row at another size passes, a wrong figure at this
+size fails.
+
+### 5 — a shard already in hand is not a landing (B5)
+
+`askForShards` chained the landing callback for every shard asked for, and a
+shard already held answers at once: every nudge of the band and every click
+booked a second full redraw — the three pictures, the card, the chips, the intro,
+the composer — for an arrival that had already happened. It chains only the shards
+`loadedAttributeShards()` does not report. The ask itself stays, because it
+touches the LRU; it simply says nothing.
+
+And `window-control.js` keys its sentence on the shared render key, so
+`remeasure`'s four calls do not compute `countInView` — `workingSet`, and a whole
+arrangement on the graph — four times for one answer.
+
+### 6 — the map and the graph are groups, not images (B6)
+
+`role="img"` tells a screen reader that what is inside an element is one thing
+with one name and to skip it, and what is inside these two is every mark and
+every node, each a named button since the keyboard work. Both roots carry
+`role="group"` now — what the timeline has carried since M60 — with the names
+they already had. Nothing about either drawing moves.
+`tests/keyboard-browser.test.mjs` visits the three views, because the graph and
+the timeline are built the first time their view is asked for, and holds each
+root to `group` and to a name that is not empty.
+
+### 7 — the lens chips keep the keyboard's focus (B7)
+
+`render` rewrote the whole list on every state change, and the reader's own
+button was among the elements it replaced: pressing "all of these" with the
+keyboard toggled the lens and dropped the focus to the top of the document.
+
+Two halves, and the first is what makes the second rare. A render that would draw
+what is already on screen does nothing at all, so the notifications that change
+nothing about the chips — a band nudge, a category toggled, a century landing
+that names nothing here — never touch the focus. And what the keyboard was on is
+remembered by the attributes that **name** the control rather than by the
+element, and given back after the rewrite: the same control where it is still
+there, and otherwise the next chip's × and then the buttons belonging to the
+whole list, because a chip dropped by its own × is gone on purpose. The pattern
+is the graph's own since M83 (B5).
+
+### 8 — the panel is a region with one status line, not a live region (B8)
+
+`aria-live="polite"` on `#panel` made every drawing of the card an announcement
+of the whole card, from the top: the prose, the sections, the counts, the
+citations, and again on every shard that landed under it. It is `role="region"`
+with a name now — a landmark a reader goes to — and the announcement is one
+visually hidden `role="status"` line beside it, in the shape of the search box's
+count. It is outside `#panel` for the reason the sheet's grip is: the panel's
+markup is rewritten card by card and would take the line with it.
+
+`panel.js` writes it once per opened record, and **past `render`'s own loading
+gate**, which is the branch's first red and deviation 1426: until the century has
+landed the core's fallback for a title is the record's own id, so a line written
+before it said `Opened: carnation-revolution-1974` — and said it for good, since
+it is written once per record and the arrival that would have corrected it found
+the record already announced.
+
+### 9 — a band drag is one redraw per frame, and the timeline packs once (B9)
+
+`bindWindowGestures` called `setWindow` on every `pointermove`, and the store
+notifies synchronously: a drag across the pane was twenty full redraws of three
+pictures inside one frame's worth of pointer events. It books the patch per
+animation frame now — the last one wins, one `requestAnimationFrame` outstanding,
+flushed at `pointerup` so the gesture's own end is never a frame late. **The
+store's synchronous contract is untouched**; what is coalesced is this one
+caller's asking.
+
+And the timeline packed twice on every drawing: once M87's way, to learn how many
+rows the titles wanted, and again with the cap — two sweeps over the corpus on
+every move of the band, the second of which threw the title room away, which was
+a second reason titles collided past the cap. `packRows` reports whether the cap
+bound, so one pack answers both questions; `rowLanesPacked` is that answer and
+`rowLanes` is it with the flag dropped, so no other caller changed.
+
+Keeping the title room past the cap made the timeline draw titles the claim pass
+had been refusing, and one of them was written past the pane's edge — the review's
+own *"COVID-19 pander"* under another name, and deviation 1425. A title whose
+box would fall outside the pane is not drawn: `labelPlacement` moves it to the
+other side of its bar where that side has the room, and a bar that begins early
+and runs to the open end has room on neither, so it keeps its title under the
+pointer and nothing is written into the edge. A pane narrower than the name
+itself is left exactly as M86 §4 left it.
+
+### 10 — the browser harness can kill what it launched (B10)
+
+`tests/browser.mjs`'s `exit` handler reached its browsers through the promises
+`launched` holds, and `process.on('exit')` may not await anything: the `.then`
+was booked on a microtask queue that never runs again, so a file whose hooks
+never ran — a crash, a signal, a throw out of `before` — left a headless Chromium
+and its profile on the runner with nothing to reap them. A module-level `Set`,
+added to the moment a child is spawned and deleted in `shutDown`, is something
+the handler can walk synchronously.
+
+The profile directory is made with `mkdtempSync`, so nothing happens at all
+between `launch` being called and its child being in the set: an `await` there is
+a turn of the loop in which a signal could arrive with the browser spawned and
+not yet reachable. `tests/browser-harness.test.mjs` injects a `spawn` and holds
+the child to being in the set before `launch`'s first `await` resolves.
+
+### 11 — the degree control says why it is off, to everyone (B11)
+
+The degree floor is disabled under a lens and said so in a `title` and a colour,
+which is a reader with a pointer and eyes. A visually hidden
+`<span id="degree-off">` carries `DEGREE_OFF` while a lens is on and is empty at
+rest — empty rather than removed, because an `aria-describedby` pointing at
+nothing is a description nobody can read — and the select names it, so the reason
+is read out with the control it is about. The `title` stays, because it is what a
+pointer gets. `degreeOffText` and `degreeControlHtml` are pure, so what the
+control says is asserted in `tests/m88.test.mjs` without a browser.
+
+### 12 — the settle budget is read from the build, and the halo test measures two zooms (B12)
+
+`settledShards` waited a fixed ten seconds for every attribute shard to arrive,
+which was two corpora ago: how long the arrival takes is a fact about how much
+has to arrive, and the amount grows with the records. `manifestOf` stats the
+shard files the manifest names and the budget is ten seconds plus one per 200 KB
+— 15 s on this corpus, and a number the build states rather than one a test pins.
+A shard the manifest names and the disk has not is counted as nothing, which is
+also what the page will find. The failure says how long it waited as well as how
+far the page got, which is deviation 1427: M87's own test of that sentence
+pinned it to the end of the line.
+
+And `tests/graph-halo-browser.test.mjs` measured the halo at three zooms on one
+line, which is one fact read three times; it measures the world and zoom 6.
+
+### 13 — "reacted to" reads the right way round (part C, finding 3)
+
+The atlas's `reacted-to` runs **forward in time**: `A --reacted-to--> B` says *B
+answered A*, which is what rule 4 enforces and what deviation 1420 wrote down
+after four edges were first written on the sense of the English verb and refused
+by name. The link's card read the record left to right with the type's own label
+between its ends — `A reacted to → B` — which says the opposite of the record, on
+the one page whose whole job is to state the argument for a link.
+
+`reads` is a new field on `EDGE_TYPES`: what a card says **between the two ends
+of the record**, which is not always the label. It is `answered by` for
+`reacted-to` and the label itself for the other four, so one type changed and the
+vocabulary is still one closed list in one file. The test derives what it expects
+from the records rather than writing it down: for a `reacted-to` edge the
+reaction is the later event, so the card must name the earlier one first; nothing
+is pinned, and a corpus holding no active `reacted-to` edge at all makes the test
+say so rather than pass quietly.
+
+The two disputes a curation fire wrote from the card's old reading **stay
+`disputed` for the owner**: what was wrong is the sentence the card printed, not
+the records.
+
+### Noted, not done
+
+The review's three "not findings" were weighed as the brief asks.
+`performance.setResourceTimingBufferSize(2000)` in `watchErrors`'s injected
+script is one line and is in: the buffer holds 250 entries by default and a first
+paint on this corpus is past that, so a test counting requests by name was
+reading a window that had already closed. `deltaMode` on Firefox ESR and a
+`modulepreload` list derived from the import graph are left; the second is worth
+doing once first paint on Pages has been measured, and measuring it is not this
+milestone.
+
+### Deviations
+
+Lane A numbers on from M87, which ended at 1259; lane B's block stood at 1424
+when this branch was cut, so these begin above every number in `STATUS.md` and
+cannot collide backwards. A forward collision with a lane B fire is the landing
+routine's to renumber, by deviation 461's rule.
+
+1425. **A fix that makes a picture draw more uncovers what the picture was
+      hiding.** §9 kept the title room in the one pack that replaced two, and
+      the timeline drew titles the claim pass past the cap had happened to
+      refuse — among them one written off the right edge of the pane, which is
+      the fault M86 §4 was written to fix, met from the other direction and red
+      in M86's own browser test. `labelPlacement`'s last resort had always
+      allowed it, for a bar that begins to the left of the room its name needs
+      and ends near the pane's edge: a five-century event drawn across most of
+      the pane. Two sound changes, and the second was only sound because the
+      first was refusing the case.
+1426. **A line written once per record has to be written where the record can be
+      named.** §8's status line was written at the top of `render`, before the
+      gate that holds the card back until its century has landed, so it said the
+      record's id — and said it for good, since the arrival that would have
+      corrected it found the record already announced. "Once" and "as early as
+      possible" are not the same instruction.
+1427. **A test that asserts a failure's wording is a contract on the wording.**
+      M87 §5's test pinned `settledShards`' sentence to the end of the line with
+      `$`, so §12 adding how long it waited — which a reader of a red check
+      needs, to tell a slow runner from a page that never asked — turned that
+      test red on a message that had got better. The anchor is off the end of
+      the line now and what it asserts is unchanged.
+1428. **An hourly routine whose sections take longer than an hour will work
+      against itself.** This milestone was built by two fires of the same
+      schedule at once: both read `m88`, both implemented §§6 to 8, and the
+      second push won — the first fire's commits were never pushed and its work
+      was discarded in favour of what was on the branch, which is the protocol's
+      own rule ("never start over; read what is pushed"). Nothing was lost but
+      the time, and the measurements the discarded fire had taken are the ones
+      reported above. A claim line says a milestone is *started*; it does not say
+      a fire is *running*.
+</content>
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
