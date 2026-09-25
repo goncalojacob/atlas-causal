@@ -22703,14 +22703,16 @@ routine's to renumber, by deviation 461's rule.
       the line now and what it asserts is unchanged.
 1428. **An hourly routine whose sections take longer than an hour will work
       against itself.** This milestone was built by two fires of the same
-      schedule at once: both read `m88`, both implemented §§6 to 8, and the
-      second push won — the first fire's commits were never pushed and its work
-      was discarded in favour of what was on the branch, which is the protocol's
-      own rule ("never start over; read what is pushed"). Nothing was lost but
-      the time, and the measurements the discarded fire had taken are the ones
-      reported above. A claim line says a milestone is *started*; it does not say
-      a fire is *running*.
-</content>
+      schedule at once: both read `m88` and both worked the sections in order,
+      and what is on the branch is the first fire's thirteen sections with the
+      second fire's account of them written on top. Each discarded whatever of
+      its own the other had already pushed rather than rebasing it, which is
+      the protocol's own rule ("never start over; read what is pushed"): the
+      second fire's duplicate of §§6 to 8 went, and so did the first fire's
+      `STATUS.md` section, whose push was refused because this one was already
+      there. Nothing was lost but the time. A claim line says a milestone is
+      *started*; it does not say a fire is *running*, and an idempotent gate
+      cannot see the difference.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
