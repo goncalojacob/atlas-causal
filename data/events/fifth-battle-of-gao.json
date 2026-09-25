@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fifth-battle-of-gao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Filed under the Mali War from the item's own P361. Interval widened under A7 from the cited article at revision 1370618201, whose first sentence gives \"On March 23, 2013\": the item carries a P585 of 24 March alone, which its infobox repeats, so the start is the article's. Place by A9's second step (P276 Q188904, Gao), where four earlier records of this vein stand; the item's own P625 is that city's point to the digit. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q8578070",
+  "wikipedia": {
+    "en": "Fifth Battle of Gao"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8578070"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fifth Battle of Gao\", revision 1370618201"
+    }
+  ],
+  "title": "Fifth Battle of Gao",
+  "summary": "The English Wikipedia article \"Fifth Battle of Gao\", at revision 1370618201, opens: \"On March 23, 2013, a battle took place in Gao between MUJAO and Malian army. The Malian army repelled the attack.\" Wikidata item Q8578070, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-03-23",
+    "endDate": "2013-03-24"
+  },
+  "place": "gao",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

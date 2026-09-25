@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lachine-massacre--schenectady-massacre--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schenectady massacre\", revision 1370730424"
+    }
+  ],
+  "from": "lachine-massacre",
+  "to": "schenectady-massacre",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Schenectady article says so in one sentence: \"The French raid was in retaliation for the Lachine massacre, an attack by Haudenosaunee forces on a village in New France.\" Read in this direction the edge says what the article supports and no more — the February raid followed the August one and was made as an answer to it. The article carries citations of its own but the sentence is not footnoted to any work Wikipedia names, so Wikipedia is the only author here and the confidence stays probable.",
+  "dispute": null
+}

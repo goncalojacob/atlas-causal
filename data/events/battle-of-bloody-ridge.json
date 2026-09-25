@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-ridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Korean War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)). Of the participants the item's P710 gives — only the United States — the atlas holds the one, so it is the one line on the record (A12 (4))."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2035177",
+  "wikipedia": {
+    "en": "Battle of Bloody Ridge"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2035177"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649"
+    }
+  ],
+  "title": "Battle of Bloody Ridge",
+  "summary": "The English Wikipedia article \"Battle of Bloody Ridge\", at revision 1370434649, opens: \"The Battle of Bloody Ridge was a ground combat battle that took place during the Korean War from 18 August to 5 September 1951.\" Wikidata item Q2035177, whose own description reads \"1951 ground combat battle that took place during the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-08-18",
+    "endDate": "1951-09-05"
+  },
+  "place": "bloody-ridge",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "P710 on Q2035177; the article puts the U.S. 2nd Infantry Division at the head of the attack."
+    }
+  ]
+}

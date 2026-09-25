@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-lumumba-government",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Congo Crisis from the item's own P361. The interval is the item's, 5 September to 1 December 1960, and the article states the first of those dates in its first sentence. Place by A9's fourth step (P17 Q618399, the Republic of the Congo (Léopoldville), a place this atlas already holds at `country`): the item carries no P625, no P276 and no P131. `revolution` from the class Q45382, coup d'état. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q60775580",
+  "wikipedia": {
+    "en": "Dissolution of the Lumumba Government"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60775580"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dissolution of the Lumumba Government\", revision 1371883556"
+    }
+  ],
+  "title": "Dissolution of the Lumumba Government",
+  "summary": "The English Wikipedia article \"Dissolution of the Lumumba Government\", at revision 1371883556, opens: \"On 5 September 1960 President Joseph Kasa-Vubu of Congo-Léopoldville dismissed Prime Minister Patrice Lumumba from office, and six other members of his government... This sparked a major constitutional crisis, and led to a coup organized by Colonel Joseph-Désiré Mobutu.\" Wikidata item Q60775580, whose own description reads \"1960 dissolution of the government of Congo-Léopoldville\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1960,
+    "end": 1960,
+    "date": "1960-09-05",
+    "endDate": "1960-12-01"
+  },
+  "place": "republic-of-the-congo-leopoldville",
+  "region": null,
+  "regionNote": null,
+  "parent": "congo-crisis",
+  "category": "revolution",
+  "actors": []
+}

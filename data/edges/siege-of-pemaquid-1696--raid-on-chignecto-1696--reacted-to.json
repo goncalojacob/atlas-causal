@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-pemaquid-1696--raid-on-chignecto-1696--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Chignecto (1696)\", revision 1375097023"
+    }
+  ],
+  "from": "siege-of-pemaquid-1696",
+  "to": "raid-on-chignecto-1696",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Chignecto article says so in one sentence: \"The raid was in retaliation for the French and Indian Siege of Pemaquid (1696) at present day Bristol, Maine.\" It is the same answer the Fort Nashwaak siege was, by the same New England force under Church a month earlier, and the article states the reason rather than only the order. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

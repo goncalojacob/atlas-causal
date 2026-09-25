@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "second-mobutu-coup-detat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Congo Crisis from the item's own P361, which is also what the article's last lead sentence says the coup ended. The item's P585 and the article's first sentence give 25 November 1965 alike. Place by A9's fourth step (P17 Q974): the item carries no P625, no P276 and no P131. `revolution` from the class Q45382, coup d'état. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q125549056",
+  "wikipedia": {
+    "en": "Second Mobutu coup d'état"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125549056"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429"
+    }
+  ],
+  "title": "Second Mobutu coup d'état",
+  "summary": "The English Wikipedia article \"Second Mobutu coup d'état\", at revision 1371883429, opens: \"The second Mobutu coup d'état, launched on November 25, 1965, was a successful coup attempt in the Republic of the Congo (Léopoldville) by General Joseph Mobutu which overthrew President Joseph Kasa-Vubu and Prime Minister Evariste Kimba. The coup was caused by the political impasse between President Kasa-Vubu and Moïse Tshombe, which threatened to develop into a violent confrontation and destabilize the country even further.\" Wikidata item Q125549056, whose own description reads \"1965 coup in the Democratic Republic of the Congo\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1965,
+    "end": 1965,
+    "date": "1965-11-25"
+  },
+  "place": "democratic-republic-of-the-congo",
+  "region": null,
+  "regionNote": null,
+  "parent": "congo-crisis",
+  "category": "revolution",
+  "actors": []
+}

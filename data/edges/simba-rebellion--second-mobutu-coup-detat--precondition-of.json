@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "simba-rebellion--second-mobutu-coup-detat--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429, § Background and lead"
+    }
+  ],
+  "from": "simba-rebellion",
+  "to": "second-mobutu-coup-detat",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The coup article builds its whole background out of the rebellion and what putting it down cost: \"Desperate for military support, President Kasa-Vubu turned to former Katanga secessionist leader Moïse Tshombe for help, forming an alliance with him... This alliance, coupled with support from US and Belgian paratroopers, ultimately helped to crush the rebellion by late 1964. By 1965, with the Kwilu and Simba rebellions largely quelled, the alliance between Kasa-Vubu and Tshombe had outlived its usefulness... As a result, Kasa-Vubu moved to remove Tshombe from power, which led to a political split between the two.\" The lead names that split as the cause: \"The coup was caused by the political impasse between President Kasa-Vubu and Moïse Tshombe.\" Precondition-of and not caused, because the cause the article names is the impasse and the rebellion is what made the alliance that the impasse broke. Probable: Wikipedia alone (rule 22). Written from a record the atlas already held, under A5.",
+  "dispute": null
+}

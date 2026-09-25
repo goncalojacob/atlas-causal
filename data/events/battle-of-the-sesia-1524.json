@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-sesia-1524",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q642320",
+  "wikipedia": {
+    "en": "Battle of the Sesia (1524)",
+    "pt": "Batalha do Sesia"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q642320"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Sesia (1524)\", revision 1370602200"
+    }
+  ],
+  "title": "Battle of the Sesia (1524)",
+  "summary": "The English Wikipedia article \"Battle of the Sesia (1524)\", at revision 1370602200, opens: \"The Battle of the Sesia took place near the Sesia River (Latin: Sesites or Sessite), situated in north-western Italy, Lombardy, on 30 April 1524, where the Imperial–Spanish forces commanded by Don Carlos de Lannoy and Fernando d'Avalos, Marquis of Pescara decisively defeated the French army under the Admiral Guillaume Gouffier, Lord of Bonnivet and the Comte de Saint-Pol, during the Italian War of 1521–1526.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q642320, imported by tools/import/wikidata.mjs. The item's own description reads \"1524 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1524,
+    "date": "1524-04-30"
+  },
+  "place": "sesia",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-war-of-1521-1526",
+  "category": "war",
+  "actors": []
+}

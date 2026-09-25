@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mohawk-valley-raid--great-peace-of-montreal--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mohawk Valley raid\", revision 1370719124"
+    }
+  ],
+  "from": "mohawk-valley-raid",
+  "to": "great-peace-of-montreal",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article states the consequence in its own words: \"The Mohawk were seriously weakened as a military force within the Iroquois league, and the raid's effects contributed to the 1701 peace negotiated between the Iroquois, French, and many other tribes.\" Precondition-of and not caused: the article says the raid contributed to the peace, not that it brought it about, and nine years and several other actions stand between them. Wikipedia is the only author named, so probable.",
+  "dispute": null
+}

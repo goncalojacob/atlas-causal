@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sorel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q16208744",
+  "wikipedia": {
+    "en": "Battle of Sorel"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16208744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sorel\", revision 1370589713"
+    }
+  ],
+  "title": "Battle of Sorel",
+  "summary": "The English Wikipedia article \"Battle of Sorel\", at revision 1370589713, opens: \"The Battle of Sorel occurred on June 19, 1610, with Samuel de Champlain supported by the Kingdom of France and his allies, the Wendat (Huron), Algonquin people, and Innu (Montagnais) that fought against the Mohawk people in New France at present-day Sorel-Tracy, Quebec. The forces of Champlain armed with the arquebus engaged and killed or captured nearly all of the Mohawks. The battle ended major hostilities with the Mohawks for twenty years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16208744, imported by tools/import/wikidata.mjs. The item's own description reads \"1610 battle during the Beaver Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1610,
+    "end": 1610,
+    "date": "1610-06-19"
+  },
+  "place": "sorel-tracy",
+  "region": null,
+  "regionNote": null,
+  "parent": "beaver-wars",
+  "category": "war",
+  "actors": []
+}

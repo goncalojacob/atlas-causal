@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-pemaquid-1696--siege-of-fort-nashwaak--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
+    }
+  ],
+  "from": "siege-of-pemaquid-1696",
+  "to": "siege-of-fort-nashwaak",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Fort Nashwaak article says so in one sentence: \"The siege was in retaliation for the French and Indian Siege of Pemaquid (1696) in the English Province of Massachusetts Bay.\" Two months separate them and the article gives the first as the reason for the second, which is what reacted-to is for. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

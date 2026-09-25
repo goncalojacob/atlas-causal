@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "york-maine",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2323126",
+  "wikipedia": {
+    "en": "York, Maine"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "York",
+    "York, Maine"
+  ],
+  "where": {
+    "lon": -70.648611111111,
+    "lat": 43.163333333333,
+    "precision": "city",
+    "label": "York, Maine"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q2323126, imported by tools/import/wikidata.mjs. The item's own description reads \"town in York County, Maine, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

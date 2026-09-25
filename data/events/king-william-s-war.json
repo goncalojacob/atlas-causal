@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "king-william-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1070342",
+  "wikipedia": {
+    "en": "King William's War"
+  },
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1070342"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"King William's War\", revision 1375172085"
+    }
+  ],
+  "title": "King William's War",
+  "summary": "The English Wikipedia article \"King William's War\", at revision 1375172085, opens: \"King William's War was the North American theater of the Nine Years' War (1688–1697). It was the first of six colonial wars fought between New France and New England along with their respective Native allies before France ceded its remaining mainland territories in North America east of the Mississippi River in 1763. \nIt is also known as the Second Indian War, Father Baudoin's War, Castin's War,  the Mournful Decade, or the First Intercolonial War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1070342, imported by tools/import/wikidata.mjs. The item's own description reads \"North American theater of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1697,
+    "date": "1688-04",
+    "endDate": "1697-09-20"
+  },
+  "place": "north-america",
+  "region": null,
+  "regionNote": null,
+  "parent": "american-indian-wars",
+  "category": "war",
+  "actors": []
+}

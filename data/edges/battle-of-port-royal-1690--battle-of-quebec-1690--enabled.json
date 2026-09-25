@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-port-royal-1690--battle-of-quebec-1690--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
+    }
+  ],
+  "from": "battle-of-port-royal-1690",
+  "to": "battle-of-quebec-1690",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Quebec article says so in one sentence: \"Following the capture of Port Royal in Acadia, during King William's War, the New Englanders hoped to seize Quebec City itself, the capital of New France.\" The capture in May is what put the capital within reach and is what the expedition of October was raised on; the article states the sequence as a reason and not only as an order, and the edge says that and no more. The sentence is not footnoted to any work Wikipedia names, so Wikipedia is the only author and the confidence stays probable.",
+  "dispute": null
+}

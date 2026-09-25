@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-noain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2889540",
+  "wikipedia": {
+    "en": "Battle of Noáin",
+    "pt": "Batalha de Esquiroz"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889540"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Noáin\", revision 1375299067"
+    }
+  ],
+  "title": "Battle of Noáin",
+  "summary": "The English Wikipedia article \"Battle of Noáin\", at revision 1375299067, opens: \"The Battle of Noáin or the Battle of Esquiroz, fought on 30 June 1521 was the only open field battle in the Spanish conquest of Iberian Navarre. It was a decisive victory for the Spanish against the Franco-Navarrese army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889540, imported by tools/import/wikidata.mjs. The item's own description reads \"1521 battle during the Spanish conquest of Iberian Navarre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-06-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": [
+    "italian-war-of-1521-1526",
+    "spanish-conquest-of-iberian-navarre"
+  ],
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hudson-bay",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3040",
+  "wikipedia": {
+    "en": "Hudson Bay",
+    "pt": "Baía de Hudson"
+  },
+  "sitelinks": {
+    "count": 104,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Hudson Bay",
+    "Baía de Hudson"
+  ],
+  "where": {
+    "lon": -85,
+    "lat": 60,
+    "precision": "region",
+    "label": "Hudson Bay"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q3040, imported by tools/import/wikidata.mjs. The item's own description reads \"large body of saltwater in northeastern Canada that drains much of north-central North America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

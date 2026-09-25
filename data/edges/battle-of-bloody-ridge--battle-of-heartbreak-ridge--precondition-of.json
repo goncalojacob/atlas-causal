@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-ridge--battle-of-heartbreak-ridge--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649, § Aftermath"
+    }
+  ],
+  "from": "battle-of-bloody-ridge",
+  "to": "battle-of-heartbreak-ridge",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Both articles state it in the same words, and it is a claim about ground and not a date: the Heartbreak Ridge lead reads \"After withdrawing from Bloody Ridge, the Korean People's Army (KPA) set up new positions just 1,500 yards (1,400 m) away on a 7-mile (11 km) long hill mass. If anything, these defenses were even more formidable than on Bloody Ridge.\" The Bloody Ridge article closes on the same sentence, naming what the hill mass \"was soon to earn the name\" of. Precondition and not cause: the loss of the first ridge is why the second was held and fought over, and neither article says the first battle caused the second to be fought. Probable: Wikipedia alone, and the two citations are the same encyclopaedia.",
+  "dispute": null
+}

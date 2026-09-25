@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "naval-battle-off-st-john-1696",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2890597",
+  "wikipedia": {
+    "en": "Naval battle off St. John (1696)"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890597"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naval battle off St. John (1696)\", revision 1375237879"
+    }
+  ],
+  "title": "Naval battle off St. John (1696)",
+  "summary": "The English Wikipedia article \"Naval battle off St. John (1696)\", at revision 1375237879, opens: \"The Naval battle off St. John took place on July 14, 1696, between France and England toward the end of King William's War in the Bay of Fundy off present-day Saint John, New Brunswick. The English ships were sent from Boston to interrupt the supplies being taken by French officer Pierre Le Moyne d'Iberville from Quebec to the capital of Acadia, Fort Nashwaak on the Saint John River. The French ships of war Envieux and Profond captured the English frigate Newport, while the English frigate Sorlings and a provincial tender escaped.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890597, imported by tools/import/wikidata.mjs. The item's own description reads \"1696 battle of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1696,
+    "end": 1696,
+    "date": "1696-07-14"
+  },
+  "place": "bay-of-fundy",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

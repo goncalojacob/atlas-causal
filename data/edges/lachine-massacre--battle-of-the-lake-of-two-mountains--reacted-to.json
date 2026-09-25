@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lachine-massacre--battle-of-the-lake-of-two-mountains--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Lake of Two Mountains\", revision 1370600653"
+    }
+  ],
+  "from": "lachine-massacre",
+  "to": "battle-of-the-lake-of-two-mountains",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article opens on the connection: \"The battle occurred in response to the Lachine massacre of August 1689. In October, Governor General of New France, the Marquis de Denonville dispatched a scouting party of 28 coureur des bois … to search for Haudenosaunee warriors that posed a threat to residents on the Island of Montreal.\" The scouting party is what the massacre produced; the skirmish is what the party found. Wikipedia is the only author named, so probable.",
+  "dispute": null
+}

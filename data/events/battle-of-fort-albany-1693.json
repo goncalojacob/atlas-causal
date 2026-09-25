@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-albany-1693",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4871031",
+  "wikipedia": {
+    "en": "Battle of Fort Albany (1693)"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871031"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
+    }
+  ],
+  "title": "Battle of Fort Albany (1693)",
+  "summary": "The English Wikipedia article \"Battle of Fort Albany (1693)\", at revision 1366221219, opens: \"The Battle of Fort Albany in 1693 was the successful recapture by English forces of the Hudson's Bay Company trading outpost at Fort Albany in the southern reaches of Hudson Bay. The fort, captured by a French expedition in 1686 and held by them in a battle the next year, was briefly defended by five Frenchmen, who then abandoned the fort and its stockpile of furs to a four-ship English fleet commanded by James Knight.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871031, imported by tools/import/wikidata.mjs. The item's own description reads \"1693 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1693,
+    "end": 1693
+  },
+  "place": "fort-albany-first-nation",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}
