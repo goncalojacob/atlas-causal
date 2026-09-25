@@ -11738,7 +11738,7 @@ Deviation 1450's ranking, re-taken after batch 59, and then asked of Asia alone:
 | --- | --- | --- | --- |
 | `Q159950` Russo-Japanese War | **15 of 15** | 5 | 5 |
 | `Q8740` Vietnam War | 10 of 19 | 286 | 271 |
-| `Q8663` Korean War | 0 of 13 | 92 | 88 |
+| `Q8663` Korean War | **0 of 21** | 92 | 88 |
 
 **`Q159950` is the only vein in this atlas with no held record outside the
 component**: all fifteen of the records batches 47 and 49 wrote are inside the
@@ -11958,7 +11958,8 @@ vocabulary either.*
   answered.
 - **C8 is still the largest thing standing between this atlas and the chains the
   owner asked for**, and deviation 1450's table now measures its cost exactly: the
-  Korean War vein reads **0 of 13 inside the component**. One edge `korean-war` →
+  Korean War vein reads **0 of 21 inside the component** — twenty-one records held
+  and not one of them in the 682, the largest of them the thirteen batch 53 wrote. One edge `korean-war` →
   `first-battle-of-seoul` would join eighteen.
 - **`reacted-to` reads backwards on the card, on all 63 of them** (deviation 1443).
   One word, a display change, and every reader of one of those cards is told the
