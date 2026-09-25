@@ -9716,79 +9716,85 @@ make the question askable; today it is only askable by whoever remembers.
 
 ## Where the run stands, for the fire that picks it up
 
-*25 September, after the thirty-third fire: the merge of M42's batches 57 to 61,
-and batch 35.*
+*25 September, after the thirty-fourth fire: deviation 1330 discharged, and batch
+36.*
 
 | | |
 | --- | --- |
-| corpus | **1,255 active** (1,209 when this fire started, 1,221 after the merge) |
+| corpus | **1,270 active** (1,255 when this fire started, 1,257 after the merge) |
 | **main** | **240** — unchanged, and unchanged by this batch |
-| **largest connected component** | **705** (690 after the merge) |
-| components | 395 |
-| events with no edge at all | 314 |
-| Europe before 1900 | **256 active, 18 main** |
-| the `americas` lane | **343 active, 56 main** |
-| south and central America against north, inside that lane | **223 to 55**, with 65 placeless, measured at the Tropic of Cancer |
-| the thinnest cells left, in this partition | the Americas' 15th (7, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 21st (37, 1)**, the Americas' 16th (42, 3), Europe's 16th (44, 1), the Americas' 19th (44, 8), the Americas' 18th (55, 2), Europe's 18th (61, 3), the Americas' 17th (69, 7), Europe's 17th (109, 3) |
-| the cells this fire moved | **the Americas' 18th, 34 → 55**; **Europe's 18th, 48 → 61** |
+| **largest connected component** | **707** — unchanged by this batch |
+| components | 405 |
+| events with no edge at all | 322 |
+| Europe before 1900 | **257 active, 18 main** |
+| the `americas` lane | **355 active, 56 main** |
+| south and central America against north, inside that lane | **231 to 54**, with 70 placeless, measured at the Tropic of Cancer |
+| the thinnest cells left, in this partition | the Americas' 15th (5, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 21st (40, 1)**, Europe's 19th (39, 9), the Americas' 16th (44, 5), Europe's 16th (44, 1), the Americas' 18th (55, 2), the Americas' 19th (56, 8), Europe's 18th (61, 3), the Americas' 17th (69, 7), Europe's 17th (109, 3) |
+| the cells this fire moved | **the Americas' 19th, 44 → 56**; Europe's 19th, 38 → 39 |
 
-**Three things happened in this fire, in this order.** `origin/m42` was merged,
-which brought its batches 57 to 61 and the corrected import rules its passes
-wrote; the index was dropped and rebuilt from the union. Then batch 35 took the
-Americas' eighteenth century and read the American Revolutionary War's Caribbean
-and European theatres. Then **deviation 1331 was discharged in the same fire**,
-because the batch had just paid for it: the import files under an umbrella it
-wrote itself from now on. Deviations **1328 to 1332**.
+**Two things happened in this fire.** Deviation 1330 was discharged — the cap
+measured first, from the items, as the deviation insisted — and batch 36 took the
+Spanish American wars of independence for the Americas' nineteenth century. Both
+are written up above. Deviations **1333 to 1335**.
 
 **The next fire's moves, in order.**
 
-1. **The place pass on records that already exist, and it is now overdue.** The
-   last fire named this first and it is still first: **314 events have no edge
-   and 65 of the Americas' are placeless**, seventeen of them added by this
-   batch. The import fills `place` only when it creates a record.
-   **Deviation 1330 is the second half of the same job**: before the pass runs,
-   `P17` has to stop being a place for an event whose own point is far from the
-   country's, or the pass will write France onto Caribbean actions at scale
-   rather than one at a time. Do 1330 first, then the pass.
-2. ~~Deviation 1331's second filing pass~~ — **done in this fire**, tests
-   first and proved on the two records that asked for it. The next batch that
-   imports a war and its children together files both without a hand.
-3. **The Americas' twenty-first century is now the thinnest unblocked cell**
-   at 37 and 1, then the Americas' sixteenth at 42 and 3 and Europe's sixteenth
-   at 44 and 1. The Americas' eighteenth is no longer thin, and the North
-   American half of the American Revolutionary War — two hundred children of a
-   held umbrella, every one of them filing for free — is what will fill it when
-   the lane's two halves are level. **They are not: 223 to 55.** Read the vein
-   as measured, not as available.
-4. **Deviation 1318's duplicate check is still a habit and not a script.** This
-   fire found no duplicate, but it checked by hand again, over thirty-four
-   records. The three signals have not changed: the folded title, the
-   overlapping span, the article the lead cache resolved to.
-5. **Two questions for the owner, both asked before and both unanswered.**
-   **C8 and the parent-to-child edge**: the cost is now the Thirty Years' War's
-   thirteen records *and* this batch's two. **Deviation 1323**: A9's last step
-   cannot be taken, because a country is an `actor` in the class table and the
-   `country` precision has no row that could ask for it.
-6. **The Italian Wars' eighteen remaining children** still want the reading three
+1. **Read "The veins, measured properly" before choosing anything.** It is the
+   most useful thing this fire produced and it contradicts the last three fires'
+   standing advice. In particular: **the Americas' 21st century is not blocked**
+   — `covid-19-pandemic-in-brazil` holds 175 unimported children and three more
+   pandemic umbrellas hold 146 between them, every one of them a child of a held
+   record. Three fires have written that there is nothing to put in that cell.
+   There is; whether 175 pandemic-by-country records are what a thin cell wants
+   is an editorial question, and it is the owner's.
+2. **The place pass on records that already exist is still not done, and it is
+   now unblocked.** Deviation 1330 was its stated prerequisite and it is
+   discharged: `P17` can no longer put a Caribbean action in Europe, and the
+   guard is tested at both call sites. **128 active events are placeless, 70 of
+   them in the `americas` lane** — three more added by this batch, all three
+   reported as `ownPoint` cases, which are the ones a person names. The pass
+   itself is over the rest.
+3. **Deviation 1334's duplicate script, which is twenty lines.** Two active
+   events with the same place and the same start and end are a duplicate or a
+   pair that needs a sentence. The check has been a habit for thirteen batches
+   and found its one duplicate by accident, through rule 4 refusing an edge.
+   The two columns it needs are in the core index already.
+4. **The Americas' 19th is no longer the thin cell but it is the deep vein**:
+   230 unimported children under the seven held wars of independence, of which
+   this batch took 14. `mexican-war-of-independence` is the richest at 54 and has
+   never been worked.
+5. **Three questions for the owner, all asked before and all unanswered.**
+   **C8 and the parent-to-child edge**: this batch is the third fire to report
+   the same cost in the same words — the five records its edges joined are a
+   cluster of five and not part of the 707, because the one edge that would
+   bridge them runs from `spanish-american-wars-of-independence` to its own
+   child. **Deviation 1323**: A9's last step cannot be taken, because a country
+   is an `actor` in the class table and the `country` precision has no row that
+   could ask for it. And **`soviet-japanese-border-conflicts`**, new here: it is
+   filed in Japan and was fought on the Manchurian border, it is the second
+   record deviation 1330's measurement names, and it is M42's in M42's lane, so
+   this branch measured it and left it (deviation 1332).
+6. **The Italian Wars' eighteen remaining children** still want the reading four
    fires have now deferred, and still cost no main; the thirty-first fire's
-   section lists every one by name.
-7. **The Nine Years' War, `Q152218` — question 11, unanswered for a fifth fire.**
+   section lists every one by name. **The Nine Years' War, `Q152218`** — question
+   11, unanswered for a sixth fire.
 
-**The check, on this fire's heads.** Runs 1859, 1861 and 1862 were each
-**cancelled** by the push that followed them, which is this branch's normal
-shape when a fire pushes four times in twenty minutes and not a failure.
-**Run 1866, on `b3d0ad7d`, concluded success**, and that head carries the merge,
-batch 35, both correspondence re-takes and the deviation-1331 fix. Nothing this
-fire pushed was ever red.
+**The check, on this fire's heads.** **Run 1891, on `ff9212b9`, concluded
+success** — that head carries the deviation-1330 guard, its two tests and the five
+records it corrects. Run 1876 was **cancelled** by the push that followed it,
+which is this branch's normal shape and not a failure. Run 1901, on `7f48dc30`,
+carries batch 36.
 
-Locally, on that head, the two halves were run **one after the other and not at
-once**, as the branch's own note advises: **1,835 pure and 295 browser, 2,130
-passing, nothing failed and nothing skipped**, and `node tools/validate.mjs
+Locally, on the batch-36 head, the two halves were run **one after the other and
+not at once**, as the branch's own note advises: **1,837 pure and 295 browser,
+2,132 passing, nothing failed and nothing skipped**, and `node tools/validate.mjs
 --index` **clean at 0 errors** on the pushed index, byte-identical to a fresh
-build. One local failure was seen and discarded on purpose: a suite started
-before the deviation-1331 edits reported rule 16 against an index that had since
-been rebuilt. **A test run started mid-edit reports the edit, not a defect** —
-re-run it on the committed head before believing it.
+build. **One real failure was met and fixed, not discarded**: `docs/m53-polities.md`
+§4.1's total was 1,257 and the corpus was 1,270, and a test holds the document to
+the corpus. Re-taken. The other three figures in that row are unchanged, because
+none of the fourteen new events names an actor — which is why only one number
+moved, and why deviation 1328's advice not to re-run that count wholesale still
+stands.
 
 **Read this head's run before doing anything else**; if it is red, read the
 failure, because the check has been honest since M63 and it is not load.

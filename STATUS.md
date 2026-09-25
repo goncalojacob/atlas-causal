@@ -21992,6 +21992,65 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b — deviation 1330 discharged, and batch 36: the Spanish American wars of
+independence and the Americas' nineteenth century, 25 September.** The
+thirty-fourth fire merged `origin/m0` (three commits) and `origin/m42` (its batch
+62 and a merge), the first cleanly and the second only in `STATUS.md`'s claim
+lines, and rebuilt the index from the union. **Deviation 1330 was then discharged
+the way it insisted on**: the cap was measured before it was written, from the
+items and not the records, because a record does not keep the `P625` its item
+gave. One SPARQL pass over the 1,101 items of the events an import created gives
+568 pairs carrying both the item's own point and the point of a country its `P17`
+names; the distribution over all of them decides nothing, because the guard can
+only fire where the chain fell through to `P17`, and over exactly those **41**
+events the distances have one gap — 39 at 8.6° or less, nothing at all to 21.6°,
+then two, then the four actions the deviation was written about at 70° and more.
+**`COUNTRY_AS_PLACE_DEGREES = 15`** is the round number in that band.
+`countryIsLastResort` guards the `P17` step alone and is asked at both places the
+chain can take a country, the candidate and the reuse at the head of the loop;
+**tests first (711, 717), both run against the guard stubbed out and both fail**.
+`raid-on-oyster-river` is corrected placeless in the `americas` lane — its own
+cited lead says Durham, New Hampshire and it was filed at the centroid of the
+United States — and `soviet-japanese-border-conflicts`, the same defect, is
+**measured and left**, because it is M42's record in M42's lane (deviation 1332).
+**Batch 36 then took the Americas' nineteenth century**, at 44 active and 8 main,
+by a change of method: **one SPARQL query over the held records of this partition
+that carry an item**, asking which of their children Wikidata has and this atlas
+does not, which ruled out the two veins a reading would have chosen first.
+**Fourteen events and five places created, nothing refused**; every one of the
+fourteen carries `P361` to a war this atlas holds, so every one filed itself and
+**the main count does not move, 240 before and 240 after**, six of them under the
+nearer umbrella by deviation 1316's reduction. `second-battle-of-la-puerta` was
+refiled by hand under `venezuelan-war-of-independence` (A3, A6, A8). **Two class
+rows added, read off the class items over the network**: `Q1168287` intervention
+and `Q2112892` pronunciamiento, each taking its own parent class's category.
+**Three edges, all `probable`, each citing two articles**, and all six revisions
+cited were checked against the live articles and match the cached leads exactly.
+**Two more were written and refused by rule 4, and both refusals were right**:
+the siege of Callao opened four days before Ayacucho, so Ayacucho is why it lasted
+and not why it began; and the edge into `independence-of-bolivia` was refused for
+a target dated sixteen years before the battle meant to precede it — **which found
+the duplicate**. `independence-of-bolivia` (`Q5915146`) and
+`bolivian-war-of-independence` (`Q68475`) are the same war under two items,
+identical in dates, place and umbrella, and the bare item has no article in any
+language; merged into the richer record in M21's shape. **The largest component
+does not move, 707 to 707, and the batch says why**: the five records its edges
+join were every one edgeless before it, and the edge that would bridge them to the
+707 runs from `spanish-american-wars-of-independence` to its own child, which A14
+forbids — the third fire to report the same cost in the same words.
+`docs/m53-polities.md` §4.1's total is re-taken at **403 of 1270**, the other
+three figures in the row unchanged because none of the fourteen names an actor.
+The corpus is **1,270 active**, main **240**, Europe before 1900 **257**, the
+`americas` lane **355**, and the cell moved **44 → 56**. Deviations **1333** (a
+lane is not on the record: this fire's own vein query read `event.region` and
+`place.region`, neither of which is usually there, so it asked about 157 of the
+556 held items of this partition; re-run off `data/index/` it names veins the
+first run could not see, **including 175 unimported children under
+`covid-19-pandemic-in-brazil` in the Americas' 21st, the cell three fires have
+called unfillable**, and 230 under the seven held wars of independence) to
+**1335**. `docs/m42b-pool.md` → "Batch 36", "Deviation 1330, discharged" and
+"The veins, measured properly" are the full account.
+
 **M42b batch 23 — the War of the League of Cambrai's nine unimported children,
 and Europe's sixteenth century, 24 September.** The twenty-third fire merged
 `origin/m0` (eighteen commits, M87) and `origin/m42` (six, its batch 49) before
