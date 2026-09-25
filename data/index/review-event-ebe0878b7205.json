@@ -6056,6 +6056,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-25",
+      "id": "batalla-de-la-florida",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "argentine-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Batalla de La Florida"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -6511,6 +6540,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "battle-of-ayacucho",
       "kind": "event",
       "origin": {
@@ -7282,6 +7312,36 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-cerro-de-pasco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cerro de Pasco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata",
         "wikipedia-en"
       ],
@@ -7403,6 +7463,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chemulpo Bay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-chimbo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chimbo"
     },
     {
       "authors": [
@@ -8986,6 +9076,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "battle-of-ibarra-1812",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ibarra (1812)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "id": "battle-of-ica",
       "kind": "event",
@@ -9230,6 +9351,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "battle-of-junin",
       "kind": "event",
       "origin": {
@@ -10686,6 +10808,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-mocha",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mocha"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -10783,6 +10935,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Montemurlo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-moquegua",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Moquegua"
     },
     {
       "authors": [
@@ -14191,6 +14375,39 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-torata",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Torata"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "id": "battle-of-tornavento",
       "kind": "event",
       "origin": {
@@ -14407,6 +14624,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Tucumán"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-tumusla",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "bolivian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tumusla"
     },
     {
       "authors": [
@@ -16267,6 +16516,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "British expedition to Tibet"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "british-intervention-in-spanish-american-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "British intervention in Spanish American independence"
     },
     {
       "authors": [
@@ -26631,6 +26911,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "los-andes-vs-prueba",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Los Andes vs Prueba"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -30732,6 +31044,36 @@
       ],
       "category": "revolution",
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-09-25",
+      "id": "pronunciamiento-of-riego",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-american-wars-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pronunciamiento of Riego"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
         "wikidata",
         "wikipedia-en"
       ],
@@ -32724,6 +33066,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "second-battle-of-la-puerta",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "venezuelan-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of La Puerta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -33268,6 +33642,38 @@
       "revised": null,
       "status": "active",
       "title": "Second Mobutu coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "second-siege-of-callao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "peruvian-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second siege of Callao"
     },
     {
       "authors": [
@@ -42373,6 +42779,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "batalla-de-la-florida",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "batalla-de-la-florida",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-in-the-bay-of-sao-salvador",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -42386,12 +42804,6 @@
     },
     {
       "id": "battle-of-ap-bac",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-ayacucho",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -42463,10 +42875,34 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cerro-de-pasco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cerro-de-pasco",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "battle-of-chedabucto",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-chimbo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-chimbo",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-chotusitz",
@@ -42637,6 +43073,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ibarra-1812",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ica",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -42650,12 +43092,6 @@
     },
     {
       "id": "battle-of-jean-rabel",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-junin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -42773,6 +43209,18 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-mocha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-mocha",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-mount-harriet",
@@ -43165,6 +43613,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "british-intervention-in-spanish-american-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bundner-wirren",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -43513,6 +43967,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "los-andes-vs-prueba",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -43657,6 +44117,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "pronunciamiento-of-riego",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "pronunciamiento-of-riego",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "pueblo-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -43754,6 +44226,18 @@
     },
     {
       "id": "scramble-for-africa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-battle-of-la-puerta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-siege-of-callao",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

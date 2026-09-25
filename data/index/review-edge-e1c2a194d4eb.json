@@ -4377,6 +4377,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "battle-of-ayacucho",
+      "id": "battle-of-ayacucho--battle-of-tumusla--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-tumusla",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "battle-of-bailen",
       "id": "battle-of-bailen--battle-of-corunna--precondition-of",
@@ -5180,6 +5208,34 @@
       "status": "active",
       "to": "second-battle-of-seoul",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-junin",
+      "id": "battle-of-junin--battle-of-ayacucho--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-ayacucho",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -7403,6 +7459,34 @@
       "status": "active",
       "to": "second-battle-of-timbuktu",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-torata",
+      "id": "battle-of-torata--battle-of-moquegua--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-moquegua",
+      "type": "caused"
     },
     {
       "authors": [

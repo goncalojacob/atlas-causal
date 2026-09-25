@@ -2605,6 +2605,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "cabo-manglares",
+      "kind": "place",
+      "names": [
+        "Cabo Manglares"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "cadiz",
@@ -2650,6 +2677,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "callao",
+      "kind": "place",
+      "names": [
+        "Callao",
+        "El Callao"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -4209,6 +4264,66 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "department-of-moquegua",
+      "kind": "place",
+      "names": [
+        "Moquegua Department",
+        "Departamento de Moquegua",
+        "Department of Moquegua",
+        "Moquegua (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "department-of-pasco",
+      "kind": "place",
+      "names": [
+        "Pasco Department",
+        "Pasco",
+        "Department of Pasco",
+        "Pasco (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "dessau-ro-lau",
@@ -4762,7 +4877,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 4,
       "id": "ecuador-q736",
       "kind": "place",
       "names": [
@@ -9255,6 +9370,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "las-cabezas-de-san-juan",
+      "kind": "place",
+      "names": [
+        "Las Cabezas de San Juan"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -18684,7 +18826,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "venezuela-q717",
       "kind": "place",
       "names": [
@@ -20140,6 +20282,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "cabo-manglares",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "callao",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "casaloldo",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -20201,6 +20355,18 @@
     },
     {
       "id": "demmin",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "department-of-moquegua",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "department-of-pasco",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -20507,6 +20673,12 @@
     },
     {
       "id": "landriano",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "las-cabezas-de-san-juan",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

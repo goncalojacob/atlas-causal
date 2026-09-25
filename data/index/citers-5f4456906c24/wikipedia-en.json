@@ -2048,6 +2048,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ayacucho--battle-of-tumusla--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Aftermath, on Sucre in Upper Peru"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ayacucho--battle-of-tumusla--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tumusla\", revision 1366246828, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bailen--battle-of-corunna--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Corunna\", revision 1370437705, § Prelude"
@@ -2237,6 +2249,18 @@
       "id": "battle-of-inchon--second-battle-of-seoul--caused",
       "kind": "edge",
       "locator": "\"Battle of Inchon\", revision 1370266029, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-junin--battle-of-ayacucho--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Background and § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-junin--battle-of-ayacucho--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Junín\", revision 1370266471, lead"
     },
     {
       "dissent": false,
@@ -2777,6 +2801,18 @@
       "id": "battle-of-timbuktu--second-battle-of-timbuktu--precondition-of",
       "kind": "edge",
       "locator": "\"Second Battle of Timbuktu\", revision 1370736664, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-torata--battle-of-moquegua--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-torata--battle-of-moquegua--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Torata\", revision 1370591244, lead"
     },
     {
       "dissent": false,
@@ -9668,6 +9704,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ibarra-1812",
+      "kind": "event",
+      "locator": "\"Battle of Ibarra (1812)\", revision 1370443500"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ica",
       "kind": "event",
       "locator": "\"Battle of Ica\", revision 1370443527"
@@ -9989,6 +10031,12 @@
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-moquegua",
+      "kind": "event",
+      "locator": "\"Battle of Moquegua\", revision 1370450463"
     },
     {
       "dissent": false,
@@ -10610,6 +10658,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-torata",
+      "kind": "event",
+      "locator": "\"Battle of Torata\", revision 1370591244"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "\"Battle of Tornavento\", revision 1373646333"
@@ -10649,6 +10703,12 @@
       "id": "battle-of-tucuman",
       "kind": "event",
       "locator": "\"Battle of Tucumán\", revision 1370275835"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tumusla",
+      "kind": "event",
+      "locator": "\"Battle of Tumusla\", revision 1366246828"
     },
     {
       "dissent": false,
@@ -10973,6 +11033,12 @@
       "id": "british-expedition-to-tibet",
       "kind": "event",
       "locator": "\"British expedition to Tibet\", revision 1370606386"
+    },
+    {
+      "dissent": false,
+      "id": "british-intervention-in-spanish-american-independence",
+      "kind": "event",
+      "locator": "\"British intervention in Spanish American independence\", revision 1366734765"
     },
     {
       "dissent": false,
@@ -12620,6 +12686,12 @@
     },
     {
       "dissent": false,
+      "id": "los-andes-vs-prueba",
+      "kind": "event",
+      "locator": "\"Los Andes vs Prueba\", revision 1370627114"
+    },
+    {
+      "dissent": false,
       "id": "louvre-accord",
       "kind": "event",
       "locator": "\"Louvre Accord\", revision 1325248410"
@@ -13604,6 +13676,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-la-puerta",
+      "kind": "event",
+      "locator": "\"Second Battle of La Puerta\", revision 1370736349"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-menaka",
       "kind": "event",
       "locator": "\"Second Battle of Ménaka\", revision 1370736445"
@@ -13691,6 +13769,12 @@
       "id": "second-mobutu-coup-detat",
       "kind": "event",
       "locator": "\"Second Mobutu coup d'état\", revision 1371883429"
+    },
+    {
+      "dissent": false,
+      "id": "second-siege-of-callao",
+      "kind": "event",
+      "locator": "\"Second siege of Callao\", revision 1375623058"
     },
     {
       "dissent": false,

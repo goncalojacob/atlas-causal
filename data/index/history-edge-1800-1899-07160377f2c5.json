@@ -56,6 +56,15 @@
         }
       ]
     },
+    "battle-of-ayacucho--battle-of-tumusla--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-bailen--battle-of-corunna--precondition-of": {
       "from": "git",
       "versions": [
@@ -80,6 +89,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-junin--battle-of-ayacucho--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -125,6 +143,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-torata--battle-of-moquegua--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

@@ -1168,6 +1168,15 @@
         }
       ]
     },
+    "cabo-manglares": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "cadiz": {
       "from": "git",
       "versions": [
@@ -1190,6 +1199,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "callao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -1908,6 +1926,24 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "department-of-moquegua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "department-of-pasco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4168,6 +4204,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "las-cabezas-de-san-juan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

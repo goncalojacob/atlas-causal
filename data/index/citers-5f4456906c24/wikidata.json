@@ -2690,6 +2690,12 @@
     },
     {
       "dissent": false,
+      "id": "batalla-de-la-florida",
+      "kind": "event",
+      "locator": "Q5722589"
+    },
+    {
+      "dissent": false,
       "id": "batepa-massacre",
       "kind": "event",
       "locator": null
@@ -2912,6 +2918,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cerro-de-pasco",
+      "kind": "event",
+      "locator": "Q5722315"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "Q1425658"
@@ -2933,6 +2945,12 @@
       "id": "battle-of-chemulpo-bay",
       "kind": "event",
       "locator": "Q1192118"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chimbo",
+      "kind": "event",
+      "locator": "Q10858436"
     },
     {
       "dissent": false,
@@ -3221,6 +3239,12 @@
       "id": "battle-of-ia-drang",
       "kind": "event",
       "locator": "Q714749"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ibarra-1812",
+      "kind": "event",
+      "locator": "Q10858446"
     },
     {
       "dissent": false,
@@ -3530,6 +3554,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mocha",
+      "kind": "event",
+      "locator": "Q10858449"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "locator": "Q52226"
@@ -3545,6 +3575,12 @@
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "Q2889368"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-moquegua",
+      "kind": "event",
+      "locator": "Q5722708"
     },
     {
       "dissent": false,
@@ -4160,6 +4196,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-torata",
+      "kind": "event",
+      "locator": "Q5723065"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "Q4245345"
@@ -4199,6 +4241,12 @@
       "id": "battle-of-tucuman",
       "kind": "event",
       "locator": "Q2890270"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tumusla",
+      "kind": "event",
+      "locator": "Q5778763"
     },
     {
       "dissent": false,
@@ -4523,6 +4571,12 @@
       "id": "british-expedition-to-tibet",
       "kind": "event",
       "locator": "Q592550"
+    },
+    {
+      "dissent": false,
+      "id": "british-intervention-in-spanish-american-independence",
+      "kind": "event",
+      "locator": "Q55196779"
     },
     {
       "dissent": false,
@@ -6050,6 +6104,12 @@
     },
     {
       "dissent": false,
+      "id": "los-andes-vs-prueba",
+      "kind": "event",
+      "locator": "Q52696693"
+    },
+    {
+      "dissent": false,
       "id": "louvre-accord",
       "kind": "event",
       "locator": "Q471261"
@@ -6650,6 +6710,12 @@
     },
     {
       "dissent": false,
+      "id": "pronunciamiento-of-riego",
+      "kind": "event",
+      "locator": "Q115454857"
+    },
+    {
+      "dissent": false,
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "Q1547791"
@@ -6962,6 +7028,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-la-puerta",
+      "kind": "event",
+      "locator": "Q2889067"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-menaka",
       "kind": "event",
       "locator": "Q4871711"
@@ -7049,6 +7121,12 @@
       "id": "second-mobutu-coup-detat",
       "kind": "event",
       "locator": "Q125549056"
+    },
+    {
+      "dissent": false,
+      "id": "second-siege-of-callao",
+      "kind": "event",
+      "locator": "Q6123901"
     },
     {
       "dissent": false,
