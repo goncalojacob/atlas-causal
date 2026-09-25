@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-flamborough-head",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888502",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Flamborough Head"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888502"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Flamborough Head\", revision 1370440768"
+    }
+  ],
+  "title": "Battle of Flamborough Head",
+  "summary": "The English Wikipedia article \"Battle of Flamborough Head\", at revision 1370440768, opens: \"The Battle of Flamborough Head was a naval battle that took place on 23 September 1779 in the North Sea off the coast of Yorkshire between a combined Franco-American squadron, led by Continental Navy officer John Paul Jones, and two British escort vessels protecting a large merchant convoy. It became one of the most celebrated naval actions of the war in America, despite its relatively small size and a considerable dispute over what had actually occurred.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888502, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-09-23"
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

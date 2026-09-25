@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "invasion-of-dominica-1778",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890526",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Invasion of Dominica (1778)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890526"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Dominica (1778)\", revision 1370623961"
+    }
+  ],
+  "title": "Invasion of Dominica (1778)",
+  "summary": "The English Wikipedia article \"Invasion of Dominica (1778)\", at revision 1370623961, opens: \"The French invaded the island of Dominica in the British West Indies on 7 September 1778 during the American Revolutionary War. The action took place before British authorities in the Caribbean were aware that France had entered the war as an ally of the United States of America. The French governor in the West Indies, François Claude Amour, marquis de Bouillé, was notified on 17 August that France was at war, and organized the invasion, infiltrating spies to rally sympathetic French-speaking Dominican support.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890526, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 French invasion of Dominica\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-09-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

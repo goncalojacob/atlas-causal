@@ -1651,7 +1651,41 @@
     "Q18785783",
     "Q2237118",
     "Q140530510",
-    "Q140662870"
+    "Q140662870",
+    "Q3651696",
+    "Q26809259",
+    "Q4873060",
+    "Q2890526",
+    "Q2671443",
+    "Q16256520",
+    "Q2984945",
+    "Q3403859",
+    "Q1970159",
+    "Q5036996",
+    "Q4090319",
+    "Q19873117",
+    "Q2583204",
+    "Q4188867",
+    "Q1780931",
+    "Q11794849",
+    "Q1431266",
+    "Q1850800",
+    "Q4090287",
+    "Q4871134",
+    "Q4872193",
+    "Q16158049",
+    "Q17509657",
+    "Q815145",
+    "Q2576215",
+    "Q2888502",
+    "Q4090286",
+    "Q4677235",
+    "Q4090282",
+    "Q2578358",
+    "Q4090280",
+    "Q5484470",
+    "Q4168638",
+    "Q124344830"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1914,7 +1948,21 @@
     "Q6721586": "americas",
     "Q16837786": "americas",
     "Q104849178": "americas",
-    "Q85783755": "americas"
+    "Q85783755": "americas",
+    "Q3651696": "europe",
+    "Q26809259": "europe",
+    "Q2578358": "europe",
+    "Q4090280": "europe",
+    "Q5484470": "europe",
+    "Q4168638": "europe",
+    "Q124344830": "europe",
+    "Q4090282": "europe",
+    "Q16158049": "americas",
+    "Q17509657": "americas",
+    "Q2890526": "americas",
+    "Q1780931": "americas",
+    "Q1431266": "americas",
+    "Q1850800": "americas"
   },
   "queries": [
     {
@@ -5833,6 +5881,12 @@
       "kind": "place",
       "precision": "region",
       "label": "territory of Mexico"
+    },
+    "Q114350932": {
+      "kind": "event",
+      "category": "war",
+      "label": "cancelled military operation",
+      "note": "Added in M42b batch 35, the Caribbean theatre of the American Revolutionary War. The label and the description — “military operation which was planned but never executed” — are read from the class item itself over the network and not guessed. It is a subclass of Q645883, military operation, which this table already reads as an event of category war; the Armada of 1779 is the item that carries it and the table did not."
     }
   },
   "reconcile": true

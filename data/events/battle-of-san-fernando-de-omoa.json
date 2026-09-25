@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-fernando-de-omoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4090319",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of San Fernando de Omoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4090319"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Fernando de Omoa\", revision 1370588302"
+    }
+  ],
+  "title": "Battle of San Fernando de Omoa",
+  "summary": "The English Wikipedia article \"Battle of San Fernando de Omoa\", at revision 1370588302, opens: \"The Battle of San Fernando de Omoa was a short siege and battle between British and Spanish forces fought not long after Spain entered the American Revolutionary War on the American side. On the 16 October 1779, following a brief attempt at siege, a force of 150 British soldiers and seamen assaulted and captured the fortifications at San Fernando de Omoa in the Captaincy General of Guatemala on the Gulf of Honduras.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4090319, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-10-16",
+    "endDate": "1779-11-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

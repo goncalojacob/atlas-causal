@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-brimstone-hill--battle-of-saint-kitts--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Brimstone Hill\", revision 1370739793"
+    }
+  ],
+  "from": "siege-of-brimstone-hill",
+  "to": "battle-of-saint-kitts",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The fleet action was fought over the siege: \"The Comte de Grasse, who delivered de Bouille's troops and supported the siege, was outmanoeuvred and deprived of his anchorage by Admiral Samuel Hood... Hood's attempts to relieve the ongoing siege were unsuccessful, and the garrison capitulated after one month.\" Precondition-of: the siege is what Hood came to lift and what de Grasse was covering.",
+  "dispute": null
+}
