@@ -1077,7 +1077,7 @@
     "core": "index/core-6f35be2bd43e.json",
     "grounds": "index/grounds-73017f4490fa.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-0e7fde8fcc27.json",
+    "review": "index/review-db6dbff1c11c.json",
     "search": "index/search-ef18ddfed9f0.json",
     "sources": "index/sources-ab1dcf8d94a9.json",
     "territories": "index/territories-f5480fdd615f.json"
@@ -1105,7 +1105,7 @@
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-cd3980a75dea.json",
+      "file": "index/history-event-1700-1799-c8ca4073c15b.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
