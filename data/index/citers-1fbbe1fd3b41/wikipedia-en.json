@@ -4160,6 +4160,12 @@
     },
     {
       "dissent": false,
+      "id": "iroquois-war-1609--battle-of-sorel--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Sorel\", revision 1370589713"
+    },
+    {
+      "dissent": false,
       "id": "israeli-declaration-of-independence--1948-arab-israeli-war--caused",
       "kind": "edge",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190, lead"
@@ -4352,6 +4358,18 @@
     },
     {
       "dissent": false,
+      "id": "lachine-massacre--battle-of-the-lake-of-two-mountains--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Lake of Two Mountains\", revision 1370600653"
+    },
+    {
+      "dissent": false,
+      "id": "lachine-massacre--schenectady-massacre--reacted-to",
+      "kind": "edge",
+      "locator": "\"Schenectady massacre\", revision 1370730424"
+    },
+    {
+      "dissent": false,
       "id": "lebanese-civil-war--1982-lebanon-war--enabled",
       "kind": "edge",
       "locator": "\"1982 Lebanon War\", revision 1370279817, § PLO's objectives"
@@ -4541,6 +4559,18 @@
       "id": "milk-bar-cafe-bombing--battle-of-algiers-1956-1957--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618, lead, § First phase and § The Army takes over"
+    },
+    {
+      "dissent": false,
+      "id": "mohawk-valley-raid--battle-of-wilton-new-york--caused",
+      "kind": "edge",
+      "locator": "\"Mohawk Valley raid\", revision 1370719124"
+    },
+    {
+      "dissent": false,
+      "id": "mohawk-valley-raid--great-peace-of-montreal--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mohawk Valley raid\", revision 1370719124"
     },
     {
       "dissent": false,
@@ -5417,6 +5447,12 @@
       "id": "saur-revolution--soviet-afghan-war--caused",
       "kind": "edge",
       "locator": "\"Saur Revolution\", revision 1370730356, § lead, infobox result and § Reactions"
+    },
+    {
+      "dissent": false,
+      "id": "schenectady-massacre--battle-of-wilton-new-york--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Wilton (New York)\", revision 1370594093"
     },
     {
       "dissent": false,
@@ -7172,6 +7208,12 @@
     },
     {
       "dissent": false,
+      "id": "wheeler-s-surprise--battle-of-bloody-brook--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Bloody Brook\", revision 1374876685"
+    },
+    {
+      "dissent": false,
       "id": "white-revolution--iranian-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"White Revolution\", revision 1364402941, § lead and § Opposition"
@@ -8312,6 +8354,12 @@
     },
     {
       "dissent": false,
+      "id": "american-indian-wars",
+      "kind": "event",
+      "locator": "\"American Indian Wars\", revision 1376049816"
+    },
+    {
+      "dissent": false,
       "id": "american-revolutionary-war",
       "kind": "event",
       "locator": "\"American Revolutionary War\", revision 1376266742"
@@ -8621,6 +8669,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-brook",
+      "kind": "event",
+      "locator": "\"Battle of Bloody Brook\", revision 1374876685"
     },
     {
       "dissent": false,
@@ -9017,6 +9071,12 @@
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "\"Battle of La Plata (1957)\", revision 1370446805"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-prairie",
+      "kind": "event",
+      "locator": "\"Battle of La Prairie\", revision 1370446812"
     },
     {
       "dissent": false,
@@ -9446,6 +9506,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sorel",
+      "kind": "event",
+      "locator": "\"Battle of Sorel\", revision 1370589713"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-spion-kop",
       "kind": "event",
       "locator": "\"Battle of Spion Kop\", revision 1374078287"
@@ -9542,6 +9608,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-lake-of-two-mountains",
+      "kind": "event",
+      "locator": "\"Battle of the Lake of Two Mountains\", revision 1370600653"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "locator": "\"Battle of the Lys (1918)\", revision 1370600869"
@@ -9626,6 +9698,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-turner-s-falls",
+      "kind": "event",
+      "locator": "\"Battle of Turner's Falls\", revision 1370275897"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "\"Battle of Two Sisters\", revision 1372847051"
@@ -9692,6 +9770,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wilton-new-york",
+      "kind": "event",
+      "locator": "\"Battle of Wilton (New York)\", revision 1370594093"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "locator": "\"Battle of Wireless Ridge\", revision 1373880954"
@@ -9731,6 +9815,12 @@
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "locator": "\"Battles of Khalkhin Gol\", revision 1371868221"
+    },
+    {
+      "dissent": false,
+      "id": "beaver-wars",
+      "kind": "event",
+      "locator": "\"Beaver Wars\", revision 1375676230"
     },
     {
       "dissent": false,
@@ -10784,6 +10874,18 @@
     },
     {
       "dissent": false,
+      "id": "great-peace-of-montreal",
+      "kind": "event",
+      "locator": "\"Great Peace of Montreal\", revision 1375713139"
+    },
+    {
+      "dissent": false,
+      "id": "great-swamp-fight",
+      "kind": "event",
+      "locator": "\"Great Swamp Fight\", revision 1374695067"
+    },
+    {
+      "dissent": false,
       "id": "greco-italian-war",
       "kind": "event",
       "locator": "\"Greco-Italian War\", revision 1370621958"
@@ -11090,6 +11192,12 @@
     },
     {
       "dissent": false,
+      "id": "iroquois-war-1609",
+      "kind": "event",
+      "locator": "\"Iroquois War (1609)\", revision 1370624414"
+    },
+    {
+      "dissent": false,
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
@@ -11246,6 +11354,12 @@
     },
     {
       "dissent": false,
+      "id": "king-philip-s-war",
+      "kind": "event",
+      "locator": "\"King Philip's War\", revision 1376194320"
+    },
+    {
+      "dissent": false,
       "id": "korean-armistice-agreement",
       "kind": "event",
       "locator": "\"Korean Armistice Agreement\", revision 1370487806"
@@ -11285,6 +11399,12 @@
       "id": "la-violencia",
       "kind": "event",
       "locator": "\"La Violencia\", revision 1373312674: \"a ten-year wave of civil conflict and unrest in Colombia from 1948 to 1958\""
+    },
+    {
+      "dissent": false,
+      "id": "lachine-massacre",
+      "kind": "event",
+      "locator": "\"Lachine massacre\", revision 1370626424"
     },
     {
       "dissent": false,
@@ -11438,6 +11558,12 @@
     },
     {
       "dissent": false,
+      "id": "mohawk-valley-raid",
+      "kind": "event",
+      "locator": "\"Mohawk Valley raid\", revision 1370719124"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "\"Molotov–Ribbentrop Pact\", revision 1371767482"
@@ -11519,6 +11645,12 @@
       "id": "new-laws",
       "kind": "event",
       "locator": "\"New Laws\", revision 1366305827"
+    },
+    {
+      "dissent": false,
+      "id": "northeast-coast-campaign-1676",
+      "kind": "event",
+      "locator": "\"Northeast Coast campaign (1676)\", revision 1375172615"
     },
     {
       "dissent": false,
@@ -12122,6 +12254,12 @@
     },
     {
       "dissent": false,
+      "id": "schenectady-massacre",
+      "kind": "event",
+      "locator": "\"Schenectady massacre\", revision 1370730424"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "\"Schengen Agreement\", revision 1370029483"
@@ -12440,6 +12578,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-springfield",
+      "kind": "event",
+      "locator": "\"Siege of Springfield\", revision 1370745413"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
@@ -12701,6 +12845,12 @@
       "id": "strangford-treaty-1810",
       "kind": "event",
       "locator": "\"Strangford Treaty\", revision 1329682227"
+    },
+    {
+      "dissent": false,
+      "id": "sudbury-fight",
+      "kind": "event",
+      "locator": "\"Sudbury Fight\", revision 1370748868"
     },
     {
       "dissent": false,
@@ -13499,6 +13649,12 @@
       "id": "warsaw-uprising",
       "kind": "event",
       "locator": "\"Warsaw Uprising\", revision 1372481662"
+    },
+    {
+      "dissent": false,
+      "id": "wheeler-s-surprise",
+      "kind": "event",
+      "locator": "\"Wheeler's Surprise\", revision 1370750767"
     },
     {
       "dissent": false,

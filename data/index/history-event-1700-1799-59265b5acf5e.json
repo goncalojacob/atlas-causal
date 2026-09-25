@@ -518,6 +518,15 @@
         }
       ]
     },
+    "great-peace-of-montreal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "guarani-war": {
       "from": "git",
       "versions": [

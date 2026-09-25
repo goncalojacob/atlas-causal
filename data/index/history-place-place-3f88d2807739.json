@@ -513,6 +513,15 @@
         }
       ]
     },
+    "battle-of-the-lake-of-two-mountains-national-historic-site": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bay-of-all-saints": {
       "from": "git",
       "versions": [
@@ -703,7 +712,7 @@
       ]
     },
     "bloody-ridge": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -955,6 +964,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "brookfield-massachusetts": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2559,6 +2577,15 @@
         }
       ]
     },
+    "great-lakes-region": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "greece-q41": {
       "from": "git",
       "versions": [
@@ -2712,7 +2739,7 @@
       ]
     },
     "heartbreak-ridge": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3591,6 +3618,24 @@
         }
       ]
     },
+    "la-prairie-quebec": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "lachine-quebec": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "ladysmith": {
       "from": "git",
       "versions": [
@@ -4411,6 +4456,15 @@
         }
       ]
     },
+    "mohawk-valley": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "mole-saint-nicolas": {
       "from": "git",
       "versions": [
@@ -4848,6 +4902,15 @@
         }
       ]
     },
+    "north-america": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "north-china": {
       "from": "git",
       "versions": [
@@ -4860,6 +4923,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "north-country-new-york": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -5786,7 +5858,7 @@
       ]
     },
     "punchbowl": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6558,6 +6630,15 @@
         }
       ]
     },
+    "schenectady-new-york": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "schengen": {
       "from": "git",
       "versions": [
@@ -6834,6 +6915,15 @@
         }
       ]
     },
+    "sorel-tracy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "south-africa-q258": {
       "from": "git",
       "versions": [
@@ -6864,6 +6954,15 @@
         }
       ]
     },
+    "south-deerfield-massachusetts": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "south-georgia": {
       "from": "git",
       "versions": [
@@ -6877,6 +6976,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "south-kingstown-rhode-island": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7012,6 +7120,15 @@
         }
       ]
     },
+    "springfield-massachusetts": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "srebrenica": {
       "from": "git",
       "versions": [
@@ -7104,6 +7221,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sudbury-massachusetts": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7966,6 +8092,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wilton-new-york": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

@@ -2396,6 +2396,12 @@
     },
     {
       "dissent": false,
+      "id": "american-indian-wars",
+      "kind": "event",
+      "locator": "Q849680"
+    },
+    {
+      "dissent": false,
       "id": "american-revolutionary-war",
       "kind": "event",
       "locator": "Q40949"
@@ -2711,6 +2717,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "Q588059"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-brook",
+      "kind": "event",
+      "locator": "Q885253"
     },
     {
       "dissent": false,
@@ -3107,6 +3119,12 @@
       "id": "battle-of-la-plata-1957",
       "kind": "event",
       "locator": "Q118445706"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-la-prairie",
+      "kind": "event",
+      "locator": "Q2889100"
     },
     {
       "dissent": false,
@@ -3536,6 +3554,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sorel",
+      "kind": "event",
+      "locator": "Q16208744"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-spion-kop",
       "kind": "event",
       "locator": "Q1072592"
@@ -3632,6 +3656,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-lake-of-two-mountains",
+      "kind": "event",
+      "locator": "Q16208754"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-punchbowl",
       "kind": "event",
       "locator": "Q16898848"
@@ -3710,6 +3740,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-turner-s-falls",
+      "kind": "event",
+      "locator": "Q4872610"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
@@ -3776,6 +3812,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wilton-new-york",
+      "kind": "event",
+      "locator": "Q24204942"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wireless-ridge",
       "kind": "event",
       "locator": "Q4872743"
@@ -3815,6 +3857,12 @@
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "locator": "Q188925"
+    },
+    {
+      "dissent": false,
+      "id": "beaver-wars",
+      "kind": "event",
+      "locator": "Q856216"
     },
     {
       "dissent": false,
@@ -4808,6 +4856,18 @@
     },
     {
       "dissent": false,
+      "id": "great-peace-of-montreal",
+      "kind": "event",
+      "locator": "Q326028"
+    },
+    {
+      "dissent": false,
+      "id": "great-swamp-fight",
+      "kind": "event",
+      "locator": "Q5600061"
+    },
+    {
+      "dissent": false,
       "id": "greco-italian-war",
       "kind": "event",
       "locator": "Q223604"
@@ -5072,6 +5132,12 @@
     },
     {
       "dissent": false,
+      "id": "iroquois-war-1609",
+      "kind": "event",
+      "locator": "Q2890910"
+    },
+    {
+      "dissent": false,
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "Q223732"
@@ -5222,6 +5288,12 @@
     },
     {
       "dissent": false,
+      "id": "king-philip-s-war",
+      "kind": "event",
+      "locator": "Q862257"
+    },
+    {
+      "dissent": false,
       "id": "korean-armistice-agreement",
       "kind": "event",
       "locator": "Q2862267"
@@ -5255,6 +5327,12 @@
       "id": "la-violencia",
       "kind": "event",
       "locator": "Q185407"
+    },
+    {
+      "dissent": false,
+      "id": "lachine-massacre",
+      "kind": "event",
+      "locator": "Q2624975"
     },
     {
       "dissent": false,
@@ -5390,6 +5468,12 @@
     },
     {
       "dissent": false,
+      "id": "mohawk-valley-raid",
+      "kind": "event",
+      "locator": "Q6893841"
+    },
+    {
+      "dissent": false,
       "id": "molotov-ribbentrop-pact",
       "kind": "event",
       "locator": "Q130796"
@@ -5483,6 +5567,12 @@
       "id": "new-laws",
       "kind": "event",
       "locator": "Q1121487"
+    },
+    {
+      "dissent": false,
+      "id": "northeast-coast-campaign-1676",
+      "kind": "event",
+      "locator": "Q18354826"
     },
     {
       "dissent": false,
@@ -6014,6 +6104,12 @@
     },
     {
       "dissent": false,
+      "id": "schenectady-massacre",
+      "kind": "event",
+      "locator": "Q7431161"
+    },
+    {
+      "dissent": false,
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "Q2822795"
@@ -6338,6 +6434,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-springfield",
+      "kind": "event",
+      "locator": "Q4818005"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "Q2612839"
@@ -6563,6 +6665,12 @@
       "id": "storming-of-the-bastille",
       "kind": "event",
       "locator": "Q6539"
+    },
+    {
+      "dissent": false,
+      "id": "sudbury-fight",
+      "kind": "event",
+      "locator": "Q4818009"
     },
     {
       "dissent": false,
@@ -7115,6 +7223,12 @@
       "id": "warsaw-uprising",
       "kind": "event",
       "locator": "Q1402078"
+    },
+    {
+      "dissent": false,
+      "id": "wheeler-s-surprise",
+      "kind": "event",
+      "locator": "Q7992172"
     },
     {
       "dissent": false,

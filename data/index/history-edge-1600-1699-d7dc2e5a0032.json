@@ -204,6 +204,51 @@
         }
       ]
     },
+    "iroquois-war-1609--battle-of-sorel--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "lachine-massacre--battle-of-the-lake-of-two-mountains--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "lachine-massacre--schenectady-massacre--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "mohawk-valley-raid--battle-of-wilton-new-york--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "mohawk-valley-raid--great-peace-of-montreal--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "peace-of-prague-1635--battle-of-chemnitz--precondition-of": {
       "from": "git",
       "versions": [
@@ -237,6 +282,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "schenectady-massacre--battle-of-wilton-new-york--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -360,6 +414,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "wheeler-s-surprise--battle-of-bloody-brook--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     }
