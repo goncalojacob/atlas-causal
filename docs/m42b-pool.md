@@ -7995,7 +7995,7 @@ main count in thirty batches** — one, and said at length above.
 **failure**, and the failure was **deviation 1308 and nothing else** — rule 16 on six
 history shards, with 295 of 295 browser tests passing in the same job. Runs **1799**,
 **1800** and **1801** were each cancelled by the next push in turn, which is deviation
-1258's chain. Run **1802**, on `0562327d`, the head of this fire's records and index, concluded **success**. Locally the fire
+1258's chain. Run **1802**, on `0562327d`, the head of this fire's records and index, concluded **success**, and run **1803**, on `10687472`, this note itself, concluded **success** too. Locally the fire
 finished at **2,114 tests passing with nothing failed and nothing skipped** — 1,819 pure and
 295 browser, the browser set run alone — and `node tools/validate.mjs --index` **clean at 0
 errors and 543 warnings** on the pushed index. **The next fire should read this head's run
