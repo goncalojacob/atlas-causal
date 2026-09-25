@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-south-america--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in South America\", revision 1372456988, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921, lead"
+    }
+  ],
+  "from": "covid-19-pandemic-in-europe",
+  "to": "covid-19-pandemic-in-south-america",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The continental article dates the arrival to one case: \"The COVID-19 pandemic was confirmed to have reached South America on 26 February 2020 when Brazil confirmed a case in São Paulo.\" The Brazilian article says where that case had been: \"a man from São Paulo who had traveled to Italy tested positive for the virus.\" Caused, on the article's own account of the index case, and not a claim about the whole continent. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "arauco-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "date-from-article"
+    ],
+    "note": "Q431806 carries no P580, so the import read its P585 of 1546 as a point in time and wrote 1546 at both ends. The cited article \"Arauco War\", revision 1376467209, heads its own date field \"Historiographic divergence\" and gives three datings: 1546 to the end of the 17th century (Gongora 1951), 1550-1662 (Villalobos 1995), 1550-1656 (Memoria Chilena). 1546-1662 contains all three rather than choosing; the end is unsettled and a reviewer should say which dating this atlas follows."
+  },
+  "wikidata": "Q431806",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Arauco War",
+    "pt": "Guerra de Arauco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q431806"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arauco War\", revision 1376467209"
+    }
+  ],
+  "title": "Arauco War",
+  "summary": "The English Wikipedia article \"Arauco War\", at revision 1376467209, opens: \"The Arauco War was a long-running conflict between colonial Spaniards and the Mapuche people, mostly fought in the Araucanía region of Chile. The conflict began at first as a reaction by the Mapuche to the Spanish conquerors attempting to establish cities and force the natives into servitude. It subsequently evolved over time into phases comprising drawn-out sieges, slave-hunting expeditions, pillaging raids, punitive expeditions, and renewed Spanish attempts to secure lost territories. Abduction of women and war rape was common on both sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q431806, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Spaniards and Mapuche people in Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1546,
+    "end": 1662
+  },
+  "place": "chile-q298",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

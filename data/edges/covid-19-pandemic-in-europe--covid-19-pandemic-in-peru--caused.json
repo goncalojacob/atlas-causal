@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-peru--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Peru\", revision 1361422337, lead"
+    }
+  ],
+  "from": "covid-19-pandemic-in-europe",
+  "to": "covid-19-pandemic-in-peru",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Peruvian article names the journey: \"The virus spread to Peru on 6 March 2020, when a 25-year-old man who had travelled to Spain, France, and the Czech Republic tested positive.\" Caused, on the article's own account of the index case; all three countries it names are inside the record this edge runs from. Probable: Wikipedia alone.",
+  "dispute": null
+}

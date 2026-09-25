@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "2013-colombian-clashes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "The date is the item's own, 21 July 2013; the cached English lead at revision 1370423552 opens \"On 20 July 2013\". One day apart, and a reviewer should settle which. This run does not move a date the import wrote."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q14186580",
+  "wikipedia": {
+    "en": "2013 Colombian clashes"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14186580"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2013 Colombian clashes\", revision 1370423552"
+    }
+  ],
+  "title": "2013 Colombian clashes",
+  "summary": "The English Wikipedia article \"2013 Colombian clashes\", at revision 1370423552, opens: \"On 20 July 2013, two clashes occurred in Colombia between government forces and Revolutionary Armed Forces of Colombia (FARC) guerrillas. Nineteen soldiers were killed in the deadliest day since peace talks began in November 2012. The conflict came one day after a FARC-EP officer, Alejandra, had detained with a chain around the neck a vacationing U.S. Army Combat Engineer (12B) veteran, Kevin Scott Sutay, including for his 27th birthday in the jungle on October 13, to try to further anger him intentionally.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14186580, imported by tools/import/wikidata.mjs. The item's own description reads \"2013 engagement between Colombian military forces and FARC guerillas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-07-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "colombian-conflict",
+  "category": "war",
+  "actors": []
+}

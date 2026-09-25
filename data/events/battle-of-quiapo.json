@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-quiapo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1617262",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Quiapo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1617262"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Quiapo\", revision 1370586947"
+    }
+  ],
+  "title": "Battle of Quiapo",
+  "summary": "The English Wikipedia article \"Battle of Quiapo\", at revision 1370586947, opens: \"Battle of Quiapo in the Arauco War was the final battle in the campaign of García Hurtado de Mendoza against the Mapuche under the toqui known as Lemucaguin or Caupolicán the younger. It was fought in Quiapo, in the region nowadays known as Arauco Province, Chile on December 13, 1558. The importance of this battle was the first time that the Mapuche fought using a squad that carried firearms.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1617262, imported by tools/import/wikidata.mjs. The item's own description reads \"1558 battle of the Arauco War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1558,
+    "end": 1558,
+    "date": "1558-12-13"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "arauco-war"
+}
