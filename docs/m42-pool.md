@@ -12004,3 +12004,24 @@ vocabulary either.*
   it checks the records.
 - **Deviation numbers: take the next above 1452.** This fire wrote **1450**,
   **1451** and **1452**, across two batches.
+
+**The check is green on this fire's head.** Run **1847** of `validate.yml`, commit
+`483fe6bf`, conclusion `success`. The runs before it, in order: **1836** on the
+merge commit **failed** on the history shards (deviation 1451); **1841** on batch
+59's head passed; **1844** on batch 60's head **failed** on the one browser label
+test of deviation 1452, and its re-run was cancelled by the push carrying the fix,
+so the re-run allowance produced no verdict and none was needed — the cause was
+found and fixed rather than re-rolled. **1839, 1840 and 1843 were each cancelled
+by the next push**, which is deviation 1258's chain and costs nothing.
+
+**2,114 tests pass locally, 1,819 pure and 295 browser, with nothing failed and
+nothing skipped**, run the way the check runs them since M63 on the final tree.
+Three suites failed on a first local run across the fire and all three were tests
+these batches had moved rather than broken: `tests/m53.test.mjs` §4.1's
+denominator, re-taken with each of the two batches; `tests/bundle.test.mjs`'s
+byte-identical save, which caught `korsakov` written with `"lon": 143.0` and
+`yingkou` with `"lon": 122.230` where the round trip writes `143` and `122.23` —
+batch 58's `kwilu-rebellion` case in a new shape, and a thing to watch for in any
+place record whose point ends in a zero; and `tests/map-browser.test.mjs`'s Lisbon
+label test, which was the one that needed a fix in the test rather than in the
+records.
