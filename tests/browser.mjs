@@ -582,6 +582,15 @@ export async function open(page, url, ready = 'return document.querySelectorAll(
 export async function watchErrors(page) {
   await page.send('Page.addScriptToEvaluateOnNewDocument', {
     source: `
+      // **And room in the resource buffer for a first paint on this corpus**
+      // (M88, the third review's first "not a finding", which the brief asks
+      // for where it is one line). The buffer holds 250 entries by default and
+      // a visit is past that — the core, the search shard, twelve attribute
+      // shards, the coastline, the base map's cells — so a test counting
+      // requests by name was reading a window that had already closed and a
+      // \`resourcetimingbufferfull\` nobody had listened for. Here because this
+      // is the one script a driven page is given before its own scripts run.
+      performance.setResourceTimingBufferSize(2000);
       window.__errors = [];
       window.addEventListener('error', (e) => {
         window.__errors.push(String((e.error && e.error.stack) || e.message));
