@@ -4352,6 +4352,15 @@
         }
       ]
     },
+    "operation-accountability--operation-grapes-of-wrath--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "operation-badr-1973--yom-kippur-war--caused": {
       "from": "git",
       "versions": [
@@ -5675,6 +5684,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "taif-agreement--operation-accountability--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

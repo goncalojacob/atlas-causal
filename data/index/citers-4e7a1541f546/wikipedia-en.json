@@ -3920,6 +3920,12 @@
     },
     {
       "dissent": false,
+      "id": "gaza-war--2024-lebanon-electronic-device-attacks--precondition-of",
+      "kind": "edge",
+      "locator": "\"2024 Lebanon electronic device attacks\", revision 1376199681, lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "gaza-war--gaza-genocide--caused",
       "kind": "edge",
       "locator": "\"Gaza genocide\", revision 1371072421"
@@ -4913,6 +4919,12 @@
       "id": "ogaden-war--somali-civil-war--caused",
       "kind": "edge",
       "locator": "\"Ogaden War\", revision 1373903527, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "operation-accountability--operation-grapes-of-wrath--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Accountability\", revision 1370630524, § Outcome"
     },
     {
       "dissent": false,
@@ -6287,6 +6299,12 @@
       "id": "suez-crisis--six-day-war--precondition-of",
       "kind": "edge",
       "locator": "\"Six-Day War\", revision 1375500255, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "taif-agreement--operation-accountability--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Accountability\", revision 1370630524, § Historical background"
     },
     {
       "dissent": false,
@@ -8507,6 +8525,12 @@
       "id": "2023-madeiran-regional-election",
       "kind": "event",
       "locator": "\"2023 Madeiran regional election\", revision 1363880021"
+    },
+    {
+      "dissent": false,
+      "id": "2024-lebanon-electronic-device-attacks",
+      "kind": "event",
+      "locator": "\"2024 Lebanon electronic device attacks\", revision 1376199681"
     },
     {
       "dissent": false,
@@ -12173,6 +12197,12 @@
       "id": "ogossagou-massacre",
       "kind": "event",
       "locator": "\"Ogossagou massacre\", revision 1354535837"
+    },
+    {
+      "dissent": false,
+      "id": "operation-accountability",
+      "kind": "event",
+      "locator": "\"Operation Accountability\", revision 1370630524"
     },
     {
       "dissent": false,
