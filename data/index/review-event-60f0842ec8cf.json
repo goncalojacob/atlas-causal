@@ -7373,7 +7373,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 4,
       "id": "battle-of-gao",
       "kind": "event",
       "origin": {
@@ -7868,6 +7868,44 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Ifoghas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-in-delimane-2012",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Mali War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)), and not its P276, which is Ansongo, a degree of longitude west; the article puts the fighting in \"the village of Idelimane\". Title from the article and not the label, so the disambiguator is kept (A12 (5)); the label, \"Battle of Idelimane\", is the name the article itself uses in bold. No P710, so the record names no actor.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of In-Delimane (2012)"
     },
     {
       "authors": [
@@ -17547,6 +17585,44 @@
       "revised": null,
       "status": "active",
       "title": "Fête de la Fédération"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "fifth-battle-of-gao",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Filed under the Mali War from the item's own P361. Interval widened under A7 from the cited article at revision 1370618201, whose first sentence gives \"On March 23, 2013\": the item carries a P585 of 24 March alone, which its infobox repeats, so the start is the article's. Place by A9's second step (P276 Q188904, Gao), where four earlier records of this vein stand; the item's own P625 is that city's point to the digit. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fifth Battle of Gao"
     },
     {
       "authors": [
@@ -28280,6 +28356,45 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "second-battle-of-menaka",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Filed under the Mali War from the item's own P361. Interval widened under A7 from the cited article at revision 1370736445, whose infobox gives \"19–20 November 2012\" and whose body has the fighting resume on the 20th: the item carries a P585 of 19 November alone, so the end is the article's. Place by A9's second step (P276 Q855986, the town of Ménaka); the item's own P625 is that town's point to four decimals. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Battle of Ménaka"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -31483,6 +31598,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Sveaborg Rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "tagarangabotte-ambush",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Mali War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)): the item names no P276, and no item this pass could reach is the ground itself. The item carries no P710, so the record names no actor.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tagarangabotte ambush"
     },
     {
       "authors": [
@@ -36918,6 +37071,12 @@
     },
     {
       "id": "fete-de-la-federation",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "fifth-battle-of-gao",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

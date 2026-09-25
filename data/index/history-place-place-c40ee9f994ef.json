@@ -2873,6 +2873,15 @@
         }
       ]
     },
+    "idelimane": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "ilha-de-itamaraca": {
       "from": "git",
       "versions": [
@@ -4353,6 +4362,15 @@
     },
     "melle-belgium": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "menaka": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -7278,6 +7296,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tagarangabotte": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

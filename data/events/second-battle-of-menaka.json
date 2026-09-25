@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-menaka",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Filed under the Mali War from the item's own P361. Interval widened under A7 from the cited article at revision 1370736445, whose infobox gives \"19–20 November 2012\" and whose body has the fighting resume on the 20th: the item carries a P585 of 19 November alone, so the end is the article's. Place by A9's second step (P276 Q855986, the town of Ménaka); the item's own P625 is that town's point to four decimals. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4871711",
+  "wikipedia": {
+    "en": "Second Battle of Ménaka"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871711"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445"
+    }
+  ],
+  "title": "Second Battle of Ménaka",
+  "summary": "The English Wikipedia article \"Second Battle of Ménaka\", at revision 1370736445, opens: \"The Second Battle of Ménaka was the last battle fought by the state of Azawad, as they were defeated by an Islamist coalition.\" Wikidata item Q4871711, whose own description reads \"2012 last battle fought by the state of Azawad\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-11-19",
+    "endDate": "2012-11-20"
+  },
+  "place": "menaka",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

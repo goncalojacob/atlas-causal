@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
+    }
+  ],
+  "from": "battle-of-gao",
+  "to": "battle-of-in-delimane-2012",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same sentence that opens the article names the lost city as what the fighting at Idelimane was an attempt to recover: \"On November 16, MNLA forces launched an offensive to retake the city of Gao, but they came up against the Islamists forces of MUJAO and AQIM between Ansongo and Gao... the same day MUJAO attack elements of the MNLA in the village of Idelimane 80 kilometers from Ménaka, the last bastion of the MNLA.\" Precondition and not cause: Gao's loss is what the offensive was answering, and the article claims no more than that. Probable: Wikipedia alone.",
+  "dispute": null
+}

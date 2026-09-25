@@ -419,6 +419,42 @@
         }
       ]
     },
+    "battle-of-gao--battle-of-in-delimane-2012--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-gao--second-battle-of-menaka--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-gao--tagarangabotte-ambush--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-in-delimane-2012--second-battle-of-menaka--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-konna--battle-of-ifoghas--precondition-of": {
       "from": "git",
       "versions": [

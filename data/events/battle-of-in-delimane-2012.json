@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-in-delimane-2012",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Mali War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)), and not its P276, which is Ansongo, a degree of longitude west; the article puts the fighting in \"the village of Idelimane\". Title from the article and not the label, so the disambiguator is kept (A12 (5)); the label, \"Battle of Idelimane\", is the name the article itself uses in bold. No P710, so the record names no actor."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q15231507",
+  "wikipedia": {
+    "en": "Battle of In-Delimane (2012)"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15231507"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727"
+    }
+  ],
+  "title": "Battle of In-Delimane (2012)",
+  "summary": "The English Wikipedia article \"Battle of In-Delimane (2012)\", at revision 1370443727, opens: \"The Battle of Idelimane took place during the Internal Conflict in Azawad.\" Wikidata item Q15231507, whose own description reads \"2012 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-11-16",
+    "endDate": "2012-11-19"
+  },
+  "place": "idelimane",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

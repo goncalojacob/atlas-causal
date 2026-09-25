@@ -5220,3 +5220,69 @@ is the filing these records already have and which C8 bars as an edge); and
 `operation-commando` → anything in the largest component (its aftermath names
 `Operation Polecharge` and its background `Operation Minden`, and this atlas
 holds neither).
+
+## Batch 56 — the Ménaka week of November 2012, and the component the loss of Gao rejoined
+
+*25 September, the import fire that picked the run up at 07:07Z. Today already
+carries a `## Curation 2026-09-25` section and all six of A14's passes carry
+theirs, so this is an import fire and every one of the six is skipped by its own
+rule. A10's order of need puts **Africa** at the front, trailing at 166 against
+Asia's 169 and Europe's 426, so this batch is four Africa rows and no other
+lane. The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 56".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-gao` → `tagarangabotte-ambush` | `precondition-of` | *"On November 16, MNLA forces launched an offensive to retake the city of Gao, but they came up against the Islamists forces of MUJAO and AQIM between Ansongo and Gao. On the morning of the first day, Tuareg independence forces were successful in the Ambush of Tagarangabotte 50 kilometers east of Ansongo"* — "Battle of In-Delimane (2012)", revision 1370443727, § The battle |
+| `battle-of-gao` → `battle-of-in-delimane-2012` | `precondition-of` | *"On November 16, MNLA forces launched an offensive to retake the city of Gao … the same day MUJAO attack elements of the MNLA in the village of Idelimane 80 kilometers from Ménaka, the last bastion of the MNLA"* — "Battle of In-Delimane (2012)", revision 1370443727, § The battle |
+| `battle-of-gao` → `second-battle-of-menaka` | `precondition-of` | *"On 16 November 2012, during the MNLA (Movement for the National Liberation of Azawad) failed offensive to reclaim its former city-base of Gao recently taken by Islamists groups, Islamists launch a counter-attack of their own targeted at the MNLA stronghold of Ménaka, north of Gao, the last bastion under MNLA control"* — "Second Battle of Ménaka", revision 1370736445, § Background |
+| `battle-of-in-delimane-2012` → `second-battle-of-menaka` | `enabled` | *"On 19 November, following its victory against the MNLA at the Battle of Idelimane, MUJAO continues its push and attacks the city of Menaka"* — "Second Battle of Ménaka", revision 1370736445, § Battle, with *"Next, the Battle of Ménaka followed"* closing "Battle of In-Delimane (2012)", revision 1370443727, § Aftermath |
+
+All four are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus.
+
+**Three of the four run into a record that was already here, and the largest
+connected component moves** — 662 to 665. The three Korean batches, 51, 53 and
+55, each connected every record they wrote and moved it by nothing, because
+every edge those veins offered ran from a parent to its own child; the two Mali
+batches between them, 52 and 54, each moved it. Here the reach is sideways
+again. The record the three new ones reach is `battle-of-gao`, the June 2012
+battle in which the MNLA lost the city, and it is a sibling under `mali-war` and
+not an ancestor, so C8 has nothing to say about it.
+
+**`precondition-of` and not `caused`, on all three.** The articles say what the
+November fighting was *for* — an offensive to retake a city lost five months
+earlier — and do not say that the June battle brought the November one about.
+That is the distinction the type vocabulary exists for, and a run that collapses
+it would be making the argument itself.
+
+**The fourth edge is the one inside the week**, and the one that took the most
+reading. The Ménaka article puts the victory at Idelimane as what the push onto
+the town went on from; the Idelimane article closes on the same sequence from
+its own side. It is written `enabled` and not `caused` because neither article
+says the battle at Idelimane brought the attack on Ménaka about — MUJAO was
+already moving on Ménaka when the two forces met, which is the Tagarangabotte
+article's own first sentence.
+
+**`fifth-battle-of-gao` arrives with no edge at all, and the batch says so
+rather than reaching for one.** Its article at revision 1370618201 is four
+sentences of narrative about a single night's raid; it names no other event this
+atlas holds, and the four earlier Gao battles are a numbered series and not a
+claim. A series number is not an argument, so no edge is written from the fourth
+battle to the fifth. It is the one record of the batch outside the largest
+component and the one new `degree-zero` warning.
+
+**Four edges were read and refused.** `tagarangabotte-ambush` →
+`battle-of-in-delimane-2012`, which both articles set side by side in the same
+day — *"The success of the MNLA, however, seems to have been only temporary and
+insufficient to stop the Islamist offensive … the same day the MUJAO attacked
+elements of the MNLA in the village of Idelimane"* — is a statement that the
+ambush **failed** to prevent what followed, which is chronology and the absence
+of an effect, not an effect; the refusal class A14 (4) drew is exactly this one.
+`mali-war` → each of the four is containment, which is the filing these records
+already have and which C8 bars as an edge. `fourth-battle-of-gao` →
+`fifth-battle-of-gao` is the series number above. And `second-battle-of-menaka`
+→ `2012-tuareg-rebellion` was read and left: the Ménaka article's infobox gives
+*"Dissolution of the State of Azawad"* as the result, but Azawad is a polity and
+the rebellion is the event, and an edge between them would be this run deciding
+that the one ended the other.

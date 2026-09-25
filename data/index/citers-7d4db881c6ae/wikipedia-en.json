@@ -2132,9 +2132,39 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gao--second-battle-of-menaka--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gao--tagarangabotte-ambush--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-heartbreak-ridge--operation-commando--enabled",
       "kind": "edge",
       "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
+      "kind": "edge",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445, § Battle"
     },
     {
       "dissent": false,
@@ -8972,6 +9002,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-in-delimane-2012",
+      "kind": "event",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "\"Battle of Inchon\", revision 1370266029"
@@ -10571,6 +10607,12 @@
       "id": "fete-de-la-federation",
       "kind": "event",
       "locator": "\"Fête de la Fédération\", revision 1369393792"
+    },
+    {
+      "dissent": false,
+      "id": "fifth-battle-of-gao",
+      "kind": "event",
+      "locator": "\"Fifth Battle of Gao\", revision 1370618201"
     },
     {
       "dissent": false,
@@ -12308,6 +12350,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-menaka",
+      "kind": "event",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-porto",
       "kind": "event",
       "locator": "\"Second Battle of Porto\", revision 1370787422"
@@ -12869,6 +12917,12 @@
       "id": "sveaborg-rebellion",
       "kind": "event",
       "locator": "\"Sveaborg rebellion\", revision 1370749115"
+    },
+    {
+      "dissent": false,
+      "id": "tagarangabotte-ambush",
+      "kind": "event",
+      "locator": "\"Tagarangabotte ambush\", revision 1370749494"
     },
     {
       "dissent": false,
