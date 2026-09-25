@@ -1169,7 +1169,7 @@
       ]
     },
     "cabo-manglares": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1203,7 +1203,7 @@
       ]
     },
     "callao": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1930,7 +1930,7 @@
       ]
     },
     "department-of-moquegua": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1939,7 +1939,7 @@
       ]
     },
     "department-of-pasco": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4208,7 +4208,7 @@
       ]
     },
     "las-cabezas-de-san-juan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
