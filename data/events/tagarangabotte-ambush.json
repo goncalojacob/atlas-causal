@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tagarangabotte-ambush",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Mali War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)): the item names no P276, and no item this pass could reach is the ground itself. The item carries no P710, so the record names no actor."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q15231376",
+  "wikipedia": {
+    "en": "Tagarangabotte ambush"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15231376"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tagarangabotte ambush\", revision 1370749494"
+    }
+  ],
+  "title": "Tagarangabotte ambush",
+  "summary": "The English Wikipedia article \"Tagarangabotte ambush\", at revision 1370749494, opens: \"The Ambush of Tagarangabotte took place during the Internal conflict in Azawad. A MUJAO column en route to Ménaka fell into an ambush by the MNLA.\" Wikidata item Q15231376, whose own description reads \"battle of the Mali War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-11-16"
+  },
+  "place": "tagarangabotte",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

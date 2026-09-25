@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kwilu-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Filed under the Congo Crisis from the item's own P361. The item carries a P585 of August 1963 alone, a month read as a point in time; the end is widened under A7 to 1965 from the cited article at revision 1370626353, whose title line gives \"(1963–1965)\" and whose body has the rising \"largely suppressed in the early months of 1965\". Place by A9's second step (P276 Q974). No category: Q124734, rebellion, takes none, for the reason the class table gives. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q85775188",
+  "wikipedia": {
+    "en": "Kwilu rebellion"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85775188"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kwilu rebellion\", revision 1370626353"
+    }
+  ],
+  "title": "Kwilu rebellion",
+  "summary": "The English Wikipedia article \"Kwilu rebellion\", at revision 1370626353, opens: \"The Kwilu rebellion (1963–1965) was a civil uprising which took place in the West of what is the modern-day Democratic Republic of the Congo. The rebellion took place in the wider context of the Cold War and the Congo Crisis. Led by Pierre Mulele, a follower of ousted prime minister Patrice Lumumba, a faction of rebel Maoists staged a revolt against the government in the Kwilu District.\" Wikidata item Q85775188, whose own description reads \"rebellion in DR Congo (1963-65)\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1963,
+    "end": 1965,
+    "date": "1963-08"
+  },
+  "place": "democratic-republic-of-the-congo",
+  "region": null,
+  "regionNote": null,
+  "parent": "congo-crisis",
+  "actors": []
+}

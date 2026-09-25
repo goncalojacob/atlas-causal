@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "operation-linebacker-ii--paris-peace-accords--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Linebacker II\", revision 1374115791, § Aftermath — Negotiating and Outcome and assessments"
+    }
+  ],
+  "from": "operation-linebacker-ii",
+  "to": "paris-peace-accords",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The claim the edge carries is the American one the article reports and then weighs: \"US officials claimed that the operation had succeeded in forcing North Vietnam's Politburo to return to negotiating, citing the Paris Peace Accords signed shortly after the operation.\" The article supplies the sequence — Washington asked Hanoi on 22 December to return to the talks, Hanoi notified Washington on 26 December that it was willing, Nixon suspended operations north of the 20th parallel on 30 December, Kissinger and Thọ returned to Paris on 9 January and the Accords were signed on 27 January 1973 — and Pierre Asselin's reading, that \"Hanoi agreed to resume talks only because the bombing had crippled their country\" and that the bombing \"paved the way for the finalization of an agreement\". Enabled and not caused, because even on the reading that credits the bombing, what it is said to have produced is a return to terms already drafted in October. Disputed rather than probable: the article carries the contrary reading in the same section and names who holds it.",
+  "dispute": {
+    "text": "A. J. Langguth writes that the Christmas bombings were \"pointless\", the agreement of 23 January 1973 being essentially the one reached on 8 October 1972, with Thọ making no substantial concessions; the article notes that Hanoi told Washington on 26 December that halting the bombing was not a precondition for further talks, and that it would have been \"extremely difficult to get informed observers in the U.S. to believe\" that Nixon \"had bombed Hanoi in order to force North Vietnamese acceptance of terms they had already agreed to\". John Negroponte, one of Kissinger's aides at the negotiations, put the same point the other way round: \"we bombed them into accepting our concessions.\"",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Operation Linebacker II\", revision 1374115791, § Aftermath — Outcome and assessments, Diplomatic"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-quang-tri",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-by-span-and-subject",
+      "a9-place",
+      "participants-from-p710",
+      "summary-from-lead"
+    ],
+    "note": "The item's P361 is the Vietnam War, but its own lead calls the battle \"a battle in the Easter Offensive\" and its dates fall inside that campaign's span, so it is filed under the closer umbrella this batch writes. The interval is the item's and the article's alike, which give 28 June to 16 September 1972 in the same words. Place by A9's first step: the item's own P625 is the point the First Battle's item gives to three decimals, so the two stand on one record."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4798235",
+  "wikipedia": {
+    "en": "Second Battle of Quảng Trị"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4798235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Quảng Trị\", revision 1376178980"
+    }
+  ],
+  "title": "Second Battle of Quảng Trị",
+  "summary": "The English Wikipedia article \"Second Battle of Quảng Trị\", at revision 1376178980, opens: \"The Second Battle of Quảng Trị was a battle in the Easter Offensive beginning on 28 June 1972 and lasting 81 days until 16 September 1972, when the South Vietnamese army (ARVN) defeated the North Vietnamese army (PAVN), leading to the ARVN recapturing Quảng Trị Province south of the Thạch Hãn River.\" Wikidata item Q4798235, whose own description reads \"1972 battle in the Vietnam War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-06-28",
+    "endDate": "1972-09-16"
+  },
+  "place": "quang-tri",
+  "region": null,
+  "regionNote": null,
+  "parent": "easter-offensive",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "Wikidata Q4798235, P710 (participant), Q30"
+    }
+  ]
+}

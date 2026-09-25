@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "quang-tri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2237223, the First Battle of Quảng Trị, read on 2026-09-25 — A9's first step as A12 (2) corrects it. Q4798235, the Second Battle, carries the same point to three decimals (16.7333, 106.967) and stands here too. The ground is the provincial capital and the item this pass could reach for it, Q36579, is the province and not the town, so the place is written from the point the two battle items give and carries no item of its own."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Quảng Trị"
+  ],
+  "where": {
+    "lon": 106.967,
+    "lat": 16.733,
+    "precision": "point",
+    "label": "Quảng Trị"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

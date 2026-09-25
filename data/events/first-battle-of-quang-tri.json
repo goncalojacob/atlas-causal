@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-quang-tri",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-by-span-and-subject",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "The item's P361 is the Vietnam War, but its own lead calls the battle one fought \"during the Easter Offensive of 1972\" and its dates fall inside that campaign's span, so it is filed under the closer umbrella this batch writes rather than under the war. Place by A9's first step as A12 (2) corrects it: the item's own P625, written as `point`, because the item this pass could reach through P276 is Quảng Trị Province and not the ground. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2237223",
+  "wikipedia": {
+    "en": "First Battle of Quảng Trị"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2237223"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Quảng Trị\", revision 1375790239"
+    }
+  ],
+  "title": "First Battle of Quảng Trị",
+  "summary": "The English Wikipedia article \"First Battle of Quảng Trị\", at revision 1375790239, opens: \"The First Battle of Quảng Trị resulted in the first major victory for the People's Army of Vietnam (PAVN) during the Easter Offensive of 1972.\" Wikidata item Q2237223, whose own description reads \"Battle in Central Coast, South Vietnam in the Easter Offensive 1972\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-03-30",
+    "endDate": "1972-05-01"
+  },
+  "place": "quang-tri",
+  "region": null,
+  "regionNote": null,
+  "parent": "easter-offensive",
+  "category": "war",
+  "actors": []
+}

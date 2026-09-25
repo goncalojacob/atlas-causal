@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bloody-ridge",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2035177, the Battle of Bloody Ridge, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The ridge itself has no item this pass could reach; the article calls it \"an east–west ridge with three peaks, the highest at the western end rising to 983 meters\", in Yanggu County, Gangwon Province."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Bloody Ridge"
+  ],
+  "where": {
+    "lon": 128.038,
+    "lat": 38.255,
+    "precision": "point",
+    "label": "Bloody Ridge"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

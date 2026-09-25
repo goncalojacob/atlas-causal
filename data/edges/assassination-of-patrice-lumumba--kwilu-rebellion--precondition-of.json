@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "assassination-of-patrice-lumumba--kwilu-rebellion--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kwilu rebellion\", revision 1370626353, § Background"
+    }
+  ],
+  "from": "assassination-of-patrice-lumumba",
+  "to": "kwilu-rebellion",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Kwilu article makes the killing the thing that turned Mulele from a minister into a rebel: \"Pierre Mulele, rebel leader of the Kwilu rebellion, had previously served as minister of education within Patrice Lumumba's government. When Lumumba was assassinated in early 1961, Mulele became a prominent and vocal advocate for his government and beliefs. In 1962, Mulele joined a group of fellow rebels and ex-politicians named the National Committee of Liberation.\" Precondition-of and not caused: two years and a party lie between the two, and the article names the killing as what set the rebel leadership on its course rather than as what brought the rising about. Probable: Wikipedia alone (rule 22).",
+  "dispute": null
+}

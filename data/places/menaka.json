@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "menaka",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written from Wikidata Q855986, the town the Second Battle of Ménaka's item names in P276 — A9's second step, taken because the item's own P625 is this town's point to four decimals, so the first step would write the same place without its item, its name or its id. `city` from the item's class Q1758856, commune of Mali, which the class table already carries."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q855986",
+  "wikipedia": {
+    "en": "Ménaka"
+  },
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Ménaka"
+  ],
+  "where": {
+    "lon": 2.4,
+    "lat": 15.916666666667,
+    "precision": "city",
+    "label": "Ménaka"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

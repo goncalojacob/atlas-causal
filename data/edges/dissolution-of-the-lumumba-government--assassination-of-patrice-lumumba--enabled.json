@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-lumumba-government--assassination-of-patrice-lumumba--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Patrice Lumumba\", revision 1376437618, § lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429, § Background"
+    }
+  ],
+  "from": "dissolution-of-the-lumumba-government",
+  "to": "assassination-of-patrice-lumumba",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The assassination article puts the dismissal and the coup that followed it at the head of the sequence that ends in the killing: \"Following the September 1960 coup led by Mobutu Sese Seko, Lumumba and his political retinue were detained by Mobutu's forces in December 1960. After a month of imprisonment near Léopoldville, he was transferred to Belgium-aligned Katanga in mid-January.\" The coup article carries the same chain with the custody in it — Mobutu \"privately aligned himself with Kasa-Vubu at the expense of Lumumba, placing him under house arrest\", and \"In December 1960, Lumumba was captured while attempting to escape house arrest and subsequently transferred to Katanga, then a secessionist province led by Moïse Tshombe, where he was held.\" Enabled and not caused: what the dismissal produced was the custody that made the killing possible, and the order to kill came, both articles agree, from the Katangan authorities and not from Léopoldville. Probable: Wikipedia alone (rule 22).",
+  "dispute": null
+}

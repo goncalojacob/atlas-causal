@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445, § Battle"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § Aftermath"
+    }
+  ],
+  "from": "battle-of-in-delimane-2012",
+  "to": "second-battle-of-menaka",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Ménaka article makes the victory at Idelimane the thing the attack on the town was launched from: \"On 19 November, following its victory against the MNLA at the Battle of Idelimane, MUJAO continues its push and attacks the city of Menaka.\" The Idelimane article ends on the same sequence from its own side — \"Next, the Battle of Ménaka followed\" — and adds that the MNLA was routed there on 17 November with the loss of its force. Enabled and not caused: the article names the victory as what let the push go on, and does not say the battle at Idelimane brought the attack on Ménaka about. Probable: Wikipedia alone.",
+  "dispute": null
+}
