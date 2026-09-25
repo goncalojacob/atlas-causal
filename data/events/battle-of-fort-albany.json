@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-albany",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2888522",
+  "wikipedia": {
+    "en": "Battle of Fort Albany"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888522"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Albany\", revision 1366220638"
+    }
+  ],
+  "title": "Battle of Fort Albany",
+  "summary": "The English Wikipedia article \"Battle of Fort Albany\", at revision 1366220638, opens: \"The 1688 Battle of Fort Albany was one of the Anglo-French conflicts on Hudson Bay. In the Hudson Bay expedition (1686) the French had, in time of peace, marched overland from Quebec and captured all three English posts on James Bay. The French had left a garrison at Fort Albany and needed to send a ship to resupply it and take out the furs. The Hudson's Bay Company learned of its loss in January 1687 and appealed to the king. This led to about a year of diplomatic negotiations. In 1688 the Company sent five ships to the Bay. Two went to its remaining post at York Factory, one went to reestablish Rupert House which the French had burned and two went to Fort Albany on the west shore of James Bay. Their instructions were to re-establish the English trade and not to use force against the French unless the French did so first.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888522, imported by tools/import/wikidata.mjs. The item's own description reads \"1688 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1688,
+    "date": "1688-09"
+  },
+  "place": "hudson-bay",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

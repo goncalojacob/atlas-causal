@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-naples-1528--battle-of-capo-d-orso--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Capo d'Orso\", revision 1370436279"
+    }
+  ],
+  "from": "siege-of-naples-1528",
+  "to": "battle-of-capo-d-orso",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Capo d'Orso article says what put the two fleets in the same water: \"A French fleet inflicted a crushing defeat on the fleet of the Kingdom of Naples under Spanish command in the Gulf of Salerno, where Spanish forces trying to break the French blockade of the city met the French fleet.\" The blockade is the siege this atlas holds, and the sentence makes it the reason the Spanish fleet sailed at all — so the edge runs from the siege to the battle it produced. **It was first written the other way round and the validator refused it**: rule 4's arrow of time, because the siege opens in April 1528 and the battle is the 28th of that month, which is the source saying the battle happened inside the siege rather than before it. The siege is not this battle's parent — the battle's own P361 names the War of the League of Cognac — so this is an argument between two records and not the filing said twice. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

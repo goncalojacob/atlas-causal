@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "namur",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "wikidata": "Q134121",
+  "sitelinks": {
+    "count": 92,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Namur",
+    "pt": "Namur"
+  },
+  "sources": [],
+  "names": [
+    "Namur"
+  ],
+  "where": {
+    "lon": 4.8666666666667,
+    "lat": 50.466666666667,
+    "precision": "city",
+    "label": "Namur"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q134121, imported by tools/import/wikidata.mjs. The item's own description reads \"capital of Wallonia, Belgium\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

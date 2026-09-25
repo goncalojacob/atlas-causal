@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "wheeler-s-surprise",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7992172",
+  "wikipedia": {
+    "en": "Wheeler's Surprise"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7992172"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wheeler's Surprise\", revision 1370750767"
+    }
+  ],
+  "title": "Wheeler's Surprise",
+  "summary": "The English Wikipedia article \"Wheeler's Surprise\", at revision 1370750767, opens: \"Wheeler's Surprise, and the ensuing siege of Brookfield, was a battle between Nipmuc Indians under Muttawmp, and the English colonists of the Massachusetts Bay Colony under the command of Thomas Wheeler and Captain Edward Hutchinson, in August 1675 during King Philip's War. The battle consisted of an initial ambush by the Nipmucs on Wheeler's unsuspecting party, followed by an attack on Brookfield, Massachusetts, and the consequent besieging of the remains of the colonial force. While the place where the siege part of the battle took place has always been known, the location of the initial ambush was a subject of extensive controversy among historians in the late nineteenth century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7992172, imported by tools/import/wikidata.mjs. The item's own description reads \"1675 battle in King Philip's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1675,
+    "date": "1675-08-02",
+    "endDate": "1675-08-04"
+  },
+  "place": "brookfield-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-philip-s-war",
+  "category": "war",
+  "actors": []
+}

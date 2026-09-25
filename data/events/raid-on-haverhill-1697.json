@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "raid-on-haverhill-1697",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7283747",
+  "wikipedia": {
+    "en": "Raid on Haverhill (1697)"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7283747"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Haverhill (1697)\", revision 1374990464"
+    }
+  ],
+  "title": "Raid on Haverhill (1697)",
+  "summary": "The English Wikipedia article \"Raid on Haverhill (1697)\", at revision 1374990464, opens: \"The Raid on Haverhill was a military engagement that took place on March 15, 1697 during King William's War. Ordered by Louis de Buade de Frontenac, Governor General of New France, French, Algonquin, and Abenaki warriors descended on Haverhill, then a small frontier community in the Province of Massachusetts Bay. In the surprise attack, the Abenaki killed 27 colonists and took 13 captive. The natives burned six homes. The raid became famous in the nineteenth century because of Hannah Dustin's captivity narrative as a result of the raid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7283747, imported by tools/import/wikidata.mjs. The item's own description reads \"military engagement that took place on March 15, 1697 during King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1697,
+    "end": 1697,
+    "date": "1697-03-15"
+  },
+  "place": "haverhill-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

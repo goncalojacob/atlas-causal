@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-fontenoy--battle-of-melle--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Melle\", revision 1370449497"
+    }
+  ],
+  "from": "battle-of-fontenoy",
+  "to": "battle-of-melle",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Melle article opens on what Fontenoy left behind: \"After their defeat at Fontenoy in May, the Duke of Cumberland, Allied commander in Flanders, was under pressure from the Austrians to defend Brussels. He also wanted to protect the key port of Ghent, a major supply depot threatened by the French advance into West Flanders.\" The defeat is not given as the cause of the encounter — the column marched for Ghent — but it is the position Cumberland was fighting from, which is what precondition-of says. The lead carries no citation of its own.",
+  "dispute": null
+}

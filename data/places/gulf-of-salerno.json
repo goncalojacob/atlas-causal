@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gulf-of-salerno",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q828574",
+  "wikipedia": {
+    "en": "Gulf of Salerno",
+    "pt": "Golfo de Salerno"
+  },
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Gulf of Salerno",
+    "Golfo de Salerno"
+  ],
+  "where": {
+    "lon": 14.7,
+    "lat": 40.516666666667,
+    "precision": "region",
+    "label": "Gulf of Salerno"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q828574, imported by tools/import/wikidata.mjs. The item's own description reads \"gulf of the Tyrrhenian Sea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

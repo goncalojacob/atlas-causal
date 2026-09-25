@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mohawk-valley-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6893841",
+  "wikipedia": {
+    "en": "Mohawk Valley raid"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6893841"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mohawk Valley raid\", revision 1370719124"
+    }
+  ],
+  "title": "Mohawk Valley raid",
+  "summary": "The English Wikipedia article \"Mohawk Valley raid\", at revision 1370719124, opens: \"The Mohawk Valley raid was conducted against three Mohawk villages located in the Mohawk River valley by French and Indigenous warriors under the overall command of Nicolas d'Ailleboust de Manthet. The action, part of a long-running French-Iroquois conflict and King William's War, which pitted the French against the Iroquois-allied English, resulted in the destruction of three villages, including critical stores of food. Many Mohawks were either killed or captured, with the latter intended to populate Christian Indian villages near Montreal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6893841, imported by tools/import/wikidata.mjs. The item's own description reads \"1692 raid of three Mohawk villages\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-02"
+  },
+  "place": "mohawk-valley",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "beaver-wars",
+    "king-william-s-war"
+  ],
+  "category": "war",
+  "actors": []
+}

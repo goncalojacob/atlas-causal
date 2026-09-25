@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-landriano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2746040",
+  "wikipedia": {
+    "en": "Battle of Landriano",
+    "pt": "Batalha de Landriano"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2746040"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Landriano\", revision 1370447093"
+    }
+  ],
+  "title": "Battle of Landriano",
+  "summary": "The English Wikipedia article \"Battle of Landriano\", at revision 1370447093, opens: \"The Battle of Landriano took place on 21 June 1529, between the French army under Comte de Saint-Pol and the Imperial–Spanish army commanded by Don Antonio de Leyva, Duke of Terranova in the context of the War of the League of Cognac. The French army was destroyed and the battle's strategic result was that the struggle between Francis I of France and Charles V, Holy Roman Emperor for control of northern Italy was temporarily at an end.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2746040, imported by tools/import/wikidata.mjs. The item's own description reads \"1529 battle during the War of the League of Cognac\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-06-21"
+  },
+  "place": "landriano",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-league-of-cognac",
+  "category": "war",
+  "actors": []
+}

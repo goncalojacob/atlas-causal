@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-pemaquid-1689",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7510302",
+  "wikipedia": {
+    "en": "Siege of Pemaquid (1689)"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pemaquid (1689)\", revision 1375095205"
+    }
+  ],
+  "title": "Siege of Pemaquid (1689)",
+  "summary": "The English Wikipedia article \"Siege of Pemaquid (1689)\", at revision 1375095205, opens: \"The siege of Pemaquid was a successful attack by a large band of Abenaki Indians on the English fort at Pemaquid, Fort Charles, then the easternmost outpost of colonial Massachusetts. The French-Abenaki attack was led by Jean-Vincent d'Abbadie de Saint-Castin and Father Louis-Pierre Thury and Chief Moxus. The fall of Pemaquid was a significant setback to the English. It pushed the frontier back to Casco (Falmouth), Maine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510302, imported by tools/import/wikidata.mjs. The item's own description reads \"1689 action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-08-02",
+    "endDate": "1689-08-03"
+  },
+  "place": "colonial-pemaquid-state-historic-site",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-pfaffenhofen--treaty-of-fussen--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Füssen\", revision 1332417337, § Background"
+    }
+  ],
+  "from": "battle-of-pfaffenhofen",
+  "to": "treaty-of-fussen",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The treaty article names the battle as the thing that decided it: \"When Charles VII died in Munich on 20 January 1745, his successor as Elector of Bavaria, Maximilian III Joseph, signed a preliminary peace with Austria. But a strong war-party led by Ignaz von Törring and supported by France wanted to continue the war. After the decisive defeat in the Battle of Pfaffenhofen on 15 April, Maximilian Joseph chose for peace.\" The Pfaffenhofen article says the same from the other end — the war-party leader was dismissed the day after and the treaty was concluded a week later. Neither passage carries a footnote, so Wikipedia is the only author named.",
+  "dispute": null
+}

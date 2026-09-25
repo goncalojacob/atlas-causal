@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-mollwitz--siege-of-brieg--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Brieg\", revision 1372060259"
+    }
+  ],
+  "from": "battle-of-mollwitz",
+  "to": "siege-of-brieg",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Brieg article puts the two in one sentence: \"When the Prussians defeated the Austrian relief army at the Battle of Mollwitz on 10 April 1741, the garrison of Brzeg (Brieg) was doomed. After a few weeks, the Austrian garrison surrendered and was allowed free passage to the fortress of Nysa (Neisse).\" Mollwitz did not take the town; it removed the army that could have relieved it, which is what enabled means here. The lead carries no citation of its own, so Wikipedia is the only author named and the confidence stays probable.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-mollwitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q663435",
+  "wikipedia": {
+    "en": "Battle of Mollwitz",
+    "pt": "Batalha de Mollwitz"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q663435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mollwitz\", revision 1370564561"
+    }
+  ],
+  "title": "Battle of Mollwitz",
+  "summary": "The English Wikipedia article \"Battle of Mollwitz\", at revision 1370564561, opens: \"The Battle of Mollwitz was fought by Prussia and Austria on 10 April 1741, during the First Silesian War. It was the first battle of the new Prussian King Frederick II, in which both sides made numerous military blunders. Frederick fled the battlefield, but the Prussian Army managed to attain victory. This battle cemented Frederick's authority over the newly conquered territory of Silesia and gave him valuable military experience.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q663435, imported by tools/import/wikidata.mjs. The item's own description reads \"1741 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1741,
+    "date": "1741-04-10"
+  },
+  "place": "ma-ujowice",
+  "region": null,
+  "regionNote": null,
+  "parent": "first-silesian-war",
+  "category": "war",
+  "actors": []
+}

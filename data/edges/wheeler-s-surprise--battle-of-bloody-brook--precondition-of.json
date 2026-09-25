@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "wheeler-s-surprise--battle-of-bloody-brook--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Brook\", revision 1374876685"
+    }
+  ],
+  "from": "wheeler-s-surprise",
+  "to": "battle-of-bloody-brook",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Bloody Brook article makes the Brookfield siege the reason the militia were in the Connecticut valley at all: \"In the aftermath of the Siege of Brookfield in the first few months of King Philip's War, the New England Confederation raised several companies of English militia and indigenous allies to protect the western border of the colony, as the settlements there were not able to conscript enough men for their defense.\" One of those companies is what was destroyed at Bloody Brook six weeks later. Precondition-of and not caused: the siege did not order the wagon train out, it put the companies in the valley. Wikipedia is the only author named, so probable.",
+  "dispute": null
+}

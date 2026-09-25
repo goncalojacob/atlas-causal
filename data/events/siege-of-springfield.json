@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-springfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4818005",
+  "wikipedia": {
+    "en": "Siege of Springfield"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4818005"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Springfield\", revision 1370745413"
+    }
+  ],
+  "title": "Siege of Springfield",
+  "summary": "The English Wikipedia article \"Siege of Springfield\", at revision 1370745413, opens: \"The siege of Springfield was a siege of the colonial New England settlement of Springfield in 1675 by Native Americans during King Philip's War. Springfield was the second colonial settlement in New England to be burned to the ground during the war, following Providence Plantations. King Philip's War remains, per capita, the bloodiest war in American history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4818005, imported by tools/import/wikidata.mjs. The item's own description reads \"in 1675, Springfield, Massachusetts, was burned to the ground during King Philip's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1676,
+    "date": "1675-08"
+  },
+  "place": "springfield-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-philip-s-war",
+  "category": "war",
+  "actors": []
+}

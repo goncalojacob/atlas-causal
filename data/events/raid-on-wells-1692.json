@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "raid-on-wells-1692",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5931014",
+  "wikipedia": {
+    "en": "Raid on Wells (1692)"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5931014"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Wells (1692)\", revision 1375427394"
+    }
+  ],
+  "title": "Raid on Wells (1692)",
+  "summary": "The English Wikipedia article \"Raid on Wells (1692)\", at revision 1375427394, opens: \"The Raid on Wells occurred during King William's War when French and Wabanaki Confederacy forces from New France attacked the English settlement at Wells, Maine, a frontier town on the coast below Acadia. The principal attack (1692) was led by La Brognerie, who was killed. Commander of the garrison, Captain James Converse, successfully repelled the raid despite being greatly outnumbered.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5931014, imported by tools/import/wikidata.mjs. The item's own description reads \"1692 Action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-06-10",
+    "endDate": "1692-06-13"
+  },
+  "place": "wells-maine",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

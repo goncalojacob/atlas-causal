@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "italian-campaign-of-1524-1525--battle-of-pavia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian campaign of 1524–1525\", revision 1370624588"
+    }
+  ],
+  "from": "italian-campaign-of-1524-1525",
+  "to": "battle-of-pavia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The campaign article makes the battle the thing the campaign ran into: \"After the French invaded Lombardy, the campaign would then primarily consist of the French attempt to capture the city of Milan. However, after Francis's defeat at the Siege of Pavia, the French were driven out of Italy and Francis was taken prisoner.\" The two are siblings here and not one inside the other — both name the Italian War of 1521–1526 in their own P361 and neither names the other — so the edge says what the article says: the campaign is what brought the French army to Pavia. The sentences are not footnoted to any work Wikipedia names, so Wikipedia is the only author and the confidence stays probable.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-marseille-1524",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3485951",
+  "wikipedia": {
+    "en": "Siege of Marseille (1524)",
+    "pt": "Cerco de Marselha (1524)"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485951"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Marseille (1524)\", revision 1370743308"
+    }
+  ],
+  "title": "Siege of Marseille (1524)",
+  "summary": "The English Wikipedia article \"Siege of Marseille (1524)\", at revision 1370743308, opens: \"The Siege of Marseille (1524) was conducted in August and September 1524 as part of a larger conflict known as the Italian War of 1521–1526 by a Habsburg army, commanded by the Frenchman Charles de Bourbon and the Spaniard Fernando de Avalos. \nThe operation was a failure for the besiegers, who withdrew under the threat of a French relief army commanded by King Francis I in person.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485951, imported by tools/import/wikidata.mjs. The item's own description reads \"military battle in 1524 during the sixth war of Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1524,
+    "date": "1524-08-01",
+    "endDate": "1524-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "italian-war-of-1521-1526",
+  "category": "war",
+  "actors": []
+}

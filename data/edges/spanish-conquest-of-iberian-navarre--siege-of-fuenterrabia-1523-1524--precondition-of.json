@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fuenterrabía (1523–1524)\", revision 1370741324"
+    }
+  ],
+  "from": "spanish-conquest-of-iberian-navarre",
+  "to": "siege-of-fuenterrabia-1523-1524",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Fuenterrabía article gives the occupation as the reason there was anything to retake: \"The siege of Fuenterrabía took place in 1523-24 by a Spanish army, after a Franco-Navarrese army had taken it in 1521 in a new incursion to reconquer the Kingdom of Navarre, which had been occupied since 1512 by troops from the unified Crown of Castile and Crown of Aragon.\" The conquest of 1512 is the record this atlas already holds, and the siege is not filed under it — its own P361 names the Italian War of 1521–1526 — so this is an argument between two records and not a restatement of the filing. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

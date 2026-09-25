@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chotusitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q688504",
+  "wikipedia": {
+    "en": "Battle of Chotusitz"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q688504"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chotusitz\", revision 1370437178"
+    }
+  ],
+  "title": "Battle of Chotusitz",
+  "summary": "The English Wikipedia article \"Battle of Chotusitz\", at revision 1370437178, opens: \"The Battle of Chotusitz, took place on 17 May 1742, in Bohemia, now the Czech Republic, during the First Silesian War, part of the wider War of the Austrian Succession. Led by Charles of Lorraine, an Imperial force of around 25,000 men was advancing against French-occupied Prague, when it ran into a Prussian army of roughly equal size, commanded by Frederick the Great. Casualties were heavy on both sides, and the battle had little impact on the war in general, but is generally considered a Prussian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q688504, imported by tools/import/wikidata.mjs. The item's own description reads \"1742 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1742,
+    "end": 1742,
+    "date": "1742-05-17"
+  },
+  "place": "chotusice",
+  "region": null,
+  "regionNote": null,
+  "parent": "first-silesian-war",
+  "category": "war",
+  "actors": []
+}

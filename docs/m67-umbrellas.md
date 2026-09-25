@@ -943,3 +943,128 @@ still the import's placeholder.
 Every one of the thirteen is filed where its date and its subject put it,
 inside `spanish-american-wars-of-independence` or a national war inside it,
 and what each is missing is what the sources it was built from do not carry.
+
+## M42b batch 30 — three of the American Indian Wars vein name neither
+
+The nineteen records of the American Indian Wars vein (`docs/m42b-pool.md`,
+batch 30) are placed from the item's own `P276` wherever the item names one
+thing, and sixteen of them are. **Three name neither an actor nor a place**,
+and each for its own reason, which is what this section is for.
+
+**`king-philip-s-war` names four locations and no coordinate.** `Q862257`
+carries `P276` `Q1191350`, `Q951500`, `Q2335224` and `Q126195` — Plymouth
+Colony, Rhode Island and two more — and no `P625`, so A12 (2)'s chain reaches
+four grounds and not one. A war fought across southern New England has no
+narrower point that is not a choice, and the run does not make that choice for
+it: the lane is `americas`, named for the item in
+`data/imports/wikidata-seeds.json` because its four locations reach no lane
+polygon on their own, and the record carries nothing else. It is the same
+answer `war-of-jenkins-ear` already has for the same shape of fact.
+
+**`northeast-coast-campaign-1676` carries no location Wikidata knows of at
+all** — no `P625`, no `P276`, no `P131`, no `P17` — and its own cited article,
+at revision 1375172615, places it only along "the New England Colonies/Acadia
+border in present-day Maine", which is a coastline and not a point. The lane is
+named for the item in the seeds file for the same reason.
+
+**`battle-of-turner-s-falls` carries a `P625` and nothing else.** Its point,
+42.612865 / -72.549434, is the falls themselves, and the item names no located
+thing at all: there is no `P276` to take a place record from, and the atlas
+does not write a place out of a bare coordinate, which would be a record with
+a point and no name. The nearest place this batch created,
+`south-deerfield-massachusetts`, is fifteen kilometres away and is a different
+town, so `reusablePlace`'s two signals do not reach it either. The lane is
+derived from the point, which is what an event with a coordinate and no place
+has always taken.
+
+**Each of the three is filed where its date and its subject put it** — the
+first inside `american-indian-wars`, the other two inside `king-philip-s-war` —
+and what each is missing is what the sources it was built from do not carry.
+
+## M42b batch 31 — four of King William's War vein name neither
+
+The twenty-three records of the King William's War vein (`docs/m42b-pool.md`,
+batch 31) are placed from the first thing the item's own chain names that
+carries a point, and nineteen of them are. **Four name neither an actor nor a
+place**, and all four for the same reason in three different shapes: the item
+carries a coordinate and names no located thing, or names nothing at all.
+
+None of the four names an actor either, and that is not this batch's choice:
+eight of the vein's items carry a `P710` at all, between them they name twelve
+participants, and this atlas holds exactly one — `Q142`, France, a CShapes
+actor beginning in 1886, against a war of 1688. New France, New England, the
+Province of Massachusetts Bay, the Wabanaki Confederacy, the Abenaki, the
+Pennacook and the Hudson's Bay Company are none of them records here, so every
+list was partial as well as anachronistic and every list was withheld.
+
+**`avalon-peninsula-campaign` carries no location Wikidata knows of at all** —
+no `P625`, no `P276`, no `P131`, no `P17` — and its own cited article, at
+revision 1375088567, places it along "the coast of the Avalon Peninsula,
+Newfoundland", over 23 settlements in three months. A raiding campaign down a
+coastline has no point that is not a choice, and the run does not make it: the
+lane is `americas`, named for the item in `data/imports/wikidata-seeds.json`,
+and the record carries nothing else. It is the same answer
+`northeast-coast-campaign-1676` already has for the same shape of fact.
+
+**`capture-of-york-factory` carries a `P625` and names only a country.** Its
+point, 57.002722 / -92.304806, is the factory itself on the Hayes River, and
+the only located thing the item names is `Q16`, Canada — which is an actor
+record in this atlas and not a place, so A12 (2)'s chain has nothing to take a
+place record from. The atlas does not write a place out of a bare coordinate,
+which would be a record with a point and no name, and it will not put a fur
+post on Hudson Bay at the point of a country that began in 1867. The lane is
+derived from its own point.
+
+**`battle-of-chedabucto` and `raid-on-salmon-falls` are the same case without
+even the country.** Each carries a `P625` — 45.386667 / -61.505556 at Fort St.
+Louis in Chedabucto, 43.2705 / -70.7781 at Salmon Falls on the Piscataqua — and
+neither names a `P276`, a `P131` or a `P17`. `reusablePlace`'s two signals
+reach nothing: no record of this atlas is near either point or folds to either
+name. The lane is derived from the point, which is what an event with a
+coordinate and no place has always taken.
+
+## M42b batches 31 and 32 — eight more name neither, and a town drawn twice is why
+
+Eight records of these two batches were placed from their items' own `P276` and
+then had that place taken away again, and the reason is not the source: it is
+that **the atlas would have drawn each of those towns twice.**
+
+`battle-of-quebec-1690` (batch 31), and `battle-of-noain`,
+`battle-of-pampeluna`, `siege-of-marseille-1524`, `siege-of-genoa-1522`,
+`siege-of-naples-1528`, `battle-of-gavinana` and `siege-of-florence-1529-1530`
+(batch 32) each name a town — Quebec City, Pamplona, Marseille, Genoa, Naples,
+Florence — that **Natural Earth already draws and already names** on the base
+map, under the very same Wikidata item the record would have carried. The atlas
+has exactly one way to say that a place record and a base-map city are the same
+town: an entry in `data/imports/naturalearth-places.json`, keyed by the city's
+`NE_ID` and **copied onto the city itself by the offline base-map import**
+(`tools/import/naturalearth.mjs`). Without that entry `placeCandidates` in
+`src/map/names.js` does not know the two are one, and writes the name a second
+time beside the first.
+
+**This fire wrote the entries, ran the import, and put both back.** The entries
+and the import are right — the seven towns, `springfield-massachusetts` from
+batch 30 among them, are genuinely the same places — but linking a city to a
+record **raises that city's weight** on the map, because an atlas place outranks
+a plain city in `placeLabels`' ordering. Seven cities changing rank reordered
+the whole label round over Iberia and Italy, let a name through that had not
+been drawn before, and `tests/map-browser.test.mjs` failed on a different pair
+than the one it started with. A records batch may not re-weight the map's labels
+as a side effect of placing eight events, so the import was reverted and the six
+records were not kept.
+
+**What is lost is small and what it buys is a picture that does not lie.** The
+eight events carry their lane — `americas` for Quebec, `europe` for the other
+seven — and `docs/m42b-pool.md` names the trade in deviation 1317. None of the
+eight names an actor either, for the reason that batch's section gives: sixteenth
+century Europe has no polity records here at all, and the participants Quebec's
+item names are CShapes actors beginning in 1886.
+
+**The other twenty of the two batches keep their places**, because the towns they
+name — Hondarribia, Landriano, Montemurlo, Dover, Wells, York, Groton,
+Haverhill, Bicocca, Mézières, Port-Royal, Nashwaak, Fort Albany and the rest —
+are ones **Natural Earth does not draw**, so a record for each is the only mark
+that town has and there is nothing to duplicate. That is the line this fire
+would offer for every batch after it: *a place record for a town the base map
+already names waits for the base-map import; a place record for one it does not
+is written at once.*
