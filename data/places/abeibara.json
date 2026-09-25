@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "abeibara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q127166696, the Abeïbara massacres, read on 2026-09-24; the town itself has no item this pass could reach. A9's first step as A12 (2) corrects it. The massacres themselves were spread over \"a forty kilometer radius\", so the point is the centre the article names and not the extent of the thing."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Abeïbara"
+  ],
+  "where": {
+    "lon": 1.845,
+    "lat": 19.35,
+    "precision": "point",
+    "label": "Abeïbara"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

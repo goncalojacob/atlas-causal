@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-tinzaouaten-2024",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Title from the article (A12 (5)), which disambiguates the 2024 battle from the 2012 one; the item's label does not. Place by A9's second step (P276 Q2312553, the village of Tinzaouaten): the item's own P625 is 28 km west of it, which is the \"outskirts of Tinzaouaten\" the article itself names. Of the four participants the item's P710 gives — Mali, JNIM, the Wagner Group and the CSP — only Mali is an actor this atlas holds, so only Mali is on the record (A12 (4))."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q128007033",
+  "wikipedia": {
+    "en": "Battle of Tinzaouaten (2024)"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q128007033"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868"
+    }
+  ],
+  "title": "Battle of Tinzaouaten (2024)",
+  "summary": "The English Wikipedia article \"Battle of Tinzaouaten (2024)\", at revision 1373950868, opens: \"The battle of Tinzaouaten was a battle between the rebel coalition Strategic Framework for the Defense of the People of Azawad (CSP-DPA), and the Malian Armed Forces (FAMa) backed by the Wagner Group, a Russian state-funded mercenary group. It took place in the outskirts of Tinzaouaten, a commune near the Algeria–Mali border.\" Wikidata item Q128007033, whose own description reads \"2024 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2024,
+    "end": 2024,
+    "date": "2024-07-25",
+    "endDate": "2024-07-27"
+  },
+  "place": "tinzaouaten",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "mali",
+      "role": "belligerent",
+      "note": "P710 on Q128007033; the article makes the Malian Armed Forces one of the two sides."
+    }
+  ]
+}

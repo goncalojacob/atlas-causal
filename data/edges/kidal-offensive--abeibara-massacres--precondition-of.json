@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "kidal-offensive--abeibara-massacres--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Abeïbara massacres\", revision 1326919232, § Background"
+    }
+  ],
+  "from": "kidal-offensive",
+  "to": "abeibara-massacres",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The massacres' own § Background makes the offensive what put the CSP-PSD in Abeïbara: \"Malian and Wagner forces launched an offensive on the Tuareg rebel capital of Kidal, capturing it in November 2023. Remaining CSP-PSD fighters fled to the rural towns of Abeïbara, Tinzaouaten, and the Adrar des Ifoghas mountains.\" The June 2024 operation went after them there — \"Their convoys left the towns of Kidal and Tessalit, and settled in Imaswaqassen, a village four kilometers from Abeibara\" — and the killings were the reprisals around it. Precondition and not cause: the article says the offensive made Abeïbara the ground, not that it ordered what was done there. Probable: Wikipedia alone.",
+  "dispute": null
+}

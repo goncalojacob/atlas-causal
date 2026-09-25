@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chaplain-medic-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Title from the article (A12 (5)): the item's label is \"Tunam massacre\" and the English article it sitelinks is \"Chaplain–Medic massacre\". No category: the item's class is Q135010, war crime, and data/categories.json has no kind for an atrocity, as Q3199915 massacre already has none. Place by A9's first step, the item's own P625, which the article gives to the same digits."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5073209",
+  "wikipedia": {
+    "en": "Chaplain–Medic massacre"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5073209"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chaplain–Medic massacre\", revision 1363525691"
+    }
+  ],
+  "title": "Chaplain–Medic massacre",
+  "summary": "The English Wikipedia article \"Chaplain–Medic massacre\", at revision 1363525691, opens: \"The Chaplain–Medic massacre took place in the Korean War on July 16, 1950, on a mountain above the village of Tuman (current Duman-ri, Geumnam-myeon, Sejong City). ... Thirty unarmed, critically wounded United States Army (US) soldiers and an unarmed chaplain were murdered by members of the Korean People's Army (KPA) during the Battle of the Kum River.\" Wikidata item Q5073209, whose own description reads \"War crime during the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-07-16"
+  },
+  "place": "duman-ri",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "actors": []
+}

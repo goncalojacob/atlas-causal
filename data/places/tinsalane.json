@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tinsalane",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q15231259, the ambush of Tinsalane, read on 2026-09-24; the locality itself has no item this pass could reach. The article places it \"in Tinsalane, 20 kilometers south of Tessalit\", which is where this point is."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Tinsalane"
+  ],
+  "where": {
+    "lon": 0.669722222,
+    "lat": 20.023888888,
+    "precision": "point",
+    "label": "Tinsalane"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

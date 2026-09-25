@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-nam-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "parent"
+    ],
+    "note": "Filed under korean-war and not under the umbrella its own article names. The article's infobox reads \"part of the Battle of Pusan Perimeter\", but that record runs 4 August – 18 September 1950 and this battle runs to 19 September, so M62's span test refuses the nearer umbrella by one day. A later fire that widens the perimeter's interval under A7 from the perimeter's own article should re-file this record under it."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2890901",
+  "wikipedia": {
+    "en": "Battle of Nam River"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nam River\", revision 1376271535"
+    }
+  ],
+  "title": "Battle of Nam River",
+  "summary": "The English Wikipedia article \"Battle of Nam River\", at revision 1376271535, opens: \"The Battle of Nam River was an engagement between the United Nations Command (UN) and North Korean forces early in the Korean War from August 31 to September 19, 1950, in the vicinity of the Nam River and the Naktong River in South Korea. It was a part of the Battle of Pusan Perimeter.\" Wikidata item Q2890901, whose own description reads \"1950 battle during the Korean War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1950,
+    "end": 1950,
+    "date": "1950-08-31",
+    "endDate": "1950-09-19"
+  },
+  "place": "nam-river",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    }
+  ]
+}

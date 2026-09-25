@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-pokpung--battle-of-the-pusan-perimeter--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pokpung\", revision 1373958261, lead"
+    }
+  ],
+  "from": "operation-pokpung",
+  "to": "battle-of-the-pusan-perimeter",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same lead says where the invasion ended: heavy losses \"were inflicted on the DPRK's II Corps by the ROK's 6th Infantry Division, stalling the DPRK's advance in the east, ceasing the blitzkrieg at the Battle of the Pusan Perimeter.\" The perimeter battle is the invasion's advance being stopped, so the invasion is what there was to stop. Precondition-of and not caused: the article states that the operation ran into the perimeter, not that it ordered the perimeter defence. Probable: Wikipedia alone.",
+  "dispute": null
+}

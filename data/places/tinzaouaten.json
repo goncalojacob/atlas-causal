@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tinzaouaten",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "Written from Q2312553, the commune and village of Kidal Region, by A9's second step (P276) and not its first. The battle item's own P625 is 28 km west of the village, which is the \"outskirts of Tinzaouaten\" its own article names, so the village is where the battle was and is a place a later record can reuse; a place record written at the battlefield point and called Tinzaouaten would be neither. `city` off the item's own class, a commune and village."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2312553",
+  "wikipedia": {
+    "en": "Tinzaouaten"
+  },
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-24"
+  },
+  "sources": [],
+  "names": [
+    "Tinzaouaten"
+  ],
+  "where": {
+    "lon": 2.966,
+    "lat": 19.9488,
+    "precision": "city",
+    "label": "Tinzaouaten"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
