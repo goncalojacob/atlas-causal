@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-reynoguelen-1536--arauco-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Reynogüelén (1536)\", revision 1370587425"
+    }
+  ],
+  "from": "battle-of-reynoguelen-1536",
+  "to": "arauco-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle's own article places it before the war and inside its causation in one sentence: \"This battle is an antecedent of the Arauco War.\" It is the first fighting between Spanish conquistadors and the Mapuche, ten years before the war this atlas dates from 1546 — which is why Wikidata's P361 filing under the war was refused here and this edge written instead. Precondition-of and not caused: an antecedent is what the article claims, and a battle at the confluence of the Ñuble and the Itata does not bring about a war that starts a decade later; it is what the war was already under way from.",
+  "dispute": null
+}

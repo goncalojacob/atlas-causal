@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-rio-bueno-1759",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-by-span-and-subject"
+    ],
+    "note": "Wikidata Q104849178 gives P361 \"Arauco War\", which this atlas dates 1546-1662; the battle is 1759, a century after it ends. The P361 filing was refused and the umbrella written here is the one that fits by span and subject: the cached English lead at revision 1370587848 has Spanish colonial forces and the Spanish authorities in Valdivia, which is inside the Spanish colonization of the Americas, 1493-1898."
+  },
+  "wikidata": "Q104849178",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Río Bueno (1759)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104849178"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Río Bueno (1759)\", revision 1370587848"
+    }
+  ],
+  "title": "Battle of Río Bueno (1759)",
+  "summary": "The English Wikipedia article \"Battle of Río Bueno (1759)\", at revision 1370587848, opens: \"The Battle of Río Bueno in 1759 was a military engagement between Spanish colonial forces and local Huilliche in the Bueno River of south-central Chile. The battle was fought on January 27 with the Spanish forces led by Juan Antonio Garretón. The battle of 1759 was an exception to the overall policy of befriending indigenous communities on behalf of the Spanish authorities in Valdivia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104849178, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 Spanish victory against indigenous peoples in Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-01-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

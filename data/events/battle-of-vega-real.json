@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-vega-real",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "date-from-article",
+      "second-parent-a8"
+    ],
+    "note": "Wikidata P585 gives 1495-03-27 and the English article this record cites says 24 March 1495, in its first sentence and again under \"Hispaniola\" (revision 1370592275); the day is the article's. Second umbrella under A8: the article on the destruction of the Taino describes this day and quotes Ferdinand Columbus on the tribute it settled (\"Taino genocide\", revision 1370273790), so the battle is an episode of that record by span and subject. An edge was drafted first and rule 4 refused it, rightly."
+  },
+  "wikidata": "Q5723209",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Vega Real"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5723209"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vega Real\", revision 1370592275"
+    }
+  ],
+  "title": "Battle of Vega Real",
+  "summary": "The English Wikipedia article \"Battle of Vega Real\", at revision 1370592275, opens: \"The Battle of Vega Real, also called the Battle of the Holy Hill or the Battle of Jáquimo, took place on 24 March 1495 on the island of Hayti between an indigenous alliance and Spanish forces, commanded by Christopher Columbus, Bartholomew Columbus and Alonso de Ojeda, with the help of indigenous people led by Guacanagaríx. The battle resulted in the defeat and capture of the Taíno leader Caonabo, ending indigenous resistance on Hayti.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5723209, imported by tools/import/wikidata.mjs. The item's own description reads \"1495 battle on the island of Hispaniola between indigenous and Spanish forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1495,
+    "end": 1495,
+    "date": "1495-03-24"
+  },
+  "place": "la-vega-dominican-republic",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "spanish-colonization-of-the-americas",
+    "indigenous-depopulation-of-the-greater-antilles"
+  ]
+}

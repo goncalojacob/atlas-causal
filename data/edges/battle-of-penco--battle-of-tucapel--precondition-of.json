@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-penco--battle-of-tucapel--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arauco War\", revision 1376467209, § First Great Mapuche Rebellion (1553)"
+    }
+  ],
+  "from": "battle-of-penco",
+  "to": "battle-of-tucapel",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Penco is where Concepción was founded and held, and Concepción is the base the southern forts were planted from — which is what the Mapuche council of 1553 resolved to make war over. The article: after Penco, \"Despite the resulting submission of the local tribes, de Valdivia sent an emissary to the Viceroy of Peru, asking for additional forces\", then Imperial, Villarrica and Valdivia are established and \"de Valdivia returned to his base at Concepción in 1552\". Then: \"With the goal of securing the lines of communication with the southern forts, de Valdivia launched a third expedition which established forts at Tucapel, Purén, Confines, and Arauco... In 1553, the Mapuches held a council at which, because of the growth of Spanish forces in their territory, they resolved to make war\" — and Lautaro opened it by attacking the fort at Tucapel. Precondition-of, over several steps the article names: the reason given for the war is the growth of Spanish forces, and Penco is where that growth was based.",
+  "dispute": null
+}

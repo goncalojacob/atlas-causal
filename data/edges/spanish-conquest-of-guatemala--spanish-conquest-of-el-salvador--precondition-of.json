@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of El Salvador\", revision 1370748295, § lead"
+    }
+  ],
+  "from": "spanish-conquest-of-guatemala",
+  "to": "spanish-conquest-of-el-salvador",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Guatemala is where the campaign against El Salvador came from, and the article says so twice. Of the first expedition: \"The first campaign against the native inhabitants was undertaken in 1524 by Pedro de Alvarado. Alvarado launched his expedition against the Pipil province of Cuzcatlan, also known as Nequepio, from the Guatemalan Highlands, but by July 1524 he had retreated back to Guatemala.\" Of what held the province afterwards: an expedition from Nicaragua \"marched on San Salvador, before being repulsed by a relief force sent from Guatemala\", and the province ended \"a colonial backwater with a small Spanish population, within the jurisdiction of the Captaincy General of Guatemala\". Precondition-of and not caused: the conquest of Guatemala is the base the Salvadoran campaigns were mounted and resupplied from, not the reason they were mounted.",
+  "dispute": null
+}
