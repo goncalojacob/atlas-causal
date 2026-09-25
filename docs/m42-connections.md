@@ -5399,3 +5399,67 @@ had to reach it through an umbrella.
   person's standing and not a statement that the killing conditioned the coup,
   and the chain the article does argue — through the rebellions — is already an
   edge here.
+
+## Batch 59 — the Gao counterattacks of February and March 2013, and the third article that names two records for them
+
+*25 September, the fire that claimed at 12:08Z. Africa and Asia were tied at 174
+active events each, so A10's order of need gives the batch to **Africa** and
+deviation 1449 decides the vein: ranked by how many of the records a vein already
+holds sit inside the largest connected component, the Mali War (`Q2946372`) is
+the strongest vein in the atlas at **22**, ahead of the Cold War's 21 and the
+Vietnam War's 10. Two rows arrive and four edges are written, two of them
+between records the atlas already held. The full note, the refusals and the
+counts are in `docs/m42-pool.md` under "Batch 59".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `second-battle-of-gao` → `third-battle-of-gao` | `reacted-to` | *"Gao was captured by French and Malian troops on 27 January 2013 ... the Movement for Oneness and Jihad in West Africa and Mulathamen remained in the Gao region. They tried to take back the city, in two attempted operations before, first on 10 February, and then again on 20 February, but their attacks failed"* — "Battle of Imenas", revision 1370265996, § Background and deployment |
+| `second-battle-of-gao` → `fourth-battle-of-gao` | `reacted-to` | the same sentence, whose "20 February" is linked to the fourth battle as its "10 February" is linked to the third |
+| `fourth-battle-of-gao` → `battle-of-imenas` | `precondition-of` | *"However, French and Malian forces, wished to secure the region, and fully expel the MUJAO-Mulathamen coalition from the Gao and its regions, so they began interrogating captured jihadists to learn information about the positions and the number of the jihadists. Finally the staff of Operation Serval estimated that about 100 fighters divided into several small groups were located east of Gao ... French code-named Operation Doro was launched on 27 February"* — "Battle of Imenas", revision 1370265996, § Background and deployment |
+| `battle-of-imenas` → `battle-of-tin-keraten` | `precondition-of` | *"After the victory of the Battle of Iminenas, the French and Malian forces continued their war against the Islamist Jihadist coalition of MOJWA, AQIM, Ansar Dine and Al-Mulathamen ... The next target of the Franco-Malian forces was the wadi of Tin Keraten, located north-east of Imenas, 100 kilometers east of Gao"* — "Battle of Tin Keraten", revision 1370591104, § Background |
+
+**Two of the four edges have no arrival at either end, and they are why the
+component moved by four and not by two.** `second-battle-of-gao` →
+`third-battle-of-gao` and → `fourth-battle-of-gao` join a two-node component the
+atlas has carried since batch 56 to the 673, and both rest on a sentence in a
+**third** article — the one this batch imported. Neither Gao article names the
+other: the third's lead calls itself "a raid on the city" and the fourth's "an
+attempt by rebel MOJWA forces to retake the city", and neither says from whom.
+The Imenas background says it, with the wikilinks to prove which records it means.
+**A batch's best edge can be one that runs between two records it did not
+import, found only because the article it was reading for something else knew
+both of them.** That is batch 57's Khe Sanh lesson with two records rescued
+instead of one.
+
+**`reacted-to` is written twice and the second is redundant to the graph.**
+`third-battle-of-gao` → `fourth-battle-of-gao` has been here since batch 56, so
+the fourth already reaches the 673 once the third does, and
+`second-battle-of-gao` → `fourth-battle-of-gao` opens no path. It is written
+because the sentence names two attempts and the second of them is about that
+record: a reader opening the fourth battle should find the capture it answered on
+its own card, and not only one hop away. Nothing in the count depends on it.
+
+**Four edges were read and refused.**
+
+- **`battle-of-in-khalil` → `operation-serval`**, on the In Khalil article's
+  *"The MUJAO immediately claimed responsibility for both bombings and said it
+  specifically targeted the MNLA for their part in siding with the French
+  intervention"* (revision 1370443719). The sentence argues a reaction and names
+  what was answered — but it names it as "the French intervention", in plain
+  words and with no wikilink, and deciding that those three words are
+  `operation-serval` is an identification a person should make and not a run.
+  The row was not imported.
+- **`battle-of-anoumalane` → `battle-of-tinzaouaten-2024`**, on *"The battle was
+  the largest defeat for Malian and allied Russian forces since the battle of
+  Tinzaouaten nearly one year earlier"* (revision 1370432110). A comparison of
+  two defeats by size, which says less than chronology does: it does not even
+  claim the second followed from the first. The row was not imported.
+- **`battle-of-tinzaouaten-2024` → `mali-fuel-blockade`**, on *"Following a
+  setback at the Battle of Tinzaouaten in 2024 ... the Wagner Group was replaced
+  by the Russian Africa Corps ... Following 2024, JNIM opened a new front to
+  isolate Bamako"* ("2026 Mali offensives", revision 1376558898, § Background).
+  Two sentences opening on "Following" with nothing between them but the year:
+  A14 (4)'s refusal class exactly, and the consequence the first one does argue —
+  Wagner replaced by the Africa Corps — is not an event this atlas holds.
+- **`mali-war` → any of the four Gao and Imenas records.** Containment, which is
+  the filing they already carry, and C8 bars it as an edge.
