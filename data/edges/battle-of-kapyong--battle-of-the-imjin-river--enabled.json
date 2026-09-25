@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-kapyong--battle-of-the-imjin-river--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kapyong\", revision 1376150205, § Chinese spring offensive"
+    }
+  ],
+  "from": "battle-of-kapyong",
+  "to": "battle-of-the-imjin-river",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Kapyong's own article states that the action there was set as a task of the thrust on the Imjin: Commander \"Wen Yuchen of the 40th Army was given the mission of destroying the ROK 6th Division while blocking any UN reinforcements towards the Imjin River at Kapyong.\" The same section has the offensive opening on 22 April on two fronts, \"the main thrust across the Imjin River in the western sector\" and \"the secondary effort\" further east, where Kapyong is. Enabled and not caused: the fighting at Kapyong is what kept the main thrust from being reinforced against, not what started it. Probable: Wikipedia alone.",
+  "dispute": null
+}

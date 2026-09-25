@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-23",
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
-      "identity-by-hand"
+      "identity-by-hand",
+      "filed-by-span-and-subject"
     ],
-    "note": "M42 batch 43. Q626191 came out of the inverse `part of` vein as an item nothing held; the run created `indian-annexation-of-goa` from it, found this record the same event, deleted the duplicate and wrote the identity here by hand — the M20 route (deviation 1235). The item's `P361` names the Portuguese Colonial War and this record is **not** filed under it: M62 §3 decided that an event whose author is another state, with the umbrella as its object, is not the umbrella's part."
+    "note": "A6 and M62: inside the span (1961, against 1933 to 1974) and inside the subject — the Estado Novo is the government whose territory was taken. Not filed under portuguese-colonial-war-1961-1974, whose subject is the fighting in Africa: a war is its own umbrella by its fighting (A6). M67 rule 1 does not bite — the annexation neither made the regime nor ended it."
   },
   "origin": {
     "tool": "assistant"
@@ -53,6 +54,7 @@
   },
   "place": "panaji",
   "region": null,
+  "parent": "estado-novo-1933-1974",
   "actors": [
     {
       "actor": "republic-of-india",

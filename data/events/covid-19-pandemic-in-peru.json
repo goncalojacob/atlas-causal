@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-peru",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q87587763",
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Peru",
+    "pt": "Pandemia de COVID-19 no Peru"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q87587763"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Peru\", revision 1361422337"
+    }
+  ],
+  "title": "COVID-19 pandemic in Peru",
+  "summary": "The English Wikipedia article \"COVID-19 pandemic in Peru\", at revision 1361422337, opens: \"In Peru, the COVID-19 pandemic has resulted in 4,533,862 confirmed cases of COVID-19 and 221,072 deaths. The virus spread to Peru on 6 March 2020, when a 25-year-old man who had travelled to Spain, France, and the Czech Republic tested positive. On 15 March 2020, President Martín Vizcarra announced a country-wide lockdown, closing borders, restricting domestic flights, and forbidding nonessential business operations, excluding health facilities, grocery stores, pharmacies, and banks. As of May 2023, Peru has the highest COVID-19 death rate in the world, with over 6,400 deaths per one million citizens.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q87587763, imported by tools/import/wikidata.mjs. The item's own description reads \"viric outbreak in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-03-06"
+  },
+  "place": "peru-q419",
+  "region": null,
+  "regionNote": null,
+  "parent": "covid-19-pandemic-in-south-america",
+  "category": "disaster",
+  "actors": []
+}

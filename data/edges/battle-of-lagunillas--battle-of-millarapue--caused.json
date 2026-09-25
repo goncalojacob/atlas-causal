@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-lagunillas--battle-of-millarapue--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Millarapue\", revision 1376536206, History"
+    }
+  ],
+  "from": "battle-of-lagunillas",
+  "to": "battle-of-millarapue",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Millarapue article opens on the previous battle: \"After the victory of the Spanish arms in the Battle of Lagunillas, Mendoza went into the hostile territory of Arauco looking for a decisive battle.\" The advance into Arauco that produced Millarapue three weeks later is, on the article's own account, what the victory at Lagunillas led to. Probable: Wikipedia alone.",
+  "dispute": null
+}

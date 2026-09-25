@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "2025-catatumbo-clashes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q131838925",
+  "wikipedia": {
+    "en": "2025 Catatumbo clashes",
+    "pt": "Atentados de Catatumbo de 2025"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131838925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2025 Catatumbo clashes\", revision 1370103711"
+    }
+  ],
+  "title": "2025 Catatumbo clashes",
+  "summary": "The English Wikipedia article \"2025 Catatumbo clashes\", at revision 1370103711, opens: \"On 16 January 2025, National Liberation Army (ELN) militants launched several attacks against FARC dissidents in the Catatumbo region of Colombia, as part of the Catatumbo campaign. At least 103 people have been killed in the attacks, with others injured, kidnapped, and displaced.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131838925, imported by tools/import/wikidata.mjs. The item's own description reads \"attacks by the National Liberation Army in the Catatumbo region of Colombia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2025,
+    "end": null,
+    "date": "2025-01-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "catatumbo-campaign",
+  "category": "war",
+  "actors": []
+}

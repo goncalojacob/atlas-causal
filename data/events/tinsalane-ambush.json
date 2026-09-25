@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tinsalane-ambush",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": "2026-09-24",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Title from the article (A12 (5)): the item's label is \"Ambush of Tinsalane\" and the English article it sitelinks is \"Tinsalane ambush\". Filed under 2012-tuareg-rebellion, which is the item's own P361 and not mali-war. Place by A9's first step, the item's own P625."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q15231259",
+  "wikipedia": {
+    "en": "Tinsalane ambush"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15231259"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tinsalane ambush\", revision 1370751066"
+    }
+  ],
+  "title": "Tinsalane ambush",
+  "summary": "The English Wikipedia article \"Tinsalane ambush\", at revision 1370751066, opens: \"The ambush of Tinsalane occurred on February 11, 2012, when armed groups of Ansar Dine and the National Movement for the Liberation of Azawad (MNLA) fought against a convoy of the Malian army who came to reinforce the troops besieged in Tessalit.\" Wikidata item Q15231259, which carries no description in English or Portuguese. That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2012,
+    "end": 2012,
+    "date": "2012-02-11"
+  },
+  "place": "tinsalane",
+  "region": null,
+  "regionNote": null,
+  "parent": "2012-tuareg-rebellion",
+  "category": "war",
+  "actors": []
+}

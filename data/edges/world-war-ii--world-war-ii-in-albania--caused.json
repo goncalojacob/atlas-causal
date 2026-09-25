@@ -13,11 +13,12 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
-      "edge-drafted"
+      "edge-drafted",
+      "a13-contradicted"
     ]
   },
   "origin": {
@@ -32,7 +33,15 @@
   "from": "world-war-ii",
   "to": "world-war-ii-in-albania",
   "type": "caused",
-  "confidence": "probable",
+  "confidence": "disputed",
   "explanation": "The article is about the war in one country and says how it arrived there: “In Albania, World War II began with its invasion by Italy in April 1939. Fascist Italy set up Albania as its protectorate or puppet state. The resistance was largely carried out by Communist groups against the Italian and then German occupation in Albania.” The occupation and the resistance to it are what the war was in Albania. **The record’s own interval is Wikidata’s, 1942–1944, and the article dates the war there from April 1939** — the sixth record of this run whose imported interval is shorter than its own summary, and left visible rather than repaired.",
-  "dispute": null
+  "dispute": {
+    "text": "The edge’s own cited article contradicts it, and A13 says such an edge is marked and never silently turned round. \"World War II in Albania\", at revision 1376137340, opens: \"In Albania, World War II began with its invasion by Italy in April 1939.\" This atlas dates the war itself from 1 September 1939, five months later, so the war cannot have caused the theatre that carries its name: what the article describes is an Italian invasion that the European war then absorbed. The record’s span was widened to 1939–1944 by this fire under A7 from that same sentence, which is what brought the contradiction out. What is plainly true of the pair — that one is part of the other — `parent` already says. Which record the edge should run between, if any, is a reviewer’s judgement on review.html.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"World War II in Albania\", revision 1376137340, first sentence"
+      }
+    ]
+  }
 }

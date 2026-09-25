@@ -6882,76 +6882,547 @@ hold are the same rule read at different depths: **file under the most specific 
 and let the rest be reached through it.** Caught before the push, by running the suite
 over the records before committing them, which is deviation 1286's own lesson applied.
 
-## Where the run stands, for the fire that picks it up
+## Batch 27 — the COVID-19 pandemic in the Americas, and the Americas' twenty-first century
 
-*24 September, after the twenty-sixth fire and its batch 26.*
+*24 September, the twenty-seventh fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **982 active** |
-| **main** | **242** — the count the next batch must not raise |
+| corpus | **989 active** (982 on this branch, plus the seven `origin/m42` brought) |
+| **main** | **242** |
 | **largest connected component** | **651** |
-| the second component | **12** |
-| components | 230 |
-| events with no edge at all | **176** |
+| components | 233 |
+| events with no edge at all | 178 |
+| Europe before 1900 | 131 active, 18 main |
+| the `americas` lane | 236 active, 55 main |
+| **the Americas' twenty-first century** | **20 active, 1 main** — the thinnest cell of this partition that is not against the 1492 wall, and the one the last fire called the cheapest unexamined one |
+
+**Two merges came first.** `origin/m0` was three commits ahead and merged clean;
+`origin/m42` was seven ahead with its batch 53, the Korean War's opening, and
+conflicted only in `STATUS.md`'s claim lines, which were unioned. `data/index/`
+was dropped and rebuilt, and the validator was clean at 0 errors before either
+merge was committed.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 162 | 31 | 162 | 31 |
+| `americas` | 236 | 55 | **253** | 55 |
+| `asia` | 165 | 67 | 165 | 67 |
+| `europe` | 426 | 89 | 426 | 89 |
+| Europe before 1900 | 131 | 18 | 131 | 18 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| the Americas' 16th | 22 | 3 | 22 | 3 |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 32 | 2 | 32 | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| **the Americas' 21st** | **20** | **1** | **37** | **1** |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 24 | 3 | 24 | 3 |
+| Europe's 19th | 38 | 10 | 38 | 10 |
+
+South and central America against north, inside the `americas` lane: **208 to 20**,
+with twenty-five of the lane's events placeless. Nine of this batch's placed records
+are South America's and two are North America's; six are placeless. The brief's
+*"South and Central America before North America"* was not a constraint here — the
+column has stood far ahead since before this run began — but the vein was taken in
+that order anyway, South America's ten countries before North America's three.
+
+**The main count is 242 before and 242 after.** Every one of the seventeen is filed:
+the two continental records under `covid-19-pandemic`, which this atlas has held
+since M20; the thirteen country records under whichever continental record Wikidata's
+own `P361` puts them in; `2013-colombian-clashes` under `colombian-conflict` and
+`2025-catatumbo-clashes` under `catatumbo-campaign`, which its own lead calls it part
+of. Not one of the seventeen could raise it.
+
+### The vein, and why it was the one to take
+
+The last fire left two cells level at the bottom of this partition — the Americas'
+seventeenth (23, 6), blocked on three decisions since batch 22, and the Americas'
+twenty-first (20, 1), which no fire of this run had ever surveyed. The twenty-first
+was the one with a decision-free vein.
+
+**The survey said the obvious vein was nearly spent and the unobvious one was not.**
+`P361` on `Q169072`, the Colombian conflict, returns **43** items; this branch holds
+twenty of them and of the twenty-three unimported **only two fall after 2000 and
+carry an English article** — `Q14186580` and `Q131838925`. `P361` on `Q2920526`, the
+Nova República, returns nothing at all. Two records is not a batch.
+
+**What the cell did have was the pandemic.** `covid-19-pandemic` (`Q81068910`) has
+been here since M20 with exactly one child, `covid-19-pandemic-in-europe`, and
+Wikidata files the whole of the rest of the world under it in a three-level tree:
+the global item, a continental item per continent, a country item under that. The
+Americas' two continental items both carry `P31 Q3241045`, a class this table has
+mapped to an **event** of category `disaster` since M20, and **forty-four** country
+and territory items hang under them, every one with an English article and a start
+date in 2020.
+It is a main-count-safe vein three levels deep inside a record this atlas already
+holds, and the fifteen taken here are the top of it.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `covid-19-pandemic-in-south-america` | `Q86694744` | 2020-02-25 | `covid-19-pandemic` | — (placeless, `americas`) | Americas 21st |
+| `covid-19-pandemic-in-north-america` | `Q86695115` | 2020-01-21 | `covid-19-pandemic` | — (placeless, `americas`) | Americas 21st |
+| `covid-19-pandemic-in-brazil` | `Q86597695` | 2020-02-26 | `covid-19-pandemic-in-south-america` | `brazil-q155` (already here) | Americas 21st |
+| `covid-19-pandemic-in-argentina` | `Q87235137` | 2020-03-03 | `covid-19-pandemic-in-south-america` | `argentina-q414` (already here) | Americas 21st |
+| `covid-19-pandemic-in-chile` | `Q87191204` | 2020-03-03 | `covid-19-pandemic-in-south-america` | `chile-q298` (already here) | Americas 21st |
+| `covid-19-pandemic-in-colombia` | `Q87483673` | 2020-03-06 | `covid-19-pandemic-in-south-america` | `colombia-q739` (already here) | Americas 21st |
+| `covid-19-pandemic-in-peru` | `Q87587763` | 2020-03-06 | `covid-19-pandemic-in-south-america` | `peru-q419` (already here) | Americas 21st |
+| `covid-19-pandemic-in-ecuador` | `Q87250713` | 2020-02-14 | `covid-19-pandemic-in-south-america` | `ecuador-q736` (already here) | Americas 21st |
+| `covid-19-pandemic-in-venezuela` | `Q87652010` | 2020-02-29 | `covid-19-pandemic-in-south-america` | `venezuela-q717` (already here) | Americas 21st |
+| `covid-19-pandemic-in-bolivia` | `Q87480220` | 2020-03-10 | `covid-19-pandemic-in-south-america` | `bolivia-q750` (already here) | Americas 21st |
+| `covid-19-pandemic-in-uruguay` | `Q87660365` | 2020-03-13 | `covid-19-pandemic-in-south-america` | `uruguay-q77` (already here) | Americas 21st |
+| `covid-19-pandemic-in-guyana` | `Q87659698` | 2020-03-11 | `covid-19-pandemic-in-south-america` | — (placeless, `americas`) | Americas 21st |
+| `covid-19-pandemic-in-mexico` | `Q86628344` | 2020-02-27 | `covid-19-pandemic-in-north-america` | `mexico-q96` (already here) | Americas 21st |
+| `covid-19-pandemic-in-the-united-states` | `Q83873577` | 2020-01-21 | `covid-19-pandemic-in-north-america` | `united-states-q30` (already here) | Americas 21st |
+| `covid-19-pandemic-in-canada` | `Q83873580` | 2020-01-25 | `covid-19-pandemic-in-north-america` | — (placeless, `americas`) | Americas 21st |
+| `2013-colombian-clashes` | `Q14186580` | 2013-07-21 | `colombian-conflict` | — (placeless, `americas`) | Americas 21st |
+| `2025-catatumbo-clashes` | `Q131838925` | 2025-01-16 | `catatumbo-campaign` | — (placeless, `americas`) | Americas 21st |
+
+**Seventeen records created, none enriched, none ambiguous, one refused, and no place
+written at all**, over **one** `--import` run of eighteen items and **33 calls**,
+with 31 Wikipedia leads cached.
+
+**Eleven of the seventeen nevertheless point at a place, and not one of them cost a
+call or a guess.** Every country item's `P276` is the country itself, whose class
+`Q6256` this table maps to an **actor** and not a place, so the import creates no
+place for it — but `data/places/` already holds a record for each of these eleven
+countries, written by earlier batches, and the import's own `byItem` table matched
+them **by Wikidata item alone**, which is why the report counts no reuse: the
+`reusablePlace` guard of M87 §11 was never reached, because there was nothing to
+guess. No `a9-place` flag was written on any of the seventeen. The
+six that are placeless are placeless because there is no such record: two continents,
+Canada, Guyana, and the two Colombian actions, whose locations are a natural region
+with no coordinate at all.
+
+### The summaries
+
+Every one of the seventeen carries the cached English lead at a named revision,
+written on the second pass deviation 1257 describes, with the `wikipedia-en` citation
+beside the `wikidata` one and `summary-from-lead` in `review.flags`. **No record of
+this batch shows the placeholder alone.** The shortest quoted lead is Uruguay's at
+104 characters, the longest the United States' at 1,339.
+
+### What was connected (A5)
+
+**Six edges, all `caused`, all `probable`, all from a sentence of an article the
+record cites at the revision it cites, and none from a parent to its own child.**
+
+| edge | what the article says |
+| --- | --- |
+| `covid-19-pandemic` → `covid-19-pandemic-in-the-united-states` | the American lead opens on Wuhan and then on arrival: "On 31 December 2019, China announced the discovery of a cluster of pneumonia cases in Wuhan. The first American case of COVID-19 was reported on January 20" |
+| `covid-19-pandemic-in-europe` → `covid-19-pandemic-in-south-america` | the continental lead dates the arrival to one case in São Paulo; the Brazilian lead says that case was "a man from São Paulo who had traveled to Italy" |
+| `covid-19-pandemic-in-europe` → `covid-19-pandemic-in-brazil` | the same sentence, on the record it is the lead of |
+| `covid-19-pandemic-in-europe` → `covid-19-pandemic-in-peru` | "a 25-year-old man who had travelled to Spain, France, and the Czech Republic tested positive" |
+| `covid-19-pandemic-in-europe` → `covid-19-pandemic-in-chile` | "Initial cases had been imported from Southeast Asia and Europe" — partly, and the explanation says so: this atlas holds only the European half of that sentence |
+| `covid-19-pandemic-in-the-united-states` → `covid-19-pandemic-in-guyana` | "The first case was a woman who travelled from New York" |
+
+**Five of the six reach outside the batch**, into `covid-19-pandemic` and
+`covid-19-pandemic-in-europe`, which this atlas has held since M20 and which sit
+inside the largest component. That is why the component rose by exactly the number
+of records the edges touch.
+
+### The number A5 asks about
+
+| | before | after |
+| --- | --- | --- |
+| active events | 989 | **1,006** |
+| main | 242 | **242** |
+| active edges | 929 | **935** |
+| **largest connected component** | **651** | **657** |
+| components | 233 | 244 |
+| events with no edge at all | 178 | **189** |
+
+**Six joined the component and eleven did not, and A14 is most of the difference
+again.** Argentina, Colombia, Ecuador, Venezuela, Bolivia, Uruguay, Mexico and Canada
+each have a lead that states one link and one only — that the national epidemic was
+part of the worldwide one — and the worldwide one is their grandparent, not their
+parent, so A14 does not refuse those eight. **What refuses them is that the sentence
+is a part-of statement and not a causal one**, and this run will not turn "was a part
+of the worldwide pandemic" into a `caused` edge when the same articles say plainly,
+where they know it, which country the first case flew in from. The five leads that do
+say it are the five edges above.
+
+**The two continental records are isolated for A14's own reason**, and they are the
+cleanest example this run has produced. Each states exactly one link — North
+America's to the first American case, South America's to the first Brazilian one —
+and in both the other end is the record's own child. One of the two was saved
+anyway, because Brazil's article names Italy and Europe is a sibling and not an
+ancestor; North America's has no such second article, so it stays alone.
+
+### What was refused
+
+| item | what it is | why |
+| --- | --- | --- |
+| `Q87589123` | the COVID-19 pandemic in Paraguay | its one class is `Q98379923`, which the table has nothing to say about. It is the only country of South America's thirteen that carries a class none of the other twelve do, and a class line added to import one record is exactly the shape deviation 1266 refuses. **Deviation 1296** |
+| the twenty-one older Colombian items | `Q1032474`, `Q1032901`, `Q10341149`, `Q11202460`, `Q115087946`, `Q20537497`, `Q2268234`, `Q2269075`, `Q2269121`, `Q2270085`, `Q2270108`, `Q3354631`, `Q335761`, `Q402072`, `Q798637`, `Q8034813`, `Q105799250`, `Q123149461`, `Q155801`, `Q79227232`, `Q105883497` | not refused by the tool: not offered to it. Every one is either twentieth-century, or an organisation rather than an event, or carries no English article. They are the twentieth century's to take, not this cell's |
+| `Q1050430` | Catatumbo, the region `2025-catatumbo-clashes` says it happened in | a `Q82794` region with **no `P625` at all**, and the import's own rule is that a place with no coordinate is a word and not a place. The record is placeless with the lane its country's point derives |
+
+### Two records carry a note about their own dates
+
+Neither is a correction — A7 lets a run widen an interval only from the record's own
+cited article at a named revision, and in both cases the article says nothing that
+would.
+
+- **`covid-19-pandemic-in-venezuela` is dated 29 February to March 2020 by the item
+  itself**, which is the first suspected case and the first confirmed ones and not
+  the span of the epidemic. The lead states no end. `review.note` says so and asks a
+  reviewer to open or widen it. **Deviation 1297.**
+- **`2013-colombian-clashes` is dated 21 July 2013 by the item and 20 July 2013 by
+  the article it quotes.** One day apart. `review.note` says so and the run does not
+  move a date the import wrote.
+
+### Deviations
+
+**1296. A class carried by one item of a vein and by none of its twelve siblings is
+not a mirror, and a line added for it would be a decision about one record.**
+`Q98379923` is the only class standing between the COVID-19 pandemic in Paraguay and
+this atlas. Every other South American country item of the same tree carries
+`Q3241045`, which the table has held since M20. The mirror rule of deviation 1266
+allows a line that mirrors one the table already holds; it does not allow one whose
+whole justification is that a single record would otherwise be refused. Paraguay is
+reported and left where it is, and one look at `Q98379923` by a person settles
+whether it is the same thing as a pandemic under another name.
+
+**1297. An imported interval can be a first case rather than a span, and nothing in
+the validator sees it.** `covid-19-pandemic-in-venezuela` came off the item with
+`start` 2020 and `end` 2020, which reads on the timeline as an epidemic that lasted
+five weeks. Rule 24 is satisfied — the parent is open-ended — and no warning fires,
+because a closed interval inside an open one is exactly what a child normally is.
+The record carries the divergence in `review.note` and the cell's count is honest
+either way; a fire that later widens it needs an article that states an end, which
+this one does not have.
+
+**1298. The only link most of the pandemic's country articles state is a part-of
+statement, and a part-of statement is a `parent` and not an edge.** Eight of the
+fifteen COVID records got no edge at all for this reason, and they are not isolated
+by A14: the umbrella their lead names is their grandparent and an edge to it would
+have been allowed. This run declined to write it. "Was a part of the worldwide
+pandemic of coronavirus disease 2019" is the same fact `parent` already carries, and
+turning it into `caused` would put 936 edges in this atlas of which one in a hundred
+says nothing the filing did not. The five leads that name a country of origin are the
+five edges written, and that is the whole of what the articles support.
+
+## Batch 28 — the Arauco War, and the Americas' sixteenth century
+
+*25 September, the twenty-eighth fire.*
+
+### Before the batch
+
+| | |
+| --- | --- |
+| corpus | **1,010 active** (1,006 on this branch, plus the four `origin/m42`'s batch 54 brought) |
+| **main** | **242** |
+| **largest connected component** | **660** |
+| components | 244 |
+| events with no edge at all | 188 |
+| Europe before 1900 | 131 active, 18 main |
+| the `americas` lane | 253 active, 55 main |
+| **the Americas' sixteenth century** | **22 active, 3 main** — the thinnest cell of this partition that is not against the 1492 wall, and the one the last fire named as A10's next |
+
+**One merge came first.** `origin/m0` was already an ancestor; `origin/m42` was
+fourteen commits ahead with its batch 54, the Mali War read at both ends, and
+conflicted in `STATUS.md`'s claim lines (unioned), in `docs/m53-polities.md` §4.1
+(both sides kept, the row re-taken) and in `sources.html` and 265 files of
+`data/index/`, all of which are generated. The index was dropped and rebuilt **in
+the commit after the merge**, which is the lesson the last fire's run 1765 paid for:
+`tools/lib/history.mjs` reads the repository's own commits, so an index built inside
+a merge is stale by that merge.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 166 | 31 | 166 | 31 |
+| `americas` | 253 | 55 | **268** | 55 |
+| `asia` | 165 | 67 | 165 | 67 |
+| `europe` | 426 | 89 | 426 | 89 |
+| Europe before 1900 | 131 | 18 | 131 | 18 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| **the Americas' 16th** | **22** | **3** | **37** | **3** |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 32 | 2 | 32 | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| the Americas' 21st | 37 | 1 | 37 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 24 | 3 | 24 | 3 |
+| Europe's 19th | 38 | 10 | 38 | 10 |
+
+South and central America against north, inside the `americas` lane: **209 to 20**,
+with thirty-nine of the lane's events placeless. Every one of this batch's fifteen is
+Chile, so the column the brief asks to be filled first is the column that moved.
+
+**The main count is 242 before and 242 after.** The fourteen battles are filed under
+`arauco-war` and `arauco-war` under `spanish-colonization-of-the-americas`, which its
+own article's infobox names as what it is part of (`part_of = the [[Spanish
+colonization of the Americas]]`, revision 1376467209). Not one of the fifteen could
+raise it.
+
+### The vein, and why it was the one to take
+
+The cell held twenty-two records and **nothing at all after 1549**: the Aztec and Inca
+conquests and their battles, Brazil's sugar cycle and the governorate-general, and then
+half a century of nothing. The second half of the sixteenth century in the Americas was
+the emptiest stretch of this partition that no decision blocks.
+
+**The Arauco War is the vein that fills it and keeps filling.** `P361` on `Q431806`
+returns **seventeen** children with an English article and a date, twelve of them
+between 1550 and 1569, and the war itself runs to the seventeenth century, so the same
+umbrella still has children waiting in the Americas' seventeenth and eighteenth — the
+two cells that are now the thinnest. Nothing about it is blocked: the class of every
+item is one the table already holds (`Q198` war, `Q178561` battle, `Q188055` siege), and
+the war's own article states its parent.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `arauco-war` | `Q431806` | 1546–1662 | `spanish-colonization-of-the-americas` | `chile-q298` (already here) | Americas 16th |
+| `battle-of-quilacura` | `Q3636592` | 1546-02-11 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-andalien` | `Q3636322` | 1550-02-06 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-penco` | `Q1617531` | 1550-03-12 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-tucapel` | `Q645257` | 1553-12-25 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-marihuenu` | `Q2338555` | 1554-02-23 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-peteroa` | `Q1616748` | 1556 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-mataquito` | `Q1617667` | 1557-04-30 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-lagunillas` | `Q3636492` | 1557-11-08 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-millarapue` | `Q2339158` | 1557-11-30 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-quiapo` | `Q1617262` | 1558-12-13 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `siege-of-concepcion` | `Q432297` | 1564-02-01 – 1564-04-01 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-angol` | `Q3636323` | 1564-03-25 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-catirai` | `Q3636379` | 1569-01-07 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-curalaba` | `Q1629355` | 1598-12-23 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+
+**Fifteen records created, none enriched, none ambiguous, and no place written at
+all**, over three `--import` runs — ten items, then the four the lane guard refused,
+then Curalaba — and **24 calls**, with 20 Wikipedia leads cached.
+
+**Fourteen of the fifteen are placeless and that is the item's doing, not a refusal.**
+Ten carry a `P625` and no `P276` at all, so the import had a point to derive the lane
+from and no item to make a place record out of; the other four carry neither, and were
+refused until `americas` was written for each of them in the seeds file's `lanes` map.
+`arauco-war` is the only one of the fifteen that points at a place, and it does so
+because its `P276` is `Q298`, Chile, for which `data/places/chile-q298.json` already
+exists. No `a9-place` flag was written on any of the fifteen.
+
+### The summaries
+
+Every one of the fifteen carries the cached English lead at a named revision, written
+on the second pass deviation 1257 describes, with the `wikipedia-en` citation beside
+the `wikidata` one and `summary-from-lead` in `review.flags`. **No record of this batch
+shows the placeholder alone.** The shortest quoted lead is Angol's at 113
+characters, the longest Curalaba's at 623.
+
+### What was connected (A5)
+
+**Five edges, all `probable`, all from a sentence of an article the record cites at the
+revision it cites, and none from a parent to its own child.**
+
+| edge | what the article says |
+| --- | --- |
+| `battle-of-andalien` → `battle-of-penco`, `reacted-to` | "After toqui Ainavillo's defeat in the Battle of Andalien, he gathered tens of thousands of warriors from the Arauco and Tucapel regions to reinforce his depleted 15,000 man army for an attack on de Valdivia's new settlement at Penco" |
+| `battle-of-tucapel` → `battle-of-marihuenu`, `caused` | "After the defeat at the Battle of Tucapel, the Spanish had hurriedly reorganized their forces… It was only in February 1554 that he succeeded in putting together an army of 8,000 men, just in time to confront a punitive expedition under the command of Francisco de Villagra at the Battle of Marihueñu" |
+| `battle-of-tucapel` → `battle-of-mataquito`, `reacted-to` | the battle "is notable for ending Mapuche designs on Santiago, while also avenging the death of former governor Pedro de Valdivia, who had been killed by Lautaro's warriors four years earlier" |
+| `battle-of-peteroa` → `battle-of-mataquito`, `enabled` | "In early 1557, following the defeat and retreat of Lautaro after the Battle of Peteroa, Francisco de Villagra felt strong enough to gather a strong force of soldiers and march south" |
+| `battle-of-lagunillas` → `battle-of-millarapue`, `caused` | "After the victory of the Spanish arms in the Battle of Lagunillas, Mendoza went into the hostile territory of Arauco looking for a decisive battle" |
+
+**Not one of the five reaches outside the batch, and that is this batch's answer to
+A5's "has to say why".** Sixteenth-century Chile is an island in this atlas: the only
+record it holds that any of the fifteen touches is
+`spanish-colonization-of-the-americas`, which is `arauco-war`'s own parent, so **A14
+refuses the one edge that would have joined the vein to the rest of the world** — the
+Arauco War's own lead states it ("The conflict began at first as a reaction by the
+Mapuche to the Spanish conquerors attempting to establish cities and force the natives
+into servitude"), and the run did not write it. There is no second candidate: neither
+`spanish-conquest-of-the-inca-empire` nor any other record here is named by any of the
+fifteen articles.
+
+**A sixth edge was found and refused on chronology, which is deviation 1269's shape a
+third time.** The Siege of Concepción article, at revision 1370740335, ends on the
+lifting of the siege: "With the recent news of the defeat of the Mapuche toqui
+Illangulién at the Battle of Angol, they were also nervous that their undefended homes
+might be attacked from Angol or Santiago. On the first of April the Mapuche army raised
+the siege." `siege-of-concepcion` is one record covering 1 February to 1 April 1564 and
+`battle-of-angol` falls on 25 March, inside it, so the edge the article states runs
+backwards against the siege's start bound and rule 4 refuses it. **Deviation 1299.**
+
+### The number A5 asks about
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,010 | **1,025** |
+| main | 242 | **242** |
+| active edges | 939 | **944** |
+| **largest connected component** | **660** | **660** |
+| components | 244 | 254 |
+| events with no edge at all | 188 | **195** |
+
+**The component did not move and the reason is the paragraph above**: the batch is
+three islands and seven singletons of its own — `{andalien, penco}`,
+`{tucapel, marihuenu, mataquito, peteroa}`, `{lagunillas, millarapue}`, and
+`arauco-war`, `quilacura`, `quiapo`, `siege-of-concepcion`, `angol`, `catirai`,
+`curalaba` alone — and the one edge that would have attached all of it to the largest
+component is the one A14 refuses. **This is the most expensive instance of C8 the run
+has measured.** Batch 27 could say the cost was small because nine of its eleven
+unconnected records stated nothing causal at all; here the cost is the whole batch's
+connectedness, paid for one edge.
+
+### What was refused
+
+| item | what it is | why |
+| --- | --- | --- |
+| `Q1616739` | the Battle of Reynogüelén, 1536 | not refused by the tool: not offered to it. The Arauco War record starts in 1546 and its own article calls Reynogüelén "an antecedent of the Arauco War", not part of it, so filing it under the war would be a `child-outside-parent` on a record the article says is outside. A fire that settles the war's start settles this one too |
+| `Q509936` | the Destruction of the Seven Cities | **no `P31` at all**. The import has no class to read and refuses rather than guesses. It is what `battle-of-curalaba`'s own lead says the battle led to, so the one edge that record's article states has no other end here |
+| `Q1055950` | the Conquest of Chile | no `P31` and no date of any kind. It is what the Arauco War's article says the Spaniards penetrated Mapuche territory during, and the same refusal applies |
+| `Q85745908`, `Q85783755`, `Q104849178` | the Battle of Río Bueno 1654, the Mapuche uprising of 1655, the Battle of Río Bueno 1759 | not refused: held back. They are the same vein in the Americas' seventeenth and eighteenth centuries, which are the two thinnest cells left, and they are the next fire's to take |
+
+### Deviations
+
+**1299. A record that is a span refuses the edges its own article states, for the third
+time.** `siege-of-concepcion` runs 1 February to 1 April 1564 and `battle-of-angol`
+falls inside it on 25 March; the siege article names Angol as one of the three reasons
+the siege was raised, and rule 4 cannot hold an edge whose `from` starts after its `to`
+does. Deviation 1269 recorded this for `spanish-conquest-of-iberian-navarre` and 1284
+for `siege-of-cadiz`. **The three cases are one question**: whether this atlas wants a
+record for the end of a long event as well as for the event. It is the owner's, and
+until it is answered a run should expect to lose about one edge per batch of sieges.
+
+**1300. `intervalFor()` reads an item with no `P580` and three `P582`s as a one-year
+event, and nothing downstream sees it.** `Q431806` carries `P585` 1546 and `P582` 1609,
+1656 and 1662. `pickTimes` finds no span, falls to the point in time, and returns
+`{ from: point, to: point }`, so `arauco-war` arrived dated 1546–1546 — a war that lasted
+a year — and with no `end-unstated` flag, because that flag only fires where a *stated*
+span has no end. The three `P582`s were never read. **The record is corrected
+here from its own cited article** under A7 — revision 1376467209 heads its date field
+"Historiographic divergence" and gives 1546 to the end of the 17th century (Góngora
+1951), 1550–1662 (Villalobos 1995) and 1550–1656 (Memoria Chilena), and 1546–1662 is the
+interval that contains all three rather than choosing between them. `review.note` says
+so and `date-from-article` is the flag. **The tool's rule is the thing to look at**: an
+item with several `P582`s has said something about its end, and reading none of them is
+worse than reading the earliest.
+
+**1301. `end: null` on an umbrella is not available, because two tests forbid a child
+outside its parent over the whole corpus.** The first attempt at 1300 was the honest
+one — leave the end unstated, since the item settles nothing — but `arauco-war` is filed
+under `spanish-colonization-of-the-americas`, which ends in 1898, and an open end reads
+as reaching past it. `tests/m62.test.mjs` and `tests/m67.test.mjs` both assert
+`child-outside-parent` is empty over the repository, so an open-ended umbrella can only
+be filed under another open-ended one. **A run that wants to say "nobody has dated this"
+about an event it also has to file has no way to say it**, and that is worth the owner's
+minute: the alternative this fire took was to assert an interval wide enough to contain
+every dating, which is a claim the null was not.
+
+## Where the run stands, for the fire that picks it up
+
+*25 September, after the twenty-eighth fire and its batch 28.*
+
+| | |
+| --- | --- |
+| corpus | **1,025 active** |
+| **main** | **242** — the count the next batch must not raise |
+| **largest connected component** | **660** |
+| components | 254 |
+| events with no edge at all | **195** |
 | Europe before 1900 | **131 active, 18 main** |
-| the `americas` lane | **236 active, 55 main** |
-| south and central America against north, inside that lane | **199 to 18**, with 19 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (4, 3) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)** and **the Americas' 21st (23, 1)**, the Americas' 16th (24, 5), Europe's 18th (24, 3), Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), Europe's 19th (38, 10), the Americas' 19th (44, 8) |
-| the cell this fire moved | **the Americas' 18th, 23 → 32**, and its 19th, 38 → 44, both main counts untouched |
+| the `americas` lane | **268 active, 55 main** |
+| south and central America against north, inside that lane | **209 to 20**, with 39 placeless |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 18th (24, 3), Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8) |
+| the cell this fire moved | **the Americas' 16th, 22 → 37**, its main count untouched at three |
 
-**This fire merged `origin/m42`'s batch 52 and then took one of the three cells that
-stood level at twenty-three.** The Americas' eighteenth century is no longer among the
-thinnest — **the Americas' seventeenth (23, 6) and twenty-first (23, 1) are** — and the
-component rose by three while the isolated count rose by eight.
+**This fire merged `origin/m42`'s batch 54 and then took A10's next cell, the Americas'
+sixteenth, whose second half held nothing at all.** Fifteen records of the Arauco War
+went in and the cell is no longer the thinnest; **the Americas' seventeenth (23, 6) is,
+and it is the one blocked on three decisions since batch 22** — so the next fire either
+answers those or takes Europe's eighteenth (24, 3), which nothing blocks.
 
-**That last pair of numbers is the fire's real finding and it is about A14, not about
-the vein.** The Haitian Revolution is a chain with exactly one umbrella: every one of
-its fifteen records is a child of `haitian-revolution-1791-1804`, or of
-`saint-domingue-expedition`, which is itself a child of it. Eleven of the fifteen state
-a consequence in their own articles and eight of those consequences run to the record's
-own parent, which A14 refuses until the owner decides C8. **Five batches have now
-measured C8's cost; this is the first on a vein with no second umbrella at all, and it
-is where the cost is highest.** The one edge that reached outside the vein —
-`napoleonic-wars` → `blockade-of-saint-domingue` — carried three records into the 651 by
-itself, which says what the answer is worth.
-
-**The Haitian vein is nearly spent and its remainder is cheap.** `P361` on `Q689128`
-returns **thirty** items; this branch now holds fifteen, two were refused for cause
-(deviations 1291 and 1292) and thirteen are stubs with no English article. **A fire that
-wants the other thirteen must first decide whether an imported record may carry the
-placeholder summary A12 (1) forbids**, and the answer is almost certainly no — so the
-vein is done, and the next Americas batch has to open a new one.
-
-**A10's order now says the Americas' seventeenth or twenty-first.** The seventeenth has
-been blocked on three decisions since batch 22 (below) and the twenty-first has never
-been looked at by this run at all: twenty-three active events, **one main**, and all of
-them Colombia's and Brazil's. It is the cheapest unexamined cell in the partition.
+**The Arauco vein is the cheapest thing left on this branch and it is still open.** The
+same umbrella has three children in the Americas' seventeenth and eighteenth centuries
+(`Q85745908`, `Q85783755`, `Q104849178`), and the seventeenth is the cell that trails —
+so three records of a vein this fire has already surveyed would move the cell that most
+needs moving without touching any of its three decisions. They were held back on
+purpose: this batch's fifteen were the sixteenth century's, and A10 asks a fire to take
+one cell at a time.
 
 ### The veins, and which are open
 
-**The Americas' twenty-first has never been surveyed by this run.** Its twenty-three
-records are the Colombian conflict's vein (batch 3) and Brazil's politics, and its one
-main event is `treaty-on-the-prohibition-of-nuclear-weapons`. Nothing is known about
-what `P361` returns under any of them, and one SPARQL call would say.
+**Europe's eighteenth century has the largest untouched vein this partition holds, and
+this fire surveyed it rather than take it.** `P361` on `Q32929`, the War of the Austrian
+Succession, returns **53 items with an English article** and this branch holds exactly
+one of them — `war-of-jenkins-ear`. The war itself is already here as a main event
+dated 1740–1748, so **every one of the other fifty-two is filed the moment it arrives
+and not one can raise the main count**. Roughly forty are European (Belgium, Italy,
+Bohemia, Silesia, the Low Countries, the two Cape Finisterre actions); the rest are
+`King George's War` and `Siege of Louisbourg` in Canada, the two Carnatic items in
+India, which are M42's, and two Caribbean actions. The cell holds twenty-four records
+of which twenty-one are the French Revolution, so this vein would roughly triple it.
+**It is the batch a fire with no decision to wait on should take.**
 
-**The Americas' seventeenth has three items left and each needs a decision, not a
+**The Arauco vein is half spent and its remainder is thin.** The fifteen this fire took
+were the sixteenth century's. `P361` on `Q431806` leaves exactly three: `Q85745908` and
+`Q85783755` in the seventeenth century and `Q104849178` in the eighteenth. Three records
+is not a batch, and a survey of Chile between 1598 and 1799 (`P17` `Q298`, dated, with an
+English article) returns twelve items of which seven are earthquakes with no umbrella
+over them — **so the Americas' seventeenth cannot be filled from Chile without either
+answering its three standing decisions or writing an umbrella for the earthquakes.**
+
+**The Dutch–Portuguese vein is spent for the Americas.** `P361` on `Q377269` returns 46
+items; of the thirteen that are Brazilian or Atlantic, this branch holds eleven, and of
+the two left one is `Q19019163` (the editorial question about `dutch-brazil-1630-1654`)
+and the other `Q138011120` (the lane question). Only `Q10369402`, the Second Battle of
+Salvador, is free and unblocked, and one record is not a batch.
+
+**The pandemic vein is the largest open vein this partition has and it is barely
+touched.** Wikidata files the whole world's COVID-19 records in a three-level part-of
+tree under `Q81068910`, which this atlas holds as `covid-19-pandemic`. This branch now
+holds the two American continental records and thirteen of the **forty-four** country
+and territory items under them. **Twenty-nine are unimported**, every one with an
+English article and a 2020 start, every one a child of a record now on this branch, and
+therefore not one of them can raise the main count. The Caribbean alone is sixteen of
+the twenty-nine. **But read batch 27's deviation 1298 before taking them**: eight of the
+fifteen taken here got no edge, because the only link most of those leads state is the
+part-of statement `parent` already carries. A fire that wants the other twenty-nine
+should expect to connect perhaps a third of them, and should read each lead for the
+country the first case flew in from, which is the sentence that makes an edge.
+
+**The Colombian conflict vein is spent for the twenty-first century.** `P361` on
+`Q169072` returns 43 items, this branch now holds twenty-two, and of the twenty-one
+left **not one is both post-2000 and carries an English article**: eleven are military
+operations with no article, four are organisations rather than events, and the rest are
+twentieth-century. The twentieth century may still want them.
+
+**The Americas' seventeenth still has its three items and each needs a decision, not a
 call.** `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of
-Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the
-South Atlantic campaign (lane unsettled). **It is now the thinnest cell of this
-partition**, which makes those three decisions worth a fire on their own.
+Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the South
+Atlantic campaign (lane unsettled).
 
-**The War of Jenkins' Ear has nine items left** — four North American, four at sea —
-and `Q9172888`, the **Battle of Combapata**, is still refused for want of a place
-record for `Q3312913`.
+**The War of Jenkins' Ear has nine items left** — four North American, four at sea — and
+`Q9172888`, the Battle of Combapata, is still refused for want of a place record for
+`Q3312913`.
 
 **The Peninsular vein is far from spent.** `P361` on `Q152499` returns **218 items**;
 this branch holds seventeen and **201 are unimported**, none of which can raise the main
-count. Three things inside it are worth more than a batch of imports: **`Q3153847`, the
-French invasions of Portugal** (an umbrella two records already point at in their own
-leads, so importing it gives both an edge A14 permits); **`Q1345027`, the Battle of
-Toulouse**, which `battle-of-tarbes` says it "paved the way for"; and **the Lines of
-Torres Vedras**, which `battle-of-bussaco` retreats to in its own lead.
+count. Three things inside it are still worth more than a batch of imports:
+**`Q3153847`, the French invasions of Portugal** (an umbrella two records already point
+at in their own leads, so importing it gives both an edge A14 permits); **`Q1345027`,
+the Battle of Toulouse**, which `battle-of-tarbes` says it "paved the way for"; and **the
+Lines of Torres Vedras**, which `battle-of-bussaco` retreats to in its own lead.
 
 **The Thirty Years' War vein is still open**: `P361` on `Q2487` returns 171 items, this
 branch holds thirty-four, and **137 are unimported**. `Q1501724`, the Portuguese
@@ -6962,6 +7433,9 @@ importable as umbrellas at no cost in main events.
 **The French Wars of Religion (`Q673175`) are still free to whoever brings their
 children, and still cost a main event.**
 
+**The Haitian vein is done.** Thirteen stubs with no English article are all that is
+left of it, and A12 (1) forbids the placeholder summary they would carry.
+
 ### The cheap things this partition keeps not doing
 
 **`--reconcile` has never been run on this branch.** `havana`, `santiago-de-cuba`,
@@ -6970,9 +7444,10 @@ hand because the import could not see them, and every place record written befor
 identity fields existed is in the same state. `tools/import/wikidata.mjs --reconcile` is
 additive by `tools/import/identity.mjs`'s rule — fill a gap, never change a value, never
 sign — and closing that gap once would make every later batch cheaper and safer. **Batch
-26 is the second piece of evidence for what it would be worth**: `cap-haitien` was
-reused only because the run put the item's own plain name into its `names` by hand
-first, and a `--reconcile` pass would have put the item itself there (deviation 1288).
+27 is the third piece of evidence for what it would be worth, and the first positive
+one**: eleven of its seventeen records got a place for nothing at all, because those
+eleven country records already carry the Wikidata item the import matches on. The
+thirty-eight that do not are exactly the ones that keep costing batches a place.
 
 **A plain-name pass over the hand-written places is the other half of the same thing.**
 Thirty-eight of the atlas's places carry no Wikidata item and most carry one long
@@ -6980,69 +7455,80 @@ descriptive name, which `reusablePlace` cannot fold to anything an item says. Ad
 each record's plain name beside its descriptive one is additive and would make every
 future import reuse instead of doubling.
 
-**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-six batches.** Batch
-26 found the first item on this branch whose whole `P710` list this atlas holds — the
-Battle of Crête-à-Pierrot, France and Haiti — and had to withhold it anyway, because
-both actors are CShapes records beginning in 1886 and the battle is 1802. **The rule
-needs the clause deviation 1293 names**, and until it has it the pass will either write
-nothing or write something wrong.
+**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-seven batches.**
+Batch 26 found the first item on this branch whose whole `P710` list this atlas holds
+and had to withhold it anyway, because both actors are CShapes records beginning in 1886
+and the battle is 1802. **The rule needs the clause deviation 1293 names**, and until it
+has it the pass will either write nothing or write something wrong. Batch 27 carried no
+`P710` pass at all: a national epidemic names no participants.
 
 ### The questions for the owner
 
 Two still block a century and both are unchanged.
 
-1. **Does the atlas begin in 1492, or does its first sentence follow the corpus
-   wherever the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min`
-   and two tests hold it there, so nothing on this branch can fill Europe's fifteenth
-   century or anything earlier. A one-line answer unblocks four records already known
-   to import cleanly (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and
-   `italian-war-of-1494-1495` is the fifth record sitting against the wall.
+1. **Does the atlas begin in 1492, or does its first sentence follow the corpus wherever
+   the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min` and two
+   tests hold it there, so nothing on this branch can fill Europe's fifteenth century or
+   anything earlier. A one-line answer unblocks four records already known to import
+   cleanly (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and `italian-war-of-1494-1495`
+   is the fifth record sitting against the wall.
 2. **May a run take a period umbrella from an item whose class is a polity, where the
-   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and
-   it is worth seven main events. `Q377350`, the **Iberian Union**, is a second case of
-   the same shape. **Batch 26 met a third face of it**: `Q133156`, the class `colony`,
-   which `Q861551` Saint-Domingue carries, and which three of this batch's records name
-   as where they happened. Mapping it to a *place* would place them; leaving it
-   unclassified left them placeless with a lane, which is what the run did (deviation
-   1289). The class table is an editorial decision and the whole point of it living in
-   `data/`, so the run will not decide any of the three.
+   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and it
+   is worth seven main events. `Q377350`, the **Iberian Union**, is a second case of the
+   same shape, and `Q133156` **colony**, which `Q861551` Saint-Domingue carries, a third.
 
-A third, added by batch 23, is smaller than both:
-**`spanish-conquest-of-iberian-navarre` is one record covering 1512 to 1529, and rule 4
-therefore refuses every edge the article's own sentences state** (deviation 1269).
-Dividing it at its campaigns would let Pavia reach it and would cost no main event.
-**Deviation 1284 is the same question in a second place**: `siege-of-cadiz` is one
-record covering 1810 to 1812, and the edge its own article states cannot be written.
+A third, from batch 23, is smaller than both: **`spanish-conquest-of-iberian-navarre` is
+one record covering 1512 to 1529, and rule 4 therefore refuses every edge the article's
+own sentences state** (deviation 1269). **Deviation 1284 is the same question in a second
+place**: `siege-of-cadiz` is one record covering 1810 to 1812.
 
-A fourth, added by batch 24, is unchanged. **Two records are filed under
-`thirty-years-war` although their own articles call them part of the Eighty Years' War
-and of the Polish-Swedish War of 1626-1629** — `siege-of-bergen-op-zoom-1622` and
-`battle-of-trzciana`. Both carry the divergence in `review.note`. Importing `Q164432`
-and `Q2985977` as umbrellas would settle it and would cost two main events.
+A fourth, from batch 24, is unchanged. **Two records are filed under `thirty-years-war`
+although their own articles call them part of the Eighty Years' War and of the
+Polish-Swedish War of 1626-1629** — `siege-of-bergen-op-zoom-1622` and
+`battle-of-trzciana`. Importing `Q164432` and `Q2985977` as umbrellas would settle it and
+would cost two main events.
 
-A fifth, added by batch 25, is **A14's C8 itself**, and batch 26 is the strongest
-measurement of it this run has: **eight of fifteen records have no edge to write at all
-because the only one their articles state runs to their own parent.**
+A fifth is **A14's C8 itself**. Six batches have now measured its cost. **Batch 27 is the
+first that says the cost is small**: of its eleven unconnected records, only two — the
+two continental ones — are unconnected because of A14, and the other nine are unconnected
+because their articles state nothing causal at all. C8 is expensive on a vein of battles
+inside one war and cheap on a vein of national epidemics inside one pandemic.
 
-A sixth is added by batch 26 and is the smallest of them.
-**`Q3010371`, Bois Caïman, is the ceremony the Haitian Revolution is usually said to
-begin at, and Wikidata calls it a facility, a slave rebellion and a Haitian Vodou.**
-Adding `Q1155622` to the class table would mirror `Q124734` rebellion cleanly, but the
-line would settle that three-way question as a side effect, which deviation 1291 says a
-mirror may not do. One word from the owner imports it.
+A sixth, from batch 26, is the smallest. **`Q3010371`, Bois Caïman, is the ceremony the
+Haitian Revolution is usually said to begin at, and Wikidata calls it a facility, a slave
+rebellion and a Haitian Vodou.** One word from the owner imports it.
 
-**The check, on this fire's five heads.** Run **1748** on the claim commit `61ae0b2f`
-was **cancelled** when the merge superseded it. Run **1749** on the merge commit
-`0561b3d5` **failed**, which is deviation 1278's known shape: the merge is committed with
-`data/index/` absent and the rebuild is the commit after it, so `--index` cannot be fresh
-on that head by construction. Run **1750** on the index commit `1c5a79ac` **failed**, on
-`tests/m67.test.mjs` and on nothing else, which is **deviation 1295**: the records were
-right and the paragraph that argues for `blockade-of-saint-domingue` was two commits
-away. Run **1751** on `19049b38` was **cancelled** when the
-commit carrying this deviation superseded it, and run **1752** on `adb6186e`, the head
-of this fire, concluded **success**. Locally the fire finished at **2,114 tests passing with nothing failed and
-nothing skipped** — the 1,819 of the pure suites and the 295 of the browser suites, the
-browser set run alone, the two sets never at once. `node tools/validate.mjs --index` is
-**clean at 0 errors and 480 warnings** on the pushed index. **The next fire should read
-this head's run before it does anything else**, and if it is red, read the failure: the
-check has been honest since M63 and it is not load.
+A seventh is batch 27's own and is of the same size. **`Q98379923` is the one class
+standing between the COVID-19 pandemic in Paraguay and this atlas**, and no other country
+item of the same tree carries it (deviation 1296).
+
+An eighth is batch 28's and is the largest of the eight, because it is A14's cost stated
+at its worst. **This batch's fifteen records are three islands and seven singletons, and
+one edge would have joined all of them to the atlas** — the Arauco War's own lead says
+the war began as a Mapuche reaction to the Spanish attempt to establish cities, and the
+record that is is `spanish-colonization-of-the-americas`, which A14 forbids because it is
+the war's own parent. **C8 is not expensive in general; it is expensive exactly where an
+umbrella is the only bridge a vein has to the rest of the corpus**, and a conquest vein
+in a lane the atlas is otherwise empty in is that case every time.
+
+A ninth is batch 28's too and is smaller. **A run that imports an event nobody has dated
+the end of, and that also has to file it, has no way to say "nobody has dated this"**:
+`end: null` is the atlas's own word for it, but two tests forbid a child dated outside its
+parent over the whole corpus, so an open end can only be filed under another open end
+(deviation 1301). This fire asserted 1546–1662 for the Arauco War instead, an interval
+wide enough to contain all three of the datings its article gives — which is a claim the
+null was not making.
+
+**The check, on this fire's heads.** Run **1777** on the claim commit `b2191efc` was
+**cancelled** by the merge push that followed it. Run **1778**, on the index commit
+`eee6ef73` that rebuilt `data/index/` in the commit *after* the `origin/m42` merge,
+concluded **success** — which is the last fire's deviation about history shards holding
+the first time it was applied. Run **1779**, on `de2f6809`, the head of this fire,
+concluded **success**. **The batch's three commits went out in one push on purpose**, so
+deviation 1258's cancellation chain did not happen this time and the only run this fire
+lost was the claim's. Locally the fire finished at **2,114 tests passing with nothing
+failed and nothing skipped** — the 1,819 of the pure suites and the 295 of the browser
+suites, the browser set run alone, the two sets never at once. `node tools/validate.mjs
+--index` is **clean at 0 errors and 499 warnings** on the pushed index.
+**The next fire should read this head's run before it does anything else**, and if it is
+red, read the failure: the check has been honest since M63 and it is not load.

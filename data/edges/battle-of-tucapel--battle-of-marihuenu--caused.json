@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-tucapel--battle-of-marihuenu--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marihueñu\", revision 1370449036, History"
+    }
+  ],
+  "from": "battle-of-tucapel",
+  "to": "battle-of-marihuenu",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Marihueñu article makes the Spanish defeat at Tucapel the start of the sequence: \"After the defeat at the Battle of Tucapel, the Spanish had hurriedly reorganized their forces, reinforcing fort La Imperial for its defense and abandoning Confines and Arauco in order to strengthen Concepción... It was only in February 1554 that he succeeded in putting together an army of 8,000 men, just in time to confront a punitive expedition under the command of Francisco de Villagra at the Battle of Marihueñu.\" The punitive expedition is the reorganisation Tucapel forced. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a9-place"
     ]
   },
-  "wikidata": "Q54434",
-  "sitelinks": {
-    "count": 37,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q54434",
   "wikipedia": {
     "en": "War of Jenkins' Ear",
     "pt": "Guerra da Orelha de Jenkins"
+  },
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-23"
   },
   "sources": [
     {
@@ -51,7 +52,7 @@
     "date": "1739-10-22",
     "endDate": "1748-10-18"
   },
-  "place": null,
+  "place": "caribbean",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",

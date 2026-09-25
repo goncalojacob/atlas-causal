@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-peteroa--battle-of-mataquito--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mataquito\", revision 1376467018, Overview"
+    }
+  ],
+  "from": "battle-of-peteroa",
+  "to": "battle-of-mataquito",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Mataquito article makes Peteroa the reason the Spanish could take the field: \"In early 1557, following the defeat and retreat of Lautaro after the Battle of Peteroa, Francisco de Villagra felt strong enough to gather a strong force of soldiers and march south to aid the remaining cities against the Mapuche besetting them.\" Enabled and not caused: the article gives Peteroa as what made the march possible, not as what the march answered. Probable: Wikipedia alone.",
+  "dispute": null
+}

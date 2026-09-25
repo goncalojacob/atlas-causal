@@ -13,15 +13,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-06",
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
-      "wikidata-assigned-by-assistant"
-    ]
+      "wikidata-assigned-by-assistant",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A6 and M62: inside the span (1999, against 1974 onward) and inside the subject — the Third Portuguese Republic is the record’s only actor. M67’s rule 1 does not bite."
+  },
+  "origin": {
+    "tool": "assistant"
   },
   "wikidata": "Q847839",
   "wikipedia": {
@@ -48,6 +50,7 @@
   },
   "place": "macau",
   "region": null,
+  "parent": "third-portuguese-republic-since-1974",
   "actors": [
     {
       "actor": "third-portuguese-republic",

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Abeïbara massacres\", revision 1326919232, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868, § Prelude"
+    }
+  ],
+  "from": "kidal-offensive",
+  "to": "battle-of-tinzaouaten-2024",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "One sentence of the Abeïbara article names Tinzaouaten for the same reason it names Abeïbara: after the Malian and Wagner offensive \"on the Tuareg rebel capital of Kidal, capturing it in November 2023\", the \"Remaining CSP-PSD fighters fled to the rural towns of Abeïbara, Tinzaouaten, and the Adrar des Ifoghas mountains.\" The battle's own § Prelude is that column arriving: on 20 July 2024 a FAMa and Wagner convoy \"engaged in a series of search operations in northern Mali, mainly looking for Tuareg rebels who held territory in the strongholds of Inafarak and Tinzaouten.\" Precondition and not cause: the offensive is why the CSP was at Tinzaouaten and why the convoy went there, and neither article says it caused the ambush. Probable: Wikipedia alone, and the first of the two articles is the one that states the link.",
+  "dispute": null
+}

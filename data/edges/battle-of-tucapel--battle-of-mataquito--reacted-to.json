@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-tucapel--battle-of-mataquito--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mataquito\", revision 1376467018, lead"
+    }
+  ],
+  "from": "battle-of-tucapel",
+  "to": "battle-of-mataquito",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Mataquito article states the motive in its lead: the battle \"is notable for ending Mapuche designs on Santiago, while also avenging the death of former governor Pedro de Valdivia, who had been killed by Lautaro's warriors four years earlier.\" Valdivia's capture and death is what the Tucapel record is, on that article's own lead, so the avenging is a reaction to it. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -13,12 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-06",
+  "revised": "2026-09-25",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "filed-by-span-and-subject"
+    ],
+    "note": "A6 and M62: inside the span (1975, against 1974 onward) and inside the subject — the Third Portuguese Republic is named on the record as the party that lost the territory. M67’s rule 1 does not bite: it neither made the republic nor ended it."
+  },
   "origin": {
     "tool": "assistant"
-  },
-  "review": {
-    "status": "draft"
   },
   "sources": [
     {
@@ -36,6 +40,7 @@
   },
   "place": "dili",
   "region": null,
+  "parent": "third-portuguese-republic-since-1974",
   "actors": [
     {
       "actor": "indonesia",

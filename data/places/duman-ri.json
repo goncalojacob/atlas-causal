@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "duman-ri",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q5073209, the Chaplain–Medic massacre, read on 2026-09-24; the village itself has no item this pass could reach. The article gives the same coordinate and names the place \"Tuman (current Duman-ri, Geumnam-myeon, Sejong City)\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Duman-ri",
+    "Tuman"
+  ],
+  "where": {
+    "lon": 127.295006,
+    "lat": 36.428511,
+    "precision": "point",
+    "label": "Duman-ri"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

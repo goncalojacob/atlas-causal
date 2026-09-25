@@ -13,12 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a9-place"
     ]
   },
   "origin": {
@@ -51,7 +52,7 @@
     "date": "1801-12",
     "endDate": "1803-12"
   },
-  "place": null,
+  "place": "saint-domingue-q861551",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "haitian-revolution-1791-1804",
