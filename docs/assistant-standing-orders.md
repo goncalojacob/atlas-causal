@@ -113,6 +113,17 @@ between M87's landing and that review; lane B keeps growing the corpus
 with a snapshot landed every day after the 02:00Z curation fire. Lane B runs amendment A14 (the review's data passes) before any
 further import.
 
+**25 September, evening (added by the assistant).** The third review ran
+a day early, on the evening of 25 September, over `m0` at 12ecb81f and the
+live site at snapshot 11 (`docs/review-2026-09-26.md`). Its display
+findings are **M88** (`docs/m88-brief.md`, thirteen sections, routine
+`trig_01HDQbv9FhZZThmhjdwTRuej`, cron :13, gated on M87 done, fired 17:50Z);
+its records findings are **amendment A15** on M42's brief, in force for both
+lanes, with M42b's "Europe before 1900" clause paused until Africa and Asia
+each hold A10's 303 active events. Part A's findings, if any need code, are
+M89, gated on M88 done. Lane A then: land M88, M89, and keep the snapshots
+daily until the owner returns.
+
 **Two lessons from 22 September's landings**, for every brief from here:
 a test of a display property over the live corpus derives its expectation
 from the corpus it runs on and never assumes the corpus of the day happens
@@ -197,3 +208,13 @@ The owner writes a feedback document after the current improvements land
    Portugal in the twentieth century. One non-Portuguese "Start here"
    account is a narrative record and waits for you; which chain would you
    like it to tell?
+11. From the 25 September review, part C (asked a fourth time because the
+   graph is the second click): 314 active events touch no edge and every
+   chain outside the main component is a single war held out by the parent
+   rule. One line would settle most of it: *a war may carry an edge to its
+   own opening engagement, and an engagement to the next, where the article
+   states it; `parent` alone does not earn a record its place.* Also: may a
+   partial participant list stand with a note (C11, the 24 September C7,
+   853 events name no actor); does the `europe` lane hold Russian Asia
+   (deviation 1423, the Romanov record); and the 24 September C1 and C4
+   still stand. A15's passes run without you; these do not.
