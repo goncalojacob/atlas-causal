@@ -8035,7 +8035,7 @@ row that has had to stop in front of the same one-line answer.
 | `battle-of-port-royal-1690` | `Q4872090` | 1690-05-19 | `king-william-s-war` | `port-royal-acadia` |
 | `battle-of-chedabucto` | `Q4870722` | 1690-06-03 | `king-william-s-war` | — |
 | `battle-of-falmouth-1690` | `Q4871051` | 1690 | `king-william-s-war` | `maine` |
-| `battle-of-quebec-1690` | `Q1708064` | 1690-10-16 | `king-william-s-war` | `quebec-city` |
+| `battle-of-quebec-1690` | `Q1708064` | 1690-10-16 | `king-william-s-war` | — (see deviation 1317) |
 | `naval-battle-off-st-john-1691` | `Q17305537` | 1691-09-22 | `king-william-s-war` | `bay-of-fundy` |
 | `raid-on-york-1692` | `Q7283762` | 1692-01-24 | `king-william-s-war` | `york-maine` |
 | `raid-on-wells-1692` | `Q5931014` | 1692-06-10–13 | `king-william-s-war` | `wells-maine` |
@@ -8098,7 +8098,7 @@ about that battle's year** — the 1693 one says the year after 1686, the other 
 
 ### Places (A9, as A12 corrects it)
 
-**Fourteen place records were created, four were reused and four events are placeless.**
+**Thirteen place records were created, four were reused and five events are placeless** — fourteen were written and `quebec-city` was taken back out again, which is deviation 1317.
 Each comes from the first thing the item's own chain names that carries a point — its own
 `P625` where a record already stands at it, then `P276`, then `P131`, then `P17` — with the
 precision read from that item's class, never from a bare coordinate.
@@ -8110,7 +8110,6 @@ precision read from that item's class, never from a bare coordinate.
 | `york-maine` | `Q2323126` | city | `Q2154459` |
 | `haverhill-massachusetts` | `Q54132` | city | `Q1093829` city in the United States |
 | `dover-new-hampshire` | `Q48215` | city | `Q1093829` |
-| `quebec-city` | `Q2145` | city | `Q27676416` city or town of Quebec |
 | `port-royal-acadia` | `Q3398298` | city | `Q486972` human settlement |
 | `nashwaak-village-new-brunswick` | `Q3336188` | city | `Q486972` |
 | `fort-albany-first-nation` | `Q2695763` | city | `Q3957` town |
@@ -8308,26 +8307,27 @@ only the nearest is kept. Not one of the fifteen is main.
 
 | record | item | date | filed under | place |
 | --- | --- | --- | --- | --- |
-| `battle-of-pampeluna` | `Q3174545` | 1521-05-20 | `italian-war-of-1521-1526`, `spanish-conquest-of-iberian-navarre` | `pamplona` |
-| `battle-of-noain` | `Q2889540` | 1521-06-30 | `italian-war-of-1521-1526`, `spanish-conquest-of-iberian-navarre` | `pamplona` |
+| `battle-of-pampeluna` | `Q3174545` | 1521-05-20 | `italian-war-of-1521-1526`, `spanish-conquest-of-iberian-navarre` | — (deviation 1317) |
+| `battle-of-noain` | `Q2889540` | 1521-06-30 | `italian-war-of-1521-1526`, `spanish-conquest-of-iberian-navarre` | — (deviation 1317) |
 | `siege-of-mezieres` | `Q7879248` | 1521-08–09 | `italian-war-of-1521-1526` | `mezieres` |
 | `siege-of-fuenterrabia-1523-1524` | `Q1541712` | 1521-10–1524-04-29 | `italian-war-of-1521-1526` | `hondarribia` |
 | `battle-of-bicocca` | `Q683341` | 1522-04-27 | `italian-war-of-1521-1526` | `bicocca-district-of-milan` |
-| `siege-of-genoa-1522` | `Q9291683` | 1522-05-20–30 | `italian-war-of-1521-1526` | `genoa-q1449` |
+| `siege-of-genoa-1522` | `Q9291683` | 1522-05-20–30 | `italian-war-of-1521-1526` | — (deviation 1317) |
 | `battle-of-the-sesia-1524` | `Q642320` | 1524-04-30 | `italian-war-of-1521-1526` | `sesia` |
-| `siege-of-marseille-1524` | `Q3485951` | 1524-08-01–1524-09 | `italian-war-of-1521-1526` | `marseille` |
+| `siege-of-marseille-1524` | `Q3485951` | 1524-08-01–1524-09 | `italian-war-of-1521-1526` | — (deviation 1317) |
 | `italian-campaign-of-1524-1525` | `Q6093105` | 1524-10–1525-02 | `italian-war-of-1521-1526` | `northern-italy` |
-| `siege-of-naples-1528` | `Q16529030` | 1528-04–08 | `war-of-the-league-of-cognac` | `naples-q2634` |
+| `siege-of-naples-1528` | `Q16529030` | 1528-04–08 | `war-of-the-league-of-cognac` | — (deviation 1317) |
 | `battle-of-capo-d-orso` | `Q38251286` | 1528-04-28–29 | `war-of-the-league-of-cognac` | `gulf-of-salerno` |
-| `siege-of-florence-1529-1530` | `Q981042` | 1529-10-24–1530-08-10 | `war-of-the-league-of-cognac` | `florence-q2044` |
+| `siege-of-florence-1529-1530` | `Q981042` | 1529-10-24–1530-08-10 | `war-of-the-league-of-cognac` | — (deviation 1317) |
 | `battle-of-landriano` | `Q2746040` | 1529-06-21 | `war-of-the-league-of-cognac` | `landriano` |
-| `battle-of-gavinana` | `Q633362` | 1530-08-03 | `siege-of-florence-1529-1530` | `florence-q2044` |
+| `battle-of-gavinana` | `Q633362` | 1530-08-03 | `siege-of-florence-1529-1530` | — (deviation 1317) |
 | `battle-of-montemurlo` | `Q2889368` | 1537-08-02 | `italian-war-of-1536-1538` | `montemurlo` |
 
-**Nothing was refused and nothing was placeless.** This is the first batch of this run where
-both are true, and the reason is the same one in both cases: sixteenth-century Europe is
-densely described on Wikidata, so every item named a located thing with a point and every
-item named a parent this atlas holds.
+**The import refused nothing and left nothing placeless**, which is the first batch of this run
+where both are true: sixteenth-century Europe is densely described on Wikidata, so every item
+named a located thing with a point and every item named a parent this atlas holds. **Seven of
+the fifteen are placeless all the same**, because this fire took five of the places back out
+after the map's own tests objected — deviation 1317.
 
 Every summary is the **cached English lead at the revision it cites**, with the
 `wikipedia-en` citation at that revision and the `summary-from-lead` flag; the titles keep
@@ -8338,33 +8338,28 @@ their articles' disambiguators, which matters again here — *Siege of Fuenterra
 
 ### Places (A9, as A12 corrects it), and three ids that had to be disambiguated
 
-**Twelve place records were created, two were reused and none was refused.**
+**Seven place records were kept, twelve were created and five were taken back out, and none was refused by the import itself.** The five that went are deviation 1317: towns Natural Earth already draws.
 
 | place written | item | precision | from its class |
 | --- | --- | --- | --- |
-| `pamplona` | `Q10282` | city | `Q2074737` capital city |
 | `hondarribia` | `Q492312` | city | `Q2074737` |
-| `marseille` | `Q23482` | city | `Q484170` commune of France |
 | `mezieres` | `Q16011499` | city | `Q484170` |
 | `bicocca-district-of-milan` | `Q3639729` | city | `Q42961155` quarter of Milan / `Q19730508` former municipality |
-| `genoa-q1449` | `Q1449` | city | `Q747074` comune of Italy |
-| `naples-q2634` | `Q2634` | city | `Q515` city / `Q747074` |
-| `florence-q2044` | `Q2044` | city | `Q747074` / `Q1549591` / `Q4115680` Italian city-state |
 | `landriano` | `Q39557` | city | `Q747074` |
 | `montemurlo` | `Q20389` | city | `Q747074` |
 | `sesia` | `Q1248298` | region | `Q4022` river |
 | `gulf-of-salerno` | `Q828574` | region | `Q1322134` gulf / `Q39594` bay |
 
-`northern-italy` is one of the two reused — the atlas has held it since an earlier batch and
-it carries `Q4345530`, which is what the 1524–1525 campaign's own `P276` names — and
-`florence-q2044` is the other, reused within the batch by the siege and by Gavinana.
+`northern-italy` is the one reuse that survived — the atlas has held it since an earlier batch
+and it carries `Q4345530`, which is what the 1524–1525 campaign's own `P276` names.
 
 **Four class lines were added**, each with its label and Wikidata's own gloss read off the
 class item: `Q42961155`, `Q19730508`, `Q1322134` and `Q4115680`. The reading that needed
 saying is `Q4115680`, *Italian city-state*, which Wikidata glosses "one of the small
 independent states between the 9th and 15th centuries": it is `city` here, not `country`,
 because what is on the ground is a town whatever it was sovereign over, and Florence's other
-two classes say `city` as well.
+two classes say `city` as well. **The line stays although the Florence record went**, because
+the class table is about what a class means and not about which records happen to exist.
 
 **Three of the twelve took a disambiguated id, and that is deviation 1314.** `florence`,
 `genoa` and `naples` are **actor** records in this atlas — polities imported from the
@@ -8443,6 +8438,49 @@ comes from `existingRecords(dataDir)` — and a pass written beside the tool rat
 it is exactly how a rule like that gets lost. It is the second fault of this kind this fire
 paid for (1311 was the first) and both are arguments for deviation 1310's conclusion.
 
+**1317. A place record for a town the base map already draws is that town drawn twice, and a
+records fire cannot link the two without re-weighting every label on the map.** Six of the
+places these two batches wrote — `quebec-city`, `pamplona`, `marseille`, `genoa-q1449`,
+`naples-q2634`, `florence-q2044` — name towns **Natural Earth already draws and already
+names**, under the very same Wikidata item the record carried. `placeCandidates`
+(`src/map/names.js`) skips a place the base map has drawn only when the city itself carries
+`place`, and a city carries `place` only through
+`data/imports/naturalearth-places.json` **applied by the offline base-map import**.
+
+**This fire did the whole documented fix and then undid it.** It wrote the seven entries
+(the six above and batch 30's `springfield-massachusetts`, which has the same defect and
+whose tests happen to pass), ran
+`node tools/import/naturalearth.mjs --source vendor/natural-earth/10m --check --budget`
+— which reproduced every other byte of `data/geo/` and touched **13 cities files, adding
+`place` and nothing else**, so the mechanism works and the vendored sources check out — and
+`tests/map-browser.test.mjs` still failed, on a **different pair**. That is the finding:
+linking a city to a record **raises that city's weight** in `placeLabels`' ordering, because
+an atlas place outranks a plain city; seven cities changing rank reordered the label round
+over Iberia and Italy and let a name through that had not been drawn before. A records batch
+may not reorder the map's names as a side effect of placing eight events, so the import was
+reverted and the six records were not kept. **Eight events are placeless that need not be**,
+and `docs/m67-umbrellas.md` argues all eight.
+
+**What the run could not do, and why, exactly.** The pair that failed first was *"Pamplona"
+and "PYRENEES"*, and the pair that failed after the link was *"Rome" and "Italian
+Peninsula"* — both a city against a physical feature, and in both cases `placeLabels` had
+already decided the two boxes did not touch. They do. `labelBox` estimates a label's width
+as characters × size × `em`, and this fire measured the real drawn boxes against it in the
+same view: at one font size a city's own characters run **3.35 to 4.27** units each where
+`EM` predicts the equivalent of 3.9, and a physical feature's run **4.78 to 5.16** where
+`EM_TRACKED` predicts 4.5. **A feature label is about seventeen per cent wider than the box
+kept for it**, so a feature can always be laid over a city and the test will find it. The fix
+is one number in `src/map/labels.js`, `EM_TRACKED` from 0.63 to about 0.73 — and it is
+**lane A's and not this run's**: `tests/labels.test.mjs` pins `EM_TRACKED - EM` to `0.08`,
+which is `--tracking-label` in `src/style.css`, so correcting the estimate means changing a
+display token and a test file this brief tells a records fire to leave alone. **It is written
+down here so that lane A can take it with the measurement already made**, and so that the
+next records fire knows why it must not place an event at a town the base map names.
+
+The rule this fire would leave behind: **a place record for a town the base map already
+names waits for the base-map import; a place record for one it does not is written at
+once.** Twenty of these two batches' places are the second kind and were kept.
+
 **1316. A second parent that is reachable through the first is not a second umbrella.**
 `tests/m42-filing.test.mjs` holds the rule — *"no parent of an event is reachable through
 another of its parents"* — and this fire's A8 pass wrote every `P361` the item names without
@@ -8487,8 +8525,8 @@ partition.** Batch 31 finished what batch 30 started — King William's War name
 batch 30 wrote, so twenty-three records were filed at no cost to the main count, and five of
 batch 30's Beaver Wars records gained the second parent A8 owed them. Batch 32 took the cell
 the brief actually points at, Europe's sixteenth century, and found the opposite problem: not
-a missing umbrella but four umbrellas with no children. Thirty-eight events, twenty-six
-places, nine edges, one refusal, six deviations (1311–1316).
+a missing umbrella but four umbrellas with no children. Thirty-eight events, twenty
+places kept of twenty-six written, nine edges, one refusal, seven deviations (1311–1317).
 
 **Two batches, two different reasons the main count did not have to rise**, and between them
 they answer question 11 halfway: batch 31 shows what batch 30's single rise bought (twenty-three

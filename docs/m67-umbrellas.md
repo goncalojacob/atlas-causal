@@ -1022,3 +1022,49 @@ neither names a `P276`, a `P131` or a `P17`. `reusablePlace`'s two signals
 reach nothing: no record of this atlas is near either point or folds to either
 name. The lane is derived from the point, which is what an event with a
 coordinate and no place has always taken.
+
+## M42b batches 31 and 32 — eight more name neither, and a town drawn twice is why
+
+Eight records of these two batches were placed from their items' own `P276` and
+then had that place taken away again, and the reason is not the source: it is
+that **the atlas would have drawn each of those towns twice.**
+
+`battle-of-quebec-1690` (batch 31), and `battle-of-noain`,
+`battle-of-pampeluna`, `siege-of-marseille-1524`, `siege-of-genoa-1522`,
+`siege-of-naples-1528`, `battle-of-gavinana` and `siege-of-florence-1529-1530`
+(batch 32) each name a town — Quebec City, Pamplona, Marseille, Genoa, Naples,
+Florence — that **Natural Earth already draws and already names** on the base
+map, under the very same Wikidata item the record would have carried. The atlas
+has exactly one way to say that a place record and a base-map city are the same
+town: an entry in `data/imports/naturalearth-places.json`, keyed by the city's
+`NE_ID` and **copied onto the city itself by the offline base-map import**
+(`tools/import/naturalearth.mjs`). Without that entry `placeCandidates` in
+`src/map/names.js` does not know the two are one, and writes the name a second
+time beside the first.
+
+**This fire wrote the entries, ran the import, and put both back.** The entries
+and the import are right — the seven towns, `springfield-massachusetts` from
+batch 30 among them, are genuinely the same places — but linking a city to a
+record **raises that city's weight** on the map, because an atlas place outranks
+a plain city in `placeLabels`' ordering. Seven cities changing rank reordered
+the whole label round over Iberia and Italy, let a name through that had not
+been drawn before, and `tests/map-browser.test.mjs` failed on a different pair
+than the one it started with. A records batch may not re-weight the map's labels
+as a side effect of placing eight events, so the import was reverted and the six
+records were not kept.
+
+**What is lost is small and what it buys is a picture that does not lie.** The
+eight events carry their lane — `americas` for Quebec, `europe` for the other
+seven — and `docs/m42b-pool.md` names the trade in deviation 1317. None of the
+eight names an actor either, for the reason that batch's section gives: sixteenth
+century Europe has no polity records here at all, and the participants Quebec's
+item names are CShapes actors beginning in 1886.
+
+**The other twenty of the two batches keep their places**, because the towns they
+name — Hondarribia, Landriano, Montemurlo, Dover, Wells, York, Groton,
+Haverhill, Bicocca, Mézières, Port-Royal, Nashwaak, Fort Albany and the rest —
+are ones **Natural Earth does not draw**, so a record for each is the only mark
+that town has and there is nothing to duplicate. That is the line this fire
+would offer for every batch after it: *a place record for a town the base map
+already names waits for the base-map import; a place record for one it does not
+is written at once.*

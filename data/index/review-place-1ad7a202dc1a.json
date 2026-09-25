@@ -4782,33 +4782,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 2,
-      "id": "florence-q2044",
-      "kind": "place",
-      "names": [
-        "Florence",
-        "Florença"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5307,33 +5280,6 @@
         "flags": [
           "imported-facts",
           "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 1,
-      "id": "genoa-q1449",
-      "kind": "place",
-      "names": [
-        "Genoa",
-        "Génova"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
         ],
         "status": "draft"
       },
@@ -9310,33 +9256,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 1,
-      "id": "marseille",
-      "kind": "place",
-      "names": [
-        "Marseille",
-        "Marselha"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10387,33 +10306,6 @@
       ],
       "created": "2026-09-25",
       "degree": 1,
-      "id": "naples-q2634",
-      "kind": "place",
-      "names": [
-        "Naples",
-        "Nápoles"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 1,
       "id": "nashwaak-village-new-brunswick",
       "kind": "place",
       "names": [
@@ -11419,32 +11311,6 @@
         "flags": [
           "imported-facts",
           "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 2,
-      "id": "pamplona",
-      "kind": "place",
-      "names": [
-        "Pamplona"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
         ],
         "status": "draft"
       },
@@ -12882,34 +12748,6 @@
         "flags": [
           "imported-facts",
           "a9-place"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "created": "2026-09-25",
-      "degree": 1,
-      "id": "quebec-city",
-      "kind": "place",
-      "names": [
-        "Quebec City",
-        "Quebec",
-        "Quebec (cidade)"
-      ],
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts"
         ],
         "status": "draft"
       },
@@ -18356,12 +18194,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "florence-q2044",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "fort-albany-first-nation",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18375,12 +18207,6 @@
     },
     {
       "id": "fussen",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "genoa-q1449",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18548,12 +18374,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "marseille",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "melle-belgium",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18596,12 +18416,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "naples-q2634",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "nashwaak-village-new-brunswick",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18638,12 +18452,6 @@
       "rule": "summary-imported"
     },
     {
-      "id": "pamplona",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "pfaffenhofen-an-der-ilm",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18675,12 +18483,6 @@
     },
     {
       "id": "puna-island",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "quebec-city",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

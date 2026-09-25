@@ -157,6 +157,15 @@
             "parent"
           ],
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -253,6 +262,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -288,6 +306,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -761,6 +788,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -779,6 +815,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -787,6 +832,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -805,6 +859,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]

@@ -2278,15 +2278,6 @@
         }
       ]
     },
-    "florence-q2044": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
     "fontibon": {
       "from": "git",
       "versions": [
@@ -2525,15 +2516,6 @@
             "sources"
           ],
           "on": "2026-09-22"
-        }
-      ]
-    },
-    "genoa-q1449": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
         }
       ]
     },
@@ -4424,15 +4406,6 @@
         }
       ]
     },
-    "marseille": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
     "matabeleland": {
       "from": "git",
       "versions": [
@@ -4905,15 +4878,6 @@
       ]
     },
     "namur": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "naples-q2634": {
       "from": "git",
       "versions": [
         {
@@ -5401,15 +5365,6 @@
         {
           "first": true,
           "on": "2026-09-22"
-        }
-      ]
-    },
-    "pamplona": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
         }
       ]
     },
@@ -6112,15 +6067,6 @@
             "sources"
           ],
           "on": "2026-09-22"
-        }
-      ]
-    },
-    "quebec-city": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
         }
       ]
     },

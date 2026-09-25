@@ -1,5 +1,5 @@
 {
-  "drafts": 12383,
+  "drafts": 12377,
   "kinds": [
     {
       "count": 6691,
@@ -12,8 +12,8 @@
       "kind": "source"
     },
     {
-      "count": 648,
-      "file": "index/review-place-4f6ef603139f.json",
+      "count": 642,
+      "file": "index/review-place-1ad7a202dc1a.json",
       "kind": "place"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "count": 1114,
-      "file": "index/review-event-c96a3bff9f0b.json",
+      "file": "index/review-event-af0486a30c06.json",
       "kind": "event"
     },
     {
@@ -53,5 +53,5 @@
     }
   ],
   "schema": 1,
-  "total": 6005
+  "total": 5999
 }
