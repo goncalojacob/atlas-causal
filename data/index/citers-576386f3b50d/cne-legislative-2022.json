@@ -1,0 +1,30 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "geringonca-2015--legislative-election-2022--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2019--legislative-election-2022--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2022--costa-resigns-2023--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2022",
+      "kind": "event",
+      "locator": null
+    }
+  ],
+  "id": "cne-legislative-2022",
+  "schema": 1
+}
