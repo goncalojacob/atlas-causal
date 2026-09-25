@@ -7787,12 +7787,18 @@ Ten now. The first two still block a century each and both are unchanged.
     Ear is main and is nobody's child — **rule 4 does**, and the same shape will refuse
     every edge between two overlapping wars whichever way round it is written.
 
-**The check, on this fire's heads.** The claim commit and the two merges went out in one
-push; the batch's records, the index and this note went out in a second. Locally the fire
-finished with `node tools/validate.mjs --index` **clean at 0 errors and 520 warnings** on
-the pushed index. **Three pure tests failed on the first attempt and all three were this
-batch's own** — the redundant parent (deviation 1305), the deleted `region` keys
-(deviation 1306) and `docs/m53-polities.md` §4.1's denominator — and all three were fixed
-before anything was pushed. **The next fire should read this head's run before it does
+**The check, on this fire's heads.** Run **1787**, on the claim commit `9eec4bc5`, was
+**cancelled** by the merge push that followed it. Run **1788**, on `f9082c2e`, the head of
+the two merges, concluded **success**. Runs **1789** and **1790** were each cancelled by
+the next push in turn — deviation 1258's chain, which this fire did not manage to avoid
+because two corrections came after the batch. Run **1791**, on `37571651`, the head of this
+fire, concluded **success**. Locally the fire finished at **2,114 tests passing with
+nothing failed and nothing skipped** — the 1,819 of the pure suites and the 295 of the
+browser suites, the browser set run alone, the two sets never at once — and
+`node tools/validate.mjs --index` **clean at 0 errors and 520 warnings** on the pushed
+index. **Three pure tests failed on the first attempt and all three were this batch's
+own** — the redundant parent (deviation 1305), the deleted `region` keys (deviation 1306)
+and `docs/m53-polities.md` §4.1's denominator — and all three were fixed before anything
+was pushed. **The next fire should read this head's run before it does
 anything else**, and if it is red, read the failure: the check has been honest since M63
 and it is not load.
