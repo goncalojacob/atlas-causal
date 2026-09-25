@@ -2174,6 +2174,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hsimucheng--battle-of-liaoyang--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Hsimucheng\", revision 1370443278, § Description of battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-imenas--battle-of-tin-keraten--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tin Keraten\", revision 1370591104, § Background"
@@ -2462,6 +2468,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-port-arthur--hitachi-maru-incident--precondition-of",
+      "kind": "edge",
+      "locator": "\"Hitachi Maru Incident\", revision 1370622816, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-port-royal-1690--battle-of-quebec-1690--enabled",
       "kind": "edge",
       "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
@@ -2582,9 +2594,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tashihchiao--battle-of-hsimucheng--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Hsimucheng\", revision 1370443278, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-te-li-ssu--battle-of-motien-pass--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Motien Pass\", revision 1370269908, § Preliminary movements"
     },
     {
       "dissent": false,
@@ -2633,6 +2657,12 @@
       "id": "battle-of-the-yalu-river-1904--battle-of-nanshan--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Nanshan\", revision 1370451314, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-yellow-sea--battle-of-korsakov--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Korsakov\", revision 1370446023, lead and § Preliminary moves"
     },
     {
       "dissent": false,
@@ -5891,6 +5921,12 @@
       "id": "siege-of-port-arthur--battle-of-tsushima--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--raid-on-yingkou--reacted-to",
+      "kind": "edge",
+      "locator": "\"Raid on Yingkou\", revision 1370706175, § Background"
     },
     {
       "dissent": false,
@@ -9200,6 +9236,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hsimucheng",
+      "kind": "event",
+      "locator": "\"Battle of Hsimucheng\", revision 1370443278"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hue",
       "kind": "event",
       "locator": "\"Battle of Huế\", revision 1374240274"
@@ -9311,6 +9353,12 @@
       "id": "battle-of-korea-strait",
       "kind": "event",
       "locator": "\"Battle of Korea Strait\", revision 1376104466"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-korsakov",
+      "kind": "event",
+      "locator": "\"Battle of Korsakov\", revision 1370446023"
     },
     {
       "dissent": false,
@@ -9479,6 +9527,12 @@
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-motien-pass",
+      "kind": "event",
+      "locator": "\"Battle of Motien Pass\", revision 1370269908"
     },
     {
       "dissent": false,
@@ -11342,6 +11396,12 @@
     },
     {
       "dissent": false,
+      "id": "hitachi-maru-incident",
+      "kind": "event",
+      "locator": "\"Hitachi Maru Incident\", revision 1370622816"
+    },
+    {
+      "dissent": false,
       "id": "honduras-and-la-negra-farms-massacre",
       "kind": "event",
       "locator": "\"Honduras and La Negra farms massacre\", revision 1363367769"
@@ -12491,6 +12551,12 @@
       "id": "raid-on-wells-1692",
       "kind": "event",
       "locator": "\"Raid on Wells (1692)\", revision 1375427394"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-yingkou",
+      "kind": "event",
+      "locator": "\"Raid on Yingkou\", revision 1370706175"
     },
     {
       "dissent": false,

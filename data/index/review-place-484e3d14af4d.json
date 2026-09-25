@@ -6225,6 +6225,34 @@
       ],
       "created": "2026-09-25",
       "degree": 1,
+      "id": "hsimucheng",
+      "kind": "place",
+      "names": [
+        "Hsimucheng"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2409166, the Battle of Hsimucheng, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276 to fall back on, and the article calls the ground a hamlet in today's Ximu Town, 20 km south-east of Haicheng.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
       "id": "hudson-bay",
       "kind": "place",
       "names": [
@@ -7801,6 +7829,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "korsakov",
+      "kind": "place",
+      "names": [
+        "Korsakov"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q4871480, the Battle of Korsakov, read on 2026-09-25 — A9's first step. It is 25 km north-east of the point Q155331 gives for the town of Korsakov itself, because the engagement was fought at sea off the southern coast of Sakhalin and the item places it where the ships were; the town is what the battle is named after and what this record is labelled by. That is quang-tri's case from batch 57 read at sea.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8482,7 +8538,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "liaodong-peninsula",
       "kind": "place",
       "names": [
@@ -16615,25 +16671,25 @@
       "authors": [
         {
           "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "created": "2026-09-22",
-      "degree": 1,
+      "created": "2026-09-25",
+      "degree": 2,
       "id": "tsushima-strait",
       "kind": "place",
       "names": [
-        "Tsushima Strait",
-        "Eastern Channel"
+        "Tsushima Strait"
       ],
       "origin": {
-        "tool": "assistant"
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
           "imported-facts",
           "a9-place"
         ],
+        "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one.",
         "status": "draft"
       },
       "revised": null,
@@ -17951,6 +18007,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "yingkou",
+      "kind": "place",
+      "names": [
+        "Yingkou"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q75150, Yingkou, reached by A9's second step from Q4311063's P276 because the raid item carries no P625 of its own. precision city from Q75150's own class Q1549591, big city.",
         "status": "draft"
       },
       "revised": null,

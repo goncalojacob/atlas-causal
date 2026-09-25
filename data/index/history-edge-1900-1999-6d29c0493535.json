@@ -1287,6 +1287,15 @@
         }
       ]
     },
+    "battle-of-hsimucheng--battle-of-liaoyang--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-inchon--second-battle-of-seoul--caused": {
       "from": "git",
       "versions": [
@@ -1413,6 +1422,15 @@
         }
       ]
     },
+    "battle-of-port-arthur--hitachi-maru-incident--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-shaho--battle-of-sandepu--precondition-of": {
       "from": "git",
       "versions": [
@@ -1431,12 +1449,30 @@
         }
       ]
     },
+    "battle-of-tashihchiao--battle-of-hsimucheng--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-tashihchiao--battle-of-liaoyang--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-te-li-ssu--battle-of-motien-pass--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -1507,6 +1543,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-the-yellow-sea--battle-of-korsakov--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -5332,6 +5377,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-port-arthur--raid-on-yingkou--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

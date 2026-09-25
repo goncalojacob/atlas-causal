@@ -2909,6 +2909,15 @@
         }
       ]
     },
+    "hsimucheng": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "hudson-bay": {
       "from": "git",
       "versions": [
@@ -3617,6 +3626,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "korsakov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7846,6 +7864,20 @@
             "sources"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "created",
+            "names",
+            "origin",
+            "regionNote",
+            "review",
+            "where",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8500,6 +8532,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yingkou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

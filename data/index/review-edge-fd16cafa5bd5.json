@@ -4912,6 +4912,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "from": "battle-of-hsimucheng",
+      "id": "battle-of-hsimucheng--battle-of-liaoyang--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-liaoyang",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "from": "battle-of-imenas",
       "id": "battle-of-imenas--battle-of-tin-keraten--precondition-of",
       "kind": "edge",
@@ -5985,6 +6013,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "from": "battle-of-port-arthur",
+      "id": "battle-of-port-arthur--hitachi-maru-incident--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "hitachi-maru-incident",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "from": "battle-of-port-royal-1690",
       "id": "battle-of-port-royal-1690--battle-of-quebec-1690--enabled",
       "kind": "edge",
@@ -6463,6 +6519,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "battle-of-tashihchiao",
+      "id": "battle-of-tashihchiao--battle-of-hsimucheng--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-hsimucheng",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "battle-of-tashihchiao",
       "id": "battle-of-tashihchiao--battle-of-liaoyang--precondition-of",
@@ -6479,6 +6563,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-liaoyang",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-te-li-ssu",
+      "id": "battle-of-te-li-ssu--battle-of-motien-pass--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-motien-pass",
       "type": "precondition-of"
     },
     {
@@ -6730,6 +6842,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-nanshan",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-the-yellow-sea",
+      "id": "battle-of-the-yellow-sea--battle-of-korsakov--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-korsakov",
       "type": "precondition-of"
     },
     {
@@ -21231,6 +21371,34 @@
       "status": "active",
       "to": "battle-of-tsushima",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "siege-of-port-arthur",
+      "id": "siege-of-port-arthur--raid-on-yingkou--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "raid-on-yingkou",
+      "type": "reacted-to"
     },
     {
       "authors": [

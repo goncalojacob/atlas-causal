@@ -8038,6 +8038,44 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-hsimucheng",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The item's single P585 of 31 July 1904 is the day the article gives, so nothing was widened under A7. Place by A9's first step, the item's own P625; the item carries no P276.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hsimucheng"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-hue",
       "kind": "event",
@@ -8706,6 +8744,44 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-korsakov",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The item's P580 and P585 are both 20 August 1904, which is the day the article gives, so nothing was widened under A7. Place by A9's first step, the item's own P625. That point derives the europe lane and not asia, as `sakhalin` does for `japanese-invasion-of-sakhalin`: deviation 1423's open question, which is the owner's and not a fire's, so no `region` override is written.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Korsakov"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "battle-of-kursk",
@@ -9066,7 +9142,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 4,
+      "degree": 5,
       "id": "battle-of-liaoyang",
       "kind": "event",
       "origin": {
@@ -9611,6 +9687,45 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Montemurlo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-motien-pass",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "The item and the article disagree about the day by a week and the interval is widened to cover both, narrowing nothing: Q2469370's only P585 is 17 July 1904 and the article at revision 1370269908 opens \"on 10 July 1904\". Place by A9's first step landing on a held record: the item's own P625 is to the digit Q326917's, the Liaodong Peninsula, which the item also names in P276 and this atlas already holds (deviation 1422).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Motien Pass"
     },
     {
       "authors": [
@@ -10386,7 +10501,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-port-arthur",
       "kind": "event",
       "origin": {
@@ -11747,7 +11862,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "origin": {
@@ -11780,7 +11895,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-te-li-ssu",
       "kind": "event",
       "origin": {
@@ -12248,7 +12363,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "battle-of-the-yellow-sea",
       "kind": "event",
       "origin": {
@@ -20941,6 +21056,45 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "hitachi-maru-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "participants-from-p710"
+        ],
+        "note": "The item's single P585 of 15 June 1904 is the day the article gives, so nothing was widened under A7. Place by A9's second step, P276 Q52055, the Tsushima Strait, because the item carries no P625 of its own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hitachi Maru Incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -28082,6 +28236,46 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "raid-on-yingkou",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "russo-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "participants-from-p710",
+          "date"
+        ],
+        "note": "Interval widened under A7 from the cited article at revision 1370706175, whose raid section opens \"On the 9th of January 1905, Cossacks led by Mishchenko were split into 3 columns to raid the left flank\": the item's P580 is 12 January. Nothing is narrowed and the item's P582 of 29 January is kept. Place by A9's second step, P276 Q75150, Yingkou, because the item carries no P625 of its own.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Yingkou"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -31461,7 +31655,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 5,
+      "degree": 6,
       "id": "siege-of-port-arthur",
       "kind": "event",
       "origin": {

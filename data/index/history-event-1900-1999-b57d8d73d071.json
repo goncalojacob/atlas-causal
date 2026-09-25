@@ -6756,6 +6756,15 @@
         }
       ]
     },
+    "battle-of-hsimucheng": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-hue": {
       "from": "git",
       "versions": [
@@ -6940,6 +6949,15 @@
         }
       ]
     },
+    "battle-of-korsakov": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-kursk": {
       "from": "git",
       "versions": [
@@ -7040,6 +7058,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-motien-pass": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -11953,6 +11980,15 @@
         }
       ]
     },
+    "hitachi-maru-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "holodomor": {
       "from": "git",
       "versions": [
@@ -16429,6 +16465,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "raid-on-yingkou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

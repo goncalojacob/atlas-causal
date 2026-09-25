@@ -3050,6 +3050,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hsimucheng",
+      "kind": "event",
+      "locator": "Q2409166"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hue",
       "kind": "event",
       "locator": "Q697053"
@@ -3161,6 +3167,12 @@
       "id": "battle-of-korea-strait",
       "kind": "event",
       "locator": "Q289102"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-korsakov",
+      "kind": "event",
+      "locator": "Q4871480"
     },
     {
       "dissent": false,
@@ -3329,6 +3341,12 @@
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "Q2889368"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-motien-pass",
+      "kind": "event",
+      "locator": "Q2469370"
     },
     {
       "dissent": false,
@@ -5114,6 +5132,12 @@
     },
     {
       "dissent": false,
+      "id": "hitachi-maru-incident",
+      "kind": "event",
+      "locator": "Q11481675"
+    },
+    {
+      "dissent": false,
       "id": "honduras-and-la-negra-farms-massacre",
       "kind": "event",
       "locator": "Q124308988"
@@ -6161,6 +6185,12 @@
       "id": "raid-on-wells-1692",
       "kind": "event",
       "locator": "Q5931014"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-yingkou",
+      "kind": "event",
+      "locator": "Q4311063"
     },
     {
       "dissent": false,
