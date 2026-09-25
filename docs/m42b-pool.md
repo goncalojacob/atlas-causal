@@ -9274,6 +9274,19 @@ wants: **`P17` is a lane of last resort and never a place** for an event whose
 own `P625` is thousands of kilometres from the country's point — the distance is
 already computed, and `laneFor` takes `countryPoints` for exactly this reason.
 
+**What the next fire needs measured before it writes that guard, found by this
+one:** `tools/import/places.mjs` already carries the two thresholds this kind of
+question is asked with — `NEAR_DEGREES = 1`, which is how `reusablePlace` decides
+that a held record *is* the candidate, and `NEARBY_DEGREES = 2`, which is how a
+refusal is reported as a near miss. Neither is the right cap here: a country's
+`P625` is a centroid, and an event legitimately inside a large country can stand
+ten degrees from it. **The four bad cases are 30° and more away**, so any cap
+between three and twenty fixes them; what is missing is the measurement that
+says which. It cannot be taken from the records, because a record does not keep
+the `P625` its item gave — **it has to be taken from the items**, one pass of
+`Special:EntityData` over the events an import created, which is a list this
+branch already has. Take the measurement first; do not pick the number by eye.
+
 **1331. An umbrella created in the same batch is invisible to that batch's
 filing.** `spain-and-the-american-revolutionary-war` was imported from
 `Q26809259` in this batch, and the two records whose `P361` names it —
