@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "dover-new-hampshire",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q48215",
+  "wikipedia": {
+    "en": "Dover, New Hampshire",
+    "pt": "Dover (Nova Hampshire)"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Dover",
+    "Dover, New Hampshire",
+    "Dover (Nova Hampshire)"
+  ],
+  "where": {
+    "lon": -70.875,
+    "lat": 43.195277777778,
+    "precision": "city",
+    "label": "Dover, New Hampshire"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q48215, imported by tools/import/wikidata.mjs. The item's own description reads \"county seat city in Strafford County, New Hampshire, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

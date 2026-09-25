@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-lauffeld--siege-of-maastricht-1748--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lauffeld\", revision 1370447310, § Aftermath"
+    },
+    {
+      "source": "anderson-2000-crucible-of-war",
+      "locator": "p. 211"
+    }
+  ],
+  "from": "battle-of-lauffeld",
+  "to": "siege-of-maastricht-1748",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Lauffeld article states it in so many words: \"Lauffeld was thus another French victory that failed to achieve a decisive result, although it led to the capture of Bergen-op-Zoom in September and Maastricht in May 1748.\" The paragraph closes on a citation to Anderson, p. 211. \"Led to\" over ten months is a claim about what was made possible and not about what followed directly, so the type is enabled. The same sentence states the same of Bergen op Zoom, and that edge could not be written: the atlas dates that siege to July 1747 at month precision and Lauffeld to 2 July, which rule 4 reads as an arrow pointing backwards.",
+  "dispute": null
+}

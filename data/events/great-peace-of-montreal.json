@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "great-peace-of-montreal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q326028",
+  "wikipedia": {
+    "en": "Great Peace of Montreal",
+    "pt": "Grande Paz de Montreal"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q326028"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Peace of Montreal\", revision 1375713139"
+    }
+  ],
+  "title": "Great Peace of Montreal",
+  "summary": "The English Wikipedia article \"Great Peace of Montreal\", at revision 1375713139, opens: \"The Great Peace of Montreal was a peace treaty between New France and 39 First Nations of North America that ended the Beaver Wars. It was signed on August 4, 1701, by Louis-Hector de Callière, governor of New France, and 1300 representatives of 39 Indigenous nations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q326028, imported by tools/import/wikidata.mjs. The item's own description reads \"1701 peace treaty between New France and Indigenous nations\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1701,
+    "end": 1701,
+    "date": "1701-08-04"
+  },
+  "place": "montreal",
+  "region": null,
+  "regionNote": null,
+  "parent": "beaver-wars",
+  "category": "treaty",
+  "actors": []
+}

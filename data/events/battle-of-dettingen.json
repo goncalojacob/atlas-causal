@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dettingen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q402312",
+  "wikipedia": {
+    "en": "Battle of Dettingen",
+    "pt": "Batalha de Dettingen"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q402312"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dettingen\", revision 1375522467"
+    }
+  ],
+  "title": "Battle of Dettingen",
+  "summary": "The English Wikipedia article \"Battle of Dettingen\", at revision 1375522467, opens: \"The Battle of Dettingen took place on 27 June 1743 during the War of the Austrian Succession, near Karlstein am Main in Bavaria. An alliance composed of British, Hanoverian and Austrian troops, known as the Pragmatic Army, defeated a French force commanded by the Duke of Noailles. While the Earl of Stair exercised operational control, the Allies were nominally commanded by George II of Great Britain, and Dettingen was the last time a reigning British monarch led troops in combat. The battle had little impact on the wider war, and has been described as 'a happy escape, rather than a great victory.'\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q402312, imported by tools/import/wikidata.mjs. The item's own description reads \"British-led battle during the War of the Austrian Succession on 27 June 1743 near Aschaffenburg, Germany.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1743,
+    "end": 1743,
+    "date": "1743-06-27"
+  },
+  "place": "karlstein-am-main",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
+}

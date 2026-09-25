@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "iroquois-war-1609",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2890910",
+  "wikipedia": {
+    "en": "Iroquois War (1609)"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890910"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iroquois War (1609)\", revision 1370624414"
+    }
+  ],
+  "title": "Iroquois War (1609)",
+  "summary": "The English Wikipedia article \"Iroquois War (1609)\", at revision 1370624414, opens: \"During the summer of 1609, Samuel de Champlain attempted to form better relations with the local native tribes. He made alliances with the Wendat and with the Algonquin, the Innu people (Montagnais), and the Etchemin, who lived in the area of the St. Lawrence River. These tribes demanded that Champlain help them in their war against the Haudenosaunee (Iroquois), who lived further south. Champlain set off with 9 French soldiers and 300 natives to explore the Rivière des Iroquois, and became the first European to map Lake Champlain. Having had no encounters with the Haudenosaunee at this point many of the men headed back because of the danger of traveling in the country of their enemies, leaving Champlain with only 2 Frenchmen and 60 natives.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890910, imported by tools/import/wikidata.mjs. The item's own description reads \"1609 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1609,
+    "date": "1609-07-29"
+  },
+  "place": "north-country-new-york",
+  "region": null,
+  "regionNote": null,
+  "parent": "beaver-wars",
+  "category": "war",
+  "actors": []
+}

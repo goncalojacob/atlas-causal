@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-montemurlo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2889368",
+  "wikipedia": {
+    "en": "Battle of Montemurlo"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889368"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    }
+  ],
+  "title": "Battle of Montemurlo",
+  "summary": "The English Wikipedia article \"Battle of Montemurlo\", at revision 1370450375, opens: \"On 1 or 2 August 1537, near the Tuscan village of Montemurlo, the forces of the newly installed Duke Cosimo I of Florence defeated a hastily organized army of those who wished to overthrow the Medici and restore the Republic of Florence. Following the battle, Cosimo's bloody vengeance on all those who opposed Medici rule effectively ended organized opposition to his family in Florence. The victory led to the decision of Emperor Charles V to formally recognize Cosimo as Duke of Florence on 30 September 1537.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889368, imported by tools/import/wikidata.mjs. The item's own description reads \"1537 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1537,
+    "end": 1537,
+    "date": "1537-08-02"
+  },
+  "place": "montemurlo",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-war-of-1536-1538",
+  "category": "war",
+  "actors": []
+}

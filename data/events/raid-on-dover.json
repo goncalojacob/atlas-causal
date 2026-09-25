@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "raid-on-dover",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7283744",
+  "wikipedia": {
+    "en": "Raid on Dover"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7283744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Dover\", revision 1374990368"
+    }
+  ],
+  "title": "Raid on Dover",
+  "summary": "The English Wikipedia article \"Raid on Dover\", at revision 1374990368, opens: \"The Raid on Dover took place in Dover, New Hampshire, on June 27–28, 1689. Led by Chief Kancamagus of the Pennacook, it was part of King William's War, the North American theater of the Nine Years' War (1688–1697), fought between England and France and their respective Native allies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7283744, imported by tools/import/wikidata.mjs. The item's own description reads \"Action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-06-27",
+    "endDate": "1689-06-28"
+  },
+  "place": "dover-new-hampshire",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

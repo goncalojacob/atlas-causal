@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raid-on-salmon-falls",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7283760",
+  "wikipedia": {
+    "en": "Raid on Salmon Falls"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7283760"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Salmon Falls\", revision 1375173326"
+    }
+  ],
+  "title": "Raid on Salmon Falls",
+  "summary": "The English Wikipedia article \"Raid on Salmon Falls\", at revision 1375173326, opens: \"The Raid on Salmon Falls captured and destroyed the English settlement of Salmon Falls during King William's War. It involved Joseph-François Hertel de la Fresnière, his son Jean-Baptiste Hertel de Rouville and Norridgewock Abnaki chief Wahowa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7283760, imported by tools/import/wikidata.mjs. The item's own description reads \"Action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-03-27"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

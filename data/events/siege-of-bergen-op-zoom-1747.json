@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-bergen-op-zoom-1747",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1835856",
+  "wikipedia": {
+    "en": "Siege of Bergen op Zoom (1747)"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1835856"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bergen op Zoom (1747)\", revision 1370739527"
+    }
+  ],
+  "title": "Siege of Bergen op Zoom (1747)",
+  "summary": "The English Wikipedia article \"Siege of Bergen op Zoom (1747)\", at revision 1370739527, opens: \"The siege of Bergen op Zoom took place during the Austrian War of Succession, when a French army, under the command of Count Löwendal and the overall direction of Marshal Maurice de Saxe, laid siege and captured the strategic Dutch border fortress of Bergen op Zoom on the border of Brabant and Zeeland in 1747. The fortress was defended by Dutch, Austrians, British, Hanoverians and Hessians that supported the Pragmatic Sanction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1835856, imported by tools/import/wikidata.mjs. The item's own description reads \"1747 siege of the Austrian War of Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1747,
+    "end": 1747,
+    "date": "1747-07",
+    "endDate": "1747-09"
+  },
+  "place": "bergen-op-zoom",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-austrian-succession",
+  "category": "war",
+  "actors": []
+}

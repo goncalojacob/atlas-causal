@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "naval-battle-off-st-john-1691",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q17305537",
+  "wikipedia": {
+    "en": "Naval battle off St. John (1691)"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17305537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naval battle off St. John (1691)\", revision 1375237830"
+    }
+  ],
+  "title": "Naval battle off St. John (1691)",
+  "summary": "The English Wikipedia article \"Naval battle off St. John (1691)\", at revision 1375237830, opens: \"The Naval battle off St. John took place on 22 September 1691 between France and England toward the beginning of King William's War in the Bay of Fundy off present-day Saint John, New Brunswick. The English ship sailed with the new British Governor of Acadia Edward Tyng while the French ship sailed with the French Governor of Acadia Joseph Robineau de Villebon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17305537, imported by tools/import/wikidata.mjs. The item's own description reads \"1691 battle of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-09-22"
+  },
+  "place": "bay-of-fundy",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}

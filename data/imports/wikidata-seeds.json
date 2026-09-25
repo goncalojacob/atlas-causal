@@ -1436,7 +1436,121 @@
     "Q432297",
     "Q3636323",
     "Q3636379",
-    "Q1629355"
+    "Q1629355",
+    "Q559181",
+    "Q233702",
+    "Q663435",
+    "Q139565414",
+    "Q688504",
+    "Q4872232",
+    "Q3486003",
+    "Q139855572",
+    "Q402312",
+    "Q663502",
+    "Q571556",
+    "Q695314",
+    "Q657406",
+    "Q569953",
+    "Q16677044",
+    "Q2889310",
+    "Q3485894",
+    "Q3485966",
+    "Q1924575",
+    "Q32493",
+    "Q696699",
+    "Q1835856",
+    "Q289609",
+    "Q682482",
+    "Q81720",
+    "Q1914864",
+    "Q214640",
+    "Q2480692",
+    "Q144251",
+    "Q506076",
+    "Q490319",
+    "Q262684",
+    "Q1569724",
+    "Q1006446",
+    "Q173219",
+    "Q696355",
+    "Q1296",
+    "Q134121",
+    "Q111901161",
+    "Q3438046",
+    "Q736097",
+    "Q849680",
+    "Q862257",
+    "Q856216",
+    "Q4818005",
+    "Q7992172",
+    "Q885253",
+    "Q5600061",
+    "Q18354826",
+    "Q4818009",
+    "Q4872610",
+    "Q2890910",
+    "Q16208744",
+    "Q2624975",
+    "Q16208754",
+    "Q7431161",
+    "Q2889100",
+    "Q6893841",
+    "Q24204942",
+    "Q326028",
+    "Q49158",
+    "Q2536826",
+    "Q2680543",
+    "Q163507",
+    "Q591591",
+    "Q7054928",
+    "Q142010",
+    "Q1474128",
+    "Q19593663",
+    "Q331380",
+    "Q142092",
+    "Q3710319",
+    "Q49",
+    "Q1548416",
+    "Q3504658",
+    "Q1070342",
+    "Q106412661",
+    "Q14474392",
+    "Q16854103",
+    "Q17305537",
+    "Q7510302",
+    "Q1708064",
+    "Q2888522",
+    "Q2890597",
+    "Q2935388",
+    "Q2937687",
+    "Q2937688",
+    "Q3062426",
+    "Q4392917",
+    "Q4870722",
+    "Q4871051",
+    "Q4871031",
+    "Q4872090",
+    "Q5931014",
+    "Q5934341",
+    "Q7283744",
+    "Q7283747",
+    "Q7283760",
+    "Q7283762",
+    "Q1541712",
+    "Q2889540",
+    "Q3174545",
+    "Q3485951",
+    "Q6093105",
+    "Q642320",
+    "Q683341",
+    "Q7879248",
+    "Q9291683",
+    "Q16529030",
+    "Q2746040",
+    "Q38251286",
+    "Q633362",
+    "Q981042",
+    "Q2889368"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1687,7 +1801,15 @@
     "Q3636592": "americas",
     "Q3636322": "americas",
     "Q1617531": "americas",
-    "Q1616748": "americas"
+    "Q1616748": "americas",
+    "Q559181": "europe",
+    "Q233702": "europe",
+    "Q862257": "americas",
+    "Q18354826": "americas",
+    "Q6893841": "americas",
+    "Q2935388": "americas",
+    "Q3062426": "americas",
+    "Q7283747": "americas"
   },
   "queries": [
     {
@@ -5466,6 +5588,126 @@
       "precision": "region",
       "label": "transcontinental region",
       "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"region or territory that is located across continental borders\". Carried by the Caribbean (Q664609)."
+    },
+    "Q2616791": {
+      "kind": "place",
+      "precision": "city",
+      "label": "urban municipality of Poland",
+      "note": "Added in M42b batch 29, the War of the Austrian Succession vein for Europe's eighteenth century. The label and the description — 'administrative division of Poland' — are read from the item itself over the network, under deviation 1266's rule; the class is here because Q214640, Brzeg, carries it and the table did not. A municipality with a town in it is a city at this atlas's precisions, which is what Q3558970 village of Poland already says for the smaller case."
+    },
+    "Q493522": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Belgium",
+      "note": "Added in M42b batch 29, the same batch and for the same reason as Q2616791: Tournai, Melle and Riemst each carry it and the table did not. 'administrative division of Belgium', read from the item. Q15273785, the honorary title a Belgian municipality may hold, is deliberately not added — it is a decoration and not a kind of thing, and every item carrying it also carries this class."
+    },
+    "Q15127012": {
+      "kind": "place",
+      "precision": "city",
+      "label": "town in the United States",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q2536826, Brookfield, and Q3710319, Wilton carries it and the table did not. Wikidata's gloss: \"administrative division at the local government level in the United States\". A New England town has a town in it, so it is a city at this atlas's four precisions, which is what Q3558970 village of Poland already says for the smaller case."
+    },
+    "Q498162": {
+      "kind": "place",
+      "precision": "city",
+      "label": "census-designated place in the United States",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q2680543, South Deerfield carries it and the table did not. Wikidata's gloss: \"statistical concentration of population defined by the United States Census Bureau\". A named settlement the census counts is a city at these precisions even where it is not incorporated as one."
+    },
+    "Q62049": {
+      "kind": "place",
+      "precision": "city",
+      "label": "county seat",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q163507, South Kingstown, and Q331380, Schenectady carries it and the table did not. Wikidata's gloss: \"administrative center for a county or civil parish in the United States\". A county's seat is a town, so it is a city here."
+    },
+    "Q2154459": {
+      "kind": "place",
+      "precision": "city",
+      "label": "New England town",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q591591, Sudbury carries it and the table did not. Wikidata's gloss: \"basic unit of local government in each of the six New England federated states of the United States\". The same reading as Q15127012 beside it."
+    },
+    "Q27676416": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city or town of Quebec",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q142010 Sorel-Tracy, Q142092 La Prairie and Q1474128 Lachine carries it and the table did not. Wikidata's gloss: \"type of local municipality in Quebec (Quebec doesn't make the difference between city or town)\"."
+    },
+    "Q123615496": {
+      "kind": "place",
+      "precision": "region",
+      "label": "U.S. region",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q1548416, the Great Lakes region carries it and the table did not. Wikidata's gloss: \"geographic region within the United States encompassing more than one state or territory\". `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading."
+    },
+    "Q39816": {
+      "kind": "place",
+      "precision": "region",
+      "label": "valley",
+      "note": "Added in M42b batch 30, the American Indian Wars vein for the Americas' seventeenth century. The label and the gloss are read from the class item itself over the network, under deviation 1266's rule; the class is here because Q3504658, the Mohawk Valley, carries it and the table did not. Wikidata's gloss: \"low area between hills, often with a river running through it\". `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading — the Mohawk Valley is six counties of New York and the item says so."
+    },
+    "Q2578218": {
+      "kind": "place",
+      "precision": "region",
+      "label": "inland sea",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “sea that is deeply landlocked”. Hudson Bay, Q3040, carries it; a sea is larger than a settlement and is not a state, which is the `region` precision as A9 states it."
+    },
+    "Q12734855": {
+      "kind": "place",
+      "precision": "region",
+      "label": "epicontinental sea",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “sea covering part of a continental shelf”. Hudson Bay's second class, and it agrees with the first: both are `region`."
+    },
+    "Q35657": {
+      "kind": "place",
+      "precision": "region",
+      "label": "U.S. state",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “constituent political entity of the United States of America”. Maine, Q724, carries it. It is `region` and not `country`: the precision `country` is for a state, and a constituent entity of one is an administrative division larger than a settlement, which is exactly what A9 sends to `region`."
+    },
+    "Q93267": {
+      "kind": "place",
+      "precision": "region",
+      "label": "isthmus",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “narrow strip of land connecting two larger land areas”. The Isthmus of Chignecto, Q1007898, carries it; a physical region and not a point."
+    },
+    "Q1093829": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city in the United States",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “administrative division at the local government level in the United States”. Dover and Haverhill, Q48215 and Q54132, carry it; a unit of local government with a town in it is a city at this atlas's four precisions, which is the reading Q3558970 and batch 30's five American and Canadian kinds already carried."
+    },
+    "Q28042933": {
+      "kind": "place",
+      "precision": "point",
+      "label": "state historic site in the United States",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “historic site administrated by a state of United States”. The Pemaquid Archeological Site, Q7161849, carries it beside Q839954 archaeological site, and the two agree at `point`."
+    },
+    "Q1785071": {
+      "kind": "place",
+      "precision": "point",
+      "label": "fort",
+      "note": "Added in M42b batch 31 from the class each located item of the King William's War vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “military construction designed for defensive warfare”. Pemaquid's third class, and it agrees with the other two at `point`."
+    },
+    "Q42961155": {
+      "kind": "place",
+      "precision": "city",
+      "label": "quarter of Milan",
+      "note": "Added in M42b batch 32 from the class each located item of the Italian Wars vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “neighborhood located in the City of Milano, Italy”. Bicocca, Q3639729, carries it beside Q19730508 former municipality, and the two agree: a named quarter of a city is a `city` at this atlas's four precisions, which is the same reading every settlement-sized unit of local government here already takes."
+    },
+    "Q19730508": {
+      "kind": "place",
+      "precision": "city",
+      "label": "former municipality",
+      "note": "Added in M42b batch 32 from the class each located item of the Italian Wars vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “municipality that no longer exists as independent entity”. Bicocca's second class; a municipality that has been absorbed is still a settlement and is `city`, as its other class is."
+    },
+    "Q1322134": {
+      "kind": "place",
+      "precision": "region",
+      "label": "gulf",
+      "note": "Added in M42b batch 32 from the class each located item of the Italian Wars vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “large inlet that is an arm of an ocean or sea”. The Gulf of Salerno, Q828574, carries it beside Q39594 bay, and the two agree at `region`."
+    },
+    "Q4115680": {
+      "kind": "place",
+      "precision": "city",
+      "label": "Italian city-state",
+      "note": "Added in M42b batch 32 from the class each located item of the Italian Wars vein names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it “one of the small independent states between the 9th and 15th centuries”. Florence, Q2044, carries it beside Q747074 comune of Italy and Q1549591 big city, and all three agree at `city`: what is on the ground is a town, whatever it was sovereign over."
     }
   },
   "reconcile": true

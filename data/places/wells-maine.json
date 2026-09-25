@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "wells-maine",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2446241",
+  "wikipedia": {
+    "en": "Wells, Maine"
+  },
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Wells",
+    "Wells, Maine"
+  ],
+  "where": {
+    "lon": -70.611666666667,
+    "lat": 43.320277777778,
+    "precision": "city",
+    "label": "Wells, Maine"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q2446241, imported by tools/import/wikidata.mjs. The item's own description reads \"town in York County, Maine, United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

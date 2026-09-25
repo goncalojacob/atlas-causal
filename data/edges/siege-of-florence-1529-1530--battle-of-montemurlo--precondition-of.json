@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-florence-1529-1530--battle-of-montemurlo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    }
+  ],
+  "from": "siege-of-florence-1529-1530",
+  "to": "battle-of-montemurlo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Both articles name the same quarrel and the siege is what created it. The siege, at revision 1370741144: \"They overthrew the Republic of Florence and installed Alessandro de' Medici as the ruler of the city.\" Montemurlo, at revision 1370450375: \"the forces of the newly installed Duke Cosimo I of Florence defeated a hastily organized army of those who wished to overthrow the Medici and restore the Republic of Florence.\" The party beaten in 1537 is the party the siege put out of power in 1530, and the two records are filed under different wars, so this is an argument and not the filing said twice. Neither sentence is footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

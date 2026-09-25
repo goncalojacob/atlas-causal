@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "great-swamp-fight",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5600061",
+  "wikipedia": {
+    "en": "Great Swamp Fight"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5600061"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Swamp Fight\", revision 1374695067"
+    }
+  ],
+  "title": "Great Swamp Fight",
+  "summary": "The English Wikipedia article \"Great Swamp Fight\", at revision 1374695067, opens: \"The Great Swamp Massacre or the Great Swamp Fight was a crucial battle fought during King Philip's War between the colonial militia of New England and the Narragansett people in December 1675. It was fought near the villages of Kingston and West Kingston in the Colony of Rhode Island and Providence Plantations. The combined force of the New England militia included 150 Pequots, and they inflicted a huge number of Narragansett casualties, including many hundreds of women and children. The battle has been described by historians as \"one of the most brutal and lopsided military encounters in all of New England's history.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5600061, imported by tools/import/wikidata.mjs. The item's own description reads \"1675 battle of King Philip's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1675,
+    "date": "1675-12-19"
+  },
+  "place": "south-kingstown-rhode-island",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-philip-s-war",
+  "category": "war",
+  "actors": []
+}

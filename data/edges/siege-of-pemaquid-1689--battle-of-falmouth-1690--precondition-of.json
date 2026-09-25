@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-pemaquid-1689--battle-of-falmouth-1690--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pemaquid (1689)\", revision 1375095205"
+    }
+  ],
+  "from": "siege-of-pemaquid-1689",
+  "to": "battle-of-falmouth-1690",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Pemaquid article states what the fall of the fort did to the frontier: \"The fall of Pemaquid was a significant setback to the English. It pushed the frontier back to Casco (Falmouth), Maine.\" Falmouth is where the next year's attack fell, and the article makes the loss of the easternmost outpost the reason it was exposed. The sentences are not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "dispute": null
+}

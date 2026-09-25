@@ -1,0 +1,988 @@
+{
+  "from": 1500,
+  "kind": "event",
+  "records": {
+    "arauco-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-agnadello": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-andalien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-angol": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-bicocca": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cajamarca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-capo-d-orso": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-casaloldo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-catirai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cempoala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-chupas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-colhuacatonco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-curalaba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cusco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-flodden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-gavinana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-la-motta-1513": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-lagunillas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-landriano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-maraycalla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-marignano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-marihuenu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-mataquito": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-millarapue": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-montemurlo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-noain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-novara-1513": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-ollantaytambo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-otumba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-pampeluna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-pavia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-penco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-peteroa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-polesella": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-puna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-punta-quemada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-quiapo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-quilacura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ravenna-1512": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-saint-mathieu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-st-quentin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "title"
+          ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-citadel-of-vicenza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-sesia-1524": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-spurs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-tucapel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-vilcaconga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "fall-of-tenochtitlan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "governorate-general-of-brazil-1549": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "hereditary-captaincies-of-brazil-1534": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "indigenous-depopulation-of-coastal-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "italian-campaign-of-1524-1525": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "italian-war-of-1521-1526": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "italian-war-of-1536-1538": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "italian-war-of-1542-1546": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "italian-war-of-1551-1559": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "la-noche-triste": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "massacre-in-the-great-temple-of-tenochtitlan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "new-laws": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "portuguese-landfall-in-brazil-1500": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "sack-of-brescia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "sack-of-rome-1527": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-asola-1516": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-concepcion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-crema-1514": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-cusco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-dijon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-florence-1529-1530": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-fuenterrabia-1523-1524": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-genoa-1522": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-marseille-1524": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-mezieres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-naples-1528": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-padua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "spanish-conquest-of-guatemala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-conquest-of-iberian-navarre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "spanish-conquest-of-the-aztec-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-conquest-of-the-inca-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-conquest-of-the-kingdom-of-q-umarkaj": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-brazilian-sugar-cycle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "valladolid-debate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-of-the-league-of-cambrai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-of-the-league-of-cognac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1599
+}

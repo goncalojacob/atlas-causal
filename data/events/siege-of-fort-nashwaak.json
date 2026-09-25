@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-nashwaak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4392917",
+  "wikipedia": {
+    "en": "Siege of Fort Nashwaak"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4392917"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
+    }
+  ],
+  "title": "Siege of Fort Nashwaak",
+  "summary": "The English Wikipedia article \"Siege of Fort Nashwaak\", at revision 1375235509, opens: \"The siege of Fort Nashwaak  occurred during King William's War when New England forces from Boston attacked the capital of Acadia, Fort Nashwaak, at present-day Fredericton, New Brunswick. The siege was in retaliation for the French and Indian Siege of Pemaquid (1696) in the English Province of Massachusetts Bay. Colonel John Hathorne and Major Benjamin Church were the leaders of the New England force of 400 men. The siege lasted two days, between October 18–20, 1696, and formed part of a larger expedition by Church against a number of other Acadian communities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4392917, imported by tools/import/wikidata.mjs. The item's own description reads \"1696 action of King William's War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1696,
+    "end": 1696,
+    "date": "1696-10-18",
+    "endDate": "1696-10-20"
+  },
+  "place": "nashwaak-village-new-brunswick",
+  "region": null,
+  "regionNote": null,
+  "parent": "king-william-s-war",
+  "category": "war",
+  "actors": []
+}
