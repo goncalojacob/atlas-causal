@@ -9035,7 +9035,7 @@ only match on an identifier the atlas's own records do not carry.
 | **main** | **240** — 239 through batch 33, and one rise batch 34 argues for |
 | **largest connected component** | **678** (673 before), and the Thirty Years' War is inside it |
 | components | 380 |
-| events with no edge at all | 303 |
+| events with no edge at all | 302 |
 | Europe before 1900 | **243 active, 18 main** |
 | the `americas` lane | **322 active, 56 main** |
 | south and central America against north, inside that lane | **209 to 65**, with 48 placeless |
@@ -9053,7 +9053,7 @@ into the main component. Deviations **1318 to 1327**.
 **The next fire's moves, in order.**
 
 1. **The place pass on records that already exist.** This is now the largest
-   single gap and it has grown: **303 events have no edge and 48 of the Americas'
+   single gap and it has grown: **302 events have no edge and 48 of the Americas'
    are placeless**, and batch 34 added seventeen more children with a point of
    their own that nothing can name. The import fills `place` only when it creates
    a record, because `identity.mjs`'s additive rule never touches `place` on one
