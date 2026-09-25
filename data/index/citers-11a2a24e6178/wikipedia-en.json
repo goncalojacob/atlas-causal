@@ -2174,6 +2174,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-imenas--battle-of-tin-keraten--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tin Keraten\", revision 1370591104, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
       "kind": "edge",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § Aftermath"
@@ -3785,6 +3791,12 @@
       "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
       "kind": "edge",
       "locator": "\"Fourth Battle of Brega\", revision 1370619930, § Rebel advance on Sirte"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-battle-of-gao--battle-of-imenas--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
     },
     {
       "dissent": false,
@@ -5615,6 +5627,18 @@
       "id": "second-battle-of-brega--battle-of-ajdabiya--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ajdabiya\", revision 1374514977"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-gao--fourth-battle-of-gao--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-gao--third-battle-of-gao--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
     },
     {
       "dissent": false,
@@ -9206,6 +9230,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-imenas",
+      "kind": "event",
+      "locator": "\"Battle of Imenas\", revision 1370265996"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-in-delimane-2012",
       "kind": "event",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727"
@@ -9941,6 +9971,12 @@
       "id": "battle-of-timbuktu",
       "kind": "event",
       "locator": "\"Battle of Timbuktu\", revision 1370591090"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tin-keraten",
+      "kind": "event",
+      "locator": "\"Battle of Tin Keraten\", revision 1370591104"
     },
     {
       "dissent": false,

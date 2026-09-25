@@ -4912,6 +4912,34 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "from": "battle-of-imenas",
+      "id": "battle-of-imenas--battle-of-tin-keraten--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-tin-keraten",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "from": "battle-of-in-delimane-2012",
       "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
       "kind": "edge",
@@ -12227,6 +12255,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-sirte-2011",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "fourth-battle-of-gao",
+      "id": "fourth-battle-of-gao--battle-of-imenas--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-imenas",
       "type": "precondition-of"
     },
     {
@@ -20052,6 +20108,62 @@
       "status": "active",
       "to": "battle-of-ajdabiya",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "second-battle-of-gao",
+      "id": "second-battle-of-gao--fourth-battle-of-gao--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "fourth-battle-of-gao",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "second-battle-of-gao",
+      "id": "second-battle-of-gao--third-battle-of-gao--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "third-battle-of-gao",
+      "type": "reacted-to"
     },
     {
       "authors": [

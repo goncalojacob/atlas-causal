@@ -514,7 +514,7 @@
       ]
     },
     "battle-of-the-lake-of-two-mountains-national-historic-site": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -532,7 +532,7 @@
       ]
     },
     "bay-of-fundy": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -705,7 +705,7 @@
       ]
     },
     "bicocca-district-of-milan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -986,7 +986,7 @@
       ]
     },
     "brookfield-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1010,7 +1010,7 @@
       ]
     },
     "brzeg": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1424,7 +1424,7 @@
       ]
     },
     "chotusice": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1507,7 +1507,7 @@
       ]
     },
     "colonial-pemaquid-state-historic-site": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1909,7 +1909,7 @@
       ]
     },
     "dover-new-hampshire": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2309,7 +2309,7 @@
       ]
     },
     "fort-albany-first-nation": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2442,7 +2442,7 @@
       ]
     },
     "fussen": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2574,7 +2574,7 @@
       ]
     },
     "ghent": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2623,7 +2623,7 @@
       ]
     },
     "great-lakes-region": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2647,7 +2647,7 @@
       ]
     },
     "groton-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2736,7 +2736,7 @@
       ]
     },
     "gulf-of-salerno": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2778,7 +2778,7 @@
       ]
     },
     "hajnice": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2811,7 +2811,7 @@
       ]
     },
     "haverhill-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2829,7 +2829,7 @@
       ]
     },
     "henrykow-lubanski": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2901,7 +2901,7 @@
       ]
     },
     "hondarribia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2910,7 +2910,7 @@
       ]
     },
     "hudson-bay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2987,6 +2987,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "imenas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -3127,7 +3136,7 @@
       ]
     },
     "isthmus-of-chignecto": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3366,7 +3375,7 @@
       ]
     },
     "karlstein-am-main": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3736,7 +3745,7 @@
       ]
     },
     "la-prairie-quebec": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3745,7 +3754,7 @@
       ]
     },
     "lachine-quebec": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3797,7 +3806,7 @@
       ]
     },
     "landriano": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4226,7 +4235,7 @@
       ]
     },
     "ma-ujowice": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4329,7 +4338,7 @@
       ]
     },
     "maine": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4496,7 +4505,7 @@
       ]
     },
     "melle-belgium": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4529,7 +4538,7 @@
       ]
     },
     "mezieres": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4619,7 +4628,7 @@
       ]
     },
     "mohawk-valley": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4661,7 +4670,7 @@
       ]
     },
     "montemurlo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4896,7 +4905,7 @@
       ]
     },
     "namur": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4905,7 +4914,7 @@
       ]
     },
     "nashwaak-village-new-brunswick": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5083,7 +5092,7 @@
       ]
     },
     "north-america": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5107,7 +5116,7 @@
       ]
     },
     "north-country-new-york": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5625,7 +5634,7 @@
       ]
     },
     "pfaffenhofen-an-der-ilm": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5769,7 +5778,7 @@
       ]
     },
     "port-royal-acadia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6243,7 +6252,7 @@
       ]
     },
     "riemst": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6306,7 +6315,7 @@
       ]
     },
     "rocourt-liege": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6829,7 +6838,7 @@
       ]
     },
     "schenectady-new-york": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6886,7 +6895,7 @@
       ]
     },
     "sesia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7020,7 +7029,7 @@
       ]
     },
     "silesia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7123,7 +7132,7 @@
       ]
     },
     "sorel-tracy": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7162,7 +7171,7 @@
       ]
     },
     "south-deerfield-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7187,7 +7196,7 @@
       ]
     },
     "south-kingstown-rhode-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7328,7 +7337,7 @@
       ]
     },
     "springfield-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7432,7 +7441,7 @@
       ]
     },
     "sudbury-massachusetts": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7746,6 +7755,15 @@
         }
       ]
     },
+    "tin-keraten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "tinsalane": {
       "from": "git",
       "versions": [
@@ -7790,7 +7808,7 @@
       ]
     },
     "tournai": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8272,7 +8290,7 @@
       ]
     },
     "wells-maine": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8321,7 +8339,7 @@
       ]
     },
     "wilton-new-york": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8486,7 +8504,7 @@
       ]
     },
     "york-maine": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8510,7 +8528,7 @@
       ]
     },
     "zahaji": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -39,7 +39,7 @@
       ]
     },
     "battle-of-bicocca": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -65,7 +65,7 @@
       ]
     },
     "battle-of-capo-d-orso": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -146,10 +146,25 @@
       ]
     },
     "battle-of-gavinana": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -173,10 +188,16 @@
       ]
     },
     "battle-of-landriano": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -227,7 +248,7 @@
       ]
     },
     "battle-of-montemurlo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -236,10 +257,19 @@
       ]
     },
     "battle-of-noain": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -272,10 +302,19 @@
       ]
     },
     "battle-of-pampeluna": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -404,7 +443,7 @@
       ]
     },
     "battle-of-the-sesia-1524": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -527,7 +566,7 @@
       ]
     },
     "italian-campaign-of-1524-1525": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -744,16 +783,25 @@
       ]
     },
     "siege-of-florence-1529-1530": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
     },
     "siege-of-fuenterrabia-1523-1524": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -762,25 +810,43 @@
       ]
     },
     "siege-of-genoa-1522": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
     },
     "siege-of-marseille-1524": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]
     },
     "siege-of-mezieres": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -789,10 +855,19 @@
       ]
     },
     "siege-of-naples-1528": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-25"
         }
       ]

@@ -8214,6 +8214,48 @@
       ],
       "created": "2026-09-25",
       "degree": 2,
+      "id": "battle-of-imenas",
+      "kind": "event",
+      "names": [
+        "Battle of Iminenas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Interval widened under A7 from the cited article at revision 1370265996, whose infobox gives \"27 February – 1 March 2013\": the item's only date is a P585 of 1 March, the last day of the fighting recorded as though it were the whole of it. Nothing is narrowed. Place by A9's first step, the item's own P625.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Imenas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
       "id": "battle-of-in-delimane-2012",
       "kind": "event",
       "origin": {
@@ -12262,6 +12304,44 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Timbuktu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-tin-keraten",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mali-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "The item's single P585 of 6 March 2013 is the one date the article gives, so nothing was widened under A7. Place by A9's first step, the item's own P625; the item carries no P276.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tin Keraten"
     },
     {
       "authors": [
@@ -19237,7 +19317,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 3,
       "id": "fourth-battle-of-gao",
       "kind": "event",
       "origin": {
@@ -29515,7 +29595,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 3,
       "id": "second-battle-of-gao",
       "kind": "event",
       "origin": {
@@ -34253,7 +34333,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "third-battle-of-gao",
       "kind": "event",
       "origin": {

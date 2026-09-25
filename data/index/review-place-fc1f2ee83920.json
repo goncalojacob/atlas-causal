@@ -6418,6 +6418,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "imenas",
+      "kind": "place",
+      "names": [
+        "Imenas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q6619913, the Battle of Imenas, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item also carries P276 Q188904, Gao, which the atlas already holds as a place; the own point is taken because the article places the fighting east of Gao, between Djebok and al-Moustarat, and not in the city.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "imjin-river",
@@ -16367,6 +16395,34 @@
           "a9-place"
         ],
         "note": "Written by the Wikidata import from Q9427 for batch 52. `city` off the item's own class, city. It is the place of battle-of-timbuktu and second-battle-of-timbuktu by A9's second step: both items give the same P625, 16.7667N 3.0000W, which is the town, and both name Q9427 under P276.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "tin-keraten",
+      "kind": "place",
+      "names": [
+        "Tin Keraten"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q6602439, the Battle of Tin Keraten, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276, P131 or P625-bearing country to fall back on, and the article calls the ground a wadi 100 km east of Gao and north-east of Imenas.",
         "status": "draft"
       },
       "revised": null,

@@ -3080,6 +3080,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-imenas",
+      "kind": "event",
+      "locator": "Q6619913"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-in-delimane-2012",
       "kind": "event",
       "locator": "Q15231507"
@@ -3809,6 +3815,12 @@
       "id": "battle-of-timbuktu",
       "kind": "event",
       "locator": "Q8363015"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tin-keraten",
+      "kind": "event",
+      "locator": "Q6602439"
     },
     {
       "dissent": false,
