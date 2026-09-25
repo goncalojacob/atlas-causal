@@ -9796,5 +9796,18 @@ none of the fourteen new events names an actor — which is why only one number
 moved, and why deviation 1328's advice not to re-run that count wholesale still
 stands.
 
+**Deviation 1232 recurred in this fire too, and the way it recurred is worth
+one line.** The index was built, `validate --index` was clean, the records were
+committed and the index committed after them — and *then* `validate --index`
+reported rule 16 against the manifest and six history shards. The history shards
+are built from **the repository's own commits**, so an index built before the
+commit that carries the records is stale the moment that commit exists, and the
+check that passed before the commit was comparing two builds that both lacked it.
+Rebuilt after the commit, which is deviation 1264's order. **The tell that nearly
+hid it:** `node tools/validate.mjs --index | tail -3` in a `&&` chain exits 0
+whatever the validator says, because `tail` is the last command in the pipe — the
+errors were printed and the push went ahead. A fire that gates a push on the
+validator must read the validator's own exit status, not a pipe's.
+
 **Read this head's run before doing anything else**; if it is red, read the
 failure, because the check has been honest since M63 and it is not load.
