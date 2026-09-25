@@ -3594,6 +3594,43 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "2024-lebanon-electronic-device-attacks",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9’s second step, P276 Q822, Lebanon, held as `lebanon-q822`; the item has no P625 and its other P276 is Q131404661. Its P580 and P582 are 17 and 19 September, the article gives 17 and 18, so the wider pair is kept: A7 never narrows. No category, a first for this run: of the item’s seven P31, three are in the class table and those three disagree — Q2001676 says `war`, Q2223653 and Q891854 say nothing. All three say the kind is an event, so the record stands.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2024 Lebanon electronic device attacks"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "election",
       "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
@@ -22175,7 +22212,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "gaza-war",
       "kind": "event",
       "origin": {
@@ -28424,6 +28461,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "operation-accountability",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9's second step, P276 Q822, Lebanon, which this atlas holds as `lebanon-q822`; the item carries no P625. The item's P580 and P582 are 25 and 31 July, which are the days the article gives — \"Israeli forces launched a week-long attack against Lebanon\" on 25 July and \"A ceasefire was reached after a week\" — so nothing was widened under A7. `south-lebanon-conflict` also contains the week and is held, but the item's only P361 is Q8669, so the filing is the one the item states.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Accountability"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -28663,7 +28738,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-grapes-of-wrath",
       "kind": "event",
       "origin": {
@@ -37402,7 +37477,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "taif-agreement",
       "kind": "event",
       "origin": {

@@ -2288,6 +2288,12 @@
     },
     {
       "dissent": false,
+      "id": "2024-lebanon-electronic-device-attacks",
+      "kind": "event",
+      "locator": "Q130314422"
+    },
+    {
+      "dissent": false,
       "id": "2024-madeiran-regional-election",
       "kind": "event",
       "locator": null
@@ -6299,6 +6305,12 @@
       "id": "ogossagou-massacre",
       "kind": "event",
       "locator": "Q62389968"
+    },
+    {
+      "dissent": false,
+      "id": "operation-accountability",
+      "kind": "event",
+      "locator": "Q2026496"
     },
     {
       "dissent": false,

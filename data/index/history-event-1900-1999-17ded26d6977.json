@@ -15210,6 +15210,15 @@
         }
       ]
     },
+    "operation-accountability": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "operation-algeciras": {
       "from": "git",
       "versions": [

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-accountability--operation-grapes-of-wrath--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Accountability\", revision 1370630524, § Outcome"
+    }
+  ],
+  "from": "operation-accountability",
+  "to": "operation-grapes-of-wrath",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The operation ended in an oral ceasefire and the article makes its collapse what brought the next one: \"However, that agreement was not completely respected. Hezbollah repeatedly violated the ceasefire agreement by launching rockets from within Lebanon into Israel targeting Israeli civilians. Israel's next major engagement in an attempt to drive Hezbollah north of the Litani River and end the rocket attacks on Israel, Operation Grapes of Wrath, occurred in April 1996.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

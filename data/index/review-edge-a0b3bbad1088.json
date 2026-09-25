@@ -13303,6 +13303,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "gaza-war",
+      "id": "gaza-war--2024-lebanon-electronic-device-attacks--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "2024-lebanon-electronic-device-attacks",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "gaza-war",
       "id": "gaza-war--gaza-genocide--caused",
@@ -17748,6 +17776,34 @@
       "status": "active",
       "to": "somali-civil-war",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "operation-accountability",
+      "id": "operation-accountability--operation-grapes-of-wrath--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-grapes-of-wrath",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -23714,6 +23770,34 @@
       "revised": null,
       "status": "active",
       "to": "six-day-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "taif-agreement",
+      "id": "taif-agreement--operation-accountability--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-accountability",
       "type": "precondition-of"
     },
     {
