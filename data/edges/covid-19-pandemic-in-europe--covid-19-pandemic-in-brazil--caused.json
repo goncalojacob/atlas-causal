@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-brazil--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921, lead"
+    }
+  ],
+  "from": "covid-19-pandemic-in-europe",
+  "to": "covid-19-pandemic-in-brazil",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Brazilian article names the journey the first case came off: \"The virus was confirmed to have spread to Brazil on 25 February 2020, when a man from São Paulo who had traveled to Italy tested positive for the virus.\" Caused: the article makes the Italian epidemic the source of the first Brazilian case, and Italy is inside the record this edge runs from. Probable: Wikipedia alone.",
+  "dispute": null
+}

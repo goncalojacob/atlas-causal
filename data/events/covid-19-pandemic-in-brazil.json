@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-brazil",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "end-unstated"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q86597695",
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Brazil",
+    "pt": "Pandemia de COVID-19 no Brasil"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q86597695"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921"
+    }
+  ],
+  "title": "COVID-19 pandemic in Brazil",
+  "summary": "The English Wikipedia article \"COVID-19 pandemic in Brazil\", at revision 1364843921, opens: \"The COVID-19 pandemic in Brazil has resulted in 38,050,567 confirmed cases of COVID-19 and 704,066 deaths. The virus was confirmed to have spread to Brazil on 25 February 2020, when a man from São Paulo who had traveled to Italy tested positive for the virus. The disease had spread to every federative unit of Brazil by 21 March. On 19 June 2020, the country reported its one millionth case and nearly 49,000 reported deaths. One estimate of under-reporting was 22.62% of total reported COVID-19 mortality in 2020.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q86597695, imported by tools/import/wikidata.mjs. The item's own description reads \"ongoing coronavirus pandemic in Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": null,
+    "date": "2020-02-26"
+  },
+  "place": "brazil-q155",
+  "region": null,
+  "regionNote": null,
+  "parent": "covid-19-pandemic-in-south-america",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-peteroa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1616748",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Peteroa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1616748"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Peteroa\", revision 1376463913"
+    }
+  ],
+  "title": "Battle of Peteroa",
+  "summary": "The English Wikipedia article \"Battle of Peteroa\", at revision 1376463913, opens: \"Battle of Peteroa was a battle in the Arauco War in 1556, in a plain beside a river in the Mataquito River valley, called Peteroa. The battle was between the Spanish forces of Pedro de Villagra, and Mapuche headed by their toqui Lautaro.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1616748, imported by tools/import/wikidata.mjs. The item's own description reads \"1556 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1556,
+    "end": 1556
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "arauco-war"
+}

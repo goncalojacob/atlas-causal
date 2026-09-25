@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-lagunillas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3636492",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Lagunillas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636492"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lagunillas\", revision 1370446946"
+    }
+  ],
+  "title": "Battle of Lagunillas",
+  "summary": "The English Wikipedia article \"Battle of Lagunillas\", at revision 1370446946, opens: \"The Battle of Lagunillas was a battle in the Arauco War on November 8, 1557, between the army of García Hurtado de Mendoza and the Mapuche army near some shallow lakes a league south of the Bio-Bio River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636492, imported by tools/import/wikidata.mjs. The item's own description reads \"1557 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1557,
+    "date": "1557-11-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "arauco-war"
+}

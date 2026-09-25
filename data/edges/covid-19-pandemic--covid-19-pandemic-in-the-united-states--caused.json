@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic--covid-19-pandemic-in-the-united-states--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in the United States\", revision 1374802509, lead"
+    }
+  ],
+  "from": "covid-19-pandemic",
+  "to": "covid-19-pandemic-in-the-united-states",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The American article opens on the outbreak this atlas dates from Wuhan and then on its arrival: \"On 31 December 2019, China announced the discovery of a cluster of pneumonia cases in Wuhan. The first American case of COVID-19 was reported on January 20, and Health and Human Services Secretary Alex Azar declared a public health emergency on January 31.\" Caused and not enabled: it is the same epidemic, reported twenty days later in another country. Probable: Wikipedia alone.",
+  "dispute": null
+}

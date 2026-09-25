@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic-in-venezuela",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ],
+    "note": "The interval is the item's own: Wikidata dates this record 29 February to March 2020, which is the first suspected case and the first confirmed ones, not the span of the epidemic. The cached lead says nothing about an end. A reviewer should widen or open the interval from a source; this run does not, because A7 lets a run widen an interval only from the record's own cited article at a named revision and that article states no end."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q87652010",
+  "wikipedia": {
+    "en": "COVID-19 pandemic in Venezuela",
+    "pt": "Pandemia de COVID-19 na Venezuela"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-24"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q87652010"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"COVID-19 pandemic in Venezuela\", revision 1376124982"
+    }
+  ],
+  "title": "COVID-19 pandemic in Venezuela",
+  "summary": "The English Wikipedia article \"COVID-19 pandemic in Venezuela\", at revision 1376124982, opens: \"The COVID-19 pandemic in Venezuela was a part of the worldwide pandemic of coronavirus disease 2019 caused by severe acute respiratory syndrome coronavirus 2. The first two cases in Venezuela were confirmed on 13 March 2020; the first death was reported on 26 March. However, the first record of a patient claiming to have symptoms of coronavirus disease dates back to 29 February 2020, with government officials suspecting that the first person carrying the virus could have entered the country as early as 25 February.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q87652010, imported by tools/import/wikidata.mjs. The item's own description reads \"viral outbreak in Venezuela\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2020,
+    "end": 2020,
+    "date": "2020-02-29",
+    "endDate": "2020-03"
+  },
+  "place": "venezuela-q717",
+  "region": null,
+  "regionNote": null,
+  "parent": "covid-19-pandemic-in-south-america",
+  "category": "disaster",
+  "actors": []
+}
