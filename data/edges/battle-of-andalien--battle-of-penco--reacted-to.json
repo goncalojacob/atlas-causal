@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-andalien--battle-of-penco--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Penco\", revision 1376057986, History"
+    }
+  ],
+  "from": "battle-of-andalien",
+  "to": "battle-of-penco",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Penco article opens its history on the defeat a month earlier: \"After toqui Ainavillo's defeat in the Battle of Andalien, he gathered tens of thousands of warriors from the Arauco and Tucapel regions to reinforce his depleted 15,000 man army for an attack on de Valdivia's new settlement at Penco.\" The second attack is the same commander answering the first battle, on the article's own account. Probable: Wikipedia alone.",
+  "dispute": null
+}

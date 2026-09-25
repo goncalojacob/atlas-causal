@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-09-24",
+      "updated": "2026-09-25",
       "pending": [],
       "done": [
         "Q64",
@@ -1605,7 +1605,22 @@
         "Q83873577",
         "Q83873580",
         "Q14186580",
-        "Q131838925"
+        "Q131838925",
+        "Q431806",
+        "Q645257",
+        "Q2338555",
+        "Q1617667",
+        "Q3636492",
+        "Q2339158",
+        "Q1617262",
+        "Q432297",
+        "Q3636323",
+        "Q3636379",
+        "Q3636592",
+        "Q3636322",
+        "Q1617531",
+        "Q1616748",
+        "Q1629355"
       ]
     }
   },
@@ -1629,6 +1644,22 @@
     "Q87589123": {
       "on": "2026-09-24",
       "why": "none of its classes (Q98379923) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3636592": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3636322": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1617531": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1616748": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-mataquito",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1617667",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Mataquito"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1617667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mataquito\", revision 1376467018"
+    }
+  ],
+  "title": "Battle of Mataquito",
+  "summary": "The English Wikipedia article \"Battle of Mataquito\", at revision 1376467018, opens: \"The Battle of Mataquito was fought in the Arauco War on April 30, 1557, between the forces of the Spanish governor, Francisco de Villagra, and Mapuche headed by their toqui Lautaro. It was a surprise attack, carried out at dawn, on Lautaro's fortified camp between a wooded mountain and the shore of the Mataquito River. The battle is notable for ending Mapuche designs on Santiago, while also avenging the death of former governor Pedro de Valdivia, who had been killed by Lautaro's warriors four years earlier.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1617667, imported by tools/import/wikidata.mjs. The item's own description reads \"1557 battle of Arauco War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1557,
+    "date": "1557-04-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "arauco-war"
+}
