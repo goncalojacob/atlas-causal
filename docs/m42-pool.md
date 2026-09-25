@@ -10347,3 +10347,10 @@ with `Q489561`, Heartbreak Ridge, beside it, one stated sentence apart.
   fire's 395-event target set was.
 - **Deviation numbers: take the next above 1444.** This fire wrote **1440,
   1441, 1442, 1443 and 1444**.
+
+**The check is green on this fire's head.** Run 1782 of `validate.yml`, commit
+`38a197a1`, conclusion `success`, on its first attempt; the two runs before it
+in this fire were the claim commit's, which also passed. **2,114 tests pass
+locally, 1,819 pure and 295 browser, with nothing skipped**, run the way the
+check runs them since M63 both before the push and on the final tree. The
+re-run allowance is unspent: nothing was re-run.
