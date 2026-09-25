@@ -12454,3 +12454,10 @@ re-taken with each batch — 1,130 to 1,135 to 1,137, the numerator staying at 4
 because not one of the seven items carries a `P710`. **Deviation 1452's label test
 did not drop this fire**: `tests/map-browser.test.mjs` passed 295 of 295 with the
 `settledShards` wait batch 60 added.
+
+**The check is green on this fire's head.** Run **1860** of `validate.yml`, commit
+`63614811`, conclusion `success`. **Run 1854 on batch 61's index head also passed**,
+so both batches were validated on the runner and not only locally. **Runs 1853,
+1857 and 1858 were each cancelled by the next push**, which is deviation 1258's
+chain and costs nothing. The one failure on the repository over this fire's window
+was **run 1856 on `m42b`** and it is that branch's own merge, not this one's.
