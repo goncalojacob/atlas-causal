@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "raid-on-dioura-2023--kidal-offensive--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-24",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kidal offensive\", revision 1370625765, § Prelude"
+    }
+  ],
+  "from": "raid-on-dioura-2023",
+  "to": "kidal-offensive",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The offensive's own § Prelude counts the raid on Dioura among what it answered: \"The CSP-PSD began a series of raids against Malian and Wagner military bases throughout September; Bourem, Léré, Dioura, Bamba, and Taoussa were all pillaged between September 12 and October 3, and dozens of Malian soldiers were killed.\" The next sentence is the answer — \"In response to the attacks, the Malian junta launched airstrikes on Kidal on October 2\" — and October 2 is the day the offensive is dated from. Written forward in time, so the raid is the thing reacted to and the offensive is the reaction. Probable: Wikipedia alone.",
+  "dispute": null
+}
