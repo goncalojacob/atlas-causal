@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "battle-of-khe-sanh--tet-offensive--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Khe Sanh\", revision 1376490321, § Analysis"
+    }
+  ],
+  "from": "battle-of-khe-sanh",
+  "to": "tet-offensive",
+  "type": "enabled",
+  "confidence": "disputed",
+  "explanation": "The edge is the reading the article states first: \"Historians have observed that the Battle of Khe Sanh may have distracted American and South Vietnamese attention from the buildup of Viet Cong (VC) forces in the south before the early 1968 Tet Offensive.\" Peter Brush cites Võ Nguyên Giáp's claim \"that Khe Sanh itself was not of importance, but only a diversion to draw U.S. forces away from the populated areas of South Vietnam\", and Dave Palmer holds the same: \"General Giap never had any intention of capturing Khe Sanh ... [it] was a feint, a diversionary effort. And it had accomplished its purpose magnificently.\" Enabled and not caused: on this reading the siege made the offensive possible by moving 30,000 American troops away from the cities that were its targets, and nothing in the article says it brought the offensive about. Written by an import fire between two records the atlas already held, under A5.",
+  "dispute": {
+    "text": "The article calls this \"one of the most intriguing unanswered questions of the Vietnam War\" and gives the opposite reading in the same breath. John Prados and Ray Stubbe put the two side by side as the \"riddle of Khe Sanh\": \"Either the Tet Offensive was a diversion intended to facilitate PAVN/VC preparations for a war-winning battle at Khe Sanh, or Khe Sanh was a diversion to mesmerize Westmoreland in the days before Tet.\" William Westmoreland, the US commander, held the first: he \"insisted for several months that the entire Tet Offensive was a diversion, including, famously, attacks on downtown Saigon and obsessively affirming that the true objective of the North Vietnamese was Khe Sanh.\" Read that way the arrow of this edge points the other direction, and the atlas does not choose between them.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Siege of Khe Sanh\", revision 1376490321, § Analysis"
+      }
+    ]
+  }
+}

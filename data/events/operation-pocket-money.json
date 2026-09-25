@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "operation-pocket-money",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Vietnam War from the item's own P361, and not under the Easter Offensive this batch also writes: the campaign was flown against the offensive and answering a thing is not being part of it. The item carries a P585 of 9 May 1972 alone and the article's infobox repeats that one date, so nothing is widened. Place by A9's second step (P276 Q72818, Haiphong). No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4335282",
+  "wikipedia": {
+    "en": "Operation Pocket Money"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4335282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pocket Money\", revision 1370698649"
+    }
+  ],
+  "title": "Operation Pocket Money",
+  "summary": "The English Wikipedia article \"Operation Pocket Money\", at revision 1370698649, opens: \"Operation Pocket Money was the title of a U.S. Navy Task Force 77 aerial mining campaign conducted against the Democratic Republic of Vietnam from 9 May 1972, during the Vietnam War.\" Wikidata item Q4335282, whose own description reads \"aerial mining campaign during the Vietnam War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1972,
+    "end": 1972,
+    "date": "1972-05-09"
+  },
+  "place": "haiphong",
+  "region": null,
+  "regionNote": null,
+  "parent": "vietnam-war",
+  "category": "war",
+  "actors": []
+}
