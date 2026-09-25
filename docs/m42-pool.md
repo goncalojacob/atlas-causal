@@ -12928,3 +12928,19 @@ completed, and this is what completion looks like in the table.
   prose is not evidence) and **1456** (a "See also" link passes the prose check and
   makes no claim). All three are faults in how candidates are chosen rather than in
   what was written, which is where this run's reading time actually goes.
+
+**The check is green on this fire's head.** Run **1897** of `validate.yml`, commit
+`6b746e027`, conclusion `success`. **Run 1875, on the merge commit, failed, and it is
+deviation 1451 and not this fire's fault**: `data/index/`'s history shards are built
+out of the repository's own commits, so an index built before the merge commit
+existed cannot match one rebuilt after it, and rule 16 says so in fourteen lines.
+The batch rebuilds that follow fix it, which runs 1884 and 1890 would have shown had
+the next push not cancelled each — deviation 1258's chain, which costs nothing.
+Runs 1888, 1893 and 1896 were cancelled the same way.
+
+**2,130 tests pass locally, 1,835 pure and 295 browser, with nothing failed and
+nothing skipped**, run the way the check runs them since M63 on the final tree. One
+suite failed on the first run and it was `tests/m53.test.mjs` §4.1's figure, which
+moves with the corpus: the numerator rose to **404** because the 2014 Gaza War names
+`israel` among its `P710`, and the denominator to **1,260**. Both were re-taken in
+`docs/m53-polities.md` before the tests were called green.
