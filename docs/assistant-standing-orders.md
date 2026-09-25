@@ -218,3 +218,11 @@ The owner writes a feedback document after the current improvements land
    853 events name no actor); does the `europe` lane hold Russian Asia
    (deviation 1423, the Romanov record); and the 24 September C1 and C4
    still stand. A15's passes run without you; these do not.
+12. From the 25 September review, part A: the tagline says "every event
+   linked" and the umbrellas a funder opens first (Scramble for Africa,
+   Decolonisation of Africa, Arab Spring) have no link of their own — may
+   an umbrella carry the links its parts carry, or may the fire write the
+   umbrella's own cited edges (A3)? An actor's lens on Japan shows the
+   Winter War because it holds World War II and its parts — should the
+   lens show only the events that name the actor (A10)? And which chain
+   should the non-Portuguese "Start here" account tell (A4)?

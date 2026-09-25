@@ -558,5 +558,14 @@ measurement that matters.** Every batch note and every curation section in
 both pool files reports, beside the largest component, the number of edges
 written that cross an umbrella (whose two endpoints have no parent in
 common), because that is the number "chains throughout the globe and time"
-is; it was zero for every batch the review read. What waits for the owner
-is listed in the review's fix plan and in the standing orders' §6.
+is; it was zero for every batch the review read. (12) **Categories.** The
+151 main events with no category, then the rest, are categorised from the
+item's own `instance of` (`P31`) through the closed list in
+`data/categories.json`, the reading the import tool already makes for new
+records; an item whose class maps to nothing stays uncategorised and is
+counted. (13) **The Portugal paragraph.** The summaries of `world-war-ii`,
+`world-war-i`, `korean-war`, `great-depression`, `charter-of-the-united-nations`
+and `cold-war` are the quoted lead plus a paragraph the importer wrote about
+Portugal; that paragraph is cut to its first sentence, the quoted lead
+untouched. What waits for the owner is listed in the review's fix plan and
+in the standing orders' §6.
