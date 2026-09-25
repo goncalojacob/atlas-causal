@@ -6203,6 +6203,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-bloody-ridge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Korean War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)). Of the participants the item's P710 gives — only the United States — the atlas holds the one, so it is the one line on the record (A12 (4)).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bloody Ridge"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -7426,6 +7464,44 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Havana (1748)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-heartbreak-ridge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Korean War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)). Of the participants the item's P710 gives — only the United States — the atlas holds the one, so it is the one line on the record (A12 (4)).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Heartbreak Ridge"
     },
     {
       "authors": [
@@ -10853,6 +10929,44 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-the-punchbowl",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Korean War from the item's own P361. Place by A9's second step (P276 Q15269226, the Punchbowl itself), which gives the same point as the item's own P625 and an item with it (deviation 1445). Three of the item's P710 participants — the United States, North Korea and South Korea — are actors this atlas holds, so all three are on the record (A12 (4)).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Punchbowl"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 3,
       "id": "battle-of-the-pusan-perimeter",
@@ -13334,6 +13448,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 1,
       "id": "chinese-spring-offensive",
       "kind": "event",
       "origin": {
@@ -23756,6 +23871,44 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Operation Car Wash, 2014"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "operation-commando",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Filed under the Korean War from the item's own P361. No place: the item has no P625, its P276 is the Jamestown Line, which has none either, and it has no P17, so A9's chain reaches no point and the record takes the Asia lane alone. The item states 2–5 October 1951; the article states \"between 3–12 October 1951\", so the end is widened to 12 October from it at revision 1376272180 under A7 and the start left at the item's 2 October, because A7 widens and does not narrow (deviation 1446). No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Commando"
     },
     {
       "authors": [
@@ -35178,12 +35331,6 @@
     },
     {
       "id": "chilean-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "chinese-spring-offensive",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

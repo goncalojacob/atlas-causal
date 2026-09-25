@@ -2048,6 +2048,24 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bloody-ridge--battle-of-heartbreak-ridge--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-ridge--battle-of-heartbreak-ridge--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-ridge--battle-of-the-punchbowl--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649, § Battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
@@ -2105,6 +2123,12 @@
       "id": "battle-of-dien-bien-phu--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-heartbreak-ridge--operation-commando--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103, § Aftermath"
     },
     {
       "dissent": false,
@@ -2795,6 +2819,12 @@
       "id": "chinese-civil-war--korean-war--precondition-of",
       "kind": "edge",
       "locator": "\"Korean War\", revision 1371767674"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-spring-offensive--battle-of-the-punchbowl--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Punchbowl\", revision 1370601885, § Prelude"
     },
     {
       "dissent": false,
@@ -8552,6 +8582,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bloody-ridge",
+      "kind": "event",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "\"Battle of Breitenfeld (1631)\", revision 1370108143"
@@ -8777,6 +8813,12 @@
       "id": "battle-of-havana-1748",
       "kind": "event",
       "locator": "\"Battle of Havana (1748)\", revision 1370442712"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-heartbreak-ridge",
+      "kind": "event",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103"
     },
     {
       "dissent": false,
@@ -9395,6 +9437,12 @@
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "locator": "\"Battle of the Lys (1918)\", revision 1370600869"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-punchbowl",
+      "kind": "event",
+      "locator": "\"Battle of the Punchbowl\", revision 1370601885"
     },
     {
       "dissent": false,
@@ -11423,6 +11471,12 @@
       "id": "operation-car-wash-2014",
       "kind": "event",
       "locator": "\"Operation Car Wash\", revision 1371266803"
+    },
+    {
+      "dissent": false,
+      "id": "operation-commando",
+      "kind": "event",
+      "locator": "\"Operation Commando\", revision 1376272180"
     },
     {
       "dissent": false,

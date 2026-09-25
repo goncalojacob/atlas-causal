@@ -2714,6 +2714,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bloody-ridge",
+      "kind": "event",
+      "locator": "Q2035177"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "Q205379"
@@ -2939,6 +2945,12 @@
       "id": "battle-of-havana-1748",
       "kind": "event",
       "locator": "Q1136414"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-heartbreak-ridge",
+      "kind": "event",
+      "locator": "Q489561"
     },
     {
       "dissent": false,
@@ -3551,6 +3563,12 @@
       "id": "battle-of-the-imjin-river",
       "kind": "event",
       "locator": "Q16170016"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-punchbowl",
+      "kind": "event",
+      "locator": "Q16898848"
     },
     {
       "dissent": false,
@@ -5441,6 +5459,12 @@
       "id": "operation-black-buck",
       "kind": "event",
       "locator": "Q1968528"
+    },
+    {
+      "dissent": false,
+      "id": "operation-commando",
+      "kind": "event",
+      "locator": "Q3354681"
     },
     {
       "dissent": false,
