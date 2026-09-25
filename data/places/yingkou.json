@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "tsushima-strait",
+  "id": "yingkou",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -20,20 +20,20 @@
       "imported-facts",
       "a9-place"
     ],
-    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
+    "note": "The point is the P625 of Wikidata Q75150, Yingkou, reached by A9's second step from Q4311063's P276 because the raid item carries no P625 of its own. precision city from Q75150's own class Q1549591, big city."
   },
   "origin": {
     "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait"
+    "Yingkou"
   ],
   "where": {
-    "lon": 129.49,
-    "lat": 34.008,
-    "precision": "region",
-    "label": "Tsushima Strait"
+    "lon": 122.23,
+    "lat": 40.665,
+    "precision": "city",
+    "label": "Yingkou"
   },
   "region": null,
   "regionNote": null,

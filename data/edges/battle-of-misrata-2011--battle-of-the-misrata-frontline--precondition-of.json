@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-misrata-2011--battle-of-the-misrata-frontline--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Misrata frontline\", revision 1374516321, § Background"
+    }
+  ],
+  "from": "battle-of-misrata-2011",
+  "to": "battle-of-the-misrata-frontline",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The frontline battle's Background makes the earlier battle's outcome the line it was fought on: \"Following the Battle of Misrata in mid-May 2011, rebel forces retook large parts of the city, which had been under pro-Gaddafi control, and established a defence line on Misrata's western outskirts at the small town of Dafniya, 35 kilometers from the centre of the city, and on the southwestern outskirts near Tawergha, which was still loyalist-held. What followed was more than a month of heavy frontline fighting and shelling.\" It opens with \"Following\" and is kept even so, for batch 60's reason and A14 (4)'s: it names the outcome, the ground and the defence line, and not how long afterwards. Probable: Wikipedia alone.",
+  "dispute": null
+}

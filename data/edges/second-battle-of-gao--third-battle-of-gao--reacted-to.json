@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-gao--third-battle-of-gao--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
+    }
+  ],
+  "from": "second-battle-of-gao",
+  "to": "third-battle-of-gao",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Neither Gao article names the other, and a third one does it for them. The Imenas article's background states the capture and the answer to it in one sentence: \"Gao was captured by French and Malian troops on 27 January 2013, about a month before this battle. However, unlike Ansar Dine and Al-Qaeda in Islamic Maghreb, which retreated to the Adrar des Ifoghas, the Movement for Oneness and Jihad in West Africa and Mulathamen remained in the Gao region. They tried to take back the city, in two attempted operations before, first on 10 February, and then again on 20 February, but their attacks failed.\" The article links \"10 February\" to the third battle and \"captured\" to the second, so the pairing is the article's own and not this atlas's reading. Written in the direction the edge vocabulary takes: the capture is what was answered, the raid is the answer. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-misrata-frontline",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9's second step, P276 Q32845, the Misrata District, whose own P625 is the city's point to two decimals: this atlas holds that city as `misrata` from Q131323, 1.5 km away, so the record is reused rather than a second Misrata written beside it — batch 60's liaodong-peninsula case read the other way round. The item's P580 and P582 are the days the article gives at both ends, so nothing was widened under A7."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2408799",
+  "wikipedia": {
+    "en": "Battle of the Misrata frontline"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2408799"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Misrata frontline\", revision 1374516321"
+    }
+  ],
+  "title": "Battle of the Misrata frontline",
+  "summary": "The English Wikipedia article \"Battle of the Misrata frontline\", at revision 1374516321, opens: \"The Battle of the Misrata frontline was a battle during the Libyan Civil War between pro-Gaddafi loyalists and anti-Gaddafi forces on the western and southwestern outskirts of Misrata, the third largest city in Libya. It ended when anti-Gaddafi soldiers secured Zliten to the west and Tawergha to the south, establishing a significant buffer zone around the city.\" Wikidata item Q2408799, whose own description reads \"battle of the 2011 Libyan Civil War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-05-16",
+    "endDate": "2011-08-23"
+  },
+  "place": "misrata",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "battle-of-brega-ajdabiya-road",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Place by A9's second step, P276 Q36219, Brega, already held; the item carries no P625. Interval widened under A7 from the cited article at revision 1373008352, whose Battle section opens \"By 8 April\" and whose last dated day of this fighting is 11 August, when Brega \"had fallen under opposition control\": the item's only date is a P585 of 18 April and its description says \"fought 8 April to 14 July 2011\". A7 never narrows, so both readings are covered, as batch 60 wrote Motien Pass."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4870546",
+  "wikipedia": {
+    "en": "Battle of Brega–Ajdabiya road"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870546"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352"
+    }
+  ],
+  "title": "Battle of Brega–Ajdabiya road",
+  "summary": "The English Wikipedia article \"Battle of Brega–Ajdabiya road\", at revision 1373008352, opens: \"The Battle of Brega–Ajdabiya road was a battle during the Libyan Civil War between forces loyal to Libyan leader Muammar Gaddafi and anti-Gaddafi forces for control of the towns of Brega and Ajdabiya respectively and the Libyan Coastal Highway between them. This theater of the war saw a stagnant front forming quickly. By late June neither the loyalists or rebels were able to advance, and were thus holding firm on their respective sides of the frontline.\" Wikidata item Q4870546, whose own description reads \"fought 8 April to 14 July 2011\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-04-08",
+    "endDate": "2011-08-11"
+  },
+  "place": "brega",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

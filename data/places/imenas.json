@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "tsushima-strait",
+  "id": "imenas",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -20,20 +20,20 @@
       "imported-facts",
       "a9-place"
     ],
-    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
+    "note": "The point is the P625 of Wikidata Q6619913, the Battle of Imenas, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item also carries P276 Q188904, Gao, which the atlas already holds as a place; the own point is taken because the article places the fighting east of Gao, between Djebok and al-Moustarat, and not in the city."
   },
   "origin": {
     "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait"
+    "Imenas"
   ],
   "where": {
-    "lon": 129.49,
-    "lat": 34.008,
-    "precision": "region",
-    "label": "Tsushima Strait"
+    "lon": 0.717,
+    "lat": 16.3,
+    "precision": "point",
+    "label": "Imenas"
   },
   "region": null,
   "regionNote": null,

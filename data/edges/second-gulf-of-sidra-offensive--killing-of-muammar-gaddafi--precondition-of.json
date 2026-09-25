@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-gulf-of-sidra-offensive--killing-of-muammar-gaddafi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278, lead"
+    }
+  ],
+  "from": "second-gulf-of-sidra-offensive",
+  "to": "killing-of-muammar-gaddafi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The lead makes the killing the offensive's own end: the operation was conducted \"in an effort to surround Muammar Gaddafi's hometown of Sirte, which was held by pro-Gaddafi forces\", and \"The offensive ended on 20 October, with the capture and execution of Muammar Gaddafi and his son Mutassim Gaddafi, along with former defense minister Abu-Bakr Yunis Jabr. The Gaddafi loyalists in the area were finally defeated when NTC fighters captured Sirte.\" The article says the offensive ended in the killing, not that it caused it, which is why this is a precondition and not a cause. Probable: Wikipedia alone.",
+  "dispute": null
+}

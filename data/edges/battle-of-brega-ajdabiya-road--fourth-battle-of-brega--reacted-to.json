@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-brega-ajdabiya-road--fourth-battle-of-brega--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352, lead and § New rebel offensive"
+    }
+  ],
+  "from": "battle-of-brega-ajdabiya-road",
+  "to": "fourth-battle-of-brega",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The lead makes the deadlock on the road the reason the July offensive was launched at all: \"By late June neither the loyalists or rebels were able to advance, and were thus holding firm on their respective sides of the frontline. In an effort to break the deadlock, NATO's air force began an intensified bombing campaign of government military positions; by mid-July, however, the situation remained essentially unchanged. Eventually, on 14 July 2011, the rebels started an all-out offensive in an attempt to break the stalemate.\" The offensive of 14 July is the fourth battle of Brega, and the article's own account of it — \"On 14 July, the rebels attacked Brega once again, this time armed with refurbished and repaired T-72 tanks\" — is the same fighting. Probable: Wikipedia alone.",
+  "dispute": null
+}

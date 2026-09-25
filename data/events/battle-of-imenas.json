@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "battle-of-imenas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Interval widened under A7 from the cited article at revision 1370265996, whose infobox gives \"27 February – 1 March 2013\": the item's only date is a P585 of 1 March, the last day of the fighting recorded as though it were the whole of it. Nothing is narrowed. Place by A9's first step, the item's own P625."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6619913",
+  "wikipedia": {
+    "en": "Battle of Imenas"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6619913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imenas\", revision 1370265996"
+    }
+  ],
+  "title": "Battle of Imenas",
+  "names": [
+    "Battle of Iminenas"
+  ],
+  "summary": "The English Wikipedia article \"Battle of Imenas\", at revision 1370265996, opens: \"The Battle of Imenas was an armed confrontation between French-Malian forces and the Jihadists terrorist groups, Movement for Oneness and Jihad in West Africa and Al-Mulathameen. The battle was a decisive Franco-Malian victory, as it resulted, according to the French and the Malian governments, in 52 Islamists being killed, with no government forces being killed.\" Wikidata item Q6619913, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-02-27",
+    "endDate": "2013-03-01"
+  },
+  "place": "imenas",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

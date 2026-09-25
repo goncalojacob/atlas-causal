@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-gulf-of-sidra-offensive--battle-of-sirte-2011--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278, lead and § Rebel offensive"
+    }
+  ],
+  "from": "second-gulf-of-sidra-offensive",
+  "to": "battle-of-sirte-2011",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The offensive is what brought the rebel columns to Sirte and closed the ring around it. The lead gives its object — \"to take control of towns along the Gulf of Sidra in an effort to surround Muammar Gaddafi's hometown of Sirte, which was held by pro-Gaddafi forces\" — and the account of 15–20 September gives the effect: \"eastern NLA forces captured the village of Harawa in an attempt to support forces from the west which were already engaged in a battle for Sirte itself\", and \"On 20 September, Al Jazeera reported that eastern NLA forces finally reached the eastern gates of Sirte and thus put Sirte under effective siege from all sides.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

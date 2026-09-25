@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-misrata-2011--zliten-uprising--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zliten uprising\", revision 1374516568, § Background"
+    }
+  ],
+  "from": "battle-of-misrata-2011",
+  "to": "zliten-uprising",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Zliten article makes the rebel victory at Misrata what put the rising within reach and armed it: \"By early May, the rebel Free Libyan Army had expelled pro-Gaddafi forces from Misrata, pushing by 9 May to the village of Dafniya, 20 kilometers east of Zliten. The frontline remained relatively static for the next month, with rumors of discontent and rebellion in Zliten persisting. According to the rebels, they are training and equipping fighters from Zliten, so that the city may liberate themselves.\" Before that the city had been the other way round — \"It was initially used as a staging point for loyalist attacks on rebel-held Misrata.\" Probable: Wikipedia alone.",
+  "dispute": null
+}
