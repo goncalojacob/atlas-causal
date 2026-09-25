@@ -21,8 +21,17 @@ on:
   # went red on three different browser suites in three runs while deploy
   # went green on the same tree, and main showed a red mark for a job it
   # never needed.
+  #
+  # **And a non-zero digit, since M88 §3** (review B finding 3). `m[0-9]*`
+  # matched `m0` as well, and `m0` is the branch every landing pushes before
+  # opening the pull request to `main` from it — so the whole suite ran twice
+  # on one tree, once for that push and once for the pull request, which is
+  # the check the landing actually waits for. Six or seven minutes of a shared
+  # runner per landing, several landings a day, for an answer already being
+  # computed beside it. Every lane branch is `m1`, `m42`, `m42b`, `m88`; the
+  # one that is not is `m0`, and its check is its pull request's.
   push:
-    branches: ['m[0-9]*']
+    branches: ['m[1-9]*']
   pull_request:
   workflow_dispatch:
 
