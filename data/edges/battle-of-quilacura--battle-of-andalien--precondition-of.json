@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-quilacura--battle-of-andalien--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Pedro de Valdivia (1540–1553)"
+    }
+  ],
+  "from": "battle-of-quilacura",
+  "to": "battle-of-andalien",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Quilacura is what told Valdivia the force he had was not enough, and the expedition he came back with is the one that fought at Andalién. The article: \"Pedro de Valdivia himself set out in 1546, with sixty horsemen plus guides and porters. Crossing the Itata River, he was attacked by Mapuche warriors in the Battle of Quilacura near the Bío-Bío River. Realizing that it would be impossible to proceed in such hostile territory with so limited a force, de Valdivia elected to return to Santiago after finding a site for a new city at what is now Penco.\" Then: \"In 1550, a new expedition was launched, consisting of a naval force under Pastene, and a land force of two hundred Spaniards mounted and foot\" — and it is that column which \"camped for two days between the river and a lake, where they were attacked on the second night\" at Andalién. Precondition-of: the defeat did not bring the second expedition about, it settled what size it had to be.",
+  "dispute": null
+}

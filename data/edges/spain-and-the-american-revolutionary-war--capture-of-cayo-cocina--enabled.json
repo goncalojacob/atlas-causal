@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spain-and-the-american-revolutionary-war--capture-of-cayo-cocina--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Cayo Cocina\", revision 1366231642"
+    }
+  ],
+  "from": "spain-and-the-american-revolutionary-war",
+  "to": "capture-of-cayo-cocina",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article names the war the operation belongs to and the government that mounted it: \"The Capture of Cayo Cocina was the result of a Spanish military operation on the 15 September 1779 against a British settlement on Saint George's Caye... during the Anglo-Spanish War... until Spanish forces from the Captaincy General of Guatemala attacked it.\" Enabled and not caused: Spain at war is what put the Guatemalan forces in motion against a settlement they had left alone.",
+  "dispute": null
+}

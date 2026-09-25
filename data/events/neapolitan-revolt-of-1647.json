@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "neapolitan-revolt-of-1647",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125727539",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Neapolitan Revolt of 1647"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125727539"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Neapolitan Revolt of 1647\", revision 1370629471"
+    }
+  ],
+  "title": "Neapolitan Revolt of 1647",
+  "summary": "The English Wikipedia article \"Neapolitan Revolt of 1647\", at revision 1370629471, opens: \"The Neapolitan Revolt of 1647 was a popular revolt by the people of Naples led by Tommaso Aniello. Throughout the Thirty Years' War, rage and discontent arose among the Neapolitan residents against the ruling Spanish Duke of Arcos Rodrigo Ponce. The rebellion was a success and the most famous event was the Fire of Piazza Mercato.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125727539, imported by tools/import/wikidata.mjs. The item's own description reads \"popular revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1647,
+    "date": "1647-07-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

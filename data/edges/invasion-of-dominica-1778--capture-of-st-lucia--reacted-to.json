@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "invasion-of-dominica-1778--capture-of-st-lucia--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of St Lucia\", revision 1370609642"
+    }
+  ],
+  "from": "invasion-of-dominica-1778",
+  "to": "capture-of-st-lucia",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "St Lucia's article says in its own words what the British expedition was an answer to: \"Britain's actions followed the capture of the British-controlled island of Dominica by French forces in a surprise invasion in September 1778.\" Reacted-to and not caused: the article puts the one after the other and calls it a following, without claiming the loss of Dominica compelled the choice of St Lucia.",
+  "dispute": null
+}

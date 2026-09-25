@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zablati-prachatice-district",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q41192",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Záblatí (Prachatice District)",
+    "pt": "Záblatí (Prachatice)"
+  },
+  "sources": [],
+  "names": [
+    "Záblatí",
+    "Záblatí (Prachatice District)",
+    "Záblatí (Prachatice)"
+  ],
+  "where": {
+    "lon": 13.931302265446,
+    "lat": 48.998638443569,
+    "precision": "city",
+    "label": "Záblatí (Prachatice District)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q41192, imported by tools/import/wikidata.mjs. The item's own description reads \"village in Prachatice District of South Bohemian region\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

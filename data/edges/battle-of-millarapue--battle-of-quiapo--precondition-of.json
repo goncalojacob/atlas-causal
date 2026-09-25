@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-millarapue--battle-of-quiapo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Caupolicán and García Hurtado de Mendoza"
+    }
+  ],
+  "from": "battle-of-millarapue",
+  "to": "battle-of-quiapo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Millarapue is where Caupolicán's resistance to Mendoza failed, and Quiapo is where the toqui who replaced him made his stand. The article: \"Caupolicán led the Mapuche unsuccessfully resisting the advance of Hurtado de Mendoza by attacking him from ambush in the Battle of Millarapue\", after which Mendoza \"built the fort and city of Cañete de la Frontera\", Caupolicán attacked it, \"was eventually betrayed and captured in the mountains\" and executed. Then: \"the manner of the death of Caupolicán inspired the Mapuches to continue the struggle with a guerrilla war\", and \"In Quiapo, the Mapuches under their new toqui, Caupolicán the younger, constructed a fort that was to stop the forces of Mendoza from marching into Arauco and rebuilding a fort there.\" Precondition-of: the article makes the execution, not the battle, what inspired the next round.",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ushant-1781",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2578358",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Ushant (1781)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2578358"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ushant (1781)\", revision 1370592021"
+    }
+  ],
+  "title": "Battle of Ushant (1781)",
+  "summary": "The English Wikipedia article \"Battle of Ushant (1781)\", at revision 1370592021, opens: \"The Second Battle of Ushant was a naval battle fought between French and British squadrons near Ushant, an island off the coast of Brittany, on 12 December 1781, as part of the American Revolutionary War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2578358, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-12-12"
+  },
+  "place": "ushant",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

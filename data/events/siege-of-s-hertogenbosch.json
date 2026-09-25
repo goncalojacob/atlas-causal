@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-s-hertogenbosch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q387040",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of 's-Hertogenbosch"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q387040"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of 's-Hertogenbosch\", revision 1370738421"
+    }
+  ],
+  "title": "Siege of 's-Hertogenbosch",
+  "summary": "The English Wikipedia article \"Siege of 's-Hertogenbosch\", at revision 1370738421, opens: \"The siege of 's-Hertogenbosch also known as the siege of Bois-Le-Duc was an action in 1629, during the Eighty Years' War and the Anglo–Spanish War in which a Dutch army captured the city of 's-Hertogenbosch. The city had been loyal to the King of Spain since 1579 and was part of the Spanish Netherlands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q387040, imported by tools/import/wikidata.mjs. The item's own description reads \"1629 part of the Eighty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1629,
+    "end": 1629,
+    "date": "1629-04-30",
+    "endDate": "1629-09-14"
+  },
+  "place": "s-hertogenbosch",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

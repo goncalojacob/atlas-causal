@@ -4,7 +4,9 @@
   "kind": "event",
   "status": "active",
   "supersededBy": null,
-  "aliases": [],
+  "aliases": [
+    "battle-of-furth"
+  ],
   "authors": [
     {
       "name": "Wikidata import (tools/import/wikidata.mjs)",
@@ -23,7 +25,8 @@
       "imported-facts",
       "summary-from-lead",
       "a9-place"
-    ]
+    ],
+    "note": "Wikidata holds this battle twice: Q2002331, which this record carries, and Q15727825, \"Battle of Furth\", which the import of 25 September wrote a second record for. Both sitelink to one English article, because \"Battle of Furth\" is a redirect, so the two sitelink strings differ and the article does not. The duplicate was dropped and battle-of-furth kept as an alias. P585 dates Q15727825 to 3 September and Q2002331 to 9 September; the article says 3 September, which a person should settle."
   },
   "wikidata": "Q2002331",
   "sitelinks": {

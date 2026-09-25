@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-puerto-de-cavite",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890933",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Puerto de Cavite"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890933"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Puerto de Cavite\", revision 1370586744"
+    }
+  ],
+  "title": "Battle of Puerto de Cavite",
+  "summary": "The English Wikipedia article \"Battle of Puerto de Cavite\", at revision 1370586744, opens: \"The naval Battle of Puerto de Cavite took place on 10 June 1647 during the Eighty Years' War between a Spanish fleet and a Dutch fleet in Puerto de Cavite, an important Spanish port in Manila Bay, Philippines in which the Dutch were defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890933, imported by tools/import/wikidata.mjs. The item's own description reads \"1647 17th century naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1647,
+    "date": "1647-06-10"
+  },
+  "place": "cavite-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

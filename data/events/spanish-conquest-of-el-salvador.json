@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-el-salvador",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5783527",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Spanish conquest of El Salvador"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5783527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of El Salvador\", revision 1370748295"
+    }
+  ],
+  "title": "Spanish conquest of El Salvador",
+  "summary": "The English Wikipedia article \"Spanish conquest of El Salvador\", at revision 1370748295, opens: \"The Spanish conquest of El Salvador was the campaign undertaken by the Spanish conquistadores against the Late Postclassic Mesoamerican polities in the territory that is now incorporated into the modern Central American country of El Salvador. El Salvador is the smallest country in Central America, and is dominated by two mountain ranges running east–west. Its climate is tropical, and the year is divided into wet and dry seasons. Before the conquest the country formed a part of the Mesoamerican cultural region, and was inhabited by a number of indigenous peoples, including the Pipil, the Lenca, the Xinca, and Maya. Native weaponry consisted of spears, bows and arrows, and wooden swords with inset stone blades; they wore padded cotton armour.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5783527, imported by tools/import/wikidata.mjs. The item's own description reads \"1524–1539 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1539
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

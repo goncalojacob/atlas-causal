@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wolfenbuttel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q10671411",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Wolfenbüttel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10671411"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wolfenbüttel\", revision 1370594460"
+    }
+  ],
+  "title": "Battle of Wolfenbüttel",
+  "summary": "The English Wikipedia article \"Battle of Wolfenbüttel\", at revision 1370594460, opens: \"The Battle of Wolfenbüttel took place on 29 June 1641 during the Thirty Years' War outside Wolfenbüttel, Lower Saxony. A Swedish army supported by its German allies was besieging the town, and defeated an attempt by Imperial forces to relieve it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10671411, imported by tools/import/wikidata.mjs. The item's own description reads \"1641 battle of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-06-29"
+  },
+  "place": "wolfenbuttel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

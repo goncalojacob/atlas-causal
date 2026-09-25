@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Dominica (1778)\", revision 1370623961"
+    }
+  ],
+  "from": "anglo-french-war-1778-1783",
+  "to": "invasion-of-dominica-1778",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Dominica's own article makes France's entry into the war the thing that set the invasion going, and dates it: \"The action took place before British authorities in the Caribbean were aware that France had entered the war as an ally of the United States of America. The French governor in the West Indies, Francois Claude Amour, marquis de Bouille, was notified on 17 August that France was at war, and organized the invasion.\" Enabled and not caused: the war is what made the attack possible and gave de Bouille his orders, not what decided that Dominica in particular would be taken.",
+  "dispute": null
+}

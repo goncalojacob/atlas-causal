@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "relief-of-genoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7311095",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Relief of Genoa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7311095"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Relief of Genoa\", revision 1370706668"
+    }
+  ],
+  "title": "Relief of Genoa",
+  "summary": "The English Wikipedia article \"Relief of Genoa\", at revision 1370706668, opens: \"The Relief of Genoa took place between 28 March 1625 and 24 April 1625, during the Thirty Years' War. It was a major naval expedition launched by Spain against the French-occupied Republic of Genoa, whose capital, Genoa, was being besieged by a joint Franco-Savoyard army composed of 30,000 men and 3,000 cavalry.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7311095, imported by tools/import/wikidata.mjs. The item's own description reads \"1625 Spanish expedition against the French-occupied Republic of Genoa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1625,
+    "end": 1625,
+    "date": "1625-03-28",
+    "endDate": "1625-04-24"
+  },
+  "place": "genoa-q1449",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

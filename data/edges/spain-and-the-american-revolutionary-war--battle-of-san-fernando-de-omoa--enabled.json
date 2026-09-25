@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spain-and-the-american-revolutionary-war--battle-of-san-fernando-de-omoa--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Fernando de Omoa\", revision 1370588302"
+    }
+  ],
+  "from": "spain-and-the-american-revolutionary-war",
+  "to": "battle-of-san-fernando-de-omoa",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Omoa's article dates the action against Spain's entry and nothing else: \"a short siege and battle between British and Spanish forces fought not long after Spain entered the American Revolutionary War on the American side.\" Enabled: Spain's entry is what made a Spanish fort on the Gulf of Honduras a British objective at all.",
+  "dispute": null
+}

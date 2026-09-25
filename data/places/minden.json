@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "minden",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3846",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Minden",
+    "pt": "Minden"
+  },
+  "sources": [],
+  "names": [
+    "Minden"
+  ],
+  "where": {
+    "lon": 8.916666666666666,
+    "lat": 52.288333333333334,
+    "precision": "city",
+    "label": "Minden"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q3846, imported by tools/import/wikidata.mjs. The item's own description reads \"town in the Minden-Lübbecke district, in North Rhine-Westphalia, Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

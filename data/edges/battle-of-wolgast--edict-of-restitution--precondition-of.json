@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-wolgast--edict-of-restitution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Danish intervention"
+    }
+  ],
+  "from": "battle-of-wolgast",
+  "to": "edict-of-restitution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Edict is what Ferdinand did with the Danish war won, and the article says so in its first four words: \"Made overconfident by success, in March 1629, Ferdinand passed an Edict of Restitution.\" Wolgast is the last of the defeats that success is made of — \"Von Arnim abandoned the siege on 4 August, but three weeks later Christian suffered another defeat at Wolgast. He began negotiations with Wallenstein\" — and the negotiations became the Treaty of Lübeck in June 1629, three months before the Edict. Precondition-of: the confidence, not the battle, is what the article makes the cause.",
+  "dispute": null
+}

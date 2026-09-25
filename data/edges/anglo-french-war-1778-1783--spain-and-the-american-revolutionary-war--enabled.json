@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1778-1783--spain-and-the-american-revolutionary-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spain and the American Revolutionary War\", revision 1373209544"
+    }
+  ],
+  "from": "anglo-french-war-1778-1783",
+  "to": "spain-and-the-american-revolutionary-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Spain came in through France and the article says so in its first sentence: \"Spain, through its alliance with France and as part of the Anglo-French War (1778-1783) with Britain, played an important role in the independence of the United States. Spain declared war on Britain as an ally of France, itself an ally of the American colonies.\" Enabled and not caused: the alliance is the route in, and the article does not claim France obliged Spain to declare.",
+  "dispute": null
+}

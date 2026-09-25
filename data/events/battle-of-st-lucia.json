@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-lucia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2671443",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of St. Lucia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2671443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. Lucia\", revision 1370274653"
+    }
+  ],
+  "title": "Battle of St. Lucia",
+  "summary": "The English Wikipedia article \"Battle of St. Lucia\", at revision 1370274653, opens: \"The Battle of St. Lucia or the Battle of the Cul de Sac was a naval battle fought off the island of St. Lucia in the West Indies during the American Revolutionary War on 15 December 1778, between the British Royal Navy and the French Navy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2671443, imported by tools/import/wikidata.mjs. The item's own description reads \"1778 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-12-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (from Q760, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

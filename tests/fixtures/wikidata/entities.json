@@ -1,231 +1,1407 @@
 {
-  "entities": {
-    "Q9000001": {
-      "type": "item",
-      "id": "Q9000001",
-      "labels": { "en": { "language": "en", "value": "Northfield Rising" }, "pt": { "language": "pt", "value": "Levantamento de Northfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented uprising, used only to test an import" } },
-      "aliases": { "en": [{ "language": "en", "value": "Rising of Northfield" }] },
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1974-04-25T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P276": [{ "mainsnak": { "snaktype": "value", "property": "P276", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000003" } } }, "rank": "normal" }],
-        "P710": [{ "mainsnak": { "snaktype": "value", "property": "P710", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000002" } } }, "rank": "normal" }]
-      },
-      "sitelinks": {
-        "enwiki": { "site": "enwiki", "title": "Northfield Rising" },
-        "ptwiki": { "site": "ptwiki", "title": "Levantamento de Northfield" },
-        "frwiki": { "site": "frwiki", "title": "Soulèvement de Northfield" },
-        "commonswiki": { "site": "commonswiki", "title": "Category:Northfield Rising" }
-      }
+ "entities": {
+  "Q9000001": {
+   "type": "item",
+   "id": "Q9000001",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Rising"
     },
-    "Q9000002": {
-      "type": "item",
-      "id": "Q9000002",
-      "labels": { "en": { "language": "en", "value": "Ada Northfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented person" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100002" } } }, "rank": "normal" }],
-        "P569": [{ "mainsnak": { "snaktype": "value", "property": "P569", "datavalue": { "type": "time", "value": { "time": "+1900-03-02T00:00:00Z", "precision": 11 } } }, "rank": "normal" }],
-        "P570": [{ "mainsnak": { "snaktype": "value", "property": "P570", "datavalue": { "type": "time", "value": { "time": "+1970-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }]
+    "pt": {
+     "language": "pt",
+     "value": "Levantamento de Northfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented uprising, used only to test an import"
+    }
+   },
+   "aliases": {
+    "en": [
+     {
+      "language": "en",
+      "value": "Rising of Northfield"
+     }
+    ]
+   },
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
       },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Ada Northfield" } }
-    },
-    "Q9000003": {
-      "type": "item",
-      "id": "Q9000003",
-      "labels": { "en": { "language": "en", "value": "Northfield" }, "pt": { "language": "pt", "value": "Campo do Norte" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented town" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": 10, "longitude": 10, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
-        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000006" } } }, "rank": "normal" }]
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1974-04-25T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
       },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield" } }
-    },
-    "Q9000004": {
-      "type": "item",
-      "id": "Q9000004",
-      "labels": { "en": { "language": "en", "value": "Northfield Sonata" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented piece of music, of a class this atlas has no opinion about" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100009" } } }, "rank": "normal" }]
+      "rank": "normal"
+     }
+    ],
+    "P276": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P276",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000003"
+        }
+       }
       },
-      "sitelinks": {}
-    },
-    "Q9000005": {
-      "type": "item",
-      "id": "Q9000005",
-      "labels": { "en": { "language": "en", "value": "Far Rock" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented place too far from any lane to be placed by its own point" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": -60, "longitude": -140, "precision": 0.01, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
-        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000006" } } }, "rank": "normal" }]
+      "rank": "normal"
+     }
+    ],
+    "P710": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P710",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000002"
+        }
+       }
       },
-      "sitelinks": {}
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield Rising"
     },
-    "Q9000006": {
-      "type": "item",
-      "id": "Q9000006",
-      "labels": { "en": { "language": "en", "value": "Republic of Northfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented country" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100004" } } }, "rank": "normal" }],
-        "P571": [{ "mainsnak": { "snaktype": "value", "property": "P571", "datavalue": { "type": "time", "value": { "time": "+1822-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "latitude": 12, "longitude": 12, "precision": 0.1, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Republic of Northfield" } }
+    "ptwiki": {
+     "site": "ptwiki",
+     "title": "Levantamento de Northfield"
     },
-    "Q9000007": {
-      "type": "item",
-      "id": "Q9000007",
-      "labels": { "en": { "language": "en", "value": "Undated Assembly" } },
-      "descriptions": {},
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }]
-      },
-      "sitelinks": {}
+    "frwiki": {
+     "site": "frwiki",
+     "title": "Soulèvement de Northfield"
     },
-    "Q9000009": {
-      "type": "item",
-      "id": "Q9000009",
-      "labels": { "en": { "language": "en", "value": "Wide Northfield War" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented war over no ground in particular, used only to test an import" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1912-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }],
-        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1913-00-00T00:00:00Z", "precision": 9 } } }, "rank": "normal" }]
-      },
-      "sitelinks": {}
-    },
-    "Q9000010": {
-      "type": "item",
-      "id": "Q9000010",
-      "labels": { "pt": { "language": "pt", "value": "Convenção inventada de Northfield" } },
-      "descriptions": { "pt": { "language": "pt", "value": "uma convenção inventada, usada apenas para testar uma importação" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1951-07-28T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 6, "latitude": 6, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Invented Convention of Northfield" }, "ptwiki": { "site": "ptwiki", "title": "Convenção inventada de Northfield" } }
-    },
-    "Q9000011": {
-      "type": "item",
-      "id": "Q9000011",
-      "labels": { "pt": { "language": "pt", "value": "Eleição regional inventada de 1976" } },
-      "descriptions": { "pt": { "language": "pt", "value": "uma eleição inventada sem artigo em inglês, usada apenas para testar uma importação" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1976-06-27T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 7, "latitude": 7, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "ptwiki": { "site": "ptwiki", "title": "Eleição regional inventada de 1976" } }
-    },
-    "Q9000012": {
-      "type": "item",
-      "id": "Q9000012",
-      "labels": { "en": { "language": "en", "value": "Northfield Crisis" }, "pt": { "language": "pt", "value": "Crise de Northfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented crisis carrying a span and a stray point in time, used only to test an interval" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1956-10-29T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1956-11-07T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1957-03-01T00:00:00Z", "precision": 10, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 8, "latitude": 8, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Crisis" } }
-    },
-    "Q9000013": {
-      "type": "item",
-      "id": "Q9000013",
-      "labels": { "en": { "language": "en", "value": "Northfield Insurgency" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented insurgency whose item states a start and no end, used only to test an interval" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1991-06-25T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 9, "latitude": 9, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Insurgency" } }
-    },
-    "Q9000014": {
-      "type": "item",
-      "id": "Q9000014",
-      "labels": { "en": { "language": "en", "value": "Northfield Civil War" }, "pt": { "language": "pt", "value": "Guerra Civil de Northfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented civil war, one of three of that name, whose label drops the years its article keeps" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P580": [{ "mainsnak": { "snaktype": "value", "property": "P580", "datavalue": { "type": "time", "value": { "time": "+1989-02-15T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P582": [{ "mainsnak": { "snaktype": "value", "property": "P582", "datavalue": { "type": "time", "value": { "time": "+1992-04-27T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 10, "latitude": 10, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Civil War (1989–1992)" }, "ptwiki": { "site": "ptwiki", "title": "Guerra Civil de Northfield (1989–1992)" } }
-    },
-    "Q9000015": {
-      "type": "item",
-      "id": "Q9000015",
-      "labels": { "en": { "language": "en", "value": "Northfield Charter" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented charter whose item dates itself by its publication and by nothing else" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P577": [{ "mainsnak": { "snaktype": "value", "property": "P577", "datavalue": { "type": "time", "value": { "time": "+1812-00-00T00:00:00Z", "precision": 9, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Northfield Charter" } }
-    },
-    "Q9000016": {
-      "type": "item",
-      "id": "Q9000016",
-      "labels": { "en": { "language": "en", "value": "Southfield Skirmish" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented engagement whose only point is the town it names by P276, in a different lane from the country it names by P17" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100001" } } }, "rank": "normal" }],
-        "P585": [{ "mainsnak": { "snaktype": "value", "property": "P585", "datavalue": { "type": "time", "value": { "time": "+1812-06-18T00:00:00Z", "precision": 11, "calendarmodel": "http://www.wikidata.org/entity/Q1985727" } } }, "rank": "normal" }],
-        "P276": [{ "mainsnak": { "snaktype": "value", "property": "P276", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000017" } } }, "rank": "normal" }],
-        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000018" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Southfield Skirmish" } }
-    },
-    "Q9000017": {
-      "type": "item",
-      "id": "Q9000017",
-      "labels": { "en": { "language": "en", "value": "Southfield" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented town, named by an event's P276 and never in the same batch as it" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100003" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": 5, "latitude": 5, "precision": 0.0001, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }],
-        "P17": [{ "mainsnak": { "snaktype": "value", "property": "P17", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9000018" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Southfield" } }
-    },
-    "Q9000018": {
-      "type": "item",
-      "id": "Q9000018",
-      "labels": { "en": { "language": "en", "value": "Republic of Farland" } },
-      "descriptions": { "en": { "language": "en", "value": "an invented state whose point is a long way from the town in it, used only to tell one lane from another" } },
-      "aliases": {},
-      "claims": {
-        "P31": [{ "mainsnak": { "snaktype": "value", "property": "P31", "datavalue": { "type": "wikibase-entityid", "value": { "entity-type": "item", "id": "Q9100004" } } }, "rank": "normal" }],
-        "P625": [{ "mainsnak": { "snaktype": "value", "property": "P625", "datavalue": { "type": "globecoordinate", "value": { "longitude": -140, "latitude": -60, "precision": 0.01, "globe": "http://www.wikidata.org/entity/Q2" } } }, "rank": "normal" }]
-      },
-      "sitelinks": { "enwiki": { "site": "enwiki", "title": "Republic of Farland" } }
-    },
-    "Q9000008": { "id": "Q9000008", "missing": "" }
+    "commonswiki": {
+     "site": "commonswiki",
+     "title": "Category:Northfield Rising"
+    }
+   }
   },
-  "success": 1
+  "Q9000002": {
+   "type": "item",
+   "id": "Q9000002",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Ada Northfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented person"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100002"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P569": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P569",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1900-03-02T00:00:00Z",
+         "precision": 11
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P570": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P570",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1970-00-00T00:00:00Z",
+         "precision": 9
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Ada Northfield"
+    }
+   }
+  },
+  "Q9000003": {
+   "type": "item",
+   "id": "Q9000003",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Campo do Norte"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented town"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100003"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "latitude": 10,
+         "longitude": 10,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000006"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield"
+    }
+   }
+  },
+  "Q9000004": {
+   "type": "item",
+   "id": "Q9000004",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Sonata"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented piece of music, of a class this atlas has no opinion about"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100009"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q9000005": {
+   "type": "item",
+   "id": "Q9000005",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Far Rock"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented place too far from any lane to be placed by its own point"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100003"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "latitude": -60,
+         "longitude": -140,
+         "precision": 0.01,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000006"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q9000006": {
+   "type": "item",
+   "id": "Q9000006",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Republic of Northfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented country"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100004"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P571": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P571",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1822-00-00T00:00:00Z",
+         "precision": 9
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "latitude": 12,
+         "longitude": 12,
+         "precision": 0.1,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Republic of Northfield"
+    }
+   }
+  },
+  "Q9000007": {
+   "type": "item",
+   "id": "Q9000007",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Undated Assembly"
+    }
+   },
+   "descriptions": {},
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q9000009": {
+   "type": "item",
+   "id": "Q9000009",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Wide Northfield War"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented war over no ground in particular, used only to test an import"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P580": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P580",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1912-00-00T00:00:00Z",
+         "precision": 9
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P582": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P582",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1913-00-00T00:00:00Z",
+         "precision": 9
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {}
+  },
+  "Q9000010": {
+   "type": "item",
+   "id": "Q9000010",
+   "labels": {
+    "pt": {
+     "language": "pt",
+     "value": "Convenção inventada de Northfield"
+    }
+   },
+   "descriptions": {
+    "pt": {
+     "language": "pt",
+     "value": "uma convenção inventada, usada apenas para testar uma importação"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1951-07-28T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 6,
+         "latitude": 6,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Invented Convention of Northfield"
+    },
+    "ptwiki": {
+     "site": "ptwiki",
+     "title": "Convenção inventada de Northfield"
+    }
+   }
+  },
+  "Q9000011": {
+   "type": "item",
+   "id": "Q9000011",
+   "labels": {
+    "pt": {
+     "language": "pt",
+     "value": "Eleição regional inventada de 1976"
+    }
+   },
+   "descriptions": {
+    "pt": {
+     "language": "pt",
+     "value": "uma eleição inventada sem artigo em inglês, usada apenas para testar uma importação"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1976-06-27T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 7,
+         "latitude": 7,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "ptwiki": {
+     "site": "ptwiki",
+     "title": "Eleição regional inventada de 1976"
+    }
+   }
+  },
+  "Q9000012": {
+   "type": "item",
+   "id": "Q9000012",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Crisis"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Crise de Northfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented crisis carrying a span and a stray point in time, used only to test an interval"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P580": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P580",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1956-10-29T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P582": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P582",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1956-11-07T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1957-03-01T00:00:00Z",
+         "precision": 10,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 8,
+         "latitude": 8,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield Crisis"
+    }
+   }
+  },
+  "Q9000013": {
+   "type": "item",
+   "id": "Q9000013",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Insurgency"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented insurgency whose item states a start and no end, used only to test an interval"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P580": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P580",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1991-06-25T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 9,
+         "latitude": 9,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield Insurgency"
+    }
+   }
+  },
+  "Q9000014": {
+   "type": "item",
+   "id": "Q9000014",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Civil War"
+    },
+    "pt": {
+     "language": "pt",
+     "value": "Guerra Civil de Northfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented civil war, one of three of that name, whose label drops the years its article keeps"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P580": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P580",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1989-02-15T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P582": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P582",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1992-04-27T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 10,
+         "latitude": 10,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield Civil War (1989–1992)"
+    },
+    "ptwiki": {
+     "site": "ptwiki",
+     "title": "Guerra Civil de Northfield (1989–1992)"
+    }
+   }
+  },
+  "Q9000015": {
+   "type": "item",
+   "id": "Q9000015",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Northfield Charter"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented charter whose item dates itself by its publication and by nothing else"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P577": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P577",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1812-00-00T00:00:00Z",
+         "precision": 9,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Northfield Charter"
+    }
+   }
+  },
+  "Q9000016": {
+   "type": "item",
+   "id": "Q9000016",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Southfield Skirmish"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented engagement whose only point is the town it names by P276, in a different lane from the country it names by P17"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P585": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P585",
+       "datavalue": {
+        "type": "time",
+        "value": {
+         "time": "+1812-06-18T00:00:00Z",
+         "precision": 11,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P276": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P276",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000017"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000018"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P361": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P361",
+       "datatype": "wikibase-item",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000019",
+         "numeric-id": 9000019
+        },
+        "type": "wikibase-entityid"
+       }
+      },
+      "type": "statement",
+      "rank": "normal"
+     },
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P361",
+       "datatype": "wikibase-item",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000009",
+         "numeric-id": 9000009
+        },
+        "type": "wikibase-entityid"
+       }
+      },
+      "type": "statement",
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Southfield Skirmish"
+    }
+   }
+  },
+  "Q9000017": {
+   "type": "item",
+   "id": "Q9000017",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Southfield"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented town, named by an event's P276 and never in the same batch as it"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100003"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": 5,
+         "latitude": 5,
+         "precision": 0.0001,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P17": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P17",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9000018"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Southfield"
+    }
+   }
+  },
+  "Q9000018": {
+   "type": "item",
+   "id": "Q9000018",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Republic of Farland"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented state whose point is a long way from the town in it, used only to tell one lane from another"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datavalue": {
+        "type": "wikibase-entityid",
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100004"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ],
+    "P625": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P625",
+       "datavalue": {
+        "type": "globecoordinate",
+        "value": {
+         "longitude": -140,
+         "latitude": -60,
+         "precision": 0.01,
+         "globe": "http://www.wikidata.org/entity/Q2"
+        }
+       }
+      },
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Republic of Farland"
+    }
+   }
+  },
+  "Q9000008": {
+   "id": "Q9000008",
+   "missing": ""
+  },
+  "Q9000019": {
+   "type": "item",
+   "id": "Q9000019",
+   "labels": {
+    "en": {
+     "language": "en",
+     "value": "Wide Southfield War"
+    }
+   },
+   "descriptions": {
+    "en": {
+     "language": "en",
+     "value": "an invented war of the 1810s"
+    }
+   },
+   "aliases": {},
+   "claims": {
+    "P31": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P31",
+       "datatype": "wikibase-item",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "id": "Q9100001",
+         "numeric-id": 9100001
+        },
+        "type": "wikibase-entityid"
+       }
+      },
+      "type": "statement",
+      "rank": "normal"
+     }
+    ],
+    "P580": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P580",
+       "datatype": "time",
+       "datavalue": {
+        "value": {
+         "time": "+1810-00-00T00:00:00Z",
+         "timezone": 0,
+         "before": 0,
+         "after": 0,
+         "precision": 9,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        },
+        "type": "time"
+       }
+      },
+      "type": "statement",
+      "rank": "normal"
+     }
+    ],
+    "P582": [
+     {
+      "mainsnak": {
+       "snaktype": "value",
+       "property": "P582",
+       "datatype": "time",
+       "datavalue": {
+        "value": {
+         "time": "+1815-00-00T00:00:00Z",
+         "timezone": 0,
+         "before": 0,
+         "after": 0,
+         "precision": 9,
+         "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+        },
+        "type": "time"
+       }
+      },
+      "type": "statement",
+      "rank": "normal"
+     }
+    ]
+   },
+   "sitelinks": {
+    "enwiki": {
+     "site": "enwiki",
+     "title": "Wide Southfield War"
+    }
+   }
+  }
+ },
+ "success": 1
 }

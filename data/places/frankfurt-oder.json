@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "frankfurt-oder",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4024",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Frankfurt (Oder)",
+    "pt": "Frankfurt an der Oder"
+  },
+  "sources": [],
+  "names": [
+    "Frankfurt (Oder)",
+    "Frankfurt an der Oder"
+  ],
+  "where": {
+    "lon": 14.551666666666666,
+    "lat": 52.342083333333335,
+    "precision": "city",
+    "label": "Frankfurt (Oder)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q4024, imported by tools/import/wikidata.mjs. The item's own description reads \"city in Brandenburg, Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

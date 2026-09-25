@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-grand-turk--treaty-of-paris-1783--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grand Turk\", revision 1370441951"
+    }
+  ],
+  "from": "battle-of-grand-turk",
+  "to": "treaty-of-paris-1783",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The last British attempt on the islands failed and the peace decided them instead: \"Although the mission failed, the islands were restored to Britain in the second Treaty of Paris that formally concluded the war six months later.\" Precondition-of: the treaty settles what the action could not.",
+  "dispute": null
+}

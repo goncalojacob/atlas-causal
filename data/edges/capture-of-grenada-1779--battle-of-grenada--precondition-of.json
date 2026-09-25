@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "capture-of-grenada-1779--battle-of-grenada--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grenada\", revision 1370442020"
+    }
+  ],
+  "from": "capture-of-grenada-1779",
+  "to": "battle-of-grenada",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The sea battle was fought over what the landing had just done: \"A British fleet led by Admiral John Byron had sailed in an attempt to relieve Grenada, which French forces under Charles Henri Hector, Count of Estaing had just captured.\" Precondition-of: without the capture there is nothing for Byron to sail to relieve.",
+  "dispute": null
+}

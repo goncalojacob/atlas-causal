@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ile-de-re",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q292384",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Île de Ré",
+    "pt": "Ilha de Ré"
+  },
+  "sources": [],
+  "names": [
+    "Isle of Ré",
+    "Ilha de Ré",
+    "Île de Ré"
+  ],
+  "where": {
+    "lon": -1.4166666666667,
+    "lat": 46.2,
+    "precision": "region",
+    "label": "Île de Ré"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q292384, imported by tools/import/wikidata.mjs. The item's own description reads \"island in Charente-Maritime, Nouvelle-Aquitaine, France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

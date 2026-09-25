@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-saint-omer",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510361",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Saint-Omer"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510361"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Saint-Omer\", revision 1370744924"
+    }
+  ],
+  "title": "Siege of Saint-Omer",
+  "summary": "The English Wikipedia article \"Siege of Saint-Omer\", at revision 1370744924, opens: \"The siege of Saint-Omer was a siege in the Thirty Years' War in which a French army under Gaspard III de Coligny, Maréchal de Châtillon, laid siege to the Flemish city of Saint-Omer, defended by a small garrison in command of Lancelot II Schetz, count of Grobbendonck. Despite several initial successes in the capture of the minor forts around Saint-Omer, on the night of 8/9 June a Spanish relief army under Thomas Francis, Prince of Carignano, surprised Châtillon's troops and established a small fort in the middle of the French lines. An entire army corps under Maréchal de La Force was ordered to move towards Saint-Omer to support Châtillon siege, but on 12 July a further Imperial-Spanish force commanded by Ottavio Piccolomini entered Saint-Omer, resolving the French marshals to withdraw.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510361, imported by tools/import/wikidata.mjs. The item's own description reads \"siege in the thirty years' war, 1638\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-05-24",
+    "endDate": "1638-07-16"
+  },
+  "place": "saint-omer",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}
