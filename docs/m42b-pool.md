@@ -7362,6 +7362,32 @@ one cell at a time.
 
 ### The veins, and which are open
 
+**Europe's eighteenth century has the largest untouched vein this partition holds, and
+this fire surveyed it rather than take it.** `P361` on `Q32929`, the War of the Austrian
+Succession, returns **53 items with an English article** and this branch holds exactly
+one of them — `war-of-jenkins-ear`. The war itself is already here as a main event
+dated 1740–1748, so **every one of the other fifty-two is filed the moment it arrives
+and not one can raise the main count**. Roughly forty are European (Belgium, Italy,
+Bohemia, Silesia, the Low Countries, the two Cape Finisterre actions); the rest are
+`King George's War` and `Siege of Louisbourg` in Canada, the two Carnatic items in
+India, which are M42's, and two Caribbean actions. The cell holds twenty-four records
+of which twenty-one are the French Revolution, so this vein would roughly triple it.
+**It is the batch a fire with no decision to wait on should take.**
+
+**The Arauco vein is half spent and its remainder is thin.** The fifteen this fire took
+were the sixteenth century's. `P361` on `Q431806` leaves exactly three: `Q85745908` and
+`Q85783755` in the seventeenth century and `Q104849178` in the eighteenth. Three records
+is not a batch, and a survey of Chile between 1598 and 1799 (`P17` `Q298`, dated, with an
+English article) returns twelve items of which seven are earthquakes with no umbrella
+over them — **so the Americas' seventeenth cannot be filled from Chile without either
+answering its three standing decisions or writing an umbrella for the earthquakes.**
+
+**The Dutch–Portuguese vein is spent for the Americas.** `P361` on `Q377269` returns 46
+items; of the thirteen that are Brazilian or Atlantic, this branch holds eleven, and of
+the two left one is `Q19019163` (the editorial question about `dutch-brazil-1630-1654`)
+and the other `Q138011120` (the lane question). Only `Q10369402`, the Second Battle of
+Salvador, is free and unblocked, and one record is not a batch.
+
 **The pandemic vein is the largest open vein this partition has and it is barely
 touched.** Wikidata files the whole world's COVID-19 records in a three-level part-of
 tree under `Q81068910`, which this atlas holds as `covid-19-pandemic`. This branch now
@@ -7493,5 +7519,16 @@ parent over the whole corpus, so an open end can only be filed under another ope
 wide enough to contain all three of the datings its article gives — which is a claim the
 null was not making.
 
-**The check, on this fire's heads.** To be filled in by this fire once its push has a
-conclusion; the previous fire's run **1771**, on `9f409fb4`, concluded **success**.
+**The check, on this fire's heads.** Run **1777** on the claim commit `b2191efc` was
+**cancelled** by the merge push that followed it. Run **1778**, on the index commit
+`eee6ef73` that rebuilt `data/index/` in the commit *after* the `origin/m42` merge,
+concluded **success** — which is the last fire's deviation about history shards holding
+the first time it was applied. Run **1779**, on `de2f6809`, the head of this fire,
+concluded **success**. **The batch's three commits went out in one push on purpose**, so
+deviation 1258's cancellation chain did not happen this time and the only run this fire
+lost was the claim's. Locally the fire finished at **2,114 tests passing with nothing
+failed and nothing skipped** — the 1,819 of the pure suites and the 295 of the browser
+suites, the browser set run alone, the two sets never at once. `node tools/validate.mjs
+--index` is **clean at 0 errors and 499 warnings** on the pushed index.
+**The next fire should read this head's run before it does anything else**, and if it is
+red, read the failure: the check has been honest since M63 and it is not load.
