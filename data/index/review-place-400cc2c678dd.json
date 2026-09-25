@@ -1904,7 +1904,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "brega",
       "kind": "place",
       "names": [
@@ -5800,6 +5800,34 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "gulf-of-sidra",
+      "kind": "place",
+      "names": [
+        "Gulf of Sidra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q3477174, the Second Gulf of Sidra offensive, read on 2026-09-25 — A9's first step as A12 (2) corrects it. It falls at sea in the middle of the gulf the offensive is named after and stands for the coast it ran along, from Brega west to Sirte, rather than a spot on the ground; `point` is the fallback, there being no place item at this step to read a class from. The item's P276 is Q1376543, the Via Balbia, which has no point.",
         "status": "draft"
       },
       "revised": null,
@@ -9737,7 +9765,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "misrata",
       "kind": "place",
       "names": [
@@ -16621,7 +16649,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -18258,6 +18286,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "zliten",
+      "kind": "place",
+      "names": [
+        "Zliten"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q207259, Zliten, reached by A9's second step from Q11681484's P276 because the Zliten uprising item carries no P625 of its own. `city` off that item's class Q515 (A12 (2)).",
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     }
   ],

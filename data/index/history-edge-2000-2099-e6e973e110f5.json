@@ -401,6 +401,15 @@
         }
       ]
     },
+    "battle-of-brega-ajdabiya-road--fourth-battle-of-brega--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-diabaly--battle-of-ifoghas--precondition-of": {
       "from": "git",
       "versions": [
@@ -482,6 +491,24 @@
         }
       ]
     },
+    "battle-of-misrata-2011--battle-of-the-misrata-frontline--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-misrata-2011--zliten-uprising--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-ras-lanuf--battle-of-bin-jawad--precondition-of": {
       "from": "git",
       "versions": [
@@ -533,6 +560,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-tripoli-2011--tripoli-clashes-mid-october-2011--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -1397,6 +1433,24 @@
         }
       ]
     },
+    "second-gulf-of-sidra-offensive--battle-of-sirte-2011--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "second-gulf-of-sidra-offensive--killing-of-muammar-gaddafi--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "second-intifada--gaza-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -1457,6 +1511,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "third-battle-of-brega--battle-of-brega-ajdabiya-road--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

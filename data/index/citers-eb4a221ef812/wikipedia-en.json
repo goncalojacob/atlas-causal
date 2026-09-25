@@ -2078,6 +2078,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-brega-ajdabiya-road--fourth-battle-of-brega--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352, lead and § New rebel offensive"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
@@ -2309,6 +2315,18 @@
       "id": "battle-of-melle--fall-of-ghent--enabled",
       "kind": "edge",
       "locator": "\"Fall of Ghent\", revision 1370617755"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-misrata-2011--battle-of-the-misrata-frontline--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of the Misrata frontline\", revision 1374516321, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-misrata-2011--zliten-uprising--enabled",
+      "kind": "edge",
+      "locator": "\"Zliten uprising\", revision 1374516568, § Background"
     },
     {
       "dissent": false,
@@ -2693,6 +2711,12 @@
       "id": "battle-of-tripoli-2011--killing-of-muammar-gaddafi--precondition-of",
       "kind": "edge",
       "locator": "\"Killing of Muammar Gaddafi\", revision 1375974277, § Events"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tripoli-2011--tripoli-clashes-mid-october-2011--reacted-to",
+      "kind": "edge",
+      "locator": "\"Tripoli clashes (mid-October 2011)\", revision 1374518538, lead and § Background"
     },
     {
       "dissent": false,
@@ -5714,6 +5738,18 @@
     },
     {
       "dissent": false,
+      "id": "second-gulf-of-sidra-offensive--battle-of-sirte-2011--enabled",
+      "kind": "edge",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278, lead and § Rebel offensive"
+    },
+    {
+      "dissent": false,
+      "id": "second-gulf-of-sidra-offensive--killing-of-muammar-gaddafi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278, lead"
+    },
+    {
+      "dissent": false,
       "id": "second-intifada--gaza-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gaza war\", revision 1375729607, § Background"
@@ -6845,6 +6881,12 @@
       "id": "the-troubles--good-friday-agreement--caused",
       "kind": "edge",
       "locator": "\"The Troubles\", revision 1375596184, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-brega--battle-of-brega-ajdabiya-road--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352, § Background"
     },
     {
       "dissent": false,
@@ -8942,6 +8984,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-brega-ajdabiya-road",
+      "kind": "event",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "\"Battle of Breitenfeld (1631)\", revision 1370108143"
@@ -9977,6 +10025,12 @@
       "id": "battle-of-the-lys-1918",
       "kind": "event",
       "locator": "\"Battle of the Lys (1918)\", revision 1370600869"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-misrata-frontline",
+      "kind": "event",
+      "locator": "\"Battle of the Misrata frontline\", revision 1374516321"
     },
     {
       "dissent": false,
@@ -12866,6 +12920,12 @@
     },
     {
       "dissent": false,
+      "id": "second-gulf-of-sidra-offensive",
+      "kind": "event",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278"
+    },
+    {
+      "dissent": false,
       "id": "second-intifada",
       "kind": "event",
       "locator": "\"Second Intifada\", revision 1372798030"
@@ -13994,6 +14054,12 @@
     },
     {
       "dissent": false,
+      "id": "tripoli-clashes-mid-october-2011",
+      "kind": "event",
+      "locator": "\"Tripoli clashes (mid-October 2011)\", revision 1374518538"
+    },
+    {
+      "dissent": false,
       "id": "tulip-revolution",
       "kind": "event",
       "locator": "\"Tulip Revolution\", revision 1372025111"
@@ -14315,6 +14381,12 @@
       "id": "zanzibar-revolution",
       "kind": "event",
       "locator": "\"Zanzibar Revolution\", revision 1375266442"
+    },
+    {
+      "dissent": false,
+      "id": "zliten-uprising",
+      "kind": "event",
+      "locator": "\"Zliten uprising\", revision 1374516568"
     },
     {
       "dissent": false,

@@ -2756,6 +2756,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-brega-ajdabiya-road",
+      "kind": "event",
+      "locator": "Q4870546"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "Q205379"
@@ -3785,6 +3791,12 @@
       "id": "battle-of-the-lake-of-two-mountains",
       "kind": "event",
       "locator": "Q16208754"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-misrata-frontline",
+      "kind": "event",
+      "locator": "Q2408799"
     },
     {
       "dissent": false,
@@ -6482,6 +6494,12 @@
     },
     {
       "dissent": false,
+      "id": "second-gulf-of-sidra-offensive",
+      "kind": "event",
+      "locator": "Q3477174"
+    },
+    {
+      "dissent": false,
       "id": "second-intifada",
       "kind": "event",
       "locator": "Q49106"
@@ -7346,6 +7364,12 @@
     },
     {
       "dissent": false,
+      "id": "tripoli-clashes-mid-october-2011",
+      "kind": "event",
+      "locator": "Q7843682"
+    },
+    {
+      "dissent": false,
       "id": "tulip-revolution",
       "kind": "event",
       "locator": "Q459162"
@@ -7655,6 +7679,12 @@
       "id": "zanzibar-revolution",
       "kind": "event",
       "locator": "Q75844"
+    },
+    {
+      "dissent": false,
+      "id": "zliten-uprising",
+      "kind": "event",
+      "locator": "Q11681484"
     },
     {
       "dissent": false,

@@ -2744,6 +2744,15 @@
         }
       ]
     },
+    "gulf-of-sidra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "gulf-of-tonkin": {
       "from": "git",
       "versions": [
@@ -8644,6 +8653,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "zliten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     }

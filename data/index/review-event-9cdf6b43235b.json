@@ -6441,6 +6441,45 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "battle-of-brega-ajdabiya-road",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Place by A9's second step, P276 Q36219, Brega, already held; the item carries no P625. Interval widened under A7 from the cited article at revision 1373008352, whose Battle section opens \"By 8 April\" and whose last dated day of this fighting is 11 August, when Brega \"had fallen under opposition control\": the item's only date is a P585 of 18 April and its description says \"fought 8 April to 14 July 2011\". A7 never narrows, so both readings are covered, as batch 60 wrote Motien Pass.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Brega–Ajdabiya road"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -9566,6 +9605,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 2,
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "origin": {
@@ -11461,7 +11501,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "origin": {
@@ -12166,6 +12206,44 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-the-misrata-frontline",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9's second step, P276 Q32845, the Misrata District, whose own P625 is the city's point to two decimals: this atlas holds that city as `misrata` from Q131323, 1.5 km away, so the record is reused rather than a second Misrata written beside it — batch 60's liaodong-peninsula case read the other way round. The item's P580 and P582 are the days the article gives at both ends, so nothing was widened under A7.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Misrata frontline"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "degree": 2,
       "id": "battle-of-the-punchbowl",
       "kind": "event",
@@ -12513,7 +12591,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "battle-of-tripoli-2011",
       "kind": "event",
       "origin": {
@@ -19396,7 +19474,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "fourth-battle-of-brega",
       "kind": "event",
       "origin": {
@@ -23134,7 +23212,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "killing-of-muammar-gaddafi",
       "kind": "event",
       "origin": {
@@ -30184,6 +30262,45 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "second-gulf-of-sidra-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Place by A9's first step, the item's own P625, which falls at sea in the gulf the offensive is named after; the place record is new and its note says what the point stands for. Interval widened under A7 from the cited article at revision 1373278278: the item's only date is a P585 of 20 October, the lead says \"August and September 2011\" and the account opens on \"22 August\", which the start is widened back to. The end is the lead's own \"ended on 20 October\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Gulf of Sidra offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -34491,7 +34608,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "third-battle-of-brega",
       "kind": "event",
       "origin": {
@@ -36084,6 +36201,45 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Tripartite Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "tripoli-clashes-mid-october-2011",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "title-from-article"
+        ],
+        "note": "Title from the article and not from the item under A12 (5): the item's English label is the bare \"Tripoli clashes\" and the article carries the disambiguator that tells it from the February ones. Place by A9's second step, P276 Q3579, Tripoli, which this atlas already holds; the item carries no P625. The item's only date is a P585 of 14 October, which is the day the lead gives, and the article says the rising \"was quickly quelled\", so there is nothing to widen under A7.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tripoli clashes (mid-October 2011)"
     },
     {
       "authors": [
@@ -38059,6 +38215,44 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Zanzibar Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "zliten-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "libyan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "title-from-article"
+        ],
+        "note": "Title from the article and not the item under A12 (5): the item's label capitalises \"Uprising\" and the article does not. Place by A9's second step, P276 Q207259, Zliten, the item carrying no P625; the place record is new. The item's P580 and P582 are the days the article gives, so nothing was widened under A7. No category: class Q124734, rebellion, carries none in the seeds table, and an import that has none says nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Zliten uprising"
     }
   ],
   "schema": 1,
@@ -38533,12 +38727,6 @@
     },
     {
       "id": "battle-of-lutter",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-misrata-2011",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
