@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ten-years-war-franche-comte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3118995",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Ten Years' War (Franche-Comté)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3118995"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ten Years' War (Franche-Comté)\", revision 1376118464"
+    }
+  ],
+  "title": "Ten Years' War (Franche-Comté)",
+  "summary": "The English Wikipedia article \"Ten Years' War (Franche-Comté)\", at revision 1376118464, opens: \"The Ten Years' War (1634–1644) was a European Conflict fought between the Franco-Swedish Army and the Burgundian-Allied Army, and was one of the most destructive wars to involve the County of Burgundy—270,000 Burgundian civilians and tens of thousands of military personnel died. The war is also related to the Thirty Years' War, of which it formed part, Franco-Spanish War (1635-1659), and the reconqest of Lorraine by Duke Charles IV.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3118995, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in western Europe (1634–1644)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1644
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

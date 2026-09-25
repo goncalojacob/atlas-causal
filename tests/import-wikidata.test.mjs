@@ -23,7 +23,7 @@ import {
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
   leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, readLead,
-  LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES,
+  LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
 import { schemas, ROOT } from './helpers.mjs';
@@ -1353,4 +1353,39 @@ test('an event whose own point is the only located thing is reported, never name
   assert.equal(convention.place, null);
   assert.equal(convention.region, 'testland', 'and it is placeless with a lane, as it was before A9');
   assert.deepEqual(await readdir(path.join(dir, 'places')), [], 'nothing was named');
+});
+
+test('fetchEntities splits at the fifty the API takes, and asks for every id (deviation 1324)', async () => {
+  const { asked, fetcher } = await fixtureFetcher();
+  assert.equal(ENTITIES_PER_CALL, 50);
+  // Fifty-six: what A9's chain asks for when twenty-five events name a town, a
+  // province and a country each. One call refused the lot with "Too many values
+  // supplied for parameter ids", and the batch ended there.
+  const many = Array.from({ length: 56 }, (_, i) => `Q90${String(i).padStart(5, '0')}`);
+  const got = await fetchEntities(fetcher, many);
+  const calls = asked.filter((a) => a.url.includes('wbgetentities'));
+  assert.equal(calls.length, 2, 'fifty-six is two calls, not one refusal and not fifty-six');
+  const ids = calls.flatMap((a) => new URL(a.url).searchParams.get('ids').split('|'));
+  assert.deepEqual(ids, many, 'every id is asked for, in order, exactly once');
+  assert.deepEqual(Object.keys(got).sort(), [...many].sort(), 'and every one comes back');
+  for (const c of calls) {
+    assert.ok(new URL(c.url).searchParams.get('ids').split('|').length <= ENTITIES_PER_CALL);
+  }
+});
+
+test('and a list inside the limit is still one call', async () => {
+  const { asked, fetcher } = await fixtureFetcher();
+  await fetchEntities(fetcher, ['Q9000001', 'Q9000002']);
+  assert.equal(asked.filter((a) => a.url.includes('wbgetentities')).length, 1);
+});
+
+test('an event whose own point was only the first step is not reported as needing a person (deviation 1325)', async () => {
+  // Q9000010 has its own point and nothing else located: reported.
+  // Q9000016 has its own... nothing, but a P276 that answers: not reported.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000010', 'Q9000016'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(report.ownPoint.map((o) => o.qid), ['Q9000010'],
+    'the chain has three steps after the item itself, and one answering is not a case for a person');
+  assert.equal((await readJson(path.join(dir, 'events', 'southfield-skirmish.json'))).place, 'southfield');
 });

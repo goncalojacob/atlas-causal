@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-martorell-1641",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889282",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Martorell (1641)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Martorell (1641)\", revision 1370269122"
+    }
+  ],
+  "title": "Battle of Martorell (1641)",
+  "summary": "The English Wikipedia article \"Battle of Martorell (1641)\", at revision 1370269122, opens: \"The Battle of Martorell is one of the episodes of the Reapers' War in Catalonia that took place from 20 to 23 January 1641 and ended in a victory for the Spanish troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889282, imported by tools/import/wikidata.mjs. The item's own description reads \"1641 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-01-23"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

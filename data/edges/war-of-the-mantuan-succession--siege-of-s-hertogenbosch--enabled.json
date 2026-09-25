@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "war-of-the-mantuan-succession--siege-of-s-hertogenbosch--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Danish intervention"
+    }
+  ],
+  "from": "war-of-the-mantuan-succession",
+  "to": "siege-of-s-hertogenbosch",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article states this one in a single word — \"allowing\": \"The weakening of Spanish finances led to the loss of Oldenzaal in 1626, followed by Groenlo in 1627. This was made worse by the Dutch capture of the Spanish treasure fleet at Matanzas in 1628, while the Mantuan War diverted resources from the Netherlands, allowing Frederick Henry to besiege 's-Hertogenbosch in 1629. Imperial intervention could not prevent its fall, ending Spanish hopes of stopping trade with the Dutch East Indies.\" Enabled, exactly: the war in Italy did not cause the siege, it took away what would have prevented it.",
+  "dispute": null
+}

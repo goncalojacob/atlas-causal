@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-minden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q136735759",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Minden"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136735759"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Minden\", revision 1370743541"
+    }
+  ],
+  "title": "Siege of Minden",
+  "summary": "The English Wikipedia article \"Siege of Minden\", at revision 1370743541, opens: \"The Siege of Minden was a siege during the Swedish Intervention in the Thirty Years' War involving action between a Swedish-Lüneburg Army and an Imperial Army. The siege lasted 3 months from July 24 to October 24, 1634.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q136735759, imported by tools/import/wikidata.mjs. The item's own description reads \"1634 siege of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1634,
+    "date": "1634-07-24",
+    "endDate": "1634-10-24"
+  },
+  "place": "minden",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

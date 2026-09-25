@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-les-avins",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887913",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Les Avins"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Les Avins\", revision 1370447497"
+    }
+  ],
+  "title": "Battle of Les Avins",
+  "summary": "The English Wikipedia article \"Battle of Les Avins\", at revision 1370447497, opens: \"The Battle of Les Avins took place on 20 May 1635, outside the town of Les Avins, near Huy in modern Belgium, then part of the Bishopric of Liège. It was the first major engagement of the 1635 to 1659 Franco-Spanish War, a connected conflict of the Thirty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887913, imported by tools/import/wikidata.mjs. The item's own description reads \"1635 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1635,
+    "date": "1635-05-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

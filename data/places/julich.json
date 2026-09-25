@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "julich",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16045",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Jülich",
+    "pt": "Jülich"
+  },
+  "sources": [],
+  "names": [
+    "Jülich"
+  ],
+  "where": {
+    "lon": 6.3583333333333,
+    "lat": 50.922222222222,
+    "precision": "city",
+    "label": "Jülich"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q16045, imported by tools/import/wikidata.mjs. The item's own description reads \"town in the Düren district, in North Rhine-Westphalia, Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

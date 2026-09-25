@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-turin-1640",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q644342",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Turin (1640)",
+    "pt": "Cerco de Turim (1640)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q644342"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Turin (1640)\", revision 1370746106"
+    }
+  ],
+  "title": "Siege of Turin (1640)",
+  "summary": "The English Wikipedia article \"Siege of Turin (1640)\", at revision 1370746106, opens: \"The 1640 siege of Turin was a major action in two distinct wars: the Franco-Spanish War (1635–59) and the Piedmontese Civil War. When Thomas Francis, Prince of Carignano and his Piedmontese faction captured Turin, the French garrison supporting the Regent Christine Marie of France retired within the citadel and continued to resist. A Franco-Piedmontese army led by Henri de Lorraine, count of Harcourt and Henri de la Tour d'Auvergne, Vicomte de Turenne invested the forces under Prince Thomas within the city. Finally, a Spanish army under Diego Felipez de Guzmán, Marquis of Leganés appeared and encircled the French besiegers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q644342, imported by tools/import/wikidata.mjs. The item's own description reads \"1640 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1640,
+    "date": "1640-05-22",
+    "endDate": "1640-09-20"
+  },
+  "place": "turin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

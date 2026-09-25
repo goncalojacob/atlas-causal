@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-villabuona",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q102227734",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Villabuona"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q102227734"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Villabuona\", revision 1370592515"
+    }
+  ],
+  "title": "Battle of Villabuona",
+  "summary": "The English Wikipedia article \"Battle of Villabuona\", at revision 1370592515, opens: \"The Battle of Villabuona was fought on 29 May 1630 in the frazione of Villabona in southern Lombardy during the Mantuan war of succession between an allied Franco-Venetian army led by the Venetian provveditore Zaccaria Sagredo and the French commander Duc de Candale on one side and the Imperial army of Mathias Gallas on the other. The more numerous Franco-Venetians and their Mantuan allies hoped to end the Imperial siege of Mantua but were comprehensively defeated by Gallas' smaller force, numbering perhaps 10,000 men. The defeat was tactically and strategically significant for the allies and \"rendered the outcome of the siege of Mantua a foregone conclusion\", leading to the collapse of the city's defenses and its infamous sack later that year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q102227734, imported by tools/import/wikidata.mjs. The item's own description reads \"1630 battle of the Thirty Years War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1630,
+    "end": 1630,
+    "date": "1630-05-29"
+  },
+  "place": "villabona",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "thirty-years-war",
+    "war-of-the-mantuan-succession"
+  ]
+}

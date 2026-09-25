@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-herbsthausen--battle-of-nordlingen-1645--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § French intervention"
+    }
+  ],
+  "from": "battle-of-herbsthausen",
+  "to": "battle-of-nordlingen-1645",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "One sentence carries both battles and the same commander between them: \"In May, Bavarians under von Mercy destroyed a French detachment at Herbsthausen, before he in turn was defeated and killed at Second Nördlingen in August.\" Herbsthausen is the Bavarian victory that put von Mercy in the field at the head of that army, and Second Nördlingen is where the army and its commander were destroyed. Precondition-of, which is the weakest of the five and the honest one here: the article states a sequence and a continuity of force, not that the first battle brought the second about.",
+  "dispute": null
+}

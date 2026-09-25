@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kolding-1644",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q10671374",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Kolding (1644)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10671374"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kolding (1644)\", revision 1370445808"
+    }
+  ],
+  "title": "Battle of Kolding (1644)",
+  "summary": "The English Wikipedia article \"Battle of Kolding (1644)\", at revision 1370445808, opens: \"The battle of Kolding took place on 9 January 1644 outside Kolding in Jutland. In the opening engagement of the Torstenson War, a Swedish cavalry force under Torsten Stålhandske scattered a Danish detachment led by Frederik von Buchwald.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10671374, imported by tools/import/wikidata.mjs. The item's own description reads \"1644 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-01-09"
+  },
+  "place": "kolding",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "torstenson-war"
+}

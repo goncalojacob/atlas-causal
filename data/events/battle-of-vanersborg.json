@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-vanersborg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872700",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Vänersborg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872700"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vänersborg\", revision 1370592788"
+    }
+  ],
+  "title": "Battle of Vänersborg",
+  "summary": "The English Wikipedia article \"Battle of Vänersborg\", at revision 1370592788, opens: \"The Battle of Vänersborg was fought between Swedish and Norwegian forces during the Torstenson War in 1645. The Swedes were victorious and the Norwegians retreated to Bohuslän. The Dano-Norwegian commander was Henrik Bielke. A hundred men, led by captain Alexander Hamilton, had been assigned to the Swedish fortifications. In the initial attack, Norwegian troops lost 24 men, whereas the Swedish defenders lost five men, among them one corporal. The attack came a few months after Vänersborg had been burned to the ground in an attack the previous year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872700, imported by tools/import/wikidata.mjs. The item's own description reads \"1645 battle between Sweden and Norway\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1645,
+    "end": 1645
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "torstenson-war"
+}

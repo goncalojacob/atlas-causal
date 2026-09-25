@@ -123,6 +123,9 @@ export const PROPERTIES = Object.freeze({
 // there so that a seeds file naming a thousand towns cannot spend the budget
 // on places nobody asked for.
 export const LOCATION_FETCH = 100;
+// What `wbgetentities` takes in one call, which is its own limit and not ours:
+// `fetchEntities` splits anything longer rather than asking the caller to.
+export const ENTITIES_PER_CALL = 50;
 // Batches of 25: the size wbgetentities takes for anonymous callers, and
 // small enough that a job cut off mid-run has lost at most 25 items of work.
 export const BATCH = 25;
@@ -1120,6 +1123,20 @@ export const isMissing = (entity) => !entity || Object.hasOwn(entity, 'missing')
 
 export async function fetchEntities(fetcher, qids) {
   if (!qids.length) return {};
+  // `wbgetentities` takes fifty ids and refuses the fifty-first, and this
+  // function used to leave that to its callers: every one of them passed at
+  // most `BATCH`, which is 25, so nothing ever reached the limit until A9's
+  // chain asked for the located things a batch of 25 events names — three
+  // properties each — and got 56 (deviation 1324). A contract a caller has to
+  // remember is a contract that breaks the first time somebody adds a caller,
+  // so the chunking is here.
+  if (qids.length > ENTITIES_PER_CALL) {
+    const entities = {};
+    for (let at = 0; at < qids.length; at += ENTITIES_PER_CALL) {
+      Object.assign(entities, await fetchEntities(fetcher, qids.slice(at, at + ENTITIES_PER_CALL)));
+    }
+    return entities;
+  }
   try {
     const body = await fetcher.get(entitiesUrl(qids));
     return body?.entities ?? {};
@@ -1268,6 +1285,7 @@ async function eventPlace(read, {
   deriveRegion, classes, today, lane,
 }) {
   const eventLane = lane?.how === null ? null : lane?.region ?? null;
+  let ownPointOnly = null;
   for (const qid of placeChain(read)) {
     const held = byItem.get(`place:${qid}`);
     if (held) {
@@ -1304,9 +1322,12 @@ async function eventPlace(read, {
       return { place: already, flagged: true };
     }
     if (own) {
-      // Its own point, and no place here stands at it: a person writes that
-      // place, because its name is not in the item.
-      report.ownPoint.push({ qid, point: candidate.point });
+      // Its own point, and no place here stands at it. Remembered rather than
+      // reported: the chain has three steps left and one of them usually
+      // answers, so reporting here would say "a person must write this place"
+      // about an event that is about to get one (deviation 1325). Reported
+      // below, if nothing else does.
+      ownPointOnly = { qid, point: candidate.point };
       continue;
     }
     const classified = classify(candidate, classes);
@@ -1330,6 +1351,10 @@ async function eventPlace(read, {
     report.created.push({ id, qid, kind: 'place', lane: own2.how });
     return { place: id, flagged: true };
   }
+  // Nothing in the chain answered. If the event's own point was the one thing
+  // located, say so now: that is the case a person has to write the place for,
+  // and it is only that case once the rest of the chain has failed too.
+  if (ownPointOnly) report.ownPoint.push(ownPointOnly);
   return { place: null, flagged: false };
 }
 

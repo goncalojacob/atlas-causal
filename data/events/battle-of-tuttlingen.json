@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tuttlingen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1436705",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Tuttlingen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1436705"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tuttlingen\", revision 1370591840"
+    }
+  ],
+  "title": "Battle of Tuttlingen",
+  "summary": "The English Wikipedia article \"Battle of Tuttlingen\", at revision 1370591840, opens: \"The Battle of Tuttlingen was part of the Thirty Years' War and was fought in Tuttlingen on 24 November 1643 between a French-led army under Marshal Josias Rantzau and the forces of the Holy Roman Empire, Bavaria, Spain, and the exiled Duke of Lorraine, all led by Franz von Mercy. The French army—including the so-called Weimarans or Bernhardines, German troops once in service of Bernard of Saxe-Weimar—was wiped out in a surprise attack in heavy snowfall, reversing French strategic gains since 1638. The French court suppressed news of the defeat and it remains largely unknown today, even among historians of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1436705, imported by tools/import/wikidata.mjs. The item's own description reads \"1643 battle of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1643,
+    "end": 1643,
+    "date": "1643-11-24"
+  },
+  "place": "tuttlingen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

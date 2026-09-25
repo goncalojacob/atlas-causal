@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-dunkirk-1646",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485880",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Dunkirk (1646)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485880"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dunkirk (1646)\", revision 1370740882"
+    }
+  ],
+  "title": "Siege of Dunkirk (1646)",
+  "summary": "The English Wikipedia article \"Siege of Dunkirk (1646)\", at revision 1370740882, opens: \"The siege of Dunkirk was a siege commenced by France under the command of Louis, le Grand Condé with naval support of the Dutch Republic under the command of admiral Maarten Tromp, who were able to blockade the city to help Condé's siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485880, imported by tools/import/wikidata.mjs. The item's own description reads \"1646 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1646,
+    "end": 1646,
+    "date": "1646-09-07",
+    "endDate": "1646-10-11"
+  },
+  "place": "dunkirk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

@@ -12,7 +12,7 @@
     }
   ],
   "license": "CC-BY-SA-4.0",
-  "created": "2026-09-24",
+  "created": "2026-09-25",
   "revised": null,
   "review": {
     "status": "draft",
@@ -26,13 +26,13 @@
   "sources": [
     {
       "source": "wikipedia-en",
-      "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Swedish intervention"
     }
   ],
   "from": "battle-of-rain",
   "to": "battle-of-the-alte-veste",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The same sentence names Rain as the other half of the reason: \"particularly at Breitenfeld, followed by Tilly's death during the Battle of Rain, forced Holy Roman Emperor Ferdinand II to recall Albrecht von Wallenstein into military service from retirement.\" The section adds the march that followed: \"In spring of 1632, Gustavus Adolphus had handed the Habsburg Emperor, Ferdinand II, a major defeat at Rain… He subsequently occupied Nuremberg, encamping his army outside of the city.\" Uncited in the article, so probable.",
+  "explanation": "The two Swedish victories are what took Gustavus far enough south for Wallenstein to cut him off, and the Alte Veste is the assault on the position Wallenstein took. The article: \"With this army, Gustavus invaded southern Germany, winning victories at Breitenfeld in September 1631, then Rain in April 1632, where Tilly was killed. However, Wallenstein realised the Swedes were overextended, and established himself at Fürth, across their supply lines to the Baltic. At the Battle of the Alte Veste in late August, a failed Swedish assault on the Imperial camp outside the town was bloodily repulsed.\" Precondition-of: being overextended is what the article gives as the reason Wallenstein could take that position, and the town outside which the camp stood is Fürth.",
   "dispute": null
 }
