@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "war-of-the-fourth-coalition--peninsular-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Fourth Coalition\", revision 1372944372, § Results"
+    }
+  ],
+  "from": "war-of-the-fourth-coalition",
+  "to": "peninsular-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Fourth Coalition's own § Results carries it forward: \"Napoleon soon embroiled himself and France in Spain's internal power struggles within its royal family, eventually leading to the Spanish populace turning on the French occupiers and the beginning of the Peninsular War.\" The article states the sequence as a consequence of the coalition war's settlement, and the atlas already holds the Peninsular War onward from there. `precondition-of`: what the article makes the cause is Napoleon's intervention in Spain, which the Fourth Coalition's outcome made possible.",
+  "dispute": null
+}

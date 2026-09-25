@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "tet-offensive--my-lai-massacre--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"My Lai massacre\", revision 1376209267, § Background"
+    }
+  ],
+  "from": "tet-offensive",
+  "to": "my-lai-massacre",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The massacre's own § Background: \"Military Assistance Command, Vietnam (MACV) was aggressively trying to regain the strategic initiative in South Vietnam after the Tet Offensive, and the search-and-destroy operation against the 48th Battalion thought to be located in Sơn Mỹ became a small part of the U.S. military's overall strategy.\" The article makes the operation that ended in Sơn Mỹ a piece of the post-Tet counter-offensive. `precondition-of`, not `caused`: the offensive set the strategy the operation belonged to and no article makes it the cause of what the company did.",
+  "dispute": null
+}

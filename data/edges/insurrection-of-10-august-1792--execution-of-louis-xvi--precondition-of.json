@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Execution of Louis XVI\", revision 1373172133, § Background"
+    }
+  ],
+  "from": "insurrection-of-10-august-1792",
+  "to": "execution-of-louis-xvi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The execution's own § Background opens on the insurrection: \"Following the attack on the Tuileries Palace during the insurrection of 10 August 1792, King Louis XVI was imprisoned at the Temple Prison in Paris, along with his wife Marie Antoinette, their two children and his younger sister Élisabeth.\" The imprisonment is the article's stated consequence of the insurrection, and it is the state the king was tried and executed in. `precondition-of`: the insurrection did not order the execution, it put the king where the Convention could try him.",
+  "dispute": null
+}

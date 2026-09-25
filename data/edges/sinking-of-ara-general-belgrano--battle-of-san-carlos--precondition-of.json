@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sinking-of-ara-general-belgrano--battle-of-san-carlos--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Carlos (1982)\", revision 1373226188, § Argentine forces"
+    }
+  ],
+  "from": "sinking-of-ara-general-belgrano",
+  "to": "battle-of-san-carlos",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle's own article, under § Argentine forces: \"With Argentine army forces generally confined to a static defensive role, and the Navy's surface fleet remaining in port after the sinking of ARA General Belgrano, the task of opposing the landings fell mostly on the pilots of Argentine Air Force (FAA) and the Argentine Naval Aviation (COAN).\" The sinking is what kept the surface fleet in harbour, and the article names that as why the landings were opposed from the air alone. `precondition-of` rather than `caused`: it did not bring the landings about, it settled how they were fought.",
+  "dispute": null
+}
