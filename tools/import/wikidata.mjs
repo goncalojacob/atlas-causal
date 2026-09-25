@@ -53,6 +53,7 @@ import { astronomicalBounds } from '../../src/util/dates.js';
 import { PROVENANCE_SENTENCES } from '../../src/summary.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
+import { parentsOf } from '../../src/parts.js';
 import { mergeIdentity, mergeNames } from './identity.mjs';
 import { reusablePlace } from './places.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
@@ -764,8 +765,16 @@ export function lanesAgree(eventLane, placeLane) {
 // never be the warning that rule raises; a parent whose span does not contain
 // the child is left out and reported rather than written and warned about.
 //
-// `umbrellas` is a Map from the item to { id, when } — the atlas's own
-// records, so nothing here decides what an umbrella is.
+// **And a parent reachable through another parent is not a second umbrella**
+// (deviation 1316, and deviation 1327 for letting it through again). The
+// Mantuan War is part of the Thirty Years' War, so a battle inside the Mantuan
+// War is already inside the Thirty Years' War and naming both says nothing the
+// nearer one did not. Wikidata's `P361` is not transitively reduced — an item
+// names the war and the campaign both — so the reduction is here.
+//
+// `umbrellas` is a Map from the item to { id, when, parents } — the atlas's own
+// records, so nothing here decides what an umbrella is; `parents` is that
+// record's own parent list, which is what the reachability is walked over.
 export function filedUnder(when, partOf, umbrellas) {
   const child = importSpan(when);
   const out = [];
@@ -780,7 +789,26 @@ export function filedUnder(when, partOf, umbrellas) {
     }
     if (!out.includes(held.id)) out.push(held.id);
   }
-  return { parents: out, refused };
+  // Every umbrella already reached through another of them, dropped. Walked by
+  // id over the records' own `parents`, because an ancestor of an ancestor
+  // counts: A is redundant if any other chosen parent reaches it at any depth.
+  const byId = new Map([...umbrellas.values()].map((u) => [u.id, u]));
+  const reaches = (from, target, seen = new Set()) => {
+    for (const up of byId.get(from)?.parents ?? []) {
+      if (up === target) return true;
+      if (seen.has(up)) continue;
+      seen.add(up);
+      if (reaches(up, target, seen)) return true;
+    }
+    return false;
+  };
+  const kept = out.filter((id) => !out.some((other) => other !== id && reaches(other, id)));
+  for (const id of out) {
+    if (kept.includes(id)) continue;
+    const through = out.find((other) => other !== id && reaches(other, id));
+    refused.push({ id, qid: null, why: `the child is inside it already through "${through}" (deviation 1316)` });
+  }
+  return { parents: kept, refused };
 }
 
 // An interval as two astronomical bounds, which is `span()` in
@@ -1399,7 +1427,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   // the span the filing is judged by is the atlas's and not the item's.
   const umbrellas = new Map(entries
     .filter((e) => e.kind === 'event' && e.record?.status === 'active' && e.record?.wikidata)
-    .map((e) => [e.record.wikidata, { id: e.record.id, when: e.record.when }]));
+    .map((e) => [e.record.wikidata, { id: e.record.id, when: e.record.when, parents: parentsOf(e.record) }]));
 
   // Classified first, then walked places before actors before events, so an
   // event can point at a place the same batch created rather than being

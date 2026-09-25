@@ -13806,10 +13806,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "thirty-years-war",
-        "war-of-the-mantuan-succession"
-      ],
+      "parent": "war-of-the-mantuan-succession",
       "review": {
         "flags": [
           "imported-facts",
@@ -13817,6 +13814,7 @@
           "a9-place",
           "filed-from-p361"
         ],
+        "note": "Wikidata P361 names both \"thirty-years-war\" and \"war-of-the-mantuan-succession\", and this record is inside the first already through the second, so the outer one is dropped: naming both says nothing the nearer one did not (deviation 1316). The import let it through and now reduces it (deviation 1327).",
         "status": "draft"
       },
       "revised": null,
@@ -14196,10 +14194,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "thirty-years-war",
-        "bohemian-revolt"
-      ],
+      "parent": "bohemian-revolt",
       "review": {
         "flags": [
           "imported-facts",
@@ -14207,6 +14202,7 @@
           "a9-place",
           "filed-from-p361"
         ],
+        "note": "Wikidata P361 names both \"thirty-years-war\" and \"bohemian-revolt\", and this record is inside the first already through the second, so the outer one is dropped: naming both says nothing the nearer one did not (deviation 1316). The import let it through and now reduces it (deviation 1327).",
         "status": "draft"
       },
       "revised": null,

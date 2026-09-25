@@ -24,7 +24,8 @@
       "summary-from-lead",
       "a9-place",
       "filed-from-p361"
-    ]
+    ],
+    "note": "Wikidata P361 names both \"thirty-years-war\" and \"bohemian-revolt\", and this record is inside the first already through the second, so the outer one is dropped: naming both says nothing the nearer one did not (deviation 1316). The import let it through and now reduces it (deviation 1327)."
   },
   "wikidata": "Q2530804",
   "sitelinks": {
@@ -57,8 +58,5 @@
   "regionNote": null,
   "category": "war",
   "actors": [],
-  "parent": [
-    "thirty-years-war",
-    "bohemian-revolt"
-  ]
+  "parent": "bohemian-revolt"
 }

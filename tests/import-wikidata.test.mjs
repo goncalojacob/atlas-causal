@@ -1389,3 +1389,37 @@ test('an event whose own point was only the first step is not reported as needin
     'the chain has three steps after the item itself, and one answering is not a case for a person');
   assert.equal((await readJson(path.join(dir, 'events', 'southfield-skirmish.json'))).place, 'southfield');
 });
+
+test('a parent reachable through another parent is dropped, not written (deviations 1316, 1327)', () => {
+  // The Mantuan War is part of the Thirty Years' War, so a battle inside the
+  // Mantuan War is inside the Thirty Years' War already: Wikidata's P361 names
+  // both and the filing keeps the nearer one.
+  const umbrellas = new Map([
+    ['Q2487', { id: 'thirty-years-war', when: { start: 1618, end: 1648 }, parents: [] }],
+    ['Q1527665', { id: 'war-of-the-mantuan-succession', when: { start: 1628, end: 1631 }, parents: ['thirty-years-war'] }],
+  ]);
+  const one = filedUnder({ start: 1630, end: 1630 }, ['Q2487', 'Q1527665'], umbrellas);
+  assert.deepEqual(one.parents, ['war-of-the-mantuan-succession']);
+  assert.equal(one.refused.length, 1);
+  assert.match(one.refused[0].why, /inside it already through "war-of-the-mantuan-succession"/);
+
+  // Named the other way round, the answer is the same: it is a reduction and
+  // not an order of preference.
+  assert.deepEqual(filedUnder({ start: 1630, end: 1630 }, ['Q1527665', 'Q2487'], umbrellas).parents,
+    ['war-of-the-mantuan-succession']);
+
+  // At depth: a grandparent is as redundant as a parent.
+  const deep = new Map([
+    ['Q1', { id: 'a', when: { start: 1600, end: 1700 }, parents: [] }],
+    ['Q2', { id: 'b', when: { start: 1610, end: 1690 }, parents: ['a'] }],
+    ['Q3', { id: 'c', when: { start: 1620, end: 1680 }, parents: ['b'] }],
+  ]);
+  assert.deepEqual(filedUnder({ start: 1650, end: 1650 }, ['Q1', 'Q2', 'Q3'], deep).parents, ['c']);
+
+  // And two umbrellas neither inside the other both stay: that is A8's case.
+  const siblings = new Map([
+    ['Q1', { id: 'a', when: { start: 1600, end: 1700 }, parents: [] }],
+    ['Q2', { id: 'b', when: { start: 1600, end: 1700 }, parents: [] }],
+  ]);
+  assert.deepEqual(filedUnder({ start: 1650, end: 1650 }, ['Q1', 'Q2'], siblings).parents, ['a', 'b']);
+});
