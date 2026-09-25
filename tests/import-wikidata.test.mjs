@@ -22,7 +22,7 @@ import {
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
-  leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, readLead,
+  leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
   LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
@@ -1422,4 +1422,62 @@ test('a parent reachable through another parent is dropped, not written (deviati
     ['Q2', { id: 'b', when: { start: 1600, end: 1700 }, parents: [] }],
   ]);
   assert.deepEqual(filedUnder({ start: 1650, end: 1650 }, ['Q1', 'Q2'], siblings).parents, ['a', 'b']);
+});
+
+// --- deviation 1331: an umbrella created in the same batch as its children ---
+//
+// `runImportMode` builds its umbrella map once, before the loop, out of the
+// records the atlas already held. A batch that imports a war and the actions
+// inside it therefore files nothing under that war: when each action is
+// written the war is not in the map, however the seeds file is ordered,
+// because the map is not rebuilt between records. M42b batch 35 lost two
+// records to this — `battle-of-roatan` and `action-of-12-december-1779`, both
+// naming `Q26809259` in their own `P361` — and filed them by hand.
+//
+// The fix is a second filing pass at the end of a run, over the events the run
+// itself created, against a map extended with the events the run itself wrote.
+// `umbrellasWith` is the pure half of it and this is the test that comes first.
+test('umbrellasWith adds the run\'s own events to what the filing pass looks a P361 up in', () => {
+  const held = new Map([
+    ['Q40949', { id: 'american-revolutionary-war', when: { start: 1775, end: 1783 }, parents: [] }],
+  ]);
+
+  // The war this run created, and the action that names it.
+  const made = [
+    { id: 'spain-and-the-american-revolutionary-war', kind: 'event', status: 'active',
+      wikidata: 'Q26809259', when: { start: 1779, end: 1783 }, parent: 'american-revolutionary-war' },
+  ];
+  const extended = umbrellasWith(held, made);
+
+  assert.equal(extended.size, 2, 'the held umbrella and the one this run wrote');
+  assert.deepEqual(extended.get('Q26809259'),
+    { id: 'spain-and-the-american-revolutionary-war', when: { start: 1779, end: 1783 },
+      parents: ['american-revolutionary-war'] },
+    'the parents come through parentsOf, so the redundancy reduction still works');
+
+  // The map it hands back is a copy: a second pass must not mutate the first.
+  assert.equal(held.size, 1, 'the map the run started with is left alone');
+
+  // And the filing a whole run round-trips: refused before, taken after.
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q26809259'], held),
+    { parents: [], refused: [] }, 'before the pass the umbrella is simply not here');
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q26809259'], extended).parents,
+    ['spain-and-the-american-revolutionary-war']);
+
+  // The reduction still applies across the join: an action naming both the war
+  // and the war it is inside keeps only the nearer one.
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q40949', 'Q26809259'], extended).parents,
+    ['spain-and-the-american-revolutionary-war']);
+});
+
+test('umbrellasWith takes only active events that carry an item', () => {
+  const held = new Map();
+  const made = [
+    { id: 'a-place', kind: 'place', status: 'active', wikidata: 'Q1', when: { start: 1, end: 2 } },
+    { id: 'withdrawn', kind: 'event', status: 'retracted', wikidata: 'Q2', when: { start: 1, end: 2 } },
+    { id: 'no-item', kind: 'event', status: 'active', when: { start: 1, end: 2 } },
+    { id: 'kept', kind: 'event', status: 'active', wikidata: 'Q4', when: { start: 1, end: 2 } },
+  ];
+  assert.deepEqual([...umbrellasWith(held, made).keys()], ['Q4'],
+    'a place is not an umbrella, a withdrawn event would be rule 24\'s error, and an event with no item cannot be looked up');
 });

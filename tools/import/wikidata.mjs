@@ -811,6 +811,23 @@ export function filedUnder(when, partOf, umbrellas) {
   return { parents: kept, refused };
 }
 
+// The umbrellas a run can file against once it has finished: the ones the
+// atlas already held, plus the events the run itself created. `runImportMode`
+// builds its map once before the loop, so a batch that imports a war and the
+// actions inside it files nothing under that war however the seeds file is
+// ordered — M42b batch 35 lost `battle-of-roatan` and `action-of-12-december-1779`
+// to it and filed them by hand (deviation 1331). This is the pure half of the
+// second pass; it copies rather than mutating, because the map the loop used is
+// what the report was written against.
+export function umbrellasWith(umbrellas, created) {
+  const out = new Map(umbrellas);
+  for (const r of created ?? []) {
+    if (r?.kind !== 'event' || r.status !== 'active' || typeof r.wikidata !== 'string') continue;
+    out.set(r.wikidata, { id: r.id, when: r.when, parents: parentsOf(r) });
+  }
+  return out;
+}
+
 // An interval as two astronomical bounds, which is `span()` in
 // src/validate/rules.js and has to stay the same arithmetic: a filing judged
 // by one and warned about by the other would be a fire writing its own defect.
@@ -1263,6 +1280,9 @@ function emptyReport() {
     // not a place of this atlas, and an event whose own point is the only thing
     // located — the one a person writes the place for.
     unfiled: [], offLane: [], offClass: [], ownPoint: [],
+    // And what the second filing pass took, once the run's own umbrellas
+    // existed to file against (deviation 1331).
+    refiled: [],
   };
 }
 
@@ -1433,6 +1453,9 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
   // event can point at a place the same batch created rather than being
   // refused for a record that is about to exist. Order within a kind stays
   // the seeds file's, so the report reads in the order somebody wrote.
+  // The events this run creates, for the second filing pass at the end of it.
+  const madeHere = [];
+
   const work = [];
   for (const qid of batch) {
     const entity = entities[qid];
@@ -1592,10 +1615,36 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       }
       written.push(await writeRecord(dataDir, 'events', record));
       taken.add(id);
+      // Kept for the second filing pass below: the record itself, so a filing
+      // this run's own umbrellas make possible can be written without reading
+      // the file back, and the `P361` the item named, which the record does
+      // not carry (deviation 1331).
+      madeHere.push({ record, qid, partOf: read.partOf });
       report.created.push({ id, qid, kind: 'event', place, parents: filed.parents, summary: Boolean(summary) });
       continue;
     }
     report.leads.push(...(await fetchLeads(fetcher, read, { cacheDir, today })).map((l) => ({ qid, ...l })));
+  }
+
+  // **The second filing pass** (deviation 1331). The map above was built before
+  // the loop, so an umbrella this run created was invisible to every child of
+  // it written afterwards. Ordering the seeds file umbrella-first does not help:
+  // the map is not rebuilt between records. So the filing is asked once more,
+  // for the events this run wrote that came out with no parent, against a map
+  // that now holds the run's own umbrellas. It fetches nothing.
+  const refiled = umbrellasWith(umbrellas, madeHere.map((m) => m.record));
+  for (const made of madeHere) {
+    if (made.record.parent !== undefined && made.record.parent !== null) continue;
+    const again = filedUnder(made.record.when, made.partOf, refiled);
+    // An umbrella this run wrote cannot be the record's own self.
+    const parents = again.parents.filter((id) => id !== made.record.id);
+    if (!parents.length) continue;
+    made.record.parent = parents.length === 1 ? parents[0] : parents;
+    if (!made.record.review.flags.includes(FILED_FLAG)) made.record.review.flags.push(FILED_FLAG);
+    await writeRecord(dataDir, 'events', made.record);
+    const row = report.created.find((c) => c.id === made.record.id);
+    if (row) row.parents = parents;
+    report.refiled.push({ id: made.record.id, qid: made.qid, parents });
   }
 
   report.calls = fetcher.calls;
@@ -2160,6 +2209,7 @@ export function reportLines(report, mode) {
   // them out of the tool had three events it could have placed and the only
   // record of the refusal was a field nothing read (deviation 1322).
   for (const u of report.unfiled ?? []) lines.push(`not filed ${u.qid} under ${u.id}: ${u.why}`);
+  for (const r of report.refiled ?? []) lines.push(`filed ${r.id} under ${r.parents.join(', ')} on the second pass: its umbrella was created in this same run`);
   for (const o of report.offLane ?? []) lines.push(`no place for ${o.qid}: its lane is ${o.placeLane ?? 'nowhere'} and the event's is ${o.eventLane ?? 'nowhere'}`);
   for (const o of report.offClass ?? []) lines.push(`no place from ${o.qid}: ${o.why}`);
   for (const o of report.ownPoint ?? []) lines.push(`no place for ${o.qid}: its own point (${o.point.lon}, ${o.point.lat}) and no name a tool can read; a person writes that place`);
