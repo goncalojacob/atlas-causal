@@ -54,8 +54,7 @@
   "place": "ma-ujowice",
   "category": "war",
   "actors": [],
-  "parent": [
-    "war-of-the-austrian-succession",
-    "first-silesian-war"
-  ]
+  "parent": "first-silesian-war",
+  "region": null,
+  "regionNote": null
 }

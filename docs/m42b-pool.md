@@ -7329,100 +7329,345 @@ about an event it also has to file has no way to say it**, and that is worth the
 minute: the alternative this fire took was to assert an interval wide enough to contain
 every dating, which is a claim the null was not.
 
-## Where the run stands, for the fire that picks it up
+## Batch 29 — the War of the Austrian Succession, and Europe's eighteenth century
 
-*25 September, after the twenty-eighth fire and its batch 28.*
+*25 September, the twenty-ninth fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
 | corpus | **1,025 active** |
-| **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **660** |
-| components | 254 |
-| events with no edge at all | **195** |
-| Europe before 1900 | **131 active, 18 main** |
+| **main** | **238** — four lower than the 242 the last fire left, because `origin/m0` carried filings back |
+| **largest connected component** | **662** |
+| components | 250 |
+| events with no edge at all | 190 |
+| Europe before 1900 | 131 active, 17 main |
+| the `americas` lane | 268 active, 55 main |
+| **Europe's eighteenth century** | **24 active, 3 main** — the thinnest cell of this partition that no decision blocks, and the one the last fire named as the batch to take |
+
+**Two merges came first.** `origin/m0` was thirty-one commits ahead and merged clean —
+it already carried this branch's batch 28, so nothing of ours conflicted; `origin/m42`
+was one commit ahead with its own pool note. `validate --index` was clean on the merge
+head before anything was imported, so the index that came over needed no rebuild of its
+own and deviation 1300's lesson did not have to be paid again.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 166 | 31 | 166 | 31 |
+| `americas` | 268 | 55 | 268 | 55 |
+| `asia` | 165 | 64 | 165 | 64 |
+| `europe` | 426 | 88 | **450** | 88 |
+| Europe before 1900 | 131 | 17 | **155** | 17 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| the Americas' 16th | 37 | 3 | 37 | 3 |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 32 | 2 | 32 | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| the Americas' 21st | 37 | 1 | 37 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| **Europe's 18th** | **24** | **3** | **48** | **3** |
+| Europe's 19th | 38 | 9 | 38 | 9 |
+
+South and central America against north, inside the `americas` lane: **209 to 20**, with
+thirty-nine of the lane's events placeless — untouched, because this batch is Europe's.
+
+**The main count is 238 before and 238 after.** Every one of the twenty-four is filed
+under `war-of-the-austrian-succession`, which was already here, already main, and already
+carries its own `P361` from each of them; not one of the twenty-four could raise it.
+
+### The vein, and why it was the one to take
+
+The last fire surveyed this vein and left it: `P361` on `Q32929` returns **53 items with
+an English article**, and this branch held exactly one of them, `war-of-jenkins-ear`. The
+cell it fills held twenty-four records of which twenty-one are the French Revolution — a
+century with one war in it and nothing between 1740 and 1789.
+
+**Every one of the fifty-three is filed the moment it arrives**, because the war itself is
+here as a main event dated 1740–1748, so the whole vein is free of A6's constraint. This
+batch took the twenty-four of the Continental land war — the Silesian and Bohemian
+theatre, Bavaria, and the Low Countries campaign — and left the Italian theatre and the
+naval actions for the next fire.
+
+### What was imported
+
+| record | item | date | filed under | place |
+| --- | --- | --- | --- | --- |
+| `first-silesian-war` | `Q559181` | 1740-12-16–1742-06-11 | `war-of-the-austrian-succession` | `silesia` (`region`) |
+| `battle-of-mollwitz` | `Q663435` | 1741-04-10 | `first-silesian-war` | `ma-ujowice` |
+| `siege-of-brieg` | `Q139565414` | 1741-04-11–1741-05-04 | `war-of-the-austrian-succession` | `brzeg` |
+| `russo-swedish-war-1741-1743` | `Q682482` | 1741–1743 | `war-of-the-austrian-succession` | `finland-q33` (`country`) |
+| `battle-of-chotusitz` | `Q688504` | 1742-05-17 | `first-silesian-war` | `chotusice` |
+| `battle-of-sahay` | `Q4872232` | 1742-05-24 | `war-of-the-austrian-succession` | `zahaji` |
+| `siege-of-prague-1742` | `Q3486003` | 1742-06–1742-12 | `war-of-the-austrian-succession` | `prague` (already here) |
+| `battle-of-dettingen` | `Q402312` | 1743-06-27 | `war-of-the-austrian-succession` | `karlstein-am-main` |
+| `second-silesian-war` | `Q233702` | 1744-08-07–1745-12-25 | `war-of-the-austrian-succession` | `silesia` |
+| `siege-of-prague-1744` | `Q139855572` | 1744-09-06–1744-09-16 | `war-of-the-austrian-succession` | `prague` (already here) |
+| `battle-of-pfaffenhofen` | `Q663502` | 1745-04-15 | `war-of-the-austrian-succession` | `pfaffenhofen-an-der-ilm` |
+| `treaty-of-fussen` | `Q571556` | 1745-04-22 | `war-of-the-austrian-succession` | `fussen` |
+| `siege-of-tournai-1745` | `Q16677044` | 1745-04-25–1745-06-19 | `war-of-the-austrian-succession` | `tournai` |
+| `battle-of-fontenoy` | `Q569953` | 1745-05-11 | `war-of-the-austrian-succession` | `tournai` |
+| `battle-of-melle` | `Q2889310` | 1745-07-09 | `war-of-the-austrian-succession` | `melle-belgium` |
+| `fall-of-ghent` | `Q3485894` | 1745-07-11–1745-07-15 | `war-of-the-austrian-succession` | `ghent` |
+| `battle-of-soor` | `Q695314` | 1745-09-30 | `second-silesian-war` | `hajnice` |
+| `battle-of-hennersdorf` | `Q657406` | 1745-11-23 | `second-silesian-war` | `henrykow-lubanski` |
+| `siege-of-brussels` | `Q1924575` | 1746-01-29–1746-02-22 | `war-of-the-austrian-succession` | `brussels` (already here) |
+| `siege-of-namur-1746` | `Q3485966` | 1746-09-06–1746-09-30 | `war-of-the-austrian-succession` | `namur` |
+| `battle-of-rocoux` | `Q32493` | 1746-10-11 | `war-of-the-austrian-succession` | `rocourt-liege` |
+| `battle-of-lauffeld` | `Q696699` | 1747-07-02 | `war-of-the-austrian-succession` | `riemst` |
+| `siege-of-bergen-op-zoom-1747` | `Q1835856` | 1747-07–1747-09 | `war-of-the-austrian-succession` | `bergen-op-zoom` (already here) |
+| `siege-of-maastricht-1748` | `Q289609` | 1748-04-15–1748-05-07 | `war-of-the-austrian-succession` | `maastricht` (already here) |
+
+**Four are filed under a Silesian war and twenty under the war itself**, and the rule
+this batch used is narrower than "every umbrella whose span and subject fit" in two ways,
+one chosen and one imposed.
+
+The chosen one: **a Silesian war was written only where the record's own cited lead names
+it**. Mollwitz and Chotusitz say "during the First Silesian War", Soor and Hennersdorf
+"during the Second Silesian War"; Brieg, Sahay and the two sieges of Prague fall inside a
+Silesian war's span and are a Silesian war's subject by any reading, and were left under
+the wider war because their own articles do not say so. Wikidata is no help here —
+**all twenty-four items carry exactly one `P361`, and it is `Q32929` for every one of
+them.**
+
+The imposed one is **deviation 1305**: the four were first written with both parents, the
+Silesian war and the war it is a theatre of, which is what A8 reads like on its face.
+`tests/m42-filing.test.mjs` fails that — *no parent of an event is reachable through
+another of its parents* — because `first-silesian-war` is itself filed under
+`war-of-the-austrian-succession`, so naming both says nothing the inner one does not.
+**A8's "every umbrella" means every umbrella that is not already implied by another**,
+and a fire that files a nested vein has to pick the nearest one and only the nearest.
+
+### Places (A9, as A12 corrects it)
+
+**Sixteen place records were created and four reused**, every precision off the item's own
+class and none hard-coded:
+
+| place | item | precision | class it came from |
+| --- | --- | --- | --- |
+| `silesia` | `Q81720` | `region` | `Q82794` geographic region, `Q1620908` historical region |
+| `ma-ujowice` | `Q1914864` | `city` | `Q3558970` village of Poland |
+| `brzeg` | `Q214640` | `city` | `Q2616791` urban municipality of Poland |
+| `chotusice` | `Q2480692` | `city` | `Q5153359` municipality of the Czech Republic |
+| `zahaji` | `Q144251` | `city` | `Q5153359` |
+| `karlstein-am-main` | `Q506076` | `city` | a German municipality class the table already held |
+| `pfaffenhofen-an-der-ilm` | `Q490319` | `city` | the same |
+| `fussen` | `Q262684` | `city` | the same |
+| `hajnice` | `Q1569724` | `city` | `Q5153359` |
+| `henrykow-lubanski` | `Q1006446` | `city` | `Q3558970` |
+| `tournai` | `Q173219` | `city` | `Q493522` municipality of Belgium |
+| `melle-belgium` | `Q696355` | `city` | `Q493522` |
+| `ghent` | `Q1296` | `city` | a city class the table already held |
+| `namur` | `Q134121` | `city` | the same |
+| `rocourt-liege` | `Q3438046` | `city` | `Q486972` human settlement |
+| `riemst` | `Q736097` | `city` | `Q493522` |
+| `prague`, `bergen-op-zoom`, `maastricht`, `finland-q33` | — | — | reused; the tool did the linking, so those events carry no `a9-place` flag |
+
+**The 24 September lane guard was run and all twenty-four passed**: every point derives
+`europe`, which is the lane every one of these events carried, so nothing was cleared and
+no place was written whose lane disagreed with its event's.
+
+**`brussels` was reused by name and point and not by item**, which is `reusablePlace`
+doing exactly what M87 §11 added it for: the event's `P276` is `Q111901161`, the atlas's
+record is `Q239`, and the two are the same city under two Wikidata items. The record was
+left alone and the event points at it.
+
+**Two class lines were added**, both read off the items themselves over the network under
+deviation 1266's rule: `Q2616791` urban municipality of Poland and `Q493522` municipality
+of Belgium, both `place`/`city`. `Q15273785`, the honorary title a Belgian municipality
+may hold, was deliberately **not** added — it is a decoration and not a kind of thing, and
+every item carrying it also carries `Q493522`.
+
+### The seven edges
+
+Every one quotes the sentence that makes the claim, and **none runs from a parent to its
+own child** (A14): no edge touches `war-of-the-austrian-succession`, `first-silesian-war`
+or `second-silesian-war`.
+
+| edge | type | the claim, and where |
+| --- | --- | --- |
+| `battle-of-mollwitz` → `siege-of-brieg` | `enabled` | Siege of Brieg, rev 1372060259: *"When the Prussians defeated the Austrian relief army at the Battle of Mollwitz on 10 April 1741, the garrison of Brzeg (Brieg) was doomed."* |
+| `siege-of-tournai-1745` → `battle-of-fontenoy` | `caused` | Siege of Tournai (1745), rev 1370745959: *"The allied Pragmatic Army's attempt to relieve the siege resulted in the decisive French victory at the Battle of Fontenoy on 11 May."* |
+| `battle-of-fontenoy` → `battle-of-melle` | `precondition-of` | Battle of Melle, rev 1370449497: *"After their defeat at Fontenoy in May, the Duke of Cumberland … was under pressure from the Austrians to defend Brussels. He also wanted to protect the key port of Ghent…"* |
+| `battle-of-melle` → `fall-of-ghent` | `enabled` | Fall of Ghent, rev 1370617755: *"A column of 4,000 to 5,000 … reinforcements sent by the Duke of Cumberland was defeated by the French at the Battle of Melle with only some 1,000 men getting through to Ghent."* |
+| `battle-of-pfaffenhofen` → `treaty-of-fussen` | `caused` | Treaty of Füssen § Background, rev 1332417337: *"After the decisive defeat in the Battle of Pfaffenhofen on 15 April, Maximilian Joseph chose for peace."* |
+| `siege-of-namur-1746` → `battle-of-rocoux` | `precondition-of` | Battle of Rocoux § Battle, rev 1370587617: *"By late September, Namur had fallen and the Allies moved to protect Liège, the next town on the Meuse."* |
+| `battle-of-lauffeld` → `siege-of-maastricht-1748` | `enabled` | Battle of Lauffeld § Aftermath, rev 1370447310: *"Lauffeld was thus another French victory that failed to achieve a decisive result, although it led to the capture of Bergen-op-Zoom in September and Maastricht in May 1748."* |
+
+**Every one is `probable`.** Two of the seven quote a paragraph Wikipedia footnotes to a
+work of its own — Rocoux to Tobias Smollett's *History of England* volume III (1796),
+p. 193, and Lauffeld to Fred Anderson's *Crucible of War* (2000), p. 211 — which is the
+second author M72 asks for. **Anderson is cited as a source record**
+(`anderson-2000-crucible-of-war`); Smollett is named in the edge's own argument and not
+cited, because rule 13 asks a book for an ISBN, DOI or URL and a 1796 work that Wikipedia
+lists without one has none to give (deviation 1303). Neither is grounds for `consensus`
+under A2: one work apiece, one of them two centuries old.
+
+### What was refused, and the one edge that would have changed the number
+
+**The largest connected component is 662 before and 662 after, and that is the whole of
+this batch's report under A5.** Twelve of the twenty-four are in five small components of
+two, two, two, two and four; the other twelve have no edge at all. The corpus grew by
+twenty-four and the component grew by nothing.
+
+**The reason is A14, and this is the clearest case any fire on this branch has had.**
+Batch 28's eighth question said C8 is expensive "exactly where an umbrella is the only
+bridge a vein has to the rest of the corpus". Here the umbrella is not merely the only
+bridge — **it is already on the other side of it.** `war-of-the-austrian-succession` is
+connected to the main component through an edge that already exists,
+`war-of-jenkins-ear--war-of-the-austrian-succession--enabled`, written by an earlier fire
+when Jenkins' Ear was the American record and the war was the European one. So **one edge
+between any of these twenty-four records and their own parent would have joined all of
+them to the 662**, and four of the twenty-four state such a claim in their own leads —
+the Treaty of Füssen "ended the participation of Bavaria on the French side in the War of
+the Austrian Succession"; the Russo-Swedish War was instigated by French diplomacy "which
+sought to divert Russia's attention from supporting its long-standing ally the Habsburg
+monarchy in the War of the Austrian Succession". None was written.
+
+Three other claims were found in the sources and refused for reasons that are not A14's:
+
+- **`battle-of-lauffeld` → `siege-of-bergen-op-zoom-1747`**, stated in the same sentence as
+  the Maastricht edge and with the same footnote, is refused by rule 4: the atlas dates the
+  siege to July 1747 at month precision and the battle to 2 July, and rule 4 compares the
+  two `date` strings, so `"1747-07-02" > "1747-07"` reads as an arrow pointing backwards
+  (deviation 1302). The article's own infobox gives the siege no day either, so A7 offers
+  nothing to correct it with.
+- **`war-of-the-austrian-succession` → `war-of-jenkins-ear`**, which the Jenkins' Ear
+  article states outright in *§ Merger with wider war*, rev 1372109682: *"The scale of this
+  new war dwarfed any of the fighting in the Americas, and drew Britain and Spain's
+  attention back to operations on the European continent. The return of Vernon's fleet in
+  1742 marked the end of major offensive operations in the War of Jenkins' Ear."* It is not
+  a parent-to-child edge — Jenkins' Ear is main and is nobody's child — so A14 does not
+  refuse it. **Rule 4 does**: the war starts in 1740 and Jenkins' Ear in 1739, and an edge
+  cannot run from the later record to the earlier one however plainly the article states
+  the claim. This is deviation 1269's shape for the third time, and the first where both
+  records were already here.
+- **`siege-of-brussels` → `siege-of-namur-1746`**, from *"The French followed up the
+  capture of Brussels by taking other key cities and fortresses in the Austrian Netherlands
+  including Mons and Namur"*, was read under A14 (4)'s own refusal class and dropped:
+  "followed up … by" is a campaign narrated in order, and the sentence makes no claim about
+  why Namur fell.
+
+**Two items the vein offers were refused by the tool and then imported.** `Q559181` and
+`Q233702`, the two Silesian wars, have no `P625` and their `P276` is a region rather than
+a settlement, so the import could reach no lane for them and refused both; naming them in
+the seeds file's `lanes` table fixed it, but only after they were lifted out of
+`runs.import.done` by hand, which is deviation 1270 met for the fourth time. The four
+Belgian and Polish municipalities were refused the same way for a class the table lacked.
+
+### Deviations
+
+**1302. Rule 4 compares `when.date` as strings, so a day-precision cause inside a
+month-precision effect's own month reads as an arrow pointing backwards.**
+`battle-of-lauffeld` is dated `1747-07-02` and `siege-of-bergen-op-zoom-1747` is dated
+`1747-07`, which is the atlas's way of saying "some time in July". Two July is some time
+in July, so the arrow is not violated; but `"1747-07-02" > "1747-07"` is true as a string
+comparison and rule 4 errors. The same shape will bite every time an imported siege carries
+a month and a battle inside it carries a day. A fix would be to compare only the precision
+both records share — which is a code change in `src/validate/rules.js` and two tests, and
+not a records lane's to make without the owner.
+
+**1303. Rule 13 asks a book for an ISBN, DOI or URL, so a second author Wikipedia cites as
+a pre-1900 work cannot be cited at all.** M72 and A5 ask each edge for a second author
+where one exists; the Rocoux paragraph's is Tobias Smollett's *History of England* volume
+III, 1796, which Wikipedia lists with a publisher and no identifier of any kind, and which
+neither Google Books nor the Internet Archive answered for from this sandbox. The source
+record was written, refused by rule 13 and deleted, and the author is named in the edge's
+own argument instead. **A source that a reader cannot open is not a citation**, so the rule
+is right and the loss is real: the edge stays `probable` on Wikipedia alone.
+
+**1304. The two class lines this batch added are both administrative divisions, and the
+table now has five of them.** `Q2616791` urban municipality of Poland and `Q493522`
+municipality of Belgium join `Q3558970` village of Poland, `Q5153359` municipality of the
+Czech Republic and `Q42744322` urban municipality in Germany. Every one of the five says
+the same thing — *a unit of local government in country X is a `city` at this atlas's
+precisions* — and the table will keep growing one country at a time as the vein moves west.
+A fire that tires of it could argue for one row against `Q15284`, municipality, which all
+five are subclasses of; that is an argument about the class table and not a batch's to
+settle.
+
+**1305. A8's second parent is bounded by the nearest-umbrella rule, and the test says so
+before the brief does.** Filing a battle under both the First Silesian War and the War of
+the Austrian Succession is not two umbrellas; it is one umbrella named twice, because the
+first is filed under the second. `tests/m42-filing.test.mjs` holds the whole corpus to
+that and fails on the redundant pair. **Where a vein nests, write the nearest umbrella
+and nothing above it** — which is also what keeps `parentsOf` from drawing one bar inside
+another inside a third.
+
+**1306. An event that gains a place keeps `region` and `regionNote` as `null`, and
+deleting the keys breaks the byte-identical save.** The place pass takes a placeless
+event's lane override off, and the obvious way to do that is to delete the two keys the
+import wrote. `tests/bundle.test.mjs` — *an unedited save of a record in `data/` is byte
+identical* — fails on it, because `applyValues` writes both keys back as `null` in schema
+order and the file no longer matches what the review editor would save. **Set them to
+`null`; do not remove them**, and round-trip the record through
+`valuesFromRecord`/`applyValues` before writing, which is the only way to be sure of the
+key order a record gains a field in.
+
+## Where the run stands, for the fire that picks it up
+
+*25 September, after the twenty-ninth fire and its batch 29.*
+
+| | |
+| --- | --- |
+| corpus | **1,049 active** |
+| **main** | **238** — the count the next batch must not raise |
+| **largest connected component** | **662** |
+| components | 267 |
+| events with no edge at all | **202** |
+| Europe before 1900 | **155 active, 17 main** |
 | the `americas` lane | **268 active, 55 main** |
 | south and central America against north, inside that lane | **209 to 20**, with 39 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 18th (24, 3), Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8) |
-| the cell this fire moved | **the Americas' 16th, 22 → 37**, its main count untouched at three |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
+| the cell this fire moved | **Europe's 18th, 24 → 48**, its main count untouched at three |
 
-**This fire merged `origin/m42`'s batch 54 and then took A10's next cell, the Americas'
-sixteenth, whose second half held nothing at all.** Fifteen records of the Arauco War
-went in and the cell is no longer the thinnest; **the Americas' seventeenth (23, 6) is,
-and it is the one blocked on three decisions since batch 22** — so the next fire either
-answers those or takes Europe's eighteenth (24, 3), which nothing blocks.
+**This fire merged `origin/m0` and `origin/m42` and then took the vein the last fire
+surveyed and left**: the War of the Austrian Succession's Continental land war, twenty-four
+records, sixteen new places, seven edges. Europe's eighteenth century doubled and is no
+longer the thinnest unblocked cell of this partition.
 
-**The Arauco vein is the cheapest thing left on this branch and it is still open.** The
-same umbrella has three children in the Americas' seventeenth and eighteenth centuries
-(`Q85745908`, `Q85783755`, `Q104849178`), and the seventeenth is the cell that trails —
-so three records of a vein this fire has already surveyed would move the cell that most
-needs moving without touching any of its three decisions. They were held back on
-purpose: this batch's fifteen were the sixteenth century's, and A10 asks a fire to take
-one cell at a time.
+**The next fire has two obvious moves and one that needs a decision.**
+
+1. **The rest of this same vein** — nineteen European items are left of the fifty-three,
+   and they are two coherent halves: **the Italian theatre** (`Q2522057` Campo Santo,
+   `Q4872675` Villafranca, `Q2280582` Velletri, `Q2889615` Casteldelfino, `Q2252463`
+   Madonna dell'Olmo, `Q1152443` Bassignano, `Q7510044` and `Q3625481` the two sieges of
+   Genoa, `Q571675` Piacenza, `Q693265` Assietta) and **the war at sea and on the French
+   coast** (`Q4677256`, `Q677929` Toulon, `Q2388607`, `Q695673` and `Q233430` the two Cape
+   Finisterre actions, `Q17509667`, `Q3485928` the Raid on Lorient, `Q105477492` Antibes,
+   and `Q7201333` the planned French invasion of Britain). Either is a batch on its own,
+   neither can raise the main count, and the Italian half would also give the atlas its
+   first eighteenth-century records in Italy. **Four more of the fifty-three are the
+   Americas'** — `Q517578` King George's War, `Q1152894` Louisbourg, `Q21070658` Anguilla,
+   `Q14644681` Saint-Louis-du-Sud — and are this partition's too, in a different cell;
+   **five are M42's** (the two Carnatic items, Madras, Adyar, Cuddalore) and are not to be
+   taken here.
+2. **The Americas' seventeenth (23, 6) is the thinnest unblocked-except-for-decisions cell
+   again**, and it is the one blocked on three decisions since batch 22. The cheapest thing
+   that moves it is still the Arauco War's remainder — `Q85745908` and `Q85783755` in the
+   seventeenth century, `Q104849178` in the eighteenth — which is three records and not a
+   batch, and could ride alongside another cell's batch rather than be one.
 
 ### The veins, and which are open
 
-**Europe's eighteenth century has the largest untouched vein this partition holds, and
-this fire surveyed it rather than take it.** `P361` on `Q32929`, the War of the Austrian
-Succession, returns **53 items with an English article** and this branch holds exactly
-one of them — `war-of-jenkins-ear`. The war itself is already here as a main event
-dated 1740–1748, so **every one of the other fifty-two is filed the moment it arrives
-and not one can raise the main count**. Roughly forty are European (Belgium, Italy,
-Bohemia, Silesia, the Low Countries, the two Cape Finisterre actions); the rest are
-`King George's War` and `Siege of Louisbourg` in Canada, the two Carnatic items in
-India, which are M42's, and two Caribbean actions. The cell holds twenty-four records
-of which twenty-one are the French Revolution, so this vein would roughly triple it.
-**It is the batch a fire with no decision to wait on should take.**
+**The War of the Austrian Succession vein is half spent and the half that is left is
+listed above.** Nineteen European items, four American, five Asian.
 
-**The Arauco vein is half spent and its remainder is thin.** The fifteen this fire took
-were the sixteenth century's. `P361` on `Q431806` leaves exactly three: `Q85745908` and
-`Q85783755` in the seventeenth century and `Q104849178` in the eighteenth. Three records
-is not a batch, and a survey of Chile between 1598 and 1799 (`P17` `Q298`, dated, with an
-English article) returns twelve items of which seven are earthquakes with no umbrella
-over them — **so the Americas' seventeenth cannot be filled from Chile without either
-answering its three standing decisions or writing an umbrella for the earthquakes.**
-
-**The Dutch–Portuguese vein is spent for the Americas.** `P361` on `Q377269` returns 46
-items; of the thirteen that are Brazilian or Atlantic, this branch holds eleven, and of
-the two left one is `Q19019163` (the editorial question about `dutch-brazil-1630-1654`)
-and the other `Q138011120` (the lane question). Only `Q10369402`, the Second Battle of
-Salvador, is free and unblocked, and one record is not a batch.
-
-**The pandemic vein is the largest open vein this partition has and it is barely
-touched.** Wikidata files the whole world's COVID-19 records in a three-level part-of
-tree under `Q81068910`, which this atlas holds as `covid-19-pandemic`. This branch now
-holds the two American continental records and thirteen of the **forty-four** country
-and territory items under them. **Twenty-nine are unimported**, every one with an
-English article and a 2020 start, every one a child of a record now on this branch, and
-therefore not one of them can raise the main count. The Caribbean alone is sixteen of
-the twenty-nine. **But read batch 27's deviation 1298 before taking them**: eight of the
-fifteen taken here got no edge, because the only link most of those leads state is the
-part-of statement `parent` already carries. A fire that wants the other twenty-nine
-should expect to connect perhaps a third of them, and should read each lead for the
-country the first case flew in from, which is the sentence that makes an edge.
-
-**The Colombian conflict vein is spent for the twenty-first century.** `P361` on
-`Q169072` returns 43 items, this branch now holds twenty-two, and of the twenty-one
-left **not one is both post-2000 and carries an English article**: eleven are military
-operations with no article, four are organisations rather than events, and the rest are
-twentieth-century. The twentieth century may still want them.
-
-**The Americas' seventeenth still has its three items and each needs a decision, not a
-call.** `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of
-Brazil (an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the South
-Atlantic campaign (lane unsettled).
-
-**The War of Jenkins' Ear has nine items left** — four North American, four at sea — and
-`Q9172888`, the Battle of Combapata, is still refused for want of a place record for
-`Q3312913`.
-
-**The Peninsular vein is far from spent.** `P361` on `Q152499` returns **218 items**;
-this branch holds seventeen and **201 are unimported**, none of which can raise the main
-count. Three things inside it are still worth more than a batch of imports:
-**`Q3153847`, the French invasions of Portugal** (an umbrella two records already point
-at in their own leads, so importing it gives both an edge A14 permits); **`Q1345027`,
-the Battle of Toulouse**, which `battle-of-tarbes` says it "paved the way for"; and **the
-Lines of Torres Vedras**, which `battle-of-bussaco` retreats to in its own lead.
+**The Peninsular vein is far from spent.** `P361` on `Q152499` returns **218 items**; this
+branch holds seventeen and **201 are unimported**, none of which can raise the main count.
+Three things inside it are still worth more than a batch of imports: **`Q3153847`, the
+French invasions of Portugal** (an umbrella two records already point at in their own
+leads, so importing it gives both an edge A14 permits); **`Q1345027`, the Battle of
+Toulouse**, which `battle-of-tarbes` says it "paved the way for"; and **the Lines of Torres
+Vedras**, which `battle-of-bussaco` retreats to in its own lead.
 
 **The Thirty Years' War vein is still open**: `P361` on `Q2487` returns 171 items, this
 branch holds thirty-four, and **137 are unimported**. `Q1501724`, the Portuguese
@@ -7430,105 +7675,111 @@ Restoration War, is still the likeliest bridge from those islands to the main co
 and the war's four phases (`Q83364344`, `Q3778625`, `Q7655000`, `Q56823171`) are still
 importable as umbrellas at no cost in main events.
 
-**The French Wars of Religion (`Q673175`) are still free to whoever brings their
-children, and still cost a main event.**
+**The pandemic vein is the largest open vein this partition has and it is barely touched.**
+This branch holds the two American continental records and thirteen of the **forty-four**
+country and territory items under `Q81068910`. **Twenty-nine are unimported**, every one
+with an English article and a 2020 start, every one a child of a record now on this branch.
+The Caribbean alone is sixteen of the twenty-nine. **Read batch 27's deviation 1298 before
+taking them**: most of those leads state no link an edge can carry.
 
-**The Haitian vein is done.** Thirteen stubs with no English article are all that is
-left of it, and A12 (1) forbids the placeholder summary they would carry.
+**The Arauco vein has three items left** (`Q85745908`, `Q85783755`, `Q104849178`), and a
+survey of Chile 1598–1799 returns twelve items of which seven are earthquakes with no
+umbrella over them — **so the Americas' seventeenth cannot be filled from Chile without
+either answering its three standing decisions or writing an umbrella for the earthquakes.**
+
+**The Dutch–Portuguese vein is spent for the Americas**; only `Q10369402`, the Second
+Battle of Salvador, is free and unblocked, and one record is not a batch.
+
+**The Colombian conflict vein is spent for the twenty-first century.** The twentieth may
+still want its twenty-one remaining items.
+
+**The Americas' seventeenth still has its three items and each needs a decision, not a
+call**: `Q9651111` Tejucupapo (no English article), `Q19019163` Dutch invasions of Brazil
+(an editorial question about `dutch-brazil-1630-1654`) and `Q138011120` the South Atlantic
+campaign (lane unsettled).
+
+**The French Wars of Religion (`Q673175`) are still free to whoever brings their children,
+and still cost a main event. The Haitian vein is done.**
 
 ### The cheap things this partition keeps not doing
 
 **`--reconcile` has never been run on this branch.** `havana`, `santiago-de-cuba`,
 `porto-calvo` and `cap-haitien` are place records with the right coordinates written by
-hand because the import could not see them, and every place record written before the
-identity fields existed is in the same state. `tools/import/wikidata.mjs --reconcile` is
-additive by `tools/import/identity.mjs`'s rule — fill a gap, never change a value, never
-sign — and closing that gap once would make every later batch cheaper and safer. **Batch
-27 is the third piece of evidence for what it would be worth, and the first positive
-one**: eleven of its seventeen records got a place for nothing at all, because those
-eleven country records already carry the Wikidata item the import matches on. The
-thirty-eight that do not are exactly the ones that keep costing batches a place.
+hand because the import could not see them. **Batch 29 is the fourth piece of evidence and
+the second positive one**: sixteen of its twenty places were created from the items the
+events named, and four were reused, of which one — `brussels` — was reused by name and
+point rather than by item, because the atlas's record is `Q239` and the event's `P276` is
+`Q111901161`. `reusablePlace` caught it; a reconcile pass would have made the catch
+unnecessary.
 
 **A plain-name pass over the hand-written places is the other half of the same thing.**
 Thirty-eight of the atlas's places carry no Wikidata item and most carry one long
-descriptive name, which `reusablePlace` cannot fold to anything an item says. Adding
-each record's plain name beside its descriptive one is additive and would make every
-future import reuse instead of doubling.
+descriptive name.
 
-**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-seven batches.**
-Batch 26 found the first item on this branch whose whole `P710` list this atlas holds
-and had to withhold it anyway, because both actors are CShapes records beginning in 1886
-and the battle is 1802. **The rule needs the clause deviation 1293 names**, and until it
-has it the pass will either write nothing or write something wrong. Batch 27 carried no
-`P710` pass at all: a national epidemic names no participants.
+**`docs/m53-polities.md` §4.1's numerator has not moved in twenty-eight batches**, and
+batch 29 is the clearest statement yet of why: ten of its twenty-four items carry a `P710`,
+and of every polity those ten name this atlas holds exactly one — `Q34`, Sweden, a CShapes
+actor beginning in 1886, against a war of 1741. **The rule needs the clause deviation 1293
+names**, and until it has it the eighteenth century will keep writing `actors: []` however
+many participants its items list.
 
 ### The questions for the owner
 
-Two still block a century and both are unchanged.
+Ten now. The first two still block a century each and both are unchanged.
 
 1. **Does the atlas begin in 1492, or does its first sentence follow the corpus wherever
-   the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min` and two
-   tests hold it there, so nothing on this branch can fill Europe's fifteenth century or
-   anything earlier. A one-line answer unblocks four records already known to import
-   cleanly (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and `italian-war-of-1494-1495`
-   is the fifth record sitting against the wall.
+   the corpus goes?** `WHAT_IT_IS` in `src/intro.js` names `atlas.extent.min` and two tests
+   hold it there, so nothing on this branch can fill Europe's fifteenth century or anything
+   earlier. A one-line answer unblocks four records already known to import cleanly
+   (`Q212976`, `Q12551`, `Q127751`, `Q1552718`), and `italian-war-of-1494-1495` is the fifth
+   record sitting against the wall.
 2. **May a run take a period umbrella from an item whose class is a polity, where the
-   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and it
-   is worth seven main events. `Q377350`, the **Iberian Union**, is a second case of the
-   same shape, and `Q133156` **colony**, which `Q861551` Saint-Domingue carries, a third.
+   article is plainly a period article?** Colonial Brazil (`Q2088324`) is the case and it is
+   worth seven main events. `Q377350` the **Iberian Union** is a second case of the same
+   shape, and `Q133156` **colony**, which `Q861551` Saint-Domingue carries, a third.
+3. **`spanish-conquest-of-iberian-navarre` is one record covering 1512 to 1529, and rule 4
+   therefore refuses every edge the article's own sentences state** (deviation 1269).
+   `siege-of-cadiz`, one record covering 1810 to 1812, is the same question in a second
+   place (deviation 1284).
+4. **Two records are filed under `thirty-years-war` although their own articles call them
+   part of the Eighty Years' War and of the Polish-Swedish War of 1626-1629** —
+   `siege-of-bergen-op-zoom-1622` and `battle-of-trzciana`. Importing `Q164432` and
+   `Q2985977` as umbrellas would settle it and would cost two main events.
+5. **A14's C8 itself, and batch 29 is the strongest case any fire has made for deciding
+   it.** Seven batches have now measured the cost. Every earlier one could say only that a
+   vein stayed an island. **This one can say the bridge was already built and the run was
+   not allowed to cross it**: `war-of-the-austrian-succession` is joined to the 662-strong
+   main component by an edge an earlier fire wrote, `war-of-jenkins-ear--war-of-the-austrian-succession--enabled`,
+   and **one edge between any of batch 29's twenty-four records and their own parent would
+   have joined all twenty-four to it**. Four of the twenty-four state such a claim in their
+   own leads. The corpus grew by twenty-four and the component by nothing.
+6. **`Q3010371`, Bois Caïman, is the ceremony the Haitian Revolution is usually said to
+   begin at, and Wikidata calls it a facility, a slave rebellion and a Haitian Vodou.** One
+   word imports it.
+7. **`Q98379923` is the one class standing between the COVID-19 pandemic in Paraguay and
+   this atlas** (deviation 1296).
+8. **A run that imports an event nobody has dated the end of, and that also has to file it,
+   has no way to say "nobody has dated this"** (deviation 1301): `end: null` is the atlas's
+   own word for it, but two tests forbid a child dated outside its parent, so an open end
+   can only be filed under another open end.
+9. **Rule 4 compares `when.date` as strings** (deviation 1302), so a day-precision cause
+   inside a month-precision effect's own month reads as an arrow pointing backwards, and
+   one of this batch's edges was lost to it. Comparing only the precision both records
+   share is a change to `src/validate/rules.js` and two tests, and not a records lane's to
+   make.
+10. **Rule 4 also refuses an edge between two records that were both already here**, where
+    the cause is a long war that began after the effect did: the Jenkins' Ear article says
+    in so many words that the wider war ended its offensive operations, and the wider war
+    starts in 1740 against Jenkins' Ear's 1739. A14 does not refuse this edge — Jenkins'
+    Ear is main and is nobody's child — **rule 4 does**, and the same shape will refuse
+    every edge between two overlapping wars whichever way round it is written.
 
-A third, from batch 23, is smaller than both: **`spanish-conquest-of-iberian-navarre` is
-one record covering 1512 to 1529, and rule 4 therefore refuses every edge the article's
-own sentences state** (deviation 1269). **Deviation 1284 is the same question in a second
-place**: `siege-of-cadiz` is one record covering 1810 to 1812.
-
-A fourth, from batch 24, is unchanged. **Two records are filed under `thirty-years-war`
-although their own articles call them part of the Eighty Years' War and of the
-Polish-Swedish War of 1626-1629** — `siege-of-bergen-op-zoom-1622` and
-`battle-of-trzciana`. Importing `Q164432` and `Q2985977` as umbrellas would settle it and
-would cost two main events.
-
-A fifth is **A14's C8 itself**. Six batches have now measured its cost. **Batch 27 is the
-first that says the cost is small**: of its eleven unconnected records, only two — the
-two continental ones — are unconnected because of A14, and the other nine are unconnected
-because their articles state nothing causal at all. C8 is expensive on a vein of battles
-inside one war and cheap on a vein of national epidemics inside one pandemic.
-
-A sixth, from batch 26, is the smallest. **`Q3010371`, Bois Caïman, is the ceremony the
-Haitian Revolution is usually said to begin at, and Wikidata calls it a facility, a slave
-rebellion and a Haitian Vodou.** One word from the owner imports it.
-
-A seventh is batch 27's own and is of the same size. **`Q98379923` is the one class
-standing between the COVID-19 pandemic in Paraguay and this atlas**, and no other country
-item of the same tree carries it (deviation 1296).
-
-An eighth is batch 28's and is the largest of the eight, because it is A14's cost stated
-at its worst. **This batch's fifteen records are three islands and seven singletons, and
-one edge would have joined all of them to the atlas** — the Arauco War's own lead says
-the war began as a Mapuche reaction to the Spanish attempt to establish cities, and the
-record that is is `spanish-colonization-of-the-americas`, which A14 forbids because it is
-the war's own parent. **C8 is not expensive in general; it is expensive exactly where an
-umbrella is the only bridge a vein has to the rest of the corpus**, and a conquest vein
-in a lane the atlas is otherwise empty in is that case every time.
-
-A ninth is batch 28's too and is smaller. **A run that imports an event nobody has dated
-the end of, and that also has to file it, has no way to say "nobody has dated this"**:
-`end: null` is the atlas's own word for it, but two tests forbid a child dated outside its
-parent over the whole corpus, so an open end can only be filed under another open end
-(deviation 1301). This fire asserted 1546–1662 for the Arauco War instead, an interval
-wide enough to contain all three of the datings its article gives — which is a claim the
-null was not making.
-
-**The check, on this fire's heads.** Run **1777** on the claim commit `b2191efc` was
-**cancelled** by the merge push that followed it. Run **1778**, on the index commit
-`eee6ef73` that rebuilt `data/index/` in the commit *after* the `origin/m42` merge,
-concluded **success** — which is the last fire's deviation about history shards holding
-the first time it was applied. Run **1779**, on `de2f6809`, the head of this fire,
-concluded **success**. **The batch's three commits went out in one push on purpose**, so
-deviation 1258's cancellation chain did not happen this time and the only run this fire
-lost was the claim's. Locally the fire finished at **2,114 tests passing with nothing
-failed and nothing skipped** — the 1,819 of the pure suites and the 295 of the browser
-suites, the browser set run alone, the two sets never at once. `node tools/validate.mjs
---index` is **clean at 0 errors and 499 warnings** on the pushed index.
-**The next fire should read this head's run before it does anything else**, and if it is
-red, read the failure: the check has been honest since M63 and it is not load.
+**The check, on this fire's heads.** The claim commit and the two merges went out in one
+push; the batch's records, the index and this note went out in a second. Locally the fire
+finished with `node tools/validate.mjs --index` **clean at 0 errors and 520 warnings** on
+the pushed index. **Three pure tests failed on the first attempt and all three were this
+batch's own** — the redundant parent (deviation 1305), the deleted `region` keys
+(deviation 1306) and `docs/m53-polities.md` §4.1's denominator — and all three were fixed
+before anything was pushed. **The next fire should read this head's run before it does
+anything else**, and if it is red, read the failure: the check has been honest since M63
+and it is not load.

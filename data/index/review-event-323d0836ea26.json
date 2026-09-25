@@ -6730,10 +6730,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "war-of-the-austrian-succession",
-        "first-silesian-war"
-      ],
+      "parent": "first-silesian-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -7542,10 +7539,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "war-of-the-austrian-succession",
-        "second-silesian-war"
-      ],
+      "parent": "second-silesian-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -8954,10 +8948,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "war-of-the-austrian-succession",
-        "first-silesian-war"
-      ],
+      "parent": "first-silesian-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -10608,10 +10599,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "war-of-the-austrian-succession",
-        "second-silesian-war"
-      ],
+      "parent": "second-silesian-war",
       "review": {
         "flags": [
           "imported-facts",
