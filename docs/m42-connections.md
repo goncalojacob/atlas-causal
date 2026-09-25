@@ -5593,3 +5593,67 @@ run upgrading the claim.
   *"intended to capture the city of Bani Walid within days"*. A stated intention in
   mid-August about a battle that opens on 8 September is not the article making one
   the condition of the other.
+
+## Batch 62 — the Arab–Israeli conflict's Lebanese fronts, and the singletons that argue only with their own parent
+
+Three edges, all `precondition-of`, all quoted at the revision in the locator.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `taif-agreement` | precondition-of | `operation-accountability` | probable |
+| `operation-accountability` | precondition-of | `operation-grapes-of-wrath` | probable |
+| `gaza-war` | precondition-of | `2024-lebanon-electronic-device-attacks` | probable |
+
+**Both arrivals joined the largest component and the middle edge is a chain of
+three.** `taif-agreement` → `operation-accountability` →
+`operation-grapes-of-wrath` runs 1989 to 1996 through an accord that disarmed
+every Lebanese militia but one, the operation launched against that one, and the
+operation launched when the first one's ceasefire failed. Each of the three held
+records had degree 1 before this batch.
+
+**Six held Vietnam records were read for edges before any of this and gave
+none**, which is what the fire spent its first look on because the stand after
+batch 60 said their articles argue edges nobody has written. They do not. Folding
+each article's `[[wikilink]]` targets against the `wikipedia.en` title of every
+active event, with `<ref>…</ref>` stripped — deviation 1450's second half, turned
+on records already here — every one of `battle-of-hue`, `battle-of-long-tan`,
+`battle-of-ap-bac`, `1963-south-vietnamese-coup`, `battle-of-hamburger-hill` and
+`battle-of-ia-drang` links to **`vietnam-war` and to almost nothing else**, and
+`vietnam-war` is the parent of five of them (`battle-of-hue`'s is
+`tet-offensive`). **C8 bars every one of those edges**, which is the Korean War's
+finding in another vein. What else the six link to is comparison: Hamburger Hill
+names Ia Drang only in *"Prolonged combat, such as at Dak To and Ia Drang, had
+been relatively rare"*; Ap Bac names the Second World War for equipment; the Gulf
+of Tonkin article names the Iraq War for the resolution it is compared to. The
+two prose links that looked promising — Long Tan to `tet-offensive` and the 1963
+coup to `geneva-conference` — are **not in the prose at all**: they are template
+and navbox links, which the plain-text extract does not carry and the wikitext
+fold counted anyway. That is a refinement deviation 1450 needs and is
+**deviation 1453**.
+
+**Four candidates were read and refused, three of them for want of a claim.**
+
+- **`Operation Opera` (`Q725043`, 39 sitelinks)** is the most valuable row this
+  fire refused. Outside its own parent its prose names `iran-iraq-war` and
+  `gulf-war`, and both are refusals: the Iranian strike on the same reactor came
+  *"shortly after the outbreak of the Iran–Iraq War"*, which dates that strike and
+  not this one, and the Gulf War appears as what later destroyed the ruins and in
+  two attributed opinions — Begin's that the war *"vindicated his decision"* and
+  Cheney's that the bombing *"made Desert Storm easier"*. **An attributed opinion
+  that an earlier act was vindicated is not the article stating an edge.**
+- **`Operation Northern Shield` (`Q59417678`)** has the one strong claim this vein
+  offered and the atlas cannot take it: *"After the 2014 Gaza War, which saw
+  numerous tunnels dug by Hamas ... the IDF renewed its search for Hezbollah
+  tunnels in northern Israel, and this time found indications that such tunnels
+  existed."* **There is no 2014 Gaza war record here** — the atlas holds
+  `gaza-war-2008-2009` and `gaza-war` and nothing between them — so the edge has
+  no `from`. A fire that imports that war gets this edge with it.
+- **`2004 Israeli operation in Rafah` (`Q1241158`)** links `second-intifada` in its
+  templates and never in its prose, which is deviation 1453 again.
+- **`1991 Iraqi missile attacks against Israel` (`Q97860712`)** is refused on the
+  class and not on the argument, and the argument was good — its two `P361` are
+  `Q37643` and `Q8669`, both held, which would have been this run's first two-parent
+  filing under A8. Its `P31` is **`Q111034471`, missile strike, which is not in
+  `data/imports/wikidata-seeds.json`**, and an item of a class nobody has decided
+  about is refused and listed rather than guessed at. **Adding that class is a
+  decision somebody should argue with**, so it is left here for them.

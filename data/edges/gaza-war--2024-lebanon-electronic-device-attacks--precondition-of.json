@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "gaza-war--2024-lebanon-electronic-device-attacks--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2024 Lebanon electronic device attacks\", revision 1376199681, lead and § Background"
+    }
+  ],
+  "from": "gaza-war",
+  "to": "2024-lebanon-electronic-device-attacks",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The attacks belong to a front the Gaza war opened, and the article says so at both ends: the background has \"Shortly after the onset of the Gaza war in October 2023, Hezbollah joined the conflict, citing solidarity with Palestinians. This quickly escalated into regular cross-border military exchanges between Hezbollah and Israel, impacting northern Israel, southern Lebanon and the Golan Heights\", and the lead calls the explosions \"Hezbollah's biggest security breach since the start of the Israel–Hezbollah conflict in October 2023\". Probable: Wikipedia alone.",
+  "dispute": null
+}
