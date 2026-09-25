@@ -19,8 +19,7 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361",
-      "a9-place"
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -53,9 +52,9 @@
     "date": "1529-10-24",
     "endDate": "1530-08-10"
   },
-  "place": "florence-q2044",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "war-of-the-league-of-cognac",
   "category": "war",
   "actors": []

@@ -19,8 +19,7 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361",
-      "a9-place"
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -51,9 +50,9 @@
     "end": 1690,
     "date": "1690-10-16"
   },
-  "place": "quebec-city",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "king-william-s-war",
   "category": "war",
   "actors": []

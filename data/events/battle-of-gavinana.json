@@ -19,8 +19,7 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361",
-      "a9-place"
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -51,9 +50,9 @@
     "end": 1530,
     "date": "1530-08-03"
   },
-  "place": "florence-q2044",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "siege-of-florence-1529-1530",
   "category": "war",
   "actors": []
