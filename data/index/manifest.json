@@ -1,0 +1,2309 @@
+{
+  "attributeShards": [
+    {
+      "file": "index/attributes-1100-1199-9ec184fe909d.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "to": 1199
+    },
+    {
+      "file": "index/attributes-1200-1299-9ec184fe909d.json",
+      "from": 1200,
+      "key": "1200-1299",
+      "to": 1299
+    },
+    {
+      "file": "index/attributes-1300-1399-9ec184fe909d.json",
+      "from": 1300,
+      "key": "1300-1399",
+      "to": 1399
+    },
+    {
+      "file": "index/attributes-1400-1499-a705ac08bfb0.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "to": 1499
+    },
+    {
+      "file": "index/attributes-1500-1599-379647a2e1da.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "to": 1599
+    },
+    {
+      "file": "index/attributes-1600-1699-3f15d0385d55.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "to": 1699
+    },
+    {
+      "file": "index/attributes-1700-1799-2ced4a86b3e1.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "to": 1799
+    },
+    {
+      "file": "index/attributes-1800-1899-b7b0a611ed76.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "to": 1899
+    },
+    {
+      "file": "index/attributes-1900-1999-aa8871761670.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "to": 1999
+    },
+    {
+      "file": "index/attributes-2000-2099-7f0b62f148cf.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "to": 2099
+    },
+    {
+      "file": "index/attributes-null-657638b15a16.json",
+      "from": null,
+      "key": "null",
+      "to": null
+    },
+    {
+      "file": "index/attributes-place-da9154c9fcb2.json",
+      "from": null,
+      "key": "place",
+      "to": null
+    }
+  ],
+  "base": {
+    "grid": {
+      "columns": 6,
+      "lat": 45,
+      "lon": 60,
+      "rows": 4
+    },
+    "layers": [
+      {
+        "bands": [
+          0,
+          200,
+          500,
+          1000,
+          2000
+        ],
+        "cells": [
+          {
+            "bytes": 54837,
+            "file": "geo/base/relief/x0y0.json",
+            "key": "x0y0"
+          },
+          {
+            "bytes": 228,
+            "file": "geo/base/relief/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 26231,
+            "file": "geo/base/relief/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 333643,
+            "file": "geo/base/relief/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 172816,
+            "file": "geo/base/relief/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 144970,
+            "file": "geo/base/relief/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 384716,
+            "file": "geo/base/relief/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 468492,
+            "file": "geo/base/relief/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 73870,
+            "file": "geo/base/relief/x2y0.json",
+            "key": "x2y0"
+          },
+          {
+            "bytes": 117551,
+            "file": "geo/base/relief/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 107144,
+            "file": "geo/base/relief/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 248960,
+            "file": "geo/base/relief/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 44399,
+            "file": "geo/base/relief/x3y0.json",
+            "key": "x3y0"
+          },
+          {
+            "bytes": 161173,
+            "file": "geo/base/relief/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 512551,
+            "file": "geo/base/relief/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 273063,
+            "file": "geo/base/relief/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 54026,
+            "file": "geo/base/relief/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 57627,
+            "file": "geo/base/relief/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 439897,
+            "file": "geo/base/relief/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 328866,
+            "file": "geo/base/relief/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 91150,
+            "file": "geo/base/relief/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 234674,
+            "file": "geo/base/relief/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 132834,
+            "file": "geo/base/relief/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 364244,
+            "file": "geo/base/relief/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "relief",
+        "minZoom": 1,
+        "world": "geo/base/relief-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 20410,
+            "file": "geo/base/coast/x0y0.json",
+            "key": "x0y0"
+          },
+          {
+            "bytes": 22005,
+            "file": "geo/base/coast/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 15655,
+            "file": "geo/base/coast/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 175106,
+            "file": "geo/base/coast/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 126395,
+            "file": "geo/base/coast/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 28230,
+            "file": "geo/base/coast/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 213882,
+            "file": "geo/base/coast/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 279002,
+            "file": "geo/base/coast/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 32456,
+            "file": "geo/base/coast/x2y0.json",
+            "key": "x2y0"
+          },
+          {
+            "bytes": 33841,
+            "file": "geo/base/coast/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 38208,
+            "file": "geo/base/coast/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 187765,
+            "file": "geo/base/coast/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 13244,
+            "file": "geo/base/coast/x3y0.json",
+            "key": "x3y0"
+          },
+          {
+            "bytes": 35228,
+            "file": "geo/base/coast/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 166186,
+            "file": "geo/base/coast/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 263978,
+            "file": "geo/base/coast/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 17597,
+            "file": "geo/base/coast/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 48112,
+            "file": "geo/base/coast/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 170254,
+            "file": "geo/base/coast/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 49397,
+            "file": "geo/base/coast/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 34852,
+            "file": "geo/base/coast/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 212374,
+            "file": "geo/base/coast/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 204464,
+            "file": "geo/base/coast/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 61243,
+            "file": "geo/base/coast/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "line",
+        "id": "coast",
+        "minZoom": 1,
+        "world": null
+      },
+      {
+        "cells": [
+          {
+            "bytes": 8249,
+            "file": "geo/base/rivers/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 44105,
+            "file": "geo/base/rivers/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 3266,
+            "file": "geo/base/rivers/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 64414,
+            "file": "geo/base/rivers/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 142078,
+            "file": "geo/base/rivers/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 85935,
+            "file": "geo/base/rivers/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 68967,
+            "file": "geo/base/rivers/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 40484,
+            "file": "geo/base/rivers/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 4109,
+            "file": "geo/base/rivers/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 82304,
+            "file": "geo/base/rivers/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 98427,
+            "file": "geo/base/rivers/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 125291,
+            "file": "geo/base/rivers/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 5896,
+            "file": "geo/base/rivers/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 178920,
+            "file": "geo/base/rivers/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 108425,
+            "file": "geo/base/rivers/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 3350,
+            "file": "geo/base/rivers/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 41091,
+            "file": "geo/base/rivers/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 12176,
+            "file": "geo/base/rivers/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 64586,
+            "file": "geo/base/rivers/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "line",
+        "id": "rivers",
+        "minZoom": 1,
+        "world": "geo/base/rivers-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 1911,
+            "file": "geo/base/lakes/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 25025,
+            "file": "geo/base/lakes/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 3855,
+            "file": "geo/base/lakes/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 5954,
+            "file": "geo/base/lakes/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 51226,
+            "file": "geo/base/lakes/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 183888,
+            "file": "geo/base/lakes/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 22609,
+            "file": "geo/base/lakes/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 7753,
+            "file": "geo/base/lakes/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 3400,
+            "file": "geo/base/lakes/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 19208,
+            "file": "geo/base/lakes/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 28206,
+            "file": "geo/base/lakes/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 97910,
+            "file": "geo/base/lakes/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 248,
+            "file": "geo/base/lakes/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 1609,
+            "file": "geo/base/lakes/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 44713,
+            "file": "geo/base/lakes/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 58310,
+            "file": "geo/base/lakes/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 2245,
+            "file": "geo/base/lakes/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 17199,
+            "file": "geo/base/lakes/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 3072,
+            "file": "geo/base/lakes/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 10617,
+            "file": "geo/base/lakes/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "lakes",
+        "minZoom": 1,
+        "world": "geo/base/lakes-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 28098,
+            "file": "geo/base/physical/x0y0.json",
+            "key": "x0y0"
+          },
+          {
+            "bytes": 6512,
+            "file": "geo/base/physical/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 33320,
+            "file": "geo/base/physical/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 52179,
+            "file": "geo/base/physical/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 28929,
+            "file": "geo/base/physical/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 64970,
+            "file": "geo/base/physical/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 45323,
+            "file": "geo/base/physical/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 41200,
+            "file": "geo/base/physical/x2y0.json",
+            "key": "x2y0"
+          },
+          {
+            "bytes": 19634,
+            "file": "geo/base/physical/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 37731,
+            "file": "geo/base/physical/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 37130,
+            "file": "geo/base/physical/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 16509,
+            "file": "geo/base/physical/x3y0.json",
+            "key": "x3y0"
+          },
+          {
+            "bytes": 16008,
+            "file": "geo/base/physical/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 67714,
+            "file": "geo/base/physical/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 50377,
+            "file": "geo/base/physical/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 12089,
+            "file": "geo/base/physical/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 1725,
+            "file": "geo/base/physical/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 54866,
+            "file": "geo/base/physical/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 38568,
+            "file": "geo/base/physical/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 16586,
+            "file": "geo/base/physical/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 15858,
+            "file": "geo/base/physical/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 6732,
+            "file": "geo/base/physical/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 25175,
+            "file": "geo/base/physical/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "polygon",
+        "id": "physical",
+        "minZoom": 1,
+        "world": "geo/base/physical-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 411,
+            "file": "geo/base/mountains/x0y0.json",
+            "key": "x0y0"
+          },
+          {
+            "bytes": 1009,
+            "file": "geo/base/mountains/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 498,
+            "file": "geo/base/mountains/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 3383,
+            "file": "geo/base/mountains/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 1124,
+            "file": "geo/base/mountains/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 2583,
+            "file": "geo/base/mountains/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 9699,
+            "file": "geo/base/mountains/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 2192,
+            "file": "geo/base/mountains/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 301,
+            "file": "geo/base/mountains/x2y0.json",
+            "key": "x2y0"
+          },
+          {
+            "bytes": 1399,
+            "file": "geo/base/mountains/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 2908,
+            "file": "geo/base/mountains/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 1632,
+            "file": "geo/base/mountains/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 535,
+            "file": "geo/base/mountains/x3y0.json",
+            "key": "x3y0"
+          },
+          {
+            "bytes": 3768,
+            "file": "geo/base/mountains/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 12839,
+            "file": "geo/base/mountains/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 3882,
+            "file": "geo/base/mountains/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 477,
+            "file": "geo/base/mountains/x4y0.json",
+            "key": "x4y0"
+          },
+          {
+            "bytes": 1457,
+            "file": "geo/base/mountains/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 11352,
+            "file": "geo/base/mountains/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 2173,
+            "file": "geo/base/mountains/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 777,
+            "file": "geo/base/mountains/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 4264,
+            "file": "geo/base/mountains/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 3249,
+            "file": "geo/base/mountains/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 2392,
+            "file": "geo/base/mountains/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "point",
+        "id": "mountains",
+        "minZoom": 1,
+        "world": "geo/base/mountains-world.json"
+      },
+      {
+        "cells": [
+          {
+            "bytes": 115,
+            "file": "geo/base/cities/x0y1.json",
+            "key": "x0y1"
+          },
+          {
+            "bytes": 2249,
+            "file": "geo/base/cities/x0y2.json",
+            "key": "x0y2"
+          },
+          {
+            "bytes": 1229,
+            "file": "geo/base/cities/x0y3.json",
+            "key": "x0y3"
+          },
+          {
+            "bytes": 237,
+            "file": "geo/base/cities/x1y0.json",
+            "key": "x1y0"
+          },
+          {
+            "bytes": 10207,
+            "file": "geo/base/cities/x1y1.json",
+            "key": "x1y1"
+          },
+          {
+            "bytes": 54429,
+            "file": "geo/base/cities/x1y2.json",
+            "key": "x1y2"
+          },
+          {
+            "bytes": 1955,
+            "file": "geo/base/cities/x1y3.json",
+            "key": "x1y3"
+          },
+          {
+            "bytes": 17606,
+            "file": "geo/base/cities/x2y1.json",
+            "key": "x2y1"
+          },
+          {
+            "bytes": 13622,
+            "file": "geo/base/cities/x2y2.json",
+            "key": "x2y2"
+          },
+          {
+            "bytes": 4859,
+            "file": "geo/base/cities/x2y3.json",
+            "key": "x2y3"
+          },
+          {
+            "bytes": 15302,
+            "file": "geo/base/cities/x3y1.json",
+            "key": "x3y1"
+          },
+          {
+            "bytes": 62203,
+            "file": "geo/base/cities/x3y2.json",
+            "key": "x3y2"
+          },
+          {
+            "bytes": 41381,
+            "file": "geo/base/cities/x3y3.json",
+            "key": "x3y3"
+          },
+          {
+            "bytes": 5827,
+            "file": "geo/base/cities/x4y1.json",
+            "key": "x4y1"
+          },
+          {
+            "bytes": 79532,
+            "file": "geo/base/cities/x4y2.json",
+            "key": "x4y2"
+          },
+          {
+            "bytes": 5922,
+            "file": "geo/base/cities/x4y3.json",
+            "key": "x4y3"
+          },
+          {
+            "bytes": 115,
+            "file": "geo/base/cities/x5y0.json",
+            "key": "x5y0"
+          },
+          {
+            "bytes": 3758,
+            "file": "geo/base/cities/x5y1.json",
+            "key": "x5y1"
+          },
+          {
+            "bytes": 24171,
+            "file": "geo/base/cities/x5y2.json",
+            "key": "x5y2"
+          },
+          {
+            "bytes": 3747,
+            "file": "geo/base/cities/x5y3.json",
+            "key": "x5y3"
+          }
+        ],
+        "geometry": "point",
+        "id": "cities",
+        "minZoom": 1,
+        "world": "geo/base/cities-world.json"
+      }
+    ],
+    "source": "natural-earth-10m",
+    "version": "v5.1.2"
+  },
+  "categories": [
+    {
+      "count": 1,
+      "id": "culture"
+    },
+    {
+      "count": 7,
+      "id": "death"
+    },
+    {
+      "count": 19,
+      "id": "disaster"
+    },
+    {
+      "count": 57,
+      "id": "election"
+    },
+    {
+      "count": 7,
+      "id": "founding"
+    },
+    {
+      "count": 4,
+      "id": "law"
+    },
+    {
+      "count": 9,
+      "id": "other"
+    },
+    {
+      "count": 33,
+      "id": "revolution"
+    },
+    {
+      "count": 51,
+      "id": "treaty"
+    },
+    {
+      "count": 431,
+      "id": "war"
+    }
+  ],
+  "categoriesAllowed": [
+    {
+      "description": "A war, a campaign, a battle or a siege: organised armed force between polities.",
+      "id": "war",
+      "label": "War"
+    },
+    {
+      "description": "An agreement between polities: a treaty, a pact, an accession, a concordat.",
+      "id": "treaty",
+      "label": "Treaty"
+    },
+    {
+      "description": "A vote that fills an office or a chamber, and the leadership contests that decide who stands in one.",
+      "id": "election",
+      "label": "Election"
+    },
+    {
+      "description": "A seizure or a loss of power outside the ordinary rules: a revolution, a coup, an uprising, a mutiny.",
+      "id": "revolution",
+      "label": "Revolution"
+    },
+    {
+      "description": "A constitution, a statute, a decree or a court ruling: the state changing what the rules are.",
+      "id": "law",
+      "label": "Law"
+    },
+    {
+      "description": "Something coming into existence or ending: a state, an institution, a party, a company.",
+      "id": "founding",
+      "label": "Founding"
+    },
+    {
+      "description": "Harm from something nobody chose: an earthquake, a flood, a fire, an epidemic, a wreck.",
+      "id": "disaster",
+      "label": "Disaster"
+    },
+    {
+      "description": "Money and what it does: a crisis, a bailout, a nationalisation, a currency, a trade agreement.",
+      "id": "economy",
+      "label": "Economy"
+    },
+    {
+      "description": "A work, a movement, a building, an exhibition, a broadcast, a sporting occasion.",
+      "id": "culture",
+      "label": "Culture"
+    },
+    {
+      "description": "A discovery, an expedition, a technology or a piece of engineering.",
+      "id": "science",
+      "label": "Science"
+    },
+    {
+      "description": "A person's death, whether by illness, accident, execution or assassination.",
+      "id": "death",
+      "label": "Death"
+    },
+    {
+      "description": "None of the above. A category the atlas has too few of to name yet, never a category nobody looked for.",
+      "id": "other",
+      "label": "Other"
+    }
+  ],
+  "counts": {
+    "actors": 2699,
+    "edges": 959,
+    "events": 1263,
+    "narratives": 2,
+    "offices": 11,
+    "places": 586,
+    "presences": 6691,
+    "regions": 5,
+    "relations": 138,
+    "sources": 80,
+    "tenures": 83
+  },
+  "explanationShards": [
+    {
+      "file": "index/explanations-1400-1499-0bb97a67dbb4.json",
+      "from": 1400,
+      "to": 1499
+    },
+    {
+      "file": "index/explanations-1500-1599-0e90120b2387.json",
+      "from": 1500,
+      "to": 1599
+    },
+    {
+      "file": "index/explanations-1600-1699-984411c8a1a2.json",
+      "from": 1600,
+      "to": 1699
+    },
+    {
+      "file": "index/explanations-1700-1799-b6344963d618.json",
+      "from": 1700,
+      "to": 1799
+    },
+    {
+      "file": "index/explanations-1800-1899-429ad94d811b.json",
+      "from": 1800,
+      "to": 1899
+    },
+    {
+      "file": "index/explanations-1900-1999-31ae0ef0605c.json",
+      "from": 1900,
+      "to": 1999
+    },
+    {
+      "file": "index/explanations-2000-2099-a5a4c2fefa65.json",
+      "from": 2000,
+      "to": 2099
+    }
+  ],
+  "files": {
+    "citers": "index/citers-f7040120b56c",
+    "core": "index/core-a9f4f728a1ce.json",
+    "grounds": "index/grounds-15c44a401160.json",
+    "presences": "index/presences-8ed0e0b86ad1.json",
+    "review": "index/review-a63e66b974ce.json",
+    "search": "index/search-285597cc780d.json",
+    "sources": "index/sources-2050195811eb.json",
+    "territories": "index/territories-5f38f02a8b1f.json"
+  },
+  "historyShards": [
+    {
+      "file": "index/history-event-1400-1499-b6b429183677.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "event",
+      "to": 1499
+    },
+    {
+      "file": "index/history-event-1500-1599-9cbfeffa708b.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "event",
+      "to": 1599
+    },
+    {
+      "file": "index/history-event-1600-1699-666162479dc0.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "kind": "event",
+      "to": 1699
+    },
+    {
+      "file": "index/history-event-1700-1799-7344f47f7806.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "kind": "event",
+      "to": 1799
+    },
+    {
+      "file": "index/history-event-1800-1899-8b344620fea8.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "event",
+      "to": 1899
+    },
+    {
+      "file": "index/history-event-1900-1999-9117f54b3e71.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "event",
+      "to": 1999
+    },
+    {
+      "file": "index/history-event-2000-2099-9d7882f443dc.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "kind": "event",
+      "to": 2099
+    },
+    {
+      "file": "index/history-edge-1400-1499-2497e77a9275.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "edge",
+      "to": 1499
+    },
+    {
+      "file": "index/history-edge-1500-1599-b162c7cadd1f.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "edge",
+      "to": 1599
+    },
+    {
+      "file": "index/history-edge-1600-1699-5ba874ef9fad.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "kind": "edge",
+      "to": 1699
+    },
+    {
+      "file": "index/history-edge-1700-1799-cca7eaea9332.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "kind": "edge",
+      "to": 1799
+    },
+    {
+      "file": "index/history-edge-1800-1899-dc9be0deec2f.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "edge",
+      "to": 1899
+    },
+    {
+      "file": "index/history-edge-1900-1999-bfc8e02f91ec.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "edge",
+      "to": 1999
+    },
+    {
+      "file": "index/history-edge-2000-2099-9045b60d0af2.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "kind": "edge",
+      "to": 2099
+    },
+    {
+      "file": "index/history-source-source-1a02c533bd2d.json",
+      "from": null,
+      "key": "source",
+      "kind": "source",
+      "to": null
+    },
+    {
+      "file": "index/history-actor-1100-1199-03e999246102.json",
+      "from": 1100,
+      "key": "1100-1199",
+      "kind": "actor",
+      "to": 1199
+    },
+    {
+      "file": "index/history-actor-1400-1499-6304d25d06a2.json",
+      "from": 1400,
+      "key": "1400-1499",
+      "kind": "actor",
+      "to": 1499
+    },
+    {
+      "file": "index/history-actor-1500-1599-fd8c70e74c37.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "actor",
+      "to": 1599
+    },
+    {
+      "file": "index/history-actor-1600-1699-69709a67dc8e.json",
+      "from": 1600,
+      "key": "1600-1699",
+      "kind": "actor",
+      "to": 1699
+    },
+    {
+      "file": "index/history-actor-1700-1799-a84a78cc3333.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "kind": "actor",
+      "to": 1799
+    },
+    {
+      "file": "index/history-actor-1800-1899-1fe861038afa.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "actor",
+      "to": 1899
+    },
+    {
+      "file": "index/history-actor-1900-1999-3c50a1bc8c4c.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "actor",
+      "to": 1999
+    },
+    {
+      "file": "index/history-actor-2000-2099-8a4eb003497d.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "kind": "actor",
+      "to": 2099
+    },
+    {
+      "file": "index/history-place-place-869c6366afcf.json",
+      "from": null,
+      "key": "place",
+      "kind": "place",
+      "to": null
+    },
+    {
+      "file": "index/history-relation-1700-1799-09829ef2567d.json",
+      "from": 1700,
+      "key": "1700-1799",
+      "kind": "relation",
+      "to": 1799
+    },
+    {
+      "file": "index/history-relation-1800-1899-58123e1963ad.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "relation",
+      "to": 1899
+    },
+    {
+      "file": "index/history-relation-1900-1999-db8e6424eed5.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "relation",
+      "to": 1999
+    },
+    {
+      "file": "index/history-relation-2000-2099-b3aa313ffc00.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "kind": "relation",
+      "to": 2099
+    },
+    {
+      "file": "index/history-office-null-aeaf6dfd1884.json",
+      "from": null,
+      "key": "null",
+      "kind": "office",
+      "to": null
+    },
+    {
+      "file": "index/history-tenure-1800-1899-7129c83e8031.json",
+      "from": 1800,
+      "key": "1800-1899",
+      "kind": "tenure",
+      "to": 1899
+    },
+    {
+      "file": "index/history-tenure-1900-1999-ae005578a139.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "tenure",
+      "to": 1999
+    },
+    {
+      "file": "index/history-tenure-2000-2099-a6a2ac82d3ef.json",
+      "from": 2000,
+      "key": "2000-2099",
+      "kind": "tenure",
+      "to": 2099
+    },
+    {
+      "file": "index/history-narrative-1500-1599-cab9f24349ed.json",
+      "from": 1500,
+      "key": "1500-1599",
+      "kind": "narrative",
+      "to": 1599
+    },
+    {
+      "file": "index/history-narrative-1900-1999-5d46152b952c.json",
+      "from": 1900,
+      "key": "1900-1999",
+      "kind": "narrative",
+      "to": 1999
+    }
+  ],
+  "land": [
+    {
+      "epoch": "present",
+      "file": "geo/land-present.json",
+      "from": null,
+      "to": null
+    }
+  ],
+  "licenses": {
+    "data/actors/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
+      ]
+    },
+    "data/edges/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/events/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/geo/base/": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/geo/land-present.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/geo/palette.json": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
+      ]
+    },
+    "data/geo/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
+        }
+      ],
+      "licenses": [
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
+      ]
+    },
+    "data/geo/regions.json": {
+      "attribution": [
+        {
+          "license": "PD",
+          "name": "Natural Earth",
+          "source": "https://www.naturalearthdata.com/about/terms-of-use/"
+        }
+      ],
+      "licenses": [
+        "PD"
+      ]
+    },
+    "data/index/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
+      ]
+    },
+    "data/narratives/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/offices/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/places/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/presences/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        },
+        {
+          "license": "GPL-3.0-only",
+          "name": "Historical Basemaps — André Ourednik and contributors",
+          "source": "https://github.com/aourednik/historical-basemaps"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0",
+        "GPL-3.0-only"
+      ]
+    },
+    "data/relations/": {
+      "attribution": [
+        {
+          "license": "CC-BY-NC-SA-4.0",
+          "name": "CShapes 2.0 — Schvitz, Girardin, Rüegger, Weidmann, Cederman and Gleditsch",
+          "source": "https://doi.org/10.1177/00220027211013563"
+        }
+      ],
+      "licenses": [
+        "CC-BY-SA-4.0",
+        "CC-BY-NC-SA-4.0"
+      ]
+    },
+    "data/sources/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    },
+    "data/tenures/": {
+      "attribution": [],
+      "licenses": [
+        "CC-BY-SA-4.0"
+      ]
+    }
+  },
+  "links": {
+    "active": 949,
+    "explained": 949
+  },
+  "officesByEvent": {
+    "1908-portuguese-legislative-election": [
+      "joao-franco-liberal-regenerator-party-1901",
+      "joao-franco-prime-minister-1906",
+      "manuel-ii-monarch-1908"
+    ],
+    "1911-portuguese-presidential-election": [
+      "manuel-de-arriaga-president-1911"
+    ],
+    "1915-portuguese-legislative-election": [
+      "afonso-costa-prime-minister-1915"
+    ],
+    "1923-portuguese-presidential-election": [
+      "teixeira-gomes-president-1923"
+    ],
+    "1928-portuguese-presidential-election": [
+      "oscar-carmona-president-1926",
+      "oscar-carmona-prime-minister-1926"
+    ],
+    "1945-portuguese-legislative-election": [
+      "salazar-prime-minister-1932"
+    ],
+    "1949-portuguese-presidential-election": [
+      "oscar-carmona-president-1926"
+    ],
+    "1951-portuguese-presidential-election": [
+      "craveiro-lopes-president-1951"
+    ],
+    "1965-portuguese-presidential-election": [
+      "americo-tomas-president-1958"
+    ],
+    "1969-portuguese-legislative-election": [
+      "americo-tomas-president-1958",
+      "marcelo-caetano-prime-minister-1968"
+    ],
+    "1972-portuguese-presidential-election": [
+      "americo-tomas-president-1958"
+    ],
+    "1973-portuguese-legislative-election": [
+      "americo-tomas-president-1958",
+      "marcelo-caetano-prime-minister-1968"
+    ],
+    "1980-portuguese-presidential-election": [
+      "ramalho-eanes-president-1976"
+    ],
+    "1983-portuguese-legislative-election": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
+    ],
+    "1985-portuguese-legislative-election": [
+      "cavaco-silva-prime-minister-1985",
+      "cavaco-silva-psd-1985"
+    ],
+    "1991-portuguese-legislative-election": [
+      "cavaco-silva-prime-minister-1985",
+      "cavaco-silva-psd-1985"
+    ],
+    "1996-portuguese-presidential-election": [
+      "jorge-sampaio-president-1996"
+    ],
+    "2006-portuguese-presidential-election": [
+      "cavaco-silva-president-2006"
+    ],
+    "2011-portuguese-legislative-election": [
+      "pedro-passos-coelho-prime-minister-2011",
+      "pedro-passos-coelho-psd-2010"
+    ],
+    "2014-portuguese-socialist-party-prime-ministerial-primary": [
+      "antonio-costa-partido-socialista-2014"
+    ],
+    "2022-portuguese-social-democratic-party-leadership-election-q111182017": [
+      "luis-montenegro-psd-2022"
+    ],
+    "alvor-agreement-1975": [
+      "mario-soares-partido-socialista-1973"
+    ],
+    "angola-war-begins-1961": [
+      "salazar-prime-minister-1932"
+    ],
+    "azores-agreement-1943": [
+      "salazar-prime-minister-1932"
+    ],
+    "botelho-moniz-coup-attempt-1961": [
+      "salazar-prime-minister-1932"
+    ],
+    "cabral-assassinated-1973": [
+      "amilcar-cabral-paigc-1956"
+    ],
+    "caetano-succeeds-salazar-1968": [
+      "marcelo-caetano-prime-minister-1968",
+      "salazar-prime-minister-1932"
+    ],
+    "carnation-revolution-1974": [
+      "antonio-de-spinola-president-1974",
+      "marcelo-caetano-prime-minister-1968"
+    ],
+    "cavaco-absolute-majority-1987": [
+      "cavaco-silva-prime-minister-1985",
+      "cavaco-silva-psd-1985",
+      "mario-soares-president-1986"
+    ],
+    "constituent-assembly-election-1975": [
+      "alvaro-cunhal-pcp-1961",
+      "mario-soares-partido-socialista-1973"
+    ],
+    "constitution-1933": [
+      "salazar-prime-minister-1932"
+    ],
+    "constitution-1976": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "constitutional-revision-1959": [
+      "salazar-prime-minister-1932"
+    ],
+    "constitutional-revision-1982": [
+      "ramalho-eanes-president-1976"
+    ],
+    "costa-resigns-2023": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "coup-28-may-1926": [
+      "gomes-da-costa-president-1926",
+      "gomes-da-costa-prime-minister-1926"
+    ],
+    "covid-state-of-emergency-2020": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "delgado-candidacy-1958": [
+      "salazar-prime-minister-1932"
+    ],
+    "ditadura-nacional-1926-1933": [
+      "gomes-da-costa-president-1926",
+      "gomes-da-costa-prime-minister-1926",
+      "oscar-carmona-president-1926",
+      "oscar-carmona-prime-minister-1926"
+    ],
+    "eanes-elected-1976": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976",
+      "ramalho-eanes-president-1976"
+    ],
+    "eec-accession-1986": [
+      "cavaco-silva-prime-minister-1985",
+      "cavaco-silva-psd-1985",
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-president-1986"
+    ],
+    "eec-application-1977": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "estado-novo-1933-1974": [
+      "oscar-carmona-president-1926",
+      "salazar-prime-minister-1932"
+    ],
+    "exposicao-mundo-portugues-1940": [
+      "salazar-prime-minister-1932"
+    ],
+    "fiftieth-anniversary-25-april-2024": [
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "geringonca-2015": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "cavaco-silva-president-2006"
+    ],
+    "germany-declares-war-1916": [
+      "afonso-costa-prime-minister-1915"
+    ],
+    "government-falls-2025": [
+      "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022"
+    ],
+    "guinea-war-begins-1963": [
+      "amilcar-cabral-paigc-1956"
+    ],
+    "iberian-pact": [
+      "salazar-prime-minister-1932"
+    ],
+    "imf-agreement-1978": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "imf-agreement-1983": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
+    ],
+    "legiao-portuguesa-founded-1936": [
+      "salazar-prime-minister-1932"
+    ],
+    "legislative-election-1976": [
+      "alvaro-cunhal-pcp-1961",
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "legislative-election-2015": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "pedro-passos-coelho-prime-minister-2011",
+      "pedro-passos-coelho-psd-2010"
+    ],
+    "legislative-election-2019": [
+      "andre-ventura-chega-2019",
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
+    ],
+    "legislative-election-2022": [
+      "andre-ventura-chega-2019",
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
+    ],
+    "legislative-election-2024": [
+      "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022"
+    ],
+    "legislative-election-2025": [
+      "andre-ventura-chega-2019",
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022"
+    ],
+    "lisbon-regicide": [
+      "carlos-i-monarch-1889",
+      "joao-franco-liberal-regenerator-party-1901",
+      "joao-franco-prime-minister-1906",
+      "manuel-ii-monarch-1908"
+    ],
+    "marcelo-elected-president-2016": [
+      "cavaco-silva-president-2006",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "marcelo-reelected-2021": [
+      "andre-ventura-chega-2019",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "montenegro-government-2024": [
+      "luis-montenegro-prime-minister-2024",
+      "luis-montenegro-psd-2022",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "mozambique-war-begins-1964": [
+      "eduardo-mondlane-frelimo-1962"
+    ],
+    "national-syndicalists-banned-1934": [
+      "salazar-prime-minister-1932"
+    ],
+    "nationalisations-1975": [
+      "vasco-goncalves-prime-minister-1974"
+    ],
+    "nato-founding-1949": [
+      "salazar-prime-minister-1932"
+    ],
+    "october-fires-2017": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
+    ],
+    "pedrogao-grande-fires-2017": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015"
+    ],
+    "pimenta-de-castro-government-1915": [
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915"
+    ],
+    "portugal-backs-franco-1936": [
+      "salazar-prime-minister-1932"
+    ],
+    "portugal-e-o-futuro-1974": [
+      "antonio-de-spinola-president-1974",
+      "marcelo-caetano-prime-minister-1968"
+    ],
+    "portuguese-colonial-war-1961-1974": [
+      "amilcar-cabral-paigc-1956",
+      "salazar-prime-minister-1932"
+    ],
+    "republic-proclaimed-1910": [
+      "manuel-ii-monarch-1908"
+    ],
+    "revolt-14-may-1915": [
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915"
+    ],
+    "salazar-president-of-council-1932": [
+      "salazar-prime-minister-1932"
+    ],
+    "sidonio-pais-assassinated-1918": [
+      "sidonio-pais-national-republican-party-1918",
+      "sidonio-pais-president-1917",
+      "sidonio-pais-prime-minister-1917"
+    ],
+    "sidonio-pais-coup-1917": [
+      "afonso-costa-prime-minister-1917",
+      "sidonio-pais-president-1917",
+      "sidonio-pais-prime-minister-1917"
+    ],
+    "soares-elected-president-1986": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-president-1986",
+      "ramalho-eanes-president-1976"
+    ],
+    "spinola-resigns-1974": [
+      "antonio-de-spinola-president-1974",
+      "vasco-goncalves-prime-minister-1974"
+    ],
+    "treaty-of-accession-1985": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1983"
+    ],
+    "treaty-of-friendship-and-cooperation-between-spain-and-portugal": [
+      "mario-soares-partido-socialista-1973",
+      "mario-soares-prime-minister-1976"
+    ],
+    "troika-bailout-2011": [
+      "cavaco-silva-president-2006"
+    ],
+    "troika-programme-ends-2014": [
+      "pedro-passos-coelho-prime-minister-2011",
+      "pedro-passos-coelho-psd-2010"
+    ],
+    "un-admission-1955": [
+      "salazar-prime-minister-1932"
+    ],
+    "world-youth-day-2023": [
+      "antonio-costa-partido-socialista-2014",
+      "antonio-costa-prime-minister-2015",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ]
+  },
+  "palette": "geo/palette.json",
+  "presenceShards": [
+    {
+      "file": "geo/presences/1400-1491.json",
+      "from": 1400,
+      "to": 1491
+    },
+    {
+      "file": "geo/presences/1492-1499.json",
+      "from": 1492,
+      "to": 1499
+    },
+    {
+      "file": "geo/presences/1500-1529.json",
+      "from": 1500,
+      "to": 1529
+    },
+    {
+      "file": "geo/presences/1530-1599.json",
+      "from": 1530,
+      "to": 1599
+    },
+    {
+      "file": "geo/presences/1600-1649.json",
+      "from": 1600,
+      "to": 1649
+    },
+    {
+      "file": "geo/presences/1650-1699.json",
+      "from": 1650,
+      "to": 1699
+    },
+    {
+      "file": "geo/presences/1700-1714.json",
+      "from": 1700,
+      "to": 1714
+    },
+    {
+      "file": "geo/presences/1715-1782.json",
+      "from": 1715,
+      "to": 1782
+    },
+    {
+      "file": "geo/presences/1783-1799.json",
+      "from": 1783,
+      "to": 1799
+    },
+    {
+      "file": "geo/presences/1800-1814.json",
+      "from": 1800,
+      "to": 1814
+    },
+    {
+      "file": "geo/presences/1815-1877.json",
+      "from": 1815,
+      "to": 1877
+    },
+    {
+      "file": "geo/presences/1878-1879.json",
+      "from": 1878,
+      "to": 1879
+    },
+    {
+      "file": "geo/presences/1880-1885.json",
+      "from": 1880,
+      "to": 1885
+    },
+    {
+      "file": "geo/presences/1886-1913.json",
+      "from": 1886,
+      "to": 1913
+    },
+    {
+      "file": "geo/presences/1914-1932.json",
+      "from": 1914,
+      "to": 1932
+    },
+    {
+      "file": "geo/presences/1933-1945.json",
+      "from": 1933,
+      "to": 1945
+    },
+    {
+      "file": "geo/presences/1946-1974.json",
+      "from": 1946,
+      "to": 1974
+    },
+    {
+      "file": "geo/presences/1975-2019.json",
+      "from": 1975,
+      "to": 2019
+    }
+  ],
+  "regionBoxes": {
+    "africa": [
+      -17.625043,
+      -34.819166,
+      51.13387,
+      37.349994
+    ],
+    "americas": [
+      -171.791111,
+      -55.61183,
+      -12.20855,
+      83.64513
+    ],
+    "asia": [
+      26.043351,
+      -10.359987,
+      145.543137,
+      55.38525
+    ],
+    "europe": [
+      -180,
+      2.053389,
+      180,
+      81.2504
+    ],
+    "oceania": [
+      -180,
+      -46.641235,
+      180,
+      -2.500002
+    ]
+  },
+  "regions": [
+    {
+      "id": "europe",
+      "label": "Europe",
+      "order": 1
+    },
+    {
+      "id": "africa",
+      "label": "Africa",
+      "order": 2
+    },
+    {
+      "id": "asia",
+      "label": "Asia",
+      "order": 3
+    },
+    {
+      "id": "americas",
+      "label": "Americas",
+      "order": 4
+    },
+    {
+      "id": "oceania",
+      "label": "Oceania",
+      "order": 5
+    }
+  ],
+  "roles": [
+    "applicant",
+    "appointed",
+    "author",
+    "belligerent",
+    "candidate",
+    "commander",
+    "creditor",
+    "debtor",
+    "deposed",
+    "elected",
+    "founder",
+    "government",
+    "head-of-government",
+    "head-of-state",
+    "host",
+    "institution",
+    "invader",
+    "leader",
+    "member",
+    "minister",
+    "movement",
+    "negotiator",
+    "occupier",
+    "opposition",
+    "party",
+    "perpetrator",
+    "resigned",
+    "signatory",
+    "supporter",
+    "target",
+    "victim"
+  ],
+  "rolesAllowed": [
+    {
+      "description": "Led the thing the event is about, without a named office to say so.",
+      "id": "leader",
+      "label": "Leader"
+    },
+    {
+      "description": "The king, president or equivalent, acting as such.",
+      "id": "head-of-state",
+      "label": "Head of state"
+    },
+    {
+      "description": "The prime minister or equivalent, acting as such.",
+      "id": "head-of-government",
+      "label": "Head of government"
+    },
+    {
+      "description": "Held a department and acted through it.",
+      "id": "minister",
+      "label": "Minister"
+    },
+    {
+      "description": "Commanded the force involved.",
+      "id": "commander",
+      "label": "Commander"
+    },
+    {
+      "description": "The state, regime or administration whose act this was.",
+      "id": "government",
+      "label": "Government"
+    },
+    {
+      "description": "Stood against it, lost by it, or was excluded from it.",
+      "id": "opposition",
+      "label": "Opposition"
+    },
+    {
+      "description": "A party that stood, won seats, or joined a coalition.",
+      "id": "party",
+      "label": "Party"
+    },
+    {
+      "description": "Stood for the office at issue.",
+      "id": "candidate",
+      "label": "Candidate"
+    },
+    {
+      "description": "Won the vote, the seat or the admission.",
+      "id": "elected",
+      "label": "Elected"
+    },
+    {
+      "description": "Was put in place by somebody else rather than elected.",
+      "id": "appointed",
+      "label": "Appointed"
+    },
+    {
+      "description": "Was removed from power by the event.",
+      "id": "deposed",
+      "label": "Deposed"
+    },
+    {
+      "description": "Left office by their own act.",
+      "id": "resigned",
+      "label": "Resigned"
+    },
+    {
+      "description": "Fought in it, on either side.",
+      "id": "belligerent",
+      "label": "Belligerent"
+    },
+    {
+      "description": "Crossed into or annexed somebody else's ground.",
+      "id": "invader",
+      "label": "Invader"
+    },
+    {
+      "description": "Held ground it had taken.",
+      "id": "occupier",
+      "label": "Occupier"
+    },
+    {
+      "description": "Was killed, injured or dispossessed by it.",
+      "id": "victim",
+      "label": "Victim"
+    },
+    {
+      "description": "Did the killing or the harm, or is said to have.",
+      "id": "perpetrator",
+      "label": "Perpetrator"
+    },
+    {
+      "description": "The thing or person the act was aimed at.",
+      "id": "target",
+      "label": "Target"
+    },
+    {
+      "description": "Signed the agreement.",
+      "id": "signatory",
+      "label": "Signatory"
+    },
+    {
+      "description": "Negotiated it without necessarily signing it.",
+      "id": "negotiator",
+      "label": "Negotiator"
+    },
+    {
+      "description": "Lent the money or set the terms of the loan.",
+      "id": "creditor",
+      "label": "Creditor"
+    },
+    {
+      "description": "Borrowed it and owed it.",
+      "id": "debtor",
+      "label": "Debtor"
+    },
+    {
+      "description": "Backed, funded or patronised it without being party to it.",
+      "id": "supporter",
+      "label": "Supporter"
+    },
+    {
+      "description": "Founded the thing the event brought into existence.",
+      "id": "founder",
+      "label": "Founder"
+    },
+    {
+      "description": "Joined it, or was the body joined.",
+      "id": "member",
+      "label": "Member"
+    },
+    {
+      "description": "Asked to be admitted.",
+      "id": "applicant",
+      "label": "Applicant"
+    },
+    {
+      "description": "Held the occasion on its own ground.",
+      "id": "host",
+      "label": "Host"
+    },
+    {
+      "description": "Wrote or drafted the text at issue.",
+      "id": "author",
+      "label": "Author"
+    },
+    {
+      "description": "A movement or front acting as one, without a party's shape.",
+      "id": "movement",
+      "label": "Movement"
+    },
+    {
+      "description": "A body acting in its institutional capacity — a bank, a church, an army, a court.",
+      "id": "institution",
+      "label": "Institution"
+    }
+  ],
+  "schema": 8,
+  "tenuresByOffice": {
+    "leadership-of-chega": [
+      "andre-ventura-chega-2019"
+    ],
+    "leadership-of-frelimo": [
+      "eduardo-mondlane-frelimo-1962"
+    ],
+    "leadership-of-liberal-regenerator-party": [
+      "joao-franco-liberal-regenerator-party-1901"
+    ],
+    "leadership-of-national-republican-party": [
+      "sidonio-pais-national-republican-party-1918"
+    ],
+    "leadership-of-paigc": [
+      "amilcar-cabral-paigc-1956"
+    ],
+    "leadership-of-partido-socialista": [
+      "mario-soares-partido-socialista-1973",
+      "antonio-costa-partido-socialista-2014"
+    ],
+    "leadership-of-pcp": [
+      "alvaro-cunhal-pcp-1961"
+    ],
+    "leadership-of-psd": [
+      "cavaco-silva-psd-1985",
+      "marcelo-rebelo-de-sousa-psd-1996",
+      "pedro-passos-coelho-psd-2010",
+      "luis-montenegro-psd-2022"
+    ],
+    "monarch-of-portugal": [
+      "luis-i-monarch-1861",
+      "carlos-i-monarch-1889",
+      "manuel-ii-monarch-1908"
+    ],
+    "president-of-portugal": [
+      "teofilo-braga-president-1910",
+      "manuel-de-arriaga-president-1911",
+      "bernardino-machado-president-1915",
+      "teofilo-braga-president-1915",
+      "sidonio-pais-president-1917",
+      "canto-e-castro-president-1918",
+      "antonio-jose-de-almeida-president-1919",
+      "teixeira-gomes-president-1923",
+      "bernardino-machado-president-1925",
+      "gomes-da-costa-president-1926",
+      "mendes-cabecadas-president-1926",
+      "oscar-carmona-president-1926",
+      "craveiro-lopes-president-1951",
+      "americo-tomas-president-1958",
+      "antonio-de-spinola-president-1974",
+      "costa-gomes-president-1974",
+      "ramalho-eanes-president-1976",
+      "mario-soares-president-1986",
+      "jorge-sampaio-president-1996",
+      "cavaco-silva-president-2006",
+      "marcelo-rebelo-de-sousa-president-2016"
+    ],
+    "prime-minister-of-portugal": [
+      "jose-luciano-de-castro-prime-minister-1886",
+      "joao-crisostomo-prime-minister-1890",
+      "serpa-pimentel-prime-minister-1890",
+      "dias-ferreira-prime-minister-1892",
+      "hintze-ribeiro-prime-minister-1893",
+      "jose-luciano-de-castro-prime-minister-1897",
+      "hintze-ribeiro-prime-minister-1900",
+      "jose-luciano-de-castro-prime-minister-1904",
+      "hintze-ribeiro-prime-minister-1906",
+      "joao-franco-prime-minister-1906",
+      "ferreira-do-amaral-prime-minister-1908",
+      "teixeira-de-sousa-prime-minister-1910",
+      "afonso-costa-prime-minister-1913",
+      "afonso-costa-prime-minister-1915",
+      "pimenta-de-castro-prime-minister-1915",
+      "antonio-jose-de-almeida-prime-minister-1916",
+      "afonso-costa-prime-minister-1917",
+      "sidonio-pais-prime-minister-1917",
+      "antonio-maria-da-silva-prime-minister-1922",
+      "antonio-maria-da-silva-prime-minister-1925",
+      "gomes-da-costa-prime-minister-1926",
+      "mendes-cabecadas-prime-minister-1926",
+      "oscar-carmona-prime-minister-1926",
+      "jose-vicente-de-freitas-prime-minister-1928",
+      "ivens-ferraz-prime-minister-1929",
+      "domingos-oliveira-prime-minister-1930",
+      "salazar-prime-minister-1932",
+      "marcelo-caetano-prime-minister-1968",
+      "palma-carlos-prime-minister-1974",
+      "vasco-goncalves-prime-minister-1974",
+      "pinheiro-de-azevedo-prime-minister-1975",
+      "mario-soares-prime-minister-1976",
+      "mota-pinto-prime-minister-1978",
+      "nobre-da-costa-prime-minister-1978",
+      "maria-de-lourdes-pintasilgo-prime-minister-1979",
+      "freitas-do-amaral-prime-minister-1980",
+      "sa-carneiro-prime-minister-1980",
+      "pinto-balsemao-prime-minister-1981",
+      "mario-soares-prime-minister-1983",
+      "cavaco-silva-prime-minister-1985",
+      "antonio-guterres-prime-minister-1995",
+      "durao-barroso-prime-minister-2002",
+      "santana-lopes-prime-minister-2004",
+      "jose-socrates-prime-minister-2005",
+      "pedro-passos-coelho-prime-minister-2011",
+      "antonio-costa-prime-minister-2015",
+      "luis-montenegro-prime-minister-2024"
+    ]
+  }
+}
