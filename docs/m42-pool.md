@@ -11418,3 +11418,16 @@ rather than by the lane — the vein whose held records sit inside the 673.
   it owns A13's relations pass over every active event.
 - **Deviation numbers: take the next above 1449.** This fire wrote **1449** and
   no other, across two batches.
+
+**The check is green on this fire's head.** Run **1826** of `validate.yml`, commit
+`2d1980c4`, conclusion `success`, on its first attempt. Run 1824 on batch 57's
+own head passed too; 1823 and 1825 were each cancelled by the next push, which is
+deviation 1258's chain and costs nothing. **2,114 tests pass locally, 1,819 pure
+and 295 browser, with nothing failed and nothing skipped**, run the way the check
+runs them since M63 after each of the two batches. Two suites failed on a first
+local run and both were correspondence tests these batches had moved rather than
+broken — `tests/m53.test.mjs` §4.1's denominator, re-taken with each batch, and
+`tests/bundle.test.mjs`'s byte-identical save, which caught `kwilu-rebellion`
+written with an explicit `"category": null` where the round trip omits the key;
+both were fixed in the same commit as the records they judge. The re-run
+allowance is unspent: nothing was re-run.
