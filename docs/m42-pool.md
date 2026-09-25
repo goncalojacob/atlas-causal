@@ -12240,13 +12240,13 @@ The ranking asked of Asia on this fire's head:
 
 | the Asia vein | held records inside the 685 | free rows left | of those, dated |
 | --- | --- | --- | --- |
-| `Q8663` Cold War | 21 of 23 | 92 | 88 |
+| `Q8683` Cold War | 21 of 23 | 97 | 90 |
 | `Q8669` Arab–Israeli conflict | **10 of 10** | 29 | 24 |
 | `Q8740` Vietnam War | 10 of 19 | 281 | 266 |
 | `Q1519107` Afghan Conflict | 7 of 8 | 10 | 8 |
 | `Q185729` War on Terrorism | 7 of 8 | 23 | 23 |
 | `Q3119132` Indo-Pakistani wars | 5 of 5 | 13 | 11 |
-| `Q8663` Korean War (`Q8663` aside) | 0 of 21 | 92 | 88 |
+| `Q8663` Korean War | 0 of 21 | 92 | 88 |
 
 **`Q8669` is the vein with no held record outside the component** — all ten are
 inside the 685 — which is the property batch 60 prized in `Q159950`, and it has
