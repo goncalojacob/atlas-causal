@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "thirty-years-war--portuguese-restoration-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Restoration War\", revision 1370704737"
+    }
+  ],
+  "from": "thirty-years-war",
+  "to": "portuguese-restoration-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The same sentence names the other entanglement, on Spain's side: \"Spain was involved in the Thirty Years' War until 1648 and the Franco-Spanish War until 1659.\" That is the article's account of why twenty-eight years of war between Portugal and Spain amounted mostly to skirmishes — Spain was fighting elsewhere. Enabled: the war in Germany is what Portugal's revolt survived by, and the article says so by putting the two entanglements in one sentence about what occasioned the fighting. **Wikidata files the Restoration War under the Thirty Years' War in its own P361 and this atlas refused the filing**, because the Restoration War runs to 1668 and the Thirty Years' War ends in 1648: rule 24 would have warned. The relation is this edge and not a parent.",
+  "dispute": null
+}

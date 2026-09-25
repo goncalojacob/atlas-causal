@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-port-arthur--hitachi-maru-incident--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hitachi Maru Incident\", revision 1370622816, § Background"
+    }
+  ],
+  "from": "battle-of-port-arthur",
+  "to": "hitachi-maru-incident",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Hitachi Maru article's background is one contrast and the contrast is the argument: \"At the start of the Russo-Japanese War, the bulk of the Russian Pacific Fleet was blockaded within the confines of Port Arthur by the Imperial Japanese Navy. However, the Russian subsidiary naval base at Vladivostok ... remained largely undamaged and unblockaded.\" The word \"blockaded\" is the article's own wikilink to the Battle of Port Arthur, and what follows is that the Vladivostok squadron was therefore the one at sea raiding commerce. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hsimucheng",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2409166, the Battle of Hsimucheng, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276 to fall back on, and the article calls the ground a hamlet in today's Ximu Town, 20 km south-east of Haicheng."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Hsimucheng"
+  ],
+  "where": {
+    "lon": 123.183,
+    "lat": 41.267,
+    "precision": "point",
+    "label": "Hsimucheng"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

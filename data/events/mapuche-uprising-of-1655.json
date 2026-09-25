@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mapuche-uprising-of-1655",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q85783755",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Mapuche uprising of 1655",
+    "pt": "Revolta Mapuche de 1655"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85783755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mapuche uprising of 1655\", revision 1370627596"
+    }
+  ],
+  "title": "Mapuche uprising of 1655",
+  "summary": "The English Wikipedia article \"Mapuche uprising of 1655\", at revision 1370627596, opens: \"The Mapuche uprising of 1655 was a series of coordinated Mapuche attacks against Spanish settlements and forts in colonial Chile. It was the worst military crisis in Chile in decades, and contemporaries even considered the possibility of a civil war among the Spanish. The uprising marks the beginning of a ten-year period of warfare between the Spanish and the Mapuche.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q85783755, imported by tools/import/wikidata.mjs. The item's own description reads \"anti-Spanish attacks in colonial Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1656,
+    "date": "1655-02-14"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "arauco-war"
+}

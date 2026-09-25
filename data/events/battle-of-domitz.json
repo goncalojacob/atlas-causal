@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-domitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16856667",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Dömitz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16856667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dömitz\", revision 1370439627"
+    }
+  ],
+  "title": "Battle of Dömitz",
+  "summary": "The English Wikipedia article \"Battle of Dömitz\", at revision 1370439627, opens: \"The Battle of Dömitz took place on 22 October 1635, during the Thirty Years' War. A Saxon force led by von Baudissin was besieging Dömitz Fortress when it was surprised by a Swedish relief column under Patrick Ruthven. Baudissin's detachment was effectively destroyed, losing between 3,500 and 5,000 men, including 2,500 prisoners who were incorporated into the Swedish army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16856667, imported by tools/import/wikidata.mjs. The item's own description reads \"1635 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1635,
+    "date": "1635-10-22"
+  },
+  "place": "domitz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

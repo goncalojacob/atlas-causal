@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-triebl",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2237118",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Triebl"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2237118"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Triebl\", revision 1370591544"
+    }
+  ],
+  "title": "Battle of Triebl",
+  "summary": "The English Wikipedia article \"Battle of Triebl\", at revision 1370591544, opens: \"The Battle of Triebl or Battle of Třebel took place on 22 August 1647 during the Thirty Years' War. Imperial cavalry under Raimondo Montecuccoli and Johann von Werth launched a surprise attack on the Swedish camp of Carl Gustaf Wrangel and inflicted 380, or more than 1,300, losses on them in exchange for 200–300 casualties. Both sides claimed victory after the battle. The Imperial attack helped convince Maximilian I, Elector of Bavaria to abandon the Truce of Ulm in September and rejoin the war on the Imperial side.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2237118, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the thirty years' war, 1647\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1647,
+    "date": "1647-08-18",
+    "endDate": "1647-09-05"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

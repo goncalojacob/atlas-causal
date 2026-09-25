@@ -5399,3 +5399,261 @@ had to reach it through an umbrella.
   person's standing and not a statement that the killing conditioned the coup,
   and the chain the article does argue — through the rebellions — is already an
   edge here.
+
+## Batch 59 — the Gao counterattacks of February and March 2013, and the third article that names two records for them
+
+*25 September, the fire that claimed at 12:08Z. Africa and Asia were tied at 174
+active events each, so A10's order of need gives the batch to **Africa** and
+deviation 1449 decides the vein: ranked by how many of the records a vein already
+holds sit inside the largest connected component, the Mali War (`Q2946372`) is
+the strongest vein in the atlas at **22**, ahead of the Cold War's 21 and the
+Vietnam War's 10. Two rows arrive and four edges are written, two of them
+between records the atlas already held. The full note, the refusals and the
+counts are in `docs/m42-pool.md` under "Batch 59".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `second-battle-of-gao` → `third-battle-of-gao` | `reacted-to` | *"Gao was captured by French and Malian troops on 27 January 2013 ... the Movement for Oneness and Jihad in West Africa and Mulathamen remained in the Gao region. They tried to take back the city, in two attempted operations before, first on 10 February, and then again on 20 February, but their attacks failed"* — "Battle of Imenas", revision 1370265996, § Background and deployment |
+| `second-battle-of-gao` → `fourth-battle-of-gao` | `reacted-to` | the same sentence, whose "20 February" is linked to the fourth battle as its "10 February" is linked to the third |
+| `fourth-battle-of-gao` → `battle-of-imenas` | `precondition-of` | *"However, French and Malian forces, wished to secure the region, and fully expel the MUJAO-Mulathamen coalition from the Gao and its regions, so they began interrogating captured jihadists to learn information about the positions and the number of the jihadists. Finally the staff of Operation Serval estimated that about 100 fighters divided into several small groups were located east of Gao ... French code-named Operation Doro was launched on 27 February"* — "Battle of Imenas", revision 1370265996, § Background and deployment |
+| `battle-of-imenas` → `battle-of-tin-keraten` | `precondition-of` | *"After the victory of the Battle of Iminenas, the French and Malian forces continued their war against the Islamist Jihadist coalition of MOJWA, AQIM, Ansar Dine and Al-Mulathamen ... The next target of the Franco-Malian forces was the wadi of Tin Keraten, located north-east of Imenas, 100 kilometers east of Gao"* — "Battle of Tin Keraten", revision 1370591104, § Background |
+
+**Two of the four edges have no arrival at either end, and they are why the
+component moved by four and not by two.** `second-battle-of-gao` →
+`third-battle-of-gao` and → `fourth-battle-of-gao` join a two-node component the
+atlas has carried since batch 56 to the 673, and both rest on a sentence in a
+**third** article — the one this batch imported. Neither Gao article names the
+other: the third's lead calls itself "a raid on the city" and the fourth's "an
+attempt by rebel MOJWA forces to retake the city", and neither says from whom.
+The Imenas background says it, with the wikilinks to prove which records it means.
+**A batch's best edge can be one that runs between two records it did not
+import, found only because the article it was reading for something else knew
+both of them.** That is batch 57's Khe Sanh lesson with two records rescued
+instead of one.
+
+**`reacted-to` is written twice and the second is redundant to the graph.**
+`third-battle-of-gao` → `fourth-battle-of-gao` has been here since batch 56, so
+the fourth already reaches the 673 once the third does, and
+`second-battle-of-gao` → `fourth-battle-of-gao` opens no path. It is written
+because the sentence names two attempts and the second of them is about that
+record: a reader opening the fourth battle should find the capture it answered on
+its own card, and not only one hop away. Nothing in the count depends on it.
+
+**Four edges were read and refused.**
+
+- **`battle-of-in-khalil` → `operation-serval`**, on the In Khalil article's
+  *"The MUJAO immediately claimed responsibility for both bombings and said it
+  specifically targeted the MNLA for their part in siding with the French
+  intervention"* (revision 1370443719). The sentence argues a reaction and names
+  what was answered — but it names it as "the French intervention", in plain
+  words and with no wikilink, and deciding that those three words are
+  `operation-serval` is an identification a person should make and not a run.
+  The row was not imported.
+- **`battle-of-anoumalane` → `battle-of-tinzaouaten-2024`**, on *"The battle was
+  the largest defeat for Malian and allied Russian forces since the battle of
+  Tinzaouaten nearly one year earlier"* (revision 1370432110). A comparison of
+  two defeats by size, which says less than chronology does: it does not even
+  claim the second followed from the first. The row was not imported.
+- **`battle-of-tinzaouaten-2024` → `mali-fuel-blockade`**, on *"Following a
+  setback at the Battle of Tinzaouaten in 2024 ... the Wagner Group was replaced
+  by the Russian Africa Corps ... Following 2024, JNIM opened a new front to
+  isolate Bamako"* ("2026 Mali offensives", revision 1376558898, § Background).
+  Two sentences opening on "Following" with nothing between them but the year:
+  A14 (4)'s refusal class exactly, and the consequence the first one does argue —
+  Wagner replaced by the Africa Corps — is not an event this atlas holds.
+- **`mali-war` → any of the four Gao and Imenas records.** Containment, which is
+  the filing they already carry, and C8 bars it as an edge.
+
+## Batch 60 — the Manchurian road and the sea around it, and the vein where every held record is inside the component
+
+*25 September, the same fire, continuing under STEP 3's "each imported,
+connected, filed, placed, validated, rebuilt and pushed before the next". Batch
+59 put Africa at 176 against Asia's 174, so A10's order of need turned over and
+this batch is five **Asia** rows. Deviation 1450's ranking picked the vein:
+`Q159950`, the Russo-Japanese War, holds **fifteen** records here and **all
+fifteen are inside the largest connected component** — the only vein in the atlas
+with no held record outside it. Five free rows are all that is left of it, all
+five are dated, and every one names a held record in prose. The full note, the
+refusals and the counts are in `docs/m42-pool.md` under "Batch 60".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-te-li-ssu` → `battle-of-motien-pass` | `precondition-of` | *"Keller, already weakened by the loss of men at the Battle of Te-li-Ssu, was further forced to give up two more regiments to Kuropatkin's defenses at Haicheng"* — "Battle of Motien Pass", revision 1370269908, § Preliminary movements |
+| `battle-of-tashihchiao` → `battle-of-hsimucheng` | `precondition-of` | *"Following its defeat at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich retreated to the village of Hsimungcheng"* — "Battle of Hsimucheng", revision 1370443278, § Prelude |
+| `battle-of-hsimucheng` → `battle-of-liaoyang` | `enabled` | *"General Zasulich exercised his standing order from General Alexei Kuropatkin to withdraw to Haicheng, and the Japanese forces were thus able to link up for the next push north towards Liaoyang"* — same article, § Description of battle |
+| `battle-of-the-yellow-sea` → `battle-of-korsakov` | `precondition-of` | *"it met defeat in the Battle of the Yellow Sea on 10 August 1904. The Russian squadron broke up during the engagement ... Novik ... was among the ships that fled south"* — "Battle of Korsakov", revision 1370446023, lead and § Preliminary moves |
+| `battle-of-port-arthur` → `hitachi-maru-incident` | `precondition-of` | *"At the start of the Russo-Japanese War, the bulk of the Russian Pacific Fleet was blockaded within the confines of Port Arthur by the Imperial Japanese Navy. However, the Russian subsidiary naval base at Vladivostok ... remained largely undamaged and unblockaded"* — "Hitachi Maru Incident", revision 1370622816, § Background |
+| `siege-of-port-arthur` → `raid-on-yingkou` | `reacted-to` | *"With the surrender of Port Arthur, the course of the war radically changed as the Japanese no longer had to fight on 2 fronts ... In response, the Russian command, led by Pavel Mishchenko, developed a planned raid to prevent the joining of Japanese troops"* — "Raid on Yingkou", revision 1370706175, § Background |
+
+**Six edges for five arrivals and every one of the five joined the component**,
+which is the first batch of this run where that is true. The reason is the vein
+and not the reading: when every record a vein already holds is inside the 677,
+any edge at all puts the arrival inside it too. Deviation 1450's table says which
+veins those are before a fire opens an article.
+
+**One `reacted-to`, and the article supplies the word.** `siege-of-port-arthur` →
+`raid-on-yingkou` rests on "In response", which is the strongest connective this
+run has been given for that type: the Yingkou background states the Japanese plan
+that followed the surrender and then the Russian raid built to stop it. Written in
+the direction **deviation 1420** settled — the surrender at `from`, the raid that
+answered it at `to`.
+
+**One "Following" sentence was kept and it is the first this run has kept.**
+A14 (4) drew a refusal class around eleven edges whose quotes opened on
+"Following", "After" or "In the aftermath", and the test it drew was whether the
+sentence *makes a claim*. `battle-of-tashihchiao` → `battle-of-hsimucheng` opens
+on the word and then names a unit, a defeat and a retreat: *"Following its defeat
+at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich
+retreated to the village of Hsimungcheng."* It is why the Russians were on that
+ground at all, which is what `precondition-of` says. **The refusal class is about
+sentences that say only how long afterwards, not about the word they open with.**
+
+**Three edges were read and refused.**
+
+- **`battle-of-the-yalu-river-1904` → `battle-of-motien-pass`.** The same
+  paragraph that argues Te-li-Ssu also says *"General Fyodor Keller had assumed
+  command of the Russian Eastern Force from General Zasulich after the Battle of
+  Yalu River"*, which is a change of commander dated by a battle and not a claim
+  about the pass. The Te-li-Ssu sentence in the same paragraph says what the
+  earlier fighting cost the force, and that is the edge.
+- **`first-sino-japanese-war` → `battle-of-motien-pass`.** The article has Keller
+  observing *"that the Japanese strategy was similar to that of the First
+  Sino-Japanese War"*, which is a Russian general's analogy reported as his
+  reasoning. An earlier war a commander compared this one to is not a condition of
+  the battle, and reading it as one would be this run deciding what the analogy
+  was worth.
+- **`hitachi-maru-incident` → `battle-off-ulsan`.** The Hitachi Maru article names
+  the Ulsan battle, where the same Vladivostok squadron was broken up two months
+  later, but only in listing what became of the ships. It states no claim that the
+  raid brought the hunt about, and the edge would be this run supplying the link
+  between a sortie and the squadron's later destruction.
+
+## Batch 61 — the Libyan Civil War's 2011 fronts, and the pair that joined a record with no edge at all
+
+Seven edges, every one quoted from an article at the revision in its own locator,
+every locator a `wikipedia-en` citation whose revision the cache under
+`tools/import/cache/wikipedia/` now holds, so A14 (3)'s invariant is true of
+everything this batch wrote.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `third-battle-of-brega` | precondition-of | `battle-of-brega-ajdabiya-road` | probable |
+| `battle-of-brega-ajdabiya-road` | reacted-to | `fourth-battle-of-brega` | probable |
+| `battle-of-misrata-2011` | precondition-of | `battle-of-the-misrata-frontline` | probable |
+| `battle-of-misrata-2011` | enabled | `zliten-uprising` | probable |
+| `second-gulf-of-sidra-offensive` | enabled | `battle-of-sirte-2011` | probable |
+| `second-gulf-of-sidra-offensive` | precondition-of | `killing-of-muammar-gaddafi` | probable |
+| `battle-of-tripoli-2011` | reacted-to | `tripoli-clashes-mid-october-2011` | probable |
+
+**Both `reacted-to` run in the direction deviation 1420 settled** — the earlier
+thing at `from`, the thing that answered it at `to`. `battle-of-brega-ajdabiya-road`
+→ `fourth-battle-of-brega` has the deadlock at `from` and the offensive launched
+"in an attempt to break the stalemate" at `to`; `battle-of-tripoli-2011` →
+`tripoli-clashes-mid-october-2011` has the city changing hands at `from` and the
+loyalist rising against the NTC at `to`.
+
+**One "Following" sentence was kept and it is the second this run has kept.**
+`battle-of-misrata-2011` → `battle-of-the-misrata-frontline` opens on the word:
+*"Following the Battle of Misrata in mid-May 2011, rebel forces retook large parts
+of the city, which had been under pro-Gaddafi control, and established a defence
+line on Misrata's western outskirts at the small town of Dafniya."* It passes
+A14 (4)'s test for the same reason batch 60's Tashihchiao sentence did — it names
+the outcome, the ground and the line the next battle was fought on, not how long
+afterwards.
+
+**One edge is a precondition and not a cause, and the article is why.** The Gulf
+of Sidra lead says *"The offensive ended on 20 October, with the capture and
+execution of Muammar Gaddafi"*. An offensive that **ended in** the killing is a
+condition of it; the article does not say it caused it, and `caused` would be this
+run upgrading the claim.
+
+**Four edges were read and refused.**
+
+- **`tunisian-revolution` → `tripoli-protests-and-clashes-february-2011`** and the
+  Egyptian pair with it. The February article's background reads *"As the Arab
+  Spring caused revolutions in Tunisia and Egypt, which both border Libya, Gaddafi
+  was reportedly still in full control"*, and then compares the three countries'
+  corruption indices. The causal verb in that sentence belongs to the Arab Spring
+  and the two revolutions, not to the two revolutions and Tripoli, and the
+  comparison is background. **The record was refused with the edge**, for want of
+  any other: see the pool note.
+- **`battle-of-tripoli-2011` → `second-gulf-of-sidra-offensive`.** The offensive's
+  background opens *"Following the success of rebels hostile to the Gaddafi
+  government in Tripoli, rebels in Brega claimed that they had made advances"* —
+  which is A14 (4)'s refusal class exactly: it says what happened next and names no
+  condition, and the two overlap in time besides, the offensive opening on 22
+  August inside the Tripoli battle's own 20 to 28 August.
+- **`battle-of-bin-jawad` → `second-gulf-of-sidra-offensive`.** The offensive's
+  account of 24 August has loyalists ambushing the rebels at Bin Jawad *"in an echo
+  of an earlier defeat in March"*. That is batch 60's Motien Pass refusal in
+  another war: an earlier engagement this one was compared to is not a condition of
+  it.
+- **`battle-of-the-misrata-frontline` → `battle-of-bani-walid`.** The frontline
+  article has a column advancing south from Misrata and taking Bir Durfan, which
+  *"intended to capture the city of Bani Walid within days"*. A stated intention in
+  mid-August about a battle that opens on 8 September is not the article making one
+  the condition of the other.
+
+## Batch 62 — the Arab–Israeli conflict's Lebanese fronts, and the singletons that argue only with their own parent
+
+Three edges, all `precondition-of`, all quoted at the revision in the locator.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `taif-agreement` | precondition-of | `operation-accountability` | probable |
+| `operation-accountability` | precondition-of | `operation-grapes-of-wrath` | probable |
+| `gaza-war` | precondition-of | `2024-lebanon-electronic-device-attacks` | probable |
+
+**Both arrivals joined the largest component and the middle edge is a chain of
+three.** `taif-agreement` → `operation-accountability` →
+`operation-grapes-of-wrath` runs 1989 to 1996 through an accord that disarmed
+every Lebanese militia but one, the operation launched against that one, and the
+operation launched when the first one's ceasefire failed. Each of the three held
+records had degree 1 before this batch.
+
+**Six held Vietnam records were read for edges before any of this and gave
+none**, which is what the fire spent its first look on because the stand after
+batch 60 said their articles argue edges nobody has written. They do not. Folding
+each article's `[[wikilink]]` targets against the `wikipedia.en` title of every
+active event, with `<ref>…</ref>` stripped — deviation 1450's second half, turned
+on records already here — every one of `battle-of-hue`, `battle-of-long-tan`,
+`battle-of-ap-bac`, `1963-south-vietnamese-coup`, `battle-of-hamburger-hill` and
+`battle-of-ia-drang` links to **`vietnam-war` and to almost nothing else**, and
+`vietnam-war` is the parent of five of them (`battle-of-hue`'s is
+`tet-offensive`). **C8 bars every one of those edges**, which is the Korean War's
+finding in another vein. What else the six link to is comparison: Hamburger Hill
+names Ia Drang only in *"Prolonged combat, such as at Dak To and Ia Drang, had
+been relatively rare"*; Ap Bac names the Second World War for equipment; the Gulf
+of Tonkin article names the Iraq War for the resolution it is compared to. The
+two prose links that looked promising — Long Tan to `tet-offensive` and the 1963
+coup to `geneva-conference` — are **not in the prose at all**: they are template
+and navbox links, which the plain-text extract does not carry and the wikitext
+fold counted anyway. That is a refinement deviation 1450 needs and is
+**deviation 1453**.
+
+**Four candidates were read and refused, three of them for want of a claim.**
+
+- **`Operation Opera` (`Q725043`, 39 sitelinks)** is the most valuable row this
+  fire refused. Outside its own parent its prose names `iran-iraq-war` and
+  `gulf-war`, and both are refusals: the Iranian strike on the same reactor came
+  *"shortly after the outbreak of the Iran–Iraq War"*, which dates that strike and
+  not this one, and the Gulf War appears as what later destroyed the ruins and in
+  two attributed opinions — Begin's that the war *"vindicated his decision"* and
+  Cheney's that the bombing *"made Desert Storm easier"*. **An attributed opinion
+  that an earlier act was vindicated is not the article stating an edge.**
+- **`Operation Northern Shield` (`Q59417678`)** has the one strong claim this vein
+  offered and the atlas cannot take it: *"After the 2014 Gaza War, which saw
+  numerous tunnels dug by Hamas ... the IDF renewed its search for Hezbollah
+  tunnels in northern Israel, and this time found indications that such tunnels
+  existed."* **There is no 2014 Gaza war record here** — the atlas holds
+  `gaza-war-2008-2009` and `gaza-war` and nothing between them — so the edge has
+  no `from`. A fire that imports that war gets this edge with it.
+- **`2004 Israeli operation in Rafah` (`Q1241158`)** links `second-intifada` in its
+  templates and never in its prose, which is deviation 1453 again.
+- **`1991 Iraqi missile attacks against Israel` (`Q97860712`)** is refused on the
+  class and not on the argument, and the argument was good — its two `P361` are
+  `Q37643` and `Q8669`, both held, which would have been this run's first two-parent
+  filing under A8. Its `P31` is **`Q111034471`, missile strike, which is not in
+  `data/imports/wikidata-seeds.json`**, and an item of a class nobody has decided
+  about is refused and listed rather than guessed at. **Adding that class is a
+  decision somebody should argue with**, so it is left here for them.

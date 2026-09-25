@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "hitachi-maru-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "participants-from-p710"
+    ],
+    "note": "The item's single P585 of 15 June 1904 is the day the article gives, so nothing was widened under A7. Place by A9's second step, P276 Q52055, the Tsushima Strait, because the item carries no P625 of its own."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q11481675",
+  "wikipedia": {
+    "en": "Hitachi Maru Incident"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11481675"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hitachi Maru Incident\", revision 1370622816"
+    }
+  ],
+  "title": "Hitachi Maru Incident",
+  "summary": "The English Wikipedia article \"Hitachi Maru Incident\", at revision 1370622816, opens: \"The Hitachi Maru Incident was a maritime incident which occurred during the Russo-Japanese War of 1904–1905, in which three Japanese military transports were sunk in a Russian commerce raiding sortie by a Vladivostok-based armored cruiser squadron of the Imperial Russian Navy.\" Wikidata item Q11481675, whose own description reads \"1904 maritime incident\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-06-15"
+  },
+  "place": "tsushima-strait",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "japan",
+      "role": "belligerent",
+      "note": "Q11481675 gives the Empire of Japan (Q188712) as a participant; russo-japanese-war and battle-of-port-arthur read the same item as `japan`"
+    },
+    {
+      "actor": "russian-empire",
+      "role": "belligerent",
+      "note": "Q11481675 gives the Russian Empire (Q34266) as a participant"
+    }
+  ]
+}

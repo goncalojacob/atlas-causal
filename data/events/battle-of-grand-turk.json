@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-grand-turk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871134",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Grand Turk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871134"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grand Turk\", revision 1370441951"
+    }
+  ],
+  "title": "Battle of Grand Turk",
+  "summary": "The English Wikipedia article \"Battle of Grand Turk\", at revision 1370441951, opens: \"The Battle of Grand Turk occurred on 9 March 1783 during the American Revolutionary War. France had seized the Turks and Caicos archipelago, islets of rich salt works, taking the island of Grand Turk in February 1783. The British responded by deploying 28-gun frigate HMS Albemarle with a force of more than 100 men under the command of Captain Horatio Nelson. Although the mission failed, the islands were restored to Britain in the second Treaty of Paris that formally concluded the war six months later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871134, imported by tools/import/wikidata.mjs. The item's own description reads \"1783 American Revolutionary War naval battle between Britain and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1783,
+    "end": 1783,
+    "date": "1783-03-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

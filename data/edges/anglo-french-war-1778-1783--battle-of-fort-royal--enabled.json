@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1778-1783--battle-of-fort-royal--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Royal\", revision 1370110467"
+    }
+  ],
+  "from": "anglo-french-war-1778-1783",
+  "to": "battle-of-fort-royal",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Fort Royal's article names the war it belongs to rather than the American one: \"a naval battle fought off Fort Royal, Martinique in the West Indies during the Anglo-French War on 29 April 1781, between fleets of the British Royal Navy and the French Navy.\" Enabled: the Anglo-French war is what put two fleets off Martinique.",
+  "dispute": null
+}

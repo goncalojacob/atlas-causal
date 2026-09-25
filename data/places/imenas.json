@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "imenas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q6619913, the Battle of Imenas, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item also carries P276 Q188904, Gao, which the atlas already holds as a place; the own point is taken because the article places the fighting east of Gao, between Djebok and al-Moustarat, and not in the city."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Imenas"
+  ],
+  "where": {
+    "lon": 0.717,
+    "lat": 16.3,
+    "precision": "point",
+    "label": "Imenas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

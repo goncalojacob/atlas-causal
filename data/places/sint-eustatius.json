@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sint-eustatius",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q26180",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Sint Eustatius",
+    "pt": "Santo Eustáquio (Países Baixos)"
+  },
+  "sources": [],
+  "names": [
+    "Sint Eustatius",
+    "Santo Eustáquio",
+    "Santo Eustáquio (Países Baixos)"
+  ],
+  "where": {
+    "lon": -62.966666666667,
+    "lat": 17.483333333333,
+    "precision": "region",
+    "label": "Sint Eustatius"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q26180, imported by tools/import/wikidata.mjs. The item's own description reads \"island in the Caribbean, part of the Netherlands\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

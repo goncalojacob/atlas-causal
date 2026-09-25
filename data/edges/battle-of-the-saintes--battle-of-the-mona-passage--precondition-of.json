@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-saintes--battle-of-the-mona-passage--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Mona Passage\", revision 1370601334"
+    }
+  ],
+  "from": "battle-of-the-saintes",
+  "to": "battle-of-the-mona-passage",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Mona Passage was the pursuit of what the Saintes had scattered: \"A British fleet under Rear-Admiral of the Blue Sir Samuel Hood engaged a French squadron under Georges-Francois de Framond which had escaped the Battle of the Saintes a week earlier... completing the British victory at the Saintes.\" Precondition-of: the ships Hood took were the ships that got away nine days before.",
+  "dispute": null
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "battle-of-motien-pass",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "The item and the article disagree about the day by a week and the interval is widened to cover both, narrowing nothing: Q2469370's only P585 is 17 July 1904 and the article at revision 1370269908 opens \"on 10 July 1904\". Place by A9's first step landing on a held record: the item's own P625 is to the digit Q326917's, the Liaodong Peninsula, which the item also names in P276 and this atlas already holds (deviation 1422)."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2469370",
+  "wikipedia": {
+    "en": "Battle of Motien Pass"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2469370"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Motien Pass\", revision 1370269908"
+    }
+  ],
+  "title": "Battle of Motien Pass",
+  "summary": "The English Wikipedia article \"Battle of Motien Pass\", at revision 1370269908, opens: \"The Battle of Motien Pass was a minor land battle of the Russo-Japanese War, fought between the Imperial Japanese Army under General Kuroki Tamemoto and the Imperial Russian Army under General Fyodor Eduardovich Keller over control of a strategic mountain pass on the main road between the coast and Liaoyang in Qing China on 10 July 1904.\" Wikidata item Q2469370, whose own description reads \"1904 confrontation of the Russo-Japanese war\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-07-10",
+    "endDate": "1904-07-17"
+  },
+  "place": "liaodong-peninsula",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

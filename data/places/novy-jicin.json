@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "novy-jicin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3584",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Nový Jičín",
+    "pt": "Nový Jičín"
+  },
+  "sources": [],
+  "names": [
+    "Nový Jičín"
+  ],
+  "where": {
+    "lon": 18.010308756103,
+    "lat": 49.594368444158,
+    "precision": "city",
+    "label": "Nový Jičín"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q3584, imported by tools/import/wikidata.mjs. The item's own description reads \"town in the Czech Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

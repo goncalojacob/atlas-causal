@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-listerdyb",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q551218",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Listerdyb"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q551218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Listerdyb\", revision 1370447755"
+    }
+  ],
+  "title": "Battle of Listerdyb",
+  "summary": "The English Wikipedia article \"Battle of Listerdyb\", at revision 1370447755, opens: \"This battle took place on 16 May 1644 during the Danish-Swedish War near List Deep, between Sylt and Rømø in western Denmark. Nine Danish ships under King Christian IV forced a retreat back into List Deep of 26 smaller Dutch ships which had been leased to Sweden. 4 more Dutch ships from Marcus' squadron appeared during the battle but took no part.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q551218, imported by tools/import/wikidata.mjs. The item's own description reads \"1644 naval battle of the Danish-Swedish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-05-16"
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

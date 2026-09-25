@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "second-gulf-of-sidra-offensive",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Place by A9's first step, the item's own P625, which falls at sea in the gulf the offensive is named after; the place record is new and its note says what the point stands for. Interval widened under A7 from the cited article at revision 1373278278: the item's only date is a P585 of 20 October, the lead says \"August and September 2011\" and the account opens on \"22 August\", which the start is widened back to. The end is the lead's own \"ended on 20 October\"."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3477174",
+  "wikipedia": {
+    "en": "Second Gulf of Sidra offensive"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3477174"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Gulf of Sidra offensive\", revision 1373278278"
+    }
+  ],
+  "title": "Second Gulf of Sidra offensive",
+  "summary": "The English Wikipedia article \"Second Gulf of Sidra offensive\", at revision 1373278278, opens: \"The Second Gulf of Sidra offensive was a military operation in the First Libyan Civil War conducted by rebel anti-Gaddafi forces in August and September 2011 to take control of towns along the Gulf of Sidra in an effort to surround Muammar Gaddafi's hometown of Sirte, which was held by pro-Gaddafi forces. The offensive ended on 20 October, with the capture and execution of Muammar Gaddafi and his son Mutassim Gaddafi, along with former defense minister Abu-Bakr Yunis Jabr.\" Wikidata item Q3477174, whose own description reads \"fought from 22 August to 20 October 2011 during the Libyan civil war\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-08-22",
+    "endDate": "2011-10-20"
+  },
+  "place": "gulf-of-sidra",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

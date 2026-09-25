@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "naval-battle-of-tarragona",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890143",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Naval battle of Tarragona"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890143"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naval battle of Tarragona\", revision 1370629359"
+    }
+  ],
+  "title": "Naval battle of Tarragona",
+  "summary": "The English Wikipedia article \"Naval battle of Tarragona\", at revision 1370629359, opens: \"The battle of Tarragona fought between 4 and 6 July 1641, was a naval engagement of the Reapers' War in which a Spanish galley fleet led by the Duke of Fernandina attempted to break the French naval blockade of Tarragona, at that time besieged by land by the French and Catalan armies under the French Viceroy of Catalonia. The French blockading fleet was under command of Henri d'Escoubleau de Sourdis, Archbishop of Bordeaux, and consisted both of sailing and rowing vessels. On 4 July it was engaged by the Spanish galleys, of which some managed to enter the port of the town during a fierce action. In the end, a large number of Spanish galleys were abandoned when their crews panicked and fled to the beaches. On the night of 6 July Abraham Duquesne escorted 5 fireships to the mole of the harbor, where the Spanish galleys were abandoned, and set fire to them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890143, imported by tools/import/wikidata.mjs. The item's own description reads \"1641 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641,
+    "date": "1641-07-04"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

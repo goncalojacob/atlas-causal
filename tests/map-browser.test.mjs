@@ -1639,6 +1639,15 @@ test('where an event and a city want the same box, the event has it', { skip }, 
       'return Boolean(document.querySelector("#map .layer-labels text"));');
     await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
       'the city labels');
+    // And until the attribute shards have stopped arriving, because an event
+    // has no name at all until its century lands (`src/attributes.js`): read
+    // a beat too early and the event that wants Lisbon's box has not asked for
+    // it yet, the city's label is placed instead, and the assertion below
+    // fails on a picture that was still changing on its own. That is what
+    // dropped this test on run 1844 of this branch, on a runner whose browser
+    // pass took 489s against 336s here, and it gets worse as the corpus grows
+    // — the same reason `settledBase` exists a few hundred lines up.
+    await settledShards(page);
     const withEvents = await page.eval(LABELS);
     const kinds = new Set(withEvents.map((l) => l.cls));
     assert.ok(kinds.has('mark-label') && kinds.has('city-label'),
@@ -1651,6 +1660,7 @@ test('where an event and a city want the same box, the event has it', { skip }, 
       'return Boolean(document.querySelector("#map .layer-labels .city-label"));');
     await waitFor(page, 'return document.querySelectorAll("#map .layer-labels .city-label").length > 0;',
       'the city labels again');
+    await settledShards(page);
     const without = await page.eval(LABELS);
     assert.equal(without.some((l) => l.cls === 'city-label' && l.text === 'Lisbon'), true,
       `with the events off, Lisbon is named: ${without.map((l) => l.text).join(' · ')}`);

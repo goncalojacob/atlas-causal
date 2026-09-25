@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mapuche uprising of 1655\", revision 1370627596, § Spanish slave hunting"
+    }
+  ],
+  "from": "battle-of-rio-bueno-1654",
+  "to": "mapuche-uprising-of-1655",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The uprising's own article puts the two in one sequence and says which way it runs: \"In 1654 a large slave-hunting expedition ended in a complete disaster at the Battle of Río Bueno. This setback did not stop the Spanish who under the leadership of Salazar organized a new expedition the summer of 1655.\" It then has the Mapuche rising as that expedition was being prepared — \"As the slave raiding expedition of 1655 was being prepared indios amigos begun to express unease\" — and Salazar beginning his campaign on 6 February with the attacks following on 14 February. Precondition-of and not caused: the article is explicit that the defeat did not stop the raiding, so the battle is a step on the way to the expedition the rising answered and not the thing that brought the rising about.",
+  "dispute": null
+}

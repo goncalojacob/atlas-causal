@@ -1068,3 +1068,80 @@ that town has and there is nothing to duplicate. That is the line this fire
 would offer for every batch after it: *a place record for a town the base map
 already names waits for the base-map import; a place record for one it does not
 is written at once.*
+
+## Batch 33, 25 September — one child that names neither, and why
+
+`battle-of-mabila` is filed inside `spanish-colonization-of-the-americas` and
+names no actor and no place. Both gaps are the same gap.
+
+**No place**, because Wikidata Q6721586 carries no `P625` and names no located
+thing at all: no `P276`, no `P131`, no `P17`. Its own English article is about
+the fortress town of Mabila, whose site is unknown — *"in a region of
+present-day central Alabama"* is as far as the article goes, and it says
+elsewhere that the site has never been identified. There is nothing to write a
+point from, and the atlas does not invent one. What it has instead is the lane
+the seeds file states, `americas`, which is where every account of the battle
+puts it; that is deviation 1310's rule working as intended, and the record is
+drawn in the lane and on no mark.
+
+**No actor**, because the two sides are Hernando de Soto's expedition and the
+polity led by Tuskaloosa, and this atlas holds a record for neither. Every
+polity record it has for the Americas before 1886 came in through Historical
+Basemaps at the snapshot level, and neither a conquistador's expedition nor a
+Mississippian chiefdom is in that source.
+
+**Why it belongs where it is filed anyway.** The umbrella's span, 1493–1898,
+contains 1540, and the subject is the umbrella's own claim: Wikidata's `P361`
+on the item names the Spanish colonization of the Americas and the filing is
+that claim and not this run's. A battle between a Spanish expedition and the
+people whose country it was marching through is what that umbrella is about.
+`docs/m42b-pool.md`, batch 33, carries the rest — including deviation 1319, the
+retitling this record needed because its sitelink names the town and not the
+battle.
+
+### The other seven of the batch, each for its own reason
+
+Eight of batch 33's ten events name neither, and the reason divides them into
+three groups. **None of them names an actor**, and that is one reason for all
+eight: the sides in every one are a Spanish expedition, a governor, a viceroyalty
+or an indigenous people, and this atlas holds a polity record for none of them.
+Every polity it has for the Americas before 1886 arrived through Historical
+Basemaps at the snapshot level, which has no conquistador's company and no
+Mapuche, Pipil, Pueblo or Huilliche polity in it. `P710` names participants on
+four of the eight, and A12 (4)'s rule only writes one the atlas already holds.
+
+**Their item names no located thing at all**, so there is nothing to write a
+point from and the lane stated in the seeds file is all they have:
+
+- `battle-of-rio-bueno-1759` — no `P625`, no `P276`, no `P131`, no `P17`. The
+  1654 battle at the same river has all of them and carries `bueno-river`; the
+  1759 one has none, and the two are separate items.
+- `spanish-assault-on-french-florida` — the same, on an item created in 2016 and
+  never located. The article names Fort Caroline and Port Royal Sound; the item
+  names neither.
+
+**Their chain ends at something with no coordinate**, which is the honest
+refusal and not a gap:
+
+- `battle-of-reynoguelen-1536` — its own `P625` is there, and the first step of
+  the chain can only reuse (a place written from an event's item would carry an
+  event's name), so it falls through to `P276` Reynogüelén (Q252165), which
+  carries no `P625` of its own. Reported as `ownPoint`, and the place is a
+  person's to write, the way Abeïbara's was.
+- `mapuche-uprising-of-1655` — `P276` Araucanía (Q3492932), which has no `P625`
+  either.
+
+**Their chain reached a coordinate and the class table refused it**, which is
+four rows of data and one question for the owner:
+
+- `pueblo-revolt` — `P276` Santa Fe de Nuevo México, which has a point; its
+  classes had no row. Three rows added.
+- `spanish-colonization-attempt-of-the-strait-of-magellan` — `P276` the Strait
+  of Magellan, which has a point; `Q37901`, strait, had no row. Added.
+- `spanish-conquest-of-el-salvador` — `P276` and `P17` El Salvador, which has a
+  point; its classes are country and sovereign state, and both are `actor` here.
+  That is deviation 1323 and it is not a row anybody can add.
+
+The first two are placeless until the next import, which now has the rows: the
+places are not written by hand here because both are things the base map may
+already draw, and deviation 1317 is what that costs.

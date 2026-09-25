@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-imenas--battle-of-tin-keraten--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tin Keraten\", revision 1370591104, § Background"
+    }
+  ],
+  "from": "battle-of-imenas",
+  "to": "battle-of-tin-keraten",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Tin Keraten's own background opens on Imenas and carries the same column forward: \"After the victory of the Battle of Iminenas, the French and Malian forces continued their war against the Islamist Jihadist coalition of MOJWA, AQIM, Ansar Dine and Al-Mulathamen\", and then \"The next target of the Franco-Malian forces was the wadi of Tin Keraten, located north-east of Imenas, 100 kilometers east of Gao.\" One force, one sweep east of Gao, and the second ground named as the next objective of the first — which is a continuation and not a date. Probable: Wikipedia alone.",
+  "dispute": null
+}

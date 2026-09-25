@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-landskrona-citadel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q139040147",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Landskrona Citadel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139040147"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Landskrona Citadel\", revision 1371762332"
+    }
+  ],
+  "title": "Siege of Landskrona Citadel",
+  "summary": "The English Wikipedia article \"Siege of Landskrona Citadel\", at revision 1371762332, opens: \"The siege of Landskrona Citadel occurred from 31 March to 7 April during Gustav Horn's invasion of Scania, in the Torstenson War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q139040147, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Torstenson War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-03-31",
+    "endDate": "1644-04-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "torstenson-war"
+}

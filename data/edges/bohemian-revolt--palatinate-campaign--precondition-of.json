@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bohemian-revolt--palatinate-campaign--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Palatinate campaign"
+    }
+  ],
+  "from": "bohemian-revolt",
+  "to": "palatinate-campaign",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article opens its Palatinate section by explaining the campaign as the Bohemian dispute failing to stay in Bohemia: \"By abandoning Frederick, the German princes hoped to restrict the dispute to Bohemia, an objective thwarted by Maximilian's dynastic ambitions. In the October 1619 Treaty of Munich, Ferdinand transferred the Palatinate's electoral vote to Bavaria, and allowed Maximilian to annex the Upper Palatinate.\" The Bohemian Revolt's own article says the same from its side: the defeat at White Mountain \"expanded the scope of the Thirty Years' War\", and \"His territories, the Rhenish Palatinate, were given to Catholic nobles\" (\"Bohemian Revolt\", revision 1372461973). Precondition-of: the campaign is fought over what the revolt cost Frederick, and the revolt is not what any party fought the Palatinate campaign for.",
+  "dispute": null
+}

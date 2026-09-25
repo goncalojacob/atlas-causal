@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-gao--fourth-battle-of-gao--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
+    }
+  ],
+  "from": "second-battle-of-gao",
+  "to": "fourth-battle-of-gao",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The same sentence of the Imenas article names two attempts and not one: after the capture of Gao on 27 January the jihadists who stayed in the region \"tried to take back the city, in two attempted operations before, first on 10 February, and then again on 20 February, but their attacks failed\", with \"20 February\" linked to the fourth battle. The atlas already holds the third as the fourth's precondition, so this edge adds no path the graph did not have; it is here because the article states the answer twice and the second statement is about this record.",
+  "dispute": null
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tin-keraten",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q6602439, the Battle of Tin Keraten, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276, P131 or P625-bearing country to fall back on, and the article calls the ground a wadi 100 km east of Gao and north-east of Imenas."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Tin Keraten"
+  ],
+  "where": {
+    "lon": 0.817,
+    "lat": 16.417,
+    "precision": "point",
+    "label": "Tin Keraten"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-siege-of-corbie",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485864",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Second siege of Corbie"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485864"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second siege of Corbie\", revision 1370737580"
+    }
+  ],
+  "title": "Second siege of Corbie",
+  "summary": "The English Wikipedia article \"Second siege of Corbie\", at revision 1370737580, opens: \"The second siege of Corbie of 1636 was begun by a French army under the command of Cardinal Richelieu on 30 September. It ended with the surrender of the Spanish garrison on 14 November.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485864, imported by tools/import/wikidata.mjs. The item's own description reads \"1636 siege, part of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1636,
+    "end": 1636,
+    "date": "1636-09-24",
+    "endDate": "1636-11-09"
+  },
+  "place": "corbie",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

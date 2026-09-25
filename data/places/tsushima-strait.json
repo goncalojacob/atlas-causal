@@ -7,38 +7,35 @@
   "aliases": [],
   "authors": [
     {
-      "name": "Claude (assistant draft, unreviewed)",
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
       "github": null
     }
   ],
   "license": "CC-BY-SA-4.0",
-  "created": "2026-09-22",
+  "created": "2026-09-25",
   "revised": null,
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place"
-    ]
+    ],
+    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
   },
   "origin": {
-    "tool": "assistant"
-  },
-  "wikidata": "Q52055",
-  "wikipedia": {
-    "en": "Tsushima Strait"
+    "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait",
-    "Eastern Channel"
+    "Tsushima Strait"
   ],
   "where": {
     "lon": 129.49,
-    "lat": 34.0075,
+    "lat": 34.008,
     "precision": "region",
     "label": "Tsushima Strait"
   },
   "region": null,
+  "regionNote": null,
   "summary": null
 }

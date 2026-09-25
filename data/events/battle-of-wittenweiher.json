@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wittenweiher",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1565234",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Wittenweiher"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1565234"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wittenweiher\", revision 1373644148"
+    }
+  ],
+  "title": "Battle of Wittenweiher",
+  "summary": "The English Wikipedia article \"Battle of Wittenweiher\", at revision 1373644148, opens: \"The Battle of Wittenweiher took place on August 9, 1638, near the village of Wittenweiher today: Wittenweier, a district of Schwanau, Baden-Württemberg, which was completely destroyed in the course of the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1565234, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 battle of the Thirty Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-08-09"
+  },
+  "place": "baden-q6877935",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

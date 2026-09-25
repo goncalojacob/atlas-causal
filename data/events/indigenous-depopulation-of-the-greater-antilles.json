@@ -21,8 +21,10 @@
   "review": {
     "status": "draft",
     "flags": [
-      "m50-chain"
-    ]
+      "m50-chain",
+      "wikidata-assigned-by-assistant"
+    ],
+    "note": "Wikidata Q122950203, \"Taíno genocide\", is this record: the import of 25 September wrote a second record for it because this one carried no item and nothing could match them. The duplicate was dropped and the identity fields written here, additively — no source, no author and no text of this record changed. The English article at revision 1370273790 is the one the dropped record quoted."
   },
   "sources": [
     {
@@ -47,5 +49,14 @@
   "names": [
     "Genocide and depopulation of the Taíno"
   ],
-  "region": null
+  "region": null,
+  "wikidata": "Q122950203",
+  "wikipedia": {
+    "en": "Taíno genocide",
+    "pt": "Genocídio taíno"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-25"
+  }
 }

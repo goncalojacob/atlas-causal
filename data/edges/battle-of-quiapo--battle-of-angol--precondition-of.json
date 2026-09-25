@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-quiapo--battle-of-angol--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Pedro de Villagra"
+    }
+  ],
+  "from": "battle-of-quiapo",
+  "to": "battle-of-angol",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Quiapo is the defeat that produced the toqui who died at Angol, and the article says so at both ends. After Quiapo: \"Soon after the defeat at Quiapo, the surviving leaders gathered and elected Illangulién as the new toqui. With most of the nations' warriors dead or wounded and the population decimated by the effects of war, starvation, and disease, he decided to retreat into the marshes of Lumaco and there gather their strength and train a new generation of warriors for a future revolt.\" At Angol: \"Lorenzo Bernal drove the Mapuche army out of their pucara and pursued them down to the river and pushed them back into it, killing Illangulién and a thousand of his men.\" Precondition-of: Quiapo is what the army destroyed at Angol was raised in answer to.",
+  "dispute": null
+}

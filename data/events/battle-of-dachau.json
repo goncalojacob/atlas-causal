@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dachau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q17326069",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Dachau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17326069"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dachau\", revision 1375566514"
+    }
+  ],
+  "title": "Battle of Dachau",
+  "summary": "The English Wikipedia article \"Battle of Dachau\", at revision 1375566514, opens: \"The Battle of Dachau was a battle that took place in the Thirty Years' War during 1648 in the town of Dachau, north of Munich, Bavaria. It took place in the final weeks of the war, when the French and Swedish forces were trying to pressure the Electorate of Bavaria. In the end, the Imperial-Bavarian army won the battle, though it was more of a skirmish than an actual battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17326069, imported by tools/import/wikidata.mjs. The item's own description reads \"1648 battle of the thirty years' war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-10-05"
+  },
+  "place": "dachau-bavaria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}
