@@ -101,7 +101,14 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // leitor tinha na mão.
   const labelsGroup = svg('g', { class: 'layer layer-labels' });
   viewport.append(landGroup, baseGroup, presencesGroup, regionsGroup, eventsGroup, labelsGroup);
-  const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'img', 'aria-label': 'Map' }, [viewport]);
+  // `role="group"` and not `role="img"` (M88 §6, the third review, finding
+  // B6). An `img` is a leaf, and this one is full of controls: every mark is a
+  // button with a name of its own since M63, and the announcement of the pane
+  // was one word with all of them thrown away — a picture a screen reader
+  // described as a single image and a keyboard could then walk into. The
+  // timeline's root has said `group` since M60; this is the same word, and the
+  // name it carries is the name it carried.
+  const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'group', 'aria-label': 'Map' }, [viewport]);
   // **On a phone the world is fitted to the pane's height** (M87 §9, review A
   // finding 5). The viewBox is 960 x 540 and the default fit is `xMidYMid meet`,
   // so the picture is letterboxed inside its pane: at 390 px wide the world can

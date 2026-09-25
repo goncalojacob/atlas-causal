@@ -981,3 +981,47 @@ test('a card waits for its own shard rather than drawing the core’s fallbacks'
     assert.notEqual(title, 'prime-minister-of-portugal', 'never the id where the title goes');
   });
 });
+
+// --- the panel is a region with one status line, not a live region ----------
+//
+// **The whole card was read out, and read out again** (M88 §8, the third
+// review, finding B8). `aria-live="polite"` on `#panel` meant every card the
+// reader opened was announced entire — the prose, every section, the counts,
+// the citations — and a card is drawn again on each shard that lands under it,
+// so the same card arrived two or three times while the reader was still
+// trying to reach it. What is announced now is one sentence naming what has
+// opened; the panel itself is a landmark a reader can go to.
+test('the panel is a named region and one status line names what opened', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url('index.html?selected=carnation-revolution-1974'),
+      'return document.querySelectorAll(".panel .card-section").length > 0;');
+    const panel = await page.eval(`
+      const el = document.getElementById('panel');
+      return { live: el.getAttribute('aria-live'), role: el.getAttribute('role'), label: el.getAttribute('aria-label') };`);
+    assert.equal(panel.live, null, 'the panel is not a live region');
+    assert.equal(panel.role, 'region');
+    assert.ok(panel.label && panel.label.trim().length > 0, 'and it says what it is');
+
+    // The sentence names the record, in the words the card's own heading uses.
+    const title = await page.eval('return document.querySelector(".panel h2")?.textContent?.trim() ?? "";');
+    const said = await page.eval(`
+      const el = document.getElementById('panel-status');
+      return el ? { text: el.textContent, role: el.getAttribute('role') } : null;`);
+    assert.ok(said, 'the status line is in the document');
+    assert.equal(said.role, 'status');
+    assert.ok(said.text.includes(title), `the status says what opened: ${JSON.stringify(said.text)} for ${JSON.stringify(title)}`);
+
+    // And opening a second record says the second record, not both.
+    const next = await page.eval(`
+      const el = document.querySelector('.panel a[href*="selected="]');
+      return el ? el.getAttribute('href') : null;`);
+    if (next) {
+      await page.eval("document.querySelector('.panel a[href*=\"selected=\"]').click(); return true;");
+      await waitFor(
+        page,
+        `return (document.getElementById('panel-status')?.textContent ?? '') !== ${JSON.stringify(said.text)};`,
+        'the status to name the next record',
+      );
+    }
+  });
+});

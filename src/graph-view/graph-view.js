@@ -309,9 +309,13 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   // Over every other layer: the one name the pointer is asking for.
   const hoverGroup = svg('g', { class: 'layer layer-hover' });
   viewport.append(bandsGroup, edgesGroup, nodesGroup, labelsGroup, hoverGroup);
+  // A group and not an image (M88 §6, review B finding 6): the marks inside it
+  // are buttons with names, and `img` is a leaf that throws every one of them
+  // away. The same word the timeline's root has carried since M60, and the
+  // same name this root already had.
   const root = svg('svg', {
     class: 'graph',
-    role: 'img',
+    role: 'group',
     'aria-label': 'The graph of events and the links between them',
   }, [viewport]);
 

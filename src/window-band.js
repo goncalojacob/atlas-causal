@@ -204,9 +204,45 @@ export function bindWindowGestures(root, {
   let drag = null;
   let dragged = false;
 
-  const setWindow = (patch) => {
+  const writeWindow = (patch) => {
     const next = windowOf(patch.from, patch.to, atlas.extent);
     if (next) state.set(next);
+  };
+
+  // **One write per frame while a handle is being dragged** (M88 §9, the third
+  // review, finding B9). A pointer reports sixty to a hundred and twenty moves
+  // a second on a trackpad, and every one of them set the window: each set is
+  // a synchronous notification, and each notification is the map, the two
+  // bands, the timeline's whole packing, the masthead's count and the panel.
+  // At 1,257 events a drag across the band was a few hundred full redraws for
+  // the one picture the reader ends on, and the band fell behind the finger.
+  //
+  // Only while a drag is in flight: the wheel, the keys and the double-click
+  // are one gesture and one answer each, and they go straight through. **The
+  // store's contract is untouched** — `state.set` is still synchronous and
+  // still notifies synchronously; what is deferred is *when this control calls
+  // it*, which is the same discipline `main.js` applies to a shard landing.
+  //
+  // The last patch wins, because a drag is a position and not a sequence, and
+  // it is flushed at `pointerup` so the window the reader let go on is the
+  // window that lands however the frames fell.
+  let booked = null;
+  let frame = null;
+  // Read at the moment it is used and not captured once: a page that has none
+  // writes straight through, and a test may put its own in place.
+  const frames = () => (typeof globalThis.requestAnimationFrame === 'function'
+    ? globalThis.requestAnimationFrame.bind(globalThis) : null);
+  const flush = () => {
+    frame = null;
+    const patch = booked;
+    booked = null;
+    if (patch) writeWindow(patch);
+  };
+  const setWindow = (patch) => {
+    const book = drag ? frames() : null;
+    if (!book) { writeWindow(patch); return; }
+    booked = patch;
+    if (frame === null) frame = book(flush) ?? true;
   };
   const currentWindow = () => resolveWindow(state.get(), atlas.extent);
   const yearAt = (clientX) => {
@@ -276,6 +312,10 @@ export function bindWindowGestures(root, {
     if (!drag) return;
     try { root.releasePointerCapture(e.pointerId); } catch { /* already released */ }
     drag = null;
+    // Whatever the last move asked for, before the frame that would have
+    // carried it: the reader has let go, and the window they let go on is the
+    // window. `drag` is already null, so this write goes straight through.
+    if (booked) flush();
   };
   root.addEventListener('pointerup', endDrag);
   root.addEventListener('pointercancel', endDrag);

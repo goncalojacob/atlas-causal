@@ -591,3 +591,58 @@ test('selecting a polity finds the events on its ground, and asks for the file t
       'the grounds are fetched once');
   });
 });
+
+// --- the chips keep the keyboard's focus ------------------------------------
+//
+// **A rewrite of the whole list under the key that pressed it** (M88 §7, the
+// third review, finding B7). `render` rewrites `innerHTML` on every state
+// change, and the buttons a reader is standing on are among the elements it
+// throws away — so pressing "all of these" with the keyboard dropped the focus
+// to the top of the document, and the reader's next Tab started from the
+// beginning of the page. The graph has put the focus back after a redraw since
+// M83 (B5) and this is the same answer: remember what the focus was on by its
+// own attributes, and find its match in what was drawn.
+//
+// And a render that draws what is already there is skipped, so the focus is
+// not moved at all on the notifications that change nothing about the chips.
+test('the lens chips keep the focus across a rewrite', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await open(page, url(`?focus=${SALAZAR},${REGIME}&from=1800&to=2030`), ready);
+    await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 2;',
+      'two chips in the header');
+    await waitFor(
+      page,
+      `return [...document.querySelectorAll('.lens-chips .lens-name')]
+        .filter((el) => el.textContent !== 'loading…').length === 2;`,
+      'both chips to be named',
+    );
+
+    // "all of these", pressed from the keyboard: the state changes, the header
+    // is drawn again, and the key stays where it was.
+    const pressed = `
+      const el = document.querySelector('.lens-chips .lens-all');
+      el.focus();
+      const was = el.getAttribute('aria-pressed');
+      el.click();
+      return was;`;
+    const was = await page.eval(pressed);
+    await waitFor(
+      page,
+      `return document.querySelector('.lens-chips .lens-all')?.getAttribute('aria-pressed') !== ${JSON.stringify(was)};`,
+      '"all of these" to answer',
+    );
+    assert.ok(await page.eval(`return document.activeElement === document.querySelector('.lens-chips .lens-all');`),
+      'the key is still on "all of these" after the header was drawn again');
+
+    // A chip's × removes that chip, so the focus cannot go back to it. It goes
+    // to the next thing in the list, which is inside the chips either way.
+    await page.eval(`
+      const el = document.querySelector('.lens-chips .lens-drop[data-focus="${SALAZAR}"]');
+      el.focus();
+      el.click();
+      return true;`);
+    await waitFor(page, 'return document.querySelectorAll(".lens-chips .lens-badge").length === 1;', 'one chip left');
+    assert.ok(await page.eval("return Boolean(document.activeElement?.closest('.lens-chips'));"),
+      'and the key is still inside the chips');
+  });
+});

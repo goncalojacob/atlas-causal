@@ -60,6 +60,10 @@ export function createPanel(container, {
   // panel is showing — and it is not state, so it is said here and not read
   // off the URL.
   onCard = () => {},
+  // The one line a screen reader is told when a record opens. Looked up by id
+  // so that a page without it — a test's fragment, the entry page — simply has
+  // none, as every other optional element here does.
+  status = globalThis.document?.getElementById('panel-status') ?? null,
 }) {
   let token = 0;
   // Whether a cluster's member list is covering the card, and whether the
@@ -823,11 +827,33 @@ export function createPanel(container, {
     render(state.get());
   }
 
+  // **One sentence per opened record** (M88 §8, the third review, finding B8).
+  // `#panel` was a live region, so every card was read out whole — the prose,
+  // the sections, the counts — and again on every shard that landed under it.
+  // The panel is a named landmark now and this is the announcement: what has
+  // just opened, said once, and nothing when the same record is drawn again.
+  //
+  // The element is outside `#panel`, because the panel's markup is rewritten
+  // card by card and would take the status line with it — the same reason the
+  // sheet's grip is outside it (index.html).
+  let announced = null;
+  const announce = (opened) => {
+    if (!status) return;
+    const what = opened ? `${opened.kind}:${opened.record.id}` : null;
+    if (what === announced) return;
+    announced = what;
+    if (!opened) { status.textContent = ''; return; }
+    const record = opened.record;
+    const name = record.title ?? record.names?.[0] ?? record.name ?? record.id;
+    status.textContent = `Opened: ${name}`;
+  };
+
   function render(s) {
     drawnFor = keyOf(s);
     covered = false;
     shown = null;
     holdShards(s);
+    announce(openingOf(s));
     // After `holdShards`, which is where this card's own shards are decided.
     seenHeld = heldSignature() ?? '';
     onCard(hasOpening(s));

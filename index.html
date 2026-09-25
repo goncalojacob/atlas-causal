@@ -120,7 +120,19 @@
         <span class="sheet-grip-bar" aria-hidden="true"></span>
         <span class="sheet-grip-label">Details</span>
       </button>
-      <aside id="panel" class="panel" aria-live="polite"></aside>
+      <!-- `role="region"` with a name, and **not a live region** (M88 §8, the
+           third review, finding B8). `aria-live="polite"` on the whole panel
+           meant that every card the reader opened was read out entire — the
+           prose, the sections, the counts, the citations — and a card is
+           rewritten on every shard that lands under it, so a reader with a
+           screen reader was read the same card two or three times over while
+           trying to reach it. What a reader needs is one sentence saying what
+           has just opened, and the panel itself reachable as a landmark; that
+           sentence is the status line below, written once per record by
+           src/panel/panel.js. -->
+      <aside id="panel" class="panel" role="region" aria-label="Details"></aside>
+      <!-- The one sentence, in the shape of the search box's count above. -->
+      <span id="panel-status" class="visually-hidden" role="status" aria-live="polite"></span>
     </div>
     <!-- A column of its own and not an overlay, because the reader goes on
          clicking events on the picture while they write: covering a third of

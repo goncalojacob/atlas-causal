@@ -184,3 +184,35 @@ test('the lanes are one tab stop each, and the arrows walk along a lane', { skip
     assert.equal((await page.eval(FOCUSED)).id, single, 'the bar keeps the focus');
   });
 });
+
+// --- the three pictures are groups, not images ------------------------------
+//
+// **`role="img"` on a picture made of controls** (M88 §6, the third review,
+// finding B6). The map's root and the graph's carried it; the timeline's has
+// been `role="group"` since M60. An `img` is a leaf: the marks inside it are
+// buttons with names, and the announcement of the pane was one label with
+// everything under it thrown away — so the keyboard could walk into a picture
+// a screen reader had just described as a single image. One word each, and
+// the name each root already carries stays exactly as it was.
+test('the three view roots are groups with names, and none of them is an image', { skip }, async () => {
+  await desk(async (page, url) => {
+    // The graph and the timeline are built when the reader first asks for
+    // them (main.js), so each is visited rather than looked for in a pane
+    // that has never been opened.
+    for (const [name, selector, at, ready] of [
+      ['map', '#map svg.map', '', READY],
+      ['graph', '#graph svg.graph', '?view=graph', 'return Boolean(document.querySelector("#graph circle.node"));'],
+      ['timeline', '#timeline svg.timeline', '?view=timeline', 'return Boolean(document.querySelector("#timeline [data-bar]"));'],
+    ]) {
+      // eslint-disable-next-line no-await-in-loop
+      await open(page, url(at), ready);
+      // eslint-disable-next-line no-await-in-loop
+      const root = await page.eval(`
+        const el = document.querySelector(${JSON.stringify(selector)});
+        return el ? { role: el.getAttribute('role'), label: el.getAttribute('aria-label') } : null;`);
+      assert.ok(root, `the ${name}'s root is in the document`);
+      assert.equal(root.role, 'group', `the ${name} is a group and not an image`);
+      assert.ok(root.label && root.label.trim().length > 0, `the ${name} says what it is`);
+    }
+  });
+});

@@ -16,7 +16,8 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { laneHeightFor, ROW_LIMITS } from '../src/timeline.js';
+import { laneHeightFor, ROW_LIMITS, lanesFor } from '../src/timeline.js';
+import { packRows } from '../src/lanes.js';
 
 const { AXIS_HEIGHT, ROW_HEIGHT, LANE_MAX } = ROW_LIMITS;
 
@@ -62,4 +63,57 @@ test('a row never shrinks below the height a title needs', () => {
       assert.ok(height <= Math.max(LANE_MAX, ROW_HEIGHT), `${rows} rows in ${pane} px: ${height}`);
     }
   }
+});
+
+// --- the lanes are packed once per drawing ---------------------------------
+//
+// **One pack and not two** (M88 §9, the third review, finding B9). The cap was
+// learned by packing once without it and then packing again with it — two
+// sweeps over the whole corpus on every move of the band — and the second pack
+// threw the title room away, which is a second reason titles collide past the
+// cap. The cap is arithmetic about the pane and is known before any packing;
+// `packRows` reports whether it bound.
+//
+// `lanesFor` is the seam: pure, and the drawing hands it the real packer.
+test('the lanes are packed once, with the cap and the title room together', () => {
+  const asked = [];
+  const pack = (events, scale, width, options) => {
+    asked.push(options);
+    return { lanes: [], capped: false };
+  };
+  const packing = { gap: 4, openEnd: 2000, affinity: () => null };
+  const titleRoom = { extra: () => 10, before: () => 0 };
+
+  lanesFor([], () => 0, 1000, { packing, titleRoom, paneHeight: 800, pack });
+  assert.equal(asked.length, 1, 'one pack per drawing');
+  const [options] = asked;
+  // Everything the drawing asked for, in one call: the packing's own rules,
+  // the room each title needs, and the cap.
+  assert.equal(options.gap, packing.gap);
+  assert.equal(typeof options.extra, 'function', 'the title room is not dropped');
+  assert.equal(typeof options.before, 'function');
+  assert.ok(Number.isFinite(options.maxRows), 'and the cap is in the same call');
+  // The cap is what the pane holds at the floor a row may not go below.
+  assert.equal(options.maxRows, Math.max(1, Math.floor((800 - AXIS_HEIGHT) / ROW_HEIGHT)));
+
+  // A pane that has measured nothing has no cap at all, which is M77's picture.
+  asked.length = 0;
+  lanesFor([], () => 0, 1000, { packing, titleRoom, paneHeight: 0, pack });
+  assert.equal(asked[0].maxRows, Infinity);
+});
+
+// And the flag that replaced the second pack: a bar that had to share a row is
+// what "past the cap" means, and it is what the drawing reads to decide
+// whether a title is written wherever it fits or wherever it was packed.
+test('packRows says whether the cap bound', () => {
+  // Three bars that overlap each other, so each wants a row of its own.
+  const events = [0, 1, 2].map((i) => ({ id: `e${i}`, when: { start: 1900, end: 1910 }, weight: i }));
+  const scale = { x: (year) => (year - 1900) * 10 };
+  const wide = packRows(events, scale, 1000, { openEnd: 1910 });
+  assert.equal(wide.capped, false, 'with rows to spare nothing shares one');
+  assert.equal(wide.count, events.length);
+
+  const tight = packRows(events, scale, 1000, { openEnd: 1910, maxRows: 1 });
+  assert.equal(tight.capped, true, 'with one row to give, the cap bound');
+  assert.equal(tight.count, 1);
 });

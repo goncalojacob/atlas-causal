@@ -10,7 +10,8 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { after } from 'node:test';
-import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import { mkdtempSync } from 'node:fs';
+import { readFile, rm, stat } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -158,9 +159,28 @@ const launched = new Map();
 // and this line cannot race anything.
 const ENDPOINT = /ws:\/\/[^\s]+/;
 
-async function launch(args, device) {
-  const profile = await mkdtemp(path.join(tmpdir(), 'atlas-cdp-'));
-  const child = spawn(chrome, [
+// **Every child this file has started, so the exit handler can kill them**
+// (M88 §10, the third review, finding B10). The handler below could only reach
+// a browser through the promise `launched` holds, and `process.on('exit')` may
+// not await anything: a `.then` booked there never runs, so a file whose hooks
+// never ran — a crash, a signal, a test that threw out of `before` — left a
+// headless Chromium and its profile on the runner with nothing to reap them.
+// A child added here the moment it is spawned, and removed when it is shut
+// down, is a set the handler can walk synchronously.
+//
+// Module level: `node --test` runs each file in a process of its own, so this
+// is this file's browsers and no others.
+export const children = new Set();
+
+export async function launch(args, device, { spawnChild = spawn } = {}) {
+  // Synchronously, so that nothing at all happens between this function being
+  // called and its child being in `children`: an `await` here is a turn of the
+  // loop in which a signal could arrive and the exit handler run with the
+  // browser already spawned and not yet reachable (M88 §10). It is one
+  // directory in the temporary directory and the launch that follows it is
+  // hundreds of milliseconds.
+  const profile = mkdtempSync(path.join(tmpdir(), 'atlas-cdp-'));
+  const child = spawnChild(chrome, [
     '--headless', '--disable-gpu', '--no-sandbox',
     // The four flags that stop the browser slowing the page down under it.
     // A headless window can be taken for occluded or backgrounded, and a
@@ -200,6 +220,10 @@ async function launch(args, device) {
     '--remote-debugging-port=0', `--user-data-dir=${profile}`,
     'about:blank',
   ], { stdio: ['ignore', 'pipe', 'pipe'] });
+  // Before the first `await` below: a launch that never resolves — the browser
+  // dies on its own port, the handshake times out — is exactly the case the
+  // set exists for, and a child added after the wait would not be in it.
+  children.add(child);
 
   // Chromium's own words, kept for the assertion below. They were piped and
   // never read before, which both risked a full pipe blocking the child and
@@ -261,6 +285,7 @@ async function browserFor(args, device) {
 
 async function shutDown(state) {
   state.browser?.close();
+  children.delete(state.child);
   state.child.kill();
   // The profile is still being written to until the browser is actually
   // gone, so the wait is not politeness: removing it first fails.
@@ -280,10 +305,14 @@ after(async () => {
   }
 });
 process.on('exit', () => {
-  for (const pending of launched.values()) {
-    // Synchronous and best-effort: nothing can be awaited here.
-    Promise.resolve(pending).then((state) => state?.child?.kill(), () => {});
+  // Synchronous, which is the whole point (M88 §10). This used to reach the
+  // browsers through `launched`, whose values are promises: the `.then` was
+  // booked on a microtask queue that never runs again, so on an abnormal exit
+  // nothing was killed at all.
+  for (const child of children) {
+    try { child.kill(); } catch { /* already gone */ }
   }
+  children.clear();
 });
 
 // The server and one page in a browser context of its own, torn down in that
@@ -431,7 +460,20 @@ export async function waitFor(page, expression, what, options = {}) {
 // (M87 §5, B8).
 export async function manifestOf({ fixtures = false } = {}) {
   const root = fixtures ? 'tests/fixtures/data' : 'data';
-  return JSON.parse(await readFile(path.join(ROOT, root, 'index', 'manifest.json'), 'utf8'));
+  const manifest = JSON.parse(await readFile(path.join(ROOT, root, 'index', 'manifest.json'), 'utf8'));
+  // **And how much the shards weigh** (M88 §12, the third review, finding
+  // B12). `settledShards` waited a fixed ten seconds for them, which was two
+  // corpora ago: the wait is a fact about how much has to arrive, and the
+  // amount grows with the records. Stated by the build rather than chosen,
+  // and read here because this is where the manifest is opened. A shard the
+  // build names and the disk has not is nothing to wait for and is counted as
+  // nothing, which is also what the page will find.
+  let bytes = 0;
+  for (const shard of manifest.attributeShards ?? []) {
+    // eslint-disable-next-line no-await-in-loop
+    bytes += await stat(path.join(ROOT, root, shard.file)).then((s) => s.size, () => 0);
+  }
+  return { ...manifest, shardBytes: bytes };
 }
 
 // Which manifest the page in front of us is reading: `?fixtures=1` is the
@@ -453,17 +495,30 @@ export async function manifestFor(page) {
 // The page asks for all of them at first paint at the whole span and for the
 // window's at a narrower one, so a test that opens a window passes the shards it
 // expects rather than the whole manifest.
-export async function settledShards(page, manifest = null, { tries = 200, every = 50 } = {}) {
-  const wanted = ((manifest ?? await manifestFor(page)).attributeShards ?? []).length;
+// How long to wait for them, from the build and not from a number typed here.
+// Ten seconds as the floor — a page has to be served, parsed and drawn before
+// the first shard is even asked for — and a second for every 200 KB the
+// manifest names, so the wait grows with the corpus exactly as the arrival
+// does. A manifest that says nothing about its own weight gets the floor,
+// which is what this waited before (M88 §12, review B finding 12).
+export const BASE_SETTLE_MS = 10_000;
+export const MS_PER_KB = 1000 / (200 * 1024);
+export const settleBudget = (manifest) => BASE_SETTLE_MS
+  + Math.round((manifest?.shardBytes ?? 0) * MS_PER_KB);
+
+export async function settledShards(page, manifest = null, { tries = null, every = 50 } = {}) {
+  const read = manifest ?? await manifestFor(page);
+  const wanted = (read.attributeShards ?? []).length;
   if (wanted === 0) return;
+  const budget = tries ?? Math.ceil(settleBudget(read) / every);
   const count = 'return performance.getEntriesByType("resource").filter((e) => e.name.includes("/index/attributes-")).length;';
   let arrived = 0;
-  for (let i = 0; i < tries; i += 1) {
+  for (let i = 0; i < budget; i += 1) {
     arrived = await page.eval(count);
     if (arrived >= wanted) return;
     await new Promise((resolve) => { setTimeout(resolve, every); });
   }
-  assert.fail(`${arrived} of ${wanted} attribute shards arrived`);
+  assert.fail(`${arrived} of ${wanted} attribute shards arrived in ${Math.round(budget * every / 1000)} s`);
 }
 
 // The wait every test about a name owes itself. A title arrives with its

@@ -213,6 +213,8 @@ export function packRows(events, scale, width, {
   // chain, lands in a handful of rows and not in all of them, which is why
   // this is a short list per key and not a structure per row.
   const carrying = new Map();
+  // Whether any bar had to share a row, which is what "past the cap" means.
+  let capped = false;
 
   for (const item of items) {
     // Everything the sweep has passed is free from here on: `item.from` only
@@ -241,6 +243,11 @@ export function packRows(events, scale, width, {
     if (index < 0) index = first;
     const end = item.x + item.width + item.room;
     if (index < 0 && ends.length >= maxRows) {
+      // The cap bound: this bar has no row of its own and shares one. Reported
+      // since M88 §9, because the timeline used to learn it by packing twice
+      // — once without the cap to see how many rows the titles wanted, and
+      // again with it — and a pack is linear in the corpus.
+      capped = true;
       // Past the cap the bars share a row and stacking draws them as one
       // with a count, which is what the timeline did before packing existed.
       // The emptiest row, so the overlap is as small as it can be — and with
@@ -273,14 +280,20 @@ export function packRows(events, scale, width, {
     }
     assigned.set(item.id, index);
   }
-  return { rows: assigned, count: Math.max(ends.length, 1) };
+  return { rows: assigned, count: Math.max(ends.length, 1), capped };
+}
+
+// The packing as lanes, and whether the cap bound. One pack answers both, so
+// the timeline asks once (M88 §9).
+export function rowLanesPacked(events, scale, width, options = {}) {
+  const { rows, count, capped } = packRows(events, scale, width, options);
+  const lanes = Array.from({ length: count }, (_, i) => lane(`row-${i}`));
+  for (const [id, index] of rows) lanes[index].members.add(id);
+  return { lanes, capped };
 }
 
 // The packing as lanes, so the timeline draws one grouping and not two: a row
 // is a lane, and since M77 there is no other kind.
 export function rowLanes(events, scale, width, options = {}) {
-  const { rows, count } = packRows(events, scale, width, options);
-  const lanes = Array.from({ length: count }, (_, i) => lane(`row-${i}`));
-  for (const [id, index] of rows) lanes[index].members.add(id);
-  return lanes;
+  return rowLanesPacked(events, scale, width, options).lanes;
 }
