@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "operation-northern-shield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "filed-from-p361",
+      "summary-from-lead"
+    ],
+    "note": "No place: A9's chain reaches only Q801, Israel, whose five P31 disagree about place or actor, so the class table refuses it and nothing is guessed. The lane is Israel's own point, which is what `laneFor` does with the country an item names. P580 is 4 December 2018 with no P582, so `end-unstated` says the null is not a claim; the article gives 13 January 2019, which is A7's to widen. Its one P710, Q58967, is not an actor held here."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q59417678",
+  "wikipedia": {
+    "en": "Operation Northern Shield"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q59417678"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Northern Shield\", revision 1368407310"
+    }
+  ],
+  "title": "Operation Northern Shield",
+  "summary": "The English Wikipedia article \"Operation Northern Shield\", at revision 1368407310, opens: \"Operation Northern Shield was an Israeli military operation that took place from 4 December 2018 until 13 January 2019. The operation's declared goal was to locate and destroy Hezbollah tunnels that cross the Blue Line from Lebanon into northern Israel. According to Israel, this operation is part of the ongoing Iran–Israel proxy conflict. On 17 December 2018, United Nations Interim Force in Lebanon (UNIFIL) acknowledged the existence of four tunnels near the Israel–Lebanon border and confirmed that two of them cross the Blue Line in violation of United Nations Security Council Resolution 1701, which helped to end the 2006 Lebanon War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q59417678, imported by tools/import/wikidata.mjs. The item's own description reads \"2018 military operation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2018,
+    "end": null,
+    "date": "2018-12-04"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (from Q801, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
+  "category": "war",
+  "actors": []
+}

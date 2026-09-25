@@ -5760,3 +5760,73 @@ either held record and no claim about either battle. Read the other way,
 held link, `2011-military-intervention-in-libya`, is a navbox link in both.
 **The component is closed under its own three articles**, and a later fire should
 spend its reading elsewhere rather than here.
+
+## Batch 64 — the 2014 Gaza War, the edge batch 62 queued, and the qid that was wrong
+
+One edge, `precondition-of`, quoted from the later record's own background.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `2014-gaza-war` | precondition-of | `operation-northern-shield` | probable |
+
+**This is the edge the stand after batch 62 asked for, and it is worth what that
+stand said.** Northern Shield's background does not merely date the war before the
+operation: *"The Israel Defense Forces (IDF) started searching for Hezbollah
+tunnels into Israel in 2013 after residents of northern Israel reported hearing
+sounds of digging, but failed to find anything. After the 2014 Gaza War, which saw
+numerous tunnels dug by Hamas from the Gaza Strip into Israel being uncovered and
+being utilized in several attacks, the IDF renewed its search for Hezbollah tunnels
+in northern Israel, and this time found indications that such tunnels existed."* A
+search that had already failed was taken up again because of what the war
+uncovered, and the laboratory built for the northern tunnels was *"based on a
+similar laboratory investigating Hamas tunnels in southern Israel"* — the war
+supplied the technique as well as the prompt. That is why this sentence is an edge
+and the eleven A14 (4) dropped were not: "After X, Y" is a refusal when nothing but
+the order is stated, and this one states the mechanism twice.
+
+**`Q17061507` is not the 2014 Gaza War.** The stand after batch 62 named that qid
+and a fire trusting it would have imported nothing: `Q17061507` carries one
+sitelink, no `P31`, no dates and no English article, and its place chain reaches
+China. The war is **`Q17324420`**, 52 sitelinks, `P580` 8 July and `P582` 26 August
+2014. **Deviation 1455**: a qid carried forward in prose from one fire to the next
+is not evidence, and the cheap check is one `Special:EntityData` read before the
+batch is planned around it — the label and the sitelink count are enough to see
+that a 52-sitelink war has not become a one-sitelink stub.
+
+**The batch grows the corpus and not the component, and A5 asks why.** The pair is
+a two-node component of its own and the count of components goes 395 to 396. The
+2014 war's own article names every neighbour this atlas holds and names none of
+them as a cause: `gaza-war-2008-2009` appears three times and every one is a
+comparison of damage — *"the damage inflicted was $4 billion, 3 times the then GDP
+of Gaza's economy"* — and the 2023 `gaza-war` article names 2014 once, in an
+enumeration, *"including four wars, in 2008–2009, 2012, 2014, and 2021"*. No
+cached lead in the atlas mentions the 2014 war at all. **What would join the pair
+to the 708 is the 2012 operation, which this atlas does not hold**: Pillar of
+Defense sits between the 2008–09 war and this one and is the obvious next Asia row.
+
+### Three refusals, and one of them is a fault in this fire's own fold
+
+- **`2013-egyptian-coup-d-etat` → `2014-gaza-war`, refused: a stated cause of an
+  unheld intermediate is not a stated cause of the event.** The article says
+  Hamas agreed to the unity government of April 2014 with *"the loss of power by
+  the Muslim Brotherhood in Egypt after a coup d'ètat in Egypt, and the economic
+  impact of the closure of its Rafah tunnels"* among its reasons. The coup is a
+  cause of the reconciliation; the reconciliation is not a record here, and the
+  article's road from it to the war runs through Israeli sanctions and the June
+  abductions. Two steps with nothing in the middle to hang an edge on.
+- **`arab-spring`, `warsaw-ghetto-uprising` and `fourth-geneva-convention`,
+  refused.** The Arab Spring is named as what influenced the reconciliation of
+  *2011*; the Warsaw Ghetto Uprising is Finkelstein's comparison; the convention is
+  a legal text quoted at both sides. And in Northern Shield's own article
+  `2006-lebanon-war` appears only as the war Resolution 1701 *"helped to end"* —
+  the resolution the tunnels violate, which is a legal frame and not a claim that
+  one brought the other about.
+- **Deviation 1454's broadened check can read a link as prose that is not about
+  the record at all.** Trying the piped display text is what recovered Gothic
+  Serpent's six hits, and here it made `2013 Egyptian coup d'état` a prose hit off
+  the display *"loss of power by the Muslim Brotherhood in Egypt after a coup
+  d'ètat in Egypt"* — which is prose, and which is about the coup, so the check did
+  its job; but a display like "the coup" or "the war" would pass the same test
+  while saying nothing. **The fold ranks candidates and never decides an edge**, and
+  this batch is the reminder: every hit was read in its own sentence before
+  anything was written, and three of four were refused there.
