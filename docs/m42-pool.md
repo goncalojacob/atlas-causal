@@ -12829,14 +12829,45 @@ completed, and this is what completion looks like in the table.
 
 **What is open, in the order a fire should weigh it:**
 
-- **Africa is the trailing lane and the Congo Crisis is its best untouched vein.**
-  Six free rows and all six dated, five held records inside the component, and the
-  stand after batch 62 already named `Operation Grandslam` (four prose hits) and the
-  `Niemba ambush` (two) at its head. **It is small enough to finish in one fire**,
-  which the Somali vein was not. The **Portuguese Colonial War** is the same shape
-  (four held, six free, six dated) and has the extra worth that it connects Africa to
-  the Portuguese spine the whole atlas started from — `hops to a Portuguese event`
-  reads 574 unreachable, and this vein is the cheapest place to move that number.
+- **Africa is the trailing lane, and its two small untouched veins were read after
+  the batches and give nothing.** This entry replaces the recommendation an earlier
+  draft of this stand made, which named both of them: they were then read, and a
+  stand that sent the next fire to re-read them would have cost it the same hour.
+  **The Congo Crisis** (five held inside the component, seven free rows, all dated)
+  has `Kindu atrocity` and `Invasion of South Kasai` linking only `congo-crisis`,
+  their own parent, so C8 bars both; `Kanyarwanda War` and `Operation Rum Punch` link
+  no held record at all; `1960 Republic of Congo coup d'état` has no English article;
+  the `Niemba ambush`'s one held link is `siege-of-jadotville`, and the sentence is
+  about Irish reputation — *"Ireland's position in future UN peacekeeping operations
+  was preserved due to an impressive handling of the siege at Jadotville the
+  following September"* — which says what Jadotville did for Ireland and nothing
+  about what the ambush did to Jadotville. **`Operation Grandslam`, the row the stand
+  after batch 62 prized, is refused on its class, and the class is not merely
+  undecided but wrong**: `Q28133839`'s only `P31` is `Q1190392`, *United Nations
+  resolution*, for a UN military offensive. That is an edit to the item and not to
+  this atlas's class table, and it is named here for a person. **The Portuguese
+  Colonial War** (four held, six free, all dated) is the same story with one
+  difference worth having, in the entry below.
+- **Deviation 1456: the plain-text extract carries the "See also" section, so a bare
+  link there passes deviation 1453 and 1454's check while making no claim at all.**
+  It is how `Operation Esmeralda` and `Operation Zeta` came to read as naming
+  `angolan-war-of-independence` and `mozambican-war-of-independence`: both links are
+  under `== See also ==` and neither article says anything about either war beyond
+  belonging to it. A fold should either cut the article at its first appendix heading
+  or check that the hit falls above one. **Every remaining row of the Portuguese
+  vein is chosen by that fault or by C8**, and the vein yields no edge.
+- **`Operation Jove` (`Q55627701`) is this run's first available two-parent filing
+  under A8, and a fire that wants it should take it knowing the cost.** Its article
+  states both umbrellas in one sentence — *"The operation was part of the
+  Guinea-Bissau War of Independence and the Portuguese Colonial War"* — and this
+  atlas holds both, with `guinea-bissau-war-of-independence` (23 January 1963 to 10
+  September 1974) containing its 16–19 November 1969 and the colonial war containing
+  it too. Its `P361` names only `Q609836`, so the second parent is A8's span and
+  subject exactly as batch 64 filed the 2014 Gaza War. **The cost is that it arrives
+  edgeless**, which is the class batch 62 refused `Q128007033` for: a part-of is not
+  an edge. It is the best row in the Portuguese vein and it is a filing rather than a
+  chain, so a fire should choose it deliberately and say which of A5 and A8 it is
+  serving.
 - **The Somali vein is spent for an import and its refusal is a question for the
   owner.** Batch 63 read all twenty-three free rows and found **one** it could
   import: four refusals are the same finding, that `somali-civil-war` begins in 1991
@@ -12892,6 +12923,8 @@ completed, and this is what completion looks like in the table.
   owns A11 (a) over every active event and A13's relations pass. Batch 63 found the
   shape that pass should expect: **an article that states an edge the atlas already
   holds is a confirmation, not a write and not a dispute.**
-- **Deviation numbers: take the next above 1455.** This fire wrote **1454** (the
-  prose check must test the form a reader sees) and **1455** (a qid carried forward in
-  prose is not evidence).
+- **Deviation numbers: take the next above 1456.** This fire wrote **1454** (the
+  prose check must test the form a reader sees), **1455** (a qid carried forward in
+  prose is not evidence) and **1456** (a "See also" link passes the prose check and
+  makes no claim). All three are faults in how candidates are chosen rather than in
+  what was written, which is where this run's reading time actually goes.
