@@ -3514,7 +3514,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 4,
       "id": "democratic-republic-of-the-congo",
       "kind": "place",
       "names": [
@@ -8093,6 +8093,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "lubumbashi",
+      "kind": "place",
+      "names": [
+        "Lubumbashi",
+        "Élisabethville"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written from Wikidata Q187593, the city the assassination of Patrice Lumumba's item names in P276 — A9's second step, taken because Q2529018 carries no P625 of its own. `city` from the item's class Q1549591, big city. The cited article puts the killing \"in Katanga, near Elizabethville\", which is this city under the name it carried in 1961; both names are kept.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12102,7 +12131,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "republic-of-the-congo-leopoldville",
       "kind": "place",
       "names": [

@@ -3922,6 +3922,15 @@
         }
       ]
     },
+    "lubumbashi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "lugou-bridge": {
       "from": "git",
       "versions": [

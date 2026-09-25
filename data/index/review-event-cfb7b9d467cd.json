@@ -5134,6 +5134,45 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 3,
+      "id": "assassination-of-patrice-lumumba",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date-from-article"
+        ],
+        "note": "Filed under the Congo Crisis from the item's own P361. The item's P585 gives the month alone, January 1961; the cited article at revision 1376437618 gives the day in its first sentence — \"assassinated on January 17, 1961\" — and that is the date written, read off the source and not supplied. Place by A9's second step (P276 Q187593, Lubumbashi, written by this batch). `death` from the class Q3882219, assassination, added to the class table with this batch. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Assassination of Patrice Lumumba"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -15485,6 +15524,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "dissolution-of-the-lumumba-government",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Congo Crisis from the item's own P361. The interval is the item's, 5 September to 1 December 1960, and the article states the first of those dates in its first sentence. Place by A9's fourth step (P17 Q618399, the Republic of the Congo (Léopoldville), a place this atlas already holds at `country`): the item carries no P625, no P276 and no P131. `revolution` from the class Q45382, coup d'état. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dissolution of the Lumumba Government"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "other",
       "cites": [
         "wikidata",
@@ -21636,6 +21713,44 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Kronstadt rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "kwilu-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead",
+          "date"
+        ],
+        "note": "Filed under the Congo Crisis from the item's own P361. The item carries a P585 of August 1963 alone, a month read as a point in time; the end is widened under A7 to 1965 from the cited article at revision 1370626353, whose title line gives \"(1963–1965)\" and whose body has the rising \"largely suppressed in the early months of 1965\". Place by A9's second step (P276 Q974). No category: Q124734, rebellion, takes none, for the reason the class table gives. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kwilu rebellion"
     },
     {
       "authors": [
@@ -28032,6 +28147,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "second-mobutu-coup-detat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "congo-crisis",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "a9-place",
+          "summary-from-lead"
+        ],
+        "note": "Filed under the Congo Crisis from the item's own P361, which is also what the article's last lead sentence says the coup ended. The item's P585 and the article's first sentence give 25 November 1965 alike. Place by A9's fourth step (P17 Q974): the item carries no P625, no P276 and no P131. `revolution` from the class Q45382, coup d'état. No P710.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Mobutu coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -29108,7 +29261,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 4,
       "id": "simba-rebellion",
       "kind": "event",
       "origin": {

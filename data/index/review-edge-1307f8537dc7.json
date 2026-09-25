@@ -3817,6 +3817,62 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "assassination-of-patrice-lumumba",
+      "id": "assassination-of-patrice-lumumba--kwilu-rebellion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "kwilu-rebellion",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "assassination-of-patrice-lumumba",
+      "id": "assassination-of-patrice-lumumba--simba-rebellion--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "simba-rebellion",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "attack-on-the-moncada-barracks",
       "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
@@ -9731,6 +9787,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "dissolution-of-the-lumumba-government",
+      "id": "dissolution-of-the-lumumba-government--assassination-of-patrice-lumumba--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "assassination-of-patrice-lumumba",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "dissolution-of-the-soviet-union",
       "id": "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of",
@@ -14502,6 +14586,34 @@
       "status": "active",
       "to": "2008-kosovo-declaration-of-independence",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "kwilu-rebellion",
+      "id": "kwilu-rebellion--simba-rebellion--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "simba-rebellion",
+      "type": "caused"
     },
     {
       "authors": [
@@ -20645,6 +20757,34 @@
       "status": "active",
       "to": "first-congo-war",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "simba-rebellion",
+      "id": "simba-rebellion--second-mobutu-coup-detat--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-mobutu-coup-detat",
+      "type": "precondition-of"
     },
     {
       "authors": [

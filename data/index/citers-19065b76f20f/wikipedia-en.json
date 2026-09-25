@@ -1916,6 +1916,18 @@
     },
     {
       "dissent": false,
+      "id": "assassination-of-patrice-lumumba--kwilu-rebellion--precondition-of",
+      "kind": "edge",
+      "locator": "\"Kwilu rebellion\", revision 1370626353, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-patrice-lumumba--simba-rebellion--precondition-of",
+      "kind": "edge",
+      "locator": "\"Simba rebellion\", revision 1375684063, § lead"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
       "kind": "edge",
       "locator": "\"Moncada Barracks\", revision 1370861034, § lead"
@@ -3158,6 +3170,18 @@
     },
     {
       "dissent": false,
+      "id": "dissolution-of-the-lumumba-government--assassination-of-patrice-lumumba--enabled",
+      "kind": "edge",
+      "locator": "\"Assassination of Patrice Lumumba\", revision 1376437618, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "dissolution-of-the-lumumba-government--assassination-of-patrice-lumumba--enabled",
+      "kind": "edge",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429, § Background"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-soviet-union--1993-russian-constitutional-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"Dissolution of the Soviet Union\", revision 1375840189, § lead"
@@ -4373,6 +4397,12 @@
       "id": "kosovo-war--2008-kosovo-declaration-of-independence--precondition-of",
       "kind": "edge",
       "locator": "\"2008 Kosovo declaration of independence\", revision 1368774231, § Build-up and § Political background"
+    },
+    {
+      "dissent": false,
+      "id": "kwilu-rebellion--simba-rebellion--caused",
+      "kind": "edge",
+      "locator": "\"Kwilu rebellion\", revision 1370626353, § Rebel activity 1963–1965"
     },
     {
       "dissent": false,
@@ -5783,6 +5813,12 @@
       "id": "simba-rebellion--first-congo-war--enabled",
       "kind": "edge",
       "locator": "\"Simba rebellion\", revision 1375684063, \"Legacy\""
+    },
+    {
+      "dissent": false,
+      "id": "simba-rebellion--second-mobutu-coup-detat--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429, § Background and lead"
     },
     {
       "dissent": false,
@@ -8486,6 +8522,12 @@
     },
     {
       "dissent": false,
+      "id": "assassination-of-patrice-lumumba",
+      "kind": "event",
+      "locator": "\"Assassination of Patrice Lumumba\", revision 1376437618"
+    },
+    {
+      "dissent": false,
       "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
       "kind": "event",
       "locator": "\"2018 Colombia police stations attacks\", revision 1340424568"
@@ -10244,6 +10286,12 @@
     },
     {
       "dissent": false,
+      "id": "dissolution-of-the-lumumba-government",
+      "kind": "event",
+      "locator": "\"Dissolution of the Lumumba Government\", revision 1371883556"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-soviet-union",
       "kind": "event",
       "locator": "\"Dissolution of the Soviet Union\", revision 1376065642"
@@ -11258,6 +11306,12 @@
     },
     {
       "dissent": false,
+      "id": "kwilu-rebellion",
+      "kind": "event",
+      "locator": "\"Kwilu rebellion\", revision 1370626353"
+    },
+    {
+      "dissent": false,
       "id": "la-noche-triste",
       "kind": "event",
       "locator": "\"La Noche Triste\", revision 1370626402"
@@ -12239,6 +12293,12 @@
       "id": "second-matabele-war",
       "kind": "event",
       "locator": "\"First Chimurenga\", revision 1370619280"
+    },
+    {
+      "dissent": false,
+      "id": "second-mobutu-coup-detat",
+      "kind": "event",
+      "locator": "\"Second Mobutu coup d'état\", revision 1371883429"
     },
     {
       "dissent": false,

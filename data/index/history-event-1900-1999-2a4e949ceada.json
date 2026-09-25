@@ -5837,6 +5837,15 @@
         }
       ]
     },
+    "assassination-of-patrice-lumumba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "assassination-of-rogerio-canha-e-sa": {
       "from": "git",
       "versions": [
@@ -9661,6 +9670,15 @@
         }
       ]
     },
+    "dissolution-of-the-lumumba-government": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "dissolution-of-the-soviet-union": {
       "from": "git",
       "versions": [
@@ -13242,6 +13260,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kwilu-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -17718,6 +17745,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "second-mobutu-coup-detat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

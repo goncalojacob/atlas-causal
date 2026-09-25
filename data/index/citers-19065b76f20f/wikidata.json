@@ -2528,6 +2528,12 @@
     },
     {
       "dissent": false,
+      "id": "assassination-of-patrice-lumumba",
+      "kind": "event",
+      "locator": "Q2529018"
+    },
+    {
+      "dissent": false,
       "id": "atentado-a-la-estacion-de-policia-de-barranquilla",
       "kind": "event",
       "locator": "Q47505031"
@@ -4268,6 +4274,12 @@
     },
     {
       "dissent": false,
+      "id": "dissolution-of-the-lumumba-government",
+      "kind": "event",
+      "locator": "Q60775580"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-soviet-union",
       "kind": "event",
       "locator": "Q5167679"
@@ -5192,6 +5204,12 @@
     },
     {
       "dissent": false,
+      "id": "kwilu-rebellion",
+      "kind": "event",
+      "locator": "Q85775188"
+    },
+    {
+      "dissent": false,
       "id": "la-noche-triste",
       "kind": "event",
       "locator": "Q1308854"
@@ -6089,6 +6107,12 @@
       "id": "second-matabele-war",
       "kind": "event",
       "locator": "Q233657"
+    },
+    {
+      "dissent": false,
+      "id": "second-mobutu-coup-detat",
+      "kind": "event",
+      "locator": "Q125549056"
     },
     {
       "dissent": false,
