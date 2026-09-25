@@ -1074,13 +1074,13 @@
   ],
   "files": {
     "citers": "index/citers-08e751573483",
-    "core": "index/core-9b6720c296b1.json",
-    "grounds": "index/grounds-975e08eecc18.json",
+    "core": "index/core-2494806a26e6.json",
+    "grounds": "index/grounds-3fe77fcb5a10.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-4a2b1b9c61e4.json",
+    "review": "index/review-e87b99631437.json",
     "search": "index/search-96a2d9850e5b.json",
     "sources": "index/sources-c4e665606f3e.json",
-    "territories": "index/territories-fec21244b6c2.json"
+    "territories": "index/territories-4325fbe38def.json"
   },
   "historyShards": [
     {
@@ -1098,14 +1098,14 @@
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-b77e9c785d47.json",
+      "file": "index/history-event-1600-1699-942842109765.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-c8ca4073c15b.json",
+      "file": "index/history-event-1700-1799-82b0a8c3053b.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
