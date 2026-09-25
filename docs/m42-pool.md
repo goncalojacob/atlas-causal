@@ -10730,19 +10730,22 @@ its own locator; the full table with the sentences is in
 | `battle-of-gao` | precondition-of | `second-battle-of-menaka` |
 | `battle-of-in-delimane-2012` | enabled | `second-battle-of-menaka` |
 
-**The largest connected component moves, 662 to 665 — the first time it has
-moved in six batches.** Batches 51 to 55 each connected every record they wrote
-and the 662 did not move by one, because every edge available to them ran from a
-parent to its own child and C8 bars those. This batch's reach is **sideways**:
-`battle-of-gao` is the June 2012 battle in which the MNLA lost the city, it is a
-**sibling** of the three arrivals under `mali-war` and not an ancestor, and C8
-has nothing to say about it. Three arrivals joined the 662 and the fourth did
-not.
+**The largest connected component moves, 662 to 665**, and the pattern it
+completes is the measurement to keep. The three Korean batches — 51, 53 and 55 —
+each connected every record they wrote and moved the largest component by
+nothing at all, because every edge those veins offered ran from a parent to its
+own child and C8 bars those. The two Mali batches between them, 52 and 54, each
+moved it. This one moves it again, for the same reason: `battle-of-gao` is the
+June 2012 battle in which the MNLA lost the city, it is a **sibling** of the
+three arrivals under `mali-war` and not an ancestor, and C8 has nothing to say
+about it.
 
-**That is the measurement to keep from this batch**, and it is the other half of
-batch 53's: what C8 costs is not that new records cannot connect, but that they
-can only connect *downward*. Where a vein holds a record the arrivals are beside
-rather than under, the component grows at once.
+So what C8 costs is not that new records cannot connect — it is that they can
+only connect **downward**. A vein whose rows are all children of one umbrella
+grows a walled garden; a vein that holds a record the arrivals stand *beside*
+grows the component at once. Batch 53's thirteen-record Korean War is the first
+kind and this batch is the second, and the difference is the vein and not the
+reading.
 
 **The component count rises by one, 250 to 251, and the edgeless count by one,
 189 to 190**, both because of `fifth-battle-of-gao`, which arrives as a
@@ -10824,7 +10827,7 @@ invariant holds over what this fire wrote. No code changed.*
 | **main** | **238**, unmoved through twenty-seven batches and four curation fires |
 | filed | 795 (+4) |
 | active edges | **957** (+4) |
-| largest connected component | **665** (+3) — the first move in six batches |
+| largest connected component | **665** (+3) — sideways, past C8 |
 | second component | **13**, the Korean War's earlier battles, unmoved |
 | components | **251** (+1): one singleton arrived and nothing was absorbed |
 | events with no edge at all | **190** (+1) |
@@ -10852,9 +10855,10 @@ Pork Chop Hill and `Q2889283` the First Battle of Maryang-san.
 - **C8 is still the largest thing standing between this atlas and the chains
   the owner asked for**, and this batch is the first evidence of what happens
   when a vein offers a way round it: three records connected **sideways** to a
-  sibling and the largest component moved for the first time since batch 50.
-  Batch 53's thirteen-record Korean War, still held outside the 665 by one rule,
-  is still the standing measurement of the cost. One edge `korean-war` →
+  sibling and the largest component moved, as it did in the Mali batches 52 and
+  54 and as the Korean batches 51, 53 and 55 between them could not. Batch 53's
+  thirteen-record Korean War, still held outside the 665 by one rule, is still
+  the standing measurement of the cost. One edge `korean-war` →
   `first-battle-of-seoul` would join eighteen.
 - **`reacted-to` reads backwards on the card, on all 53 of them** (deviation
   1443). It is a display change, it is one word, and until it is made every

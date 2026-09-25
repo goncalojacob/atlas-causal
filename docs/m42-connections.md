@@ -5242,13 +5242,13 @@ All four are `probable`: Wikipedia alone, which rule 22 will not let stand as
 consensus.
 
 **Three of the four run into a record that was already here, and the largest
-connected component moves for the first time in six batches** — 662 to 665.
-That is what C8 has been costing: batches 51 to 55 each connected every record
-they wrote and the 662 did not move by one, because every edge available was
-from a parent to its own child. Here the reach is sideways instead. The record
-the three new ones reach is `battle-of-gao`, the June 2012 battle in which the
-MNLA lost the city, and it is a sibling under `mali-war` and not an ancestor, so
-C8 has nothing to say about it.
+connected component moves** — 662 to 665. The three Korean batches, 51, 53 and
+55, each connected every record they wrote and moved it by nothing, because
+every edge those veins offered ran from a parent to its own child; the two Mali
+batches between them, 52 and 54, each moved it. Here the reach is sideways
+again. The record the three new ones reach is `battle-of-gao`, the June 2012
+battle in which the MNLA lost the city, and it is a sibling under `mali-war` and
+not an ancestor, so C8 has nothing to say about it.
 
 **`precondition-of` and not `caused`, on all three.** The articles say what the
 November fighting was *for* — an offensive to retake a city lost five months
