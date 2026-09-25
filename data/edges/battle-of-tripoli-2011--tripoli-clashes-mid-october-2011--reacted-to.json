@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-tripoli-2011--tripoli-clashes-mid-october-2011--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripoli clashes (mid-October 2011)\", revision 1374518538, lead and § Background"
+    }
+  ],
+  "from": "battle-of-tripoli-2011",
+  "to": "tripoli-clashes-mid-october-2011",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The October clashes are the loyalist answer to the city changing hands, and the article says so twice: the lead has \"a group of Gaddafi loyalists rose up against the National Transitional Council\", and the Background has \"Tripoli, the Libyan capital, fell to rebel forces in late August 2011... though it was clear that not all of the citizens of Tripoli supported the NTC. This was the first and so far only action by loyalists in the city since it came under the control of anti-regime forces.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

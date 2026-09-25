@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-brega--battle-of-brega-ajdabiya-road--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brega–Ajdabiya road\", revision 1373008352, § Background"
+    }
+  ],
+  "from": "third-battle-of-brega",
+  "to": "battle-of-brega-ajdabiya-road",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The road battle's own Background makes the third battle the state it opens in: \"On 30 March, following a government counter-offensive, loyalist forces took control of the town of Brega, just west of Ajdabiya. Rebels attempted a counter-attack to take back the town. For eight days, loyalists and rebels battled for control of Brega. In the end, government troops repelled numerous rebel attacks on the city and managed to push the rebels back to Ajdabiya by 7 April\", and \"Following the rebel retreat, government troops consolidated full control over Brega and were preparing a raid against Ajdabiya.\" The eight days are the third battle; the line it left — loyalists in Brega, rebels back in Ajdabiya — is the front the next four months were fought over. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zliten-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "title-from-article"
+    ],
+    "note": "Title from the article and not the item under A12 (5): the item's label capitalises \"Uprising\" and the article does not. Place by A9's second step, P276 Q207259, Zliten, the item carrying no P625; the place record is new. The item's P580 and P582 are the days the article gives, so nothing was widened under A7. No category: class Q124734, rebellion, carries none in the seeds table, and an import that has none says nothing."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q11681484",
+  "wikipedia": {
+    "en": "Zliten uprising"
+  },
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11681484"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zliten uprising\", revision 1374516568"
+    }
+  ],
+  "title": "Zliten uprising",
+  "summary": "The English Wikipedia article \"Zliten uprising\", at revision 1374516568, opens: \"The Zliten uprising was a local uprising in the Libyan Civil War, started by rebel anti-Gaddafi forces against loyalist pro-Gaddafi forces in the city of Zliten. The city was of strategic importance due to its close proximity to the capital of Tripoli. After Zliten, only two cities – Khoms and Tajura – separated the rebel stronghold of Misrata from Tripoli.\" Wikidata item Q11681484, whose own description reads \"Uprising in the Libyan Civil War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-06-09",
+    "endDate": "2011-06-16"
+  },
+  "place": "zliten",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "actors": []
+}

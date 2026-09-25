@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "zliten",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q207259, Zliten, reached by A9's second step from Q11681484's P276 because the Zliten uprising item carries no P625 of its own. `city` off that item's class Q515 (A12 (2))."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Zliten"
+  ],
+  "where": {
+    "lon": 14.5725,
+    "lat": 32.463888888889,
+    "precision": "city",
+    "label": "Zliten"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

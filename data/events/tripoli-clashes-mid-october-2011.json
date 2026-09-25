@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tripoli-clashes-mid-october-2011",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "title-from-article"
+    ],
+    "note": "Title from the article and not from the item under A12 (5): the item's English label is the bare \"Tripoli clashes\" and the article carries the disambiguator that tells it from the February ones. Place by A9's second step, P276 Q3579, Tripoli, which this atlas already holds; the item carries no P625. The item's only date is a P585 of 14 October, which is the day the lead gives, and the article says the rising \"was quickly quelled\", so there is nothing to widen under A7."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q7843682",
+  "wikipedia": {
+    "en": "Tripoli clashes (mid-October 2011)"
+  },
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7843682"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripoli clashes (mid-October 2011)\", revision 1374518538"
+    }
+  ],
+  "title": "Tripoli clashes (mid-October 2011)",
+  "summary": "The English Wikipedia article \"Tripoli clashes (mid-October 2011)\", at revision 1374518538, opens: \"Clashes broke out in the Libyan capital of Tripoli on 14 October 2011 when a group of Gaddafi loyalists rose up against the National Transitional Council, leading to a firefight in the city's Abu Salim district as well as smaller clashes elsewhere in the city.\" Wikidata item Q7843682, which carries no description in English or Portuguese. That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2011,
+    "end": 2011,
+    "date": "2011-10-14"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "parent": "libyan-civil-war",
+  "category": "war",
+  "actors": []
+}

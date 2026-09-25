@@ -5527,3 +5527,69 @@ sentences that say only how long afterwards, not about the word they open with.*
   later, but only in listing what became of the ships. It states no claim that the
   raid brought the hunt about, and the edge would be this run supplying the link
   between a sortie and the squadron's later destruction.
+
+## Batch 61 — the Libyan Civil War's 2011 fronts, and the pair that joined a record with no edge at all
+
+Seven edges, every one quoted from an article at the revision in its own locator,
+every locator a `wikipedia-en` citation whose revision the cache under
+`tools/import/cache/wikipedia/` now holds, so A14 (3)'s invariant is true of
+everything this batch wrote.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `third-battle-of-brega` | precondition-of | `battle-of-brega-ajdabiya-road` | probable |
+| `battle-of-brega-ajdabiya-road` | reacted-to | `fourth-battle-of-brega` | probable |
+| `battle-of-misrata-2011` | precondition-of | `battle-of-the-misrata-frontline` | probable |
+| `battle-of-misrata-2011` | enabled | `zliten-uprising` | probable |
+| `second-gulf-of-sidra-offensive` | enabled | `battle-of-sirte-2011` | probable |
+| `second-gulf-of-sidra-offensive` | precondition-of | `killing-of-muammar-gaddafi` | probable |
+| `battle-of-tripoli-2011` | reacted-to | `tripoli-clashes-mid-october-2011` | probable |
+
+**Both `reacted-to` run in the direction deviation 1420 settled** — the earlier
+thing at `from`, the thing that answered it at `to`. `battle-of-brega-ajdabiya-road`
+→ `fourth-battle-of-brega` has the deadlock at `from` and the offensive launched
+"in an attempt to break the stalemate" at `to`; `battle-of-tripoli-2011` →
+`tripoli-clashes-mid-october-2011` has the city changing hands at `from` and the
+loyalist rising against the NTC at `to`.
+
+**One "Following" sentence was kept and it is the second this run has kept.**
+`battle-of-misrata-2011` → `battle-of-the-misrata-frontline` opens on the word:
+*"Following the Battle of Misrata in mid-May 2011, rebel forces retook large parts
+of the city, which had been under pro-Gaddafi control, and established a defence
+line on Misrata's western outskirts at the small town of Dafniya."* It passes
+A14 (4)'s test for the same reason batch 60's Tashihchiao sentence did — it names
+the outcome, the ground and the line the next battle was fought on, not how long
+afterwards.
+
+**One edge is a precondition and not a cause, and the article is why.** The Gulf
+of Sidra lead says *"The offensive ended on 20 October, with the capture and
+execution of Muammar Gaddafi"*. An offensive that **ended in** the killing is a
+condition of it; the article does not say it caused it, and `caused` would be this
+run upgrading the claim.
+
+**Four edges were read and refused.**
+
+- **`tunisian-revolution` → `tripoli-protests-and-clashes-february-2011`** and the
+  Egyptian pair with it. The February article's background reads *"As the Arab
+  Spring caused revolutions in Tunisia and Egypt, which both border Libya, Gaddafi
+  was reportedly still in full control"*, and then compares the three countries'
+  corruption indices. The causal verb in that sentence belongs to the Arab Spring
+  and the two revolutions, not to the two revolutions and Tripoli, and the
+  comparison is background. **The record was refused with the edge**, for want of
+  any other: see the pool note.
+- **`battle-of-tripoli-2011` → `second-gulf-of-sidra-offensive`.** The offensive's
+  background opens *"Following the success of rebels hostile to the Gaddafi
+  government in Tripoli, rebels in Brega claimed that they had made advances"* —
+  which is A14 (4)'s refusal class exactly: it says what happened next and names no
+  condition, and the two overlap in time besides, the offensive opening on 22
+  August inside the Tripoli battle's own 20 to 28 August.
+- **`battle-of-bin-jawad` → `second-gulf-of-sidra-offensive`.** The offensive's
+  account of 24 August has loyalists ambushing the rebels at Bin Jawad *"in an echo
+  of an earlier defeat in March"*. That is batch 60's Motien Pass refusal in
+  another war: an earlier engagement this one was compared to is not a condition of
+  it.
+- **`battle-of-the-misrata-frontline` → `battle-of-bani-walid`.** The frontline
+  article has a column advancing south from Misrata and taking Bir Durfan, which
+  *"intended to capture the city of Bani Walid within days"*. A stated intention in
+  mid-August about a battle that opens on 8 September is not the article making one
+  the condition of the other.
