@@ -10903,3 +10903,16 @@ Pork Chop Hill and `Q2889283` the First Battle of Maryang-san.
   **1448**, continuing from batch 55's 1446: the brief's "from 950 upward" is
   lane B's block start and was passed long ago, and the protocol's rule is to
   continue from the larger.
+
+**The check is green on this fire's head.** Run 1808 of `validate.yml`, commit
+`84b564eb`, conclusion `success`, on its first attempt. Run 1805 on the claim
+commit passed too; 1806 on the records-and-index head and 1807 on the pool note
+were each cancelled by the next push, which is deviation 1258's chain and costs
+nothing. **2,114 tests pass locally, 1,819 pure and 295 browser, with nothing
+failed and nothing skipped**, run the way the check runs them since M63 both
+before the push and on the final tree. One suite failed on the first local run
+and it was a correspondence test this batch had moved rather than broken —
+`tests/m53.test.mjs` §4.1, whose active-event count this batch raised from 1,029
+to 1,033; it was re-taken in the same commit as the records, with the paragraph
+saying that none of the four items carries a `P710` so the numerator did not
+move. The re-run allowance is unspent: nothing was re-run.
