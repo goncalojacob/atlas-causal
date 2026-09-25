@@ -1,62 +1,8 @@
 {
-  "from": 1700,
+  "from": 1600,
   "kind": "edge",
   "records": {
-    "american-revolutionary-war--french-revolution--inspired": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "american-revolutionary-war--inconfidencia-mineira--inspired": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "american-revolutionary-war--treaty-of-paris-1783--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "anglo-french-war-1778-1783--battle-of-fort-royal--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "anglo-french-war-1778-1783--spain-and-the-american-revolutionary-war--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused": {
+    "battle-of-breitenfeld-1631--battle-of-the-alte-veste--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -65,7 +11,7 @@
         }
       ]
     },
-    "battle-of-fontenoy--battle-of-melle--precondition-of": {
+    "battle-of-fort-albany--battle-of-fort-albany-1693--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -74,8 +20,8 @@
         }
       ]
     },
-    "battle-of-grand-turk--treaty-of-paris-1783--precondition-of": {
-      "from": "revised",
+    "battle-of-herbsthausen--battle-of-nordlingen-1645--precondition-of": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -83,7 +29,7 @@
         }
       ]
     },
-    "battle-of-la-guaira--battle-of-puerto-cabello--precondition-of": {
+    "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -92,43 +38,7 @@
         }
       ]
     },
-    "battle-of-lauffeld--siege-of-maastricht-1748--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-melle--fall-of-ghent--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-mollwitz--siege-of-brieg--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-pfaffenhofen--treaty-of-fussen--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-pillpinto--siege-of-cusco-1781--enabled": {
+    "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -137,7 +47,7 @@
         }
       ]
     },
-    "battle-of-porto-bello-1739--battle-of-cartagena-de-indias--enabled": {
+    "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -146,7 +56,7 @@
         }
       ]
     },
-    "battle-of-sangarara--siege-of-cusco-1781--enabled": {
+    "battle-of-nordlingen-1634--siege-of-breisach--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -155,26 +65,8 @@
         }
       ]
     },
-    "battle-of-santiago-de-cuba-1748--battle-of-havana-1748--precondition-of": {
+    "battle-of-oldendorf--battle-of-nordlingen-1634--precondition-of": {
       "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-saylla--siege-of-cusco-1781--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-st-lucia--capture-of-st-lucia--precondition-of": {
-      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -182,8 +74,8 @@
         }
       ]
     },
-    "battle-of-the-saintes--battle-of-the-mona-passage--precondition-of": {
-      "from": "revised",
+    "battle-of-port-royal-1690--battle-of-quebec-1690--enabled": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -191,7 +83,33 @@
         }
       ]
     },
-    "capture-of-ayaviri--siege-of-cusco-1781--enabled": {
+    "battle-of-rain--battle-of-the-alte-veste--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "created",
+            "explanation",
+            "sources"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled": {
       "from": "git",
       "versions": [
         {
@@ -200,8 +118,8 @@
         }
       ]
     },
-    "capture-of-grenada-1779--battle-of-grenada--precondition-of": {
-      "from": "revised",
+    "battle-of-wolgast--edict-of-restitution--precondition-of": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -209,7 +127,25 @@
         }
       ]
     },
-    "execution-of-louis-xvi--insurrection-of-31-may-2-june-1793--reacted-to": {
+    "battle-of-zusmarshausen--battle-of-prague-1648--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "bohemian-revolt--palatinate-campaign--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "bohemian-revolt--siege-of-pilsen--enabled": {
       "from": "git",
       "versions": [
         {
@@ -218,7 +154,7 @@
         }
       ]
     },
-    "flight-to-varennes--champ-de-mars-massacre--precondition-of": {
+    "bohemian-revolt--thirty-years-war--caused": {
       "from": "git",
       "versions": [
         {
@@ -227,7 +163,7 @@
         }
       ]
     },
-    "french-revolution--haitian-revolution-1791-1804--inspired": {
+    "capture-of-bahia--campaign-of-porto-calvo--enabled": {
       "from": "git",
       "versions": [
         {
@@ -236,7 +172,7 @@
         }
       ]
     },
-    "french-revolution--napoleonic-wars--enabled": {
+    "capture-of-bahia--dutch-brazil-1630-1654--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -245,61 +181,16 @@
         }
       ]
     },
-    "great-siege-of-gibraltar--action-of-8-january-1780--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused": {
+    "capture-of-bahia--recapture-of-bahia--reacted-to": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-16"
+          "on": "2026-09-23"
         }
       ]
     },
-    "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "invasion-of-dominica-1778--capture-of-st-lucia--reacted-to": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "north-channel-naval-duel--battle-of-flamborough-head--precondition-of": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled": {
+    "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -308,7 +199,7 @@
         }
       ]
     },
-    "rebellion-of-tupac-amaru-ii--spanish-american-wars-of-independence--precondition-of": {
+    "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -317,7 +208,31 @@
         }
       ]
     },
-    "revolt-of-the-comuneros-new-granada--spanish-american-wars-of-independence--precondition-of": {
+    "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "dutch-brazil-1630-1654--the-caribbean-sugar-revolution--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "dutch-portuguese-war--dutch-brazil-1630-1654--enabled": {
       "from": "git",
       "versions": [
         {
@@ -326,8 +241,8 @@
         }
       ]
     },
-    "siege-of-brimstone-hill--battle-of-saint-kitts--precondition-of": {
-      "from": "revised",
+    "dutch-portuguese-war--portuguese-restoration-war--enabled": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -335,8 +250,8 @@
         }
       ]
     },
-    "siege-of-brimstone-hill--treaty-of-paris-1783--precondition-of": {
-      "from": "revised",
+    "edict-of-restitution--peace-of-prague-1635--precondition-of": {
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -344,7 +259,86 @@
         }
       ]
     },
-    "siege-of-cusco-1781--battle-of-pucacasa--enabled": {
+    "english-settlement-of-barbados-1627--the-atlantic-slave-trade-to-the-caribbean--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "english-settlement-of-barbados-1627--the-caribbean-sugar-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-battle-of-guararapes--second-battle-of-guararapes--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "iroquois-war-1609--battle-of-sorel--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "lachine-massacre--battle-of-the-lake-of-two-mountains--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "lachine-massacre--schenectady-massacre--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "mohawk-valley-raid--battle-of-wilton-new-york--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "mohawk-valley-raid--great-peace-of-montreal--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "peace-of-prague-1635--battle-of-chemnitz--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -353,16 +347,7 @@
         }
       ]
     },
-    "siege-of-namur-1746--battle-of-rocoux--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "siege-of-port-au-prince-1793--battle-of-cap-francais-1793--precondition-of": {
+    "peace-of-prague-1635--battle-of-wittstock--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -371,187 +356,211 @@
         }
       ]
     },
-    "siege-of-tournai-1745--battle-of-fontenoy--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "spain-and-the-american-revolutionary-war--armada-of-1779--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "spain-and-the-american-revolutionary-war--battle-of-san-fernando-de-omoa--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "spain-and-the-american-revolutionary-war--capture-of-cayo-cocina--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "spain-and-the-american-revolutionary-war--great-siege-of-gibraltar--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "spain-and-the-american-revolutionary-war--invasion-of-minorca-1781--enabled": {
-      "from": "revised",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "storming-of-the-bastille--french-revolution--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
-        }
-      ]
-    },
-    "storming-of-the-bastille--women-s-march-on-versailles--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "the-british-industrial-revolution--slave-trade-act-1807--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--cuban-revolution--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--cuban-war-of-independence-1895-1898--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--platt-amendment-1901--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "the-cuban-sugar-boom--spanish-american-war-1898--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        }
-      ]
-    },
-    "treaty-of-madrid-13-january-1750--first-treaty-of-san-ildefonso--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "treaty-of-madrid-13-january-1750--guarani-war--caused": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "united-states-declaration-of-independence--treaty-of-paris-1783--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "war-of-jenkins-ear--battle-of-cartagena-de-indias--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "war-of-jenkins-ear--war-of-the-austrian-succession--enabled": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "war-of-the-south--saint-domingue-expedition--precondition-of": {
+    "portuguese-conquest-of-maricay--capture-of-bahia--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "schenectady-massacre--battle-of-wilton-new-york--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1689--battle-of-falmouth-1690--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1696--raid-on-chignecto-1696--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1696--siege-of-fort-nashwaak--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-stralsund-1628--battle-of-wolgast--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--haitian-revolution-1791-1804--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--royal-african-company--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--saint-domingue-and-the-french-sugar-colony--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-baptist-war-1831--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-british-industrial-revolution--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-atlantic-slave-trade-to-the-caribbean--the-cuban-sugar-boom--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--the-british-industrial-revolution--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--transfer-of-the-colonial-capital-to-rio-de-janeiro-1763--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-brazilian-gold-cycle--transfer-of-the-portuguese-court-to-brazil-1807--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-caribbean-sugar-revolution--royal-african-company--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "the-caribbean-sugar-revolution--the-atlantic-slave-trade-to-the-caribbean--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "thirty-years-war--portuguese-restoration-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "war-of-the-mantuan-succession--siege-of-s-hertogenbosch--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "wheeler-s-surprise--battle-of-bloody-brook--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     }
   },
   "schema": 1,
-  "to": 1799
+  "to": 1699
 }

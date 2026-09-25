@@ -15287,6 +15287,15 @@
         }
       ]
     },
+    "operation-gothic-serpent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "operation-grapes-of-wrath": {
       "from": "git",
       "versions": [

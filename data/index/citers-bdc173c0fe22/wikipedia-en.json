@@ -5096,6 +5096,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-gothic-serpent--battle-of-mogadishu-1993--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255, § Battle of Mogadishu"
+    },
+    {
+      "dissent": false,
       "id": "operation-jaque--colombian-peace-process--precondition-of",
       "kind": "edge",
       "locator": "\"Colombian peace process\", revision 1375561117, § Background"
@@ -7493,6 +7499,12 @@
       "id": "united-nations-operation-in-somalia-ii--battle-of-mogadishu-1993--precondition-of",
       "kind": "edge",
       "locator": "\"United Nations Operation in Somalia II\", revision 1373633997, lead and \"Operation Gothic Serpent\""
+    },
+    {
+      "dissent": false,
+      "id": "united-nations-operation-in-somalia-ii--operation-gothic-serpent--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255, § UNOSOM II - SNA conflict"
     },
     {
       "dissent": false,
@@ -12929,6 +12941,12 @@
       "id": "operation-commando",
       "kind": "event",
       "locator": "\"Operation Commando\", revision 1376272180"
+    },
+    {
+      "dissent": false,
+      "id": "operation-gothic-serpent",
+      "kind": "event",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255"
     },
     {
       "dissent": false,

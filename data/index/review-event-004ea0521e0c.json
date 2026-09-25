@@ -10702,7 +10702,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "origin": {
@@ -28737,6 +28737,43 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "operation-gothic-serpent",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "somali-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "note": "Place by A9's second step, P276 Q2449, Mogadishu, which this atlas holds as `mogadishu`; the item's own P625 stands at the same city and no place record is at that point under its own name, so the chain moved on rather than writing one. The item's P580 and P582 are 22 August and 13 October 1993, inside the article's own \"from August to October 1993\", so nothing was widened under A7. The item names no P710, so `actors` is empty.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Gothic Serpent"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "operation-grapes-of-wrath",
@@ -40391,7 +40428,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "united-nations-operation-in-somalia-ii",
       "kind": "event",
       "origin": {

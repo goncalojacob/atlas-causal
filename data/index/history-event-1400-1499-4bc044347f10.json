@@ -3,7 +3,7 @@
   "kind": "event",
   "records": {
     "battle-of-vega-real": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

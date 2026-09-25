@@ -6344,6 +6344,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-gothic-serpent",
+      "kind": "event",
+      "locator": "Q3428977"
+    },
+    {
+      "dissent": false,
       "id": "operation-grapes-of-wrath",
       "kind": "event",
       "locator": "Q1473919"
