@@ -2000,6 +2000,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-andalien--battle-of-penco--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Penco\", revision 1376057986, History"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual--alhucemas-landing--precondition-of",
       "kind": "edge",
       "locator": "\"Alhucemas landing\", revision 1370427911, § Background"
@@ -2135,6 +2141,12 @@
       "id": "battle-of-la-guaira--battle-of-puerto-cabello--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of La Guaira\", revision 1370446747"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lagunillas--battle-of-millarapue--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Millarapue\", revision 1376536206, History"
     },
     {
       "dissent": false,
@@ -2297,6 +2309,12 @@
       "id": "battle-of-pavia--war-of-the-league-of-cognac--reacted-to",
       "kind": "edge",
       "locator": "\"War of the League of Cognac\", revision 1370750083"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peteroa--battle-of-mataquito--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Mataquito\", revision 1376467018, Overview"
     },
     {
       "dissent": false,
@@ -2525,6 +2543,18 @@
       "id": "battle-of-tsushima--treaty-of-portsmouth--caused",
       "kind": "edge",
       "locator": "\"Battle of Tsushima\", revision 1375712462, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucapel--battle-of-marihuenu--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Marihueñu\", revision 1370449036, History"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucapel--battle-of-mataquito--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Mataquito\", revision 1376467018, lead"
     },
     {
       "dissent": false,
@@ -8252,6 +8282,12 @@
     },
     {
       "dissent": false,
+      "id": "arauco-war",
+      "kind": "event",
+      "locator": "\"Arauco War\", revision 1376467209"
+    },
+    {
+      "dissent": false,
       "id": "argentine-surrender-in-the-falklands-war",
       "kind": "event",
       "locator": "\"Argentine surrender in the Falklands War\", revision 1290880119"
@@ -8426,6 +8462,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-andalien",
+      "kind": "event",
+      "locator": "\"Battle of Andalien\", revision 1370432007"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-angol",
+      "kind": "event",
+      "locator": "\"Battle of Angol\", revision 1370106826"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual",
       "kind": "event",
       "locator": "\"Battle of Annual\", revision 1370483005"
@@ -8528,6 +8576,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-catirai",
+      "kind": "event",
+      "locator": "\"Battle of Catirai\", revision 1370436570"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala",
       "kind": "event",
       "locator": "\"Battle of Cempoala\", revision 1370436634"
@@ -8585,6 +8639,12 @@
       "id": "battle-of-croix-des-bouquets",
       "kind": "event",
       "locator": "\"Battle of Croix-des-Bouquets\", revision 1370109349"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-curalaba",
+      "kind": "event",
+      "locator": "\"Battle of Curalaba\", revision 1370437985"
     },
     {
       "dissent": false,
@@ -8816,6 +8876,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lagunillas",
+      "kind": "event",
+      "locator": "\"Battle of Lagunillas\", revision 1370446946"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
@@ -8876,9 +8942,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marihuenu",
+      "kind": "event",
+      "locator": "\"Battle of Marihueñu\", revision 1370449036"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mata-redonda",
       "kind": "event",
       "locator": "\"Battle of Mata Redonda\", revision 1370449287"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mataquito",
+      "kind": "event",
+      "locator": "\"Battle of Mataquito\", revision 1376467018"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-millarapue",
+      "kind": "event",
+      "locator": "\"Battle of Millarapue\", revision 1376536206"
     },
     {
       "dissent": false,
@@ -8990,6 +9074,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-penco",
+      "kind": "event",
+      "locator": "\"Battle of Penco\", revision 1376057986"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peteroa",
+      "kind": "event",
+      "locator": "\"Battle of Peteroa\", revision 1376463913"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pillpinto",
       "kind": "event",
       "locator": "\"Battle of Pillpinto\", revision 1370586073"
@@ -9041,6 +9137,18 @@
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "\"Battle of Punta Quemada\", revision 1370586796"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quiapo",
+      "kind": "event",
+      "locator": "\"Battle of Quiapo\", revision 1370586947"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quilacura",
+      "kind": "event",
+      "locator": "\"Battle of Quilacura\", revision 1370586958"
     },
     {
       "dissent": false,
@@ -9311,6 +9419,12 @@
       "id": "battle-of-tsushima",
       "kind": "event",
       "locator": "\"Battle of Tsushima\", revision 1375712462"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucapel",
+      "kind": "event",
+      "locator": "\"Battle of Tucapel\", revision 1376209593"
     },
     {
       "dissent": false,
@@ -11969,6 +12083,12 @@
       "id": "siege-of-ciudad-rodrigo-1812",
       "kind": "event",
       "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-concepcion",
+      "kind": "event",
+      "locator": "\"Siege of Concepción\", revision 1370740335"
     },
     {
       "dissent": false,

@@ -2474,6 +2474,12 @@
     },
     {
       "dissent": false,
+      "id": "arauco-war",
+      "kind": "event",
+      "locator": "Q431806"
+    },
+    {
+      "dissent": false,
       "id": "argentine-surrender-in-the-falklands-war",
       "kind": "event",
       "locator": "Q4789489"
@@ -2654,6 +2660,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-andalien",
+      "kind": "event",
+      "locator": "Q3636322"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-angol",
+      "kind": "event",
+      "locator": "Q3636323"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual",
       "kind": "event",
       "locator": "Q1138460"
@@ -2756,6 +2774,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-catirai",
+      "kind": "event",
+      "locator": "Q3636379"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala",
       "kind": "event",
       "locator": "Q97610233"
@@ -2813,6 +2837,12 @@
       "id": "battle-of-croix-des-bouquets",
       "kind": "event",
       "locator": "Q2890512"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-curalaba",
+      "kind": "event",
+      "locator": "Q1629355"
     },
     {
       "dissent": false,
@@ -3044,6 +3074,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lagunillas",
+      "kind": "event",
+      "locator": "Q3636492"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "Q2889112"
@@ -3104,9 +3140,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marihuenu",
+      "kind": "event",
+      "locator": "Q2338555"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mata-redonda",
       "kind": "event",
       "locator": "Q106542703"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mataquito",
+      "kind": "event",
+      "locator": "Q1617667"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-millarapue",
+      "kind": "event",
+      "locator": "Q2339158"
     },
     {
       "dissent": false,
@@ -3218,6 +3272,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-penco",
+      "kind": "event",
+      "locator": "Q1617531"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peteroa",
+      "kind": "event",
+      "locator": "Q1616748"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pillpinto",
       "kind": "event",
       "locator": "Q137360138"
@@ -3269,6 +3335,18 @@
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "Q1615387"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quiapo",
+      "kind": "event",
+      "locator": "Q1617262"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quilacura",
+      "kind": "event",
+      "locator": "Q3636592"
     },
     {
       "dissent": false,
@@ -3533,6 +3611,12 @@
       "id": "battle-of-tsushima",
       "kind": "event",
       "locator": "Q208127"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucapel",
+      "kind": "event",
+      "locator": "Q645257"
     },
     {
       "dissent": false,
@@ -6005,6 +6089,12 @@
       "id": "siege-of-ciudad-rodrigo-1812",
       "kind": "event",
       "locator": "Q567571"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-concepcion",
+      "kind": "event",
+      "locator": "Q432297"
     },
     {
       "dissent": false,
