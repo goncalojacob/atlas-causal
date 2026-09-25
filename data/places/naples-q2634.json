@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "naples-q2634",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2634",
+  "wikipedia": {
+    "en": "Naples",
+    "pt": "Nápoles"
+  },
+  "sitelinks": {
+    "count": 173,
+    "on": "2026-09-25"
+  },
+  "sources": [],
+  "names": [
+    "Naples",
+    "Nápoles"
+  ],
+  "where": {
+    "lon": 14.248611111111112,
+    "lat": 40.83583333333333,
+    "precision": "city",
+    "label": "Naples"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q2634, imported by tools/import/wikidata.mjs. The item's own description reads \"capital city of Campania, Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "italian-campaign-of-1524-1525",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6093105",
+  "wikipedia": {
+    "en": "Italian campaign of 1524–1525",
+    "pt": "Campanha Italiana de 1524-1525"
+  },
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6093105"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian campaign of 1524–1525\", revision 1370624588"
+    }
+  ],
+  "title": "Italian campaign of 1524–1525",
+  "summary": "The English Wikipedia article \"Italian campaign of 1524–1525\", at revision 1370624588, opens: \"The Italian campaign of 1524–1525 was the final significant action of the Italian War of 1521–1526 launched by the French into Northern Italy. Led by Francis I of France, the French attempted to dislodge the Habsburgs from Italy in an attempt to control Italy for themselves. After the French invaded Lombardy, the campaign would then primarily consist of the French attempt to capture the city of Milan. However, after Francis's defeat at the Siege of Pavia, the French were driven out of Italy and Francis was taken prisoner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6093105, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Italian War of 1521–1526\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1525,
+    "date": "1524-10",
+    "endDate": "1525-02"
+  },
+  "place": "northern-italy",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-war-of-1521-1526",
+  "category": "war",
+  "actors": []
+}
