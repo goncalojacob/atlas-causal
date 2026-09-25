@@ -9158,6 +9158,41 @@ and joined to nothing**, and that is the honest state of them. This is the
 second measurement of C8's cost on this branch, after the Thirty Years' War's
 thirteen: **two more records**.
 
+### Batch 35's thirteen children that name neither an actor nor a place
+
+M67's rule: where a record names neither an actor nor a place, the filing has no
+property to rest on and the measurement has to say what context placed it. These
+thirteen are all children of `american-revolutionary-war`, all filed from their
+own `P361`, and all bare for the same two reasons at once.
+
+`battle-off-barbados`, `invasion-of-dominica-1778`, `battle-of-st-lucia`,
+`capture-of-st-lucia`, `capture-of-grenada-1779`, `battle-of-grenada`,
+`battle-of-san-fernando-de-omoa`, `action-of-8-january-1780`,
+`battle-of-fort-royal`, `battle-of-saint-kitts`, `siege-of-brimstone-hill`,
+`battle-of-the-saintes`, `battle-of-grand-turk`.
+
+**No actor**, because of deviation 1293 and nothing about these records. Their
+items name Great Britain, France, Spain or the Dutch Republic where they name a
+participant at all, and every one of those is a CShapes polity this atlas begins
+in **1886** — a hundred years after the action. A participant not alive in the
+year of the event is not something the atlas should say, so the list was
+withheld, as it was in batches 26, 29, 30, 31 and 32.
+
+**No place**, because each carries its own `P625` in the Caribbean and nothing
+the place chain can name. `P276` points at Barbados, Dominica, St Lucia,
+Grenada, Saint Kitts, the Turks and Caicos: islands whose Wikidata classes are
+sovereign states and dependent territories, which are not place classes here,
+and which Natural Earth has no city for at the point the item gives. Every one
+is drawn in the `americas` lane from that point and on no mark. This is the
+largest single block of what the place pass exists for, and the last fire named
+that pass first.
+
+**What places them is the war.** Each is a named action of the American
+Revolutionary War, dated inside 1775–1783, and its own item says so in `P361`;
+`filedUnder` took that statement and rule 24's arithmetic agreed with it. Eight
+of the thirteen carry an edge besides, to a sibling or to the Treaty of Paris,
+so the filing is not the only thing holding them.
+
 ### What was refused, and why
 
 **Q136723606, "The First Salute."** Its `P31` is `Q858893`, whose own item
