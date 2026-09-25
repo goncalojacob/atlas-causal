@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-gao--second-battle-of-menaka--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Ménaka\", revision 1370736445, § Background"
+    }
+  ],
+  "from": "battle-of-gao",
+  "to": "second-battle-of-menaka",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Ménaka article states both halves in one sentence — that Gao had been the MNLA's base and was taken from it, and that the attack on Ménaka was the answer to the attempt to get it back: \"On 16 November 2012, during the MNLA (Movement for the National Liberation of Azawad) failed offensive to reclaim its former city-base of Gao recently taken by Islamists groups, Islamists launch a counter-attack of their own targeted at the MNLA stronghold of Ménaka, north of Gao, the last bastion under MNLA control.\" Precondition and not cause: five months separate the two and the article gives the June battle as the standing situation the November attack was made in. Probable: Wikipedia alone.",
+  "dispute": null
+}
