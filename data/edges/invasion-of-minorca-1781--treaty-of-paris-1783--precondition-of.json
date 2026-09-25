@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Minorca (1781)\", revision 1370624056"
+    }
+  ],
+  "from": "invasion-of-minorca-1781",
+  "to": "treaty-of-paris-1783",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Minorca's article carries the whole argument: \"an important step in the achievement of Spain's aims in its alliance with France against Britain during the American Revolutionary War. The ultimate result was the devolution of the island to Spain in the Treaty of Paris in 1783.\" Precondition-of: the island had to be taken before it could be ceded.",
+  "dispute": null
+}

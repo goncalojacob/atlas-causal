@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-oldendorf--battle-of-nordlingen-1634--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Swedish intervention"
+    }
+  ],
+  "from": "battle-of-oldendorf",
+  "to": "battle-of-nordlingen-1634",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Oldendorf is where Wallenstein lost the emperor's confidence, and losing Wallenstein is what the article gives as the reason the Imperial army at Nördlingen was Spanish. Three sentences, in order: \"In July, the Swedes and their allies defeated a Bavarian army at Oldendorf. Wallenstein's critics claimed this was due to his failure to support them, while rumours spread that he was preparing to switch sides. Ferdinand II ordered his arrest in February 1634, and he was assassinated by his own officers in Cheb on 25th.\" Then: \"The loss of Wallenstein and his organisation left Ferdinand II reliant on Spain for military support... Cardinal-Infante Ferdinand of Austria... raised an army of 18,000 in Italy, which met up with 15,000 Imperial troops at Donauwörth on 2 September 1634. Four days later, their combined army defeated Horn and Bernard at Nördlingen.\" Precondition-of and not caused: a defeat that discredited a general is not the cause of a battle two years later; it is what made the army that fought it.",
+  "dispute": null
+}

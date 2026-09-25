@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spain-and-the-american-revolutionary-war--invasion-of-minorca-1781--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Minorca (1781)\", revision 1370624056"
+    }
+  ],
+  "from": "spain-and-the-american-revolutionary-war",
+  "to": "invasion-of-minorca-1781",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Minorca's article makes the reconquest one of Spain's own war aims inside the alliance: \"an important step in the achievement of Spain's aims in its alliance with France against Britain during the American Revolutionary War.\" Enabled: the alliance is what gave Spain the fleet and the moment.",
+  "dispute": null
+}

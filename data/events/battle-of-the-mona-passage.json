@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-mona-passage",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4090287",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of the Mona Passage"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4090287"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Mona Passage\", revision 1370601334"
+    }
+  ],
+  "title": "Battle of the Mona Passage",
+  "summary": "The English Wikipedia article \"Battle of the Mona Passage\", at revision 1370601334, opens: \"The Battle of the Mona Passage was fought on 19 April 1782 between the British and French navies during the American Revolutionary War. A British fleet under Rear-Admiral of the Blue Sir Samuel Hood engaged a French squadron under Georges-François de Framond which had escaped the Battle of the Saintes a week earlier. The two forces met and engaged at the Mona Passage where Hood's fleet overtook and captured four French warships, completing the British victory at the Saintes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4090287, imported by tools/import/wikidata.mjs. The item's own description reads \"on 19 April 1782\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-04-19"
+  },
+  "place": "mona-passage",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

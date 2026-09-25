@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-julich-1621-1622",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q17122425",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Jülich (1621–1622)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17122425"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jülich (1621–1622)\", revision 1370742177"
+    }
+  ],
+  "title": "Siege of Jülich (1621–1622)",
+  "summary": "The English Wikipedia article \"Siege of Jülich (1621–1622)\", at revision 1370742177, opens: \"The siege of Jülich was a major operation in the second phase of the Eighty Years' War that took place from 5 September 1621 to 3 February 1622. A few months after the Twelve Years' Truce between the Dutch Republic and the Spanish Monarchy expired, the Spanish Army of Flanders, led by the Genoese nobleman Ambrogio Spinola, went on the offensive against the Republic and approached the Rhine river to mask its true intentions: laying siege to the town of Jülich, which the Dutch States Army had occupied in 1610 during the War of the Jülich Succession. Although the capture of the town would not allow for a Spanish invasion of the Republic, its location between the Rhine and Meuse rivers rendered it strategically significant for both sides, given that the United Provinces greatly benefited from the river trade with the neighboring neutral states and Spain was pursuing a strategy of blockading the waterways which flowed across the Republic to ruin its economy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17122425, imported by tools/import/wikidata.mjs. The item's own description reads \"1621-1622 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1621,
+    "end": 1622,
+    "date": "1621-09-05",
+    "endDate": "1622-02-03"
+  },
+  "place": "julich",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

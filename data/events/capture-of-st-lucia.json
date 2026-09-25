@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-st-lucia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16256520",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Capture of St. Lucia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16256520"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of St. Lucia\", revision 1370609642"
+    }
+  ],
+  "title": "Capture of St. Lucia",
+  "summary": "The English Wikipedia article \"Capture of St. Lucia\", at revision 1370609642, opens: \"The Capture of St Lucia was the result of a campaign from 18–28 December 1778 by British land and naval forces to take over the island, which was a French colony. Britain's actions followed the capture of the British-controlled island of Dominica by French forces in a surprise invasion in September 1778. During the Battle of St. Lucia, the British fleet defeated a French fleet sent to reinforce the island. A few days later relatively inexperienced French troops were soundly defeated by entrenched British troops during the Battle of Morne de la Vigie. Realising that another British fleet would soon arrive with reinforcements, the French garrison surrendered. The remaining French troops were evacuated, and the French fleet returned to Martinique, another French colony. St. Lucia stayed in the hands of the British.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16256520, imported by tools/import/wikidata.mjs. The item's own description reads \"British capture of the French colony of Saint Lucia in 1778\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1778,
+    "end": 1778,
+    "date": "1778-12-18",
+    "endDate": "1778-12-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

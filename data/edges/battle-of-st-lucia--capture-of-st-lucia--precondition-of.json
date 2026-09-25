@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-lucia--capture-of-st-lucia--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of St Lucia\", revision 1370609642"
+    }
+  ],
+  "from": "battle-of-st-lucia",
+  "to": "capture-of-st-lucia",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The naval action is what kept the island's garrison from being relieved: \"During the Battle of St. Lucia, the British fleet defeated a French fleet sent to reinforce the island... Realising that another British fleet would soon arrive with reinforcements, the French garrison surrendered.\" Precondition-of: the surrender follows from the reinforcement having been stopped, which is what the battle did.",
+  "dispute": null
+}

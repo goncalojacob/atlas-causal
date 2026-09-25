@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-salses",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3486021",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Salses"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3486021"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Salses\", revision 1370744942"
+    }
+  ],
+  "title": "Siege of Salses",
+  "summary": "The English Wikipedia article \"Siege of Salses\", at revision 1370744942, opens: \"The siege of Salses (1639–1640) was a double siege during the Franco-Spanish War (1635–1659), starting with a French success, but ending with a Spanish victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3486021, imported by tools/import/wikidata.mjs. The item's own description reads \"1639 siege in the Franco-Spanish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1639,
+    "end": 1640,
+    "date": "1639-09-01",
+    "endDate": "1640-01-06"
+  },
+  "place": "salses-le-chateau",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

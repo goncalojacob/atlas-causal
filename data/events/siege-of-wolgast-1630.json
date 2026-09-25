@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-wolgast-1630",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q133571169",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Wolgast (1630)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133571169"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Wolgast (1630)\", revision 1370746457"
+    }
+  ],
+  "title": "Siege of Wolgast (1630)",
+  "summary": "The English Wikipedia article \"Siege of Wolgast (1630)\", at revision 1370746457, opens: \"The Siege of Wolgast was a Swedish siege of the imperial Garrison of Wolgast during the Thirty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q133571169, imported by tools/import/wikidata.mjs. The item's own description reads \"1630 Siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1630,
+    "end": 1630,
+    "date": "1630-06-30",
+    "endDate": "1630-08-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

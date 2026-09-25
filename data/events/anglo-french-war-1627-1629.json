@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1627-1629",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4065200",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Anglo-French War (1627–1629)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4065200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-French War (1627–1629)\", revision 1374314585"
+    }
+  ],
+  "title": "Anglo-French War (1627–1629)",
+  "summary": "The English Wikipedia article \"Anglo-French War (1627–1629)\", at revision 1374314585, opens: \"The Anglo-French War of 1627–1629 was a military conflict fought between the Kingdom of France and the Kingdom of England between 1627 and 1629. It involved mainly actions at sea. The centrepiece of the conflict was the siege of La Rochelle (1627–1628) in which the English Crown supported the French Huguenots in their fight against the French royal forces of Louis XIII. La Rochelle had become the stronghold of the French Huguenots and was under their own governance. It was the centre of Huguenot seapower and the strongest centre of resistance against the central government.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4065200, imported by tools/import/wikidata.mjs. The item's own description reads \"Naval conflict (1627–29)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1629
+  },
+  "place": "france-q142",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "great-siege-of-gibraltar--action-of-8-january-1780--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 8 January 1780\", revision 1370618716"
+    }
+  ],
+  "from": "great-siege-of-gibraltar",
+  "to": "action-of-8-january-1780",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The convoy was taken by a fleet that was at sea because of the siege: \"Rodney's fleet was en route to relieve Gibraltar, and this action took place several days before Rodney's engagement\" off Cape St Vincent. Enabled and not caused: the siege is why a British fleet was off Finisterre in January 1780, not why it met that particular Spanish convoy. The arrow runs this way because the siege had been under way since June 1779 and the action is a step of its first relief.",
+  "dispute": null
+}

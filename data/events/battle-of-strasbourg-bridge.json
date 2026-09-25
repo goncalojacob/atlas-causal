@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-strasbourg-bridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q19901744",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Strasbourg Bridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19901744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Strasbourg Bridge\", revision 1370590004"
+    }
+  ],
+  "title": "Battle of Strasbourg Bridge",
+  "summary": "The English Wikipedia article \"Battle of Strasbourg Bridge\", at revision 1370590004, opens: \"The Battle of Strasbourg Bridge, 26 to 27 September 1634, took place during the Thirty Years' War, outside the Free imperial city of Strasbourg. Following their defeat at Nördlingen on 6 September by an Imperial-Spanish force, the Swedish commander, Otto Louis, tried to retreat over the Rhine using the Strasbourg bridge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19901744, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the thirty years war, 1634\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1634,
+    "end": 1634,
+    "date": "1634-09-28"
+  },
+  "place": "willstatt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lons-le-saunier",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q203529",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Lons-le-Saunier",
+    "pt": "Lons-le-Saunier"
+  },
+  "sources": [],
+  "names": [
+    "Lons-le-Saunier"
+  ],
+  "where": {
+    "lon": 5.5538888888889,
+    "lat": 46.674444444444,
+    "precision": "city",
+    "label": "Lons-le-Saunier"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q203529, imported by tools/import/wikidata.mjs. The item's own description reads \"commune in Jura, France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

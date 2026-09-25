@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "edict-of-restitution--peace-of-prague-1635--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Thirty Years' War\", revision 1376343040, § Swedish intervention"
+    }
+  ],
+  "from": "edict-of-restitution",
+  "to": "peace-of-prague-1635",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Peace of Prague is where the Edict was given up, and the Edict is what the Peace had to settle. The article on the Edict: \"This new assault on 'German liberties' ensured continuing opposition and undermined his previous success.\" On the Peace, six years later: \"A few days later, the German states and Ferdinand agreed to the Peace of Prague. In return for withdrawing the Edict of Restitution, the Heilbronn and Catholic Leagues agreed to dissolve their forces, which were replaced by a single Imperial army.\" Precondition-of: withdrawing the Edict is the concession the settlement was built on, so the Edict is what the Peace is a peace about.",
+  "dispute": null
+}

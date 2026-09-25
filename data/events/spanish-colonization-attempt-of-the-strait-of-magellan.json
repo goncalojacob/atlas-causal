@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spanish-colonization-attempt-of-the-strait-of-magellan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q110612748",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Spanish colonization attempt of the Strait of Magellan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q110612748"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish colonization attempt of the Strait of Magellan\", revision 1337740019"
+    }
+  ],
+  "title": "Spanish colonization attempt of the Strait of Magellan",
+  "summary": "The English Wikipedia article \"Spanish colonization attempt of the Strait of Magellan\", at revision 1337740019, opens: \"In the late 16th century, the Spanish Empire attempted to settle the Strait of Magellan with the aim of controlling the only known passage between the Atlantic and Pacific oceans at that time. The project was a direct response to Francis Drake's unexpected entry into the Pacific through the strait in 1578 and the subsequent havoc his men wreaked upon the Pacific coast of Spanish America. The colonization effort took the form of a naval expedition led by veteran explorer Pedro Sarmiento de Gamboa, which set sail from Cádiz in December 1581. The expedition established two short-lived settlements in the strait, Nombre de Jesús and Ciudad del Rey Don Felipe. However, the settlers proved poorly prepared for the cool and windy environment of the strait, and starvation and disease was soon rampant. A resupply expedition organized by Sarmiento in Rio de Janeiro in 1585 was unable to reach the strait due to unfavorable weather. Aid to the struggling colony was later hampered by Sarmiento falling prisoner to English corsairs in 1586 and the unresponsiveness of King Philip II, likely due to the strain of Spain's resources caused by the wars with England and Dutch rebels. The last known survivor was rescued by a passing ship in 1590.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q110612748, imported by tools/import/wikidata.mjs. The item's own description reads \"two failed colonization efforts in the late 16th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1590,
+    "date": "1581-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-arras-1640",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815115",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Arras (1640)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815115"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Arras (1640)\", revision 1370738975"
+    }
+  ],
+  "title": "Siege of Arras (1640)",
+  "summary": "The English Wikipedia article \"Siege of Arras (1640)\", at revision 1370738975, opens: \"The siege of Arras took place from 22 June to 9 August 1640, during the Franco-Spanish War that had begun in 1635, a connected conflict of the Thirty Years' War. A French army besieged the Spanish-held town of Arras, capital of the province of Artois, then part of the Spanish Netherlands, which surrendered after holding out for 48 days.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815115, imported by tools/import/wikidata.mjs. The item's own description reads \"1640 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1640,
+    "date": "1640-07-09",
+    "endDate": "1640-08-09"
+  },
+  "place": "arras",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "thirty-years-war"
+}

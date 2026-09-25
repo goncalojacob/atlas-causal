@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dutch-portuguese-war--portuguese-restoration-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Restoration War\", revision 1370704737"
+    }
+  ],
+  "from": "dutch-portuguese-war",
+  "to": "portuguese-restoration-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Restoration War's own article names Portugal's other war as one of the two things that shaped it: \"The period from 1640 to 1668 was marked by periodic skirmishes between Portugal and Spain, as well as short episodes of more serious warfare, much of it occasioned by Spanish and Portuguese entanglements with non-Iberian powers... Portugal was involved in the Dutch-Portuguese War until 1663.\" Enabled and not caused: the article makes the entanglement what occasioned the fighting's shape and timing, not what brought the revolt about — the revolt of 1640 was against the Iberian Union, and the Treaty of Lisbon in 1668 is what \"bringing a formal end to the Iberian Union\" refers to.",
+  "dispute": null
+}

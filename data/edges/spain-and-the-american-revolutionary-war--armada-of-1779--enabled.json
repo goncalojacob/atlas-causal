@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spain-and-the-american-revolutionary-war--armada-of-1779--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Armada of 1779\", revision 1370428966"
+    }
+  ],
+  "from": "spain-and-the-american-revolutionary-war",
+  "to": "armada-of-1779",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Armada was a joint enterprise and could not have been mounted by France alone: \"The Armada of 1779 was a combined Franco-Spanish naval enterprise intended to divert British military assets, primarily of the Royal Navy, from other war theatres by invading the Kingdom of Great Britain during the American Revolutionary War.\" Enabled: Spain at war is what made the combination, and the fleet, exist.",
+  "dispute": null
+}

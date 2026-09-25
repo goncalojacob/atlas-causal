@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dorsten",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3886",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Dorsten",
+    "pt": "Dorsten"
+  },
+  "sources": [],
+  "names": [
+    "Dorsten"
+  ],
+  "where": {
+    "lon": 6.9641666666667,
+    "lat": 51.66,
+    "precision": "city",
+    "label": "Dorsten"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": "Wikidata item Q3886, imported by tools/import/wikidata.mjs. The item's own description reads \"town in Recklinghausen District, in North Rhine-Westphalia, Germany\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+}

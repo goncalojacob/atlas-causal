@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "north-channel-naval-duel--battle-of-flamborough-head--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"North Channel Naval Duel\", revision 1370629780"
+    }
+  ],
+  "from": "north-channel-naval-duel",
+  "to": "battle-of-flamborough-head",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Ranger's action is where the campaign Flamborough Head ends began: \"it was the first American naval success within Atlantic waters... The action was one of a series of actions by Jones that brought the war to British waters.\" Flamborough Head, off Yorkshire fifteen months later, is the last and most celebrated of that series, and the same officer commands both. Precondition-of and not caused: the article makes the one a member of a series, not the cause of another action in it.",
+  "dispute": null
+}

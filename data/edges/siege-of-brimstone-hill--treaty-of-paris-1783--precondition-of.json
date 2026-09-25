@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-brimstone-hill--treaty-of-paris-1783--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Brimstone Hill\", revision 1370739793"
+    }
+  ],
+  "from": "siege-of-brimstone-hill",
+  "to": "treaty-of-paris-1783",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The island taken in 1782 is one of the things the peace had to settle: \"About a year later, the Treaty of Paris restored Saint Kitts and adjacent Nevis to British rule.\" Precondition-of and not caused: the capture is what gave the treaty something to restore, and the article says only that.",
+  "dispute": null
+}

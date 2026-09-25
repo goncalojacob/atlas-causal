@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "spanish-assault-on-french-florida",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16837786",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Spanish assault on French Florida"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16837786"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish assault on French Florida\", revision 1374311563"
+    }
+  ],
+  "title": "Spanish assault on French Florida",
+  "summary": "The English Wikipedia article \"Spanish assault on French Florida\", at revision 1374311563, opens: \"The Spanish assault on French Florida began as part of imperial Spain's geopolitical strategy of developing colonies in the New World to protect its claimed territories against incursions by other European powers. From the early 16th century, the French had historic claims to some of the lands in the New World that the Spanish called La Florida. The French crown and the Huguenots led by Admiral Gaspard de Coligny believed that planting French settlers in Florida would help defuse religious conflicts in France and strengthen its own claim to a part of North America. The Crown wanted to discover and exploit valuable commodities, especially silver and gold, as the Spanish had done with the mines of Mexico and Central and South America. The political and religious enmities that existed between the Catholics and Huguenots of France resulted in an attempt by the Huguenot Jean Ribault in February 1562 to settle a colony at Charlesfort on Port Royal Sound, and the subsequent arrival of René Goulaine de Laudonnière at Fort Caroline, on the St. Johns River in June 1564.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16837786, imported by tools/import/wikidata.mjs. The item's own description reads \"1565 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1565,
+    "end": 1565,
+    "date": "1565-09-04",
+    "endDate": "1565-10-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

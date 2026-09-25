@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "portuguese-restoration-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1501724",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Portuguese Restoration War",
+    "pt": "Guerra da Restauração (1640-1668)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1501724"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese Restoration War\", revision 1370704737"
+    }
+  ],
+  "title": "Portuguese Restoration War",
+  "summary": "The English Wikipedia article \"Portuguese Restoration War\", at revision 1370704737, opens: \"The Restoration War between Portugal and Spain began in 1641 and ended with the Treaty of Lisbon in 1668, bringing a formal end to the Iberian Union.\nThe period from 1640 to 1668 was marked by periodic skirmishes between Portugal and Spain, as well as short episodes of more serious warfare, much of it occasioned by Spanish and Portuguese entanglements with non-Iberian powers. Spain was involved in the Thirty Years' War until 1648 and the Franco-Spanish War until 1659, while Portugal was involved in the Dutch–Portuguese War until 1663.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1501724, imported by tools/import/wikidata.mjs. The item's own description reads \"1640-1688 war between Portugal and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1668,
+    "date": "1640-12-01",
+    "endDate": "1668-02-13"
+  },
+  "place": "iberian-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

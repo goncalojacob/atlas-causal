@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pueblo-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1547791",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Pueblo Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1547791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pueblo Revolt\", revision 1373524502"
+    }
+  ],
+  "title": "Pueblo Revolt",
+  "summary": "The English Wikipedia article \"Pueblo Revolt\", at revision 1373524502, opens: \"The Pueblo Revolt of 1680, also known as Popé's Rebellion or Po'pay's Rebellion, was an uprising of most of the Indigenous Pueblo people against the Spanish colonists in the province of Santa Fe de Nuevo México, larger than present-day New Mexico. Persistent Spanish policies, coupled with incidents of brutality and cruelty such as those that occurred in 1599 and resulted in the Ácoma Massacre, stoked animosity and gave rise to the eventual Revolt of 1680. The persecution and mistreatment of Pueblo people who adhered to traditional religious practices was the most despised of these. Scholars consider it the first Native American religious traditionalist revitalization movement. The Spaniards were resolved to abolish pagan forms of worship and replace them with Christianity. The Pueblo Revolt killed 400 Spaniards and drove the remaining 2,000 settlers out of the province. The Spaniards returned to New Mexico twelve years later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1547791, imported by tools/import/wikidata.mjs. The item's own description reads \"1680 Indigenous Pueblo uprising against Spanish colonizers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1680,
+    "end": 1680,
+    "date": "1680-08-10",
+    "endDate": "1680-08-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

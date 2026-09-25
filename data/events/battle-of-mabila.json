@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-mabila",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "title-from-item"
+    ],
+    "note": "The English article this record cites is \"Mabila\", the fortress town; the event is the battle fought there on 18 October 1540, which is what Wikidata Q6721586 is classed and dated as and what its own English label calls it. The title is that label; the article stays the citation."
+  },
+  "wikidata": "Q6721586",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Mabila"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6721586"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mabila\", revision 1371281324"
+    }
+  ],
+  "title": "Battle of Mabila",
+  "summary": "The English Wikipedia article \"Mabila\", at revision 1371281324, opens: \"Mabila was a small fortress town under a polity led by Tuskaloosa in 1540, in a region of present-day central Alabama. The exact location has been debated for centuries, but southwest of present-day Selma, Alabama, is one possibility. In late 2021, archaeologists announced the excavation of Spanish artifacts at several Native American settlement sites in Marengo County that indicate that they have found the historical province of Mabila, although not the town itself. They theorize that the town site is within a few miles of their excavations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6721586, imported by tools/import/wikidata.mjs. The item's own description reads \"battle at a former small fortress town located in present-day Alabama, USA\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1540,
+    "end": 1540,
+    "date": "1540-10-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "spanish-colonization-of-the-americas"
+}

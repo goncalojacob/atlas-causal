@@ -22,7 +22,10 @@ import {
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
+  leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
+  LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
+import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
 import { schemas, ROOT } from './helpers.mjs';
 import { isDraft } from '../src/origin.js';
 import { PRECISIONS } from '../src/vocab.js';
@@ -408,7 +411,12 @@ test('a record with no English name of any kind is imported flagged, never trans
   assert.equal(convention.title, 'Invented Convention of Northfield');
   assert.equal(convention.wikipedia.en, 'Invented Convention of Northfield',
     'the title and the sitelink are the same string, which is the bug: it was there and unread');
-  assert.deepEqual(convention.review.flags, [IMPORTED_FLAG], 'an English name is an English name, label or title');
+  // The summary pass rides along now (deviation 1310): this item has an English
+  // article, so its lead is what the summary quotes and the flag says so. What
+  // the test is about is the one flag that is *not* there.
+  assert.deepEqual(convention.review.flags, [IMPORTED_FLAG, LEAD_SUMMARY_FLAG],
+    'an English name is an English name, label or title');
+  assert.ok(!convention.review.flags.includes(NOT_ENGLISH_FLAG));
 
   const election = await readJson(path.join(dir, 'events', 'eleicao-regional-inventada-de-1976.json'));
   assert.equal(election.title, 'Eleição regional inventada de 1976',
@@ -1171,4 +1179,305 @@ test('--reconcile writes the names onto the record it matched, under the same ru
   assert.deepEqual(after.names, ['Rising of Northfield', 'Levantamento de Northfield'], 'less the title itself');
   assert.ok(after.review.flags.includes('imported-names'));
   assert.equal(after.wikidata, 'Q9000001', 'and the identifier the pass was for');
+});
+
+// --- the three passes a batch used to write by hand (deviation 1310) --------
+//
+// The summary from the cached lead, the A9 place chain and the P361 filing were
+// script code a fire wrote again at every batch, and two of the faults of 24
+// September were in that code. These hold the rules the tool now carries.
+
+test('the summary from the lead quotes the article at its revision, and src/summary.js takes it apart again', async () => {
+  const item = await read('Q9000001');
+  const lead = leadRecord({
+    qid: 'Q9000001', lang: 'en', title: 'Northfield Rising',
+    revid: 1234567, fetched: '2026-09-25',
+    text: 'The Northfield Rising was a rising in Northfield in 1850.',
+  });
+  const summary = leadSummary(item, lead);
+  assert.match(summary, /^The English Wikipedia article "Northfield Rising", at revision 1234567, opens: "/);
+  assert.ok(summary.includes(PROVENANCE_SENTENCES[0]), 'and says whose account it is');
+  assert.ok(summary.includes(importedSummary(item)), 'and keeps the item\'s own note after it');
+
+  // The point of writing it in this shape and no other: the card reads it back.
+  const { body, credit, provenance } = readSummary(summary);
+  assert.equal(body, 'The Northfield Rising was a rising in Northfield in 1850.',
+    'the body a reader is shown is the article\'s own words and nothing the importer wrote');
+  assert.deepEqual(credit, { article: 'Northfield Rising', revision: '1234567', lang: 'en', wikidata: 'Q9000001' });
+  assert.ok(provenance.includes('review.html'), 'and the apparatus goes behind ?review=1');
+});
+
+test('no lead, no revision and no text each leave the placeholder as the honest answer', async () => {
+  const item = await read('Q9000001');
+  assert.equal(leadSummary(item, null), null);
+  assert.equal(leadSummary(item, { title: 'X', revid: 0, text: 'something' }), null,
+    'revision 0 is what the fetch writes when the endpoint gave none, and a quote nobody can check is not a citation');
+  assert.equal(leadSummary(item, { title: 'X', revid: 7, text: '   ' }), null);
+  assert.equal(leadCitation(null), null);
+  assert.deepEqual(leadCitation({ title: 'Northfield Rising', revid: 9 }),
+    { source: 'wikipedia-en', locator: '"Northfield Rising", revision 9' },
+    'M72: a locator, always — the article and the revision are what make the quote checkable');
+  assert.deepEqual(leadCitation({ title: 'A', revid: 9 }, 'pt'), { source: 'wikipedia-pt', locator: '"A", revision 9' });
+  assert.equal(leadCitation({ title: 'A', revid: 9 }, 'fr'), null, 'and no source record, no citation');
+});
+
+test('a lead cached by an earlier fire is read back, and a missing one is null and not a throw', async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), 'leads-'));
+  assert.equal(await readLead(dir, 'Q9000001'), null);
+  await writeFile(path.join(dir, 'Q9000001.en.json'), JSON.stringify({ qid: 'Q9000001', revid: 5, text: 'A lead.' }), 'utf8');
+  assert.equal((await readLead(dir, 'Q9000001')).revid, 5);
+  await writeFile(path.join(dir, 'Q9000002.en.json'), 'not json', 'utf8');
+  assert.equal(await readLead(dir, 'Q9000002'), null);
+});
+
+test('the place chain is the item\'s own point first, then P276, P131, P17 — the order A12 (2) fixes', async () => {
+  assert.equal(PROPERTIES.partOf, 'P361');
+  assert.deepEqual(placeChain({ qid: 'Q1', location: ['Q2'], administrative: ['Q3'], country: ['Q4'] }),
+    ['Q1', 'Q2', 'Q3', 'Q4']);
+  // An item that names the same thing twice is one link in the chain, not two.
+  assert.deepEqual(placeChain({ qid: 'Q1', location: ['Q4'], administrative: [], country: ['Q4'] }), ['Q1', 'Q4']);
+  // And the real fixture: a rising with a P276 and a P17 and no point of its own.
+  const rising = await read('Q9000001');
+  assert.equal(placeChain(rising)[0], 'Q9000001', 'its own item is still asked first');
+});
+
+test('the lane guard refuses a place that is in a different lane from the event (A14 (2))', () => {
+  assert.equal(lanesAgree('americas', 'americas'), true);
+  assert.equal(lanesAgree('americas', 'europe'), false,
+    'a battle does not happen in the lane of the capital that ordered it');
+  assert.equal(lanesAgree(null, 'europe'), true, 'nothing was measured, so nothing disagrees');
+  assert.equal(lanesAgree('europe', null), true);
+});
+
+test('the filing writes every umbrella P361 names whose span holds the child (A8), and refuses the rest', () => {
+  const umbrellas = new Map([
+    ['Q828435', { id: 'spanish-conquest-of-the-aztec-empire', when: { start: 1519, end: 1521 } }],
+    ['Q1047607', { id: 'spanish-colonization-of-the-americas', when: { start: 1493, end: 1898 } }],
+  ]);
+  // Two umbrellas, both fitting: neither is the one true one (A8).
+  const both = filedUnder({ start: 1520, end: 1520 }, ['Q828435', 'Q1047607'], umbrellas);
+  assert.deepEqual(both.parents, ['spanish-conquest-of-the-aztec-empire', 'spanish-colonization-of-the-americas']);
+  assert.deepEqual(both.refused, []);
+
+  // A child dated outside its parent is rule 24's warning, so it is refused
+  // here rather than written and warned about.
+  const outside = filedUnder({ start: 1523, end: 1523 }, ['Q828435', 'Q1047607'], umbrellas);
+  assert.deepEqual(outside.parents, ['spanish-colonization-of-the-americas']);
+  assert.deepEqual(outside.refused.map((r) => r.id), ['spanish-conquest-of-the-aztec-empire']);
+
+  // An item this atlas does not hold is not a refusal: it is simply not here.
+  assert.deepEqual(filedUnder({ start: 1520, end: 1520 }, ['Q999999'], umbrellas), { parents: [], refused: [] });
+  assert.deepEqual(filedUnder({ start: 1520 }, [], umbrellas), { parents: [], refused: [] });
+  assert.deepEqual(filedUnder({ start: 1520, end: 1520 }, undefined, umbrellas), { parents: [], refused: [] });
+
+  // An open-ended umbrella reaches forward without limit, as rule 24 reads it.
+  const ongoing = new Map([['Q1', { id: 'ongoing', when: { start: 1900, end: null } }]]);
+  assert.deepEqual(filedUnder({ start: 2020, end: 2020 }, ['Q1'], ongoing).parents, ['ongoing']);
+
+  // The same parent named twice says nothing the one entry did not, and rule 24
+  // makes a repeated parent an error rather than a warning.
+  assert.deepEqual(filedUnder({ start: 1520, end: 1520 }, ['Q828435', 'Q828435'], umbrellas).parents,
+    ['spanish-conquest-of-the-aztec-empire']);
+
+  // A date the atlas cannot read is not a filing.
+  assert.deepEqual(filedUnder(null, ['Q828435'], umbrellas).parents, []);
+});
+
+test('the three flags are the three passes, named so a reviewer can take each off', () => {
+  assert.deepEqual([LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG],
+    ['summary-from-lead', 'a9-place', 'filed-from-p361']);
+});
+
+// --- and the three passes as --import runs them -----------------------------
+
+test('--import writes the lead summary, the A9 place and the P361 filing in one pass', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000016'] });
+  // The two umbrellas this atlas holds, which is what the filing looks a P361
+  // up in: one whose span contains the skirmish and one whose span does not.
+  await writeFile(path.join(dir, 'events', 'wide-southfield-war.json'),
+    `${JSON.stringify({ ...DRAFT, id: 'wide-southfield-war', title: 'Wide Southfield War', wikidata: 'Q9000019', when: { start: 1810, end: 1815 }, place: null, region: 'testland' }, null, 2)}\n`, 'utf8');
+  await writeFile(path.join(dir, 'events', 'wide-northfield-war.json'),
+    `${JSON.stringify({ ...DRAFT, id: 'wide-northfield-war', title: 'Wide Northfield War', wikidata: 'Q9000009', when: { start: 1912, end: 1913 }, place: null, region: 'testland' }, null, 2)}\n`, 'utf8');
+  const { fetcher } = await fixtureFetcher();
+  const { report, failed } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(failed, []);
+  assert.deepEqual(report.refused, []);
+
+  const skirmish = await readJson(path.join(dir, 'events', 'southfield-skirmish.json'));
+
+  // 1 — the summary is the article's lead at its revision, not the placeholder.
+  assert.ok(skirmish.review.flags.includes(LEAD_SUMMARY_FLAG));
+  assert.match(skirmish.summary, /^The English Wikipedia article ".*", at revision \d+, opens: "/);
+  assert.ok(skirmish.sources.some((s) => s.source === 'wikipedia-en' && /revision \d+/.test(s.locator)),
+    'M72: the quote is citable, with the revision as its locator');
+
+  // 2 — the place came off P276, which is a place this atlas did not hold.
+  assert.equal(skirmish.place, 'southfield');
+  assert.ok(skirmish.review.flags.includes(A9_PLACE_FLAG));
+  const southfield = await readJson(path.join(dir, 'places', 'southfield.json'));
+  assert.equal(southfield.wikidata, 'Q9000017');
+  assert.deepEqual(southfield.where, { lon: 5, lat: 5, precision: 'point', label: 'Southfield' });
+  assert.ok(southfield.review.flags.includes(A9_PLACE_FLAG), 'and the place says which pass wrote it');
+  assert.equal(skirmish.region, null, 'a placed event takes its lane from its place');
+
+  // 3 — the filing took the umbrella whose span holds it and left the other.
+  assert.equal(skirmish.parent, 'wide-southfield-war');
+  assert.ok(skirmish.review.flags.includes(FILED_FLAG));
+  assert.deepEqual(report.unfiled.map((u) => u.qid), ['Q9000009'],
+    'the 1912 war does not contain an 1812 skirmish, and rule 24 is what would have said so');
+});
+
+test('--import leaves the placeholder, no place and no parent where the item gives none', async () => {
+  // Q9000009 has no coordinate, no P276 and no P361, and no article to quote.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000009'], lanes: { Q9000009: 'testland' } });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(report.created.map((c) => [c.qid, c.kind, c.place]), [['Q9000009', 'event', null]]);
+  const war = await readJson(path.join(dir, 'events', 'wide-northfield-war.json'));
+  assert.deepEqual(war.review.flags, [IMPORTED_FLAG], 'no pass ran, so no pass says it did');
+  assert.equal(war.parent, undefined);
+  assert.equal(war.region, 'testland');
+  assert.ok(war.summary.startsWith('Wikidata item Q9000009,'),
+    'the placeholder is still the honest answer where there is no lead to quote');
+});
+
+test('an event whose own point is the only located thing is reported, never named by the tool', async () => {
+  // Q9000010's own P625 reaches the lane and nothing else about it is located.
+  // A place written from it would carry an event's name and an event's item, so
+  // the tool reports it and a person writes it — the Abeïbara case.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000010'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(report.ownPoint.map((o) => o.qid), ['Q9000010']);
+  const convention = await readJson(path.join(dir, 'events', 'invented-convention-of-northfield.json'));
+  assert.equal(convention.place, null);
+  assert.equal(convention.region, 'testland', 'and it is placeless with a lane, as it was before A9');
+  assert.deepEqual(await readdir(path.join(dir, 'places')), [], 'nothing was named');
+});
+
+test('fetchEntities splits at the fifty the API takes, and asks for every id (deviation 1324)', async () => {
+  const { asked, fetcher } = await fixtureFetcher();
+  assert.equal(ENTITIES_PER_CALL, 50);
+  // Fifty-six: what A9's chain asks for when twenty-five events name a town, a
+  // province and a country each. One call refused the lot with "Too many values
+  // supplied for parameter ids", and the batch ended there.
+  const many = Array.from({ length: 56 }, (_, i) => `Q90${String(i).padStart(5, '0')}`);
+  const got = await fetchEntities(fetcher, many);
+  const calls = asked.filter((a) => a.url.includes('wbgetentities'));
+  assert.equal(calls.length, 2, 'fifty-six is two calls, not one refusal and not fifty-six');
+  const ids = calls.flatMap((a) => new URL(a.url).searchParams.get('ids').split('|'));
+  assert.deepEqual(ids, many, 'every id is asked for, in order, exactly once');
+  assert.deepEqual(Object.keys(got).sort(), [...many].sort(), 'and every one comes back');
+  for (const c of calls) {
+    assert.ok(new URL(c.url).searchParams.get('ids').split('|').length <= ENTITIES_PER_CALL);
+  }
+});
+
+test('and a list inside the limit is still one call', async () => {
+  const { asked, fetcher } = await fixtureFetcher();
+  await fetchEntities(fetcher, ['Q9000001', 'Q9000002']);
+  assert.equal(asked.filter((a) => a.url.includes('wbgetentities')).length, 1);
+});
+
+test('an event whose own point was only the first step is not reported as needing a person (deviation 1325)', async () => {
+  // Q9000010 has its own point and nothing else located: reported.
+  // Q9000016 has its own... nothing, but a P276 that answers: not reported.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000010', 'Q9000016'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(report.ownPoint.map((o) => o.qid), ['Q9000010'],
+    'the chain has three steps after the item itself, and one answering is not a case for a person');
+  assert.equal((await readJson(path.join(dir, 'events', 'southfield-skirmish.json'))).place, 'southfield');
+});
+
+test('a parent reachable through another parent is dropped, not written (deviations 1316, 1327)', () => {
+  // The Mantuan War is part of the Thirty Years' War, so a battle inside the
+  // Mantuan War is inside the Thirty Years' War already: Wikidata's P361 names
+  // both and the filing keeps the nearer one.
+  const umbrellas = new Map([
+    ['Q2487', { id: 'thirty-years-war', when: { start: 1618, end: 1648 }, parents: [] }],
+    ['Q1527665', { id: 'war-of-the-mantuan-succession', when: { start: 1628, end: 1631 }, parents: ['thirty-years-war'] }],
+  ]);
+  const one = filedUnder({ start: 1630, end: 1630 }, ['Q2487', 'Q1527665'], umbrellas);
+  assert.deepEqual(one.parents, ['war-of-the-mantuan-succession']);
+  assert.equal(one.refused.length, 1);
+  assert.match(one.refused[0].why, /inside it already through "war-of-the-mantuan-succession"/);
+
+  // Named the other way round, the answer is the same: it is a reduction and
+  // not an order of preference.
+  assert.deepEqual(filedUnder({ start: 1630, end: 1630 }, ['Q1527665', 'Q2487'], umbrellas).parents,
+    ['war-of-the-mantuan-succession']);
+
+  // At depth: a grandparent is as redundant as a parent.
+  const deep = new Map([
+    ['Q1', { id: 'a', when: { start: 1600, end: 1700 }, parents: [] }],
+    ['Q2', { id: 'b', when: { start: 1610, end: 1690 }, parents: ['a'] }],
+    ['Q3', { id: 'c', when: { start: 1620, end: 1680 }, parents: ['b'] }],
+  ]);
+  assert.deepEqual(filedUnder({ start: 1650, end: 1650 }, ['Q1', 'Q2', 'Q3'], deep).parents, ['c']);
+
+  // And two umbrellas neither inside the other both stay: that is A8's case.
+  const siblings = new Map([
+    ['Q1', { id: 'a', when: { start: 1600, end: 1700 }, parents: [] }],
+    ['Q2', { id: 'b', when: { start: 1600, end: 1700 }, parents: [] }],
+  ]);
+  assert.deepEqual(filedUnder({ start: 1650, end: 1650 }, ['Q1', 'Q2'], siblings).parents, ['a', 'b']);
+});
+
+// --- deviation 1331: an umbrella created in the same batch as its children ---
+//
+// `runImportMode` builds its umbrella map once, before the loop, out of the
+// records the atlas already held. A batch that imports a war and the actions
+// inside it therefore files nothing under that war: when each action is
+// written the war is not in the map, however the seeds file is ordered,
+// because the map is not rebuilt between records. M42b batch 35 lost two
+// records to this — `battle-of-roatan` and `action-of-12-december-1779`, both
+// naming `Q26809259` in their own `P361` — and filed them by hand.
+//
+// The fix is a second filing pass at the end of a run, over the events the run
+// itself created, against a map extended with the events the run itself wrote.
+// `umbrellasWith` is the pure half of it and this is the test that comes first.
+test('umbrellasWith adds the run\'s own events to what the filing pass looks a P361 up in', () => {
+  const held = new Map([
+    ['Q40949', { id: 'american-revolutionary-war', when: { start: 1775, end: 1783 }, parents: [] }],
+  ]);
+
+  // The war this run created, and the action that names it.
+  const made = [
+    { id: 'spain-and-the-american-revolutionary-war', kind: 'event', status: 'active',
+      wikidata: 'Q26809259', when: { start: 1779, end: 1783 }, parent: 'american-revolutionary-war' },
+  ];
+  const extended = umbrellasWith(held, made);
+
+  assert.equal(extended.size, 2, 'the held umbrella and the one this run wrote');
+  assert.deepEqual(extended.get('Q26809259'),
+    { id: 'spain-and-the-american-revolutionary-war', when: { start: 1779, end: 1783 },
+      parents: ['american-revolutionary-war'] },
+    'the parents come through parentsOf, so the redundancy reduction still works');
+
+  // The map it hands back is a copy: a second pass must not mutate the first.
+  assert.equal(held.size, 1, 'the map the run started with is left alone');
+
+  // And the filing a whole run round-trips: refused before, taken after.
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q26809259'], held),
+    { parents: [], refused: [] }, 'before the pass the umbrella is simply not here');
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q26809259'], extended).parents,
+    ['spain-and-the-american-revolutionary-war']);
+
+  // The reduction still applies across the join: an action naming both the war
+  // and the war it is inside keeps only the nearer one.
+  assert.deepEqual(filedUnder({ start: 1782, end: 1782 }, ['Q40949', 'Q26809259'], extended).parents,
+    ['spain-and-the-american-revolutionary-war']);
+});
+
+test('umbrellasWith takes only active events that carry an item', () => {
+  const held = new Map();
+  const made = [
+    { id: 'a-place', kind: 'place', status: 'active', wikidata: 'Q1', when: { start: 1, end: 2 } },
+    { id: 'withdrawn', kind: 'event', status: 'retracted', wikidata: 'Q2', when: { start: 1, end: 2 } },
+    { id: 'no-item', kind: 'event', status: 'active', when: { start: 1, end: 2 } },
+    { id: 'kept', kind: 'event', status: 'active', wikidata: 'Q4', when: { start: 1, end: 2 } },
+  ];
+  assert.deepEqual([...umbrellasWith(held, made).keys()], ['Q4'],
+    'a place is not an umbrella, a withdrawn event would be rule 24\'s error, and an event with no item cannot be looked up');
 });
