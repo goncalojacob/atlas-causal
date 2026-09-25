@@ -4688,6 +4688,90 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "from": "battle-of-gao",
+      "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-in-delimane-2012",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-gao",
+      "id": "battle-of-gao--second-battle-of-menaka--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-menaka",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-gao",
+      "id": "battle-of-gao--tagarangabotte-ambush--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "tagarangabotte-ambush",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
       "from": "battle-of-heartbreak-ridge",
       "id": "battle-of-heartbreak-ridge--operation-commando--enabled",
       "kind": "edge",
@@ -4703,6 +4787,34 @@
       "revised": null,
       "status": "active",
       "to": "operation-commando",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "battle-of-in-delimane-2012",
+      "id": "battle-of-in-delimane-2012--second-battle-of-menaka--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "second-battle-of-menaka",
       "type": "enabled"
     },
     {

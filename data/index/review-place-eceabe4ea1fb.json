@@ -4882,7 +4882,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 4,
+      "degree": 5,
       "id": "gao",
       "kind": "place",
       "names": [
@@ -5810,6 +5810,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "idelimane",
+      "kind": "place",
+      "names": [
+        "Idelimane",
+        "In-Delimane"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q15231507, the Battle of In-Delimane (2012), read on 2026-09-25 — A9's first step as A12 (2) corrects it, and not the item's P276, which is the town of Ansongo a degree of longitude west. The village has no item this pass could reach; the article at revision 1370443727 calls it \"the village of Idelimane 80 kilometers from Ménaka\" and its own title spells it In-Delimane, so both names are kept.",
         "status": "draft"
       },
       "revised": null,
@@ -8662,6 +8691,34 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because deviation 1230 is not fixed: the import fetches only the P17 countries, so the P276 town it should reach first is not there to read and the engagement came out placeless with a lane derived from its own point. The point and the names are the town item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "menaka",
+      "kind": "place",
+      "names": [
+        "Ménaka"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written from Wikidata Q855986, the town the Second Battle of Ménaka's item names in P276 — A9's second step, taken because the item's own P625 is this town's point to four decimals, so the first step would write the same place without its item, its name or its id. `city` from the item's class Q1758856, commune of Mali, which the class table already carries.",
         "status": "draft"
       },
       "revised": null,
@@ -14404,6 +14461,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "tagarangabotte",
+      "kind": "place",
+      "names": [
+        "Tagarangabotte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q15231376, the Tagarangabotte ambush, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The ground has no item this pass could reach and the item names no P276; the article at revision 1370749494 places it \"at Tagarangabotte, in the east, from Ansongo on the road to Ménaka\".",
         "status": "draft"
       },
       "revised": null,
