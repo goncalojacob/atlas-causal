@@ -2103,6 +2103,13 @@ export function reportLines(report, mode) {
   for (const r of report.reused ?? []) lines.push(`reused ${r.kind} ${r.id} for ${r.qid}: the same name at the same point`);
   for (const g of report.signed ?? []) lines.push(`left alone ${g.id}: reviewed and signed, so ${g.qid} was not written onto it`);
   for (const r of report.refused) lines.push(`refused ${r.qid}: ${r.why}`);
+  // What the three passes would not do. Printed, because the first batch to run
+  // them out of the tool had three events it could have placed and the only
+  // record of the refusal was a field nothing read (deviation 1322).
+  for (const u of report.unfiled ?? []) lines.push(`not filed ${u.qid} under ${u.id}: ${u.why}`);
+  for (const o of report.offLane ?? []) lines.push(`no place for ${o.qid}: its lane is ${o.placeLane ?? 'nowhere'} and the event's is ${o.eventLane ?? 'nowhere'}`);
+  for (const o of report.offClass ?? []) lines.push(`no place from ${o.qid}: ${o.why}`);
+  for (const o of report.ownPoint ?? []) lines.push(`no place for ${o.qid}: its own point (${o.point.lon}, ${o.point.lat}) and no name a tool can read; a person writes that place`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);
   for (const [qid, entry] of report.unclassified ?? []) {
     lines.push(`unclassified class ${qid}: add it to data/${SEEDS_FILE} → classes or the ${entry.items.length} item(s) in it stay refused`);
