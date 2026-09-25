@@ -7114,32 +7114,251 @@ turning it into `caused` would put 936 edges in this atlas of which one in a hun
 says nothing the filing did not. The five leads that name a country of origin are the
 five edges written, and that is the whole of what the articles support.
 
-## Where the run stands, for the fire that picks it up
+## Batch 28 — the Arauco War, and the Americas' sixteenth century
 
-*24 September, after the twenty-seventh fire and its batch 27.*
+*25 September, the twenty-eighth fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **1,006 active** |
-| **main** | **242** — the count the next batch must not raise |
-| **largest connected component** | **657** |
+| corpus | **1,010 active** (1,006 on this branch, plus the four `origin/m42`'s batch 54 brought) |
+| **main** | **242** |
+| **largest connected component** | **660** |
 | components | 244 |
-| events with no edge at all | **189** |
+| events with no edge at all | 188 |
+| Europe before 1900 | 131 active, 18 main |
+| the `americas` lane | 253 active, 55 main |
+| **the Americas' sixteenth century** | **22 active, 3 main** — the thinnest cell of this partition that is not against the 1492 wall, and the one the last fire named as A10's next |
+
+**One merge came first.** `origin/m0` was already an ancestor; `origin/m42` was
+fourteen commits ahead with its batch 54, the Mali War read at both ends, and
+conflicted in `STATUS.md`'s claim lines (unioned), in `docs/m53-polities.md` §4.1
+(both sides kept, the row re-taken) and in `sources.html` and 265 files of
+`data/index/`, all of which are generated. The index was dropped and rebuilt **in
+the commit after the merge**, which is the lesson the last fire's run 1765 paid for:
+`tools/lib/history.mjs` reads the repository's own commits, so an index built inside
+a merge is stale by that merge.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 166 | 31 | 166 | 31 |
+| `americas` | 253 | 55 | **268** | 55 |
+| `asia` | 165 | 67 | 165 | 67 |
+| `europe` | 426 | 89 | 426 | 89 |
+| Europe before 1900 | 131 | 18 | 131 | 18 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| **the Americas' 16th** | **22** | **3** | **37** | **3** |
+| the Americas' 17th | 23 | 6 | 23 | 6 |
+| the Americas' 18th | 32 | 2 | 32 | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| the Americas' 21st | 37 | 1 | 37 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 24 | 3 | 24 | 3 |
+| Europe's 19th | 38 | 10 | 38 | 10 |
+
+South and central America against north, inside the `americas` lane: **209 to 20**,
+with thirty-nine of the lane's events placeless. Every one of this batch's fifteen is
+Chile, so the column the brief asks to be filled first is the column that moved.
+
+**The main count is 242 before and 242 after.** The fourteen battles are filed under
+`arauco-war` and `arauco-war` under `spanish-colonization-of-the-americas`, which its
+own article's infobox names as what it is part of (`part_of = the [[Spanish
+colonization of the Americas]]`, revision 1376467209). Not one of the fifteen could
+raise it.
+
+### The vein, and why it was the one to take
+
+The cell held twenty-two records and **nothing at all after 1549**: the Aztec and Inca
+conquests and their battles, Brazil's sugar cycle and the governorate-general, and then
+half a century of nothing. The second half of the sixteenth century in the Americas was
+the emptiest stretch of this partition that no decision blocks.
+
+**The Arauco War is the vein that fills it and keeps filling.** `P361` on `Q431806`
+returns **seventeen** children with an English article and a date, twelve of them
+between 1550 and 1569, and the war itself runs to the seventeenth century, so the same
+umbrella still has children waiting in the Americas' seventeenth and eighteenth — the
+two cells that are now the thinnest. Nothing about it is blocked: the class of every
+item is one the table already holds (`Q198` war, `Q178561` battle, `Q188055` siege), and
+the war's own article states its parent.
+
+### What was imported
+
+| record | item | date | filed under | place | century |
+| --- | --- | --- | --- | --- | --- |
+| `arauco-war` | `Q431806` | 1546–1662 | `spanish-colonization-of-the-americas` | `chile-q298` (already here) | Americas 16th |
+| `battle-of-quilacura` | `Q3636592` | 1546-02-11 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-andalien` | `Q3636322` | 1550-02-06 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-penco` | `Q1617531` | 1550-03-12 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-tucapel` | `Q645257` | 1553-12-25 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-marihuenu` | `Q2338555` | 1554-02-23 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-peteroa` | `Q1616748` | 1556 | `arauco-war` | — (placeless, `americas` from the seeds file) | Americas 16th |
+| `battle-of-mataquito` | `Q1617667` | 1557-04-30 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-lagunillas` | `Q3636492` | 1557-11-08 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-millarapue` | `Q2339158` | 1557-11-30 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-quiapo` | `Q1617262` | 1558-12-13 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `siege-of-concepcion` | `Q432297` | 1564-02-01 – 1564-04-01 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-angol` | `Q3636323` | 1564-03-25 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-catirai` | `Q3636379` | 1569-01-07 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+| `battle-of-curalaba` | `Q1629355` | 1598-12-23 | `arauco-war` | — (placeless, `americas` from its own point) | Americas 16th |
+
+**Fifteen records created, none enriched, none ambiguous, and no place written at
+all**, over three `--import` runs — ten items, then the four the lane guard refused,
+then Curalaba — and **24 calls**, with 20 Wikipedia leads cached.
+
+**Fourteen of the fifteen are placeless and that is the item's doing, not a refusal.**
+Ten carry a `P625` and no `P276` at all, so the import had a point to derive the lane
+from and no item to make a place record out of; the other four carry neither, and were
+refused until `americas` was written for each of them in the seeds file's `lanes` map.
+`arauco-war` is the only one of the fifteen that points at a place, and it does so
+because its `P276` is `Q298`, Chile, for which `data/places/chile-q298.json` already
+exists. No `a9-place` flag was written on any of the fifteen.
+
+### The summaries
+
+Every one of the fifteen carries the cached English lead at a named revision, written
+on the second pass deviation 1257 describes, with the `wikipedia-en` citation beside
+the `wikidata` one and `summary-from-lead` in `review.flags`. **No record of this batch
+shows the placeholder alone.** The shortest quoted lead is Angol's at 113
+characters, the longest Curalaba's at 623.
+
+### What was connected (A5)
+
+**Five edges, all `probable`, all from a sentence of an article the record cites at the
+revision it cites, and none from a parent to its own child.**
+
+| edge | what the article says |
+| --- | --- |
+| `battle-of-andalien` → `battle-of-penco`, `reacted-to` | "After toqui Ainavillo's defeat in the Battle of Andalien, he gathered tens of thousands of warriors from the Arauco and Tucapel regions to reinforce his depleted 15,000 man army for an attack on de Valdivia's new settlement at Penco" |
+| `battle-of-tucapel` → `battle-of-marihuenu`, `caused` | "After the defeat at the Battle of Tucapel, the Spanish had hurriedly reorganized their forces… It was only in February 1554 that he succeeded in putting together an army of 8,000 men, just in time to confront a punitive expedition under the command of Francisco de Villagra at the Battle of Marihueñu" |
+| `battle-of-tucapel` → `battle-of-mataquito`, `reacted-to` | the battle "is notable for ending Mapuche designs on Santiago, while also avenging the death of former governor Pedro de Valdivia, who had been killed by Lautaro's warriors four years earlier" |
+| `battle-of-peteroa` → `battle-of-mataquito`, `enabled` | "In early 1557, following the defeat and retreat of Lautaro after the Battle of Peteroa, Francisco de Villagra felt strong enough to gather a strong force of soldiers and march south" |
+| `battle-of-lagunillas` → `battle-of-millarapue`, `caused` | "After the victory of the Spanish arms in the Battle of Lagunillas, Mendoza went into the hostile territory of Arauco looking for a decisive battle" |
+
+**Not one of the five reaches outside the batch, and that is this batch's answer to
+A5's "has to say why".** Sixteenth-century Chile is an island in this atlas: the only
+record it holds that any of the fifteen touches is
+`spanish-colonization-of-the-americas`, which is `arauco-war`'s own parent, so **A14
+refuses the one edge that would have joined the vein to the rest of the world** — the
+Arauco War's own lead states it ("The conflict began at first as a reaction by the
+Mapuche to the Spanish conquerors attempting to establish cities and force the natives
+into servitude"), and the run did not write it. There is no second candidate: neither
+`spanish-conquest-of-the-inca-empire` nor any other record here is named by any of the
+fifteen articles.
+
+**A sixth edge was found and refused on chronology, which is deviation 1269's shape a
+third time.** The Siege of Concepción article, at revision 1370740335, ends on the
+lifting of the siege: "With the recent news of the defeat of the Mapuche toqui
+Illangulién at the Battle of Angol, they were also nervous that their undefended homes
+might be attacked from Angol or Santiago. On the first of April the Mapuche army raised
+the siege." `siege-of-concepcion` is one record covering 1 February to 1 April 1564 and
+`battle-of-angol` falls on 25 March, inside it, so the edge the article states runs
+backwards against the siege's start bound and rule 4 refuses it. **Deviation 1299.**
+
+### The number A5 asks about
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,010 | **1,025** |
+| main | 242 | **242** |
+| active edges | 939 | **944** |
+| **largest connected component** | **660** | **660** |
+| components | 244 | 254 |
+| events with no edge at all | 188 | **195** |
+
+**The component did not move and the reason is the paragraph above**: the batch is
+three islands and seven singletons of its own — `{andalien, penco}`,
+`{tucapel, marihuenu, mataquito, peteroa}`, `{lagunillas, millarapue}`, and
+`arauco-war`, `quilacura`, `quiapo`, `siege-of-concepcion`, `angol`, `catirai`,
+`curalaba` alone — and the one edge that would have attached all of it to the largest
+component is the one A14 refuses. **This is the most expensive instance of C8 the run
+has measured.** Batch 27 could say the cost was small because nine of its eleven
+unconnected records stated nothing causal at all; here the cost is the whole batch's
+connectedness, paid for one edge.
+
+### What was refused
+
+| item | what it is | why |
+| --- | --- | --- |
+| `Q1616739` | the Battle of Reynogüelén, 1536 | not refused by the tool: not offered to it. The Arauco War record starts in 1546 and its own article calls Reynogüelén "an antecedent of the Arauco War", not part of it, so filing it under the war would be a `child-outside-parent` on a record the article says is outside. A fire that settles the war's start settles this one too |
+| `Q509936` | the Destruction of the Seven Cities | **no `P31` at all**. The import has no class to read and refuses rather than guesses. It is what `battle-of-curalaba`'s own lead says the battle led to, so the one edge that record's article states has no other end here |
+| `Q1055950` | the Conquest of Chile | no `P31` and no date of any kind. It is what the Arauco War's article says the Spaniards penetrated Mapuche territory during, and the same refusal applies |
+| `Q85745908`, `Q85783755`, `Q104849178` | the Battle of Río Bueno 1654, the Mapuche uprising of 1655, the Battle of Río Bueno 1759 | not refused: held back. They are the same vein in the Americas' seventeenth and eighteenth centuries, which are the two thinnest cells left, and they are the next fire's to take |
+
+### Deviations
+
+**1299. A record that is a span refuses the edges its own article states, for the third
+time.** `siege-of-concepcion` runs 1 February to 1 April 1564 and `battle-of-angol`
+falls inside it on 25 March; the siege article names Angol as one of the three reasons
+the siege was raised, and rule 4 cannot hold an edge whose `from` starts after its `to`
+does. Deviation 1269 recorded this for `spanish-conquest-of-iberian-navarre` and 1284
+for `siege-of-cadiz`. **The three cases are one question**: whether this atlas wants a
+record for the end of a long event as well as for the event. It is the owner's, and
+until it is answered a run should expect to lose about one edge per batch of sieges.
+
+**1300. `intervalFor()` reads an item with no `P580` and three `P582`s as a one-year
+event, and nothing downstream sees it.** `Q431806` carries `P585` 1546 and `P582` 1609,
+1656 and 1662. `pickTimes` finds no span, falls to the point in time, and returns
+`{ from: point, to: point }`, so `arauco-war` arrived dated 1546–1546 — a war that lasted
+a year — and with no `end-unstated` flag, because that flag only fires where a *stated*
+span has no end. The three `P582`s were never read. **The record is corrected
+here from its own cited article** under A7 — revision 1376467209 heads its date field
+"Historiographic divergence" and gives 1546 to the end of the 17th century (Góngora
+1951), 1550–1662 (Villalobos 1995) and 1550–1656 (Memoria Chilena), and 1546–1662 is the
+interval that contains all three rather than choosing between them. `review.note` says
+so and `date-from-article` is the flag. **The tool's rule is the thing to look at**: an
+item with several `P582`s has said something about its end, and reading none of them is
+worse than reading the earliest.
+
+**1301. `end: null` on an umbrella is not available, because two tests forbid a child
+outside its parent over the whole corpus.** The first attempt at 1300 was the honest
+one — leave the end unstated, since the item settles nothing — but `arauco-war` is filed
+under `spanish-colonization-of-the-americas`, which ends in 1898, and an open end reads
+as reaching past it. `tests/m62.test.mjs` and `tests/m67.test.mjs` both assert
+`child-outside-parent` is empty over the repository, so an open-ended umbrella can only
+be filed under another open-ended one. **A run that wants to say "nobody has dated this"
+about an event it also has to file has no way to say it**, and that is worth the owner's
+minute: the alternative this fire took was to assert an interval wide enough to contain
+every dating, which is a claim the null was not.
+
+## Where the run stands, for the fire that picks it up
+
+*25 September, after the twenty-eighth fire and its batch 28.*
+
+| | |
+| --- | --- |
+| corpus | **1,025 active** |
+| **main** | **242** — the count the next batch must not raise |
+| **largest connected component** | **660** |
+| components | 254 |
+| events with no edge at all | **195** |
 | Europe before 1900 | **131 active, 18 main** |
-| the `americas` lane | **253 active, 55 main** |
-| south and central America against north, inside that lane | **208 to 20**, with 25 placeless |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 16th (22, 3)** and **the Americas' 17th (23, 6)**, Europe's 18th (24, 3), Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8) |
-| the cell this fire moved | **the Americas' 21st, 20 → 37**, its main count untouched at one |
+| the `americas` lane | **268 active, 55 main** |
+| south and central America against north, inside that lane | **209 to 20**, with 39 placeless |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **the Americas' 17th (23, 6)**, Europe's 18th (24, 3), Europe's 16th (29, 1), the Americas' 18th (32, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 10), the Americas' 19th (44, 8) |
+| the cell this fire moved | **the Americas' 16th, 22 → 37**, its main count untouched at three |
 
-**This fire merged `origin/m0` and `origin/m42`'s batch 53, then took the cell no fire
-of this run had ever surveyed.** The Americas' twenty-first century is no longer the
-thinnest of this partition; **the Americas' sixteenth (22, 3) and seventeenth (23, 6)
-are**, and the seventeenth is the one that has been blocked on three decisions since
-batch 22.
+**This fire merged `origin/m42`'s batch 54 and then took A10's next cell, the Americas'
+sixteenth, whose second half held nothing at all.** Fifteen records of the Arauco War
+went in and the cell is no longer the thinnest; **the Americas' seventeenth (23, 6) is,
+and it is the one blocked on three decisions since batch 22** — so the next fire either
+answers those or takes Europe's eighteenth (24, 3), which nothing blocks.
 
-**A10's order now says the Americas' sixteenth.** It has never had a batch of its own
-on this branch either — its twenty-two records arrived as the far end of other
-batches' veins — and nothing about it is blocked.
+**The Arauco vein is the cheapest thing left on this branch and it is still open.** The
+same umbrella has three children in the Americas' seventeenth and eighteenth centuries
+(`Q85745908`, `Q85783755`, `Q104849178`), and the seventeenth is the cell that trails —
+so three records of a vein this fire has already surveyed would move the cell that most
+needs moving without touching any of its three decisions. They were held back on
+purpose: this batch's fifteen were the sixteenth century's, and A10 asks a fire to take
+one cell at a time.
 
 ### The veins, and which are open
 
@@ -7257,21 +7476,22 @@ A seventh is batch 27's own and is of the same size. **`Q98379923` is the one cl
 standing between the COVID-19 pandemic in Paraguay and this atlas**, and no other country
 item of the same tree carries it (deviation 1296).
 
-**The check, on this fire's heads.** Run **1764** on the claim commit `0926e6a5` was
-**cancelled** when the first merge superseded it. Run **1765** on the merge commit
-`b2aadd76` **failed**, on rule 16 and on nothing else, and the cause is worth the next
-fire's minute: the merge was committed with `data/index/` rebuilt **before** the merge
-commit existed, so the three history shards the merge's own commit changes were stale by
-one commit. A rebuild in a commit of its own fixed it. **`tools/lib/history.mjs` reads the
-repository's commits, so an index is only fresh against the commit it was built after**,
-and a merge that rebuilds the index inside itself can never be clean. Rebuild in the next
-commit, as 798 already says for records. 
-Runs **1768**, **1769** and **1770**, on the records commit `f7f38ecc`, the index commit
-`5644ab1f` and the first docs commit `3ceccef5`, were each **cancelled** by the push that
-followed them, which is deviation 1258's shape again. Run **1771**, on `9f409fb4`, the
-head of this fire, concluded **success**. Locally the fire finished at **2,114 tests
-passing with nothing failed and nothing skipped** — the 1,819 of the pure suites and the
-295 of the browser suites, the browser set run alone, the two sets never at once.
-`node tools/validate.mjs --index` is **clean at 0 errors and 493 warnings** on the pushed
-index. **The next fire should read this head's run before it does anything else**, and if
-it is red, read the failure: the check has been honest since M63 and it is not load.
+An eighth is batch 28's and is the largest of the eight, because it is A14's cost stated
+at its worst. **This batch's fifteen records are three islands and seven singletons, and
+one edge would have joined all of them to the atlas** — the Arauco War's own lead says
+the war began as a Mapuche reaction to the Spanish attempt to establish cities, and the
+record that is is `spanish-colonization-of-the-americas`, which A14 forbids because it is
+the war's own parent. **C8 is not expensive in general; it is expensive exactly where an
+umbrella is the only bridge a vein has to the rest of the corpus**, and a conquest vein
+in a lane the atlas is otherwise empty in is that case every time.
+
+A ninth is batch 28's too and is smaller. **A run that imports an event nobody has dated
+the end of, and that also has to file it, has no way to say "nobody has dated this"**:
+`end: null` is the atlas's own word for it, but two tests forbid a child dated outside its
+parent over the whole corpus, so an open end can only be filed under another open end
+(deviation 1301). This fire asserted 1546–1662 for the Arauco War instead, an interval
+wide enough to contain all three of the datings its article gives — which is a claim the
+null was not making.
+
+**The check, on this fire's heads.** To be filled in by this fire once its push has a
+conclusion; the previous fire's run **1771**, on `9f409fb4`, concluded **success**.
