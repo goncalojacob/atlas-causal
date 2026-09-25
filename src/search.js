@@ -14,6 +14,7 @@
 
 import { extent } from './util/dates.js';
 import { articleTitles } from './wikipedia.js';
+import { readSummary } from './summary.js';
 
 // Diacritic-insensitive and case-insensitive: "Amilcar" finds "Amílcar", and
 // a reader who cannot type ç is not locked out of their own history.
@@ -60,6 +61,15 @@ export function rank(term, query) {
 // the import has given Wikipedia titles is findable by them too — somebody
 // who knows a thing by the name the encyclopedia gives it should not be told
 // there is nothing by that name — and the label stays the atlas's own.
+// Everything a record can be found by, each of them once. A title that is also
+// one of the record's other names, or the very article title the import gave
+// it, was three copies of one string in the entry and three `indexOf` scans per
+// keystroke per record (M88 §2, review B finding 2); with the corpus at 1257
+// events and the scan running on the thread that draws, that is work for an
+// answer already in hand. The order is kept — the first occurrence stays where
+// it was — so the shortest-match tie-break reads what it always read.
+const termsOf = (list) => [...new Set(list)];
+
 export function buildSearchIndex({ events = [], actors = [], places = [], sources = [], offices = [] } = {}) {
   const entries = [];
   for (const event of events) {
@@ -69,7 +79,17 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
     // "25 April" (health review B, finding 17). Only the shard folds them; the
     // spine does not carry them, because nothing draws them.
     const names = Array.isArray(event.names) ? event.names : [];
-    const lead = fold(firstSentence(event.summary ?? ''));
+    // **The source's own account and not the importer's framing** (M88 §2,
+    // review B finding 2). An imported summary opens `The English Wikipedia
+    // article "X", at revision 1284…, opens: "…"`, and the first sentence of
+    // that is the framing: every imported record was therefore findable by
+    // "revision", "article", "english" and "wikipedia", and typing `revision`
+    // into the box answered with most of the atlas — a thousand rows of which
+    // not one is about a revision of anything. `readSummary` is M86 §1's own
+    // split of what the source says from what the importer said about the
+    // record's standing (summary.js), and the index reads the same split; a
+    // summary a person wrote comes back untouched, as it does everywhere else.
+    const lead = fold(firstSentence(readSummary(event.summary ?? '').body));
     entries.push({
       kind: 'event',
       id: event.id,
@@ -80,7 +100,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       // The other names are shown beside the title the way an actor's are, so
       // a reader who searched for one of them can see why this row answered.
       ...(names.length ? { variants: names } : {}),
-      terms: [fold(event.title), ...names.map(fold), ...articleTitles(event).map(fold)],
+      terms: termsOf([fold(event.title), ...names.map(fold), ...articleTitles(event).map(fold)]),
       // Searched at `LEAD_RANK`, below every name: the record called that,
       // before the record whose first sentence happens to say the word.
       ...(lead ? { lead } : {}),
@@ -98,7 +118,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       // The variants are what makes "PIDE" and "DGS" one record.
       variants: names.slice(1),
       weight: 0,
-      terms: [...names, ...articleTitles(actor)].map(fold),
+      terms: termsOf([...names, ...articleTitles(actor)].map(fold)),
     });
   }
   for (const place of places) {
@@ -112,7 +132,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       when: null,
       variants: names.slice(1),
       weight: 0,
-      terms: [...names, ...articleTitles(place)].map(fold),
+      terms: termsOf([...names, ...articleTitles(place)].map(fold)),
     });
   }
   // An office is findable and a tenure is not: "prime minister" is a thing a
@@ -127,7 +147,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       detail: office.category ?? null,
       when: office.when ?? null,
       weight: 0,
-      terms: [fold(office.title), ...articleTitles(office).map(fold)],
+      terms: termsOf([fold(office.title), ...articleTitles(office).map(fold)]),
     });
   }
   for (const source of sources) {
@@ -141,7 +161,7 @@ export function buildSearchIndex({ events = [], actors = [], places = [], source
       when: null,
       // A source is as findable by whoever wrote it as by its title: nobody
       // remembers the subtitle of a book they remember the author of.
-      terms: [fold(source.title), ...creators.map(fold)],
+      terms: termsOf([fold(source.title), ...creators.map(fold)]),
       weight: 0,
     });
   }

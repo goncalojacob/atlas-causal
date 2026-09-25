@@ -27,10 +27,19 @@ const SLUG_SOURCE = '[a-z0-9]+(?:-[a-z0-9]+)*';
 // order an answer list is sorted in — the strongest claim first, the loosest
 // last — and it is the order the key in `about.html` and the graph's own key
 // are written in.
+//
+// `reads` is what a card says **between the two ends of the record**, which is
+// not always the label. `A --reacted-to--> B` says *B answered A* — the atlas's
+// `reacted-to` runs forward in time, rule 4 enforces it, and deviation 1420
+// wrote it down after four edges were written on the sense of the English verb
+// and refused by name. Read left to right with the verb between them, the card
+// therefore said the opposite of the record: `A reacted to → B`. One type, one
+// field, and the four others read as their own label (M88 §13, the third
+// review's part C, finding 3).
 export const EDGE_TYPES = Object.freeze([
   Object.freeze({ id: 'caused', label: 'caused' }),
   Object.freeze({ id: 'enabled', label: 'enabled' }),
-  Object.freeze({ id: 'reacted-to', label: 'reacted to' }),
+  Object.freeze({ id: 'reacted-to', label: 'reacted to', reads: 'answered by' }),
   Object.freeze({ id: 'precondition-of', label: 'precondition of' }),
   Object.freeze({ id: 'inspired', label: 'inspired' }),
 ]);
@@ -209,6 +218,14 @@ const labelMap = (types, key) => Object.freeze(Object.fromEntries(types.map((t) 
 
 // { caused: 'caused', 'reacted-to': 'reacted to', … } for the cards.
 export const EDGE_TYPE_LABEL = labelMap(EDGE_TYPES, 'label');
+
+// And what the link's card reads between its two ends: the label, except for
+// the one type whose record runs the other way round from its verb. The
+// answers list on an event's card is unaffected — it names the other end of
+// each link under the type's own heading and never puts the two in a line.
+export const EDGE_TYPE_READING = Object.freeze(Object.fromEntries(
+  EDGE_TYPES.map((t) => [t.id, t.reads ?? t.label]),
+));
 
 // { 'regime-of': { out: 'Regime of', in: 'Regimes' }, … }
 export const RELATION_LABEL = Object.freeze(Object.fromEntries(

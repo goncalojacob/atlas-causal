@@ -3,10 +3,14 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile, readdir } from 'node:fs/promises';
+import path from 'node:path';
 import {
   fold, rank, buildSearchIndex, search, flatten, firstSentence, LEAD_RANK, LEAD_CHARS,
 } from '../src/search.js';
+import { isImportedSummary, readSummary } from '../src/summary.js';
 import { extent } from '../src/util/dates.js';
+import { ROOT } from './helpers.mjs';
 
 const EVENTS = [
   { id: 'salazar-falls-1968', title: 'Marcelo Caetano succeeds Salazar', when: { start: 1968, end: 1968 }, weight: 4, status: 'active' },
@@ -311,5 +315,83 @@ test('an actor entry carries the years the box puts beside it', () => {
   assert.deepEqual(angola.when, { start: 1886, end: null }, 'an open end is still an end to draw');
   for (const entry of index.filter((e) => e.kind === 'actor')) {
     assert.ok(entry.when && Number.isInteger(extent(entry.when).min), entry.id);
+  }
+});
+
+// --- the importer's own words are not what a record is about ----------------
+//
+// **`lead` is the source's account and never the importer's framing** (M88 §2,
+// review B finding 2). An imported summary opens `The English Wikipedia
+// article "X", at revision 1284…, opens: "…"`, and `firstSentence` took that
+// framing whole: every one of those records was findable by "revision",
+// "article", "english" and "wikipedia", which on this corpus meant typing
+// `revision` returned most of the atlas. M86 §1 already split a summary into
+// the source's own account and the importer's note about the record's standing
+// (`src/summary.js`); the index simply reads the same split.
+//
+// Over the repository's own records, and deriving every expectation from them:
+// nothing here names a count, a record or a number the corpus could move.
+const corpusDir = async (kind) => {
+  const dir = path.join(ROOT, 'data', kind);
+  const out = [];
+  for (const file of await readdir(dir)) {
+    if (!file.endsWith('.json')) continue;
+    out.push(JSON.parse(await readFile(path.join(dir, file), 'utf8')));
+  }
+  return out;
+};
+
+const corpusEvents = await corpusDir('events');
+const corpusIndex = buildSearchIndex({ events: corpusEvents });
+const activeEvents = corpusEvents.filter((e) => e.status === 'active');
+const importedEvents = activeEvents.filter((e) => isImportedSummary(e.summary ?? ''));
+
+test('an imported event is indexed by the source\'s own lead, not by the framing around it', () => {
+  assert.ok(importedEvents.length > 0, 'the corpus holds imported summaries to read');
+  const entries = new Map(corpusIndex.filter((e) => e.kind === 'event').map((e) => [e.id, e]));
+  const wrong = [];
+  for (const event of importedEvents) {
+    const entry = entries.get(event.id);
+    if (!entry) { wrong.push(`${event.id}: no entry`); continue; }
+    const expected = fold(firstSentence(readSummary(event.summary).body));
+    const lead = entry.lead ?? '';
+    if (lead !== expected) wrong.push(`${event.id}: lead is ${JSON.stringify(lead.slice(0, 60))}`);
+    // And the framing itself, by the two phrases only the importer writes.
+    for (const framing of ['wikipedia article', 'at revision']) {
+      if (lead.includes(framing)) wrong.push(`${event.id}: lead still carries "${framing}"`);
+    }
+  }
+  assert.deepEqual(wrong.slice(0, 10), [], `${wrong.length} imported events: ${wrong.slice(0, 5).join('; ')}`);
+});
+
+test('a word of the importer\'s framing no longer answers with most of the atlas', () => {
+  // The old reading, measured on the corpus this test runs on: how many active
+  // events had the word in the first sentence of the summary *as written*,
+  // framing and all. That is what "revision" used to return.
+  const asWritten = activeEvents
+    .filter((e) => fold(firstSentence(e.summary ?? '')).includes('revision')).length;
+  assert.ok(asWritten > 0, 'the corpus holds summaries whose framing names a revision');
+  const total = search(corpusIndex, 'revision').total;
+  assert.ok(total < asWritten,
+    `"revision" answers with ${total} records where the framing would have answered with ${asWritten}`);
+  // And every record it does answer with says the word somewhere a reader
+  // could have meant: in what the record is called, or in the source's own
+  // lead. Nothing is pinned — the set is read off the corpus.
+  const byId = new Map(activeEvents.map((e) => [e.id, e]));
+  const unexplained = flatten(search(corpusIndex, 'revision', { limit: 50 }))
+    .filter((hit) => hit.kind === 'event')
+    .filter((hit) => {
+      const event = byId.get(hit.id);
+      const own = [event.title ?? '', ...(event.names ?? []), readSummary(event.summary ?? '').body];
+      return !own.some((text) => fold(text).includes('revision'));
+    });
+  assert.deepEqual(unexplained.map((h) => h.id), [],
+    'every answer says the word in its own name or in the source\'s own account');
+});
+
+test('an entry names each of its terms once', () => {
+  for (const entry of corpusIndex) {
+    assert.equal(new Set(entry.terms).size, entry.terms.length,
+      `${entry.kind}/${entry.id} carries the same term twice`);
   }
 });

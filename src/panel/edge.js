@@ -35,7 +35,7 @@
 import { esc } from '../util/esc.js';
 import { formatInterval } from '../util/dates.js';
 import { sectionHtml, openSection } from './sections.js';
-import { EDGE_TYPE_LABEL } from '../vocab.js';
+import { EDGE_TYPE_READING } from '../vocab.js';
 import { badge, CONFIDENCE_HINT } from './event.js';
 // How far this record has been read, in one line (M70). The slot goes in the
 // card's head and is filled when the record's own file lands, because the core
@@ -101,7 +101,7 @@ export function edgeCardHtml(ctx, { edge, state, remembered = null }) {
       ${closeControlHtml()}
       ${ctx.historyHtml()}
       <h2 class="link-ends">${endHtml(ctx, edge.from, 'from')}
-        <span class="arrow">${esc(EDGE_TYPE_LABEL[edge.type] ?? edge.type)} →</span>
+        <span class="arrow">${esc(EDGE_TYPE_READING[edge.type] ?? edge.type)} →</span>
         ${endHtml(ctx, edge.to, 'to')}</h2>
       <p class="meta">${badge(edge.confidence)}
         <span class="confidence-hint">${esc(CONFIDENCE_HINT[edge.confidence] ?? '')}</span></p>
