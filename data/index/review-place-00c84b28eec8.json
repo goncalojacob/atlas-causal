@@ -914,6 +914,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "aztec-empire-q2608489",
+      "kind": "place",
+      "names": [
+        "Aztec Empire"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -2236,6 +2263,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "caribbean",
+      "kind": "place",
+      "names": [
+        "Caribbean"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -4687,6 +4741,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "french-fourth-republic",
+      "kind": "place",
+      "names": [
+        "French Fourth Republic"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 3,
       "id": "french-indochina-q185682",
@@ -5487,6 +5568,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "hispanic-america",
+      "kind": "place",
+      "names": [
+        "Hispanic America"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "ho-chi-minh-city",
@@ -5702,6 +5810,33 @@
           "a9-place"
         ],
         "note": "Written by the Wikidata import from Q495534 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-the-imjin-river's place by A9's second step: the event's own P625 is 28 km up the same river from the river item's point, which is the length of the thing and not a disagreement — the article's own location field is \"Imjin River, Korea\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "inca-empire-q28573",
+      "kind": "place",
+      "names": [
+        "Inca Empire"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -9624,6 +9759,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "northern-america-and-mexico",
+      "kind": "place",
+      "names": [
+        "Northern America and Mexico"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "northern-ireland",
@@ -12247,6 +12409,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 3,
+      "id": "saint-domingue-q861551",
+      "kind": "place",
+      "names": [
+        "Saint-Domingue"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -13843,6 +14032,33 @@
       "names": [
         "Spain",
         "Kingdom of Spain"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "spanish-empire",
+      "kind": "place",
+      "names": [
+        "Spanish Empire"
       ],
       "origin": {
         "tool": "assistant"

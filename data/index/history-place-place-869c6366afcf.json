@@ -390,6 +390,15 @@
         }
       ]
     },
+    "aztec-empire-q2608489": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bab-el-oued": {
       "from": "git",
       "versions": [
@@ -1067,6 +1076,15 @@
             "names"
           ],
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "caribbean": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2279,6 +2297,15 @@
         }
       ]
     },
+    "french-fourth-republic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "french-indochina-q185682": {
       "from": "git",
       "versions": [
@@ -2654,6 +2681,15 @@
         }
       ]
     },
+    "hispanic-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "ho-chi-minh-city": {
       "from": "git",
       "versions": [
@@ -2753,6 +2789,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "inca-empire-q28573": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4755,6 +4800,15 @@
         }
       ]
     },
+    "northern-america-and-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "northern-ireland": {
       "from": "git",
       "versions": [
@@ -6018,6 +6072,15 @@
         }
       ]
     },
+    "saint-domingue-q861551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "saint-marc": {
       "from": "git",
       "versions": [
@@ -6769,6 +6832,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

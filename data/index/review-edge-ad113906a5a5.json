@@ -12990,6 +12990,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "insurrection-of-10-august-1792",
+      "id": "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "execution-of-louis-xvi",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "invasion-of-south-georgia",
       "id": "invasion-of-south-georgia--operation-paraquet--caused",
@@ -19983,6 +20012,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "sinking-of-ara-general-belgrano",
+      "id": "sinking-of-ara-general-belgrano--battle-of-san-carlos--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-san-carlos",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "sino-indian-war",
       "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
@@ -20779,6 +20837,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "storming-of-the-bastille",
+      "id": "storming-of-the-bastille--women-s-march-on-versailles--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "women-s-march-on-versailles",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-16",
       "degree": 1,
       "from": "strangford-treaty-1810",
@@ -20882,6 +20969,35 @@
       "revised": null,
       "status": "active",
       "to": "six-day-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "tet-offensive",
+      "id": "tet-offensive--my-lai-massacre--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "my-lai-massacre",
       "type": "precondition-of"
     },
     {
@@ -24570,6 +24686,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "war-of-the-fourth-coalition",
+      "id": "war-of-the-fourth-coalition--peninsular-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "peninsular-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "war-of-the-sixth-coalition",
       "id": "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of",
@@ -26068,11 +26213,12 @@
       },
       "review": {
         "flags": [
-          "edge-drafted"
+          "edge-drafted",
+          "a13-contradicted"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "to": "world-war-ii-in-albania",
       "type": "caused"

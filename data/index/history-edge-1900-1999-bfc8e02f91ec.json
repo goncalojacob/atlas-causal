@@ -5253,6 +5253,15 @@
         }
       ]
     },
+    "sinking-of-ara-general-belgrano--battle-of-san-carlos--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "sino-indian-war--indo-pakistani-war-of-1965--enabled": {
       "from": "git",
       "versions": [
@@ -5486,6 +5495,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "tet-offensive--my-lai-massacre--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -6663,6 +6681,14 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "confidence",
+            "dispute",
+            "review"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },

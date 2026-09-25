@@ -3944,6 +3944,12 @@
     },
     {
       "dissent": false,
+      "id": "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Execution of Louis XVI\", revision 1373172133, § Background"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-south-georgia--operation-paraquet--caused",
       "kind": "edge",
       "locator": "\"Invasion of South Georgia\", revision 1375909832, lead"
@@ -5600,6 +5606,12 @@
     },
     {
       "dissent": false,
+      "id": "sinking-of-ara-general-belgrano--battle-of-san-carlos--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of San Carlos (1982)\", revision 1373226188, § Argentine forces"
+    },
+    {
+      "dissent": false,
       "id": "sino-indian-war--indo-pakistani-war-of-1965--enabled",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1965\", revision 1371230624, § Background"
@@ -5792,6 +5804,12 @@
     },
     {
       "dissent": false,
+      "id": "storming-of-the-bastille--women-s-march-on-versailles--precondition-of",
+      "kind": "edge",
+      "locator": "\"Women's March on Versailles\", revision 1372203142, § Royal banquet"
+    },
+    {
+      "dissent": false,
       "id": "strangford-treaty-1810--aberdeen-act-1845--precondition-of",
       "kind": "edge",
       "locator": "\"Aberdeen Act\", revision 1371318387"
@@ -5819,6 +5837,12 @@
       "id": "suez-crisis--six-day-war--precondition-of",
       "kind": "edge",
       "locator": "\"Six-Day War\", revision 1375500255, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "tet-offensive--my-lai-massacre--precondition-of",
+      "kind": "edge",
+      "locator": "\"My Lai massacre\", revision 1376209267, § Background"
     },
     {
       "dissent": false,
@@ -6974,6 +6998,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-fourth-coalition--peninsular-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"War of the Fourth Coalition\", revision 1372944372, § Results"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of",
       "kind": "edge",
       "locator": "\"War of the Sixth Coalition\", revision 1373828502, § Aftermath"
@@ -7337,6 +7367,12 @@
       "id": "world-war-ii--world-war-ii-in-albania--caused",
       "kind": "edge",
       "locator": "\"World War II in Albania\", revision 1371940966, § lead"
+    },
+    {
+      "dissent": true,
+      "id": "world-war-ii--world-war-ii-in-albania--caused",
+      "kind": "edge",
+      "locator": "\"World War II in Albania\", revision 1376137340, first sentence"
     },
     {
       "dissent": false,
@@ -7762,7 +7798,7 @@
       "dissent": false,
       "id": "1999-2002-farc-government-peace-process",
       "kind": "event",
-      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050"
+      "locator": "\"1999–2002 FARC–Government peace process\", revision 1370280050, first sentence: \"The FARC-Government peace process (1999–2002), from January 7, 1999, to February 20, 2002, was a failed peace process\""
     },
     {
       "dissent": false,
@@ -9472,7 +9508,7 @@
       "dissent": false,
       "id": "bretton-woods-system",
       "kind": "event",
-      "locator": "\"Bretton Woods system\", revision 1374837351"
+      "locator": "\"Bretton Woods system\", revision 1374837351, first sentence: \"after the 1944 Bretton Woods Agreement until the Jamaica Accords in 1976\""
     },
     {
       "dissent": false,
@@ -9868,7 +9904,7 @@
       "dissent": false,
       "id": "ecuadorian-war-of-independence",
       "kind": "event",
-      "locator": "\"Ecuadorian War of Independence\", revision 1376099764"
+      "locator": "\"Ecuadorian War of Independence\", revision 1376099764, first sentence: \"was fought from 1809 to 1822 between Spain and several South American armies over control of the Real Audiencia of Quito\""
     },
     {
       "dissent": false,
@@ -9910,7 +9946,7 @@
       "dissent": false,
       "id": "eritrean-ethiopian-war",
       "kind": "event",
-      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015"
+      "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, first sentence: \"took place from May 6, 1998 to June 18, 2000\""
     },
     {
       "dissent": false,
@@ -10192,7 +10228,7 @@
       "dissent": false,
       "id": "franco-russian-alliance",
       "kind": "event",
-      "locator": "\"Franco-Russian Alliance\", revision 1375457134"
+      "locator": "\"Franco-Russian Alliance\", revision 1375457134, first sentence: \"was an alliance formed by the agreements of 1891–94; it lasted until 1917\""
     },
     {
       "dissent": false,
@@ -11314,7 +11350,7 @@
       "dissent": false,
       "id": "peruvian-war-of-independence",
       "kind": "event",
-      "locator": "\"Peruvian War of Independence\", revision 1375180136"
+      "locator": "\"Peruvian War of Independence\", revision 1375180136, first sentence: \"was a series of military conflicts in Peru from 1809 to 1826\""
     },
     {
       "dissent": false,
@@ -11494,7 +11530,7 @@
       "dissent": false,
       "id": "revolt-of-czechoslovak-legion",
       "kind": "event",
-      "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945"
+      "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945, first sentence: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\""
     },
     {
       "dissent": false,
@@ -12928,7 +12964,7 @@
       "dissent": false,
       "id": "war-of-the-sixth-coalition",
       "kind": "event",
-      "locator": "\"War of the Sixth Coalition\", revision 1373828502"
+      "locator": "\"War of the Sixth Coalition\", revision 1373828502, first sentence: \"War of the Sixth Coalition (French: Guerre de la Sixième Coalition; December 1812 – May 1814)\""
     },
     {
       "dissent": false,
@@ -12994,7 +13030,7 @@
       "dissent": false,
       "id": "world-war-ii-in-albania",
       "kind": "event",
-      "locator": "\"World War II in Albania\", revision 1376137340"
+      "locator": "\"World War II in Albania\", revision 1376137340, first sentence: \"In Albania, World War II began with its invasion by Italy in April 1939.\""
     },
     {
       "dissent": false,

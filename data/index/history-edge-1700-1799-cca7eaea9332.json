@@ -146,6 +146,15 @@
         }
       ]
     },
+    "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled": {
       "from": "git",
       "versions": [
@@ -197,6 +206,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "storming-of-the-bastille--women-s-march-on-versailles--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

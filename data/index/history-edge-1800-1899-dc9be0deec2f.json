@@ -826,6 +826,15 @@
         }
       ]
     },
+    "war-of-the-fourth-coalition--peninsular-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "war-of-the-sixth-coalition--war-of-the-seventh-coalition--precondition-of": {
       "from": "git",
       "versions": [

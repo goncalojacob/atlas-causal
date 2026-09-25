@@ -2210,11 +2210,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1999 alone, so a process the article dates over three years sat on one. Its own first sentence, at the revision this record already cites, gives both days. Read at \"1999–2002 FARC–Government peace process\", revision 1370280050: \"The FARC-Government peace process (1999–2002), from January 7, 1999, to February 20, 2002, was a failed peace process\". It was {\"start\":1999,\"end\":1999}.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "1999–2002 FARC–Government peace process"
     },
@@ -3817,13 +3819,16 @@
         "run": "m50",
         "tool": "assistant"
       },
+      "parent": "empire-of-brazil-1822-1889",
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "filed-by-span-and-subject"
         ],
+        "note": "A6 and M62: inside the span (1845, against 1822 to 1889) and inside the subject — the Empire of Brazil is one of the act’s two actors, the one it was aimed at. The lane test says nothing here, because the act was passed at Westminster.",
         "status": "draft"
       },
-      "revised": "2026-09-17",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "The Aberdeen Act"
     },
@@ -9515,6 +9520,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "battle-of-san-carlos",
       "kind": "event",
       "origin": {
@@ -10931,11 +10937,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Battle of Vilcaconga"
     },
@@ -11585,11 +11592,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Blockade of Saint-Domingue"
     },
@@ -11975,11 +11983,13 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record was the single day of the agreement. The article's first sentence, at the revision this record already cites, dates the system itself from 1944 to the Jamaica Accords of 1976; the day of the agreement stays as the start. Read at \"Bretton Woods system\", revision 1374837351: \"established the rules for commercial relations among 44 countries … after the 1944 Bretton Woods Agreement until the Jamaica Accords in 1976\". It was {\"start\":1944,\"end\":1944,\"date\":\"1944-07-22\"}.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Bretton Woods system"
     },
@@ -14640,10 +14650,15 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "third-portuguese-republic-since-1974",
       "review": {
+        "flags": [
+          "filed-by-span-and-subject"
+        ],
+        "note": "A6 and M62: inside the span (1975, against 1974 onward) and inside the subject — the Third Portuguese Republic is named on the record as the party that lost the territory. M67’s rule 1 does not bite: it neither made the republic nor ended it.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Indonesia invades East Timor"
     },
@@ -14742,12 +14757,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a9-place",
+          "a7-widened"
         ],
-        "note": "Place from A9 P17 = Q736, written as \"ecuador-q736\" at `country` precision.",
+        "note": "Place from A9 P17 = Q736, written as \"ecuador-q736\" at `country` precision.\n\nA7: the span was 1820 to 1823, which is neither end the article gives. Its first sentence, at the revision this record already cites, states the war's own years. Read at \"Ecuadorian War of Independence\", revision 1376099764: \"was fought from 1809 to 1822 between Spain and several South American armies over control of the Real Audiencia of Quito\". It was {\"start\":1820,\"end\":1823}.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Ecuadorian War of Independence"
     },
@@ -15086,11 +15102,13 @@
           "imported-facts",
           "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record was 2000 alone and carried its two days the wrong way round — `date` 2000-06-18 against an `endDate` of 2000-05-25, so the record began after it ended. The article's first sentence, at the revision this record already cites, gives both days. Read at \"Eritrean–Ethiopian War\", revision 1372677015: \"took place from May 6, 1998 to June 18, 2000\". It was {\"start\":2000,\"end\":2000,\"date\":\"2000-06-18\",\"endDate\":\"2000-05-25\"}.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Eritrean–Ethiopian War"
     },
@@ -15434,7 +15452,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "execution-of-louis-xvi",
       "kind": "event",
       "origin": {
@@ -16768,11 +16786,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record was the single day 1894-01-04, the last of the agreements. The article's first sentence, at the revision this record already cites, dates the alliance from the agreements of 1891–94 and to 1917. The day of the final agreement is dropped, because it is not the day the alliance began. Read at \"Franco-Russian Alliance\", revision 1375457134: \"was an alliance formed by the agreements of 1891–94; it lasted until 1917\". It was {\"start\":1894,\"end\":1894,\"date\":\"1894-01-04\"}.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Franco-Russian Alliance"
     },
@@ -17411,14 +17431,16 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "estado-novo-1933-1974",
       "review": {
         "flags": [
-          "identity-by-hand"
+          "identity-by-hand",
+          "filed-by-span-and-subject"
         ],
-        "note": "M42 batch 43. Q626191 came out of the inverse `part of` vein as an item nothing held; the run created `indian-annexation-of-goa` from it, found this record the same event, deleted the duplicate and wrote the identity here by hand — the M20 route (deviation 1235). The item's `P361` names the Portuguese Colonial War and this record is **not** filed under it: M62 §3 decided that an event whose author is another state, with the umbrella as its object, is not the umbrella's part.",
+        "note": "A6 and M62: inside the span (1961, against 1933 to 1974) and inside the subject — the Estado Novo is the government whose territory was taken. Not filed under portuguese-colonial-war-1961-1974, whose subject is the fighting in Africa: a war is its own umbrella by its fighting (A6). M67 rule 1 does not bite — the annexation neither made the regime nor ended it.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "India annexes Goa, Daman and Diu"
     },
@@ -18990,6 +19012,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "insurrection-of-10-august-1792",
       "kind": "event",
       "origin": {
@@ -21134,13 +21157,16 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "third-portuguese-republic-since-1974",
       "review": {
         "flags": [
-          "wikidata-assigned-by-assistant"
+          "wikidata-assigned-by-assistant",
+          "filed-by-span-and-subject"
         ],
+        "note": "A6 and M62: inside the span (1999, against 1974 onward) and inside the subject — the Third Portuguese Republic is the record’s only actor. M67’s rule 1 does not bite.",
         "status": "draft"
       },
-      "revised": "2026-09-06",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Handover of Macau"
     },
@@ -21505,12 +21531,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "note": "Filed under algerian-war although its own lane is europe: the cited article calls it \"a political crisis in France during the turmoil of the Algerian War\" and carries the category \"1958 in the Algerian War\". The item states no P361 and the filing is the run's reading of that article, not the item's.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "May 1958 crisis in France"
     },
@@ -21573,12 +21600,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "lane-overridden"
+          "lane-overridden",
+          "a9-place"
         ],
         "note": "A7: the interval was 1800-09-16 to 1821-09-27, which is what Wikidata P580 states for Q68750. The English article \"Mexican War of Independence\", at revision 1371682352, opens \"The Mexican War of Independence (Spanish: Guerra de Independencia de Mexico, 16 September 1810 - 27 September 1821)\", and its infobox gives the same range, so the start is corrected to 1810-09-16 from the article the record cites. The end is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Mexican War of Independence"
     },
@@ -22138,6 +22166,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "my-lai-massacre",
       "kind": "event",
       "origin": {
@@ -22335,11 +22364,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "New Laws"
     },
@@ -23791,7 +23821,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 4,
+      "degree": 5,
       "id": "peninsular-war",
       "kind": "event",
       "origin": {
@@ -23830,11 +23860,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1821 to 1824, the years of the declaration and of Ayacucho. The article's first sentence, at the revision this record already cites, states the war's own years and they are twelve years wider at the front. Read at \"Peruvian War of Independence\", revision 1375180136: \"was a series of military conflicts in Peru from 1809 to 1826\". It was {\"start\":1821,\"end\":1824}.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Peruvian War of Independence"
     },
@@ -24942,11 +24974,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record was 1920 alone, the month of the evacuation, which put a revolt of 1918 after the Russian Civil War events it belongs among. The article's first sentence, at the revision this record already cites, gives the month it began and the year it ended. Read at \"Revolt of the Czechoslovak Legion\", revision 1370706945: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\". It was {\"start\":1920,\"end\":1920,\"date\":\"1920-09\"}.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Revolt of Czechoslovak Legion"
     },
@@ -25654,11 +25688,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Saint-Domingue expedition"
     },
@@ -27689,6 +27724,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "origin": {
@@ -28404,11 +28440,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Spanish American wars of independence"
     },
@@ -28626,11 +28663,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "Spanish conquest of the Aztec Empire"
     },
@@ -28839,7 +28877,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "storming-of-the-bastille",
       "kind": "event",
       "origin": {
@@ -29156,7 +29194,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "tet-offensive",
       "kind": "event",
       "origin": {
@@ -32510,11 +32548,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "War of Jenkins' Ear"
     },
@@ -32623,7 +32662,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "war-of-the-fourth-coalition",
       "kind": "event",
       "origin": {
@@ -32788,11 +32827,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the span was 1813 to 1814. The article's first sentence, at the revision this record already cites, gives December 1812 to May 1814, which is a month earlier than the French invasion of Russia this atlas holds as its cause and still after that invasion's start. Read at \"War of the Sixth Coalition\", revision 1373828502: \"War of the Sixth Coalition (French: Guerre de la Sixième Coalition; December 1812 – May 1814)\". It was {\"start\":1813,\"end\":1814}.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "War of the Sixth Coalition"
     },
@@ -32819,11 +32860,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a9-place"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-25",
       "status": "active",
       "title": "War of the South"
     },
@@ -33090,6 +33132,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "women-s-march-on-versailles",
       "kind": "event",
       "origin": {
@@ -33210,11 +33253,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a7-widened"
         ],
+        "note": "A7: the record began in 1942, three years after its own cited article’s first sentence dates the beginning — \"In Albania, World War II began with its invasion by Italy in April 1939\", at revision 1376137340. The end stays 1944. The April is not written on the record: this atlas dates the war itself from 1 September 1939, and a month here would make a containment read as an impossible cause (rule 4). The edge into this record is disputed instead.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-25",
       "status": "active",
       "title": "World War II in Albania"
     },
@@ -33543,12 +33588,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "1999-2002-farc-government-peace-process",
-      "kind": "event",
-      "message": "the title states 1999–2002 and the record is dated 1999",
-      "rule": "span-vs-article-title"
     },
     {
       "id": "2019-bogota-car-bombing",
@@ -33935,12 +33974,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-san-carlos",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-seal-cove",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -34289,12 +34322,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "insurrection-of-10-august-1792",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "interwar-period",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -34362,12 +34389,6 @@
     },
     {
       "id": "mount-kent-skirmish",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "my-lai-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -34547,12 +34568,6 @@
       "rule": "span-vs-article-title"
     },
     {
-      "id": "sinking-of-ara-general-belgrano",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "skirmish-at-many-branch-point",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -34659,12 +34674,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "women-s-march-on-versailles",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     }
   ]
 }
