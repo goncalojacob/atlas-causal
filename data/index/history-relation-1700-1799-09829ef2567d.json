@@ -1,0 +1,17 @@
+{
+  "from": 1700,
+  "kind": "relation",
+  "records": {
+    "brandenburg-prussia--prussia--succeeded": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1799
+}

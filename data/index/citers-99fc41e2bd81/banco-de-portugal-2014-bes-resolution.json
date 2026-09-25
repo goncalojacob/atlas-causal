@@ -1,0 +1,36 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "banco-espirito-santo",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "novo-banco",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "ricardo-salgado",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "bes-resolution-2014",
+      "kind": "event",
+      "locator": null
+    }
+  ],
+  "id": "banco-de-portugal-2014-bes-resolution",
+  "schema": 1
+}

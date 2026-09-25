@@ -1,0 +1,60 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "andre-ventura",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-montenegro",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "costa-resigns-2023--legislative-election-2024--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2022--legislative-election-2024--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "legislative-election-2022--legislative-election-2024--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2024--montenegro-government-2024--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2024",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-montenegro--psd--member-of",
+      "kind": "relation",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "luis-montenegro-psd-2022",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "cne-legislative-2024",
+  "schema": 1
+}

@@ -1,0 +1,41 @@
+{
+  "from": 1100,
+  "kind": "actor",
+  "records": {
+    "kingdom-of-navarre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "kingdom-of-portugal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-24"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1199
+}
