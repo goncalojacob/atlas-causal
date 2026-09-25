@@ -5657,3 +5657,106 @@ fold counted anyway. That is a refinement deviation 1450 needs and is
   `data/imports/wikidata-seeds.json`**, and an item of a class nobody has decided
   about is refused and listed rather than guessed at. **Adding that class is a
   decision somebody should argue with**, so it is left here for them.
+
+## Batch 63 — Operation Gothic Serpent, and the vein that yields one record and not five
+
+Two edges, both `precondition-of`, both quoted from the same article at the
+revision in the locator.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `united-nations-operation-in-somalia-ii` | precondition-of | `operation-gothic-serpent` | probable |
+| `operation-gothic-serpent` | precondition-of | `battle-of-mogadishu-1993` | probable |
+
+**The arrival sits between two held records that were already neighbours.**
+`united-nations-operation-in-somalia-ii` → `battle-of-mogadishu-1993` exists and
+stays; what this batch adds is the operation the raid of 3 October belonged to, so
+the mission the UN ordered, the task force sent to carry it out and the battle it
+ended in are three records rather than two. The component moves 707 to 708, which
+is the arrival and nothing more: both ends were inside it.
+
+**The one prose link this fire could not use was already written.**
+`battle-of-mogadishu-1993` → `war-in-somalia` is exactly what Gothic Serpent's
+Legacy section states — *"Reluctance to commit large numbers of U.S. troops to
+Somalia after the battle led the CIA to use warlords as proxies against the
+Islamic Courts Union in the 2000s. It also drove U.S. support for the subsequent
+Ethiopian invasion"* — and the atlas has held that edge as `precondition-of` since
+an earlier fire. The article does not contradict its type or its direction, so
+A13's disputing clause has nothing to do here and the sentence is recorded as a
+second reading of an edge already made rather than written twice.
+
+**`vietnam-war` and `unified-task-force` are refusals in the same article.**
+Vietnam appears three times and every one is a measure of the battle's size —
+*"the most difficult close combat that US troops had engaged in since the Vietnam
+War"* — which is comparison and not an argument. `unified-task-force` is linked
+where the background says Bush *"ordered the military to join the UN in a joint
+operation known as Operation Restore Hope, with the primary mission of restoring
+order in Somalia"*: a date and a mandate, with nothing said about this operation,
+which is A14 (4)'s own refusal class read forwards rather than backwards.
+
+### What the Somali vein gave and what it would not
+
+**Deviation 1454.** Deviation 1453's plain-text check was right and the way this
+fire first wrote it was wrong. A link's target carries the article's
+disambiguator and its prose does not, so testing the raw target against the
+extract reads `[[Battle of Mogadishu (1993)]]` as a navbox link in an article that
+names the battle in its first paragraph. Gothic Serpent folded to **two** prose
+hits under that test and to **six** once the check also tried the piped display
+text and the target without its parenthetical. A fire folding links must test the
+forms a reader sees, not the form a link is written in; the false negative is
+silent and it hides exactly the best candidates.
+
+**The vein's remaining rows are refused, and four of the five refusals are one
+finding.** `Q243620`'s twenty-five free rows ranked well — five of five held
+records inside the component — and the reading turned up one importable,
+connectable record.
+
+- **`Q4686105`, the 2006 Islamic Courts Union offensive (5 sitelinks), refused on
+  the class, and it is the row this fire most wanted.** Its article states the
+  edge plainly — *"The decision to use of the warlords as proxies was born from
+  fears of once again committing large numbers of American soldiers to Somalia
+  following the disastrous 1993 Battle of Mogadishu"* — which is the Legacy
+  sentence above seen from the other side. **The item has no `P31` at all**, so
+  nothing says what kind of thing it is, and an item whose class nobody has
+  decided about is refused and listed rather than guessed at. This one cannot even
+  be fixed by a line in the class table: somebody has to put a `P31` on the item,
+  or a person writes the record here.
+- **`Q107177113`, the Somaliland War of Independence (8 sitelinks, 1981–1991),
+  refused on the filing, and this is the finding worth keeping.** It classifies, it
+  is dated at both ends, and its article states a clean edge from a held record:
+  *"The conflict was in response to the harsh policies enacted by the Barre regime
+  against the main clan family in Somaliland, the Isaaq ... These harsh policies
+  were put into effect shortly after the conclusion of the disastrous Ogaden War in
+  1978"*, with a background section that has Somalia's defeat *"caused an influx of
+  Ethiopian refugees"* the regime then armed against the Isaaq. But its only
+  `P361` is `Q243620`, and **`somali-civil-war` begins in 1991**: rule 24 refuses a
+  parent whose span does not contain the child, so the record would arrive **main**
+  and A6 says the main count must not rise. **Every pre-1991 row of this vein is in
+  the same position** — the vein's umbrella is younger than a third of what it
+  claims. What frees them is an umbrella that holds 1978 to 1991, which the Somali
+  Rebellion would be if its item were dated; `Q3736852` carries no interval at all.
+  **This is a refusal class and not one row's bad luck.**
+- **`Q1478359`, the Battle of Jilib (8 sitelinks), refused under deviation 1453.**
+  Its one held link, `war-in-somalia`, is a navbox link and survives in no prose.
+- **`Q3883901`, Operation Deliverance (3 sitelinks), and `Q4871756` /
+  `Q1140554`, the Mogadishu battles of 2009 and of 2010–2011, refused under C8.**
+  Each links `somali-civil-war` in prose and each would be filed under it, so the
+  only edge on offer runs from a parent to its own child. `Q1140554` also names
+  `battle-of-mogadishu-1993`, and only to say the years are in the title *"in order
+  to distinguish it amongst the nine major Battles of Mogadishu"*, which is a
+  disambiguation note.
+
+### The Misrata component cannot be joined from its own prose
+
+The stand after batch 62 asked a fire to read `battle-of-tripoli-2011`'s article
+for the edge that would join the three-record Misrata component to the 708. **It
+is not there, and neither is it in the other direction.** Tripoli's article names
+Misrata and Zliten four times and every one is men and materiel leaving a city —
+*"Boats from Misrata and Zliten carrying rebel forces and arms landed in Tripoli"*,
+*"Misrata's local military council said they sent several ships"* — with no link to
+either held record and no claim about either battle. Read the other way,
+`battle-of-the-misrata-frontline` and `zliten-uprising` link **only
+`battle-of-misrata-2011`** in prose, and both of those edges exist; their one other
+held link, `2011-military-intervention-in-libya`, is a navbox link in both.
+**The component is closed under its own three articles**, and a later fire should
+spend its reading elsewhere rather than here.
