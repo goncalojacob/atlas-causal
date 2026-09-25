@@ -29,6 +29,33 @@
         }
       ]
     },
+    "anglo-french-war-1778-1783--battle-of-fort-royal--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "anglo-french-war-1778-1783--spain-and-the-american-revolutionary-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused": {
       "from": "git",
       "versions": [
@@ -39,6 +66,15 @@
       ]
     },
     "battle-of-fontenoy--battle-of-melle--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-grand-turk--treaty-of-paris-1783--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -137,12 +173,39 @@
         }
       ]
     },
+    "battle-of-st-lucia--capture-of-st-lucia--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-saintes--battle-of-the-mona-passage--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "capture-of-ayaviri--siege-of-cusco-1781--enabled": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-grenada-1779--battle-of-grenada--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -182,6 +245,15 @@
         }
       ]
     },
+    "great-siege-of-gibraltar--action-of-8-january-1780--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "haitian-revolution-1791-1804--the-cuban-sugar-boom--caused": {
       "from": "git",
       "versions": [
@@ -192,6 +264,33 @@
       ]
     },
     "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "invasion-of-dominica-1778--capture-of-st-lucia--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "north-channel-naval-duel--battle-of-flamborough-head--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -227,6 +326,24 @@
         }
       ]
     },
+    "siege-of-brimstone-hill--battle-of-saint-kitts--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-brimstone-hill--treaty-of-paris-1783--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "siege-of-cusco-1781--battle-of-pucacasa--enabled": {
       "from": "git",
       "versions": [
@@ -255,6 +372,51 @@
       ]
     },
     "siege-of-tournai-1745--battle-of-fontenoy--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--armada-of-1779--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--battle-of-san-fernando-de-omoa--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--capture-of-cayo-cocina--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--great-siege-of-gibraltar--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--invasion-of-minorca-1781--enabled": {
       "from": "git",
       "versions": [
         {

@@ -2342,15 +2342,45 @@
     },
     {
       "dissent": false,
+      "id": "action-of-11-september-1778",
+      "kind": "event",
+      "locator": "Q124344830"
+    },
+    {
+      "dissent": false,
       "id": "action-of-12-17-january-1640",
       "kind": "event",
       "locator": "Q4677243"
     },
     {
       "dissent": false,
+      "id": "action-of-12-december-1779",
+      "kind": "event",
+      "locator": "Q17509657"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-12-december-1782",
+      "kind": "event",
+      "locator": "Q4677235"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-15-february-1783",
+      "kind": "event",
+      "locator": "Q16158049"
+    },
+    {
+      "dissent": false,
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "Q2594731"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-8-january-1780",
+      "kind": "event",
+      "locator": "Q4090282"
     },
     {
       "dissent": false,
@@ -2432,6 +2462,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-french-war-1778-1783",
+      "kind": "event",
+      "locator": "Q3651696"
+    },
+    {
+      "dissent": false,
       "id": "anglo-iraqi-war",
       "kind": "event",
       "locator": "Q696848"
@@ -2507,6 +2543,12 @@
       "id": "argentine-war-of-independence",
       "kind": "event",
       "locator": "Q617409"
+    },
+    {
+      "dissent": false,
+      "id": "armada-of-1779",
+      "kind": "event",
+      "locator": "Q4168638"
     },
     {
       "dissent": false,
@@ -3008,6 +3050,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-flamborough-head",
+      "kind": "event",
+      "locator": "Q2888502"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-flodden",
       "kind": "event",
       "locator": "Q1300742"
@@ -3029,6 +3077,12 @@
       "id": "battle-of-fort-albany-1693",
       "kind": "event",
       "locator": "Q4871031"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-royal",
+      "kind": "event",
+      "locator": "Q1780931"
     },
     {
       "dissent": false,
@@ -3074,9 +3128,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-grand-turk",
+      "kind": "event",
+      "locator": "Q4871134"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-greece",
       "kind": "event",
       "locator": "Q2888837"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-grenada",
+      "kind": "event",
+      "locator": "Q1970159"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guadeloupe-1779",
+      "kind": "event",
+      "locator": "Q19873117"
     },
     {
       "dissent": false,
@@ -3401,6 +3473,18 @@
       "id": "battle-of-marihuenu",
       "kind": "event",
       "locator": "Q2338555"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-martinique-1779",
+      "kind": "event",
+      "locator": "Q2984945"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-martinique-1780",
+      "kind": "event",
+      "locator": "Q2583204"
     },
     {
       "dissent": false,
@@ -3740,6 +3824,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-roatan",
+      "kind": "event",
+      "locator": "Q4872193"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rocoux",
       "kind": "event",
       "locator": "Q32493"
@@ -3764,6 +3854,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-kitts",
+      "kind": "event",
+      "locator": "Q1431266"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "Q575924"
@@ -3785,6 +3881,12 @@
       "id": "battle-of-san-carlos",
       "kind": "event",
       "locator": "Q4872265"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-fernando-de-omoa",
+      "kind": "event",
+      "locator": "Q4090319"
     },
     {
       "dissent": false,
@@ -3857,6 +3959,12 @@
       "id": "battle-of-st-kitts-1629",
       "kind": "event",
       "locator": "Q4872428"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-st-lucia",
+      "kind": "event",
+      "locator": "Q2671443"
     },
     {
       "dissent": false,
@@ -3974,6 +4082,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-mona-passage",
+      "kind": "event",
+      "locator": "Q4090287"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-punchbowl",
       "kind": "event",
       "locator": "Q16898848"
@@ -3989,6 +4103,12 @@
       "id": "battle-of-the-pyrenees",
       "kind": "event",
       "locator": "Q2890693"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-saintes",
+      "kind": "event",
+      "locator": "Q1850800"
     },
     {
       "dissent": false,
@@ -4097,6 +4217,18 @@
       "id": "battle-of-unsan",
       "kind": "event",
       "locator": "Q486531"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ushant-1781",
+      "kind": "event",
+      "locator": "Q2578358"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ushant-1782",
+      "kind": "event",
+      "locator": "Q4090280"
     },
     {
       "dissent": false,
@@ -4247,6 +4379,12 @@
       "id": "battle-of-zusmarshausen",
       "kind": "event",
       "locator": "Q519818"
+    },
+    {
+      "dissent": false,
+      "id": "battle-off-barbados",
+      "kind": "event",
+      "locator": "Q4873060"
     },
     {
       "dissent": false,
@@ -4442,9 +4580,33 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-cayo-cocina",
+      "kind": "event",
+      "locator": "Q5036996"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fort-dauphin-1794",
       "kind": "event",
       "locator": "Q3403821"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-grenada-1779",
+      "kind": "event",
+      "locator": "Q3403859"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-sint-eustatius",
+      "kind": "event",
+      "locator": "Q4188867"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-st-lucia",
+      "kind": "event",
+      "locator": "Q16256520"
     },
     {
       "dissent": false,
@@ -5312,6 +5474,12 @@
     },
     {
       "dissent": false,
+      "id": "great-siege-of-gibraltar",
+      "kind": "event",
+      "locator": "Q815145"
+    },
+    {
+      "dissent": false,
       "id": "great-swamp-fight",
       "kind": "event",
       "locator": "Q5600061"
@@ -5543,6 +5711,24 @@
       "id": "invasion-of-cuba-1741",
       "kind": "event",
       "locator": "Q4872309"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-dominica-1778",
+      "kind": "event",
+      "locator": "Q2890526"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-jersey-1779",
+      "kind": "event",
+      "locator": "Q5484470"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-minorca-1781",
+      "kind": "event",
+      "locator": "Q2576215"
     },
     {
       "dissent": false,
@@ -6071,6 +6257,12 @@
       "id": "new-laws",
       "kind": "event",
       "locator": "Q1121487"
+    },
+    {
+      "dissent": false,
+      "id": "north-channel-naval-duel",
+      "kind": "event",
+      "locator": "Q4090286"
     },
     {
       "dissent": false,
@@ -6950,6 +7142,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-brimstone-hill",
+      "kind": "event",
+      "locator": "Q11794849"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-brno",
       "kind": "event",
       "locator": "Q3485845"
@@ -7427,6 +7625,12 @@
       "id": "soviet-japanese-border-conflicts",
       "kind": "event",
       "locator": "Q696389"
+    },
+    {
+      "dissent": false,
+      "id": "spain-and-the-american-revolutionary-war",
+      "kind": "event",
+      "locator": "Q26809259"
     },
     {
       "dissent": false,

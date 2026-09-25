@@ -576,6 +576,15 @@
         }
       ]
     },
+    "bay-of-biscay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bay-of-fundy": {
       "from": "git",
       "versions": [
@@ -997,6 +1006,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "brest-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2199,6 +2217,15 @@
         }
       ]
     },
+    "english-channel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "enguinegatte": {
       "from": "git",
       "versions": [
@@ -2383,6 +2410,15 @@
       ]
     },
     "fehmarn-belt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "ferrol": {
       "from": "git",
       "versions": [
         {
@@ -2768,6 +2804,15 @@
         }
       ]
     },
+    "gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "gonaives": {
       "from": "git",
       "versions": [
@@ -2949,7 +2994,7 @@
       ]
     },
     "gulf-of-sidra": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3123,7 +3168,7 @@
       ]
     },
     "hsimucheng": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3222,7 +3267,7 @@
       ]
     },
     "imenas": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3870,7 +3915,7 @@
       ]
     },
     "korsakov": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4816,6 +4861,15 @@
         }
       ]
     },
+    "menorca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "mexico-q96": {
       "from": "git",
       "versions": [
@@ -4945,6 +4999,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "mona-passage": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -5395,6 +5458,15 @@
       ]
     },
     "north-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "north-channel-great-britain-and-ireland": {
       "from": "git",
       "versions": [
         {
@@ -6635,6 +6707,15 @@
         }
       ]
     },
+    "roatan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "rocourt-liege": {
       "from": "git",
       "versions": [
@@ -7400,6 +7481,15 @@
         }
       ]
     },
+    "sint-eustatius": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "sirte": {
       "from": "git",
       "versions": [
@@ -7714,6 +7804,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "st-george-s-caye": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8131,7 +8230,7 @@
       ]
     },
     "tin-keraten": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8432,6 +8531,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "ushant": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -8983,7 +9091,7 @@
       ]
     },
     "yingkou": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9104,7 +9212,7 @@
       ]
     },
     "zliten": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

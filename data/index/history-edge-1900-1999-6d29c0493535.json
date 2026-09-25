@@ -1288,7 +1288,7 @@
       ]
     },
     "battle-of-hsimucheng--battle-of-liaoyang--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1423,7 +1423,7 @@
       ]
     },
     "battle-of-port-arthur--hitachi-maru-incident--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1450,7 +1450,7 @@
       ]
     },
     "battle-of-tashihchiao--battle-of-hsimucheng--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1468,7 +1468,7 @@
       ]
     },
     "battle-of-te-li-ssu--battle-of-motien-pass--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1547,7 +1547,7 @@
       ]
     },
     "battle-of-the-yellow-sea--battle-of-korsakov--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5381,7 +5381,7 @@
       ]
     },
     "siege-of-port-arthur--raid-on-yingkou--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
