@@ -1620,7 +1620,48 @@
         "Q3636322",
         "Q1617531",
         "Q1616748",
-        "Q1629355"
+        "Q1629355",
+        "Q663435",
+        "Q139565414",
+        "Q688504",
+        "Q4872232",
+        "Q3486003",
+        "Q139855572",
+        "Q402312",
+        "Q663502",
+        "Q571556",
+        "Q695314",
+        "Q657406",
+        "Q569953",
+        "Q16677044",
+        "Q2889310",
+        "Q3485894",
+        "Q3485966",
+        "Q1924575",
+        "Q32493",
+        "Q696699",
+        "Q1835856",
+        "Q289609",
+        "Q682482",
+        "Q559181",
+        "Q233702",
+        "Q81720",
+        "Q1914864",
+        "Q2480692",
+        "Q144251",
+        "Q506076",
+        "Q490319",
+        "Q262684",
+        "Q1569724",
+        "Q1006446",
+        "Q1296",
+        "Q134121",
+        "Q111901161",
+        "Q3438046",
+        "Q214640",
+        "Q173219",
+        "Q696355",
+        "Q736097"
       ]
     }
   },
@@ -1660,6 +1701,30 @@
     "Q1616748": {
       "on": "2026-09-25",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q559181": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q233702": {
+      "on": "2026-09-25",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q214640": {
+      "on": "2026-09-25",
+      "why": "none of its classes (Q2616791) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q173219": {
+      "on": "2026-09-25",
+      "why": "none of its classes (Q493522, Q15273785) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q696355": {
+      "on": "2026-09-25",
+      "why": "none of its classes (Q493522) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q736097": {
+      "on": "2026-09-25",
+      "why": "none of its classes (Q493522) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }

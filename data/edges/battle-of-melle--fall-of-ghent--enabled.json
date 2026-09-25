@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-melle--fall-of-ghent--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fall of Ghent\", revision 1370617755"
+    }
+  ],
+  "from": "battle-of-melle",
+  "to": "fall-of-ghent",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Ghent article states the connection as a count of men: \"A column of 4,000 to 5,000 British, Hanoverian, Dutch and Austrian reinforcements sent by the Duke of Cumberland was defeated by the French at the Battle of Melle with only some 1,000 men getting through to Ghent.\" Melle is what kept the garrison from being reinforced, so the town fell to a force it could otherwise have met. The sentence carries no footnote of its own; the citation two sentences later (Skrine, 1906) is attached to a different claim, so it is not named here.",
+  "dispute": null
+}

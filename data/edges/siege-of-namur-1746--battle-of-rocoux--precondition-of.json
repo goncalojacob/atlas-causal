@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-namur-1746--battle-of-rocoux--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rocoux\", revision 1370587617, § Battle"
+    }
+  ],
+  "from": "siege-of-namur-1746",
+  "to": "battle-of-rocoux",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Rocoux was fought at Liège because Namur had fallen: \"In mid-July, the Pragmatic Army prepared to defend Namur; leaving the Prince de Conti to finish with Charleroi, Saxe cut their supply lines, forcing them to retreat. By late September, Namur had fallen and the Allies moved to protect Liège, the next town on the Meuse.\" That is the sentence Wikipedia footnotes to Tobias Smollett, History of England from the Revolution to the Death of George II, volume III (1796), p. 193 — the second author M72 asks for, named here rather than cited, because a 1796 work with no ISBN, DOI or scan the atlas can reach cannot satisfy rule 13. The claim is about where the armies stood rather than about the battle's outcome, so it is precondition-of and not caused, and one eighteenth-century history the atlas cannot link to is not grounds for consensus.",
+  "dispute": null
+}

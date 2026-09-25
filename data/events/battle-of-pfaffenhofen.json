@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-pfaffenhofen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q663502",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Pfaffenhofen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q663502"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pfaffenhofen\", revision 1370585935"
+    }
+  ],
+  "title": "Battle of Pfaffenhofen",
+  "summary": "The English Wikipedia article \"Battle of Pfaffenhofen\", at revision 1370585935, opens: \"The Battle of Pfaffenhofen was fought on 15 April 1745 between France and Austria. The Austrians under Karl Josef Batthyány defeated the outnumbered French under General Ségur, ending the war in Bavaria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q663502, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Austrian succession, 1745\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1745,
+    "date": "1745-04-15"
+  },
+  "place": "pfaffenhofen-an-der-ilm",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

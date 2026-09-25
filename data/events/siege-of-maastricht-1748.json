@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-maastricht-1748",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q289609",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Siege of Maastricht (1748)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q289609"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Maastricht (1748)\", revision 1370743120"
+    }
+  ],
+  "title": "Siege of Maastricht (1748)",
+  "summary": "The English Wikipedia article \"Siege of Maastricht (1748)\", at revision 1370743120, opens: \"The siege of Maastricht was a campaign during the War of the Austrian Succession which took place in April–May 1748.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q289609, imported by tools/import/wikidata.mjs. The item's own description reads \"French siege of Maastricht by Maurice of Saxony during the War of Austrian Succession in 1748\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1748,
+    "end": 1748,
+    "date": "1748-04-15",
+    "endDate": "1748-05-07"
+  },
+  "place": "maastricht",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

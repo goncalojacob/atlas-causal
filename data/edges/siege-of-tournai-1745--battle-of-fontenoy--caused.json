@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-tournai-1745--battle-of-fontenoy--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
+    }
+  ],
+  "from": "siege-of-tournai-1745",
+  "to": "battle-of-fontenoy",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Fontenoy was fought because of the siege, and the Tournai article says so in its lead: \"The allied Pragmatic Army's attempt to relieve the siege resulted in the decisive French victory at the Battle of Fontenoy on 11 May.\" The battle is the relief attempt, so the siege is its cause and not merely what came before it. The lead carries no citation of its own, so Wikipedia is the only author named.",
+  "dispute": null
+}

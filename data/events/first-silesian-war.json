@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-silesian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q559181",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "First Silesian War",
+    "pt": "Primeira Guerra da Silésia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q559181"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Silesian War\", revision 1370619632"
+    }
+  ],
+  "title": "First Silesian War",
+  "summary": "The English Wikipedia article \"First Silesian War\", at revision 1370619632, opens: \"The First Silesian War was a war between Prussia and Austria that lasted from 1740 to 1742 and resulted in Prussia's seizure of most of the region of Silesia from Austria. The war was fought mainly in Silesia, Moravia and Bohemia and formed one theatre of the wider War of the Austrian Succession. It was the first of three Silesian Wars fought between Frederick the Great's Prussia and Maria Theresa's Austria in the mid-18th century, all three of which ended in Prussian control of Silesia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q559181, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the War of the Austrian Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1742,
+    "date": "1740-12-16",
+    "endDate": "1742-06-11"
+  },
+  "place": "silesia",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

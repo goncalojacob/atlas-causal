@@ -1436,7 +1436,48 @@
     "Q432297",
     "Q3636323",
     "Q3636379",
-    "Q1629355"
+    "Q1629355",
+    "Q559181",
+    "Q233702",
+    "Q663435",
+    "Q139565414",
+    "Q688504",
+    "Q4872232",
+    "Q3486003",
+    "Q139855572",
+    "Q402312",
+    "Q663502",
+    "Q571556",
+    "Q695314",
+    "Q657406",
+    "Q569953",
+    "Q16677044",
+    "Q2889310",
+    "Q3485894",
+    "Q3485966",
+    "Q1924575",
+    "Q32493",
+    "Q696699",
+    "Q1835856",
+    "Q289609",
+    "Q682482",
+    "Q81720",
+    "Q1914864",
+    "Q214640",
+    "Q2480692",
+    "Q144251",
+    "Q506076",
+    "Q490319",
+    "Q262684",
+    "Q1569724",
+    "Q1006446",
+    "Q173219",
+    "Q696355",
+    "Q1296",
+    "Q134121",
+    "Q111901161",
+    "Q3438046",
+    "Q736097"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -1687,7 +1728,9 @@
     "Q3636592": "americas",
     "Q3636322": "americas",
     "Q1617531": "americas",
-    "Q1616748": "americas"
+    "Q1616748": "americas",
+    "Q559181": "europe",
+    "Q233702": "europe"
   },
   "queries": [
     {
@@ -5454,6 +5497,18 @@
       "precision": "region",
       "label": "subcontinent",
       "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"large, relatively self-contained landmass forming a subdivision of a continent\". Carried by Northern America and Mexico (Q19464773)."
+    },
+    "Q2616791": {
+      "kind": "place",
+      "precision": "city",
+      "label": "urban municipality of Poland",
+      "note": "Added in M42b batch 29, the War of the Austrian Succession vein for Europe's eighteenth century. The label and the description — 'administrative division of Poland' — are read from the item itself over the network, under deviation 1266's rule; the class is here because Q214640, Brzeg, carries it and the table did not. A municipality with a town in it is a city at this atlas's precisions, which is what Q3558970 village of Poland already says for the smaller case."
+    },
+    "Q493522": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Belgium",
+      "note": "Added in M42b batch 29, the same batch and for the same reason as Q2616791: Tournai, Melle and Riemst each carry it and the table did not. 'administrative division of Belgium', read from the item. Q15273785, the honorary title a Belgian municipality may hold, is deliberately not added — it is a decoration and not a kind of thing, and every item carrying it also carries this class."
     }
   },
   "reconcile": true
