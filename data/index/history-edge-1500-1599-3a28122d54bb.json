@@ -263,6 +263,15 @@
         }
       ]
     },
+    "italian-campaign-of-1524-1525--battle-of-pavia--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of": {
       "from": "git",
       "versions": [
@@ -317,6 +326,24 @@
         }
       ]
     },
+    "siege-of-florence-1529-1530--battle-of-montemurlo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-naples-1528--battle-of-capo-d-orso--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "siege-of-padua--battle-of-polesella--precondition-of": {
       "from": "git",
       "versions": [
@@ -347,6 +374,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

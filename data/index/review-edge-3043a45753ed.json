@@ -14088,6 +14088,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "italian-campaign-of-1524-1525",
+      "id": "italian-campaign-of-1524-1525--battle-of-pavia--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-pavia",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "italian-war-of-1494-1495",
       "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
@@ -20429,6 +20457,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "from": "siege-of-florence-1529-1530",
+      "id": "siege-of-florence-1529-1530--battle-of-montemurlo--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-montemurlo",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "siege-of-ladysmith",
       "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
@@ -20502,6 +20558,34 @@
       "status": "active",
       "to": "battle-of-rocoux",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "siege-of-naples-1528",
+      "id": "siege-of-naples-1528--battle-of-capo-d-orso--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-capo-d-orso",
+      "type": "caused"
     },
     {
       "authors": [
@@ -21666,6 +21750,34 @@
       "status": "active",
       "to": "treaty-of-tordesillas-1494",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "from": "spanish-conquest-of-iberian-navarre",
+      "id": "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-fuenterrabia-1523-1524",
+      "type": "precondition-of"
     },
     {
       "authors": [

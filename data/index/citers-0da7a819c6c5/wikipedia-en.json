@@ -4214,6 +4214,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-campaign-of-1524-1525--battle-of-pavia--precondition-of",
+      "kind": "edge",
+      "locator": "\"Italian campaign of 1524–1525\", revision 1370624588"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1494-1495--italian-wars-of-1499-1504--precondition-of",
       "kind": "edge",
       "locator": "\"Italian War of 1494–1495\", revision 1372866209"
@@ -5672,6 +5678,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-florence-1529-1530--battle-of-montemurlo--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Spion Kop\", revision 1374078287, lead"
@@ -5687,6 +5699,12 @@
       "id": "siege-of-namur-1746--battle-of-rocoux--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Rocoux\", revision 1370587617, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-naples-1528--battle-of-capo-d-orso--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Capo d'Orso\", revision 1370436279"
     },
     {
       "dissent": false,
@@ -5999,6 +6017,12 @@
       "id": "spanish-colonization-of-the-americas--treaty-of-tordesillas-1494--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § Background, on the division of the world"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Fuenterrabía (1523–1524)\", revision 1370741324"
     },
     {
       "dissent": false,
@@ -8732,6 +8756,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bicocca",
+      "kind": "event",
+      "locator": "\"Battle of Bicocca\", revision 1370107825"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079"
@@ -8795,6 +8825,12 @@
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-capo-d-orso",
+      "kind": "event",
+      "locator": "\"Battle of Capo d'Orso\", revision 1370436279"
     },
     {
       "dissent": false,
@@ -8987,6 +9023,12 @@
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "\"Battle of Gao\", revision 1370441289, lead: \"between 26 and 28 June 2012\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gavinana",
+      "kind": "event",
+      "locator": "\"Battle of Gavinana\", revision 1370381453"
     },
     {
       "dissent": false,
@@ -9188,6 +9230,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-landriano",
+      "kind": "event",
+      "locator": "\"Battle of Landriano\", revision 1370447093"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
@@ -9302,6 +9350,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-montemurlo",
+      "kind": "event",
+      "locator": "\"Battle of Montemurlo\", revision 1370450375"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-harriet",
       "kind": "event",
       "locator": "\"Battle of Mount Harriet\", revision 1371845772"
@@ -9341,6 +9395,12 @@
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "\"Battle of Nanshan\", revision 1370451314"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-noain",
+      "kind": "event",
+      "locator": "\"Battle of Noáin\", revision 1375299067"
     },
     {
       "dissent": false,
@@ -9389,6 +9449,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pampeluna",
+      "kind": "event",
+      "locator": "\"Battle of Pampeluna\", revision 1372120891"
     },
     {
       "dissent": false,
@@ -9749,6 +9815,12 @@
       "id": "battle-of-the-pyrenees",
       "kind": "event",
       "locator": "\"Battle of the Pyrenees\", revision 1370601915"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-sesia-1524",
+      "kind": "event",
+      "locator": "\"Battle of the Sesia (1524)\", revision 1370602200"
     },
     {
       "dissent": false,
@@ -11330,6 +11402,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-campaign-of-1524-1525",
+      "kind": "event",
+      "locator": "\"Italian campaign of 1524–1525\", revision 1370624588"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1494-1495",
       "kind": "event",
       "locator": "\"Italian War of 1494–1495\", revision 1372866209"
@@ -12692,9 +12770,27 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-florence-1529-1530",
+      "kind": "event",
+      "locator": "\"Siege of Florence (1529–1530)\", revision 1370741144"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-nashwaak",
       "kind": "event",
       "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fuenterrabia-1523-1524",
+      "kind": "event",
+      "locator": "\"Siege of Fuenterrabía (1523–1524)\", revision 1370741324"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-genoa-1522",
+      "kind": "event",
+      "locator": "\"Siege of Genoa (1522)\", revision 1370741464"
     },
     {
       "dissent": false,
@@ -12722,6 +12818,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-marseille-1524",
+      "kind": "event",
+      "locator": "\"Siege of Marseille (1524)\", revision 1370743308"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mezieres",
+      "kind": "event",
+      "locator": "\"Siege of Mézières\", revision 1369576514"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "\"Siege of Mitú\", revision 1370743579"
@@ -12731,6 +12839,12 @@
       "id": "siege-of-namur-1746",
       "kind": "event",
       "locator": "\"Siege of Namur (1746)\", revision 1370743854"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-naples-1528",
+      "kind": "event",
+      "locator": "\"Siege of Naples (1528)\", revision 1370743875"
     },
     {
       "dissent": false,

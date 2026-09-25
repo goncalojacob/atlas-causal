@@ -6241,6 +6241,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "battle-of-bicocca",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bicocca"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 3,
       "id": "battle-of-bin-jawad",
@@ -6586,6 +6618,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cap-Français (1793)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-capo-d-orso",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cognac",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Capo d'Orso"
     },
     {
       "authors": [
@@ -7585,6 +7650,41 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Gao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-gavinana",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "war-of-the-league-of-cognac",
+        "siege-of-florence-1529-1530"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gavinana"
     },
     {
       "authors": [
@@ -8760,6 +8860,41 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "battle-of-landriano",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "italian-wars",
+        "war-of-the-league-of-cognac"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Landriano"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
@@ -9381,6 +9516,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-montemurlo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1536-1538",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Montemurlo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-mount-harriet",
       "kind": "event",
@@ -9602,6 +9770,41 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Nanshan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-noain",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "italian-war-of-1521-1526",
+        "spanish-conquest-of-iberian-navarre"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Noáin"
     },
     {
       "authors": [
@@ -9882,8 +10085,43 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "battle-of-pampeluna",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "italian-war-of-1521-1526",
+        "spanish-conquest-of-iberian-navarre"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pampeluna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-pavia",
       "kind": "event",
       "origin": {
@@ -11828,6 +12066,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of the Pyrenees"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-the-sesia-1524",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Sesia (1524)"
     },
     {
       "authors": [
@@ -21669,6 +21939,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "italian-campaign-of-1524-1525",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian campaign of 1524–1525"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "italian-war-of-1494-1495",
@@ -30185,6 +30487,39 @@
       ],
       "created": "2026-09-25",
       "degree": 1,
+      "id": "siege-of-florence-1529-1530",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cognac",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Florence (1529–1530)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
       "id": "siege-of-fort-nashwaak",
       "kind": "event",
       "origin": {
@@ -30203,6 +30538,71 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Fort Nashwaak"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "siege-of-fuenterrabia-1523-1524",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Fuenterrabía (1523–1524)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "siege-of-genoa-1522",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Genoa (1522)"
     },
     {
       "authors": [
@@ -30346,6 +30746,70 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "siege-of-marseille-1524",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Marseille (1524)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "siege-of-mezieres",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "italian-war-of-1521-1526",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Mézières"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -30407,6 +30871,39 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Namur (1746)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "siege-of-naples-1528",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-league-of-cognac",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Naples (1528)"
     },
     {
       "authors": [
@@ -31875,6 +32372,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
+      "degree": 1,
       "id": "spanish-conquest-of-iberian-navarre",
       "kind": "event",
       "origin": {
@@ -37158,6 +37656,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-bicocca",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-brackett-s-wood",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -37284,6 +37788,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gavinana",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gonaives",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -37392,6 +37902,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-landriano",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -37446,7 +37962,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-noain",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-nordlingen-1645",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-pampeluna",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -37537,6 +38065,12 @@
     },
     {
       "id": "battle-of-the-downs",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-the-sesia-1524",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -38256,6 +38790,18 @@
       "rule": "span-vs-article-title"
     },
     {
+      "id": "siege-of-fuenterrabia-1523-1524",
+      "kind": "event",
+      "message": "the title states 1523–1524 and the record is dated 1521–1524",
+      "rule": "span-vs-article-title"
+    },
+    {
+      "id": "siege-of-genoa-1522",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-jadotville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -38263,6 +38809,18 @@
     },
     {
       "id": "siege-of-mafeking",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-marseille-1524",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-mezieres",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -38317,12 +38875,6 @@
     },
     {
       "id": "spanish-conquest-of-guatemala",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "spanish-conquest-of-iberian-navarre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

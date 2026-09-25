@@ -704,6 +704,15 @@
         }
       ]
     },
+    "bicocca-district-of-milan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bin-jawad": {
       "from": "git",
       "versions": [
@@ -2269,6 +2278,15 @@
         }
       ]
     },
+    "florence-q2044": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "fontibon": {
       "from": "git",
       "versions": [
@@ -2510,6 +2528,15 @@
         }
       ]
     },
+    "genoa-q1449": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "georgia-q230": {
       "from": "git",
       "versions": [
@@ -2726,6 +2753,15 @@
         }
       ]
     },
+    "gulf-of-salerno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "gulf-of-tonkin": {
       "from": "git",
       "versions": [
@@ -2870,6 +2906,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "hondarribia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -3760,6 +3805,15 @@
         }
       ]
     },
+    "landriano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "lands-of-the-bohemian-crown": {
       "from": "git",
       "versions": [
@@ -4370,6 +4424,15 @@
         }
       ]
     },
+    "marseille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "matabeleland": {
       "from": "git",
       "versions": [
@@ -4471,6 +4534,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "mezieres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4594,6 +4666,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "montemurlo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4824,6 +4905,15 @@
       ]
     },
     "namur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "naples-q2634": {
       "from": "git",
       "versions": [
         {
@@ -5311,6 +5401,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "pamplona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -6810,6 +6909,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sesia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

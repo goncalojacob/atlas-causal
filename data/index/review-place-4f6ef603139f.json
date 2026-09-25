@@ -1546,6 +1546,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "bicocca-district-of-milan",
+      "kind": "place",
+      "names": [
+        "Bicocca",
+        "Bicocca (district of Milan)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "bin-jawad",
@@ -4755,6 +4782,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "florence-q2044",
+      "kind": "place",
+      "names": [
+        "Florence",
+        "Florença"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5263,6 +5317,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "genoa-q1449",
+      "kind": "place",
+      "names": [
+        "Genoa",
+        "Génova"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5755,6 +5836,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "gulf-of-salerno",
+      "kind": "place",
+      "names": [
+        "Gulf of Salerno",
+        "Golfo de Salerno"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6102,6 +6210,32 @@
           "a9-place"
         ],
         "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q12548, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "hondarribia",
+      "kind": "place",
+      "names": [
+        "Hondarribia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -8078,6 +8212,32 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "landriano",
+      "kind": "place",
+      "names": [
+        "Landriano"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9150,6 +9310,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "marseille",
+      "kind": "place",
+      "names": [
+        "Marseille",
+        "Marselha"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9365,6 +9552,32 @@
           "a9-place"
         ],
         "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q96, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "mezieres",
+      "kind": "place",
+      "names": [
+        "Mézières"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -9646,6 +9859,32 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "montemurlo",
+      "kind": "place",
+      "names": [
+        "Montemurlo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -10126,6 +10365,33 @@
       "kind": "place",
       "names": [
         "Namur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "naples-q2634",
+      "kind": "place",
+      "names": [
+        "Naples",
+        "Nápoles"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10682,7 +10948,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "northern-italy",
       "kind": "place",
       "names": [
@@ -11153,6 +11419,32 @@
         "flags": [
           "imported-facts",
           "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 2,
+      "id": "pamplona",
+      "kind": "place",
+      "names": [
+        "Pamplona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
         ],
         "status": "draft"
       },
@@ -14307,6 +14599,32 @@
       "names": [
         "Serra do Bussaco",
         "Serra do Buçaco"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "sesia",
+      "kind": "place",
+      "names": [
+        "Sesia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -17924,6 +18242,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "bicocca-district-of-milan",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "branxton-northumberland",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18032,6 +18356,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "florence-q2044",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "fort-albany-first-nation",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18045,6 +18375,12 @@
     },
     {
       "id": "fussen",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "genoa-q1449",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18080,6 +18416,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "gulf-of-salerno",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "hajnice",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18099,6 +18441,12 @@
     },
     {
       "id": "hessisch-oldendorf",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "hondarribia",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18176,6 +18524,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "landriano",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "ma-ujowice",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -18194,7 +18548,19 @@
       "rule": "summary-imported"
     },
     {
+      "id": "marseille",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "melle-belgium",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "mezieres",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18218,7 +18584,19 @@
       "rule": "place-unused"
     },
     {
+      "id": "montemurlo",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "namur",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "naples-q2634",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18255,6 +18633,12 @@
     },
     {
       "id": "ollantaytambo",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "pamplona",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
@@ -18345,6 +18729,12 @@
     },
     {
       "id": "schenectady-new-york",
+      "kind": "place",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
+      "id": "sesia",
       "kind": "place",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"

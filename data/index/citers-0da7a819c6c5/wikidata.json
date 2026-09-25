@@ -2720,6 +2720,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bicocca",
+      "kind": "event",
+      "locator": "Q683341"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "Q588059"
@@ -2783,6 +2789,12 @@
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "Q2890742"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-capo-d-orso",
+      "kind": "event",
+      "locator": "Q38251286"
     },
     {
       "dissent": false,
@@ -2969,6 +2981,12 @@
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "Q3181123"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gavinana",
+      "kind": "event",
+      "locator": "Q633362"
     },
     {
       "dissent": false,
@@ -3176,6 +3194,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-landriano",
+      "kind": "event",
+      "locator": "Q2746040"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "Q2889112"
@@ -3290,6 +3314,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-montemurlo",
+      "kind": "event",
+      "locator": "Q2889368"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-harriet",
       "kind": "event",
       "locator": "Q4871801"
@@ -3329,6 +3359,12 @@
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "Q2409298"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-noain",
+      "kind": "event",
+      "locator": "Q2889540"
     },
     {
       "dissent": false,
@@ -3377,6 +3413,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "Q2237713"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pampeluna",
+      "kind": "event",
+      "locator": "Q3174545"
     },
     {
       "dissent": false,
@@ -3731,6 +3773,12 @@
       "id": "battle-of-the-pyrenees",
       "kind": "event",
       "locator": "Q2890693"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-sesia-1524",
+      "kind": "event",
+      "locator": "Q642320"
     },
     {
       "dissent": false,
@@ -5210,6 +5258,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-campaign-of-1524-1525",
+      "kind": "event",
+      "locator": "Q6093105"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1494-1495",
       "kind": "event",
       "locator": "Q1355145"
@@ -6488,9 +6542,27 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-florence-1529-1530",
+      "kind": "event",
+      "locator": "Q981042"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-nashwaak",
       "kind": "event",
       "locator": "Q4392917"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fuenterrabia-1523-1524",
+      "kind": "event",
+      "locator": "Q1541712"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-genoa-1522",
+      "kind": "event",
+      "locator": "Q9291683"
     },
     {
       "dissent": false,
@@ -6518,6 +6590,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-marseille-1524",
+      "kind": "event",
+      "locator": "Q3485951"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mezieres",
+      "kind": "event",
+      "locator": "Q7879248"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "Q3403831"
@@ -6527,6 +6611,12 @@
       "id": "siege-of-namur-1746",
       "kind": "event",
       "locator": "Q3485966"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-naples-1528",
+      "kind": "event",
+      "locator": "Q16529030"
     },
     {
       "dissent": false,
