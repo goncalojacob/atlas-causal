@@ -5424,6 +5424,36 @@
       "kind": "event",
       "label": "war crime",
       "note": "Added in M42 batch 53 from the class the Chaplain-Medic massacre names, read off the class item itself over the network and not guessed. Wikidata glosses it “individual act constituting a serious violation of the laws of war”. No category, as Q3199915 massacre carries none: data/categories.json has no kind for an atrocity and war would say the record is the fighting."
+    },
+    "Q133156": {
+      "kind": "place",
+      "precision": "region",
+      "label": "colony",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"territory under the political control of an overseas state, generally with its own subordinate colonial government\". Carried by Saint-Domingue (Q861551)."
+    },
+    "Q3502482": {
+      "kind": "place",
+      "precision": "region",
+      "label": "cultural region",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"geographic region associated with a particular culture\". Carried by Hispanic America (Q653884)."
+    },
+    "Q137186904": {
+      "kind": "place",
+      "precision": "region",
+      "label": "transcontinental region",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"region or territory that is located across continental borders\". Carried by the Caribbean (Q664609)."
+    },
+    "Q33837": {
+      "kind": "place",
+      "precision": "region",
+      "label": "archipelago",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"collection of islands including the water around them\". Carried by the Caribbean (Q664609), beside Q137186904."
+    },
+    "Q855697": {
+      "kind": "place",
+      "precision": "region",
+      "label": "subcontinent",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"large, relatively self-contained landmass forming a subdivision of a continent\". Carried by Northern America and Mexico (Q19464773)."
     }
   },
   "reconcile": true

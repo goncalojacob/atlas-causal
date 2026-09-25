@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "storming-of-the-bastille--women-s-march-on-versailles--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Women's March on Versailles\", revision 1372203142, § Royal banquet"
+    }
+  ],
+  "from": "storming-of-the-bastille",
+  "to": "women-s-march-on-versailles",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The march's own article, under § Royal banquet: \"Following the mutiny of the French Guards a few hours before the storming of the Bastille, the only troops immediately available for the security of the palace at Versailles were the aristocratic Garde du Corps (body guard) and the Cent-Suisses (hundred Swiss).\" The Guards' mutiny on 14 July is what left Versailles held by two ceremonial companies, which is the state of the palace the march met in October. `precondition-of`: the article argues the condition and not a cause.",
+  "dispute": null
+}

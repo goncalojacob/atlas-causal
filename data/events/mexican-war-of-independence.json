@@ -13,27 +13,28 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-25",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "lane-overridden"
+      "lane-overridden",
+      "a9-place"
     ],
     "note": "A7: the interval was 1800-09-16 to 1821-09-27, which is what Wikidata P580 states for Q68750. The English article \"Mexican War of Independence\", at revision 1371682352, opens \"The Mexican War of Independence (Spanish: Guerra de Independencia de Mexico, 16 September 1810 - 27 September 1821)\", and its infobox gives the same range, so the start is corrected to 1810-09-16 from the article the record cites. The end is unchanged."
   },
-  "wikidata": "Q68750",
-  "sitelinks": {
-    "count": 52,
-    "on": "2026-09-23"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q68750",
   "wikipedia": {
     "en": "Mexican War of Independence",
     "pt": "Guerra da Independência do México"
+  },
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-09-23"
   },
   "sources": [
     {
@@ -53,10 +54,10 @@
     "date": "1810-09-16",
     "endDate": "1821-09-27"
   },
-  "place": null,
+  "place": "northern-america-and-mexico",
   "region": "americas",
   "regionNote": "Lane written by the run over the import's: the import derived `europe` from P17 Q80702, the Spanish Empire, whose point is Madrid. The war was fought in Mexico, so the lane is where the event belongs.",
+  "parent": "spanish-american-wars-of-independence",
   "category": "war",
-  "actors": [],
-  "parent": "spanish-american-wars-of-independence"
+  "actors": []
 }
