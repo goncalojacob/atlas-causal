@@ -11982,5 +11982,25 @@ vocabulary either.*
   the first time in five batches.
 - **The next curation fire is the first fire after 02:00Z on 26 September**, and it
   owns A13's relations pass over every active event.
-- **Deviation numbers: take the next above 1451.** This fire wrote **1450** and
-  **1451**, across two batches.
+- **A label test that does not wait for the shards measures the wrong picture**
+  (**deviation 1452**), and the growing corpus is what exposed it. Run 1844 went
+  red on one browser test, `map-browser`'s *"where an event and a city want the
+  same box, the event has it"*: it asserts that with the events on, Lisbon's
+  **city** label is skipped because an event on the same point took the box, and
+  the city label was drawn. Nothing this fire wrote is in that viewport —
+  `?bbox=-28,25.34,17,50.66` is Iberia and the western Mediterranean, the Mali
+  pair sits at 16.3 N below it and batch 60's five are in Manchuria, the Tsushima
+  Strait and Sakhalin — and the same suite passed **three times locally on the
+  byte-identical tree** and 295 of 295 in runs 1836 and 1841. The cause is in the
+  test: it waits for *a* city label and then reads, and **an event has no name at
+  all until its century's attribute shard lands** (`src/attributes.js`), so on a
+  slow runner the event that wants Lisbon's box has not asked for it yet and the
+  city's label is placed instead. Eight tests in that file already call
+  `settledShards` for exactly this; this one called neither it nor `settledBase`,
+  whose own comment says *"on a slow runner that is exactly what happens"*. The
+  fix is that one wait after each of the test's two `open`s — **not a skip**, and
+  it makes the test measure what it claims to. It will keep dropping runs as the
+  corpus grows, so a fire meeting a red browser test should check the wait before
+  it checks the records.
+- **Deviation numbers: take the next above 1452.** This fire wrote **1450**,
+  **1451** and **1452**, across two batches.
