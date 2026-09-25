@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "heartbreak-ridge",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q489561, the Battle of Heartbreak Ridge, read on 2026-09-25 — A9's first step. The hill mass has no item this pass could reach; the article calls it a \"7-mile (11 km) long hill mass\" 1,500 yards from Bloody Ridge, so the point stands for a ridge and not for a settlement."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Heartbreak Ridge"
+  ],
+  "where": {
+    "lon": 128.016667,
+    "lat": 38.3,
+    "precision": "point",
+    "label": "Heartbreak Ridge"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

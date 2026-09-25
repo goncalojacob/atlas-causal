@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-heartbreak-ridge--operation-commando--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103, § Aftermath"
+    }
+  ],
+  "from": "battle-of-heartbreak-ridge",
+  "to": "operation-commando",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Heartbreak Ridge article makes the follow-up conditional on what the battle won: \"With the successful conclusion of the Touchdown operation, X Corps had removed the sag in the Punchbowl area and in the lines held by the U.S. 2nd and ROK 8th Divisions to the west of the Punchbowl. Advances of over 5 miles along this front shortened the X Corps' lines and brought them into phase with those of U.S. IX Corps to the west. The Eighth Army then planned a more ambitious follow-up, Operation Commando.\" Enabled and not caused: the article says the shortened line made the more ambitious operation possible, not that the battle required it. Probable: Wikipedia alone.",
+  "dispute": null
+}
