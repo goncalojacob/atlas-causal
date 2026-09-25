@@ -522,8 +522,26 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // title, so the last century's names were written into the pane's edge and
     // cut by it. A name written on the other side of its own bar is still
     // beside the thing it names, which a name half off the page is not.
-    const at = labelPlacement(item.x, item.width, labelRoom(name), width);
-    if (!labelFits(row, at, labelRoom(name), item.id)) return;
+    const room = labelRoom(name);
+    const at = labelPlacement(item.x, item.width, room, width);
+    // **And never written past the pane's edge** (M88 §9). `labelPlacement`
+    // moves a title to the other side of its bar where that side has the room
+    // and, where neither does, leaves it on the right — which is M86 §4's own
+    // answer for a phone whose pane is narrower than the name, and is a name
+    // cut by the edge for a bar that begins early and runs to the open end:
+    // its right edge is at the pane's and its left is 1,030 px of its own bar.
+    // Nothing checked, because past the cap the claim below happened to refuse
+    // that one; with the title room kept past the cap it does not, and the
+    // review's own "COVID-19 pander" is back under another name. A bar with no
+    // room for its name still carries it under the pointer, which is the
+    // answer the map and the graph give for a mark they could not name.
+    //
+    // The pane being narrower than the name at all is the one case left as it
+    // was: there is no side to move to and nothing to be gained by drawing
+    // nothing.
+    const from = at.anchor === 'end' ? at.x - room : at.x;
+    if (room <= width && (from < 0 || from + room > width)) return;
+    if (!labelFits(row, at, room, item.id)) return;
     into.take('text', {
       x: at.x, y: top + tall / 2,
       class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),

@@ -853,7 +853,6 @@ export function createPanel(container, {
     covered = false;
     shown = null;
     holdShards(s);
-    announce(openingOf(s));
     // After `holdShards`, which is where this card's own shards are decided.
     seenHeld = heldSignature() ?? '';
     onCard(hasOpening(s));
@@ -874,6 +873,12 @@ export function createPanel(container, {
       loadingCard();
       return;
     }
+    // After that, and not before it: until the record's century has landed the
+    // core's fallback for a title is the record's own id, and "Opened:
+    // carnation-revolution-1974" is the slug where a name goes that M82 is
+    // about. The card is drawn again when the shard arrives and this is
+    // reached then.
+    announce(opened);
     // Reading a narrative is a mode and wins the panel: everything else in
     // the state was derived from the step.
     if (s.narrative) {

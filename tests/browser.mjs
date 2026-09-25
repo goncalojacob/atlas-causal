@@ -490,7 +490,7 @@ export async function manifestFor(page) {
 // **silently** after 4 s, so on a slow run the assertions after them ran
 // against a page that was still arriving and failed with a sentence about lanes
 // or profiles rather than about time. This one fails, and says how far the page
-// got: "9 of 12 attribute shards arrived".
+// got: "9 of 12 attribute shards arrived in 15 s".
 //
 // The page asks for all of them at first paint at the whole span and for the
 // window's at a narrower one, so a test that opens a window passes the shards it

@@ -109,8 +109,8 @@ test('§5: the shard wait fails saying how far the page got', async () => {
   const page = { eval: async () => 3 };
   await assert.rejects(
     () => settledShards(page, { attributeShards: [1, 2, 3, 4, 5] }, { tries: 2, every: 1 }),
-    /\b3 of 5 attribute shards arrived$/,
-    'the failure names what arrived and what was wanted',
+    /\b3 of 5 attribute shards arrived in \d+ s$/,
+    'the failure names what arrived, what was wanted and how long it waited',
   );
   // And a manifest that shards nothing is nothing to wait for.
   await settledShards({ eval: async () => 0 }, { attributeShards: [] }, { tries: 1, every: 1 });
