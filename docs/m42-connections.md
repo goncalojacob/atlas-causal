@@ -5167,3 +5167,56 @@ nothing about the raid); `abeibara-massacres` →
 month between them is not an argument); and `2012-tuareg-rebellion` →
 `tinsalane-ambush` (containment, which is the filing this record already has and
 which C8 bars as an edge).
+
+## Batch 55 — the Korean War's 1951 ridges, and the singleton the prelude reached
+
+*25 September, the import fire that picked the run up at 04:48Z. Today already
+carries a `## Curation 2026-09-25` section and all six of A14's passes carry
+theirs, so this is an import fire and every one of the six is skipped by its own
+rule. A10's order of need puts **Asia** at the front, trailing at 165 against
+Africa's 166 and Europe's 426, so this batch is four Asia rows and no other
+lane. The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 55".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `battle-of-bloody-ridge` → `battle-of-the-punchbowl` | `caused` | *"The deterioration of the situation on Bloody Ridge led General Byers on 28 August to alter his approach and he decided upon a limited advance along the whole Corps' front, starting on 31 August … Thus, Byers rearranged divisional objectives along the Corps' front. The seizure of the northwest rim of the Punchbowl was assigned to the ROK 5th Division and the northeast rim was given to the U.S. 1st Marine Division"* — "Battle of Bloody Ridge", revision 1370434649, § Battle |
+| `battle-of-bloody-ridge` → `battle-of-heartbreak-ridge` | `precondition-of` | *"After withdrawing from Bloody Ridge, the Korean People's Army (KPA) set up new positions just 1,500 yards (1,400 m) away on a 7-mile (11 km) long hill mass. If anything, these defenses were even more formidable than on Bloody Ridge"* — "Battle of Heartbreak Ridge", revision 1376272103, lead, with the same sentence closing "Battle of Bloody Ridge", revision 1370434649, § Aftermath |
+| `battle-of-heartbreak-ridge` → `operation-commando` | `enabled` | *"With the successful conclusion of the Touchdown operation, X Corps had removed the sag in the Punchbowl area … Advances of over 5 miles along this front shortened the X Corps' lines and brought them into phase with those of U.S. IX Corps to the west. The Eighth Army then planned a more ambitious follow-up, Operation Commando"* — "Battle of Heartbreak Ridge", revision 1376272103, § Aftermath |
+| `chinese-spring-offensive` → `battle-of-the-punchbowl` | `precondition-of` | *"The Chinese People's Volunteer Army (PVA) Spring Offensive was stopped by 20 May 1951 and UN forces counterattacked forcing the PVA back to Line Kansas along the southern edge of the Punchbowl by 20 June"* — "Battle of the Punchbowl", revision 1370601885, § Prelude |
+
+All four are `probable`: Wikipedia alone, which rule 22 will not let stand as
+consensus. **The fourth runs into a record that was already here**, which is
+what A5 asks of a batch: `chinese-spring-offensive` has been edgeless since it
+was written, and the sentence that reaches it is in an article none of the
+earlier Korean batches had read. The other three are the chain the batch was
+taken for, and it is a chain and not a star: Bloody Ridge is the cause of one
+battle and the precondition of another, and the second of those enables the
+operation that ends the war of manoeuvre.
+
+**`operation-commando` names neither an actor nor a place, and is filed under
+`korean-war` even so.** Its item, `Q3354681`, carries no `P710` for A12 (4) to
+map, no `P625` of its own, and no `P17`; its `P276` is the Jamestown Line,
+`Q6146251`, which carries no coordinate either — so A9's chain reaches nothing
+with a point and the record takes the Asia lane alone, as the one of the four
+with no place. The filing is the item's own `P361` on `Q8663`, the Korean War,
+and the article's first sentence says the same thing in words: *"Operation
+Commando was an offensive undertaken by United Nations Command (UN) forces
+during the Korean War between 3–12 October 1951."* The atlas holds
+`united-nations` and `united-states-of-america` as actors and neither is on the
+record, because neither is on the item: A12 (4) maps participants an item names
+and this run writes no historical claim of its own, so who fought stays where
+the article has it until an item or a person says otherwise.
+
+**Three edges were read and refused**, each because the sentence is chronology
+or containment rather than a claim, which is the refusal class the curation
+fires use: `battle-of-the-punchbowl` → `battle-of-heartbreak-ridge` (the
+Punchbowl's own lead has *"this was followed by the Battle of Heartbreak Ridge
+northwest of the Punchbowl from September–October 1951"*, which is a date and
+not an argument — the claim about Heartbreak Ridge's ground is in the other two
+articles and is where the edge is written instead); `korean-war` →
+`battle-of-bloody-ridge` and the same for each of the four (containment, which
+is the filing these records already have and which C8 bars as an edge); and
+`operation-commando` → anything in the largest component (its aftermath names
+`Operation Polecharge` and its background `Operation Minden`, and this atlas
+holds neither).

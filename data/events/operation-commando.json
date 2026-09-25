@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "operation-commando",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead",
+      "date"
+    ],
+    "note": "Filed under the Korean War from the item's own P361. No place: the item has no P625, its P276 is the Jamestown Line, which has none either, and it has no P17, so A9's chain reaches no point and the record takes the Asia lane alone. The item states 2–5 October 1951; the article states \"between 3–12 October 1951\", so the end is widened to 12 October from it at revision 1376272180 under A7 and the start left at the item's 2 October, because A7 widens and does not narrow (deviation 1446). No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3354681",
+  "wikipedia": {
+    "en": "Operation Commando"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3354681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Commando\", revision 1376272180"
+    }
+  ],
+  "title": "Operation Commando",
+  "summary": "The English Wikipedia article \"Operation Commando\", at revision 1376272180, opens: \"Operation Commando was an offensive undertaken by United Nations Command (UN) forces during the Korean War between 3–12 October 1951.\" Wikidata item Q3354681, whose own description reads \"military operation in 1951\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-10-02",
+    "endDate": "1951-10-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": []
+}

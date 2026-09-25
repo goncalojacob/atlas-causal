@@ -6517,6 +6517,15 @@
         }
       ]
     },
+    "battle-of-bloody-ridge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-britain": {
       "from": "git",
       "versions": [
@@ -6726,6 +6735,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-heartbreak-ridge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7408,6 +7426,15 @@
             "title"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-punchbowl": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -15158,6 +15185,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-commando": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

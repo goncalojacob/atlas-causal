@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-ridge--battle-of-the-punchbowl--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Ridge\", revision 1370434649, § Battle"
+    }
+  ],
+  "from": "battle-of-bloody-ridge",
+  "to": "battle-of-the-punchbowl",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Bloody Ridge article states the decision and names the Punchbowl as its object: \"The deterioration of the situation on Bloody Ridge led General Byers on 28 August to alter his approach and he decided upon a limited advance along the whole Corps' front, starting on 31 August. By applying pressure over a broad front, Byers hoped to force the KPA to disperse his firepower and to halt the flow of reinforcements to Bloody Ridge. Thus, Byers rearranged divisional objectives along the Corps' front. The seizure of the northwest rim of the Punchbowl was assigned to the ROK 5th Division and the northeast rim was given to the U.S. 1st Marine Division.\" Cause and not chronology: the article says why the Punchbowl attack was ordered, and it was ordered to relieve Bloody Ridge. Probable: Wikipedia alone.",
+  "dispute": null
+}

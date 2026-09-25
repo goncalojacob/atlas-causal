@@ -1519,6 +1519,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "bloody-ridge",
+      "kind": "place",
+      "names": [
+        "Bloody Ridge"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2035177, the Battle of Bloody Ridge, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The ridge itself has no item this pass could reach; the article calls it \"an east–west ridge with three peaks, the highest at the western end rising to 983 meters\", in Yanggu County, Gangwon Province.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5633,6 +5661,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "heartbreak-ridge",
+      "kind": "place",
+      "names": [
+        "Heartbreak Ridge"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q489561, the Battle of Heartbreak Ridge, read on 2026-09-25 — A9's first step. The hill mass has no item this pass could reach; the article calls it a \"7-mile (11 km) long hill mass\" 1,500 yards from Bloody Ridge, so the point stands for a ridge and not for a settlement.",
         "status": "draft"
       },
       "revised": null,
@@ -11848,6 +11904,35 @@
         "flags": [
           "imported-facts"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "punchbowl",
+      "kind": "place",
+      "names": [
+        "Punchbowl",
+        "Haean Basin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "Written from Q15269226, the Punchbowl, by A9's second step (P276) and not its first — the one place in this batch where both steps give the same point to three decimals, so the second loses nothing and gains the item, its name and its id for a later record to reuse (deviation 1445). `point` from the battlefield class Q4895508, which is the word A12 (2) itself uses; the item's other class, Q813672 basin, is left undecided rather than guessed at.",
         "status": "draft"
       },
       "revised": null,

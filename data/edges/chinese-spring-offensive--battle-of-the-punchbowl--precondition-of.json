@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "chinese-spring-offensive--battle-of-the-punchbowl--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Punchbowl\", revision 1370601885, § Prelude"
+    }
+  ],
+  "from": "chinese-spring-offensive",
+  "to": "battle-of-the-punchbowl",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Punchbowl article opens its prelude with where the front came to rest: \"The Chinese People's Volunteer Army (PVA) Spring Offensive was stopped by 20 May 1951 and UN forces counterattacked forcing the PVA back to Line Kansas along the southern edge of the Punchbowl by 20 June.\" That line is the one the battle was fought from three months later, so the offensive's failure is what put the two armies on the rim of the Punchbowl at all. Precondition and not cause: the article gives the ground, and the decision to attack it it attributes to the breakdown of the armistice talks in August. Probable: Wikipedia alone.",
+  "dispute": null
+}

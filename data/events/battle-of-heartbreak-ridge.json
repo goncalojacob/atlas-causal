@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "battle-of-heartbreak-ridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Filed under the Korean War from the item's own P361. Place by A9's first step, the item's own P625 (A12 (2)). Of the participants the item's P710 gives — only the United States — the atlas holds the one, so it is the one line on the record (A12 (4))."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q489561",
+  "wikipedia": {
+    "en": "Battle of Heartbreak Ridge"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q489561"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103"
+    }
+  ],
+  "title": "Battle of Heartbreak Ridge",
+  "summary": "The English Wikipedia article \"Battle of Heartbreak Ridge\", at revision 1376272103, opens: \"The Battle of Heartbreak Ridge (Korean: 단장의 능선 전투; Hanja: 斷腸의 稜線 戰鬪; French: Bataille de Crèvecœur), also known as the Battle of Wendengli (Chinese: 文登里战斗; pinyin: Wéndēnglǐ Zhàndòu), was a month-long battle in the Korean War which took place between 13 September and 15 October 1951.\" Wikidata item Q489561, whose own description reads \"1951 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1951,
+    "end": 1951,
+    "date": "1951-09-13",
+    "endDate": "1951-10-15"
+  },
+  "place": "heartbreak-ridge",
+  "region": null,
+  "regionNote": null,
+  "parent": "korean-war",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent",
+      "note": "P710 on Q489561; the article puts the U.S. 2nd Infantry Division and its attached French Battalion at the head of the attack."
+    }
+  ]
+}

@@ -4038,10 +4038,22 @@
     }
   ],
   "classes": {
+    "Q4": {
+      "kind": "event",
+      "category": "death",
+      "label": "death",
+      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “permanent cessation of vital functions”. Carried by Q431888, the killing of Muammar Gaddafi, whose other class Q914841 *frontier justice* was refused in the same batch as no kind of event — it names how a punishment was delivered, not a thing that happened. The category is `death`, which data/categories.json describes as a person's death “whether by illness, accident, execution or assassination”, so the class and the category are the same statement."
+    },
     "Q5": {
       "kind": "actor",
       "actorType": "person",
       "label": "human"
+    },
+    "Q165": {
+      "kind": "place",
+      "precision": "region",
+      "label": "sea",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q198": {
       "kind": "event",
@@ -4063,6 +4075,12 @@
       "precision": "city",
       "label": "town"
     },
+    "Q4022": {
+      "kind": "place",
+      "precision": "region",
+      "label": "river",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
     "Q5119": {
       "kind": "place",
       "precision": "city",
@@ -4082,6 +4100,12 @@
       "kind": "actor",
       "actorType": "institution",
       "label": "political party"
+    },
+    "Q7755": {
+      "kind": "event",
+      "category": "law",
+      "label": "constitution",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. The same reading as Q49371: a constitution is named in data/categories.json's own description of `law`."
     },
     "Q7944": {
       "kind": "event",
@@ -4118,6 +4142,12 @@
       "label": "treaty of the European Union",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q11204": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "legislature",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"A kind of deliberative assembly with the power to pass, amend, and repeal laws\" is a body and not something that happens, so the Cortes of Cádiz enters this atlas as an actor; the event that carries its consequence is the constitution it adopted."
+    },
     "Q12184": {
       "kind": "event",
       "category": "disaster",
@@ -4129,20 +4159,68 @@
       "precision": "city",
       "label": "municipality"
     },
+    "Q16560": {
+      "kind": "place",
+      "precision": "point",
+      "label": "palace",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “grand residence, especially a royal or episcopal residence”. Carried by Q662491, the Château de Saint-Cloud, and Q234364, the Tuileries."
+    },
+    "Q23413": {
+      "kind": "place",
+      "precision": "point",
+      "label": "castle",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “type of fortified structure built in Europe, Asia and the Middle East”. Carried by Q193369 Prague Castle, where the Peace of Prague was concluded: a castle is somewhere events happen, which is what a place record is."
+    },
     "Q23442": {
       "kind": "place",
       "precision": "region",
       "label": "island"
+    },
+    "Q33837": {
+      "kind": "place",
+      "precision": "region",
+      "label": "archipelago",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"collection of islands including the water around them\". Carried by the Caribbean (Q664609), beside Q137186904."
+    },
+    "Q34763": {
+      "kind": "place",
+      "precision": "region",
+      "label": "peninsula",
+      "note": "Added in M42 batch 47, the Russo-Japanese War read as a chain, from the class Q4218510 (the Kwantung Peninsula) and Q326917 (the Liaodong Peninsula) both name and nothing else does. The label and the description — \"landform surrounded more than half but not entirely by water\" — are read from the item itself over the network. `region` because a peninsula is ground and not a point on it, and larger than a settlement without being a state: src/vocab.js calls that coarse and the map draws it wider and fainter, which is the honest drawing of a battle sited only by the peninsula it was fought on."
+    },
+    "Q37055": {
+      "kind": "event",
+      "category": "founding",
+      "label": "independence",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. The category is founding, as Q1464916 declaration of independence already takes in this table: a state coming into existence. Carried by the independence of Morocco."
+    },
+    "Q39594": {
+      "kind": "place",
+      "precision": "region",
+      "label": "bay",
+      "note": "Added in M42b batch 20. Wikidata's own description, read off the class item, is 'body of water connected to an ocean or lake, formed by an indentation of the shoreline': an area of water and not a point on the ground, so the coarse precision PRECISIONS gives a region, as batch 18 gave the Bay of All Saints."
     },
     "Q40231": {
       "kind": "event",
       "category": "election",
       "label": "election"
     },
+    "Q40357": {
+      "kind": "place",
+      "precision": "point",
+      "label": "prison",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “place in which people are, for legal reasons, physically confined” — a building on the ground, which is what a place of this atlas is. Carried by Q3292048, the Prison de l’Abbaye, and by Q1865480, the Bastille."
+    },
     "Q41397": {
       "kind": "event",
       "label": "genocide",
       "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q41487": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "court",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A judicial institution with the authority to resolve legal disputes: a body, like the three above it."
     },
     "Q43059": {
       "kind": "event",
@@ -4171,41 +4249,105 @@
       "category": "revolution",
       "label": "coup d'état"
     },
+    "Q46831": {
+      "kind": "place",
+      "precision": "region",
+      "label": "mountain range",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
+    },
+    "Q49371": {
+      "kind": "event",
+      "category": "law",
+      "label": "legislation",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Product of enrolling, enacting, or promulgating law by a legislature\" is data/categories.json's `law` — \"a constitution, a statute, a decree or a court ruling\"."
+    },
     "Q53706": {
       "kind": "event",
       "label": "robbery",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q62127": {
+      "kind": "place",
+      "precision": "region",
+      "label": "department of Haiti",
+      "note": "Added in M42b batch 26, on the same mirror rule: Q215655 department of Colombia, Q861184 department of Peru, Q250050 department of Bolivia and Q743074 region of Mali are all first-level administrative divisions the table already calls a region. Wikidata's own description of the class, read off the class item, is \"first-level administrative territorial entity of the Republic of Haiti\". `region` because a department is larger than a town and is not a state, which is the line PRECISIONS draws. Artibonite, which battle-of-ravine-a-couleuvres names under P276, carries it."
     },
     "Q81672": {
       "kind": "event",
       "label": "attempted murder",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q82794": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region",
+      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
+    },
     "Q103495": {
       "kind": "event",
       "label": "historical period / world war",
       "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q107706": {
+      "kind": "event",
+      "category": "treaty",
+      "label": "armistice",
+      "note": "Added in M42 batch 7, read from Wikidata itself: the only class Q328499, the Armistice of Mudros, carries. An armistice is an agreement two sides sign, which is why it takes the treaty category and not war."
     },
     "Q114380": {
       "kind": "event",
       "label": "financial crisis",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q115291": {
+      "kind": "place",
+      "precision": "region",
+      "label": "province of Cuba",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
+    },
     "Q124734": {
       "kind": "event",
       "label": "rebellion",
       "note": "Added in M40a from the import report, where 7 ticked world candidate(s) were refused under it. The label was the candidate list's own phrase, \"rebellion / civil war\"; it is read from Wikidata here in M42 batch 42 and is `rebellion` alone. No category even so: the class is what Q2656683, the Simba rebellion, carries, and that record is a rebellion its own article also calls a regional uprising inside a civil war, so choosing between `revolution` and `war` for every item of this class is an edit somebody should argue with."
+    },
+    "Q124757": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "riot",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “violent public disturbance against authority, property or people”, which is data/categories.json’s uprising. Carried by Q1154330, the insurrection of 10 August 1792."
     },
     "Q131569": {
       "kind": "event",
       "category": "treaty",
       "label": "treaty"
     },
+    "Q131681": {
+      "kind": "place",
+      "precision": "region",
+      "label": "reservoir",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “artificial lake impounded using a dam or lock to store water”."
+    },
     "Q132821": {
       "kind": "event",
       "category": "death",
       "label": "murder",
       "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q133156": {
+      "kind": "place",
+      "precision": "region",
+      "label": "colony",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"territory under the political control of an overseas state, generally with its own subordinate colonial government\". Carried by Saint-Domingue (Q861551)."
+    },
+    "Q135010": {
+      "kind": "event",
+      "label": "war crime",
+      "note": "Added in M42 batch 53 from the class the Chaplain-Medic massacre names, read off the class item itself over the network and not guessed. Wikidata glosses it “individual act constituting a serious violation of the laws of war”. No category, as Q3199915 massacre carries none: data/categories.json has no kind for an atrocity and war would say the record is the fighting."
+    },
+    "Q154278": {
+      "kind": "event",
+      "label": "ethnic cleansing",
+      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q1775286, the deportation of the Crimean Tatars, carries. No category, as Q8465 and Q625298 beside it have none: the atlas holds the Holocaust, the Armenian genocide and Katyn with no category either, and this run is not the one to decide which of the twelve they are."
     },
     "Q168983": {
       "kind": "event",
@@ -4219,6 +4361,12 @@
       "label": "wildfire",
       "note": "Added in M20 from the import report, where 3 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q174782": {
+      "kind": "place",
+      "precision": "point",
+      "label": "square",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “open public spaces in cities or towns … often located at the junction of two or more thoroughfares”. Carried by Q189503, the place de la Concorde, and Q217925, the Champ de Mars."
+    },
     "Q175331": {
       "kind": "event",
       "label": "rebellion",
@@ -4229,17 +4377,64 @@
       "category": "war",
       "label": "battle"
     },
+    "Q180684": {
+      "kind": "event",
+      "category": "other",
+      "label": "conflict",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a situation in which unacceptable differences in interests, expectations, values, or opinions occur between individuals or groups” — which is not organised armed force between polities, so it is not “war”, and is too general to be any of the other ten. Carried by Q15784403, the insurrection of 31 May – 2 June 1793."
+    },
+    "Q188055": {
+      "kind": "event",
+      "category": "war",
+      "label": "siege",
+      "note": "Added in M42 batch 35, the Africa batch of the inverse `part of` vein. The label and the description — “military blockade of a city or fortress” — are read from the item itself over the network, which this sandbox has; the class is here because Q2090584, the Siege of Mafeking, carries it and the table did not. The category needs no argument: data/categories.json's own description of `war` names a siege in its list."
+    },
+    "Q194465": {
+      "kind": "event",
+      "category": "founding",
+      "label": "annexation",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “acquisition of a state’s territory by another state”; the category is founding, which data/categories.json describes as something coming into existence or ending, because what an annexation does to the annexed state is end it. Carried by the Anschluss."
+    },
+    "Q204933": {
+      "kind": "event",
+      "category": "death",
+      "label": "decapitation",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “complete separation of the head from the body”; it is the second class of Q3062714 and it agrees with the first, Q10855380 public execution."
+    },
+    "Q215655": {
+      "kind": "place",
+      "precision": "region",
+      "label": "department of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
     "Q216227": {
       "kind": "event",
       "category": "disaster",
       "label": "drought",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q217901": {
+      "kind": "event",
+      "category": "treaty",
+      "label": "capitulation",
+      "note": "Added in M42 batch 26 from the same lookup; Wikidata glosses it “form of surrender”. Carried by the Argentine surrender in the Falklands War. The category follows Q107706 armistice, already in this table as treaty: an instrument signed by both belligerents that stops the fighting is the nearest of the twelve, and a surrender is not itself organised armed force."
+    },
     "Q220187": {
       "kind": "event",
       "category": "disaster",
       "label": "oil spill",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q230533": {
+      "kind": "event",
+      "label": "decolonization",
+      "note": "Added in M42’s filing pass (A6) from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the period umbrella the owner’s rule calls for — the decolonisation of Africa — carries it and the table did not. No category: a period is not one of the twelve kinds of event."
+    },
+    "Q250050": {
+      "kind": "place",
+      "precision": "region",
+      "label": "department of Bolivia",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first-level administrative subdivision of Bolivia”."
     },
     "Q273120": {
       "kind": "event",
@@ -4257,6 +4452,42 @@
       "label": "assault",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q381045": {
+      "kind": "event",
+      "category": "other",
+      "label": "oath",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “personal affirmation of a statement”. It is none of the eleven named categories — an oath is not a treaty, which is between polities, nor a law, which the state enacts — so it takes “other”. Carried by Q60022, the Tennis Court Oath."
+    },
+    "Q467011": {
+      "kind": "event",
+      "category": "war",
+      "label": "invasion",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities. Carried by the British expedition to Tibet."
+    },
+    "Q474138": {
+      "kind": "event",
+      "category": "war",
+      "label": "war of aggression",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q476807": {
+      "kind": "event",
+      "category": "war",
+      "label": "military raid",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q482821": {
+      "kind": "place",
+      "precision": "city",
+      "label": "metropolitan city of South Korea",
+      "note": "Added in M42 batch 44 from the class Q20934, Incheon, names. The label and the description — \"type of administrative subdivision in South Korea\" — are read from the item itself over the network rather than guessed."
+    },
+    "Q484170": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of France",
+      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
+    },
     "Q484652": {
       "kind": "actor",
       "actorType": "institution",
@@ -4267,17 +4498,106 @@
       "precision": "city",
       "label": "human settlement"
     },
-    "Q3249005": {
+    "Q511866": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "mutiny",
+      "note": "Added in M42 batch 26 from a lookup against Wikidata, which this run could reach: the label and the description — “method of revolt” — are the service’s own. The class is here because two rows of the batch carry it and the table did not: the Potemkin mutiny of 1905 and the Junker mutiny of 1917. The category is revolution, and it is the one case in data/categories.json that needs no argument: that category’s own description names a mutiny in its list."
+    },
+    "Q518554": {
+      "kind": "event",
+      "category": "other",
+      "label": "partition",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q558330": {
       "kind": "place",
       "precision": "city",
-      "label": "city of Vietnam",
-      "note": "Added in M42 batch 43 for Q36027, Điện Biên Phủ, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
+      "label": "municipality of Cuba",
+      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
     },
     "Q625298": {
       "kind": "event",
       "label": "peace treaty",
       "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. The label is what the candidate list called those items. Given the category `treaty` in M42 batch 37: data/categories.json describes that category as \"an agreement between polities: a treaty, a pact, an accession, a concordat\", which is a peace treaty exactly.",
       "category": "treaty"
+    },
+    "Q625994": {
+      "kind": "event",
+      "label": "convention",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name. The label and description are read from the item itself over the network. Wikidata glosses it “meeting of a group of individuals and/or companies in a certain field”, so it is a conference and not a treaty — the trap the Earth Summit sets for a table that reads the word. No category: none of the twelve is a meeting of states, and Q154278 is the precedent for leaving it unset rather than guessing."
+    },
+    "Q645883": {
+      "kind": "event",
+      "category": "war",
+      "label": "military operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q646740": {
+      "kind": "event",
+      "category": "war",
+      "label": "landing operation",
+      "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
+    },
+    "Q650711": {
+      "kind": "event",
+      "category": "war",
+      "label": "combat",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
+    "Q678146": {
+      "kind": "event",
+      "category": "war",
+      "label": "bombardment",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military attack; the category is the one every military operation class here already carries."
+    },
+    "Q680838": {
+      "kind": "event",
+      "category": "war",
+      "label": "ambush",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, which Q645883 already reads as an event of category war."
+    },
+    "Q718893": {
+      "kind": "place",
+      "precision": "region",
+      "label": "theater of war",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “area or place in which important military events occur or are progressing”."
+    },
+    "Q743074": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region of Mali",
+      "note": "Added in M42 batch 52 for Q338988, Kidal Region, which kidal-offensive names under P276. The label is read from the item itself over the network; the item carries no English description and its article is “Regions of Mali”. `region` because a first-level administrative division of Mali is larger than a town and is not a state, which is the line PRECISIONS draws."
+    },
+    "Q744913": {
+      "kind": "event",
+      "category": "disaster",
+      "label": "aviation accident",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
+    },
+    "Q747074": {
+      "kind": "place",
+      "precision": "city",
+      "label": "comune of Italy",
+      "note": "Added in M42b batch 23, on the precedent of Q484170, commune of France, which batch 1 added with the same reasoning. Wikidata's own description of the class, read off the class item, is 'municipal divisions of Italy': a settlement with a seat and a point, which is what PRECISIONS calls a city. The three Italian locations of this batch — Casaloldo, Crema and the comune Vicenza is also classed as — were refused for want of this one line."
+    },
+    "Q750215": {
+      "kind": "event",
+      "category": "death",
+      "label": "mass murder",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “act of killing a large number of people by non-state actors”, which is not armed force between polities; the category that names a killing is “death”, as it is for Q3199915 massacre, already in this table. Carried by Q862586, the September Massacres."
+    },
+    "Q766875": {
+      "kind": "event",
+      "category": "war",
+      "label": "ethnic conflict",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q805248": {
+      "kind": "place",
+      "precision": "point",
+      "label": "jeu de paume building",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building for the ‘jeu de paume’ game in Baroque times”. Carried by Q805255, the Salle du Jeu de Paume at Versailles."
     },
     "Q806824": {
       "kind": "event",
@@ -4289,6 +4609,35 @@
       "category": "treaty",
       "label": "Treaty of Accession to the EU",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q815962": {
+      "kind": "event",
+      "label": "colonization",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Establishment and development of settlements by people or animals\" is a process over a span, which is what Q11514315 already makes an event; it carries no category because none of the twelve is what a colonization is."
+    },
+    "Q830494": {
+      "kind": "event",
+      "category": "war",
+      "label": "dogfight",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q154720, the Battle of Britain, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q831663": {
+      "kind": "event",
+      "category": "war",
+      "label": "military campaign",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities, as data/categories.json has the war category. Carried by the British expedition to Tibet."
+    },
+    "Q839954": {
+      "kind": "place",
+      "precision": "point",
+      "label": "archaeological site",
+      "note": "Added in M42b batch 19, the Spanish conquest vein of the Americas' 16th century. The label and the gloss are read from the class item itself over the network: Wikidata's own description is \"place (or group of physical sites) in which evidence of past activity is preserved\", which is A12 C2's \"point\" — the precision it names for a battlefield or a site — and not a settlement."
+    },
+    "Q855697": {
+      "kind": "place",
+      "precision": "region",
+      "label": "subcontinent",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"large, relatively self-contained landmass forming a subdivision of a continent\". Carried by Northern America and Mexico (Q19464773)."
     },
     "Q858439": {
       "kind": "event",
@@ -4302,15 +4651,39 @@
       "label": "natural disaster",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q861184": {
+      "kind": "place",
+      "precision": "region",
+      "label": "department of Peru",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first level administrative subdivision of Peru”."
+    },
     "Q864113": {
       "kind": "event",
       "label": "proxy war / civil war",
       "note": "Added in M40a from the import report, where 3 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q876274": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval warfare",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q208127, the Battle of Tsushima, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
     "Q891854": {
       "kind": "event",
       "label": "bomb attack",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q895526": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "governing body",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
+    },
+    "Q997267": {
+      "kind": "event",
+      "category": "war",
+      "label": "skirmish",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
     },
     "Q1006311": {
       "kind": "event",
@@ -4323,11 +4696,28 @@
       "label": "stock market crash",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q1065118": {
+      "kind": "place",
+      "precision": "city",
+      "label": "district of China",
+      "note": "Added in M42 batch 47 from the other class Q623329, Lüshunkou, names. The label and the description — \"administrative division of the People's Republic of China\" — are read from the item itself over the network. `city` and not `region` because a district of China sits below a prefecture-level city and is settlement-scale, which is what Lüshunkou is; it agrees with Q7930989 on the same item, so `classify()` reads one precision and not a disagreement."
+    },
+    "Q1123131": {
+      "kind": "event",
+      "label": "disputation",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A formalized method of debate; the Valladolid debate is an instance of one. No category: a debate is none of the twelve, and `other` is for a kind the atlas has too few of to name, not for one nobody looked at."
+    },
     "Q1128324": {
       "kind": "event",
       "category": "election",
       "label": "European Parliament election",
       "note": "Added in M20 from the import report, where 11 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q1131296": {
+      "kind": "place",
+      "precision": "city",
+      "label": "freguesia of Portugal",
+      "note": "Added in M42b batch 25, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q2074737 municipality of Spain are that line, and a freguesia is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third level of administrative subdivision of Portugal\". Vimeiro, where the Battle of Vimeiro was fought, was refused for want of it."
     },
     "Q1139665": {
       "kind": "event",
@@ -4339,15 +4729,85 @@
       "kind": "event",
       "label": "occurrence"
     },
+    "Q1192114": {
+      "kind": "event",
+      "category": "war",
+      "label": "military maneuver",
+      "note": "Added in M42b batch 7, the Spanish American wars of independence, from the class the item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “organized movement of troops during a combat mission” and makes it a subclass of Q1799072, method; data/categories.json’s “war” is “a war, a campaign, a battle or a siege: organised armed force between polities”, which a troop movement during a combat mission is. Carried by Q968126, the Crossing of the Andes."
+    },
+    "Q1219394": {
+      "kind": "event",
+      "category": "election",
+      "label": "independence referendum",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1261499": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval battle",
+      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q156554, the Battle of Jutland, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q1284645": {
+      "kind": "event",
+      "category": "law",
+      "label": "edict",
+      "note": "Added in M42b batch 5, from the class the Edict of Restitution names. The label and the description — “announcement of a law, often associated with monarchism” — are the item's own, read over the network. The category is `law`, which data/categories.json describes as “a constitution, a statute, a decree or a court ruling: the state changing what the rules are”: an edict is that decree."
+    },
+    "Q1303061": {
+      "kind": "event",
+      "category": "war",
+      "label": "friendly fire",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
     "Q1323212": {
       "kind": "event",
       "label": "insurgency / rebellion",
       "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q1361229": {
+      "kind": "event",
+      "category": "war",
+      "label": "conquest",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata's own gloss is \"military subjugation of an enemy by force of arms\", which is data/categories.json's `war` — \"a war, a campaign, a battle or a siege: organised armed force between polities\" — in other words."
+    },
+    "Q1377300": {
+      "kind": "event",
+      "label": "first wave of European colonization",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata glosses it \"aspect of history\", which is a period and not a kind of event this atlas has a category for, so it names no category: it stands beside Q1361229 on the conquest of the Aztec Empire and must agree with it about the kind."
+    },
+    "Q1384277": {
+      "kind": "event",
+      "category": "war",
+      "label": "military expedition",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. A military expedition is organised armed force between polities, which is the war category as data/categories.json describes it. Two of the eight carry it: the Suez Crisis and the British expedition to Tibet."
+    },
     "Q1412901": {
       "kind": "event",
       "label": "secret treaty",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q1422929": {
+      "kind": "place",
+      "precision": "city",
+      "label": "primate city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “disproportionately large city in its country or region”."
+    },
+    "Q1430466": {
+      "kind": "event",
+      "category": "other",
+      "label": "flight",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “response to distress by fleeing”, which is none of the eleven named categories. Carried by Q1192894, the flight to Varennes."
+    },
+    "Q1456892": {
+      "kind": "event",
+      "label": "peace process",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q1464916": {
+      "kind": "event",
+      "category": "founding",
+      "label": "declaration of independence",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
     },
     "Q1475448": {
       "kind": "event",
@@ -4355,10 +4815,28 @@
       "label": "regicide",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q1546073": {
+      "kind": "event",
+      "category": "war",
+      "label": "covert operation",
+      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
+    },
     "Q1549591": {
       "kind": "place",
       "precision": "city",
       "label": "big city"
+    },
+    "Q1620908": {
+      "kind": "place",
+      "precision": "region",
+      "label": "historical region",
+      "note": "Added in M42b batch 9, for the Misiones Orientales the Guaraní War was fought over. The label and the description are read from the class item itself over the network: Wikidata glosses it “geographic or cultural region which existed in the past, that may or may not exist anymore”. A region that no longer exists is still somewhere events happened, which is what a place is here; `precision` says how coarsely it is drawn."
+    },
+    "Q1637706": {
+      "kind": "place",
+      "precision": "city",
+      "label": "million city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city with a population of more than 1,000,000”."
     },
     "Q1646218": {
       "kind": "event",
@@ -4374,6 +4852,54 @@
       "label": "United Nations treaty / international human rights instrument / multilateral treaty",
       "note": "Added in M40a from the import report, where 4 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q1753200": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "intifada",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1758856": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Mali",
+      "note": "Added in M42 batch 50, the Mali War vein of the Africa lane, where five of the six located items the batch names carry it and nothing else. The label and the description — “third-level administrative unit in Mali” — are read from the item itself over the network. `city` is the precision Q484170, commune of France, already carries for the same reason: a commune of Mali is the unit a town is, and Gao, Kidal, Konna, Diabaly and Tessalit are towns."
+    },
+    "Q1760704": {
+      "kind": "event",
+      "category": "war",
+      "label": "withdrawal",
+      "note": "Added in M42 batch 52, the Mali War vein of the Africa lane, for Q131697486, the French military withdrawal from West Africa. The label and the description — “military maneuver of abandoning territory and returning to a safer area” — are read from the item itself over the network and not guessed. `war` is the category Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a withdrawal is a manoeuvre of one."
+    },
+    "Q1827102": {
+      "kind": "event",
+      "category": "war",
+      "label": "religious war",
+      "note": "Added in M42b batch 5, from the class the Thirty Years' War itself names. The label and the description — “war primarily caused or justified by differences in religion” — are the item's own, read over the network. The category is `war`, which data/categories.json describes as organised armed force between polities: what the war was fought over does not change that it was fought."
+    },
+    "Q1886460": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "revolutionary wave",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q1959141": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval blockade",
+      "note": "Added in M42b batch 26 for Q4927230, the Blockade of Saint-Domingue. The label is read from the class item itself; the item carries no description in English or Portuguese and has no English article, so there is no gloss to quote. `war` is the category Q1261499, naval battle, Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a blockade is a military operation of one against another."
+    },
+    "Q2001676": {
+      "kind": "event",
+      "category": "war",
+      "label": "offensive",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, as Q645883 is."
+    },
+    "Q2074737": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Spain",
+      "note": "Added in M42b batch 8. The label and the description are read from the class item itself over the network; Q15284 municipality and Q2555896 municipality of Colombia are the precedent for a municipality being a place of this atlas."
+    },
     "Q2223653": {
       "kind": "event",
       "label": "terrorist attack",
@@ -4385,15 +4911,50 @@
       "label": "oil spill",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q2264924": {
+      "kind": "place",
+      "precision": "city",
+      "label": "port city",
+      "note": "Added in M42b batch 20, the South and Central American half of the War of Jenkins' Ear. The label and the gloss are read from the class item itself over the network: Wikidata's own description is 'city or town which has a port', which is a settlement and so the same precision Q515 takes."
+    },
+    "Q2276925": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Galicia",
+      "note": "Added in M42b batch 25, on the same rule and the same line: Q2074737 municipality of Spain, which batch 8 added, and of which this is the Galician case. Wikidata's own description of the class, read off the class item, is \"administrative territorial entity of Galicia, Spain\". A Coruña, where the Battle of Corunna was fought, carries this class and no other and was refused for want of it."
+    },
     "Q2334719": {
       "kind": "event",
       "label": "bank robbery",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q2380335": {
+      "kind": "event",
+      "category": "war",
+      "label": "airstrike",
+      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q134884640, Operation Rising Lion, carries. An airstrike is organised armed force between polities, which is the war category as data/categories.json describes it."
+    },
+    "Q2401485": {
+      "kind": "event",
+      "label": "expedition",
+      "note": "Added in M42b batch 11. The label and the description — \"discovery or research trip to a remote or undeveloped region\" — are read from the class item itself over the network, which this sandbox has; the class is here because Q18578423, the voyages of Christopher Columbus, carries it and the table did not. No category: data/categories.json has none for an expedition, and `other` would say less than nothing."
+    },
     "Q2515494": {
       "kind": "event",
       "label": "constitutional referendum",
       "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q2555896": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q2571972": {
+      "kind": "event",
+      "category": "law",
+      "label": "decree",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “rule of law usually issued by a head of state”, which is data/categories.json’s “the state changing what the rules are” word for word. Carried by Q206979, the Civil Constitution of the Clergy."
     },
     "Q2618461": {
       "kind": "event",
@@ -4401,10 +4962,21 @@
       "label": "legislative election",
       "note": "Added in M20 from the import report, where 8 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q2627975": {
+      "kind": "event",
+      "category": "culture",
+      "label": "ceremony",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a unified ritualistic event with a purpose, usually consisting of a number of artistic components, performed on a special occasion”, which is data/categories.json’s “culture”. Carried by Q143866, the Fête de la Fédération."
+    },
     "Q2659056": {
       "kind": "event",
       "label": "colonial war",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q2717573": {
+      "kind": "event",
+      "label": "extra-judicial killing",
+      "note": "Added in M42b batch 4, from the class one item of the Cuban Revolution's vein names — the Humboldt 7 massacre. The label and the description are the item's own, read over the network: \"intentional and unlawful killings of individuals by state actors without judicial process\". It takes no category, as the sibling class massacre (Q3199915) takes none: which of the twelve kinds a killing by the state is, is a judgement the table has not made for a massacre either."
     },
     "Q2723958": {
       "kind": "event",
@@ -4417,10 +4989,44 @@
       "label": "murder",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q2983893": {
+      "kind": "place",
+      "precision": "city",
+      "label": "quarter",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A quarter is a subclass of human settlement and is smaller than one, never larger; Bab El Oued names it beside the commune and the two agree."
+    },
+    "Q2989398": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Algeria",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A commune is Algeria's third-level division and is a settlement, so it takes the precision a settlement takes."
+    },
+    "Q2993893": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "royal council",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. One of the four classes of the Council of the Indies; all four are bodies, which is what keeps the item from being refused for classes that disagree."
+    },
+    "Q2994416": {
+      "kind": "actor",
+      "actorType": "institution",
+      "label": "consejo",
+      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
+    },
+    "Q3002772": {
+      "kind": "event",
+      "label": "political crisis",
+      "note": "Added in M42 batch 48 from the class the May 1958 crisis item names, read off the class item itself over the network: a subclass of crisis and of political event. No category, because none of the twelve of data/categories.json is a political crisis — a person sets it if one fits."
+    },
     "Q3024240": {
       "kind": "actor",
       "actorType": "polity",
       "label": "historical country"
+    },
+    "Q3109572": {
+      "kind": "event",
+      "label": "civil resistance",
+      "note": "Added in M42 batch 22 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the Arab Spring’s own origin event — the Tunisian revolution, which every other record of that wave points back to — carries it and the table did not. No category: a campaign of civil resistance is not one of the twelve kinds of event, and most of them are not revolutions in the end."
     },
     "Q3199915": {
       "kind": "event",
@@ -4433,10 +5039,34 @@
       "label": "pandemic",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q3249005": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city of Vietnam",
+      "note": "Added in M42 batch 43 for Q36027, Điện Biên Phủ, which is the Battle of Dien Bien Phu's P276 and whose own P625 is the battle's own coordinate to two places. Read off Wikidata rather than guessed; a city of Vietnam is a settlement and the precision is corrected to `city` on the record, as A12 (2) asks and the code still does not."
+    },
+    "Q3257686": {
+      "kind": "place",
+      "precision": "city",
+      "label": "locality",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
     "Q3454916": {
       "kind": "event",
       "label": "untyped in the candidate list",
       "note": "Added in M20 from the import report, where 3 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q3502482": {
+      "kind": "place",
+      "precision": "region",
+      "label": "cultural region",
+      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"geographic region associated with a particular culture\". Carried by Hispanic America (Q653884)."
+    },
+    "Q3558970": {
+      "kind": "place",
+      "precision": "city",
+      "label": "village of Poland",
+      "note": "Added in M42b batch 24, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q5153359 municipality of the Czech Republic are that line, and both are settlements with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is “type of populated place”. Trzciano, where the Battle of Trzciana was fought, was refused for want of it."
     },
     "Q3587380": {
       "kind": "event",
@@ -4448,6 +5078,18 @@
       "kind": "actor",
       "actorType": "polity",
       "label": "sovereign state"
+    },
+    "Q3685462": {
+      "kind": "place",
+      "precision": "city",
+      "label": "commune of Haiti",
+      "note": "Added in M42b batch 26, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France, Q2074737 municipality of Spain and Q1131296 freguesia of Portugal are that line, and a commune of Haiti is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third-level division of Haiti\". Four places of the Haitian Revolution vein carry it and no other place class."
+    },
+    "Q3774758": {
+      "kind": "event",
+      "category": "war",
+      "label": "sectarian violence",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
     },
     "Q3839081": {
       "kind": "event",
@@ -4466,10 +5108,28 @@
       "actorType": "institution",
       "label": "business"
     },
+    "Q4895508": {
+      "kind": "place",
+      "precision": "point",
+      "label": "battlefield",
+      "note": "Added in M42 batch 55 for Q15269226, the Punchbowl, which is the Battle of the Punchbowl item's P276 and whose own P625 is the battle item's own coordinate to three places. Read off Wikidata rather than guessed, and `point` is the word A12 (2) itself uses for a battlefield. The item's other class, Q813672 basin, is deliberately not added: how coarse a basin is drawn is a question somebody should argue with, and refusing it is the safe answer until they do."
+    },
+    "Q5153359": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of the Czech Republic",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “administrative territorial division of the Czech Republic”. Carried by Q1682828 Jankov."
+    },
     "Q5381350": {
       "kind": "event",
       "label": "environmental protocol",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q5465517": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "food riot",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “riot caused by shortage and/or unequal distribution of food”; the riot is the event and “revolution” is the category that holds an uprising. Carried by Q1151917, the Women’s March on Versailles."
     },
     "Q5510053": {
       "kind": "event",
@@ -4481,6 +5141,29 @@
       "kind": "event",
       "label": "armed robbery",
       "note": "Added in M20 from the import report, where 2 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q5770918": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city of Argentina",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “administrative territorial entity of Argentina”."
+    },
+    "Q5791104": {
+      "kind": "event",
+      "label": "international crisis",
+      "note": "Added in M42 batch 33, read from the item itself over the network. The class is here because Q110254389, the prelude to the Russian invasion of Ukraine, carries it and the table did not. It takes no category on purpose: a crisis in relations between states is not one of the twelve kinds of data/categories.json, and a class with no category writes no key at all rather than a guess. The item’s other class, Q19833559 preparation, was refused: it is an activity and not a kind of event, and the table is for classes that say what a record is."
+    },
+    "Q5919191": {
+      "kind": "event",
+      "category": "war",
+      "label": "military intervention",
+      "note": "Added in M42 batch 42 from the class Q210714, the 2011 military intervention in Libya, names. The label and the description — \"use of force by a State over foreign territory\" — are read from the item itself over the network. The category needs no argument: data/categories.json describes `war` as organised armed force between polities."
+    },
+    "Q6107280": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "revolt",
+      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “social movement that seeks to overthrow and destroy an established authority”. Carried by Q481590, the Abushiri Revolt. The category is `revolution`, whose description names an uprising: a revolt against an established authority is that and not organised armed force between polities."
     },
     "Q6508670": {
       "kind": "event",
@@ -4504,10 +5187,22 @@
       "label": "Portuguese legislative election",
       "note": "Added in M20 from the import report, where 45 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q7468093": {
+      "kind": "place",
+      "precision": "region",
+      "label": "captaincy of Brazil",
+      "note": "Added in M42b batch 9, for the Minas Gerais Captaincy the Inconfidência Mineira happened in. Read from the class item itself: “administrative divisions and hereditary fiefs of Portugal in the colony of Terra de Santa Cruz”. A captaincy is ground under an administration and the atlas holds it as a place, the way it holds a department of Colombia (Q215655); what the Portuguese crown did there are the events."
+    },
     "Q7883019": {
       "kind": "event",
       "label": "undeclared war",
       "note": "Added in M40a from the import report, where 1 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q7930989": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city or town",
+      "note": "Added in M42 batch 47 from one of the two classes Q623329, Lüshunkou, names. The label and the description — \"type of human settlement\" — are read from the item itself over the network. A settlement is a `city`, which is the reading A12 (2) already states."
     },
     "Q9557810": {
       "kind": "event",
@@ -4533,6 +5228,18 @@
       "label": "parliamentary election in the Azores",
       "note": "Added in M20 from the import report, where 13 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q10855380": {
+      "kind": "event",
+      "category": "death",
+      "label": "public execution",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “form of capital punishment carried out publicly”, and data/categories.json’s “death” names a death “by illness, accident, execution or assassination”. Carried by Q3062714, the execution of Louis XVI."
+    },
+    "Q11422542": {
+      "kind": "event",
+      "category": "war",
+      "label": "international conflict",
+      "note": "Added in M42 batch 18 for the umbrella A6 asks the asia lane for, which docs/m42-pool.md nominated: the Arab–Israeli conflict, Q8669. The label and description are read from the item itself over the network. Wikidata glosses it “dispute between nations” and the war category as data/categories.json has it is organised armed force between polities, which a conflict of eight wars is. Its other class, Q766875 ethnic conflict, is left out of the table rather than refused: one known class is enough to classify the item and a second would only be a second place to argue."
+    },
     "Q11514315": {
       "kind": "event",
       "label": "historical period / economic crisis / world war / proxy war",
@@ -4547,6 +5254,24 @@
     "Q13418847": {
       "kind": "event",
       "label": "historical event"
+    },
+    "Q13427116": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "peasant revolt",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
+    },
+    "Q15238777": {
+      "kind": "event",
+      "category": "other",
+      "label": "legislative term",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “period from one election of a legislature until the next”. It is not the vote that “election” names, and it is none of the other ten, so it takes “other”. Carried by Q1463941, the Estates General of 1789."
+    },
+    "Q15701038": {
+      "kind": "place",
+      "precision": "region",
+      "label": "subregion of Antioquia Department",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
     "Q16567729": {
       "kind": "event",
@@ -4566,11 +5291,74 @@
       "label": "pandemic",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q18493502": {
+      "kind": "event",
+      "label": "suicide bombing",
+      "note": "Added in M42 batch 42 from the class Q42033121, the 14 October 2017 Mogadishu bombings, names. The label and the description — \"type of suicide attack\" — are read from the item itself. No category: data/categories.json has none a bombing belongs to, since `war` is armed force between polities and `disaster` is harm nobody chose, and a thirteenth category is an edit somebody should argue with and not a batch's side effect."
+    },
+    "Q18534049": {
+      "kind": "place",
+      "precision": "region",
+      "label": "county of North Korea",
+      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “subdivision from North Korea”."
+    },
+    "Q18564543": {
+      "kind": "event",
+      "category": "other",
+      "label": "international conference",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q18603729": {
+      "kind": "event",
+      "category": "other",
+      "label": "dissolution of an administrative territorial entity",
+      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
+    },
+    "Q19698023": {
+      "kind": "place",
+      "precision": "region",
+      "label": "voivodeship of the Grand Duchy of Lithuania",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q2454841 Smolensk Voivodeship, the ground the Smolensk War was fought over. A voivodeship is a province and not a country, which is why it takes a place record where the Commonwealth itself does not."
+    },
     "Q19803127": {
       "kind": "event",
       "category": "election",
       "label": "Macanese Chief Executive election",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q19841484": {
+      "kind": "event",
+      "category": "war",
+      "label": "sack",
+      "note": "Added in M42b batch 23, on the precedent of Q188055, siege, which M42 batch 35 added with the same reasoning, and of Q178561, battle. Wikidata's own description of the class, read off the class item, is 'violent wartime looting of a foreign city': a dated military action of a war, which is the category war. Refusing the Sack of Brescia while the Sack of Rome of 1527 imported in the same batch under its siege class would have been the table disagreeing with itself."
+    },
+    "Q19860854": {
+      "kind": "place",
+      "precision": "point",
+      "label": "destroyed building or structure",
+      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building or structure that has been demolished or destroyed”. A building that no longer stands is still somewhere events happened, which is all a place record claims; it is the second class of the Bastille and of both palaces and it agrees with the first."
+    },
+    "Q20203507": {
+      "kind": "actor",
+      "actorType": "polity",
+      "label": "viceroyalty of the Spanish Empire",
+      "note": "Added in M42b batch 9, the Spanish American eighteenth century. The label is read from the class item itself over the network, which this sandbox has; the item subclasses Q43229, organization. A viceroyalty governed ground under a viceroy and is a polity in this atlas the way a colony and a kingdom are, not an event: what it did are the events."
+    },
+    "Q20893947": {
+      "kind": "event",
+      "label": "suicide car bombing",
+      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q21480300": {
+      "kind": "event",
+      "label": "mass shooting",
+      "note": "Added in M42 batch 45 for Q97701895, the 2020 Darfur attacks. The label and the description — 'incident in which an active shooter shoots multiple people with a firearm' — are read from the item itself over the network. No category: the twelve of data/categories.json have no kind for a mass shooting as a class, and 'war' would be read off this event's parent rather than off the class, which is not what the table is for. Fifty event classes already carry no category."
+    },
+    "Q21994376": {
+      "kind": "event",
+      "category": "war",
+      "label": "war of independence",
+      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
     },
     "Q22342178": {
       "kind": "event",
@@ -4601,6 +5389,11 @@
       "label": "attempted coup d'état / rebellion / civil war",
       "note": "Added in M40a from the import report, where 5 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
+    "Q25917154": {
+      "kind": "event",
+      "label": "truck bombing",
+      "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
+    },
     "Q27865981": {
       "kind": "event",
       "category": "law",
@@ -4613,10 +5406,46 @@
       "label": "hurricane",
       "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
+    "Q41067667": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Tunisia",
+      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of municipality, which is the same coarseness as a commune."
+    },
+    "Q42744322": {
+      "kind": "place",
+      "precision": "city",
+      "label": "urban municipality in Germany",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “municipality with town privileges in Germany”: Lützen, Nördlingen, Rain and Stralsund are each one."
+    },
     "Q47461344": {
       "kind": "event",
       "label": "constitutive treaty / United Nations treaty",
       "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+    },
+    "Q51929311": {
+      "kind": "place",
+      "precision": "city",
+      "label": "largest city",
+      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city which has the greatest population in a country”."
+    },
+    "Q63209072": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city of Colombia",
+      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
+    },
+    "Q76853179": {
+      "kind": "event",
+      "category": "election",
+      "label": "group of elections",
+      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “multiple distinct elections happening at the same time”, which is a vote that fills offices and chambers and so the election category. Carried by the 2022 Brazilian general election."
+    },
+    "Q79423884": {
+      "kind": "place",
+      "precision": "point",
+      "label": "quarter in Leipzig, Germany",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q873362 Breitenfeld, where both battles of that name were fought."
     },
     "Q102100590": {
       "kind": "event",
@@ -4628,281 +5457,11 @@
       "label": "series of wars",
       "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
     },
-    "Q107434304": {
-      "kind": "event",
-      "category": "disaster",
-      "label": "forest fire",
-      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
-    },
-    "Q111986723": {
-      "kind": "event",
-      "category": "death",
-      "label": "shot dead by law enforcement officers",
-      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
-    },
-    "Q126723767": {
-      "kind": "event",
-      "label": "project of referendum",
-      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
-    },
-    "Q18603729": {
-      "kind": "event",
-      "category": "other",
-      "label": "dissolution of an administrative territorial entity",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q1886460": {
+    "Q104708121": {
       "kind": "event",
       "category": "revolution",
-      "label": "revolutionary wave",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q766875": {
-      "kind": "event",
-      "category": "war",
-      "label": "ethnic conflict",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q474138": {
-      "kind": "event",
-      "category": "war",
-      "label": "war of aggression",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q518554": {
-      "kind": "event",
-      "category": "other",
-      "label": "partition",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q3774758": {
-      "kind": "event",
-      "category": "war",
-      "label": "sectarian violence",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q1753200": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "intifada",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q18564543": {
-      "kind": "event",
-      "category": "other",
-      "label": "international conference",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q1219394": {
-      "kind": "event",
-      "category": "election",
-      "label": "independence referendum",
-      "note": "Added in M42 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own and not the candidate list’s. The class is here because an item of the hinge list in docs/m42-pool.md §5 carries it and the table did not."
-    },
-    "Q107706": {
-      "kind": "event",
-      "category": "treaty",
-      "label": "armistice",
-      "note": "Added in M42 batch 7, read from Wikidata itself: the only class Q328499, the Armistice of Mudros, carries. An armistice is an agreement two sides sign, which is why it takes the treaty category and not war."
-    },
-    "Q154278": {
-      "kind": "event",
-      "label": "ethnic cleansing",
-      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q1775286, the deportation of the Crimean Tatars, carries. No category, as Q8465 and Q625298 beside it have none: the atlas holds the Holocaust, the Armenian genocide and Katyn with no category either, and this run is not the one to decide which of the twelve they are."
-    },
-    "Q2380335": {
-      "kind": "event",
-      "category": "war",
-      "label": "airstrike",
-      "note": "Added in M42 batch 8, read from Wikidata itself: one of the three classes Q134884640, Operation Rising Lion, carries. An airstrike is organised armed force between polities, which is the war category as data/categories.json describes it."
-    },
-    "Q13427116": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "peasant revolt",
-      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
-    },
-    "Q1464916": {
-      "kind": "event",
-      "category": "founding",
-      "label": "declaration of independence",
-      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
-    },
-    "Q21994376": {
-      "kind": "event",
-      "category": "war",
-      "label": "war of independence",
-      "note": "Added in M42 batch 10 from the import report, where a ticked sweep candidate was refused under it. The label and the description are read from the item itself over the network, which this sandbox has."
-    },
-    "Q230533": {
-      "kind": "event",
-      "label": "decolonization",
-      "note": "Added in M42’s filing pass (A6) from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the period umbrella the owner’s rule calls for — the decolonisation of Africa — carries it and the table did not. No category: a period is not one of the twelve kinds of event."
-    },
-    "Q1384277": {
-      "kind": "event",
-      "category": "war",
-      "label": "military expedition",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. A military expedition is organised armed force between polities, which is the war category as data/categories.json describes it. Two of the eight carry it: the Suez Crisis and the British expedition to Tibet."
-    },
-    "Q194465": {
-      "kind": "event",
-      "category": "founding",
-      "label": "annexation",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “acquisition of a state’s territory by another state”; the category is founding, which data/categories.json describes as something coming into existence or ending, because what an annexation does to the annexed state is end it. Carried by the Anschluss."
-    },
-    "Q76853179": {
-      "kind": "event",
-      "category": "election",
-      "label": "group of elections",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Wikidata glosses it “multiple distinct elections happening at the same time”, which is a vote that fills offices and chambers and so the election category. Carried by the 2022 Brazilian general election."
-    },
-    "Q37055": {
-      "kind": "event",
-      "category": "founding",
-      "label": "independence",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. The category is founding, as Q1464916 declaration of independence already takes in this table: a state coming into existence. Carried by the independence of Morocco."
-    },
-    "Q831663": {
-      "kind": "event",
-      "category": "war",
-      "label": "military campaign",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities, as data/categories.json has the war category. Carried by the British expedition to Tibet."
-    },
-    "Q467011": {
-      "kind": "event",
-      "category": "war",
-      "label": "invasion",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name rather than at the sweep. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because one of those eight carries it and the table did not. Organised armed force between polities. Carried by the British expedition to Tibet."
-    },
-    "Q625994": {
-      "kind": "event",
-      "label": "convention",
-      "note": "Added in M42 batch 18, the batch pointed at the eight records the live tombstones name. The label and description are read from the item itself over the network. Wikidata glosses it “meeting of a group of individuals and/or companies in a certain field”, so it is a conference and not a treaty — the trap the Earth Summit sets for a table that reads the word. No category: none of the twelve is a meeting of states, and Q154278 is the precedent for leaving it unset rather than guessing."
-    },
-    "Q11422542": {
-      "kind": "event",
-      "category": "war",
-      "label": "international conflict",
-      "note": "Added in M42 batch 18 for the umbrella A6 asks the asia lane for, which docs/m42-pool.md nominated: the Arab–Israeli conflict, Q8669. The label and description are read from the item itself over the network. Wikidata glosses it “dispute between nations” and the war category as data/categories.json has it is organised armed force between polities, which a conflict of eight wars is. Its other class, Q766875 ethnic conflict, is left out of the table rather than refused: one known class is enough to classify the item and a second would only be a second place to argue."
-    },
-    "Q3109572": {
-      "kind": "event",
-      "label": "civil resistance",
-      "note": "Added in M42 batch 22 from a lookup against Wikidata, which this run could reach: the label and description are the service’s own. The class is here because the Arab Spring’s own origin event — the Tunisian revolution, which every other record of that wave points back to — carries it and the table did not. No category: a campaign of civil resistance is not one of the twelve kinds of event, and most of them are not revolutions in the end."
-    },
-    "Q511866": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "mutiny",
-      "note": "Added in M42 batch 26 from a lookup against Wikidata, which this run could reach: the label and the description — “method of revolt” — are the service’s own. The class is here because two rows of the batch carry it and the table did not: the Potemkin mutiny of 1905 and the Junker mutiny of 1917. The category is revolution, and it is the one case in data/categories.json that needs no argument: that category’s own description names a mutiny in its list."
-    },
-    "Q217901": {
-      "kind": "event",
-      "category": "treaty",
-      "label": "capitulation",
-      "note": "Added in M42 batch 26 from the same lookup; Wikidata glosses it “form of surrender”. Carried by the Argentine surrender in the Falklands War. The category follows Q107706 armistice, already in this table as treaty: an instrument signed by both belligerents that stops the fighting is the nearest of the twelve, and a surrender is not itself organised armed force."
-    },
-    "Q830494": {
-      "kind": "event",
-      "category": "war",
-      "label": "dogfight",
-      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q154720, the Battle of Britain, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
-    },
-    "Q1261499": {
-      "kind": "event",
-      "category": "war",
-      "label": "naval battle",
-      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q156554, the Battle of Jutland, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
-    },
-    "Q876274": {
-      "kind": "event",
-      "category": "war",
-      "label": "naval warfare",
-      "note": "Added in M42 batch 32, the first batch of the inverse `part of` vein. The label and the description are read from the item itself over the network, which this sandbox has; the class is here because Q208127, the Battle of Tsushima, carries it and the table did not. It is organised armed force between polities, which is the war category as data/categories.json describes it."
-    },
-    "Q5791104": {
-      "kind": "event",
-      "label": "international crisis",
-      "note": "Added in M42 batch 33, read from the item itself over the network. The class is here because Q110254389, the prelude to the Russian invasion of Ukraine, carries it and the table did not. It takes no category on purpose: a crisis in relations between states is not one of the twelve kinds of data/categories.json, and a class with no category writes no key at all rather than a guess. The item’s other class, Q19833559 preparation, was refused: it is an activity and not a kind of event, and the table is for classes that say what a record is."
-    },
-    "Q484170": {
-      "kind": "place",
-      "precision": "city",
-      "label": "commune of France",
-      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
-    },
-    "Q82794": {
-      "kind": "place",
-      "precision": "region",
-      "label": "region",
-      "note": "Added in M42b batch 1 from the class each P276 location of the batch names, read off Wikidata rather than guessed; A9 asks for a place record and the class table is what decides the kind."
-    },
-    "Q645883": {
-      "kind": "event",
-      "category": "war",
-      "label": "military operation",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q1546073": {
-      "kind": "event",
-      "category": "war",
-      "label": "covert operation",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q476807": {
-      "kind": "event",
-      "category": "war",
-      "label": "military raid",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q650711": {
-      "kind": "event",
-      "category": "war",
-      "label": "combat",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q997267": {
-      "kind": "event",
-      "category": "war",
-      "label": "skirmish",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q1303061": {
-      "kind": "event",
-      "category": "war",
-      "label": "friendly fire",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed."
-    },
-    "Q744913": {
-      "kind": "event",
-      "category": "disaster",
-      "label": "aviation accident",
-      "note": "Added in M42b batch 2 from the class each item of the Falklands War vein names, read off Wikidata rather than guessed. An aviation accident is a disaster and friendly fire is war, so an item carrying both — the Gazelle incident of 6 June 1982 — takes no category at all rather than one of the two picked for it."
-    },
-    "Q188055": {
-      "kind": "event",
-      "category": "war",
-      "label": "siege",
-      "note": "Added in M42 batch 35, the Africa batch of the inverse `part of` vein. The label and the description — “military blockade of a city or fortress” — are read from the item itself over the network, which this sandbox has; the class is here because Q2090584, the Siege of Mafeking, carries it and the table did not. The category needs no argument: data/categories.json's own description of `war` names a siege in its list."
-    },
-    "Q6107280": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "revolt",
-      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “social movement that seeks to overthrow and destroy an established authority”. Carried by Q481590, the Abushiri Revolt. The category is `revolution`, whose description names an uprising: a revolt against an established authority is that and not organised armed force between polities."
-    },
-    "Q4": {
-      "kind": "event",
-      "category": "death",
-      "label": "death",
-      "note": "Added in M42 batch 35 from the same lookup; Wikidata glosses it “permanent cessation of vital functions”. Carried by Q431888, the killing of Muammar Gaddafi, whose other class Q914841 *frontier justice* was refused in the same batch as no kind of event — it names how a punishment was delivered, not a thing that happened. The category is `death`, which data/categories.json describes as a person's death “whether by illness, accident, execution or assassination”, so the class and the category are the same statement."
-    },
-    "Q646740": {
-      "kind": "event",
-      "category": "war",
-      "label": "landing operation",
-      "note": "Added in M42 batch 36, the second Africa batch of the inverse `part of` vein. The label and the description — “type of military action” — are read from the item itself over the network, which this sandbox has; the class is here because Q3026815, the Alhucemas landing of 1925, carries it and the table did not. It follows Q1261499 naval battle and Q830494 dogfight into `war`: an amphibious assault is organised armed force between polities, which is that category as data/categories.json describes it."
+      "label": "storming",
+      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “invasion of a building by a mob”, which is data/categories.json’s “uprising” rather than its “organised armed force between polities”. Carried by Q6539, the storming of the Bastille."
     },
     "Q105370834": {
       "kind": "event",
@@ -4910,254 +5469,11 @@
       "category": "war",
       "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
     },
-    "Q20893947": {
+    "Q107434304": {
       "kind": "event",
-      "label": "suicide car bombing",
-      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q1456892": {
-      "kind": "event",
-      "label": "peace process",
-      "note": "Added in M42b batch 3 from the class each item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q2555896": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of Colombia",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q215655": {
-      "kind": "place",
-      "precision": "region",
-      "label": "department of Colombia",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q63209072": {
-      "kind": "place",
-      "precision": "city",
-      "label": "city of Colombia",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q15701038": {
-      "kind": "place",
-      "precision": "region",
-      "label": "subregion of Antioquia Department",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q165": {
-      "kind": "place",
-      "precision": "region",
-      "label": "sea",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q4022": {
-      "kind": "place",
-      "precision": "region",
-      "label": "river",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q3257686": {
-      "kind": "place",
-      "precision": "city",
-      "label": "locality",
-      "note": "Added in M42b batch 3 from the class each located item of the Colombian conflict vein names, read off Wikidata rather than guessed."
-    },
-    "Q2717573": {
-      "kind": "event",
-      "label": "extra-judicial killing",
-      "note": "Added in M42b batch 4, from the class one item of the Cuban Revolution's vein names — the Humboldt 7 massacre. The label and the description are the item's own, read over the network: \"intentional and unlawful killings of individuals by state actors without judicial process\". It takes no category, as the sibling class massacre (Q3199915) takes none: which of the twelve kinds a killing by the state is, is a judgement the table has not made for a massacre either."
-    },
-    "Q558330": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of Cuba",
-      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
-    },
-    "Q115291": {
-      "kind": "place",
-      "precision": "region",
-      "label": "province of Cuba",
-      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
-    },
-    "Q46831": {
-      "kind": "place",
-      "precision": "region",
-      "label": "mountain range",
-      "note": "Added in M42b batch 4 from the class each located item of the Cuban Revolution's vein names, read off Wikidata rather than guessed."
-    },
-    "Q1827102": {
-      "kind": "event",
-      "category": "war",
-      "label": "religious war",
-      "note": "Added in M42b batch 5, from the class the Thirty Years' War itself names. The label and the description — “war primarily caused or justified by differences in religion” — are the item's own, read over the network. The category is `war`, which data/categories.json describes as organised armed force between polities: what the war was fought over does not change that it was fought."
-    },
-    "Q1284645": {
-      "kind": "event",
-      "category": "law",
-      "label": "edict",
-      "note": "Added in M42b batch 5, from the class the Edict of Restitution names. The label and the description — “announcement of a law, often associated with monarchism” — are the item's own, read over the network. The category is `law`, which data/categories.json describes as “a constitution, a statute, a decree or a court ruling: the state changing what the rules are”: an edict is that decree."
-    },
-    "Q42744322": {
-      "kind": "place",
-      "precision": "city",
-      "label": "urban municipality in Germany",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “municipality with town privileges in Germany”: Lützen, Nördlingen, Rain and Stralsund are each one."
-    },
-    "Q79423884": {
-      "kind": "place",
-      "precision": "point",
-      "label": "quarter in Leipzig, Germany",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q873362 Breitenfeld, where both battles of that name were fought."
-    },
-    "Q23413": {
-      "kind": "place",
-      "precision": "point",
-      "label": "castle",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “type of fortified structure built in Europe, Asia and the Middle East”. Carried by Q193369 Prague Castle, where the Peace of Prague was concluded: a castle is somewhere events happen, which is what a place record is."
-    },
-    "Q19698023": {
-      "kind": "place",
-      "precision": "region",
-      "label": "voivodeship of the Grand Duchy of Lithuania",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q2454841 Smolensk Voivodeship, the ground the Smolensk War was fought over. A voivodeship is a province and not a country, which is why it takes a place record where the Commonwealth itself does not."
-    },
-    "Q5153359": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of the Czech Republic",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. The item’s own description reads “administrative territorial division of the Czech Republic”. Carried by Q1682828 Jankov."
-    },
-    "Q116457956": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality without town privileges in Germany",
-      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q575676 Lutter am Barenberge, beside which the Battle of Lutter was fought."
-    },
-    "Q104708121": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "storming",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “invasion of a building by a mob”, which is data/categories.json’s “uprising” rather than its “organised armed force between polities”. Carried by Q6539, the storming of the Bastille."
-    },
-    "Q381045": {
-      "kind": "event",
-      "category": "other",
-      "label": "oath",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “personal affirmation of a statement”. It is none of the eleven named categories — an oath is not a treaty, which is between polities, nor a law, which the state enacts — so it takes “other”. Carried by Q60022, the Tennis Court Oath."
-    },
-    "Q750215": {
-      "kind": "event",
-      "category": "death",
-      "label": "mass murder",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “act of killing a large number of people by non-state actors”, which is not armed force between polities; the category that names a killing is “death”, as it is for Q3199915 massacre, already in this table. Carried by Q862586, the September Massacres."
-    },
-    "Q5465517": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "food riot",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “riot caused by shortage and/or unequal distribution of food”; the riot is the event and “revolution” is the category that holds an uprising. Carried by Q1151917, the Women’s March on Versailles."
-    },
-    "Q124757": {
-      "kind": "event",
-      "category": "revolution",
-      "label": "riot",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “violent public disturbance against authority, property or people”, which is data/categories.json’s uprising. Carried by Q1154330, the insurrection of 10 August 1792."
-    },
-    "Q15238777": {
-      "kind": "event",
-      "category": "other",
-      "label": "legislative term",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “period from one election of a legislature until the next”. It is not the vote that “election” names, and it is none of the other ten, so it takes “other”. Carried by Q1463941, the Estates General of 1789."
-    },
-    "Q1430466": {
-      "kind": "event",
-      "category": "other",
-      "label": "flight",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “response to distress by fleeing”, which is none of the eleven named categories. Carried by Q1192894, the flight to Varennes."
-    },
-    "Q2571972": {
-      "kind": "event",
-      "category": "law",
-      "label": "decree",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “rule of law usually issued by a head of state”, which is data/categories.json’s “the state changing what the rules are” word for word. Carried by Q206979, the Civil Constitution of the Clergy."
-    },
-    "Q10855380": {
-      "kind": "event",
-      "category": "death",
-      "label": "public execution",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “form of capital punishment carried out publicly”, and data/categories.json’s “death” names a death “by illness, accident, execution or assassination”. Carried by Q3062714, the execution of Louis XVI."
-    },
-    "Q204933": {
-      "kind": "event",
-      "category": "death",
-      "label": "decapitation",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “complete separation of the head from the body”; it is the second class of Q3062714 and it agrees with the first, Q10855380 public execution."
-    },
-    "Q180684": {
-      "kind": "event",
-      "category": "other",
-      "label": "conflict",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a situation in which unacceptable differences in interests, expectations, values, or opinions occur between individuals or groups” — which is not organised armed force between polities, so it is not “war”, and is too general to be any of the other ten. Carried by Q15784403, the insurrection of 31 May – 2 June 1793."
-    },
-    "Q2627975": {
-      "kind": "event",
-      "category": "culture",
-      "label": "ceremony",
-      "note": "Added in M42b batch 6, the French Revolution’s vein, from the class each item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “a unified ritualistic event with a purpose, usually consisting of a number of artistic components, performed on a special occasion”, which is data/categories.json’s “culture”. Carried by Q143866, the Fête de la Fédération."
-    },
-    "Q40357": {
-      "kind": "place",
-      "precision": "point",
-      "label": "prison",
-      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “place in which people are, for legal reasons, physically confined” — a building on the ground, which is what a place of this atlas is. Carried by Q3292048, the Prison de l’Abbaye, and by Q1865480, the Bastille."
-    },
-    "Q16560": {
-      "kind": "place",
-      "precision": "point",
-      "label": "palace",
-      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “grand residence, especially a royal or episcopal residence”. Carried by Q662491, the Château de Saint-Cloud, and Q234364, the Tuileries."
-    },
-    "Q19860854": {
-      "kind": "place",
-      "precision": "point",
-      "label": "destroyed building or structure",
-      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building or structure that has been demolished or destroyed”. A building that no longer stands is still somewhere events happened, which is all a place record claims; it is the second class of the Bastille and of both palaces and it agrees with the first."
-    },
-    "Q805248": {
-      "kind": "place",
-      "precision": "point",
-      "label": "jeu de paume building",
-      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “building for the ‘jeu de paume’ game in Baroque times”. Carried by Q805255, the Salle du Jeu de Paume at Versailles."
-    },
-    "Q174782": {
-      "kind": "place",
-      "precision": "point",
-      "label": "square",
-      "note": "Added in M42b batch 6, the A9 place pass over the French Revolution’s vein: the located item an event names has to be classifiable before a place record can be written for it. The gloss is read off the class item itself over the network. Wikidata glosses it “open public spaces in cities or towns … often located at the junction of two or more thoroughfares”. Carried by Q189503, the place de la Concorde, and Q217925, the Champ de Mars."
-    },
-    "Q1192114": {
-      "kind": "event",
-      "category": "war",
-      "label": "military maneuver",
-      "note": "Added in M42b batch 7, the Spanish American wars of independence, from the class the item names. The label and the gloss are read off the class item itself over the network and not guessed at. Wikidata glosses it “organized movement of troops during a combat mission” and makes it a subclass of Q1799072, method; data/categories.json’s “war” is “a war, a campaign, a battle or a siege: organised armed force between polities”, which a troop movement during a combat mission is. Carried by Q968126, the Crossing of the Andes."
-    },
-    "Q861184": {
-      "kind": "place",
-      "precision": "region",
-      "label": "department of Peru",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first level administrative subdivision of Peru”."
-    },
-    "Q250050": {
-      "kind": "place",
-      "precision": "region",
-      "label": "department of Bolivia",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “first-level administrative subdivision of Bolivia”."
-    },
-    "Q5770918": {
-      "kind": "place",
-      "precision": "city",
-      "label": "city of Argentina",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “administrative territorial entity of Argentina”."
+      "category": "disaster",
+      "label": "forest fire",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
     "Q108178728": {
       "kind": "place",
@@ -5165,320 +5481,22 @@
       "label": "national capital",
       "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “capital of a sovereign state”."
     },
-    "Q51929311": {
+    "Q111986723": {
+      "kind": "event",
+      "category": "death",
+      "label": "shot dead by law enforcement officers",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
+    },
+    "Q116457956": {
       "kind": "place",
       "precision": "city",
-      "label": "largest city",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city which has the greatest population in a country”."
+      "label": "municipality without town privileges in Germany",
+      "note": "Added in M42b batch 5 from the class each located item of the Thirty Years' War's vein names, read off Wikidata rather than guessed. Carried by Q575676 Lutter am Barenberge, beside which the Battle of Lutter was fought."
     },
-    "Q1422929": {
-      "kind": "place",
-      "precision": "city",
-      "label": "primate city",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “disproportionately large city in its country or region”."
-    },
-    "Q1637706": {
-      "kind": "place",
-      "precision": "city",
-      "label": "million city",
-      "note": "Added in M42b batch 7 from the class each located item of the Spanish American wars of independence vein names, read off Wikidata rather than guessed. Wikidata glosses it “city with a population of more than 1,000,000”."
-    },
-    "Q1361229": {
+    "Q126723767": {
       "kind": "event",
-      "category": "war",
-      "label": "conquest",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata's own gloss is \"military subjugation of an enemy by force of arms\", which is data/categories.json's `war` — \"a war, a campaign, a battle or a siege: organised armed force between polities\" — in other words."
-    },
-    "Q1377300": {
-      "kind": "event",
-      "label": "first wave of European colonization",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. Wikidata glosses it \"aspect of history\", which is a period and not a kind of event this atlas has a category for, so it names no category: it stands beside Q1361229 on the conquest of the Aztec Empire and must agree with it about the kind."
-    },
-    "Q815962": {
-      "kind": "event",
-      "label": "colonization",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Establishment and development of settlements by people or animals\" is a process over a span, which is what Q11514315 already makes an event; it carries no category because none of the twelve is what a colonization is."
-    },
-    "Q49371": {
-      "kind": "event",
-      "category": "law",
-      "label": "legislation",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"Product of enrolling, enacting, or promulgating law by a legislature\" is data/categories.json's `law` — \"a constitution, a statute, a decree or a court ruling\"."
-    },
-    "Q1123131": {
-      "kind": "event",
-      "label": "disputation",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A formalized method of debate; the Valladolid debate is an instance of one. No category: a debate is none of the twelve, and `other` is for a kind the atlas has too few of to name, not for one nobody looked at."
-    },
-    "Q1620908": {
-      "kind": "place",
-      "precision": "region",
-      "label": "historical region",
-      "note": "Added in M42b batch 9, for the Misiones Orientales the Guaraní War was fought over. The label and the description are read from the class item itself over the network: Wikidata glosses it “geographic or cultural region which existed in the past, that may or may not exist anymore”. A region that no longer exists is still somewhere events happened, which is what a place is here; `precision` says how coarsely it is drawn."
-    },
-    "Q7468093": {
-      "kind": "place",
-      "precision": "region",
-      "label": "captaincy of Brazil",
-      "note": "Added in M42b batch 9, for the Minas Gerais Captaincy the Inconfidência Mineira happened in. Read from the class item itself: “administrative divisions and hereditary fiefs of Portugal in the colony of Terra de Santa Cruz”. A captaincy is ground under an administration and the atlas holds it as a place, the way it holds a department of Colombia (Q215655); what the Portuguese crown did there are the events."
-    },
-    "Q20203507": {
-      "kind": "actor",
-      "actorType": "polity",
-      "label": "viceroyalty of the Spanish Empire",
-      "note": "Added in M42b batch 9, the Spanish American eighteenth century. The label is read from the class item itself over the network, which this sandbox has; the item subclasses Q43229, organization. A viceroyalty governed ground under a viceroy and is a polity in this atlas the way a colony and a kingdom are, not an event: what it did are the events."
-    },
-    "Q7755": {
-      "kind": "event",
-      "category": "law",
-      "label": "constitution",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. The same reading as Q49371: a constitution is named in data/categories.json's own description of `law`."
-    },
-    "Q11204": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "legislature",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. \"A kind of deliberative assembly with the power to pass, amend, and repeal laws\" is a body and not something that happens, so the Cortes of Cádiz enters this atlas as an actor; the event that carries its consequence is the constitution it adopted."
-    },
-    "Q2993893": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "royal council",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. One of the four classes of the Council of the Indies; all four are bodies, which is what keeps the item from being refused for classes that disagree."
-    },
-    "Q895526": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "governing body",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
-    },
-    "Q2994416": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "consejo",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name."
-    },
-    "Q41487": {
-      "kind": "actor",
-      "actorType": "institution",
-      "label": "court",
-      "note": "Added in M42b batch 8, the Spanish conquest vein of the Americas' 16th century. The label and the description are read from the class item itself over the network, which this sandbox has; nothing here is guessed from the item's name. A judicial institution with the authority to resolve legal disputes: a body, like the three above it."
-    },
-    "Q2074737": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of Spain",
-      "note": "Added in M42b batch 8. The label and the description are read from the class item itself over the network; Q15284 municipality and Q2555896 municipality of Colombia are the precedent for a municipality being a place of this atlas."
-    },
-    "Q2401485": {
-      "kind": "event",
-      "label": "expedition",
-      "note": "Added in M42b batch 11. The label and the description — \"discovery or research trip to a remote or undeveloped region\" — are read from the class item itself over the network, which this sandbox has; the class is here because Q18578423, the voyages of Christopher Columbus, carries it and the table did not. No category: data/categories.json has none for an expedition, and `other` would say less than nothing."
-    },
-    "Q5919191": {
-      "kind": "event",
-      "category": "war",
-      "label": "military intervention",
-      "note": "Added in M42 batch 42 from the class Q210714, the 2011 military intervention in Libya, names. The label and the description — \"use of force by a State over foreign territory\" — are read from the item itself over the network. The category needs no argument: data/categories.json describes `war` as organised armed force between polities."
-    },
-    "Q18493502": {
-      "kind": "event",
-      "label": "suicide bombing",
-      "note": "Added in M42 batch 42 from the class Q42033121, the 14 October 2017 Mogadishu bombings, names. The label and the description — \"type of suicide attack\" — are read from the item itself. No category: data/categories.json has none a bombing belongs to, since `war` is armed force between polities and `disaster` is harm nobody chose, and a thirteenth category is an edit somebody should argue with and not a batch's side effect."
-    },
-    "Q25917154": {
-      "kind": "event",
-      "label": "truck bombing",
-      "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
-    },
-    "Q482821": {
-      "kind": "place",
-      "precision": "city",
-      "label": "metropolitan city of South Korea",
-      "note": "Added in M42 batch 44 from the class Q20934, Incheon, names. The label and the description — \"type of administrative subdivision in South Korea\" — are read from the item itself over the network rather than guessed."
-    },
-    "Q21480300": {
-      "kind": "event",
-      "label": "mass shooting",
-      "note": "Added in M42 batch 45 for Q97701895, the 2020 Darfur attacks. The label and the description — 'incident in which an active shooter shoots multiple people with a firearm' — are read from the item itself over the network. No category: the twelve of data/categories.json have no kind for a mass shooting as a class, and 'war' would be read off this event's parent rather than off the class, which is not what the table is for. Fifty event classes already carry no category."
-    },
-    "Q34763": {
-      "kind": "place",
-      "precision": "region",
-      "label": "peninsula",
-      "note": "Added in M42 batch 47, the Russo-Japanese War read as a chain, from the class Q4218510 (the Kwantung Peninsula) and Q326917 (the Liaodong Peninsula) both name and nothing else does. The label and the description — \"landform surrounded more than half but not entirely by water\" — are read from the item itself over the network. `region` because a peninsula is ground and not a point on it, and larger than a settlement without being a state: src/vocab.js calls that coarse and the map draws it wider and fainter, which is the honest drawing of a battle sited only by the peninsula it was fought on."
-    },
-    "Q7930989": {
-      "kind": "place",
-      "precision": "city",
-      "label": "city or town",
-      "note": "Added in M42 batch 47 from one of the two classes Q623329, Lüshunkou, names. The label and the description — \"type of human settlement\" — are read from the item itself over the network. A settlement is a `city`, which is the reading A12 (2) already states."
-    },
-    "Q1065118": {
-      "kind": "place",
-      "precision": "city",
-      "label": "district of China",
-      "note": "Added in M42 batch 47 from the other class Q623329, Lüshunkou, names. The label and the description — \"administrative division of the People's Republic of China\" — are read from the item itself over the network. `city` and not `region` because a district of China sits below a prefecture-level city and is settlement-scale, which is what Lüshunkou is; it agrees with Q7930989 on the same item, so `classify()` reads one precision and not a disagreement."
-    },
-    "Q839954": {
-      "kind": "place",
-      "precision": "point",
-      "label": "archaeological site",
-      "note": "Added in M42b batch 19, the Spanish conquest vein of the Americas' 16th century. The label and the gloss are read from the class item itself over the network: Wikidata's own description is \"place (or group of physical sites) in which evidence of past activity is preserved\", which is A12 C2's \"point\" — the precision it names for a battlefield or a site — and not a settlement."
-    },
-    "Q2264924": {
-      "kind": "place",
-      "precision": "city",
-      "label": "port city",
-      "note": "Added in M42b batch 20, the South and Central American half of the War of Jenkins' Ear. The label and the gloss are read from the class item itself over the network: Wikidata's own description is 'city or town which has a port', which is a settlement and so the same precision Q515 takes."
-    },
-    "Q39594": {
-      "kind": "place",
-      "precision": "region",
-      "label": "bay",
-      "note": "Added in M42b batch 20. Wikidata's own description, read off the class item, is 'body of water connected to an ocean or lake, formed by an indentation of the shoreline': an area of water and not a point on the ground, so the coarse precision PRECISIONS gives a region, as batch 18 gave the Bay of All Saints."
-    },
-    "Q2989398": {
-      "kind": "place",
-      "precision": "city",
-      "label": "commune of Algeria",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A commune is Algeria's third-level division and is a settlement, so it takes the precision a settlement takes."
-    },
-    "Q2983893": {
-      "kind": "place",
-      "precision": "city",
-      "label": "quarter",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A quarter is a subclass of human settlement and is smaller than one, never larger; Bab El Oued names it beside the commune and the two agree."
-    },
-    "Q41067667": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of Tunisia",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of municipality, which is the same coarseness as a commune."
-    },
-    "Q678146": {
-      "kind": "event",
-      "category": "war",
-      "label": "bombardment",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military attack; the category is the one every military operation class here already carries."
-    },
-    "Q680838": {
-      "kind": "event",
-      "category": "war",
-      "label": "ambush",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, which Q645883 already reads as an event of category war."
-    },
-    "Q2001676": {
-      "kind": "event",
-      "category": "war",
-      "label": "offensive",
-      "note": "Added in M42 batch 48 from the class each item of the Algerian War vein names, read off the class item itself over the network and not guessed. A subclass of military operation, as Q645883 is."
-    },
-    "Q3002772": {
-      "kind": "event",
-      "label": "political crisis",
-      "note": "Added in M42 batch 48 from the class the May 1958 crisis item names, read off the class item itself over the network: a subclass of crisis and of political event. No category, because none of the twelve of data/categories.json is a political crisis — a person sets it if one fits."
-    },
-    "Q747074": {
-      "kind": "place",
-      "precision": "city",
-      "label": "comune of Italy",
-      "note": "Added in M42b batch 23, on the precedent of Q484170, commune of France, which batch 1 added with the same reasoning. Wikidata's own description of the class, read off the class item, is 'municipal divisions of Italy': a settlement with a seat and a point, which is what PRECISIONS calls a city. The three Italian locations of this batch — Casaloldo, Crema and the comune Vicenza is also classed as — were refused for want of this one line."
-    },
-    "Q3558970": {
-      "kind": "place",
-      "precision": "city",
-      "label": "village of Poland",
-      "note": "Added in M42b batch 24, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q5153359 municipality of the Czech Republic are that line, and both are settlements with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is “type of populated place”. Trzciano, where the Battle of Trzciana was fought, was refused for want of it."
-    },
-    "Q19841484": {
-      "kind": "event",
-      "category": "war",
-      "label": "sack",
-      "note": "Added in M42b batch 23, on the precedent of Q188055, siege, which M42 batch 35 added with the same reasoning, and of Q178561, battle. Wikidata's own description of the class, read off the class item, is 'violent wartime looting of a foreign city': a dated military action of a war, which is the category war. Refusing the Sack of Brescia while the Sack of Rome of 1527 imported in the same batch under its siege class would have been the table disagreeing with itself."
-    },
-    "Q1758856": {
-      "kind": "place",
-      "precision": "city",
-      "label": "commune of Mali",
-      "note": "Added in M42 batch 50, the Mali War vein of the Africa lane, where five of the six located items the batch names carry it and nothing else. The label and the description — “third-level administrative unit in Mali” — are read from the item itself over the network. `city` is the precision Q484170, commune of France, already carries for the same reason: a commune of Mali is the unit a town is, and Gao, Kidal, Konna, Diabaly and Tessalit are towns."
-    },
-    "Q718893": {
-      "kind": "place",
-      "precision": "region",
-      "label": "theater of war",
-      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “area or place in which important military events occur or are progressing”."
-    },
-    "Q18534049": {
-      "kind": "place",
-      "precision": "region",
-      "label": "county of North Korea",
-      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “subdivision from North Korea”."
-    },
-    "Q131681": {
-      "kind": "place",
-      "precision": "region",
-      "label": "reservoir",
-      "note": "Added in M42 batch 51 from the class each located item of the Korean War vein names, read off Wikidata rather than guessed. Wikidata glosses it “artificial lake impounded using a dam or lock to store water”."
-    },
-    "Q1131296": {
-      "kind": "place",
-      "precision": "city",
-      "label": "freguesia of Portugal",
-      "note": "Added in M42b batch 25, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France and Q2074737 municipality of Spain are that line, and a freguesia is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third level of administrative subdivision of Portugal\". Vimeiro, where the Battle of Vimeiro was fought, was refused for want of it."
-    },
-    "Q2276925": {
-      "kind": "place",
-      "precision": "city",
-      "label": "municipality of Galicia",
-      "note": "Added in M42b batch 25, on the same rule and the same line: Q2074737 municipality of Spain, which batch 8 added, and of which this is the Galician case. Wikidata's own description of the class, read off the class item, is \"administrative territorial entity of Galicia, Spain\". A Coruña, where the Battle of Corunna was fought, carries this class and no other and was refused for want of it."
-    },
-    "Q1760704": {
-      "kind": "event",
-      "category": "war",
-      "label": "withdrawal",
-      "note": "Added in M42 batch 52, the Mali War vein of the Africa lane, for Q131697486, the French military withdrawal from West Africa. The label and the description — “military maneuver of abandoning territory and returning to a safer area” — are read from the item itself over the network and not guessed. `war` is the category Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a withdrawal is a manoeuvre of one."
-    },
-    "Q743074": {
-      "kind": "place",
-      "precision": "region",
-      "label": "region of Mali",
-      "note": "Added in M42 batch 52 for Q338988, Kidal Region, which kidal-offensive names under P276. The label is read from the item itself over the network; the item carries no English description and its article is “Regions of Mali”. `region` because a first-level administrative division of Mali is larger than a town and is not a state, which is the line PRECISIONS draws."
-    },
-    "Q3685462": {
-      "kind": "place",
-      "precision": "city",
-      "label": "commune of Haiti",
-      "note": "Added in M42b batch 26, under deviation 1266's rule that a fire may add a class line where it mirrors one the table already holds: Q484170 commune of France, Q2074737 municipality of Spain and Q1131296 freguesia of Portugal are that line, and a commune of Haiti is the same thing — a settlement with a seat and a point, which is what PRECISIONS calls a city. Wikidata's own description of the class, read off the class item, is \"third-level division of Haiti\". Four places of the Haitian Revolution vein carry it and no other place class."
-    },
-    "Q62127": {
-      "kind": "place",
-      "precision": "region",
-      "label": "department of Haiti",
-      "note": "Added in M42b batch 26, on the same mirror rule: Q215655 department of Colombia, Q861184 department of Peru, Q250050 department of Bolivia and Q743074 region of Mali are all first-level administrative divisions the table already calls a region. Wikidata's own description of the class, read off the class item, is \"first-level administrative territorial entity of the Republic of Haiti\". `region` because a department is larger than a town and is not a state, which is the line PRECISIONS draws. Artibonite, which battle-of-ravine-a-couleuvres names under P276, carries it."
-    },
-    "Q1959141": {
-      "kind": "event",
-      "category": "war",
-      "label": "naval blockade",
-      "note": "Added in M42b batch 26 for Q4927230, the Blockade of Saint-Domingue. The label is read from the class item itself; the item carries no description in English or Portuguese and has no English article, so there is no gloss to quote. `war` is the category Q1261499, naval battle, Q645883, military operation, and Q2001676, offensive, already carry: data/categories.json calls `war` “organised armed force between polities” and a blockade is a military operation of one against another."
-    },
-    "Q135010": {
-      "kind": "event",
-      "label": "war crime",
-      "note": "Added in M42 batch 53 from the class the Chaplain-Medic massacre names, read off the class item itself over the network and not guessed. Wikidata glosses it “individual act constituting a serious violation of the laws of war”. No category, as Q3199915 massacre carries none: data/categories.json has no kind for an atrocity and war would say the record is the fighting."
-    },
-    "Q133156": {
-      "kind": "place",
-      "precision": "region",
-      "label": "colony",
-      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"territory under the political control of an overseas state, generally with its own subordinate colonial government\". Carried by Saint-Domingue (Q861551)."
-    },
-    "Q3502482": {
-      "kind": "place",
-      "precision": "region",
-      "label": "cultural region",
-      "note": "Added in the curation fire of 25 September, by A9's place chain: an event reached this class and the table had not decided about it, so the place had no precision. The label and the gloss are read from the class item itself over the network. `region` because it is ground larger than a settlement and is not a state, which is A12 (2)'s reading. Wikidata's gloss: \"geographic region associated with a particular culture\". Carried by Hispanic America (Q653884)."
+      "label": "project of referendum",
+      "note": "Added in M20 from the import report, where 1 ticked candidate(s) were refused under it. Every one of them is an event of a kind M18's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata."
     },
     "Q137186904": {
       "kind": "place",
