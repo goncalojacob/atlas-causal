@@ -5347,3 +5347,55 @@ settle: the atlas says both readings and names who holds each.
   Korean Korean People's Army, ending the hostilities."* That is a date and not
   a claim, and it is the refusal class A14 (4) drew — a sentence that opens on
   how long afterwards a thing happened says nothing about why.
+
+## Batch 58 — the Congo Crisis from the dismissal to the coup, and the word the article uses
+
+*25 September, the same fire, continuing under STEP 3's "each imported,
+connected, filed, placed, validated, rebuilt and pushed before the next". Batch
+57 put Asia at 174 against Africa's 170, so A10's order of need turned back and
+this batch is four **Africa** rows, taken from the Congo Crisis vein by
+deviation 1449's rule: `Q1773926` holds `simba-rebellion` inside the largest
+connected component, and all four arrivals stand beside it rather than under it.
+The full note, the refusals and the counts are in `docs/m42-pool.md` under
+"Batch 58".*
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `dissolution-of-the-lumumba-government` → `assassination-of-patrice-lumumba` | `enabled` | *"Following the September 1960 coup led by Mobutu Sese Seko, Lumumba and his political retinue were detained by Mobutu's forces in December 1960. After a month of imprisonment near Léopoldville, he was transferred to Belgium-aligned Katanga in mid-January"* — "Assassination of Patrice Lumumba", revision 1376437618, lead |
+| `assassination-of-patrice-lumumba` → `kwilu-rebellion` | `precondition-of` | *"When Lumumba was assassinated in early 1961, Mulele became a prominent and vocal advocate for his government and beliefs. In 1962, Mulele joined a group of fellow rebels and ex-politicians named the National Committee of Liberation"* — "Kwilu rebellion", revision 1370626353, § Background |
+| `assassination-of-patrice-lumumba` → `simba-rebellion` | `precondition-of` | *"The rebellion, located in the east of the country, was led by the followers of Patrice Lumumba, who had been ousted from power in 1960 by Joseph Kasa-Vubu and Joseph-Désiré Mobutu and subsequently killed in January 1961 in Katanga"* — "Simba rebellion", revision 1375684063, lead |
+| `kwilu-rebellion` → `simba-rebellion` | `caused` | *"As violence increased and attacks became more frequent, it sparked similar uprisings throughout the country, triggering the Simba rebellion"* — "Kwilu rebellion", revision 1370626353, § Rebel activity 1963–1965 |
+| `simba-rebellion` → `second-mobutu-coup-detat` | `precondition-of` | *"By 1965, with the Kwilu and Simba rebellions largely quelled, the alliance between Kasa-Vubu and Tshombe had outlived its usefulness ... Kasa-Vubu moved to remove Tshombe from power, which led to a political split between the two"* — "Second Mobutu coup d'état", revision 1371883429, § Background |
+
+**`caused` is written once and it is written because the source writes it.** This
+run has put `caused` on very few of its imported edges and the reason has always
+been that an article that says a thing followed another has not said it was
+caused by it. The Kwilu article says *triggering*, of a named event, in its own
+narrative voice, and nothing weaker would have been honest to that sentence.
+
+**Two of the five edges have a held record at one end and two more reach one.**
+`assassination-of-patrice-lumumba` → `simba-rebellion` and `kwilu-rebellion` →
+`simba-rebellion` both end on a record the atlas already had; `simba-rebellion` →
+`second-mobutu-coup-detat` begins on one. That is the shape deviation 1449 is
+about, and it is why four arrivals joined the largest component and none of them
+had to reach it through an umbrella.
+
+**Three edges were read and refused.**
+
+- **`congo-crisis` → each of the four.** Containment, which is the filing all
+  four already carry, and C8 bars it as an edge. The Second Mobutu coup's lead
+  states the relation the other way round — *"It marked the end of the years-long
+  Congo Crisis"* — and an edge from a child to the umbrella it ends would be the
+  same rule read backwards.
+- **`kwilu-rebellion` ↔ `simba-rebellion` as concurrency.** Both articles also
+  say the two risings were *contemporaneous* and *concurrent*, and on that
+  sentence alone there would be no edge in either direction: two things happening
+  at once is not one causing the other. The edge above rests on the other
+  sentence, which names one and says what it did.
+- **`assassination-of-patrice-lumumba` → `second-mobutu-coup-detat`.** The coup
+  article says Tshombe *"was suspected by many to be complicit in Lumumba's
+  assassination, thus tarnishing his public image"*, which is a reason Kasa-Vubu
+  moved against Tshombe five years later. It is a reported suspicion about a
+  person's standing and not a statement that the killing conditioned the coup,
+  and the chain the article does argue — through the rebellions — is already an
+  edge here.

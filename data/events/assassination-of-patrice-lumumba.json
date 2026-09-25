@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "assassination-of-patrice-lumumba",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead",
+      "date-from-article"
+    ],
+    "note": "Filed under the Congo Crisis from the item's own P361. The item's P585 gives the month alone, January 1961; the cited article at revision 1376437618 gives the day in its first sentence — \"assassinated on January 17, 1961\" — and that is the date written, read off the source and not supplied. Place by A9's second step (P276 Q187593, Lubumbashi, written by this batch). `death` from the class Q3882219, assassination, added to the class table with this batch. No P710."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2529018",
+  "wikipedia": {
+    "en": "Assassination of Patrice Lumumba"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2529018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Patrice Lumumba\", revision 1376437618"
+    }
+  ],
+  "title": "Assassination of Patrice Lumumba",
+  "summary": "The English Wikipedia article \"Assassination of Patrice Lumumba\", at revision 1376437618, opens: \"Patrice Lumumba, inaugural Prime Minister of the Republic of the Congo, Léopoldville and leader of the Congolese National Movement (MNC), was assassinated on January 17, 1961 in Katanga, near Elizabethville, amidst the Congo Crisis that began in July 1960.\" Wikidata item Q2529018, whose own description reads \"1961 killing of Congolese independence leader\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-01-17"
+  },
+  "place": "lubumbashi",
+  "region": null,
+  "regionNote": null,
+  "parent": "congo-crisis",
+  "category": "death",
+  "actors": []
+}
