@@ -222,6 +222,15 @@
         }
       ]
     },
+    "2014-gaza-war--operation-northern-shield--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "2014-portuguese-socialist-party-prime-ministerial-primary--geringonca-2015--enabled": {
       "from": "git",
       "versions": [

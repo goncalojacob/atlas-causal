@@ -2210,6 +2210,12 @@
     },
     {
       "dissent": false,
+      "id": "2014-gaza-war",
+      "kind": "event",
+      "locator": "Q17324420"
+    },
+    {
+      "dissent": false,
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
       "locator": null
@@ -6395,6 +6401,12 @@
       "id": "operation-musketeer-1956",
       "kind": "event",
       "locator": "Q2915155"
+    },
+    {
+      "dissent": false,
+      "id": "operation-northern-shield",
+      "kind": "event",
+      "locator": "Q59417678"
     },
     {
       "dissent": false,

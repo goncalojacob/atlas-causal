@@ -3128,6 +3128,44 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "2014-gaza-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "filed-by-span-and-subject",
+          "summary-from-lead",
+          "participants-from-p710"
+        ],
+        "note": "Place by A9's second step, P276 Q39760, the Gaza Strip, held here at `region` precision; the item carries no P625. The filing is A6's span and subject, not the item's P361, which names only Q553184, a record this atlas does not hold: the war is inside `arab-israeli-conflict`'s span and is the same fighting as `gaza-war-2008-2009`, filed there. P580 and P582 are the days the article gives, so nothing was widened under A7. Of eight P710 only Q801 is an actor held here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2014 Gaza War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "wikipedia-en",
@@ -29036,6 +29074,44 @@
       "revised": null,
       "status": "active",
       "title": "Operation Musketeer (1956)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "operation-northern-shield",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "filed-from-p361",
+          "summary-from-lead"
+        ],
+        "note": "No place: A9's chain reaches only Q801, Israel, whose five P31 disagree about place or actor, so the class table refuses it and nothing is guessed. The lane is Israel's own point, which is what `laneFor` does with the country an item names. P580 is 4 December 2018 with no P582, so `end-unstated` says the null is not a claim; the article gives 13 January 2019, which is A7's to widen. Its one P710, Q58967, is not an actor held here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Northern Shield"
     },
     {
       "authors": [

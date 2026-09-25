@@ -1634,6 +1634,12 @@
     },
     {
       "dissent": false,
+      "id": "2014-gaza-war--operation-northern-shield--precondition-of",
+      "kind": "edge",
+      "locator": "\"Operation Northern Shield\", revision 1368407310, § Background"
+    },
+    {
+      "dissent": false,
       "id": "2014-pro-russian-unrest-in-ukraine--war-in-donbas--enabled",
       "kind": "edge",
       "locator": "\"War in Donbas\", revision 1370749630, lead and § Protests in the Donbas"
@@ -8660,6 +8666,12 @@
     },
     {
       "dissent": false,
+      "id": "2014-gaza-war",
+      "kind": "event",
+      "locator": "\"2014 Gaza War\", revision 1372761109"
+    },
+    {
+      "dissent": false,
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
       "locator": "\"2014 Portuguese Socialist Party prime ministerial primary\", revision 1360457304"
@@ -12995,6 +13007,12 @@
       "id": "operation-musketeer-1956",
       "kind": "event",
       "locator": "\"Operation Musketeer (1956)\", revision 1375553410"
+    },
+    {
+      "dissent": false,
+      "id": "operation-northern-shield",
+      "kind": "event",
+      "locator": "\"Operation Northern Shield\", revision 1368407310"
     },
     {
       "dissent": false,

@@ -1565,6 +1565,15 @@
         }
       ]
     },
+    "2014-gaza-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "2014-legionella-outbreak-in-portugal": {
       "from": "git",
       "versions": [
@@ -5858,6 +5867,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-northern-shield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
