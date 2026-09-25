@@ -531,6 +531,15 @@
         }
       ]
     },
+    "bay-of-fundy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bay-of-gibraltar": {
       "from": "git",
       "versions": [
@@ -1488,6 +1497,15 @@
         }
       ]
     },
+    "colonial-pemaquid-state-historic-site": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "colony-of-natal": {
       "from": "git",
       "versions": [
@@ -1878,6 +1896,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "dover-new-hampshire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -2272,6 +2299,15 @@
         }
       ]
     },
+    "fort-albany-first-nation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "fort-liberte": {
       "from": "git",
       "versions": [
@@ -2601,6 +2637,15 @@
         }
       ]
     },
+    "groton-massachusetts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "grytviken": {
       "from": "git",
       "versions": [
@@ -2738,6 +2783,15 @@
         }
       ]
     },
+    "haverhill-massachusetts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "heartbreak-ridge": {
       "from": "git",
       "versions": [
@@ -2819,6 +2873,15 @@
         }
       ]
     },
+    "hudson-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "hue": {
       "from": "git",
       "versions": [
@@ -2874,7 +2937,7 @@
       ]
     },
     "idelimane": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3024,6 +3087,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "isthmus-of-chignecto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -4202,6 +4274,15 @@
         }
       ]
     },
+    "maine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "mainland-china": {
       "from": "git",
       "versions": [
@@ -4370,7 +4451,7 @@
       ]
     },
     "menaka": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4743,6 +4824,15 @@
       ]
     },
     "namur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "nashwaak-village-new-brunswick": {
       "from": "git",
       "versions": [
         {
@@ -5606,6 +5696,15 @@
         }
       ]
     },
+    "port-royal-acadia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "port-said": {
       "from": "git",
       "versions": [
@@ -5914,6 +6013,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "quebec-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -7300,7 +7408,7 @@
       ]
     },
     "tagarangabotte": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8082,6 +8190,15 @@
         }
       ]
     },
+    "wells-maine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "werben-elbe": {
       "from": "git",
       "versions": [
@@ -8284,6 +8401,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "york-maine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

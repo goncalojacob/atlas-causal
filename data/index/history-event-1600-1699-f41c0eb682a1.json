@@ -29,6 +29,15 @@
         }
       ]
     },
+    "avalon-peninsula-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-in-the-bay-of-sao-salvador": {
       "from": "git",
       "versions": [
@@ -56,6 +65,15 @@
         }
       ]
     },
+    "battle-of-brackett-s-wood": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-breitenfeld-1631": {
       "from": "git",
       "versions": [
@@ -74,6 +92,15 @@
         }
       ]
     },
+    "battle-of-chedabucto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-chemnitz": {
       "from": "git",
       "versions": [
@@ -89,6 +116,33 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-falmouth-1690": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-fort-albany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-fort-albany-1693": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -133,6 +187,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-09-25"
         }
       ]
@@ -209,12 +269,30 @@
         }
       ]
     },
+    "battle-of-port-royal-1690": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-prague-1648": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-quebec-1690": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -314,6 +392,12 @@
         {
           "first": true,
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -386,6 +470,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "capture-of-york-factory": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -497,6 +590,15 @@
         }
       ]
     },
+    "hudson-bay-expedition-1686": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "iroquois-war-1609": {
       "from": "git",
       "versions": [
@@ -515,7 +617,7 @@
         }
       ]
     },
-    "lachine-massacre": {
+    "king-william-s-war": {
       "from": "git",
       "versions": [
         {
@@ -524,7 +626,46 @@
         }
       ]
     },
+    "lachine-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "mohawk-valley-raid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "naval-battle-off-st-john-1691": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "naval-battle-off-st-john-1696": {
       "from": "git",
       "versions": [
         {
@@ -566,6 +707,78 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "raid-on-chignecto-1696": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-dover": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-groton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-haverhill-1697": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-oyster-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-salmon-falls": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-wells-1692": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-york-1692": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -626,6 +839,12 @@
         {
           "first": true,
           "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-25"
         }
       ]
     },
@@ -653,6 +872,33 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-fort-nashwaak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1689": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1696": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

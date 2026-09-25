@@ -2426,6 +2426,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-port-royal-1690--battle-of-quebec-1690--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-porto-bello-1739--battle-of-cartagena-de-indias--enabled",
       "kind": "edge",
       "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505, § Aftermath"
@@ -4025,6 +4031,24 @@
       "id": "herero-wars--herero-and-nama-genocide--caused",
       "kind": "edge",
       "locator": "\"Herero and Nama genocide\", revision 1373679661, lead"
+    },
+    {
+      "dissent": false,
+      "id": "hudson-bay-expedition-1686--battle-of-fort-albany--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Albany\", revision 1366220638"
+    },
+    {
+      "dissent": false,
+      "id": "hudson-bay-expedition-1686--battle-of-fort-albany-1693--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
+    },
+    {
+      "dissent": false,
+      "id": "hudson-bay-expedition-1686--capture-of-york-factory--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of York Factory\", revision 1366221362"
     },
     {
       "dissent": false,
@@ -5705,6 +5729,24 @@
       "id": "siege-of-padua--siege-of-asola-1516--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pemaquid-1689--battle-of-falmouth-1690--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Pemaquid (1689)\", revision 1375095205"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pemaquid-1696--raid-on-chignecto-1696--reacted-to",
+      "kind": "edge",
+      "locator": "\"Raid on Chignecto (1696)\", revision 1375097023"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pemaquid-1696--siege-of-fort-nashwaak--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
     },
     {
       "dissent": false,
@@ -8558,6 +8600,12 @@
     },
     {
       "dissent": false,
+      "id": "avalon-peninsula-campaign",
+      "kind": "event",
+      "locator": "\"Avalon Peninsula campaign\", revision 1375088567"
+    },
+    {
+      "dissent": false,
       "id": "bala-hissar-uprising",
       "kind": "event",
       "locator": "\"Bala Hissar uprising\", revision 1370105632"
@@ -8714,6 +8762,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-brackett-s-wood",
+      "kind": "event",
+      "locator": "\"Battle of Brackett's Wood\", revision 1375012768"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-breitenfeld-1631",
       "kind": "event",
       "locator": "\"Battle of Breitenfeld (1631)\", revision 1370108143"
@@ -8789,6 +8843,12 @@
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "\"Battle of Chacabuco\", revision 1373197409"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chedabucto",
+      "kind": "event",
+      "locator": "\"Battle of Chedabucto\", revision 1375090331"
     },
     {
       "dissent": false,
@@ -8894,6 +8954,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-falmouth-1690",
+      "kind": "event",
+      "locator": "\"Battle of Falmouth (1690)\", revision 1375093398"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-flodden",
       "kind": "event",
       "locator": "\"Battle of Flodden\", revision 1375370650"
@@ -8903,6 +8969,18 @@
       "id": "battle-of-fontenoy",
       "kind": "event",
       "locator": "\"Battle of Fontenoy\", revision 1373889007"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-albany",
+      "kind": "event",
+      "locator": "\"Battle of Fort Albany\", revision 1366220638"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-albany-1693",
+      "kind": "event",
+      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
     },
     {
       "dissent": false,
@@ -9368,6 +9446,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-port-royal-1690",
+      "kind": "event",
+      "locator": "\"Battle of Port Royal (1690)\", revision 1375089342"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-porto-bello-1739",
       "kind": "event",
       "locator": "\"Battle of Porto Bello (1739)\", revision 1375522505"
@@ -9401,6 +9485,12 @@
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "\"Battle of Punta Quemada\", revision 1370586796"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quebec-1690",
+      "kind": "event",
+      "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
     },
     {
       "dissent": false,
@@ -10031,6 +10121,12 @@
       "id": "capture-of-fort-dauphin-1794",
       "kind": "event",
       "locator": "\"Capture of Fort-Dauphin (1794)\", revision 1370608656"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-york-factory",
+      "kind": "event",
+      "locator": "\"Capture of York Factory\", revision 1366221362"
     },
     {
       "dissent": false,
@@ -11054,6 +11150,12 @@
     },
     {
       "dissent": false,
+      "id": "hudson-bay-expedition-1686",
+      "kind": "event",
+      "locator": "\"Hudson Bay expedition (1686)\", revision 1370622978"
+    },
+    {
+      "dissent": false,
       "id": "humboldt-7-massacre",
       "kind": "event",
       "locator": "\"Humboldt 7 massacre\", revision 1361104810"
@@ -11402,6 +11504,12 @@
     },
     {
       "dissent": false,
+      "id": "king-william-s-war",
+      "kind": "event",
+      "locator": "\"King William's War\", revision 1375172085"
+    },
+    {
+      "dissent": false,
       "id": "korean-armistice-agreement",
       "kind": "event",
       "locator": "\"Korean Armistice Agreement\", revision 1370487806"
@@ -11681,6 +11789,18 @@
       "id": "napoleonic-wars",
       "kind": "event",
       "locator": "\"Napoleonic Wars\", revision 1375690911"
+    },
+    {
+      "dissent": false,
+      "id": "naval-battle-off-st-john-1691",
+      "kind": "event",
+      "locator": "\"Naval battle off St. John (1691)\", revision 1375237830"
+    },
+    {
+      "dissent": false,
+      "id": "naval-battle-off-st-john-1696",
+      "kind": "event",
+      "locator": "\"Naval battle off St. John (1696)\", revision 1375237879"
     },
     {
       "dissent": false,
@@ -12092,15 +12212,63 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-chignecto-1696",
+      "kind": "event",
+      "locator": "\"Raid on Chignecto (1696)\", revision 1375097023"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-dioura-2023",
       "kind": "event",
       "locator": "\"Raid on Dioura (2023)\", revision 1370705729"
     },
     {
       "dissent": false,
+      "id": "raid-on-dover",
+      "kind": "event",
+      "locator": "\"Raid on Dover\", revision 1374990368"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-groton",
+      "kind": "event",
+      "locator": "\"Raid on Groton\", revision 1375171763"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-haverhill-1697",
+      "kind": "event",
+      "locator": "\"Raid on Haverhill (1697)\", revision 1374990464"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-oyster-river",
+      "kind": "event",
+      "locator": "\"Raid on Oyster River\", revision 1374990608"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-pebble-island",
       "kind": "event",
       "locator": "\"Pebble Island raid\", revision 1370703799"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-salmon-falls",
+      "kind": "event",
+      "locator": "\"Raid on Salmon Falls\", revision 1375173326"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-wells-1692",
+      "kind": "event",
+      "locator": "\"Raid on Wells (1692)\", revision 1375427394"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-york-1692",
+      "kind": "event",
+      "locator": "\"Raid on York (1692)\", revision 1375096253"
     },
     {
       "dissent": false,
@@ -12542,6 +12710,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-nashwaak",
+      "kind": "event",
+      "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-jadotville",
       "kind": "event",
       "locator": "\"Siege of Jadotville\", revision 1370742055"
@@ -12581,6 +12755,18 @@
       "id": "siege-of-padua",
       "kind": "event",
       "locator": "\"Siege of Padua\", revision 1370744265"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pemaquid-1689",
+      "kind": "event",
+      "locator": "\"Siege of Pemaquid (1689)\", revision 1375095205"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pemaquid-1696",
+      "kind": "event",
+      "locator": "\"Siege of Pemaquid (1696)\", revision 1375237359"
     },
     {
       "dissent": false,

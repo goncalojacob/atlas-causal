@@ -47,6 +47,15 @@
         }
       ]
     },
+    "battle-of-port-royal-1690--battle-of-quebec-1690--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-rain--battle-of-the-alte-veste--precondition-of": {
       "from": "git",
       "versions": [
@@ -204,6 +213,33 @@
         }
       ]
     },
+    "hudson-bay-expedition-1686--battle-of-fort-albany--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "hudson-bay-expedition-1686--battle-of-fort-albany-1693--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "hudson-bay-expedition-1686--capture-of-york-factory--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "iroquois-war-1609--battle-of-sorel--precondition-of": {
       "from": "git",
       "versions": [
@@ -286,6 +322,33 @@
       ]
     },
     "schenectady-massacre--battle-of-wilton-new-york--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1689--battle-of-falmouth-1690--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1696--raid-on-chignecto-1696--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-pemaquid-1696--siege-of-fort-nashwaak--reacted-to": {
       "from": "git",
       "versions": [
         {
