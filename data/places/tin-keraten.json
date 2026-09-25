@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "tsushima-strait",
+  "id": "tin-keraten",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -20,20 +20,20 @@
       "imported-facts",
       "a9-place"
     ],
-    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
+    "note": "The point is the P625 of Wikidata Q6602439, the Battle of Tin Keraten, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276, P131 or P625-bearing country to fall back on, and the article calls the ground a wadi 100 km east of Gao and north-east of Imenas."
   },
   "origin": {
     "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait"
+    "Tin Keraten"
   ],
   "where": {
-    "lon": 129.49,
-    "lat": 34.008,
-    "precision": "region",
-    "label": "Tsushima Strait"
+    "lon": 0.817,
+    "lat": 16.417,
+    "precision": "point",
+    "label": "Tin Keraten"
   },
   "region": null,
   "regionNote": null,

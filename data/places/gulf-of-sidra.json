@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "gulf-of-sidra",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q3477174, the Second Gulf of Sidra offensive, read on 2026-09-25 — A9's first step as A12 (2) corrects it. It falls at sea in the middle of the gulf the offensive is named after and stands for the coast it ran along, from Brega west to Sirte, rather than a spot on the ground; `point` is the fallback, there being no place item at this step to read a class from. The item's P276 is Q1376543, the Via Balbia, which has no point."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Gulf of Sidra"
+  ],
+  "where": {
+    "lon": 18,
+    "lat": 31.5,
+    "precision": "point",
+    "label": "Gulf of Sidra"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

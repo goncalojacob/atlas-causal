@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "battle-of-tin-keraten",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "The item's single P585 of 6 March 2013 is the one date the article gives, so nothing was widened under A7. Place by A9's first step, the item's own P625; the item carries no P276."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q6602439",
+  "wikipedia": {
+    "en": "Battle of Tin Keraten"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6602439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tin Keraten\", revision 1370591104"
+    }
+  ],
+  "title": "Battle of Tin Keraten",
+  "summary": "The English Wikipedia article \"Battle of Tin Keraten\", at revision 1370591104, opens: \"On March 6, 2013, French and Malian forces took control of the Wadi Tin Keraten area, located 100 km east of Gao and northeast of Imenas. When Malian soldiers got near Tin Keraten, they were attacked by Islamists from MOJWA.\" Wikidata item Q6602439, whose own description reads \"2013 battle\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 2013,
+    "end": 2013,
+    "date": "2013-03-06"
+  },
+  "place": "tin-keraten",
+  "region": null,
+  "regionNote": null,
+  "parent": "mali-war",
+  "category": "war",
+  "actors": []
+}

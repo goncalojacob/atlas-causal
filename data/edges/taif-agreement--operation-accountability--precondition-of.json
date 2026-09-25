@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "taif-agreement--operation-accountability--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Accountability\", revision 1370630524, § Historical background"
+    }
+  ],
+  "from": "taif-agreement",
+  "to": "operation-accountability",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The operation's own background makes the accord the reason its target was still armed: \"When the Taif Agreement was signed, it amended the Lebanese constitution to end the civil war, and disband all Lebanese militias... the Lebanese government classified Hezbollah's military wing, the \\\"Islamic Resistance\\\" as a resistance movement aimed at ending the Israeli occupation and not as a militia. Thus, the organization was exempted from disbanding and disarming.\" The accord that disarmed every militia but this one is what left Hezbollah in southern Lebanon for the operation to strike. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "tsushima-strait",
+  "id": "zliten",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -20,20 +20,20 @@
       "imported-facts",
       "a9-place"
     ],
-    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
+    "note": "The point is the P625 of Wikidata Q207259, Zliten, reached by A9's second step from Q11681484's P276 because the Zliten uprising item carries no P625 of its own. `city` off that item's class Q515 (A12 (2))."
   },
   "origin": {
     "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait"
+    "Zliten"
   ],
   "where": {
-    "lon": 129.49,
-    "lat": 34.008,
-    "precision": "region",
-    "label": "Tsushima Strait"
+    "lon": 14.5725,
+    "lat": 32.463888888889,
+    "precision": "city",
+    "label": "Zliten"
   },
   "region": null,
   "regionNote": null,

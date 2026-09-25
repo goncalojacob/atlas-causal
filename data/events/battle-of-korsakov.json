@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "battle-of-korsakov",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "The item's P580 and P585 are both 20 August 1904, which is the day the article gives, so nothing was widened under A7. Place by A9's first step, the item's own P625. That point derives the europe lane and not asia, as `sakhalin` does for `japanese-invasion-of-sakhalin`: deviation 1423's open question, which is the owner's and not a fire's, so no `region` override is written."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4871480",
+  "wikipedia": {
+    "en": "Battle of Korsakov"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871480"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Korsakov\", revision 1370446023"
+    }
+  ],
+  "title": "Battle of Korsakov",
+  "summary": "The English Wikipedia article \"Battle of Korsakov\", at revision 1370446023, opens: \"The Battle of Korsakov, a naval engagement of the Russo-Japanese War, was fought on 20 August 1904 off the southern coast of Sakhalin island. The battle foiled an attempt by the Imperial Russian Navy protected cruiser Novik at escaping Port Arthur to join the Russian cruiser squadron at Vladivostok, Russia, after the Russian Pacific Squadron was scattered in the Battle of the Yellow Sea.\" Wikidata item Q4871480, whose own description reads \"1904 naval battle of the Russo-Japanese War\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1904,
+    "end": 1904,
+    "date": "1904-08-20"
+  },
+  "place": "korsakov",
+  "region": null,
+  "regionNote": null,
+  "parent": "russo-japanese-war",
+  "category": "war",
+  "actors": []
+}

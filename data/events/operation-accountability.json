@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "operation-accountability",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "a9-place",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9's second step, P276 Q822, Lebanon, which this atlas holds as `lebanon-q822`; the item carries no P625. The item's P580 and P582 are 25 and 31 July, which are the days the article gives — \"Israeli forces launched a week-long attack against Lebanon\" on 25 July and \"A ceasefire was reached after a week\" — so nothing was widened under A7. `south-lebanon-conflict` also contains the week and is held, but the item's only P361 is Q8669, so the filing is the one the item states."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2026496",
+  "wikipedia": {
+    "en": "Operation Accountability",
+    "pt": "Operação Responsabilidade"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2026496"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Accountability\", revision 1370630524"
+    }
+  ],
+  "title": "Operation Accountability",
+  "summary": "The English Wikipedia article \"Operation Accountability\", at revision 1370630524, opens: \"On July 25, 1993, Israeli forces launched a week-long attack against Lebanon named Operation Accountability in Israel and the Seven-Day War in Lebanon. Israel specified three purposes to the operation: to strike directly at Hezbollah, to make it difficult for Hezbollah to use southern Lebanon as a base for striking Israel, and to displace Lebanese and Palestinian civilians in the hopes of pressuring the Lebanese government to intervene against Hezbollah.\" Wikidata item Q2026496, whose own description reads \"fought between Israel and Hezbollah from July 25 to July 31, 1993\". That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does.",
+  "when": {
+    "start": 1993,
+    "end": 1993,
+    "date": "1993-07-25",
+    "endDate": "1993-07-31"
+  },
+  "place": "lebanon-q822",
+  "region": null,
+  "regionNote": null,
+  "parent": "arab-israeli-conflict",
+  "category": "war",
+  "actors": []
+}

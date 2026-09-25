@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "id": "tsushima-strait",
+  "id": "hsimucheng",
   "kind": "place",
   "status": "active",
   "supersededBy": null,
@@ -20,20 +20,20 @@
       "imported-facts",
       "a9-place"
     ],
-    "note": "The point is the P625 of Wikidata Q52055, the Tsushima Strait, reached by A9's second step from Q11481675's P276 because the Hitachi Maru item carries no P625 of its own. Q52055 is the eastern channel of the Korea Strait, which this atlas already holds as a separate place from its own item Q52052: the two are neighbours and not duplicates, and battle-off-ulsan stands on the wider one."
+    "note": "The point is the P625 of Wikidata Q2409166, the Battle of Hsimucheng, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276 to fall back on, and the article calls the ground a hamlet in today's Ximu Town, 20 km south-east of Haicheng."
   },
   "origin": {
     "tool": "wikidata"
   },
   "sources": [],
   "names": [
-    "Tsushima Strait"
+    "Hsimucheng"
   ],
   "where": {
-    "lon": 129.49,
-    "lat": 34.008,
-    "precision": "region",
-    "label": "Tsushima Strait"
+    "lon": 123.183,
+    "lat": 41.267,
+    "precision": "point",
+    "label": "Hsimucheng"
   },
   "region": null,
   "regionNote": null,

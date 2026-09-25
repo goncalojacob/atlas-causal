@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "korsakov",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q4871480, the Battle of Korsakov, read on 2026-09-25 — A9's first step. It is 25 km north-east of the point Q155331 gives for the town of Korsakov itself, because the engagement was fought at sea off the southern coast of Sakhalin and the item places it where the ships were; the town is what the battle is named after and what this record is labelled by. That is quang-tri's case from batch 57 read at sea."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Korsakov"
+  ],
+  "where": {
+    "lon": 143,
+    "lat": 46.833,
+    "precision": "point",
+    "label": "Korsakov"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

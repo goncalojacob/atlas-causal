@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "fourth-battle-of-gao--battle-of-imenas--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
+    }
+  ],
+  "from": "fourth-battle-of-gao",
+  "to": "battle-of-imenas",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Imenas article's background gives the failed raids on Gao as the reason for the operation it is about: after the attempts of 10 and 20 February \"failed\", \"French and Malian forces, wished to secure the region, and fully expel the MUJAO-Mulathamen coalition from the Gao and its regions, so they began interrogating captured jihadists to learn information about the positions and the number of the jihadists\", and out of that intelligence \"French code-named Operation Doro was launched on 27 February, with the aim of destroying Islamist groups around Gao.\" The article states a purpose and the prisoners it was built on, not only the order of two dates. The link is written from the later of the two raids, which is the one the operation followed. Probable: Wikipedia alone.",
+  "dispute": null
+}
