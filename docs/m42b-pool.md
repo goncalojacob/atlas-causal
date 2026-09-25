@@ -8295,11 +8295,14 @@ Cognac, 1536–1538, 1551–1559 — carrying **one child each or none**. The ve
 question of what to file things under; it was that nobody had imported the children.
 
 **Every one of the fifteen names a record this atlas already holds in its own `P361`**, and
-four name two: `battle-of-noain` and `battle-of-pampeluna` name the Italian War of 1521–1526
-*and* `spanish-conquest-of-iberian-navarre`; `battle-of-landriano` names the War of the
-League of Cognac *and* `italian-wars` itself; `battle-of-gavinana` names the war *and*
-`siege-of-florence-1529-1530`, which this same batch wrote. All four carry both, which is A8
-and M79, and not one of the fifteen is main.
+four name two — but only two of those four keep both, and that is deviation 1316.
+`battle-of-noain` and `battle-of-pampeluna` name the Italian War of 1521–1526 *and*
+`spanish-conquest-of-iberian-navarre`, which are two different umbrellas neither inside the
+other, so both are written and that is A8 and M79 doing what they are for.
+`battle-of-landriano` names the War of the League of Cognac *and* `italian-wars`, and
+`battle-of-gavinana` names the war *and* `siege-of-florence-1529-1530` which this batch
+wrote — and in both of those the second parent is **already reachable through the first**, so
+only the nearest is kept. Not one of the fifteen is main.
 
 ### What was imported
 
@@ -8317,8 +8320,8 @@ and M79, and not one of the fifteen is main.
 | `siege-of-naples-1528` | `Q16529030` | 1528-04–08 | `war-of-the-league-of-cognac` | `naples-q2634` |
 | `battle-of-capo-d-orso` | `Q38251286` | 1528-04-28–29 | `war-of-the-league-of-cognac` | `gulf-of-salerno` |
 | `siege-of-florence-1529-1530` | `Q981042` | 1529-10-24–1530-08-10 | `war-of-the-league-of-cognac` | `florence-q2044` |
-| `battle-of-landriano` | `Q2746040` | 1529-06-21 | `italian-wars`, `war-of-the-league-of-cognac` | `landriano` |
-| `battle-of-gavinana` | `Q633362` | 1530-08-03 | `war-of-the-league-of-cognac`, `siege-of-florence-1529-1530` | `florence-q2044` |
+| `battle-of-landriano` | `Q2746040` | 1529-06-21 | `war-of-the-league-of-cognac` | `landriano` |
+| `battle-of-gavinana` | `Q633362` | 1530-08-03 | `siege-of-florence-1529-1530` | `florence-q2044` |
 | `battle-of-montemurlo` | `Q2889368` | 1537-08-02 | `italian-war-of-1536-1538` | `montemurlo` |
 
 **Nothing was refused and nothing was placeless.** This is the first batch of this run where
@@ -8440,6 +8443,18 @@ comes from `existingRecords(dataDir)` — and a pass written beside the tool rat
 it is exactly how a rule like that gets lost. It is the second fault of this kind this fire
 paid for (1311 was the first) and both are arguments for deviation 1310's conclusion.
 
+**1316. A second parent that is reachable through the first is not a second umbrella.**
+`tests/m42-filing.test.mjs` holds the rule — *"no parent of an event is reachable through
+another of its parents"* — and this fire's A8 pass wrote every `P361` the item names without
+checking it. `battle-of-landriano` came out part of both the War of the League of Cognac and
+`italian-wars`, which is the war's own parent; `battle-of-gavinana` part of both the war and
+the siege of Florence, which is also inside the war. Both say the same thing twice and the
+nearer one says it better, which is deviation 1305's rule from batch 29 — *"every filing is
+the item's own `P361` and the nearest one only"* — restated as what A8 does **not** mean. A8
+is for umbrellas that genuinely overlap without containing each other, which is what
+`battle-of-noain` and `battle-of-pampeluna` have and these two did not. The validator does
+not catch it; only the test does.
+
 **1315. An edge drawn from a battle to the siege it happened inside is the arrow of time
 backwards, and rule 4 is what says so.** `battle-of-capo-d-orso` is dated 28 April 1528 and
 `siege-of-naples-1528` opens in April 1528, so the naval action falls **inside** the siege;
@@ -8473,7 +8488,7 @@ batch 30 wrote, so twenty-three records were filed at no cost to the main count,
 batch 30's Beaver Wars records gained the second parent A8 owed them. Batch 32 took the cell
 the brief actually points at, Europe's sixteenth century, and found the opposite problem: not
 a missing umbrella but four umbrellas with no children. Thirty-eight events, twenty-six
-places, nine edges, one refusal, five deviations (1311–1315).
+places, nine edges, one refusal, six deviations (1311–1316).
 
 **Two batches, two different reasons the main count did not have to rise**, and between them
 they answer question 11 halfway: batch 31 shows what batch 30's single rise bought (twenty-three
@@ -8519,8 +8534,13 @@ no argument in `docs/m67-umbrellas.md`. All four were fixed by refusing
 **1815**, on the corrected head, was **cancelled by batch 32's push** before it finished its
 test step, having passed `Validate records`. Locally after both batches:
 `node tools/validate.mjs --index` **clean at 0 errors and 593 warnings**, and the pure suite
-**1,819 of 1,819 passing, nothing failed and nothing skipped** — measured on batch 31's head;
-the browser suite was stopped by this fire rather than run, so the branch's last full browser
-verdict is the run recorded below. **The next fire should read this head's run before it does
+**1,819 of 1,819 passing, nothing failed and nothing skipped**. The first pure run after
+batch 32 failed one test — `tests/m42-filing.test.mjs` on a second parent reachable through
+the first, which is deviation 1316 — and the two records were corrected before this head was
+pushed. **The browser suite was stopped by this fire rather than run**: it and the pure suite
+were started together, the machine's load reached nine, and the fire killed the browser half
+rather than spend the hour on it. So the branch's last full browser verdict is the run
+recorded here, and a next fire that wants one should run the two halves one after the other
+and not at once. **The next fire should read this head's run before it does
 anything else**, and if it is red, read the failure: the check has been honest since M63 and
 it is not load.

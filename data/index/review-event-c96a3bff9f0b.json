@@ -7669,10 +7669,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "war-of-the-league-of-cognac",
-        "siege-of-florence-1529-1530"
-      ],
+      "parent": "siege-of-florence-1529-1530",
       "review": {
         "flags": [
           "imported-facts",
@@ -8866,10 +8863,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "italian-wars",
-        "war-of-the-league-of-cognac"
-      ],
+      "parent": "war-of-the-league-of-cognac",
       "review": {
         "flags": [
           "imported-facts",

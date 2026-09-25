@@ -54,10 +54,7 @@
   "place": "florence-q2044",
   "region": null,
   "regionNote": null,
-  "parent": [
-    "war-of-the-league-of-cognac",
-    "siege-of-florence-1529-1530"
-  ],
+  "parent": "siege-of-florence-1529-1530",
   "category": "war",
   "actors": []
 }

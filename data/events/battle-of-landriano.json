@@ -55,10 +55,7 @@
   "place": "landriano",
   "region": null,
   "regionNote": null,
-  "parent": [
-    "italian-wars",
-    "war-of-the-league-of-cognac"
-  ],
+  "parent": "war-of-the-league-of-cognac",
   "category": "war",
   "actors": []
 }
