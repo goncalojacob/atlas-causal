@@ -2132,6 +2132,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-albany--battle-of-fort-albany-1693--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
@@ -4031,24 +4037,6 @@
       "id": "herero-wars--herero-and-nama-genocide--caused",
       "kind": "edge",
       "locator": "\"Herero and Nama genocide\", revision 1373679661, lead"
-    },
-    {
-      "dissent": false,
-      "id": "hudson-bay-expedition-1686--battle-of-fort-albany--precondition-of",
-      "kind": "edge",
-      "locator": "\"Battle of Fort Albany\", revision 1366220638"
-    },
-    {
-      "dissent": false,
-      "id": "hudson-bay-expedition-1686--battle-of-fort-albany-1693--precondition-of",
-      "kind": "edge",
-      "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
-    },
-    {
-      "dissent": false,
-      "id": "hudson-bay-expedition-1686--capture-of-york-factory--precondition-of",
-      "kind": "edge",
-      "locator": "\"Capture of York Factory\", revision 1366221362"
     },
     {
       "dissent": false,
@@ -11147,12 +11135,6 @@
       "id": "house-bomb-attack-in-neiva",
       "kind": "event",
       "locator": "\"2003 Neiva bombing\", revision 1338994311"
-    },
-    {
-      "dissent": false,
-      "id": "hudson-bay-expedition-1686",
-      "kind": "event",
-      "locator": "\"Hudson Bay expedition (1686)\", revision 1370622978"
     },
     {
       "dissent": false,

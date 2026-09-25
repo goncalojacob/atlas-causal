@@ -980,3 +980,45 @@ has always taken.
 **Each of the three is filed where its date and its subject put it** — the
 first inside `american-indian-wars`, the other two inside `king-philip-s-war` —
 and what each is missing is what the sources it was built from do not carry.
+
+## M42b batch 31 — four of King William's War vein name neither
+
+The twenty-three records of the King William's War vein (`docs/m42b-pool.md`,
+batch 31) are placed from the first thing the item's own chain names that
+carries a point, and nineteen of them are. **Four name neither an actor nor a
+place**, and all four for the same reason in three different shapes: the item
+carries a coordinate and names no located thing, or names nothing at all.
+
+None of the four names an actor either, and that is not this batch's choice:
+eight of the vein's items carry a `P710` at all, between them they name twelve
+participants, and this atlas holds exactly one — `Q142`, France, a CShapes
+actor beginning in 1886, against a war of 1688. New France, New England, the
+Province of Massachusetts Bay, the Wabanaki Confederacy, the Abenaki, the
+Pennacook and the Hudson's Bay Company are none of them records here, so every
+list was partial as well as anachronistic and every list was withheld.
+
+**`avalon-peninsula-campaign` carries no location Wikidata knows of at all** —
+no `P625`, no `P276`, no `P131`, no `P17` — and its own cited article, at
+revision 1375088567, places it along "the coast of the Avalon Peninsula,
+Newfoundland", over 23 settlements in three months. A raiding campaign down a
+coastline has no point that is not a choice, and the run does not make it: the
+lane is `americas`, named for the item in `data/imports/wikidata-seeds.json`,
+and the record carries nothing else. It is the same answer
+`northeast-coast-campaign-1676` already has for the same shape of fact.
+
+**`capture-of-york-factory` carries a `P625` and names only a country.** Its
+point, 57.002722 / -92.304806, is the factory itself on the Hayes River, and
+the only located thing the item names is `Q16`, Canada — which is an actor
+record in this atlas and not a place, so A12 (2)'s chain has nothing to take a
+place record from. The atlas does not write a place out of a bare coordinate,
+which would be a record with a point and no name, and it will not put a fur
+post on Hudson Bay at the point of a country that began in 1867. The lane is
+derived from its own point.
+
+**`battle-of-chedabucto` and `raid-on-salmon-falls` are the same case without
+even the country.** Each carries a `P625` — 45.386667 / -61.505556 at Fort St.
+Louis in Chedabucto, 43.2705 / -70.7781 at Salmon Falls on the Piscataqua — and
+neither names a `P276`, a `P131` or a `P17`. `reusablePlace`'s two signals
+reach nothing: no record of this atlas is near either point or folds to either
+name. The lane is derived from the point, which is what an event with a
+coordinate and no place has always taken.

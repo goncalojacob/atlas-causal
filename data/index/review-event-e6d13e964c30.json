@@ -13950,7 +13950,6 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
       "id": "capture-of-york-factory",
       "kind": "event",
       "origin": {
@@ -20537,40 +20536,6 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "house-bomb attack in Neiva"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-09-25",
-      "degree": 3,
-      "id": "hudson-bay-expedition-1686",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "king-william-s-war",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "filed-from-p361",
-          "date"
-        ],
-        "note": "The item dates this expedition 1686 (P580) and names King William's War, Q1070342, in its own P361; that war's item begins in April 1688, so the source files the expedition under a war it also dates two years earlier than the war. Nothing was changed and nothing was invented: both statements are the item's own, the filing is what P361 says, and the validator's child-outside-parent warning is the disagreement showing. A reviewer should read the article and decide which of the two the atlas keeps.",
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Hudson Bay expedition (1686)"
     },
     {
       "authors": [
@@ -37697,6 +37662,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "capture-of-york-factory",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "carlos-manuel-de-cespedes-barracks-attack-1953",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -37935,12 +37906,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "hudson-bay-expedition-1686",
-      "kind": "event",
-      "message": "the event is part of \"king-william-s-war\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "iberian-blackout-2025",

@@ -7944,60 +7944,350 @@ about its own brief.
     before today, and the same will be true of every vein in a region the corpus has not
     reached yet. A one-line answer settles it for the rest of the run.
 
-## Where the run stands, for the fire that picks it up
+## Batch 31 — King William's War, and the Americas' seventeenth century
 
-*25 September, after the thirtieth fire and its batch 30.*
+*25 September, the thirty-first fire.*
+
+### Before the batch
 
 | | |
 | --- | --- |
-| corpus | **1,072 active** |
-| **main** | **239** — raised by one, by the umbrella batch 30 wrote; see question 11 |
-| **largest connected component** | **662** |
-| components | **279** |
-| events with no edge at all | **210** |
+| corpus | **1,076 active** — four above the 1,072 the last fire left, because `origin/m42` was merged first and brought its batch 56 |
+| **main** | **239** |
+| **largest connected component** | **665** |
+| components | 280 |
+| events with no edge at all | 211 |
+| Europe before 1900 | 155 active, 17 main |
+| the `americas` lane | 287 active, 56 main |
+| **the Americas' seventeenth century** | **41 active, 7 main** |
+
+**One merge came first.** `origin/m0` was already an ancestor. `origin/m42` had moved and
+conflicted in 262 files, of which **259 were `data/index/`** — the same two hash renames of
+one file that a rebuilt index always looks like from the other side — and three were real:
+`STATUS.md` (both sides kept), `docs/m53-polities.md` and the generated `sources.html`. The
+index was dropped and rebuilt, and §4.1's row re-taken on the merged corpus: **400 of
+1,076**, the numerator unmoved and the denominator carrying both lanes' batches.
+
+### Per lane and per century (A10)
+
+| lane | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| `africa` | 170 | 31 | 170 | 31 |
+| `americas` | 287 | 56 | **310** | **56** |
+| `asia` | 169 | 64 | 169 | 64 |
+| `europe` | 450 | 88 | 450 | 88 |
+| Europe before 1900 | 155 | 17 | 155 | 17 |
+
+| cell of this partition | active before | main before | active after | main after |
+| --- | --- | --- | --- | --- |
+| the Americas' 15th | 6 | 5 | 6 | 5 |
+| the Americas' 16th | 37 | 3 | 37 | 3 |
+| **the Americas' 17th** | **41** | **7** | **64** | **7** |
+| the Americas' 18th | 33 | 2 | 33 | 2 |
+| the Americas' 19th | 44 | 8 | 44 | 8 |
+| the Americas' 20th | 89 | 30 | 89 | 30 |
+| the Americas' 21st | 37 | 1 | 37 | 1 |
+| Europe's 15th | 4 | 2 | 4 | 2 |
+| Europe's 16th | 29 | 1 | 29 | 1 |
+| Europe's 17th | 36 | 2 | 36 | 2 |
+| Europe's 18th | 48 | 3 | 48 | 3 |
+| Europe's 19th | 38 | 9 | 38 | 9 |
+
+All twenty-three fall in the seventeenth century, the one the last fire opened and the one
+the source itself had the next move in. **South and central America against north, inside
+the `americas` lane: 206 to 66**, with 39 placeless, counted by the place record's own
+latitude at the 23°N line as batch 30 counted it. Every one of the batch's nineteen placed
+events is north of that line; the lane's own ordering — south and central before north,
+until they hold as many as north — is satisfied more than three times over and was not what
+chose this batch.
+
+### **The main count does not rise, and this is why it did not have to**
+
+**239 before and 239 after.** Batch 30 had to use A3's and A6's "has to say why" clause for
+the first time in thirty batches, because North America had no umbrella and the two wars
+that would fill it were their own. It wrote `american-indian-wars` from `Q849680` and put
+the rise at one instead of two. **This batch is what that one bought.** `Q1070342`, King
+William's War, names three parents in its own `P361` — `Q152218` the Nine Years' War,
+`Q681416` the French and Indian Wars, and **`Q849680`, the umbrella batch 30 wrote** — so it
+is filed under a record that is already here and costs nothing, and twenty-two of the twenty-three children its own `P361` offers are filed under it. Twenty-three records, not one of them main.
+
+**The Nine Years' War was not taken, and question 11 is why.** It is King William's War's
+European parent, it is a **Europe before 1900** record in a century that holds 36 active and
+2 main, and with it the North American vein and the European corpus would stand in one
+component for the first time. It is also **one main event**, because nothing this atlas
+holds is an umbrella for it. The last fire set out the choice in those words and said: *if
+question 11 is answered yes, take it; if it is answered no, take King William's War alone*.
+**Question 11 has not been answered** — the owner is away — so the run took the reading that
+needs no decision: the brief's *"the main count must not rise from what you find it at"*
+governs until somebody says otherwise, and the bridge waits. This is the second fire in a
+row that has had to stop in front of the same one-line answer.
+
+### What was imported
+
+| record | item | date | filed under | place |
+| --- | --- | --- | --- | --- |
+| `king-william-s-war` | `Q1070342` | 1688-04–1697-09-20 | `american-indian-wars` | `north-america` |
+| `battle-of-brackett-s-wood` | `Q106412661` | 1689-09-21 | `king-william-s-war` | `north-america` |
+| `raid-on-dover` | `Q7283744` | 1689-06-27–28 | `king-william-s-war` | `dover-new-hampshire` |
+| `siege-of-pemaquid-1689` | `Q7510302` | 1689-08-02–03 | `king-william-s-war` | `colonial-pemaquid-state-historic-site` |
+| `battle-of-fort-albany` | `Q2888522` | 1688-09 | `king-william-s-war` | `hudson-bay` |
+| `raid-on-salmon-falls` | `Q7283760` | 1690-03-27 | `king-william-s-war` | — |
+| `battle-of-port-royal-1690` | `Q4872090` | 1690-05-19 | `king-william-s-war` | `port-royal-acadia` |
+| `battle-of-chedabucto` | `Q4870722` | 1690-06-03 | `king-william-s-war` | — |
+| `battle-of-falmouth-1690` | `Q4871051` | 1690 | `king-william-s-war` | `maine` |
+| `battle-of-quebec-1690` | `Q1708064` | 1690-10-16 | `king-william-s-war` | `quebec-city` |
+| `naval-battle-off-st-john-1691` | `Q17305537` | 1691-09-22 | `king-william-s-war` | `bay-of-fundy` |
+| `raid-on-york-1692` | `Q7283762` | 1692-01-24 | `king-william-s-war` | `york-maine` |
+| `raid-on-wells-1692` | `Q5931014` | 1692-06-10–13 | `king-william-s-war` | `wells-maine` |
+| `battle-of-fort-albany-1693` | `Q4871031` | 1693 | `king-william-s-war` | `fort-albany-first-nation` |
+| `raid-on-groton` | `Q16854103` | 1694-07-18 | `king-william-s-war` | `groton-massachusetts` |
+| `raid-on-oyster-river` | `Q14474392` | 1694-07-18 | `king-william-s-war` | `united-states-q30` |
+| `capture-of-york-factory` | `Q2937687` | 1694-09-14–10-14 | `king-william-s-war` | — |
+| `naval-battle-off-st-john-1696` | `Q2890597` | 1696-07-14 | `king-william-s-war` | `bay-of-fundy` |
+| `siege-of-pemaquid-1696` | `Q2937688` | 1696-08-14–15 | `king-william-s-war` | `colonial-pemaquid-state-historic-site` |
+| `raid-on-chignecto-1696` | `Q5934341` | 1696-09-20–29 | `king-william-s-war` | `isthmus-of-chignecto` |
+| `siege-of-fort-nashwaak` | `Q4392917` | 1696-10-18–20 | `king-william-s-war` | `nashwaak-village-new-brunswick` |
+| `avalon-peninsula-campaign` | `Q2935388` | 1696-11-10–1697-04-19 | `king-william-s-war` | — |
+| `raid-on-haverhill-1697` | `Q7283747` | 1697-03-15 | `king-william-s-war` | `haverhill-massachusetts` |
+
+**Every filing is the item's own `P361`.** Each summary is the **cached English lead at the
+revision it cites**, with the `wikipedia-en` citation at that same revision (A12(1), A14(3))
+and the `summary-from-lead` flag; the tool writes the placeholder and caches the lead
+without using it, which is deviation 1310 and is now four fires old. The titles keep their
+articles' disambiguators, which A12(5) asks for and the tool does do: **four pairs of this
+batch would otherwise have collided** — two sieges of Pemaquid, two battles of Fort Albany
+and two naval battles off St. John, and `battle-of-falmouth-1690`, whose item is labelled
+*Battle of Fort Loyal* and whose article is *Battle of Falmouth (1690)*.
+
+### The second parents (A8)
+
+**Five of batch 30's Beaver Wars records gained the umbrella they were denied.**
+`lachine-massacre`, `schenectady-massacre`, `battle-of-la-prairie`, `mohawk-valley-raid` and
+`battle-of-wilton-new-york` each name `Q1070342` in their own `P361` beside `Q856216`, and
+batch 30 filed them under the Beaver Wars alone because King William's War was not here.
+Each now carries `parent: ["beaver-wars", "king-william-s-war"]`, which is what A8 asks for
+and what M79 made possible. Nothing else about them changed and no main count moved: they
+were already filed.
+
+### One record was refused, and it is the only one the source misfiles
+
+`Q3062426`, the Hudson Bay expedition of 1686, names **`Q1070342`** and nothing else in its
+own `P361`, and King William's War begins in **April 1688** by that item's own `P580`. So
+the only parent the source offers is a war it also dates two years before that war began,
+and the expedition's own article at revision 1370622978 calls it "the first of several
+expeditions sent from New France against the trading outposts of the Hudson's Bay Company",
+while the Fort Albany article at 1366220638 says the French marched **"in time of peace"**.
+The source, read carefully, says the expedition was *before* the war, not part of it.
+
+**There were three things the run could do and it took the fourth.** Filing it under King
+William's War is what `P361` says and is what the validator, rule 24 and
+`tests/m67.test.mjs` all refuse. Filing it under `american-indian-wars` or `beaver-wars`
+instead would have been the atlas choosing an umbrella no source names, which is a
+historical claim this run may not make. Leaving it unfiled is **one main event**, and A3's
+"has to say why" clause is exactly the one question 11 is about; the last fire spent it once
+and this fire will not spend it again unasked for a single orphan. So the record was
+**refused and not written**, and this paragraph is where the refusal is recorded so that a
+later fire does not import it again without reading this.
+
+Its three edges went with it. The fourth Hudson Bay record, `battle-of-fort-albany-1693`,
+keeps its link: the 1693 article says the fort was "captured by a French expedition in 1686
+and held by them in a battle the next year", and the battle in which the French held it is
+`battle-of-fort-albany`, so the edge runs from that instead. **The two articles disagree
+about that battle's year** — the 1693 one says the year after 1686, the other opens "The
+1688 Battle of Fort Albany" — and the edge's own explanation says so rather than picking.
+
+### Places (A9, as A12 corrects it)
+
+**Fourteen place records were created, four were reused and four events are placeless.**
+Each comes from the first thing the item's own chain names that carries a point — its own
+`P625` where a record already stands at it, then `P276`, then `P131`, then `P17` — with the
+precision read from that item's class, never from a bare coordinate.
+
+| place written | item | precision | from its class |
+| --- | --- | --- | --- |
+| `groton-massachusetts` | `Q3776991` | city | `Q2154459` New England town |
+| `wells-maine` | `Q2446241` | city | `Q2154459` |
+| `york-maine` | `Q2323126` | city | `Q2154459` |
+| `haverhill-massachusetts` | `Q54132` | city | `Q1093829` city in the United States |
+| `dover-new-hampshire` | `Q48215` | city | `Q1093829` |
+| `quebec-city` | `Q2145` | city | `Q27676416` city or town of Quebec |
+| `port-royal-acadia` | `Q3398298` | city | `Q486972` human settlement |
+| `nashwaak-village-new-brunswick` | `Q3336188` | city | `Q486972` |
+| `fort-albany-first-nation` | `Q2695763` | city | `Q3957` town |
+| `maine` | `Q724` | region | `Q35657` U.S. state |
+| `bay-of-fundy` | `Q181857` | region | `Q39594` bay |
+| `hudson-bay` | `Q3040` | region | `Q2578218` inland sea / `Q12734855` epicontinental sea |
+| `isthmus-of-chignecto` | `Q1007898` | region | `Q93267` isthmus |
+| `colonial-pemaquid-state-historic-site` | `Q7161849` | point | `Q839954` / `Q28042933` / `Q1785071` |
+
+**Seven class lines the table lacked were added**, each with its label and Wikidata's own
+gloss read off the class item over the network, which is deviation 1266's rule: `Q2578218`,
+`Q12734855`, `Q35657`, `Q93267`, `Q1093829`, `Q28042933` and `Q1785071`. `Q35657`, the U.S.
+state, is the one that needed a reading: it is `region` and not `country`, because the
+`country` precision is for a state and a constituent entity of one is an administrative
+division larger than a settlement, which is exactly what A9 sends to `region`.
+
+**Four reuses**: `north-america` and `united-states-q30`, both already here, and
+`bay-of-fundy` and `colonial-pemaquid-state-historic-site` twice each within the batch —
+the two naval battles off St. John are eight kilometres and five years apart and the two
+sieges of Pemaquid fell on the same fort.
+
+**`raid-on-oyster-river` is the one place that is coarser than it should be**, and it is
+A9's own order that put it there: its item names no `P276` at all, so the chain fell to
+`P17` and the raid on a village at present-day Durham, New Hampshire stands at the point of
+`united-states-q30`. The rule is the rule and a country is what the item names; a reviewer
+with the article in front of them can do better, and the record says where its place came
+from.
+
+**The four placeless** are placeless because **nothing their items name carries a point this
+atlas can use**: `capture-of-york-factory` names only `Q16`, Canada, which is an actor
+record here and not a place; `battle-of-chedabucto` and `raid-on-salmon-falls` carry a
+coordinate and name no located thing at all, and the atlas does not write a place out of a
+bare coordinate; `avalon-peninsula-campaign` names nothing whatever, not even a country.
+All four carry the `americas` lane, one from the seeds file and three from their own point,
+and `docs/m67-umbrellas.md` argues each of the four, which is what `tests/m67.test.mjs`
+asks of a child that names neither an actor nor a place.
+
+**The lane guard of 24 September refused nothing this time**, and that is worth saying,
+because on this fire's first pass it refused **everything** — see deviation 1311.
+
+### The actors (A12), and `docs/m53-polities.md`
+
+**All twenty-three arrived with `actors: []` and none was given one.** Eight of the
+twenty-four items read carry a `P710` at all; between them they name **twelve** participants, and
+this atlas holds exactly **one** — `Q142`, France — which is a CShapes actor beginning in
+**1886**, against a war of 1688. That is deviation 1293's case for the fourth batch running,
+and the list was partial besides: New France, New England, the Province of Massachusetts
+Bay, the Wabanaki Confederacy, the Abenaki, the Pennacook and the Hudson's Bay Company are
+none of them records here. §4.1's numerator does not move and its denominator moves by
+twenty-three.
+
+### The edges (A5, M72), and the component that did not grow
+
+**Five edges, each quoting a sentence of a cited article at the revision it was read at**,
+and **not one of them runs from a parent to its own child** (A14) — which in this batch is a
+real constraint and not a formality, since every one of the twenty-two actions is King
+William's War's own child and the obvious edge from the war to each of them is exactly what
+A14 forbids until C8 is decided.
+
+| edge | type | the sentence it quotes, and where |
+| --- | --- | --- |
+| `battle-of-port-royal-1690` → `battle-of-quebec-1690` | `enabled` | *"Following the capture of Port Royal in Acadia, during King William's War, the New Englanders hoped to seize Quebec City itself, the capital of New France."* — Quebec, rev 1370586919 |
+| `battle-of-fort-albany` → `battle-of-fort-albany-1693` | `precondition-of` | *"The fort, captured by a French expedition in 1686 and held by them in a battle the next year, was briefly defended by five Frenchmen"* — Fort Albany 1693, rev 1366221219 |
+| `siege-of-pemaquid-1696` → `siege-of-fort-nashwaak` | `reacted-to` | *"The siege was in retaliation for the French and Indian Siege of Pemaquid (1696)"* — Fort Nashwaak, rev 1375235509 |
+| `siege-of-pemaquid-1696` → `raid-on-chignecto-1696` | `reacted-to` | *"The raid was in retaliation for the French and Indian Siege of Pemaquid (1696)"* — Chignecto, rev 1375097023 |
+| `siege-of-pemaquid-1689` → `battle-of-falmouth-1690` | `precondition-of` | *"The fall of Pemaquid was a significant setback to the English. It pushed the frontier back to Casco (Falmouth), Maine."* — Pemaquid 1689, rev 1375095205 |
+
+All five are `probable`: not one of the sentences is footnoted to a work Wikipedia itself
+names, so Wikipedia is the only author and A2's `consensus` door stays shut. Every one
+carries a locator; none has a second author, which is M72's open figure and not this
+batch's to move.
+
+**Two were read and refused, both under A14(4)'s class — chronology with no claim in it.**
+The Chedabucto article says the battle "was part of Sir William Phips and New England's
+military campaign against Acadia" which took "the capital Port Royal, Chedabucto, and
+attacking other villages": that is one campaign's order of business and not one event
+causing another, and `parent` is where being part of a thing belongs. The Groton article
+says the village "had been raided during King Philip's War and temporarily abandoned by
+numerous families" — and `king-philip-s-war` **is** a record this atlas holds, so this was
+the one sentence of the batch that named an existing record outside the vein. It is
+background about the village and makes no claim about the raid of 1694, so it was dropped.
+Taking it would have been the cheapest way to make the component number move and it would
+have been the atlas asserting something the article does not.
+
+**The largest connected component is 665 before and 665 after.** The five edges make three
+islands — the two Fort Albany battles, the three Pemaquid and Acadia records, and Port Royal
+with Quebec — and fifteen of the twenty-three stand alone, so the corpus grew by
+twenty-three and the component count by eighteen. **The reason is the one
+the last fire named and this fire could not remove**: the bridge out of North America is the
+Nine Years' War, it is one main event, and question 11 is unanswered. Batch 30 could say
+there was no bridge at all; this batch can say exactly where it is, what it costs, and that
+the cost is a rule the run will not break on its own.
+
+### Deviations
+
+**1311. The 24 September lane guard has to compare the lane the atlas will derive, not the
+one `laneFor` returns.** `laneFor` answers `{ region: null, how: 'derived from its own
+point' }` for exactly the case a place record wants — a point that falls inside a lane
+polygon — because the record then carries no `region` of its own and the topology derives it.
+A guard written as `lane.region !== event.region` therefore compares `null` against
+`americas` and **refuses every place whose point is good**. This fire's first pass refused
+all fourteen, fell through the A9 chain to `P17`, and placed seven New England raids at the
+point of `united-states-q30`; the records had to be reset by hand and the pass run again.
+The guard is `deriveRegion(point)?.region ?? lane.region`, and a pass that writes it the
+other way does not fail loudly — it silently writes the coarsest place in the chain.
+
+**1312. The import cannot reach a lane through `P276`, only through `P17` and `P131`.**
+Three items of this batch were refused for want of a lane — `Q2935388`, `Q3062426`,
+`Q7283747` — and the third of them, the Raid on Haverhill, names `Q54132` Haverhill in its
+own `P276`, an item with a perfectly good `P625`. `runImportMode` fetches the extra entities
+it needs from `PROPERTIES.country` and `PROPERTIES.administrative` alone, so a `P276` item
+that is not itself in the batch is never fetched and `pointOf` returns nothing for it. The
+three had to be given a lane by hand in the seeds file, and deviation 1309's manual edit of
+`data/imports/wikidata-state.json` → `done` had to be made again to retry them. Fetching the
+`P276` items alongside the countries would have saved all of it, and would have given the
+A9 pass its place at import time as well.
+
+**1313. Four pairs of this batch share a label and are told apart only by their articles.**
+Two *Siege of Pemaquid*, two *Battle of Fort Albany*, two *Naval battle off St. John* — and
+Wikidata's label for `Q2890597` is *Battle of Fundy Bay* while its article is *Naval battle
+off St. John (1696)*, so the two naval battles look like different things on the item and
+like one thing with two dates on the article. `titleFor()` keeping the disambiguator (A12(5))
+is what stopped eight records becoming four id collisions, and `idFor` did the rest. This is
+the first batch where that rule earned its keep four times over; a run that ever reverts it
+will not find out from the validator.
+
+## Where the run stands, for the fire that picks it up
+
+*25 September, after the thirty-first fire and its batch 31.*
+
+| | |
+| --- | --- |
+| corpus | **1,099 active** |
+| **main** | **239** — held where batch 30 left it |
+| **largest connected component** | **665** |
+| components | **298** |
+| events with no edge at all | **225** |
 | Europe before 1900 | **155 active, 17 main** |
-| the `americas` lane | **287 active, 56 main** |
-| south and central America against north, inside that lane | **206 to 47**, with 34 placeless, counted by the place's own latitude at 23°N |
-| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 16th (29, 1)**, the Americas' 18th (33, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 9), the Americas' 17th (41, 7), the Americas' 19th (44, 8), Europe's 18th (48, 3) |
-| the cell this fire moved | **the Americas' 17th, 23 → 41**, and North America from nothing at all to nineteen records |
+| the `americas` lane | **310 active, 56 main** |
+| south and central America against north, inside that lane | **206 to 65**, with 39 placeless, counted by the place's own latitude at 23°N |
+| the thinnest cells left, in this partition | the Americas' 15th (6, 5) and Europe's 15th (4, 2), both against the 1492 wall; then **Europe's 16th (29, 1)**, the Americas' 18th (33, 2), Europe's 17th (36, 2), the Americas' 16th (37, 3), the Americas' 21st (37, 1), Europe's 19th (38, 9), the Americas' 19th (44, 8), Europe's 18th (48, 3), the Americas' 17th (64, 7) |
+| the cell this fire moved | **the Americas' 17th, 41 → 64** |
 
-**This fire merged `origin/m42` and then opened North America**, which had held no event of
-any century before 1739: the American Indian Wars as the umbrella the lane lacked, King
-Philip's War and the Beaver Wars under it, and the sixteen actions their own `P361` files
-under those two. Fifteen places, seven edges, three deviations, and **the first rise in the
-main count in thirty batches** — one, and said at length above.
+**This fire merged `origin/m42` and then finished what batch 30 started.** King William's
+War names the umbrella batch 30 wrote in its own `P361`, so twenty-three records were
+imported and filed at **no cost to the main count at all** — which is what batch 30's one
+rise bought — and five of batch 30's Beaver Wars records gained the second parent A8 owed
+them. Fourteen places, five edges, one refusal, three deviations.
 
-**The next fire has one move that is better than any other, and the source chose it.**
+**The Americas' seventeenth century has gone from 23 to 64 active in two fires** and is no
+longer this partition's thin cell. **Europe's sixteenth, at 29 active and 1 main, is.**
 
-1. **King William's War, `Q1070342`.** It names `Q849680` — the umbrella this fire just
-   wrote — in its own `P361`, so it can be imported and filed **at no cost to the main
-   count at all**, and five of batch 30's Beaver Wars records name it too, so they gain a
-   second parent under A8 the moment it exists. Its own `P361` children are the rest of
-   the North American theatre. This is the cheapest batch available anywhere in the
-   partition.
-2. **The Nine Years' War, `Q152218`, 1688–1697.** King William's War's European parent, a
-   **Europe before 1900** record, and Europe's seventeenth century is at 36 active and 2
-   main. It is one main event and it is the bridge: with it and King William's War the
-   North American vein of batch 30 and the European corpus stand in one component for the
-   first time, which is the number A5 asks a batch to move. If question 11 is answered
-   yes, take it; if it is answered no, take King William's War alone and say the component
-   is still two.
-3. **Europe's sixteenth century is now the thinnest unblocked cell of the partition**, at
-   29 active and 1 main. The Italian and naval halves of the War of the Austrian
-   Succession the last fire listed are still there, nineteen items in two coherent
-   batches, and neither can raise the main count.
-4. **The Pueblo Revolt, `Q1547791`**, is the one seventeenth-century child of
-   `spanish-colonization-of-the-americas` this atlas does not hold, and it is one record
+**The next fire's moves, in order.**
+
+1. **Europe's sixteenth century**, the thinnest unblocked cell of the partition at 29 active
+   and 1 main. It is where the brief's *"the century and lane that trails most"* now points,
+   and it has been passed over by two fires in a row for the Americas' seventeenth, which
+   was thinner when they started and is not any more.
+2. **The Nine Years' War, `Q152218`, 1688–1697 — and question 11 is still what stands in
+   front of it.** It is King William's War's European parent, a **Europe before 1900**
+   record in a century holding 36 active and 2 main, and it is **the only bridge out of
+   North America this corpus has**: with it the twenty-three records of this batch, the
+   nineteen of batch 30 and the European corpus stand in one component for the first time.
+   It is also **one main event**, because nothing here is an umbrella for it. **Two fires
+   have now stopped in front of the same one-line answer**, and each has said the same
+   thing: if a batch may raise the main count by one to write the umbrella or the bridge a
+   lane lacks, this is the move; if it may not, the two lanes of this atlas's map stay
+   unconnected and every future region will hit the same wall on arrival.
+3. **The Pueblo Revolt, `Q1547791`**, still the one seventeenth-century child of
+   `spanish-colonization-of-the-americas` this atlas does not hold, and still one record
    that costs no main.
+4. **Deviation 1310 is four fires old and belongs in the tool.** Every fire since batch 28
+   has hand-written the same three passes — the summary from the cached lead, the A9 place
+   chain, the `P361` filing — because `tools/import/wikidata.mjs` caches the lead and writes
+   the placeholder anyway, and writes no `parent` at all. Deviations 1311 and 1312 of this
+   fire are both faults in a pass a fire had to write again from scratch. A fire with room
+   for it should put the three in `runImportMode`, with tests, and every batch after it gets
+   them right for free.
 
-**The check, on this fire's heads.** Run **1796**, on the claim commit `9be98c8a`, was
-**cancelled** by the merge push. Run **1797**, on the merge head `2e0841a0`, concluded
-**failure**, and the failure was **deviation 1308 and nothing else** — rule 16 on six
-history shards, with 295 of 295 browser tests passing in the same job. Runs **1799**,
-**1800** and **1801** were each cancelled by the next push in turn, which is deviation
-1258's chain. Run **1802**, on `0562327d`, the head of this fire's records and index, concluded **success**, and run **1803**, on `10687472`, this note itself, concluded **success** too. Locally the fire
-finished at **2,114 tests passing with nothing failed and nothing skipped** — 1,819 pure and
-295 browser, the browser set run alone — and `node tools/validate.mjs --index` **clean at 0
-errors and 543 warnings** on the pushed index. **The next fire should read this head's run
-before it does anything else**, and if it is red, read the failure: the check has been
-honest since M63 and it is not load.
+**The check, on this fire's heads.** Recorded below when the run that carries them reports.

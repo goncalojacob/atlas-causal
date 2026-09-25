@@ -11,6 +11,15 @@
         }
       ]
     },
+    "battle-of-fort-albany--battle-of-fort-albany-1693--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of": {
       "from": "git",
       "versions": [
@@ -210,33 +219,6 @@
         {
           "first": true,
           "on": "2026-09-23"
-        }
-      ]
-    },
-    "hudson-bay-expedition-1686--battle-of-fort-albany--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "hudson-bay-expedition-1686--battle-of-fort-albany-1693--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "hudson-bay-expedition-1686--capture-of-york-factory--precondition-of": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
         }
       ]
     },
