@@ -11202,3 +11202,219 @@ chain crosses out of it.
   above are exactly what that pass is for.
 - **Deviation numbers: take the next above 1449.** This fire wrote **1449**,
   continuing from batch 56's 1448.
+
+## Batch 58 — the Congo Crisis from the dismissal to the coup, and deviation 1449 used on purpose
+
+*25 September, the same fire that wrote batch 57, continuing under STEP 3's
+"each imported, connected, filed, placed, validated, rebuilt and pushed before
+the next". Batch 57 put **Asia at 174** against Africa's 170, so A10's order of
+need turned back within the hour and this batch is four **Africa** rows and no
+other lane.*
+
+### The vein, chosen by the rule the last batch wrote
+
+Batch 57's **deviation 1449** says a vein is chosen by how many of the records it
+already holds are inside the largest connected component. This is the first batch
+chosen that way from the start. `Q1773926`, the Congo Crisis, answers **12 rows**
+with an English article under the inverse `part of` vein and the atlas held
+**two** of them — the crisis itself and **`simba-rebellion`**, which is inside the
+669. Ten are free and **all ten are dated**, which is a completeness no vein this
+run has read has matched.
+
+The crisis itself is a parent and C8 bars it, so it is worth nothing as a host.
+`simba-rebellion` is the whole reason the vein was taken: it is a **sibling** of
+every free row, it is inside the largest component, and its own article names
+three of the four rows this batch imports. **All four arrivals reach it**, two
+by an edge that ends on it and one by an edge that begins on it.
+
+Read through the query service and `Special:EntityData`, with the leads from
+`api/rest_v1/page/summary/`; deviation 1448's route again, no rate limit met.
+A11 (b)'s partition check was made against `origin/m42b`'s `data/events/` ids:
+`simba-rebellion` is there, which is `m42`'s own landed record seen from the
+other branch, and none of the four arrivals is.
+
+In date order:
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `dissolution-of-the-lumumba-government` | 2 | 5 Sep – 1 Dec 1960 | `republic-of-the-congo-leopoldville` (held) | `congo-crisis` |
+| `assassination-of-patrice-lumumba` | 6 | 17 Jan 1961 | `lubumbashi` (new) | `congo-crisis` |
+| `kwilu-rebellion` | 7 | Aug 1963 – 1965 | `democratic-republic-of-the-congo` (held) | `congo-crisis` |
+| `second-mobutu-coup-detat` | 4 | 25 Nov 1965 | `democratic-republic-of-the-congo` (held) | `congo-crisis` |
+
+All four pass the three tests — **depth**, every one carrying `P361` `Q1773926`;
+**span**, every one inside the crisis's 1960 to 1965; and **lane**, every one
+deriving Africa from its own point. All four filed from `P361`, so **main stays
+at 238**, unmoved now through twenty-nine batches, four curation fires and A14.
+
+**One class was added**, which this run does rarely and says so when it does.
+`Q3882219`, **assassination**, is the only class `Q2529018` carries and the table
+did not know it. It is entered `{"kind":"event","category":"death"}` with the
+item's own gloss read over the network, *"murder of a prominent person"*, and the
+reason for the category written beside it: Wikidata makes assassination a
+subclass of `Q4676786`, deliberate murder, which this table has carried at
+`death` since M20, as it carries `Q1139665` political murder. No place class was
+added: `Q1549591`, big city, covers Lubumbashi.
+
+**One interval was widened under A7 and one date was read off the article.**
+`Q60775580` and `Q125549056` state exactly what their articles state.
+`Q85775188`, the Kwilu rebellion, carries a `P585` of **August 1963 alone** — a
+month read as a point in time, so the import would have closed the rising in the
+year it began — and its article at revision 1370626353 heads itself
+"(1963–1965)" and has the rising "largely suppressed in the early months of
+1965", so the **end** is widened to 1965. `Q2529018` is the other way about and
+is not an A7 case at all: its `P585` gives **January 1961** with month precision
+and the cited article's first sentence gives the day, *"assassinated on
+January 17, 1961"*, so the record carries `1961-01-17` under the
+**`date-from-article`** flag `arauco-war` already uses. Reading a date off the
+source the record cites is not supplying one, and the month the item gives
+contains it.
+
+### The five edges, and the word the article uses
+
+Five edges, all `probable`, every one quoted from an article at the revision in
+its own locator; the full table with the sentences is in
+`docs/m42-connections.md` under "Batch 58".
+
+| from | type | to |
+| --- | --- | --- |
+| `dissolution-of-the-lumumba-government` | enabled | `assassination-of-patrice-lumumba` |
+| `assassination-of-patrice-lumumba` | precondition-of | `kwilu-rebellion` |
+| `assassination-of-patrice-lumumba` | precondition-of | `simba-rebellion` |
+| `kwilu-rebellion` | caused | `simba-rebellion` |
+| `simba-rebellion` | precondition-of | `second-mobutu-coup-detat` |
+
+**The largest connected component moves, 669 to 673**, and this time every one of
+the four arrivals is in it. Three of the five edges have a record the atlas
+already held at one end, which is what the vein was chosen for.
+
+**One edge is `caused`, and it is the first `caused` this run has written on an
+imported edge in many batches.** The Kwilu article says, of the risings of
+January and February 1964, that "it sparked similar uprisings throughout the
+country, **triggering** the Simba rebellion". A run that refuses "following" and
+"in the aftermath" as chronology — which is A14 (4)'s class and which this fire
+applied again in batch 57 — has to accept "triggering" when an article writes it
+of a named event in its own voice. **The refusal class and this edge are the same
+rule read in both directions.**
+
+**The component count and the edgeless count are both unchanged**, at 251 and
+189, and so is the validator at **0 errors, 491 warnings**: four records arrived,
+all four connected, and nothing that was stranded before is stranded now that
+was not.
+
+### A9's places, and the one that is a city under two names
+
+**One place record is new and three were already here.** `lubumbashi` is A9's
+**second step** (`P276` `Q187593`), taken because `Q2529018` carries no `P625`;
+`precision: city` from `Q1549591`. It carries **both names** — "Lubumbashi" and
+"Élisabethville" — because the article puts the killing "in Katanga, near
+Elizabethville" and that is this city under the name it had in 1961, which is
+what `src/map/names.js` reads a place's name list for. It carries `summary: null`
+and the `a9-place` flag, as A14 (6) left every imported place.
+
+**The other three take A9's fourth step and reach a held record**:
+`dissolution-of-the-lumumba-government` has only a `P17` and takes
+`republic-of-the-congo-leopoldville`, which is `congo-crisis`'s own place;
+`kwilu-rebellion` takes `democratic-republic-of-the-congo` from a `P276` that is
+the country itself, and `second-mobutu-coup-detat` the same record from its
+`P17`. **Three of four placed without writing a record** is the country precision
+M80 added doing exactly what it was for.
+
+### The actors, and the four items that name none
+
+**Not one of the four items carries a `P710` at all**, so all four arrive with
+`actors: []` and A12 (4)'s pass had nothing to map — the answer batches 50, 52
+and 56 also got. The articles name Kasa-Vubu, Mobutu, Tshombe, Mulele and
+Gbenye throughout and **none of them goes on a record**, because A12 (4) maps
+participants an *item* names and this run writes no historical claim of its own.
+Of those five, this atlas holds none as an actor either. `docs/m53-polities.md`
+§4.1 is re-taken with the batch: **401 of 1,042** by the start rule, 402 by
+overlap.
+
+### What was refused
+
+- **Three edges**, listed in `docs/m42-connections.md`. The one worth naming is
+  `assassination-of-patrice-lumumba` → `second-mobutu-coup-detat`: the coup
+  article says Tshombe "was suspected by many to be complicit in Lumumba's
+  assassination, thus tarnishing his public image", which is a reported suspicion
+  about a man's standing and not a statement that the killing conditioned the
+  coup.
+- **Six free rows of the vein were read and left**, every one of them dated:
+  `Q96382787` the Invasion of South Kasai, `Q7031651` the Niemba Ambush,
+  `Q29469872` Operation Rum Punch, `Q3718434` the Kindu atrocity, `Q28133839`
+  Operation Grandslam and `Q60769870` the Kanyarwandan War. Every one belongs to
+  the **Katanga and ONUC** half of the crisis, which this atlas holds no record
+  of at all: their articles argue edges to the Katangan secession and to the UN
+  operation, and neither is here. They are the next Congo batch and they want
+  `Q188611` — the State of Katanga, or the secession — imported first, which is a
+  polity and an event respectively and a question about which.
+- **`Q1773926` → each of the four** is containment and is the filing they carry.
+
+## Where the run stands after batch 58, for the fire that picks it up
+
+*25 September, the second batch of the fire that claimed at 09:23Z. Two import
+batches in one fire: batch 57 (Asia, five records) and batch 58 (Africa, four).
+No code changed; one class was added to `data/imports/wikidata-seeds.json`, which
+is data.*
+
+| | |
+| --- | --- |
+| corpus | **1,042 active** (+9 over the fire, +4 on this batch) |
+| **main** | **238**, unmoved through twenty-nine batches and four curation fires |
+| filed | 804 (+9) |
+| active edges | **967** (+10 over the fire, +5 on this batch) |
+| largest connected component | **673** (+8 over the fire) — the largest single-fire move this run has made |
+| second component | **13**, the Korean War's earlier battles, unmoved |
+| components | **251** (unchanged over the fire) |
+| events with no edge at all | **189** (−1 over the fire) |
+| validator | **0 errors, 491 warnings** (−1 over the fire) |
+| per lane, active | Europe 426, **Asia 174**, **Africa 174**, Americas 268 |
+| per lane, main | Europe 88, Asia 64, Americas 55, Africa 31 |
+
+**A10's order of need is a tie**: Asia and Africa both stand at 174. Either lane
+is the next batch's, and deviation 1449 says to choose between them by the vein
+rather than by the lane — the vein whose held records sit inside the 673.
+
+**What is open, in the order a fire should weigh it:**
+
+- **Deviation 1449 works and this fire is two measurements of it.** Batch 57 took
+  a vein with five held records inside the largest component and moved it by
+  four; batch 58 took one with a single held sibling and moved it by four again.
+  The three Korean batches that chose by free-row count moved it by nothing.
+  **A fire should measure a vein's held records against the largest component
+  before it reads a single article.**
+- **The Congo vein's other half wants a decision**: six dated free rows turn on
+  the Katangan secession and on ONUC, and the atlas holds neither. Whether the
+  State of Katanga is an actor with a presence or the secession is an event is a
+  question a person should answer, and until it is answered those six are the
+  walled-garden case again.
+- **The Vietnam vein is barely touched**: 286 free rows, 271 dated, five held
+  records inside the largest component. Batch 57's stand lists the rows to take.
+- **Six held Vietnam records are singletons whose articles argue edges nobody has
+  written** — `battle-of-hue`, `battle-of-long-tan`, `battle-of-ap-bac`,
+  `1963-south-vietnamese-coup`, `battle-of-hamburger-hill`, and
+  `battle-of-ia-drang` with `gulf-of-tonkin-incident`. Batch 57's fifth edge
+  showed what that is worth and **a fire can write them without importing
+  anything**. This is the first thing the next curation fire's A13 pass should do.
+- **C8 is still the largest thing standing between this atlas and the chains the
+  owner asked for.** Batch 57's two Quảng Trị battles are a walled 2-node
+  component for no reason but the rule; batch 53's thirteen-record Korean War is
+  still outside the 673; one edge `korean-war` → `first-battle-of-seoul` would
+  join eighteen.
+- **`reacted-to` reads backwards on the card, on all 54 of them** (deviation
+  1443). One word, a display change, and every reader of one of those cards is
+  told the reverse of what the record says.
+- **Two records' own lanes are wrong**: `execution-of-the-romanov-family` (the
+  owner's question, deviation 1423) and `ilinden-preobrazhenie-uprising`, which is
+  simply wrong and a fire could fix by clearing the record's `region`.
+- **`declaration-by-united-nations`'s cache has drifted from its citation** and
+  wants a re-cache under A14 (3)'s pass. **`chinese-spring-offensive`'s two
+  children**, **`fifth-battle-of-gao`**, and
+  **`the-persecution-of-the-jews-1933-1941` with `porajmos`** are all still as
+  batch 56's stand left them. **Two of the fifteen tombstones still want an A6
+  umbrella and not an edge**: `1948-palestine-war` and `balkan-wars`. **The
+  fourteen placeholder summaries are not a fire's to fix.**
+- **The next curation fire is the first fire after 02:00Z on 26 September**, and
+  it owns A13's relations pass over every active event.
+- **Deviation numbers: take the next above 1449.** This fire wrote **1449** and
+  no other, across two batches.
