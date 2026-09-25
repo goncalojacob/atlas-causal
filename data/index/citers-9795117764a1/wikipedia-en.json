@@ -2300,6 +2300,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-millarapue--battle-of-quiapo--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Caupolicán and García Hurtado de Mendoza"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mogadishu-1993--war-in-somalia--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Legacy"
@@ -2420,6 +2426,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-penco--battle-of-tucapel--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arauco War\", revision 1376467209, § First Great Mapuche Rebellion (1553)"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-peteroa--battle-of-mataquito--enabled",
       "kind": "edge",
       "locator": "\"Battle of Mataquito\", revision 1376467018, Overview"
@@ -2480,6 +2492,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-quiapo--battle-of-angol--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Pedro de Villagra"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-quilacura--battle-of-andalien--precondition-of",
+      "kind": "edge",
+      "locator": "\"Arauco War\", revision 1376467209, § Campaigns of Pedro de Valdivia (1540–1553)"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rain--battle-of-the-alte-veste--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Alte Veste\", revision 1370277557, § Background"
@@ -2513,6 +2537,18 @@
       "id": "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ravenna (1512)\", revision 1370587274"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-reynoguelen-1536--arauco-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Reynogüelén (1536)\", revision 1370587425"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of",
+      "kind": "edge",
+      "locator": "\"Mapuche uprising of 1655\", revision 1370627596, § Spanish slave hunting"
     },
     {
       "dissent": false,
@@ -6110,6 +6146,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of",
+      "kind": "edge",
+      "locator": "\"Spanish conquest of El Salvador\", revision 1370748295, § lead"
+    },
+    {
+      "dissent": false,
       "id": "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Fuenterrabía (1523–1524)\", revision 1370741324"
@@ -9380,6 +9422,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mabila",
+      "kind": "event",
+      "locator": "\"Mabila\", revision 1371281324"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "locator": "\"Battle of Magersfontein\", revision 1370268748"
@@ -9683,6 +9731,24 @@
       "id": "battle-of-ravine-a-couleuvres",
       "kind": "event",
       "locator": "\"Battle of Ravine-à-Couleuvres\", revision 1370587281"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-reynoguelen-1536",
+      "kind": "event",
+      "locator": "\"Battle of Reynogüelén (1536)\", revision 1370587425"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rio-bueno-1654",
+      "kind": "event",
+      "locator": "\"Battle of Río Bueno (1654)\", revision 1370587883"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rio-bueno-1759",
+      "kind": "event",
+      "locator": "\"Battle of Río Bueno (1759)\", revision 1370587848"
     },
     {
       "dissent": false,
@@ -9995,6 +10061,12 @@
       "id": "battle-of-unsan",
       "kind": "event",
       "locator": "\"Battle of Unsan\", revision 1370276047"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vega-real",
+      "kind": "event",
+      "locator": "\"Battle of Vega Real\", revision 1370592275"
     },
     {
       "dissent": false,
@@ -11828,6 +11900,12 @@
     },
     {
       "dissent": false,
+      "id": "mapuche-uprising-of-1655",
+      "kind": "event",
+      "locator": "\"Mapuche uprising of 1655\", revision 1370627596"
+    },
+    {
+      "dissent": false,
       "id": "march-on-rome",
       "kind": "event",
       "locator": "\"March on Rome\", revision 1376212246"
@@ -12401,6 +12479,12 @@
       "id": "profit-remittance-law-1962",
       "kind": "event",
       "locator": "\"João Goulart\", revision 1366723860"
+    },
+    {
+      "dissent": false,
+      "id": "pueblo-revolt",
+      "kind": "event",
+      "locator": "\"Pueblo Revolt\", revision 1373524502"
     },
     {
       "dissent": false,
@@ -13238,6 +13322,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-assault-on-french-florida",
+      "kind": "event",
+      "locator": "\"Spanish assault on French Florida\", revision 1374311563"
+    },
+    {
+      "dissent": false,
       "id": "spanish-attempts-to-reconquer-mexico",
       "kind": "event",
       "locator": "\"Spanish attempts to reconquer Mexico\", revision 1370748284"
@@ -13250,9 +13340,21 @@
     },
     {
       "dissent": false,
+      "id": "spanish-colonization-attempt-of-the-strait-of-magellan",
+      "kind": "event",
+      "locator": "\"Spanish colonization attempt of the Strait of Magellan\", revision 1337740019"
+    },
+    {
+      "dissent": false,
       "id": "spanish-colonization-of-the-americas",
       "kind": "event",
       "locator": "\"Spanish colonization of the Americas\", revision 1376245871"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-el-salvador",
+      "kind": "event",
+      "locator": "\"Spanish conquest of El Salvador\", revision 1370748295"
     },
     {
       "dissent": false,

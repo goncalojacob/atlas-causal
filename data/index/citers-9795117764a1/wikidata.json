@@ -3254,6 +3254,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mabila",
+      "kind": "event",
+      "locator": "Q6721586"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "locator": "Q1388058"
@@ -3560,6 +3566,24 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-reynoguelen-1536",
+      "kind": "event",
+      "locator": "Q1616739"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rio-bueno-1654",
+      "kind": "event",
+      "locator": "Q85745908"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rio-bueno-1759",
+      "kind": "event",
+      "locator": "Q104849178"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rocoux",
       "kind": "event",
       "locator": "Q32493"
@@ -3863,6 +3887,12 @@
       "id": "battle-of-unsan",
       "kind": "event",
       "locator": "Q486531"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vega-real",
+      "kind": "event",
+      "locator": "Q5723209"
     },
     {
       "dissent": false,
@@ -5564,6 +5594,12 @@
     },
     {
       "dissent": false,
+      "id": "mapuche-uprising-of-1655",
+      "kind": "event",
+      "locator": "Q85783755"
+    },
+    {
+      "dissent": false,
       "id": "march-on-rome",
       "kind": "event",
       "locator": "Q468823"
@@ -6095,6 +6131,12 @@
       "id": "prelude-to-the-russian-invasion-of-ukraine",
       "kind": "event",
       "locator": "Q110254389"
+    },
+    {
+      "dissent": false,
+      "id": "pueblo-revolt",
+      "kind": "event",
+      "locator": "Q1547791"
     },
     {
       "dissent": false,
@@ -6890,6 +6932,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-assault-on-french-florida",
+      "kind": "event",
+      "locator": "Q16837786"
+    },
+    {
+      "dissent": false,
       "id": "spanish-attempts-to-reconquer-mexico",
       "kind": "event",
       "locator": "Q7573442"
@@ -6902,9 +6950,21 @@
     },
     {
       "dissent": false,
+      "id": "spanish-colonization-attempt-of-the-strait-of-magellan",
+      "kind": "event",
+      "locator": "Q110612748"
+    },
+    {
+      "dissent": false,
       "id": "spanish-colonization-of-the-americas",
       "kind": "event",
       "locator": "Q1047607"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-el-salvador",
+      "kind": "event",
+      "locator": "Q5783527"
     },
     {
       "dissent": false,

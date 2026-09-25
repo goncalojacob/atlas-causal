@@ -74,6 +74,15 @@
         }
       ]
     },
+    "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-the-alte-veste--battle-of-lutzen-1632--enabled": {
       "from": "git",
       "versions": [

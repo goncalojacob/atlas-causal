@@ -314,6 +314,15 @@
         }
       ]
     },
+    "battle-of-rio-bueno-1654": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-sorel": {
       "from": "git",
       "versions": [
@@ -641,6 +650,15 @@
         }
       ]
     },
+    "mapuche-uprising-of-1655": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "mohawk-valley-raid": {
       "from": "git",
       "versions": [
@@ -707,6 +725,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "pueblo-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

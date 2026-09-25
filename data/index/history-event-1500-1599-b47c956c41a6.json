@@ -202,6 +202,15 @@
         }
       ]
     },
+    "battle-of-mabila": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-maraycalla": {
       "from": "git",
       "versions": [
@@ -397,6 +406,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-reynoguelen-1536": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -878,6 +896,33 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "spanish-assault-on-french-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-colonization-attempt-of-the-strait-of-magellan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-conquest-of-el-salvador": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

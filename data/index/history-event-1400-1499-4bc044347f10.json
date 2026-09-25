@@ -2,6 +2,15 @@
   "from": 1400,
   "kind": "event",
   "records": {
+    "battle-of-vega-real": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "indigenous-depopulation-of-the-greater-antilles": {
       "from": "git",
       "versions": [
@@ -18,6 +27,15 @@
         {
           "fields": [
             "actors"
+          ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "review",
+            "sitelinks",
+            "wikidata",
+            "wikipedia"
           ],
           "on": "2026-09-17"
         }

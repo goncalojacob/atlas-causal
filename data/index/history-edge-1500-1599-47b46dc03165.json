@@ -74,6 +74,15 @@
         }
       ]
     },
+    "battle-of-millarapue--battle-of-quiapo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-novara-1513--battle-of-la-motta-1513--precondition-of": {
       "from": "git",
       "versions": [
@@ -125,6 +134,15 @@
         }
       ]
     },
+    "battle-of-penco--battle-of-tucapel--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-peteroa--battle-of-mataquito--enabled": {
       "from": "git",
       "versions": [
@@ -167,6 +185,24 @@
         }
       ]
     },
+    "battle-of-quiapo--battle-of-angol--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-quilacura--battle-of-andalien--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of": {
       "from": "git",
       "versions": [
@@ -179,6 +215,15 @@
             "sources"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-reynoguelen-1536--arauco-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },
@@ -374,6 +419,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         }
       ]
     },

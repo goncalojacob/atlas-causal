@@ -1063,6 +1063,15 @@
         }
       ]
     },
+    "bueno-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
     "bulgaria-q219": {
       "from": "git",
       "versions": [
@@ -3736,6 +3745,15 @@
       ]
     },
     "la-prairie-quebec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "la-vega-dominican-republic": {
       "from": "git",
       "versions": [
         {

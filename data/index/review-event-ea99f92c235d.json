@@ -4856,6 +4856,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "arauco-war",
       "kind": "event",
       "origin": {
@@ -6020,7 +6021,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-andalien",
       "kind": "event",
       "origin": {
@@ -6051,6 +6052,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "battle-of-angol",
       "kind": "event",
       "origin": {
@@ -9179,6 +9181,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-mabila",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "title-from-item"
+        ],
+        "note": "The English article this record cites is \"Mabila\", the fortress town; the event is the battle fought there on 18 October 1540, which is what Wikidata Q6721586 is classed and dated as and what its own English label calls it. The title is that label; the article stays the citation.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mabila"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -9413,7 +9448,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-millarapue",
       "kind": "event",
       "origin": {
@@ -10184,7 +10219,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-penco",
       "kind": "event",
       "origin": {
@@ -10634,6 +10669,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 2,
       "id": "battle-of-quiapo",
       "kind": "event",
       "origin": {
@@ -10664,6 +10700,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "battle-of-quilacura",
       "kind": "event",
       "origin": {
@@ -10838,6 +10875,104 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ravine-à-Couleuvres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-reynoguelen-1536",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "note": "Wikidata Q1616739 gives P361 \"Arauco War\", and the cached English lead at revision 1370587425 says instead that the battle \"is an antecedent of the Arauco War\" — which this atlas dates 1546-1662, ten years later. So the P361 filing was refused and the umbrella written here is the one that fits by span and subject: Spanish conquistadors against the Mapuche in Chile in 1536 is inside the Spanish colonization of the Americas, 1493-1898.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Reynogüelén (1536)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "battle-of-rio-bueno-1654",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arauco-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Río Bueno (1654)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-rio-bueno-1759",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "note": "Wikidata Q104849178 gives P361 \"Arauco War\", which this atlas dates 1546-1662; the battle is 1759, a century after it ends. The P361 filing was refused and the umbrella written here is the one that fits by span and subject: the cached English lead at revision 1370587848 has Spanish colonial forces and the Spanish authorities in Valdivia, which is inside the Spanish colonization of the Americas, 1493-1898.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Río Bueno (1759)"
     },
     {
       "authors": [
@@ -12419,7 +12554,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-tucapel",
       "kind": "event",
       "origin": {
@@ -12565,6 +12700,44 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Unsan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "battle-of-vega-real",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "spanish-colonization-of-the-americas",
+        "indigenous-depopulation-of-the-greater-antilles"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "date-from-article",
+          "second-parent-a8"
+        ],
+        "note": "Wikidata P585 gives 1495-03-27 and the English article this record cites says 24 March 1495, in its first sentence and again under \"Hispaniola\" (revision 1370592275); the day is the article's. Second umbrella under A8: the article on the destruction of the Taino describes this day and quotes Ferdinand Columbus on the tribute it settled (\"Taino genocide\", revision 1370273790), so the battle is an episode of that record by span and subject. An edge was drafted first and rule 4 refused it, rightly.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vega Real"
     },
     {
       "authors": [
@@ -21369,8 +21542,10 @@
       },
       "review": {
         "flags": [
-          "m50-chain"
+          "m50-chain",
+          "wikidata-assigned-by-assistant"
         ],
+        "note": "Wikidata Q122950203, \"Taíno genocide\", is this record: the import of 25 September wrote a second record for it because this one carried no item and nothing could match them. The duplicate was dropped and the identity fields written here, additively — no source, no author and no text of this record changed. The English article at revision 1370273790 is the one the dropped record quoted.",
         "status": "draft"
       },
       "revised": "2026-09-17",
@@ -24038,6 +24213,37 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Mali War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "mapuche-uprising-of-1655",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arauco-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mapuche uprising of 1655"
     },
     {
       "authors": [
@@ -27704,6 +27910,37 @@
       "revised": null,
       "status": "active",
       "title": "The profit remittance law, 1962"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-25",
+      "id": "pueblo-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pueblo Revolt"
     },
     {
       "authors": [
@@ -32573,6 +32810,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "spanish-assault-on-french-florida",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish assault on French Florida"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "spanish-attempts-to-reconquer-mexico",
@@ -32643,6 +32911,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "id": "spanish-colonization-attempt-of-the-strait-of-magellan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish colonization attempt of the Strait of Magellan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 4,
       "id": "spanish-colonization-of-the-americas",
@@ -32673,7 +32971,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-25",
+      "degree": 1,
+      "id": "spanish-conquest-of-el-salvador",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Spanish conquest of El Salvador"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "origin": {
@@ -37904,12 +38235,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "arauco-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "argentine-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -37968,12 +38293,6 @@
       "kind": "event",
       "message": "the title states 1956–1957 and the record is dated 1957",
       "rule": "span-vs-article-title"
-    },
-    {
-      "id": "battle-of-angol",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "battle-of-ap-bac",
@@ -38264,6 +38583,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mabila",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -38306,18 +38631,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-quiapo",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-quilacura",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-rancagua",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -38325,6 +38638,12 @@
     },
     {
       "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-rio-bueno-1759",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -38421,6 +38740,12 @@
     },
     {
       "id": "battle-of-two-sisters",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-vega-real",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -38978,6 +39303,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "pueblo-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-on-dover",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -39200,7 +39531,13 @@
       "rule": "degree-zero"
     },
     {
-      "id": "spanish-conquest-of-guatemala",
+      "id": "spanish-assault-on-french-florida",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "spanish-colonization-attempt-of-the-strait-of-magellan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
