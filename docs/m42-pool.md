@@ -14685,3 +14685,152 @@ in its 1600 snapshot and the item ends the empire by 1572. A15(1), (5), (9),
 - **Deviation numbers: take the next above 1463.** This fire wrote **1462** (the
   two-thirds rule that A15(7)'s literal "first located" made necessary) and
   **1463** (`fillTitles` pointed at Wikidata's API rather than Wikipedia's).
+
+## Batch 65 — Sétif, the Nigerian coup, and the tombstone the coup took off the list
+
+*29 September, the fire that claimed at 09:07Z. Today's `## Curation 2026-09-29`
+section was already in this file and all thirteen of A15's passes have theirs, so
+this fire went straight to A10's order of need, which the last stand named as
+**Africa** at 181 against Asia's 182. Two **Africa** rows and no other lane.
+A11(b)'s partition check was made before the import: neither item, and neither of
+the two places, is on `origin/m42b`.*
+
+### The two records
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `setif-and-guelma-massacre` | 26 | 1945, to June | `kherrata` (written) | `world-war-ii` |
+| `1966-nigerian-coup-d-etat` | 12 | 15–16 Jan 1966 | `nigeria-q1033` (written) | `decolonisation-of-africa` |
+
+**The massacre's filing is the item's own `P361` chain and not A6's subject.**
+`Q593024` is part of `Q124805732`, *"Algeria in World War II"*, whose own `P361`
+is `Q362` — the record this atlas holds. The intermediate was **not** imported:
+it carries five sitelinks and would be a third umbrella standing over records
+already filed, which batch 64 named a trap. The span is inside `world-war-ii`'s
+own, so rule 24 is satisfied at both ends.
+
+**A7 widened the end and nothing else.** The item dates the massacre `P580` 1945
+(year precision) and `P582` 12 May 1945; the cached lead at revision 1373304371
+says *"in May and June 1945"*, so the end is **June 1945** and the `date` flag is
+not carried. The article states no start **day** and none was supplied — the
+parenthesis *"the massacres of 8 May 1945"* is in the article but not in the
+cached lead, and A15(2) keeps the evidence on disk, so the day waits for the
+revision a later fire caches in full.
+
+**A9 refused the massacre's own point and took the third step.** `Q593024`'s own
+`P625` is (2, 28) at **one degree** — Algeria's centroid — and writing a place
+from it would name a place after a massacre; `P276` is empty; `P131` names
+`Q2215859`, **Kherrata**, one of the three towns the massacres are named for,
+with a point to five decimals and the class `Q2989398` the table already reads as
+a `city`. `P17` is `Q142`, France, and was never reached.
+
+**The coup took A9's second step and A15(6)'s gate let it.** `Q16205928`'s own
+`P625` is (8, 9), which is Nigeria's centroid rather than a location of its own;
+`P276` is `Q1033`, Nigeria, whose inception (1960) is before the coup, which is
+one country, and whose point is the chain's own. It is written at `country`
+precision, as `algeria-q262` and `portugal-q45` already are. Its category, `revolution`,
+is `Q45382`'s own row in the class table and was not chosen here.
+
+### The two edges, and the one that undid a tombstone
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `setif-and-guelma-massacre` | precondition-of | `algerian-war` | probable |
+| `1966-nigerian-coup-d-etat` | caused | `nigerian-civil-war` | probable |
+
+Both quotes were put through `verdictFor()` from `tools/import/chronology.mjs` at
+the point of writing, as A15(5) requires, and both came back `write: true`:
+neither opens on the order of events and neither names a third held event as the
+cause. **The batch refused no edge under the chronology class**, which is worth
+saying plainly after A14(4) dropped eleven: this batch's two candidates were the
+only two sentences in fourteen articles that stated a cause *and* named a record
+this atlas holds.
+
+**`nigerian-civil-war` was a tombstone and is not one now.** It was retracted on
+24 September under A14(6) for the honest reason that the Portuguese edge its
+article suggests — the airlift through São Tomé — is not stated anywhere as
+caused by anything the atlas holds. That edge is still unwritten. The one written
+instead comes out of the war's own lead at revision 1374012434: *"Immediate causes
+of the war in 1966 included a military coup, a counter-coup, and anti-Igbo
+pogroms in the Northern Region."* The first of the three is now a record here, so
+the war carries an honest edge to something already in the atlas, which is the
+whole of the bar §1 sets. The reason is copied verbatim into
+`docs/m44-retractions.md` under "Reinstated", the `retraction` block is deleted
+(rule 27), `review.status: draft` is written where the M44b-era block had none,
+the summary is requoted from the cached lead at the revision the edge cites, and
+A9 and A12(4) gave it Nigeria as a place and Nigeria as its one held `P710`
+participant. **The counter-coup of July 1966 and the anti-Igbo pogroms are not
+records here and no edge was written for either.**
+
+### A15(11): one edge of the two crosses an umbrella
+
+`setif-and-guelma-massacre --precondition-of--> algerian-war` runs from a child of
+`world-war-ii` to a child of `decolonisation-of-africa`, which have no parent in
+common. The coup and the war are **both** under `decolonisation-of-africa`, so
+that edge is inside one umbrella — and it is inside one *because* the filing pass
+put the war there, which is the trade this batch made on purpose: a main count
+that falls is worth more than a crossing number that rises.
+
+### A5: the corpus grew by three and the component by one
+
+The massacre joins `algerian-war`, which is in the largest component, so that
+component goes **711 → 712**. The coup and the war are a **two-node island**, and
+the reason is the same one that had the war retracted: no cached lead in the atlas
+names the Nigerian Civil War except `decolonisation-of-africa`'s, which names
+Biafra in a list. The war's own article names `congo-crisis` (France's Katanga
+policy and the mercenaries it trained), `six-day-war` (a week later, and about oil
+freight), `vietnam-war` (televised war, and an obstacle to American policy) and
+`world-war-ii`; **not one of them is a claim that anything brought the war about**,
+and none was written. The island joins the world the day something states why
+Lisbon, or Paris, or Moscow, did what it did in Biafra.
+
+### The twelve candidates this batch read and left
+
+| item | why it is not here |
+| --- | --- |
+| `Q1637896` 1983–1985 famine in Ethiopia | its only class, `Q168247`, is in no row of the seeds file; a class nobody has decided about is refused, not guessed |
+| `Q1347798` Abyssinia Crisis | the item carries no date at all, and its own title states none |
+| `Q7321053` Rhodesia's UDI, `Q1801770` Lancaster House Agreement | classes `Q3884316`, `Q208383`, `Q93288` are in no row either |
+| `Q476855` Mau Mau rebellion | 41 sitelinks and a clean `P361` to `decolonisation-of-africa`, but its article's only held-event mentions are squatters before and after the world wars; the edge its filing would give is a parent's, which C8 forbids |
+| `Q1993848` South African Border War | ten held events named and no causal sentence among them: *"closely intertwined with the Angolan Civil War"* is not a claim, and the Carnation Revolution sentence is dated 1974 against a war that opens in 1966, which rule 4 refuses |
+| `Q386051` Battle of Cuito Cuanavale | its one causal sentence naming a held event is a Cuban general's service record in the Ogaden War |
+| `Q142529` Algerian Civil War | the Algerian War appears as the FLN's source of legitimacy and the Gulf War as what the FIS demonstrated about; neither states a cause of the war |
+| `Q31944` Mahdist War, `Q1137302` Battle of Omdurman | no causal sentence names a held event; `P361` gives the Mahdist War `scramble-for-africa` and Omdurman the Mahdist War, so both would arrive filed and edgeless |
+| `Q1993171` 1919 Egyptian revolution | its lead attributes the spark to Zaghloul's exile, not to the world war it occurred after, and *"in the decades leading up to the Egyptian revolution of 1952"* is a date and not a cause |
+| `Q202465` Uganda–Tanzania War | 37 sitelinks; its held-event matches are a Kosovo War comparison and a First World War aside |
+| `Q9068538` Ethiopian Revolution, `Q2610662` Red Terror, `Q48733987` 1969 Somali coup | the Red Terror's one sentence about the Ethiopian Civil War would be a parent's edge (C8); the other two name no held event at all |
+
+### Deviation 1464 — a lowercase phrase is not a record's name
+
+`namesHeldEvents()` folds case before it matches, so the Mahdist War's ordinary
+sentence *"the European powers became increasingly aware of the troubles in
+Sudan"* matched the record `the-troubles`, and the Battle of Omdurman's *"imposing
+a reign of terror over the regions of Sudan"* matched `reign-of-terror`.
+Deviation 1458 made the matcher respect word boundaries; it does not make it
+respect capitals. **Nothing wrong was written** — a false match in `verdictFor()`
+refuses an edge rather than writing one, and both were caught by eye — but a
+relations pass that reads thousands of sentences will refuse real edges for this,
+and a curation fire's count of "edges the article contradicts" is wrong by however
+many of these it saw. The fix is one comparison in `mentions()`: a name whose own
+first letter is a capital should be matched with that capital, not folded past it.
+Not made here, because it changes a pure module three suites test and a batch is
+not where that is landed.
+
+| | after A15's thirteen passes | after batch 65 |
+| --- | --- | --- |
+| corpus | 1,258 active | **1,261** (+2 imported, +1 reinstated) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,023 | 1,026 |
+| active edges | 1,048 | **1,050** |
+| largest connected component | 711 | **712** |
+| components | 391 | **392** |
+| **edges that cross an umbrella (A15(11))** | 562, 486 inside one | **563**, 487 inside one |
+| events with no edge at all | 309 | **309** |
+| events with no place | 129 | **129** |
+| place records | 732, 730 active | **734, 732 active** (`kherrata`, `nigeria-q1033`) |
+| validator | 0 errors, 599 warnings | **0 errors, 599 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 182, Africa 181 | Europe 553, Americas 342, Asia 182, **Africa 184** |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+**A10's order of need turns over:** Africa now holds 184 against Asia's 182, so
+the next import batch in this lane is **Asia's** unless a chain crosses out of it.

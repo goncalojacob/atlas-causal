@@ -905,6 +905,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "1966-nigerian-coup-d-etat",
+      "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-65"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nigerian-civil-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
         "rosas-1994-estado-novo"
       ],
@@ -21712,6 +21741,35 @@
       "revised": null,
       "status": "active",
       "to": "war-in-darfur",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "setif-and-guelma-massacre",
+      "id": "setif-and-guelma-massacre--algerian-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-65"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "algerian-war",
       "type": "precondition-of"
     },
     {

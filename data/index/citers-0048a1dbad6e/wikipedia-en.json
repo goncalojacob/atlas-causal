@@ -1466,6 +1466,12 @@
     },
     {
       "dissent": false,
+      "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Nigerian Civil War\", revision 1374012434, lead"
+    },
+    {
+      "dissent": false,
       "id": "1973-chilean-coup-d-etat--1976-argentine-coup-d-etat--inspired",
       "kind": "edge",
       "locator": "\"1973 Chilean coup d'état\", revision 1372926646"
@@ -6008,6 +6014,12 @@
     },
     {
       "dissent": false,
+      "id": "setif-and-guelma-massacre--algerian-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Sétif and Guelma massacre\", revision 1373304371, lead"
+    },
+    {
+      "dissent": false,
       "id": "sidonio-pais-assassinated-1918--1918-portuguese-presidential-election--caused",
       "kind": "edge",
       "locator": "\"1918 Portuguese presidential election\", revision 1340296036, § lead"
@@ -8345,6 +8357,12 @@
       "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
+    },
+    {
+      "dissent": false,
+      "id": "1966-nigerian-coup-d-etat",
+      "kind": "event",
+      "locator": "\"1966 Nigerian coup d'état\", revision 1375361723"
     },
     {
       "dissent": false,
@@ -12944,6 +12962,12 @@
     },
     {
       "dissent": false,
+      "id": "nigerian-civil-war",
+      "kind": "event",
+      "locator": "\"Nigerian Civil War\", revision 1374012434"
+    },
+    {
+      "dissent": false,
       "id": "north-channel-naval-duel",
       "kind": "event",
       "locator": "\"North Channel Naval Duel\", revision 1370629780"
@@ -13853,6 +13877,12 @@
       "id": "september-massacres",
       "kind": "event",
       "locator": "\"September Massacres\", revision 1375967754"
+    },
+    {
+      "dissent": false,
+      "id": "setif-and-guelma-massacre",
+      "kind": "event",
+      "locator": "\"Sétif and Guelma massacre\", revision 1373304371"
     },
     {
       "dissent": false,

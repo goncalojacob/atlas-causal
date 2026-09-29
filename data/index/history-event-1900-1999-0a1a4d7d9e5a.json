@@ -2126,6 +2126,15 @@
         }
       ]
     },
+    "1966-nigerian-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1967-portugal-floods": {
       "from": "git",
       "versions": [
@@ -15604,6 +15613,19 @@
             "review"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "actors",
+            "parent",
+            "place",
+            "retraction",
+            "review",
+            "sources",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -18606,6 +18628,15 @@
             "review",
             "sources"
           ],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "setif-and-guelma-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-29"
         }
       ]

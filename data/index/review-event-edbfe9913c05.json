@@ -1098,6 +1098,43 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "1966-nigerian-coup-d-etat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9's second step: P276 Q1033, Nigeria, written here at `country` precision — the item's own P625 is that same point, the country's centroid. A15(6)'s gate passes: inception 1960, one country, the chain's own point. Filed by A6's span and subject, not the item's P361, which is empty: the coup is inside `decolonisation-of-africa`'s span and is Nigeria six years after independence. P580 and P582 are the two days the cached lead at revision 1375361723 describes; nothing was widened.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1966 Nigerian coup d'état"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "category": "election",
       "cites": [
         "maxwell-1995-making-of-portuguese-democracy",
@@ -4438,7 +4475,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "algerian-war",
       "kind": "event",
       "origin": {
@@ -28354,6 +28391,42 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-15",
+      "degree": 1,
+      "id": "nigerian-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a14-reason-rewritten",
+          "filed-by-span-and-subject",
+          "m42-reinstated",
+          "summary-from-lead",
+          "a9-place",
+          "participants-from-p710"
+        ],
+        "note": "M42 batch 65: reinstated on `1966-nigerian-coup-d-etat --caused--> nigerian-civil-war`, the edge the A14(6) reason said the article would not carry — it carries this one in its own lead. Filed under `decolonisation-of-africa` by A6; the item names no P361. Summary requoted from the cached lead at the revision the edge cites. A9: P276 Q7569493 has no point, so the place is P17 Q1033, Nigeria, which A15(6) allows. Of three P710 the atlas holds one.",
+        "status": "draft"
+      },
+      "revised": "2026-09-29",
+      "status": "active",
+      "title": "Nigerian Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -33754,6 +33827,43 @@
       "revised": null,
       "status": "active",
       "title": "September Massacres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "setif-and-guelma-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a7-widened",
+          "filed-from-p361"
+        ],
+        "note": "A9: the item's own P625 is (2, 28) at one degree — Algeria's centroid, not a place — so it was refused rather than written as a place named after a massacre; P276 is empty and P131 names Kherrata, one of the three towns. A7: the item ends it on 12 May 1945 and the cached lead at revision 1373304371 says \"in May and June 1945\", so the end is June. No start day is stated and none was supplied. Filed by the item's own P361 chain, which climbs through \"Algeria in World War II\" to Q362.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sétif and Guelma massacre"
     },
     {
       "authors": [
