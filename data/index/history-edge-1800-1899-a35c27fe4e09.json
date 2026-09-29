@@ -102,7 +102,7 @@
       ]
     },
     "battle-of-ladysmith--siege-of-ladysmith--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -654,7 +654,7 @@
       ]
     },
     "siege-of-ladysmith--battle-of-the-tugela-heights--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -663,7 +663,7 @@
       ]
     },
     "siege-of-ladysmith--battle-of-vaal-krantz--reacted-to": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
