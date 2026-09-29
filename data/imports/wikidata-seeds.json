@@ -1699,7 +1699,11 @@
     "Q6123901",
     "Q5915146",
     "Q55196779",
-    "Q115454857"
+    "Q115454857",
+    "Q7510222",
+    "Q1140266",
+    "Q4870964",
+    "Q4337398"
   ],
   "lanes": {
     "Q177918": "europe",
@@ -5985,6 +5989,18 @@
       "precision": "region",
       "label": "lake",
       "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"body of relatively still water, localized in a basin\". Bysjön, Q16506527, carries it; a lake is an area and is drawn wider and fainter, as Q1322134 gulf and Q39594 bay are. An ocean is still refused — the 25 September fire's reading, that an ocean is not where a war happened, is unchanged."
+    },
+    "Q15063586": {
+      "kind": "place",
+      "precision": "region",
+      "label": "state of Malaysia",
+      "note": "Added in M42b batch 37, for the state of Malacca, which the Siege of Malacca (1640–1641) names as its location where the 1606 siege names the city. Read off the class item: Wikidata glosses it “administrative unit of Malaysia”, a subclass of Q107390 federated state. `region` for the same reason Q12443800 is."
+    },
+    "Q34986717": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city of Malaysia",
+      "note": "Added in M42b batch 37, for the city of Malacca, the location the 1606 siege names. Read off the class item: it has no description and is a subclass of Q515 city, which this table already reads as `city`; it is one of the three classes Malacca carries and the three agree."
     }
   },
   "reconcile": true

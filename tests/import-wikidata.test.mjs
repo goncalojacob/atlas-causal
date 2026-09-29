@@ -591,6 +591,13 @@ test('a created record validates, cites the item and says it is unchecked', asyn
   }
   assert.deepEqual(event.actors, [], 'who took part is not what they did, and the import does not write roles');
   assert.equal(place.where.label, 'Northfield');
+  // A15 (3): a place carries no summary. The placeholder said the item's own
+  // description and then said nobody had read the record — two sentences about
+  // a town's provenance where a reader wanted the town, and the third review
+  // found it on 158 of them. Where a town is is not an account, so there is
+  // nothing for a summary to hold and `null` is the honest value; the item is
+  // still on the record in `wikidata`.
+  assert.equal(place.summary, null, 'a place record carries no summary');
   // The summary quotes the item and disclaims itself; it is not an account.
   assert.match(importedSummary(item), /Wikidata item Q9000001/);
   assert.match(importedSummary(item), /an invented uprising/);

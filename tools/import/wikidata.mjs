@@ -931,7 +931,14 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     where: { lon: read.point.lon, lat: read.point.lat, precision: precision ?? 'point', label },
     region,
     regionNote: region ? regionNote : null,
-    summary: importedSummary(read),
+    // A15 (3): no summary, and not the placeholder every other created record
+    // carries. The placeholder quoted the item's description and then said
+    // nobody had read the record — two sentences of provenance standing where a
+    // reader had come for the town — and the third review found it on 158 place
+    // records. Where a town is is a fact and not an account, so there is no
+    // account for a summary to hold; the item stays on the record in
+    // `wikidata`, which is where a reader who wants the provenance looks.
+    summary: null,
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 

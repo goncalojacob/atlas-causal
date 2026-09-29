@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Siege of Malacca (1640–1641)”, revision 1370743206, § Background — Prior conflicts"
+    }
+  ],
+  "from": "siege-of-malacca-1606",
+  "to": "siege-of-malacca-1640-1641",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article that describes the conquest names this siege as one of the failures it grew out of, and calls them roots rather than a sequence: “The roots of the conflict began in the late 16th century when the Dutch arrived in the vicinity of Malacca. From there, they launched occasional attacks against the Portuguese colony, including multiple failed sieges.” Its § Prior conflicts then names this one first: “Cornelis Matelief de Jonge began a siege in 1606, but was forced to lift it prematurely.” The same section reads the accumulation as what made the 1640 attempt the last: “After years of intermittent conflict, the Dutch East India Company had amassed a force of 2,000 Europeans at Batavia by August 1639, with the intent of sending the troops to Malacca.” Probable: Wikipedia alone, and the article states a pattern of attempts rather than a mechanism.",
+  "dispute": null
+}
