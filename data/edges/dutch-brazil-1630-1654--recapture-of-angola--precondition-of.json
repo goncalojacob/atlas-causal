@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--recapture-of-angola--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-47"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "recapture-of-angola",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article opens its account with the expedition Dutch Brazil sent: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda. The Dutch were able to easily capture Luanda in August as the Portuguese forces were occupied inland in a campaign against the Kingdom of Kongo. The two countries fought to a stalemate over Angola, until in 1648 the governor of Rio de Janeiro and Angola, Salvador de Sá, … besieged them and regained it for Portugal exactly seven years after its loss.” `precondition-of` and not `caused`: the colony at Recife did not produce the Portuguese reconquest, which was Portugal’s own act seven years later; it put the Dutch garrison in Luanda that the reconquest was a reconquest of. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
