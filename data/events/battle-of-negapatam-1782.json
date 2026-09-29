@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-negapatam-1782",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2601178",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Negapatam (1782)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2601178"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Negapatam (1782)\", revision 1370451553"
+    }
+  ],
+  "title": "Battle of Negapatam (1782)",
+  "summary": "The English Wikipedia article \"Battle of Negapatam (1782)\", at revision 1370451553, opens: \"The Battle of Negapatam was the third in a series of battles fought between a British fleet, under Vice-Admiral Sir Edward Hughes, and a French fleet, under the Bailli de Suffren, off the coast of India during the American Revolutionary War. The battle was fought on 6 July 1782. Though the battle was indecisive, Suffren was stopped in his goal by Hughes and withdrew to Cuddalore, while the British remained in control of Negapatam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2601178, imported by tools/import/wikidata.mjs. The item's own description reads \"1782 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-07-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

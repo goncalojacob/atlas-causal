@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-pondicherry-1778--battle-of-sadras--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Siege of Pondicherry (1778)”, revision 1370744509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "“Battle of Sadras”, revision 1370587942, § Background"
+    }
+  ],
+  "from": "siege-of-pondicherry-1778",
+  "to": "battle-of-sadras",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Pondicherry's fall is what Suffren was sent to answer, and the two articles state the two halves of that. The siege's own: it “was the first military action on the Indian subcontinent following the declaration of war between Great Britain and France in the American Revolutionary War”, Pondicherry “was the capital of French India and the largest of France's possessions on the subcontinent”, and “Britain followed up the victory by seizing France's other Indian colonies”. Sadras's own picks it up without naming the port: “The British had rapidly gained control over most French and Dutch outposts in India when news of these events reached India”, and so “The French admiral Bailli de Suffren was dispatched for military assistance to French colonies in India” — the fleet that fought at Sadras on arrival. **The join between the two quotations is this run's and not either article's**, which is why `precondition-of` and `probable`: each article states its own half, neither states the whole, and no source read here says the siege caused the battle.",
+  "dispute": null
+}

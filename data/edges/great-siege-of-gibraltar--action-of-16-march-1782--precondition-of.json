@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Action of 16 March 1782”, revision 1370425998"
+    }
+  ],
+  "from": "great-siege-of-gibraltar",
+  "to": "action-of-16-march-1782",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Spanish frigate was off Cape Spartel because of the siege, which the article states as the reason she was there at all: the Santa Catalina “was part of a squadron keeping lookout for any relief convoys heading into Gibraltar, which was then under siege.” A blockade is why two frigates met in the Strait, so `precondition-of`; the siege did not cause this particular action and the article claims no more than the station. Probable: Wikipedia alone.",
+  "dispute": null
+}
