@@ -14386,3 +14386,85 @@ tests), 0 records touched, 0 requests. Corpus unchanged: **1,258 active, 235
 main, 1,023 filed, 1,048 active edges, largest component 711, **562 edges
 crossing an umbrella**, 486 inside one, 391 components, 309 events with no edge**.
 Validator **0 errors, 599 warnings**.
+
+## A15 (12) — 109 categories read off `P31`, and the 177 rows the class table has no category in
+
+*29 September, the 05:07Z fire. Six requests to `wbgetentities` for the `P31` of
+293 items.*
+
+A15(12) asks for the main events with no category, and then the rest,
+categorised from the item's own `instance of` through the closed list in
+`data/categories.json` — *"the reading the import tool already makes for new
+records"*, which is `classify()` and its class table.
+
+**Before: 413 active events carried no category, 149 of them main** (the review
+counted 151; the corpus has moved). 293 of the 413 carry a Wikidata item and
+were asked; the other 120 are the hand-drafted Portuguese records and the
+Historical Basemaps-derived ones, which have no item to read.
+
+| | |
+| --- | --- |
+| uncategorised active events, before | **413** (149 main) |
+| of them with a Wikidata item | 293 |
+| **categorised from `P31`** | **109** (48 main, 61 filed) |
+| uncategorised active events, after | **304** (101 main) |
+
+By category: **war 62, treaty 34, death 5, revolution 4, election 2, other 2.**
+Every one is a category `data/categories.json` names — the validator reports no
+`category-unknown` — and every record carries the reading in a `wikidata` source
+locator naming the item and the exact class it came through, plus the flag
+`a15-category-from-p31`.
+
+**Seven were refused because their classes disagree, and that is `classify()`'s
+own rule and not this pass's.** `cretan-revolt-of-1897-1898` and
+`wagner-group-rebellion` are `revolution` *and* `war`;
+`colombian-war-of-independence`, `peruvian-war-of-independence` and
+`goa-annexed-1961` are `war` and `founding`; `partition-of-india` is `war` and
+`other`; `1982-british-army-gazelle-friendly-fire-incident` is `disaster` and
+`war`. *"Classes that disagree leave it unset rather than refusing the item: a
+category is a label on a record, not the record's right to exist, and a person
+sets it when the table cannot."*
+
+**The 177 left are one edit to one file, and this pass did not make it.** Not one
+of them has *no* class: every single item answered with a `P31`, and the classes
+are **in** `data/imports/wikidata-seeds.json` already — they say `kind: event`
+and carry **no `category`**, because most were added in M20 and M40a before the
+category column existed. The twelve commonest, with the label the table itself
+gives them and how many events each blocks:
+
+| class | label | events |
+| --- | --- | --- |
+| Q124734 | rebellion | 29 |
+| Q10931 | revolution / civil war | 21 |
+| Q3199915 | massacre | 18 |
+| Q41397 | genocide | 12 |
+| Q11514315 | historical period / economic crisis / world war / proxy war | 10 |
+| Q1323212 | insurgency / rebellion | 9 |
+| Q273120 | protest | 7 |
+| Q1691434 | United Nations treaty / multilateral treaty | 6 |
+| Q104212151 | series of wars | 5 |
+| Q25906438 | attempted coup d'état / rebellion / civil war | 5 |
+| Q2223653 | terrorist attack | 5 |
+| Q135010 | war crime | 5 |
+
+**Why this fire wrote none of them.** A15(12) says an item whose class maps to
+nothing *"stays uncategorised and is counted"*, which is what this section does.
+Filling the column is a taxonomy judgement, and half of these are arguments and
+not lookups: is a **massacre** a `war` or neither; is a **genocide**; is a
+**protest** a `revolution` when the category reads *"a seizure or a loss of
+power outside the ordinary rules"*; is Q11514315, whose label carries four
+different things at once, anything at all. CLAUDE.md puts that vocabulary in
+data *"so that adding one is an edit to a file somebody can argue with"* — and
+the argument is the owner's, not a fire's. **Four of the twelve are lookups and
+not arguments** — `series of wars` → `war`, `United Nations treaty` → `treaty`,
+`rebellion` → `revolution`, `attempted coup d'état` → `revolution` — and would
+categorise 45 more events between them; they are named here so the edit is one
+line each.
+
+**Counts.** 109 records rewritten, all `active`, all flagged
+`a15-category-from-p31`, 109 `wikidata` locators added; 7 refused on
+disagreeing classes, 177 left with the reason, 120 with no item to ask. 6
+requests, 0 refused by the network. Corpus: **1,258 active, 235 main, 1,023
+filed, 1,048 active edges, largest component 711, 562 edges crossing an
+umbrella, 391 components, 309 events with no edge**. Validator **0 errors, 599
+warnings**, unmoved. A15(2)'s pass reports **0 citations off disk**.

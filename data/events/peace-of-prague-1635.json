@@ -13,26 +13,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ]
   },
-  "wikidata": "Q1455240",
-  "sitelinks": {
-    "count": 32,
-    "on": "2026-09-22"
+  "origin": {
+    "tool": "wikidata"
   },
+  "wikidata": "Q1455240",
   "wikipedia": {
     "en": "Peace of Prague (1635)",
     "pt": "Paz de Praga"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-09-22"
   },
   "sources": [
     {
@@ -42,6 +43,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Peace of Prague (1635)\", revision 1361393894"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1455240, P31 Q625298"
     }
   ],
   "title": "Peace of Prague (1635)",
@@ -54,6 +59,7 @@
   "place": "prague-castle",
   "region": null,
   "regionNote": null,
-  "actors": [],
-  "parent": "thirty-years-war"
+  "parent": "thirty-years-war",
+  "category": "treaty",
+  "actors": []
 }

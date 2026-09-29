@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -58,6 +59,10 @@
     {
       "source": "wikidata",
       "locator": "Q215112"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q215112, P31 Q198"
     }
   ],
   "title": "Second Boer War",
@@ -71,6 +76,7 @@
   "place": "south-africa-q258",
   "region": "africa",
   "parent": "scramble-for-africa",
+  "category": "war",
   "actors": [
     {
       "actor": "united-kingdom",

@@ -13,15 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
-  "origin": {
-    "tool": "assistant"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
-      "wikidata-assigned-by-assistant"
+      "wikidata-assigned-by-assistant",
+      "a15-category-from-p31"
     ]
+  },
+  "origin": {
+    "tool": "assistant"
   },
   "wikidata": "Q23020255",
   "wikipedia": {
@@ -40,6 +41,10 @@
     {
       "source": "wheeler-1978-republican-portugal",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q23020255, P31 Q3882219"
     }
   ],
   "title": "Assassination of Sidónio Pais",
@@ -56,6 +61,7 @@
     "first-portuguese-republic-1910-1926",
     "interwar-period"
   ],
+  "category": "death",
   "actors": [
     {
       "actor": "sidonio-pais",

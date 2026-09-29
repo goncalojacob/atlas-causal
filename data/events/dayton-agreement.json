@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "status": "draft"
   },
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Dayton Agreement\", revision 1374959286"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q190315, P31 Q625298"
     }
   ],
   "title": "Dayton Agreement",
@@ -59,5 +64,6 @@
   "place": "wright-patterson-air-force-base",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
   "actors": []
 }

@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
       "a9-place",
-      "end-unstated"
+      "end-unstated",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -51,6 +52,10 @@
     {
       "source": "wikidata",
       "locator": "Q110999040"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q110999040, P31 Q198 / Q645883 / Q2001676 / Q467011 / Q11422542 / Q474138"
     }
   ],
   "title": "full-scale Russo-Ukrainian war",
@@ -63,6 +68,7 @@
   "place": "eastern-europe",
   "region": "europe",
   "parent": "russo-ukrainian-war",
+  "category": "war",
   "actors": [
     {
       "actor": "russian-federation",

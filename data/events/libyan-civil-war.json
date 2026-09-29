@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -27,7 +27,8 @@
       "imported-by-wikidata",
       "a9-place",
       "summary-from-lead",
-      "title-from-article"
+      "title-from-article",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -50,6 +51,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Libyan civil war (2011)\", revision 1374512354"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q81545, P31 Q8465"
     }
   ],
   "title": "Libyan civil war (2011)",
@@ -63,5 +68,6 @@
   "place": "libya-q1016",
   "region": "africa",
   "parent": "arab-spring",
+  "category": "war",
   "actors": []
 }

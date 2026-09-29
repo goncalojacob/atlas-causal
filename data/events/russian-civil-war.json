@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a15-country-refused"
+      "a15-country-refused",
+      "a15-category-from-p31"
     ],
     "note": "A15(6): the place was russian-republic-q139319, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged."
   },
@@ -51,6 +52,10 @@
     {
       "source": "wikidata",
       "locator": "Q79911"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q79911, P31 Q8465 / Q350604"
     }
   ],
   "title": "Russian Civil War",
@@ -63,6 +68,7 @@
   },
   "place": null,
   "region": "europe",
+  "category": "war",
   "actors": [
     {
       "actor": "russian-sfsr",

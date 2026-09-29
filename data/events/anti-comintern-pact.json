@@ -17,12 +17,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "status": "draft"
   },
@@ -46,6 +47,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Anti-Comintern Pact\", revision 1371954457"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q152195, P31 Q131569"
     }
   ],
   "title": "Anti-Comintern Pact",
@@ -58,5 +63,6 @@
   "place": "berlin",
   "region": null,
   "parent": "interwar-period",
+  "category": "treaty",
   "actors": []
 }

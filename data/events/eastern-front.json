@@ -24,7 +24,8 @@
       "imported-facts",
       "summary-drafted",
       "title-from-article",
-      "a15-country-refused"
+      "a15-country-refused",
+      "a15-category-from-p31"
     ],
     "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged."
   },
@@ -52,6 +53,10 @@
     {
       "source": "wikidata",
       "locator": "Q189266"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q189266, P31 Q198"
     }
   ],
   "title": "Eastern Front (World War II)",
@@ -65,6 +70,7 @@
   "place": null,
   "region": "europe",
   "parent": "world-war-ii",
+  "category": "war",
   "actors": [
     {
       "actor": "nazi-germany",
