@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "action-of-31-july-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677350",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Action of 31 July 1793"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677350"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 31 July 1793\", revision 1370426629"
+    }
+  ],
+  "title": "Action of 31 July 1793",
+  "summary": "The English Wikipedia article \"Action of 31 July 1793\", at revision 1370426629, opens: \"The action of 31 July 1793 was an inconclusive engagement between a frigate from the Royal Navy and another from the French Navy off the New Jersey coastline in the first year of the War of the First Coalition. The British captain, George Courtenay of HMS Boston, had arrived off New York City on 28 May and deliberately disguised his ship as a French vessel, fooling a French officer into coming aboard and making him a prisoner of war. Courtenay then sent a message into New York, where he knew a French frigate lay at anchor, challenging the French captain to battle within the next three days. The challenge was accepted and widely disseminated throughout the city, so that when Captain Jean-Baptiste-François Bompart of Embuscade sailed out to meet Courtenay on the morning of 31 July, the shore was crowded with thousands of sightseers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677350, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 minor naval engagement during the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-07-31"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

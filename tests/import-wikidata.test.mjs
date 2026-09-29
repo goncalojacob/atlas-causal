@@ -22,7 +22,7 @@ import {
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
-  leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
+  leadSummary, leadCitation, leadIsRedirect, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
   LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
@@ -1523,4 +1523,41 @@ test('umbrellasWith takes only active events that carry an item', () => {
   ];
   assert.deepEqual([...umbrellasWith(held, made).keys()], ['Q4'],
     'a place is not an umbrella, a withdrawn event would be rule 24\'s error, and an event with no item cannot be looked up');
+});
+
+// A15 (8), at import time. The REST summary endpoint follows a redirect and
+// answers with the article it landed on, so an item whose English sitelink is
+// a redirect into a different subject comes back with a lead about something
+// else — and the importer, which has no reason to doubt the endpoint, quotes
+// it. That is how `west-indies-campaign-1793-1798` was written on 29 September
+// with the lead of "British Army during the French Revolutionary and
+// Napoleonic Wars" inside it (deviation 1347). The question A15 (8) asks is
+// the one this answers: does the title the fetch landed on fold to any name
+// the item gives itself?
+test('a lead that landed on another article is not this item\'s (A15 (8))', async () => {
+  const item = await read('Q9000001');
+  assert.equal(titleFor(item).title, 'Northfield Rising');
+
+  assert.equal(leadIsRedirect(item, { title: 'Northfield Rising', revid: 9, text: 'x' }), false,
+    'the article it asked for is the article it got');
+  assert.equal(leadIsRedirect(item, { title: 'A History of Northfield', revid: 9, text: 'x' }), true,
+    'a redirect into a wider subject is a lead about something else');
+
+  // A name the item gives itself in any of the languages the atlas reads, and
+  // an alias as much as a label: the item is what decides what it is called.
+  const aliased = { ...item, aliases: { ...item.aliases, en: ['The Rising of Northfield'] } };
+  assert.equal(leadIsRedirect(aliased, { title: 'The Rising of Northfield', revid: 9, text: 'x' }), false,
+    'an alias is one of the item\'s own names');
+  assert.equal(leadIsRedirect(item, { title: 'Levantamento de Northfield', revid: 9, text: 'x' }),
+    leadIsRedirect(item, { title: item.labels.pt ?? 'Levantamento de Northfield', revid: 9, text: 'x' }),
+    'the Portuguese label is a name too, whichever side of the fold it is read from');
+
+  // The fold is the one every other name comparison here uses, so case and
+  // accents are not a redirect.
+  assert.equal(leadIsRedirect(item, { title: 'northfield rising', revid: 9, text: 'x' }), false);
+
+  // No lead and no title is not a redirect: it is nothing, and leadSummary
+  // already answers null for it.
+  assert.equal(leadIsRedirect(item, null), false);
+  assert.equal(leadIsRedirect(item, { revid: 9, text: 'x' }), false);
 });

@@ -1919,7 +1919,12 @@
         "Q20036669",
         "Q20050713",
         "Q19902501",
-        "Q20870437"
+        "Q20870437",
+        "Q368457",
+        "Q4677350",
+        "Q655480",
+        "Q113627918",
+        "Q3010371"
       ]
     }
   },
@@ -2095,6 +2100,18 @@
     "Q20639061": {
       "on": "2026-09-29",
       "why": "it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    "Q655480": {
+      "on": "2026-09-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q113627918": {
+      "on": "2026-09-29",
+      "why": "A15 (8): its English sitelink resolves to \"British Army during the French Revolutionary and Napoleonic Wars\", which folds to none of the item's own names; nothing here is this item's account of itself"
+    },
+    "Q3010371": {
+      "on": "2026-09-29",
+      "why": "none of its classes (Q13226383, Q1155622, Q302729) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }
