@@ -4454,6 +4454,18 @@
     },
     {
       "dissent": false,
+      "id": "iran-iraq-war--1983-beirut-barracks-bombings--precondition-of",
+      "kind": "edge",
+      "locator": "\"1983 Beirut barracks bombings\", revision 1376811260, § Mission"
+    },
+    {
+      "dissent": true,
+      "id": "iran-iraq-war--1983-beirut-barracks-bombings--precondition-of",
+      "kind": "edge",
+      "locator": "\"1983 Beirut barracks bombings\", revision 1376811260, §§ Mission and Aftermath — Search for perpetrators"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war--gulf-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gulf War\", revision 1375784270, § Background"
@@ -8495,6 +8507,12 @@
       "id": "1982-lebanon-war",
       "kind": "event",
       "locator": "\"1982 Lebanon War\", revision 1370279817"
+    },
+    {
+      "dissent": false,
+      "id": "1983-beirut-barracks-bombings",
+      "kind": "event",
+      "locator": "\"1983 Beirut barracks bombings\", revision 1376811260"
     },
     {
       "dissent": false,

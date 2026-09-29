@@ -3344,6 +3344,15 @@
         }
       ]
     },
+    "1983-beirut-barracks-bombings": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1983-portuguese-legislative-election": {
       "from": "git",
       "versions": [

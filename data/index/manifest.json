@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-98ae44fc4cbc.json",
+      "file": "index/attributes-1900-1999-38a93e4ea185.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -1024,8 +1024,8 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1065,
-    "events": 1503,
+    "edges": 1066,
+    "events": 1504,
     "narratives": 2,
     "offices": 11,
     "places": 735,
@@ -1062,7 +1062,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-ea6614b7edaf.json",
+      "file": "index/explanations-1900-1999-8a9921911dfb.json",
       "from": 1900,
       "to": 1999
     },
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-8736601ec6af",
-    "core": "index/core-1ff9aa16bed5.json",
-    "grounds": "index/grounds-dac29dd20a32.json",
+    "citers": "index/citers-0642fcfb7764",
+    "core": "index/core-6fd4b08282e8.json",
+    "grounds": "index/grounds-02fbe4b33446.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-fec40ae53d27.json",
-    "search": "index/search-2e7d43506ab7.json",
-    "sources": "index/sources-ae5455f23afe.json",
-    "territories": "index/territories-80ae83496f5d.json"
+    "review": "index/review-d771682a0aac.json",
+    "search": "index/search-9844ad677616.json",
+    "sources": "index/sources-8275c6673e68.json",
+    "territories": "index/territories-826f10cc38f8.json"
   },
   "historyShards": [
     {
@@ -1119,7 +1119,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-f7a5b5abe4f6.json",
+      "file": "index/history-event-1900-1999-7d3de77735e4.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1168,7 +1168,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-fbde1a73636c.json",
+      "file": "index/history-edge-1900-1999-4c8e19791fac.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 1053,
-    "explained": 1053
+    "active": 1054,
+    "explained": 1054
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [
