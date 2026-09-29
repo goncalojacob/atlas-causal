@@ -6344,6 +6344,15 @@
         }
       ]
     },
+    "pondicherry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "port-au-prince": {
       "from": "git",
       "versions": [
@@ -8132,6 +8141,15 @@
         }
       ]
     },
+    "strait-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "strait-of-magellan": {
       "from": "git",
       "versions": [
@@ -8570,6 +8588,15 @@
       ]
     },
     "trebel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "trincomalee": {
       "from": "git",
       "versions": [
         {

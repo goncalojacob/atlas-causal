@@ -2450,6 +2450,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-negapatam-1782--battle-of-trincomalee--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Trincomalee”, revision 1370591551"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Wittstock\", revision 1371435921, § Background"
@@ -2594,6 +2600,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-providien--battle-of-negapatam-1782--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Negapatam (1782)”, revision 1370451553"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-providien--battle-of-negapatam-1782--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Providien”, revision 1370586674"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-puna--spanish-conquest-of-the-inca-empire--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Puná\", revision 1370586803"
@@ -2669,6 +2687,18 @@
       "id": "battle-of-rolica--battle-of-vimeiro--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Vimeiro\", revision 1370623683, § Background and § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sadras--battle-of-providien--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Providien”, revision 1370586674"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sadras--battle-of-providien--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Sadras”, revision 1370587942"
     },
     {
       "dissent": false,
@@ -2831,6 +2861,18 @@
       "id": "battle-of-torata--battle-of-moquegua--caused",
       "kind": "edge",
       "locator": "\"Battle of Torata\", revision 1370591244, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Cuddalore (1783)”, revision 1370437947"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Sadras”, revision 1370587942"
     },
     {
       "dissent": false,
@@ -4235,6 +4277,12 @@
       "id": "great-depression--siamese-revolution-of-1932--precondition-of",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1374942454, § Thailand"
+    },
+    {
+      "dissent": false,
+      "id": "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of",
+      "kind": "edge",
+      "locator": "“Action of 16 March 1782”, revision 1370425998"
     },
     {
       "dissent": false,
@@ -6161,6 +6209,18 @@
       "id": "siege-of-pemaquid-1696--siege-of-fort-nashwaak--reacted-to",
       "kind": "edge",
       "locator": "\"Siege of Fort Nashwaak\", revision 1375235509"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1778--battle-of-sadras--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Sadras”, revision 1370587942, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1778--battle-of-sadras--precondition-of",
+      "kind": "edge",
+      "locator": "“Siege of Pondicherry (1778)”, revision 1370744509"
     },
     {
       "dissent": false,
@@ -8912,6 +8972,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-16-march-1782",
+      "kind": "event",
+      "locator": "\"Action of 16 March 1782\", revision 1370425998"
+    },
+    {
+      "dissent": false,
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "\"Action of 18 February 1639\", revision 1374933517"
@@ -9509,6 +9575,12 @@
       "id": "battle-of-croix-des-bouquets",
       "kind": "event",
       "locator": "\"Battle of Croix-des-Bouquets\", revision 1370109349"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cuddalore-1783",
+      "kind": "event",
+      "locator": "\"Battle of Cuddalore (1783)\", revision 1370437947"
     },
     {
       "dissent": false,
@@ -10148,6 +10220,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-negapatam-1782",
+      "kind": "event",
+      "locator": "\"Battle of Negapatam (1782)\", revision 1370451553"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-neu-titschein",
       "kind": "event",
       "locator": "\"Battle of Neu Titschein\", revision 1370270673"
@@ -10280,6 +10358,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-providien",
+      "kind": "event",
+      "locator": "\"Battle of Providien\", revision 1370586674"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pucacasa",
       "kind": "event",
       "locator": "\"Battle of Pucacasa\", revision 1370586703"
@@ -10403,6 +10487,12 @@
       "id": "battle-of-sablat",
       "kind": "event",
       "locator": "\"Battle of Sablat\", revision 1374171210"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sadras",
+      "kind": "event",
+      "locator": "\"Battle of Sadras\", revision 1370587942"
     },
     {
       "dissent": false,
@@ -10733,6 +10823,12 @@
       "id": "battle-of-triebl",
       "kind": "event",
       "locator": "\"Battle of Triebl\", revision 1370591544"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trincomalee",
+      "kind": "event",
+      "locator": "\"Battle of Trincomalee\", revision 1370591551"
     },
     {
       "dissent": false,
@@ -14219,6 +14315,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "\"Siege of Pilsen\", revision 1370744459"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1778",
+      "kind": "event",
+      "locator": "\"Siege of Pondicherry (1778)\", revision 1370744509"
     },
     {
       "dissent": false,

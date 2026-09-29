@@ -13805,6 +13805,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-29",
+      "degree": 2,
+      "id": "pondicherry",
+      "kind": "place",
+      "names": [
+        "Pondicherry"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "port-au-prince",
@@ -17680,6 +17707,34 @@
       ],
       "created": "2026-09-29",
       "degree": 1,
+      "id": "strait-of-gibraltar",
+      "kind": "place",
+      "names": [
+        "Strait of Gibraltar",
+        "Estreito de Gibraltar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
       "id": "strait-of-magellan",
       "kind": "place",
       "names": [
@@ -18734,6 +18789,34 @@
       "kind": "place",
       "names": [
         "Třebel"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 2,
+      "id": "trincomalee",
+      "kind": "place",
+      "names": [
+        "Trincomalee",
+        "Triquinimale"
       ],
       "origin": {
         "tool": "wikidata"

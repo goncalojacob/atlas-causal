@@ -23,7 +23,8 @@
       "imported-facts",
       "summary-from-lead",
       "a9-place",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a15-lane-from-point"
     ]
   },
   "wikidata": "Q4040247",
@@ -52,8 +53,8 @@
     "date": "1782-03-16"
   },
   "place": "strait-of-gibraltar",
-  "region": null,
-  "regionNote": null,
+  "region": "africa",
+  "regionNote": "A15 (7): the lane is the event's own point, 5.97W 35.87N, “off Cape Spartel, Morocco” in the article's words. Its place is the Strait of Gibraltar, whose point is 20 km north and derives `europe`; a strait between two continents cannot answer which lane an action in it is in.",
   "category": "war",
   "actors": [],
   "parent": "american-revolutionary-war"

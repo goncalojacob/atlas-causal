@@ -5979,6 +5979,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "battle-of-negapatam-1782",
+      "id": "battle-of-negapatam-1782--battle-of-trincomalee--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-trincomalee",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "battle-of-nordlingen-1634",
       "id": "battle-of-nordlingen-1634--battle-of-wittstock--precondition-of",
@@ -6514,6 +6542,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "battle-of-providien",
+      "id": "battle-of-providien--battle-of-negapatam-1782--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-negapatam-1782",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "prescott-conquest-of-peru"
       ],
@@ -6815,6 +6871,34 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-vimeiro",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "battle-of-sadras",
+      "id": "battle-of-sadras--battle-of-providien--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-providien",
       "type": "precondition-of"
     },
     {
@@ -7543,6 +7627,34 @@
       "status": "active",
       "to": "battle-of-moquegua",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "battle-of-trincomalee",
+      "id": "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-cuddalore-1783",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -14074,6 +14186,34 @@
       "revised": "2026-09-24",
       "status": "active",
       "to": "siamese-revolution-of-1932",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "great-siege-of-gibraltar",
+      "id": "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "action-of-16-march-1782",
       "type": "precondition-of"
     },
     {
@@ -22407,6 +22547,34 @@
       "status": "active",
       "to": "siege-of-fort-nashwaak",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-pondicherry-1778",
+      "id": "siege-of-pondicherry-1778--battle-of-sadras--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-sadras",
+      "type": "precondition-of"
     },
     {
       "authors": [

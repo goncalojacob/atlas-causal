@@ -2384,6 +2384,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-16-march-1782",
+      "kind": "event",
+      "locator": "Q4040247"
+    },
+    {
+      "dissent": false,
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "Q2594731"
@@ -3005,6 +3011,12 @@
       "id": "battle-of-croix-des-bouquets",
       "kind": "event",
       "locator": "Q2890512"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cuddalore-1783",
+      "kind": "event",
+      "locator": "Q1649183"
     },
     {
       "dissent": false,
@@ -3650,6 +3662,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-negapatam-1782",
+      "kind": "event",
+      "locator": "Q2601178"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-neu-titschein",
       "kind": "event",
       "locator": "Q4871878"
@@ -3782,6 +3800,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-providien",
+      "kind": "event",
+      "locator": "Q2601189"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pucacasa",
       "kind": "event",
       "locator": "Q11688225"
@@ -3905,6 +3929,12 @@
       "id": "battle-of-sablat",
       "kind": "event",
       "locator": "Q513007"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sadras",
+      "kind": "event",
+      "locator": "Q2601126"
     },
     {
       "dissent": false,
@@ -4229,6 +4259,12 @@
       "id": "battle-of-triebl",
       "kind": "event",
       "locator": "Q2237118"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trincomalee",
+      "kind": "event",
+      "locator": "Q2601158"
     },
     {
       "dissent": false,
@@ -7523,6 +7559,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1778",
+      "kind": "event",
+      "locator": "Q3485995"
     },
     {
       "dissent": false,
