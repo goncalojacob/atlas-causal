@@ -14668,6 +14668,11 @@ in its 1600 snapshot and the item ends the empire by 1572. A15(1), (5), (9),
   correcting**, which is the paragraph above; the two display faults of
   deviation 1461 did **not** come back, because this fire added no bar to the
   `americas` lane and no city label.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass. **A15 is done
+  and no fire owes it again** — every one of the thirteen has its section in
+  this file, so the next import fire goes straight to A10's order of need, which
+  is Africa.
 - **The check on this fire's final head is run 1969 of `validate.yml`, commit
   `c7f82ef2`**, and the head before it, run 1966 on `92398612`, passed
   `Validate records` before this push replaced it. Run **1945**, on the A15(1)
