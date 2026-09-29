@@ -537,6 +537,15 @@
         }
       ]
     },
+    "battle-of-ladysmith": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-las-piedras-1811": {
       "from": "git",
       "versions": [

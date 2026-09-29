@@ -3632,6 +3632,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ladysmith",
+      "kind": "event",
+      "locator": "Q2889085"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lagunillas",
       "kind": "event",
       "locator": "Q3636492"
@@ -4460,6 +4466,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-tugela-heights",
+      "kind": "event",
+      "locator": "Q4873033"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-yalu-river-1904",
       "kind": "event",
       "locator": "Q2273445"
@@ -4583,6 +4595,12 @@
       "id": "battle-of-ushant-1782",
       "kind": "event",
       "locator": "Q4090280"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vaal-krantz",
+      "kind": "event",
+      "locator": "Q736490"
     },
     {
       "dissent": false,

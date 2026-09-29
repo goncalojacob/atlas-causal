@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ladysmith",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889085",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Ladysmith"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889085"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ladysmith\", revision 1370446909"
+    }
+  ],
+  "title": "Battle of Ladysmith",
+  "summary": "The English Wikipedia article \"Battle of Ladysmith\", at revision 1370446909, opens: \"The Battle of Ladysmith, also known as the Battle of Lombard's Kop, was one of the early engagements of the Second Boer War. A large British force which had concentrated at the garrison town of Ladysmith launched a sortie on 30 October 1899, against Boer armies which were slowly surrounding the town. The result was a disaster for the British. The main body was driven back into the town, and an isolated detachment of 800 men was forced to surrender to Commandant De Wet. The Boers did not follow up their advantage by proceeding towards the strategically important port of Durban, and instead began a siege of Ladysmith, which was relieved after 118 days. John Norwood was awarded the Victoria Cross for his actions during the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889085, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 early engagement of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-10-30"
+  },
+  "place": "ladysmith",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

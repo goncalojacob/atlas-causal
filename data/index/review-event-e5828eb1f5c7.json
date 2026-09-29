@@ -10561,6 +10561,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "battle-of-ladysmith",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ladysmith"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-lagunillas",
@@ -15120,6 +15152,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "battle-of-the-tugela-heights",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Tugela Heights"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 3,
       "id": "battle-of-the-yalu-river-1904",
@@ -15809,6 +15873,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ushant (1782)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "battle-of-vaal-krantz",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vaal Krantz"
     },
     {
       "authors": [
@@ -36676,7 +36772,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 5,
       "id": "siege-of-ladysmith",
       "kind": "event",
       "origin": {

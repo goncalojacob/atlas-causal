@@ -2426,6 +2426,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ladysmith--siege-of-ladysmith--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Ladysmith\", revision 1370446909, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lagunillas--battle-of-millarapue--caused",
       "kind": "edge",
       "locator": "\"Battle of Millarapue\", revision 1376536206, History"
@@ -6470,6 +6476,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ladysmith--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ladysmith--battle-of-vaal-krantz--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Vaal Krantz\", revision 1370592068, lead"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
@@ -10412,6 +10430,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ladysmith",
+      "kind": "event",
+      "locator": "\"Battle of Ladysmith\", revision 1370446909"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lagunillas",
       "kind": "event",
       "locator": "\"Battle of Lagunillas\", revision 1370446946"
@@ -11246,6 +11270,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-tugela-heights",
+      "kind": "event",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-yalu-river-1904",
       "kind": "event",
       "locator": "\"Battle of the Yalu River (1904)\", revision 1370602766"
@@ -11375,6 +11405,12 @@
       "id": "battle-of-ushant-1782",
       "kind": "event",
       "locator": "\"Battle of Ushant (1782)\", revision 1370592026"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vaal-krantz",
+      "kind": "event",
+      "locator": "\"Battle of Vaal Krantz\", revision 1370592068"
     },
     {
       "dissent": false,

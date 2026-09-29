@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-ladysmith--battle-of-vaal-krantz--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-68"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vaal Krantz\", revision 1370592068, lead"
+    }
+  ],
+  "from": "siege-of-ladysmith",
+  "to": "battle-of-vaal-krantz",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says it in its first sentence: \"The Battle of Vaal Krantz (Afrikaans: Slag van Vaalkrans, 5 - 7 February 1900) was the third failed attempt by General Redvers Buller’s British army to fight its way past Louis Botha’s army of Boer irregulars and lift the Siege of Ladysmith.\" The battle is what the siege was answered with, and the article counts it as the third such answer. `reacted-to` and not `caused`: the siege did not produce the battle by any mechanism the article gives; it is what the battle was fought to end. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
