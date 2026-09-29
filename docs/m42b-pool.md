@@ -11360,3 +11360,183 @@ shape deviation 798 already asks for; the re-run is 1,912 of 1,912.
 
 `node tools/validate.mjs --index` is clean at **0 errors, 619 warnings**,
 byte-identical to a fresh build.
+
+## Batch 44 — the Caribbean and the American seaboard of the French Revolutionary Wars, and the A15 (8) redirect the import could not see
+
+The thirty-seventh and thirty-eighth fires both named the same three items as
+the next move: `Q113627918` (the West Indies Campaign, 1793–1798) as an
+umbrella the `americas` lane's eighteenth century does not have, with
+`Q368457` (Martinique, 1794) and `Q656046` (San Juan, 1797) under it, *"all
+three clean — an English article each"*. **Two of the three were not clean,
+and finding out how they were not is most of this batch.**
+
+The batch took the Americas rather than Africa or Asia before 1800 because
+that vein is where the reserve is. `Q207318`'s 140 children were queried
+again: 10 are held, and of the 130 that are not, the ones inside this lane's
+partition are the three above, the Quasi-War, one action off New Jersey, and
+five Egyptian or Indian Ocean engagements dated 1801, which is outside
+*before 1800*. Everything else is Europe before 1900 and stays where A15 (1)
+left it.
+
+### Why two of seven
+
+| left | why |
+| --- | --- |
+| `Q113627918` (West Indies Campaign, 1793–1798) | **A15 (8)**: its English sitelink, *West Indies Campaign (1793–1798)*, is a redirect into *British Army during the French Revolutionary and Napoleonic Wars*. See below: the tool had no way of seeing this and wrote that article's lead into the record as the campaign's own account of itself |
+| `Q655480` (Quasi-War, 1798–1800) | its only located claim is `P276` → `Q97`, the Atlantic Ocean, whose own point is (0, −30). A lane derived from the middle of an ocean is not this event's lane, and the seeds file's `lanes` map is only read where the item has no point at all, so naming `americas` there would not have reached it. Refused by the tool, and correctly |
+| `Q656046` (Battle of San Juan, 1797) | **A5, through A15 (1)**: it imported cleanly and connects to nothing. The only cause its article names is *"Spain aligned itself with France by signing the Second Treaty of San Ildefonso in 1796. Britain then targeted both countries' Caribbean colonies"* — a third event this atlas does not hold, so under A15 (5) the edge is written from that event or not at all, and it is not. The rest is chronology: *"they captured Trinidad from the Spanish, before heading for San Juan"*. The record and its place were written, read, and **taken out again**; the item is out of the seeds file and out of the import cursor, so a later fire that holds San Ildefonso or the capture of Trinidad can take it deliberately rather than find it already done |
+| `Q2890450` (Battle of the Acul, 1794) | two reasons, either of which is enough. **The item is vandalised** — its label reads *"Rich Boyyz"* and its description *"2019 Founder"* — and the importer, which quotes the description in every summary it writes, put *"The item's own description reads \"2019 Founder\""* into the record. And the article states no cause: *"Following an attempted push back to Port-de-Paix, British General John Whitelocke decides to attack the Fortress of Acul"* is A15 (5)'s refusal class exactly |
+| `Q3010371` (Bois Caïman, 1791) | none of its three classes (`Q13226383`, `Q1155622`, `Q302729`) is in the class table, so the tool refuses it and lists them for a person. It is the ceremony the Haitian Revolution is said to begin at, and it is worth a decision |
+
+**Five candidates left, two taken.** Two of the five were left for reasons the
+tool found by itself, two for reasons a person found by reading, and one for a
+class nobody has decided about.
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-martinique-1794` | 24 Mar 1794 | americas | `martinique-q17054` | the wars |
+| `action-of-31-july-1793` | 31 Jul 1793 | americas | *(none; the lane is the record's own)* | the wars |
+
+Both name `french-revolutionary-wars` and nothing else the atlas holds, so both
+are filed under it and **the main count is 235 before the batch and 235 after
+it**, as it has been for eight batches.
+
+**One place a person wrote**, and the reason is deviation 1348. The other
+event is placeless and correctly so: its own `P625` is (−73.836, 40.264), off
+the New Jersey coast, which reaches the `americas` lane and no place record,
+and a placeless event carrying a region is what the model provides for.
+
+### Two edges, both across an umbrella, both into the corpus
+
+| edge | type | crosses | what carries it |
+| --- | --- | --- | --- |
+| `french-revolution` → `battle-of-martinique-1794` | `reacted-to` | **yes** | *"…as the Republic's National Constituent Assembly was about to pass legislation which would abolish slavery in the French colonial empire; the legislation was passed the day before the British invasion of Martinique commenced"*, and, from the other article, *"The Convention voted for the abolition of slavery in the colonies on 4 February 1794"* … *"Martinique remained under British occupation"* |
+| `french-revolution` → `action-of-31-july-1793` | `precondition-of` | **yes** | *"The French Navy was in a state of upheaval due to the social consequences of the French Revolution, and as a result found itself at a disadvantage to the Royal Navy … One such squadron was sent in April 1793 to the United States"* |
+
+**Nothing from a parent to its own child (A14)**, which here rules out the two
+obvious ones — the wars to each of their new children.
+
+The Martinique edge carries two locators and the second is the one worth
+naming: the French Revolution article states the abolition vote and Martinique's
+occupation in the same paragraph, and it is cited **at revision 1375966584**,
+the revision this atlas's own `french-revolution` record cites and the cache
+holds, after the passage was read at that revision and not at the current one.
+That is the shape deviation 1344 asks for and the reason the stale-lead list did
+not grow.
+
+### A15 (11): two of two, and both of them moved the number
+
+`french-revolution` sits under `atlantic-revolutions` and both new events under
+`french-revolutionary-wars`, so both edges cross. **The largest component goes
+724 → 726 and the edges crossing an umbrella 568 → 570.** Batch 43 had to go
+looking for the one edge that would leave its umbrella; this batch had no edge
+that stayed inside one, because the only thing inside the umbrella that either
+article names is the umbrella itself, and A14 forbids that edge.
+
+### A15 (5): two refusals, both named
+
+**`battle-of-the-acul`** — *"Following an attempted push back to Port-de-Paix,
+British General John Whitelocke decides to attack the Fortress of Acul"*. The
+class exactly: a sentence that opens "Following" and states no cause. The event
+was left for this as much as for its item.
+
+**`battle-of-san-juan-1797` → anything** — the second clause. The article names
+a cause, the Second Treaty of San Ildefonso, and the atlas does not hold it, so
+the edge is written from that event or not at all.
+
+### Deviation 1347
+
+**1347. The import had no way of knowing which article it was quoting, and
+quoted the wrong one into a record.** `fetchLeads` asks the REST summary
+endpoint for the item's English sitelink, and that endpoint **follows a
+redirect and answers with the article it lands on**. Nothing in the answer says
+a redirect was followed; the response simply carries a different `title`, and
+the tool, which has no reason to doubt it, wrote it into a citation and quoted
+its lead as the record's summary. `Q113627918`'s sitelink is *West Indies
+Campaign (1793–1798)*, which redirects to *British Army during the French
+Revolutionary and Napoleonic Wars*, and the record this fire first wrote opened
+with *"The British Army during the French Revolutionary and Napoleonic Wars
+experienced a time of rapid change."* — as the campaign's own account of itself,
+with a locator pointing at an article about something else.
+
+**A15 (8) is the amendment that exists for this and it was being applied by
+hand.** Batch 43 refused `Q4677390` under it because a person noticed; the
+fires before that refused `eritrean-civil-wars` and five more in M42's own
+pass. Nothing was asking the question at import time, which is the one moment
+the answer is free: the fetch has already told the tool which article it
+landed on.
+
+`leadIsRedirect(read, lead)` is that question and nothing else — does the title
+the fetch landed on fold to **any** name the item gives itself, in either
+language the atlas reads, a label, an alias or an article title? It answers
+about the lead and never about the record. The import calls it before the
+summary, because the summary *is* the lead, and refuses the item with the
+landed title in the reason, which is what a person needs to decide. The test
+was written before the guard (711) and the refusal was then reproduced by
+re-running the item through the real path: the record came out as a refusal
+with its reason, not as a quotation.
+
+**What this does not do.** It does not retract anything already written under
+the old behaviour; A15 (8)'s own list of six records is M42's pass and is not
+this lane's to make. It does not distinguish a redirect from a rename — an
+article renamed to a title the item does not know yet reads the same way and is
+refused the same way, which is the safe direction and is listed for a person
+either way. And it cannot see a redirect whose target *is* one of the item's
+names, which is the harmless case.
+
+### Deviation 1348
+
+**1348. A country refused as a place is still taken as a lane.** A15 (6) and
+A9 did their work on `Q368457`: the report reads *"no place from the country
+Q142: the country's inception (1958) is after the event ended (1794)"*, so
+France was refused as the place of a 1794 battle. But the lane is derived
+before the place and from a different list — `elsewhere`, which is `location`,
+`administrative` and `country` in order — and the island's own entry
+(`Q17054`, Martinique) reaches no lane polygon, so the chain fell through to
+France's point and the record came out with **`region: "europe"` and a
+`regionNote` saying the lane was written "from Q142, the country the item
+names"**. A Caribbean invasion, filed in Europe, by the same country claim the
+place rule had just thrown out.
+
+This is deviation 1346's obstacle seen from the other end. 1346 is *an island
+no lane polygon reaches has no lane*; 1348 is *and so it takes its lane from
+whatever is next in the chain, which is a country the event may have nothing to
+do with*. The two together say the same thing about `laneFor`: the fallback
+order it walks is the place chain, and the place chain's last entry is a modern
+state.
+
+**Repaired here by hand and not in code**, because the fix is a decision and
+not a patch: `martinique-q17054` is a place record carrying the item's own
+point (−61.015, 14.65) at `region` precision, with `region: "americas"` as the
+override the model provides for somewhere no polygon reaches and a
+`regionNote` saying why; the event points at it and takes its lane from it. The
+id carries the item because `data/actors/martinique.json` — CShapes, 1886 on —
+already holds the plain name, which is the shape 101 other place records are in.
+
+**What a fire cannot write, and the owner may want to**: either the lane
+derivation gains a nearest-polygon fallback (which would open Martinique,
+Mauritius, Réunion, the Seychelles, the Comoros, the Maldives and the Andamans
+at once — deviation 1346's third paragraph), or `laneFor` stops reading `P17`
+where A15 (6) has just refused the same country as a place, which is the
+narrower fix and the one this deviation is actually about.
+
+### Counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,311 | **1,313** |
+| **main** | **235** | **235** |
+| largest connected component | 724 | **726** |
+| components | 409 | 409 |
+| active events with no edge | 319 | 319 |
+| edges crossing an umbrella | 568 of 1,086 | **570 of 1,088** |
+| `americas` | 354 | **356** |
+| `americas`, 18th century | 55 | **57** |
+
+Per lane: **europe 555, americas 356, asia 202, africa 200.** Per century,
+within the partition: `americas` 1400s 5, 1500s 44, 1600s 69, **1700s 57**,
+1800s 56, 1900s 86, 2000s 39; `africa` before 1800 **16** (1600s 2, 1700s 14);
+`asia` before 1800 **20** (1600s 3, 1700s 17). A15 (1)'s gate is unchanged and
+still shut: africa 200 and asia 202 against A10's 303.
