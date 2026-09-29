@@ -29,7 +29,7 @@ import {
 // row when it lands, which is a resize, which is the thing §7 is about.
 const CHIP_NAMED = `
   const el = document.querySelector('#lens-chips .lens-name');
-  return Boolean(el) && el.textContent.trim() !== 'loading…';`;
+  return Boolean(el) && el.textContent.trim() !== ${JSON.stringify(LOADING_LABEL)};`;
 
 // Two frames of stillness on the camera itself. A transform read while a
 // shard, a layout or a masthead row is still landing is a transform read

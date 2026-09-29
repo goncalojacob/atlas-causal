@@ -938,6 +938,33 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=graph',
     width: 500, height: 844,
     what: 'the graph on the same phone, filling the pane instead of a band across the top of it' },
+
+  // --- M89 §2: and the phone's first map is the world ----------------------
+  //
+  // `m87-map-phone` is what the crop bought: a picture nearly three times the
+  // size, and a third of the world in it — Russia's east, China, South-East
+  // Asia and Australia, with Europe, Africa and the Americas off the screen on
+  // either side and nothing saying so (third review, A2). The crop keeps the
+  // middle of the projection and the middle of this projection is the Pacific.
+  // Fitted to the width again here, which is the reviewer's own preference
+  // — *"a world 220 px high with ten names beats a third of the world 600 px
+  // high"* — and the pair is the change.
+  { name: 'm89-map-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844',
+    width: 500, height: 844,
+    what: 'the map on a 390 x 844 phone: the whole world, so a funder can see what the atlas covers' },
+
+  // --- M89 §5: and the resting timeline writes a name only where it fits ---
+  //
+  // 189 of the main events start after 1900, so from 1900 to 2026 the labels
+  // sat on top of other rows' bars: "1908 Portuguese legislative election"
+  // struck through by two of them, "COVID-19 pandemic" running into
+  // "Euromaidan", and the last name at the right edge cut in half (A5). They
+  // go through the same placer the map's names do now.
+  { name: 'm89-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1280&h=800&view=timeline',
+    width: 1280, height: 800,
+    what: 'the resting timeline: a name only where its box is free of bars and other names' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

@@ -19,6 +19,11 @@ import { LOADING_LABEL } from '../src/attributes.js';
 import { esc } from '../src/util/esc.js';
 import { introHtml, heaviest, centuryOf, score, HEAVIEST } from '../src/intro.js';
 import { createShardWatch } from '../src/shard-watch.js';
+import { frameOn, markNodes, wantedSets } from '../src/map/camera.js';
+import { worldProjection } from '../src/map/projection.js';
+import { partsReach, partsReachSentence } from '../src/panel/event.js';
+import { isParent, parentsOf } from '../src/parts.js';
+import { eventsOfFocus } from '../src/lens.js';
 
 const DATA = path.join(ROOT, 'data');
 const atlas = await atlasOf(DATA);
@@ -187,4 +192,98 @@ test('§1: a state change is a nudge, and the tab coming back is a redraw', () =
   assert.equal(drawn, 2);
   wake();
   assert.equal(drawn, 3, 'and again, because the count could not be asked');
+});
+
+// ─── 2. the camera frames what the reader asked for (A2) ────────────────────
+
+test('§2: the map frames a lens on its marks, widest first', () => {
+  const projection = worldProjection({ width: 960, height: 540 });
+  const box = { x0: 0, y0: 0, x1: 960, y1: 540 };
+  // A lens of one event: the widest set is the ring and the narrowest the event,
+  // and both have to be framed on rather than left where the projection put them.
+  const event = atlas.activeEvents.find((e) => atlas.pointOf(e));
+  assert.ok(event, 'the corpus has an event with a place');
+  const working = { lens: true, shown: new Set([event.id]), lensFocus: new Set([event.id]) };
+  const wanted = wantedSets(working);
+  assert.ok(wanted.length > 0, 'a lens offers a set to frame');
+  const nodes = markNodes(atlas, new Set([event.id]), projection);
+  assert.equal(nodes.length, 1, 'the mark is a node');
+  const at = frameOn(nodes, wanted, box, { min: 1, max: 4, pad: 12 });
+  assert.ok(at, 'a lens with a mark in it is framed');
+  // The mark is inside the rectangle, with the padding to spare, and the camera
+  // is three numbers and no more.
+  assert.deepEqual(Object.keys(at).sort(), ['k', 'x', 'y']);
+  const on = { x: at.x + nodes[0].x * at.k, y: at.y + nodes[0].y * at.k };
+  assert.ok(on.x > box.x0 && on.x < box.x1, `the mark is across the pane at ${on.x}`);
+  assert.ok(on.y > box.y0 && on.y < box.y1, `the mark is down the pane at ${on.y}`);
+});
+
+test('§2: at rest there is nothing to frame, and a lens with no mark is not framed', () => {
+  const projection = worldProjection({ width: 960, height: 540 });
+  const box = { x0: 0, y0: 0, x1: 960, y1: 540 };
+  assert.equal(wantedSets({ lens: null, shown: new Set(['a']) }), null,
+    'the resting picture is the whole world and the camera does not move for it');
+  assert.equal(wantedSets(null), null);
+  // A lens of events the atlas has no place for: they are in the corner's count
+  // and on the timeline, and there is no mark to put on the screen.
+  const placeless = atlas.activeEvents.filter((e) => !atlas.pointOf(e)).slice(0, 3);
+  if (placeless.length > 0) {
+    const ids = new Set(placeless.map((e) => e.id));
+    assert.equal(markNodes(atlas, ids, projection).length, 0);
+    assert.equal(frameOn([], [ids], box, { min: 1, max: 4, pad: 12 }), null);
+  }
+});
+
+test('§2: a lens wider than the pane is framed as far out as the map goes', () => {
+  const projection = worldProjection({ width: 960, height: 540 });
+  const box = { x0: 0, y0: 0, x1: 960, y1: 540 };
+  // Every event with a place: the box they stand in is the world, so the frame
+  // is the floor and not a zoom out below it.
+  const ids = new Set(atlas.activeEvents.filter((e) => atlas.pointOf(e)).map((e) => e.id));
+  assert.ok(ids.size > 1);
+  const at = frameOn(markNodes(atlas, ids, projection), [ids], box, { min: 1, max: 4, pad: 12 });
+  assert.ok(at, 'the whole corpus is still a frame');
+  assert.equal(at.k, 1, 'and it is the floor: the world, and the reader pans for the rest');
+});
+
+// ─── 3. an umbrella's card says what its parts link to (A3) ─────────────────
+
+test('§3: every umbrella with no link of its own says what its parts reach', () => {
+  // The umbrellas, derived: a main event with children and no outgoing edge.
+  // Twelve of the 240 on the corpus the review read, and whichever they are on
+  // the corpus this runs against.
+  const umbrellas = atlas.activeEvents.filter((event) => parentsOf(event).length === 0
+    && isParent(atlas, event)
+    && (atlas.adjacency.out.get(event.id) ?? []).length === 0);
+  assert.ok(umbrellas.length > 0, 'the corpus has an umbrella with no link of its own');
+  for (const event of umbrellas) {
+    const reach = partsReach(atlas, event);
+    // The count of what is inside is the lens's own answer, which is what the
+    // line above the section prints.
+    const inside = eventsOfFocus({ kind: 'event', id: event.id }, atlas);
+    assert.equal(reach.parts, inside.size - 1, `${event.id}: the parts are the lens's parts`);
+    // And what they reach is computed here, off the same records.
+    const wanted = new Set();
+    for (const id of inside) {
+      if (id === event.id) continue;
+      for (const edge of atlas.adjacency.out.get(id) ?? []) {
+        if (!inside.has(edge.to)) wanted.add(edge.to);
+      }
+    }
+    assert.deepEqual([...reach.reached.keys()].sort(), [...wanted].sort(), `${event.id}: what the parts link to`);
+    const events = (n) => `${n} ${n === 1 ? 'event' : 'events'}`;
+    assert.equal(partsReachSentence(reach),
+      `The ${events(reach.parts)} inside it ${reach.parts === 1 ? 'links' : 'link'} to ${events(wanted.size)}.`);
+    // Nothing inside the umbrella is counted as somewhere else to go.
+    for (const id of reach.reached.keys()) assert.ok(!inside.has(id), `${event.id}: ${id} is not inside it`);
+  }
+});
+
+test('§3: and an event with no parts and no links still says so', () => {
+  const leaf = atlas.activeEvents.find((event) => !isParent(atlas, event)
+    && (atlas.adjacency.out.get(event.id) ?? []).length === 0);
+  if (!leaf) return;
+  const reach = partsReach(atlas, leaf);
+  assert.equal(reach.parts, 0, 'nothing is inside it');
+  assert.equal(reach.reached.size, 0, 'and there is nothing to reach');
 });

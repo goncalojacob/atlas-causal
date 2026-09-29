@@ -160,3 +160,127 @@ test('§1: a landing whose frame is never run is drawn when the tab comes back',
     }
   }, { device: DESK });
 });
+
+// ─── 2. the phone's first map, and a lens that frames its marks (A2) ────────
+
+// A mark's own box against the box of the pane it is drawn in, read off the
+// elements themselves: the map is one `<svg>` scaled to its pane, so a mark
+// inside the pane's rectangle is a mark a reader can see.
+const MARKS_IN_VIEW = `
+  const svg = document.querySelector('#map svg.map');
+  if (!svg) return null;
+  const pane = svg.getBoundingClientRect();
+  const rows = [];
+  // A cluster is a mark too — two events at one point are drawn as one, and the
+  // members are the panel's (map.js) — so it is counted with no id of its own.
+  for (const mark of svg.querySelectorAll('.mark[data-id], .mark[data-cluster]')) {
+    const box = mark.getBoundingClientRect();
+    if (!box.width && !box.height) continue;
+    rows.push({
+      id: mark.getAttribute('data-id'),
+      cluster: mark.getAttribute('data-cluster'),
+      inside: box.left >= pane.left && box.right <= pane.right
+        && box.top >= pane.top && box.bottom <= pane.bottom,
+    });
+  }
+  return { pane: { width: pane.width, height: pane.height }, marks: rows };`;
+
+// Which lane each drawn mark is in, from the records rather than from the page.
+const laneOf = new Map(atlas.activeEvents.map((e) => [e.id, e.region ?? null]));
+
+test('§2: the phone opens on the world, not on a third of it', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
+    await settledShards(page, await manifestOf());
+    const read = await page.eval(MARKS_IN_VIEW);
+    assert.ok(read && read.marks.length > 0, 'the map drew marks');
+    // The claim: more than one lane's marks are on the screen. The reviewer's
+    // phone showed Asia and Australia and nothing else, with Europe, Africa and
+    // the Americas off it on either side. Which lanes, and how many, are the
+    // corpus's own — nothing here is written down.
+    const lanes = new Set(read.marks.filter((m) => m.inside).map((m) => laneOf.get(m.id) ?? null));
+    lanes.delete(null);
+    const inCorpus = new Set([...laneOf.values()].filter(Boolean));
+    assert.ok(lanes.size > 1,
+      `only ${[...lanes].join(', ') || 'no'} lane's marks are inside a ${Math.round(read.pane.width)}x${Math.round(read.pane.height)} pane`);
+    assert.ok(lanes.size >= Math.min(3, inCorpus.size),
+      `the phone's first map shows ${lanes.size} of the corpus's ${inCorpus.size} lanes: ${[...lanes].join(', ')}`);
+  }, { device: PHONE });
+});
+
+// An actor whose events stand close together, chosen by measuring them rather
+// than by naming one: a lens the camera has something to do for. The widest
+// span of longitude its placed events cover, smallest first, and at least two of
+// them so that the lens has a size at all.
+const TIGHT = (() => {
+  let best = null;
+  for (const actor of atlas.actors.values()) {
+    const points = (atlas.eventsByActor.get(actor.id) ?? [])
+      .map((row) => atlas.pointOf(row.event)).filter(Boolean);
+    // Two *distinct* points and no fewer: events at one point are drawn as one
+    // cluster with no id, so an actor whose whole lens is one stack has nothing
+    // to say about where the camera put which mark.
+    const distinct = new Set(points.map((p) => `${p.lon},${p.lat}`));
+    if (distinct.size < 2) continue;
+    const lons = points.map((p) => p.lon);
+    const lats = points.map((p) => p.lat);
+    const span = Math.max(Math.max(...lons) - Math.min(...lons), Math.max(...lats) - Math.min(...lats));
+    if (best === null || span < best.span || (span === best.span && actor.id < best.id)) {
+      best = { id: actor.id, span, events: points.length };
+    }
+  }
+  return best;
+})();
+
+// What the viewport was translated and scaled by: the camera itself, read off
+// the element the map sets it on.
+// A viewport with no transform attribute at all is the identity: the map sets one
+// only once something has moved it, and the world at k = 1 is where it starts.
+const CAMERA = `
+  const g = document.querySelector('#map .viewport');
+  if (!g) return null;
+  const at = g.getAttribute('transform');
+  if (!at) return { x: 0, y: 0, k: 1 };
+  const m = /translate\\(([^ )]+) ([^ )]+)\\) scale\\(([^)]+)\\)/.exec(at);
+  return m ? { x: Number(m[1]), y: Number(m[2]), k: Number(m[3]), at } : null;`;
+
+test('§2: a lens on an actor frames the camera on its marks', { skip }, async () => {
+  assert.ok(TIGHT, 'the corpus has an actor with two placed events');
+  const wanted = new Set((atlas.eventsByActor.get(TIGHT.id) ?? [])
+    .map((row) => row.event)
+    .filter((event) => atlas.pointOf(event))
+    .map((event) => event.id));
+  assert.ok(wanted.size > 1, `${TIGHT.id} has placed events to frame`);
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    // At rest first, so that what follows is a camera that moved and not one
+    // that was always there.
+    await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
+    const resting = await page.eval(CAMERA);
+    assert.ok(resting && resting.k === 1 && resting.x === 0 && resting.y === 0,
+      `at rest the camera is the whole world, and it reads ${JSON.stringify(resting)}`);
+
+    await open(page, url(`?focus=actor:${TIGHT.id}`), 'return document.querySelectorAll("#map .mark").length > 0;');
+    await settledShards(page, await manifestOf());
+    await until(page, `const c = (() => { ${CAMERA} })(); return Boolean(c) && c.k > 1;`);
+    const camera = await page.eval(CAMERA);
+    assert.ok(camera, `the map has a camera the test can read; it says ${JSON.stringify(camera)}`);
+    assert.ok(camera.k > 1,
+      `the lens on ${TIGHT.id} spans ${TIGHT.span.toFixed(1)} degrees and the camera stayed at the world (k = ${camera.k})`);
+
+    const read = await page.eval(MARKS_IN_VIEW);
+    assert.ok(read && read.marks.length > 0, 'the lens drew marks');
+    const inside = read.marks.filter((m) => m.inside);
+    assert.ok(inside.length > 0,
+      `the lens on ${TIGHT.id} drew ${read.marks.length} marks and not one of them is in the pane`);
+    // And one of them is the actor's own, where the camera left it a mark of its
+    // own rather than a stack: a cluster is inside the pane and says nothing
+    // about which event it holds.
+    const named = inside.filter((m) => m.id);
+    if (named.length > 0) {
+      assert.ok(named.some((m) => wanted.has(m.id)),
+        `none of the named marks in the pane is an event of ${TIGHT.id}: ${named.map((m) => m.id).slice(0, 6).join(', ')}`);
+    }
+  }, { device: PHONE });
+});

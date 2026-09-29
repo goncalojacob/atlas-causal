@@ -267,6 +267,71 @@ function subtreeLensHtml(ctx, event) {
     ${parts === 1 ? 'event' : 'events'} inside it.</p>`;
 }
 
+// **What the events inside an umbrella link to** (M89 §3, A3).
+//
+// The Scramble for Africa is an umbrella of twenty-four events and has no edge
+// of its own, so its card read *Consequences 0, "No outgoing links recorded",
+// Parts 14* — under a masthead that says every event is linked to what it led
+// to. Twelve of the corpus's main events are in that state, and they are the
+// ones a funder opens first: the Scramble, the Decolonisation of Africa, the
+// Arab Spring, the Atlantic Revolutions, the Interwar period.
+//
+// The links are there; they are written on the parts. So where the umbrella
+// itself has none, the card says what its parts reach — **read off the records
+// and claiming nothing**. No edge is written, nothing is inherited, and the
+// section still counts the umbrella's own links as zero: what is added is a
+// sentence about where the reader can go from here, which is true of the atlas
+// as it stands.
+//
+// "Inside it" is `eventsOfFocus`'s own answer and not a count made here, so the
+// sentence cannot come to say something the lens does not do — it is the same
+// number the line above the section prints. A link from one part to another is
+// not a link *out*: what is inside the umbrella is what the Parts section
+// already lists.
+export function partsReach(atlas, event) {
+  const focus = eventsOfFocus({ kind: 'event', id: event.id }, atlas);
+  const inside = focus ? new Set(focus) : new Set([event.id]);
+  // The umbrella itself is in that set and is not one of its own parts.
+  const parts = inside.size - 1;
+  const reached = new Map();
+  for (const id of inside) {
+    if (id === event.id) continue;
+    for (const edge of atlas.adjacency?.out?.get(id) ?? []) {
+      if (inside.has(edge.to)) continue;
+      if (!reached.has(edge.to)) reached.set(edge.to, []);
+      reached.get(edge.to).push(edge);
+    }
+  }
+  return { parts, reached };
+}
+
+// And the sentence it becomes. Plural in both numbers, because both are counts
+// of records and either can be one.
+export function partsReachSentence({ parts, reached }) {
+  const events = (n) => `${n} ${n === 1 ? 'event' : 'events'}`;
+  return `The ${events(parts)} inside it ${parts === 1 ? 'links' : 'link'} to ${events(reached.size)}.`;
+}
+
+// The rows: where the reader can go, and which part takes them there. Plain
+// event links and not a walk — the chain is a walk from *this* event, and a
+// step that started somewhere else would be an argument nobody made.
+function partsReachHtml(ctx, reach) {
+  const rows = [...reach.reached].map(([id, edges]) => {
+    const target = ctx.atlas.events.get(id);
+    if (!target) return '';
+    const from = [...new Set(edges.map((edge) => edge.from))]
+      .map((partId) => ctx.atlas.events.get(partId))
+      .filter(Boolean);
+    return `<li class="actor-row">
+      ${ctx.eventLink(target)}
+      <span class="muted">from ${from.map((part) => ctx.eventLink(part)).join(', ')}</span>
+    </li>`;
+  }).filter(Boolean);
+  if (rows.length === 0) return '';
+  return `<p class="muted">${esc(partsReachSentence(reach))}</p>
+    <ul class="actor-rows">${rows.join('')}</ul>`;
+}
+
 // The other direction: the events inside this one, in the order they
 // happened. A list and not a walk — following a part is opening a record,
 // not taking a step of an argument — so the rows are the plain event link
@@ -395,7 +460,11 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
     disputed: disputedIn(out),
     body: (out.length
       ? edgeRowsHtml(out, { follow: true })
-      : '<p class="muted">No outgoing links recorded.</p>')
+      // An umbrella with no link of its own says what its parts reach rather
+      // than nothing at all (M89 §3). Where there is neither — a leaf with no
+      // consequences — the old sentence stands, because it is the true one.
+      : (partsReachHtml(ctx, partsReach(atlas, event))
+        || '<p class="muted">No outgoing links recorded.</p>'))
       + horizonHtml(ctx, { event, state }),
   });
   sections.push({
