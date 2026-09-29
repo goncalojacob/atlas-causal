@@ -14943,3 +14943,11 @@ A15(3) requires.
   of need, which is now **Asia**.
 - **Deviation numbers: take the next above 1464.** This fire wrote **1464**, the
   lowercase-phrase match above.
+
+**The check is green on this fire's final head.** Run **1984** of `validate.yml`,
+commit `6344e72b`, conclusion **`success`**: `Validate records` passed in three
+seconds, the `Tests` step passed in ten minutes, and the index step was skipped
+because this is not a pull request. Run **1978**, on the claim commit, also
+concluded `success`; runs **1981** and **1982** were cancelled by the next push,
+which is deviation 1258's chain and costs nothing. **No run of this fire failed
+at any point.**
