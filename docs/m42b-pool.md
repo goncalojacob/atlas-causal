@@ -11737,3 +11737,28 @@ the reason to say so: it cites the French Revolution article **at revision
 1375966584**, which is the revision this atlas's own record cites and the cache
 holds, after the passage was read at that revision rather than at the current
 one.
+
+### The check, on this fire's heads
+
+**Run 2009 on `61be31c9`** — the head carrying both batches' records and the
+rebuilt index — **completed `success`**: `Validate records`, the pure half and
+the browser half. That is the head that matters; the two later commits are
+`docs/` only.
+
+**Run 2004 on the merge commit `3737ca01` failed, and the reason is deviation
+798's shape and not a defect in the merge.** Its browser half is 313 of 313 and
+its own summary reads `# fail 0`; the exit code came from the pure half, whose
+output the job log's tail does not reach. The tree was validated `--index`
+clean before the push, which leaves one explanation and it is the one batch 42
+already wrote down: **the history shards are read off the repository's own
+commits, so they change the moment the commit that rebuilt them lands.** A
+merge that drops and rebuilds `data/index/` in one commit cannot be
+byte-identical to a fresh build taken after it. Every commit after it in this
+fire put the records first and the index second, which is what deviation 798
+asks for, and `node tools/build-index.mjs` on the final head writes nothing.
+
+**The lesson for the claim step**: STEP 1's merge of `origin/m0` and
+`origin/m42` should end with **two** commits, as a records batch does — the
+merge, then the index rebuilt on top of it — or its check will be red however
+clean the merge was. Three fires have now pushed a red merge commit for this
+reason.
