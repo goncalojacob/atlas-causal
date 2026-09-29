@@ -478,7 +478,7 @@
       ]
     },
     "bali-strait": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8212,7 +8212,7 @@
       ]
     },
     "sunda-strait": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9078,7 +9078,7 @@
       ]
     },
     "wanshan-archipelago": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

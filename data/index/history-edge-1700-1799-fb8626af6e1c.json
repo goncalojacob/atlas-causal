@@ -66,7 +66,7 @@
       ]
     },
     "bali-strait-incident--macau-incident-1799--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -435,7 +435,7 @@
       ]
     },
     "siege-of-pondicherry-1793--sunda-strait-campaign-of-january-1794--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
