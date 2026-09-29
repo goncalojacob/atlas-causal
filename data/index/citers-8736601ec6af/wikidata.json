@@ -5120,6 +5120,12 @@
     },
     {
       "dissent": false,
+      "id": "damour-massacre",
+      "kind": "event",
+      "locator": "Q1351462"
+    },
+    {
+      "dissent": false,
       "id": "darfur-genocide",
       "kind": "event",
       "locator": "Q42915906"
@@ -6209,6 +6215,12 @@
       "id": "kapp-putsch",
       "kind": "event",
       "locator": "Q161141"
+    },
+    {
+      "dissent": false,
+      "id": "karantina-massacre",
+      "kind": "event",
+      "locator": "Q1907402"
     },
     {
       "dissent": false,

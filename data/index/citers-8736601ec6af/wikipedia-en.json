@@ -3392,6 +3392,12 @@
     },
     {
       "dissent": false,
+      "id": "damour-massacre--sabra-and-shatila-massacre--reacted-to",
+      "kind": "edge",
+      "locator": "\"Damour massacre\", revision 1356232011, § Events"
+    },
+    {
+      "dissent": false,
       "id": "dayton-agreement--insurgency-in-kosovo--precondition-of",
       "kind": "edge",
       "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1370623741, § lead"
@@ -4589,6 +4595,12 @@
       "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
       "kind": "edge",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "karantina-massacre--damour-massacre--reacted-to",
+      "kind": "edge",
+      "locator": "\"Damour massacre\", revision 1356232011, lead"
     },
     {
       "dissent": false,
@@ -11522,6 +11534,12 @@
     },
     {
       "dissent": false,
+      "id": "damour-massacre",
+      "kind": "event",
+      "locator": "\"Damour massacre\", revision 1356232011"
+    },
+    {
+      "dissent": false,
       "id": "darfur-genocide",
       "kind": "event",
       "locator": "\"Darfur genocide (2003–2005)\", revision 1373825853"
@@ -12587,6 +12605,12 @@
       "id": "kapp-putsch",
       "kind": "event",
       "locator": "\"Kapp Putsch\", revision 1373832870"
+    },
+    {
+      "dissent": false,
+      "id": "karantina-massacre",
+      "kind": "event",
+      "locator": "\"Karantina massacre\", revision 1369318651"
     },
     {
       "dissent": false,

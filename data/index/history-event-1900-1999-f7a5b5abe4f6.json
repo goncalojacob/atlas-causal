@@ -9760,6 +9760,15 @@
         }
       ]
     },
+    "damour-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "dayton-agreement": {
       "from": "git",
       "versions": [
@@ -13400,6 +13409,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "karantina-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
