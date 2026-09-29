@@ -6994,11 +6994,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1814,\"end\":1814,\"date\":\"1814-05-17\"} and the first sentence of the cited article states \"14–17 May 1814\", so the day bounds are 1814-05-14 to 1814-05-17. The years are unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Buceo"
     },
@@ -8972,11 +8974,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a9-place",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1619,\"end\":1619,\"date\":\"1619-11-23\"} and the first sentence of the cited article states \"22–23 November 1619\", so the day bounds are 1619-11-22 to 1619-11-23. The years are unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Humenné"
     },
@@ -11692,11 +11696,13 @@
           "imported-facts",
           "summary-from-lead",
           "filed-from-p361",
-          "participants-from-p710"
+          "participants-from-p710",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1904,\"end\":1904,\"date\":\"1904-02-08\"} and the first sentence of the cited article states \"8–9 February 1904\", so the day bounds are 1904-02-08 to 1904-02-09. The years are unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Port Arthur"
     },
@@ -14394,11 +14400,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1905,\"end\":1905,\"date\":\"1905-05-28\",\"endDate\":\"1905-05-28\"} and the first sentence of the cited article states \"27–28 May 1905\", so the day bounds are 1905-05-27 to 1905-05-28. The years are unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Tsushima"
     },
@@ -15629,11 +15637,13 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1923,\"end\":1923,\"date\":\"1923-11-09\",\"endDate\":\"1923-11-09\"} and the first sentence of the cited article states \"8–9 November 1923\", so the day bounds are 1923-11-08 to 1923-11-09. The years are unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Beer Hall Putsch"
     },
@@ -19517,11 +19527,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1808,\"end\":1808,\"date\":\"1808-05-02\"} and the first sentence of the cited article states \"2–3 May 1808\", so the day bounds are 1808-05-02 to 1808-05-03. The years are unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Dos de Mayo Uprising"
     },
@@ -20575,12 +20587,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a14-lane-guard"
+          "a14-lane-guard",
+          "a15-days"
         ],
-        "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case.",
+        "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "execution of the Romanov family"
     },
@@ -21630,12 +21643,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a9-place",
+          "a15-days"
         ],
-        "note": "A9's place pass of 2026-09-23 gave this event the place shaba, from the item's own P625.",
+        "note": "A9's place pass of 2026-09-23 gave this event the place shaba, from the item's own P625. A15(4): the record was dated {\"start\":1977,\"end\":1977,\"date\":\"1977-05-26\"} and the first sentence of the cited article states \"from 8 March to 26 May 1977\", so the day bounds are 1977-03-08 to 1977-05-26. The years are unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "First Shaba War"
     },
@@ -21830,11 +21844,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1791,\"end\":1791,\"date\":\"1791-06\"} and the first sentence of the cited article states \"20–21 June 1791\", so the day bounds are 1791-06-20 to 1791-06-21. The years are unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Flight to Varennes"
     },
@@ -29573,11 +29589,13 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated {\"start\":1985,\"end\":1985,\"date\":\"1985-11-06\"} and the first sentence of the cited article states \"November 6–7, 1985\", so the day bounds are 1985-11-06 to 1985-11-07. The years are unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Palace of Justice Siege"
     },
@@ -34563,11 +34581,13 @@
           "imported-facts",
           "summary-from-lead",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-days"
         ],
+        "note": "A15(4): the record was dated 1521-1524 from the item, and its own article title states \"Siege of Fuenterrabia (1523-1524)\". The lead says the siege \"took place in 1523-24\", after a Franco-Navarrese army \"had taken it in 1521\", so 1521 is when the town was taken and not when this siege was. The start is 1523 and the month the item gave for 1521 goes with it; the end day the item gives is inside the new span and stays.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Siege of Fuenterrabía (1523–1524)"
     },
@@ -44009,12 +44029,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "siege-of-fuenterrabia-1523-1524",
-      "kind": "event",
-      "message": "the title states 1523–1524 and the record is dated 1521–1524",
-      "rule": "span-vs-article-title"
     },
     {
       "id": "siege-of-genoa-1522",

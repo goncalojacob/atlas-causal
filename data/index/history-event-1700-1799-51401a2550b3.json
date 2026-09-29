@@ -768,6 +768,14 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },

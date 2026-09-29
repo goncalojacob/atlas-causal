@@ -2680,7 +2680,7 @@
       "dissent": false,
       "id": "battle-of-st-lucia--capture-of-st-lucia--precondition-of",
       "kind": "edge",
-      "locator": "\"Capture of St Lucia\", revision 1370609642"
+      "locator": "\"Capture of St. Lucia\", revision 1370609642"
     },
     {
       "dissent": false,
@@ -4396,7 +4396,7 @@
       "dissent": false,
       "id": "invasion-of-dominica-1778--capture-of-st-lucia--reacted-to",
       "kind": "edge",
-      "locator": "\"Capture of St Lucia\", revision 1370609642"
+      "locator": "\"Capture of St. Lucia\", revision 1370609642"
     },
     {
       "dissent": false,
@@ -9338,6 +9338,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-buceo",
+      "kind": "event",
+      "locator": "\"Battle of Buceo\", revision 1366243583, first sentence: \"14–17 May 1814\""
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bussaco",
       "kind": "event",
       "locator": "\"Battle of Bussaco\", revision 1370785527"
@@ -9701,6 +9707,12 @@
       "id": "battle-of-humenne",
       "kind": "event",
       "locator": "\"Battle of Humenné\", revision 1370265836"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-humenne",
+      "kind": "event",
+      "locator": "\"Battle of Humenné\", revision 1370265836, first sentence: \"22–23 November 1619\""
     },
     {
       "dissent": false,
@@ -10187,6 +10199,12 @@
       "id": "battle-of-port-arthur",
       "kind": "event",
       "locator": "\"Battle of Port Arthur\", revision 1376392782"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-arthur",
+      "kind": "event",
+      "locator": "\"Battle of Port Arthur\", revision 1376392782, first sentence: \"8–9 February 1904\""
     },
     {
       "dissent": false,
@@ -10682,6 +10700,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tsushima",
+      "kind": "event",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, first sentence: \"27–28 May 1905\""
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tucapel",
       "kind": "event",
       "locator": "\"Battle of Tucapel\", revision 1376209593"
@@ -10907,6 +10931,12 @@
       "id": "beer-hall-putsch",
       "kind": "event",
       "locator": "\"Beer Hall Putsch\", revision 1370735026"
+    },
+    {
+      "dissent": false,
+      "id": "beer-hall-putsch",
+      "kind": "event",
+      "locator": "\"Beer Hall Putsch\", revision 1370735026, first sentence: \"8–9 November 1923\""
     },
     {
       "dissent": false,
@@ -11510,6 +11540,12 @@
     },
     {
       "dissent": false,
+      "id": "dos-de-mayo-uprising",
+      "kind": "event",
+      "locator": "\"Dos de Mayo Uprising\", revision 1370615812, first sentence: \"2–3 May 1808\""
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "locator": "\"Dutch Brazil\", revision 1371124077"
@@ -11657,6 +11693,12 @@
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "\"Murder of the Romanov family\", revision 1374973698"
+    },
+    {
+      "dissent": false,
+      "id": "execution-of-the-romanov-family",
+      "kind": "event",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, first sentence: \"16–17 July 1918\""
     },
     {
       "dissent": false,
@@ -11834,6 +11876,12 @@
     },
     {
       "dissent": false,
+      "id": "first-shaba-war",
+      "kind": "event",
+      "locator": "\"Shaba I\", revision 1373218991, first sentence: \"from 8 March to 26 May 1977\""
+    },
+    {
+      "dissent": false,
       "id": "first-silesian-war",
       "kind": "event",
       "locator": "\"First Silesian War\", revision 1370619632"
@@ -11867,6 +11915,12 @@
       "id": "flight-to-varennes",
       "kind": "event",
       "locator": "\"Flight to Varennes\", revision 1366319196"
+    },
+    {
+      "dissent": false,
+      "id": "flight-to-varennes",
+      "kind": "event",
+      "locator": "\"Flight to Varennes\", revision 1366319196, first sentence: \"20–21 June 1791\""
     },
     {
       "dissent": false,
@@ -13115,6 +13169,12 @@
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "\"Palace of Justice siege\", revision 1374219418"
+    },
+    {
+      "dissent": false,
+      "id": "palace-of-justice-siege",
+      "kind": "event",
+      "locator": "\"Palace of Justice siege\", revision 1374219418, first sentence: \"November 6–7, 1985\""
     },
     {
       "dissent": false,
