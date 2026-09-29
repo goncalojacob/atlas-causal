@@ -1976,6 +1976,12 @@
     },
     {
       "dissent": false,
+      "id": "bali-strait-incident--macau-incident-1799--precondition-of",
+      "kind": "edge",
+      "locator": "“Macau Incident (1799)”, revision 1370627318, lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "bangladesh-liberation-war--india-pakistan-war-of-1971--caused",
       "kind": "edge",
       "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
@@ -6248,6 +6254,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pondicherry-1793--sunda-strait-campaign-of-january-1794--enabled",
+      "kind": "edge",
+      "locator": "“Sunda Strait campaign of January 1794”, revision 1370749005, § Background"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-port-arthur--battle-of-mukden--enabled",
       "kind": "edge",
       "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
@@ -9290,6 +9302,12 @@
     },
     {
       "dissent": false,
+      "id": "bali-strait-incident",
+      "kind": "event",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    },
+    {
+      "dissent": false,
       "id": "baltic-entente",
       "kind": "event",
       "locator": "\"Baltic Entente\", revision 1363789006"
@@ -12158,6 +12176,12 @@
     },
     {
       "dissent": false,
+      "id": "french-revolutionary-wars",
+      "kind": "event",
+      "locator": "\"French Revolutionary Wars\", revision 1373816386"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
@@ -12917,6 +12941,12 @@
       "id": "maastricht-treaty",
       "kind": "event",
       "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "macau-incident-1799",
+      "kind": "event",
+      "locator": "\"Macau Incident (1799)\", revision 1370627318"
     },
     {
       "dissent": false,
@@ -14366,6 +14396,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pondicherry-1793",
+      "kind": "event",
+      "locator": "\"Siege of Pondicherry (1793)\", revision 1370744513"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "\"Siege of Port Arthur\", revision 1373678673"
@@ -14753,6 +14789,12 @@
       "id": "suez-crisis",
       "kind": "event",
       "locator": "\"Suez Crisis\", revision 1374851403"
+    },
+    {
+      "dissent": false,
+      "id": "sunda-strait-campaign-of-january-1794",
+      "kind": "event",
+      "locator": "\"Sunda Strait campaign of January 1794\", revision 1370749005"
     },
     {
       "dissent": false,

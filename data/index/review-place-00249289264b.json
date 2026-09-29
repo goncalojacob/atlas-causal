@@ -1160,6 +1160,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "bali-strait",
+      "kind": "place",
+      "names": [
+        "Bali Strait",
+        "Estreito de Bali"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5340,7 +5368,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -13835,7 +13863,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "pondicherry",
       "kind": "place",
       "names": [
@@ -17897,6 +17925,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "sunda-strait",
+      "kind": "place",
+      "names": [
+        "Sunda Strait",
+        "Estreito de Sunda"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -19834,6 +19890,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "wanshan-archipelago",
+      "kind": "place",
+      "names": [
+        "Wanshan Qundao",
+        "Wanshan Archipelago"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,

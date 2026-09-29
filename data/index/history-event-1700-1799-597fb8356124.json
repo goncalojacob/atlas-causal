@@ -77,7 +77,7 @@
       ]
     },
     "action-of-6-july-1746": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -127,6 +127,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "bali-strait-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -345,7 +354,7 @@
       ]
     },
     "battle-of-madras": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -842,7 +851,7 @@
       ]
     },
     "first-carnatic-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -899,6 +908,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "french-revolutionary-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -1016,6 +1034,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "macau-incident-1799": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -1212,6 +1239,15 @@
         }
       ]
     },
+    "siege-of-pondicherry-1793": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "siege-of-port-au-prince-1793": {
       "from": "git",
       "versions": [
@@ -1284,6 +1320,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sunda-strait-campaign-of-january-1794": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

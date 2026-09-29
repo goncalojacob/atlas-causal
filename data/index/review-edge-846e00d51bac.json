@@ -4094,6 +4094,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "bali-strait-incident",
+      "id": "bali-strait-incident--macau-incident-1799--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "macau-incident-1799",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "bangladesh-liberation-war",
       "id": "bangladesh-liberation-war--india-pakistan-war-of-1971--caused",
@@ -22661,6 +22689,34 @@
       "status": "active",
       "to": "battle-of-sadras",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-pondicherry-1793",
+      "id": "siege-of-pondicherry-1793--sunda-strait-campaign-of-january-1794--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sunda-strait-campaign-of-january-1794",
+      "type": "enabled"
     },
     {
       "authors": [

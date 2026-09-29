@@ -2678,6 +2678,12 @@
     },
     {
       "dissent": false,
+      "id": "bali-strait-incident",
+      "kind": "event",
+      "locator": "Q20011866"
+    },
+    {
+      "dissent": false,
       "id": "baltic-entente",
       "kind": "event",
       "locator": "Q167759"
@@ -5522,6 +5528,12 @@
     },
     {
       "dissent": false,
+      "id": "french-revolutionary-wars",
+      "kind": "event",
+      "locator": "Q207318"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040"
@@ -6191,6 +6203,12 @@
       "id": "maastricht-treaty",
       "kind": "event",
       "locator": "Q11146"
+    },
+    {
+      "dissent": false,
+      "id": "macau-incident-1799",
+      "kind": "event",
+      "locator": "Q20870400"
     },
     {
       "dissent": false,
@@ -7586,6 +7604,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pondicherry-1793",
+      "kind": "event",
+      "locator": "Q22907839"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-port-arthur",
       "kind": "event",
       "locator": "Q210800"
@@ -7937,6 +7961,12 @@
       "id": "suez-crisis",
       "kind": "event",
       "locator": "Q49101"
+    },
+    {
+      "dissent": false,
+      "id": "sunda-strait-campaign-of-january-1794",
+      "kind": "event",
+      "locator": "Q7639108"
     },
     {
       "dissent": false,

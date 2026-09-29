@@ -477,6 +477,15 @@
         }
       ]
     },
+    "bali-strait": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "balkans": {
       "from": "git",
       "versions": [
@@ -1495,7 +1504,7 @@
       ]
     },
     "chennai": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5406,7 +5415,7 @@
       ]
     },
     "nagapattinam": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8202,6 +8211,15 @@
         }
       ]
     },
+    "sunda-strait": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "suomenlinna": {
       "from": "git",
       "versions": [
@@ -9056,6 +9074,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "wanshan-archipelago": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
