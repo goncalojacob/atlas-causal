@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-23",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -26,7 +26,8 @@
       "standing-backfilled",
       "imported-by-wikidata",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "note": "A7, 23 September: the interval was 1990-10-01 to 1993-08-04, the day of the Arusha Accords, and the accords did not end the war. The article this record already cites — \"Rwandan Civil War\", revision 1371242033 — opens: \"was fought between the Rwandan Armed Forces ... and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994\". The end moves to 1994-07-18 and nothing else on the record is touched. Read at its own cited revision, so no new source was added."
   },
@@ -50,6 +51,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Rwandan Civil War\", revision 1371242033"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q426722, P31 Q8465"
     }
   ],
   "title": "Rwandan Civil War",
@@ -63,5 +68,6 @@
   "place": "rwanda-q1037",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
   "actors": []
 }

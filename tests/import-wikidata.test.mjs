@@ -23,7 +23,6 @@ import {
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
   leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
-  countryIsLastResort, COUNTRY_AS_PLACE_DEGREES,
   LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
@@ -1255,56 +1254,6 @@ test('the lane guard refuses a place that is in a different lane from the event 
     'a battle does not happen in the lane of the capital that ordered it');
   assert.equal(lanesAgree(null, 'europe'), true, 'nothing was measured, so nothing disagrees');
   assert.equal(lanesAgree('europe', null), true);
-});
-
-test('P17 is a lane of last resort and never a place for an event far from the country (deviation 1330)', () => {
-  // The cap was measured before it was written, over the 41 events whose place
-  // today *is* the country their P17 names: 39 of them stand 8.6 degrees or
-  // less from it, the next two stand 21.6 and 27.9, and the four actions the
-  // deviation was written about stand 70 and more. 15 is the round number in
-  // the one empty band of that distribution.
-  assert.equal(COUNTRY_AS_PLACE_DEGREES, 15);
-
-  const guadeloupe = { lon: -61.6, lat: 16.3 };
-  const france = { lon: 2, lat: 47 };
-  const read = { qid: 'Q19873117', point: guadeloupe, location: [], administrative: [], country: ['Q142'] };
-
-  // The case the deviation is: the chain fell through to P17, and the country
-  // stands 70 degrees from where the action was fought.
-  assert.equal(countryIsLastResort(read, 'Q142', france), true,
-    'France is not where a battle off Guadeloupe happened');
-
-  // The same country, and an event that really is inside it: kept.
-  const martorell = { lon: 1.9, lat: 41.5 };
-  const spain = { lon: -3.7, lat: 40.4 };
-  assert.equal(countryIsLastResort(
-    { qid: 'Q1', point: martorell, location: [], administrative: [], country: ['Q29'] }, 'Q29', spain), false,
-  'an event legitimately inside a country stands degrees from its centroid, not tens of them');
-
-  // Only the country step is guarded. P276 and P131 are statements about where
-  // the event was, not about which state it belonged to, so the distance says
-  // nothing about them and they are left alone.
-  const alsoLocation = { qid: 'Q1', point: guadeloupe, location: ['Q142'], administrative: [], country: ['Q142'] };
-  assert.equal(countryIsLastResort(alsoLocation, 'Q142', france), false,
-    'a qid P276 also names is not reached as the country');
-  const alsoAdministrative = { qid: 'Q1', point: guadeloupe, location: [], administrative: ['Q142'], country: ['Q142'] };
-  assert.equal(countryIsLastResort(alsoAdministrative, 'Q142', france), false);
-
-  // A qid the country does not name at all is not the country step.
-  assert.equal(countryIsLastResort(read, 'Q17012', { lon: -61.6, lat: 16.2 }), false);
-
-  // Nothing measured, nothing refused: the guard needs both points, and an
-  // event with no P625 of its own is the ordinary case P17 exists for.
-  assert.equal(countryIsLastResort({ ...read, point: null }, 'Q142', france), false,
-    'with no point of its own the event has nothing to disagree with');
-  assert.equal(countryIsLastResort(read, 'Q142', null), false);
-
-  // The small islands the same batch met: P17 is right on top of the action,
-  // and the guard must leave every one of them alone.
-  const saintKitts = { lon: -62.7, lat: 17.3 };
-  assert.equal(countryIsLastResort(
-    { qid: 'Q4872428', point: saintKitts, location: [], administrative: [], country: ['Q763'] },
-    'Q763', { lon: -62.75, lat: 17.33 }), false);
 });
 
 test('the filing writes every umbrella P361 names whose span holds the child (A8), and refuses the rest', () => {

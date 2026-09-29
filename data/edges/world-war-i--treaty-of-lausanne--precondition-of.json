@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "world-war-i--treaty-of-lausanne--precondition-of",
   "kind": "edge",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -23,6 +23,10 @@
   },
   "origin": {
     "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-29",
+    "reason": "A15(5): the sentence this edge quotes names a third event as the cause — \"Greece fought against Turkish nationalists led by Mustafa Kemal, a war that eventually resulted in a massive population exchange between the two countries under the Treaty of Lausanne\" — and that war is turkish-war-of-independence, which this atlas holds and which already reaches the treaty through turkish-war-of-independence--treaty-of-lausanne--caused. The quote is the war’s aftermath section placing Lausanne in time, not an argument that the World War caused it, so the edge is dropped rather than re-pointed at a link that is already here."
   },
   "sources": [
     {

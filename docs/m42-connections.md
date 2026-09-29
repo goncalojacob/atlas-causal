@@ -5830,3 +5830,34 @@ Defense sits between the 2008–09 war and this one and is the obvious next Asia
   while saying nothing. **The fold ranks candidates and never decides an edge**, and
   this batch is the reminder: every hit was read in its own sentence before
   anything was written, and three of four were refused there.
+
+## A15(6)'s five filings, argued without a place — 29 September
+
+A15(6) refuses a `P17` country as an event's place where the country's own item
+says it was not there, and it cleared 32 places (its section is in
+`docs/m42-pool.md`). Five of the 32 are **filed under an umbrella and name no
+actor**, so the correspondence `tests/m67.test.mjs` holds — *a filing nobody
+argued in writing fails* — was satisfied by their place until this fire and is
+satisfied here instead.
+
+**The filing's own evidence has not changed, and it was never the place.** All
+five carry `filed-from-p361`: the item itself states that the event is part of
+the umbrella, which is what A6 and A8 read, and what the batch that wrote the
+filing recorded. Losing the place lost the M67 correspondence, not the argument.
+
+| child | its umbrella | the place A15(6) took, and why |
+| --- | --- | --- |
+| `anglo-french-war-1627-1629` | `thirty-years-war` | France (Q142), whose item dates its inception to **1958** |
+| `battle-of-martorell-1641` | `thirty-years-war` | Spain (Q29), inception **1715** |
+| `naval-battle-of-tarragona` | `thirty-years-war` | Spain (Q29), inception **1715** |
+| `siege-of-philippsburg-1644` | `thirty-years-war` | Germany (Q183), inception **1949** |
+| `invasion-of-jersey-1779` | `american-revolutionary-war` | the United Kingdom (Q145), inception **1801** |
+
+Each was a modern state's centroid standing in for a battlefield, on an event
+that ended between 122 and 331 years before that state's item says the state
+began. **None of the five names an actor**, and this fire wrote none: who fought
+at Martorell in 1641 is a claim with a role attached, and `actors` is where the
+atlas puts an argument, not a gap-filler. **The cheapest repair is a place
+record per battlefield**, which A9's chain writes the next time a batch touches
+these events — the item's own `P625` or its `P276` is what it would read, and
+neither is a country.

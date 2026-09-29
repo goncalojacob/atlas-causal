@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-09-29",
   "origin": {
     "tool": "wikidata"
   },
@@ -44,5 +44,5 @@
   },
   "region": null,
   "regionNote": null,
-  "summary": "Wikidata item Q2076213, imported by tools/import/wikidata.mjs. The item's own description reads \"commune in Ouest department, Haiti\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it."
+  "summary": null
 }

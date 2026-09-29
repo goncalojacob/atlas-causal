@@ -13,30 +13,44 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": null,
-  "origin": {
-    "tool": "basemaps"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
-      "imported-facts"
-    ]
+      "imported-facts",
+      "a15-end-from-item",
+      "polity-description"
+    ],
+    "note": "A15(10): the end was 1649, the horizon of the Historical Basemaps snapshot series and not a claim about the empire. Q28573 names two dissolution years, 1533 (Cajamarca and Cuzco) and 1572 (the fall of Vilcabamba), so the end is the range the item states and not a choice between them. Its inception, 1438, is earlier than this record’s start of 1500, which is the 1500 snapshot and is left as A15(10) asks."
+  },
+  "origin": {
+    "tool": "basemaps"
   },
   "sources": [
     {
       "source": "historical-basemaps",
       "locator": "NAME \"Inca Empire\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q28573, P571 and P576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Inca Empire\", revision 1375989014"
     }
   ],
   "actorType": "polity",
   "names": [
     "Inca Empire"
   ],
-  "summary": "A polity the Historical Basemaps dataset draws in the snapshots for 1500, 1530 and 1600. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1500 to 1649, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "The English Wikipedia article \"Inca Empire\", at revision 1375989014, opens: \"The Inca Empire, officially known as the Realm of the Four Parts, was the largest empire in pre-Columbian America. The administrative, political, and military center of the empire was in the city of Cusco. The Inca civilisation rose from the Peruvian highlands sometime in the early 13th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1438 on Q28573 and whose dissolution it states as 1533 and again as 1572, both at normal rank. Q28573 carries no area and no population. The two dissolution years are why this record ends in a range and not a year. A polity the Historical Basemaps dataset draws in the snapshots for 1500, 1530 and 1600. That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors' work in progress and asks to be checked against other sources before use. The interval on this record is the span those snapshots cover, 1500 to 1649, and not a claim about when this polity began or ended: a snapshot says where a border was drawn for one year, and the years between two of them are assumed. This record was written by the import from those fields and asserts nothing the dataset does not.",
   "when": {
     "start": 1500,
-    "end": 1649
+    "end": {
+      "min": 1533,
+      "max": 1572
+    }
   },
   "where": null
 }

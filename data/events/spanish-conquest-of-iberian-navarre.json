@@ -19,8 +19,9 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a9-place"
-    ]
+      "a15-country-refused"
+    ],
+    "note": "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1529). The lane is unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -50,7 +51,7 @@
     "start": 1512,
     "end": 1529
   },
-  "place": "spain-q29",
+  "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "italian-wars",

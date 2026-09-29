@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-23",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "status": "draft"
   },
@@ -43,6 +44,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Lateran Treaty\", revision 1376059839"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q193270, P31 Q9557810"
     }
   ],
   "title": "Lateran Treaty",
@@ -55,5 +60,6 @@
   },
   "place": "vatican-city",
   "region": "europe",
+  "category": "treaty",
   "actors": []
 }

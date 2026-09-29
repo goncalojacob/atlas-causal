@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Laotian Civil War\", revision 1370626595"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q877450, P31 Q8465"
     }
   ],
   "title": "Laotian Civil War",
@@ -61,5 +66,6 @@
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "vietnam-war",
+  "category": "war",
   "actors": []
 }

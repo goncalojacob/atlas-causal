@@ -13,17 +13,28 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-09-29",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a15-merged"
+    ],
+    "note": "A15(9): rio-de-janeiro-q8678, written by A9 on 22 September from Q8678, is merged into this record — one city, one point 1.2 km away, two ids. Q8678, the article and the item’s other names come across with it, and the event that pointed at the other id points here. The same merge london took in A14(6)."
+  },
   "origin": {
     "tool": "assistant",
     "run": "m50"
   },
-  "review": {
-    "status": "draft"
+  "wikidata": "Q8678",
+  "wikipedia": {
+    "en": "Rio de Janeiro"
   },
   "sources": [],
   "names": [
-    "Rio de Janeiro"
+    "Rio de Janeiro",
+    "Rio de Janeiro city",
+    "Río de Janeiro City",
+    "City of Río de Janeiro"
   ],
   "where": {
     "lon": -43.196,

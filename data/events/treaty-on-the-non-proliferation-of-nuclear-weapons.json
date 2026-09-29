@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,8 @@
       "m40-retracted",
       "standing-backfilled",
       "imported-by-wikidata",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -48,6 +49,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Treaty on the Non-Proliferation of Nuclear Weapons\", revision 1375952857"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q186444, P31 Q131569"
     }
   ],
   "title": "Treaty on the Non-Proliferation of Nuclear Weapons",
@@ -59,5 +64,6 @@
   },
   "place": "new-york",
   "region": null,
+  "category": "treaty",
   "actors": []
 }

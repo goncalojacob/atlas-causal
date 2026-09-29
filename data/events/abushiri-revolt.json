@@ -17,15 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a9-place",
-      "filed-from-p361"
-    ]
+      "filed-from-p361",
+      "a15-country-refused"
+    ],
+    "note": "A15(6): the place was german-east-africa-q153963, from the item's P17, and it is refused because the country's point is 1056 km from the nearest point on the event's own chain. The lane is unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -55,9 +56,9 @@
     "start": 1888,
     "end": 1889
   },
-  "place": "german-east-africa-q153963",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane kept by A15(6): it was derived from german-east-africa-q153963, the country this event was placed at, and that place is refused while the lane it gave is right.",
   "parent": "scramble-for-africa",
   "category": "revolution",
   "actors": []

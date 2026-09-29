@@ -17,16 +17,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
       "filed-from-p527",
-      "a14-lane-guard"
+      "a15-lane-from-point",
+      "a15-category-from-p31"
     ],
-    "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept."
+    "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept. A15(7): the item names five locations and they split three asia (Golan, Near East, Middle East) to two africa (Suez Canal, Sinai), which is no majority and no correction: the war had a front on each side. The lane africa stands as it was."
   },
   "origin": {
     "tool": "wikidata"
@@ -56,6 +57,10 @@
     {
       "source": "wikidata",
       "locator": "Q49100"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q49100, P31 Q198"
     }
   ],
   "title": "Yom Kippur War",
@@ -68,6 +73,8 @@
   },
   "place": null,
   "region": "africa",
+  "parent": "arab-israeli-conflict",
+  "category": "war",
   "actors": [
     {
       "actor": "israel",
@@ -81,6 +88,5 @@
       "actor": "syria",
       "role": "belligerent"
     }
-  ],
-  "parent": "arab-israeli-conflict"
+  ]
 }

@@ -17,14 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a15-days"
+    ],
+    "note": "A15(4): the record was dated {\"start\":1905,\"end\":1905,\"date\":\"1905-05-28\",\"endDate\":\"1905-05-28\"} and the first sentence of the cited article states \"27–28 May 1905\", so the day bounds are 1905-05-27 to 1905-05-28. The years are unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -46,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Battle of Tsushima\", revision 1375712462"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tsushima\", revision 1375712462, first sentence: \"27–28 May 1905\""
     }
   ],
   "title": "Battle of Tsushima",
@@ -53,7 +59,7 @@
   "when": {
     "start": 1905,
     "end": 1905,
-    "date": "1905-05-28",
+    "date": "1905-05-27",
     "endDate": "1905-05-28"
   },
   "place": "tsushima-strait",

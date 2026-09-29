@@ -24,7 +24,8 @@
       "m42-reinstated",
       "a9-place",
       "summary-from-lead",
-      "a6-filed"
+      "a6-filed",
+      "a15-category-from-p31"
     ],
     "status": "draft",
     "note": "A6: carried out across occupied Europe through the war's own years, and filed as the corpus already files `the-extermination-of-the-jews-1941-1945`, `the-holocaust-in-romania` and `foibe-massacres`."
@@ -49,6 +50,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Romani Holocaust\", revision 1374733157"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q117571, P31 Q750215"
     }
   ],
   "title": "Porajmos",
@@ -61,5 +66,6 @@
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",
+  "category": "death",
   "actors": []
 }

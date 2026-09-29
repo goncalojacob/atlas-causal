@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-23",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -42,6 +43,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Ethiopian Civil War\", revision 1375950588"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q257724, P31 Q8465"
     }
   ],
   "title": "Ethiopian Civil War",
@@ -55,5 +60,6 @@
   "place": "ethiopia-q115",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
   "actors": []
 }
