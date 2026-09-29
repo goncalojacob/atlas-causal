@@ -152,6 +152,15 @@
         }
       ]
     },
+    "battle-of-cape-rachado": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-chedabucto": {
       "from": "git",
       "versions": [

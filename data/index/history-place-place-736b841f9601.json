@@ -9304,6 +9304,15 @@
         }
       ]
     },
+    "tanjung-tuan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "tarbes": {
       "from": "git",
       "versions": [

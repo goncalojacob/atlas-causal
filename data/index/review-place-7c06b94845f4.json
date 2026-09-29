@@ -18668,6 +18668,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "tanjung-tuan",
+      "kind": "place",
+      "names": [
+        "Tanjung Tuan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "tarbes",

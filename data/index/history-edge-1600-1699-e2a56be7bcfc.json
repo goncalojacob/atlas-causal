@@ -11,6 +11,15 @@
         }
       ]
     },
+    "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of": {
       "from": "git",
       "versions": [
@@ -428,6 +437,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-malacca-1606--battle-of-cape-rachado--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

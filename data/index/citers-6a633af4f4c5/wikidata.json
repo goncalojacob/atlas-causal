@@ -3086,6 +3086,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cape-rachado",
+      "kind": "event",
+      "locator": "Q1953346"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-capo-d-orso",
       "kind": "event",
       "locator": "Q38251286"

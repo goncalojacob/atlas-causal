@@ -2216,6 +2216,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Cape Rachado\", revision 1370436218"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cartagena-de-indias--invasion-of-cuba-1741--caused",
       "kind": "edge",
       "locator": "\"Invasion of Cuba (1741)\", revision 1370623950, § Background"
@@ -6494,6 +6506,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-malacca-1606--battle-of-cape-rachado--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Cape Rachado\", revision 1370436218"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1606--battle-of-cape-rachado--caused",
+      "kind": "edge",
+      "locator": "\"Siege of Malacca (1606)\", revision 1370743201"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206, § Background — Prior conflicts"
@@ -9887,6 +9911,12 @@
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cape-rachado",
+      "kind": "event",
+      "locator": "\"Battle of Cape Rachado\", revision 1370436218"
     },
     {
       "dissent": false,

@@ -7543,6 +7543,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "degree": 2,
+      "id": "battle-of-cape-rachado",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cape Rachado"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-capo-d-orso",
@@ -37029,7 +37062,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "siege-of-malacca-1606",
       "kind": "event",
       "origin": {
@@ -37062,7 +37095,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "siege-of-malacca-1640-1641",
       "kind": "event",
       "origin": {

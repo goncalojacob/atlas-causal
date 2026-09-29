@@ -4880,6 +4880,34 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "battle-of-cape-rachado",
+      "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-malacca-1640-1641",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "pares-1936-war-and-trade-in-the-west-indies"
       ],
@@ -23343,6 +23371,34 @@
       "status": "active",
       "to": "second-battle-of-colenso",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-malacca-1606",
+      "id": "siege-of-malacca-1606--battle-of-cape-rachado--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-cape-rachado",
+      "type": "caused"
     },
     {
       "authors": [
