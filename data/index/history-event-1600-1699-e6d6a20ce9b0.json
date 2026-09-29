@@ -1099,6 +1099,15 @@
         }
       ]
     },
+    "insurrection-of-pernambuco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "iroquois-war-1609": {
       "from": "git",
       "versions": [
@@ -1372,6 +1381,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "recapture-of-angola": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

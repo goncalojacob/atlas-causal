@@ -3752,6 +3752,18 @@
     },
     {
       "dissent": false,
+      "id": "dutch-brazil-1630-1654--insurrection-of-pernambuco--caused",
+      "kind": "edge",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843, § Immediate causes of the Insurrection"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--recapture-of-angola--precondition-of",
+      "kind": "edge",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
+    },
+    {
+      "dissent": false,
       "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
       "kind": "edge",
       "locator": "\"Action of 12–17 January 1640\", revision 1370425892, § Background"
@@ -4721,6 +4733,18 @@
       "id": "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of",
       "kind": "edge",
       "locator": "\"Execution of Louis XVI\", revision 1373172133, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-pernambuco--first-battle-of-guararapes--caused",
+      "kind": "edge",
+      "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    },
+    {
+      "dissent": false,
+      "id": "insurrection-of-pernambuco--first-battle-of-guararapes--caused",
+      "kind": "edge",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
     },
     {
       "dissent": false,
@@ -13124,6 +13148,12 @@
     },
     {
       "dissent": false,
+      "id": "insurrection-of-pernambuco",
+      "kind": "event",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
+    },
+    {
+      "dissent": false,
       "id": "international-covenant-on-civil-and-political-rights",
       "kind": "event",
       "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
@@ -14291,6 +14321,12 @@
       "id": "rebellion-of-tupac-amaru-ii",
       "kind": "event",
       "locator": "\"Rebellion of Túpac Amaru II\", revision 1376254812"
+    },
+    {
+      "dissent": false,
+      "id": "recapture-of-angola",
+      "kind": "event",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
     },
     {
       "dissent": false,

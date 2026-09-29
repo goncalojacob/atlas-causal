@@ -21092,7 +21092,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 9,
+      "degree": 11,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "names": [
@@ -22736,7 +22736,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "first-battle-of-guararapes",
       "kind": "event",
       "origin": {
@@ -26072,6 +26072,39 @@
       "revised": null,
       "status": "active",
       "title": "Insurrection of 31 May – 2 June 1793"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 2,
+      "id": "insurrection-of-pernambuco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a15-country-refused",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A15(6): the place would have been brazil-q155, from the item's P17, refused because the country's inception (1822) is after the event ended (1654). The item carries no P625, P276 or P131, so the only point the import had was that same country's, which is why the lane is written (deviation 1353). Filed under dutch-portuguese-war by span and subject: the lead says the revolution “occurred in the course of the second Dutch invasion during the Dutch–Portuguese War”, at revision 1370623843.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Insurrection of Pernambuco"
     },
     {
       "authors": [
@@ -33288,6 +33321,39 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Rebellion of Túpac Amaru II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "recapture-of-angola",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "note": "Filed under dutch-portuguese-war by span and subject (M62): 12 July to 15 August 1648 is inside 1601-1661, and the article's own first sentence calls it “a military campaign fought between the Portuguese and the Dutch occupiers of Angola”, at revision 1370706489. The item's own P361 is Q138011120, the South Atlantic campaign, which this atlas does not hold.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Recapture of Angola"
     },
     {
       "authors": [

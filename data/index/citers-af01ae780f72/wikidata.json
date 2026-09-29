@@ -6266,6 +6266,12 @@
     },
     {
       "dissent": false,
+      "id": "insurrection-of-pernambuco",
+      "kind": "event",
+      "locator": "Q10303008"
+    },
+    {
+      "dissent": false,
       "id": "international-covenant-on-civil-and-political-rights",
       "kind": "event",
       "locator": "Q392119"
@@ -7505,6 +7511,12 @@
       "id": "rebellion-of-tupac-amaru-ii",
       "kind": "event",
       "locator": "Q1806552"
+    },
+    {
+      "dissent": false,
+      "id": "recapture-of-angola",
+      "kind": "event",
+      "locator": "Q7302285"
     },
     {
       "dissent": false,

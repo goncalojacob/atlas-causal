@@ -8546,7 +8546,7 @@
       ]
     },
     "shanghai": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10508,7 +10508,7 @@
       ]
     },
     "xuzhou": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
