@@ -9450,7 +9450,7 @@
       ]
     },
     "tokyo-bay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

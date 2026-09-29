@@ -2352,7 +2352,15 @@
           "fields": [
             "review",
             "sources",
-            "summary"
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "review",
+            "when"
           ],
           "on": "2026-09-29"
         }

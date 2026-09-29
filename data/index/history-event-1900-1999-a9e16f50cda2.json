@@ -10224,8 +10224,14 @@
         },
         {
           "fields": [
-            "category",
             "place",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "category",
             "review",
             "sources"
           ],
@@ -10784,6 +10790,12 @@
             "review",
             "sources",
             "when"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "review"
           ],
           "on": "2026-09-29"
         }
@@ -11917,6 +11929,12 @@
             "review"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-29"
         },
         {
           "fields": [
@@ -13263,8 +13281,14 @@
         },
         {
           "fields": [
-            "category",
             "place",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "category",
             "review",
             "sources"
           ],
@@ -13652,7 +13676,13 @@
           "fields": [
             "category",
             "review",
-            "sources",
+            "sources"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "review",
             "summary"
           ],
           "on": "2026-09-29"
@@ -17794,8 +17824,14 @@
         },
         {
           "fields": [
-            "category",
             "place",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "category",
             "review",
             "sources"
           ],
@@ -22030,6 +22066,12 @@
         {
           "fields": [
             "place",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
             "review",
             "summary"
           ],
@@ -22185,6 +22227,12 @@
             "review"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-29"
         },
         {
           "fields": [
