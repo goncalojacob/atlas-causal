@@ -13,13 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a15-country-refused"
+    ],
+    "note": "A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1530). The lane is unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -49,9 +51,9 @@
     "start": 1526,
     "end": 1530
   },
-  "place": "italy-q38",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane kept by A15(6): it was derived from italy-q38, the country this event was placed at, and that place is refused while the lane it gave is right.",
   "parent": "italian-wars",
   "category": "war",
   "actors": []

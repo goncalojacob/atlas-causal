@@ -13979,3 +13979,95 @@ because both its ends are parts of `afghan-conflict`. So A15(11)'s number
 stands still while one umbrella-crossing argument was replaced by a
 better-attributed one. Validator **0 errors, 590 warnings**; one new pure
 suite, `tests/a15-chronology.test.mjs`, 6 tests.
+
+## A15 (6) — a country is a place only when it was there, and the 32 it refused
+
+*29 September, the 05:07Z fire. Three requests to `wbgetentities`, 103 items in
+all: the 63 events' own items for their `P17` count and their own point, and the
+40 country items for `P571`, `P576` and `P625`.*
+
+A14(2) added a lane guard to A9 — a place whose lane disagrees with the event's
+own is not the event's place — and it cannot catch a country **in the right
+lane that did not exist yet**. The 25 September review found 23 pre-1800 events
+standing on a modern state's point and 46 placed at a country neither their
+title nor their summary names. `countryRefusal()` is A15(6)'s gate, and it runs
+before the chain does anything with the item, reuse included.
+
+**Three refusals and no fourth, and each is a fact on the item rather than a
+judgement about the event.** The inception (`P571`) after the event's end or the
+dissolution (`P576`) before its start; a `P17` with more than one value, which
+names no *one* country and whose first value is alphabetical accident; and a
+point more than **1,000 km** from every point the event's own chain of parents
+and children stands at. The distance is deliberately loose, because a country's
+`P625` is its capital or its centroid: a thousand kilometres refuses Madrid for
+a battle in Mexico and keeps Paris for a battle in Alsace.
+
+**The set, re-measured.** The review counted 23 and 46; on this fire's corpus
+they are **28 pre-1800** and **47 naming their country nowhere**, **63 events
+in all** once the overlap is taken out. The numbers moved because the corpus did
+— four curation fires and sixteen batches since — and the set is derived here
+rather than copied.
+
+| refused because | |
+| --- | --- |
+| the country's inception is after the event ended | **21** |
+| the country's point is more than 1,000 km from the chain | **6** |
+| the item names more than one country | **4** |
+| the country was dissolved before the event began | **1** |
+| **refused in all** | **32** |
+| kept: the country was there, names one, and is near | **31** |
+
+**The 21 are what the pass is for.** Five Italian Wars of the 1490s to 1550s and
+the War of the League of Cognac stood on **Italy (Q38)**, whose own item dates
+its inception to **1946**; `siege-of-philippsburg-1644` on Germany (1949);
+`raid-on-oyster-river` (1694) on the United States (1776);
+`spanish-conquest-of-iberian-navarre`, `battle-of-martorell-1641` and
+`naval-battle-of-tarragona` on Spain (1715); `arauco-war` on Chile (1810);
+`rebellion-of-tupac-amaru-ii` on Peru (1821); `russo-swedish-war-1741-1743` on
+Finland (1917); `war-of-the-fourth-coalition` on Poland (1918);
+`battle-of-paardeberg` on South Africa (1910); `invasion-of-jersey-1779` on the
+United Kingdom (1801). **And `french-revolution` and `anglo-french-war-1627-1629`
+on France (Q142), whose inception the item gives as 1958** — the Fifth
+Republic. That last one is the gate at its most mechanical and it is still
+right: what it takes away is a mark drawn on a state that post-dates the
+Revolution by 169 years, and the lane it happened in is kept.
+
+**`world-war-ii` was standing on Russia**, inception 1991. That is review
+finding 1's own example, answered.
+
+**The four multi-valued ones.** `revolutions-of-1989` at the People's Republic
+of Bulgaria, whose item names **six** countries; `russian-civil-war` at the
+Russian Republic (three); `partition-of-india` at the British Raj (three);
+`1952-egyptian-revolution` at the Kingdom of Egypt (two). This is the Great
+Depression's nine (A14(2)) one step further back.
+
+**The six refused on distance are the ones worth arguing about.**
+`crossing-of-the-andes` at Argentina, 6,962 km from its own chain;
+`eastern-front` at the Soviet Union, 3,334 km; `wall-street-crash-of-1929` at
+the United States, 2,080 km; `congo-crisis` at the Republic of the Congo
+(Léopoldville), 1,447 km; `may-1958-crisis-in-france` at the French Fourth
+Republic, 1,347 km; and **`abushiri-revolt` at German East Africa, 1,056 km,
+which is 56 km past the threshold**. The gate is mechanical and that one is the
+case a person should look at: the revolt was on the Tanganyika coast and the
+colony's point is inland. A threshold cannot be both loose enough for a
+centroid and tight enough for a coast.
+
+**"`region` kept" is kept, and it took writing something.** Eighteen of the 32
+had `region: null` and took their lane from the very place being refused, so
+clearing the place would have dropped them off every lane — a worse picture
+than the wrong point, and exactly the fault deviation 1409 named in A14(2)'s
+Ilinden case. So the lane each already had is **written onto the record**
+before the place goes, with a `regionNote` saying where it came from. The
+per-lane counts are unmoved to the event: **Europe 552, Americas 343, Asia 183,
+Africa 182**, which is the proof.
+
+**Counts.** 32 events cleared of their place, 18 lanes written onto the record,
+14 already carried one, **0 lanes lost**; every one flagged
+`a15-country-refused` in place of `a9-place`, with the refusal's own reason in
+`review.note`. 31 kept. 0 places deleted — a place record nothing cites is a
+`place-unused` warning and a person's to retract, not a pass's. Corpus
+unchanged: **1,260 active, 235 main, 1,025 filed, 1,048 active edges, largest
+component 711, 562 edges crossing an umbrella**. Validator **0 errors, 598
+warnings** (+8, every one `place-unused` on a country no event stands at now).
+One new pure suite, `tests/a15-country.test.mjs`, 5 tests; `haversineKm` joins
+`src/util/geo.js`, which had no need of an earth until this threshold.

@@ -13,25 +13,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a15-country-refused"
+    ],
+    "note": "A15(6): the place was poland-q36, from the item's P17, and it is refused because the country's inception (1918) is after the event ended (1807). The lane is unchanged."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q605977",
-  "sitelinks": {
-    "count": 47,
-    "on": "2026-09-24"
-  },
   "wikipedia": {
     "en": "War of the Fourth Coalition",
     "pt": "Quarta Coligação"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-09-24"
   },
   "sources": [
     {
@@ -49,9 +51,9 @@
     "start": 1806,
     "end": 1807
   },
-  "place": "poland-q36",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane kept by A15(6): it was derived from poland-q36, the country this event was placed at, and that place is refused while the lane it gave is right.",
   "parent": "napoleonic-wars",
   "category": "war",
   "actors": []
