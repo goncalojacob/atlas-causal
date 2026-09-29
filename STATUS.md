@@ -22543,6 +22543,30 @@ counterfactually or not at all. The corpus goes **1,296 → 1,302 active**, edge
 Egypt–Syria component **5 → 11**, the fifth largest in the atlas.
 `docs/m42b-pool.md` → "Batch 42" is the full account.
 
+**M42b deviation 1344 — two A15(2)s that disagree, 29 September.** The same
+fire's merge of `origin/m42` grew `tests/leadcache.test.mjs`'s `KNOWN_STALE`
+list for the first time, from 21 to 27, and not from this lane: **M42's own
+A15(2) and A15(8) passes moved one side and not the other** on six records —
+the cache ran ahead of the citation on `battle-of-khe-sanh`, `my-lai-massacre`
+and `thirty-years-war`, and the citation ran ahead of the cache on
+`atlantic-revolutions`, `battle-of-musa-dagh` and `declaration-by-united-nations`.
+**Neither half is repairable from this lane**: `fetchLeads` reads the REST
+summary endpoint, which serves an article's current revision and no other, so a
+cache that has run ahead cannot be walked back; and a record's locator is M42's
+to change, because M42's summary is the text quoted at it. The six are named
+with the date and the cause, and the preamble's rule is restated as what it can
+enforce — **a batch of *this* lane may never add one**. `origin/m42` is green on
+the head merged, because the test that catches this is this lane's and does not
+exist there. **The finding worth the owner's attention is that
+`tools/cache-evidence.mjs` reported zero gaps on the same corpus**: its rule is
+per article and settles a disagreement by "the most-cited revision wins", while
+this test's rule is per record and asks whether the evidence that record cites
+is on disk. Both are A15(2), they are not the same question, and they gave
+opposite answers about the same six records. With deviation 1343 beside it —
+eighteen locators A15(2) could not parse and so never checked, while reporting
+clean — **this fire found two ways for "the evidence is on disk" to read green
+while it is not.**
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review

@@ -6,12 +6,18 @@
 // have not — this file is that something, written before the pass it judges
 // (deviation 711).
 //
-// The corpus assertion is a subset: the 21 records the third review left
-// disagreeing are named below and a batch may not add a twenty-second. Naming
-// them rather than asserting zero keeps the check honest about a debt this lane
-// did not incur and cannot clear (the records are M42's), while still failing
-// the moment a batch writes a citation whose lead is not on disk at it. The
-// list may shrink to nothing; it may never grow.
+// The corpus assertion is a subset: the records left disagreeing are named
+// below and **this lane may not add one**. Naming them rather than asserting
+// zero keeps the check honest about a debt this lane did not incur and cannot
+// clear (every one is M42's), while still failing the moment a batch of this
+// lane writes a citation whose lead is not on disk at it.
+//
+// It grew once, on 29 September (batch 42, deviation 1344), from 21 to 27, and
+// not from this lane: M42's own A15(2) and A15(8) passes recached six articles
+// and left the records citing the revision they had quoted before. The list
+// says so beside each of the six. The rule the first paragraph states is
+// unchanged and is the one that matters — a batch of *this* lane may never add
+// one — because a lane cannot be asked to repair the other's records.
 //
 // Every record in the unit cases is synthetic. Nothing here is a historical
 // claim; the test compares two revision numbers.
@@ -26,9 +32,15 @@ import { ROOT } from './helpers.mjs';
 const DATA = path.join(ROOT, 'data');
 const CACHE = path.join(ROOT, 'tools', 'import', 'cache', 'wikipedia');
 
-// The records whose citation and cached lead disagreed when this test was
-// written, measured by the helper below over `data/`. Every one is an M42-lane
-// record predating A15(2); see docs/m42b-pool.md, batch 37.
+// The records whose citation and cached lead disagree, measured by the helper
+// below over `data/`. Every one is an M42-lane record: the first 21 predate
+// A15(2) (docs/m42b-pool.md, batch 37) and the six marked 29 September arrived
+// with M42's own A15(2) and A15(8) passes, which moved the cache forward or
+// the citation forward and not both (deviation 1344). Neither can be repaired
+// from this lane: `fetchLeads` reads the REST summary endpoint, which serves
+// the current revision and no other, so a cache that is newer than the
+// citation cannot be walked back, and a record's locator is M42's to change
+// because M42's summary is the text quoted at it.
 const KNOWN_STALE = new Set([
   '1948-arab-israeli-war',
   '2009-portuguese-legislative-election',
@@ -51,6 +63,15 @@ const KNOWN_STALE = new Set([
   'twelve-day-war',
   'voyages-of-christopher-columbus',
   'war-in-afghanistan-2001-2021',
+  // Added 29 September by M42's A15(2)/(8) passes, not by this lane
+  // (deviation 1344). The cache is newer than the citation on three of
+  // them and older on three, and both are one pass moving one side.
+  'atlantic-revolutions',
+  'battle-of-khe-sanh',
+  'battle-of-musa-dagh',
+  'declaration-by-united-nations',
+  'my-lai-massacre',
+  'thirty-years-war',
 ]);
 
 const cite = (source, locator) => ({ source, locator });

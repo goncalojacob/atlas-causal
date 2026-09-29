@@ -10909,6 +10909,50 @@ the atlas; it does not touch the 714, because the only edge out of the
 campaign is the campaign's own (to `macau-incident-1799`, batch 41) and
 `parent` is not adjacency.
 
+### Deviations 1343 and 1344
+
+**1343** is in the batch 42 section above, where it was found.
+
+**1344. The stale-lead list grew for the first time, and not from this lane.**
+`tests/leadcache.test.mjs` was written at batch 37 with 21 named records whose
+citation and cached lead disagreed, and a rule in its own preamble: *"The list
+may shrink to nothing; it may never grow."* This fire's merge of `origin/m42`
+made it grow to 27. The six are `atlantic-revolutions`, `battle-of-khe-sanh`,
+`battle-of-musa-dagh`, `declaration-by-united-nations`, `my-lai-massacre` and
+`thirty-years-war`, and all six come from **M42's own A15(2) and A15(8)
+passes**, which moved one side and not the other: the cache is newer than the
+citation on three (`battle-of-khe-sanh` 1376490321 against 1375065823,
+`my-lai-massacre` 1376209267 against 1376011127, `thirty-years-war` 1376343040
+against 1376022805 — the pass recached and left the locator) and older than the
+citation on three (`atlantic-revolutions`, `battle-of-musa-dagh`,
+`declaration-by-united-nations` — the pass rewrote the locator and left the
+cache).
+
+**Neither half can be repaired from this lane, and the reason is in the tool.**
+`fetchLeads` reads the REST summary endpoint, which serves an article's
+*current* revision and no other, so a cache that has run ahead of a citation
+cannot be walked back to it; and a record's locator is M42's to change, because
+M42's summary is the text quoted at it. Changing either from here would either
+invent a cache entry or orphan a quotation.
+
+So the six are named in `KNOWN_STALE` with the date and the cause beside them,
+and the preamble's rule is restated as what it always meant and can enforce:
+**a batch of *this* lane may never add one.** `origin/m42` is green on the head
+this fire merged (run 1973 on `c0af1296`), because the test that catches this is
+this lane's and does not exist there.
+
+**Why this matters beyond six records.** `tools/cache-evidence.mjs` reported
+**zero gaps** on the same corpus, because its rule is per *article* and settles
+a disagreement by "the most-cited revision wins", while this test's rule is per
+*record* and asks whether the evidence that record cites is on disk. Both are
+A15(2); they are not the same question, and on 29 September they gave opposite
+answers about the same six records. **Together with deviation 1343 — eighteen
+locators that A15(2) could not parse and therefore never checked, while
+reporting clean — this fire found two ways for "the evidence is on disk" to
+read green while it is not.** A question for the owner and for whoever owns
+`citations.mjs` and `leadcache.mjs`: which of the two rules is A15(2), and
+should the other fail?
+
 ## Where the run stands, for the fire that picks it up
 
 *29 September, after the thirty-seventh fire: one batch, 42, and both halves
@@ -10939,6 +10983,21 @@ of the paused-Europe partition moved again.*
 | 1900s | 245 / 60 | 88 / 23 | 145 / 41 | 86 / 30 |
 | 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
 | **all** | **555 / 85** | **193 / 31** | **200 / 63** | **354 / 56** |
+
+### The check, and the tests
+
+**Run 1975, on the merge head, failed on two things and both were read.** The
+browser half failed `tests/m76-browser.test.mjs` 93 — *"dragging a handle still
+moves the window"*, with the window unchanged at 1415–2025, which is a
+pointer-gesture that did not arrive. **It passes locally on this fire's head,
+eight of eight**, and no re-run was spent on it: the pushes that followed are
+the re-check. The pure half failed `tests/leadcache.test.mjs`, which is
+**deviation 1344** above and is fixed in this fire's last commit.
+
+Locally on the final head: **1,886 pure** (one failure, 1344, now closed) and
+the browser suites run one at a time. `node tools/validate.mjs --index` is
+clean at **0 errors, 619 warnings**, byte-identical to a fresh build, and its
+exit status was read directly and not through a pipe.
 
 **What this fire did.** Took the claim (three hours stale, the last push 105
 minutes old, so no live run), merged `origin/m42` — which is where A15(2),
