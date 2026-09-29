@@ -17,15 +17,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a6-filed"
     ],
-    "status": "draft"
+    "status": "draft",
+    "note": "A6: carried out across occupied Europe through the war's own years, and filed as the corpus already files `the-extermination-of-the-jews-1941-1945`, `the-holocaust-in-romania` and `foibe-massacres`."
   },
   "origin": {
     "tool": "wikidata"
@@ -58,5 +60,6 @@
   "place": "nazi-germany-q7318",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
   "actors": []
 }
