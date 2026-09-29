@@ -10341,11 +10341,20 @@ unmoved too. Deviations **1336 to 1340**.
 
 ### The check, and the tests
 
-**Every run of this fire that was not cancelled by the next push is red on the
-same two browser tests and on nothing else** — the pair written up in batch 37's
-section, both bisected to `origin/m42`'s merge. Runs 1918, 1920, 1924, 1925, 1926
-and 1928 were **cancelled** by the pushes that followed them, which is this
-branch's normal shape and not a failure; this fire pushed eleven times.
+**Run 1930, on `93d587ab`** — this fire's final head — **concluded failure on
+exactly the two browser tests written up in batch 37's section and on nothing
+else**: 295 tests, 293 passing, 0 skipped, `# fail 2`, the same two names and the
+same pixel numbers the local run gave. Both are bisected to `origin/m42`'s merge
+and neither is this fire's. Runs 1918, 1920, 1921, 1924, 1925, 1926, 1928 and
+1929 were **cancelled** by the pushes that followed them, which is this branch's
+normal shape and not a failure; this fire pushed eleven times.
+
+**So the branch is red and it is red on somebody else's two tests.** That blocks
+the landing routine, which is the thing the owner set up so the site would keep
+growing while they were away — worth saying plainly rather than leaving in a
+table. What unblocks it is M89 §5 for the first and an unbriefed fix to
+`src/map/labels.js` for the second; `origin/m42` is red on the same pair and has
+said so in its own words.
 
 Locally, the two halves were run one after the other as this branch's own note
 advises: **1,841 pure and 295 browser, 2,136 tests, nothing skipped**, and the
