@@ -14657,29 +14657,25 @@ in its 1600 snapshot and the item ends the empire by 1572. A15(1), (5), (9),
   **A pass that writes a field the form cannot hold, or takes a place a
   correspondence rested on, is a pass that needs the suite run before it is
   believed.**
-- **The pure suite is green on this fire's tree: 1,881 tests, 1,881 pass,
-  nothing failed and nothing skipped**, run the way the check runs them since
-  M63 (`node --test $(node tools/suites.mjs --pure)`). Five of those suites are
-  this fire's own — `tests/a15-cache.test.mjs`, `a15-dates`, `a15-chronology`,
-  `a15-country` and `a15-umbrella`, **30 tests between them** — and the first
-  was written before the pass it judges and observed failing on the twelve
-  revisions it found off disk. **The 39 browser suites were still running when
-  this was written, one at a time as M63 runs them, with 145 of their tests
-  passed and none failed;** the check's own run on this head is the record, and
-  the line below says which run it is. Four invariants did fail earlier and each
-  was a pass of A15's that needed correcting, which is the paragraph above.
-- **The next curation fire is the first fire after 02:00Z on 30 September**, and
-  it owns A11(a) over every active event and A13's relations pass. **A15 is done
-  and no fire owes it again** — every one of the thirteen has its section in
-  this file, so the next import fire goes straight to A10's order of need, which
-  is Africa.
-- **The check on this fire's head is run 1966 of `validate.yml`, commit
-  `92398612`.** Its `Validate records` step passed; its `Tests` step was still
-  running when this section was written, as were the browser suites locally.
-  Runs 1943, 1944, 1951, 1953, 1954, 1960, 1962, 1964 and 1965 were **cancelled
-  by the next push**, which is deviation 1258's chain and costs nothing; run
-  **1945**, on the A15(1) commit, is the last one this fire saw conclude and it
-  was `success`. **No run of this fire has failed.**
+- **Both suites are green on this fire's tree: 2,181 tests, all passing,
+  nothing skipped** — **1,881 pure** and **300 browser**, run the way the check
+  runs them since M63 (`node --test $(node tools/suites.mjs --pure)` and the 39
+  browser suites one at a time). Five of the pure suites are this fire's own —
+  `tests/a15-cache.test.mjs`, `a15-dates`, `a15-chronology`, `a15-country` and
+  `a15-umbrella`, **30 tests between them** — and the first was written before
+  the pass it judges and observed failing on the twelve revisions it found off
+  disk. **Four invariants did fail, and each was a pass of A15's that needed
+  correcting**, which is the paragraph above; the two display faults of
+  deviation 1461 did **not** come back, because this fire added no bar to the
+  `americas` lane and no city label.
+- **The check on this fire's final head is run 1969 of `validate.yml`, commit
+  `c7f82ef2`**, and the head before it, run 1966 on `92398612`, passed
+  `Validate records` before this push replaced it. Run **1945**, on the A15(1)
+  commit, concluded `success`. Every other run of this fire — 1943, 1944, 1951,
+  1953, 1954, 1960, 1962, 1964, 1965, 1966 and 1968 — was **cancelled by the
+  next push**, which is deviation 1258's chain and costs nothing. **No run of
+  this fire has failed**, and the suites it cancelled are the 2,181 tests above,
+  run to the end locally on the same tree.
 - **Deviation numbers: take the next above 1463.** This fire wrote **1462** (the
   two-thirds rule that A15(7)'s literal "first located" made necessary) and
   **1463** (`fillTitles` pointed at Wikidata's API rather than Wikipedia's).
