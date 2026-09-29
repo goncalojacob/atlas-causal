@@ -1325,6 +1325,40 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "1975-spring-offensive",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "A9: no P625 of its own, so the place is its P276, South Vietnam, which the atlas held. A7 widened nothing: the cached lead at revision 1376882115 states no interval. Filed by the item's own P361, which names Q8740 alone. No P710, so `actors` is empty and a person writes it. A15(4)'s span-vs-article-title fires and was read, not acted on: the title says 1975 and the lead the summary quotes has the offensive open in December 1974, so the item's interval stands and the title is shorthand.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1975 spring offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -29932,7 +29966,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 5,
+      "degree": 6,
       "id": "paris-peace-accords",
       "kind": "event",
       "origin": {
@@ -42689,6 +42723,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "1975-spring-offensive",
+      "kind": "event",
+      "message": "the title states 1975 and the record is dated 1974–1975",
+      "rule": "span-vs-article-title"
     },
     {
       "id": "1980-dominican-embassy-siege-in-bogota",
