@@ -10953,7 +10953,7 @@ read green while it is not.** A question for the owner and for whoever owns
 `citations.mjs` and `leadcache.mjs`: which of the two rules is A15(2), and
 should the other fail?
 
-## Where the run stands, for the fire that picks it up
+## Where the run stands — as the thirty-seventh fire left it
 
 *29 September, after the thirty-seventh fire: one batch, 42, and both halves
 of the paused-Europe partition moved again.*
@@ -11103,3 +11103,231 @@ to read), and one deviation, **1343**, found and closed inside the batch.
 6. **Still open, unchanged**: C8, deviation 1323, question 11 (the Nine Years'
    War, `Q152218`), `Q718893` *theater of war*, and `Q20639061` (the East
    Indies theatre, which has no `P31` at all and so cannot be imported).
+
+## Batch 43 — the Indian Ocean stations of the French Revolutionary Wars, and the first edge this lane has written that moved the largest component
+
+The thirty-seventh fire's stand named `Q207318`'s Asian children as the best
+reserve with articles and pointed at three of them. The query answers **140
+children of the French Revolutionary Wars, five of them already held and 135
+not**, so the reserve is far larger than three — but almost all of it is
+Europe before 1900, which A15(1) has paused. **Eleven of the 135 fall inside
+this lane's partition**, and this batch took the five of those eleven that a
+reading of A15(1) can be satisfied for. They are all in the two thinnest cells
+of the atlas: **Africa before 1800, which was 12, and Asia before 1800, which
+was 19.**
+
+### Why five of eleven
+
+| left | why |
+| --- | --- |
+| `Q5037062` (Capture of Trincomalee, 1795) | **no `P31` at all**, so nothing says what kind of thing it is — the `Q20639061` refusal, a second time. Its English sitelink is *Invasion of Ceylon*, which is one of its own names, so A15(8) does not fire; the class does |
+| `Q4677270` (Action of 16 May 1797, off Tripoli) | the same: **no `P31`** |
+| `Q4677390` (Action of 8 September 1796, off Sumatra) | **A15(8)**: the English sitelink resolves to *Action of 9 September 1796*, which folds to none of the item's names — the item carries no alias for the ninth. The two articles are about the same engagement under two dates, and settling which is right is a reading, not an import |
+| `Q113627918` (West Indies Campaign, 1793–1798) | in the partition (the `americas` lane) and importable, but the batch is the trailing cell's and the Americas are at 354 active against Africa's 196 |
+| `Q368457` (Battle of Martinique, 1794), `Q656046` (Battle of San Juan, 1797) | the same reason: the `americas` lane is not the cell that trails |
+
+**Six candidates left**, two of them for a reason no fire can clear without a
+decision (`Q4677390`) or a class the table cannot guess (`Q5037062`,
+`Q4677270`), and three held back for the Americas' own batch.
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `invasion-of-the-cape-colony` | 10 Jun – 15 Sep 1795 | africa | `dutch-cape-colony` | the wars |
+| `battle-of-ile-ronde` | 22 Oct 1794 | africa | `ile-ronde` | the wars |
+| `action-of-9-february-1799-south-africa` | 9 Feb 1799 | africa | `southern-africa` | the wars |
+| `battle-of-port-louis` | 11 Dec 1799 | africa | `port-louis` | the wars |
+| `raid-on-manila` | Jan 1798 | asia | `manila` | the wars |
+
+All five name `french-revolutionary-wars` and nothing else the atlas holds,
+so all five are filed under it and **the main count is 235 before the batch
+and 235 after it**, as it has been for seven batches.
+
+`invasion-of-the-cape-colony` is worth a line of its own. The item is labelled
+*Battle of Muizenberg* and its English sitelink is *Invasion of the Cape
+Colony* — but that title is one of the item's own aliases, and the article's
+first sentence carries both names (*"The invasion of the Cape Colony, also
+known as the Battle of Muizenberg"*), so **A15(8) does not fire**: the title
+comes from the article, as A12(5) has it, and the item's own span — 10 June to
+15 September 1795 — is the campaign's and not the one day at Muizenberg.
+
+**Five places. Three the tool wrote** — `dutch-cape-colony` and
+`southern-africa` at `region` precision, `manila` at `city` — **and two a
+person wrote, for a reason that is new**: see deviation 1346.
+
+**A15(6) fired once and logged it**: *"no place from the country Q1027: the
+country's inception (1968) is after the event ended (1799)"* — Mauritius, for
+the battle of Port Louis. The rule kept a 1799 engagement off a 1968 state.
+
+### Eight edges, one of them across an umbrella
+
+| edge | type | crosses | what carries it |
+| --- | --- | --- | --- |
+| `bali-strait-incident` → `raid-on-manila` | `precondition-of` | no | *"There was considerable concern in India that Sercey might try again in 1798"* |
+| `bali-strait-incident` → `battle-of-port-louis` | `precondition-of` | no | *"suffered frustration at … the Bali Strait Incident … There the squadron began to fracture"*, and the same from the other side |
+| `macau-incident-1799` → `battle-of-port-louis` | `precondition-of` | no | *"Dispirited, Sercey returned westwards to Île de France … Preneuse and Brûle-Gueule were the only ships remaining"* |
+| `action-of-9-february-1799-south-africa` → `battle-of-port-louis` | `precondition-of` | no | *"the loss of Prudente … left Sercey with a shortage of available warships"* |
+| `invasion-of-the-cape-colony` → `action-of-9-february-1799-south-africa` | `enabled` | no | *"Parts of this force were subsequently deployed to bolster British forces in the Indian Ocean"* |
+| `invasion-of-the-cape-colony` → `battle-of-port-louis` | `enabled` | no | *"The blockade of Île de France was restored"* |
+| `battle-of-ile-ronde` → `bali-strait-incident` | `precondition-of` | no | *"By the time his attention turned once more to Isle de France, it had been heavily reinforced in early 1796 by a frigate squadron commanded by … Sercey"* |
+| **`french-revolution` → `battle-of-ile-ronde`** | `precondition-of` | **yes** | *"The preoccupation of the naval authorities had prevented any offensive operations"*, and *"Concerned by food shortages and a rebellious slave population … Renaud led his small squadron"* |
+
+**Nothing from a parent to its own child (A14)**, which here rules out five
+more — the wars to each of their new children.
+
+### A15(11): one of eight, and why that one is the whole story of this batch
+
+Seven of the eight edges are inside `french-revolutionary-wars`, because
+everything in the East Indies theatre the atlas holds is a child of it. The
+eighth is not, and it is also **the edge that moved the largest connected
+component for the first time in seven batches.**
+
+Before this batch, `bali-strait-incident`, `macau-incident-1799` and
+`french-invasion-of-egypt-and-syria` were a component of **three**, off on
+their own: `french-revolutionary-wars` itself carries no edge at all, so the
+umbrella that files them connects nothing. The batch's first seven edges grew
+that component from three to eight and left the largest at 715, which is A5's
+own warning — *a batch that grows the corpus and not the component has to say
+why*. So the batch went looking for the one edge that would join it, and the
+Île Ronde article states it plainly: the colony had been *"in a state of
+turmoil since the French Revolution"*, its naval authorities' preoccupation
+*"had prevented any offensive operations"*, and it was *"food shortages and a
+rebellious slave population"* — the article ties the second to the
+Convention's abolition decree — that put Renaud to sea. `french-revolution`
+sits under `atlantic-revolutions` and `battle-of-ile-ronde` under
+`french-revolutionary-wars`; they share no parent, so the edge crosses, and
+**the largest component goes 715 → 723 and the count of components 410 → 409.**
+
+That is the first time this lane has reported both numbers moving in the same
+batch, and the reason is worth keeping: **the eight-node cluster was invisible
+to the corpus because its umbrella has no edges.** An umbrella files; it does
+not connect. Where a batch's whole take hangs under one umbrella, the edge
+that matters is the one that leaves it.
+
+### A15(5): one refusal, and it is named
+
+**`raid-on-manila` → `macau-incident-1799`.** The Macau article names the raid
+once — *"when British frigates raided Manila in January 1798 not one Spanish
+ship was in a condition to oppose them"* — and it names it to date the Spanish
+squadron's repairs, not to state that the raid brought the Franco-Spanish
+sortie about. Chronology with no claim in it; refused, and the reason is that
+the sentence is a clock and not an argument.
+
+One further edge was considered and refused under A15(5)'s second clause:
+`french-revolution` → `invasion-of-the-cape-colony`. The Cape article does
+state a cause — *"In Winter 1794, during the Flanders campaign, French troops
+overran the Dutch Republic, which was transformed into a French client state
+known as the Batavian Republic. In response, Britain launched several
+expeditions against Dutch colonies, including the Cape Colony"* — but the
+cause it names is a third event the atlas does not hold, so under A15(5) the
+edge is written from that event or not at all, and it is not.
+
+### Deviation 1346
+
+**1346. A lane polygon that does not reach an island, and a tool that refuses
+the event rather than the place.** The two Mauritius actions — `Q19902501` and
+`Q20870437` — were refused outright on the first run: *"no place record for
+its location, no lane reachable from its point, and no lane named for it in
+the seeds file; a placeless event must carry a region"*. Both items name a
+located `P276` (Port Louis, Île Ronde, each with its own `P625`), so the point
+is there; what is not there is a lane, because **no polygon of
+`data/geo/regions.json` reaches Mauritius**, which is 900 km east of
+Madagascar and dropped by the 110m generalisation the lanes are cut from.
+
+The tool's own refusal names the remedy — *"no lane named for it in the seeds
+file"* — so `data/imports/wikidata-seeds.json` → `lanes` now names `africa`
+for the two items, and the two refusals were taken out of
+`data/imports/wikidata-state.json` so the second run would read them. Both
+events were then created placeless with `region: africa`, and the two place
+records were written by hand from the items' own `P625`, each carrying
+`region: africa` and a `regionNote` saying why — which is the override the
+model provides for *"somewhere no lane polygon reaches"*. The events were
+pointed at them and their own `region` cleared, so the lane comes from the
+place as it does everywhere else.
+
+**Three things this leaves.** First, the refusal is asymmetric: the tool will
+write a place for an item whose class it knows and whose lane it can derive,
+but where the lane is missing it refuses the *event*, so a person must name
+the lane before the place can exist. Second, the lane table is keyed on the
+**event's** item and not on the country's, so the next Mauritius event will be
+refused the same way; `Q1027` → `africa` in the lanes table would not have
+helped, because `seededLane` is asked about the event. Third, and the
+underlying fault: **an ocean island is not on the timeline at all until
+somebody names its lane by hand.** Réunion, the Seychelles, the Comoros, the
+Maldives and the Andamans are all in the same position, and Africa and Asia
+before 1800 are exactly where they would come from. A lane derived from the
+nearest polygon rather than from containment would settle all of them at once;
+that is a question for whoever owns `src/util/geo.js` and not something a
+records batch should decide.
+
+## Where the run stands, for the fire that picks it up
+
+*29 September, after the thirty-eighth fire: one batch, 43, and the largest
+component moved for the first time since batch 36.*
+
+| | |
+| --- | --- |
+| corpus | **1,310 active** (1,302 at the end of the previous fire; 1,305 when this one had merged `origin/m0` and `origin/m42`) |
+| **main** | **235** — unchanged by this batch, as by the seven before it |
+| **largest connected component** | **723** (715 before the batch) — **moved** |
+| components | 409 (410 before) |
+| events with no edge at all | 319 |
+| edges crossing an umbrella | **568 of 1,085** over the corpus; **1 of 8** in this batch, and it is the one that moved the component |
+| Europe before 1900 | **258 active** — paused by A15(1), untouched this fire |
+| the `americas` lane | **354 active, 56 main** — untouched this fire |
+| **Africa before 1800** | **16 active, 0 main** (12 before) |
+| **Asia before 1800** | **20 active, 0 main** (19 before) |
+| Africa, all centuries | 200 active — A15(1)'s gate on Europe is 303 |
+| Asia, all centuries | 201 active — likewise |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 44 / 5 |
+| 1600s | 109 / 3 | 2 / 0 | 3 / 0 | 69 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 55 / 2 |
+| 1800s | 39 / 9 | 17 / 1 | 7 / 7 | 56 / 8 |
+| 1900s | 245 / 60 | 91 / 23 | 145 / 41 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| **all** | **555 / 85** | **200 / 31** | **201 / 63** | **354 / 56** |
+
+### What this fire did
+
+Took the claim (the last one three hours stale, the last push to `m42b` two
+hours old, so no live run), merged `origin/m0` — which carries M89 — and
+`origin/m42` up to batch 65, keeping both sides of `STATUS.md`, dropping and
+rebuilding `data/index/`, union-merging the title cache and re-measuring the
+M53 coverage row on the merged corpus. Then **one batch, 43**: five events,
+five places, eight edges, one deviation (1346), the main count unmoved at 235
+and the largest component moved from 715 to 723.
+
+### The next fire's moves, in order
+
+1. **The `americas` batch that batch 43 held back is ready to take**:
+   `Q113627918` (the West Indies Campaign, 1793–1798) as the umbrella, with
+   `Q368457` (Martinique, 1794) and `Q656046` (San Juan, 1797) under it, all
+   three clean — an English article each, a class the table knows, a located
+   `P276`. It is a campaign umbrella the `americas` lane's eighteenth century
+   does not have, and the `americas` 1700s cell is 55 active on 2 main.
+2. **The remaining 135 unheld children of `Q207318` are almost all Europe
+   before 1900** and stay untouched until A15(1)'s gate lifts (Africa 200 and
+   Asia 201 against 303). When it lifts, that list is a ready-made reserve of
+   a hundred-odd records with articles, and it should be read as one vein and
+   not sampled.
+3. **Deviation 1346's third paragraph is the standing obstacle for Africa and
+   Asia before 1800**: every ocean island is off the timeline until a person
+   names its lane. Réunion, the Seychelles, the Comoros, the Maldives and the
+   Andamans are where the Indian Ocean wars happen. A nearest-polygon lane
+   derivation would open all of them; a records batch cannot write it.
+4. **`Q4677390` is a question, not a refusal**: *Action of 8 September 1796*
+   (the item) and *Action of 9 September 1796* (the article) are the same
+   engagement, and the item has no alias for the article's date. A15(8) as
+   written refuses it. Whether A15(8) should fire on a one-day disagreement
+   about the *name* of an action, as against a sitelink pointing at an
+   unrelated article, is the owner's to say.
+5. **The place pass on records that already exist is still not done**, named
+   by the last five fires. It is M42's under A15 and reported here, not done.
+6. **Still open, unchanged**: C8, deviation 1323, deviation 1345 (the M76 drag
+   test), question 11 (the Nine Years' War, `Q152218`), `Q718893` *theater of
+   war*, `Q20639061` and now `Q5037062` and `Q4677270` (no `P31` at all).

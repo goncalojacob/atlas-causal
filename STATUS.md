@@ -22588,6 +22588,68 @@ exists" rather than "the element is ready" gets closer to red with every batch.*
 This one crossed at 1,296 active events. Everything else on the head is green —
 `Validate records`, all 1,886 pure tests, and 299 of the 300 browser tests.
 
+**M42b batch 43 — the Indian Ocean stations of the French Revolutionary Wars,
+29 September.** The previous fire's note pointed at three Asian children of
+`Q207318`; the query answers **140 children, five held and 135 not**, and
+**eleven of the 135 fall inside this lane's partition**. Five were taken, all
+into the two thinnest cells of the atlas: the invasion of the Cape Colony
+(1795), the battle of Île Ronde (1794), the action of 9 February 1799 off
+Natal, the battle of Port Louis (1799) and the raid on Manila (1798).
+**Africa before 1800 12 → 16 and Asia before 1800 19 → 20**; all five name
+the wars and nothing else, so all five are filed under them and **main stays
+at 235**, as through the seven batches before this. **Six candidates left**:
+two with **no `P31` at all** (`Q5037062`, `Q4677270`), one refused by
+**A15(8)** (`Q4677390`, whose sitelink is *Action of 9 September 1796* and
+whose item carries no alias for the ninth), and three held back because they
+are the `americas` lane's and the Americas are not the cell that trails.
+`invasion-of-the-cape-colony` is the case where **A15(8) does not fire**: the
+item is labelled *Battle of Muizenberg* but *Invasion of the Cape Colony* is
+one of its own aliases and the article's first sentence carries both names.
+**Five places**: three the tool wrote, **two a person wrote for a reason that
+is new** (deviation 1346). **A15(6) fired once and logged it**: Mauritius,
+inception 1968, refused as the place of a 1799 battle. **Eight edges, and one
+of them is the point of the batch.** Seven are inside
+`french-revolutionary-wars`, because everything in the East Indies theatre the
+atlas holds is a child of it, and they grew that cluster from three events to
+eight and **left the largest component at 715** — which is A5's own warning.
+The eighth crosses: `french-revolution` → `battle-of-ile-ronde`,
+`precondition-of`, carried by the Île Ronde article's own account of why the
+squadron sailed (*"The preoccupation of the naval authorities had prevented
+any offensive operations"*; *"Concerned by food shortages and a rebellious
+slave population … Renaud led his small squadron"*). **The largest component
+goes 715 → 723 and the components 410 → 409** — the first time this lane has
+moved either since batch 36. The lesson is worth keeping: **an umbrella files,
+it does not connect.** `french-revolutionary-wars` carries no edge at all, so
+the eight events under it were invisible to the corpus until one edge left the
+umbrella. **A15(5) refused one** — `raid-on-manila` → `macau-incident-1799`,
+where the Macau article names the raid only to date the Spanish squadron's
+repairs — and **its second clause refused another**: `french-revolution` →
+`invasion-of-the-cape-colony`, whose quote names as the cause a third event
+(the French conquest of the Dutch Republic) the atlas does not hold. **A14
+ruled out five more**, the wars to each of their new children.
+
+**M42b deviation 1346 — a lane polygon that does not reach an island, and a
+tool that refuses the event rather than the place, 29 September.** The two
+Mauritius actions were refused outright: *"no place record for its location,
+no lane reachable from its point, and no lane named for it in the seeds
+file"*. Both items name a located `P276` with its own `P625`, so the point is
+there; **no polygon of `data/geo/regions.json` reaches Mauritius**, which the
+110m generalisation the lanes are cut from drops. The tool's refusal names its
+own remedy, so the seeds file's `lanes` table now names `africa` for the two
+items and the two place records were written by hand from the items' own
+points, each carrying `region: africa` and a `regionNote` — the override the
+model provides for *"somewhere no lane polygon reaches"*. **Three things this
+leaves.** The refusal is asymmetric: where the lane is missing the tool
+refuses the *event*, so a person must name the lane before the place can
+exist. The lane table is keyed on the **event's** item and not the country's,
+so the next Mauritius event is refused the same way. And the underlying fault
+is general: **an ocean island is not on the timeline at all until somebody
+names its lane by hand** — Réunion, the Seychelles, the Comoros, the Maldives
+and the Andamans alike, which is where the Indian Ocean wars happen and so
+where Africa and Asia before 1800 would come from. A lane derived from the
+nearest polygon rather than from containment would settle all of them; that is
+`src/util/geo.js`'s question and not a records batch's.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
