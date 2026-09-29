@@ -22,6 +22,15 @@ import { createShardWatch } from '../src/shard-watch.js';
 import { frameOn, markNodes, wantedSets } from '../src/map/camera.js';
 import { worldProjection } from '../src/map/projection.js';
 import { placeLabels } from '../src/map/labels.js';
+import { buildSearchIndex, covers, search, yearOf } from '../src/search.js';
+import { groupLabel } from '../src/search-box.js';
+import { extent } from '../src/util/dates.js';
+import {
+  categoriesShown, categoryCounts, categoryCountText, pluralLabel,
+} from '../src/categories.js';
+import { lensLabels, lensView, restingSet } from '../src/lens.js';
+import { lensCountText } from '../src/lens-chips.js';
+import { defaultState } from '../src/state.js';
 import { partsReach, partsReachSentence } from '../src/panel/event.js';
 import { isParent, parentsOf } from '../src/parts.js';
 import { eventsOfFocus } from '../src/lens.js';
@@ -43,6 +52,16 @@ async function coreOnly(dir) {
   });
 }
 const firstFrame = await coreOnly(DATA);
+
+// The search index the box scans, built from the atlas exactly as the page
+// builds it where the shard has not landed (search-box.js, `fromAtlas`).
+const entries = buildSearchIndex({
+  events: atlas.activeEvents,
+  actors: [...atlas.actors.values()],
+  places: [...atlas.places.values()],
+  sources: [...atlas.sources.values()],
+  offices: [...atlas.offices.values()],
+});
 
 // ─── 1. nothing prints an id where a title goes (A1) ───────────────────────
 
@@ -324,4 +343,159 @@ test('§6: a box the caller gives is the box the placer uses, and occupied groun
   const left = { ...one, box: box(-10, 20) };
   assert.deepEqual(placeLabels([left], { limits: { 0: 9 }, view: { x0: 0, y0: 0, x1: 100, y1: 10 } }), [],
     'a name that would run off the left edge is not written');
+});
+
+// ─── 7. a year in the search box finds the events of that year (A7) ─────────
+
+test('§7: four digits find every event whose span covers that year, capped', () => {
+  // A year the corpus actually has events in, derived rather than written: the
+  // start year of the most eventful decade the atlas covers would do, and the
+  // first one with more than a handful is enough.
+  const years = new Map();
+  for (const event of atlas.activeEvents) {
+    const year = extent(event.when).min;
+    if (!Number.isFinite(year)) continue;
+    years.set(year, (years.get(year) ?? 0) + 1);
+  }
+  const year = [...years.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0][0];
+  const limit = 8;
+  const result = search(entries, String(year), { limit });
+  const group = result.groups.find((g) => g.kind === 'year');
+  assert.ok(group, `a query of "${year}" has a group of its own`);
+  assert.equal(group.year, year, 'and it says which year it is');
+
+  // Every active event whose span covers it, computed here, capped and in the
+  // group's own order.
+  const wanted = atlas.activeEvents.filter((event) => covers(event.when, year));
+  assert.ok(wanted.length > 0, 'the corpus has events in that year');
+  assert.equal(group.items.length, Math.min(limit, wanted.length));
+  const byWeight = [...wanted].sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0)
+    || extent(a.when).min - extent(b.when).min
+    || (a.id < b.id ? -1 : 1));
+  assert.deepEqual(group.items.map((item) => item.id),
+    byWeight.slice(0, limit).map((event) => event.id),
+    'the heaviest of the year, in the year group\'s own order');
+  assert.equal(groupLabel(group), `Events in ${year}`);
+});
+
+test('§7: and a query that is not four digits asks the old question only', () => {
+  for (const query of ['18', '18570', '1857-1860', 'lisbon', '']) {
+    assert.equal(yearOf(query), null, `"${query}" is not a year`);
+    assert.ok(!search(entries, query).groups.some((g) => g.kind === 'year'),
+      `"${query}" opens no year group`);
+  }
+  // A year the corpus has nothing in opens no group either: an empty heading is
+  // the box saying it found something when it did not.
+  const empty = atlas.extent.min - 100;
+  assert.equal(search(entries, String(empty).padStart(4, '0')).groups.filter((g) => g.kind === 'year').length, 0);
+});
+
+// ─── 8. the category control says what it kept (A8) ─────────────────────────
+
+test('§8: the sentence names what a chosen category kept and what stayed drawn', () => {
+  // The category the corpus has most of, and the picture one switch leaves:
+  // both derived. `restingSet` is what the views draw at rest (lens.js), which
+  // is what `bandEvents` narrows and the control counts over.
+  const shownCategories = categoriesShown(atlas.manifest);
+  assert.ok(shownCategories.length > 0, 'the corpus uses categories');
+  const chosen = [...shownCategories].sort((a, b) => b.count - a.count)[0];
+
+  const resting = restingSet(atlas, defaultState());
+  const drawn = atlas.activeEvents.filter((e) => resting.has(e.id));
+  const kept = drawn.filter((e) => e.category === chosen.id).length;
+  const none = drawn.filter((e) => !e.category).length;
+
+  const counted = categoryCounts(drawn, [chosen]);
+  assert.equal(counted.kept.length, 1);
+  assert.equal(counted.kept[0].count, kept, `${chosen.id} in the resting picture`);
+  assert.equal(counted.uncategorised, none, 'and the ones with no category at all');
+
+  const text = categoryCountText(counted);
+  if (kept > 0 && none > 0) {
+    assert.equal(text,
+      `${kept} ${pluralLabel(chosen.label)}, and ${none} events without a category still drawn`);
+  }
+  // The sentence names both numbers, whichever they are.
+  if (kept > 0) assert.match(text, new RegExp(`\\b${kept}\\b`));
+  if (none > 0) assert.match(text, new RegExp(`\\b${none}\\b`));
+});
+
+test('§8: and says nothing where there is nothing to explain', () => {
+  assert.equal(categoryCountText({ kept: [], uncategorised: 0 }), '');
+  assert.equal(categoryCountText({ kept: [{ id: 'war', label: 'War', count: 0 }], uncategorised: 0 }), '');
+  // One category and nothing uncategorised: the clause that would say "0" is
+  // not written, because it is the one that would be inventing a fact.
+  assert.equal(categoryCountText({ kept: [{ id: 'war', label: 'War', count: 3 }], uncategorised: 0 }),
+    '3 wars drawn');
+  assert.equal(categoryCountText({ kept: [], uncategorised: 1 }),
+    '1 event without a category still drawn');
+  // Two, three and the plural rule, in the interface's own English.
+  assert.equal(categoryCountText({
+    kept: [{ id: 'war', label: 'War', count: 3 }, { id: 'treaty', label: 'Treaty', count: 2 }],
+    uncategorised: 7,
+  }), '3 wars and 2 treaties, and 7 events without a category still drawn');
+  assert.equal(pluralLabel('Economy'), 'economies');
+  assert.equal(pluralLabel('Election'), 'elections');
+});
+
+// ─── 9. the essay stops contradicting the about page (A9) ──────────────────
+
+test('§9: neither page claims a language model wrote nothing, a test dataset, or a first slice', async () => {
+  for (const page of ['essay.html', 'review.html']) {
+    const text = await readFile(path.join(ROOT, page), 'utf8');
+    for (const said of ['language model', 'test dataset', 'first slice']) {
+      assert.ok(!text.toLowerCase().includes(said), `${page} still says "${said}"`);
+    }
+  }
+});
+
+test('§9: and the essay says who makes it and where the review state is, as the about page does', async () => {
+  const essay = await readFile(path.join(ROOT, 'essay.html'), 'utf8');
+  const about = await readFile(path.join(ROOT, 'about.html'), 'utf8');
+  for (const said of ['with an assistant', '?review=1']) {
+    assert.ok(essay.includes(said), `the essay does not say "${said}"`);
+    assert.ok(about.includes(said), `the about page does not say "${said}"`);
+  }
+  // And the span it opens on is the corpus's own, which is what the front card
+  // and the masthead say (intro.js, WHAT_IT_IS).
+  assert.ok(essay.includes(`${atlas.extent.min} to `), `the essay says the atlas begins at ${atlas.extent.min}`);
+});
+
+// ─── 10. the actor lens's chip says what it is showing (A10) ────────────────
+
+test('§10: the chip counts the events a focus names and the ones drawn around them', () => {
+  // The actor with the most events, derived: the lens with most to explain.
+  const actor = [...atlas.actors.values()]
+    .map((a) => [a.id, (atlas.eventsByActor.get(a.id) ?? []).length])
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))[0]?.[0];
+  assert.ok(actor, 'the corpus has an actor with events');
+  const state = { ...defaultState(), focus: `actor:${actor}` };
+  const view = lensView(atlas, state);
+  assert.ok(view, 'it is a lens');
+
+  // The two numbers, computed here out of the same two sets the three views
+  // draw from (emphasis.js takes `shown` from this very view).
+  const own = view.set.size;
+  const around = view.shown.size - own;
+  assert.ok(own > 0, 'the lens names events');
+  assert.equal(lensCountText(atlas, state, lensLabels(atlas, state)),
+    around > 0
+      ? `${own} ${own === 1 ? 'event' : 'events'}, and ${around} around ${own === 1 ? 'it' : 'them'}`
+      : `${own} ${own === 1 ? 'event' : 'events'}`);
+  // And it is news: the picture is bigger than the actor's own events, which
+  // is the whole of what A10 found.
+  assert.ok(around > 0, `the lens on ${actor} draws ${view.shown.size} for ${own} of its own`);
+});
+
+test('§10: and says nothing where the numbers would not be about the picture', () => {
+  assert.equal(lensCountText(atlas, defaultState(), []), '', 'no lens, no sentence');
+  // Two foci share one ring, so neither chip can carry the picture's numbers;
+  // the masthead's own count is what says what is in view (window-control.js).
+  const two = [...atlas.actors.values()]
+    .filter((a) => (atlas.eventsByActor.get(a.id) ?? []).length > 0).slice(0, 2).map((a) => a.id);
+  if (two.length === 2) {
+    const state = { ...defaultState(), focus: `actor:${two[0]},actor:${two[1]}` };
+    assert.equal(lensCountText(atlas, state, lensLabels(atlas, state)), '');
+  }
 });

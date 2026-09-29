@@ -393,6 +393,11 @@ input, select, textarea { accent-color: var(--cobalt); }
 }
 .lens-badge .lens-kind { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
 .lens-badge .lens-name { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* And what the lens is showing beside what it is a lens on (M89 §10): the same
+   size as the kind, set quietly, because it is the chip's second sentence and
+   not its name. No colour of its own — the chip is cobalt and this is inside
+   it. */
+.lens-badge .lens-count { font-size: var(--text-xs); opacity: 0.75; white-space: nowrap; }
 .lens-control.on { font-weight: 600; }
 /* One chip per focus since H7, each with its own ×, then the two controls
    that belong to the whole list: "all of these" and "show everything". A

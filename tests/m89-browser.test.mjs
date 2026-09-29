@@ -17,6 +17,10 @@ import {
 import { atlasOf, ROOT } from './helpers.mjs';
 import { LOADING_LABEL } from '../src/attributes.js';
 import { shorten } from '../src/map/labels.js';
+import { covers } from '../src/search.js';
+import { categoriesShown, categoryCounts, categoryCountText } from '../src/categories.js';
+import { restingSet } from '../src/lens.js';
+import { defaultState } from '../src/state.js';
 
 const DESK = { width: 1280, height: 800, deviceScaleFactor: 1 };
 const PHONE = { width: 390, height: 844, deviceScaleFactor: 1 };
@@ -434,5 +438,68 @@ test('§6: every lane with a mark on the first map gets at least one name', { sk
     for (const lane of drawn) {
       assert.ok(named.has(lane), `the lane ${lane} has marks on the first map and no name: named ${[...named].join(', ')}`);
     }
+  }, { device: DESK });
+});
+
+// ─── 7 and 8: the year group in the box, and the count the switches say ─────
+
+test('§7: typing a year into the box opens a group of that year\'s events', { skip }, async () => {
+  // A year with events, derived from the corpus the page is serving.
+  const counts = new Map();
+  for (const event of atlas.activeEvents) {
+    const year = event.when?.start;
+    if (!Number.isFinite(year)) continue;
+    counts.set(year, (counts.get(year) ?? 0) + 1);
+  }
+  const year = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0][0];
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(''), 'return Boolean(document.querySelector("#search input"));');
+    await page.eval(`
+      const input = document.querySelector('#search input');
+      input.value = ${JSON.stringify(String(year))};
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      return true;`);
+    await waitFor(page, `return [...document.querySelectorAll('#search .search-group')]
+      .some((el) => el.textContent === 'Events in ${year}');`, `the "Events in ${year}" group`);
+    // And the rows under it are events the atlas holds.
+    const rows = await page.eval(`
+      const groups = [...document.querySelectorAll('#search li')];
+      const at = groups.findIndex((el) => el.textContent === 'Events in ${year}');
+      const out = [];
+      for (let i = at + 1; i < groups.length; i += 1) {
+        if (groups[i].classList.contains('search-group')) break;
+        out.push(groups[i].getAttribute('data-id'));
+      }
+      return out;`);
+    assert.ok(rows.length > 0, 'the group has rows');
+    for (const id of rows) {
+      const event = atlas.events.get(id);
+      assert.ok(event, `${id} is an event`);
+      assert.ok(covers(event.when, year), `${id} covers ${year}`);
+    }
+  }, { device: DESK });
+});
+
+test('§8: choosing a category makes the control say what it kept', { skip }, async () => {
+  const shownCategories = categoriesShown(atlas.manifest);
+  assert.ok(shownCategories.length > 1, 'the corpus uses more than one category');
+  const chosen = [...shownCategories].sort((a, b) => b.count - a.count)[0];
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    // At rest the control has narrowed nothing and says nothing.
+    await open(page, url(''), 'return Boolean(document.querySelector(".category-count"));');
+    assert.equal(await page.eval('return document.querySelector(".category-count").textContent.trim();'), '');
+
+    await open(page, url(`?layers=territories,events:${chosen.id}`), 'return document.querySelectorAll("#map .mark").length > 0;');
+    await settledShards(page, await manifestOf());
+    await until(page, 'return document.querySelector(".category-count").textContent.trim() !== "";');
+    const said = await page.eval('return document.querySelector(".category-count").textContent;');
+
+    // What it should say, computed here out of the records the page is drawing.
+    const resting = restingSet(atlas, defaultState());
+    const drawn = atlas.activeEvents.filter((e) => resting.has(e.id));
+    const wanted = categoryCountText(categoryCounts(drawn, [chosen]));
+    assert.equal(said.replace(/^\s*—\s*/, '').trim(), wanted);
   }, { device: DESK });
 });

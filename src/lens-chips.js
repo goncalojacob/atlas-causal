@@ -12,13 +12,51 @@
 
 import { html } from './util/dom.js';
 import { esc } from './util/esc.js';
-import { lensLabels, withoutFocus, FOCUS_NONE, BACK_LABEL } from './lens.js';
+import { lensLabels, lensView, withoutFocus, FOCUS_NONE, BACK_LABEL } from './lens.js';
 import { LOADING_LABEL } from './attributes.js';
 import { createShardWatch } from './shard-watch.js';
 
 const LENS_KIND = Object.freeze({
   actor: 'actor', place: 'place', source: 'source', event: 'event', region: 'region', narrative: 'narrative',
 });
+
+// **What a lens is showing, beside what it is a lens on** (M89 §10, A10).
+//
+// `?focus=actor:japan` read "114 of 1257 events in view" in the masthead and
+// drew the Winter War, Katyn and the Turkish War of Independence: Japan is a
+// belligerent of the Second World War, the lens holds it, and what is drawn
+// around it is drawn. A reader asked for Japan and got Finland, with nothing on
+// the page saying why.
+//
+// What the lens holds is not this milestone's to change (the brief, §10; the
+// owner's question 12). What the chip can do is stop the picture being a
+// surprise: the events the focus itself names, and how many more are drawn
+// around them — faintly, which is what the reader is looking at.
+//
+// **And "around", not "inside"** (deviation 900). A10 proposes the words "and
+// the 76 inside them", reading the extra events as an umbrella's parts. On this
+// corpus they mostly are not: of Japan's 114, thirty-seven name Japan,
+// twenty-three are inside one of those, and the other fifty-four are one link
+// away or an umbrella over one. "Inside" would be a claim about the records,
+// and a false one; the picture draws them faintly and "around" is what that is.
+//
+// Only where the lens is one focus. With two or more, each chip's own ring is
+// not the picture — the foci share it — and the masthead's own line already
+// counts what is in view (window-control.js). A chip saying a number that is
+// not the one beside it would be worse than a chip saying nothing.
+export function lensCountText(atlas, state, foci) {
+  if (foci.length !== 1) return '';
+  const view = lensView(atlas, state);
+  if (!view) return '';
+  const own = view.set.size;
+  const around = view.shown.size - own;
+  if (own === 0) return '';
+  const events = `${own} ${own === 1 ? 'event' : 'events'}`;
+  if (around <= 0) return events;
+  return `${events}, and ${around} around ${own === 1 ? 'it' : 'them'}`;
+}
+
+export const LENS_COUNT_HINT = 'The events this focus names, and the ones drawn faintly around them: what they link to, and what they are part of.';
 
 export function createLensChips(container, { atlas, state }) {
   const badge = html('span', { class: 'lens-chips', hidden: 'hidden' });
@@ -63,9 +101,10 @@ export function createLensChips(container, { atlas, state }) {
 
   function render(s) {
     const foci = lensLabels(atlas, s);
-    // Whether this is the same list drawn again: the chips and the one switch
-    // that has a state of its own.
-    const key = JSON.stringify([foci.map((lens) => [lens.kind, lens.focus, lens.name ?? null]), Boolean(s.focusAll)]);
+    const counted = lensCountText(atlas, s, foci);
+    // Whether this is the same list drawn again: the chips, what they say they
+    // are showing, and the one switch that has a state of its own.
+    const key = JSON.stringify([foci.map((lens) => [lens.kind, lens.focus, lens.name ?? null]), counted, Boolean(s.focusAll)]);
     if (key === drawn) return;
     drawn = key;
     const was = focusedHere();
@@ -83,6 +122,7 @@ export function createLensChips(container, { atlas, state }) {
         return `<span class="lens-badge">
         <span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
         <span class="lens-name">${esc(name)}</span>
+        ${counted ? `<span class="lens-count" title="${esc(LENS_COUNT_HINT)}">${esc(counted)}</span>` : ''}
         <button type="button" class="lens-drop" data-action="unfocus" data-focus="${esc(lens.focus)}"
           aria-label="${esc(`Remove ${name}`)}" title="${esc(`Remove ${name}`)}">×</button>
       </span>`;
