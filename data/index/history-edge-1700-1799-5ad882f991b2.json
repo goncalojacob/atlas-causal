@@ -449,7 +449,25 @@
         }
       ]
     },
+    "french-revolution--action-of-31-july-1793--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "french-revolution--battle-of-ile-ronde--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "french-revolution--battle-of-martinique-1794--reacted-to": {
       "from": "git",
       "versions": [
         {

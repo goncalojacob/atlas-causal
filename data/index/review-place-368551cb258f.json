@@ -11112,6 +11112,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "martinique-q17054",
+      "kind": "place",
+      "names": [
+        "Martinique",
+        "Martinica"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place-by-hand"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "matabeleland",

@@ -2468,6 +2468,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-31-july-1793",
+      "kind": "event",
+      "locator": "Q4677350"
+    },
+    {
+      "dissent": false,
       "id": "action-of-6-july-1746",
       "kind": "event",
       "locator": "Q2889560"
@@ -3731,6 +3737,12 @@
       "id": "battle-of-martinique-1780",
       "kind": "event",
       "locator": "Q2583204"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-martinique-1794",
+      "kind": "event",
+      "locator": "Q368457"
     },
     {
       "dissent": false,

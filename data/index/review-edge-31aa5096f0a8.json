@@ -13897,6 +13897,34 @@
       ],
       "created": "2026-09-29",
       "from": "french-revolution",
+      "id": "french-revolution--action-of-31-july-1793--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "action-of-31-july-1793",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "french-revolution",
       "id": "french-revolution--battle-of-ile-ronde--precondition-of",
       "kind": "edge",
       "origin": {
@@ -13912,6 +13940,34 @@
       "status": "active",
       "to": "battle-of-ile-ronde",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "french-revolution",
+      "id": "french-revolution--battle-of-martinique-1794--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-martinique-1794",
+      "type": "reacted-to"
     },
     {
       "authors": [

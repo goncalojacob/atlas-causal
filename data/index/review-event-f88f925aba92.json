@@ -4360,6 +4360,38 @@
       ],
       "created": "2026-09-29",
       "degree": 1,
+      "id": "action-of-31-july-1793",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 31 July 1793"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
       "id": "action-of-6-july-1746",
       "kind": "event",
       "origin": {
@@ -11096,6 +11128,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Martinique (1780)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "battle-of-martinique-1794",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Martinique (1794)"
     },
     {
       "authors": [
@@ -23286,7 +23350,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 7,
       "id": "french-revolution",
       "kind": "event",
       "origin": {

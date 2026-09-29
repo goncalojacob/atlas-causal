@@ -76,6 +76,15 @@
         }
       ]
     },
+    "action-of-31-july-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "action-of-6-july-1746": {
       "from": "git",
       "versions": [
@@ -425,6 +434,15 @@
             "review"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-martinique-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

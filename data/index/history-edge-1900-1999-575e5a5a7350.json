@@ -4494,10 +4494,16 @@
       ]
     },
     "paris-peace-accords--1975-spring-offensive--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "dispute"
+          ],
           "on": "2026-09-29"
         }
       ]

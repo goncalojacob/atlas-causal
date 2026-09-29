@@ -4244,6 +4244,12 @@
     },
     {
       "dissent": false,
+      "id": "french-revolution--action-of-31-july-1793--precondition-of",
+      "kind": "edge",
+      "locator": "\"Action of 31 July 1793\", revision 1370426629"
+    },
+    {
+      "dissent": false,
       "id": "french-revolution--battle-of-ile-ronde--precondition-of",
       "kind": "edge",
       "locator": "\"Bali Strait incident\", revision 1376479036"
@@ -4253,6 +4259,18 @@
       "id": "french-revolution--battle-of-ile-ronde--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution--battle-of-martinique-1794--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Martinique (1794)\", revision 1375545193"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution--battle-of-martinique-1794--reacted-to",
+      "kind": "edge",
+      "locator": "\"French Revolution\", revision 1375966584"
     },
     {
       "dissent": false,
@@ -9272,6 +9290,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-31-july-1793",
+      "kind": "event",
+      "locator": "\"Action of 31 July 1793\", revision 1370426629"
+    },
+    {
+      "dissent": false,
       "id": "action-of-6-july-1746",
       "kind": "event",
       "locator": "\"Action of 6 July 1746\", revision 1370426720"
@@ -10445,6 +10469,12 @@
       "id": "battle-of-martinique-1780",
       "kind": "event",
       "locator": "\"Battle of Martinique (1780)\", revision 1375823270"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-martinique-1794",
+      "kind": "event",
+      "locator": "\"Battle of Martinique (1794)\", revision 1375545193"
     },
     {
       "dissent": false,
