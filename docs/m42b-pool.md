@@ -11924,8 +11924,8 @@ The `africa` lane's seventeenth century held **two** active events and the
 hardest inside this partition is the same one batch 46 named. Batch 46 walked
 `dutch-portuguese-war`'s 43 `P361` children and left 28 of them, the two sieges
 of Mozambique among them, **for want of one anchor record**: every cause their
-articles state is an event this atlas does not hold. The thirty-ninth fire's
-stand asked the next fire to import the Dutch occupation of Luanda first,
+articles state is an event this atlas does not hold. Batch 46's own stand — the
+forty-first fire's — asked the next fire to import the Dutch occupation of Luanda first,
 because four of the six African candidates name it.
 
 **The anchor is not an event Wikidata has as one.** `Q5037028` (*Capture of
@@ -12051,7 +12051,7 @@ different lane's commit.
 
 ## Where the run stands, for the fire that picks it up
 
-*29 September, after the fortieth fire: one batch, 47, two events, three
+*29 September, after the forty-second fire: one batch, 47, two events, three
 edges, and the largest component moved by four for the second fire running.*
 
 | | |
