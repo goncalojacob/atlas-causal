@@ -15807,3 +15807,220 @@ its job. Both are superseded on the branch and the head is green.
 **1,909 pure** and **313 browser**, run the way the check runs them since M63, and
 no suite needed a second run. No test was added: the two deviations are a screen
 and a refusal, and neither is code.
+
+## Batch 69 — the Second Sino-Japanese War of 1937–38, and Asia's screen at last
+
+*29 September, the fire that claimed at 21:07Z. **An import fire**, the third of
+the day: today's `## Curation 2026-09-29` section and all thirteen A15 sections
+were already in this file, so nothing was owed before the batch. **Five records,
+two places, four edges, the largest component moved for the first time in three
+batches, and Asia's wide screen run for the first time.*** A11(b)'s partition
+check was made before the import: none of the five items is on `origin/m42b`, by
+qid. `origin/m0` was already an ancestor of `m42` at the claim, so no merge.
+
+### Asia's screen at 5 sitelinks with the span filter — the thing the last stand asked for first
+
+The batch-68 stand asked that `screen2` — three filters over one SPARQL sweep, a
+class row, a date, and a held umbrella whose span contains it — be run for Asia
+before anything else, because it never had been. It was, over the **184 Asia-lane
+events that carry a qid**, in `VALUES` blocks of 60. **Asia's vein is roughly four
+times Africa's**:
+
+| | Africa (batch 68) | Asia (this fire) |
+| --- | --- | --- |
+| umbrellas swept | 177 | **184** |
+| `P361` children at ≥5 sitelinks | — | 900 |
+| of those, unheld | 189 | **796** |
+| **filable** (class row + date + a held umbrella whose span contains it) | 138 | **529** |
+| no class row, or a class that is not an event here | 13 | 122 |
+| no date at all | 6 | 17 |
+| no held umbrella whose span contains it | 27 | 128 |
+
+Where the next Asia fires should go, by filable children:
+
+| umbrella | children | umbrella | children |
+| --- | --- | --- | --- |
+| `war-in-afghanistan-2001-2021` | **58** | `gulf-war` | 18 |
+| `vietnam-war` | **52** | `first-indochina-war` | 17 |
+| `second-sino-japanese-war` | **44** | `gaza-genocide`, `lebanese-civil-war` | 13 each |
+| `iran-iraq-war` | **43** | `soviet-afghan-war`, `2003-invasion-of-iraq` | 11 each |
+| `korean-war` | 33 | `first-sino-japanese-war` | 9 |
+| `iraq-war` | 28 | `boxer-rebellion` | 8 |
+| `second-intifada` | 26 | `indonesian-national-revolution`, `chinese-civil-war` | 7 each |
+| `1948-arab-israeli-war` | 24 | `1982-lebanon-war` | 6 |
+| `gaza-war` | 22 | 41 more umbrellas | 1–5 each |
+
+The Second Sino-Japanese War was taken rather than the two larger ones because it
+is the densest **family whose members answer each other in their own leads**,
+which is the shape batch 67 and batch 68 both found to connect best, and because
+the atlas held exactly one of its children (`marco-polo-bridge-incident`) and so
+had somewhere for the family to attach.
+
+### The five records
+
+| the record | sitelinks | dated | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-shanghai` | 36 | 13 Aug – 26 Nov 1937 | `shanghai` (**written**) | `second-sino-japanese-war` |
+| `battle-of-nanking` | 25 | 1–13 Dec 1937 | **none** (below) | `second-sino-japanese-war` |
+| `battle-of-xuzhou` | 19 | 24 Mar – 1 May 1938 | `xuzhou` (**written**) | `second-sino-japanese-war` |
+| `1938-yellow-river-flood` | 28 | June 1938 | **none** (below) | `second-sino-japanese-war` |
+| `battle-of-wuhan` | 25 | 27 Oct 1938 | `wuhan` (held) | `second-sino-japanese-war` |
+
+Written by the tool's own `--import` with the five qids appended to the seeds
+file's `items`, which is the route batch 67's stand asked the next fires to
+prefer. All five filed themselves from `P361` and the umbrella's own span, none
+is a new umbrella, and **the main count did not move**. Categories came off the
+class table: `war` for the four battles from `Q178561`, **`disaster`** for the
+flood from `Q8068`.
+
+**A9 answered three times and refused twice, and both refusals are A15(6) and the
+class table working.** Shanghai and Xuzhou got new place records from their items'
+own `P276` steps (`Q8686`, `Q57719`), each with its lane derived from its own
+point; Wuhan reused the held `wuhan`. Nanking got none — its own `P625` is the
+city and A9's first step can only *reuse*, its `P276` `Q10906766` has no class
+row, and it has no `P17` at all. The flood got none — its `P276` `Q858536`
+(Central China) has no class row, and its `P17` `Q13426199`, the Republic of
+China, was **refused on A15(6)'s distance clause: the country's point is 1,147 km
+from the nearest point on the event's own chain.** `docs/m67-umbrellas.md` now
+carries the paragraph the two bare records owe.
+
+### The four edges
+
+| from | type | to | confidence | crosses |
+| --- | --- | --- | --- | --- |
+| `marco-polo-bridge-incident` | caused | `battle-of-shanghai` | probable | no |
+| `battle-of-shanghai` | enabled | `battle-of-nanking` | probable | no |
+| `battle-of-xuzhou` | precondition-of | `battle-of-wuhan` | probable | no |
+| `1938-yellow-river-flood` | precondition-of | `battle-of-wuhan` | probable | no |
+
+The first is the **held** record's own cited article, § Consequences: *"The
+heightened tensions of the Marco Polo Bridge incident led directly to full-scale
+war between the Empire of Japan and the Republic of China, with the Battle of
+Beiping-Tianjin at the end of July and the Battle of Shanghai in August."*
+`caused` and not `precondition-of`: "led directly to" is a mechanism the article
+states and not a position it describes. **This is the edge that joins the family
+to the graph**, and it was found by reading the article of the record the atlas
+already had rather than the articles of the ones it was importing — which is
+A13's own method, applied inside a batch.
+
+The second is the Battle of Nanking's lead: *"The Japanese eventually won the
+battle, forcing the Chinese army to withdraw. Capitalizing on their victory, the
+Japanese authorized a campaign to capture Nanjing."* `enabled` and not `caused`:
+the article gives the victory as what made the campaign possible and the decision
+to authorise it as somebody's.
+
+The third is the Battle of Xuzhou's lead: *"It resulted in an eventual victory for
+the Japanese, but they failed to destroy the Chinese army, who managed to retreat
+and regroup to fight later at Wuhan."* The army that fought at Wuhan is the one
+that escaped the encirclement at Xuzhou, so the earlier battle is what the later
+one was fought from.
+
+The fourth is the Battle of Wuhan's § Prelude: *"In an attempt to win more time
+for the preparation of the defense of Wuhan, the Chinese opened up the dikes of
+the Yellow River in Huayuankou, Zhengzhou on 9 June. The flood, now known as the
+1938 Yellow River flood, forced the Japanese to delay their attack on Wuhan."*
+The same article says the flood *"forced the IJA to abandon its plan of attacking
+along the Huai"*. `precondition-of`: the flood did not produce a battle already
+being prepared for; it bought the time the defence needed and set the axis it was
+fought on. `probable` in all four, because the only source the atlas can open is
+the encyclopaedia article (rule 22).
+
+**All four edges are inside `second-sino-japanese-war`**, so A15(11)'s count of
+edges that cross an umbrella is **unmoved at 564** and the edges inside one go
+493 → 497. **The largest component is 716 → 718**: `battle-of-shanghai` and
+`battle-of-nanking` joined it through the Marco Polo Bridge incident, and
+`battle-of-xuzhou`, `1938-yellow-river-flood` and `battle-of-wuhan` are a
+component of three that one more read may join.
+
+### A15(5) refused four and this fire refused a fifth
+
+`verdictFor()` was run on every candidate quote before any edge was written.
+
+- **`marco-polo-bridge-incident → battle-of-shanghai`, from the Battle of Wuhan's
+  § Background** — *"After the Marco Polo Bridge Incident on 7 July 1937, the
+  Imperial Japanese Army launched a full-scale invasion of China… To disrupt the
+  Japanese invasion plans, the Chinese Nationalists decided to engage the Japanese
+  in Shanghai"* — **chronology with no cause stated.**
+- **the same edge, from the Battle of Nanking's § Background** — *"The conflict
+  which would become known as the Second Sino-Japanese War started on July 7,
+  1937, with a skirmish at Marco Polo Bridge… China, however, wanted to avoid a
+  decisive confrontation in the north and so instead opened a second front by
+  attacking Japanese units in Shanghai"* — **names a third event the atlas holds
+  as the cause** (`second-sino-japanese-war`), and A15(5) says it is written from
+  that event or not at all. From the umbrella to its own child is what A14's
+  standing rule forbids until the owner settles C8, so: not at all.
+- **`battle-of-nanking → battle-of-xuzhou`, from the Battle of Xuzhou's
+  § Background** — *"Following the Japanese victory in the Battle of Nanjing, the
+  North China Area Army aimed to advance southward…"* — **chronology.** This is
+  the one refusal that costs something: it is what would have joined the batch's
+  two components into one.
+- **`battle-of-xuzhou → 1938-yellow-river-flood`, from the flood's § Destruction
+  of dikes** — *"After the Chinese were defeated in the Battle of Xuzhou, the
+  Zhengzhou junction of the Beijing-Wuhan Railway was within reach by the
+  Japanese."* — **chronology.**
+- **`marco-polo-bridge-incident → battle-of-shanghai`, from the Battle of
+  Shanghai's own lead** — *"These conflicts finally escalated in July 1937, when
+  the Marco Polo Bridge Incident triggered a full-scale war between the two
+  countries."* — `verdictFor()` says **write**, and this fire refused it anyway.
+  See deviation 1471.
+
+### Deviation 1470 — `statesACause` does not see a marker an adverb has split
+
+The sentence that carries this batch's one connecting edge says *"led directly
+to"*, and `CAUSAL_MARKERS` has `led to`. `statesACause()` reads the sentence as
+stating no cause. **Nothing was lost here**, because the sentence opens with no
+chronology opener and `isChronologyOnly()` therefore never asked; the edge was
+written. But a sentence that opened *"Following the incident… led directly to…"*
+would be refused as chronology while stating a cause in as many words, and the
+same goes for "led eventually to", "resulted eventually in", "caused directly".
+
+**Not fixed here, on purpose.** The module's own words are that *"a class a fire
+can widen is a class nobody can count"*, and A15(5) is a rule the review wrote
+after reading what three curation fires accepted. Widening `CAUSAL_MARKERS` — or
+matching `led\s+\w+\s+to` — is a change to a counted refusal class and belongs to
+the owner or to a review, with the corpus re-counted on both sides of it. Written
+down rather than done.
+
+### Deviation 1471 — A15(5)'s verdict is necessary and not sufficient
+
+*"These conflicts finally escalated in July 1937, when the Marco Polo Bridge
+Incident triggered a full-scale war between the two countries."* — the Battle of
+Shanghai's own lead. For an edge `marco-polo-bridge-incident → battle-of-shanghai`
+it passes every test A15(5) applies: it opens with no chronology opener, it
+carries `triggered`, and the only other event it names is the one being created,
+which is not yet a candidate. `verdictFor()` says **write**.
+
+It says nothing about the Battle of Shanghai. What it states is that the incident
+triggered the war; that the battle was the war's first major engagement is a
+second sentence, and joining the two to reach "the incident caused the battle" is
+**the fire's synthesis and not the article's claim**. A15(5) is a filter over
+quotes and cannot see that the quote's subject is not the edge's `to`; the fire
+has to. Refused here, and the edge that was written in its place came from the
+held record's own article, where the sentence names the battle itself.
+
+**Worth a rule if a review wants one**: a quote must name both ends of the edge it
+is cited for. Every edge this batch wrote does; the refused one does not.
+
+### A15(1) held, and A15(2) ran as the batch's last step
+
+Every record here is a child of a held umbrella that **could be connected**, which
+is A15(1)'s rule; nothing was imported that no edge reaches. `node
+tools/cache-evidence.mjs --fill`: **2,607 `wikipedia-en` citations on active
+records, 2,534 on disk at the revision cited, 73 unholdable for the reason A14(3)
+settles, 0 missing.** `tests/a15-cache.test.mjs` passes.
+
+| | after batch 68 | after batch 69 |
+| --- | --- | --- |
+| corpus | 1,268 active | **1,273** (+5 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,033 | **1,038** |
+| active edges | 1,057 | **1,061** |
+| **largest connected component** | 716 | **718** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 392 | **393** |
+| **edges that cross an umbrella (A15(11))** | 564, 493 inside one | **564**, 497 inside one |
+| events with no edge at all | 309 | **309** |
+| place records | 735, 733 active | **737, 735 active** (+2 written) |
+| validator | 0 errors, 600 warnings | **0 errors, 600 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 186, Africa 187 | Europe 553, Americas 342, **Asia 191**, Africa 187 |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
