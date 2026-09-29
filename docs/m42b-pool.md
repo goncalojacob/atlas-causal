@@ -12218,3 +12218,8 @@ were cancelled as each push superseded the last, which is ordinary.
 **The remedy for the next fire is move 6 above**, and it is worth saying as a
 rule rather than as a note: **`git merge` and `node tools/build-index.mjs` are
 never the same commit.**
+
+**Run 2051 on `7dc9bdfc`, the branch's final head, also completed `success`.**
+It carries only this section and the ordinal correction beside it — no record
+and no index byte differs from run 2049's tree — so the two green runs are the
+same corpus checked twice, once with the batch note and once with this stand.
