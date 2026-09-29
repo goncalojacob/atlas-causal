@@ -28,15 +28,20 @@ export function stripHeadings(text) {
   return String(text ?? '').replace(/^=+[^=\n]*=+\s*$/gm, ' ');
 }
 
-export function fold(text) {
+// Everything the fold does except lower the case, so a matcher can still ask
+// what the text capitalised (deviation 1464).
+export function tidy(text) {
   return stripHeadings(text)
     .normalize('NFC')
     .replace(/[‐-―]/g, '-')
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
     .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
+    .trim();
+}
+
+export function fold(text) {
+  return tidy(text).toLowerCase();
 }
 
 // --- the refusal class -----------------------------------------------------
@@ -98,12 +103,38 @@ export function usableName(name) {
   return true;
 }
 
+// Deviation 1464: a name that carries a capital is a proper noun in its own
+// record, and prose that means that thing keeps at least one of those capitals.
+// *"the troubles in Sudan"* and *"a reign of terror"* keep none, and they were
+// matching `the-troubles` and `reign-of-terror`. One capital is enough rather
+// than all of them, because an article writes *"the treaty of Lausanne"* for the
+// Treaty of Lausanne; and a leading article is never one of them, because it
+// writes *"the Troubles"* for The Troubles.
+const LEADING_ARTICLE = /^(?:the|a|an) /i;
+
+export function capitalsOf(name) {
+  return tidy(name)
+    .replace(LEADING_ARTICLE, '')
+    .split(' ')
+    .filter((word) => /^\p{Lu}/u.test(word));
+}
+
 // Deviation 1458: a substring match makes every "World War II" a "World War I".
 // The name is matched on word boundaries, so the second `I` stops it.
 export function mentions(text, name) {
   if (!usableName(name)) return false;
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escape(fold(name))}(?![\\p{L}\\p{N}])`, 'u');
-  return pattern.test(fold(text));
+  const wanted = capitalsOf(name);
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escape(fold(name))}(?![\\p{L}\\p{N}])`, 'giu');
+  // The capital has to be inside the occurrence that matched and not loose in
+  // the paragraph, so each match is weighed on its own.
+  for (const found of tidy(text).matchAll(pattern)) {
+    if (wanted.length === 0) return true;
+    const kept = found[0].split(' ').some((word) => wanted.some(
+      (want) => word.toLowerCase() === want.toLowerCase() && word[0] === want[0],
+    ));
+    if (kept) return true;
+  }
+  return false;
 }
 
 // Every event of `candidates` the text names. `candidates` is `[{ id, names }]`
@@ -112,11 +143,12 @@ export function mentions(text, name) {
 // about.
 export function namesHeldEvents(text, candidates, { exclude = [] } = {}) {
   const skip = new Set(exclude);
-  const folded = fold(text);
+  // The text is handed on unfolded: since deviation 1464 `mentions()` reads the
+  // capitals, and a caller that folded first would take them away.
   const out = [];
   for (const candidate of candidates ?? []) {
     if (skip.has(candidate.id)) continue;
-    const hit = (candidate.names ?? []).find((name) => mentions(folded, name));
+    const hit = (candidate.names ?? []).find((name) => mentions(text, name));
     if (hit) out.push({ id: candidate.id, name: hit });
   }
   return out;

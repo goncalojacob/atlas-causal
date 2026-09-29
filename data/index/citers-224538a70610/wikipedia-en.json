@@ -5534,6 +5534,18 @@
     },
     {
       "dissent": false,
+      "id": "paris-peace-accords--1975-spring-offensive--precondition-of",
+      "kind": "edge",
+      "locator": "\"1975 spring offensive\", revision 1376882115, § Conclusion"
+    },
+    {
+      "dissent": true,
+      "id": "paris-peace-accords--1975-spring-offensive--precondition-of",
+      "kind": "edge",
+      "locator": "\"1975 spring offensive\", revision 1376882115, § Conclusion"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-accords--fall-of-saigon--enabled",
       "kind": "edge",
       "locator": "\"Fall of Saigon\", revision 1375890528, lead"
@@ -8735,6 +8747,12 @@
       "id": "1975-sao-tomean-legislative-election",
       "kind": "event",
       "locator": "\"1975 São Toméan parliamentary election\", revision 1367760170"
+    },
+    {
+      "dissent": false,
+      "id": "1975-spring-offensive",
+      "kind": "event",
+      "locator": "\"1975 spring offensive\", revision 1376882115"
     },
     {
       "dissent": false,

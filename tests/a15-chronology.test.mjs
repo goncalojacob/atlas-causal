@@ -13,8 +13,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  stripHeadings, fold, opensWithChronology, statesACause, isChronologyOnly,
-  usableName, mentions, namesHeldEvents, verdictFor,
+  stripHeadings, fold, tidy, capitalsOf, opensWithChronology, statesACause,
+  isChronologyOnly, usableName, mentions, namesHeldEvents, verdictFor,
 } from '../tools/import/chronology.mjs';
 
 test('a sentence that opens on the order of events and states no cause is refused', () => {
@@ -55,6 +55,32 @@ test('a name is matched on word boundaries (deviation 1458)', () => {
   assert.equal(mentions('the treaty of Lausanne', 'Treaty of Lausanne'), true);
   // A name inside a longer word is not a mention.
   assert.equal(mentions('the Anschlusszeit', 'Anschluss'), false);
+});
+
+test('a capital a record carries is a capital the prose must keep (deviation 1464)', () => {
+  // The two false matches batch 65 caught by eye. Both sentences use a record's
+  // words as ordinary prose, in lower case, and mean nothing by them.
+  assert.equal(mentions('the European powers became increasingly aware of the troubles in Sudan', 'The Troubles'), false);
+  assert.equal(mentions('imposing a reign of terror over the regions of Sudan', 'Reign of Terror'), false);
+  // The same names written as names are still found, and a leading article is
+  // not one of the capitals asked for: prose writes "the Troubles".
+  assert.equal(mentions('the Troubles in Northern Ireland ended in 1998', 'The Troubles'), true);
+  assert.equal(mentions('The Troubles ended in 1998', 'The Troubles'), true);
+  assert.equal(mentions('the Reign of Terror ended with Thermidor', 'Reign of Terror'), true);
+  // One capital is enough, because an article writes "the treaty of Lausanne"
+  // for the Treaty of Lausanne — which is the assertion above this one.
+  assert.deepEqual(capitalsOf('Treaty of Lausanne'), ['Treaty', 'Lausanne']);
+  assert.deepEqual(capitalsOf('The Troubles'), ['Troubles']);
+  assert.deepEqual(capitalsOf('soviet-afghan war'), []);
+  // A name with no capital of its own is matched as it always was.
+  assert.equal(mentions('the Soviet-Afghan War ended in 1989', 'soviet-afghan war'), true);
+  // tidy() is fold() without the lowering, so the matcher can ask what the text
+  // capitalised; everything else it does is the same.
+  assert.equal(tidy('  the Soviet\u2013Afghan   War  '), 'the Soviet-Afghan War');
+  assert.equal(fold('  the Soviet\u2013Afghan   War  '), 'the soviet-afghan war');
+  // The capital has to be inside the occurrence that matched, not loose in the
+  // paragraph: a sentence about Terror elsewhere does not name the record here.
+  assert.equal(mentions('a reign of terror; the Terror came later', 'Reign of Terror'), false);
 });
 
 test('a heading is not a sentence (deviation 1460)', () => {

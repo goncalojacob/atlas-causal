@@ -14951,3 +14951,315 @@ because this is not a pull request. Run **1978**, on the claim commit, also
 concluded `success`; runs **1981** and **1982** were cancelled by the next push,
 which is deviation 1258's chain and costs nothing. **No run of this fire failed
 at any point.**
+
+## Batch 66 — the 1975 spring offensive, the matcher's capitals, and the 196 that fit and will not join
+
+*29 September, the fire that claimed at 12:19Z. Today's `## Curation 2026-09-29`
+section was already in this file and all thirteen of A15's passes have theirs, so
+this fire went to A10's order of need, which the last stand named as **Asia** at
+182 against Africa's 184. **One record, one edge, no new place, one commit of
+code.** A11(b)'s partition check was made before the import: the item is not on
+`origin/m42b`, by id or by qid.*
+
+This fire also merged `origin/m0` into the branch, which brought M89 in; the
+index was rebuilt from the records and is byte-identical to a fresh build.
+
+### Deviation 1465 — a capital a record carries is a capital the prose must keep
+
+The last stand left this open and said it was a fire's own commit and not a line
+in a batch. It is made. `mentions()` folded case before it matched, so the
+Mahdist War's ordinary sentence *"the European powers became increasingly aware
+of the troubles in Sudan"* matched `the-troubles` and the Battle of Omdurman's
+*"imposing a reign of terror"* matched `reign-of-terror`. Every curation fire
+since A13 has been over-refusing by however many of these it read, and reporting
+a count wrong by the same number.
+
+The rule written is narrower than "match the capitals": **a name that carries a
+capital is a mention only where the prose keeps at least one of them**, and never
+the leading article. One capital and not all of them because an article writes
+*"the treaty of Lausanne"* for the Treaty of Lausanne — which
+`tests/a15-chronology.test.mjs` has asserted since A15(5) and which a stricter
+rule would have broken. Not the leading article because prose writes *"the
+Troubles"* for The Troubles. And the capital has to fall inside the occurrence
+that matched, not loose in the paragraph, so *"a reign of terror; the Terror came
+later"* is still not a mention. `tidy()` is the fold without the lowering, which
+is what makes the question askable at all, and `namesHeldEvents()` hands the text
+on unfolded for the same reason. The test was written first and failed first
+(711). 1,908 pure tests pass.
+
+### The one record
+
+| the record | sitelinks | dates | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `1975-spring-offensive` | 16 | 13 Dec 1974 – 30 Apr 1975 | `south-vietnam` (held) | `vietnam-war` |
+
+Written through the tool's own three passes and not by hand: `readEntity`,
+`classify` (`Q2001676`, offensive → `war`), `intervalFor`, `placeChain`,
+`filedUnder`, `eventRecord`, `leadSummary`, `leadCitation`. **A9 took its second
+step and wrote no place:** the item carries no `P625`, its `P276` is `Q180573`,
+South Vietnam, and the atlas already holds that at `country` precision, so the
+place record count does not move. **A7 widened nothing**, because the cached lead
+at revision 1376882115 states no interval of its own.
+
+**A15(4)'s `span-vs-article-title` fires on it and was read rather than acted
+on.** The title names 1975 and the record opens on 13 December 1974. The lead the
+summary quotes settles which is right — *"In December 1974, People's Army of
+Vietnam's (PAVN) forces crossed from their bases in Cambodia and captured Phước
+Long Province by January 1975"* — so the item's interval stands, the title is the
+shorthand, and the warning is a true statement about the title and not about the
+record. That is the one warning this batch added: 599 → 600.
+
+### The edge, which is `disputed` because the article says so
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `paris-peace-accords` | precondition-of | `1975-spring-offensive` | **disputed** |
+
+The article's § Conclusion opens *"Four main lines of thought have remained
+particularly viable, all of which possess some validity, but all are also open to
+argument"* and gives the Accords as the first of the four: *"The first argument is
+that the Paris Peace Accords that ended the direct American participation in the
+war was seriously flawed, because it permitted the North Vietnamese to maintain
+their forces within territorial South Vietnam after the signing of the agreement,
+thereby dooming the ceasefire."* So the atlas gets what it is for: a link whose
+own source hands over the disagreement. `dispute` carries the other three in the
+article's own words — the refusal to take promised military action, a Congress
+that *"simply wrote off and abandoned the Saigon government"*, and Vietnamization
+*"as a prescription for defeat"*. The first draft of that field paraphrased two of
+the three from one it had read and a guess at the rest; A4 forbids that whether
+the guess is right or not, so all three were read and quoted in a commit of their
+own.
+
+`precondition-of` and not `caused`: the claim is that the agreement left the
+northern divisions where they stood and so made the offensive possible, not that
+signing it brought the offensive about. A15(5)'s `verdictFor()` passed the quote
+at the point of writing — no chronological opener, no third held event named.
+Both ends are children of `vietnam-war`, so **the edge is inside one umbrella**
+and C8 is not touched.
+
+### A15(11) and A5
+
+No edge of this batch crosses an umbrella: 563 stays 563 and the edges inside one
+go 487 → 488. The largest component goes **712 → 713**, because
+`paris-peace-accords` is in it.
+
+### The measurement this fire is really for: 196 candidates fit and will not join
+
+The batch's own yield is one record, and the reason is worth more than the record.
+This fire ran the screen a batch needs *before* it reads an article — every unheld
+`P361` child of a held Asia event at 12 or more sitelinks, put through the tool's
+**own** `filedUnder()` — over all **263** of them, and then read articles.
+
+| the screen, 263 candidates at 12+ sitelinks | |
+| --- | --- |
+| **fit**: a class the table has, an interval, and an umbrella whose span contains theirs | **196** |
+| refused by rule 24: the held umbrella's own interval is too narrow | **26** |
+| skipped: no class in `data/imports/wikidata-seeds.json` → `classes`, or no interval at all | **41** |
+
+**So filing is not the bottleneck. 196 records are one honest sentence away.**
+Fifty-six articles were read for that sentence — the four decisive campaigns of
+the Chinese Civil War, the Iran–Iraq tanker war at sea, October 7, the
+Greco-Turkish War, twenty of the Vietnam and Arab–Israeli families, Operation
+Opera and Orchard, Abu Ghraib, Operation Cyclone, the Fallujah battles, the
+Soviet withdrawal, Cinema Rex and Black Friday — and **exactly one** yielded a
+causal sentence naming a held event that is not the candidate's own umbrella.
+The pattern is plain and it is not a matcher fault: a battle's article says who
+fought, how many died and what was captured. Where it does state a cause, the
+cause is **the war the battle is part of**, which is the one edge C8 bars.
+
+**The order the next fire should take is not the deepest vein but the one whose
+umbrella already has held children**, because that is where a sibling edge is
+available at all, and it is the only shape that worked here:
+
+| umbrella | candidates that fit | children the atlas already holds |
+| --- | --- | --- |
+| `arab-israeli-conflict` | 11 | 17 |
+| `vietnam-war` | 9 | 17 |
+| `second-sino-japanese-war` | 27 | **1** |
+| `gaza-war` | 18 | **1** |
+| `war-in-afghanistan-2001-2021` | 17 | **1** |
+| `iran-iraq-war` | 14 | **0** |
+| `lebanese-civil-war` | 5 | 5 |
+| `iraq-war` | 10 | 2 |
+
+The three deepest veins in the lane have one held child between them, and both
+veins that have siblings to edge to were swept dry this fire.
+
+### The 26 that rule 24 refuses, and the two records that would unlock twelve
+
+`filedUnder()` refuses a parent whose span does not contain the child, on purpose:
+*a filing it writes can never be the warning rule 24 raises.* So a held record
+with too narrow an interval does not warn — it silently costs the atlas every
+child it would have taken.
+
+| umbrella | candidates it refuses | its interval here | what its own `review.note` says |
+| --- | --- | --- | --- |
+| `chinese-civil-war` | **10** | 1946-03-31 – 1950-05-01 | *"the imported item's and covers the decisive phase only… a reviewer should decide whether the record is the whole war or the campaign of 1946–1949"* |
+| `turkish-war-of-independence` | 3 | 1922-10-11 – 1923-07-24 | *"too narrow… A reviewer should widen the start before the record is signed"* |
+| `war-in-afghanistan-2001-2021` | 3 | | |
+| `arab-revolt` | 3 | | |
+| `second-sino-japanese-war` | 2 | 1937-07-07 – 1945-09-09 | (correctly: the 1931 invasion of Manchuria is outside it) |
+| `twelve-day-war`, `second-intifada`, `philippine-revolution`, `iraqi-insurgency`, `2025-2026-iranian-protests` | 1 each | | |
+
+**The two records whose own notes already name the fault refuse twelve between
+them**, and they are the biggest in the set: the **Long March** (65 sitelinks),
+the **Greco-Turkish War** (55), the **Turkish–Armenian War** (38), the **Northern
+Expedition** (38), the **Nanchang Uprising** (31), the **Xi'an Incident** (28),
+the first and third **Taiwan Strait crises** (25 and 24), the **Franco-Turkish
+War** (23), the **Autumn Harvest Uprising** (21), the **New Fourth Army
+incident** (13) and the 2022 exercises around Taiwan (14).
+
+**A7 gives this fire no licence to widen either**, and that was checked rather
+than assumed: A7 widens from the record's cited article at a named revision, and
+A15(4) reads the first sentence and the title. `turkish-war-of-independence`'s
+cached lead at revision 1372145108 states no interval, its title states none, and
+the current lead at revision 1377023760 states none either. Both intervals are on
+the review queue, where a person owns them; **two lines in `review.html` are worth
+twelve records here.**
+
+### The classes 41 candidates wait on
+
+Four candidates each turn on `Q217327` and `Q111034471`, three on `Q12890393`
+(the Xi'an Incident's second class), two each on `Q898712` and `Q30588142`. As
+batch 65 said of `Q168247` and the three treaty classes: **that is the owner's
+edit and not a run's** — the vocabulary is in `data/` so the argument is his —
+but it is one file, and it is what stands between this lane and the 1983–1985
+Ethiopian famine, the 2025 India–Pakistan conflict (40 sitelinks) and the
+Burning of Smyrna (30).
+
+### What this batch refused, and why each refusal is the honest one
+
+| candidate | why it is not here |
+| --- | --- |
+| `Q87138` Greco-Turkish War (55) | `filedUnder()` refuses `turkish-war-of-independence`: the war runs to the day the held record begins. Wikidata states `P828` the Armistice of Mudros and the article gives the legal ground — *"Legal justifications for the landings were found in Article 7 of the Armistice of Mudros"* — so the **edge is there and crosses an umbrella**, and the record cannot be filed to carry it |
+| `Q122976243` October 7 attacks (59) | fits `gaza-war` cleanly, and the only held event its whole article names is `six-day-war`, in a background sentence with no cause in it. Its one causal sentence — *"The attacks, which began the ongoing Gaza war"* — is the edge to its own parent, which C8 bars. **The largest single gap in the Asia lane is blocked by C8 and by nothing else** |
+| `Q4272689`, `Q372153`, `Q4348111`, `Q15896860` the four decisive campaigns of the Chinese Civil War | all four fit; not one article states a cause naming a held event other than the war they are part of. The Yangtze crossing's only other match is a film remade during the Cultural Revolution |
+| `Q254599` Battle of Shanghai (36) | its one causal sentence says the Marco Polo Bridge Incident *"triggered a full-scale war"* — a claim about the war, not about the battle, and an edge drawn from it would be over-reading a sentence about something else |
+| `Q6414580`, `Q1687078`, `Q2026308`, `Q814223` the Iran–Iraq war at sea | `iran-iraq-war` has **no held children at all**, and none of the four articles names a held event in a causal sentence. Fourteen candidates wait behind that |
+| `Q1470998` Simla Agreement (33), `Q2475091` Operation Nemesis (27), `Q836310` 1967 Hong Kong riots (13), `Q3351237` Pakistani Instrument of Surrender | Wikidata links each by cause to a held event and **none of them carries a `P361` at all**, so each would arrive with no parent and raise the main count, which A6 forbids |
+| `Q151622` Israeli–Palestinian conflict (88), `Q32993` Chinese Communist Revolution (34), `Q86521237` COVID-19 pandemic in Asia (30) | a third umbrella standing over records already filed, which batch 64 named a trap |
+| `Q856650` Iraqi invasion of Kuwait (45) | fits `gulf-war`, and its item's dates come back `P580` 2009 against `P582` 1990. A7 widens and does not correct, so the interval is one a person fixes on Wikidata or in the record, not one a batch guesses |
+| `Q509561` Soviet withdrawal, `Q2276724` Operation Defensive Shield | their one matching sentence each is a chronological opener whose cause is a third held event, which is exactly what A15(5) refuses |
+
+### A15(2) ran as the batch's last step
+
+`node tools/cache-evidence.mjs --fill`: the lead is on disk at revision
+1376882115, the title table has *"1975 spring offensive"*, and
+`tests/a15-cache.test.mjs` passes. 2,586 `wikipedia-en` citations on active
+records, 2,513 on disk, 73 unholdable for the reason A14(3) settles, **0 missing**.
+
+| | after batch 65 | after batch 66 |
+| --- | --- | --- |
+| corpus | 1,261 active | **1,262** (+1 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,026 | **1,027** |
+| active edges | 1,050 | **1,051** |
+| largest connected component | 712 | **713** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 392 | **392** |
+| **edges that cross an umbrella (A15(11))** | 563, 487 inside one | **563**, 488 inside one |
+| events with no edge at all | 309 | **309** |
+| place records | 734, 732 active | **734, 732 active** (none written) |
+| validator | 0 errors, 599 warnings | **0 errors, 600 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 182, Africa 184 | Europe 553, Americas 342, **Asia 183**, Africa 184 |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+**A10's order of need: Asia still trails**, 183 against Africa's 184, so the next
+import batch in this lane is Asia's again — and the table above says to start at
+`arab-israeli-conflict` or `vietnam-war` rather than at the deepest vein.
+
+## Where the run stands after batch 66, for the fire that picks it up
+
+*29 September, the fire that claimed at 12:19Z. **An import fire**, and the first
+of the day to find both the curation section and all thirteen A15 sections
+already written. It merged `origin/m0` (M89) into the branch, landed the code fix
+the last stand left open, imported one record with one `disputed` edge, and spent
+the rest of itself measuring why the lane yields one record and not ten.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **C8 is now measurable and the number is 196.** That is how many unheld
+  candidates at 12+ sitelinks the Asia lane holds that pass every filing test,
+  and the batch note above shows that the causal sentence almost all of them do
+  state is the edge to the war they are part of. October 7 — 59 sitelinks, the
+  largest single gap in the lane — is blocked by C8 and by nothing else. Every
+  fire since batch 46 has said C8 is the run's largest question; this one can say
+  what it costs.
+- **Two `review.html` lines are worth twelve records.** `chinese-civil-war` and
+  `turkish-war-of-independence` both carry a `review.note` saying their interval
+  is too narrow, and between them `filedUnder()` refuses twelve candidates
+  including the Long March and the Greco-Turkish War. A7 cannot reach either,
+  because neither cached lead nor either title states an interval — this fire
+  checked all four. A person widening two intervals unlocks twelve imports.
+- **`iran-iraq-war` has fourteen candidates and no held child.** It is the one
+  place where importing *two* records in one batch — one a sibling edge for the
+  other — would pay, if a pair can be found whose articles state the link
+  between them. The tanker-war trio was read for that and stated nothing.
+- **Deviation 1464 is fixed as 1465 and the counts before it were wrong.** Every
+  `a13-relations-pass` count a curation fire has reported since A13 was over the
+  old matcher; the next curation fire's numbers are the first that mean what they
+  say. Nothing wrong was ever written.
+- **`nigerian-civil-war` is still a two-node island** and the São Tomé airlift is
+  still the edge that would join it, wanting a source the atlas can open. The
+  last stand's paragraph on it stands unchanged.
+- **The two display faults of deviation 1461 are still open** and the two records
+  are still held back. This batch wrote no place and added no bar to the
+  `americas` lane, so it is no new evidence about either; the bisect in the
+  29 September curation section is still where a lane A fire should start.
+- **A15(12)'s 177 uncategorised events** and **A15(6)'s 32 cleared places** are
+  unchanged; this batch's one record carries the category its class gives.
+- **The EEC's closing year and `operation-sutton`'s missing day** are unchanged
+  and both are one line for the owner.
+- **`docs/m53-polities.md` §4.1 needed no retake**: `tools/m53-retake.mjs` reads
+  404 of 1,262 by the start rule, `tests/m53.test.mjs` passes, and the four
+  variants of that paragraph the last stand asked a person to cut to one are
+  still four.
+- **The network was in good repair, and two things about it are new.** **263**
+  `Special:EntityData` reads for the screen, **56 articles read whole** and one
+  lead, twelve `wbsearchentities` calls, fifteen SPARQL queries and the two
+  `cache-evidence` calls, one request in flight every 400 to 500 ms and no 429 on
+  any of them.
+  - **`query.wikidata.org` is reachable from this sandbox**, which is what made
+    the 263-candidate screen possible at all and what no earlier batch note
+    records. A `POST` with the query in the body takes a `VALUES` block of about
+    two hundred items; the whole held corpus in one, some 1,100, comes back 503.
+  - **Deviation 1466: the action API's `prop=extracts` is refused here and the
+    REST paths are not.** `api.php?action=query&prop=extracts` returns *"You are
+    making too many requests to the API"* on the first call of a fire, with the
+    import's own user-agent set, where batch 65 read twelve article extracts
+    through it. `rest.php/v1/page` — which returns the wikitext, so the whole
+    article and not the intro — and `api/rest_v1/page/summary` both answer 200 at
+    once. A fire that needs an article body should use `rest.php/v1/page`. The one
+    429 this fire saw was a probe sent with no user-agent at all, which is
+    deviation 1440 and not this.
+- **The branch was red when this fire picked it up, and the merge is what fixed
+  it.** The last stand says *"the check is green on this fire's final head. Run
+  1984… success"*, and that was true of run 1984. But run **1985**, on the very
+  doc commit that recorded it, concluded **failure**: `not ok 93 - dragging a
+  handle still moves the window, and the map still answers mid-gesture`, one of
+  300. The same test had passed on run 1984, so it was intermittent rather than
+  broken — and `origin/m0` already carried its fix, `7bd5060d M89: the handle-drag
+  test waits for the value it reads`, which came in with this fire's merge at
+  STEP 1. **A fire that records the check on its own final head should read the
+  run that commit triggers, not only the run before it**: the commit saying "the
+  check is green" is itself a push, and it gets a run of its own.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass, now with the
+  matcher fixed. **A15 is done and no fire owes it again.**
+- **Deviation numbers: take the next above 1466.** This fire wrote **1465**, the
+  matcher's capitals, and **1466**, the action API.
+
+**The check is green on this fire's final head.** Run **2001** of `validate.yml`,
+commit `e63806c5`, conclusion **`success`**. Run **1995**, on the code commit,
+also `success`; runs 1992, 1993, 1997, 1998, 1999 and 2000 were cancelled by the
+next push, which is deviation 1258's chain and costs nothing. **This paragraph's
+own commit triggers run 2002, and the next fire should read that one** — which is
+the whole point of the note four bullets up.
+
+**Both suites are green on this fire's tree: 2,221 tests, nothing skipped** —
+**1,908 pure** and **313 browser**, run the way the check runs them since M63.
+The first local browser run reported 1 of 313 failing and its name was lost to a
+`tail` on the capture; rather than call it load, the whole suite was run again and
+came back **313 of 313**, which with run 1995's own green is the evidence that
+nothing here reproduces. One suite was added: the deviation-1465 test in
+`tests/a15-chronology.test.mjs`, written before the fix and failing before it.

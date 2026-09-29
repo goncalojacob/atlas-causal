@@ -4493,6 +4493,15 @@
         }
       ]
     },
+    "paris-peace-accords--1975-spring-offensive--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "paris-peace-accords--fall-of-saigon--enabled": {
       "from": "git",
       "versions": [

@@ -2563,6 +2563,15 @@
         }
       ]
     },
+    "1975-spring-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1976-argentine-coup-d-etat": {
       "from": "git",
       "versions": [
