@@ -24,9 +24,10 @@
       "imported-facts",
       "summary-drafted",
       "m62-umbrella",
-      "a15-country-refused"
+      "a15-country-refused",
+      "a15-portugal-cut"
     ],
-    "note": "A15(6): the place was russia, from the item's P17, and it is refused because the country's inception (1991) is after the event ended (1945). The lane is unchanged."
+    "note": "A15(6): the place was russia, from the item's P17, and it is refused because the country's inception (1991) is after the event ended (1945). The lane is unchanged. A15(13): the summary's Portugal passage is cut to one statement. What went was \"; the neutrality was real and it was also lucrative, and it ended in practice in 1943 when Britain invoked the alliance of 1373 and was given the Azores.\""
   },
   "origin": {
     "tool": "wikidata"
@@ -63,7 +64,7 @@
     }
   ],
   "title": "World War II",
-  "summary": "The war of 1939–1945 was fought between the Axis and the Allies across Europe, north Africa, the Atlantic, the Soviet Union and the Pacific, and killed somewhere between fifty and eighty million people, most of them civilians. It ended the European empires' claim to run the world, left two powers standing where six had been, and produced the United Nations, the Nuremberg trials and the atomic bomb. Portugal stayed neutral throughout and traded with both sides, selling wolfram to Germany and Britain alike; the neutrality was real and it was also lucrative, and it ended in practice in 1943 when Britain invoked the alliance of 1373 and was given the Azores.",
+  "summary": "The war of 1939–1945 was fought between the Axis and the Allies across Europe, north Africa, the Atlantic, the Soviet Union and the Pacific, and killed somewhere between fifty and eighty million people, most of them civilians. It ended the European empires' claim to run the world, left two powers standing where six had been, and produced the United Nations, the Nuremberg trials and the atomic bomb. Portugal stayed neutral throughout and traded with both sides, selling wolfram to Germany and Britain alike.",
   "when": {
     "start": 1939,
     "end": 1945,

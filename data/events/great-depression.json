@@ -24,7 +24,8 @@
       "imported-facts",
       "summary-drafted",
       "a7-widened",
-      "a15-lane-from-point"
+      "a15-lane-from-point",
+      "a15-portugal-cut"
     ],
     "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.\n\nA14(2): the place was afghanistan-q889, first of the nine countries Q8698 names under P17, taken before the guard. A worldwide downturn drawn in Kabul is a wrong picture; cleared, the Americas lane kept. A15(7): nothing on "
   },
@@ -67,7 +68,7 @@
     }
   ],
   "title": "Great Depression",
-  "summary": "The world slump of the 1930s began in the United States in 1929 and reached everywhere that traded or borrowed: industrial production and world trade fell by about a third, unemployment reached a quarter of the workforce in Germany and the United States, and the gold standard, the banking systems and the trading order of the previous century came apart together. Portugal was hit less hard than most — a poor, agricultural, lightly banked economy with little exposure to short-term foreign capital — and that comparative shelter is exactly what made the Depression matter politically here: the dictatorship's finance minister could point to balanced budgets and a stable escudo while the parliamentary states around him failed.",
+  "summary": "The world slump of the 1930s began in the United States in 1929 and reached everywhere that traded or borrowed: industrial production and world trade fell by about a third, unemployment reached a quarter of the workforce in Germany and the United States, and the gold standard, the banking systems and the trading order of the previous century came apart together. Portugal was hit less hard than most — a poor, agricultural, lightly banked economy with little exposure to short-term foreign capital.",
   "when": {
     "start": 1929,
     "end": 1939,

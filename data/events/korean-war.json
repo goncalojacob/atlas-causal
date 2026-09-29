@@ -24,8 +24,10 @@
       "imported-facts",
       "summary-drafted",
       "a9-place",
-      "a15-category-from-p31"
-    ]
+      "a15-category-from-p31",
+      "a15-portugal-cut"
+    ],
+    "note": "A15(13): the summary's Portugal passage is cut to one statement. What went was \"and Portugal's new membership of it began to cost money.\""
   },
   "origin": {
     "tool": "wikidata"
@@ -58,7 +60,7 @@
     }
   ],
   "title": "Korean War",
-  "summary": "North Korean forces crossed the thirty-eighth parallel on 25 June 1950; the United Nations, with the Soviet delegate absent from the Security Council, authorised a defence, and the war ran through four reversals — the Pusan perimeter, Inchon, the Chinese intervention at the Yalu, and two years of static fighting — to an armistice in July 1953 that restored almost exactly the line it had started on. Between two and three million Koreans died. It has never formally ended. Its effect outside Korea was to turn the Cold War into an armed confrontation with standing forces: NATO acquired an integrated command and a rearmament programme, and Portugal's new membership of it began to cost money.",
+  "summary": "North Korean forces crossed the thirty-eighth parallel on 25 June 1950; the United Nations, with the Soviet delegate absent from the Security Council, authorised a defence, and the war ran through four reversals — the Pusan perimeter, Inchon, the Chinese intervention at the Yalu, and two years of static fighting — to an armistice in July 1953 that restored almost exactly the line it had started on. Between two and three million Koreans died. It has never formally ended. Its effect outside Korea was to turn the Cold War into an armed confrontation with standing forces: NATO acquired an integrated command and a rearmament programme.",
   "when": {
     "start": 1950,
     "end": 1953,

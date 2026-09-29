@@ -14468,3 +14468,58 @@ requests, 0 refused by the network. Corpus: **1,258 active, 235 main, 1,023
 filed, 1,048 active edges, largest component 711, 562 edges crossing an
 umbrella, 391 components, 309 events with no edge**. Validator **0 errors, 599
 warnings**, unmoved. A15(2)'s pass reports **0 citations off disk**.
+
+## A15 (13) — the Portugal passage cut to one statement, on the five records that have one
+
+*29 September, the 05:07Z fire. No network, no claim written: 727 characters
+deleted from five summaries and nothing added to any of them.*
+
+The 26 September review, A4: *"the World War II card spends its second half on
+wolfram and the Azores"*, and *"the Korean War card ends 'and Portugal's new
+membership of it began to cost money'"*. A15(13) cuts that passage to one
+statement.
+
+| record | was | is | cut |
+| --- | --- | --- | --- |
+| `world-war-ii` | 662 | 510 | −152 |
+| `world-war-i` | 671 | 510 | −161 |
+| `korean-war` | 695 | 638 | −57 |
+| `great-depression` | 729 | 500 | −229 |
+| `charter-of-the-united-nations` | 710 | 582 | −128 |
+
+What went, in each case, is the second half of the Portugal passage: the wolfram
+sentence's continuation about the Azores and the alliance of 1373; *"the war it
+obtained divided the First Republic more deeply than anything else the republic
+did"*; *"and Portugal's new membership of it began to cost money"*; the
+Depression's *"the dictatorship's finance minister could point to balanced
+budgets and a stable escudo"*; and the Charter's *"the Assembly's anti-colonial
+majority became the standing external pressure on its African policy"*. Each
+record's `review.note` carries the removed text verbatim, so the cut is
+reversible from the record itself.
+
+**Two corrections to A15(13)'s own list, and both are the data's.**
+
+**There is no `cold-war` record.** A15(13) names six and the atlas holds five:
+no event on `m42`, on `m42b` or on `m0` has that id, and no active event's title
+contains "Cold War". The review the amendment is drawn from names five —
+*"WWII, WWI, Korea, the Great Depression and the UN Charter"* — so the sixth is
+the amendment's own slip and not a record somebody retracted.
+
+**None of the five is "a quoted lead plus a paragraph the importer wrote".** All
+five are hand-drafted M40-era summaries, written by the assistant under the
+dated exception from beginning to end; there is no quoted lead in any of them to
+leave untouched. That changes nothing about what the pass may do — deleting the
+importer's own prose needs no source — but it does mean the clause *"the quoted
+lead untouched"* had nothing to protect, and a later pass reading A15(13)
+literally would look for something that is not there.
+
+**What the cut leaves.** Every one of the five still says what Portugal did, in
+one statement, at the end of a summary about the world. That is the review's own
+fix — *"cut to one sentence"*, not "removed" — and the Korean War's sentence is
+now about NATO rather than about Portugal's subscription.
+
+**Counts.** 5 records rewritten, all `active`, all flagged `a15-portugal-cut`,
+727 characters deleted and 0 written; 1 record named by the amendment and not
+held. Corpus unchanged: **1,258 active, 235 main, 1,023 filed, 1,048 active
+edges, largest component 711, 562 edges crossing an umbrella, 391 components,
+309 events with no edge**. Validator **0 errors, 599 warnings**.
