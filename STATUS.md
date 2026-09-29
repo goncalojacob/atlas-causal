@@ -22965,7 +22965,15 @@ Lane A numbers on from M88, which ended at 1428.
       *whether it is true*, and where they differ the second wins — which is
       what the first rule in `CLAUDE.md` is about. The shape of the sentence is
       kept and the word is not.
-1431. **A screenshot tool with a virtual clock measures the page's weight, not
+1431. **A test that compares two drawings compares two pane widths as well.**
+      M80's own test read the radius of a coarse mark off a page with a card
+      open and compared it with the radii read from the world view; §2's camera
+      made the two pages two zooms as well, and a radius is divided by the zoom
+      so that a mark keeps its size on the screen. It went red on a mark drawn
+      exactly as it should be. The comparison is between two marks in one
+      picture now, in the pixels the browser gave them, which is what "wider
+      than a city's mark" meant all along.
+1432. **A screenshot tool with a virtual clock measures the page's weight, not
       only its drawing.** §5's picture is *of the names*, and a name arrives
       with its century — twelve files behind the core, the land and two
       typefaces. The shot came out twice with every name on it and three times

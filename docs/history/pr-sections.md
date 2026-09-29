@@ -4477,4 +4477,4 @@ them the corpus's own — this branch wrote no record and added no warning class
 pictures, and no other picture `tools/screens.mjs` writes was taken.
 
 No new runtime dependency, no build step, no map library or tiles, no new hex
-value, token or type size. `docs/drafts/` ignored. Deviations **1429 to 1431**.
+value, token or type size. `docs/drafts/` ignored. Deviations **1429 to 1432**.

@@ -254,6 +254,12 @@ test('a connection listed on an event\'s card opens the link\'s card', { skip },
 const MARKS = `return [...document.querySelectorAll('#map svg.map circle.mark[data-id]')].map((el) => ({
   id: el.getAttribute('data-id'),
   r: Number(el.getAttribute('r')),
+  // And how wide it actually is on the screen. A mark keeps its size on screen
+  // at every zoom - its radius is divided by the zoom and the viewport
+  // multiplies by it - so two r attributes read at two different zooms are not
+  // comparable, and since M89 section 2 a lens moves the camera. What "wider
+  // than a city's mark" means is pixels.
+  px: el.getBoundingClientRect().width,
   coarse: el.classList.contains('coarse'),
   dash: getComputedStyle(el).strokeDasharray,
   fillOpacity: Number(getComputedStyle(el).fillOpacity),
@@ -274,9 +280,9 @@ test('a coarse place is drawn wider and fainter than a city, and says so on the 
     // Wider. Every coarse mark against every fine one drawn on the same page
     // at the same zoom, so the comparison is between two radii and not against
     // a number written into this file.
-    const widestFine = Math.max(...fine.map((m) => m.r));
+    const widestFine = Math.max(...fine.map((m) => m.px));
     for (const mark of coarse) {
-      assert.ok(mark.r > widestFine, `${mark.id} is not drawn wider than a city's mark`);
+      assert.ok(mark.px > widestFine, `${mark.id} is not drawn wider than a city's mark`);
     }
     // And fainter: a dashed, lighter ring over a fill that lets the ground
     // through, so nobody reads it as a pin dropped at an address.
@@ -297,10 +303,26 @@ test('a coarse place is drawn wider and fainter than a city, and says so on the 
     for (const [id, what] of [['fixture-event-c', 'region'], ['fixture-event-a2', 'country']]) {
       await open(page, url(`?${WHOLE}&selected=${id}`),
         `return Boolean(document.querySelector('#map svg.map circle.mark[data-id="${id}"]'));`);
-      const drawn = await page.eval(`const el = document.querySelector('#map svg.map circle.mark[data-id="${id}"]');
-        return { coarse: el.classList.contains('coarse'), r: Number(el.getAttribute('r')) };`);
+      // Against the city marks **on this page**, and not against the ones
+      // measured in the world view. A mark's size on the screen is the pane's
+      // width and the camera's zoom together: opening a record takes the panel's
+      // width away from the map, and since M89 section 2 a lens moves the camera
+      // as well. Two marks drawn in one picture are the comparison; two read
+      // from two pictures are two numbers about two pane widths.
+      const drawn = await page.eval(`
+        const el = document.querySelector('#map svg.map circle.mark[data-id="${id}"]');
+        const others = [...document.querySelectorAll('#map svg.map circle.mark[data-id]')]
+          .filter((other) => other !== el && !other.classList.contains('coarse'))
+          .map((other) => other.getBoundingClientRect().width);
+        return {
+          coarse: el.classList.contains('coarse'),
+          px: el.getBoundingClientRect().width,
+          fine: others.length ? Math.max(...others) : null,
+        };`);
       assert.ok(drawn.coarse, `the ${what}-placed event is not drawn coarse`);
-      assert.ok(drawn.r > widestFine, `the ${what}-placed event is not drawn wider than a city's mark`);
+      if (drawn.fine !== null) {
+        assert.ok(drawn.px > drawn.fine, `the ${what}-placed event is not drawn wider than a city's mark`);
+      }
     }
   });
 });
