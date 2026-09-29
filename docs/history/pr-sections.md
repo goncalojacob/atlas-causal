@@ -4374,3 +4374,107 @@ the check runs them; the browser lane 5m27s before and 5m16s after.
 
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. `docs/drafts/` ignored. Deviations **1425 to 1428**.
+
+## M89 — what a reader met on the third review
+
+Lane A, on the branch `m89`, over the third Fable review's part A
+(`docs/review-2026-09-26.md`, 25 September): what a funder met on a laptop and a
+phone, in the order they met it, on a corpus of 1,257 active events over five
+regions. All eleven sections are done and none was refused. No record was
+written, no historical claim was made, and nothing under `data/` changed at all.
+The second half of §5 — stretching the timeline's axis by density — is not in
+this branch; the placer it asks for first is, and it is what the finding needed.
+
+### What the first screen says the atlas is
+
+The front card printed `record.title`, and the core's fallback for a missing
+title is the record's own id: on three loads in eight a funder was greeted with
+*"Start here: how-the-colonial-war-ended-the-regime · 0 steps"* and six slugs
+under "What most of it hangs on". Every name on it comes through `labelOf` now —
+the title once its century has landed, and the sentence the chips already use
+before that — and the counts that are attributes go with it. The redraw stops
+being one callback: `src/shard-watch.js` is the count of centuries a control
+last drew at, kept by the intro, the chips and the composer, compared whenever
+any of them is nudged, and drawn outright when the tab comes back, because the
+count is itself moved by an animation frame a hidden tab does not get.
+
+And the six it offers are picked with a rule rather than by degree alone. They
+were World War II, World War I, 25 April, the Kosovo War, Portugal joining the
+EEC and Operation Odyssey Dawn — nothing before 1914, two of them Portuguese,
+two of them air campaigns of 1999 and 2011. The score is `subtreeWeight +
+weight` and the six are spread, at most one per lane and no century twice: the
+Third Portuguese Republic, the Spanish colonization of the Americas, the Arab
+Spring, the Boxer Rebellion, the Atlantic Revolutions and the Thirty Years' War
+— four lanes, six centuries, one Portuguese record.
+
+### What a phone and a lens are looking at
+
+M87 fitted the map to the pane's height on a phone. What that crop keeps is the
+middle of the projection, and the middle of this projection is the Pacific: the
+phone opened on Russia's east, China, South-East Asia and Australia, with
+Europe, Africa and the whole of the Americas off the screen and nothing saying
+so. Centring the crop on the events is no answer at rest — the box 1,257 events
+stand in is the world — so it is the whole world on every device, which is a
+smaller picture and a true one about the scope.
+
+And the map gets a camera, over the graph's own arithmetic and never a second
+copy of it: a lens frames its marks, widest set first and the focus as the
+fallback, as far in as a continent and no further, and a camera the reader moved
+is never taken back. `?focus=actor:nigeria` drew no mark at all before it.
+
+### What an umbrella, a category and a year answer
+
+The Scramble for Africa read *Consequences 0, "No outgoing links recorded"*
+above *Parts 14*, under a masthead promising every event linked; twelve of the
+240 main events are umbrellas in that state. The card reads the parts' own edges
+now and says what they reach, listing where each goes and which part takes the
+reader there — no edge written, nothing inherited, the umbrella's own count
+still zero.
+
+A category switch drew 186 of 1,257 and looked like a filter that did not
+filter; the control says what it kept, "35 wars, and 151 events without a
+category still drawn", counted over the events the views are drawing. And four
+digits in the search box are a question about time: every active event whose
+`when` covers that year, as a group of its own. "1857" gave nothing and now
+gives eight; "1950" gave eleven events with 1950 in their prose and now gives
+the year's own as well.
+
+### What the pictures write on themselves
+
+From 1900 to 2026 — where 189 of the 240 main events start — the timeline's
+titles were written across other bars, and the last was cut by the edge. They go
+through the map's own placer now, which learns two things and no more: ground
+already taken, which is every drawn bar, and a box the caller made, because
+where a title goes on that view is the timeline's answer and not the placer's. A
+name whose box hits a bar or another name is not written, and the bar still
+carries it under the pointer.
+
+The map's "N more" badges were drawn with the marks, before any name existed,
+so seven of them overlapped each other and three names inside two hundred
+pixels. They are candidates now, placed after the names and against them; the
+double ring already says "more than one here". The resting names also take a
+floor of one per lane, which today's corpus happens to satisfy on its own.
+
+### What the prose and the edges said
+
+The essay claimed nothing here is generated by a language model, on a site where
+every imported record's `authors` says otherwise. That paragraph is the about
+page's now — one person with an assistant, every record crediting its article
+and revision, `?review=1` for how far each has been read — and what it says is
+not delegated is the reading. "The current test dataset" and "the first slice is
+Portuguese expansion, 1415 to 1580" go with it.
+
+A lens on an actor said only the actor's name while drawing a hundred and
+fourteen events; it says what it is showing beside it. The band's two years were
+written half outside the pane at every width the review looked at, the card's
+head line was cut by the phone's sheet, "no place: timeline only" sat beside
+"Africa", and the graph's and the timeline's keys were closed while the map's
+was open. All four are the edges of the same picture and all four are done.
+
+`validate --index` clean: 12,967 records, 0 errors, 730 warnings, every one of
+them the corpus's own — this branch wrote no record and added no warning class.
+`docs/screens/m89-map-phone.png` and `docs/screens/m89-timeline.png` are the two
+pictures, and no other picture `tools/screens.mjs` writes was taken.
+
+No new runtime dependency, no build step, no map library or tiles, no new hex
+value, token or type size. `docs/drafts/` ignored. Deviations **1429 to 1433**.

@@ -160,4 +160,9 @@ function draw(into, row) {
 }
 
 export const mapKey = () => viewKey('Marks', MAP_ROWS, { open: true });
-export const timelineKey = () => viewKey('Bars', TIMELINE_ROWS);
+// **And the timeline's opens too** (M89 §11, A11). M86 §5 opened the map's on a
+// desktop for the reason that applies to all three — a "KEY" button bottom left
+// and nothing else is a key the first-time reader does not know is one — and
+// then only the map's was opened, so a reader who switched view met the button
+// again. The phone keeps the fold, which `viewKey` decides.
+export const timelineKey = () => viewKey('Bars', TIMELINE_ROWS, { open: true });

@@ -27,7 +27,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
-  withBrowser, open, waitFor, seenIntro, watchErrors, errorsOn, skip,
+  withBrowser, open, waitFor, until, seenIntro, watchErrors, errorsOn, skip,
 } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { lensView } from '../src/lens.js';
@@ -297,10 +297,24 @@ test('dragging a handle still moves the window, and the map still answers mid-ge
         ...at, clientX: Math.round(strips.left + 40), clientY: box.top + box.height / 2 }));
       return true;`);
 
+    // **Waited for, not read off the next line** (M89). The band writes its
+    // `aria-valuenow` from the store, which is a subscription and a render, and
+    // the page has more to do on a state change than it had — the map's camera,
+    // the badges' round, the category control's own count. A read taken in the
+    // same turn as the pointer event is a read taken before the page has
+    // answered it, and on a loaded runner it caught the value it started with.
+    // `until` rather than `waitFor`, so the assertion below still runs and still
+    // reports the two windows by name if the drag really did nothing (M78).
+    await until(page, `return Number(document.querySelector('#map-band-strip .window-handle.to')
+      .getAttribute('aria-valuenow')) < ${Number(before.window.to)};`);
     const during = { window: await page.eval(BAND_WINDOW), marks: await page.eval(MARKS) };
     assert.ok(Number(during.window.to) < Number(before.window.to),
       `the far end moved the way the pointer went (${before.window.text} → ${during.window.text})`);
-    assert.notDeepEqual(during.marks, before.marks,
+    // And the same for the picture, which is redrawn on that same render.
+    const was = JSON.stringify(before.marks);
+    await until(page, `return JSON.stringify([...document.querySelectorAll('#map .mark')]
+      .map((m) => m.getAttribute('data-id'))) !== ${JSON.stringify(was)};`);
+    assert.notDeepEqual(await page.eval(MARKS), before.marks,
       'the map is drawing a different picture with the pointer still down');
 
     await page.eval(`

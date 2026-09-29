@@ -31,8 +31,9 @@
 
 import { esc } from './util/esc.js';
 import {
-  categoriesChecked, categoriesShown, eventsOn, eventsTokens,
+  categoriesChecked, categoriesShown, categoryCounts, categoryCountText, eventsOn, eventsTokens,
 } from './categories.js';
+import { bandEvents } from './window-band.js';
 import { GLYPH_BOX, glyphId } from './map/glyphs.js';
 import { LAYERS } from './state.js';
 
@@ -90,8 +91,12 @@ export function createCategoryControl(group, { atlas, state }) {
   // The `id` on the block is what lets the group be opened by an anchor:
   // `#events-by-category` in a link makes the browser open the `<details>` that
   // contains it.
-  group.innerHTML = '<details><summary>events by category</summary>'
+  // The sentence is in the `<summary>` and not under it, because the block is
+  // collapsed and a reader who has narrowed the picture has to be able to see
+  // what the narrowing kept without opening anything (M89 §8, A8).
+  group.innerHTML = '<details><summary>events by category<span class="category-count"></span></summary>'
     + `<div class="categories" id="events-by-category">${categories.map(row).join('')}</div></details>`;
+  const counted = group.querySelector('.category-count');
 
   const boxes = () => [...group.querySelectorAll('input[data-category]')];
 
@@ -113,10 +118,39 @@ export function createCategoryControl(group, { atlas, state }) {
     box.addEventListener('change', () => state.set({ layers: layersFromBoxes() }));
   }
 
-  const render = (layers) => {
-    const ticked = new Set(categoriesChecked(layers, all));
-    for (const box of boxes()) box.checked = ticked.has(box.dataset.category);
+  // **And what the switches kept, in words** (M89 §8, A8).
+  //
+  // `?layers=territories,events:war` drew 186 of 1,257 and read "186 main
+  // events of 1257 in view": 35 of the 240 main events are wars, 151 carry no
+  // category at all and stay drawn, and a reader pressing one switch saw a
+  // filter that appeared not to filter. The rule — a category never hides a
+  // record that has none — is in the essay, and the essay is not on the screen
+  // where the switch is pressed.
+  //
+  // Both numbers are counted over the events the three views are actually
+  // drawing (`bandEvents`, the same picture the band is a band over), so the
+  // sentence and the picture cannot come apart. Nothing at all while every
+  // category is on: a control that speaks when it has narrowed nothing is noise
+  // in the masthead.
+  const say = (s) => {
+    if (!counted) return;
+    const ticked = categoriesChecked(s.layers, all);
+    if (!eventsOn(s.layers) || ticked.length === all.length) {
+      counted.textContent = '';
+      return;
+    }
+    const on = new Set(ticked);
+    const { kept, uncategorised } = categoryCounts(bandEvents(atlas, s),
+      categories.filter((one) => on.has(one.id)));
+    const text = categoryCountText({ kept, uncategorised });
+    counted.textContent = text ? ` — ${text}` : '';
   };
-  render(state.get().layers);
-  state.subscribe((s) => render(s.layers));
+
+  const render = (s) => {
+    const ticked = new Set(categoriesChecked(s.layers, all));
+    for (const box of boxes()) box.checked = ticked.has(box.dataset.category);
+    say(s);
+  };
+  render(state.get());
+  state.subscribe(render);
 }

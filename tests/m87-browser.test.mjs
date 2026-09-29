@@ -191,9 +191,21 @@ test('§8: the timeline marks the two ends of the link the reader has opened', {
 // marks and empty ground beneath it: the `<svg>` carries a 960 x 540 viewBox and
 // no `preserveAspectRatio`, so it is letterboxed, and fitted to a 390-pixel pane's
 // *width* the world can never be taller than 56 % of it. Under the phone
-// breakpoint it is fitted to the pane's height instead — the poles are cropped,
-// which is what a reader loses, and they lose a strip of ice for a picture twice
-// the size. Nothing is pinned: the drawing is compared with the pane it is in.
+// breakpoint it was fitted to the pane's height instead — the poles cropped,
+// which is a strip of ice for a picture twice the size.
+//
+// **The phone half was reversed by M89 §2** (the third review, A2). What the crop
+// kept was the middle of the projection, and the middle of this projection is the
+// Pacific: the phone opened on Russia's east, China, South-East Asia and
+// Australia, with Europe, Africa and the whole of the Americas off the screen on
+// either side and nothing saying so. A funder who cannot tell that the atlas
+// covers the Americas has been told something false about its scope, which is a
+// worse fault than a small picture. So the world is fitted to the width on every
+// device now and nothing is cropped anywhere, and this asserts that of both — the
+// desktop's half unchanged, the phone's inverted with the finding that inverted
+// it. `tests/m89-browser.test.mjs` §2 is where the lanes on the screen are
+// counted. Nothing is pinned either way: the drawing is compared with the pane it
+// is in.
 const MAP_FIT = `
   const pane = document.querySelector('.map-area');
   const svg = document.querySelector('#map svg.map');
@@ -205,22 +217,17 @@ const MAP_FIT = `
     fit: svg.getAttribute('preserveAspectRatio'),
   };`;
 
-test('§9: on a phone the map fills the pane, and on a desktop it still fits inside it', { skip }, async () => {
-  for (const [where, device, covers] of [['a phone', PHONE, true], ['a desktop', DESK, false]]) {
+test('§9 (as M89 §2 leaves it): the whole world fits inside the pane on both', { skip }, async () => {
+  for (const [where, device] of [['a phone', PHONE], ['a desktop', DESK]]) {
     // eslint-disable-next-line no-await-in-loop
     await withBrowser(async (page, url) => {
       await seenIntro(page);
       await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
       const seen = await page.eval(MAP_FIT);
       assert.ok(seen.pane.height > 0, `${where}: the pane measured itself`);
-      if (covers) {
-        assert.ok(seen.drawn.height >= seen.pane.height - 1,
-          `${where}: the world is ${Math.round(seen.drawn.height)} px in a pane of ${seen.pane.height} px`);
-      } else {
-        assert.ok(seen.drawn.height <= seen.pane.height + 1,
-          `${where}: nothing is cropped (${Math.round(seen.drawn.height)} px in ${seen.pane.height} px)`);
-        assert.ok(seen.drawn.width <= seen.pane.width + 1, `${where}: nor sideways`);
-      }
+      assert.ok(seen.drawn.height <= seen.pane.height + 1,
+        `${where}: nothing is cropped (${Math.round(seen.drawn.height)} px in ${seen.pane.height} px)`);
+      assert.ok(seen.drawn.width <= seen.pane.width + 1, `${where}: nor sideways`);
     }, { device });
   }
 });

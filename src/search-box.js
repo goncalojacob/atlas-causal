@@ -27,6 +27,15 @@ const KIND_LABEL = Object.freeze({
   event: 'Events', actor: 'Actors', place: 'Places', source: 'Sources', office: 'Offices',
 });
 
+// And the one group whose heading is not a kind: the events of a year, which is
+// what four digits in the box ask for (M89 §7, A7). The year is the group's
+// own, from `search()`, so the heading cannot come to name a different one from
+// the rows under it.
+export function groupLabel(group) {
+  if (group.kind === 'year') return `Events in ${group.year}`;
+  return KIND_LABEL[group.kind] ?? group.kind;
+}
+
 // `shard` is the search index the build already folded (h3a-brief, A9),
 // given as a promise: the box is wired at once and answers as soon as the
 // file lands, because nothing on the page is drawn out of it. A shard that
@@ -121,7 +130,7 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
         i += 1;
         return row;
       }).join('');
-      return `<li class="search-group" role="presentation">${esc(KIND_LABEL[group.kind] ?? group.kind)}</li>${rows}`;
+      return `<li class="search-group" role="presentation">${esc(groupLabel(group))}</li>${rows}`;
     }).join('');
     list.innerHTML = html;
     list.hidden = false;

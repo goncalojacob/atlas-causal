@@ -23161,6 +23161,290 @@ routine's to renumber, by deviation 461's rule.
       *started*; it does not say a fire is *running*, and an idempotent gate
       cannot see the difference.
 
+## M89 — what a reader met on the third review
+
+Lane A, on the branch `m89`. `docs/m89-brief.md` over the third Fable review's
+part A (`docs/review-2026-09-26.md`, 25 September, the live site at snapshot 11:
+1,257 active events over five regions) — what a funder met on a laptop and a
+phone, in the order they met it. **All eleven sections are done and none was
+refused.** No record was written, no historical claim was made, no new hex
+value, token or type size was added, and **nothing under `data/` changed at
+all**: `validate --index` is clean at 12,967 records, 0 errors, 730 warnings,
+the same 730 the branch was cut on.
+
+The suite: **2,190 tests, none skipped** (1,877 pure, 313 in a browser run one
+at a time, the way the check runs them), against M88's 2,151. The check is
+green on the head of this branch — run 1952, 7bd5060d, success — after one red
+on the `M89 done` commit which was deviation 1432 and a test, not the page.
+
+What the brief offered as the second half of §5 — stretching the timeline's axis
+by density, "as a second commit if it is done" — is not in this branch. The
+placer it asks for first is, and it is what the finding needed; the stretch is a
+better picture and is still available to whoever wants it.
+
+**The six the front card now names**, which is A4's own measure of whether the
+rule worked, with the lane and the century of each:
+
+| event | lane | century | score |
+| --- | --- | --- | --- |
+| The Third Portuguese Republic | Europe | 1900s | 401 |
+| Spanish colonization of the Americas | Americas | 1400s | 105 |
+| Arab Spring | Africa | 2000s | 77 |
+| Boxer Rebellion | Asia | 1800s | 22 |
+| Atlantic Revolutions | Europe | 1700s | 109 |
+| Thirty Years' War | Europe | 1600s | 39 |
+
+Four lanes, six centuries, and one Portuguese record where there were two —
+against the World War II, World War I, 25 April, Kosovo War, EEC accession and
+Operation Odyssey Dawn a funder was shown, which held nothing before 1914.
+
+The two pictures: `docs/screens/m89-map-phone.png` beside `m87-map-phone.png`,
+and `docs/screens/m89-timeline.png`. **No other picture `tools/screens.mjs`
+writes was taken or rewritten**, and both were taken with `--only`.
+
+### 1 — nothing prints an id where a title goes, and the redraw is not one callback (A1)
+
+`introHtml` printed `record.title`, and the core's fallback for a missing title
+is the record's own id (spine.js): on three loads in eight the front page of the
+atlas greeted a funder with *"Start here: how-the-colonial-war-ended-the-regime
+· 0 steps"* and six slugs under "What most of it hangs on". Every name on the
+card comes through `labelOf` now — the title once its century has landed and
+`LOADING_LABEL` before that — and the counts that are attributes go with it, so
+a walk whose steps have not arrived does not report having none. The chips' own
+word for the same state is `LOADING_LABEL` too, where it was a `loading…` of
+their own.
+
+And the redraw stops being one callback. `src/shard-watch.js` is the count of
+centuries a control last drew at: the intro, the chips and the composer each
+keep one, compare it to the atlas's own whenever they are nudged — by
+`main.js`, by any state change, or by the tab coming back — and draw when it has
+moved. The tab coming back *draws* rather than asking, because the count is
+itself moved by an animation frame that a hidden tab does not get (data.js,
+`deferBatch`), which is deviation 1429. `redrawForShards` calls its five
+consumers one at a time, so a throw in the map no longer leaves the card on its
+slugs.
+
+Tests: a browser test that nothing on the front page — the card's ways in or the
+masthead's chips — prints an id or a loading label once the shards are in, and
+one that takes the animation frame away outright, lets the centuries land, finds
+the card on its loading labels, and then shows the tab: the names arrive with no
+frame ever served.
+
+### 2 — the phone opens on the world, and a lens frames its marks (A2)
+
+M87 §9 fitted the map to the pane's *height* on a phone, to answer a 220-pixel
+band with empty ground beneath it. What the crop keeps is the middle of the
+projection, and the middle of this projection is the Pacific: the third review's
+phone opened on Russia's east, China, South-East Asia, Australia and New
+Zealand, with Europe, Africa and the whole of the Americas off the screen on
+either side and nothing saying so.
+
+A2 offers centring the crop on the events instead, and that is no answer at
+rest: the box 1,257 events over four lanes stand in is the world, and its centre
+is the Pacific again. So the whole world, fitted to the width, on every device —
+the reviewer's own preference (*"a world 220 px high with ten names beats a
+third of the world 600 px high"*), and the one that does not tell a funder
+something false about the scope. M87 §9's browser test carries the reversal and
+the finding that made it.
+
+And the map gets a camera. `src/map/camera.js` is which marks a lens offers the
+frame, widest first, **over the graph's own arithmetic** (`graph-view/frame.js`)
+and never a second copy of it: `?focus=actor:nigeria` at 390 px drew no mark at
+all, because Nigeria is in Africa and nothing moved the picture. `FIT_ZOOM` is
+4, where a nominal pane shows about ninety degrees — a continent and its
+neighbours — and a camera the reader dragged, wheeled, double-clicked or zoomed
+into a cluster is never taken back.
+
+### 3 — an umbrella's card says what its parts link to (A3)
+
+The Scramble for Africa is an umbrella of twenty-four events with no edge of its
+own, so its card read *Consequences 0, "No outgoing links recorded"* above
+*Parts 14*, under a masthead promising every event linked to what it led to;
+twelve of the 240 main events are in that state and they are the ones a funder
+opens first. `partsReach` reads the parts' own edges: the section says "The N
+events inside it link to M events" and lists where each goes and which part
+takes the reader there. **No edge is written and nothing is inherited** — the
+count of the umbrella's own links is still zero, "inside it" is
+`eventsOfFocus`'s own answer so the card cannot disagree with the lens, and a
+leaf with neither parts nor links keeps the old sentence because it is the true
+one.
+
+### 4 — what most of it hangs on, picked with a rule (A4)
+
+`heaviest()` sorted by `weight`, which is an event's own degree and is where the
+fire happened to write most. The score is `subtreeWeight + weight` now — how
+much of the atlas is inside an event and how connected the event itself is — and
+the six are spread by two rules given up in order: at most one per lane, and no
+century twice. There are five lanes and six places on the card, so the lane rule
+cannot hold for all six even on a full corpus and is the first to go; the century
+rule holds while there are six centuries to have, which is what keeps 1914 to
+2011 from being the whole of the front page. The table above is what it picks.
+
+### 5 — the resting timeline writes a name only where it fits (A5)
+
+189 of the 240 main events start after 1900, so from 1900 to 2026 the titles were
+written across other bars: *"1908 Portuguese legislative election"* struck
+through by two of them, *"COVID-19 pandemic"* running into *"Euromaidan"*, the
+last name at the right edge cut in half. A title was placed wherever
+`labelPlacement` put it and refused only by a short per-row list of other
+titles, and only past the pane's cap — nothing ever asked whether it was being
+written over a bar.
+
+The titles go through the map's own placer now, which takes two new things and
+is otherwise untouched: `occupied`, boxes already taken before the first name is
+placed, which is every drawn bar — a bar is what the reader came to see and
+never loses to a label — and a per-candidate `box`, because where a title goes
+on this view is `labelPlacement`'s answer and not the placer's. `boxInView` asks
+about both edges now, since a title anchored at its end is written leftwards.
+The umbrella names over the axis had M82's rule — written whole or not written —
+asked only of each other, which is how *"COVID-19 pandemi"* came back at the top
+of the picture after M88 §9 took it off the bottom; they are held to the pane
+too.
+
+### 6 — the badges go through the placer, and every lane gets a name (A6)
+
+Over Europe and the Near East, inside two hundred pixels, "2 more", "11 more",
+"10 more", "6 more", "7 more", "2 more" and "4 more" overlapped each other and
+the names under them: the badges were drawn with the marks, before any name
+existed, and nothing asked whether two were in the same place. A badge is a
+candidate now, placed after the names and against them — a name is what the map
+says and a badge is the count of what it could not say, and what a dropped badge
+loses is nothing a reader needs, since the double ring already says "more than
+one here" and the stack's title carries the count. They keep a group of their
+own inside the events layer, because a click on a badge opens the stack it
+counts and a label is never a control.
+
+And the names get a floor of one per lane: the heaviest cluster of each region
+is offered `first`, a new key in the placer's order between priority and weight.
+**On today's corpus weight alone already reaches every drawn lane**, so the
+floor is a guarantee rather than a change to the picture — said plainly, because
+the browser test cannot tell the two apart and the pure test of the ordering is
+what holds the rule.
+
+### 7 — a year in the search box finds the events of that year (A7)
+
+"1857" found nothing and the box said "Nothing by that name"; "1950" found
+eleven, every one of them an event with 1950 in its title or its first sentence
+and not one of them because it happened then. Four digits are a question about
+time now: every active event whose `when` covers that year, as a group of its
+own with a limit of its own, ahead of the name matches and headed "Events in
+1857". Held as the scan goes, so the second question costs one comparison per
+event and no second pass; a record that answers both is in both groups and is
+one of the total, not two. Measured here: "1857" gives eight rows where it gave
+none, "1950" twenty-six matches where it gave eleven.
+
+### 8 — the category control says what it kept (A8)
+
+`?layers=territories,events:war` drew 186 of 1,257 and the masthead said so,
+which looked like a filter that did not filter: 35 of the 240 main events are
+wars and 151 carry no category at all and stay drawn. The control says what it
+kept beside its own summary — **"35 wars, and 151 events without a category
+still drawn"** — counted over the events the three views are actually drawing,
+and nothing at all while every category is on. The plural is a rule in
+`categories.js` and not a column in `data/`: adding one would be asking whoever
+writes a record to write grammar.
+
+### 9 — the essay stops contradicting the about page (A9)
+
+`essay.html` claimed *"Nothing here is generated by a language model — not the
+summaries, not the arguments, not the disputes"* on a site where every imported
+record's `authors` reads "Claude (assistant draft, unreviewed)". That paragraph
+is the about page's now — one person with an assistant, every record crediting
+the article and the revision it was read at, `?review=1` for how far each has
+been read — and what it says is not delegated is the reading: *a link is only
+ever as good as the person who signed it*. "The current test dataset" and its
+Lisbon count go, and "the first slice is Portuguese expansion, 1415 to 1580"
+becomes the first records, with the span the atlas actually runs. `review.html`
+no longer calls its queue the assistant's: it is everything nobody has read,
+whoever wrote it, which is what `CLAUDE.md` says it is.
+
+### 10 — the actor lens's chip says what it is showing (A10)
+
+`?focus=actor:japan` read "114 of 1257 events in view" and drew the Winter War,
+Katyn and the Turkish War of Independence, with nothing on the page saying why.
+What the lens holds is the owner's decision and is unchanged; the chip says what
+it is showing beside what it is a lens on — the events the focus names, and how
+many more are drawn around them. **"Around" and not "inside"** (deviation 1430):
+A10's wording reads the extra events as an umbrella's parts, and of Japan's 114,
+thirty-seven name Japan, twenty-three are inside one of those and the other
+fifty-four are one link away or an umbrella over one. Printing "inside" would be
+a claim about the records and a false one. Only where the lens is one focus:
+with two or more the chips share a ring, and the masthead's own line is what
+counts what is in view.
+
+### 11 — the edges (A11)
+
+Four small things. The band's two years were anchored on a fixed side of their
+handles, so at the extent — where both handles stand at the edges of the drawing
+— both were written half outside it: "492" and "202" at 1280, "92" and "20" with
+the panel open, "02" on the phone. Every reading of the band's own years the
+review took was a clipped one; the side is chosen by the room there is now, and
+a window of one year is clamped inside the pane too.
+
+The card's head line would not wrap, so a phone cut its last two pieces: "Africa
+· Other  map at 1", "Asia · m". It wraps under the breakpoint the stylesheet
+already draws at.
+
+"no place: timeline only" is which views draw a record, which is the builder's
+question; the Scramble's head said it beside "Africa", which reads as the atlas
+having no place for an event whose continent it has just named. It is "no single
+place" now, and nothing at all where the lane says where it was — on the card
+and on the entry page, which carried the same sentence.
+
+And the graph's and the timeline's keys open at rest on a desktop, as the map's
+has since M86 §5: three answers to one question is what a reader switching view
+met. The button, the fold and the phone are unchanged, and M82's and M83's tests
+carry the reversal with the finding that made it.
+
+### Deviations
+
+Lane A numbers on from M88, which ended at 1428.
+
+1429. **A signal that is itself delivered by the thing that failed cannot be
+      the whole of the recovery.** §1's watch compares the atlas's count of
+      landed shards; that count is moved inside a settle deferred by an
+      animation frame (data.js, `deferBatch`), which is exactly what a hidden
+      tab does not serve. A watch that only *asked* on `visibilitychange` would
+      have found the count where it left it and drawn nothing, with the rows
+      already in the records. The tab coming back draws instead of asking,
+      which the browser test proves by taking the frame away and never giving
+      it back.
+1430. **A finding's own wording can be a claim the records do not support.**
+      A10 proposes "Japan: 38 events, and the 76 inside them", reading the
+      extra events as an umbrella's parts; measured, twenty-three of the
+      seventy-seven are and fifty-four are neighbours or umbrellas. The brief
+      is the authority on *what to say* and the records are the authority on
+      *whether it is true*, and where they differ the second wins — which is
+      what the first rule in `CLAUDE.md` is about. The shape of the sentence is
+      kept and the word is not.
+1431. **A test that compares two drawings compares two pane widths as well.**
+      M80's own test read the radius of a coarse mark off a page with a card
+      open and compared it with the radii read from the world view; §2's camera
+      made the two pages two zooms as well, and a radius is divided by the zoom
+      so that a mark keeps its size on the screen. It went red on a mark drawn
+      exactly as it should be. The comparison is between two marks in one
+      picture now, in the pixels the browser gave them, which is what "wider
+      than a city's mark" meant all along.
+1432. **A read taken in the same turn as the event that causes it is a read
+      taken too early.** M76's handle-drag test dispatched a pointer move and
+      read the band's `aria-valuenow` on the next line; the value is written
+      from the store, through a subscription and a render, and this milestone
+      gave every state change more to do — the map's camera, the badges' round,
+      the category control's own count. It went red once on the check's four
+      cores having passed on this container every time, on a drag that worked.
+      The read waits for the value to move now, through `until` so that the
+      assertion still runs and still names the two windows if the drag really
+      did nothing — which is M78's own rule about which wait to use.
+1433. **A screenshot tool with a virtual clock measures the page's weight, not
+      only its drawing.** §5's picture is *of the names*, and a name arrives
+      with its century — twelve files behind the core, the land and two
+      typefaces. The shot came out twice with every name on it and three times
+      with none, on the same code, as the sections added modules to the first
+      paint; a shot may ask for a longer virtual-time budget now, which is not
+      a sleep because the browser advances its own clock. The earlier graph
+      shots carry the same property in a comment and no budget: what they are
+      of does not need the names.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -23543,3 +23827,5 @@ M42 started 2026-09-29T05:07:41Z by scheduled
 M42b started 2026-09-29T05:37:30Z by scheduled
 M42b started 2026-09-29T08:36:56Z by scheduled
 M42b started 2026-09-29T11:38:45Z by scheduled
+M89 started 2026-09-29T03:45:19Z by scheduled
+M89 done
