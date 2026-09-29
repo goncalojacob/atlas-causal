@@ -11762,3 +11762,7 @@ asks for, and `node tools/build-index.mjs` on the final head writes nothing.
 merge, then the index rebuilt on top of it — or its check will be red however
 clean the merge was. Three fires have now pushed a red merge commit for this
 reason.
+
+**Run 2013 on `c43a9203`, this fire's final head, also completed `success`.**
+Both of the heads that matter are green: `61be31c9` with the records and the
+index, and the final head with the documents on top of them.
