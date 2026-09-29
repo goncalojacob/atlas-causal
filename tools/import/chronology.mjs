@@ -121,10 +121,21 @@ export function capitalsOf(name) {
 
 // Deviation 1458: a substring match makes every "World War II" a "World War I".
 // The name is matched on word boundaries, so the second `I` stops it.
+//
+// Deviation 1467: a hyphen is not a letter, so that boundary let a name begin
+// in the middle of a compound — *"America's support for Iraq in the Iran-Iraq
+// War"* was naming `iraq-war`, which is this atlas's 2003 war, and
+// *"the Anglo-Zulu War"* would name a Zulu War. A name may not begin
+// immediately after a hyphen that joins it to the word before, which is the
+// letter-hyphen the lookbehind below refuses; a dash used as punctuation has no
+// letter in front of it and is still a boundary. Only the leading side, because
+// only the leading side builds another event's name out of this one: English
+// puts the qualifier first (Anglo-, Franco-, Soviet-, Iran-), and a trailing
+// "War-era" is not a different war.
 export function mentions(text, name) {
   if (!usableName(name)) return false;
   const wanted = capitalsOf(name);
-  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escape(fold(name))}(?![\\p{L}\\p{N}])`, 'giu');
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?<![\\p{L}\\p{N}]-)${escape(fold(name))}(?![\\p{L}\\p{N}])`, 'giu');
   // The capital has to be inside the occurrence that matched and not loose in
   // the paragraph, so each match is weighed on its own.
   for (const found of tidy(text).matchAll(pattern)) {

@@ -83,6 +83,27 @@ test('a capital a record carries is a capital the prose must keep (deviation 146
   assert.equal(mentions('a reign of terror; the Terror came later', 'Reign of Terror'), false);
 });
 
+test('a name joined to the word before it by a hyphen is another name (deviation 1467)', () => {
+  // The 1983 Beirut barracks bombings article says the attacks answered
+  // "America's support for Iraq in the Iran-Iraq War". `iraq-war` is the atlas's
+  // 2003 war, and it was matching there: a hyphen is not a letter, so the word
+  // boundary of deviation 1458 let the name start in the middle of a compound.
+  assert.equal(mentions("America's support for Iraq in the Iran-Iraq War", 'Iraq War'), false);
+  assert.equal(mentions('the Anglo-Zulu War of 1879', 'Zulu War'), false);
+  // The compound itself is still its own name, and the name written on its own
+  // is still found: the rule is about where a match may begin and nothing else.
+  assert.equal(mentions('in the Iran-Iraq War', 'Iran-Iraq War'), true);
+  assert.equal(mentions('the Iraq War began in 2003', 'Iraq War'), true);
+  assert.equal(mentions('the war in Iraq - Iraq War, as it is called', 'Iraq War'), true);
+  // A dash that is punctuation rather than a join is not one: it is the letter
+  // before the hyphen that makes the compound, and there is none here.
+  assert.equal(mentions('the cause -Iraq War- was argued over', 'Iraq War'), true);
+  // Deviation 1458's own assertions are the trailing half of the same question
+  // and they are unchanged.
+  assert.equal(mentions('the Soviet-Afghan War ended in 1989', 'soviet-afghan war'), true);
+  assert.equal(mentions('the origins of World War II are disputed', 'World War I'), false);
+});
+
 test('a heading is not a sentence (deviation 1460)', () => {
   const extract = 'The war began in 1914.\n=== World War I ===\nThe section that follows is about something else.';
   assert.equal(fold(stripHeadings(extract)).includes('world war i ==='), false);
