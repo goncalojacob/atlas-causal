@@ -503,3 +503,96 @@ test('§8: choosing a category makes the control say what it kept', { skip }, as
     assert.equal(said.replace(/^\s*—\s*/, '').trim(), wanted);
   }, { device: DESK });
 });
+
+// ─── 11. the edges (A11) ───────────────────────────────────────────────────
+
+// The band's two years and the pane they are drawn in, as boxes on the page.
+const BAND_YEARS = `
+  const svg = document.querySelector('${'#map-band svg, .map-band svg, #timeline svg.timeline'}');
+  if (!svg) return null;
+  const pane = svg.getBoundingClientRect();
+  return {
+    pane: { x0: pane.left, x1: pane.right },
+    years: [...svg.querySelectorAll('text.window-year')].map((el) => {
+      const r = el.getBoundingClientRect();
+      return { text: el.textContent, x0: r.left, x1: r.right };
+    }),
+  };`;
+
+test('§11: the strip\'s two years are inside the pane at every width and with the panel open', { skip }, async () => {
+  const event = atlas.activeEvents.find((e) => atlas.pointOf(e));
+  assert.ok(event, 'the corpus has an event to open');
+  for (const device of [DESK, PHONE]) {
+    // eslint-disable-next-line no-await-in-loop
+    await withBrowser(async (page, url) => {
+      await seenIntro(page);
+      for (const [what, query] of [
+        ['the map at rest', ''],
+        ['the map with a card open', `?selected=${event.id}`],
+        ['the timeline', '?view=timeline'],
+      ]) {
+        // eslint-disable-next-line no-await-in-loop
+        await open(page, url(query), 'return document.querySelectorAll("text.window-year").length > 0;');
+        // eslint-disable-next-line no-await-in-loop
+        const read = await page.eval(BAND_YEARS);
+        assert.ok(read && read.years.length > 0, `${device.width}, ${what}: the years are drawn`);
+        for (const year of read.years) {
+          assert.ok(year.x0 >= read.pane.x0 - 0.5 && year.x1 <= read.pane.x1 + 0.5,
+            `${device.width}, ${what}: "${year.text}" runs outside the pane`);
+        }
+      }
+    }, { device });
+  }
+});
+
+test('§11: the head line does not overflow the sheet on a phone', { skip }, async () => {
+  // An event with as much in its head as the corpus has: dates, a place, a
+  // lane, a category and the two controls.
+  const event = atlas.activeEvents.find((e) => e.region && e.category && atlas.pointOf(e))
+    ?? atlas.activeEvents.find((e) => e.region);
+  assert.ok(event, 'the corpus has an event with a head to overflow');
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(`?selected=${event.id}`), 'return Boolean(document.querySelector(".panel .meta"));');
+    await settledShards(page, await manifestOf());
+    const read = await page.eval(`
+      const meta = document.querySelector('.panel .meta');
+      const box = meta.getBoundingClientRect();
+      const parent = meta.parentElement.getBoundingClientRect();
+      return { scroll: meta.scrollWidth, client: meta.clientWidth, right: box.right, edge: parent.right };`);
+    assert.ok(read.scroll <= read.client + 1,
+      `the head is ${read.scroll} px wide in ${read.client} px of pane`);
+    assert.ok(read.right <= read.edge + 1, 'and it does not reach past the sheet');
+  }, { device: PHONE });
+});
+
+test('§11: all three keys are open at rest on a desktop, and folded on a phone', { skip }, async () => {
+  for (const [device, opened] of [[DESK, true], [PHONE, false]]) {
+    // eslint-disable-next-line no-await-in-loop
+    await withBrowser(async (page, url) => {
+      await seenIntro(page);
+      for (const [view, query, where] of [
+        ['the map', '', '#map .graph-key'],
+        ['the graph', '?view=graph', '#graph .graph-key'],
+        ['the timeline', '?view=timeline', '#timeline .graph-key'],
+      ]) {
+        // eslint-disable-next-line no-await-in-loop
+        await open(page, url(query), `return Boolean(document.querySelector(${JSON.stringify(where)}));`);
+        // eslint-disable-next-line no-await-in-loop
+        const read = await page.eval(`
+          const box = document.querySelector(${JSON.stringify(where)});
+          if (!box) return null;
+          const body = box.querySelector('.graph-key-body');
+          return {
+            open: box.classList.contains('open'),
+            said: box.querySelector('.graph-key-toggle').getAttribute('aria-expanded'),
+            visible: body ? body.getBoundingClientRect().height > 0 : false,
+          };`);
+        assert.ok(read, `${device.width}: ${view} has a key`);
+        assert.equal(read.open, opened, `${device.width}: ${view}'s key`);
+        assert.equal(read.said, String(opened), `${device.width}: ${view}'s key says so to a screen reader`);
+        assert.equal(read.visible, opened, `${device.width}: ${view}'s key is drawn open`);
+      }
+    }, { device });
+  }
+});

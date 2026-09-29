@@ -186,9 +186,13 @@ function metaHtml(atlas, links, kind, record, topologyEntry) {
   if (record.when) parts.push(`<span class="when">${esc(formatInterval(record.when))}</span>`);
   if (kind === 'event') {
     const place = typeof record.place === 'string' ? atlas.places.get(record.place) : null;
-    if (place) parts.push(`<a href="${esc(links.entry('place', place.id))}">${esc(place.name ?? place.id)}</a>`);
-    else parts.push('<span class="muted">no place: timeline only</span>');
     const lane = atlas.regions.find((r) => r.id === (topologyEntry?.region ?? record.region));
+    // The same sentence the card says since M89 §11 (A11): "no single place",
+    // and nothing at all where the lane below already says where it was. "no
+    // place: timeline only" is which views draw the record, which is the
+    // builder's question and not the reader's.
+    if (place) parts.push(`<a href="${esc(links.entry('place', place.id))}">${esc(place.name ?? place.id)}</a>`);
+    else if (!lane) parts.push('<span class="muted">no single place</span>');
     if (lane) parts.push(`<span class="lane">${esc(lane.label)}</span>`);
   }
   if (kind === 'actor') {

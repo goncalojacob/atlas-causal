@@ -1024,7 +1024,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       });
     }
 
-    if (window) bandHandles(into.handles, into.handleLabels, window, bandBox());
+    if (window) bandHandles(into.handles, into.handleLabels, window, { ...bandBox(), width });
 
     for (const layer of Object.values(into)) layer.done();
     applyRoving();

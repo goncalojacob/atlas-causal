@@ -357,7 +357,13 @@ function partsHtml(ctx, event) {
 function whereHtml(ctx, event) {
   const place = ctx.atlas.placeOf(event);
   const where = ctx.atlas.pointOf(event);
-  if (!where) return ' · <span class="muted">no place: timeline only</span>';
+  // **"No single place", and nothing at all beside a lane** (M89 §11, A11).
+  // "no place: timeline only" is the builder's sentence about which views draw
+  // the record, and the Scramble for Africa's head read it next to "Africa" —
+  // which says the atlas has no place for an event whose continent it has just
+  // named. What is true of such a record is that it happened in no one place;
+  // where the lane says where it was, the clause is not news and is not written.
+  if (!where) return event.region ? '' : ' · <span class="muted">no single place</span>';
   // **Nothing at all where the card already says the map washes a region**
   // (M86 §5, review A finding 9). "World War II · 1939–1945 · Russia (the
   // state's own point) · Europe" tells a reader the Second World War happened

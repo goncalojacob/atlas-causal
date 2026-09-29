@@ -173,7 +173,7 @@ export function createMapBand(container, { atlas, state } = {}) {
     };
     if (window) {
       bandShade(into.band, window, box);
-      bandHandles(into.handles, into.handleLabels, window, box);
+      bandHandles(into.handles, into.handleLabels, window, { ...box, width });
     }
     for (const layer of Object.values(into)) layer.done();
   }

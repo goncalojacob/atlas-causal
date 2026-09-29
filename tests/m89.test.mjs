@@ -30,8 +30,11 @@ import {
 } from '../src/categories.js';
 import { lensLabels, lensView, restingSet } from '../src/lens.js';
 import { lensCountText } from '../src/lens-chips.js';
+import { bandHandles, YEAR_INK } from '../src/window-band.js';
+import { createTimelineScale } from '../src/timeline-scale.js';
+import { eventCardHtml, partsReach, partsReachSentence } from '../src/panel/event.js';
 import { defaultState } from '../src/state.js';
-import { partsReach, partsReachSentence } from '../src/panel/event.js';
+
 import { isParent, parentsOf } from '../src/parts.js';
 import { eventsOfFocus } from '../src/lens.js';
 
@@ -497,5 +500,80 @@ test('§10: and says nothing where the numbers would not be about the picture', 
   if (two.length === 2) {
     const state = { ...defaultState(), focus: `actor:${two[0]},actor:${two[1]}` };
     assert.equal(lensCountText(atlas, state, lensLabels(atlas, state)), '');
+  }
+});
+
+// ─── 11. the edges (A11) ────────────────────────────────────────────────────
+
+test('§11: the band\'s two years are anchored inside the drawing at every width', () => {
+  // A scale over the corpus's own extent, and the band at the extent, which is
+  // where the two handles stand at the two edges of the drawing — the case the
+  // review saw clipped at every width it looked at.
+  const domain = [atlas.extent.min - 1, atlas.extent.max + 1];
+  for (const width of [1280, 960, 390, 200]) {
+    const scale = createTimelineScale({
+      domain, range: [0, width], counts: null, extent: atlas.extent,
+    });
+    const labels = [];
+    const into = { take: (_, attrs, text) => labels.push({ ...attrs, ...text }) };
+    const handles = { take: () => {} };
+    bandHandles(handles, into, { from: atlas.extent.min, to: atlas.extent.max }, {
+      scale, extent: atlas.extent, top: 0, height: 10, labelY: 8, width,
+    });
+    assert.equal(labels.length, 2, `${width}: both years are written`);
+    for (const label of labels) {
+      // The box the anchor and the alignment give it, in the drawing's own
+      // units: the ink is the module's estimate of the stylesheet and the test
+      // asks it rather than writing a second one.
+      const ink = YEAR_INK;
+      const x0 = label['text-anchor'] === 'end' ? label.x - ink
+        : label['text-anchor'] === 'middle' ? label.x - ink / 2 : label.x;
+      assert.ok(x0 >= 0, `${width}: "${label.text}" begins at ${x0}`);
+      assert.ok(x0 + ink <= width, `${width}: "${label.text}" ends at ${x0 + ink} of ${width}`);
+    }
+  }
+});
+
+test('§11: a window of one year is still one label, and still inside the pane', () => {
+  const domain = [atlas.extent.min - 1, atlas.extent.max + 1];
+  const width = 390;
+  const scale = createTimelineScale({ domain, range: [0, width], counts: null, extent: atlas.extent });
+  const labels = [];
+  bandHandles({ take: () => {} }, { take: (_, attrs, text) => labels.push({ ...attrs, ...text }) },
+    { from: atlas.extent.max, to: atlas.extent.max },
+    { scale, extent: atlas.extent, top: 0, height: 10, labelY: 8, width });
+  assert.equal(labels.length, 1, 'one year, one label');
+  assert.equal(labels[0]['text-anchor'], 'middle');
+  assert.ok(labels[0].x - YEAR_INK / 2 >= 0 && labels[0].x + YEAR_INK / 2 <= width);
+});
+
+test('§11: an event with no place says "no single place", and nothing beside a lane', () => {
+  const placeless = atlas.activeEvents.filter((e) => !atlas.pointOf(e));
+  assert.ok(placeless.length > 0, 'the corpus has an event with no place');
+  const withLane = placeless.find((e) => e.region);
+  const withoutLane = placeless.find((e) => !e.region);
+  const ctx = {
+    atlas,
+    laneLabel: (region) => region ?? '—',
+    categoryLabel: (id) => (id ? `${id[0].toUpperCase()}${id.slice(1)}` : null),
+    lanes: () => [],
+    startYear: (event) => extent(event.when).min,
+    eventLink: (event) => `<button type="button" class="link" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
+    entryLink: () => '',
+    discussLink: () => '',
+    wikipediaHtml: () => '',
+    historyHtml: () => '',
+    lensControl: () => '',
+    partOfHtml: () => '',
+    highlightedActor: () => null,
+  };
+  if (withLane) {
+    const html = eventCardHtml(ctx, { event: withLane, found: { via: [] }, state: defaultState() });
+    assert.ok(!html.includes('no single place'), 'the lane already says where it was');
+    assert.ok(!html.includes('timeline only'), 'and the builder\'s phrase is gone');
+  }
+  if (withoutLane) {
+    const html = eventCardHtml(ctx, { event: withoutLane, found: { via: [] }, state: defaultState() });
+    assert.ok(html.includes('no single place'), 'and with no lane either it is said');
   }
 });

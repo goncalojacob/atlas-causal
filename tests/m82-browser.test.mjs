@@ -123,7 +123,15 @@ test('A3: the intro card names what it offers, and says what the atlas is', { sk
 
 // And the key, which covered half the picture at 390 px — and, M83 (A1-4)
 // found, the bottom-left corner of it at 1440 px too. One button on either.
-test('A1: the graph\'s key is one button, and the key opens behind it', { skip }, async () => {
+//
+// **The desktop's now opens at rest** (M89 §11, A11), as the map's has since
+// M86 §5 and the timeline's does too: a "KEY" button bottom left and nothing
+// else is a key the first-time reader does not know is one, and a reader who
+// met it open on the map and closed on the other two met three answers to one
+// question. The button is what M82 and M83 are about and it is unchanged — the
+// key still folds, and the phone still starts folded, because there the box
+// really would stand over the picture.
+test('A1: the graph\'s key is one button, open at rest on a desktop and folded on a phone', { skip }, async () => {
   const KEY = `
     const box = document.querySelector('#graph .graph-key');
     if (!box) return null;
@@ -143,9 +151,9 @@ test('A1: the graph\'s key is one button, and the key opens behind it', { skip }
     await waitFor(page, NODES, 'the graph to draw its nodes');
     const desk = await page.eval(KEY);
     assert.equal(desk.button, true, 'a desktop has the button too (M83, A1-4)');
-    assert.equal(desk.body, false, 'and the key folded behind it');
+    assert.equal(desk.body, true, 'and the key open at rest (M89 §11)');
     await page.eval(press);
-    assert.equal((await page.eval(KEY)).body, true, 'pressing it opens the key');
+    assert.equal((await page.eval(KEY)).body, false, 'pressing it folds the key away');
   }, { device: DESK });
 
   await withBrowser(async (page, url) => {
