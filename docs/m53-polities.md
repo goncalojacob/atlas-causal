@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 403 of 1257 |
+| **after M42, 1257 active** | 36 of 36 | 403 of 1257 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -264,8 +264,21 @@ which named a state that did not yet exist and now name one that did.
 `actors: []` rather than a wrong name. They are not in either chain and are not
 this milestone's to write; §5 lists the figure as what it is, an open count.
 
-**The "after M57" row is the same measurement taken again.** `tests/m53.test.mjs`
-holds the *last* row of this table against the live corpus, so a milestone that
+**A row says the size it was measured at, from M88 on.** `tests/m53.test.mjs`
+holds the *last* row of this table against the live corpus, and lane B writes
+records every hour: between a batch landing and somebody retyping four numbers
+the test was red on a branch that had done nothing wrong — 1257 active events
+against a row measured at 778 (M88 §4, review B finding 4). So a row now
+carries its own denominator, and a row whose size is not the corpus's own size
+is a measurement of another corpus: the figures are not compared with it, and
+what the test holds instead is the two *rules* this section counts by, which
+are true of the corpus in front of it or are not. A row that does name this
+corpus's size is still checked to the digit.
+`node tools/m53-retake.mjs --write` is the retake, so it is a command a lane or
+the landing script runs and not four numbers a person copies; the rows above
+`after M42` were written before the size was part of a row and are history.
+
+**The "after M57" row is the same measurement taken again**, so a milestone that
 writes events has to re-take the count rather than leave a stale one standing.
 M57 added nineteen events and every one of them names an actor, which is why the
 figure moves by nineteen in both columns and **the fifty that name nobody are

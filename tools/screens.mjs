@@ -914,6 +914,30 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=graph',
     width: 500, height: 844,
     what: 'the graph on the same phone: no name drawn too small to read' },
+
+  // --- M88 §1: and the graph fills the pane --------------------------------
+  //
+  // What M87's answer left: a name under eight pixels was dropped rather than
+  // written larger, and at rest a phone has nothing open, so the third review
+  // met an unnamed strip a quarter of the screen high (finding B1). The
+  // picture is fitted to the pane's height now, as the map's is, and a name
+  // too small at the picture's own size is written at the floor's size
+  // instead. Beside `m87-graph-phone` rather than over it: the pair is the
+  // change, and the first thing a reader sees in it is that the drawing is the
+  // screen and no longer a band across the top of it.
+  //
+  // **The names are not in this file, and they are on the phone.** This tool
+  // drives the browser from its command line with a virtual clock and takes
+  // one frame; the century shards that carry the titles are not in the page by
+  // then, which is why `m86-graph-phone` and `m87-graph-phone` carry none
+  // either. What is drawn here instead is the cluster badges, which are the
+  // picture saying how many events a mark stands for. The names are asserted
+  // by `tests/m87-browser.test.mjs` §9, in a browser that waits for the
+  // shards — measured there as 26 labels, every one of them over eight pixels.
+  { name: 'm88-graph-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844&view=graph',
+    width: 500, height: 844,
+    what: 'the graph on the same phone, filling the pane instead of a band across the top of it' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {

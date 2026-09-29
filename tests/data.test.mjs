@@ -6,6 +6,7 @@ import {
   createAtlas, loadAtlas, loadNarratives, loadSources, INDEX_GENERATION,
 } from '../src/data.js';
 import { FIXTURE_DATA, atlasOf, fixtures } from './helpers.mjs';
+import { askForShards } from '../src/attributes.js';
 
 // The fixture corpus, counted rather than written down: it reached 1300 until
 // M43b stretched it to 2025 and it will move again with the next record. What
@@ -383,4 +384,52 @@ test('a manifest that names no grounds file answers empty and asks for nothing',
   assert.equal((await atlas.loadGrounds()).size, 0);
   assert.equal(atlas.groundsLoaded(), true);
   assert.deepEqual(asked, []);
+});
+
+// --- a shard already in hand is not a landing -------------------------------
+//
+// **`askForShards` chains the landing callback only for what is not held**
+// (M88 §5, the third review, finding B5). `main.js` asks for the window's
+// shards on every state change and redraws the four drawings, the card and the
+// masthead when one lands. A shard already in hand resolves at once — that is
+// `loadAttributes`'s own promise, and it is what makes an ask idempotent — so
+// every band nudge, every click, every category toggle booked a second full
+// redraw for an arrival that had already happened. Nothing changed on screen;
+// the picture, the lanes, the labels and the card were simply made again.
+//
+// The property, held over the fixture atlas: two asks for the same shard land
+// once. Not a timing test — the count is read after both promises settle.
+test('asking twice for the same shard lands once', async () => {
+  const atlas = await loadAtlas({ dataRoot: 'tests/fixtures/data/', fetchJson });
+  const [shard] = atlas.attributeShards;
+  assert.ok(shard, 'the fixture index carries an attribute shard');
+  let landings = 0;
+  const landed = () => { landings += 1; };
+
+  await Promise.all(askForShards(atlas, [shard], landed));
+  assert.equal(landings, 1, 'the first ask is a landing');
+
+  await Promise.all(askForShards(atlas, [shard], landed));
+  assert.equal(landings, 1, 'and the second is not: the shard is already here');
+
+  // And a shard that is genuinely new still lands, so what went is the
+  // duplicate and not the redraw.
+  const other = atlas.attributeShards.find((s) => s.key !== shard.key);
+  if (other) {
+    await Promise.all(askForShards(atlas, [other], landed));
+    assert.equal(landings, 2, 'a shard not yet held is a landing');
+  }
+});
+
+test('a failed ask is not a landing, and does not reject into the caller', async () => {
+  const atlas = await loadAtlas({
+    dataRoot: 'tests/fixtures/data/',
+    fetchJson: async (url) => {
+      if (url.includes('/index/attributes-')) throw new Error('nothing to fetch');
+      return fetchJson(url);
+    },
+  });
+  let landings = 0;
+  await Promise.all(askForShards(atlas, atlas.attributeShards, () => { landings += 1; }));
+  assert.equal(landings, 0);
 });
