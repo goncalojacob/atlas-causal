@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a15-category-from-p31"
     ],
     "status": "draft"
   },
@@ -48,6 +49,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Good Friday Agreement\", revision 1376064858"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q208958, P31 Q625298"
     }
   ],
   "title": "Good Friday Agreement",
@@ -61,5 +66,6 @@
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "the-troubles",
+  "category": "treaty",
   "actors": []
 }

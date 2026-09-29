@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "damour-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1351462",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Damour massacre",
+    "pt": "Massacre de Damour"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1351462"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Damour massacre\", revision 1356232011"
+    }
+  ],
+  "title": "Damour massacre",
+  "summary": "The English Wikipedia article \"Damour massacre\", at revision 1356232011, opens: \"The Damour massacre took place on 20 January 1976, during the 1975–1990 Lebanese Civil War. Damour, a Maronite Christian town on the main highway south of Beirut, was attacked by militants of the Palestine Liberation Organisation and as-Sa'iqa. Many residents were killed or forced to flee. According to Robert Fisk, the town was the first to be subject to ethnic cleansing in the Lebanese Civil War. The attack was retaliation for the Karantina massacre by the Phalangists.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1351462, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-01-20"
+  },
+  "place": "damour",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "lebanese-civil-war"
+}

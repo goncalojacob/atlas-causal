@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"War in Darfur\", revision 1375318567"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q190758, P31 Q8465"
     }
   ],
   "title": "War in Darfur",
@@ -60,5 +65,6 @@
   "place": "darfur-q46733",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
   "actors": []
 }

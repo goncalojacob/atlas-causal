@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q331518",
+  "wikipedia": {
+    "en": "Battle of Rheinfelden"
+  },
   "sitelinks": {
     "count": 10,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Battle of Rheinfelden"
   },
   "sources": [
     {
@@ -51,10 +52,10 @@
     "date": "1638-02-28",
     "endDate": "1638-03-02"
   },
-  "place": null,
+  "place": "rheinfelden-aargau",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "thirty-years-war",
   "category": "war",
-  "actors": [],
-  "parent": "thirty-years-war"
+  "actors": []
 }

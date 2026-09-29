@@ -48,12 +48,13 @@ import { appendFile, mkdir, readdir, readFile, writeFile } from 'node:fs/promise
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { createRegionDeriver } from '../../src/util/geo.js';
+import { createRegionDeriver, haversineKm } from '../../src/util/geo.js';
 import { astronomicalBounds } from '../../src/util/dates.js';
 import { PROVENANCE_SENTENCES } from '../../src/summary.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { parentsOf } from '../../src/parts.js';
+import { yearsInTitle, disagreesWithSpan } from '../../src/validate/rules.js';
 import { mergeIdentity, mergeNames } from './identity.mjs';
 import { reusablePlace } from './places.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
@@ -207,6 +208,13 @@ export function sparqlUrl(query, { endpoint = SPARQL } = {}) {
 // The REST summary endpoint rather than the parse API: it returns the lead
 // as plain text and the revision it came from, which is exactly the envelope
 // the cache stores and nothing more.
+// The action API of a Wikipedia, which is not `API` above: that one is
+// Wikidata's, and asking it for an article title answers `missing` with a
+// `wikibase-item` content model — which is how this was found.
+export function wikipediaApi(lang = 'en') {
+  return `https://${lang}.wikipedia.org/w/api.php`;
+}
+
 export function summaryUrl(lang, title) {
   return `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(String(title).replace(/ /g, '_'))}`;
 }
@@ -532,6 +540,39 @@ export function intervalFor(kind, times) {
   return when;
 }
 
+// A15(4), the third clause. `span-vs-article-title` has been a warning since
+// A12 (3), reported after the fact on a record the import had already written
+// with the item's years. The third review asked the obvious question: if the
+// title of the article the record is built from states its own span, the
+// import can read it at the point of writing instead of leaving a warning
+// behind. So it does.
+//
+// The title is an assertion about the span by whoever wrote the article, and
+// the item's `P580`/`P582` are an assertion by whoever edited the item; where
+// they disagree the title is taken, because the title names the thing and the
+// item's dates are frequently the surrounding campaign's. A day or a month the
+// item gave for a bound the title has moved goes with it — a day inside the
+// wrong year is worse than no day — and one still inside the title's span
+// stays. The flag says where the span came from, so a reviewer can see it.
+export const TITLE_SPAN_FLAG = 'span-from-title';
+
+export function spanFromTitle(when, title) {
+  if (!when || !Number.isInteger(when.start)) return { when, from: null };
+  const stated = yearsInTitle(String(title ?? ''));
+  if (!stated || !disagreesWithSpan(stated, when)) return { when, from: null };
+  const next = { start: stated.start, end: stated.end === null ? when.end : stated.end };
+  const inside = (date) => {
+    if (typeof date !== 'string') return false;
+    const year = Number(date.slice(0, date.startsWith('-') ? 5 : 4));
+    if (!Number.isInteger(year)) return false;
+    return year >= next.start && (next.end === null || year <= next.end);
+  };
+  if (inside(when.date)) next.date = when.date;
+  if (inside(when.endDate)) next.endDate = when.endDate;
+  if (when.calendar) next.calendar = when.calendar;
+  return { when: next, from: stated };
+}
+
 // A12 (3), the other half of the same rule. An item that states a start and no
 // P582 has said nothing about an end, and the record it becomes carries
 // `end: null` — which in this atlas reads "as far as the data goes" and not
@@ -757,6 +798,58 @@ export function lanesAgree(eventLane, placeLane) {
   return eventLane === placeLane;
 }
 
+// A15(6) — a country is a place only when it was there.
+//
+// `P17` is the last step of A9's chain and the loosest: it says which state the
+// item is filed under today, and the 25 September review found it placing 23
+// pre-1800 events on a modern state's point and 46 events at a country neither
+// their title nor their summary names. The Great Depression at Kabul (A14 (2))
+// was the same defect one step earlier. A14 (2)'s lane guard catches a country
+// in the wrong lane; it cannot catch a country in the right lane that did not
+// exist yet.
+//
+// Three refusals and no fourth, every one of them a fact on the item rather
+// than a judgement about the event:
+//
+// 1. **It was not there.** The country's inception (`P571`) is after the event
+//    ended, or its dissolution (`P576`) is before the event began. Zaire did
+//    not exist in 1644 and does not now.
+// 2. **The item names more than one.** A `P17` with several values does not
+//    name *a* country, and the chain takes the first, which is alphabetical
+//    accident. This is the Great Depression's nine.
+// 3. **It is nowhere near.** The country's point is more than
+//    `COUNTRY_DISTANCE_KM` from every point the event's own chain of parents
+//    and children stands at. A country's `P625` is its capital or its centroid,
+//    so the test is deliberately loose — a thousand kilometres refuses Madrid
+//    for a battle in Mexico and keeps Paris for a battle in Alsace.
+//
+// Pure: the item's dates and point, how many countries it names, and the points
+// already on the chain are handed in. A refusal carries its reason, because
+// A15(6) asks for every one to be logged.
+export const COUNTRY_DISTANCE_KM = 1000;
+
+export function countryRefusal({ when, country, countryCount = 1, chainPoints = [] } = {}) {
+  if (!country) return 'the item names no country with a point';
+  const start = Number.isInteger(when?.start) ? when.start : null;
+  const end = Number.isInteger(when?.end) ? when.end : start;
+  if (start !== null && Number.isInteger(country.inception) && end !== null && country.inception > end) {
+    return `the country's inception (${country.inception}) is after the event ended (${end})`;
+  }
+  if (start !== null && Number.isInteger(country.dissolution) && country.dissolution < start) {
+    return `the country was dissolved (${country.dissolution}) before the event began (${start})`;
+  }
+  if (countryCount > 1) {
+    return `the item names ${countryCount} countries, so it names no one country`;
+  }
+  const near = (chainPoints ?? [])
+    .map((point) => haversineKm(country.point, point))
+    .filter((km) => km !== null);
+  if (near.length > 0 && Math.min(...near) > COUNTRY_DISTANCE_KM) {
+    return `the country's point is ${Math.round(Math.min(...near))} km from the nearest point on the event's own chain`;
+  }
+  return null;
+}
+
 // 3 — the umbrellas the item's own P361 names and this atlas holds as active
 // events. **Every one whose span contains the child's** (A8), not the first:
 // the conquest of Chiapas is part of the conquest of the Aztec empire and of
@@ -890,7 +983,15 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     where: { lon: read.point.lon, lat: read.point.lat, precision: precision ?? 'point', label },
     region,
     regionNote: region ? regionNote : null,
-    summary: importedSummary(read),
+    // A15(3): a place carries no summary. The importer's placeholder said the
+    // item's description and then three sentences about its own standing, and
+    // the 25 September review found it on 158 of them — a paragraph of the
+    // import talking about itself where a card wants a sentence about a town.
+    // A place cites nothing and asserts nothing (rule 6, and the note above),
+    // so there is nothing for a summary of one to be the standing *of*: the
+    // item is on the record in `wikidata` and `review.status` says who has
+    // read it. Nothing is lost and one paragraph of noise goes.
+    summary: null,
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
@@ -910,7 +1011,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
-export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null, endUnstated: unstated = false }) {
+export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null, endUnstated: unstated = false, spanFromTitle: titled = false }) {
   const { title, english } = titleFor(read);
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
@@ -928,7 +1029,7 @@ export function eventRecord(read, { id, created, when, place, region = null, reg
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
-  }, { flags: [...(english ? [] : [NOT_ENGLISH_FLAG]), ...(unstated ? [END_UNSTATED_FLAG] : [])] });
+  }, { flags: [...(english ? [] : [NOT_ENGLISH_FLAG]), ...(unstated ? [END_UNSTATED_FLAG] : []), ...(titled ? [TITLE_SPAN_FLAG] : [])] });
 }
 
 export function leadRecord({ qid, lang, title, revid, fetched, text }) {
@@ -1279,7 +1380,7 @@ function emptyReport() {
     // a different lane from its event (A14 (2)), a located item whose class is
     // not a place of this atlas, and an event whose own point is the only thing
     // located — the one a person writes the place for.
-    unfiled: [], offLane: [], offClass: [], ownPoint: [],
+    unfiled: [], offLane: [], offCountry: [], offClass: [], ownPoint: [],
     // And what the second filing pass took, once the run's own umbrellas
     // existed to file against (deviation 1331).
     refiled: [],
@@ -1330,11 +1431,36 @@ function skipSigned(report, record, qid) {
 // is what puts `a9-place` on the event.
 async function eventPlace(read, {
   dataDir, entries, entityOf, byItem, taken, written, report,
-  deriveRegion, classes, today, lane,
+  deriveRegion, classes, today, lane, when = null, chainPoints = [],
 }) {
   const eventLane = lane?.how === null ? null : lane?.region ?? null;
   let ownPointOnly = null;
+  // A15(6): `chainPoints` is every point the event's own chain already stands
+  // at, handed in by the caller — everything located before `P17` is nearer the
+  // event than a country is, by construction.
+  const countries = new Set(read.country);
   for (const qid of placeChain(read)) {
+    // A15(6). The gate runs before the chain does anything with the item,
+    // reuse included: a country that was not there is not this event's place
+    // whether or not a record for it already exists.
+    if (countries.has(qid)) {
+      const entity = entityOf(qid);
+      const candidate = entity && !isMissing(entity) ? readEntity(entity) : null;
+      const why = countryRefusal({
+        when,
+        country: candidate?.point ? {
+          point: candidate.point,
+          inception: claimTimes(entity, PROPERTIES.inception)[0]?.year ?? null,
+          dissolution: claimTimes(entity, PROPERTIES.dissolved)[0]?.year ?? null,
+        } : null,
+        countryCount: countries.size,
+        chainPoints,
+      });
+      if (why) {
+        report.offCountry.push({ qid, why });
+        continue;
+      }
+    }
     const held = byItem.get(`place:${qid}`);
     if (held) {
       const record = entries.find((e) => e.record?.id === held)?.record;
@@ -1550,11 +1676,14 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       taken.add(id);
       report.created.push({ id, qid, kind: 'actor' });
     } else {
-      const when = intervalFor('event', read.times);
-      if (!when) {
+      const fromItem = intervalFor('event', read.times);
+      if (!fromItem) {
         refuse(report, qid, 'no date the atlas can use: an event with no year has nowhere on the timeline');
         continue;
       }
+      // A15(4): the title's own span, where it states one the item contradicts.
+      const titled = spanFromTitle(fromItem, titleFor(read).title);
+      const when = titled.when;
       // The lane first, and the place after it, because A14 (2)'s guard is what
       // decides whether the place may be written at all: the lane is measured
       // from the event's own point where it has one, else from the point of
@@ -1569,7 +1698,11 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
 
       const found = await eventPlace(read, {
         dataDir, entries, entityOf, byItem, taken, written, report,
-        deriveRegion, classes: seeds.classes, today, lane,
+        deriveRegion, classes: seeds.classes, today, lane, when,
+        // A15(6): the points before `P17` on the chain, for the distance half
+        // of the country gate.
+        chainPoints: [read.point, ...read.location.concat(read.administrative)
+          .map(pointOf).map((one) => one?.point)].filter(Boolean),
       });
       const place = found.place;
       // Placeless: the region is not an override but the only thing the
@@ -1599,6 +1732,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         regionNote: laneNote(lane, { placeless: true }),
         category: classified.category ?? null,
         endUnstated: endUnstated('event', read.times),
+        spanFromTitle: titled.from !== null,
       });
       if (summary) {
         record.summary = summary;
@@ -2211,6 +2345,8 @@ export function reportLines(report, mode) {
   for (const u of report.unfiled ?? []) lines.push(`not filed ${u.qid} under ${u.id}: ${u.why}`);
   for (const r of report.refiled ?? []) lines.push(`filed ${r.id} under ${r.parents.join(', ')} on the second pass: its umbrella was created in this same run`);
   for (const o of report.offLane ?? []) lines.push(`no place for ${o.qid}: its lane is ${o.placeLane ?? 'nowhere'} and the event's is ${o.eventLane ?? 'nowhere'}`);
+  // A15(6) asks for every country refusal to be logged with its reason.
+  for (const o of report.offCountry ?? []) lines.push(`no place from the country ${o.qid}: ${o.why}`);
   for (const o of report.offClass ?? []) lines.push(`no place from ${o.qid}: ${o.why}`);
   for (const o of report.ownPoint ?? []) lines.push(`no place for ${o.qid}: its own point (${o.point.lon}, ${o.point.lat}) and no name a tool can read; a person writes that place`);
   for (const a of report.ambiguous) lines.push(`ambiguous ${a.id}: ${a.candidates?.length ? `${a.candidates.length} candidates (${a.candidates.join(', ')})` : a.why}`);

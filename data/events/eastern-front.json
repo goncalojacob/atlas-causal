@@ -17,15 +17,17 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place",
-      "title-from-article"
-    ]
+      "title-from-article",
+      "a15-country-refused",
+      "a15-category-from-p31"
+    ],
+    "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged."
   },
   "origin": {
     "tool": "wikidata"
@@ -51,6 +53,10 @@
     {
       "source": "wikidata",
       "locator": "Q189266"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q189266, P31 Q198"
     }
   ],
   "title": "Eastern Front (World War II)",
@@ -61,9 +67,10 @@
     "date": "1941-06-22",
     "endDate": "1945-05-07"
   },
-  "place": "soviet-union-q15180",
+  "place": null,
   "region": "europe",
   "parent": "world-war-ii",
+  "category": "war",
   "actors": [
     {
       "actor": "nazi-germany",

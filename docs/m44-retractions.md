@@ -16,6 +16,37 @@ rule 27 makes a retraction on a non-retracted record an error. The reason is
 copied here verbatim, in the same commit, so that the account of the withdrawal
 survives the undoing of it.
 
+### `nigerian-civil-war`
+
+Reinstated in M42 batch 65 on `1966-nigerian-coup-d-etat --caused--> nigerian-civil-war`.
+The 24 September reason said the edge it wanted was the Portuguese one — the
+airlift through São Tomé — and that the article names no event this atlas
+holds as the reason Lisbon flew it. That edge is still not written. The one
+written instead runs the other way into the war and out of the war's own lead:
+*"Immediate causes of the war in 1966 included a military coup, a counter-coup,
+and anti-Igbo pogroms in the Northern Region."* The military coup of January
+1966 is the first of the three and is now a record here, so the war carries an
+honest edge to something already in the atlas, which is the whole of the bar.
+It is filed under `decolonisation-of-africa` by A6's span and subject, and its
+summary is the cached lead at the revision the edge cites.
+
+Its retraction read, verbatim:
+
+> Re-read on 24 September under A14(6) against the bar that replaced M44b’s:
+> a record earns its place by carrying at least one honest edge to anything
+> already in the atlas, and nothing is written in order to keep one. The
+> corpus is 859 active events across all five lanes, not the Portuguese core
+> M44b judged this against. The African corpus has grown around it and the
+> Portuguese one it needed is here — angolan-war-of-independence, filed
+> under the colonial war — but the sentences that would carry the edge do
+> not. The article, at revision 1376166092, says "Portuguese pilots also
+> served in the Biafran Air Force, transporting weapons from Portugal to
+> Biafra" and describes the airlift through São Tomé; it names Portugal and
+> no event this atlas holds, and it does not say the war in Angola is why
+> Lisbon did it. That last sentence is the edge, and it wants a source the
+> atlas can open. Still the retraction most worth undoing, and now for one
+> sentence rather than for a rule.
+
 ### `2021-myanmar-coup-d-etat`
 
 Reinstated in M42 batch 19 on `2021-myanmar-coup-d-etat --caused--> myanmar-civil-war`.

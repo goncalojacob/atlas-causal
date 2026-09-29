@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -50,6 +51,10 @@
     {
       "source": "wikidata",
       "locator": "Q154255"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q154255, P31 Q131569"
     }
   ],
   "title": "Munich agreement",
@@ -62,6 +67,7 @@
   "place": "fuhrerbau",
   "region": "europe",
   "parent": "interwar-period",
+  "category": "treaty",
   "actors": [
     {
       "actor": "nazi-germany",

@@ -17,14 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a6-filed"
+    ],
+    "note": "A6: the ultimatum of 26 July 1945, an act of the war's ending, filed as the corpus already files `potsdam-conference` and `japanese-instrument-of-surrender`."
   },
   "origin": {
     "tool": "wikidata"
@@ -58,6 +60,7 @@
   "place": "potsdam",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
   "category": "treaty",
   "actors": []
 }

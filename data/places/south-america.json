@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "south-america",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q18",
+  "wikipedia": {
+    "en": "South America",
+    "pt": "América do Sul"
+  },
+  "sitelinks": {
+    "count": 275,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "South America",
+    "América do Sul"
+  ],
+  "where": {
+    "lon": -59,
+    "lat": -21,
+    "precision": "region",
+    "label": "South America"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

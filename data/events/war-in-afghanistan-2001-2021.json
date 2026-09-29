@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "status": "draft"
   },
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"War in Afghanistan (2001–2021)\", revision 1376150504"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q182865, P31 Q198"
     }
   ],
   "title": "War in Afghanistan (2001–2021)",
@@ -60,5 +65,6 @@
   "place": "afghanistan-q889",
   "region": "asia",
   "parent": "afghan-conflict",
+  "category": "war",
   "actors": []
 }

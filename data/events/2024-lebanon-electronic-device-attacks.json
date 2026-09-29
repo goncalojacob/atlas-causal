@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "filed-from-p361",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ],
     "note": "Place by A9’s second step, P276 Q822, Lebanon, held as `lebanon-q822`; the item has no P625 and its other P276 is Q131404661. Its P580 and P582 are 17 and 19 September, the article gives 17 and 18, so the wider pair is kept: A7 never narrows. No category, a first for this run: of the item’s seven P31, three are in the class table and those three disagree — Q2001676 says `war`, Q2223653 and Q891854 say nothing. All three say the kind is an event, so the record stands."
   },
@@ -48,6 +49,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"2024 Lebanon electronic device attacks\", revision 1376199681"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q130314422, P31 Q2001676"
     }
   ],
   "title": "2024 Lebanon electronic device attacks",
@@ -62,5 +67,6 @@
   "region": null,
   "regionNote": null,
   "parent": "arab-israeli-conflict",
+  "category": "war",
   "actors": []
 }

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -27,7 +27,8 @@
       "imported-by-wikidata",
       "a9-place",
       "summary-from-lead",
-      "title-from-article"
+      "title-from-article",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -50,6 +51,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Arusha Accords (Rwanda)\", revision 1277018129"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q1429076, P31 Q625298"
     }
   ],
   "title": "Arusha Accords (Rwanda)",
@@ -62,6 +67,7 @@
   "place": "arusha",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": [],
-  "parent": "rwandan-civil-war"
+  "parent": "rwandan-civil-war",
+  "category": "treaty",
+  "actors": []
 }

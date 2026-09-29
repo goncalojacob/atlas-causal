@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "origin": {
     "tool": "wikidata"
   },
@@ -26,8 +26,10 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a15-days"
+    ],
+    "note": "A15(4): the record was dated {\"start\":1985,\"end\":1985,\"date\":\"1985-11-06\"} and the first sentence of the cited article states \"November 6–7, 1985\", so the day bounds are 1985-11-06 to 1985-11-07. The years are unchanged."
   },
   "wikidata": "Q829836",
   "sitelinks": {
@@ -46,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Palace of Justice siege\", revision 1374219418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palace of Justice siege\", revision 1374219418, first sentence: \"November 6–7, 1985\""
     }
   ],
   "title": "Palace of Justice Siege",
@@ -53,7 +59,8 @@
   "when": {
     "start": 1985,
     "end": 1985,
-    "date": "1985-11-06"
+    "date": "1985-11-06",
+    "endDate": "1985-11-07"
   },
   "place": "bogota",
   "region": null,

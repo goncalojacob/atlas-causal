@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "a9-place",
       "summary-from-lead",
-      "a7-widened"
+      "a7-widened",
+      "a15-category-from-p31"
     ],
     "status": "draft",
     "note": "A7: the end was 2020, dated 22 February, which is the unity government and not the war. The cited article's first sentence says, at the cached revision 1374713494, \"fought from 2013 to 2018\". So the end is 2018 and its day goes; the start and 15 December 2013 stand."
@@ -53,6 +54,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"South Sudanese Civil War\", revision 1374713494: \"a multi-sided civil war in South Sudan fought from 2013 to 2018 between government and opposition forces\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q15353665, P31 Q8465"
     }
   ],
   "title": "South Sudanese Civil War",
@@ -65,5 +70,6 @@
   "place": "south-sudan-q958",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
   "actors": []
 }

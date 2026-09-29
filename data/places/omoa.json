@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "omoa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q520386",
+  "wikipedia": {
+    "en": "Omoa",
+    "pt": "Omoa (Cortés)"
+  },
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Omoa",
+    "Omoa (Cortés)"
+  ],
+  "where": {
+    "lon": -88.03751944444444,
+    "lat": 15.77586111111111,
+    "precision": "city",
+    "label": "Omoa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

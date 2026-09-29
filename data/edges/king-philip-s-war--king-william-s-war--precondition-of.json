@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "king-philip-s-war--king-william-s-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"King William's War\", revision 1375172085, § Causes of the war"
+    }
+  ],
+  "from": "king-philip-s-war",
+  "to": "king-william-s-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later war’s own causes section makes the earlier one the reason the Wabanaki tribes allied with New France, which is the alliance that then fought it. The article reads: \"For their part, in response to King Philip’s War, the five Indigenous tribes in the region of Acadia created the Wabanaki Confederacy to form a political and military alliance with New France to stop the English from further expansion.\"",
+  "dispute": null
+}

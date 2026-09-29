@@ -13,26 +13,27 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a9-place",
-      "filed-from-p361"
-    ]
+      "filed-from-p361",
+      "a15-country-refused"
+    ],
+    "note": "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1641). The lane is unchanged."
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q2889282",
+  "wikipedia": {
+    "en": "Battle of Martorell (1641)"
+  },
   "sitelinks": {
     "count": 4,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Battle of Martorell (1641)"
   },
   "sources": [
     {
@@ -51,10 +52,10 @@
     "end": 1641,
     "date": "1641-01-23"
   },
-  "place": "spain-q29",
-  "region": null,
-  "regionNote": null,
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane kept by A15(6): it was derived from spain-q29, the country this event was placed at, and that place is refused while the lane it gave is right.",
+  "parent": "thirty-years-war",
   "category": "war",
-  "actors": [],
-  "parent": "thirty-years-war"
+  "actors": []
 }

@@ -5657,3 +5657,231 @@ fold counted anyway. That is a refinement deviation 1450 needs and is
   `data/imports/wikidata-seeds.json`**, and an item of a class nobody has decided
   about is refused and listed rather than guessed at. **Adding that class is a
   decision somebody should argue with**, so it is left here for them.
+
+## Batch 63 — Operation Gothic Serpent, and the vein that yields one record and not five
+
+Two edges, both `precondition-of`, both quoted from the same article at the
+revision in the locator.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `united-nations-operation-in-somalia-ii` | precondition-of | `operation-gothic-serpent` | probable |
+| `operation-gothic-serpent` | precondition-of | `battle-of-mogadishu-1993` | probable |
+
+**The arrival sits between two held records that were already neighbours.**
+`united-nations-operation-in-somalia-ii` → `battle-of-mogadishu-1993` exists and
+stays; what this batch adds is the operation the raid of 3 October belonged to, so
+the mission the UN ordered, the task force sent to carry it out and the battle it
+ended in are three records rather than two. The component moves 707 to 708, which
+is the arrival and nothing more: both ends were inside it.
+
+**The one prose link this fire could not use was already written.**
+`battle-of-mogadishu-1993` → `war-in-somalia` is exactly what Gothic Serpent's
+Legacy section states — *"Reluctance to commit large numbers of U.S. troops to
+Somalia after the battle led the CIA to use warlords as proxies against the
+Islamic Courts Union in the 2000s. It also drove U.S. support for the subsequent
+Ethiopian invasion"* — and the atlas has held that edge as `precondition-of` since
+an earlier fire. The article does not contradict its type or its direction, so
+A13's disputing clause has nothing to do here and the sentence is recorded as a
+second reading of an edge already made rather than written twice.
+
+**`vietnam-war` and `unified-task-force` are refusals in the same article.**
+Vietnam appears three times and every one is a measure of the battle's size —
+*"the most difficult close combat that US troops had engaged in since the Vietnam
+War"* — which is comparison and not an argument. `unified-task-force` is linked
+where the background says Bush *"ordered the military to join the UN in a joint
+operation known as Operation Restore Hope, with the primary mission of restoring
+order in Somalia"*: a date and a mandate, with nothing said about this operation,
+which is A14 (4)'s own refusal class read forwards rather than backwards.
+
+### What the Somali vein gave and what it would not
+
+**Deviation 1454.** Deviation 1453's plain-text check was right and the way this
+fire first wrote it was wrong. A link's target carries the article's
+disambiguator and its prose does not, so testing the raw target against the
+extract reads `[[Battle of Mogadishu (1993)]]` as a navbox link in an article that
+names the battle in its first paragraph. Gothic Serpent folded to **two** prose
+hits under that test and to **six** once the check also tried the piped display
+text and the target without its parenthetical. A fire folding links must test the
+forms a reader sees, not the form a link is written in; the false negative is
+silent and it hides exactly the best candidates.
+
+**The vein's remaining rows are refused, and four of the five refusals are one
+finding.** `Q243620`'s twenty-five free rows ranked well — five of five held
+records inside the component — and the reading turned up one importable,
+connectable record.
+
+- **`Q4686105`, the 2006 Islamic Courts Union offensive (5 sitelinks), refused on
+  the class, and it is the row this fire most wanted.** Its article states the
+  edge plainly — *"The decision to use of the warlords as proxies was born from
+  fears of once again committing large numbers of American soldiers to Somalia
+  following the disastrous 1993 Battle of Mogadishu"* — which is the Legacy
+  sentence above seen from the other side. **The item has no `P31` at all**, so
+  nothing says what kind of thing it is, and an item whose class nobody has
+  decided about is refused and listed rather than guessed at. This one cannot even
+  be fixed by a line in the class table: somebody has to put a `P31` on the item,
+  or a person writes the record here.
+- **`Q107177113`, the Somaliland War of Independence (8 sitelinks, 1981–1991),
+  refused on the filing, and this is the finding worth keeping.** It classifies, it
+  is dated at both ends, and its article states a clean edge from a held record:
+  *"The conflict was in response to the harsh policies enacted by the Barre regime
+  against the main clan family in Somaliland, the Isaaq ... These harsh policies
+  were put into effect shortly after the conclusion of the disastrous Ogaden War in
+  1978"*, with a background section that has Somalia's defeat *"caused an influx of
+  Ethiopian refugees"* the regime then armed against the Isaaq. But its only
+  `P361` is `Q243620`, and **`somali-civil-war` begins in 1991**: rule 24 refuses a
+  parent whose span does not contain the child, so the record would arrive **main**
+  and A6 says the main count must not rise. **Every pre-1991 row of this vein is in
+  the same position** — the vein's umbrella is younger than a third of what it
+  claims. What frees them is an umbrella that holds 1978 to 1991, which the Somali
+  Rebellion would be if its item were dated; `Q3736852` carries no interval at all.
+  **This is a refusal class and not one row's bad luck.**
+- **`Q1478359`, the Battle of Jilib (8 sitelinks), refused under deviation 1453.**
+  Its one held link, `war-in-somalia`, is a navbox link and survives in no prose.
+- **`Q3883901`, Operation Deliverance (3 sitelinks), and `Q4871756` /
+  `Q1140554`, the Mogadishu battles of 2009 and of 2010–2011, refused under C8.**
+  Each links `somali-civil-war` in prose and each would be filed under it, so the
+  only edge on offer runs from a parent to its own child. `Q1140554` also names
+  `battle-of-mogadishu-1993`, and only to say the years are in the title *"in order
+  to distinguish it amongst the nine major Battles of Mogadishu"*, which is a
+  disambiguation note.
+
+### The Misrata component cannot be joined from its own prose
+
+The stand after batch 62 asked a fire to read `battle-of-tripoli-2011`'s article
+for the edge that would join the three-record Misrata component to the 708. **It
+is not there, and neither is it in the other direction.** Tripoli's article names
+Misrata and Zliten four times and every one is men and materiel leaving a city —
+*"Boats from Misrata and Zliten carrying rebel forces and arms landed in Tripoli"*,
+*"Misrata's local military council said they sent several ships"* — with no link to
+either held record and no claim about either battle. Read the other way,
+`battle-of-the-misrata-frontline` and `zliten-uprising` link **only
+`battle-of-misrata-2011`** in prose, and both of those edges exist; their one other
+held link, `2011-military-intervention-in-libya`, is a navbox link in both.
+**The component is closed under its own three articles**, and a later fire should
+spend its reading elsewhere rather than here.
+
+## Batch 64 — the 2014 Gaza War, the edge batch 62 queued, and the qid that was wrong
+
+One edge, `precondition-of`, quoted from the later record's own background.
+
+| from | type | to | confidence |
+| --- | --- | --- | --- |
+| `2014-gaza-war` | precondition-of | `operation-northern-shield` | probable |
+
+**This is the edge the stand after batch 62 asked for, and it is worth what that
+stand said.** Northern Shield's background does not merely date the war before the
+operation: *"The Israel Defense Forces (IDF) started searching for Hezbollah
+tunnels into Israel in 2013 after residents of northern Israel reported hearing
+sounds of digging, but failed to find anything. After the 2014 Gaza War, which saw
+numerous tunnels dug by Hamas from the Gaza Strip into Israel being uncovered and
+being utilized in several attacks, the IDF renewed its search for Hezbollah tunnels
+in northern Israel, and this time found indications that such tunnels existed."* A
+search that had already failed was taken up again because of what the war
+uncovered, and the laboratory built for the northern tunnels was *"based on a
+similar laboratory investigating Hamas tunnels in southern Israel"* — the war
+supplied the technique as well as the prompt. That is why this sentence is an edge
+and the eleven A14 (4) dropped were not: "After X, Y" is a refusal when nothing but
+the order is stated, and this one states the mechanism twice.
+
+**`Q17061507` is not the 2014 Gaza War.** The stand after batch 62 named that qid
+and a fire trusting it would have imported nothing: `Q17061507` carries one
+sitelink, no `P31`, no dates and no English article, and its place chain reaches
+China. The war is **`Q17324420`**, 52 sitelinks, `P580` 8 July and `P582` 26 August
+2014. **Deviation 1455**: a qid carried forward in prose from one fire to the next
+is not evidence, and the cheap check is one `Special:EntityData` read before the
+batch is planned around it — the label and the sitelink count are enough to see
+that a 52-sitelink war has not become a one-sitelink stub.
+
+**The batch grows the corpus and not the component, and A5 asks why.** The pair is
+a two-node component of its own and the count of components goes 395 to 396. The
+2014 war's own article names every neighbour this atlas holds and names none of
+them as a cause: `gaza-war-2008-2009` appears three times and every one is a
+comparison of damage — *"the damage inflicted was $4 billion, 3 times the then GDP
+of Gaza's economy"* — and the 2023 `gaza-war` article names 2014 once, in an
+enumeration, *"including four wars, in 2008–2009, 2012, 2014, and 2021"*. No
+cached lead in the atlas mentions the 2014 war at all. **What would join the pair
+to the 708 is the 2012 operation, which this atlas does not hold**: Pillar of
+Defense sits between the 2008–09 war and this one and is the obvious next Asia row.
+
+### Three refusals, and one of them is a fault in this fire's own fold
+
+- **`2013-egyptian-coup-d-etat` → `2014-gaza-war`, refused: a stated cause of an
+  unheld intermediate is not a stated cause of the event.** The article says
+  Hamas agreed to the unity government of April 2014 with *"the loss of power by
+  the Muslim Brotherhood in Egypt after a coup d'ètat in Egypt, and the economic
+  impact of the closure of its Rafah tunnels"* among its reasons. The coup is a
+  cause of the reconciliation; the reconciliation is not a record here, and the
+  article's road from it to the war runs through Israeli sanctions and the June
+  abductions. Two steps with nothing in the middle to hang an edge on.
+- **`arab-spring`, `warsaw-ghetto-uprising` and `fourth-geneva-convention`,
+  refused.** The Arab Spring is named as what influenced the reconciliation of
+  *2011*; the Warsaw Ghetto Uprising is Finkelstein's comparison; the convention is
+  a legal text quoted at both sides. And in Northern Shield's own article
+  `2006-lebanon-war` appears only as the war Resolution 1701 *"helped to end"* —
+  the resolution the tunnels violate, which is a legal frame and not a claim that
+  one brought the other about.
+- **Deviation 1454's broadened check can read a link as prose that is not about
+  the record at all.** Trying the piped display text is what recovered Gothic
+  Serpent's six hits, and here it made `2013 Egyptian coup d'état` a prose hit off
+  the display *"loss of power by the Muslim Brotherhood in Egypt after a coup
+  d'ètat in Egypt"* — which is prose, and which is about the coup, so the check did
+  its job; but a display like "the coup" or "the war" would pass the same test
+  while saying nothing. **The fold ranks candidates and never decides an edge**, and
+  this batch is the reminder: every hit was read in its own sentence before
+  anything was written, and three of four were refused there.
+
+## A15(6)'s five filings, argued without a place — 29 September
+
+A15(6) refuses a `P17` country as an event's place where the country's own item
+says it was not there, and it cleared 32 places (its section is in
+`docs/m42-pool.md`). Five of the 32 are **filed under an umbrella and name no
+actor**, so the correspondence `tests/m67.test.mjs` holds — *a filing nobody
+argued in writing fails* — was satisfied by their place until this fire and is
+satisfied here instead.
+
+**The filing's own evidence has not changed, and it was never the place.** All
+five carry `filed-from-p361`: the item itself states that the event is part of
+the umbrella, which is what A6 and A8 read, and what the batch that wrote the
+filing recorded. Losing the place lost the M67 correspondence, not the argument.
+
+| child | its umbrella | the place A15(6) took, and why |
+| --- | --- | --- |
+| `anglo-french-war-1627-1629` | `thirty-years-war` | France (Q142), whose item dates its inception to **1958** |
+| `battle-of-martorell-1641` | `thirty-years-war` | Spain (Q29), inception **1715** |
+| `naval-battle-of-tarragona` | `thirty-years-war` | Spain (Q29), inception **1715** |
+| `siege-of-philippsburg-1644` | `thirty-years-war` | Germany (Q183), inception **1949** |
+| `invasion-of-jersey-1779` | `american-revolutionary-war` | the United Kingdom (Q145), inception **1801** |
+
+Each was a modern state's centroid standing in for a battlefield, on an event
+that ended between 122 and 331 years before that state's item says the state
+began. **None of the five names an actor**, and this fire wrote none: who fought
+at Martorell in 1641 is a claim with a role attached, and `actors` is where the
+atlas puts an argument, not a gap-filler. **The cheapest repair is a place
+record per battlefield**, which A9's chain writes the next time a batch touches
+these events — the item's own `P625` or its `P276` is what it would read, and
+neither is a country.
+
+## Batch 65 — Africa, two edges and the tombstone one of them undid — 29 September
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `setif-and-guelma-massacre` | precondition-of | `algerian-war` | probable | *"The massacre marked a turning point in Franco-Algerian relations, ultimately leading to the Algerian War of Independence from 1954 to 1962."* — "Sétif and Guelma massacre", revision 1373304371, lead |
+| `1966-nigerian-coup-d-etat` | caused | `nigerian-civil-war` | probable | *"Immediate causes of the war in 1966 included a military coup, a counter-coup, and anti-Igbo pogroms in the Northern Region."* — "Nigerian Civil War", revision 1374012434, lead |
+
+**Nine years is why the first is a precondition and not a cause.** The article
+says the massacre turned the relation between France and Algeria, not that it
+began the war; `precondition-of` is the type that says exactly that, and the
+five types exist so that this distinction survives.
+
+**The second is read from the effect's article and not the cause's.** The
+coup's own article names no event this atlas holds. The war's lead names three
+immediate causes and the atlas holds one of them; the counter-coup of July 1966
+and the anti-Igbo pogroms are not records here and no edge was written for
+either. That one edge is what took `nigerian-civil-war` off the tombstone list
+it had been on since 24 September — its reason said the article would not carry
+an edge, and it means the Portuguese edge the reason was looking for, which is
+still not written.
+
+Both are `probable`: Wikipedia is the only source, and A2 leaves `consensus`
+open only through a work Wikipedia itself cites.

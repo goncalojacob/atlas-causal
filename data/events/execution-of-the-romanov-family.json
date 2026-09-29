@@ -17,15 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a14-lane-guard"
+      "a14-lane-guard",
+      "a15-days"
     ],
-    "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case."
+    "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged. A15(7) leaves"
   },
   "origin": {
     "tool": "wikidata"
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Murder of the Romanov family\", revision 1374973698"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Murder of the Romanov family\", revision 1374973698, first sentence: \"16–17 July 1918\""
     }
   ],
   "title": "execution of the Romanov family",
@@ -54,7 +59,8 @@
   "when": {
     "start": 1918,
     "end": 1918,
-    "date": "1918-07-16"
+    "date": "1918-07-16",
+    "endDate": "1918-07-17"
   },
   "place": null,
   "region": "asia",

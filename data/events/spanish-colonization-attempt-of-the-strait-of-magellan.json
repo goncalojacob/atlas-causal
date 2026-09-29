@@ -13,25 +13,26 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
-  "origin": {
-    "tool": "wikidata"
-  },
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a9-place"
     ]
   },
+  "origin": {
+    "tool": "wikidata"
+  },
   "wikidata": "Q110612748",
+  "wikipedia": {
+    "en": "Spanish colonization attempt of the Strait of Magellan"
+  },
   "sitelinks": {
     "count": 2,
     "on": "2026-09-25"
-  },
-  "wikipedia": {
-    "en": "Spanish colonization attempt of the Strait of Magellan"
   },
   "sources": [
     {
@@ -50,9 +51,9 @@
     "end": 1590,
     "date": "1581-12"
   },
-  "place": null,
+  "place": "strait-of-magellan",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": [],
-  "parent": "spanish-colonization-of-the-americas"
+  "parent": "spanish-colonization-of-the-americas",
+  "actors": []
 }

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "1966-nigerian-coup-d-etat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9's second step: P276 Q1033, Nigeria, written here at `country` precision — the item's own P625 is that same point, the country's centroid. A15(6)'s gate passes: inception 1960, one country, the chain's own point. Filed by A6's span and subject, not the item's P361, which is empty: the coup is inside `decolonisation-of-africa`'s span and is Nigeria six years after independence. P580 and P582 are the two days the cached lead at revision 1375361723 describes; nothing was widened."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q16205928",
+  "wikipedia": {
+    "en": "1966 Nigerian coup d'état",
+    "pt": "Golpe de Estado na Nigéria em 1966"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16205928"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1966 Nigerian coup d'état\", revision 1375361723"
+    }
+  ],
+  "title": "1966 Nigerian coup d'état",
+  "summary": "The English Wikipedia article \"1966 Nigerian coup d'état\", at revision 1375361723, opens: \"On 15 January 1966, soldiers led by Kaduna Nzeogwu and four others carried out a military putsch, killing 22 people, including Prime Minister Abubakar Tafawa Balewa and Northern Premier Ahmadu Bello, many senior politicians, senior Army officers and their wives, and sentinels on protective duty. The coup plotters attacked the cities of Kaduna, Ibadan, and Lagos while blockading the Niger and Benue River within a two-day timespan, before being overcome by loyalist forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16205928, imported by tools/import/wikidata.mjs. The item's own description reads \"violent overthrow of Nigerian government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-01-15",
+    "endDate": "1966-01-16"
+  },
+  "place": "nigeria-q1033",
+  "region": null,
+  "regionNote": null,
+  "parent": "decolonisation-of-africa",
+  "category": "revolution",
+  "actors": []
+}

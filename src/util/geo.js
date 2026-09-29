@@ -141,3 +141,25 @@ export function createRegionDeriver(polygons, { tolerance = NEAREST_TOLERANCE } 
     return null;
   };
 }
+
+// Great-circle distance in kilometres. A15(6) needs it and nothing else here
+// does: every other question this file answers is "inside which polygon", which
+// is planar and needs no earth. A mean radius and the haversine formula, which
+// is accurate enough for a threshold of a thousand kilometres and has no
+// singularity at the antipodes the way the spherical law of cosines does.
+export const EARTH_RADIUS_KM = 6371.0088;
+
+export function haversineKm(a, b) {
+  if (!a || !b) return null;
+  const lon1 = Number(a.lon ?? a[0]);
+  const lat1 = Number(a.lat ?? a[1]);
+  const lon2 = Number(b.lon ?? b[0]);
+  const lat2 = Number(b.lat ?? b[1]);
+  if (![lon1, lat1, lon2, lat2].every(Number.isFinite)) return null;
+  const rad = Math.PI / 180;
+  const dLat = (lat2 - lat1) * rad;
+  const dLon = (lon2 - lon1) * rad;
+  const h = Math.sin(dLat / 2) ** 2
+    + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLon / 2) ** 2;
+  return 2 * EARTH_RADIUS_KM * Math.asin(Math.min(1, Math.sqrt(h)));
+}

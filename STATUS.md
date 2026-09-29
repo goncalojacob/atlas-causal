@@ -20544,6 +20544,92 @@ The validator is clean, the index is byte-identical to a fresh build, and the
 tests are **1,819 pure and 295 browser, all passing, 0 skipped**. Deviations
 1420 to 1424. The full note is `docs/m42-pool.md` under "Batch 49".
 
+## M42 — A15's thirteen data passes, 29 September
+
+The third review (`docs/review-2026-09-26.md`, part C) measured the corpus after
+four curation fires and amendment **A15** turned its findings into thirteen data
+passes, in force for both lanes before any further import. The 05:07Z fire of
+29 September ran all thirteen; each carries its own section and counts in
+`docs/m42-pool.md`, and nothing was imported.
+
+1. **The balance, measured.** Africa 181 and Asia 182 active events against
+   A10's threshold of 303, so M42b's "Europe before 1900" clause stays paused;
+   Africa holds no active event before 1800 and Asia one, which is the two empty
+   centuries A15 hands that lane. A batch walking a held umbrella's `P361`
+   children now imports only the children it can connect, and counts the rest.
+2. **The cache is kept, and a test in front of it.**
+   `tools/import/citations.mjs` reads a `wikipedia-en` locator — one article or
+   two, quotation marks in the article's own name and all — and groups the
+   revisions cited **by Wikidata item**, because Wikipedia renames articles and
+   the cache holds one lead per item. `tools/cache-evidence.mjs` is the pass and
+   the last step of every batch; `tests/a15-cache.test.mjs` was written first
+   and failed on the twelve revisions it found off disk. All twelve are on disk.
+3. **A place carries no summary.** `placeRecord()` writes `summary: null` and
+   the 158 place records carrying the import's placeholder are nulled: a place
+   asserts nothing, so a paragraph about the importer's own standing had nothing
+   to be the standing of.
+4. **Days and months.** The lead-sentence comparison reads them, as the warning
+   `span-vs-lead-dates`; ten of the fifteen single-day records take the range
+   their article states, four are refused because that sentence states no date
+   at all, and `siege-of-fuenterrabia-1523-1524` takes 1523–1524 from its own
+   title. `spanFromTitle()` runs inside the import, so the title's span is
+   written rather than warned about afterwards.
+5. **Chronology is not a claim, at the point of writing.**
+   `tools/import/chronology.mjs` is the refusal class as code, and the same
+   module answers "does this sentence name an event the atlas holds" with
+   deviations 1458, 1459 and 1460 fixed in it. The Soviet–Afghan edge is
+   re-pointed at `dissolution-of-the-soviet-union`, which its own quote names as
+   the cause; the World War I edge to Lausanne is dropped, because the third
+   event its quote names already reaches the treaty.
+6. **A country is a place only when it was there.** Three refusals on facts
+   about the country's own item — an inception after the event's end, a
+   dissolution before its start, a multi-valued `P17`, and a point more than
+   1,000 km from the event's own chain. Of 63 country-placed events, **32 are
+   refused and 31 kept**: five Italian Wars on an Italy whose item begins in
+   1946, the French Revolution on a France that begins in 1958, `world-war-ii`
+   on a Russia that begins in 1991. Every lane is kept, and eighteen of them had
+   to be written onto the record for that to be true.
+7. **The lane from the point.** `ilinden-preobrazhenie-uprising` goes from asia
+   to europe and has `monastir-vilayet` back; the Japanese Instrument of
+   Surrender gains `tokyo-bay`. Three are refused with the reason on the record
+   and the Romanov execution waits on deviation 1423.
+8. **Redirects.** All six sitelinks resolve to an article about a *different*
+   item, which is the test that separates a redirect from a rename. Four are
+   kept with `article-is-redirect`, the wrongly quoted lead removed and the
+   citation rewritten to the article and section actually read;
+   `eritrean-civil-wars` and `united-states-military-campaign-against-cartels`
+   are retracted under §1.
+9. **Doubles and paraphrases.** `rio-de-janeiro-q8678` merged into
+   `rio-de-janeiro`, as London was; three summaries that named a revision and
+   then paraphrased it are requoted verbatim.
+10. **Three polities.** `european-economic-community`, `inca-empire` and
+    `dutch-republic` had an end that was a snapshot horizon or an undeliberate
+    editorial choice; their ends are read from the item (2009, 1795, and for the
+    Inca Empire the range 1533–1572 the item states at normal rank) and all
+    three are described. No identity field was written by hand, which is
+    A14(5)'s own decision.
+11. **The measurement that matters.** `tools/m42-pool.mjs` reports how many
+    edges cross an umbrella: **562 of 1,048**, with 486 inside one. It was
+    reported for no batch before because nobody could get it without a script.
+12. **Categories.** 109 read off `P31` through the class table — war 62, treaty
+    34, death 5, revolution 4, election 2, other 2 — leaving 304 uncategorised.
+    The 177 that map to nothing are classes already in the table with no
+    category against them, and filling that column is a taxonomy argument
+    somebody should have rather than a fire's.
+13. **The Portugal passage** of `world-war-ii`, `world-war-i`, `korean-war`,
+    `great-depression` and `charter-of-the-united-nations` cut to one statement:
+    727 characters deleted, none written, each removal kept verbatim in
+    `review.note`. There is no `cold-war` record on any branch, and the
+    amendment's sixth name is its own slip.
+
+Two deviations, numbered in `docs/m42-pool.md` above 1461: **1462**, A15(7)'s
+literal "first located `P276`/`P131`" is statement order on somebody else's item
+and taken literally it moves the 1948 Arab–Israeli War to Africa on the Sinai
+front alone, so the lane comes from the item's own point or from a two-thirds
+majority of its located ones; **1463**, `fillTitles` was pointed at Wikidata's
+action API rather than Wikipedia's, which answers any article title as missing
+with a `wikibase-item` content model.
+
 ## M84 — the owner's feedback document
 
 Lane A, on the branch `m84`. `docs/m84-brief.md` over
@@ -23370,7 +23456,13 @@ M42b started 2026-09-25T11:08:06Z by scheduled
 M42 started 2026-09-25T12:08:36Z by scheduled
 M42 started 2026-09-25T14:51:41Z by scheduled
 M42b started 2026-09-25T15:18:12Z by scheduled
+M42 started 2026-09-25T17:26:36Z by scheduled
+M42 started 2026-09-29T02:07:14Z by scheduled
+M42 started 2026-09-29T05:07:41Z by scheduled
 M88 started 2026-09-25T17:51:08Z by scheduled
 M88 done
 M89 started 2026-09-29T03:45:19Z by scheduled
 M89 done
+M42 started 2026-09-29T09:07:23Z by scheduled
+M42 started 2026-09-29T12:19:41Z by scheduled
+M42 started 2026-09-29T15:26:03Z by scheduled

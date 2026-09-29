@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -58,6 +59,10 @@
     {
       "source": "wikidata",
       "locator": "Q10859"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q10859, P31 Q8465"
     }
   ],
   "title": "Spanish Civil War",
@@ -71,6 +76,7 @@
   "place": "iberian-peninsula",
   "region": "europe",
   "parent": "interwar-period",
+  "category": "war",
   "actors": [
     {
       "actor": "spain",

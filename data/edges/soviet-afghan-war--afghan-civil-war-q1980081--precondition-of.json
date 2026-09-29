@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "soviet-afghan-war--afghan-civil-war-q1980081--precondition-of",
   "kind": "edge",
-  "status": "active",
+  "status": "retracted",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -23,6 +23,10 @@
   },
   "origin": {
     "tool": "assistant"
+  },
+  "retraction": {
+    "on": "2026-09-29",
+    "reason": "A15(5): the sentence this edge quotes states a cause, and the cause it states is the dissolution of the Soviet Union — \"all support to the Democratic Republic was stopped, leading to the toppling of the government\" — not the Soviet–Afghan War, which had ended three years earlier. An edge drawn from the article’s own subject has the direction right and the cause wrong. The link is written from dissolution-of-the-soviet-union instead."
   },
   "sources": [
     {

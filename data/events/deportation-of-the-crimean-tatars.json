@@ -17,14 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a6-filed"
+    ],
+    "note": "A6: May 1944, inside the war, and filed as the corpus already files `katyn-massacre` and `massacres-of-poles-in-volhynia-and-eastern-galicia` — an act of a belligerent during the war it is fighting."
   },
   "origin": {
     "tool": "wikidata"
@@ -59,5 +61,6 @@
   "place": "crimea",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
   "actors": []
 }
