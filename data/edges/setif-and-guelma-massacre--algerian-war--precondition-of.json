@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "setif-and-guelma-massacre--algerian-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-65"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sétif and Guelma massacre\", revision 1373304371, lead"
+    }
+  ],
+  "from": "setif-and-guelma-massacre",
+  "to": "algerian-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The record’s own cited article says it in the lead: \"The massacre marked a turning point in Franco-Algerian relations, ultimately leading to the Algerian War of Independence from 1954 to 1962.\" Nine years separate the two, so the link is a precondition and not a cause: the article says the massacre turned the relation, not that it started the war. `probable`, because the only source is Wikipedia (A2).",
+  "dispute": null
+}

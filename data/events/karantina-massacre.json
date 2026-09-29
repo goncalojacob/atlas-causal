@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "karantina-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1907402",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Karantina massacre",
+    "pt": "Massacre de Karantina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1907402"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Karantina massacre\", revision 1369318651"
+    }
+  ],
+  "title": "Karantina massacre",
+  "summary": "The English Wikipedia article \"Karantina massacre\", at revision 1369318651, opens: \"The Karantina massacre took place on 18 January 1976, early in the Lebanese Civil War. La Quarantine, known in Arabic as \"Karantina\", was a Muslim-inhabited district in mostly Christian East Beirut controlled by forces of the Palestine Liberation Organization (PLO) and the Lebanese National Movement (LNM), and inhabited by Palestinians, Kurds, Armenians, Syrians, and Lebanese Muslims. The fighting and subsequent killings also involved an old Quarantine area near the port and nearby \"Maslakh\" quarter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1907402, imported by tools/import/wikidata.mjs. The item's own description reads \"Massacre during the Lebanese Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-01-18"
+  },
+  "place": "beirut",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "lebanese-civil-war"
+}

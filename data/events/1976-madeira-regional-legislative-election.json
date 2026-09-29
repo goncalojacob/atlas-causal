@@ -19,13 +19,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -55,6 +56,10 @@
     {
       "source": "wikidata",
       "locator": null
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q10271597, P31 Q10271596"
     }
   ],
   "title": "1976 Madeira regional legislative election",
@@ -70,6 +75,7 @@
   "place": "portugal-q45",
   "region": "europe",
   "parent": "third-portuguese-republic-since-1974",
+  "category": "election",
   "actors": [
     {
       "actor": "psd",

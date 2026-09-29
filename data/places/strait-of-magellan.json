@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "strait-of-magellan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q48365",
+  "wikipedia": {
+    "en": "Strait of Magellan",
+    "pt": "Estreito de Magalhães"
+  },
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Strait of Magellan",
+    "Estreito de Magalhães"
+  ],
+  "where": {
+    "lon": -71,
+    "lat": -54,
+    "precision": "region",
+    "label": "Strait of Magellan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "santa-fe-de-nuevo-mexico",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q921283",
+  "wikipedia": {
+    "en": "Santa Fe de Nuevo México",
+    "pt": "Santa Fé do Novo México"
+  },
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Santa Fe de Nuevo México",
+    "Santa Fé do Novo México"
+  ],
+  "where": {
+    "lon": -105.965,
+    "lat": 35.6667,
+    "precision": "region",
+    "label": "Santa Fe de Nuevo México"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

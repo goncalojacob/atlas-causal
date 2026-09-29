@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,8 @@
       "m67-lined",
       "a9-place",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -48,6 +49,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Finnish Civil War\", revision 1375858302"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q211855, P31 Q8465"
     }
   ],
   "title": "Finnish Civil War",
@@ -62,6 +67,7 @@
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russian-civil-war",
+  "category": "war",
   "actors": [
     {
       "actor": "finland",

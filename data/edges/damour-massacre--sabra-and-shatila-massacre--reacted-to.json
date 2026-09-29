@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "damour-massacre--sabra-and-shatila-massacre--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-67"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Damour massacre\", revision 1356232011, § Events"
+    }
+  ],
+  "from": "damour-massacre",
+  "to": "sabra-and-shatila-massacre",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The new record's own cited article states the motive of the man who ran the later massacre: \"Elie Hobeika, who oversaw the attack on Sabra and Shatila, was greatly inspired by the loss of his relatives and fiancée in the attack at Damour.\" Among the dead at Damour, the same section says, were \"family members of Lebanese Maronite militia commander Elie Hobeika and his fiancée\". So the claim is about one commander's reason and not about two communities: six and a half years apart, `reacted-to` says the later attack answered the earlier and nothing more. `probable`, because the article gives one man's motive as the link and the atlas can open no source behind it (rule 22).",
+  "dispute": null
+}

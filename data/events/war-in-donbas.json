@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -46,6 +47,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"War in Donbas\", revision 1370749630"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q16335075, P31 Q350604 / Q8465"
     }
   ],
   "title": "War in Donbas",
@@ -60,5 +65,6 @@
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "russo-ukrainian-war",
+  "category": "war",
   "actors": []
 }

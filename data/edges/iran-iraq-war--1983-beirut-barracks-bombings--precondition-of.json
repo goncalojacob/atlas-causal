@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "iran-iraq-war--1983-beirut-barracks-bombings--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-67"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1983 Beirut barracks bombings\", revision 1376811260, § Mission"
+    }
+  ],
+  "from": "iran-iraq-war",
+  "to": "1983-beirut-barracks-bombings",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "The new record's own cited article gives the war as the setting of the motive: \"Some analysts believe the newly formed Islamic Republic of Iran was heavily involved in the bomb attacks and that a major factor leading it to orchestrate the attacks on the barracks was America's support for Iraq in the Iran–Iraq War and its extending of $2.5 billion in trade credit to Iraq while halting the shipments of arms to Iran.\" The next sentence is the warning that reading rests on: \"A few weeks before the bombing, Iran warned that providing armaments to Iran's enemies would provoke retaliatory punishment.\" `precondition-of` and not `caused`: what the article names as the factor is the American tilt towards Baghdad, and the war is what that tilt was in — it is the condition under which the motive existed, not the act that brought the bombing about.",
+  "dispute": {
+    "text": "Two things are contested, and the article says both. Whether Iran was involved at all: \"Hezbollah, Iran and Syria have continued to deny any involvement in any of the bombings\", and Reagan's Secretary of Defense Caspar Weinberger is quoted saying \"We still do not have the actual knowledge of who did the bombing of the Marine barracks at the Beirut Airport, and we certainly didn't then\" — the article gives his lack of certainty about Syria or Iran as the reason no retaliation followed. And whose reading the motive is: the sentence this edge rests on opens \"Some analysts believe\", which the article does not turn into its own account anywhere. On the reading that the bombers were a Lebanese group answering the Israeli occupation, which the same section gives as Hezbollah's founding purpose, the Iran–Iraq War is not in the chain at all.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"1983 Beirut barracks bombings\", revision 1376811260, §§ Mission and Aftermath — Search for perpetrators"
+      }
+    ]
+  }
+}

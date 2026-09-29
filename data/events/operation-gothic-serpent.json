@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "operation-gothic-serpent",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361",
+      "summary-from-lead"
+    ],
+    "note": "Place by A9's second step, P276 Q2449, Mogadishu, which this atlas holds as `mogadishu`; the item's own P625 stands at the same city and no place record is at that point under its own name, so the chain moved on rather than writing one. The item's P580 and P582 are 22 August and 13 October 1993, inside the article's own \"from August to October 1993\", so nothing was widened under A7. The item names no P710, so `actors` is empty."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3428977",
+  "wikipedia": {
+    "en": "Operation Gothic Serpent",
+    "pt": "Operação Serpente Gótica"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3428977"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255"
+    }
+  ],
+  "title": "Operation Gothic Serpent",
+  "summary": "The English Wikipedia article \"Operation Gothic Serpent\", at revision 1375741255, opens: \"Operation Gothic Serpent was a military operation conducted in Mogadishu, Somalia, by an American military force code-named Task Force Ranger during the Somali Civil War in 1993. The primary objective of the operation was to capture Mohamed Farrah Aidid, leader of the Somali National Alliance who was wanted by the UNOSOM II in response to his attacks against United Nations troops. The operation took place from August to October 1993 and was led by US Joint Special Operations Command (JSOC).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3428977, imported by tools/import/wikidata.mjs. The item's own description reads \"military operation conducted by the United States in Mogadishu, Somalia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1993,
+    "end": 1993,
+    "date": "1993-08-22",
+    "endDate": "1993-10-13"
+  },
+  "place": "mogadishu",
+  "region": null,
+  "regionNote": null,
+  "parent": "somali-civil-war",
+  "category": "war",
+  "actors": []
+}

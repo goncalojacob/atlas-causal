@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -58,6 +59,10 @@
     {
       "source": "wikidata",
       "locator": "Q884821"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q884821, P31 Q131569"
     }
   ],
   "title": "The Iberian Pact",
@@ -74,6 +79,7 @@
     "estado-novo-1933-1974",
     "interwar-period"
   ],
+  "category": "treaty",
   "actors": [
     {
       "actor": "salazar",

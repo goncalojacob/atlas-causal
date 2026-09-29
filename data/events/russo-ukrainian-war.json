@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
       "a9-place",
-      "end-unstated"
+      "end-unstated",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -51,6 +52,10 @@
     {
       "source": "wikidata",
       "locator": "Q15860072"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q15860072, P31 Q198 / Q11422542 / Q474138"
     }
   ],
   "title": "Russo-Ukrainian war",
@@ -62,6 +67,7 @@
   },
   "place": "sea-of-azov",
   "region": "europe",
+  "category": "war",
   "actors": [
     {
       "actor": "ukraine",

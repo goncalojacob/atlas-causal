@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -54,6 +55,10 @@
     {
       "source": "wikidata",
       "locator": "Q200790"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q200790, P31 Q21994376 / Q1006311"
     }
   ],
   "title": "Algerian War",
@@ -67,6 +72,7 @@
   "place": "french-algeria",
   "region": "africa",
   "parent": "decolonisation-of-africa",
+  "category": "war",
   "actors": [
     {
       "actor": "france",

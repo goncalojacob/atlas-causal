@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "nigerian-civil-war",
   "kind": "event",
-  "status": "retracted",
+  "status": "active",
   "supersededBy": null,
   "aliases": [],
   "authors": [
@@ -13,45 +13,59 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
-  "origin": {
-    "tool": "wikidata"
-  },
-  "retraction": {
-    "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The African corpus has grown around it and the Portuguese one it needed is here — angolan-war-of-independence, filed under the colonial war — but the sentences that would carry the edge do not. The article, at revision 1376166092, says \"Portuguese pilots also served in the Biafran Air Force, transporting weapons from Portugal to Biafra\" and describes the airlift through São Tomé; it names Portugal and no event this atlas holds, and it does not say the war in Angola is why Lisbon did it. That last sentence is the edge, and it wants a source the atlas can open. Still the retraction most worth undoing, and now for one sentence rather than for a rule."
-  },
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
-      "a14-reason-rewritten"
-    ]
+      "a14-reason-rewritten",
+      "filed-by-span-and-subject",
+      "m42-reinstated",
+      "summary-from-lead",
+      "a9-place",
+      "participants-from-p710"
+    ],
+    "note": "M42 batch 65: reinstated on `1966-nigerian-coup-d-etat --caused--> nigerian-civil-war`, the edge the A14(6) reason said the article would not carry — it carries this one in its own lead. Filed under `decolonisation-of-africa` by A6; the item names no P361. Summary requoted from the cached lead at the revision the edge cites. A9: P276 Q7569493 has no point, so the place is P17 Q1033, Nigeria, which A15(6) allows. Of three P710 the atlas holds one.",
+    "status": "draft"
+  },
+  "origin": {
+    "tool": "wikidata"
   },
   "wikidata": "Q829875",
-  "sitelinks": {
-    "count": 51,
-    "on": "2026-09-15"
-  },
   "wikipedia": {
     "en": "Nigerian Civil War",
     "pt": "Guerra Civil da Nigéria"
+  },
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-09-15"
   },
   "sources": [
     {
       "source": "wikidata",
       "locator": "Q829875"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nigerian Civil War\", revision 1374012434"
     }
   ],
   "title": "Nigerian Civil War",
-  "summary": "Wikidata item Q829875, imported by tools/import/wikidata.mjs. The item's own description reads \"violent conflict within Nigeria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "summary": "The English Wikipedia article \"Nigerian Civil War\", at revision 1374012434, opens: \"The Nigerian Civil War, also known as the Biafran War, Nigeria–Biafra War, or Biafra War, was an armed conflict fought between Nigeria and the Republic of Biafra, a secessionist state that had declared its independence from Nigeria in 1967. During the war years, General Yakubu Gowon served as the head of state of Nigeria, while Biafra was led by Lieutenant Colonel Chukwuemeka \"Emeka\" Odumegwu Ojukwu. The conflict emerged from political, ethnic, cultural, and religious tensions that preceded the United Kingdom's formal decolonisation of Nigeria from 1960 to 1963. Immediate causes of the war in 1966 included a military coup, a counter-coup, and anti-Igbo pogroms in the Northern Region. As a consequence of these pogroms, alongside the mass exodus of surviving Igbos from the Northern Region to the Igbo homelands in the Eastern Region, the leadership of the Eastern Region concluded that the Nigerian federal government was either unwilling or unable to guarantee them an adequate protection, therefore, the only remaining solution seemed to be to guarantee their compatriots' security by establishing a sovereign and independent country of Biafra.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q829875, imported by tools/import/wikidata.mjs. The item's own description reads \"violent conflict within Nigeria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
     "start": 1967,
     "end": 1970,
     "date": "1967-07-06",
     "endDate": "1970-01-15"
   },
-  "place": null,
+  "place": "nigeria-q1033",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "actors": []
+  "parent": "decolonisation-of-africa",
+  "actors": [
+    {
+      "actor": "nigeria",
+      "role": "belligerent",
+      "note": "Wikidata Q829875, P710 (participant), Q1033"
+    }
+  ]
 }

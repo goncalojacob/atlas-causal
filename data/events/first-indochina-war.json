@@ -17,13 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-22",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-drafted",
-      "a9-place"
+      "a9-place",
+      "a15-category-from-p31"
     ]
   },
   "origin": {
@@ -50,6 +51,10 @@
     {
       "source": "wikidata",
       "locator": "Q748780"
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q748780, P31 Q198"
     }
   ],
   "title": "First Indochina War",
@@ -63,6 +68,7 @@
   "place": "french-indochina-q185682",
   "region": "asia",
   "parent": "indochina-wars",
+  "category": "war",
   "actors": [
     {
       "actor": "france",

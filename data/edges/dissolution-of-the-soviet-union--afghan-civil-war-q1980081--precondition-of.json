@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dissolution-of-the-soviet-union--afghan-civil-war-q1980081--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass",
+      "a15-reattributed"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, lead"
+    }
+  ],
+  "from": "dissolution-of-the-soviet-union",
+  "to": "afghan-civil-war-q1980081",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The quote is the Soviet war’s lead and the cause it names is not the Soviet war: \"Following the dissolution of the Soviet Union in December 1991, all support to the Democratic Republic was stopped, leading to the toppling of the government by the mujahideen in 1992 and the start of a second Afghan Civil War (1992–1996).\" What stopped the support is the dissolution, which this atlas holds as its own record, so the link is written from there. A15(5).",
+  "dispute": null
+}

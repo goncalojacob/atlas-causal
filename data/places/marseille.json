@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "marseille",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q23482",
+  "wikipedia": {
+    "en": "Marseille",
+    "pt": "Marselha"
+  },
+  "sitelinks": {
+    "count": 163,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Marseille",
+    "Marselha"
+  ],
+  "where": {
+    "lon": 5.3763888888889,
+    "lat": 43.296666666667,
+    "precision": "city",
+    "label": "Marseille"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

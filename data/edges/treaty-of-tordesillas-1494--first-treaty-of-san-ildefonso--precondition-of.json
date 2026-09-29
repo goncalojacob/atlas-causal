@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tordesillas-1494--first-treaty-of-san-ildefonso--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Treaty of San Ildefonso\", revision 1372949821, § Background"
+    }
+  ],
+  "from": "treaty-of-tordesillas-1494",
+  "to": "first-treaty-of-san-ildefonso",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1777 treaty fixed the Río de la Plata borders, and its own background section makes Tordesillas the ambiguity it was fixing. The article reads: \"For nearly 300 years, differing interpretations of the Treaty of Tordesillas led to disputes between Spain and Portugal over the Río de la Plata region.\"",
+  "dispute": null
+}

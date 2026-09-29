@@ -13,14 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-23",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a6-filed"
+    ],
+    "note": "A6: fought November 1918 to July 1919 in Europe, inside the interwar period, one of the successor-state wars the period is partly made of. Filed by the lane and the span; the umbrella names no actor to share."
   },
   "origin": {
     "tool": "wikidata"
@@ -55,6 +57,7 @@
   "place": "eastern-europe",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "interwar-period",
   "category": "war",
   "actors": []
 }

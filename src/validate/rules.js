@@ -491,6 +491,140 @@ const said = (from, to) => (from === to ? `${from}` : `${from}–${to}`);
 // read a directory, and handed over as a Map of item to lead. A record with no
 // `wikidata`, or one whose item nobody has cached a lead for, is not a record
 // this can say anything about.
+// --- the day and the month --------------------------------------------------
+//
+// A15(4). `yearsInLead` above reads years, and a record dated to a single day
+// by `P585` beside a sentence saying *"fought on 27–28 May 1905"* contradicts
+// its own article in a way no year ever shows: both are 1905. The third
+// review found fifteen of them. So the same sentence is read again for the
+// days it states.
+//
+// Three shapes and no fourth, for the same reason `yearsInLead` has three: a
+// fourth is a guess. `27–28 May 1905`, `November 6–7, 1985`, and
+// `from 8 March to 26 May 1977` — the last being the only one that crosses a
+// month. A single day is read too, because a record dated to a *range* beside
+// a sentence naming one day is the same disagreement the other way round.
+const MONTHS = Object.freeze({
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+  july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+});
+
+const MONTH_NAMES = Object.keys(MONTHS).join('|');
+const DASH = '[‐-―-]';
+
+// `27–28 May 1905`, and `the night of 20–21 June 1791`.
+const DAYS_THEN_MONTH = new RegExp(`(?<!\\d)(\\d{1,2})\\s*${DASH}\\s*(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+// `November 6–7, 1985`.
+const MONTH_THEN_DAYS = new RegExp(`(${MONTH_NAMES})\\s+(\\d{1,2})\\s*${DASH}\\s*(\\d{1,2}),?\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+// `from 8 March to 26 May 1977`, and `from 1 August 1944 to 2 October 1944`.
+const FROM_DAY_TO_DAY = new RegExp(`\\bfrom\\s+(\\d{1,2})\\s+(${MONTH_NAMES})(?:\\s+(1\\d{3}|20\\d{2}))?\\s+(?:until|to)\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+// `on 2 May 1808` and `on November 6, 1985`: one day, stated as one.
+const ONE_DAY = new RegExp(`\\bon\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+const ONE_DAY_US = new RegExp(`\\bon\\s+(${MONTH_NAMES})\\s+(\\d{1,2}),\\s*(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+
+const iso = (year, month, day) => `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+const monthOf = (name) => MONTHS[String(name).toLowerCase()] ?? null;
+const realDay = (day, month) => day >= 1 && day <= 31 && month !== null;
+
+// The dates a sentence states, as `{ start, end }` in the shape `when.date`
+// takes, or null. `end` equals `start` where the sentence names one day.
+export function datesInLead(sentence) {
+  const text = String(sentence ?? '');
+
+  const crossing = FROM_DAY_TO_DAY.exec(text);
+  if (crossing) {
+    const [, d1, m1, y1, d2, m2, y2] = crossing;
+    const month1 = monthOf(m1);
+    const month2 = monthOf(m2);
+    const year2 = Number(y2);
+    const year1 = y1 ? Number(y1) : year2;
+    if (realDay(Number(d1), month1) && realDay(Number(d2), month2)) {
+      const start = iso(year1, month1, Number(d1));
+      const end = iso(year2, month2, Number(d2));
+      if (start <= end) return { start, end, clause: crossing[0] };
+    }
+  }
+
+  const sameMonth = DAYS_THEN_MONTH.exec(text);
+  if (sameMonth) {
+    const [, d1, d2, name, year] = sameMonth;
+    const month = monthOf(name);
+    if (realDay(Number(d1), month) && realDay(Number(d2), month) && Number(d1) <= Number(d2)) {
+      return { start: iso(Number(year), month, Number(d1)), end: iso(Number(year), month, Number(d2)), clause: sameMonth[0] };
+    }
+  }
+
+  const american = MONTH_THEN_DAYS.exec(text);
+  if (american) {
+    const [, name, d1, d2, year] = american;
+    const month = monthOf(name);
+    if (realDay(Number(d1), month) && realDay(Number(d2), month) && Number(d1) <= Number(d2)) {
+      return { start: iso(Number(year), month, Number(d1)), end: iso(Number(year), month, Number(d2)), clause: american[0] };
+    }
+  }
+
+  const one = ONE_DAY.exec(text);
+  if (one) {
+    const month = monthOf(one[2]);
+    if (realDay(Number(one[1]), month)) {
+      const day = iso(Number(one[3]), month, Number(one[1]));
+      return { start: day, end: day, clause: one[0] };
+    }
+  }
+
+  const oneUs = ONE_DAY_US.exec(text);
+  if (oneUs) {
+    const month = monthOf(oneUs[1]);
+    if (realDay(Number(oneUs[2]), month)) {
+      const day = iso(Number(oneUs[3]), month, Number(oneUs[2]));
+      return { start: day, end: day, clause: oneUs[0] };
+    }
+  }
+
+  return null;
+}
+
+// Whether the record's own dates fall outside the days the sentence states.
+// Containment and not equality, exactly as `spanOutsideLead` treats years: a
+// record dated to the first day of a two-day battle is inside the range its
+// article states and is not a disagreement. A record with no `date` at all
+// states no day and this says nothing about it; one whose `date` is a month
+// (`1791-06`) is compared on the month, because that is all it claims.
+//
+// **A sentence naming one day is compared against the start alone.** *"The
+// 1982 Lebanon War ... began on 6 June 1982"* says when the war began and
+// nothing about when it ended, so a record running to 1985 does not contradict
+// it; reading that as a one-day event made 40 warnings out of 40 correct
+// records on the first run of this rule.
+export function datesOutsideLead(stated, when) {
+  if (!stated || !when || typeof when.date !== 'string') return false;
+  const cut = (value) => value.slice(0, when.date.length);
+  const from = cut(stated.start);
+  const to = cut(stated.end);
+  const endDate = typeof when.endDate === 'string' ? when.endDate : null;
+  // A sentence naming one day inside a record that spans several is naming one
+  // of its bounds, and which one it cannot say: the French Revolution's lead
+  // names 9 November 1799, which is its end. So a stated single day is only
+  // compared against a record that also claims a single day.
+  if (stated.start === stated.end) {
+    if (endDate !== null && endDate !== when.date) return false;
+    return when.date < from || when.date > to;
+  }
+  if (when.date < from || when.date > to) return true;
+  if (!endDate) return false;
+  const endCut = (value) => value.slice(0, endDate.length);
+  return endDate < endCut(stated.start) || endDate > endCut(stated.end);
+}
+
+// Whether the record is dated to one day where the sentence states a range —
+// which is not a contradiction but a gap, and is what A15(4)'s fifteen are.
+export function narrowerThanLead(stated, when) {
+  if (!stated || !when || typeof when.date !== 'string') return false;
+  if (stated.start === stated.end) return false;
+  const endDate = typeof when.endDate === 'string' ? when.endDate : when.date;
+  return when.date === endDate && when.date.length >= 7;
+}
+
 export function leadSpanWarnings(records, leads) {
   const out = [];
   for (const r of records ?? []) {
@@ -498,15 +632,30 @@ export function leadSpanWarnings(records, leads) {
     if (typeof r.wikidata !== 'string' || !r.wikidata) continue;
     const lead = leads?.get?.(r.wikidata) ?? null;
     if (!lead || typeof lead.text !== 'string') continue;
-    const stated = yearsInLead(firstSentence(lead.text));
-    if (!stated || !spanOutsideLead(stated, r.when)) continue;
-    out.push({
-      rule: 'span-vs-lead-sentence',
-      id: r.id,
-      kind: r.kind,
-      message: `the first sentence of the cached ${lead.lang ?? 'en'} lead states ${said(stated.start, stated.end)}`
-        + ` and the record is dated ${said(r.when.start, Number.isInteger(r.when.end) ? r.when.end : '(open)')}`,
-    });
+    const sentence = firstSentence(lead.text);
+    const stated = yearsInLead(sentence);
+    const lang = lead.lang ?? 'en';
+    if (stated && spanOutsideLead(stated, r.when)) {
+      out.push({
+        rule: 'span-vs-lead-sentence',
+        id: r.id,
+        kind: r.kind,
+        message: `the first sentence of the cached ${lang} lead states ${said(stated.start, stated.end)}`
+          + ` and the record is dated ${said(r.when.start, Number.isInteger(r.when.end) ? r.when.end : '(open)')}`,
+      });
+    }
+    // A15(4): the same sentence, read for the days and the months it states.
+    const days = datesInLead(sentence);
+    if (days && datesOutsideLead(days, r.when)) {
+      out.push({
+        rule: 'span-vs-lead-dates',
+        id: r.id,
+        kind: r.kind,
+        message: `the first sentence of the cached ${lang} lead states `
+          + `${days.start === days.end ? days.start : `${days.start} to ${days.end}`}`
+          + ` and the record is dated ${r.when.date}${r.when.endDate && r.when.endDate !== r.when.date ? ` to ${r.when.endDate}` : ''}`,
+      });
+    }
   }
   return out;
 }

@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-25",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "a7-widened"
+      "a7-widened",
+      "a15-category-from-p31"
     ],
     "note": "A7: the record was 1920 alone, the month of the evacuation, which put a revolt of 1918 after the Russian Civil War events it belongs among. The article's first sentence, at the revision this record already cites, gives the month it began and the year it ended. Read at \"Revolt of the Czechoslovak Legion\", revision 1370706945: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\". It was {\"start\":1920,\"end\":1920,\"date\":\"1920-09\"}."
   },
@@ -47,6 +48,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945, first sentence: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q118514, P31 Q645883"
     }
   ],
   "title": "Revolt of Czechoslovak Legion",
@@ -63,5 +68,6 @@
     "russian-civil-war",
     "interwar-period"
   ],
+  "category": "war",
   "actors": []
 }

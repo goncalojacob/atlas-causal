@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "1975-spring-offensive",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "A9: no P625 of its own, so the place is its P276, South Vietnam, which the atlas held. A7 widened nothing: the cached lead at revision 1376882115 states no interval. Filed by the item's own P361, which names Q8740 alone. No P710, so `actors` is empty and a person writes it. A15(4)'s span-vs-article-title fires and was read, not acted on: the title says 1975 and the lead the summary quotes has the offensive open in December 1974, so the item's interval stands and the title is shorthand."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4821674",
+  "wikipedia": {
+    "en": "1975 spring offensive",
+    "pt": "Campanha Ho-Chi-Minh"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-29"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4821674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1975 spring offensive\", revision 1376882115"
+    }
+  ],
+  "title": "1975 spring offensive",
+  "summary": "The English Wikipedia article \"1975 spring offensive\", at revision 1376882115, opens: \"The 1975 spring offensive, officially known as the general offensive and uprising of spring 1975, was the final North Vietnamese campaign of the Vietnam War that led to the capitulation of South Vietnam. In December 1974, People's Army of Vietnam's (PAVN) forces crossed from their bases in Cambodia and captured Phước Long Province by January 1975. After this success, the North Vietnamese leadership increased the scope of the PAVN offensive and attacked the Central Highlands from Cambodia in March, capturing the city of Buôn Ma Thuột on 18 March. These operations were intended to be preparatory to launching a general offensive in 1976.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4821674, imported by tools/import/wikidata.mjs. The item's own description reads \"1975 the final North Vietnamese campaign in the Vietnam War that led to the capitulation of South Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1974,
+    "end": 1975,
+    "date": "1974-12-13",
+    "endDate": "1975-04-30"
+  },
+  "place": "south-vietnam",
+  "region": null,
+  "regionNote": null,
+  "parent": "vietnam-war",
+  "category": "war",
+  "actors": []
+}
