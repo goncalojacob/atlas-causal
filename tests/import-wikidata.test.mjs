@@ -77,7 +77,15 @@ async function fixtureFetcher(options = {}) {
       return { entities: Object.fromEntries(ids.map((id) => [id, all[id] ?? { id, missing: '' }])) };
     }
     if (url.includes('wbsearchentities')) return search;
-    if (url.includes('/api/rest_v1/page/summary/')) return summary;
+    // The real endpoint answers with the article it landed on, which is how
+    // A15 (8) is asked at all (leadIsRedirect). One fixture body served under
+    // whatever title was requested is that behaviour for every article that is
+    // not a redirect, which is every article here; a redirect is a `summary`
+    // override in the test that wants one.
+    if (url.includes('/api/rest_v1/page/summary/')) {
+      const asked = decodeURIComponent(url.split('/summary/')[1] ?? '').replaceAll('_', ' ');
+      return options.summary ?? (asked ? { ...summary, title: asked } : summary);
+    }
     if (url.includes('sparql')) return sparql;
     throw new HttpError(404, url);
   };

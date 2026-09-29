@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-guatemala--battle-of-acajutla--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    }
+  ],
+  "from": "spanish-conquest-of-guatemala",
+  "to": "battle-of-acajutla",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The same paragraph carries the second half of how Alvarado got to Acajutla, and it is the allies and not only the road: \"After subduing the highland Mayan city-states of present-day Guatemala through battle and co-optation, the Spanish sought to extend their dominion to the lower Atlantic region of the Nahuat-speaking people whom his translators called 'Pipils,' then organized as the powerful state of Cuzcatlán. The Kaqchikel Mayans, who had long been rivals of Cuzcatlán for control over their wealthy cacao-producing region, joined forces with Alvarado's men and supported his campaign. Accompanied by thousands of Kaqchikel warriors, Alvarado then marched on Cuzcatlán.\" Enabled: the Guatemalan campaign is what gave the march its base and the Kaqchikel who made it an army, which is more than the order in which the two happened.",
+  "dispute": null
+}
