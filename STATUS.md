@@ -22362,6 +22362,38 @@ component **unmoved at 714**; **Asia's eighteenth century 9 → 13** and Asia be
 `Q207318` has **140** `P361` children, not five, and what limits their import is
 A15(1) and not supply. `docs/m42b-pool.md` → "Batch 40" is the full account.
 
+**M42b batch 41 — the French invasion of Egypt and Syria, 29 September.** The
+same fire's third batch, and the one aimed at **the thinnest cell in the atlas**:
+Africa before 1800, three active events in four centuries of a continent.
+`Q253684` has **twenty** `P361` children dated before 1800 and **nineteen of
+them name it and nothing else**, so with the campaign unheld every one would
+have arrived as a main event; its own `P361` names two items the atlas does not
+hold, so the tool left it parentless. The move is batch 40's again and A8's
+words: **filed by hand under `french-revolutionary-wars`**, whose span
+(1792–1802) contains 1798–1801 whole, with no date invented. **One umbrella
+unlocks twenty records at no cost in main events.** Six taken here — the capture
+of Alexandria, Shubra Khit, the Pyramids, the Nile and the revolt of Cairo, with
+five places — and **six edges**, five of them the Egyptian chain the articles
+narrate. **The sixth is the batch**: `french-invasion-of-egypt-and-syria` →
+`macau-incident-1799`, `enabled`, on the Macau article's own *"Rainier, whose
+forces were largely committed to the Red Sea following the recent French
+invasion of Egypt"* — the edge batch 40 had refused three hours earlier under
+A15(5) because the third event its quote named was not yet here, now written
+from that event exactly as the amendment requires. Two candidates left with
+their reasons, and one of them is **deviation 1342**: `Q20036669` carries a
+coordinate in the Indian Ocean and a sitelink to a Quasi-War action in the
+Caribbean, two different battles of 9 February 1799 merged into one item, which
+only reading the article finds. The corpus goes **1,292 → 1,298 active**, edges
+1,064 → **1,070**, main **235**, the largest component **unmoved at 714**;
+**Africa before 1800 3 → 9** and Africa's eighteenth century 1 → **7**.
+**A15(11) scored 0 of 6 and the batch's best edge is why the metric is wrong**:
+an edge from Egypt to the South China Sea counts as not crossing because one
+umbrella is wide enough to hold both ends — the mirror of batch 38's three
+crossings that reached nowhere. **C8's third shape, and the clearest**: the
+campaign is in a component of three with Macau and the Bali Strait, while the
+five battles it is the umbrella of are a component of five, because A14 forbids
+exactly those five edges. `docs/m42b-pool.md` → "Batch 41" is the full account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
