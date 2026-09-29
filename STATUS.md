@@ -22726,7 +22726,9 @@ all**: `validate --index` is clean at 12,967 records, 0 errors, 730 warnings,
 the same 730 the branch was cut on.
 
 The suite: **2,190 tests, none skipped** (1,877 pure, 313 in a browser run one
-at a time, the way the check runs them), against M88's 2,151.
+at a time, the way the check runs them), against M88's 2,151. The check is
+green on the head of this branch — run 1952, 7bd5060d, success — after one red
+on the `M89 done` commit which was deviation 1432 and a test, not the page.
 
 What the brief offered as the second half of §5 — stretching the timeline's axis
 by density, "as a second commit if it is done" — is not in this branch. The
