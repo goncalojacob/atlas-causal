@@ -12048,3 +12048,173 @@ the pair of sources this record has neither of. **The fix is one line in
 says so in `how`; the call site passes `elsewhere[0].point` as `ownPoint`, which
 is what loses that. A records batch can correct the note; the tool is a
 different lane's commit.
+
+## Where the run stands, for the fire that picks it up
+
+*29 September, after the fortieth fire: one batch, 47, two events, three
+edges, and the largest component moved by four for the second fire running.*
+
+| | |
+| --- | --- |
+| corpus | **1,329 active** (1,322 at the end of the previous fire; 1,327 when this one had merged `origin/m42`) |
+| **main** | **235** — unchanged by this batch, as by the nine before it |
+| **largest connected component** | **739** (735 before the batch) — **moved by four on three edges** |
+| components | 408 (409 before) |
+| events with no edge at all | 319 |
+| edges crossing an umbrella | **574 of 1,106** over the corpus; **1 of 3** in this batch, and it is the one that moved the component by more than its own record |
+| Europe before 1900 | **219 active** — paused by A15(1), untouched this fire |
+| the `americas` lane | **359 active, 56 main** (358 before) |
+| **Africa before 1800** | **17 active, 0 main** (16 before) |
+| **Asia before 1800** | **21 active, 0 main** — untouched this fire |
+| Africa, all centuries | 204 active — A15(1)'s gate on Europe is 303 |
+| Asia, all centuries | 211 active — likewise |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 46 / 5 |
+| 1600s | 109 / 3 | **3 / 0** | 4 / 0 | **70 / 7** |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 18 / 1 | 7 / 7 | 56 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 41 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| **all** | **555 / 85** | **204 / 31** | **211 / 63** | **359 / 56** |
+
+**A15 (1)'s gate is still shut**: africa 204 and asia 211 against A10's 303,
+and nothing of Europe before 1900 until both reach it.
+
+### What this fire did
+
+Took the claim (the last one three hours stale, the last push to `m42b` two
+hours old, so no live run), merged `origin/m42` up to its batch 69 — keeping
+both sides of `STATUS.md`, union-merging the seeds' item list, the import
+cursor and the title cache, taking `origin/m42`'s side of the generated
+`sources.html`, and dropping and rebuilding `data/index/` — and then **one
+batch, 47**: two events, no new place, three edges, one deviation (1353), the
+main count unmoved at 235 and the largest component 735 → 739.
+
+**The batch's own lesson is in its third edge.** Two stranded records can be
+worth more than two imported ones: `first-battle-of-guararapes` and
+`second-battle-of-guararapes` had been a component of two since they were
+imported, and one edge from a new record that is *not* their parent brought
+both into the largest component along with itself. A fire looking for the
+component to move should read the component list, not only the century table:
+the 407 components that are not the largest hold **590 events** between them,
+and they are **319 singletons, 62 pairs and 26 of three or more**. Every one of
+those 62 pairs is two events an edge already joins, waiting on one sourced edge
+to a third — the cheapest connectivity this corpus has left.
+
+### The next fire's moves, in order
+
+1. **The Mozambique pair is one record away and the record is not European.**
+   The 1608 siege's own article says *"Peace negotiations had begun in 1607 …
+   hence the directors of the VOC dispatched a number of ships east tasked with
+   capturing as many Portuguese territories as possible before the Twelve Years
+   Truce was signed"* — the Truce is Europe before 1900 and A15 (1) will not let
+   this lane take it — but the 1607 siege's article names a second antecedent
+   that is **not** Europe: *"Ever since the capture of the carrack Santa
+   Catarina in 1603 by the Dutch East India Company however, Portugal … was at
+   war with the Dutch Republic. The directors of the Dutch VOC sought to capture
+   Mozambique in order to sever Portuguese communications with Asia."* The
+   seizure happened in the Singapore Strait, which is the `asia` lane and this
+   lane's partition, and the atlas holds no event for it under any name. **One
+   import opens both sieges and gives the `asia` seventeenth century a fifth
+   event.** Check it for A15 (8) first: the item may point at *Santa Catarina
+   (carrack)* rather than at the seizure.
+2. **The Kongo chain of four is the largest single opportunity in `africa`
+   before 1800, and it is blocked on one decision, not on sources.**
+   `Q4871703` (Mbumbi, 1622), `Q30674439` (Mbanda Kasi, 1623), `Q1752752`
+   (Mbwila, 1665) and `Q4871456` (Kitombo, 1670) have English articles, classes
+   the table knows, and **three stated causes among them**. What they have not
+   got is an umbrella this atlas holds: theirs are `Q132776772` (Angolan Wars,
+   1579–1683) and `Q6429210` (Kongo Civil War, 1665–1709). Writing either
+   would raise the main count by one and the brief says it must not rise.
+   **This is a question for the owner and a narrow one**: may a batch spend one
+   main event on a regional umbrella a trailing lane has none of, when four
+   filed children arrive with it? A6 asked for exactly such period umbrellas
+   and A3's ceiling is what stops it.
+3. **`Q139022658` (battle of Kavanga, March 1646) is the pair for Kombi**, and
+   Kombi's article states the cause in so many words. The pair still needs one
+   outward edge; Kavanga's `P361` is the Angolan Wars, so move 2 decides it too.
+4. **`Q121853652` (battle of Elmina, 1781) is clean and waiting on the Fourth
+   Anglo-Dutch War** (`Q576292`), which is the only event its article names as a
+   cause. That war is European but its span is 1780–1784, so A15 (1)'s *before
+   1900* clause bars it; it is the clearest case yet of the balance clause and
+   the connectivity clause pointing opposite ways, and it belongs in the same
+   question as move 2.
+5. **The `americas` lane's unqueried veins are unchanged** from batch 45's
+   note: `spanish-american-wars-of-independence` (`Q1123201`, held, 1808–1833),
+   the `P527`/`P361` trees under `american-indian-wars` (`Q849680`, held,
+   1609–1924), and the Portuguese side of the Atlantic, which still no fire has
+   queried.
+6. **Merge the other lane and rebuild in two commits, not one** (deviation 798,
+   batch 45's note, and this fire got it wrong again — see the check below).
+   The merge commit must not carry the index it merged: the history shards are
+   read off the repository's own commits, so an index built before the merge
+   commit exists is never byte-identical at it.
+7. **Fetch through Node's own `fetch` and not `curl`** (deviation 1350), at a
+   pace of 400 ms. This fire made about thirty Wikidata and Wikipedia requests
+   that way and was never once rate-limited.
+8. **Still open, unchanged**: C8, deviation 1323, deviation 1345 (the M76 drag
+   test), deviation 1346's ocean islands, deviation 1348's lane guard, the new
+   deviation 1353, question 11 (the Nine Years' War, `Q152218`), `Q718893`
+   *theater of war*, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine
+   atlas umbrellas with no `wikidata` (`--reconcile` has still never been run by
+   this lane), and the place pass on records that already exist, which is
+   M42's.
+
+### The tests, on this fire's head
+
+**1,915 pure and 313 browser, 2,228 tests**, on the final head after the index
+rebuild. `node tools/validate.mjs --index` is clean at **0 errors, 620
+warnings**, byte-identical to a fresh build.
+
+**The pure half is 1,915 of 1,915, nothing skipped.** Its first run of this
+fire reported one failure and its second, on the same tree with no file
+changed between them, reported none; the transcript of the first was truncated
+before the failing subtest and the suite cannot say which it was. That is worth
+recording as what it is — **an unidentified intermittent, not a clean pass
+twice** — and the runner's own answer on this head is what settles it.
+
+**The browser half is 312 of 313 here and the one loss is deviation 1345's
+signature again.** `tests/lens-browser.test.mjs` 50, *"reading a narrative
+draws the walk, its neighbours dimmed, and nothing else"*, failed in the full
+sequential run with `map drew wiriyamu-massacre-1972 off the screen`, and the
+same suite run by itself is **13 of 13**. Nothing in this batch touches that
+record, any narrative, or the camera: it is a suite short of a core, which
+docs/m63-load.md described and deviation 1345 reported from the other side.
+Two fires have now seen it drop a *different* test each time — batch 46 saw
+two from `tests/graph-labels-browser.test.mjs` — which is the fault's
+fingerprint and not a fault in what the test is about.
+
+**The stale-lead list did not grow.** A15 (2)'s recache is the batch's last
+step and it ran: **2,730 `wikipedia-en` citations on active records, 0 at a
+revision that should be on disk and is not.** The two revisions this batch's
+edges cite were already on disk, because both are revisions the atlas already
+cited.
+
+### The check, on this fire's heads
+
+**Run 2049 on `ee3578bd`, this fire's final head, completed `success`** —
+`Validate records`, the pure half and the browser half, all three. That is the
+head that matters and it carries everything: the `origin/m42` merge, batch 47's
+records, the index rebuilt on top of them, and this section's own batch note.
+It also answers both of the local doubts above: **the pure half's unidentified
+intermittent did not recur on the runner, and `tests/lens-browser.test.mjs` 50
+passed there**, which is deviation 1345's signature confirmed from the other
+side.
+
+**Run 2045 on the merge commit `9590ec92` failed, and the fault was this
+fire's.** The merge of `origin/m42` and the rebuild of `data/index/` went into
+**one commit**, and they cannot: the history shards under
+`data/index/history-*` are read off the repository's own commits, so an index
+built before the merge commit exists can never be byte-identical at it, and
+rule 16 says so. Batch 45's note asked for two commits and batch 46's fire did
+it in two; this one did not, and paid a red run for it. The browser half of
+that same run was **313 of 313**, so nothing about the merged corpus was wrong
+— only the index inside the commit that merged it. Runs 2044, 2047 and 2048
+were cancelled as each push superseded the last, which is ordinary.
+
+**The remedy for the next fire is move 6 above**, and it is worth saying as a
+rule rather than as a note: **`git merge` and `node tools/build-index.mjs` are
+never the same commit.**
