@@ -22200,6 +22200,64 @@ Wikipedia disowning the item's `P276`, and its infobox says the opposite
 (**deviation 1253**). `docs/m42b-pool.md` → "Batch 19" and "Batch 20" are the
 full account.
 
+**M42b batch 37 — the Dutch–Portuguese War in Africa and Asia, 29 September.**
+The thirty-fifth fire on this branch, and the first since 25 September: **no
+commit was made on `m42b` for three days**, which the gate and the claim rule
+handled correctly and which no rule in the repository can fix. It merged
+`origin/m0` (four commits, with the third review, **amendment A15** and the
+M88/M89 briefs) and `origin/m42` (seventeen, including the corrected import
+rules its own passes wrote); the `m0` merge was clean and the `m42` one
+conflicted in `STATUS.md`, the seeds' class table, `docs/m53-polities.md` §4.1
+and 270 index files — both sides kept for the first two, `origin/m42`'s for the
+third, and the index dropped and rebuilt. **A15(1) changes what this lane is**:
+Europe before 1900 is paused until Africa and Asia each hold 303 active events
+(they hold 184 and 185), and in its place this lane takes **Africa and Asia
+before 1800**, which held **nothing and one event**. The batch is there. Eight
+`P361` children of the held `dutch-portuguese-war` were read and **four were
+kept, four left with their reasons, because A15(1) imports only the children a
+batch can connect with an edge**: the two sieges of Malacca (1606 and
+1640–1641) and the two battles of Elmina (1625 and 1637), with the places
+`malacca-city` and `elmina`. **The main count does not move: 235 before and 235
+after**, and the 322 events with no edge at all is also unchanged, which is what
+A15(1) is for. **Three edges**, each with its locator at a revision, none from a
+parent to its own child (A14): the two Malacca sieges and the two Elmina
+battles as the patterns of failed attempts their own articles call the roots of
+the later capture, and `dutch-brazil-1630-1654` → `battle-of-elmina-1637`
+`enabled`, on the sentence that opens the 1637 article — *"the Dutch West India
+Company detached nine ships from the forces attacking the Portuguese in Brazil"*.
+The largest component goes 708 → **710** and the corpus **1,273 → 1,277 active**;
+Africa before 1800 is **2** and Asia before 1800 **3**. **A15(11)'s number is
+zero and zero is all this shape of batch can give**: every endpoint is a child of
+the one umbrella, and the honest attempt at a crossing edge — the slave-trade
+claim that would have joined the 1637 capture to the parentless
+`the-atlantic-slave-trade-to-brazil` — was refused because "History of Elmina"
+says the opposite. **A15(3) was applied to the tool and not only to the
+records**: `placeRecord()` now writes `summary: null`, the assertion written
+first. **A15(8) caught one record in the act** — `action-of-2-may-1654`'s
+English sitelink resolves to the war's own article, and the war's lead had been
+written as the record's summary — and it is among the four left. **A15(2) has a
+test now**, `tests/leadcache.test.mjs` over the pure `tools/lib/leadcache.mjs`,
+written before the pass it judges, naming the 21 records the third review left
+disagreeing as a subset that may shrink and may never grow. `validate --index`
+clean at 0 errors, its exit status read and not a pipe's. Deviations **1336 to
+1339**; 1339 is that §4.1 of `docs/m53-polities.md` is one row both lanes write,
+which is why that file conflicted this morning and why `origin/m42`'s run 1917
+was red. **Two browser tests are red on this head and neither is this batch's**:
+a resting title 30 px past the timeline's right edge
+(`"The depopulation of indigenous Brazil"`, `tests/m86-browser.test.mjs`) and two
+map labels overlapping (`"Pamplona"` and `"PYRENEES"`,
+`tests/map-browser.test.mjs`). Bisected rather than assumed: both are green at
+this branch's own claim commit and after `origin/m0`'s docs-only merge, and both
+go red at `origin/m42`'s merge, with the identical pixel numbers at the
+pre-batch head — the first because M42's A6 pass changed the main set and so the
+row packing, the second because its A9 pass placed two Pamplona battles and the
+city label now collides with the physical one, which `src/map/labels.js` is
+supposed to prevent. **Both are display and this brief's first prohibition is a
+display change**, and there is no data-side fix that is not a lie: nothing
+contains a span of 1500–1997, and the atlas is right to hold Pamplona. They are
+lane A's and M42's, whose own check is red for the same pair.
+`docs/m42b-pool.md` → "Batch 37" is the full account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review

@@ -252,7 +252,7 @@ thirty-five of them carrying `actors: []`.
 | **after M57** | 36 of 36 | 254 of 304 |
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
-| **after M42** | 36 of 36 | 404 of 1260 |
+| **after M42** | 36 of 36 | 404 of 1277 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
@@ -327,7 +327,12 @@ Empire of Japan and the Russian Empire in its `P710` and this atlas holds an
 actor for each — takes it to **379 of 841**; and M42b's batch 16, six engagements of the Rebellion of
 Túpac Amaru II of which not one item carries a `P710` the atlas holds,
 takes it to **379 of 847**: the count is of the corpus
-and not of a branch. The numerator has not moved since
+and not of a branch. The fires after that one stopped extending this sentence and
+re-took the row alone, which is why the numbers here stop at 847 and the row says
+1,277; M42b's batch 37 — the four engagements of the Dutch–Portuguese War in
+Africa and Asia it kept, none of whose items carries a `P710` this atlas holds —
+is the move from **404 of 1,273** to **404 of 1,277**, and the numerator is again
+where it was. The numerator has not moved since
 M67 and will not move by importing: every record the Wikidata sweep creates
 carries `actors: []`, because the import writes identity and never an actor
 line, and M67 A1 settled that an event with no actor and no place is not a
