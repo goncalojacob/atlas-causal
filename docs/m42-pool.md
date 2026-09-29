@@ -15790,3 +15790,20 @@ instead of the last one.***
 - **Deviation numbers: take the next above 1469.** This fire wrote **1468** (the
   screen's threshold was not the constraint) and **1469** (the record it created
   and removed).
+
+**The check is green on the head this stand was written against.** Run **2031**
+of `validate.yml`, commit `54737670`, conclusion **`success`** — records
+validated, both suites run the way the check runs them, and the index held
+byte-identical to a fresh build. Runs 2022 and 2025 were cancelled by the next
+push, which is deviation 1258's chain and costs nothing. **Runs 2024 and 2026
+concluded `failure` and both are this fire's own work, not flakes**: 2024 is the
+`french-conquest-of-tunisia` commit, which failed the seven tests deviation 1469
+names, and 2026 is the head before `docs/m67-umbrellas.md` carried the paragraph
+`battle-of-vaal-krantz`'s bareness owes — one test, *"a child that names neither
+is one the measurement argues for"*, and it is a correspondence test doing exactly
+its job. Both are superseded on the branch and the head is green.
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. No test was added: the two deviations are a screen
+and a refusal, and neither is code.
