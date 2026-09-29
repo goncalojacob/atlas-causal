@@ -10394,6 +10394,139 @@ campaign. **A crossing count is worth reading only next to the filing it is
 measured against**, which is the point batch 38's section made from the other
 side.
 
+## Batch 40 — the East Indies theatre, and the umbrella that cost one European record
+
+The **first** of the moves the previous fire named, and the one it had already
+measured the obstacle for: the five African and Asian candidates behind
+`Q207318`, the French Revolutionary Wars, sit at depth two behind an item this
+atlas does not hold, and `Q207318`'s own `P361` is `french-revolution`, which
+the atlas dates 1789–1799 while the wars run to 1802. The previous fire read
+that as a rule-24 refusal and it was right — the tool said so in as many words:
+
+```
+created event french-revolutionary-wars from Q207318 — summary from the lead; place europe
+not filed Q6534 under french-revolution: the child is not dated inside it (rule 24)
+```
+
+### The umbrella, filed by hand, and what it costs
+
+`french-revolutionary-wars` was filed under **`atlantic-revolutions`** (1765–1838,
+held, and already `french-revolution`'s own parent), which is A8's own words —
+every umbrella whose span and subject fit — with `filed-by-span-and-subject`.
+`french-revolution` was **not** widened to make the item's own `P361` work: the
+wars outlast the Revolution by three years and that is a fact about the wars, not
+a fault in the record.
+
+**It costs one European event and the batch says so rather than burying it.**
+`Q207318` has no coordinate of its own, its `P276` is Europe, and its lane is
+therefore `europe`: Europe's eighteenth century goes 61 → 62 and Europe before
+1900 goes 257 → **258**, against a clause (A15(1)) that pauses this lane's work
+on Europe. What is imported *as* Europe here is a filing device for four Asian
+records and nothing else — it carries no edge, and the four children it holds
+are the batch. A fire that wanted the Asian half of the French Revolutionary
+Wars had no other way in that does not either invent a date or file a naval
+action off Macau under "Atlantic revolutions".
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `french-revolutionary-wars` | 20 Apr 1792 – 25 Mar 1802 | **europe** | `europe` | `atlantic-revolutions` (by hand) |
+| `siege-of-pondicherry-1793` | 1–23 Aug 1793 | asia | `pondicherry` | `french-revolutionary-wars` |
+| `sunda-strait-campaign-of-january-1794` | 2 Jan – 9 Feb 1794 | asia | `sunda-strait` | `french-revolutionary-wars` |
+| `bali-strait-incident` | 28 Jan 1797 | asia | `bali-strait` | `french-revolutionary-wars` |
+| `macau-incident-1799` | 27 Jan 1799 | asia | `wanshan-archipelago` | `french-revolutionary-wars` |
+
+**Three place records**, all `summary: null` by A15(3): `sunda-strait` and
+`bali-strait` (`region`, from their own points) and `wanshan-archipelago`
+(`region`). The fourth, `pondicherry`, batch 38 had already written.
+
+**One class row, read off the class item and not guessed** (deviation 1266):
+`Q1402592` *island group* — "collection of islands, excluding neighbouring
+water" — as `place` / `region`, because a group of islands is an area and not a
+point. Without it the tool refused the Macau Incident's place outright
+(*"no place from Q211508: none of its classes (Q1402592) is in
+data/imports/wikidata-seeds.json → classes"*), and with it the record gets the
+Wanshan Qundao, whose own point is 7 km from the event's.
+
+### The two edges
+
+| edge | type | crosses an umbrella | what carries it |
+| --- | --- | --- | --- |
+| `siege-of-pondicherry-1793` → `sunda-strait-campaign-of-january-1794` | `enabled` | no | a stated mechanism |
+| `bali-strait-incident` → `macau-incident-1799` | `precondition-of` | no | two attempts on one convoy |
+
+The first is the best-carried edge either of the two batches in this fire wrote.
+The Sunda Strait article's own background: *"Most fell within a few days, but the
+major port of Pondicherry refused, and was besieged from 1 August … **With the
+French presence eliminated from India, Cornwallis was ordered to return to
+Europe, leaving minimal naval forces in the Indian Ocean.**"* — and its lead
+completes it: *"The Royal Navy forces in the Indian Ocean were deployed elsewhere
+and so the East India Company … raised a squadron of armed merchant ships to
+patrol the Strait."* The fall of Pondicherry is why the Royal Navy left, and the
+campaign was fought by armed merchantmen because it had.
+
+The second stands on batch 38's footing and the explanation says exactly how far
+it goes: the Macau article calls itself *"the second such attempt in three
+years"* and names the Bali Strait incident as the first, two attempts by one
+admiral's squadron on one annual convoy. **It does not say the first produced the
+second, and the edge does not say so either.**
+
+**Nothing from a parent to its own child (A14)**, which here rules out the four
+obvious edges — `french-revolutionary-wars` to each of its children.
+
+### What was left, and A15(5) refusing one of them
+
+| left | Q | why |
+| --- | --- | --- |
+| `Q20050713`, the raid on Manila of January 1798 | — | **A15(5).** It was imported and then withdrawn from the batch. Its own aftermath is the only text that reaches the Macau Incident, and what it names as the cause is a third event: *"the majority of Rainier's forces were focused on disrupting the French occupation of Suez in the Red Sea. **This diversion of British resources created gaps in the coverage** … and Sercey was able to send the frigate Preneuse and corvette Brûle-Gueule to Manila."* The atlas holds no record for the French occupation of Suez, and A15(5) says an edge whose quote names a third event as the cause is written from that event or not at all. The Macau article's only mention of the raid is dating evidence — *"when British frigates raided Manila in January 1798 not one Spanish ship was in a condition to oppose them"* — which is not a cause either. Removed from the seeds' `items` and from the cursor's `done` (deviation 1329), so it is retryable the day the Egyptian campaign is here. |
+| `Q20639061`, the East Indies theatre of the French Revolutionary Wars | — | **Refused by the tool**: *"it has no P31 at all, so nothing says what kind of thing it is."* It would have been the right Asian umbrella for all four — the article is literally the narrative these four records are episodes of, and it is the source most of this batch's reading came from. Left in the seeds unlisted and out of the cursor, not worked around: a record whose kind nothing states is the case the class table exists to refuse. |
+
+### The numbers
+
+| | before 40 | after 40 |
+| --- | --- | --- |
+| active events | 1,287 | **1,292** |
+| **main** | **235** | **235** |
+| active edges | 1,062 | **1,064** |
+| largest connected component | 714 | **714** |
+| components | 407 | **410** |
+| events with no edge at all | 320 | **321** |
+| **edges crossing an umbrella, in the batch** | — | **0 of 2** |
+| edges crossing an umbrella, corpus | 566 of 1,062 | **566 of 1,064** |
+| Asia's 18th century | 9 / 0 | **13 / 0** |
+| Asia before 1800 | 12 / 0 | **16 / 0** |
+| Africa before 1800 | 3 / 0 | 3 / 0 |
+| Europe before 1900 | 257 / 18 | **258 / 18** — the umbrella, and nothing else |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 44 / 5 |
+| 1600s | 109 / 3 | 2 / 0 | 3 / 0 | 69 / 7 |
+| 1700s | **62 / 3** | 1 / 0 | **13 / 0** | 55 / 2 |
+| 1800s | 39 / 9 | 17 / 1 | 7 / 7 | 56 / 8 |
+| 1900s | 244 / 59 | 89 / 23 | 146 / 42 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 40 / 1 |
+| **all** | **554 / 84** | **185 / 31** | **198 / 64** | **355 / 56** |
+
+### The same C8 shape as batch 39, and the third time this fire has drawn it
+
+Five records, two edges, the largest component unmoved and one more isolated
+event than before. The batch made two components of two and left the umbrella a
+component of one, and the four bridges that would join all five into one run
+from `french-revolutionary-wars` to each of its children.
+
+**And the vein behind `Q207318` is far larger than the previous fire's note
+said.** The inverse `P361` query over it returns **140** children, not five: the
+Siege of Pondicherry of 1793, the Sunda Strait campaign, the Bali Strait
+incident and the Macau Incident were not on the fire of 29 September's list at
+all, and neither was `Q332543`'s neighbourhood in Egypt or the actions off
+southern Africa. What the list of five was, was the subset the 26-candidate
+query had surfaced; the umbrella's own children are a lane's worth of work. The
+constraint on spending it is not supply — it is A15(1), and every one of those
+140 has to state a cause naming something the atlas holds before it may come in.
+
 ## Where the run stands, for the fire that picks it up
 
 *29 September, after the thirty-fifth fire: three days of silence, A15 arrived,

@@ -22327,6 +22327,41 @@ a component of five — twenty of its children are held and every edge anyone wo
 write from it runs to one of them. `docs/m42b-pool.md` → "Batch 39" is the full
 account.
 
+**M42b batch 40 — the East Indies theatre, 29 September.** The same fire's
+second batch and the **first** of the moves the previous one named: the African
+and Asian candidates behind `Q207318`, the French Revolutionary Wars, which sit
+at depth two behind an item the atlas does not hold. The obstacle was as
+measured — the tool refused `french-revolution` as its parent under rule 24,
+because the wars outlast the Revolution by three years — and the way through was
+A8's: **`french-revolutionary-wars` is filed by hand under `atlantic-revolutions`**,
+whose span and subject fit, with no date invented anywhere. **It costs one
+European record and the pool file says so rather than burying it**: the umbrella
+has no coordinate, its lane is `europe`, and Europe before 1900 goes 257 → 258
+against a clause that pauses this lane's work there. It carries no edge; it is a
+filing device for four Asian records. **Five events and three places**:
+`siege-of-pondicherry-1793`, `sunda-strait-campaign-of-january-1794`,
+`bali-strait-incident` and `macau-incident-1799`, with `sunda-strait`,
+`bali-strait` and `wanshan-archipelago`. One class row read off the class item
+and not guessed (deviation 1266), `Q1402592` *island group* as `place`/`region`,
+without which the tool refused the Macau Incident's place outright. **Two edges**,
+neither crossing an umbrella (**0 of 2**): the fall of Pondicherry → the Sunda
+Strait campaign, `enabled`, on the later article's own *"With the French presence
+eliminated from India, Cornwallis was ordered to return to Europe, leaving
+minimal naval forces in the Indian Ocean"*; and the Bali Strait incident → the
+Macau Incident, `precondition-of`, on *"the second such attempt in three years"*,
+with the explanation saying plainly that the article does not claim the first
+produced the second. **A15(5) refused one candidate and the record was withdrawn
+after import**: the raid on Manila of 1798, whose only text reaching Macau names
+a third event — the French occupation of Suez — as the cause, and the atlas holds
+no record for it; it is out of the seeds and out of the cursor, retryable.
+`Q20639061`, the East Indies theatre itself, was refused by the tool for having
+no `P31` at all, and was not worked around. The corpus goes **1,287 → 1,292
+active**, edges 1,062 → **1,064**, main **235 before and after**, the largest
+component **unmoved at 714**; **Asia's eighteenth century 9 → 13** and Asia before
+1800 12 → **16**. **The vein is far larger than the note that pointed at it**:
+`Q207318` has **140** `P361` children, not five, and what limits their import is
+A15(1) and not supply. `docs/m42b-pool.md` → "Batch 40" is the full account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
