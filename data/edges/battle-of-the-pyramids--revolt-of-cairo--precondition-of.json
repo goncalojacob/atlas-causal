@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-pyramids--revolt-of-cairo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Pyramids\", revision 1371801221, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of Cairo\", revision 1371106483, § Revolt"
+    }
+  ],
+  "from": "battle-of-the-pyramids",
+  "to": "revolt-of-cairo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier article states the consequence and the later one what was revolted against. The Pyramids: “The victory opened the way to Cairo, where Napoleon established a new administration, though local uprisings soon followed.” The Revolt: “In 1798, Napoleon led the French Revolutionary Army's Army of the Orient in an invasion of Egypt, swiftly capturing and occupying Alexandria and Cairo. However, in October of that year, discontent against the French led to an uprising by the people of Cairo.” What the two together state is that the battle put the French administration into Cairo and the rising was against that administration; `precondition-of` rather than `caused`, because what the Revolt article names as the cause is the discontent, and the battle is what there was to be discontented with. Probable: Wikipedia alone.",
+  "dispute": null
+}

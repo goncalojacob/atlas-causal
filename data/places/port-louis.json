@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "port-louis",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place-by-hand"
+    ]
+  },
+  "wikidata": "Q3929",
+  "sitelinks": {
+    "count": 154,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Port Louis",
+    "pt": "Porto Luís"
+  },
+  "sources": [],
+  "names": [
+    "Port Louis",
+    "Porto Luís"
+  ],
+  "where": {
+    "lon": 57.498888888889,
+    "lat": -20.161944444444,
+    "precision": "city",
+    "label": "Port Louis"
+  },
+  "region": "africa",
+  "regionNote": "Mauritius falls outside every lane polygon of data/geo/regions.json, so the lane is written here as the override the model provides for somewhere no polygon reaches.",
+  "summary": null
+}

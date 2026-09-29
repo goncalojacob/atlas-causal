@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--insurrection-of-pernambuco--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-47"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843, § Immediate causes of the Insurrection"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "insurrection-of-pernambuco",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article names the cause in the section it gives that name to: “In the northeast of Brazil, the sugar cane mills, which were struggling in a year of plagues and drought, began to face pressure from the West India Company, responsible for collecting debts and confiscating the mills of defaulting farmers. This situation led to the outbreak of the Insurrection of Pernambuco, culminating in the extinction of Dutch rule in Brazil.” The West India Company’s government of the captaincy is what this atlas holds as `dutch-brazil-1630-1654`, and the article makes its debt collection the reason the mill owners rose. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

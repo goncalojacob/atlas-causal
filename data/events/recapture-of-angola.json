@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "recapture-of-angola",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-by-span-and-subject"
+    ],
+    "note": "Filed under dutch-portuguese-war by span and subject (M62): 12 July to 15 August 1648 is inside 1601-1661, and the article's own first sentence calls it “a military campaign fought between the Portuguese and the Dutch occupiers of Angola”, at revision 1370706489. The item's own P361 is Q138011120, the South Atlantic campaign, which this atlas does not hold."
+  },
+  "wikidata": "Q7302285",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Recapture of Angola",
+    "pt": "Reconquista de Angola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7302285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
+    }
+  ],
+  "title": "Recapture of Angola",
+  "summary": "The English Wikipedia article \"Recapture of Angola\", at revision 1370706489, opens: \"The Recapture of Angola, or Reconquest of Angola, was a military campaign fought between the Portuguese and the Dutch occupiers of Angola. Its most important episode was the siege imposed by the Portuguese on the larger Dutch garrison of Luanda.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7302285, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese siege on Dutch-controlled Luanda\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1648,
+    "date": "1648-07-12",
+    "endDate": "1648-08-15"
+  },
+  "place": "luanda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

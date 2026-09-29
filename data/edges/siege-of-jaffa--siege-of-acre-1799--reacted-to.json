@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-jaffa--siege-of-acre-1799--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jaffa\", revision 1371106198"
+    }
+  ],
+  "from": "siege-of-jaffa",
+  "to": "siege-of-acre-1799",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Jaffa's Aftermath says what the sack was meant to do and what it did instead: \"Napoleon allowed hundreds of local citizens to leave the city and hoped that the news they would carry of the sack of Jaffa would intimidate the defenders of the other cities in Syria and cause them to surrender or flee. In fact, it had mixed results and backfired when French troops attacked Acre since the news of the Jaffa massacre made Acre's defenders fight all the more fiercely.\" Reacted-to and not caused: the siege of Acre was the next object of a march already under way, so Jaffa did not bring it about — what the article claims Jaffa caused is the temper of the defence, which is how Acre answered it.",
+  "dispute": null
+}

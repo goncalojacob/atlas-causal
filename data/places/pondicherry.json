@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "pondicherry",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q639421",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Pondicherry"
+  },
+  "sources": [],
+  "names": [
+    "Pondicherry"
+  ],
+  "where": {
+    "lon": 79.83,
+    "lat": 11.93,
+    "precision": "city",
+    "label": "Pondicherry"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

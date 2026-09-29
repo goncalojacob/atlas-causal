@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-malacca-1606--battle-of-cape-rachado--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1606)\", revision 1370743201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape Rachado\", revision 1370436218"
+    }
+  ],
+  "from": "siege-of-malacca-1606",
+  "to": "battle-of-cape-rachado",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The battle is what the siege turned into when the relief fleet reached Malacca. Cape Rachado's article states the mechanism: \"The Dutch maintained the siege for a time and the situation started to get worse for the Portuguese until 14 August 1606 when a Portuguese fleet from Goa arrived. Led by the Viceroy of Goa, Dom Martim Afonso de Castro, the siege was lifted when the 20-odd ships began to engage the VOC fleet off the Malaccan coast. The two fleets exchanged cannon fire and the Portuguese ships began to move northward, drawing the Dutch away from Malacca. On 16 August 1606 a battle between the two fleets took place off the Portuguese controlled Cape Rachado.\" The siege article says the same from the Portuguese side: \"The small Portuguese garrison managed to hold out and stop any Dutch direct attacks on the city until additional reinforcements led by Martim Afonso de Castro arrived, which caused the Dutch to retreat from the siege.\" Caused rather than precondition-of: it is not that the siege happened to come first, but that Matelief's fleet was off Malacca because of the siege and was drawn north by the fleet sent to lift it. Probable, because one encyclopedia is one author, and the article's own authorities (Borschberg, De Witt) are not read here.",
+  "dispute": null
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-the-aztec-empire--battle-of-acajutla--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    }
+  ],
+  "from": "spanish-conquest-of-the-aztec-empire",
+  "to": "battle-of-acajutla",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article opens its antecedents with the commission and where it came from: \"Hernán Cortés, after conquering the city of Tenochtitlan, capital of the Aztec empire, delegated the conquest of the territories southward to his lieutenant Pedro de Alvarado, who set out with 120 horsemen, 300 foot soldiers, and several hundred Cholula and Tlaxcala auxiliaries.\" Enabled and not caused: the fall of Tenochtitlan is what put a Spanish commander, his men and his Cholula and Tlaxcala auxiliaries on the road south at all, and the article claims nothing more for it than that — the fight at Acajutla is Alvarado's and the Pipils'.",
+  "dispute": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-shubra-khit",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888305",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Shubra Khit",
+    "pt": "Batalha de Shubra Khit"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888305"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shubra Khit\", revision 1371091764"
+    }
+  ],
+  "title": "Battle of Shubra Khit",
+  "summary": "The English Wikipedia article \"Battle of Shubra Khit\", at revision 1371091764, opens: \"The Battle of Shubra Khit was the second major engagement of the French invasion of Egypt and Syria and took place on 13 July 1798. On their march to Cairo, the French army encountered an Ottoman army consisting of Mamluk cavalry and drafted Fellahins under Murad Bey. Napoleon lined his forces up into infantry squares, a tactic which helped repel the Mamluk cavalry, largely due to their inability to penetrate them without suffering severe casualties. A naval battle also occurred, with an Ottoman flotilla being repelled by a French flotilla.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888305, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 battle during the French Invasion of Egypt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-07-13"
+  },
+  "place": "shubra-khit",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

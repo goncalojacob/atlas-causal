@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-jaffa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3178783",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Jaffa",
+    "pt": "Cerco de Jafa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3178783"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jaffa\", revision 1371106198"
+    }
+  ],
+  "title": "Siege of Jaffa",
+  "summary": "The English Wikipedia article \"Siege of Jaffa\", at revision 1371106198, opens: \"The siege of Jaffa was a military engagement between the French Army under Napoleon Bonaparte and Ottoman forces under Ahmed al-Jazzar. On March 3, 1799, the French laid siege to the city of Jaffa, which was under Ottoman control. It was fought from March 3 to 7, when French forces managed to capture the city. For the pillaging of the city, the murder of its civilian population and the execution of 4,100 Ottoman prisoners of war, the siege has been called \"one of the most tragic episodes of [Napoleon's] Egyptian campaign\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3178783, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 battle between Napoleonic France and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-03-03",
+    "endDate": "1799-03-07"
+  },
+  "place": "jaffa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "abu-qir",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place-by-hand"
+    ]
+  },
+  "wikidata": "Q139773",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Abu Qir",
+    "pt": "Abuquir"
+  },
+  "sources": [],
+  "names": [
+    "Abu Qir",
+    "Abuquir",
+    "Aboukir"
+  ],
+  "where": {
+    "lon": 30.066666666667,
+    "lat": 31.316666666667,
+    "precision": "city",
+    "label": "Abu Qir"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

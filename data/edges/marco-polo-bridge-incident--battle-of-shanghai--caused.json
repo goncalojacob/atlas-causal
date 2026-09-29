@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "marco-polo-bridge-incident--battle-of-shanghai--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-69"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § Consequences"
+    }
+  ],
+  "from": "marco-polo-bridge-incident",
+  "to": "battle-of-shanghai",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The earlier record’s own cited article says it in its § Consequences: \"The heightened tensions of the Marco Polo Bridge incident led directly to full-scale war between the Empire of Japan and the Republic of China, with the Battle of Beiping-Tianjin at the end of July and the Battle of Shanghai in August.\" The article names the battle as one of the two engagements the incident led directly to, five weeks after it. `caused` and not `precondition-of`: \"led directly to\" is a mechanism the article states and not a position it describes. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

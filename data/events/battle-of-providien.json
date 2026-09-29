@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-providien",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2601189",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Providien"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2601189"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Providien\", revision 1370586674"
+    }
+  ],
+  "title": "Battle of Providien",
+  "summary": "The English Wikipedia article \"Battle of Providien\", at revision 1370586674, opens: \"The Battle of Providien was the second in a series of naval battles fought between a British fleet, under Vice-Admiral Sir Edward Hughes, and a French fleet, under the Bailli de Suffren, off the coast of India during the Anglo-French War. The battle was fought on 12 April 1782 off the east coast of Ceylon, near a rocky islet called Providien, south of Trincomalee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2601189, imported by tools/import/wikidata.mjs. The item's own description reads \"1782 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1782,
+    "end": 1782,
+    "date": "1782-04-12"
+  },
+  "place": "trincomalee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
