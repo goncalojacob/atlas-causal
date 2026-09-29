@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "concepcion-chile",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1880",
+  "wikipedia": {
+    "en": "Concepción, Chile",
+    "pt": "Concepción (Chile)"
+  },
+  "sitelinks": {
+    "count": 214,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Concepción",
+    "Concepción, Chile",
+    "Concepción (Chile)"
+  ],
+  "where": {
+    "lon": -73.05027777777778,
+    "lat": -36.82694444444444,
+    "precision": "city",
+    "label": "Concepción, Chile"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

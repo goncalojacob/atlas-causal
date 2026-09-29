@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "eger",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q167109",
+  "wikipedia": {
+    "en": "Eger",
+    "pt": "Eger"
+  },
+  "sitelinks": {
+    "count": 81,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Eger"
+  ],
+  "where": {
+    "lon": 20.374722222222,
+    "lat": 47.898888888889,
+    "precision": "city",
+    "label": "Eger"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
