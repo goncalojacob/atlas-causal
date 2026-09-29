@@ -1,0 +1,80 @@
+{
+  "from": 1800,
+  "kind": "tenure",
+  "records": {
+    "carlos-i-monarch-1889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "dias-ferreira-prime-minister-1892": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "hintze-ribeiro-prime-minister-1893": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "joao-crisostomo-prime-minister-1890": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "jose-luciano-de-castro-prime-minister-1886": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "jose-luciano-de-castro-prime-minister-1897": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "luis-i-monarch-1861": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "serpa-pimentel-prime-minister-1890": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1899
+}

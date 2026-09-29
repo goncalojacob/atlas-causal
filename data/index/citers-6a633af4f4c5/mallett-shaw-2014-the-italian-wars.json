@@ -1,0 +1,24 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "battle-of-polesella--battle-of-ravenna-1512--enabled",
+      "kind": "edge",
+      "locator": "pp. 97–98, as the \"War of the League of Cambrai\" article cites it"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ravenna-1512--battle-of-novara-1513--precondition-of",
+      "kind": "edge",
+      "locator": "p. 121 of the 2012 printing, as the \"Battle of Novara (1513)\" article cites it"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-padua--battle-of-polesella--precondition-of",
+      "kind": "edge",
+      "locator": "p. 95, as the \"War of the League of Cambrai\" article cites it"
+    }
+  ],
+  "id": "mallett-shaw-2014-the-italian-wars",
+  "schema": 1
+}

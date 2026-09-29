@@ -1,0 +1,102 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "banco-espirito-santo",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "european-central-bank",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "european-commission",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "novo-banco",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "pedro-passos-coelho",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election--troika-bailout-2011--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election--troika-programme-ends-2014--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "geringonca-2015--legislative-election-2019--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": true,
+      "id": "geringonca-2015--legislative-election-2019--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-bailout-2011--bes-resolution-2014--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-bailout-2011--troika-programme-ends-2014--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2009-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "2011-portuguese-legislative-election",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "bes-resolution-2014",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-programme-ends-2014",
+      "kind": "event",
+      "locator": null
+    }
+  ],
+  "id": "imf-2016-portugal-ex-post-evaluation",
+  "schema": 1
+}
