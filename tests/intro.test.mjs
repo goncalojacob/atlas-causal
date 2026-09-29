@@ -9,23 +9,25 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import {
-  introHtml, heaviest, hasSeen, markSeen, opensOnNothing, HEAVIEST, STORAGE_KEY, SEEN,
+  introHtml, heaviest, score, hasSeen, markSeen, opensOnNothing, HEAVIEST, STORAGE_KEY, SEEN,
 } from '../src/intro.js';
+import { esc } from '../src/util/esc.js';
 import { defaultState } from '../src/state.js';
 import { setReview } from '../src/demo.js';
 import { atlasOf, FIXTURE_DATA, ROOT } from './helpers.mjs';
 
 const atlas = await atlasOf(path.join(ROOT, 'data'));
 
+// Since M89 §4 the score is `subtreeWeight + weight` and the six are spread
+// across the lanes and the centuries, so this no longer asserts a descending
+// list — `tests/m89.test.mjs` is where the rule itself is held.
 test('the heaviest events are the ones with the atlas downstream of them', () => {
   const list = heaviest(atlas);
   assert.equal(list.length, HEAVIEST);
-  for (let i = 1; i < list.length; i += 1) {
-    assert.ok((list[i - 1].weight ?? 0) >= (list[i].weight ?? 0), 'heaviest first');
-  }
+  assert.equal(score(list[0]), Math.max(...atlas.activeEvents.map(score)), 'the heaviest of all is first');
   for (const event of list) {
     assert.equal(event.status, 'active', 'a tombstone is not an invitation');
-    assert.ok((event.weight ?? 0) > 0, 'and neither is an event nothing hangs on');
+    assert.ok(score(event) > 0, 'and neither is an event nothing hangs on');
   }
   // Ties broken by id, so the card is the same card twice running.
   assert.deepEqual(heaviest(atlas).map((e) => e.id), list.map((e) => e.id));
@@ -42,7 +44,7 @@ test('the card quotes the records and claims nothing of its own', () => {
     const record = kind === 'event' ? atlas.events.get(id) : atlas.narratives.get(id);
     assert.ok(record, `${kind} ${id} is a record`);
     assert.equal(record.status, 'active');
-    assert.ok(html.includes(record.title), `${id} is named by its own title`);
+    assert.ok(html.includes(esc(record.title)), `${id} is named by its own title`);
   }
   // The counts are the atlas's own.
   assert.match(html, new RegExp(`${atlas.activeEvents.length} events`));
@@ -56,6 +58,9 @@ test('the card quotes the records and claims nothing of its own', () => {
 test('the card is escaped like every other thing built out of a record', () => {
   const nasty = {
     ...atlas,
+    // Since M89 §1 a name is printed only where the record's century has landed
+    // (attributes.js, `labelOf`), and these two records are in no shard at all.
+    attributesLoaded: () => true,
     activeEvents: [{
       id: 'x', title: '<img src=x onerror=alert(1)>', status: 'active', weight: 9, when: { start: 1900, end: 1900 },
     }],

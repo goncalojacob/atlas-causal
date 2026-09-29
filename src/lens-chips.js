@@ -13,6 +13,8 @@
 import { html } from './util/dom.js';
 import { esc } from './util/esc.js';
 import { lensLabels, withoutFocus, FOCUS_NONE, BACK_LABEL } from './lens.js';
+import { LOADING_LABEL } from './attributes.js';
+import { createShardWatch } from './shard-watch.js';
 
 const LENS_KIND = Object.freeze({
   actor: 'actor', place: 'place', source: 'source', event: 'event', region: 'region', narrative: 'narrative',
@@ -75,7 +77,9 @@ export function createLensChips(container, { atlas, state }) {
     badge.hidden = foci.length === 0;
     badge.innerHTML = foci.length === 0 ? '' : `
       ${foci.map((lens) => {
-        const name = lens.name ?? 'loading…';
+        // The one sentence the whole page uses for a name that has not arrived
+        // (attributes.js), rather than a second wording of its own (M89 §1).
+        const name = lens.name ?? LOADING_LABEL;
         return `<span class="lens-badge">
         <span class="lens-kind">${esc(LENS_KIND[lens.kind] ?? lens.kind)}</span>
         <span class="lens-name">${esc(name)}</span>
@@ -110,6 +114,13 @@ export function createLensChips(container, { atlas, state }) {
   });
 
   state.subscribe(render);
+  // And the tab coming back, which is the one nudge `main.js` cannot give: an
+  // animation frame is not run while the document is hidden, so a century that
+  // lands in a background tab has no frame for the redraw and the chip stays on
+  // "still loading" (M89 §1, A1; shard-watch.js). `render`'s own key is what
+  // decides whether anything is rewritten, so a landing that names nothing here
+  // still does not touch the reader's keyboard focus.
+  createShardWatch(atlas, () => render(state.get()), { doc: container.ownerDocument });
   render(state.get());
   return { render };
 }
