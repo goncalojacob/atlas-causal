@@ -10201,3 +10201,17 @@ useful thing to know about it, and the reason a records fire touching
 one, `src/map/labels.js`, is **not** in either brief: M89 §6 puts the "N more"
 badges through that placer and assumes the names it already places do not
 collide. Pamplona and PYRENEES say they can.
+
+**One thing a later fire must not do with either of them: weaken the test.** The
+standing orders' lesson of 22 September — *a test of a display property over the
+live corpus derives its expectation from the corpus it runs on and never assumes
+the corpus of the day happens to exhibit it* — is about an expectation that was
+only ever true at 581 events. **Neither of these is that.** "No title is written
+outside the pane" and "no two labels overlap" are true of a correct picture at
+any corpus size, and a corpus that grows does not make them less true; it only
+finds the case that was always going to break them. So the corpus is the
+occasion and the display is the fault, which is why M89 §5 is written as a
+change to `src/timeline.js` and not as a change to
+`tests/m86-browser.test.mjs`. A fire that made either assertion softer would be
+turning the only two honest signals the atlas has about its own legibility
+into two that say nothing.
