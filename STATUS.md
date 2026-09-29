@@ -22296,6 +22296,37 @@ bridge that would put them in runs from an umbrella already inside it to that
 umbrella's own child. Deviation **1340**, the `regionNote` cap.
 `docs/m42b-pool.md` → "Batch 38" is the full account.
 
+**M42b batch 39 — the First Carnatic War, 29 September.** The move the previous
+fire had named and measured: `Q1362162` is a `P361` child of
+`war-of-the-austrian-succession`, which the atlas holds, so the Indian theatre of
+that war arrives as an **umbrella costing no main event** — and it is what
+`Q2889560`, the action of 6 July 1746, had no endpoint without. **Three events
+and two places**: the war itself, the action, and `battle-of-madras`, which the
+vein query never named and reading did — the action's own article says where it
+led, and the atlas did not hold the place. Two place records, `chennai` and
+`nagapattinam`, both `summary: null`. **The filing is A3/A6/A8 and not the item's
+`P361`**: the tool filed all three under the European war, and the action and
+Madras were re-filed by hand under `first-carnatic-war`, whose span and subject
+fit, with `filed-by-span-and-subject` in place of `filed-from-p361`. Filing one
+level deeper never raises the main count and did not: **235 before, 235 after**.
+That filing also costs the batch its easiest edges, which is the honest order of
+operations — leaving all three as siblings so that "war → battle inside it"
+clears A14 on a technicality is the containment edge C8 is about, and it was
+refused. **One edge, `action-of-6-july-1746` → `battle-of-madras`, `enabled`**,
+carried by two articles at their cached revisions, each stating one half: Peyton's
+withdrawal to Bengal left the Coromandel "badly exposed", and Dupleix then
+authorised the attack. **0 of 1 crosses an umbrella (A15(11)), and here that is
+the flattering answer** — two events of one campaign filed where they belong
+should not cross. One candidate left with its reason: `Q3485992`, the siege of
+Pondicherry of 1748, whose four-sentence article states no cause. The corpus goes
+**1,284 → 1,287 active**, edges 1,061 → **1,062**, the largest component
+**unmoved at 714**; **Asia's eighteenth century 6 → 9** and Asia before 1800
+9 → **12**. **C8 gains a second shape**: the bridge A14 forbids here is not a
+bridge into the 714 at all, because `war-of-the-austrian-succession` is itself in
+a component of five — twenty of its children are held and every edge anyone would
+write from it runs to one of them. `docs/m42b-pool.md` → "Batch 39" is the full
+account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review

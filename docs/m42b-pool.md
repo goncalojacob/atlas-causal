@@ -10242,6 +10242,158 @@ had to lose the article quote to fit, and what a reviewer most wants is the
 quote. A `oneOf` over a string with a cap is the shape that produces the unhelpful
 message; the cap itself may well be right.
 
+## Batch 39 — the First Carnatic War, and Asia's eighteenth century
+
+The fire of 29 September left this as its **second move** and called it a cheap
+unlock: `Q1362162`, the First Carnatic War, is a `P361` child of
+`war-of-the-austrian-succession`, which the atlas holds, so it costs no main
+event, and it is the umbrella `Q2889560` — the action of 6 July 1746, left by
+batch 38 — had no endpoint without. It turned out to unlock rather more than the
+note expected, and rather less than it needed to.
+
+### The cell, before
+
+| | active | main |
+| --- | --- | --- |
+| Africa before 1800 | 3 | 0 |
+| Asia before 1800 | 9 | 0 |
+| — of which Asia's 18th century | 6 | 0 |
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `first-carnatic-war` | 1746–1748 | asia | `chennai` | `war-of-the-austrian-succession` (`P361`) |
+| `action-of-6-july-1746` | 6 Jul 1746 | asia | `nagapattinam` | `first-carnatic-war` (by hand, below) |
+| `battle-of-madras` | 7–9 Sep 1746 | asia | `chennai` | `first-carnatic-war` (by hand, below) |
+
+**Two place records**, both `summary: null` by A15(3)'s rule in the tool, both
+with the lane derived from their own point: `chennai` (Q1352, `city`) and
+`nagapattinam` (Q695585, `city`).
+
+`battle-of-madras` (`Q3063400`) is **not** one of the 26 candidates the vein
+query named — it was found by reading, because the action's own article says
+where the action led and the atlas did not hold the place it led to. Its own
+`P361` is `Q32929`, the War of the Austrian Succession, so it cost no main event
+either.
+
+### The filing, which is A3/A6/A8 and not the item's `P361`
+
+The tool filed all three under `war-of-the-austrian-succession`, because that is
+what each item's `P361` says. Once `first-carnatic-war` exists that is the wrong
+answer for two of them: **A3, A6 and A8 ask for the umbrella whose span and
+subject fit**, and 1746–1748 in the Carnatic fits both far better than a war
+fought from Silesia to the Austrian Netherlands. Both articles say so in their
+own words — the action "engaged each other early in the First Carnatic War", and
+the war is "the Indian theatre of the War of the Austrian Succession". So
+`action-of-6-july-1746` and `battle-of-madras` were re-filed under
+`first-carnatic-war` by hand, with `filed-by-span-and-subject` in place of
+`filed-from-p361` so a reviewer can see which of the two answers a record
+carries. **Filing one level deeper never raises the main count** and it did not:
+235 before, 235 after.
+
+That filing also decides which edges A14 permits, and it decides it against the
+batch: with the war as their parent, the edges from it to either of them are the
+ones a batch may not write. That is the honest order of operations, and the
+alternative — leaving all three as siblings under a European war so that
+"First Carnatic War → action of 6 July 1746" clears A14 on a technicality — is
+the containment edge C8 is about, wearing a type. It was considered and refused.
+
+### The edge
+
+One edge, and it is the one the reading was for.
+
+| edge | type | crosses an umbrella | what carries it |
+| --- | --- | --- | --- |
+| `action-of-6-july-1746` → `battle-of-madras` | `enabled` | **no** (both under `first-carnatic-war`) | two articles, one half each |
+
+The Madras article's background: *"After fighting an inconclusive battle the two
+fleets withdrew to repair, with the British retreating to Ceylon and the French
+using their base at Pondicherry. Wary of fighting another major naval battle –
+the British commander, Edward Peyton, chose to stay away from the Coramandel
+coast and withdrew to the safety of Bengal, **leaving the British settlements on
+the Coramandel badly exposed to the French**. The French Governor of Pondicherry
+Dupleix authorised an attack on Madras."* The action's own article gives the
+other half: *"La Bourdonnais acquired additional guns at Pondicherry, and when
+the fleets met again in August 1746, Peyton refused battle and retreated to
+Bengal. La Bourdonnais then proceeded to lead the successful French attack on
+Madras in September."*
+
+`enabled` and not `caused`, because the same paragraph says whose decision it
+was. **A15(5) does not refuse it**: "leaving the British settlements badly
+exposed" is a mechanism and not a date order, and neither article reaches for
+"after" to do the work. **Nothing from a parent to its own child (A14).**
+
+### The candidate left, with its reason
+
+| left | Q | why |
+| --- | --- | --- |
+| `siege-of-pondicherry-1748` | Q3485992 | The only unimported `P361` child of `first-carnatic-war`. Its article is four sentences and states no cause at all — it names the commanders, the monsoon that lifted the siege, and that it "was the last major action of the First Carnatic War". Under A15(1) there is nothing to connect it with, and the one edge that would obviously reach it, from the war it is the last action of, is A14's. Left in the seeds unlisted and out of the cursor's `done`, so it is retryable the day something states why the British besieged Pondicherry. |
+
+### The numbers
+
+| | before 39 | after 39 |
+| --- | --- | --- |
+| active events | 1,284 | **1,287** |
+| **main** | **235** | **235** |
+| active edges | 1,061 | **1,062** |
+| largest connected component | 714 | **714** |
+| components | 405 | **407** |
+| events with no edge at all | 319 | **320** |
+| **edges crossing an umbrella, in the batch** | — | **0 of 1** |
+| edges crossing an umbrella, corpus | 566 of 1,061 | **566 of 1,062** |
+| Asia's 18th century | 6 / 0 | **9 / 0** |
+| Asia before 1800 | 9 / 0 | **12 / 0** |
+| Africa before 1800 | 3 / 0 | 3 / 0 |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 44 / 5 |
+| 1600s | 109 / 3 | 2 / 0 | 3 / 0 | 69 / 7 |
+| 1700s | 61 / 3 | 1 / 0 | **9 / 0** | 55 / 2 |
+| 1800s | 39 / 9 | 17 / 1 | 7 / 7 | 56 / 8 |
+| 1900s | 244 / 59 | 89 / 23 | 146 / 42 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 40 / 1 |
+| **all** | **553 / 84** | **185 / 31** | **194 / 64** | **355 / 56** |
+
+### C8, again, and this time the umbrella is outside too
+
+Three records kept, one edge, and the largest component did not move by one. The
+batch made a component of **two** (the action and Madras) and left
+`first-carnatic-war` a component of **one**, which is why the isolated count went
+up by one while three events arrived.
+
+The new thing this batch adds to the C8 file is that the bridge A14 forbids is
+**not, here, a bridge into the 714 at all**:
+
+| | component | the bridge A14 forbids |
+| --- | --- | --- |
+| `first-carnatic-war` | **1** | `war-of-the-austrian-succession` → it |
+| `action-of-6-july-1746`, `battle-of-madras` | **2** | `first-carnatic-war` → them |
+| `war-of-the-austrian-succession` | **5** | — |
+
+**The War of the Austrian Succession is itself in a component of five.** Twenty
+of its children are in the corpus and it has almost no edges, because every edge
+anyone would write from it runs to one of them. So this batch could not have
+joined the 714 even with A14 lifted; what lifting A14 would buy here is a
+component of 5 + 1 + 2 = 8, not a record in the main body of the graph. That is
+worth separating from batch 38's finding, which was about records that *would*
+have been in the 714. **C8 costs two different things in two different places,
+and only one of them is about the largest component.**
+
+### A15(11), and what kind of nothing 0 of 1 is
+
+The batch's one edge does not cross an umbrella, and — unlike batch 38's three —
+that is the flattering answer rather than the unflattering one. The two events it
+joins are two months apart in the same theatre of the same war, and the atlas
+files them under the same umbrella because that is where they belong. An edge
+between two events of one campaign *should* not cross; batch 38's three crossed
+because Wikidata had drawn a boundary through the middle of one admiral's
+campaign. **A crossing count is worth reading only next to the filing it is
+measured against**, which is the point batch 38's section made from the other
+side.
+
 ## Where the run stands, for the fire that picks it up
 
 *29 September, after the thirty-fifth fire: three days of silence, A15 arrived,
