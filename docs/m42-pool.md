@@ -12944,6 +12944,7 @@ suite failed on the first run and it was `tests/m53.test.mjs` §4.1's figure, wh
 moves with the corpus: the numerator rose to **404** because the 2014 Gaza War names
 `israel` among its `P710`, and the denominator to **1,260**. Both were re-taken in
 `docs/m53-polities.md` before the tests were called green.
+
 ## Curation 2026-09-29
 
 *The fifth curation fire, 02:07Z, and the first since 25 September — the three
