@@ -54,6 +54,7 @@ import { PROVENANCE_SENTENCES } from '../../src/summary.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
 import { parentsOf } from '../../src/parts.js';
+import { yearsInTitle, disagreesWithSpan } from '../../src/validate/rules.js';
 import { mergeIdentity, mergeNames } from './identity.mjs';
 import { reusablePlace } from './places.mjs';
 import { readRecords, readRegionPolygons } from '../lib/read.mjs';
@@ -532,6 +533,39 @@ export function intervalFor(kind, times) {
   return when;
 }
 
+// A15(4), the third clause. `span-vs-article-title` has been a warning since
+// A12 (3), reported after the fact on a record the import had already written
+// with the item's years. The third review asked the obvious question: if the
+// title of the article the record is built from states its own span, the
+// import can read it at the point of writing instead of leaving a warning
+// behind. So it does.
+//
+// The title is an assertion about the span by whoever wrote the article, and
+// the item's `P580`/`P582` are an assertion by whoever edited the item; where
+// they disagree the title is taken, because the title names the thing and the
+// item's dates are frequently the surrounding campaign's. A day or a month the
+// item gave for a bound the title has moved goes with it — a day inside the
+// wrong year is worse than no day — and one still inside the title's span
+// stays. The flag says where the span came from, so a reviewer can see it.
+export const TITLE_SPAN_FLAG = 'span-from-title';
+
+export function spanFromTitle(when, title) {
+  if (!when || !Number.isInteger(when.start)) return { when, from: null };
+  const stated = yearsInTitle(String(title ?? ''));
+  if (!stated || !disagreesWithSpan(stated, when)) return { when, from: null };
+  const next = { start: stated.start, end: stated.end === null ? when.end : stated.end };
+  const inside = (date) => {
+    if (typeof date !== 'string') return false;
+    const year = Number(date.slice(0, date.startsWith('-') ? 5 : 4));
+    if (!Number.isInteger(year)) return false;
+    return year >= next.start && (next.end === null || year <= next.end);
+  };
+  if (inside(when.date)) next.date = when.date;
+  if (inside(when.endDate)) next.endDate = when.endDate;
+  if (when.calendar) next.calendar = when.calendar;
+  return { when: next, from: stated };
+}
+
 // A12 (3), the other half of the same rule. An item that states a start and no
 // P582 has said nothing about an end, and the record it becomes carries
 // `end: null` — which in this atlas reads "as far as the data goes" and not
@@ -890,7 +924,15 @@ export function placeRecord(read, { id, created, region = null, regionNote = nul
     where: { lon: read.point.lon, lat: read.point.lat, precision: precision ?? 'point', label },
     region,
     regionNote: region ? regionNote : null,
-    summary: importedSummary(read),
+    // A15(3): a place carries no summary. The importer's placeholder said the
+    // item's description and then three sentences about its own standing, and
+    // the 25 September review found it on 158 of them — a paragraph of the
+    // import talking about itself where a card wants a sentence about a town.
+    // A place cites nothing and asserts nothing (rule 6, and the note above),
+    // so there is nothing for a summary of one to be the standing *of*: the
+    // item is on the record in `wikidata` and `review.status` says who has
+    // read it. Nothing is lost and one paragraph of noise goes.
+    summary: null,
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
@@ -910,7 +952,7 @@ export function actorRecord(read, { id, created, actorType, when }) {
   }, { flags: english ? [] : [NOT_ENGLISH_FLAG] });
 }
 
-export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null, endUnstated: unstated = false }) {
+export function eventRecord(read, { id, created, when, place, region = null, regionNote = null, category = null, endUnstated: unstated = false, spanFromTitle: titled = false }) {
   const { title, english } = titleFor(read);
   return envelope(id, 'event', created, {
     ...identityOf(read, created),
@@ -928,7 +970,7 @@ export function eventRecord(read, { id, created, when, place, region = null, reg
     // P710 names participants, and who took part is not the same question as
     // what they did in it: `role` is the argument and a person writes it.
     actors: [],
-  }, { flags: [...(english ? [] : [NOT_ENGLISH_FLAG]), ...(unstated ? [END_UNSTATED_FLAG] : [])] });
+  }, { flags: [...(english ? [] : [NOT_ENGLISH_FLAG]), ...(unstated ? [END_UNSTATED_FLAG] : []), ...(titled ? [TITLE_SPAN_FLAG] : [])] });
 }
 
 export function leadRecord({ qid, lang, title, revid, fetched, text }) {
@@ -1550,11 +1592,14 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       taken.add(id);
       report.created.push({ id, qid, kind: 'actor' });
     } else {
-      const when = intervalFor('event', read.times);
-      if (!when) {
+      const fromItem = intervalFor('event', read.times);
+      if (!fromItem) {
         refuse(report, qid, 'no date the atlas can use: an event with no year has nowhere on the timeline');
         continue;
       }
+      // A15(4): the title's own span, where it states one the item contradicts.
+      const titled = spanFromTitle(fromItem, titleFor(read).title);
+      const when = titled.when;
       // The lane first, and the place after it, because A14 (2)'s guard is what
       // decides whether the place may be written at all: the lane is measured
       // from the event's own point where it has one, else from the point of
@@ -1599,6 +1644,7 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         regionNote: laneNote(lane, { placeless: true }),
         category: classified.category ?? null,
         endUnstated: endUnstated('event', read.times),
+        spanFromTitle: titled.from !== null,
       });
       if (summary) {
         record.summary = summary;

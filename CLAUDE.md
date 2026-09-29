@@ -62,6 +62,7 @@ These are not preferences. Ask before breaking any of them.
 
 ```bash
 node tools/validate.mjs            # schemas, cross-record rules, region derivation
+node tools/cache-evidence.mjs --fill   # A15(2): every wikipedia-en citation on disk at the revision it cites; the last step of every batch
 node tools/validate.mjs --index    # also: data/index/ and the prerendered pages are byte-identical to a fresh build (main only)
 node tools/build-index.mjs         # regenerate data/index/ and the prerendered pages after touching data/
 node tools/build-palette.mjs       # regenerate data/geo/palette.json after touching the territories; before build-index, which names it
@@ -252,6 +253,9 @@ tools/serve.mjs            the local server: the repository, plus PUT /__records
 tools/lib/store.mjs        the server's atlas between saves: the save queue, the topology patched as each save lands, the index rebuilt behind the answer
 tools/bundle-to-files.mjs  issue body → data/<kind>s/<id>.json; ids slug-checked before any path
 tools/lookup-sources.mjs   what the catalogues say a DOI or ISBN names; a review aid, never a gate
+tools/cache-evidence.mjs   A15(2): the evidence a citation names, on disk at the revision it names. Reports, and `--fill` closes what it can; the last step of every batch. Writes nothing under `data/`
+tools/import/citations.mjs  pure: what a `wikipedia-en` locator names — one article or two, quotation marks in the article's own name and all — and whether the cache holds it. A renamed article is one group and not two, because the group is the Wikidata item and never the title string
+tools/import/cache/titles.json  GENERATED: every cited article title resolved through the action API to its item, its canonical title and whether it is a redirect; never published, never data, not under data/
 tools/m72-sources.mjs      how many sources each active edge names, how many distinct authors they have, and how many citations carry a locator; both tables of `docs/m72-sources.md` are its output, so the one after the run is the same question as the one before it and not a retyping. `--json` for a script
 tools/m42-pool.mjs         the pool M42 draws on and what each of its batches does to it: active events against main and filed, active edges, and the largest connected component of the causal graph — the number amendment A5 asks for before and after every batch — with Portuguese reach beside it as a measurement and no longer a gate. `--at <rev>` asks the same question of an earlier commit and `--json` for a script; `docs/m42-pool.md` is its output
 tools/overlap.mjs          how much of two presences' ground is the same, as intersection over the area of the smaller. A sweep by lines of latitude: the crossings of every ring give longitude intervals by parity, weighted by cos(lat). No projection and no library, because measuring that two outlines cover the same land is reading two records and not deciding between them (M51)

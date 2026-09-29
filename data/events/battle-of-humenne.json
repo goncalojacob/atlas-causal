@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-09-29",
   "origin": {
     "tool": "wikidata"
   },
@@ -22,8 +22,10 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a9-place"
-    ]
+      "a9-place",
+      "a15-days"
+    ],
+    "note": "A15(4): the record was dated {\"start\":1619,\"end\":1619,\"date\":\"1619-11-23\"} and the first sentence of the cited article states \"22–23 November 1619\", so the day bounds are 1619-11-22 to 1619-11-23. The years are unchanged."
   },
   "wikidata": "Q723957",
   "sitelinks": {
@@ -41,6 +43,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Battle of Humenné\", revision 1370265836"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Humenné\", revision 1370265836, first sentence: \"22–23 November 1619\""
     }
   ],
   "title": "Battle of Humenné",
@@ -48,7 +54,8 @@
   "when": {
     "start": 1619,
     "end": 1619,
-    "date": "1619-11-23"
+    "date": "1619-11-22",
+    "endDate": "1619-11-23"
   },
   "place": "humenne",
   "region": null,

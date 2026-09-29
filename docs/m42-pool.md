@@ -13674,3 +13674,231 @@ with no edge, which is what 311 events with no edge at all are made of.
 unchanged: **1,260 active, 235 main, 1,025 filed, 1,049 active edges, largest
 component 711, 562 edges crossing an umbrella, 393 components, 311 events
 with no edge**; validator **0 errors, 727 warnings**.
+
+## A15 (2) — the test in front of the cache, and the twelve revisions it found off disk
+
+*29 September, the 05:07Z fire. 40 requests in all — 28 to `api.php` for the
+title table, 12 to the REST summary endpoint at a revision — one in flight
+every 400 ms, no 429 at any point.*
+
+A15(2) makes A14(3)'s pass the last step of every batch and asks for a pure
+test in front of it (711). Both are here, and the test is what found the work.
+
+**The test was written first and observed failing.** `tests/a15-cache.test.mjs`
+reported **12 articles cited at a revision the cache does not hold** —
+`Thirty Years' War` at 7 citations, `Operation Pokpung` at 3, the Korean War
+batch's `Battle of Kapyong`, `Battle of Korea Strait`, `Chaplain–Medic
+massacre`, `Battle of Nam River`, `Battle of the Imjin River` and `Chinese
+spring offensive`, plus `Declaration by United Nations`, `The Holocaust`,
+`My Lai massacre` and `Siege of Khe Sanh`. All 12 are now on disk.
+
+**Three things about a locator that the last three fires had wrong.**
+
+1. **A locator may name two articles.** `"Battle of Corunna", revision
+   1370437705, § Prelude; "Battle of Vimeiro", revision 1370437710` is one
+   citation and two pieces of evidence, and there are five of them. A parser
+   that reads the first article only never checks the second; one that reads
+   greedily to the last `revision` invents an article called *"Battle of
+   Corunna", revision 1370437705, § Prelude; "Battle of Vimeiro"*. The clauses
+   are split on `; ` (and on `; and `) before anything else, and a clause that
+   does not parse is the rest of a quoted sentence and goes back onto the one
+   before it.
+2. **An article may carry quotation marks in its own name.**
+   `false-positives-in-colombia` cites *"False positives" scandal*, so within a
+   clause the title is greedy and not lazy.
+3. **Wikipedia renames articles, and the cache is filed by item.**
+   `Battle of Khe Sanh` became **`Siege of Khe Sanh`** between 22 and 27
+   September; one record cites the old name at one revision and an edge the new
+   name at another. Keyed by title that is two articles competing for nothing;
+   keyed by item it is one article cited twice, and the later revision wins the
+   one slot the cache has. **This is the fault that matters**, because a check
+   keyed on title would have reported the rename as a permanent gap for ever.
+
+So the pass writes a second file beside the leads:
+**`tools/import/cache/titles.json`**, every cited title resolved through the
+action API to its Wikidata item, its canonical title and whether it is a
+redirect. 1,373 titles, 28 requests, and the table is what makes the test pure
+— the grouping is on disk rather than fetched.
+
+| | before | after |
+| --- | --- | --- |
+| `wikipedia-en` references on active records | 2,568 | 2,568 |
+| **on disk at the revision cited** | 2,482 | **2,494** |
+| a revision the cache cannot hold beside a more-cited one of the same item | 74 | 74 |
+| **a revision that should be on disk and is not** | **12** | **0** |
+| locators naming no article and revision | 0 | 0 |
+| cited titles Wikipedia has no page for | **1** | **0** |
+
+**The 74 are the cache's shape and not a gap.** They are 60 revisions of 60
+articles that two or more records cite differently, and
+`schema/v1/wikipedia-lead.json` holds one lead per item per language, so one
+revision must lose. Which one is not the last writer's accident: A14(3) fixed
+it as the most-cited, ties to the later, and `bestRevision` is that rule in one
+place. The test asserts the arithmetic closes — every reference is either on
+disk or unholdable beside a more-cited revision of the same item — so a new gap
+cannot hide inside the 74.
+
+**The one title Wikipedia has no page for was a full stop.** Two edges cited
+*"Capture of St Lucia"* where the article is **"Capture of St. Lucia"**, at the
+revision on disk, and the event's own summary spells it correctly. Both
+locators are corrected: same article, same revision, the title as the source
+writes it. This is not A14(3)'s refusal to rewrite the six redirect locators —
+those name genuinely other titles and are A15(8)'s — it is a typo that made
+findable evidence unfindable from what the record says.
+
+**One thing this pass took off disk, deliberately and with the reason
+written down.** `Declaration by United Nations` is cited at revision
+1376063232 by the event (the text the 29 September fire re-cached for A7's
+widening) and at 1369044189 by **two** edges, whose explanations rest on it.
+A14(3)'s rule picks the two, so the cache now holds 1369044189 and the
+widening's evidence is off disk. Nothing is lost that cannot be had back in
+one request, and the sentence itself — *"signed by 47 national governments
+between 1942 and 1945"* — is quoted in this file, under the 29 September
+curation fire. **When somebody fixes the display fault that made the widening
+unlandable, that revision is one `--fill` away.**
+
+**The command.** `node tools/cache-evidence.mjs` reports and `--fill` closes
+what it can; it writes nothing under `data/`. It is the last step of every
+batch from here, in both lanes, and the test is what fails when a batch
+forgets.
+
+**Counts.** 12 leads written, 1 title table written (1,373 rows), 2 edge
+locators corrected, 0 refused, 0 records otherwise touched. Corpus unchanged:
+**1,260 active, 235 main, 1,025 filed, 1,049 active edges, largest component
+711, 562 edges crossing an umbrella**. Validator **0 errors, 727 warnings** —
+the two corrected locators change no warning.
+
+## A15 (3) — a place carries no summary, and the 158 that did
+
+*29 September, the 05:07Z fire. No network: one line in
+`tools/import/wikidata.mjs` and one field on 158 records.*
+
+The importer's placeholder was one paragraph: the item's own description, then
+three sentences saying the record is copied from the item, that nobody has read
+it, and where `review.html` is. On an event that is a summary with a note about
+its standing attached, which is what `src/summary.js` exists to take apart. On
+a **place** it is only the note, because a place asserts nothing: it cites
+nothing (rule 6, and the place form has no citation field at all), and what a
+place *is* is a point and a name. The 25 September review found the paragraph
+on 158 place records, every one of them a card that says nothing about a town
+and three sentences about the importer.
+
+`placeRecord()` now writes `summary: null`, and the 158 are nulled. The item
+is still on the record in `wikidata` and `review.status` still says who has
+read it, so nothing the paragraph carried is gone.
+
+| | before | after |
+| --- | --- | --- |
+| place records | 731 | 731 |
+| **carrying the import's placeholder** | **158** | **0** |
+| carrying a summary a person wrote | 1 | 1 |
+| `summary-imported` warnings | 727 total warnings | **569** |
+
+**The one left alone is `central-portugal`**, whose `origin.tool` is
+`assistant` and whose summary is a sentence about the region rather than the
+importer talking about itself. A15(3) names the import's placeholder and this
+is not one.
+
+**Counts.** 158 records revised (`summary` and `revised`, and no other field),
+1 left alone, 0 refused. Corpus unchanged: **1,260 active, 235 main, 1,025
+filed, 1,049 active edges, largest component 711, 562 edges crossing an
+umbrella**. Validator **0 errors, 569 warnings** (−158, all of them
+`summary-imported` on a place).
+
+## A15 (4) — the day and the month, in A7's comparison and at the point of import
+
+*29 September, the 05:07Z fire. No network: every day below was read from
+`tools/import/cache/wikipedia/`, at the revision the record cites, and the
+fifteenth from the record's own article title.*
+
+A15(4) is three things, and the first is the one that matters: **a record
+dated to a single day can contradict its own article without either of them
+naming a different year.** `yearsInLead` reads years, so *"fought on 27–28 May
+1905"* beside a record dated 1905-05-28 alone is invisible to it. Both are
+1905.
+
+**1. The comparison reads days and months.** `datesInLead` reads three shapes
+and no fourth, for the same reason `yearsInLead` has three: `27–28 May 1905`,
+`November 6–7, 1985`, and `from 8 March to 26 May 1977`, the last being the
+only one that crosses a month. A sentence naming one day is read too. The new
+warning is **`span-vs-lead-dates`** and there are **22** of them.
+
+**Two readings were wrong before they were right, and both are worth writing
+down.** The first run of the rule made **64** warnings. Forty of them were one
+mistake: *"The 1982 Lebanon War ... began on 6 June 1982"* read as a one-day
+event, so every correct record running past its own first day contradicted its
+lead. The second run still had **30**, and eight of those were the same
+mistake from the other end — the French Revolution's lead names **9 November
+1799**, which is its *end*, and the record's start of 1789 was read as falling
+outside it. So: **a lead naming one day inside a record that spans several is
+naming one of its bounds and cannot say which**, and is compared only against
+a record that also claims one day. That is where the rule has teeth and
+nowhere else.
+
+**What the 22 are.** Five are pre-1752 and calendar-shaped — `battle-of-rain`,
+`battle-of-werben` (1631-07-22 against 1631-08-07), `battle-of-breitenfeld-1642`
+(1642-10-23 against 1642-11-02), `battle-of-juterbog`, `raid-on-groton` — ten
+days apart in the century the two calendars were ten days apart, which
+`when.calendar` exists for and no fire should silently pick a side on. Four are
+the COVID records, where the record holds the first case and the lead holds the
+declaration. The rest are off-by-one-day and off-by-a-few — `anschluss`
+1938-03-13 against *"12 March 1938"*, `treaty-of-petropolis` 1903-11-11
+against 1903-11-17, `interwar-period` ending 1939-09-11 against 1939-09-01,
+`myanmar-civil-war` starting 2021-05-05 against 2021-02-01. Every one is a
+question for a person and none is this pass's to answer: **A15(4) names fifteen
+records and these are not them.**
+
+**2. The fifteen.** Ten took the range their first sentence states; four have a
+first sentence that states no date at all and were refused; the fifteenth took
+its span from its own title.
+
+| record | was | now | the clause |
+| --- | --- | --- | --- |
+| `first-shaba-war` | 1977-05-26 | **1977-03-08 to 1977-05-26** | "from 8 March to 26 May 1977" |
+| `battle-of-tsushima` | 1905-05-28 | **1905-05-27 to 1905-05-28** | "27–28 May 1905" |
+| `battle-of-port-arthur` | 1904-02-08 | **1904-02-08 to 1904-02-09** | "8–9 February 1904" |
+| `dos-de-mayo-uprising` | 1808-05-02 | **1808-05-02 to 1808-05-03** | "2–3 May 1808" |
+| `palace-of-justice-siege` | 1985-11-06 | **1985-11-06 to 1985-11-07** | "November 6–7, 1985" |
+| `flight-to-varennes` | 1791-06 | **1791-06-20 to 1791-06-21** | "20–21 June 1791" |
+| `battle-of-buceo` | 1814-05-17 | **1814-05-14 to 1814-05-17** | "14–17 May 1814" |
+| `battle-of-humenne` | 1619-11-23 | **1619-11-22 to 1619-11-23** | "22–23 November 1619" |
+| `beer-hall-putsch` | 1923-11-09 | **1923-11-08 to 1923-11-09** | "8–9 November 1923" |
+| `execution-of-the-romanov-family` | 1918-07-16 | **1918-07-16 to 1918-07-17** | "16–17 July 1918" |
+| `siege-of-fuenterrabia-1523-1524` | 1521–1524, 1521-10 | **1523–1524** | title "(1523–1524)" |
+
+**The four refused, and why, because a refusal is the pass working.**
+`warsaw-uprising`, `slovak-national-uprising` and `arab-revolt` have a first
+sentence that names no date at all — the Warsaw article's opens *"was a major
+World War II operation by the Polish underground resistance"* and puts the
+dates in the second sentence — and `1979-herat-uprising` says *"across several
+days in March 1979"*, which is not a range. A7 reads the first sentence and
+this pass does not widen its own reach to find an answer it wants.
+
+**The fifteenth is the only one that changed a year.** The item dates
+`siege-of-fuenterrabia-1523-1524` from **1521**, and its own article title
+states 1523–1524; the lead says the siege *"took place in 1523-24 by a Spanish
+army, after a Franco-Navarrese army had taken it in 1521"*. So 1521 is when the
+town was taken and not when this siege was, and the month the item gave for it
+goes with the year — a day inside the wrong year is worse than no day. Its one
+edge still satisfies rule 4: `spanish-conquest-of-iberian-navarre` runs
+1512–1529.
+
+**3. The import reads the title at the point of writing.**
+`span-vs-article-title` has been a warning since A12(3), reported after the
+fact on a record the import had already written with the item's years.
+`spanFromTitle()` now runs inside `runImportMode`, takes the title's span where
+the item's contradicts it, carries a day or month that is still inside the new
+span and drops one that is not, and flags the record **`span-from-title`** so a
+reviewer can see where the span came from. Run over
+`siege-of-fuenterrabia-1523-1524`'s own numbers it reproduces this pass's
+correction exactly, which is the test.
+
+**Counts.** 11 records rewritten, all `active`, all flagged `a15-days`; 10
+`wikipedia-en` locators added quoting the clause; 4 refused with the reason on
+neither the record nor this fire's conscience. Two new pure suites,
+`tests/a15-dates.test.mjs` (7 tests) and the rule's own cases. Corpus
+unchanged: **1,260 active, 235 main, 1,025 filed, 1,049 active edges, largest
+component 711, 562 edges crossing an umbrella**. Validator **0 errors, 590
+warnings**, and the arithmetic closes exactly: 569 before, **−1** — the
+`span-vs-article-title` on `siege-of-fuenterrabia-1523-1524`, which this pass
+answered — and **+22** `span-vs-lead-dates`, every one of them named above.
