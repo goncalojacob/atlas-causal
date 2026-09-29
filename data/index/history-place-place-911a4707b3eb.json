@@ -29,6 +29,15 @@
         }
       ]
     },
+    "abu-qir-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "adrar-des-ifoghas": {
       "from": "git",
       "versions": [
@@ -139,6 +148,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "alexandria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -1201,6 +1219,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "cairo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -3380,6 +3407,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "imbaba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -7654,6 +7690,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "shubra-khit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

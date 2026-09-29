@@ -2756,6 +2756,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shubra-khit--battle-of-the-pyramids--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of the Pyramids”, revision 1371801221, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sirte-2011--killing-of-muammar-gaddafi--caused",
       "kind": "edge",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
@@ -2828,9 +2834,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-nile--revolt-of-cairo--precondition-of",
+      "kind": "edge",
+      "locator": "“Revolt of Cairo”, revision 1371106483, § Revolt"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-pusan-perimeter--battle-of-unsan--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Unsan\", revision 1370276047, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pyramids--revolt-of-cairo--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of the Pyramids”, revision 1371801221, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pyramids--revolt-of-cairo--precondition-of",
+      "kind": "edge",
+      "locator": "“Revolt of Cairo”, revision 1371106483, § Revolt"
     },
     {
       "dissent": false,
@@ -3083,6 +3107,24 @@
       "id": "budapest-memorandum--russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Shubra Khit”, revision 1371091764, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of the Pyramids”, revision 1371801221, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-alexandria-1798--battle-of-the-nile--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of the Nile”, revision 1372980990, lead"
     },
     {
       "dissent": false,
@@ -4109,6 +4151,12 @@
       "id": "french-conquest-of-morocco--zaian-war--caused",
       "kind": "edge",
       "locator": "\"Zaian War\", revision 1370751428, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "french-invasion-of-egypt-and-syria--macau-incident-1799--enabled",
+      "kind": "edge",
+      "locator": "“Macau Incident (1799)”, revision 1370627318, § Incident at Macau"
     },
     {
       "dissent": false,
@@ -10640,6 +10688,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shubra-khit",
+      "kind": "event",
+      "locator": "\"Battle of Shubra Khit\", revision 1371091764"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
@@ -10802,6 +10856,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-nile",
+      "kind": "event",
+      "locator": "\"Battle of the Nile\", revision 1372980990"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-punchbowl",
       "kind": "event",
       "locator": "\"Battle of the Punchbowl\", revision 1370601885"
@@ -10811,6 +10871,12 @@
       "id": "battle-of-the-pusan-perimeter",
       "kind": "event",
       "locator": "\"Battle of the Pusan Perimeter\", revision 1376282930"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-pyramids",
+      "kind": "event",
+      "locator": "\"Battle of the Pyramids\", revision 1371801221"
     },
     {
       "dissent": false,
@@ -11309,6 +11375,12 @@
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "\"Campaign of Porto Calvo\", revision 1373668892"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-alexandria-1798",
+      "kind": "event",
+      "locator": "\"Capture of Alexandria (1798)\", revision 1370608238"
     },
     {
       "dissent": false,
@@ -12155,6 +12227,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "\"French conquest of Morocco\", revision 1374837625"
+    },
+    {
+      "dissent": false,
+      "id": "french-invasion-of-egypt-and-syria",
+      "kind": "event",
+      "locator": "\"French invasion of Egypt and Syria\", revision 1371824920"
     },
     {
       "dissent": false,
@@ -13709,6 +13787,12 @@
       "id": "republican-insurgency-in-afghanistan",
       "kind": "event",
       "locator": "\"Republican insurgency in Afghanistan\", revision 1375985393"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-cairo",
+      "kind": "event",
+      "locator": "\"Revolt of Cairo\", revision 1371106483"
     },
     {
       "dissent": false,

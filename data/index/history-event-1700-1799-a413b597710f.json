@@ -621,6 +621,15 @@
         }
       ]
     },
+    "battle-of-shubra-khit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-soor": {
       "from": "git",
       "versions": [
@@ -653,6 +662,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-nile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-pyramids": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -698,6 +725,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "capture-of-alexandria-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -893,6 +929,15 @@
         }
       ]
     },
+    "french-invasion-of-egypt-and-syria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "french-revolution": {
       "from": "git",
       "versions": [
@@ -1079,6 +1124,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "revolt-of-cairo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

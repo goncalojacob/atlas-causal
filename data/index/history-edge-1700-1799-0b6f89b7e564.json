@@ -218,12 +218,39 @@
         }
       ]
     },
+    "battle-of-shubra-khit--battle-of-the-pyramids--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-st-lucia--capture-of-st-lucia--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-nile--revolt-of-cairo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-pyramids--revolt-of-cairo--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -237,6 +264,24 @@
       ]
     },
     "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "capture-of-alexandria-1798--battle-of-the-nile--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -278,6 +323,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "french-invasion-of-egypt-and-syria--macau-incident-1799--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
