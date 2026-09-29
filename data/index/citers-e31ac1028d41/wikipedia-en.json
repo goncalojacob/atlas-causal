@@ -1328,6 +1328,12 @@
     },
     {
       "dissent": false,
+      "id": "1938-yellow-river-flood--battle-of-wuhan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Wuhan\", revision 1375679126, § Prelude"
+    },
+    {
+      "dissent": false,
       "id": "1948-arab-israeli-war--1952-egyptian-revolution--caused",
       "kind": "edge",
       "locator": "\"1948 Arab–Israeli War\", revision 1374830770"
@@ -2858,6 +2864,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shanghai--battle-of-nanking--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Nanking\", revision 1375700539, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shubra-khit--battle-of-the-pyramids--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Pyramids\", revision 1371801221, § Prelude"
@@ -3095,6 +3107,12 @@
       "id": "battle-of-wolgast--edict-of-restitution--precondition-of",
       "kind": "edge",
       "locator": "\"Thirty Years' War\", revision 1376343040, § Danish intervention"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-xuzhou--battle-of-wuhan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Xuzhou\", revision 1374490976, lead"
     },
     {
       "dissent": false,
@@ -5231,6 +5249,12 @@
       "id": "march-on-rome--lateran-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"March on Rome\", revision 1374461265, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "marco-polo-bridge-incident--battle-of-shanghai--caused",
+      "kind": "edge",
+      "locator": "\"Marco Polo Bridge incident\", revision 1370745067, § Consequences"
     },
     {
       "dissent": false,
@@ -8732,6 +8756,12 @@
     },
     {
       "dissent": false,
+      "id": "1938-yellow-river-flood",
+      "kind": "event",
+      "locator": "\"1938 Yellow River flood\", revision 1364493860"
+    },
+    {
+      "dissent": false,
       "id": "1940-1944-insurgency-in-chechnya",
       "kind": "event",
       "locator": "\"1940–1944 insurgency in Chechnya\", revision 1370279204"
@@ -10700,6 +10730,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nanking",
+      "kind": "event",
+      "locator": "\"Battle of Nanking\", revision 1375700539"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "\"Battle of Nanshan\", revision 1370451314"
@@ -11075,6 +11111,12 @@
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "\"Battle of Shaho\", revision 1370589119"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shanghai",
+      "kind": "event",
+      "locator": "\"Battle of Shanghai\", revision 1372115505"
     },
     {
       "dissent": false,
@@ -11579,6 +11621,18 @@
       "id": "battle-of-wolgast",
       "kind": "event",
       "locator": "\"Battle of Wolgast\", revision 1370276997"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wuhan",
+      "kind": "event",
+      "locator": "\"Battle of Wuhan\", revision 1375679126"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-xuzhou",
+      "kind": "event",
+      "locator": "\"Battle of Xuzhou\", revision 1374490976"
     },
     {
       "dissent": false,

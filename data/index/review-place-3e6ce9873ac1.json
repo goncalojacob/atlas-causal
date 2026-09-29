@@ -17139,6 +17139,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "shanghai",
+      "kind": "place",
+      "names": [
+        "Shanghai",
+        "Xangai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21025,7 +21053,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "wuhan",
       "kind": "place",
       "names": [
@@ -21035,6 +21063,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "xuzhou",
+      "kind": "place",
+      "names": [
+        "Xuzhou"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

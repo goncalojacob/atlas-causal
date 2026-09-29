@@ -8545,6 +8545,15 @@
         }
       ]
     },
+    "shanghai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "shatila-refugee-camp": {
       "from": "git",
       "versions": [
@@ -10495,6 +10504,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "xuzhou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

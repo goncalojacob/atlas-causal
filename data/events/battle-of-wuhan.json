@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wuhan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2038907",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Wuhan",
+    "pt": "Batalha de Wuhan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2038907"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wuhan\", revision 1375679126"
+    }
+  ],
+  "title": "Battle of Wuhan",
+  "summary": "The English Wikipedia article \"Battle of Wuhan\", at revision 1375679126, opens: \"The Battle of Wuhan, popularly known to the Chinese as the Defense of Wuhan, and to the Japanese as the Capture of Wuhan, was the largest, longest, and bloodiest battle of the Second Sino-Japanese War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2038907, imported by tools/import/wikidata.mjs. The item's own description reads \"large-scale battle of the Second Sino-Japanese War over 4 months in 1938\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1938,
+    "end": 1938,
+    "date": "1938-10-27"
+  },
+  "place": "wuhan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-sino-japanese-war"
+}

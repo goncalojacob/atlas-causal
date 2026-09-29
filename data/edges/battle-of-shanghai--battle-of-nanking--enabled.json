@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-shanghai--battle-of-nanking--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-69"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nanking\", revision 1375700539, lead"
+    }
+  ],
+  "from": "battle-of-shanghai",
+  "to": "battle-of-nanking",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says it in its lead: \"The Japanese eventually won the battle, forcing the Chinese army to withdraw. Capitalizing on their victory, the Japanese authorized a campaign to capture Nanjing.\" The battle whose victory was capitalised on is the Battle of Shanghai, named in the sentence before it. `enabled` and not `caused`: the article gives the victory as what made the campaign possible and the decision to authorise it as somebody’s, so the earlier battle is what let the later one be fought rather than what produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
