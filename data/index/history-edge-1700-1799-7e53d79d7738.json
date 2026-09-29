@@ -2,6 +2,15 @@
   "from": 1700,
   "kind": "edge",
   "records": {
+    "action-of-6-july-1746--battle-of-madras--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "american-revolutionary-war--french-revolution--inspired": {
       "from": "git",
       "versions": [

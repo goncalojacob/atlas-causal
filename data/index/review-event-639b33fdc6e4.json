@@ -4273,6 +4273,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "action-of-6-july-1746",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-carnatic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 6 July 1746"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "action-of-8-january-1780",
@@ -10587,6 +10620,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Mabila"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "battle-of-madras",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-carnatic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-by-span-and-subject"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Madras"
     },
     {
       "authors": [
@@ -21859,6 +21924,38 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of Zawiya"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "id": "first-carnatic-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-austrian-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Carnatic War"
     },
     {
       "authors": [
@@ -44352,6 +44449,12 @@
     },
     {
       "id": "first-battle-of-zawiya",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-carnatic-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

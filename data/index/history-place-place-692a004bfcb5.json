@@ -1494,6 +1494,15 @@
         }
       ]
     },
+    "chennai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "chile-q298": {
       "from": "git",
       "versions": [
@@ -5393,6 +5402,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nagapattinam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

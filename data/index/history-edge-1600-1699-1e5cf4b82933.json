@@ -110,7 +110,7 @@
       ]
     },
     "battle-of-rheinfelden--siege-of-breisach--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -330,7 +330,7 @@
       ]
     },
     "king-philip-s-war--king-william-s-war--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

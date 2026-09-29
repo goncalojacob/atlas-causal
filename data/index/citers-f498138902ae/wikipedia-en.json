@@ -1712,6 +1712,18 @@
     },
     {
       "dissent": false,
+      "id": "action-of-6-july-1746--battle-of-madras--enabled",
+      "kind": "edge",
+      "locator": "“Action of 6 July 1746”, revision 1370426720, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-6-july-1746--battle-of-madras--enabled",
+      "kind": "edge",
+      "locator": "“Battle of Madras”, revision 1370448492, § Background"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",
       "kind": "edge",
       "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551, § lead and § Background — 1989–1992 civil war"
@@ -9002,6 +9014,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-6-july-1746",
+      "kind": "event",
+      "locator": "\"Action of 6 July 1746\", revision 1370426720"
+    },
+    {
+      "dissent": false,
       "id": "action-of-8-january-1780",
       "kind": "event",
       "locator": "\"Action of 8 January 1780\", revision 1370618716"
@@ -10091,6 +10109,12 @@
       "id": "battle-of-mabila",
       "kind": "event",
       "locator": "\"Mabila\", revision 1371281324"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-madras",
+      "kind": "event",
+      "locator": "\"Battle of Madras\", revision 1370448492"
     },
     {
       "dissent": false,
@@ -11969,6 +11993,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "\"First Battle of Zawiya\", revision 1370619040"
+    },
+    {
+      "dissent": false,
+      "id": "first-carnatic-war",
+      "kind": "event",
+      "locator": "\"First Carnatic War\", revision 1370619242"
     },
     {
       "dissent": false,

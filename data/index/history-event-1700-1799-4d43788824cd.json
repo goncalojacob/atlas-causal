@@ -76,6 +76,15 @@
         }
       ]
     },
+    "action-of-6-july-1746": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "action-of-8-january-1780": {
       "from": "git",
       "versions": [
@@ -332,6 +341,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-madras": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -820,6 +838,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "first-carnatic-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

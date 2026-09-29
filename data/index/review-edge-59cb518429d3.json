@@ -2837,6 +2837,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "action-of-6-july-1746",
+      "id": "action-of-6-july-1746--battle-of-madras--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-madras",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "afghan-civil-war",
       "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",

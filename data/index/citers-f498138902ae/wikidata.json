@@ -2396,6 +2396,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-6-july-1746",
+      "kind": "event",
+      "locator": "Q2889560"
+    },
+    {
+      "dissent": false,
       "id": "action-of-8-january-1780",
       "kind": "event",
       "locator": "Q4090282"
@@ -3509,6 +3515,12 @@
       "id": "battle-of-mabila",
       "kind": "event",
       "locator": "Q6721586"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-madras",
+      "kind": "event",
+      "locator": "Q3063400"
     },
     {
       "dissent": false,
@@ -5351,6 +5363,12 @@
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "locator": "Q923890"
+    },
+    {
+      "dissent": false,
+      "id": "first-carnatic-war",
+      "kind": "event",
+      "locator": "Q1362162"
     },
     {
       "dissent": false,
