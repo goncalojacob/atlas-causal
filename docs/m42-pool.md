@@ -14283,3 +14283,69 @@ component 711, 562 edges crossing an umbrella**, 732 place records of which one
 is now a tombstone. Validator **0 errors, 598 warnings**, unmoved: a merged
 place is not `place-unused`. A15(2)'s pass reports **0 citations off disk**,
 which is the batch's last step and the check on every quote above.
+
+## A15 (10) — three polities whose end was a snapshot horizon, read from the item and described
+
+*29 September, the 05:07Z fire. Six requests: two `wbsearchentities` to find the
+two items nobody had named, one `wbgetentities` for the dates, area and
+population of all three, and three leads fetched.*
+
+A14(5) described 19 of 34 named polities and refused 15, three of them on the
+**dissolution-year gate**: the item's dissolution did not match the record's end.
+A15(10)'s reading is that the gate was right and the *record* was wrong — its
+`when.end` was never a claim.
+
+| record | its end was | what that year is | the item | its end is now |
+| --- | --- | --- | --- | --- |
+| `european-economic-community` | 1993 | the record's own note: *"an editorial choice nobody has made deliberately"* | Q52847, dissolved 2009-12-01 | **2009**, with the day |
+| `inca-empire` | 1649 | the horizon of the Historical Basemaps snapshot series | Q28573, dissolved **1533 and 1572** | **{min: 1533, max: 1572}** |
+| `dutch-republic` | 1782 | the last Historical Basemaps snapshot interval | Q170072, dissolved 1795-01-19 | **1795**, with the day |
+
+**The Inca Empire ends in a range, not a year.** Q28573 carries two dissolution
+values at normal rank — 1533, when Cuzco fell, and 1572, when Vilcabamba did —
+and `schema/common/interval.json` has held a `{min, max}` bound since it was
+written. Choosing between them would be this fire making a historical judgement
+it has no source for; stating both is reading the item.
+
+**Two items nobody had named, and one of them was nearly wrong.** Neither
+`inca-empire` nor `dutch-republic` carried a Wikidata item, so A15(10)'s "read
+from the item" needed the item found first. `Dutch Republic` searched to Q170072
+at the top. **`Inca Empire` searched to Q28573** — and the guess a fire would
+have made from memory, Q41230, is the **Islamic Development Bank**. That is the
+whole argument for `wbsearchentities` over a plausible-looking qid.
+
+**No identity field was written by hand, and that is A14(5)'s decision and not
+this pass's.** A14(5) ended with *"CLAUDE.md gives identity fields to the import
+and not to a hand pass"* and left the owner the narrow question of whether a
+reconciliation this certain should write `wikidata` as it goes. This pass wrote
+the field on both records, read A14(5) again, and **took it back out**: the two
+items are named in `wikidata` source locators instead, exactly as A14(5)'s
+nineteen name theirs. `european-economic-community` keeps the `wikidata` key it
+has carried since 2 September, which predates that decision.
+
+**And they are described.** All three now carry `polity-description` in A14(5)'s
+own shape: the figures Wikidata gives with the year against them, the article's
+lead quoted at a revision the cache holds, the standing sentence, and the
+inception and dissolution the item states. **Only the Dutch Republic has a
+figure** — about 1,880,500 people in 1795 — and none of the three carries an
+area, so none is given rather than a number with no year against it, which is
+deviation 1412. The Historical Basemaps summary each record already carried,
+about which snapshots its outline comes from, is kept underneath: nothing here
+replaces the import's account of its own geometry, and the CC BY-SA quotation
+sits beside the GPL-3.0 summary as A14(5)'s three did.
+
+**One new warning, and it is the pass working.**
+`presence-outside-actor-when` on **`inca-empire-1600`**: Historical Basemaps
+draws the Inca Empire in its 1600 snapshot, and the empire's own item says it
+was dissolved by 1572. The warning is now saying what the dataset's own summary
+has always said about those years, which is the whole reason the end was a
+placeholder.
+
+**Counts.** 3 records rewritten, all `active`, all flagged `a15-end-from-item`
+and `polity-description`; 3 leads fetched and cached at the revision cited, 7
+source locators added, 2 `wikidata` fields written and then removed, 0 refused.
+Corpus unchanged in events and edges: **1,258 active, 235 main, 1,023 filed,
+1,048 active edges, largest component 711, 562 edges crossing an umbrella**.
+Validator **0 errors, 599 warnings** (+1, the Inca presence above); citations to
+check go from 14,137 to 14,139. A15(2)'s pass, the batch's last step, reports
+**0 citations off disk**.
