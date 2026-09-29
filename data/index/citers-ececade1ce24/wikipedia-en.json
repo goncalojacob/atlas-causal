@@ -2054,6 +2054,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-acajutla--battle-of-tacuzcalco--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-acajutla--battle-of-tacuzcalco--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Tacuzcalco\", revision 1370590351"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-adwa--second-italo-ethiopian-war--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Adwa\", revision 1375956865, § Significance"
@@ -6824,6 +6836,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-conquest-of-guatemala--battle-of-acajutla--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    },
+    {
+      "dissent": false,
       "id": "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of",
       "kind": "edge",
       "locator": "\"Spanish conquest of El Salvador\", revision 1370748295, § lead"
@@ -6833,6 +6851,12 @@
       "id": "spanish-conquest-of-iberian-navarre--siege-of-fuenterrabia-1523-1524--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Fuenterrabía (1523–1524)\", revision 1370741324"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-aztec-empire--battle-of-acajutla--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
     },
     {
       "dissent": false,
@@ -9638,6 +9662,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-acajutla",
+      "kind": "event",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-adwa",
       "kind": "event",
       "locator": "\"Battle of Adwa\", revision 1375956865"
@@ -11033,6 +11063,12 @@
       "id": "battle-of-tabocas",
       "kind": "event",
       "locator": "\"Battle of Tabocas\", revision 1370590318"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tacuzcalco",
+      "kind": "event",
+      "locator": "\"Battle of Tacuzcalco\", revision 1370590351"
     },
     {
       "dissent": false,

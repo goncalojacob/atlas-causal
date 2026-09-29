@@ -4321,6 +4321,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "battle-of-acajutla",
+      "id": "battle-of-acajutla--battle-of-tacuzcalco--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-tacuzcalco",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "battle-of-adwa",
       "id": "battle-of-adwa--second-italo-ethiopian-war--reacted-to",
@@ -24623,6 +24651,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "spanish-conquest-of-guatemala",
+      "id": "spanish-conquest-of-guatemala--battle-of-acajutla--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-acajutla",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "spanish-conquest-of-guatemala",
       "id": "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of",
@@ -24668,6 +24724,34 @@
       "status": "active",
       "to": "siege-of-fuenterrabia-1523-1524",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "spanish-conquest-of-the-aztec-empire",
+      "id": "spanish-conquest-of-the-aztec-empire--battle-of-acajutla--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-acajutla",
+      "type": "enabled"
     },
     {
       "authors": [

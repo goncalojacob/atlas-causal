@@ -2906,6 +2906,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-acajutla",
+      "kind": "event",
+      "locator": "Q3636310"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-adwa",
       "kind": "event",
       "locator": "Q302519"
@@ -4301,6 +4307,12 @@
       "id": "battle-of-tabocas",
       "kind": "event",
       "locator": "Q4872481"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tacuzcalco",
+      "kind": "event",
+      "locator": "Q97164453"
     },
     {
       "dissent": false,

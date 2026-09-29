@@ -2,6 +2,15 @@
   "from": 1500,
   "kind": "edge",
   "records": {
+    "battle-of-acajutla--battle-of-tacuzcalco--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-agnadello--battle-of-the-citadel-of-vicenza--precondition-of": {
       "from": "git",
       "versions": [
@@ -422,6 +431,15 @@
         }
       ]
     },
+    "spanish-conquest-of-guatemala--battle-of-acajutla--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "spanish-conquest-of-guatemala--spanish-conquest-of-el-salvador--precondition-of": {
       "from": "git",
       "versions": [
@@ -437,6 +455,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-conquest-of-the-aztec-empire--battle-of-acajutla--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

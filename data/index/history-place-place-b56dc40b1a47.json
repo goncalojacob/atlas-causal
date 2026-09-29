@@ -47,6 +47,15 @@
         }
       ]
     },
+    "acajutla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "acre-israel": {
       "from": "git",
       "versions": [
