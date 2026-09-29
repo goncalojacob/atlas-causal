@@ -110,9 +110,24 @@ test('the index is built on main, and checked on a pull request that carries one
   // a `/on:\s*\n\s*pull_request:/` cannot see past.
   assert.match(validate, /^on:$/m);
   assert.match(validate, /^\s{2}pull_request:$/m);
-  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['m\[0-9\]\*'\]$/m);
+  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['(m\[[0-9-]+\]\*)'\]$/m);
   // `m*` matched `main` too, and ran this job on every merge beside deploy.yml.
   assert.doesNotMatch(validate, /branches: \['m\*'\]/);
+  // **And `m[0-9]*` matched `m0`** (M88 §3, review B finding 3). Every landing
+  // pushes `m0` and then opens the pull request to `main` from it, so the
+  // whole suite ran twice on the same tree: once for the push and once for the
+  // pull request, which is the check the landing actually waits for. A lane
+  // branch is `m42`, `m88`, `m42b` — a digit after the m, and never the one
+  // that is `m0`. Asserted as the pattern's own meaning rather than as its
+  // text, so a differently written pattern that says the same thing passes and
+  // one that says something else does not.
+  const [, pushed] = /^\s{2}push:\n\s{4}branches: \['([^']+)'\]$/m.exec(validate);
+  const matches = (branch) => new RegExp(`^${pushed.replace(/\*/g, '.*')}$`).test(branch);
+  assert.ok(!matches('m0'), `the push pattern ${pushed} still matches m0`);
+  assert.ok(!matches('main'), `the push pattern ${pushed} still matches main`);
+  for (const branch of ['m42', 'm42b', 'm88', 'm1']) {
+    assert.ok(matches(branch), `the push pattern ${pushed} does not match the lane branch ${branch}`);
+  }
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
   assert.doesNotMatch(validate, /build-index/);

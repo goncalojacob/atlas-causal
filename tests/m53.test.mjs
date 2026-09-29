@@ -4,6 +4,9 @@ import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { checkRules } from '../src/validate/rules.js';
+import {
+  lastCountRow, countRowLine, checkCountRow, measureOver,
+} from '../tools/m53-retake.mjs';
 
 // M53 relaxes the contiguity rule the owner imposed on M52 and then withdrew,
 // creates the polities the Brazilian and Russian chains need, and gives every
@@ -272,17 +275,15 @@ const roles = new Set(JSON.parse(await readFile(path.join(ROOT, 'data/roles.json
 const from = (when) => earliest(when?.start);
 const to = (when) => (when?.end === null || when?.end === undefined ? Infinity : latest(when.end));
 // M56: the rule is **overlap**, not life at the event's start. Written here
-// as `meets` and held once in `tests/m56.test.mjs`; `alive` survives below for
-// the one thing that is a count and not a soundness check.
+// as `meets` and held once in `tests/m56.test.mjs`. The other rule — alive in
+// the year the event starts, which is the one §4.1 *counts* by and not a
+// soundness check — moved into `tools/m53-retake.mjs` with the measurement
+// itself (M88 §4), so the document, the retake and this file cannot come apart
+// about what is being counted.
 const meets = (id, when) => {
   const a = byId.get(id);
   if (!a || a.status !== 'active') return false;
   return !(to(a.when) < from(when) || from(a.when) > to(when));
-};
-const alive = (id, year) => {
-  const a = byId.get(id);
-  if (!a || a.status !== 'active') return false;
-  return year >= from(a.when) && year <= to(a.when);
 };
 
 // **The test M50 lacked.** Its own tests asked for reachability within the
@@ -341,9 +342,20 @@ test('every actors entry M53 wrote names an actor whose life overlaps the event'
 // row under the old one, which is the correspondence this file exists for;
 // pinning M53's row would have meant either a permanently red test or a
 // document quietly rewritten to say something it never measured.
-const COUNT_ROW = /^\| \*\*after M\d+\*\* \| (\d+) of (\d+) \| (\d+) of (\d+) \|/;
-const countRows = doc.split('\n').map((line) => COUNT_ROW.exec(line)).filter(Boolean);
-const counted = countRows[countRows.length - 1];
+//
+// **And it compares the figures only when the row says what corpus it was
+// measured over** (M88 §4, review B finding 4). "Re-take the count" is a thing
+// a person did, and lane B writes records every hour: between a batch landing
+// and somebody retyping four numbers this test was red, on a branch that had
+// done nothing wrong — 1257 active events against a row measured at 778.
+// A row now carries its own size (`| **after M42, 1257 active** | …`), and a
+// row whose size is not the size in hand is a measurement of another corpus:
+// the figures are not compared with it, the two *rules* below are held
+// instead, and `node tools/m53-retake.mjs --write` is what puts the row back
+// in step. A row that does name this corpus's size is still checked to the
+// digit. Nothing here pins a count: the size is read off the document and the
+// corpus is asked for its own.
+const counted = lastCountRow(doc);
 
 // M56 left the rule here alone, and this is why. §4.1 is a **coverage**
 // figure, not a soundness check, and the document states the rule it counted
@@ -360,30 +372,65 @@ const counted = countRows[countRows.length - 1];
 // and why they differ, and this reads the gap off that paragraph instead of
 // assuming there is none. A new entry of that shape still fails here unless
 // the document is re-taken with it.
+const measured = measureOver(events, actors, chain);
+
 test(`${DOC} §4.1 reports the figure the corpus actually shows`, () => {
   assert.ok(counted, `${DOC} §4.1 carries no "after M<n>" row`);
-  const [, chainNamed, chainTotal, allNamed, allTotal] = counted.map(Number);
-  const active = events.filter((e) => e.status === 'active');
-  const names = (e) => (e.actors ?? []).some((x) => alive(x.actor, from(e.when)));
-  const meeting = (e) => (e.actors ?? []).some((x) => meets(x.actor, e.when));
   // The document states both figures where they differ, as "... the figure is
   // **N**; counted by overlap it is **M**". Where it states no such pair the
   // two rules must still agree, which is what it said until 22 September.
+  // **This is held whatever the row says**: the rules are what §4.1 counts by,
+  // and they are true of the corpus in front of us or they are not.
   const stated = /the\s+figure\s+is\s+\*\*(\d+)\*\*;\s+counted\s+by\s+overlap\s+it\s+is\s+\*\*(\d+)\*\*/.exec(doc);
-  const byStart = active.filter(names).length;
-  const byOverlap = active.filter(meeting).length;
   if (stated) {
-    assert.equal(byStart, Number(stated[1]), `${DOC} §4.1 says ${stated[1]} counted by the start rule`);
-    assert.equal(byOverlap, Number(stated[2]), `${DOC} §4.1 says ${stated[2]} counted by overlap`);
+    assert.equal(measured.allNamed, Number(stated[1]), `${DOC} §4.1 says ${stated[1]} counted by the start rule`);
+    assert.equal(measured.byOverlap, Number(stated[2]), `${DOC} §4.1 says ${stated[2]} counted by overlap`);
   } else {
-    assert.equal(byStart, byOverlap,
+    assert.equal(measured.allNamed, measured.byOverlap,
       'the two rules no longer give the same figure: §4.1 says which one it counted by');
   }
-  const chainActive = active.filter((e) => chain.has(e.id));
-  assert.equal(chainActive.length, chainTotal, `${DOC} says ${chainTotal} active chain events`);
-  assert.equal(chainActive.filter(names).length, chainNamed, `${DOC} says ${chainNamed} chain events name an actor alive at their start`);
-  assert.equal(active.length, allTotal, `${DOC} says ${allTotal} active events`);
-  assert.equal(active.filter(names).length, allNamed, `${DOC} says ${allNamed} active events name an actor alive at their start`);
+  // And the four figures, when the row is about this corpus. When it is not,
+  // this passes and says so: `node tools/m53-retake.mjs --write` is the retake.
+  const verdict = checkCountRow(doc, measured);
+  assert.deepEqual(verdict.problems, [], verdict.problems.join('; '));
+});
+
+// The two halves of that rule, over a document this test writes rather than
+// over the repository's own: a corpus cannot be made to have two sizes, so the
+// only honest way to assert what happens at a size we do not have is to hand
+// `checkCountRow` a document that names one.
+test('a §4.1 row measured at another size is not compared, and one measured at this size is', () => {
+  const fixture = (size, allNamed) => [
+    '| | chain events | all active events |',
+    '|---|---|---|',
+    '| **before M53** | 1 of 36 | 198 of 285 |',
+    countRowLine({
+      milestone: 'M42', size, chainNamed: measured.chainNamed, chainTotal: measured.chainTotal, allNamed, allTotal: size,
+    }),
+  ].join('\n');
+
+  // A row naming a size this corpus does not have: somebody else's
+  // measurement, and not this test's business.
+  const elsewhere = checkCountRow(fixture(measured.size + 1, measured.allNamed + 7), measured);
+  assert.equal(elsewhere.compared, false, 'a row measured at another size is not compared');
+  assert.deepEqual(elsewhere.problems, []);
+
+  // A row naming this corpus's own size, with a figure that is wrong: caught.
+  const here = checkCountRow(fixture(measured.size, measured.allNamed + 7), measured);
+  assert.equal(here.compared, true, 'a row measured at this size is compared');
+  assert.ok(here.problems.length > 0, 'a wrong figure at this size is a failure');
+
+  // And the same row with the right figures passes, which is what the
+  // repository's own document is expected to be after a retake.
+  const right = checkCountRow(fixture(measured.size, measured.allNamed), measured);
+  assert.deepEqual(right.problems, []);
+  assert.equal(right.compared, true);
+
+  // A row with no size at all is history and not a claim: every row written
+  // before M88 is one.
+  const old = checkCountRow('| **after M53** | 36 of 36 | 235 of 285 |', measured);
+  assert.equal(old.compared, false);
+  assert.deepEqual(old.problems, []);
 });
 
 // §4.3's table against the records, in both directions: the three events named

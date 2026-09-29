@@ -50,14 +50,24 @@ export const SLACK_CHARS = 1;
 export const MIN_CHARS = 6;
 // A character's width and a line's half-height, in the graph's own units at
 // this zoom. Both shrink as the reader zooms in, because the text does not.
-export const charWidth = (k) => (LABEL_SIZE * EM) / k;
+//
+// **`size` since M88 §1** (the third review, finding B1). The text is written
+// at `LABEL_SIZE` divided by the zoom, which is one size on screen at every
+// zoom — and one size on screen is not one size in every *pane*: a phone
+// scales the whole picture down and the names with it, and eleven units came
+// out four pixels. The drawing answers that by writing the names larger in the
+// picture's own units, so they land at the floor on screen; every box measured
+// here has to be measured at the size the text will actually be written at, or
+// the placer would fit eleven-unit boxes and draw twenty-unit words in them.
+// Defaulted, so every caller that has one size goes on having it.
+export const charWidth = (k, size = LABEL_SIZE) => (size * EM) / k;
 // Exported since M77: the placer beside this file writes a label on a line of
 // its own when its own line is taken, and the half-height of a line is what
 // says which line a box is in. One number, in one place.
-export const halfLine = (k) => (LABEL_SIZE * 0.7) / k;
+export const halfLine = (k, size = LABEL_SIZE) => (size * 0.7) / k;
 
 // What a label of so many characters takes across the picture, slack and all.
-export const boxWidth = (chars, k) => (chars * SLACK + SLACK_CHARS) * charWidth(k);
+export const boxWidth = (chars, k, size = LABEL_SIZE) => (chars * SLACK + SLACK_CHARS) * charWidth(k, size);
 // The slice of the picture a label is allowed: what the old constant cut took
 // at the world view, so that at k = 1 the answer is that constant exactly.
 export const SLICE = boxWidth(LABEL_CHARS, 1);

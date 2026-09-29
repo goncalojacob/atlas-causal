@@ -43,6 +43,7 @@ import { eventsInView } from './util/viewport.js';
 import { readCount, readCountText } from './standing.js';
 import { showingReview } from './demo.js';
 import { arrangementOf } from './graph-view/arrangement.js';
+import { renderKey, shardsArrived } from './render-key.js';
 
 // The one sentence the count is (M80), pure so that what it says can be held
 // to without a browser.
@@ -193,13 +194,26 @@ export function createWindowControl(group, { atlas, state }) {
     };
   };
 
-  // `options` is taken and not read: this control keeps no key — every render
-  // recomputes the sentence from the state and the atlas — so being forced is
-  // being rendered. It is in the signature because `main.js` forces the four
-  // drawings that read `workingSet` with one call, and a control that threw
-  // away the argument would be a control nobody could force (M83, B2).
-  function render(s, options = {}) { // eslint-disable-line no-unused-vars
+  // **And a key, since M88 §5** (the third review, finding B5). This control
+  // kept none — every render recomputed the sentence from the state and the
+  // atlas — and `countInView` is not a cheap question: under a lens it is
+  // `workingSet` and, on the graph, a whole arrangement. `main.js` calls
+  // `remeasure` from four places on one shard arrival, so the same sentence
+  // was computed four times over for one answer.
+  //
+  // The key is the shared one (`render-key.js`): the whole state, and the
+  // count of attribute-shard arrivals beside it, because what a record is
+  // *called* arrives a century at a time and the read count is over the very
+  // records the sentence counts. `force` is what the callers that know
+  // something has changed outside both — a source's citers, an actor's
+  // grounds — say, and it is why the argument was in the signature at all
+  // (M83, B2).
+  let drawnFor = null;
+  function render(s, options = {}) {
     if (!atlas.extent) return;
+    const key = renderKey(s, shardsArrived(atlas), showingReview() ? 1 : 0);
+    if (!options.force && key === drawnFor) return;
+    drawnFor = key;
     // Resolved and read: the note beside the count is about the events *of the
     // window* — which is what the map's corner said before it moved here — and
     // `bandEvents` is the picture and not the window. A state with no window at

@@ -55,7 +55,7 @@ import { labelOf, LOADING_LABEL } from './attributes.js';
 import { horizonBand } from './horizon.js';
 import { workingSet, heldSet } from './emphasis.js';
 import { walkOrSelect } from './chain.js';
-import { rowLanes, laneOf, barBox } from './lanes.js';
+import { rowLanesPacked, laneOf, barBox } from './lanes.js';
 import { largeEventsIn } from './large.js';
 import { isParent, ringClasses } from './parts.js';
 import { GLYPH_BOX, glyphAttributes, glyphClasses, hasGlyph, installGlyphs } from './map/glyphs.js';
@@ -241,6 +241,23 @@ const GLYPH_MIN_BAR = GLYPH_BOX;
 const STUB_WIDTH = 2;
 const STUB_HEIGHT = 3;
 const STUB_TALLEST = 9;
+
+// How many rows the pane holds, and the one packing that answers the picture.
+//
+// Pure and exported so that "the lanes are packed once per drawing" can be
+// asserted without a browser: `pack` is the seam a test counts through, and
+// the drawing hands it the real one (M88 §9).
+//
+// A pane that has measured nothing — a first render before the panes are sized
+// — has no cap at all, which is the picture M77 drew.
+export function lanesFor(events, scale, width, {
+  packing = {}, titleRoom = {}, paneHeight = 0, pack = rowLanesPacked,
+} = {}) {
+  const maxRows = paneHeight > ROW_LIMITS.AXIS_HEIGHT
+    ? Math.max(1, Math.floor((paneHeight - ROW_LIMITS.AXIS_HEIGHT) / ROW_LIMITS.ROW_HEIGHT))
+    : Infinity;
+  return pack(events, scale, width, { ...packing, ...titleRoom, maxRows });
+}
 
 export function createTimeline(container, { atlas, state, createScale = createTimelineScale }) {
   const root = svg('svg', { class: 'timeline', role: 'group', 'aria-label': 'Timeline and the window of time' });
@@ -505,8 +522,26 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // title, so the last century's names were written into the pane's edge and
     // cut by it. A name written on the other side of its own bar is still
     // beside the thing it names, which a name half off the page is not.
-    const at = labelPlacement(item.x, item.width, labelRoom(name), width);
-    if (!labelFits(row, at, labelRoom(name), item.id)) return;
+    const room = labelRoom(name);
+    const at = labelPlacement(item.x, item.width, room, width);
+    // **And never written past the pane's edge** (M88 §9). `labelPlacement`
+    // moves a title to the other side of its bar where that side has the room
+    // and, where neither does, leaves it on the right — which is M86 §4's own
+    // answer for a phone whose pane is narrower than the name, and is a name
+    // cut by the edge for a bar that begins early and runs to the open end:
+    // its right edge is at the pane's and its left is 1,030 px of its own bar.
+    // Nothing checked, because past the cap the claim below happened to refuse
+    // that one; with the title room kept past the cap it does not, and the
+    // review's own "COVID-19 pander" is back under another name. A bar with no
+    // room for its name still carries it under the pointer, which is the
+    // answer the map and the graph give for a mark they could not name.
+    //
+    // The pane being narrower than the name at all is the one case left as it
+    // was: there is no side to move to and nothing to be gained by drawing
+    // nothing.
+    const from = at.anchor === 'end' ? at.x - room : at.x;
+    if (room <= width && (from < 0 || from + room > width)) return;
+    if (!labelFits(row, at, room, item.id)) return;
     into.take('text', {
       x: at.x, y: top + tall / 2,
       class: `bar-label ${classes.includes('selected') ? 'selected' : ''}${item.inside ? '' : ' faded'}`.trim(),
@@ -744,14 +779,17 @@ export function createTimeline(container, { atlas, state, createScale = createTi
           ? labelRoom(name) : 0;
       },
     };
-    lanes = rowLanes(near, scale, width, { ...packing, ...titleRoom });
-    // What the pane holds, at the floor a row may not go below. A pane that has
-    // measured nothing — a first render before the panes are sized — has no cap
-    // at all, which is the picture M77 drew.
-    const maxRows = paneHeight > AXIS_HEIGHT
-      ? Math.max(1, Math.floor((paneHeight - AXIS_HEIGHT) / ROW_HEIGHT)) : Infinity;
-    const capped = lanes.length > maxRows;
-    if (capped) lanes = rowLanes(near, scale, width, { ...packing, maxRows });
+    // **One pack and not two** (M88 §9, the third review, finding B9). The cap
+    // was learned by packing once without it, and the picture was then packed
+    // again with it — two sweeps over the whole corpus, on every move of the
+    // band, and the second one threw the title room away: room reserved for a
+    // title is what keeps two titles off each other, and dropping it past the
+    // cap was a second reason the titles collide there. The cap is arithmetic
+    // about the pane and is known before any packing; `packRows` says whether
+    // it bound.
+    const packed = lanesFor(near, scale, width, { packing, titleRoom, paneHeight });
+    lanes = packed.lanes;
+    const capped = packed.capped;
     // The rows are laid out into the height the pane has: they grow into the
     // room it has going spare, as far as `LANE_MAX`, and they never shrink
     // below the height a title needs. The drawing is never shorter than the

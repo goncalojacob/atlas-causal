@@ -22,8 +22,51 @@ export function createLensChips(container, { atlas, state }) {
   const badge = html('span', { class: 'lens-chips', hidden: 'hidden' });
   container.append(badge);
 
+  // What was drawn last, and what the keyboard was standing on when it was
+  // thrown away (M88 §7, the third review, finding B7).
+  //
+  // `render` rewrites the whole list on every state change, and the reader's
+  // own button is among the elements it replaces: pressing "all of these" with
+  // the keyboard dropped the focus to the top of the document. The graph has
+  // answered this since M83 (B5) by remembering *which record* named the
+  // focused element and finding its match after the redraw; here the element
+  // is named by `data-action` and, for a chip's ×, by `data-focus`.
+  //
+  // Two halves, and the first is what makes the second rare: a render that
+  // would draw what is already on screen is skipped, so the notifications that
+  // change nothing about the chips — a band nudge, a category toggled, a
+  // century landing that names nothing here — do not touch the focus at all.
+  let drawn = null;
+  const focusedHere = () => {
+    const active = badge.ownerDocument?.activeElement;
+    if (!active || !badge.contains(active)) return null;
+    return {
+      action: active.getAttribute('data-action'),
+      focus: active.getAttribute('data-focus'),
+    };
+  };
+  // Back to the same control, or — where it was a chip's × and that chip is
+  // gone, which is what the press did — to the next chip's ×, and then to
+  // "show everything", which is the one control that is always there.
+  const restore = (was) => {
+    if (!was) return;
+    const exact = was.focus
+      ? badge.querySelector(`[data-focus="${CSS.escape(was.focus)}"]`)
+      : badge.querySelector(`[data-action="${CSS.escape(was.action ?? '')}"]`);
+    const next = exact
+      ?? (was.action === 'unfocus' ? badge.querySelector('.lens-drop') : null)
+      ?? badge.querySelector('[data-action="clear-focus"]');
+    next?.focus?.({ preventScroll: true });
+  };
+
   function render(s) {
     const foci = lensLabels(atlas, s);
+    // Whether this is the same list drawn again: the chips and the one switch
+    // that has a state of its own.
+    const key = JSON.stringify([foci.map((lens) => [lens.kind, lens.focus, lens.name ?? null]), Boolean(s.focusAll)]);
+    if (key === drawn) return;
+    drawn = key;
+    const was = focusedHere();
     // A focus whose record has resolved but whose century has not landed has no
     // name yet, and the chip says so: the core's fallback is the record's id,
     // and a slug in a chip would be read as what the thing is called
@@ -44,6 +87,7 @@ export function createLensChips(container, { atlas, state }) {
         aria-pressed="${s.focusAll ? 'true' : 'false'}"
         title="Events that every focus keeps, rather than events any of them keeps">all of these</button>` : ''}
       <button type="button" class="link small" data-action="clear-focus">${esc(BACK_LABEL)}</button>`;
+    restore(was);
   }
 
   // The chips' own buttons. "Show everything" writes `none` rather than
