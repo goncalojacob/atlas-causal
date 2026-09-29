@@ -13629,3 +13629,48 @@ harder. **It should say so and carry on**, which is what this one does.
   turn the check red, and holding the data back does not scale). Three of the
   first four are in how candidates are chosen, which is where this run's reading
   time keeps going; the fifth is the one that needs somebody else.
+
+## A15 (1) — the balance, measured, and the rule it puts on this lane's batches
+
+*29 September, the 05:07Z fire. No import and no network: the balance is a
+count over `data/index/core-*.json`, which is the same question the stand has
+been asking every fire and never as a pass with a threshold beside it.*
+
+A15(1) pauses M42b's "Europe before 1900" clause **until Africa and Asia each
+hold A10's 303 active events**, and gives M42b the trailing lanes' empty
+centuries instead — the Americas' 16th to 18th, and Africa and Asia before
+1800. So the pass is one threshold read against four counts, and then a rule
+this lane's own batches carry.
+
+| lane | active | main | active before 1800 |
+| --- | --- | --- | --- |
+| Europe | 552 | 84 | 218 |
+| Americas | 343 | 56 | 173 |
+| **Asia** | **183** | 64 | **1** |
+| **Africa** | **182** | 31 | **0** |
+
+**The clause stays paused.** Africa is 121 short of 303 and Asia 120 short,
+so neither lane has reached the threshold and nothing about M42b's second
+half changes on this fire's evidence. The two empty centuries A15(1) hands
+M42b are real: **Africa holds no active event dated before 1800 at all, and
+Asia holds exactly one** — which is the "hold nothing and one event" the
+amendment names, confirmed rather than assumed.
+
+**A10's order of need is unmoved: Africa still trails**, 182 against Asia's
+183, so the next import batch in this lane is Africa's unless a chain crosses
+out of it.
+
+**What binds this lane.** A15(1)'s second sentence is not about M42b: *a batch
+that walks a held umbrella's `P361` children imports only the children it can
+connect to what exists with an edge under A5, and its note counts the
+candidates it left.* That is the vein batches 48 to 64 have been working — a
+held war read as a chain — and it is now a rule rather than a practice, so
+every batch note from here carries **the candidates left unconnected** beside
+the edges written. It is also the answer to the thing the last three stands
+kept reporting: a `P361` walk that imports every child produces filed events
+with no edge, which is what 311 events with no edge at all are made of.
+
+**Counts.** Nothing written, nothing refused, no record touched. Corpus
+unchanged: **1,260 active, 235 main, 1,025 filed, 1,049 active edges, largest
+component 711, 562 edges crossing an umbrella, 393 components, 311 events
+with no edge**; validator **0 errors, 727 warnings**.
