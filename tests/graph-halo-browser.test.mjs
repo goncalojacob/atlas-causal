@@ -137,8 +137,15 @@ test('the halo behind a label is the same width on screen at every zoom', { skip
     await seenIntro(page);
     await open(page, url(VIEW), DRAWN);
 
+    // **Two zooms and not three** (M88 §12, the third review, finding B12).
+    // The property is that the band holds its width on screen wherever the
+    // reader has taken the picture, and a third point on the same line says
+    // nothing a second does not: what it cost was a third of this test's own
+    // time — the zoom, the wait for a picture, and a pixel read over every
+    // label the picture draws. The world and the far end of the range are
+    // what the property is about.
     const measured = [];
-    for (const target of [1, 3, 6]) {
+    for (const target of [1, 6]) {
       await page.eval(WORLD);
       await waitFor(page, DRAWN, `the picture at k = ${target}`);
       // Zoomed onto a label rather than onto the middle of the pane. The
@@ -160,7 +167,8 @@ test('the halo behind a label is the same width on screen at every zoom', { skip
 
     const [world, ...closer] = measured;
     assert.ok(world.band > 0, `there is a halo at all (${JSON.stringify(measured)})`);
-    assert.ok(measured[2].k > measured[0].k * 3, `the three zooms are three pictures (${JSON.stringify(measured)})`);
+    assert.ok(measured[measured.length - 1].k > measured[0].k * 3,
+      `the two zooms are two pictures (${JSON.stringify(measured)})`);
     // The property, and the whole of this milestone: a band the same width on
     // screen wherever the reader has taken the picture. A pixel of slack for
     // where a glyph's own edge falls between two device pixels, which is well

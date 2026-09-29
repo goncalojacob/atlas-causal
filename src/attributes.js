@@ -120,6 +120,35 @@ export function shardsOnScreen(atlas, kind, id) {
 // derived string as the name of the thing. So a bar, a mark and a node are
 // drawn with no label until their century lands, and labelled when it does
 // (i4-brief, "no fallback text that could be mistaken for data").
+// Asking for a set of shards, and being told when one of them **lands**.
+//
+// `main.js` asks for the window's shards on every state change and redraws the
+// three pictures, the card, the chips, the intro and the composer's step list
+// when one arrives. A shard already in hand answers at once — `loadAttributes`
+// shares the promise and resolves a held shard immediately, which is what
+// makes an ask idempotent — so every band nudge, every click and every
+// category toggle booked a second full redraw for an arrival that had already
+// happened, with nothing on screen different for it (M88 §5, the third
+// review, finding B5).
+//
+// So the landing is chained only for the shards that are not held: what is
+// here is asked for all the same, because the ask is also what touches the LRU
+// and keeps it from being evicted, and it simply says nothing.
+//
+// `{ batch: true }`, because this is the ask that is many: the joins over the
+// corpus are rebuilt once for the frame's whole arrival rather than once per
+// file (data.js, `loadAttributes`). Returns the promises, so a test can wait
+// for them; nothing in the page does.
+export function askForShards(atlas, shards, landed) {
+  const held = new Set(atlas.loadedAttributeShards?.() ?? []);
+  return [...shards].map((shard) => {
+    const asked = atlas.loadAttributes(shard, { batch: true });
+    return held.has(shard.key)
+      ? asked.catch(() => {})
+      : asked.then(landed, () => {});
+  });
+}
+
 export function labelOf(atlas, record) {
   return record && atlas.attributesLoaded(record.id) ? record.title : null;
 }

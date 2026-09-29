@@ -150,6 +150,17 @@ test('pulling an end of the band moves the map while the pointer is still down',
         ...at, clientX: Math.round(strips.left + 40), clientY: box.top + box.height / 2 }));
       return true;`;
     await page.eval(grab);
+    // **One frame, and the pointer is still down** (M88 §9). A drag books its
+    // write on the next animation frame — a trackpad reports a hundred moves a
+    // second and every one of them was a full redraw — so what this waits for
+    // is that frame and not the pointer coming up, which is the property the
+    // test is about and is unchanged.
+    await waitFor(
+      page,
+      `return document.querySelector('#map-band-strip .window-handle.to')
+        .getAttribute('aria-valuenow') !== ${JSON.stringify(before.window.to)};`,
+      'the far end to follow the pointer',
+    );
 
     const during = { window: await page.eval(WINDOW), marks: await page.eval(MARKS) };
     assert.notDeepEqual(during.window.to, before.window.to,

@@ -48,6 +48,22 @@ const NO_DESCRIPTION = /The item carries no description in English or Portuguese
 // `"False positives" scandal`.
 const OPENS = /The English Wikipedia article "(.*?)", at revision (\d+), opens: "/;
 
+// And the same framing without the quoted lead behind it: `…, at revision N,
+// records a battle of…`, `…, describes itself in its short description as…`,
+// `…, § Rise of Nazi Germany, states: "…"`. Three of the 993 imported events
+// carry it — written by the curation fire in the importer's voice rather than
+// by the importer's own fixed sentence — and `OPENS` could not see past the
+// verb, so the whole framing stayed in the body: the card printed a revision
+// number as the first thing it said about the Battle of Kapyong, and the
+// search index was findable by "revision" and "wikipedia" for all three
+// (M88 §2, deviation below). The article and the revision are the credit here
+// exactly as they are above; what is left of the sentence is the account, and
+// it keeps the record's own next word — these summaries go on saying "The
+// article states that…" two sentences later, which is the voice this leaves
+// them in and not one invented for them.
+const FRAMED = /The English Wikipedia article "(.*?)", at revision (\d+), /;
+const FRAMED_AS = 'The article ';
+
 // And the catch-all, after the four framings above have been lifted out: any
 // sentence still left that names the maintainer's page or says the record is
 // unread. It exists because the list above is a list, and a list goes stale:
@@ -120,6 +136,17 @@ export function readSummary(text) {
     const lead = (ends >= 0 ? body.slice(from, ends) : body.slice(from)).replace(/"\s*$/, '');
     body = `${body.slice(0, opens.index)}${lead}${ends >= 0 ? body.slice(ends) : ''}`;
   }
+  // The same framing with no quoted lead behind it, read only where the first
+  // did not match: the two are one sentence and one credit, never two.
+  const framed = opens ? null : FRAMED.exec(body);
+  if (framed) {
+    [, article, revision] = framed;
+    body = `${body.slice(0, framed.index)}${FRAMED_AS}${body.slice(framed.index + framed[0].length)}`;
+  }
+  // Whether the article's own account is now in the body, which is what says
+  // the item's description would be a second account beside it rather than the
+  // only one there is.
+  const fromArticle = Boolean(opens || framed);
 
   // Then the item, whose id is the other half of the credit. Where the
   // description rides on the same sentence it is kept, in the quotation marks
@@ -127,7 +154,7 @@ export function readSummary(text) {
   const described = ITEM_DESCRIBED.exec(body);
   if (described) {
     [, wikidata] = described;
-    body = body.replace(ITEM_DESCRIBED, opens ? '' : `"${described[2]}"`);
+    body = body.replace(ITEM_DESCRIBED, fromArticle ? '' : `"${described[2]}"`);
     provenance.push(described[0]);
   }
   const imported = IMPORTED_BY.exec(body);
@@ -138,7 +165,7 @@ export function readSummary(text) {
   }
   const description = DESCRIPTION.exec(body);
   if (description) {
-    body = body.replace(DESCRIPTION, opens ? '' : `"${description[1]}"`);
+    body = body.replace(DESCRIPTION, fromArticle ? '' : `"${description[1]}"`);
     provenance.push(description[0]);
   }
   const none = NO_DESCRIPTION.exec(body);
