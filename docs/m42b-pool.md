@@ -10984,15 +10984,72 @@ of the paused-Europe partition moved again.*
 | 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
 | **all** | **555 / 85** | **193 / 31** | **200 / 63** | **354 / 56** |
 
+### Deviation 1345
+
+**1345. A drag test that the corpus growing made red, on the runner and not
+here.** `tests/m76-browser.test.mjs` 93 — *"dragging a handle still moves the
+window, and the map still answers mid-gesture"* — **failed on both of this
+fire's completed runs, 1975 and 1980, with the identical error**: *"the far end
+moved the way the pointer went (1415 to 2025 → 1415 to 2025)"*. The window did
+not move at all. **It passes here, four runs of four, eight tests of eight each
+time**, which is why this is not "a flake": it is environment-dependent and it
+reproduces on the runner every time.
+
+**It was green on this branch two runs ago** (1967 on `cd4e4154`, 1972 on
+`7c9c395f`) and went red on the first run after this fire merged `origin/m42`.
+So the question is what that merge changed that a drag on the map band could
+see. The answer is **nothing in the display**: between `7c9c395f` and this head,
+`src/` changed in exactly two files, `src/util/geo.js` (one added
+`haversineKm`, which nothing in the browser calls) and `src/validate/rules.js`
+(the validator, which the atlas page does not load). What did change is the
+**corpus and the index**: 1,284 active events to 1,302, and every index file
+with them.
+
+So: **first paint got slower, and the test's precondition is not strong enough
+for a slower first paint.** It waits for `MAP_READY` and then for
+`#map-band-strip` to *exist*, and then dispatches `pointerdown` on the handle
+immediately. A strip that exists is not a strip whose handle is listening.
+
+**Not fixed here, and the reason is the rule about speculative pushes.**
+`tests/m76-browser.test.mjs` is lane A's, the failure cannot be reproduced in
+this sandbox, and a change to another lane's test that this fire cannot
+demonstrate fixing anything is worse than a written report. The proposed patch,
+for whoever owns M76:
+
+```js
+// after the strip exists, before the gesture
+await waitFor(page, `
+  const h = document.querySelector('#map-band-strip .window-handle.to');
+  return Boolean(h && h.getBoundingClientRect().width > 0
+    && h.getAttribute('aria-valuenow') !== null);`, 'the handle');
+```
+
+It strengthens the precondition and weakens no assertion; if the handle is
+listening by the time it resolves, the gesture lands as it does here.
+
+**Why this matters beyond one test.** The corpus only grows, and both records
+lanes grow it every fire. A browser test whose precondition is "the element
+exists" rather than "the element is ready" gets closer to red with every batch
+either lane takes. This one crossed the line on 29 September at 1,296 active
+events. **It is the first time a records batch has made a display test red by
+weight alone**, and it will not be the last.
+
 ### The check, and the tests
 
-**Run 1975, on the merge head, failed on two things and both were read.** The
-browser half failed `tests/m76-browser.test.mjs` 93 — *"dragging a handle still
-moves the window"*, with the window unchanged at 1415–2025, which is a
-pointer-gesture that did not arrive. **It passes locally on this fire's head,
-eight of eight**, and no re-run was spent on it: the pushes that followed are
-the re-check. The pure half failed `tests/leadcache.test.mjs`, which is
-**deviation 1344** above and is fixed in this fire's last commit.
+**Two runs completed and both failed on the same one test.** Run 1975, on the
+merge head, failed twice over: the pure half on `tests/leadcache.test.mjs`,
+which is **deviation 1344** and is fixed, and the browser half on
+`tests/m76-browser.test.mjs` 93. **Run 1980, on this fire's final head
+`3e40f7f1`, passed `Validate records` and the whole pure half and failed on
+that same browser test alone, 299 of 300, with the identical error.** That is
+**deviation 1345** above: a drag test the growing corpus made red on the
+runner, green here four runs of four, in display code this lane does not touch
+and cannot demonstrate a fix for. Reported with a proposed patch rather than
+pushed blind.
+
+**So the branch is red on one test, and it is named.** Everything this fire
+wrote is green: `Validate records` passes, the 1,886 pure tests pass, and the
+299 browser tests that are not M76's 93 pass.
 
 **Locally on the final head, `0daa6e2b`: 1,886 pure and 300 browser, 2,186
 tests, 2,186 passing, nothing skipped.** The pure half found deviation 1344 and

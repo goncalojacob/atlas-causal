@@ -22567,6 +22567,27 @@ eighteen locators A15(2) could not parse and so never checked, while reporting
 clean — **this fire found two ways for "the evidence is on disk" to read green
 while it is not.**
 
+**M42b deviation 1345 — a records batch made a display test red by weight
+alone, 29 September.** `tests/m76-browser.test.mjs` 93, *"dragging a handle
+still moves the window"*, **failed on both of the fire's completed runs (1975
+and 1980) with the identical error** — the window did not move at all — and
+**passes in the sandbox four runs of four**. It was green on this branch two
+runs earlier and went red on the first run after the fire merged `origin/m42`;
+between those heads `src/` changed in exactly two files, `src/util/geo.js`
+(an added `haversineKm` nothing in the browser calls) and `src/validate/rules.js`
+(which the atlas page does not load). **What changed is the corpus**: 1,284
+active events to 1,302, and the index with it. The test waits for `MAP_READY`
+and for `#map-band-strip` to *exist*, then dispatches `pointerdown` at once —
+and a strip that exists is not a strip whose handle is listening. **Reported
+with a proposed patch rather than fixed**: the file is lane A's, the failure
+does not reproduce here, and a change to another lane's test that this fire
+cannot demonstrate fixing anything is worse than a written report. The point
+worth the owner's attention is general: **the corpus only grows, both records
+lanes grow it every fire, and a browser test whose precondition is "the element
+exists" rather than "the element is ready" gets closer to red with every batch.**
+This one crossed at 1,296 active events. Everything else on the head is green —
+`Validate records`, all 1,886 pure tests, and 299 of the 300 browser tests.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
