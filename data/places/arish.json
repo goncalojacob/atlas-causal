@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arish",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q238452",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Arish",
+    "pt": "Alarixe"
+  },
+  "sources": [],
+  "names": [
+    "Arish",
+    "Alarixe"
+  ],
+  "where": {
+    "lon": 33.8,
+    "lat": 31.133333333333,
+    "precision": "city",
+    "label": "Arish"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

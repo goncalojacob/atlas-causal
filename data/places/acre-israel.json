@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "acre-israel",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q126084",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Acre, Israel",
+    "pt": "Acre (Israel)"
+  },
+  "sources": [],
+  "names": [
+    "Acre",
+    "Acre, Israel",
+    "Acre (Israel)"
+  ],
+  "where": {
+    "lon": 35.083888888889,
+    "lat": 32.926111111111,
+    "precision": "city",
+    "label": "Acre, Israel"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

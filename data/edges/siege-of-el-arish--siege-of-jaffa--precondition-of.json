@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-el-arish--siege-of-jaffa--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abukir (1799)\", revision 1373172066"
+    }
+  ],
+  "from": "siege-of-el-arish",
+  "to": "siege-of-jaffa",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Jaffa article states the order of the march and what the fortress was for: \"Having captured an Ottoman fortress at El Arish just weeks earlier (February 17–20), he was looking to cement his foothold in the Levant. In early March, his troops reached Jaffa.\" The Abukir article narrates the same sequence from outside it — \"Napoleon took the initiative and marched north in February 1799, taking Gaza City, El Arish, and Jaffa, but was then held up at Acre for over two months.\" Precondition-of and not caused: El Arish was the Ottoman fortress on the desert road, and taking it is what put a French army in front of Jaffa; neither article says it compelled the attack on Jaffa, which the Jaffa article gives its own reasons for (\"Napoleon had to win Jaffa before he could advance any further\").",
+  "dispute": null
+}

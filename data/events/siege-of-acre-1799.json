@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-acre-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815109",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Siege of Acre (1799)",
+    "pt": "Cerco de Acre (1799)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815109"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Acre (1799)\", revision 1372403085"
+    }
+  ],
+  "title": "Siege of Acre (1799)",
+  "summary": "The English Wikipedia article \"Siege of Acre (1799)\", at revision 1372403085, opens: \"The siege of Acre of 1799 was an unsuccessful French siege of the Ottoman city of Acre and was the turning point of Napoleon's invasion of Egypt and Syria, along with the Battle of the Nile. It was Napoleon's third tactical defeat in his career, being defeated at the Second Battle of Bassano and the Battle of Caldiero three years previously during the Italian campaign, and his first major strategic defeat, along with the last time he was defeated in battle for 10 years. As a result of the failed siege, Napoleon retreated two months later and withdrew to Egypt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815109, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 siege during the French Invasion of Egypt and Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-03-20",
+    "endDate": "1799-05-21"
+  },
+  "place": "acre-israel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

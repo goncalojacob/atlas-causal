@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-acre-1799--battle-of-mount-tabor-1799--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mount Tabor (1799)\", revision 1373988420"
+    }
+  ],
+  "from": "siege-of-acre-1799",
+  "to": "battle-of-mount-tabor-1799",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Mount Tabor's own lead states the chain without a gap: \"Upon hearing that an Ottoman army had been sent from Damascus to Acre for the purpose of forcing the French to raise the siege, Bonaparte sent out detachments to track it down. Kléber led his division of 2,000 men and decided to engage the Ottoman army near Mount Tabor.\" The siege is why the army from Damascus was on the road and why Bonaparte sent men after it; caused rather than enabled, because the article gives the relief of Acre as the purpose of the march the battle intercepted. Probable and not consensus: this is Wikipedia's account of the campaign, not a work it cites for the point (A2).",
+  "dispute": null
+}
