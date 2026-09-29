@@ -10818,6 +10818,12 @@ atlas's to correct.
 
 ### The check, and the tests
 
+**Run 1967, on `cd4e4154`** — this fire's final head — **concluded success.
+The branch is green**, for the first time since the two browser failures the
+last fire bisected to `origin/m42`'s merge. Runs 1959 and 1963 were cancelled by
+the pushes that followed them, which is this branch's normal shape; this fire
+pushed six times.
+
 **The two browser failures the last fire bisected to `origin/m42`'s merge are
 gone.** `tests/m86-browser.test.mjs` and `tests/map-browser.test.mjs` both pass
 on this fire's head, and the browser half is **300 tests, 300 passing, nothing

@@ -22362,6 +22362,18 @@ component **unmoved at 714**; **Asia's eighteenth century 9 → 13** and Asia be
 `Q207318` has **140** `P361` children, not five, and what limits their import is
 A15(1) and not supply. `docs/m42b-pool.md` → "Batch 40" is the full account.
 
+**M42b — the branch is green again, 29 September.** Run **1967** on
+`cd4e4154`, the thirty-sixth fire's final head, **concluded success**: the two
+browser failures the previous fire had bisected to `origin/m42`'s merge —
+a resting title past the pane's right edge in `tests/m86-browser.test.mjs` and
+"Pamplona" overlapping "PYRENEES" in `tests/map-browser.test.mjs` — both pass,
+and the whole suite is **2,157 tests, nothing skipped, nothing failing**
+(1,857 pure, 300 browser). Neither was this lane's to fix and neither was fixed
+here; what moved is `origin/m0`'s M88, `origin/m42`'s A15 passes and the corpus
+under both. **What it unblocks is the landing routine**, which a red branch
+stops, and which is the thing the owner set up so the site would keep growing
+while they were away.
+
 **M42b batch 41 — the French invasion of Egypt and Syria, 29 September.** The
 same fire's third batch, and the one aimed at **the thinnest cell in the atlas**:
 Africa before 1800, three active events in four centuries of a continent.
