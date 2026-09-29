@@ -22492,6 +22492,57 @@ campaign is in a component of three with Macau and the Bali Strait, while the
 five battles it is the umbrella of are a component of five, because A14 forbids
 exactly those five edges. `docs/m42b-pool.md` → "Batch 41" is the full account.
 
+**M42b batch 42 — the Syrian half of the Egypt campaign, 29 September.** The
+move the previous fire's note put first, taken. `Q253684` answers **twenty-four
+`P361` children, five held and nineteen not**, and **six of the nineteen carry
+an English sitelink**: the two sieges of El Arish, Jaffa, Acre, Mount Tabor and
+the land battle of Abukir. All six were taken; **the thirteen with no English
+article were left, with one reason for all thirteen** — a record with no article
+has no lead to quote, no revision to cite and nothing for A15(1) to read before
+an edge is written, so it would arrive edgeless, which is A15(1)'s whole
+objection. All six name the campaign and nothing else, so all six are filed
+under it and **main stays at 235**, as through the six batches before this.
+**Five places**: three the tool wrote and **two a person wrote because A9's
+chain refused their class and said so** — `abu-qir` (*neighbourhood*) and
+`mount-tabor` (*mountain, hill*), neither class in
+`data/imports/wikidata-seeds.json`, both written from the item's own `P625`
+with `summary: null` and the flag `a9-place-by-hand`. Adding two classes to a
+closed vocabulary would change what every future import places, and this batch
+had no business making that edit. **A15(6), merged in from `origin/m42` this
+fire, fired twice and logged both**: Israel (inception 1948) and Egypt
+(inception 1922) refused as the place of 1799 battles. **Six edges**, five of
+them carrying a mechanism in the article's own words and the sixth saying
+openly that it rests on two articles read together; **A15(5) refused none**,
+and **A14 ruled out six more**, the campaign to each of its new children.
+**Deviation 1343, found and closed in the same batch**: eighteen of this lane's
+own edge locators (batches 38 to 41) were written with typographic quotation
+marks, which `parseLocator` cannot read, so `tools/cache-evidence.mjs` printed
+them below its totals as *"a locator naming no article and revision"* and
+**never checked them at all** while reporting a clean zero. Straightened; the
+check now reads 2,659 citations instead of 2,633, and **one real gap the curly
+quotes had been hiding** — *"History of Elmina"* at revision 1361080834 — came
+out and was cached. A check whose failure mode is *"I could not read this, so I
+said nothing"* reports clean when it is blind, and `tests/a15-cache.test.mjs`
+passed throughout. **A15(4) left one date unsettled and said so**:
+`second-siege-of-el-arish` is 17–21 December from the item and its article's
+*Siege* section says *"They besieged the fort on December 23, 1799"*; the first
+sentence carries no date, so nothing fired, and the record keeps the item's
+dates under the flag `date-vs-article-body` with a note, because one sentence
+is not the named revision A7 asks for and no date is invented. **A15(11) is 0
+of 6, and the batch went looking for the edge that would have crossed**:
+`siege-of-acre-1799` → `coup-of-18-brumaire`, which the Acre article states as
+a hedged counterfactual (*"it is likely that had he taken Acre he might have…
+would not have carried out later that year the coup"*, then *"He might have
+still taken power in France, later on"*) and which **the Coup of 18 Brumaire
+article does not state at all — it contains the words Egypt, Acre and Abukir
+nowhere**. Refused, and this is the third batch to meet the same shape: the
+links that would cross an umbrella are the ones the sources state
+counterfactually or not at all. The corpus goes **1,296 → 1,302 active**, edges
+1,069 → **1,075**, main **235**, the largest component **unmoved at 714**;
+**Africa before 1800 9 → 12** and **Asia before 1800 16 → 19**, and the
+Egypt–Syria component **5 → 11**, the fifth largest in the atlas.
+`docs/m42b-pool.md` → "Batch 42" is the full account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review
