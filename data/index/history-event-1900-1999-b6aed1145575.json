@@ -7186,6 +7186,14 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -10261,6 +10269,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -14398,6 +14415,13 @@
         {
           "first": true,
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },

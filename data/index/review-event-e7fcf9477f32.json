@@ -4030,12 +4030,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "article-is-redirect"
         ],
-        "note": "The article this item's own English sitelink names, \"Action at Tamanana, 9 September 1645\", is a redirect to the broader article \"Insurrection of Pernambuco\", and that is the article the summary quotes and the citation names: the lead is the insurrection's and not this action's. The insurrection's § Course does describe the action, citing Marley 2008 at p. 204. A reviewer should replace the quoted paragraph with an account of the action itself.",
+        "note": "The article this item's own English sitelink names, \"Action at Tamanana, 9 September 1645\", is a redirect to the broader article \"Insurrection of Pernambuco\", and that is the article the summary quotes and the citation names: the lead is the insurrection's and not this action's. The insurrection's § Course does describe the action, citing Marley 2008 at p. 204. A reviewer should replace the quoted paragraph with an account of the action itself. A15(8): the item's English sitelink redirects to \"I",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Action at Tamanana, 9 September 1645"
     },
@@ -5648,11 +5648,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "article-is-redirect"
         ],
+        "note": "A15(8): the item's English sitelink redirects to \"Age of Revolution\", whose title is none of the item's names. The quoted lead was that other article’s and is gone. The span is read from § Atlantic Revolutions: the section states \"The Atlantic Revolutions (22 March 1765 - 4 October 1849)\". the span was {\"start\":1765,\"end\":1838,\"date\":\"1765-03-22\",\"endDate\":\"1838-12-04\"}.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Atlantic Revolutions"
     },
@@ -11035,11 +11036,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "article-is-redirect"
         ],
+        "note": "A15(8): the item's English sitelink redirects to \"Musa Dagh\", whose title is none of the item's names. The quoted lead was that other article’s and is gone. The span is read from its lead: the lead of the mountain’s article names the resistance and gives 1915, which the record’s months fall inside.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Musa Dagh"
     },
@@ -20145,40 +20147,6 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
-        },
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-09-22",
-      "id": "eritrean-civil-wars",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "eritrean-war-of-independence",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "a9-place",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": "2026-09-22",
-      "status": "active",
-      "title": "Eritrean Civil Wars"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -27331,7 +27299,8 @@
         }
       ],
       "cites": [
-        "wikidata"
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-24",
       "degree": 1,
@@ -27344,12 +27313,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "filed-from-p361"
+          "filed-from-p361",
+          "article-is-redirect"
         ],
-        "note": "The item's English sitelink, \"Milk Bar Café bombing\", is a redirect to the biography \"Zohra Drif\"; there is no English article about the bombing to quote or to cite, so this record keeps the item's own description and carries no wikipedia-en citation.",
+        "note": "The item's English sitelink, \"Milk Bar Café bombing\", is a redirect to the biography \"Zohra Drif\"; there is no English article about the bombing to quote or to cite, so this record keeps the item's own description and carries no wikipedia-en citation. A15(8): the item's English sitelink redirects to \"Zohra Drif\", whose title is none of the item's names. The span is read from § Milk Bar Café bombing (1956): the section names the bombing and gives 30 September 1956, which the record carries.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Milk Bar Café bombing"
     },
@@ -40645,44 +40615,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        },
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-09-22",
-      "id": "united-states-military-campaign-against-cartels",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "colombian-conflict-2018-present",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "a9-place",
-          "summary-from-lead",
-          "participants-from-p710",
-          "end-unstated"
-        ],
-        "note": "Wikidata Q136090852 names 7 participants (P710) and the atlas holds an actor for 2 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
-        "status": "draft"
-      },
-      "revised": "2026-09-24",
-      "status": "active",
-      "title": "United States military campaign against cartels"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -42466,6 +42398,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-at-tamanana-9-september-1645",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "action-of-11-september-1778",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -42560,6 +42498,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "atlantic-revolutions",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "attack-on-cerro-montezuma",
@@ -42998,6 +42942,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-musa-dagh",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-nam-river",
@@ -43547,12 +43497,6 @@
     },
     {
       "id": "effacer-le-tableau",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "eritrean-civil-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -44303,12 +44247,6 @@
     },
     {
       "id": "torstenson-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "united-states-military-campaign-against-cartels",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

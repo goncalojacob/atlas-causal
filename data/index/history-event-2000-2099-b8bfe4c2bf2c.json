@@ -7071,6 +7071,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "retraction",
+            "review",
+            "status",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },

@@ -8830,7 +8830,7 @@
       "dissent": false,
       "id": "action-at-tamanana-9-september-1645",
       "kind": "event",
-      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843, § The war"
     },
     {
       "dissent": false,
@@ -9100,7 +9100,7 @@
       "dissent": false,
       "id": "atlantic-revolutions",
       "kind": "event",
-      "locator": "\"Age of Revolution\", revision 1374214786"
+      "locator": "\"Age of Revolution\", revision 1376788977, § Atlantic Revolutions"
     },
     {
       "dissent": false,
@@ -10072,7 +10072,7 @@
       "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
-      "locator": "\"Musa Dagh Resistance\", revision 1370628972"
+      "locator": "\"Musa Dagh\", revision 1376438507, § lead"
     },
     {
       "dissent": false,
@@ -11612,12 +11612,6 @@
     },
     {
       "dissent": false,
-      "id": "eritrean-civil-wars",
-      "kind": "event",
-      "locator": "\"Eritrean Civil Wars\", revision 1374058781"
-    },
-    {
-      "dissent": false,
       "id": "eritrean-ethiopian-war",
       "kind": "event",
       "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, first sentence: \"took place from May 6, 1998 to June 18, 2000\""
@@ -12809,6 +12803,12 @@
       "id": "mexican-war-of-independence",
       "kind": "event",
       "locator": "\"Mexican War of Independence\", revision 1371682352"
+    },
+    {
+      "dissent": false,
+      "id": "milk-bar-cafe-bombing",
+      "kind": "event",
+      "locator": "\"Zohra Drif\", revision 1370227344, § Milk Bar Café bombing (1956)"
     },
     {
       "dissent": false,
@@ -15155,12 +15155,6 @@
       "id": "united-states-declaration-of-independence",
       "kind": "event",
       "locator": "\"United States Declaration of Independence\", revision 1375522610"
-    },
-    {
-      "dissent": false,
-      "id": "united-states-military-campaign-against-cartels",
-      "kind": "event",
-      "locator": "\"United States military buildup in the Caribbean during Operation Southern Spear\", revision 1375987627"
     },
     {
       "dissent": false,
