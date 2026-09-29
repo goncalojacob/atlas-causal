@@ -17,6 +17,15 @@
         }
       ]
     },
+    "action-of-9-february-1799-south-africa--battle-of-port-louis--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "american-revolutionary-war--french-revolution--inspired": {
       "from": "git",
       "versions": [
@@ -71,6 +80,15 @@
         }
       ]
     },
+    "bali-strait-incident--battle-of-port-louis--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "bali-strait-incident--macau-incident-1799--precondition-of": {
       "from": "git",
       "versions": [
@@ -82,6 +100,15 @@
           "fields": [
             "sources"
           ],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "bali-strait-incident--raid-on-manila--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-29"
         }
       ]
@@ -110,6 +137,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ile-ronde--bali-strait-incident--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -413,6 +449,15 @@
         }
       ]
     },
+    "french-revolution--battle-of-ile-ronde--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "french-revolution--haitian-revolution-1791-1804--inspired": {
       "from": "git",
       "versions": [
@@ -494,6 +539,33 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "invasion-of-the-cape-colony--action-of-9-february-1799-south-africa--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "invasion-of-the-cape-colony--battle-of-port-louis--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "macau-incident-1799--battle-of-port-louis--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

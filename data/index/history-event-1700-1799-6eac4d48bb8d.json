@@ -94,6 +94,15 @@
         }
       ]
     },
+    "action-of-9-february-1799-south-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "american-revolutionary-war": {
       "from": "git",
       "versions": [
@@ -328,6 +337,15 @@
         }
       ]
     },
+    "battle-of-ile-ronde": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-jean-rabel": {
       "from": "git",
       "versions": [
@@ -483,6 +501,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-port-louis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -1135,6 +1162,15 @@
         }
       ]
     },
+    "invasion-of-the-cape-colony": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "macau-incident-1799": {
       "from": "git",
       "versions": [
@@ -1150,6 +1186,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "raid-on-manila": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

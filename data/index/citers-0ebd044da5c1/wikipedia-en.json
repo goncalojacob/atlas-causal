@@ -1748,6 +1748,18 @@
     },
     {
       "dissent": false,
+      "id": "action-of-9-february-1799-south-africa--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Action of 9 February 1799 (South Africa)\", revision 1370426808"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-9-february-1799-south-africa--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",
       "kind": "edge",
       "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551, § lead and § Background — 1989–1992 civil war"
@@ -2000,9 +2012,33 @@
     },
     {
       "dissent": false,
+      "id": "bali-strait-incident--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    },
+    {
+      "dissent": false,
+      "id": "bali-strait-incident--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    },
+    {
+      "dissent": false,
       "id": "bali-strait-incident--macau-incident-1799--precondition-of",
       "kind": "edge",
       "locator": "\"Macau Incident (1799)\", revision 1370627318, lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "bali-strait-incident--raid-on-manila--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    },
+    {
+      "dissent": false,
+      "id": "bali-strait-incident--raid-on-manila--precondition-of",
+      "kind": "edge",
+      "locator": "\"Raid on Manila\", revision 1370705913"
     },
     {
       "dissent": false,
@@ -2285,6 +2321,18 @@
       "id": "battle-of-hsimucheng--battle-of-liaoyang--enabled",
       "kind": "edge",
       "locator": "\"Battle of Hsimucheng\", revision 1370443278, § Description of battle"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ile-ronde--bali-strait-incident--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ile-ronde--bali-strait-incident--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Île Ronde\", revision 1370602888"
     },
     {
       "dissent": false,
@@ -4196,6 +4244,18 @@
     },
     {
       "dissent": false,
+      "id": "french-revolution--battle-of-ile-ronde--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution--battle-of-ile-ronde--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "dissent": false,
       "id": "french-revolution--haitian-revolution-1791-1804--inspired",
       "kind": "edge",
       "locator": "\"Haitian Revolution\", revision 1376092092, § Effects of the French Revolution"
@@ -4616,6 +4676,30 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-the-cape-colony--action-of-9-february-1799-south-africa--enabled",
+      "kind": "edge",
+      "locator": "\"Action of 9 February 1799 (South Africa)\", revision 1370426808"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-the-cape-colony--action-of-9-february-1799-south-africa--enabled",
+      "kind": "edge",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-the-cape-colony--battle-of-port-louis--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-the-cape-colony--battle-of-port-louis--enabled",
+      "kind": "edge",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war--gulf-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gulf War\", revision 1375784270, § Background"
@@ -5009,6 +5093,18 @@
       "id": "maastricht-treaty--euro-adoption-1999--precondition-of",
       "kind": "edge",
       "locator": "\"Maastricht Treaty\", revision 1360900516"
+    },
+    {
+      "dissent": false,
+      "id": "macau-incident-1799--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    },
+    {
+      "dissent": false,
+      "id": "macau-incident-1799--battle-of-port-louis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Macau Incident (1799)\", revision 1370627318"
     },
     {
       "dissent": false,
@@ -9170,6 +9266,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-9-february-1799-south-africa",
+      "kind": "event",
+      "locator": "\"Action of 9 February 1799 (South Africa)\", revision 1370426808"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
@@ -10058,6 +10160,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ile-ronde",
+      "kind": "event",
+      "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-imenas",
       "kind": "event",
       "locator": "\"Battle of Imenas\", revision 1370265996"
@@ -10553,6 +10661,12 @@
       "id": "battle-of-port-arthur",
       "kind": "event",
       "locator": "\"Battle of Port Arthur\", revision 1376392782, first sentence: \"8–9 February 1904\""
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-port-louis",
+      "kind": "event",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
     },
     {
       "dissent": false,
@@ -12812,6 +12926,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-the-cape-colony",
+      "kind": "event",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "dissent": false,
       "id": "iran-iraq-war",
       "kind": "event",
       "locator": "\"Iran–Iraq War\", revision 1375407163"
@@ -13871,6 +13991,12 @@
       "id": "raid-on-haverhill-1697",
       "kind": "event",
       "locator": "\"Raid on Haverhill (1697)\", revision 1374990464"
+    },
+    {
+      "dissent": false,
+      "id": "raid-on-manila",
+      "kind": "event",
+      "locator": "\"Raid on Manila\", revision 1370705913"
     },
     {
       "dissent": false,
