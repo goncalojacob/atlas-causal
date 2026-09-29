@@ -9268,6 +9268,15 @@
         }
       ]
     },
+    "tokyo-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "tonisvorst": {
       "from": "git",
       "versions": [

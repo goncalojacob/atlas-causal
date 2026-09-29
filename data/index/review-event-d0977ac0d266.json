@@ -681,12 +681,12 @@
           "imported-facts",
           "m67-lined",
           "summary-from-lead",
-          "a14-lane-guard"
+          "a15-lane-from-point"
         ],
-        "note": "A14(2): the place was sinai-peninsula, which the lane guard puts in Africa against this record's own Asia. The Sinai is where the Egyptian front ran, not where the war was; the place is cleared and the lane kept, as before A9.",
+        "note": "A14(2): the place was sinai-peninsula, which the lane guard puts in Africa against this record's own Asia. The Sinai is where the Egyptian front ran, not where the war was; the place is cleared and the lane kept, as before A9. A15(7): the lane asia is confirmed - two of the three locations the item names (Southern Lebanon, Palestine) are in it and the third is the Sinai. No place is written: the first candidate its lane admits is Southern Lebanon, which is one front and not the war, which is the",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "1948 Arab–Israeli War"
     },
@@ -20598,7 +20598,7 @@
           "a14-lane-guard",
           "a15-days"
         ],
-        "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged.",
+        "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged. A15(7) leaves",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -22810,12 +22810,12 @@
           "imported-facts",
           "summary-drafted",
           "a7-widened",
-          "a14-lane-guard"
+          "a15-lane-from-point"
         ],
-        "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.\n\nA14(2): the place was afghanistan-q889, first of the nine countries Q8698 names under P17, taken before the guard. A worldwide downturn drawn in Kabul is a wrong picture; cleared, the Americas lane kept.",
+        "note": "A7: the end was 1941, which is the United States entering the war and not the downturn. The cited article's first sentence says, at the cached revision 1371653684, \"from 1929 to 1939\". So the end is 1939; the start and 29 October 1929 are unchanged, and the end takes no day.\n\nA14(2): the place was afghanistan-q889, first of the nine countries Q8698 names under P17, taken before the guard. A worldwide downturn drawn in Kabul is a wrong picture; cleared, the Americas lane kept. A15(7): nothing on ",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Great Depression"
     },
@@ -23894,12 +23894,12 @@
           "imported-facts",
           "m42-reinstated",
           "summary-from-lead",
-          "a14-lane-guard"
+          "a15-lane-from-point"
         ],
-        "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it.",
+        "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it. A15(7): the lane was asia and is europe, from the points the item names; monastir-vilayet, which A14(2) cleared because it disagreed with that wrong lane, is the place again.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Ilinden–Preobrazhenie Uprising"
     },
@@ -25404,12 +25404,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a14-lane-guard"
+          "a15-lane-from-point"
         ],
-        "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept.",
+        "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept. A15(7): the lane is asia and the item's own point confirms it; the place is tokyo-bay, where the Instrument was signed. A14(2) cleared uss-missouri, whose point is the ship's berth in Pearl Harbor and in the americas lane, and was right to.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Japanese Instrument of Surrender"
     },
@@ -42194,12 +42194,12 @@
           "imported-facts",
           "summary-drafted",
           "filed-from-p527",
-          "a14-lane-guard"
+          "a15-lane-from-point"
         ],
-        "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept.",
+        "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept. A15(7): the item names five locations and they split three asia (Golan, Near East, Middle East) to two africa (Suez Canal, Sinai), which is no majority and no correction: the war had a front on each side. The lane africa stands as it was.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Yom Kippur War"
     },

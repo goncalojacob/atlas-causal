@@ -11119,6 +11119,7 @@
         }
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "monastir-vilayet",
       "kind": "place",
       "names": [
@@ -18390,6 +18391,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "tokyo-bay",
+      "kind": "place",
+      "names": [
+        "Tokyo Bay",
+        "Baía de Tóquio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "tonisvorst",
@@ -20517,12 +20546,6 @@
     },
     {
       "id": "kingdom-of-egypt",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "monastir-vilayet",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
