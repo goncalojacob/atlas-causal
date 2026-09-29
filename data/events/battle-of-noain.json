@@ -19,9 +19,9 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361",
-      "a9-place"
-    ]
+      "filed-from-p361"
+    ],
+    "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width."
   },
   "origin": {
     "tool": "wikidata"
@@ -52,7 +52,7 @@
     "end": 1521,
     "date": "1521-06-30"
   },
-  "place": "pamplona",
+  "place": null,
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": [

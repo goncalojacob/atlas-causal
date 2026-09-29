@@ -11162,9 +11162,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
+        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -11465,9 +11465,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
+        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -19225,13 +19225,11 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead",
-          "a7-widened"
+          "summary-from-lead"
         ],
-        "note": "A7: the end was 1942, the year of the signing at Washington, which closed a treaty 47 governments went on signing. The cited article's first sentence says, at revision 1376063232, \"signed by 47 national governments between 1942 and 1945\". So the end is 1945; the start and its day are unchanged. The cache held 1369044189 and was re-read at the cited revision first.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Declaration by United Nations"
     },

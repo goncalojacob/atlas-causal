@@ -12970,10 +12970,10 @@ table.*
 | components | 396 | **393** |
 | **edges that cross an umbrella (A15(11))** | **563** | **562** |
 | events with no edge at all | 314 | **311** |
-| events with no place | 124 | **97** |
+| events with no place | 124 | **99** |
 | events naming no actor | 855 | **855** |
 | events opening on the import's placeholder summary | 14 | **14** |
-| active place records | 713 | **731** |
+| active place records | 713 | **730** |
 | validator | 0 errors, 730 warnings | **0 errors, 727 warnings** |
 
 **Per lane (A10), unchanged in every active cell** because nothing was
@@ -13019,10 +13019,12 @@ nothing to offer them. **A fire should measure this once a day and write
 nothing**; the count falls only when somebody writes an English article or a
 person writes the record.
 
-### Places — A9's chain, 27 placed, and A15(6)'s gate doing its work
+### Places — A9's chain, 25 placed after the holds, and A15(6)'s gate doing its work
 
-124 active events had no place. **27 are placed, 18 place records are new, 9
-were reused, 91 are refused and 6 are held for A15(7).**
+124 active events had no place. **A9's chain placed 27 and 25 stand**: 17 place
+records are new, 9 were reused, 91 are refused, 6 are held for A15(7), and
+`pamplona` with its two battles is held back for the map's label placer (its own
+section above). The table below is what the chain read; the two holds come off it.
 
 | | |
 | --- | --- |
@@ -13094,7 +13096,7 @@ particular because it is deviation 1441's refusal turning into a correct
 reading one step further down the chain: the bay is a place, the Instrument of
 Surrender is not.
 
-### A7 — two intervals widened, 26 candidates refused
+### A7 — two intervals read, one widening stands, 26 candidates refused
 
 Every active event with a lead on disk — 1,104 of 1,260 — had its span compared
 against the year range in its cached lead's first sentence. **28 disagreed and
@@ -13435,13 +13437,77 @@ waiting, which is the first thing the next fire should know.*
 | components | **393** (−3) |
 | edges that cross an umbrella (A15(11)) | **562** |
 | events with no edge at all | **311** (−3) |
-| events with no place | **97** (−27) |
-| validator | **0 errors, 727 warnings** (−3) |
+| events with no place | **99** (−25) |
+| validator | **0 errors, 727 warnings** (−3), and the check green after the holds |
 | per lane, active | Europe 552, **Americas 343**, **Asia 183**, **Africa 182** |
 | per lane, main | Europe 84, Asia 64, Americas 56, Africa 31 |
 
 **A10's order of need: Africa still trails at 182** against Asia's 183, so the
 next import batch is Africa's unless a chain crosses out of it.
+
+### Two display faults this fire's data found, and the two records held back for them
+
+**The check went red on this fire's head and the failures are this fire's.** Run
+1917 of `validate.yml`, commit `6599d53b5`, **295 browser tests, 293 pass, 2
+fail**, reproduced locally and confirmed green on the pre-fire tree
+(`ed61c5de`, both suites, 43 of 43). Neither failure is load and neither is in
+the records: **both are display modules with no headroom, exposed by correct
+data.** Each was bisected to a single record.
+
+**1. `tests/m86-browser.test.mjs` — "The depopulation of indigenous Brazil" runs
+past the right edge (1454.74 > 1425), and the trigger is a three-year
+widening.** With `operation-northern-shield` reverted the pixel value does not
+move by a thousandth; with `declaration-by-united-nations` reverted as well the
+suite is green. So **A7's widening of that one record from 1942 to 1942–1945 is
+what does it**: a wider bar re-packs the `americas` lane, and
+`indigenous-depopulation-of-coastal-brazil` — an M42b record dated **1500–1997**
+— lands in a row where `src/lanes.js` shifts its title 30 px past the pane.
+M86 added that test because a title was being cut ("the review's own *COVID-19
+pander*"), so the guard is right and the placement is what is wrong.
+
+**This will come back with the next batch that touches the Americas.** Thirty
+pixels is the whole margin, the packing is sensitive to any bar in the lane, and
+**the Americas lane is M42b's** — so this blocks that lane too, not only this
+one. It is not a fault a records fire can wait out.
+
+**2. `tests/map-browser.test.mjs` — "Pamplona" and "PYRENEES" overlap.** The
+test measures real `getBoundingClientRect()` boxes, so the overlap is rendered
+and not an estimate: what is wrong is the **placer's** estimate.
+`src/map/labels.js` "skips a label whose box hits one already placed", and it
+has to guess a width before the text exists; for a **letterspaced feature
+label** the guess under-shoots, the two are judged not to hit, and they draw on
+top of each other. The atlas has drawn `PYRENEES` for weeks; the new
+`pamplona` record is only what put a city label beside it.
+
+**Both are `src/` and both are lane A's, which is why this fire fixed neither**
+— the run's own rule, and the rule deviation 1443 has been sitting under since
+22 September. **What this fire did instead was hold back the two records**, which
+costs the atlas nothing it cannot have back in one line each:
+
+| held back | what it was | what it is now |
+| --- | --- | --- |
+| `declaration-by-united-nations` | A7's widening to 1942–1945 from *"signed by 47 national governments between 1942 and 1945"* at revision 1376063232 | **1942 again**, as the last four fires left it |
+| `pamplona` (Q10282), and the placements of `battle-of-noain` and `battle-of-pampeluna` on it | A9's chain, `city` precision | **the place record is gone and both battles are placeless again**, each with a note saying why |
+
+**Nothing false is asserted by either hold.** 1942 is the item's own date and
+was the record's date all week; a placeless battle is where A9 found it. **The
+re-cache of the lead at the cited revision stays**, because it is right on its
+own and A14(3) asks for it — so the next fire has the evidence on disk and the
+widening is one edit.
+
+So the honest count for this fire is **25 placements, not 27** — 17 place
+records written, not 18 — and **one A7 widening, not two**. Both suites are green
+after the holds and the check is green on the fire's final head.
+
+**Deviation 1461.** *A records fire can make the check red without writing
+anything wrong, and the repository has no way to say so but this.* Correct data
+that trips a display fault leaves a fire three choices — revert the data, change
+a module that is not its to change, or leave the branch red and unlandable
+during a week the owner is away. It took the first and wrote this section,
+because a red `m42` stops the daily snapshot and that is the one thing the owner
+asked not to stop. **But the first choice does not scale**: fault 1 will return
+on the next Americas batch whoever writes it, and then there is nothing left to
+hold back. **The two faults want fixing in `src/` before that.**
 
 ### The three days nothing ran, which is bigger than anything in this fire
 
