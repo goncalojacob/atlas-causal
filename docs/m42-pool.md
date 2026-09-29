@@ -14834,3 +14834,112 @@ not where that is landed.
 
 **A10's order of need turns over:** Africa now holds 184 against Asia's 182, so
 the next import batch in this lane is **Asia's** unless a chain crosses out of it.
+
+## Where the run stands after batch 65, for the fire that picks it up
+
+*29 September, the fire that claimed at 09:07Z. **An import fire**: today's
+`## Curation 2026-09-29` section was already in this file and all thirteen of
+A15's passes have theirs, so nothing was owed before the batch and A10's order of
+need decided the lane. **One batch, two imports, one reinstatement, two edges,
+two places, no new class and no new vocabulary.** No code changed.*
+
+| | after A15's thirteen passes | now |
+| --- | --- | --- |
+| corpus | 1,258 active | **1,261** (+2 imported, +1 reinstated) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,023 | **1,026** |
+| active edges | 1,048 | **1,050** |
+| largest connected component | 711 | **712** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 391 | **392** |
+| **edges that cross an umbrella (A15(11))** | 562, 486 inside one | **563**, 487 inside one |
+| events with no edge at all | 309 | **309** |
+| events with no place | 129 | **129** |
+| place records | 732, 730 active | **734, 732 active** (`kherrata`, `nigeria-q1033`) |
+| validator | 0 errors, 599 warnings | **0 errors, 599 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 182, Africa 181 | Europe 553, Americas 342, Asia 182, **Africa 184** |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+**A10's order of need has turned over: Asia trails at 182** against Africa's 184,
+so the next import batch in this lane is **Asia's** unless a chain crosses out of
+it. Africa passed Asia for the first time since the partition.
+
+**The warnings did not move at all**, which is what a batch that places
+everything it writes and widens one end from a cached lead should do: the
+massacre's `endDate` of June 1945 agrees with its lead's first sentence, so no
+`span-vs-lead-dates` was added, and both new places carry `summary: null` as
+A15(3) requires.
+
+**What is open, in the order a fire should weigh it:**
+
+- **The two display faults of deviation 1461 are still open and the two records
+  are still held back**, but this batch is evidence about the second of them.
+  Fault 2 is `src/map/labels.js` under-measuring a letterspaced label so that a
+  new city label renders over `PYRENEES`; **this batch wrote a new city place,
+  `kherrata`, and all 300 browser tests pass**. So the fault is not "any new city
+  label" — it is a particular label in a particular place, and the bisect in the
+  29 September curation section is where a lane A fire should start. Fault 1, the
+  `americas` lane's packing, is untouched: this batch added no bar there.
+- **`nigerian-civil-war` is back and its island is a real gap in the sources.**
+  The war and the January coup are a two-node component. No cached lead in the
+  atlas names the war except `decolonisation-of-africa`'s, which names Biafra in a
+  list, and the war's own article names four held events without claiming any of
+  them brought it about. **The edge that would join it to the world is the
+  Portuguese one** its retraction reason named — the airlift through São Tomé —
+  and that wants a source the atlas can open, which is the one route to
+  `consensus` A2 leaves. It is the clearest single thing a person could settle.
+- **Deviation 1464 is a defect in the relations matcher and it is not fixed.**
+  `namesHeldEvents()` folds case, so *"the troubles in Sudan"* matched
+  `the-troubles` and *"a reign of terror"* matched `reign-of-terror`. Nothing
+  wrong was written — a false match refuses an edge rather than writing one — but
+  every curation fire since A13 has been over-refusing by however many of these
+  it saw, and the count it reports is wrong by the same number. The fix is one
+  comparison in `mentions()`; three suites test that module, so it is a fire's own
+  commit and not a line in a batch.
+- **The twelve candidates this batch left are listed with their reasons** in the
+  batch section above, and four of them are one edit to `data/imports/wikidata-seeds.json`
+  away: `Q168247` (famine), `Q3884316` (declaration of independence), `Q208383`
+  (peace treaty) and `Q93288` (treaty) are classes the table has no row for, and
+  each is plainly an event or a treaty. **That is the owner's edit and not a
+  run's** — the vocabulary is in data precisely so the argument is his — but it
+  is a cheap one and it would unlock the 1983–1985 Ethiopian famine, Rhodesia's
+  UDI and the Lancaster House Agreement, all three Africa rows with 15 to 25
+  sitelinks.
+- **A15(12)'s 177 uncategorised events are still one edit to the same file**, as
+  the last stand said; nothing here changed that count except the two new records,
+  which both carry what their class gives (`revolution` for the coup, nothing for
+  the massacre, whose class `Q3199915` has a row and no category).
+- **A15(6)'s 32 cleared places are still 32**, and `abushiri-revolt`, 56 km past
+  the threshold, is still the one a person should look at.
+- **The EEC's closing year and `operation-sutton`'s missing day are unchanged**
+  and both are one line for the owner; the last stand states them.
+- **The P710 vein was not measured this fire.** It has been measured four fires
+  running and written nothing for the structural reason the last stand gives —
+  the actor corpus begins in 1886 — and this batch took its one participant from
+  an item it was importing anyway, which is the only way that vein pays.
+- **`docs/m53-polities.md` §4.1 was retaken and the suite is why.**
+  `tests/m53.test.mjs` refused the row at 403 of 1,258; the corpus now reads
+  **404 of 1,261** by the start rule and 405 by overlap, both one higher because
+  the reinstated war names `nigeria`. **The document carries four variants of that
+  paragraph, two stating 403/404 and two stating 400/401**, left by earlier fires
+  appending rather than replacing; this fire corrected the two that were current
+  and left the stale pair alone rather than deleting prose it did not write. A
+  person should cut it to one.
+- **A15(2) ran as the batch's last step** and the three citations this batch
+  wrote are on disk at the revisions they cite; `tests/a15-cache.test.mjs` passes,
+  and the 73 unholdable citations are the cache's shape, not a gap, as the last
+  stand explains.
+- **The network was in good repair.** Thirty-one requests in all — fourteen
+  `Special:EntityData` reads, twelve article extracts through the action API, two
+  REST summaries for the leads this batch cached, two title-table calls and one
+  identity read — one in flight every 400 ms, **no 429 at any point**.
+- **Both suites are green on this fire's tree: 2,181 tests, all passing, nothing
+  skipped** — **1,881 pure** and **300 browser**, run the way the check runs them
+  since M63. One invariant failed and it was right to: `tests/m53.test.mjs`, the
+  paragraph above. No suite was added, because this batch wrote no code.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass. **A15 is done
+  and no fire owes it again.** The next import fire goes straight to A10's order
+  of need, which is now **Asia**.
+- **Deviation numbers: take the next above 1464.** This fire wrote **1464**, the
+  lowercase-phrase match above.
