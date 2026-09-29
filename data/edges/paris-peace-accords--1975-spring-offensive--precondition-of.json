@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "paris-peace-accords--1975-spring-offensive--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-66"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1975 spring offensive\", revision 1376882115, § Conclusion"
+    }
+  ],
+  "from": "paris-peace-accords",
+  "to": "1975-spring-offensive",
+  "type": "precondition-of",
+  "confidence": "disputed",
+  "explanation": "The new record's own cited article puts it first of four explanations of the collapse: \"The first argument is that the Paris Peace Accords that ended the direct American participation in the war was seriously flawed, because it permitted the North Vietnamese to maintain their forces within territorial South Vietnam after the signing of the agreement, thereby dooming the ceasefire.\" A precondition and not a cause: the claim is that the agreement left the northern divisions where they stood and so made the offensive of 1974–75 possible, not that signing it brought the offensive about. `disputed`, because the article says in the same breath that this is one reading of four.",
+  "dispute": {
+    "text": "The article introduces it as one of four: \"Four main lines of thought have remained particularly viable, all of which possess some validity, but all are also open to argument.\" The other three put the collapse on the American refusal to act on the ceasefire violations, on the Congress cutting the aid, and on the ARVN's own command; on those readings the Accords settled nothing either way.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"1975 spring offensive\", revision 1376882115, § Conclusion"
+      }
+    ]
+  }
+}
