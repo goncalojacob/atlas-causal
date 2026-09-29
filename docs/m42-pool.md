@@ -13530,6 +13530,15 @@ harder. **It should say so and carry on**, which is what this one does.
 
 **What is open, in the order a fire should weigh it:**
 
+- **Two display faults made the check red and two records are held back for
+  them, and fault 1 will return without them.** `src/lanes.js` shifts a resting
+  title thirty pixels past the pane when the `americas` lane's packing changes —
+  a three-year widening of one bar was enough — and `src/map/labels.js`
+  under-measures a letterspaced label, so a new city label renders over
+  `PYRENEES`. Both are lane A's; **the Americas lane is M42b's, so fault 1
+  blocks that lane too**, and the next batch there trips it with nothing left to
+  hold back. Their own section above has the bisect, the pixel numbers and the
+  two records. Deviation **1461**.
 - **A15's thirteen passes are the next fire's whole job if it is not a curation
   fire**, in A15's own order, each skipped if its section is in this file. None
   is. Two of them this fire met from the inside and can report on:
@@ -13602,8 +13611,10 @@ harder. **It should say so and carry on**, which is what this one does.
 - **The next curation fire is the first fire after 02:00Z on 30 September**, and
   it owns A11(a) over every active event and A13's relations pass. **Every other
   fire owes A15 first.**
-- **Deviation numbers: take the next above 1460.** This fire wrote **1457** (a
+- **Deviation numbers: take the next above 1461.** This fire wrote **1457** (a
   lead written outside `fetchLeads` carries a string revid), **1458** (the
-  substring match on "World War I"), **1459** (a name that is only a date) and
-  **1460** (the extract's headings read as prose). Three of the four are in how
-  candidates are chosen, which is where this run's reading time keeps going.
+  substring match on "World War I"), **1459** (a name that is only a date),
+  **1460** (the extract's headings read as prose) and **1461** (correct data can
+  turn the check red, and holding the data back does not scale). Three of the
+  first four are in how candidates are chosen, which is where this run's reading
+  time keeps going; the fifth is the one that needs somebody else.
