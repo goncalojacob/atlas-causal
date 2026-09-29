@@ -17011,7 +17011,7 @@
           "a15-end-from-item",
           "polity-description"
         ],
-        "note": "A15(10): the end was 1782, the last Historical Basemaps snapshot interval and not a claim. Q170072 dates the dissolution to 19 January 1795, the Batavian Revolution. Its inception, 1581, is earlier than this record’s start of 1600, which is the 1600 snapshot and is left as A15(10) asks.",
+        "note": "A15(10): the end was 1782, the last Historical Basemaps snapshot interval and not a claim. Q170072 dates the dissolution to 19 January 1795, the Batavian Revolution. Its inception, 1581, is earlier than this record’s start of 1600, which is the 1600 snapshot and is left as A15(10) asks. The day the item gives is not on the record: an actor carries years and nothing finer, because the contribute form offers an actor no exact date and a save through it would drop one (intervalFor, tools/import/wik",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -18961,7 +18961,7 @@
           "a15-end-from-item",
           "polity-description"
         ],
-        "note": "A15(10): the end was 1993, which this record’s own note called an editorial choice nobody made deliberately. Q52847 dates the dissolution to 1 December 2009 (the Lisbon Treaty); 1993 is Maastricht renaming it the European Community. The end is read from the item, and which of the two the atlas should close the actor at is still the choice the note names.",
+        "note": "A15(10): the end was read from Q52847, which dates the dissolution to 2009-12-01 (the Lisbon Treaty), and put back to 1993 because the atlas holds european-economic-community--european-union--succeeded and the European Union begins in 1993: a succession whose predecessor outlives its successor's start is what tests/m49-seam.test.mjs refuses. So the \"editorial choice nobody has made deliberately\" was in fact made, in that relation. 1993 is Maastricht renaming it the European Community; the item's",
         "status": "draft"
       },
       "revised": "2026-09-29",
