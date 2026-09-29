@@ -11783,8 +11783,19 @@ and nothing of Europe before 1900 until both reach it.
 One batch (46), one event, one place, two edges, both to records that were
 already here, and **no movement in the largest component**, because the cluster
 it joined is a component of three. The fire also carried `origin/m0` and
-`origin/m42` into the branch and rebuilt the index on top of each, which is the
-shape the last three fires got wrong (see the check note below).
+`origin/m42` into the branch and **rebuilt the index in a commit of its own on
+top of each merge**, which is the shape the last three fires got wrong and
+which batch 45's note asked for in so many words.
+
+**It merged `origin/m42` twice, and the second time was not tidiness.** The
+first merge, at the claim step, took `m42` at 18:40, which was in the middle of
+M42's own batch 68: the records of that batch were on the branch and the
+paragraph arguing for one of them was not. The pure half went red on
+`tests/m67.test.mjs` — *"a child that names neither is one the measurement
+argues for"* — naming `battle-of-vaal-krantz`, which carries no actor and no
+place, is filed under `second-boer-war`, and was not in `docs/m67-umbrellas.md`.
+M42 had already written that paragraph by 19:0x and its own check was green on
+run 2031. The second merge brought it over and the test passes.
 
 ### The next fire's moves, in order
 
@@ -11814,7 +11825,7 @@ shape the last three fires got wrong (see the check note below).
    (`Q849680`, held, 1609–1924), and the Portuguese side of the Atlantic,
    which still no fire has queried.
 4. **Wikimedia's rate limit is real and `curl` is what trips it** (deviation
-   1200). Fetch through Node's own `fetch` with the import's user agent and a
+   1350). Fetch through Node's own `fetch` with the import's user agent and a
    400 ms pace, as `tools/cache-evidence.mjs` does; a `curl` request through
    this sandbox's proxy answered 429 for forty minutes while the identical
    Node request answered first time.
@@ -11825,9 +11836,53 @@ shape the last three fires got wrong (see the check note below).
    with no `wikidata` (`--reconcile` has still never been run by this lane),
    and the place pass on records that already exist, which is M42's.
 
+### The tests, on this fire's head
+
+**1,915 pure and 313 browser, 2,228 tests**, on the final head `d3b1f18e` and
+after the index rebuild. The pure half is **1,915 of 1,915, nothing skipped,
+nothing failing**. `node tools/validate.mjs --index` is clean at **0 errors,
+620 warnings**, byte-identical to a fresh build.
+
+**The browser half is green on the runner and not in this sandbox, and the
+difference is cores.** Two full runs of it here dropped exactly one test each
+and **not the same one** — run one `at the world view a label is no longer than
+it was, and none is drawn over another`, run two `a node with room round it is
+named in full, with nothing left off` — both from
+`tests/graph-labels-browser.test.mjs`, which **passes 3 of 3 when run by
+itself**. That is deviation 1345's signature exactly, and docs/m63-load.md's
+before it: a browser suite short of a core drops a different test every run.
+The check on this same head ran the same 313 and passed them all.
+
+**The pure half's one failure earlier in this fire was real and is fixed**, and
+it is the subject of deviation 1352: `tests/m67.test.mjs` on
+`battle-of-vaal-krantz`, a record the first `origin/m42` merge brought over
+without the paragraph arguing for it.
+
+**The stale-lead list did not grow.** `tests/leadcache.test.mjs` holds at its 27
+known records, every one of them M42's, and this batch's two citations were
+recached by `node tools/cache-evidence.mjs --fill` as A15 (2) asks: 2,715
+`wikipedia-en` citations on active records, **0 at a revision that should be on
+disk and is not**.
+
+### The check, on this fire's heads
+
+**Run 2037 on `d3b1f18e`, this fire's final head, completed `success`** —
+`Validate records`, the pure half and the browser half. That is the head that
+matters and it carries everything: the two merges of `origin/m0`, the two of
+`origin/m42`, batch 46's records, and the index rebuilt on top of each.
+
+**Run 2030 on `ec5823ab8` failed, and the reason was not deviation 798 this
+time.** Batch 45's note predicted that a merge commit would go red because the
+history shards move with the commit that writes them, and this fire split the
+rebuild into its own commit precisely to avoid that. It went red anyway, and
+the cause was the m67 correspondence test above — a real failure in the merged
+tree, not an artefact of the index. **The lesson batch 45 wrote is still
+right** (the merge and the rebuild are two commits) **and it is not the whole
+story**: a merge of the other lane can be red for what it merged.
+
 ### The deviations this fire recorded
 
-**Deviation 1200 — `curl` through this sandbox's proxy is rate-limited where
+**Deviation 1350 — `curl` through this sandbox's proxy is rate-limited where
 Node's `fetch` is not.** Seven `wbgetentities` calls in a row put this fire in
 Wikimedia's penalty box, and every `curl` retry after it — paced at 20 s, then
 40 s, then 300 s, with the import's own user agent — came back 429 for the next
@@ -11838,7 +11893,7 @@ the pace is the point; this fire's correction is narrower and worth having
 beside it: **the pace is the point and the client is too.** A fire that needs
 an article should use the Node fetcher, not `curl`.
 
-**Deviation 1201 — a batch may be honest about not moving the component.**
+**Deviation 1351 — a batch may be honest about not moving the component.**
 A5 asks a batch that grows the corpus and not the component to say why. This
 one's reason is structural rather than a mistake: every edge available to a
 record taken from inside a single umbrella has both endpoints inside that
@@ -11846,4 +11901,18 @@ umbrella, so the batch cannot cross one and cannot reach the largest
 component unless the umbrella already does. The lesson is not "write weaker
 edges"; it is **choose the vein by what it can reach, not only by which cell
 trails**, which is the next fire's move 2.
+
+**Deviation 1352 — merging the other lane mid-batch can take its records
+without its argument, and the fix is to merge it again at the end.** The
+claim step's `origin/m42` merge is a snapshot of whatever that lane has
+pushed at that instant, and a records batch over there is several commits
+long: the records land, then the index, then the pool section and the
+documents the tests read. A merge taken between the first and the last
+carries a corpus the other lane's own documents no longer describe, and
+`tests/m67.test.mjs` is the test that notices, because it is a
+correspondence test between `data/` and `docs/m67-umbrellas.md`. **Nothing
+about it is this lane's to fix in the records**; the remedy is to merge
+`origin/m42` again before the final head, which this fire did. A fire whose
+check goes red on a correspondence test with a record id it did not import
+should look at `origin/m42`'s log before looking at anything else.
 
