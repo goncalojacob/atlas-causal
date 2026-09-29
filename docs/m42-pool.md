@@ -14523,3 +14523,163 @@ now about NATO rather than about Portugal's subscription.
 held. Corpus unchanged: **1,258 active, 235 main, 1,023 filed, 1,048 active
 edges, largest component 711, 562 edges crossing an umbrella, 391 components,
 309 events with no edge**. Validator **0 errors, 599 warnings**.
+
+## Where the run stands after A15's thirteen passes, for the fire that picks it up
+
+*29 September, 05:07Z onward. An import fire that imported nothing: today's
+curation section was already in this file, so the fire owed A15 first, and A15
+is thirteen passes and not eleven. **All thirteen are done and each has its own
+section above.** A14's six carry theirs from 24 September and none was re-run.*
+
+| | after the curation fire | now |
+| --- | --- | --- |
+| corpus | 1,260 active | **1,258** (−2: two redirect records retracted) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,025 | 1,023 |
+| active edges | 1,049 | **1,048** (1 written, 2 retracted) |
+| largest connected component | 711 | **711** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 393 | **391** |
+| **edges that cross an umbrella (A15(11))** | 562 | **562**, and 486 inside one |
+| events with no edge at all | 311 | **309** |
+| events with no place | 99 | **129** (+30: A15(6) cleared 32, A15(7) placed two of them back) |
+| place records | 731 | **732**, 730 active (`tokyo-bay` written, `rio-de-janeiro-q8678` merged into `rio-de-janeiro`) |
+| events with no category | 413 | **304** (−109) |
+| validator | 0 errors, 727 warnings | **0 errors, 599 warnings** |
+| per lane, active | Europe 552, Americas 343, Asia 183, Africa 182 | Europe 553, Americas 342, **Asia 182, Africa 181** |
+| per lane, main | Europe 84, Asia 64, Americas 56, Africa 31 | Europe 85, Asia 63, Americas 56, Africa 31 |
+
+**A10's order of need: Africa trails at 181** against Asia's 182, by one, so the
+next import batch in this lane is Africa's unless a chain crosses out of it.
+
+**The warnings fell by 128 and every step is accounted for**, in the order the
+passes ran: **727 → 569** at A15(3), which nulled 158 place placeholders;
+**→ 590** at A15(4), +22 for the new `span-vs-lead-dates` and −1 for the
+`span-vs-article-title` it answered; **→ 598** at A15(6), +8 `place-unused` on
+countries no event stands at now; **→ 597** at A15(7), −1 because
+`monastir-vilayet` is cited again; **→ 598** at A15(8), where three summaries
+went back to the import's placeholder and two retractions took their own
+warnings with them; **→ 599** at A15(10), +1
+`presence-outside-actor-when`, because Historical Basemaps draws the Inca Empire
+in its 1600 snapshot and the item ends the empire by 1572. A15(1), (5), (9),
+(11), (12) and (13) moved no warning at all.
+
+**What is open, in the order a fire should weigh it:**
+
+- **The two display faults are still open and the two records are still held
+  back.** `src/lanes.js` shifts a resting title thirty pixels past the pane when
+  the `americas` lane's packing changes, and `src/map/labels.js` under-measures
+  a letterspaced label so a new city label renders over `PYRENEES`. Both are
+  lane A's; **the Americas lane is M42b's, so fault 1 blocks that lane too**,
+  and the next batch there trips it with nothing left to hold back. The bisect,
+  the pixel numbers and the two records are in the 29 September curation
+  section; deviation **1461**. **This fire added no bar to the `americas` lane
+  and no city label**, on purpose: A15(6) *removed* 32 places and A15(8)
+  retracted two records, so the packing is looser than it was, not tighter.
+- **A15(12) leaves 177 events uncategorised on one edit to one file.** Not one
+  of them has no class: every item answered with a `P31` whose row is already in
+  `data/imports/wikidata-seeds.json` saying `kind: event` with **no
+  `category`**, because most rows were added in M20 and M40a before that column
+  existed. **Four of the twelve commonest are lookups and not arguments** —
+  `series of wars` → `war`, `United Nations treaty` → `treaty`, `rebellion` →
+  `revolution`, `attempted coup d'état` → `revolution` — and would categorise 45
+  more events between them. The other eight are real arguments (is a massacre a
+  `war`; is a genocide; is a protest a `revolution` when that category reads *"a
+  seizure or a loss of power outside the ordinary rules"*) and the vocabulary is
+  in data precisely so that the argument is the owner's.
+- **A15(6)'s gate took 32 places and gave nothing back, which is the honest
+  trade and still a loss.** Thirty-two events are drawn nowhere on the map now,
+  `french-revolution` and `world-war-ii` among them, because the states they
+  stood on post-date them. Every lane was kept, so nothing left the timeline.
+  **The cheapest repair is a place record per capital or per battlefield**, and
+  it is A9's chain that will write them once a batch touches those events again;
+  the six refused on distance are listed in A15(6)'s section and
+  `abushiri-revolt`, 56 km past the threshold, is the one a person should look
+  at.
+- **The EEC's closing year is one line for the owner.** Q52847 dates the
+  dissolution of the European Economic Community to **1 December 2009** (the
+  Lisbon Treaty) and the atlas closes the actor at **1993** (Maastricht renaming
+  it the European Community), because that is what its `succeeded` relation to
+  `european-union` requires. Both are defensible and the record now says so;
+  which one the atlas should hold is a decision, not a reading.
+- **`operation-sutton` still wants a day from a source that gives one.** The
+  atlas dates it 1982-05-23 against a battle of 1982-05-21 it is stated to have
+  caused, rule 4 refuses the edge, and the article the claim comes from names no
+  date. Unchanged since 29 September 02:07Z and unchanged by anything here.
+- **The P710 vein has now been measured four fires running and written
+  nothing**, and the reason is structural: the actor corpus is CShapes's
+  polities, which begin in 1886, so the pre-1886 half of the corpus can never
+  take a participant from it. Measure it once a day, at six requests, and move
+  on.
+- **A15(2)'s 73 unholdable citations are the cache's shape, not a gap.** Sixty
+  articles are cited at two revisions by different records and
+  `schema/v1/wikipedia-lead.json` holds one lead per item per language, so one
+  revision must lose; `bestRevision` decides which in one place. Making the
+  cache hold more is a change to that schema and to how the file is named, which
+  the 24 September review already put to the owner.
+- **`declaration-by-united-nations`'s widening evidence went off disk on
+  purpose.** A14(3)'s rule picked the revision two edges cite over the one the
+  event cites, and the sentence itself — *"signed by 47 national governments
+  between 1942 and 1945"* — is quoted in this file. When the display fault is
+  fixed, that revision is one `node tools/cache-evidence.mjs --fill` away.
+- **The network was in good repair.** 74 requests in all — 28 for the title
+  table, 12 leads at a revision, 6 for `P31`, 8 for the redirect targets, 3 for
+  the country items, and the rest singles — one in flight every 400 ms, **no
+  429 at any point through the fetcher**. A bare `curl` with no pacing did get
+  one, which is deviation 1440 from the other side again.
+- **Every batch from here owes three things it did not owe before**:
+  `node tools/cache-evidence.mjs --fill` as its **last** step (A15(2), and
+  `tests/a15-cache.test.mjs` is what fails when it is skipped);
+  `isChronologyOnly()` and `verdictFor()` from `tools/import/chronology.mjs`
+  **at the point an edge is written**, with the refusals counted in the note
+  (A15(5)); and the **edges-crossing-an-umbrella** number, which
+  `node tools/m42-pool.mjs` now prints (A15(11)). A batch that walks a held
+  umbrella's `P361` children imports only the children it can connect, and
+  counts the candidates it leaves (A15(1)).
+- **Four invariants caught A15's own passes, and every one of them was right.**
+  The suite is what found them, after all thirteen sections were written:
+  **`tests/m49-seam.test.mjs`** refused A15(10)'s reading of the EEC's end —
+  2009 from Q52847 against the atlas's own
+  `european-economic-community--european-union--succeeded`, whose successor
+  begins in 1993 — so the end is 1993 again and the note says both. That is the
+  answer to the record's own *"an editorial choice nobody has made
+  deliberately"*: it **was** made, in that relation.
+  **`tests/bundle.test.mjs`** refused the `endDate` A15(10) wrote on two actors,
+  because the contribute form offers an actor no exact date and a save through it
+  drops one — the rule `intervalFor` has obeyed since it was written.
+  **`tests/m67.test.mjs`** refused five of A15(6)'s filings: an event filed under
+  an umbrella, naming no actor, whose place has gone needs its filing argued in
+  writing, and the five are argued in `docs/m42-connections.md` — their evidence
+  is `P361` on the item and was never the place.
+  **`tests/m53.test.mjs`** refused the coverage row and the paragraph beside it,
+  which are retaken at **403 of 1,258** by the start rule and 404 by overlap,
+  both one lower because A15(8) retracted a record with two `P710` participants.
+  **A pass that writes a field the form cannot hold, or takes a place a
+  correspondence rested on, is a pass that needs the suite run before it is
+  believed.**
+- **The pure suite is green on this fire's tree: 1,881 tests, 1,881 pass,
+  nothing failed and nothing skipped**, run the way the check runs them since
+  M63 (`node --test $(node tools/suites.mjs --pure)`). Five of those suites are
+  this fire's own — `tests/a15-cache.test.mjs`, `a15-dates`, `a15-chronology`,
+  `a15-country` and `a15-umbrella`, **30 tests between them** — and the first
+  was written before the pass it judges and observed failing on the twelve
+  revisions it found off disk. **The 39 browser suites were still running when
+  this was written, one at a time as M63 runs them, with 145 of their tests
+  passed and none failed;** the check's own run on this head is the record, and
+  the line below says which run it is. Four invariants did fail earlier and each
+  was a pass of A15's that needed correcting, which is the paragraph above.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass. **A15 is done
+  and no fire owes it again** — every one of the thirteen has its section in
+  this file, so the next import fire goes straight to A10's order of need, which
+  is Africa.
+- **The check on this fire's head is run 1966 of `validate.yml`, commit
+  `92398612`.** Its `Validate records` step passed; its `Tests` step was still
+  running when this section was written, as were the browser suites locally.
+  Runs 1943, 1944, 1951, 1953, 1954, 1960, 1962, 1964 and 1965 were **cancelled
+  by the next push**, which is deviation 1258's chain and costs nothing; run
+  **1945**, on the A15(1) commit, is the last one this fire saw conclude and it
+  was `success`. **No run of this fire has failed.**
+- **Deviation numbers: take the next above 1463.** This fire wrote **1462** (the
+  two-thirds rule that A15(7)'s literal "first located" made necessary) and
+  **1463** (`fillTitles` pointed at Wikidata's API rather than Wikipedia's).
