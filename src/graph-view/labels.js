@@ -40,7 +40,7 @@ import {
 // little over the line height the halo needs, so two names on neighbouring
 // lines are two lines and not a thicket.
 export const LINE = 1.5;
-export const lineHeight = (k) => (LABEL_SIZE * LINE) / k;
+export const lineHeight = (k, size = LABEL_SIZE) => (size * LINE) / k;
 // How far from its own line a label may be written: as far as the picture
 // goes. The events on screen are what the reader is looking at and every one
 // of them is to be named, and what makes that legible is the leader the
@@ -60,15 +60,15 @@ export const LENS_ROWS_AWAY = 18;
 // The box a whole name takes on one side of a mark, on a line `dy` away from
 // the mark's own. Rough, as label-fit.js's is and for the same reason: it only
 // has to be good enough to keep two names off each other.
-export function labelBoxAt(node, name, right, { k, gap, dy = 0 }) {
-  const width = boxWidth(name.length, k);
+export function labelBoxAt(node, name, right, { k, gap, dy = 0, size = LABEL_SIZE }) {
+  const width = boxWidth(name.length, k, size);
   const x = textStart(node, right, k, gap);
   const y = node.y + dy;
   return {
     x0: right ? x : x - width,
     x1: right ? x + width : x,
-    y0: y - halfLine(k),
-    y1: y + halfLine(k),
+    y0: y - halfLine(k, size),
+    y1: y + halfLine(k, size),
     x,
     y,
     right,
@@ -86,8 +86,8 @@ const withinView = (box, view) => box.x0 >= view.x0 && box.x1 <= view.x1
 // needs its own side to write from, and a name laid over a circle is two
 // things the reader has to take apart (label-fit.js says the same about the
 // room it measures).
-function coversAMark(box, node, marks, k) {
-  const reach = halfLine(k);
+function coversAMark(box, node, marks, k, size = LABEL_SIZE) {
+  const reach = halfLine(k, size);
   for (const other of marks) {
     if (other === node) continue;
     if (other.x >= box.x0 && other.x <= box.x1
@@ -100,17 +100,17 @@ function coversAMark(box, node, marks, k) {
 // 0, then one above and one below, then two, and so on. Above before below
 // only because something has to come first and a picture drawn twice must be
 // drawn the same way.
-function* offsets(rows, k) {
+function* offsets(rows, k, size = LABEL_SIZE) {
   yield 0;
   for (let i = 1; i <= rows; i += 1) {
-    yield -i * lineHeight(k);
-    yield i * lineHeight(k);
+    yield -i * lineHeight(k, size);
+    yield i * lineHeight(k, size);
   }
 }
 
 // Whether a label ended up somewhere other than on its mark's own line, and
 // therefore needs the thin leader that ties it back (graph-view.js draws it).
-export const movedAway = (node, rect, k) => Math.abs(rect.y - node.y) > halfLine(k);
+export const movedAway = (node, rect, k, size = LABEL_SIZE) => Math.abs(rect.y - node.y) > halfLine(k, size);
 
 // Where one name goes, or null when there is nowhere for the whole of it.
 //
@@ -119,15 +119,15 @@ export const movedAway = (node, rect, k) => Math.abs(rect.y - node.y) > halfLine
 // picture of everything until the reader zooms in. A lens is not capped: the
 // reader has asked about these events and the atlas answers with their names.
 export function placeOne(name, node, {
-  k, gap, view, placed = [], marks = [], rows = ROWS_AWAY, capped = true,
+  k, gap, view, placed = [], marks = [], rows = ROWS_AWAY, capped = true, size = LABEL_SIZE,
 }) {
-  if (capped && boxWidth(name.length, k) > SLICE) return null;
-  for (const dy of offsets(rows, k)) {
+  if (capped && boxWidth(name.length, k, size) > SLICE) return null;
+  for (const dy of offsets(rows, k, size)) {
     for (const right of [true, false]) {
-      const box = labelBoxAt(node, name, right, { k, gap, dy });
+      const box = labelBoxAt(node, name, right, { k, gap, dy, size });
       if (!withinView(box, view)) continue;
       if (placed.some((other) => overlaps(box, other))) continue;
-      if (coversAMark(box, node, marks, k)) continue;
+      if (coversAMark(box, node, marks, k, size)) continue;
       return { text: name, right, rect: box };
     }
   }
@@ -139,14 +139,16 @@ export function placeOne(name, node, {
 // caller's — reading order inside a lens, heaviest first at rest — so what a
 // crowded picture keeps is what the reader came for.
 export function placeLabels(candidates, {
-  k, gap, view, rows = ROWS_AWAY, capped = true,
+  k, gap, view, rows = ROWS_AWAY, capped = true, size = LABEL_SIZE,
 }) {
   const placed = [];
   const marks = candidates.map((c) => c.node);
   const out = [];
   for (const { node, name } of candidates) {
     if (typeof name !== 'string' || name.length === 0) continue;
-    const found = placeOne(name, node, { k, gap, view, placed, marks, rows, capped });
+    const found = placeOne(name, node, {
+      k, gap, view, placed, marks, rows, capped, size,
+    });
     if (!found) continue;
     placed.push(found.rect);
     out.push({ node, ...found });

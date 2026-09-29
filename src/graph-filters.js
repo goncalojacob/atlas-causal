@@ -63,15 +63,38 @@ export const degreeLabel = (n) => DEGREE_LABEL[n] ?? `Show events with at least 
 // this atlas's word for the thing and not theirs.
 export const DEGREE_OFF = 'Off while an event is open: what is drawn is that event and its parts';
 
-export function createGraphFilters(group, { state, atlas = null }) {
-  if (!group) return { render: () => {} };
+// **And it says it to everybody** (M88 §11, the third review, finding B11).
+// The sentence above was a `title` and a class on the group, which is a
+// tooltip and a colour: a reader with a screen reader was handed a disabled
+// select with no reason at all, and a reader who cannot hold a pointer still
+// over a control was handed the same. It is a line of text now, visually
+// hidden and named by `aria-describedby` on the select itself, so the reason
+// is read out with the control it is about. The `title` stays, because it is
+// what a pointer gets.
+//
+// Pure, so that what the control says can be asserted without a browser: the
+// text is one function of the atlas and the state, and the markup is another.
+export const degreeOffText = (atlas, s) => (atlas && lensView(atlas, s) ? DEGREE_OFF : '');
 
+export const DEGREE_OFF_ID = 'degree-off';
+
+export function degreeControlHtml() {
   const options = DEGREE_CHOICES
     .map((n) => `<option value="${n}">${esc(degreeLabel(n))}</option>`)
     .join('');
-  group.innerHTML = `<label><span class="visually-hidden">How many connections an event needs to be drawn</span><select data-filter="degree" aria-label="How many connections an event needs to be drawn">${options}</select></label>`;
+  return `<label><span class="visually-hidden">How many connections an event needs to be drawn</span>`
+    + `<select data-filter="degree" aria-label="How many connections an event needs to be drawn"`
+    + ` aria-describedby="${DEGREE_OFF_ID}">${options}</select></label>`
+    + `<span id="${DEGREE_OFF_ID}" class="visually-hidden"></span>`;
+}
+
+export function createGraphFilters(group, { state, atlas = null }) {
+  if (!group) return { render: () => {} };
+
+  group.innerHTML = degreeControlHtml();
 
   const degree = group.querySelector('[data-filter="degree"]');
+  const reason = group.querySelector(`#${DEGREE_OFF_ID}`);
 
   degree.addEventListener('change', () => state.set({ degree: Number(degree.value) }));
 
@@ -80,10 +103,15 @@ export function createGraphFilters(group, { state, atlas = null }) {
     // A lens of any kind, asked of the one module that decides what a lens is
     // (lens.js) rather than of `s.selected`, so the answer here and the answer
     // the arrangement acts on cannot come apart.
-    const off = Boolean(atlas && lensView(atlas, s));
+    const said = degreeOffText(atlas, s);
+    const off = said !== '';
     degree.disabled = off;
     if (off) degree.setAttribute('title', DEGREE_OFF);
     else degree.removeAttribute('title');
+    // Empty at rest rather than removed: an `aria-describedby` pointing at an
+    // element that is not there is a description nobody can read, and a
+    // control that is on has nothing to explain.
+    if (reason) reason.textContent = said;
     group.classList.toggle('off', off);
   };
   state.subscribe(render);
