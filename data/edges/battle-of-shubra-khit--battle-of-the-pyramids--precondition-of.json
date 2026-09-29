@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-shubra-khit--battle-of-the-pyramids--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Battle of the Pyramids”, revision 1371801221, § Prelude"
+    }
+  ],
+  "from": "battle-of-shubra-khit",
+  "to": "battle-of-the-pyramids",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later article gives the mechanism and not only the fortnight between them: “On 13 July, French scouts located Murad's encampment near Shubra Khit. Bonaparte ordered an immediate advance, leading to the skirmish at Shubra Khit (also called Chobrakit). French artillery destroyed the Mamluk flagship on the Nile and **forced a retreat**, giving Bonaparte his first victory and demonstrating the effectiveness of concentrated firepower against cavalry charges.” The Mamluk army that fell back from Shubra Khit is the army the French met again at Embabeh eight days later, and the divisional square the French formed there is the tactic the article says Shubra Khit proved. `precondition-of`: the first engagement did not cause the second, it set the field and the method of it. Probable: Wikipedia alone.",
+  "dispute": null
+}

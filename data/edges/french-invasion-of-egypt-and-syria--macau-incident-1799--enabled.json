@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "french-invasion-of-egypt-and-syria--macau-incident-1799--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Macau Incident (1799)”, revision 1370627318, § Incident at Macau"
+    }
+  ],
+  "from": "french-invasion-of-egypt-and-syria",
+  "to": "macau-incident-1799",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The later article states it in one clause, and it is the reason this edge exists rather than the one batch 40 refused: “However Fox and Carysfort were detached with a local convoy in November 1798, and **Rainier, whose forces were largely committed to the Red Sea following the recent French invasion of Egypt**, gave urgent orders for the frigates to be replaced by the 38-gun HMS Virginie and 74-gun HMS Arrogant.” Batch 40 withdrew the raid on Manila because the only text reaching Macau named a third event as the cause and the atlas did not hold it; the third event was this one, and A15(5) says such an edge is written from that event or not at all. It is written from that event. `enabled`: the invasion did not make the Franco-Spanish squadron sail, it took the Royal Navy squadron that would otherwise have been covering the China Fleet and put it in the Red Sea. Probable: Wikipedia alone.",
+  "dispute": null
+}

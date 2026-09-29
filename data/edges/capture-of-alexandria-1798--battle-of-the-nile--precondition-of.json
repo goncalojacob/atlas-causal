@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "capture-of-alexandria-1798--battle-of-the-nile--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Battle of the Nile”, revision 1372980990, lead"
+    }
+  ],
+  "from": "capture-of-alexandria-1798",
+  "to": "battle-of-the-nile",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later article says why the French fleet was where Nelson found it: “With the French army ashore, Brueys' fleet anchored in Aboukir Bay, 20 miles (32 km) northeast of Alexandria. Brueys believed that he had established a formidable defensive position. The British fleet arrived off Egypt on 1 August and discovered Brueys' dispositions, and Nelson ordered an immediate attack.” The landing that took Alexandria is what put the fleet at anchor twenty miles along the same coast with its crews ashore foraging — the article's own explanation of why Brueys had “not organized reconnaissance”. `precondition-of`: the disembarkation made the anchorage necessary; Nelson's arrival is what made it a battle. Probable: Wikipedia alone.",
+  "dispute": null
+}

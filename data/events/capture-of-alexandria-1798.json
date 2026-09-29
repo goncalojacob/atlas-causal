@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-alexandria-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403790",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Capture of Alexandria (1798)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403790"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Alexandria (1798)\", revision 1370608238"
+    }
+  ],
+  "title": "Capture of Alexandria (1798)",
+  "summary": "The English Wikipedia article \"Capture of Alexandria (1798)\", at revision 1370608238, opens: \"The capture of Alexandria was the first operation on Egyptian soil during the French invasion of Egypt and Syria. On 2 July 1798, the French army landed and took the city of Alexandria from the hands of the Janissaries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403790, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 battle in Egypt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-07-02"
+  },
+  "place": "alexandria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-nile--revolt-of-cairo--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Revolt of Cairo”, revision 1371106483, § Revolt"
+    }
+  ],
+  "from": "battle-of-the-nile",
+  "to": "revolt-of-cairo",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later article names the Nile among the reasons the French position was weak when the city rose: “The French army's situation was critical – the British were threatening French control of Egypt after their victory at the Battle of the Nile, Murad Bey and his army were still in the field in Upper Egypt, and the generals Menou and Dugua were only just able to maintain control of Lower Egypt. The Egyptians had common cause with those rising against the French in Cairo – the whole region was in revolt.” This is the weakest of the batch's edges and the explanation says so: the article states the Nile as part of a critical situation and not as the thing that produced the rising, and the sentence does turn on “after”. What keeps it out of the chronology refusal is the clause that follows it — the French could not hold Egypt against the British *and* Murad Bey *and* the city at once, which is a state of affairs and not an order of dates. `precondition-of`, never `caused`. Probable: Wikipedia alone.",
+  "dispute": null
+}
