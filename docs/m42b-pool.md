@@ -11659,6 +11659,108 @@ was asked, and the tool had exactly one such test for years.
 | `americas` | 356 | **358** |
 | `americas`, 16th century | 44 | **46** |
 
+## Batch 46 — the battle of Cape Rachado, and the two Malacca sieges it stands between
+
+The cell that trails hardest inside this partition is not the Americas this
+fire: **the `asia` lane's seventeenth century held three active events and the
+`africa` lane's two**, against the `americas` lane's 69. Both are under A15 (1),
+which gave this lane Africa and Asia before 1800 in place of the paused Europe
+clause, and both were looked at. The vein for either is the same held umbrella:
+`dutch-portuguese-war` (`Q377269`, 1601–1661), whose `P361` children this fire
+walked for the first time in this lane.
+
+### What the umbrella answers
+
+**43 distinct children**, **14 of them already here** before this batch (the
+Brazil cluster earlier fires took, the two Elmina battles, both sieges of
+Malacca, Maricay, Paraíba, Porto Calvo, Tabocas, Tamanana and the two
+Guararapes). **29 unheld.** A15 (1) says a batch walking a held umbrella's
+children imports only those it can connect to what exists with an edge under
+A5 and counts the rest, so every one of the 29 was read for a connection
+before anything was written. **One was importable and 28 were left.**
+
+### What was left, and why
+
+| left | lane | why |
+| --- | --- | --- |
+| `Q121433548`, `Q122227094` (sieges of Mozambique, 1607 and 1608) | africa | They connect to each other and to nothing this atlas holds. The 1608 article makes the 1607 failure its own reason — *"stubborn Portuguese resistance had forced them to call off the attack"*, *"Verhoef sought to revive the VOC offensive"* — but neither article names a held event as a cause. The pair is the best single opportunity the `africa` seventeenth century has and it needs one anchor record first. |
+| `Q5037028` (capture of Luanda, 1641) | africa | **A15 (8).** Its English sitelink resolves to *Dutch Loango-Angola*, an article about the colony, with a fragment; no summary may be quoted from it and the span would have to be read from the section that names the item. |
+| `Q130377423` (Filips van Zuylen's campaign against Luanda, 1624) | africa | The article says Zuylen *"waited for reinforcements that were coming from Brazil"* and names Piet Hein, but never names the capture of Bahia, which is the held record a connection would have to run to. A5 wants the source to carry the link and this one does not. |
+| `Q4871476` (battle of Kombi, 1647) | africa | The richest article of the African group, and every event it names as a cause — the Dutch occupation of Luanda in 1641, Njinga's defeat at Kavanga in 1646, Salvador de Sá's arrival in 1648 — is one this atlas does not hold. |
+| `Q138011120` (South Atlantic campaign, 1647–1649) | africa | The article is a stub: one sentence and three empty headings. It would be the natural connector between Angola and the Guararapes and it states nothing to connect with. |
+| `Q138002239` (battle of Príncipe, 1598) | africa | Self-contained: every cause its article gives is internal to the island. |
+| `Q131686861` (battle of Pulo Buton, Dec 1606) | asia | The nearest miss, and the batch's one refusal under **A15 (5)**. Matelief's own fleet, four months after Cape Rachado, and the article says only *"The Dutch fleet, which had suffered losses in previous skirmishes, sought to exploit the Portuguese vulnerability"* — *previous skirmishes* names nothing, and an unnamed antecedent is not a cause. |
+| `Q2032681`, `Q117350122`, `Q2092338`, `Q704333`, `Q2567256`, `Q137801200`, `Q130198485`, `Q4871118`, `Q4677351`, `Q25830845`, `Q4677306`, `Q4677341`, `Q122452193`, `Q130478490` (fourteen engagements in the Indies, 1601–1658) | asia | Each was read for a link to either held siege of Malacca and none names one. `Q4871118` (battle of Goa) and `Q137801200` (sack of Bombay) have no article text to read at all; `Q2567256` resolves to *Battle of the Strait of Hormuz*, which is an A15 (8) redirect. |
+| `Q19019163`, `Q221357`, `Q10369402`, `Q104445153` | americas | Brazil, which is not this batch's cell: two of them are umbrellas over records this atlas already files under `dutch-brazil-1630-1654`, and `Q104445153` has no English article. |
+| `Q10340199`, `Q109314929` | africa | **No English article at all** — the Dutch occupation of Angola is exactly the anchor the African group needs and Wikidata has no readable account of it under these two items. |
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-cape-rachado` | 18 Aug 1606 | asia | `tanjung-tuan` | `dutch-portuguese-war` |
+
+One event and one place, both written by the tool: `tanjung-tuan` from
+`Q7683445`'s own point, which is the item's `P276` and carries `P625`, and the
+lane derived from that point. The event names `Q377269` through `P361` and it
+is here, so it is filed under it and **the main count is 235 before the batch
+and 235 after it.**
+
+**A15 (4) held.** The item dates the battle 18 August 1606; the article's first
+sentence states only the year, so the item's day stands and the comparison the
+import makes at write time had nothing to correct.
+
+### Two edges, both to records that were already here
+
+| edge | type | crosses an umbrella | what carries it |
+| --- | --- | --- | --- |
+| `siege-of-malacca-1606` → `battle-of-cape-rachado` | `caused` | no | *"the siege was lifted when the 20-odd ships began to engage the VOC fleet off the Malaccan coast. The two fleets exchanged cannon fire and the Portuguese ships began to move northward, drawing the Dutch away from Malacca"*, and from the siege's own article, *"additional reinforcements led by Martim Afonso de Castro arrived, which caused the Dutch to retreat from the siege"* |
+| `battle-of-cape-rachado` → `siege-of-malacca-1640-1641` | `enabled` | no | *"The battle also proved the tenacity of the Dutch in their war against the Portuguese, which caused the Sultan of Johor to fully commit to providing his armies, ships and resources"*, and the 1640 siege's own first sentence, *"initiated by the Dutch East India Company and their local ally, Johor"* |
+
+`caused` and not `precondition-of` for the first: the article does not put the
+battle after the siege, it says the fleet sent to lift the siege is what drew
+Matelief north into it. `enabled` and not `caused` for the second: thirty-four
+years and several failed sieges lie between them, and what Cape Rachado
+supplied was the ally the final siege was fought with, not the decision to
+fight it.
+
+**Nothing from a parent to its own child (A14)**: all three events are children
+of `dutch-portuguese-war`, which is also why **neither edge crosses an
+umbrella** — the two endpoints of each share a parent. A15 (11) asks for that
+number and this batch's is **zero**, which is the honest shape of a batch taken
+from inside one umbrella.
+
+### A15 (5): one candidate refused under it
+
+`Q131686861`, the battle of Pulo Buton, in the table above: *previous
+skirmishes* is an antecedent with no name and no claim in it. Nothing else in
+the batch met the refusal class, because nothing else got as far as an edge.
+
+### Counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,321 | **1,322** |
+| **main** | **235** | **235** |
+| active edges | 1,097 | **1,099** |
+| largest connected component | 733 | 733 |
+| components | 408 | 408 |
+| active events with no edge | 319 | 319 |
+| edges crossing an umbrella | 573 of 1,097 | 573 of 1,099 |
+| `asia` | 205 | **206** |
+| `asia`, 17th century | 3 | **4** |
+
+**The largest component did not move and the count of components did not
+either**, because the two sieges of Malacca were already a component of two
+and the battle joined them rather than anything larger: `battle-of-cape-rachado`,
+`siege-of-malacca-1606`, `siege-of-malacca-1640-1641` is a component of three.
+That is worth saying plainly rather than burying: **this atlas's Asian
+seventeenth century is an island**, and the way off it is a record that reaches
+either Europe or the Americas — the Twelve Years' Truce, the Iberian Union, the
+Dutch Revolt — none of which this atlas holds. Batch 43's lesson said an
+umbrella files and does not connect; this batch says the same thing about a
+theatre.
+
 ## Where the run stands, for the fire that picks it up
 
 ### The measurement, as this fire leaves it
@@ -11666,103 +11768,82 @@ was asked, and the tool had exactly one such test for years.
 | lane | active | before 1800 | 1400s | 1500s | 1600s | 1700s | 1800s | 1900s | 2000s |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | europe | 555 | — | 4 | 44 | 109 | 62 | 39 | 245 | 52 |
-| **americas** | **358** | 120 | 5 | **46** | 69 | **57** | 56 | 86 | 39 |
-| asia | 202 | **20** | — | — | 3 | 17 | 7 | 146 | 29 |
-| africa | 200 | **16** | — | — | 2 | 14 | 17 | 91 | 76 |
+| americas | 358 | 177 | 5 | 46 | 69 | 57 | 56 | 86 | 39 |
+| **asia** | **206** | **21** | — | — | **4** | 17 | 7 | 149 | 29 |
+| africa | 203 | 16 | — | — | 2 | 14 | 18 | 93 | 76 |
 
-1,315 active events, 235 main, 1,091 active edges, 408 components, largest
-**730**, 572 edges crossing an umbrella, 319 active events with no edge.
+1,322 active events, 235 main, 1,099 active edges, 408 components, largest
+**733**, 573 edges crossing an umbrella, 319 active events with no edge.
 
-**A15 (1)'s gate is shut and moved no closer this fire**: africa 200 and asia
-202 against A10's 303, and nothing of Europe before 1900 until both reach it.
+**A15 (1)'s gate is still shut**: africa 203 and asia 206 against A10's 303,
+and nothing of Europe before 1900 until both reach it.
 
 ### What this fire did
 
-Two batches (44 and 45), four events, three places, five edges — four of the
-five across an umbrella — and **the largest component 724 → 730**, which is
-the second and third fire running in which it has moved at all. One import
-guard that did not exist (A15 (8) at write time, deviation 1347), one lane
-defect found and repaired by hand (deviation 1348), one fixture that could not
-tell one article from another (deviation 1349).
+One batch (46), one event, one place, two edges, both to records that were
+already here, and **no movement in the largest component**, because the cluster
+it joined is a component of three. The fire also carried `origin/m0` and
+`origin/m42` into the branch and rebuilt the index on top of each, which is the
+shape the last three fires got wrong (see the check note below).
 
 ### The next fire's moves, in order
 
-1. **The conquest umbrellas are nearly exhausted and the colonisation umbrella
-   is dateless.** Batch 45's two tables are the whole of that reserve: of 34
-   `P361` children of `Q1047607` and 19 of the five conquest umbrellas, what is
-   left unheld is eight dateless campaigns and one classless one. **A fire
-   should not spend another query on `Q1047607`.** Where the `americas` lane's
-   16th and 17th centuries grow next is `spanish-american-wars-of-independence`
-   (`Q1123201`, held, 1808–1833, so the 19th century), the `P527`/`P361` trees
-   under `american-indian-wars` (`Q849680`, held, 1609–1924), and the
-   Portuguese side of the Atlantic, which no fire has queried at all.
-2. **Two records are waiting on a decision rather than on a query.**
-   `Q3010371` (Bois Caïman, 14 August 1791) is refused for three classes
-   nobody has ruled on — `Q13226383`, `Q1155622`, `Q302729` — and it is the
-   ceremony the Haitian Revolution is usually said to begin at. `Q656046`
-   (the battle of San Juan, 1797) imported cleanly and was taken out again for
-   want of an edge; it becomes importable the moment this atlas holds the
-   Second Treaty of San Ildefonso or the British capture of Trinidad, either
-   of which is one record.
-3. **Deviation 1348 is the narrow half of deviation 1346 and is fixable in
-   code.** A country that A15 (6) has just refused as a place is still read as
-   a lane one line later. Refusing it in both places would have stopped a
-   Caribbean battle being filed in Europe without opening the nearest-polygon
-   question at all. A fire may not decide it; the owner can.
-4. **`haitian-revolution-1791-1804` and eight more of the atlas's own umbrellas
-   carry no `wikidata`**, so the import cannot file a child under them and
-   writes it parentless. `battle-of-the-acul` came out that way before it was
-   dropped for other reasons. `--reconcile` is the mode that exists for this
-   and no fire of this lane has run it.
+1. **The `africa` seventeenth century is one anchor record away.** The two
+   sieges of Mozambique (`Q121433548`, `Q122227094`) are a clean pair with a
+   stated reason running from the first to the second, and they are stranded
+   only because nothing they name is here. The same is true of the Angola
+   group: Kombi (`Q4871476`) names the **Dutch occupation of Luanda** as its
+   background and van Zuylen (`Q130377423`) names the same city in 1624. **A
+   fire that imports the Dutch occupation of Luanda first** — not `Q5037028`,
+   which is an A15 (8) redirect, but the colony's or the reconquest's own
+   item — opens four of the six African candidates at once. That is the
+   highest-value single record in this partition.
+2. **The Asian seventeenth century is an island and the bridge is European.**
+   Nothing in this atlas connects the Dutch–Portuguese War's Asian theatre to
+   anything outside it, because the Dutch Revolt, the Twelve Years' Truce and
+   the Iberian Union are all absent. Any one of them, imported into the
+   `europe` lane, would be the crossing edge every batch from this umbrella
+   has failed to write — and A15 (1) pauses Europe **before 1900**, so a fire
+   may not take it. **This is a question for the owner**, not a move a fire can
+   make: the balance clause and the connectivity clause point opposite ways
+   here, and the connectivity one is the owner's own *"chains throughout the
+   globe and time."*
+3. **The `americas` lane's unqueried veins are unchanged** from batch 45's
+   note: `spanish-american-wars-of-independence` (`Q1123201`, held,
+   1808–1833), the `P527`/`P361` trees under `american-indian-wars`
+   (`Q849680`, held, 1609–1924), and the Portuguese side of the Atlantic,
+   which still no fire has queried.
+4. **Wikimedia's rate limit is real and `curl` is what trips it** (deviation
+   1200). Fetch through Node's own `fetch` with the import's user agent and a
+   400 ms pace, as `tools/cache-evidence.mjs` does; a `curl` request through
+   this sandbox's proxy answered 429 for forty minutes while the identical
+   Node request answered first time.
 5. **Still open, unchanged**: C8, deviation 1323, deviation 1345 (the M76 drag
-   test), deviation 1346's ocean islands, question 11 (the Nine Years' War,
-   `Q152218`), `Q718893` *theater of war*, `Q20639061`, `Q5037062`, `Q4677270`,
-   `Q4677390`, and the place pass on records that already exist, which is M42's
-   and is reported here and not done.
+   test), deviation 1346's ocean islands, deviation 1348's lane guard,
+   question 11 (the Nine Years' War, `Q152218`), `Q718893` *theater of war*,
+   `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas
+   with no `wikidata` (`--reconcile` has still never been run by this lane),
+   and the place pass on records that already exist, which is M42's.
 
-### The tests, on this fire's head
+### The deviations this fire recorded
 
-**1,914 pure and 313 browser, 2,227 tests, 2,227 passing, nothing skipped**, on
-the final head and after the index rebuild. `node tools/validate.mjs --index` is
-clean at **0 errors, 620 warnings**, byte-identical to a fresh build.
+**Deviation 1200 — `curl` through this sandbox's proxy is rate-limited where
+Node's `fetch` is not.** Seven `wbgetentities` calls in a row put this fire in
+Wikimedia's penalty box, and every `curl` retry after it — paced at 20 s, then
+40 s, then 300 s, with the import's own user agent — came back 429 for the next
+forty minutes. The first `node --input-type=module` request with the same URL,
+the same user agent and a 400 ms pace answered immediately and every one after
+it did too. `tools/cache-evidence.mjs`'s own note (deviation 1440, M42's) says
+the pace is the point; this fire's correction is narrower and worth having
+beside it: **the pace is the point and the client is too.** A fire that needs
+an article should use the Node fetcher, not `curl`.
 
-**Deviation 1345 passed again.** `tests/m76-browser.test.mjs` 93 is green at
-1,315 active events, as it was at 1,310 and as it was not at 1,296 and 1,302.
-The deviation is not closed; an intermittent pass is the same fault seen from
-the other side.
+**Deviation 1201 — a batch may be honest about not moving the component.**
+A5 asks a batch that grows the corpus and not the component to say why. This
+one's reason is structural rather than a mistake: every edge available to a
+record taken from inside a single umbrella has both endpoints inside that
+umbrella, so the batch cannot cross one and cannot reach the largest
+component unless the umbrella already does. The lesson is not "write weaker
+edges"; it is **choose the vein by what it can reach, not only by which cell
+trails**, which is the next fire's move 2.
 
-**The stale-lead list did not grow.** `tests/leadcache.test.mjs` holds at its 27
-known records, every one of them M42's. The Martinique edge's second locator is
-the reason to say so: it cites the French Revolution article **at revision
-1375966584**, which is the revision this atlas's own record cites and the cache
-holds, after the passage was read at that revision rather than at the current
-one.
-
-### The check, on this fire's heads
-
-**Run 2009 on `61be31c9`** — the head carrying both batches' records and the
-rebuilt index — **completed `success`**: `Validate records`, the pure half and
-the browser half. That is the head that matters; the two later commits are
-`docs/` only.
-
-**Run 2004 on the merge commit `3737ca01` failed, and the reason is deviation
-798's shape and not a defect in the merge.** Its browser half is 313 of 313 and
-its own summary reads `# fail 0`; the exit code came from the pure half, whose
-output the job log's tail does not reach. The tree was validated `--index`
-clean before the push, which leaves one explanation and it is the one batch 42
-already wrote down: **the history shards are read off the repository's own
-commits, so they change the moment the commit that rebuilt them lands.** A
-merge that drops and rebuilds `data/index/` in one commit cannot be
-byte-identical to a fresh build taken after it. Every commit after it in this
-fire put the records first and the index second, which is what deviation 798
-asks for, and `node tools/build-index.mjs` on the final head writes nothing.
-
-**The lesson for the claim step**: STEP 1's merge of `origin/m0` and
-`origin/m42` should end with **two** commits, as a records batch does — the
-merge, then the index rebuilt on top of it — or its check will be red however
-clean the merge was. Three fires have now pushed a red merge commit for this
-reason.
-
-**Run 2013 on `c43a9203`, this fire's final head, also completed `success`.**
-Both of the heads that matter are green: `61be31c9` with the records and the
-index, and the final head with the documents on top of them.
