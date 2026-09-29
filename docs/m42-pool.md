@@ -13902,3 +13902,80 @@ component 711, 562 edges crossing an umbrella**. Validator **0 errors, 590
 warnings**, and the arithmetic closes exactly: 569 before, **−1** — the
 `span-vs-article-title` on `siege-of-fuenterrabia-1523-1524`, which this pass
 answered — and **+22** `span-vs-lead-dates`, every one of them named above.
+
+## A15 (5) — chronology is not a claim, and the cause a sentence names may be a third event
+
+*29 September, the 05:07Z fire. No network: the two edges were re-read against
+the quotes they already carry.*
+
+A15(5) has two halves and the second is the one the review found.
+
+**The refusal class is now code.** Three curation fires refused *"Following the
+war, X happened"* by eye, after reading it. `tools/import/chronology.mjs` is
+that judgement written down: the four openers A15(5) names —
+`After`, `Following`, `In the aftermath`, `Shortly after` — and the phrases that
+make a sentence an argument rather than an order (`led to`, `caused`,
+`resulted in`, `in response to`, `prompted`, and 25 more, which are the ones
+those fires accepted). `isChronologyOnly()` is one predicate and every batch in
+both lanes calls it **when the edge is written**, so the note counts what it
+refused instead of a later review counting what got through. **The opener has
+to be the opening, and a comma counts as much as a space** — *"Shortly after,
+the garrison withdrew"* is the class, and *"the garrison withdrew after the
+siege"* is not.
+
+**The harder half: a quote may state a cause and name a *different* event as
+it.** The two A15(5) names are both of that shape.
+
+`soviet-afghan-war--afghan-civil-war-q1980081--precondition-of` quotes the
+Soviet war's own lead: *"Following the dissolution of the Soviet Union in
+December 1991, all support to the Democratic Republic was stopped, leading to
+the toppling of the government by the mujahideen in 1992 and the start of a
+second Afghan Civil War (1992–1996)."* It does state a cause — `leading to` —
+and the cause it states is **the dissolution of the Soviet Union**, which this
+atlas holds as its own record, not the Soviet–Afghan War, which had ended three
+years earlier. So the edge is **re-pointed**: retracted with the reason on the
+record, and
+`dissolution-of-the-soviet-union--afghan-civil-war-q1980081--precondition-of`
+written in its place, from the same quote, at the same revision.
+
+`world-war-i--treaty-of-lausanne--precondition-of` quotes *"In the aftermath of
+World War I, Greece fought against Turkish nationalists led by Mustafa Kemal, a
+war that eventually resulted in a massive population exchange between the two
+countries under the Treaty of Lausanne."* The third event it names is the
+**Turkish War of Independence**, and
+`turkish-war-of-independence--treaty-of-lausanne--caused` is already here. So
+there is nothing to re-point at and the edge is **dropped**: the quote is the
+war's aftermath section placing Lausanne in time, not an argument that the World
+War caused it.
+
+**Three matcher faults fixed where the next curation fire will find them.**
+`namesHeldEvents` is what asks "does this sentence name an event the atlas
+holds", and the stand of 29 September listed three ways the version the fires
+used got it wrong. All three are in this module and in its test:
+
+- **Deviation 1458** — a substring match makes every *"World War II"* a *"World
+  War I"*, and it cost five of that fire's 53 reads. The name is matched between
+  Unicode letter-or-number boundaries, so the second `I` stops it.
+- **Deviation 1459** — a record whose name is only a date
+  (`carnation-revolution-1974` carries *"25 April"*) matches every article
+  naming that day. `usableName()` refuses a name with no letters in it, and a
+  bare `25 April`, `April 1974` or `1974`; `13 Vendémiaire` is kept, because it
+  names a thing and not a day of this year.
+- **Deviation 1460** — the REST extract of a whole article carries its section
+  headings as `=== Analysis ===` in the middle of the prose, and a matcher
+  reading them as sentences matches a name that is only in a heading.
+  `stripHeadings()` cuts them first.
+
+**Counts.** 1 edge written, 2 retracted (each with `retraction.reason` saying
+what the quote actually claims), 0 records otherwise touched. Active edges
+**1,048** (−1: two out, one in). The largest connected component is **711**,
+unmoved — the new edge joins `dissolution-of-the-soviet-union` to
+`afghan-civil-war-q1980081` inside it. **Edges crossing an umbrella: 562,
+unchanged, and the composition is better than the number** — the dropped
+World War I edge crossed (World War I is a main event, Lausanne is part of
+`interwar-period`), the new one crosses too (`revolutions-of-1989` to
+`afghan-conflict`), and the dropped Soviet–Afghan edge crossed nothing at all
+because both its ends are parts of `afghan-conflict`. So A15(11)'s number
+stands still while one umbrella-crossing argument was replaced by a
+better-attributed one. Validator **0 errors, 590 warnings**; one new pure
+suite, `tests/a15-chronology.test.mjs`, 6 tests.

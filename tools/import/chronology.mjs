@@ -1,0 +1,137 @@
+// Whether a quoted sentence states a cause or only an order of events, and
+// which events this atlas holds it names.
+//
+// A15(5): *chronology is not a claim.* A batch that reads an article for
+// causation finds a great many sentences of the shape *"Following the war, X
+// happened"* — which says when X happened and nothing about why. Three
+// curation fires refused that class by eye, after reading it; A15(5) makes the
+// refusal a rule applied **when the edge is written**, so the batch note counts
+// what it refused rather than a later review finding what it let through.
+//
+// The second half is the harder one. *"Following the dissolution of the Soviet
+// Union in December 1991, all support to the Democratic Republic was stopped,
+// leading to the toppling of the government"* **does** state a cause, and the
+// cause it names is a third event — one the atlas holds under its own id. An
+// edge drawn from the article's own subject to its object gets the direction
+// right and the cause wrong. A15(5): *written from that event or not at all.*
+//
+// Pure. The atlas's names are handed in, and nothing here fetches or decides
+// what to write: it says what the sentence says.
+
+// --- folding ---------------------------------------------------------------
+//
+// Deviation 1460: the REST extract of a whole article carries its section
+// headings as `=== Analysis ===` in the middle of the prose, and a matcher that
+// reads them as sentences matches names that are only in a heading. They are
+// cut before anything else.
+export function stripHeadings(text) {
+  return String(text ?? '').replace(/^=+[^=\n]*=+\s*$/gm, ' ');
+}
+
+export function fold(text) {
+  return stripHeadings(text)
+    .normalize('NFC')
+    .replace(/[‐-―]/g, '-')
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+// --- the refusal class -----------------------------------------------------
+
+// The four openers A15(5) names, and nothing else: a class a fire can widen is
+// a class nobody can count.
+export const CHRONOLOGY_OPENERS = Object.freeze([
+  'after', 'following', 'in the aftermath', 'shortly after',
+]);
+
+// What it takes for a sentence to state a cause rather than an order. These are
+// the phrases the three curation fires accepted, written down; a sentence with
+// none of them and a chronological opener is refused.
+export const CAUSAL_MARKERS = Object.freeze([
+  'led to', 'leading to', 'led the', 'caused', 'causing', 'resulted in',
+  'resulting in', 'as a result', 'because', 'prompted', 'prompting',
+  'triggered', 'triggering', 'sparked', 'sparking', 'in response to',
+  'in reaction to', 'forced', 'forcing', 'enabled', 'enabling',
+  'made possible', 'owing to', 'due to', 'thanks to', 'brought about',
+  'gave rise to', 'so that', 'in order to', 'paved the way',
+]);
+
+// The opener has to be the opening, and what follows it may be a comma as
+// easily as a space: *"Shortly after, the garrison withdrew"* is the class as
+// much as *"Shortly after the siege"* is.
+export function opensWithChronology(quote) {
+  const folded = fold(quote);
+  return CHRONOLOGY_OPENERS.some((opener) => folded.startsWith(opener)
+    && /^[^a-z0-9]/.test(folded.slice(opener.length)));
+}
+
+export function statesACause(quote) {
+  const folded = fold(quote);
+  return CAUSAL_MARKERS.some((marker) => folded.includes(marker));
+}
+
+// The rule itself: a quote that opens on the order of events and states no
+// cause is not an argument and no edge may be written from it.
+export function isChronologyOnly(quote) {
+  return opensWithChronology(quote) && !statesACause(quote);
+}
+
+// --- which events a sentence names -----------------------------------------
+
+const escape = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Deviation 1459: a record whose name is only a date — `carnation-revolution-1974`
+// carries "25 April" — matches every article that names that day, and matches
+// nothing about the event. A name with no letters in it is not a name this can
+// look for.
+export function usableName(name) {
+  const folded = fold(name);
+  if (folded.length < 4) return false;
+  if (!/[a-z]{3}/.test(folded)) return false;
+  // A bare date, with or without a year: "25 april", "april 1974", "1974".
+  if (/^\d{1,2} [a-z]+( \d{4})?$/.test(folded)) return false;
+  if (/^[a-z]+ \d{1,2}(, \d{4})?$/.test(folded)) return false;
+  if (/^[a-z]+ \d{4}$/.test(folded)) return false;
+  return true;
+}
+
+// Deviation 1458: a substring match makes every "World War II" a "World War I".
+// The name is matched on word boundaries, so the second `I` stops it.
+export function mentions(text, name) {
+  if (!usableName(name)) return false;
+  const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escape(fold(name))}(?![\\p{L}\\p{N}])`, 'u');
+  return pattern.test(fold(text));
+}
+
+// Every event of `candidates` the text names. `candidates` is `[{ id, names }]`
+// — an event's title and whatever else it is called — and `exclude` is the ids
+// the edge already runs between, which a sentence naming them says nothing new
+// about.
+export function namesHeldEvents(text, candidates, { exclude = [] } = {}) {
+  const skip = new Set(exclude);
+  const folded = fold(text);
+  const out = [];
+  for (const candidate of candidates ?? []) {
+    if (skip.has(candidate.id)) continue;
+    const hit = (candidate.names ?? []).find((name) => mentions(folded, name));
+    if (hit) out.push({ id: candidate.id, name: hit });
+  }
+  return out;
+}
+
+// A15(5)'s verdict on one candidate edge, given its quote. `refuse` is the
+// chronology class; `reattribute` is a third event the quote names, which the
+// edge must be written from instead or not at all.
+export function verdictFor(quote, { from, to, candidates = [] } = {}) {
+  if (isChronologyOnly(quote)) {
+    return { write: false, why: 'chronology with no cause stated', reattribute: [] };
+  }
+  const named = namesHeldEvents(quote, candidates, { exclude: [from, to] });
+  if (named.length > 0) {
+    return { write: false, why: 'the quote names a third event the atlas holds as the cause', reattribute: named };
+  }
+  return { write: true, why: null, reattribute: [] };
+}
