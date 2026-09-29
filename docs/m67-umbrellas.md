@@ -1171,3 +1171,40 @@ irregulars and lift the Siege of Ladysmith"* — the siege the atlas holds, unde
 the same umbrella, with the same two commanders as the fourth attempt a week
 later. The filing is the import's, from `P361` and the span; this paragraph is
 the measurement the bareness owes.
+
+## M42 batch 69, 29 September — two children that name neither, and the two ways A9's chain can end
+
+`battle-of-nanking` and `1938-yellow-river-flood` are both filed under
+`second-sino-japanese-war` and name no actor and no place. The other three
+records of the batch are not bare: `battle-of-shanghai` and `battle-of-xuzhou`
+carry places the import wrote from the items' own `P276` steps (`shanghai`,
+`xuzhou`), and `battle-of-wuhan` reuses `wuhan`, which the atlas already held.
+
+**`battle-of-nanking` — its own point, and no name a tool can read.** Q701180
+carries `P625` (118.7764 E, 32.0139 N), the city of Nanjing, and A9's first step
+can only reuse a place record the atlas holds; none stands there. Its `P276` is
+Q10906766, whose classes `Q2225003` and `Q19953632` have no row in the seeds
+table, so the chain could not write a place from it either, and the item has no
+`P17` at all. The import reported it in its own words — *"its own point and no
+name a tool can read; a person writes that place"* — and the record carries the
+`asia` lane and nothing else. This is deviation 1317's cost again: the place is a
+person's to write, and Nanjing is a thing the base map may already draw.
+
+**`1938-yellow-river-flood` — the country A15(6) refused, and a region with no
+class row.** Q129151 has no `P625` of its own. Its `P276` is Q858536, Central
+China, whose class `Q15642541` has no row. Its `P17` is Q13426199, the Republic
+of China, and **A15(6) refused it on the distance clause**: that country's point
+is 1,147 km from the nearest point on the event's own chain, which is the case
+A15(6) was written for — a country standing in for a place it is nowhere near.
+The record carries the `asia` lane and nothing else. A flood along the Yellow
+River in Henan is in any case not a point, and the right answer for it is a
+`region` place somebody writes rather than a country the import guessed.
+
+**Why both belong where they are filed.** Both items' `P361` is Q170314, the
+Second Sino-Japanese War, the atlas dates that umbrella 1937-07-07 to 1945-09-09,
+and both records fall inside it — Nanking 1–13 December 1937, the flood June 1938.
+Both are also argued for by an edge this batch wrote from a cited article:
+`battle-of-shanghai --enabled--> battle-of-nanking`, and
+`1938-yellow-river-flood --precondition-of--> battle-of-wuhan`. The filing is the
+import's, from `P361` and the span; this paragraph is the measurement the
+bareness owes.

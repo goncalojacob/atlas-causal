@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1938-yellow-river-flood--battle-of-wuhan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-69"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wuhan\", revision 1375679126, § Prelude"
+    }
+  ],
+  "from": "1938-yellow-river-flood",
+  "to": "battle-of-wuhan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says it in its § Prelude: \"In an attempt to win more time for the preparation of the defense of Wuhan, the Chinese opened up the dikes of the Yellow River in Huayuankou, Zhengzhou on 9 June. The flood, now known as the 1938 Yellow River flood, forced the Japanese to delay their attack on Wuhan.\" The same article gives the flood as what forced the Japanese to abandon their advance along the Huai and attack along the Yangtze instead. `precondition-of` and not `caused`: the flood did not produce the battle, which was already being prepared for; it bought the time the defence needed and set the axis it was fought on. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
