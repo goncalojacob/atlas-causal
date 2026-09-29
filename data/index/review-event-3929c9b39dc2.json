@@ -1369,6 +1369,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "ramos-2009-historia-de-portugal",
         "telo-2007-historia-contemporanea",
@@ -1390,11 +1391,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "1976 Madeira regional legislative election"
     },
@@ -2041,6 +2043,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "other",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -2060,11 +2063,12 @@
           "standing-backfilled",
           "imported-by-wikidata",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "1994 Genocide against Tutsi"
     },
@@ -2520,6 +2524,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -2537,11 +2542,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "2006 Lebanon War"
     },
@@ -3167,6 +3173,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "election",
       "cites": [
         "costa-pinto-teixeira-2019-political-institutions",
         "wikipedia-en",
@@ -3185,11 +3192,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "2014 Portuguese Socialist Party prime ministerial primary"
     },
@@ -3559,6 +3567,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -3576,11 +3585,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "2023 Brazilian Congress attack"
     },
@@ -3633,6 +3643,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -3650,12 +3661,13 @@
           "imported-facts",
           "filed-from-p361",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "note": "Place by A9’s second step, P276 Q822, Lebanon, held as `lebanon-q822`; the item has no P625 and its other P276 is Q131404661. Its P580 and P582 are 17 and 19 September, the article gives 17 and 18, so the wider pair is kept: A7 never narrows. No category, a first for this run: of the item’s seven P31, three are in the class table and those three disagree — Q2001676 says `war`, Q2223653 and Q891854 say nothing. All three say the kind is an event, so the record stands.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "2024 Lebanon electronic device attacks"
     },
@@ -4269,6 +4281,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -4290,11 +4303,12 @@
           "a9-place",
           "filed-from-p361",
           "title-from-article",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Afghan Civil War (1989–1992)"
     },
@@ -4309,6 +4323,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -4326,11 +4341,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Afghan Civil War (1996–2001)"
     },
@@ -4341,6 +4357,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -4358,11 +4375,12 @@
           "imported-facts",
           "a9-place",
           "title-from-article",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Afghan Civil War (1992–1996)"
     },
@@ -4412,6 +4430,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "macqueen-1997-decolonization",
         "wikipedia-en",
@@ -4430,11 +4449,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Algerian War"
     },
@@ -4817,6 +4837,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -4833,11 +4854,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Anglo-Irish Treaty"
     },
@@ -4949,6 +4971,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -4964,11 +4987,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Angolan Civil War"
     },
@@ -5047,6 +5071,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5063,11 +5088,12 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Anti-Comintern Pact"
     },
@@ -5118,6 +5144,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5135,11 +5162,12 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Arab Revolt"
     },
@@ -5154,6 +5182,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5169,11 +5198,12 @@
           "imported-facts",
           "m42-umbrella",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Arab Spring"
     },
@@ -5425,6 +5455,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5445,11 +5476,12 @@
           "imported-by-wikidata",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Arusha Accords (Rwanda)"
     },
@@ -5464,6 +5496,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -5480,11 +5513,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "assassination of Archduke Franz Ferdinand"
     },
@@ -5769,6 +5803,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -5785,11 +5820,12 @@
         "flags": [
           "imported-facts",
           "m42-reinstated",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Austrian Civil War"
     },
@@ -6004,6 +6040,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -6020,11 +6057,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Bangladesh Liberation War"
     },
@@ -15696,6 +15734,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -15711,11 +15750,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Benin Expedition of 1897"
     },
@@ -15830,6 +15870,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -15846,11 +15887,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Black September"
     },
@@ -16581,6 +16623,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -16598,11 +16641,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Cambodian Civil War"
     },
@@ -17339,6 +17383,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -17357,12 +17402,13 @@
           "summary-drafted",
           "date",
           "m53-open",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "note": "The interval on this record is the imported item's and covers the decisive phase only. The war between the Nationalists and the Communists opens in 1927 and is suspended for the Japanese war; a reviewer should decide whether the record is the whole war or the campaign of 1946–1949 and say so in the title.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Chinese Civil War"
     },
@@ -19197,6 +19243,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -19213,11 +19260,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Dayton Agreement"
     },
@@ -19807,6 +19855,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -19825,7 +19874,8 @@
           "imported-facts",
           "summary-drafted",
           "title-from-article",
-          "a15-country-refused"
+          "a15-country-refused",
+          "a15-category-from-p31"
         ],
         "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
@@ -20190,6 +20240,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -20205,11 +20256,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Eritrean War of Independence"
     },
@@ -20322,6 +20374,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -20337,11 +20390,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Ethiopian Civil War"
     },
@@ -20382,6 +20436,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "revolution",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -20398,11 +20453,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Euromaidan"
     },
@@ -20417,6 +20473,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -20433,11 +20490,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "European Convention on Human Rights"
     },
@@ -21010,6 +21068,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -21028,11 +21087,12 @@
           "m67-lined",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Finnish Civil War"
     },
@@ -21428,6 +21488,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -21445,11 +21506,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "First Indochina War"
     },
@@ -21503,6 +21565,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -21518,11 +21581,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "First Liberian Civil War"
     },
@@ -21710,6 +21774,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -21725,11 +21790,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "First Sudanese Civil War"
     },
@@ -22185,6 +22251,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -22203,11 +22270,12 @@
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "full-scale Russo-Ukrainian war"
     },
@@ -22259,6 +22327,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -22276,11 +22345,12 @@
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Gaza War"
     },
@@ -22498,6 +22568,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -22513,11 +22584,12 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "German–Polish declaration of non-aggression"
     },
@@ -22665,6 +22737,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -22683,11 +22756,12 @@
           "m42-reinstated",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Good Friday Agreement"
     },
@@ -22971,6 +23045,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -22987,11 +23062,12 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Greek Civil War"
     },
@@ -23200,6 +23276,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -23216,11 +23293,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Gulf War"
     },
@@ -23774,6 +23852,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar",
@@ -23796,11 +23875,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "The Iberian Pact"
     },
@@ -24174,6 +24254,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -24191,11 +24272,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Indo-Pakistani War of 1965"
     },
@@ -24723,6 +24805,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -24739,11 +24822,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Iraq War"
     },
@@ -24758,6 +24842,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -24775,11 +24860,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Iraqi Civil War of 2006–2008"
     },
@@ -24830,6 +24916,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -24847,11 +24934,12 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Irish Civil War"
     },
@@ -25359,6 +25447,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -25375,7 +25464,8 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a15-lane-from-point"
+          "a15-lane-from-point",
+          "a15-category-from-p31"
         ],
         "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept. A15(7): the lane is asia and the item's own point confirms it; the place is tokyo-bay, where the Instrument was signed. A14(2) cleared uss-missouri, whose point is the ship's berth in Pearl Harbor and in the americas lane, and was right to.",
         "status": "draft"
@@ -25455,6 +25545,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -25470,11 +25561,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Kaocen Revolt"
     },
@@ -25600,6 +25692,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -25617,11 +25710,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Katyn massacre"
     },
@@ -25673,6 +25767,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -25689,11 +25784,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Kerensky–Krasnov uprising"
     },
@@ -25883,6 +25979,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -25899,11 +25996,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Korean War"
     },
@@ -26063,6 +26161,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -26079,12 +26178,13 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "a15-category-from-p31"
         ],
         "note": "A7: the start was 1949, dated 6 December, which left the Bogotazo of April 1948 and the first year of the killing outside the record. The cited article's first sentence says, at the cached revision 1373312674, \"from 1948 to 1958\". So the start is 1948 and its day goes.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "La Violencia"
     },
@@ -26134,6 +26234,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -26151,11 +26252,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Laotian Civil War"
     },
@@ -26231,6 +26333,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -26247,11 +26350,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Lateran Treaty"
     },
@@ -26294,6 +26398,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -26311,11 +26416,12 @@
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Lebanese Civil War"
     },
@@ -26588,6 +26694,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -26608,11 +26715,12 @@
           "imported-by-wikidata",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Libyan civil war (2011)"
     },
@@ -26767,6 +26875,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-teixeira-2019-political-institutions",
@@ -26785,11 +26894,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Maastricht Treaty"
     },
@@ -26869,6 +26979,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -26885,11 +26996,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Mali War"
     },
@@ -27130,6 +27242,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -27147,12 +27260,13 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "a15-category-from-p31"
         ],
         "note": "A7: the span was 1942-1944. The cited article's first sentence says, at the cached revision 1372344283, \"from 1943 to 1945\". So 1943-1945, with no days, because the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Massacres of Poles in Volhynia and Eastern Galicia"
     },
@@ -27674,6 +27788,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -27691,11 +27806,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Mountain War (Lebanon)"
     },
@@ -27849,6 +27965,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -27866,11 +27983,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Munich agreement"
     },
@@ -27920,6 +28038,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -27938,11 +28057,12 @@
           "a9-place",
           "summary-from-lead",
           "title-from-article",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Myanmar civil war (2021–present)"
     },
@@ -28425,6 +28545,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -28441,11 +28562,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Łódź insurrection"
     },
@@ -29726,6 +29848,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -29742,11 +29865,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Paris Peace Accords"
     },
@@ -29798,6 +29922,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -29813,11 +29938,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Paris Peace Treaties"
     },
@@ -29898,6 +30024,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -29914,11 +30041,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Peace of Prague (1635)"
     },
@@ -29933,6 +30061,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -29949,11 +30078,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Peace of Riga"
     },
@@ -30401,6 +30531,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -30419,7 +30550,8 @@
           "m42-reinstated",
           "a9-place",
           "summary-from-lead",
-          "a6-filed"
+          "a6-filed",
+          "a15-category-from-p31"
         ],
         "note": "A6: carried out across occupied Europe through the war's own years, and filed as the corpus already files `the-extermination-of-the-jews-1941-1945`, `the-holocaust-in-romania` and `foibe-massacres`.",
         "status": "draft"
@@ -30717,6 +30849,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -30734,11 +30867,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Potsdam Conference"
     },
@@ -31567,6 +31701,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -31587,12 +31722,13 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "a15-category-from-p31"
         ],
         "note": "A7: the record was 1920 alone, the month of the evacuation, which put a revolt of 1918 after the Russian Civil War events it belongs among. The article's first sentence, at the revision this record already cites, gives the month it began and the year it ended. Read at \"Revolt of the Czechoslovak Legion\", revision 1370706945: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\". It was {\"start\":1920,\"end\":1920,\"date\":\"1920-09\"}.",
         "status": "draft"
       },
-      "revised": "2026-09-25",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Revolt of Czechoslovak Legion"
     },
@@ -31950,6 +32086,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -31966,7 +32103,8 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a15-country-refused"
+          "a15-country-refused",
+          "a15-category-from-p31"
         ],
         "note": "A15(6): the place was russian-republic-q139319, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged.",
         "status": "draft"
@@ -32021,6 +32159,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -32037,11 +32176,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Russo-Georgian War"
     },
@@ -32124,6 +32264,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -32141,11 +32282,12 @@
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Russo-Ukrainian war"
     },
@@ -32160,6 +32302,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -32178,12 +32321,13 @@
           "standing-backfilled",
           "imported-by-wikidata",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "note": "A7, 23 September: the interval was 1990-10-01 to 1993-08-04, the day of the Arusha Accords, and the accords did not end the war. The article this record already cites — \"Rwandan Civil War\", revision 1371242033 — opens: \"was fought between the Rwandan Armed Forces ... and the rebel Rwandan Patriotic Front (RPF) from 1 October 1990 to 18 July 1994\". The end moves to 1994-07-18 and nothing else on the record is touched. Read at its own cited revision, so no new source was added.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Rwandan Civil War"
     },
@@ -32581,6 +32725,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "telo-2007-historia-contemporanea",
         "costa-pinto-teixeira-2019-political-institutions",
@@ -32599,11 +32744,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Schengen Agreement"
     },
@@ -33077,6 +33223,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "ramos-2009-historia-de-portugal",
         "meneses-2004-portugal-1914-1926",
@@ -33096,11 +33243,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Second Boer War"
     },
@@ -33336,6 +33484,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -33351,11 +33500,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Second Liberian Civil War"
     },
@@ -33507,6 +33657,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -33523,11 +33674,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Second Sino-Japanese War"
     },
@@ -33542,6 +33694,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -33557,11 +33710,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Second Sudanese Civil War"
     },
@@ -33704,9 +33858,11 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "death",
       "cites": [
         "meneses-2004-portugal-1914-1926",
-        "wheeler-1978-republican-portugal"
+        "wheeler-1978-republican-portugal",
+        "wikidata"
       ],
       "created": "2026-09-02",
       "degree": 3,
@@ -33721,11 +33877,12 @@
       ],
       "review": {
         "flags": [
-          "wikidata-assigned-by-assistant"
+          "wikidata-assigned-by-assistant",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Assassination of Sidónio Pais"
     },
@@ -36016,6 +36173,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -36032,11 +36190,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Sierra Leone Civil War"
     },
@@ -36541,6 +36700,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -36560,11 +36720,12 @@
           "imported-by-wikidata",
           "a9-place",
           "summary-from-lead",
-          "end-unstated"
+          "end-unstated",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Somali Civil War"
     },
@@ -36651,6 +36812,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -36668,12 +36830,13 @@
           "m42-reinstated",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "a15-category-from-p31"
         ],
         "note": "A7: the end was 2020, dated 22 February, which is the unity government and not the war. The cited article's first sentence says, at the cached revision 1374713494, \"fought from 2013 to 2018\". So the end is 2018 and its day goes; the start and 15 December 2013 stand.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "South Sudanese Civil War"
     },
@@ -36954,6 +37117,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "rosas-1994-estado-novo",
         "costa-pinto-2003-contemporary-portugal",
@@ -36973,11 +37137,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Spanish Civil War"
     },
@@ -37680,6 +37845,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -37696,11 +37862,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Tajikistani Civil War"
     },
@@ -38902,6 +39069,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -38917,11 +39085,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Thousand Days' War"
     },
@@ -38936,6 +39105,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "other",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -38952,11 +39122,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Tigray war"
     },
@@ -39177,6 +39348,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -39194,11 +39366,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Brest-Litovsk"
     },
@@ -39213,6 +39386,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39229,11 +39403,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Bucharest (1913)"
     },
@@ -39319,6 +39494,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -39336,11 +39512,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Lausanne"
     },
@@ -39461,6 +39638,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39477,11 +39655,12 @@
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of London (1913)"
     },
@@ -39527,6 +39706,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39543,11 +39723,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Neuilly-sur-Seine"
     },
@@ -39666,6 +39847,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39683,11 +39865,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Paris (1898)"
     },
@@ -39702,6 +39885,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39718,11 +39902,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Peace with Italy"
     },
@@ -39770,6 +39955,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -39787,11 +39973,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Portsmouth"
     },
@@ -39843,6 +40030,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "ramos-2009-historia-de-portugal",
         "rosas-1994-estado-novo",
@@ -39861,11 +40049,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Rome"
     },
@@ -39880,6 +40069,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39896,11 +40086,12 @@
           "imported-facts",
           "m67-lined",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of San Francisco"
     },
@@ -39915,6 +40106,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -39932,11 +40124,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Sèvres"
     },
@@ -39951,6 +40144,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39967,11 +40161,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "title-from-article"
+          "title-from-article",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Tartu (Estonia–Russia)"
     },
@@ -40018,6 +40213,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -40035,11 +40231,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Trianon"
     },
@@ -40054,6 +40251,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -40072,11 +40270,12 @@
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty of Versailles"
     },
@@ -40132,6 +40331,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -40147,11 +40347,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty on the Final Settlement with Respect to Germany"
     },
@@ -40166,6 +40367,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "treaty",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -40183,11 +40385,12 @@
           "m40-retracted",
           "standing-backfilled",
           "imported-by-wikidata",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Treaty on the Non-Proliferation of Nuclear Weapons"
     },
@@ -40435,6 +40638,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -40452,12 +40656,13 @@
           "imported-facts",
           "summary-drafted",
           "date",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "note": "The interval on this record is the imported item's and is too narrow: the campaigns against the Greek, French and Armenian forces, and the Ankara assembly that directed them, run from 1919, not from October 1922. A reviewer should widen the start before the record is signed.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Turkish War of Independence"
     },
@@ -40472,6 +40677,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikipedia-en",
         "wikipedia-pt",
@@ -40488,11 +40694,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a9-place",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Twelve-Day War"
     },
@@ -41017,6 +41224,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -41034,11 +41242,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War in Afghanistan (2001–2021)"
     },
@@ -41091,6 +41300,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -41107,11 +41317,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War in Darfur"
     },
@@ -41126,6 +41337,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -41142,11 +41354,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War in Donbas"
     },
@@ -41291,6 +41504,7 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -41307,11 +41521,12 @@
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War of the Camps"
     },
@@ -42111,6 +42326,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "telo-2007-historia-contemporanea",
         "wikipedia-en",
@@ -42130,7 +42346,8 @@
           "imported-facts",
           "summary-drafted",
           "filed-from-p527",
-          "a15-lane-from-point"
+          "a15-lane-from-point",
+          "a15-category-from-p31"
         ],
         "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept. A15(7): the item names five locations and they split three asia (Golan, Near East, Middle East) to two africa (Suez Canal, Sinai), which is no majority and no correction: the war had a front on each side. The lane africa stands as it was.",
         "status": "draft"
@@ -42185,6 +42402,7 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "war",
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -42201,11 +42419,12 @@
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-category-from-p31"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Yugoslav Wars"
     },

@@ -1954,6 +1954,12 @@
       "dissent": false,
       "id": "1976-madeira-regional-legislative-election",
       "kind": "event",
+      "locator": "Q10271597, P31 Q10271596"
+    },
+    {
+      "dissent": false,
+      "id": "1976-madeira-regional-legislative-election",
+      "kind": "event",
       "locator": null
     },
     {
@@ -2060,6 +2066,12 @@
     },
     {
       "dissent": false,
+      "id": "1994-genocide-against-tutsi",
+      "kind": "event",
+      "locator": "Q131297, P31 Q180684"
+    },
+    {
+      "dissent": false,
       "id": "1995-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -2135,6 +2147,12 @@
       "id": "2006-lebanon-war",
       "kind": "event",
       "locator": "Q49104"
+    },
+    {
+      "dissent": false,
+      "id": "2006-lebanon-war",
+      "kind": "event",
+      "locator": "Q49104, P31 Q198"
     },
     {
       "dissent": false,
@@ -2242,6 +2260,12 @@
       "dissent": false,
       "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
       "kind": "event",
+      "locator": "Q18389393, P31 Q40231"
+    },
+    {
+      "dissent": false,
+      "id": "2014-portuguese-socialist-party-prime-ministerial-primary",
+      "kind": "event",
       "locator": null
     },
     {
@@ -2312,6 +2336,12 @@
     },
     {
       "dissent": false,
+      "id": "2023-brazilian-congress-attack",
+      "kind": "event",
+      "locator": "Q116142348, P31 Q104708121"
+    },
+    {
+      "dissent": false,
       "id": "2023-madeiran-regional-election",
       "kind": "event",
       "locator": null
@@ -2321,6 +2351,12 @@
       "id": "2024-lebanon-electronic-device-attacks",
       "kind": "event",
       "locator": "Q130314422"
+    },
+    {
+      "dissent": false,
+      "id": "2024-lebanon-electronic-device-attacks",
+      "kind": "event",
+      "locator": "Q130314422, P31 Q2001676"
     },
     {
       "dissent": false,
@@ -2426,15 +2462,33 @@
     },
     {
       "dissent": false,
+      "id": "afghan-civil-war",
+      "kind": "event",
+      "locator": "Q2405009, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war-q12302518",
       "kind": "event",
       "locator": "Q12302518"
     },
     {
       "dissent": false,
+      "id": "afghan-civil-war-q12302518",
+      "kind": "event",
+      "locator": "Q12302518, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war-q1980081",
       "kind": "event",
       "locator": "Q1980081"
+    },
+    {
+      "dissent": false,
+      "id": "afghan-civil-war-q1980081",
+      "kind": "event",
+      "locator": "Q1980081, P31 Q8465"
     },
     {
       "dissent": false,
@@ -2447,6 +2501,12 @@
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
+    },
+    {
+      "dissent": false,
+      "id": "algerian-war",
+      "kind": "event",
+      "locator": "Q200790, P31 Q21994376 / Q1006311"
     },
     {
       "dissent": false,
@@ -2516,6 +2576,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-irish-treaty",
+      "kind": "event",
+      "locator": "Q541191, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "anglo-zanzibar-war",
       "kind": "event",
       "locator": "Q170850"
@@ -2525,6 +2591,12 @@
       "id": "angolan-civil-war",
       "kind": "event",
       "locator": "Q12055176"
+    },
+    {
+      "dissent": false,
+      "id": "angolan-civil-war",
+      "kind": "event",
+      "locator": "Q12055176, P31 Q8465"
     },
     {
       "dissent": false,
@@ -2546,6 +2618,12 @@
     },
     {
       "dissent": false,
+      "id": "anti-comintern-pact",
+      "kind": "event",
+      "locator": "Q152195, P31 Q131569"
+    },
+    {
+      "dissent": false,
       "id": "arab-israeli-conflict",
       "kind": "event",
       "locator": "Q8669"
@@ -2558,9 +2636,21 @@
     },
     {
       "dissent": false,
+      "id": "arab-revolt",
+      "kind": "event",
+      "locator": "Q239060, P31 Q6107280"
+    },
+    {
+      "dissent": false,
       "id": "arab-spring",
       "kind": "event",
       "locator": "Q33761"
+    },
+    {
+      "dissent": false,
+      "id": "arab-spring",
+      "kind": "event",
+      "locator": "Q33761, P31 Q8465"
     },
     {
       "dissent": false,
@@ -2612,9 +2702,21 @@
     },
     {
       "dissent": false,
+      "id": "arusha-accords",
+      "kind": "event",
+      "locator": "Q1429076, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "assassination-of-archduke-franz-ferdinand",
       "kind": "event",
       "locator": "Q192050"
+    },
+    {
+      "dissent": false,
+      "id": "assassination-of-archduke-franz-ferdinand",
+      "kind": "event",
+      "locator": "Q192050, P31 Q3882219 / Q1139665 / Q5510053 / Q132821"
     },
     {
       "dissent": false,
@@ -2672,6 +2774,12 @@
     },
     {
       "dissent": false,
+      "id": "austrian-civil-war",
+      "kind": "event",
+      "locator": "Q306123, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "austrian-state-treaty",
       "kind": "event",
       "locator": "Q306535"
@@ -2705,6 +2813,12 @@
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "locator": "Q371394"
+    },
+    {
+      "dissent": false,
+      "id": "bangladesh-liberation-war",
+      "kind": "event",
+      "locator": "Q371394, P31 Q198"
     },
     {
       "dissent": false,
@@ -4460,6 +4574,12 @@
     },
     {
       "dissent": false,
+      "id": "benin-expedition-of-1897",
+      "kind": "event",
+      "locator": "Q3966451, P31 Q645883"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference",
       "kind": "event",
       "locator": "Q13582"
@@ -4475,6 +4595,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "Q154288"
+    },
+    {
+      "dissent": false,
+      "id": "black-september",
+      "kind": "event",
+      "locator": "Q154288, P31 Q8465"
     },
     {
       "dissent": false,
@@ -4589,6 +4715,12 @@
       "id": "cambodian-civil-war",
       "kind": "event",
       "locator": "Q817206"
+    },
+    {
+      "dissent": false,
+      "id": "cambodian-civil-war",
+      "kind": "event",
+      "locator": "Q817206, P31 Q8465"
     },
     {
       "dissent": false,
@@ -4715,6 +4847,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "Q179975"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-civil-war",
+      "kind": "event",
+      "locator": "Q179975, P31 Q8465"
     },
     {
       "dissent": false,
@@ -4982,6 +5120,12 @@
     },
     {
       "dissent": false,
+      "id": "dayton-agreement",
+      "kind": "event",
+      "locator": "Q190315, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "declaration-by-united-nations",
       "kind": "event",
       "locator": "Q176930"
@@ -5060,6 +5204,12 @@
     },
     {
       "dissent": false,
+      "id": "eastern-front",
+      "kind": "event",
+      "locator": "Q189266, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "ecuadorian-war-of-independence",
       "kind": "event",
       "locator": "Q5334383"
@@ -5102,6 +5252,12 @@
     },
     {
       "dissent": false,
+      "id": "eritrean-war-of-independence",
+      "kind": "event",
+      "locator": "Q607257, P31 Q1006311"
+    },
+    {
+      "dissent": false,
       "id": "estado-novo-1933-1974",
       "kind": "event",
       "locator": "Q824489"
@@ -5126,15 +5282,33 @@
     },
     {
       "dissent": false,
+      "id": "ethiopian-civil-war",
+      "kind": "event",
+      "locator": "Q257724, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558"
     },
     {
       "dissent": false,
+      "id": "euromaidan",
+      "kind": "event",
+      "locator": "Q15224558, P31 Q45382"
+    },
+    {
+      "dissent": false,
       "id": "european-convention-on-human-rights",
       "kind": "event",
       "locator": "Q183191"
+    },
+    {
+      "dissent": false,
+      "id": "european-convention-on-human-rights",
+      "kind": "event",
+      "locator": "Q183191, P31 Q16567729"
     },
     {
       "dissent": false,
@@ -5222,6 +5396,12 @@
     },
     {
       "dissent": false,
+      "id": "finnish-civil-war",
+      "kind": "event",
+      "locator": "Q211855, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "Q177918"
@@ -5294,6 +5474,12 @@
     },
     {
       "dissent": false,
+      "id": "first-indochina-war",
+      "kind": "event",
+      "locator": "Q748780, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "first-italo-ethiopian-war",
       "kind": "event",
       "locator": "Q989115"
@@ -5303,6 +5489,12 @@
       "id": "first-liberian-civil-war",
       "kind": "event",
       "locator": "Q1477500"
+    },
+    {
+      "dissent": false,
+      "id": "first-liberian-civil-war",
+      "kind": "event",
+      "locator": "Q1477500, P31 Q8465"
     },
     {
       "dissent": false,
@@ -5339,6 +5531,12 @@
       "id": "first-sudanese-civil-war",
       "kind": "event",
       "locator": "Q823730"
+    },
+    {
+      "dissent": false,
+      "id": "first-sudanese-civil-war",
+      "kind": "event",
+      "locator": "Q823730, P31 Q8465"
     },
     {
       "dissent": false,
@@ -5426,6 +5624,12 @@
     },
     {
       "dissent": false,
+      "id": "full-scale-russo-ukrainian-war",
+      "kind": "event",
+      "locator": "Q110999040, P31 Q198 / Q645883 / Q2001676 / Q467011 / Q11422542 / Q474138"
+    },
+    {
+      "dissent": false,
       "id": "gaza-genocide",
       "kind": "event",
       "locator": "Q124086054"
@@ -5435,6 +5639,12 @@
       "id": "gaza-war",
       "kind": "event",
       "locator": "Q122962941"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war",
+      "kind": "event",
+      "locator": "Q122962941, P31 Q198"
     },
     {
       "dissent": false,
@@ -5474,6 +5684,12 @@
     },
     {
       "dissent": false,
+      "id": "german-polish-declaration-of-non-aggression",
+      "kind": "event",
+      "locator": "Q126413, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "german-revolution-of-1918-1919",
       "kind": "event",
       "locator": "Q170306"
@@ -5489,6 +5705,12 @@
       "id": "good-friday-agreement",
       "kind": "event",
       "locator": "Q208958"
+    },
+    {
+      "dissent": false,
+      "id": "good-friday-agreement",
+      "kind": "event",
+      "locator": "Q208958, P31 Q625298"
     },
     {
       "dissent": false,
@@ -5534,6 +5756,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-civil-war",
+      "kind": "event",
+      "locator": "Q188972, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "guarani-war",
       "kind": "event",
       "locator": "Q2427419"
@@ -5561,6 +5789,12 @@
       "id": "gulf-war",
       "kind": "event",
       "locator": "Q37643"
+    },
+    {
+      "dissent": false,
+      "id": "gulf-war",
+      "kind": "event",
+      "locator": "Q37643, P31 Q198"
     },
     {
       "dissent": false,
@@ -5648,6 +5882,12 @@
     },
     {
       "dissent": false,
+      "id": "iberian-pact",
+      "kind": "event",
+      "locator": "Q884821, P31 Q131569"
+    },
+    {
+      "dissent": false,
       "id": "ifni-war",
       "kind": "event",
       "locator": "Q1640107"
@@ -5687,6 +5927,12 @@
       "id": "indo-pakistani-war-of-1965",
       "kind": "event",
       "locator": "Q233583"
+    },
+    {
+      "dissent": false,
+      "id": "indo-pakistani-war-of-1965",
+      "kind": "event",
+      "locator": "Q233583, P31 Q198"
     },
     {
       "dissent": false,
@@ -5786,9 +6032,21 @@
     },
     {
       "dissent": false,
+      "id": "iraq-war",
+      "kind": "event",
+      "locator": "Q545449, P31 Q831663 / Q2001676 / Q467011 / Q645883 / Q198"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-civil-war-of-2006-2008",
       "kind": "event",
       "locator": "Q17183365"
+    },
+    {
+      "dissent": false,
+      "id": "iraqi-civil-war-of-2006-2008",
+      "kind": "event",
+      "locator": "Q17183365, P31 Q8465"
     },
     {
       "dissent": false,
@@ -5801,6 +6059,12 @@
       "id": "irish-civil-war",
       "kind": "event",
       "locator": "Q748042"
+    },
+    {
+      "dissent": false,
+      "id": "irish-civil-war",
+      "kind": "event",
+      "locator": "Q748042, P31 Q8465"
     },
     {
       "dissent": false,
@@ -5900,6 +6164,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-instrument-of-surrender",
+      "kind": "event",
+      "locator": "Q665554, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "Q4538445"
@@ -5915,6 +6185,12 @@
       "id": "kaocen-revolt",
       "kind": "event",
       "locator": "Q2335525"
+    },
+    {
+      "dissent": false,
+      "id": "kaocen-revolt",
+      "kind": "event",
+      "locator": "Q2335525, P31 Q6107280"
     },
     {
       "dissent": false,
@@ -5942,6 +6218,12 @@
     },
     {
       "dissent": false,
+      "id": "katyn-massacre",
+      "kind": "event",
+      "locator": "Q134301, P31 Q750215"
+    },
+    {
+      "dissent": false,
       "id": "kellogg-briand-pact",
       "kind": "event",
       "locator": "Q205073"
@@ -5951,6 +6233,12 @@
       "id": "kerensky-krasnov-uprising",
       "kind": "event",
       "locator": "Q597026"
+    },
+    {
+      "dissent": false,
+      "id": "kerensky-krasnov-uprising",
+      "kind": "event",
+      "locator": "Q597026, P31 Q350604"
     },
     {
       "dissent": false,
@@ -5990,6 +6278,12 @@
     },
     {
       "dissent": false,
+      "id": "korean-war",
+      "kind": "event",
+      "locator": "Q8663, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "kosovo-war",
       "kind": "event",
       "locator": "Q190029"
@@ -6020,6 +6314,12 @@
     },
     {
       "dissent": false,
+      "id": "la-violencia",
+      "kind": "event",
+      "locator": "Q185407, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "lachine-massacre",
       "kind": "event",
       "locator": "Q2624975"
@@ -6029,6 +6329,12 @@
       "id": "laotian-civil-war",
       "kind": "event",
       "locator": "Q877450"
+    },
+    {
+      "dissent": false,
+      "id": "laotian-civil-war",
+      "kind": "event",
+      "locator": "Q877450, P31 Q8465"
     },
     {
       "dissent": false,
@@ -6050,15 +6356,33 @@
     },
     {
       "dissent": false,
+      "id": "lateran-treaty",
+      "kind": "event",
+      "locator": "Q193270, P31 Q9557810"
+    },
+    {
+      "dissent": false,
       "id": "lebanese-civil-war",
       "kind": "event",
       "locator": "Q208484"
     },
     {
       "dissent": false,
+      "id": "lebanese-civil-war",
+      "kind": "event",
+      "locator": "Q208484, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "libyan-civil-war",
       "kind": "event",
       "locator": "Q81545"
+    },
+    {
+      "dissent": false,
+      "id": "libyan-civil-war",
+      "kind": "event",
+      "locator": "Q81545, P31 Q8465"
     },
     {
       "dissent": false,
@@ -6086,6 +6410,12 @@
     },
     {
       "dissent": false,
+      "id": "maastricht-treaty",
+      "kind": "event",
+      "locator": "Q11146, P31 Q11122"
+    },
+    {
+      "dissent": false,
       "id": "mahsa-amini-protests",
       "kind": "event",
       "locator": "Q114065797"
@@ -6095,6 +6425,12 @@
       "id": "mali-war",
       "kind": "event",
       "locator": "Q2946372"
+    },
+    {
+      "dissent": false,
+      "id": "mali-war",
+      "kind": "event",
+      "locator": "Q2946372, P31 Q8465"
     },
     {
       "dissent": false,
@@ -6131,6 +6467,12 @@
       "id": "massacres-of-poles-in-volhynia-and-eastern-galicia",
       "kind": "event",
       "locator": "Q695020"
+    },
+    {
+      "dissent": false,
+      "id": "massacres-of-poles-in-volhynia-and-eastern-galicia",
+      "kind": "event",
+      "locator": "Q695020, P31 Q750215"
     },
     {
       "dissent": false,
@@ -6218,6 +6560,12 @@
     },
     {
       "dissent": false,
+      "id": "mountain-war",
+      "kind": "event",
+      "locator": "Q7784981, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "moura-massacre",
       "kind": "event",
       "locator": "Q111480185"
@@ -6242,6 +6590,12 @@
     },
     {
       "dissent": false,
+      "id": "munich-agreement",
+      "kind": "event",
+      "locator": "Q154255, P31 Q131569"
+    },
+    {
+      "dissent": false,
       "id": "my-lai-massacre",
       "kind": "event",
       "locator": "Q183421"
@@ -6251,6 +6605,12 @@
       "id": "myanmar-civil-war",
       "kind": "event",
       "locator": "Q110613097"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-civil-war",
+      "kind": "event",
+      "locator": "Q110613097, P31 Q8465"
     },
     {
       "dissent": false,
@@ -6317,6 +6677,12 @@
       "id": "odz-insurrection",
       "kind": "event",
       "locator": "Q766868"
+    },
+    {
+      "dissent": false,
+      "id": "odz-insurrection",
+      "kind": "event",
+      "locator": "Q766868, P31 Q350604"
     },
     {
       "dissent": false,
@@ -6536,6 +6902,12 @@
     },
     {
       "dissent": false,
+      "id": "paris-peace-accords",
+      "kind": "event",
+      "locator": "Q696802, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "paris-peace-conference",
       "kind": "event",
       "locator": "Q199820"
@@ -6545,6 +6917,12 @@
       "id": "paris-peace-treaties",
       "kind": "event",
       "locator": "Q322943"
+    },
+    {
+      "dissent": false,
+      "id": "paris-peace-treaties",
+      "kind": "event",
+      "locator": "Q322943, P31 Q625298"
     },
     {
       "dissent": false,
@@ -6566,9 +6944,21 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-prague-1635",
+      "kind": "event",
+      "locator": "Q1455240, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "Q1076469"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-riga",
+      "kind": "event",
+      "locator": "Q1076469, P31 Q625298"
     },
     {
       "dissent": false,
@@ -6632,6 +7022,12 @@
     },
     {
       "dissent": false,
+      "id": "porajmos",
+      "kind": "event",
+      "locator": "Q117571, P31 Q750215"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
       "kind": "event",
       "locator": "Q138748572"
@@ -6671,6 +7067,12 @@
       "id": "potsdam-conference",
       "kind": "event",
       "locator": "Q151187"
+    },
+    {
+      "dissent": false,
+      "id": "potsdam-conference",
+      "kind": "event",
+      "locator": "Q151187, P31 Q131569"
     },
     {
       "dissent": false,
@@ -6806,6 +7208,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-czechoslovak-legion",
+      "kind": "event",
+      "locator": "Q118514, P31 Q645883"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-comuneros-new-granada",
       "kind": "event",
       "locator": "Q2095753"
@@ -6866,6 +7274,12 @@
     },
     {
       "dissent": false,
+      "id": "russian-civil-war",
+      "kind": "event",
+      "locator": "Q79911, P31 Q8465 / Q350604"
+    },
+    {
+      "dissent": false,
       "id": "russian-revolution-of-1905",
       "kind": "event",
       "locator": "Q184928"
@@ -6875,6 +7289,12 @@
       "id": "russo-georgian-war",
       "kind": "event",
       "locator": "Q620735"
+    },
+    {
+      "dissent": false,
+      "id": "russo-georgian-war",
+      "kind": "event",
+      "locator": "Q620735, P31 Q198 / Q645883"
     },
     {
       "dissent": false,
@@ -6896,9 +7316,21 @@
     },
     {
       "dissent": false,
+      "id": "russo-ukrainian-war",
+      "kind": "event",
+      "locator": "Q15860072, P31 Q198 / Q11422542 / Q474138"
+    },
+    {
+      "dissent": false,
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "Q426722"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-civil-war",
+      "kind": "event",
+      "locator": "Q426722, P31 Q8465"
     },
     {
       "dissent": false,
@@ -6953,6 +7385,12 @@
       "id": "schengen-agreement",
       "kind": "event",
       "locator": "Q2822795"
+    },
+    {
+      "dissent": false,
+      "id": "schengen-agreement",
+      "kind": "event",
+      "locator": "Q2822795, P31 Q131569"
     },
     {
       "dissent": false,
@@ -7034,6 +7472,12 @@
     },
     {
       "dissent": false,
+      "id": "second-boer-war",
+      "kind": "event",
+      "locator": "Q215112, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "second-congo-war",
       "kind": "event",
       "locator": "Q75756"
@@ -7076,6 +7520,12 @@
     },
     {
       "dissent": false,
+      "id": "second-liberian-civil-war",
+      "kind": "event",
+      "locator": "Q1960733, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "second-matabele-war",
       "kind": "event",
       "locator": "Q233657"
@@ -7106,9 +7556,21 @@
     },
     {
       "dissent": false,
+      "id": "second-sino-japanese-war",
+      "kind": "event",
+      "locator": "Q170314, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "second-sudanese-civil-war",
       "kind": "event",
       "locator": "Q842380"
+    },
+    {
+      "dissent": false,
+      "id": "second-sudanese-civil-war",
+      "kind": "event",
+      "locator": "Q842380, P31 Q8465"
     },
     {
       "dissent": false,
@@ -7133,6 +7595,12 @@
       "id": "siamese-revolution-of-1932",
       "kind": "event",
       "locator": "Q2120252"
+    },
+    {
+      "dissent": false,
+      "id": "sidonio-pais-assassinated-1918",
+      "kind": "event",
+      "locator": "Q23020255, P31 Q3882219"
     },
     {
       "dissent": false,
@@ -7562,6 +8030,12 @@
     },
     {
       "dissent": false,
+      "id": "sierra-leone-civil-war",
+      "kind": "event",
+      "locator": "Q795269, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "simba-rebellion",
       "kind": "event",
       "locator": "Q2656683"
@@ -7640,6 +8114,12 @@
     },
     {
       "dissent": false,
+      "id": "somali-civil-war",
+      "kind": "event",
+      "locator": "Q243620, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "somali-civil-war-2009-present",
       "kind": "event",
       "locator": "Q1052332"
@@ -7655,6 +8135,12 @@
       "id": "south-sudanese-civil-war",
       "kind": "event",
       "locator": "Q15353665"
+    },
+    {
+      "dissent": false,
+      "id": "south-sudanese-civil-war",
+      "kind": "event",
+      "locator": "Q15353665, P31 Q8465"
     },
     {
       "dissent": false,
@@ -7703,6 +8189,12 @@
       "id": "spanish-civil-war",
       "kind": "event",
       "locator": "Q10859"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war",
+      "kind": "event",
+      "locator": "Q10859, P31 Q8465"
     },
     {
       "dissent": false,
@@ -7826,6 +8318,12 @@
     },
     {
       "dissent": false,
+      "id": "tajikistani-civil-war",
+      "kind": "event",
+      "locator": "Q1122110, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "Q811250"
@@ -7916,9 +8414,21 @@
     },
     {
       "dissent": false,
+      "id": "thousand-days-war",
+      "kind": "event",
+      "locator": "Q43378, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "tigray-war",
       "kind": "event",
       "locator": "Q101231200"
+    },
+    {
+      "dissent": false,
+      "id": "tigray-war",
+      "kind": "event",
+      "locator": "Q101231200, P31 Q180684"
     },
     {
       "dissent": false,
@@ -7952,9 +8462,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-brest-litovsk",
+      "kind": "event",
+      "locator": "Q122371, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bucharest",
       "kind": "event",
       "locator": "Q500067"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bucharest",
+      "kind": "event",
+      "locator": "Q500067, P31 Q625298"
     },
     {
       "dissent": false,
@@ -7973,6 +8495,12 @@
       "id": "treaty-of-lausanne",
       "kind": "event",
       "locator": "Q193258"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lausanne",
+      "kind": "event",
+      "locator": "Q193258, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8000,6 +8528,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-q584617",
+      "kind": "event",
+      "locator": "Q584617, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-madrid-13-january-1750",
       "kind": "event",
       "locator": "Q1422396"
@@ -8009,6 +8543,12 @@
       "id": "treaty-of-neuilly-sur-seine",
       "kind": "event",
       "locator": "Q269267"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-neuilly-sur-seine",
+      "kind": "event",
+      "locator": "Q269267, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8036,9 +8576,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris-1898",
+      "kind": "event",
+      "locator": "Q847137, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-peace-with-italy",
       "kind": "event",
       "locator": "Q2314717"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-peace-with-italy",
+      "kind": "event",
+      "locator": "Q2314717, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8054,6 +8606,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-portsmouth",
+      "kind": "event",
+      "locator": "Q548067, P31 Q625298 / Q9557810"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-rapallo",
       "kind": "event",
       "locator": "Q155796"
@@ -8066,9 +8624,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-rome",
+      "kind": "event",
+      "locator": "Q167457, P31 Q11122"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-san-francisco",
       "kind": "event",
       "locator": "Q392541"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-san-francisco",
+      "kind": "event",
+      "locator": "Q392541, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8078,9 +8648,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-sevres",
+      "kind": "event",
+      "locator": "Q182515, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-tartu",
       "kind": "event",
       "locator": "Q1056439"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tartu",
+      "kind": "event",
+      "locator": "Q1056439, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8090,9 +8672,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-trianon",
+      "kind": "event",
+      "locator": "Q181902, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-versailles",
       "kind": "event",
       "locator": "Q8736"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-versailles",
+      "kind": "event",
+      "locator": "Q8736, P31 Q625298"
     },
     {
       "dissent": false,
@@ -8108,9 +8702,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-on-the-final-settlement-with-respect-to-germany",
+      "kind": "event",
+      "locator": "Q159644, P31 Q625298"
+    },
+    {
+      "dissent": false,
       "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
       "kind": "event",
       "locator": "Q186444"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-on-the-non-proliferation-of-nuclear-weapons",
+      "kind": "event",
+      "locator": "Q186444, P31 Q131569"
     },
     {
       "dissent": false,
@@ -8150,9 +8756,21 @@
     },
     {
       "dissent": false,
+      "id": "turkish-war-of-independence",
+      "kind": "event",
+      "locator": "Q234738, P31 Q1006311 / Q21994376"
+    },
+    {
+      "dissent": false,
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "Q134900605"
+    },
+    {
+      "dissent": false,
+      "id": "twelve-day-war",
+      "kind": "event",
+      "locator": "Q134900605, P31 Q198"
     },
     {
       "dissent": false,
@@ -8240,6 +8858,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-afghanistan-2001-2021",
+      "kind": "event",
+      "locator": "Q182865, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "war-in-bosnia-and-herzegovina",
       "kind": "event",
       "locator": "Q181533"
@@ -8252,9 +8876,21 @@
     },
     {
       "dissent": false,
+      "id": "war-in-darfur",
+      "kind": "event",
+      "locator": "Q190758, P31 Q8465"
+    },
+    {
+      "dissent": false,
       "id": "war-in-donbas",
       "kind": "event",
       "locator": "Q16335075"
+    },
+    {
+      "dissent": false,
+      "id": "war-in-donbas",
+      "kind": "event",
+      "locator": "Q16335075, P31 Q350604 / Q8465"
     },
     {
       "dissent": false,
@@ -8285,6 +8921,12 @@
       "id": "war-of-the-camps",
       "kind": "event",
       "locator": "Q2777811"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-camps",
+      "kind": "event",
+      "locator": "Q2777811, P31 Q8465"
     },
     {
       "dissent": false,
@@ -8420,6 +9062,12 @@
     },
     {
       "dissent": false,
+      "id": "yom-kippur-war",
+      "kind": "event",
+      "locator": "Q49100, P31 Q198"
+    },
+    {
+      "dissent": false,
       "id": "young-turk-revolution-of-1908",
       "kind": "event",
       "locator": "Q4298662"
@@ -8429,6 +9077,12 @@
       "id": "yugoslav-wars",
       "kind": "event",
       "locator": "Q242352"
+    },
+    {
+      "dissent": false,
+      "id": "yugoslav-wars",
+      "kind": "event",
+      "locator": "Q242352, P31 Q766875"
     },
     {
       "dissent": false,

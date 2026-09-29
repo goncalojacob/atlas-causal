@@ -1207,6 +1207,14 @@
         {
           "first": true,
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "category",
+            "review",
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
