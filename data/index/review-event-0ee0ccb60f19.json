@@ -11505,9 +11505,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
+        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -11808,9 +11808,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
+        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -12664,6 +12664,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "battle-of-rheinfelden",
       "kind": "event",
       "origin": {
@@ -19760,13 +19761,11 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead",
-          "a7-widened"
+          "summary-from-lead"
         ],
-        "note": "A7: the end was 1942, the year of the signing at Washington, which closed a treaty 47 governments went on signing. The cited article's first sentence says, at revision 1376063232, \"signed by 47 national governments between 1942 and 1945\". So the end is 1945; the start and its day are unchanged. The cache held 1369044189 and was re-read at the cited revision first.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-22",
       "status": "active",
       "title": "Declaration by United Nations"
     },
@@ -22290,7 +22289,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "first-treaty-of-san-ildefonso",
       "kind": "event",
       "origin": {
@@ -26322,6 +26321,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "king-philip-s-war",
       "kind": "event",
       "origin": {
@@ -26353,6 +26353,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "king-william-s-war",
       "kind": "event",
       "origin": {
@@ -34638,7 +34639,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "siege-of-breisach",
       "kind": "event",
       "origin": {
@@ -40728,7 +40729,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 5,
       "id": "treaty-of-tordesillas-1494",
       "kind": "event",
       "names": [
@@ -43798,12 +43799,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-rheinfelden",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-rio-bueno-1759",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -44453,18 +44448,6 @@
     },
     {
       "id": "kaocen-revolt",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "king-philip-s-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "king-william-s-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

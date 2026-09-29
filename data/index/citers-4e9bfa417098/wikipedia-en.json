@@ -2678,6 +2678,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rheinfelden--siege-of-breisach--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Rheinfelden\", revision 1370587445, § The Second Battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of",
       "kind": "edge",
       "locator": "\"Mapuche uprising of 1655\", revision 1370627596, § Spanish slave hunting"
@@ -4721,6 +4727,12 @@
       "id": "kidal-offensive--battle-of-tinzaouaten-2024--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868, § Prelude"
+    },
+    {
+      "dissent": false,
+      "id": "king-philip-s-war--king-william-s-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"King William's War\", revision 1375172085, § Causes of the war"
     },
     {
       "dissent": false,
@@ -7451,6 +7463,12 @@
       "id": "treaty-of-sevres--turkish-war-of-independence--caused",
       "kind": "edge",
       "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--first-treaty-of-san-ildefonso--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Treaty of San Ildefonso\", revision 1372949821, § Background"
     },
     {
       "dissent": false,
@@ -11645,12 +11663,6 @@
       "id": "declaration-by-united-nations",
       "kind": "event",
       "locator": "\"Declaration by United Nations\", revision 1376063232"
-    },
-    {
-      "dissent": false,
-      "id": "declaration-by-united-nations",
-      "kind": "event",
-      "locator": "\"Declaration by United Nations\", revision 1376063232: \"signed by 47 national governments between 1942 and 1945\""
     },
     {
       "dissent": false,

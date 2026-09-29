@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-rheinfelden--siege-of-breisach--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rheinfelden\", revision 1370587445, § The Second Battle"
+    }
+  ],
+  "from": "battle-of-rheinfelden",
+  "to": "siege-of-breisach",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Bernhard of Saxe-Weimar’s victory in March 1638 is what put him on the Rhine, and the battle’s own article says the siege followed from it in so many words. The article reads: \"His victory enabled him to march north along the Rhine to initiate the siege of Breisach.\"",
+  "dispute": null
+}

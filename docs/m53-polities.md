@@ -253,7 +253,8 @@ thirty-five of them carrying `actors: []`.
 | **after M62** | 36 of 36 | 259 of 309 |
 | **after M67** | 36 of 36 | 306 of 310 |
 | **after M42, 1257 active** | 36 of 36 | 403 of 1257 |
-| **after M42** | 36 of 36 | 404 of 1284 |
+| **after M42, 1260 active** | 36 of 36 | 404 of 1260 |
+| **after M42, 1284 active** | 36 of 36 | 404 of 1284 |
 
 Counted the same way in both columns: **an event names at least one actor that
 is alive in the year the event starts**. `cuban-revolution` was the one chain
