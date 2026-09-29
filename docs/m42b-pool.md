@@ -11916,3 +11916,135 @@ about it is this lane's to fix in the records**; the remedy is to merge
 check goes red on a correspondence test with a record id it did not import
 should look at `origin/m42`'s log before looking at anything else.
 
+
+## Batch 47 — the reconquest of Angola, and the Pernambuco revolt that reached the Guararapes
+
+The `africa` lane's seventeenth century held **two** active events and the
+`asia` lane's four, against the `americas` lane's 69, so the cell that trails
+hardest inside this partition is the same one batch 46 named. Batch 46 walked
+`dutch-portuguese-war`'s 43 `P361` children and left 28 of them, the two sieges
+of Mozambique among them, **for want of one anchor record**: every cause their
+articles state is an event this atlas does not hold. The thirty-ninth fire's
+stand asked the next fire to import the Dutch occupation of Luanda first,
+because four of the six African candidates name it.
+
+**The anchor is not an event Wikidata has as one.** `Q5037028` (*Capture of
+Luanda*) is A15 (8)'s redirect, as the last stand said; `Q2442581` (*Dutch
+Loango-Angola*) is the colony and its class `Q3024240` makes it an **actor**,
+not an event, so importing it would not put the occupation on the timeline at
+all. What does exist is the campaign that ended the occupation: **`Q7302285`,
+the Recapture of Angola**, whose own article carries the 1641 capture in its
+second sentence and names the record this atlas already holds as the thing that
+sent the fleet.
+
+### Choosing the vein by what it can reach
+
+Deviation 1351's lesson, applied. Every child of `dutch-portuguese-war` has
+both endpoints inside that umbrella, so no edge taken from inside it can cross
+one, and A14 forbids the only edge each child's article offers — the war to the
+child. This batch therefore went looking for **a record whose article names a
+held event that is its sibling and not its parent**, and found two:
+
+| imported | what it names that the atlas holds | the edge that gives |
+| --- | --- | --- |
+| `Q7302285` (Recapture of Angola, 12 Jul – 15 Aug 1648) | *"In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol **from Recife in Dutch Brazil** to seize the Angolan capital of Luanda"* | `dutch-brazil-1630-1654` → it, `precondition-of` |
+| `Q10303008` (Insurrection of Pernambuco, 15 May 1645 – 26 Jan 1654) | *"the sugar cane mills … began to face pressure from the **West India Company**, responsible for collecting debts and confiscating the mills of defaulting farmers. **This situation led to the outbreak** of the Insurrection of Pernambuco"* | `dutch-brazil-1630-1654` → it, `caused` |
+
+The insurrection is not a `P361` child of `Q377269` and was not among batch 46's
+29, so neither import re-treads that walk.
+
+### What was imported, filed and placed
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `recapture-of-angola` | 12 Jul – 15 Aug 1648 | **africa** | `luanda` (held; from the item's own `P276`) | `dutch-portuguese-war` |
+| `insurrection-of-pernambuco` | 15 May 1645 – 26 Jan 1654 | **americas** | *(none)* | `dutch-portuguese-war` |
+
+**No place record was created**: Luanda was already here and reused by the
+import, and the insurrection is placeless for the reason below. Both filings
+are by hand under M62's span-and-subject property and carry
+`filed-by-span-and-subject`, because neither item's `P361` is a held umbrella —
+the Recapture's is `Q138011120`, the South Atlantic campaign, which batch 46
+read and found to be a stub. Both articles say the subject in so many words:
+*"a military campaign fought between the Portuguese and the Dutch occupiers of
+Angola"*, and *"occurred in the course of the second Dutch invasion during the
+Dutch–Portuguese War"*. **Both dates are inside 1601–1661, so the main count is
+235 before this batch and 235 after it**, as it has been for ten batches.
+
+**A15 (6) refused a country and was right to.** The insurrection's only located
+claim is `P17` → `Q155`, Brazil, whose inception (1822) is 168 years after the
+event ended (1654). The tool refused it as a place and logged the reason; the
+record carries `a15-country-refused` and says so.
+
+### The three edges, and the one that crosses
+
+| edge | type | crosses an umbrella | what carries it |
+| --- | --- | --- | --- |
+| `dutch-brazil-1630-1654` → `recapture-of-angola` | `precondition-of` | no — both under `dutch-portuguese-war` | *"Recapture of Angola"*, revision 1370706489 |
+| `dutch-brazil-1630-1654` → `insurrection-of-pernambuco` | `caused` | no — likewise | *"Insurrection of Pernambuco"*, revision 1370623843, § Immediate causes of the Insurrection |
+| `insurrection-of-pernambuco` → `first-battle-of-guararapes` | `caused` | **yes** | the same article's lead, *and* *"First Battle of Guararapes"*, revision 1370618669 — the revision this atlas already cites for that record |
+
+The third is the one worth the batch. `first-battle-of-guararapes` and
+`second-battle-of-guararapes` were **a component of two**, edge-linked to each
+other and to nothing else in the atlas, and both are filed under
+`dutch-brazil-1630-1654` rather than under the insurrection — so the
+insurrection is not their parent and A14's hold does not reach the edge. One
+edge therefore brings the new record **and that stranded pair** into the
+largest component: **735 → 739**, four events for three edges.
+
+**M72's second author, where one exists**: the third edge carries two locators,
+each a different article, and the second is the revision the Guararapes record
+already cites, so the stale-lead list does not grow (deviation 1344's shape).
+
+### A15 (5): what the chronology refusal class refused
+
+**Three edges were read and not written**, each a sentence that states an order
+and no cause:
+
+| refused edge | the sentence |
+| --- | --- |
+| `capture-of-bahia` → van Zuylen's campaign | *"the Dutch West India Company … tried to capture Luanda **after** they had captured Salvador da Bahia"* (Dutch Loango-Angola, rev 1370615995). "As part of the Groot Desseyn plan" says the two shared a plan, which is not one causing the other |
+| `battle-of-kombi` → `recapture-of-angola` | the Kombi article's only sentence joining them runs the other way — *"**When the forces of Salvador de Sá e Benevides arrived in 1648**, Njinga was forced to abandon the siege"* — and a cause cannot postdate its effect (rule 4) |
+| `portuguese-restoration-war` → `insurrection-of-pernambuco` | *"The new king of Portugal, John IV, faced with a long war against Spain, signed a ten-year truce between Portugal and the Netherlands and **ordered the Brazilian settlers not to attack the Dutch**"*. That is the Restoration War restraining the revolt, not producing it, and the article never says the revolt happened because of it |
+
+### A15 (1): the candidates this batch left, and what each now needs
+
+Batch 46's table stands; what has changed is **what the African group is short
+of**, because one of the three events Kombi names is now here.
+
+| left | lane | what it needs now |
+| --- | --- | --- |
+| `Q121433548`, `Q122227094` (sieges of Mozambique, 1607 and 1608) | africa | **Unchanged and still the best pair in the cell.** The 1608 article makes the 1607 failure its own reason, but the two events either article names as causes are the 1603 seizure of the carrack *Santa Catarina* and the **Twelve Years' Truce** — *"Peace negotiations had begun in 1607 … **hence** the directors of the VOC dispatched a number of ships east tasked with capturing as many Portuguese territories as possible before the Twelve Years Truce was signed"*. The Truce is Europe before 1900 and A15 (1) will not let this lane take it; the Santa Catarina is not Europe and **is** takeable, and would open both sieges at one stroke. That is the next fire's highest-value single record |
+| `Q4871476` (battle of Kombi, 1647) | africa | Two of its three named causes are still absent, and the third is now held but later than it. **`Q139022658` (battle of Kavanga, March 1646) is the pair**: Kombi's own article says *"Following her defeat at Kavanga in 1646, however, the situation was sufficiently grave that the Dutch commander decided to commit forces to her support"* — a stated cause, not chronology. Kavanga's `P361` is `Q132776772`, the Angolan Wars, which this atlas does not hold, so the pair would need one outward edge of its own |
+| `Q130377423` (Filips van Zuylen's campaign against Luanda, 1624) | africa | Unchanged from batch 46, and the refusal above is why: the only article that joins it to a held record says *after*, not *because* |
+| `Q1752752` (Mbwila, 1665), `Q4871456` (Kitombo, 1670), `Q4871703` (Mbumbi, 1622), `Q30674439` (Mbanda Kasi, 1623) | africa | **A chain of four with three stated causes among them** — Mbumbi → Mbanda Kasi (*"Pedro II … responded by personally leading a force at the battle of Mbanda crushing the invasion"*), Mbwila → Kitombo (*"Within a few months of the national tragedy at Mbwila, the Prince of Soyo … invaded"*, and the governor of Luanda *"wished to curb the growing power of Soyo"*) — and **no umbrella this atlas holds**. Their umbrellas are `Q132776772` (Angolan Wars, 1579–1683) and `Q6429210` (Kongo Civil War, 1665–1709), both classed as events the table knows. **Writing either would raise the main count by one**, and the brief says it must not rise, so this is the one African vein a batch cannot take without the owner's word on whether a regional umbrella the lane lacks may cost one main event |
+| `Q109042018` (capture of Arguin, 1724) | africa | **No English sitelink at all.** The `africa` eighteenth century is 14 active and this was its nearest candidate |
+| `Q121853652` (battle of Elmina, 1781) | africa | Clean — an article, a class the table knows, a `P625` on the Gold Coast — and **no edge**. Its `P361` is `Q576292`, the Fourth Anglo-Dutch War, which the atlas does not hold; filed under `american-revolutionary-war` as the lane's other 1782 records are, the only cause its article states (*"prompted by the outbreak of hostilities between the two nations"*) is that absent war. Takeable the moment the Fourth Anglo-Dutch War is |
+
+**Seven candidates read, two taken, five left**, and four of the five are named
+above with the single record that would open them.
+
+### Deviation 1353
+
+**1353. A15 (6)'s country gate guards the place and not the lane, and the note
+then reports the country's point as the event's own.** `Q10303008` carries no
+`P625`, no `P276` and no `P131`; its only located claim is `P17` → `Q155`. The
+gate refused Brazil as the place, correctly and with its reason printed — and
+then `laneFor()` was called with that same country's point as `ownPoint`,
+derived `americas` from it, and `laneNote()` wrote *"derived from its own
+point"* into the record. The lane is right: the Insurrection of Pernambuco is
+unambiguously of the Americas. **What was wrong was the provenance**, and a
+record that says a lane came from its own point when it has none is a record
+that cannot be audited, so the note on this one was corrected by hand to name
+`Q155`, which is the text `laneFor()`'s own country branch would have written.
+Two further consequences worth having: the seeds file's `lanes` entry this fire
+added for the item (`americas`) was **never read**, because the country's point
+pre-empts it and `seededLane()` is only tried when `lane.how` is null — it is
+kept, so that a later fire narrowing the country branch inherits the right
+answer rather than a placeless record with no lane; and A15 (7)'s rule reads
+*"the event's own item, or its first located `P276`/`P131`"*, which is exactly
+the pair of sources this record has neither of. **The fix is one line in
+`laneFor()`** — the country branch already knows it is a country branch and
+says so in `how`; the call site passes `elsewhere[0].point` as `ownPoint`, which
+is what loses that. A records batch can correct the note; the tool is a
+different lane's commit.
