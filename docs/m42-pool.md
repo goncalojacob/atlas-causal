@@ -14144,3 +14144,96 @@ a tie the next batch breaks. Corpus: **1,260 active, 235 main, 1,025 filed,
 1,048 active edges, largest component 711, 562 edges crossing an umbrella**, 732
 place records (+1). Validator **0 errors, 597 warnings** (−1: `place-unused` on
 `monastir-vilayet`, which an event cites again).
+
+## A15 (8) — redirects: four kept with the flag, two retracted, and the test that tells them apart
+
+*29 September, the 05:07Z fire. Eight requests: the six sitelinks resolved
+against **en.wikipedia.org's** action API, the six target articles read whole as
+plain text, and two leads re-cached at the revision now cited.*
+
+A15(8): where an item's English sitelink resolves to an article whose title
+folds to none of the item's names, the record takes `article-is-redirect`, no
+summary is quoted from that article, and the span is read from the section that
+names the item or the record is retracted under §1.
+
+**All six resolve to an article about a different Wikidata item, and that is the
+test.** A redirect is not by itself the fault — pass 2 found `Battle of Khe
+Sanh` redirecting to `Siege of Khe Sanh`, which is the *same* article **renamed**
+and whose lead is the item's own. The fault is a redirect **into another
+subject**, and the mechanical way to tell them apart is the target article's own
+`wikibase_item`:
+
+| record | its item | the article its sitelink reaches | that article's item |
+| --- | --- | --- | --- |
+| `eritrean-civil-wars` | Q2139988 | Eritrean War of Independence | Q607257 |
+| `action-at-tamanana-9-september-1645` | Q121365322 | Insurrection of Pernambuco | Q10303008 |
+| `atlantic-revolutions` | Q3108868 | Age of Revolution | Q4691908 |
+| `battle-of-musa-dagh` | Q19831524 | Musa Dagh | Q1953975 |
+| `milk-bar-cafe-bombing` | Q76832368 | **Zohra Drif** | Q3575695 |
+| `united-states-military-campaign-against-cartels` | Q136090852 | United States military buildup … Operation Southern Spear | Q136335092 |
+
+Six for six, a different item — so A15(8) applies to all six in full, and the
+Khe Sanh rename is correctly not among them.
+
+**Four have a section that names the item, and are kept.**
+
+| record | the section | what it states |
+| --- | --- | --- |
+| `action-at-tamanana-9-september-1645` | § The war | *"The Action at Tamanana, 9 September 1645 saw a Portuguese fleet attempting to enter the bay of Tamandaré"* — the day the record already carries |
+| `atlantic-revolutions` | § Atlantic Revolutions | *"The Atlantic Revolutions (22 March 1765 – 4 October 1849)"* |
+| `battle-of-musa-dagh` | the lead | *"In 1915, it was the location of a successful Armenian resistance to the Armenian genocide"* |
+| `milk-bar-cafe-bombing` | § Milk Bar Café bombing (1956) | *"On 30 September 1956, Drif's unit … Drif selected the popular Milk Bar Café to plant her bomb"* |
+
+Each takes the flag `article-is-redirect`, loses `summary-from-lead`, and has
+its `wikipedia-en` citation rewritten to name **the article the sitelink
+actually reaches and the section read**, at the revision read. Three of the four
+had a summary quoting that other article's lead — the Musa Dagh **mountain**,
+the **Age of Revolution**, the **Insurrection of Pernambuco** — and each is
+back to the import's own placeholder, which says nobody has written a summary
+and is true. `milk-bar-cafe-bombing` never had one.
+
+**One span moved.** `atlantic-revolutions` was dated 1765-03-22 to 1838-12-04
+and the section that names it states **4 October 1849**, so it is now
+1765-03-22 to 1849-10-04. Nothing else changed, and the ten records that are
+part of it are all inside the wider span.
+
+**Two have no section naming them at all, and are retracted under §1.**
+
+`eritrean-civil-wars` (Q2139988): the article its sitelink reaches is the
+**Eritrean War of Independence**, which this atlas already holds as its own
+record, and that article names the Eritrean Civil Wars **only in its See also
+list**. Its `=== 1970s ===` section says *"The collapse of the Ethiopian Empire
+coincided with the end of the Eritrean civil war"* — a mention, not a section
+about it, and no span. The quoted summary was the War of Independence's lead. It
+carries no edge and nothing in the atlas refers to it.
+
+`united-states-military-campaign-against-cartels` (Q136090852): the campaign and
+the **buildup** (Q136335092) are two Wikidata items with one article between
+them, and that article never uses this item's name in any heading. The quoted
+summary was the buildup's lead. No edge, nothing refers to it, and the
+retraction names Q136335092 so a later import can take the article under the
+item it belongs to.
+
+**Deviation 1463.** *`fillTitles` in `tools/cache-evidence.mjs` was pointed at
+Wikidata's action API and not Wikipedia's.* `API` in
+`tools/import/wikidata.mjs` is `www.wikidata.org/w/api.php`, and asking it for
+an article title answers `missing: true` with a `wikibase-item` content model —
+which is how this was found, by probing "Eritrean Civil Wars" and being told it
+does not exist. The table on disk was right, because the fire that built it
+first did so in a scratch script that named `en.wikipedia.org`; the committed
+version would have silently written a table of 1,372 missing pages the next time
+a batch added a citation. `wikipediaApi(lang)` is now a named export and the
+table was rebuilt through it: **1,372 rows, 7 redirects, 0 missing, identical to
+the one it replaced.** A constant that is right for one caller and wrong for the
+next is worth a name.
+
+**Counts.** 4 records kept and flagged, 3 wrongly quoted summaries removed, 4
+citations rewritten to the article and section actually read, 1 span widened, 2
+retracted with the reason on the record, 2 leads re-cached (A15(2)'s pass as the
+batch's last step). Corpus: **1,258 active (−2), 235 main (unchanged, and it has
+never risen), 1,023 filed, 1,048 active edges, largest component 711, 562 edges
+crossing an umbrella, 391 components, 309 events with no edge**. Per lane:
+Europe 553, Americas 342, Asia 182, **Africa 181** — Africa trails again, by
+one. Validator **0 errors, 598 warnings** (+1: `degree-zero` no longer counts
+the two retracted records, and `summary-imported` counts the three summaries
+that went back to the placeholder).

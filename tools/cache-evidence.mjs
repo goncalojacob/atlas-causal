@@ -20,7 +20,7 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { readRecords, readCachedLeads } from './lib/read.mjs';
 import { cacheGaps, citedArticles } from './import/citations.mjs';
-import { leadRecord, USER_AGENT, API, summaryUrl, sleep } from './import/wikidata.mjs';
+import { leadRecord, USER_AGENT, wikipediaApi, summaryUrl, sleep } from './import/wikidata.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const CACHE_DIR = path.join(ROOT, 'tools', 'import', 'cache', 'wikipedia');
@@ -57,7 +57,7 @@ export async function fillTitles(cited, table, { fetchJson = get } = {}) {
   let requests = 0;
   for (let i = 0; i < need.length; i += TITLES_PER_CALL) {
     const chunk = need.slice(i, i + TITLES_PER_CALL);
-    const url = `${API}?action=query&format=json&formatversion=2&prop=pageprops&ppprop=wikibase_item`
+    const url = `${wikipediaApi('en')}?action=query&format=json&formatversion=2&prop=pageprops&ppprop=wikibase_item`
       + `&redirects=1&titles=${chunk.map(encodeURIComponent).join('|')}`;
     const body = await fetchJson(url);
     requests += 1;

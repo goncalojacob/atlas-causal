@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29",
+ "generated": null,
  "titles": {
   "\"False positives\" scandal": {
    "canonical": "\"False positives\" scandal",
@@ -3781,12 +3781,6 @@
    "redirect": false,
    "missing": false
   },
-  "Eritrean Civil Wars": {
-   "canonical": "Eritrean War of Independence",
-   "qid": "Q607257",
-   "redirect": true,
-   "missing": false
-  },
   "Eritrean War of Independence": {
    "canonical": "Eritrean War of Independence",
    "qid": "Q607257",
@@ -5363,12 +5357,6 @@
    "canonical": "Musa Dagh",
    "qid": "Q1953975",
    "redirect": false,
-   "missing": false
-  },
-  "Musa Dagh Resistance": {
-   "canonical": "Musa Dagh",
-   "qid": "Q1953975",
-   "redirect": true,
    "missing": false
   },
   "My Lai massacre": {
@@ -7903,12 +7891,6 @@
    "redirect": false,
    "missing": false
   },
-  "United States military buildup in the Caribbean during Operation Southern Spear": {
-   "canonical": "United States military buildup in the Caribbean during Operation Southern Spear",
-   "qid": "Q136335092",
-   "redirect": false,
-   "missing": false
-  },
   "Urfa resistance": {
    "canonical": "Urfa resistance",
    "qid": "Q4477441",
@@ -8230,6 +8212,12 @@
   "Łódź insurrection": {
    "canonical": "Łódź insurrection",
    "qid": "Q766868",
+   "redirect": false,
+   "missing": false
+  },
+  "Zohra Drif": {
+   "canonical": "Zohra Drif",
+   "qid": "Q3575695",
    "redirect": false,
    "missing": false
   }

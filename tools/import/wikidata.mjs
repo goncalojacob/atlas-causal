@@ -208,6 +208,13 @@ export function sparqlUrl(query, { endpoint = SPARQL } = {}) {
 // The REST summary endpoint rather than the parse API: it returns the lead
 // as plain text and the revision it came from, which is exactly the envelope
 // the cache stores and nothing more.
+// The action API of a Wikipedia, which is not `API` above: that one is
+// Wikidata's, and asking it for an article title answers `missing` with a
+// `wikibase-item` content model — which is how this was found.
+export function wikipediaApi(lang = 'en') {
+  return `https://${lang}.wikipedia.org/w/api.php`;
+}
+
 export function summaryUrl(lang, title) {
   return `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(String(title).replace(/ /g, '_'))}`;
 }
