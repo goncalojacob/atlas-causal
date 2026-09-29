@@ -22976,7 +22976,17 @@ Lane A numbers on from M88, which ended at 1428.
       exactly as it should be. The comparison is between two marks in one
       picture now, in the pixels the browser gave them, which is what "wider
       than a city's mark" meant all along.
-1432. **A screenshot tool with a virtual clock measures the page's weight, not
+1432. **A read taken in the same turn as the event that causes it is a read
+      taken too early.** M76's handle-drag test dispatched a pointer move and
+      read the band's `aria-valuenow` on the next line; the value is written
+      from the store, through a subscription and a render, and this milestone
+      gave every state change more to do — the map's camera, the badges' round,
+      the category control's own count. It went red once on the check's four
+      cores having passed on this container every time, on a drag that worked.
+      The read waits for the value to move now, through `until` so that the
+      assertion still runs and still names the two windows if the drag really
+      did nothing — which is M78's own rule about which wait to use.
+1433. **A screenshot tool with a virtual clock measures the page's weight, not
       only its drawing.** §5's picture is *of the names*, and a name arrives
       with its century — twelve files behind the core, the land and two
       typefaces. The shot came out twice with every name on it and three times
