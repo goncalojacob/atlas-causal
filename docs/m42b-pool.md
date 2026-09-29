@@ -11540,3 +11540,200 @@ within the partition: `americas` 1400s 5, 1500s 44, 1600s 69, **1700s 57**,
 1800s 56, 1900s 86, 2000s 39; `africa` before 1800 **16** (1600s 2, 1700s 14);
 `asia` before 1800 **20** (1600s 3, 1700s 17). A15 (1)'s gate is unchanged and
 still shut: africa 200 and asia 202 against A10's 303.
+
+## Batch 45 — Alvarado's two June days in Cuzcatlán, and the fixture that could not tell one article from another
+
+Batch 44's take was two events, which is thin, so the same fire went looking
+for a second vein in the same lane and found one in the cell that trails
+hardest inside the partition: **the `americas` sixteenth century, 44 active
+before this batch against the eighteenth's 55.**
+
+The first place looked was `Q1047607`'s own `P361` children — the Spanish
+colonisation of the Americas, which this atlas holds. It answers 34 rows, 10
+of them held. **Eight of the unheld ones have an English article and not one
+of them has a date**: the conquests of Yucatán, New Granada, Nicaragua, the
+Muisca and the Maya, Colonial Argentina, Spanish Jamaica and the Capitulations
+of Santa Fe all carry no `P580`, no `P582` and no `P585`, and three of them
+carry no `P31` either. A campaign with no year has nowhere on the timeline and
+a fire may not invent one, so the whole of that row is left. **It is worth
+saying plainly, because two fires have now pointed at it as a reserve: the
+Spanish colonisation umbrella's own children are not importable as they
+stand.** What a person could do with them is a separate question — the article
+of each states its span in its first sentence, and A7 reads a span off a cited
+article at a named revision.
+
+The vein that answered is one level down: the `P361` children of the conquest
+umbrellas this atlas already holds — **the Aztec empire, the Inca empire,
+Guatemala, El Salvador and the Maya.** Nineteen rows with an English article,
+**sixteen of them already here** (the Cusco, Cajamarca, Otumba, Noche Triste
+and Vilcaconga cluster that earlier fires took), and three not. Two of the
+three were importable and are this batch.
+
+### Why two of three
+
+| left | why |
+| --- | --- |
+| `Q21010243` (Spanish conquest of Chiapas, 1523) | **no `P31`**, and already carried in the import cursor as a refusal from an earlier fire, so the run did not ask again |
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-acajutla` | 8 Jun 1524 | americas | `acajutla` | the conquest of El Salvador |
+| `battle-of-tacuzcalco` | 13 Jun 1524 | americas | `acajutla` | the conquest of El Salvador |
+
+Both name `spanish-conquest-of-el-salvador` through `P361` and it is here, so
+both are filed under it and **the main count is 235 before the batch and 235
+after it.** One place, and the tool wrote it: `acajutla`, at `city` precision
+from `Q937292`'s own point. Tacuzcalco points at it too, because the item's
+`P276` does — the battle was fought in the valley of Sonsonate and the item
+names the municipality, which is the item's claim and is flagged `a9-place`
+for whoever reads the record.
+
+**A15 (4) held on both.** The item dates are 8 and 13 June 1524 and the first
+sentence of each lead states the same day, which is the comparison the import
+makes at write time.
+
+### Three edges, two of them across an umbrella
+
+| edge | type | crosses | what carries it |
+| --- | --- | --- | --- |
+| `spanish-conquest-of-the-aztec-empire` → `battle-of-acajutla` | `enabled` | **yes** | *"Hernán Cortés, after conquering the city of Tenochtitlan, capital of the Aztec empire, delegated the conquest of the territories southward to his lieutenant Pedro de Alvarado, who set out with 120 horsemen, 300 foot soldiers, and several hundred Cholula and Tlaxcala auxiliaries."* |
+| `spanish-conquest-of-guatemala` → `battle-of-acajutla` | `enabled` | **yes** | *"The Kaqchikel Mayans, who had long been rivals of Cuzcatlán … joined forces with Alvarado's men and supported his campaign. Accompanied by thousands of Kaqchikel warriors, Alvarado then marched on Cuzcatlán."* |
+| `battle-of-acajutla` → `battle-of-tacuzcalco` | `precondition-of` | no | *"Defeated, the Nahuat forces retreated to reassemble further along his route. In a second battle a few days later…"*, and from Tacuzcalco's own side *"Atlácatl's army was larger than the army he commanded at Acajutla"* |
+
+**Nothing from a parent to its own child (A14)**, which rules out the conquest
+of El Salvador to either of them.
+
+The two `enabled` edges into one event are not one argument said twice. The
+first is the commission and the force — why there was a Spanish column south
+of Guatemala at all. The second is the alliance and the direction — why that
+column marched on Cuzcatlán and with whom. The article states them as two
+things in two sentences and they are written as two edges.
+
+### A15 (11): two of three, and a batch that moved both numbers
+
+**The largest component goes 726 → 730 and the count of components 409 → 408**,
+and the edges crossing an umbrella 570 → 572. The conquest cluster the atlas
+already held was reachable and the two new battles joined it through Alvarado's
+two umbrellas rather than through their own, which is batch 43's lesson applied
+rather than rediscovered: *an umbrella files; it does not connect.*
+
+### A15 (5): nothing refused under it in this batch
+
+Every sentence used states a cause. The one sentence that would have been
+refused — Tacuzcalco's *"After the defeat at the hands of the Spanish, the Pipil
+refused to engage the Spanish in open battle"* — names no event this atlas
+holds at the other end, so it never reached the test.
+
+### Deviation 1349
+
+**1349. One fixture body, served under every title, made the A15 (8) guard
+look like a bug.** `fixtureFetcher` in `tests/import-wikidata.test.mjs`
+answered every `/api/rest_v1/page/summary/` request with `summary-en.json`,
+whose `title` is `"Northfield Rising"` — so *every* item in the fixtures read
+as an article about the Northfield Rising. That was invisible for as long as
+nothing compared the title to the item; the moment `leadIsRedirect` did, four
+tests failed, and they failed **correctly**: by the fixture's own answer,
+`Q9000010` really had landed on an article that is none of its names.
+
+The fixture now answers with the title it was asked for, decoded out of the
+URL, which is what the real endpoint does for every article that is not a
+redirect — and a redirect is an `options.summary` override in the test that
+wants one. The four tests pass unchanged; nothing in the guard moved.
+
+**The general shape is worth keeping**: a fixture that answers the same thing
+to every question is a fixture that cannot fail a test about *which* question
+was asked, and the tool had exactly one such test for years.
+
+### Counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,313 | **1,315** |
+| **main** | **235** | **235** |
+| largest connected component | 726 | **730** |
+| components | 409 | **408** |
+| active events with no edge | 319 | 319 |
+| edges crossing an umbrella | 570 of 1,088 | **572 of 1,091** |
+| `americas` | 356 | **358** |
+| `americas`, 16th century | 44 | **46** |
+
+## Where the run stands, for the fire that picks it up
+
+### The measurement, as this fire leaves it
+
+| lane | active | before 1800 | 1400s | 1500s | 1600s | 1700s | 1800s | 1900s | 2000s |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| europe | 555 | — | 4 | 44 | 109 | 62 | 39 | 245 | 52 |
+| **americas** | **358** | 120 | 5 | **46** | 69 | **57** | 56 | 86 | 39 |
+| asia | 202 | **20** | — | — | 3 | 17 | 7 | 146 | 29 |
+| africa | 200 | **16** | — | — | 2 | 14 | 17 | 91 | 76 |
+
+1,315 active events, 235 main, 1,091 active edges, 408 components, largest
+**730**, 572 edges crossing an umbrella, 319 active events with no edge.
+
+**A15 (1)'s gate is shut and moved no closer this fire**: africa 200 and asia
+202 against A10's 303, and nothing of Europe before 1900 until both reach it.
+
+### What this fire did
+
+Two batches (44 and 45), four events, three places, five edges — four of the
+five across an umbrella — and **the largest component 724 → 730**, which is
+the second and third fire running in which it has moved at all. One import
+guard that did not exist (A15 (8) at write time, deviation 1347), one lane
+defect found and repaired by hand (deviation 1348), one fixture that could not
+tell one article from another (deviation 1349).
+
+### The next fire's moves, in order
+
+1. **The conquest umbrellas are nearly exhausted and the colonisation umbrella
+   is dateless.** Batch 45's two tables are the whole of that reserve: of 34
+   `P361` children of `Q1047607` and 19 of the five conquest umbrellas, what is
+   left unheld is eight dateless campaigns and one classless one. **A fire
+   should not spend another query on `Q1047607`.** Where the `americas` lane's
+   16th and 17th centuries grow next is `spanish-american-wars-of-independence`
+   (`Q1123201`, held, 1808–1833, so the 19th century), the `P527`/`P361` trees
+   under `american-indian-wars` (`Q849680`, held, 1609–1924), and the
+   Portuguese side of the Atlantic, which no fire has queried at all.
+2. **Two records are waiting on a decision rather than on a query.**
+   `Q3010371` (Bois Caïman, 14 August 1791) is refused for three classes
+   nobody has ruled on — `Q13226383`, `Q1155622`, `Q302729` — and it is the
+   ceremony the Haitian Revolution is usually said to begin at. `Q656046`
+   (the battle of San Juan, 1797) imported cleanly and was taken out again for
+   want of an edge; it becomes importable the moment this atlas holds the
+   Second Treaty of San Ildefonso or the British capture of Trinidad, either
+   of which is one record.
+3. **Deviation 1348 is the narrow half of deviation 1346 and is fixable in
+   code.** A country that A15 (6) has just refused as a place is still read as
+   a lane one line later. Refusing it in both places would have stopped a
+   Caribbean battle being filed in Europe without opening the nearest-polygon
+   question at all. A fire may not decide it; the owner can.
+4. **`haitian-revolution-1791-1804` and eight more of the atlas's own umbrellas
+   carry no `wikidata`**, so the import cannot file a child under them and
+   writes it parentless. `battle-of-the-acul` came out that way before it was
+   dropped for other reasons. `--reconcile` is the mode that exists for this
+   and no fire of this lane has run it.
+5. **Still open, unchanged**: C8, deviation 1323, deviation 1345 (the M76 drag
+   test), deviation 1346's ocean islands, question 11 (the Nine Years' War,
+   `Q152218`), `Q718893` *theater of war*, `Q20639061`, `Q5037062`, `Q4677270`,
+   `Q4677390`, and the place pass on records that already exist, which is M42's
+   and is reported here and not done.
+
+### The tests, on this fire's head
+
+**1,914 pure and 313 browser, 2,227 tests, 2,227 passing, nothing skipped**, on
+the final head and after the index rebuild. `node tools/validate.mjs --index` is
+clean at **0 errors, 620 warnings**, byte-identical to a fresh build.
+
+**Deviation 1345 passed again.** `tests/m76-browser.test.mjs` 93 is green at
+1,315 active events, as it was at 1,310 and as it was not at 1,296 and 1,302.
+The deviation is not closed; an intermittent pass is the same fault seen from
+the other side.
+
+**The stale-lead list did not grow.** `tests/leadcache.test.mjs` holds at its 27
+known records, every one of them M42's. The Martinique edge's second locator is
+the reason to say so: it cites the French Revolution article **at revision
+1375966584**, which is the revision this atlas's own record cites and the cache
+holds, after the passage was read at that revision rather than at the current
+one.
