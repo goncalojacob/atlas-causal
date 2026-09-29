@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "action-of-6-july-1746--battle-of-madras--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "“Battle of Madras”, revision 1370448492, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "“Action of 6 July 1746”, revision 1370426720, § Battle"
+    }
+  ],
+  "from": "action-of-6-july-1746",
+  "to": "battle-of-madras",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Both articles state the same mechanism and neither of them states it as a sequence of dates. The Madras article's background: “After fighting an inconclusive battle the two fleets withdrew to repair, with the British retreating to Ceylon and the French using their base at Pondicherry. Wary of fighting another major naval battle – the British commander, Edward Peyton, chose to stay away from the Coramandel coast and withdrew to the safety of Bengal, leaving the British settlements on the Coramandel badly exposed to the French. The French Governor of Pondicherry Dupleix authorised an attack on Madras.” The action's own article says the other half: “La Bourdonnais acquired additional guns at Pondicherry, and when the fleets met again in August 1746, Peyton refused battle and retreated to Bengal. La Bourdonnais then proceeded to lead the successful French attack on Madras in September.” An indecisive engagement that sent one fleet to Bengal and left the other repairing and rearming at Pondicherry is what left Madras open from the sea; `enabled` rather than `caused`, because the decision to attack was Dupleix's and the article says so in the same paragraph. Probable: Wikipedia alone.",
+  "dispute": null
+}
