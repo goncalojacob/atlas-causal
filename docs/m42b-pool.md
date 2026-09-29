@@ -10994,10 +10994,15 @@ eight of eight**, and no re-run was spent on it: the pushes that followed are
 the re-check. The pure half failed `tests/leadcache.test.mjs`, which is
 **deviation 1344** above and is fixed in this fire's last commit.
 
-Locally on the final head: **1,886 pure** (one failure, 1344, now closed) and
-the browser suites run one at a time. `node tools/validate.mjs --index` is
-clean at **0 errors, 619 warnings**, byte-identical to a fresh build, and its
-exit status was read directly and not through a pipe.
+**Locally on the final head, `0daa6e2b`: 1,886 pure and 300 browser, 2,186
+tests, 2,186 passing, nothing skipped.** The pure half found deviation 1344 and
+nothing else; re-run after the fix, all 1,886 pass. The browser half passed
+whole on the first run, `tests/m76-browser.test.mjs` included — which is the
+test run 1975 failed on, eight of eight here.
+
+`node tools/validate.mjs --index` is clean at **0 errors, 619 warnings**,
+byte-identical to a fresh build, and its exit status was read directly and not
+through a pipe.
 
 **What this fire did.** Took the claim (three hours stale, the last push 105
 minutes old, so no live run), merged `origin/m42` — which is where A15(2),
