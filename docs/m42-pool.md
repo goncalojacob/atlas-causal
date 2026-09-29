@@ -16118,8 +16118,10 @@ for"* asks for, and it failed until that paragraph was there. The only other
 failure on the way was the index, stale between the records commit and the
 rebuild, which is deviation 798's order working as intended.
 
-**The check on the head this stand was written against is run 2042** of
-`validate.yml`, commit `66cf566c`; records validated in three seconds and the
-test step was still running when this paragraph was written. Run 2040 (the
-records commit) and 2041 (the index commit) were both cancelled by the next push,
-which is deviation 1258's chain and costs nothing.
+**The check is green on the head this stand was written against.** Run **2043**
+of `validate.yml`, commit `e46dc8bc`, conclusion **`success`** — records
+validated, both suites run the way the check runs them, and the index held
+byte-identical to a fresh build. Runs 2040 (the records commit), 2041 (the index
+commit) and 2042 (the pool section) were each cancelled by the next push, which
+is deviation 1258's chain and costs nothing; **no run of this fire's concluded
+`failure`.**
