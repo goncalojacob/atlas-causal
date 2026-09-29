@@ -308,6 +308,12 @@
     },
     {
       "dissent": false,
+      "id": "dutch-republic",
+      "kind": "actor",
+      "locator": "\"Dutch Republic\", revision 1376400592"
+    },
+    {
+      "dissent": false,
       "id": "east-timor",
       "kind": "actor",
       "locator": "\"Timor-Leste\", revision 1374848299"
@@ -371,6 +377,12 @@
       "id": "ethiopia",
       "kind": "actor",
       "locator": "\"Ethiopia\", revision 1376016579"
+    },
+    {
+      "dissent": false,
+      "id": "european-economic-community",
+      "kind": "actor",
+      "locator": "\"European Economic Community\", revision 1368502841"
     },
     {
       "dissent": false,
@@ -515,6 +527,12 @@
       "id": "iceland",
       "kind": "actor",
       "locator": "\"Iceland\", revision 1376004446"
+    },
+    {
+      "dissent": false,
+      "id": "inca-empire",
+      "kind": "actor",
+      "locator": "\"Inca Empire\", revision 1375989014"
     },
     {
       "dissent": false,

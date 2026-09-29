@@ -16991,7 +16991,9 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 6,
@@ -17005,11 +17007,14 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a15-end-from-item",
+          "polity-description"
         ],
+        "note": "A15(10): the end was 1782, the last Historical Basemaps snapshot interval and not a claim. Q170072 dates the dissolution to 19 January 1795, the Batavian Revolution. Its inception, 1581, is earlier than this record’s start of 1600, which is the 1600 snapshot and is left as A15(10) asks.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active"
     },
     {
@@ -18930,7 +18935,9 @@
       ],
       "cites": [
         "telo-2007-historia-contemporanea",
-        "costa-pinto-2003-contemporary-portugal"
+        "costa-pinto-2003-contemporary-portugal",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-02",
       "degree": 7,
@@ -18950,12 +18957,14 @@
         "flags": [
           "claim",
           "date",
-          "wikidata-assigned-by-assistant"
+          "wikidata-assigned-by-assistant",
+          "a15-end-from-item",
+          "polity-description"
         ],
-        "note": "Closing this actor rather than renaming it is an editorial choice nobody has made deliberately; the closing year follows from it.",
+        "note": "A15(10): the end was 1993, which this record’s own note called an editorial choice nobody made deliberately. Q52847 dates the dissolution to 1 December 2009 (the Lisbon Treaty); 1993 is Maastricht renaming it the European Community. The end is read from the item, and which of the two the atlas should close the actor at is still the choice the note names.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active"
     },
     {
@@ -26312,7 +26321,9 @@
         }
       ],
       "cites": [
-        "historical-basemaps"
+        "historical-basemaps",
+        "wikidata",
+        "wikipedia-en"
       ],
       "created": "2026-09-16",
       "degree": 5,
@@ -26326,11 +26337,14 @@
       },
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a15-end-from-item",
+          "polity-description"
         ],
+        "note": "A15(10): the end was 1649, the horizon of the Historical Basemaps snapshot series and not a claim about the empire. Q28573 names two dissolution years, 1533 (Cajamarca and Cuzco) and 1572 (the fall of Vilcabamba), so the end is the range the item states and not a choice between them. Its inception, 1438, is earlier than this record’s start of 1500, which is the 1500 snapshot and is left as A15(10) asks.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active"
     },
     {

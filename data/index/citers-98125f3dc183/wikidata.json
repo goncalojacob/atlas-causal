@@ -374,6 +374,18 @@
     },
     {
       "dissent": false,
+      "id": "dutch-republic",
+      "kind": "actor",
+      "locator": "Q170072, P1082 (population, 1795)"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-republic",
+      "kind": "actor",
+      "locator": "Q170072, P571 and P576"
+    },
+    {
+      "dissent": false,
       "id": "east-timor",
       "kind": "actor",
       "locator": "Q574, P2046 (area) and P1082 (population, 2024)"
@@ -455,6 +467,12 @@
       "id": "ethiopia",
       "kind": "actor",
       "locator": "Q115, P2046 (area) and P1082 (population, 2023)"
+    },
+    {
+      "dissent": false,
+      "id": "european-economic-community",
+      "kind": "actor",
+      "locator": "Q52847, P571 and P576"
     },
     {
       "dissent": false,
@@ -623,6 +641,12 @@
       "id": "imperial-japan",
       "kind": "actor",
       "locator": "Q188712, P576 1947-05-03"
+    },
+    {
+      "dissent": false,
+      "id": "inca-empire",
+      "kind": "actor",
+      "locator": "Q28573, P571 and P576"
     },
     {
       "dissent": false,

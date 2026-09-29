@@ -150586,6 +150586,12 @@
       "rule": "presence-outside-actor-when"
     },
     {
+      "id": "inca-empire-1600",
+      "kind": "presence",
+      "message": "the presence falls entirely outside \"inca-empire\"'s dates",
+      "rule": "presence-outside-actor-when"
+    },
+    {
       "id": "korea-1492",
       "kind": "presence",
       "message": "the presence falls entirely outside \"korea\"'s dates",
