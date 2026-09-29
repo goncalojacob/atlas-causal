@@ -721,7 +721,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 4,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -2318,7 +2318,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "british-raj-q129286",
       "kind": "place",
       "names": [
@@ -3275,7 +3274,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 3,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -5397,7 +5396,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 3,
       "id": "finland-q33",
       "kind": "place",
       "names": [
@@ -5618,7 +5617,6 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
       "id": "france-q142",
       "kind": "place",
       "names": [
@@ -5760,7 +5758,6 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
       "id": "french-fourth-republic",
       "kind": "place",
       "names": [
@@ -6127,7 +6124,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "german-east-africa-q153963",
       "kind": "place",
       "names": [
@@ -6186,7 +6182,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 1,
       "id": "germany-q183",
       "kind": "place",
       "names": [
@@ -7805,7 +7801,6 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 6,
       "id": "italy-q38",
       "kind": "place",
       "names": [
@@ -8575,7 +8570,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "kingdom-of-egypt",
       "kind": "place",
       "names": [
@@ -12194,7 +12188,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 1,
       "id": "north-vietnam",
       "kind": "place",
       "names": [
@@ -13151,7 +13145,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "people-s-republic-of-bulgaria",
       "kind": "place",
       "names": [
@@ -13213,7 +13206,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 1,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -13496,7 +13489,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 1,
       "id": "poland-q36",
       "kind": "place",
       "names": [
@@ -14645,7 +14638,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 1,
       "id": "republic-of-the-congo-leopoldville",
       "kind": "place",
       "names": [
@@ -15038,7 +15031,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 1,
       "id": "russia",
       "kind": "place",
       "names": [
@@ -15128,7 +15121,6 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
       "id": "russian-republic-q139319",
       "kind": "place",
       "names": [
@@ -16850,7 +16842,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 2,
       "id": "south-africa-q258",
       "kind": "place",
       "names": [
@@ -17201,7 +17193,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 1,
       "id": "soviet-union-q15180",
       "kind": "place",
       "names": [
@@ -17232,7 +17224,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 4,
+      "degree": 1,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -18813,7 +18805,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 3,
       "id": "united-kingdom-q145",
       "kind": "place",
       "names": [
@@ -18844,7 +18836,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 2,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -20482,13 +20474,49 @@
       "rule": "place-unused"
     },
     {
+      "id": "british-raj-q129286",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "france-q142",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "french-fourth-republic",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
       "id": "furth",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
     },
     {
+      "id": "german-east-africa-q153963",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
       "id": "ipatiev-house",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "italy-q38",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "kingdom-of-egypt",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
@@ -20501,6 +20529,18 @@
     },
     {
       "id": "near-east",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "people-s-republic-of-bulgaria",
+      "kind": "place",
+      "message": "place is referenced by no event",
+      "rule": "place-unused"
+    },
+    {
+      "id": "russian-republic-q139319",
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"

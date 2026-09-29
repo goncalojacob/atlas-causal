@@ -261,6 +261,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -895,6 +904,15 @@
             "when"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -2198,6 +2216,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -2207,6 +2234,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },

@@ -827,12 +827,13 @@
         "flags": [
           "imported-facts",
           "m67-lined",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was kingdom-of-egypt, from the item's P17, and it is refused because the item names 2 countries, so it names no one country. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "1952 Egyptian revolution"
     },
@@ -3997,12 +3998,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was german-east-africa-q153963, from the item's P17, and it is refused because the country's point is 1056 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Abushiri revolt"
     },
@@ -4723,12 +4725,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was france-q142, from the item's P17, and it is refused because the country's inception (1958) is after the event ended (1629). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Anglo-French War (1627–1629)"
     },
@@ -5198,12 +5201,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "date-from-article"
+          "date-from-article",
+          "a15-country-refused"
         ],
-        "note": "Q431806 carries no P580, so the import read its P585 of 1546 as a point in time and wrote 1546 at both ends. The cited article \"Arauco War\", revision 1376467209, heads its own date field \"Historiographic divergence\" and gives three datings: 1546 to the end of the 17th century (Gongora 1951), 1550-1662 (Villalobos 1995), 1550-1656 (Memoria Chilena). 1546-1662 contains all three rather than choosing; the end is unsettled and a reviewer should say which dating this atlas follows.",
+        "note": "Q431806 carries no P580, so the import read its P585 of 1546 as a point in time and wrote 1546 at both ends. The cited article \"Arauco War\", revision 1376467209, heads its own date field \"Historiographic divergence\" and gives three datings: 1546 to the end of the 17th century (Gongora 1951), 1550-1662 (Villalobos 1995), 1550-1656 (Memoria Chilena). 1546-1662 contains all three rather than choosing; the end is unsettled and a reviewer should say which dating this atlas follows. A15(6): the place ",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Arauco War"
     },
@@ -10560,12 +10564,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1641). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Martorell (1641)"
     },
@@ -11434,12 +11439,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was south-africa-q258, from the item's P17, and it is refused because the country's inception (1910) is after the event ended (1900). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Paardeberg"
     },
@@ -17743,12 +17749,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "date"
+          "date",
+          "a15-country-refused"
         ],
-        "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966.",
+        "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966. A15(6): the place was republic-of-the-congo-leopoldville, from the item's P17,",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Congo Crisis"
     },
@@ -19021,12 +19028,12 @@
           "imported-facts",
           "summary-from-lead",
           "a7-widened",
-          "a9-place"
+          "a15-country-refused"
         ],
-        "note": "Place from A9 P17 = Q414, the \"argentina-q414\" record already here.",
+        "note": "Place from A9 P17 = Q414, the \"argentina-q414\" record already here. A15(6): the place was argentina-q414, from the item's P17, and it is refused because the country's point is 6962 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Crossing of the Andes"
     },
@@ -19812,12 +19819,13 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place",
-          "title-from-article"
+          "title-from-article",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Eastern Front (World War II)"
     },
@@ -22186,12 +22194,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a15-country-refused"
         ],
-        "note": "Place from A9 P276 = Q142, written as \"france-q142\" at `country` precision.",
+        "note": "Place from A9 P276 = Q142, written as \"france-q142\" at `country` precision. A15(6): the place was france-q142, from the item's P17, and it is refused because the country's inception (1958) is after the event ended (1799). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "French Revolution"
     },
@@ -24587,12 +24595,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was united-kingdom-q145, from the item's P17, and it is refused because the country's inception (1801) is after the event ended (1779). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Invasion of Jersey (1779)"
     },
@@ -24995,11 +25004,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1495). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Italian War of 1494–1495"
     },
@@ -25025,13 +25036,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
-        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38. A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1526). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Italian War of 1521–1526"
     },
@@ -25088,11 +25099,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1546). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Italian War of 1542–1546"
     },
@@ -25119,13 +25132,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
-        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one.",
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38 — the item names four locations (France, Q234, Italy, Q4918) and the record's own title names this one. A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1559). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Italian War of 1551–1559"
     },
@@ -25181,13 +25194,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
-        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38.",
+        "note": "A9's place pass of 2026-09-23 gave this event the place italy-q38, from P276, Q38. A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1504). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Italian Wars of 1499–1504"
     },
@@ -27232,12 +27245,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a15-country-refused"
         ],
-        "note": "Filed under algerian-war although its own lane is europe: the cited article calls it \"a political crisis in France during the turmoil of the Algerian War\" and carries the category \"1958 in the Algerian War\". The item states no P361 and the filing is the run's reading of that article, not the item's.",
+        "note": "Filed under algerian-war although its own lane is europe: the cited article calls it \"a political crisis in France during the turmoil of the Algerian War\" and carries the category \"1958 in the Algerian War\". The item states no P361 and the filing is the run's reading of that article, not the item's. A15(6): the place was french-fourth-republic, from the item's P17, and it is refused because the country's point is 1347 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-25",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "May 1958 crisis in France"
     },
@@ -28102,12 +28115,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1641). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Naval battle of Tarragona"
     },
@@ -29894,12 +29908,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was british-raj-q129286, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "partition of India"
     },
@@ -31114,11 +31129,12 @@
           "imported-facts",
           "summary-from-lead",
           "filed-from-p361",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was united-states-q30, from the item's P17, and it is refused because the country's inception (1776) is after the event ended (1694). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Raid on Oyster River"
     },
@@ -31345,11 +31361,12 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was peru-q419, from the item's P17, and it is refused because the country's inception (1821) is after the event ended (1783). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Rebellion of Túpac Amaru II"
     },
@@ -31738,12 +31755,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was people-s-republic-of-bulgaria, from the item's P17, and it is refused because the item names 6 countries, so it names no one country. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Revolutions of 1989"
     },
@@ -31975,11 +31993,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was russian-republic-q139319, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Russian Civil War"
     },
@@ -32111,11 +32130,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was finland-q33, from the item's P17, and it is refused because the country's inception (1917) is after the event ended (1743). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Russo-Swedish War (1741–1743)"
     },
@@ -35362,12 +35383,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was germany-q183, from the item's P17, and it is refused because the country's inception (1949) is after the event ended (1644). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Siege of Philippsburg (1644)"
     },
@@ -36244,14 +36266,14 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place",
           "participants-from-p710",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
-        "note": "Wikidata Q623171 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.",
+        "note": "Wikidata Q623171 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing. A15(6): the place was north-vietnam, from the item's P17, and it is refused because the country was dissolved (1976) before the event began (1979). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Sino-Vietnamese War"
     },
@@ -37133,8 +37155,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1529). The lane is unchanged.",
         "status": "draft"
       },
       "revised": "2026-09-29",
@@ -41038,11 +41061,12 @@
         "flags": [
           "imported-facts",
           "summary-drafted",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was united-states-q30, from the item's P17, and it is refused because the country's point is 2080 km from the nearest point on the event's own chain. The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "Wall Street crash of 1929"
     },
@@ -41409,11 +41433,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was poland-q36, from the item's P17, and it is refused because the country's inception (1918) is after the event ended (1807). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War of the Fourth Coalition"
     },
@@ -41472,11 +41498,13 @@
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was italy-q38, from the item's P17, and it is refused because the country's inception (1946) is after the event ended (1530). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War of the League of Cognac"
     },
@@ -41534,11 +41562,13 @@
       "parent": "napoleonic-wars",
       "review": {
         "flags": [
-          "imported-facts"
+          "imported-facts",
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was france-q142, from the item's P17, and it is refused because the country's inception (1958) is after the event ended (1815). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active",
       "title": "War of the Seventh Coalition"
     },
@@ -41988,11 +42018,12 @@
           "imported-facts",
           "summary-drafted",
           "m62-umbrella",
-          "a9-place"
+          "a15-country-refused"
         ],
+        "note": "A15(6): the place was russia, from the item's P17, and it is refused because the country's inception (1991) is after the event ended (1945). The lane is unchanged.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-29",
       "status": "active",
       "title": "World War II"
     },
