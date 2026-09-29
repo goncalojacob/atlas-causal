@@ -15232,6 +15232,17 @@ the rest of itself measuring why the lane yields one record and not ten.*
     once. A fire that needs an article body should use `rest.php/v1/page`. The one
     429 this fire saw was a probe sent with no user-agent at all, which is
     deviation 1440 and not this.
+- **The branch was red when this fire picked it up, and the merge is what fixed
+  it.** The last stand says *"the check is green on this fire's final head. Run
+  1984… success"*, and that was true of run 1984. But run **1985**, on the very
+  doc commit that recorded it, concluded **failure**: `not ok 93 - dragging a
+  handle still moves the window, and the map still answers mid-gesture`, one of
+  300. The same test had passed on run 1984, so it was intermittent rather than
+  broken — and `origin/m0` already carried its fix, `7bd5060d M89: the handle-drag
+  test waits for the value it reads`, which came in with this fire's merge at
+  STEP 1. **A fire that records the check on its own final head should read the
+  run that commit triggers, not only the run before it**: the commit saying "the
+  check is green" is itself a push, and it gets a run of its own.
 - **The next curation fire is the first fire after 02:00Z on 30 September**, and
   it owns A11(a) over every active event and A13's relations pass, now with the
   matcher fixed. **A15 is done and no fire owes it again.**
