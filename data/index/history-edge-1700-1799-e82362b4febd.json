@@ -8,6 +8,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -70,6 +76,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]
@@ -143,6 +155,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -179,6 +197,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -187,6 +211,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]
@@ -224,6 +254,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -248,6 +284,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -256,6 +298,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]
@@ -275,6 +323,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -284,6 +338,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -292,6 +352,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]
@@ -338,6 +404,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -364,6 +436,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]
@@ -446,12 +524,30 @@
         }
       ]
     },
+    "revolt-of-cairo--siege-of-el-arish--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "revolt-of-the-comuneros-new-granada--spanish-american-wars-of-independence--precondition-of": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-acre-1799--battle-of-mount-tabor-1799--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -482,6 +578,42 @@
         }
       ]
     },
+    "siege-of-el-arish--second-siege-of-el-arish--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-el-arish--siege-of-jaffa--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-jaffa--battle-of-abukir-1799--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-jaffa--siege-of-acre-1799--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "siege-of-namur-1746--battle-of-rocoux--precondition-of": {
       "from": "git",
       "versions": [
@@ -497,6 +629,12 @@
         {
           "first": true,
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -505,6 +643,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "sources"
+          ],
           "on": "2026-09-29"
         }
       ]

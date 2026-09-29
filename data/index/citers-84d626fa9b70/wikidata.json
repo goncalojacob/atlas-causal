@@ -2876,6 +2876,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abukir-1799",
+      "kind": "event",
+      "locator": "Q778800"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-adwa",
       "kind": "event",
       "locator": "Q302519"
@@ -3785,6 +3791,12 @@
       "id": "battle-of-mount-longdon",
       "kind": "event",
       "locator": "Q4871802"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mount-tabor-1799",
+      "kind": "event",
+      "locator": "Q2420811"
     },
     {
       "dissent": false,
@@ -7742,6 +7754,12 @@
     },
     {
       "dissent": false,
+      "id": "second-siege-of-el-arish",
+      "kind": "event",
+      "locator": "Q119166434"
+    },
+    {
+      "dissent": false,
       "id": "second-silesian-war",
       "kind": "event",
       "locator": "Q233702"
@@ -7805,6 +7823,12 @@
       "id": "siege-of-aalborghus",
       "kind": "event",
       "locator": "Q139940102"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-acre-1799",
+      "kind": "event",
+      "locator": "Q815109"
     },
     {
       "dissent": false,
@@ -7940,6 +7964,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-el-arish",
+      "kind": "event",
+      "locator": "Q3485822"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-florence-1529-1530",
       "kind": "event",
       "locator": "Q981042"
@@ -7973,6 +8003,12 @@
       "id": "siege-of-jadotville",
       "kind": "event",
       "locator": "Q2404547"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jaffa",
+      "kind": "event",
+      "locator": "Q3178783"
     },
     {
       "dissent": false,

@@ -88,6 +88,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "abu-qir",
+      "kind": "place",
+      "names": [
+        "Abu Qir",
+        "Abuquir",
+        "Aboukir"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place-by-hand"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -97,6 +125,35 @@
       "kind": "place",
       "names": [
         "Abu Qir Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "acre-israel",
+      "kind": "place",
+      "names": [
+        "Acre",
+        "Acre, Israel",
+        "Acre (Israel)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -786,6 +843,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 2,
+      "id": "arish",
+      "kind": "place",
+      "names": [
+        "Arish",
+        "Alarixe"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -8218,6 +8303,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "jaffa",
+      "kind": "place",
+      "names": [
+        "Jaffa",
+        "Jafa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11807,6 +11920,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-09-29",
+      "degree": 1,
+      "id": "mount-tabor",
+      "kind": "place",
+      "names": [
+        "Mount Tabor",
+        "Monte Tabor"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place-by-hand"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
