@@ -386,16 +386,36 @@ try {
   // (render-key.js), so this asks and then tells the views to look again.
   // The three pictures, the card, and the header's chips: a lens chip names a
   // record too, and it is drawn in the masthead rather than by the panel.
+  //
+  // **And one of them throwing does not take the rest with it** (M89 §1, A1).
+  // This was one statement, so anything the map or the card threw on a landing
+  // left the intro and the chips on the slugs they were born with — for as long
+  // as the reader kept them open, because the next landing would throw in the
+  // same place. Each is called on its own here, and the three of them keep their
+  // own count besides (shard-watch.js), which is the belt to this brace.
   const redrawForShards = () => {
-    remeasure(); panel.refresh(); lensChips.render(state.get());
-    // And the card over the view on a first visit, which quotes the titles of
-    // the narratives and the events it offers: until the century carrying one
-    // has landed there is no title, and a slug where a name goes on the front
-    // page is what M82 is about (intro.js, A3).
-    intro.refresh();
-    // And the composer's step list, where a step is named by the record's
-    // title once its century is in and by its id until then (attributes.js).
-    composer?.refresh();
+    for (const draw of [
+      () => remeasure(),
+      () => panel.refresh(),
+      () => lensChips.render(state.get()),
+      // And the card over the view on a first visit, which quotes the titles of
+      // the narratives and the events it offers: until the century carrying one
+      // has landed there is no title, and a slug where a name goes on the front
+      // page is what M82 is about (intro.js, A3).
+      () => intro.refresh(),
+      // And the composer's step list, where a step is named by the record's
+      // title once its century is in and by its id until then (attributes.js).
+      () => composer?.refresh(),
+    ]) {
+      try {
+        draw();
+      } catch (error) {
+        // Reported and not swallowed: the console is where a browser test looks
+        // for it (`watchErrors` in tests/browser.mjs), and a reader is left with
+        // the four pictures that did draw rather than none of them.
+        console.error(error);
+      }
+    }
   };
   // **Coalesced per animation frame** (M87 §1, B4), exactly as `baseArrived`
   // is in map.js and for the same reason. The atlas opens on the whole span, so

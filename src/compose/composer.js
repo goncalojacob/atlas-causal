@@ -41,6 +41,7 @@
 import { html } from '../util/dom.js';
 import { citationText, compareSources } from '../citation.js';
 import { labelOf } from '../attributes.js';
+import { createShardWatch } from '../shard-watch.js';
 import { moveKey } from '../contribute/reorder.js';
 import { loadSchemas } from '../validate/schemas.js';
 import { copyText } from '../contribute/submit.js';
@@ -384,13 +385,20 @@ export function createComposer(layout, {
   fill();
   changed();
 
+  // A century landing renames the steps, and the one callback that used to be
+  // the only nudge could be lost (M89 §1, A1; shard-watch.js). The tab coming
+  // back is the nudge no callback can give, and a check for a landing already
+  // drawn costs nothing.
+  const watch = createShardWatch(atlas, () => { if (opened) renderSteps(); },
+    { doc: root.ownerDocument });
+
   return {
     open: () => setOpen(true),
     close: () => setOpen(false),
     toggle: () => setOpen(!opened),
     isOpen: () => opened,
     // A century landed and the steps may have names now (main.js, shardLanded).
-    refresh: () => { if (opened) renderSteps(); },
+    refresh: () => { watch.check(); },
     destroy: () => { unsubscribe?.(); },
     // What the browser test reads, so that an assertion about the record is
     // about the record the page would send and not one rebuilt beside it.

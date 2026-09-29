@@ -155,10 +155,44 @@ export function bandShade(into, { from, to }, { scale, extent, top, height }) {
 // A window one year wide has both handles on the same pixel, and two labels
 // either side of it read as "1911 1911" — a range, which is what the reader has
 // just narrowed away from. One label, centred, instead.
+// How much ink a four-digit year takes at the size the two bands set one: the
+// same reckoning `timeline.js` makes for `YEAR_CLEAR`, and a room and not a type
+// size — what the label is set at is `.window-year` in `src/style.css` and this
+// file adds no size of its own.
+export const YEAR_INK = 26;
+// And the air between a handle and the year standing on it, which is what the
+// two anchors below are offset by.
+const YEAR_GAP = 6;
+
 export function bandHandles(into, labels, { from, to }, {
-  scale, extent, top, height, labelY,
+  scale, extent, top, height, labelY, width = null,
 }) {
   const single = from === to;
+  // **Inside the pane at every width** (M89 §11, A11). The first year was
+  // anchored `end` to the left of its handle and the last `start` to the right
+  // of its, which at the extent — where the two handles stand at the two edges
+  // of the drawing — wrote them half outside it: "492" and "202" at 1280 with
+  // the panel shut, "92" and "20" with it open, "02" on a phone. Every reading
+  // of the band's own years the third review took was a clipped one.
+  //
+  // So the side is chosen by the room there is: the year keeps the side it has
+  // always had wherever that side holds it, and takes the other where it does
+  // not. `width` is the drawing's, from the caller — the timeline's pane and the
+  // strip over the map are different widths and neither is this file's to know —
+  // and without one nothing is clamped, which is what a test with no pane gets.
+  const anchorFor = (x, kind) => {
+    const left = { x: x - YEAR_GAP, anchor: 'end', fits: x - YEAR_GAP - YEAR_INK >= 0 };
+    const right = { x: x + YEAR_GAP, anchor: 'start', fits: width === null || x + YEAR_GAP + YEAR_INK <= width };
+    const first = kind === 'from' ? left : right;
+    const other = kind === 'from' ? right : left;
+    if (width === null) return first;
+    if (first.fits) return first;
+    if (other.fits) return other;
+    // Neither side holds it: the pane is narrower than two years and a handle.
+    // Centred on the handle and pushed inside the edge, because a year written
+    // where it can be read beats a year written where it belongs.
+    return { x: Math.min(Math.max(x, YEAR_INK / 2), width - YEAR_INK / 2), anchor: 'middle', fits: true };
+  };
   for (const [kind, year] of [['from', from], ['to', to]]) {
     const x = scale.x(year);
     into.take('rect', {
@@ -171,9 +205,12 @@ export function bandHandles(into, labels, { from, to }, {
       'aria-valuetext': formatYear(fromAstronomical(year)),
     }, { title: `${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}` });
     if (single && kind === 'from') continue;
+    const at = single
+      ? { x: width === null ? x : Math.min(Math.max(x, YEAR_INK / 2), width - YEAR_INK / 2), anchor: 'middle' }
+      : anchorFor(x, kind);
     labels.take('text', {
-      x: single ? x : kind === 'from' ? x - 6 : x + 6, y: labelY,
-      class: 'window-year', 'text-anchor': single ? 'middle' : kind === 'from' ? 'end' : 'start',
+      x: at.x, y: labelY,
+      class: 'window-year', 'text-anchor': at.anchor,
     }, { text: formatYear(fromAstronomical(year)) });
   }
 }

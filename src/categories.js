@@ -85,3 +85,62 @@ export function categoriesShown(manifest) {
     id, count, label: labels.get(id) ?? id,
   }));
 }
+
+// ─── o que um interruptor deixou de fora, dito (M89 §8, achado A8) ──────────
+//
+// `?layers=territories,events:war` mostrava "186 main events of 1257 in view":
+// 35 dos 240 acontecimentos principais são guerras, 151 não têm categoria
+// nenhuma e continuam desenhados, e o leitor via um filtro que parecia não
+// filtrar. O ensaio explica a regra — quem não tem categoria não é escondido
+// por uma categoria — mas o ensaio não está no ecrã em que o interruptor é
+// carregado.
+//
+// Então o controlo diz o que guardou: "35 wars, and 151 events without a
+// category still drawn". Os dois números são da imagem que está desenhada, e
+// são contados aqui, uma vez, para que a frase não possa dizer uma coisa e o
+// mapa outra.
+
+// O plural de um rótulo, em inglês, que é a língua de toda a interface
+// (CLAUDE.md). Uma regra e não uma segunda coluna nos dados: acrescentar
+// `plural` a `data/categories.json` seria pedir a quem escreve um registo que
+// escrevesse gramática. `y` depois de consoante vira `ies` — "treaty" é a única
+// das doze a que isso acontece hoje — e o resto leva um `s`.
+export function pluralLabel(label) {
+  const word = String(label ?? '').toLowerCase();
+  if (word === '') return '';
+  if (/[^aeiou]y$/.test(word)) return `${word.slice(0, -1)}ies`;
+  return `${word}s`;
+}
+
+// Quantos de cada categoria ainda ligada estão desenhados, e quantos dos
+// desenhados não têm categoria nenhuma. Puro: recebe os acontecimentos que a
+// imagem desenha e as categorias ligadas, pela ordem do manifesto.
+export function categoryCounts(events, shown) {
+  const counts = new Map();
+  let uncategorised = 0;
+  for (const event of events ?? []) {
+    const id = event?.category ?? null;
+    if (id === null) { uncategorised += 1; continue; }
+    counts.set(id, (counts.get(id) ?? 0) + 1);
+  }
+  return {
+    kept: (shown ?? []).map(({ id, label }) => ({ id, label, count: counts.get(id) ?? 0 })),
+    uncategorised,
+  };
+}
+
+// E a frase. Vazia onde não há nada a explicar — nenhuma categoria ligada, ou
+// nada desenhado — porque um controlo que fala quando não filtrou nada é ruído
+// no mastro. A cláusula do sem-categoria cai quando não há nenhum: é ela que é
+// a notícia, e "and 0 events without a category" seria a frase a inventar uma.
+export function categoryCountText({ kept, uncategorised }) {
+  const named = (kept ?? []).filter((one) => one.count > 0)
+    .map((one) => `${one.count} ${pluralLabel(one.label)}`);
+  if (named.length === 0 && !(uncategorised > 0)) return '';
+  const list = named.length === 0 ? ''
+    : named.length === 1 ? named[0]
+      : `${named.slice(0, -1).join(', ')} and ${named[named.length - 1]}`;
+  if (!(uncategorised > 0)) return `${list} drawn`;
+  const rest = `${uncategorised} ${uncategorised === 1 ? 'event' : 'events'} without a category still drawn`;
+  return list === '' ? `${rest[0].toUpperCase()}${rest.slice(1)}` : `${list}, and ${rest}`;
+}

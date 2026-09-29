@@ -393,6 +393,11 @@ input, select, textarea { accent-color: var(--cobalt); }
 }
 .lens-badge .lens-kind { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-label); }
 .lens-badge .lens-name { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* And what the lens is showing beside what it is a lens on (M89 §10): the same
+   size as the kind, set quietly, because it is the chip's second sentence and
+   not its name. No colour of its own — the chip is cobalt and this is inside
+   it. */
+.lens-badge .lens-count { font-size: var(--text-xs); opacity: 0.75; white-space: nowrap; }
 .lens-control.on { font-weight: 600; }
 /* One chip per focus since H7, each with its own ×, then the two controls
    that belong to the whole list: "all of these" and "show everything". A
@@ -1608,6 +1613,18 @@ svg.key-line { width: 62px; height: 12px; display: inline-block; vertical-align:
 .panel h2.link-ends .link { font-size: inherit; line-height: inherit; }
 .panel .confidence-hint { color: var(--ink-soft); }
 .panel .meta { color: var(--ink-soft); margin: 0; font-size: var(--text-sm); }
+/* And it wraps (M89 §11, A11). The head line is dates, place, lane, category,
+   "map at Y" and the lens control, and on a phone the sheet cut it: "Africa ·
+   Other  map at 1", "Asia · m". A line of six short things that will not wrap
+   is a line that loses its last two on any pane narrower than it. Flex with a
+   wrap rather than a plain `inline`, so the pieces break between themselves and
+   never inside a date. */
+@media (max-width: 720px) {
+  .panel .meta {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    gap: 0.15rem 0.35rem; overflow-wrap: anywhere;
+  }
+}
 .panel .count { color: var(--ink-soft); font-size: var(--text-sm); font-variant-numeric: tabular-nums; }
 .panel .muted { color: var(--ink-soft); }
 .panel .hint { color: var(--ink-soft); font-size: var(--text-sm); margin: 0 0 var(--space-2); }

@@ -938,6 +938,47 @@ export const SHOTS = Object.freeze([
     query: '?w=390&h=844&view=graph',
     width: 500, height: 844,
     what: 'the graph on the same phone, filling the pane instead of a band across the top of it' },
+
+  // --- M89 §2: and the phone's first map is the world ----------------------
+  //
+  // `m87-map-phone` is what the crop bought: a picture nearly three times the
+  // size, and a third of the world in it — Russia's east, China, South-East
+  // Asia and Australia, with Europe, Africa and the Americas off the screen on
+  // either side and nothing saying so (third review, A2). The crop keeps the
+  // middle of the projection and the middle of this projection is the Pacific.
+  // Fitted to the width again here, which is the reviewer's own preference
+  // — *"a world 220 px high with ten names beats a third of the world 600 px
+  // high"* — and the pair is the change.
+  { name: 'm89-map-phone', page: 'docs/screens/frame.html',
+    query: '?w=390&h=844',
+    width: 500, height: 844,
+    what: 'the map on a 390 x 844 phone: the whole world, so a funder can see what the atlas covers' },
+
+  // --- M89 §5: and the resting timeline writes a name only where it fits ---
+  //
+  // 189 of the main events start after 1900, so from 1900 to 2026 the labels
+  // sat on top of other rows' bars: "1908 Portuguese legislative election"
+  // struck through by two of them, "COVID-19 pandemic" running into
+  // "Euromaidan", and the last name at the right edge cut in half (A5). They
+  // go through the same placer the map's names do now.
+  //
+  // **At the window the finding is about**, and not at the whole span. This tool
+  // drives the browser from its command line with a virtual clock and takes one
+  // frame; at the extent the twelve century shards that carry the titles are not
+  // all in the page by then and the picture comes out with no names at all —
+  // which is the same property `m86-graph-phone` and the two after it already
+  // carry. 1900 to 2026 is where 189 of the 240 main events start, which is
+  // where A5 read "1908 Portuguese legislative election" struck through by two
+  // bars, and it is two shards rather than twelve.
+  // The names are what this shot is of, and a name arrives with its century:
+  // twelve attribute shards, behind the core, the land and two typefaces. The
+  // default budget is one frame short of them often enough to have produced a
+  // picture with no name on it at all, so this shot asks for more virtual time
+  // — which is not a sleep, because the browser advances its own clock.
+  { name: 'm89-timeline', page: 'docs/screens/frame.html',
+    query: '?w=1280&h=800&view=timeline',
+    width: 1280, height: 800, budget: 60000,
+    what: 'the resting timeline: a name only where its box is free of bars and other names' },
 ]);
 
 export function findChrome(candidates = CANDIDATES) {
@@ -962,14 +1003,22 @@ function run(bin, args) {
 // otherwise. The glyph shots ask for 2: a symbol is ten SVG units on a mark,
 // which is about fifteen screen pixels, and fifteen pixels in a PNG somebody
 // is reading at arm's length is not something they can judge line work from.
-export function chromeArgs(chrome, { url, file, width, height, scale = 1 }) {
+export const VIRTUAL_TIME = 20000;
+
+export function chromeArgs(chrome, {
+  url, file, width, height, scale = 1, budget = VIRTUAL_TIME,
+}) {
+  const virtual = budget ?? VIRTUAL_TIME;
   return [chrome, [
     '--headless', '--disable-gpu', '--no-sandbox', '--hide-scrollbars',
     `--window-size=${width},${height}`,
     `--force-device-scale-factor=${scale}`,
     // Long enough for the spine, a geometry shard and two typefaces; the
-    // browser advances its own clock, so this is not a sleep.
-    '--virtual-time-budget=20000',
+    // browser advances its own clock, so this is not a sleep. A shot may ask
+    // for more: the names on the three pictures arrive a century at a time and
+    // a shot of the names has to wait for twelve files that the first frame
+    // does not (M89 §5).
+    `--virtual-time-budget=${virtual}`,
     `--screenshot=${file}`,
     url,
   ]];
@@ -999,7 +1048,9 @@ async function main(argv) {
       if (only && shot.name !== only) continue;
       const file = path.join(SCREENS, `${shot.name}.png`);
       const url = `http://${HOST}:${port}/${shot.page ?? ''}${shot.query}`;
-      const [bin, args] = chromeArgs(chrome, { url, file, width: shot.width, height: shot.height, scale: shot.scale ?? 1 });
+      const [bin, args] = chromeArgs(chrome, {
+        url, file, width: shot.width, height: shot.height, scale: shot.scale ?? 1, budget: shot.budget,
+      });
       const result = await run(bin, args);
       if (result.status !== 0) {
         console.error(`${shot.name}: chrome exited ${result.status}\n${result.stderr}`);
