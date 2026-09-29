@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-65"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nigerian Civil War\", revision 1374012434, lead"
+    }
+  ],
+  "from": "1966-nigerian-coup-d-etat",
+  "to": "nigerian-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The effect’s own cited article names the cause in its lead: \"Immediate causes of the war in 1966 included a military coup, a counter-coup, and anti-Igbo pogroms in the Northern Region.\" The military coup of January 1966 is the first of the three and the only one this atlas holds; the counter-coup and the pogroms are not records here and no edge is written for them. `probable`, because the only source is Wikipedia (A2).",
+  "dispute": null
+}

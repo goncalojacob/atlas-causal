@@ -5861,3 +5861,27 @@ atlas puts an argument, not a gap-filler. **The cheapest repair is a place
 record per battlefield**, which A9's chain writes the next time a batch touches
 these events — the item's own `P625` or its `P276` is what it would read, and
 neither is a country.
+
+## Batch 65 — Africa, two edges and the tombstone one of them undid — 29 September
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `setif-and-guelma-massacre` | precondition-of | `algerian-war` | probable | *"The massacre marked a turning point in Franco-Algerian relations, ultimately leading to the Algerian War of Independence from 1954 to 1962."* — "Sétif and Guelma massacre", revision 1373304371, lead |
+| `1966-nigerian-coup-d-etat` | caused | `nigerian-civil-war` | probable | *"Immediate causes of the war in 1966 included a military coup, a counter-coup, and anti-Igbo pogroms in the Northern Region."* — "Nigerian Civil War", revision 1374012434, lead |
+
+**Nine years is why the first is a precondition and not a cause.** The article
+says the massacre turned the relation between France and Algeria, not that it
+began the war; `precondition-of` is the type that says exactly that, and the
+five types exist so that this distinction survives.
+
+**The second is read from the effect's article and not the cause's.** The
+coup's own article names no event this atlas holds. The war's lead names three
+immediate causes and the atlas holds one of them; the counter-coup of July 1966
+and the anti-Igbo pogroms are not records here and no edge was written for
+either. That one edge is what took `nigerian-civil-war` off the tombstone list
+it had been on since 24 September — its reason said the article would not carry
+an edge, and it means the Portuguese edge the reason was looking for, which is
+still not written.
+
+Both are `probable`: Wikipedia is the only source, and A2 leaves `consensus`
+open only through a work Wikipedia itself cites.
