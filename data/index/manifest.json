@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-b6c37296b701.json",
+      "file": "index/attributes-1900-1999-0239cbd0f597.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -1077,7 +1077,7 @@
     "core": "index/core-9ffb5b8171eb.json",
     "grounds": "index/grounds-537fefa9a53c.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-d87283ea0d18.json",
+    "review": "index/review-ad6dd777499f.json",
     "search": "index/search-2cd6ab033776.json",
     "sources": "index/sources-5aeb99f7e5f3.json",
     "territories": "index/territories-f9130801cd0e.json"
@@ -1119,7 +1119,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-14904adf3b17.json",
+      "file": "index/history-event-1900-1999-a9e16f50cda2.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
