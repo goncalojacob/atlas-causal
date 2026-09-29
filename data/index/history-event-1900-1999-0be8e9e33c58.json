@@ -3344,6 +3344,15 @@
         }
       ]
     },
+    "1983-beirut-barracks-bombings": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1983-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -9760,6 +9769,15 @@
         }
       ]
     },
+    "damour-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "dayton-agreement": {
       "from": "git",
       "versions": [
@@ -13400,6 +13418,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "karantina-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

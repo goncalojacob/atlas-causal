@@ -15263,3 +15263,296 @@ The first local browser run reported 1 of 313 failing and its name was lost to a
 came back **313 of 313**, which with run 1995's own green is the evidence that
 nothing here reproduces. One suite was added: the deviation-1465 test in
 `tests/a15-chronology.test.mjs`, written before the fix and failing before it.
+
+## Batch 67 — the two massacres of January 1976, the Beirut barracks, and the compound the matcher was reading through
+
+*29 September, the fire that claimed at 15:26Z. Today's `## Curation 2026-09-29`
+section was already in this file and all thirteen of A15's passes have theirs, so
+this fire went to A10's order of need, which the last stand named as **Asia** at
+183 against Africa's 184. **Three records, three edges, one new place, one commit
+of code.** A11(b)'s partition check was made before the import: none of the three
+items is on `origin/m42b`, by id or by qid.*
+
+The last stand's instruction was to start not at the deepest vein but at an
+umbrella that already has held children, because that is where a sibling edge is
+available at all — and it named `arab-israeli-conflict` and `vietnam-war`, both of
+which batch 66 read dry. The vein it left untouched is the third on its own list:
+**`lebanese-civil-war`, five candidates that fit and five children already
+held.** All five were read. Three are here.
+
+### The three records
+
+| the record | sitelinks | dated | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `damour-massacre` | 20 | 20 Jan 1976 | **`damour`** (written) | `lebanese-civil-war` |
+| `karantina-massacre` | 12 | 18 Jan 1976 | `beirut` (held) | `lebanese-civil-war` |
+| `1983-beirut-barracks-bombings` | 27 | 23 Oct 1983 | `beirut` (held) | `lebanese-civil-war` |
+
+Written by the tool's own `--import` and not by a driver script this fire wrote:
+the cursor's `pending` list was empty and `done` held all 1,683 items, so the
+three QIDs appended to the seeds file's `items` **are** the batch and nothing
+else could join it. That is cheaper and safer than calling the exported passes
+one at a time, which is what batches 65 and 66 did, and it is worth writing down:
+`nextBatch()` computes `pending` as `wanted.filter(not done)`, so a fire whose
+cursor is caught up can name its own batch by appending to `items`.
+
+**A9 answered three times and differently, which is the rule working.** Damour's
+chain stops at `Q1158931`, the town, which nothing here held: one new place
+record, `city` precision off its class `Q486972`. Karantina's own district,
+`Q6368524`, is class `Q123705`, which the seeds table has no row for, so the
+chain walked past it to `Q3820` — Beirut, held since 22 September. The barracks
+bombing took Beirut the same way. **One place written for three events**, and the
+two that reused it did so because the item in between was a class nobody has
+decided about, not because anything was guessed.
+
+**A7 widened nothing and A15(4) fired on nothing.** All three items carry a
+`P585` and no span, all three titles agree with the year, and no cached lead
+states an interval the record does not. The warning count is where it was.
+
+### The three edges
+
+| from | type | to | confidence | crosses |
+| --- | --- | --- | --- | --- |
+| `karantina-massacre` | reacted-to | `damour-massacre` | probable | no |
+| `damour-massacre` | reacted-to | `sabra-and-shatila-massacre` | probable | no |
+| **`iran-iraq-war`** | precondition-of | `1983-beirut-barracks-bombings` | **disputed** | **yes** |
+
+The first is the Damour article's own lead: *"The attack was retaliation for the
+Karantina massacre by the Phalangists."* Two days apart, and the § Background
+opens on the earlier one. The second is the same article on the man who ran the
+later massacre: *"Elie Hobeika, who oversaw the attack on Sabra and Shatila, was
+greatly inspired by the loss of his relatives and fiancée in the attack at
+Damour"* — and the same section says his family and his fiancée were among the
+dead at Damour. `reacted-to` in both, because what the article states is the
+answer one side gave and not a mechanism; `probable` in both, because the only
+source the atlas can open is the encyclopaedia article (rule 22).
+
+**This is the shape A15(1) asks a `P361` walk for.** Three children of a held
+umbrella, imported only because each could be connected to what exists: Damour to
+`sabra-and-shatila-massacre`, which was already in the largest component, then
+Karantina to Damour, then the barracks bombing out of the lane entirely. None of
+the three is a parent-to-child edge, so **C8 is untouched**.
+
+### The third edge crosses, and deviation 1467 was the reason it nearly did not
+
+`1983-beirut-barracks-bombings` § Mission: *"Some analysts believe the newly
+formed Islamic Republic of Iran was heavily involved in the bomb attacks and that
+a major factor leading it to orchestrate the attacks on the barracks was
+America's support for Iraq in the Iran–Iraq War and its extending of $2.5 billion
+in trade credit to Iraq while halting the shipments of arms to Iran."* The
+sentence after it is the warning the reading rests on: *"A few weeks before the
+bombing, Iran warned that providing armaments to Iran's enemies would provoke
+retaliatory punishment."*
+
+`precondition-of` and not `caused`: what the article names as the factor is the
+American tilt towards Baghdad, and the war is what that tilt was *in*.
+**`disputed`**, because two links in that chain are contested and the article
+contests both — whether Iran was involved at all (Hezbollah, Iran and Syria deny
+it; Weinberger is quoted saying the United States never knew) and whose reading
+the motive is (*"Some analysts believe"*, which the article never adopts). Both
+are quoted in `dispute` with their sections.
+
+**A15(11): this edge crosses an umbrella**, 563 → 564. The last stand should be
+read with a correction here: this fire's own commit message called it *"the first
+crossing edge this branch has written since batch 61"*, and that is wrong —
+batch 65's table shows 562 → 563, so the last one was two batches ago. The
+number in the table is the measurement; the sentence in the commit was not
+checked before it was written.
+
+### Deviation 1467 — a name may not begin in the middle of a hyphenated compound
+
+`verdictFor()` **refused that edge** before the fix, and it was right to by its
+own rule and wrong about the fact: `mentions()` matched on word boundaries, a
+hyphen is not a letter, and so *"the Iran-Iraq War"* was naming `iraq-war` —
+this atlas's **2003** war. A15(5) then read the quote as putting the cause on a
+third held event and refused to write from it. *"The Anglo-Zulu War"* would name
+a Zulu War the same way.
+
+This is the third of the family, after 1458 (*"World War II"* naming *World War
+I*) and 1465 (the capitals). The rule is **the leading side only**: a name may
+not begin immediately after a hyphen that joins it to the word before. A dash
+used as punctuation has no letter in front of it and is still a boundary; the
+trailing side is left as 1458 left it, because only the leading side builds
+another event's name out of this one — English puts the qualifier first (Anglo-,
+Franco-, Soviet-, Iran-), and a *"War-era"* is not a different war. One
+lookbehind, `(?<![\p{L}\p{N}]-)`, beside the one already there.
+
+**Nothing wrong was ever written by it** — a false third event makes
+`verdictFor()` refuse rather than write — but it has been refusing edges that
+should be written, on every curation fire since A13 and on this one before the
+fix. The test was written first and failed first (711).
+
+### A15(5) refused two quotes at the point of writing
+
+| the quote | why |
+| --- | --- |
+| *"According to Thomas L. Friedman, the Phalangist Damouri Brigade, which carried out the Sabra and Shatila massacre during the 1982 Lebanon War, sought revenge… for what he describes as past killings of their own people by Palestinians, including those at Damour."* | names `1982-lebanon-war`, which the atlas holds, so an edge drawn from it would put the cause on the wrong record. The Hobeika sentence in the same section says the same thing and names no third event, so the edge stands on that one |
+| *"After the Lebanese Front militias took control of the Karantina district, the Tel al-Zaatar refugee camp was besieged for five months, ending in the Tel al-Zaatar massacre."* | a chronological opener with no cause stated: `isChronologyOnly()` is true of it |
+
+### The two candidates this batch left, and why each refusal is the honest one
+
+| candidate | why it is not here |
+| --- | --- |
+| `Q2359563` Tel al-Zaatar massacre (18) | fits `lebanese-civil-war` cleanly. Its own article names `karantina-massacre` twice and neither sentence is about Tel al-Zaatar — one is the Karantina massacre itself, the other is Damour retaliating for it. The one sentence in the atlas that would reach it is Karantina's, and A15(5) refuses it as chronology, above |
+| `Q548057` 1983 US embassy bombing in Beirut (17) | fits, and its **only** sentence naming a held event is an anonymous claim of responsibility the article reports: *"This is part of the Iranian Revolution's campaign against imperialist targets throughout the world."* That is what a caller said, not the article's account of a cause, and an edge from `iranian-revolution` drawn on it would be the atlas asserting a phone call. The barracks article links the two bombings by **perpetrator** and by the Inman Report they jointly prompted, neither of which is causation between them. Its title is *"1983 US embassy bombing in Beirut"* and not the longer form a searcher guesses, which cost this fire one empty read |
+
+### The screen for the next fire: Africa, 25 candidates, and where the siblings are
+
+**A10's order of need turns over again**: Asia is 186 against Africa's 184, so the
+next import batch in this lane is **Africa's**. The screen batch 66 ran for Asia
+was run here for Africa, at the same threshold, so the next fire starts where
+this one had to spend a SPARQL sweep: every unheld `P361` child of a held Africa
+event at 12 or more sitelinks, over all **177** Africa events that carry a qid.
+
+| umbrella | candidates that fit the threshold | children the atlas already holds |
+| --- | --- | --- |
+| **`arab-spring`** | **7** | **5** |
+| **`scramble-for-africa`** | **5** | **14** |
+| `yom-kippur-war` | 3 | 1 |
+| `2011-military-intervention-in-libya` | 2 | 2 |
+| `algerian-war` | 1 | 11 |
+| `decolonisation-of-africa` | 1 (`Q476855`, **41**) | 14 |
+| `somali-civil-war` | 1 | 6 |
+| `angolan-civil-war` | 1 | 2 |
+| `italo-turkish-war`, `ituri-conflict`, `second-italo-ethiopian-war` | 1 each | 0 |
+
+98 rows came back, 25 of them unheld. **The two to start at are `arab-spring`
+and `scramble-for-africa`**: they are the only two with both several candidates
+and several held children, which is the one shape that has worked in three
+batches running. The largest single candidates are `Q31944` (41) under the
+scramble and `Q476855` (41) under decolonisation. This is a screen and not a
+reading: no article behind these has been opened, and what filing and connecting
+them costs is the next fire's measurement.
+
+| | after batch 66 | after batch 67 |
+| --- | --- | --- |
+| corpus | 1,262 active | **1,265** (+3 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,027 | **1,030** |
+| active edges | 1,051 | **1,054** |
+| largest connected component | 713 | **716** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 392 | **392** |
+| **edges that cross an umbrella (A15(11))** | 563, 488 inside one | **564**, 490 inside one |
+| events with no edge at all | 309 | **309** |
+| place records | 734, 732 active | **735, 733 active** (`damour`) |
+| validator | 0 errors, 600 warnings | **0 errors, 600 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 183, Africa 184 | Europe 553, Americas 342, **Asia 186**, Africa 184 |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+### A15(2) ran as the batch's last step
+
+`node tools/cache-evidence.mjs --fill`, twice — once after the first two records
+and once after the third. All three leads are on disk at the revisions they cite
+(1356232011, 1369318651, 1376811260), the title table has all three articles, and
+`tests/a15-cache.test.mjs` passes. 2,592 `wikipedia-en` citations on active
+records, 2,519 on disk, 73 unholdable for the reason A14(3) settles, **0 missing**.
+
+## Where the run stands after batch 67, for the fire that picks it up
+
+*29 September, the fire that claimed at 15:26Z. **An import fire**: today's
+`## Curation 2026-09-29` section was already in this file and all thirteen of
+A15's passes have theirs, so nothing was owed before the batch and A10's order of
+need decided the lane. **Three records, three edges, one new place, one deviation
+fixed, one screen run for the next fire.** The branch's head was green when this
+fire took it and it merged nothing: `origin/m0` was already an ancestor.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next batch is Africa's, and the screen for it is already in this file.**
+  Asia is 186 against Africa's 184. The batch 67 section carries the same screen
+  batch 66 ran for Asia, run here for Africa: 98 `P361` rows at 12+ sitelinks
+  over the 177 Africa events that carry a qid, **25 of them unheld**, grouped by
+  umbrella with the held-children count beside each. **Start at `arab-spring` (7
+  candidates, 5 held children) or `scramble-for-africa` (5, 14)**: those are the
+  only two Africa umbrellas with both several candidates and several siblings,
+  and that shape is what has yielded in three batches running. No article behind
+  them has been opened, so what they cost is the next fire's measurement and not
+  a promise.
+- **The vein this fire worked is spent and the arithmetic is worth keeping.**
+  `lebanese-civil-war` had five unheld children at the threshold; three are here
+  and the two left are refused for reasons in the section above, neither of them
+  a matcher fault. **Three of five is the best rate any batch has had since the
+  partition**, against batch 66's one of twenty, and the reason is visible: the
+  five were a family of events that answer each other, and their articles say so
+  in their own leads.
+- **C8 is still the run's largest question and this batch did not touch it.** The
+  196 Asia candidates batch 66 measured are unchanged, October 7 is still blocked
+  by C8 and by nothing else, and nothing here is evidence either way: all three
+  edges are sibling edges or cross out of the lane, which is exactly the shape
+  C8 permits.
+- **Deviation 1467 changes what every future curation fire will count.** The
+  matcher no longer reads a name out of the middle of a hyphenated compound, so
+  A13's relations pass will *write* edges it has been refusing since A13 — not
+  only count differently. Three families of held records are affected on sight:
+  anything `Iran-Iraq`, `Anglo-`, `Franco-`, `Russo-`, `Sino-` or `Israeli-` in
+  front of a name the atlas also holds on its own. **The next curation fire is
+  the first that can say how many**, and it should say so.
+- **Two `review.html` lines are still worth twelve records.** `chinese-civil-war`
+  and `turkish-war-of-independence` both carry a `review.note` saying their
+  interval is too narrow, and between them `filedUnder()` refuses twelve Asia
+  candidates including the Long March and the Greco-Turkish War. A7 cannot reach
+  either; batch 66 checked all four leads and titles. Unchanged.
+- **`nigerian-civil-war` is still a two-node island**, and the São Tomé airlift
+  is still the edge that would join it, wanting a source the atlas can open.
+  Unchanged since batch 65.
+- **The two display faults of deviation 1461 are still open** and the two records
+  are still held back. **This batch is a third piece of evidence about fault 2**:
+  it wrote a new city place, `damour`, and all 313 browser tests pass. Batch 65
+  wrote `kherrata` and said the same. So the fault is not "any new city label"
+  twice over, and the bisect in the 29 September curation section is still where
+  a lane A fire should start. Fault 1 is untouched: no bar was added to the
+  `americas` lane.
+- **A15(12)'s 177 uncategorised events and A15(6)'s 32 cleared places are
+  unchanged.** All three records of this batch carry no category, because class
+  `Q3199915` (massacre) and `Q891854` (bomb attack) have rows in the seeds table
+  and neither row names one. **That is a cheap owner's edit with a visible
+  return**: two classes, and every massacre and bombing this branch has imported
+  gets a glyph.
+- **`Q217327` is still a class the table has no row for**, and it is now the
+  second batch running to say so — the 1983 US embassy bombing carries it beside
+  `Q891854`, which is why that one could have been imported and four of batch 66's
+  candidates could not.
+- **The EEC's closing year and `operation-sutton`'s missing day** are unchanged
+  and both are one line for the owner.
+- **`docs/m53-polities.md` §4.1 needed no retake**: `tests/m53.test.mjs` passes
+  on this tree. The four variants of that paragraph a person should cut to one
+  are still four.
+- **The network was in good repair and cheap.** Twenty-one requests in all — six
+  `Special:EntityData` reads, three SPARQL queries (one of them the Africa screen,
+  a `VALUES` block of 60 qids at a time over 177), nine article reads through
+  `rest.php/v1/page`, and the two `cache-evidence` title calls — one in flight
+  every 400 to 500 ms and **no 429 at any point**. Deviation 1466 holds:
+  `rest.php/v1/page` answered every time and the action API was not tried.
+- **One thing this fire learned about the tool and no batch note records.** A
+  fire whose import cursor is caught up — `pending` empty, `done` holding every
+  item — can **name its own batch by appending to `data/imports/wikidata-seeds.json`
+  → `items` and running `--import --batch <n>`**, because `nextBatch()` computes
+  `pending` as `wanted.filter(not done)`. That is the whole pipeline (classify,
+  A9's chain, A15(4), the filing, the lead, the record on disk in key order) for
+  free, where batches 65 and 66 called the exported passes one at a time from a
+  script each fire wrote again. **Prefer it.** It is also what made this fire's
+  three records cost six entity reads between them.
+- **Deviation numbers: take the next above 1467.** This fire wrote **1467**, the
+  hyphenated compound.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass — the first one
+  with the matcher whole. **A15 is done and no fire owes it again.** The next
+  import fire goes straight to A10's order of need, which is now **Africa**, and
+  to the screen above.
+
+**The check is green on the head this stand was written against.** Run **2018**
+of `validate.yml`, commit `18224320`, conclusion **`success`**. Runs 2010, 2012,
+2014, 2015, 2016 and 2017 were cancelled by the next push, which is deviation
+1258's chain and costs nothing; run **2018** is the first of this fire to be
+left alone long enough to conclude, and it carries every record, every edge, the
+code fix and the rebuilt index. **This paragraph's own commit triggers the next
+run, and the fire that picks this up should read that one** — which is the note
+batch 66 left and the reason this stand names a commit rather than "the final
+head".
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63,
+and no suite needed a second run. One test was added, the deviation-1467 case in
+`tests/a15-chronology.test.mjs`, written before the fix and failing before it
+(711).
