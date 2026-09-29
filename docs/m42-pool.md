@@ -16024,3 +16024,102 @@ settles, 0 missing.** `tests/a15-cache.test.mjs` passes.
 | validator | 0 errors, 600 warnings | **0 errors, 600 warnings** |
 | per lane, active | Europe 553, Americas 342, Asia 186, Africa 187 | Europe 553, Americas 342, **Asia 191**, Africa 187 |
 | per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+## Where the run stands after batch 69, for the fire that picks it up
+
+*29 September, the fire that claimed at 21:07Z. **An import fire**, the third of
+the day: today's curation section and all thirteen A15 sections were already in
+this file, so nothing was owed before the batch. **Five records, two places, four
+edges, the largest component moved for the first time since batch 64, Asia's wide
+screen run at last, and two deviations that are both questions about A15(5)
+rather than faults in the data.***
+
+**What is open, in the order a fire should weigh it:**
+
+- **A10's order of need has turned over again: Africa is now 187 against Asia's
+  191, so the next import batch in this lane is Africa's.** The wide screen for
+  Africa is in the batch 68 section above and is still good — `second-boer-war`
+  has **24** filable children and the atlas holds eight of its battles,
+  `yom-kippur-war` has 17. **Asia's screen is now in this file too** (the batch 69
+  section), so neither lane needs a sweep before its next batch: `war-in-afghanistan-2001-2021`
+  **58**, `vietnam-war` **52**, `second-sino-japanese-war` **39** left of 44,
+  `iran-iraq-war` **43**, `korean-war` 33. Both screens were run at 5 sitelinks
+  with the class table and the umbrella's own span applied before any article was
+  opened, and neither needs re-running to be used.
+- **The method that joined this batch to the graph is worth repeating.** Three
+  batches running, the imported records' own articles gave edges only to each
+  other, and the edge that reached the 716 came from **the article of the record
+  the atlas already held** — `marco-polo-bridge-incident`'s own § Consequences
+  names the Battle of Shanghai as one of the two engagements it led directly to.
+  That is A13's method applied inside an import batch, and it is what the Boer
+  family of batch 68 never got: **its component of nine is still not joined**, and
+  the Siege of Kimberley's lead naming the Jameson Raid is still where to look.
+  This batch leaves a second island, of three — `battle-of-xuzhou`,
+  `1938-yellow-river-flood` and `battle-of-wuhan` — and one refused quote
+  (Xuzhou's § Background on the Battle of Nanjing) is all that stands between it
+  and the 718.
+- **Five class rows would place two records this fire could not place, and are
+  the cheapest fix on the list.** `Q2225003` and `Q19953632` (Nanking's `P276`),
+  `Q15642541` (Central China), and still `Q191093`, `Q188689` and `Q217327` from
+  batches 67 and 68. Each is one row in `data/imports/wikidata-seeds.json` →
+  `classes` and a re-run; `battle-of-nanking` and `1938-yellow-river-flood` would
+  stop being bare.
+- **`battle-of-wuhan` is dated 27 October 1938 and nothing else, and no rule as
+  written can widen it.** Q2038907 carries only a `P585`, its article's first
+  sentence states no dates and its title carries no year, so A7 and A15(4) both
+  say the interval stays. The article's own infobox says 11 June – 27 October
+  1938. **Reading an infobox is not in A7** — that is a line for the owner, and it
+  would reach a good many imported one-day records besides this one.
+- **Deviations 1470 and 1471 are both about A15(5) and both are for a review, not
+  for a fire.** 1470: `statesACause()` does not see `led directly to`, because
+  `CAUSAL_MARKERS` has `led to` and an adverb splits it — nothing was lost here,
+  but a chronology-opening sentence carrying it would be refused while stating a
+  cause in as many words. 1471: the refusal class is necessary and not sufficient
+  — the Battle of Shanghai's lead passes `verdictFor()` for an edge it says
+  nothing about, because the quote's subject is not the edge's `to` and A15(5)
+  cannot see that. A rule that a quote must name **both** ends would close it, and
+  every edge this batch wrote already satisfies it.
+- **Deviation 1469 is still a question for the owner, not for a fire** — the 1881
+  French conquest of Tunisia against a Scramble for Africa dated 1885–1914, and
+  the 27 of 189 Africa candidates that fail for the same reason.
+- **Deviation 1467's promise is still unmeasured.** The hyphenated-compound fix
+  landed in batch 67 and no curation fire has run since. **The next curation fire
+  — the first after 02:00Z on 30 September — owns that count**, and it will also
+  be the first to read the five new records' articles against the rest of the
+  atlas under A13.
+- **A15 is done and no fire owes it again.** A14 likewise.
+- **Unchanged from batch 68's stand:** the two `review.html` lines worth twelve
+  Asia candidates (`chinese-civil-war`, `turkish-war-of-independence`);
+  `nigerian-civil-war` as a two-node island; the two display faults of deviation
+  1461; A15(12)'s 177 uncategorised events; the EEC's closing year and
+  `operation-sutton`'s missing day; the four variants of the
+  `docs/m53-polities.md` paragraph. `tests/m53.test.mjs` passes on this tree and
+  §4.1 needed no retake.
+- **The network was in good repair and cheap.** About thirty requests: seven
+  SPARQL sweeps (four `P361` screen blocks over 184 Asia qids in `VALUES` blocks
+  of 60, two label lookups, one claims lookup), eight article reads through
+  `rest.php/v1/page`, twelve through the import, and one `cache-evidence` title
+  call — one in flight every 400 to 500 ms and **no 429 at any point** from WDQS
+  or the REST API. The one refusal was the action API's `wbgetentities`, which
+  answered *"You are making too many requests to the API"* on a single
+  five-item call; SPARQL was used for the same question instead and never
+  complained. Deviation 1466 holds: `rest.php/v1/page` answered every time.
+- **Deviation numbers: take the next above 1471.** This fire wrote **1470** (the
+  causal marker an adverb splits) and **1471** (A15(5)'s verdict is necessary and
+  not sufficient).
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. **No test was added**: neither deviation is code,
+and the one thing this fire wrote outside `data/` is the paragraph
+`docs/m67-umbrellas.md` owes its two bare records — which is what
+`tests/m67.test.mjs`'s *"a child that names neither is one the measurement argues
+for"* asks for, and it failed until that paragraph was there. The only other
+failure on the way was the index, stale between the records commit and the
+rebuild, which is deviation 798's order working as intended.
+
+**The check on the head this stand was written against is run 2042** of
+`validate.yml`, commit `66cf566c`; records validated in three seconds and the
+test step was still running when this paragraph was written. Run 2040 (the
+records commit) and 2041 (the index commit) were both cancelled by the next push,
+which is deviation 1258's chain and costs nothing.
