@@ -6687,6 +6687,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "battle-of-rheinfelden",
+      "id": "battle-of-rheinfelden--siege-of-breisach--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-breisach",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-rio-bueno-1654",
       "id": "battle-of-rio-bueno-1654--mapuche-uprising-of-1655--precondition-of",
@@ -15676,6 +15705,35 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-tinzaouaten-2024",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "king-philip-s-war",
+      "id": "king-philip-s-war--king-william-s-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "king-william-s-war",
       "type": "precondition-of"
     },
     {
@@ -26270,6 +26328,35 @@
       "status": "active",
       "to": "turkish-war-of-independence",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "treaty-of-tordesillas-1494",
+      "id": "treaty-of-tordesillas-1494--first-treaty-of-san-ildefonso--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-treaty-of-san-ildefonso",
+      "type": "precondition-of"
     },
     {
       "authors": [

@@ -1168,6 +1168,15 @@
         }
       ]
     },
+    "bysjon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "cadiz": {
       "from": "git",
       "versions": [
@@ -1654,6 +1663,15 @@
         }
       ]
     },
+    "concepcion-chile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "corbie": {
       "from": "git",
       "versions": [
@@ -1758,6 +1776,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "curico-province": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -2172,6 +2199,15 @@
         }
       ]
     },
+    "eger": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "egypt-q79": {
       "from": "git",
       "versions": [
@@ -2455,6 +2491,24 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "florence-q2044": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -4232,6 +4286,15 @@
         }
       ]
     },
+    "les-avins": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "leuven": {
       "from": "git",
       "versions": [
@@ -4763,6 +4826,24 @@
         }
       ]
     },
+    "marseille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "matabeleland": {
       "from": "git",
       "versions": [
@@ -5279,6 +5360,24 @@
         }
       ]
     },
+    "naples-q2634": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "nashwaak-village-new-brunswick": {
       "from": "git",
       "versions": [
@@ -5697,6 +5796,15 @@
         }
       ]
     },
+    "omoa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "oriente-province": {
       "from": "git",
       "versions": [
@@ -5785,6 +5893,24 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "pamplona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -6008,6 +6134,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "peteroa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -6367,6 +6502,15 @@
         }
       ]
     },
+    "prisecnice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "prison-de-l-abbaye": {
       "from": "git",
       "versions": [
@@ -6496,6 +6640,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "quebec-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -6632,6 +6794,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "rheinfelden-aargau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -7183,6 +7354,15 @@
         }
       ]
     },
+    "santa-fe-de-nuevo-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "santander-department": {
       "from": "git",
       "versions": [
@@ -7617,6 +7797,15 @@
         }
       ]
     },
+    "south-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "south-deerfield-massachusetts": {
       "from": "git",
       "versions": [
@@ -7877,6 +8066,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "strait-of-magellan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -8305,6 +8503,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "trebel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
