@@ -1145,3 +1145,29 @@ four rows of data and one question for the owner:
 The first two are placeless until the next import, which now has the rows: the
 places are not written by hand here because both are things the base map may
 already draw, and deviation 1317 is what that costs.
+
+## M42 batch 68, 29 September — one child that names neither, and the country that could not stand in for it
+
+`battle-of-vaal-krantz` is filed under `second-boer-war` and names no actor and
+no place. The other two records of the batch are not bare — `battle-of-ladysmith`
+carries `ladysmith` and `battle-of-the-tugela-heights` carries `colenso`, both
+place records the atlas already held — so this is one record and not a family.
+
+**What placed it is the umbrella and the lane, and the refusals are the honest
+part.** Q736490 carries its own `P625` (29.6308 E, 28.6753 S), which is a point
+on the Tugela and not a settlement: A9's first step can only reuse a place record
+the atlas holds, and none stands there. The import said so in its own words —
+*"its own point and no name a tool can read; a person writes that place"*. Its
+`P17` is South Africa, and **A15(6) refused it**: that country's inception is
+1910 and the battle ended in 1900, which is exactly the case A15(6) was written
+for. A `P276` step reached Q81725, whose class `Q191093` has no row in the seeds
+table. So the record has the `africa` lane from the seeds file and nothing else.
+
+**Why it belongs where it is filed.** Its item's `P361` is the Second Boer War,
+the atlas dates that umbrella 1899–1902 and the battle 5–7 February 1900, and its
+own cited article's first sentence calls it *"the third failed attempt by General
+Redvers Buller's British army to fight its way past Louis Botha's army of Boer
+irregulars and lift the Siege of Ladysmith"* — the siege the atlas holds, under
+the same umbrella, with the same two commanders as the fourth attempt a week
+later. The filing is the import's, from `P361` and the span; this paragraph is
+the measurement the bareness owes.
