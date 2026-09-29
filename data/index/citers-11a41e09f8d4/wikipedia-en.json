@@ -3404,6 +3404,12 @@
     },
     {
       "dissent": false,
+      "id": "dissolution-of-the-soviet-union--afghan-civil-war-q1980081--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet–Afghan War\", revision 1375699993, lead"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-soviet-union--budapest-memorandum--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Ukrainian war\", revision 1375351069, § Background"
@@ -6308,12 +6314,6 @@
     },
     {
       "dissent": false,
-      "id": "soviet-afghan-war--afghan-civil-war-q1980081--precondition-of",
-      "kind": "edge",
-      "locator": "\"Soviet–Afghan War\", revision 1375699993, lead"
-    },
-    {
-      "dissent": false,
       "id": "soviet-afghan-war--battle-of-mogadishu-1993--inspired",
       "kind": "edge",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635, § Somali National Alliance and Irregular forces"
@@ -7871,12 +7871,6 @@
       "id": "world-war-i--sayfo--enabled",
       "kind": "edge",
       "locator": "\"Sayfo\", revision 1370631734"
-    },
-    {
-      "dissent": false,
-      "id": "world-war-i--treaty-of-lausanne--precondition-of",
-      "kind": "edge",
-      "locator": "\"World War I\", revision 1376154299, § National identities"
     },
     {
       "dissent": false,
