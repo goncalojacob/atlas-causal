@@ -13443,6 +13443,25 @@ waiting, which is the first thing the next fire should know.*
 **A10's order of need: Africa still trails at 182** against Asia's 183, so the
 next import batch is Africa's unless a chain crosses out of it.
 
+### The three days nothing ran, which is bigger than anything in this fire
+
+**Not one commit was made on any branch on 26, 27 or 28 September.** `m42`'s
+last commit before this fire is 25 September 18:33Z, `m42b`'s is the same
+evening, `m0`'s is 19:08Z and `main`'s is the pull request that merged it.
+Three whole days with no fire in either records lane and no snapshot landed.
+
+The owner left on 22 September with *"the site must keep growing until I get
+back, no matter how many events it has already"* and *"run as many things in
+parallel as feasible"*, and for three of the seven days it did not grow at all.
+**Nothing in the data is wrong because of it and nothing here can fix it**: the
+gate, the claim rule and the idempotence all worked exactly as written — this
+fire found no live claim, picked the corpus up where batch 64 left it and lost
+nothing. What did not happen is the *scheduling*: no fire was started. That is
+outside the repository and it is the first thing to tell the owner.
+
+A fire that picks this up should not try to make the days up by importing
+harder. **It should say so and carry on**, which is what this one does.
+
 **What is open, in the order a fire should weigh it:**
 
 - **A15's thirteen passes are the next fire's whole job if it is not a curation
