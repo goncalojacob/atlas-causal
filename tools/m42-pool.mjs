@@ -122,6 +122,27 @@ function reachTable(active, adj, pt, max = 8) {
   return table;
 }
 
+// A15(11) — the measurement that matters. *"Chains throughout the globe and
+// time"* is not a count of edges: an edge between two parts of the same war is
+// the war's internal structure, and an edge between two events with no umbrella
+// in common is the thing the owner asked for. The review of 25 September found
+// that number reported for no batch at all, so A15(11) puts it beside the
+// largest component in every batch note and every curation section — which
+// means it has to be a number a command gives and not one a fire recomputes in
+// a scratch script.
+//
+// "No umbrella in common" is read through `parentsOf` and against *active*
+// parents only, exactly as `isMain` above is, and an edge with an end the atlas
+// does not hold as an active event is not counted at all — it is not a chain
+// between two things.
+export function crossesUmbrella(edge, byId, parentsFor) {
+  const from = byId.get(edge.from);
+  const to = byId.get(edge.to);
+  if (!from || !to) return false;
+  const theirs = parentsFor(to);
+  return !parentsFor(from).some((id) => theirs.includes(id));
+}
+
 export function measure(events, edges) {
   const byId = new Map(events.map((e) => [e.id, e]));
   // isMain of src/lens.js, read here off the records: an event is main when it
@@ -143,6 +164,13 @@ export function measure(events, edges) {
     const t = e.origin?.tool ?? 'person';
     origins[t] = (origins[t] ?? 0) + 1;
   }
+  // A15(11). The same set of edges `linksBetweenActive` counts, partitioned by
+  // whether the two ends share an umbrella.
+  const activeIds = new Set(g.active.map((e) => e.id));
+  const activeById = new Map(g.active.map((e) => [e.id, e]));
+  const parentsFor = (event) => parentsOf(event).filter((id) => activeIds.has(id));
+  const between = activeEdges.filter((e) => activeIds.has(e.from) && activeIds.has(e.to));
+  const crossing = between.filter((e) => crossesUmbrella(e, activeById, parentsFor));
   const pt = new Set(g.active.filter(isPortuguese).map((e) => e.id));
   const reach = reachTable(g.active, g.adj, pt);
   return {
@@ -158,6 +186,8 @@ export function measure(events, edges) {
     linksBetweenActive: g.links,
     components: g.count,
     largestComponent: g.largest,
+    crossingAnUmbrella: crossing.length,
+    insideOneUmbrella: between.length - crossing.length,
     componentSizes: g.sizes.slice(0, 10),
     isolated: g.isolated,
     noEdge: g.active.filter((e) => g.adj.get(e.id).size === 0).length,
@@ -190,6 +220,7 @@ components of the causal graph: ${out.components}
   largest: ${out.largestComponent}
   next: ${out.componentSizes.slice(1).join(', ')}
   active events with no edge at all: ${out.noEdge}
+edges crossing an umbrella (A15(11)): ${out.crossingAnUmbrella}, inside one ${out.insideOneUmbrella}
 Portuguese ${out.portuguese}, world ${out.world}
   hops to a Portuguese event: ${Object.entries(out.reach).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
 }

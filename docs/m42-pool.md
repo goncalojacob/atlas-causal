@@ -14349,3 +14349,40 @@ Corpus unchanged in events and edges: **1,258 active, 235 main, 1,023 filed,
 Validator **0 errors, 599 warnings** (+1, the Inca presence above); citations to
 check go from 14,137 to 14,139. A15(2)'s pass, the batch's last step, reports
 **0 citations off disk**.
+
+## A15 (11) — the measurement that matters, as a command's answer
+
+*29 September, the 05:07Z fire. No network, no record touched: 30 lines in
+`tools/m42-pool.mjs` and a pure suite in front of them.*
+
+A15(11) asks every batch note and every curation section, in both pool files, to
+report **the number of edges written whose two endpoints have no parent in
+common**, beside the largest component, *"because that is the number 'chains
+throughout the globe and time' is"*. The review found it reported for no batch
+at all.
+
+The reason it was never reported is that nobody could report it without writing
+a script: `tools/m42-pool.mjs` gave the largest component and the edge count and
+not this. So it gives it now — `crossesUmbrella()` and two fields,
+`crossingAnUmbrella` and `insideOneUmbrella`, which partition exactly the
+`linksBetweenActive` the tool already counted. A fire runs one command and reads
+the number off it, which is the only version of this rule that survives a fire
+that is in a hurry.
+
+**On this fire's corpus: 562 cross an umbrella and 486 are inside one**, of
+1,048 edges between two active events. Every section this fire wrote reports the
+562, and every one of them got it from a scratch script that agreed with the tool
+to the edge — which is the check, and is why the number in those sections needs
+no revision.
+
+**What "no umbrella in common" reads.** `parentsOf` (`src/parts.js`), and
+**active** parents only, exactly as `isMain` in the same file reads them — so a
+retracted parent is not an umbrella and its two children cross. An edge with an
+end the atlas does not hold as an active event is **not counted at all**, on
+either side: it is not a chain between two things.
+
+**Counts.** 1 tool changed, 1 pure suite added (`tests/a15-umbrella.test.mjs`, 3
+tests), 0 records touched, 0 requests. Corpus unchanged: **1,258 active, 235
+main, 1,023 filed, 1,048 active edges, largest component 711, **562 edges
+crossing an umbrella**, 486 inside one, 391 components, 309 events with no edge**.
+Validator **0 errors, 599 warnings**.
