@@ -1566,7 +1566,7 @@
       ]
     },
     "2014-gaza-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5892,14 +5892,18 @@
       ]
     },
     "operation-northern-shield": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
         },
         {
-          "fields": [],
+          "fields": [
+            "review",
+            "sources",
+            "when"
+          ],
           "on": "2026-09-29"
         }
       ]

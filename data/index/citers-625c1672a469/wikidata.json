@@ -3068,6 +3068,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-elmina-1625",
+      "kind": "event",
+      "locator": "Q1140266"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elmina-1637",
+      "kind": "event",
+      "locator": "Q4870964"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-falmouth-1690",
       "kind": "event",
       "locator": "Q4871051"
@@ -7421,6 +7433,18 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "Q2090584"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1606",
+      "kind": "event",
+      "locator": "Q7510222"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1640-1641",
+      "kind": "event",
+      "locator": "Q4337398"
     },
     {
       "dissent": false,

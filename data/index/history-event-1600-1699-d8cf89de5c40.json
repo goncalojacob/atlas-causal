@@ -189,6 +189,24 @@
         }
       ]
     },
+    "battle-of-elmina-1625": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-elmina-1637": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-falmouth-1690": {
       "from": "git",
       "versions": [
@@ -1558,6 +1576,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-malacca-1606": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-malacca-1640-1641": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

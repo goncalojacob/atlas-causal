@@ -4911,6 +4911,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "battle-of-elmina-1625",
+      "id": "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-elmina-1637",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-fontenoy",
       "id": "battle-of-fontenoy--battle-of-melle--precondition-of",
@@ -11065,6 +11093,34 @@
       "status": "active",
       "to": "battle-of-abrolhos",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "dutch-brazil-1630-1654",
+      "id": "dutch-brazil-1630-1654--battle-of-elmina-1637--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-elmina-1637",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -22098,6 +22154,34 @@
       "status": "active",
       "to": "second-battle-of-colenso",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-malacca-1606",
+      "id": "siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-malacca-1640-1641",
+      "type": "precondition-of"
     },
     {
       "authors": [

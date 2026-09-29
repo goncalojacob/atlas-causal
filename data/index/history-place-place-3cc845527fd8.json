@@ -1169,7 +1169,7 @@
       ]
     },
     "bysjon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1682,7 +1682,7 @@
       ]
     },
     "concepcion-chile": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1798,7 +1798,7 @@
       ]
     },
     "curico-province": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2236,7 +2236,7 @@
       ]
     },
     "eger": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2256,6 +2256,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "elmina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -4332,7 +4341,7 @@
       ]
     },
     "les-avins": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4796,6 +4805,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "malacca-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -5842,7 +5860,7 @@
       ]
     },
     "omoa": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6183,7 +6201,7 @@
       ]
     },
     "peteroa": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6548,7 +6566,7 @@
       ]
     },
     "prisecnice": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6843,7 +6861,7 @@
       ]
     },
     "rheinfelden-aargau": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7400,7 +7418,7 @@
       ]
     },
     "santa-fe-de-nuevo-mexico": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7843,7 +7861,7 @@
       ]
     },
     "south-america": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8115,7 +8133,7 @@
       ]
     },
     "strait-of-magellan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8552,7 +8570,7 @@
       ]
     },
     "trebel": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

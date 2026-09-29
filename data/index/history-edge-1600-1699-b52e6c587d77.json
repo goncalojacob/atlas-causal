@@ -11,6 +11,15 @@
         }
       ]
     },
+    "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-fort-albany--battle-of-fort-albany-1693--precondition-of": {
       "from": "git",
       "versions": [
@@ -199,6 +208,15 @@
         }
       ]
     },
+    "dutch-brazil-1630-1654--battle-of-elmina-1637--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "dutch-brazil-1630-1654--conquest-of-paraiba--precondition-of": {
       "from": "git",
       "versions": [
@@ -380,6 +398,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

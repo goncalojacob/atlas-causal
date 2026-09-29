@@ -15310,7 +15310,7 @@
       ]
     },
     "operation-gothic-serpent": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

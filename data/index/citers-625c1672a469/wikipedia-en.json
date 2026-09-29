@@ -2180,6 +2180,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of",
+      "kind": "edge",
+      "locator": "“Battle of Elmina (1637)”, revision 1375872702"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of",
+      "kind": "edge",
+      "locator": "“History of Elmina”, revision 1361080834, § The Dutch period (1637–1872)"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fontenoy--battle-of-melle--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Melle\", revision 1370449497"
@@ -3479,6 +3491,12 @@
       "id": "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Abrolhos\", revision 1370430814, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--battle-of-elmina-1637--enabled",
+      "kind": "edge",
+      "locator": "“Battle of Elmina (1637)”, revision 1375872702"
     },
     {
       "dissent": false,
@@ -6077,6 +6095,12 @@
       "id": "siege-of-ladysmith--second-battle-of-colenso--reacted-to",
       "kind": "edge",
       "locator": "\"Second Battle of Colenso\", revision 1370736054, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of",
+      "kind": "edge",
+      "locator": "“Siege of Malacca (1640–1641)”, revision 1370743206, § Background — Prior conflicts"
     },
     {
       "dissent": false,
@@ -9545,6 +9569,18 @@
       "id": "battle-of-dunkirk",
       "kind": "event",
       "locator": "\"Battle of Dunkirk\", revision 1374147037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elmina-1625",
+      "kind": "event",
+      "locator": "\"Battle of Elmina (1625)\", revision 1375871907"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elmina-1637",
+      "kind": "event",
+      "locator": "\"Battle of Elmina (1637)\", revision 1375872702"
     },
     {
       "dissent": false,
@@ -14093,6 +14129,18 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "\"Siege of Mafeking\", revision 1370743154"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1606",
+      "kind": "event",
+      "locator": "\"Siege of Malacca (1606)\", revision 1370743201"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1640-1641",
+      "kind": "event",
+      "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
     },
     {
       "dissent": false,
