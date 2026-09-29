@@ -9,7 +9,7 @@
 <body class="page-body">
   <header class="bar">
     <h1><a href="index.html">Atlas causal</a></h1>
-    <p class="tagline">The review queue: every record drafted by the assistant, until a person has read it and signed it.</p>
+    <p class="tagline">The review queue: every record nobody has read yet, whoever wrote it, until a person reads it and signs it.</p>
     <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
   </header>
 
@@ -27,7 +27,7 @@
       <code>CLAUDE.md</code> that let an assistant draft records so the interface could be built
       against real material. Every record nobody has read yet says so — <code>review.status</code> is
       <code>draft</code> until somebody signs it — and the queue on the left is exactly that list,
-      whoever wrote the record. Reading one, correcting what is wrong and signing it puts your name
+      whoever wrote the record: a contribution or an import that arrives unread is in it too. Reading one, correcting what is wrong and signing it puts your name
       on it and the day you read it in <code>review.signedBy</code>.</p>
 
       <p><strong>Saving needs the local server.</strong> Run <code>node tools/serve.mjs</code> and

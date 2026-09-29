@@ -188,6 +188,38 @@ export function searchIndexFor(topology, records = []) {
   });
 }
 
+// **A year is a question about time and not about a name** (M89 §7, A7).
+//
+// "1857" found nothing at all and the box said "Nothing by that name"; "1950"
+// found eleven, every one of them an event with 1950 in its title or its first
+// sentence, and not one of them because it happened in 1950. A reader who types
+// four digits into a history of the world means the year, and the entries
+// already carry `when`.
+//
+// Four digits exactly, and nothing else: "18" is two letters of a name a reader
+// is halfway through typing, "1857-1860" is not a year, and a query with a
+// letter in it is a name. Negative years are not offered — a minus sign in the
+// box is not something a reader types — and BCE is not in this corpus at all.
+export const YEAR_QUERY = /^\d{4}$/;
+
+export function yearOf(query) {
+  const folded = fold(query);
+  return YEAR_QUERY.test(folded) ? Number(folded) : null;
+}
+
+// Whether a record's interval covers a year. A null end is "as far as the data
+// goes" — an actor or a process still running — and covers everything after it,
+// which is `util/window.js`'s own reading of the same field.
+export function covers(when, year) {
+  try {
+    const span = extent(when);
+    if (!Number.isFinite(span.min)) return false;
+    return span.min <= year && (span.max === null || !Number.isFinite(span.max) || year <= span.max);
+  } catch {
+    return false;
+  }
+}
+
 const startOf = (when) => {
   try {
     return extent(when).min;
@@ -237,6 +269,13 @@ export function search(entries, query, { limit = 8 } = {}) {
   const folded = fold(query);
   if (folded.length === 0) return { groups: [], total: 0, query: '' };
   const byKind = new Map();
+  // The year, when the query is one, and the events of it: held as the scan
+  // goes exactly as each kind's rows are, so asking the second question costs
+  // one comparison per event and no second pass. Ordered by weight, which is
+  // the brief's own order: a reader who asks for a year wants the year's
+  // largest events first and not its alphabetically first.
+  const year = yearOf(folded);
+  const inYear = [];
   let total = 0;
   for (const entry of entries) {
     let best = null;
@@ -256,6 +295,25 @@ export function search(entries, query, { limit = 8 } = {}) {
         best = LEAD_RANK + r;
         length = entry.lead.length;
       }
+    }
+    // The year's own question, asked of every active event whatever its name
+    // said. A record may answer both — an event called "1857 something" that
+    // happened in 1857 — and then it is in both groups, because they are two
+    // questions and the reader asked one of them by typing four digits.
+    if (year !== null && entry.kind === 'event' && covers(entry.when, year)) {
+      const start = startOf(entry.when);
+      const weight = entry.weight ?? 0;
+      const aheadInYear = (other) => (weight !== other.weight ? weight > other.weight
+        : (start !== other.start ? start < other.start : entry.id < other.id));
+      if (inYear.length < limit || aheadInYear(inYear[inYear.length - 1])) {
+        let at = inYear.length;
+        while (at > 0 && aheadInYear(inYear[at - 1])) at -= 1;
+        inYear.splice(at, 0, { entry, id: entry.id, weight, start });
+        if (inYear.length > limit) inYear.pop();
+      }
+      // Counted here only where nothing it is *called* matched, so a record is
+      // never two of the total on the strength of one query.
+      if (best === null) total += 1;
     }
     if (best === null) continue;
     total += 1;
@@ -296,6 +354,14 @@ export function search(entries, query, { limit = 8 } = {}) {
   // What comes back is the entry with its rank on it, as it always was; the
   // copy happens here, where there are eight of them and not twenty thousand.
   const out = [];
+  // The year's group first, and with a limit of its own: it is what the reader
+  // asked for by typing a year, and a group spent out of the shared allowance
+  // would be the one that got nothing. `rank` and `matched` are the other
+  // groups' order and this one has neither — it is not a match on a name —
+  // so the rows carry the entry as it stands.
+  if (year !== null && inYear.length > 0) {
+    out.push({ kind: 'year', year, items: inYear.map((hit) => ({ ...hit.entry })) });
+  }
   let left = limit;
   for (const group of groups) {
     if (left <= 0) break;

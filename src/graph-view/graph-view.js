@@ -229,7 +229,15 @@ export function edgeKey() {
   // asks for.
   const near = `<svg class="graph key-line" viewBox="0 0 62 12" aria-hidden="true">
       <circle class="node lens-near" cx="12" cy="6" r="4"/></svg>`;
-  box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="false" aria-controls="graph-key-body">Key</button>
+  // **Open at rest on a desktop, folded on a phone** (M89 §11, A11), which is
+  // what the map's key has done since M86 §5 and the timeline's does now: the
+  // same sentence about the same box, so a reader who switches view does not
+  // meet a closed "KEY" button on two of the three. `PHONE` is the breakpoint
+  // `src/style.css` already draws at, asked once when the box is built; a
+  // reader who closes it closes it.
+  const opened = !(globalThis.matchMedia?.(PHONE)?.matches);
+  if (opened) box.classList.add('open');
+  box.innerHTML = `<button type="button" class="graph-key-toggle" aria-expanded="${opened}" aria-controls="graph-key-body">Key</button>
     <div id="graph-key-body" class="graph-key-body"><h2>Marks and links</h2><dl class="edge-key">
     <dt>${near}</dt><dd>connected to the one you opened</dd>
     ${EDGE_TYPE_IDS

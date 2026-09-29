@@ -6,7 +6,7 @@
 // end of it would have been a second, quieter answer to the same question.
 
 import { svg, svgTitle } from '../util/dom.js';
-import { mapKey, PHONE } from '../view-key.js';
+import { mapKey } from '../view-key.js';
 import { worldProjection, WORLD_WIDTH, viewBboxIn, bboxTransform } from './projection.js';
 import { createLandLayer } from './layers/land.js';
 import { createBaseLayer } from './layers/base.js';
@@ -17,6 +17,9 @@ import { createEventsLayer } from './layers/events.js';
 import { DEEPEST_ZOOM } from '../cluster.js';
 import { resolveWindow, withMargin, overlaps, WHEEL_FACTOR } from '../util/window.js';
 import { workingSet, heldSet } from '../emphasis.js';
+import { frameOn, markNodes, wantedSets } from './camera.js';
+import { holdingKey } from '../graph-view/arrangement.js';
+import { activeFoci, formatFoci } from '../lens.js';
 import { largeEventsIn } from '../large.js';
 import { isParent } from '../parts.js';
 import { installGlyphs } from './glyphs.js';
@@ -60,6 +63,18 @@ const MAX_ZOOM = DEEPEST_ZOOM;
 // — Iberia on a laptop — the cells are asked for as they were before; at 218
 // they are not.
 const NEAR_SPAN = 120;
+// As far in as the map's camera will go on its own (M89 §2), which is not as far
+// as a reader may take it: `MAX_ZOOM` is where a cluster of coincident marks
+// comes apart, and a lens on one event framed at it would be a street. At k = 4
+// a nominal pane shows about ninety degrees of longitude — a continent and its
+// neighbours — which is what a reader who asked for a country is asking to see.
+const FIT_ZOOM = 4;
+// The room left around a frame, in the projection's units. A mark keeps its size
+// on the screen at every zoom — its radius is divided by `k` and the viewport
+// multiplies by it — so a mark framed at the very edge of the rectangle is a mark
+// half off the screen. The selected mark and its ring are the largest there is,
+// and they are the ones a lens frames (layers/events.js).
+const FRAME_PAD = 12;
 // A cluster whose members are simply too close to place cannot say where it
 // would come apart; it gets a plain step in instead.
 const CLUSTER_ZOOM_STEP = 3;
@@ -109,24 +124,36 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // timeline's root has said `group` since M60; this is the same word, and the
   // name it carries is the name it carried.
   const root = svg('svg', { viewBox: `0 0 ${WIDTH} ${HEIGHT}`, class: 'map', role: 'group', 'aria-label': 'Map' }, [viewport]);
-  // **On a phone the world is fitted to the pane's height** (M87 §9, review A
-  // finding 5). The viewBox is 960 x 540 and the default fit is `xMidYMid meet`,
-  // so the picture is letterboxed inside its pane: at 390 px wide the world can
-  // never be taller than 56 % of that, which is the 220-pixel band with 3-pixel
-  // marks and empty ground beneath it the review found. `slice` fits the other
-  // dimension instead and crops what does not fit, which at this ratio is the
-  // poles — a strip of ice for a picture nearly three times the size.
+  // **On a phone the world is fitted to the width** (M89 §2, A2).
   //
-  // Not a stylesheet rule, because `preserveAspectRatio` is an attribute and CSS
-  // has no property for it; the breakpoint is `view-key.js`'s `PHONE`, which is
-  // the one `src/style.css` already draws at, so there is one number and not two.
-  // Read again whenever the pane changes size, so a window dragged across the
-  // breakpoint is the picture the breakpoint asks for.
-  const fitToPane = () => {
-    root.setAttribute('preserveAspectRatio', globalThis.matchMedia?.(PHONE)?.matches
-      ? 'xMidYMid slice' : 'xMidYMid meet');
-  };
-  fitToPane();
+  // M87 §9 fitted it to the *height* instead — `slice` rather than `meet` — to
+  // answer the 220-pixel band with empty ground beneath it that the second review
+  // found at 390 px. What that bought was a picture nearly three times the size
+  // and a third of the world in it: the third review's phone opened on Russia's
+  // east, China, South-East Asia, Australia and New Zealand, with Europe, Africa
+  // and the whole of the Americas off the screen on either side and nothing
+  // saying so. The crop keeps the middle of the projection, and the middle of
+  // this projection is the Pacific (`projection.js`, CENTRAL_MERIDIAN is 150E).
+  //
+  // Centring the crop on the events instead was the other half of A2's offer,
+  // and it is no answer at rest: the resting picture is 1,257 events over four
+  // lanes, so the box they stand in is the world and its centre is the Pacific
+  // again. The reviewer's own sentence is the one that decides it — *"a world
+  // 220 px high with ten names beats a third of the world 600 px high"* — and a
+  // funder who cannot tell that the atlas covers the Americas has been told
+  // something false about the scope. So the whole world, and the spare height
+  // goes to the band over the map's top edge and the sheet's grip below it,
+  // which are both overlays on this pane and not rows of the grid (map-band.js,
+  // phone.js). `docs/screens/m89-map-phone.png` is what it reads like.
+  //
+  // The crop is still what a *lens* is drawn in: `frameCamera` zooms the camera
+  // onto the marks the reader asked for, and a letterbox with the world scaled
+  // inside it is the picture that zoom starts from.
+  //
+  // Written rather than left to the default, because it is a decision and not an
+  // omission: `meet` is what a reader of this file has to be told was chosen, and
+  // there is no longer a breakpoint here to read at all.
+  root.setAttribute('preserveAspectRatio', 'xMidYMid meet');
   // The twelve symbols, once in the document: the timeline draws the same ones
   // by id, and two copies would be twelve repeated ids (glyphs.js).
   installGlyphs(root);
@@ -309,6 +336,12 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // (cluster.js, `zoomBucket`). Set when a splittable cluster is clicked and
   // cleared by every other way the zoom can move.
   let exactZoom = false;
+  // And whether the reader moved the camera themselves (M89 §2). Where they are
+  // looking is a question they answered with their own hand, and a lens that
+  // frames itself must not take it back: the frame is offered to a camera the
+  // frame put there and never to one that was dragged, wheeled or zoomed into
+  // place. The graph has kept the same flag since M74 and for the same reason.
+  let cameraMoved = false;
   const applyTransform = () => {
     viewport.setAttribute('transform', `translate(${transform.x} ${transform.y}) scale(${transform.k})`);
   };
@@ -410,6 +443,10 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   // the same picture scaled, which is what a zoom looks like, and the marks
   // are put back at their screen size when it stops.
   function zoomTo({ x, y }, k) {
+    // Zooming into a cluster is the reader's own camera too: they clicked a
+    // stack of marks to see it come apart, and a lens re-framing itself on the
+    // next render would undo the click.
+    cameraMoved = true;
     const target = { k, x: WIDTH / 2 - x * k, y: HEIGHT / 2 - y * k };
     if (reducedMotion() || typeof requestAnimationFrame !== 'function') {
       transform = target;
@@ -477,6 +514,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       capture('setPointerCapture', drag.pointerId);
     }
     transform = { ...transform, x: drag.origin.x + dx, y: drag.origin.y + dy };
+    cameraMoved = true;
     applyTransform();
   });
   root.addEventListener('pointerup', () => {
@@ -516,6 +554,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     // Zooming rearranges the clusters under the spread, so it closes.
     spread = null;
     exactZoom = false;
+    cameraMoved = true;
     applyTransform();
     render(state.get());
     scheduleBbox();
@@ -524,6 +563,10 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     transform = { x: 0, y: 0, k: 1 };
     spread = null;
     exactZoom = false;
+    // A double click is the reader saying "the world, please", which is as much
+    // their own camera as a drag is: a lens still on must not fly back to its
+    // marks on the next render.
+    cameraMoved = true;
     applyTransform();
     render(state.get());
     scheduleBbox();
@@ -583,8 +626,67 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   let drawnFor = null;
   let shardsIn = 0;
 
+  // --- where the camera starts (M89 §2, A2) --------------------------------
+  //
+  // A lens is a question, and the marks that answer it have to be on the screen.
+  // The rule and the arithmetic are the graph's (`camera.js` → `frame.js`): the
+  // widest of the wanted sets that fits is the one framed, and the focus alone is
+  // the fallback. What is decided here is when.
+  //
+  // Not when the reader named a box (`?bbox=`), which is a camera they chose in
+  // the link; not when they have moved it themselves; and not at rest, where the
+  // whole world at `k = 1` is already the answer and flying anywhere would be the
+  // map going somewhere nobody asked. So: a new question, framed once.
+  //
+  // The key is the lens as it is *applied* and not as it is written — an open
+  // actor, place, narrative or event is a lens nobody typed (lens.js) — plus the
+  // layer list, because a category toggle removes marks, and the rectangle, since
+  // a frame measured against a rectangle that no longer exists is not a frame of
+  // anything. The pane settles after the first drawing (the masthead wraps, the
+  // panel takes its remembered width), and on a phone the sheet's grip is the
+  // difference between a mark on the screen and one below it.
+  let framedFor = null;
+  function frameCamera(s, working, box) {
+    if (s.bbox) return;
+    const wanted = wantedSets(working);
+    const key = wanted === null ? null
+      : `${formatFoci(activeFoci(atlas, s))}|${holdingKey(s)}|${(s.layers ?? []).join(',')}`
+        + `|${Math.round(box.x0)},${Math.round(box.y0)},${Math.round(box.x1)},${Math.round(box.y1)}`;
+    if (key === null) {
+      // The lens was cleared. The next one frames afresh, and nothing moves now:
+      // where a reader is looking when they put a question down is theirs.
+      framedFor = null;
+      return;
+    }
+    if (key === framedFor) return;
+    // A question the reader has since moved the camera on is still their own.
+    if (cameraMoved && framedFor !== null && framedFor.startsWith(`${key.split('|')[0]}|`)) return;
+    const at = frameOn(markNodes(atlas, union(wanted), projection), wanted, box, {
+      min: MIN_ZOOM, max: FIT_ZOOM, pad: FRAME_PAD,
+    });
+    // A lens whose events the atlas has no place for has no marks to frame, and
+    // a camera moved to a frame of nothing would be a number invented.
+    if (!at) return;
+    framedFor = key;
+    cameraMoved = false;
+    exactZoom = false;
+    transform = at;
+    applyTransform();
+  }
+  // The ids of every set offered, which is the widest of them; `markNodes` is a
+  // lookup per id and there is no sense doing it twice for a subset.
+  function union(sets) {
+    const ids = new Set();
+    for (const set of sets) for (const id of set) ids.add(id);
+    return ids;
+  }
+
   function render(s, { force = false } = {}) {
-    const box = view();
+    let box = view();
+    // Before the key, because the camera is in it: a frame that ran after the
+    // key was stamped would draw the old picture and file it under the new one.
+    frameCamera(s, workingSet(atlas, s), box);
+    box = view();
     const key = renderKey(s, transform.x, transform.y, transform.k, spread ?? '', shardsIn, baseIn, exactZoom,
       shardsArrived(atlas),
       Math.round(box.x0), Math.round(box.y0), Math.round(box.x1), Math.round(box.y1));
@@ -741,6 +843,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const baseNames = transform.k >= LABEL_ZOOM;
     if (far) {
       if (labelsGroup.childNodes.length > 0) labelsGroup.replaceChildren();
+      // Sem nomes não há nada contra que colocar as insígnias, e elas ainda têm
+      // de ser desenhadas: passam por uma ronda só delas (M89 §6).
+      events.drawBadges(new Set(placeLabels(events.badgeCandidates(), {
+        k: transform.k, view: box, limits: { [PRIORITY.events]: Infinity },
+      }).map((label) => label.id)));
       return [];
     }
     const s = state.get();
@@ -808,6 +915,26 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // o colocador que escolhe os dez mais pesados, pela ordem que já tem.
       limits: baseNames ? LIMITS : { ...LIMITS, [PRIORITY.events]: RESTING_EVENT_LABELS },
     });
+    // E as insígnias, na mesma ronda e depois dos nomes (M89 §6, achado A6).
+    // Sobre a Europa e o Próximo Oriente, em duzentos pixéis, "2 more", "11
+    // more", "10 more", "6 more", "7 more", "2 more" e "4 more" montavam-se umas
+    // nas outras e nos nomes por baixo delas: eram desenhadas com as marcas,
+    // antes de existir nome nenhum, e nada perguntava se duas estavam no mesmo
+    // sítio. Depois dos nomes e contra eles, porque um nome é o que o mapa diz e
+    // uma insígnia é a conta do que ele não conseguiu dizer; o anel duplo já diz
+    // "há mais do que um aqui" e o título da pilha leva a conta consigo.
+    //
+    // Sem limite de quantas: o limite por prioridade existe para que cem cidades
+    // não encham o ecrã antes do primeiro acontecimento, e aqui os candidatos
+    // são todos da mesma espécie. O chão já tomado é o das etiquetas colocadas.
+    events.drawBadges(eventsOn(on)
+      ? new Set(placeLabels(events.badgeCandidates(), {
+        k: transform.k,
+        view: box,
+        limits: { [PRIORITY.events]: Infinity },
+        occupied: placed.map((label) => label.box),
+      }).map((label) => label.id))
+      : new Set());
     labelsGroup.replaceChildren();
     for (const label of placed) {
       const candidate = byKey.get(`${label.priority}|${label.id}`);
@@ -957,9 +1084,6 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       const now = `${Math.round(rect.width)}x${Math.round(rect.height)}`;
       if (now === last) return;
       last = now;
-      // A pane that changed size may have crossed the phone breakpoint, and
-      // which way the world is fitted to it is decided there (§9).
-      fitToPane();
       render(state.get());
       if (state.get().bbox) scheduleBbox();
     }).observe(container);
