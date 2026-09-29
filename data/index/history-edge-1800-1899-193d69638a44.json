@@ -83,6 +83,15 @@
         }
       ]
     },
+    "battle-of-ladysmith--siege-of-ladysmith--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-magersfontein--battle-of-paardeberg--precondition-of": {
       "from": "git",
       "versions": [
@@ -614,6 +623,24 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-ladysmith--battle-of-the-tugela-heights--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-ladysmith--battle-of-vaal-krantz--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

@@ -7674,6 +7674,15 @@
         }
       ]
     },
+    "battle-of-the-tugela-heights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-the-yalu-river-1904": {
       "from": "git",
       "versions": [
@@ -7755,6 +7764,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-vaal-krantz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

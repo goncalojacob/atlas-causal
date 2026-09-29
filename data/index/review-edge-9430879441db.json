@@ -5416,6 +5416,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-29",
+      "from": "battle-of-ladysmith",
+      "id": "battle-of-ladysmith--siege-of-ladysmith--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-68"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-ladysmith",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-lagunillas",
       "id": "battle-of-lagunillas--battle-of-millarapue--caused",
@@ -22247,6 +22276,64 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-spion-kop",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-ladysmith",
+      "id": "siege-of-ladysmith--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-68"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-tugela-heights",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-29",
+      "from": "siege-of-ladysmith",
+      "id": "siege-of-ladysmith--battle-of-vaal-krantz--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-68"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-vaal-krantz",
       "type": "reacted-to"
     },
     {
