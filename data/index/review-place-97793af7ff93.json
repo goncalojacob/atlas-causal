@@ -14808,32 +14808,8 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 10,
+      "degree": 11,
       "id": "rio-de-janeiro",
-      "kind": "place",
-      "names": [
-        "Rio de Janeiro"
-      ],
-      "origin": {
-        "run": "m50",
-        "tool": "assistant"
-      },
-      "review": {
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "created": "2026-09-22",
-      "degree": 1,
-      "id": "rio-de-janeiro-q8678",
       "kind": "place",
       "names": [
         "Rio de Janeiro",
@@ -14842,16 +14818,17 @@
         "City of Río de Janeiro"
       ],
       "origin": {
+        "run": "m50",
         "tool": "assistant"
       },
       "review": {
         "flags": [
-          "imported-facts",
-          "a9-place"
+          "a15-merged"
         ],
+        "note": "A15(9): rio-de-janeiro-q8678, written by A9 on 22 September from Q8678, is merged into this record — one city, one point 1.2 km away, two ids. Q8678, the article and the item’s other names come across with it, and the event that pointed at the other id points here. The same merge london took in A14(6).",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-09-29",
       "status": "active"
     },
     {

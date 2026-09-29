@@ -7514,6 +7514,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "names",
+            "review",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -7529,6 +7538,16 @@
             "sources"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "status",
+            "supersededBy",
+            "wikidata",
+            "wikipedia"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
