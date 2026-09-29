@@ -1873,7 +1873,10 @@
         "Q1351462",
         "Q1907402",
         "Q518303",
-        "Q385820"
+        "Q385820",
+        "Q2889085",
+        "Q736490",
+        "Q4873033"
       ]
     }
   },
@@ -2045,6 +2048,10 @@
     "Q1850800": {
       "on": "2026-09-25",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q385820": {
+      "on": "2026-09-29",
+      "why": "states a cause naming a held event, and cannot be filed: dated 1881 against scramble-for-africa at 1885-1914, so unfiled it raises the main count (A6) and filed it breaks the corpus invariant that no child is dated outside its parent. A7 cannot widen the umbrella: its cited article states no years. See m42-pool.md, batch 68."
     }
   }
 }

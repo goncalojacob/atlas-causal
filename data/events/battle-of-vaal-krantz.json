@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-vaal-krantz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q736490",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Vaal Krantz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q736490"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vaal Krantz\", revision 1370592068"
+    }
+  ],
+  "title": "Battle of Vaal Krantz",
+  "summary": "The English Wikipedia article \"Battle of Vaal Krantz\", at revision 1370592068, opens: \"The Battle of Vaal Krantz was the third failed attempt by General Redvers Buller's British army to fight its way past Louis Botha's army of Boer irregulars and lift the Siege of Ladysmith. The battle occurred during the Second Boer War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q736490, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-02-05",
+    "endDate": "1900-02-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-ladysmith--siege-of-ladysmith--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-68"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ladysmith\", revision 1370446909, lead"
+    }
+  ],
+  "from": "battle-of-ladysmith",
+  "to": "siege-of-ladysmith",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier record’s own cited article says it in its lead: \"The Boers did not follow up their advantage by proceeding towards the strategically important port of Durban, and instead began a siege of Ladysmith, which was relieved after 118 days.\" The advantage is the battle’s own outcome, which the two sentences before it give: \"The result was a disaster for the British. The main body was driven back into the town, and an isolated detachment of 800 men was forced to surrender to Commandant De Wet.\" Three days separate them, 30 October 1899 and 2 November. `precondition-of` and not `caused`: what the article states is that the Boer victory left the garrison shut in the town and that the Boers then chose the siege over an advance on Durban, which is a position the siege needed and not a mechanism that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
