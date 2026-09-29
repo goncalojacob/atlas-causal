@@ -22725,6 +22725,9 @@ value, token or type size was added, and **nothing under `data/` changed at
 all**: `validate --index` is clean at 12,967 records, 0 errors, 730 warnings,
 the same 730 the branch was cut on.
 
+The suite: **2,190 tests, none skipped** (1,877 pure, 313 in a browser run one
+at a time, the way the check runs them), against M88's 2,151.
+
 What the brief offered as the second half of §5 — stretching the timeline's axis
 by density, "as a second commit if it is done" — is not in this branch. The
 placer it asks for first is, and it is what the finding needed; the stretch is a
@@ -23358,3 +23361,4 @@ M42b started 2026-09-25T15:18:12Z by scheduled
 M88 started 2026-09-25T17:51:08Z by scheduled
 M88 done
 M89 started 2026-09-29T03:45:19Z by scheduled
+M89 done
