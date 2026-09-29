@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "operation-gothic-serpent--battle-of-mogadishu-1993--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255, § Battle of Mogadishu"
+    }
+  ],
+  "from": "operation-gothic-serpent",
+  "to": "battle-of-mogadishu-1993",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle was this operation's own raid running out of control: \"On 3 October 1993, the task force executed a mission to capture two of Aidid's lieutenants. The mission ultimately culminated in what became known as the Battle of Mogadishu.\" The article then reads the consequence back the other way — \"The intensity of the battle prompted the effective termination of the operation on 6 October 1993\" — so the two are the same week seen from either end, and the operation is what put 160 men in the Black Sea neighbourhood that afternoon. Probable: Wikipedia alone.",
+  "dispute": null
+}

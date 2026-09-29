@@ -5913,6 +5913,78 @@
       "category": "revolution",
       "label": "pronunciamiento",
       "note": "Added in M42b batch 36, for the Pronunciamiento of Riego. Read off the class item over the network: Wikidata glosses it 'form of military rebellion or coup d'etat peculiar to Spain and the Spanish American republics', and it is a subclass of Q45382, coup d'etat, which this table already reads as an event of category revolution."
+    },
+    "Q202216": {
+      "kind": "place",
+      "precision": "region",
+      "label": "overseas department and region of France",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"overseas departments and regions of France that are outside metropolitan France\". Guadeloupe, Q17012, and Martinique, Q17054, carry it beside Q36784 region of France, and the two agree at `region`: an island department is an area and not a point on the ground."
+    },
+    "Q36784": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region of France",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"French top-level territorial subdivision\". Guadeloupe and Martinique's second class, and `region` for the same reason every first-order division here is."
+    },
+    "Q13218690": {
+      "kind": "place",
+      "precision": "city",
+      "label": "town in Hungary",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"town or city with status ‘város’\". Eger, Q167109, carries it beside Q681277 city with county rights, and the two agree at `city`."
+    },
+    "Q681277": {
+      "kind": "place",
+      "precision": "city",
+      "label": "city with county rights",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"city in Hungary which exercises the rights of a county within its boundaries\". Eger's second class; what is on the ground is a town, whatever it is sovereign over, which is the reading Q4115680 Italian city-state already takes."
+    },
+    "Q70208": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Switzerland",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"lowest level in Switzerland’s three-tier state administration structure\". Rheinfelden, Q269667, carries it; a settlement-sized unit of local government is `city`, as every other one in this table is."
+    },
+    "Q2602693": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality of Honduras",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"administrative subdivision of Honduras\". Omoa, Q520386, carries it."
+    },
+    "Q1153408": {
+      "kind": "place",
+      "precision": "region",
+      "label": "province of Chile",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"second-level administrative division of Chile\". Curicó Province, Q201338, carries it; a province is `region`, as Q162620 province of Spain is."
+    },
+    "Q1462047": {
+      "kind": "place",
+      "precision": "region",
+      "label": "vilayet",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"first-order administrative division of the Ottoman Empire (from 1867)\". The Adrianople vilayet, Q1311980, carries it; a first-order division is `region`."
+    },
+    "Q350895": {
+      "kind": "place",
+      "precision": "city",
+      "label": "abandoned village",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"village that has been deserted\". Přísečnice, Q2121108, carries it; a village that no longer has anybody in it is still a settlement, which is the reading Q19730508 former municipality takes."
+    },
+    "Q61089180": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipal part of the Czech Republic",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"type of territorial administrative unit in Czechia\". Třebel, Q2465365, carries it."
+    },
+    "Q2785216": {
+      "kind": "place",
+      "precision": "city",
+      "label": "municipality section",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"former municipality in Belgium\". Les Avins, Q2138736, carries it, and it is the place the battle of that name was fought at rather than the country A15(6) refuses for 1635."
+    },
+    "Q23397": {
+      "kind": "place",
+      "precision": "region",
+      "label": "lake",
+      "note": "Added by the curation fire of 29 September from the class each located item of A9's chain names, read off Wikidata rather than guessed (deviation 1266's rule). Wikidata glosses it \"body of relatively still water, localized in a basin\". Bysjön, Q16506527, carries it; a lake is an area and is drawn wider and fainter, as Q1322134 gulf and Q39594 bay are. An ocean is still refused — the 25 September fire's reading, that an ocean is not where a war happened, is unchanged."
     }
   },
   "reconcile": true

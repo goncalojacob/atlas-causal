@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "united-nations-operation-in-somalia-ii--operation-gothic-serpent--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Gothic Serpent\", revision 1375741255, § UNOSOM II - SNA conflict"
+    }
+  ],
+  "from": "united-nations-operation-in-somalia-ii",
+  "to": "operation-gothic-serpent",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The operation existed to serve a manhunt the UN mission had already ordered: \"The primary objective of the operation was to capture Mohamed Farrah Aidid, leader of the Somali National Alliance who was wanted by the UNOSOM II in response to his attacks against United Nations troops.\" The article dates the quarrel to the mission itself — \"Major disagreements between the UN and the Somali National Alliance began soon after the establishment of UNOSOM II in March\" — and it is the Security Council, the day after 24 Pakistani soldiers were killed, that \"issued Resolution 837, calling for the arrest and trial of those who carried out the ambush\". Without the mission and its warrant there is nobody for Task Force Ranger to hunt. Probable: Wikipedia alone.",
+  "dispute": null
+}

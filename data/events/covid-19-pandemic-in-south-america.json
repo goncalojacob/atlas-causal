@@ -13,13 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "end-unstated"
+      "end-unstated",
+      "a9-place"
     ]
   },
   "origin": {
@@ -50,7 +51,7 @@
     "end": null,
     "date": "2020-02-25"
   },
-  "place": null,
+  "place": "south-america",
   "region": "americas",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "covid-19-pandemic",

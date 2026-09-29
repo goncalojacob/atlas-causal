@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "2014-gaza-war--operation-northern-shield--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Northern Shield\", revision 1368407310, § Background"
+    }
+  ],
+  "from": "2014-gaza-war",
+  "to": "operation-northern-shield",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The operation's own background makes the earlier war the reason a search that had already failed was taken up again and this time believed: \"The Israel Defense Forces (IDF) started searching for Hezbollah tunnels into Israel in 2013 after residents of northern Israel reported hearing sounds of digging, but failed to find anything. After the 2014 Gaza War, which saw numerous tunnels dug by Hamas from the Gaza Strip into Israel being uncovered and being utilized in several attacks, the IDF renewed its search for Hezbollah tunnels in northern Israel, and this time found indications that such tunnels existed.\" The article carries the mechanism through the method as well — the laboratory formed to investigate the northern tunnels was \"based on a similar laboratory investigating Hamas tunnels in southern Israel\" — so what the war supplied was not only a prompt but the technique. Probable: Wikipedia alone.",
+  "dispute": null
+}
