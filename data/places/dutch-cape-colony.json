@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dutch-cape-colony",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4807130",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Dutch Cape Colony"
+  },
+  "sources": [],
+  "names": [
+    "Dutch Cape Colony"
+  ],
+  "where": {
+    "lon": 18.41666667,
+    "lat": -33.91666667,
+    "precision": "region",
+    "label": "Dutch Cape Colony"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

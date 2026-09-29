@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-ile-ronde--bali-strait-incident--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    }
+  ],
+  "from": "battle-of-ile-ronde",
+  "to": "bali-strait-incident",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Île Ronde article states that the failed blockade was never renewed and what filled the gap: \"With Renaud's squadron still at Port Louis, Rainier considered renewing the blockade, but was dissuaded by the dangers of the monsoon season and a false report that a squadron of French ships of the line was soon due to arrive on Isle de France. In 1795 he was distracted by the sudden need to guard against the Dutch East India colonies following the French conquest of the Netherlands, and he supervised the invasion of Ceylon and operations against the Dutch East Indies. By the time his attention turned once more to Isle de France, it had been heavily reinforced in early 1796 by a frigate squadron commanded by Counter-admiral Pierre César Charles de Sercey.\" The Bali Strait article names the same squadron and the same reason for sending it: \"In response to British activity in the region and the reluctance of the inhabitants of Île de France to follow orders from the National Convention abolishing slavery, the French dispatched a squadron of frigates to the East Indies early in 1796.\" Precondition-of: the island left unblockaded is what Sercey's squadron could be based on, and neither article says the 1794 action brought on the encounter of January 1797.",
+  "dispute": null
+}
