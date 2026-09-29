@@ -15248,3 +15248,18 @@ the rest of itself measuring why the lane yields one record and not ten.*
   matcher fixed. **A15 is done and no fire owes it again.**
 - **Deviation numbers: take the next above 1466.** This fire wrote **1465**, the
   matcher's capitals, and **1466**, the action API.
+
+**The check is green on this fire's final head.** Run **2001** of `validate.yml`,
+commit `e63806c5`, conclusion **`success`**. Run **1995**, on the code commit,
+also `success`; runs 1992, 1993, 1997, 1998, 1999 and 2000 were cancelled by the
+next push, which is deviation 1258's chain and costs nothing. **This paragraph's
+own commit triggers run 2002, and the next fire should read that one** — which is
+the whole point of the note four bullets up.
+
+**Both suites are green on this fire's tree: 2,221 tests, nothing skipped** —
+**1,908 pure** and **313 browser**, run the way the check runs them since M63.
+The first local browser run reported 1 of 313 failing and its name was lost to a
+`tail` on the capture; rather than call it load, the whole suite was run again and
+came back **313 of 313**, which with run 1995's own green is the evidence that
+nothing here reproduces. One suite was added: the deviation-1465 test in
+`tests/a15-chronology.test.mjs`, written before the fix and failing before it.
