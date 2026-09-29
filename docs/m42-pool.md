@@ -13608,6 +13608,17 @@ harder. **It should say so and carry on**, which is what this one does.
   not coerce the REST endpoint's string `revision` to an integer, so any cache
   written outside `fetchLeads` writes a string revid and `rule 1` catches it.
   This fire hit it on the one lead it re-cached.
+- **The check is green on this fire's head.** Run **1923** of `validate.yml`,
+  commit `4c1a7a36`, conclusion `success`, after the two holds. Run **1917** on
+  `6599d53b5` is the red one and its two failures are the display faults above;
+  runs 1909 and 1911 failed on rule 16 because those commits carried a stale
+  index, which is deviation 1451's shape and deviation 798's reason for building
+  the index in a commit of its own — **this fire made that mistake twice** and
+  the second rebuild is `a7f7d5e0`. Runs 1910, 1914, 1915, 1916 and 1922 were
+  cancelled by the next push, deviation 1258's chain, which costs nothing.
+  **2,130 tests pass locally, 1,835 pure and 295 browser, with nothing failed
+  and nothing skipped**, run the way the check runs them since M63 on the final
+  tree.
 - **The next curation fire is the first fire after 02:00Z on 30 September**, and
   it owns A11(a) over every active event and A13's relations pass. **Every other
   fire owes A15 first.**
