@@ -4,9 +4,17 @@
 // não toca no DOM, não sabe o que é uma camada e não lê o estado. Recebe
 // candidatos de qualquer origem na mesma forma e devolve os que ficam.
 //
-//   placeLabels(candidatos, { k, view, limits })
-//   candidato: { id, text, x, y, priority, weight, em?, once? }
+//   placeLabels(candidatos, { k, view, limits, occupied })
+//   candidato: { id, text, x, y, priority, weight, em?, once?, box? }
 //   → [{ id, text, x, y, priority, box }] pela ordem de desenho
+//
+// **`box` e `occupied` são de M89 §5**, que é o dia em que a linha do tempo
+// passou a usar este colocador. Uma etiqueta ali é posta pelo `labelPlacement`
+// dela — à direita da barra, ou à esquerda quando lá não há chão — por isso a
+// caixa vem feita de fora em vez de ser calculada aqui a partir do texto; e o
+// que ela tem de evitar não são só as outras etiquetas mas as *barras*, que
+// são o que o leitor viu riscado pelos nomes. `occupied` são caixas já
+// tomadas antes de se colocar a primeira: nada as ganha e nada as tira.
 //
 // **A ordem é determinada e não negociada**: prioridade a subir, depois peso a
 // descer, depois `id`. A mesma imagem coloca as mesmas etiquetas duas vezes,
@@ -138,14 +146,20 @@ const inView = (x, y, view) => !view || (x >= view.x0 && x <= view.x1 && y >= vi
 // grafo já segue (graph-view/labels.js) e a que a linha do tempo passou a
 // seguir em M86 §4 — e quem perde a borda fica sem nome, como quem perde a
 // caixa a outro.
-const boxInView = (box, view) => !view || box.x1 <= view.x1;
+// E as duas bordas, não só a direita (M89 §5). Na linha do tempo uma etiqueta
+// pode ser ancorada no fim e escrita para a *esquerda* do que nomeia, por isso
+// é a borda esquerda que ela pode ultrapassar; no mapa toda a etiqueta começa
+// na âncora e esta segunda metade nunca é o que a deita fora.
+const boxInView = (box, view) => !view || (box.x1 <= view.x1 && box.x0 >= view.x0);
 
 // As etiquetas que ficam, pela ordem em que são desenhadas.
 //
 // `k` é o zoom em vigor: a caixa é em unidades da página e o texto tem o mesmo
 // tamanho no ecrã a qualquer zoom, por isso encolhe em unidades à medida que o
 // leitor se aproxima — e é por isso que cabem mais nomes lá dentro.
-export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } = {}) {
+export function placeLabels(candidates, {
+  k = 1, view = null, limits = LIMITS, occupied = [],
+} = {}) {
   // Fora do ecrã não é candidato, e é deitado fora antes da ordenação: uma
   // etiqueta que não vai ser desenhada não pode gastar o limite da sua
   // prioridade nem a caixa de outra.
@@ -161,7 +175,8 @@ export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } 
     || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
   const placed = [];
-  const boxes = [];
+  // O chão já tomado primeiro: uma barra não é um nome e não perde para um.
+  const boxes = [...occupied];
   // Por prioridade e não no total: é isto que faz com que cem cidades nunca
   // possam empurrar um acontecimento para fora do mapa.
   const used = new Map();
@@ -178,7 +193,7 @@ export function placeLabels(candidates, { k = 1, view = null, limits = LIMITS } 
     const spent = used.get(priority) ?? 0;
     if (spent >= limit) continue;
     if (candidate.once && said.has(candidate.once)) continue;
-    const box = labelBox(candidate.text, candidate.x, candidate.y, k, candidate.em ?? EM);
+    const box = candidate.box ?? labelBox(candidate.text, candidate.x, candidate.y, k, candidate.em ?? EM);
     if (!boxInView(box, view)) continue;
     if (boxes.some((other) => hits(box, other))) continue;
     boxes.push(box);

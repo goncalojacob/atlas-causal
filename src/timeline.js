@@ -61,6 +61,7 @@ import { isParent, ringClasses } from './parts.js';
 import { GLYPH_BOX, glyphAttributes, glyphClasses, hasGlyph, installGlyphs } from './map/glyphs.js';
 import { eventsInView } from './util/viewport.js';
 import { densityPath } from './density.js';
+import { placeLabels } from './map/labels.js';
 
 // How tall a row is: enough for a bar, the air around it, and the title
 // written beside it. There is one kind of row since M77 — the named lanes
@@ -158,6 +159,12 @@ const BAR_LABEL_GAP = 5;
 // room is a plausible one rather than none, so the arrival moves a few bars
 // instead of re-cutting every row.
 const BAR_LABEL_UNKNOWN = 16;
+// And no cap on how many titles a picture may carry (M89 §5). The map's placer
+// takes one per priority because a coastful of cities would otherwise fill the
+// screen before the first event was considered; here every candidate is an
+// event and what there is room for is what is written. The two priorities are
+// what the reader is holding and everything else.
+const BAR_LABEL_LIMITS = Object.freeze({ 0: Infinity, 1: Infinity });
 export const ROW_LIMITS = {
   AXIS_HEIGHT, ROW_HEIGHT, LANE_MAX,
 };
@@ -842,6 +849,13 @@ export function createTimeline(container, { atlas, state, createScale = createTi
         if (!name) continue;
         const x = box.x + 4;
         const end = x + labelRoom(name);
+        // **And not past the pane's own edge** (M89 §5, A5). The rule above is
+        // M82's — a name is written whole or it is not written — and it was
+        // asked only of the other names: an umbrella beginning near the right
+        // edge had its name written into it, which is how "COVID-19 pandemi"
+        // came back at the top of the picture after M88 §9 had taken it off the
+        // bottom. The event still has its bar and its title under the pointer.
+        if (x < 0 || end > width) continue;
         const row = rows.findIndex((taken) => taken.every((other) => end <= other.x || other.end <= x));
         if (row < 0) continue;
         rows[row].push({ x, end });
@@ -877,46 +891,68 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       rowOf.set(event.id, lanes.indexOf(lane));
     }
 
-    // Past the cap (M87 §2), what each row has already given away to a title, so
-    // that no name is written over another. `taken` is a short list per row —
-    // most rows hold a handful of bars — and nothing at all where the rows are
-    // as many as the titles need, which is the ordinary picture.
+    // **Which bars get their names, through the map's own placer** (M89 §5,
+    // A5). A title was written wherever `labelPlacement` put it and refused
+    // only by a short per-row list of other titles, and only past the pane's
+    // cap: from 1900 to 2026 — where 189 of the 240 main events start — the
+    // reviewer met "1908 Portuguese legislative election" struck through by two
+    // bars, "COVID-19 pandemic" running into "Euromaidan", and a name cut in
+    // half at the right edge.
     //
-    // What the reader is holding is reserved first, before any of it is drawn:
-    // the walked path, the selection, an open actor's events and an open
-    // narrative's walk are drawn above their neighbours (the `held` layer
-    // below), and a name they lost to a bar drawn earlier would be the one name
-    // on the row the reader came for. It is the same priority `placeLabels`
-    // takes on the other two pictures, said in the order things are placed.
-    labelFits = () => true;
-    if (capped) {
-      const taken = new Map();
-      const boxOf = (at, room) => (at.anchor === 'end'
-        ? { x0: at.x - room, x1: at.x } : { x0: at.x, x1: at.x + room });
-      const claim = (row, box) => {
-        const on = taken.get(row);
-        if (!on) { taken.set(row, [box]); return true; }
-        if (on.some((other) => box.x0 < other.x1 && other.x0 < box.x1)) return false;
-        on.push(box);
-        return true;
-      };
-      // The ids whose room is already theirs, so that the bar itself is not
-      // refused by its own reservation when its turn to be drawn comes.
-      const reserved = new Set();
-      for (const event of near) {
-        const row = rowOf.get(event.id);
-        if (row === undefined) continue;
-        if (!(pathIds.has(event.id) || event.id === s.selected
-          || actorIds?.has(event.id) || narrativeIds?.has(event.id))) continue;
-        const name = labelOf(atlas, event);
-        if (name === null) continue;
-        const box = barBox(event, scale, { openEnd: domain[1] });
-        if (claim(row, boxOf(labelPlacement(box.x, box.width, labelRoom(name), width), labelRoom(name)))) {
-          reserved.add(event.id);
-        }
-      }
-      labelFits = (row, at, room, id) => (reserved.has(id) ? true : claim(row, boxOf(at, room)));
+    // A name whose box hits a **bar** or another name is not written now, and
+    // the bar is a stub that still carries its title under the pointer — which
+    // is the rule the map has followed since the base map arrived and the graph
+    // since M77, and it is the same placer and not a third copy of it
+    // (`map/labels.js`). The bars are `occupied` before the first name is
+    // placed: a bar is what the reader came to see and never loses to a label.
+    //
+    // The order is the placer's own — priority up, weight down, id — and the
+    // priority is what the reader is holding: the walked path, the selection,
+    // an open actor's events and an open narrative's walk are drawn above their
+    // neighbours, and the name they came for must not be the one that lost.
+    // No limit per priority, because on this view a name is not competing for
+    // room with a different kind of thing: what there is room for is what is
+    // written, and `RESTING_EVENT_LABELS` is the map's answer to a different
+    // question.
+    const occupied = [];
+    const wanted = [];
+    for (const event of near) {
+      const row = rowOf.get(event.id);
+      if (row === undefined) continue;
+      const bar = barBox(event, scale, { openEnd: domain[1] });
+      const top = barTop(row);
+      occupied.push({ x0: bar.x, x1: bar.x + bar.width, y0: top, y1: top + barHeight() });
+      const name = labelOf(atlas, event);
+      if (name === null) continue;
+      const room = labelRoom(name);
+      const at = labelPlacement(bar.x, bar.width, room, width);
+      const x0 = at.anchor === 'end' ? at.x - room : at.x;
+      const middle = top + barHeight() / 2;
+      wanted.push({
+        id: event.id,
+        text: name,
+        x: x0,
+        y: middle,
+        priority: (pathIds.has(event.id) || event.id === s.selected
+          || actorIds?.has(event.id) || narrativeIds?.has(event.id)) ? 0 : 1,
+        weight: event.weight ?? 0,
+        // Made here and not from the text, because where a title goes is
+        // `labelPlacement`'s answer and not the placer's: it may be written
+        // leftwards from the bar's own start.
+        box: {
+          x0,
+          x1: x0 + room,
+          y0: middle - BAR_LABEL_SIZE * 0.7,
+          y1: middle + BAR_LABEL_SIZE * 0.7,
+        },
+      });
     }
+    const named = new Set(placeLabels(wanted, {
+      view: { x0: 0, y0: 0, x1: width, y1: height },
+      limits: BAR_LABEL_LIMITS,
+      occupied,
+    }).map((label) => label.id));
+    labelFits = (row, at, room, id) => named.has(id);
     // The strip first, under everything: one path per row, on the floor of
     // the lane the events belong to, or of the first row when there are no
     // named lanes and the packing never gave them one. Not a control — no

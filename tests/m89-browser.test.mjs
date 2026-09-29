@@ -284,3 +284,74 @@ test('§2: a lens on an actor frames the camera on its marks', { skip }, async (
     }
   }, { device: PHONE });
 });
+
+// ─── 5. the resting timeline writes a name only where it fits (A5) ──────────
+
+// Every drawn bar and every drawn title, as the boxes they actually occupy on
+// the page. Read off `getBoundingClientRect`, so what is compared is what the
+// browser laid out and not what this file thinks the layout should be.
+const TIMELINE_BOXES = `
+  const svg = document.querySelector('#timeline svg.timeline');
+  if (!svg) return null;
+  const pane = svg.getBoundingClientRect();
+  const box = (el) => {
+    const r = el.getBoundingClientRect();
+    return { x0: r.left, x1: r.right, y0: r.top, y1: r.bottom };
+  };
+  return {
+    pane: { x0: pane.left, x1: pane.right, y0: pane.top, y1: pane.bottom },
+    bars: [...svg.querySelectorAll('.bar[data-id]')].map((el) => ({ id: el.getAttribute('data-id'), ...box(el) })),
+    labels: [...svg.querySelectorAll('text.bar-label')].map((el) => ({ text: el.textContent, ...box(el) })),
+    // The umbrella names over the axis are laid out by a rule of their own
+    // (M82, A6) and are held to the pane's edges by the same claim (M89 §5).
+    bands: [...svg.querySelectorAll('text.large-band-label')].map((el) => ({ text: el.textContent, ...box(el) })),
+  };`;
+
+const overlaps = (a, b) => a.x0 < b.x1 - 0.5 && b.x0 < a.x1 - 0.5
+  && a.y0 < b.y1 - 0.5 && b.y0 < a.y1 - 0.5;
+
+test('§5: no title on the resting timeline is written over a bar or another title', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url('?view=timeline'), 'return document.querySelectorAll("#timeline .bar").length > 0;');
+    await settledShards(page, await manifestOf());
+    // A title arrives with its century, so the picture this is about is the one
+    // after the names have landed.
+    await until(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;');
+    const read = await page.eval(TIMELINE_BOXES);
+    assert.ok(read, 'the timeline drew');
+    assert.ok(read.bars.length > 0, 'it drew bars');
+    assert.ok(read.labels.length > 0, 'and it wrote names');
+
+    for (let i = 0; i < read.labels.length; i += 1) {
+      for (let j = i + 1; j < read.labels.length; j += 1) {
+        assert.ok(!overlaps(read.labels[i], read.labels[j]),
+          `"${read.labels[i].text}" is written over "${read.labels[j].text}"`);
+      }
+      for (const bar of read.bars) {
+        assert.ok(!overlaps(read.labels[i], bar),
+          `"${read.labels[i].text}" is written across the bar of ${bar.id}`);
+      }
+    }
+  }, { device: DESK });
+});
+
+test('§5: and no title is cut by either edge of the pane', { skip }, async () => {
+  // Both widths: the phone is where a name is moved to the other side of its
+  // own bar, and where it used to run off the edge it was moved to (M86 §4).
+  for (const device of [DESK, PHONE]) {
+    // eslint-disable-next-line no-await-in-loop
+    await withBrowser(async (page, url) => {
+      await seenIntro(page);
+      await open(page, url('?view=timeline'), 'return document.querySelectorAll("#timeline .bar").length > 0;');
+      await settledShards(page, await manifestOf());
+      await until(page, 'return document.querySelectorAll("#timeline text.bar-label").length > 0;');
+      const read = await page.eval(TIMELINE_BOXES);
+      assert.ok(read && read.labels.length > 0, `${device.width}: names were written`);
+      for (const label of [...read.labels, ...read.bands]) {
+        assert.ok(label.x0 >= read.pane.x0 - 0.5 && label.x1 <= read.pane.x1 + 0.5,
+          `${device.width}: "${label.text}" runs off the pane (${Math.round(label.x0 - read.pane.x0)} to ${Math.round(label.x1 - read.pane.x0)} of ${Math.round(read.pane.x1 - read.pane.x0)})`);
+      }
+    }, { device });
+  }
+});
