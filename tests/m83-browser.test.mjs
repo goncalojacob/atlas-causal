@@ -77,20 +77,26 @@ test('A1-3: with the war opened, the lens\'s links are in ink and the ring\'s ar
   }, { device: DESK });
 });
 
-test('A1-4: the key is one button on a desktop, and opens behind it', { skip }, async () => {
+// **And on a desktop it opens at rest** (M89 §11, A11). What A1-4 is about is
+// that there is one button on every width and that the box folds away behind
+// it; which way it starts is the other finding's, and the third review found a
+// reader meeting the map's key open and the graph's and the timeline's closed.
+// So the button, the fold and the share are asserted here as they were — in the
+// other order, because the box begins open.
+test('A1-4: the key is one button on a desktop, open at rest and foldable behind it', { skip }, async () => {
   await withBrowser(async (page, url) => {
     await watchErrors(page);
     await seenIntro(page);
     await open(page, url(WAR), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
-    const folded = await page.eval(KEY);
-    assert.ok(folded, 'the graph has a key');
-    assert.equal(folded.button, true, 'there is one button');
-    assert.equal(folded.body, false, 'and the key is behind it');
-    const opened = await (async () => { await page.eval(press); return page.eval(KEY); })();
-    assert.equal(opened.body, true, 'pressing it opens the key');
+    const opened = await page.eval(KEY);
+    assert.ok(opened, 'the graph has a key');
+    assert.equal(opened.button, true, 'there is one button');
+    assert.equal(opened.body, true, 'and the key is open at rest');
+    const folded = await (async () => { await page.eval(press); return page.eval(KEY); })();
+    assert.equal(folded.body, false, 'pressing it folds the key away');
     assert.ok(opened.share > folded.share,
-      'the open key covers more of the picture than the folded one, which is why it folds');
+      'the open key covers more of the picture than the folded one, which is why it folds at all');
     assert.deepEqual(await errorsOn(page), [], 'the console is clean');
   }, { device: DESK });
 });

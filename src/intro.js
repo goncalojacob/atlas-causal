@@ -33,9 +33,11 @@
 // on screen for it to be about.
 
 import { esc } from './util/esc.js';
-import { formatInterval } from './util/dates.js';
+import { formatInterval, extent } from './util/dates.js';
 import { hasOpening } from './state.js';
 import { bylineOf } from './demo.js';
+import { LOADING_LABEL, labelOf } from './attributes.js';
+import { createShardWatch } from './shard-watch.js';
 
 // Per reader, per browser, like the open section and the pane sizes: it says
 // nothing about what the atlas is showing, so it stays out of the URL.
@@ -80,15 +82,82 @@ export function opensOnNothing(state) {
     && state.from === null && state.to === null && !state.bbox;
 }
 
-// The events this dataset hangs on, by the weight the index already computes.
-// Ties broken by the year and then the id, so the card is the same card twice
-// running.
+// The events this dataset hangs on.
+//
+// **Not by degree alone** (M89 §4; `docs/review-2026-09-26.md`, A4). `weight` is
+// an event's own number of links, and degree is where the fire happened to write
+// most: the six it chose were World War II, World War I, 25 April, the Kosovo
+// War, Portugal joining the EEC and Operation Odyssey Dawn — nothing before
+// 1914, two of the six Portuguese, and two of them air campaigns of 1999 and
+// 2011 — on a corpus of 1,257 events over five regions. A funder met that list
+// as the atlas's own account of what it is about.
+//
+// So the score is `subtreeWeight + weight`: how much of the atlas is inside an
+// event and how connected the event itself is, which are the two ways something
+// can be load-bearing here. `subtreeWeight` is the sum of `weight` over the
+// event and everything inside it (`validate/core.js`, `subtreeWeights`) and is
+// omitted where it equals `weight`, which is every leaf (M30a, A11) — so a leaf
+// scores twice its degree and an umbrella scores its subtree plus its own.
+//
+// And then two spreading rules, because a score alone gives the six to whichever
+// region and whichever century the fire reached into last: **at most one per
+// lane, and no century twice**. Both are display rules over records — a lane is
+// the event's own `region` and a century its own start year — and neither claims
+// anything: what is dropped by a rule is still in the atlas, one click away.
+//
+// The rules are a preference and not a gate, and they are given up in order.
+// There are five lanes and six places on the card, so the lane rule cannot hold
+// for all six even on a full corpus and is the first to go; the century rule
+// holds while there are six centuries to have, which is what keeps 1914 to 2011
+// from being the whole of the front page. A corpus of one century — the
+// fixtures — fills the rest by score alone.
+//
+// Ties broken by the id, so the card is the same card twice running.
+export function score(event) {
+  const own = event.weight ?? 0;
+  return (event.subtreeWeight ?? own) + own;
+}
+
+// The century an event starts in, as an integer, from its own dates. `extent`
+// is the one place years are compared (util/dates.js), and a null start — "as
+// far back as the data goes" — is a century of its own and not century zero.
+export function centuryOf(event) {
+  const year = extent(event.when ?? {}).min;
+  return Number.isFinite(year) ? Math.floor(year / 100) : null;
+}
+
 export function heaviest(atlas, limit = HEAVIEST) {
-  return [...atlas.activeEvents]
-    .filter((e) => (e.weight ?? 0) > 0)
-    .sort((a, b) => (b.weight ?? 0) - (a.weight ?? 0)
-      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
-    .slice(0, limit);
+  const ranked = [...atlas.activeEvents]
+    .filter((e) => score(e) > 0)
+    .sort((a, b) => score(b) - score(a)
+      || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  const picked = [];
+  const taken = new Set();
+  const lanes = new Set();
+  const centuries = new Set();
+  const take = (event) => {
+    picked.push(event);
+    taken.add(event.id);
+    lanes.add(event.region ?? null);
+    centuries.add(centuryOf(event));
+  };
+  // Three passes over the same order, giving up one rule at a time. So the six
+  // are always the six best that obey as much of the spread as the corpus
+  // allows, and always six where there are six to have.
+  const rules = [
+    (event) => !lanes.has(event.region ?? null) && !centuries.has(centuryOf(event)),
+    (event) => !centuries.has(centuryOf(event)),
+    () => true,
+  ];
+  for (const allowed of rules) {
+    for (const event of ranked) {
+      if (picked.length >= limit) break;
+      if (taken.has(event.id) || !allowed(event)) continue;
+      take(event);
+    }
+    if (picked.length >= limit) break;
+  }
+  return picked;
 }
 
 // What the atlas is, in one sentence, in the reader's own words (M82, A3).
@@ -141,10 +210,23 @@ export function linksSentence(counted) {
 
 // The card, as a string, so `node --test` can hold it to quoting and to
 // claiming nothing.
+//
+// **And it never prints an id where a title goes** (M89 §1, A1). The core's
+// fallback for a missing title is the record's own id (spine.js), which is right
+// for a sort and wrong for anything a reader reads: the front page of the atlas
+// greeted a funder with `how-the-colonial-war-ended-the-regime` and "0 steps"
+// on three loads in eight. So every name here comes through `labelOf` — the
+// title once its century has landed, and nothing before that — and what is
+// printed until then is the sentence the chips and the marks already use. The
+// counts that are attributes go with it: a walk whose steps have not arrived
+// does not have none of them.
 export function introHtml(atlas) {
   const narratives = atlas.activeNarratives ?? [];
   const first = narratives[0] ?? null;
   const events = heaviest(atlas);
+  // The title, or the interface saying it is still loading. Never the slug.
+  const nameOf = (record) => labelOf(atlas, record) ?? LOADING_LABEL;
+  const named = (record) => labelOf(atlas, record) !== null;
   const counted = explainedLinks(atlas);
   const links = counted?.total ?? [...atlas.edges.values()].filter((e) => e.status === 'active').length;
 
@@ -158,8 +240,8 @@ export function introHtml(atlas) {
 
     ${first ? `<section class="intro-start">
       <h3>Start here</h3>
-      <p><button type="button" class="intro-go" data-intro="narrative" data-id="${esc(first.id)}">${esc(first.title)}</button>
-        <span class="muted">${esc(bylineOf(first))} · ${esc((first.steps ?? []).length)} steps</span></p>
+      <p><button type="button" class="intro-go" data-intro="narrative" data-id="${esc(first.id)}">${esc(nameOf(first))}</button>
+        ${named(first) ? `<span class="muted">${esc(bylineOf(first))} · ${esc((first.steps ?? []).length)} steps</span>` : ''}</p>
       <p class="hint">A short account that takes you through the events in order, one at a time. The
         map, the graph and the timeline follow it as you read; it changes nothing it goes through.</p>
     </section>` : ''}
@@ -167,8 +249,8 @@ export function introHtml(atlas) {
     ${narratives.length > 1 ? `<section class="intro-narratives">
       <h3>Accounts to read <span class="count">${esc(narratives.length)}</span></h3>
       <ul>${narratives.map((n) => `<li>
-        <button type="button" class="link" data-intro="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
-        <span class="muted">${esc(bylineOf(n))}</span>
+        <button type="button" class="link" data-intro="narrative" data-id="${esc(n.id)}">${esc(nameOf(n))}</button>
+        ${named(n) ? `<span class="muted">${esc(bylineOf(n))}</span>` : ''}
       </li>`).join('')}</ul>
     </section>` : ''}
 
@@ -177,7 +259,7 @@ export function introHtml(atlas) {
       <p class="hint">The events with the most of the atlas downstream of them. Opening one is as good a
         place to start as any.</p>
       <ul>${events.map((e) => `<li>
-        <button type="button" class="link" data-intro="event" data-id="${esc(e.id)}">${esc(e.title)}</button>
+        <button type="button" class="link" data-intro="event" data-id="${esc(e.id)}">${esc(nameOf(e))}</button>
         <span class="when">${esc(formatInterval(e.when))}</span>
       </li>`).join('')}</ul>
     </section>` : ''}
@@ -230,14 +312,27 @@ export function createIntro(container, {
   // Only while it is on screen: a card nobody is looking at is rebuilt the
   // next time it is opened, and rewriting the markup under a reader's pointer
   // costs a click.
-  function refresh() {
+  //
+  // **And off the shard count rather than off the callback** (M89 §1, A1). One
+  // missed frame used to leave the card on its slugs for as long as it stayed
+  // open; the watch compares the count it last drew at to the atlas's own and
+  // draws when it has moved, whoever nudged it — `main.js`, the reader changing
+  // anything at all, or the tab coming back after a landing that had no frame
+  // to be drawn in (shard-watch.js). A nudge for a landing already drawn is a
+  // no-op, so the card is never rewritten under a reader's pointer for nothing.
+  const watch = createShardWatch(atlas, () => {
     if (shown && !container.hidden) draw();
+  }, { state, doc: container.ownerDocument });
+
+  function refresh() {
+    watch.check();
   }
 
   function show() {
     // Always drawn afresh: the titles it quotes may have landed since it was
     // last built, and the "?" is often pressed long after the load.
     draw();
+    watch.drawn();
     shown = true;
     container.hidden = false;
     toggle?.setAttribute('aria-expanded', 'true');
