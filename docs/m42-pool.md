@@ -14673,14 +14673,15 @@ in its 1600 snapshot and the item ends the empire by 1572. A15(1), (5), (9),
   and no fire owes it again** — every one of the thirteen has its section in
   this file, so the next import fire goes straight to A10's order of need, which
   is Africa.
-- **The check on this fire's final head is run 1969 of `validate.yml`, commit
-  `c7f82ef2`**, and the head before it, run 1966 on `92398612`, passed
-  `Validate records` before this push replaced it. Run **1945**, on the A15(1)
-  commit, concluded `success`. Every other run of this fire — 1943, 1944, 1951,
-  1953, 1954, 1960, 1962, 1964, 1965, 1966 and 1968 — was **cancelled by the
-  next push**, which is deviation 1258's chain and costs nothing. **No run of
-  this fire has failed**, and the suites it cancelled are the 2,181 tests above,
-  run to the end locally on the same tree.
+- **The check is green on this fire's final head.** Run **1971** of
+  `validate.yml`, commit `07d13c17`, conclusion **`success`**: `Validate records`
+  passed, the `Tests` step passed in eleven minutes, and the index step was
+  skipped because this is not a pull request. Every earlier run of this fire —
+  1943, 1944, 1951, 1953, 1954, 1960, 1962, 1964, 1965, 1966, 1968, 1969 and
+  1970 — was **cancelled by the next push**, which is deviation 1258's chain and
+  costs nothing; run **1945**, on the A15(1) commit, also concluded `success`.
+  **No run of this fire failed at any point**, and the suites the cancellations
+  cut short are the 2,181 tests above, run to the end locally on the same tree.
 - **Deviation numbers: take the next above 1463.** This fire wrote **1462** (the
   two-thirds rule that A15(7)'s literal "first located" made necessary) and
   **1463** (`fillTitles` pointed at Wikidata's API rather than Wikipedia's).
