@@ -17,16 +17,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "flags": [
       "imported-facts",
       "m42-reinstated",
       "summary-from-lead",
-      "a14-lane-guard"
+      "a15-lane-from-point"
     ],
     "status": "draft",
-    "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it."
+    "note": "A14(2): the place was monastir-vilayet, which the lane guard puts in Europe against this record's own Asia. Monastir is the right place and the Asia lane is what the Ottoman point gave it, so here the lane is the wrong half; the place is cleared as the guard says and deviation 1409 asks the owner about it. A15(7): the lane was asia and is europe, from the points the item names; monastir-vilayet, which A14(2) cleared because it disagreed with that wrong lane, is the place again."
   },
   "origin": {
     "tool": "wikidata"
@@ -57,7 +57,8 @@
     "end": 1903,
     "endDate": "1903-10"
   },
-  "place": null,
-  "region": "asia",
+  "place": "monastir-vilayet",
+  "region": "europe",
+  "regionNote": "Lane corrected by A15(7) from the item’s own located points: two of the three vilayets it names, Monastir and Salonica, fall in the europe lane, and the third (Adrianople) falls in asia only because the lane polygons cut Turkey at its own coast. The import had asia from the Ottoman point.",
   "actors": []
 }

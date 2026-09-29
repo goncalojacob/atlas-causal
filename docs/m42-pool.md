@@ -14071,3 +14071,76 @@ component 711, 562 edges crossing an umbrella**. Validator **0 errors, 598
 warnings** (+8, every one `place-unused` on a country no event stands at now).
 One new pure suite, `tests/a15-country.test.mjs`, 5 tests; `haversineKm` joins
 `src/util/geo.js`, which had no need of an earth until this threshold.
+
+## A15 (7) — the lane from the point, and the two-thirds rule the six made necessary
+
+*29 September, the 05:07Z fire. Three requests: the six events' own items, the
+21 items their `P276`, `P131` and `P17` name, and one for Tokyo Bay's own
+record.*
+
+A14(2) ran the lane guard over the 566 places A9 had written and cleared six,
+keeping each record's lane. Deviation 1409 said at the time that two of the six
+failed on the lane *polygon* and not on the place, and that in the Ilinden case
+the record's **own** lane was the wrong half: `asia`, from the Ottoman point the
+import read, for an uprising in Macedonia. A15(7) is the answer: derive the lane
+from the point and correct an import-written `region` that disagrees.
+
+**What the six actually carry.**
+
+| record | its lane | the points its item names | the lane they give |
+| --- | --- | --- | --- |
+| `ilinden-preobrazhenie-uprising` | asia | Monastir vilayet (europe), Salonica vilayet (europe), Adrianople vilayet (asia) | **europe**, 2 of 3 |
+| `japanese-instrument-of-surrender` | asia | **its own `P625`** (Tokyo, asia), USS Missouri (americas), Tokyo Bay (asia) | **asia**, its own point |
+| `1948-arab-israeli-war` | asia | Sinai (africa), Southern Lebanon (asia), Palestine (asia) | **asia**, 2 of 3 |
+| `yom-kippur-war` | africa | Golan (asia), Near East (asia), Middle East (asia), Suez Canal (africa), Sinai (africa) | **no majority**, 3 of 5 |
+| `great-depression` | americas | none: no `P625`, no `P276`, and all nine `P17` refused by A15(6) | **nothing** |
+| `execution-of-the-romanov-family` | asia | Ipatiev House (europe) | europe — **and it waits** |
+
+**Deviation 1462.** *A15(7) says "its first located `P276`/`P131`", and the
+first is statement order on somebody else's item.* Taken literally the rule
+moves `1948-arab-israeli-war` to **africa**, because the first location its item
+names is the Sinai Peninsula — which is one front and not the war, and is the
+exact reading A14(2) made when it cleared `sinai-peninsula` from that record in
+the first place. A rule that undoes A14(2) by accident is not what A15(7)
+intends. So the lane is taken from **the item's own `P625`** where it has one,
+and otherwise from **the lane at least two thirds of its located points agree
+on**; below two thirds nothing is corrected. That gets Ilinden right (2 of 3),
+leaves the 1948 war where it is (2 of 3, and asia already), and refuses the Yom
+Kippur War (3 of 5), which had a front on each side of the Suez Canal and whose
+lane a point cannot settle.
+
+**The one correction, and the two places.** `ilinden-preobrazhenie-uprising`
+goes from **asia to europe**, and `monastir-vilayet` — the place A14(2) cleared
+only because it disagreed with the wrong lane — is its place again.
+`japanese-instrument-of-surrender` keeps its lane and gains **`tokyo-bay`**,
+which is where the Instrument was signed; A14(2) was right to clear
+`uss-missouri`, whose `P625` is the ship's berth in Pearl Harbor. The new place
+record carries `summary: null`, which is A15(3) in force on the first place
+written after it.
+
+**The three refusals carry their reason on the record**, because a pass that
+leaves a record alone and says nothing is indistinguishable from a pass that
+did not run. `yom-kippur-war`: no majority, the war had two fronts.
+`great-depression`: nothing on the item is located at all, so no point can
+correct anything — which is also why A14(2) found it drawn in Kabul.
+`1948-arab-israeli-war`: lane confirmed, and **no place written**, because the
+first candidate its lane admits is Southern Lebanon.
+
+**`execution-of-the-romanov-family` waits, as A15(7) says it must.** The Ipatiev
+House is exactly where the Romanovs were shot and it derives to `europe`,
+against the record's `asia`. That is deviation **1423** — *should the `europe`
+lane hold Russian Asia?* — and it is the owner's to settle. Every other Russian
+event east of the Urals is drawn in `europe` today; correcting this one alone
+would make it the only record in the atlas contradicting four others at the same
+longitude.
+
+**Counts.** 1 lane corrected, 1 lane confirmed from the item's own point, 2
+places restored or written (`monastir-vilayet` reused, `tokyo-bay` written), 3
+refused with the reason on the record, 1 held for the owner. Five of the six
+take the flag `a15-lane-from-point` in place of `a14-lane-guard`. **Per lane the
+one correction shows: Europe 553 (+1), Asia 182 (−1), Africa 182, Americas
+343** — so **Africa and Asia are now level at 182**, and A10's order of need is
+a tie the next batch breaks. Corpus: **1,260 active, 235 main, 1,025 filed,
+1,048 active edges, largest component 711, 562 edges crossing an umbrella**, 732
+place records (+1). Validator **0 errors, 597 warnings** (−1: `place-unused` on
+`monastir-vilayet`, which an event cites again).

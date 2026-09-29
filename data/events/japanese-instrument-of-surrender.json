@@ -17,15 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-24",
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "a14-lane-guard"
+      "a15-lane-from-point"
     ],
-    "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept."
+    "note": "A14(2): the place was uss-missouri, whose point is the ship where it is berthed now and falls in the Americas lane against this record's own Asia. The signing was in Tokyo Bay; the place is cleared and the lane kept. A15(7): the lane is asia and the item's own point confirms it; the place is tokyo-bay, where the Instrument was signed. A14(2) cleared uss-missouri, whose point is the ship's berth in Pearl Harbor and in the americas lane, and was right to."
   },
   "origin": {
     "tool": "wikidata"
@@ -56,7 +56,7 @@
     "end": 1945,
     "date": "1945-09-02"
   },
-  "place": null,
+  "place": "tokyo-bay",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "parent": "world-war-ii",
