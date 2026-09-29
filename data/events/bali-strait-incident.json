@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bali-strait-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20011866",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Bali Strait incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20011866"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    }
+  ],
+  "title": "Bali Strait incident",
+  "summary": "The English Wikipedia article \"Bali Strait incident\", at revision 1376479036, opens: \"The Bali Strait incident was an encounter between a squadron of six French Navy frigates and six East Indiamen of the British East India Company (EIC) in the Bali Strait on 28 January 1797. The incident took place amidst the East Indies campaign of the French Revolutionary Wars — repeated French attempts to disrupt the highly valuable British trade routes with British India and Qing Dynasty China.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20011866, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 sea battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-01-28"
+  },
+  "place": "bali-strait",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
