@@ -1910,6 +1910,12 @@
     },
     {
       "dissent": false,
+      "id": "1966-nigerian-coup-d-etat",
+      "kind": "event",
+      "locator": "Q16205928"
+    },
+    {
+      "dissent": false,
       "id": "1969-portuguese-legislative-election",
       "kind": "event",
       "locator": "Q7232769"
@@ -6836,6 +6842,12 @@
     },
     {
       "dissent": false,
+      "id": "nigerian-civil-war",
+      "kind": "event",
+      "locator": "Q829875"
+    },
+    {
+      "dissent": false,
       "id": "north-channel-naval-duel",
       "kind": "event",
       "locator": "Q4090286"
@@ -7793,6 +7805,12 @@
       "id": "september-massacres",
       "kind": "event",
       "locator": "Q862586"
+    },
+    {
+      "dissent": false,
+      "id": "setif-and-guelma-massacre",
+      "kind": "event",
+      "locator": "Q593024"
     },
     {
       "dissent": false,

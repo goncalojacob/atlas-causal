@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kherrata",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2215859",
+  "wikipedia": {
+    "en": "Kherrata",
+    "pt": "Kherrata"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Kherrata"
+  ],
+  "where": {
+    "lon": 5.277222222222222,
+    "lat": 36.493611111111115,
+    "precision": "city",
+    "label": "Kherrata"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -4397,6 +4397,15 @@
         }
       ]
     },
+    "kherrata": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "khmer-republic": {
       "from": "git",
       "versions": [
@@ -6281,6 +6290,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nigeria-q1033": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nigeria-q1033",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1033",
+  "wikipedia": {
+    "en": "Nigeria",
+    "pt": "Nigéria"
+  },
+  "sitelinks": {
+    "count": 286,
+    "on": "2026-09-29"
+  },
+  "sources": [],
+  "names": [
+    "Nigeria"
+  ],
+  "where": {
+    "lon": 8,
+    "lat": 9,
+    "precision": "country",
+    "label": "Nigeria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

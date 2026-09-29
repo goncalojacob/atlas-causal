@@ -355,6 +355,15 @@
         }
       ]
     },
+    "1966-nigerian-coup-d-etat--nigerian-civil-war--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1969-portuguese-legislative-election--1973-portuguese-legislative-election--reacted-to": {
       "from": "git",
       "versions": [
@@ -5327,6 +5336,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "setif-and-guelma-massacre--algerian-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
