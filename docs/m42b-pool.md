@@ -11331,3 +11331,32 @@ and the largest component moved from 715 to 723.
 6. **Still open, unchanged**: C8, deviation 1323, deviation 1345 (the M76 drag
    test), question 11 (the Nine Years' War, `Q152218`), `Q718893` *theater of
    war*, `Q20639061` and now `Q5037062` and `Q4677270` (no `P31` at all).
+
+### The check, and the tests, on this fire's head
+
+**Green, both runs.** Run 1991 on `fe1ab9f9` (the records, the index and the
+history shards) and **run 1994 on this fire's final head `571624ac`** both
+completed `success` — `Validate records`, the pure half and the browser half.
+
+**Deviation 1345's test passed on the runner this time.**
+`tests/m76-browser.test.mjs` 93, which failed identically on both of the
+previous fire's completed runs at 1,296 and 1,302 active events, is green at
+1,310. That does not clear the deviation: the report stands, the proposed
+patch stands, and a test whose precondition is *"the element exists"* rather
+than *"the element is ready"* is a test that passes or fails on how the runner
+happens to be loaded. It has now done both within four hours of each other,
+on heads three commits apart, with no change to any file the atlas page loads.
+**An intermittent pass is not a fix**; it is the same fault seen from the
+other side, and the next fire should not read this line as the deviation
+being closed.
+
+**Locally on the final head: 1,912 pure and 313 browser, 2,225 tests, 2,225
+passing, nothing skipped.** The pure half failed four tests on its first run
+and all four were rule 16 — `data/index/` not byte-identical to a fresh build
+— because **the history shards are read off the repository's own commits and
+so change when the records commit lands**. Rebuilt after that commit and
+committed on their own, which is the second index commit in the log and the
+shape deviation 798 already asks for; the re-run is 1,912 of 1,912.
+
+`node tools/validate.mjs --index` is clean at **0 errors, 619 warnings**,
+byte-identical to a fresh build.
