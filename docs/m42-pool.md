@@ -15447,3 +15447,112 @@ and once after the third. All three leads are on disk at the revisions they cite
 (1356232011, 1369318651, 1376811260), the title table has all three articles, and
 `tests/a15-cache.test.mjs` passes. 2,592 `wikipedia-en` citations on active
 records, 2,519 on disk, 73 unholdable for the reason A14(3) settles, **0 missing**.
+
+## Where the run stands after batch 67, for the fire that picks it up
+
+*29 September, the fire that claimed at 15:26Z. **An import fire**: today's
+`## Curation 2026-09-29` section was already in this file and all thirteen of
+A15's passes have theirs, so nothing was owed before the batch and A10's order of
+need decided the lane. **Three records, three edges, one new place, one deviation
+fixed, one screen run for the next fire.** The branch's head was green when this
+fire took it and it merged nothing: `origin/m0` was already an ancestor.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The next batch is Africa's, and the screen for it is already in this file.**
+  Asia is 186 against Africa's 184. The batch 67 section carries the same screen
+  batch 66 ran for Asia, run here for Africa: 98 `P361` rows at 12+ sitelinks
+  over the 177 Africa events that carry a qid, **25 of them unheld**, grouped by
+  umbrella with the held-children count beside each. **Start at `arab-spring` (7
+  candidates, 5 held children) or `scramble-for-africa` (5, 14)**: those are the
+  only two Africa umbrellas with both several candidates and several siblings,
+  and that shape is what has yielded in three batches running. No article behind
+  them has been opened, so what they cost is the next fire's measurement and not
+  a promise.
+- **The vein this fire worked is spent and the arithmetic is worth keeping.**
+  `lebanese-civil-war` had five unheld children at the threshold; three are here
+  and the two left are refused for reasons in the section above, neither of them
+  a matcher fault. **Three of five is the best rate any batch has had since the
+  partition**, against batch 66's one of twenty, and the reason is visible: the
+  five were a family of events that answer each other, and their articles say so
+  in their own leads.
+- **C8 is still the run's largest question and this batch did not touch it.** The
+  196 Asia candidates batch 66 measured are unchanged, October 7 is still blocked
+  by C8 and by nothing else, and nothing here is evidence either way: all three
+  edges are sibling edges or cross out of the lane, which is exactly the shape
+  C8 permits.
+- **Deviation 1467 changes what every future curation fire will count.** The
+  matcher no longer reads a name out of the middle of a hyphenated compound, so
+  A13's relations pass will *write* edges it has been refusing since A13 — not
+  only count differently. Three families of held records are affected on sight:
+  anything `Iran-Iraq`, `Anglo-`, `Franco-`, `Russo-`, `Sino-` or `Israeli-` in
+  front of a name the atlas also holds on its own. **The next curation fire is
+  the first that can say how many**, and it should say so.
+- **Two `review.html` lines are still worth twelve records.** `chinese-civil-war`
+  and `turkish-war-of-independence` both carry a `review.note` saying their
+  interval is too narrow, and between them `filedUnder()` refuses twelve Asia
+  candidates including the Long March and the Greco-Turkish War. A7 cannot reach
+  either; batch 66 checked all four leads and titles. Unchanged.
+- **`nigerian-civil-war` is still a two-node island**, and the São Tomé airlift
+  is still the edge that would join it, wanting a source the atlas can open.
+  Unchanged since batch 65.
+- **The two display faults of deviation 1461 are still open** and the two records
+  are still held back. **This batch is a third piece of evidence about fault 2**:
+  it wrote a new city place, `damour`, and all 313 browser tests pass. Batch 65
+  wrote `kherrata` and said the same. So the fault is not "any new city label"
+  twice over, and the bisect in the 29 September curation section is still where
+  a lane A fire should start. Fault 1 is untouched: no bar was added to the
+  `americas` lane.
+- **A15(12)'s 177 uncategorised events and A15(6)'s 32 cleared places are
+  unchanged.** All three records of this batch carry no category, because class
+  `Q3199915` (massacre) and `Q891854` (bomb attack) have rows in the seeds table
+  and neither row names one. **That is a cheap owner's edit with a visible
+  return**: two classes, and every massacre and bombing this branch has imported
+  gets a glyph.
+- **`Q217327` is still a class the table has no row for**, and it is now the
+  second batch running to say so — the 1983 US embassy bombing carries it beside
+  `Q891854`, which is why that one could have been imported and four of batch 66's
+  candidates could not.
+- **The EEC's closing year and `operation-sutton`'s missing day** are unchanged
+  and both are one line for the owner.
+- **`docs/m53-polities.md` §4.1 needed no retake**: `tests/m53.test.mjs` passes
+  on this tree. The four variants of that paragraph a person should cut to one
+  are still four.
+- **The network was in good repair and cheap.** Twenty-one requests in all — six
+  `Special:EntityData` reads, three SPARQL queries (one of them the Africa screen,
+  a `VALUES` block of 60 qids at a time over 177), nine article reads through
+  `rest.php/v1/page`, and the two `cache-evidence` title calls — one in flight
+  every 400 to 500 ms and **no 429 at any point**. Deviation 1466 holds:
+  `rest.php/v1/page` answered every time and the action API was not tried.
+- **One thing this fire learned about the tool and no batch note records.** A
+  fire whose import cursor is caught up — `pending` empty, `done` holding every
+  item — can **name its own batch by appending to `data/imports/wikidata-seeds.json`
+  → `items` and running `--import --batch <n>`**, because `nextBatch()` computes
+  `pending` as `wanted.filter(not done)`. That is the whole pipeline (classify,
+  A9's chain, A15(4), the filing, the lead, the record on disk in key order) for
+  free, where batches 65 and 66 called the exported passes one at a time from a
+  script each fire wrote again. **Prefer it.** It is also what made this fire's
+  three records cost six entity reads between them.
+- **Deviation numbers: take the next above 1467.** This fire wrote **1467**, the
+  hyphenated compound.
+- **The next curation fire is the first fire after 02:00Z on 30 September**, and
+  it owns A11(a) over every active event and A13's relations pass — the first one
+  with the matcher whole. **A15 is done and no fire owes it again.** The next
+  import fire goes straight to A10's order of need, which is now **Africa**, and
+  to the screen above.
+
+**The check is green on the head this stand was written against.** Run **2018**
+of `validate.yml`, commit `18224320`, conclusion **`success`**. Runs 2010, 2012,
+2014, 2015, 2016 and 2017 were cancelled by the next push, which is deviation
+1258's chain and costs nothing; run **2018** is the first of this fire to be
+left alone long enough to conclude, and it carries every record, every edge, the
+code fix and the rebuilt index. **This paragraph's own commit triggers the next
+run, and the fire that picks this up should read that one** — which is the note
+batch 66 left and the reason this stand names a commit rather than "the final
+head".
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63,
+and no suite needed a second run. One test was added, the deviation-1467 case in
+`tests/a15-chronology.test.mjs`, written before the fix and failing before it
+(711).
