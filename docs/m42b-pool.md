@@ -10188,3 +10188,16 @@ no held umbrella contains that span, so A6 cannot file it out of the resting
 picture; and the atlas is right to hold Pamplona. **They belong to whoever holds
 the display lane, and to M42, whose own check is red for them.** Said here in
 full so that neither lane has to bisect it again.
+
+**And the first of the two is already briefed as somebody's work.** `docs/m89-brief.md`
+§5, *"The resting timeline writes a name only where it fits (A5)"*, is
+`src/timeline.js` gaining a placer like the map's and asks in as many words for
+the test that is failing here: *"no two drawn label boxes intersect and no label
+box crosses another row's bar; **the last label is not cut at the right edge**."*
+M89 is lane A's and has not run yet. So this is not an orphan fault, it is a
+briefed one that a records lane's own growth has brought forward — which is the
+useful thing to know about it, and the reason a records fire touching
+`src/timeline.js` would be working inside another milestone's section. The map
+one, `src/map/labels.js`, is **not** in either brief: M89 §6 puts the "N more"
+badges through that placer and assumes the names it already places do not
+collide. Pamplona and PYRENEES say they can.

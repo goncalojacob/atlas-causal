@@ -22255,8 +22255,11 @@ city label now collides with the physical one, which `src/map/labels.js` is
 supposed to prevent. **Both are display and this brief's first prohibition is a
 display change**, and there is no data-side fix that is not a lie: nothing
 contains a span of 1500–1997, and the atlas is right to hold Pamplona. They are
-lane A's and M42's, whose own check is red for the same pair.
-`docs/m42b-pool.md` → "Batch 37" is the full account.
+lane A's and M42's, whose own check is red for the same pair — and the first is
+already briefed: **`docs/m89-brief.md` §5 asks for exactly the assertion that is
+failing**, *"the last label is not cut at the right edge"*, so a records fire
+fixing it would be working inside an unrun milestone's section. The map one is in
+neither brief. `docs/m42b-pool.md` → "Batch 37" is the full account.
 
 ## M87 — what breaks at 3,000 events
 
