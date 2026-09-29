@@ -35,7 +35,7 @@ import { glyphClasses, glyphUse } from '../glyphs.js';
 // labels.js, com o colocador: há um tamanho para as etiquetas todas do mapa e
 // não há um segundo, e as etiquetas do desdobramento aqui em baixo são as
 // mesmas letras que as outras.
-import { LABEL_HALO, LABEL_SIZE, PRIORITY, shorten } from '../labels.js';
+import { EM, LABEL_HALO, LABEL_SIZE, PRIORITY, shorten } from '../labels.js';
 // O zoom a que este mapa começa a escrever nomes está lá também: era daqui,
 // era `LABEL_ZOOM = 4`, e agora vale para as etiquetas todas e não só para
 // estas — quem o aplica é a ronda, uma vez, antes de perguntar seja a quem
@@ -239,6 +239,12 @@ export function createEventsLayer(group, projection, {
   // is kept here is the list the round is asked for and the zoom it was drawn
   // at, and nothing about where a name would go.
   let labelling = { clusters: [], k: 1 };
+  // Where the badges are written, once the label round has said which of them
+  // survive the names (M89 §6). Its own group inside this layer's, made afresh
+  // on every render because `render` empties the layer: a badge is a control —
+  // a click on it opens the stack it counts — and a label never is, so it
+  // cannot live in the round's own group.
+  let badgeGroup = null;
 
   // window: { from, to } astronomical, or null for "everything". k: current
   // zoom factor. view: the rectangle of projected space on screen, for
@@ -253,8 +259,28 @@ export function createEventsLayer(group, projection, {
     // The anchor is to the right of the hit circle, which is where the layer
     // has always put a label: knowing how wide a mark is is this layer's
     // business and not the placer's.
+    // **And a floor of one per lane** (M89 §6, A6). Weight alone gave the ten
+    // resting names to six events in Europe and the Near East; South America,
+    // with 343 active events, showed "10 more", "4 more", "2 more" and not one
+    // name, and West Africa rings and "2 more". The heaviest cluster of each
+    // lane is offered first — `first` in the placer's order — and the rest by
+    // weight as before. Which lane a cluster is in is the record's own `region`
+    // and is read here, because the placer knows nothing about lanes and the
+    // layer is what holds the events.
     labelCandidates() {
       const candidates = [];
+      const champion = new Map();
+      for (const cluster of labelling.clusters) {
+        const lane = cluster.representative.event.region ?? null;
+        if (lane === null) continue;
+        const best = champion.get(lane);
+        const weight = cluster.weight ?? 0;
+        if (!best || weight > best.weight
+          || (weight === best.weight && cluster.key < best.key)) {
+          champion.set(lane, { key: cluster.key, weight });
+        }
+      }
+      const first = new Set([...champion.values()].map((one) => one.key));
       for (const cluster of labelling.clusters) {
         const name = nameOf(cluster.representative.event);
         // A name that has not arrived is not labelled: "still loading" is a
@@ -267,9 +293,70 @@ export function createEventsLayer(group, projection, {
           y: cluster.y,
           priority: PRIORITY.events,
           weight: cluster.weight ?? 0,
+          first: first.has(cluster.key),
         });
       }
       return candidates;
+    },
+
+    // **And the badges, through the same round** (M89 §6, A6). Over Europe and
+    // the Near East, inside two hundred pixels, "2 more", "11 more", "10 more",
+    // "6 more", "7 more", "2 more" and "4 more" overlapped each other and the
+    // names "World War I", "First Balkan War" and "Lebanese Civil War": the
+    // badges were drawn with the marks, before any name existed, and nothing
+    // ever asked whether two of them were in the same place.
+    //
+    // They are candidates now, placed after the names and against them: a name
+    // is what the map says and a badge is a count of what it could not say, so
+    // a badge that hits a name is the one that goes. What it loses is nothing a
+    // reader needs — the double ring already says "more than one here"
+    // (cluster.js) — and the stack's own title still carries the count under
+    // the pointer.
+    badgeCandidates() {
+      const candidates = [];
+      for (const cluster of labelling.clusters) {
+        if (cluster.count === 1) continue;
+        const text = stackBadge(cluster.count);
+        if (!text) continue;
+        const x = cluster.x + (MARK_RADIUS + 2) / labelling.k;
+        const y = cluster.y - (MARK_RADIUS + 1) / labelling.k;
+        candidates.push({
+          id: cluster.key,
+          text,
+          x,
+          y,
+          priority: PRIORITY.events,
+          weight: cluster.weight ?? 0,
+          // Its own box, because a badge is set at `BADGE_SIZE` and the placer
+          // measures a label at `LABEL_SIZE`: a box made from the wrong size
+          // would keep two badges apart that touch, or apart that do not.
+          box: {
+            x0: x,
+            x1: x + (text.length * BADGE_SIZE * EM) / labelling.k,
+            y0: y - (BADGE_SIZE * 0.7) / labelling.k,
+            y1: y + (BADGE_SIZE * 0.7) / labelling.k,
+          },
+        });
+      }
+      return candidates;
+    },
+
+    // And which of them are written. Called by the label round once the names
+    // are placed; the badges live in this layer's own group because a click on
+    // one opens the stack it counts, which a label never does.
+    drawBadges(keys) {
+      if (!badgeGroup) return;
+      badgeGroup.replaceChildren();
+      for (const candidate of this.badgeCandidates()) {
+        if (keys && !keys.has(candidate.id)) continue;
+        badgeGroup.appendChild(textNode(candidate.text, {
+          x: candidate.x,
+          y: candidate.y,
+          class: 'cluster-count',
+          'font-size': BADGE_SIZE / labelling.k,
+          'data-cluster': candidate.id,
+        }));
+      }
     },
     render({
       events, window: timeWindow = null, margin = null, selected, pathIds, actorIds = null, narrativeIds = null, reachable = null,
@@ -438,17 +525,10 @@ export function createEventsLayer(group, projection, {
         });
         // "46 more" and not "+46": the badge says what the title says, in the
         // title's own words (M85, A4) — and nothing at all for a stack of two,
-        // whose ring has already said it (M86 §2, cluster.js).
-        const badge = stackBadge(cluster.count);
-        if (badge) {
-          group.appendChild(textNode(badge, {
-            x: cluster.x + (MARK_RADIUS + 2) / k,
-            y: cluster.y - (MARK_RADIUS + 1) / k,
-            class: 'cluster-count',
-            'font-size': BADGE_SIZE / k,
-            'data-cluster': cluster.key,
-          }));
-        }
+        // whose ring has already said it (M86 §2, cluster.js). **Drawn by the
+        // label round and not here** since M89 §6: a badge that lands on a name
+        // or on another badge is dropped, which is what the round is for, and
+        // it cannot be decided before the names exist.
       }
 
       // The events the reader is working with, on top of the clusters. The
@@ -480,6 +560,11 @@ export function createEventsLayer(group, projection, {
       // What the label round will be offered, once the base map has drawn too:
       // the clusters that reached the DOM, at the zoom they reached it at.
       labelling = { clusters: shown, k };
+      // The badges' own group, over the marks and made afresh because the
+      // render above emptied the layer. Empty until the label round says which
+      // of them survive the names (M89 §6, `drawBadges`).
+      badgeGroup = svg('g', { class: 'cluster-counts' });
+      group.appendChild(badgeGroup);
       restoreFocus(focused);
 
       // A coincident cluster opened: its members on rings around the common

@@ -445,11 +445,19 @@ test('a click on a splittable cluster splits it, and the animation redraws once'
     const badgeOf = (key) => `
       const el = document.querySelector('#map text.cluster-count[data-cluster="${key}"]');
       return el ? Number((el.textContent.match(/\\d+/) ?? [0])[0]) : 0;`;
+    // **A splittable cluster that carries a badge**, and not simply the first
+    // one drawn: since M89 §6 a badge that lands on a name or on another badge
+    // is dropped, so a stack perfectly well split may have none. What this test
+    // is about is the badge's count changing when the stack comes apart, so the
+    // stack it picks is one that has a badge to begin with.
     const before = await page.eval(`
-      const el = document.querySelector('#map circle.mark.cluster.splittable[data-cluster]');
-      const key = el.getAttribute('data-cluster');
-      const badge = document.querySelector('#map text.cluster-count[data-cluster="' + key + '"]');
-      return { key, hidden: badge ? Number((badge.textContent.match(/\\d+/) ?? [0])[0]) : 0 };`);
+      for (const el of document.querySelectorAll('#map circle.mark.cluster.splittable[data-cluster]')) {
+        const key = el.getAttribute('data-cluster');
+        const badge = document.querySelector('#map text.cluster-count[data-cluster="' + key + '"]');
+        const hidden = badge ? Number((badge.textContent.match(/\\d+/) ?? [0])[0]) : 0;
+        if (hidden > 0) return { key, hidden };
+      }
+      return { key: null, hidden: 0 };`);
     assert.ok(before.hidden > 0, `the cluster says how many are under it (+${before.hidden})`);
     await page.eval(clickOn(`#map circle.mark.cluster.splittable[data-cluster="${before.key}"]`));
 

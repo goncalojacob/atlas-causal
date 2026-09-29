@@ -16,6 +16,7 @@ import {
 } from './browser.mjs';
 import { atlasOf, ROOT } from './helpers.mjs';
 import { LOADING_LABEL } from '../src/attributes.js';
+import { shorten } from '../src/map/labels.js';
 
 const DESK = { width: 1280, height: 800, deviceScaleFactor: 1 };
 const PHONE = { width: 390, height: 844, deviceScaleFactor: 1 };
@@ -354,4 +355,84 @@ test('§5: and no title is cut by either edge of the pane', { skip }, async () =
       }
     }, { device });
   }
+});
+
+// ─── 6. badges go through the placer, and every lane gets a name (A6) ───────
+
+// Every name and every badge the map drew, as the boxes the browser laid out,
+// and the lane each mark belongs to. A badge names its cluster, whose key is
+// its representative's id (cluster.js), so the lane is the record's.
+const MAP_LABELS = `
+  const svg = document.querySelector('#map svg.map');
+  if (!svg) return null;
+  const box = (el) => {
+    const r = el.getBoundingClientRect();
+    return { x0: r.left, x1: r.right, y0: r.top, y1: r.bottom };
+  };
+  return {
+    names: [...svg.querySelectorAll('.layer-labels text')].map((el) => ({
+      kind: 'name', text: el.textContent, ...box(el),
+    })),
+    badges: [...svg.querySelectorAll('text.cluster-count')].map((el) => ({
+      kind: 'badge', text: el.textContent, key: el.getAttribute('data-cluster'), ...box(el),
+    })),
+    marks: [...svg.querySelectorAll('.mark[data-id], .mark[data-cluster]')].map((el) => ({
+      id: el.getAttribute('data-id'), cluster: el.getAttribute('data-cluster'),
+    })),
+  };`;
+
+test('§6: no two names or badges on the first map are written over each other', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
+    await settledShards(page, await manifestOf());
+    await until(page, 'return document.querySelectorAll("#map .layer-labels text").length > 0;');
+    const read = await page.eval(MAP_LABELS);
+    assert.ok(read && read.names.length > 0, 'the map wrote names');
+    const all = [...read.names, ...read.badges];
+    for (let i = 0; i < all.length; i += 1) {
+      for (let j = i + 1; j < all.length; j += 1) {
+        assert.ok(!overlaps(all[i], all[j]),
+          `the ${all[i].kind} "${all[i].text}" is written over the ${all[j].kind} "${all[j].text}"`);
+      }
+    }
+  }, { device: DESK });
+});
+
+test('§6: every lane with a mark on the first map gets at least one name', { skip }, async () => {
+  await withBrowser(async (page, url) => {
+    await seenIntro(page);
+    await open(page, url(''), 'return document.querySelectorAll("#map .mark").length > 0;');
+    await settledShards(page, await manifestOf());
+    await until(page, 'return document.querySelectorAll("#map .layer-labels text").length > 0;');
+    const read = await page.eval(MAP_LABELS);
+    assert.ok(read && read.names.length > 0, 'the map wrote names');
+    // Which lanes have a mark, and which have a name: both derived from the
+    // records, by the titles the map wrote. A cluster is named by its
+    // representative, so a title on the map is a title in the corpus.
+    // Keyed by the name **as the map writes it**: a long title is cut with an
+    // ellipsis before it is drawn, and it is the placer's own `shorten` that
+    // cuts it, so the test asks the same function rather than matching prefixes.
+    const byTitle = new Map();
+    for (const event of atlas.activeEvents) {
+      if (!event.region) continue;
+      const written = shorten(event.title);
+      if (!byTitle.has(written)) byTitle.set(written, new Set());
+      byTitle.get(written).add(event.region);
+    }
+    const drawn = new Set();
+    for (const mark of read.marks) {
+      const id = mark.id ?? mark.cluster;
+      const lane = laneOf.get(id);
+      if (lane) drawn.add(lane);
+    }
+    assert.ok(drawn.size > 1, `the first map draws ${drawn.size} lane's marks`);
+    const named = new Set();
+    for (const label of read.names) {
+      for (const lane of byTitle.get(label.text) ?? []) named.add(lane);
+    }
+    for (const lane of drawn) {
+      assert.ok(named.has(lane), `the lane ${lane} has marks on the first map and no name: named ${[...named].join(', ')}`);
+    }
+  }, { device: DESK });
 });

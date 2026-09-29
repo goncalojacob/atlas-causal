@@ -21,6 +21,7 @@ import { introHtml, heaviest, centuryOf, score, HEAVIEST } from '../src/intro.js
 import { createShardWatch } from '../src/shard-watch.js';
 import { frameOn, markNodes, wantedSets } from '../src/map/camera.js';
 import { worldProjection } from '../src/map/projection.js';
+import { placeLabels } from '../src/map/labels.js';
 import { partsReach, partsReachSentence } from '../src/panel/event.js';
 import { isParent, parentsOf } from '../src/parts.js';
 import { eventsOfFocus } from '../src/lens.js';
@@ -286,4 +287,41 @@ test('§3: and an event with no parts and no links still says so', () => {
   const reach = partsReach(atlas, leaf);
   assert.equal(reach.parts, 0, 'nothing is inside it');
   assert.equal(reach.reached.size, 0, 'and there is nothing to reach');
+});
+
+// ─── 6. the placer's own two halves (A6) ────────────────────────────────────
+
+test('§6: a candidate marked first is placed ahead of heavier ones', () => {
+  // Three names that cannot all fit: the heaviest two would take the room, and
+  // the light one marked `first` takes it instead. This is the floor of one per
+  // lane said as the placer sees it — which lane a mark is in is the events
+  // layer's business, and the order is this file's.
+  const at = (id, weight, first) => ({
+    id, text: 'a name', x: 0, y: 0, priority: 0, weight, first,
+  });
+  const order = (candidates) => placeLabels(candidates, { limits: { 0: 1 } }).map((l) => l.id);
+  assert.deepEqual(order([at('heavy', 100, false), at('light', 1, true)]), ['light'],
+    'the marked one is offered before the heavy one');
+  assert.deepEqual(order([at('heavy', 100, false), at('light', 1, false)]), ['heavy'],
+    'and without the mark the weight decides, as it always did');
+  // Among the marked ones the weight still decides.
+  assert.deepEqual(order([at('a', 1, true), at('b', 2, true)]), ['b']);
+});
+
+test('§6: a box the caller gives is the box the placer uses, and occupied ground is never won', () => {
+  const box = (x0, x1) => ({ x0, x1, y0: 0, y1: 10 });
+  const one = {
+    id: 'one', text: 'x', x: 0, y: 5, priority: 0, weight: 1, box: box(0, 50),
+  };
+  assert.deepEqual(placeLabels([one], { limits: { 0: 9 } }).map((l) => l.box), [box(0, 50)],
+    'the box is the one it was handed and not one made from the text');
+  assert.deepEqual(placeLabels([one], { limits: { 0: 9 }, occupied: [box(40, 60)] }), [],
+    'and ground already taken is never won');
+  assert.deepEqual(placeLabels([one], { limits: { 0: 9 }, occupied: [box(60, 80)] }).length, 1,
+    'ground it does not reach is not in the way');
+  // And both edges of the view, since a label may be written leftwards from
+  // what it names (the timeline's, M89 §5).
+  const left = { ...one, box: box(-10, 20) };
+  assert.deepEqual(placeLabels([left], { limits: { 0: 9 }, view: { x0: 0, y0: 0, x1: 100, y1: 10 } }), [],
+    'a name that would run off the left edge is not written');
 });

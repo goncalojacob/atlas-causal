@@ -843,6 +843,11 @@ export function createMap(container, { atlas, state, onCluster = null }) {
     const baseNames = transform.k >= LABEL_ZOOM;
     if (far) {
       if (labelsGroup.childNodes.length > 0) labelsGroup.replaceChildren();
+      // Sem nomes não há nada contra que colocar as insígnias, e elas ainda têm
+      // de ser desenhadas: passam por uma ronda só delas (M89 §6).
+      events.drawBadges(new Set(placeLabels(events.badgeCandidates(), {
+        k: transform.k, view: box, limits: { [PRIORITY.events]: Infinity },
+      }).map((label) => label.id)));
       return [];
     }
     const s = state.get();
@@ -910,6 +915,26 @@ export function createMap(container, { atlas, state, onCluster = null }) {
       // o colocador que escolhe os dez mais pesados, pela ordem que já tem.
       limits: baseNames ? LIMITS : { ...LIMITS, [PRIORITY.events]: RESTING_EVENT_LABELS },
     });
+    // E as insígnias, na mesma ronda e depois dos nomes (M89 §6, achado A6).
+    // Sobre a Europa e o Próximo Oriente, em duzentos pixéis, "2 more", "11
+    // more", "10 more", "6 more", "7 more", "2 more" e "4 more" montavam-se umas
+    // nas outras e nos nomes por baixo delas: eram desenhadas com as marcas,
+    // antes de existir nome nenhum, e nada perguntava se duas estavam no mesmo
+    // sítio. Depois dos nomes e contra eles, porque um nome é o que o mapa diz e
+    // uma insígnia é a conta do que ele não conseguiu dizer; o anel duplo já diz
+    // "há mais do que um aqui" e o título da pilha leva a conta consigo.
+    //
+    // Sem limite de quantas: o limite por prioridade existe para que cem cidades
+    // não encham o ecrã antes do primeiro acontecimento, e aqui os candidatos
+    // são todos da mesma espécie. O chão já tomado é o das etiquetas colocadas.
+    events.drawBadges(eventsOn(on)
+      ? new Set(placeLabels(events.badgeCandidates(), {
+        k: transform.k,
+        view: box,
+        limits: { [PRIORITY.events]: Infinity },
+        occupied: placed.map((label) => label.box),
+      }).map((label) => label.id))
+      : new Set());
     labelsGroup.replaceChildren();
     for (const label of placed) {
       const candidate = byKey.get(`${label.priority}|${label.id}`);

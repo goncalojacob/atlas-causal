@@ -5,7 +5,7 @@
 // candidatos de qualquer origem na mesma forma e devolve os que ficam.
 //
 //   placeLabels(candidatos, { k, view, limits, occupied })
-//   candidato: { id, text, x, y, priority, weight, em?, once?, box? }
+//   candidato: { id, text, x, y, priority, weight, em?, once?, box?, first? }
 //   → [{ id, text, x, y, priority, box }] pela ordem de desenho
 //
 // **`box` e `occupied` são de M89 §5**, que é o dia em que a linha do tempo
@@ -16,11 +16,18 @@
 // são o que o leitor viu riscado pelos nomes. `occupied` são caixas já
 // tomadas antes de se colocar a primeira: nada as ganha e nada as tira.
 //
-// **A ordem é determinada e não negociada**: prioridade a subir, depois peso a
-// descer, depois `id`. A mesma imagem coloca as mesmas etiquetas duas vezes,
-// que é o que separa um mapa de uma animação — um nome que aparece e
-// desaparece conforme a ordem em que os ficheiros chegaram seria pior do que
-// nome nenhum.
+// **A ordem é determinada e não negociada**: prioridade a subir, depois os que
+// o chamador marcou com `first`, depois peso a descer, depois `id`. A mesma
+// imagem coloca as mesmas etiquetas duas vezes, que é o que separa um mapa de
+// uma animação — um nome que aparece e desaparece conforme a ordem em que os
+// ficheiros chegaram seria pior do que nome nenhum.
+//
+// `first` é de M89 §6: o peso sozinho dava os dez nomes do primeiro ecrã a seis
+// eventos da Europa e do Próximo Oriente, e a América do Sul — 343
+// acontecimentos activos — ficava com "10 more", "4 more", "2 more" e nome
+// nenhum. Quem marca quais é a camada que os oferece, porque é ela que sabe em
+// que faixa está cada um; este ficheiro só sabe que vão à frente. Entre eles a
+// ordem continua a ser o peso.
 //
 // **Uma etiqueta que bate noutra é saltada e não empurrada.** É a regra que a
 // camada dos acontecimentos já seguia e é a razão por que uma etiqueta nunca
@@ -171,6 +178,7 @@ export function placeLabels(candidates, {
     wanted.push(candidate);
   }
   wanted.sort((a, b) => (a.priority ?? 0) - (b.priority ?? 0)
+    || (b.first ? 1 : 0) - (a.first ? 1 : 0)
     || (b.weight ?? 0) - (a.weight ?? 0)
     || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
