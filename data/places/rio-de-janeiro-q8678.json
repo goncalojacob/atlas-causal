@@ -2,8 +2,8 @@
   "schema": 1,
   "id": "rio-de-janeiro-q8678",
   "kind": "place",
-  "status": "active",
-  "supersededBy": null,
+  "status": "merged",
+  "supersededBy": "rio-de-janeiro",
   "aliases": [],
   "authors": [
     {
@@ -13,20 +13,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-09-29",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
-    ]
+      "a9-place",
+      "a15-merged"
+    ],
+    "note": "A15(9): merged into rio-de-janeiro, which is the same city at a point 1.2 km away, written by hand in M50 before A9 wrote this one from Q8678. Q8678, the article and the item’s other names went across to it — rule 21 gives one item to one record — and this record stays as the address a link of 22 September still resolves through."
   },
   "origin": {
     "tool": "assistant"
-  },
-  "wikidata": "Q8678",
-  "wikipedia": {
-    "en": "Rio de Janeiro"
   },
   "sources": [],
   "names": [

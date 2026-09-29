@@ -14237,3 +14237,49 @@ Europe 553, Americas 342, Asia 182, **Africa 181** — Africa trails again, by
 one. Validator **0 errors, 598 warnings** (+1: `degree-zero` no longer counts
 the two retracted records, and `summary-imported` counts the three summaries
 that went back to the placeholder).
+
+## A15 (9) — one city with two ids, and three summaries that paraphrased what they cited
+
+*29 September, the 05:07Z fire. Two requests: the "The Holocaust" article read at
+the revision the third record cites, to check six sentences word for word.*
+
+**The merge.** `rio-de-janeiro-q8678` was written by A9 on 22 September from
+Q8678; `rio-de-janeiro` was written by hand in M50, at a point **1.2 km** away.
+One city, two ids, and rule 21 gives one item to one record. So the merge London
+took in A14(6) is taken again: Q8678, its article and the item's three other
+names (`Rio de Janeiro city`, `Río de Janeiro City`, `City of Río de Janeiro`)
+go across to `rio-de-janeiro`; the import's record becomes
+`status: merged, supersededBy: rio-de-janeiro` and keeps its own id as the
+address a 22 September link still resolves through; and `earth-summit`, the one
+event that pointed at it, points here. The `wikidata` key is **removed** from the
+tombstone rather than set to null — rule 1 refuses a null there, and
+`london-q84` carries no such key either.
+
+**The three paraphrases.** A summary that names an article and a revision and
+then does not quote it is the worst of both: it looks like evidence and is the
+importer's own prose. All three are requoted.
+
+| record | what the paraphrase did | what it is now |
+| --- | --- | --- |
+| `battle-of-kapyong` | read the dates, the belligerents and the result off the **infobox** and wrote them as prose | the first three sentences of the lead, quoted verbatim at revision 1376150205 |
+| `battle-of-the-imjin-river` | quoted the **short description** and then paraphrased the infobox | the lead, quoted verbatim at revision 1376480748 |
+| `the-persecution-of-the-jews-1933-1941` | quoted two sentences and then paraphrased the rest — *"It records about 1,500 anti-Jewish laws, the Nuremberg Laws of 1935 …"* | six sentences of § Rise of Nazi Germany — Persecution of Jews, every one verbatim at revision 1376446924 |
+
+**The third one is not quoted from a lead, and that is deliberate.** A15(9) says
+"requoted from their leads", and the lead of "The Holocaust" is about the
+**1941–1945 extermination** — *"From 1941 to 1945, Nazi Germany and its
+collaborators systematically murdered around six million Jews"*. This record is
+the other half of that umbrella, divided under the owner's instruction of 16
+September, and the section it already cites is its own evidence. Quoting the
+lead instead would have put the extermination's account on the persecution's
+record, which is the fault A15(9) exists to fix rather than a way of fixing it.
+Every sentence was checked against the article at the revision cited, one
+curly apostrophe corrected to the straight one the article uses.
+
+**Counts.** 1 place merged (2 records rewritten, 1 event repointed), 3 summaries
+requoted, all three flagged `a15-requoted`, 0 refused, 0 requests to Wikidata.
+Corpus: **1,258 active, 235 main, 1,023 filed, 1,048 active edges, largest
+component 711, 562 edges crossing an umbrella**, 732 place records of which one
+is now a tombstone. Validator **0 errors, 598 warnings**, unmoved: a merged
+place is not `place-unused`. A15(2)'s pass reports **0 citations off disk**,
+which is the batch's last step and the check on every quote above.
