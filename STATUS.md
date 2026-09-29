@@ -22261,6 +22261,41 @@ failing**, *"the last label is not cut at the right edge"*, so a records fire
 fixing it would be working inside an unrun milestone's section. The map one is in
 neither brief. `docs/m42b-pool.md` → "Batch 37" is the full account.
 
+**M42b batch 38 — the Indian Ocean theatre, 29 September.** The same fire's
+second batch. **Asia's eighteenth century held nothing at all**, and the vein
+query of batch 37 had already named what was in it: eight fleet actions off
+India, Ceylon and Morocco, children of `american-revolutionary-war`,
+`anglo-french-war-1778-1783` and `war-of-the-austrian-succession`, all three
+held. **Seven were kept and one left.** The five Suffren–Hughes actions —
+Sadras, Providien, Negapatam, Trincomalee, Cuddalore — which **their own articles
+number as one series of five**, with the siege of Pondicherry (1778) before them
+and the action of 16 March 1782 off Cape Spartel beside them. Three place
+records, each `summary: null` by A15(3)'s rule now in the tool; **two events stay
+placeless because the tool's guard refused a bad place the fire had been willing
+to accept** — Sadras and Negapatam give the Bay of Bengal as their only located
+step, its own point is 870 km from either battle and derives no lane at all, and
+the guard said so. **The main count does not move: 235 before and 235 after**,
+and the 322 events with no edge is unchanged across both batches. **Six edges,
+three of which cross an umbrella (A15(11)) — the first this lane has written**,
+after every batch the third review read scored zero; one of the five, Negapatam →
+Trincomalee, is the only link of the series for which the article gives a
+mechanism rather than an order (*"Due to the exposed nature of the anchorage at
+Cuddalore, and the impending arrival of additional British fleets, Suffren
+decided to attempt the capture of Trincomalee"*). **The crossing count moved for
+an unflattering reason and the pool file says so**: Wikidata files five battles
+of one campaign under two umbrellas, so a chain walked straight down it crosses
+three times without reaching any further. The corpus goes **1,277 → 1,284
+active**, the largest component 710 → **711**; Asia before 1800 is **9** with its
+18th century at **6** from nothing, and Africa before 1800 **3**. **A15(7) was
+applied to a record this batch wrote**: `action-of-16-march-1782` was drawn in
+Europe because its place is the Strait of Gibraltar, and the action was fought
+*"off Cape Spartel, Morocco"* — the lane is now its own point's, with the reason
+in `regionNote`. **And C8 has a table at last**: of the eleven records the two
+batches kept, **eight are outside the largest component**, and in every case the
+bridge that would put them in runs from an umbrella already inside it to that
+umbrella's own child. Deviation **1340**, the `regionNote` cap.
+`docs/m42b-pool.md` → "Batch 38" is the full account.
+
 ## M87 — what breaks at 3,000 events
 
 Lane A, on the branch `m87`. `docs/m87-brief.md` over the second Fable review

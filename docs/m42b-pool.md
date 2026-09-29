@@ -10043,25 +10043,224 @@ re-takes a row about the other lane's milestone. The fix is not a fire's to make
 document — and it is written here because four fires have now paid for it as if
 it were an accident.
 
+## Batch 38 — the Indian Ocean theatre, and the first edges this lane has written that cross an umbrella
+
+Asia's eighteenth century held **nothing at all** — the table in batch 37's
+section has a dash in that cell — and the vein query had named its contents
+before this fire chose anything: seven unheld children of `american-revolutionary-war`
+and `anglo-french-war-1778-1783`, both held, all of them fleet actions off India
+and Ceylon. Eight items were read with the 1746 one beside them; **seven are here
+and one is left.**
+
+### What was imported
+
+| kept | when | lane | place | filed under |
+| --- | --- | --- | --- | --- |
+| `siege-of-pondicherry-1778` | 21 Aug – 19 Oct 1778 | asia | `pondicherry` | `anglo-french-war-1778-1783` |
+| `battle-of-sadras` | 17 Feb 1782 | asia | *placeless* | `american-revolutionary-war` |
+| `battle-of-providien` | 12 Apr 1782 | asia | `trincomalee` | `american-revolutionary-war` |
+| `battle-of-negapatam-1782` | 6 Jul 1782 | asia | *placeless* | `american-revolutionary-war` |
+| `battle-of-trincomalee` | 25 Aug – 3 Sep 1782 | asia | `trincomalee` | `anglo-french-war-1778-1783` |
+| `battle-of-cuddalore-1783` | 20 Jun 1783 | asia | `pondicherry` | `american-revolutionary-war` |
+| `action-of-16-march-1782` | 16 Mar 1782 | **africa** | `strait-of-gibraltar` | `american-revolutionary-war` |
+
+**Three place records**, all `summary: null` by A15(3)'s rule now in the tool:
+`pondicherry` and `trincomalee` at `city`, `strait-of-gibraltar` at `region`.
+
+**Two are placeless and the tool refused the place rather than writing a bad
+one**, which is worth recording because it is the guard working where this fire
+had decided to accept the bad place. Sadras and Negapatam both give the **Bay of
+Bengal** (`Q38684`) as their only located step, and the bay's own point — 88E
+15N, the middle of it — is 870 km from where either was fought. This fire had
+read that, weighed it against the `region` precision the atlas draws wide and
+faint, and concluded it was acceptable. The tool disagreed for a better reason:
+*"no place for Q38684: its lane is nowhere and the event's is nowhere"* — the
+bay's point reaches no lane polygon and is past the 3° tolerance, so it cannot
+answer the one question a place is asked. Both records keep `region: asia` from
+their own `P625` and are reported as the `ownPoint` case a person names. **The
+guard was right and the reading was wrong**, and the reading is written here so
+that the next fire does not make it again.
+
+### The edges, and the number A15(11) asks for
+
+Six edges. **Three of them cross an umbrella — the first this lane has
+written**, after every batch the third review read scored zero.
+
+| edge | type | crosses | what carries it |
+| --- | --- | --- | --- |
+| `siege-of-pondicherry-1778` → `battle-of-sadras` | `precondition-of` | **yes** | two articles, one half each |
+| `battle-of-sadras` → `battle-of-providien` | `precondition-of` | no | "the first of five" / "the second in a series" |
+| `battle-of-providien` → `battle-of-negapatam-1782` | `precondition-of` | no | "the third in a series", and the repairs between |
+| `battle-of-negapatam-1782` → `battle-of-trincomalee` | `precondition-of` | **yes** | a stated mechanism, below |
+| `battle-of-trincomalee` → `battle-of-cuddalore-1783` | `precondition-of` | **yes** | the fifth of the five |
+| `great-siege-of-gibraltar` → `action-of-16-march-1782` | `precondition-of` | no | the blockade is why the frigates met |
+
+**The five fleet actions number themselves.** Sadras's own lead: *"the first of
+five largely indecisive naval battles fought between a British fleet (under
+Vice-Admiral Sir Edward Hughes) and a French fleet (under Admiral Pierre
+Suffren) off the east coast of India"*; Providien *"the second in a series"*,
+Negapatam *"the third in a series"*, Trincomalee *"the fourth in a series"*. An
+ordered series that each of its members names as one is a claim about a campaign
+and not a date order, which is the footing batch 37's pattern edges stood on and
+a firmer one, because here the articles count.
+
+**One of the five gives a mechanism**, and it is the one the batch is proudest
+of. Trincomalee's article: *"Suffren and Hughes then met a third time off
+Negapatam, again with inconclusive results, after which Suffren anchored off
+Cuddalore to make repairs"*, and then *"Due to the exposed nature of the
+anchorage at Cuddalore, and the impending arrival of additional British fleets,
+Suffren decided to attempt the capture of Trincomalee to gain a safe harbour for
+his fleet."* An indecisive battle that left him repairing in an open roadstead is
+why he went for the harbour — `precondition-of` and not `caused`, because the
+decision was Suffren's and the article gives him two reasons of which Negapatam
+is one.
+
+**A15(5) refused, and is said in the edges themselves.** The Cuddalore edge
+carries the series and says so: what the Cuddalore article gives as its *own*
+cause is not Trincomalee but *"the December 1782 death of French ally Hyder
+Ali, the ruler of Mysore and previous controller of Cuddalore"*, and the atlas
+holds no record for that death — so the explanation says where the real edge
+will go when it does. The Pondicherry edge says something stronger about itself:
+each of its two articles states one half — the siege was *"the first military
+action on the Indian subcontinent"* after the declaration of war and Britain
+*"followed up the victory by seizing France's other Indian colonies"*; Sadras's
+background says *"The British had rapidly gained control over most French and
+Dutch outposts in India"* and therefore *"The French admiral Bailli de Suffren
+was dispatched for military assistance to French colonies in India"* — and
+**the join between the two quotations is this run's, not either article's**,
+which the explanation states in as many words.
+
+**Nothing from a parent to its own child (A14).**
+
+### The one left
+
+`Q2889560`, the **action of 6 July 1746**: 826 characters of article, which
+reaches for the First Carnatic War (`Q1362162`) and La Bourdonnais's attack on
+Madras and names nothing else. The atlas holds neither, so under A15(1) there is
+nothing to connect it to. Left in the seeds unlisted and out of the cursor's
+`done`, so it is retryable the day the First Carnatic War is here — and
+`Q1362162` is itself a `P361` child of `war-of-the-austrian-succession`, which
+this atlas holds, so that import costs no main event whenever a fire wants it.
+
+### The numbers
+
+| | before 37 | after 37 | after 38 |
+| --- | --- | --- | --- |
+| active events | 1,273 | 1,277 | **1,284** |
+| **main** | **235** | **235** | **235** |
+| active edges | 1,049 | 1,052 | **1,058** |
+| largest connected component | 708 | 710 | **711** |
+| components | 406 | 407 | 408 |
+| events with no edge at all | 322 | 322 | **322** |
+| **edges crossing an umbrella, in the batch** | — | **0 of 3** | **3 of 6** |
+| edges crossing an umbrella, corpus | 562 | 562 | **565 of 1,058** |
+| Asia's 18th century | — | — | **6 / 0** |
+| Asia before 1800 | 1 | 3 | **9** |
+| Africa before 1800 | 0 | 2 | **3** |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 44 / 5 |
+| 1600s | 109 / 3 | 2 / 0 | 3 / 0 | 69 / 7 |
+| 1700s | 61 / 3 | **1 / 0** | **6 / 0** | 55 / 2 |
+| 1800s | 39 / 9 | 17 / 1 | 7 / 7 | 56 / 8 |
+| 1900s | 244 / 59 | 89 / 23 | 146 / 42 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 40 / 1 |
+| **all** | **554 / 84** | **184 / 31** | **191 / 64** | **355 / 56** |
+
+### Why the crossing number moved, which is not the reason it looks like
+
+Three crossing edges after twenty-odd batches of none, and **the honest account
+of it is not that this batch reached further.** It is that Wikidata files five
+battles of one campaign under two different umbrellas. Sadras, Providien,
+Negapatam and Cuddalore name `P361` `american-revolutionary-war` alone;
+Trincomalee names that *and* `anglo-french-war-1778-1783`, and deviation 1316's
+reduction keeps the nearer of the two, so Trincomalee's parent is the
+Anglo-French war and its four siblings' is the American Revolutionary War.
+Pondicherry names only the Anglo-French war. So a chain walked straight down one
+campaign crosses the boundary three times — not because the chain is wide but
+because the filing under it is inconsistent.
+
+**That is a fact about the metric and it should be said before the metric is
+trusted.** A15(11) counts edges whose endpoints share no parent, and it was
+written to measure *"chains throughout the globe and time"*. It also counts this:
+an umbrella boundary drawn through the middle of one admiral's campaign by a
+database. A fire reporting three should say which kind it has, and this one has
+the second kind. **The one edge here that crosses for the right reason is none of
+the three** — it is `great-siege-of-gibraltar` → `action-of-16-march-1782`, which
+reaches from Europe's siege to Africa's Strait and a record that existed before
+this batch, and it does *not* cross, because both are children of the American
+Revolutionary War.
+
+### And C8's cost, measured on eleven records instead of two
+
+Both batches together kept **eleven records**. Eight of them are **outside the
+largest component**, and in every one of the eight cases the bridge that would
+put them in runs from an umbrella that is *already inside it* to that umbrella's
+own child:
+
+| | component | the bridge A14 forbids |
+| --- | --- | --- |
+| the two Malacca sieges | **2** | `dutch-portuguese-war` (in the 711) → its child |
+| the six Indian Ocean records | **6** | `american-revolutionary-war` and `anglo-french-war-1778-1783` (both in the 711) → their children |
+| `battle-of-elmina-1625`, `battle-of-elmina-1637` | 711 | — a *sibling* had a citable link |
+| `action-of-16-march-1782` | 711 | — a *sibling* had a citable link |
+
+**Three records in and eight out, and the difference is never the quality of the
+reading.** It is whether a sibling under the same umbrella happened to have a
+sentence about them. `great-siege-of-gibraltar` had one about the Cape Spartel
+action and `dutch-brazil-1630-1654` had one about Elmina; nothing held has a
+sentence about Malacca in 1606 or Sadras in 1782, and the records that obviously
+do stand next to them — their own parents — are the one edge the run may not
+write. **This is the fourth and fifth batch to report it and the first to report
+it with a table.**
+
+### A15(7), applied to a record this batch wrote
+
+`action-of-16-march-1782` was drawn in **Europe** by the first index build. Its
+place is the Strait of Gibraltar, whose own point (5.52W 35.97N) derives
+`europe`; the action was fought *"off Cape Spartel, Morocco"* in the article's
+own words, and the item's `P625` (5.97W 35.87N) derives `africa`. Twenty
+kilometres of a strait between two continents decided the lane, which is exactly
+what A15(7) is about: *the lane from the point*. Written as the `region`
+override the data model provides, with the reason in `regionNote` and the flag
+`a15-lane-from-point`. **The place stays** — it is where the item says the action
+was — and Africa before 1800 goes from 2 to 3 rather than Europe's 18th century
+from 61 to 62.
+
+### Deviations
+
+**1340. The `regionNote` cap is 300 characters and a reason worth writing is
+longer.** The first override written above ran to 460 and the validator refused
+it — rule 1, `/regionNote`, *"expected exactly one of 2 alternatives to match"*,
+which is the schema's `maxLength` speaking through `oneOf` and saying nothing
+about length. Two things: the message does not name the constraint it failed, so
+a 460-character string and a wrong type read the same in the log; and **a lane
+override whose reason needs a paragraph has nowhere to put it** — the sentence
+had to lose the article quote to fit, and what a reviewer most wants is the
+quote. A `oneOf` over a string with a cap is the shape that produces the unhelpful
+message; the cap itself may well be right.
+
 ## Where the run stands, for the fire that picks it up
 
 *29 September, after the thirty-fifth fire: three days of silence, A15 arrived,
-and batch 37.*
+and batches 37 and 38.*
 
 | | |
 | --- | --- |
-| corpus | **1,277 active** (1,255 on this branch when the fire started, 1,273 after the two merges) |
-| **main** | **235** — and unchanged by this batch |
-| **largest connected component** | **710** (708 before the batch) |
-| components | 407 |
-| events with no edge at all | 322 — **unchanged**, which is the point of A15(1) |
-| edges crossing an umbrella | **562 of 1,052** over the corpus; **0 of 3** in this batch, and 0 is what this shape of batch can give |
+| corpus | **1,284 active** (1,255 on this branch when the fire started, 1,273 after the two merges) |
+| **main** | **235** — and unchanged by either batch |
+| **largest connected component** | **711** (708 before the batches) |
+| components | 408 |
+| events with no edge at all | 322 — **unchanged across both batches**, which is the point of A15(1) |
+| edges crossing an umbrella | **565 of 1,058** over the corpus; **0 of 3** in batch 37 and **3 of 6** in batch 38 — read batch 38's own section before trusting the three |
 | Europe before 1900 | **257 active, 18 main** — paused by A15(1) |
 | the `americas` lane | **355 active, 56 main** |
-| **Africa before 1800** | **2 active, 0 main** (0 before this fire) |
-| **Asia before 1800** | **3 active, 0 main** (1 before this fire) |
+| **Africa before 1800** | **3 active, 0 main** (0 before this fire) |
+| **Asia before 1800** | **9 active, 0 main** (1 before this fire), of which Asia's 18th century is **6**, from nothing |
 | Africa, all centuries | 184 active — A15(1)'s gate on Europe is 303 |
-| Asia, all centuries | 185 active — likewise |
+| Asia, all centuries | 191 active — likewise |
 
 **Three days in which nothing ran.** The last commit on this branch before this
 fire was 25 September at 18:47Z; this fire opened on 29 September at 02:36Z. The
@@ -10073,29 +10272,36 @@ in the repository can fix that and nothing here pretends otherwise.
 **What this fire did.** Merged `origin/m0` (which brought A15, the third review
 and the M88/M89 briefs) and `origin/m42` (seventeen commits, including the
 corrected import rules its A7/A9/A6 passes wrote); wrote the A15(2) test and the
-pure helper behind it; and took batch 37. Deviations **1336 to 1339**.
+pure helper behind it; and took **two batches**, 37 and 38 — eleven records, nine
+edges, the main count unmoved at 235 throughout and the 322 events with no edge
+unmoved too. Deviations **1336 to 1340**.
 
 ### The next fire's moves, in order
 
-1. **Africa and Asia before 1800 is now the cell, and it has 22 candidates
-   left.** The query is in batch 37's section and its answer is cached reasoning,
-   not a guess: of the 26 unheld children of a held umbrella that fall in those
-   two lanes before 1800, this batch took four and left four with reasons; **18
-   remain**, and they are not scattered — seven are the American Revolutionary
-   War's Indian Ocean theatre (`Q2601126`, `Q2601158`, `Q2601178`, `Q2601189`,
-   `Q1649183`, `Q126876`, `Q4040247`), five are behind `Q207318`, the **French
-   Revolutionary Wars**, at depth two. That last one is the move worth making:
-   **`Q207318` is itself a `P361` child of `french-revolution`, which this atlas
-   holds**, so importing it costs no main event and unlocks five children in
-   Africa and Asia — Tripoli 1797, the Cape 1799, Alexandria 1798 (the Battle of
-   the Pyramids, `Q332543`), Manila 1798 and Macau 1799. Check the span first:
-   `french-revolution`'s own `when` must contain 1792–1802 or rule 24 warns.
-2. **The Indian Ocean seven are Asia's 18th century and they are free**, all
-   children of `american-revolutionary-war`, which the brief defers behind South
-   and Central America *for the Americas lane* — the deferral is about North
-   America, not about that war's Asian theatre, which is this lane's Asia cell.
-   Read them for edges first: batch 37's lesson is that the edge decides whether
-   a record may be imported at all.
+1. **Africa and Asia before 1800 is the cell, and eleven of the twenty-six
+   candidates are now spent.** Of the 26 unheld children of a held umbrella that
+   fall in those two lanes before 1800 (the query is in batch 37's section),
+   batches 37 and 38 took eleven and left five with their reasons; **ten
+   remain**, and the shape of what is left has changed. The Indian Ocean theatre
+   is done. **The five behind `Q207318`, the French Revolutionary Wars, are the
+   next move and the span must be checked first** — Tripoli 1797, the Cape 1799,
+   the Battle of the Pyramids (`Q332543`, Egypt 1798), Manila 1798 and Macau
+   1799, all at depth two behind an item this atlas does not hold. **This fire
+   measured the obstacle so the next one need not**: `Q207318` runs 1792–1802
+   and its only `P361` is `french-revolution`, which this atlas dates 1789–1799,
+   so `filedUnder()` **refuses** it on rule 24 and the wars would arrive as a
+   **main event**, which the brief forbids. The way through is A8's own words —
+   every umbrella whose span and subject fit — and `atlantic-revolutions`
+   (1765–1838, held, and already `french-revolution`'s own parent) fits both:
+   file `Q207318` there by hand, say in the note that the umbrella its item names
+   is refused because the wars outlast the Revolution by three years, which is a
+   fact and not a data fault. Do not widen `french-revolution` to make the
+   filing work; that would be inventing a date.
+2. **`Q1362162`, the First Carnatic War, is a cheap unlock.** It is a `P361`
+   child of `war-of-the-austrian-succession`, which this atlas holds, so it costs
+   no main event, and it is what `Q2889560` — the action of 6 July 1746, left by
+   batch 38 — has no endpoint without. Two records, Asia's 18th century, one
+   edge the 1746 article already states.
 3. **The four this batch left are retryable and were kept out of the cursor.**
    `battle-off-hormuz-1625` needs `Q1031465` (the Anglo-Persian capture of
    Hormuz, 1622) and that item's parent is unheld, so it costs a main event
@@ -10110,31 +10316,43 @@ pure helper behind it; and took batch 37. Deviations **1336 to 1339**.
    active events were placeless before this fire and the count is unchanged;
    70 of them are the `americas` lane. Named as the second move by the fire of
    25 September and still unblocked.
-6. **C8, for the fourth fire in a row, with a number.** Batch 37's two Malacca
-   sieges are a component of two rather than part of the 710, and the single
-   edge that would bridge them runs from `dutch-portuguese-war` to its own
-   child. The two Elmina battles are in the 710 only because a sibling under the
-   same umbrella happened to have a citable link. **Two of four records in one
-   batch, and the difference between them is C8.** Also still open: deviation
+6. **C8, with a table now, over eleven records.** Batch 38's section carries it:
+   **eight of the eleven records these two batches kept are outside the largest
+   component**, and in every one of the eight the bridge that would put them in
+   runs from an umbrella already inside it to that umbrella's own child — the two
+   Malacca sieges from `dutch-portuguese-war`, the six Indian Ocean records from
+   `american-revolutionary-war` and `anglo-french-war-1778-1783`, all three of
+   which are in the 711. The three that are inside got there because a *sibling*
+   happened to have a sentence about them, which is not a property of the
+   reading. **This is the fourth and fifth batch to report it and the first with
+   the number.** Also still open: deviation
    1323 (A9's last step and the `country` precision), question 11 (the Nine
    Years' War, `Q152218`), and `Q718893` *theater of war*, unmeasured by its
    owner since deviation 1332.
-7. **A15(11)'s number will stay zero until a batch is shaped differently.**
-   Batch 37's section says why and what would change it: two umbrellas at once,
-   or a child connected to a *parentless* held event. The honest attempt here
-   failed and is written up; a fire that wants the number to move should plan
-   for it when it picks the vein, not hope for it when it writes the edges.
+7. **A15(11)'s number moved and the reason is not the flattering one.** Batch 37
+   scored 0 of 3 and batch 38 scored 3 of 6, and batch 38's section says plainly
+   what did it: Wikidata files five battles of one admiral's campaign under two
+   different umbrellas, so a chain walked straight down that campaign crosses the
+   boundary three times without reaching any further than batch 37's did. **A
+   fire reporting a crossing count should say which kind it has** — a chain that
+   reaches across the world, or a boundary a database drew through the middle of
+   one campaign. Batch 37's advice still stands for the first kind: two umbrellas
+   at once, or a child connected to a *parentless* held event.
 
 ### The check, and the tests
 
-**Run 1921, on `f8d7b94a`** — the batch-37 index head. Runs 1918 and 1920 were
-**cancelled** by the pushes that followed them, which is this branch's normal
-shape and not a failure.
+**Every run of this fire that was not cancelled by the next push is red on the
+same two browser tests and on nothing else** — the pair written up in batch 37's
+section, both bisected to `origin/m42`'s merge. Runs 1918, 1920, 1924, 1925, 1926
+and 1928 were **cancelled** by the pushes that followed them, which is this
+branch's normal shape and not a failure; this fire pushed eleven times.
 
 Locally, the two halves were run one after the other as this branch's own note
-advises. **The pure half found two real failures and both were fixed, not
-discarded**: `docs/m53-polities.md` §4.1 said 1,260 active events and the corpus
-is 1,277 — re-taken, the numerator unmoved at 404, and the paragraph that
+advises: **1,841 pure and 295 browser, 2,136 tests, nothing skipped**, and the
+only failures are the two above. **The pure half found two real failures and
+both were fixed, not discarded**: `docs/m53-polities.md` §4.1 said 1,260 active
+events and the corpus is 1,284 — re-taken twice, once per batch, the numerator
+unmoved at 404, and the paragraph that
 narrates each batch's move now says why it stops at 847 while the row says
 1,277 — and `CLAUDE.md`'s layout tree did not name `tools/lib/leadcache.mjs`,
 which this fire added. **The §4.1 row is a standing collision between the two
