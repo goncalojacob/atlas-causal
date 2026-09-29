@@ -1832,6 +1832,12 @@
     },
     {
       "dissent": false,
+      "id": "1938-yellow-river-flood",
+      "kind": "event",
+      "locator": "Q129151"
+    },
+    {
+      "dissent": false,
       "id": "1940-1944-insurgency-in-chechnya",
       "kind": "event",
       "locator": "Q714706"
@@ -3758,6 +3764,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nanking",
+      "kind": "event",
+      "locator": "Q701180"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "Q2409298"
@@ -4103,6 +4115,12 @@
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "Q920679"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shanghai",
+      "kind": "event",
+      "locator": "Q254599"
     },
     {
       "dissent": false,
@@ -4553,6 +4571,18 @@
       "id": "battle-of-wolgast",
       "kind": "event",
       "locator": "Q653561"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wuhan",
+      "kind": "event",
+      "locator": "Q2038907"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-xuzhou",
+      "kind": "event",
+      "locator": "Q709421"
     },
     {
       "dissent": false,

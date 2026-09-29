@@ -114,6 +114,15 @@
         }
       ]
     },
+    "1938-yellow-river-flood--battle-of-wuhan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "1945-portuguese-legislative-election--1949-portuguese-presidential-election--inspired": {
       "from": "git",
       "versions": [
@@ -1449,6 +1458,15 @@
         }
       ]
     },
+    "battle-of-shanghai--battle-of-nanking--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
     "battle-of-taejon--battle-of-the-pusan-perimeter--enabled": {
       "from": "git",
       "versions": [
@@ -1588,6 +1606,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-xuzhou--battle-of-wuhan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
@@ -4024,6 +4051,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "marco-polo-bridge-incident--battle-of-shanghai--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
         }
       ]
     },
