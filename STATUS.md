@@ -2303,6 +2303,36 @@ The owner's list in full is in the history file. Still waiting:
 
 In full in the history file. The ones that decide something:
 
+- **M42's Africa and Asia lane cannot grow, and one of three amendments has to
+  move. Measured on 30 September, batch 71; the case is in
+  `docs/m42-pool.md`.** Ninety-eight candidates were screened against their own
+  Wikipedia articles read in full, and **every one of them is refused by A15(1),
+  A14(6) or A6**:
+  **A15(1)** says a batch imports only what it can connect, and the `P361`
+  children of a held war connect to nothing — across six umbrellas
+  (`yom-kippur-war`, `italo-turkish-war`, `war-in-somalia`, `war-of-attrition`,
+  `second-italo-ethiopian-war`, `arab-spring`) **56 filable children name just
+  two held events between them**, their own parent and the war before it, with
+  one causal sentence in the lot that argues for an edge the atlas already holds.
+  Deviation 1473's Boer island is not a fact about the Boers: it is what a
+  tactical battle article is.
+  **A14(6)** refuses what *does* connect, because in this lane the event that
+  caused a war is an event inside it — `Operation Gibraltar`'s own article says
+  *"the covert infiltration was a complete failure that ultimately led to the
+  Indo-Pakistani War of 1965"* and its `P361` is that war. Four fires in a row
+  have now had their best causal sentence refused by this rule, which is C8.
+  **A6** refuses the rest, because an event that connects and is nobody's child
+  has no held umbrella that fits, so importing it raises the main count — which
+  is where `Jewish exodus from the Muslim world` (two cited edges, from
+  `suez-crisis` and `six-day-war`) and `Decline and modernization of the Ottoman
+  Empire` both stand today.
+  **The fire's recommendation is A6**, because relaxing it does not touch what
+  A6 is for: A6 exists so that a period historians name is an umbrella, not so
+  that the corpus can never gain a top-level event. Africa and Asia stand at 208
+  and 211 against A10's 303 and **no fire can move either number** until this is
+  answered. A fire reading this should not spend another batch on a held war's
+  `P361` children, and should not file an event under its grandparent to get
+  round A14(6).
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
   `allied-with` with a note — a substitution, reported and never adopted. The
@@ -23953,4 +23983,5 @@ M42b started 2026-09-30T03:36:46Z by scheduled
 M42 started 2026-09-30T03:07:00Z by scheduled
 M42 started 2026-09-30T06:09:24Z by scheduled
 M42b started 2026-09-30T06:37:06Z by scheduled
+M42 started 2026-09-30T09:07:23Z by scheduled
 M42b started 2026-09-30T09:36:51Z by scheduled
