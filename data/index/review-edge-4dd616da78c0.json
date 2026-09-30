@@ -22458,35 +22458,6 @@
         }
       ],
       "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-09-30",
-      "from": "scramble-for-africa",
-      "id": "scramble-for-africa--world-war-i--precondition-of",
-      "kind": "edge",
-      "origin": {
-        "tool": "assistant"
-      },
-      "review": {
-        "flags": [
-          "edge-drafted",
-          "a13-relations-pass"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "world-war-i",
-      "type": "precondition-of"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Claude (assistant draft, unreviewed)"
-        }
-      ],
-      "cites": [
         "wikipedia-en",
         "hall-2000-balkan-wars"
       ],
