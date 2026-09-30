@@ -12567,12 +12567,18 @@ anything was fixed.
 completed `success`** — that is the head that carries both merges with an
 index that is byte-identical at it, and it is the answer to deviation 1354.
 
-**Run 2068 on `8ee967a5`, this fire's final head, had `Validate records`
-green and its `Tests` step still running when this fire ended.** Runs 2058,
-2059, 2066 and 2067 were cancelled as each push superseded the last, which is
-ordinary; **run 2059 was the merge commit carrying its own stale index**, and
-it was cancelled before it could go red, so deviation 1354 cost a red run only
-on the last fire and not on this one — the local `validate --index` caught it
-here. The next fire should read run 2068's conclusion first: the tree it tests
-is the tree this fire's local 2,228 tests passed on, so a red there would be
-the runner and not the corpus.
+**Run 2070 on `b20d06d5`, this fire's final head, completed `success`** —
+`Set up`, `Validate records`, `Tests` and the index check, every step green.
+That is the head that carries everything: both merges, batch 48's records, the
+index rebuilt on top of them, and this whole section. It is the runner
+confirming the local 2,228, and `tests/lens-browser.test.mjs` 50 passed there
+as it did here.
+
+Runs 2058, 2059, 2066, 2067 and 2068 were cancelled as each push superseded
+the last, which is ordinary. Two of those cancellations are worth a line.
+**Run 2059 was the merge commit carrying its own stale index** — deviation 1354
+— and it was cancelled before it could go red, so the fault cost a red run on
+the last fire and not on this one, because the local `validate --index` caught
+it first. And **run 2068 was this fire's records-and-index head**, cancelled at
+`Tests` by the push that added this section; it is not a lost result, because
+2070's tree differs from it by this file alone and no record or index byte.
