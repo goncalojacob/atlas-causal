@@ -18183,24 +18183,26 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "indochina-wars",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
           "participants-from-p710",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "m42-filed"
         ],
         "note": "Wikidata Q635533 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.\n\nA7: the span was 1989-1991, the withdrawal and the Paris accords, not the war. The lead this summary quotes says, at the cached revision, \"an armed conflict from 1978 to 1989\". So 1978-1989, and the two days go: the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Cambodian–Vietnamese War"
     },
@@ -38839,7 +38841,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "sino-vietnamese-war",
       "kind": "event",
       "origin": {

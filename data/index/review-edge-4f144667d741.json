@@ -9133,6 +9133,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "cambodian-vietnamese-war",
+      "id": "cambodian-vietnamese-war--sino-vietnamese-war--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-75"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "sino-vietnamese-war",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "from": "capture-of-alexandria-1798",
       "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
