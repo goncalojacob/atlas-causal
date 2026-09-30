@@ -16488,9 +16488,12 @@ them, because it asserts `gaps.malformed` is empty. **This paragraph is written
 after deviation 1475** — the first time both suites were run, they were run on a
 tree whose history shards were stale, and they were green on it, because the two
 pure tests that can see rule 16 shell out to `validate --index` and the working
-tree agreed with itself at that moment. **Both suites are being run again on the
-corrected tree**, and the line below this one is the count that matters; until it
-is here, the 2,228 above is a count from a tree the runner rejected.
+tree agreed with itself at that moment. **Both suites were run again on the
+corrected tree and are green there: 2,228 tests, nothing skipped — 1,915 pure and
+313 browser**, the same counts as before, which is the point: nothing this batch
+argues changed, only the commit the history was read at. The 2,228 above was a
+count from a tree the runner rejected for rule 16, and this is the same count from
+one it does not.
 
 ### Deviation 1475 — the history shards are built from commits, so the index must be rebuilt *after* the records commit and not before it
 
