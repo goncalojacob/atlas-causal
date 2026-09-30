@@ -494,6 +494,15 @@
         }
       ]
     },
+    "french-revolution--venezuelan-war-of-independence--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of": {
       "from": "git",
       "versions": [

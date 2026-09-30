@@ -2512,6 +2512,7 @@
         }
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "british-raj-q129286",
       "kind": "place",
       "names": [
@@ -9153,6 +9154,7 @@
         }
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "kingdom-of-egypt",
       "kind": "place",
       "names": [
@@ -15497,7 +15499,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "republic-of-the-congo-leopoldville",
       "kind": "place",
       "names": [
@@ -21587,36 +21589,6 @@
       "rule": "place-unused"
     },
     {
-      "id": "british-raj-q129286",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "cabo-manglares",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "callao",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "department-of-moquegua",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
-      "id": "department-of-pasco",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
-    },
-    {
       "id": "france-q142",
       "kind": "place",
       "message": "place is referenced by no event",
@@ -21651,18 +21623,6 @@
       "kind": "place",
       "message": "place is referenced by no event",
       "rule": "place-unused"
-    },
-    {
-      "id": "kingdom-of-egypt",
-      "kind": "place",
-      "message": "place is referenced by no event",
-      "rule": "place-unused"
-    },
-    {
-      "id": "las-cabezas-de-san-juan",
-      "kind": "place",
-      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
-      "rule": "summary-imported"
     },
     {
       "id": "near-east",

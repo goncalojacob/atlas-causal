@@ -497,6 +497,15 @@
         }
       ]
     },
+    "siege-of-nuremberg--battle-of-the-alte-veste--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "siege-of-pemaquid-1689--battle-of-falmouth-1690--precondition-of": {
       "from": "git",
       "versions": [

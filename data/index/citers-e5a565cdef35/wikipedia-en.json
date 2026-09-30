@@ -4370,6 +4370,12 @@
     },
     {
       "dissent": false,
+      "id": "french-revolution--venezuelan-war-of-independence--inspired",
+      "kind": "edge",
+      "locator": "\"Venezuelan War of Independence\", revision 1376108556"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war--bucha-massacre--caused",
       "kind": "edge",
       "locator": "\"Bucha massacre\", revision 1370596341"
@@ -6284,6 +6290,12 @@
     },
     {
       "dissent": false,
+      "id": "scramble-for-africa--world-war-i--precondition-of",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1376647971"
+    },
+    {
+      "dissent": false,
       "id": "second-balkan-war--assassination-of-archduke-franz-ferdinand--precondition-of",
       "kind": "edge",
       "locator": "\"Second Balkan War\", revision 1370735824"
@@ -6611,6 +6623,12 @@
       "id": "siege-of-naples-1528--battle-of-capo-d-orso--caused",
       "kind": "edge",
       "locator": "\"Battle of Capo d'Orso\", revision 1370436279"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-nuremberg--battle-of-the-alte-veste--caused",
+      "kind": "edge",
+      "locator": "\"Siege of Nuremberg\", revision 1370744103"
     },
     {
       "dissent": false,

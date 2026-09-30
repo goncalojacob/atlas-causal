@@ -860,12 +860,13 @@
           "imported-facts",
           "m67-lined",
           "summary-from-lead",
-          "a15-country-refused"
+          "a15-country-refused",
+          "a9-place"
         ],
-        "note": "A15(6): the place was kingdom-of-egypt, from the item's P17, and it is refused because the item names 2 countries, so it names no one country. The lane is unchanged.",
+        "note": "A15(6): the place was kingdom-of-egypt, from the item's P17, and it is refused because the item names 2 countries, so it names no one country. The lane is unchanged. A9: placed at kingdom-of-egypt from the item's P276, a polity whose own dates cover this event; the earlier refusal was of the P17 country.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "1952 Egyptian revolution"
     },
@@ -3103,17 +3104,19 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-spring",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "filed-from-p361"
         ],
         "note": "A7: the interval was 2012–2012, with 27 February 2012 at both ends — the imported item's, which dates the handover that ended the revolution and not the revolution — while the record's own title says 2011. The cited article states the span at revision 1375746838: \"from January 2011 to February 2012\". The two exact dates are dropped rather than moved: the article gives months and not days, and a day nobody wrote down is not this run's to invent.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "2011 Yemeni revolution"
     },
@@ -14806,7 +14809,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "battle-of-the-alte-veste",
       "kind": "event",
       "origin": {
@@ -19350,12 +19353,13 @@
           "imported-facts",
           "summary-from-lead",
           "date",
-          "a15-country-refused"
+          "a15-country-refused",
+          "a9-place"
         ],
         "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966. A15(6): the place was republic-of-the-congo-leopoldville, from the item's P17,",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Congo Crisis"
     },
@@ -23866,7 +23870,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "french-revolution",
       "kind": "event",
       "origin": {
@@ -28189,6 +28193,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-israeli-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -28199,7 +28204,7 @@
         ],
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Lebanese Civil War"
     },
@@ -31887,12 +31892,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a15-country-refused"
+          "a15-country-refused",
+          "a9-place"
         ],
-        "note": "A15(6): the place was british-raj-q129286, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged.",
+        "note": "A15(6): the place was british-raj-q129286, from the item's P17, and it is refused because the item names 3 countries, so it names no one country. The lane is unchanged. A9: placed at british-raj-q129286 from the item's P276, a polity whose own dates cover this event; the earlier refusal was of the P17 country.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "partition of India"
     },
@@ -33931,17 +33937,19 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "interwar-period",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "filed-from-p361"
         ],
         "note": "A7: the span was 1911-1927, which is the Spanish campaigns in Morocco either side of the war. The cited article's first sentence says, at the cached revision 1374340065, \"fought from 1921 to 1926\". So 1921-1926, and the two days go: the article gives none.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Rif War"
     },
@@ -34809,6 +34817,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "scramble-for-africa",
       "kind": "event",
       "origin": {
@@ -35501,15 +35510,17 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "interwar-period",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Second Italo-Ethiopian War"
     },
@@ -37714,6 +37725,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "siege-of-nuremberg",
       "kind": "event",
       "origin": {
@@ -39340,15 +39352,17 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "interwar-period",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
-      "revised": "2026-09-23",
+      "revised": "2026-09-30",
       "status": "active",
       "title": "Soviet–Japanese border conflicts"
     },
@@ -43429,6 +43443,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "venezuelan-war-of-independence",
       "kind": "event",
       "origin": {
@@ -44560,7 +44575,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 20,
+      "degree": 21,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -46641,12 +46656,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "scramble-for-africa",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "second-battle-of-la-puerta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -46857,12 +46866,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "siege-of-nuremberg",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "siege-of-philippsburg-1644",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47020,12 +47023,6 @@
     },
     {
       "id": "valtellina-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "venezuelan-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
