@@ -12582,3 +12582,371 @@ the last fire and not on this one, because the local `validate --index` caught
 it first. And **run 2068 was this fire's records-and-index head**, cancelled at
 `Tests` by the push that added this section; it is not a lost result, because
 2070's tree differs from it by this file alone and no record or index byte.
+
+## Batch 49 — the Dutch capture of Luanda, and the alliance it put in the field at Kombi
+
+*30 September, the forty-fourth fire.* Two events, three edges, no new place,
+and **the africa cell before 1800 grew for the first time in four fires** — 17
+active to 19, its 1600s row from three to five.
+
+### What the fire found before it imported
+
+| | before | after |
+| --- | --- | --- |
+| corpus | **1,334 active** — 1,334 at the previous fire's final head and 1,334 once `origin/m42` had merged, because that merge's curation fire withdrew as many as it wrote | **1,336** |
+| **main** | **230** — five lower than the 235 the last stand recorded, because `origin/m42`'s curation fire filed five main events between the two fires | **230** — unchanged |
+| active edges between active events | 1,113 | **1,116** |
+| **largest connected component** | **739** | **741** — **both new events joined it** |
+| components | 407 | **407** |
+| events with no edge at all | 318 | **318** — neither new event is a singleton |
+| edges crossing an umbrella | 570 of 1,113 | **570 of 1,116** — **0 of the 3 written** |
+| **Africa before 1800** | **17 active, 0 main** | **19 active, 0 main** |
+| Asia before 1800 | 21 active, 0 main | 21 — untouched by this batch |
+| the `americas` lane | 360 active, 56 main | 360 — untouched by this batch |
+| Europe before 1900 | 258 active | 258 — paused by A15 (1), untouched |
+| Africa, all centuries | 208 active — A15 (1)'s gate is A10's 303 | **210** |
+| Asia, all centuries | 211 active — likewise | 211 |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 46 / 5 |
+| 1600s | 109 / 3 | **5 / 0** | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 20 | 154 / 39 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **210 / 29** | **211 / 60** | **360 / 56** |
+
+**A15 (1)'s gate is still shut**: africa 210 and asia 211 against 303, and
+nothing of Europe before 1900 until both reach it.
+
+### What was imported
+
+Both events are `P361`/`P527` children of `Q377269`, the **Dutch–Portuguese
+War**, which this atlas holds as `dutch-portuguese-war`, and both are filed
+under it by the item's own `P361`, so **the main count does not move**. The
+batch is the africa cell before 1800 because that is the cell that trails most
+inside this lane's partition — 17 active against asia's 21 and the `americas`'
+178.
+
+1. **`capture-of-luanda`** (`Q5037028`, africa, 25 August – 19 September 1641),
+   place `luanda` (`Q3897`), which the atlas already held, so no place record
+   was written. This is the record **move 4 of the last stand named**, and it
+   could not exist until the import tool changed: see *What A15 (8) cost* below.
+2. **`battle-of-kombi`** (`Q4871476`, africa, 29 October 1647), **placeless
+   with the lane named for it in the seeds file**, because the item carries no
+   `P625`, no `P276`, no `P131` and no `P17` — and the article says the
+   battlefield *"has not yet been located"*, so there is nothing to name. Its
+   summary is the cached lead at revision 1370445877. A15 (4) had nothing to
+   compare: the first sentence carries no date and the title no span.
+
+### The three edges
+
+1. **`capture-of-luanda--recapture-of-angola--precondition-of`**, from
+   *"Recapture of Angola"* § lead at revision 1370706489 — the revision the
+   `recapture-of-angola` record already cites: *"The Recapture of Angola, or
+   Reconquest of Angola, was a military campaign fought between the Portuguese
+   and the Dutch occupiers of Angola. Its most important episode was the siege
+   imposed by the Portuguese on the larger Dutch garrison of Luanda."* The
+   garrison is what 1641 put there, and the same lead closes the circle:
+   Salvador de Sá *"besieged them and regained it for Portugal exactly seven
+   years after its loss"*. This is not one event following another but one event
+   being the **object** of the next, which is why it is not the chronology
+   A15 (5) refuses. `precondition-of` and not `caused`: what brought the
+   Brazilian fleet in 1648 was the Portuguese decision to mount it.
+2. **`capture-of-luanda--battle-of-kombi--precondition-of`**, from *"Battle of
+   Kombi"* § Background at revision 1370445877: *"When the Dutch forces occupied
+   Luanda in 1641, the capital of the Portuguese colony of Angola, the
+   neighbouring countries of Kongo and Ndongo had welcomed them, sending
+   embassies and receiving promises of assistance in driving the Portuguese out
+   of the colony and central Africa."* The force that fought at Kombi — *"a
+   combined force from Kongo, Ndongo, and a Dutch contingent of 400 soldiers"* —
+   is that promise kept. `precondition-of` and not `caused`, because the article
+   gives the battle its own immediate cause, Njinga's defeat at Kavanga in 1646,
+   which batch 50 below then imported.
+3. **`dutch-brazil-1630-1654--capture-of-luanda--enabled`**, from the same
+   *"Recapture of Angola"* lead: *"In 1641 Johan Maurits sent an expedition
+   under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan
+   capital of Luanda."* The governor, the fleet and the port of departure are
+   the Brazilian colony's, and the same lead says why that colony wanted
+   Angola: it *"couldn't survive without the slaves from Angola"*. `enabled`
+   rather than `caused`, because the colony furnished the means and the command
+   and not the decision.
+
+**All three cross no umbrella**, and that is a fact about this vein rather than
+about the batch: `dutch-portuguese-war` is the parent of `capture-of-luanda`,
+`battle-of-kombi`, `recapture-of-angola` and `dutch-brazil-1630-1654` alike, so
+an edge inside this war shares a parent by construction. A15 (11)'s number is
+**0 of 3**. What the edges bought instead is the largest component, 739 → 741:
+`recapture-of-angola` was already on it and both new records now hang off it,
+and nothing was added to the pile of 318 events with no edge at all.
+
+### What A15 (8) cost, and why a tool change came first
+
+The last fire's move 4 said `Q5037028` was *"importable under A15 (8) and was
+not tried"*. It was not importable. The guard written on 29 September asked
+A15 (8)'s question — does the article the fetch landed on fold to any name the
+item gives itself? — and answered it by **refusing the item**. A15 (8) says the
+opposite: the record is written, takes the `article-is-redirect` flag, quotes no
+summary from that article, and has its span read from the section that names it.
+
+So the guard changed before the batch (**deviation 1200**): `leadIsRedirect` now
+decides whether a lead may be **quoted**, not whether the record **exists**. The
+record comes out with the flag, the item's own fields as its summary, and no
+`wikipedia-en` citation, because no article of the item's was read;
+`report.redirected` carries them and the report prints one line each. The test
+was written first (711) and failed on the missing export.
+
+Then the record was corrected by hand into the shape the four records kept on
+29 September already carry: the citation names the article, the revision **and
+the section** — *"Dutch Loango-Angola", revision 1370615995, § Capture of Luanda
+(1641)* — and the span is read from that section, which states *"On 25 August
+1641, the Dutch landed 2,145 troops near Luanda under the command of Jol"* and
+*"On 19 September, the Dutch drove them from that position and forced them to
+fall back to the Portuguese plantations along the Bengo River"*. The item's own
+`P585` gave the year alone. The note records that the next section adds *"The
+Dutch ruled Angola from 26 August 1641 to 21/24 August 1648"*, which a reviewer
+may prefer as the closing date, and `revised` and the second author say the
+assistant read the section.
+
+`capture-of-luanda` therefore carries the validator's `summary-imported`
+warning, and **that is the amendment working rather than a defect**: it is the
+one record in the atlas whose summary is the placeholder on purpose.
+
+### What the last fire's own refusal table got wrong
+
+Batch 48's table listed `Q4871476` Kombi among six children that *"name no held
+event at all, so no edge under A5"*. That was true of its **lead**, which is the
+one sentence the sweep read, and false of its **article**: § Background names the
+Dutch occupation of Luanda in 1641 in a sentence that states a cause. The
+occupation was not a held event then — this batch is what made it one — but the
+refusal would have stood even so, because the sweep never opened the section.
+**Move 1 of the last stand asked for exactly this and it is confirmed: reading
+only the lead is what caps the sweep's yield at 1 in 324.**
+
+### What this batch refused
+
+- **`Q10369402` Second Battle of Salvador** — its sitelink resolves to *Siege of
+  Salvador (1638)*, which the atlas already holds as `siege-of-salvador-1638`
+  from `Q932845`. The same article twice is not two records.
+- **`Q2092338` Battle of Swally** (asia, 1612) — a clean article, no redirect,
+  and **no causal sentence naming a held event**: § Background names the
+  Portuguese trade monopoly and no event at all. Left under A15 (1). Its dates
+  are also internally inconsistent — the lead says 29–30 November 1612, the item
+  says 9–10 December, and § Battle narrates 29–30 October — so it wants a person
+  before it wants a fire.
+- **`Q2032681` Battle of Bantam** (asia, 27 December 1601) — a clean article and
+  the earliest of the war's children; its lead names only *"a Portuguese fleet
+  under André Furtado de Mendonça, sent from Goa to restore Portuguese
+  authority"*. This fire then did what the last stand asked and read
+  `battle-of-cape-rachado`'s own article for a sentence naming it: **it names
+  Bantam nowhere.** So the vein is closed rather than open.
+- **`Q109314929`** — the war's tenth `P527` child, 1641–1648, `P31` `Q198` war,
+  with **no label and no sitelink in any language**. There is no article, so
+  there is nothing to quote and nothing to import.
+
+Refusal count for the batch: **4 candidates left**, none of them by A15 (5) —
+**the chronology refusal class refused nothing here**, because both quotes state
+a relation and not a sequence. A14 barred nothing: none of the three edges runs
+from a parent to its own child.
+
+### A15 (2), the last step
+
+`node tools/cache-evidence.mjs --fill` after the records: **2,747 `wikipedia-en`
+citations on active records, 2,674 on disk at the revision cited, 0 at a
+revision that should be on disk and is not.** The 73 remaining are the known
+class — a revision the cache cannot hold beside a more-cited one of the same
+item — and no record of this batch is among them.
+
+## Batch 50 — Kavanga, and the defeat that put 400 Dutch soldiers at Kombi
+
+*30 September, the same fire.* One event, one place, two edges, and the africa
+cell before 1800 at **20**.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 1,336 active | **1,337** |
+| **main** | **230** | **230** — unchanged |
+| active edges between active events | 1,116 | **1,118** |
+| **largest connected component** | **741** | **742** |
+| components | 407 | **407** |
+| events with no edge at all | 318 | **318** |
+| edges crossing an umbrella | 570 of 1,116 | **570 of 1,118** — **0 of the 2** |
+| **Africa before 1800** | **19 active, 0 main** | **20 active, 0 main** |
+| Africa, all centuries | 210 active | **211** — A15 (1)'s gate is 303 |
+| africa, 1600s | 5 / 0 | **6 / 0** |
+
+**`battle-of-kavanga`** (`Q139022658`, africa, March 1646). The item's own
+`P361` is `Q132776772`, the **Angolan Wars** (1579–1683), which this atlas does
+not hold, so the import wrote the record with no parent. **It is filed under
+`dutch-portuguese-war` by span and subject instead** (M62, A3): March 1646 is
+inside 1601–1661, and the article puts the Dutch on both sides of the question —
+Nzinga's forces were *"supported by some troops of the Dutch West India
+Company"*, and the governor *"declared war on March 1646"* after the Dutch *"had
+broken truces once more by capturing a Portuguese patache and killing its
+captain"*. So the main count stays at 230.
+
+Its place is **`dande-river`** (`Q1159397`), written by A9's `P276` step at
+`precision: region`, which is what `data/imports/wikidata-seeds.json` says a
+`Q4022` river is. `summary: null`, per A15 (3). The lane derives from the point
+(13.371 E, 8.474 S) and is africa, so A15 (7)'s guard had nothing to correct.
+
+`P710` names four participants — the Kingdom of Portugal, the Kingdom of Ndongo,
+the Kingdom of Matamba and the Dutch West India Company — and **only `Q45670` is
+an actor this atlas holds by item**, so no actor line was written. An event with
+no actor is not a defect (M67 A1).
+
+### The two edges
+
+1. **`capture-of-luanda--battle-of-kavanga--precondition-of`**, from *"Battle of
+   Kavanga"* § Context at revision 1370444967: *"After Dutch West India Company
+   captured Luanda in August 23 1641 … governor Pedro César de Meneses ordered
+   the evacuation of all residents to the stronghold of Massangano further
+   inland. From that point onwards, the Dutch made an alliance with Queen Nzinga
+   and the Kingdom of Kongo. The Portuguese came under attack from all sides,
+   cut-off from the sea."* The Dutch soldiers guarding Nzinga at Xila and the
+   Portuguese army marching out of Massangano are both what that sentence
+   describes. `precondition-of`: the article gives the battle its own trigger,
+   Nzinga's raid near Ambaca and the governor's declaration of war.
+2. **`battle-of-kavanga--battle-of-kombi--enabled`**, from *"Battle of Kombi"*
+   § Background at revision 1370445877: *"Following her defeat at Kavanga in
+   1646, however, the situation was sufficiently grave that the Dutch commander
+   decided to commit forces to her support. Thus, in 1647 a combined force from
+   Kongo, Ndongo, and a Dutch contingent of 400 soldiers … met the
+   Portuguese."* **This is the edge A15 (5) was applied to and did not refuse**:
+   the quote opens with *"Following"*, which is the refusal class's own opener,
+   and then states the cause outright, and the article's own *"Thus"* is the
+   link. `enabled` rather than `caused`, because what Kavanga produced was the
+   Dutch commitment that made the combined army possible.
+
+Both parents are `dutch-portuguese-war`, so **A15 (11)'s number is 0 of 2**
+again, for the same structural reason as batch 49. A14 barred nothing.
+
+A15 (2) after the records: **2,750 `wikipedia-en` citations on active records, 0
+at a revision that should be on disk and is not.**
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the forty-fourth fire: two batches, 49 and 50, three
+events, one place, five edges, and the africa cell before 1800 from 17 to 20 —
+the first time it has moved in five fires.*
+
+| | |
+| --- | --- |
+| corpus | **1,337 active** (1,334 at the merge of `origin/m42`) |
+| **main** | **230** — unchanged by both batches |
+| **largest connected component** | **742** (739 before) |
+| components | **407** (407 before) |
+| events with no edge at all | **318** (318 before) |
+| edges crossing an umbrella | **570 of 1,118** over the corpus; **0 of the 5** in this fire |
+| Europe before 1900 | **258 active** — paused by A15 (1), untouched |
+| the `americas` lane | **360 active, 56 main** — untouched this fire |
+| **Africa before 1800** | **20 active, 0 main** (17 before) |
+| **Asia before 1800** | **21 active, 0 main** — untouched |
+| Africa, all centuries | **211 active** — A15 (1)'s gate is A10's 303 |
+| Asia, all centuries | **211 active** — likewise |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 46 / 5 |
+| 1600s | 109 / 3 | **6 / 0** | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 20 | 154 / 39 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 29** | **211 / 60** | **360 / 56** |
+
+### What this fire did
+
+Took the claim (the last one just under three hours stale, the last push to
+`m42b` two hours old, so no live run), merged `origin/m42` up to its curation
+fire of 03:23Z, and **rebuilt the index inside the merge commit rather than
+after it**, which is deviation 1354 answered rather than repeated: there is now
+no head in this branch's history that carries a stale index.
+
+Then **the tool change A15 (8) had been asking for** (deviation 1200), with its
+test first, and **two batches in the africa cell before 1800**, which is the
+cell that trails most inside this lane's partition. Three events, one place,
+five edges, the main count unmoved at 230, and the largest component 739 → 742.
+
+### The next fire's moves, in order
+
+1. **Deviation 1201 — the eleven events A14 strands, and it is the sharpest
+   form the C8 question has taken.** The French invasion of Egypt and Syria's
+   eleven children — `battle-of-the-nile`, `battle-of-the-pyramids`,
+   `capture-of-alexandria-1798`, `battle-of-shubra-khit`, `revolt-of-cairo`,
+   `siege-of-el-arish`, `second-siege-of-el-arish`, `siege-of-jaffa`,
+   `battle-of-abukir-1799`, `siege-of-acre-1799`, `battle-of-mount-tabor-1799` —
+   are **one component of exactly eleven, edged among themselves and outside the
+   largest**, while their umbrella `french-invasion-of-egypt-and-syria` is
+   *inside* it, through
+   `french-invasion-of-egypt-and-syria--macau-incident-1799--enabled`. This fire
+   read all four of the cluster's biggest articles through
+   `namesHeldEvents()` and **not one names a held event outside the family in a
+   sentence that states a cause**. So the only edge that would join eleven
+   events to the largest component is the parent-to-child edge A14 bars until the
+   owner decides C8. **That is 11 events for one edge**, and no run can decide
+   it. It belongs in the question move 2 below puts to the owner.
+2. **Put the main-count question to the owner, narrowly** — unchanged from the
+   last three stands, and now with C8 beside it. Four veins have stopped on the
+   main count (the Inca Civil War, the Jewish arrival in New Amsterdam, the Kongo
+   chain of four, and the Angolan Wars umbrella this fire declined to write) and
+   C8 strands eleven more. **These are the two largest things holding this
+   lane**, and neither is a run's to settle.
+3. **The Angolan Wars (`Q132776772`, 1579–1683) is the umbrella this vein
+   wants.** `battle-of-kavanga`'s own `P361` names it; this fire filed Kavanga
+   under `dutch-portuguese-war` by span and subject instead, because writing the
+   umbrella would have raised the main count by one. Its own `P361` is
+   `Q5148448`, which was not read. If that resolves to something the atlas holds,
+   the umbrella can be written without the main count rising, and it would take
+   Luanda, Kavanga, Kombi and the recapture as a second parent under A8.
+4. **Three veins are now closed rather than open.** Batch 48's move 3 (the
+   Chilean four) is untouched and still open. But: the Dutch–Portuguese War's ten
+   `P527` children are exhausted — six held, two imported here, two unimportable;
+   **`Q2032681` Bantam is closed**, because `battle-of-cape-rachado`'s article
+   names it nowhere; and **the Malacca trio cannot be bridged** —
+   `battle-of-cape-rachado`, `siege-of-malacca-1606` and
+   `siege-of-malacca-1640-1641` are a component of three outside the largest, and
+   none of their three articles names a held event outside the trio causally.
+5. **Read sections, not leads.** Both of this fire's usable veins came from a
+   § Background and a § Context, and batch 48's own refusal table was wrong about
+   Kombi precisely because the sweep read only the lead. The scanner this fire
+   used is five lines over `tools/import/chronology.mjs`'s own
+   `namesHeldEvents()` and `statesACause()`, run over an article split into
+   sentences; it is what a widened sweep should be built on.
+6. **`tools/m42-filing.test.mjs` is red, and it is M42's.**
+   `2011-yemeni-revolution` was filed under `arab-spring` by `origin/m42`'s
+   curation fire at 03:23Z; the event's lane is asia, the umbrella's is africa,
+   and the two share no actor, which is exactly what that test forbids. **It
+   reproduces on `origin/m42` itself** — checked in a worktree at that commit —
+   so it is not this lane's to fix, and both records belong to M42's half of the
+   partition. It is the only failure in 1,916 pure tests.
+7. **Fetch through Node's own `fetch`, at 3 seconds, with back-off**
+   (deviation 1350). The paced, cached fetcher this fire wrote was rate-limited
+   once at the start and never again; the multi-title bulk form
+   (`titles=A|B|…`) returned nothing at all through the proxy, so single titles
+   with `explaintext=1` and no `exintro` is the shape that works.
+8. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, question 11
+   (the Nine Years' War, `Q152218`), `Q718893` *theater of war*, `Q20639061`,
+   `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, and the place pass on records that already exist, which is M42's.
+
+### Deviations this fire recorded
+
+**1200. The A15 (8) guard refused the item instead of flagging the record.**
+Written on 29 September, it asked the amendment's question and threw the answer
+away: an item whose English sitelink lands on a wider article came back
+`refused`, when A15 (8) says such a record is written with the
+`article-is-redirect` flag and no quoted lead. The fix is in
+`tools/import/wikidata.mjs`: `leadIsRedirect` decides whether a lead may be
+quoted, not whether the record exists. Written up under batch 49 above.
+
+**1201. A14 strands a whole umbrella's children, and the number is eleven.**
+Recorded under move 1 above. It is not a defect in A14 — the amendment is
+deliberate and the owner's C8 decision is what lifts it — but it is the first
+time a run has measured what it costs, and the measurement is the argument.
