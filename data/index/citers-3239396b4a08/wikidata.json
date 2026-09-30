@@ -3800,6 +3800,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-long-island",
+      "kind": "event",
+      "locator": "Q862751"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "Q259526"
@@ -4643,6 +4649,12 @@
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "Q4245345"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trenton",
+      "kind": "event",
+      "locator": "Q653664"
     },
     {
       "dissent": false,
@@ -7109,6 +7121,12 @@
       "id": "new-laws",
       "kind": "event",
       "locator": "Q1121487"
+    },
+    {
+      "dissent": false,
+      "id": "new-york-and-new-jersey-campaign",
+      "kind": "event",
+      "locator": "Q2630469"
     },
     {
       "dissent": false,

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-long-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q862751",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Long Island",
+    "pt": "Batalha de Long Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q862751"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    }
+  ],
+  "title": "Battle of Long Island",
+  "summary": "The English Wikipedia article \"Battle of Long Island\", at revision 1370268460, opens: \"The Battle of Long Island, also known as the Battle of Brooklyn and the Battle of Brooklyn Heights, was an action of the American Revolutionary War fought on August 27, 1776, at and near the western edge of Long Island in present-day Brooklyn. The British defeated the Continental Army and gained access to the strategically important Port of New York, which they held for the rest of the war. It was the first major battle to take place after the United States declared its independence on July 4, 1776, in Philadelphia. It was the largest battle of the Revolutionary War in terms of both troop deployment and combat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q862751, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 first major battle of the American Revolutionary War to take place after the Declaration of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-08-27"
+  },
+  "place": "brooklyn",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

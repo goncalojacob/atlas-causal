@@ -7592,7 +7592,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-bunker-hill",
       "kind": "event",
       "origin": {
@@ -11487,6 +11487,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Lomnice"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-long-island",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Long Island"
     },
     {
       "authors": [
@@ -16168,6 +16201,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Tornavento"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 2,
+      "id": "battle-of-trenton",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Trenton"
     },
     {
       "authors": [
@@ -30895,6 +30961,39 @@
       "revised": "2026-09-25",
       "status": "active",
       "title": "New Laws"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 2,
+      "id": "new-york-and-new-jersey-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "New York and New Jersey campaign"
     },
     {
       "authors": [

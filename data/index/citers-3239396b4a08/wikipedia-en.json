@@ -2258,6 +2258,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bunker-hill--new-york-and-new-jersey-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Bunker Hill\", revision 1375011142"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bunker-hill--new-york-and-new-jersey-campaign--caused",
+      "kind": "edge",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-camden--battle-of-cowpens--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Camden\", revision 1376333498"
@@ -2585,6 +2597,12 @@
       "id": "battle-of-liaoyang--battle-of-shaho--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Shaho\", revision 1370589119, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-long-island--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Trenton\", revision 1377458911"
     },
     {
       "dissent": false,
@@ -5669,6 +5687,18 @@
       "id": "new-laws--battle-of-jaquijahuana--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    },
+    {
+      "dissent": false,
+      "id": "new-york-and-new-jersey-campaign--battle-of-trenton--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Trenton\", revision 1377458911"
+    },
+    {
+      "dissent": false,
+      "id": "new-york-and-new-jersey-campaign--battle-of-trenton--caused",
+      "kind": "edge",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
     },
     {
       "dissent": false,
@@ -11012,6 +11042,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-long-island",
+      "kind": "event",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "\"Battle of Long Tan\", revision 1372094029"
@@ -11861,6 +11897,12 @@
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "\"Battle of Tornavento\", revision 1373646333"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trenton",
+      "kind": "event",
+      "locator": "\"Battle of Trenton\", revision 1377458911"
     },
     {
       "dissent": false,
@@ -14243,6 +14285,12 @@
       "id": "new-laws",
       "kind": "event",
       "locator": "\"New Laws\", revision 1366305827"
+    },
+    {
+      "dissent": false,
+      "id": "new-york-and-new-jersey-campaign",
+      "kind": "event",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
     },
     {
       "dissent": false,

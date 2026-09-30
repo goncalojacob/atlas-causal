@@ -131,6 +131,15 @@
         }
       ]
     },
+    "battle-of-bunker-hill--new-york-and-new-jersey-campaign--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-camden--battle-of-cowpens--reacted-to": {
       "from": "git",
       "versions": [
@@ -218,6 +227,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-long-island--battle-of-trenton--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -683,6 +701,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "new-york-and-new-jersey-campaign--battle-of-trenton--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

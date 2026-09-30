@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "new-york-and-new-jersey-campaign--battle-of-trenton--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-56"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trenton\", revision 1377458911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
+    }
+  ],
+  "from": "new-york-and-new-jersey-campaign",
+  "to": "battle-of-trenton",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The Trenton article, at revision 1377458911, names the campaign as the reason the attack was attempted at all: “The Continental Army had previously suffered several defeats in New York and had been forced to retreat through New Jersey to Pennsylvania. Morale in the army was low; to end the year on a positive note, George Washington, Commander-in-Chief of the Continental Army, devised a plan to cross the Delaware River on the night of December 25–26 and surround the Hessians’ garrison.” The words “suffered several defeats” carry the article's own link to the campaign, so the cause the sentence names is the campaign and not one of its battles. The campaign article, at revision 1370629551, supplies the other half — the target the campaign had left exposed: “Howe ordered his troops into winter quarters in December, establishing a chain of outposts from New York City to Burlington, New Jersey”, and, in its account of the counterattack, “While worrying over how to hold his army together, Washington organized attacks on the relatively exposed British outposts. German commanders Carl von Donop and Johann Rall, whose brigades were at the end of the chain of outposts, were frequent targets of these raids.” Motive and target both come from the campaign, which is why this is `caused`. The campaign is filed under `american-revolutionary-war` and so is Trenton — both from their own `P361`, which is `Q40949` for each — so this edge runs between siblings and A14's parent-to-child bar does not reach it. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

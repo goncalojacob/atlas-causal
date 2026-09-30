@@ -461,6 +461,15 @@
         }
       ]
     },
+    "battle-of-long-island": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-madras": {
       "from": "git",
       "versions": [
@@ -833,6 +842,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-trenton": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -1300,6 +1318,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "new-york-and-new-jersey-campaign": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

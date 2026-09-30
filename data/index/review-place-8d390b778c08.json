@@ -2708,6 +2708,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "brooklyn",
+      "kind": "place",
+      "names": [
+        "Brooklyn"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -13049,6 +13076,36 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "new-york-state",
+      "kind": "place",
+      "names": [
+        "New York",
+        "Nova Iorque",
+        "New York (state)",
+        "Nova Iorque (estado)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -19961,6 +20018,35 @@
       "kind": "place",
       "names": [
         "Třebel"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "trenton-new-jersey",
+      "kind": "place",
+      "names": [
+        "Trenton",
+        "Trenton, New Jersey",
+        "Trenton (Nova Jérsia)"
       ],
       "origin": {
         "tool": "wikidata"

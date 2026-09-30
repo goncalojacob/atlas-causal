@@ -5028,6 +5028,35 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
+      "from": "battle-of-bunker-hill",
+      "id": "battle-of-bunker-hill--new-york-and-new-jersey-campaign--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-56"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "new-york-and-new-jersey-campaign",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
       "from": "battle-of-camden",
       "id": "battle-of-camden--battle-of-cowpens--reacted-to",
       "kind": "edge",
@@ -6232,6 +6261,35 @@
       "status": "active",
       "to": "battle-of-shaho",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battle-of-long-island",
+      "id": "battle-of-long-island--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-56"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-trenton",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -19697,6 +19755,35 @@
       "status": "active",
       "to": "battle-of-jaquijahuana",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "new-york-and-new-jersey-campaign",
+      "id": "new-york-and-new-jersey-campaign--battle-of-trenton--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-56"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-trenton",
+      "type": "caused"
     },
     {
       "authors": [

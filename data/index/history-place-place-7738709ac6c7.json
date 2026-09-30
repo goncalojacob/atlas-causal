@@ -1294,6 +1294,15 @@
         }
       ]
     },
+    "brooklyn": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "brussels": {
       "from": "git",
       "versions": [
@@ -6482,6 +6491,15 @@
         }
       ]
     },
+    "new-york-state": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "nice": {
       "from": "git",
       "versions": [
@@ -9854,6 +9872,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "trenton-new-jersey": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

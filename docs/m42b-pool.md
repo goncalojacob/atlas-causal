@@ -14478,3 +14478,317 @@ cheap sentences are. The crossings live at the vein's ends, which is what batch
    Chilean four, the Almagrista eight and their missing decree, batch 52's three
    16th-century refusals — **do not re-walk those** — and the place pass on
    records that already exist, which is M42's.
+
+## Batch 56 — the New York and New Jersey campaign, the anchor the last two fires wanted
+
+**Where it came from.** The last stand's move 2, taken as written: *"Take Long
+Island and Trenton together with an anchor, or not at all."* The anchor was
+named there — `Q2630469` *New York and New Jersey campaign* — and it is what
+made the pair importable, because batch 55 had read both articles, found the
+Long Island → Trenton sentence well-carried, and left them anyway rather than
+add a component of two. The lane and century are the **americas, 18th century**,
+which stood at **71** active before the batch. The
+South-and-Central-before-North guard was measured at 244 against 55 by batch 53
+and is satisfied several times over; North America is open. A15 (1) still holds
+africa and asia at 211 and 212 against A10's 303 and no fire in either lane can
+move either number until the owner answers, so this is the trailing cell a fire
+can reach.
+
+**Three records, and the reason each was taken.**
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `new-york-and-new-jersey-campaign` | `Q2630469` | 1776-07 to 1777-03 | `american-revolutionary-war` | `new-york-state` (new, `region` precision) |
+| `battle-of-long-island` | `Q862751` | 1776-08-27 | `american-revolutionary-war` | `brooklyn` (new, `city`) |
+| `battle-of-trenton` | `Q653664` | 1776-12-26 | `american-revolutionary-war` | `trenton-new-jersey` (new, `city`) |
+
+All three are filed **from their own `P361`**, which is `Q40949` for each — the
+war, and not the campaign, even for the two battles the campaign contains. That
+is Wikidata's own filing and it is what the run has done in every batch; it is
+also, as the edges below show, what decides whether A14 bites. **The main count
+is 230 before the batch and 230 after it**, because none of the three is
+top-level. The three new places carry `summary: null` (A15 (3)) and all three
+derive to `americas`, which is the events' own lane, so the 24 September lane
+guard passes on all three. **No record in this batch is placeless**, so deviation
+1364 does not arise.
+
+**A15 (4) held on all three and moved nothing.** Long Island's article opens
+*"fought on August 27, 1776"* and Trenton's *"on the morning of December 26,
+1776"* — both agree day and month with the item's `P585`. The campaign's first
+sentence dates itself only to *"1776 and the winter months of 1777"*, which
+names no day or month to compare, so `P580` 1776-07 and `P582` 1777-03 stand as
+the item gives them. There is no deviation 1361 in this batch.
+
+**The edges: three written, five refused.**
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battle-of-bunker-hill` → `new-york-and-new-jersey-campaign` | `caused` | the campaign's § Background, *"When news of this expensive British victory reached London, General William Howe and Lord George Germain … determined that a 'decisive action' should be taken against New York City … as well as troops hired from small German states"*, and Bunker Hill's own *"The battle led the British to adopt a more cautious planning … evident in the subsequent New York and New Jersey campaign. The costly engagement also convinced the British of the need to hire substantial numbers of Hessian auxiliaries"* |
+| `new-york-and-new-jersey-campaign` → `battle-of-trenton` | `caused` | Trenton's lead, *"The Continental Army had previously [[New York and New Jersey campaign\|suffered several defeats]] in New York … Morale in the army was low; to end the year on a positive note, … Washington … devised a plan"*, and the campaign's own § Counterattack, *"Washington organized attacks on the relatively exposed British outposts"* |
+| `battle-of-long-island` → `battle-of-trenton` | `precondition-of` | Trenton's § Background, *"The Americans had been [[Battle of Long Island\|ousted from New York]] … Ninety percent of the Continental Army soldiers who had served at Long Island were gone. Men had deserted, feeling that the cause for independence was lost"* |
+
+The first two each carry **two articles with a locator apiece**, which is M72's
+second author. The third carries **one, and says so in the record**: the Long
+Island article attributes the retreat across New Jersey to White Plains and Fort
+Washington (*"Because of these defeats, Washington and the army retreated across
+New Jersey and into Pennsylvania"*) and not to Long Island, so it is not a
+second author for this claim and is not cited as one. All five distinct
+revisions cited were on disk when the edges were written — the three this fire's
+own import cached, plus Bunker Hill at 1375011142, which the atlas cites
+already. All three edges are `probable`: rule 22, because the only sources the
+atlas can open here are the articles themselves.
+
+**Two ancestors for Trenton, and why that is convergence and not a second copy.**
+The Trenton article states the cause twice at two granularities — its lead names
+the campaign, its § Background names Long Island — and this batch writes both,
+with different types, because they are different claims. The campaign supplied
+the motive *and* the target (Howe's overextended chain of outposts), which is
+`caused`; Long Island supplied the state the army was in, which is
+`precondition-of`. Two branches feeding one endpoint is the query this atlas
+exists to answer, so writing both is not the duplication question 12 asks about:
+**nothing held was replaced and question 12 is not settled here.** It is,
+however, a second instance of its shape, and the owner may want to read the two
+together.
+
+**A15 (11), and the finding of this fire: A14 is what strands the land war.**
+This batch crossed **no umbrella** — all three edges run between children of
+`american-revolutionary-war` — and the corpus figure stands at **579**. But the
+component arithmetic says something sharper than batch 55's report did, and it
+is worth stating plainly:
+
+> The land war of the American Revolution is **a component of six**:
+> `battles-of-lexington-and-concord`, `siege-of-boston`,
+> `battle-of-bunker-hill`, and this batch's three. It is **not** part of the
+> 756. Meanwhile `battles-of-saratoga`, `siege-of-yorktown`,
+> `united-states-declaration-of-independence`, `treaty-of-paris-1783`,
+> `battle-of-bennington`, `battle-of-camden`, `battle-of-cowpens`,
+> `battle-of-guilford-court-house` and `american-revolutionary-war` **itself**
+> are all inside the 756.
+
+So the war record sits in the main component and six of its own children sit on
+an island beside it, and **the one edge that would join them is the one A14
+forbids**: `american-revolutionary-war` → any of the six is parent to child.
+Every causal sentence this fire read that reaches out of the island runs either
+parent-to-child or into a record the atlas does not hold (the Boston Tea Party,
+the Intolerable Acts, the Powder Alarm, Harlem Heights, White Plains, Fort
+Washington, Princeton, Assunpink Creek, the Philadelphia and Saratoga campaigns
+— **none of them is here**). The largest component is therefore **756 before
+this batch and 756 after it**, and the island went from three to six. That is
+not a batch that failed to find its edges; it is C8 costing the graph a
+measurable six events, and it is the clearest instance of the cost this lane has
+produced.
+
+**What was refused, and why each refusal is the rule working.**
+
+| candidate | refused because |
+| --- | --- |
+| `siege-of-boston` → `battle-of-long-island`, from Long Island's *"After defeating the British in the siege of Boston on March 17, … Washington relocated his army to defend the port city of New York"* | **chronology with no cause stated** — A15 (5)'s class, refused by batch 55 on the same sentence and refused again. The next sentence puts the cause on Washington's reading of the harbour, not on the siege |
+| `new-york-and-new-jersey-campaign` → `battles-of-saratoga`, from the campaign's § Next steps, *"The British planned two major operations for the 1777 campaign season … Execution of this plan ultimately failed, ending with the surrender of Burgoyne's army at Saratoga"* | **chronology, and it is the edge this fire most wanted.** It would have joined the island to the 756. The section names a season and a plan and attributes neither to the campaign's outcome; *"following which France entered the war"*, three sentences later, is A15 (5)'s opener exactly. A bridge has to be read, not wanted |
+| `battle-of-trenton` → `anglo-french-war-1778-1783`, from the campaign's § Aftermath, *"The news of Washington's successes reached Paris at a critical time … the French diplomatic position noticeably hardened: 'that M. de Vergennes is hostile in his heart and anxious for the success of the Rebels I have not a shadow of a doubt'"* | **the source carries a hardening of diplomatic posture and not a war.** France's entry is attributed to Saratoga everywhere the atlas already cites it; reading a declaration of war out of Stormont's letter is the substitution A15 (5) exists to stop, and it would have been this lane's umbrella crossing, which is exactly why it was not written |
+| `battle-of-bunker-hill` → `united-states-declaration-of-independence`, from Bunker Hill's *"The costly engagement also convinced the British of the need to hire substantial numbers of Hessian auxiliaries"* joined to the Declaration's *"Support for declaring independence grew even more when it was confirmed that King George had hired German mercenaries to use against his American subjects"* | **neither article states the link; only this fire's reading of the two together does.** It would have bridged the island to the 756 at the Declaration, which is the single most valuable edge in this vein, and it is still refused: the Bunker Hill article does not say the battle bore on the Declaration and the Declaration article names no battle as the reason the mercenaries were hired. An edge assembled out of two articles' halves is an assistant-written historical claim, which the one non-negotiable line in `CLAUDE.md` forbids whatever the draft marker says. **A person reading both articles may well write this edge; a fire may not** |
+| `united-states-declaration-of-independence` → `battle-of-trenton`, from the Declaration's *"After reading it, Washington ordered that it be read by his Continental Army troops, who were demoralized following recent military defeats. A week later, Washington led the crossing of the Delaware … resulting in a much-needed military victory in the Battle of Trenton"* | **the subject of the sentence is *Common Sense*, which the atlas does not hold, and the link to Trenton is "A week later" — chronology.** Worth writing down because the obvious next move it suggests does *not* work: a `Common Sense` record would be well-carried into the Declaration (*"As Common Sense was circulated … public support for independence from Great Britain steadily increased"*) but only chronologically into Trenton, so it joins the 756 and does **not** bridge the island |
+
+**Where the count moved.**
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1357 | **1360** |
+| main | 230 | **230** |
+| largest connected component | 756 | **756** |
+| the land-war island | 3 | **6** |
+| edges crossing an umbrella | 579 | **579** |
+| edges inside one umbrella | 569 | **572** |
+| active edges | 1148 | **1151** |
+
+| century | europe | africa | asia | americas | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | — | 9 / 5 |
+| 16th c. | 44 / 1 | — | — | 51 / 5 | — | 95 / 6 |
+| 17th c. | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 | — | 189 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 17 / 0 | **74 / 2** | — | 167 / 5 |
+| 19th c. | 39 / 9 | 22 / 1 | 8 / 6 | 57 / 8 | — | 126 / 24 |
+| 20th c. | 245 / 60 | 93 / 23 | 154 / 38 | 86 / 30 | — | 578 / 151 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 | — | 196 / 29 |
+| **all** | **555 / 85** | **211 / 31** | **212 / 58** | **382 / 56** | — | **1360 / 230** |
+
+### Deviation 1365 — the pool tool's "largest component" hides which component a batch grew
+
+`tools/m42-pool.mjs` reports `largestComponent`, and a batch whose records join a
+*small* component moves that number not at all. Batch 55 read 752 → 756 and was
+right about the four of its five records that joined the 756; the fifth,
+`battle-of-bunker-hill`, joined a component of two and nothing in the batch note
+recorded that the land war was a separate island. This fire spent a read
+discovering it. The number a batch in a thin vein needs is **the size of the
+component its own records are in**, which the tool does not print. Until it
+does, a batch working a vein should compute it — six lines over `data/events/`
+and `data/edges/` — and report it beside the largest, as the table above does.
+
+
+### Deviation 1366 — `tests/m67.test.mjs` test 19 is red on `origin/m0`, and has been
+
+The suite this fire ran came back **1928 of 1929**, and the one failure is not
+this batch's and not the merge's alone:
+
+```
+not ok 19 - every main event that still names nothing is listed in the measurement
+  error: 'docs/m67-umbrellas.md does not say why "decolonisation-of-asia" was left bare'
+```
+
+The test walks **every** active event with no parent, no `actors` and no `place`
+and requires `docs/m67-umbrellas.md` to name it in backticks. Seven records fail
+it on this branch, and the assertion stops at the first:
+
+| record | when | on `origin/m0`? | named in `origin/m0`'s `m67-umbrellas.md`? |
+| --- | --- | --- | --- |
+| `black-monday` | 1987-10-19 | yes, and bare | no |
+| `1957-1958-influenza-pandemic` | 1957–1958 | yes, and bare | no |
+| `hong-kong-flu` | 1968–1970 | yes, and bare | no |
+| `dutch-portuguese-war` | 1601–1661 | yes, and bare | no |
+| `franco-russian-alliance` | 1891–1917 | yes, and bare | no |
+| `atlantic-revolutions` | 1765–1849 | yes, and bare | no |
+| `decolonisation-of-asia` | 1898–2002 | no — `origin/m42` batch 74 | no |
+
+**Six of the seven are bare mains on the trunk itself**, so the test is red on
+`origin/m0` before either records lane touches anything, and the seventh is
+`origin/m42`'s, whose own `docs/m42-pool.md` accounts for it in five places
+while `m67-umbrellas.md`, the only document this test reads, does not. Section 15
+of that document is the template: a period umbrella *"names neither an actor nor
+a place … because a period has neither to give"*, and it lists
+`decolonisation-of-africa`, `interwar-period`, `scramble-for-africa`,
+`arab-spring`, `indochina-wars` and `afghan-conflict` under exactly that reason.
+`decolonisation-of-asia` and `atlantic-revolutions` belong in the same
+paragraph.
+
+**This batch adds nothing to it**: all three of its events carry a `place` and a
+`parent`, so none is bare. **It is not fixed here either**, and that is the
+deviation: six of the seven records are neither lane's, and writing why somebody
+else left a record bare is asserting something about a record this fire did not
+read. It is one paragraph in `docs/m67-umbrellas.md` for whoever owns those six
+— and it is worth doing, because until it is done **every fire in both records
+lanes will read a red suite and have to re-establish that the red is the
+trunk's.** A fire that reads `m67` red should check this deviation first.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the fiftieth fire: two merges (`origin/m0` and
+`origin/m42`), one batch, 56, three events, three places, three edges, and the
+americas' 18th century from 71 to 74. The main count did not move. **The fire's
+finding is a measured price for C8**: the land war of the American Revolution is
+a connected component of **six** sitting beside its own parent, which is inside
+the 756, and the one edge that would join them is the parent-to-child edge A14
+forbids. The batch grew the island from three to six and left the largest
+component exactly where it found it. That is not a batch short of edges — five
+candidates were read and refused, each for a stated reason — it is the shape of
+the corpus showing through.*
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1357 | **1360** |
+| main | 230 | **230** |
+| largest connected component | 756 | **756** |
+| the land-war island | 3 | **6** |
+| edges crossing an umbrella | 579 | **579** |
+
+### The next fire's moves, in order
+
+1. **The three questions to the owner are unchanged and none of them is a run's
+   to settle**: the **main count**; **C8**; and **A15 (1)'s Europe pause closing
+   the only door into pre-1800 africa/asia**. Africa and Asia stand at 211 and
+   212 against A10's 303 and **no fire in either lane can move either number
+   until the owner answers.** Do not spend a fire re-establishing this.
+2. **C8 now has a number, and it is the thing to put in front of the owner.**
+   Six events — `battles-of-lexington-and-concord`, `siege-of-boston`,
+   `battle-of-bunker-hill`, `new-york-and-new-jersey-campaign`,
+   `battle-of-long-island`, `battle-of-trenton` — are a component of their own
+   while `american-revolutionary-war`, `battles-of-saratoga`,
+   `siege-of-yorktown`, `united-states-declaration-of-independence`,
+   `treaty-of-paris-1783` and the whole naval and southern war are in the 756.
+   A14 is what keeps them apart. **This is the first place in this lane where the
+   cost of C8 can be counted rather than argued about**, and batch 56's note has
+   the list. A fire should not decide C8; it should make sure the owner can see
+   this.
+3. **Do not re-walk the five refusals of batch 56.** They are in its note with
+   the quote and the reason: `siege-of-boston` → `battle-of-long-island`
+   (chronology, refused twice now); `new-york-and-new-jersey-campaign` →
+   `battles-of-saratoga` (chronology, and it is the bridge this fire most
+   wanted); `battle-of-trenton` → `anglo-french-war-1778-1783` (the source
+   carries a diplomatic hardening, not a war); `battle-of-bunker-hill` →
+   `united-states-declaration-of-independence` (**the valuable one** — it would
+   bridge the island, and it is refused because neither article states the link
+   and only a reading of the two together does, which is the one non-negotiable
+   line in `CLAUDE.md`); and `united-states-declaration-of-independence` →
+   `battle-of-trenton` (the sentence's subject is *Common Sense*, and the link to
+   Trenton is "A week later").
+4. **A `Common Sense` record does not bridge the island** — batch 56 checked, so
+   that this fire's read is not spent again. The Declaration's article carries it
+   well into the Declaration (*"As Common Sense was circulated … public support
+   for independence from Great Britain steadily increased"*) and only
+   chronologically into Trenton. It would be a good record; it joins the 756 and
+   leaves the six where they are.
+5. **What the island's own vein still has, and it is filling-in rather than
+   bridging**: `Q1545025` *Battle of Harlem Heights*, `Q1361887` *Battle of White
+   Plains*, `Q1370354` *Battle of Fort Washington*, `Q674167` *Battle of
+   Princeton*, `Q2915177` *Battle of the Assunpink Creek* (QIDs not verified by
+   this fire — search them before use). Every one of them is inside the same
+   umbrella and every edge between them will be another edge inside it, so a
+   batch taken from here grows the island and moves neither the largest component
+   nor the crossing figure. **That is a legitimate batch** — the americas' 18th
+   century is the trailing cell and these are real records — but its note must
+   say so rather than report a component number that did not move.
+6. **Deviation 1366 — the suite is red on the trunk, and it is not yours.**
+   `tests/m67.test.mjs` test 19 fails on `origin/m0` itself: six bare main events
+   (`black-monday`, `1957-1958-influenza-pandemic`, `hong-kong-flu`,
+   `dutch-portuguese-war`, `franco-russian-alliance`, `atlantic-revolutions`) are
+   on the trunk and named nowhere in `docs/m67-umbrellas.md`, and
+   `decolonisation-of-asia` from `origin/m42` batch 74 is a seventh. **Read the
+   deviation before spending a fire on it**; batch 56 added nothing to it (all
+   three of its events carry a place and a parent) and did not fix it, because
+   six of the seven are neither records lane's. One paragraph in section 15's
+   style closes it for whoever owns them.
+7. **Deviation 1365 is the one this fire adds about measurement**:
+   `tools/m42-pool.mjs` reports
+   `largestComponent`, which a batch working a small component moves not at all,
+   and nothing in the tool prints the size of the component a batch's own records
+   are in. Batch 55 read 752 → 756 and did not notice that Bunker Hill had joined
+   an island of two. Until the tool prints it, **a batch in a thin vein should
+   compute its own component size** — six lines over `data/events/` and
+   `data/edges/` — and report it beside the largest, as batch 56's table does.
+8. **Deviation 1363 bit again and the second rebuild fixed it again.** This fire
+   merged `origin/m0` and `origin/m42`, rebuilt to resolve the merge, committed,
+   and one history shard was still wrong until a **second** rebuild with the
+   merge commit as `HEAD`. Do that second rebuild as its own commit before
+   anything else. The `origin/m42` merge also conflicted in 256 `data/index/`
+   files (all rename/rename on the hashed names), `sources.html`,
+   `STATUS.md` and `tools/import/cache/titles.json`; **no record conflicted and
+   no test file did**. `titles.json` is nested — `{ generated, titles }` — so a
+   union merge has to merge `titles`, not the top level; merging the top level
+   silently keeps one side's whole table.
+9. **Deviations 1361 and 1362 are open for the owner**, unchanged. Neither bit
+   this batch: A15 (4) moved no date (the campaign's first sentence names no day
+   or month, so `P580`/`P582` stand as given) and all five cited revisions were
+   the ones on disk. A15 (2)'s recache reports **0 revisions that should be on
+   disk and are not**.
+10. **Deviation 1360 is still unfixed** — `namesHeldEvents()` matches titles and
+   cannot see a fort called by its city. This fire read every article by hand,
+   § Background, § Aftermath and § Next steps included, which is what found both
+   written edges' second authors and four of the five refusals.
+11. **`Special:Export` before the API** — deviation 1357, unchanged and used for
+   all three articles this fire imported; `Special:EntityData/<qid>.json`
+   likewise, and `index.php?oldid=<rev>&action=raw` for the two articles read at
+   a revision the atlas already cites, which is how a quote from a held record's
+   *body* is checked against the revision it is cited at (the cache holds only
+   the lead). `wbsearchentities` again returned an unparseable body on the first
+   attempt and answered on a retry four seconds later — **wrap the QID lookups in
+   a retry loop**; the import tool's own fetches and `tools/cache-evidence.mjs
+   --fill` both ran clean.
+12. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, deviation
+   1358, question 11 (the Nine Years' War, `Q152218`), question 12 (batch 56 adds
+   a second instance of its shape and settles nothing: Trenton now takes two
+   ancestors at two granularities, deliberately, and nothing held was replaced),
+   `Q718893` *theater of war*, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`,
+   the nine atlas umbrellas with no `wikidata`, the Gulf Coast campaign umbrella
+   (`Q5617470`, which A9 cannot place), the Angolan Wars umbrella (`Q132776772`),
+   batch 48's Chilean four, the Almagrista eight and their missing decree, batch
+   52's three 16th-century refusals — **do not re-walk those** — and the place
+   pass on records that already exist, which is M42's.
