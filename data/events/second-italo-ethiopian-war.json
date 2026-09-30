@@ -17,14 +17,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-30",
+  "revised": null,
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead",
-      "filed-from-p361"
+      "summary-from-lead"
     ]
   },
   "origin": {
@@ -60,7 +59,7 @@
   "place": "ethiopian-empire",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "interwar-period",
+  "parent": null,
   "category": "war",
   "actors": []
 }

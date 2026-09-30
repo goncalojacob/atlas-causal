@@ -17,15 +17,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-30",
+  "revised": null,
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "a7-widened",
-      "filed-from-p361"
+      "a7-widened"
     ],
     "note": "A7: the interval was 2012–2012, with 27 February 2012 at both ends — the imported item's, which dates the handover that ended the revolution and not the revolution — while the record's own title says 2011. The cited article states the span at revision 1375746838: \"from January 2011 to February 2012\". The two exact dates are dropped rather than moved: the article gives months and not days, and a day nobody wrote down is not this run's to invent."
   },
@@ -64,6 +63,6 @@
   "place": "yemen-q805",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "arab-spring",
+  "parent": null,
   "actors": []
 }
