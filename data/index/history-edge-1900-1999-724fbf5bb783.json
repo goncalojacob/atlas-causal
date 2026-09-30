@@ -1467,6 +1467,15 @@
         }
       ]
     },
+    "battle-of-spion-kop--battle-of-the-tugela-heights--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-taejon--battle-of-the-pusan-perimeter--enabled": {
       "from": "git",
       "versions": [
@@ -1606,6 +1615,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-vaal-krantz--battle-of-the-tugela-heights--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

@@ -583,6 +583,15 @@
         }
       ]
     },
+    "second-battle-of-colenso--battle-of-the-tugela-heights--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "second-battle-of-porto--battle-of-talavera--precondition-of": {
       "from": "git",
       "versions": [
@@ -681,6 +690,15 @@
       ]
     },
     "siege-of-kimberley--battle-of-modder-river--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "siege-of-kimberley--battle-of-paardeberg--enabled": {
       "from": "git",
       "versions": [
         {
