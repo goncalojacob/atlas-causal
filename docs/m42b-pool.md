@@ -12950,3 +12950,53 @@ quoted, not whether the record exists. Written up under batch 49 above.
 Recorded under move 1 above. It is not a defect in A14 — the amendment is
 deliberate and the owner's C8 decision is what lifts it — but it is the first
 time a run has measured what it costs, and the measurement is the argument.
+
+### Deviation 1202 — the index is built from commits, so it is built after them
+
+Batches 49 and 50 both pushed a **stale index**, and both pushed it in exactly
+three files: `history-event-1600-1699-*.json`,
+`history-edge-1600-1699-*.json` and `history-place-place-*.json`, with
+`manifest.json` naming them. `core`, `attributes`, `search`, `citers`,
+`sources`, `review`, `grounds` and `presences` were all correct.
+
+The reason is `tools/lib/history.mjs`: a record's versions come out of **the
+commits that touched its file**. Build the index while the batch's records are
+still uncommitted and the history shards have never heard of them. Both batches
+ran `node tools/build-index.mjs` before `git commit`, which is the natural order
+for everything else in the index and the wrong one for this part of it.
+
+**And `validate --index` cannot catch it in that working tree.** It compares the
+committed index against a fresh build made in the same tree — against the same
+uncommitted records — so the two agree and it reports nothing. Run again after
+the records are committed, it reports rule 16 immediately. What actually found
+it was the full pure suite: five tests, `tests/build-index.test.mjs`'s *"the
+repository data/ validates and its index is fresh"* and
+`tests/validate-cli.test.mjs`'s *"validate.mjs passes on the repository data"*
+among them.
+
+**So the ordering is: records committed, then build, then the index's own
+commit.** This is what deviation 1354 has been groping at for three fires — it
+said "two commits" and the thing that matters is not the count but that the
+second build sees the first commit. This fire's own merge commit happened to be
+right for the same reason: the records the merge brought in were already
+committed when the index was built on top of them.
+
+### The proposed patch for the red check, which is M42's to apply
+
+`tests/m42-filing.test.mjs` → *"every event filed under one of these umbrellas
+is the umbrella's own"* fails, on `origin/m42` as much as here:
+`2011-yemeni-revolution` is filed under `arab-spring`, the event's lane is asia,
+the umbrella's is africa, and the two share no actor. Neither record is this
+lane's. The patch this lane would propose, for whoever owns it:
+
+**The lane check should not be asked of an umbrella whose own place is coarse.**
+`arab-spring`'s place is `arab-world`, `precision: region` — and
+`src/vocab.js`'s `PRECISIONS` already says a region is *"an area and not a point
+on the ground"*, which is why the map draws it wider and fainter. An umbrella
+standing on an area that spans two lanes cannot have one lane, and the Arab
+world spans africa and asia by construction; M62's property is span **and
+subject**, never span and lane. So the test's third clause should be: the lane
+is the umbrella's, **or** they share an actor, **or** the umbrella's place is
+coarse. The other candidate fixes are worse: unfiling the Yemeni revolution puts
+the main count back up by one, which A3 forbids, and giving either record an
+actor to share is a historical claim neither carries.
