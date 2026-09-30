@@ -14689,6 +14689,11 @@ the corpus showing through.*
 | the land-war island | 3 | **6** |
 | edges crossing an umbrella | 579 | **579** |
 
+*Three commits: the two merges resolved as one, the batch, and two index
+rebuilds, because deviation 1363 bit at the merge and again at the batch commit
+— see move 8. The pure suite is **1928 of 1929** and the one failure is red on
+`origin/m0` itself (deviation 1366); `validate --index` is clean at 0 errors.*
+
 ### The next fire's moves, in order
 
 1. **The three questions to the owner are unchanged and none of them is a run's
@@ -14753,11 +14758,20 @@ the corpus showing through.*
    an island of two. Until the tool prints it, **a batch in a thin vein should
    compute its own component size** — six lines over `data/events/` and
    `data/edges/` — and report it beside the largest, as batch 56's table does.
-8. **Deviation 1363 bit again and the second rebuild fixed it again.** This fire
-   merged `origin/m0` and `origin/m42`, rebuilt to resolve the merge, committed,
-   and one history shard was still wrong until a **second** rebuild with the
-   merge commit as `HEAD`. Do that second rebuild as its own commit before
-   anything else. The `origin/m42` merge also conflicted in 256 `data/index/`
+8. **Deviation 1363 bit twice this fire, and the second time is the lesson worth
+   carrying.** It is not only a merge thing. The fire merged `origin/m0` and
+   `origin/m42`, rebuilt to resolve the merge, committed — and one history shard
+   and the manifest were still wrong until a second rebuild with the merge commit
+   as `HEAD`. Then the **batch** commit did exactly the same thing: the index
+   committed with it was built while `HEAD` was still the pre-commit tip, so the
+   history shards for the three new records were built with no history, and
+   `tests/validate-cli.test.mjs` failed on rule 16 naming **six** shards and the
+   manifest. A third rebuild, after that commit existed, produced no change at
+   all. So the rule is: **every commit that writes under `data/` needs a rebuild
+   in a commit of its own after it**, and the way to know you are done is that a
+   further rebuild changes nothing. `validate --index` run before the commit
+   cannot see this and reports clean, which is how it gets missed.
+   The `origin/m42` merge also conflicted in 256 `data/index/`
    files (all rename/rename on the hashed names), `sources.html`,
    `STATUS.md` and `tools/import/cache/titles.json`; **no record conflicted and
    no test file did**. `titles.json` is nested — `{ generated, titles }` — so a
