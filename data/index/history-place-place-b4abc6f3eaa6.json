@@ -7591,6 +7591,15 @@
         }
       ]
     },
+    "princeton-battlefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "prisecnice": {
       "from": "git",
       "versions": [
@@ -10549,6 +10558,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "white-plains-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

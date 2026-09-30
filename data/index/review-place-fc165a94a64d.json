@@ -13054,7 +13054,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 4,
+      "degree": 6,
       "id": "new-york",
       "kind": "place",
       "names": [
@@ -15332,6 +15332,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "princeton-battlefield",
+      "kind": "place",
+      "names": [
+        "Princeton Battlefield"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -20040,7 +20067,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "trenton-new-jersey",
       "kind": "place",
       "names": [
@@ -21338,6 +21365,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "white-plains-new-york",
+      "kind": "place",
+      "names": [
+        "White Plains",
+        "White Plains, New York",
+        "White Plains (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

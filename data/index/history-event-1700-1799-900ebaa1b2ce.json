@@ -332,6 +332,15 @@
         }
       ]
     },
+    "battle-of-fort-washington": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-gonaives": {
       "from": "git",
       "versions": [
@@ -375,6 +384,15 @@
       ]
     },
     "battle-of-guilford-court-house": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-harlem-heights": {
       "from": "git",
       "versions": [
         {
@@ -612,6 +630,15 @@
         }
       ]
     },
+    "battle-of-princeton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-providien": {
       "from": "git",
       "versions": [
@@ -800,6 +827,15 @@
         }
       ]
     },
+    "battle-of-the-assunpink-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-the-chesapeake": {
       "from": "git",
       "versions": [
@@ -878,6 +914,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-white-plains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

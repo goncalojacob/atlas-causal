@@ -185,6 +185,15 @@
         }
       ]
     },
+    "battle-of-fort-washington--battle-of-trenton--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-grand-turk--treaty-of-paris-1783--precondition-of": {
       "from": "git",
       "versions": [
@@ -195,6 +204,15 @@
       ]
     },
     "battle-of-guilford-court-house--siege-of-yorktown--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-harlem-heights--battle-of-white-plains--precondition-of": {
       "from": "git",
       "versions": [
         {
@@ -227,6 +245,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-long-island--battle-of-harlem-heights--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -386,6 +413,15 @@
         }
       ]
     },
+    "battle-of-the-assunpink-creek--battle-of-princeton--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-the-chesapeake--siege-of-yorktown--enabled": {
       "from": "git",
       "versions": [
@@ -434,6 +470,15 @@
         }
       ]
     },
+    "battle-of-trenton--battle-of-the-assunpink-creek--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of": {
       "from": "git",
       "versions": [
@@ -446,6 +491,24 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-white-plains--battle-of-fort-washington--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-white-plains--battle-of-trenton--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

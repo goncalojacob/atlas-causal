@@ -2396,6 +2396,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-washington--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-washington--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
@@ -2429,6 +2441,18 @@
       "id": "battle-of-guilford-court-house--siege-of-yorktown--caused",
       "kind": "edge",
       "locator": "\"Battle of Guilford Court House\", revision 1376260995"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-harlem-heights--battle-of-white-plains--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-harlem-heights--battle-of-white-plains--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
     },
     {
       "dissent": false,
@@ -2597,6 +2621,18 @@
       "id": "battle-of-liaoyang--battle-of-shaho--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Shaho\", revision 1370589119, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-long-island--battle-of-harlem-heights--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-long-island--battle-of-harlem-heights--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Harlem Heights\", revision 1375220259"
     },
     {
       "dissent": false,
@@ -3080,6 +3116,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-assunpink-creek--battle-of-princeton--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Princeton\", revision 1375498890"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-assunpink-creek--battle-of-princeton--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Chosin Reservoir\", revision 1370109047, § Battle / Actions at Yudam-ni"
@@ -3182,6 +3230,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-trenton--battle-of-the-assunpink-creek--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Princeton\", revision 1375498890"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trenton--battle-of-the-assunpink-creek--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-trincomalee--battle-of-cuddalore-1783--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Cuddalore (1783)\", revision 1370437947"
@@ -3263,6 +3323,30 @@
       "id": "battle-of-vitoria--battle-of-the-pyrenees--caused",
       "kind": "edge",
       "locator": "\"Battle of the Pyrenees\", revision 1370601915, lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains--battle-of-fort-washington--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains--battle-of-fort-washington--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains--battle-of-trenton--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
     },
     {
       "dissent": false,
@@ -10640,6 +10724,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-washington",
+      "kind": "event",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-frankfurt-an-der-oder",
       "kind": "event",
       "locator": "\"Battle of Frankfurt an der Oder\", revision 1370110528"
@@ -10733,6 +10823,12 @@
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "\"Battle of Hamburger Hill\", revision 1370406170"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-harlem-heights",
+      "kind": "event",
+      "locator": "\"Battle of Harlem Heights\", revision 1375220259"
     },
     {
       "dissent": false,
@@ -11408,6 +11504,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-princeton",
+      "kind": "event",
+      "locator": "\"Battle of Princeton\", revision 1375498890"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-providien",
       "kind": "event",
       "locator": "\"Battle of Providien\", revision 1370586674"
@@ -11762,6 +11864,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-assunpink-creek",
+      "kind": "event",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-ch-ongch-on-river",
       "kind": "event",
       "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822"
@@ -12101,6 +12209,12 @@
       "id": "battle-of-white-mountain",
       "kind": "event",
       "locator": "\"Battle of White Mountain\", revision 1376079217"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains",
+      "kind": "event",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
     },
     {
       "dissent": false,

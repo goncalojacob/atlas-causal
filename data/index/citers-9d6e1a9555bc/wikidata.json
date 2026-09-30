@@ -3392,6 +3392,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-washington",
+      "kind": "event",
+      "locator": "Q706755"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-frankfurt-an-der-oder",
       "kind": "event",
       "locator": "Q3636439"
@@ -3485,6 +3491,12 @@
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "Q247395"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-harlem-heights",
+      "kind": "event",
+      "locator": "Q668595"
     },
     {
       "dissent": false,
@@ -4154,6 +4166,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-princeton",
+      "kind": "event",
+      "locator": "Q1132579"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-providien",
       "kind": "event",
       "locator": "Q2601189"
@@ -4508,6 +4526,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-assunpink-creek",
+      "kind": "event",
+      "locator": "Q233417"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-ch-ongch-on-river",
       "kind": "event",
       "locator": "Q493313"
@@ -4835,6 +4859,12 @@
       "id": "battle-of-white-mountain",
       "kind": "event",
       "locator": "Q4373"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-white-plains",
+      "kind": "event",
+      "locator": "Q960723"
     },
     {
       "dissent": false,
