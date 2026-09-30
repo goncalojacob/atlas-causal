@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-honduras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": "2026-09-30",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a7-widened",
+      "a15-6-country-refused",
+      "filed-by-span-and-subject",
+      "m42b-batch-51"
+    ],
+    "note": "Filed under spanish-colonization-of-the-americas by span and subject (M62): 1524-1539 is inside 1493-1898, and the item’s own P361 names that umbrella’s item Q1047607. A7: the item gives only P585 1524; the cited article at revision 1370748307 dates the start (\"In March 1524, Gil González Dávila became the first Spaniard to arrive in what is now Honduras with the intention of conquest\") and the end (\"the main phase of the Spanish conquest was complete by 1539\"), so the span is 1524-03 to 1539."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5783531",
+  "wikipedia": {
+    "en": "Spanish conquest of Honduras"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-30"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5783531"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Honduras\", revision 1370748307"
+    }
+  ],
+  "title": "Spanish conquest of Honduras",
+  "summary": "The English Wikipedia article \"Spanish conquest of Honduras\", at revision 1370748307, opens: \"The Spanish conquest of Honduras was a 16th-century conflict during the Spanish colonization of the Americas in which the territory that now comprises the Republic of Honduras, one of the seven states of Central America, was incorporated into the Spanish Empire. In 1502, the territory was claimed for the king of Spain by Christopher Columbus on his fourth and final trip to the New World.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5783531, imported by tools/import/wikidata.mjs. The item's own description reads \"conquest of Honduras\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1539,
+    "date": "1524-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "A15 (6): the only located thing the item offers is Honduras the sovereign state (Q783), whose inception is 1821 — after this event ends — so it is refused as a place and the lane is written instead, as for spanish-conquest-of-guatemala beside it.",
+  "parent": "spanish-colonization-of-the-americas",
+  "category": "war",
+  "actors": []
+}
