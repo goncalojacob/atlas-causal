@@ -17510,74 +17510,89 @@ at **1.15 s** apart. **Not one request failed, no 429, three redirects.**
 | sentences naming one of them | 1,245 |
 | of those, chronology-only by A15(5)'s openers | 70 |
 | of those, stating a cause and not chronology-only | **143**, over **132 pairs** (82 Asia, 61 Africa) |
-| edges written | **2** |
+| edges written and kept | **0** — four written, four withdrawn (below) |
 
-### Rule 4 is the third refusal class, and it is the largest
+### Four refusal classes, and what each takes
 
-**77 of the 132 causal pairs have the subject starting after the event it names**,
-and that is not an accident of this sample: an article about a later event
-explains itself by an earlier one, so the edge the sentence argues for runs
-*backwards* into an event that was already running. Rule 4 refuses it. Two were
-written before this was understood and both had to be deleted:
+Reading the 132 causal pairs against the rules, rather than against the prose
+alone, gives four classes. **Every candidate this fire wrote fell to one of the
+last two, and the fire found that out in the wrong order — by pushing first and
+running `tests/m42-filing.test.mjs` afterwards, which is exactly what batch 71's
+stand told the next fire not to do.**
 
-- `fall-of-kabul-2021 --caused--> insurgency-in-khyber-pakhtunkhwa`, from
-  *"Resultantly since fall of Kabul in August 2021, Pakistan is confronted with
-  renewed threat of terrorism as TTP has been injected with fresh dose of
-  strength due to the victory of Taliban in Afghanistan"* — a clean cited cause
-  about an insurgency that began in 2004.
-- `ogaden-war --enabled--> eritrean-war-of-independence`, from *"In 1977 the
-  Eritrean insurgency had taken advantage of the Derg's preoccupation with war
-  for the Ogaden"* — about a war sixteen years older than the Ogaden one. It
-  also closed a cycle through nine records, which rule 5 caught.
+1. **The quote names a third event the atlas already connects.** A15(5)'s own
+   rule, and the largest class by reading rather than by count: *"The loss of
+   the war in 1905 led to major political unrest in Imperial Russia"*, in the
+   Siege of Port Arthur's article, argues for `russo-japanese-war -->
+   russian-revolution-of-1905`, which the atlas holds.
+2. **Rule 4, the arrow of time — 74 of the 132.** The true thing an article
+   usually says about two held events is *this later event changed the course of
+   that earlier, longer one*, and the edge it argues for runs backwards into
+   something that was already running. Two were written and deleted for it:
+   `fall-of-kabul-2021 --caused--> insurgency-in-khyber-pakhtunkhwa`, from
+   *"Resultantly since fall of Kabul in August 2021, Pakistan is confronted with
+   renewed threat of terrorism as TTP has been injected with fresh dose of
+   strength due to the victory of Taliban in Afghanistan"* — about an insurgency
+   that began in 2004 — and `ogaden-war --enabled-->
+   eritrean-war-of-independence`, from *"In 1977 the Eritrean insurgency had
+   taken advantage of the Derg's preoccupation with war for the Ogaden"* — about
+   a war sixteen years older. The second also closed a cycle through nine
+   records, which rule 5 caught in the same run.
+3. **An umbrella is not a claim — 14 of the 132.** `tests/m42-filing.test.mjs`
+   refuses any active edge with an end carrying the `m42-umbrella` flag, and
+   there are eighteen such records. That is why `scramble-for-africa` stands at
+   degree zero and will stay there: it is not a gap, it is the rule. Two more
+   edges were written and withdrawn for it —
+   `scramble-for-africa --precondition-of--> world-war-i`, from the Scramble's
+   own aftermath section (*"The tensions between the imperial powers led to a
+   succession of crises, which exploded in August 1914..."*), and
+   `independence-of-brazil-1822 --precondition-of--> scramble-for-africa`, from
+   the section on the Pink Map. **Both quotes are sound and neither edge can
+   exist**, which is worth knowing before a fire spends a round trip verifying
+   one.
+4. **A part-of statement, a comparison, or a name the atlas does not hold.**
+   The rest.
 
-**Deviation 1485.** The commonest true thing an article says about two held
-events — *this later event changed the course of that earlier, longer one* — is
-not an edge this atlas can hold. It is not a matcher fault and not a refusal
-that better reading fixes; it is what an edge between two whole events means
-here. A fire should expect roughly **three in five** of its causal sentences to
-fall to it, and should not count them as candidates.
+**Deviation 1485.** Classes 2 and 3 together refuse **88 of the 132**, and
+neither is a matcher fault or a reading fault: they are what an edge between two
+whole events means here. **A fire should not budget a relations sweep as a way
+of growing the graph.** 407 articles, forty minutes of fetching, and the honest
+yield of this one is **zero edges**.
 
-### The two edges
+### What was written, and then withdrawn
 
-Both cite **the revision their item is already cached at**, not the newer
-revision the sweep actually read, and the sentence was re-verified at that
-revision through `action=parse&oldid=`. That is A15(2)'s one-revision-per-item
-trap taken seriously rather than survived: citing what was read would have moved
-`Q179848`'s cache off `scramble-for-africa`'s own summary, which is the failure
-batch 71 caused and `tests/leadcache.test.mjs` caught.
+Four edges were written, validated and pushed before the filing test was run,
+and all four are gone: two on the arrow of time, two on the umbrella rule. The
+corpus and `data/index/` are byte-identical to where batch 71 left them, and the
+withdrawal is one commit that reverses the two before it. Both umbrella edges
+cited **the revision their item is already cached at** rather than the revision
+the sweep read, verified through `action=parse&oldid=` — which is A15(2)'s
+one-revision-per-item trap paid rather than tripped, and is the one piece of
+that work a later fire should keep.
 
-- **`scramble-for-africa --precondition-of--> world-war-i`**, *"Scramble for
-  Africa", revision 1373841219, § Aftermath*: *"The tensions between the imperial
-  powers led to a succession of crises, which exploded in August 1914, when
-  previous rivalries and alliances created a domino situation that drew the major
-  European nations into World War I."* **It is the first edge that record has
-  ever had** — the Scramble stood at degree zero, and the deleted edge of batch
-  71's recache note was its only other one.
-- **`independence-of-brazil-1822 --precondition-of--> scramble-for-africa`**,
-  same article, revision 1373841219, § Portugal's Pink Map plan: *"After the
-  Independence of Brazil in 1822, Portugal sought to protect, develop and expand
-  its remaining overseas territories in order to compensate for the loss of
-  Brazilian trade and revenue and its international standing, leading to an
-  aggressive expansion of its Angolan and Mozambican territories."*
-
-Both cross an umbrella. Together they put an American event, an African umbrella
-and the First World War on one chain, which is the shape the owner asked for.
+**The 44 pairs that survive all four classes are the next fire's list**, and
+they are in this file only as a count, because reading them is the work: the
+ones worth opening first are `second-gulf-of-sidra-offensive -->
+battle-of-bin-jawad`, `siege-of-kimberley --> battle-of-paardeberg` and
+`second-battle-of-colenso --> battle-of-the-tugela-heights`, all three between
+two tactical records of one war, which is the only shape left once the umbrellas
+and the arrow of time have taken the rest.
 
 ### Counts
 
-**Before → after: 1,333 active events (unchanged), 234 main (unchanged, A6),
-1,099 filed, active edges 1,113 → 1,115, largest connected component 740 → 741,
-edges crossing an umbrella 572 → 574, components 406 → 405, events with no edge
-317 → 316.** Per-lane active, unmoved: **Europe 555, Americas 359, Asia 211,
-Africa 208.** Validator **0 errors, 610 warnings** (611 before: `scramble-for-africa`
-left `degree-zero`); `--index` clean. **Candidates left unconnected, which
-A15(1) asks every batch note to carry: 130** — the 132 causal pairs less the two
-written, of which 77 are rule 4's and the rest are a third event, a part-of
-statement or a comparison.
+**Nothing imported, nothing kept, no record changed.** Corpus unchanged and
+measured after the withdrawal: **1,333 active events, 234 main, 1,099 filed,
+1,113 active edges, largest connected component 740, 572 edges crossing an
+umbrella, 406 components, 317 events with no edge.** Per-lane active, unmoved:
+**Europe 555, Americas 359, Asia 211, Africa 208.** Validator **0 errors, 611
+warnings**; `--index` clean and byte-exact against batch 71's tree.
+**Candidates left unconnected, which A15(1) asks every batch note to carry:
+132** — 74 on rule 4, 14 on the umbrella rule, and 44 that survive both and
+were not read in the time this fire had.
 
-A15(2)'s recache, as the last step: **2,743 `wikipedia-en` citations on active
-records, 2,670 on disk at the revision cited, 0 that should be on disk and are
-not.** `--fill` had nothing to do, which is what citing the cached revision buys.
+A15(2)'s recache, as the last step: **2,741 `wikipedia-en` citations on active
+records, 2,668 on disk at the revision cited, 0 that should be on disk and are
+not.** `--fill` had nothing to do.
 
 A11(b)'s partition check: the sweep reads only records this branch already
 holds, so it cannot collide with `origin/m42b`; nothing was imported on either
@@ -17586,8 +17601,10 @@ side of the line.
 ## Where the run stands after the sweep of 30 September, for the fire that picks it up
 
 *30 September, the fire that claimed at 09:07Z. An import fire that imported
-nothing — the second in a row, for the same reason — and wrote two edges from a
-sweep instead. Four commits: two code, one record, one index.*
+nothing — the second in a row, for the same reason — and whose four edges were
+all withdrawn. **The corpus is byte-identical to where batch 71 left it.** What
+it leaves is three matcher fixes and a measurement of the vein everyone has been
+calling the way round the bind.*
 
 **What is open, in the order a fire should weigh it:**
 
@@ -17598,16 +17615,19 @@ sweep instead. Four commits: two code, one record, one index.*
   again, because two fires in a row importing nothing is what the routine exists
   to report. A fire should not import either record until the owner answers, and
   should not file an event under its grandparent to get round A14(6).
-- **The relations vein is real but it is small, and now it is measured.** 775
-  unheld pairs named, 132 with a causal sentence, **two writable**. Three in five
-  fall to rule 4 (deviation 1485), and most of the rest name a third event the
-  atlas already connects. **A fire should not expect a sweep to yield more than
-  a handful**, and should budget it as forty minutes of fetching for two edges.
+- **The relations vein is not the way round the bind, and now that is measured
+  rather than hoped.** 775 unheld pairs named, 132 with a causal sentence,
+  **zero written and kept**. Rule 4 takes 74, the umbrella rule 14 (deviation
+  1485), and most of the rest name a third event the atlas already connects. The
+  44 that survive both rules are listed by shape in the section above and are
+  the next fire's reading, but they are tactical records inside one war and no
+  sweep will yield many. **Run `tests/m42-filing.test.mjs` before the first
+  commit**, which batch 71 said and this fire did not do.
 - **The sweep's own list is on disk nowhere**, and that is deliberate: it is
   407 article bodies at revisions the atlas does not cite. A fire that wants to
-  re-run it should re-fetch rather than trust a stale copy, and should read the
-  bodies of **Europe and the Americas** next, which this lane never touches —
-  555 and 359 records, and `m42b`'s to sweep.
+  re-run it should re-fetch rather than trust a stale copy. **Europe and the
+  Americas have never been swept** — 555 and 359 records — but on this fire's
+  yield that is `m42b`'s to spend forty minutes on, not a lane's way out.
 - **Two of the 15 surviving false positives are worth a record's attention, not
   a matcher's**: `operation-unified-protector` and `battle-of-sadras` /
   `battle-of-providien` are filing candidates under A8 (the first is part of
