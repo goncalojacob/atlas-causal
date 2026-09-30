@@ -13308,6 +13308,22 @@ establishes it is tabled under batch 51.*
    into the pre-1800 africa/asia corpus, and it is an event in Europe before
    1900. One record would unblock a whole cell. **None of the three is a run's
    to settle.**
+
+   **And the other lane reached the same conclusion on the same day, from a
+   different partition.** `origin/m42`'s batch 71, at 06:20Z, screened **98
+   candidates** against their own articles read in full and found **every one
+   refused by A15 (1), A14 (6) or A6** — *"across six umbrellas 56 filable
+   children name just two held events between them, their own parent and the war
+   before it"*; *"four fires in a row have now had their best causal sentence
+   refused by this rule, which is C8"*; and its recommendation is **A6**,
+   *"because relaxing it does not touch what A6 is for: A6 exists so that a
+   period historians name is an umbrella, not so that the corpus can never gain
+   a top-level event."* Two lanes, two partitions, two sweeps that did not know
+   about each other, **the same three amendments and the same verdict**. This
+   lane's own sweep adds one case theirs could not see: the bridge into pre-1800
+   africa/asia exists and A15 (1) is what bars it. **The convergence is the
+   argument. Africa and Asia stand at 211 and 211 against A10's 303, and no fire
+   in either lane can move either number until the owner answers.**
 2. **Do not re-walk the four veins tabled under batch 51.** They are measured
    and closed: the Dutch–Portuguese War's 16 `P361` children in africa/asia
    (13 articles read, one causal sentence and it names the parent), the seven

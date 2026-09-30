@@ -23542,6 +23542,19 @@ and century without looking for it. The cost is now **17 events across two
 clusters**, and two independent instances say it is what filing does to the
 graph rather than one unlucky umbrella.
 
+**And the two lanes converged on the same day.** `origin/m42`'s batch 71, at
+06:20Z, screened 98 candidates against their own articles and found **every one
+refused by A15(1), A14(6) or A6**, recommending A6 be relaxed *"because
+relaxing it does not touch what A6 is for"*. This lane's sweep, on a different
+partition and not knowing about theirs, reached the same three amendments and
+the same verdict, and adds the one case theirs could not see: the bridge into
+pre-1800 africa/asia exists — the Iberian Union, which the Dutch–Portuguese
+War's own article names four times as why the Dutch attacked Portugal's
+colonies — and **A15(1)'s Europe pause is what bars it**. Africa and Asia stand
+at 211 and 211 against A10's 303, and **no fire in either lane can move either
+number until the owner answers.** The americas remain open, which is where this
+lane will keep working meanwhile.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
