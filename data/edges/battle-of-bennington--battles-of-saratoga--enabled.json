@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-bennington--battles-of-saratoga--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-55"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bennington\", revision 1375222856"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
+    }
+  ],
+  "from": "battle-of-bennington",
+  "to": "battles-of-saratoga",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Bennington is in this atlas because of what it took away from Burgoyne rather than what it decided on the day. The Bennington article, at revision 1375222856, states the consequence and names the record this edge runs to: “it reduced Burgoyne’s army in size by almost 1,000 men, led his Native American allies to largely abandon him, and deprived him of much-needed supplies, such as mounts for his cavalry regiments, draft animals and provisions, all factors that contributed to Burgoyne’s eventual defeat at Saratoga.” The type is `enabled` and not `caused` because “factors that contributed to” is what the article claims and no more: the detachment Stark destroyed had been sent out to forage, and its loss is a condition of the September and October defeat rather than the thing that produced it. The Saratoga article, at revision 1377478794, is the second reading, putting Burgoyne’s surrender at the second of the two battles. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}
