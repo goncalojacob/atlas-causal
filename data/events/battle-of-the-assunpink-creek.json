@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-assunpink-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q233417",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of the Assunpink Creek",
+    "pt": "Segunda Batalha de Trenton"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    }
+  ],
+  "title": "Battle of the Assunpink Creek",
+  "summary": "The English Wikipedia article \"Battle of the Assunpink Creek\", at revision 1371410210, opens: \"The Battle of the Assunpink Creek, also known as the Second Battle of Trenton, was a battle between American and British troops that took place in and around Trenton, New Jersey, on January 2, 1777, during the American Revolutionary War, and resulted in an American victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233417, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle between American and British troops\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-01-02"
+  },
+  "place": "trenton-new-jersey",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
