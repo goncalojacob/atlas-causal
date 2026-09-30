@@ -2204,6 +2204,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bennington--battles-of-saratoga--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Bennington\", revision 1375222856"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bennington--battles-of-saratoga--enabled",
+      "kind": "edge",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bin-jawad--second-battle-of-benghazi--enabled",
       "kind": "edge",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Aftermath"
@@ -2246,6 +2258,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-camden--battle-of-cowpens--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Camden\", revision 1376333498"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-camden--battle-of-cowpens--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Cowpens\", revision 1376280446"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
       "kind": "edge",
       "locator": "\"Battle of Cape Rachado\", revision 1370436218"
@@ -2279,6 +2303,18 @@
       "id": "battle-of-chemulpo-bay--battle-of-the-yalu-river-1904--enabled",
       "kind": "edge",
       "locator": "\"Battle of Yalu River\", revision 1370602766, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cowpens--battle-of-guilford-court-house--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Cowpens\", revision 1376280446"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cowpens--battle-of-guilford-court-house--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Guilford Court House\", revision 1376260995"
     },
     {
       "dissent": false,
@@ -2369,6 +2405,18 @@
       "id": "battle-of-grand-turk--treaty-of-paris-1783--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Grand Turk\", revision 1370441951"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guilford-court-house--siege-of-yorktown--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Camden\", revision 1376333498"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guilford-court-house--siege-of-yorktown--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Guilford Court House\", revision 1376260995"
     },
     {
       "dissent": false,
@@ -6644,6 +6692,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-boston--battle-of-bunker-hill--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Bunker Hill\", revision 1375011142"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-boston--battle-of-bunker-hill--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Boston\", revision 1377282932"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-brimstone-hill--battle-of-saint-kitts--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Brimstone Hill\", revision 1370739793"
@@ -10178,6 +10238,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bennington",
+      "kind": "event",
+      "locator": "\"Battle of Bennington\", revision 1375222856"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bicocca",
       "kind": "event",
       "locator": "\"Battle of Bicocca\", revision 1370107825"
@@ -10244,6 +10310,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bunker-hill",
+      "kind": "event",
+      "locator": "\"Battle of Bunker Hill\", revision 1375011142"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bussaco",
       "kind": "event",
       "locator": "\"Battle of Bussaco\", revision 1370785527"
@@ -10259,6 +10331,12 @@
       "id": "battle-of-cajamarca",
       "kind": "event",
       "locator": "\"Battle of Cajamarca\", revision 1370108415"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-camden",
+      "kind": "event",
+      "locator": "\"Battle of Camden\", revision 1376333498"
     },
     {
       "dissent": false,
@@ -10367,6 +10445,12 @@
       "id": "battle-of-corunna",
       "kind": "event",
       "locator": "\"Battle of Corunna\", revision 1370437705"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cowpens",
+      "kind": "event",
+      "locator": "\"Battle of Cowpens\", revision 1376280446"
     },
     {
       "dissent": false,
@@ -10589,6 +10673,12 @@
       "id": "battle-of-guadeloupe-1779",
       "kind": "event",
       "locator": "\"Battle of Guadeloupe (1779)\", revision 1370442182"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guilford-court-house",
+      "kind": "event",
+      "locator": "\"Battle of Guilford Court House\", revision 1376260995"
     },
     {
       "dissent": false,

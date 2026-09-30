@@ -3026,6 +3026,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bennington",
+      "kind": "event",
+      "locator": "Q1754313"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bicocca",
       "kind": "event",
       "locator": "Q683341"
@@ -3086,6 +3092,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bunker-hill",
+      "kind": "event",
+      "locator": "Q334029"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bussaco",
       "kind": "event",
       "locator": "Q389349"
@@ -3101,6 +3113,12 @@
       "id": "battle-of-cajamarca",
       "kind": "event",
       "locator": "Q1425362"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-camden",
+      "kind": "event",
+      "locator": "Q1539513"
     },
     {
       "dissent": false,
@@ -3221,6 +3239,12 @@
       "id": "battle-of-corunna",
       "kind": "event",
       "locator": "Q708088"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cowpens",
+      "kind": "event",
+      "locator": "Q1326527"
     },
     {
       "dissent": false,
@@ -3443,6 +3467,12 @@
       "id": "battle-of-guayabos",
       "kind": "event",
       "locator": "Q775606"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-guilford-court-house",
+      "kind": "event",
+      "locator": "Q425773"
     },
     {
       "dissent": false,

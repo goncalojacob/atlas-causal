@@ -865,6 +865,15 @@
         }
       ]
     },
+    "bennington-vermont": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "bergen-op-zoom": {
       "from": "git",
       "versions": [
@@ -1487,6 +1496,15 @@
         }
       ]
     },
+    "camden-south-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "cap-haitien": {
       "from": "git",
       "versions": [
@@ -2008,6 +2026,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "cowpens-south-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -3477,6 +3504,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "greensboro-north-carolina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
