@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-negapatam-1782--battle-of-trincomalee--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trincomalee\", revision 1370591551"
+    }
+  ],
+  "from": "battle-of-negapatam-1782",
+  "to": "battle-of-trincomalee",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This is the one link in the series for which the article gives a mechanism and not only an order. Trincomalee “was the fourth in a series of battles fought between the two fleets off the coast of the Indian subcontinent”, and the article says what put Suffren there: “Suffren and Hughes then met a third time off Negapatam, again with inconclusive results, after which Suffren anchored off Cuddalore to make repairs”, and then — “Due to the exposed nature of the anchorage at Cuddalore, and the impending arrival of additional British fleets, Suffren decided to attempt the capture of Trincomalee to gain a safe harbour for his fleet where he might effect more substantial repairs.” An indecisive battle that left him repairing in an exposed roadstead is why he went for the harbour; `precondition-of` rather than `caused`, because the decision was Suffren's and the article gives him two reasons of which Negapatam is one. Probable: Wikipedia alone.",
+  "dispute": null
+}

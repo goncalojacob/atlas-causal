@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "invasion-of-the-cape-colony--battle-of-port-louis--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    }
+  ],
+  "from": "invasion-of-the-cape-colony",
+  "to": "battle-of-port-louis",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Cape article names the blockade among the capture's consequences: \"Parts of this force were subsequently deployed to bolster British forces in the Indian Ocean. The blockade of Île de France was restored.\" The Port Louis article is the blockade closing: \"Returning to Île de France in December, l'Hermite steered for Port Louis but was intercepted by the British blockade squadron, comprising the 74-gun ship of the line HMS Tremendous under John Osborn and the 50-gun HMS Adamant under William Hotham.\" The Cape is also where the pursuit of Preneuse was run from — \"messages to this effect were hastily sent to the commander at the Cape, Captain George Losack who sent the 50-gun HMS Jupiter in pursuit\". Enabled: the station the capture created is what made a permanent blockade of Île de France possible, and the articles say so without saying the expedition caused this engagement.",
+  "dispute": null
+}

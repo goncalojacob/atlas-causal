@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "french-revolution--battle-of-ile-ronde--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Île Ronde\", revision 1370602888"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bali Strait incident\", revision 1376479036"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "battle-of-ile-ronde",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Île Ronde article gives the revolution in France as the state the colony and its squadron were in, and names the decree that made it so: \"Isle de France had been in a state of turmoil since the French Revolution and in 1792 the republican faction in the colony seized control. In 1794 suspected royalists were arrested, including naval officer Armand de Saint-Félix, their executions forestalled by the arrival of news that the French Convention had abolished slavery. Only the intervention of Governor Anne Joseph Hippolyte de Maurès, Comte de Malartic prevented unrest. The preoccupation of the naval authorities had prevented any offensive operations and the reduced squadron, now commanded by Captain Jean-Marie Renaud, remained in Port Louis.\" The same two conditions are what put Renaud to sea on 22 October: \"Concerned by food shortages and a rebellious slave population the French naval commander Jean-Marie Renaud led his small squadron comprising frigates Cybèle and Prudente and three smaller vessels to drive off the British squadron.\" The Bali Strait article says the decree was read in Paris the same way — the squadron of 1796 was sent \"In response to British activity in the region and the reluctance of the inhabitants of Île de France to follow orders from the National Convention abolishing slavery.\" Precondition-of and not caused: both articles are plain that what provoked the action was the arrival of the British blockade, and that the revolution is the condition the colony and its squadron were in when it arrived.",
+  "dispute": null
+}

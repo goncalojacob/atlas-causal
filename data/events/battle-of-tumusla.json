@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-tumusla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5778763",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-09-25"
+  },
+  "wikipedia": {
+    "en": "Battle of Tumusla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5778763"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tumusla\", revision 1366246828"
+    }
+  ],
+  "title": "Battle of Tumusla",
+  "summary": "The English Wikipedia article \"Battle of Tumusla\", at revision 1366246828, opens: \"The Battle of Tumusla was the last battle between regular forces during the Bolivian War of Independence and one of the last encounters of the Spanish American wars of independence. This battle was fought on 1 April 1825, near the village of Tumusla (Potosí), in the current territory of Bolivia. It was a defeat for the Royalist forces under command of Pedro Antonio Olañeta, who was killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5778763, imported by tools/import/wikidata.mjs. The item's own description reads \"Bolivian War of Independence battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1825,
+    "end": 1825,
+    "date": "1825-04-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "bolivian-war-of-independence"
+}

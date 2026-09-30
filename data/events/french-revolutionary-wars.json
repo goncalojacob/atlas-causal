@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "french-revolutionary-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-by-span-and-subject"
+    ]
+  },
+  "wikidata": "Q207318",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "French Revolutionary Wars",
+    "pt": "Guerras Revolucionárias Francesas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q207318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolutionary Wars\", revision 1373816386"
+    }
+  ],
+  "title": "French Revolutionary Wars",
+  "summary": "The English Wikipedia article \"French Revolutionary Wars\", at revision 1373816386, opens: \"The French Revolutionary Wars were a series of sweeping military conflicts resulting from the French Revolution that lasted from 1792 until 1802. They pitted France against Great Britain, Austria, Prussia, Russia, and several other countries. The wars are divided into two periods: the War of the First Coalition (1792–1797) and the War of the Second Coalition (1798–1802). Initially confined to Europe, the fighting gradually assumed a global dimension. After a decade of constant warfare and aggressive diplomacy, France had conquered territories in the Italian peninsula, the Low Countries, and the Rhineland with its very large and powerful military which had been totally mobilized for war against most of Europe with mass conscription of the vast French population. French success in these conflicts ensured military occupation and the spread of revolutionary principles over much of Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q207318, imported by tools/import/wikidata.mjs. The item's own description reads \"1792–1802 series of conflicts between the French Republic and several European monarchies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1802,
+    "date": "1792-04-20",
+    "endDate": "1802-03-25"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "atlantic-revolutions"
+}

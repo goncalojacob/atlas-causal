@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "french-revolution--battle-of-martinique-1794--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Martinique (1794)\", revision 1375545193"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolution\", revision 1375966584"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "battle-of-martinique-1794",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Martinique article states the motive and the timing together: \"The British government was contacted by French planter Louis-François Dubuc, who wished to place Martinique under British protection as the Republic's National Constituent Assembly was about to pass legislation which would abolish slavery in the French colonial empire; the legislation was passed the day before the British invasion of Martinique commenced.\" It adds that a fortnight later \"the British signed the Whitehall Accord on 9 February with counter-revolutionary French planters, which allowed them to keep their chattel property\". The French Revolution article carries the other side of the same date: \"The Convention voted for the abolition of slavery in the colonies on 4 February 1794 and decreed that all residents of the colonies had the full rights of French citizens irrespective of colour\", and, two sentences later, \"Martinique remained under British occupation\". Reacted to, and in that direction: the planters' handover and the invasion it invited are an answer to what the Revolution was about to do to slavery in the colonies, which is what both articles say, and neither says the Revolution ordered or caused a British expedition.",
+  "dispute": null
+}

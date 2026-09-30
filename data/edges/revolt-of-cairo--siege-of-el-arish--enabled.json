@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "revolt-of-cairo--siege-of-el-arish--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of El Arish\", revision 1372136661"
+    }
+  ],
+  "from": "revolt-of-cairo",
+  "to": "siege-of-el-arish",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The El Arish article opens its Background with the connection in one clause of its own: \"Napoleon had recently subdued a revolt against the French occupation in Egypt, and with his borders secure, continued his offensive against the Ottoman Empire.\" Enabled and not caused: putting down the rising in Cairo did not make the march into Syria necessary, it made it possible — the article's \"with his borders secure\" is the whole of the mechanism it claims, and the offensive it describes was already Bonaparte's intention.",
+  "dispute": null
+}

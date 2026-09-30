@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "insurrection-of-pernambuco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a15-country-refused",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A15(6): the place would have been brazil-q155, from the item's P17, refused because the country's inception (1822) is after the event ended (1654). The item carries no P625, P276 or P131, so the only point the import had was that same country's, which is why the lane is written (deviation 1353). Filed under dutch-portuguese-war by span and subject: the lead says the revolution “occurred in the course of the second Dutch invasion during the Dutch–Portuguese War”, at revision 1370623843."
+  },
+  "wikidata": "Q10303008",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Insurrection of Pernambuco",
+    "pt": "Insurreição Pernambucana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10303008"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
+    }
+  ],
+  "title": "Insurrection of Pernambuco",
+  "summary": "The English Wikipedia article \"Insurrection of Pernambuco\", at revision 1370623843, opens: \"The Insurrection of Pernambuco, also known as the War of the Divine Light, was a movement against Dutch rule in the Captaincy of Pernambuco. The revolution occurred in the course of the second Dutch invasion during the Dutch–Portuguese War and resulted in the expulsion of the Dutch from the northeast region of Brazil, followed by the reclamation of the territory by the Kingdom of Portugal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10303008, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in Brazil in the 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1645,
+    "end": 1654,
+    "date": "1645-05-15",
+    "endDate": "1654-01-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (from Q155, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

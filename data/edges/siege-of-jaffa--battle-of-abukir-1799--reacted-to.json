@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-jaffa--battle-of-abukir-1799--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abukir (1799)\", revision 1373172066"
+    }
+  ],
+  "from": "siege-of-jaffa",
+  "to": "battle-of-abukir-1799",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Two articles state the same link from opposite ends. Jaffa's Aftermath: \"Months later, when he attacked Abukir, the French reputation for showing no mercy caused many of the Ottoman soldiers to flee.\" Abukir's own account of the fort, which held out eight days after the field was lost: \"the Ottoman officers soon agreed to surrender, but their troops mutinied against this, having heard of the massacre of Ottoman prisoners captured by the French in the siege of Jaffa.\" Reacted-to and not caused: Jaffa did not bring the Anglo-Ottoman landing about — the Abukir article gives that its own cause, the two armies the Ottomans sent to recapture Egypt — and what the two articles claim it did shape is how the men on the beach and in the fort behaved once the battle had begun.",
+  "dispute": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mount-tabor",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place-by-hand"
+    ]
+  },
+  "wikidata": "Q193785",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Mount Tabor",
+    "pt": "Monte Tabor"
+  },
+  "sources": [],
+  "names": [
+    "Mount Tabor",
+    "Monte Tabor"
+  ],
+  "where": {
+    "lon": 35.392916666667,
+    "lat": 32.68625,
+    "precision": "point",
+    "label": "Mount Tabor"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

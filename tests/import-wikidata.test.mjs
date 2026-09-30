@@ -5,7 +5,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, readdir, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { createValidator } from '../src/validate/schema.js';
@@ -22,7 +22,7 @@ import {
   nextBatch, advance, emptyState, itemIndex, candidatesMarkdown, ambiguousMarkdown, reportLines, appendReport,
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
-  leadSummary, leadCitation, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
+  leadSummary, leadCitation, leadIsRedirect, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
   LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
@@ -77,7 +77,15 @@ async function fixtureFetcher(options = {}) {
       return { entities: Object.fromEntries(ids.map((id) => [id, all[id] ?? { id, missing: '' }])) };
     }
     if (url.includes('wbsearchentities')) return search;
-    if (url.includes('/api/rest_v1/page/summary/')) return summary;
+    // The real endpoint answers with the article it landed on, which is how
+    // A15 (8) is asked at all (leadIsRedirect). One fixture body served under
+    // whatever title was requested is that behaviour for every article that is
+    // not a redirect, which is every article here; a redirect is a `summary`
+    // override in the test that wants one.
+    if (url.includes('/api/rest_v1/page/summary/')) {
+      const asked = decodeURIComponent(url.split('/summary/')[1] ?? '').replaceAll('_', ' ');
+      return options.summary ?? (asked ? { ...summary, title: asked } : summary);
+    }
     if (url.includes('sparql')) return sparql;
     throw new HttpError(404, url);
   };
@@ -590,6 +598,13 @@ test('a created record validates, cites the item and says it is unchecked', asyn
   }
   assert.deepEqual(event.actors, [], 'who took part is not what they did, and the import does not write roles');
   assert.equal(place.where.label, 'Northfield');
+  // A15 (3): a place carries no summary. The placeholder said the item's own
+  // description and then said nobody had read the record — two sentences about
+  // a town's provenance where a reader wanted the town, and the third review
+  // found it on 158 of them. Where a town is is not an account, so there is
+  // nothing for a summary to hold and `null` is the honest value; the item is
+  // still on the record in `wikidata`.
+  assert.equal(place.summary, null, 'a place record carries no summary');
   // The summary quotes the item and disclaims itself; it is not an account.
   assert.match(importedSummary(item), /Wikidata item Q9000001/);
   assert.match(importedSummary(item), /an invented uprising/);
@@ -1355,6 +1370,42 @@ test('an event whose own point is the only located thing is reported, never name
   assert.deepEqual(await readdir(path.join(dir, 'places')), [], 'nothing was named');
 });
 
+test('--import leaves an event placeless rather than at a country 25 degrees away (deviation 1330)', async () => {
+  // Q9000030's own P625 is (1, 1) and the only other thing it locates is a P17
+  // whose point is (19, 19). Both are inside the one fixture lane, so the lane
+  // guard cannot see the difference — which is exactly how the four actions off
+  // Guadeloupe and Martinique came out filed in France.
+  const { dir, cacheDir } = await scratch({ items: ['Q9000030'] });
+  const { fetcher } = await fixtureFetcher();
+  const { report, failed } = await runImportMode(dir, { fetcher, today: '2026-09-25', cacheDir, deriveRegion });
+  assert.deepEqual(failed, []);
+  assert.deepEqual(report.refused, [], 'the event is still imported; it is the place that is refused');
+
+  assert.deepEqual(report.offCountry.map((o) => o.qid), ['Q9000031'],
+    'and the run says which country it would not take and why');
+  const action = await readJson(path.join(dir, 'events', 'action-off-southcorner.json'));
+  assert.equal(action.place, null, 'placeless is the honest answer, not Northcorner');
+  assert.equal(action.region, 'testland',
+    'P17 is still a lane of last resort — the event is drawn in the right lane with no place');
+  assert.deepEqual(await readdir(path.join(dir, 'places')), [],
+    'and no country record was written for it either');
+
+  // The same guard on the second run, where the country is a record this atlas
+  // already holds and the reuse at the head of the chain is what would take it.
+  await writeFile(path.join(dir, 'places', 'northcorner.json'),
+    `${JSON.stringify({ schema: 1, kind: 'place', id: 'northcorner', title: 'Northcorner', wikidata: 'Q9000031', where: { lon: 19, lat: 19, precision: 'country', label: 'Northcorner' }, sources: [], origin: { tool: 'wikidata' }, review: { status: 'draft', flags: [] }, authors: [], created: '2026-09-25' }, null, 2)}\n`, 'utf8');
+  await rm(path.join(dir, 'events', 'action-off-southcorner.json'));
+  await writeFile(path.join(dir, 'imports', 'wikidata-state.json'),
+    JSON.stringify({ schema: 1, kind: 'import-state', source: 'wikidata', modes: {} }, null, 2), 'utf8');
+  const { fetcher: again } = await fixtureFetcher();
+  const second = await runImportMode(dir, { fetcher: again, today: '2026-09-26', cacheDir, deriveRegion });
+  assert.deepEqual(second.report.offCountry.map((o) => o.qid), ['Q9000031'],
+    'a held country is refused by the same measure as one the run would have written');
+  const rewritten = await readJson(path.join(dir, 'events', 'action-off-southcorner.json'));
+  assert.equal(rewritten.place, null);
+  assert.equal(rewritten.region, 'testland');
+});
+
 test('fetchEntities splits at the fifty the API takes, and asks for every id (deviation 1324)', async () => {
   const { asked, fetcher } = await fixtureFetcher();
   assert.equal(ENTITIES_PER_CALL, 50);
@@ -1480,4 +1531,41 @@ test('umbrellasWith takes only active events that carry an item', () => {
   ];
   assert.deepEqual([...umbrellasWith(held, made).keys()], ['Q4'],
     'a place is not an umbrella, a withdrawn event would be rule 24\'s error, and an event with no item cannot be looked up');
+});
+
+// A15 (8), at import time. The REST summary endpoint follows a redirect and
+// answers with the article it landed on, so an item whose English sitelink is
+// a redirect into a different subject comes back with a lead about something
+// else — and the importer, which has no reason to doubt the endpoint, quotes
+// it. That is how `west-indies-campaign-1793-1798` was written on 29 September
+// with the lead of "British Army during the French Revolutionary and
+// Napoleonic Wars" inside it (deviation 1347). The question A15 (8) asks is
+// the one this answers: does the title the fetch landed on fold to any name
+// the item gives itself?
+test('a lead that landed on another article is not this item\'s (A15 (8))', async () => {
+  const item = await read('Q9000001');
+  assert.equal(titleFor(item).title, 'Northfield Rising');
+
+  assert.equal(leadIsRedirect(item, { title: 'Northfield Rising', revid: 9, text: 'x' }), false,
+    'the article it asked for is the article it got');
+  assert.equal(leadIsRedirect(item, { title: 'A History of Northfield', revid: 9, text: 'x' }), true,
+    'a redirect into a wider subject is a lead about something else');
+
+  // A name the item gives itself in any of the languages the atlas reads, and
+  // an alias as much as a label: the item is what decides what it is called.
+  const aliased = { ...item, aliases: { ...item.aliases, en: ['The Rising of Northfield'] } };
+  assert.equal(leadIsRedirect(aliased, { title: 'The Rising of Northfield', revid: 9, text: 'x' }), false,
+    'an alias is one of the item\'s own names');
+  assert.equal(leadIsRedirect(item, { title: 'Levantamento de Northfield', revid: 9, text: 'x' }),
+    leadIsRedirect(item, { title: item.labels.pt ?? 'Levantamento de Northfield', revid: 9, text: 'x' }),
+    'the Portuguese label is a name too, whichever side of the fold it is read from');
+
+  // The fold is the one every other name comparison here uses, so case and
+  // accents are not a redirect.
+  assert.equal(leadIsRedirect(item, { title: 'northfield rising', revid: 9, text: 'x' }), false);
+
+  // No lead and no title is not a redirect: it is nothing, and leadSummary
+  // already answers null for it.
+  assert.equal(leadIsRedirect(item, null), false);
+  assert.equal(leadIsRedirect(item, { revid: 9, text: 'x' }), false);
 });

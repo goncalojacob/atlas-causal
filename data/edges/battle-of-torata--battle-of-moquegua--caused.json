@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-torata--battle-of-moquegua--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Torata\", revision 1370591244, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Background"
+    }
+  ],
+  "from": "battle-of-torata",
+  "to": "battle-of-moquegua",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Two days, one rout. Torata's own lead says the defeat there \"culminated with the defeat of Patriots whose army would be almost completely destroyed two days later at the Battle of Moquegua with support of General José de Canterac\", and Moquegua's lead confirms the outcome: \"The army of the Patriots was almost completely destroyed.\" The Ayacucho article treats the pair as one royalist stroke against one expedition — \"Royalist forces had smashed Rudecindo Alvarado's Liberating Expedition in the Battles of Torata and Moquegua\". Probable: Wikipedia alone.",
+  "dispute": null
+}

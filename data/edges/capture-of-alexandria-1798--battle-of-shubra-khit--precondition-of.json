@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shubra Khit\", revision 1371091764, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Pyramids\", revision 1371801221, § Prelude"
+    }
+  ],
+  "from": "capture-of-alexandria-1798",
+  "to": "battle-of-shubra-khit",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later article's background is the march out of the captured port: “The French troops then marched on and assaulted Alexandria and captured it after its Wali, Koraim Pasha, refused to surrender. After capturing Alexandria, Napoleon sent a column eastwards to capture Rosetta … The main column of the French army was hurriedly marched out of Alexandria after a rest of less than two days, ordered by Napoleon to march some 50 miles across mostly barren terrain, aiming for Ramaniyah, a village on the banks of the Nile”, and its lead places the battle “on their march to Cairo”. The Pyramids article says the same thing in one sentence: “After landing in Ottoman-controlled Egypt and capturing Alexandria on 2 July 1798, the French army under General Bonaparte marched across the desert toward Cairo.” `precondition-of` and not `caused`: Alexandria is the base the march was launched from and the supply line that made it possible, not the reason Murad Bey stood at Shubra Khit. Probable: Wikipedia alone.",
+  "dispute": null
+}

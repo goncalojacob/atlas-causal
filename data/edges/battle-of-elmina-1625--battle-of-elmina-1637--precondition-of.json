@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-elmina-1625--battle-of-elmina-1637--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"History of Elmina\", revision 1361080834, § The Dutch period (1637–1872)"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elmina (1637)\", revision 1375872702"
+    }
+  ],
+  "from": "battle-of-elmina-1625",
+  "to": "battle-of-elmina-1637",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The city's own history counts the attempts and puts this battle among them: “Five times the Dutch had tried in vain to capture the Portuguese fortress in Elmina: in 1596, 1603, 1606, 1615 and 1625. Each time the invasions had been resisted with the support of Ghanaian residents”; of 1625 in particular, “This invasion resulted in failure with great losses due to the counterattack of Ghanaian allies organized by the Portuguese governor Francisco de Sotomaior.” The 1637 attack is then “once more”, and it is the one that took the fort. So the earlier defeat is a precondition of the later capture in the article's own reading — the same fortress, the same company, the fifth failure before the sixth attempt — and not a cause of it: what the article says decided 1637 was the hill of St. Jago the Portuguese had left unsecured. Probable: Wikipedia alone.",
+  "dispute": null
+}

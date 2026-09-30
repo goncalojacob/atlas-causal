@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "macau-incident-1799--battle-of-port-louis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Macau Incident (1799)\", revision 1370627318"
+    }
+  ],
+  "from": "macau-incident-1799",
+  "to": "battle-of-port-louis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Port Louis article states the consequence of the Macau failure in its own words: \"This combined force then attacked an East India Company convoy gathering in the Pearl River in January 1799, but in the ensuing Macau Incident they were driven off by the Royal Navy escort squadron. Dispirited, Sercey returned westwards to Île de France, narrowly avoiding an unequal battle with a large British squadron blockading the port. On arrival he discovered that Preneuse and Brûle-Gueule were the only ships remaining of his original command, the others having returned to France or been lost in battle.\" That return is what brought Preneuse back under the blockade of Port Louis, and it is what \"In September 1799 Sercey dispersed his remaining ships\" follows from. Precondition-of and not caused: being driven off at Macau did not order the December cruise, it put the last frigate back where the blockade was.",
+  "dispute": null
+}

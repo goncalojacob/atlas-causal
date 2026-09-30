@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sunda-strait-campaign-of-january-1794",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7639108",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Sunda Strait campaign of January 1794"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7639108"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sunda Strait campaign of January 1794\", revision 1370749005"
+    }
+  ],
+  "title": "Sunda Strait campaign of January 1794",
+  "summary": "The English Wikipedia article \"Sunda Strait campaign of January 1794\", at revision 1370749005, opens: \"The Sunda Strait campaign of January 1794 was a series of manoeuvres and naval actions fought between warships and privateers of the French Republic and a squadron of vessels sent by the British East India Company to protect trade in the region, later augmented by Dutch warships. The campaign developed as French forces based on Isle de France reacted more quickly than the British forces in the Indian Ocean to the expansion of the French Revolutionary Wars on 1 February 1793. French privateers rapidly spread along the British trade routes in the Far East, becoming concentrated around the narrow Sunda Strait between the islands of Java and Sumatra in the Dutch East Indies. These ships were soon joined by French Navy frigates and began to inflict losses on shipping in the region. The Royal Navy forces in the Indian Ocean were deployed elsewhere and so the East India Company, the private enterprise that ruled much of British India in the 1790s and maintained their own fleet and navy, raised a squadron of armed merchant ships to patrol the Strait and drive off the raiders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7639108, imported by tools/import/wikidata.mjs. The item's own description reads \"1794 conflict between British and French\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1794,
+    "date": "1794-01-02",
+    "endDate": "1794-02-09"
+  },
+  "place": "sunda-strait",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

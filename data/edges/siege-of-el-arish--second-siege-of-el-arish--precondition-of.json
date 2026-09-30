@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "siege-of-el-arish--second-siege-of-el-arish--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Siege of El Arish\", revision 1370737341"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of El Arish\", revision 1372136661"
+    }
+  ],
+  "from": "siege-of-el-arish",
+  "to": "second-siege-of-el-arish",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same fort, taken and then lost. The February article: \"On 20 February 1799, the French began their assault, and successfully captured El Arish from the Ottomans. After capturing the fort, the French repaired the fortifications that had sustained damage during the siege.\" The December article opens on what was left there: \"El Arish was garrisoned by 300 French men led by Chef de Bataillon Louis-Joseph Elisabeth Cazals. The Ottoman army consisted of 14,000 men.\" Precondition-of and not caused: neither article says the February capture brought the December attack on, and the December one gives its own occasion — the Grand Vizier's army arriving at Jaffa while negotiations were under way — but the garrison the Ottomans massacred was in that fort because the French had taken and repaired it ten months earlier.",
+  "dispute": null
+}

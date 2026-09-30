@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-port-louis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place-by-hand"
+    ]
+  },
+  "wikidata": "Q20870437",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of Port Louis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20870437"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    }
+  ],
+  "title": "Battle of Port Louis",
+  "summary": "The English Wikipedia article \"Battle of Port Louis\", at revision 1371973739, opens: \"The Battle of Port Louis was a minor naval engagement of the French Revolutionary Wars, fought on 11 December 1799 at the mouth of the Tombeau River near Port Louis on the French Indian Ocean island of Île de France, later known as Mauritius. Preneuse had originally been part of a powerful squadron of six frigates sent to the Indian Ocean in 1796 under the command of Contre-amiral Pierre César Charles de Sercey, but the squadron dispersed in 1798 and by the summer of 1799 Preneuse was the only significant French warship remaining in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20870437, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 minor naval engagement of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-12-11"
+  },
+  "place": "port-louis",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
