@@ -877,6 +877,77 @@ export function countryRefusal({ when, country, countryCount = 1, chainPoints = 
   return null;
 }
 
+// Which candidates the gate above runs on (deviation 1476).
+//
+// The gate was reached from `read.country` alone, so it asked its three
+// questions of a country the item named through `P17` and of no other. But
+// `P276` and `P131` reach countries too — an item whose "location" *is* a state
+// walked straight past a test written for exactly that item — and which
+// property carried the id is not a fact about the thing. What the thing is, is:
+// the class table gives a `country` precision to the classes that are countries
+// (`classify`), and that is read off the item like everything else here.
+//
+// So: the gate runs where `P17` named it, or where its own class says it is a
+// country. Pure — the caller has both answers already.
+export function countryGateApplies({ qid, countries, precision = null } = {}) {
+  const named = countries instanceof Set ? countries.has(qid) : (countries ?? []).includes(qid);
+  return named || precision === 'country';
+}
+
+// The points A15(6)'s distance test measures against (deviation 1477).
+//
+// The rule is "every point the event's **own chain** stands at", and the chain
+// is the event's parents and its children — the records the atlas already holds
+// around it. What the gate was handed instead was the item's own `P625`,
+// `P276` and `P131` points, which is a weaker test than no test at all: the
+// comment at the call site said the quiet part out loud, that everything before
+// `P17` on the chain "is nearer the event than a country is, by construction".
+// A country 3,000 km away passes a test taken against a point 5 km away, so
+// the third refusal could only ever fire on an item that gave nothing but a
+// country — and those are the items whose country is least checkable.
+//
+// `events` is the held parent and child records, `pointOf` looks a place id up.
+// Pure, and empty is a real answer: an event whose chain is placeless is an
+// event this test cannot speak about, which is what `countryRefusal` already
+// says of an empty list.
+// Where a place record this atlas holds stands. One line, and it is here so
+// that `chainPointsOf`'s caller has nothing to assemble.
+export function pointOfPlace(entries, id) {
+  const where = (entries ?? []).find((e) => e.record?.id === id && e.record?.kind === 'place')?.record?.where;
+  return Number.isFinite(where?.lon) && Number.isFinite(where?.lat) ? { lon: where.lon, lat: where.lat } : null;
+}
+
+export function chainPointsOf(events, pointOf) {
+  const out = [];
+  for (const record of events ?? []) {
+    const point = typeof record?.place === 'string' ? pointOf(record.place) : null;
+    if (point) out.push(point);
+  }
+  return out;
+}
+
+// What this record's own `review.note` says A15(6) has already refused for it.
+//
+// Every refusal above is written onto the record, and the 30 September curation
+// fire then spent eighteen placements re-deriving eighteen refusals that were
+// already sitting on disk in the notes of the very records being re-placed. The
+// note is the cheapest oracle in the corpus: no network, no item, no fetch.
+//
+// A place the record **carries** is never a candidate, whatever the note says
+// about it. `1952-egyptian-revolution` refuses `kingdom-of-egypt` as the item's
+// `P17` country in one sentence and then places the event there through its
+// `P276` in the next, because a polity whose own dates cover the event is not
+// the modern state the gate refused; the second sentence is the one that
+// stands, and a pass that read the first alone would take the place away.
+const A15_6_REFUSED = /A15\(6\): the place was ([a-z0-9][a-z0-9-]*), [^.]*?it is refused/g;
+
+export function refusedPlaces(record) {
+  const out = new Set();
+  for (const m of String(record?.review?.note ?? '').matchAll(A15_6_REFUSED)) out.add(m[1]);
+  if (typeof record?.place === 'string') out.delete(record.place);
+  return out;
+}
+
 // 3 — the umbrellas the item's own P361 names and this atlas holds as active
 // events. **Every one whose span contains the child's** (A8), not the first:
 // the conquest of Chiapas is part of the conquest of the Aztec empire and of
@@ -1462,7 +1533,7 @@ function skipSigned(report, record, qid) {
 // is what puts `a9-place` on the event.
 async function eventPlace(read, {
   dataDir, entries, entityOf, byItem, taken, written, report,
-  deriveRegion, classes, today, lane, when = null, chainPoints = [],
+  deriveRegion, classes, today, lane, when = null, chainPoints = [], refused = new Set(),
 }) {
   const eventLane = lane?.how === null ? null : lane?.region ?? null;
   let ownPointOnly = null;
@@ -1474,17 +1545,27 @@ async function eventPlace(read, {
     // A15(6). The gate runs before the chain does anything with the item,
     // reuse included: a country that was not there is not this event's place
     // whether or not a record for it already exists.
-    if (countries.has(qid)) {
-      const entity = entityOf(qid);
-      const candidate = entity && !isMissing(entity) ? readEntity(entity) : null;
+    const gateEntity = entityOf(qid);
+    const gateCandidate = gateEntity && !isMissing(gateEntity) ? readEntity(gateEntity) : null;
+    // Deviation 1476: the gate asks what the item is, not which property
+    // reached it, so a country standing in `P276` is tested like any other.
+    if (countryGateApplies({
+      qid,
+      countries,
+      precision: gateCandidate ? classify(gateCandidate, classes).precision ?? null : null,
+    })) {
       const why = countryRefusal({
         when,
-        country: candidate?.point ? {
-          point: candidate.point,
-          inception: claimTimes(entity, PROPERTIES.inception)[0]?.year ?? null,
-          dissolution: claimTimes(entity, PROPERTIES.dissolved)[0]?.year ?? null,
+        country: gateCandidate?.point ? {
+          point: gateCandidate.point,
+          inception: claimTimes(gateEntity, PROPERTIES.inception)[0]?.year ?? null,
+          dissolution: claimTimes(gateEntity, PROPERTIES.dissolved)[0]?.year ?? null,
         } : null,
-        countryCount: countries.size,
+        // Refusal 2 is about `P17`'s alphabetical accident — the chain taking
+        // the first of nine — so it is counted over the property that named
+        // this candidate. A country the gate reached by its class alone was
+        // named by the one value the chain is standing on.
+        countryCount: countries.has(qid) ? countries.size : 1,
         chainPoints,
       });
       if (why) {
@@ -1493,6 +1574,12 @@ async function eventPlace(read, {
       }
     }
     const held = byItem.get(`place:${qid}`);
+    // A refusal this record already carries is a refusal (`refusedPlaces`): the
+    // note is on disk and re-deriving it costs a fetch to reach the same answer.
+    if (held && refused.has(held)) {
+      report.offCountry.push({ qid, why: `the record's own review.note already refuses ${held} under A15(6)` });
+      continue;
+    }
     if (held) {
       const record = entries.find((e) => e.record?.id === held)?.record;
       const heldLane = record?.region ?? deriveRegion?.(record?.where)?.region ?? null;
@@ -1727,13 +1814,30 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         if (seeded) lane = seeded;
       }
 
+      // A15(6)'s distance test is over the **event's own chain** — its parents
+      // and its children — so the filing is read before the place (deviation
+      // 1477). `filedUnder` is pure and fetches nothing, so reading it here
+      // costs nothing and the same answer is reused below.
+      const filed = filedUnder(when, read.partOf, umbrellas);
       const found = await eventPlace(read, {
         dataDir, entries, entityOf, byItem, taken, written, report,
         deriveRegion, classes: seeds.classes, today, lane, when,
-        // A15(6): the points before `P17` on the chain, for the distance half
-        // of the country gate.
-        chainPoints: [read.point, ...read.location.concat(read.administrative)
-          .map(pointOf).map((one) => one?.point)].filter(Boolean),
+        // Deviation 1477. The anchors are the item's **own** `P625` and the
+        // points the event's parents stand at — a new event has no children yet,
+        // so the chain is its umbrellas. What is deliberately gone is `P276`
+        // and `P131`: a container the item is filed inside sits in the very
+        // country being tested, so its point is under 1,000 km from that
+        // country's centroid by construction and the third refusal could never
+        // fire. The item's own point is the opposite case and the strongest
+        // anchor there is — it is what refused a country 25 degrees away
+        // (deviation 1330) and it stays.
+        chainPoints: [
+          read.point,
+          ...chainPointsOf(
+            filed.parents.map((id) => entries.find((e) => e.record?.id === id)?.record).filter(Boolean),
+            (id) => pointOfPlace(entries, id),
+          ),
+        ].filter(Boolean),
       });
       const place = found.place;
       // Placeless: the region is not an override but the only thing the
@@ -1766,7 +1870,6 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
 
       // And the filing: every umbrella the item's own P361 names and this atlas
       // holds, whose span contains this event (A8).
-      const filed = filedUnder(when, read.partOf, umbrellas);
       for (const one of filed.refused) report.unfiled.push({ qid, ...one });
 
       const record = eventRecord(read, {
