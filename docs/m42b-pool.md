@@ -13372,3 +13372,226 @@ establishes it is tabled under batch 51.*
    is still unread), batch 48's Chilean four, and the place pass on records that
    already exist, which is M42's.
 
+## Batch 52 — the americas, 16th century: Las Salinas, Iñaquito, and the civil wars joined up
+
+**Where it came from.** The last stand's move 3: the americas' 16th century is
+this lane's open vein and the conquest of Peru is what is in it. Africa and Asia
+before 1800 were not re-walked — move 2 of that stand says they are measured and
+closed, and nothing has changed the two numbers A15 (1) gates on (211 and 211
+against A10's 303). So: 51 active in the americas' 1500s after this batch,
+against 49 before it, and the main count where it was found.
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `battle-of-las-salinas` | `Q947591` | 1538-04-26 | `spanish-conquest-of-the-inca-empire` | `cachipampa` (new) |
+| `battle-of-inaquito` | `Q1609295` | 1546-01-18 | `spanish-conquest-of-the-inca-empire` | `inaquito` (new) |
+
+Both carry a `P361` the atlas does not hold and cannot write — `Q5887915`, the
+civil wars between the conquerors of Peru, and `Q5884503`, the Great
+Encomendero Uprising, **neither of which has an English Wikipedia article**, so
+neither can be an umbrella under A2 — and both are filed by span and subject
+instead, 1538 and 1546 inside 1532–1572, each against a sibling already filed
+there: `battle-of-chupas` and `battle-of-abancay` for the first, and
+`battle-of-jaquijahuana`, which carries the *same* `P361`, for the second. **The
+main count is 234 before the batch and 234 after it.**
+
+**A9, twice, and A15 (6) once inside it.** Las Salinas's item carries its own
+`P625` and nothing else located: no `P276`, and a `P17` of Peru, whose inception
+is 1821 and which A15 (6) therefore refuses. So the place is the item's own
+point, and its name is the battlefield the cited article names at revision
+1370267925 — *"the ancient Indian salt mines of Cachipampa, situated about 5 km
+south of Cuzco"* — with `precision: point`, because a salt pan is not a
+settlement. Iñaquito's item carries no point at all, so A9's second step
+applies: its `P276` is Iñaquito (`Q4886828`), an urban parish of Quito, and the
+point is that item's own. Its class `Q2579179` is in no row of the class table,
+so the precision stays at the import's own fallback. **Both points derive to
+`americas`, which is the events' own lane**, so the 24 September lane guard
+passes on both.
+
+**The edges, and A15 (5) applied at the point of writing.** Five candidate
+quotes, four written and one refused:
+
+| from → to | type | verdict |
+| --- | --- | --- |
+| `battle-of-abancay` → `battle-of-las-salinas` | `precondition-of` | write |
+| `battle-of-las-salinas` → `battle-of-chupas` | `precondition-of` | write |
+| `new-laws` → `battle-of-inaquito` | `precondition-of` | write |
+| `battle-of-inaquito` → `battle-of-jaquijahuana` | `precondition-of` | write |
+| *"The Almagristas, followers of Diego de Almagro, met their downfall in the Battle of Chupas on September 16, 1542"* → `battle-of-jaquijahuana` | — | **refused: chronology with no cause stated** |
+
+The refusal is deviation 1358 below: `verdictFor()` passes that sentence,
+because it opens with none of the four openers, and it is chronology all the
+same. **It was refused by reading**, and the cost of refusing it is the whole
+point of this batch's shape — see the component note below.
+
+**A15 (11): one of the four crosses an umbrella**, and it is `new-laws` →
+`battle-of-inaquito`. `new-laws` is filed under
+`spanish-colonization-of-the-americas` and Iñaquito under the conquest of the
+Inca Empire, so the two share no parent. The Iñaquito article makes it explicit:
+the viceroy who died at Iñaquito was sent to enforce the New Laws, and the man
+who killed him was chosen to lead the encomenderos who refused them — which is
+the same account this atlas already held for Jaquijahuana two years later, so
+the new edge doubles the New Laws into a hub rather than repeating a claim. The
+other three run between events that share a parent by construction.
+
+**What moved and what did not, in the component.** The largest component takes
+Iñaquito and goes to **746**, because `new-laws` is inside it; the Almagrista
+group absorbs `battle-of-chupas`, which was a component of one, and goes from
+**six to eight**. It is still outside the largest, and this batch establishes
+why rather than guessing at it. The last stand's move 4 asked for an edge from
+that group to any event under `spanish-colonization-of-the-americas` other than
+its own parent. **Five articles were read for one and there is none**: Las
+Salinas's own article names no event this atlas holds; Chupas's names only Las
+Salinas; Abancay's names Las Salinas and the siege of Cusco, both already in the
+group; Jaquijahuana's names Chupas once and the naming is the chronology
+refused above; Iñaquito's names Jaquijahuana and the New Laws and no Almagrista
+battle at all (`Chupas` 0, `Salinas` 0, `Abancay` 0 across its 13,816
+characters). Three further bridges were probed as articles and do not exist:
+*Assassination of Francisco Pizarro*, *Revolt of the encomenderos*, *Peruvian
+Civil Wars*. **So the eight are joined to the largest by one sentence that
+nobody has written, and the sentence the articles do offer is a date.**
+
+**The numbers.**
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 1,340 | **1,342** |
+| **main** | 234 | **234** |
+| largest connected component | 745 | **746** |
+| components | 405 | **404** |
+| events with no edge | 316 | **315** |
+| edges, active | 1,123 | **1,127** |
+| edges crossing an umbrella | 574 of 1,123 | **575 of 1,127**; **1 of the 4** written this fire |
+| the americas' 1500s | 49 | **51** |
+| the `americas` lane | 363 active, 56 main | **365 active, 56 main** |
+
+**A15 (2), the last step.** `node tools/cache-evidence.mjs --fill` wrote the two
+new leads — `Q947591` at 1370267925 and `Q1609295` at 1370443968, three
+citations between them — and the report is back to **0 revisions that should be
+on disk and are not**. The three articles the edges cite besides them
+(`Q283288`, `Q1612597`, `Q2338093`) were already on disk at exactly the
+revisions batch 51 cited an hour earlier, which is itself worth knowing: the
+revision ids this lane writes are holding.
+
+### Deviation 1357 — the API refuses a burst and `Special:Export` does not
+
+`en.wikipedia.org/w/api.php` and `/api/rest_v1/` both answered **429, "You are
+making too many requests to the API"** to this fire's first four requests, made
+back to back, and `www.wikidata.org/w/api.php` did the same. Two paths kept
+serving throughout: **`/wiki/Special:Export/<title>`**, which returns the
+article's wikitext *and its current revision id* in one call, and
+**`/w/index.php?title=<title>&action=raw`**. `Special:EntityData/<qid>.json`
+also served Wikidata throughout, where `api.php` would not. This fire read all
+five of its articles and took all five revision ids that way, and the REST
+endpoint answered 200 on the first try once it was asked one request at a time
+with seconds between them — which is deviation 1440's finding from the other
+lane, arrived at from the other end: **the pace is the point.** A fire that
+needs an article and a revision id and does not want to spend its budget
+discovering this should reach for `Special:Export` first.
+
+### Deviation 1358 — `verdictFor()` cannot see chronology that does not open with it
+
+A15 (5)'s refusal class is written as four openers — "After", "Following", "In
+the aftermath", "Shortly after" — and `isChronologyOnly()` implements exactly
+that: an opener, and no causal marker. The Jaquijahuana article's sentence
+about Chupas, *"The Almagristas, followers of Diego de Almagro, met their
+downfall in the Battle of Chupas on September 16, 1542"*, opens with a noun
+phrase and states no cause, so the function returns `write: true` on it. It is
+chronology and nothing else. **The verdict function is a floor and not the
+rule**: a batch that runs it and stops has not applied A15 (5), and this fire
+refused the sentence by reading it. The cost is recorded above and it is real —
+that one edge is what would have joined eight events to the largest component —
+which is why it matters that the refusal was not quietly skipped.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the forty-sixth fire: one batch, 52, two events, two
+places, four edges, and the americas' 16th century from 49 to 51. The main count
+did not move. **The fire's second finding is a negative one and it is worth as
+much as the batch**: the eight-event Almagrista component cannot be joined to
+the largest from any article that names it, and the five that do name it were
+read to establish that.*
+
+| | |
+| --- | --- |
+| corpus | **1,342 active** |
+| **main** | **234** — unchanged by the batch |
+| **largest connected component** | **746** (745 before) |
+| components | **404** (405 before) |
+| events with no edge at all | **315** (316 before) |
+| edges crossing an umbrella | **575 of 1,127**; **1 of the 4** written this fire |
+| Europe before 1900 | **258 active** — paused by A15 (1), untouched |
+| the `americas` lane | **365 active, 56 main** (363 before) |
+| **Africa before 1800** | **20 active, 0 main** — unmoved, and not walked this fire |
+| **Asia before 1800** | **21 active, 0 main** — likewise |
+| Africa / Asia, all centuries | **211 / 211** — A15 (1)'s gate is A10's 303 |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | **51 / 5** |
+| 1600s | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **365 / 56** |
+
+### The next fire's moves, in order
+
+1. **The three questions to the owner are unchanged and none of them is a run's
+   to settle.** The **main count** (six veins have now stopped on it); **C8**
+   (deviations 1201, 1355, and this fire adds nothing to the count because its
+   two umbrella-internal chains were writable without it); and **A15 (1)'s
+   Europe pause closing the only door into pre-1800 africa/asia**, which batch
+   51 established and `origin/m42`'s batch 71 reached independently on the same
+   day. Africa and Asia stand at 211 and 211 against A10's 303 and **no fire in
+   either lane can move either number until the owner answers.** Do not spend a
+   fire re-establishing this; it is established twice over.
+2. **Do not re-walk batch 51's four africa/asia veins, and do not re-walk this
+   fire's bridge search.** Five articles — Las Salinas, Chupas, Abancay,
+   Jaquijahuana, Iñaquito — were read in full for a sentence joining the
+   Almagrista eight to the largest component and there is none; three candidate
+   bridge articles do not exist as articles at all (*Assassination of Francisco
+   Pizarro*, *Revolt of the encomenderos*, *Peruvian Civil Wars*). The counts
+   are in the batch note.
+3. **The americas' 16th century is still the open vein, and the conquest of Peru
+   still has battles in it.** `Q947591` is now held, so the next ones are
+   `Battle of Huarina` (1547, Gonzalo Pizarro against Diego Centeno, between
+   Iñaquito and Jaquijahuana — its article names Jaquijahuana once and was
+   fetched but not read this fire) and the earlier Almagrista and Manco Inca
+   battles the `Campaignbox Spanish conquest of Peru` on every one of these
+   articles lists. **Huarina is the strongest single candidate left**: it sits
+   inside the largest component's own chain (Iñaquito → Huarina → Jaquijahuana)
+   and would extend it rather than another island.
+4. **The Almagrista eight are still the best structural prize and they now need
+   a different kind of move.** Not another battle article: the group is
+   `battle-of-cusco`, `battle-of-vilcaconga`, `battle-of-maraycalla`,
+   `siege-of-cusco`, `battle-of-ollantaytambo`, `battle-of-abancay`,
+   `battle-of-las-salinas`, `battle-of-chupas`, and `battle-of-cajamarca` sits
+   beside them as a component of one. What would join them is an event of the
+   *Spanish colonisation* kind that one of their articles names causally — a
+   decree, a partition, a governorship — rather than a battle. The Las Salinas
+   article's own § Background points at one: *"The conflict between the Pizarro
+   brothers and Almagro originated in a dispute over the possession of the city
+   of Cuzco during the initial Spanish partition and administration of Peru."*
+   **That partition is the 1529 `Capitulación de Toledo`**, which this atlas
+   does not hold and which has an English article; if it can be imported and
+   filed, it is the bridge, and it is the one lead this fire leaves live.
+5. **`Special:Export` before the API** — deviation 1357. It serves the wikitext
+   *and* the current revision id in one call and kept serving while `api.php`
+   and `/api/rest_v1/` were both returning 429 to this fire. `Special:EntityData`
+   is the same story for Wikidata. Pace the REST endpoint (seconds apart, one at
+   a time) and it answers; burst it and nothing does.
+6. **`verdictFor()` is a floor, not the rule** — deviation 1358. It passed a
+   sentence that is chronology in substance because the sentence opens with a
+   noun phrase rather than one of A15 (5)'s four openers. Read the quote as well
+   as running the function.
+7. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, question
+   11 (the Nine Years' War, `Q152218`), `Q718893` *theater of war*, `Q20639061`,
+   `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Angolan Wars umbrella (`Q132776772`, whose `P361` `Q5148448`
+   is still unread), batch 48's Chilean four, and the place pass on records that
+   already exist, which is M42's.
