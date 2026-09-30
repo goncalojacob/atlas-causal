@@ -2333,6 +2333,20 @@ In full in the history file. The ones that decide something:
   answered. A fire reading this should not spend another batch on a held war's
   `P361` children, and should not file an event under its grandparent to get
   round A14(6).
+- **And the vein that was supposed to be the way round it has now been measured
+  too, on 30 September, 09:07Z.** If a batch cannot import, a fire can still
+  write edges between events already held — so one read the **bodies of all 407
+  Africa and Asia articles** rather than the leads the cache holds. **775 unheld
+  non-parent pairs are named at all, 132 by a sentence that states a cause, and
+  two were writable.** The rest fall to a rule nobody had noticed was doing this
+  work: **rule 4, the arrow of time, refuses 77 of the 132** (deviation 1485),
+  because the true thing an article usually says about two held events is *this
+  later event changed the course of that earlier, longer one* — `fall of Kabul`
+  on an insurgency that began in 2004, the Ogaden War on an Eritrean war sixteen
+  years older. Both were written and both had to be deleted. **So edges between
+  held records are not a substitute for imports at any useful rate**, and the
+  question above is the only thing that moves this lane.
+
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
   `allied-with` with a note — a substitution, reported and never adopted. The
