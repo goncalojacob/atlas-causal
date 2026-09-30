@@ -18301,6 +18301,23 @@ put before every import and what Asia had never been given.*
   1898); and, from batch 72's stand and still true,
   `operation-unified-protector` under `libyan-civil-war` and
   `tet-offensive --> easter-offensive`.
+- **The next Asian umbrella was found, read and not written, and the reason is
+  the one the filing suite warns about.** `Western imperialism in Asia`
+  (`Q3234208`, 14 sitelinks, revision 1369975643) is the obvious companion to
+  `decolonisation-of-asia`, as `scramble-for-africa` is to
+  `decolonisation-of-africa`, and its span is in its own first paragraph: *"from
+  the colonial period beginning in the 16th century"* and *"formally ending with
+  the independence of Portuguese Macau in 1999"*. **That is a 500-year span, and
+  an umbrella that wide is the bucket `tests/m42-filing.test.mjs` says a period
+  must not be**: every Asian event this atlas holds falls inside it, so the span
+  test stops discriminating and the whole weight of each filing falls on whether
+  the article is *about* that event. Four of this lane's mains plausibly are —
+  `1893-franco-siamese-crisis`, `boxer-rebellion`, `british-expedition-to-tibet`
+  and `treaty-of-lhasa` — and a fire that writes it **must argue each from the
+  article's own 59,000 characters and file nothing else**, or it will have put a
+  bar across five centuries of the Asia lane and gained a reader nothing. This
+  fire read the lead, judged the shape and stopped; the item and the revision are
+  here so the next one does not pay for the reading twice.
 - **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
   reads 28 refusals off disk; the next places pass should hand it
   `refusedPlaces(record)`. Unchanged from the last four stands.
