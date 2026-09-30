@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hitachi-maru-incident--battle-off-ulsan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-72"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle off Ulsan\", revision 1370603310, § Commerce raiding operations"
+    }
+  ],
+  "from": "hitachi-maru-incident",
+  "to": "battle-off-ulsan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article gives the raiding as the reason the squadron that fought it was in the Sea of Japan at all. The incident is the fourth of six sorties the section lists — \"The fourth raid from 12 to 19 June sank several transports in the Tsushima Strait in what was called the \"Hitachi Maru Incident\"\" — and the section closes on what they produced: \"As a result of these operations, the Japanese were forced to assign the IJN 2nd Fleet under the command of Vice Admiral Kamimura Hikonojō with considerable resources in an attempt to locate and destroy the Russian squadron.\" Kamimura’s fleet is the one that caught the cruisers off Ulsan. `precondition-of` and not `caused`: the article credits the assignment to all six raids, and of those this atlas holds only this one, so nothing stronger than \"one of the operations that put the 2nd Fleet there\" is claimed. The sortie itself was ordered to help Vitgeft break out of Port Arthur, which the atlas already reads through the Battle of the Yellow Sea; this is the other side of the meeting. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
