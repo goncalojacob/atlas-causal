@@ -13,15 +13,14 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-30",
+  "revised": "2026-09-24",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "a9-place",
       "summary-from-lead",
-      "a7-widened",
-      "filed-from-p361"
+      "a7-widened"
     ],
     "note": "A7: the span was 1911-1927, which is the Spanish campaigns in Morocco either side of the war. The cited article's first sentence says, at the cached revision 1374340065, \"fought from 1921 to 1926\". So 1921-1926, and the two days go: the article gives none."
   },
@@ -60,7 +59,6 @@
   "place": "rif",
   "region": "africa",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "interwar-period",
   "category": "war",
   "actors": []
 }
