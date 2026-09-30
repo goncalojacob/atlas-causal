@@ -13049,7 +13049,7 @@ filings back.
 **1,916 pure and 313 browser, 2,229 tests, nothing skipped.** The pure half is
 **1,916 of 1,916** on the final head — the one failure this fire found,
 `tests/m42-filing.test.mjs`'s filing property, is gone with the merge that
-ported M42's fix. `node tools/validate.mjs --index` is clean at **0 errors, 615
+ported M42's fix. `node tools/validate.mjs --index` is clean at **0 errors, 611
 warnings**, byte-identical to a fresh build, asked on the committed tree and not
 on a dirty one (deviation 1202).
 
