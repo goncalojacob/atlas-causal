@@ -15830,6 +15830,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "independence-of-brazil-1822",
+      "id": "independence-of-brazil-1822--scramble-for-africa--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "scramble-for-africa",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "independence-of-morocco",
       "id": "independence-of-morocco--ifni-war--caused",
@@ -22448,6 +22477,35 @@
       "revised": null,
       "status": "active",
       "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "scramble-for-africa",
+      "id": "scramble-for-africa--world-war-i--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "a13-relations-pass"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "world-war-i",
       "type": "precondition-of"
     },
     {
