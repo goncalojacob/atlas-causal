@@ -2243,6 +2243,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "boston",
+      "kind": "place",
+      "names": [
+        "Boston"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -18591,6 +18619,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "stillwater-new-york",
+      "kind": "place",
+      "names": [
+        "Stillwater",
+        "Stillwater, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21584,6 +21641,36 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "yorktown-virginia",
+      "kind": "place",
+      "names": [
+        "Yorktown",
+        "Yorktown, Virginia",
+        "Yorktown (Virgínia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

@@ -1838,6 +1838,18 @@
     },
     {
       "dissent": false,
+      "id": "anglo-french-war-1778-1783--estates-general-of-1789--precondition-of",
+      "kind": "edge",
+      "locator": "\"Anglo-French War (1778–1783)\", revision 1370901054"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-french-war-1778-1783--estates-general-of-1789--precondition-of",
+      "kind": "edge",
+      "locator": "\"Estates General of 1789\", revision 1375588196"
+    },
+    {
+      "dissent": false,
       "id": "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled",
       "kind": "edge",
       "locator": "\"Invasion of Dominica (1778)\", revision 1370623961"
@@ -3014,6 +3026,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-chesapeake--siege-of-yorktown--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of the Chesapeake\", revision 1370598769"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-chesapeake--siege-of-yorktown--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-nile--revolt-of-cairo--precondition-of",
       "kind": "edge",
       "locator": "\"Revolt of Cairo\", revision 1371106483, § Revolt"
@@ -3191,6 +3215,30 @@
       "id": "battle-of-zusmarshausen--battle-of-prague-1648--enabled",
       "kind": "edge",
       "locator": "\"Battle of Zusmarshausen\", revision 1370597065, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-lexington-and-concord--siege-of-boston--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battles of Lexington and Concord\", revision 1376384213"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-lexington-and-concord--siege-of-boston--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Boston\", revision 1377282932"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-saratoga--anglo-french-war-1778-1783--caused",
+      "kind": "edge",
+      "locator": "\"Anglo-French War (1778–1783)\", revision 1370901054"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-saratoga--anglo-french-war-1778-1783--caused",
+      "kind": "edge",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
     },
     {
       "dissent": false,
@@ -6923,6 +6971,18 @@
       "id": "siege-of-tournai-1745--battle-of-fontenoy--caused",
       "kind": "edge",
       "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown--treaty-of-paris-1783--caused",
+      "kind": "edge",
+      "locator": "\"American Revolutionary War\", revision 1376266742"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown--treaty-of-paris-1783--caused",
+      "kind": "edge",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
     },
     {
       "dissent": false,
@@ -11558,6 +11618,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-chesapeake",
+      "kind": "event",
+      "locator": "\"Battle of the Chesapeake\", revision 1370598769"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838"
@@ -11969,6 +12035,18 @@
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "locator": "\"Battles of Khalkhin Gol\", revision 1371868221"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-lexington-and-concord",
+      "kind": "event",
+      "locator": "\"Battles of Lexington and Concord\", revision 1376384213"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-saratoga",
+      "kind": "event",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
     },
     {
       "dissent": false,
@@ -15080,6 +15158,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-boston",
+      "kind": "event",
+      "locator": "\"Siege of Boston\", revision 1377282932"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-breisach",
       "kind": "event",
       "locator": "\"Siege of Breisach\", revision 1370739740"
@@ -15497,6 +15581,12 @@
       "id": "siege-of-wolgast-1630",
       "kind": "event",
       "locator": "\"Siege of Wolgast (1630)\", revision 1370746457"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown",
+      "kind": "event",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
     },
     {
       "dissent": false,

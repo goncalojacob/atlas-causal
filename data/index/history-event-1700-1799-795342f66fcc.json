@@ -746,6 +746,15 @@
         }
       ]
     },
+    "battle-of-the-chesapeake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-the-mona-passage": {
       "from": "git",
       "versions": [
@@ -815,6 +824,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battles-of-lexington-and-concord": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battles-of-saratoga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -1385,6 +1412,15 @@
         }
       ]
     },
+    "siege-of-boston": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "siege-of-brieg": {
       "from": "git",
       "versions": [
@@ -1566,6 +1602,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-yorktown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

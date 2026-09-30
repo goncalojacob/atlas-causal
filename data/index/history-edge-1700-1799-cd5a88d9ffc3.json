@@ -62,6 +62,15 @@
         }
       ]
     },
+    "anglo-french-war-1778-1783--estates-general-of-1789--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled": {
       "from": "git",
       "versions": [
@@ -323,6 +332,15 @@
         }
       ]
     },
+    "battle-of-the-chesapeake--siege-of-yorktown--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-the-nile--revolt-of-cairo--precondition-of": {
       "from": "git",
       "versions": [
@@ -374,6 +392,24 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battles-of-lexington-and-concord--siege-of-boston--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battles-of-saratoga--anglo-french-war-1778-1783--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -785,6 +821,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-yorktown--treaty-of-paris-1783--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

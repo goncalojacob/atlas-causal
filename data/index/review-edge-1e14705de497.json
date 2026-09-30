@@ -3291,6 +3291,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "anglo-french-war-1778-1783",
+      "id": "anglo-french-war-1778-1783--estates-general-of-1789--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "estates-general-of-1789",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "anglo-french-war-1778-1783",
       "id": "anglo-french-war-1778-1783--invasion-of-dominica-1778--enabled",
@@ -8044,6 +8073,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battle-of-the-chesapeake",
+      "id": "battle-of-the-chesapeake--siege-of-yorktown--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-yorktown",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "meneses-2004-portugal-1914-1926",
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
@@ -8793,6 +8851,64 @@
       "status": "active",
       "to": "battle-of-prague-1648",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battles-of-lexington-and-concord",
+      "id": "battles-of-lexington-and-concord--siege-of-boston--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-boston",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battles-of-saratoga",
+      "id": "battles-of-saratoga--anglo-french-war-1778-1783--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "anglo-french-war-1778-1783",
+      "type": "caused"
     },
     {
       "authors": [
@@ -25032,6 +25148,35 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-fontenoy",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "siege-of-yorktown",
+      "id": "siege-of-yorktown--treaty-of-paris-1783--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-paris-1783",
       "type": "caused"
     },
     {

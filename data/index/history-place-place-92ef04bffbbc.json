@@ -1059,6 +1059,15 @@
         }
       ]
     },
+    "boston": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "braga": {
       "from": "git",
       "versions": [
@@ -9263,6 +9272,15 @@
         }
       ]
     },
+    "stillwater-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "stockholm": {
       "from": "git",
       "versions": [
@@ -10729,6 +10747,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "yorktown-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

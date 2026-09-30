@@ -4478,6 +4478,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-chesapeake",
+      "kind": "event",
+      "locator": "Q1419459"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "Q124249264"
@@ -4877,6 +4883,18 @@
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "locator": "Q188925"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-lexington-and-concord",
+      "kind": "event",
+      "locator": "Q778010"
+    },
+    {
+      "dissent": false,
+      "id": "battles-of-saratoga",
+      "kind": "event",
+      "locator": "Q846674"
     },
     {
       "dissent": false,
@@ -8114,6 +8132,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-boston",
+      "kind": "event",
+      "locator": "Q815128"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-breisach",
       "kind": "event",
       "locator": "Q331565"
@@ -8531,6 +8555,12 @@
       "id": "siege-of-wolgast-1630",
       "kind": "event",
       "locator": "Q133571169"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown",
+      "kind": "event",
+      "locator": "Q459447"
     },
     {
       "dissent": false,

@@ -5034,7 +5034,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 5,
       "id": "anglo-french-war-1778-1783",
       "kind": "event",
       "origin": {
@@ -15204,6 +15204,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-the-chesapeake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Chesapeake"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-the-citadel-of-vicenza",
@@ -17439,6 +17472,75 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battles of Khalkhin Gol"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battles-of-lexington-and-concord",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battles of Lexington and Concord"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battles-of-saratoga",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "m42b-batch-54",
+          "a7-narrowed"
+        ],
+        "note": "A7 read the other way round, which is A15 (4)'s comparison applied to an interval the item states too wide rather than too narrow. The item's P582 is 17 December 1777, which no sentence of the article it cites supports; that article's own first sentence, at revision 1377478794, reads “The Battles of Saratoga were fought September 19 and October 7, 1777”, and the next puts the surrender at the second battle. The end moves to 7 October 1777; the year bounds do not move.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battles of Saratoga"
     },
     {
       "authors": [
@@ -22294,6 +22396,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "estates-general-of-1789",
       "kind": "event",
       "origin": {
@@ -36727,6 +36830,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "siege-of-boston",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Boston"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "siege-of-breisach",
@@ -38978,6 +39115,40 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Wolgast (1630)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 2,
+      "id": "siege-of-yorktown",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Yorktown"
     },
     {
       "authors": [
@@ -42739,7 +42910,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 5,
+      "degree": 6,
       "id": "treaty-of-paris-1783",
       "kind": "event",
       "origin": {
@@ -46693,12 +46864,6 @@
     },
     {
       "id": "effacer-le-tableau",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "estates-general-of-1789",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
