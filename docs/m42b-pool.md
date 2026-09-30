@@ -12538,3 +12538,41 @@ Caribbean theatre.
    atlas umbrellas with no `wikidata` (`--reconcile` has still never been run
    by this lane), and the place pass on records that already exist, which is
    M42's.
+
+### The tests, on this fire's head
+
+**1,915 pure and 313 browser, 2,228 tests, and every one of them passed with
+nothing skipped** — on the final head after the index rebuild, run the way
+M63 runs them (`node tools/suites.mjs --pure` in parallel, the browser suites
+one at a time). `node tools/validate.mjs --index` is clean at **0 errors, 619
+warnings**, byte-identical to a fresh build. The warning count fell by one
+because `battle-of-rancagua` no longer has `degree-zero` against it.
+
+Two things are worth recording beside the numbers. **`tools/suites.mjs` now
+reports 40 browser suites and 163 pure, 203 files in all** — the last fire's
+stand said eighteen browser suites, and the merges of `origin/m0` and
+`origin/m42` are where the other twenty-two came from; a fire quoting that
+number from a previous stand will get it wrong. And **the browser half was 313
+of 313 here**, which is the first local run in three fires with no
+deviation-1345 drop: batch 46 lost two tests from
+`tests/graph-labels-browser.test.mjs` and batch 47 lost
+`tests/lens-browser.test.mjs` 50, each of them passing alone and on the
+runner. That the fault did not appear this time is more evidence for what
+deviation 1345 says it is — a suite short of a core — and not evidence that
+anything was fixed.
+
+### The check, on this fire's heads
+
+**Run 2061 on `2bdcffca`, the commit that rebuilt the index at the merge,
+completed `success`** — that is the head that carries both merges with an
+index that is byte-identical at it, and it is the answer to deviation 1354.
+
+**Run 2068 on `8ee967a5`, this fire's final head, had `Validate records`
+green and its `Tests` step still running when this fire ended.** Runs 2058,
+2059, 2066 and 2067 were cancelled as each push superseded the last, which is
+ordinary; **run 2059 was the merge commit carrying its own stale index**, and
+it was cancelled before it could go red, so deviation 1354 cost a red run only
+on the last fire and not on this one — the local `validate --index` caught it
+here. The next fire should read run 2068's conclusion first: the tree it tests
+is the tree this fire's local 2,228 tests passed on, so a red there would be
+the runner and not the corpus.
