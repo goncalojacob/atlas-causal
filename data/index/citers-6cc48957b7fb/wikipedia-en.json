@@ -4682,6 +4682,12 @@
     },
     {
       "dissent": false,
+      "id": "hitachi-maru-incident--battle-off-ulsan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle off Ulsan\", revision 1370603310, § Commerce raiding operations"
+    },
+    {
+      "dissent": false,
       "id": "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of",
       "kind": "edge",
       "locator": "\"Young Turk Revolution\", revision 1372902192, § Situation in Ottoman Macedonia"
@@ -6737,6 +6743,12 @@
       "id": "siege-of-port-arthur--battle-of-sandepu--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Sandepu\", revision 1370588463, § Background and § The Battle of Sandepu"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-shaho--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
     },
     {
       "dissent": false,

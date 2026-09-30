@@ -3560,6 +3560,15 @@
         }
       ]
     },
+    "hitachi-maru-incident--battle-off-ulsan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "iberian-pact--azores-agreement-1943--precondition-of": {
       "from": "git",
       "versions": [
@@ -5500,6 +5509,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-port-arthur--battle-of-shaho--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

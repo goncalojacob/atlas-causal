@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-52d18fac421f.json",
+      "file": "index/attributes-1900-1999-68686293c71c.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -1024,7 +1024,7 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1129,
+    "edges": 1131,
     "events": 1573,
     "narratives": 2,
     "offices": 11,
@@ -1062,7 +1062,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-4b066078a060.json",
+      "file": "index/explanations-1900-1999-66e9ca246fbe.json",
       "from": 1900,
       "to": 1999
     },
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-a94ebdf21c22",
-    "core": "index/core-682a14947385.json",
+    "citers": "index/citers-6cc48957b7fb",
+    "core": "index/core-418fbc4c1aee.json",
     "grounds": "index/grounds-ed633e44cc96.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-476ce9aa9d08.json",
-    "search": "index/search-d544e2812141.json",
-    "sources": "index/sources-2e7a9b98192a.json",
+    "review": "index/review-5dc33cdd927e.json",
+    "search": "index/search-9b422fe001e7.json",
+    "sources": "index/sources-235026a87ffa.json",
     "territories": "index/territories-72e817bbe9c2.json"
   },
   "historyShards": [
@@ -1168,7 +1168,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-724fbf5bb783.json",
+      "file": "index/history-edge-1900-1999-0e08e9af163f.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 1117,
-    "explained": 1117
+    "active": 1119,
+    "explained": 1119
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [
