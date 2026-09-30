@@ -2349,6 +2349,20 @@ In full in the history file. The ones that decide something:
   corpus is byte-identical to where batch 71 left it. **So edges between records
   already held are not a substitute for imports at any useful rate**, and the
   question above is the only thing that moves this lane.
+- **The shape that sweep left standing does yield, at a small rate, measured on
+  30 September at 12:15Z.** Batch 72 took the 09:07Z stand's conclusion — that
+  the only writable pair is **two tactical records of one war** — as the selector
+  rather than as a consolation, and read the **149 members of seven families**
+  this lane owns at the revision the atlas already cites for each. **Six edges
+  written and kept**, the first in three fires: the relief of Kimberley into
+  Paardeberg, three Ladysmith relief attempts into the Tugela Heights, Port
+  Arthur into Shaho and the Hitachi Maru incident into the battle off Ulsan. 55
+  pairs named, 49 refused — 21 of them a war naming its own child, which A14(6)
+  forbids. **All six are inside one umbrella and none crosses one, and the
+  largest component does not move**, because every record they touch was already
+  in the 740: a family sweep densifies the graph and joins nothing to it. The
+  rate is the point — **six edges for 149 articles against zero for 407** — and
+  it is still not a substitute for imports. Deviations 1486 and 1487.
 
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
@@ -24002,5 +24016,6 @@ M42 started 2026-09-30T06:09:24Z by scheduled
 M42b started 2026-09-30T06:37:06Z by scheduled
 M42 started 2026-09-30T09:07:23Z by scheduled
 M42b started 2026-09-30T09:36:51Z by scheduled
+M42 started 2026-09-30T12:16:58Z by scheduled
 M42b started 2026-09-30T11:37:14Z by scheduled
 M42b started 2026-09-30T14:36:55Z by scheduled

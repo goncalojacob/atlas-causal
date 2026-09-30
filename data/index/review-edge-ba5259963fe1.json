@@ -7737,6 +7737,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "battle-of-spion-kop",
+      "id": "battle-of-spion-kop--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-tugela-heights",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-st-lucia",
       "id": "battle-of-st-lucia--capture-of-st-lucia--precondition-of",
@@ -8565,6 +8594,35 @@
       "status": "active",
       "to": "battle-of-the-ch-ongch-on-river",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battle-of-vaal-krantz",
+      "id": "battle-of-vaal-krantz--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-tugela-heights",
+      "type": "reacted-to"
     },
     {
       "authors": [
@@ -15983,6 +16041,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "hitachi-maru-incident",
+      "id": "hitachi-maru-incident--battle-off-ulsan--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-off-ulsan",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar"
       ],
@@ -22953,6 +23040,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "second-battle-of-colenso",
+      "id": "second-battle-of-colenso--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-the-tugela-heights",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "second-battle-of-gao",
       "id": "second-battle-of-gao--fourth-battle-of-gao--reacted-to",
@@ -24080,6 +24196,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "siege-of-kimberley",
+      "id": "siege-of-kimberley--battle-of-paardeberg--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-paardeberg",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "from": "siege-of-ladysmith",
       "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
@@ -24605,6 +24750,35 @@
       "status": "active",
       "to": "battle-of-sandepu",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "siege-of-port-arthur",
+      "id": "siege-of-port-arthur--battle-of-shaho--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-72"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-shaho",
+      "type": "enabled"
     },
     {
       "authors": [

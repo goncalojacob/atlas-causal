@@ -17664,3 +17664,199 @@ calling the way round the bind.*
   **1484** (a name written out in full does not close the bare route for its
   twin) and **1485** (rule 4 refuses the commonest true sentence an article
   writes about two held events).
+
+## Batch 72 — the sibling shape, measured on purpose, and the six edges it gave
+
+*30 September, the fire that claimed at 12:15Z. **An import fire.** Today's
+`## Curation 2026-09-30` section was already in this file, and all six A14 and
+all thirteen A15 sections with it, so none of the passes were this fire's, and
+the three-way bind of batch 71 (A15(1), A14(6), A6) is exactly where the owner
+was left it. **Nothing was imported and nothing could be.** What this fire did
+instead is the reading the 09:07Z sweep's stand asked for — and then it turned
+that sweep's own conclusion into a method. **Six edges written and kept**, the
+first this branch has kept in three fires.*
+
+`origin/m0` was already an ancestor of `m42` at the claim, so there was no merge.
+
+### The three pairs the last stand named
+
+Read at the revision each record's item is already cached at, through
+`action=parse&oldid=`, so no citation this batch writes is out of step with the
+cache — A15(2)'s trap paid rather than tripped, as the 09:07Z fire found.
+
+| the pair the stand named | what the article said | outcome |
+| --- | --- | --- |
+| `second-gulf-of-sidra-offensive --> battle-of-bin-jawad` | *"The rebels managed to advance to the outskirts of the small coastal town of Bin Jawad, resulting in the Second Battle of Bin Jawad"* | **refused.** The battle that sentence names is the **second**, and the record the atlas holds is the first (Q588059, 6–11 March 2011). The only other mention is a comparison: *"in an echo of an earlier defeat in March"* |
+| `siege-of-kimberley --> battle-of-paardeberg` | Paardeberg's own lead: *"...after its lines of communication were cut by Major General John French, whose cavalry had recently outflanked the Boer position to relieve Kimberley. Cronjé's slow-moving column was intercepted by French at Paardeberg"* | **written**, `enabled` |
+| `second-battle-of-colenso --> battle-of-the-tugela-heights` | Tugela's § Background: *"Buller's army had made three earlier attempts to raise the Boer siege of Ladysmith. The battles of Colenso, Spion Kop and Vaal Krantz each resulted in embarrassing British defeats... On 12 February, Buller ordered a fourth attempt to relieve Ladysmith."* | **written**, `reacted-to` — **and twice more**, because the article gives the fourth attempt to three battles and the atlas holds all three |
+
+`battle-of-spion-kop` and `battle-of-vaal-krantz` are therefore written into
+`battle-of-the-tugela-heights` from the same sentence, which is batch 70's rule
+about Modder River applied again: an edge does not take for one record what its
+source divides between several. Colenso's edge carries the extra mechanism the
+other two have no claim on — the repulse at Hlangwane, from the same section and
+from Colenso's own § Aftermath.
+
+### The family sweep: 149 articles for six edges, against 407 for none
+
+The 09:07Z sweep read **407 articles** — every active Africa or Asia event with
+an English article — and kept nothing; its stand concluded that the only shape
+left standing is **two tactical records of one war**. This fire took that as the
+selector rather than as a consolation. Seven families whose parents this lane
+owns — `second-boer-war`, `mali-war`, `russo-japanese-war`, `korean-war`,
+`vietnam-war`, `libyan-civil-war`, `arab-israeli-conflict` — give **149 members
+with an article and a cached revision**, every one read whole at that revision,
+with `namesHeldEvents()` restricted to the family and pairs the atlas already
+holds filtered out before anything was read.
+
+| what the family sweep found | count |
+| --- | --- |
+| articles read, at the revision the atlas cites | **149** |
+| candidate sentences (a cause stated, not chronology-only, naming a sibling) | **61** |
+| pairs behind them | **55** |
+| refused: the family record naming its own child, which A14(6) forbids | **21** |
+| refused: infobox text, a hatnote or a "see also" list read as prose | **13** |
+| refused: rule 4, the arrow of time | **7** |
+| refused: a comparison, a person, or a name whose referent the atlas does not hold | **12** |
+| **written** | **2** |
+
+The two are `siege-of-port-arthur --enabled--> battle-of-shaho`, which is **A15(5)
+run forwards**: the sentence is in the Battle of Mukden's § Background, it names
+Port Arthur as the reason Liaoyang was not exploited, and the edge is written
+from the event the quote names as the cause and not from the article it was read
+in — the Liaoyang half of the same sentence the atlas already holds. And
+`hitachi-maru-incident --precondition-of--> battle-off-ulsan`, from the later
+record's own § Commerce raiding operations, where the six raids are what *"forced
+the Japanese to assign the IJN 2nd Fleet"* that caught the cruisers; the atlas
+holds one of the six, so `precondition-of` and not `caused`.
+
+**Two of the best-looking candidates were already in the corpus** and never
+reached a reading, because the filter is built from the edge list as it stands
+when the sweep runs: `2021-malian-coup-d-etat --> french-military-withdrawal-from-west-africa`
+and `battle-of-liaoyang --> battle-of-shaho`. **Deviation 1486.**
+
+**Deviation 1487.** `action=parse&prop=wikitext` is refused with *"You are making
+too many requests to the API"* at 1.15 s between requests, which is the interval
+the 09:07Z sweep used against `prop=extracts` without one failure. `prop=text` at
+**1.6 s** with a five-attempt backoff read all 149 with a single retry. A sweep
+should not assume one endpoint's budget is another's.
+
+### Two refusals worth writing down rather than repeating
+
+- **`operation-unified-protector` cannot be filed under `libyan-civil-war`**,
+  which the 09:07Z stand offered as an A8 candidate for a curation fire. The
+  operation ends **2011-10-31** and the civil war's cited end is **2011-10-23**,
+  so the filing would earn a `child-outside-parent` warning: eight days of an
+  operation that outlived the war it is said to be part of. Either the war's end
+  is read again from its item under A7 or the filing is wrong; **this fire did
+  neither and left both records alone.**
+- **`tet-offensive --> easter-offensive` falls to A15(5) with nowhere to go.**
+  The Easter Offensive's § Background states the decision plainly — *"In the wake
+  of the failed South Vietnamese Operation Lam Son 719, the Hanoi leadership
+  began discussing a possible offensive"* — and the Tet sentence beside it is
+  about Giáp's standing, not about the offensive. The cause the article names is
+  **Operation Lam Son 719, which the atlas does not hold**, so the edge is not
+  written from anywhere. A fire that wants this one must import Lam Son 719
+  first, and that is A6's question again.
+
+### Counts
+
+**Nothing imported; the corpus gains six edges and no record.** After them:
+**1,333 active events, 234 main, 1,099 filed** — the main count is unmoved, which
+is what A6 asks — **1,119 active edges, largest connected component 740, 572
+edges crossing an umbrella, 406 components, 317 events with no edge.** Per-lane
+active, unmoved because nothing was imported: **Europe 555, Americas 359, Asia
+211, Africa 208.**
+
+**All six edges are inside one umbrella and none crosses one**, which A15(11) and
+A5 ask every batch to report: `insideOneUmbrella` moves **541 → 547** and
+`crossingAnUmbrella` stays at **572**. The component does not move either: every
+one of the twelve records the six edges touch was already in the 740. **A family
+sweep densifies the giant component and joins nothing to it** — worth knowing
+before a fire budgets one as a way of reducing the 406.
+
+**Candidates left unconnected, which A15(1) asks every batch note to carry: 53** —
+the 49 the family sweep refused above, plus the four of the 09:07Z sweep's 44 this
+fire read and refused. The other 40 of that 44 are unread and are not on disk;
+a fire that wants them should re-run rather than trust a stale list.
+
+A15(2)'s recache, as the last step: **2,749 `wikipedia-en` citations on active
+records, 2,676 on disk at the revision cited, 0 that should be on disk and are
+not.** The 73 the cache cannot hold beside a more-cited revision of the same item
+is exactly the figure the 09:07Z fire left, so none of this batch's six citations
+added to it — which is the point of reading at the cached revision. `--fill` had
+nothing to do.
+
+A11(b)'s partition check: the sweep reads only records this branch already holds
+and nothing was imported, so there is no collision with `origin/m42b` to check
+for.
+
+## Where the run stands after batch 72, for the fire that picks it up
+
+*30 September, the fire that claimed at 12:15Z. **An import fire that imported
+nothing — the third in a row, for the same reason — and the first in three that
+kept an edge.** Six edges, all inside one umbrella, none of them joining anything
+to anything: the graph is denser and no less broken. What it leaves is a method
+that works at a small rate and a sharper statement of what the owner has to
+answer.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The three-way bind is still the finding and it is still the owner's.**
+  A15(1), A14(6) and A6 close on each other; batch 71's section states the case
+  and names the two records an A6 relaxation would unblock
+  (`Jewish exodus from the Muslim world`, `Decline and modernization of the
+  Ottoman Empire`). **Nothing has changed and no fire can change it.** Africa and
+  Asia stand at **208 and 211** against A10's 303, and three fires in a row have
+  now moved neither number. A fire should not import either record until the
+  owner answers, and should not file an event under its grandparent to get round
+  A14(6).
+- **The family sweep is the method that works, and its rate is honest: six edges
+  for 149 articles.** It beats the corpus-wide sweep (zero for 407) because the
+  pair is selected by a shared parent rather than by whatever an article happens
+  to name, which pre-screens rule 4 and the umbrella rule. **The seven families
+  this fire read are spent.** The families left in this lane, by size, are
+  `second-sino-japanese-war`, `algerian-war`, `first-indochina-war`,
+  `soviet-afghan-war`, `indo-pakistani-war-of-1971` and the Boer War's remaining
+  members; a fire with an hour should take two or three of them, not all of them,
+  and should expect **one or two edges each**. Read at the cached revision through
+  `action=parse&prop=text` at 1.6 s (deviation 1487), filter already-held pairs
+  from the edge list as it stands at the moment of the sweep (deviation 1486),
+  and **run `tests/m42-filing.test.mjs` and `tests/leadcache.test.mjs` before the
+  first commit**, which this fire did and the one before it did not.
+- **A family sweep will not reduce the 406 components.** Every record the six
+  edges touch was already inside the 740. If what a fire wants is to join the
+  317 events with no edge, a sibling sweep is the wrong instrument, because a
+  record with no edge is usually a record with no held family.
+- **Two named refusals a later fire should not re-derive**: the
+  `operation-unified-protector` filing (it outlives `libyan-civil-war`'s cited
+  end by eight days) and `tet-offensive --> easter-offensive` (the cause the
+  article names is Operation Lam Son 719, which the atlas does not hold). Both
+  are in the section above with their reasons.
+- **The 09:07Z sweep's 44 survivors: four read, 40 left.** Three of the four were
+  the ones its stand named; the fourth is the Libyan pair it also named, and it
+  is a refusal. The remaining 40 are on disk nowhere by that fire's own decision.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last two stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period
+  umbrellas; deviations 1473 and 1482; `execution-of-the-romanov-family` and
+  deviation 1423; A11's area clause; deviation 1478; A15(12)'s 177 uncategorised
+  events; the EEC's closing year; deviation 1461's two display faults; and
+  `origin/m42b`'s five place placeholder summaries.
+- **Deviation numbers: take the next above 1487.** This fire wrote **1486** (the
+  already-held pair is the commonest thing a family sweep finds, and the filter
+  for it must be built when the sweep runs) and **1487** (one MediaWiki
+  endpoint's request budget is not another's).
+
+### The suites and the check, for batch 72
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing
+skipped** — **1,928 pure** and **313 browser**, run the way the check runs them
+since M63. No test was added: the six edges are judged by tests that already
+exist, and `tests/m42-filing.test.mjs` and `tests/leadcache.test.mjs` were run
+**before the first commit** this time, which is what the last two stands asked
+for. **The check on the head commit is `success`** (run 2132 of `validate.yml`).
+Runs 2126, 2129 and 2131 were each cancelled by the next push, which is deviation
+1258's chain; the local suites are what stands behind the records, as the 09:07Z
+fire's section argues.

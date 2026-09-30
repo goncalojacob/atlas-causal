@@ -2942,6 +2942,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-spion-kop--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-st-lucia--capture-of-st-lucia--precondition-of",
       "kind": "edge",
       "locator": "\"Capture of St. Lucia\", revision 1370609642"
@@ -3143,6 +3149,12 @@
       "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822, § Background and § Actions at Ipsok"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vaal-krantz--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, § Background"
     },
     {
       "dissent": false,
@@ -4751,6 +4763,12 @@
       "id": "herero-wars--herero-and-nama-genocide--caused",
       "kind": "edge",
       "locator": "\"Herero and Nama genocide\", revision 1373679661, lead"
+    },
+    {
+      "dissent": false,
+      "id": "hitachi-maru-incident--battle-off-ulsan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle off Ulsan\", revision 1370603310, § Commerce raiding operations"
     },
     {
       "dissent": false,
@@ -6404,6 +6422,18 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-colenso--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-colenso--battle-of-the-tugela-heights--reacted-to",
+      "kind": "edge",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-gao--fourth-battle-of-gao--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Imenas\", revision 1370265996, § Background and deployment"
@@ -6668,6 +6698,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kimberley--battle-of-paardeberg--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Paardeberg\", revision 1370271388, lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kimberley--battle-of-paardeberg--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of Kimberley\", revision 1370742488, § Relief"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Spion Kop\", revision 1374078287, lead"
@@ -6803,6 +6845,12 @@
       "id": "siege-of-port-arthur--battle-of-sandepu--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Sandepu\", revision 1370588463, § Background and § The Battle of Sandepu"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-port-arthur--battle-of-shaho--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
     },
     {
       "dissent": false,
