@@ -17848,3 +17848,15 @@ answer.*
   already-held pair is the commonest thing a family sweep finds, and the filter
   for it must be built when the sweep runs) and **1487** (one MediaWiki
   endpoint's request budget is not another's).
+
+### The suites and the check, for batch 72
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing
+skipped** — **1,928 pure** and **313 browser**, run the way the check runs them
+since M63. No test was added: the six edges are judged by tests that already
+exist, and `tests/m42-filing.test.mjs` and `tests/leadcache.test.mjs` were run
+**before the first commit** this time, which is what the last two stands asked
+for. **The check on the head commit is `success`** (run 2132 of `validate.yml`).
+Runs 2126, 2129 and 2131 were each cancelled by the next push, which is deviation
+1258's chain; the local suites are what stands behind the records, as the 09:07Z
+fire's section argues.
