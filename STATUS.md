@@ -23712,6 +23712,40 @@ at 211 and 211 against A10's 303, and **no fire in either lane can move either
 number until the owner answers.** The americas remain open, which is where this
 lane will keep working meanwhile.
 
+**M42b batch 57 — Harlem Heights to Princeton, and the island that is now
+eleven, 30 September.** The fifty-first fire on this lane took the americas' 18th
+century, **74 → 79**, which is what the last stand had authorised in advance as
+filling-in rather than bridging. Five events from Wikidata —
+`battle-of-harlem-heights` (`Q668595`), `battle-of-white-plains` (`Q960723`),
+`battle-of-fort-washington` (`Q706755`), `battle-of-the-assunpink-creek`
+(`Q233417`) and `battle-of-princeton` (`Q1132579`) — each filed under
+`american-revolutionary-war` from its own `P361`, each placed, two new places
+from the items' own `P625` with `summary: null`. **Main stays at 229.** **Seven
+edges, every one of them with two articles and a locator apiece**, which is
+M72's second author on all seven; one candidate refused by **A15(5)** (Fort
+Washington's § Aftermath states Princeton as *undoing* the fall's effect on
+morale, so the sentence runs backwards, and its only forward reading opens
+*"Three days after"*). **No edge crosses an umbrella** — all fourteen endpoints
+are children of the war — so the corpus figure stands at **578** and the largest
+component at **756**, both exactly where the batch found them. What moved is the
+land war's own component: **6 → 11**, and every one of the eleven has
+`american-revolutionary-war` as its parent while that war sits in the 756, so
+**A14 is the whole of what keeps them apart and C8's price is now eleven events
+and not six.** Two general findings: **deviation 1367** — the article that states
+a link between two events is usually a *third* event's, which is how four of the
+seven edges were found and how one of batch 56's five refusals was reversed; and
+**deviation 1368** — deviation 1363 terminates once stated as *rebuild the index
+while `HEAD` is the records commit*, which this fire did in one index commit with
+a further rebuild changing nothing. `validate --index` clean at 0 errors, A15(2)'s
+recache at 0 missing revisions, and the suite green at **2,242 tests, 0 failed,
+0 skipped**. Africa and Asia stand at 211 and 212 against A10's 303, unchanged;
+the emptiest cells in this partition are africa's and asia's 15th and 16th
+centuries at zero each, and batch 57's note carries the five verified QIDs of the
+**Ethiopian–Adal War** (`Q2915203`, 1529–1543, Portuguese and Ottoman
+participants) for the day the owner answers whether a batch opening an empty lane
+may raise the main count by the one umbrella it needs.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

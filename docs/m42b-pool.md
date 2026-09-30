@@ -14683,146 +14683,299 @@ accounted for the same way. The filings under it are M42's and are argued in
 `docs/m42-pool.md`; this paragraph is only the bareness, which is what the test
 asks for and what the merge left unargued in a file the test reads.
 
-## Where the run stands, for the fire that picks it up
+## Batch 57 — Harlem Heights to Princeton, and the island the last fire measured
 
-*30 September, after the fiftieth fire: two merges (`origin/m0` and
-`origin/m42`), one batch, 56, three events, three places, three edges, and the
-americas' 18th century from 71 to 74. The main count did not move. **The fire's
-finding is a measured price for C8**: the land war of the American Revolution is
-a connected component of **six** sitting beside its own parent, which is inside
-the 756, and the one edge that would join them is the parent-to-child edge A14
-forbids. The batch grew the island from three to six and left the largest
-component exactly where it found it. That is not a batch short of edges — five
-candidates were read and refused, each for a stated reason — it is the shape of
-the corpus showing through.*
+**Where it came from.** The last stand's move 5, taken as written: the island's own
+vein is *"filling-in rather than bridging"*, it is *"a legitimate batch"*, and *"its
+note must say so rather than report a component number that did not move."* The
+lane and century are the **americas, 18th century**, which stood at **74** active
+before the batch. The South-and-Central-before-North guard was measured at 244
+against 55 by batch 53 and is satisfied several times over, so North America is
+open. A15 (1) still holds africa and asia at 211 and 212 against A10's 303.
+
+**The five QIDs the last stand listed were four-fifths wrong, and that is the
+first thing to record.** Move 5 named `Q1545025`, `Q1361887`, `Q1370354`,
+`Q674167` and `Q2915177` and said they were unverified. Searched, the items are
+`Q668595` *Battle of Harlem Heights*, `Q960723` *Battle of White Plains*,
+`Q706755` *Battle of Fort Washington*, `Q1132579` *Battle of Princeton* and
+`Q233417` *Battle of the Assunpink Creek* — **only Harlem Heights' was even in
+the right family, and none of the five was right.** A QID written down from
+memory is not a candidate; it is a guess that costs the next fire a read.
+`wbsearchentities` also would not answer for *Battle of White Plains* at all, at
+four attempts and two spacings, and the item had to be reached through
+`wbgetentities&sites=enwiki&titles=…`, which is the lookup to reach for when a
+search comes back empty on a title that plainly exists.
+
+**Five records, all placed, all filed, none main.**
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `battle-of-harlem-heights` | `Q668595` | 1776-09-16 | `american-revolutionary-war` | `new-york` (held) |
+| `battle-of-white-plains` | `Q960723` | 1776-10-28 | `american-revolutionary-war` | `white-plains-new-york` (new, `city`) |
+| `battle-of-fort-washington` | `Q706755` | 1776-11-16 | `american-revolutionary-war` | `new-york` (held) |
+| `battle-of-the-assunpink-creek` | `Q233417` | 1777-01-02 | `american-revolutionary-war` | `trenton-new-jersey` (held, from batch 56) |
+| `battle-of-princeton` | `Q1132579` | 1777-01-03 | `american-revolutionary-war` | `princeton-battlefield` (new, `point`) |
+
+All five are filed **from their own `P361`**, which is `Q40949` for each — the
+war and not the campaign, as in batch 56 and for the same reason. **The main
+count is 229 before the batch and 229 after it.** The two new places carry
+`summary: null` (A15 (3)); all five events derive to `americas`, which is the
+lane the records would have been given, so the 24 September lane guard passes on
+all five. No record in this batch is placeless, so deviation 1364 does not
+arise, and none is bare, so `tests/m67.test.mjs` asks nothing of this file.
+
+**A15 (4) held on all five and moved nothing.** Fort Washington's lead reads
+*"was fought in New York on November 16, 1776"*, Princeton's *"fought near
+Princeton, New Jersey on January 3, 1777"*, Assunpink Creek's *"took place in and
+around Trenton, New Jersey, on January 2, 1777"*, Harlem Heights' *"The action
+took place on September 16, 1776"* — four days and months agreeing with `P585`.
+White Plains' first sentence names no day, so its `P585` stands as given. The
+validator names none of the five in `span-vs-lead-dates` or
+`span-vs-lead-sentence`. There is no deviation 1361 in this batch.
+
+**The edges: seven written, one refusal reversed, one refused.**
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battle-of-long-island` → `battle-of-harlem-heights` | `precondition-of` | Harlem Heights § Background, *"British troops under the command of General William Howe flanked and defeated the American army at the Battle of Brooklyn … pinned the Americans down at Brooklyn Heights … evacuated his entire army of 9,000 men and their equipment across the water to Manhattan"*; Fort Washington § Movements, *"After first gaining control of western Long Island in the Battle of Long Island … Howe launched an invasion of Manhattan on September 15"* |
+| `battle-of-harlem-heights` → `battle-of-white-plains` | `precondition-of` | Fort Washington § Movements, *"His northward progress was checked the next day in the Battle of Harlem Heights, after which he sought to flank the strong U.S. position on the north of the island … Washington, aware of the danger, withdrew most of his troops north to White Plains"*; White Plains § Background, *"his advance was checked the next day at Harlem Heights … to begin an encircling maneuver"* |
+| `battle-of-white-plains` → `battle-of-fort-washington` | `precondition-of` | Fort Washington § Movements, *"Washington … withdrew most of his troops north to White Plains. He left a garrison of 1,200 men at Fort Washington … although this force was inadequate"*; White Plains § Aftermath, *"On November 5, he turned his army south to finish evicting Continental Army troops from Manhattan, a task he accomplished with the November 16 Battle of Fort Washington"* |
+| `battle-of-white-plains` → `battle-of-trenton` | `precondition-of` | Long Island § Aftermath, *"Howe defeated Washington in battle again at White Plains and then again at Fort Washington. **Because of these defeats**, Washington and the army retreated across New Jersey and into Pennsylvania"*; White Plains § Aftermath, which carries the same chain to the Delaware |
+| `battle-of-fort-washington` → `battle-of-trenton` | `precondition-of` | the other half of the same Long Island sentence; Fort Washington § Aftermath, *"Washington and the army retreated through New Jersey and crossed the Delaware River into Pennsylvania northwest of Trenton"* |
+| `battle-of-trenton` → `battle-of-the-assunpink-creek` | `reacted-to` | Princeton § Victories at Trenton, *"**In response to the loss at Trenton**, General Cornwallis left New York City and reassembled a British force of more than 9,000 at Princeton to oppose Washington"*; Assunpink Creek's lead, *"Washington … and his war council expected a strong British counterattack. Washington and the council decided to meet this attack in Trenton"* |
+| `battle-of-the-assunpink-creek` → `battle-of-princeton` | `enabled` | Assunpink Creek's lead, *"Cornwallis decided to wait and finish the battle the next day. Washington moved his army around Cornwallis's camp that night and attacked Mawhood at Princeton the next day"*; Princeton's lead, *"That night, he evacuated his position, circled General Cornwallis' army, and attacked the British garrison at Princeton"* |
+
+**Every one of the seven carries two articles with a locator apiece**, which is
+M72's second author, and all seven are `probable` under rule 22 because the only
+works this run can open are the articles themselves. Six distinct revisions are
+cited and all six were on disk when the edges were written — the five this
+batch's own import cached, plus the Long Island article at 1370268460, which the
+atlas cites already.
+
+**The refusal the last fire wrote down, reversed by a third article.** The stand's
+own reading had `harlem-heights → white-plains` down as chronology: Harlem
+Heights' lead gives the withdrawal to White Plains as happening *"After a month
+without any major fighting between the armies … when the British moved west into
+Westchester County"*, which is a date and a third actor's movement, and White
+Plains' § Background gives the proximate cause as the encircling manoeuvre out of
+Pell's Point, which this atlas does not hold. **What carries the edge is a third
+article neither record cites**: the Fort Washington article's § Movements states
+the turn as a cause in one clause — *"checked the next day in the Battle of
+Harlem Heights, **after which he sought to flank** the strong U.S. position"*.
+The lesson is deviation 1367 below: the article that states a link between two
+events is often the article of a *third* event that stands between them.
+
+**A15 (5) refused one candidate.** `battle-of-fort-washington` →
+`battle-of-princeton`, on Fort Washington's own § Aftermath: *"Washington went on
+to defeat the British next at Princeton, which revived the morale of the American
+army and the colonies affected by the fall of Fort Washington."* Read carefully
+that sentence runs backwards — it says Princeton undid what Fort Washington's
+fall had done to morale, which is a consequence of Princeton and not a cause of
+it — and the only forward reading of it opens *"Three days after the fall of Fort
+Washington"*, which is the refusal class exactly. The claim the sentence does
+support is already in the corpus as `fort-washington → trenton →
+assunpink-creek → princeton`, so nothing is lost by refusing it.
+
+**A14 did not bite this batch.** All five records and both endpoints of all seven
+edges are children of `american-revolutionary-war`; no edge runs from a parent to
+its own child, and no candidate had to be dropped for that.
+
+**A15 (11), and the number the last stand asked for in advance.** This batch
+crossed **no umbrella** — all fourteen endpoints are children of
+`american-revolutionary-war` — and the corpus figure stands at **578**, exactly
+where the batch found it. The largest component is **756** before and after. What
+moved is the component the records are in, which is the number deviation 1365
+says a batch in a thin vein owes:
+
+> The land war of the American Revolution is now a component of **eleven**:
+> `battles-of-lexington-and-concord`, `siege-of-boston`, `battle-of-bunker-hill`,
+> `new-york-and-new-jersey-campaign`, `battle-of-long-island`,
+> `battle-of-harlem-heights`, `battle-of-white-plains`,
+> `battle-of-fort-washington`, `battle-of-trenton`,
+> `battle-of-the-assunpink-creek`, `battle-of-princeton`.
+> It was six. It is still not joined to the 756, and **A14 is still the only
+> thing keeping it out**: every one of the eleven has
+> `american-revolutionary-war` as its parent, and that war is in the 756.
 
 | | before | after |
 | --- | --- | --- |
-| active events | 1357 | **1360** |
-| main | 230 | **230** |
+| active events | 1360 | **1365** |
+| main | 229 | **229** |
 | largest connected component | 756 | **756** |
-| the land-war island | 3 | **6** |
-| edges crossing an umbrella | 579 | **579** |
+| the land-war island | 6 | **11** |
+| edges crossing an umbrella | 578 | **578** |
+| edges inside one umbrella | 574 | **581** |
+| active edges | 1152 | **1159** |
 
-*Three commits: the two merges resolved as one, the batch, and two index
-rebuilds, because deviation 1363 bit at the merge and again at the batch commit
-— see move 8. `validate --index` is clean at 0 errors and the suite is **green**:
-the one failure the fire met was `decolonisation-of-asia` arriving with the
-`origin/m42` merge unargued in any file `tests/m67.test.mjs` reads, and
-deviation 1366 is both the fix on this branch and the one-line fix the test
-itself wants.*
+| century | europe | africa | asia | americas | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | — | 9 / 5 |
+| 16th c. | 44 / 1 | — | — | 51 / 5 | — | 95 / 6 |
+| 17th c. | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 | — | 189 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 17 / 0 | **79 / 2** | — | 172 / 5 |
+| 19th c. | 39 / 9 | 22 / 1 | 8 / 6 | 57 / 8 | — | 126 / 24 |
+| 20th c. | 245 / 60 | 93 / 23 | 154 / 37 | 86 / 30 | — | 578 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 | — | 196 / 29 |
+| **all** | **555 / 85** | **211 / 31** | **212 / 57** | **387 / 56** | — | **1365 / 229** |
+
+*The 20th-century asia main count reads 37 where the last stand read 38, and
+the corpus main 229 where it read 230. Neither moved in this lane: the
+`origin/m42` merge brought M42 batch 74's `decolonisation-of-asia`, which took
+`first-indochina-war` and `east-timor-invasion-1975` as children under A8, and
+one of those two was main. The table was reproduced against the last stand's own
+rule, `Math.floor(y / 100) + 1` (deviation 1255), before the batch was written,
+and it agreed cell for cell apart from that one.*
+
+### Deviation 1367 — the article that states a link is often a third event's
+
+Batch 56 read the two articles at the ends of each candidate edge and refused
+five. This fire read **five new articles and two held ones**, and four of its
+seven edges are carried in whole or in part by an article at *neither* end: the
+Fort Washington article states Long Island → Harlem Heights and Harlem Heights →
+White Plains; the Long Island article states White Plains → Trenton and Fort
+Washington → Trenton; the Princeton article states Trenton → Assunpink Creek. A
+battle's own article tends to narrate its own campaign from the beginning, so the
+article that explains a link is frequently the one for the event that comes
+*after* both. **The read that finds edges is over the campaign's articles as a
+set, not over the pair at the ends of a candidate.** Batch 56's five refusals are
+not thereby overturned — this fire re-read none of them and move 3 of the last
+stand still stands — but one of them was, and the next fire in a vein should read
+the whole set before it writes a refusal down.
+
+### Deviation 1368 — deviation 1363's rule, stated so it terminates
+
+The last stand's move 8 read *"every commit that writes under `data/` needs a
+rebuild in a commit of its own after it, and the way to know you are done is that
+a further rebuild changes nothing"*, which taken literally never terminates,
+because the index commit itself writes under `data/`. This fire did it in one
+index commit and a further rebuild changed **nothing**, so the rule is narrower
+and worth writing narrowly: **the rebuild must happen while `HEAD` is the commit
+that changed the records**, because the history shards are built from the commits
+that touched each *record* file. An index-only commit touches no record file and
+therefore moves no shard. What bit the last fire was rebuilding *before* the
+records commit existed, not rebuilding before the index commit did.
+
+**What did bite this fire, and it is worth its own line**: `git add -A data/index
+sources.html narratives.html entry` failed as a whole because `entry/` does not
+exist in this repository (no record carries a full entry), `2>/dev/null` hid the
+error, and the `&& git commit` that followed reported *"no changes added to
+commit"* into the middle of a long status dump that read, at a glance, like a
+successful commit followed by a dirty tree. **Never hide `git add`'s stderr, and
+never pass a pathspec that may not exist.** The index was committed on the second
+attempt with no rebuild needed, because the working tree still held the right
+bytes.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the fifty-first fire: one merge (`origin/m42`; `origin/m0`
+was already an ancestor), one batch, 57, five events, two places, seven edges,
+and the americas' 18th century from 74 to 79. The main count did not move. **The
+batch is the filling-in the last stand authorised in advance** and it did exactly
+what that stand predicted: the largest component and the crossing figure stand
+where they were found, and the land war of the American Revolution is now a
+component of eleven where it was six. Two findings are new and general: the
+article that states a link between two events is usually a **third** event's
+(deviation 1367, which reversed one of batch 56's five refusals), and deviation
+1363's rule terminates once it is stated as "rebuild while `HEAD` is the records
+commit" (deviation 1368).*
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1360 | **1365** |
+| main | 229 | **229** |
+| largest connected component | 756 | **756** |
+| the land-war island | 6 | **11** |
+| edges crossing an umbrella | 578 | **578** |
+| edges inside one umbrella | 574 | **581** |
+| active edges | 1152 | **1159** |
+
+*Four commits: the claim, the `origin/m42` merge, the batch and one index
+rebuild. `validate --index` is clean at **0 errors**, A15 (2)'s recache reports
+**0 revisions that should be on disk and are not**, and the suite is **green** —
+**2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313 across the 40 browser
+suites, run the way the check runs them).*
 
 ### The next fire's moves, in order
 
 1. **The three questions to the owner are unchanged and none of them is a run's
-   to settle**: the **main count**; **C8**; and **A15 (1)'s Europe pause closing
-   the only door into pre-1800 africa/asia**. Africa and Asia stand at 211 and
-   212 against A10's 303 and **no fire in either lane can move either number
-   until the owner answers.** Do not spend a fire re-establishing this.
-2. **C8 now has a number, and it is the thing to put in front of the owner.**
-   Six events — `battles-of-lexington-and-concord`, `siege-of-boston`,
-   `battle-of-bunker-hill`, `new-york-and-new-jersey-campaign`,
-   `battle-of-long-island`, `battle-of-trenton` — are a component of their own
-   while `american-revolutionary-war`, `battles-of-saratoga`,
-   `siege-of-yorktown`, `united-states-declaration-of-independence`,
-   `treaty-of-paris-1783` and the whole naval and southern war are in the 756.
-   A14 is what keeps them apart. **This is the first place in this lane where the
-   cost of C8 can be counted rather than argued about**, and batch 56's note has
-   the list. A fire should not decide C8; it should make sure the owner can see
+   to settle**: the **main count**; **C8**; and **A15 (1)**. Africa and Asia
+   stand at 211 and 212 against A10's 303. Do not spend a fire re-establishing
    this.
-3. **Do not re-walk the five refusals of batch 56.** They are in its note with
-   the quote and the reason: `siege-of-boston` → `battle-of-long-island`
-   (chronology, refused twice now); `new-york-and-new-jersey-campaign` →
-   `battles-of-saratoga` (chronology, and it is the bridge this fire most
-   wanted); `battle-of-trenton` → `anglo-french-war-1778-1783` (the source
-   carries a diplomatic hardening, not a war); `battle-of-bunker-hill` →
-   `united-states-declaration-of-independence` (**the valuable one** — it would
-   bridge the island, and it is refused because neither article states the link
-   and only a reading of the two together does, which is the one non-negotiable
-   line in `CLAUDE.md`); and `united-states-declaration-of-independence` →
-   `battle-of-trenton` (the sentence's subject is *Common Sense*, and the link to
-   Trenton is "A week later").
-4. **A `Common Sense` record does not bridge the island** — batch 56 checked, so
-   that this fire's read is not spent again. The Declaration's article carries it
-   well into the Declaration (*"As Common Sense was circulated … public support
-   for independence from Great Britain steadily increased"*) and only
-   chronologically into Trenton. It would be a good record; it joins the 756 and
-   leaves the six where they are.
-5. **What the island's own vein still has, and it is filling-in rather than
-   bridging**: `Q1545025` *Battle of Harlem Heights*, `Q1361887` *Battle of White
-   Plains*, `Q1370354` *Battle of Fort Washington*, `Q674167` *Battle of
-   Princeton*, `Q2915177` *Battle of the Assunpink Creek* (QIDs not verified by
-   this fire — search them before use). Every one of them is inside the same
-   umbrella and every edge between them will be another edge inside it, so a
-   batch taken from here grows the island and moves neither the largest component
-   nor the crossing figure. **That is a legitimate batch** — the americas' 18th
-   century is the trailing cell and these are real records — but its note must
-   say so rather than report a component number that did not move.
-6. **Deviation 1366 — `tests/m67.test.mjs` does not read `docs/m42-pool.md`, and
-   that is the whole of it.** `origin/m0` is **green**; the failure this fire met
-   came in with the `origin/m42` merge. `ARGUED_IN` is `docs/m67-umbrellas.md`,
-   `docs/m42-connections.md` and `docs/m42b-pool.md` — **M42's own batch-note
-   file is missing from it**, so `decolonisation-of-asia`, which M42 batch 74
-   argues in five paragraphs there, fails a test that never looks. The fix is one
-   line in the test and it is not a records lane's to make. Batch 56 added nothing
-   to the failure (all three of its events carry a place and a parent) and closed
-   it on this branch by giving the record the bareness paragraph it was owed.
-   **The failure message names only the first of the three documents**, which is
-   what made this fire's first reading wrong: join all three before concluding
-   anything about a `m67` red.
-7. **Deviation 1365 is the one this fire adds about measurement**:
-   `tools/m42-pool.mjs` reports
-   `largestComponent`, which a batch working a small component moves not at all,
-   and nothing in the tool prints the size of the component a batch's own records
-   are in. Batch 55 read 752 → 756 and did not notice that Bunker Hill had joined
-   an island of two. Until the tool prints it, **a batch in a thin vein should
-   compute its own component size** — six lines over `data/events/` and
-   `data/edges/` — and report it beside the largest, as batch 56's table does.
-8. **Deviation 1363 bit twice this fire, and the second time is the lesson worth
-   carrying.** It is not only a merge thing. The fire merged `origin/m0` and
-   `origin/m42`, rebuilt to resolve the merge, committed — and one history shard
-   and the manifest were still wrong until a second rebuild with the merge commit
-   as `HEAD`. Then the **batch** commit did exactly the same thing: the index
-   committed with it was built while `HEAD` was still the pre-commit tip, so the
-   history shards for the three new records were built with no history, and
-   `tests/validate-cli.test.mjs` failed on rule 16 naming **six** shards and the
-   manifest. A third rebuild, after that commit existed, produced no change at
-   all. So the rule is: **every commit that writes under `data/` needs a rebuild
-   in a commit of its own after it**, and the way to know you are done is that a
-   further rebuild changes nothing. `validate --index` run before the commit
-   cannot see this and reports clean, which is how it gets missed.
-   The `origin/m42` merge also conflicted in 256 `data/index/`
-   files (all rename/rename on the hashed names), `sources.html`,
-   `STATUS.md` and `tools/import/cache/titles.json`; **no record conflicted and
-   no test file did**. `titles.json` is nested — `{ generated, titles }` — so a
-   union merge has to merge `titles`, not the top level; merging the top level
-   silently keeps one side's whole table.
-9. **Deviations 1361 and 1362 are open for the owner**, unchanged. Neither bit
-   this batch: A15 (4) moved no date (the campaign's first sentence names no day
-   or month, so `P580`/`P582` stand as given) and all five cited revisions were
-   the ones on disk. A15 (2)'s recache reports **0 revisions that should be on
-   disk and are not**.
-10. **Deviation 1360 is still unfixed** — `namesHeldEvents()` matches titles and
-   cannot see a fort called by its city. This fire read every article by hand,
-   § Background, § Aftermath and § Next steps included, which is what found both
-   written edges' second authors and four of the five refusals.
-11. **`Special:Export` before the API** — deviation 1357, unchanged and used for
-   all three articles this fire imported; `Special:EntityData/<qid>.json`
-   likewise, and `index.php?oldid=<rev>&action=raw` for the two articles read at
-   a revision the atlas already cites, which is how a quote from a held record's
-   *body* is checked against the revision it is cited at (the cache holds only
-   the lead). `wbsearchentities` again returned an unparseable body on the first
-   attempt and answered on a retry four seconds later — **wrap the QID lookups in
-   a retry loop**; the import tool's own fetches and `tools/cache-evidence.mjs
-   --fill` both ran clean.
-12. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
-   1346's ocean islands, deviation 1348's lane guard, deviation 1353, deviation
-   1358, question 11 (the Nine Years' War, `Q152218`), question 12 (batch 56 adds
-   a second instance of its shape and settles nothing: Trenton now takes two
-   ancestors at two granularities, deliberately, and nothing held was replaced),
-   `Q718893` *theater of war*, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`,
-   the nine atlas umbrellas with no `wikidata`, the Gulf Coast campaign umbrella
-   (`Q5617470`, which A9 cannot place), the Angolan Wars umbrella (`Q132776772`),
-   batch 48's Chilean four, the Almagrista eight and their missing decree, batch
-   52's three 16th-century refusals — **do not re-walk those** — and the place
-   pass on records that already exist, which is M42's.
+2. **C8's price is now eleven events and not six, and that is the number to put
+   in front of the owner.** Every one of the eleven has
+   `american-revolutionary-war` as its `parent`; that war is in the 756; A14 is
+   the only thing between them. Batch 57's note has the list. **A fire should not
+   decide C8; it should make sure the owner can see this**, and it is now a
+   third of the size of the next-largest island.
+3. **Africa's and Asia's 15th and 16th centuries are the emptiest cells in this
+   partition — 0, 0, 0 and 0 — and the reason no fire has taken them is a real
+   one, so read this before spending a read on it.** They hold nothing, which
+   means any batch there must write its own period umbrella, and an umbrella is
+   a main event: the main count would rise by one and A6's *"must not rise"*
+   would be broken unless the same batch could file an existing main event under
+   it, and there is no existing main event in either cell to file. This fire
+   verified the obvious candidate anyway and it is a good one when the owner
+   answers: **`Q2915203` *Ethiopian–Adal War*, 1529–1543**, 17 sitelinks, `P580`
+   and `P582` both stated, `P710` naming the Portuguese Empire (`Q200464`) and
+   the Ottoman Empire (`Q12560`), which is a lane with a Portuguese thread
+   running through it and therefore the first africa batch that could **cross an
+   umbrella**. Its children with English articles and their own `P361` at that
+   umbrella include `Q2889965` *Battle of Shimbra Kure* (1529-03-09, `P276`
+   `Q3015833`), `Q957263` *Battle of Wayna Daga* (1543), `Q835180` *Battle of
+   Wofla* (1542) and `Q279250` *Battle of Baçente* (1542) — **these five QIDs
+   were verified against Wikidata by this fire and are not guesses.** The
+   question for the owner is one line: *may a batch that opens an empty lane
+   raise the main count by the one umbrella it needs?*
+4. **Do not re-walk batch 56's five refusals** except as move 6 below says, and
+   do not re-walk batch 57's one (`fort-washington → princeton`, whose sentence
+   runs backwards; it is in the note with the quote).
+5. **What the island's vein still has**, all inside `american-revolutionary-war`
+   and so all more filling-in: the Battle of Pell's Point and the landing at
+   Throg's Neck, both named by two of the articles this fire read and both a
+   genuine part of the chain it could only assert as "a manoeuvre this atlas does
+   not hold"; the landing at Kip's Bay, named by three; Fort Lee, named by Fort
+   Washington's § Aftermath. **QIDs not looked up by this fire — search them, and
+   do not trust a QID any stand writes from memory** (this fire found four of
+   move 5's five wrong).
+6. **Deviation 1367 is the move that pays, and it is cheap.** Before refusing an
+   edge, read the articles of the campaign as a **set**, not the pair at the ends
+   of the candidate: four of this batch's seven edges are carried by an article at
+   neither end. One of batch 56's five refusals fell to exactly this. The other
+   four were not re-read and move 3 of the last stand still stands over them.
+7. **Deviation 1368 supersedes the last stand's move 8 as a procedure**: rebuild
+   the index while `HEAD` is the commit that changed the records, commit the index
+   alone, and a further rebuild will change nothing. It did here, in one commit.
+   Also: **never hide `git add`'s stderr and never pass it a pathspec that may not
+   exist** — `entry/` does not exist in this repository and an `add` naming it
+   fails as a whole, silently, and the `&& git commit` that follows prints a
+   status dump that reads like success.
+8. **`wbsearchentities` is not reliable here.** It answered nothing at all for
+   *Battle of White Plains* across four attempts at two spacings, and both
+   `en.wikipedia.org/w/api.php` and `Special:Export` returned **429** for a
+   stretch of this fire. What works: `wbgetentities&sites=enwiki&titles=…` to
+   reach an item from a known article title,
+   `Special:EntityData/<qid>.json` for the item,
+   `index.php?oldid=<rev>&action=raw` for an article body at a revision, a
+   **20-second** backoff rather than four, and a real `User-Agent`. Deviation
+   1357 stands.
+9. **Deviation 1360 is still unfixed** — `namesHeldEvents()` matches titles and
+   cannot see a fort called by its city. This fire read every article by hand
+   again, §§ Background, Movements, Aftermath and Victories at Trenton included,
+   which is what found all seven second authors.
+10. **Deviations 1361, 1362 and 1365 are open for the owner**, unchanged.
+    Neither 1361 nor 1362 bit this batch: A15 (4) moved no date on any of the
+    five and every cited revision was on disk. 1365's remedy was applied by hand
+    again, as the table above shows; `tools/m42-pool.mjs` still does not print the
+    component a batch's own records are in.
+11. **Still open, unchanged**: C8, deviation 1323, 1345, 1346's ocean islands,
+    1348's lane guard, 1353, 1358, 1366 (the one-line fix to
+    `tests/m67.test.mjs`'s `ARGUED_IN`, which is not a records lane's to make and
+    which is closed on this branch), question 11 (the Nine Years' War,
+    `Q152218`), question 12 (batch 57 adds a third instance of the two-ancestor
+    shape — Trenton now takes four ancestors at three granularities, all cited,
+    and nothing held was replaced), `Q718893`, `Q20639061`, `Q5037062`,
+    `Q4677270`, `Q4677390`, the nine atlas umbrellas with no `wikidata`, the Gulf
+    Coast campaign umbrella (`Q5617470`), the Angolan Wars umbrella
+    (`Q132776772`), batch 48's Chilean four, the Almagrista eight and their
+    missing decree, batch 52's three 16th-century refusals — **do not re-walk
+    those** — and the place pass on records that already exist, which is M42's.
