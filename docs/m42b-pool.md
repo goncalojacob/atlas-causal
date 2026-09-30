@@ -13619,3 +13619,303 @@ read to establish that.*
    `wikidata`, the Angolan Wars umbrella (`Q132776772`, whose `P361` `Q5148448`
    is still unread), batch 48's Chilean four, and the place pass on records that
    already exist, which is M42's.
+
+## Batch 53 — the Gulf Coast campaign of 1779–81, and the pair whose bridge names three events at once
+
+**Where it came from.** The last stand's move 3 pointed at the americas' 16th
+century, which is still the trailing cell of this partition at 51 active, and
+this fire went there first. **Three candidates were read and all three refused**
+— they are tabled below — and the fire then took the next cell that trails,
+the americas' 18th century at 57 active, where a vein with a **held anchor**
+was found by asking Wikidata a question this lane had not asked before: not
+"what is in this century and lane", but *"which unheld item stands in a `P155`,
+`P156`, `P828`, `P1542` or `P361` relation to an event this atlas already
+holds"*. That query is deviation 1200 below and it returned 298 candidates,
+almost all of them the American Revolutionary War's own `P361` children — the
+land war in North America, of which this atlas held almost nothing, its 39
+held children being naval and Caribbean.
+
+**The South-and-Central-before-North guard, measured rather than assumed.** The
+brief holds North America back until South and Central America hold as many
+active events as it does. Measured this fire, by the rule stated in
+`scratchpad/split.mjs` and repeated here — everything at or above 25 °N is
+North America, everything below 13 °N is South America, and Mexico south of
+23 °N, the isthmus and the Caribbean islands are Central America and the
+Caribbean — the `americas` lane stood at **175 South, 69 Central, 55 North**
+before the batch, 66 of its events carrying no place to measure. **244 against
+55**: the guard is satisfied several times over and North America is open.
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `capture-of-fort-bute` | `Q3097919` | 1779-09-07 | `american-revolutionary-war` | **none** — see A9 below |
+| `battle-of-baton-rouge-1779` | `Q2888231` | 1779-09-20/21 | `american-revolutionary-war` | `baton-rouge-louisiana` (new) |
+| `battle-of-fort-charlotte` | `Q2682171` | 1780-03-02/14 | `american-revolutionary-war` | `mobile-alabama` (new) |
+| `siege-of-pensacola` | `Q2060558` | 1781-03-09/05-10 | `american-revolutionary-war` | `pensacola-florida` (new) |
+
+All four are filed **from their own `P361`**, which is `Q40949`, the American
+Revolutionary War, a record this atlas already holds. **The main count is 234
+before the batch and 234 after it**, because none of the four is top-level.
+`titleFor()` kept the disambiguator on one of them, `Battle of Baton Rouge
+(1779)`, which is the article's own title.
+
+**A9, three times and once refused.** Baton Rouge, Mobile and Pensacola come
+from the second step of the chain — each event's `P276` is the city, and the
+city's own `P625` is the point — and all three derive to `americas`, which is
+the events' own lane, so the 24 September lane guard passes on all three.
+**Fort Bute is the refusal and it is worth recording in full**: its item's own
+`P625` carries *two* values about 70 km apart, so the first step cannot answer
+with one point; its `P276` is East Baton Rouge Parish (`Q491949`), whose only
+class `Q13410524` is in no row of the class table; and **A15 (6) refuses its
+`P17`**, the United States, whose point the import measured at **1254 km from
+the nearest located point on the event's own chain**. So the event has no place
+record, and the record says so. It does have a lane: the import derived
+`americas` from the item's own point and wrote a `regionNote` saying that is
+where the lane came from, which is the tool's own behaviour and not this
+fire's. The article at revision 1370608614 puts the post *"on Bayou Manchac"* —
+a place a person can write and a tool cannot read off the item.
+
+**A7, once.** `siege-of-pensacola`'s item dates the siege 9–10 May 1781, which
+makes it a single day. Its cited article's own first sentence, at revision
+1374389510, reads *"The siege of Pensacola, fought from March 9 to May 10,
+1781, was the culmination of Spain's conquest of West Florida during the Gulf
+Coast Campaign of the American Revolutionary War"*. The start moved to 9 March
+1781 and nothing else in the record moved; the flag is `a7-widened` and the
+note names the revision. **A15 (4) was applied to all four** — day and month
+against the first sentence and the title at import time — and this is the one
+it caught.
+
+**The edges: three written, four refused, and A15 (5) placed one of the three.**
+
+| from → to | type | verdict |
+| --- | --- | --- |
+| `spain-and-the-american-revolutionary-war` → `capture-of-fort-bute` | `enabled` | write |
+| `capture-of-fort-bute` → `battle-of-baton-rouge-1779` | `precondition-of` | write — **reattributed here by A15 (5)** |
+| `battle-of-fort-charlotte` → `siege-of-pensacola` | `precondition-of` | write |
+| `spain-and-the-american-revolutionary-war` → `battle-of-baton-rouge-1779` | — | **refused: the quote names `capture-of-fort-bute` as the cause** |
+| `spain-and-the-american-revolutionary-war` → `battle-of-fort-charlotte` | — | **refused twice**: one quote names `capture-of-fort-bute`, the other names `american-revolutionary-war`, which A14 bars |
+| `battle-of-baton-rouge-1779` → `battle-of-fort-charlotte` | — | **refused: chronology with no cause stated** (*"Following these successes, he began planning operations against Mobile and Pensacola"*) |
+| `capture-of-fort-bute` → `battle-of-baton-rouge-1779`, from *"Gálvez remained at Fort Bute for six days … before moving on to Baton Rouge"* | — | **refused by reading**: `verdictFor()` passes it and it is chronology, deviation 1358 for the third time. The edge was written from another sentence in the same article. |
+
+Each of the three written edges carries **two articles with a locator apiece**,
+which is M72's second author: the first cites *"Spain and the American
+Revolutionary War"* at revision 1373209544 — **the same revision the held
+record at its own `from` end cites** — beside the Fort Bute article; the second
+cites the Baton Rouge article beside it; the third cites Fort Charlotte's and
+Pensacola's, which state the same thing from either end (*"opened the way for
+Spanish operations against Pensacola"*, and *"with the recently captured Mobile
+as the launching point for the attack"*). All three are `probable`: rule 22,
+because the only sources the atlas can open here are the articles.
+
+**A15 (5)'s reattribution, worked.** The obvious anchor for Baton Rouge was the
+same hub the Fort Bute edge uses, and the quote that would have carried it —
+*"first the attack and capture of Fort Bute at Manchac, and then forcing the
+surrender of Baton Rouge, Natchez and Mobile in 1779 and 1780"* — names Fort
+Bute, a third event the atlas now holds. A15 (5) says such an edge is written
+from that event or not at all, so it was: `capture-of-fort-bute` →
+`battle-of-baton-rouge-1779`, on the Baton Rouge article's own account of the
+connection (*"The six who escaped capture made their way to Baton Rouge to
+notify the British troops there of the fort's capture"*, and *"Dickson had
+decided weeks earlier that Fort Bute … was not defensible, and had placed most
+of his troops at Baton Rouge"*). **The rule improved the graph**: a chain
+instead of a second copy of one claim at a hub.
+
+**A15 (11) and the component. Cross-umbrella edges: 575 before, 575 after —
+none of the three crosses one**, because all four events and the anchor are
+children of `american-revolutionary-war`, so every edge
+this batch wrote runs between events that share a parent by construction. The
+largest component goes from **746 to 748**, taking Fort Bute and Baton Rouge in
+through `spain-and-the-american-revolutionary-war`, which is inside it. **And
+the batch adds a component**: 404 → 405. `battle-of-fort-charlotte` and
+`siege-of-pensacola` are an island of two, and the reason is exactly the one
+A15 (5) exists to produce. Every sentence in either article that would carry an
+edge into Mobile from outside the pair **names three events at once** — Fort
+Bute, Baton Rouge and Mobile, or the war itself — and A15 (5)'s reattribution
+cannot resolve a quote with three candidates: read as naming Fort Bute it
+reattributes to Fort Bute, and the same sentence read from Fort Bute
+reattributes to Baton Rouge, and from Baton Rouge back to Fort Bute. The one
+sentence that states the cause plainly, Fort Charlotte's *"When Spain entered
+the American Revolutionary War in 1779, Bernardo de Gálvez … immediately began
+offensive operations"*, names `american-revolutionary-war`, which is the
+record's own parent, so **A14 closes it**. Both records were kept rather than
+dropped: each has an edge, each is placed, each is in the lane and the century
+that trails, and the pair is one edge away from the largest component the day a
+fire finds a sentence that names two events and not three.
+
+**The americas' 16th century, tried first and refused three times** — A15 (1)
+asks a batch to count what it left:
+
+| item | why not |
+| --- | --- |
+| `Q5055825` *Battle of Sacsayhuamán*, 1536, `P361` the conquest of the Inca Empire | **no English Wikipedia sitelink at all**, so A2 closes it: there is no article to write the record from. It sits exactly beside `siege-of-cusco`, which is in the Almagrista eight. |
+| `Q21010243` *Spanish conquest of Chiapas*, 1523, `P361` the held Aztec conquest | article read whole at revision 1371443944. The only held events it names are `new-laws` — in a § about the Dominicans, nineteen years after the conquest began — and, in words no name-matcher can read, the Aztec Empire's overthrow, which would be its own parent and A14 bars. **No edge, so under A5 not imported.** |
+| `Q27230923` *Spanish conquest of the Muisca*, 1537, `P361` the held Spanish colonization | article read whole at revision 1374178366. **It names no event this atlas holds at all** — not one sentence. No edge, so not imported. |
+
+Two more were looked at and set aside without being read: `Q975837` *Spanish
+conquest of Yucatán* (15 sitelinks) and `Q1747530` *Spanish conquest of New
+Granada* carry **no date property of any kind**, so nothing but a person's
+reading of the article can date them, and A7 does not let a run invent one.
+`Q1763918` the **Inca Civil War** (17 sitelinks, `P1542` the conquest of the
+Inca Empire) is the same vein the last four stands have reported: it fits under
+no umbrella this atlas holds and would be a **main** event, which the brief
+forbids. `Q5617470` the **Gulf Coast campaign** itself, the umbrella these four
+battles belong to, was read on Wikidata and left for a later fire: it has an
+article and a span, but **A9 gives it no place at all** — no `P625`, no `P276`,
+no `P131`, no `P17` — so it would be an umbrella with no lane, and the four
+battles are already filed under the held war by their own `P361`.
+
+| | before | after |
+| --- | --- | --- |
+| corpus | 1,342 active | **1,346 active** |
+| **main** | 234 | **234 — unchanged** |
+| largest connected component | 746 | **748** |
+| components | 404 | **405** |
+| events with no edge at all | 315 | **315** |
+| edges between two active events | 1,127 | **1,130** |
+| edges crossing an umbrella | 575 of 1,127 | **575 of 1,130**; **0 of the 3** written this fire |
+| the americas' 1700s | 57 active, 2 main | **61 active, 2 main** |
+| the `americas` lane | 365 active, 56 main | **369 active, 56 main** |
+| Europe before 1900 | 258 active | **258 — paused by A15 (1), untouched** |
+
+**A15 (2), the last step.** `node tools/cache-evidence.mjs --fill` reports **0
+revisions that should be on disk and are not**. The import cached five leads as
+it wrote (`Q3097919`, `Q2888231`, `Q2682171`, `Q2060558`, and the Portuguese
+lead of the last), and the sixth article the edges cite, *"Spain and the
+American Revolutionary War"* at 1373209544, was already on disk at exactly that
+revision, because the held record at the anchor end cites it — which is the
+second batch running to find that **the revision ids this lane writes are
+holding**.
+
+### Deviation 1200 — ask Wikidata for the neighbours of what you hold, not for a century
+
+Every sweep this lane has run until now asked *"what does Wikidata have in this
+lane and this century"*, and A5 then threw most of the answer away, because a
+candidate with no causal sentence tying it to a held event is not imported. The
+query that pays is the inverse, and it is four lines:
+
+```sparql
+SELECT ?e ?eLabel ?rel ?held ?heldLabel ?start ?sl WHERE {
+  VALUES ?held { wd:Q40949 wd:Q636771 … }          # every held event of the lane, by its wikidata
+  { ?e ?rel ?held . VALUES ?rel { wdt:P155 wdt:P156 wdt:P828 wdt:P1542 wdt:P361 } }
+  UNION { ?held ?rel ?e . VALUES ?rel { wdt:P155 wdt:P156 wdt:P828 wdt:P1542 } }
+  { ?e wdt:P580 ?start } UNION { ?e wdt:P585 ?start }
+  FILTER(YEAR(?start) < 1800) ?e wikibase:sitelinks ?sl . FILTER(?sl >= 2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } } ORDER BY ?start
+```
+
+316 held ids in, **298 unheld candidates out**, each one already standing in a
+stated relation to something this atlas holds — which is not the same as a
+citable causal sentence, but it is the set the sentence is likely to be in.
+**Filter the held ids out on this side, not in SPARQL**: a `FILTER NOT EXISTS`
+over 1,448 `VALUES` killed the connection outright, while the same list applied
+in three lines of Python costs nothing. The pool's shape is worth knowing on
+its own: of the 298, **roughly 250 are the American Revolutionary War's own
+`P361` children**, the land war in North America, against 39 held children that
+are almost all naval and Caribbean. That is the largest single filable vein
+this lane has found, it needs no new umbrella and no main event, and it is
+open.
+
+### Deviation 1201 — `namesHeldEvents()` cannot see a fort called by its city
+
+The sentence that should have anchored `battle-of-fort-charlotte` is *"forcing
+the surrender of Baton Rouge, Natchez and **Mobile**"*. The record's title is
+*Battle of Fort Charlotte*; the fort is what the atlas holds and the city is
+what the source names, and the two words share nothing. This is the stand's own
+move 5 in a new dress — `mentions()` needs the record's own name — and it is
+worth a number of its own because the failure mode is specific and will recur
+across the whole American Revolutionary War vein: **an American battle article
+names a siege by its place**, and the place is a `data/places/` record here, not
+the event. A widened sweep over that vein should match a candidate's `place`
+label as well as its title, or keep a person in the gap.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the forty-seventh fire: one batch, 53, four events, three
+places, three edges, and the americas' 18th century from 57 to 61. The main
+count did not move. **The fire's finding is a query, not a record**: asking
+Wikidata for the neighbours of what the atlas holds, rather than for a century,
+returned 298 filable candidates where the century sweeps returned two or three,
+and about 250 of them are one vein — the land war of the American Revolution.*
+
+| | |
+| --- | --- |
+| corpus | **1,346 active** |
+| **main** | **234** — unchanged by the batch |
+| **largest connected component** | **748** (746 before) |
+| components | **405** (404 before) |
+| events with no edge at all | **315** (315 before) |
+| edges crossing an umbrella | **575 of 1,130**; **0 of the 3** written this fire |
+| Europe before 1900 | **258 active** — paused by A15 (1), untouched |
+| the `americas` lane | **369 active, 56 main** (365 before) |
+| the `americas` lane, by part | **175 South, 69 Central, 58 North** — the brief's guard is satisfied 244 to 58 |
+| **Africa before 1800** | **20 active, 0 main** — unmoved, and see 1 below |
+| **Asia before 1800** | **21 active, 0 main** — likewise |
+| Africa / Asia, all centuries | **211 / 211** — A15 (1)'s gate is A10's 303 |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 51 / 5 |
+| 1600s | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | **61 / 2** |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **369 / 56** |
+
+### The next fire's moves, in order
+
+1. **The three questions to the owner are unchanged and none of them is a run's
+   to settle**: the **main count** (six veins have now stopped on it — the Inca
+   Civil War, the Jewish arrival in New Amsterdam, the Kongo chain of four, the
+   Angolan Wars umbrella, every 16th-century africa/asia candidate, and
+   `Q1763918` again this fire); **C8**; and **A15 (1)'s Europe pause closing
+   the only door into pre-1800 africa/asia**, which batch 51 and `origin/m42`'s
+   batch 71 established independently on the same day. Africa and Asia stand at
+   211 and 211 against A10's 303 and **no fire in either lane can move either
+   number until the owner answers.** Do not spend a fire re-establishing this.
+2. **The open vein is the land war of the American Revolution, and it is large.**
+   Deviation 1200's query returned about 250 unheld `P361` children of
+   `american-revolutionary-war`, every one of them americas and 1775–1783, every
+   one filable under a held umbrella with no main event and no new umbrella
+   needed. Start where the held corpus can be reached: **`battle-of-baton-rouge-1779`
+   and `capture-of-fort-bute` are now in the largest component**, and the pair
+   `battle-of-fort-charlotte` + `siege-of-pensacola` is one sentence away from
+   it. The high-sitelink anchors a fire should try first are `Q778010`
+   *Battles of Lexington and Concord* (39), `Q846674` *Battles of Saratoga*
+   (37), `Q862751` *Battle of Long Island* (34), `Q653664` *Battle of Trenton*
+   (33), `Q1419459` *Battle of the Chesapeake* (30) and `Q815128` *Siege of
+   Boston* (25) — and `Q459447` *Siege of Yorktown* (45), which the held
+   `battle-of-the-chesapeake`-shaped naval records may already reach.
+3. **Do not re-walk this fire's three 16th-century refusals.** Sacsayhuamán has
+   no English article, Chiapas's article names only `new-laws` and only about
+   the Dominicans, and the Muisca's names no held event at all. All three were
+   read whole and the revisions are in the batch note. Yucatán and New Granada
+   carry **no date property**, so they are a person's job, not a run's.
+4. **The Gulf Coast campaign umbrella (`Q5617470`) is still unwritten**, and the
+   reason is A9: the item has no `P625`, no `P276`, no `P131` and no `P17`, so
+   an umbrella made from it would carry no place and no lane. A fire that wants
+   it should decide that question first rather than discover it mid-batch.
+5. **Deviation 1201 is the thing to fix before widening into that vein**: an
+   American battle article names a siege **by its city** (*"the surrender of …
+   Mobile"* for *Battle of Fort Charlotte*), and `namesHeldEvents()` matches
+   titles. Match the candidate's `place` label as well, or read the § Background
+   yourself. It cost this fire the one edge that would have joined two records
+   to the largest component.
+6. **`verdictFor()` is a floor, not the rule** — deviation 1358, and it fired
+   again this fire on *"Gálvez remained at Fort Bute for six days … before
+   moving on to Baton Rouge"*. Read the quote as well as running the function.
+   And **A15 (5)'s reattribution can improve a batch**: it moved this batch's
+   second edge off a hub and onto a chain, which is a better graph than the one
+   the fire intended.
+7. **`Special:Export` before the API** — deviation 1357, unchanged and used
+   again for all five articles this fire read; `Special:EntityData/<qid>.json`
+   likewise for nine Wikidata items. Pace it, seconds apart.
+8. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, question
+   11 (the Nine Years' War, `Q152218`), `Q718893` *theater of war*, `Q20639061`,
+   `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Angolan Wars umbrella (`Q132776772`, whose `P361` `Q5148448`
+   is still unread), batch 48's Chilean four, the Almagrista eight and their
+   missing decree, and the place pass on records that already exist, which is
+   M42's.
