@@ -14206,12 +14206,18 @@ articles the atlas already cites rather than by asking Wikidata anything.*
    again for all six articles this fire read; `Special:EntityData/<qid>.json`
    likewise for five Wikidata items. Pace it, seconds apart. The import tool's
    own fetches and `tools/cache-evidence.mjs --fill` both ran without a 429.
-8. **Write the records with the repository's own two-space indentation.** This
+8. **If you merge, rebuild the index again after the merge commit exists** —
+   deviation 1363. The rebuild that resolves the merge runs while `HEAD` is
+   still the pre-merge tip, so the history shards for everything the merge
+   brought in are built with no history at all and the check goes red on rule
+   16. This fire's batch rebuild happened to fix it; a fire that merges and
+   stops would not.
+9. **Write the records with the repository's own two-space indentation.** This
    fire wrote five edges and rewrote eight records at one space and
    `tests/bundle.test.mjs` caught every one of them — "an unedited save of a
    record in `data/` is byte identical" is the test, and a script that
    re-serialises a record is the thing it is there to catch.
-9. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+10. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
    1346's ocean islands, deviation 1348's lane guard, deviation 1353, deviation
    1358, question 11 (the Nine Years' War, `Q152218`), `Q718893` *theater of
    war*, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas
@@ -14220,3 +14226,31 @@ articles the atlas already cites rather than by asking Wikidata anything.*
    Chilean four, the Almagrista eight and their missing decree, batch 52's three
    16th-century refusals — **do not re-walk those** — and the place pass on
    records that already exist, which is M42's.
+
+### Deviation 1363 — the index built for a merge commit is built before that commit exists
+
+STEP 1 of this run's prompt resolves a merge from `origin/m42` by *"dropping and
+rebuilding `data/index/`"*, and `node tools/validate.mjs --index` passed on the
+result locally. The check went red on it anyway, with five rule 16 errors, four
+of them `history-edge-1800-1899-…` and `history-edge-1900-1999-…` shards
+reported missing or stale.
+
+The reason is `tools/lib/history.mjs`: a record's versions come from **the
+commits that touched its file**, which is a question about the commits reachable
+from `HEAD`. At the moment the index is rebuilt to resolve the merge, `HEAD` is
+still this branch's pre-merge tip — `origin/m42`'s commits are in the object
+store but reachable from no commit the build can see — so the history shards are
+built over the records the merge brought in with **none of their history**. The
+runner checks out the merge commit, at `fetch-depth: 0`, and builds the shards
+those records actually have. Both builds are correct about the tree they were
+run on; only one of them is correct about the commit.
+
+Nothing was wrong with the merge and nothing needed undoing: the next batch's
+own rebuild ran with the merge commit as `HEAD` and produced the shards the
+runner wants, so the branch was green again one commit later without anyone
+noticing what had been fixed. That is the part worth writing down — **a fire
+that merges and then stops, without a batch behind it, leaves the branch red**,
+and the red says "run build-index", which is exactly what the fire did do. A
+fire that merges should **rebuild the index a second time after committing the
+merge** and amend or follow with that rebuild, or run its batch before it calls
+the merge done.
