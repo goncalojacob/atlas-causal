@@ -16524,3 +16524,13 @@ this — pass.
 **Nothing in `data/` changed to fix it**: the records, the edges, the places and
 the refusal are exactly what was pushed, and the only difference is which commit
 the history was read at.
+
+**The check is green on the head this stand was written against.** Run **2065** of
+`validate.yml`, commit `44bfa3ac`, conclusion **`success`** — records validated,
+both suites run the way the check runs them, and the index held byte-identical to
+a fresh build. Run **2062** concluded **`failure`** and it was right to: rule 16,
+deviation 1475, the history shards built before the records commit. Runs 2056,
+2057, 2060, 2063 and 2064 were each cancelled by the next push, which is deviation
+1258's chain and costs nothing. **This fire is the first in a while whose check
+went red for a real reason, and the red is in this file rather than explained
+away.**
