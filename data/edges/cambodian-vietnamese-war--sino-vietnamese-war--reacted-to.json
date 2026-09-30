@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cambodian-vietnamese-war--sino-vietnamese-war--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-75"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Vietnamese War\", revision 1375848359, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indochina wars\", revision 1373921212, § Third Indochina War"
+    }
+  ],
+  "from": "cambodian-vietnamese-war",
+  "to": "sino-vietnamese-war",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record's own cited article states the link in its first paragraph: \"China launched an offensive ostensibly in response to Vietnam's invasion and occupation of Cambodia in 1978, which ended the rule of the Khmer Rouge.\" `reacted-to` and not `caused`, because that is the shape the sentence gives — China's offensive was a response to what Vietnam had done, a month long and back to its start lines, and the article claims no mechanism by which the invasion brought the offensive about. **The word the article uses is \"ostensibly\", and this edge does not spend it.** The sentence states the reason China gave, not a reason the article endorses: the Sino-Soviet split, which `cambodian-vietnamese-war`'s own lead names in the same breath as the Third Indochina War, is the other reading historians give, and neither this edge nor its confidence decides between them. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22), and because the article hedges the claim it makes. The `Indochina wars` citation is the second witness and is where this pair was found: at revision 1373921212 the same offensive is \"a punitive expedition in revenge for the Vietnamese invasion of Cambodia\", which is the same statement without the hedge. The atlas held no path between these two ends before this edge; both are wars of the Third Indochina War, and this run files the earlier one under `indochina-wars` in the same batch, so the edge runs between two members of one complex and not between a complex and its part.",
+  "dispute": null
+}

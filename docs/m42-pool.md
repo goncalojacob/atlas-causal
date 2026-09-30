@@ -18238,6 +18238,38 @@ carrying `Q5249554`**.
 A15(2)'s recache, as the last step of the batch and over the batch's own
 citations: reported below with the suites.
 
+### A15(2)'s recache, and the suites and the check
+
+**A15(2), as the last step of the batch and over the batch's own citations:**
+`node tools/cache-evidence.mjs --fill` — **2,752 `wikipedia-en` citations on
+active records, 2,679 on disk at the revision cited, 0 that should be on disk and
+are not.** One title asked, one lead written: `Q5249554` *"Decolonisation of
+Asia"* at 1375271318, the one citation this batch wrote. The 73 counted as *a
+revision the cache cannot hold beside a more-cited one of the same item* are
+unchanged from batch 73.
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing skipped**
+— **1,928 pure** and **313 browser**, run the way the check runs them since M63.
+**No test was added**, and that is the point of the two suites that judged this
+batch: `tests/m42-filing.test.mjs` and `tests/m67.test.mjs` name no record and pin
+no count, so the umbrella and its children were judged by properties written
+before them, which is what 711 and 717 ask for and what the filing suite's own
+header promises.
+
+**Both of them failed first, and each failure was a real one.** The filing suite
+refused the umbrella until `docs/m42-pool.md` named it — *the argument for a
+filing is written by whichever run made it* — and **the m67 suite refused it in
+the check, at run 2153, which is red for that reason and no other**: a main event
+with no actor and no place is bare, and `docs/m67-umbrellas.md` must say why. Its
+section 15 had already said why for `decolonisation-of-africa` — *a period has
+neither an actor nor a place to give* — and this batch's section there says it for
+Asia. **The check is `success` on the tree that carries the records and the index**
+(run 2155 of `validate.yml`, commit `a48335af`) **and on this fire's final head**
+(run 2159, commit `e639a9e4`). Runs 2152 and 2158 were cancelled by the next
+push, which is deviation 1258's chain and costs nothing; the only commit whose
+own run this fire does not wait on is this paragraph's, which touches no code and
+no record.
+
 ## Where the run stands after batch 74, for the fire that picks it up
 
 *30 September, the fire that claimed at 18:07Z. A filing pass, which is what A6
@@ -18273,6 +18305,23 @@ put before every import and what Asia had never been given.*
   1898); and, from batch 72's stand and still true,
   `operation-unified-protector` under `libyan-civil-war` and
   `tet-offensive --> easter-offensive`.
+- **The next Asian umbrella was found, read and not written, and the reason is
+  the one the filing suite warns about.** `Western imperialism in Asia`
+  (`Q3234208`, 14 sitelinks, revision 1369975643) is the obvious companion to
+  `decolonisation-of-asia`, as `scramble-for-africa` is to
+  `decolonisation-of-africa`, and its span is in its own first paragraph: *"from
+  the colonial period beginning in the 16th century"* and *"formally ending with
+  the independence of Portuguese Macau in 1999"*. **That is a 500-year span, and
+  an umbrella that wide is the bucket `tests/m42-filing.test.mjs` says a period
+  must not be**: every Asian event this atlas holds falls inside it, so the span
+  test stops discriminating and the whole weight of each filing falls on whether
+  the article is *about* that event. Four of this lane's mains plausibly are —
+  `1893-franco-siamese-crisis`, `boxer-rebellion`, `british-expedition-to-tibet`
+  and `treaty-of-lhasa` — and a fire that writes it **must argue each from the
+  article's own 59,000 characters and file nothing else**, or it will have put a
+  bar across five centuries of the Asia lane and gained a reader nothing. This
+  fire read the lead, judged the shape and stopped; the item and the revision are
+  here so the next one does not pay for the reading twice.
 - **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
   reads 28 refusals off disk; the next places pass should hand it
   `refusedPlaces(record)`. Unchanged from the last four stands.
@@ -18286,3 +18335,265 @@ put before every import and what Asia had never been given.*
   never finished for it) and **1492** (an article that states no start still
   dates one in its list of colonies, if the reading separates a colony that
   became a state from one that changed owners).
+
+## Batch 75 — the one filing left in the cache, and the name an article gives by description
+
+*30 September, the fire that claimed at 21:07Z. **An import fire that imported
+nothing — the fifth in a row — and wrote one filing and one edge.** Today's
+`## Curation 2026-09-30` section was already in this file, so A11(a) and A13 were
+not this fire's; all six A14 and all thirteen A15 sections were here too, so every
+pass was skipped by its own rule. `origin/m0` was an ancestor of `m42` at the
+claim, so no merge was needed and `data/` was untouched by one.*
+
+**The main count fell 230 to 229 and Asia's active count held at 212.** One record
+was refiled, one edge was written, and the largest component did not move,
+because both of that edge's ends were already inside it.
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | 555 | 85 |
+| americas | 359 | 56 |
+| **asia** | **212** | **57** |
+| **africa** | **208** | **31** |
+| (no lane) | — | 51 |
+
+### Why this fire imported nothing, and it is not the bind this time
+
+The three-way bind of A15(1), A14(6) and A6 is unchanged and still the owner's.
+**This fire could not have imported even had the bind been open**, and that is
+worth writing down because it is a condition of the sandbox and not of the data:
+`en.wikipedia.org/w/api.php`, which is the endpoint
+`tools/import/wikidata.mjs --candidates` reads, answers **429 on every request**
+from this container's egress — five tries, two user agents, spaced. The proxy is
+healthy (`__agentproxy/status` reports no relay failures and a bundle covering
+every host) and **the REST endpoint is not rate-limited**: `api/rest_v1/page/summary`
+and `www.wikidata.org/w/api.php` both answer 200. **Deviation 1493: the action API
+and the REST API are rate-limited separately, so "no network" is the wrong reading
+of a 429 on `/w/api.php` — an article can still be read at a revision through
+`api/rest_v1`, and a fire that wants to read one should go there rather than
+conclude the container is offline.**
+
+### Three sweeps, one candidate, and the reason it is one
+
+The 18:07Z stand said the filing vein was not spent and named the lanes with
+gaps. This fire measured the whole of that vein **off disk**, over the leads the
+cache already holds at the revisions the records cite, and the answer is smaller
+than the stand hoped.
+
+| the filing sweep, widened | count |
+| --- | --- |
+| **1. every umbrella's own lead, read for members it does not hold** | 11 umbrellas, 2 with a named non-child |
+| **2. every container's lead, read for any Africa or Asia main** | **1156** containers read, **89** mains in scope |
+| candidate filings surviving span, lane and ancestry | **1** |
+| **3. the corpus edge sweep, re-run with A15(5) applied at the match** | **397** articles, 30 causal sentences naming a held event, **2** survivors, **0** written from it |
+
+Sweep 2 is the one no fire had run: batches 71 to 74 read the *umbrellas'*
+articles, and this one read **every** article for any main it might contain,
+which is how `indochina-wars` gave up the record below. That it gave up only one
+across 1156 containers is the measurement, and the stand should be read against
+it: **the filing vein reachable from the cache is now one record wide.**
+
+### The filing: `cambodian-vietnamese-war` under `indochina-wars`
+
+Two witnesses, neither of them this atlas's own reading, and the record was the
+only war of its own complex that was not filed. The umbrella's own cited article,
+`Indochina wars` at revision 1373921212, in its third-conflict section:
+
+> *"The conflict began in 1978 and lasted until the 1991 Paris Peace Agreements
+> on 23 October 1991, in which several wars were fought: The Cambodian–Vietnamese
+> War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge
+> regime."*
+
+And the child's own article, at the revision its summary quotes (1376151864),
+says it from the other side: *"This Cold War conflict was part of the Third
+Indochina War and Sino-Soviet split."* 1978–1989 falls inside 1945–1991 and both
+are drawn in the Asia lane. `first-indochina-war`, `vietnam-war` and
+`sino-vietnamese-war` were already filed under it; this was the one that was not.
+
+**Deviation 1497: a single parent is a bare string, and a list of one is not the
+same bytes.** M79 made `parent` accept three shapes, and the contribution form's own
+record writer — which `tests/bundle.test.mjs` holds every record in `data/` to —
+normalises one parent to a bare string. `first-indochina-war` carries a list
+because it has two. Writing `["indochina-wars"]` validated cleanly against the
+schema and failed *an unedited save of a record in data/ is byte identical*, which
+is the test that catches it; a fire that only ran the validator would have pushed
+a record the form cannot round-trip.
+
+**Deviation 1494: a filing's argument may not fit in the record it files.**
+`review.note` is capped at 500 characters by `schema/common/provenance.json` and
+this record's note already stood at 488, so writing the two quotations on to the
+record was rule 1, an error, and the argument lives here — which is where the
+filing suite asks for it, and a run that assumed the record could carry its own
+citation would have found that out from the validator rather than from the schema.
+
+### The edge: `cambodian-vietnamese-war --reacted-to--> sino-vietnamese-war`
+
+The later record's **own** cited article, `Sino-Vietnamese War` at revision
+1375848359, first paragraph: *"China launched an offensive ostensibly in response
+to Vietnam's invasion and occupation of Cambodia in 1978, which ended the rule of
+the Khmer Rouge."* `reacted-to` and not `caused`, because a response is the shape
+the sentence gives and no mechanism is claimed. **The article's word is
+"ostensibly" and the edge does not spend it**: the explanation says the sentence
+states the reason China gave, names the Sino-Soviet split as the other reading —
+which `cambodian-vietnamese-war`'s own lead raises in the same breath — and
+decides between neither. `probable`, because the only openable source is the
+encyclopaedia article (rule 22) and because the article hedges. The
+`Indochina wars` revision is cited beside it as the second witness, where the same
+offensive is *"a punitive expedition in revenge for the Vietnamese invasion of
+Cambodia"* — the same statement without the hedge.
+
+**Deviation 1495: the sweeps have been blind to an article that names a held
+event by description rather than by title.** This edge sat in the first paragraph
+of a record the corpus sweep read, at the revision it cites, and three sweeps
+missed it — because `namesHeldEvents()` matches a record's *names*, and the
+sentence says *"Vietnam's invasion and occupation of Cambodia in 1978"* where the
+record is titled *Cambodian–Vietnamese War*. Nothing is wrong with the matcher:
+it refuses to guess, which is why it can be trusted. But the count it reports is
+**not** how many statements an article makes about the atlas's events, and the
+"exhausted" verdicts of batches 72, 73 and this fire's sweep 3 should be read as
+*exhausted for names the matcher can see*. A fire with budget for one reading
+should take the descriptions of a handful of held events — an invasion, a
+partition, an assassination — and ask which articles use them.
+
+### What this batch is measured at
+
+| | before | after |
+| --- | --- | --- |
+| main events | 230 | **229** |
+| active events | 1334 | 1334 |
+| active edges between two active events | 1121 | **1122** |
+| components of the causal graph | 407 | 407 |
+| largest component | 740 | **740** |
+| edges crossing an umbrella (A15(11)) | 575 | **574** |
+| edges inside one umbrella | 546 | **548** |
+
+The component did not move and this fire does not pretend otherwise: both ends
+already reached `vietnam-war`, so the edge added a mechanism the graph did not
+hold and no reachability it did not. The crossing count fell by one and the
+inside count rose by two, which is the filing's arithmetic: the new edge is
+inside `indochina-wars`, and `vietnam-war --> cambodian-vietnamese-war` moved from
+crossing to inside when the child was filed.
+
+### Five refusals, written down so they are not re-derived
+
+- **`2011-yemeni-revolution` and `2011-bahraini-uprising` under `arab-spring`, refused
+  — and the reason is the umbrella's lane, not the children.** The umbrella's own
+  cited lead, at revision 1373656404, names them: *"From Tunisia, the protests
+  initially spread to five other countries: Libya, Egypt, Yemen, Syria and
+  Bahrain."* Three of those five are filed. **The two in Asia cannot be**:
+  `arab-spring` carries `region: africa` and no actors at all, so the filing
+  suite's subject test — the child's lane, or an actor the umbrella itself names —
+  has no route for a Yemeni or Bahraini record, both of which the region polygons
+  draw in the Asia lane. **Deviation 1496: an umbrella for something that happened
+  across two lanes cannot hold the members outside its own, and the fault is the
+  single `region` on the period record rather than anything about the members.**
+  This is A6's lane rule against the period umbrellas arriving from a new
+  direction, and it stays the owner's: writing `region: asia` on to a Yemeni
+  uprising would be false, and giving `arab-spring` actors it does not have to
+  satisfy a test would be worse.
+- **`first-sudanese-civil-war` and `closure-of-the-suez-canal-1956-1957` under
+  `decolonisation-of-africa`, refused.** Both fit the span (1955–1972 and
+  1956–1957 inside 1954/1956–1976) and both are in the lane, and **neither
+  article states the containment.** The Sudanese lead is about north and south and
+  autonomy and names no colonial power; the Suez lead states its own cause, which
+  is the Suez Crisis, and that edge is already in the atlas. A4 forbids supplying
+  the sentence.
+- **`angolan-war-of-independence` under `decolonisation-of-africa`, refused,
+  and the umbrella's lead is what named it.** *"Major events during the
+  decolonisation of Africa include the Mau Mau rebellion, the Algerian War, the
+  Congo Crisis, the Angolan War of Independence, the Zanzibar Revolution, and the
+  events leading to the Nigerian Civil War."* Four of those are filed;
+  `angolan-war-of-independence` is inside already through
+  `portuguese-colonial-war-1961-1974`, which A8's own test refuses; and the Mau Mau
+  rebellion is **not a record this atlas holds**, so it is an import and not a
+  filing.
+- **`Congo Wars` is not an umbrella.** The post-1976 African cluster — twenty
+  mains from `eritrean-war-of-independence` to `tigray-war` — has no period article
+  to fall into, and the obvious container is not one: `Congo_Wars` redirects to
+  *Congolese Civil War*, whose own first sentence is *"Congolese Civil War or Congo
+  War may refer to any of a number of armed internal conflicts"*. That is a
+  set-index page with no span, so A6's "a period with an article, a span and a
+  region" refuses it and A15(8) would flag it besides. **Africa's twenty
+  post-independence mains remain unfilable from anything the cache or this
+  reading offers.**
+- **`Western imperialism in Asia` was not written, and the 18:07Z stand's
+  judgement stands.** That stand read the lead, found a 500-year span and called it
+  the bucket the filing suite warns against; this fire agrees and adds a second
+  reason it had not: A15(1) put Asia before 1800 in `m42b`'s partition, so an
+  umbrella starting in the 16th century straddles the two lanes' division of
+  labour. The item (`Q3234208`) and the revision (1369975643) stay recorded so a
+  later fire does not pay for the reading a third time.
+
+## Where the run stands after batch 75, for the fire that picks it up
+
+*30 September, the fire that claimed at 21:07Z. One filing, one edge, and a
+measurement that narrows what the next fire should try.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The three-way bind is unchanged and still the owner's.** A15(1), A14(6) and A6
+  still close on each other for anything a fire wants to *import*; batch 71's
+  section is the statement of it and the two records an A6 relaxation would unblock
+  are still `Jewish exodus from the Muslim world` (rev 1375572604) and
+  `Decline and modernization of the Ottoman Empire` (rev 1374227337). **This fire
+  did not open that door and did not try to.**
+- **Read a 429 on `/w/api.php` correctly.** Deviation 1493: the action API and the
+  REST API are rate-limited separately. `tools/import/wikidata.mjs --candidates`
+  cannot run from this container today, but `api/rest_v1/page/summary` and
+  `www.wikidata.org/w/api.php` answer 200, so **an article can still be read at a
+  revision** — which is what A7, A11(a) and a filing argument actually need. A fire
+  that concludes "no network" from the action API's 429 will skip work it could do.
+- **The filing vein reachable from the cache is spent, and this fire measured the
+  whole of it.** 1156 containers read against 89 Africa and Asia mains, one
+  candidate, and it is written. **Do not re-run sweep 2.** What is left is not a
+  sweep: it is either an article nobody has read (network, now known to be
+  available through REST) or the blind spot below.
+- **The blind spot is the one vein with something in it.** Deviation 1495: the
+  matcher reads a record's *names*, so an article that calls a held event
+  *"Vietnam's invasion and occupation of Cambodia in 1978"* is invisible where the
+  record is titled *Cambodian–Vietnamese War*. This fire's one edge came out of that
+  gap, found by a person reading rather than by the sweep. **A fire with budget for
+  one reading should take the descriptions of a handful of held events — an
+  invasion, a partition, an assassination, a coup — and ask which articles use
+  them.** Every "exhausted" verdict in batches 72, 73 and this fire's sweep 3 means
+  *exhausted for names the matcher can see*, and nothing more.
+- **Africa's twenty post-independence mains have nowhere to go.** From
+  `eritrean-war-of-independence` (1961) to `tigray-war` (2020–2022) there is no
+  period article to fall into, and the obvious container is a set-index page
+  (`Congo Wars` → *Congolese Civil War*, refused above). A fire that wants the main
+  count down in Africa should read for a *national* complex rather than a
+  continental period — Sudan holds four mains, Congo two, Liberia two — and each
+  needs its own article read, which is now possible through REST.
+- **`arab-spring` is the new shape of A6's lane question.** Deviation 1496: its own
+  lead names five countries and two of them are in the Asia lane, so the umbrella
+  cannot hold them and the fault is the single `region` on the period record. Two
+  mains — `2011-yemeni-revolution` and `2011-bahraini-uprising` — are waiting on
+  that decision, which is the owner's. Do not write a lane on to either.
+- **What a later fire should not re-derive:** the four refusals of batch 74's stand,
+  which all still hold (`indochina-wars` under `decolonisation-of-asia`;
+  `mozambican-war-of-independence` under `portuguese-colonial-war-1961-1974`;
+  `philippine-revolution` under `decolonisation-of-asia`;
+  `operation-unified-protector` under `libyan-civil-war`; and
+  `tet-offensive --> easter-offensive`); plus this fire's five, above; plus
+  `revolution-of-dignity --> tunisian-revolution`, which is a matcher artefact —
+  the Tunisian revolution is *also called* the Tunisian Revolution of Dignity, and
+  that alias is what the sweep read.
+- **`Western imperialism in Asia` stays unwritten**, for batch 74's reason and one
+  more: A15(1) puts Asia before 1800 in `m42b`'s partition, and a 16th-century
+  start straddles that division. `Q3234208`, revision 1369975643.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last five stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period umbrellas;
+  deviations 1473 and 1482; `execution-of-the-romanov-family` and deviation 1423;
+  A11's area clause; deviation 1478; A15(12)'s 177 uncategorised events; the EEC's
+  closing year; deviation 1461's two display faults; and `origin/m42b`'s five place
+  placeholder summaries.
+- **Deviation numbers: take the next above 1497.** This fire wrote **1493** (the two
+  Wikimedia APIs are rate-limited separately, so a 429 on one is not "no network"),
+  **1494** (a filing's argument may not fit the record it files: `review.note` caps
+  at 500), **1495** (the sweeps are blind to an article naming a held event by
+  description rather than title) and **1496** (an umbrella for something that
+  happened across two lanes cannot hold the members outside its own) and **1497**
+  (one parent is a bare string; a list of one validates and is not the bytes the
+  form writes).

@@ -2385,6 +2385,80 @@ In full in the history file. The ones that decide something:
   `six-day-war --> yom-kippur-war`**: the better sentence that retraction hoped
   for was looked for and is not there, and the causal path between those ends is
   already held through `war-of-attrition`.
+- **The bind is about importing, and the filing pass A6 puts before it had a
+  lane nobody had given it.** Batch 74, on 30 September at 18:07Z. Five fires
+  had read this lane as blocked outright by the three-way bind of A15(1),
+  A14(6) and A6 — which it is, for imports — while **A6's second clause
+  (*"the next fire is a filing pass before it is an import"*) and A10's
+  (*"the seeds file gains the regional periods A6 asks for where a lane has
+  none (Latin America's, Asia's)"*) had never been carried out for Asia**:
+  Europe had `interwar-period` with fifty children, Africa two umbrellas with
+  fourteen each, and Asia, at 58 mains, none at all (deviation 1491).
+  **`decolonisation-of-asia`** (`Q5249554`, revision 1375271318) is that
+  umbrella, and its start is the entry worth keeping: the article states an end
+  in its first sentence (Timor-Leste, 2002) and **no start anywhere**, but its
+  own list of European colonies in Asia dates every colony's last year, and
+  **the first of those that is a colony becoming a state rather than a colony
+  changing owners is `Spanish Philippines (1565-1898)`** — where the prose has
+  *"Philippine revolutionaries unilaterally declared independence from Spain in
+  1898"*. Dutch Malacca in 1824, Dutch India in 1825 and Danish India in 1869
+  are all earlier and all transfers between European powers, so 1898 is the
+  start and 1945 — the frame the article gives its own possessions list — is
+  not (deviation 1492). **Five main events filed under it** and two more gained
+  it as an A8 second parent; `chaplain-medic-massacre` and
+  `operation-accountability` took the narrower parent the 15:07Z stand named,
+  each as a replacement rather than an addition because the filing suite
+  refuses a parent reachable through another. **The third filing that stand
+  proposed was refused by the record itself**:
+  `mozambican-war-of-independence`'s own `review.note` says the Portuguese
+  Colonial War closes on 25 April 1974 while the war ran to September, which is
+  the warning batch 41 filed it under the continent to avoid. **Main count 234
+  to 230 and Asia's active count 211 to 212 — the first movement in either in
+  five fires.** No edge, and none was possible: the only record written is an
+  umbrella, and an umbrella is not a claim.
+
+- **The filing vein reachable from the cache is one record wide, and the sweeps
+  have a blind spot the count never showed.** Batch 75, on 30 September at
+  21:07Z. The fire read **1156 containers' leads** — every active record with a
+  cached article at the revision it cites, not just the eleven umbrellas the four
+  fires before it had read — against the **89** main events in the Africa and Asia
+  lanes, and found **one** filing: `cambodian-vietnamese-war` under
+  `indochina-wars`, the only war of that complex that was not filed, argued from
+  the umbrella's own article (*"several wars were fought: The Cambodian-Vietnamese
+  War began when Vietnam invaded Cambodia"*, revision 1373921212) and from the
+  child's own (*"part of the Third Indochina War"*, revision 1376151864). **Main
+  count 230 to 229.** The finding is not the one: it is **deviation 1495** — the
+  sweeps match a record's *names*, so an article that calls a held event
+  *"Vietnam's invasion and occupation of Cambodia in 1978"* is invisible where the
+  record is titled *Cambodian-Vietnamese War*. This fire's one edge,
+  `cambodian-vietnamese-war --reacted-to--> sino-vietnamese-war`, sat in the first
+  paragraph of an article three sweeps had read; it was found by reading and not by
+  matching. **Every "exhausted" verdict of batches 72, 73 and 75 therefore means
+  exhausted for names the matcher can see**, and the descriptions are unread. The
+  edge takes the article's own hedge (*"ostensibly in response to"*) and does not
+  spend it, at `probable`, naming the Sino-Soviet split as the other reading. The
+  component did not move: both ends already reached `vietnam-war`. **Three more
+  entries.** Deviation 1493: the action API and the REST API are rate-limited
+  separately, so a 429 on `en.wikipedia.org/w/api.php` — which is what
+  `--candidates` reads, and what it answered on every try — is **not** "no
+  network", because `api/rest_v1/page/summary` and `www.wikidata.org/w/api.php`
+  both answer 200 and an article can still be read at a revision. Deviation 1494: a
+  filing's argument may not fit the record it files — `review.note` caps at 500
+  characters and this record's stood at 488, so the two quotations are in the pool
+  file, which is where the filing suite asks for them anyway. Deviation 1496: **an
+  umbrella for something that happened across two lanes cannot hold the members
+  outside its own** — `arab-spring`'s own lead names Yemen and Bahrain among the
+  five countries the protests spread to, and both are drawn in the Asia lane
+  against the umbrella's `region: africa`, so `2011-yemeni-revolution` and
+  `2011-bahraini-uprising` are unfilable and the fault is the single `region` on
+  the period record, not anything about the members. That is A6's lane rule
+  arriving from a new direction and it stays the owner's. Africa's twenty
+  post-independence mains still have no period to fall into, and `Congo Wars` is
+  not one: it redirects to a set-index page with no span. **Deviation 1497**: M79's
+  three shapes for `parent` are not interchangeable on disk — the contribution
+  form's writer normalises one parent to a bare string, so `["indochina-wars"]`
+  validated and failed *an unedited save of a record in data/ is byte identical*,
+  the one test that sees it.
 
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
@@ -24046,3 +24120,4 @@ M42 started 2026-09-30T15:07:56Z by scheduled
 M42b started 2026-09-30T18:36:59Z by scheduled
 M42 started 2026-09-30T18:07:54Z by scheduled
 M42b started 2026-09-30T21:37:04Z by scheduled
+M42 started 2026-09-30T21:07:29Z by scheduled
