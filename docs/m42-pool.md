@@ -16125,3 +16125,412 @@ byte-identical to a fresh build. Runs 2040 (the records commit), 2041 (the index
 commit) and 2042 (the pool section) were each cancelled by the next push, which
 is deviation 1258's chain and costs nothing; **no run of this fire's concluded
 `failure`.**
+
+## Batch 70 — Methuen's road to Kimberley, and the island that cannot be joined
+
+*30 September, the fire that claimed at 00:07Z. Today's `## Curation 2026-09-30`
+section is not in this file and it is **before** 02:00Z, so A11(a)'s curation fire
+is not this fire's — the first fire after 02:00Z today owns it. All six A14
+sections and all thirteen A15 sections were already here, so nothing was owed
+before the batch. A10's order of need put **Africa** at 204 active against Asia's
+211, so the batch is Africa's, taken from the wide screen in the batch 68 section.
+**Four records, two places, five edges, the main count unmoved, one record
+imported and removed under A15(1), and two deviations — one of which is the
+measurement that says why the largest component did not move.***
+
+The branch merged `origin/m0` at the claim (the M42b snapshot of 23:53Z) and took
+nothing from it that this batch touches; the index came back byte-identical to a
+fresh build over the merged tree, so the merge needed no rebuild commit of its own.
+
+### The four records
+
+| the record | sitelinks | dated | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `siege-of-kimberley` | 4 | 14 Oct 1899 – 15 Feb 1900 | **`kimberley-south-africa`** (new) | `second-boer-war` |
+| `battle-of-modder-river` | 8 | 28 Nov 1899 | **`modder-river-northern-cape`** (new) | `second-boer-war` |
+| `battle-of-belmont-1899` | 7 | 23 Nov 1899 | **none** (below) | `second-boer-war` |
+| `battle-of-graspan` | 5 | 25 Nov 1899 | **none** (below) | `second-boer-war` |
+
+Written by the tool's own `--import` with the qids appended to the seeds file's
+`items`, the route batches 67 to 69 used. All four filed themselves from `P361`
+and the umbrella's own span; none is a new umbrella and **the main count did not
+move**. A11(b)'s partition check was made before the import: none of the qids is
+on `origin/m42b`. `battle-of-belmont-1899` keeps its article's disambiguator,
+which is A12(5) working at import time.
+
+**A9 wrote two places and A15(6) refused two, both on the inception clause.**
+Kimberley came from `Q125905` and Modder River from `Q786298`, each with a lane
+derived from its own point. Belmont and Graspan are named after kopjes: each item
+carries a `P625` with no settlement at it, Graspan's `P276` reaches `Q218023`
+which is not a place of this atlas, and the `P17` of both is South Africa —
+**refused, because that state's inception is 1910 and both battles were fought in
+1899**, the same refusal `battle-of-vaal-krantz` drew in batch 68.
+`docs/m67-umbrellas.md` now carries the paragraph the two bare records owe, which
+is what `tests/m67.test.mjs`'s *"a child that names neither is one the measurement
+argues for"* asks for; it failed until that paragraph was there.
+
+### The five edges
+
+| from | type | to | confidence | crosses an umbrella |
+| --- | --- | --- | --- | --- |
+| `siege-of-kimberley` | reacted-to | `battle-of-belmont-1899` | probable | no |
+| `battle-of-belmont-1899` | precondition-of | `battle-of-graspan` | probable | no |
+| `siege-of-kimberley` | reacted-to | `battle-of-modder-river` | probable | no |
+| `battle-of-modder-river` | precondition-of | `battle-of-magersfontein` | probable | no |
+| `siege-of-kimberley` | reacted-to | `battle-of-magersfontein` | probable | no |
+
+Three of them are one reading applied three times, and it is the reading the
+atlas already gives the four battles fought to lift the siege of Ladysmith:
+**the siege is what Methuen's column was fighting to end, not something those
+battles produced**, so `reacted-to`. Belmont's article says it in its second
+paragraph — *"Methuen's three brigades were on their way to raise the Boer siege
+of Kimberley"* — and again in its § Background, which names the siege by its own
+name. Modder River's first sentence says it too: *"A British column under Lord
+Methuen, that was attempting to relieve the besieged town of Kimberley, forced
+Boers under General Piet Cronjé to retreat to Magersfontein."* And the siege's
+own article says what Magersfontein settled: *"The first attempt at relief of
+Kimberley under Lord Methuen was stopped at the battles of Modder River and
+Magersfontein."* That sentence names **both** battles, so the atlas writes an
+edge for each rather than giving one of them what the source gives to two.
+
+The other two are `precondition-of`, and both are about ground rather than
+mechanism. Belmont's lead: *"Before the British came to use their bayonets, the
+Boers retreated by pony and re-formed in another entrenched position at Graspan,
+where the pattern was repeated."* Modder River's § Aftermath: *"The delay allowed
+the Boers to construct the entrenchments which they were to defend in the Battle
+of Magersfontein."* Neither battle produced the next one; each bought the Boers
+the position the next was fought against. `probable` in all five, because the only
+source the atlas can open here is the encyclopaedia article itself (rule 22).
+
+Every quote was put through `verdictFor()` before the edge was written, and all
+five passed. **A14(6) holds**: all five run between siblings, and none runs from
+`second-boer-war` to one of its own children.
+
+### Deviation 1472 — a typographic quotation mark makes a citation unreadable, and the report says so while the count says nothing
+
+The five edges were first written with `“` and `”` around the article title in the
+locator. `LOCATOR` in `tools/import/citations.mjs` is `/^"(.*)",\s*revision\s+(\d+)\b/`
+— a straight double quote and nothing else — so all five parsed to **no article
+at all**. `node tools/cache-evidence.mjs --fill` printed a `!` line for each and
+then ended *"a revision that should be on disk and is not **0**"*, because a
+citation that names no revision is not a citation naming a missing one. **The
+summary line is true and useless**: a fire that reads it and not the five lines
+above it would record A15(2) as satisfied having cached nothing.
+
+Nothing was lost — the lines were read, the locators rewritten with straight
+quotes, and the recache came back 2,739 references and 0 missing — and
+`tests/a15-cache.test.mjs` would have caught it at the next run, because it
+asserts `gaps.malformed` is empty. So this is not a hole in A15(2); it is a hole
+in what a fire is told at the point where it writes an edge by hand. **The note
+is the fix: a `wikipedia-en` locator takes straight quotes, and `cache-evidence`'s
+`!` lines are part of its answer and not decoration.** The corpus was swept for
+the same fault afterwards and carries none: 2,735 `wikipedia-en` citations on
+active records, **0** naming no article and revision.
+
+### Deviation 1473 — the Boer family cannot be joined to the largest component while A14(6)'s C8 rule stands, and here is the measurement
+
+The batch 69 stand asked the next fire to look at the Siege of Kimberley's lead
+for the edge that would join the Boer island to the 739. **It is not there, and
+this fire measured that it is nowhere in the vein.** The island is now **13** —
+the nine of batch 68 plus this batch's four — and across the **eleven** Boer articles
+this fire read in full (Kimberley, Modder River, Belmont, Graspan, Talana Hill,
+Elandslaagte, Bergendal, Doornkop, Black Week, Bloody Sunday, Relief of
+Ladysmith), exactly **three** held events outside the island are named at all:
+
+| held event outside the island | mentions | with a causal marker and no chronology opener |
+| --- | --- | --- |
+| `second-boer-war` | 18 | **0** |
+| `jameson-raid` | 3 | **0** |
+| `siege-of-mafeking` | 1 | **0** |
+
+`second-boer-war` is in the 739 and is the **parent of every one of the 13**, so
+the one edge that would join them is exactly the parent-to-child edge **A14(6)
+forbids until the owner decides the 22 September C8**. `jameson-raid` is in the
+739 too, and its three mentions are about Cecil Rhodes's reputation, captured
+guns, and where a raid was halted — none of them a claim about any Boer battle.
+`siege-of-mafeking`'s one mention is an image caption in the Bergendal article,
+which is why Mafeking is still a component of one of its own.
+
+So **A5's question has a real answer this time**: the batch grew the corpus and
+the island and not the largest component, and the reason is a rule and not a
+shortage of reading. This is the cost of C8 stated as a number — **13 records and 13 edges standing beside the graph** — and it will go on growing with every Africa
+batch taken from this umbrella, because the Second Boer War still has 20 filable
+children on the screen. Either C8 permits the parent edge, or a Boer batch needs a
+candidate whose article reaches outside the war altogether; the Treaty of
+Vereeniging, which the atlas does not hold, is the obvious one and is not a child
+of the war by `P361`. **That is a line for the owner and not a thing a fire should
+decide.**
+
+### Deviation 1474 — the "five class rows" are four different questions, read off Wikidata rather than repeated
+
+Three stands running have called the missing rows of
+`data/imports/wikidata-seeds.json` → `classes` *the cheapest fix on the list*,
+and none of the three fires has written one. This fire asked why, by reading all
+seven class items' own labels and descriptions in one SPARQL call instead of
+carrying the list forward again:
+
+| class | what Wikidata says it is | what it is here |
+| --- | --- | --- |
+| `Q191093` | province of South Africa, a first-level administrative division | a safe `place` row at `region` |
+| `Q2225003` | special municipality of the Republic of China | a safe `place` row at `city` |
+| `Q15642541` | human-geographic territorial entity | a safe `place` row at `region` |
+| `Q218023` | **the Orange Free State**, a Boer republic, 1854–1902 | **not a class**: a polity is a presence, never a place |
+| `Q19953632` | former administrative territorial entity | **too generic**: a village and an empire are both one |
+| `Q188689` | ultimatum, a demand backed up by a threat | an **event** class, not a place class |
+| `Q217327` | suicide attack | an **event** class, not a place class |
+
+So the list is one safe edit of three rows, one row that must never be written,
+one that cannot be written without guessing, and two that belong under
+`kind: event` and unblock nothing — the 1890 British Ultimatum of batch 68 was
+refused under **A15(5)**, for a quote naming a third held event, and its class row
+would not have changed that.
+
+**And for this batch's two bare records the class table is not the blocker.**
+`Q369859` and `Q2888674` each carry a `P625` of the battlefield itself; what A9
+cannot do is *write* a place from a bare point with no name. Adding `Q191093`
+would put Belmont, Graspan and `battle-of-vaal-krantz` on **a province centroid at
+`region` precision in place of an exact point nobody can name** — coarser, and
+drawn wider and fainter by `PRECISIONS`. `battle-of-nanking` is the one record the
+safe rows plainly improve, because `Q2225003` resolves to Nanjing, which is where
+the battle was. **The rows are not written here**: a closed vocabulary in data is
+a file somebody argues with, and this one is a trade rather than a gap.
+
+### A15(1) held, and what it refused
+
+`relief-of-ladysmith` (`Q3237997`, 4 sitelinks) was imported, read and **removed
+in the same fire**, as the French conquest of Tunisia was in batch 68. Its own
+cited article captions a map *"the battles in the Relief of Ladysmith"* and its
+lead walks through Colenso, Spion Kop, Vaal Krantz and Pieters Hill: **it is a
+campaign, and its relation to the four battles the atlas already holds is part-of
+and not causation.** The one edge that would read the right way round — from the
+siege it relieved — fails **rule 4**, because the item's `P580` is 28 October 1899
+and the siege began on 2 November. A15(1) says a batch imports only the children
+it can connect, so the record is gone and `Q3237997` is in the state file's
+`refused` map with that reason.
+
+Five more were read and left for the same reason, and none of them is a fault in
+the record: **Talana Hill** (10 sitelinks) and **Elandslaagte** (10) name no held
+event but the war itself; **Bergendal** (7) names only `siege-of-mafeking`, in an
+image caption; **Black Week** (3) names Stormberg, Magersfontein and Colenso as
+the three defeats it *consists of*, which is part-of and not an edge; **Bloody
+Sunday** (6) says *"It occurred on the first day of the Battle of Paardeberg"*,
+which is the same. **Doornkop** (2) was refused on a different ground worth
+writing down: its item is dated 1896-01-02 while its article is about the
+surrender of Johannesburg in May 1900, and its one causal sentence naming a held
+event — *"Following his victory against the Boers at the Battle of Paardeberg,
+Roberts moved to take the capital cities"* — is A15(5)'s refusal class exactly.
+Two names, two dates and one item is a question for a person.
+
+So the screen's 24 filable children of `second-boer-war` are now **20 of 24**, and the
+count A15(1) asks for is **seven candidates read and left this fire could not connect**.
+
+### A15(2) ran as the batch's last step
+
+`node tools/cache-evidence.mjs --fill`, twice — once on the curly-quoted locators
+(deviation 1472) and once after they were fixed. **2,739 `wikipedia-en` citations
+on active records, 2,666 on disk, 73 unholdable for the reason A14(3) settles, 0
+missing**, the title table asked for 4 articles in 1 request, and
+`tests/a15-cache.test.mjs` passes.
+
+### The numbers
+
+| | after batch 69 (on this merged tree) | after batch 70 |
+| --- | --- | --- |
+| corpus | 1,329 active | **1,333** (+4 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,094 | **1,098** |
+| active edges | 1,106 | **1,111** |
+| largest connected component | 739 | **739**, unmoved — deviation 1473 says why |
+| the Boer component | 9 | **13** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 408 | **408** |
+| **edges that cross an umbrella (A15(11))** | 574, 532 inside one | **574**, 537 inside one — **0 written that cross one** |
+| events with no edge at all | 319 | **319** |
+| place records | 770, 768 active | **772, 770 active** (+2) |
+| validator | 0 errors, 620 warnings | **0 errors, 620 warnings** |
+| per lane, active | Europe 555, Americas 359, Asia 211, Africa 204 | Europe 555, Americas 359, Asia 211, **Africa 208** |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+A10's target is 303 active in each trailing lane: **Africa is 95 short and Asia
+92**, so Africa keeps the next batch by four.
+
+## Where the run stands after batch 70, for the fire that picks it up
+
+*30 September, the fire that claimed at 00:07Z. **An import fire**, and the first
+of the day: it fired before 02:00Z, so A11(a)'s curation fire was not its to run
+and the first fire after 02:00Z today owns it. All six A14 and all thirteen A15
+sections were already in this file, so nothing was owed before the batch. **Four
+records, two places, five edges, the main count unmoved at 235, and the reason the
+largest component did not move — measured for the first time rather than
+guessed.***
+
+**What is open, in the order a fire should weigh it:**
+
+- **The curation fire of 30 September has not run and is the next fire's if it
+  fires after 02:00Z.** It owns two things nobody has measured yet: **deviation
+  1467's promise** (the hyphenated-compound fix landed in batch 67 and no curation
+  fire has run since), and the first A13 reading of the nine records batches 69 and
+  70 added against the rest of the atlas.
+- **Deviation 1473 is the finding of this fire and it is a line for the owner.**
+  The Boer family is **13 records and 13 edges** and it cannot be joined to the
+  739: across eleven Boer articles read in full, the only held events outside it
+  that are named at all are `second-boer-war` (18 mentions, its own parent, which
+  A14(6) forbids an edge to), `jameson-raid` (3, none about a battle) and
+  `siege-of-mafeking` (1, an image caption) — and **not one of those mentions
+  carries a causal marker outside a chronology opener.** This is the cost of the
+  22 September C8 stated as a number, and it grows with every Africa batch taken
+  from this umbrella.
+- **A10's order of need: Africa keeps the next batch, by four.** Africa 208 active
+  against Asia's 211; the target is 303 each, so Africa is 95 short and Asia 92.
+  **Both screens are still good and neither lane needs a sweep**: Africa's is in
+  the batch 68 section (`second-boer-war` now **20 of its 24** filable children
+  left, `yom-kippur-war` **17**, `war-in-somalia` 9, `italo-turkish-war` 9,
+  `war-of-attrition` 8), Asia's in the batch 69 section
+  (`war-in-afghanistan-2001-2021` **58**, `vietnam-war` **52**,
+  `second-sino-japanese-war` **39**, `iran-iraq-war` **43**, `korean-war` 33).
+- **If the next Africa batch stays with `second-boer-war` it should expect the
+  same island.** The seven candidates this fire read and left are in the batch 70
+  section with the reason for each; of the 20 that remain, the guerrilla-phase
+  battles of 1901 and 1902 (Bakenlaagte, Tweebosch, Groenkop, Rooiwal,
+  Blood River Poort) are the ones whose articles are most likely to reach past the
+  war, and **`yom-kippur-war`'s 17 is the cheaper vein** — every one of its
+  children sits in a decade the atlas holds densely, so an edge that crosses an
+  umbrella is actually available there, which is what A15(11) counts.
+- **Deviation 1472 is a note and not a fault**: a `wikipedia-en` locator takes
+  **straight** quotation marks, and `cache-evidence`'s `!` lines are part of its
+  answer — its summary line reads `0 missing` for a locator that names no
+  revision at all. The corpus carries none of them now (2,735 citations, 0
+  malformed) and `tests/a15-cache.test.mjs` is what catches it.
+- **The "five class rows" three stands have called the cheapest fix on the list
+  are not one fix, and deviation 1474 is what they actually are.** This fire read
+  all seven class items' own labels and descriptions off Wikidata rather than
+  guessing, and they fall into four groups. **Three are safe place rows somebody
+  can write today**: `Q191093` *province of South Africa*, a first-level
+  administrative division → `region`; `Q2225003` *special municipality* of the
+  Republic of China → `city`; `Q15642541` *human-geographic territorial entity*
+  → `region`. **One is not a class at all**: `Q218023` is the **Orange Free
+  State**, a Boer republic — Graspan's `P276` points at a polity, and a polity is
+  a presence in this atlas and never a place, so the import's *"its class is not a
+  place of this atlas"* was right and the row must not be written. **One is too
+  generic to map**: `Q19953632` *former administrative territorial entity* covers
+  everything from a village to an empire, and a precision chosen for it would be a
+  guess. **Two are event classes and not place classes**: `Q188689` *ultimatum*
+  and `Q217327` *suicide attack* belong in the same table under `kind: event` with
+  a category, and neither unblocks anything — the 1890 British Ultimatum was
+  refused in batch 68 under **A15(5)**, for a quote naming a third held event, and
+  the class row would not change that.
+- **And for the two kopjes the class table is not the blocker at all.** `Q369859`
+  and `Q2888674` each carry a `P625` of the battlefield itself; what A9 cannot do
+  is *write* a place from a bare point with no name, which is what the import said
+  in its own words. Adding `Q191093` would give Belmont, Graspan and
+  `battle-of-vaal-krantz` a **province centroid at `region` precision in place of
+  an exact point nobody can name** — coarser, drawn wider and fainter, and a
+  trade a fire should not make on its own. `battle-of-nanking` is the one record
+  the three safe rows plainly improve, because `Q2225003` resolves to Nanjing,
+  which is where the battle was. **That is a line for the owner** and the reason
+  three fires have called this cheap and none has done it.
+- **Deviations 1469, 1470 and 1471 are still questions for the owner**, unchanged:
+  the 1881 French conquest of Tunisia against a Scramble for Africa dated
+  1885–1914; `CAUSAL_MARKERS` not seeing `led directly to` because an adverb
+  splits it; A15(5)'s verdict being necessary and not sufficient, which a rule
+  that a quote must name **both** ends would close — every edge batch 70 wrote
+  satisfies that rule too, and the fifth one says in its own explanation why it is
+  written despite the source naming two battles.
+- **`battle-of-wuhan` is still dated one day and no rule as written can widen
+  it** (batch 69's stand): its infobox says 11 June – 27 October 1938 and **reading
+  an infobox is not in A7**. That is a line for the owner and it reaches a good
+  many imported one-day records.
+- **A15 is done and no fire owes it again. A14 likewise.**
+- **Unchanged from batch 69's stand:** the two `review.html` lines worth twelve
+  Asia candidates (`chinese-civil-war`, `turkish-war-of-independence`); the second
+  Asia island of three (`battle-of-xuzhou`, `1938-yellow-river-flood`,
+  `battle-of-wuhan`) and the one refused quote between it and the 739;
+  `nigerian-civil-war` and `siege-of-mafeking` as islands of their own; the two
+  display faults of deviation 1461; A15(12)'s 177 uncategorised events; the EEC's
+  closing year and `operation-sutton`'s missing day; the four variants of the
+  `docs/m53-polities.md` paragraph. `tests/m53.test.mjs` passes on this tree and
+  §4.1 needed no retake.
+- **The network was in fair repair and it rationed.** About twenty-five requests:
+  one SPARQL sweep over `second-boer-war`'s 47 `P361` children with their
+  sitelinks, dates, classes and articles in one query — which is where the whole
+  screen came from and is cheaper than the four-block sweeps of batch 69 —, twelve
+  article reads through `rest.php/v1/page`, nine through the import, and one
+  `cache-evidence` title call. **The REST API answered `429` five times**, at
+  0.45 s between requests, and every retry at 4 s and then 12 s succeeded;
+  `Battle_of_Kraaipan` was given up on after three and was never a candidate this
+  fire needed. WDQS never complained. Deviation 1466 holds for the pages that came
+  back, but **0.45 s is too fast for `rest.php/v1/page` today** — the next fire
+  should space article reads at a second or more.
+- **Deviation numbers: take the next above 1475.** This fire wrote **1472** (a
+  typographic quotation mark makes a citation unreadable), **1473** (the Boer
+  island cannot be joined while C8 stands, measured), **1474** (the "five class
+  rows" are four different questions, and two of them are not a fire's to decide)
+  and **1475** (the history shards are built from commits, so the index is rebuilt
+  *after* the records commit and never before it).
+- **And 1475 is the one a fire should read before it does anything else.** The
+  order is: write the records → validate → **commit the records** →
+  `build-index.mjs` → `validate --index` → commit the index. A rebuild before the
+  records commit passes `validate --index` locally and fails rule 16 on the runner,
+  and the only pure tests that catch it are `tests/m62.test.mjs`'s and
+  `tests/m67.test.mjs`'s validator clauses, because they are the two that shell out
+  to `validate --index`.
+
+**Both suites are green on this fire's tree: 2,228 tests, nothing skipped** —
+**1,915 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. **No test was added**: none of the three deviations
+is code, and the one thing this fire wrote outside `data/` besides this file is the
+paragraph `docs/m67-umbrellas.md` owes its two bare records — which is what
+`tests/m67.test.mjs`'s *"a child that names neither is one the measurement argues
+for"* asks for, and it failed until that paragraph was there. The five
+curly-quoted locators of deviation 1472 were caught by `cache-evidence`'s own
+report before any test saw them; `tests/a15-cache.test.mjs` would have failed on
+them, because it asserts `gaps.malformed` is empty. **This paragraph is written
+after deviation 1475** — the first time both suites were run, they were run on a
+tree whose history shards were stale, and they were green on it, because the two
+pure tests that can see rule 16 shell out to `validate --index` and the working
+tree agreed with itself at that moment. **Both suites were run again on the
+corrected tree and are green there: 2,228 tests, nothing skipped — 1,915 pure and
+313 browser**, the same counts as before, which is the point: nothing this batch
+argues changed, only the commit the history was read at. The 2,228 above was a
+count from a tree the runner rejected for rule 16, and this is the same count from
+one it does not.
+
+### Deviation 1475 — the history shards are built from commits, so the index must be rebuilt *after* the records commit and not before it
+
+**The check went red on this fire's first three pushes and it was right to.** Run
+2062 failed on **rule 16**, and on nothing this batch argues: three history shards
+stale and three missing, all `1800-1899` and `place`, which are exactly the shards
+this batch's four records and five edges belong in.
+
+`tools/lib/history.mjs` builds each record's versions **from the commits that
+touched its file**. This fire rebuilt the index while the four records were still
+uncommitted, so the shards carried no version for any of them; `node
+tools/validate.mjs --index` was clean at that moment because the working tree and
+the history it had just been built from agreed with each other. The records commit
+then gave every one of those records a first version the committed index does not
+carry, and rule 16 saw it on the runner.
+
+**Deviation 798's order already says this** — *records first, rebuild, then commit
+the index* — and the order is not a convention about tidiness: the rebuild has to
+happen **after** `git commit` of the records, because the history is a function of
+the repository and not of the working tree. Batch 69's stand recorded the same red
+as *"the index, stale between the records commit and the rebuild, which is
+deviation 798's order working as intended"*, which is what it looks like from the
+other side. Rebuilt on the committed tree it is 0 errors and 620 warnings, and the
+validator clauses of `tests/m62.test.mjs` and `tests/m67.test.mjs` — the two that
+shell out to `validate --index` and are therefore the only pure tests that can see
+this — pass.
+
+**Nothing in `data/` changed to fix it**: the records, the edges, the places and
+the refusal are exactly what was pushed, and the only difference is which commit
+the history was read at.
+
+**The check is green on the head this stand was written against.** Run **2065** of
+`validate.yml`, commit `44bfa3ac`, conclusion **`success`** — records validated,
+both suites run the way the check runs them, and the index held byte-identical to
+a fresh build. Run **2062** concluded **`failure`** and it was right to: rule 16,
+deviation 1475, the history shards built before the records commit. Runs 2056,
+2057, 2060, 2063 and 2064 were each cancelled by the next push, which is deviation
+1258's chain and costs nothing. **This fire is the first in a while whose check
+went red for a real reason, and the red is in this file rather than explained
+away.**
