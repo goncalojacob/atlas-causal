@@ -663,6 +663,15 @@
         }
       ]
     },
+    "baton-rouge-louisiana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-the-lake-of-two-mountains-national-historic-site": {
       "from": "git",
       "versions": [
@@ -5917,6 +5926,15 @@
         }
       ]
     },
+    "mobile-alabama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "modder-river-northern-cape": {
       "from": "git",
       "versions": [
@@ -7043,6 +7061,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "pensacola-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

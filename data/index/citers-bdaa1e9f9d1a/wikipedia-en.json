@@ -2324,6 +2324,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-charlotte--siege-of-pensacola--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-charlotte--siege-of-pensacola--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Pensacola\", revision 1374389510"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of In-Delimane (2012)\", revision 1370443727, § The battle"
@@ -3335,6 +3347,18 @@
       "id": "capture-of-bahia--recapture-of-bahia--reacted-to",
       "kind": "edge",
       "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
+      "kind": "edge",
+      "locator": "\"Spain and the American Revolutionary War\", revision 1373209544"
     },
     {
       "dissent": false,
@@ -7004,6 +7028,18 @@
     },
     {
       "dissent": false,
+      "id": "spain-and-the-american-revolutionary-war--capture-of-fort-bute--enabled",
+      "kind": "edge",
+      "locator": "\"Capture of Fort Bute\", revision 1370608614"
+    },
+    {
+      "dissent": false,
+      "id": "spain-and-the-american-revolutionary-war--capture-of-fort-bute--enabled",
+      "kind": "edge",
+      "locator": "\"Spain and the American Revolutionary War\", revision 1373209544"
+    },
+    {
+      "dissent": false,
       "id": "spain-and-the-american-revolutionary-war--great-siege-of-gibraltar--enabled",
       "kind": "edge",
       "locator": "\"Great Siege of Gibraltar\", revision 1370621817"
@@ -10010,6 +10046,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-baton-rouge-1779",
+      "kind": "event",
+      "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-belmont-1899",
       "kind": "event",
       "locator": "\"Battle of Belmont (1899)\", revision 1370433957"
@@ -10337,6 +10379,12 @@
       "id": "battle-of-fort-albany-1693",
       "kind": "event",
       "locator": "\"Battle of Fort Albany (1693)\", revision 1366221219"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-charlotte",
+      "kind": "event",
+      "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
     },
     {
       "dissent": false,
@@ -12083,6 +12131,12 @@
       "id": "capture-of-cayo-cocina",
       "kind": "event",
       "locator": "\"Capture of Cayo Cocina\", revision 1366231642"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-bute",
+      "kind": "event",
+      "locator": "\"Capture of Fort Bute\", revision 1370608614"
     },
     {
       "dissent": false,
@@ -15257,6 +15311,12 @@
       "id": "siege-of-pemaquid-1696",
       "kind": "event",
       "locator": "\"Siege of Pemaquid (1696)\", revision 1375237359"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pensacola",
+      "kind": "event",
+      "locator": "\"Siege of Pensacola\", revision 1374389510"
     },
     {
       "dissent": false,

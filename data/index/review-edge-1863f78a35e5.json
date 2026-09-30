@@ -5307,6 +5307,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "from": "battle-of-fort-charlotte",
+      "id": "battle-of-fort-charlotte--siege-of-pensacola--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-pensacola",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-gao",
       "id": "battle-of-gao--battle-of-in-delimane-2012--precondition-of",
@@ -9408,6 +9437,35 @@
       "status": "active",
       "to": "recapture-of-bahia",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "capture-of-fort-bute",
+      "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-baton-rouge-1779",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -25368,6 +25426,35 @@
       "revised": null,
       "status": "active",
       "to": "capture-of-cayo-cocina",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "spain-and-the-american-revolutionary-war",
+      "id": "spain-and-the-american-revolutionary-war--capture-of-fort-bute--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "capture-of-fort-bute",
       "type": "enabled"
     },
     {

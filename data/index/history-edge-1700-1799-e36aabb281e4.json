@@ -131,6 +131,15 @@
         }
       ]
     },
+    "battle-of-fort-charlotte--siege-of-pensacola--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-grand-turk--treaty-of-paris-1783--precondition-of": {
       "from": "git",
       "versions": [
@@ -404,6 +413,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -794,6 +812,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war--capture-of-fort-bute--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

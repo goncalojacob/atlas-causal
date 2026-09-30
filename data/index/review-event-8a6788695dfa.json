@@ -7153,6 +7153,40 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-baton-rouge-1779",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Baton Rouge (1779)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
       "degree": 2,
       "id": "battle-of-belmont-1899",
       "kind": "event",
@@ -8948,6 +8982,40 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Fort Albany (1693)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-fort-charlotte",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fort Charlotte"
     },
     {
       "authors": [
@@ -18627,6 +18695,41 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Cayo Cocina"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 2,
+      "id": "capture-of-fort-bute",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-no-place",
+          "m42b-batch-53"
+        ],
+        "note": "A9 gave this event no place record and none was invented. Its own P625 carries two values about 70 km apart, so the first step cannot answer with one point; its P276, East Baton Rouge Parish (Q491949), has only the class Q13410524, in no row of the class table; and A15 (6) refuses its P17. The article at revision 1370608614 puts the post “on Bayou Manchac” — a place a person can write and a tool cannot read. The lane is the import's own, from the item's point, and regionNote says so.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Fort Bute"
     },
     {
       "authors": [
@@ -38146,6 +38249,42 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "siege-of-pensacola",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "a7-widened",
+          "m42b-batch-53"
+        ],
+        "note": "A7: the item's P580 is 9 May 1781 and its P582 10 May 1781, which makes the siege a single day. The cited article's own first sentence, at revision 1374389510, reads “The siege of Pensacola, fought from March 9 to May 10, 1781, was the culmination of Spain's conquest of West Florida during the Gulf Coast Campaign of the American Revolutionary War”, so the start is 9 March 1781 and the end is unchanged. Nothing else in the record moves: the year bounds were already 1781.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pensacola"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "siege-of-philippsburg-1644",
       "kind": "event",
@@ -39668,7 +39807,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 6,
+      "degree": 7,
       "id": "spain-and-the-american-revolutionary-war",
       "kind": "event",
       "origin": {

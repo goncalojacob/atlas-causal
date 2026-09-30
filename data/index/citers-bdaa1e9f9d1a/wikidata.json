@@ -3014,6 +3014,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-baton-rouge-1779",
+      "kind": "event",
+      "locator": "Q2888231"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-belmont-1899",
       "kind": "event",
       "locator": "Q369859"
@@ -3347,6 +3353,12 @@
       "id": "battle-of-fort-albany-1693",
       "kind": "event",
       "locator": "Q4871031"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-charlotte",
+      "kind": "event",
+      "locator": "Q2682171"
     },
     {
       "dissent": false,
@@ -5081,6 +5093,12 @@
       "id": "capture-of-cayo-cocina",
       "kind": "event",
       "locator": "Q5036996"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-bute",
+      "kind": "event",
+      "locator": "Q3097919"
     },
     {
       "dissent": false,
@@ -8375,6 +8393,12 @@
       "id": "siege-of-pemaquid-1696",
       "kind": "event",
       "locator": "Q2937688"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pensacola",
+      "kind": "event",
+      "locator": "Q2060558"
     },
     {
       "dissent": false,

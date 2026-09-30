@@ -1523,6 +1523,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "baton-rouge-louisiana",
+      "kind": "place",
+      "names": [
+        "Baton Rouge",
+        "Baton Rouge, Louisiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-the-lake-of-two-mountains-national-historic-site",
@@ -11871,6 +11900,36 @@
       ],
       "created": "2026-09-30",
       "degree": 1,
+      "id": "mobile-alabama",
+      "kind": "place",
+      "names": [
+        "Mobile",
+        "Mobile, Alabama",
+        "Mobile (Alabama)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
       "id": "modder-river-northern-cape",
       "kind": "place",
       "names": [
@@ -14106,6 +14165,36 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "pensacola-florida",
+      "kind": "place",
+      "names": [
+        "Pensacola",
+        "Pensacola, Florida",
+        "Pensacola (Flórida)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place",
+          "m42b-batch-53"
         ],
         "status": "draft"
       },
