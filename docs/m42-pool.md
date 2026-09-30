@@ -17598,6 +17598,22 @@ A11(b)'s partition check: the sweep reads only records this branch already
 holds, so it cannot collide with `origin/m42b`; nothing was imported on either
 side of the line.
 
+### The suites and the check
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing
+skipped** — **1,928 pure** and **313 browser**, run the way the check runs them
+since M63. Five tests were added, all to `tests/a15-chronology.test.mjs`, and
+each was written failing before its fix as 711 and 717 ask.
+
+**The check on the head commit is `success`** (run 2120 of `validate.yml`). Runs
+2114, 2115, 2117 and 2119 were each cancelled by the next push, which is
+deviation 1258's chain and costs nothing — but it is also why **the runner never
+saw the four bad edges**: the records commit's run was cancelled before it
+finished, and the local suite is what caught them. On a fire that writes records
+that is not a saving, it is the whole risk, and the fix is the one batch 71
+already named: **`tests/m42-filing.test.mjs` and `tests/leadcache.test.mjs`
+before the first commit.**
+
 ## Where the run stands after the sweep of 30 September, for the fire that picks it up
 
 *30 September, the fire that claimed at 09:07Z. An import fire that imported
