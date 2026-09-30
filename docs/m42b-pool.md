@@ -13043,3 +13043,28 @@ fire's final head**:
 M42 chose to unfile rather than to widen the test, which is its call and costs it
 four main events. The proposal stands only if a later fire wants those four
 filings back.
+
+### The tests and the check, on this fire's final head
+
+**1,916 pure and 313 browser, 2,229 tests, nothing skipped.** The pure half is
+**1,916 of 1,916** on the final head — the one failure this fire found,
+`tests/m42-filing.test.mjs`'s filing property, is gone with the merge that
+ported M42's fix. `node tools/validate.mjs --index` is clean at **0 errors, 615
+warnings**, byte-identical to a fresh build, asked on the committed tree and not
+on a dirty one (deviation 1202).
+
+The browser half was **312 of 313**, and the one drop is
+`tests/lens-browser.test.mjs` 50, *"reading a narrative draws the walk, its
+neighbours dimmed, and nothing else"* — **run alone it passes 13 of 13**. That is
+deviation 1345 again and the same test batch 47 lost: a browser suite short of a
+core, not an assertion. This fire had the pure suite running beside the browser
+one for part of the pass, which is exactly the load M63 measured, so the drop is
+this run's arrangement and not the tree's.
+
+**Run 2091 on `fc367626d`, this fire's final head, completed `success`** — `Set
+up`, `Validate records`, `Tests` and the index check, every step green, and
+`tests/lens-browser.test.mjs` 50 passed there as it does alone here.
+
+**Run 2078, on the first merge commit, went red, and it was M42's filing test** —
+written up under move 6 and discharged above. Runs 2076, 2084, 2085, 2086, 2089
+and 2090 were cancelled as each push superseded the last, which is ordinary.
