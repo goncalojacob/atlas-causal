@@ -22078,6 +22078,65 @@ and not the labels.
 1213. **`identifiers()` gained a `title`, so `sources.html` was rebuilt.** It
       is the build's own output and not `data/`; `data/index/` came back
       byte-identical and `validate --index` is clean.
+**M42b — deviation 1330 discharged, and batch 36: the Spanish American wars of
+independence and the Americas' nineteenth century, 25 September.** The
+thirty-fourth fire merged `origin/m0` (three commits) and `origin/m42` (its batch
+62 and a merge), the first cleanly and the second only in `STATUS.md`'s claim
+lines, and rebuilt the index from the union. **Deviation 1330 was then discharged
+the way it insisted on**: the cap was measured before it was written, from the
+items and not the records, because a record does not keep the `P625` its item
+gave. One SPARQL pass over the 1,101 items of the events an import created gives
+568 pairs carrying both the item's own point and the point of a country its `P17`
+names; the distribution over all of them decides nothing, because the guard can
+only fire where the chain fell through to `P17`, and over exactly those **41**
+events the distances have one gap — 39 at 8.6° or less, nothing at all to 21.6°,
+then two, then the four actions the deviation was written about at 70° and more.
+**`COUNTRY_AS_PLACE_DEGREES = 15`** is the round number in that band.
+`countryIsLastResort` guards the `P17` step alone and is asked at both places the
+chain can take a country, the candidate and the reuse at the head of the loop;
+**tests first (711, 717), both run against the guard stubbed out and both fail**.
+`raid-on-oyster-river` is corrected placeless in the `americas` lane — its own
+cited lead says Durham, New Hampshire and it was filed at the centroid of the
+United States — and `soviet-japanese-border-conflicts`, the same defect, is
+**measured and left**, because it is M42's record in M42's lane (deviation 1332).
+**Batch 36 then took the Americas' nineteenth century**, at 44 active and 8 main,
+by a change of method: **one SPARQL query over the held records of this partition
+that carry an item**, asking which of their children Wikidata has and this atlas
+does not, which ruled out the two veins a reading would have chosen first.
+**Fourteen events and five places created, nothing refused**; every one of the
+fourteen carries `P361` to a war this atlas holds, so every one filed itself and
+**the main count does not move, 240 before and 240 after**, six of them under the
+nearer umbrella by deviation 1316's reduction. `second-battle-of-la-puerta` was
+refiled by hand under `venezuelan-war-of-independence` (A3, A6, A8). **Two class
+rows added, read off the class items over the network**: `Q1168287` intervention
+and `Q2112892` pronunciamiento, each taking its own parent class's category.
+**Three edges, all `probable`, each citing two articles**, and all six revisions
+cited were checked against the live articles and match the cached leads exactly.
+**Two more were written and refused by rule 4, and both refusals were right**:
+the siege of Callao opened four days before Ayacucho, so Ayacucho is why it lasted
+and not why it began; and the edge into `independence-of-bolivia` was refused for
+a target dated sixteen years before the battle meant to precede it — **which found
+the duplicate**. `independence-of-bolivia` (`Q5915146`) and
+`bolivian-war-of-independence` (`Q68475`) are the same war under two items,
+identical in dates, place and umbrella, and the bare item has no article in any
+language; merged into the richer record in M21's shape. **The largest component
+does not move, 707 to 707, and the batch says why**: the five records its edges
+join were every one edgeless before it, and the edge that would bridge them to the
+707 runs from `spanish-american-wars-of-independence` to its own child, which A14
+forbids — the third fire to report the same cost in the same words.
+`docs/m53-polities.md` §4.1's total is re-taken at **403 of 1270**, the other
+three figures in the row unchanged because none of the fourteen names an actor.
+The corpus is **1,270 active**, main **240**, Europe before 1900 **257**, the
+`americas` lane **355**, and the cell moved **44 → 56**. Deviations **1333** (a
+lane is not on the record: this fire's own vein query read `event.region` and
+`place.region`, neither of which is usually there, so it asked about 157 of the
+556 held items of this partition; re-run off `data/index/` it names veins the
+first run could not see, **including 175 unimported children under
+`covid-19-pandemic-in-brazil` in the Americas' 21st, the cell three fires have
+called unfillable**, and 230 under the seven held wars of independence) to
+**1335**. `docs/m42b-pool.md` → "Batch 36", "Deviation 1330, discharged" and
+"The veins, measured properly" are the full account.
+
 **M42b batch 23 — the War of the League of Cambrai's nine unimported children,
 and Europe's sixteenth century, 24 September.** The twenty-third fire merged
 `origin/m0` (eighteen commits, M87) and `origin/m42` (six, its batch 49) before
@@ -22226,6 +22285,370 @@ the batch a correct place: the Maraycalla article's `{{About}}` reads like
 Wikipedia disowning the item's `P276`, and its infobox says the opposite
 (**deviation 1253**). `docs/m42b-pool.md` → "Batch 19" and "Batch 20" are the
 full account.
+
+**M42b batch 37 — the Dutch–Portuguese War in Africa and Asia, 29 September.**
+The thirty-fifth fire on this branch, and the first since 25 September: **no
+commit was made on `m42b` for three days**, which the gate and the claim rule
+handled correctly and which no rule in the repository can fix. It merged
+`origin/m0` (four commits, with the third review, **amendment A15** and the
+M88/M89 briefs) and `origin/m42` (seventeen, including the corrected import
+rules its own passes wrote); the `m0` merge was clean and the `m42` one
+conflicted in `STATUS.md`, the seeds' class table, `docs/m53-polities.md` §4.1
+and 270 index files — both sides kept for the first two, `origin/m42`'s for the
+third, and the index dropped and rebuilt. **A15(1) changes what this lane is**:
+Europe before 1900 is paused until Africa and Asia each hold 303 active events
+(they hold 184 and 185), and in its place this lane takes **Africa and Asia
+before 1800**, which held **nothing and one event**. The batch is there. Eight
+`P361` children of the held `dutch-portuguese-war` were read and **four were
+kept, four left with their reasons, because A15(1) imports only the children a
+batch can connect with an edge**: the two sieges of Malacca (1606 and
+1640–1641) and the two battles of Elmina (1625 and 1637), with the places
+`malacca-city` and `elmina`. **The main count does not move: 235 before and 235
+after**, and the 322 events with no edge at all is also unchanged, which is what
+A15(1) is for. **Three edges**, each with its locator at a revision, none from a
+parent to its own child (A14): the two Malacca sieges and the two Elmina
+battles as the patterns of failed attempts their own articles call the roots of
+the later capture, and `dutch-brazil-1630-1654` → `battle-of-elmina-1637`
+`enabled`, on the sentence that opens the 1637 article — *"the Dutch West India
+Company detached nine ships from the forces attacking the Portuguese in Brazil"*.
+The largest component goes 708 → **710** and the corpus **1,273 → 1,277 active**;
+Africa before 1800 is **2** and Asia before 1800 **3**. **A15(11)'s number is
+zero and zero is all this shape of batch can give**: every endpoint is a child of
+the one umbrella, and the honest attempt at a crossing edge — the slave-trade
+claim that would have joined the 1637 capture to the parentless
+`the-atlantic-slave-trade-to-brazil` — was refused because "History of Elmina"
+says the opposite. **A15(3) was applied to the tool and not only to the
+records**: `placeRecord()` now writes `summary: null`, the assertion written
+first. **A15(8) caught one record in the act** — `action-of-2-may-1654`'s
+English sitelink resolves to the war's own article, and the war's lead had been
+written as the record's summary — and it is among the four left. **A15(2) has a
+test now**, `tests/leadcache.test.mjs` over the pure `tools/lib/leadcache.mjs`,
+written before the pass it judges, naming the 21 records the third review left
+disagreeing as a subset that may shrink and may never grow. `validate --index`
+clean at 0 errors, its exit status read and not a pipe's. Deviations **1336 to
+1339**; 1339 is that §4.1 of `docs/m53-polities.md` is one row both lanes write,
+which is why that file conflicted this morning and why `origin/m42`'s run 1917
+was red. **Two browser tests are red on this head and neither is this batch's**:
+a resting title 30 px past the timeline's right edge
+(`"The depopulation of indigenous Brazil"`, `tests/m86-browser.test.mjs`) and two
+map labels overlapping (`"Pamplona"` and `"PYRENEES"`,
+`tests/map-browser.test.mjs`). Bisected rather than assumed: both are green at
+this branch's own claim commit and after `origin/m0`'s docs-only merge, and both
+go red at `origin/m42`'s merge, with the identical pixel numbers at the
+pre-batch head — the first because M42's A6 pass changed the main set and so the
+row packing, the second because its A9 pass placed two Pamplona battles and the
+city label now collides with the physical one, which `src/map/labels.js` is
+supposed to prevent. **Both are display and this brief's first prohibition is a
+display change**, and there is no data-side fix that is not a lie: nothing
+contains a span of 1500–1997, and the atlas is right to hold Pamplona. They are
+lane A's and M42's, whose own check is red for the same pair — and the first is
+already briefed: **`docs/m89-brief.md` §5 asks for exactly the assertion that is
+failing**, *"the last label is not cut at the right edge"*, so a records fire
+fixing it would be working inside an unrun milestone's section. The map one is in
+neither brief. `docs/m42b-pool.md` → "Batch 37" is the full account.
+
+**M42b batch 38 — the Indian Ocean theatre, 29 September.** The same fire's
+second batch. **Asia's eighteenth century held nothing at all**, and the vein
+query of batch 37 had already named what was in it: eight fleet actions off
+India, Ceylon and Morocco, children of `american-revolutionary-war`,
+`anglo-french-war-1778-1783` and `war-of-the-austrian-succession`, all three
+held. **Seven were kept and one left.** The five Suffren–Hughes actions —
+Sadras, Providien, Negapatam, Trincomalee, Cuddalore — which **their own articles
+number as one series of five**, with the siege of Pondicherry (1778) before them
+and the action of 16 March 1782 off Cape Spartel beside them. Three place
+records, each `summary: null` by A15(3)'s rule now in the tool; **two events stay
+placeless because the tool's guard refused a bad place the fire had been willing
+to accept** — Sadras and Negapatam give the Bay of Bengal as their only located
+step, its own point is 870 km from either battle and derives no lane at all, and
+the guard said so. **The main count does not move: 235 before and 235 after**,
+and the 322 events with no edge is unchanged across both batches. **Six edges,
+three of which cross an umbrella (A15(11)) — the first this lane has written**,
+after every batch the third review read scored zero; one of the five, Negapatam →
+Trincomalee, is the only link of the series for which the article gives a
+mechanism rather than an order (*"Due to the exposed nature of the anchorage at
+Cuddalore, and the impending arrival of additional British fleets, Suffren
+decided to attempt the capture of Trincomalee"*). **The crossing count moved for
+an unflattering reason and the pool file says so**: Wikidata files five battles
+of one campaign under two umbrellas, so a chain walked straight down it crosses
+three times without reaching any further. The corpus goes **1,277 → 1,284
+active**, the largest component 710 → **711**; Asia before 1800 is **9** with its
+18th century at **6** from nothing, and Africa before 1800 **3**. **A15(7) was
+applied to a record this batch wrote**: `action-of-16-march-1782` was drawn in
+Europe because its place is the Strait of Gibraltar, and the action was fought
+*"off Cape Spartel, Morocco"* — the lane is now its own point's, with the reason
+in `regionNote`. **And C8 has a table at last**: of the eleven records the two
+batches kept, **eight are outside the largest component**, and in every case the
+bridge that would put them in runs from an umbrella already inside it to that
+umbrella's own child. Deviation **1340**, the `regionNote` cap.
+`docs/m42b-pool.md` → "Batch 38" is the full account.
+
+**M42b batch 39 — the First Carnatic War, 29 September.** The move the previous
+fire had named and measured: `Q1362162` is a `P361` child of
+`war-of-the-austrian-succession`, which the atlas holds, so the Indian theatre of
+that war arrives as an **umbrella costing no main event** — and it is what
+`Q2889560`, the action of 6 July 1746, had no endpoint without. **Three events
+and two places**: the war itself, the action, and `battle-of-madras`, which the
+vein query never named and reading did — the action's own article says where it
+led, and the atlas did not hold the place. Two place records, `chennai` and
+`nagapattinam`, both `summary: null`. **The filing is A3/A6/A8 and not the item's
+`P361`**: the tool filed all three under the European war, and the action and
+Madras were re-filed by hand under `first-carnatic-war`, whose span and subject
+fit, with `filed-by-span-and-subject` in place of `filed-from-p361`. Filing one
+level deeper never raises the main count and did not: **235 before, 235 after**.
+That filing also costs the batch its easiest edges, which is the honest order of
+operations — leaving all three as siblings so that "war → battle inside it"
+clears A14 on a technicality is the containment edge C8 is about, and it was
+refused. **One edge, `action-of-6-july-1746` → `battle-of-madras`, `enabled`**,
+carried by two articles at their cached revisions, each stating one half: Peyton's
+withdrawal to Bengal left the Coromandel "badly exposed", and Dupleix then
+authorised the attack. **0 of 1 crosses an umbrella (A15(11)), and here that is
+the flattering answer** — two events of one campaign filed where they belong
+should not cross. One candidate left with its reason: `Q3485992`, the siege of
+Pondicherry of 1748, whose four-sentence article states no cause. The corpus goes
+**1,284 → 1,287 active**, edges 1,061 → **1,062**, the largest component
+**unmoved at 714**; **Asia's eighteenth century 6 → 9** and Asia before 1800
+9 → **12**. **C8 gains a second shape**: the bridge A14 forbids here is not a
+bridge into the 714 at all, because `war-of-the-austrian-succession` is itself in
+a component of five — twenty of its children are held and every edge anyone would
+write from it runs to one of them. `docs/m42b-pool.md` → "Batch 39" is the full
+account.
+
+**M42b batch 40 — the East Indies theatre, 29 September.** The same fire's
+second batch and the **first** of the moves the previous one named: the African
+and Asian candidates behind `Q207318`, the French Revolutionary Wars, which sit
+at depth two behind an item the atlas does not hold. The obstacle was as
+measured — the tool refused `french-revolution` as its parent under rule 24,
+because the wars outlast the Revolution by three years — and the way through was
+A8's: **`french-revolutionary-wars` is filed by hand under `atlantic-revolutions`**,
+whose span and subject fit, with no date invented anywhere. **It costs one
+European record and the pool file says so rather than burying it**: the umbrella
+has no coordinate, its lane is `europe`, and Europe before 1900 goes 257 → 258
+against a clause that pauses this lane's work there. It carries no edge; it is a
+filing device for four Asian records. **Five events and three places**:
+`siege-of-pondicherry-1793`, `sunda-strait-campaign-of-january-1794`,
+`bali-strait-incident` and `macau-incident-1799`, with `sunda-strait`,
+`bali-strait` and `wanshan-archipelago`. One class row read off the class item
+and not guessed (deviation 1266), `Q1402592` *island group* as `place`/`region`,
+without which the tool refused the Macau Incident's place outright. **Two edges**,
+neither crossing an umbrella (**0 of 2**): the fall of Pondicherry → the Sunda
+Strait campaign, `enabled`, on the later article's own *"With the French presence
+eliminated from India, Cornwallis was ordered to return to Europe, leaving
+minimal naval forces in the Indian Ocean"*; and the Bali Strait incident → the
+Macau Incident, `precondition-of`, on *"the second such attempt in three years"*,
+with the explanation saying plainly that the article does not claim the first
+produced the second. **A15(5) refused one candidate and the record was withdrawn
+after import**: the raid on Manila of 1798, whose only text reaching Macau names
+a third event — the French occupation of Suez — as the cause, and the atlas holds
+no record for it; it is out of the seeds and out of the cursor, retryable.
+`Q20639061`, the East Indies theatre itself, was refused by the tool for having
+no `P31` at all, and was not worked around. The corpus goes **1,287 → 1,292
+active**, edges 1,062 → **1,064**, main **235 before and after**, the largest
+component **unmoved at 714**; **Asia's eighteenth century 9 → 13** and Asia before
+1800 12 → **16**. **The vein is far larger than the note that pointed at it**:
+`Q207318` has **140** `P361` children, not five, and what limits their import is
+A15(1) and not supply. `docs/m42b-pool.md` → "Batch 40" is the full account.
+
+**M42b — the branch is green again, 29 September.** Run **1967** on
+`cd4e4154`, the thirty-sixth fire's final head, **concluded success**: the two
+browser failures the previous fire had bisected to `origin/m42`'s merge —
+a resting title past the pane's right edge in `tests/m86-browser.test.mjs` and
+"Pamplona" overlapping "PYRENEES" in `tests/map-browser.test.mjs` — both pass,
+and the whole suite is **2,157 tests, nothing skipped, nothing failing**
+(1,857 pure, 300 browser). Neither was this lane's to fix and neither was fixed
+here; what moved is `origin/m0`'s M88, `origin/m42`'s A15 passes and the corpus
+under both. **What it unblocks is the landing routine**, which a red branch
+stops, and which is the thing the owner set up so the site would keep growing
+while they were away.
+
+**M42b batch 41 — the French invasion of Egypt and Syria, 29 September.** The
+same fire's third batch, and the one aimed at **the thinnest cell in the atlas**:
+Africa before 1800, three active events in four centuries of a continent.
+`Q253684` has **twenty** `P361` children dated before 1800 and **nineteen of
+them name it and nothing else**, so with the campaign unheld every one would
+have arrived as a main event; its own `P361` names two items the atlas does not
+hold, so the tool left it parentless. The move is batch 40's again and A8's
+words: **filed by hand under `french-revolutionary-wars`**, whose span
+(1792–1802) contains 1798–1801 whole, with no date invented. **One umbrella
+unlocks twenty records at no cost in main events.** Six taken here — the capture
+of Alexandria, Shubra Khit, the Pyramids, the Nile and the revolt of Cairo, with
+five places — and **six edges**, five of them the Egyptian chain the articles
+narrate. **The sixth is the batch**: `french-invasion-of-egypt-and-syria` →
+`macau-incident-1799`, `enabled`, on the Macau article's own *"Rainier, whose
+forces were largely committed to the Red Sea following the recent French
+invasion of Egypt"* — the edge batch 40 had refused three hours earlier under
+A15(5) because the third event its quote named was not yet here, now written
+from that event exactly as the amendment requires. Two candidates left with
+their reasons, and one of them is **deviation 1342**: `Q20036669` carries a
+coordinate in the Indian Ocean and a sitelink to a Quasi-War action in the
+Caribbean, two different battles of 9 February 1799 merged into one item, which
+only reading the article finds. The corpus goes **1,292 → 1,298 active**, edges
+1,064 → **1,070**, main **235**, the largest component **unmoved at 714**;
+**Africa before 1800 3 → 9** and Africa's eighteenth century 1 → **7**.
+**A15(11) scored 0 of 6 and the batch's best edge is why the metric is wrong**:
+an edge from Egypt to the South China Sea counts as not crossing because one
+umbrella is wide enough to hold both ends — the mirror of batch 38's three
+crossings that reached nowhere. **C8's third shape, and the clearest**: the
+campaign is in a component of three with Macau and the Bali Strait, while the
+five battles it is the umbrella of are a component of five, because A14 forbids
+exactly those five edges. `docs/m42b-pool.md` → "Batch 41" is the full account.
+
+**M42b batch 42 — the Syrian half of the Egypt campaign, 29 September.** The
+move the previous fire's note put first, taken. `Q253684` answers **twenty-four
+`P361` children, five held and nineteen not**, and **six of the nineteen carry
+an English sitelink**: the two sieges of El Arish, Jaffa, Acre, Mount Tabor and
+the land battle of Abukir. All six were taken; **the thirteen with no English
+article were left, with one reason for all thirteen** — a record with no article
+has no lead to quote, no revision to cite and nothing for A15(1) to read before
+an edge is written, so it would arrive edgeless, which is A15(1)'s whole
+objection. All six name the campaign and nothing else, so all six are filed
+under it and **main stays at 235**, as through the six batches before this.
+**Five places**: three the tool wrote and **two a person wrote because A9's
+chain refused their class and said so** — `abu-qir` (*neighbourhood*) and
+`mount-tabor` (*mountain, hill*), neither class in
+`data/imports/wikidata-seeds.json`, both written from the item's own `P625`
+with `summary: null` and the flag `a9-place-by-hand`. Adding two classes to a
+closed vocabulary would change what every future import places, and this batch
+had no business making that edit. **A15(6), merged in from `origin/m42` this
+fire, fired twice and logged both**: Israel (inception 1948) and Egypt
+(inception 1922) refused as the place of 1799 battles. **Six edges**, five of
+them carrying a mechanism in the article's own words and the sixth saying
+openly that it rests on two articles read together; **A15(5) refused none**,
+and **A14 ruled out six more**, the campaign to each of its new children.
+**Deviation 1343, found and closed in the same batch**: eighteen of this lane's
+own edge locators (batches 38 to 41) were written with typographic quotation
+marks, which `parseLocator` cannot read, so `tools/cache-evidence.mjs` printed
+them below its totals as *"a locator naming no article and revision"* and
+**never checked them at all** while reporting a clean zero. Straightened; the
+check now reads 2,659 citations instead of 2,633, and **one real gap the curly
+quotes had been hiding** — *"History of Elmina"* at revision 1361080834 — came
+out and was cached. A check whose failure mode is *"I could not read this, so I
+said nothing"* reports clean when it is blind, and `tests/a15-cache.test.mjs`
+passed throughout. **A15(4) left one date unsettled and said so**:
+`second-siege-of-el-arish` is 17–21 December from the item and its article's
+*Siege* section says *"They besieged the fort on December 23, 1799"*; the first
+sentence carries no date, so nothing fired, and the record keeps the item's
+dates under the flag `date-vs-article-body` with a note, because one sentence
+is not the named revision A7 asks for and no date is invented. **A15(11) is 0
+of 6, and the batch went looking for the edge that would have crossed**:
+`siege-of-acre-1799` → `coup-of-18-brumaire`, which the Acre article states as
+a hedged counterfactual (*"it is likely that had he taken Acre he might have…
+would not have carried out later that year the coup"*, then *"He might have
+still taken power in France, later on"*) and which **the Coup of 18 Brumaire
+article does not state at all — it contains the words Egypt, Acre and Abukir
+nowhere**. Refused, and this is the third batch to meet the same shape: the
+links that would cross an umbrella are the ones the sources state
+counterfactually or not at all. The corpus goes **1,296 → 1,302 active**, edges
+1,069 → **1,075**, main **235**, the largest component **unmoved at 714**;
+**Africa before 1800 9 → 12** and **Asia before 1800 16 → 19**, and the
+Egypt–Syria component **5 → 11**, the fifth largest in the atlas.
+`docs/m42b-pool.md` → "Batch 42" is the full account.
+
+**M42b deviation 1344 — two A15(2)s that disagree, 29 September.** The same
+fire's merge of `origin/m42` grew `tests/leadcache.test.mjs`'s `KNOWN_STALE`
+list for the first time, from 21 to 27, and not from this lane: **M42's own
+A15(2) and A15(8) passes moved one side and not the other** on six records —
+the cache ran ahead of the citation on `battle-of-khe-sanh`, `my-lai-massacre`
+and `thirty-years-war`, and the citation ran ahead of the cache on
+`atlantic-revolutions`, `battle-of-musa-dagh` and `declaration-by-united-nations`.
+**Neither half is repairable from this lane**: `fetchLeads` reads the REST
+summary endpoint, which serves an article's current revision and no other, so a
+cache that has run ahead cannot be walked back; and a record's locator is M42's
+to change, because M42's summary is the text quoted at it. The six are named
+with the date and the cause, and the preamble's rule is restated as what it can
+enforce — **a batch of *this* lane may never add one**. `origin/m42` is green on
+the head merged, because the test that catches this is this lane's and does not
+exist there. **The finding worth the owner's attention is that
+`tools/cache-evidence.mjs` reported zero gaps on the same corpus**: its rule is
+per article and settles a disagreement by "the most-cited revision wins", while
+this test's rule is per record and asks whether the evidence that record cites
+is on disk. Both are A15(2), they are not the same question, and they gave
+opposite answers about the same six records. With deviation 1343 beside it —
+eighteen locators A15(2) could not parse and so never checked, while reporting
+clean — **this fire found two ways for "the evidence is on disk" to read green
+while it is not.**
+
+**M42b deviation 1345 — a records batch made a display test red by weight
+alone, 29 September.** `tests/m76-browser.test.mjs` 93, *"dragging a handle
+still moves the window"*, **failed on both of the fire's completed runs (1975
+and 1980) with the identical error** — the window did not move at all — and
+**passes in the sandbox four runs of four**. It was green on this branch two
+runs earlier and went red on the first run after the fire merged `origin/m42`;
+between those heads `src/` changed in exactly two files, `src/util/geo.js`
+(an added `haversineKm` nothing in the browser calls) and `src/validate/rules.js`
+(which the atlas page does not load). **What changed is the corpus**: 1,284
+active events to 1,302, and the index with it. The test waits for `MAP_READY`
+and for `#map-band-strip` to *exist*, then dispatches `pointerdown` at once —
+and a strip that exists is not a strip whose handle is listening. **Reported
+with a proposed patch rather than fixed**: the file is lane A's, the failure
+does not reproduce here, and a change to another lane's test that this fire
+cannot demonstrate fixing anything is worse than a written report. The point
+worth the owner's attention is general: **the corpus only grows, both records
+lanes grow it every fire, and a browser test whose precondition is "the element
+exists" rather than "the element is ready" gets closer to red with every batch.**
+This one crossed at 1,296 active events. Everything else on the head is green —
+`Validate records`, all 1,886 pure tests, and 299 of the 300 browser tests.
+
+**M42b batch 43 — the Indian Ocean stations of the French Revolutionary Wars,
+29 September.** The previous fire's note pointed at three Asian children of
+`Q207318`; the query answers **140 children, five held and 135 not**, and
+**eleven of the 135 fall inside this lane's partition**. Five were taken, all
+into the two thinnest cells of the atlas: the invasion of the Cape Colony
+(1795), the battle of Île Ronde (1794), the action of 9 February 1799 off
+Natal, the battle of Port Louis (1799) and the raid on Manila (1798).
+**Africa before 1800 12 → 16 and Asia before 1800 19 → 20**; all five name
+the wars and nothing else, so all five are filed under them and **main stays
+at 235**, as through the seven batches before this. **Six candidates left**:
+two with **no `P31` at all** (`Q5037062`, `Q4677270`), one refused by
+**A15(8)** (`Q4677390`, whose sitelink is *Action of 9 September 1796* and
+whose item carries no alias for the ninth), and three held back because they
+are the `americas` lane's and the Americas are not the cell that trails.
+`invasion-of-the-cape-colony` is the case where **A15(8) does not fire**: the
+item is labelled *Battle of Muizenberg* but *Invasion of the Cape Colony* is
+one of its own aliases and the article's first sentence carries both names.
+**Five places**: three the tool wrote, **two a person wrote for a reason that
+is new** (deviation 1346). **A15(6) fired once and logged it**: Mauritius,
+inception 1968, refused as the place of a 1799 battle. **Eight edges, and one
+of them is the point of the batch.** Seven are inside
+`french-revolutionary-wars`, because everything in the East Indies theatre the
+atlas holds is a child of it, and they grew that cluster from three events to
+eight and **left the largest component at 715** — which is A5's own warning.
+The eighth crosses: `french-revolution` → `battle-of-ile-ronde`,
+`precondition-of`, carried by the Île Ronde article's own account of why the
+squadron sailed (*"The preoccupation of the naval authorities had prevented
+any offensive operations"*; *"Concerned by food shortages and a rebellious
+slave population … Renaud led his small squadron"*). **The largest component
+goes 715 → 723 and the components 410 → 409** — the first time this lane has
+moved either since batch 36. The lesson is worth keeping: **an umbrella files,
+it does not connect.** `french-revolutionary-wars` carries no edge at all, so
+the eight events under it were invisible to the corpus until one edge left the
+umbrella. **A15(5) refused one** — `raid-on-manila` → `macau-incident-1799`,
+where the Macau article names the raid only to date the Spanish squadron's
+repairs — and **its second clause refused another**: `french-revolution` →
+`invasion-of-the-cape-colony`, whose quote names as the cause a third event
+(the French conquest of the Dutch Republic) the atlas does not hold. **A14
+ruled out five more**, the wars to each of their new children.
+
+**M42b deviation 1346 — a lane polygon that does not reach an island, and a
+tool that refuses the event rather than the place, 29 September.** The two
+Mauritius actions were refused outright: *"no place record for its location,
+no lane reachable from its point, and no lane named for it in the seeds
+file"*. Both items name a located `P276` with its own `P625`, so the point is
+there; **no polygon of `data/geo/regions.json` reaches Mauritius**, which the
+110m generalisation the lanes are cut from drops. The tool's refusal names its
+own remedy, so the seeds file's `lanes` table now names `africa` for the two
+items and the two place records were written by hand from the items' own
+points, each carrying `region: africa` and a `regionNote` — the override the
+model provides for *"somewhere no lane polygon reaches"*. **Three things this
+leaves.** The refusal is asymmetric: where the lane is missing the tool
+refuses the *event*, so a person must name the lane before the place can
+exist. The lane table is keyed on the **event's** item and not the country's,
+so the next Mauritius event is refused the same way. And the underlying fault
+is general: **an ocean island is not on the timeline at all until somebody
+names its lane by hand** — Réunion, the Seychelles, the Comoros, the Maldives
+and the Andamans alike, which is where the Indian Ocean wars happen and so
+where Africa and Asia before 1800 would come from. A lane derived from the
+nearest polygon rather than from containment would settle all of them; that is
+`src/util/geo.js`'s question and not a records batch's.
 
 ## M87 — what breaks at 3,000 events
 
@@ -23457,12 +23880,22 @@ M42 started 2026-09-25T12:08:36Z by scheduled
 M42 started 2026-09-25T14:51:41Z by scheduled
 M42b started 2026-09-25T15:18:12Z by scheduled
 M42 started 2026-09-25T17:26:36Z by scheduled
-M42 started 2026-09-29T02:07:14Z by scheduled
-M42 started 2026-09-29T05:07:41Z by scheduled
+M42b started 2026-09-25T17:37:37Z by scheduled
 M88 started 2026-09-25T17:51:08Z by scheduled
 M88 done
+M42 started 2026-09-29T02:07:14Z by scheduled
+M42b started 2026-09-29T02:36:46Z by scheduled
+M42 started 2026-09-29T05:07:41Z by scheduled
+M42b started 2026-09-29T05:37:30Z by scheduled
+M42b started 2026-09-29T08:36:56Z by scheduled
+M42b started 2026-09-29T11:38:45Z by scheduled
 M89 started 2026-09-29T03:45:19Z by scheduled
 M89 done
 M42 started 2026-09-29T09:07:23Z by scheduled
+M42b started 2026-09-29T15:00:51Z by scheduled
 M42 started 2026-09-29T12:19:41Z by scheduled
+M42b started 2026-09-29T18:37:04Z by scheduled
 M42 started 2026-09-29T15:26:03Z by scheduled
+M42 started 2026-09-29T18:07:08Z by scheduled
+M42b started 2026-09-29T21:38:18Z by scheduled
+M42 started 2026-09-29T21:07:23Z by scheduled

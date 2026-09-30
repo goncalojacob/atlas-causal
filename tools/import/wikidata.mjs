@@ -769,6 +769,29 @@ export function leadSummary(read, lead) {
     + `"${lead.text.trim()}" ${LEAD_PROVENANCE} ${importedSummary(read)}`;
 }
 
+// A15 (8), asked at import time. The REST summary endpoint follows a redirect
+// and answers with the article it landed on, so an item whose English sitelink
+// is a redirect into a different subject comes back with a lead about
+// something else — and nothing in the response says so. `west-indies-campaign-
+// 1793-1798` was written with the lead of "British Army during the French
+// Revolutionary and Napoleonic Wars" quoted inside it before this existed
+// (deviation 1347). The amendment's own question is the whole of the check:
+// does the title the fetch landed on fold to any name the item gives itself —
+// a label, an alias or an article title, in either language the atlas reads?
+// If it does not, the lead is not this item's and nothing may be quoted from
+// it. It answers about the lead and never about the record: what the caller
+// does with a `true` is the caller's.
+export function leadIsRedirect(read, lead) {
+  const landed = typeof lead?.title === 'string' ? foldName(lead.title) : '';
+  if (!landed) return false;
+  const names = [
+    ...Object.values(read?.titles ?? {}),
+    ...Object.values(read?.labels ?? {}),
+    ...Object.values(read?.aliases ?? {}).flat(),
+  ].filter((name) => typeof name === 'string' && name !== '').map(foldName);
+  return !names.includes(landed);
+}
+
 // And where it was read, as a citation. M72: a locator, always — the article
 // and the revision, which is what makes the quote checkable at all.
 export function leadCitation(lead, lang = 'en') {
@@ -1719,6 +1742,15 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       // half of deviation 1310.
       report.leads.push(...(await fetchLeads(fetcher, read, { cacheDir, today })).map((l) => ({ qid, ...l })));
       const lead = await readLead(cacheDir, qid, 'en');
+      // A15 (8) before the summary, because the summary is the lead: an item
+      // whose English sitelink redirects into another subject has no article
+      // of its own to quote, and a record quoting one is worse than no record.
+      // It is listed for a person, as an unknown class is (deviation 1347).
+      if (leadIsRedirect(read, lead)) {
+        refuse(report, qid, `A15 (8): its English sitelink resolves to "${lead.title}", `
+          + `which folds to none of the item's own names; nothing here is this item's account of itself`);
+        continue;
+      }
       const summary = leadSummary(read, lead);
       const citation = summary ? leadCitation(lead, 'en') : null;
 

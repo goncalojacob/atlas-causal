@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "action-of-9-february-1799-south-africa--battle-of-port-louis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 9 February 1799 (South Africa)\", revision 1370426808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Port Louis\", revision 1371973739"
+    }
+  ],
+  "from": "action-of-9-february-1799-south-africa",
+  "to": "battle-of-port-louis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The February article closes on exactly this link: \"In the Indian Ocean theatre the loss of Prudente was compounded a few weeks later by the capture of Forte at the action of 28 February 1799, which left Sercey with a shortage of available warships. At the action of 11 December 1799 his last frigate, Preneuse, was intercepted and destroyed off Île de France.\" The Port Louis article says the same from its own side — \"the squadron dispersed in 1798 and by the summer of 1799 Preneuse was the only significant French warship remaining in the region\" — and it is that solitude, not any order given in February, that put one frigate against a blockading ship of the line. Precondition-of: a stated reduction in force, not a cause of the December action.",
+  "dispute": null
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "strait-of-gibraltar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q36124",
+  "sitelinks": {
+    "count": 122,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Strait of Gibraltar",
+    "pt": "Estreito de Gibraltar"
+  },
+  "sources": [],
+  "names": [
+    "Strait of Gibraltar",
+    "Estreito de Gibraltar"
+  ],
+  "where": {
+    "lon": -5.516111111111111,
+    "lat": 35.97388888888889,
+    "precision": "region",
+    "label": "Strait of Gibraltar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

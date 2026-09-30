@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-6-july-1746",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ]
+  },
+  "wikidata": "Q2889560",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Action of 6 July 1746"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889560"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 6 July 1746\", revision 1370426720"
+    }
+  ],
+  "title": "Action of 6 July 1746",
+  "summary": "The English Wikipedia article \"Action of 6 July 1746\", at revision 1370426720, opens: \"The action of 6 July 1746 was an inconclusive naval engagement between the British and French fleets during the War of the Austrian Succession.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889560, imported by tools/import/wikidata.mjs. The item's own description reads \"1746 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-07-06"
+  },
+  "place": "nagapattinam",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-carnatic-war"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "second-siege-of-el-arish",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "date-vs-article-body"
+    ],
+    "note": "A15(4) reads the cached first sentence and the article title, and this article's first sentence carries no date at all, so nothing fired. Its Siege section does: \"They besieged the fort on December 23, 1799.\" The record's 17–21 December is the item's (P580/P582) and is kept, because one sentence of a short article is not the named revision A7 asks for before an interval moves, and no date is invented here. A reviewer decides which is right."
+  },
+  "wikidata": "Q119166434",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Second Siege of El Arish"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q119166434"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Siege of El Arish\", revision 1370737341"
+    }
+  ],
+  "title": "Second Siege of El Arish",
+  "summary": "The English Wikipedia article \"Second Siege of El Arish\", at revision 1370737341, opens: \"The siege of El Arish was a military engagement between the French garrison of El Arish and the Ottoman army during the French invasion of Egypt and Syria. The Ottomans attacked and invested in the fort, massacring the French garrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q119166434, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-12-17",
+    "endDate": "1799-12-21"
+  },
+  "place": "arish",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

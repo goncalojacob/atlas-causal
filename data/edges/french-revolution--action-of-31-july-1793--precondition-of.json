@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "french-revolution--action-of-31-july-1793--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 31 July 1793\", revision 1370426629"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "action-of-31-july-1793",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's background puts the whole chain in one place: \"The French Navy was in a state of upheaval due to the social consequences of the French Revolution, and as a result found itself at a disadvantage to the Royal Navy, which had been preparing for war since June 1792. In response, the French sent several frigate squadrons to sea, including their newest ships and best sailors and officers in an attempt to disrupt British commerce in the early stages of the war. One such squadron was sent in April 1793 to the United States, carrying the French ambassador to the United States, Edmond-Charles Genêt. After the ambassador disembarked, the squadron, under the command of Captain Jean-Baptiste-François Bompart, dispersed to raid British shipping along the coast.\" Precondition of, not caused: the Revolution is why a French frigate squadron was raiding off the American seaboard at all, and so why Bompart's Embuscade was lying in New York for Courtenay to challenge — but the challenge and the engagement are the two captains' own, and the article claims nothing more for the Revolution than the state of the navy that put the ship there.",
+  "dispute": null
+}

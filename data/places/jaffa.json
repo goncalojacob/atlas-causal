@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jaffa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q180294",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Jaffa",
+    "pt": "Jafa"
+  },
+  "sources": [],
+  "names": [
+    "Jaffa",
+    "Jafa"
+  ],
+  "where": {
+    "lon": 34.753055555556,
+    "lat": 32.052222222222,
+    "precision": "city",
+    "label": "Jaffa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

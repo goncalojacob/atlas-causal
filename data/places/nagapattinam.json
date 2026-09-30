@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nagapattinam",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q695585",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Nagapattinam",
+    "pt": "Negapatão"
+  },
+  "sources": [],
+  "names": [
+    "Nagapattinam",
+    "Negapatão"
+  ],
+  "where": {
+    "lon": 79.833333333333,
+    "lat": 10.766666666667,
+    "precision": "city",
+    "label": "Nagapattinam"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

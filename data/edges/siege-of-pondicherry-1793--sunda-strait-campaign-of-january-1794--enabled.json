@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "siege-of-pondicherry-1793--sunda-strait-campaign-of-january-1794--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sunda Strait campaign of January 1794\", revision 1370749005, § Background"
+    }
+  ],
+  "from": "siege-of-pondicherry-1793",
+  "to": "sunda-strait-campaign-of-january-1794",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The later article states the mechanism and does not leave it to the order of the dates. Its background: “Most fell within a few days, but the major port of Pondicherry refused, and was besieged from 1 August. The siege lasted a month before the French commander capitulated under bombardment from British land and naval forces. With the French presence eliminated from India, Cornwallis was ordered to return to Europe, leaving minimal naval forces in the Indian Ocean.” Its own lead says what followed from that: “The Royal Navy forces in the Indian Ocean were deployed elsewhere and so the East India Company … raised a squadron of armed merchant ships to patrol the Strait and drive off the raiders.” The fall of Pondicherry is what released the Royal Navy squadron from Indian waters, and the campaign in the Sunda Strait was fought by armed merchantmen because of it; `enabled` rather than `caused`, because what the withdrawal did was leave a gap that French privateers had already been opening since February 1793. Probable: Wikipedia alone.",
+  "dispute": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ile-ronde",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place-by-hand"
+    ]
+  },
+  "wikidata": "Q1087761",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Île Ronde, Mauritius",
+    "pt": "Ilha Redonda (Maurícia)"
+  },
+  "sources": [],
+  "names": [
+    "Île Ronde",
+    "Ilha Redonda"
+  ],
+  "where": {
+    "lon": 57.783333333333,
+    "lat": -19.850036111111,
+    "precision": "point",
+    "label": "Île Ronde"
+  },
+  "region": "africa",
+  "regionNote": "Mauritius falls outside every lane polygon of data/geo/regions.json, so the lane is written here as the override the model provides for somewhere no polygon reaches.",
+  "summary": null
+}

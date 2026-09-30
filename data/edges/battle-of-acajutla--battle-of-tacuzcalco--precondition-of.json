@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-acajutla--battle-of-tacuzcalco--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Acajutla\", revision 1370105848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tacuzcalco\", revision 1370590351"
+    }
+  ],
+  "from": "battle-of-acajutla",
+  "to": "battle-of-tacuzcalco",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Both articles make the second battle the sequel to the first's outcome rather than the next thing that happened. Acajutla: \"Defeated, the Nahuat forces retreated to reassemble further along his route. In a second battle a few days later, the remaining formal Cuzcatlan army again assembled on the battlefield but was finally defeated.\" Tacuzcalco, from the other side: \"On 8 June 1524, Alvarado fought and defeated Cuzcatlan fighters under Atlácatl at the Battle of Acajutla\", and then \"On 13 June 1524, Alvarado engaged Atlácatl in a second battle at Tacuzcalco. Atlácatl's army was larger than the army he commanded at Acajutla.\" Precondition of: the retreat and the reassembly are what put a larger Cuzcatlán army at Tacuzcalco five days later, and neither article says the first battle caused the second — it is the same army, regrouped.",
+  "dispute": null
+}

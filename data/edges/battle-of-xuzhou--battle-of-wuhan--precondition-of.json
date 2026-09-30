@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-xuzhou--battle-of-wuhan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-69"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Xuzhou\", revision 1374490976, lead"
+    }
+  ],
+  "from": "battle-of-xuzhou",
+  "to": "battle-of-wuhan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier record’s own cited article says it in its lead: \"It resulted in an eventual victory for the Japanese, but they failed to destroy the Chinese army, who managed to retreat and regroup to fight later at Wuhan.\" The army that fought at Wuhan is, by the article’s own account, the one that escaped the encirclement at Xuzhou. `precondition-of` and not `caused`: the article gives the Japanese victory as what the later battle was fought from and not as a mechanism that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

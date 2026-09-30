@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "battle-of-ayacucho--battle-of-tumusla--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, § Aftermath, on Sucre in Upper Peru"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tumusla\", revision 1366246828, lead"
+    }
+  ],
+  "from": "battle-of-ayacucho",
+  "to": "battle-of-tumusla",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Ayacucho opened the Upper Peru campaign that Tumusla ended, and the two articles meet on one name. Ayacucho's: \"After the victory at Ayacucho, following strict orders from Bolívar, general Sucre entered Upper Peru (today's Bolivia) on 25 February 1825... Royalist general Pedro Antonio Olañeta stayed in Potosí... Olañeta then summoned a war council, which agreed to continue the resistance in the name of Ferdinand VII.\" Tumusla's: the battle \"was fought on 1 April 1825, near the village of Tumusla (Potosí)\" and \"was a defeat for the Royalist forces under command of Pedro Antonio Olañeta, who was killed.\" Probable: Wikipedia alone.",
+  "dispute": null
+}

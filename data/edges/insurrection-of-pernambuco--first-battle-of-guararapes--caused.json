@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "insurrection-of-pernambuco--first-battle-of-guararapes--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-47"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurrection of Pernambuco\", revision 1370623843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Guararapes\", revision 1370618669"
+    }
+  ],
+  "from": "insurrection-of-pernambuco",
+  "to": "first-battle-of-guararapes",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both articles state it, from either end. The insurrection’s own: “The movement involved groups led by André Vidal de Negreiros, João Fernandes Vieira, Henrique Dias and Filipe Camarão, in the famous Battles of Guararapes, fought between 1648 and 1649 and crucial to the expulsion of the Dutch from Brazil in 1654.” The battle’s own, at the revision this atlas already cites for it: “The First Battle of Guararapes took place during the Insurrection of Pernambuco, between Dutch and Portuguese forces in Pernambuco, in a dispute for the dominion of that part of the Portuguese colony of Brazil.” The insurrection is not this record’s parent here — the atlas files both Guararapes under `dutch-brazil-1630-1654` — so A14’s hold on a parent’s edge to its own child does not reach it. `probable` rather than `consensus`, because the only sources the atlas can open here are the two encyclopaedia articles themselves (rule 22).",
+  "dispute": null
+}

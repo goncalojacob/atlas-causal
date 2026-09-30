@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-ladysmith--battle-of-the-tugela-heights--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-68"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, lead and § Background"
+    }
+  ],
+  "from": "siege-of-ladysmith",
+  "to": "battle-of-the-tugela-heights",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says it in its lead: \"General Sir Redvers Buller’s British army forced Louis Botha’s Boer army to lift the Siege of Ladysmith.\" Its § Background says what the battle was the fourth of: \"Buller’s army had made three earlier attempts to raise the Boer siege of Ladysmith... On 12 February, Buller ordered a fourth attempt to relieve Ladysmith.\" `reacted-to`, the same reading as the third attempt at Vaal Krantz a week earlier: the siege is what this battle was fought to end, not something that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

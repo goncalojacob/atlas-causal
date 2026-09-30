@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "invasion-of-the-cape-colony--action-of-9-february-1799-south-africa--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 9 February 1799 (South Africa)\", revision 1370426808"
+    }
+  ],
+  "from": "invasion-of-the-cape-colony",
+  "to": "action-of-9-february-1799-south-africa",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Cape article states what the capture was for and what was done with it: \"Elphinstone's substantial squadron remained on station at the Cape to deter efforts to recapture the colony. Parts of this force were subsequently deployed to bolster British forces in the Indian Ocean.\" The February article shows that squadron at work and the colony as its base: Prudente \"sailed to the region to the east of the British held Cape Colony to prey on transoceanic merchant shipping sailing to and from Cape Town\", and after the action \"Ball conducted hasty repairs and then brought the captured Prudente into Table Bay on 15 February. There the captured ship was condemned by the port commander Captain George Losack.\" Enabled and not caused: a British Cape is what put a British frigate on that coast and gave it somewhere to take a prize; neither article says the 1795 expedition brought on the 1799 encounter.",
+  "dispute": null
+}

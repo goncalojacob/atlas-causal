@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-tugela-heights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4873033",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Battle of the Tugela Heights"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4873033"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813"
+    }
+  ],
+  "title": "Battle of the Tugela Heights",
+  "summary": "The English Wikipedia article \"Battle of the Tugela Heights\", at revision 1376503813, opens: \"The Battle of Tugela Heights, also known as the Battle of Pieters Hill, Battle of the Pieters, or the Battle of the Tugela River, consisted of a series of military actions lasting from 14 February through to 27 February 1900 in which General Sir Redvers Buller's British army forced Louis Botha's Boer army to lift the Siege of Ladysmith during the Second Boer War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4873033, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-02-14",
+    "endDate": "1900-02-27"
+  },
+  "place": "colenso",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

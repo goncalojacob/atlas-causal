@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "batalla-de-la-florida",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-25",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5722589",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-09-25"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722589"
+    }
+  ],
+  "title": "Batalla de La Florida",
+  "summary": "Wikidata item Q5722589, imported by tools/import/wikidata.mjs. The item's own description reads \"1825 Official battle for the independence of the United Provinces of the Río de La Plata\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1825,
+    "end": 1825,
+    "date": "1825-05-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "argentine-war-of-independence"
+}

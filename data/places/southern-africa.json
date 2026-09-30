@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "southern-africa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27394",
+  "sitelinks": {
+    "count": 117,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Southern Africa",
+    "pt": "África Austral"
+  },
+  "sources": [],
+  "names": [
+    "Southern Africa",
+    "África Austral"
+  ],
+  "where": {
+    "lon": 23.097577777778,
+    "lat": -25.879105555556,
+    "precision": "region",
+    "label": "Southern Africa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

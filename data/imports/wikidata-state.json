@@ -1870,9 +1870,78 @@
         "Q26809259",
         "Q4872193",
         "Q17509657",
+        "Q10858436",
+        "Q10858449",
+        "Q10858446",
+        "Q2889067",
+        "Q5722315",
+        "Q5723065",
+        "Q5722708",
+        "Q5778763",
+        "Q5722589",
+        "Q52696693",
+        "Q6123901",
+        "Q5915146",
+        "Q55196779",
+        "Q115454857",
+        "Q7510222",
+        "Q1140266",
+        "Q4870964",
+        "Q4337398",
+        "Q3485995",
+        "Q2601126",
+        "Q2601189",
+        "Q2601178",
+        "Q2601158",
+        "Q1649183",
+        "Q4040247",
+        "Q1362162",
+        "Q2889560",
+        "Q3063400",
+        "Q207318",
+        "Q22907839",
+        "Q7639108",
+        "Q20011866",
+        "Q20870400",
+        "Q253684",
+        "Q3403790",
+        "Q2888305",
+        "Q332543",
+        "Q243979",
+        "Q3458323",
+        "Q3485822",
+        "Q3178783",
+        "Q815109",
+        "Q2420811",
+        "Q778800",
+        "Q119166434",
+        "Q1977699",
+        "Q20036669",
+        "Q20050713",
+        "Q19902501",
+        "Q20870437",
+        "Q368457",
+        "Q4677350",
+        "Q655480",
+        "Q113627918",
+        "Q3010371",
+        "Q3636310",
+        "Q97164453",
         "Q1351462",
         "Q1907402",
-        "Q518303"
+        "Q518303",
+        "Q385820",
+        "Q2889085",
+        "Q736490",
+        "Q4873033",
+        "Q1953346",
+        "Q254599",
+        "Q701180",
+        "Q709421",
+        "Q129151",
+        "Q2038907",
+        "Q7302285",
+        "Q10303008"
       ]
     }
   },
@@ -2044,6 +2113,26 @@
     "Q1850800": {
       "on": "2026-09-25",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q20639061": {
+      "on": "2026-09-29",
+      "why": "it has no P31 at all, so nothing says what kind of thing it is"
+    },
+    "Q655480": {
+      "on": "2026-09-29",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q113627918": {
+      "on": "2026-09-29",
+      "why": "A15 (8): its English sitelink resolves to \"British Army during the French Revolutionary and Napoleonic Wars\", which folds to none of the item's own names; nothing here is this item's account of itself"
+    },
+    "Q3010371": {
+      "on": "2026-09-29",
+      "why": "none of its classes (Q13226383, Q1155622, Q302729) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q385820": {
+      "on": "2026-09-29",
+      "why": "states a cause naming a held event, and cannot be filed: dated 1881 against scramble-for-africa at 1885-1914, so unfiled it raises the main count (A6) and filed it breaks the corpus invariant that no child is dated outside its parent. A7 cannot widen the umbrella: its cited article states no years. See m42-pool.md, batch 68."
     }
   }
 }

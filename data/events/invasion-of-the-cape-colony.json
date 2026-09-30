@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "invasion-of-the-cape-colony",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1977699",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Invasion of the Cape Colony",
+    "pt": "Invasão da Colônia do Cabo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1977699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    }
+  ],
+  "title": "Invasion of the Cape Colony",
+  "summary": "The English Wikipedia article \"Invasion of the Cape Colony\", at revision 1372363415, opens: \"The invasion of the Cape Colony, also known as the Battle of Muizenberg, was a British military expedition launched in 1795 against the Dutch Cape Colony at the Cape of Good Hope. The Cape Colony, established and controlled by the Dutch East India Company in the 17th century, was at the time the only viable South African port for ships making the journey from Europe to the European colonies in the East Indies. It therefore held vital strategic importance, although it was otherwise economically insignificant.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1977699, imported by tools/import/wikidata.mjs. The item's own description reads \"British invasion of the Dutch Cape Colony in 1795\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795,
+    "date": "1795-06-10",
+    "endDate": "1795-09-15"
+  },
+  "place": "dutch-cape-colony",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alexandria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q87",
+  "sitelinks": {
+    "count": 153,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Alexandria",
+    "pt": "Alexandria"
+  },
+  "sources": [],
+  "names": [
+    "Alexandria"
+  ],
+  "where": {
+    "lon": 29.8925,
+    "lat": 31.1975,
+    "precision": "city",
+    "label": "Alexandria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

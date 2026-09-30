@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "shubra-khit",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-29",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5600888",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-09-29"
+  },
+  "wikipedia": {
+    "en": "Shubra Khit"
+  },
+  "sources": [],
+  "names": [
+    "Shubra Khit"
+  ],
+  "where": {
+    "lon": 30.71277778,
+    "lat": 31.0275,
+    "precision": "city",
+    "label": "Shubra Khit"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

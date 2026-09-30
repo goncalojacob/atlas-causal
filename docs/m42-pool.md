@@ -15556,3 +15556,570 @@ head".
 and no suite needed a second run. One test was added, the deviation-1467 case in
 `tests/a15-chronology.test.mjs`, written before the fix and failing before it
 (711).
+
+## Batch 68 — the siege of Ladysmith, the three battles around it, and the screen that was measuring the wrong thing
+
+*29 September, the fire that claimed at 18:07Z. Today's `## Curation 2026-09-29`
+section was already in this file and all thirteen of A15's passes have theirs, so
+this fire went to A10's order of need, which the last stand named as **Africa** at
+184 against Asia's 186. **Three records, three edges, no new place, one record
+created and removed, two deviations.** A11(b)'s partition check was made before
+the import: none of the three items is on `origin/m42b`, by qid. The branch merged
+`origin/m0` at the claim and took nothing from it.*
+
+### The three records
+
+| the record | sitelinks | dated | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-ladysmith` | 7 | 30 Oct 1899 | `ladysmith` (held) | `second-boer-war` |
+| `battle-of-vaal-krantz` | 8 | 5–7 Feb 1900 | **none** (below) | `second-boer-war` |
+| `battle-of-the-tugela-heights` | 5 | 14–27 Feb 1900 | `colenso` (held) | `second-boer-war` |
+
+Written by the tool's own `--import` with the three qids appended to the seeds
+file's `items`, which is the route batch 67's stand asked the next fire to prefer.
+All three filed themselves from `P361` and the umbrella's own span; none of them
+is a new umbrella and **the main count did not move**.
+
+**A9 answered twice and refused once, and the refusal is A15(6) working.**
+Ladysmith and Colenso are place records the atlas has held since 23 September, so
+two of the three reused one and no place was written. Vaal Krantz got none: its
+item's own `P625` is a point on the Tugela with no settlement at it, its `P276`
+step reached `Q81725`, whose class `Q191093` has no row in the seeds table, and
+its `P17` is South Africa — **refused, because that country's inception is 1910
+and the battle ended in 1900**, which is exactly the case A15(6) was written for.
+The record carries the `africa` lane from the seeds file and nothing else, and
+`docs/m67-umbrellas.md` now carries the paragraph its bareness owes.
+
+### The three edges
+
+| from | type | to | confidence | crosses |
+| --- | --- | --- | --- | --- |
+| `battle-of-ladysmith` | precondition-of | `siege-of-ladysmith` | probable | no |
+| `siege-of-ladysmith` | reacted-to | `battle-of-vaal-krantz` | probable | no |
+| `siege-of-ladysmith` | reacted-to | `battle-of-the-tugela-heights` | probable | no |
+
+The first is the Battle of Ladysmith's own lead: *"The Boers did not follow up
+their advantage by proceeding towards the strategically important port of Durban,
+and instead began a siege of Ladysmith, which was relieved after 118 days."*
+Three days separate them. `precondition-of` and not `caused`: the article states
+that the Boer victory left the garrison shut in the town and that the Boers then
+chose the siege over an advance on Durban, which is a position the siege needed
+and not a mechanism that produced it.
+
+The second and third are the same reading twice. Vaal Krantz's first sentence:
+*"the third failed attempt by General Redvers Buller's British army to fight its
+way past Louis Botha's army of Boer irregulars and lift the Siege of Ladysmith."*
+Tugela Heights' lead: *"General Sir Redvers Buller's British army forced Louis
+Botha's Boer army to lift the Siege of Ladysmith"*, with its § Background saying
+what it was the fourth of. `reacted-to` in both, because the siege is what these
+battles were fought to end and not something that produced them; `probable` in
+all three, because the only source the atlas can open is the encyclopaedia article
+(rule 22).
+
+**None of the three crosses an umbrella** — all four events are inside
+`second-boer-war` — so A15(11)'s count is unmoved at 564 and the edges inside one
+go 490 → 493. The largest component is **unmoved at 716**: `siege-of-ladysmith`
+was in a component of six, which is now nine. That is worth saying plainly rather
+than reporting a rise that did not happen.
+
+### Deviation 1468 — the screen's threshold was never the constraint; the umbrella's span was
+
+The last stand handed this fire a screen: 98 `P361` rows at 12 or more sitelinks
+over the 177 Africa events that carry a qid, **25 of them unheld**, and it named
+`arab-spring` and `scramble-for-africa` as where to start. That screen was re-run
+here (96 rows, 24 unheld — one had been imported since) and **every one of the 24
+was read or excluded, and not one could be both filed and connected**:
+
+- **thirteen articles were opened and one states a cause naming a held event.**
+  Mahdist War, Mau Mau rebellion, Anglo-Ashanti wars, Dervish movement,
+  2012–2013 Egyptian protests, 2011 Djiboutian protests, 2011–2012 Jordanian
+  protests, Operation Nickel Grass, Battle of the Chinese Farm, Battle of
+  Latakia, Operation Ellamy, Opération Harmattan, AMISOM, Hoare–Laval Pact,
+  Battle of Beirut: every mention of a held event in all of them is a template,
+  an infobox, a category line, or a sentence that states an order and no cause.
+- **`Q3320778` the 1890 British Ultimatum** — the one Portuguese record in the
+  screen — has a cause-stating sentence and `verdictFor()` refuses it: *"Combined
+  with a variety of other factors, such as the Portuguese royal family's expenses,
+  the Lisbon Regicide, political instability and changing religious and social
+  views in Portugal led to the 5 October 1910 revolution"* **names
+  `lisbon-regicide`, a third event the atlas holds**, so A15(5) says the edge is
+  written from that event or not at all. Its class `Q188689` also has no row.
+- **`Q385820` the French conquest of Tunisia** connects and cannot be filed. See
+  deviation 1469.
+
+**What was wrong was the threshold, not the vein.** Re-run at **5** sitelinks,
+with the class table and the umbrella's own span applied *before* any article is
+opened, the same 177 umbrellas give **189 unheld children of which 138 can be
+filed** — a class row, a date, and a held umbrella whose span contains it. The
+distribution is where the next fires should go:
+
+| umbrella | filable children | umbrella | filable children |
+| --- | --- | --- | --- |
+| `second-boer-war` | **24** | `second-italo-ethiopian-war` | 7 |
+| `yom-kippur-war` | **17** | `arab-spring` | 7 |
+| `war-in-somalia` | 9 | `rif-war`, `libyan-civil-war`, `french-conquest-of-morocco`, `eritrean-war-of-independence`, `angolan-civil-war`, `algerian-war` | 4 each |
+| `italo-turkish-war` | 9 | `somali-civil-war-2009-present`, `second-congo-war`, `first-italo-ethiopian-war`, `2011-military-intervention-in-libya` | 3 each |
+| `war-of-attrition` | 8 | `tigray-war`, `south-sudanese-civil-war`, `second-sudanese-civil-war` | 2 each |
+
+Of the 51 that fail, **27 have a class row and a date and no held umbrella whose
+span contains them**, 13 have no class row, 6 have no date at all, 5 name no class.
+A one-line bug in this fire's own screen hid all of this at first: a WDQS time
+literal comes back as `1973-10-06T00:00:00Z` with no leading `+`, so a parser that
+took the first five characters read `1973-` and `Number()` gave `NaN`, and every
+candidate failed the date test. **Nothing was written from the broken screen** —
+it refused rather than admitted — but a screen that answers "none" is the shape
+that ends a fire, so it is written down here.
+
+### Deviation 1469 — a record this fire created and removed, and the two rules that meet on it
+
+`Q385820`, the **French conquest of Tunisia** (17 sitelinks), is the only one of
+the 24 whose article states a cause naming a held event: § Consequences, *"Italy
+would respond with the 1911–12 Italo-Turkish War leading to the Italian occupation
+of Libya."* `verdictFor()` writes it. It was imported, filed by hand, given its
+edge, validated and **pushed**, and then removed in the same fire.
+
+**Why.** Its item is dated 1881 and the atlas dates `scramble-for-africa`, the
+umbrella its own `P361` names, **1885–1914**, so `filedUnder()` refused the filing
+(rule 24) and left it a main event. Leaving it there raises the main count, which
+**A6** forbids. Filing it anyway — which was tried — breaks **seven tests**, among
+them `tests/m67.test.mjs`'s *"no child is dated outside its parent"*: the corpus
+has **zero** records filed outside their parent and that invariant is held by
+tests, not by taste. **A7 cannot widen the umbrella**: the Scramble article's first
+sentence says *"during the late 19th and early 20th centuries"* and states no
+years, and Q179848's own `P580`/`P582` say 1885 and 1914 — the record is faithful
+to both its sources, and A7's own words are that an interval the cited article does
+not state stays as it is. No held umbrella spans 1881 Tunisia; creating one would
+itself be a main event.
+
+So the record is gone and `Q385820` is in the state file's `refused` map with that
+reason. **Wikidata's own two statements contradict each other** — this event is
+`part of` a period it is dated outside — and the atlas has no way to hold that
+today except by refusing the record. That is a question for the owner and not a
+thing a fire should decide: either the umbrella's span is a bound the atlas may
+loosen when a member's `P361` says so, or rule 24's warning is the place to record
+the disagreement and the test that forbids it should say which umbrellas it means.
+
+### A15(1) held, and A15(5) refused twice
+
+Every record here is a child of a held umbrella that **could be connected**, which
+is A15(1)'s rule and the reason the batch is three and not four. A15(5) refused
+the 1890 British Ultimatum's quote (a third held event named as the cause,
+reattributed to `lisbon-regicide`) and the Siege of Kimberley's (*"Methuen's
+advance ground to a halt after…"* — an order of events, no cause stated).
+
+| | after batch 67 | after batch 68 |
+| --- | --- | --- |
+| corpus | 1,265 active | **1,268** (+3 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,030 | **1,033** |
+| active edges | 1,054 | **1,057** |
+| largest connected component | 716 | **716**, unmoved |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 392 | **392** |
+| **edges that cross an umbrella (A15(11))** | 564, 490 inside one | **564**, 493 inside one |
+| events with no edge at all | 309 | **309** |
+| place records | 735, 733 active | unmoved: both places were held |
+| validator | 0 errors, 600 warnings | **0 errors, 600 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 186, Africa 184 | Europe 553, Americas 342, Asia 186, **Africa 187** |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+### A15(2) ran as the batch's last step
+
+`node tools/cache-evidence.mjs --fill`, twice — once after the abandoned Tunisia
+record and once after the three. All three leads are on disk at the revisions they
+cite (1370446909, 1370592068, 1376503813), the title table has all three articles,
+and `tests/a15-cache.test.mjs` passes. **2,598 `wikipedia-en` citations on active
+records, 2,525 on disk, 73 unholdable for the reason A14(3) settles, 0 missing.**
+
+## Where the run stands after batch 68, for the fire that picks it up
+
+*29 September, the fire that claimed at 18:07Z. **An import fire**, the second of
+the day: today's curation section and all thirteen A15 sections were already in
+this file, so nothing was owed before the batch. **Three records, three edges, one
+record created and removed, two deviations, and a screen the next fire should use
+instead of the last one.***
+
+**What is open, in the order a fire should weigh it:**
+
+- **A10's order of need has turned over: Africa is now 187 against Asia's 186, so
+  the next import batch in this lane is Asia's.** The wide screen in the batch 68
+  section above is Africa's and stays good for the fire after that; **the same
+  screen has never been run for Asia at 5 sitelinks with the span filter**, and
+  running it is the first thing an Asia batch should do. `screen2` is three
+  filters over one SPARQL sweep — class row, a date, and a held umbrella whose
+  span contains it — and the last stand's `≥12` screen is not a substitute for it.
+- **Africa's own richest veins, when the lane comes back:** `second-boer-war` has
+  **24** filable children and the atlas already holds eight of its battles, which
+  is the densest family this branch has found; `yom-kippur-war` has 17.
+  This fire read six Boer War articles and three of them connected, which is the
+  best rate since batch 67's three of five and for the same reason — a family of
+  events that answer each other says so in its own leads.
+- **The Boer War battles do not join the largest component.**
+  `siege-of-ladysmith` sits in a component that is now nine, not in the 716. An
+  edge from any of the eight held Boer battles out to `jameson-raid`,
+  `second-boer-war`'s own causes or the Portuguese records would join a family of
+  nine to the main graph in one write. The Siege of Kimberley's lead names the
+  Jameson Raid and is the obvious place to look: *"his involvement in the Jameson
+  Raid made him one of the primary protagonists behind war breaking out."*
+- **Deviation 1469 is a question for the owner, not for a fire.** Wikidata says the
+  1881 French conquest of Tunisia is part of the Scramble for Africa and dates the
+  Scramble 1885–1914. A6 and `tests/m67`'s no-child-outside-its-parent cannot both
+  be kept with that record in the atlas. It is refused today; **one line from the
+  owner unblocks it and every candidate like it** — and 27 of the 189 Africa
+  candidates fail for exactly this reason.
+- **`Q188689` (ultimatum) and `Q191093` are classes the table has no row for**, and
+  `Q217327` is still the one batch 67 named. Three rows, and the 1890 British
+  Ultimatum and a Vaal Krantz place become possible.
+- **Deviation 1467's promise is still unmeasured.** The hyphenated-compound fix
+  landed in batch 67 and **no curation fire has run since**, so nobody has yet
+  counted the edges A13's relations pass had been refusing. The next curation fire
+  — the first after 02:00Z on 30 September — owns that count and should say it.
+- **A15 is done and no fire owes it again.** A14 likewise.
+- **Unchanged from batch 67's stand:** the two `review.html` lines worth twelve
+  Asia candidates (`chinese-civil-war`, `turkish-war-of-independence`);
+  `nigerian-civil-war` as a two-node island; the two display faults of deviation
+  1461; A15(12)'s 177 uncategorised events; the EEC's closing year and
+  `operation-sutton`'s missing day; the four variants of the `docs/m53-polities.md`
+  paragraph. `tests/m53.test.mjs` passes on this tree and §4.1 needed no retake.
+- **The network was in good repair and cheap.** Thirty-four requests: five SPARQL
+  sweeps (two Africa `P361` screens over 177 qids in `VALUES` blocks of 60, and
+  three diagnostic re-runs of the second), two `Special:EntityData` reads by hand,
+  eight through the import, seventeen article reads through `rest.php/v1/page`, and
+  two `cache-evidence` title calls — one in flight every 400 to 500 ms and **no 429
+  at any point**. Deviation 1466 holds: `rest.php/v1/page` answered every time.
+- **Deviation numbers: take the next above 1469.** This fire wrote **1468** (the
+  screen's threshold was not the constraint) and **1469** (the record it created
+  and removed).
+
+**The check is green on the head this stand was written against.** Run **2031**
+of `validate.yml`, commit `54737670`, conclusion **`success`** — records
+validated, both suites run the way the check runs them, and the index held
+byte-identical to a fresh build. Runs 2022 and 2025 were cancelled by the next
+push, which is deviation 1258's chain and costs nothing. **Runs 2024 and 2026
+concluded `failure` and both are this fire's own work, not flakes**: 2024 is the
+`french-conquest-of-tunisia` commit, which failed the seven tests deviation 1469
+names, and 2026 is the head before `docs/m67-umbrellas.md` carried the paragraph
+`battle-of-vaal-krantz`'s bareness owes — one test, *"a child that names neither
+is one the measurement argues for"*, and it is a correspondence test doing exactly
+its job. Both are superseded on the branch and the head is green.
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. No test was added: the two deviations are a screen
+and a refusal, and neither is code.
+
+## Batch 69 — the Second Sino-Japanese War of 1937–38, and Asia's screen at last
+
+*29 September, the fire that claimed at 21:07Z. **An import fire**, the third of
+the day: today's `## Curation 2026-09-29` section and all thirteen A15 sections
+were already in this file, so nothing was owed before the batch. **Five records,
+two places, four edges, the largest component moved for the first time in three
+batches, and Asia's wide screen run for the first time.*** A11(b)'s partition
+check was made before the import: none of the five items is on `origin/m42b`, by
+qid. `origin/m0` was already an ancestor of `m42` at the claim, so no merge.
+
+### Asia's screen at 5 sitelinks with the span filter — the thing the last stand asked for first
+
+The batch-68 stand asked that `screen2` — three filters over one SPARQL sweep, a
+class row, a date, and a held umbrella whose span contains it — be run for Asia
+before anything else, because it never had been. It was, over the **184 Asia-lane
+events that carry a qid**, in `VALUES` blocks of 60. **Asia's vein is roughly four
+times Africa's**:
+
+| | Africa (batch 68) | Asia (this fire) |
+| --- | --- | --- |
+| umbrellas swept | 177 | **184** |
+| `P361` children at ≥5 sitelinks | — | 900 |
+| of those, unheld | 189 | **796** |
+| **filable** (class row + date + a held umbrella whose span contains it) | 138 | **529** |
+| no class row, or a class that is not an event here | 13 | 122 |
+| no date at all | 6 | 17 |
+| no held umbrella whose span contains it | 27 | 128 |
+
+Where the next Asia fires should go, by filable children:
+
+| umbrella | children | umbrella | children |
+| --- | --- | --- | --- |
+| `war-in-afghanistan-2001-2021` | **58** | `gulf-war` | 18 |
+| `vietnam-war` | **52** | `first-indochina-war` | 17 |
+| `second-sino-japanese-war` | **44** | `gaza-genocide`, `lebanese-civil-war` | 13 each |
+| `iran-iraq-war` | **43** | `soviet-afghan-war`, `2003-invasion-of-iraq` | 11 each |
+| `korean-war` | 33 | `first-sino-japanese-war` | 9 |
+| `iraq-war` | 28 | `boxer-rebellion` | 8 |
+| `second-intifada` | 26 | `indonesian-national-revolution`, `chinese-civil-war` | 7 each |
+| `1948-arab-israeli-war` | 24 | `1982-lebanon-war` | 6 |
+| `gaza-war` | 22 | 41 more umbrellas | 1–5 each |
+
+The Second Sino-Japanese War was taken rather than the two larger ones because it
+is the densest **family whose members answer each other in their own leads**,
+which is the shape batch 67 and batch 68 both found to connect best, and because
+the atlas held exactly one of its children (`marco-polo-bridge-incident`) and so
+had somewhere for the family to attach.
+
+### The five records
+
+| the record | sitelinks | dated | placed at | filed under |
+| --- | --- | --- | --- | --- |
+| `battle-of-shanghai` | 36 | 13 Aug – 26 Nov 1937 | `shanghai` (**written**) | `second-sino-japanese-war` |
+| `battle-of-nanking` | 25 | 1–13 Dec 1937 | **none** (below) | `second-sino-japanese-war` |
+| `battle-of-xuzhou` | 19 | 24 Mar – 1 May 1938 | `xuzhou` (**written**) | `second-sino-japanese-war` |
+| `1938-yellow-river-flood` | 28 | June 1938 | **none** (below) | `second-sino-japanese-war` |
+| `battle-of-wuhan` | 25 | 27 Oct 1938 | `wuhan` (held) | `second-sino-japanese-war` |
+
+Written by the tool's own `--import` with the five qids appended to the seeds
+file's `items`, which is the route batch 67's stand asked the next fires to
+prefer. All five filed themselves from `P361` and the umbrella's own span, none
+is a new umbrella, and **the main count did not move**. Categories came off the
+class table: `war` for the four battles from `Q178561`, **`disaster`** for the
+flood from `Q8068`.
+
+**A9 answered three times and refused twice, and both refusals are A15(6) and the
+class table working.** Shanghai and Xuzhou got new place records from their items'
+own `P276` steps (`Q8686`, `Q57719`), each with its lane derived from its own
+point; Wuhan reused the held `wuhan`. Nanking got none — its own `P625` is the
+city and A9's first step can only *reuse*, its `P276` `Q10906766` has no class
+row, and it has no `P17` at all. The flood got none — its `P276` `Q858536`
+(Central China) has no class row, and its `P17` `Q13426199`, the Republic of
+China, was **refused on A15(6)'s distance clause: the country's point is 1,147 km
+from the nearest point on the event's own chain.** `docs/m67-umbrellas.md` now
+carries the paragraph the two bare records owe.
+
+### The four edges
+
+| from | type | to | confidence | crosses |
+| --- | --- | --- | --- | --- |
+| `marco-polo-bridge-incident` | caused | `battle-of-shanghai` | probable | no |
+| `battle-of-shanghai` | enabled | `battle-of-nanking` | probable | no |
+| `battle-of-xuzhou` | precondition-of | `battle-of-wuhan` | probable | no |
+| `1938-yellow-river-flood` | precondition-of | `battle-of-wuhan` | probable | no |
+
+The first is the **held** record's own cited article, § Consequences: *"The
+heightened tensions of the Marco Polo Bridge incident led directly to full-scale
+war between the Empire of Japan and the Republic of China, with the Battle of
+Beiping-Tianjin at the end of July and the Battle of Shanghai in August."*
+`caused` and not `precondition-of`: "led directly to" is a mechanism the article
+states and not a position it describes. **This is the edge that joins the family
+to the graph**, and it was found by reading the article of the record the atlas
+already had rather than the articles of the ones it was importing — which is
+A13's own method, applied inside a batch.
+
+The second is the Battle of Nanking's lead: *"The Japanese eventually won the
+battle, forcing the Chinese army to withdraw. Capitalizing on their victory, the
+Japanese authorized a campaign to capture Nanjing."* `enabled` and not `caused`:
+the article gives the victory as what made the campaign possible and the decision
+to authorise it as somebody's.
+
+The third is the Battle of Xuzhou's lead: *"It resulted in an eventual victory for
+the Japanese, but they failed to destroy the Chinese army, who managed to retreat
+and regroup to fight later at Wuhan."* The army that fought at Wuhan is the one
+that escaped the encirclement at Xuzhou, so the earlier battle is what the later
+one was fought from.
+
+The fourth is the Battle of Wuhan's § Prelude: *"In an attempt to win more time
+for the preparation of the defense of Wuhan, the Chinese opened up the dikes of
+the Yellow River in Huayuankou, Zhengzhou on 9 June. The flood, now known as the
+1938 Yellow River flood, forced the Japanese to delay their attack on Wuhan."*
+The same article says the flood *"forced the IJA to abandon its plan of attacking
+along the Huai"*. `precondition-of`: the flood did not produce a battle already
+being prepared for; it bought the time the defence needed and set the axis it was
+fought on. `probable` in all four, because the only source the atlas can open is
+the encyclopaedia article (rule 22).
+
+**All four edges are inside `second-sino-japanese-war`**, so A15(11)'s count of
+edges that cross an umbrella is **unmoved at 564** and the edges inside one go
+493 → 497. **The largest component is 716 → 718**: `battle-of-shanghai` and
+`battle-of-nanking` joined it through the Marco Polo Bridge incident, and
+`battle-of-xuzhou`, `1938-yellow-river-flood` and `battle-of-wuhan` are a
+component of three that one more read may join.
+
+### A15(5) refused four and this fire refused a fifth
+
+`verdictFor()` was run on every candidate quote before any edge was written.
+
+- **`marco-polo-bridge-incident → battle-of-shanghai`, from the Battle of Wuhan's
+  § Background** — *"After the Marco Polo Bridge Incident on 7 July 1937, the
+  Imperial Japanese Army launched a full-scale invasion of China… To disrupt the
+  Japanese invasion plans, the Chinese Nationalists decided to engage the Japanese
+  in Shanghai"* — **chronology with no cause stated.**
+- **the same edge, from the Battle of Nanking's § Background** — *"The conflict
+  which would become known as the Second Sino-Japanese War started on July 7,
+  1937, with a skirmish at Marco Polo Bridge… China, however, wanted to avoid a
+  decisive confrontation in the north and so instead opened a second front by
+  attacking Japanese units in Shanghai"* — **names a third event the atlas holds
+  as the cause** (`second-sino-japanese-war`), and A15(5) says it is written from
+  that event or not at all. From the umbrella to its own child is what A14's
+  standing rule forbids until the owner settles C8, so: not at all.
+- **`battle-of-nanking → battle-of-xuzhou`, from the Battle of Xuzhou's
+  § Background** — *"Following the Japanese victory in the Battle of Nanjing, the
+  North China Area Army aimed to advance southward…"* — **chronology.** This is
+  the one refusal that costs something: it is what would have joined the batch's
+  two components into one.
+- **`battle-of-xuzhou → 1938-yellow-river-flood`, from the flood's § Destruction
+  of dikes** — *"After the Chinese were defeated in the Battle of Xuzhou, the
+  Zhengzhou junction of the Beijing-Wuhan Railway was within reach by the
+  Japanese."* — **chronology.**
+- **`marco-polo-bridge-incident → battle-of-shanghai`, from the Battle of
+  Shanghai's own lead** — *"These conflicts finally escalated in July 1937, when
+  the Marco Polo Bridge Incident triggered a full-scale war between the two
+  countries."* — `verdictFor()` says **write**, and this fire refused it anyway.
+  See deviation 1471.
+
+### Deviation 1470 — `statesACause` does not see a marker an adverb has split
+
+The sentence that carries this batch's one connecting edge says *"led directly
+to"*, and `CAUSAL_MARKERS` has `led to`. `statesACause()` reads the sentence as
+stating no cause. **Nothing was lost here**, because the sentence opens with no
+chronology opener and `isChronologyOnly()` therefore never asked; the edge was
+written. But a sentence that opened *"Following the incident… led directly to…"*
+would be refused as chronology while stating a cause in as many words, and the
+same goes for "led eventually to", "resulted eventually in", "caused directly".
+
+**Not fixed here, on purpose.** The module's own words are that *"a class a fire
+can widen is a class nobody can count"*, and A15(5) is a rule the review wrote
+after reading what three curation fires accepted. Widening `CAUSAL_MARKERS` — or
+matching `led\s+\w+\s+to` — is a change to a counted refusal class and belongs to
+the owner or to a review, with the corpus re-counted on both sides of it. Written
+down rather than done.
+
+### Deviation 1471 — A15(5)'s verdict is necessary and not sufficient
+
+*"These conflicts finally escalated in July 1937, when the Marco Polo Bridge
+Incident triggered a full-scale war between the two countries."* — the Battle of
+Shanghai's own lead. For an edge `marco-polo-bridge-incident → battle-of-shanghai`
+it passes every test A15(5) applies: it opens with no chronology opener, it
+carries `triggered`, and the only other event it names is the one being created,
+which is not yet a candidate. `verdictFor()` says **write**.
+
+It says nothing about the Battle of Shanghai. What it states is that the incident
+triggered the war; that the battle was the war's first major engagement is a
+second sentence, and joining the two to reach "the incident caused the battle" is
+**the fire's synthesis and not the article's claim**. A15(5) is a filter over
+quotes and cannot see that the quote's subject is not the edge's `to`; the fire
+has to. Refused here, and the edge that was written in its place came from the
+held record's own article, where the sentence names the battle itself.
+
+**Worth a rule if a review wants one**: a quote must name both ends of the edge it
+is cited for. Every edge this batch wrote does; the refused one does not.
+
+### A15(1) held, and A15(2) ran as the batch's last step
+
+Every record here is a child of a held umbrella that **could be connected**, which
+is A15(1)'s rule; nothing was imported that no edge reaches. `node
+tools/cache-evidence.mjs --fill`: **2,607 `wikipedia-en` citations on active
+records, 2,534 on disk at the revision cited, 73 unholdable for the reason A14(3)
+settles, 0 missing.** `tests/a15-cache.test.mjs` passes.
+
+| | after batch 68 | after batch 69 |
+| --- | --- | --- |
+| corpus | 1,268 active | **1,273** (+5 imported) |
+| **main** | 235 | **235**, and it has never risen |
+| filed | 1,033 | **1,038** |
+| active edges | 1,057 | **1,061** |
+| **largest connected component** | 716 | **718** |
+| second component | 14 | 14, the Thirty Years' War |
+| components | 392 | **393** |
+| **edges that cross an umbrella (A15(11))** | 564, 493 inside one | **564**, 497 inside one |
+| events with no edge at all | 309 | **309** |
+| place records | 735, 733 active | **737, 735 active** (+2 written) |
+| validator | 0 errors, 600 warnings | **0 errors, 600 warnings** |
+| per lane, active | Europe 553, Americas 342, Asia 186, Africa 187 | Europe 553, Americas 342, **Asia 191**, Africa 187 |
+| per lane, main | Europe 85, Asia 63, Americas 56, Africa 31 | unmoved |
+
+## Where the run stands after batch 69, for the fire that picks it up
+
+*29 September, the fire that claimed at 21:07Z. **An import fire**, the third of
+the day: today's curation section and all thirteen A15 sections were already in
+this file, so nothing was owed before the batch. **Five records, two places, four
+edges, the largest component moved for the first time since batch 64, Asia's wide
+screen run at last, and two deviations that are both questions about A15(5)
+rather than faults in the data.***
+
+**What is open, in the order a fire should weigh it:**
+
+- **A10's order of need has turned over again: Africa is now 187 against Asia's
+  191, so the next import batch in this lane is Africa's.** The wide screen for
+  Africa is in the batch 68 section above and is still good — `second-boer-war`
+  has **24** filable children and the atlas holds eight of its battles,
+  `yom-kippur-war` has 17. **Asia's screen is now in this file too** (the batch 69
+  section), so neither lane needs a sweep before its next batch: `war-in-afghanistan-2001-2021`
+  **58**, `vietnam-war` **52**, `second-sino-japanese-war` **39** left of 44,
+  `iran-iraq-war` **43**, `korean-war` 33. Both screens were run at 5 sitelinks
+  with the class table and the umbrella's own span applied before any article was
+  opened, and neither needs re-running to be used.
+- **The method that joined this batch to the graph is worth repeating.** Three
+  batches running, the imported records' own articles gave edges only to each
+  other, and the edge that reached the 716 came from **the article of the record
+  the atlas already held** — `marco-polo-bridge-incident`'s own § Consequences
+  names the Battle of Shanghai as one of the two engagements it led directly to.
+  That is A13's method applied inside an import batch, and it is what the Boer
+  family of batch 68 never got: **its component of nine is still not joined**, and
+  the Siege of Kimberley's lead naming the Jameson Raid is still where to look.
+  This batch leaves a second island, of three — `battle-of-xuzhou`,
+  `1938-yellow-river-flood` and `battle-of-wuhan` — and one refused quote
+  (Xuzhou's § Background on the Battle of Nanjing) is all that stands between it
+  and the 718.
+- **Five class rows would place two records this fire could not place, and are
+  the cheapest fix on the list.** `Q2225003` and `Q19953632` (Nanking's `P276`),
+  `Q15642541` (Central China), and still `Q191093`, `Q188689` and `Q217327` from
+  batches 67 and 68. Each is one row in `data/imports/wikidata-seeds.json` →
+  `classes` and a re-run; `battle-of-nanking` and `1938-yellow-river-flood` would
+  stop being bare.
+- **`battle-of-wuhan` is dated 27 October 1938 and nothing else, and no rule as
+  written can widen it.** Q2038907 carries only a `P585`, its article's first
+  sentence states no dates and its title carries no year, so A7 and A15(4) both
+  say the interval stays. The article's own infobox says 11 June – 27 October
+  1938. **Reading an infobox is not in A7** — that is a line for the owner, and it
+  would reach a good many imported one-day records besides this one.
+- **Deviations 1470 and 1471 are both about A15(5) and both are for a review, not
+  for a fire.** 1470: `statesACause()` does not see `led directly to`, because
+  `CAUSAL_MARKERS` has `led to` and an adverb splits it — nothing was lost here,
+  but a chronology-opening sentence carrying it would be refused while stating a
+  cause in as many words. 1471: the refusal class is necessary and not sufficient
+  — the Battle of Shanghai's lead passes `verdictFor()` for an edge it says
+  nothing about, because the quote's subject is not the edge's `to` and A15(5)
+  cannot see that. A rule that a quote must name **both** ends would close it, and
+  every edge this batch wrote already satisfies it.
+- **Deviation 1469 is still a question for the owner, not for a fire** — the 1881
+  French conquest of Tunisia against a Scramble for Africa dated 1885–1914, and
+  the 27 of 189 Africa candidates that fail for the same reason.
+- **Deviation 1467's promise is still unmeasured.** The hyphenated-compound fix
+  landed in batch 67 and no curation fire has run since. **The next curation fire
+  — the first after 02:00Z on 30 September — owns that count**, and it will also
+  be the first to read the five new records' articles against the rest of the
+  atlas under A13.
+- **A15 is done and no fire owes it again.** A14 likewise.
+- **Unchanged from batch 68's stand:** the two `review.html` lines worth twelve
+  Asia candidates (`chinese-civil-war`, `turkish-war-of-independence`);
+  `nigerian-civil-war` as a two-node island; the two display faults of deviation
+  1461; A15(12)'s 177 uncategorised events; the EEC's closing year and
+  `operation-sutton`'s missing day; the four variants of the
+  `docs/m53-polities.md` paragraph. `tests/m53.test.mjs` passes on this tree and
+  §4.1 needed no retake.
+- **The network was in good repair and cheap.** About thirty requests: seven
+  SPARQL sweeps (four `P361` screen blocks over 184 Asia qids in `VALUES` blocks
+  of 60, two label lookups, one claims lookup), eight article reads through
+  `rest.php/v1/page`, twelve through the import, and one `cache-evidence` title
+  call — one in flight every 400 to 500 ms and **no 429 at any point** from WDQS
+  or the REST API. The one refusal was the action API's `wbgetentities`, which
+  answered *"You are making too many requests to the API"* on a single
+  five-item call; SPARQL was used for the same question instead and never
+  complained. Deviation 1466 holds: `rest.php/v1/page` answered every time.
+- **Deviation numbers: take the next above 1471.** This fire wrote **1470** (the
+  causal marker an adverb splits) and **1471** (A15(5)'s verdict is necessary and
+  not sufficient).
+
+**Both suites are green on this fire's tree: 2,222 tests, nothing skipped** —
+**1,909 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. **No test was added**: neither deviation is code,
+and the one thing this fire wrote outside `data/` is the paragraph
+`docs/m67-umbrellas.md` owes its two bare records — which is what
+`tests/m67.test.mjs`'s *"a child that names neither is one the measurement argues
+for"* asks for, and it failed until that paragraph was there. The only other
+failure on the way was the index, stale between the records commit and the
+rebuild, which is deviation 798's order working as intended.
+
+**The check on the head this stand was written against is run 2042** of
+`validate.yml`, commit `66cf566c`; records validated in three seconds and the
+test step was still running when this paragraph was written. Run 2040 (the
+records commit) and 2041 (the index commit) were both cancelled by the next push,
+which is deviation 1258's chain and costs nothing.
