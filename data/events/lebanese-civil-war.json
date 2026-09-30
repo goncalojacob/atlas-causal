@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-29",
+  "revised": "2026-09-30",
   "review": {
     "status": "draft",
     "flags": [
@@ -68,6 +68,7 @@
   },
   "place": "lebanon-q822",
   "region": "asia",
+  "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": [
     {

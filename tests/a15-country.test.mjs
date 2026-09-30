@@ -10,7 +10,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { countryRefusal, COUNTRY_DISTANCE_KM } from '../tools/import/wikidata.mjs';
+import { countryRefusal, COUNTRY_DISTANCE_KM, countryGateApplies, chainPointsOf, refusedPlaces, pointOfPlace } from '../tools/import/wikidata.mjs';
 import { haversineKm } from '../src/util/geo.js';
 
 const MADRID = { lon: -3.70, lat: 40.42 };
@@ -94,4 +94,102 @@ test('the order of the three is the order of what is cheapest to be sure of', ()
   });
   assert.match(why, /inception/);
   assert.equal(countryRefusal({ when: { start: 1900, end: 1900 }, country: null }), 'the item names no country with a point');
+});
+
+// --- deviation 1476: which candidates the gate runs on ---------------------
+
+test('the gate runs on a country however the chain reached it', () => {
+  // What it always did: `P17` named it.
+  assert.equal(countryGateApplies({ qid: 'Q258', countries: new Set(['Q258']) }), true);
+  // Deviation 1476: `P276` named it, and its own class says it is a country.
+  // This is the case the gate was written for and walked straight past.
+  assert.equal(countryGateApplies({ qid: 'Q1033', countries: new Set(), precision: 'country' }), true);
+  // A city is a city whichever property reached it.
+  assert.equal(countryGateApplies({ qid: 'Q90', countries: new Set(), precision: 'city' }), false);
+  // A class the table gives no precision says nothing, so the gate stays off:
+  // refusing on silence would refuse every fort and every battlefield.
+  assert.equal(countryGateApplies({ qid: 'Q90', countries: new Set(), precision: null }), false);
+  // A list is as good as a set, because a caller has one or the other.
+  assert.equal(countryGateApplies({ qid: 'Q29', countries: ['Q29'] }), true);
+  assert.equal(countryGateApplies({ qid: 'Q29', countries: [] }), false);
+  assert.equal(countryGateApplies({}), false);
+});
+
+// --- deviation 1477: the chain the distance is measured against -------------
+
+test("the chain is the event's own parents and children, not the item's", () => {
+  const points = new Map([
+    ['cairo', { lon: 31.24, lat: 30.04 }],
+    ['suez', { lon: 32.53, lat: 29.97 }],
+  ]);
+  const pointOf = (id) => points.get(id) ?? null;
+  assert.deepEqual(
+    chainPointsOf([{ place: 'cairo' }, { place: 'suez' }], pointOf),
+    [{ lon: 31.24, lat: 30.04 }, { lon: 32.53, lat: 29.97 }],
+  );
+  // A placeless parent contributes nothing, and neither does one whose place
+  // the atlas does not hold: the test measures what is there.
+  assert.deepEqual(chainPointsOf([{ place: null }, { place: 'nowhere' }, { place: 'cairo' }], pointOf),
+    [{ lon: 31.24, lat: 30.04 }]);
+  // Empty is a real answer and not a failure: an event whose whole chain is
+  // placeless is one this half of the gate cannot speak about.
+  assert.deepEqual(chainPointsOf([], pointOf), []);
+  assert.deepEqual(chainPointsOf(null, pointOf), []);
+
+  // And the reason 1477 matters, in three assertions. A container the item is
+  // filed inside — its `P276` or `P131` — sits in the very country being
+  // tested, so its point is under 1,000 km from that country's centroid by
+  // construction and the third refusal can never fire. Toledo for Spain:
+  const toledo = { lon: -4.03, lat: 39.86 };
+  const when = { start: 1810, end: 1821 };
+  assert.equal(countryRefusal({ when, country: { point: MADRID }, chainPoints: [toledo] }), null,
+    'a container inside the country always passes it, which is why containers are not anchors');
+  // The event's own point is the opposite case and the strongest anchor there
+  // is: it is what refuses Madrid for a war in Mexico.
+  assert.match(countryRefusal({ when, country: { point: MADRID }, chainPoints: [MEXICO_CITY] }),
+    /km from the nearest point/);
+  // And a container among the anchors takes the refusal away again, which is
+  // the whole of the defect: the minimum is what the gate measures.
+  assert.equal(countryRefusal({ when, country: { point: MADRID }, chainPoints: [MEXICO_CITY, toledo] }), null);
+});
+
+// --- the refusals already on disk ------------------------------------------
+
+test("a record's own note says what A15(6) has already refused for it", () => {
+  const record = {
+    place: null,
+    review: { note: "A15(6): the place was german-east-africa-q153963, from the item's P17, and it is refused because the country's point is 1056 km from the nearest point on the event's own chain. The lane is unchanged." },
+  };
+  assert.deepEqual([...refusedPlaces(record)], ['german-east-africa-q153963']);
+
+  // A gate that passed refused nothing.
+  assert.equal(refusedPlaces({ review: { note: "A15(6)'s gate passes: inception 1960, one country, the chain's own point." } }).size, 0);
+  assert.equal(refusedPlaces({}).size, 0);
+  assert.equal(refusedPlaces({ review: { note: null } }).size, 0);
+
+  // The 1952 Egyptian revolution: refused as the item's P17 country in one
+  // sentence, placed there through its P276 in the next. The place the record
+  // carries is a fact and never a candidate, so the note does not take it away.
+  const egypt = {
+    place: 'kingdom-of-egypt',
+    review: { note: "A15(6): the place was kingdom-of-egypt, from the item's P17, and it is refused because the item names 2 countries, so it names no one country. The lane is unchanged. A9: placed at kingdom-of-egypt from the item's P276, a polity whose own dates cover this event; the earlier refusal was of the P17 country." },
+  };
+  assert.equal(refusedPlaces(egypt).size, 0);
+
+  // Two refusals on one record are two.
+  const two = { review: { note: "A15(6): the place was spain-q29, from the item's P17, and it is refused because the country's inception (1715) is after the event ended (1641). A15(6): the place was france-q142, from the item's P17, and it is refused because the item names 3 countries, so it names no one country." } };
+  assert.deepEqual([...refusedPlaces(two)].sort(), ['france-q142', 'spain-q29']);
+});
+
+test('where a place record this atlas holds stands', () => {
+  const entries = [
+    { record: { id: 'cairo', kind: 'place', where: { lon: 31.24, lat: 30.04, precision: 'city' } } },
+    { record: { id: 'cairo', kind: 'event' } },
+    { record: { id: 'nowhere', kind: 'place' } },
+  ];
+  assert.deepEqual(pointOfPlace(entries, 'cairo'), { lon: 31.24, lat: 30.04 });
+  // A place with no point, an id nothing holds, and no entries at all.
+  assert.equal(pointOfPlace(entries, 'nowhere'), null);
+  assert.equal(pointOfPlace(entries, 'lisbon'), null);
+  assert.equal(pointOfPlace(null, 'cairo'), null);
 });

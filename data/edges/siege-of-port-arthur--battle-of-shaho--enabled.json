@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-port-arthur--battle-of-shaho--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-72"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mukden\", revision 1375786749, § Background"
+    }
+  ],
+  "from": "siege-of-port-arthur",
+  "to": "battle-of-shaho",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "A third article states this one: the Battle of Mukden’s background explains why the Russians were in a condition to counterattack at the Sha Ho at all. \"However, in part due to the diversion of much manpower and most of the heavy artillery to the simultaneously ongoing Siege of Port Arthur, the Japanese had failed to take advantage of their victory at Liaoyang, allowing the Russians to retreat in good order and to soon launch a counterattack during the Battle of Shaho\". `enabled`: the siege was not aimed at the Sha Ho and did nothing to bring the battle about, it took away the men and the guns with which Liaoyang would have been finished. The atlas already reads Liaoyang into Shaho as a `reacted-to`, which is the victory the same sentence says was not taken advantage of; this is the reason the sentence gives for that, and the edge is written from the event the quote names as the cause rather than from the article it was read in. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

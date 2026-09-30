@@ -2303,6 +2303,89 @@ The owner's list in full is in the history file. Still waiting:
 
 In full in the history file. The ones that decide something:
 
+- **M42's Africa and Asia lane cannot grow, and one of three amendments has to
+  move. Measured on 30 September, batch 71; the case is in
+  `docs/m42-pool.md`.** Ninety-eight candidates were screened against their own
+  Wikipedia articles read in full, and **every one of them is refused by A15(1),
+  A14(6) or A6**:
+  **A15(1)** says a batch imports only what it can connect, and the `P361`
+  children of a held war connect to nothing — across six umbrellas
+  (`yom-kippur-war`, `italo-turkish-war`, `war-in-somalia`, `war-of-attrition`,
+  `second-italo-ethiopian-war`, `arab-spring`) **56 filable children name just
+  two held events between them**, their own parent and the war before it, with
+  one causal sentence in the lot that argues for an edge the atlas already holds.
+  Deviation 1473's Boer island is not a fact about the Boers: it is what a
+  tactical battle article is.
+  **A14(6)** refuses what *does* connect, because in this lane the event that
+  caused a war is an event inside it — `Operation Gibraltar`'s own article says
+  *"the covert infiltration was a complete failure that ultimately led to the
+  Indo-Pakistani War of 1965"* and its `P361` is that war. Four fires in a row
+  have now had their best causal sentence refused by this rule, which is C8.
+  **A6** refuses the rest, because an event that connects and is nobody's child
+  has no held umbrella that fits, so importing it raises the main count — which
+  is where `Jewish exodus from the Muslim world` (two cited edges, from
+  `suez-crisis` and `six-day-war`) and `Decline and modernization of the Ottoman
+  Empire` both stand today.
+  **The fire's recommendation is A6**, because relaxing it does not touch what
+  A6 is for: A6 exists so that a period historians name is an umbrella, not so
+  that the corpus can never gain a top-level event. Africa and Asia stand at 208
+  and 211 against A10's 303 and **no fire can move either number** until this is
+  answered. A fire reading this should not spend another batch on a held war's
+  `P361` children, and should not file an event under its grandparent to get
+  round A14(6).
+- **And the vein that was supposed to be the way round it has now been measured
+  too, on 30 September, 09:07Z.** If a batch cannot import, a fire can still
+  write edges between events already held — so one read the **bodies of all 407
+  Africa and Asia articles** rather than the leads the cache holds. **775 unheld
+  non-parent pairs are named at all, 132 by a sentence that states a cause, and
+  none of them was writable.** Two rules nobody had counted take 88 of the 132
+  between them (deviation 1485): **rule 4, the arrow of time, refuses 74**,
+  because the true thing an article usually says about two held events is *this
+  later event changed the course of that earlier, longer one* — `fall of Kabul`
+  on an insurgency that began in 2004, the Ogaden War on an Eritrean war sixteen
+  years older; and **`m42-filing`'s rule that an umbrella is not a claim refuses
+  14**, which is why `scramble-for-africa` stands at degree zero and always will.
+  Four edges were written, pushed and withdrawn on those two rules, and the
+  corpus is byte-identical to where batch 71 left it. **So edges between records
+  already held are not a substitute for imports at any useful rate**, and the
+  question above is the only thing that moves this lane.
+- **The shape that sweep left standing does yield, at a small rate, measured on
+  30 September at 12:15Z.** Batch 72 took the 09:07Z stand's conclusion — that
+  the only writable pair is **two tactical records of one war** — as the selector
+  rather than as a consolation, and read the **149 members of seven families**
+  this lane owns at the revision the atlas already cites for each. **Six edges
+  written and kept**, the first in three fires: the relief of Kimberley into
+  Paardeberg, three Ladysmith relief attempts into the Tugela Heights, Port
+  Arthur into Shaho and the Hitachi Maru incident into the battle off Ulsan. 55
+  pairs named, 49 refused — 21 of them a war naming its own child, which A14(6)
+  forbids. **All six are inside one umbrella and none crosses one, and the
+  largest component does not move**, because every record they touch was already
+  in the 740: a family sweep densifies the graph and joins nothing to it. The
+  rate is the point — **six edges for 149 articles against zero for 407** — and
+  it is still not a substitute for imports. Deviations 1486 and 1487.
+- **Three shapes of sweep measured, and the reason none of them joins anything.**
+  Batch 73, on 30 September at 15:07Z, re-ran the corpus sweep the 09:07Z fire
+  left unfinished — **405 articles, with the four refusal classes applied as the
+  sweep matched rather than after it**, which turned 301 raw candidates into 59
+  pairs to read where that fire had read 132 by hand (deviation 1490). **Two
+  edges written**: the First Sino-Japanese War into the Xinhai Revolution, from
+  the war's own lead, and the COVID-19 pandemic into the Tigray war, from its
+  § Lead-up to the war. It also read the **four families this lane has left**
+  (36 members) and got **fourteen candidates, every one a parent–child pair**
+  A14(6) forbids — the sibling shape batch 72 measured is spent here (deviation
+  1488) — and the **35 isolated Africa or Asia records with an article**, read
+  against the events they share an actor or a place with, for two more of the
+  same. **The finding is not the two edges.** Across three fires and three
+  shapes, eight edges have been written and **not one component has been joined
+  to another**, because every end was already inside the 740: a record whose
+  article states a cause is a record other articles name, so **the 317 events
+  with no edge are isolated because nothing names them, and no sweep over
+  articles will reach them** (deviation 1489). A fire should not budget one as a
+  way of growing the graph. Batch 73 also **closed A14(4)'s open question on
+  `six-day-war --> yom-kippur-war`**: the better sentence that retraction hoped
+  for was looked for and is not there, and the causal path between those ends is
+  already held through `war-of-attrition`.
+
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
   `allied-with` with a note — a substitution, reported and never adopted. The
@@ -23899,3 +23982,9 @@ M42 started 2026-09-29T15:26:03Z by scheduled
 M42 started 2026-09-29T18:07:08Z by scheduled
 M42b started 2026-09-29T21:38:18Z by scheduled
 M42 started 2026-09-29T21:07:23Z by scheduled
+M42 started 2026-09-30T00:07:28Z by scheduled
+M42 started 2026-09-30T03:07:00Z by scheduled
+M42 started 2026-09-30T06:09:24Z by scheduled
+M42 started 2026-09-30T09:07:23Z by scheduled
+M42 started 2026-09-30T12:16:58Z by scheduled
+M42 started 2026-09-30T15:07:56Z by scheduled

@@ -15,6 +15,7 @@ import assert from 'node:assert/strict';
 import {
   stripHeadings, fold, tidy, capitalsOf, opensWithChronology, statesACause,
   isChronologyOnly, usableName, mentions, namesHeldEvents, verdictFor,
+  undisambiguated, yearsApart,
 } from '../tools/import/chronology.mjs';
 
 test('a sentence that opens on the order of events and states no cause is refused', () => {
@@ -135,4 +136,210 @@ test('the third event a quote names is what the edge must be written from', () =
   });
   assert.equal(refused.why, 'chronology with no cause stated');
   assert.deepEqual(refused.reattribute, []);
+});
+
+// --- deviation 1481: the disambiguator the prose never writes ---------------
+
+test("a record's own title may carry a disambiguator no article uses", () => {
+  assert.equal(undisambiguated('Operation Badr (1973)'), 'Operation Badr');
+  assert.equal(undisambiguated('Afghan Civil War (1992–1996)'), 'Afghan Civil War');
+  assert.equal(undisambiguated('Arusha Accords (Rwanda)'), 'Arusha Accords');
+  // Only trailing, and only where a usable name is left behind.
+  assert.equal(undisambiguated('Battle of Belmont'), null);
+  assert.equal(undisambiguated('(1899)'), null);
+  assert.equal(undisambiguated('Action of 9 February 1799 (South Africa)'), 'Action of 9 February 1799');
+  assert.equal(undisambiguated(null), null);
+  // A bracket in the middle is not a disambiguator.
+  assert.equal(undisambiguated('Operation (Badr) 1973'), null);
+});
+
+test('the bare name is what an article writes, so it is what is looked for', () => {
+  const badr = [{ id: 'operation-badr-1973', names: ['Operation Badr (1973)'] }];
+  const text = 'On October 6, 1973, Egypt launched Operation Badr, which started the Yom Kippur War.';
+  // Before 1481 this found nothing at all, and 159 of 1,333 active events were
+  // in the same position.
+  assert.deepEqual(namesHeldEvents(text, badr).map((n) => n.id), ['operation-badr-1973']);
+  // The record's own name is what is reported, not the bare form: a note quoting
+  // this says which record it means.
+  assert.equal(namesHeldEvents(text, badr)[0].name, 'Operation Badr (1973)');
+  // And a full name still matches as a full name.
+  assert.deepEqual(
+    namesHeldEvents('the Afghan Civil War (1992–1996) began that spring',
+      [{ id: 'a', names: ['Afghan Civil War (1992–1996)'] }]).map((n) => n.id),
+    ['a'],
+  );
+});
+
+// --- deviation 1480: two homonyms and the years that tell them apart --------
+
+test('how far apart two spans are, and zero for spans that touch', () => {
+  assert.equal(yearsApart({ start: 1631, end: 1631 }, { start: 1642, end: 1642 }), 11);
+  assert.equal(yearsApart({ start: 1642, end: 1642 }, { start: 1631, end: 1631 }), 11);
+  // Overlapping, containing and abutting spans are all nearness zero.
+  assert.equal(yearsApart({ start: 1914, end: 1918 }, { start: 1917, end: 1917 }), 0);
+  assert.equal(yearsApart({ start: 1939, end: 1945 }, { start: 1939, end: 1945 }), 0);
+  // An open end is read as the start, and a span with no start says nothing.
+  assert.equal(yearsApart({ start: 1973, end: null }, { start: 1973, end: null }), 0);
+  assert.equal(yearsApart(null, { start: 1900, end: 1900 }), null);
+  assert.equal(yearsApart({ start: null }, { start: 1900 }), null);
+});
+
+test('the same bare name naming two held events keeps the one the years fit', () => {
+  // The strip of 1481 makes these two homonyms, which is exactly what 1480
+  // warned about: the atlas holds both Breitenfelds.
+  const both = [
+    { id: 'battle-of-breitenfeld-1631', names: ['Battle of Breitenfeld (1631)'], when: { start: 1631, end: 1631 } },
+    { id: 'battle-of-breitenfeld-1642', names: ['Battle of Breitenfeld (1642)'], when: { start: 1642, end: 1642 } },
+  ];
+  const text = 'the army withdrew towards the field of the Battle of Breitenfeld';
+  // With no span to read, both are reported: the guard never guesses.
+  assert.equal(namesHeldEvents(text, both).length, 2);
+  // An article about 1642 means the 1642 one.
+  assert.deepEqual(namesHeldEvents(text, both, { when: { start: 1642, end: 1642 } }).map((n) => n.id),
+    ['battle-of-breitenfeld-1642']);
+  assert.deepEqual(namesHeldEvents(text, both, { when: { start: 1631, end: 1632 } }).map((n) => n.id),
+    ['battle-of-breitenfeld-1631']);
+
+  // And the guard is narrow on purpose. A candidate nothing else answers to is
+  // never dropped for its date, because an article about 1642 may name an event
+  // of 1631 and that edge is what this atlas is for.
+  const one = [{ id: 'thirty-years-war', names: ['Thirty Years War'], when: { start: 1618, end: 1648 } }];
+  assert.deepEqual(
+    namesHeldEvents('a consequence of the Thirty Years War', one, { when: { start: 1789, end: 1799 } })
+      .map((n) => n.id),
+    ['thirty-years-war'],
+  );
+  // Two homonyms where one carries no span at all: nothing is thrown away.
+  const partial = [
+    { id: 'a', names: ['Siege of Brieg (1741)'], when: { start: 1741, end: 1741 } },
+    { id: 'b', names: ['Siege of Brieg (1642)'], when: null },
+  ];
+  assert.equal(namesHeldEvents('the Siege of Brieg', partial, { when: { start: 1642, end: 1642 } }).length, 2);
+});
+
+// --- deviation 1483: the article naming itself, and the twin that took it ---
+
+test("a bare name an excluded end also answers to is that end naming itself", () => {
+  // `siege-of-prague-1744`'s own lead writes *"The Siege of Prague resulted in
+  // the surrender of the Habsburg Austrian garrison"* — itself, by the bare
+  // name A12(5) took off it. The subject is excluded before the guard of 1480
+  // groups, so its twin was alone in the group and absorbed the match. 26 of
+  // the 54 pairs the first scan with 1481's widening turned up were this, and
+  // not one of them was a real reference.
+  const both = [
+    { id: 'siege-of-prague-1742', names: ['Siege of Prague (1742)'], when: { start: 1742, end: 1742 } },
+    { id: 'siege-of-prague-1744', names: ['Siege of Prague (1744)'], when: { start: 1744, end: 1744 } },
+  ];
+  const lead = 'The Siege of Prague resulted in the surrender of the Habsburg Austrian garrison of Prague'
+    + ' during the Bohemian campaign of 1744 in the War of the Austrian Succession.';
+  assert.deepEqual(
+    namesHeldEvents(lead, both, { exclude: ['siege-of-prague-1744'], when: { start: 1744, end: 1744 } })
+      .map((n) => n.id),
+    [],
+  );
+  // Both ends of an edge are excluded, and both close the bare name they answer
+  // to: a quote about A and B naming "the Treaty of Paris" is naming one of them.
+  const three = [
+    { id: 'treaty-of-paris-1783', names: ['Treaty of Paris (1783)'], when: { start: 1783, end: 1783 } },
+    { id: 'treaty-of-paris-1898', names: ['Treaty of Paris (1898)'], when: { start: 1898, end: 1898 } },
+    { id: 'spanish-american-war', names: ['Spanish–American War'], when: { start: 1898, end: 1898 } },
+  ];
+  assert.deepEqual(
+    namesHeldEvents('the Treaty of Paris ended the Spanish–American War', three,
+      { exclude: ['treaty-of-paris-1898'] }).map((n) => n.id),
+    ['spanish-american-war'],
+  );
+});
+
+test("an excluded end whose own name is already the bare form closes it too", () => {
+  // `gaza-war`'s title carries no disambiguator at all, so the first shape of
+  // 1483 — the stripped name of an excluded end — claimed nothing for it, and
+  // *"The Gaza war is an armed conflict in the Gaza Strip and Israel"*, its own
+  // first sentence, was read as naming `gaza-war-2008-2009`. What an excluded
+  // end answers to is its names as they stand as well as stripped.
+  const both = [
+    { id: 'gaza-war', names: ['Gaza war'], when: { start: 2023, end: null } },
+    { id: 'gaza-war-2008-2009', names: ['Gaza War (2008\u20132009)'], when: { start: 2008, end: 2009 } },
+  ];
+  const lead = 'The Gaza war is an armed conflict in the Gaza Strip and Israel.';
+  assert.deepEqual(
+    namesHeldEvents(lead, both, { exclude: ['gaza-war'], when: { start: 2023, end: null } }).map((n) => n.id),
+    [],
+  );
+  // And the 2008 war written out in full is still the 2008 war.
+  assert.deepEqual(
+    namesHeldEvents('a scale not seen since the Gaza War (2008\u20132009)', both,
+      { exclude: ['gaza-war'], when: { start: 2023, end: null } }).map((n) => n.id),
+    ['gaza-war-2008-2009'],
+  );
+});
+
+test('an excluded end closes only the bare route, and only its own name', () => {
+  // A full name is unambiguous, so an excluded end never closes it: the atlas
+  // holds both Breitenfelds and an article about 1642 that writes the 1631 one
+  // out in full is naming the 1631 one.
+  const both = [
+    { id: 'battle-of-breitenfeld-1631', names: ['Battle of Breitenfeld (1631)'], when: { start: 1631, end: 1631 } },
+    { id: 'battle-of-breitenfeld-1642', names: ['Battle of Breitenfeld (1642)'], when: { start: 1642, end: 1642 } },
+  ];
+  assert.deepEqual(
+    namesHeldEvents('a rout on the field of the Battle of Breitenfeld (1631)', both,
+      { exclude: ['battle-of-breitenfeld-1642'], when: { start: 1642, end: 1642 } }).map((n) => n.id),
+    ['battle-of-breitenfeld-1631'],
+  );
+  // And an excluded end whose name strips to something else closes nothing.
+  const badr = [{ id: 'operation-badr-1973', names: ['Operation Badr (1973)'], when: { start: 1973, end: 1973 } }];
+  assert.deepEqual(
+    namesHeldEvents('Egypt launched Operation Badr', [...badr,
+      { id: 'yom-kippur-war', names: ['Yom Kippur War'], when: { start: 1973, end: 1973 } }],
+    { exclude: ['yom-kippur-war'], when: { start: 1973, end: 1973 } }).map((n) => n.id),
+    ['operation-badr-1973'],
+  );
+});
+
+// --- deviation 1484: the name written out in full, and the twin beside it ---
+
+test('a name the text writes out in full closes the bare route for its twin', () => {
+  // `raid-on-chignecto-1696`'s lead reads *"in retaliation for the French and
+  // Indian Siege of Pemaquid (1696)"* — the disambiguator and all — and the
+  // atlas holds `siege-of-pemaquid-1689` too. The full hit and the bare hit are
+  // filed under different keys, so 1480's guard never saw them as homonyms and
+  // the 1689 siege was reported for a sentence naming the 1696 one.
+  const both = [
+    { id: 'siege-of-pemaquid-1689', names: ['Siege of Pemaquid (1689)'], when: { start: 1689, end: 1689 } },
+    { id: 'siege-of-pemaquid-1696', names: ['Siege of Pemaquid (1696)'], when: { start: 1696, end: 1696 } },
+  ];
+  const lead = 'The raid was in retaliation for the French and Indian Siege of Pemaquid (1696).';
+  assert.deepEqual(
+    namesHeldEvents(lead, both, { when: { start: 1696, end: 1696 } }).map((n) => n.id),
+    ['siege-of-pemaquid-1696'],
+  );
+  // It is the full name that closes the bare one and never the other way round,
+  // so it holds whichever order the candidates arrive in.
+  assert.deepEqual(
+    namesHeldEvents(lead, [...both].reverse(), { when: { start: 1696, end: 1696 } }).map((n) => n.id),
+    ['siege-of-pemaquid-1696'],
+  );
+  // And with no span to read at all, which is where 1480's guard stands down.
+  assert.deepEqual(namesHeldEvents(lead, both).map((n) => n.id), ['siege-of-pemaquid-1696']);
+});
+
+test('two names written out in full are two names, and both are reported', () => {
+  // The guard closes the bare route and nothing else: an article that writes
+  // both wars out is naming both of them.
+  const both = [
+    { id: 'anglo-french-war-1627-1629', names: ['Anglo-French War (1627–1629)'], when: { start: 1627, end: 1629 } },
+    { id: 'anglo-french-war-1778-1783', names: ['Anglo-French War (1778–1783)'], when: { start: 1778, end: 1783 } },
+  ];
+  const text = 'the Anglo-French War (1627–1629) was not the Anglo-French War (1778–1783)';
+  assert.deepEqual(
+    namesHeldEvents(text, both, { when: { start: 1779, end: 1779 } }).map((n) => n.id),
+    ['anglo-french-war-1627-1629', 'anglo-french-war-1778-1783'],
+  );
+  // One in full and the other only bare: the full one is what was meant.
+  assert.deepEqual(
+    namesHeldEvents('a part of the wider Anglo-French War (1778–1783)', both,
+      { when: { start: 1779, end: 1779 } }).map((n) => n.id),
+    ['anglo-french-war-1778-1783'],
+  );
 });
