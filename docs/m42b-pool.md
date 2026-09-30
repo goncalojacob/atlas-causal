@@ -13630,7 +13630,7 @@ the americas' 18th century at 57 active, where a vein with a **held anchor**
 was found by asking Wikidata a question this lane had not asked before: not
 "what is in this century and lane", but *"which unheld item stands in a `P155`,
 `P156`, `P828`, `P1542` or `P361` relation to an event this atlas already
-holds"*. That query is deviation 1200 below and it returned 298 candidates,
+holds"*. That query is deviation 1359 below and it returned 298 candidates,
 almost all of them the American Revolutionary War's own `P361` children — the
 land war in North America, of which this atlas held almost nothing, its 39
 held children being naval and Caribbean.
@@ -13785,7 +13785,15 @@ revision, because the held record at the anchor end cites it — which is the
 second batch running to find that **the revision ids this lane writes are
 holding**.
 
-### Deviation 1200 — ask Wikidata for the neighbours of what you hold, not for a century
+### Deviation 1359 — ask Wikidata for the neighbours of what you hold, not for a century
+
+**Numbered 1359 and 1360, not 1200 and 1201.** The commit that first pushed
+this note gave them 1200 and 1201, which this lane spent on its own third and
+fourth batches — the main count rising by two, and `italian-peninsula` written
+as a place and withdrawn. The numbers below are the corrected ones and the
+commit message that says otherwise is wrong; the sequence runs from 1200 and
+this lane had reached 1358.
+
 
 Every sweep this lane has run until now asked *"what does Wikidata have in this
 lane and this century"*, and A5 then threw most of the answer away, because a
@@ -13814,7 +13822,7 @@ are almost all naval and Caribbean. That is the largest single filable vein
 this lane has found, it needs no new umbrella and no main event, and it is
 open.
 
-### Deviation 1201 — `namesHeldEvents()` cannot see a fort called by its city
+### Deviation 1360 — `namesHeldEvents()` cannot see a fort called by its city
 
 The sentence that should have anchored `battle-of-fort-charlotte` is *"forcing
 the surrender of Baton Rouge, Natchez and **Mobile**"*. The record's title is
@@ -13893,7 +13901,7 @@ and about 250 of them are one vein — the land war of the American Revolution.*
    211 and 211 against A10's 303 and **no fire in either lane can move either
    number until the owner answers.** Do not spend a fire re-establishing this.
 2. **The open vein is the land war of the American Revolution, and it is large.**
-   Deviation 1200's query returned about 250 unheld `P361` children of
+   Deviation 1359's query returned about 250 unheld `P361` children of
    `american-revolutionary-war`, every one of them americas and 1775–1783, every
    one filable under a held umbrella with no main event and no new umbrella
    needed. Start where the held corpus can be reached: **`battle-of-baton-rouge-1779`
@@ -13914,7 +13922,7 @@ and about 250 of them are one vein — the land war of the American Revolution.*
    reason is A9: the item has no `P625`, no `P276`, no `P131` and no `P17`, so
    an umbrella made from it would carry no place and no lane. A fire that wants
    it should decide that question first rather than discover it mid-batch.
-5. **Deviation 1201 is the thing to fix before widening into that vein**: an
+5. **Deviation 1360 is the thing to fix before widening into that vein**: an
    American battle article names a siege **by its city** (*"the surrender of …
    Mobile"* for *Battle of Fort Charlotte*), and `namesHeldEvents()` matches
    titles. Match the candidate's `place` label as well, or read the § Background
