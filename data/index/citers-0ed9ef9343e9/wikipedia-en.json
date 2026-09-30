@@ -2420,6 +2420,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kavanga--battle-of-kombi--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Kombi\", revision 1370445877, § Background"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-khe-sanh--tet-offensive--enabled",
       "kind": "edge",
       "locator": "\"Siege of Khe Sanh\", revision 1376490321, § Analysis"
@@ -3317,6 +3323,12 @@
       "id": "capture-of-grenada-1779--battle-of-grenada--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Grenada\", revision 1370442020"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-luanda--battle-of-kavanga--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Kavanga\", revision 1370444967, § Context"
     },
     {
       "dissent": false,
@@ -10505,6 +10517,12 @@
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "\"Battle of Karameh\", revision 1374545421"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kavanga",
+      "kind": "event",
+      "locator": "\"Battle of Kavanga\", revision 1370444967"
     },
     {
       "dissent": false,

@@ -59,6 +59,15 @@
         }
       ]
     },
+    "battle-of-kavanga--battle-of-kombi--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of": {
       "from": "git",
       "versions": [
@@ -229,7 +238,7 @@
         }
       ]
     },
-    "capture-of-luanda--battle-of-kombi--precondition-of": {
+    "capture-of-luanda--battle-of-kavanga--precondition-of": {
       "from": "revised",
       "versions": [
         {
@@ -238,8 +247,17 @@
         }
       ]
     },
+    "capture-of-luanda--battle-of-kombi--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "capture-of-luanda--recapture-of-angola--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -272,7 +290,7 @@
       ]
     },
     "dutch-brazil-1630-1654--capture-of-luanda--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

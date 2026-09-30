@@ -2134,6 +2134,15 @@
         }
       ]
     },
+    "dande-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "darfur-q46733": {
       "from": "git",
       "versions": [

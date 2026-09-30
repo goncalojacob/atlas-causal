@@ -10230,6 +10230,44 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 2,
+      "id": "battle-of-kavanga",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "Filed under dutch-portuguese-war by span and subject (M62): March 1646 is inside 1601-1661, and the article puts the Dutch in this battle on both sides of the question — Nzinga's forces were \"supported by some troops of the Dutch West India Company\", and the governor \"declared war on March 1646\" after the Dutch \"had broken truces once more\". The item's own P361 is Q132776772, the Angolan Wars, which this atlas does not hold.",
+        "status": "draft"
+      },
+      "revised": "2026-09-30",
+      "status": "active",
+      "title": "Battle of Kavanga"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -10376,7 +10414,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-kombi",
       "kind": "event",
       "origin": {
@@ -18514,7 +18552,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
-      "degree": 3,
+      "degree": 4,
       "id": "capture-of-luanda",
       "kind": "event",
       "origin": {

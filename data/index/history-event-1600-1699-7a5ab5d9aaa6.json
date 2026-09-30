@@ -349,6 +349,15 @@
         }
       ]
     },
+    "battle-of-kavanga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-kempen": {
       "from": "git",
       "versions": [
@@ -368,7 +377,7 @@
       ]
     },
     "battle-of-kombi": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -983,7 +992,7 @@
       ]
     },
     "capture-of-luanda": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

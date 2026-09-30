@@ -3578,6 +3578,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kavanga",
+      "kind": "event",
+      "locator": "Q139022658"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kempen",
       "kind": "event",
       "locator": "Q994881"
