@@ -16261,6 +16261,40 @@ Vereeniging, which the atlas does not hold, is the obvious one and is not a chil
 of the war by `P361`. **That is a line for the owner and not a thing a fire should
 decide.**
 
+### Deviation 1474 — the "five class rows" are four different questions, read off Wikidata rather than repeated
+
+Three stands running have called the missing rows of
+`data/imports/wikidata-seeds.json` → `classes` *the cheapest fix on the list*,
+and none of the three fires has written one. This fire asked why, by reading all
+seven class items' own labels and descriptions in one SPARQL call instead of
+carrying the list forward again:
+
+| class | what Wikidata says it is | what it is here |
+| --- | --- | --- |
+| `Q191093` | province of South Africa, a first-level administrative division | a safe `place` row at `region` |
+| `Q2225003` | special municipality of the Republic of China | a safe `place` row at `city` |
+| `Q15642541` | human-geographic territorial entity | a safe `place` row at `region` |
+| `Q218023` | **the Orange Free State**, a Boer republic, 1854–1902 | **not a class**: a polity is a presence, never a place |
+| `Q19953632` | former administrative territorial entity | **too generic**: a village and an empire are both one |
+| `Q188689` | ultimatum, a demand backed up by a threat | an **event** class, not a place class |
+| `Q217327` | suicide attack | an **event** class, not a place class |
+
+So the list is one safe edit of three rows, one row that must never be written,
+one that cannot be written without guessing, and two that belong under
+`kind: event` and unblock nothing — the 1890 British Ultimatum of batch 68 was
+refused under **A15(5)**, for a quote naming a third held event, and its class row
+would not have changed that.
+
+**And for this batch's two bare records the class table is not the blocker.**
+`Q369859` and `Q2888674` each carry a `P625` of the battlefield itself; what A9
+cannot do is *write* a place from a bare point with no name. Adding `Q191093`
+would put Belmont, Graspan and `battle-of-vaal-krantz` on **a province centroid at
+`region` precision in place of an exact point nobody can name** — coarser, and
+drawn wider and fainter by `PRECISIONS`. `battle-of-nanking` is the one record the
+safe rows plainly improve, because `Q2225003` resolves to Nanjing, which is where
+the battle was. **The rows are not written here**: a closed vocabulary in data is
+a file somebody argues with, and this one is a trade rather than a gap.
+
 ### A15(1) held, and what it refused
 
 `relief-of-ladysmith` (`Q3237997`, 4 sitelinks) was imported, read and **removed
@@ -16367,14 +16401,34 @@ guessed.***
   answer — its summary line reads `0 missing` for a locator that names no
   revision at all. The corpus carries none of them now (2,735 citations, 0
   malformed) and `tests/a15-cache.test.mjs` is what catches it.
-- **Five class rows are still the cheapest fix on the list**, and this fire added
-  one more case to it. `Q191093` (batches 68 and 70, the kopje step), `Q218023`
-  (Graspan's `P276`), and still `Q2225003`, `Q19953632`, `Q15642541`, `Q188689`
-  and `Q217327` from batches 67 to 69. Each is one row in
-  `data/imports/wikidata-seeds.json` → `classes` and a re-run; `battle-of-nanking`,
-  `1938-yellow-river-flood`, `battle-of-vaal-krantz`, `battle-of-belmont-1899` and
-  `battle-of-graspan` would stop being bare. **A kopje is a `point`, not a
-  `region`**, which is what makes these rows safe to write.
+- **The "five class rows" three stands have called the cheapest fix on the list
+  are not one fix, and deviation 1474 is what they actually are.** This fire read
+  all seven class items' own labels and descriptions off Wikidata rather than
+  guessing, and they fall into four groups. **Three are safe place rows somebody
+  can write today**: `Q191093` *province of South Africa*, a first-level
+  administrative division → `region`; `Q2225003` *special municipality* of the
+  Republic of China → `city`; `Q15642541` *human-geographic territorial entity*
+  → `region`. **One is not a class at all**: `Q218023` is the **Orange Free
+  State**, a Boer republic — Graspan's `P276` points at a polity, and a polity is
+  a presence in this atlas and never a place, so the import's *"its class is not a
+  place of this atlas"* was right and the row must not be written. **One is too
+  generic to map**: `Q19953632` *former administrative territorial entity* covers
+  everything from a village to an empire, and a precision chosen for it would be a
+  guess. **Two are event classes and not place classes**: `Q188689` *ultimatum*
+  and `Q217327` *suicide attack* belong in the same table under `kind: event` with
+  a category, and neither unblocks anything — the 1890 British Ultimatum was
+  refused in batch 68 under **A15(5)**, for a quote naming a third held event, and
+  the class row would not change that.
+- **And for the two kopjes the class table is not the blocker at all.** `Q369859`
+  and `Q2888674` each carry a `P625` of the battlefield itself; what A9 cannot do
+  is *write* a place from a bare point with no name, which is what the import said
+  in its own words. Adding `Q191093` would give Belmont, Graspan and
+  `battle-of-vaal-krantz` a **province centroid at `region` precision in place of
+  an exact point nobody can name** — coarser, drawn wider and fainter, and a
+  trade a fire should not make on its own. `battle-of-nanking` is the one record
+  the three safe rows plainly improve, because `Q2225003` resolves to Nanjing,
+  which is where the battle was. **That is a line for the owner** and the reason
+  three fires have called this cheap and none has done it.
 - **Deviations 1469, 1470 and 1471 are still questions for the owner**, unchanged:
   the 1881 French conquest of Tunisia against a Scramble for Africa dated
   1885–1914; `CAUSAL_MARKERS` not seeing `led directly to` because an adverb
@@ -16407,6 +16461,20 @@ guessed.***
   fire needed. WDQS never complained. Deviation 1466 holds for the pages that came
   back, but **0.45 s is too fast for `rest.php/v1/page` today** — the next fire
   should space article reads at a second or more.
-- **Deviation numbers: take the next above 1473.** This fire wrote **1472** (a
-  typographic quotation mark makes a citation unreadable) and **1473** (the Boer
-  island cannot be joined while C8 stands, measured).
+- **Deviation numbers: take the next above 1474.** This fire wrote **1472** (a
+  typographic quotation mark makes a citation unreadable), **1473** (the Boer
+  island cannot be joined while C8 stands, measured) and **1474** (the "five class
+  rows" are four different questions, and two of them are not a fire's to decide).
+
+**Both suites are green on this fire's tree: 2,228 tests, nothing skipped** —
+**1,915 pure** and **313 browser**, run the way the check runs them since M63, and
+no suite needed a second run. **No test was added**: none of the three deviations
+is code, and the one thing this fire wrote outside `data/` besides this file is the
+paragraph `docs/m67-umbrellas.md` owes its two bare records — which is what
+`tests/m67.test.mjs`'s *"a child that names neither is one the measurement argues
+for"* asks for, and it failed until that paragraph was there. The only other
+failures on the way were the index and the site, stale between the records commit
+and the rebuild, which is deviation 798's order working as intended. The five
+curly-quoted locators of deviation 1472 were caught by `cache-evidence`'s own
+report before any test saw them; `tests/a15-cache.test.mjs` would have failed on
+them, because it asserts `gaps.malformed` is empty.
