@@ -17326,8 +17326,10 @@ every batch note to carry: 98** — 56 `P361` children across six umbrellas, and
 causal-property candidates of which 7 are bound by A14(6) and the rest are either
 outside this lane or blocked by A6.
 
-A11(b)'s partition check was made before any of it: none of the 17
-`yom-kippur-war` qids is in `origin/m42b`'s seeds.
+A11(b)'s partition check was made before any of it, and against that branch's
+records rather than its seeds, which is what the amendment asks for: **none of
+the 22 candidates screened in detail here is among the 1,443 distinct items on
+`origin/m42b`'s 1,577 event records.**
 
 ### The two code fixes, which are what this fire leaves behind
 
