@@ -13945,3 +13945,278 @@ and about 250 of them are one vein — the land war of the American Revolution.*
    is still unread), batch 48's Chilean four, the Almagrista eight and their
    missing decree, and the place pass on records that already exist, which is
    M42's.
+
+## Batch 54 — Lexington to Yorktown, and the first edge out of the war into 1789
+
+**Where it came from.** The last stand's move 2: the land war of the American
+Revolution, the vein deviation 1359's query opened and batch 53 reached the
+edge of. This atlas held 44 children of `american-revolutionary-war`, and apart from
+batch 53's four on the Gulf Coast every military one of them was fought at sea,
+in the Caribbean, off India or in Europe; the war on land in the thirteen
+colonies — the part the phrase "American Revolution" names for most readers —
+was not here at all. The lane and century are the **americas, 18th century**,
+which stood at 61 active before the batch and is the trailing cell of this
+partition that a fire can still move: the americas' 16th century at 51 was
+walked by batch 52 and its three refusals are in that note, and A15 (1) holds
+africa and asia at 211 and 211 until the owner answers.
+
+**The anchors were chosen for reach, not for size.** The stand named seven
+high-sitelink candidates; this fire took the five that a **cited sentence**
+could join to a record the atlas already holds, and left the two — `Q862751`
+*Battle of Long Island* and `Q653664` *Battle of Trenton* — for a fire that
+finds one.
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `battles-of-lexington-and-concord` | `Q778010` | 1775-04-19 | `american-revolutionary-war` | **none** — see A9 below |
+| `siege-of-boston` | `Q815128` | 1775-04-19 / 1776-03-17 | `american-revolutionary-war` | `boston` (new) |
+| `battles-of-saratoga` | `Q846674` | 1777-09-19 / 1777-10-07 | `american-revolutionary-war` | `stillwater-new-york` (new) |
+| `battle-of-the-chesapeake` | `Q1419459` | 1781-09-05 | `american-revolutionary-war` | **none** — see A9 below |
+| `siege-of-yorktown` | `Q459447` | 1781-09-28 / 1781-10-19 | `american-revolutionary-war` | `yorktown-virginia` (new) |
+
+All five are filed **from their own `P361`**, which is `Q40949`, a record this
+atlas already holds. **The main count is 234 before the batch and 234 after
+it**, because not one of the five is top-level. The three new places carry
+`summary: null` (A15 (3)) and all three derive to `americas`, which is the
+events' own lane, so the 24 September lane guard passes on all three.
+
+**A9, three times and twice refused, each refusal with its reason.**
+
+- `boston` comes from `P276` `Q100`, because the Siege of Boston item's own
+  `P625` carries **two** points and the first step cannot answer with one.
+- `stillwater-new-york` from `P276` `Q3709125`, `yorktown-virginia` from
+  `P276` `Q938699`.
+- **Lexington and Concord** gets none. Its `P276` is `Q54073`, whose only class
+  `Q13410485` is in no row of the class table; its `P17` names **two** countries
+  (`Q179997` and `Q30`), which A15 (6) refuses on that ground alone, and `Q30`'s
+  inception of 1776 is after the event ended in 1775, which A15 (6) refuses
+  again. The event keeps a lane derived from its own point and a `regionNote`
+  saying so.
+- **The Battle of the Chesapeake** gets none either, and for the plainest
+  reason: the item carries a point in the mouth of the bay and **no `P276`,
+  `P131` or `P17` at all**. A fleet action in open water is a place a person
+  writes or the atlas does without.
+
+**A15 (4), and the comparison read backwards — deviation 1361.** The amendment
+was written for a record dated to one day whose article states a range. Saratoga
+is the other case: the item's `P582` is **17 December 1777**, and no sentence of
+the article the record cites supports it. That article's own first sentence, at
+revision 1377478794, reads *"The Battles of Saratoga were fought September 19
+and October 7, 1777 over the same ground…"*, and the next puts Burgoyne's
+surrender at the second battle. The end moved to **7 October 1777**, the year
+bounds did not move, the flag is `a7-narrowed` and the note names the revision.
+The other four intervals agree with their first sentences day and month.
+
+**The edges: five written, two refused, and the first umbrella crossing this
+lane has written.**
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battles-of-lexington-and-concord` → `siege-of-boston` | `reacted-to` | *"All of the New England colonies raised militias **in response to this alarm** and sent them to Boston"* |
+| `battles-of-saratoga` → `anglo-french-war-1778-1783` | `caused` | *"**Within days of the news** of Burgoyne's surrender reaching France, King Louis XVI decided to enter into negotiations…"* |
+| `battle-of-the-chesapeake` → `siege-of-yorktown` | `enabled` | *"**As a result of this victory**, de Grasse blocked any reinforcement or escape by sea for Cornwallis"* |
+| `siege-of-yorktown` → `treaty-of-paris-1783` | `caused` | *"the decisive victory in the Siege of Yorktown in 1781 **led** King George III … to negotiate an end to the war"* |
+| `anglo-french-war-1778-1783` → `estates-general-of-1789` | `precondition-of` | *"The cost of participation in the American war **inexorably led to** France's own bankruptcy six years later"* |
+
+Each of the five carries **two articles with a locator apiece**, which is M72's
+second author, and every one of the eight distinct revisions cited is the
+revision the atlas already cites for that article or the one this fire's own
+import wrote — so A15 (2)'s recache, run as the last step, reports **0 revisions
+that should be on disk and are not**. All five are `probable`: rule 22, because
+the only sources the atlas can open here are the articles, and two of them rest
+on works (Ketchum 1997, Harris 1976, Tombs and Tombs 2010) nobody here has
+opened.
+
+**A15 (11): the fifth edge is the point of the batch.** The measurement the
+third review asked for was **zero for every batch it read**, and the four edges
+above it are no better — all four run between two children of
+`american-revolutionary-war`, so they cross nothing. The fifth does: the
+Anglo-French War's parent is the American Revolutionary War and the Estates
+General's is the French Revolution, and the two have no parent in common. The
+corpus figure moved from **575 to 576**. It was found by reading, not by query:
+the Anglo-French War article, at the revision the held record already cites,
+states the consequence twice and names the Financial Crisis of 1786 and 1789 in
+so many words, and the Estates General article arrives at the same sum from the
+other side. **A15 (5) decided its `from` end.** The Estates General sentence
+names *"the financial support given to the Americans during the war against
+Great Britain"*, which would put the edge on `american-revolutionary-war`; the
+Anglo-French article's own sentences name *the cost of France's participation*,
+which in this atlas is a record of its own. The more specific of the two events
+the quotes name is the one the edge is written from.
+
+**What the chronology class refused (A15 (5)), and what else was.**
+
+| candidate | refused because |
+| --- | --- |
+| `battles-of-lexington-and-concord` → `siege-of-boston`, from *"The siege began on April 19 **after** the Revolutionary War's first battles at Lexington and Concord"* | **chronology with no cause stated** — the refusal class exactly. The edge was written from another sentence in the same article, and from the Lexington article's *"The militias then blockaded the narrow land accesses…, starting the siege of Boston"* |
+| `american-revolutionary-war` → `treaty-of-paris-1783`, from the war article's own lead | **A14**: the treaty is that umbrella's own child. The atlas already holds such an edge from before A14; this fire did not write a second, and wrote `siege-of-yorktown` → `treaty-of-paris-1783` instead, which A15 (5) points at anyway |
+
+**The caution that has nowhere to live in the record — deviation 1362.** The
+French Revolution article, at revision 1376576100, qualifies the fifth edge:
+*"While the state also experienced a debt crisis, the level of debt itself was
+not high compared with Britain's"*, and it lays as much on a tax system whose
+*"rates varied widely from one region to another, were often different from the
+official amounts, and were collected inconsistently"*. That belongs in the
+edge's `dispute` — except that `dispute` is an object `{ text, sources }` and
+its source would be that article **at a revision the lead cache cannot hold
+beside the 1375966584 the held `french-revolution` record already cites**, one
+file per item. Citing a revision this run cannot cache would have traded an
+honest caution for a stale citation, so the edge stays `probable` with no
+`dispute` and the caution is here, where a reviewer signing the edge will find
+it. A record that needs two revisions of one article is the thing the cache
+cannot express.
+
+**What this batch left.** Deviation 1359's query returned about 250 unheld
+`P361` children of `american-revolutionary-war`; five were taken and **the rest
+are left**, because A15 (1) imports only the children a fire can connect with an
+edge under A5 and this fire read five articles, not two hundred. The named
+candidates still unheld and still worth a fire are `Q862751` *Battle of Long
+Island*, `Q653664` *Battle of Trenton*, and — now that Boston and Saratoga are
+here and connected — the Battle of Bunker Hill, which the Siege of Boston
+article names, and the Saratoga campaign's own children, each of which has a held neighbour to be joined to.
+
+**The counts.**
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1346 | **1351** |
+| main | 234 | **234** |
+| active edges between two active events | 1136 | **1141** |
+| largest connected component | 748 | **752** |
+| edges crossing an umbrella (A15 (11)) | 575 | **576** |
+| americas, 18th century (active) | 61 | **66** |
+| americas (active / main) | 369 / 56 | **374 / 56** |
+
+### Per lane and per century (A10), after the batch
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | — | — | 9 / 5 |
+| 16th c. | 44 / 1 | — | — | 51 / 5 | — | — | 95 / 6 |
+| 17th c. | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 | — | — | 189 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 17 / 0 | 66 / 2 | — | — | 159 / 5 |
+| 19th c. | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 | — | — | 125 / 25 |
+| 20th c. | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 | — | — | 576 / 151 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 | — | — | 196 / 30 |
+| undated | 1 / 1 | 1 / 1 | — | — | — | — | 2 / 2 |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **374 / 56** | **—** | **—** | **1351 / 234** |
+
+### Deviation 1361 — A15 (4) has no clause for an item dated wider than its own article
+
+A7 widens an interval from the record's cited article and A15 (4) reads day and
+month as well as year, with a list of records *"dated to a single day by `P585`
+whose article states a range"*. Saratoga is neither: `P580` and `P582` give
+19 September to **17 December 1777**, and the article they were imported beside
+says, in its first sentence, that the battles were fought on 19 September and
+7 October. Nothing in the amendments says what to do, and the two readings are
+not symmetric — widening adds what a person can check against the quoted
+sentence, narrowing removes days the item asserts. This fire narrowed, because
+the whole of A7's logic is that **the cited article governs the record that
+cites it**, and a record whose interval no sentence of its own evidence supports
+is not a gap but a contradiction. The flag is `a7-narrowed`, which is new; there
+are 37 `a7-widened` records and this is the first of the other kind. A fire that
+disagrees should say so rather than quietly widen it back.
+
+### Deviation 1362 — one lead cache file per item, and an edge that wanted two revisions
+
+`tools/import/cache/wikipedia/<item>.<lang>.json` is one file per Wikidata item,
+so an article cited at two revisions by two records cannot be on disk at both,
+and `tools/cache-evidence.mjs` reports the loser as *"a revision the cache
+cannot hold beside a more-cited one of the same item"* — 73 citations are in
+that class today. That is tolerable while the two revisions say the same thing.
+It is not tolerable as a **reason not to write a dispute**, which is what
+happened here: the qualification the French Revolution article enters against
+this batch's fifth edge was read at revision 1376576100, the held record cites
+1375966584, and quoting the first would have made the second stale. The caution
+went into this file instead. The cache's shape is therefore, quietly, an
+editorial constraint on what an edge may say — which is worth the owner knowing,
+because A15 (2) made the cache a gate and nobody decided it should also be that.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the forty-eighth fire: one batch, 54, five events, three
+places, five edges, and the americas' 18th century from 61 to 66. The main count
+did not move. **The fire's finding is that the land war of the American
+Revolution is not one vein but a connected one**: five articles read, and every
+one of the five carried a sentence that joins the record it created to a record
+the atlas already held. The batch also wrote **the first edge this lane has
+written that crosses an umbrella** (A15 (11)), and it was found by reading two
+articles the atlas already cites rather than by asking Wikidata anything.*
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1346 | **1351** |
+| main | 234 | **234** |
+| largest connected component | 748 | **752** |
+| edges crossing an umbrella | 575 | **576** |
+
+| century | europe | africa | asia | americas | oceania | no lane | all |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | — | — | 9 / 5 |
+| 16th c. | 44 / 1 | — | — | 51 / 5 | — | — | 95 / 6 |
+| 17th c. | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 | — | — | 189 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 17 / 0 | 66 / 2 | — | — | 159 / 5 |
+| 19th c. | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 | — | — | 125 / 25 |
+| 20th c. | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 | — | — | 576 / 151 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 | — | — | 196 / 30 |
+| undated | 1 / 1 | 1 / 1 | — | — | — | — | 2 / 2 |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **374 / 56** | **—** | **—** | **1351 / 234** |
+
+### The next fire's moves, in order
+
+1. **The three questions to the owner are unchanged and none of them is a run's
+   to settle**: the **main count**; **C8**; and **A15 (1)'s Europe pause closing
+   the only door into pre-1800 africa/asia**. Africa and Asia stand at 211 and
+   211 against A10's 303 and **no fire in either lane can move either number
+   until the owner answers.** Do not spend a fire re-establishing this.
+2. **Stay in the American Revolution vein and keep taking it by the sentence.**
+   Batch 54's method is the one to repeat and it is cheap: read the candidate's
+   article, and take it only if a sentence in it, or in the article of a record
+   the atlas already holds, states a cause rather than an order. Five out of
+   five held that test this fire. The anchors now reachable, each with a held
+   neighbour a sentence away: **the Battle of Bunker Hill** (the Siege of Boston
+   article names it and dates it to June 1775), **the Saratoga campaign's own
+   children** (`Q846674` is here and connected at both ends), **`Q862751`
+   *Battle of Long Island*** and **`Q653664` *Battle of Trenton*** — the two of
+   the stand's seven this fire left, because neither's lead named a held record.
+   Trenton's own article names the crossing of the Delaware and the Battle of
+   Princeton, neither of which the atlas holds, so it may need two records at
+   once or none.
+3. **The umbrella crossing is a reading problem, not a query problem.** Batch 54
+   found its one by noticing that two held records — the Anglo-French War and
+   the Estates General — say the same thing about the same 1.3 billion livres in
+   two articles the atlas already cites. Other pairs like it almost certainly
+   exist and no query will surface them; a fire with a spare article read should
+   spend it on the *ends* of the chains it has just written rather than on a
+   sixth new record.
+4. **Deviation 1361 is open for the owner**: this fire narrowed an interval to
+   its cited article's own first sentence, which no amendment provides for, and
+   flagged it `a7-narrowed`. If that is wrong, it is one record
+   (`battles-of-saratoga`) and one flag.
+5. **Deviation 1362 is open too**: the lead cache holds one revision per item,
+   so an edge whose caution lives in another revision of an article the atlas
+   already cites has nowhere in the record to put it. This fire put it in the
+   pool file. 73 citations are already in the cache's "cannot hold beside a
+   more-cited one" class.
+6. **Deviation 1360 is still unfixed** — `namesHeldEvents()` matches titles and
+   cannot see a fort called by its city. Match the candidate's `place` label as
+   well, or read the § Background yourself, which is what this fire did for all
+   five of its edges.
+7. **`Special:Export` before the API** — deviation 1357, unchanged and used
+   again for all six articles this fire read; `Special:EntityData/<qid>.json`
+   likewise for five Wikidata items. Pace it, seconds apart. The import tool's
+   own fetches and `tools/cache-evidence.mjs --fill` both ran without a 429.
+8. **Write the records with the repository's own two-space indentation.** This
+   fire wrote five edges and rewrote eight records at one space and
+   `tests/bundle.test.mjs` caught every one of them — "an unedited save of a
+   record in `data/` is byte identical" is the test, and a script that
+   re-serialises a record is the thing it is there to catch.
+9. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, deviation
+   1358, question 11 (the Nine Years' War, `Q152218`), `Q718893` *theater of
+   war*, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas
+   umbrellas with no `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`,
+   which A9 cannot place), the Angolan Wars umbrella (`Q132776772`), batch 48's
+   Chilean four, the Almagrista eight and their missing decree, batch 52's three
+   16th-century refusals — **do not re-walk those** — and the place pass on
+   records that already exist, which is M42's.
