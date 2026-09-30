@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "scramble-for-africa--world-war-i--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1376647971"
+    }
+  ],
+  "from": "scramble-for-africa",
+  "to": "world-war-i",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The partition put the European powers in each other’s way from Fashoda to Morocco, and the Scramble’s own article carries the chain from those rivalries to 1914. It is written as a precondition and not a cause: the article says the tensions led to the crises and the crises to the war, not that the partition brought the war about. The article reads: \"The tensions between the imperial powers led to a succession of crises, which exploded in August 1914, when previous rivalries and alliances created a domino situation that drew the major European nations into World War I.\"",
+  "dispute": null
+}

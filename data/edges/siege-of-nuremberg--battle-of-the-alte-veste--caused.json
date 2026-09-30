@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-nuremberg--battle-of-the-alte-veste--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nuremberg\", revision 1370744103"
+    }
+  ],
+  "from": "siege-of-nuremberg",
+  "to": "battle-of-the-alte-veste",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Gustavus had sat in front of Wallenstein’s entrenchments at Zirndorf since July and could neither storm them nor starve them out; the siege’s own article says the assault at the Alte Veste was undertaken to end that deadlock. The article reads: \"To try to break the deadlock, 25,000 men under Gustavus attacked the Imperial entrenchments in the Battle of the Alte Veste on 3 September but failed to break through, having lost 2,500 men compared to 900 Imperials.\"",
+  "dispute": null
+}
