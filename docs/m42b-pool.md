@@ -14889,11 +14889,24 @@ commit" (deviation 1368).*
 | edges inside one umbrella | 574 | **581** |
 | active edges | 1152 | **1159** |
 
-*Four commits: the claim, the `origin/m42` merge, the batch and one index
-rebuild. `validate --index` is clean at **0 errors**, A15 (2)'s recache reports
-**0 revisions that should be on disk and are not**, and the suite is **green** —
-**2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313 across the 40 browser
-suites, run the way the check runs them).*
+*Five commits: the claim, the `origin/m42` merge, the batch, one index rebuild
+and this stand. `validate --index` is clean at **0 errors**, A15 (2)'s recache
+reports **0 revisions that should be on disk and are not**, and the suite is
+**green** — **2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313 across the
+40 browser suites, run the way the check runs them). **The check is green on the
+head of this fire**: run 2174, `fb5d47e3`, conclusion `success`.*
+
+*The check on the **merge commit**, run 2169 on `63cf6419`, is **red**, and the
+next fire should not read it as the trunk's: it is deviation 1368's own fault
+caught by the check, one failing test (`not ok 1879 — validate.mjs passes on the
+repository data`) with three rule 16 errors under it — `index/manifest.json`
+differing, `history-edge-1900-1999-63dde31b3eaa.json` missing and
+`history-edge-1900-1999-1e9f1e53d9db.json` stale — because that commit's index
+was built before the merge commit existed. The batch commit's rebuild produced
+`63dde31b3eaa`, which is exactly the shard that run asked for, so the fault is
+closed on the head and there is nothing left to fix. **A red run on an
+intermediate commit of a fire whose head is green is this, nine times in ten:
+read the head's run, not the branch's most recent red.***
 
 ### The next fire's moves, in order
 
