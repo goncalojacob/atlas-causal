@@ -14624,49 +14624,64 @@ does, a batch working a vein should compute it — six lines over `data/events/`
 and `data/edges/` — and report it beside the largest, as the table above does.
 
 
-### Deviation 1366 — `tests/m67.test.mjs` test 19 is red on `origin/m0`, and has been
+### Deviation 1366 — `tests/m67.test.mjs` does not read `docs/m42-pool.md`, which is where M42 argues its filings
 
-The suite this fire ran came back **1928 of 1929**, and the one failure is not
-this batch's and not the merge's alone:
+This fire first read the failure wrong and the corrected reading is the useful
+one, so both are written down.
+
+The suite came back one short, on:
 
 ```
-not ok 19 - every main event that still names nothing is listed in the measurement
+not ok - every main event that still names nothing is listed in the measurement
   error: 'docs/m67-umbrellas.md does not say why "decolonisation-of-asia" was left bare'
 ```
 
-The test walks **every** active event with no parent, no `actors` and no `place`
-and requires `docs/m67-umbrellas.md` to name it in backticks. Seven records fail
-it on this branch, and the assertion stops at the first:
+The test walks every active event with no parent, no `actors` and no `place` and
+requires it to be named in backticks somewhere in **`ARGUED_IN`**, which is
+`docs/m67-umbrellas.md`, `docs/m42-connections.md` and `docs/m42b-pool.md`. The
+message names only the first, which is what misled the first reading: seven
+records are absent from `m67-umbrellas.md`, and six of them —
+`black-monday`, `1957-1958-influenza-pandemic`, `hong-kong-flu`,
+`dutch-portuguese-war`, `franco-russian-alliance`, `atlantic-revolutions` — are
+argued in one of the other two and were never a defect. **`origin/m0` is green on
+this test.** Checking one of the three documents and concluding the trunk was red
+was wrong, and anyone reading a `m67` failure should join all three before
+believing it.
 
-| record | when | on `origin/m0`? | named in `origin/m0`'s `m67-umbrellas.md`? |
-| --- | --- | --- | --- |
-| `black-monday` | 1987-10-19 | yes, and bare | no |
-| `1957-1958-influenza-pandemic` | 1957–1958 | yes, and bare | no |
-| `hong-kong-flu` | 1968–1970 | yes, and bare | no |
-| `dutch-portuguese-war` | 1601–1661 | yes, and bare | no |
-| `franco-russian-alliance` | 1891–1917 | yes, and bare | no |
-| `atlantic-revolutions` | 1765–1849 | yes, and bare | no |
-| `decolonisation-of-asia` | 1898–2002 | no — `origin/m42` batch 74 | no |
+**What is actually broken is the list.** `decolonisation-of-asia` is
+`origin/m42` batch 74's record, and M42 argues it properly — five paragraphs in
+**`docs/m42-pool.md`**, which is that lane's batch-note file and the exact
+counterpart of this one. `docs/m42b-pool.md` is in `ARGUED_IN`; **`docs/m42-pool.md`
+is not.** So M42 did the work the test asks for, in the file its lane writes, and
+the test does not look there. The one-line fix is to add it to `ARGUED_IN`:
 
-**Six of the seven are bare mains on the trunk itself**, so the test is red on
-`origin/m0` before either records lane touches anything, and the seventh is
-`origin/m42`'s, whose own `docs/m42-pool.md` accounts for it in five places
-while `m67-umbrellas.md`, the only document this test reads, does not. Section 15
-of that document is the template: a period umbrella *"names neither an actor nor
-a place … because a period has neither to give"*, and it lists
-`decolonisation-of-africa`, `interwar-period`, `scramble-for-africa`,
-`arab-spring`, `indochina-wars` and `afghan-conflict` under exactly that reason.
-`decolonisation-of-asia` and `atlantic-revolutions` belong in the same
-paragraph.
+```js
+const ARGUED_IN = [DOC, 'docs/m42-connections.md', 'docs/m42b-pool.md', 'docs/m42-pool.md'];
+```
 
-**This batch adds nothing to it**: all three of its events carry a `place` and a
-`parent`, so none is bare. **It is not fixed here either**, and that is the
-deviation: six of the seven records are neither lane's, and writing why somebody
-else left a record bare is asserting something about a record this fire did not
-read. It is one paragraph in `docs/m67-umbrellas.md` for whoever owns those six
-— and it is worth doing, because until it is done **every fire in both records
-lanes will read a red suite and have to re-establish that the red is the
-trunk's.** A fire that reads `m67` red should check this deviation first.
+**This fire did not make that change**, because a test file is not a records
+lane's to edit and both merges are told to keep `origin/m0`'s side of one. It is
+for the owner or lane A, and it is worth doing: until it lands, **every record
+M42 files bare and argues in its own pool file fails a suite on whichever branch
+merges it**, which is how a correct batch turns a branch red.
+
+**Meanwhile this branch is green, and honestly rather than incidentally.** Naming
+the id in the paragraph above would have satisfied the assertion on its own,
+which is not an argument for anything, so the account the record is owed is
+below.
+
+**`decolonisation-of-asia` names neither an actor nor a place**, and for the
+reason section 15 of `docs/m67-umbrellas.md` already gives for
+`decolonisation-of-africa`: **a period has neither to give.** A continent has no
+point, so there is no place record to reach for; and the actor of the
+decolonisation of Asia is every colonial power and every independence movement in
+it, which is a list an umbrella has no business asserting. Its span, 1898 to
+2002, is a period and not an event with a site. `interwar-period`,
+`scramble-for-africa`, `arab-spring`, `indochina-wars`, `afghan-conflict` and
+`decolonisation-of-africa` are bare for exactly the same reason and were
+accounted for the same way. The filings under it are M42's and are argued in
+`docs/m42-pool.md`; this paragraph is only the bareness, which is what the test
+asks for and what the merge left unargued in a file the test reads.
 
 ## Where the run stands, for the fire that picks it up
 
@@ -14691,8 +14706,11 @@ the corpus showing through.*
 
 *Three commits: the two merges resolved as one, the batch, and two index
 rebuilds, because deviation 1363 bit at the merge and again at the batch commit
-— see move 8. The pure suite is **1928 of 1929** and the one failure is red on
-`origin/m0` itself (deviation 1366); `validate --index` is clean at 0 errors.*
+— see move 8. `validate --index` is clean at 0 errors and the suite is **green**:
+the one failure the fire met was `decolonisation-of-asia` arriving with the
+`origin/m42` merge unargued in any file `tests/m67.test.mjs` reads, and
+deviation 1366 is both the fix on this branch and the one-line fix the test
+itself wants.*
 
 ### The next fire's moves, in order
 
@@ -14740,16 +14758,18 @@ rebuilds, because deviation 1363 bit at the merge and again at the batch commit
    nor the crossing figure. **That is a legitimate batch** — the americas' 18th
    century is the trailing cell and these are real records — but its note must
    say so rather than report a component number that did not move.
-6. **Deviation 1366 — the suite is red on the trunk, and it is not yours.**
-   `tests/m67.test.mjs` test 19 fails on `origin/m0` itself: six bare main events
-   (`black-monday`, `1957-1958-influenza-pandemic`, `hong-kong-flu`,
-   `dutch-portuguese-war`, `franco-russian-alliance`, `atlantic-revolutions`) are
-   on the trunk and named nowhere in `docs/m67-umbrellas.md`, and
-   `decolonisation-of-asia` from `origin/m42` batch 74 is a seventh. **Read the
-   deviation before spending a fire on it**; batch 56 added nothing to it (all
-   three of its events carry a place and a parent) and did not fix it, because
-   six of the seven are neither records lane's. One paragraph in section 15's
-   style closes it for whoever owns them.
+6. **Deviation 1366 — `tests/m67.test.mjs` does not read `docs/m42-pool.md`, and
+   that is the whole of it.** `origin/m0` is **green**; the failure this fire met
+   came in with the `origin/m42` merge. `ARGUED_IN` is `docs/m67-umbrellas.md`,
+   `docs/m42-connections.md` and `docs/m42b-pool.md` — **M42's own batch-note
+   file is missing from it**, so `decolonisation-of-asia`, which M42 batch 74
+   argues in five paragraphs there, fails a test that never looks. The fix is one
+   line in the test and it is not a records lane's to make. Batch 56 added nothing
+   to the failure (all three of its events carry a place and a parent) and closed
+   it on this branch by giving the record the bareness paragraph it was owed.
+   **The failure message names only the first of the three documents**, which is
+   what made this fire's first reading wrong: join all three before concluding
+   anything about a `m67` red.
 7. **Deviation 1365 is the one this fire adds about measurement**:
    `tools/m42-pool.mjs` reports
    `largestComponent`, which a batch working a small component moves not at all,
