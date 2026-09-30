@@ -17146,3 +17146,23 @@ above is the second set of numbers and not the first. Nothing false was ever
 pushed to a reader — `validate` was clean at every commit — but four filings and
 one edge stood on `m42` for three commits that should never have carried them.
 
+**The check is green on the head this stand was written against.** Run **2083**
+of `validate.yml`, commit `f49f4c07`, conclusion **`success`**: records
+validated, and both suites run the way the check runs them — the runner's own
+totals are 1,915 pure and **313 browser, 0 failed, 0 skipped**, the same as this
+sandbox's. Run **2074** concluded **`failure`** and it was right to, on the
+filing commit and for exactly what `tests/m42-filing.test.mjs` says. Runs 2073,
+2075, 2077, 2079, 2080, 2081 and 2082 were each cancelled by the next push,
+which is deviation 1258's chain and costs nothing.
+
+**And one thing worth knowing about the check rather than about this fire:** the
+step *"The index committed here is the one those records build"* is **skipped on
+every push to a branch**, because the step before it reads `BASE_SHA` and
+`HEAD_SHA`, which the workflow only sets for a pull request — `touched=false`,
+and the `--index` clause never runs. So on `m42` **`node tools/validate.mjs
+--index` is checked in the sandbox and nowhere else** until the branch is put up
+as a pull request. This fire ran it on the committed tree after every rebuild
+and it was clean each time (0 errors, 611 warnings); a fire that assumes the
+runner is watching the index on a branch push is assuming something that has
+never been true.
+
