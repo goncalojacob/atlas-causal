@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-kimberley--battle-of-magersfontein--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-70"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kimberley\", revision 1370742488, lead"
+    }
+  ],
+  "from": "siege-of-kimberley",
+  "to": "battle-of-magersfontein",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The siege’s own cited article says what Magersfontein was fought for and what it settled: “The first attempt at relief of Kimberley under Lord Methuen was stopped at the battles of Modder River and Magersfontein.” `reacted-to`, completing the reading the other three edges of this family carry: the siege is what Methuen’s column was fighting to lift, at Belmont, at Graspan, at Modder River and here. The sentence names Modder River in the same breath and this atlas writes that edge too, from Modder River’s own article, so nothing is attributed to one battle that the source gives to both. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

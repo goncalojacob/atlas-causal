@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-kimberley--battle-of-modder-river--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-70"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Modder River\", revision 1370450027, lead and § Background"
+    }
+  ],
+  "from": "siege-of-kimberley",
+  "to": "battle-of-modder-river",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article states the purpose in its first sentence: “A British column under Lord Methuen, that was attempting to relieve the besieged town of Kimberley, forced Boers under General Piet Cronjé to retreat to Magersfontein, but suffered heavy casualties altogether.” Its § Background names the siege itself: “Their commander, General Sir Redvers Buller detached the 1st Division under Lieutenant General Lord Methuen to relieve the Siege of Kimberley.” `reacted-to`, as at Belmont two days earlier and at Ladysmith: the siege is what the battle was fought to lift. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

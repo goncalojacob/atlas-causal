@@ -92,6 +92,15 @@
         }
       ]
     },
+    "battle-of-belmont-1899--battle-of-graspan--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-junin--battle-of-ayacucho--precondition-of": {
       "from": "git",
       "versions": [
@@ -125,6 +134,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-modder-river--battle-of-magersfontein--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -641,6 +659,33 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-kimberley--battle-of-belmont-1899--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "siege-of-kimberley--battle-of-magersfontein--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "siege-of-kimberley--battle-of-modder-river--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

@@ -2180,6 +2180,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-belmont-1899--battle-of-graspan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Belmont (1899)\", revision 1370433957, lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bin-jawad--second-battle-of-benghazi--enabled",
       "kind": "edge",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079, § Aftermath"
@@ -2531,6 +2537,12 @@
       "id": "battle-of-misrata-2011--zliten-uprising--enabled",
       "kind": "edge",
       "locator": "\"Zliten uprising\", revision 1374516568, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-modder-river--battle-of-magersfontein--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Modder River\", revision 1370450027, § Aftermath"
     },
     {
       "dissent": false,
@@ -6530,6 +6542,24 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-kimberley--battle-of-belmont-1899--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Belmont (1899)\", revision 1370433957, lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kimberley--battle-of-magersfontein--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Kimberley\", revision 1370742488, lead"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kimberley--battle-of-modder-river--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Modder River\", revision 1370450027, lead and § Background"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ladysmith--battle-of-spion-kop--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Spion Kop\", revision 1374078287, lead"
@@ -9878,6 +9908,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-belmont-1899",
+      "kind": "event",
+      "locator": "\"Battle of Belmont (1899)\", revision 1370433957"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bicocca",
       "kind": "event",
       "locator": "\"Battle of Bicocca\", revision 1370107825"
@@ -10259,6 +10295,12 @@
       "id": "battle-of-grand-turk",
       "kind": "event",
       "locator": "\"Battle of Grand Turk\", revision 1370441951"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-graspan",
+      "kind": "event",
+      "locator": "\"Battle of Graspan\", revision 1370441965"
     },
     {
       "dissent": false,
@@ -10679,6 +10721,12 @@
       "id": "battle-of-misrata-2011",
       "kind": "event",
       "locator": "\"Battle of Misrata (2011)\", revision 1374514174"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-modder-river",
+      "kind": "event",
+      "locator": "\"Battle of Modder River\", revision 1370450027"
     },
     {
       "dissent": false,
@@ -14933,6 +14981,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "\"Siege of Jülich (1621–1622)\", revision 1370742177"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kimberley",
+      "kind": "event",
+      "locator": "\"Siege of Kimberley\", revision 1370742488"
     },
     {
       "dissent": false,

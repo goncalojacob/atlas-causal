@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-modder-river--battle-of-magersfontein--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-70"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Modder River\", revision 1370450027, § Aftermath"
+    }
+  ],
+  "from": "battle-of-modder-river",
+  "to": "battle-of-magersfontein",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier record’s own cited article says what the one gave the other: “The delay allowed the Boers to construct the entrenchments which they were to defend in the Battle of Magersfontein.” `precondition-of` and not `caused`: Modder River did not produce the later battle, it bought the Boers the fortified line Magersfontein was fought against thirteen days later. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

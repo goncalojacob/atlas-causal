@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-kimberley--battle-of-belmont-1899--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-70"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Belmont (1899)\", revision 1370433957, lead and § Background"
+    }
+  ],
+  "from": "siege-of-kimberley",
+  "to": "battle-of-belmont-1899",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says what the battle was for in its second paragraph: “Methuen’s three brigades were on their way to raise the Boer siege of Kimberley. A Boer force of about 2,000 men had entrenched on the range of Belmont kopje to delay their advance.” Its § Background says the same again: “To relieve Kimberley and Ladysmith, Buller divided his forces, leading one division in an advance on Ladysmith, while the 1st Division of Lieutenant General Lord Methuen was tasked with breaking the Siege of Kimberley.” `reacted-to`, the reading the atlas already gives the four battles fought to lift the siege of Ladysmith: the siege is what this battle was fought to end and not something that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
