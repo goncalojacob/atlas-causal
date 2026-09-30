@@ -1,0 +1,24 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of",
+      "kind": "edge",
+      "locator": "pp. 191–192"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--siege-of-salvador-1638--enabled",
+      "kind": "edge",
+      "locator": "pp. 193-194, as the \"Siege of Salvador (1638)\" article cites it for the siege whole"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
+      "kind": "edge",
+      "locator": "p. 123, as the \"Action of 12-17 January 1640\" article cites it for the 1635 landing of 2,500 reinforcements"
+    }
+  ],
+  "id": "marley-2008-wars-of-the-americas",
+  "schema": 1
+}
