@@ -18599,6 +18599,25 @@ measurement that narrows what the next fire should try.*
   form writes) and **1498** (a history shard reads git, so the index must be
   rebuilt *after* the records' commit).
 
+**The check's one red browser test was read and not assumed.** Run 2171, at head
+`6828a4fa`, failed a single browser assertion —
+*reading a narrative draws the walk, its neighbours dimmed, and nothing else*,
+with `map drew wiriyamu-massacre-1972 off the screen`
+(`tests/lens-browser.test.mjs:382`). It is **M74's "drawn is not the same as
+seen"** clause, a bounding-box check on whether the camera's frame holds every
+step, and **nothing in this batch is in that walk**: the records written are a
+Cambodian filing and an edge between two Asian events, and the narrative is
+Mozambican. The evidence that it is not this batch's: `node --test
+tests/lens-browser.test.mjs` passes **3 of 3** on the pushed tree, the full serial
+browser run passed **313 of 313** on the same tree, and run 2167 passed the same
+**313 of 313** on the very same records fifteen minutes earlier — the only commits
+between them are a history shard and this document. The one re-run the protocol
+allows was spent on it. **A fire that meets this assertion again should not re-run
+a second time**: it is a framing check on a walk whose outermost step sits at the
+edge of the camera's rectangle, and the honest fix is to make that one step's
+visibility robust rather than to keep re-running — which is a test change and wants
+its own pass, not a batch's tail.
+
 **Deviation 1498, from the check rather than from the reading.** The first index
 commit of this batch went red on rule 16, at
 `history-edge-1900-1999`, and the reason is that **one part of the index does not
