@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-las-tres-acequias--battle-of-rancagua--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-48"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Las Tres Acequias\", revision 1370447283, § lead"
+    }
+  ],
+  "from": "battle-of-las-tres-acequias",
+  "to": "battle-of-rancagua",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier record's own cited article draws the line itself, in its second sentence: “The confrontation occurred between the two factions of Carrera and Bernardo O’Higgins, resulting in a defeat for O’Higgins that would in turn lead on to the defeat of the nationalists by the royalist forces at the battle of Rancagua a month later.” The mechanism it names is the split between the two patriot factions, which Las Tres Acequias settled in Carrera’s favour and which left the nationalists divided when the royalists reached Rancagua five weeks later. `precondition-of` rather than `caused`, because “lead on to” is what the article says and Rancagua had causes of its own that this record does not carry; `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

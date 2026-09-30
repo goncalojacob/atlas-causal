@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "las-tres-acequias",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q4871541, the battle of Las Tres Acequias, read on 2026-09-30: A9's first step as A12 (2) corrects it, and the ground itself — near San Bernardo, south of Santiago — has no item of its own this pass could reach. `precision` is `point` because the item is a battle and the point it carries is the battlefield's, not a settlement's."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Las Tres Acequias"
+  ],
+  "where": {
+    "lon": -70.7353,
+    "lat": -33.6456,
+    "precision": "point",
+    "label": "Las Tres Acequias"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
