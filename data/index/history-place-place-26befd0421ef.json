@@ -4475,6 +4475,15 @@
         }
       ]
     },
+    "kimberley-south-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "kingdom-of-egypt": {
       "from": "git",
       "versions": [
@@ -5821,6 +5830,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "modder-river-northern-cape": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

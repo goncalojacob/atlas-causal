@@ -3008,6 +3008,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-belmont-1899",
+      "kind": "event",
+      "locator": "Q369859"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bicocca",
       "kind": "event",
       "locator": "Q683341"
@@ -3389,6 +3395,12 @@
       "id": "battle-of-grand-turk",
       "kind": "event",
       "locator": "Q4871134"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-graspan",
+      "kind": "event",
+      "locator": "Q2888674"
     },
     {
       "dissent": false,
@@ -3815,6 +3827,12 @@
       "id": "battle-of-mocha",
       "kind": "event",
       "locator": "Q10858449"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-modder-river",
+      "kind": "event",
+      "locator": "Q248979"
     },
     {
       "dissent": false,
@@ -8177,6 +8195,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "Q17122425"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kimberley",
+      "kind": "event",
+      "locator": "Q3485913"
     },
     {
       "dissent": false,
