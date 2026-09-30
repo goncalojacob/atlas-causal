@@ -13827,6 +13827,24 @@ names a siege by its place**, and the place is a `data/places/` record here, not
 the event. A widened sweep over that vein should match a candidate's `place`
 label as well as its title, or keep a person in the gap.
 
+### The suites and the check, for the 11:37Z fire
+
+**2,242 tests green on the final tree** — 1,929 pure and 313 browser, run the
+way the check runs them since M63 (`node tools/suites.mjs --pure`, then the 40
+browser suites one at a time) — **nothing skipped, nothing failing**, and
+`node tools/validate.mjs --index` clean at 0 errors and 610 warnings, which is
+the count the fire found. **Run 2125 of `validate.yml` is success on the head**,
+`471306b89`.
+
+One test failed locally before the batch note was written and it was doing its
+job: `tests/m67.test.mjs`'s *“a child that names neither is one the
+measurement argues for”* fails on `capture-of-fort-bute`, which is filed under
+an umbrella and names neither an actor nor a place, until the batch note argues
+the filing in writing. `docs/m42b-pool.md` is one of the three files that test
+reads, so **the note is the fix and not a workaround** — which is worth knowing
+for the American Revolution vein, where an imported battle with no `P710` the
+atlas can hold and no readable place will trip it again.
+
 ## Where the run stands, for the fire that picks it up
 
 *30 September, after the forty-seventh fire: one batch, 53, four events, three
